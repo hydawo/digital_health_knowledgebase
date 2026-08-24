@@ -457,3 +457,248 @@ not.
    evidence.
 3. **The Atlas artifact was republished to its existing URL** rather than left stale or created as a
    new artifact, per the standing "update in place" convention for this deliverable.
+
+---
+
+## 2026-08-24 (later) — Module 2 (Mobile Digital Phenotyping Platforms), initial research phase
+
+**Module:** 2 — Mobile Digital Phenotyping Platforms
+**Scope:** Full initial research phase, Phases 1–6 per `CLAUDE.md`, single session (contrast Module
+1's two deep-research passes). Executed on explicit instruction to start Module 2.
+
+### Technologies researched
+
+Beiwe (Onnela Lab, Harvard) · Forest (Beiwe's companion analysis package — relationship documented
+carefully per CLAUDE.md's explicit instruction) · RADAR-base (King's College London / The Hyve) ·
+mindLAMP / LAMP Platform (BIDMC Division of Digital Psychiatry) · AWARE Framework (international
+academic collaboration) · Avicenna Research, formerly Ethica/Ethica Data · MetricWire · m-Path (KU
+Leuven-affiliated) · CARP Mobile Sensing (DTU, Bardram group) · Purple Robot, StudentLife, and Koa
+Health (identified, deliberately not given full profiles — see below).
+
+### Files created
+
+```
+module-02-digital-phenotyping/README.md
+module-02-digital-phenotyping/comparison-matrix.md          (10 tables)
+module-02-digital-phenotyping/sources.md                    (~45 source entries + a "sought but not obtained" register)
+module-02-digital-phenotyping/_inventory-and-scope-decisions.md
+module-02-digital-phenotyping/profiles/beiwe.md
+module-02-digital-phenotyping/profiles/radar-base.md
+module-02-digital-phenotyping/profiles/mindlamp.md
+module-02-digital-phenotyping/profiles/aware-framework.md
+module-02-digital-phenotyping/profiles/avicenna-research-ethica.md
+module-02-digital-phenotyping/profiles/metricwire.md
+module-02-digital-phenotyping/profiles/m-path.md
+module-02-digital-phenotyping/profiles/carp-mobile-sensing.md
+module-02-digital-phenotyping/profiles/legacy-and-adjacent-platforms.md
+```
+
+### Files revised
+
+`shared/unresolved-questions.md` (Tier 10 added, items 84–94; "Last updated" line updated) ·
+`shared/terminology.md` (new "Module 2 — Digital phenotyping platform terms" section appended).
+
+### Major findings
+
+1. **The module splits into three distinct deployment postures, not a simple open-source/commercial
+   binary**: self-hosted academic open source requiring real infrastructure capacity (Beiwe,
+   RADAR-base, mindLAMP, AWARE); fully managed commercial SaaS requiring none (Avicenna Research,
+   MetricWire, m-Path); and a build-your-own-app framework requiring mobile-development rather than
+   backend capacity (CARP Mobile Sensing, distributed as a Flutter library, not a hosted product).
+2. **Beiwe and Forest are separate open-source repositories, not one fused artifact** — both
+   maintained by the Onnela Lab, designed to work together, but independently usable and released.
+   Documented explicitly per CLAUDE.md's specific instruction to handle this relationship carefully.
+3. **Only Beiwe offers a documented, paid managed-hosting alternative (the Beiwe Service Center) to
+   its own free self-hosted path.** No comparable managed-hosting option was confirmed for
+   RADAR-base, mindLAMP, or AWARE — flagged as an open question for each.
+4. **Ethica Data rebranded to Avicenna Research.** Confirmed via convergent evidence (shared
+   app-store listing "Avicenna (Ethica)," shared Android package name `com.ethica.logger`, and
+   third-party company-profile cross-referencing) rather than treating them as two platforms.
+5. **AWARE Framework is the one platform in this module that self-documents an iOS/Android capability
+   gap** — its own materials describe the iOS port as different/lesser in coverage than the primary
+   Android client. Every other platform's parity question was left as "not independently verified"
+   rather than assumed, per CLAUDE.md's explicit instruction not to assume parity.
+6. **mindLAMP has explicitly deprecated components in its own public GitHub organization**
+   (`LAMP-portal`, `LAMP-app`, both labeled "[Deprecated]" in-repo), while other components
+   (`LAMP-server`) appear current — a status nuance a prospective adopter needs to map before
+   building on any specific repository.
+7. **Commercial pricing is almost universally non-public.** Avicenna Research, MetricWire, and
+   m-Path all require vendor contact for real figures. Only Beiwe (via BSC) publishes a pricing
+   *methodology* (fixed fee by study duration + variable fee by Active Participant Months, i.e.
+   participants × per-participant collection months) — not actual rate figures.
+8. **Compliance documentation (HIPAA/GDPR/DPA/SOC2/21 CFR Part 11) was not located for any platform
+   in this module**, including ones with explicit clinical-trial or clinical-care positioning
+   (mindLAMP, Avicenna Research, MetricWire). This is the single largest cross-platform gap and is
+   called out at the module level, not just per-profile.
+9. **CARP Mobile Sensing (DTU) is architecturally distinct from every other platform profiled** — an
+   MIT-licensed Flutter library/framework a research team builds its own app on top of, not a
+   pre-built, dashboard-configured product. Added under CLAUDE.md's "starting point, not a closed
+   list" clause, alongside m-Path (added for its distinctive, peer-reviewed-documented JITAI/EMI
+   sophistication).
+10. **Purple Robot, StudentLife, and Koa Health were identified but deliberately not given full
+    profiles.** Purple Robot's live maintenance status could not be established (and it is
+    Android-only regardless of status); StudentLife's lasting relevance to new researchers is its
+    dataset, not a reusable data-collection tool; Koa Health has an active digital-phenotyping
+    research program but no confirmed externally-deployable platform. All three are documented in
+    `profiles/legacy-and-adjacent-platforms.md` with the specific status question flagged, per
+    CLAUDE.md's instruction to label discontinued/legacy platforms clearly rather than exclude them
+    silently.
+
+### Important unresolved questions
+
+Recorded in full in `unresolved-questions.md` Tier 10 (items 84–94). The three highest-value:
+whether any platform besides Beiwe offers managed hosting; actual (not just methodological) pricing
+for Beiwe's BSC, Avicenna Research, and MetricWire; and compliance documentation for any platform
+with clinical positioning.
+
+### Sources or documentation that were unavailable
+
+| Target | Outcome |
+|---|---|
+| `docs.lamp.digital/about/publications/` | **404** |
+| AWARE Framework's deeper documentation pages | Limited content returned on direct fetch; sensor-level detail not obtained |
+| `metricwire.com` | Not directly fetched this session; relied on search-summary aggregation |
+| Vendor pricing pages (Avicenna Research, MetricWire, m-Path) | Non-public / not located |
+| Most academic project sub-pages (RADAR-base beyond "About," CARP, m-Path beyond its home/research pages) | Search-summary retrieval only, not direct fetch |
+
+### Decisions that could affect later comparisons
+
+1. **This module received a single research session, not Module 1's two-pass depth.** This is
+   stated explicitly in `README.md`, `comparison-matrix.md`, and this log entry rather than
+   presented as equivalent-depth research. A higher proportion of claims here rest on search-summary
+   retrieval than direct fetch — recorded per-source in `sources.md`.
+2. **Ethica/Avicenna Research were treated as one entity** based on convergent identity evidence
+   (app listing, package name, company-profile cross-reference) rather than profiled as two
+   competing platforms or arbitrarily assigned to only one name.
+3. **CARP Mobile Sensing and m-Path were added beyond `CLAUDE.md`'s starting list**, under its
+   explicit "starting point, not a closed list" clause — mirroring how Module 1 added Axivity/
+   GENEActiv beyond its own starting list.
+4. **Compliance documentation (HIPAA/GDPR/SOC2) is flagged as a module-wide gap**, not just a
+   per-profile Unclear marker, because it is the highest-value single item to close before any of
+   these platforms could responsibly be recommended for a regulated study.
+5. **Vendor engineering and marketing claims are labelled Reported, never Verified**, consistent
+   with Module 1's standard — this particularly affects Avicenna Research's export-format claims,
+   MetricWire's trigger-based-survey claims, and m-Path's "250+ Universities" figure.
+6. **No vendor or maintainer was contacted.** Outbound contact on the user's behalf was not
+   authorised. Every "contact the vendor/maintainer" item in Tier 10 is left as a question with a
+   named contact route.
+
+### Notes for the next update
+
+- A second research pass should prioritize: (a) direct-fetching the primary documentation sites that
+  returned limited or no content this session (AWARE, mindLAMP publications, MetricWire), (b)
+  attempting to confirm or rule out managed-hosting options for RADAR-base/mindLAMP/AWARE, and (c)
+  a systematic published-use/citation-count survey for each platform, which CLAUDE.md's "Evidence of
+  use" section calls for but this session did not attempt.
+- Re-verify mindLAMP's component-deprecation status, since it directly affects which repository a
+  new adopter should build on.
+- Confirm whether Koa Health warrants a ninth full profile once its platform-availability question
+  (item 91) is resolved.
+
+---
+
+## 2026-08-24 (second session) — Module 2 second pass: direct-source re-verification of AWARE, mindLAMP, MetricWire; Koa Health and Purple Robot follow-up
+
+**Module:** Module 2 (Mobile Digital Phenotyping Platforms) — second pass, not a redo. Scope was
+deliberately narrow: the three platforms flagged in `module-02-digital-phenotyping/README.md` and
+`_inventory-and-scope-decisions.md` as resting on search-summary rather than direct-fetch retrieval
+(AWARE Framework, mindLAMP, MetricWire), plus two secondary items (Koa Health's platform-availability
+status, Purple Robot's maintenance status). Beiwe, RADAR-base, Avicenna Research, m-Path, CARP, and
+Module 1 were explicitly out of scope for this pass.
+
+### Technologies researched
+
+AWARE Framework, mindLAMP (LAMP Platform), MetricWire, Koa Health, Purple Robot.
+
+### Files created or updated
+
+- `module-02-digital-phenotyping/profiles/aware-framework.md`
+- `module-02-digital-phenotyping/profiles/mindlamp.md`
+- `module-02-digital-phenotyping/profiles/metricwire.md`
+- `module-02-digital-phenotyping/profiles/legacy-and-adjacent-platforms.md` (Purple Robot, Koa Health sections)
+- `module-02-digital-phenotyping/sources.md`
+- `shared/unresolved-questions.md` (Tier 10, items #87, #88, #89, #90, #91, #92 annotated)
+
+### Major findings
+
+1. **AWARE Framework — resolved unresolved-question #88 (Verified).** Direct fetch of
+   `https://awareframework.com/sensors/` produced a complete per-sensor Android-vs-iOS availability
+   table: of ~33 documented sensor/plugin modules, only ~14 are available on iOS. Critically,
+   **Locations (GPS) is Android-only** — a materially larger and more consequential gap than the
+   profile's prior general "iOS differs" language conveyed. Also resolved the Active Data Collection
+   open question: ESM/EMA is a native module on both platforms. Confirmed Apache-2.0 licence on
+   `aware-client` and named plugin repos via direct GitHub org fetch. No managed/SaaS hosting option
+   found anywhere on the official site — self-hosting remains the only path.
+2. **mindLAMP — resolved unresolved-question #87 (Verified).** Direct GitHub fetch confirms
+   `LAMP-portal` and `LAMP-app` were formally **archived by their owner on 2020-11-17** (not just
+   labeled deprecated) and mapped their successors: `LAMP-dashboard` (portal successor) and
+   `LAMP-core-android`/`LAMP-core-ios` (app successor). Confirmed current, actively-updated
+   repositories through Aug 2026: `LAMP-server`, `LAMP-dashboard`, `LAMP-activities`,
+   `LAMP-app-gateway`, `LAMP-js`/`LAMP-py` (BSD-3-Clause), `LAMP-toolkit` (MIT, successor to
+   `LAMP-cortex`). Direct fetch of `docs.lamp.digital`'s landing page upgraded the passive-sensor
+   list (GPS, accelerometer, screen time, calls, heart rate, steps, sleep, gyroscope) from Unclear to
+   Corroborated, and surfaced a "flexible hosting and complete data access" phrase suggestive of a
+   managed-hosting option — though whether it's offered to outside teams, and at what cost, remains
+   unconfirmed (Reported, not resolved). `docs.lamp.digital/about/publications/` again returned 404,
+   confirmed as a genuine, repeated access gap rather than a one-off.
+3. **MetricWire — partially resolved unresolved-question #90; #89 remains unresolved.** Direct fetch
+   of `metricwire.com`'s homepage, `/pricing`, `/site-licence/`, and `/contact-us/` all returned HTTP
+   403 (bot-protection) — a confirmed, repeated access barrier, not an unattempted gap. However,
+   direct fetch of `https://github.com/MetricWire` succeeded and confirmed exactly one public
+   repository (an unrelated forked template) — corroborating the closed-source, no-public-SDK
+   characterization. Two independent third-party clues (an m2c2kit integration guide, and an
+   unofficial `zeolite` Python client referencing a MetricWire backend called "Catalyst") indicate
+   some form of API exists but is not publicly documented for general researcher self-service.
+   Pricing remains fully non-public; a "Site Licence" page exists but its terms could not be read.
+4. **Koa Health — largely resolved unresolved-question #91 (Corroborated).** Direct fetch of
+   `https://www.koahealth.com/research` confirms the page frames digital phenotyping strictly as an
+   internal method applied through academic partnerships, with no mention of a deployable platform,
+   SDK, or API for outside teams. This upgrades the exclusion rationale from inference to
+   primary-source absence — though a fully closed answer still requires initiating direct vendor
+   contact, which this session did not do (no outbound contact on the user's behalf was authorized).
+5. **Purple Robot — still unresolved (unresolved-question #92); new negative signal found.** A
+   deliberate second-pass fetch of the lab page, `/software/`, and the domain root all returned
+   **HTTP 500 across the entire phidatalab.org domain** — the same domain that returned page content
+   on a single-page fetch in the first pass could not be reached at all this session. This is a new,
+   mildly corroborating (but inconclusive — could be a transient outage) signal consistent with
+   reduced institutional maintenance of the lab's public web presence.
+
+### Important unresolved questions (even after this pass)
+
+- MetricWire's and Avicenna Research's actual pricing figures (item #89) — MetricWire's site remains
+  blocked to automated fetch; Avicenna Research was out of scope this pass.
+- The specific open-source licence covering mindLAMP's core `LAMP-server`/`LAMP-dashboard`/
+  `LAMP-core-android`/`LAMP-core-ios` repositories (narrower than before — client-library and
+  toolkit licences are now confirmed, but the core app/server licence is not).
+- Whether mindLAMP's "flexible hosting" is available to outside research/clinical teams, and at what
+  cost.
+- Whether MetricWire's "Catalyst" API is available to researchers through any official channel.
+- Purple Robot's actual current maintenance status — the domain-wide 500 errors are suggestive but
+  not conclusive; requires either a later fetch attempt or direct lab contact.
+- Full confirmation that no unlisted Koa Health enterprise/partnership platform offering exists —
+  requires initiating vendor contact.
+
+### Sources or documentation that were unavailable
+
+- `metricwire.com` (all paths tested) — HTTP 403, confirmed in both passes.
+- `phidatalab.org` (all paths tested) — HTTP 500 domain-wide in this pass (was reachable, at least
+  partially, in the first pass).
+- `docs.lamp.digital/about/publications/` — HTTP 404, confirmed in both passes.
+- Individual repository licence files for mindLAMP's core server/dashboard/app repos — not opened
+  directly this session (org-level listing did not surface licence badges for these specific repos).
+
+### Decisions that could affect later comparisons
+
+1. **AWARE's iOS limitation is now a Verified, quantified claim (location data is Android-only),
+   not a general "coverage differs" caveat** — this should be weighted more heavily than before in
+   any future revision of the comparison matrix's iOS/Android parity column for AWARE.
+2. **mindLAMP's deprecated-repository risk is now fully resolved** — future references to mindLAMP
+   in this knowledge base or downstream content should cite `LAMP-dashboard`/`LAMP-server`/
+   `LAMP-core-android`/`LAMP-core-ios`, never `LAMP-portal`/`LAMP-app`.
+3. **MetricWire's closed-source/no-public-API characterization is now Verified via direct GitHub
+   inspection**, not merely "not located" — this is a stronger claim than the first pass's phrasing
+   supported and should be reflected in the comparison matrix if it currently hedges more softly.
+4. **Purple Robot and Koa Health remain outside full-profile status** — this pass did not surface
+   evidence strong enough to add either as a ninth platform; the legacy-and-adjacent-platforms.md
+   file's existing scope decision stands, now with stronger (if still not conclusive) primary-source
+   backing.
