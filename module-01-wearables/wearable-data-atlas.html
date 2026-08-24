@@ -479,7 +479,8 @@
       mechanics, study operations, participant burden, cost, compliance posture, and validation
       evidence.</p>
     <div class="meta-row">
-      <span>Last verified <strong>2026-08-21</strong></span>
+      <span>Published <strong>2026-08-21</strong></span>
+      <span>Reconciled against sponsorship-tiered evidence <strong>2026-08-24</strong></span>
       <span><strong>12</strong> comparison tables</span>
       <span><strong>16</strong> platforms</span>
       <span>Source: Digital Health Knowledge Base, Module 1</span>
@@ -780,6 +781,7 @@
   <section class="tsec" id="t9">
     <div class="tsec-head"><span class="tnum">TABLE 09</span><h2 class="thead">Evidence &amp; validation summary</h2></div>
     <p class="tcap">Sleep-staging agreement vs. polysomnography, drawn from two independently read studies. Not a ranking — see the findings below the table before citing either number.</p>
+    <div class="tnote"><strong>Reconciled 2026-08-24</strong> against a companion sponsorship-tiered bibliography (<span class="mono">research-library-wearables.md</span>, ~90 papers across Oura/WHOOP/Apple Watch, each tagged vendor-employee / vendor-funded / independent with a Verified–Corroborated–Unclear confidence marker). Two rows below changed as a result — a direct Oura-vs-WHOOP comparison was found, and Apple's non-cardiac validation record turned out thinner than a single "Apple Heart Study" citation implies.</div>
     <div class="table-scroll">
       <table class="narrow">
         <thead><tr><th>Device</th><th>Robbins 2024 (N=35, healthy, <strong style="color:var(--danger)">Oura-funded</strong>) — four-stage κ</th><th>Schyvens 2025 (N=62, independent) — overall κ</th></tr></thead>
@@ -805,7 +807,7 @@
           <tr><td class="rowhead">High sensitivity, poor specificity — universal</td><td>Sleep detection 92–96%; wake detection <strong class="hi">27–52%</strong></td></tr>
           <tr><td class="rowhead">Data loss is a real design risk</td><td>Schyvens: Garmin failed <strong class="hi">18/43</strong> nights, Apple <strong class="hi">15/35</strong>, in a supervised lab. Withings and Oura lost zero</td></tr>
           <tr><td class="rowhead">Robbins 2024 has a declared conflict</td><td>Funded by Oura; lead author on Oura's Medical Advisory Board and a paid consultant. Never cite κ=0.65 without it</td></tr>
-          <tr><td class="rowhead">Oura and WHOOP have never met</td><td>A bridged estimate through Apple Watch suggests Oura is meaningfully ahead — labelled inference, not evidence</td></tr>
+          <tr><td class="rowhead">Oura beats WHOOP on resting HR/HRV — now a direct result</td><td>Dial et al. 2025 put Oura Gen3/Gen4, WHOOP 4.0, Garmin and Polar on the <strong>same 13 participants for 536 nights</strong> vs. an ECG reference: Oura Gen4 CCC=0.98, Gen3 CCC=0.97, <strong class="hi">WHOOP 4.0 CCC=0.91</strong> (worst of the four). <em class="foot">Corroborated, not Verified — full text still blocked.</em> <strong>PSG-scored sleep-stage kappa is still an estimate</strong> — Robbins excluded WHOOP, Schyvens excluded Oura</td></tr>
           <tr><td class="rowhead">No consumer brand is acceptable for energy expenditure</td><td>Unchanged across six years of reviews</td></tr>
           <tr><td class="rowhead">Current hardware is untested</td><td>Oura Ring 5, WHOOP 5.0/MG, Apple Series 11, Fitbit Air all postdate every study above</td></tr>
         </tbody>
@@ -817,11 +819,11 @@
       <table class="wide">
         <thead><tr><th class="colhead">Ecosystem</th><th>Strongest evidence asset</th></tr></thead>
         <tbody>
-          <tr><td class="rowhead">Apple</td><td><strong class="hi">Apple Heart Study</strong> — AFib notification at scale</td></tr>
+          <tr><td class="rowhead">Apple</td><td><strong class="hi">Apple Heart Study</strong> — AFib notification at scale, 419,297 participants — <strong>itself Apple-sponsored</strong>, the same disclosure category this table already flags for Oura. Outside cardiac rhythm the independent record is thinner than that one citation implies: VO2max underestimated 13.31% MAPE ("not sufficiently accurate to inform clinical decision-making"), HRV fails equivalence testing (28.88% MAPE), wheelchair-user fall detection <strong class="hi">4.7% sensitivity</strong></td></tr>
           <tr><td class="rowhead">Fitbit / Google</td><td><em><strong class="hi">All of Us</strong></em> — 59,000+ participants, minute-level, EHR/genomics-linked</td></tr>
           <tr><td class="rowhead">Garmin</td><td>Enhanced BBI vs ECG: mean error 0.506 ms, SD 8.55 ms, r=0.975 — but N=1, one night, manufacturer-published</td></tr>
-          <tr><td class="rowhead">Oura</td><td>Robbins 2024 (with conflict) + temperature/illness-onset literature</td></tr>
-          <tr><td class="rowhead">WHOOP</td><td>Schyvens 2025 — best deep-sleep accuracy (69.6%), fourth-best overall agreement</td></tr>
+          <tr><td class="rowhead">Oura</td><td>Robbins 2024 (Oura-funded, conflict disclosed) + temperature/illness-onset literature + <strong class="hi">Dial et al. 2025 head-to-head vs WHOOP</strong> (best resting-HR/HRV agreement of five devices). Dominates the smart-ring literature by volume (72% of 107 studies in one review) — but 65% of that literature carries moderate-to-high risk of bias</td></tr>
+          <tr><td class="rowhead">WHOOP</td><td>Schyvens 2025 (independent) — best deep-sleep accuracy (69.6%), fourth-best overall agreement; <strong class="hi">worst resting-HR/HRV agreement of five devices</strong> in Dial et al. 2025 (CCC=0.91). WHOOP's own most-cited flagship (Berryhill 2020, JCSM) is <strong class="hi">WHOOP-funded</strong> — same pattern as Robbins/Oura</td></tr>
           <tr><td class="rowhead">Samsung</td><td>High step-count validity in cross-brand reviews; absent from every PSG comparison</td></tr>
           <tr><td class="rowhead">Polar</td><td><strong class="hi">Used as the criterion device</strong> in others' validations — revealed preference of the field</td></tr>
           <tr><td class="rowhead">Withings</td><td>Medical-grade validation for BP and weight, not sleep</td></tr>

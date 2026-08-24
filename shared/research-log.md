@@ -367,3 +367,93 @@ module-01-wearables/research-library-wearables.md   (new — supersedes the init
    they are the kind of pattern that's easy to lose if the file is only ever read one entry at a time.
 
 ---
+
+---
+
+## 2026-08-24 (later) — Reconciliation: Wearable Data Atlas vs. the sponsorship-tiered research library
+
+**Module:** 1 — Wearables
+**Scope:** User asked to reconcile the published `wearable-data-atlas.html` artifact against the
+knowledge base — specifically `research-library-wearables.md`, the funding/COI-tiered bibliography
+built earlier the same day (see prior log entry), which had explicitly flagged its own findings as
+**not yet propagated** into `validation-evidence.md`, `comparison-matrix.md`, or the Atlas.
+
+### Files revised
+
+`validation-evidence.md` (§3 rewritten into §3a/§3b; new §6a added; gap table in §6b updated;
+sources list extended) · `comparison-matrix.md` (Table 9's "never met" finding row and the Oura/
+WHOOP/Apple non-sleep-evidence rows rewritten) · `wearable-data-atlas.html` (same two changes
+mirrored, plus a reconciliation note in Table 9 and an updated header meta line) — then republished
+to the same artifact URL.
+
+### The central correction
+
+The Atlas stated, in two places, that "Oura and WHOOP have never been compared under the same
+protocol" and that any ranking between them was "a bridged estimate... not evidence." This is no
+longer true for **resting HR and HRV**: Dial et al. 2025 (*Physiological Reports* 13:e70527, Ohio
+State / Air Force Research Laboratory) put Oura Gen3, Oura Gen4, WHOOP 4.0, Garmin Fenix 6, and
+Polar Grit X Pro on the same 13 participants for 536 nights against an ECG reference. Oura led on
+both generations (CCC 0.97–0.98); WHOOP was worst of the four tested (CCC 0.91, "moderate").
+
+This does **not** resolve the narrower PSG-scored sleep-stage-kappa question — Dial et al. did not
+use polysomnography, so Robbins 2024 (excludes WHOOP) and Schyvens 2025 (excludes Oura) remain the
+only sleep-architecture evidence, and the bridged estimate for that specific outcome was retained,
+relabeled to make the scope explicit. The correction is precise: direct evidence now exists for one
+outcome (HR/HRV), an indirect bridge remains the best available evidence for a different, narrower
+outcome (sleep-stage kappa). Both files previously conflated these under one blanket claim.
+
+The Dial et al. finding itself carries a **Corroborated, not Verified** marker throughout — direct
+fetch of the paper was blocked (403/CAPTCHA) in the source research-library pass, so the funding/COI
+disclosure has not been read and the HRV-specific CCC/MAPE figures (as opposed to resting HR) remain
+incomplete. This caveat was carried into all three files, not softened in the summary/report layer.
+
+### Secondary corrections — funding-disclosure asymmetry
+
+The Atlas and comparison matrix flagged Robbins 2024's Oura funding prominently but did not apply
+the same standard to the other two vendors' comparably-sponsored flagship studies:
+
+- **The Apple Heart Study (*NEJM* 2019) is itself Apple-sponsored**, with named Apple co-authors and
+  Stanford PIs disclosing Apple grants/personal fees — now stated in both files, matching the
+  treatment already given to Oura/Robbins.
+- **WHOOP's own most-cited early validation, Berryhill et al. 2020 (*JCSM*), was WHOOP-funded** —
+  previously absent from both files entirely; now added to WHOOP's evidence row.
+
+### Secondary corrections — Apple's non-cardiac record
+
+Both files previously represented Apple's evidence position with a single line ("Apple Heart
+Study — AFib notification at scale"), which is accurate for cardiac rhythm but implied a uniformly
+strong record. The research library surfaced specific, independently-funded findings that don't fit
+that framing: VO2max underestimated 13.31% MAPE ("not sufficiently accurate to inform clinical
+decision-making," Doherty et al. 2025); HRV fails equivalence testing (28.88% MAPE, Doherty et al.
+2024); and — the most concrete, actionable finding of the reconciliation pass — **wheelchair-user
+fall-detection sensitivity of 4.7%** (14/300 trials detected, Abou et al. 2022), starkly below
+Apple's general-population marketing framing. This last finding is now called out by name in both
+files because it is specific enough to change a study-design decision (do not rely on Apple Watch
+fall detection for a mobility-impaired population) in a way the module's other Apple findings are
+not.
+
+### Explicitly not done in this pass
+
+- Did not attempt to re-fetch Dial et al. 2025 directly; the Corroborated marker and open extraction
+  items (full HRV CCC/MAPE, funding disclosure) from `research-library-wearables.md` stand as-is.
+- Did not propagate the research library's other open items (the unconfirmed 2026 WHOOP menstrual-
+  cycle paper authorship, the five paywalled systematic reviews, the ~6-paper Oura reproductive-
+  health cluster) into `validation-evidence.md` or the Atlas — those remain library-only findings
+  pending their own follow-up, tracked in `shared/unresolved-questions.md` Tier 9.
+- Did not touch Table 10 (differentiators) in either file — its Oura/WHOOP/Apple entries describe
+  device capabilities, not accuracy evidence, and were not contradicted by this pass.
+- Did not re-verify or extend Kinnunen & Altini 2021 (Oura's in-house sleep-staging paper) beyond
+  naming it in `validation-evidence.md` §6a; it was not previously cited anywhere in this knowledge
+  base as evidence, so there was nothing to correct, only a gap to note.
+
+### Decisions affecting later comparisons
+
+1. **The Oura-vs-WHOOP claim was split into two explicitly-scoped sub-questions (§3a resting HR/
+   HRV, §3b PSG sleep-stage kappa)** rather than either leaving the old blanket claim in place or
+   overclaiming that Dial et al. resolves sleep staging too. This is the reconciliation's central
+   methodological move: correcting a claim precisely, not just marking it "no longer true."
+2. **Funding-disclosure treatment was made symmetric across all three vendors** rather than only
+   Oura's flagship study carrying a visible conflict flag — an internal-consistency fix, not new
+   evidence.
+3. **The Atlas artifact was republished to its existing URL** rather than left stale or created as a
+   new artifact, per the standing "update in place" convention for this deliverable.

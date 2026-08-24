@@ -230,7 +230,7 @@ accuracy as if it were the headline agreement statistic. Full extraction: `valid
 | **High sensitivity, poor specificity, universally** | Sleep detection 92–96%; wake detection **27–52%** |
 | **Data loss is a real design risk** | Schyvens: Garmin failed **18/43** nights, Apple **15/35**, in a supervised lab. Withings and Oura lost **zero** |
 | **Robbins 2024 has a declared conflict** | Funded by Oura; lead author on Oura's Medical Advisory Board and paid consultant. Never cite κ=0.65 without it |
-| **Oura and WHOOP have never met** | A bridged estimate through Apple Watch suggests Oura is meaningfully ahead — labelled inference, not evidence. See `validation-evidence.md` §3 |
+| **Oura beats WHOOP on resting HR/HRV — now a direct result, not an estimate** | Dial et al. 2025 put Oura Gen3/Gen4, WHOOP 4.0, Garmin, and Polar on the same 13 participants for 536 nights vs. an ECG reference: Oura Gen4 CCC=0.98, Gen3 CCC=0.97, **WHOOP 4.0 CCC=0.91**. Corroborated, not Verified — full text still blocked. **PSG-scored sleep-stage kappa is still an estimate**, not a result — Robbins excluded WHOOP, Schyvens excluded Oura. See `validation-evidence.md` §3a/§3b |
 | **No consumer brand is acceptable for energy expenditure** | Unchanged across six years of reviews |
 | **Current hardware is untested** | Oura Ring 5, WHOOP 5.0/MG, Apple Series 11, Fitbit Air all postdate every study above |
 
@@ -238,11 +238,11 @@ accuracy as if it were the headline agreement statistic. Full extraction: `valid
 
 | Ecosystem | Strongest evidence asset |
 |---|---|
-| Apple | **Apple Heart Study** — AFib notification at scale |
+| Apple | **Apple Heart Study** — AFib notification at scale, **itself Apple-sponsored** (419,297 participants). Outside cardiac rhythm the independent record is mixed: VO2max underestimated 13.31% MAPE, HRV fails equivalence testing (28.88% MAPE), wheelchair-user fall detection **4.7% sensitivity** — see `validation-evidence.md` §6a |
 | Fitbit / Google | ***All of Us*** — 59,000+ participants, minute-level, EHR/genomics-linked |
 | Garmin | Enhanced BBI vs ECG: mean error **0.506 ms**, SD 8.55 ms, r=0.975 — but **N=1, one night, manufacturer-published** |
-| Oura | Robbins 2024 (with conflict) + temperature/illness-onset literature |
-| WHOOP | Schyvens 2025 — best deep-sleep *accuracy* (69.6%), fourth-best overall agreement |
+| Oura | Robbins 2024 (Oura-funded, conflict disclosed) + temperature/illness-onset literature + **Dial et al. 2025 head-to-head vs WHOOP (best resting-HR/HRV agreement, CCC 0.97–0.98)**. Also dominates the smart-ring literature by volume (72% of 107 studies in one review) — but 65% of that literature carries moderate-to-high risk of bias |
+| WHOOP | Schyvens 2025 (independent) — best deep-sleep *accuracy* (69.6%), fourth-best overall agreement; **worst resting-HR/HRV agreement of five devices in Dial et al. 2025 (CCC=0.91)**. WHOOP's own most-cited flagship (Berryhill 2020, JCSM) is WHOOP-funded — the same disclosure pattern this table already flags for Oura/Robbins |
 | Samsung | High step-count validity in cross-brand reviews; **absent from every PSG comparison** |
 | **Polar** | **Used as the criterion device** in others' validations — revealed preference of the field |
 | Withings | Medical-grade validation for **BP and weight**, not for sleep |

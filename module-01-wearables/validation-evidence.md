@@ -186,12 +186,58 @@ transparency, limiting reproducibility; results do not extend to other brands or
 
 ---
 
-## 3. Can Oura and WHOOP be compared? A bridged estimate
+## 3. Can Oura and WHOOP be compared?
 
-They have **never been tested under the same protocol.** Robbins 2024 excluded WHOOP; Schyvens 2025
-excluded Oura. Both vendors market a "most accurate" claim from the study that excluded the other.
+**Corrected 2026-08-24.** A companion research pass (`research-library-wearables.md`) found a direct
+head-to-head this file previously said did not exist. That claim is retired below; a bridged
+estimate is retained only for the specific outcome — PSG-scored sleep-stage kappa — that still has
+no direct comparison.
 
-However, **Apple Watch Series 8 and the Fitbit Sense line appear in both studies**, which permits a
+### 3a. Resting HR and HRV — a genuine head-to-head now exists
+
+**Dial MB, Hollander ME, Vatne EA, Emerson AM, Edwards NA, Hagen JA. 2025.** "Validation of
+nocturnal resting heart rate and heart rate variability in consumer wearables." *Physiological
+Reports* 13(16):e70527. Ohio State University Human Performance Collaborative / Air Force Research
+Laboratory, Wright-Patterson AFB.
+
+**Design.** 13 adults (6 female), **536 nights**, an ECG chest-strap reference, with **Garmin
+Fenix 6, Oura Gen3, Oura Gen4, Polar Grit X Pro, and WHOOP 4.0 worn simultaneously** by the same
+participants on the same nights. This is the first located study placing Oura and WHOOP under one
+protocol against a shared reference.
+
+| Device | Resting HR — CCC | Resting HR — MAPE |
+|---|---|---|
+| **Oura Gen4** | **0.98** | 1.94% ± 2.51% |
+| **Oura Gen3** | **0.97** | 1.67% ± 1.54% |
+| WHOOP 4.0 | 0.91 ("moderate") | 3.00% ± 2.15% |
+| Polar Grit X Pro | 0.86 ("poor") | 2.71% ± 2.75% |
+
+HRV: both Oura generations rank highest (Gen4 above Gen3), WHOOP "moderate," Garmin and Polar
+"poor." Exact WHOOP/Garmin/Polar HRV CCC/MAPE figures were not retrievable from the sources
+available to that pass and remain an open extraction item.
+
+> ⚠️ **Confidence: Corroborated, not Verified.** Direct fetch of the Wiley/PMC pages was blocked
+> (403/CAPTCHA) in two separate attempts. The numbers above come from search-result summaries of the
+> paper, not a primary-text read, and **the paper's funding/COI disclosure has not been confirmed** —
+> no vendor funding was identified in secondary sources, but this is not the same as having read the
+> disclosure statement. Treat the ranking as credible and directly relevant, but do not cite it with
+> the same confidence as the fully-extracted Robbins/Schyvens tables above until a full-text pass
+> confirms both the missing HRV figures and the funding disclosure.
+
+**What this resolves and what it doesn't.** This closes the "no direct comparison at all" gap for
+**resting heart rate and HRV**: Oura leads WHOOP on both, under a shared protocol, in a real
+(if small, N=13) sample. It does **not** address PSG-scored sleep-stage classification — Dial et al.
+did not use polysomnography, so §3b below still applies to that specific question.
+
+### 3b. Sleep-stage kappa specifically — still no PSG head-to-head, bridged estimate retained
+
+For **PSG-scored four-stage sleep architecture**, Robbins 2024 and Schyvens 2025 remain the only two
+studies, and they still do not share Oura and WHOOP in the same protocol: Robbins 2024 excluded
+WHOOP; Schyvens 2025 excluded Oura. The indirect bridge below is retained for this narrower question
+only — do not extend it to resting HR or HRV, where §3a above is now direct evidence rather than an
+estimate.
+
+**Apple Watch Series 8 and the Fitbit Sense line appear in both PSG studies**, which permits a
 cautious indirect comparison anchored on the shared devices.
 
 | Device | Robbins 2024 four-stage κ | Schyvens 2025 κ | Δ |
@@ -211,8 +257,9 @@ agreement is probably somewhat *better* than Apple Watch's, and WHOOP's is proba
 two-device bridge across studies with different populations and different hardware generations
 (Oura Gen3, not Ring 4/5; Whoop 4.0, not 5.0), and Robbins was Oura-funded.
 
-**It is an estimate, not a result.** A head-to-head Oura vs WHOOP PSG study remains the single
-highest-value missing piece of evidence in this module.
+**It is an estimate, not a result.** A head-to-head Oura vs WHOOP **PSG sleep-stage** study remains
+the single highest-value missing piece of evidence in this module. (Resting HR and HRV, the other
+outcome this bridge used to stand in for, now have direct evidence — see §3a.)
 
 **What can be said without inference:** WHOOP 4.0 had the best *deep-sleep classification accuracy*
 of the six devices Schyvens tested (69.63%) while simultaneously having the second-worst *overall*
@@ -316,11 +363,86 @@ and it has not changed in six years.
 
 ---
 
-## 6. What the evidence base does not contain
+## 6a. Funding transparency, applied symmetrically — new from the sponsorship-tiered library
+
+**Added 2026-08-24**, from `research-library-wearables.md`, which tiers ~90 papers across Oura,
+WHOOP, and Apple Watch by funding/authorship (A = vendor-employee, B = vendor-funded/independent
+authors, C = fully independent), with a Verified/Corroborated/Unclear marker on every tier
+assignment. Full detail lives in that file; the findings below are the ones that change how this
+file's own claims should be read.
+
+**The funding-disclosure treatment in this file was asymmetric, and that asymmetry has now been
+corrected.** Robbins 2024's Oura funding and advisory-board conflict is flagged prominently above.
+The equivalent fact about WHOOP and Apple was previously missing:
+
+- **WHOOP's own most-cited early validation, Berryhill et al. 2020 (*J Clin Sleep Med* 16(5):775–783,
+  University of Arizona), was directly grant-funded by WHOOP Inc.** — authors are not WHOOP
+  employees and reported no personal conflicts, but the funding line is WHOOP's, the same pattern as
+  Robbins/Oura. **Verified** (funding statement read directly). WHOOP's own marketing describes this
+  study as independent confirmation, which is true of authorship but not of funding.
+- **A separate CQUniversity author cluster (Miller, Bellenger, and colleagues) recurs across
+  several WHOOP papers**, and one member (Dean Miller) holds a **WHOOP-sponsored research
+  position at CQU**. The widely-marketed "99.7% HR / 99% HRV accuracy" figure (Bellenger et al. 2021,
+  *Sensors*, funded by the Australian Institute of Sport — genuinely independent funding,
+  **Verified**) is real, but the device tested was **WHOOP 2.0**, two hardware generations behind
+  current WHOOP 5.0 — a caveat dropped in marketing use of that figure. Later papers from the same
+  author cluster (Miller et al. 2020 *J Sports Sciences*; Bellenger et al. 2022 water polo HRV study)
+  have not had their funding sections directly read and should not be assumed independent by
+  default given the cluster's established sponsorship pattern.
+- **Apple's own flagship validation — the Apple Heart Study (*NEJM* 2019, 419,297 participants) —
+  was itself Apple-sponsored**, with named Apple co-authors and Stanford PIs disclosing grants/
+  personal fees from Apple. **Verified** ("the study was sponsored by Apple," read directly). This
+  is not disqualifying — it is large, rigorous, and peer-reviewed — but it is the same category of
+  fact this file already flags for Robbins/Oura, and it was previously omitted here. **Apply the
+  same disclosure standard to all three vendors' flagship studies, not only Oura's.**
+
+**Oura's in-house sleep-staging paper is separately worth naming.** Kinnunen H, Altini M. 2021,
+"The Promise of Sleep," *Sensors* 21(13):4302 — both authors Oura Health staff. This is Oura's own
+algorithm-validation paper (Tier A / vendor-authored), distinct from Robbins 2024 (Tier B /
+vendor-funded, independent authors). Neither should be read as independent evidence; they are two
+different kinds of non-independent evidence and are sometimes conflated.
+
+**A systematic review adds a field-wide caveat, not specific to Oura.** Gong et al. 2025,
+*Diagnostics*/JMIR preprint (Korean government-funded, no industry funding, **Verified**, full text
+read): of 107 studies on smart rings, **77 (72%) involved Oura specifically** — Oura dominates the
+smart-ring evidence base by volume — but **65% of the 107 underlying studies had moderate-to-high
+risk of bias**. That bias-risk figure applies to the field's methodology generally, not to Oura's
+device performance specifically, but it is a material caveat on the weight any single study from
+this literature should carry.
+
+**Apple's validation record outside AFib is more mixed than a single "Apple Heart Study" citation
+suggests.** From independently-funded studies (SFI-funded UCD/Insight Centre group, **Verified** on
+both):
+- **VO2max**: Apple Watch underestimated by ~6 mL/kg/min vs. indirect calorimetry (MAPE 13.31%),
+  concluded "not sufficiently accurate to inform clinical decision-making" (Doherty et al. 2025,
+  *PLOS ONE*, n=28).
+- **HRV**: underestimated by 8.31 ms (MAPE 28.88%), **fails equivalence testing** against a Polar
+  H10/Kubios reference, though resting HR itself showed excellent agreement (MAPE 5.91%) (Doherty
+  et al. 2024, *Sensors* 24(19):6220, n=39, 316 measurements).
+- **Fall detection**: in wheelchair users specifically, sensitivity was **4.7%** (14/300 fall trials
+  detected) — starkly worse than Apple's general-population marketing framing (Abou et al. 2022,
+  *Assistive Technology*, University of Illinois, n=25, funding not confirmed). A specific,
+  actionable finding for any study involving mobility-impaired participants.
+- **AFib detection** varies widely by population and method across independent studies: irregular-
+  rhythm-notification sensitivity ranged from **21.4%** (Inocian et al. 2024, Philippines, n=140,
+  Holter-referenced) to **72%** by-subject (Wasserlauf et al., AHA-funded, explicit "Apple was not
+  involved" statement, n=30), while the on-demand ECG app itself performed much better
+  (94.8% pooled sensitivity, Shahid et al. 2025 meta-analysis, **Unclear** confidence — funding not
+  confirmed). **Irregular-rhythm notifications and the ECG app are different features with very
+  different accuracy profiles and should not be conflated.**
+
+None of this overturns the Apple Heart Study's core finding or displaces AFib detection as Apple's
+strongest evidence asset. It does mean **"Apple's validation record" should not be read as uniformly
+strong outside cardiac rhythm** — VO2max and HRV specifically have independent evidence of poor
+accuracy, and fall detection has an independently-documented population-specific failure mode.
+
+## 6b. What the evidence base does not contain
 
 | Gap | Consequence |
 |---|---|
-| No Oura vs WHOOP head-to-head | Both "most accurate" claims are unfalsifiable as stated |
+| **No Oura vs WHOOP PSG sleep-stage head-to-head** (resting HR/HRV head-to-head now exists — §3a) | Sleep-stage "most accurate" claims are still unfalsifiable as stated |
+| **No independent (non-vendor-funded/authored) SpO2 validation for Oura or WHOOP**, on either device, at all | Both devices market a wellness feature with no third-party accuracy evidence |
+| **No independent skin/body-temperature validation for Oura or WHOOP**, on either device, at all | Both devices build illness-detection and cycle-tracking features on unvalidated-by-third-parties sensing |
 | Samsung absent from every major multi-device PSG comparison | The platform with the best raw-data access has the weakest validation record |
 | Empatica absent from consumer head-to-heads | Cannot compare EmbracePlus sleep detection to Oura/WHOOP |
 | Skin tone not systematically recorded in either PSG study | PPG performance across skin tones is a known physical concern and remains unquantified here |
@@ -341,3 +463,12 @@ Fitabase EBBI guide: https://fitabase.com/resources/knowledge-base/learn-about-g
 Fuller et al. 2020: https://mhealth.jmir.org/2020/9/e18694/
 Chevance et al. 2022: https://mhealth.jmir.org/2022/4/e35626
 Umbrella review: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11560992/
+Dial et al. 2025: https://physoc.onlinelibrary.wiley.com/doi/10.14814/phy2.70527
+Gong et al. 2025: JMIR preprint #83508 / *Diagnostics* (MDPI)
+Doherty et al. 2025 (VO2max): https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0323741
+Doherty et al. 2024 (HRV): https://pmc.ncbi.nlm.nih.gov/articles/PMC11478500/
+Abou et al. 2022 (wheelchair fall detection): https://www.tandfonline.com/doi/full/10.1080/10400435.2021.1923087
+
+**Full funding/COI tiering for ~90 papers across Oura, WHOOP, and Apple Watch** — including every
+paper cited in §6a with its Verified/Corroborated/Unclear confidence marker — lives in
+`research-library-wearables.md`, not duplicated here.
