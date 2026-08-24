@@ -1,0 +1,917 @@
+<title>Wearable Data Atlas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --paper: #F2F5F4;
+    --ink: #12201D;
+    --ink-soft: #46605A;
+    --ink-faint: #7C938C;
+    --surface: #FFFFFF;
+    --surface-2: #E9EFED;
+    --line: #D7DEDB;
+    --line-soft: #E6EBE9;
+    --accent: #0E7C7A;
+    --accent-ink: #0A5D5B;
+    --accent-soft: #DBEFED;
+    --amber: #8C6110;
+    --amber-soft: #F3E7CC;
+    --danger: #96324A;
+    --danger-soft: #F4DEE3;
+    --shadow: 0 1px 2px rgba(18,32,29,0.06), 0 8px 24px -12px rgba(18,32,29,0.18);
+    --font-display: "Big Shoulders Display", "Arial Narrow", sans-serif;
+    --font-body: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #0D1613;
+      --ink: #E7EEEC;
+      --ink-soft: #9FB6AF;
+      --ink-faint: #63807A;
+      --surface: #131F1C;
+      --surface-2: #182521;
+      --line: #24332E;
+      --line-soft: #1B2723;
+      --accent: #3FD0C5;
+      --accent-ink: #7CE3DA;
+      --accent-soft: rgba(63,208,197,0.14);
+      --amber: #E3B15C;
+      --amber-soft: rgba(227,177,92,0.14);
+      --danger: #E38095;
+      --danger-soft: rgba(227,128,149,0.14);
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px -12px rgba(0,0,0,0.5);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #0D1613;
+    --ink: #E7EEEC;
+    --ink-soft: #9FB6AF;
+    --ink-faint: #63807A;
+    --surface: #131F1C;
+    --surface-2: #182521;
+    --line: #24332E;
+    --line-soft: #1B2723;
+    --accent: #3FD0C5;
+    --accent-ink: #7CE3DA;
+    --accent-soft: rgba(63,208,197,0.14);
+    --amber: #E3B15C;
+    --amber-soft: rgba(227,177,92,0.14);
+    --danger: #E38095;
+    --danger-soft: rgba(227,128,149,0.14);
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px -12px rgba(0,0,0,0.5);
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; } }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 15.5px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: var(--accent-ink); }
+
+  ::selection { background: var(--accent-soft); color: var(--ink); }
+
+  /* ---------- layout shell ---------- */
+  .page {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 28px 96px;
+  }
+
+  /* ---------- top bar / masthead ---------- */
+  .masthead {
+    padding: 56px 0 32px;
+    border-bottom: 1px solid var(--line);
+  }
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent-ink);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 18px;
+  }
+  .eyebrow::before {
+    content: "";
+    width: 22px;
+    height: 1px;
+    background: var(--accent);
+    display: inline-block;
+  }
+  h1.title {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(40px, 6vw, 64px);
+    line-height: 0.96;
+    letter-spacing: 0.002em;
+    margin: 0 0 18px;
+    text-wrap: balance;
+    color: var(--ink);
+  }
+  .dek {
+    font-size: 17px;
+    color: var(--ink-soft);
+    max-width: 62ch;
+    margin: 0 0 22px;
+  }
+  .meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 22px;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    color: var(--ink-faint);
+  }
+  .meta-row span strong { color: var(--ink-soft); font-weight: 600; }
+
+  .caution {
+    margin-top: 26px;
+    padding: 14px 18px;
+    background: var(--amber-soft);
+    border: 1px solid color-mix(in srgb, var(--amber) 35%, transparent);
+    border-radius: 4px;
+    color: var(--ink);
+    font-size: 13.5px;
+    max-width: 72ch;
+  }
+  .caution strong { color: var(--amber); }
+
+  /* ---------- sticky nav ---------- */
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    background: color-mix(in srgb, var(--paper) 92%, transparent);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+  .navbar-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 28px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    overflow-x: auto;
+    scrollbar-width: thin;
+  }
+  .navbar-inner::-webkit-scrollbar { height: 4px; }
+  .navbar-inner::-webkit-scrollbar-thumb { background: var(--line); border-radius: 2px; }
+  .navlabel {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-faint);
+    padding: 14px 14px 14px 0;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .navpill {
+    flex-shrink: 0;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    white-space: nowrap;
+    padding: 7px 12px;
+    margin: 10px 2px;
+    border-radius: 4px;
+    color: var(--ink-soft);
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+  }
+  .navpill:hover { background: var(--surface-2); color: var(--ink); }
+  .navpill:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .navpill .n { color: var(--accent-ink); font-weight: 600; margin-right: 6px; }
+
+  /* ---------- section chrome ---------- */
+  .tsec {
+    padding-top: 68px;
+    scroll-margin-top: 64px;
+  }
+  .tsec-head {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 6px;
+    flex-wrap: wrap;
+  }
+  .tnum {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--accent-ink);
+    background: var(--accent-soft);
+    border-radius: 4px;
+    padding: 3px 8px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+  }
+  h2.thead {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 0.002em;
+    margin: 0;
+    color: var(--ink);
+    text-wrap: balance;
+  }
+  .tcap {
+    color: var(--ink-soft);
+    font-size: 14.5px;
+    max-width: 78ch;
+    margin: 10px 0 22px;
+  }
+  .tcap strong { color: var(--ink); }
+  .tnote {
+    margin-top: 14px;
+    padding: 12px 16px;
+    background: var(--surface-2);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 4px 4px 0;
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    max-width: 78ch;
+  }
+  .tnote strong { color: var(--ink); }
+  .subhead {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-faint);
+    margin: 30px 0 10px;
+  }
+
+  /* ---------- tables ---------- */
+  .table-scroll {
+    overflow-x: auto;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    box-shadow: var(--shadow);
+    background: var(--surface);
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 720px;
+    font-size: 13.5px;
+  }
+  table.wide { min-width: 980px; }
+  table.narrow { min-width: 560px; }
+  thead th {
+    text-align: left;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink-faint);
+    font-weight: 600;
+    padding: 12px 14px;
+    background: var(--surface-2);
+    border-bottom: 1px solid var(--line);
+    white-space: nowrap;
+    position: sticky;
+    top: 0;
+  }
+  tbody td {
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--line-soft);
+    vertical-align: top;
+    color: var(--ink);
+  }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:nth-child(even) td { background: color-mix(in srgb, var(--surface-2) 45%, var(--surface)); }
+  td.rowhead, th.colhead {
+    font-weight: 600;
+    color: var(--ink);
+    white-space: nowrap;
+    position: sticky;
+    left: 0;
+    background: var(--surface);
+    box-shadow: 1px 0 0 var(--line);
+  }
+  tbody tr:nth-child(even) td.rowhead { background: color-mix(in srgb, var(--surface-2) 65%, var(--surface)); }
+  td.num, .mono { font-family: var(--font-mono); font-variant-numeric: tabular-nums; font-size: 13px; }
+  td.center { text-align: center; }
+
+  strong.hi { color: var(--accent-ink); font-weight: 600; }
+  .muted { color: var(--ink-faint); }
+  em.foot { color: var(--ink-faint); font-style: italic; font-size: 12.5px; }
+
+  /* ---------- status tags ---------- */
+  .tag {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: 3px;
+    line-height: 1.5;
+    white-space: nowrap;
+  }
+  .tag--yes { color: var(--accent-ink); background: var(--accent-soft); }
+  .tag--no  { color: var(--ink-faint); background: var(--surface-2); }
+  .tag--partial { color: var(--amber); background: var(--amber-soft); }
+  .tag--block { color: var(--danger); background: var(--danger-soft); }
+
+  /* ---------- sensor spec grid (table 2 replacement) ---------- */
+  .specgrid-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    box-shadow: var(--shadow);
+    background: var(--surface);
+    padding: 6px;
+  }
+  .specgrid {
+    display: grid;
+    grid-template-columns: 200px repeat(10, 74px);
+    min-width: 940px;
+  }
+  .specgrid .gh {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--ink-faint);
+    padding: 10px 6px;
+    text-align: center;
+    border-bottom: 1px solid var(--line);
+    align-self: end;
+  }
+  .specgrid .gh.corner { text-align: left; padding-left: 10px; }
+  .specgrid .gname {
+    font-weight: 600;
+    font-size: 13px;
+    padding: 11px 10px;
+    border-bottom: 1px solid var(--line-soft);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    left: 0;
+    background: var(--surface);
+  }
+  .specgrid .gcell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--line-soft);
+    padding: 8px 4px;
+  }
+  .dot {
+    width: 11px; height: 11px; border-radius: 50%;
+    background: var(--line);
+    flex-shrink: 0;
+  }
+  .dot--on { background: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+  .dot--some {
+    width: 11px; height: 11px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--amber) 50%, var(--line) 50%);
+    flex-shrink: 0;
+  }
+  .specgrid-legend {
+    display: flex; gap: 22px; flex-wrap: wrap;
+    font-family: var(--font-mono); font-size: 12px; color: var(--ink-soft);
+    margin: 14px 2px 0;
+  }
+  .specgrid-legend span { display: inline-flex; align-items: center; gap: 7px; }
+
+  /* ---------- differentiator card grid (table 10) ---------- */
+  .diffgrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 14px;
+  }
+  .diffcard {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 18px 20px;
+    box-shadow: var(--shadow);
+  }
+  .diffcard .dname {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent-ink);
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  .diffcard p { margin: 0; font-size: 14px; color: var(--ink); line-height: 1.5; }
+  .diffcard strong { color: var(--accent-ink); }
+
+  /* ---------- legend strip ---------- */
+  .legend-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    align-items: center;
+    padding: 16px 0 8px;
+  }
+  .legend-strip .lgroup {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12.5px;
+    color: var(--ink-soft);
+  }
+
+  footer {
+    margin-top: 84px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--ink-faint);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  @media (max-width: 720px) {
+    .page { padding: 0 16px 72px; }
+    .navbar-inner { padding: 0 16px; }
+    h1.title { font-size: 34px; }
+  }
+</style>
+
+<div class="navbar">
+  <div class="navbar-inner">
+    <span class="navlabel">Jump to</span>
+    <a class="navpill" href="#t1"><span class="n">01</span>Access</a>
+    <a class="navpill" href="#t2"><span class="n">02</span>Sensors</a>
+    <a class="navpill" href="#t3"><span class="n">03</span>Raw signal</a>
+    <a class="navpill" href="#t4"><span class="n">04</span>API</a>
+    <a class="navpill" href="#t5"><span class="n">05</span>Study ops</a>
+    <a class="navpill" href="#t6"><span class="n">06</span>Participant</a>
+    <a class="navpill" href="#t7"><span class="n">07</span>Cost</a>
+    <a class="navpill" href="#t8"><span class="n">08</span>Compliance</a>
+    <a class="navpill" href="#t9"><span class="n">09</span>Evidence</a>
+    <a class="navpill" href="#t10"><span class="n">10</span>Differentiators</a>
+    <a class="navpill" href="#t11"><span class="n">11</span>Ops platforms</a>
+    <a class="navpill" href="#t12"><span class="n">12</span>By question</a>
+  </div>
+</div>
+
+<div class="page">
+
+  <header class="masthead">
+    <p class="eyebrow">Module 1 — Wearables · Research Reference</p>
+    <h1 class="title">Wearable Data Atlas</h1>
+    <p class="dek">What sixteen consumer, athletic, and research-grade wearable platforms actually let a
+      study collect, access, and export — access model, sensors, raw-signal specifications, API
+      mechanics, study operations, participant burden, cost, compliance posture, and validation
+      evidence.</p>
+    <div class="meta-row">
+      <span>Last verified <strong>2026-08-21</strong></span>
+      <span><strong>12</strong> comparison tables</span>
+      <span><strong>16</strong> platforms</span>
+      <span>Source: Digital Health Knowledge Base, Module 1</span>
+    </div>
+    <div class="caution">
+      <strong>Read across tables, not within one.</strong> A platform that leads on raw signal access
+      (Table 3) may be the weakest on study operations (Table 5) or the most expensive per participant
+      (Table 7). No single table ranks these platforms — the right one depends on the research question.
+      See Table 12.
+    </div>
+  </header>
+
+  <!-- ============ TABLE 1 ============ -->
+  <section class="tsec" id="t1">
+    <div class="tsec-head"><span class="tnum">TABLE 01</span><h2 class="thead">Ecosystem orientation &amp; access model</h2></div>
+    <p class="tcap">How each platform is positioned, how a study actually reaches its data, and whether a vendor sits in the data path at all.</p>
+    <div class="table-scroll">
+      <table class="wide">
+        <thead><tr>
+          <th class="colhead">Ecosystem</th><th>Orientation</th><th>Access model</th><th>Vendor cloud in path?</th><th>Approval required?</th><th>Self-serve?</th>
+        </tr></thead>
+        <tbody>
+          <tr><td class="rowhead">Apple</td><td>Consumer</td><td>Researcher-built iOS app reading HealthKit</td><td><span class="tag tag--yes">No</span> — never receives study data</td><td>SensorKit only (IRB + Apple review)</td><td>HealthKit yes; SensorKit no</td></tr>
+          <tr><td class="rowhead">Fitbit / Google</td><td>Consumer</td><td>Public REST API (migrating to Google Health API)</td><td><span class="tag tag--no">Yes</span></td><td>Intraday: yes. Google Health scopes: <strong class="hi">all Restricted</strong></td><td><span class="tag tag--partial">Partly</span></td></tr>
+          <tr><td class="rowhead">Garmin</td><td>Consumer / athletic</td><td>Health API (cloud) <em>or</em> Health SDK (mobile, can bypass cloud)</td><td>API yes; Standard SDK no</td><td>Yes — enterprise program application</td><td><span class="tag tag--no">No</span></td></tr>
+          <tr><td class="rowhead">Oura</td><td>Consumer</td><td>Public REST API + webhooks</td><td><span class="tag tag--no">Yes</span></td><td><strong class="hi">Yes, above 10 users</strong></td><td>Up to 10 users</td></tr>
+          <tr><td class="rowhead">WHOOP</td><td>Consumer</td><td>REST API v2 + webhooks</td><td><span class="tag tag--no">Yes</span></td><td>App approval before launch</td><td><span class="tag tag--partial">Partly</span></td></tr>
+          <tr><td class="rowhead">Samsung</td><td>Consumer</td><td>Privileged Health SDK (on-device) + Research Stack (self-deployed)</td><td><span class="tag tag--yes">No</span> for Privileged SDK</td><td>Yes — Samsung Partner Program</td><td><span class="tag tag--no">No</span></td></tr>
+          <tr><td class="rowhead">Polar</td><td>Athletic / research</td><td><strong class="hi">Open BLE SDK</strong> (GitHub) or AccessLink API</td><td><span class="tag tag--yes">No</span> for BLE path</td><td><strong class="hi">None</strong> for BLE SDK</td><td><span class="tag tag--yes">Yes</span></td></tr>
+          <tr><td class="rowhead">Withings</td><td>Medical-grade home health</td><td>Public Health Data API; Advanced Research API</td><td><span class="tag tag--no">Yes</span></td><td>Yes — <strong class="hi">contracted partners only</strong> for raw</td><td><span class="tag tag--partial">Partly</span></td></tr>
+          <tr><td class="rowhead">Empatica</td><td>Research / medical</td><td>Care Portal export</td><td><span class="tag tag--no">Yes</span></td><td>Commercial engagement</td><td><span class="tag tag--no">No</span></td></tr>
+          <tr><td class="rowhead">Ametris (ActiGraph)</td><td>Clinical trials</td><td>CentrePoint platform + API; ActiLife offline</td><td>Optional (ActiLife offline)</td><td>Commercial engagement</td><td><span class="tag tag--no">No</span></td></tr>
+          <tr><td class="rowhead">Axivity / GENEActiv</td><td>Research</td><td><strong class="hi">USB download.</strong> No cloud, no API, no account</td><td><span class="tag tag--yes">No</span></td><td><strong class="hi">None</strong></td><td><span class="tag tag--yes">Yes</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ TABLE 2 ============ -->
+  <section class="tsec" id="t2">
+    <div class="tsec-head"><span class="tnum">TABLE 02</span><h2 class="thead">Sensors present</h2></div>
+    <p class="tcap">Hardware sensor presence on at least the flagship device in each line. <strong>Presence is not access</strong> — see Table 03 for what a researcher can actually obtain from each sensor.</p>
+    <div class="specgrid-wrap">
+      <div class="specgrid">
+        <div class="gh corner">Device</div>
+        <div class="gh">PPG</div><div class="gh">ECG</div><div class="gh">Accel</div><div class="gh">Gyro</div><div class="gh">Temp</div><div class="gh">SpO2</div><div class="gh">GPS</div><div class="gh">Baro</div><div class="gh">EDA</div><div class="gh">BIA</div>
+
+        <div class="gname">Apple Watch</div>
+        <div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div>
+
+        <div class="gname">Fitbit / Pixel Watch</div>
+        <div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--some" title="Some models"></span></div><div class="gcell"><span class="dot dot--some" title="Sense only"></span></div><div class="gcell"><span class="dot"></span></div>
+
+        <div class="gname">Garmin</div>
+        <div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--some" title="Some models"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div>
+
+        <div class="gname">Oura Ring 5</div>
+        <div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div>
+
+        <div class="gname">WHOOP 5.0 / MG</div>
+        <div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--some" title="MG only"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div>
+
+        <div class="gname">Samsung Galaxy Watch8</div>
+        <div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div>
+
+        <div class="gname">Polar H10</div>
+        <div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div>
+
+        <div class="gname">Polar Verity Sense</div>
+        <div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div>
+
+        <div class="gname">Movesense MD / Flash / HR2</div>
+        <div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div>
+
+        <div class="gname">Withings ScanWatch</div>
+        <div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--some" title="Some models"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div>
+
+        <div class="gname">Ultrahuman Ring AIR</div>
+        <div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div>
+
+        <div class="gname">Biostrap</div>
+        <div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div>
+
+        <div class="gname">Verily Study Watch</div>
+        <div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div>
+
+        <div class="gname">Empatica EmbracePlus</div>
+        <div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div>
+
+        <div class="gname">Ametris LEAP / wGT3X</div>
+        <div class="gcell"><span class="dot dot--some" title="Some models"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--some" title="Some models"></span></div><div class="gcell"><span class="dot dot--some" title="Some models"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div>
+
+        <div class="gname">Axivity AX3 / AX6</div>
+        <div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--some" title="AX6 only"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div>
+
+        <div class="gname">GENEActiv Original</div>
+        <div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--some" title="Near-body"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div>
+      </div>
+    </div>
+    <div class="specgrid-legend">
+      <span><span class="dot dot--on"></span> Present</span>
+      <span><span class="dot dot--some"></span> Present on some models</span>
+      <span><span class="dot"></span> Absent</span>
+    </div>
+  </section>
+
+  <!-- ============ TABLE 3 ============ -->
+  <section class="tsec" id="t3">
+    <div class="tsec-head"><span class="tnum">TABLE 03</span><h2 class="thead">Raw signal availability — the decisive table</h2></div>
+    <p class="tcap">What a researcher can actually pull off the sensor, not the processed score the app shows. This is the table that most changes which platform is right for a given study.</p>
+    <div class="table-scroll">
+      <table class="wide">
+        <thead><tr>
+          <th class="colhead">Ecosystem</th><th>Raw accel</th><th>Raw PPG waveform</th><th>ECG</th><th>IBI / RR / BBI</th><th>Raw EDA</th><th>Route</th>
+        </tr></thead>
+        <tbody>
+          <tr><td class="rowhead">Apple</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td>Discrete voltage samples via <span class="mono">HKElectrocardiogramQuery</span>; continuous ECG no. <em class="foot">Contradicted by ResearchKit FAQ — Unclear</em></td><td class="tag tag--no">No</td><td class="muted">n/a</td><td>HealthKit</td></tr>
+          <tr><td class="rowhead">Fitbit / Google</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td>ECG readings; raw waveform no</td><td class="tag tag--no">No</td><td class="muted">n/a</td><td>REST API</td></tr>
+          <tr><td class="rowhead">Garmin</td><td class="tag tag--yes">Yes</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td><strong class="hi">Enhanced BBI</strong>, per-beat confidence, via cloud API, SDK, or Fitabase / Labfront. <strong>Nocturnal only</strong></td><td class="muted">n/a</td><td>Health API, Health SDK, or a research platform</td></tr>
+          <tr><td class="rowhead">Oura</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td class="muted">n/a</td><td class="tag tag--no">No</td><td class="muted">n/a</td><td class="muted">—</td></tr>
+          <tr><td class="rowhead">WHOOP</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td>MG only, not via API</td><td class="tag tag--no">No</td><td class="muted">n/a</td><td class="muted">—</td></tr>
+          <tr><td class="rowhead">Samsung</td><td><strong class="hi">Yes, 25 Hz</strong></td><td><strong class="hi">Yes</strong> — incl. IR + Red channels</td><td><strong class="hi">Yes, raw, on-demand</strong></td><td>Yes (IBI)</td><td class="muted">n/a</td><td>Privileged Health SDK; also via Verily Pre</td></tr>
+          <tr><td class="rowhead">Polar H10</td><td>Yes, 25 / 50 / 100 / 200 Hz, ±2/4/8 g</td><td class="muted">—</td><td><strong class="hi">Yes, 130 Hz in µV</strong></td><td>Yes, RR at 1 Hz</td><td class="muted">n/a</td><td><strong class="hi">Open BLE SDK, no registration</strong></td></tr>
+          <tr><td class="rowhead">Polar Verity Sense</td><td>Yes, 52 Hz; SDK mode 26–416 Hz, ±2–16 g</td><td><strong class="hi">Yes</strong> — SDK mode 28–176 Hz, 22-bit</td><td class="tag tag--no">No</td><td>Yes (PPI) — not in SDK mode</td><td class="muted">n/a</td><td>Open BLE SDK</td></tr>
+          <tr><td class="rowhead">Movesense</td><td><strong class="hi">Yes — IMU 13 Hz–1.6 kHz, 9-axis</strong></td><td class="muted">—</td><td><strong class="hi">Yes, 125–512 Hz</strong></td><td>Yes, RR at 1 ms resolution</td><td class="muted">n/a</td><td>Open API, custom firmware, no licence cost</td></tr>
+          <tr><td class="rowhead">Withings</td><td>Yes, ScanWatch, ~25 Hz</td><td>Yes, green / red / IR</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td class="muted">n/a</td><td><strong class="hi">Advanced Research API</strong> — contracted only; disables all other watch features; 3–4 day battery</td></tr>
+          <tr><td class="rowhead">Ultrahuman</td><td>Yes</td><td><strong class="hi">Yes — raw PPG from a ring</strong></td><td class="muted">—</td><td class="tag tag--no">No</td><td class="muted">n/a</td><td>UltraSignal, whitelist + loaner dev kit</td></tr>
+          <tr><td class="rowhead">Biostrap</td><td>Yes (+ gyroscope)</td><td>Yes, waveform kept raw</td><td class="muted">—</td><td class="tag tag--no">No</td><td class="muted">n/a</td><td>RPM dashboard / API / BLE SDK, configurable rates</td></tr>
+          <tr><td class="rowhead">Empatica</td><td>Yes, 64 Hz</td><td>Yes — BVP, 64 Hz</td><td class="tag tag--no">No</td><td>Systolic peaks</td><td><strong class="hi">Yes, 4 Hz</strong></td><td>Avro / CSV from Care Portal</td></tr>
+          <tr><td class="rowhead">Verily Study Watch</td><td>Yes (inertial)</td><td class="muted">—</td><td>Yes</td><td class="muted">—</td><td><strong class="hi">Yes</strong></td><td>Verily Pre / Viewpoint Evidence, enterprise only</td></tr>
+          <tr><td class="rowhead">Ametris</td><td>Yes, configurable</td><td class="muted">Unclear</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td class="muted">n/a</td><td>ActiLife / CentrePoint</td></tr>
+          <tr><td class="rowhead">Axivity / GENEActiv</td><td>Yes, to 100 Hz, ±8 g</td><td class="muted">n/a</td><td class="muted">n/a</td><td class="muted">n/a</td><td class="muted">n/a</td><td><strong class="hi">USB, raw file, no vendor</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="subhead">Sampling-rate league table, cheapest-first</p>
+    <div class="table-scroll">
+      <table class="narrow">
+        <thead><tr><th>Signal</th><th>Best available</th><th>Rate</th><th>Cost of entry</th></tr></thead>
+        <tbody>
+          <tr><td class="rowhead">ECG</td><td><strong class="hi">Movesense</strong></td><td class="num">up to 512 Hz</td><td>Developer kit, no licence fee</td></tr>
+          <tr><td class="rowhead">ECG</td><td>Polar H10</td><td class="num">130 Hz</td><td><strong class="hi">~$95, open SDK, no approval</strong></td></tr>
+          <tr><td class="rowhead">IMU / accelerometer</td><td><strong class="hi">Movesense</strong></td><td class="num">up to 1.6 kHz, 9-axis</td><td>Developer kit</td></tr>
+          <tr><td class="rowhead">Accelerometer</td><td>Polar Verity Sense (SDK mode)</td><td class="num">up to 416 Hz</td><td>~$95</td></tr>
+          <tr><td class="rowhead">Accelerometer</td><td>Axivity AX3</td><td class="num">100 Hz, ±8 g</td><td>Device only, no software cost</td></tr>
+          <tr><td class="rowhead">Accelerometer</td><td>Empatica / Ametris</td><td class="num">64 Hz / configurable</td><td>$1,750+ / five figures</td></tr>
+          <tr><td class="rowhead">Accelerometer</td><td>Samsung</td><td class="num">25 Hz</td><td>Partner approval</td></tr>
+          <tr><td class="rowhead">Raw PPG</td><td><strong class="hi">Polar Verity Sense (SDK mode)</strong></td><td class="num">28–176 Hz, 22-bit</td><td><strong class="hi">~$95</strong></td></tr>
+          <tr><td class="rowhead">Raw PPG</td><td>Empatica (BVP)</td><td class="num">64 Hz</td><td>~$1,750 / 3 yr</td></tr>
+          <tr><td class="rowhead">Raw PPG</td><td>Samsung (incl. IR + Red)</td><td class="muted">undocumented</td><td>Partner approval</td></tr>
+          <tr><td class="rowhead">Raw PPG</td><td>Withings ScanWatch</td><td class="num">~24.8 Hz</td><td>Contract</td></tr>
+          <tr><td class="rowhead">EDA</td><td><strong class="hi">Empatica</strong></td><td class="num">4 Hz</td><td>~$1,750 / 3 yr</td></tr>
+          <tr><td class="rowhead">EDA</td><td>Verily Study Watch</td><td class="muted">undocumented</td><td>Enterprise only</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="tnote"><strong>The highest sampling rates in this module come from the cheapest, most open vendors.</strong> Polar and Movesense beat every major consumer platform and every clinical-trial vendor on raw specification, at a fraction of the cost and with no approval process. What you give up is form factor, wear duration, derived metrics, and study infrastructure — not signal.</div>
+  </section>
+
+  <!-- ============ TABLE 4 ============ -->
+  <section class="tsec" id="t4">
+    <div class="tsec-head"><span class="tnum">TABLE 04</span><h2 class="thead">API characteristics</h2></div>
+    <p class="tcap">Authentication, throughput limits, push mechanics, and what actually drives data latency in practice.</p>
+    <div class="table-scroll">
+      <table class="wide">
+        <thead><tr><th class="colhead">Ecosystem</th><th>Auth</th><th>Rate limit</th><th>Push / webhooks</th><th>Historical backfill</th><th>Latency driver</th></tr></thead>
+        <tbody>
+          <tr><td class="rowhead">Apple</td><td>On-device permission</td><td class="muted">n/a</td><td>HealthKit background delivery</td><td><strong class="hi">Full device history at enrollment</strong></td><td>iOS background execution limits</td></tr>
+          <tr><td class="rowhead">Fitbit (legacy)</td><td>Fitbit OAuth 2.0</td><td class="num"><strong class="hi">150 req/hr per user</strong></td><td>Subscription API</td><td>Date-ranged; intraday HR max 24h/request, <strong>silently degrades to summary</strong></td><td>Participant app sync</td></tr>
+          <tr><td class="rowhead">Google Health API</td><td>Google OAuth 2.0</td><td class="muted">Unclear (see below)</td><td><span class="mono">projects.subscribers</span></td><td class="muted">Unclear</td><td class="muted">Unclear</td></tr>
+          <tr><td class="rowhead">Garmin</td><td>Garmin consent</td><td class="muted">Unclear</td><td>Ping/Pull or Push</td><td>Supported on first connect; depth unclear</td><td>Device→Garmin Connect sync</td></tr>
+          <tr><td class="rowhead">Oura</td><td>OAuth 2.0 only (PATs retired Dec 2025)</td><td class="num">5,000 req / 5 min, per-token &amp; per-app tiers</td><td>Yes, ~30s after app sync</td><td>Bulk on first connect, 1–3 month chunks</td><td><strong class="hi">Sleep only syncs when user opens the app</strong></td></tr>
+          <tr><td class="rowhead">WHOOP</td><td>OAuth 2.0</td><td class="num">100 req/min, 10,000 req/day per client</td><td>Yes (v2; v1 removed)</td><td>Date-ranged</td><td>Device→cloud sync</td></tr>
+          <tr><td class="rowhead">Samsung</td><td>On-device SDK</td><td class="muted">n/a</td><td class="muted">n/a</td><td class="muted">n/a</td><td>Researcher's own pipeline</td></tr>
+          <tr><td class="rowhead">Polar (BLE)</td><td>None</td><td class="tag tag--yes">None</td><td class="muted">n/a</td><td>Device onboard memory</td><td>Bluetooth range</td></tr>
+          <tr><td class="rowhead">Withings</td><td>OAuth 2.0</td><td class="muted">Unclear</td><td class="muted">Unclear</td><td class="muted">Unclear</td><td>Cellular or app sync</td></tr>
+          <tr><td class="rowhead">Empatica</td><td>Portal login</td><td class="muted">n/a</td><td class="tag tag--no">No real-time access</td><td>Full study history in cloud</td><td>Batch upload</td></tr>
+          <tr><td class="rowhead">Ametris</td><td class="muted">Unclear</td><td class="muted">Unclear</td><td class="muted">Unclear</td><td>Full</td><td>Cellular gateway or app</td></tr>
+          <tr><td class="rowhead">Axivity / GENEActiv</td><td class="muted">n/a</td><td class="muted">n/a</td><td class="muted">n/a</td><td class="muted">n/a</td><td><strong class="hi">Device return</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="subhead">Google Health API — since resolved with published limits</p>
+    <div class="table-scroll">
+      <table class="narrow">
+        <thead><tr><th>Scope</th><th>Limit</th></tr></thead>
+        <tbody>
+          <tr><td class="rowhead">Per project, daily</td><td class="num">86.4M requests/day (~1,000 QPS sustained)</td></tr>
+          <tr><td class="rowhead">Per project, per minute</td><td class="num">120,000 requests/minute (~2,000 QPS burst)</td></tr>
+          <tr><td class="rowhead">Per user, per minute</td><td class="num">300 requests/minute (5 QPS)</td></tr>
+          <tr><td class="rowhead">Unverified apps</td><td>Capped at 250 QPS total across max <strong class="hi">100 users</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="tnote">Rate limits are generous once verified — the real Google Health API constraint is a <strong>two-part verification process</strong> (Trust &amp; Safety review, plus a third-party security assessment costing <strong>$500–$4,500</strong> and taking 2–6 weeks), not throughput.</div>
+  </section>
+
+  <!-- ============ TABLE 5 ============ -->
+  <section class="tsec" id="t5">
+    <div class="tsec-head"><span class="tnum">TABLE 05</span><h2 class="thead">Study operations &amp; management</h2></div>
+    <p class="tcap">Whether the vendor (or a companion platform) provides participant rosters, adherence monitoring, multi-site support, and EMA — the layer that most wearable vendors leave to the researcher.</p>
+    <div class="table-scroll">
+      <table class="wide">
+        <thead><tr><th class="colhead">Ecosystem</th><th>Researcher portal</th><th>Participant roster</th><th>Adherence / wear-time</th><th>Multi-site</th><th>Surveys / EMA</th><th>Device reuse</th></tr></thead>
+        <tbody>
+          <tr><td class="rowhead">Apple</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td>Build with ResearchKit</td><td class="muted">n/a (BYOD)</td></tr>
+          <tr><td class="rowhead">Fitbit / Google</td><td>No (Fitabase)</td><td>Via Fitabase</td><td>Via Fitabase (sync + battery)</td><td>Via Fitabase</td><td>Fitabase Engage, Summer 2026</td><td>Via Fitabase</td></tr>
+          <tr><td class="rowhead">Garmin</td><td>No (Fitabase / Labfront)</td><td>Via platform</td><td>Via platform</td><td>Via platform</td><td>No native; yes via Labfront</td><td>Via platform</td></tr>
+          <tr><td class="rowhead">Oura</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td>Tags only</td><td>Requires re-sizing</td></tr>
+          <tr><td class="rowhead">WHOOP</td><td>No (Unite is enterprise)</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td>Journal (API availability unclear)</td><td>Membership-bound</td></tr>
+          <tr><td class="rowhead">Samsung</td><td><strong class="hi">Research Stack portal</strong></td><td class="tag tag--yes">Yes</td><td class="muted">Unclear</td><td class="muted">Unclear</td><td><strong class="hi">Yes</strong></td><td class="muted">Unclear</td></tr>
+          <tr><td class="rowhead">Polar</td><td>No (Team Pro is team-sport)</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td>Yes, trivially</td></tr>
+          <tr><td class="rowhead">Withings</td><td>Partnership model</td><td>Via partner/RPM</td><td>Via partner</td><td class="tag tag--yes">Yes</td><td>Via DCT partner</td><td>Yes</td></tr>
+          <tr><td class="rowhead">Empatica</td><td><strong class="hi">Care Portal</strong></td><td><strong class="hi">Yes, unlimited</strong></td><td><strong class="hi">Yes, live wear-time</strong></td><td class="tag tag--yes">Yes</td><td>Tags only</td><td><strong class="hi">Yes — first-class</strong></td></tr>
+          <tr><td class="rowhead">Ametris</td><td><strong class="hi">CentrePoint / Connect</strong></td><td class="tag tag--yes">Yes</td><td><strong class="hi">Near-real-time + reports</strong></td><td><strong class="hi">Yes, 70+ countries</strong></td><td>Via Connect / Signant eCOA</td><td>Yes</td></tr>
+          <tr><td class="rowhead">Axivity / GENEActiv</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td class="tag tag--block">Impossible during wear</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td>Yes</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ TABLE 6 ============ -->
+  <section class="tsec" id="t6">
+    <div class="tsec-head"><span class="tnum">TABLE 06</span><h2 class="thead">Participant experience &amp; operational burden</h2></div>
+    <p class="tcap">Form factor, battery, and the structural conflicts that drive missing data in the field.</p>
+    <div class="table-scroll">
+      <table class="wide">
+        <thead><tr><th class="colhead">Ecosystem</th><th>Form factor</th><th>Battery</th><th>Charging vs. sleep conflict?</th><th>Phone required?</th><th>BYOD viable?</th></tr></thead>
+        <tbody>
+          <tr><td class="rowhead">Apple</td><td>Watch</td><td class="num">~1–2 days</td><td class="tag tag--block">Yes — significant</td><td>Yes (iPhone)</td><td><strong class="hi">Yes, excellent</strong></td></tr>
+          <tr><td class="rowhead">Fitbit</td><td>Band / watch</td><td class="num">~5–10 days</td><td class="tag tag--partial">Minor</td><td>Yes</td><td>Yes</td></tr>
+          <tr><td class="rowhead">Garmin</td><td>Watch</td><td class="num"><strong class="hi">7–14+ days</strong></td><td class="tag tag--yes">No</td><td>Yes (API); yes for SDK</td><td>Yes</td></tr>
+          <tr><td class="rowhead">Oura</td><td>Ring</td><td class="num">~4–7 days</td><td class="tag tag--partial">Minor</td><td>Yes — sleep sync depends on it</td><td>Partly (sizing)</td></tr>
+          <tr><td class="rowhead">WHOOP</td><td>Screenless strap</td><td class="num">~4–5 days, on-wrist swap</td><td class="tag tag--yes">No — no interruption</td><td>Yes</td><td>Partly (membership)</td></tr>
+          <tr><td class="rowhead">Samsung</td><td>Watch / ring</td><td class="num">~1.5–3 days (less streaming raw)</td><td class="tag tag--partial">Yes</td><td>Yes (Android)</td><td>Android only</td></tr>
+          <tr><td class="rowhead">Polar H10</td><td>Chest strap</td><td>Session-wear</td><td class="muted">n/a</td><td>No (onboard memory)</td><td class="tag tag--no">No</td></tr>
+          <tr><td class="rowhead">Withings</td><td>Hybrid watch / scale / BP / sleep mat</td><td class="num">~30 days (3–4 raw mode)</td><td class="tag tag--yes">No</td><td>No — cellular options</td><td>Partly</td></tr>
+          <tr><td class="rowhead">Empatica</td><td>Wristband</td><td class="num"><strong class="hi">7 days raw, 14 extended</strong></td><td class="tag tag--yes">No</td><td>Yes</td><td class="tag tag--no">No</td></tr>
+          <tr><td class="rowhead">Ametris</td><td>Research puck / watch</td><td class="num">~25–30 days</td><td class="tag tag--yes">No</td><td>No — cellular gateway</td><td class="tag tag--no">No</td></tr>
+          <tr><td class="rowhead">Axivity / GENEActiv</td><td>Sealed puck</td><td>Full recording window, no charging</td><td class="tag tag--yes">No</td><td>No</td><td class="tag tag--no">No</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ TABLE 7 ============ -->
+  <section class="tsec" id="t7">
+    <div class="tsec-head"><span class="tnum">TABLE 07</span><h2 class="thead">Cost structure</h2></div>
+    <p class="tcap">Device cost, recurring per-participant cost, and whether pricing is public at all.</p>
+    <div class="table-scroll">
+      <table class="wide">
+        <thead><tr><th class="colhead">Ecosystem</th><th>Device cost</th><th>Recurring per-participant</th><th>API / platform fee</th><th>Pricing public?</th></tr></thead>
+        <tbody>
+          <tr><td class="rowhead">Apple</td><td>Consumer retail</td><td class="tag tag--yes">None</td><td>Free ($99/yr dev account)</td><td>Device yes; total cost is engineering</td></tr>
+          <tr><td class="rowhead">Fitbit / Google</td><td class="num">~$80–180</td><td>Premium for some metrics</td><td>API free; Fitabase non-public</td><td>Partly</td></tr>
+          <tr><td class="rowhead">Garmin</td><td class="num">~$150–1,000+</td><td class="tag tag--yes">None</td><td>API free; SDK licence fee or device MOQ, non-public</td><td>Devices only</td></tr>
+          <tr><td class="rowhead">Oura</td><td class="num">Ring 5 $399–$499</td><td class="num"><strong class="hi">$69.99/yr mandatory</strong></td><td>API free</td><td>Mostly</td></tr>
+          <tr><td class="rowhead">WHOOP</td><td>Included in membership</td><td class="num"><strong class="hi">$199 / $239 / $359 per yr</strong> (One / Peak / Life=MG)</td><td>No published fee</td><td><strong class="hi">Yes</strong></td></tr>
+          <tr><td class="rowhead">Samsung</td><td>Consumer retail</td><td class="tag tag--yes">None</td><td>No published fee; Research Stack free/open</td><td>Devices only</td></tr>
+          <tr><td class="rowhead">Polar</td><td class="num"><strong class="hi">~$90</strong> (H10 / Verity Sense)</td><td class="tag tag--yes">None</td><td><strong class="hi">Free, open SDK</strong></td><td><strong class="hi">Yes</strong></td></tr>
+          <tr><td class="rowhead">Movesense</td><td class="muted">Not public</td><td class="tag tag--yes">None</td><td>No licence cost</td><td>Partly</td></tr>
+          <tr><td class="rowhead">Labfront (Garmin/Movesense platform)</td><td class="muted">—</td><td class="num"><strong class="hi">Free / $500 / $1,250/yr</strong> + $10–25/extra</td><td>Included</td><td><strong class="hi">Yes — only platform that publishes prices</strong></td></tr>
+          <tr><td class="rowhead">Withings</td><td class="num">~$100–350</td><td>Varies</td><td>Research API contracted, non-public</td><td>Devices only</td></tr>
+          <tr><td class="rowhead">Empatica</td><td class="num"><strong class="hi">From $1,166.40</strong>; academic bundle $1,749.60/3yr</td><td>Included in bundle</td><td>Included</td><td><strong class="hi">Yes, for academic</strong></td></tr>
+          <tr><td class="rowhead">Ametris</td><td class="num">~$325–1,016 reported</td><td class="muted">Non-public</td><td>ActiLife ~$1,695, CentrePoint ~$3,500/yr <em class="foot">(third-party, dated)</em></td><td class="tag tag--block">No</td></tr>
+          <tr><td class="rowhead">Axivity / GENEActiv</td><td>Low–mid hundreds</td><td class="tag tag--yes">None</td><td>None — open toolchain</td><td>No (quote), but no recurring cost</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ TABLE 8 ============ -->
+  <section class="tsec" id="t8">
+    <div class="tsec-head"><span class="tnum">TABLE 08</span><h2 class="thead">Privacy, security &amp; compliance posture</h2></div>
+    <p class="tcap">Every <span class="tag tag--partial">Unclear</span> here is an open vendor question, not an inference — see the knowledge base's unresolved-questions register before assuming an answer either way.</p>
+    <div class="table-scroll">
+      <table class="wide">
+        <thead><tr><th class="colhead">Ecosystem</th><th>HIPAA BAA</th><th>GDPR/DPA</th><th>SOC 2 / ISO</th><th>Regulatory clearance</th><th>Self-hosting / custody</th></tr></thead>
+        <tbody>
+          <tr><td class="rowhead">Apple</td><td class="tag tag--yes">N/A — not in the data path</td><td>Researcher's obligation</td><td class="muted">n/a</td><td>ECG, AFib, sleep apnea, hypertension features cleared</td><td><strong class="hi">Full — researcher holds all data</strong></td></tr>
+          <tr><td class="rowhead">Fitbit / Google</td><td class="tag tag--partial">Unclear</td><td class="tag tag--partial">Unclear</td><td class="tag tag--partial">Unclear</td><td>ECG / AFib features cleared</td><td class="tag tag--no">No</td></tr>
+          <tr><td class="rowhead">Garmin</td><td>Standard SDK claimed HIPAA-compliant (vendor claim)</td><td class="tag tag--partial">Unclear</td><td class="tag tag--partial">Unclear</td><td>Some ECG features</td><td><strong class="hi">Yes via Standard SDK</strong></td></tr>
+          <tr><td class="rowhead">Oura</td><td class="tag tag--partial">Unclear</td><td>Unclear (EU company)</td><td class="tag tag--partial">Unclear</td><td>Limited</td><td class="tag tag--no">No</td></tr>
+          <tr><td class="rowhead">WHOOP</td><td class="tag tag--block">Explicitly disclaimed</td><td class="tag tag--partial">Unclear</td><td class="tag tag--partial">Unclear</td><td>MG ECG / BP claimed</td><td class="tag tag--block">No — terms prohibit permanent copies</td></tr>
+          <tr><td class="rowhead">Samsung</td><td class="tag tag--partial">Unclear</td><td class="tag tag--partial">Unclear</td><td class="tag tag--partial">Unclear</td><td>Some features cleared</td><td><strong class="hi">Yes — Research Stack self-deployed</strong></td></tr>
+          <tr><td class="rowhead">Polar</td><td>Unclear (Flow)</td><td>Unclear (EU company)</td><td class="tag tag--partial">Unclear</td><td>H10 is a reference-grade sensor</td><td><strong class="hi">Yes — BLE path has no processor</strong></td></tr>
+          <tr><td class="rowhead">Withings</td><td class="tag tag--partial">Unclear</td><td>Unclear (EU company)</td><td class="tag tag--partial">Unclear</td><td>Medical-grade, multiple clearances</td><td class="tag tag--no">No</td></tr>
+          <tr><td class="rowhead">Empatica</td><td class="tag tag--partial">Unclear</td><td class="tag tag--partial">Unclear</td><td class="tag tag--partial">Unclear</td><td><strong class="hi">FDA-cleared platform + biomarkers; CE</strong></td><td class="tag tag--no">No</td></tr>
+          <tr><td class="rowhead">Ametris</td><td class="tag tag--partial">Unclear</td><td class="tag tag--partial">Unclear</td><td class="tag tag--partial">Unclear</td><td><strong class="hi">FDA-cleared medical-grade; SaMD</strong></td><td>Partial (ActiLife offline)</td></tr>
+          <tr><td class="rowhead">Axivity / GENEActiv</td><td class="tag tag--yes">N/A — no processor exists</td><td class="tag tag--yes">Trivial — no processor</td><td class="muted">n/a</td><td>None (research instruments)</td><td><strong class="hi">Full</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ TABLE 9 ============ -->
+  <section class="tsec" id="t9">
+    <div class="tsec-head"><span class="tnum">TABLE 09</span><h2 class="thead">Evidence &amp; validation summary</h2></div>
+    <p class="tcap">Sleep-staging agreement vs. polysomnography, drawn from two independently read studies. Not a ranking — see the findings below the table before citing either number.</p>
+    <div class="table-scroll">
+      <table class="narrow">
+        <thead><tr><th>Device</th><th>Robbins 2024 (N=35, healthy, <strong style="color:var(--danger)">Oura-funded</strong>) — four-stage κ</th><th>Schyvens 2025 (N=62, independent) — overall κ</th></tr></thead>
+        <tbody>
+          <tr><td class="rowhead">Oura Gen3</td><td class="num"><strong class="hi">0.65</strong></td><td class="muted">not tested</td></tr>
+          <tr><td class="rowhead">Apple Watch S8</td><td class="num">0.60</td><td class="num"><strong class="hi">0.53</strong></td></tr>
+          <tr><td class="rowhead">Fitbit Sense / Sense 2</td><td class="num">0.55</td><td class="num">0.42</td></tr>
+          <tr><td class="rowhead">Fitbit Charge 5</td><td class="muted">not tested</td><td class="num">0.41</td></tr>
+          <tr><td class="rowhead">Whoop 4.0</td><td class="muted">not tested</td><td class="num"><strong class="hi">0.37</strong></td></tr>
+          <tr><td class="rowhead">Withings ScanWatch</td><td class="muted">not tested</td><td class="num">0.22</td></tr>
+          <tr><td class="rowhead">Garmin Vivosmart 4</td><td class="muted">not tested</td><td class="num">0.21</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="subhead">Findings that matter more than the ranking</p>
+    <div class="table-scroll">
+      <table class="narrow">
+        <tbody>
+          <tr><td class="rowhead" style="width:220px">Deep sleep &amp; REM are unreliable on every device</td><td>Robbins ICCs — deep sleep: Oura <strong class="hi">0.32</strong>, Fitbit 0.36, Apple <strong class="hi">0.13</strong>; REM: Oura <strong class="hi">0.27</strong>, Fitbit <strong class="hi">0.13</strong>, Apple 0.37. All poor. <strong>Stage-minute outcomes are largely device noise.</strong></td></tr>
+          <tr><td class="rowhead">TST and SE are the defensible endpoints</td><td>ICC 0.74–0.85 across devices</td></tr>
+          <tr><td class="rowhead">Every device underestimates WASO</td><td>−12 to −48 min. Fragmentation endpoints are systematically flattered</td></tr>
+          <tr><td class="rowhead">High sensitivity, poor specificity — universal</td><td>Sleep detection 92–96%; wake detection <strong class="hi">27–52%</strong></td></tr>
+          <tr><td class="rowhead">Data loss is a real design risk</td><td>Schyvens: Garmin failed <strong class="hi">18/43</strong> nights, Apple <strong class="hi">15/35</strong>, in a supervised lab. Withings and Oura lost zero</td></tr>
+          <tr><td class="rowhead">Robbins 2024 has a declared conflict</td><td>Funded by Oura; lead author on Oura's Medical Advisory Board and a paid consultant. Never cite κ=0.65 without it</td></tr>
+          <tr><td class="rowhead">Oura and WHOOP have never met</td><td>A bridged estimate through Apple Watch suggests Oura is meaningfully ahead — labelled inference, not evidence</td></tr>
+          <tr><td class="rowhead">No consumer brand is acceptable for energy expenditure</td><td>Unchanged across six years of reviews</td></tr>
+          <tr><td class="rowhead">Current hardware is untested</td><td>Oura Ring 5, WHOOP 5.0/MG, Apple Series 11, Fitbit Air all postdate every study above</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="subhead">Non-sleep evidence positions</p>
+    <div class="table-scroll">
+      <table class="wide">
+        <thead><tr><th class="colhead">Ecosystem</th><th>Strongest evidence asset</th></tr></thead>
+        <tbody>
+          <tr><td class="rowhead">Apple</td><td><strong class="hi">Apple Heart Study</strong> — AFib notification at scale</td></tr>
+          <tr><td class="rowhead">Fitbit / Google</td><td><em><strong class="hi">All of Us</strong></em> — 59,000+ participants, minute-level, EHR/genomics-linked</td></tr>
+          <tr><td class="rowhead">Garmin</td><td>Enhanced BBI vs ECG: mean error 0.506 ms, SD 8.55 ms, r=0.975 — but N=1, one night, manufacturer-published</td></tr>
+          <tr><td class="rowhead">Oura</td><td>Robbins 2024 (with conflict) + temperature/illness-onset literature</td></tr>
+          <tr><td class="rowhead">WHOOP</td><td>Schyvens 2025 — best deep-sleep accuracy (69.6%), fourth-best overall agreement</td></tr>
+          <tr><td class="rowhead">Samsung</td><td>High step-count validity in cross-brand reviews; absent from every PSG comparison</td></tr>
+          <tr><td class="rowhead">Polar</td><td><strong class="hi">Used as the criterion device</strong> in others' validations — revealed preference of the field</td></tr>
+          <tr><td class="rowhead">Withings</td><td>Medical-grade validation for BP and weight, not sleep</td></tr>
+          <tr><td class="rowhead">Empatica</td><td><strong class="hi">FDA-cleared platform and cleared digital biomarkers</strong></td></tr>
+          <tr><td class="rowhead">Movesense</td><td>Class IIa MDR 2017/745 on the MD variant; no independent validation located</td></tr>
+          <tr><td class="rowhead">Verily</td><td>Multiple FDA 510(k) clearances incl. on-demand ECG and irregular pulse</td></tr>
+          <tr><td class="rowhead">Ametris</td><td><strong class="hi">Is the actigraphy reference standard</strong></td></tr>
+          <tr><td class="rowhead">Axivity / GENEActiv</td><td><strong class="hi">UK Biobank, 100,000+</strong>, open reproducible toolchain</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ TABLE 10 ============ -->
+  <section class="tsec" id="t10">
+    <div class="tsec-head"><span class="tnum">TABLE 10</span><h2 class="thead">Meaningful differentiators</h2></div>
+    <p class="tcap">The one thing each platform does that none of the others do — not a feature list.</p>
+    <div class="diffgrid">
+      <div class="diffcard"><div class="dname">Apple</div><p>SensorKit behavioural/phone-usage signals plus deep retrospective history at enrollment, with <strong>no vendor in the data path</strong>.</p></div>
+      <div class="diffcard"><div class="dname">Fitbit / Google</div><p>Cheapest devices, largest literature, and an existing <strong>59,000-participant open dataset</strong> requiring no procurement at all.</p></div>
+      <div class="diffcard"><div class="dname">Garmin</div><p><strong>Raw accelerometry and beat-to-beat intervals</strong> at consumer cost, with 2-week battery and no subscription.</p></div>
+      <div class="diffcard"><div class="dname">Oura</div><p>Best measured sleep-staging agreement in a form factor people actually keep on overnight.</p></div>
+      <div class="diffcard"><div class="dname">WHOOP</div><p>Uninterrupted 24/7 wear (on-wrist battery swap) with <strong>no screen to change behaviour</strong>.</p></div>
+      <div class="diffcard"><div class="dname">Samsung</div><p>Raw PPG (IR + Red), raw ECG, and IBI from a mainstream smartwatch — <strong>plus</strong> an open-source research backend and portal.</p></div>
+      <div class="diffcard"><div class="dname">Polar</div><p><strong>Raw ECG from a $90 device</strong> via an open GitHub SDK, with no cloud, no approval, and no fee.</p></div>
+      <div class="diffcard"><div class="dname">Withings</div><p>Cellular-connected medical-grade home devices that remove the participant's phone from the data path, plus a zero-burden under-mattress sleep mat.</p></div>
+      <div class="diffcard"><div class="dname">Empatica</div><p><strong>Raw EDA</strong> — available nowhere else here — with FDA clearance and real study management.</p></div>
+      <div class="diffcard"><div class="dname">Ametris</div><p>The actigraphy reference standard, with regulated-trial operations in 70+ countries.</p></div>
+      <div class="diffcard"><div class="dname">Axivity / GENEActiv</div><p><strong>Fully open</strong> hardware, firmware, and analysis — no vendor even exists for governance purposes — with direct comparability to UK Biobank.</p></div>
+      <div class="diffcard"><div class="dname">Movesense</div><p>The only sensor here you can <strong>reprogram</strong> — custom firmware, no licence cost — at 512 Hz ECG and 1.6 kHz IMU, with EU Class IIa certification.</p></div>
+      <div class="diffcard"><div class="dname">Ultrahuman</div><p>The only <strong>ring</strong> exposing raw PPG, and the only ecosystem pairing ring biometrics with CGM in one API.</p></div>
+      <div class="diffcard"><div class="dname">Biostrap</div><p>Raw PPG plus configurable sampling plus integrated surveys plus a participant dashboard, with leg-worn gait/balance/jump metrics no one else offers.</p></div>
+      <div class="diffcard"><div class="dname">Verily Study Watch</div><p>ECG <strong>and</strong> EDA <strong>and</strong> inertial in one FDA-cleared device with weeks of onboard raw storage — never sold to consumers.</p></div>
+      <div class="diffcard"><div class="dname">Labfront</div><p>The only research platform here that <strong>publishes its pricing</strong>, with a free 5-participant tier and EMA included at every level.</p></div>
+    </div>
+  </section>
+
+  <!-- ============ TABLE 11 ============ -->
+  <section class="tsec" id="t11">
+    <div class="tsec-head"><span class="tnum">TABLE 11</span><h2 class="thead">Study-operations platforms</h2></div>
+    <p class="tcap">The management layer most device vendors don't provide — compared head to head.</p>
+    <div class="table-scroll">
+      <table class="wide">
+        <thead><tr><th class="colhead">&nbsp;</th><th>Labfront</th><th>Fitabase</th><th>Empatica Care Portal</th><th>Ametris CentrePoint</th><th>Samsung Research Stack</th></tr></thead>
+        <tbody>
+          <tr><td class="rowhead">Devices</td><td>Garmin, Movesense, Dexcom</td><td><strong class="hi">Fitbit</strong>, Garmin</td><td>EmbracePlus only</td><td>ActiGraph LEAP, Insight Watch</td><td>Galaxy Watch / Ring</td></tr>
+          <tr><td class="rowhead">Pricing public?</td><td class="tag tag--yes">Yes</td><td class="tag tag--no">No</td><td class="tag tag--yes">Yes (academic)</td><td class="tag tag--no">No</td><td>Free / open source</td></tr>
+          <tr><td class="rowhead">Cost</td><td class="num">Free (5p) / $500 (20p) / $1,250 (20p, all)</td><td>Custom quote</td><td class="num">$1,749.60/device/3yr academic</td><td>Five figures reported</td><td class="num">$0</td></tr>
+          <tr><td class="rowhead">EMA / surveys</td><td><strong class="hi">Yes, all tiers</strong></td><td>Engage, Summer 2026</td><td>Tags only</td><td>Via Connect / Signant</td><td><strong class="hi">Yes</strong></td></tr>
+          <tr><td class="rowhead">Adherence monitoring</td><td class="tag tag--yes">Yes</td><td>Yes (sync + battery)</td><td><strong class="hi">Yes, live wear-time</strong></td><td><strong class="hi">Yes, near-real-time</strong></td><td class="muted">Unclear</td></tr>
+          <tr><td class="rowhead">Multi-site</td><td class="tag tag--yes">Yes</td><td class="tag tag--yes">Yes</td><td class="tag tag--yes">Yes</td><td><strong class="hi">Yes, 70+ countries</strong></td><td class="muted">Unclear</td></tr>
+          <tr><td class="rowhead">Raises sampling resolution</td><td><strong class="hi">Yes — Garmin SDK partnership</strong></td><td>Enhanced BBI via OAuth</td><td>Configurable on device</td><td>Configurable</td><td>Full SDK control</td></tr>
+          <tr><td class="rowhead">Self-hosting</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td>ActiLife offline</td><td class="tag tag--yes">Yes</td></tr>
+          <tr><td class="rowhead">Free tier to pilot</td><td class="tag tag--yes">Yes</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td class="tag tag--yes">Yes</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="tnote">If your study is <strong>Fitbit-based</strong>, Fitabase is effectively the only option and you must request a quote. If it is <strong>Garmin-based</strong>, Labfront is cheaper, transparent, includes EMA, and can raise sampling resolution — and you can pilot it free with five participants before spending anything.</div>
+  </section>
+
+  <!-- ============ TABLE 12 ============ -->
+  <section class="tsec" id="t12">
+    <div class="tsec-head"><span class="tnum">TABLE 12</span><h2 class="thead">Choosing by research question</h2></div>
+    <p class="tcap">Start here. Find your primary endpoint, then read backward into the tables above.</p>
+    <div class="table-scroll">
+      <table class="wide">
+        <thead><tr><th class="colhead">If your primary endpoint is…</th><th>Use</th><th>Avoid</th><th>Why</th></tr></thead>
+        <tbody>
+          <tr><td class="rowhead">Physical activity / sedentary behaviour</td><td>Axivity, GENEActiv, Ametris</td><td>Any device where EE is the metric</td><td>Raw accelerometry, open pipelines, cohort comparability</td></tr>
+          <tr><td class="rowhead">Sleep timing / duration (not stages)</td><td>Oura, Withings ScanWatch, actigraphy</td><td class="muted">—</td><td>TST and SE have good ICC; both had zero data loss in PSG studies</td></tr>
+          <tr><td class="rowhead">Sleep architecture (stages)</td><td>Reconsider the design; PSG or ambulatory EEG</td><td class="tag tag--block">All consumer wearables</td><td>Deep/REM ICC is 0.13–0.36 on the best devices</td></tr>
+          <tr><td class="rowhead">Sleep fragmentation / WASO</td><td>Reconsider; PSG</td><td class="tag tag--block">All consumer wearables</td><td>Every device underestimates WASO by 12–48 min</td></tr>
+          <tr><td class="rowhead">HRV — nocturnal</td><td><strong class="hi">Garmin Enhanced BBI</strong> (Labfront/Fitabase), Polar H10, Movesense</td><td>PPG devices reporting only summary HRV</td><td>Beat-level data with confidence flags, or true ECG RR</td></tr>
+          <tr><td class="rowhead">HRV — daytime / during stressors</td><td>Polar H10, Movesense, Garmin Health SDK</td><td>Garmin Enhanced BBI</td><td>Enhanced BBI is nocturnal only</td></tr>
+          <tr><td class="rowhead">Cardiac rhythm / AFib</td><td>Apple Watch, Withings ScanWatch, Verily, Movesense MD</td><td class="muted">—</td><td>FDA/CE-cleared ECG features with real evidence</td></tr>
+          <tr><td class="rowhead">Electrodermal / arousal / stress</td><td><strong class="hi">Empatica</strong>, Verily Study Watch</td><td>Everything else</td><td>Only sources of raw EDA</td></tr>
+          <tr><td class="rowhead">Energy expenditure</td><td>Indirect calorimetry, doubly labelled water</td><td class="tag tag--block">Every consumer wearable</td><td>No brand within acceptable limits, six years running</td></tr>
+          <tr><td class="rowhead">Custom algorithm development</td><td>Movesense, Polar, Samsung, Biostrap, Ultrahuman</td><td>Oura, WHOOP</td><td>Requires raw signal</td></tr>
+          <tr><td class="rowhead">Large-N with no budget</td><td><em><strong class="hi">All of Us</strong></em> or UK Biobank secondary analysis</td><td class="muted">—</td><td>Data already collected, no procurement, no API</td></tr>
+          <tr><td class="rowhead">Regulated trial endpoint</td><td>Ametris, Empatica, Verily</td><td>Consumer platforms</td><td>Cleared devices, locked algorithms, Part 11 operations</td></tr>
+          <tr><td class="rowhead">Behaviour-change intervention</td><td>Any consumer device; unified APIs fine</td><td class="muted">—</td><td>The device is a tool, not an instrument; brand confounding is tolerable</td></tr>
+          <tr><td class="rowhead">Minimal reactivity / observational purity</td><td>WHOOP, Fitbit Air, ActiGraph, Axivity</td><td>Feedback-rich smartwatches</td><td>Screenless devices do not induce behaviour change</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    <span>Wearable Data Atlas — Module 1, Digital Health Knowledge Base</span>
+    <span>12 tables · last verified 2026-08-21</span>
+  </footer>
+
+</div>
