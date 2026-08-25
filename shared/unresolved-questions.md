@@ -3,9 +3,10 @@
 Questions that could not be reliably answered from available sources. Each names the organization
 that can answer it and an official contact route where one exists.
 
-**Last updated: 2026-08-24** (Module 2 second-pass direct-source re-verification annotated four Tier 10
-items — see #87, #88, #91, #92 below; Module 2 initial research pass added Tier 10; Module 1 content
-below unchanged from 2026-08-21).
+**Last updated: 2026-08-24** (Module 1 literature-library retrofit added Tier 12 — see #97–#100 below;
+Module 2 literature-library retrofit added Tier 11; Module 2 second-pass direct-source
+re-verification annotated four Tier 10 items — see #87, #88, #91, #92 below; Module 2 initial
+research pass added Tier 10; Module 1 content in Tiers 1–9 below unchanged from 2026-08-21/24).
 
 ---
 
@@ -230,3 +231,19 @@ built, including local PDF copies of every open-access paper found.
 |---|---|---|---|
 | 95 | **Does any peer-reviewed methods, validation, or deployment paper about the MetricWire platform itself exist anywhere?** A targeted literature search this pass found none — MetricWire appears in the literature only as a data-collection instrument named inside other researchers' studies, never as the subject of its own platform paper | MetricWire — https://metricwire.com/ (site itself is HTTP-403-blocked; try direct email/sales contact) | This is a genuine gap, not a search-access failure like MetricWire's site-blocking issue elsewhere in this file (#89/#90) — it may mean MetricWire has never published on its own architecture/validity, which is worth confirming directly with the vendor before relying on the platform for a study requiring documented methodological grounding |
 | 96 | **Is there an author-accessible (non-paywalled) copy of the 2012 iEpi paper** (Hashemian et al., "iEpi: An End to End Solution for Collecting, Conditioning and Utilizing Epidemiologically Relevant Data," ACM MobileHealth '12, DOI 10.1145/2248341.2248345)? Only the ACM Digital Library paywalled version and an unverified academia.edu re-upload were located; the latter was not downloaded because its authenticity as an author-posted copy could not be confirmed | University of Saskatchewan (Osgood/Stanley labs) — https://www.cs.usask.ca/~osgood/ ; or Avicenna Research (commercial successor) — https://avicennaresearch.com/ | This is the historical origin paper for the Ethica/Avicenna Research platform; obtaining it would let `profiles/avicenna-research-ethica.md` cite the platform's own academic precursor directly rather than only via secondary description |
+
+---
+
+## Tier 12 — Raised by the Module 1 literature-library retrofit (2026-08-24)
+
+See `module-01-wearables/literature-library.md` for the full index this pass built, including local
+PDF copies of 43 of the 54 individually-named papers in `research-library-wearables.md`.
+
+| # | Question | Who / how | Why it matters |
+|---|---|---|---|
+| ~~97~~ | ~~Should the WHOOP "menstrual cycle through the lens of a wearable device" paper's tier be formally corrected from "Unclear" back to "Tier A" in `research-library-wearables.md`?~~ **Resolved 2026-08-24.** Corrected directly in `research-library-wearables.md`'s WHOOP Tier A section — confirmed byline (Gonzalez, O'Day, Johnson, Kim, Jasinski, Holmes, Delp, Hicks) restored, tier corrected to A. | — | — |
+| 98 | **Is there a working, non-bot-blocked route to three papers with confirmed or probable open-access status that automated fetch could not retrieve this pass?** Khodr et al. 2024 (WHOOP, medRxiv preprint, HTTP 403 on every attempt), Perez et al. 2019 (Apple Heart Study, NEJM/PMC8112605, Europe PMC's PDF-render service returned HTTP 500 on repeated attempts despite `isOpenAccess: Y` metadata), and Mahalingaiah et al. 2022 (Apple Women's Health Study, AJOG/PMC10518829, same HTTP 500 pattern) | medRxiv (browser-based retry); Europe PMC support / NCBI PMC (report the two persistent HTTP 500s) | All three have a confirmed or likely-OA record that a script-based fetch could not retrieve — worth a browser-based or later retry rather than concluding they are paywalled |
+| 99 | **Is the Harms 2018 NAIA-baseball WHOOP dissertation (Univ. of Nebraska–Lincoln, ProQuest/ERIC ED595664) obtainable through any route?** A UNL DigitalCommons copy exists (`digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1104&context=teachlearnstudent`) but returned HTTP 403 on direct fetch, and ERIC's own hosted PDF URL returned HTTP 404 | University of Nebraska–Lincoln DigitalCommons; ProQuest (with institutional access) | Low priority — the source file itself frames this as grey literature "included here only for completeness" — but a genuine, low-cost gap to close if institutional ProQuest access is available |
+| ~~100~~ | ~~Should `research-library-wearables.md`'s prose be updated with the bibliographic corrections this pass surfaced from reading the actual PDFs?~~ **Resolved 2026-08-24.** All five corrections applied directly: Gong et al. venue (*Biomimetics*, not *Diagnostics*); Wasserlauf venue added (*J Cardiovascular Electrophysiology*); Littell venue added (*PLOS Digital Health*); both Doherty-lab papers' author order corrected (Lambe R first on the VO2max paper, O'Grady B first on the HRV/RHR paper — Doherty C was not first author on either). | — | — |
+
+---

@@ -13,6 +13,8 @@ wearable ecosystem, under what conditions, and at what cost?*
 |---|---|
 | `comparison-matrix.md` | Ten cross-platform tables — access model, sensors, **raw data availability**, API characteristics, study operations, participant burden, cost, compliance, evidence, differentiators |
 | `validation-evidence.md` | **Full extraction from the primary validation literature**, read in full — per-stage tables, ICCs, biases, conflicts of interest, and what the evidence base does not contain |
+| `research-library-wearables.md` | ~90-paper sponsorship/COI bibliography (Tier A/B/C) for Oura, WHOOP, and Apple Watch |
+| `literature-library.md` | OA-status index and local PDF store for every individually-named paper in `research-library-wearables.md` — 43 of 54 papers obtained as verified PDFs under `literature/<device-slug>/` |
 | `sources.md` | Consolidated source register with type, retrieval method, date accessed, and what each source establishes |
 | `profiles/` | One structured profile per ecosystem |
 | `../shared/terminology.md` | Definitions used consistently across profiles |

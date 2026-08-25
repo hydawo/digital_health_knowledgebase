@@ -841,3 +841,125 @@ retrofit, not new factual research about platform capabilities. The one exceptio
 a future pass: RADAR-base's now-visibly-deeper published-deployment literature (recruitment/retention
 data at real multi-site scale) could support strengthening its "evidence of use" comparison-matrix
 cell relative to platforms with thinner literature bases, if a future pass wants to formalize that.
+
+---
+
+## 2026-08-24 (later still) — Module 1 literature-library retrofit (Oura, WHOOP, Apple Watch)
+
+**Module:** Module 1 (Wearables). **Technologies researched:** the 54 individually-named papers in
+`research-library-wearables.md` across Oura (17), WHOOP (18), and Apple Watch (19, two of which —
+Schyvens et al. 2025 and Robbins et al. 2024 — were already catalogued once each under Oura/WHOOP
+rather than duplicated). Same retrofit pattern as the Module 2 literature-library pass immediately
+above: determine open-access status from primary evidence for every individually cited paper, fetch
+and locally store the actual PDF for anything legitimately OA, verify each with a `pypdf`
+text-extraction check (not just HTTP 200 or magic bytes) before keeping it, and leave paywalled or
+genuinely ambiguous papers citation-only rather than attempting any access-control workaround.
+
+**Files created:**
+- `module-01-wearables/literature-library.md` — the full index, organized by device with the
+  Tier A/B/C sponsorship column preserved from `research-library-wearables.md` (per this file's own
+  explicit instruction that "downstream content should not cite a Tier B/C split more confidently
+  than the marker warrants" — the OA layer added here does not re-derive or upgrade that tiering).
+- `module-01-wearables/literature/oura/`, `.../whoop/`, `.../apple-watch/` — 43 verified PDFs, 56 MB
+  total.
+
+**Files updated:**
+- `module-01-wearables/research-library-wearables.md` — added a short pointer note near the top to
+  `literature-library.md`; the sponsorship-tier analysis and per-paper writeups were left untouched
+  per this pass's scope.
+- `module-01-wearables/README.md` — added `literature-library.md` and `research-library-wearables.md`
+  rows to the contents table.
+- `shared/unresolved-questions.md` — Tier 12 added (see below).
+
+**Per-device breakdown (papers catalogued → PDFs obtained → not obtained):**
+- **Oura — 17 → 17 → 0.** The only device with zero access gaps. One substitution: Willoughby et al.
+  2023 (*Sleep Medicine*, paywalled, Elsevier) has an open PsyArXiv preprint that was used instead
+  after Europe PMC returned no OA record for the published version.
+- **WHOOP — 18 → 13 → 5.** Not obtained: Holmes et al. 2026 (*Sleep*, paywalled, no PMC/preprint),
+  Miller et al. 2020 (*J Sports Sciences*, Taylor & Francis, paywalled — confirms the prior pass's
+  "Tandfonline 403" finding), Lundstrom et al. 2024 (SAGE, paywalled, confirmed HTTP 403), Khodr et
+  al. 2024 (medRxiv preprint — legitimately OA in principle, but blocked by HTTP 403 bot-detection on
+  every attempt this pass, not a true paywall), and Harms 2018 (an unpublished NAIA-baseball
+  dissertation — a UNL DigitalCommons copy exists but 403'd, and ERIC's own hosted copy 404'd; low
+  priority per the source file's own framing as "included here only for completeness").
+- **Apple Watch — 19 → 13 → 6.** Not obtained: Jaworski & Park 2023 (IEEE EMBC, paywalled), Abou et
+  al. 2022 (*Assistive Technology*, Taylor & Francis, paywalled), Choe & Kang 2025 (*Physiological
+  Measurement*, IOP, paywalled), the DEFINE AFib Study (a conference-abstract supplement entry, not a
+  full peer-reviewed paper — citation-only by nature, not by access failure), and two papers where
+  Europe PMC's own metadata confirms `isOpenAccess: Y` with a PMCID but its PDF-render service
+  returned HTTP 500 on every retry — Perez et al. 2019 (NEJM, Apple Heart Study) and Mahalingaiah et
+  al. 2022 (AJOG, Apple Women's Health Study). These two are recorded as "OA but not obtained this
+  pass" — a distinct status from paywalled, since the access barrier is Europe PMC's own retrieval
+  infrastructure, not a publisher paywall or bot gate.
+- **Total: 54 papers catalogued, 43 PDFs obtained (80%), 11 not obtained.**
+
+**Major findings / surprises:**
+1. **A materially significant correction to `research-library-wearables.md`'s own stated confidence.**
+   The WHOOP paper "The menstrual cycle through the lens of a wearable device" (*npj Digital
+   Medicine* 2026) was explicitly downgraded in a prior pass from "likely Tier A" to "Unclear,"
+   because an AI-generated secondary summary naming Alexander Gonzalez and Johanna J. O'Day (Stanford
+   Wu Tsai) as lead authors was flagged as "unverified and should not be trusted." **A bioRxiv
+   preprint of this exact paper (DOI 10.1101/2025.09.11.675620) was located and downloaded, and its
+   actual byline confirms that earlier AI-generated summary was correct**: Gonzalez and O'Day
+   (Stanford, co-first/corresponding authors) plus three named WHOOP Inc. staff (Kim J, Jasinski SR,
+   Holmes KE) as co-authors, alongside two more Stanford authors. This is a genuinely mixed
+   Stanford-led / WHOOP-co-authored paper — it should be restored to Tier A, not left at Unclear. This
+   is the single most decision-relevant finding of this pass: a paper the sponsorship-tier file
+   actively warned readers away from trusting turned out to be correctly attributed.
+2. **A venue mislabeling, not a wrong paper.** Gong et al.'s Oura smart-ring systematic review is
+   cited in `research-library-wearables.md` as "*Diagnostics* (MDPI) / JMIR preprint #83508." The
+   actual published DOI (10.3390/biomimetics10120819) resolves to a different MDPI journal,
+   *Biomimetics* — same authors, same title, same findings, wrong venue name in the source file.
+3. **No mismatched-author or retracted-paper problem found**, unlike Module 2's retrofit (which
+   caught a wrong guessed author name in `profiles/m-path.md`). This pass's equivalent finding runs
+   the opposite direction — a flagged-as-unverified guess turned out to be right (see #1).
+4. **Several papers the source file could only cite by title, institution, or working title now have
+   confirmed author lists**, obtained from the downloaded PDFs directly: the Oura/Cureus adherence
+   paper (Shiba SK et al., not previously named), the WHOOP alcohol-trajectories JMIR paper (Grosicki
+   GJ et al.), the WHOOP travel/recovery *Sports Medicine* paper (Hatamiya N et al. — whose actual
+   published title, "Optimizing Athlete Travel for Performance," differs from the working title used
+   in the source file, confirmed to be the same paper via matching DOI), the Apple Heart & Movement
+   Study methods paper (Truslow J et al.), and the Cureus AFib-wearables systematic review (Belani S
+   et al., previously identified only by its Nova Southeastern University affiliation).
+5. **Apple's VO2max white paper, previously noted as "not machine-readable via fetch," downloaded and
+   extracted cleanly this pass** — resolving open item #8 from `research-library-wearables.md`'s
+   follow-up list.
+6. **Author-order discrepancies on two Doherty-lab Apple Watch papers**: the source file lists
+   "Doherty C, Lambe R, O'Grady B, Baldwin M" and "Doherty C, ..." as apparent lead authors on the
+   PLOS ONE VO2max and Sensors HRV/RHR papers respectively; the actual published bylines list Lambe R
+   and O'Grady B as first authors, with Doherty C as senior/last author on both. Not a wrong-paper
+   error — same paper, same COI/funding conclusion — but worth correcting if this file's prose is
+   ever revised to name individual authors.
+7. **Two Apple Watch PDF filenames were corrected mid-retrofit** after the downloaded PDFs revealed
+   the true venue: the Wasserlauf AF paper is *Journal of Cardiovascular Electrophysiology* (an
+   initial filename guessed "Circulation: Arrhythmia and EP"), and the Littell pediatric SpO2/ECG
+   paper is *PLOS Digital Health* (an initial filename guessed "PACE").
+8. **The Dial et al. 2025 Oura-vs-WHOOP head-to-head (*Physiological Reports*) downloaded cleanly**,
+   resolving the 403/CAPTCHA block noted in the prior pass. Full-text extraction into
+   `validation-evidence.md` remains a separate, not-yet-done action item — this pass obtained the PDF
+   but did not perform the deep extraction `validation-evidence.md` requires.
+
+**Important unresolved questions (logged to `shared/unresolved-questions.md` Tier 12):**
+- Whether the Gonzalez/O'Day WHOOP menstrual-cycle paper's tier should be formally corrected from
+  "Unclear" back to "A" in `research-library-wearables.md` itself (not done in this pass — literature
+  library only).
+- Whether a working, non-bot-blocked route exists to the Khodr et al. medRxiv preprint, the Perez
+  2019 NEJM PMC deposit, and the Mahalingaiah 2022 AJOG PMC deposit — all three have a confirmed or
+  probable OA record that automated fetch could not retrieve this pass.
+- Whether the Harms 2018 NAIA-baseball dissertation is obtainable through any other route (UNL
+  DigitalCommons, ProQuest with institutional access) given its low but non-zero evidentiary value.
+
+**Sources or documentation that were unavailable:**
+- IEEE Xplore, Taylor & Francis (Tandfonline), SAGE Journals, IOP Publishing (*Physiological
+  Measurement*), and Oxford Academic's *Sleep* — no OA route found for any paper hosted at these
+  venues in this pass, consistent with paywall patterns already documented elsewhere in this module.
+- Europe PMC's PDF-render service (`europepmc.org/articles/<PMCID>?pdf=render`) — reliable for every
+  PMCID tried except two (PMC8112605 / Perez NEJM, PMC10518829 / Mahalingaiah AJOG), both of which
+  returned HTTP 500 on repeated attempts despite Europe PMC's own metadata marking them open access.
+
+**Decisions that could affect later comparisons:** None of this pass's additions change any
+cross-device comparison conclusion in `comparison-matrix.md` or `validation-evidence.md` — this was a
+citation/evidence-base retrofit, not new factual research about device capabilities. The one
+exception worth flagging: the Gonzalez/O'Day tier correction (finding #1 above) is a genuine change
+to how one paper should be classified in `research-library-wearables.md`, even though this pass did
+not make that edit directly.

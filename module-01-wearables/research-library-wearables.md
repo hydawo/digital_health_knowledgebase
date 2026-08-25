@@ -8,6 +8,12 @@ finding, and a link.
 
 **Last verified: 2026-08-24.** Supersedes the earlier two-device draft of this file.
 
+**PDFs for every legitimately open-access paper individually cited in this bibliography are now
+stored under `literature/<device-slug>/`.** See `literature-library.md` for the full index —
+OA/paywall status per paper, PDF links, and the sponsorship-tier column preserved alongside it. A
+handful of bibliographic corrections (author lists, venues, one paper's tier) surfaced while
+obtaining those PDFs are noted there rather than edited into this file's prose.
+
 ## How entries are classified
 
 | Tier | Definition |
@@ -176,7 +182,9 @@ Review and Meta-Analysis." 6 studies, n=388 pooled, 2019–2024. **Unclear** —
 Flagged for a follow-up pass with better access.
 
 **Gong EJ, Bang CS, Lee JJ, Baik GH. 2025.** "Smart Ring in Clinical Medicine: A Systematic
-Review." *Diagnostics* (MDPI) / JMIR preprint #83508. Hallym University College of Medicine, South
+Review." *Biomimetics* (MDPI) — **corrected 2026-08-24; the source venue was previously misstated as
+*Diagnostics*, confirmed via direct PDF read during the literature-library retrofit, same paper** —
+/ JMIR preprint #83508. Hallym University College of Medicine, South
 Korea. **Funded by the Bio & Medical Technology Development Program, National Research Foundation
 of Korea (government grant RS-2023-00223501). No industry funding; authors declared none.**
 **Verified** (fetched and read in full). 77 of 107 included studies (72%) involved Oura specifically
@@ -240,14 +248,18 @@ related patent (US application 18/463,096, "Coaching based on reproductive phase
 this work — a notable commercial follow-on worth flagging. >11,000 members, 45,000 cycles.
 https://www.nature.com/articles/s41746-024-01394-0
 
-**"The menstrual cycle through the lens of a wearable device."** *npj Digital Medicine* 9:633
-(2026), PMID 42185632. **Correction to the prior pass's assumption:** this paper's actual author
-list could **not** be confirmed this pass (Nature login wall, PubMed cookie wall, EuropePMC nav-only
-all blocked). One AI-generated secondary summary named "Alexander Gonzalez and Johanna J. O'Day,
-Stanford Wu Tsai Human Performance Alliance" as lead authors — **this is unverified and should not
-be trusted**; it doesn't match WHOOP's in-house authorship pattern on the sister paper above, so the
-earlier assumption that this is Tier A is now **downgraded to Unclear** pending a direct read.
-**Action: read the actual PDF before citing this paper's tier in any downstream content.**
+**Gonzalez A, O'Day JJ, Johnson SC, Kim J, Jasinski SR, Holmes KE, Delp SL, Hicks JL. 2026.** "The
+menstrual cycle through the lens of a wearable device: insights into physiology, sleep, and cycle
+variability." *npj Digital Medicine* 9:633 (DOI 10.1038/s41746-026-02799-9); bioRxiv preprint 2025,
+10.1101/2025.09.11.675620. **Corrected 2026-08-24 (literature-library retrofit) — Verified via direct
+PDF read:** a prior pass could not confirm authorship (Nature login wall, PubMed cookie wall,
+EuropePMC nav-only all blocked) and explicitly flagged an AI-generated secondary summary naming
+"Alexander Gonzalez and Johanna J. O'Day" as lead authors as **unverified and not to be trusted**,
+downgrading the paper to Unclear. The open-access bioRxiv preprint (CC BY-NC-ND 4.0) has now been
+read directly and **confirms that summary was correct**: Gonzalez and O'Day (Stanford Wu Tsai Human
+Performance Alliance) are lead/corresponding authors, with Johnson (Stanford) plus Kim, Jasinski, and
+Holmes (WHOOP Inc.) as co-authors. **Restored to Tier A** — mixed Stanford/WHOOP authorship with
+substantive WHOOP co-authorship, not pure independent. PDF: `../literature/whoop/2026-gonzalez-oday-npjdigitalmedicine-menstrual-cycle-lens-wearable.pdf`.
 
 **Grosicki GJ, Robinson A, Joyner M, Carter S, von Hippel W, Presby D, Fielding F, Bigalke J, Kim J,
 Chapman C, Holmes KE. 2026.** "Real-world effects of alcohol on heart rate, sleep, and physical
@@ -456,17 +468,21 @@ Validated Actigraphy, Ballistocardiography and Polysomnography." IEEE EMBC. Simo
 shows no Apple connection. Apple Watch deep-sleep detection ~62% accurate, frequently confused with
 "core sleep." https://pubmed.ncbi.nlm.nih.gov/38083143/
 
-**Doherty C, Lambe R, O'Grady B, Baldwin M. 2025.** "Investigating the accuracy of Apple Watch VO2
-max measurements: A validation study." *PLOS ONE*. University College Dublin (Insight SFI Centre
+**Lambe R, O'Grady B, Baldwin M, Doherty C. 2025.** "Investigating the accuracy of Apple Watch VO2
+max measurements: A validation study." *PLOS ONE*. **Author order corrected 2026-08-24 — Lambe R is
+first author, not Doherty C as previously listed; confirmed via direct PDF read during the
+literature-library retrofit.** University College Dublin (Insight SFI Centre
 for Data Analytics). **Funded by Science Foundation Ireland National Challenge Fund
 (22/NCF/FD/10949); "funder had no role in study design"; no competing interests declared.**
 **Verified.** Apple Watch underestimated VO2max by ~6 mL/kg/min vs. indirect calorimetry
 (MAPE 13.31%), "not sufficiently accurate to inform clinical decision-making." n=28.
 https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0323741
 
-**Doherty C, et al. 2024.** "The Validity of Apple Watch Series 9 and Ultra 2 for Serial
-Measurements of Heart Rate Variability and Resting Heart Rate." *Sensors* 24(19):6220. Same UCD/SFI
-group and funder as above. **Verified**, no COI. n=39, 316 measurements vs. Polar H10/Kubios
+**O'Grady B, Lambe R, Baldwin M, Acheson T, Doherty C. 2024.** "The Validity of Apple Watch Series 9
+and Ultra 2 for Serial Measurements of Heart Rate Variability and Resting Heart Rate." *Sensors*
+24(19):6220. **Author order corrected 2026-08-24 — O'Grady B is first author, not Doherty C as
+previously listed; confirmed via direct PDF read during the literature-library retrofit.** Same
+UCD/SFI group and funder as above. **Verified**, no COI. n=39, 316 measurements vs. Polar H10/Kubios
 reference; HRV underestimated by 8.31 ms (MAPE 28.88%, fails equivalence testing); RHR excellent
 agreement (MAPE 5.91%). https://pmc.ncbi.nlm.nih.gov/articles/PMC11478500/
 
@@ -478,15 +494,19 @@ regular rhythm, 70 arrhythmia); HR excellent reliability at rest/exercise/recove
 SpO2 excellent at rest, declining to "good" post-exercise in arrhythmia patients; no significant
 skin-tone effect detected. https://globalheartjournal.com/articles/10.5334/gh.1456
 
-**Wasserlauf J, et al.** "Accuracy of the Apple watch for detection of AF: A multicenter
-experience." Northwestern / Boston University / Saint Luke's Cardiovascular Consultants. **Funded
+**Wasserlauf J, Vogel K, Whisler C, Benjamin E, Helm R, Steinhaus DA, Yousuf O, Passman RS.** "Accuracy of the Apple watch for detection of AF: A multicenter
+experience." *Journal of Cardiovascular Electrophysiology* — **venue added 2026-08-24; not previously
+stated in this file, confirmed via direct PDF read during the literature-library retrofit.**
+Northwestern / Boston University / Saint Luke's Cardiovascular Consultants. **Funded
 by American Heart Association grant 18SFRN34250013; explicit statement "Apple was not involved in
 any aspect of the study"; no disclosures.** **Verified.** n=30 known-AF patients, 6-month
 monitoring; by-subject sensitivity 72%, specificity 100%, PPV 100%, NPV 90%; by-episode sensitivity
 60%. https://pmc.ncbi.nlm.nih.gov/articles/PMC11694482/
 
-**Littell L, Avari Silva JN, et al.** "Assessment of Apple Watch Series 6 pulse oximetry and
-electrocardiograms in a pediatric population." St. Louis Children's Hospital / Washington University
+**Littell L, Roelle L, Dalal A, Van Hare GF, Orr WB, Miller N, Avari Silva JN.** "Assessment of Apple Watch Series 6 pulse oximetry and
+electrocardiograms in a pediatric population." *PLOS Digital Health* — **venue added 2026-08-24; not
+previously stated in this file, confirmed via direct PDF read during the literature-library
+retrofit.** St. Louis Children's Hospital / Washington University
 School of Medicine. **"No specific funding for this work"; no competing interests.** **Verified.**
 SpO2 mean diff 2.0±2.6% vs. hospital oximeters (r=0.76), 4 outlier readings >5% diff; ECG intervals
 strong agreement (RR r=0.96, QT r=0.90); automated rhythm algorithm only 75% specificity in
