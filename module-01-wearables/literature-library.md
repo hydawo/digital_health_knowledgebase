@@ -126,7 +126,7 @@ bot-detection this pass, 1 unpublished dissertation not located).
 | A Validation Study of a Commercial Wearable Device to Automatically Detect and Estimate Sleep | Miller DJ, Roach GD, Lastella M, Scanlan AT, Bellenger CR, Halson SL, Sargent C. | *Biosensors* 2021;11(6):185 | [10.3390/bios11060185](https://doi.org/10.3390/bios11060185) | C (Verified) | **Verified OA** (MDPI) | [literature/whoop/2021-miller-biosensors-wearable-sleep-detection-validation.pdf](literature/whoop/2021-miller-biosensors-wearable-sleep-detection-validation.pdf) |
 | A performance validation of six commercial wrist-worn wearable devices for sleep stage scoring compared to polysomnography | Schyvens AM, Peters B, Van Oost NC, Aerts JM, Masci F, Neven A, Dirix H, Wets G, Ross V, Verbraecken J. | *SLEEP Advances* 2025;6(2):zpaf021 | [10.1093/sleepadvances/zpaf021](https://doi.org/10.1093/sleepadvances/zpaf021) | C (Verified) | **Verified OA** (SLEEP Advances is fully OA) | [literature/whoop/2025-schyvens-sleepadvances-six-device-comparison.pdf](literature/whoop/2025-schyvens-sleepadvances-six-device-comparison.pdf) |
 | Wearable technology metrics are associated with energy deficiency and psychological stress in elite swimmers | Lundstrom EA, De Souza MJ, Koltun KJ, Strock NCA, Canil HN, Williams NI. | *International Journal of Sports Science & Coaching* 2024;19(4):1578–1587 | [10.1177/17479541231206424](https://doi.org/10.1177/17479541231206424) | C (Unclear — Penn State–WHOOP equipment partnership flagged, not a funding relationship) | **Paywalled** (SAGE; HTTP 403 confirmed, no PMC deposit found) | Not obtained |
-| Accuracy, Utility and Applicability of the WHOOP Wearable Monitoring Device in Health, Wellness and Performance — a systematic review | Khodr R, Kamal L, Minerbi A, Gupta G. | *medRxiv* 2024.01.04.24300784 (preprint) | [10.1101/2024.01.04.24300784](https://doi.org/10.1101/2024.01.04.24300784) | C (Corroborated) | **OA in principle (medRxiv preprints are inherently open) but blocked by bot-detection (HTTP 403) on every attempt this pass** — not a true paywall | Not obtained this pass — retry with browser-based access recommended |
+| Accuracy, Utility and Applicability of the WHOOP Wearable Monitoring Device in Health, Wellness and Performance — a systematic review | Khodr R, Kamal L, Minerbi A, Gupta G. | *medRxiv* 2024.01.04.24300784 (preprint) | [10.1101/2024.01.04.24300784](https://doi.org/10.1101/2024.01.04.24300784) | C (Corroborated) | **Verified OA — obtained 2026-08-24 retry.** medRxiv's `/v1/full.pdf` URL was bot-blocked (HTTP 403), but Semantic Scholar's Graph API resolved the paper's canonical `.../content/medrxiv/early/.../full.pdf` URL, which succeeded with a browser-like user agent | [literature/whoop/2024-khodr-medrxiv-whoop-systematic-review.pdf](literature/whoop/2024-khodr-medrxiv-whoop-systematic-review.pdf) |
 | The Impact of Whoop Technology on Sleep, Recovery, and Performance in NAIA Baseball Players (dissertation) | Harms NR. | University of Nebraska–Lincoln, 2018 (ProQuest/ERIC ED595664) | N/A | C (not peer-reviewed; grey literature) | A UNL DigitalCommons copy exists but returned HTTP 403 on direct fetch; ERIC's own hosted copy returned 404 | Not obtained — low priority per the source file's own framing ("included here only for completeness") |
 
 ### Commentary (individually named, Tier C)
@@ -135,11 +135,11 @@ bot-detection this pass, 1 unpublished dissertation not located).
 |---|---|---|---|---|---|---|
 | A new metric to understand the association between heart rate variability and menstrual regularity | Heydari K, Enichen EJ, Li B, Kvedar JC. | *npj Digital Medicine* 2025;8:123 | [10.1038/s41746-025-01517-1](https://doi.org/10.1038/s41746-025-01517-1) | C (Corroborated) | **Verified OA** (Nature, CC BY) | [literature/whoop/2025-heydari-npjdigitalmedicine-hrv-menstrual-regularity.pdf](literature/whoop/2025-heydari-npjdigitalmedicine-hrv-menstrual-regularity.pdf) — a short Editorial/commentary (2 pages), not a primary-data article; matches the source file's own description |
 
-**WHOOP summary: 13/18 individually-named papers obtained as verified PDFs. 5 not obtained: 2
-genuinely paywalled with no OA route (Holmes 2026 *Sleep*, Lundstrom 2024 SAGE), 1 paywalled with no
-OA route despite an author-cluster COI flag (Miller 2020 *J Sports Sciences*), 1 legitimately OA
-preprint blocked by bot-detection this pass (Khodr medRxiv), and 1 grey-literature dissertation not
-locatable via an accessible route (Harms 2018).**
+**WHOOP summary: 14/18 individually-named papers obtained as verified PDFs (13 initial pass + Khodr
+medRxiv resolved on 2026-08-24 retry). 4 not obtained: 2 genuinely paywalled with no OA route (Holmes
+2026 *Sleep*, Lundstrom 2024 SAGE), 1 paywalled with no OA route despite an author-cluster COI flag
+(Miller 2020 *J Sports Sciences*), and 1 grey-literature dissertation not locatable via an accessible
+route (Harms 2018 — see unresolved-questions.md #99).**
 
 ---
 
@@ -155,8 +155,8 @@ obtained.
 
 | Title | Authors | Venue/Year | DOI | Tier (source confidence) | OA status | PDF |
 |---|---|---|---|---|---|---|
-| Large-Scale Assessment of a Smartwatch to Identify Atrial Fibrillation (Apple Heart Study) | Perez MV, Mahaffey KW, Hedlin H, et al. (Apple Heart Study Investigators) | *N Engl J Med* 2019;381:1909–1917 | [10.1056/NEJMoa1901183](https://doi.org/10.1056/NEJMoa1901183) | A (Verified) | **Paywalled** — PMC deposit exists (PMC8112605) but is bot-gated (CAPTCHA) on direct fetch, and Europe PMC's own PDF-render service returned HTTP 500 on repeated attempts | Not obtained this pass — NEJM is not OA by default; a later authenticated/institutional attempt may succeed where automated fetch could not |
-| Design and methods of the Apple Women's Health Study: a digital longitudinal cohort study | Mahalingaiah S, Fruh V, Rodriguez E, et al. (19 authors incl. Onnela JP, Jukic AMZ) | *Am J Obstet Gynecol* 2022 | [10.1016/j.ajog.2021.09.041](https://doi.org/10.1016/j.ajog.2021.09.041) | A (Corroborated) | **OA but not obtained this pass** — Europe PMC marks PMC10518829 `isOpenAccess: Y`, `hasPDF: Y`, but its PDF-render service returned HTTP 500 on repeated attempts, and PMC's own site returned an access-denied HTML page in place of the PDF | Not obtained this pass — a genuine open-access record exists; the failure is a retrieval-infrastructure issue, not a paywall |
+| Large-Scale Assessment of a Smartwatch to Identify Atrial Fibrillation (Apple Heart Study) | Perez MV, Mahaffey KW, Hedlin H, et al. (Apple Heart Study Investigators) | *N Engl J Med* 2019;381:1909–1917 | [10.1056/NEJMoa1901183](https://doi.org/10.1056/NEJMoa1901183) | A (Verified) | **Confirmed genuinely paywalled — checked 2026-08-24 against NCBI's own OA web service** (`oa.fcgi?id=PMC8112605`), which returned `idIsNotOpenAccess`. The PMC deposit is a non-OA author-manuscript record, not a retrieval-infrastructure failure; the earlier HTTP 500/CAPTCHA symptoms were downstream of this, not the cause | Not obtained — NEJM is not OA by default and no legitimate OA copy exists |
+| Design and methods of the Apple Women's Health Study: a digital longitudinal cohort study | Mahalingaiah S, Fruh V, Rodriguez E, et al. (19 authors incl. Onnela JP, Jukic AMZ) | *Am J Obstet Gynecol* 2022 | [10.1016/j.ajog.2021.09.041](https://doi.org/10.1016/j.ajog.2021.09.041) | A (Corroborated) | **Verified OA — obtained 2026-08-24 retry.** NCBI's OA web service confirmed a genuine CC BY-NC-ND record with a direct PDF link, but the URL itself sits behind a JS bot-detection interstitial that blocks plain HTTP fetch; a real browser session cleared the challenge (a `cloudpmc-viewer-pow` cookie), and that cookie let a direct curl request through | [literature/apple-watch/2022-mahalingaiah-ajog-apple-womens-health-study-design.pdf](literature/apple-watch/2022-mahalingaiah-ajog-apple-womens-health-study-design.pdf) |
 | Understanding activity and physiology at scale: The Apple Heart & Movement Study | Truslow J, Spillane A, Lin H, et al. (22 authors, Apple/AHA/BWH) | *npj Digital Medicine* 2024 | [10.1038/s41746-024-01187-5](https://doi.org/10.1038/s41746-024-01187-5) | A (Corroborated) | **Verified OA** (Nature, CC BY) | [literature/apple-watch/2024-truslow-npjdigitalmedicine-heart-movement-study-scale.pdf](literature/apple-watch/2024-truslow-npjdigitalmedicine-heart-movement-study-scale.pdf) — resolves the author list, previously not enumerated in `research-library-wearables.md` |
 | Using Apple Watch to Estimate Cardio Fitness with VO2 max (Apple internal white paper) | Apple Inc. (no individually named academic authors) | Apple, May 2021 | N/A (self-published PDF) | A (Reported, not independently verified) | **Directly obtainable from Apple's own domain** — not a journal article, so OA/paywall status doesn't strictly apply, but it was successfully machine-read this pass (the source file previously noted the PDF was "not machine-readable via fetch") | [literature/apple-watch/2021-apple-whitepaper-vo2max-cardio-fitness.pdf](literature/apple-watch/2021-apple-whitepaper-vo2max-cardio-fitness.pdf) — **resolves an open item from `research-library-wearables.md`'s "Open items for a follow-up pass" list (#8)** |
 
@@ -185,12 +185,12 @@ obtained.
 | The accuracy of Apple Watch measurements: a living systematic review and meta-analysis | Lambe R, Baldwin M, O'Grady B, Schumann M, Caulfield B, Doherty C. | *npj Digital Medicine* 2025 | [10.1038/s41746-025-02238-1](https://doi.org/10.1038/s41746-025-02238-1) | Corroborated (same UCD/SFI lab as the Doherty/Lambe/O'Grady papers above) | **Verified OA** (Nature, CC BY) | [literature/apple-watch/2025-lambe-npjdigitalmedicine-living-systematic-review-accuracy.pdf](literature/apple-watch/2025-lambe-npjdigitalmedicine-living-systematic-review-accuracy.pdf) |
 | Accuracy of Detecting Atrial Fibrillation: A Systematic Review and Meta-Analysis of Wrist-Worn Wearable Technology | Belani S, Wahood W, Hardigan P, Placzek AN, Ely S. | *Cureus* 2022;14(11):e20362 (PMC8752409) | [10.7759/cureus.20362](https://doi.org/10.7759/cureus.20362) | Unclear | **Verified OA** (Cureus is OA by default) | [literature/apple-watch/2022-belani-cureus-afib-wristwearable-review.pdf](literature/apple-watch/2022-belani-cureus-afib-wristwearable-review.pdf) — **author-name correction: `research-library-wearables.md` referred to this study only by its Nova Southeastern University affiliation, without author names; the actual authors (Belani, Wahood, Hardigan, Placzek, Ely) are now confirmed** |
 
-**Apple Watch summary: 13/19 individually-named papers/documents obtained as verified PDFs. 6 not
-obtained: 3 genuinely paywalled with no OA route (Jaworski/Park IEEE, Abou *Assistive Technology*,
-Choe & Kang *Physiological Measurement*), 2 with confirmed open-access status per Europe PMC
-metadata but blocked by a retrieval-infrastructure failure rather than a paywall (Perez/NEJM Apple
-Heart Study, Mahalingaiah/AJOG Apple Women's Health Study), and 1 that is not a formal peer-reviewed
-publication at all (DEFINE AFib conference abstract).**
+**Apple Watch summary: 14/19 individually-named papers/documents obtained as verified PDFs (13 initial
+pass + Mahalingaiah/AJOG resolved on 2026-08-24 retry). 5 not obtained: 3 genuinely paywalled with no
+OA route (Jaworski/Park IEEE, Abou *Assistive Technology*, Choe & Kang *Physiological Measurement*),
+1 confirmed genuinely non-OA on direct check against NCBI's OA web service rather than merely
+retrieval-blocked (Perez/NEJM Apple Heart Study — see #98 resolution below), and 1 that is not a
+formal peer-reviewed publication at all (DEFINE AFib conference abstract).**
 
 ---
 
@@ -199,9 +199,29 @@ publication at all (DEFINE AFib conference abstract).**
 | Device | Individually-named papers catalogued | PDFs obtained (Verified OA) | Not obtained | Notes |
 |---|---|---|---|---|
 | Oura | 17 | **17 (100%)** | 0 | Includes one preprint substitution (Willoughby — published version paywalled, PsyArXiv preprint open) |
-| WHOOP | 18 | **13 (72%)** | 5 | 3 genuinely paywalled, 1 OA-preprint bot-blocked, 1 dissertation not located |
-| Apple Watch | 19 | **13 (68%)** | 6 | 3 genuinely paywalled, 2 OA-per-metadata but retrieval-infrastructure-blocked, 1 not a formal publication |
-| **Total** | **54** | **43 (80%)** | **11** | 56 MB total in `literature/` |
+| WHOOP | 18 | **14 (78%)** | 4 | 3 genuinely paywalled, 1 dissertation not located |
+| Apple Watch | 19 | **14 (74%)** | 5 | 4 genuinely paywalled/non-OA, 1 not a formal publication |
+| **Total** | **54** | **45 (83%)** | **9** | ~65 MB total in `literature/` |
+
+### 2026-08-24 retry of unresolved-question #98
+
+Two of the three flagged retrieval-infrastructure failures resolved:
+
+- **Khodr et al. (medRxiv, WHOOP)** — the versioned `/v1/full.pdf` URL was genuinely bot-blocked
+  (HTTP 403), but Semantic Scholar's Graph API (`api.semanticscholar.org`) resolved the paper's
+  canonical `medrxiv/early/...` PDF path, which a plain browser-UA `curl` request retrieved cleanly.
+  **Obtained.**
+- **Mahalingaiah et al. (AJOG, Apple Women's Health Study)** — the earlier "HTTP 500" diagnosis was
+  a symptom, not the cause: NCBI's own OA web service (`oa.fcgi`) confirms this is a genuine CC
+  BY-NC-ND open-access record with a direct PDF link, but that URL sits behind a JS-driven
+  bot-detection interstitial ("Preparing to download...") that blocks any non-browser client. A real
+  browser session cleared the challenge and yielded a `cloudpmc-viewer-pow` cookie; reusing that
+  cookie in a direct `curl` request retrieved the PDF. **Obtained.**
+- **Perez et al. (NEJM, Apple Heart Study)** — checked directly against NCBI's OA web service, which
+  returned `idIsNotOpenAccess` for PMC8112605. This is **not** an OA record blocked by a retrieval
+  failure, unlike the other two — it is a non-OA author-manuscript deposit. **Genuinely paywalled,
+  correctly left uncorrected.** The earlier "HTTP 500 / CAPTCHA" symptoms were downstream of this
+  underlying non-OA status.
 
 ### What this pass corrected in `research-library-wearables.md`
 

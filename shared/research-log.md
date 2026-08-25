@@ -2,6 +2,50 @@
 
 ---
 
+## 2026-08-24 (latest) — Retry of unresolved-question #98 (three blocked-but-OA papers)
+
+**Module:** 1 — Wearables (literature library follow-up)
+**Scope:** Targeted retry of the three papers `unresolved-questions.md` #98 flagged as having a
+confirmed or probable open-access record that automated fetch could not retrieve in the Module 1
+literature-library retrofit pass.
+
+### Outcome: 2 of 3 obtained
+
+1. **Khodr et al. 2024 (medRxiv, WHOOP systematic review) — obtained.** The versioned `.../v1/full.pdf`
+   URL was genuinely bot-blocked (HTTP 403). Semantic Scholar's Graph API resolved the paper's
+   canonical `medrxiv/early/.../full.pdf` path, which a plain browser-UA `curl` request retrieved
+   cleanly. No extractable COI/disclosure section in the full text, so the paper's sponsorship tier
+   stays Corroborated, not Verified, even with the PDF now in hand.
+2. **Mahalingaiah et al. 2022 (AJOG, Apple Women's Health Study) — obtained.** The earlier "HTTP 500"
+   diagnosis was a symptom, not the cause. NCBI's own OA web service (`oa.fcgi`) confirms a genuine CC
+   BY-NC-ND record with a direct PDF link, but that URL sits behind a JS-driven bot-detection
+   interstitial that blocks any non-browser client. A real browser session cleared the challenge and
+   produced a `cloudpmc-viewer-pow` cookie; reusing that cookie in a direct `curl` request retrieved
+   the PDF.
+3. **Perez et al. 2019 (NEJM, Apple Heart Study) — confirmed genuinely paywalled, not obtained.**
+   Checked directly against NCBI's OA web service, which returned `idIsNotOpenAccess` for PMC8112605.
+   This is a materially different finding than the prior pass assumed: the earlier "HTTP 500 /
+   CAPTCHA" symptoms were downstream of an underlying non-OA status, not a retrieval-infrastructure
+   bug. No PDF exists to obtain without institutional NEJM access.
+
+### Files updated
+
+`module-01-wearables/literature/whoop/2024-khodr-medrxiv-whoop-systematic-review.pdf`,
+`module-01-wearables/literature/apple-watch/2022-mahalingaiah-ajog-apple-womens-health-study-design.pdf`
+(new PDFs); `module-01-wearables/literature-library.md` (updated entries, cross-device summary, new
+"2026-08-24 retry" section); `module-01-wearables/research-library-wearables.md` (corrected entries
+for all three papers); `shared/unresolved-questions.md` (#98 marked resolved).
+
+### Decision affecting later comparisons
+
+**A "retrieval failure" and "genuinely not open access" can look identical from an automated
+script's perspective (both surface as an error page instead of a PDF) but mean very different
+things.** Always check a paper's actual OA status against an authoritative source (e.g. NCBI's
+`oa.fcgi` service) before concluding a blocked fetch is a fixable infrastructure problem — as
+happened here with Perez, where the "OA per metadata" assumption in the prior pass was wrong.
+
+---
+
 ## 2026-08-24 (later) — Literature-library scope decision
 
 **Module:** Cross-module (affects both Module 1 and Module 2)

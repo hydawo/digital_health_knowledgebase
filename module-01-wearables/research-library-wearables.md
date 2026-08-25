@@ -360,8 +360,14 @@ Wearable Monitoring Device in Health, Wellness and Performance — a systematic 
 2024.01.04.24300784 (preprint; final publication status not confirmed). Univ. of Ottawa,
 Institute for Pain Medicine (Rambam/Technion). No WHOOP-affiliated co-authors found.
 **Corroborated, not Verified** — secondary sources report "no competing interests declared," but
-the actual medRxiv disclosure text was blocked (403 on HTML and PDF). Worth a direct re-fetch: this
-review's reference list is a good discovery mechanism for additional WHOOP papers.
+the actual medRxiv disclosure text was blocked (403 on HTML and PDF).
+
+**Obtained 2026-08-24** (literature-library retry) via Semantic Scholar's canonical medRxiv PDF URL,
+which bypassed the earlier 403. The full text does not contain a visible, extractable competing-
+interests/disclosure section, so this remains **Corroborated, not Verified** even with the PDF in
+hand — the secondary-source COI claim still cannot be directly confirmed from the primary document
+itself. See `../literature/whoop/2024-khodr-medrxiv-whoop-systematic-review.pdf`. This review's
+reference list remains a good discovery mechanism for additional WHOOP papers.
 
 **Harms NR. 2018.** University of Nebraska-Lincoln dissertation (ProQuest/ERIC ED595664), "The
 Impact of Whoop Technology on Sleep, Recovery, and Performance in NAIA Baseball Players." **Not
@@ -415,6 +421,12 @@ companies. 419,297 participants; 0.52% received irregular-pulse notifications; o
 on subsequent ECG patch; 84% concordance with AF. https://www.nejm.org/doi/full/10.1056/NEJMoa1901183
 · protocol: https://pubmed.ncbi.nlm.nih.gov/30392584/ · ClinicalTrials.gov NCT03335800
 
+**Confirmed genuinely paywalled 2026-08-24** (literature-library retry): checked directly against
+NCBI's own OA web service (`oa.fcgi?id=PMC8112605`), which returned `idIsNotOpenAccess`. Earlier
+HTTP 500/CAPTCHA symptoms on this PMC deposit were downstream of this underlying non-OA status, not
+a retrieval-infrastructure bug — no PDF obtained, and none should be expected without institutional
+NEJM access.
+
 **Mahalingaiah S, Fruh V, Rodriguez E, et al. 2022.** "Design and methods of the Apple Women's
 Health Study: a digital longitudinal cohort study." *Am J Obstet Gynecol*. Harvard T.H. Chan School
 of Public Health (lead) + NIEHS/NIH (Jukic). **Corroborated** — three-way named partnership (Apple +
@@ -422,6 +434,11 @@ Harvard Chan + NIEHS) per NIH's own press release; whether a named Apple employe
 co-author specifically was **not confirmed** (PMC fetch blocked by a bot check).
 https://pmc.ncbi.nlm.nih.gov/articles/PMC10518829/ ·
 NIH release: https://www.nih.gov/news-events/news-releases/nih-partners-apple-harvard-university-womens-health-study
+
+**Obtained 2026-08-24** (literature-library retry): NCBI's OA web service confirmed a genuine CC
+BY-NC-ND open-access record; the PDF URL itself sat behind a JS bot-detection interstitial that a
+real browser session cleared, yielding the actual PDF. See
+`../literature/apple-watch/2022-mahalingaiah-ajog-apple-womens-health-study-design.pdf`.
 
 **Apple Heart and Movement Study** (with American Heart Association + Brigham and Women's
 Hospital). Companion methods paper: "Understanding activity and physiology at scale: The Apple
