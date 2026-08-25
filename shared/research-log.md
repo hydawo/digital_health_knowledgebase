@@ -2,6 +2,33 @@
 
 ---
 
+## 2026-08-24 (later) — Literature-library scope decision
+
+**Module:** Cross-module (affects both Module 1 and Module 2)
+**Scope:** No new research; a methodology/scope decision surfaced while reviewing Module 2's sources.
+
+### Finding
+
+Confirmed via file audit that neither module's "library" currently stores actual paper files — `sources.md`
+entries and `research-library-wearables.md` (Module 1) cite papers by URL/DOI with retrieval labeled
+Direct/Search summary/Secondary, but no PDF has ever been downloaded into the repo. This applies equally to
+Module 1's ~90-paper bibliography and Module 2's sources register, not just the newly built module.
+
+### Decision
+
+Going forward, the knowledge base will store actual open-access PDFs where legally distributable (PMC,
+arXiv, OA journals such as JMIR) rather than citation-only entries. For paywalled papers, keep the existing
+citation + abstract + link, explicitly flagged as "PDF not obtainable — paywalled," rather than attempting
+to bypass access controls. This is additive to the existing evidence-confidence system, not a replacement —
+retrieval labeling (Direct/Search summary/Secondary) still applies to how each *claim* was established.
+
+### Open follow-up
+
+Neither module has been retrofitted yet. Module 2's papers are the first target; Module 1's
+`research-library-wearables.md` (~90 papers) has the same gap and should be retrofitted in a later session.
+
+---
+
 ## 2026-08-21 — Module 1 (Wearables), initial research phase
 
 **Module:** 1 — Wearables
