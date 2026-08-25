@@ -3,6 +3,14 @@
 All sources accessed **2026-08-24** unless otherwise noted. "Retrieval" records how the source was
 consulted, because it determines the confidence label a claim can carry.
 
+**Academic literature note:** for the subset of sources below that are peer-reviewed papers,
+conference papers, or preprints (as opposed to vendor docs, GitHub repos, or news/blog posts), see
+**`literature-library.md`** for a dedicated index — full citation, open-access status, and a locally
+stored PDF where the paper is legitimately open-access. Several entries below that were Search-summary
+retrieval here (e.g. the RADAR-base JMIR Mental Health 2024 paper, RADAR-IoT, mindLAMP's JMIR mHealth
+uHealth paper, AWARE's Ferreira et al. paper, m-Path's Frontiers paper, CARP's Bardram et al. arXiv
+paper, and the Purple Robot systematic review) now have a Verified-status full-text PDF via that file.
+
 - **Direct** — page fetched and read in this session (supports **Verified**)
 - **Search summary** — established via search-result summarization of the named source (supports
   **Corroborated** at best)

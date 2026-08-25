@@ -37,6 +37,16 @@ One additional file covers platforms that were identified but deliberately not g
 See `_inventory-and-scope-decisions.md` for the full reasoning behind what was included, deferred, or
 excluded, mirroring the pattern used in Module 1.
 
+## Literature library
+
+`literature-library.md` indexes the academic papers (as opposed to vendor docs/repos/news) cited
+across this module's profiles, plus a handful of additional decision-relevant papers found via a
+fresh per-platform search. Where a cited paper is legitimately open-access, the actual PDF is stored
+under `literature/<platform-slug>/` rather than just linked — 13 papers across 8 platforms as of
+2026-08-24 (MetricWire has none; see the literature library for why). This mirrors Module 1's
+`research-library-wearables.md` convention, without that file's funding/COI tiering (not applicable —
+these are software-platform papers, not vendor-funded device-validation studies).
+
 ## The Beiwe/Forest relationship — handled explicitly
 
 Per CLAUDE.md's specific instruction, `profiles/beiwe.md` treats the Beiwe/Forest relationship

@@ -729,3 +729,115 @@ AWARE Framework, mindLAMP (LAMP Platform), MetricWire, Koa Health, Purple Robot.
    evidence strong enough to add either as a ninth platform; the legacy-and-adjacent-platforms.md
    file's existing scope decision stands, now with stronger (if still not conclusive) primary-source
    backing.
+
+---
+
+## 2026-08-24 (later still) — Module 2 literature-library retrofit
+
+**Module:** Module 2 (Mobile Digital Phenotyping Platforms)
+
+**Task:** Retrofit Module 2 to store actual PDFs for cited open-access academic papers, per the
+literature-library scope decision recorded earlier this date (see the "Literature-library scope
+decision" entry above). Module 1 already has this pattern (`research-library-wearables.md` +
+implicit PDF-adjacent workflow); Module 2 had never done it — `sources.md` and the profiles only ever
+held URLs and summaries.
+
+**Technologies/platforms covered:** Beiwe, RADAR-base, mindLAMP, AWARE Framework, Avicenna Research
+(Ethica), MetricWire, m-Path, CARP Mobile Sensing, plus the legacy/adjacent-platforms file (Purple
+Robot).
+
+**Files created:**
+- `module-02-digital-phenotyping/literature-library.md` — the new index (one table per platform:
+  Title, Authors, Venue/Year, DOI/URL, OA status, PDF link, Relevance note).
+- `module-02-digital-phenotyping/literature/<platform-slug>/` — 8 new directories holding 13
+  downloaded PDFs total (`beiwe/` ×2, `radar-base/` ×4, `mindlamp/` ×2, `aware-framework/` ×1,
+  `avicenna-research-ethica/` ×1, `m-path/` ×1, `carp-mobile-sensing/` ×1,
+  `legacy-and-adjacent-platforms/` ×1). No `metricwire/` folder — no OA (or any) platform paper was
+  found for MetricWire.
+
+**Files updated:** `sources.md` (cross-reference note, no table duplication), `README.md` (new
+"Literature library" section), `shared/unresolved-questions.md` (new Tier 11, two items),
+`shared/research-log.md` (this entry).
+
+**Process:** (1) read `sources.md` and all 8 profiles to compile the existing citation list — 7
+academic papers were already cited, all at Search-summary retrieval only, none with a stored PDF;
+(2) ran one fresh literature search per platform for additional decision-relevant methods/validation/
+deployment papers not yet cited; (3) for every candidate paper, determined OA status from primary
+evidence (JMIR/Frontiers/MDPI/BMC CC BY statements read directly in the fetched PDF, or arXiv's
+inherent openness) rather than guessing; (4) downloaded every confirmed-OA PDF via `curl`, then
+verified each with a Python (`pypdf`) parse — not just a magic-byte check — to confirm genuine
+multi-page extractable text rather than an HTML CAPTCHA/paywall page saved with a `.pdf` extension.
+
+**Counts:** **14 papers catalogued** (13 downloaded as verified real PDFs; 1 — the 2012 iEpi ACM
+paper — left citation-only, paywalled). **0 papers were rejected as fake/broken PDFs after download**
+— every download attempt that returned a genuine PDF passed verification; the failures were caught
+*before* being kept (see below), not after.
+
+**Per-platform breakdown:**
+- **Beiwe** — 2 papers, both new to the KB, both downloaded (Torous et al. 2016 JMIR Mental Health
+  original platform paper; Onnela et al. 2021 JOSS software paper).
+- **RADAR-base** — 4 papers: 2 new (the foundational 2019 JMIR mHealth uHealth platform paper by
+  Ranjan et al.; the Matcham et al. 2022 BMC Psychiatry RADAR-MDD recruitment/retention deployment
+  study) and 2 upgraded from Search-summary to Verified with PDFs obtained (the 2024 JMIR Mental
+  Health clinical-use paper; the RADAR-IoT Sensors paper).
+- **mindLAMP** — 2 papers: 1 upgraded to Verified (Vaidyam et al. 2022 JMIR mHealth uHealth) and 1 new
+  (Currey & Torous 2022 BJPsych Open validation/replication study).
+- **AWARE Framework** — 1 paper, upgraded from a ResearchGate-mirror Search-summary citation to a
+  Verified primary Frontiers-hosted OA PDF (Ferreira, Kostakos, Dey 2015).
+- **Avicenna Research (Ethica)** — 2 papers: 1 new and downloaded (Qian et al. 2024 JMIR, a genuine
+  Ethica-Data-app deployment study from the same University of Saskatchewan group that built the
+  platform's academic precursor) and 1 new but paywalled, citation-only (Hashemian et al. 2012 ACM,
+  the iEpi origin paper).
+- **MetricWire** — 0 papers found. A dedicated search turned up no platform-specific methods,
+  validation, or deployment paper of any kind — recorded as a genuine literature gap in
+  `literature-library.md`, matching this module's existing finding that MetricWire has no public
+  research page and blocks direct site access.
+- **m-Path** — 1 paper, upgraded to Verified (Mestdagh et al. 2023 Frontiers in Digital Health).
+- **CARP Mobile Sensing** — 1 paper, upgraded to Verified (Bardram 2020 arXiv preprint).
+- **Legacy/adjacent (Purple Robot)** — 1 paper, upgraded to Verified (Mendes et al. 2022 JMIR
+  systematic review, used to characterize Purple Robot).
+
+**Surprises / notable findings:**
+1. **A profile correction candidate surfaced, not made in this pass.** `profiles/m-path.md`
+   speculatively named "Kirtley, Hiekkaranta, et al." as the paper's possible authors with an explicit
+   caveat that the list was "not independently confirmed." The actual PDF confirms the real lead
+   author is **Mestdagh**, not Kirtley — flagged in `literature-library.md` but the profile itself was
+   left unedited, since this task's scope was the literature library, not profile content.
+2. **PMC direct-fetch was reCAPTCHA-blocked for every `pmc.ncbi.nlm.nih.gov` URL tried this pass** —
+   consistent with the access-limitation pattern already documented for Module 1's research library.
+   The workaround that worked reliably: `europepmc.org/articles/<PMCID>?pdf=render`, which mirrors PMC
+   content and was not blocked for any of the 5 papers it was tried on.
+3. **No download was mistakenly kept as a "PDF" that was actually an HTML paywall/CAPTCHA page** —
+   several early attempts (PMC's `/pdf/` trailing-slash pattern, one Cambridge Core guessed URL) did
+   return HTML disguised with a `.pdf` filename, but all were caught by the `pypdf` text-extraction
+   check (magic bytes alone were insufficient — some HTML responses started with binary-looking
+   content) and discarded before being copied into `literature/`.
+4. **RADAR-base turned out to have the deepest literature base of any platform in this module** — 4
+   papers, spanning the foundational architecture paper, an IoT-extension paper, a clinical-use
+   overview, and a major multi-site deployment/retention study. This reflects its EU-consortium
+   funding model (large multi-site cohorts generate more publishable deployment data) more than any
+   difference in platform quality.
+5. **MetricWire's total absence of platform literature is a genuinely distinctive finding** relative
+   to the other 7 platforms, all of which have at least one dedicated paper — logged as
+   unresolved-question #95 rather than silently left out.
+
+**Important unresolved questions (even after this pass):**
+- Whether an authentic author-posted (non-paywalled) copy of the iEpi 2012 paper exists anywhere —
+  see unresolved-question #96.
+- Whether MetricWire has ever published anything about its own platform — see unresolved-question
+  #95.
+- `profiles/m-path.md`'s author-list error (Kirtley → should be Mestdagh) is flagged but not yet
+  corrected in the profile itself.
+
+**Sources or documentation that were unavailable:**
+- Direct `pmc.ncbi.nlm.nih.gov` fetch — reCAPTCHA-blocked on every attempt (worked around via Europe
+  PMC).
+- ACM Digital Library full text for the iEpi paper — paywalled, no workaround attempted (per this
+  project's standing instruction not to attempt to bypass access controls).
+
+**Decisions that could affect later comparisons:** None of this pass's additions change any
+cross-platform comparison conclusion in `comparison-matrix.md` — this was a citation/evidence-base
+retrofit, not new factual research about platform capabilities. The one exception worth flagging for
+a future pass: RADAR-base's now-visibly-deeper published-deployment literature (recruitment/retention
+data at real multi-site scale) could support strengthening its "evidence of use" comparison-matrix
+cell relative to platforms with thinner literature bases, if a future pass wants to formalize that.
