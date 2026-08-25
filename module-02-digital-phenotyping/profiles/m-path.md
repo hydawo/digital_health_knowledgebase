@@ -59,7 +59,7 @@ Not established this session — no pricing information was located in available
 
 ## Research Evidence and Validation
 
-The core platform methodology is documented in a peer-reviewed, open-access methods paper: Kirtley, Hiekkaranta, et al. (or similarly authored — exact author list not independently confirmed), "m-Path: an easy-to-use and highly tailorable platform for ecological momentary assessment and intervention in behavioral research and clinical practice," *Frontiers in Digital Health* 2023, also indexed on PubMed. This is a stronger methods-paper foundation than several other commercial platforms in this module, which typically rely only on vendor marketing materials rather than a dedicated peer-reviewed platform-description paper.
+The core platform methodology is documented in a peer-reviewed, open-access methods paper: Mestdagh M, Verdonck S, Piot M, Niemeijer K, Kilani G, Tuerlinckx F, Kuppens P, Dejonckheere E, "m-Path: an easy-to-use and highly tailorable platform for ecological momentary assessment and intervention in behavioral research and clinical practice," *Frontiers in Digital Health* 2023;5:1182175 (CC BY, Verified open access — confirmed via the retrieved full-text PDF, see `../literature/m-path/2023-mestdagh-frontiersdigitalhealth-m-path-platform.pdf`), also indexed on PubMed. This is a stronger methods-paper foundation than several other commercial platforms in this module, which typically rely only on vendor marketing materials rather than a dedicated peer-reviewed platform-description paper.
 
 ## Strengths
 
@@ -106,5 +106,5 @@ The core platform methodology is documented in a peer-reviewed, open-access meth
 ## Sources
 
 1. m-Path — official site. https://m-path.io/ (accessed 2026-08-24, search summary). **Primary.** Platform framing, m-Path sense module, JITAI/EMI support.
-2. Kirtley et al. "m-Path: an easy-to-use and highly tailorable platform for ecological momentary assessment and intervention in behavioral research and clinical practice." *Frontiers in Digital Health* 2023. https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2023.1182175/full ; PMC mirror: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10619650/ (accessed 2026-08-24, search summary). Peer-reviewed platform-description paper.
+2. Mestdagh M, Verdonck S, Piot M, Niemeijer K, Kilani G, Tuerlinckx F, Kuppens P, Dejonckheere E. "m-Path: an easy-to-use and highly tailorable platform for ecological momentary assessment and intervention in behavioral research and clinical practice." *Frontiers in Digital Health* 2023;5:1182175. https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2023.1182175/full ; PMC mirror: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10619650/ ; full-text PDF retrieved and verified, CC BY (accessed 2026-08-24, Direct — see `../literature/m-path/2023-mestdagh-frontiersdigitalhealth-m-path-platform.pdf`). Peer-reviewed platform-description paper.
 3. m-Path — Research page. https://m-path.io/landing/research/ (accessed 2026-08-24, search summary). "250+ Universities" user-base claim — Reported, not independently verified.
