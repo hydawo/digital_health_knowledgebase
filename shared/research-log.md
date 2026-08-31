@@ -2,7 +2,73 @@
 
 ---
 
-## 2026-08-24 (latest) — Retry of unresolved-question #98 (three blocked-but-OA papers)
+## 2026-08-31 (latest) — Automated weekly literature scan: BLOCKED, both modules (network egress denial)
+
+**Module:** Cross-module (Module 1 — Wearables; Module 2 — Mobile Digital Phenotyping Platforms)
+**Scope:** First run of the new automated weekly PubMed/arXiv literature-scan routine (per the
+scheduled task prompt now governing `research-library-wearables.md` and
+`literature-library.md` updates). Intended to query NCBI E-utilities for Oura/WHOOP/Apple Watch
+(Module 1) and NCBI E-utilities + the arXiv API for the eight Module 2 platforms, using a trailing
+10-day window (2026-08-21 to 2026-08-31) since neither module had a prior automated run.
+
+### Outcome: failed before any search executed — both modules
+
+Neither module's search ran. This session's network egress policy blocks the required APIs
+outright, confirmed as a policy denial rather than a transient error:
+
+- **`eutils.ncbi.nlm.nih.gov`** (NCBI E-utilities — required for both Module 1 and Module 2):
+  `WebFetch` returned `EGRESS_BLOCKED`; the environment's agent-proxy status endpoint
+  (`$HTTPS_PROXY/__agentproxy/status`) independently logged a matching `recentRelayFailures` entry —
+  `connect_rejected`, "gateway answered 403 to CONNECT (policy denial or upstream failure)" — at
+  2026-08-31T12:29:34Z.
+- **`export.arxiv.org`** (arXiv API — required for Module 2 only): direct `curl` returned HTTP 403
+  with "Host not in allowlist: export.arxiv.org. Add this host to your network egress settings to
+  allow access." — a policy denial from the sandbox network layer, not the arXiv service itself.
+
+Per this environment's own proxy documentation: 403 from the egress proxy means the destination host
+is not permitted by the current session's organization network policy, and the correct response is
+to report the blocked host rather than retry or attempt a workaround (no alternative fetch route,
+credential, or retry cadence would change this — it is a policy allowlist gap, not a rate limit or
+outage). No PDF-hosting domains (Europe PMC, arXiv PDF URLs, publisher sites) were even reached,
+since both searches failed at the query step before any candidate paper existed to fetch.
+
+### Per this session's own step-8 handling instructions
+
+- **Module 1:** 0 papers found (search never executed) for Oura, WHOOP, and Apple Watch alike.
+  `module-01-wearables/research-library-index.json` created fresh (`pmids_seen: []`,
+  `last_run_date: null`) since it did not previously exist, but **`last_run_date` was deliberately
+  left `null`, not set to today**, so the next run retries the same trailing-10-day-or-later window
+  rather than silently skipping it. `research-library-wearables.md` was not touched.
+- **Module 2:** 0 papers found (search never executed) for all eight platforms (Beiwe, RADAR-base,
+  mindLAMP, AWARE Framework, Avicenna Research/Ethica, m-Path, CARP Mobile Sensing, MetricWire).
+  `module-02-digital-phenotyping/literature-library-index.json` created fresh (`ids_seen: []`,
+  `last_run_date: null`) for the same reason. `literature-library.md` was not touched.
+
+### Notable exclusions
+
+None — no candidate papers were ever retrieved to evaluate against either module's relevance bar.
+
+### Files created
+
+```
+module-01-wearables/research-library-index.json       (dedup ledger scaffold; last_run_date null)
+module-02-digital-phenotyping/literature-library-index.json  (dedup ledger scaffold; last_run_date null)
+```
+
+### Decisions affecting later runs
+
+1. **This is an environment/session configuration gap, not a content or methodology problem.**
+   Whoever administers this session's network egress policy needs to add `eutils.ncbi.nlm.nih.gov`
+   and `export.arxiv.org` to the allowlist before this routine can produce any output. Until then,
+   every future scheduled firing of this routine will fail identically at the same step.
+2. **Both index JSON files exist now but carry `last_run_date: null`**, intentionally indistinguishable
+   from "never run" — a future run (once egress is fixed) should treat the search window the same way
+   a true first run would (trailing 10 days from that run's date, per the routine's own instructions),
+   not assume any coverage from this attempt.
+
+---
+
+## 2026-08-24 — Retry of unresolved-question #98 (three blocked-but-OA papers)
 
 **Module:** 1 — Wearables (literature library follow-up)
 **Scope:** Targeted retry of the three papers `unresolved-questions.md` #98 flagged as having a
