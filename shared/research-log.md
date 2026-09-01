@@ -2,7 +2,81 @@
 
 ---
 
-## 2026-08-31 (latest) — Automated weekly literature scan: BLOCKED, both modules (network egress denial)
+## 2026-09-01 (latest) — Infrastructure decision: fixed the weekly literature-scan egress block, rejected PubCrawl as an arXiv fallback
+
+**Module:** Cross-module infrastructure (the automated weekly literature-scan routine covering Module 1 —
+Wearables and Module 2 — Mobile Digital Phenotyping Platforms). Not a content-research session; no
+profile, comparison-matrix, or library file was touched. Logged here per this file's own convention of
+recording "decisions that could affect later comparisons" and per the 2026-08-31 entry immediately below,
+which first surfaced the failure this entry resolves.
+
+### What happened
+
+The 2026-08-31 run of the "Wearables research library – weekly PubMed scan" routine (a claude.ai/code
+Routine, not a locally-scheduled task) failed before any search executed: the routine's cloud environment
+blocked outbound access to `eutils.ncbi.nlm.nih.gov` (NCBI E-utilities, required for both modules) and
+`export.arxiv.org` (the arXiv API, required for Module 2's CS/engineering-venue platforms) at the network
+egress layer — a policy denial, not a transient error or rate limit.
+
+Two remediation paths were evaluated:
+
+1. **An official PubMed MCP connector** (`https://pubmed.mcp.claude.com/mcp`, Anthropic-hosted) was
+   attached to the routine as an alternative fetch path for the PubMed side of both modules.
+2. **A community MCP connector named "PubCrawl"** was also attached, intended to cover arXiv/preprint
+   search as a substitute for the blocked `export.arxiv.org` call. Its underlying code
+   (`github.com/nickjlamb/pubcrawl`, by Nick Lamb / PharmaTools.AI) was verified as legitimate, open-source,
+   and requiring no API keys. **However, the specific hosted instance the routine was pointed at**
+   (`pubcrawl-production-feb9.up.railway.app`) **has no corresponding official-hosted-URL claim in the
+   project's own README** — the README documents this project as self-hosted only, with a `railway.toml`
+   enabling *anyone* to deploy their own copy. The user could not confirm whether they personally deployed
+   this specific instance or obtained the URL secondhand.
+
+### Decision: PubCrawl rejected; egress allowlist fixed instead
+
+**PubCrawl was removed from the routine entirely and will not be used**, for reasons specific to this
+routine's unattended, no-confirmation, repo-push operating mode:
+
+- This routine runs **fully unattended** — its own prompt explicitly instructs "Do not ask for confirmation
+  at any step" — and holds **push access to this repo's GitHub remote**.
+- An MCP tool result (e.g., a returned "paper abstract") is data the agent reads, not verified-safe input.
+  If an unverified third party operates the connected instance, a compromised or malicious server could
+  return content containing hidden instructions attempting to hijack the unattended run — a prompt-injection
+  vector. This risk is normally mitigated by treating tool output as data rather than instructions, but an
+  autonomous, no-confirmation, write-access routine has less room for that mitigation to catch every case
+  than an interactive session would.
+- Beyond content-injection risk, using a generic biomedical-search bridge of unconfirmed operatorship means
+  this project's search queries (what devices/platforms are being tracked) would pass through a third
+  party's server with no stated data-handling policy.
+
+**Instead, the actual blocking cause was fixed directly**: the routine's cloud environment ("Default",
+`env_01Yak4krG93fzRmR7cJXa2JY`) had its Network Access setting changed from **Trusted** to **Custom**, with
+`eutils.ncbi.nlm.nih.gov` and `export.arxiv.org` added to the Allowed Domains list (plus "include default
+list of common package managers" to preserve Trusted-tier access to GitHub/npm/PyPI). This is a first-party
+Claude Code environment setting (`docs: cloud-environments` → Access levels → Custom), not a third-party
+dependency — it resolves both modules' original blocked hosts without introducing any new connector trust
+surface. The PubMed MCP connector remains attached as a secondary/parallel fetch path for the PubMed side
+only; it was not needed to resolve the arXiv block, which the environment fix addresses directly.
+
+### Verification
+
+A manual "Run now" of the routine was triggered immediately after the environment change
+(`session_id: cse_014x1WaYUc5YWXA2BX3YxnaE`) to confirm the fix before waiting for the next scheduled
+Monday firing. See the next log entry (or this repo's commit history around 2026-09-01) for that run's
+outcome once it completes.
+
+### Decisions that could affect later runs
+
+1. **PubCrawl should not be re-added to this routine** without first confirming who operates whatever
+   specific hosted instance is being pointed at (self-deployed and controlled by the user, or a named,
+   accountable operator) — the underlying open-source project itself is not in question, only unverified
+   third-party hosting of it inside an unattended, write-access automation.
+2. If arXiv coverage breaks again in the future (e.g., the environment's Custom allowlist is reset), the
+   fix is the same environment-level Network Access setting, not a new MCP connector, unless a future
+   connector's operator can be verified.
+
+---
+
+## 2026-08-31 — Automated weekly literature scan: BLOCKED, both modules (network egress denial)
 
 **Module:** Cross-module (Module 1 — Wearables; Module 2 — Mobile Digital Phenotyping Platforms)
 **Scope:** First run of the new automated weekly PubMed/arXiv literature-scan routine (per the
