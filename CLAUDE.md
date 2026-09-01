@@ -755,6 +755,225 @@ rather than assuming it is superior.
 
 ------------------------------------------------------------------------
 
+# Module 3: Applied Wearables and Digital Phenotyping Studies
+
+## Purpose
+
+Modules 1 and 2 build reference knowledge about **technologies** — what a
+wearable ecosystem or phenotyping platform can theoretically do. Module 3
+builds reference knowledge about **studies** — what happens when researchers
+actually deploy those technologies in the field.
+
+Central question:
+
+**When research teams have actually used these devices and platforms in real
+studies, what worked, what didn't, and what does that reveal about
+feasibility that vendor documentation and platform capabilities alone can't
+show?**
+
+This module is a companion to Modules 1 and 2, not a replacement for their
+existing literature libraries. Module 1's `research-library-wearables.md` /
+`literature-library.md` and Module 2's `literature-library.md` already
+catalog validation and use-case papers per device/platform. Module 3 does
+not duplicate that cataloging. It exists at a different altitude: the
+**study** is the unit of analysis, not the **device or platform**, and the
+questions it asks are about **operational and methodological deployment
+reality** (recruitment, retention, adherence, technical failure modes,
+multi-device integration), not about sensor accuracy or platform
+capability.
+
+## Relationship to Modules 1 and 2
+
+-   A paper that validates a device's sleep-staging accuracy against PSG
+    belongs in Module 1's literature library, not here — Module 3 skips pure
+    validation studies.
+-   A paper that is substantially about a platform's own architecture
+    (already the target of Module 2's literature library) does not need a
+    separate Module 3 entry unless it also carries substantial
+    deployment/operational detail (recruitment numbers, retention rates,
+    technical failure notes) not already captured there.
+-   A paper qualifies for Module 3 when it is a real research deployment —
+    a study that used one or more Module 1 devices and/or Module 2
+    platforms as its data-collection instrument to answer a substantive
+    research question, and reports enough about *how the deployment went*
+    (not just what it found) to be useful for future study design.
+-   Cross-reference liberally: a Module 3 profile should link back to the
+    relevant Module 1/Module 2 profile(s) for the devices/platforms
+    involved, and Module 1/2 profiles' "Research Evidence" sections may
+    link forward to relevant Module 3 entries — do not duplicate content,
+    link it.
+
+## Scope
+
+Studies are in scope regardless of the specific device/platform, as long as
+the device/platform is one already profiled in Module 1 or Module 2 — this
+module does not introduce new technologies, only new depth on how existing
+profiled technologies perform in practice. Priority areas:
+
+-   Longitudinal / multi-week-or-longer deployments (adherence and
+    retention data only becomes meaningful over time)
+-   Multi-device or multi-modal studies (a wearable + a phenotyping
+    platform together; multiple wearables compared in the same cohort)
+-   Large-cohort or multi-site studies (recruitment/retention patterns at
+    scale)
+-   Studies explicitly reporting feasibility, adherence, retention, or
+    technical-failure data as an outcome (not just a footnote)
+-   Both academic and clinical/community-health deployments, for any
+    Module 1/2 device or platform
+
+Out of scope (deliberately excluded, not merely deprioritized):
+
+-   Pure device-accuracy/validation studies (already Module 1's territory)
+-   Platform-architecture/methods papers with no deployment cohort
+    (already Module 2's territory)
+-   Feasibility studies for devices/platforms not yet profiled in Module 1
+    or 2 — flag as a candidate for Module 1/2 expansion instead, don't
+    silently absorb into Module 3
+
+## Research questions per study
+
+For each qualifying study, investigate:
+
+### Study identification
+
+-   Title, authors, year, journal/venue, DOI/URL
+-   Study design (RCT, prospective cohort, observational, pilot/feasibility)
+-   Funding source and any vendor sponsorship/COI
+
+### Population and duration
+
+-   Sample size (enrolled vs. analyzed — note attrition explicitly)
+-   Population/setting (general population, clinical, athletic, older
+    adult, etc.)
+-   Study duration and follow-up structure
+
+### Instrumentation
+
+-   Which Module 1 device(s) and/or Module 2 platform(s) were used, and how
+    (concurrently, sequentially, as primary vs. secondary instrument)
+-   Deployment model: participant-owned (BYOD) vs. researcher-provisioned
+-   Any custom integration, middleware, or data-aggregation layer used to
+    combine devices/platforms
+
+### Recruitment and retention
+
+-   Recruitment method and setting
+-   Retention/completion rate, with the specific definition used (e.g.,
+    "wore device ≥X hours/day for ≥Y% of study days")
+-   Attrition reasons where reported (device discomfort, technical
+    failure, participant burden, dropout for unrelated reasons)
+
+### Data completeness and technical issues
+
+-   Reported data completeness/missingness
+-   Any explicitly documented technical failure modes: device failures,
+    sync/upload issues, battery burden, app crashes, connectivity gaps
+-   Whether/how missing data was handled (imputation, exclusion,
+    sensitivity analysis)
+
+### Feasibility findings
+
+-   The study's own stated conclusions about feasibility of this
+    device/platform/combination for this population and use case
+-   Any explicit recommendations for future study design
+
+### Relevance and confidence
+
+-   One-paragraph synthesis: what does this study teach about deploying
+    this device/platform combination in practice, that a future study team
+    should know before choosing it
+-   Evidence confidence marker per this project's standard scale
+    (Verified/Corroborated/Reported/Unclear), applied to the *feasibility
+    claims* specifically — not to any accuracy claims already covered
+    elsewhere
+
+## Profile template (Module 3-specific)
+
+Do not reuse the Module 1/2 technology profile template unchanged — the
+unit of analysis is a study, not a technology. Use:
+
+``` markdown
+# [Short Study Identifier — e.g., "Smith et al. 2025 — Multi-site Oura + Beiwe deployment, N=412"]
+
+## Quick Facts
+
+| Field | Details |
+|---|---|
+| Citation | |
+| Study design | |
+| Sample size (enrolled / analyzed) | |
+| Population | |
+| Duration | |
+| Devices/platforms used | (link to Module 1/2 profiles) |
+| Funding/COI | |
+| Last verified | |
+
+## Summary
+
+## Instrumentation and Deployment Model
+
+## Recruitment and Retention
+
+## Data Completeness and Technical Issues
+
+## Feasibility Findings
+
+## Relevance to Future Study Design
+
+## Evidence Confidence
+
+## Key Links
+
+## Sources
+```
+
+## Comparison resource
+
+Maintain `feasibility-matrix.md` (Module 3's equivalent of a comparison
+matrix): one row per study, columns for device/platform combination, sample
+size, duration, retention rate, major technical issues, and a one-line
+feasibility takeaway. This is the resource future study designers will
+actually want — who else tried this combination, at what scale, and did it
+hold up.
+
+## Directory structure
+
+``` text
+module-03-applied-studies/
+├── README.md
+├── feasibility-matrix.md
+├── sources.md
+└── profiles/
+    ├── [short-study-slug].md
+    └── ...
+```
+
+## Workflow
+
+Follow this project's Standard Module Workflow (Phases 1–6, defined above)
+exactly, with two Module 3-specific notes:
+
+-   **Phase 1 (scope/discovery)** should build the working inventory by
+    searching from the *device/platform side* (search each Module 1/2
+    technology plus deployment/feasibility/adherence/retention terms)
+    rather than starting from a fixed list of studies — the study universe
+    is not enumerable up front the way the platform universe was for
+    Modules 1–2.
+-   **Phase 4 (comparison resources)** produces `feasibility-matrix.md`
+    instead of the Module 1/2-style comparison matrix, per the resource
+    described above.
+
+## Future automation note
+
+Once this module has an initial baseline of profiles, it is a candidate for
+inclusion in the same automated weekly literature-scan routine that already
+covers Modules 1 and 2 (see `shared/research-log.md`, 2026-09-01 entries),
+following the same `*-index.json` dedup-ledger pattern. Do not wire it into
+that routine before the baseline exists — the routine appends
+incrementally, it doesn't do initial discovery.
+
+------------------------------------------------------------------------
+
 # Standard Technology Profile Template
 
 Use a consistent profile structure, adapting sections when they
