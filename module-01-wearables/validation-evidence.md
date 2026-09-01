@@ -212,17 +212,30 @@ protocol against a shared reference.
 | WHOOP 4.0 | 0.91 ("moderate") | 3.00% ± 2.15% |
 | Polar Grit X Pro | 0.86 ("poor") | 2.71% ± 2.75% |
 
-HRV: both Oura generations rank highest (Gen4 above Gen3), WHOOP "moderate," Garmin and Polar
-"poor." Exact WHOOP/Garmin/Polar HRV CCC/MAPE figures were not retrievable from the sources
-available to that pass and remain an open extraction item.
+| Device | HRV (RMSSD) — CCC | HRV — MAPE |
+|---|---|---|
+| **Oura Gen4** | **0.99** | 5.96% ± 5.12% |
+| **Oura Gen3** | **0.97** | 7.15% ± 5.48% |
+| WHOOP 4.0 | 0.94 | 8.17% ± 10.49% |
+| Garmin Fenix 6 | 0.87 | 10.52% ± 8.63% |
+| Polar Grit X Pro | 0.82 | 16.32% ± 24.39% |
 
-> ⚠️ **Confidence: Corroborated, not Verified.** Direct fetch of the Wiley/PMC pages was blocked
-> (403/CAPTCHA) in two separate attempts. The numbers above come from search-result summaries of the
-> paper, not a primary-text read, and **the paper's funding/COI disclosure has not been confirmed** —
-> no vendor funding was identified in secondary sources, but this is not the same as having read the
-> disclosure statement. Treat the ranking as credible and directly relevant, but do not cite it with
-> the same confidence as the fully-extracted Robbins/Schyvens tables above until a full-text pass
-> confirms both the missing HRV figures and the funding disclosure.
+Both Oura generations rank highest on HRV, WHOOP is next ("moderate" per the paper's CCC bands),
+and Garmin/Polar trail. Garmin was excluded from the RHR analysis only (its RHR figure is a
+rolling 30-minute window with no reportable timestamp, making night-to-night alignment with the
+Polar H10 reference impossible) — it is included in the HRV analysis, where the underlying
+comparison does not have that alignment problem.
+
+> ✅ **Confidence: Verified.** Full text read directly from the local PDF
+> (`literature/oura/2025-dial-physiologicalreports-nocturnal-rhr-hrv-validation.pdf`), resolving the
+> prior 403/CAPTCHA block. **Funding disclosure confirmed:** "This study was financially supported by
+> the Air Force Research Laboratory (AFRL)." **Conflict of interest confirmed:** "The authors declare
+> that they have no competing interests." No wearable-vendor funding of any kind — this is an
+> independent, government-funded validation with a clean COI statement, among the strongest-provenance
+> studies in this file. Design: N=13 adults (7 male, 6 female), 536 nights, Polar H10 ECG chest strap
+> as reference, Garmin Fenix 6 / Oura Gen 3 / Oura Gen 4 / Polar Grit X Pro / WHOOP 4.0 worn
+> simultaneously. Both raw (CCC/MAPE) and Z-score-normalized (per-subject baseline) analyses were run
+> and agree on device ranking.
 
 **What this resolves and what it doesn't.** This closes the "no direct comparison at all" gap for
 **resting heart rate and HRV**: Oura leads WHOOP on both, under a shared protocol, in a real

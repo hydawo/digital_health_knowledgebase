@@ -138,18 +138,19 @@ nocturnal resting heart rate and heart rate variability in consumer wearables." 
 Reports* 13(16):e70527. Ohio State University Human Performance Collaborative / Air Force Research
 Laboratory, Wright-Patterson AFB. **The closest thing to a genuine Oura-vs-WHOOP head-to-head in
 the literature** — Garmin Fenix 6, Oura Gen3, Oura Gen4, Polar Grit X Pro, and WHOOP 4.0 all worn
-simultaneously vs. an ECG chest-strap reference; 13 adults (6 female), 536 nights. No industry/
-vendor funding identified in secondary sources. **Corroborated, not Verified** — direct fetch of the
-Wiley/PMC pages was blocked (403/CAPTCHA) in two separate passes; a follow-up with authenticated or
-browser access is warranted before treating the "no vendor funding" finding as certain.
+simultaneously vs. an ECG chest-strap reference; 13 adults (7 male, 6 female), 536 nights.
+**Verified — full text read directly (2026-08-25).** Funding: "financially supported by the Air
+Force Research Laboratory (AFRL)." COI statement: "The authors declare that they have no competing
+interests." No wearable-vendor funding of any kind.
 **Resting HR:** Oura Gen3 CCC=0.97 (MAPE 1.67±1.54%); Oura Gen4 CCC=0.98 (MAPE 1.94±2.51%); WHOOP
-4.0 CCC=0.91 "moderate" (MAPE 3.00±2.15%); Polar CCC=0.86 "poor" (MAPE 2.71±2.75%).
-**HRV:** Oura Gen4 highest, Oura Gen3 second; WHOOP moderate; Garmin and Polar poor agreement
-(exact WHOOP/Garmin/Polar HRV CCC/MAPE not retrievable from search snippets — full-text read still
-needed). https://physoc.onlinelibrary.wiley.com/doi/10.14814/phy2.70527 ·
-PDF: https://physoc.onlinelibrary.wiley.com/doi/pdfdirect/10.14814/phy2.70527
-**Action:** extract this in full into `validation-evidence.md`, which currently states no
-Oura-vs-WHOOP head-to-head exists.
+4.0 CCC=0.91 "moderate" (MAPE 3.00±2.15%); Polar CCC=0.86 "poor" (MAPE 2.71±2.75%). Garmin Fenix 6
+excluded from RHR only — its reported 30-min rolling window carries no timestamp, making
+night-to-night alignment with the Polar H10 reference impossible.
+**HRV (RMSSD):** Oura Gen4 CCC=0.99 (MAPE 5.96±5.12%); Oura Gen3 CCC=0.97 (MAPE 7.15±5.48%); WHOOP
+4.0 CCC=0.94 (MAPE 8.17±10.49%); Garmin Fenix 6 CCC=0.87 (MAPE 10.52±8.63%); Polar Grit X Pro
+CCC=0.82 (MAPE 16.32±24.39%). https://physoc.onlinelibrary.wiley.com/doi/10.14814/phy2.70527 ·
+PDF: `literature/oura/2025-dial-physiologicalreports-nocturnal-rhr-hrv-validation.pdf`
+Full extraction done in `validation-evidence.md` §3a (2026-08-25).
 
 **Stone JD, Ulman HK, Tran K, et al. 2021.** "Assessing the Accuracy of Popular Commercial
 Technologies That Measure Resting Heart Rate and Heart Rate Variability." *Frontiers in Sports and
@@ -343,9 +344,9 @@ concluded** — a forward-looking COI, not a funding source for this specific st
 **Verified.** Full extraction in `validation-evidence.md` §1. WHOOP κ=0.37 ("fair"), 4th of 6.
 
 **Dial MB, et al. 2025.** *Physiological Reports* 13:e70527. See Oura Tier C above — same paper,
-includes WHOOP 4.0. WHOOP HR: CCC=0.91 "moderate" (MAPE 3.00±2.15%). WHOOP HRV: "moderate" accuracy,
-behind both Oura generations (exact CCC/MAPE not yet extracted). **Corroborated, not Verified** —
-funding not directly confirmed; flagged for full-text follow-up, same as the Oura entry.
+includes WHOOP 4.0. **Verified — full text read directly (2026-08-25);** AFRL-funded, no vendor
+funding, no competing interests declared. WHOOP HR: CCC=0.91 "moderate" (MAPE 3.00±2.15%). WHOOP
+HRV: CCC=0.94 (MAPE 8.17±10.49%), behind both Oura generations, ahead of Garmin and Polar.
 
 **Lundstrom C, De Souza MJ, Koltun KJ, Strock N, Canil A, Williams N. 2024.** "Wearable technology
 metrics are associated with energy deficiency and psychological stress in elite swimmers."
@@ -640,16 +641,15 @@ three landmark studies narratively rather than listing citations; a separate ML-
    independent peer-reviewed study was found for either metric on either device. Apple Watch has
    independent SpO2 validation (Littell et al., pediatric population) but it is thin outside that
    one study. This is a genuine, cross-vendor evidence gap worth flagging prominently.
-6. **A genuine Oura-vs-WHOOP head-to-head now exists** (Dial et al. 2025) and should be fully
-   extracted into `validation-evidence.md`, which currently states no such study exists. This is the
-   single highest-value follow-up action from this research pass.
+6. ~~A genuine Oura-vs-WHOOP head-to-head now exists (Dial et al. 2025) and should be fully
+   extracted~~ — **done 2026-08-25.** Full text read directly, AFRL funding and no-COI confirmed,
+   complete RHR and HRV tables (all five devices) now in `validation-evidence.md` §3a.
 
 ---
 
 # Open items for a follow-up pass
 
-1. **Read Dial et al. 2025 in full** (Oura Gen3/Gen4 vs WHOOP 4.0 vs ECG) and extract into
-   `validation-evidence.md`. Highest priority — closes a previously-flagged gap.
+1. ~~Read Dial et al. 2025 in full~~ — **done 2026-08-25.**
 2. **Verify the actual author list of the 2026 npj "menstrual cycle through the lens of a wearable
    device" paper** before citing its tier — the earlier assumption of Tier A is now downgraded to
    Unclear pending a direct read.
