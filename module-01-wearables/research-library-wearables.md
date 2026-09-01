@@ -1,18 +1,33 @@
 # Research Library — Oura, WHOOP, Apple Watch
 
 A bibliography of peer-reviewed / published research involving Oura, WHOOP, and Apple Watch,
-organized by **sponsorship status** rather than by topic. Companion to `validation-evidence.md`,
-which does deep full-text extraction on the sleep-staging accuracy literature specifically. This
-file is broader (any topic) but shallower per entry — authors, affiliations, funding/COI, key
-finding, and a link.
+organized by **device, then research Category, then sponsorship status**. Companion to
+`validation-evidence.md`, which does deep full-text extraction on the sleep-staging accuracy
+literature specifically. This file is broader (any topic) but shallower per entry — authors,
+affiliations, funding/COI, key finding, and a link.
 
-**Last verified: 2026-08-24.** Supersedes the earlier two-device draft of this file.
+**Last verified: 2026-09-01.** Supersedes the earlier two-device draft of this file.
+
+**2026-09-01 — Restructured from a flat per-device Tier A/B/C list into device → Category
+(Validation / Use-case / Review) → Tier nesting**, per the automated weekly literature-scan
+routine's convention going forward. Every pre-existing entry's text, citation, and confidence
+marker was preserved verbatim during this move — only its position in the document changed.
+**Category** is assigned per entry: **Validation** = accuracy/agreement/sensitivity/specificity/
+bias/kappa vs. a reference standard; **Use-case** = uses device data to study a health outcome,
+behavior, or population; **Review** = systematic review, meta-analysis, or scoping review. Where a
+pre-existing entry's fit was genuinely ambiguous, it was defaulted to Use-case and flagged
+explicitly in a new note rather than silently forced into a category. Four new entries were added
+this pass via an automated PubMed scan (trailing 10 days, first run) — see each device's Use-case →
+Tier C section and the `shared/research-log.md` entry dated 2026-09-01 for details.
 
 **PDFs for every legitimately open-access paper individually cited in this bibliography are now
 stored under `literature/<device-slug>/`.** See `literature-library.md` for the full index —
 OA/paywall status per paper, PDF links, and the sponsorship-tier column preserved alongside it. A
 handful of bibliographic corrections (author lists, venues, one paper's tier) surfaced while
-obtaining those PDFs are noted there rather than edited into this file's prose.
+obtaining those PDFs are noted there rather than edited into this file's prose. **Note:** the
+automated weekly scan (per `CLAUDE.md`'s standing instruction) does not touch `literature-library.md`
+or `literature/` — that file follows a separate PDF-storage convention not yet extended to automated
+runs.
 
 ## How entries are classified
 
@@ -33,36 +48,29 @@ obtaining those PDFs are noted there rather than edited into this file's prose.
 Tier assignments below carry their confidence marker explicitly. Downstream content should not cite
 a Tier B/C split more confidently than the marker warrants.
 
+**Automated-scan convention (added 2026-09-01):** for entries added by the automated weekly PubMed
+scan specifically, Tier C assignments are marked **Corroborated** rather than **Verified** even when
+the paper's own CoiStatement text was read and quoted directly — because absence of a disclosed
+vendor conflict is suggestive, not proof, of independence, per that routine's own classification
+rule. This is a slightly more conservative use of "Corroborated" than some pre-existing entries in
+this file (which occasionally mark a directly-read, vendor-silent COI statement as "Verified" for
+the funding/COI fact itself, while still calling the *tier* corroborated). Read each entry's own
+wording rather than assuming perfect consistency across passes.
+
 ---
 
 # OURA
 
-## Tier A — Oura-employee-authored
+## Validation
+
+### Tier A — Oura-employee-authored
 
 **Kinnunen H, Altini M. 2021.** "The Promise of Sleep: A Multi-Sensor Approach for Accurate Sleep
 Stage Detection Using the Oura Ring." *Sensors* 21(13):4302.
 Both authors Oura Health staff (Altini also Vrije Universiteit Amsterdam). Oura's own sleep-staging
 algorithm validation paper. **Verified.** https://www.mdpi.com/1424-8220/21/13/4302
 
-**Willoughby AR, Alikhani I, Karsikas M, Chua XY, Chee MWL. 2023.** "Country differences in
-nocturnal sleep variability: Observations from a large-scale, long-term sleep wearable study."
-*Sleep Medicine* 110:155–165. ~50 million nights, ~220,000 Oura users, 35 countries. Mixed
-NUS/Oura Health (Finland) author list. **Corroborated** (affiliation inferred from institutional
-listing, not a directly-read COI statement).
-
-**A cluster of large-scale "N million nights" Oura-population papers** (jet-lag / travel-related
-sleep disruption, etc.), referenced on Oura's own research page, apparently from the same
-Oura-Finland/NUS author group as the item above. **Tier A likely, individually Unclear** — not
-separately author-verified.
-
-**TemPredict-family papers** — see Tier B below; while the *underlying infrastructure* is
-Oura-sponsored, individual papers vary in whether an Oura/TemPredict-affiliated author with a direct
-financial interest (e.g. Benjamin Smarr, a co-inventor with a disclosed Oura financial interest) is
-listed as a co-author. Treat each TemPredict-derived paper's precise tier (A vs. B) as needing an
-individual author check; they are grouped under Tier B here as a conservative default since the
-common thread is sponsorship of the *data infrastructure*, not universal Oura employment.
-
-## Tier B — Oura-funded / Oura-affiliated, independent authors
+### Tier B — Oura-funded / Oura-affiliated, independent authors
 
 **Robbins R, Weaver MD, Sullivan JP, et al. 2024.** "Accuracy of Three Commercial Wearable Devices
 for Sleep Tracking in Healthy Adults." *Sensors* 24(20):6532. Brigham and Women's Hospital. N=35,
@@ -78,42 +86,7 @@ funding support from Oura Health for testing of Oura devices and co-development 
 (Oura's own announcement). **Corroborated** (partnership confirmed from Oura's blog; the paper's own
 COI text not directly read). https://www.mdpi.com/1424-8220/24/23/7475
 
-**TemPredict Study 1 — Mason AE, Kasl P, Quer G, et al. 2022.** "Detection of COVID-19 using
-multimodal data from a wearable device: results from the first TemPredict Study." *Scientific
-Reports* 12:3463. **Funded by an Oura Health sponsored contract.** COI: Epel received loaned Oura
-Ring hardware; co-authors Ashley Mason and Benjamin Smarr are co-inventors on wearable-illness
-patents, and Smarr discloses Oura consulting income and a financial interest in Oura Ring Inc.
-**Verified** (disclosure quoted directly by a secondary source). Algorithm flagged ~20% of
-COVID-positive participants 2 days pre-symptom, 80% by symptom-day 3.
-
-**TemPredict Study 2 —** "Metrics from Wearable Devices as Candidate Predictors of Antibody
-Response Following Vaccination against COVID-19." *Vaccines* (MDPI) 2022. Built on the same
-Oura-sponsored TemPredict infrastructure. **Corroborated.**
-
-**Mason AE, Kasl P, Soltani S, et al. 2024** (author correction 2024). "Elevated body temperature
-is associated with depressive symptoms: results from the TemPredict Study." *Scientific Reports*.
-Draws on the Oura-sponsored TemPredict cohort/infrastructure; this specific analysis's stated
-funding line is **US Army Medical Research and Development Command (USAMRDC) MIDRP/MOMRP and MTEC**
-— i.e., a *different*, non-Oura funder for this particular paper, layered on top of Oura-sponsored
-data collection. **Corroborated**, tiered B as a conservative default because of the shared
-infrastructure and shared authors with direct Oura financial ties, even though the immediate grant
-line is military.
-
-**"Assessing Adherence to Multi-Modal Oura Ring Wearables From COVID-19 Detection Among Healthcare
-Workers."** *Cureus* 2023. Likely TemPredict-adjacent/Oura-sponsored dataset. **Unclear** — not
-independently verified this pass.
-
-**A dense cluster of reproductive-health / pregnancy / arrhythmia papers on Oura's own research
-list**, several apparently involving Marija/Benjamin Smarr or other TemPredict-adjacent authors:
-"Predicting labor onset relative to estimated date of delivery," "Biometrics of complete human
-pregnancy" (*npj Digital Medicine*, Aug 2024), "Feasibility of continuous distal body temperature
-for passive, early pregnancy detection," "AF detection using Oura Ring with photoplethysmography"
-(*Heart Rhythm*), "Ultradian Rhythms in HRV and Distal Body Temperature Anticipate the LH Surge"
-(*Scientific Reports*, 2020). **Unclear / flagged, not individually tier-verified** — strong
-candidates for Tier A or B given the author-overlap pattern, but each needs its own COI check before
-being relied on.
-
-## Tier C — Fully independent
+### Tier C — Fully independent
 
 **Cao R, Azimi I, Sarhaddi F, Niela-Vilen H, Axelin A, Liljeberg P, Rahmani AM. 2022.** "Accuracy
 Assessment of Oura Ring Nocturnal Heart Rate and Heart Rate Variability in Comparison With
@@ -158,6 +131,67 @@ Active Living*. Rockefeller Neuroscience Institute (West Virginia University), B
 NFL Detroit Lions. **Unclear** — funding/COI not retrieved this pass; affiliations suggest
 independent origin.
 
+## Use-case
+
+### Tier A — Oura-employee-authored
+
+**Willoughby AR, Alikhani I, Karsikas M, Chua XY, Chee MWL. 2023.** "Country differences in
+nocturnal sleep variability: Observations from a large-scale, long-term sleep wearable study."
+*Sleep Medicine* 110:155–165. ~50 million nights, ~220,000 Oura users, 35 countries. Mixed
+NUS/Oura Health (Finland) author list. **Corroborated** (affiliation inferred from institutional
+listing, not a directly-read COI statement).
+
+**A cluster of large-scale "N million nights" Oura-population papers** (jet-lag / travel-related
+sleep disruption, etc.), referenced on Oura's own research page, apparently from the same
+Oura-Finland/NUS author group as the item above. **Tier A likely, individually Unclear** — not
+separately author-verified.
+
+**TemPredict-family papers** — see Tier B below; while the *underlying infrastructure* is
+Oura-sponsored, individual papers vary in whether an Oura/TemPredict-affiliated author with a direct
+financial interest (e.g. Benjamin Smarr, a co-inventor with a disclosed Oura financial interest) is
+listed as a co-author. Treat each TemPredict-derived paper's precise tier (A vs. B) as needing an
+individual author check; they are grouped under Tier B here as a conservative default since the
+common thread is sponsorship of the *data infrastructure*, not universal Oura employment.
+
+### Tier B — Oura-funded / Oura-affiliated, independent authors
+
+**TemPredict Study 1 — Mason AE, Kasl P, Quer G, et al. 2022.** "Detection of COVID-19 using
+multimodal data from a wearable device: results from the first TemPredict Study." *Scientific
+Reports* 12:3463. **Funded by an Oura Health sponsored contract.** COI: Epel received loaned Oura
+Ring hardware; co-authors Ashley Mason and Benjamin Smarr are co-inventors on wearable-illness
+patents, and Smarr discloses Oura consulting income and a financial interest in Oura Ring Inc.
+**Verified** (disclosure quoted directly by a secondary source). Algorithm flagged ~20% of
+COVID-positive participants 2 days pre-symptom, 80% by symptom-day 3.
+
+**TemPredict Study 2 —** "Metrics from Wearable Devices as Candidate Predictors of Antibody
+Response Following Vaccination against COVID-19." *Vaccines* (MDPI) 2022. Built on the same
+Oura-sponsored TemPredict infrastructure. **Corroborated.**
+
+**Mason AE, Kasl P, Soltani S, et al. 2024** (author correction 2024). "Elevated body temperature
+is associated with depressive symptoms: results from the TemPredict Study." *Scientific Reports*.
+Draws on the Oura-sponsored TemPredict cohort/infrastructure; this specific analysis's stated
+funding line is **US Army Medical Research and Development Command (USAMRDC) MIDRP/MOMRP and MTEC**
+— i.e., a *different*, non-Oura funder for this particular paper, layered on top of Oura-sponsored
+data collection. **Corroborated**, tiered B as a conservative default because of the shared
+infrastructure and shared authors with direct Oura financial ties, even though the immediate grant
+line is military.
+
+**"Assessing Adherence to Multi-Modal Oura Ring Wearables From COVID-19 Detection Among Healthcare
+Workers."** *Cureus* 2023. Likely TemPredict-adjacent/Oura-sponsored dataset. **Unclear** — not
+independently verified this pass.
+
+**A dense cluster of reproductive-health / pregnancy / arrhythmia papers on Oura's own research
+list**, several apparently involving Marija/Benjamin Smarr or other TemPredict-adjacent authors:
+"Predicting labor onset relative to estimated date of delivery," "Biometrics of complete human
+pregnancy" (*npj Digital Medicine*, Aug 2024), "Feasibility of continuous distal body temperature
+for passive, early pregnancy detection," "AF detection using Oura Ring with photoplethysmography"
+(*Heart Rhythm*), "Ultradian Rhythms in HRV and Distal Body Temperature Anticipate the LH Surge"
+(*Scientific Reports*, 2020). **Unclear / flagged, not individually tier-verified** — strong
+candidates for Tier A or B given the author-overlap pattern, but each needs its own COI check before
+being relied on.
+
+### Tier C — Fully independent
+
 **Fudolig MI, Bloomfield LSP, et al. 2024 (LEMURS study).** "The Two Fundamental Shapes of Sleep
 Heart Rate Dynamics and Their Connection to Mental Health in College Students." *Digital
 Biomarkers* (Karger). University of Vermont computational social science group. ~600 students,
@@ -175,7 +209,22 @@ Icahn School of Medicine at Mount Sinai. Mixed-device study (Apple Watch, Fitbit
 — not Oura-specific). **Funded by NIDDK K23DK129835 (NIH); no Oura funding identified.**
 **Corroborated.**
 
-## Oura — systematic reviews (as discovery mechanism, and classified in their own right)
+**Liao J, Chen R, Tian R, Qiu C, Chen W, Yang Z, Hao J, Ge Y, Lin Y, Dunn J, Bergin M, Gilliland FD,
+Black M, Kalafut D, Wilson M, Zhang JJ, Chen Z. 2026.** "Wearable measured physiological stress and
+activity patterns changes after 2025 Los Angeles wildfire among older adults: findings from a pilot
+prospective cohort study." *Environmental Research, Health* (ERH). USC Keck School of Medicine /
+Duke University / Cleveland Clinic. N=15 older adults (mean age 73.2), Oura Ring Gen 3 worn
+continuously across baseline, the 2025 Eaton Fire, and post-fire periods. **No CoiStatement field
+present in the PubMed record; no vendor funding or affiliation evident from the author list.**
+**Corroborated** (absence of a disclosed conflict is suggestive, not proof, of independence).
+41-minute increase in sedentary time observed during the fire period; six of fifteen participants
+received evacuation alerts, associated with measurable changes in sleep heart rate, HRV, sleep
+fragmentation, and breath rate. **Added 2026-09-01 (automated PubMed scan).**
+https://pubmed.ncbi.nlm.nih.gov/42434202/
+
+## Review
+
+### Tier C
 
 **Khan et al. 2025, *OTO Open*.** "The Oura Ring Versus Medical-Grade Sleep Studies: A Systematic
 Review and Meta-Analysis." 6 studies, n=388 pooled, 2019–2024. **Unclear** — full text was blocked
@@ -226,7 +275,53 @@ without per-paper sorting.
 
 # WHOOP
 
-## Tier A — WHOOP-employee-authored
+## Validation
+
+### Tier B — WHOOP-funded/affiliated, independent-author-led
+
+**Berryhill S, Morton CJ, Dean A, et al. (senior investigator Parthasarathy S). 2020.** "Effect of
+wearables on sleep in healthy individuals: a randomized crossover trial and validation study."
+*Journal of Clinical Sleep Medicine* 16(5):775–783. University of Arizona Health Sciences Center for
+Sleep and Circadian Sciences. **Funded by a grant to the University of Arizona from WHOOP Inc.;
+authors reported no personal conflicts of interest.** **Verified.**
+https://jcsm.aasm.org/doi/10.5664/jcsm.8356
+
+**Miller DJ, Lastella M, Scanlan AT, Bellenger CR, Halson SL, Roach GD, Sargent C. 2020.** "A
+validation study of the WHOOP strap against polysomnography to assess sleep." *Journal of Sports
+Sciences* 38(22):2631–2636, PMID 32713257. All-CQU/Australian author list, no WHOOP employees
+visible. **Unclear** — funding/COI text not retrievable (Tandfonline 403). Given the same author
+cluster's demonstrated WHOOP-sponsorship pattern elsewhere, flag as likely Tier B pending direct
+confirmation; do not assume independence.
+
+### Tier C — Fully independent
+
+**Bellenger CR, Miller DJ, Halson SL, Roach GD, Sargent C. 2021 (correction 2022).** "Wrist-Based
+Photoplethysmography Assessment of Heart Rate and Heart Rate Variability: Validation of WHOOP."
+*Sensors* 21(10):3571. CQUniversity, **funded by the Australian Institute of Sport** (a national
+sport-science body, not WHOOP). WHOOP 2.0 vs. ECG, 15 sessions, Oct–Dec 2018. **Verified.** Widely
+cited by WHOOP as "99.7% HR / 99% HRV accuracy" — an accurate topline read of this paper, but the
+device tested (WHOOP 2.0) is two hardware generations behind WHOOP 4.0/5.0.
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8160717/
+
+**Miller DJ, et al. 2021.** "A Validation Study of a Commercial Wearable Device to Automatically
+Detect and Estimate Sleep." *Biosensors* 11(6):185. CQUniversity / University of South Australia /
+Australian Catholic University. Data collection independent of WHOOP; the paper discloses that
+co-author Dean Miller's CQUniversity position **became WHOOP-sponsored after data collection
+concluded** — a forward-looking COI, not a funding source for this specific study. **Verified.**
+64% four-stage agreement, κ=0.47. https://pmc.ncbi.nlm.nih.gov/articles/PMC8226553/
+
+**Schyvens A, et al. 2025.** *SLEEP Advances* 6(2):zpaf021. Six devices incl. WHOOP 4.0 vs PSG.
+**Funded by Flanders Innovation & Entrepreneurship (VLAIO); authors declare no conflicts.**
+**Verified.** Full extraction in `validation-evidence.md` §1. WHOOP κ=0.37 ("fair"), 4th of 6.
+
+**Dial MB, et al. 2025.** *Physiological Reports* 13:e70527. See Oura Tier C above — same paper,
+includes WHOOP 4.0. **Verified — full text read directly (2026-08-25);** AFRL-funded, no vendor
+funding, no competing interests declared. WHOOP HR: CCC=0.91 "moderate" (MAPE 3.00±2.15%). WHOOP
+HRV: CCC=0.94 (MAPE 8.17±10.49%), behind both Oura generations, ahead of Garmin and Polar.
+
+## Use-case
+
+### Tier A — WHOOP-employee-authored
 
 **Holmes KE, Kim J, Fielding F, Zeitzer JM, von Hippel W. 2026.** "Four core circadian behaviors
 that improve cardiorespiratory fitness through consistent sleep." *Sleep* 49(2):zsaf318. Holmes,
@@ -287,25 +382,12 @@ direct verification. WHOOP's own press center attributes it to WHOOP research. ~
 72-week longitudinal, 25.2% relative decline in drinking probability. **Corroborated, not
 Verified** — recommend re-fetch via a different access route.
 
-**"Travel, recovery and performance" narrative review.** *Sports Medicine* (2026), DOI
-10.1007/s40279-026-02455-y. WHOOP's press release states it is "co-authored by WHOOP research
-scientists alongside collaborators from UCSF, UCLA, Ontario Tech University, Monash University, and
-Brigham and Women's Hospital." **Corroborated** (press-center claim), individual names not
-independently verified — Springer login wall blocked direct access.
-
 **"Tobacco Use and Behavior Change" study** referenced on WHOOP's press center (12,678 members,
 72-week decline in tobacco use 55%→27%). **No peer-reviewed journal citation or DOI located** —
 appears to be a WHOOP-internal blog/press release without a traceable publication. Flagged as
 press-release-only; exclude from citation as a "published study" until a journal reference surfaces.
 
-## Tier B — WHOOP-funded/affiliated, independent-author-led
-
-**Berryhill S, Morton CJ, Dean A, et al. (senior investigator Parthasarathy S). 2020.** "Effect of
-wearables on sleep in healthy individuals: a randomized crossover trial and validation study."
-*Journal of Clinical Sleep Medicine* 16(5):775–783. University of Arizona Health Sciences Center for
-Sleep and Circadian Sciences. **Funded by a grant to the University of Arizona from WHOOP Inc.;
-authors reported no personal conflicts of interest.** **Verified.**
-https://jcsm.aasm.org/doi/10.5664/jcsm.8356
+### Tier B — WHOOP-funded/affiliated, independent-author-led
 
 **Bellenger CR, Miller DJ, Halson SL, Roach GD, Maclennan CE, Sargent C. 2022.** "Evaluating the
 Typical Day-to-Day Variability of WHOOP-Derived Heart Rate Variability in Olympic Water Polo
@@ -315,38 +397,7 @@ Miller CQU position established above. **Corroborated, funding statement itself 
 flagged as likely Tier B given the overlapping author cluster, but the paper's own funding section
 wasn't directly read. 11 elite male water polo players, 16 weeks pre-Tokyo Olympics, WHOOP 3.0.
 
-**Miller DJ, Lastella M, Scanlan AT, Bellenger CR, Halson SL, Roach GD, Sargent C. 2020.** "A
-validation study of the WHOOP strap against polysomnography to assess sleep." *Journal of Sports
-Sciences* 38(22):2631–2636, PMID 32713257. All-CQU/Australian author list, no WHOOP employees
-visible. **Unclear** — funding/COI text not retrievable (Tandfonline 403). Given the same author
-cluster's demonstrated WHOOP-sponsorship pattern elsewhere, flag as likely Tier B pending direct
-confirmation; do not assume independence.
-
-## Tier C — Fully independent
-
-**Bellenger CR, Miller DJ, Halson SL, Roach GD, Sargent C. 2021 (correction 2022).** "Wrist-Based
-Photoplethysmography Assessment of Heart Rate and Heart Rate Variability: Validation of WHOOP."
-*Sensors* 21(10):3571. CQUniversity, **funded by the Australian Institute of Sport** (a national
-sport-science body, not WHOOP). WHOOP 2.0 vs. ECG, 15 sessions, Oct–Dec 2018. **Verified.** Widely
-cited by WHOOP as "99.7% HR / 99% HRV accuracy" — an accurate topline read of this paper, but the
-device tested (WHOOP 2.0) is two hardware generations behind WHOOP 4.0/5.0.
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8160717/
-
-**Miller DJ, et al. 2021.** "A Validation Study of a Commercial Wearable Device to Automatically
-Detect and Estimate Sleep." *Biosensors* 11(6):185. CQUniversity / University of South Australia /
-Australian Catholic University. Data collection independent of WHOOP; the paper discloses that
-co-author Dean Miller's CQUniversity position **became WHOOP-sponsored after data collection
-concluded** — a forward-looking COI, not a funding source for this specific study. **Verified.**
-64% four-stage agreement, κ=0.47. https://pmc.ncbi.nlm.nih.gov/articles/PMC8226553/
-
-**Schyvens A, et al. 2025.** *SLEEP Advances* 6(2):zpaf021. Six devices incl. WHOOP 4.0 vs PSG.
-**Funded by Flanders Innovation & Entrepreneurship (VLAIO); authors declare no conflicts.**
-**Verified.** Full extraction in `validation-evidence.md` §1. WHOOP κ=0.37 ("fair"), 4th of 6.
-
-**Dial MB, et al. 2025.** *Physiological Reports* 13:e70527. See Oura Tier C above — same paper,
-includes WHOOP 4.0. **Verified — full text read directly (2026-08-25);** AFRL-funded, no vendor
-funding, no competing interests declared. WHOOP HR: CCC=0.91 "moderate" (MAPE 3.00±2.15%). WHOOP
-HRV: CCC=0.94 (MAPE 8.17±10.49%), behind both Oura generations, ahead of Garmin and Polar.
+### Tier C — Fully independent
 
 **Lundstrom C, De Souza MJ, Koltun KJ, Strock N, Canil A, Williams N. 2024.** "Wearable technology
 metrics are associated with energy deficiency and psychological stress in elite swimmers."
@@ -355,6 +406,23 @@ HRV/RHR/Strain/Recovery vs. lab RMR, T3 thyroid, RESTQ stress in Division 1 swim
 context, not necessarily disqualifying:** Penn State Athletics has an institutional WHOOP-Unite
 equipment/software partnership (announced 2022) — separate from a research-funding relationship,
 but worth flagging. **Unclear** — the paper's actual COI/funding section wasn't retrieved.
+
+**Harms NR. 2018.** University of Nebraska-Lincoln dissertation (ProQuest/ERIC ED595664), "The
+Impact of Whoop Technology on Sleep, Recovery, and Performance in NAIA Baseball Players." **Not
+peer-reviewed** (thesis), 10 participants, no significant results. Low evidentiary weight — grey
+literature, not a journal article; included here only for completeness.
+
+## Review
+
+### Tier A — WHOOP-employee-authored
+
+**"Travel, recovery and performance" narrative review.** *Sports Medicine* (2026), DOI
+10.1007/s40279-026-02455-y. WHOOP's press release states it is "co-authored by WHOOP research
+scientists alongside collaborators from UCSF, UCLA, Ontario Tech University, Monash University, and
+Brigham and Women's Hospital." **Corroborated** (press-center claim), individual names not
+independently verified — Springer login wall blocked direct access.
+
+### Tier C — Fully independent
 
 **Khodr R, Kamal L, Minerbi A, Gupta G. 2024.** "Accuracy, Utility and Applicability of the WHOOP
 Wearable Monitoring Device in Health, Wellness and Performance — a systematic review." *medRxiv*
@@ -369,11 +437,6 @@ interests/disclosure section, so this remains **Corroborated, not Verified** eve
 hand — the secondary-source COI claim still cannot be directly confirmed from the primary document
 itself. See `../literature/whoop/2024-khodr-medrxiv-whoop-systematic-review.pdf`. This review's
 reference list remains a good discovery mechanism for additional WHOOP papers.
-
-**Harms NR. 2018.** University of Nebraska-Lincoln dissertation (ProQuest/ERIC ED595664), "The
-Impact of Whoop Technology on Sleep, Recovery, and Performance in NAIA Baseball Players." **Not
-peer-reviewed** (thesis), 10 participants, no significant results. Low evidentiary weight — grey
-literature, not a journal article; included here only for completeness.
 
 ## WHOOP — findings needing individual follow-up (surfaced, not yet verified)
 
@@ -409,7 +472,9 @@ literature, not a journal article; included here only for completeness.
 
 # APPLE WATCH
 
-## Tier A — Apple-employee-authored / Apple-sponsored flagship studies
+## Validation
+
+### Tier A — Apple-employee-authored / Apple-sponsored flagship studies
 
 **Perez MV, Mahaffey KW, Hedlin H, et al. (Apple Heart Study Investigators). 2019.** "Large-Scale
 Assessment of a Smartwatch to Identify Atrial Fibrillation." *N Engl J Med* 381:1909–1917. Stanford
@@ -428,27 +493,6 @@ HTTP 500/CAPTCHA symptoms on this PMC deposit were downstream of this underlying
 a retrieval-infrastructure bug — no PDF obtained, and none should be expected without institutional
 NEJM access.
 
-**Mahalingaiah S, Fruh V, Rodriguez E, et al. 2022.** "Design and methods of the Apple Women's
-Health Study: a digital longitudinal cohort study." *Am J Obstet Gynecol*. Harvard T.H. Chan School
-of Public Health (lead) + NIEHS/NIH (Jukic). **Corroborated** — three-way named partnership (Apple +
-Harvard Chan + NIEHS) per NIH's own press release; whether a named Apple employee appears as a paper
-co-author specifically was **not confirmed** (PMC fetch blocked by a bot check).
-https://pmc.ncbi.nlm.nih.gov/articles/PMC10518829/ ·
-NIH release: https://www.nih.gov/news-events/news-releases/nih-partners-apple-harvard-university-womens-health-study
-
-**Obtained 2026-08-24** (literature-library retry): NCBI's OA web service confirmed a genuine CC
-BY-NC-ND open-access record; the PDF URL itself sat behind a JS bot-detection interstitial that a
-real browser session cleared, yielding the actual PDF. See
-`../literature/apple-watch/2022-mahalingaiah-ajog-apple-womens-health-study-design.pdf`.
-
-**Apple Heart and Movement Study** (with American Heart Association + Brigham and Women's
-Hospital). Companion methods paper: "Understanding activity and physiology at scale: The Apple
-Heart & Movement Study," *npj Digital Medicine* (2024). Enrollment began Nov 2019 targeting 500,000
-participants; data collection closed end of Feb 2025; data access limited to Apple, Brigham and
-Women's, AHA, and the Research Studies Support Center — consistent with Tier A (Apple as
-co-sponsor/data-holder). https://www.nature.com/articles/s41746-024-01187-5 ·
-https://appleheartandmovementstudy.bwh.harvard.edu/
-
 **Apple's internal VO2max validation white paper.** "Using Apple Watch to Estimate Cardio Fitness
 with VO2 max" (Apple, May 2021). 534 development + 221 validation participants (755 total);
 reported accuracy ~1.2–1.4 mL/kg/min (~4%), ICC ~0.86–0.89. Self-published by Apple, not a
@@ -457,18 +501,7 @@ independently verified; the PDF was not machine-readable via fetch in this pass,
 are drawn from secondary summaries, not the primary text directly.
 https://www.apple.com/healthcare/docs/site/Using_Apple_Watch_to_Estimate_Cardio_Fitness_with_VO2_max.pdf
 
-## Tier B — Apple-funded/affiliated but independent authors, or run via a named Apple-partner institution
-
-**Apple Hearing Study** — University of Michigan partnership (with WHO). Collects headphone/
-environmental sound exposure via iPhone + Apple Watch Noise app; examines cardiovascular/stress
-links to long-term sound exposure. **Corroborated** (named partnership); individual peer-reviewed
-outputs not identified this pass. https://sph.umich.edu/applehearingstudy
-
-**2025 Apple Health Study** (holistic mental/physical health), led by Brigham and Women's Hospital,
-launched via the Research app Feb 2025. **Corroborated** (secondary sources only); no individual
-paper yet identified. https://www.apple.com/newsroom/2025/02/new-holistic-apple-health-study-launches-today-in-the-research-app/
-
-## Tier C — Fully independent
+### Tier C — Fully independent
 
 **Schyvens A, et al. 2025**, *SLEEP Advances* — already in this KB (Antwerp/VLAIO). Apple Watch
 Series 8 had the best overall kappa (0.53) of six devices, but ~15/35 device failures (highest
@@ -573,7 +606,89 @@ vendor. **Corroborated** (independent academic study; specific funding line not 
 this pass). 6/7 devices measured HR within 5%; energy expenditure inaccurate across all devices
 (best off by 27%, worst by 93%). n=60. https://med.stanford.edu/news/all-news/2017/05/fitness-trackers-accurately-measure-heart-rate-but-not-calories-burned.html
 
-## Apple Watch — systematic reviews / meta-analyses
+## Use-case
+
+### Tier A — Apple-employee-authored / Apple-sponsored flagship studies
+
+**Mahalingaiah S, Fruh V, Rodriguez E, et al. 2022.** "Design and methods of the Apple Women's
+Health Study: a digital longitudinal cohort study." *Am J Obstet Gynecol*. Harvard T.H. Chan School
+of Public Health (lead) + NIEHS/NIH (Jukic). **Corroborated** — three-way named partnership (Apple +
+Harvard Chan + NIEHS) per NIH's own press release; whether a named Apple employee appears as a paper
+co-author specifically was **not confirmed** (PMC fetch blocked by a bot check).
+https://pmc.ncbi.nlm.nih.gov/articles/PMC10518829/ ·
+NIH release: https://www.nih.gov/news-events/news-releases/nih-partners-apple-harvard-university-womens-health-study
+
+**Obtained 2026-08-24** (literature-library retry): NCBI's OA web service confirmed a genuine CC
+BY-NC-ND open-access record; the PDF URL itself sat behind a JS bot-detection interstitial that a
+real browser session cleared, yielding the actual PDF. See
+`../literature/apple-watch/2022-mahalingaiah-ajog-apple-womens-health-study-design.pdf`.
+
+**Apple Heart and Movement Study** (with American Heart Association + Brigham and Women's
+Hospital). Companion methods paper: "Understanding activity and physiology at scale: The Apple
+Heart & Movement Study," *npj Digital Medicine* (2024). Enrollment began Nov 2019 targeting 500,000
+participants; data collection closed end of Feb 2025; data access limited to Apple, Brigham and
+Women's, AHA, and the Research Studies Support Center — consistent with Tier A (Apple as
+co-sponsor/data-holder). https://www.nature.com/articles/s41746-024-01187-5 ·
+https://appleheartandmovementstudy.bwh.harvard.edu/
+
+### Tier B — Apple-funded/affiliated but independent authors, or run via a named Apple-partner institution
+
+**Apple Hearing Study** — University of Michigan partnership (with WHO). Collects headphone/
+environmental sound exposure via iPhone + Apple Watch Noise app; examines cardiovascular/stress
+links to long-term sound exposure. **Corroborated** (named partnership); individual peer-reviewed
+outputs not identified this pass. https://sph.umich.edu/applehearingstudy
+
+**2025 Apple Health Study** (holistic mental/physical health), led by Brigham and Women's Hospital,
+launched via the Research app Feb 2025. **Corroborated** (secondary sources only); no individual
+paper yet identified. https://www.apple.com/newsroom/2025/02/new-holistic-apple-health-study-launches-today-in-the-research-app/
+
+### Tier C — Fully independent
+
+**Zou L, Zhang L. 2026.** "Prescribing green dose for college students' mental health: Identifying
+thresholds for green space exposure duration, frequency, and cumulative dose via smartwatch."
+*Environmental Research*. Shanghai Jiao Tong University School of Design. N=43 healthy students,
+six-week wearable-based observational study using Apple Watch data. **Explicit COI statement read
+directly: "The authors declare that they have no known competing financial interests or personal
+relationships that could have appeared to influence the work reported in this paper." No Apple
+mention.** **Corroborated** (per the automated-scan convention: Tier C is marked Corroborated, not
+Verified, even when a vendor-silent COI statement was read directly). Single-session green-space
+exposure of ~17–35 min associated with sleep outcomes; ~3 sessions/week most associated with
+daytime functioning; cumulative weekly exposure of ~70–120 min associated with emotional outcomes
+and HRV amplitude differences. **Added 2026-09-01 (automated PubMed scan).**
+https://pubmed.ncbi.nlm.nih.gov/42250841/
+
+**Shroddha Aditi Das, Mukherjee I, Lambiase PD. 2026.** "Apple Watch Saves an Athlete: Unmasking
+Early Detection of Arrhythmogenic Cardiomyopathy." *Cureus*. Barts Health NHS Trust / Barts and the
+London School of Medicine and Dentistry / NIHR Barts BRC & UCLH/UCL BRC, London. Single-patient case
+report (33-year-old athlete): recurrent palpitations initially documented by a consumer wearable
+(named as Apple Watch in the title) prompted a diagnostic workup that revealed arrhythmogenic
+cardiomyopathy. **ICMJE disclosure read directly: "no financial support was received from any
+organization for the submitted work... no financial relationships... no other relationships or
+activities that could appear to have influenced the submitted work." No Apple mention.**
+**Corroborated** — Tier C. **Category note: this is a single-patient case report, not a
+population-level outcome study, so its fit under "Use-case" is genuinely ambiguous; included here
+per this file's default-to-Use-case-when-ambiguous rule rather than excluded, since it otherwise
+clears the relevance bar (device named in title, peer-reviewed journal article, has an abstract, in
+English).** **Added 2026-09-01 (automated PubMed scan).** https://pubmed.ncbi.nlm.nih.gov/42639363/
+
+**Serttaş A, Bulat Demir S, Uyanik Uğur Gizem, Altunkurt O. 2026.** "Bounded control in digital
+health: Privacy discourse and algorithmic governance in Apple Health." *Digital Health*. Faculty of
+Communication, İstanbul Aydın University. Qualitative study (critical discourse analysis of Apple's
+official "Health App and Privacy" text, plus semi-structured interviews with n=18 Apple Watch/Apple
+Health users) examining how user control over health data is constructed, communicated, and
+experienced. **Explicit COI statement read directly: "The authors declared no potential conflicts
+of interest with respect to the research, authorship, and/or publication of this article." No Apple
+mention.** **Corroborated** — Tier C. **Category note: this is a media/communication-studies paper
+(qualitative discourse and interview analysis of device users' privacy experience), not an
+accuracy-validation or health-outcome study — a genuinely ambiguous fit for a category scheme
+designed around those two kinds of literature. Defaulted to Use-case per this file's ambiguous-fit
+rule; flagged for reconsideration (e.g. a future "Policy/Ethics" category) in a later pass if more
+papers of this type are found.** **Added 2026-09-01 (automated PubMed scan).**
+https://pubmed.ncbi.nlm.nih.gov/42633020/
+
+## Review
+
+### Tier C
 
 **Shahid S, Iqbal M, Saeed H, et al. 2025.** "Diagnostic Accuracy of Apple Watch Electrocardiogram
 for Atrial Fibrillation: A Systematic Review and Meta-Analysis." *JACC: Advances* 4(2):101538.

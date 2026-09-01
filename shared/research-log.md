@@ -2,7 +2,106 @@
 
 ---
 
-## 2026-08-31 (latest) — Automated weekly literature scan: BLOCKED, both modules (network egress denial)
+## 2026-09-01 (latest) — Automated weekly literature scan: succeeded, both modules
+
+**Module:** Cross-module (Module 1 — Wearables; Module 2 — Mobile Digital Phenotyping Platforms)
+**Scope:** Second run of the automated weekly PubMed/arXiv literature-scan routine. The prior run
+(2026-08-31) failed before any search executed due to an egress-policy block on
+`eutils.ncbi.nlm.nih.gov` and `export.arxiv.org`; both hosts were reachable this run (confirmed via
+the agent-proxy status endpoint, `recentRelayFailures: []`, and direct 200s from both APIs before
+searching), so both modules used the first-run trailing-10-day window (2026-08-22 to 2026-09-01),
+since `last_run_date` was still `null` in both index files.
+
+### Module 1 (Oura / WHOOP / Apple Watch)
+
+Searched NCBI E-utilities per device, both `datetype=pdat` and `datetype=edat` (union of hits),
+2026-08-22 to 2026-09-01:
+
+- **Oura** — 1 candidate found (PMID 42434202). Passed the relevance bar (device named explicitly
+  in the abstract — "using the digital Oura Ring (Gen 3) continuously"; peer-reviewed Journal
+  Article; has an abstract; English). **1 added** — Use-case, Tier C (Corroborated; no
+  `CoiStatement` field present in the record).
+- **WHOOP** — 0 candidates found (both `pdat` and `edat` searches returned zero hits in the
+  window). **0 added.**
+- **Apple Watch** — 3 candidates found (PMIDs 42250841, 42639363, 42633020). All three passed the
+  relevance bar. **3 added** — all Use-case, all Tier C (Corroborated): a green-space-exposure
+  mental-health study (Zou & Zhang 2026), a single-patient case report where a consumer wearable
+  flagged palpitations later diagnosed as arrhythmogenic cardiomyopathy (Shroddha et al. 2026,
+  *Cureus* — flagged in the library itself as a genuinely ambiguous fit for "Use-case" given it's a
+  single-patient case report, included per the module's ambiguous-default rule), and a qualitative
+  discourse/interview study of Apple Watch/Apple Health users' privacy experience (Serttaş et al.
+  2026, *Digital Health* — also flagged as an ambiguous category fit, being a media/communication-
+  studies paper rather than an accuracy or health-outcome study).
+- **Module 1 total: 4 papers found, 4 passed the relevance bar and were added** (Category
+  breakdown: 4 Use-case, 0 Validation, 0 Review). No exclusions this pass — every candidate the
+  search surfaced qualified.
+
+**Files updated:** `module-01-wearables/research-library-wearables.md` (new entries added, **and**
+restructured from a flat per-device Tier A/B/C list into device → Category (Validation/Use-case/
+Review) → Tier nesting, per this routine's standing instruction to add that structure on first run
+— every pre-existing entry's text and confidence marker was preserved verbatim, only regrouped; see
+the file's own 2026-09-01 changelog note for details). `module-01-wearables/research-library-index.json`
+updated: `pmids_seen` now `["42434202","42250841","42639363","42633020"]`, `last_run_date`
+`"2026-09-01"`. `module-01-wearables/literature-library.md` and `module-01-wearables/literature/`
+were **not** touched, per this routine's explicit scope exclusion (separate PDF-storage convention,
+not yet extended to automated runs).
+
+### Module 2 (Mobile Digital Phenotyping Platforms)
+
+Searched NCBI E-utilities (`pdat`+`edat`) and the arXiv API, per-platform, 2026-08-22 to
+2026-09-01, for all eight platforms (Beiwe, RADAR-base, mindLAMP, AWARE Framework, Avicenna
+Research/Ethica, m-Path, CARP Mobile Sensing, MetricWire):
+
+- **PubMed:** zero hits for Beiwe, RADAR-base, mindLAMP, Avicenna Research/Ethica, m-Path, CARP
+  Mobile Sensing, and MetricWire. **AWARE Framework** returned one candidate (PMID 42643015,
+  "Individual-Level Modeling of Depressive Symptom Severity Using Smartphone and Wearable Data...");
+  **excluded** — this is a confirmed false positive, not a genuine AWARE Framework paper. The study
+  is about a different platform ("MONDY"); the record's `[tiab]`-indexed text matched "AWARE" only
+  as a substring of "Time-Aware" (in the title) and "performance-aware" (inside a cited reference's
+  title), and the query's required second term matched only because "Ferreira" and "mobile sensing"
+  happen to appear inside unrelated citations in the reference list, not in the paper's own title or
+  abstract about its own methods. Confirmed by direct inspection of the surrounding text in the
+  fetched record. This is exactly the ambiguity this module's search instructions warned about
+  ("AWARE alone is too ambiguous, do not search it bare") — the compound query still produced one
+  false positive from reference-list text, so it was excluded rather than included on a technicality.
+- **arXiv:** Beiwe (2 total hits, most recent from outside the window), CARP Mobile Sensing (1 total
+  hit, outside the window), RADAR-base, AWARE, and m-Path (20 hits each, capped at `max_results`,
+  all outside the window since results were sorted by submission date descending), mindLAMP,
+  Avicenna Research/Ethica, and MetricWire (0 hits). **Zero arXiv results fell inside the
+  2026-08-22–2026-09-01 window for any platform.**
+- **Module 2 total: 1 raw candidate found (AWARE, PubMed), 0 passed the relevance bar, 0 papers
+  added.** Every one of the eight platforms is logged here explicitly per this routine's own
+  instruction to state zero-result modules/platforms rather than omitting them.
+
+**Files updated:** `module-02-digital-phenotyping/literature-library-index.json` — `ids_seen`
+remains `[]` (nothing qualified to add), `last_run_date` set to `"2026-09-01"`.
+`module-02-digital-phenotyping/literature-library.md` was **not** edited this pass (zero qualifying
+papers). No PDFs were fetched this pass, so `PyPDF2` (installed this session; `pypdf` failed to
+import due to a broken `cryptography`/Rust-backend dependency in this environment — noted for any
+future pass that needs the higher-confidence text-extraction check) was not exercised.
+
+### Decisions affecting later runs
+
+1. **Egress was not an issue this run** — `eutils.ncbi.nlm.nih.gov` and `export.arxiv.org` both
+   returned HTTP 200 before any search executed, and the proxy status endpoint showed no relay
+   failures. The 2026-08-31 block appears to have been resolved between runs (a policy update, or a
+   session-specific config change) rather than requiring any workaround here.
+2. **Module 1's research-library-wearables.md now carries a Category dimension** (Validation /
+   Use-case / Review) in addition to its existing sponsorship-tier dimension, per this routine's
+   instruction to add that structure "on first run" now that automated scanning has begun. Future
+   runs should append new qualifying entries directly into the correct existing Category → Tier
+   slot rather than re-flattening the file.
+3. **`pypdf` is not usable in this environment** (import fails on a `cryptography`/`pyo3` Rust
+   backend panic); `PyPDF2` installs and imports cleanly and was validated this pass, so future
+   Module 2 passes needing PDF text-extraction confidence checks should use `PyPDF2`, not `pypdf`.
+4. **A concrete example of AWARE's known search ambiguity was captured live** (PMID 42643015) —
+   worth keeping in mind if a future pass considers loosening the AWARE query's required second
+   term, since even the current compound query is not fully immune to reference-list false
+   positives.
+
+---
+
+## 2026-08-31 — Automated weekly literature scan: BLOCKED, both modules (network egress denial)
 
 **Module:** Cross-module (Module 1 — Wearables; Module 2 — Mobile Digital Phenotyping Platforms)
 **Scope:** First run of the new automated weekly PubMed/arXiv literature-scan routine (per the
