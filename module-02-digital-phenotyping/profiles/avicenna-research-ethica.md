@@ -11,7 +11,7 @@
 | Open source | No |
 | Hosting/deployment | Vendor SaaS |
 | Pricing model | Commercial; a free tier/trial is offered, full pricing not public |
-| Last verified | 2026-08-24 |
+| Last verified | 2026-08-25 (second pass) |
 
 ## Summary
 
@@ -43,19 +43,27 @@ Per the vendor's own "Data Access & Analytics" page, study data are processed an
 
 ## APIs, SDKs, and Extensibility
 
-A dedicated public API was **not confirmed** in this session — the vendor's documentation describes dashboard-based data access and standard export formats rather than a documented developer API. White-label solutions are named as a product offering, implying some degree of platform customization is available commercially.
+**Re-confirmed 2026-08-25 (second pass).** Direct fetch of both `avicennaresearch.com`'s homepage and `avicennaresearch.dev/features/data-access-and-analytics/` again found no mention of a developer/public API — this session's targeted search for Avicenna API documentation also returned nothing. The absence is now corroborated by two independent direct fetches plus a dedicated search rather than a single pass, strengthening (not just repeating) the "not confirmed" status — data access still appears to be dashboard/export-mediated (CSV, JSON, GEXF, KML) rather than API-mediated. White-label solutions remain named as a product offering, implying some degree of platform customization is available commercially.
 
 ## Deployment and Infrastructure
 
-Vendor-hosted SaaS; no self-hosting option identified. Deployment model requires no researcher-side infrastructure, in contrast to Beiwe/RADAR-base/AWARE's self-hosting orientation — the tradeoff being reliance on the vendor's cloud rather than researcher-controlled infrastructure.
+**Re-confirmed 2026-08-25 (second pass, direct fetch of `avicennaresearch.com`).** Vendor-hosted SaaS; no self-hosting option identified on the homepage. Deployment model requires no researcher-side infrastructure, in contrast to Beiwe/RADAR-base/AWARE's self-hosting orientation — the tradeoff being reliance on the vendor's cloud rather than researcher-controlled infrastructure.
 
 ## Privacy, Security, and Compliance
 
-Not independently verified against primary vendor documentation in this session. Given the platform's explicit clinical-trial positioning, HIPAA/GDPR/21 CFR Part 11-type compliance claims would be expected on a dedicated trust/security page — this session did not locate and read one directly, so no compliance claim should be assumed either way.
+**Materially upgraded 2026-08-25 (second pass, Verified via direct fetch of `avicennaresearch.com/legal/`).** This is now one of the better-documented compliance postures in this module:
+
+- **ISO 27001:2022 certified infrastructure**, with the page stating "AES-256 encryption at rest." The certification is dated specifically: **certified November 2024 with zero nonconformities; a surveillance audit in November 2025, also zero nonconformities.**
+- **HIPAA**: the legal page addresses the HIPAA Privacy Rule and Security Rule specifically in the context of minors' Protected Health Information, referencing required administrative, physical, and technical safeguards, and states Business Associate Agreements are required for covered transactions. This is HIPAA-*relevant* documented language, not a blanket "Avicenna is HIPAA compliant" certification claim — the distinction CLAUDE.md requires be preserved.
+- **GDPR / UK GDPR / PIPEDA**: the page references "UK GDPR Article 8" (parental consent) and general EU GDPR compliance, plus PIPEDA (Canada) consent requirements for children under 13.
+- **Data Processing Agreements**: described as addressing enhanced security requirements, audit rights, approved sub-processors, breach-notification procedures, and data return/deletion obligations.
+- **What is still not confirmed**: no standalone, freestanding Security Policy or DPA *template* document was found linked from this page (the content is woven into Privacy Policy / Terms of Use rather than a dedicated trust-center page), and SOC 2 status specifically was not mentioned anywhere in this fetch. Treat the ISO 27001:2022 certification claim as **Verified** (specific, dated, audited), and the HIPAA/GDPR/PIPEDA language as **Corroborated** (specific and detailed, but self-reported by the vendor rather than independently audited in what this session could access).
+
+This resolves the bulk of unresolved-question #84 for Avicenna Research specifically — it is no longer accurate to say no Module 2 platform has documented compliance evidence; Avicenna Research now does.
 
 ## Pricing
 
-Per third-party software-directory listings (Capterra, SoftwareAdvice), Avicenna/Ethica offers a free trial and has historically been described as offering "an absolutely free unlimited trial with all features available to test." **These are third-party directory characterizations, not the vendor's own pricing page, and should be treated as Reported rather than Verified.** Full commercial/enterprise pricing is not public and requires vendor contact.
+**Re-confirmed 2026-08-25 (second pass).** A dedicated search for current Avicenna Research pricing/security information did not surface a vendor pricing page — pricing remains non-public. Per third-party software-directory listings (Capterra, SoftwareAdvice), Avicenna/Ethica offers a free trial and has historically been described as offering "an absolutely free unlimited trial with all features available to test." **These are third-party directory characterizations, not the vendor's own pricing page, and should be treated as Reported rather than Verified.** Full commercial/enterprise pricing is not public and requires vendor contact.
 
 ## Research Evidence and Validation
 
@@ -68,13 +76,14 @@ The platform has an academic research lineage as "Ethica/iEpi," described in its
 - Data made available to researchers within minutes of participant upload, per the vendor's own materials — a notably fast latency claim relative to platforms with less-documented sync behavior.
 - Academic origin (Ethica/iEpi, University of Saskatchewan) gives the platform a longer track record than a purely commercial startup.
 - White-label option suggests platform flexibility for institutions wanting a rebranded participant-facing app.
+- **New (second pass, 2026-08-25):** the most specific, dated third-party-audited compliance posture of any platform in this module — ISO 27001:2022 certified (zero nonconformities, most recent surveillance audit November 2025) — plus detailed HIPAA/GDPR/PIPEDA language addressing minors' data specifically.
 
 ## Limitations
 
 - Commercial, closed-source, vendor-hosted only — no self-hosting or code-level customization path, unlike Beiwe/RADAR-base/AWARE/CARP.
-- Full pricing is non-public; only a free-trial characterization from third-party directories was located, not verified against the vendor's own page.
-- No developer API was confirmed, which may limit programmatic integration relative to competitors with documented APIs.
-- Compliance documentation (HIPAA/GDPR/Part 11) was not independently verified this session despite the platform's clinical-trial positioning, which is exactly the context where such documentation matters most.
+- Full pricing is non-public; only a free-trial characterization from third-party directories was located, not verified against the vendor's own page (re-confirmed 2026-08-25 — a dedicated pricing-page search still found nothing).
+- No developer API was confirmed, which may limit programmatic integration relative to competitors with documented APIs (re-confirmed 2026-08-25 via two direct fetches plus a search).
+- ~~Compliance documentation (HIPAA/GDPR/Part 11) was not independently verified this session~~ — **materially resolved 2026-08-25**: Avicenna Research now has the most specific, dated third-party compliance evidence in this module (ISO 27001:2022, certified Nov 2024, zero-nonconformity surveillance audit Nov 2025), plus detailed HIPAA/UK-GDPR/PIPEDA language addressing minors' data specifically. 21 CFR Part 11 was still not mentioned anywhere fetched this session, and SOC 2 status remains unconfirmed — those two items are the genuine remaining gap, not the whole compliance picture.
 - The Ethica-to-Avicenna rebrand means older published literature citing "Ethica" may not obviously connect to the current company/product name for researchers doing their own literature search — worth flagging explicitly to anyone cross-referencing this profile against older papers.
 
 ## Best-Fit Use Cases
@@ -93,11 +102,11 @@ The platform has an academic research lineage as "Ethica/iEpi," described in its
 
 *(Directed to: Avicenna Research — https://avicennaresearch.com/ , https://avicennaresearch.dev/)*
 
-- What is current, non-trial pricing (per-participant, per-study, or subscription), and is academic/non-profit pricing available?
-- Is there a documented developer API distinct from the dashboard/export mechanism?
-- What HIPAA, GDPR/DPA, SOC 2, or 21 CFR Part 11 compliance documentation exists?
-- What is the exact current sensor/wearable integration catalog, and how does iOS coverage compare with Android?
-- Under what circumstances is the "white-label" option available, and at what additional cost?
+- What is current, non-trial pricing (per-participant, per-study, or subscription), and is academic/non-profit pricing available? — still unresolved after a second, dedicated search.
+- Is there a documented developer API distinct from the dashboard/export mechanism? — still unresolved after two direct fetches plus a search this pass.
+- ~~What HIPAA, GDPR/DPA, SOC 2, or 21 CFR Part 11 compliance documentation exists?~~ **Largely resolved 2026-08-25** — see Privacy, Security, and Compliance above (ISO 27001:2022 Verified; HIPAA/GDPR/PIPEDA Corroborated). **SOC 2 status and 21 CFR Part 11 remain unconfirmed** — this is the narrower residual question.
+- What is the exact current sensor/wearable integration catalog, and how does iOS coverage compare with Android? — not targeted this pass; still open.
+- Under what circumstances is the "white-label" option available, and at what additional cost? — not targeted this pass; still open.
 
 ## Key Links
 
@@ -117,3 +126,6 @@ The platform has an academic research lineage as "Ethica/iEpi," described in its
 6. Ethica/iEpi academic project page, University of Saskatchewan. https://www.cs.usask.ca/~osgood/iEpi/iEpi.html (accessed 2026-08-24, search summary). Academic origin as an epidemiological sensing/EMA system.
 7. CB Insights — Avicenna Research company profile. https://www.cbinsights.com/company/ethica-data (accessed 2026-08-24, search summary). Corroborates the Ethica-to-Avicenna corporate continuity.
 8. Third-party pricing/trial characterization: Capterra, SoftwareAdvice, SoftwareWorld listings (accessed 2026-08-24, search summary) — **Reported**, not vendor-verified: free-trial characterization.
+9. Avicenna Research — homepage (second-pass direct re-fetch). https://avicennaresearch.com/ (accessed 2026-08-25). **Primary/Direct.** Re-confirms no pricing, no developer API, no self-hosting mentioned; references security/compliance without naming frameworks on this specific page.
+10. Avicenna Research — "Legal Documents." https://avicennaresearch.com/legal/ (accessed 2026-08-25, second pass). **Primary/Verified.** ISO 27001:2022 certification (certified Nov 2024, zero nonconformities; surveillance audit Nov 2025, zero nonconformities), AES-256 encryption at rest, HIPAA Privacy/Security Rule language for minors' PHI, UK GDPR Article 8, EU GDPR, PIPEDA, DPA scope description. Resolves the majority of unresolved-question #84 for this platform.
+11. Avicenna Research — "Data Access & Analytics" (second-pass direct re-fetch). https://avicennaresearch.dev/features/data-access-and-analytics/ (accessed 2026-08-25). **Primary/Direct.** Re-confirms export formats (CSV, JSON, GEXF, KML); no developer API mentioned.

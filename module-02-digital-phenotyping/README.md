@@ -1,10 +1,18 @@
 # Module 2 — Mobile Digital Phenotyping Platforms
 
-**Status: initial research phase complete, single session, 2026-08-24.** Contrast Module 1, which
-received two deep-research passes; this module has not yet had a second pass to close the
-"not independently verified this session" items flagged throughout. Treat this as a solid first
-pass, not an exhaustively re-verified knowledge base — see `../shared/unresolved-questions.md` for
-the full list of what still needs a follow-up pass or direct vendor/maintainer contact.
+**Status: two research passes complete for all eight platforms, 2026-08-24 through 2026-08-25.**
+The initial research phase (2026-08-24, single session) is now followed by direct-source-fetch
+second passes covering every platform in the module: AWARE Framework, mindLAMP, and MetricWire
+(2026-08-24, same-day second session) and Beiwe, RADAR-base, Avicenna Research (Ethica), m-Path, and
+CARP Mobile Sensing (2026-08-25). This mirrors Module 1's two-pass depth, though the passes here were
+narrower re-verification sweeps targeting each profile's specific "not independently verified" and
+"Unclear"/"Reported" flags rather than full re-research from scratch. Major second-pass resolutions:
+Beiwe Service Center's actual pricing (previously methodology-only), RADAR-base's confirmed
+managed-hosting offering and itemized Android sensor catalog, Avicenna Research's ISO 27001:2022
+certification, m-Path's fully public tiered pricing, and CARP Mobile Sensing's expanded
+wearable/HealthKit-integration catalog and `carp-portal` dashboard repository. See
+`../shared/research-log.md`'s 2026-08-25 entry for the full account, and
+`../shared/unresolved-questions.md` Tier 13 for what the second passes could not close.
 
 ## Purpose
 
@@ -71,14 +79,19 @@ about Beiwe as any other profile is about its own subject.
    instruction — and AWARE Framework is the one platform that says so about itself: its own
    materials describe the iOS port as different/lesser in coverage than the Android client. Every
    other platform's parity question was left as "not independently verified" rather than assumed.
-4. **Commercial pricing is almost universally non-public.** Avicenna Research, MetricWire, and m-Path
-   all require vendor contact for real pricing; only Beiwe publishes its pricing *methodology*
-   (fixed fee by study duration + variable fee by Active Participant Months), not actual rate
-   figures.
-5. **Compliance documentation (HIPAA/GDPR/SOC2) was not located for any platform in this module**,
-   including ones with explicit clinical-trial or clinical-care positioning (mindLAMP, Avicenna
-   Research, MetricWire). This is the single largest cross-platform gap and the first thing any of
-   these organizations should be asked before a regulated study is designed around their platform.
+4. **Updated 2026-08-25 — commercial pricing is no longer almost-universally non-public.** After the
+   second pass, only **Avicenna Research and MetricWire** still require vendor contact for real
+   pricing. **Beiwe** now publishes actual Beiwe Service Center rates ($1,937/month + $6/Active
+   Participant Month), and **m-Path** now publishes a fully itemized tier-plus-add-on pricing
+   structure — the most granular in the module. RADAR-base has a confirmed managed-hosting option
+   (The Hyve) but its rates remain non-public.
+5. **Updated 2026-08-25 — compliance documentation is no longer undocumented for every platform.**
+   **Avicenna Research** has an independently audited, dated ISO 27001:2022 certification (the
+   strongest compliance evidence in the module), and **m-Path** has a vendor self-declared
+   "compliant with GDPR and HIPAA" statement. This is real progress but not closure: mindLAMP,
+   MetricWire, RADAR-base, Beiwe, CARP Mobile Sensing, and AWARE Framework still have no documented
+   compliance certification, and SOC 2/21 CFR Part 11 status remains unconfirmed even for Avicenna
+   Research and m-Path. This remains the module's largest residual cross-platform gap.
 6. **mindLAMP has explicitly deprecated components** in its own public GitHub organization
    (`LAMP-portal`, `LAMP-app`), which a prospective adopter needs to map against the current
    architecture before building on any specific repository.

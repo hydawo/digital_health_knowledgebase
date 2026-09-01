@@ -30,6 +30,15 @@ close Tier 10 unresolved-questions items #87–92. New Direct-retrieval sources 
 second, deliberate attempt (HTTP 403 and domain-wide HTTP 500 respectively) — these are now recorded
 as **repeated, confirmed access barriers** rather than single-session gaps.
 
+**Third-pass update (2026-08-25):** a follow-up session direct-fetched primary sources for the five
+platforms not covered by the 2026-08-24 second pass — **Beiwe, RADAR-base, Avicenna Research (Ethica),
+m-Path, and CARP Mobile Sensing** — bringing all eight profiled platforms to second-pass depth. New
+Direct-retrieval sources are marked below with "(3rd pass)". Major resolutions: Beiwe Service Center's
+actual rate figures (previously methodology-only); RADAR-base's managed-hosting offering (The Hyve)
+and itemized Android sensor catalog; Avicenna Research's ISO 27001:2022 certification; m-Path's full
+public pricing structure; CARP's expanded wearable-integration catalog and `carp-portal` dashboard
+repository.
+
 ---
 
 ## Beiwe
@@ -41,6 +50,9 @@ as **repeated, confirmed access barriers** rather than single-session gaps.
 | S-BEI-03 | forest repository | Onnela Lab (GitHub) | https://github.com/onnela-lab/forest | Open-source repo | **Direct** | Forest's purpose and relationship to Beiwe |
 | S-BEI-04 | Beiwe Service Center overview | Onnela Lab | https://www.beiwe.org/beiwe-service-center-overview/ ; https://hsph.harvard.edu/research/onnela-lab/beiwe-service-center/ | Service page | Search summary | BSC service scope, pricing methodology |
 | S-BEI-05 | onnela-lab GitHub organization | Onnela Lab | https://github.com/onnela-lab | Org listing | Search summary | Recent commit activity used for "Active" status |
+| S-BEI-06 | beiwe-backend repository structure and README (3rd pass) | Onnela Lab (GitHub) | https://github.com/onnela-lab/beiwe-backend | Open-source repo | **Direct (3rd pass)** | `data_access_api_reference` directory confirmed; precise HIPAA-applicability language quoted |
+| S-BEI-07 | forest README (3rd pass) | Onnela Lab (GitHub) | https://github.com/onnela-lab/forest | Open-source repo | **Direct (3rd pass)** | Subpackage structure: `jasmine`/`willow`/`sycamore` |
+| S-BEI-08 | Beiwe Service Center overview (3rd pass) | Onnela Lab | https://hsph.harvard.edu/research/onnela-lab/beiwe-service-center/ | Service page | **Direct (3rd pass)** | **Primary/Verified.** Actual BSC rate figures: $1,937/month + $6/Active Participant Month; worked examples $24,144–$27,564. Resolves unresolved-question #85 |
 
 ## RADAR-base
 
@@ -51,6 +63,10 @@ as **repeated, confirmed access barriers** rather than single-session gaps.
 | S-RAD-03 | 2026 RADAR-base Symposium announcement | RADAR-base | https://radar-base.org/2026/05/28/%F0%9F%9A%80-radar-base-symposium-2026-innovation-impact-the-future-of-mobile-health/ | Blog/news | Search summary | 2026 activity, named industry partners |
 | S-RAD-04 | Digital Phenotyping of Mental and Physical Conditions: Remote Monitoring of Patients Through RADAR-Base Platform | *JMIR Mental Health* 2024 | https://mental.jmir.org/2024/1/e51259 | Peer-reviewed | Search summary | Platform-use description across clinical domains |
 | S-RAD-05 | RADAR-IoT: An Open-Source, Interoperable, and Extensible IoT Gateway Framework for Health Research | PubMed | https://pubmed.ncbi.nlm.nih.gov/39066012/ | Peer-reviewed | Search summary | IoT gateway extension, open-source status |
+| S-RAD-06 | Phone Data Sensors (3rd pass) | RADAR-base | https://radar-base.org/docs/4048-2/ | Docs page | **Direct (3rd pass)** | **Primary/Verified.** Itemized 17-stream Android sensor catalog; "substantial differences" + "more sparse" iOS language |
+| S-RAD-07 | Passive App (pRMT App) (3rd pass) | RADAR-base | https://radar-base.org/docs/prmt-app/ | Docs page | Direct (3rd pass), limited yield | General passive-app description only |
+| S-RAD-08 | RADAR-base GitHub organization (3rd pass) | RADAR-base | https://github.com/RADAR-base | Org listing | **Direct (3rd pass)** | **Primary/Verified.** Confirms `ManagementPortal`, `radar-prmt-android`, `RADAR-Questionnaire`, `RADAR-Schemas`, Kubernetes/Helm deployment repos, all Apache-2.0, active through Aug 2026 |
+| S-RAD-09 | RADAR-base as a Service (3rd pass) | The Hyve | https://www.thehyve.nl/services/radar-base-as-a-service | Service page | **Direct (3rd pass)** | **Primary/Verified.** Managed-hosting offering: GDPR-compliant cloud, 2–4 week setup, ~200-participant single-server guidance, no published pricing. Resolves unresolved-question #86 |
 
 ## mindLAMP
 
@@ -87,6 +103,9 @@ as **repeated, confirmed access barriers** rather than single-session gaps.
 | S-AVI-06 | Ethica/iEpi academic project page | Univ. of Saskatchewan | https://www.cs.usask.ca/~osgood/iEpi/iEpi.html | Academic page | Search summary | Academic origin as epidemiological sensing/EMA system |
 | S-AVI-07 | Avicenna Research company profile | CB Insights | https://www.cbinsights.com/company/ethica-data | Directory | Search summary | Corroborates Ethica-to-Avicenna continuity |
 | S-AVI-08 | Third-party pricing/trial listings | Capterra, SoftwareAdvice, SoftwareWorld | various | Directory | Search summary | Free-trial characterization — **Reported, not vendor-verified** |
+| S-AVI-09 | Avicenna Research homepage (3rd pass re-fetch) | Avicenna Research | https://avicennaresearch.com/ | Vendor site | **Direct (3rd pass)** | Re-confirms no public pricing, no developer API, no self-hosting |
+| S-AVI-10 | Avicenna Research — Legal Documents (3rd pass) | Avicenna Research | https://avicennaresearch.com/legal/ | Legal page | **Direct (3rd pass)** | **Primary/Verified.** ISO 27001:2022 certification (Nov 2024, zero nonconformities; surveillance audit Nov 2025, zero nonconformities), AES-256 at rest, HIPAA/UK GDPR/EU GDPR/PIPEDA language for minors' data. Resolves majority of unresolved-question #84 for this platform |
+| S-AVI-11 | Data Access & Analytics (3rd pass re-fetch) | Avicenna Research | https://avicennaresearch.dev/features/data-access-and-analytics/ | Vendor docs | **Direct (3rd pass)** | Re-confirms export formats; no developer API found |
 
 ## MetricWire
 
@@ -107,6 +126,9 @@ as **repeated, confirmed access barriers** rather than single-session gaps.
 | S-MP-01 | m-Path official site | m-Path | https://m-path.io/ | Vendor site | Search summary | Platform framing, m-Path sense, JITAI/EMI support |
 | S-MP-02 | m-Path: an easy-to-use and highly tailorable platform for ecological momentary assessment and intervention in behavioral research and clinical practice | *Frontiers in Digital Health* 2023 | https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2023.1182175/full ; PMC: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10619650/ | Peer-reviewed | Search summary | Platform-description methods paper |
 | S-MP-03 | m-Path — Research page | m-Path | https://m-path.io/landing/research/ | Vendor page | Search summary | "250+ Universities" claim — Reported |
+| S-MP-04 | m-Path homepage (3rd pass) | m-Path | https://m-path.io/ | Vendor site | **Direct (3rd pass)** | "Compliant with GDPR and HIPAA" (vendor self-declared — Corroborated, not audited) |
+| S-MP-05 | m-Path — Pricing (3rd pass) | m-Path | http://m-path.io/pricing/ | Pricing page | **Direct (3rd pass)** | **Primary/Verified.** Full tier structure (Free/Essential/Standard/Comfort) and add-on pricing. Resolves unresolved-question #93's pricing component |
+| S-MP-06 | m-Path manual — "Welcome to m-Path" (3rd pass) | m-Path | https://m-path.io/manual/knowledge-base/welcome-to-m-path/ | Docs page | Direct (3rd pass), limited yield | No sensor-level or API detail on this specific page |
 
 ## CARP Mobile Sensing
 
@@ -117,6 +139,9 @@ as **repeated, confirmed access barriers** rather than single-session gaps.
 | S-CARP-03 | About — CARP | DTU | https://carp.cachet.dk/about/ | Project page | Search summary | MIT licence, DTU copyright, application domains |
 | S-CARP-04 | carp_mobile_sensing Flutter package | DTU (pub.dev) | https://pub.dev/packages/carp_mobile_sensing | Package registry | Search summary | Active distribution confirmation |
 | S-CARP-05 | The CARP Mobile Sensing Framework — A Cross-platform, Reactive, Programming Framework and Runtime Environment for Digital Phenotyping | Bardram et al. | https://arxiv.org/pdf/2006.11904 | Peer-reviewed / preprint | Search summary | Architecture paper |
+| S-CARP-06 | CAMS feature page (3rd pass) | DTU | https://carp.dk/cams/ | Project page | **Direct (3rd pass)** | **Primary/Verified.** Named wearable catalog (Movisens, eSense, Polar, Movesense, Dexcom G7); Apple Health/Google Health Connect integration confirmed |
+| S-CARP-07 | `carp-dk` GitHub organization (3rd pass) | DTU (Bardram group) | https://github.com/carp-dk | Org listing | **Direct (3rd pass)** | **Primary/Verified.** Confirms `carp-portal`, `carp-cli`, `carp-webservices-spring`, `carp.core-kotlin`, `carp_study_app`; MIT re-confirmed; 42 total repos |
+| S-CARP-08 | "The CARP Mobile Sensing Framework — Demonstration" | UbiComp/ISWC 2025 Companion | https://unpaywall.org/10.1145/3714394.3754442 | Peer-reviewed (demo paper) | Search summary (3rd pass) | Evidence of continued 2025 academic engagement; author affiliations not confirmed |
 
 ## Legacy and adjacent platforms
 
@@ -140,7 +165,10 @@ as **repeated, confirmed access barriers** rather than single-session gaps.
 | Koa Health research page | https://www.koahealth.com/research | **Resolved 2nd pass — direct fetch succeeded** |
 | Purple Robot lab page / phidatalab.org (all paths) | https://phidatalab.org/... | **HTTP 500 domain-wide, 2nd pass** — still not obtained; new signal (server error, not 404) |
 | mindLAMP core-server/dashboard/app licence text | github.com/BIDMCDigitalPsychiatry (individual repo licence files) | Not directly opened this session; org-level listing didn't surface it. `LAMP-js`/`LAMP-py`/`LAMP-toolkit` licences ARE confirmed |
-| Vendor pricing pages (Avicenna Research, m-Path) | various | Non-public / not located (unchanged, out of this pass's scope — Avicenna and m-Path were not targeted this pass) |
+| Vendor pricing pages (Avicenna Research, m-Path) | various | **m-Path resolved 2026-08-25 (3rd pass)** — full pricing found at `m-path.io/pricing/`. **Avicenna Research remains non-public** — a dedicated 3rd-pass search still found no pricing page. |
+| Beiwe API endpoint documentation (`data_access_api_reference` contents) | github.com/onnela-lab/beiwe-backend | Directory confirmed to exist (3rd pass); its contents/endpoint list were not opened this session |
+| RADAR-base iOS-side itemized sensor list | radar-base.org docs | Android list itemized (3rd pass); the referenced iOS comparison chart's contents were not extracted |
+| CARP `carp-portal` documentation/feature detail | github.com/carp-dk/carp-portal | Repository's existence confirmed (3rd pass); its README/feature set was not opened this session |
 
 ---
 
@@ -161,6 +189,17 @@ as **repeated, confirmed access barriers** rather than single-session gaps.
   under it (`/`, `/software/`, `/software__trashed/purple-robot-android-apps/`) — the domain that
   succeeded on a single-page direct fetch in the first pass could not be reached at all in the
   second pass.
-- **Not directly fetched even after two passes (search-summary only):** Avicenna Research, m-Path
-  (out of this second pass's scope — see task framing), and RADAR-base/CARP sub-pages (also out of
-  scope this pass). This remains a priority for any future third pass on those specific platforms.
+- **Not directly fetched after the first two passes (search-summary only), now resolved in the
+  2026-08-25 third pass:** Avicenna Research (homepage, legal page, data-access page all directly
+  fetched), m-Path (homepage, pricing page, manual landing page all directly fetched), RADAR-base
+  (About page was already Direct in the 1st pass; sensors doc, GitHub org, and The Hyve's managed-
+  hosting page newly directly fetched), Beiwe (backend repo, forest repo, and BSC overview page
+  re-fetched/newly fetched directly), and CARP Mobile Sensing (CAMS feature page and `carp-dk` GitHub
+  org newly directly fetched). All eight Module 2 platforms have now had at least one Direct-fetch
+  pass on their primary vendor/maintainer materials.
+- **Still search-summary-only even after the third pass:** RADAR-base's Publications page, 2026
+  Symposium announcement, and the JMIR/RADAR-IoT peer-reviewed papers; Avicenna Research's homepage-
+  adjacent pages (S-AVI-01/02/04–08); m-Path's core methods paper (S-MP-02) and research page
+  (S-MP-03); CARP's `carp.dk`/`carp.cachet.dk` project pages (S-CARP-01–03) and the Bardram et al.
+  architecture paper and 2025 UbiComp demo paper (S-CARP-05, S-CARP-08). These remain candidates for
+  a future pass if a specific claim from them becomes decision-relevant.

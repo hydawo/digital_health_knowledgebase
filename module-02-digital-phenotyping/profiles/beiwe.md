@@ -11,7 +11,7 @@
 | Open source | Yes — BSD-3-Clause across backend, iOS, and Android repos |
 | Hosting/deployment | Self-hosted on AWS (own account), or managed via the Beiwe Service Center (BSC) |
 | Pricing model | Software free; self-hosting incurs AWS costs; BSC is a paid managed service with study-specific quoted pricing |
-| Last verified | 2026-08-24 |
+| Last verified | 2026-08-25 (second pass) |
 
 ## Summary
 
@@ -40,7 +40,7 @@ Active: researcher-defined surveys/EMA (including audio-recording surveys) deliv
 
 ## Derived Metrics / Analytics
 
-Via Forest: GPS-derived mobility metrics (e.g., time at home, distance traveled, radius of gyration — exact metric names not independently verified against current Forest documentation this session), and call/text-derived sociability metrics. Forest is positioned by the lab as addressing "the main bottleneck" in digital phenotyping research — that data analysis, not collection, is the harder problem. **Reported** framing from the lab's own materials.
+Via Forest: **Verified 2026-08-25** (direct fetch of `onnela-lab/forest`'s GitHub README) — Forest is organized into named subpackages, each producing a distinct metric family: **`jasmine`** (mobility metrics from GPS data), **`willow`** (daily summaries of call & text metadata — the sociability metrics), and **`sycamore`** (survey-completion-time metrics from survey metadata). The README does not itself enumerate individual metric names within each subpackage (e.g., specific mobility-metric names like "time at home" or "radius of gyration" were not confirmed against current documentation this session — the detailed per-metric catalog lives in Forest's separate documentation site, which was not fetched this pass). Forest is positioned by the lab as addressing "the main bottleneck" in digital phenotyping research — that data analysis, not collection, is the harder problem. **Reported** framing from the lab's own materials.
 
 ## Active Data Collection
 
@@ -56,7 +56,7 @@ Raw data lands in S3 (self-hosted) or the BSC's AWS storage, and is described as
 
 ## APIs, SDKs, and Extensibility
 
-Fully open source (BSD-3) across backend, iOS, and Android — the strongest extensibility position of any platform in this module by definition: a research team can fork and modify any layer. No first-party public REST API for third-party integration was identified in this session (data access appears to be through the study database / exports rather than a documented external API) — **flagged as unresolved** rather than assumed absent.
+Fully open source (BSD-3) across backend, iOS, and Android — the strongest extensibility position of any platform in this module by definition: a research team can fork and modify any layer. **Updated 2026-08-25 (second pass):** a direct fetch of `onnela-lab/beiwe-backend`'s repository structure confirms a `data_access_api_reference` directory exists in the codebase, indicating some form of documented data-access API is part of the backend. However, the README content retrieved this session did not detail the endpoint functionality, so whether this constitutes a public, researcher-facing REST API comparable to competitors' documented APIs, or an internal/administrative interface, remains **Unclear** rather than resolved — this is a narrower open question than the prior "no API identified" framing, not a fully closed one.
 
 ## Deployment and Infrastructure
 
@@ -71,14 +71,15 @@ Native app on the participant's own or a study-provisioned phone; background pas
 ## Privacy, Security, and Compliance
 
 - **Verified**: multi-stage encryption (on-device, in-transit RSA-AES hybrid, at-rest with study master key) and identifier hashing, per the backend README.
-- HIPAA, GDPR/DPA, SOC 2, and IRB-support specifics were **not independently verified against current documentation** in this session. Do not infer regulatory compliance from "Harvard" as an institutional affiliation — CLAUDE.md's instruction not to infer compliance from general claims applies here as much as to any vendor.
+- **Updated 2026-08-25 (second pass):** a direct fetch of `onnela-lab/beiwe-backend`'s README surfaces the platform's own compliance framing precisely: it states the system "may interact with laws covering PII or PHI like HIPAA in the United States" — an acknowledgment that HIPAA-relevant data may pass through the system, **not a HIPAA-compliance certification claim**. No mention of GDPR, SOC 2, or ISO certification was found in this fetch. This is a materially more precise finding than "not independently verified" but does not change the conclusion: no compliance certification is documented, and none should be inferred.
+- GDPR/DPA, SOC 2, and IRB-support specifics remain **not independently verified against current documentation**. Do not infer regulatory compliance from "Harvard" as an institutional affiliation — CLAUDE.md's instruction not to infer compliance from general claims applies here as much as to any vendor.
 - Self-hosting gives a research team full data custody (the Onnela Lab is never in the data path); using the BSC puts the Onnela Lab's AWS deployment in the data path, which is a materially different governance posture and should be weighed like any other vendor-hosted arrangement.
 
 ## Pricing
 
 - **Software**: free, BSD-3-Clause, no licence fee under either deployment path.
 - **Self-hosting**: AWS infrastructure costs only (S3/EC2/RDS), which scale with study size and are not separately published — this is a "your AWS bill" cost, not a Beiwe-specific fee.
-- **Beiwe Service Center**: quote-based. Per the BSC's own published cost-model description, pricing combines (a) a fixed monthly fee scaled to total study duration (T, months from first enrollment to last participant's data-collection end) and (b) a variable fee tied to total **Active Participant Months** (participants N × per-participant collection length in months). **Verified** as the stated methodology from the BSC's own site; the actual rate figures are not public and require a study-specific quote.
+- **Beiwe Service Center**: **Verified 2026-08-25 (second pass, resolving unresolved-question #85)** — a direct fetch of the BSC's own overview page (`hsph.harvard.edu/research/onnela-lab/beiwe-service-center/`) now returns actual rate figures, not only the methodology: **Fixed Monthly Cost: $1,937/month**; **Variable Cost: $6 per Active Participant Month**. The page's own worked examples show total contract costs ranging from **$24,144 to $27,564** depending on study duration and participant-months. This resolves what was, as of 2026-08-24, the module's clearest "methodology published, rates not" gap — Beiwe now has among the more transparent pricing of any platform in this module. (Rates may change over time; re-verify before using in a real budget.)
 
 ## Research Evidence and Validation
 
@@ -95,11 +96,11 @@ Beiwe has been used across numerous published studies, including deployments at 
 ## Limitations
 
 - Self-hosting requires real AWS/Django/Python engineering capacity; this is a genuine adoption barrier relative to fully managed commercial platforms (Avicenna Research, MetricWire) in this module.
-- No first-party public REST API for third-party integration was located — data access appears to be export/database-mediated rather than API-mediated, which is a meaningfully different integration story than several competitors.
+- A `data_access_api_reference` directory exists in the backend repo, but whether it amounts to a documented, researcher-self-service public API (comparable to competitors with named developer-API pages) was not resolved this session — data access still appears primarily export/database-mediated.
 - iOS/Android feature and sampling parity was not independently verified this session and should not be assumed.
-- HIPAA/GDPR/SOC 2 compliance posture is undocumented in what this session could access; do not infer compliance from Harvard's institutional affiliation.
-- BSC pricing is not public; every study needs a quote.
-- Session did not verify branching-logic EMA sophistication, exact derived-metric catalog from Forest, or bulk-export file formats against current documentation.
+- GDPR/DPA/SOC 2 compliance posture remains undocumented; the backend README's own language ("may interact with laws covering PII or PHI like HIPAA") is an acknowledgment of applicability, not a certification claim. Do not infer compliance from Harvard's institutional affiliation.
+- ~~BSC pricing is not public; every study needs a quote.~~ **Resolved 2026-08-25**: BSC publishes actual rate figures ($1,937/month fixed + $6/Active Participant Month variable) on its own overview page — see Pricing above.
+- Session did not verify branching-logic EMA sophistication, the exact per-metric catalog within Forest's `jasmine`/`willow`/`sycamore` subpackages, or bulk-export file formats against current documentation.
 
 ## Best-Fit Use Cases
 
@@ -117,11 +118,11 @@ Beiwe has been used across numerous published studies, including deployments at 
 
 *(Directed to: Onnela Lab / Beiwe Service Center — https://beiwe.hsph.harvard.edu, hsph.harvard.edu/research/onnela-lab)*
 
-- Is there a documented public REST API for third-party data access, distinct from the study database/export mechanism?
+- Does the `data_access_api_reference` directory in `beiwe-backend` document a public, researcher-self-service REST API, or an internal/administrative interface only?
 - What are the exact iOS-vs-Android differences in passive-stream sampling and background execution?
-- What is Forest's current full catalog of derived metrics, and how are they versioned across releases?
-- What HIPAA, GDPR/DPA, SOC 2, or comparable compliance documentation exists for BSC-hosted studies specifically (as distinct from self-hosted deployments where the researcher is the data controller)?
-- What are actual BSC rate figures (the fixed and variable fee amounts), even as an indicative range?
+- What is the full per-metric catalog within Forest's `jasmine` (mobility), `willow` (communication/sociability), and `sycamore` (survey) subpackages, and how are they versioned across releases?
+- What GDPR/DPA, SOC 2, or comparable compliance documentation exists for BSC-hosted studies specifically (as distinct from self-hosted deployments where the researcher is the data controller)?
+- ~~What are actual BSC rate figures?~~ **Resolved 2026-08-25** — see Pricing above.
 - What published, systematic count of Beiwe-based peer-reviewed studies exists (this session did not attempt an exhaustive literature count)?
 
 ## Key Links
@@ -141,3 +142,6 @@ Beiwe has been used across numerous published studies, including deployments at 
 3. `onnela-lab/forest` repository. https://github.com/onnela-lab/forest (accessed 2026-08-24). **Primary.** Forest's purpose and relationship to Beiwe.
 4. Beiwe Service Center overview. https://www.beiwe.org/beiwe-service-center-overview/ and https://hsph.harvard.edu/research/onnela-lab/beiwe-service-center/ (accessed 2026-08-24). **Primary.** BSC service scope, pricing methodology (fixed + variable fee structure).
 5. `onnela-lab` GitHub organization (activity check). https://github.com/onnela-lab (accessed 2026-08-24). Recent commit activity across `beiwe-backend` (Jan 2026) and `beiwe-ios` (Feb 2026) used to support "Active" status.
+6. `onnela-lab/beiwe-backend` repository structure and README (second-pass re-fetch). https://github.com/onnela-lab/beiwe-backend (accessed 2026-08-25). **Primary/Verified.** Confirms `data_access_api_reference` directory exists; confirms README's precise HIPAA-applicability language ("may interact with laws covering PII or PHI like HIPAA"), distinct from a compliance certification claim.
+7. `onnela-lab/forest` README (second-pass re-fetch). https://github.com/onnela-lab/forest (accessed 2026-08-25). **Primary/Verified.** Confirms subpackage structure: `jasmine` (GPS mobility metrics), `willow` (call/text communication metrics), `sycamore` (survey-completion metrics).
+8. Beiwe Service Center overview (second-pass direct fetch). https://hsph.harvard.edu/research/onnela-lab/beiwe-service-center/ (accessed 2026-08-25). **Primary/Verified.** Actual rate figures: $1,937/month fixed + $6/Active Participant Month variable; worked examples totaling $24,144–$27,564.

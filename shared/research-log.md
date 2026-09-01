@@ -68,6 +68,189 @@ module-02-digital-phenotyping/literature-library-index.json  (dedup ledger scaff
 
 ---
 
+## 2026-08-25 — Module 2 third pass: direct-source re-verification of Beiwe, RADAR-base, Avicenna Research, m-Path, CARP Mobile Sensing
+
+**Module:** Module 2 (Mobile Digital Phenotyping Platforms) — third pass overall, second direct-source
+re-verification pass. This is a Maintenance pass under CLAUDE.md's Maintenance section (re-check
+primary docs, update verification dates, record changes), not new-module research. Scope: the five
+platforms **not** covered by the 2026-08-24 second pass (which covered AWARE Framework, mindLAMP, and
+MetricWire) — **Beiwe, RADAR-base, Avicenna Research (Ethica), m-Path, and CARP Mobile Sensing** —
+bringing all eight profiled Module 2 platforms to the same second-pass verification standard. Module 1
+and the three already-second-passed platforms were explicitly out of scope and were not touched.
+
+### Technologies researched
+
+Beiwe (and Forest), RADAR-base, Avicenna Research (Ethica), m-Path, CARP Mobile Sensing.
+
+### Files created or updated
+
+- `module-02-digital-phenotyping/profiles/beiwe.md`
+- `module-02-digital-phenotyping/profiles/radar-base.md`
+- `module-02-digital-phenotyping/profiles/avicenna-research-ethica.md`
+- `module-02-digital-phenotyping/profiles/m-path.md`
+- `module-02-digital-phenotyping/profiles/carp-mobile-sensing.md`
+- `module-02-digital-phenotyping/comparison-matrix.md`
+- `module-02-digital-phenotyping/sources.md`
+- `module-02-digital-phenotyping/README.md`
+- `shared/unresolved-questions.md` (Tier 10 items #84, #85, #86, #89, #90, #93, #94 annotated; new Tier 13 added, items #101–#105)
+
+### Major findings
+
+1. **Beiwe — Beiwe Service Center pricing resolved (unresolved-question #85, Verified).** A direct
+   fetch of the BSC's own overview page (`hsph.harvard.edu/research/onnela-lab/beiwe-service-center/`)
+   — which had returned a connection error on the first attempt this pass and succeeded on retry —
+   now returns actual rate figures, not only the previously published methodology: **$1,937/month
+   fixed + $6/Active Participant Month variable**, with worked examples totaling $24,144–$27,564. This
+   closes what had been the module's clearest "methodology published, rates not" gap. Also confirmed:
+   a `data_access_api_reference` directory exists in `beiwe-backend` (API existence narrowed from
+   "not identified" to "exists, scope unconfirmed"); Forest's subpackage structure (`jasmine` =
+   mobility, `willow` = communication/sociability, `sycamore` = survey completion); and the backend
+   README's precise HIPAA language ("may interact with laws covering PII or PHI like HIPAA") — an
+   applicability acknowledgment, explicitly not a compliance certification claim.
+2. **RADAR-base — managed-hosting offering confirmed (unresolved-question #86, Verified) and
+   iOS/Android parity gap confirmed (Corroborated).** The Hyve, RADAR-base's co-maintainer, offers a
+   named managed-hosting product, **"RADAR-base as a Service"**: GDPR-compliant cloud hosting, 2–4
+   week setup, support for unlimited studies in general framing but explicitly best suited to studies
+   of ~200 participants or fewer (single-server infrastructure) per the vendor's own page. No pricing
+   is published. Separately, a direct fetch of RADAR-base's own "Phone Data Sensors" documentation
+   itemized 17 Android passive-sensor streams and stated explicitly that "substantial differences"
+   exist between iOS and Android, with iOS availability "more sparse... due to lack of background
+   collection capabilities" — RADAR-base joining AWARE Framework as the second platform in this module
+   with a self-documented, Verified/Corroborated (not just assumed) iOS/Android gap. A `ManagementPortal`
+   GitHub repository was also confirmed as an actively maintained (not merely referenced) component.
+3. **Avicenna Research (Ethica) — compliance posture materially upgraded (Verified/Corroborated),
+   pricing and API status re-confirmed unresolved.** A direct fetch of `avicennaresearch.com/legal/`
+   surfaced the strongest compliance evidence found anywhere in this module: **ISO 27001:2022
+   certification, dated and audited** (certified November 2024 with zero nonconformities; a
+   surveillance audit in November 2025, also zero nonconformities), plus detailed HIPAA Privacy/
+   Security Rule, UK GDPR Article 8, EU GDPR, and PIPEDA language specifically addressing minors' data.
+   This is Verified (a specific, dated, audited certification) for ISO 27001 and Corroborated (specific
+   vendor-stated language, not independently audited in what this session accessed) for the
+   HIPAA/GDPR/PIPEDA claims. Pricing and a developer API were both re-confirmed as not found, after two
+   direct fetches (homepage, data-access-and-analytics page) plus a dedicated search this pass — this
+   strengthens rather than merely repeats the prior "not confirmed" finding.
+4. **m-Path — pricing fully resolved (unresolved-question #93, Verified) and compliance
+   corroborated.** A direct fetch of `m-path.io/pricing/` returned the complete, previously-unfound
+   tier structure: Free (€0/50 participants), Essential (€1,599–€2,958), Standard (€2,099–€3,616),
+   Comfort (€3,099–€5,338), all scaling with participant count, plus separately priced add-ons —
+   notably **Sensing Lite (€3,000)**, **Sensing Full (€10,000)**, and **API Access (€5,000)**. This
+   quantifies and confirms what the first pass only described qualitatively: m-Path sense (passive
+   sensing) and the platform's API are both add-ons priced well above the base subscription, not
+   included capabilities. Separately, m-Path's own homepage states "compliant with GDPR and HIPAA" —
+   Corroborated (a specific, vendor-stated claim) rather than Verified (no independent audit evidence
+   located, in contrast to Avicenna Research's ISO 27001 certificate found the same pass).
+5. **CARP Mobile Sensing — wearable/health-platform integration catalog substantially expanded
+   (Verified), and a researcher-dashboard component ("carp-portal") discovered, revising the prior
+   "not offered" characterization.** A direct fetch of `carp.dk/cams/` itemized named wearable
+   integrations far beyond the first pass's generic "ECG monitor" reference: Movisens (Move4,
+   EcgMove4, EdaMove4), the eSense earplug, Polar (H10, Verity Sense), Movesense (MD, Active), and the
+   Dexcom G7 continuous glucose monitor — plus confirmed **Apple Health and Google Health Connect**
+   integration, a genuine differentiator not previously documented for this platform. Separately, a
+   direct fetch of the `carp-dk` GitHub organization (42 repositories) revealed a `carp-portal`
+   repository, a `carp-cli` terminal client with a protocol editor, and `carp-webservices-spring` (a
+   Kotlin/Spring REST backend) — meaning CARP's ecosystem includes study-management-adjacent tooling
+   beyond the CAMS sensing library alone. This revises, but does not fully overturn, the prior "not a
+   dashboard product" framing: `carp-portal`'s existence is now Verified, but its feature completeness
+   and documentation quality were not assessed this pass, so it should not be treated as equivalent to
+   a mature commercial dashboard without further verification.
+
+### Important unresolved questions (even after this pass)
+
+- Whether Beiwe's `data_access_api_reference` directory documents a public, researcher-self-service
+  API or an internal interface only (new Tier 13 item #101).
+- Forest's full per-metric catalog within `jasmine`/`willow`/`sycamore` (new Tier 13 item #102).
+- RADAR-base's exact iOS-side itemized sensor list, as distinct from the now-itemized Android list
+  and the qualitative "more sparse" framing (new Tier 13 item #103).
+- The Hyve's actual pricing for "RADAR-base as a Service," and how its ~200-participant ceiling is
+  raised for larger studies (new Tier 13 item #104).
+- `carp-portal`'s feature completeness and documentation relative to competitors' dashboards (new
+  Tier 13 item #105).
+- Avicenna Research's pricing and developer-API status (unresolved-questions #89/#90 — re-confirmed
+  unresolved, not newly raised).
+- SOC 2 and 21 CFR Part 11 status for every platform in the module, including the two (Avicenna
+  Research, m-Path) that now have other compliance evidence.
+
+### Sources or documentation that were unavailable
+
+- `beiwe.org/beiwe-service-center-overview/` — returned a connection error (`ECONNRESET`) on first
+  attempt; a retry of the equivalent `hsph.harvard.edu` overview URL succeeded, so this is recorded as
+  a transient fetch failure rather than a confirmed access barrier.
+- `github.com/onnela-lab/beiwe-backend/tree/main/api` — HTTP 404 (the `data_access_api_reference`
+  directory's exact path/contents were not located via this specific URL guess).
+- `jponnela.com/bf20/` (Forest documentation site) — HTTP 404.
+- `github.com/cph-cachet` — HTTP 404 (wrong org name; the correct CARP organization is `carp-dk`,
+  which was successfully fetched).
+- Avicenna Research's own pricing page — not located by URL guess or search; likely does not exist
+  publicly rather than being blocked.
+- RADAR-base's iOS-vs-Android sensor comparison chart, referenced but not extracted from
+  `radar-base.org/docs/4048-2/`.
+- `carp-portal` repository's own README/contents — existence confirmed via the org listing; contents
+  not opened this session.
+
+### Decisions that could affect later comparisons
+
+1. **The module-level claim "commercial pricing is almost universally non-public" no longer holds.**
+   After this pass, only Avicenna Research and MetricWire lack public pricing; Beiwe, m-Path, and (for
+   the managed-hosting path specifically) RADAR-base-via-The-Hyve all now have some level of published
+   pricing, ranging from itemized (m-Path) to rate-figures-published (Beiwe) to offering-confirmed-but-
+   unpriced (RADAR-base). `README.md` and `comparison-matrix.md` were updated accordingly.
+2. **The module-level claim "no platform has documented compliance evidence" no longer holds.**
+   Avicenna Research (ISO 27001:2022, audited) and m-Path (vendor-stated GDPR/HIPAA compliance) both
+   now have some compliance evidence, though of different strength — this distinction (audited
+   certification vs. vendor self-declaration) is preserved explicitly in both profiles and the
+   comparison matrix rather than being flattened into a single "compliant" label.
+3. **RADAR-base joins AWARE Framework as a platform with a self-documented (not merely assumed)
+   iOS/Android sensor-availability gap.** Any future study-design guidance drawing on this module
+   should weight RADAR-base's iOS suitability accordingly, alongside AWARE's already-Verified,
+   more granularly quantified gap.
+4. **CARP Mobile Sensing's "pure library, build everything yourself" characterization is now
+   qualified, not overturned.** The discovery of `carp-portal` means CARP should no longer be
+   described as having zero researcher-dashboard tooling, but its comparison-matrix cells reflect
+   "exists, depth unconfirmed" rather than promoting it to parity with mature commercial dashboards
+   without further verification.
+5. **All eight Module 2 platforms have now had at least one direct-source-fetch pass on primary
+   vendor/maintainer materials**, closing the module-wide gap where five of eight profiles rested
+   substantially on search-summary retrieval. `README.md`'s status line was updated from "single
+   session, not yet a second pass" to reflect two-pass-equivalent depth across the module, mirroring
+   Module 1's stated two-pass status.
+
+---
+
+## 2026-08-25 (earlier) — Dial et al. 2025 full-text extraction (unresolved-question #80)
+
+**Module:** 1 — Wearables
+**Scope:** Closed the one remaining actionable item from the prior literature-library retrofit pass:
+full-text read of Dial et al. 2025 (*Physiological Reports* 13:e70527), the only found Oura-vs-WHOOP
+head-to-head validation study. The PDF was already downloaded in an earlier pass but never opened —
+this pass read it directly.
+
+**Findings:**
+- **Funding/COI confirmed clean.** "Financially supported by the Air Force Research Laboratory
+  (AFRL)." "The authors declare that they have no competing interests." No wearable-vendor funding —
+  among the strongest-provenance studies in the module. Tier upgraded from Corroborated to Verified
+  in `research-library-wearables.md` (both the Oura Tier C and WHOOP Tier C entries).
+- **Complete HRV table extracted** (previously only RHR was known): Oura Gen4 CCC=0.99
+  (MAPE 5.96±5.12%), Oura Gen3 CCC=0.97 (MAPE 7.15±5.48%), WHOOP 4.0 CCC=0.94 (MAPE 8.17±10.49%),
+  Garmin Fenix 6 CCC=0.87 (MAPE 10.52±8.63%), Polar Grit X Pro CCC=0.82 (MAPE 16.32±24.39%).
+- Confirmed why Garmin is excluded from the RHR comparison specifically (not HRV): its reported
+  30-minute rolling-window RHR carries no timestamp, so night-to-night alignment with the Polar H10
+  ECG reference is not possible — a methodological artifact of Garmin's own reporting, not a study
+  design choice.
+- `validation-evidence.md` §3a, `research-library-wearables.md` (two entries + two follow-up-list
+  items marked done), `literature-library.md`, and `unresolved-questions.md` #80 all updated to
+  reflect the resolution.
+
+**Also checked:** retried the Harms 2018 NAIA-baseball dissertation (unresolved-question #99) via
+its DigitalCommons URL — still returns HTTP 403. Left as-is; low-priority grey literature requiring
+institutional ProQuest access this project doesn't have.
+
+**Decisions that could affect later comparisons:** None to the cross-device conclusions already in
+`comparison-matrix.md` — Oura still leads both RHR and HRV agreement, WHOOP is consistently
+mid-pack, Garmin/Polar trail. This pass adds the missing evidentiary backing (full HRV table,
+confirmed independence) rather than changing the ranking itself.
+
+---
+
 ## 2026-08-24 — Retry of unresolved-question #98 (three blocked-but-OA papers)
 
 **Module:** 1 — Wearables (literature library follow-up)
