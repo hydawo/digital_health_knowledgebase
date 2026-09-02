@@ -30,6 +30,8 @@ documentation and platform capability alone can't show?
 | [`_inventory-and-scope-decisions.md`](_inventory-and-scope-decisions.md) | How the study universe was searched, what was screened out and why, known biases in the discovery method. |
 | [`_onnela-module3-candidates.md`](_onnela-module3-candidates.md) | 27 triaged candidates from the Onnela Lab publication sweep, ranked, not yet profiled. |
 | [`sources.md`](sources.md) | Consolidated source list with retrieval status. |
+| [`_scan-queue.md`](_scan-queue.md) | **Candidates awaiting a profile.** Fed by the weekly scan routine; also carries the unbuilt backlog from the manual discovery passes. |
+| [`literature-index.json`](literature-index.json) | Dedup ledger for the weekly scan — 55 profiled studies plus recorded rejections. |
 | [`literature/`](literature/) | Open-access PDFs. Five baseline studies are XML-extract only — see `sources.md`. |
 
 ## The ten findings that matter most
@@ -250,6 +252,14 @@ Findings from the 21 new profiles that change what the module says:
    number in this module is pre-2024.
 4. Decide on Module 1/2 expansion for the technologies surfaced here but unprofiled: **Dreem, Fibaro,
    CANedge, Connecare, movisensXS, Ilumivu mEMA**.
-5. Once a baseline exists, consider wiring this module into the weekly literature-scan routine using
-   the same `*-index.json` dedup-ledger pattern as Modules 1 and 2 (`CLAUDE.md` explicitly says not
-   to do this before the baseline exists — it now does).
+5. ~~Wire this module into the weekly literature-scan routine.~~ **Repo side done 2026-09-02** —
+   ledger seeded with all 55 profiled studies, queue created, and the routine specification recorded
+   in [`../shared/weekly-literature-scan.md`](../shared/weekly-literature-scan.md).
+   **One manual step remains and only the account owner can do it:** paste the Module 3 section from
+   that file into the routine's prompt in the claude.ai Routines UI. The routine is a cloud Routine,
+   not a local task, so its prompt cannot be edited from a repo session.
+
+   Note the deliberate asymmetry: **the routine triages Module 3, it does not write it.** Modules 1
+   and 2 catalogue papers *about* a technology, which is safely automatable from abstracts. Module 3
+   asserts *what happened in a deployment*, which is not — every figure in its 55 profiles came from
+   full text.

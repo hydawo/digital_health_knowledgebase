@@ -1,0 +1,508 @@
+{
+ "schema": "module-03-applied-studies literature scan dedup ledger, v1",
+ "purpose": "Prevent the weekly literature-scan routine from re-surfacing studies already profiled, or already triaged and rejected, in Module 3.",
+ "notes": "'rejected' holds studies the routine or a human pass screened in but deliberately did not profile (out of scope, unobtainable full text, duplicate cohort). Record the reason so the same paper is not re-litigated weekly.",
+ "dois_seen": [
+  "10.1001/jamanetworkopen.2021.0591",
+  "10.1016/j.dadr.2024.100314",
+  "10.1016/j.ijchp.2025.100618",
+  "10.1016/j.jpsychires.2021.04.022",
+  "10.1016/j.scog.2019.100144",
+  "10.1016/j.wneu.2019.01.297",
+  "10.1038/s41537-023-00332-5",
+  "10.1038/s41537-025-00660-8",
+  "10.1038/s41591-022-02012-w",
+  "10.1038/s41598-021-94516-7",
+  "10.1038/s41598-022-25949-x",
+  "10.1038/s41598-026-41435-0",
+  "10.1038/s41746-023-00749-3",
+  "10.1038/s41746-023-00778-y",
+  "10.1038/s41746-024-01035-6",
+  "10.1038/s44400-025-00023-1",
+  "10.1080/10543406.2022.2080698",
+  "10.1093/geroni/igag007",
+  "10.1093/sleep/zsaf156",
+  "10.1097/hc9.0000000000000329",
+  "10.1097/phm.0000000000001506",
+  "10.1111/jora.70118",
+  "10.1161/circulationaha.122.060291",
+  "10.1177/10731911231216053",
+  "10.1177/20552076241238133",
+  "10.1177/20552076251330509",
+  "10.1186/s12888-022-03753-1",
+  "10.1186/s12904-025-01794-3",
+  "10.1186/s12984-024-01514-7",
+  "10.1186/s44247-024-00116-6",
+  "10.1200/cci.17.00149",
+  "10.1245/s10434-020-08705-1",
+  "10.1371/journal.pdig.0000883",
+  "10.1371/journal.pone.0330204",
+  "10.2196/29510",
+  "10.2196/31877",
+  "10.2196/39862",
+  "10.2196/42866",
+  "10.2196/43296",
+  "10.2196/55170",
+  "10.2196/57347",
+  "10.2196/63622",
+  "10.2196/64955",
+  "10.2196/67964",
+  "10.2196/70528",
+  "10.2196/71375",
+  "10.2196/76991",
+  "10.2196/77512",
+  "10.2196/78098",
+  "10.2196/78204",
+  "10.2196/84618",
+  "10.2196/86049",
+  "10.2196/mhealth.8292",
+  "10.3389/fpain.2024.1327859",
+  "10.3389/fpsyt.2026.1744947"
+ ],
+ "pmcids_seen": [
+  "PMC10031448",
+  "PMC10196900",
+  "PMC10869590",
+  "PMC10902386",
+  "PMC10984664",
+  "PMC11005503",
+  "PMC11292966",
+  "PMC11390910",
+  "PMC11512133",
+  "PMC11662782",
+  "PMC11668979",
+  "PMC11759552",
+  "PMC11890149",
+  "PMC12034961",
+  "PMC12126900",
+  "PMC12174877",
+  "PMC12212497",
+  "PMC12310073",
+  "PMC12342249",
+  "PMC12407220",
+  "PMC12492036",
+  "PMC12515602",
+  "PMC12518887",
+  "PMC12612639",
+  "PMC12660878",
+  "PMC12700335",
+  "PMC12783947",
+  "PMC12880589",
+  "PMC12995428",
+  "PMC13003599",
+  "PMC13022485",
+  "PMC13118141",
+  "PMC13282599",
+  "PMC13340901",
+  "PMC6234334",
+  "PMC6476810",
+  "PMC6556148",
+  "PMC6706326",
+  "PMC7680265",
+  "PMC7752881",
+  "PMC7944382",
+  "PMC8192468",
+  "PMC8322366",
+  "PMC8857693",
+  "PMC8860359",
+  "PMC9034431",
+  "PMC9378511",
+  "PMC9640290",
+  "PMC9671804",
+  "PMC9741649",
+  "PMC9880926",
+  "PMC9906314",
+  "PMC9938183",
+  "PMC9987377"
+ ],
+ "last_run_date": null,
+ "runs": [],
+ "records": [
+  {
+   "doi": "10.1186/s12984-024-01514-7",
+   "pmcid": "PMC11662782",
+   "slug": "actigraph-als-upper-limb-wear-time",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.1038/s41591-022-02012-w",
+   "pmcid": "PMC9671804",
+   "slug": "allofus-fitbit-step-counts",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.1080/10543406.2022.2080698",
+   "pmcid": "PMC9378511",
+   "slug": "apple-heart-data-management-lessons",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.1111/jora.70118",
+   "pmcid": "PMC12783947",
+   "slug": "avicenna-adolescent-esm-school-phone-bans",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.1177/10731911231216053",
+   "pmcid": "PMC11292966",
+   "slug": "avicenna-ema-suicidal-ideation-iatrogenic",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.1016/j.dadr.2024.100314",
+   "pmcid": "PMC11759552",
+   "slug": "avicenna-smoking-youth-ema-compliance",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.1097/hc9.0000000000000329",
+   "pmcid": "PMC10984664",
+   "slug": "aware-alcohol-liver-disease-craving",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.2196/39862",
+   "pmcid": "PMC10196900",
+   "slug": "aware-binge-drinking-jitai-sensor-loss",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.2196/57347",
+   "pmcid": "PMC11668979",
+   "slug": "aware-chemotherapy-engagement",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.1177/20552076251330509",
+   "pmcid": "PMC12034961",
+   "slug": "aware-light-smartsense-d-youth-depression",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.2196/63622",
+   "pmcid": "PMC11890149",
+   "slug": "aware-momo-mood-mood-disorders",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.2196/70528",
+   "pmcid": "PMC12518887",
+   "slug": "aware-msavorus-loneliness-multidevice",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.2196/67964",
+   "pmcid": "PMC12174877",
+   "slug": "aware-msavorus-passive-completeness-companion",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.1038/s41746-024-01035-6",
+   "pmcid": "PMC10902386",
+   "slug": "aware-stand-mood-prediction-adherence",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.1038/s41746-023-00778-y",
+   "pmcid": "PMC9987377",
+   "slug": "beiwe-actigraph-modus-als-progression",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.1371/journal.pdig.0000883",
+   "pmcid": "PMC12212497",
+   "slug": "beiwe-adolescent-feasibility",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.2196/31877",
+   "pmcid": "PMC8857693",
+   "slug": "beiwe-als-adherence",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.2196/55170",
+   "pmcid": "PMC11512133",
+   "slug": "beiwe-chronic-disease-substudy",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.1200/cci.17.00149",
+   "pmcid": "PMC6556148",
+   "slug": "beiwe-fitbit-gynecologic-cancer-hope",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.1001/jamanetworkopen.2021.0591",
+   "pmcid": "PMC7944382",
+   "slug": "beiwe-inpatient-suicide-pilot",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.1038/s41598-021-94516-7",
+   "pmcid": "PMC8322366",
+   "slug": "beiwe-missing-data-sociodemographic",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.2196/71375",
+   "pmcid": "PMC12407220",
+   "slug": "beiwe-nurses-health-study-burst",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.3389/fpain.2024.1327859",
+   "pmcid": "PMC10869590",
+   "slug": "beiwe-pain-clinic-operational-report",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.1097/phm.0000000000001506",
+   "pmcid": "PMC7680265",
+   "slug": "beiwe-spinal-cord-injury-incentives",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.1016/j.wneu.2019.01.297",
+   "pmcid": "PMC6706326",
+   "slug": "beiwe-spine-disease-mobility",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.1186/s44247-024-00116-6",
+   "pmcid": "PMC11390910",
+   "slug": "beiwe-type-2-diabetes-feasibility",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.2196/29510",
+   "pmcid": "PMC9034431",
+   "slug": "byod-demographic-imbalance",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.2196/43296",
+   "pmcid": "PMC10031448",
+   "slug": "carp-mpath-sense-performance-study",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.2196/86049",
+   "pmcid": "PMC13340901",
+   "slug": "connect-multi-wearable-psychosis",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.1016/j.jpsychires.2021.04.022",
+   "pmcid": "PMC8192468",
+   "slug": "dp-schizophrenia-tolerability",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.1038/s41598-022-25949-x",
+   "pmcid": "PMC9741649",
+   "slug": "empatica-epilepsy-data-quality",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.1161/circulationaha.122.060291",
+   "pmcid": "PMC9640290",
+   "slug": "fitbit-heart-study-afib",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.2196/76991",
+   "pmcid": "PMC13282599",
+   "slug": "garmin-low-income-physical-activity",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.1016/j.scog.2019.100144",
+   "pmcid": "PMC6476810",
+   "slug": "lamp-schizophrenia-cognition-unpaid",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.2196/77512",
+   "pmcid": "PMC12612639",
+   "slug": "metricwire-fraudulent-participation",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.3389/fpsyt.2026.1744947",
+   "pmcid": "PMC13003599",
+   "slug": "metricwire-post-discharge-ema-reactivity",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.1371/journal.pone.0330204",
+   "pmcid": "PMC12342249",
+   "slug": "metricwire-sgm-youth-ema-feasibility",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.1038/s41537-025-00660-8",
+   "pmcid": "PMC12660878",
+   "slug": "mindlamp-global-cognitive-multisite",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.1038/s41598-026-41435-0",
+   "pmcid": "PMC13022485",
+   "slug": "mindlamp-linc-passive-data-quality",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.1038/s41537-023-00332-5",
+   "pmcid": "PMC9880926",
+   "slug": "mindlamp-relapse-3site",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.1186/s12904-025-01794-3",
+   "pmcid": "PMC12126900",
+   "slug": "movesense-palliative-support-trial",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.2196/78204",
+   "pmcid": "PMC12700335",
+   "slug": "mpath-avatar2-esm-engagement",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.1038/s44400-025-00023-1",
+   "pmcid": null,
+   "slug": "mpath-dementia-esm-feasibility",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.1016/j.ijchp.2025.100618",
+   "pmcid": "PMC12492036",
+   "slug": "mpath-nssi-ema-benefits-challenges",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.1093/sleep/zsaf156",
+   "pmcid": "PMC12515602",
+   "slug": "oura-university-freshmen-sleep",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.1177/20552076241238133",
+   "pmcid": "PMC11005503",
+   "slug": "radar-ad-feasibility-usability",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.2196/42866",
+   "pmcid": "PMC9906314",
+   "slug": "radar-base-treatment-engagement",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.1038/s41746-023-00749-3",
+   "pmcid": "PMC9938183",
+   "slug": "radar-mdd-longterm-engagement",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.1186/s12888-022-03753-1",
+   "pmcid": "PMC8860359",
+   "slug": "radar-mdd-recruitment-retention",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.2196/78098",
+   "pmcid": "PMC12880589",
+   "slug": "samsung-palliative-pain-ecuador",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.1093/geroni/igag007",
+   "pmcid": "PMC12995428",
+   "slug": "sensorkit-techsans-older-adults",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.2196/mhealth.8292",
+   "pmcid": "PMC6234334",
+   "slug": "sleepsight-schizophrenia-rest-activity",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.2196/84618",
+   "pmcid": "PMC13118141",
+   "slug": "vpn-network-traffic-phenotyping",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.2196/64955",
+   "pmcid": "PMC12310073",
+   "slug": "whoop-mental-health-survey-engagement",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  },
+  {
+   "doi": "10.1245/s10434-020-08705-1",
+   "pmcid": "PMC7752881",
+   "slug": "withings-postop-remote-monitoring",
+   "profiled": true,
+   "source": "module-03-initial-build-2026-08-31-to-09-02"
+  }
+ ],
+ "rejected": []
+}

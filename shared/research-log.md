@@ -1843,3 +1843,71 @@ therefore unverified. Tier 16 Q118.
   Beiwe.
 - **Still open:** no head-to-head comparison of Beiwe, mindLAMP and RADAR-base (unchanged), and the
   AWARE set is entirely US or Finnish.
+
+---
+
+## 2026-09-02 (later still) — Module 3 wired into the weekly literature-scan routine
+
+**Module:** Cross-module infrastructure. No profile, matrix or library content changed.
+
+### What was done
+
+`CLAUDE.md`'s Future automation note gated Module 3's inclusion in the weekly scan on "once this
+module has an initial baseline of profiles". That baseline now exists (55 profiles), so the module
+was wired in.
+
+**Created:**
+
+- `module-03-applied-studies/literature-index.json` — dedup ledger following the Module 1/2
+  `*-index.json` pattern, **seeded with all 55 profiled studies** (55 DOIs, 54 PMCIDs) so the routine
+  never re-surfaces them. Adds a `rejected` array not present in the other two ledgers.
+- `module-03-applied-studies/_scan-queue.md` — append-only candidate queue, also carrying the unbuilt
+  backlog from the three manual discovery passes so there is one place to look for "what's next".
+- **`shared/weekly-literature-scan.md`** — the routine's specification and configuration, including a
+  paste-ready Module 3 prompt section.
+
+**Updated:** `CLAUDE.md`'s Future automation note (now records the wiring and the triage-only rule),
+and `module-03-applied-studies/README.md`.
+
+### Why a separate spec file exists
+
+The routine is a **claude.ai/code Routine (cloud), not a locally-scheduled task**, so its prompt
+lives only in the claude.ai UI and is **invisible to anyone working in this repository**. That had
+already caused confusion once — the 2026-08-31 session found the routine failing but could not
+inspect what it was meant to do. `shared/weekly-literature-scan.md` is now the canonical
+version-controlled copy; it must be updated in the same change whenever the UI prompt is edited.
+
+### Design decisions
+
+1. **The routine triages Module 3; it does not write it.** This is the significant asymmetry with
+   Modules 1 and 2, and it is deliberate. Those modules catalogue *papers about a technology*, which
+   is safely automatable from abstracts. Module 3 asserts *what happened in a deployment*, which is
+   not: every figure in its 55 profiles came from full text, and the two discovery passes that
+   screened on abstracts alone produced **three wrong platform attributions out of the first ~12
+   candidates examined**. An unattended, no-confirmation run holding push access to a **public** repo
+   must not be able to write unverified study claims into it. It appends to `_scan-queue.md` and is
+   explicitly forbidden from touching `profiles/`, `feasibility-matrix.md`, `README.md` or
+   `sources.md`.
+2. **Date-sorted, never citation-sorted** — established empirically this session: the original
+   citation-sorted pass missed **62 of 64** recent candidates.
+3. **Rejections are recorded with a reason**, not merely excluded, or the same out-of-scope paper is
+   re-litigated every Monday.
+4. **The queue is a repo file, not a message** — it survives between runs and is reviewable in a diff.
+5. **Known false-positive traps written into the prompt**: Polar, Avicenna, AWARE, CARP, m-Path, Oura,
+   Samsung — including the finding that **Europe PMC does not honour phrase quoting** for the
+   ordinary-word names.
+
+### Outstanding — requires the account owner
+
+**The routine's prompt itself has not been changed**, and cannot be from a repo session. Someone with
+access to the claude.ai Routines UI must paste the Module 3 section from
+`shared/weekly-literature-scan.md` into the existing routine prompt. Until that happens the ledger
+and queue sit unused; nothing breaks, and Modules 1 and 2 continue scanning as before.
+
+### Known limitations carried into the routine
+
+The three structural discovery blind spots apply to it exactly as to manual passes — ordinary-word
+platform names, framework-shaped platforms (CARP), and venue-shaped invisibility (AWARE's operational
+literature sits in CSCW/IMWUT/UbiComp, which NCBI does not index). The known workaround is a periodic
+**OpenAlex citation-graph pass**, which is deliberately **not** part of the weekly routine and must be
+run manually.

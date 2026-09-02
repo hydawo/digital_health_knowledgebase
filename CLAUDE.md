@@ -965,12 +965,20 @@ exactly, with two Module 3-specific notes:
 
 ## Future automation note
 
-Once this module has an initial baseline of profiles, it is a candidate for
-inclusion in the same automated weekly literature-scan routine that already
-covers Modules 1 and 2 (see `shared/research-log.md`, 2026-09-01 entries),
-following the same `*-index.json` dedup-ledger pattern. Do not wire it into
-that routine before the baseline exists — the routine appends
-incrementally, it doesn't do initial discovery.
+**Status: wired in, 2026-09-02.** The baseline now exists (55 profiles), and the
+repo-side work is done — `module-03-applied-studies/literature-index.json`
+(dedup ledger, seeded with all 55) and `_scan-queue.md` (candidate queue).
+The routine specification, including the paste-ready Module 3 prompt section,
+is version-controlled at **`shared/weekly-literature-scan.md`** — read that
+before changing anything about the scan.
+
+**One deliberate difference from Modules 1 and 2: the routine triages Module 3,
+it does not write it.** It appends candidates to `_scan-queue.md` and must never
+create or edit a file under `module-03-applied-studies/profiles/`. Modules 1
+and 2 catalogue papers *about* a technology, which is safely automatable from
+abstracts; Module 3 asserts *what happened in a deployment*, which is not.
+Every figure in its profiles came from full text, and abstract-level screening
+in this project has a measured platform-misattribution rate of roughly 3 in 12.
 
 ------------------------------------------------------------------------
 
