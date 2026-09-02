@@ -13,6 +13,27 @@
 | Funding/COI | Academic (UC Irvine). **AWARE deployment and mSavorUs are attributed in-text to co-author Amir Rahmani ("developed by AR")** — a developer-author relationship on both the intervention and the sensing stack. |
 | Last verified | 2026-09-01 |
 
+
+> ### ⚠️ Same cohort as `aware-msavorus-passive-completeness-companion.md`
+>
+> **Added 2026-09-02.** [Borelli et al. 2025](aware-msavorus-passive-completeness-companion.md)
+> (*JMIR Formative Research*, 10.2196/67964) reports **the same 37-participant mSavorUs deployment**
+> from a different analytic angle — passive-data completeness and depression detection rather than the
+> loneliness intervention. **Verified:** identical enrolment (37), identical device set, identical
+> three-phase design, 13 Latinx/Latine participants in both, and nine shared authors; Borelli cites the
+> Nguyen manuscript as then-unpublished.
+>
+> **These are two reports of one deployment, not two deployments.** `feasibility-matrix.md` carries a
+> **single row** for the pair. Do not count them as independent replications.
+>
+> **Unresolved contradiction between the two papers — recorded, not resolved.** Nguyen states
+> enrolment "between late January and early February of **2021**" over **22 weeks**; Borelli states
+> enrolment "between January and February of **2022**" over **≥19 weeks (4.5 months)**. Analytic N
+> also differs (29 vs 28 from the same 37). One paper carries a year typo and this pass cannot
+> determine which. **The year is not cosmetic:** 2021 places the study inside heavy California COVID-19
+> restrictions, 2022 in post-Omicron reopening — materially different context for a study of loneliness
+> and social connection. Treat every date-dependent inference from this cohort as **Unclear** pending
+> author clarification. Logged as Tier 16 Q117.
 ## Summary
 
 This module's **first entry covering either Oura or Samsung**, and its longest multi-device consumer-wearable deployment at 22 weeks — an unusually demanding instrument load (ring + smartwatch + two study apps + the vendors' own apps) carried by a young, ethnically diverse, non-clinical cohort.

@@ -1,6 +1,6 @@
 # Module 3 — Feasibility Matrix
 
-**Last updated: 2026-09-02.** **50 studies.** One row per study. This is the resource a future study team should read
+**Last updated: 2026-09-02.** **55 profiles / 54 distinct deployments** (two profiles report one cohort — see Part D). One row per study. This is the resource a future study team should read
 first: who else tried this device/platform combination, at what scale, for how long, and did it hold
 up.
 
@@ -174,6 +174,25 @@ citation counts, not deployment frequency.
 
 ---
 
+# Part D — AWARE coverage set (5 profiles, 2026-09-02)
+
+Built from a dedicated OpenAlex pass over the **425 papers citing the AWARE anchor** (Ferreira,
+Kostakos & Dey 2015) since 2016. **All five verified from full text as genuine AWARE deployments** —
+none was a background-citation misattribution — though two used modified builds (see notes).
+
+## Table 8 — AWARE set
+
+| Study | N | Duration | Headline operational number |
+|---|---|---|---|
+| [Wu 2023 — alcohol-associated liver disease](profiles/aware-alcohol-liver-disease-craving.md) | 163 → 24 → **12** | 30 d | **5 of 12 non-completers withdrew citing AWARE technical problems** (incl. one installation failure) vs 2 losing interest — the most explicit app-attributed dropout in the module |
+| [Aledavood 2024 — MoMo-Mood](profiles/aware-momo-mood-mood-disorders.md) | 164 → **151** | up to 1 yr | **Passive missingness 1.2% (controls) → 20.4% (BPD)** inside one study, one platform, one config. A **17× spread** — platform-level completeness figures for mixed cohorts are close to meaningless. AWARE **modified by the authors** (NIIMA/Niimpy) |
+| [Balliu 2024 — STAND](profiles/aware-stand-mood-prediction-adherence.md) | 437 → **183** | up to 40 wk | **1.7% vs 33.5–37.3% two-week attrition** — in-person clinical care vs online support, with the *sicker* arm retaining **better**. Mechanism: missed assessments reconciled during routine visits |
+| [Borelli 2025 — mSavorUs completeness](profiles/aware-msavorus-passive-completeness-companion.md) | 37 → **28** | ≥19 wk | **Provisioned wearables beat the BYOD phone: 11% missing (Oura + Samsung) vs 16% (AWARE smartphone)** — same people, same months. ⚠️ **Same cohort as the mSavorUs row in Part B** — one deployment, two reports |
+| [Bae 2023 — binge-drinking JITAI](profiles/aware-binge-drinking-jitai-sensor-loss.md) | **75** | 14 wk | **35.4% of person-days unusable (414/1,168)** — participants disabled GPS via the settings menu after being told sensors were configurable. A **new data-loss class: participant-exercised configurability** |
+
+
+---
+
 # Cross-cutting patterns
 
 Findings that replicate across **three or more independent studies** are the most trustworthy content
@@ -194,6 +213,12 @@ in this module.
    matters**: baseline *anxiety* did predict attrition (de Angel), as did *negative* symptoms
    (Meyer, Raugh) and time-varying depression severity (Zhang).
 4. **OS asymmetry is STREAM-SPECIFIC before it is platform-specific.** This supersedes the earlier "direction not settled" framing. [McInerney 2024](profiles/beiwe-type-2-diabetes-feasibility.md) — a **Beiwe** study, the platform whose prior work favoured iOS — stratified by stream within one cohort and found **iPhones missing 70.0%/70.6% of morning/evening EMA vs Android's 21.3%/26.8% (p<0.001), while accelerometer and GPS showed no significant OS association in the same participants.** That reconciles the apparent contradiction: the earlier iOS-favouring results (Kiang, Yi) measured *passive* streams; the Android-favouring ones measured *active survey delivery*. **Never state an OS effect without naming the stream.** Mechanism unidentified — see Tier 15 Q111/Q111b.
+
+    **Refined 2026-09-02 — there are three distinct kinds of OS effect, not one:**
+    (a) **Structural gates** — the stream is unavailable on one OS at all. [Balliu 2024](profiles/aware-stand-mood-prediction-adherence.md) could compute SMS features for only **15 of 183 participants (8.2%)** because iOS does not expose them. There is no mitigation; the choice is binary.
+    (b) **Yield differences** — same stream, different completeness. [McInerney 2024](profiles/beiwe-type-2-diabetes-feasibility.md)'s 70% vs 21% EMA miss rate.
+    (c) **Breadth differences** — how many stream *types* arrive. [Wu 2023](profiles/aware-alcohol-liver-disease-craving.md) found Android delivering **8.4 vs iOS 4.7 mean sensor types** — Android ahead on breadth, the opposite direction to McInerney's yield finding, **on the same framework**.
+    Note also that several dual-platform studies here report **no** OS breakdown at all, which is now a visible reporting gap.
 
 4b. **Superseded framing, retained for provenance:** this matrix previously asserted "iOS outperforms Android", then "direction not settled".
    Three Beiwe studies favour iOS: Kiang (GPS non-collection RR 0.66), Yi 2024 (57.3% vs 50.2%
@@ -246,7 +271,11 @@ in this module.
 
 13. **Support raises completion; payment raises persistence; neither raises engagement with interactive content — and interactive content is the component that stratifies demographically.** Reconciles [Dewitte's](profiles/mpath-dementia-esm-feasibility.md) unpaid 80% in dementia, [Shen's](profiles/sensorkit-techsans-older-adults.md) uncompensated withdrawal, and [Carlson's](profiles/garmin-low-income-physical-activity.md) paid-but-demographically-stratified reply rates.
 
-14. **Remote incentivised studies attract fraud, and platform metadata can catch it.**
+14. **Research-infrastructure failure is a distinct data-loss class — and it is the one self-hosting owns.** Not device failure, not OS restriction, not participant behaviour: the *study's own* servers and network. [Borelli 2025](profiles/aware-msavorus-passive-completeness-companion.md) lost data to server congestion; [Bae 2023](profiles/aware-binge-drinking-jitai-sensor-loss.md) to Wi-Fi-gated upload; [Aledavood 2024](profiles/aware-momo-mood-mood-disorders.md) provisioned a **router per participant** to avoid it. Three independent studies clear the bar for a pattern. **This is a direct input to the self-host-vs-SaaS decision in Module 2** — a cost that moves to the vendor under SaaS and stays with the team under self-hosting.
+
+15. **Participant-exercised configurability is its own data-loss class.** [Bae 2023](profiles/aware-binge-drinking-jitai-sensor-loss.md) lost **35.4% of person-days** because participants, having been told the sensors were configurable, turned GPS off in the settings menu. Telling participants they are in control is ethically right and operationally expensive; budget for it rather than being surprised.
+
+16. **Remote incentivised studies attract fraud, and platform metadata can catch it.**
     [Siebers 2025](profiles/metricwire-fraudulent-participation.md) is the only study here addressing
     an adversarial failure mode — MetricWire's carrier-country field unmasked 10 fraudulent
     participants; a manual checklist later blocked 37.

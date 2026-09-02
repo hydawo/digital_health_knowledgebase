@@ -1,6 +1,6 @@
 # Module 3 — Applied Wearables and Digital Phenotyping Studies
 
-**Status:** **50 study profiles** (2026-09-02). Baseline of 19 (2026-08-31) plus a 21-study
+**Status:** **55 study profiles / 54 distinct deployments** (2026-09-02). Two profiles report one cohort. Baseline of 19 (2026-08-31) plus a 21-study
 extension built in two parallel passes — a platform-coverage pass and an Onnela-tranche pass.
 
 ## What this module is
@@ -22,7 +22,7 @@ documentation and platform capability alone can't show?
 | File | What it's for |
 |---|---|
 | **[`feasibility-matrix.md`](feasibility-matrix.md)** | **The main resource.** Three tables — scale/duration/retention, completeness/wear time, and a one-line takeaway per study — plus cross-cutting patterns and an important warning about non-standardised definitions. |
-| [`profiles/`](profiles/) | One deep profile per study (**50**). |
+| [`profiles/`](profiles/) | One deep profile per study (**55**). |
 | [`_citation-graph-scan-2026-09.md`](_citation-graph-scan-2026-09.md) | OpenAlex citation-graph discovery — finds deployments that cite a platform's methods paper without naming it. Confirms the CARP null by a second, independent method. |
 | [`_recency-scan-2026-09.md`](_recency-scan-2026-09.md) | Date-sorted discovery pass. Shows the citation-sorted baseline missed **62 of 64** recent candidates, and corrects two of its own conclusions. |
 | [`_uncovered-platforms-report.md`](_uncovered-platforms-report.md) | The AWARE / Avicenna / MetricWire / m-Path / CARP coverage pass. |
@@ -74,7 +74,7 @@ Drawn across the whole baseline. Each links to the profile that establishes it.
 
 ## What's covered
 
-**Module 2 platforms — all eight covered:** Beiwe (12), RADAR-base (4), mindLAMP/LAMP (5), **AWARE (3)**,
+**Module 2 platforms — all eight covered:** Beiwe (12), **AWARE (8 profiles / 7 deployments)**, mindLAMP/LAMP (5), RADAR-base (4),
 **Avicenna/Ethica (3)**, **MetricWire (3)**, **m-Path (3)**, **CARP (1)**. Plus movisensXS, Ilumivu mEMA,
 Purple Robot and now **LifeData** in mixed designs.
 
@@ -110,7 +110,13 @@ Recorded honestly, because the gaps shape what conclusions this module can suppo
   predates the platform's `heartbeat` feature** (newest collection window closes 2023). The module's
   Beiwe evidence is simultaneously its largest and its most systematically dated. Each affected
   profile carries a pre-heartbeat lower-bound label.
-- **Discovery method has two structural blind spots**, both found the hard way:
+- **Discovery method has three structural blind spots**, all found the hard way. **(c) Venue-shaped
+  invisibility:** a platform's deployment-reality literature can sit outside the biomedical indexes
+  this module searches. AWARE's operational papers live in CSCW/IMWUT/UbiComp — and the single
+  best-matched AWARE candidate found (`10.1145/3711043`, "Participant Engagement and Data Quality")
+  **could not be obtained in full text at all**: ACM DL serves a challenge page, no preprint exists,
+  and it is not in PMC. It was left unprofiled rather than written from its abstract.
+- The first two blind spots:
   **(a)** platform-name search cannot filter platforms whose name is an ordinary English word
   (Europe PMC ignores phrase quoting for "AWARE", so date-sorted results were pure noise);
   **(b)** it cannot find *framework-shaped* platforms at all — CARP is a library embedded in other
@@ -190,6 +196,33 @@ Findings from the 21 new profiles that change what the module says:
 22. **Support raises completion; payment raises persistence; neither raises engagement with
     interactive content** — and interactive content is the component that stratifies demographically.
 
+## Additions from the 2026-09-02 AWARE pass
+
+23. **There are three kinds of OS effect, not one** — this refines #17. **Structural gates** (iOS does
+    not expose SMS at all: features computable for **15 of 183 participants, 8.2%**), **yield
+    differences** (70% vs 21% EMA miss), and **breadth differences** (Android delivered **8.4 vs iOS
+    4.7 mean sensor types** — the opposite direction to the yield finding, on the same framework).
+    → [Balliu 2024](profiles/aware-stand-mood-prediction-adherence.md),
+    [Wu 2023](profiles/aware-alcohol-liver-disease-craving.md)
+24. **A single platform's completeness figure is close to meaningless for a mixed cohort.** Within one
+    study, one platform and one configuration, passive missingness ranged **1.2% (controls) to 20.4%
+    (borderline personality disorder)** — a **17× spread by diagnosis**.
+    → [Aledavood 2024](profiles/aware-momo-mood-mood-disorders.md)
+25. **Care setting beats clinical severity for retention.** **1.7% vs 33.5–37.3% two-week attrition**
+    between in-person clinical care and online support — with the *sicker* arm retaining better,
+    because missed assessments were reconciled during routine visits.
+    → [Balliu 2024](profiles/aware-stand-mood-prediction-adherence.md)
+26. **Research-infrastructure failure is a distinct data-loss class, and self-hosting owns it.** Server
+    congestion, Wi-Fi-gated upload, and one study provisioning **a router per participant**. Three
+    independent studies. A direct input to the self-host-vs-SaaS decision in Module 2.
+27. **Participant-exercised configurability costs data.** **35.4% of person-days unusable** because
+    participants, told the sensors were configurable, switched GPS off.
+    → [Bae 2023](profiles/aware-binge-drinking-jitai-sensor-loss.md)
+28. **A second clean exception to #2 (passive outlasts active).** In one cohort *"all participants
+    supplied AWARE data every day that they responded to EMAs"* — 29.2% supplied zero EMAs and 12.5%
+    zero sensor data. **Passive and active did not decouple at all.**
+    → [Wu 2023](profiles/aware-alcohol-liver-disease-craving.md)
+
 ## Recommended next steps
 
 1. ~~Re-run discovery sorted by **date**.~~ **Done** — [`_recency-scan-2026-09.md`](_recency-scan-2026-09.md).
@@ -203,7 +236,11 @@ Findings from the 21 new profiles that change what the module says:
    [`_citation-graph-scan-2026-09.md`](_citation-graph-scan-2026-09.md). 71 candidates; confirmed the
    CARP null by a second independent method; **3 of the first ~12 candidates were mis-attributed to
    the wrong platform**, so treat its attributions as Reported until full-text-checked.
-7. **AWARE is now the least-served covered platform** — 7 unbuilt candidates. Top of the next pass.
+7. ~~**AWARE is the least-served covered platform.**~~ **Addressed** — 5 profiles added, and the
+   "7 unbuilt candidates" figure did not survive inspection (most were reviews or platform papers).
+   A dedicated pass over all **425 AWARE-citing papers** found the seam is genuinely thin: **215 had
+   zero deployment signals, 106 had one, 31 had two, only 2 had three or more.** AWARE is widely used
+   and almost never written about operationally.
 8. **Module 3 still has no head-to-head comparison of Beiwe, mindLAMP and RADAR-base.** The candidate
    that appeared to be one (Shen 2026) turned out to use none of them.
 5. **Resolve whether DiaFocus is CARP-based** — its 2025 *JMIR Diabetes* 6-month pilot is a real

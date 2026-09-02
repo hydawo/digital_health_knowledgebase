@@ -1,7 +1,7 @@
 # Module 3 — Phase 1: Inventory and Scope Decisions
 
 **Sessions:** 2026-08-31 (baseline), 2026-09-01 (extension), 2026-09-02 (recency + citation-graph).
-**Status:** **50 profiles.** The
+**Status:** **55 profiles / 54 distinct deployments.** The
 19-study baseline plus a 21-study extension — a platform-coverage pass closing the AWARE / Avicenna /
 MetricWire / m-Path / CARP gap (12 profiles) and an Onnela-tranche pass (9 profiles). 18 of the 27
 staged Onnela candidates remain unbuilt; ~30 recency candidates remain unbuilt.
@@ -228,3 +228,34 @@ other Module 2 platform now has at least one entry. Residual concerns, recorded 
    (7 unbuilt candidates); Module 3 still has **no head-to-head comparison of Beiwe, mindLAMP and
    RADAR-base** (the candidate that looked like one used none of them); no low-income-country
    deployment beyond Ecuador and India; grey literature still unsearched.
+
+9. **AWARE coverage pass, 2026-09-02** — see
+   [`_aware-build-report.md`](_aware-build-report.md). The "7 unbuilt AWARE candidates" figure carried
+   forward from the previous pass **did not survive inspection**: one was LINC (already profiled, and
+   mindLAMP not AWARE) and roughly four were reviews, platform-architecture or design papers, all
+   explicitly out of scope.
+
+   A dedicated pass over **all 425 papers citing the AWARE anchor since 2016** established the real
+   shape of the seam:
+
+   | Deployment signals in abstract | Papers |
+   |---|---|
+   | 0 | 215 |
+   | 1 | 106 |
+   | 2 | 31 |
+   | 3+ | **2** |
+   | No abstract | 68 |
+
+   **AWARE has the inverse problem to CARP.** CARP has almost no citing literature; AWARE has 425
+   citing papers that overwhelmingly *use* it as a toolkit and report findings rather than
+   deployments. Five profiles were built; all five verified from full text as genuine AWARE
+   deployments, though **two used author-modified builds** (NIIMA/Niimpy; an app "based on the AWARE
+   framework"). That derivative-build pattern means platform-level aggregation for AWARE will degrade
+   as it accumulates — a caution for any future comparison table.
+
+10. **A third structural blind spot: venue-shaped invisibility.** The best topic-matched AWARE
+    candidate (`10.1145/3711043`, "Participant Engagement and Data Quality") **could not be obtained
+    in full text at all** — ACM DL serves a challenge page, no preprint exists, it is not in PMC. It
+    was left unprofiled rather than written from its abstract. AWARE's deployment-reality literature
+    lives in CSCW/IMWUT/UbiComp, outside the biomedical indexes this module's discovery route can
+    see. Joins the two blind spots recorded at item 6.

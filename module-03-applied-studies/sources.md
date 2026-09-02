@@ -1,6 +1,6 @@
 # Module 3 — Sources
 
-**Last updated: 2026-09-02.** **50 studies** — the 19-study baseline, then a 21-study extension.
+**Last updated: 2026-09-02.** **55 profiles / 54 distinct deployments** — the 19-study baseline, then a 21-study extension.
 Per `CLAUDE.md`'s Source Management section, this consolidates citations in addition to the
 per-profile source lists.
 
@@ -11,7 +11,7 @@ per-profile source lists.
 - **XML** — no PDF obtainable; full text read from the Europe PMC or NCBI PMC XML deposit. All claims
   are still drawn from full text, not abstracts.
 
-**All 50 were read in full text** — no claim anywhere in this module rests on an abstract alone.
+**All 55 were read in full text** — no claim anywhere in this module rests on an abstract alone.
 Of the baseline 19, **14 have local PDFs; 5 do not** (recorded as Tier 14 Q110 in
 [`../shared/unresolved-questions.md`](../shared/unresolved-questions.md)). The 21 extension studies
 are all open access with PDFs on disk.
@@ -103,6 +103,27 @@ from PMC XML, so no claim rests on an abstract.
 
 ---
 
+## AWARE coverage studies (5, added 2026-09-02)
+
+From a dedicated OpenAlex pass over the 425 papers citing the AWARE anchor. **All five verified from
+full text as genuine AWARE deployments** — no background-citation misattributions — though two used
+author-modified builds (Aledavood: NIIMA/Niimpy; Bae: an app *"based on the AWARE framework"*).
+
+| # | Citation | Profile |
+|---|---|---|
+| S51 | Wu T, Sherman G, Giorgi S, Thanneeru P, Ungar LH, Kamath PS, Simonetto DA, Curtis BL, Shah VH. "Smartphone sensor data estimate alcohol craving in a cohort of patients with alcohol-associated liver disease and alcohol use disorder." *Hepatology Communications* 2023;7(12):e0329. DOI [10.1097/HC9.0000000000000329](https://doi.org/10.1097/HC9.0000000000000329). PMID 38055637 / PMC10984664. | [aware-alcohol-liver-disease-craving](profiles/aware-alcohol-liver-disease-craving.md) |
+| S52 | Aledavood T, Luong N, Baryshnikov I, Darst R, Heikkilä R, Holmén J, Ikäheimonen A, Martikkala A, Riihimäki K, Saleva O, Triana AM, Isometsä E. "Multimodal Digital Phenotyping Study in Patients With Major Depressive Episodes and Healthy Controls (Mobile Monitoring of Mood): Observational Longitudinal Study." *JMIR Mental Health* 2024;11:e63622. DOI [10.2196/63622](https://doi.org/10.2196/63622). PMID 39984168 / PMC11890149. | [aware-momo-mood-mood-disorders](profiles/aware-momo-mood-mood-disorders.md) |
+| S53 | Balliu B, Douglas C, Seok D, Shenhav L, Wu Y, Chatzopoulou D, Kaiser W, Chen V, Kim J, Deverasetty S, Arnaudova I, Gibbons R, Congdon E, Craske MG, Freimer N, Halperin E, Sankararaman S, Flint J. "Personalized mood prediction from patterns of behavior collected with smartphones." *npj Digital Medicine* 2024;7:49. DOI [10.1038/s41746-024-01035-6](https://doi.org/10.1038/s41746-024-01035-6). PMID 38418551 / PMC10902386. | [aware-stand-mood-prediction-adherence](profiles/aware-stand-mood-prediction-adherence.md) |
+| S54 | Borelli JL, Wang Y, Li FH, Russo LN, Tironi M, Yamashita K, Zhou E, Lai J, Nguyen B, Azimi I, Marcotullio C, Labbaf S, Jafarlou S, Dutt N, Rahmani A. "Detection of Depressive Symptoms in College Students Using Multimodal Passive Sensing Data and Light Gradient Boosting Machine: Longitudinal Pilot Study." *JMIR Formative Research* 2025;9:e67964. DOI [10.2196/67964](https://doi.org/10.2196/67964). PMID 40460426 / PMC12174877. | [aware-msavorus-passive-completeness-companion](profiles/aware-msavorus-passive-completeness-companion.md) |
+| S55 | Bae SW, Suffoletto B, Zhang T, Chung T, Ozolcer M, Islam MR, Dey AK. "Leveraging Mobile Phone Sensors, Machine Learning, and Explainable Artificial Intelligence to Predict Imminent Same-Day Binge-drinking Events to Support Just-in-time Adaptive Interventions: Algorithm Development and Validation Study." *JMIR Formative Research* 2023;7:e39862. DOI [10.2196/39862](https://doi.org/10.2196/39862). PMID 36809294 / PMC10196900. | [aware-binge-drinking-jitai-sensor-loss](profiles/aware-binge-drinking-jitai-sensor-loss.md) |
+
+**One candidate could not be obtained and was not written:** `10.1145/3711043` (Zhang & Poellabauer,
+*Proc. ACM HCI* 2025, "Participant Engagement and Data Quality") — the best-matched AWARE candidate
+by topic. ACM DL serves an HTML challenge, the full-HTML view 403s, no arXiv preprint exists, and it
+is not in PMC. **Platform therefore unverified — do not assume it used AWARE.**
+
+---
+
 ## Non-paper sources
 
 | Source | Establishes | Accessed |
@@ -153,4 +174,8 @@ retrofits.
 | **Wrong platform attribution ×3** — `_citation-graph-scan-2026-09.md` | Caught on full-text reading, **3 of the first ~12 candidates examined**: **Shen et al. 2026** listed as Beiwe/mindLAMP/RADAR-base ("a rare cross-platform guide") actually uses **none of them** — a bespoke iOS app on **Apple SensorKit**; **Mahmood et al. 2026** listed under Beiwe deploys **no phenotyping platform at all**; **Van der Donckt et al. 2024** listed under RADAR-base is an **Empatica E4** paper. Citation-graph discovery finds papers that *cite* a platform, and background citations are common. All corrected in that file. |
 | **Overstated contradiction** — Carlson 2026 | The profile initially read Carlson's "no individuals were ineligible because of lack of access to a smartphone" as contradicting the module's smartphone-ownership finding. **Qualified 2026-09-02:** the paper's criterion was *household-level* access ("either the participant or parent"), with youth routed to a parent's phone or household tablet — whereas Cote 2019's 42% is *individual* ownership in an adult clinic population. The finding is about protocol design removing an exclusion criterion, not about ownership ceasing to vary. |
 | **JATS parsing trap** — retrieval note | PMC's JATS `contrib-group` for **JMIR** articles lists **handling editors before authors**; naive parsing returns non-authors as the first names on the byline. Use the PDF byline as authoritative. |
+| **Duplicate cohort across two profiles** | **Nguyen et al. 2025** (`10.2196/70528`) and **Borelli et al. 2025** (`10.2196/67964`) report **the same 37-participant mSavorUs deployment** from different analytic angles. **Verified:** identical enrolment, device set and three-phase design, 13 Latinx/Latine participants in both, nine shared authors, and Borelli cites the Nguyen manuscript as then-unpublished. Both profiles retained (Borelli supplies the completeness data Nguyen names as its own gap), cross-linked, and `feasibility-matrix.md` carries **one row** for the pair. **AWARE therefore has 8 profiles but 7 independent deployments.** |
+| **Unresolved contradiction between two published papers** | Those same two papers disagree on their own enrolment year: Nguyen says "late January and early February of **2021**" over 22 weeks; Borelli says "between January and February of **2022**" over ≥19 weeks. Analytic N also differs (29 vs 28 from the same 37). **Both verified verbatim from full text.** One carries a typo; this pass cannot determine which. Not cosmetic — 2021 places the study inside heavy California COVID-19 restrictions, 2022 in post-Omicron reopening, which matters for a loneliness study. Logged as Tier 16 Q117. |
+| **JMIR byline hazard — reproduced in both orientations** | Previously recorded as "PMC lists JMIR handling editors before authors". **Refined:** the ordering is **not stable within the publisher** — Aledavood and Borelli place editors/reviewers *after* authors, while Bae places them *first* (naive parsing yields "Mavragani/Perski" as authors). **Always verify against the publisher PDF byline.** |
+| **Arithmetic error in a published paper** — Bae 2023 | Reports "489/756" where the stated components sum to 754 (122+143+489). Recorded so future readers do not re-derive it. |
 | **Uncertain device identification** — S15 | The paper describes "wrist-worn monitor" and "chest-wall ECG sensor" generically; the specific commercial models could not be confirmed from the extracted text. Flagged in the profile; **do not cite S15 as evidence about a named device**. |

@@ -1751,3 +1751,95 @@ efetch.
 - **AWARE is now the least-served covered platform** (7 unbuilt candidates), and Module 3 still has
   **no head-to-head comparison of Beiwe, mindLAMP and RADAR-base** — the candidate that appeared to be
   one used none of them.
+
+---
+
+## 2026-09-02 (later) — Module 3 AWARE coverage pass
+
+**Module:** 3 (50 → **55 profiles / 54 distinct deployments**). **Also touched:**
+`shared/unresolved-questions.md` (new Tier 16, Q117–Q119).
+
+### What was researched
+
+AWARE Framework deployments, to close the module's largest platform-coverage gap. Discovery ran as a
+dedicated OpenAlex pass over **all 425 papers citing the AWARE anchor** (Ferreira, Kostakos & Dey
+2015) since 2016.
+
+### A correction to this project's own carried-forward claim
+
+The "**7 unbuilt AWARE candidates**" figure from the previous session **did not survive inspection**.
+One was LINC (already profiled, and mindLAMP rather than AWARE); roughly four were reviews,
+platform-architecture or design papers, all out of scope. It was a loose screen, not a buildable
+queue, and it had been repeated in a status report without being checked.
+
+The real shape of the seam: of 425 citing papers, **215 have zero deployment signals, 106 have one,
+31 have two, and only 2 have three or more** (68 have no abstract). **AWARE has the inverse problem
+to CARP** — CARP has almost no citing literature; AWARE has plenty that uses it as a toolkit and
+reports findings rather than deployments.
+
+### Files created or updated
+
+Five new profiles (Wu 2023 alcohol-associated liver disease; Aledavood 2024 MoMo-Mood; Balliu 2024
+STAND; Borelli 2025 mSavorUs completeness; Bae 2023 binge-drinking JITAI) plus 5 OA PDFs and
+`_aware-build-report.md`. Integrated into `feasibility-matrix.md` (new Part D, Table 8),
+`README.md`, `sources.md`, `_inventory-and-scope-decisions.md`.
+
+### Major findings
+
+1. **There are three kinds of OS effect, not one.** This refines the stream-specific finding from
+   earlier today into: **structural gates** (iOS does not expose SMS at all — features computable for
+   only **15 of 183 participants, 8.2%**; no mitigation exists, the choice is binary), **yield
+   differences** (70% vs 21% EMA miss), and **breadth differences** (Android delivered **8.4 vs iOS
+   4.7 mean sensor types** — Android ahead, the *opposite* direction to the yield finding, on the same
+   framework). Q119 opened for the mechanism.
+2. **A platform's completeness figure is close to meaningless for a mixed cohort.** Within one study,
+   one platform, one configuration: passive missingness **1.2% (controls) to 20.4% (BPD)** — a **17×
+   spread by diagnosis**.
+3. **Care setting beats clinical severity for retention.** **1.7% vs 33.5–37.3%** two-week attrition
+   between in-person clinical care and online support, with the *sicker* arm retaining better —
+   missed assessments were reconciled during routine visits.
+4. **Two new data-loss classes.** **Research-infrastructure failure** (server congestion, Wi-Fi-gated
+   upload, one study provisioning a router per participant — three independent studies, and a direct
+   input to the self-host-vs-SaaS decision in Module 2), and **participant-exercised configurability**
+   (**35.4% of person-days unusable** because participants, told the sensors were configurable, turned
+   GPS off).
+5. **A second clean exception to "passive outlasts active"** — in one cohort *"all participants
+   supplied AWARE data every day that they responded to EMAs"*; passive and active did not decouple.
+6. **Provisioned wearables beat the BYOD phone** in the same people over the same months: 11% missing
+   (Oura + Samsung) vs 16% (AWARE smartphone).
+
+### Corrections recorded
+
+- **Two profiles report one cohort.** Nguyen et al. 2025 and Borelli et al. 2025 are the same
+  37-participant mSavorUs deployment — Verified via identical enrolment, devices, design, 13
+  Latinx/Latine participants, nine shared authors, and Borelli citing Nguyen as then-unpublished. Both
+  retained and cross-linked (Borelli supplies the completeness data Nguyen names as its own gap), but
+  the feasibility matrix carries **one row**. **AWARE has 8 profiles but 7 independent deployments.**
+- **An unresolved contradiction between two published papers**: they disagree on their own enrolment
+  year (2021 vs 2022), duration (22 vs ≥19 weeks) and analytic N (29 vs 28). Both verified verbatim.
+  Not cosmetic — 2021 is inside California COVID restrictions, 2022 is post-Omicron. Tier 16 Q117.
+- **The JMIR byline hazard is worse than previously recorded**: ordering is **not stable within the
+  publisher** — some articles place editors after authors, others first. Always verify against the
+  publisher PDF.
+- An arithmetic error in Bae 2023 ("489/756" where components sum to 754).
+
+### Sources unavailable
+
+**`10.1145/3711043` (Zhang & Poellabauer, *Proc. ACM HCI* 2025)** — the best topic-matched AWARE
+candidate, and unobtainable: ACM DL serves an HTML challenge, the full-HTML view 403s, no arXiv
+preprint, not in PMC. **Deliberately not written from its abstract**, and its AWARE attribution is
+therefore unverified. Tier 16 Q118.
+
+### Decisions affecting later comparisons
+
+- **A third structural discovery blind spot recorded: venue-shaped invisibility.** AWARE's
+  deployment-reality literature lives in CSCW/IMWUT/UbiComp, outside the biomedical indexes this
+  module searches — and the one paper that mattered most is exactly the one that could not be
+  retrieved. Joins the ordinary-word-name and framework-shaped-platform blind spots.
+- **The derivative-build problem**: 2 of 5 AWARE deployments used author-modified builds. Platform-level
+  aggregation for AWARE will degrade as these accumulate.
+- **AWARE's operational literature also skews 2016–2020**, predating current OS background-execution
+  behaviour; those figures need a dated-evidence label of the same kind applied to pre-`heartbeat`
+  Beiwe.
+- **Still open:** no head-to-head comparison of Beiwe, mindLAMP and RADAR-base (unchanged), and the
+  AWARE set is entirely US or Finnish.
