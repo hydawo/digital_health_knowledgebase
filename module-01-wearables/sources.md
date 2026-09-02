@@ -280,3 +280,25 @@ All URLs above were checked with an HTTP request on 2026-08-21.
   added in this pass.
 - Movesense's detailed datasheets sit behind a survey-gated PDF download; the specification page and
   product pages were used instead, so exact battery and IMU range figures remain **Unclear**.
+
+
+---
+
+## Onnela Lab publications page (added 2026-08-31)
+
+| ID | Title | Org | URL | Type | Retrieval | Establishes |
+|---|---|---|---|---|---|---|
+| S-W-ONN-01 | Papers — Onnela Lab | Onnela Lab, Harvard T.H. Chan SPH | https://hsph.harvard.edu/research/onnela-lab/papers/ | Lab publication listing | **Direct** | **Primary/Verified.** Source of the 22 wearable-primary and Apple-ecosystem papers newly catalogued in `literature-library.md` — the Apple Women's Health Study family, the ActiGraph/GENEActiv ALS accelerometry series, a Fitbit-vs-actigraphy sleep validation, and an Oura Ring 3 longitudinal sleep cohort |
+| S-W-ONN-02 | Europe PMC REST API (search / `resultType=core`) | EMBL-EBI | https://www.ebi.ac.uk/europepmc/webservices/rest/search | Bibliographic API | **Direct** | DOI, PMID, PMCID, journal, year, `isOpenAccess` flag and abstract for all 22 |
+
+**Scope note.** This pass catalogued papers and stored PDFs. It did **not** extend
+`research-library-wearables.md`'s Tier A/B/C sponsorship classification to any of them — no funding or
+COI statement was read. The Oura Ring 3 freshmen sleep study (Soon et al., *Sleep* 2025) is the row
+most likely to belong in that file's Oura section; it was deliberately left unadded rather than tiered
+without evidence. Nothing in `comparison-matrix.md` or `validation-evidence.md` was re-labelled.
+
+**Access barriers (2026-08-31):** four Apple-ecosystem papers marked open access by Europe PMC could
+not be downloaded — the Europe PMC render service returned HTTP 500 and `pmc.ncbi.nlm.nih.gov` served
+HTML rather than a PDF for the JAMA-family and two *AJOG*/*JCEM* titles. Recorded as an infrastructure
+barrier, not a licensing one. The 2025 circadian rest-activity preprint returned HTTP 403 from
+medRxiv.

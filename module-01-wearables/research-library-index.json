@@ -1,4 +1,285 @@
 {
-  "pmids_seen": [],
-  "last_run_date": null
+  "pmids_seen": [
+    "34610322",
+    "34612831",
+    "35568191",
+    "36323769",
+    "36414993",
+    "36879025",
+    "37248288",
+    "38103472",
+    "38432083",
+    "38700861",
+    "38809557",
+    "39388314",
+    "39607069",
+    "39707523",
+    "40073916",
+    "40488416",
+    "40901279",
+    "41048429",
+    "41297783",
+    "41572285",
+    "42001665"
+  ],
+  "last_run_date": "2026-08-31",
+  "runs": [
+    {
+      "date": "2026-08-31",
+      "source": "https://hsph.harvard.edu/research/onnela-lab/papers/",
+      "scope": "Digital Health & Phenotyping category only; wearable-primary and Apple-ecosystem subset",
+      "listed_entries": 114,
+      "distinct_papers": 113,
+      "filed_this_module": 22,
+      "filed_module_02": 91,
+      "pdfs_obtained": 16,
+      "already_in_kb": 1
+    }
+  ],
+  "dois_seen": [
+    "10.1001/jamanetworkopen.2024.12854",
+    "10.1001/jamanetworkopen.2024.9657",
+    "10.1016/j.ajog.2021.09.041",
+    "10.1016/j.ajog.2022.05.013",
+    "10.1016/j.ajog.2022.10.029",
+    "10.1016/j.ajog.2025.03.002",
+    "10.1016/j.ajog.2025.11.031",
+    "10.1016/j.ebiom.2024.105036",
+    "10.1016/j.envint.2026.110260",
+    "10.1016/j.ijheh.2023.114308",
+    "10.1038/s41746-022-00711-9",
+    "10.1038/s41746-023-00778-y",
+    "10.1038/s41746-023-00848-1",
+    "10.1093/sleep/zsaf156",
+    "10.1101/2025.09.20.25336210",
+    "10.1111/ppe.13129",
+    "10.1186/s12984-024-01514-7",
+    "10.1186/s12984-025-01829-z",
+    "10.1210/clinem/dgae674",
+    "10.2147/nss.s530812",
+    "10.2196/29849",
+    "10.3389/fendo.2025.1585628"
+  ],
+  "records": [
+    {
+      "doi": "10.1016/j.envint.2026.110260",
+      "pmid": "42001665",
+      "pmcid": "PMC13294959",
+      "title": "Associations between self-reported personal care products use and menstrual cycle length and regularity in a US digital cohort",
+      "year": "2026",
+      "pdf": "module-01-wearables/literature/apple-watch/2026-wang-environmentinternational-associations-between-self-reported-personal-care-products.pdf",
+      "pdf_status": "ok",
+      "source": "onnela-lab-papers-page-2026-08-31"
+    },
+    {
+      "doi": "10.1101/2025.09.20.25336210",
+      "pmid": null,
+      "pmcid": null,
+      "title": "Longitudinal digital phenotyping of circadian rest-activity rhythms via wearables as biomarkers for late-life function, cognition, and neuropsychiatric health",
+      "year": "2025",
+      "pdf": null,
+      "pdf_status": "err:HTTP Error 403: Forbidden",
+      "source": "onnela-lab-papers-page-2026-08-31"
+    },
+    {
+      "doi": "10.1186/s12984-025-01829-z",
+      "pmid": "41572285",
+      "pmcid": "PMC12825179",
+      "title": "Short prescribed exercises can quantify upper limb functioning in neurodegenerative disease",
+      "year": "2026",
+      "pdf": "module-01-wearables/literature/research-accelerometers/2026-straczkiewicz-jneuroengrehabil-short-prescribed-exercises-can-quantify-upper.pdf",
+      "pdf_status": "ok",
+      "source": "onnela-lab-papers-page-2026-08-31"
+    },
+    {
+      "doi": "10.1016/j.ajog.2025.03.002",
+      "pmid": "40073916",
+      "pmcid": "PMC12353525",
+      "title": "Menstrual product use patterns in a large digital cohort in the United States: variations by sociodemographic, health, and menstrual characteristics",
+      "year": "2025",
+      "pdf": "module-01-wearables/literature/apple-watch/2025-wang-ajog-menstrual-product-use-patterns-large-digital.pdf",
+      "pdf_status": "ok",
+      "source": "onnela-lab-papers-page-2026-08-31"
+    },
+    {
+      "doi": "10.1210/clinem/dgae674",
+      "pmid": "39388314",
+      "pmcid": "PMC12086404",
+      "title": "Signs of potential androgen excess across the lifespan in a US-based digital cohort study",
+      "year": "2025",
+      "pdf": null,
+      "pdf_status": "not-pdf",
+      "source": "onnela-lab-papers-page-2026-08-31"
+    },
+    {
+      "doi": "10.1016/j.ajog.2025.11.031",
+      "pmid": "41297783",
+      "pmcid": "PMC12915291",
+      "title": "Variability of menstrual cycles by age, polycystic ovary syndrome, and early-life cycle irregularity in the Apple Women\u2019s Health Study",
+      "year": "2026",
+      "pdf": "module-01-wearables/literature/apple-watch/2026-mortimer-ajog-variability-menstrual-cycles-age-polycystic-ovary.pdf",
+      "pdf_status": "ok",
+      "source": "onnela-lab-papers-page-2026-08-31"
+    },
+    {
+      "doi": "10.2147/nss.s530812",
+      "pmid": "40901279",
+      "pmcid": "PMC12399887",
+      "title": "Quantification of differences in sleep measurement by a wrist-worn consumer wearable compared to research-grade accelerometry and sleep diaries of female adults in free-living conditions",
+      "year": "2025",
+      "pdf": "module-01-wearables/literature/fitbit/2025-hu-natscisleep-quantification-differences-sleep-measurement-wrist-worn-consumer.pdf",
+      "pdf_status": "ok",
+      "source": "onnela-lab-papers-page-2026-08-31"
+    },
+    {
+      "doi": "10.3389/fendo.2025.1585628",
+      "pmid": "41048429",
+      "pmcid": "PMC12491046",
+      "title": "Utilizing a digital cohort to understand the health burden and lifestyle characteristics across the life course in individuals with polycystic ovary syndrome and possible PCOS",
+      "year": "2025",
+      "pdf": "module-01-wearables/literature/apple-watch/2025-peebles-frontendocrinol-utilizing-digital-cohort-understand-health-burden.pdf",
+      "pdf_status": "ok",
+      "source": "onnela-lab-papers-page-2026-08-31"
+    },
+    {
+      "doi": "10.1093/sleep/zsaf156",
+      "pmid": "40488416",
+      "pmcid": "PMC12515602",
+      "title": "A longitudinal study of sleep in university freshmen: facilitating and impeding factors",
+      "year": "2025",
+      "pdf": "module-01-wearables/literature/oura/2025-soon-sleep-longitudinal-study-sleep-university-freshmen-facilitating.pdf",
+      "pdf_status": "ok",
+      "source": "onnela-lab-papers-page-2026-08-31"
+    },
+    {
+      "doi": "10.1016/j.ijheh.2023.114308",
+      "pmid": "38103472",
+      "pmcid": "PMC10872302",
+      "title": "Seasonal variations of menstrual cycle length in a large, US-based, digital cohort",
+      "year": "2024",
+      "pdf": "module-01-wearables/literature/apple-watch/2024-li-ijheh-seasonal-variations-menstrual-cycle-length-large.pdf",
+      "pdf_status": "ok",
+      "source": "onnela-lab-papers-page-2026-08-31"
+    },
+    {
+      "doi": "10.1111/ppe.13129",
+      "pmid": "39607069",
+      "pmcid": "PMC11603761",
+      "title": "Early-life menstrual characteristics and gestational diabetes in a large US cohort",
+      "year": "2024",
+      "pdf": "module-01-wearables/literature/apple-watch/2024-wang-paediatrperinatepidemiol-early-life-menstrual-characteristics-gestational-diabetes-large.pdf",
+      "pdf_status": "ok",
+      "source": "onnela-lab-papers-page-2026-08-31"
+    },
+    {
+      "doi": "10.1186/s12984-024-01514-7",
+      "pmid": "39707523",
+      "pmcid": "PMC11662782",
+      "title": "Free-living monitoring of ALS progression in upper limbs using wearable accelerometers",
+      "year": "2024",
+      "pdf": "module-01-wearables/literature/research-accelerometers/2024-straczkiewicz-jneuroengrehabil-free-living-monitoring-als-progression-upper-limbs.pdf",
+      "pdf_status": "ok",
+      "source": "onnela-lab-papers-page-2026-08-31"
+    },
+    {
+      "doi": "10.1001/jamanetworkopen.2024.9657",
+      "pmid": "38700861",
+      "pmcid": "PMC11069087",
+      "title": "Irregular cycles, ovulatory disorders, and cardiometabolic conditions in a US-based digital cohort",
+      "year": "2024",
+      "pdf": null,
+      "pdf_status": "not-pdf",
+      "source": "onnela-lab-papers-page-2026-08-31"
+    },
+    {
+      "doi": "10.1001/jamanetworkopen.2024.12854",
+      "pmid": "38809557",
+      "pmcid": "PMC11137638",
+      "title": "Menarche and time to cycle regularity among females born between 1950-2005 in the US",
+      "year": "2024",
+      "pdf": null,
+      "pdf_status": "not-pdf",
+      "source": "onnela-lab-papers-page-2026-08-31"
+    },
+    {
+      "doi": "10.1016/j.ebiom.2024.105036",
+      "pmid": "38432083",
+      "pmcid": "PMC10914560",
+      "title": "Upper limb movements as digital biomarkers in people with ALS",
+      "year": "2024",
+      "pdf": "module-01-wearables/literature/research-accelerometers/2024-straczkiewicz-ebiomedicine-upper-limb-movements-digital-biomarkers-people.pdf",
+      "pdf_status": "ok",
+      "source": "onnela-lab-papers-page-2026-08-31"
+    },
+    {
+      "doi": "10.1038/s41746-023-00848-1",
+      "pmid": "37248288",
+      "pmcid": "PMC10226714",
+      "title": "Menstrual cycle length variation by demographic characteristics from the Apple Women\u2019s Health Study",
+      "year": "2023",
+      "pdf": "module-01-wearables/literature/apple-watch/2023-li-npjdigitalmedicine-menstrual-cycle-length-variation-demographic-characteristics.pdf",
+      "pdf_status": "ok",
+      "source": "onnela-lab-papers-page-2026-08-31"
+    },
+    {
+      "doi": "10.1038/s41746-023-00778-y",
+      "pmid": "36879025",
+      "pmcid": "PMC9987377",
+      "title": "Wearable device and smartphone data quantify ALS progression and may provide novel outcome measures",
+      "year": "2023",
+      "pdf": "module-01-wearables/literature/research-accelerometers/2023-johnson-npjdigitalmedicine-wearable-device-smartphone-data-quantify-als.pdf",
+      "pdf_status": "ok",
+      "source": "onnela-lab-papers-page-2026-08-31"
+    },
+    {
+      "doi": "10.1038/s41746-022-00711-9",
+      "pmid": "36323769",
+      "pmcid": "PMC9628464",
+      "title": "Covid-19 vaccination and menstrual cycle length in the Apple Women\u2019s Health Study",
+      "year": "2022",
+      "pdf": "module-01-wearables/literature/apple-watch/2022-gibson-npjdigitalmedicine-covid-19-vaccination-menstrual-cycle-length-apple.pdf",
+      "pdf_status": "ok",
+      "source": "onnela-lab-papers-page-2026-08-31"
+    },
+    {
+      "doi": "10.1016/j.ajog.2022.10.029",
+      "pmid": "36414993",
+      "pmcid": "PMC9877138",
+      "title": "Abnormal uterine bleeding patterns determined through menstrual tracking among participants in the Apple Women\u2019s Health Study",
+      "year": "2023",
+      "pdf": null,
+      "pdf_status": "not-pdf",
+      "source": "onnela-lab-papers-page-2026-08-31"
+    },
+    {
+      "doi": "10.1016/j.ajog.2022.05.013",
+      "pmid": "35568191",
+      "pmcid": "PMC9093060",
+      "title": "Attempts to conceive and the COVID-19 pandemic: data from the Apple Women\u2019s Health Study",
+      "year": "2022",
+      "pdf": "module-01-wearables/literature/apple-watch/2022-fruh-ajog-attempts-conceive-covid-19-pandemic-data-apple.pdf",
+      "pdf_status": "ok",
+      "source": "onnela-lab-papers-page-2026-08-31"
+    },
+    {
+      "doi": "10.1016/j.ajog.2021.09.041",
+      "pmid": "34610322",
+      "pmcid": "PMC10518829",
+      "title": "Design and methods of the Apple Women\u2019s Health Study: a digital longitudinal cohort study",
+      "year": "2022",
+      "pdf": "module-01-wearables/literature/apple-watch/2022-mahalingaiah-ajog-apple-womens-health-study-design.pdf",
+      "pdf_status": "already-in-kb",
+      "source": "onnela-lab-papers-page-2026-08-31"
+    },
+    {
+      "doi": "10.2196/29849",
+      "pmid": "34612831",
+      "pmcid": "PMC8529474",
+      "title": "Open-source longitudinal sleep analysis from accelerometer data (DPSleep): Algorithm development and validation",
+      "year": "2021",
+      "pdf": "module-01-wearables/literature/research-accelerometers/2021-rahimieichi-jmirmhealthuhealth-open-source-longitudinal-sleep-analysis-accelerometer-data.pdf",
+      "pdf_status": "ok",
+      "source": "onnela-lab-papers-page-2026-08-31"
+    }
+  ]
 }

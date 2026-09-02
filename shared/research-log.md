@@ -1330,3 +1330,424 @@ citation/evidence-base retrofit, not new factual research about device capabilit
 exception worth flagging: the Gonzalez/O'Day tier correction (finding #1 above) is a genuine change
 to how one paper should be classified in `research-library-wearables.md`, even though this pass did
 not make that edit directly.
+
+---
+
+## 2026-08-31 — Onnela Lab publication catalog (Modules 1 and 2)
+
+**Modules:** 1 (wearables) and 2 (digital phenotyping). No Module 3 files were created or edited
+apart from a single handoff triage file, at the request of the agent building that module.
+
+**Technologies researched:** none directly. This was a bibliographic pass against a single lab's
+publication record — the Onnela Lab (Harvard T.H. Chan School of Public Health), Beiwe's and Forest's
+originating group.
+
+**What was pulled.** <https://hsph.harvard.edu/research/onnela-lab/papers/>, direct fetch, HTTP 200,
+2026-08-31. The page groups its output under exactly two `<h2>` headings — **"Digital Health and
+Phenotyping"** and **"Network Science"**. Only the first was taken; the category structure was
+unambiguous and required no judgment call about which heading a paper sat under. That heading listed
+**114 entries, 113 distinct papers** — Hu et al., *Nature and Science of Sleep* 2025 (wrist-worn
+consumer wearable vs. actigraphy sleep measurement) is listed **twice** on the page, in two different
+year blocks. Catalogued once, with the duplication noted in its row.
+
+**Metadata resolution.** Title, authors, venue and year came from the lab page. DOI, PMID, PMCID,
+journal, `isOpenAccess` and abstract were resolved against the Europe PMC REST API by exact-title,
+then DOI-from-link, then fuzzy-title lookup. **107 of 113 resolved to a DOI**; the remaining 6 are
+items the lab page itself labels *Submitted* / *In print* with no DOI or indexed record (recorded
+rather than dropped — the lab page is the primary source for their existence). Five records where the
+lab page's title and the Europe PMC title diverged materially were checked individually; four were
+confirmed the same paper (page titles were truncated or variant), and one — "Returning individual
+research results from digital phenotyping in psychiatry" (*AJOB* 2023) — was left labelled
+**Unclear** rather than asserted to be the differently-titled AJOB record that came back.
+
+**Files created or updated:**
+- `module-02-digital-phenotyping/literature-library.md` — new "Onnela Lab publication catalog" section,
+  91 papers.
+- `module-01-wearables/literature-library.md` — new "Onnela Lab publication catalog — wearable-primary
+  papers" section, 22 papers.
+- `module-02-digital-phenotyping/sources.md` — S-BEI-09 (the lab papers page), S-BEI-10 (Europe PMC API).
+- `module-01-wearables/sources.md` — S-W-ONN-01, S-W-ONN-02.
+- `module-02-digital-phenotyping/literature-library-index.json`,
+  `module-01-wearables/research-library-index.json` — both dedup ledgers were **empty** before this
+  pass (`ids_seen: []` / `pmids_seen: []`, `last_run_date: null`); now populated with this run's DOIs,
+  PMIDs, per-paper records, and a `runs` entry.
+- `module-02-digital-phenotyping/literature/onnela-lab/` — 54 new PDFs.
+- `module-01-wearables/literature/apple-watch/` (9 new), `literature/research-accelerometers/` (new
+  folder, 5), `literature/fitbit/` (new folder, 1), `literature/oura/` (1 new).
+- `module-03-applied-studies/_onnela-module3-candidates.md` — handoff triage only; no Module 3 profile,
+  README, or index was created or touched.
+
+**Major findings:**
+1. **71 of 113 papers were obtained as verified open-access PDFs** (magic-byte + `pypdf`
+   text-extraction check on the first three pages; 0 failures on that check). 3 were already in the
+   knowledge base and were not re-downloaded or duplicated: the 2016 Torous *JMIR Mental Health*
+   Beiwe paper, the 2021 Onnela *JOSS* software paper (both Module 2), and the 2021 Mahalingaiah
+   *AJOG* Apple Women's Health Study design paper (Module 1). **39 could not be obtained.**
+2. **The single largest filing judgment call was the Apple Women's Health Study family (14 papers).**
+   These are reproductive-epidemiology analyses running on the Apple Research app, not
+   wearable-sensor-capability evidence. They were filed in **Module 1** because the AWHS
+   design-and-methods paper was *already* there, cited in `research-library-wearables.md`. Filing the
+   whole family in Module 2 as smartphone-app cohort studies would have been equally defensible;
+   precedent decided it. Flagged in the Module 1 section so a later pass can revisit the block whole.
+3. **Three genuinely dual-modality papers** were flagged individually rather than filed silently: the
+   2023 npj Digital Medicine ALS paper (Beiwe surveys + ActiGraph/Modus passive — filed Module 1 on
+   the wearable), DPSleep (an Onnela-lab method applied to wearable accelerometer input — filed
+   Module 1 on the input device), and the "one-size-fits-most" walking-recognition paper (validated
+   across smartphones, smartwatches and wearables — filed Module 2 as a method).
+4. **27 papers were triaged as Module 3 deployment candidates** and carry a forward pointer in their
+   catalog rows. Methods and architecture papers were deliberately excluded from that list.
+
+**Important unresolved questions:**
+- Whether an alternative retrieval route exists for the ~13 papers Europe PMC marks `isOpenAccess: Y`
+  but which neither its render service nor `pmc.ncbi.nlm.nih.gov/articles/<PMCID>/pdf/` would return.
+- Whether the *AJOB* 2023 "returning individual research results" item is the same paper as the
+  differently-titled Europe PMC record (currently **Unclear**).
+- Whether the Oura Ring 3 freshmen sleep study (Soon et al., *Sleep* 2025) belongs in
+  `research-library-wearables.md`'s Oura section, and at what tier — deliberately not added, because
+  its funding/COI statement was not read.
+
+**Sources or documentation that were unavailable:**
+- **Europe PMC PDF render, HTTP 500** — a repeated, non-transient failure across a cluster of older
+  PMC author manuscripts (~2015–2022): *Annals of Surgery*, *Annals of Surgical Oncology*, *Clinical
+  Psychological Science*, *Molecular Psychiatry*, *Harvard Review of Psychiatry*, *Current Psychiatry
+  Reports*, *J Neurosurg Spine*, *World Neurosurgery*, *AJPM&R*, *J Psychiatric Research*, *AJOG*
+  (Zhang 2022), *Contemporary Clinical Trials*. This extends the same HTTP-500 pattern already logged
+  for this service on 2026-08-24.
+- **`pmc.ncbi.nlm.nih.gov/articles/<PMCID>/pdf/` serves HTML, not PDF** — consistently for the
+  JAMA-family articles (*JAMA Network Open*, *JAMA Surgery*) and *JCEM*.
+- **medRxiv, HTTP 403** — the 2025 circadian rest-activity biomarker preprint.
+- **Genuinely paywalled, no OA route** — *Neurosurgery*, *Behaviour Research and Therapy*, *Psychiatry
+  Research*, *Annual Review of Clinical Psychology*, *Biometrics*, *Statistical Methods in Medical
+  Research*, *IEEE/ACM TASLP*, *Psychiatric Annals*, *Quality of Life Research*, *Internet
+  Interventions*, *AJOB*.
+
+**Decisions that could affect later comparisons:** **None of this pass's additions changed the
+confidence status of any existing claim.** No profile, comparison matrix, or validation file was
+edited. Adding a citation is not the same as reading it against a claim; every confidence marker in
+both modules still reflects what was actually verified in the 2026-08-21 through 2026-08-25 passes.
+The catalog is now available to support a later evidence pass, and the Module 3 triage file is a
+handoff, not a finding — its sample sizes and operational figures are **Reported** from abstracts, not
+extracted from full texts.
+
+---
+
+## 2026-08-31 — Module 3 (Applied Wearables and Digital Phenotyping Studies): initial build
+
+**Module:** 3 (new). **Also touched:** Modules 1 and 2 (Onnela Lab publication sweep, run in
+parallel); `module-02-digital-phenotyping/profiles/beiwe.md`; `shared/unresolved-questions.md`.
+
+### Technologies / studies researched
+
+Module 3's unit of analysis is the **study**, not the technology. Discovery ran from the
+device/platform side per `CLAUDE.md`: 20 Europe PMC queries (one per Module 1/2 technology × a
+deployment-reality term block), plus 8 targeted supplementary queries for consumer-wearable and BYOD
+designs. ~2,000 records → 121 screened-in candidates → **19 selected and profiled**.
+
+Platforms covered: Beiwe (5), RADAR-base (4), mindLAMP (1), plus movisensXS, Ilumivu mEMA and Purple
+Robot in mixed designs. Devices: Fitbit (7), Apple Watch (1), Empatica (2), Axivity/GENEActiv (1),
+Withings (1), plus several unprofiled devices.
+
+### Files created or updated
+
+**Created** — `module-03-applied-studies/`: `README.md`, `feasibility-matrix.md`, `sources.md`,
+`_inventory-and-scope-decisions.md`, `literature/` (14 OA PDFs), and 19 profiles under `profiles/`.
+**Updated** — `module-02-digital-phenotyping/profiles/beiwe.md` (new `heartbeat` subsection);
+`shared/unresolved-questions.md` (new Tier 14, Q106–Q110).
+
+Note: `_onnela-module3-candidates.md` in this directory was written by the parallel Onnela
+cataloguing pass, not by the Module 3 build.
+
+### Major findings
+
+1. **Retention and completeness are different questions**, and studies mostly report the flattering
+   one. RADAR-MDD: ~80% outcome retention, **17.7% of participants with >50% data across all
+   streams**.
+2. **Passive data outlasts active data** — reproduced across five studies and three platforms. In
+   adolescents over 18 months, passive held **flat at ~94% while surveys fell 65%→30%**. One study
+   (de Angel) found the reverse for smartphone passive data, so this is not a universal law.
+3. **Recording mode dominated data loss** in the multi-centre Empatica study: onboard storage <10%
+   loss vs live streaming ~50%, with on-body scores >80% in both. **Participants wore the device; the
+   system lost the data.**
+4. **Provisioning phones made retention worse** (HR≈1.66), and RADAR-base's Android-only requirement
+   caused 11.1% of RADAR-MDD's withdrawals.
+5. **BYOD buys wear compliance nothing else matches (23 h/day median) and costs representativeness**
+   — All of Us is >80% historically underrepresented overall but 70% White in its Fitbit substudy.
+6. **Enrolment scale does not survive multi-step protocols**: Apple Heart 419,297→450 usable;
+   Fitbit Heart 455,699→1,057. A $50 incentive did not fix the funnel.
+7. **Consent design can be the binding constraint** — a no-proxy-consent requirement excluded 95.6%
+   of screened palliative patients and terminated that study.
+8. **Missingness can be signal**: adding survey non-completion as a predictor raised AUC 0.81→0.93,
+   outranking most content features.
+9. **Baseline disease severity mostly does not predict attrition** (null in four studies), but
+   anxiety, negative symptoms, younger age and slow notification response all do.
+10. **OS-level erosion of data streams is real** — RADAR-MDD lost call/SMS logs to a Jan 2019 Google
+    Play permissions change mid-study, and the CrossCheck benchmark dataset is now unreproducible for
+    the same reason.
+
+### Beiwe `heartbeat` — correction propagated
+
+The user identified that Beiwe has since added a **heartbeat/keepalive** feature. Verified against the
+`onnela-lab/beiwe-backend` public commit history (built Jan–May 2024; per-study configurable;
+**globally enabled 2024-05-29**; API endpoint 2024-06-06) rather than from an internal source, since
+this repo is public. Consequence recorded across Modules 2 and 3: **every Beiwe completeness figure
+in the knowledge base predates the feature** and is now labelled a **pre-heartbeat lower bound**, not
+current performance. Beukenhorst et al.'s "longitudinal passive data collection without active data
+collection is not possible" now reads as describing pre-2024 Beiwe — heartbeat substitutes a
+server-triggered wake for a participant-initiated one, narrowing but not removing the dependency.
+
+### Important unresolved questions (new Tier 14 in `shared/unresolved-questions.md`)
+
+- **Q106** — quantified effect of Beiwe's heartbeat on data completeness; implementation is publicly
+  evidenced, effect size is not published anywhere public.
+- **Q107** — whether RADAR-base, mindLAMP, AWARE, Avicenna, MetricWire, m-Path or CARP have an
+  equivalent keepalive, and whether it is on by default. A genuine undocumented differentiator.
+- **Q108** — current Android/iOS background-execution limits vs those in force when the baseline
+  studies ran.
+- **Q109** — whether Dreem, Fibaro and CANedge (plus Connecare, movisensXS, Ilumivu mEMA, Purple
+  Robot) warrant Module 1/2 profiles.
+- **Q110** — five baseline studies have no obtainable PDF (JAMA-family, *Circulation*,
+  *J Biopharm Stat*, *J Psychiatr Res*, and the JMIR mHealth Sleepsight paper).
+
+### Sources or documentation unavailable
+
+Five of nineteen studies yielded no PDF: the JAMA-family and *Circulation* PMC routes served HTML
+rather than PDF, and two paywalled-journal author manuscripts plus one JMIR paper failed on every
+route tried. **All five were still read in full** via the Europe PMC / NCBI PMC XML deposits, so no
+claim rests on an abstract.
+
+### Decisions that could affect later comparisons
+
+- **Definitions are not standardised across studies** for "wear time", "data availability" or
+  "retention". A prominent warning is carried in `feasibility-matrix.md`; the matrix supports
+  comparison of patterns and orders of magnitude, **not** ranking of platforms.
+- **Discovery sorted by citation count**, which under-samples 2025–2026. Recorded as a known bias; a
+  date-sorted pass is the recommended next step.
+- **The staged second tranche (27 Onnela candidates) is entirely one lab's output and heavily
+  Beiwe-weighted.** Building it out without a matching pass on AWARE, Avicenna, MetricWire, m-Path
+  and CARP would tilt the module toward Beiwe for sampling reasons rather than merit — which cuts
+  against the objectivity `CLAUDE.md` requires for Beiwe specifically. Recorded in
+  `_inventory-and-scope-decisions.md` and `README.md`.
+- **Six bibliographic/device corrections** made during the pass and recorded in `sources.md` rather
+  than silently repaired: three wrong first authors (Muurling not Curcic; Beukenhorst not Berry;
+  de Angel not White), two wrong device attributions (the inpatient suicide pilot used movisensXS not
+  Empatica; Sleepsight used a Fitbit Charge HR — the Empatica E4 was tested and *rejected*), and one
+  wrong DOI. One device identification remains **Unclear** (Helmer et al.'s specific wrist and chest
+  device models).
+
+---
+
+## 2026-09-01 — Module 3 extension: recency scan, platform-coverage pass, Onnela tranche
+
+**Module:** 3. **Also touched:** `shared/unresolved-questions.md` (new Tier 15, Q111–Q116).
+
+Three tasks run in order, the latter two in parallel by subagents with hard-partitioned file
+ownership. **Module 3 goes from 19 to 40 profiles.**
+
+### 1. Date-sorted recency scan
+
+Re-ran all 20 technology queries sorted by publication date, window 2024-06-01 onward.
+**64 candidates screened in — 62 of them (97%) had never been surfaced by the citation-sorted Phase 1
+pass.** The bias was larger than estimated. Written up in
+`module-03-applied-studies/_recency-scan-2026-09.md`; the baseline is now explicitly labelled as
+covering *well-established* rather than current practice.
+
+### 2. Platform-coverage pass — 12 profiles
+
+Closed the gap for the five Module 2 platforms with no Module 3 entry: **AWARE (3), Avicenna/Ethica
+(3), MetricWire (3), m-Path (2), CARP (1)**. All 12 read from full text; all OA with PDFs on disk.
+
+### 3. Onnela tranche — 9 profiles
+
+Built from the staged candidate list: Mercier 2020, Johnson 2023, Yi 2025, Fu 2024,
+Straczkiewicz 2024, Wright 2018, Soon 2025, Liu 2019, Cote 2019.
+
+### Major findings
+
+1. **The incentive question now has an answer, and it is not the obvious one.** Mercier 2020 raised
+   retention **50% → 78%** with a $30-per-two-month payment conditional on ≥70% survey completion —
+   **but survey completion rate itself did not move**, and in the same study *recruitment channel*
+   produced a larger spread (53% vs 21%). Read with Lubitz's ineffective $50 incentive, Liu's unpaid
+   cohort where patients engaged 3× more than controls, and Soon's 10.8% withdrawal at ~USD 263:
+   **incentives buy enrolment persistence, not engagement, and are not the strongest lever.**
+2. **The OS-asymmetry claim has been downgraded.** `feasibility-matrix.md` previously asserted "iOS
+   outperforms Android". Niemeijer 2023 (CARP, clean 52/52 split) found **iOS gaps ~6× longer than
+   Android's**, and McClaine 2024 (AWARE) found Android yield lower than iOS. All Verified, pointing
+   opposite ways. The direction is now recorded as **unsettled and platform-/stream-specific**
+   (Tier 15 Q111).
+3. **Definitions decide the answer — three new demonstrations.** Kivelä 2024 publishes **two
+   defensible acceptability rates 59 points apart for the same cohort** (39% and 98%); Dennard 2025's
+   module-lowest 39.1% is an artefact of a platform export limitation forcing a 100%-complete
+   definition; Straczkiewicz 2024 yields **N = 202 / 240 / 308 from identical raw data** at 21/16/8-hour
+   wear thresholds.
+4. **The funnel starts before consent and is usually unreported.** 42% of those approached excluded
+   for not owning a smartphone (Cote); 8 of 18 eligible patients gatekept out **by their own
+   oncologists** behind a "100% approach-to-consent" headline (Wright); 29% unable to run the app on
+   their own Android handset (Camargo).
+5. **Co-design outperforms payment.** The module's highest mental-health compliance (**80.21%**) came
+   from letting participants set prompt frequency themselves (Clark 2025).
+6. **A new failure category: fraud.** Siebers 2025 used **MetricWire's carrier-country field** to
+   unmask 10 fraudulent participants in a $480 virtual trial; a manual checklist later blocked 37.
+
+### Discovery-method findings (recorded in `_inventory-and-scope-decisions.md`)
+
+Two structural blind spots, both found the hard way:
+
+- **Ordinary-word platform names.** Europe PMC **does not honour phrase quoting** for `"AWARE
+  framework"` — a phrase query returned 579 in-window hits dominated by "geometry-aware",
+  "causality-aware". Genuine AWARE deployments never entered the retrieved window, and the recency
+  scan wrongly concluded a null. At least 7 exist.
+- **Framework-shaped platforms.** CARP Mobile Sensing is a library embedded in other people's apps
+  and publishes under *their* names. Only an **OpenAlex citation-graph pass** found it.
+
+**Consequence adopted as policy: treat any null from a name-based query as unproven until a
+citation-graph pass has been run.**
+
+### Corrections made (all recorded in `sources.md`, not silently repaired)
+
+- **Ball et al. 2025 is not a MetricWire study** — 90% of participants used LifeData Realtime EXP,
+  10% MetricWire. My own recency scan had it wrong; verified against PMC13289574 and corrected.
+- **The AWARE null in the recency scan was wrong** (above); corrected in place.
+- **Cote 2019's "105 enrolled (55 analyzed)"** in the staged Onnela candidate file is wrong — all 105
+  were analysed, 55 is the surgical subgroup. The advertised "clearest attrition signal in the set"
+  does not exist.
+- **Liu 2019 is the LAMP app, not Beiwe** — reclassified.
+- **Johnson et al. 2023** was miscalled "Karas/Berry" in the candidate file; Johnson SA and Karas M
+  are co-first authors.
+
+### Sources or documentation unavailable
+
+Six Onnela-tranche candidates have **no open-access route at all** — concentrated in *Annals of
+Surgery*, *Neurosurgery*, *Psychiatry Research* and *Quality of Life Research* — including the only
+**ingestible-sensor** and only **audio/speech** studies in that set. Two modalities are therefore
+absent from Module 3 for access reasons rather than absence of research (Tier 15 Q116).
+Europe PMC's PDF render returned HTTP 500 for Mercier; the PMC PDF endpoint is now behind a
+proof-of-work bot challenge, which was not attempted. NCBI efetch XML was used instead.
+
+### Decisions that could affect later comparisons
+
+- **The Beiwe tilt was actively managed rather than accepted.** Running the platform-coverage and
+  Onnela passes in parallel put Beiwe at **11 of 40 (28%)** instead of 11 of 28 (39%). Residual, and
+  recorded: the 11 are not independent (nine share an author), and **all of them are pre-`heartbeat`**
+  — the module's Beiwe evidence is simultaneously its largest and most systematically dated
+  (Tier 15 Q115).
+- **Nock et al. 2026 (N=619, the largest study in the tranche) was rejected on the `CLAUDE.md` scope
+  rule** because it runs on LifeData, unprofiled in Modules 1/2. Its operational content is preserved
+  in `_onnela-tranche-report.md` as a Module 2 expansion blocker. **LifeData is now the strongest
+  Module 2 expansion candidate** (Tier 15 Q113).
+- **New Module 1/2 expansion candidates surfaced:** LifeData, RAPIDS, `mpathsenser`, Modus StepWatch 4,
+  Z4IP, and the CARP application ecosystem (DiaFocus, mCardia, Wrist Angel, AwarNS, Niimpy).
+- **`feasibility-matrix.md` is now 40 rows across six tables** (Part A baseline, Part B extension) with
+  an expanded cross-cutting-patterns section. Its non-standardised-definitions warning has been
+  strengthened — that warning is now the single most load-bearing caveat in the module.
+
+---
+
+## 2026-09-02 — Module 3 recency + citation-graph build; LifeData added to Module 2
+
+**Modules:** 3 (40 → **50 profiles**) and 2 (new LifeData profile; MetricWire claim upgraded).
+**Also touched:** `shared/unresolved-questions.md` (Q111 reformulated, Q111b added).
+
+Three tasks, run in order; the latter two in parallel by subagents with partitioned file ownership.
+
+### 1. Citation-graph discovery (OpenAlex)
+
+Replaced platform-*name* matching with platform-*citation* matching: every work since 2018 citing a
+platform's own methods paper. **71 new candidates.** Written up in
+`module-03-applied-studies/_citation-graph-scan-2026-09.md`.
+
+- **Confirmed the CARP null by a second, independent method** — the Bardram anchors have only **14
+  citing works since 2018 in total**. Name-based search missed CARP because it is framework-shaped;
+  the citation graph is immune to that and still finds almost nothing. The null is evidentiary, not
+  methodological.
+- **Cross-validated the date-sorted pass**, independently re-surfacing the LINC paper, the
+  network-traffic study and the psychosis multi-wearable pilot by a different route.
+- **Its own failure mode is significant: 3 of the first ~12 candidates examined were attributed to the
+  wrong platform**, because citing ≠ deploying.
+
+### 2. LifeData profiled in Module 2
+
+Clears the scope blocker that excluded **Nock et al. 2026 (N=619)** and **Ball et al. 2025** from
+Module 3.
+
+- **Naming correction, propagated:** the product is **RealLife Exp**, not "Realtime EXP" — Europe PMC
+  returns **74 hits vs 1**, and that 1 is Ball et al.'s own mis-rendering, which this project's recency
+  scan had inherited verbatim.
+- **Compliance conflict recorded as Unclear:** marketing asserts "HIPAA & GDPR compliant" on 4+ pages
+  (one misspells it "HIPPA"), but the privacy policy and terms **mention HIPAA zero times** — no BAA,
+  no Security/Privacy Rule language; SOC 2, ISO 27001 and 21 CFR Part 11 appear nowhere despite a
+  marketed "Clinical" eCOA tier. What *is* documented: EU-U.S./UK/Swiss DPF self-certification and a
+  GDPR-processor role.
+- **Worst documentation opacity in the module** — the entire help centre is login-gated; no public data
+  dictionary, export schema or permission model.
+- **MetricWire "Catalyst" upgraded Reported → Corroborated** — Ball et al. confirms the app name from
+  peer-reviewed full text, where it previously rested on an unofficial third-party Python client.
+
+**Scope decision recorded, not set silently:** LifeData is **EMA/ePRO-only** — its sole sensor stream
+is GPS captured *with* a survey response, and what Nock et al. call "passive" data is survey response
+metadata, not phone sensors. Admitting these studies widens Module 3 toward app-based EMA generally.
+Admitted, on the grounds that Module 2's scope already includes EMA-centric commercial platforms and
+that an N=619 deployment reporting 81.1% any-data is exactly this module's content — **on condition
+that such profiles state plainly they are EMA deployments**, so the feasibility matrix is not read as
+comparing like with like. Module 2's README and matrix label LifeData accordingly.
+
+### 3. Ten new Module 3 profiles
+
+Deliberately weighted **away** from Beiwe (1 of 10; Beiwe share 28% → 24%), because the
+citation-graph yield was Beiwe-heavy for reasons of anchor citation counts rather than deployment
+frequency. Added the module's **first Garmin, first WHOOP, first Apple SensorKit, first VPN
+network-traffic, and first Latin American** deployments.
+
+### Major findings
+
+1. **The iOS/Android question was mis-framed, and is now resolved in form if not mechanism.**
+   McInerney et al. 2024 — a **Beiwe** study, the platform whose prior work favoured iOS — stratified
+   **by stream** within one cohort: **iPhones missed 70.0%/70.6% of morning/evening EMA vs Android's
+   21.3%/26.8% (p<0.001), while accelerometer and GPS showed no significant OS association in the same
+   participants.** Verified from full text. **The asymmetry is stream-specific before it is
+   platform-specific** — which reconciles the earlier contradiction (iOS-favouring results measured
+   passive streams; Android-favouring ones measured active survey delivery). Q111 reformulated;
+   **Q111b** added for the mechanism, which if it is iOS notification throttling would affect every
+   iOS EMA deployment on every platform in Module 2.
+2. **Data quality is operationalisable, and the cost is now quantified.** LINC raised median GPS
+   quality to **0.92** against 0.12–0.80 across six prior mindLAMP studies — at **1.3 troubleshooting
+   contacts/participant, ~9 interventions/week, two RAs**. Below 0.50 quality, home-time estimates are
+   wrong by 2–4 hours.
+3. **Data can be present and wrong.** **98% of Samsung sleep records were present but corrupt**
+   (duplicated start timestamps, missing end times). No completeness metric in this module would have
+   caught it — a new failure class.
+4. **Vendor policy change as quantified study risk** — 17 of 20 Samsung escalations traced to a
+   mid-study Samsung privacy-policy change.
+5. **Zero-friction scale has a floor:** WHOOP reached 181,574 members with no recruitment,
+   provisioning or clinic step, and got **1.9% response, 1.84 responses per person over 13 months**.
+6. **Reframing incentives:** support raises completion, payment raises persistence, and neither raises
+   engagement with interactive content — which is the component that stratifies demographically.
+
+### Corrections made (recorded in `sources.md`, not silently repaired)
+
+- **Three wrong platform attributions** in this project's own citation-graph candidate list (Shen,
+  Mahmood, Van der Donckt) — all caught on full-text reading.
+- **An overstated contradiction of our own finding #14**, corrected on review: Carlson's "no
+  individuals were ineligible for lack of smartphone access" uses a **household-level** access
+  criterion (a parent's phone or household tablet counted), whereas the finding it appeared to
+  contradict measures **individual** ownership in an adult clinic population. Re-framed as *the
+  exclusion is designable-around*, which is Verified, rather than *the barrier has disappeared*, which
+  is not.
+- **A JATS parsing trap worth remembering:** PMC's `contrib-group` for **JMIR** articles lists handling
+  editors before authors; naive parsing puts non-authors on the byline. Use the PDF byline.
+
+### Sources unavailable
+
+Two of the ten have no storable PDF (Europe PMC render truncates/errors; JMIR endpoints refuse
+automated retrieval) — both read in full from PMC XML. Nock et al. 2026 is paywalled; read via NCBI
+efetch.
+
+### Decisions affecting later comparisons
+
+- **Module 3 now contains two studies deploying no Module 1/2 technology at all** (Apple SensorKit;
+  VPN network-traffic sensing). Both carry explicit scope notes and are legitimate to reject on a
+  stricter reading of the scope rule. Recorded rather than quietly absorbed.
+- **New Module 1/2 expansion candidates:** VPN/network-layer sensing, CareLoop Health Ltd, neuroUX —
+  in addition to RAPIDS, `mpathsenser` and the CARP application ecosystem from the previous session.
+- **AWARE is now the least-served covered platform** (7 unbuilt candidates), and Module 3 still has
+  **no head-to-head comparison of Beiwe, mindLAMP and RADAR-base** — the candidate that appeared to be
+  one used none of them.

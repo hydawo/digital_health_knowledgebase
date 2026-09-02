@@ -27,6 +27,7 @@ Multiple tables are used deliberately. Do not read any single table as a ranking
 | **CARP Mobile Sensing** | DTU (Bardram group) | Academic open-source framework/library | Active | MIT |
 | **Purple Robot** | Northwestern CBITS / PHI Data Lab | Academic open source | **Legacy — maintenance status Unclear** | Not confirmed |
 | **StudentLife** | Dartmouth | Historical study + dataset | **Discontinued as a platform; dataset remains in use** | N/A (dataset only) |
+| **LifeData (RealLife Exp)** | LifeData, LLC (Marion, IN, USA) | Commercial SaaS | Active (app updates Apr–Aug 2026; new *LifeData+* generation shipped 2025–26 alongside the original) | Closed source (**Verified** — no GitHub org, no SDK) |
 
 ---
 
@@ -43,6 +44,7 @@ Multiple tables are used deliberately. Do not read any single table as a ranking
 | m-Path | Yes (mobile app) | Yes (mobile app) | **Not independently verified this session** |
 | CARP Mobile Sensing | Yes (Flutter cross-platform by design) | Yes (Flutter cross-platform by design) | Design goal stated; **not independently verified stream-by-stream** |
 | Purple Robot | **No — Android only** | Yes, most complete Android sensor coverage cited in literature | N/A — no iOS |
+| LifeData (RealLife Exp) | Yes, native app | Yes, native app | **Not independently verified.** Two live generations; *LifeData+* requires **iOS 18.0+** |
 
 **Two platforms in this table now have a self-documented iOS/Android gap, both Verified/Corroborated
 via direct fetch rather than just self-described: AWARE (2026-08-24 second pass) and RADAR-base
@@ -69,6 +71,7 @@ decision.
 | MetricWire | No | **No** — vendor SaaS only | None — fully managed |
 | m-Path | No | **No** — vendor SaaS only | None — fully managed |
 | CARP Mobile Sensing | Yes (MIT) | N/A for the CAMS sensing library — **but a `carp-portal` repository (Verified 2026-08-25) indicates a study-management portal component exists within the broader CARP ecosystem**, of unconfirmed maturity | Flutter/Dart mobile-development capacity for the CAMS app itself |
+| LifeData (RealLife Exp) | No | No | Vendor SaaS only; **US-only data residency**, hosted on Microsoft Azure (named in the privacy policy) |
 
 **Practical read:** the module splits cleanly into three deployment postures — (1) self-hosted
 academic open source requiring real infrastructure capacity (Beiwe, RADAR-base, mindLAMP, AWARE),
@@ -94,6 +97,7 @@ second pass.
 | MetricWire | Yes — mobile diaries, **context/trigger-based survey deployment** | Documented sensor-context-triggered (not just scheduled) survey firing |
 | m-Path | Yes — core platform identity; **explicit JITAI support** | No-code EMA/EMI design; the most EMA-sophistication-forward platform here |
 | CARP Mobile Sensing | Not a core framework feature; would be built by the adopting team | N/A — sensing-first framework |
+| LifeData (RealLife Exp) | Yes — **the deepest documented scheduling engine in this module**: fixed/random/triggered/event-based with configurable minimum inter-prompt spacing, branching, display logic, piped text, computed scores, 13 question types, offline collection, RTL languages | A trigger type that activates an **entire new schedule**, making it EMI/JITAI-adjacent without custom code |
 
 ---
 
@@ -109,6 +113,7 @@ second pass.
 | MetricWire | Passive sensor + geolocation capture (vendor framing, not itemized) | Not established |
 | m-Path | GPS, Bluetooth, pedometer, environmental/noise context (m-Path sense module — **confirmed 2026-08-25 as a separately priced add-on, €3,000–€10,000/year, not included in base subscription**) | **Yes — "wearable triggers" named explicitly; a distinct "Smartwatch Integration" add-on (€3,000) was also found 2026-08-25** |
 | CARP Mobile Sensing | On-board phone sensors + attached wearables; **confirmed integration with Apple Health and Google Health Connect (Verified 2026-08-25)** | **Itemized and Verified 2026-08-25**: Movisens (Move4/EcgMove4/EdaMove4), eSense earplug, Polar (H10/Verity Sense), Movesense (MD/Active), Dexcom G7 CGM — materially broader than the prior "ECG monitor" reference |
+| **LifeData (RealLife Exp)** | **Response-linked GPS only** — captured *with* a survey response, not continuously. **No accelerometer, screen/app usage, communication metadata, Bluetooth, Wi-Fi or audio.** Corroborated across 5 vendor pages, 2 app-store listings and 2 Play data-safety declarations | **None documented** — no wearable, HealthKit, Health Connect or FHIR integration anywhere |
 
 ---
 
@@ -126,6 +131,7 @@ second pass.
 | MetricWire | N/A (SaaS) | **Non-public**; trial offered | **No** |
 | m-Path | N/A (SaaS) | **Verified 2026-08-25: fully public, itemized tiers** — Free (€0/50 participants), Essential (€1,599–€2,958), Standard (€2,099–€3,616), Comfort (€3,099–€5,338), plus separately priced add-ons (Sensing Lite €3,000, Sensing Full €10,000, API Access €5,000, Smartwatch Integration €3,000, and others) | **Yes — the most granular published pricing in this module** |
 | CARP Mobile Sensing | Free (MIT) | Adopting team's own dev + infra cost | N/A |
+| LifeData (RealLife Exp) | Not public — no `/pricing` page; the *formula* is described, the figures are not | Not public; heaviest paid-services menu in the module (10 named services incl. protocol building, UAT, site training) | **No** |
 
 **Updated 2026-08-25: only two of eight active platforms now have entirely non-public commercial
 pricing (Avicenna Research and MetricWire).** m-Path's pricing, previously "not established," is now
@@ -148,6 +154,7 @@ not the pricing half).
 | MetricWire | Not established | **Not located** despite stated CRO customer base |
 | m-Path | Not established | **Corroborated 2026-08-25**: vendor's own homepage states "compliant with GDPR and HIPAA" — a specific, findable claim, but self-declared rather than independently audited (contrast Avicenna Research's dated ISO 27001 certificate, which this session treats as the stronger evidence tier). SOC2/ISO/DPA-template **not located** |
 | CARP Mobile Sensing | **Yes — named framework feature**: privacy-preserving data-transformation pipeline | **Not located**; DTU/EU base makes GDPR a likely (not verified) design consideration |
+| LifeData (RealLife Exp) | Partial — US-only residency and Azure hosting named; **no public data dictionary, export schema or permission model** (help centre entirely login-gated; the worst documentation opacity in this module) | **Unclear — a real conflict.** Marketing asserts "HIPAA & GDPR compliant" on 4+ pages (one misspells it "HIPPA"), but the privacy policy and terms **mention HIPAA zero times** — no BAA, no Security/Privacy Rule language. **SOC 2, ISO 27001 and 21 CFR Part 11 appear nowhere**, despite a marketed "Clinical" eCOA tier. What *is* documented: **EU-U.S. / UK / Swiss Data Privacy Framework self-certification**, FTC jurisdiction, GDPR-processor role. Retention/deletion terms are **numeric and Verified** (180 d / ≤30 d / 12-month inactivity) — the most specific in the module |
 
 **Updated 2026-08-25: this is no longer a uniform "not located" table.** Avicenna Research now has
 the strongest compliance evidence in the module (an independently audited, dated ISO 27001:2022
@@ -171,6 +178,7 @@ of non-compliance.** See `../shared/unresolved-questions.md`.
 | MetricWire | Yes — real-time monitoring/analytics dashboard | Adherence/data-flow visibility implied | Not established |
 | m-Path | Yes — no-code web study builder | Strong for EMA/EMI design specifically; **API Access is a separate €5,000/year add-on (Verified 2026-08-25), not included by default** | Not established |
 | CARP Mobile Sensing | **Revised 2026-08-25**: a `carp-portal` repository exists within the `carp-dk` organization, indicating a dashboard component is part of the ecosystem — but its maturity/completeness is unconfirmed, so "not offered" is no longer accurate | N/A — not independently assessed | N/A |
+| LifeData (RealLife Exp) | Yes — real-time engagement and response-rate dashboards, smart reminders, alerts on responses/scores/events | Web builder, roles/permissions, QR/link/code onboarding, researcher-assigned IDs | Yes — institutional master subscriptions with department sub-accounts; multi-site on the Clinical tier |
 
 ---
 
@@ -186,6 +194,7 @@ of non-compliance.** See `../shared/unresolved-questions.md`.
 | **MetricWire** | Documented context/trigger-based survey deployment — surveys fired by sensed context, not only by schedule — plus built-in electronic consent |
 | **m-Path** | The only platform in this module with a dedicated peer-reviewed methods paper *and* explicit, published JITAI (context-triggered intervention, not just prompt) support; **as of 2026-08-25, also the only platform with fully public, itemized à-la-carte pricing (base tiers plus priced add-ons for sensing, API access, and wearable integration)** |
 | **CARP Mobile Sensing** | The only genuinely library/framework-shaped option — a Flutter package a team builds its own app on top of, not a pre-built app to configure; **as of 2026-08-25, also the only platform in this module with confirmed native Apple Health and Google Health Connect integration** |
+| **LifeData (RealLife Exp)** | Sells **audit trails as bespoke service work rather than a shipped feature** — and pairs the module's deepest survey-scheduling engine with essentially **no passive sensing at all**, making it the clearest case in this module of an EMA/ePRO tool sitting inside a digital-phenotyping comparison |
 
 ---
 

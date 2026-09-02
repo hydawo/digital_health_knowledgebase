@@ -33,6 +33,17 @@ Eight platforms received full profiles:
 | **AWARE Framework** | Academic open source, plugin-extensible, Android-first | `profiles/aware-framework.md` |
 | **Avicenna Research (formerly Ethica)** | Commercial SaaS | `profiles/avicenna-research-ethica.md` |
 | **MetricWire** | Commercial SaaS | `profiles/metricwire.md` |
+| **LifeData (RealLife Exp)** | Commercial SaaS — **EMA/ePRO only, not passive sensing** | `profiles/lifedata.md` |
+
+> **Scope note on LifeData (added 2026-09-02).** LifeData is included because Module 2's scope already
+> admits commercial EMA-centric platforms (Avicenna/Ethica, MetricWire) and because it is the platform
+> behind two substantial deployments this knowledge base needed to be able to cite. But it sits at the
+> edge of this module's definition and should be read that way: **its only sensor stream is GPS captured
+> alongside a survey response** — no accelerometer, screen or app usage, communication metadata,
+> Bluetooth, audio, wearable, HealthKit or FHIR. A bare "GPS: Yes" cell in the comparison matrix would
+> badly overstate it next to Beiwe, RADAR-base or AWARE, so the passive-streams row states the
+> restriction explicitly. Treat LifeData as an **EMA/ePRO platform benchmarked against phenotyping
+> platforms**, not as one of them.
 | **m-Path** | Commercial/academic hybrid, EMA/EMI-first | `profiles/m-path.md` |
 | **CARP Mobile Sensing** | Academic open-source framework/library (not a hosted product) | `profiles/carp-mobile-sensing.md` |
 

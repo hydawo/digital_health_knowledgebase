@@ -68,6 +68,28 @@ Fully open source (BSD-3) across backend, iOS, and Android — the strongest ext
 
 Native app on the participant's own or a study-provisioned phone; background passive collection plus scheduled surveys. Battery impact, permission burden, and BYOD-vs-provisioned suitability were **not independently benchmarked** this session — this is a real gap given how decisive these factors were for wearables in Module 1, and should be treated as an open question pending direct testing or BSC/Onnela Lab documentation review.
 
+### The background-execution constraint, and `heartbeat` (added 2026-08-31)
+
+Both iOS and Android apply power-saving limits to background apps, so **no app can run in the background indefinitely — it must be returned to the foreground periodically for background sensor collection to persist**. Beukenhorst et al. (2022), analysing three Beiwe ALS studies, state the consequence bluntly: *"longitudinal passive data collection without active data collection is not possible."* This is an OS-level constraint applying to every smartphone sensing platform, not a Beiwe-specific defect, and it means a genuinely zero-touch passive protocol does not exist on any platform in this module. **Verified** — see [`../../module-03-applied-studies/profiles/beiwe-als-adherence.md`](../../module-03-applied-studies/profiles/beiwe-als-adherence.md).
+
+Beiwe subsequently added a **`heartbeat`** mechanism (also called *keepalive*) that directly addresses this: a **scheduled server-side push notification** whose purpose is to wake the app so background collection resumes. Development timeline, from the `onnela-lab/beiwe-backend` public commit history (**Verified**):
+
+| Date | Change |
+|---|---|
+| 2024-01-12 → 2024-02 | Built and tested on the `push-notification-heartbeat` branch; migration, cron task, participant logging, and heartbeat messages added |
+| 2024-04-08 | **Heartbeat message and interval made configurable per study** |
+| 2024-05-14 | Fields added for Android push notification support |
+| 2024-05-15 | Participant page updated to always display the latest heartbeat datapoint |
+| **2024-05-29** | **Experiment flag removed — heartbeat globally enabled** |
+| 2024-06-06 | Heartbeat API endpoint implemented |
+| 2024-08-29 | Performance fix for retrieving latest app heartbeat |
+
+**What this does and does not change.** The underlying OS behaviour is unchanged. Heartbeat substitutes a *server-triggered* wake for a *participant-initiated* one, so the dependency on periodic foregrounding remains — but the trigger no longer has to be an active research task the participant must complete. A **low-active-burden** protocol is therefore materially more viable on Beiwe from mid-2024 onward than the published literature (all of which predates the feature) can show; a **zero-touch** protocol still is not.
+
+**Consequence for every Beiwe completeness figure in this knowledge base:** the two main sources — Beukenhorst et al. 2022 (data 2016–2021) and Kiang et al. 2021 (data 2015–2018) — are both **pre-heartbeat**, and should be read as **lower bounds on data yield**, not as current platform performance. The magnitude of the improvement is not publicly published; logged as Tier 14 Q106 in [`../../shared/unresolved-questions.md`](../../shared/unresolved-questions.md).
+
+Whether comparable server-triggered keepalive mechanisms exist and are enabled by default on RADAR-base, mindLAMP, AWARE, Avicenna, MetricWire, m-Path or CARP was **not established** — a genuine and currently undocumented differentiator, logged as Tier 14 Q107.
+
 ## Privacy, Security, and Compliance
 
 - **Verified**: multi-stage encryption (on-device, in-transit RSA-AES hybrid, at-rest with study master key) and identifier hashing, per the backend README.

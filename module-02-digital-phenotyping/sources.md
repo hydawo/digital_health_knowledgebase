@@ -203,3 +203,40 @@ repository.
   (S-MP-03); CARP's `carp.dk`/`carp.cachet.dk` project pages (S-CARP-01–03) and the Bardram et al.
   architecture paper and 2025 UbiComp demo paper (S-CARP-05, S-CARP-08). These remain candidates for
   a future pass if a specific claim from them becomes decision-relevant.
+
+
+---
+
+## Onnela Lab publications page (added 2026-08-31)
+
+| ID | Title | Org | URL | Type | Retrieval | Establishes |
+|---|---|---|---|---|---|---|
+| S-BEI-09 | Papers — Onnela Lab | Onnela Lab, Harvard T.H. Chan SPH | https://hsph.harvard.edu/research/onnela-lab/papers/ | Lab publication listing | **Direct** | **Primary/Verified.** The lab's own complete publication list, grouped under exactly two headings: "Digital Health and Phenotyping" (114 listed entries, 113 distinct papers) and "Network Science" (out of scope, not pulled). Establishes the Beiwe/Forest originating lab's full digital-health publication record and its scope boundary |
+| S-BEI-10 | Europe PMC REST API (search / `resultType=core`) | EMBL-EBI | https://www.ebi.ac.uk/europepmc/webservices/rest/search | Bibliographic API | **Direct** | DOI, PMID, PMCID, journal, publication year, `isOpenAccess` flag, and abstract for 107 of the 113 papers. The remaining 6 are items the lab page itself labels *Submitted* / *In print* with no DOI |
+
+**What this pass added.** A complete catalog of the Digital Health & Phenotyping half of the Onnela
+Lab's output is now in [`literature-library.md`](literature-library.md) — 91 papers filed to this
+module, 22 to Module 1 (wearable-primary and Apple-ecosystem). 54 Module 2 PDFs were newly obtained
+and verified; 2 were already in the knowledge base (the 2016 Torous *JMIR Mental Health* Beiwe paper
+and the 2021 Onnela *JOSS* software paper) and were not duplicated.
+
+**What this pass deliberately did not do.** No claim anywhere in this module was re-labelled on the
+strength of these papers. `profiles/beiwe.md` and the comparison matrix are unchanged — the catalog is
+now available to support a later evidence pass, but adding a citation is not the same as reading it
+against a claim, and the confidence markers throughout this module still reflect what was actually
+verified in the 2026-08-24/25 passes.
+
+**Access barriers encountered (2026-08-31):**
+
+- **Europe PMC PDF render service, HTTP 500** — a repeated, non-transient failure for a cluster of
+  older PMC author manuscripts (roughly 2015–2022, chiefly *Annals of Surgery*, *Clinical
+  Psychological Science*, *Molecular Psychiatry*, *Harvard Review of Psychiatry*, *Current Psychiatry
+  Reports*). Retried against `pmc.ncbi.nlm.nih.gov/articles/<PMCID>/pdf/` with a browser
+  User-Agent; still no PDF. Recorded as an **infrastructure barrier, not a paywall** — Europe PMC's
+  own metadata marks several of these `isOpenAccess: Y`.
+- **PMC direct-PDF route returns HTML, not PDF** — consistently for the JAMA-family articles
+  (*JAMA Network Open*, *JAMA Surgery*).
+- **medRxiv, HTTP 403** — the 2025 circadian rest-activity biomarker preprint.
+- **Genuinely paywalled, no OA route located** — *Annals of Surgery*, *Neurosurgery*, *Behaviour
+  Research and Therapy*, *Psychiatry Research*, *Annual Review of Clinical Psychology*, *Biometrics*,
+  *Statistical Methods in Medical Research*, *IEEE/ACM TASLP*, *Psychiatric Annals*, *AJOB*.
