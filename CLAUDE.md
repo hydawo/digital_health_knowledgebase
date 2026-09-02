@@ -968,9 +968,11 @@ exactly, with two Module 3-specific notes:
 **Status: wired in, 2026-09-02.** The baseline now exists (55 profiles), and the
 repo-side work is done — `module-03-applied-studies/literature-index.json`
 (dedup ledger, seeded with all 55) and `_scan-queue.md` (candidate queue).
-The routine specification, including the paste-ready Module 3 prompt section,
-is version-controlled at **`shared/weekly-literature-scan.md`** — read that
-before changing anything about the scan.
+The routine's **full prompt** (Parts A–D) is version-controlled at
+**`shared/weekly-literature-scan.md`** — read that before changing anything
+about the scan, and mirror any edit made in the claude.ai Routines UI back into
+it. Module 3 is **Part C**; logging, commit and push are Part D and cover all
+three modules in a single commit.
 
 **One deliberate difference from Modules 1 and 2: the routine triages Module 3,
 it does not write it.** It appends candidates to `_scan-queue.md` and must never

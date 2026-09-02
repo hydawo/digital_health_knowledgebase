@@ -48,8 +48,8 @@ routine's unattended, no-confirmation, repo-push operating mode:
   this project's search queries (what devices/platforms are being tracked) would pass through a third
   party's server with no stated data-handling policy.
 
-**Instead, the actual blocking cause was fixed directly**: the routine's cloud environment ("Default",
-`env_01Yak4krG93fzRmR7cJXa2JY`) had its Network Access setting changed from **Trusted** to **Custom**, with
+**Instead, the actual blocking cause was fixed directly**: the routine's cloud environment ("Default")
+had its Network Access setting changed from **Trusted** to **Custom**, with
 `eutils.ncbi.nlm.nih.gov` and `export.arxiv.org` added to the Allowed Domains list (plus "include default
 list of common package managers" to preserve Trusted-tier access to GitHub/npm/PyPI). This is a first-party
 Claude Code environment setting (`docs: cloud-environments` → Access levels → Custom), not a third-party
@@ -1911,3 +1911,60 @@ platform names, framework-shaped platforms (CARP), and venue-shaped invisibility
 literature sits in CSCW/IMWUT/UbiComp, which NCBI does not index). The known workaround is a periodic
 **OpenAlex citation-graph pass**, which is deliberately **not** part of the weekly routine and must be
 run manually.
+
+---
+
+## 2026-09-02 (final) — Weekly scan routine: Module 3 integrated into the live prompt
+
+**Module:** Cross-module infrastructure. No research content changed.
+
+The routine's prompt now covers all three modules. The Module 3 section was initially appended to the
+end of the existing prompt; reviewing the full text against it surfaced a real defect and three
+smaller ones, all fixed by restructuring rather than patching.
+
+### The defect that mattered
+
+The prompt's final section (then Part C) ended with **"commit all changes ... and push to origin
+main"**. The appended Module 3 section carried **its own commit instruction and no push**, and ran
+*after* that step. Module 3's work would therefore have been committed and **never pushed** — every
+week, silently, with the failure visible only as an unpushed commit inside the cloud environment.
+
+**Fix:** Module 3 became **Part C**, and logging/commit/push became **Part D**, covering all three
+modules in **one commit followed by one push**.
+
+### Three smaller corrections
+
+1. **Wrong API named.** The Module 3 draft warned that "Europe PMC does not honour phrase quoting"
+   for ordinary-word platform names. The routine calls **NCBI E-utilities**, not Europe PMC. Reworded
+   to describe PubMed `[tiab]` behaviour, which is the actual constraint.
+2. **A fragile instruction.** The draft told the run to derive its technology list from the
+   `## What's covered` section of Module 3's README — i.e. to parse prose, unattended. Replaced with
+   **three explicit grouped queries** (C1 wearables, C2 platforms, C3 arXiv) rather than one per
+   technology, which also keeps the run inside rate limits.
+3. **Column mismatch.** The queue-append step listed fields that did not match `_scan-queue.md`'s
+   actual table columns. Aligned.
+
+### Also folded in while editing
+
+- **LifeData** added to Part B's platform list — profiled in Module 2 earlier today but absent from
+  the routine. Its query covers both "RealLife Exp" (the real product name) and the "Realtime EXP"
+  mis-rendering that appears in the published literature.
+- **The JMIR byline trap** added to Part B step 4: PMC's JATS `contrib-group` ordering is not stable
+  and sometimes lists handling editors before authors. This produced three wrong first authors in
+  this project; the fix is to verify against the publisher PDF byline.
+- **An explicit note that an empty Module 3 week is the expected normal case**, so a future run does
+  not loosen the inclusion bar to manufacture output.
+
+### Privacy
+
+The cloud environment ID was removed from `shared/weekly-literature-scan.md` and from this log's
+2026-09-01 entry. **It remains in git history** (commit `db6d9e1` onward); removing it there would
+require a history rewrite, which was judged disproportionate — it is an identifier, not a credential,
+and account access is required to use it.
+
+### Canonical location
+
+`shared/weekly-literature-scan.md` now holds the **full prompt (Parts A–D)**, not just the Module 3
+fragment, plus configuration, design rationale, known limitations and a change history. The routine
+is a cloud Routine whose prompt is otherwise invisible from this repository — **any UI edit must be
+mirrored back into that file.**

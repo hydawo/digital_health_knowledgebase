@@ -255,9 +255,10 @@ Findings from the 21 new profiles that change what the module says:
 5. ~~Wire this module into the weekly literature-scan routine.~~ **Repo side done 2026-09-02** —
    ledger seeded with all 55 profiled studies, queue created, and the routine specification recorded
    in [`../shared/weekly-literature-scan.md`](../shared/weekly-literature-scan.md).
-   **One manual step remains and only the account owner can do it:** paste the Module 3 section from
-   that file into the routine's prompt in the claude.ai Routines UI. The routine is a cloud Routine,
-   not a local task, so its prompt cannot be edited from a repo session.
+   **Done 2026-09-02:** the routine's prompt now includes Module 3 as Part C.
+   [`../shared/weekly-literature-scan.md`](../shared/weekly-literature-scan.md) holds the **full
+   canonical prompt** (Parts A–D) — mirror any UI edit back into that file, since the routine is a
+   cloud Routine whose prompt is otherwise invisible from this repo.
 
    Note the deliberate asymmetry: **the routine triages Module 3, it does not write it.** Modules 1
    and 2 catalogue papers *about* a technology, which is safely automatable from abstracts. Module 3
