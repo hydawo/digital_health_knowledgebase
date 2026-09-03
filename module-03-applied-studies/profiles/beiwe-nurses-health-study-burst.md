@@ -309,7 +309,7 @@ both.
 - Europe PMC: https://europepmc.org/article/PMC/PMC12407220
 - Nurses' Health Study II: https://nurseshealthstudy.org/
 - **Local PDF (already in the knowledge base, not duplicated):**
-  `../../module-02-digital-phenotyping/literature/onnela-lab/2025-yi-jmirmhealthuhealth-measuring-psychological-well-being-behaviors-smartphone-based-digital.pdf`
+  `../../module-02-digital-phenotyping/literature/beiwe/2025-yi-jmirmhealthuhealth-measuring-psychological-well-being-behaviors-smartphone-based-digital.pdf`
 
 ## Related profiles
 

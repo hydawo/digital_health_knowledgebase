@@ -60,7 +60,7 @@ a PDF is already on disk, the path is given.
 - **Sample size:** 181 participants
 - **Duration:** 8-day intensive protocol
 - **Operational facts reported:** Purpose-built **feasibility** study: adherence to the EMA schedule, passive-data completeness, and an end-of-study participant feedback survey on the app experience. Directly answers "what does an 8-day Beiwe burst actually yield in an established cohort".
-- **Local PDF:** module-02-digital-phenotyping/literature/onnela-lab/2025-yi-jmirmhealthuhealth-measuring-psychological-well-being-behaviors-smartphone-based-digital.pdf
+- **Local PDF:** module-02-digital-phenotyping/literature/beiwe/2025-yi-jmirmhealthuhealth-measuring-psychological-well-being-behaviors-smartphone-based-digital.pdf
 
 ### 4. Fu M et al., *Frontiers in pain research (Lausanne, Switzerland)* 2024 — "Pain intervention and digital research: An operational report on combining digital research and outpatient chronic disease management"
 
@@ -70,7 +70,7 @@ a PDF is already on disk, the path is given.
 - **Sample size:** 77 participants
 - **Duration:** Ongoing program launched 2022
 - **Operational facts reported:** Self-described **"operational report"** — recruitment mechanics of running digital research inside routine clinical care, with an older, comorbid, access-limited population. Operational content is the point of the paper.
-- **Local PDF:** module-02-digital-phenotyping/literature/onnela-lab/2024-fu-frontierspainresearchlau-pain-intervention-digital-research-operational-report.pdf
+- **Local PDF:** module-02-digital-phenotyping/literature/beiwe/2024-fu-frontierspainresearchlau-pain-intervention-digital-research-operational-report.pdf
 
 ### 5. Straczkiewicz M et al., *Journal of neuroengineering and rehabilitation* 2026 — "Short prescribed exercises can quantify upper limb functioning in neurodegenerative disease"
 
@@ -110,7 +110,7 @@ a PDF is already on disk, the path is given.
 - **Sample size:** 10 patients with gynecologic cancer on palliative chemotherapy
 - **Duration:** Pilot intervention
 - **Operational facts reported:** **Approach-to-consent rate 100%; adherence 90% / 70%** to the two components. Small N but unusually explicit enrollment and adherence funnel.
-- **Local PDF:** module-02-digital-phenotyping/literature/onnela-lab/2018-wright-jcoccinformatics-hope-pilot-study-harnessing-patient-reported-outcomes.pdf
+- **Local PDF:** module-02-digital-phenotyping/literature/beiwe/2018-wright-jcoccinformatics-hope-pilot-study-harnessing-patient-reported-outcomes.pdf
 
 ### 9. Lee MS et al., *BMC public health* 2024 — "Vaping habits and respiratory symptoms using a smartphone app platform"
 
@@ -120,7 +120,7 @@ a PDF is already on disk, the path is given.
 - **Sample size:** 306 adults across the US
 - **Duration:** 8-day survey participation window per participant, Aug 2020–Mar 2021
 - **Operational facts reported:** Population-based recruitment at distance with a fixed per-participant participation window; reports participation structure across daily/weekly/monthly instruments.
-- **Local PDF:** module-02-digital-phenotyping/literature/onnela-lab/2024-lee-bmcpublichealth-vaping-habits-respiratory-symptoms-smartphone-app.pdf
+- **Local PDF:** module-02-digital-phenotyping/literature/vaping-health-study-app/2024-lee-bmcpublichealth-vaping-habits-respiratory-symptoms-smartphone-app.pdf
 
 ### 10. Karas M et al., *Annals of clinical and translational neurology* 2024 — "Tracking ALS disease progression using passively collected smartphone sensor data"
 
@@ -130,7 +130,7 @@ a PDF is already on disk, the path is given.
 - **Sample size:** 63 people with ALS
 - **Duration:** Longitudinal
 - **Operational facts reported:** Enrollment reported; passive sensor data used to derive step counts, so data yield is load-bearing for the result.
-- **Local PDF:** module-02-digital-phenotyping/literature/onnela-lab/2024-karas-annclintranslneurol-tracking-als-disease-progression-passively-collected.pdf
+- **Local PDF:** module-02-digital-phenotyping/literature/beiwe/2024-karas-annclintranslneurol-tracking-als-disease-progression-passively-collected.pdf
 
 ### 11. Pellegrini AM et al., *Brain and behavior* 2022 — "Estimating longitudinal depressive symptoms from smartphone data in a transdiagnostic cohort"
 
@@ -140,7 +140,7 @@ a PDF is already on disk, the path is given.
 - **Sample size:** 45 individuals across 4 diagnostic groups
 - **Duration:** 8 weeks
 - **Operational facts reported:** Enrollment by diagnostic group; a transdiagnostic design where per-group data yield matters.
-- **Local PDF:** module-02-digital-phenotyping/literature/onnela-lab/2022-pellegrini-brainbehav-estimating-longitudinal-depressive-symptoms-smartphone-data.pdf
+- **Local PDF:** module-02-digital-phenotyping/literature/beiwe/2022-pellegrini-brainbehav-estimating-longitudinal-depressive-symptoms-smartphone-data.pdf
 
 ### 12. Cote DJ et al., *World neurosurgery* 2019 — "Digital phenotyping in patients with spine disease: A novel approach to"
 
@@ -200,7 +200,7 @@ a PDF is already on disk, the path is given.
 - **Sample size:** 55 college students
 - **Duration:** Intensive longitudinal
 - **Operational facts reported:** Person-specific modelling that depends on dense per-individual data; reports cohort composition.
-- **Local PDF:** module-02-digital-phenotyping/literature/onnela-lab/2024-vidal-jmirformativeres-precision-assessment-real-world-associations-between-stress.pdf
+- **Local PDF:** module-02-digital-phenotyping/literature/beiwe/2024-vidal-jmirformativeres-precision-assessment-real-world-associations-between-stress.pdf
 
 ### 18. Boaro A et al., *Journal of neurosurgery. Spine* 2021 — "Smartphone GPS signatures of patients undergoing spine surgery correlate with mobility and current gold standard outcome measures"
 
@@ -220,7 +220,7 @@ a PDF is already on disk, the path is given.
 - **Sample size:** 18 with schizophrenia + 17 healthy controls
 - **Duration:** 12 weeks
 - **Operational facts reported:** **Explicitly states no payment or incentive was offered** — a directly comparable counterpoint to the incentive/retention finding in the SCI study above.
-- **Local PDF:** module-02-digital-phenotyping/literature/onnela-lab/2019-liu-schizophrresconn-assessing-potential-longitudinal-smartphone-based-cognitive-assessment.pdf
+- **Local PDF:** module-02-digital-phenotyping/literature/mindlamp/2019-liu-schizophrresconn-assessing-potential-longitudinal-smartphone-based-cognitive-assessment.pdf
 
 ### 20. Staples P et al., *NPJ schizophrenia* 2017 — "A comparison of passive and active estimates of sleep in a cohort with schizophrenia"
 
@@ -230,7 +230,7 @@ a PDF is already on disk, the path is given.
 - **Sample size:** 17 subjects with schizophrenia
 - **Duration:** 3 months
 - **Operational facts reported:** Early Beiwe deployment; compares passive vs. active sleep estimates, so passive-data completeness is load-bearing.
-- **Local PDF:** module-02-digital-phenotyping/literature/onnela-lab/2017-staples-npjschizophrenia-comparison-passive-active-estimates-sleep-cohort.pdf
+- **Local PDF:** module-02-digital-phenotyping/literature/beiwe/2017-staples-npjschizophrenia-comparison-passive-active-estimates-sleep-cohort.pdf
 
 ### 21. Torous J et al., *JMIR mental health* 2015 — "Utilizing a personal smartphone custom app to assess the Patient Health Questionnaire-9 (PHQ-9) depressive symptoms in patients with major depressive disorder"
 
@@ -240,7 +240,7 @@ a PDF is already on disk, the path is given.
 - **Sample size:** 13 outpatients with major depressive disorder
 - **Duration:** 29–30 days, up to 3 sessions/day
 - **Operational facts reported:** **Adherence is the stated primary outcome.** The earliest deployment in the lab record; useful as a historical baseline.
-- **Local PDF:** module-02-digital-phenotyping/literature/onnela-lab/2015-torous-jmirmentalhealth-utilizing-personal-smartphone-custom-app-assess.pdf
+- **Local PDF:** module-02-digital-phenotyping/literature/mindful-moods/2015-torous-jmirmentalhealth-utilizing-personal-smartphone-custom-app-assess.pdf
 
 ### 22. Beukenhorst AL et al., *Muscle & nerve* 2021 — "Smartphone data during the COVID‐19 pandemic can quantify behavioral changes in people with ALS"
 
@@ -250,7 +250,7 @@ a PDF is already on disk, the path is given.
 - **Sample size:** 8 participants with ALS
 - **Duration:** Across the March 2020 US state-of-emergency declaration
 - **Operational facts reported:** Tiny N, but a natural-experiment design where continuous passive location capture through a disruption is itself the operational finding.
-- **Local PDF:** module-02-digital-phenotyping/literature/onnela-lab/2021-beukenhorst-musclenerve-smartphone-data-during-covid19-pandemic-can.pdf
+- **Local PDF:** module-02-digital-phenotyping/literature/beiwe/2021-beukenhorst-musclenerve-smartphone-data-during-covid19-pandemic-can.pdf
 
 ### 23. Nawabi NLA et al., *Neurosurgery* 2025 — "Assessing mobility in patients with glioblastoma using digital phenotyping – Piloting the digital assessment in neuro-oncology"
 
@@ -290,7 +290,7 @@ a PDF is already on disk, the path is given.
 - **Sample size:** 619 patients presenting with suicidal thoughts/behavior
 - **Duration:** 3 months; 79,448 survey responses
 - **Operational facts reported:** **Largest deployment in the set by participant count.** Survey metadata (e.g. time since last submission) is used as a predictor, which makes response timing an explicit operational variable.
-- **Local PDF:** module-02-digital-phenotyping/literature/onnela-lab/2026-nock-jpsychopatholclinsci-smartphone-surveys-predict-next-week-suicide-attempts.pdf
+- **Local PDF:** module-02-digital-phenotyping/literature/lifedata/2026-nock-jpsychopatholclinsci-smartphone-surveys-predict-next-week-suicide-attempts.pdf
 
 ### 27. Mahalingaiah S et al., *American journal of obstetrics and gynecology* 2022 — "Design and methods of the Apple Women’s Health Study: a digital longitudinal cohort study"
 

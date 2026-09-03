@@ -91,7 +91,7 @@ Scope note. This profile rests on one table and one funnel. The parent deploymen
 
 - Paper (OA, CC BY 4.0): https://doi.org/10.1097/AS9.0000000000000060
 - Europe PMC: https://europepmc.org/article/PMC/PMC8221715
-- Local PDF: `../../module-02-digital-phenotyping/literature/onnela-lab/2021-panda-annalssurgeryopenperspec-expected-versus-experienced-health-related-quality-life.pdf` (already held by Module 2; not duplicated)
+- Local PDF: `../../module-02-digital-phenotyping/literature/beiwe/2021-panda-annalssurgeryopenperspec-expected-versus-experienced-health-related-quality-life.pdf` (already held by Module 2; not duplicated)
 
 ## Related profiles
 

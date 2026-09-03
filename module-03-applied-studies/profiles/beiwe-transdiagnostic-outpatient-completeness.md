@@ -106,7 +106,7 @@ Conflict note. The senior author leads the platform, one co-author is employed b
 
 - Paper (OA, CC BY): https://doi.org/10.1002/brb3.2077
 - Europe PMC: https://europepmc.org/article/PMC/PMC8865149
-- Local PDF: `../../module-02-digital-phenotyping/literature/onnela-lab/2022-pellegrini-brainbehav-estimating-longitudinal-depressive-symptoms-smartphone-data.pdf` (already held by Module 2; not duplicated)
+- Local PDF: `../../module-02-digital-phenotyping/literature/beiwe/2022-pellegrini-brainbehav-estimating-longitudinal-depressive-symptoms-smartphone-data.pdf` (already held by Module 2; not duplicated)
 
 ## Related profiles
 

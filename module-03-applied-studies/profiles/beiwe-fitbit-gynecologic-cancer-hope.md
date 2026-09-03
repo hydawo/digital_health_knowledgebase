@@ -248,7 +248,7 @@ estimate.
 - Fitabase (the Fitbit research data platform used):
   https://www.fitabase.com/
 - **Local PDF (already in the knowledge base, not duplicated):**
-  `../../module-02-digital-phenotyping/literature/onnela-lab/2018-wright-jcoccinformatics-hope-pilot-study-harnessing-patient-reported-outcomes.pdf`
+  `../../module-02-digital-phenotyping/literature/beiwe/2018-wright-jcoccinformatics-hope-pilot-study-harnessing-patient-reported-outcomes.pdf`
 
 ## Related profiles
 

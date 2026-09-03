@@ -309,7 +309,7 @@ controlled evaluation of anything.
 - Paper (open access): https://doi.org/10.3389/fpain.2024.1327859
 - Europe PMC: https://europepmc.org/article/PMC/PMC10869590
 - **Local PDF (already in the knowledge base, not duplicated):**
-  `../../module-02-digital-phenotyping/literature/onnela-lab/2024-fu-frontierspainresearchlau-pain-intervention-digital-research-operational-report.pdf`
+  `../../module-02-digital-phenotyping/literature/beiwe/2024-fu-frontierspainresearchlau-pain-intervention-digital-research-operational-report.pdf`
 
 ## Related profiles
 

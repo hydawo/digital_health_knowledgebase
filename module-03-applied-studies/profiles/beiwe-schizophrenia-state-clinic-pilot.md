@@ -106,7 +106,7 @@ Conflict note. All three papers declare no competing interests. They are written
 - Relapse paper: https://doi.org/10.1038/s41386-018-0030-z
 - Sleep paper (OA, CC BY): https://doi.org/10.1038/s41537-017-0038-0
 - Protocol: https://doi.org/10.2196/mental.5165
-- Local PDFs (already held by Module 2; not duplicated): `../../module-02-digital-phenotyping/literature/onnela-lab/2018-torous-npjdigitalmedicine-characterizing-clinical-relevance-digital-phenotyping-data.pdf`, `../../module-02-digital-phenotyping/literature/onnela-lab/2018-barnett-neuropsychopharmacologyo-relapse-prediction-schizophrenia-through-digital-phenotyping.pdf`, `../../module-02-digital-phenotyping/literature/onnela-lab/2017-staples-npjschizophrenia-comparison-passive-active-estimates-sleep-cohort.pdf`
+- Local PDFs (already held by Module 2; not duplicated): `../../module-02-digital-phenotyping/literature/beiwe/2018-torous-npjdigitalmedicine-characterizing-clinical-relevance-digital-phenotyping-data.pdf`, `../../module-02-digital-phenotyping/literature/beiwe/2018-barnett-neuropsychopharmacologyo-relapse-prediction-schizophrenia-through-digital-phenotyping.pdf`, `../../module-02-digital-phenotyping/literature/beiwe/2017-staples-npjschizophrenia-comparison-passive-active-estimates-sleep-cohort.pdf`
 
 ## Related profiles
 

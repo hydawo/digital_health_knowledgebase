@@ -2,6 +2,25 @@
 
 ---
 
+## 2026-09-03 (later) — Onnela Lab folder dissolved; Module 4 (methods and reviews) created
+
+**Module:** 2 (literature library), new Module 4, and the explorer page.
+
+The `module-02-digital-phenotyping/literature/onnela-lab/` folder held 54 PDFs pulled from the lab's
+publications page on the assumption they were all Beiwe work. Today's full-text screening showed
+otherwise, so the folder was dissolved and each paper filed by the platform it actually used. 35
+Beiwe deployments and Beiwe analytics papers went to `literature/beiwe/`. Two LifeData deployments
+(Nock 2026, Coppersmith 2024) went to `literature/lifedata/`. Liu 2019 used the LAMP app and went to
+`literature/mindlamp/`. Torous 2015 (Mindful Moods) and Lee 2024 (a contractor-built vaping study app)
+each got a placeholder folder under their app's name, so the library grows a folder whenever a new
+platform turns up rather than losing the paper. Ten reviews and position papers moved to a new
+`module-04-methods-and-reviews/` with a README and catalogue. Six pure statistics papers with no
+digital-health platform were deleted from the library and are struck through in the Module 2
+catalogue. All moves were git moves, so history is intact. Every path reference in the repo was
+rewritten, including the Local PDF lines in the Module 3 profiles.
+
+Module 4 is a filing home only. It has no profiles and has not been researched.
+
 ## 2026-09-03 — Module 3 coverage pass: cross-screen of the stored Module 1 and 2 PDFs (in progress)
 
 **Module:** 3 (Applied Studies), drawing on the Module 1 and Module 2 literature folders.

@@ -249,7 +249,7 @@ supports a hypothesis worth testing at scale.
 - LAMP app source (predecessor of mindLAMP):
   https://github.com/BIDMCDigitalPsychiatry/LAMP-app
 - **Local PDF (already in the knowledge base, not duplicated):**
-  `../../module-02-digital-phenotyping/literature/onnela-lab/2019-liu-schizophrresconn-assessing-potential-longitudinal-smartphone-based-cognitive-assessment.pdf`
+  `../../module-02-digital-phenotyping/literature/mindlamp/2019-liu-schizophrresconn-assessing-potential-longitudinal-smartphone-based-cognitive-assessment.pdf`
 
 ## Related profiles
 
