@@ -1,21 +1,21 @@
 # Emerging and Specialist Platforms
 
 Platforms that materially belong in the Module 1 comparison but did not warrant a full profile in
-this pass — either because they are narrower in scope, or because public documentation is too thin
+this pass, either because they are narrower in scope, or because public documentation is too thin
 to fill the template honestly. Each entry states what was established and what was not.
 
 **Last verified: 2026-08-21.** These entries close the discovery gap recorded in the first pass.
 
 ---
 
-## Ultrahuman (Ring Air) — the second ring with raw data
+## Ultrahuman (Ring Air), the second ring with raw data
 
 | Field | Detail | Confidence |
 |---|---|---|
 | Organization | Ultrahuman (India / UAE) |
 | Product | Ultrahuman Ring AIR; **M1 CGM patch**; UltraSignal developer platform |
 | **Raw data** | **Raw PPG, accelerometer, and temperature** exposed to developers | **Corroborated** |
-| Developer platform | **UltraSignal** — described as "the world's first wearable-based developer platform" | **Verified** |
+| Developer platform | **UltraSignal**, described as "the world's first wearable-based developer platform" | **Verified** |
 | Access | Apply for a **loaned developer kit**; applications reviewed, priority to projects leveraging Ring AIR capabilities. The Partner API is **whitelist-only**, requiring a token from partner.ultrahuman.com; approval at Ultrahuman's discretion, taking several days | **Corroborated** |
 | Derived metrics | Recovery Score, Sleep Score, Movement Index, HRV, resting HR, skin temperature deviation, nightly SpO2 | **Reported** |
 | Sampling rates | **Not documented** | **Unclear** |
@@ -23,8 +23,8 @@ to fill the template honestly. Each entry states what was established and what w
 | Validation | **No independent PSG or ECG validation located** | **Unclear** |
 
 **Why it matters.** Ultrahuman exposes raw PPG from a ring. Oura does not, at any price. If a study
-needs finger-PPG waveform data — for custom pulse-wave analysis, or because a ring is the only form
-factor a population will tolerate overnight — **Ultrahuman is currently the only route**.
+needs finger-PPG waveform data, for custom pulse-wave analysis, or because a ring is the only form
+factor a population will tolerate overnight, **Ultrahuman is currently the only route**.
 
 The **M1 CGM patch integration** makes Ultrahuman the only consumer ecosystem here combining ring
 biometrics and continuous glucose in a single API. For metabolic research that is a genuinely
@@ -38,7 +38,7 @@ Links: https://www.ultrahuman.com/ultrasignal/ · https://www.ultrahuman.com/blo
 
 ---
 
-## Biostrap — consumer company that pivoted to research
+## Biostrap, consumer company that pivoted to research
 
 | Field | Detail | Confidence |
 |---|---|---|
@@ -48,12 +48,11 @@ Links: https://www.ultrahuman.com/ultrasignal/ · https://www.ultrahuman.com/blo
 | **Configurable sampling** | Researchers can customise **device settings and sampling rates** | **Verified** |
 | Study tooling | Customisable participant UX, enrolment workflows, **integrated behavioural health surveys**, educational widgets, automated reporting, compliance notifications | **Verified** |
 | Integration | API or **Bluetooth SDKs** | **Reported** |
-| Validation claims | "14 publications and 22 clinical studies"; partners named include NIHMD (COVID-19), Regeneron (neuromuscular disease), UNLV Athletics; a registered validation trial for ejection fraction and cardiac output (NCT05279066) | **Reported** — vendor-compiled counts |
+| Validation claims | "14 publications and 22 clinical studies"; partners named include NIHMD (COVID-19), Regeneron (neuromuscular disease), UNLV Athletics; a registered validation trial for ejection fraction and cardiac output (NCT05279066) | **Reported**, vendor-compiled counts |
 | Pricing | Not public; "Book a Meeting" | **Unclear** |
 
 **Why it matters.** Biostrap is one of the few platforms combining **raw PPG + configurable sampling
-+ integrated surveys + a participant-management dashboard** in one product. That combination —
-signal access *and* study operations *and* EMA — is otherwise only approached by Samsung's Research
++ integrated surveys + a participant-management dashboard** in one product. That combination, signal access *and* study operations *and* EMA, is otherwise only approached by Samsung's Research
 Stack and Labfront. Biostrap explicitly repositioned from consumer to medical/research, unveiling a
 next-generation device with raw sensor data at HLTH as part of that shift. **Reported.**
 
@@ -68,13 +67,13 @@ Links: https://biostrap.com/research/ · https://biostrap.com/science/ · https:
 
 ---
 
-## Verily Study Watch — the clinical-research-only wearable
+## Verily Study Watch, the clinical-research-only wearable
 
 | Field | Detail | Confidence |
 |---|---|---|
 | Organization | Verily (Alphabet) |
 | Status | **Active, not discontinued.** In use across multiple clinical trials since 2017 | **Corroborated** |
-| Availability | **Never sold for consumer use** — a clinical research tool only | **Corroborated** |
+| Availability | **Never sold for consumer use**, a clinical research tool only | **Corroborated** |
 | **Data streams** | Records **ECG, heart rate, electrodermal activity (EDA), and inertial movement** | **Corroborated** |
 | **Raw data** | Researchers can "analyse the raw data points that power digital biomarkers"; the device **stores weeks of raw data at a time** | **Corroborated** |
 | Regulatory | FDA 510(k) clearances including **on-demand ECG** and **irregular pulse monitoring**. A bid to add a Parkinson's virtual motor exam was **rejected by FDA** | **Corroborated** |
@@ -82,20 +81,20 @@ Links: https://biostrap.com/research/ · https://biostrap.com/science/ · https:
 | Pricing / access | Not public; enterprise and pharma engagement | **Unclear** |
 
 **Why it matters.** Study Watch is one of only two devices in this whole module offering **EDA
-alongside ECG** (the other is nothing — Empatica has EDA without ECG; Verily has both). Multi-week
+alongside ECG** (the other is nothing, Empatica has EDA without ECG; Verily has both). Multi-week
 onboard raw storage plus FDA clearances places it alongside Empatica and Ametris in the
 regulated-research tier.
 
-### The March 2026 Verily–Samsung collaboration — significant for Module 1
+### The March 2026 Verily, Samsung collaboration, significant for Module 1
 
 Verily and Samsung Electronics America announced a collaboration bringing **Galaxy Watch 8** data
 into Verily's **Pre** platform, with sensor data surfaced in **Viewpoint Evidence**. The partnership
-gives researchers **access to raw device signals — photoplethysmography, and motion from the
+gives researchers **access to raw device signals, photoplethysmography, and motion from the
 accelerometers and gyroscopes**. **Corroborated** (Verily press release; MedCity News, March 2026).
 
 This independently corroborates the Samsung raw-signal capability documented in `samsung.md`, and it
 creates a **third access route** to Galaxy Watch raw data alongside the Privileged Health SDK and the
-open-source Research Stack — this one packaged for pharmaceutical clinical trials rather than
+open-source Research Stack, this one packaged for pharmaceutical clinical trials rather than
 academic self-build.
 
 **Why to be cautious for academic use.** There is no self-serve route. Verily sells to pharma and
@@ -132,7 +131,7 @@ Recorded so their absence remains a known gap rather than an implied judgement.
    constraint of the form factor.
 3. **The raw-data tier is no longer synonymous with expensive.** Polar (~$95) and Movesense sit
    alongside Empatica (~$1,750/3 yr) and Ametris.
-4. **Verily–Samsung means Galaxy Watch raw signal now has a commercial clinical-trial route**, not
+4. **Verily, Samsung means Galaxy Watch raw signal now has a commercial clinical-trial route**, not
    just a self-build one.
 
 ## Sources

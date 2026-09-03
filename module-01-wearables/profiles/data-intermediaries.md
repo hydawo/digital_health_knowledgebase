@@ -17,12 +17,12 @@ everything below as **Reported** unless explicitly marked otherwise, and verify 
 
 ---
 
-## Category 1 — Research operations platforms
+## Category 1, Research operations platforms
 
 These supply participant management, adherence monitoring, and de-identified export. They are what
 a research team buys because Fitbit and Garmin do not provide it.
 
-### Fitabase — **the incumbent for Fitbit/Garmin research**
+### Fitabase, **the incumbent for Fitbit/Garmin research**
 
 | Field | Detail | Confidence |
 |---|---|---|
@@ -30,20 +30,20 @@ a research team buys because Fitbit and Garmin do not provide it.
 | Granularity | Daily, hourly, **minute-level**; CSV export | **Verified** |
 | Study tooling | Monitoring dashboards, device battery and sync status, participant tagging, de-identified profiles, customizable data capture windows, unlimited batch exports | **Verified** |
 | API | Aggregate Data API for programmatic export in JSON/CSV | **Verified** |
-| Coming | "Fitabase Engage" — mobile surveys, smartwatch prompts, SMS messaging, Summer 2026 | **Verified** (vendor-stated) |
+| Coming | "Fitabase Engage", mobile surveys, smartwatch prompts, SMS messaging, Summer 2026 | **Verified** (vendor-stated) |
 | Track record | 1,100+ research studies | **Reported** (vendor claim) |
 | Pricing | **Not public.** "Custom Pricing for Every Study"; contact hello@fitabase.com | **Verified** that it is non-public |
 
 Fitabase is the single most important non-device entity in Module 1. If a study is using Fitbit and
 does not have engineering capacity, Fitabase is effectively the default, and its (unpublished) cost
 should be budgeted from the start. Note that Fitabase's Engage roadmap moves it toward the survey/
-EMA territory of the Module 2 platforms — a convergence worth tracking.
+EMA territory of the Module 2 platforms, a convergence worth tracking.
 
 Open question: does Fitabase execute a HIPAA BAA as standard? Its de-identification framing suggests
 a deliberate strategy of staying outside PHI, which is a different compliance posture from a BAA.
-**Unclear — ask directly.**
+**Unclear, ask directly.**
 
-### Labfront — the one with published pricing
+### Labfront, the one with published pricing
 
 **Added 2026-08-21 second pass.** Labfront was missing from the first draft and is arguably the most
 consequential omission in it, because **it is the only research platform in this module that
@@ -54,17 +54,17 @@ publishes its prices.**
 | Devices supported | **Garmin** (vívosmart 5, vívoactive 5, Index BPM, Index S2 scale), **Movesense HR2**, **Dexcom G7 CGM** | **Verified** |
 | Garmin data | **Beat-to-Beat Interval**, steps, heart rate, oxygen saturation, respiration, accelerometer, naps, wheelchair activities | **Verified** |
 | Movesense data | **RR-interval, ECG, IMU, accelerometer, gyroscope, magnetometer** | **Verified** |
-| **Higher resolution than stock** | Labfront has a Garmin partnership letting it **configure devices via the Garmin Health SDKs to increase sensor resolution**, capturing higher-resolution data than Garmin normally collects — explicitly including beat-to-beat/interbeat intervals for HRV | **Corroborated** |
+| **Higher resolution than stock** | Labfront has a Garmin partnership letting it **configure devices via the Garmin Health SDKs to increase sensor resolution**, capturing higher-resolution data than Garmin normally collects, explicitly including beat-to-beat/interbeat intervals for HRV | **Corroborated** |
 | Included in all tiers | Physiological data collection, **survey tools (EMA)**, event tracking | **Verified** |
 
-#### Published pricing — **Verified** (labfront.com/pricing)
+#### Published pricing, **Verified** (labfront.com/pricing)
 
 | Tier | Price | Participants | Notes |
 |---|---|---|---|
 | **Tester** | **Free** | 5 | 30-day data access window; limited sampling rates on some devices; all settings enabled so you can confirm a protocol works |
 | **Basic** | **$500 / year** | 20 included, **$10** each additional | Unlimited data history; **one** device integration (Garmin *or* Dexcom); standard sampling rates |
 | **Advanced** | **$1,250 / year** | 20 included, **$25** each additional | Unlimited data history; **all** integrations (Garmin, Dexcom, Movesense); **customisable high-resolution sampling rates** |
-| Analytics packages | from **$2,000** | — | Optional add-on; requires Advanced |
+| Analytics packages | from **$2,000** | | Optional add-on; requires Advanced |
 
 Labfront also runs a **grants programme** providing subsidised platform access, analytics packages
 and devices to researchers at every career stage on a rolling basis, plus hardware discounts through
@@ -74,8 +74,7 @@ sleep grant and an ACSM-linked award. **Corroborated.**
 #### Why this changes the picture
 
 A 40-participant Garmin study with high-resolution BBI and EMA costs **$1,250 + 20 × $25 = $1,750
-per year** in platform fees, plus devices. That is a fully specified, publicly quotable budget line
-— something no other research platform in Module 1 permits.
+per year** in platform fees, plus devices. That is a fully specified, publicly quotable budget line, something no other research platform in Module 1 permits.
 
 It also **removes the Garmin SDK licence question from the critical path** for many studies: rather
 than negotiating a Garmin Health SDK licence, a team can buy Labfront Advanced and inherit Labfront's
@@ -110,7 +109,7 @@ device vendors in Module 1 that supply their own study-operations layer.
 
 ---
 
-## Category 2 — Unified wearable APIs
+## Category 2, Unified wearable APIs
 
 These normalize many vendor APIs behind one schema and one OAuth flow. Value proposition: a study
 that lets participants bring whatever device they already own.
@@ -127,7 +126,7 @@ that lets participants bring whatever device they already own.
 ### What unified APIs genuinely solve
 
 - One OAuth flow and one schema instead of six.
-- Insulation from vendor API churn — notably, these vendors are absorbing the Fitbit → Google Health
+- Insulation from vendor API churn, notably, these vendors are absorbing the Fitbit → Google Health
   API migration on behalf of their customers, which in 2026 is a substantial and concrete benefit.
 - BYOD studies where participants keep whichever device they own, improving recruitment and
   retention.
@@ -142,7 +141,7 @@ that lets participants bring whatever device they already own.
   varies across participants, **device becomes an uncontrolled confound in every physiological
   variable.** This is the single most important methodological warning in this file.
 - They add a third-party data processor to the compliance surface, with its own BAA/DPA
-  requirements and its own terms — which must themselves be compatible with the underlying vendor
+  requirements and its own terms, which must themselves be compatible with the underlying vendor
   terms (see the WHOOP profile: WHOOP's terms prohibit licensing API data to third parties, which
   has obvious implications for routing WHOOP data through an intermediary).
 - Cost is generally usage-based and non-public.
@@ -154,11 +153,11 @@ controlled or explicitly modelled.
 
 ---
 
-## Category 3 — Open datasets (no device, no API)
+## Category 3, Open datasets (no device, no API)
 
 The cheapest wearable study is one where someone else already collected the data.
 
-### All of Us Research Program — Fitbit dataset
+### All of Us Research Program, Fitbit dataset
 
 | Field | Detail | Confidence |
 |---|---|---|
@@ -186,8 +185,8 @@ open analysis toolchain. See `axivity-geneactiv.md`. Access via UK Biobank appli
 |---|---|
 | Physiological variable is a primary endpoint | Single device model, direct vendor API or SDK. **Never a unified API.** |
 | Need study operations, no engineering team, **Fitbit** | Fitabase (quote required) |
-| Need study operations, no engineering team, **Garmin** | **Labfront** — published pricing, EMA included, free 5-participant tier to pilot |
-| Need nocturnal beat-to-beat intervals for HRV | **Garmin Enhanced BBI** via Fitabase or Labfront — no custom app needed |
+| Need study operations, no engineering team, **Garmin** | **Labfront**, published pricing, EMA included, free 5-participant tier to pilot |
+| Need nocturnal beat-to-beat intervals for HRV | **Garmin Enhanced BBI** via Fitabase or Labfront, no custom app needed |
 | Need raw signal | Direct: Polar BLE SDK (cheapest), Movesense (highest rates), Samsung Privileged SDK, Garmin Health SDK, Empatica (EDA), Ultrahuman (ring PPG), Axivity/ActiGraph |
 | BYOD, wearable is an intervention not an instrument | Unified API (Terra/Validic/Rook/Thryve) |
 | Question can be answered from existing data | All of Us Researcher Workbench or UK Biobank |
