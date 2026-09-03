@@ -30,22 +30,21 @@ change.** Nothing here executes; it is documentation plus the exact prompt text.
 
 ### Publishing-permission status
 
-`CLAUDE.md` carries a hard guardrail requiring the literal phrase **"confirmed, post it"** before
-anything is published where other people can see it, and it covers GitHub in full. **This routine is
-a named exception**, because it runs unattended and cannot obtain the phrase.
+The workspace guardrail was narrowed on 2026-09-03 and now covers only new issues and issue replies
+in the Beiwe `onnela-lab` repos. This routine touches neither, so it needs no exemption and no
+confirmation phrase. Its writes to this repository proceed normally.
 
-The exemption is **conditional**, and the conditions are the point:
+Two of the old exemption's conditions are worth keeping anyway, as scope discipline rather than
+permission:
 
-1. **This file is the reviewed specification.** The exemption covers the routine *as specified here* —
-   not whatever the prompt says after an unreviewed edit in the claude.ai UI. **That is the main
-   reason to keep this file in sync.**
-2. **Writes are bounded to logging and bookkeeping** — `research-log.md`, the three `*-index.json`
+1. **This file is the reviewed specification.** Keep it in sync with whatever the prompt in the
+   claude.ai UI actually says.
+2. **Writes stay bounded to logging and bookkeeping** — `research-log.md`, the three `*-index.json`
    ledgers, `_scan-queue.md`, and appends to the Module 1/2 literature libraries. Module 3 profiles,
    `feasibility-matrix.md`, module READMEs and `sources.md` are off limits.
-3. **Output is mechanical** — counts, search results, retrieval statuses — not authored argument.
 
-**The exemption lapses** if the routine is ever extended to open issues or pull requests, comment
-anywhere, @-mention anyone, or write narrative beyond run logging.
+If the routine is ever extended to open issues, comment anywhere, or @-mention anyone, the narrowed
+guardrail applies to it like anything else, and an unattended routine cannot satisfy it.
 
 **Do not re-add the PubCrawl connector** without confirming who operates the specific hosted
 instance. See `research-log.md` (2026-09-01): an unattended, no-confirmation, push-access routine has

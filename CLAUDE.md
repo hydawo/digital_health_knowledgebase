@@ -1,53 +1,26 @@
 # Digital Health Knowledge Base
 
-## Hard Guardrail: Publishing Requires Explicit Permission
+## Guardrail: Beiwe Repo Issues Require Explicit Permission
 
-**Never publish anything to a destination other people can see until the full text has been shown to Hassan and he replies with the literal phrase "confirmed, post it".** Email keeps its own phrase, "confirmed, send it".
+**Never create a new GitHub issue, or reply to an existing one, in a Beiwe-related repo until the full text has been shown to Hassan and he replies with the literal phrase "confirmed, post it".** Email keeps its own phrase, "confirmed, send it".
 
-Nothing else is permission. Not "go ahead", not "yes", not approval of the task that produced the text.
+Nothing else is permission for those two actions. Not "go ahead", not "yes", not approval of the task that produced the text. An edit to an issue body or comment already posted counts the same way, so show the new full text and ask again.
 
-This covers GitHub in full, including creating a PR or issue, PR and issue bodies, every later edit to a body already posted, comments, reviewers and assignees. It also covers Notion, Slack, and anything published to a URL. An edit to something already posted is itself a publish.
+Beiwe-related repos are the `onnela-lab` ones: `beiwe-discussions`, `beiwe-backend`, `beiwe-ios`, `beiwe-android`, `forest`, `mano`.
 
-Approval to do work is not approval to publish it. "Put this into a PR" means draft it and show it.
+Nothing else needs the phrase. Pull requests, commits and pushes, Notion, Slack, other repos, and ordinary project work all proceed normally, with the usual judgment about anything irreversible or outward-facing.
 
 **Never @-mention anyone unless Hassan has explicitly asked for that person to be tagged.** An @handle is a notification, not a citation.
 
-**Run the `humanizer` skill on every reader-facing word before showing it for approval**, GitHub bodies and comments included.
+**Run the `humanizer` skill on reader-facing prose before showing it for approval.**
 
 Full rule at [`../brainiac/conventions/publishing-permission.md`](../brainiac/conventions/publishing-permission.md).
 
 ### Scope in this repo
 
-This repo has a **public** GitHub remote, so pushes are publishing. Applying the rule literally to
-every push would block the normal `/logoff` workflow, so the scope is:
-
-- **Push freely, no phrase needed:** data, PDFs, JSON ledgers and indexes, and mechanical or
-  structural edits — renames, link fixes, table restructuring, dedup-ledger updates.
-- **Requires "confirmed, post it" first:** anything adding **new or edited reader-facing prose** —
-  study profile text, README content, `research-log.md` entries, `sources.md` narrative,
-  comparison-matrix commentary.
-
-### One named exception: the weekly literature-scan routine
-
-The routine specified in [`shared/weekly-literature-scan.md`](shared/weekly-literature-scan.md) runs
-**fully unattended on a schedule and holds push access to this remote**. It cannot obtain the phrase,
-and its Part D logging step writes prose to `shared/research-log.md`. **It is exempt**, on these
-conditions:
-
-1. **Its full prompt is version-controlled** in `shared/weekly-literature-scan.md` and reviewed
-   before any change takes effect. The exemption covers the routine *as specified there* — not
-   whatever the prompt happens to say after an unreviewed edit in the claude.ai UI.
-2. **Its writes are bounded to logging and bookkeeping**: `research-log.md` entries, the three
-   `*-index.json` ledgers, `module-03-applied-studies/_scan-queue.md`, and appends to the Module 1/2
-   literature libraries. It is explicitly forbidden from touching Module 3 profiles,
-   `feasibility-matrix.md`, module READMEs, or `sources.md`.
-3. **Its output is mechanical** — counts, search results, retrieval statuses — not authored argument.
-
-**Why this is safe to exempt and a pull request would not be:** the routine publishes *to this
-repository only*, notifies nobody, @-mentions nobody, and its prose is a factual record of what a
-search returned. The incident that motivated this guardrail was unrequested publication *addressed to
-other people*. If the routine is ever extended to open issues or PRs, comment anywhere, or write
-narrative beyond run logging, **this exemption lapses and must be revisited.**
+This repo has a public GitHub remote, but pushes here are not gated. Commit and push normally,
+including reader-facing prose and the weekly literature-scan routine's logging writes. The phrase is
+only for new issues and issue replies in the Beiwe repos, which this project does not touch.
 
 ---
 
