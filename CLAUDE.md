@@ -1,5 +1,23 @@
 # Digital Health Knowledge Base
 
+## Hard Guardrail: Publishing Requires Explicit Permission
+
+**Never publish anything to a destination other people can see until the full text has been shown to Hassan and he replies with the literal phrase "confirmed, post it".** Email keeps its own phrase, "confirmed, send it".
+
+Nothing else is permission. Not "go ahead", not "yes", not approval of the task that produced the text.
+
+This covers GitHub in full, including creating a PR or issue, PR and issue bodies, every later edit to a body already posted, comments, reviewers and assignees. It also covers Notion, Slack, and anything published to a URL. An edit to something already posted is itself a publish.
+
+Approval to do work is not approval to publish it. "Put this into a PR" means draft it and show it.
+
+**Never @-mention anyone unless Hassan has explicitly asked for that person to be tagged.** An @handle is a notification, not a citation.
+
+**Run the `humanizer` skill on every reader-facing word before showing it for approval**, GitHub bodies and comments included.
+
+Full rule at [`../brainiac/conventions/publishing-permission.md`](../brainiac/conventions/publishing-permission.md).
+
+---
+
 ## Project Purpose
 
 This project is a structured, evidence-based knowledge base covering
