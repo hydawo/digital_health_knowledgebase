@@ -1,0 +1,658 @@
+<title>Knowledge Base Explorer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+
+<style>
+:root{
+  --ground:#f2f5f4; --surface:#fff; --surface-2:#e9eeec; --raise:#fbfcfc;
+  --ink:#101816; --ink-2:#2c3634; --muted:#5d6a66;
+  --rule:#d8dfdd; --rule-2:#b9c5c1;
+  --accent:#0f6b62; --accent-soft:#dfeae7; --accent-ink:#0b4f48;
+  --signal:#a94c1a; --signal-soft:#f7e7dc;
+  --shadow:0 1px 2px rgba(16,24,22,.05);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --ground:#0b100f; --surface:#141a19; --surface-2:#1b2321; --raise:#1e2725;
+  --ink:#e8edeb; --ink-2:#c9d4d0; --muted:#93a09c;
+  --rule:#26302e; --rule-2:#3b4744;
+  --accent:#5cc3b1; --accent-soft:#15302c; --accent-ink:#8fdccd;
+  --signal:#e29257; --signal-soft:#31221a;
+  --shadow:0 1px 2px rgba(0,0,0,.35);
+}}
+:root[data-theme="dark"]{
+  --ground:#0b100f; --surface:#141a19; --surface-2:#1b2321; --raise:#1e2725;
+  --ink:#e8edeb; --ink-2:#c9d4d0; --muted:#93a09c;
+  --rule:#26302e; --rule-2:#3b4744;
+  --accent:#5cc3b1; --accent-soft:#15302c; --accent-ink:#8fdccd;
+  --signal:#e29257; --signal-soft:#31221a;
+  --shadow:0 1px 2px rgba(0,0,0,.35);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;background:var(--ground);color:var(--ink);
+  font-family:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:15px;line-height:1.6;text-align:left;-webkit-font-smoothing:antialiased;
+}
+p{text-wrap:pretty}
+.wrap{max-width:940px;margin:0 auto;padding:36px 22px 80px}
+
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
+h1{font-family:"Newsreader",Georgia,serif;font-weight:500;font-size:clamp(28px,4.4vw,42px);line-height:1.1;margin:0 0 14px;letter-spacing:-.012em;text-wrap:balance}
+.lede{font-size:17px;color:var(--ink-2);margin:0;max-width:64ch}
+.stats{display:flex;flex-wrap:wrap;gap:0;border:1px solid var(--rule);border-radius:4px;background:var(--surface);margin:24px 0 0;overflow:hidden}
+.stat{flex:1 1 120px;padding:12px 15px;border-right:1px solid var(--rule)}
+.stat:last-child{border-right:0}
+.stat b{display:block;font-family:"IBM Plex Mono",monospace;font-size:20px;font-weight:600;font-variant-numeric:tabular-nums;line-height:1.25}
+.stat span{font-size:11.5px;color:var(--muted)}
+
+.controls{position:sticky;top:0;z-index:30;background:var(--ground);padding:14px 0 12px;margin:26px 0 0;border-bottom:1px solid var(--rule)}
+.tabs{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:10px}
+.tab{font:inherit;font-size:13.5px;cursor:pointer;padding:5px 12px;border-radius:3px;border:1px solid var(--rule-2);background:var(--surface);color:var(--ink-2)}
+.tab:hover{border-color:var(--accent);color:var(--ink)}
+.tab:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.tab[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:var(--surface);font-weight:500}
+:root[data-theme="dark"] .tab[aria-selected="true"],
+:root:not([data-theme="light"]) .tab[aria-selected="true"]{color:var(--ground)}
+.searchbox{display:flex;align-items:center;gap:10px}
+#q{flex:1;font:inherit;font-size:14px;padding:8px 12px;border-radius:3px;border:1px solid var(--rule-2);background:var(--surface);color:var(--ink)}
+#q:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
+#q::placeholder{color:var(--muted)}
+#qcount{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--muted);white-space:nowrap}
+
+.panel{padding-top:26px}
+.panel[hidden]{display:none}
+h2{font-family:"Newsreader",Georgia,serif;font-weight:500;font-size:25px;margin:0 0 8px;letter-spacing:-.005em}
+h3{font-family:"Newsreader",Georgia,serif;font-weight:500;font-size:19px;margin:30px 0 8px}
+.prose p{margin:0 0 12px;max-width:66ch;color:var(--ink-2)}
+.prose p:last-child{margin-bottom:0}
+
+.term{font:inherit;background:none;border:0;padding:0;cursor:help;color:inherit;border-bottom:1px dashed var(--accent)}
+.term:hover{color:var(--accent-ink)}
+.term:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+#pop{position:absolute;z-index:60;width:min(330px,calc(100vw - 24px));background:var(--raise);border:1px solid var(--accent);border-radius:4px;padding:12px 14px;box-shadow:0 6px 22px rgba(16,24,22,.16)}
+#pop[hidden]{display:none}
+#pop h4{margin:0 0 5px;font-size:13.5px;font-weight:600}
+#pop p{margin:0;font-size:13.5px;color:var(--ink-2);line-height:1.5}
+
+.list{display:flex;flex-direction:column;gap:8px;margin-top:16px}
+.entry{background:var(--surface);border:1px solid var(--rule);border-radius:4px;box-shadow:var(--shadow);overflow:hidden}
+.entry[hidden]{display:none}
+.entry-btn{display:block;width:100%;text-align:left;font:inherit;background:none;border:0;padding:13px 16px;cursor:pointer;color:var(--ink)}
+.entry-btn:hover{background:var(--surface-2)}
+.entry-btn:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.entry-top{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}
+.entry-name{font-weight:600;font-size:15px;flex:1 1 auto;min-width:0}
+.entry-meta{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--muted)}
+.entry-desc{margin:5px 0 0;font-size:14px;color:var(--muted);line-height:1.55;max-width:80ch}
+.entry[data-open="1"] .entry-btn{background:var(--surface-2)}
+.entry[data-open="1"] .entry-name{color:var(--accent-ink)}
+.detail{border-top:1px solid var(--rule);padding:16px;display:flex;flex-direction:column;gap:14px;background:var(--raise)}
+.detail[hidden]{display:none}
+.dfield{display:flex;flex-direction:column;gap:3px}
+.dlab{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:var(--muted)}
+.dval{font-size:14.5px;color:var(--ink-2);line-height:1.6;max-width:74ch}
+.path{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--accent-ink);word-break:break-word}
+
+.filters{display:flex;flex-wrap:wrap;gap:5px;margin-top:14px}
+.fchip{font:inherit;font-size:12.5px;cursor:pointer;padding:3px 10px;border-radius:99px;border:1px solid var(--rule-2);background:var(--surface);color:var(--ink-2)}
+.fchip:hover{border-color:var(--accent)}
+.fchip:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.fchip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+:root[data-theme="dark"] .fchip[aria-pressed="true"],
+:root:not([data-theme="light"]) .fchip[aria-pressed="true"]{color:var(--ground)}
+.fchip .n{font-family:"IBM Plex Mono",monospace;font-size:11px;opacity:.75;margin-left:5px}
+
+.anat{border:1px solid var(--rule);border-radius:4px;background:var(--surface);overflow:hidden;margin-top:14px}
+.anat-row{display:grid;grid-template-columns:minmax(150px,215px) 1fr;gap:16px;padding:10px 16px;border-bottom:1px solid var(--rule);font-size:14px;align-items:start}
+.anat-row:last-child{border-bottom:0}
+.anat-row b{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500;color:var(--accent-ink);line-height:1.55}
+.anat-row span{color:var(--muted);line-height:1.55}
+@media (max-width:620px){.anat-row{grid-template-columns:1fr;gap:3px}}
+
+.call{border:1px solid var(--signal);border-left-width:3px;border-radius:4px;background:var(--signal-soft);padding:14px 16px;margin-top:18px}
+.call h4{margin:0 0 6px;font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--signal)}
+.call p{margin:0 0 9px;font-size:14px;color:var(--ink-2);max-width:66ch}
+.call p:last-child{margin-bottom:0}
+.call code{font-family:"IBM Plex Mono",monospace;font-size:13px}
+
+.flow{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.flow-card{flex:1 1 210px;background:var(--surface);border:1px solid var(--rule);border-radius:4px;padding:14px 16px;box-shadow:var(--shadow)}
+.flow-card .n{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:5px}
+.flow-card h4{margin:0 0 5px;font-size:15px}
+.flow-card p{margin:0;font-size:13.5px;color:var(--muted);line-height:1.55}
+.flow-card.sig .n{color:var(--signal)}
+
+.empty{padding:22px 0;color:var(--muted);font-size:14.5px}
+footer{margin-top:44px;padding-top:16px;border-top:1px solid var(--rule);font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+
+<p class="eyebrow">digital_health_knowledgebase &middot; read 2026-09-03</p>
+<h1>What's in the knowledge base</h1>
+<p class="lede">A research library about the gadgets and apps used to collect health data from
+people &mdash; smartwatches, rings, chest straps, and the phone software that quietly records where
+someone goes and how much they sleep. It answers three separate questions, one per module.
+Everything below opens: click any row.</p>
+
+<div class="stats">
+  <div class="stat"><b>3</b><span>modules</span></div>
+  <div class="stat"><b>87</b><span>write-ups</span></div>
+  <div class="stat"><b>167</b><span>papers stored</span></div>
+  <div class="stat"><b>117</b><span>documents</span></div>
+  <div class="stat"><b>447 MB</b><span>on disk</span></div>
+</div>
+
+<div class="controls">
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" data-tab="start" aria-selected="true">Start here</button>
+    <button class="tab" role="tab" data-tab="m1" aria-selected="false">1 &middot; Devices</button>
+    <button class="tab" role="tab" data-tab="m2" aria-selected="false">2 &middot; Phone platforms</button>
+    <button class="tab" role="tab" data-tab="m3" aria-selected="false">3 &middot; Real studies</button>
+    <button class="tab" role="tab" data-tab="ops" aria-selected="false">Upkeep</button>
+    <button class="tab" role="tab" data-tab="gloss" aria-selected="false">Glossary</button>
+  </div>
+  <div class="searchbox">
+    <input id="q" type="search" placeholder="Search all 87 write-ups &mdash; try retention, Oura, Android, consent, battery&hellip;" autocomplete="off">
+    <span id="qcount"></span>
+  </div>
+</div>
+
+<div class="panel" id="p-start">
+  <div class="prose">
+    <h2>The short version</h2>
+    <p>Anyone planning a health study has to pick their instruments. Hand out Fitbits or Oura rings?
+    Can you get the raw heart-rate signal back out afterwards, or only a tidied-up "sleep score"?
+    Will people still be wearing the thing in six months? Vendors answer the first two questions in
+    marketing language and do not answer the third at all.</p>
+    <p>This knowledge base answers all three from original sources, and keeps the three kinds of
+    answer deliberately apart.</p>
+  </div>
+
+  <div class="flow">
+    <div class="flow-card">
+      <span class="n">Module 1 &middot; 15 write-ups</span>
+      <h4>The devices</h4>
+      <p>Wrist and finger hardware &mdash; Apple Watch, Oura, WHOOP, Fitbit, Garmin, plus the
+      research-grade kit. What each measures, and what you can actually get back out of it.</p>
+    </div>
+    <div class="flow-card">
+      <span class="n">Module 2 &middot; 10 write-ups</span>
+      <h4>The phone platforms</h4>
+      <p>Software that turns a participant's own phone into a sensor &mdash; location, movement,
+      screen use &mdash; plus pop-up questionnaires. Who runs the servers, and who holds the data.</p>
+    </div>
+    <div class="flow-card">
+      <span class="n">Module 3 &middot; 62 write-ups</span>
+      <h4>What actually happened</h4>
+      <p>Real studies that deployed the things in Modules 1 and 2. How many signed up, how many
+      stayed, what broke. The part no vendor publishes.</p>
+    </div>
+  </div>
+
+  <div class="prose">
+    <h3>Modules 1 and 2 describe capability. Module 3 describes reality.</h3>
+    <p>That split is the whole design. A vendor page will tell you a wristband streams skin-response
+    data. Module 3 has a study where four hospitals used that exact wristband, and the sites
+    streaming it live lost about half their data while the sites recording to the device's own memory
+    lost under ten percent. Same hardware, same people wearing it, opposite outcome &mdash; decided
+    by a settings choice nobody documents as important.</p>
+    <p>So Modules 1 and 2 never claim a device works. They record what it offers. Module 3 supplies
+    the evidence about what happened, and the two link to each other instead of repeating.</p>
+  </div>
+
+  <h3>What is a "write-up"?</h3>
+  <div class="prose">
+    <p>The repository calls these <button class="term" data-t="profile">profiles</button>. Rather
+    than define the word, here is the actual skeleton every device and platform write-up follows
+    &mdash; the same headings, in the same order, every time, so any two can be compared line by
+    line.</p>
+  </div>
+  <div class="anat" id="anat-tech"></div>
+
+  <div class="prose" style="margin-top:22px">
+    <p>Module 3 uses a different skeleton, because the thing being described is an event rather than
+    a product.</p>
+  </div>
+  <div class="anat" id="anat-study"></div>
+
+  <div class="call">
+    <h4>Why the headings are fixed</h4>
+    <p>If a fact isn't available the heading stays and the answer is "unknown". That sounds pedantic
+    and it is the point: a missing row is visible, whereas a quietly dropped section looks like a
+    finished document. Every claim also carries one of four confidence markers &mdash;
+    <button class="term" data-t="confidence">verified, corroborated, reported, unclear</button>
+    &mdash; so nothing reads as more certain than its source supports.</p>
+  </div>
+</div>
+
+<div class="panel" id="p-m1" hidden>
+  <div class="prose">
+    <h2>Module 1 &mdash; the devices</h2>
+    <p>Fifteen write-ups on wearable hardware and the software around it. The organising question is
+    not "is this accurate" but <em>what can a researcher actually collect, access, export and use,
+    under what conditions, and at what cost</em>.</p>
+  </div>
+  <div class="list" id="list-m1"></div>
+</div>
+
+<div class="panel" id="p-m2" hidden>
+  <div class="prose">
+    <h2>Module 2 &mdash; the phone platforms</h2>
+    <p>Ten write-ups on <button class="term" data-t="phenotyping">digital phenotyping</button>
+    software: systems that collect from a participant's own smartphone in the background, and
+    usually push questionnaires at them too. The question is what a team can collect, where the data
+    lives, and how much infrastructure they have to run themselves.</p>
+  </div>
+  <div class="list" id="list-m2"></div>
+</div>
+
+<div class="panel" id="p-m3" hidden>
+  <div class="prose">
+    <h2>Module 3 &mdash; what actually happened</h2>
+    <p>Sixty-two real deployments, each read in full rather than skimmed from the abstract, and each
+    summarised by the single most useful thing it teaches a team about to make the same choice.
+    Filter by technology, or search for a problem you're worried about.</p>
+  </div>
+  <div class="filters" id="f-m3"></div>
+  <div class="list" id="list-m3"></div>
+</div>
+
+<div class="panel" id="p-ops" hidden>
+  <div class="prose">
+    <h2>Keeping it current</h2>
+    <p>Four shared documents hold everything not specific to one module, and an automated job runs
+    every Monday to catch new papers.</p>
+  </div>
+  <div class="list" id="list-ops"></div>
+
+  <h3>The Monday job, in four steps</h3>
+  <div class="flow">
+    <div class="flow-card sig"><span class="n">Step 1</span><h4>New device papers</h4>
+      <p>Searches the US National Library of Medicine's database for anything new on Oura, WHOOP and
+      Apple Watch, and files each with a note on who funded it.</p></div>
+    <div class="flow-card sig"><span class="n">Step 2</span><h4>New platform papers</h4>
+      <p>The same per phone platform, across two databases &mdash; several of these teams publish in
+      computing venues medical databases don't index. Free papers are downloaded and kept.</p></div>
+    <div class="flow-card sig"><span class="n">Step 3</span><h4>Shortlist studies, write nothing</h4>
+      <p>Module 3 candidates go on a to-read list. The job is forbidden from writing a study
+      write-up itself.</p></div>
+    <div class="flow-card sig"><span class="n">Step 4</span><h4>Log and save</h4>
+      <p>One dated entry describing what the run found, then everything saved in a single batch.</p></div>
+  </div>
+
+  <div class="call">
+    <h4>Why step 3 refuses to write</h4>
+    <p>Modules 1 and 2 catalogue papers <em>about</em> a technology, which can be done safely from an
+    abstract. Module 3 asserts <em>what happened during a deployment</em>, which cannot &mdash; those
+    numbers live in the full text, and abstract-level screening in this project got the platform
+    wrong about three times in twelve. So the job shortlists and a person writes.</p>
+  </div>
+
+  <div class="call">
+    <h4>The publishing rule</h4>
+    <p>Nothing written for other people to read goes anywhere public until the full text has been
+    shown and approved with the exact phrase <code>confirmed, post it</code>. Data files, PDFs and
+    bookkeeping updates are exempt; new prose is not. The Monday job is the single carve-out, since
+    it runs unattended and can't ask &mdash; and in exchange it may only write factual run logs, into
+    this one repository, notifying nobody.</p>
+  </div>
+</div>
+
+<div class="panel" id="p-gloss" hidden>
+  <div class="prose">
+    <h2>Glossary</h2>
+    <p>Every term the rest of this page leans on. The dotted-underlined words elsewhere open these
+    same definitions in place.</p>
+  </div>
+  <div class="list" id="list-gloss"></div>
+</div>
+
+<div id="pop" hidden role="dialog" aria-live="polite"><h4></h4><p></p></div>
+
+<footer>Counts read from the working tree, 3 September 2026 &middot; 87 write-ups across 3 modules</footer>
+</div>
+
+<script>
+var GLOSS = {
+  profile:["Profile (a write-up)","One structured document about one thing — a device, a platform, or a single study. Same headings every time, so any two can be compared line by line. There are 80 of them."],
+  phenotyping:["Digital phenotyping","Measuring behaviour and health from traces a phone or wearable produces anyway — movement, location, sleep timing, how often the screen comes on — rather than by asking someone."],
+  passive:["Passive data","Collected in the background with no effort from the participant. The opposite is active data, which needs them to answer or do something."],
+  ema:["EMA / ESM","Ecological Momentary Assessment. Short questionnaires pushed to a phone several times a day, capturing how someone feels right now instead of how they remember feeling last month."],
+  byod:["BYOD","Bring Your Own Device — participants use their own phone or watch. Cheaper, and people wear their own things more, but it silently excludes anyone without the right hardware. One study lost 42% of everyone approached that way."],
+  provisioned:["Provisioned","The study hands out the equipment. Removes the exclusion problem, costs money, and — counter-intuitively — has been measured retaining people worse than letting them use their own."],
+  retention:["Retention","What share of enrolled people were still in the study at the end. The flattering number, and the one most papers lead with."],
+  completeness:["Data completeness","What share of the data you expected actually arrived. Usually far worse than retention. One study reported about 80% retention and 17.7% complete data across streams — same people, same months."],
+  adherence:["Adherence / compliance","How reliably someone did the thing asked of them — wore the device, answered the prompts. Usually a percentage of days or prompts, but every paper sets its own threshold, which makes cross-study comparison treacherous."],
+  matrix:["Comparison matrix","Side-by-side tables covering every device or platform in a module at once, so you can scan one column — cost, say, or raw data access — across all of them without opening fifteen documents."],
+  feas:["Feasibility matrix","Module 3's version of the same idea. One row per study: what they used, how many people, how long, how many stayed, what broke, and a one-line lesson."],
+  ledger:["Dedup ledger","A plain machine-readable list of every paper already seen, so the weekly automated search doesn't keep re-proposing the same ones. Three of them, one per module."],
+  queue:["Scan queue","The to-read list. The automated job drops candidate studies here; a person decides whether each earns a write-up."],
+  raw:["Raw vs derived data","Raw is the actual sensor signal. Derived is the vendor's interpretation of it — a sleep score, a readiness number. Derived data can change when the vendor updates its algorithm, retroactively altering results you already published."],
+  oa:["Open access","Papers anyone may legally read and redistribute. Where a cited paper is open access the actual PDF is stored in the repository rather than merely linked, because links rot."],
+  confidence:["Evidence confidence","Four markers applied to claims. Verified — a current authoritative primary source says so. Corroborated — several credible sources, but not clearly in current primary documentation. Reported — one credible source, unconfirmed. Unclear — the evidence conflicts or runs out."],
+  healthkit:["HealthKit","Apple's on-phone health database. Apple runs no server a researcher can query, so data has to be pulled off each participant's own device through an app they install."],
+  forest:["Forest","A separate open-source analysis package from the same lab as Beiwe. Beiwe collects and stores; Forest analyses. Built to work together but genuinely separate — a study can use either alone."],
+  selfhost:["Self-hosted","The research team runs the servers themselves. Free in licence terms, expensive in staff time and expertise. The alternative is a managed service where a vendor runs it and bills you."]
+};
+
+var ANAT_TECH = [
+  ["Quick Facts","Who makes it, what it costs, whether it's open source, and the date this was last checked."],
+  ["Summary","What makes this one different from the others, in a paragraph."],
+  ["Platform architecture","How the pieces fit — device, app, cloud — and what talks to what."],
+  ["Sensors and data streams","Which sensors are physically present and, separately, which of them a researcher can actually reach. These are not the same list."],
+  ["Derived metrics","The vendor's computed numbers — sleep stages, readiness, stress."],
+  ["Active data collection","Whether it can also ask participants questions."],
+  ["Study management","Dashboards for enrolling people and watching whether their data is arriving."],
+  ["Data access and export","The heart of it. Bulk download, per-participant export, how far back history goes, how long you wait."],
+  ["APIs and extensibility","What can be automated or built on top."],
+  ["Deployment and infrastructure","What the team has to stand up and maintain themselves."],
+  ["Participant experience","Battery life, charging, how often it must be synced, how much it nags."],
+  ["Privacy and compliance","Encryption, where data physically sits, and which certifications are documented rather than implied."],
+  ["Pricing","Real figures where public, and an explicit note where a vendor requires a sales call."],
+  ["Research evidence","The strongest validation studies, including who funded them."],
+  ["Strengths / Limitations","Both, evidenced. No marketing claim is promoted to a fact."],
+  ["Best-fit / poor-fit","The questions this is right for, and the ones it will quietly ruin."],
+  ["Open questions","What couldn't be established, and who would have to be asked."],
+  ["Key links and sources","Every URL behind every claim."]
+];
+var ANAT_STUDY = [
+  ["Quick Facts","Citation, design, sample size enrolled versus analysed, population, duration, equipment, and who funded it."],
+  ["Summary","What the study did, and the one finding that matters operationally."],
+  ["Instrumentation","What was used, and whether participants brought their own or were handed equipment."],
+  ["Recruitment and retention","How people were found, how many stayed, and the exact definition of “stayed” this paper used."],
+  ["Completeness and failures","What fraction of the expected data arrived, and everything that broke."],
+  ["Feasibility findings","The authors' own verdict on whether this combination is workable."],
+  ["Relevance to design","What a team about to do the same thing should know first."],
+  ["Evidence confidence","How much weight the feasibility claims can carry."],
+  ["Related profiles","Links back to the device and platform write-ups in Modules 1 and 2."]
+];
+
+var M1 = [
+ ["apple-watch-healthkit","Apple Watch / HealthKit","Consumer","The biggest consumer ecosystem, and architecturally the least like anything else here: there is no Apple server a researcher can query. Data has to come off each participant's own phone.","A huge installed base and the best sleep-staging agreement measured in the six-device comparison — but every study has to build or borrow an app to extract data device by device."],
+ ["fitbit-google","Fitbit / Google","Consumer","The historic default for academic research and the most-studied brand in the validation literature, now migrating into Google's health stack.","A mature support ecosystem grew up around it — one third-party service alone reports over 1,600 publications."],
+ ["oura","Oura","Consumer","The strongest consumer device for sleep and overnight physiology. A ring puts the sensor on the finger, where blood flow gives a cleaner signal and there is less movement noise than at the wrist.","No screen means nothing competing for attention overnight, which is part of why people keep wearing it."],
+ ["whoop","WHOOP","Consumer","Architecturally the most closed of the major consumer platforms. Screenless, with the hardware bundled into a subscription.","Screenless cuts both ways: no feedback loop biasing participant behaviour, but also no way to show them anything."],
+ ["garmin","Garmin","Consumer","Battery life measured in weeks rather than days, no paywall on core health metrics, and a real server-side interface.","The battery advantage isn't convenience — it removes the predictable nightly gaps that appear whenever a device must be charged daily."],
+ ["samsung","Samsung","Consumer","The most under-appreciated option for anyone who needs the underlying signal from a consumer device. Its privileged health toolkit exposes raw sensor output.","Raw movement, optical heart, ECG and skin-response data from a mainstream watch is unusual."],
+ ["withings","Withings","Clinical","A connected-health-device company with a purpose-built decentralised clinical trials arm, not a fitness brand. The wrong shape for a direct comparison, which is exactly why it belongs here.","Scales, blood-pressure cuffs and watches aimed at trials rather than consumers."],
+ ["polar","Polar","Open sensor","The only vendor here selling raw-signal access as a documented, free, first-class feature on inexpensive consumer hardware.","Its open toolkit streams raw ECG and movement straight over Bluetooth into your own app."],
+ ["movesense","Movesense","Open sensor","The closest thing to a programmable research sensor: a coin-sized device with a motion sensor and single-lead ECG, an open interface, no licence fee, and the ability to run your own code on the device.","Missing from the first research pass, and it shouldn't have been."],
+ ["empatica","Empatica","Research-grade","The one to reach for when the question needs genuine physiological signal from a regulated, purpose-built device rather than a consumer product with an interface bolted on.","Used across four hospitals in the epilepsy study that produced this collection's sharpest lesson about recording settings."],
+ ["ametris-actigraph","ActiGraph (now Ametris)","Research-grade","The historical gold standard for research accelerometry — for two decades the default device in physical-activity and sleep research, and the unit of measurement an enormous literature is written in.","Now trading as Ametris under Signant Health."],
+ ["axivity-geneactiv","Axivity / GENEActiv","Research-grade","The devices behind the world's largest movement-data cohorts, and the opposite pole from every consumer platform: no cloud, no interface, no account, no algorithms, no subscription. Just calibrated raw motion written to a file.","Nothing to be locked out of, because there is nothing to log into."],
+ ["emerging-platforms","Emerging and specialist platforms","Survey","Newer entrants and specialist hardware not yet warranting a write-up each, including a research watch from a major health-tech arm.","Kept as one document so the module doesn't fragment into stubs."],
+ ["data-intermediaries","Data intermediaries","Cross-cutting","Services sitting between a study and several device vendors, offering one interface instead of six. One publishes real pricing; most don't.","Also covers the open datasets that already exist, which occasionally make new data collection unnecessary."],
+ ["_inventory-and-scope-decisions","Inventory and scope decisions","Method","Which devices were considered, which made the cut, and the reasoning behind every exclusion.","Written so a later reader can challenge a boundary rather than guess at it."]
+];
+
+var M2 = [
+ ["beiwe","Beiwe","Academic · self-hosted","Harvard's open-source smartphone platform for high-volume digital phenotyping. A configurable iOS and Android app plus a backend the team runs itself, handing analysis to a companion package.","The only platform here offering both a free self-hosted route and documented paid hosting from the same people who build it."],
+ ["radar-base","RADAR-base","Academic · self-hosted","Open-source remote monitoring built on a streaming backend, designed for scale and for combining phone sensors, wearables and third-party devices in one pipeline.","The source of this collection's largest and longest deployments."],
+ ["mindlamp","mindLAMP","Academic · self-hosted","Open-source phenotyping and intervention software from a Harvard-affiliated digital psychiatry group, built explicitly for clinical as well as research use.","Some components in its public code are already marked deprecated — worth mapping before building on any one of them."],
+ ["aware-framework","AWARE Framework","Academic · self-hosted","One of the longest-running open-source mobile sensing frameworks in the field, an international collaboration rather than one lab's tool.","The one platform here that says openly its iOS version covers less than its Android version. Everywhere else that question is simply left open."],
+ ["avicenna-research-ethica","Avicenna Research","Commercial","Formerly Ethica, and cited under that name across a decade of literature. Commercial, and requires no coding from researchers.","Holds the only independently audited security certification in the module."],
+ ["metricwire","MetricWire","Commercial","A Canadian platform running continuously since 2013 — a longer commercial track record than most competitors here. Consent workflows, diaries, background sensing and location.","Pricing still requires a sales conversation."],
+ ["m-path","m-Path","Hybrid","Point-and-click questionnaire and intervention software built for researchers and clinicians without programming skills.","Publishes the most granular pricing in the module — itemised tiers and add-ons, no sales call needed."],
+ ["lifedata","LifeData","Commercial · edge of scope","Included deliberately at the boundary. Its only background stream is location captured alongside a survey answer — no movement, screen use, communication metadata or wearable integration at all.","Listed as a questionnaire platform benchmarked against phenotyping platforms, not as one of them."],
+ ["carp-mobile-sensing","CARP Mobile Sensing","Academic · framework","Architecturally unlike everything else: a programming library you build your own app on top of, not a product configured through a dashboard.","Changes what capacity you need — mobile developers rather than server administrators."],
+ ["legacy-and-adjacent-platforms","Legacy and adjacent platforms","Survey","Platforms that matter historically or sit just outside the definition, with their status stated plainly rather than silently omitted.","Includes two well-known names whose current maintenance status could not be established."]
+];
+
+var M3 = [
+ ["radar-mdd-recruitment-retention","Matcham 2022 — RADAR-MDD","radar","fitbit","623 enrolled","11–24 months","80% retention and 17.7% complete data across streams came from the same study. Size any multi-stream analysis off the second number."],
+ ["radar-mdd-longterm-engagement","Zhang 2023 — RADAR-MDD","radar","fitbit","614 analysed","94 weeks","Retention is stream-specific, and wearables outlast phones. Study-provided phones retained worse than letting people use their own."],
+ ["radar-ad-feasibility-usability","Muurling 2024 — RADAR-AD","radar","axivity","229 + 45","8 weeks","Eight devices at once is feasible even in mild-to-moderate Alzheimer's. Design variation within a device type mattered more than active versus passive."],
+ ["radar-base-treatment-engagement","de Angel 2023","radar","fitbit","66","7 months","More intensive treatment predicted more drop-out. Self-tracking without visible improvement made people take the wearable off."],
+ ["beiwe-als-adherence","Beukenhorst 2022 — ALS","beiwe","","94 across 3 studies","12–52 weeks","The unsupported baseline: 59% still answering at three months with no reminders and no payment. Also establishes that purely background collection is impossible."],
+ ["beiwe-chronic-disease-substudy","Yi 2024 — nurses cohort","beiwe","","32,441 invited → 2,394","1 year","Thirteen invitations per enrolment, and compliance is bimodal rather than average. Deleting the app, not technical failure, was the dominant loss."],
+ ["beiwe-adolescent-feasibility","Huang 2025 — adolescents","beiwe","","48 analysed","18 months","Background collection held flat near 94% while surveys halved. Reminder intensity tracked completion almost exactly."],
+ ["beiwe-missing-data-sociodemographic","Kiang 2021","beiwe","","211 across 6 studies","2015–2018","Expect roughly 19–27% of data missing from day one, growing about a point a fortnight. Demographics mostly didn't predict it; phone operating system did."],
+ ["beiwe-inpatient-suicide-pilot","Wang 2021 — inpatient","beiwe","","104 → 83","~7 days","Model missing data as a predictor rather than a nuisance. Doing so beat most of the actual content features."],
+ ["beiwe-spinal-cord-injury-incentives","Mercier 2020 — spinal cord injury","beiwe","","105 approached → 43","4 months","Compliance rose from 50% to 78% after a modest two-monthly payment was introduced mid-study."],
+ ["beiwe-actigraph-modus-als-progression","Johnson 2023 — ALS progression","beiwe","actigraph","46 → 40","6 months","Wrist and ankle device compliance printed side by side, on the same participants."],
+ ["beiwe-nurses-health-study-burst","Yi 2025 — short burst","beiwe","","600 invited → 181","8 days","Unpaid, and only about 55% of twice-daily prompts came back even across a single week."],
+ ["beiwe-pain-clinic-operational-report","Fu 2024 — live pain clinic","beiwe","","77 onboarded","6-month protocol","49% six-month completion inside a working clinic, with two mid-study ethics amendments documented rather than hidden."],
+ ["beiwe-spine-disease-mobility","Cote 2019 — spine disease","beiwe","","—","—","42% of everyone approached was excluded on the spot for not owning a smartphone. The starkest exclusion figure here."],
+ ["beiwe-type-2-diabetes-feasibility","McInerney 2024 — type 2 diabetes","beiwe","","—","—","iPhones missed 70% of daily questionnaires against Android's 21%. Operating-system differences are stream-specific before they are platform-specific."],
+ ["beiwe-fitbit-gynecologic-cancer-hope","Wright 2018 — gynaecologic oncology","beiwe","fitbit","18 eligible","—","A perfect approach-to-consent rate — after the treating doctors had already filtered out 8 of 18 eligible patients. Clinician gatekeeping is invisible in most funnels."],
+ ["aware-chemotherapy-engagement","McClaine 2024 — chemotherapy","aware","fitbit","320 approached → 162","90 days","90% completion when the wearable is provided and the phone is the participant's own."],
+ ["aware-light-smartsense-d-youth-depression","Camargo 2025 — youth depression","aware","","48 → 40","8 weeks","Seven of eight people who quit did so over app technical problems, not burden or disinterest."],
+ ["aware-msavorus-loneliness-multidevice","Nguyen 2025 — loneliness","aware","oura","37 → 29","22 weeks","A phone platform plus a ring plus a watch, running together for five months."],
+ ["aware-msavorus-passive-completeness-companion","Borelli 2025 — same cohort, data view","aware","oura","37 → 28","19+ weeks","Provided wearables beat the participant's own phone: 11% missing against 16%. Same people, same months."],
+ ["aware-momo-mood-mood-disorders","Aledavood 2024 — mood disorders","aware","","164 → 151","up to 1 year","Missing background data ranged from 1.2% to 20.4% between groups inside one study on one platform. A seventeen-fold spread makes headline completeness figures nearly meaningless."],
+ ["aware-stand-mood-prediction-adherence","Balliu 2024 — STAND","aware","","437 → 183","up to 40 weeks","1.7% against 33–37% early drop-out, in-person care versus online support — with the sicker group retaining better."],
+ ["aware-alcohol-liver-disease-craving","Wu 2023 — liver disease","aware","","163 → 12","30 days","Five of twelve non-completers left citing app problems by name. The most explicit app-attributed drop-out here."],
+ ["aware-binge-drinking-jitai-sensor-loss","Bae 2023 — binge drinking","aware","","—","—","35% of person-days lost because participants, told the sensors were configurable, went into settings and turned location off."],
+ ["mindlamp-relapse-3site","Cohen 2023 — three sites, two countries","mindlamp","","132","~5 months","Ported across two countries and urban and rural sites with only modest quality loss — and the rural site had the best background-data completeness."],
+ ["mindlamp-linc-passive-data-quality","Calvert 2026 — LINC","mindlamp","","373","2–3 weeks","Far better location-data quality than six earlier studies on the same platform, and the cost is stated: 1.3 support contacts per participant, two full-time assistants."],
+ ["mindlamp-global-cognitive-multisite","Castillo 2025 — India and US","mindlamp","","56","30 days","Remote cognitive testing across two countries. Flagged in its own write-up as the thinnest evidence in its group."],
+ ["lamp-schizophrenia-cognition-unpaid","Liu 2019 — unpaid, 12 weeks","mindlamp","","—","12 weeks","Patients engaged three times more than healthy volunteers. Deliberately unpaid, to see what happens without money."],
+ ["avicenna-adolescent-esm-school-phone-bans","Achterberg 2026 — school phone bans","avicenna","","211 → 195","17 days","78% compliance from adolescents during a national school phone ban."],
+ ["avicenna-ema-suicidal-ideation-iatrogenic","Kivelä 2024 — suicidal ideation","avicenna","","209 → 82","21 days","Acceptability reported as both 39% and 98% in the same paper, depending which question was asked."],
+ ["avicenna-smoking-youth-ema-compliance","Kochhar 2025 — youth smoking","avicenna","","84","7 days","77% compliance at five prompts a day across a single week."],
+ ["metricwire-fraudulent-participation","Siebers 2025 — fraud","metricwire","fitbit","10 fraudulent enrolled, 37 later blocked","~6 months","Remote, incentivised, no in-person step: fraudulent sign-ups enrolled successfully. An adversarial failure mode nothing else here covers."],
+ ["metricwire-post-discharge-ema-reactivity","Spangenberg 2026 — after discharge","metricwire","","16 interviewed","~7 months","63% falling to 47% across phases, against 14–21% in comparable earlier studies. Roughly 300 prompts per person."],
+ ["metricwire-sgm-youth-ema-feasibility","Clark 2025 — sexual and gender minority youth","metricwire","","50","28 days","80% compliance, the highest mental-health figure in the collection."],
+ ["mpath-avatar2-esm-engagement","Dennard 2025 — AVATAR2","mpath","","207 → 134","6 days × 3 rounds","39% compliance, the lowest here and largely a matter of definition — and 35% declined the questionnaire component outright."],
+ ["mpath-nssi-ema-benefits-challenges","Bonnier 2025 — self-injury","mpath","","132 → 124","28 days","75% compliance, declining in a straight line rather than falling off a cliff."],
+ ["mpath-dementia-esm-feasibility","Dewitte 2025 — dementia","mpath","","12","10 days","80% compliance at seven prompts a day in dementia, no drop-outs, and nobody was paid."],
+ ["carp-mpath-sense-performance-study","Niemeijer 2023 — performance study","carp","","104","3 weeks","Half the expected data arrived, split evenly across iPhone and Android, totalling 70 gigabytes."],
+ ["empatica-epilepsy-data-quality","Böttcher 2022 — four epilepsy centres","","empatica","632 inpatients + 39 outpatients","~128,000 hours","Recording mode dominates everything: under 10% loss recording to the device, around 50% streaming live. People wore it; the system lost the data."],
+ ["fitbit-heart-study-afib","Lubitz 2022 — Fitbit Heart Study","","fitbit","455,699","median 122 days","Wear compliance no provisioned study matches — 23 hours a day — and it costs representativeness. A $50 incentive did not fix the funnel."],
+ ["apple-heart-data-management-lessons","Garcia 2022 — Apple Heart Study","","apple","419,297","8 months","419,297 enrolled produced 450 usable results. In app-enrolled trials you cannot reliably count your own participants."],
+ ["allofus-fitbit-step-counts","Master 2022 — All of Us","","fitbit","214,206 → 6,042","median 4 years","Data people generate for themselves is far more complete than data a study collects, and buys four-year horizons — at about a 3% linkage yield."],
+ ["byod-demographic-imbalance","Cho 2022 — who gets left out","","fitbit","15 studies + own cohort","—","None of the eleven bring-your-own-device studies reporting demographics were representative. One national cohort is over 80% underrepresented overall but 70% White in its wearable substudy."],
+ ["withings-postop-remote-monitoring","Jonker 2021 — after surgery","","withings","102 screened → 37 completed","3 months","Switching recruitment from telephone to face-to-face nearly doubled participation. The barrier was at consent, not during the study."],
+ ["movesense-palliative-support-trial","Helmer 2025 — palliative care","","movesense","275 screened → 7","up to 30 days","A rule against consent by proxy excluded 95.6% of screened patients and terminated the trial. Settle consent before designing recruitment."],
+ ["sleepsight-schizophrenia-rest-activity","Meyer 2018 — Sleepsight","","fitbit","15 → 14","8 weeks","Patients rejected research-grade wearables as stigmatising; the consumer device they chose instead got 91% wear."],
+ ["dp-schizophrenia-tolerability","Raugh 2021 — tolerability","","empatica","109","6 days","Stream reliability tracks how much computing and radio a sensor needs. A Bluetooth-tethered band returned about a quarter of its data."],
+ ["connect-multi-wearable-psychosis","Bladon 2026 — CONNECT","","samsung","105","20 weeks","Satisfaction was flat across three watches but completeness differed threefold, and the most-chosen device performed worst. 98% of one device's sleep records were present but corrupt."],
+ ["actigraph-als-upper-limb-wear-time","Straczkiewicz 2024 — wear-time thresholds","","actigraph","202–308 depending on rule","—","The same raw data yields 202, 240 or 308 analysable participants depending only on how many hours of daily wear you require."],
+ ["oura-university-freshmen-sleep","Soon 2025 — first-year students","","oura","—","20 weeks","10.8% withdrawal at roughly $263 in compensation. The generous-payment benchmark."],
+ ["whoop-mental-health-survey-engagement","Presby 2025 — existing members","","whoop","181,574 members","13 months","170,320 invited produced 3,196 responders, averaging under two responses each over thirteen months — with no recruitment step at all."],
+ ["garmin-low-income-physical-activity","Carlson 2026 — ActiveKC","","garmin","114","7 weeks","Not one of 181 screened was excluded for smartphone access — though access was counted per household rather than per person."],
+ ["samsung-palliative-pain-ecuador","Domínguez 2026 — Ecuador","","samsung","7","7 weeks","The first Latin American deployment here. Completed a palliative protocol by recruiting inside an existing care programme, with family present at consent."],
+ ["sensorkit-techsans-older-adults","Shen 2026 — TechSANS","","apple","21","~6 months","74% of days met the wear threshold, uncompensated — and the authors conclude payment matters even for low-effort background work."],
+ ["vpn-network-traffic-phenotyping","Mahmood 2026 — network traffic","","","29 contributing","2 weeks","74% coverage at under 1% battery a day, spoiled by a single 304-hour gap after a restart nobody noticed."],
+ ["oura-tempredict-healthcare-worker-adherence","Shiba 2023 — healthcare workers, TemPredict","","oura","100 → 91","8+ weeks","Ring worn on 88% of nights against surveys on 64% of days, in clinicians working pandemic shifts. Residents were the weak group on both, and only on surveys did the gap get wide."],
+ ["apple-heart-movement-study-retention","Truslow 2024 — Apple Heart and Movement Study","","apple","82,809","1 year","Three retention numbers from one cohort: 3.2% withdrew, 38% were quiet on day 365, 28% had stopped for good. Half of all withdrawals came inside 111 days."],
+ ["apple-womens-health-study-retention","Mahalingaiah 2022 — Apple Women's Health Study","","apple","10,000","6 months","Monthly survey response fell from 62% to 35% in six months while passive HealthKit cycle logging held at 72%. The people who kept answering were whiter and better educated than the people who enrolled."],
+ ["aware-oura-delphi-covid-lockdown","Moshe 2021 — AWARE on iOS plus Oura, Finland","aware","oura","60 → 55","30 days","Bring your own ring and your own iPhone: no hardware cost, five drop-outs in a month, and a cohort that was 93% White and 80% degree-holding by construction."],
+ ["beiwe-transdiagnostic-outpatient-completeness","Pellegrini 2022 — four diagnostic groups","beiwe","","45 → 38","8 weeks","Paid, visit-supported and 84% retained, yet only 39% of participants delivered half the expected location data. Retention and completeness are different outcomes in the same people."],
+ ["beiwe-schizophrenia-state-clinic-pilot","Torous, Barnett and Staples 2017–18 — first schizophrenia pilot","beiwe","","17 → 15","up to 90 days","The unsupported floor: no payment for app use, no reminders, about half the scheduled data. One of 17 lost entirely to Wi-Fi-only upload, and two of five relapsers uninstalled the app before hospitalisation."],
+ ["beiwe-cancer-surgery-survey-retention","Panda 2021 — cancer surgery","beiwe","","101 → 74 → 24","6 months","Zero of 13 Android users answered the month-one survey, the opposite direction to the type 2 diabetes study on the same platform. Operating-system effects cannot be predicted even from platform and stream."]
+];
+
+var OPS = [
+ ["shared/terminology.md","Terminology","The definitions every write-up holds to, so “adherence” means the same thing in Module 1 as in Module 3."],
+ ["shared/research-log.md","Research log","Twenty-one dated sessions recording what was decided, what changed, and — importantly — what could not be retrieved and why."],
+ ["shared/unresolved-questions.md","Unresolved questions","Everything no public source can answer, each paired with the specific company that could answer it, and how to reach them."],
+ ["shared/weekly-literature-scan.md","Weekly scan specification","The full text of the automated Monday job, kept in the repository because a job whose instructions live only in a web console is invisible to everyone working here. That has already caused confusion once."]
+];
+
+function el(t,c,h){var e=document.createElement(t); if(c)e.className=c; if(h!==undefined)e.innerHTML=h; return e;}
+
+function anat(id,rows){
+  var box=document.getElementById(id);
+  rows.forEach(function(r){
+    var row=el('div','anat-row');
+    row.appendChild(el('b',null,r[0]));
+    row.appendChild(el('span',null,r[1]));
+    box.appendChild(row);
+  });
+}
+anat('anat-tech',ANAT_TECH); anat('anat-study',ANAT_STUDY);
+
+function entry(o){
+  var e=el('div','entry'); e.dataset.open='0';
+  e.dataset.search=(o.name+' '+o.desc+' '+(o.extra||'')+' '+(o.meta||'')+' '+o.slug).toLowerCase();
+  e.dataset.plat=o.plat||''; e.dataset.dev=o.dev||'';
+  var b=el('button','entry-btn'); b.type='button'; b.setAttribute('aria-expanded','false');
+  var top=el('div','entry-top');
+  top.appendChild(el('span','entry-name',o.name));
+  if(o.meta) top.appendChild(el('span','entry-meta',o.meta));
+  b.appendChild(top);
+  b.appendChild(el('p','entry-desc',o.desc));
+  var d=el('div','detail'); d.hidden=true;
+  (o.fields||[]).forEach(function(f){
+    var g=el('div','dfield');
+    g.appendChild(el('span','dlab',f[0]));
+    g.appendChild(el('span','dval',f[1]));
+    d.appendChild(g);
+  });
+  if(o.path){
+    var g2=el('div','dfield');
+    g2.appendChild(el('span','dlab','Where it lives'));
+    g2.appendChild(el('span','path',o.path));
+    d.appendChild(g2);
+  }
+  b.addEventListener('click',function(){
+    var wasOpen=e.dataset.open==='1';
+    var host=e.parentNode;
+    Array.prototype.forEach.call(host.querySelectorAll('.entry[data-open="1"]'),function(x){
+      x.dataset.open='0'; x.querySelector('.detail').hidden=true;
+      x.querySelector('.entry-btn').setAttribute('aria-expanded','false');
+    });
+    if(!wasOpen){ e.dataset.open='1'; d.hidden=false; b.setAttribute('aria-expanded','true'); }
+  });
+  e.appendChild(b); e.appendChild(d);
+  return e;
+}
+
+var TECH_ANSWERS='Sensors present versus sensors you can actually reach; bulk and per-participant export; pricing where public; the strongest validation evidence and who paid for it; and an explicit list of what could not be established.';
+var PLAT_ANSWERS='Which phone signals it collects and on which operating system — never assumed equal; how questionnaires are scheduled; where the data is stored and who runs the servers; pricing; and documented security certification rather than implied compliance.';
+var STUDY_HOLDS='Full citation and funding, enrolled versus analysed numbers, the exact definition of retention this paper used, everything that broke, the authors’ own feasibility verdict, and links back to the device and platform write-ups.';
+
+M1.forEach(function(r,i){
+  var e=entry({slug:r[0],name:r[1],meta:r[2],desc:r[3],extra:r[4],
+    fields:[['Why it is in the module',r[3]],['Worth knowing',r[4]],['What the write-up answers',TECH_ANSWERS]],
+    path:'module-01-wearables/profiles/'+r[0]+'.md'});
+  document.getElementById('list-m1').appendChild(e);
+  if(i===0){e.dataset.open='1';e.querySelector('.detail').hidden=false;e.querySelector('.entry-btn').setAttribute('aria-expanded','true');}
+});
+
+M2.forEach(function(r){
+  document.getElementById('list-m2').appendChild(entry({slug:r[0],name:r[1],meta:r[2],desc:r[3],extra:r[4],
+    fields:[['Why it is in the module',r[3]],['Worth knowing',r[4]],['What the write-up answers',PLAT_ANSWERS]],
+    path:'module-02-digital-phenotyping/profiles/'+r[0]+'.md'}));
+});
+
+var PLATS=[['beiwe','Beiwe'],['aware','AWARE'],['mindlamp','mindLAMP'],['radar','RADAR-base'],['avicenna','Avicenna'],['metricwire','MetricWire'],['mpath','m-Path'],['carp','CARP']];
+var DEVS=[['fitbit','Fitbit'],['apple','Apple'],['empatica','Empatica'],['oura','Oura'],['samsung','Samsung'],['actigraph','ActiGraph'],['withings','Withings'],['movesense','Movesense'],['garmin','Garmin'],['whoop','WHOOP'],['axivity','Axivity']];
+
+M3.forEach(function(r){
+  var used=[];
+  PLATS.forEach(function(p){if(p[0]===r[2])used.push(p[1]);});
+  DEVS.forEach(function(d){if(d[0]===r[3])used.push(d[1]);});
+  document.getElementById('list-m3').appendChild(entry({slug:r[0],name:r[1],meta:r[4],desc:r[6],
+    plat:r[2],dev:r[3],extra:used.join(' '),
+    fields:[['What it teaches',r[6]],
+            ['Technology used',used.length?used.join(' + '):'Neither a Module 1 device nor a Module 2 platform — included with an explicit scope note'],
+            ['Scale',r[4]],['Duration',r[5]],['What the write-up holds',STUDY_HOLDS]],
+    path:'module-03-applied-studies/profiles/'+r[0]+'.md'}));
+});
+
+OPS.forEach(function(r){
+  document.getElementById('list-ops').appendChild(entry({slug:r[0],name:r[1],desc:r[2],
+    fields:[['Purpose',r[2]]],path:r[0]}));
+});
+
+Object.keys(GLOSS).forEach(function(k){
+  document.getElementById('list-gloss').appendChild(entry({slug:k,name:GLOSS[k][0],desc:GLOSS[k][1],fields:[]}));
+});
+
+var fbox=document.getElementById('f-m3'), activeF=null;
+var allBtn=el('button','fchip'); allBtn.type='button'; allBtn.setAttribute('aria-pressed','true'); allBtn.textContent='All 55';
+allBtn.addEventListener('click',function(){
+  activeF=null;
+  Array.prototype.forEach.call(fbox.children,function(c){c.setAttribute('aria-pressed','false');});
+  allBtn.setAttribute('aria-pressed','true'); applyFilter();
+});
+fbox.appendChild(allBtn);
+
+function mkF(key,label,count,kind){
+  var b=el('button','fchip'); b.type='button'; b.setAttribute('aria-pressed','false');
+  b.innerHTML=label+' <span class="n">'+count+'</span>';
+  b.addEventListener('click',function(){
+    var on=activeF && activeF.k===key && activeF.kind===kind;
+    Array.prototype.forEach.call(fbox.children,function(c){c.setAttribute('aria-pressed','false');});
+    activeF = on ? null : {k:key,kind:kind};
+    if(on) allBtn.setAttribute('aria-pressed','true'); else b.setAttribute('aria-pressed','true');
+    applyFilter();
+  });
+  return b;
+}
+PLATS.forEach(function(p){var n=M3.filter(function(r){return r[2]===p[0];}).length; if(n)fbox.appendChild(mkF(p[0],p[1],n,'plat'));});
+DEVS.forEach(function(d){var n=M3.filter(function(r){return r[3]===d[0];}).length; if(n)fbox.appendChild(mkF(d[0],d[1],n,'dev'));});
+
+function applyFilter(){
+  var q=(document.getElementById('q').value||'').trim().toLowerCase();
+  Array.prototype.forEach.call(document.getElementById('list-m3').children,function(e){
+    var okF=!activeF || e.dataset[activeF.kind]===activeF.k;
+    var okQ=!q || e.dataset.search.indexOf(q)>-1;
+    e.hidden=!(okF&&okQ);
+  });
+}
+
+var TABS=['start','m1','m2','m3','ops','gloss'];
+var tabs=Array.prototype.slice.call(document.querySelectorAll('.tab'));
+function show(name){
+  tabs.forEach(function(t){t.setAttribute('aria-selected', t.dataset.tab===name?'true':'false');});
+  TABS.forEach(function(n){document.getElementById('p-'+n).hidden=(n!==name);});
+}
+tabs.forEach(function(t){t.addEventListener('click',function(){
+  qEl.value=''; runSearch(true); show(t.dataset.tab);
+});});
+
+var qEl=document.getElementById('q'), qc=document.getElementById('qcount');
+var LISTS=['m1','m2','m3','ops','gloss'];
+function runSearch(silent){
+  var q=(qEl.value||'').trim().toLowerCase();
+  var total=0;
+  LISTS.forEach(function(n){
+    var list=document.getElementById('list-'+n);
+    Array.prototype.forEach.call(list.children,function(e){
+      var hit=!q || e.dataset.search.indexOf(q)>-1;
+      e.hidden=!hit; if(hit&&q)total++;
+    });
+    var old=list.parentNode.querySelector('.empty');
+    if(old) old.remove();
+    if(q){
+      var vis=Array.prototype.filter.call(list.children,function(e){return !e.hidden;}).length;
+      if(!vis) list.parentNode.appendChild(el('p','empty','Nothing in this section matches that.'));
+    }
+  });
+  applyFilter();
+  qc.textContent = q ? (total+' match'+(total===1?'':'es')) : '';
+  if(q && !silent){
+    for(var i=0;i<LISTS.length;i++){
+      var list=document.getElementById('list-'+LISTS[i]);
+      if(Array.prototype.some.call(list.children,function(e){return !e.hidden;})){ show(LISTS[i]); break; }
+    }
+  }
+}
+qEl.addEventListener('input',function(){runSearch(false);});
+
+var pop=document.getElementById('pop');
+document.addEventListener('click',function(ev){
+  var t=ev.target && ev.target.closest ? ev.target.closest('.term') : null;
+  if(t){
+    var g=GLOSS[t.dataset.t]; if(!g) return;
+    pop.querySelector('h4').textContent=g[0];
+    pop.querySelector('p').textContent=g[1];
+    pop.hidden=false;
+    var r=t.getBoundingClientRect();
+    var maxLeft=window.scrollX+document.documentElement.clientWidth-pop.offsetWidth-12;
+    pop.style.left=Math.max(12,Math.min(r.left+window.scrollX,maxLeft))+'px';
+    pop.style.top=(r.bottom+window.scrollY+8)+'px';
+    ev.stopPropagation();
+    return;
+  }
+  if(!pop.contains(ev.target)) pop.hidden=true;
+});
+document.addEventListener('keydown',function(e){if(e.key==='Escape') pop.hidden=true;});
+</script>

@@ -1,7 +1,7 @@
 # Module 3 coverage build report, 2026-09-03 (IN PROGRESS, stopped at session limit)
 
 Status: the on-disk cross-screen (Part A) is complete. Part B (fresh search) did not run to completion.
-Part C is half built. Nothing from this pass has been committed or pushed. The eight new profiles and the
+Part C is half built. Nothing from this pass has been committed or pushed. The seven new profiles and the
 edits to the ledger and this file are uncommitted in the working tree.
 
 ## What this pass set out to do
@@ -15,7 +15,7 @@ Module 3's scope, from full text, then build profiles for the survivors and run 
 passes (reports in the session scratchpad, screen/batchA.md to batchE.md; the extractions there are not in
 the repo). Verdicts:
 
-Screened in, profile written (8 profiles from 10 papers):
+Screened in, profile written (7 profiles from 10 papers):
 - oura-tempredict-healthcare-worker-adherence (Shiba 2023, with Mason 2022 folded in as the parent study)
 - apple-heart-movement-study-retention (Truslow 2024)
 - apple-womens-health-study-retention (Mahalingaiah 2022)
@@ -65,7 +65,7 @@ Still to do, in order:
    sparse bold, every number from full text).
 2. feasibility-matrix.md: add Part E for this wave, one row per study, and update the cross-cutting patterns
    (see below).
-3. README.md: profile count 55 to 63 (66 with the three pending), platform and device tallies, strike
+3. README.md: profile count 55 to 62 (65 with the three pending), platform and device tallies, strike
    through the device-breadth gap partially, keep Polar as still absent.
 4. sources.md: add the new entries with retrieval status (all read from PDFs already stored in Module 1 or
    Module 2 folders; nothing copied into module-03 literature/).
@@ -96,6 +96,6 @@ Still to do, in order:
 
 ## Counts
 
-Before this pass: 55 profiles. After the eight written: 63. Oura 2 to 4 (Shiba, Moshe; Mason folded in).
+Before this pass: 55 profiles. After the seven written: 62. Oura 2 to 4 (Shiba, Moshe; Mason folded in).
 Apple Watch 3 to 5. AWARE 8 to 9. Beiwe 12 to 15 (three primary), with two more Beiwe-as-survey-vehicle
 profiles pending. Polar still 0. GENEActiv, LifeData and MetricWire+Beiwe pending.
