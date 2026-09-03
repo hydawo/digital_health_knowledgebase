@@ -2,6 +2,32 @@
 
 ---
 
+## 2026-09-03 — Module 3 coverage pass: cross-screen of the stored Module 1 and 2 PDFs (in progress)
+
+**Module:** 3 (Applied Studies), drawing on the Module 1 and Module 2 literature folders.
+
+### What was done
+
+A keyword screen of the 128 stored Module 1 and 2 PDFs flagged 51 with three or more deployment-reality signals. 12 were already profiled. The other 39 were read in full text and screened against Module 3's scope. 14 papers screened in, 25 were rejected, and every rejection is now in `module-03-applied-studies/literature-index.json` with a reason code.
+
+Eight profiles were built, from ten papers. Two Oura deployments (Shiba 2023 healthcare workers, with the TemPredict parent funnel folded in; Moshe 2021, AWARE on iOS plus a participant-owned ring, Finland). Two Apple Research app cohorts (Truslow 2024 Heart and Movement Study, Mahalingaiah 2022 Women's Health Study). Three Beiwe deployments (Pellegrini 2022 transdiagnostic outpatients; the 2017 to 2018 schizophrenia state-clinic pilot as one profile from three papers; Panda 2021 cancer-surgery surveys). The Beiwe additions were deliberate: the schizophrenia pilot is the platform's founding deployment and the module's unsupported floor, Pellegrini is the cleanest small case of retention and completeness diverging, and Panda carries a zero-of-13 Android survey result that runs opposite to McInerney 2024.
+
+### Confidence changes
+
+Every figure in the eight profiles is Verified from full text. The schizophrenia pilot's survey frequency is recorded as Unclear because its own papers disagree (twice versus three times weekly).
+
+### Attribution corrections
+
+The Module 1 file `2024-doherty-sensors-hrv-rhr-validity-series9-ultra2.pdf` has O'Grady as first author, not Doherty. Torous 2015, Lee 2024 and Nock 2026 in the Onnela folder did not use Beiwe (Mindful Moods, a custom VHS app, and LifeData respectively).
+
+### Not finished
+
+The session hit its limit with five agents running. Three screened-in profiles are unwritten (Vidal 2022 on GENEActiv plus Beiwe, Nock 2026 on LifeData, Weingarden 2025 on MetricWire plus Beiwe), two addenda to the ALS profiles are pending, the fresh device-side search produced nothing, and the matrix, README and sources are not updated. `module-03-applied-studies/_coverage-build-report-2026-09.md` lists the remaining steps.
+
+### Unavailable
+
+Hirten 2025 (Gastroenterology) has its usage statistics in a PMC supplement served only behind a bot check. Logged as unobtainable.
+
 ## 2026-09-01 (latest) — Infrastructure decision: fixed the weekly literature-scan egress block, rejected PubCrawl as an arXiv fallback
 
 **Module:** Cross-module infrastructure (the automated weekly literature-scan routine covering Module 1 —
