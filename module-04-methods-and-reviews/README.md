@@ -1,7 +1,8 @@
 # Module 4 — Methods and Reviews
 
-**Status:** created 2026-09-03 as a filing home, not yet researched. Ten papers, all reviews or
-position papers, moved here from the Module 2 catalogue.
+**Status:** created 2026-09-03. 51 catalogued papers, 48 with PDFs on disk and 3 paywalled. Ten were
+moved from the Module 2 catalogue; 41 came from a baseline search the same day (queries and counts are
+in the catalogue). No profiles yet.
 
 ## What this module is
 
@@ -30,8 +31,10 @@ being dropped or wrongly attributed to a platform.
 
 | File | What it holds |
 |---|---|
-| [`literature-library.md`](literature-library.md) | The catalogue, one row per paper, with the Module 2 identifiers kept. |
+| [`literature-library.md`](literature-library.md) | The catalogue, one row per paper. The ten moved rows keep their Module 2 identifiers; baseline rows are M4-001 onward. |
+| [`literature-library-index.json`](literature-library-index.json) | Dedup ledger for the weekly routine, seeded with every catalogued identifier, so a future Part E does not re-surface them. |
 | [`literature/`](literature/) | The PDFs. |
 
-No profiles, comparison matrix or sources file yet. The research standard in `CLAUDE.md` applies when
+Coverage is thinnest on equity and on privacy; both were searched several ways and the open-access
+literature there is genuinely small. No profiles, comparison matrix or sources file yet. The research standard in `CLAUDE.md` applies when
 that work starts.
