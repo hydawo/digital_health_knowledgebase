@@ -276,6 +276,14 @@ population**. Also note the 2021 collection window: this predates Beiwe's mid-20
 is irrelevant to the survey stream used here but would matter for any attempt to extend the design
 to passive smartphone data.
 
+## Addenda from related papers on the same programme
+
+Two later-screened papers report on the same MGH remote ALS programme. Both overlap this cohort and both add figures this profile lacked, so they are recorded here rather than as a fourth and fifth ALS profile. Both were read in full on 2026-09-03.
+
+Straczkiewicz et al. 2024 (*eBioMedicine* 101:105036, DOI 10.1016/j.ebiom.2024.105036, PMC10914560) is the ActiGraph arm of this cohort, 23 enrolled and 20 analysed. It applies a stricter valid-day rule than Johnson's, at least 21 hours (1,260 minutes) of wear by the Choi algorithm, and under that rule the median was 124 valid days (range 3 to 165) against Johnson's 158 under an 8-hour rule. Same people, same raw data, a fifth fewer valid days at the median. The arm was 15 iOS and 5 Android. Participants submitted a mean of 6.9 surveys (median 6, range 2 to 15) with a mean of 36.8 days between them (median 32, range 6 to 112). 15 of 20 were right-handed, and handedness had not been collected prospectively. The sponsor "was involved in protocol development."
+
+Karas et al. 2024 (*Annals of Clinical and Translational Neurology* 11(6):1380-1392, DOI 10.1002/acn3.52050, PMC11187949) is the passive smartphone-sensing side of the programme, which this profile records as not collected in the wearable arm. 63 people with ALS enrolled between January 2021 and July 2022. 45 met all three analytic criteria (at least two ALSFRS-RSE surveys, at least 28 valid accelerometer days, at least 28 valid GPS days). The 18 excluded were older (mean 63.2 years) and more impaired (median baseline ALSFRS-RSE 32.5 against 37). The mean observation period was 292.3 days (median 291, range 53 to 398). Accelerometer data days in analysis averaged 113.7 (median 108, range 29 to 267), with 724.7 valid accelerometer minutes a day within analysed days, and GPS data days averaged 217.4. Support calls were possible but "were not systematically logged." Collection ran 2021 to 2022, before the platform's heartbeat feature.
+
 ## Key Links
 
 - Paper (open access): https://doi.org/10.1038/s41746-023-00778-y

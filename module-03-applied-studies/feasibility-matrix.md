@@ -1,6 +1,6 @@
 # Module 3 — Feasibility Matrix
 
-**Last updated: 2026-09-02.** **55 profiles / 54 distinct deployments** (two profiles report one cohort — see Part D). One row per study. This is the resource a future study team should read
+**Last updated: 2026-09-03.** **65 profiles / 64 distinct deployments** (two profiles report one cohort, see Part D; Part E folds two multi-paper cohorts into single profiles). One row per study. This is the resource a future study team should read
 first: who else tried this device/platform combination, at what scale, for how long, and did it hold
 up.
 
@@ -193,6 +193,35 @@ none was a background-citation misattribution — though two used modified build
 
 ---
 
+# Part E - Coverage set from the stored Module 1 and 2 PDFs (10 profiles, 2026-09-03)
+
+Built by screening, from full text, the 51 PDFs already stored in the Module 1 and Module 2 literature
+folders that carried three or more deployment-reality signals. 39 were unprofiled. 14 papers screened
+in and became these 10 profiles (two cohorts are reported by more than one paper), 25 were rejected
+with reasons in the ledger. Build report in
+[`_coverage-build-report-2026-09.md`](_coverage-build-report-2026-09.md). Three of the ten are Beiwe
+as the primary instrument, chosen because each adds something the twelve earlier Beiwe profiles lack.
+
+## Table 9 - Coverage set
+
+| Study | Platform / device | N | Duration | Headline operational number |
+|---|---|---|---|---|
+| [Shiba 2023, healthcare workers](profiles/oura-tempredict-healthcare-worker-adherence.md) | Oura Ring Gen 2, provisioned | 100 to 91 | 8+ weeks | Ring worn on 87.8% of nights against surveys on 63.8% of days. Residents were the low group on both, 82.8% and 49.8%. Parent TemPredict funnel 65,319 to 63,153 folded in |
+| [Truslow 2024, Apple Heart and Movement Study](profiles/apple-heart-movement-study-retention.md) | Apple Watch, BYOD | 82,809 | 1 year | Three retention numbers from one cohort. 3.24% withdrew, 38% quiet on day 365, 28% permanently inactive. Half of withdrawals inside 111 days |
+| [Mahalingaiah 2022, Apple Women's Health Study](profiles/apple-womens-health-study-retention.md) | Apple Watch and iPhone, BYOD | 10,000 | 6 months | Monthly survey 62.2% to 34.5% in six months while passive HealthKit cycle logging held at 72.4%. Month-six responders whiter and better educated than enrollees |
+| [Moshe 2021, AWARE on iOS plus Oura](profiles/aware-oura-delphi-covid-lockdown.md) | AWARE (custom iOS app) plus participant-owned Oura | 60 to 55 | 30 days | Bring your own ring and iPhone. No hardware cost, five drop-outs, 9.1% sensing missingness, and a cohort 93% White and 80% degree-holding by construction |
+| [Pellegrini 2022, four diagnostic groups](profiles/beiwe-transdiagnostic-outpatient-completeness.md) | Beiwe, BYOD | 45 to 38 | 8 weeks | Paid and visit-supported, 84% completed, yet only 39% of participants reached half the expected GPS. Retention and completeness diverge in the same people |
+| [Torous, Barnett and Staples 2017 to 2018, schizophrenia pilot](profiles/beiwe-schizophrenia-state-clinic-pilot.md) | Beiwe, BYOD, no payment for app use | 17 to 15 | up to 90 days | The unsupported floor. Coverage 50.2% GPS and 46.9% accelerometer in month one, about half of surveys, one of 17 lost to Wi-Fi-only upload, two of five relapsers uninstalled before hospitalisation |
+| [Panda 2021, cancer surgery](profiles/beiwe-cancer-surgery-survey-retention.md) | Beiwe surveys, BYOD | 101 to 74 to 24 | 6 months | 42%, 33% and 24% of consented at 1, 3 and 6 months. Zero of 13 Android users answered at month one, the opposite direction to McInerney 2024 |
+| [Vidal Bustamante 2022, a full academic year](profiles/geneactiv-beiwe-college-year-deep-phenotyping.md) | GENEActiv, provisioned, plus Beiwe surveys | 68 to 49 | 256 days | Wristband swaps every 3 to 4 weeks and a 30 Hz to 10 Hz drop over winter break gave 220 usable actigraphy days a person. 88% re-enrolled two years later |
+| [Nock 2026, after a psychiatric emergency](profiles/lifedata-post-hospital-suicide-ema.md) | LifeData, BYOD | 619 to 498 | 84 days | First LifeData deployment here. 117 of 619 never answered a survey, initiation ran under 50% and fell, at a dollar a survey. Adults averaged 43 of 84 days |
+| [Weingarden 2025, body dysmorphic disorder](profiles/metricwire-beiwe-bdd-remote-ema-passive.md) | MetricWire EMA plus Beiwe passive, BYOD, fully remote | 87 to 83 | 3 months | 72% of 84 prompts answered and 85.9% of days with both streams. Three of 87 produced no passive data. Passive summaries went missing whole days at a time |
+
+Addenda were also written into two existing ALS profiles from four related papers (Berry 2019,
+Beukenhorst 2021, Straczkiewicz 2024, Karas 2024) rather than adding a fourth and fifth ALS row.
+
+---
+
 # Cross-cutting patterns
 
 Findings that replicate across **three or more independent studies** are the most trustworthy content
@@ -219,6 +248,8 @@ in this module.
     (b) **Yield differences** — same stream, different completeness. [McInerney 2024](profiles/beiwe-type-2-diabetes-feasibility.md)'s 70% vs 21% EMA miss rate.
     (c) **Breadth differences** — how many stream *types* arrive. [Wu 2023](profiles/aware-alcohol-liver-disease-craving.md) found Android delivering **8.4 vs iOS 4.7 mean sensor types** — Android ahead on breadth, the opposite direction to McInerney's yield finding, **on the same framework**.
     Note also that several dual-platform studies here report **no** OS breakdown at all, which is now a visible reporting gap.
+
+    **Added 2026-09-03.** [Panda 2021](profiles/beiwe-cancer-surgery-survey-retention.md) supplies a contradicting data point on the active stream. On Beiwe in 2017 to 2019, zero of 13 Android users completed the month-one survey and one of 13 at three and six months, while 42 of 61 iPhone users completed month one. That is the opposite direction to McInerney's iOS penalty on the same platform and the same stream. The direction of an OS effect on survey delivery cannot be predicted even from platform and stream together. Logged as Tier 17 Q121. [Torous 2018](profiles/beiwe-schizophrenia-state-clinic-pilot.md) had already found GPS and accelerometer coverage running opposite ways by OS on the same phones in 2018.
 
 4b. **Superseded framing, retained for provenance:** this matrix previously asserted "iOS outperforms Android", then "direction not settled".
    Three Beiwe studies favour iOS: Kiang (GPS non-collection RR 0.66), Yi 2024 (57.3% vs 50.2%
@@ -274,6 +305,12 @@ in this module.
 14. **Research-infrastructure failure is a distinct data-loss class — and it is the one self-hosting owns.** Not device failure, not OS restriction, not participant behaviour: the *study's own* servers and network. [Borelli 2025](profiles/aware-msavorus-passive-completeness-companion.md) lost data to server congestion; [Bae 2023](profiles/aware-binge-drinking-jitai-sensor-loss.md) to Wi-Fi-gated upload; [Aledavood 2024](profiles/aware-momo-mood-mood-disorders.md) provisioned a **router per participant** to avoid it. Three independent studies clear the bar for a pattern. **This is a direct input to the self-host-vs-SaaS decision in Module 2** — a cost that moves to the vendor under SaaS and stays with the team under self-hosting.
 
 15. **Participant-exercised configurability is its own data-loss class.** [Bae 2023](profiles/aware-binge-drinking-jitai-sensor-loss.md) lost **35.4% of person-days** because participants, having been told the sensors were configurable, turned GPS off in the settings menu. Telling participants they are in control is ethically right and operationally expensive; budget for it rather than being surprised.
+
+17. **Withdrawal, daily non-participation and permanent inactivity are three different retention numbers, and a cohort paper should report all three.** [Truslow 2024](profiles/apple-heart-movement-study-retention.md) gives 3.2%, 38% and 28% at one year for the same 82,809 people. Any one alone would give a different impression. [Mahalingaiah 2022](profiles/apple-womens-health-study-retention.md) reaches the same conclusion in the sibling cohort by setting survey response (34.5% at month six) against passive HealthKit logging (72.4%).
+
+18. **The unsupported floor and the supported ceiling on one platform.** [The Beiwe schizophrenia pilot](profiles/beiwe-schizophrenia-state-clinic-pilot.md), with no payment for app use and no reminders, returned about half the scheduled passive data and half the surveys and lost one of 17 entirely to Wi-Fi-only upload. [Pellegrini 2022](profiles/beiwe-transdiagnostic-outpatient-completeness.md), paid and visit-supported on the same platform, kept 84% of people but still had only 39% reach half the expected GPS. Support buys retention. It does not buy passive completeness, which sharpens both finding 1 and finding 5.
+
+19. **A bring-your-own-everything inclusion rule is the cheapest deployment and the least representative.** [Moshe 2021](profiles/aware-oura-delphi-covid-lockdown.md) required an iPhone and an Oura Ring already owned. Hardware cost was zero and five of 60 left in a month. The cohort was 93% White, 80% degree-holding and iOS by construction. Same mechanism as finding 7, applied at the inclusion criterion rather than the recruitment channel.
 
 16. **Remote incentivised studies attract fraud, and platform metadata can catch it.**
     [Siebers 2025](profiles/metricwire-fraudulent-participation.md) is the only study here addressing

@@ -667,41 +667,41 @@
    "doi": "10.1038/s41598-022-05331-7",
    "pmcid": "PMC8816914",
    "slug": "geneactiv-beiwe-college-year-deep-phenotyping",
-   "profiled": false,
+   "profiled": true,
    "source": "module-03-coverage-build-2026-09-03",
-   "note": "screened in; profile NOT YET WRITTEN (session limit 2026-09-03)"
+   "note": "screened in"
   },
   {
    "doi": "10.2196/53441",
    "pmcid": "PMC11094608",
    "slug": "geneactiv-beiwe-college-year-deep-phenotyping",
-   "profiled": false,
+   "profiled": true,
    "source": "module-03-coverage-build-2026-09-03",
-   "note": "co-source, same cohort as Vidal 2022; profile not yet written"
+   "note": "co-source, same cohort as Vidal 2022"
   },
   {
    "doi": "10.1037/abn0001117",
    "pmcid": "PMC13308188",
    "slug": "lifedata-post-hospital-suicide-ema",
-   "profiled": false,
+   "profiled": true,
    "source": "module-03-coverage-build-2026-09-03",
-   "note": "screened in (LifeData now profiled in Module 2, resolves Q113); profile NOT YET WRITTEN"
+   "note": "screened in (LifeData now profiled in Module 2, resolves Q113)"
   },
   {
    "doi": "10.1016/j.invent.2025.100833",
    "pmcid": "PMC12143762",
    "slug": "metricwire-beiwe-bdd-remote-ema-passive",
-   "profiled": false,
+   "profiled": true,
    "source": "module-03-coverage-build-2026-09-03",
-   "note": "screened in (borderline); profile NOT YET WRITTEN"
+   "note": "screened in (borderline)"
   },
   {
    "doi": "10.1037/abn0001054",
    "pmcid": "PMC12614476",
    "slug": "metricwire-beiwe-bdd-remote-ema-passive",
-   "profiled": false,
+   "profiled": true,
    "source": "module-03-coverage-build-2026-09-03",
-   "note": "co-source, same cohort as Weingarden 2025; profile not yet written"
+   "note": "co-source, same cohort as Weingarden 2025"
   }
  ],
  "rejected": [

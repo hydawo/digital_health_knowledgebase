@@ -46,6 +46,8 @@ so the queue is the single place to look for "what could be profiled next".
 | [`_recency-scan-2026-09.md`](_recency-scan-2026-09.md) | ~20 of 30 listed | Date-sorted pass. 5 built from it. |
 | [`_citation-graph-scan-2026-09.md`](_citation-graph-scan-2026-09.md) | ~60 of 71 screened | **Beiwe-heavy for methodological reasons, not because Beiwe deployments are more common** — its anchor papers simply have more citations. Do not build these out without a matching pass on other platforms. |
 
+| 2026-09-03 coverage pass (this file's own backlog) | 5 | Panda 2020 *JAMA Surg* 155:123-129 and Panda 2021 *Ann Surg Oncol* 28:985-994 (passive streams of the cancer-surgery Beiwe cohort); Kubala et al., US Navy shipboard Oura, N=853, 71% of days underway (via Gong 2025 review); a Hispanic pregnancy Oura cohort, N=15, adherence 80% to 31% postpartum (same source); Hirten 2025 IBD Forecast (Q120), profile once Supplemental Table 1 is obtained. |
+
 **Known gaps that none of the above closes:** no head-to-head comparison of Beiwe, mindLAMP and
 RADAR-base (three candidates have looked like one and turned out not to be); geography is
 overwhelmingly US and Western European.

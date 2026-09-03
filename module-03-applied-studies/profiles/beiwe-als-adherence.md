@@ -217,6 +217,14 @@ which is a serious external-validity limit given that
 [Kiang et al.](beiwe-missing-data-sociodemographic.md) found sociodemographic structure in
 digital-phenotyping missingness.
 
+## Addenda from related papers on the same cohorts
+
+Two later-screened papers report on participants already covered here. Neither adds a retention or completeness figure, so neither gets its own profile. What they add is recorded below. Both were read in full on 2026-09-03.
+
+Berry et al. 2019 (*Annals of Clinical and Translational Neurology* 6(5):873-881, DOI 10.1002/acn3.770, PMC6529832) is the design-and-results paper for what is in all likelihood Study 1 above, the single-centre MGH cohort. It records the phone split as 18 iOS and 3 Android of 21 with phone type known. It also records a burden-driven protocol change. "Daily surveys were removed after the first 10 participants completed the study due to informal participant feedback suggesting the frequency was burdensome." The original schedule had three random ALSFRS-R items on four days a week on top of the full weekly survey. Whether Berry's cohort is exactly Beukenhorst's Study 1 is probable rather than verified. The enrolment counts, site, sampling schedule and active tasks match, but Berry describes a 24-week protocol with an opt-out at week 12 and this profile lists Study 1 as 12 weeks.
+
+Beukenhorst et al. 2021 (*Muscle and Nerve* 63:258-262, DOI 10.1002/mus.27110, PMC7898508) analyses 8 participants from the 52-week observational cohort whose GPS data spanned February to April 2020. 7 of the 8 used an iPhone. Its operational content is one sentence, that smartphone collection continued when clinic-based studies were halted by the pandemic. It reports no completeness or retention figures.
+
 ## Key Links
 
 - Paper (OA): https://doi.org/10.2196/31877 · https://mhealth.jmir.org/2022/2/e31877

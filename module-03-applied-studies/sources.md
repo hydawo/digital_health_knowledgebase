@@ -1,6 +1,6 @@
 # Module 3 — Sources
 
-**Last updated: 2026-09-02.** **55 profiles / 54 distinct deployments** — the 19-study baseline, then a 21-study extension.
+**Last updated: 2026-09-03.** **65 profiles / 64 distinct deployments** — the 19-study baseline, then a 21-study extension.
 Per `CLAUDE.md`'s Source Management section, this consolidates citations in addition to the
 per-profile source lists.
 
@@ -123,6 +123,32 @@ by topic. ACM DL serves an HTML challenge, the full-HTML view 403s, no arXiv pre
 is not in PMC. **Platform therefore unverified — do not assume it used AWARE.**
 
 ---
+
+## Coverage set (10 profiles from 14 papers, 2026-09-03)
+
+All read in full from PDFs already stored in the Module 1 or Module 2 literature folders. Nothing was
+copied into `literature/`; each profile's Key Links points at the existing file.
+
+| # | Citation | Type | DOI | Retrieved | Profile |
+|---|---|---|---|---|---|
+| S56 | Shiba SK, Temple CA, Krasnoff J, Dilchert S, Smarr BL, Robishaw J, Mason AE. "Assessing Adherence to Multi-Modal Oura Ring Wearables From COVID-19 Detection Among Healthcare Workers." *Cureus* 2023;15(9):e45362. | Observational substudy | [10.7759/cureus.45362](https://doi.org/10.7759/cureus.45362) | **PDF** (PMC10578453), Module 1 oura folder | [oura-tempredict-healthcare-worker-adherence](profiles/oura-tempredict-healthcare-worker-adherence.md) |
+| S57 | Mason AE, Hecht FM, Davis SK, et al. "Detection of COVID-19 using multimodal data from a wearable device: results from the first TemPredict Study." *Scientific Reports* 2022;12:3463. | Parent-study funnel, folded into S56 | [10.1038/s41598-022-07314-0](https://doi.org/10.1038/s41598-022-07314-0) | **PDF** (PMC8891385), Module 1 oura folder | same |
+| S58 | Truslow J, Spillane A, Lin H, et al. "Understanding activity and physiology at scale: The Apple Heart & Movement Study." *npj Digital Medicine* 2024;7:242. | Cohort design and first-year data | [10.1038/s41746-024-01187-5](https://doi.org/10.1038/s41746-024-01187-5) | **PDF** (PMC11387614), Module 1 apple-watch folder | [apple-heart-movement-study-retention](profiles/apple-heart-movement-study-retention.md) |
+| S59 | Mahalingaiah S, Fruh V, Rodriguez E, et al. "Design and methods of the Apple Women's Health Study: a digital longitudinal cohort study." *Am J Obstet Gynecol* 2022;226(4):545.e1-545.e29. | Cohort design and six-month results | [10.1016/j.ajog.2021.09.041](https://doi.org/10.1016/j.ajog.2021.09.041) | **PDF** (PMC10518829, author manuscript), Module 1 apple-watch folder | [apple-womens-health-study-retention](profiles/apple-womens-health-study-retention.md) |
+| S60 | Moshe I, Terhorst Y, Opoku Asare K, Sander LB, Ferreira D, Baumeister H, Mohr DC, Pulkki-Råback L. "Predicting Symptoms of Depression and Anxiety Using Smartphone and Wearable Data." *Front Psychiatry* 2021;12:625247. | Observational, 30 days | [10.3389/fpsyt.2021.625247](https://doi.org/10.3389/fpsyt.2021.625247) | **PDF** (PMC7876288), Module 1 oura folder | [aware-oura-delphi-covid-lockdown](profiles/aware-oura-delphi-covid-lockdown.md) |
+| S61 | Pellegrini AM, Huang EJ, Staples PC, Hart KL, Lorme JM, Brown HE, Perlis RH, Onnela JP. "Estimating longitudinal depressive symptoms from smartphone data in a transdiagnostic cohort." *Brain Behav* 2022;12:e2077. | Prospective cohort, 8 weeks | [10.1002/brb3.2077](https://doi.org/10.1002/brb3.2077) | **PDF** (PMC8865149), Module 2 beiwe folder | [beiwe-transdiagnostic-outpatient-completeness](profiles/beiwe-transdiagnostic-outpatient-completeness.md) |
+| S62 | Torous J, Staples P, Barnett I, Sandoval LR, Keshavan M, Onnela JP. "Characterizing the clinical relevance of digital phenotyping data quality with applications to a cohort with schizophrenia." *npj Digit Med* 2018;1:15. | Pilot, anchor paper | [10.1038/s41746-018-0022-8](https://doi.org/10.1038/s41746-018-0022-8) | **PDF** (PMC6550248), Module 2 beiwe folder | [beiwe-schizophrenia-state-clinic-pilot](profiles/beiwe-schizophrenia-state-clinic-pilot.md) |
+| S63 | Barnett I, Torous J, Staples P, Sandoval L, Keshavan M, Onnela JP. "Relapse prediction in schizophrenia through digital phenotyping: a pilot study." *Neuropsychopharmacology* 2018;43:1660-1666. | Same cohort, co-source | [10.1038/s41386-018-0030-z](https://doi.org/10.1038/s41386-018-0030-z) | **PDF** (PMC6006347), Module 2 beiwe folder | same |
+| S64 | Staples P, Torous J, Barnett I, Carlson K, Sandoval L, Keshavan M, Onnela JP. "A comparison of passive and active estimates of sleep in a cohort with schizophrenia." *npj Schizophr* 2017;3:37. | Same cohort, co-source | [10.1038/s41537-017-0038-0](https://doi.org/10.1038/s41537-017-0038-0) | **PDF** (PMC5643440), Module 2 beiwe folder | same |
+| S65 | Panda N, Solsky I, Neal BJ, et al. "Expected Versus Experienced Health-Related Quality of Life Among Patients Recovering From Cancer Surgery." *Ann Surg Open* 2021;2(2):e060. | Prospective cohort, surveys | [10.1097/AS9.0000000000000060](https://doi.org/10.1097/AS9.0000000000000060) | **PDF** (PMC8221715), Module 2 beiwe folder | [beiwe-cancer-surgery-survey-retention](profiles/beiwe-cancer-surgery-survey-retention.md) |
+| S66 | Vidal Bustamante CM, Coombs G, Rahimi-Eichi H, et al. "Fluctuations in behavior and affect in college students measured using deep phenotyping." *Sci Rep* 2022;12:1932. | Intensive longitudinal, one academic year | [10.1038/s41598-022-05331-7](https://doi.org/10.1038/s41598-022-05331-7) | **PDF** (PMC8816914), Module 2 beiwe folder | [geneactiv-beiwe-college-year-deep-phenotyping](profiles/geneactiv-beiwe-college-year-deep-phenotyping.md) |
+| S67 | Vidal Bustamante CM, Coombs G, et al. "Precision Assessment of Real-World Associations Between Stress and Sleep Duration Using Actigraphy and Smartphone-Based Ecological Momentary Assessment." *JMIR Form Res* 2024;8:e53441. | Same cohort, co-source | [10.2196/53441](https://doi.org/10.2196/53441) | **PDF** (PMC11094608), Module 2 beiwe folder | same |
+| S68 | Nock MK, Kleiman EM, Bentley KH, et al. "Using smartphone surveys to predict next-week suicide attempts." *J Psychopathol Clin Sci* 2026. | Prospective EMA cohort | [10.1037/abn0001117](https://doi.org/10.1037/abn0001117) | **PDF** (PMC13308188, author manuscript), Module 2 lifedata folder | [lifedata-post-hospital-suicide-ema](profiles/lifedata-post-hospital-suicide-ema.md) |
+| S69 | Weingarden H, et al. "Predicting the strength of next-day negative emotion states in body dysmorphic disorder." *Internet Interv* 2025;40:100833, with Weingarden H, et al. *J Psychopathol Clin Sci* 2026;135(3):403-412. | Two papers, one deployment | [10.1016/j.invent.2025.100833](https://doi.org/10.1016/j.invent.2025.100833), [10.1037/abn0001054](https://doi.org/10.1037/abn0001054) | **PDF** (PMC12143762, PMC12614476), Module 2 beiwe folder | [metricwire-beiwe-bdd-remote-ema-passive](profiles/metricwire-beiwe-bdd-remote-ema-passive.md) |
+
+Four further papers were read in full and folded into existing profiles as addenda rather than
+sourced separately: Berry 2019 and Beukenhorst 2021 into `beiwe-als-adherence`, Straczkiewicz 2024
+and Karas 2024 into `beiwe-actigraph-modus-als-progression`.
 
 ## Non-paper sources
 

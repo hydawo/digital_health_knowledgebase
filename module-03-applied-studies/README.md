@@ -1,6 +1,6 @@
 # Module 3 — Applied Wearables and Digital Phenotyping Studies
 
-**Status:** **55 study profiles / 54 distinct deployments** (2026-09-02). Two profiles report one cohort. Baseline of 19 (2026-08-31) plus a 21-study
+**Status:** **65 study profiles / 64 distinct deployments** (2026-09-03). Two profiles report one cohort. The 2026-09-03 coverage pass screened the PDFs already stored in Modules 1 and 2 and added ten. Baseline of 19 (2026-08-31) plus a 21-study
 extension built in two parallel passes — a platform-coverage pass and an Onnela-tranche pass.
 
 ## What this module is
@@ -22,7 +22,7 @@ documentation and platform capability alone can't show?
 | File | What it's for |
 |---|---|
 | **[`feasibility-matrix.md`](feasibility-matrix.md)** | **The main resource.** Three tables — scale/duration/retention, completeness/wear time, and a one-line takeaway per study — plus cross-cutting patterns and an important warning about non-standardised definitions. |
-| [`profiles/`](profiles/) | One deep profile per study (**55**). |
+| [`profiles/`](profiles/) | One deep profile per study (**65**). |
 | [`_citation-graph-scan-2026-09.md`](_citation-graph-scan-2026-09.md) | OpenAlex citation-graph discovery — finds deployments that cite a platform's methods paper without naming it. Confirms the CARP null by a second, independent method. |
 | [`_recency-scan-2026-09.md`](_recency-scan-2026-09.md) | Date-sorted discovery pass. Shows the citation-sorted baseline missed **62 of 64** recent candidates, and corrects two of its own conclusions. |
 | [`_uncovered-platforms-report.md`](_uncovered-platforms-report.md) | The AWARE / Avicenna / MetricWire / m-Path / CARP coverage pass. |
@@ -76,8 +76,8 @@ Drawn across the whole baseline. Each links to the profile that establishes it.
 
 ## What's covered
 
-**Module 2 platforms — all eight covered:** Beiwe (12), **AWARE (8 profiles / 7 deployments)**, mindLAMP/LAMP (5), RADAR-base (4),
-**Avicenna/Ethica (3)**, **MetricWire (3)**, **m-Path (3)**, **CARP (1)**. Plus movisensXS, Ilumivu mEMA,
+**Module 2 platforms — all nine covered:** Beiwe (15 as primary instrument, plus 2 as the survey vehicle beside a wearable or another platform), **AWARE (8 profiles / 7 deployments)**, mindLAMP/LAMP (5), RADAR-base (4),
+**Avicenna/Ethica (3)**, **MetricWire (4)**, **m-Path (3)**, **CARP (1)**, **LifeData (1, new)**. AWARE is now 9 profiles / 8 deployments. Plus movisensXS, Ilumivu mEMA,
 Purple Robot and now **LifeData** in mixed designs.
 
 **Beyond Module 1/2 technologies:** the recency set added this module's first **Apple SensorKit** and
@@ -85,8 +85,8 @@ first **VPN network-traffic** deployments. Both carry explicit scope notes — n
 profiled Module 1/2 technology, and both are legitimate to reject on a stricter reading of the scope
 rule.
 
-**Module 1 devices:** Fitbit (10), Apple Watch (3), **Samsung (3)**, ActiGraph (2), Empatica (2), **Oura (2)**,
-Axivity/GENEActiv (1), Withings (1), Modus StepWatch (1), **Garmin (1, new)**, **WHOOP (1, new)**, plus a
+**Module 1 devices:** Fitbit (10), **Apple Watch (5)**, **Samsung (3)**, ActiGraph (2), Empatica (2), **Oura (4)**,
+**Axivity/GENEActiv (2)**, Withings (1), Modus StepWatch (1), **Garmin (1, new)**, **WHOOP (1, new)**, plus a
 chest-wall ECG sensor. Garmin and WHOOP were previously absent.
 
 **Priority areas covered:** longitudinal deployments (8 weeks to 4 years); multi-device and
@@ -102,12 +102,11 @@ Recorded honestly, because the gaps shape what conclusions this module can suppo
   [`_recency-scan-2026-09.md`](_recency-scan-2026-09.md). The gap was large (**62 of 64** recent
   candidates were invisible to the citation-sorted pass), so treat the 19-study baseline as
   *well-established* practice rather than current practice until the recency candidates are built out.
-- **Device breadth.** Garmin, Polar, Samsung, ActiGraph and Oura deployments are thin or absent — the
-  discovery vocabulary favoured phenotyping platforms.
+- ~~**Device breadth.**~~ **Partly closed 2026-09-03.** Oura went from 2 to 4, Apple Watch from 3 to 5 and GENEActiv from 1 to 2 by screening the PDFs already stored in Module 1. **Polar still has no deployment, Garmin one, ActiGraph two.** The fresh device-side search that would close the rest has not run.
 - **Geography.** Almost entirely North American and Western European. mindLAMP's India sites are the
   only substantial exception; no low-income-country deployments.
 - **Platform balance — partly addressed, but Beiwe still dominates.** All five previously uncovered
-  platforms now have entries. However **Beiwe is 11 of 40 profiles (28%)**, nine of them sharing an
+  platforms now have entries. However **Beiwe is 15 of 65 profiles (23%) as primary instrument**, most sharing an
   author, so they are not eleven independent observations — and **every Beiwe figure in the module
   predates the platform's `heartbeat` feature** (newest collection window closes 2023). The module's
   Beiwe evidence is simultaneously its largest and its most systematically dated. Each affected
@@ -126,6 +125,7 @@ Recorded honestly, because the gaps shape what conclusions this module can suppo
   citation-graph pass found it. **Treat any future null from a name-based query as unproven.**
 - **Grey literature.** Consortium reports, trial-registry posted results and vendor case studies were
   not searched.
+- **Filenames and folders mislead.** Five of the 39 stored papers screened on 2026-09-03 had a different first author or platform from what their filename or folder implied (an O'Grady paper filed as Doherty; three Onnela Lab papers that used Mindful Moods, a custom vaping app and LifeData rather than Beiwe). Screen from full text only. The rules are in [`_screening-and-profile-rules.md`](_screening-and-profile-rules.md).
 - **Standardised definitions.** No study in this baseline uses the same definition of "wear time" or
   "data availability" as any other. This is a field-level problem, not a gap in the search.
 

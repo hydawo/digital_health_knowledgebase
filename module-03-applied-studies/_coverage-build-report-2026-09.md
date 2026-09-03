@@ -1,4 +1,4 @@
-# Module 3 coverage build report, 2026-09-03 (IN PROGRESS, stopped at session limit)
+# Module 3 coverage build report, 2026-09-03
 
 Status: the on-disk cross-screen (Part A) is complete. Part B (fresh search) did not run to completion.
 Part C is half built. Nothing from this pass has been committed or pushed. The seven new profiles and the
@@ -24,7 +24,7 @@ Screened in, profile written (7 profiles from 10 papers):
 - beiwe-schizophrenia-state-clinic-pilot (Torous 2018, Barnett 2018, Staples 2017, one cohort)
 - beiwe-cancer-surgery-survey-retention (Panda 2021)
 
-Screened in, profile NOT yet written (the writing agents were killed by the session limit):
+Screened in and written later the same day, after the session limit reset:
 - Vidal Bustamante 2022 + 2024, GENEActiv + Beiwe surveys, 49 students, one academic year
   (slug geneactiv-beiwe-college-year-deep-phenotyping; extraction in screen/batchE.md item 1 and 5)
 - Nock 2026, LifeData EMA, N=619, DOI 10.1037/abn0001117, PMC13308188
@@ -32,7 +32,7 @@ Screened in, profile NOT yet written (the writing agents were killed by the sess
 - Weingarden 2025 + 2026, MetricWire EMA + Beiwe passive, N=87, NCT04254575
   (slug metricwire-beiwe-bdd-remote-ema-passive; batchE items 6 and 8)
 
-Addenda to existing profiles, NOT yet written:
+Addenda written into existing profiles (verified from the PDFs):
 - beiwe-als-adherence.md: Berry 2019 (18 iOS / 3 Android; daily surveys dropped after 10 participants for
   burden; speech analysable for 11 of 22) and Beukenhorst 2021 (pandemic continuity, N=8).
 - beiwe-actigraph-modus-als-progression.md: Straczkiewicz 2024 (21-hour valid-day rule gives median 124 valid
@@ -57,9 +57,9 @@ Attribution corrections found in full text:
 Both search agents (device-side, and across-the-board plus grey literature) were terminated before writing
 output. Nothing from Part B exists. Re-run from the brief in the original task.
 
-## Part C, integration: not started beyond the profiles
+## Part C, integration: done
 
-Still to do, in order:
+Completed 2026-09-03 evening. The list below is kept as the record of what was done. Item 2 of the remaining work is the Part B re-run.
 1. Write the three missing profiles and the two addenda (extractions above; rules in the session's
    PROFILE-WRITING-RULES.md, which is not in the repo: no em dashes, few colons, one assertion per sentence,
    sparse bold, every number from full text).
@@ -96,6 +96,6 @@ Still to do, in order:
 
 ## Counts
 
-Before this pass: 55 profiles. After the seven written: 62. Oura 2 to 4 (Shiba, Moshe; Mason folded in).
+Before this pass: 55 profiles. After the ten written: 65 (64 distinct deployments). Oura 2 to 4 (Shiba, Moshe; Mason folded in).
 Apple Watch 3 to 5. AWARE 8 to 9. Beiwe 12 to 15 (three primary), with two more Beiwe-as-survey-vehicle
 profiles pending. Polar still 0. GENEActiv, LifeData and MetricWire+Beiwe pending.

@@ -2,6 +2,23 @@
 
 ---
 
+## 2026-09-03 (evening) — Module 3 coverage pass completed and integrated; Module 4 baseline; explorer pages
+
+**Module:** 3 (ten profiles now integrated), 4 (baseline search), explorer.
+
+The three profiles left unwritten by the morning session limit were written from full text (Vidal
+2022 with GENEActiv plus Beiwe, Nock 2026 on LifeData, Weingarden 2025 on MetricWire plus Beiwe), and
+four related papers became addenda in the two ALS profiles. Module 3 stands at 65 profiles and 64
+distinct deployments. `feasibility-matrix.md` gained Part E (Table 9) and three cross-cutting
+findings (17 to 19) plus a Panda 2021 note under finding 4. README tallies and the "What's missing"
+list were updated, S56 to S69 were added to `sources.md`, and the ledger marks all fifteen coverage
+records as profiled. The screening rubric and profile-writing rules now live in
+`module-03-applied-studies/_screening-and-profile-rules.md`, with the five full-text screening reports
+under `_screening-reports/`, so any session or agent can repeat the pass the same way.
+
+The fresh device-side search (Part B) has still not run. A proposal to add Module 4 to the weekly
+routine is in `shared/weekly-literature-scan-module4-proposal.md`; the canonical prompt is untouched.
+
 ## 2026-09-03 (later) — Onnela Lab folder dissolved; Module 4 (methods and reviews) created
 
 **Module:** 2 (literature library), new Module 4, and the explorer page.
