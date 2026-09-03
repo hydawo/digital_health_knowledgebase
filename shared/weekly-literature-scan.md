@@ -28,6 +28,25 @@ change.** Nothing here executes; it is documentation plus the exact prompt text.
 | Connectors | Official Anthropic-hosted PubMed MCP (`https://pubmed.mcp.claude.com/mcp`) as a secondary PubMed path |
 | Coverage | Module 1 (wearables), Module 2 (phenotyping platforms), **Module 3 (applied studies — triage only)** |
 
+### Publishing-permission status
+
+`CLAUDE.md` carries a hard guardrail requiring the literal phrase **"confirmed, post it"** before
+anything is published where other people can see it, and it covers GitHub in full. **This routine is
+a named exception**, because it runs unattended and cannot obtain the phrase.
+
+The exemption is **conditional**, and the conditions are the point:
+
+1. **This file is the reviewed specification.** The exemption covers the routine *as specified here* —
+   not whatever the prompt says after an unreviewed edit in the claude.ai UI. **That is the main
+   reason to keep this file in sync.**
+2. **Writes are bounded to logging and bookkeeping** — `research-log.md`, the three `*-index.json`
+   ledgers, `_scan-queue.md`, and appends to the Module 1/2 literature libraries. Module 3 profiles,
+   `feasibility-matrix.md`, module READMEs and `sources.md` are off limits.
+3. **Output is mechanical** — counts, search results, retrieval statuses — not authored argument.
+
+**The exemption lapses** if the routine is ever extended to open issues or pull requests, comment
+anywhere, @-mention anyone, or write narrative beyond run logging.
+
 **Do not re-add the PubCrawl connector** without confirming who operates the specific hosted
 instance. See `research-log.md` (2026-09-01): an unattended, no-confirmation, push-access routine has
 little margin for prompt injection arriving through an MCP tool result from an unverified operator.
