@@ -46,6 +46,7 @@ Eight platforms received full profiles:
 > platforms**, not as one of them.
 | **m-Path** | Commercial/academic hybrid, EMA/EMI-first | `profiles/m-path.md` |
 | **CARP Mobile Sensing** | Academic open-source framework/library (not a hosted product) | `profiles/carp-mobile-sensing.md` |
+| **Evidation** | Commercial participant network and real-world-data platform. **Wearable plus survey intake through connected consumer accounts, not phone sensing.** Edge of scope, included for its recruitment scale and its published engagement evidence | `profiles/evidation.md` |
 
 One additional file covers platforms that were identified but deliberately not given full profiles:
 

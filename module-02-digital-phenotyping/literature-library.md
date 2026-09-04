@@ -104,6 +104,15 @@ record when information cannot be determined.
 
 ---
 
+## Evidation
+
+| Title | Authors | Venue/Year | DOI/URL | OA status | PDF | Relevance |
+|---|---|---|---|---|---|---|
+| Value of Engagement in Digital Health Technology Research: Evidence Across 6 Unique Cohort Studies | Goodday SM, et al. | *J Med Internet Res* 2024;26:e57827 | [10.2196/57827](https://doi.org/10.2196/57827) | **Verified OA** (JMIR CC BY) | [literature/evidation/2024-daza-jmir-value-of-engagement-digital-health-technology-research-six-cohorts.pdf](literature/evidation/2024-daza-jmir-value-of-engagement-digital-health-technology-research-six-cohorts.pdf) | Six studies run on the platform; median retention 77.2 percent; adherence by device and population. Module 3 candidate. |
+| Identification of key factors related to digital health observational study adherence and retention by data-driven approaches: an exploratory secondary analysis of two prospective longitudinal studies | Cho PJ, Olaye IM, Shandhi MMH, Daza EJ, Foschini L, Dunn JP | *Lancet Digit Health* 2025;7(1) | [10.1016/s2589-7500(24)00219-x](https://doi.org/10.1016/s2589-7500(24)00219-x) | **Verified OA** (PMC11725373) | [literature/evidation/2025-lancetdigitalhealth-key-factors-digital-health-observational-study-adherence-retention.xml](literature/evidation/2025-lancetdigitalhealth-key-factors-digital-health-observational-study-adherence-retention.xml) | Evidation arm: 89,479 participants, 2,080,992 daily surveys over five months. Stored as full-text XML because the PDF render failed. Module 3 candidate. |
+| Using Social Media to Engage and Enroll Underrepresented Populations: Longitudinal Digital Health Research | Harry ML, et al. | *JMIR Form Res* 2025;9:e68093 | [10.2196/68093](https://doi.org/10.2196/68093) | **Verified OA** (JMIR CC BY) | [literature/evidation/2025-jmir-social-media-engage-enroll-underrepresented-populations-longitudinal-digital-health.pdf](literature/evidation/2025-jmir-social-media-engage-enroll-underrepresented-populations-longitudinal-digital-health.pdf) | BUMP pregnancy study, 524 women, recruitment channel comparison and retention by group. |
+| American Life in Realtime: Benchmark, publicly available person-generated health data for equity in precision health | Angrisani M, et al. | *PNAS Nexus* 2025;4(10):pgaf295 | [10.1093/pnasnexus/pgaf295](https://doi.org/10.1093/pnasnexus/pgaf295) | **Verified OA** (PMC12501968) | [literature/evidation/2025-pnasnexus-american-life-in-realtime-benchmark-person-generated-health-data.pdf](literature/evidation/2025-pnasnexus-american-life-in-realtime-benchmark-person-generated-health-data.pdf) | Probability-sampled cohort with provisioned Fitbit Inspire 2 run on the platform. |
+
 ## Summary of what changed vs. the pre-existing `sources.md`/profile citations
 
 - **7 papers already cited** in `sources.md`/profiles (RADAR-base JMIR Mental Health 2024, RADAR-IoT,

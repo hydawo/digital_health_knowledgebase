@@ -2049,3 +2049,14 @@ and account access is required to use it.
 fragment, plus configuration, design rationale, known limitations and a change history. The routine
 is a cloud Routine whose prompt is otherwise invisible from this repository — **any UI edit must be
 mirrored back into that file.**
+
+## 2026-09-03 (late) — Explorer filters, Evidation added to Module 2
+
+- **Module:** 2 (new profile), explorer.
+- **Technologies researched:** Evidation. Five vendor pages fetched directly (home, research, how-it-works, about, privacy; the FAQ and studies pages return 404). Europe PMC returned 142 hits for the company name with wearable terms; four deployment-relevant papers stored under `module-02-digital-phenotyping/literature/evidation/`, one as full-text XML because the PDF render failed.
+- **Files created:** `profiles/evidation.md`, `literature/evidation/` (3 PDFs, 1 XML), `explorer/tags.json`.
+- **Files updated:** Module 2 `literature-library.md` (new Evidation section, 4 rows), `literature-library-index.json` (4 records), `README.md` (platform row), `sources.md` (S-EV-01 to 09); `module-03-applied-studies/_scan-queue.md` (2 candidates); `shared/unresolved-questions.md` (Q125); `explorer/build.py` and `explorer/kb-explorer.html`.
+- **Scope decision:** Evidation is profiled as an edge-of-scope Module 2 platform, in the same spirit as LifeData. It supplies wearable and survey data at population scale but the sponsor operates no software and no phone sensor stream is documented. The stream table records "No" for undocumented streams with a verification note rather than leaving rows blank.
+- **Explorer filters:** three filter groups added to Modules 1, 2 and 3. Form factor and operating system come from the hand-kept `explorer/tags.json`. Data streams are derived at build time from each Module 1 sensor table and Module 2 stream table, and for Module 3 from the wording of each profile's Instrumentation section. Disease area is hand-assigned per Module 3 study from a fixed list of 16 areas. An automatic keyword pass was tried first and rejected because cross-references to other studies triggered wrong areas.
+- **Conflict recorded:** Evidation's home and about pages disagree on study and publication counts (140 or more versus 175 or more studies; 100 or more versus 70 or more publications).
+- **Unresolved:** Q125.

@@ -154,6 +154,20 @@ repository.
 
 ---
 
+## Evidation (added 2026-09-03)
+
+| ID | Title | Org | URL | Type | Retrieval | Establishes |
+|---|---|---|---|---|---|---|
+| S-EV-01 | Evidation home page | Evidation Health | https://evidation.com/ | Vendor site | Direct | Member, study and publication counts; cohort list; 2026 leadership news. Reported |
+| S-EV-02 | Evidation research page | Evidation Health | https://evidation.com/research | Vendor page | Direct | Case-study framing, wearable near real-time measures. Reported |
+| S-EV-03 | How Evidation works | Evidation Health | https://evidation.com/how-it-works | Vendor page | Direct | Connected apps (Fitbit, Apple Health, 20 or more), points, programmes. Reported |
+| S-EV-04 | About Evidation | Evidation Health | https://evidation.com/about | Vendor page | Direct | Founded 2012; Heartline, BUMP and American Life in Realtime descriptions; counts that conflict with S-EV-01 |
+| S-EV-05 | Evidation privacy notice | Evidation Health | https://evidation.com/privacy | Privacy notice | Direct | Data categories, sharing, CCPA opt-out; app notice is separate and not fetched |
+| S-EV-06 | Goodday et al. 2024, six-cohort engagement | *JMIR* | https://doi.org/10.2196/57827 | Peer-reviewed | Direct, PDF stored | Median retention 77.2 percent; device-level adherence. Verified |
+| S-EV-07 | Cho et al. 2025, adherence and retention factors | *Lancet Digit Health* | https://doi.org/10.1016/s2589-7500(24)00219-x | Peer-reviewed | Direct, XML stored | 89,479 participants, 2,080,992 daily surveys. Verified |
+| S-EV-08 | Harry et al. 2025, BUMP recruitment | *JMIR Form Res* | https://doi.org/10.2196/68093 | Peer-reviewed | Direct, PDF stored | 524 women; channel-level enrolment and retention. Verified |
+| S-EV-09 | Angrisani et al. 2025, American Life in Realtime | *PNAS Nexus* | https://doi.org/10.1093/pnasnexus/pgaf295 | Peer-reviewed | Direct, PDF stored | Probability sampling, provisioned Fitbit Inspire 2. Verified |
+
 ## Sources sought but not obtained
 
 | Target | URL | Outcome |

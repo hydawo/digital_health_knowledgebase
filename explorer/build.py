@@ -33,7 +33,7 @@ M1MAP = {'apple-watch-healthkit': (['apple-watch'], ['apple']), 'oura': (['oura'
 M2MAP = {'beiwe': (['beiwe'], ['beiwe']), 'radar-base': (['radar-base'], ['radar']), 'mindlamp': (['mindlamp'], ['mindlamp']),
          'aware-framework': (['aware-framework'], ['aware']), 'avicenna-research-ethica': (['avicenna-research-ethica'], ['avicenna']),
          'metricwire': ([], ['metricwire']), 'm-path': (['m-path'], ['mpath']), 'lifedata': (['lifedata'], ['lifedata']),
-         'carp-mobile-sensing': (['carp-mobile-sensing'], ['carp']),
+         'carp-mobile-sensing': (['carp-mobile-sensing'], ['carp']), 'evidation': (['evidation'], []),
          'legacy-and-adjacent-platforms': (['legacy-and-adjacent-platforms', 'mindful-moods', 'vaping-health-study-app'], [])}
 # Any literature folder not claimed above is reported so it is not silently invisible.
 claimed = {k for v in list(M1MAP.values()) + list(M2MAP.values()) for k in v[0]} | {'methods-and-reviews'}
@@ -70,7 +70,7 @@ def category(title, doi, struck):
 SECTION_FOLDER = {'Beiwe': 'beiwe', 'RADAR-base': 'radar-base', 'mindLAMP': 'mindlamp', 'AWARE Framework': 'aware-framework',
                   'Avicenna Research (Ethica)': 'avicenna-research-ethica', 'MetricWire': 'metricwire', 'm-Path': 'm-path',
                   'CARP Mobile Sensing': 'carp-mobile-sensing', 'Legacy and adjacent platforms': 'legacy-and-adjacent-platforms',
-                  'Oura': 'oura', 'WHOOP': 'whoop', 'Apple Watch': 'apple-watch'}
+                  'Oura': 'oura', 'WHOOP': 'whoop', 'Apple Watch': 'apple-watch', 'Evidation': 'evidation'}
 cites = {}
 def add(folder, c):
     cites.setdefault(folder, []).append(c)
@@ -115,11 +115,66 @@ for mod in ['module-01-wearables', 'module-02-digital-phenotyping']:
     for f in sorted(glob.glob(mod + '/profiles/*.md')):
         profiles[os.path.basename(f)[:-3]] = open(f, encoding='utf8').read()
 
+# ---- filter tags: form factor and OS by hand (explorer/tags.json), data streams derived from the tables ----
+TAGJ = json.load(open('explorer/tags.json'))
+def table_rows(text, header_start):
+    rows = []; on = False
+    for l in text.split('\n'):
+        if l.startswith(header_start): on = True; continue
+        if on:
+            if not l.startswith('|'): break
+            c = [x.strip() for x in l.strip().strip('|').split('|')]
+            if set(c[0]) <= set('- '): continue
+            rows.append(c)
+    return rows
+def yes(v): return bool(re.match(r'(yes|gen \d|partial|event|scan|metadata)', (v or '').strip().lower()))
+M1_STREAM = {'PPG': 'Heart rate (PPG)', 'ECG': 'ECG', 'Accelerometer': 'Accelerometer', 'Gyroscope': 'Gyroscope', 'Magnetometer': 'Magnetometer',
+             'Temperature': 'Skin temperature', 'SpO2': 'SpO2', 'GPS': 'GPS', 'Barometer / altimeter': 'Barometer', 'EDA': 'EDA', 'Ambient light': 'Ambient light'}
+def m2_stream_name(v): return re.sub(r'\s*\(.*?\)', '', v).replace(' / ', ' or ').strip()
+TAGS = {'m1': {}, 'm2': {}, 'm3': {}}
+for slug, text in profiles.items():
+    mod = 'm1' if os.path.exists('module-01-wearables/profiles/' + slug + '.md') else 'm2'
+    t = dict((TAGJ[mod].get(slug) or {}))
+    streams = []
+    if mod == 'm1':
+        for c in table_rows(text, '| Sensor | Present |'):
+            v = c[1].replace('*', '').strip().lower()
+            present = bool(v) and not re.match(r'(no\b|not\b|unclear|none)', v)  # any device name or model list counts as present
+            if c[0] in M1_STREAM and present: streams.append(M1_STREAM[c[0]])  # presence on the device, not researcher access
+        t.setdefault('formfactor', []); t.setdefault('os', [])
+    else:
+        oss = set()
+        for c in table_rows(text, '| Stream | Android |'):
+            if len(c) < 3: continue
+            if yes(c[1]) or yes(c[2]): streams.append(m2_stream_name(c[0]))
+            if yes(c[1]): oss.add('Android')
+            if yes(c[2]): oss.add('iOS')
+        t['os'] = sorted(oss); t.setdefault('formfactor', ['Phone'])
+    t['streams'] = streams
+    TAGS[mod][slug] = t
+M3_STREAM = [('GPS', r'\bGPS\b|location'), ('Accelerometer', r'acceleromet|actigraph|actimetry'), ('Heart rate or HRV', r'heart rate|\bHRV\b|\bPPG\b|inter-?beat'),
+             ('Sleep', r'\bsleep'), ('Steps or activity', r'\bsteps?\b|physical activity|activity count|\bMET\b'), ('Skin temperature', r'temperature'),
+             ('SpO2', r'SpO2|oxygen'), ('EDA', r'\bEDA\b|electrodermal'), ('Screen state or phone use', r'screen|power state|phone use|unlock'),
+             ('Calls or SMS metadata', r'\bcall (log|meta)|\bcalls\b|\bSMS\b|text message'), ('Bluetooth', r'bluetooth'), ('Wi-Fi', r'wi-?fi'),
+             ('App usage', r'app usage|application usage'), ('Keyboard', r'keyboard|typing'), ('Audio', r'\baudio\b|microphone|voice'),
+             ('Surveys or EMA', r'survey|\bEMA\b|\bESM\b|questionnaire|ecological momentary')]
+for f in sorted(glob.glob('module-03-applied-studies/profiles/*.md')):
+    slug = os.path.basename(f)[:-3]; text = open(f, encoding='utf8').read()
+    m = re.search(r'## Instrumentation and Deployment Model(.*?)\n## ', text, re.S)
+    sec = m.group(1) if m else text
+    t = dict(TAGJ['m3'].get(slug) or {'areas': [], 'os': 'not-reported'})
+    t['streams'] = [n for n, rx in M3_STREAM if re.search(rx, sec, re.I)]
+    t['os'] = {'both': ['iOS', 'Android'], 'ios': ['iOS'], 'android': ['Android']}.get(t.get('os'), [])
+    TAGS['m3'][slug] = t
+missing = [k for k in TAGS['m3'] if k not in TAGJ['m3']]
+if missing: print('WARNING: Module 3 profiles without hand tags:', missing)
+FILTER_LISTS = {'areas': TAGJ['_areas'], 'formfactor': TAGJ['_formfactors']}
+
 s = open(P, encoding='utf8').read()
 block = ("/*DATA-START*/\nvar REPO='" + REPO + "';\nvar PAPERS=" + json.dumps(papers, ensure_ascii=False) +
          ";\nvar M1MAP=" + json.dumps(M1MAP) + ";\nvar M2MAP=" + json.dumps(M2MAP) +
          ";\nvar PROFILES=" + json.dumps(profiles, ensure_ascii=False) + ";\nvar CITES=" + json.dumps(cites, ensure_ascii=False) +
-         ";\nvar CAT_ORDER=" + json.dumps(CAT_ORDER) + ";\n/*DATA-END*/\n")
+         ";\nvar CAT_ORDER=" + json.dumps(CAT_ORDER) + ";\nvar TAGS=" + json.dumps(TAGS, ensure_ascii=False) + ";\nvar FILTER_LISTS=" + json.dumps(FILTER_LISTS, ensure_ascii=False) + ";\n/*DATA-END*/\n")
 s = re.sub(r"/\*DATA-START\*/.*?/\*DATA-END\*/\n", lambda m: block, s, count=1, flags=re.S)
 
 pdfs = len([f for f in glob.glob('**/*.pdf', recursive=True) if not f.startswith('.git')])
@@ -132,5 +187,6 @@ s = re.sub(r'<div class="stat"><b>[^<]*</b><span>on disk</span></div>', '<div cl
 m4 = len(papers['methods-and-reviews'])
 s = re.sub(r'Module 4 &middot; \d+ papers', 'Module 4 &middot; %d papers' % m4, s)
 open(P, 'w', encoding='utf8').write(s)
+print('tags:', {k: len(v) for k, v in TAGS.items()})
 print('papers:', {k: len(v) for k, v in papers.items()})
 print('profiles embedded:', len(profiles), '| pdfs', pdfs, '| docs', docs, '| page bytes', len(s.encode('utf8')))
