@@ -25,6 +25,8 @@ documentation and platform capability alone can't show?
 | [`profiles/`](profiles/) | One deep profile per study (**65**). |
 | [`_citation-graph-scan-2026-09.md`](_citation-graph-scan-2026-09.md) | OpenAlex citation-graph discovery — finds deployments that cite a platform's methods paper without naming it. Confirms the CARP null by a second, independent method. |
 | [`_recency-scan-2026-09.md`](_recency-scan-2026-09.md) | Date-sorted discovery pass. Shows the citation-sorted baseline missed **62 of 64** recent candidates, and corrects two of its own conclusions. |
+| [`_device-side-scan-2026-09.md`](_device-side-scan-2026-09.md) | Date-sorted discovery from the device side, 2026-09-03. 30 ranked new candidates, six of them Polar. |
+| [`_across-the-board-scan-2026-09.md`](_across-the-board-scan-2026-09.md) | Topic-first, ACM-venue and grey-literature discovery, 2026-09-03. 65 ranked new candidates; no head-to-head platform comparison exists in any index. |
 | [`_uncovered-platforms-report.md`](_uncovered-platforms-report.md) | The AWARE / Avicenna / MetricWire / m-Path / CARP coverage pass. |
 | [`_onnela-tranche-report.md`](_onnela-tranche-report.md) | The Onnela-tranche build report. |
 | [`_inventory-and-scope-decisions.md`](_inventory-and-scope-decisions.md) | How the study universe was searched, what was screened out and why, known biases in the discovery method. |
@@ -102,7 +104,7 @@ Recorded honestly, because the gaps shape what conclusions this module can suppo
   [`_recency-scan-2026-09.md`](_recency-scan-2026-09.md). The gap was large (**62 of 64** recent
   candidates were invisible to the citation-sorted pass), so treat the 19-study baseline as
   *well-established* practice rather than current practice until the recency candidates are built out.
-- ~~**Device breadth.**~~ **Partly closed 2026-09-03.** Oura went from 2 to 4, Apple Watch from 3 to 5 and GENEActiv from 1 to 2 by screening the PDFs already stored in Module 1. **Polar still has no deployment, Garmin one, ActiGraph two.** The fresh device-side search that would close the rest has not run.
+- ~~**Device breadth.**~~ **Partly closed 2026-09-03.** Oura went from 2 to 4, Apple Watch from 3 to 5 and GENEActiv from 1 to 2 by screening the PDFs already stored in Module 1. **Polar still has no profile, Garmin one, ActiGraph two.** The device-side search ran on 2026-09-03 evening and found six Polar candidates and a first EmbracePlus candidate; see [`_device-side-scan-2026-09.md`](_device-side-scan-2026-09.md). Profiles from it are the next build.
 - **Geography.** Almost entirely North American and Western European. mindLAMP's India sites are the
   only substantial exception; no low-income-country deployments.
 - **Platform balance — partly addressed, but Beiwe still dominates.** All five previously uncovered
@@ -123,8 +125,7 @@ Recorded honestly, because the gaps shape what conclusions this module can suppo
   **(b)** it cannot find *framework-shaped* platforms at all — CARP is a library embedded in other
   people's apps and publishes under their names (m-Path Sense, DiaFocus, mCardia). Only an OpenAlex
   citation-graph pass found it. **Treat any future null from a name-based query as unproven.**
-- **Grey literature.** Consortium reports, trial-registry posted results and vendor case studies were
-  not searched.
+- **Grey literature.** Searched 2026-09-03 and found weak. Only 3 of 406 ClinicalTrials.gov registrations record a device-related withdrawal reason, consortium reports yield two lessons-learned papers, vendor case-study pages block automated retrieval. See [`_across-the-board-scan-2026-09.md`](_across-the-board-scan-2026-09.md).
 - **Filenames and folders mislead.** Five of the 39 stored papers screened on 2026-09-03 had a different first author or platform from what their filename or folder implied (an O'Grady paper filed as Doherty; three Onnela Lab papers that used Mindful Moods, a custom vaping app and LifeData rather than Beiwe). Screen from full text only. The rules are in [`_screening-and-profile-rules.md`](_screening-and-profile-rules.md).
 - **Standardised definitions.** No study in this baseline uses the same definition of "wear time" or
   "data availability" as any other. This is a field-level problem, not a gap in the search.

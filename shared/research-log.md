@@ -2,6 +2,25 @@
 
 ---
 
+## 2026-09-03 (night) — Beiwe profile from the wiki; Module 3 Part B searches run
+
+**Module:** 2 (Beiwe), 3 (discovery).
+
+The Beiwe profile's remaining Unclear cells were filled from the wiki pages not read earlier in the
+day (Data Download API, Tableau and summary-statistics API, data batching, Forest setup, privacy and
+security, IRB FAQ, prospective-user FAQ, dashboard, administration manual). Two open questions and two
+limitations closed. Every addition is Verified with the read date.
+
+Module 3's fresh search (Part B of the coverage pass) finally ran, in two files. The device-side pass
+(`_device-side-scan-2026-09.md`) ranks 30 new candidates and lists 31 more, with six for Polar, which
+has no profile, and deployments across twelve countries outside North America and Western Europe. The
+topic-first, ACM-venue and grey-literature pass (`_across-the-board-scan-2026-09.md`) ranks 65,
+including four RADAR-base, four mindLAMP and three m-Path candidates the name searches had missed, and
+two Beiwe deployments with 2024 collection windows. The two files overlap on about 20 candidates. No
+head-to-head comparison of Beiwe, mindLAMP and RADAR-base exists in any index searched. Grey
+literature was weak and is now recorded as searched rather than unsearched. Every attribution in both
+files is Reported until full text is read. Nothing was profiled from them yet.
+
 ## 2026-09-03 (evening) — Module 3 coverage pass completed and integrated; Module 4 baseline; explorer pages
 
 **Module:** 3 (ten profiles now integrated), 4 (baseline search), explorer.
