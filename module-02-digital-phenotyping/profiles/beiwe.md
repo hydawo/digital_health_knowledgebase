@@ -103,23 +103,51 @@
 - Three active data streams reach the researcher: `survey_timings` (per-question timing, the preferred source), `survey_answers` (final submissions, a fallback because timing files are not always uploaded) and `audio_recordings`. Verified 2026-09-03 from the Forest `sycamore` documentation.
 - Survey notifications and their resends are tracked server-side with sent, received and check-in times per notification, visible on a per-participant Notification History page and through the API. Verified 2026-09-03 from the wiki's notification page.
 
+- Question types include slider, radio button, checkbox, numeric and free-text open response, and information blocks; branching may only key off slider, radio and numeric answers. A survey can be shown once immediately on enrolment.
+- Audio surveys carry a researcher-written prompt on the recording screen; the wiki suggests text asking participants not to say names or places. Image surveys exist as a stream (`beiwe_image_survey_bytes` in the summary statistics), though no wiki page describing them was read.
+
 ## Researcher and Study Management Features
 
 - Web-based study administration portal (part of `beiwe-backend`): study creation, device/participant registration, survey configuration, data-stream configuration (sampling rates, upload behavior). Multi-study support exists in that a single backend deployment can host multiple studies. Adherence/data-flow monitoring, audit logging, and role-based admin accounts were referenced in the repo/wiki but not independently verified in depth this session.
+
+### From the wiki's Research Administration Manual and dashboard page (added 2026-09-03, Verified)
+
+- Portal tasks for collaborators: create participant IDs and temporary passwords, create and deploy written surveys, audio surveys and image surveys, download data. Study admin and site admin roles exist; enabling Forest and editing a study need one of them.
+- Survey scheduling has three modes. Absolute (an exact date and time in the study time zone, delivered on registration if the participant joins later), relative (days before or after a per-participant intervention date, set on the participant page), and a repeating weekly schedule. The study time zone must be set before any survey is sent, since changing it resets surveys.
+- Branching logic is built from NOT, OR and AND blocks and single conditionals over slider, radio-button and numeric open-response questions. Contradictory logic saves without error; only unparseable references fail. Randomized question selection (with or without replacement) exists but disables branching in that survey.
+- Survey question text accepts Unicode for other languages, but the app's own interface strings are English only.
+- Data monitoring: a study dashboard shows data volume per stream per participant per day, and the wiki recommends checking it once or twice a week. The dashboard is being deprecated in favour of Tableau, fed by the summary-statistics endpoints above.
+- Forest runs per study once enabled, through a Create Forest Tasks page, with tasks picked up by a cron job about every five minutes.
+- Per-participant pages show the latest heartbeat, the notification token status and the notification history.
 
 ## Data Access and Export
 
 - Raw data lands in S3 (self-hosted) or the BSC's AWS storage, and is described as being made available to researchers, including "access to raw data and summary metrics" under the BSC service model. Data is encrypted on-device before upload, in transit (RSA-AES hybrid), and at rest with a study-specific master key; phone numbers and other identifiers are hashed (SHA-256 + PBKDF2) with device-specific salts that are never uploaded. **Verified** from the `beiwe-backend` README's security section. Bulk/API-level export mechanics, exact file formats, and retention defaults were not independently re-verified against current documentation this session.
 
+### From the wiki (added 2026-09-03, Verified)
+
+- Raw data are downloaded per participant, per stream and per date range either from the study web page or through the Data Download API. The API keeps a registry of files already fetched and downloads only new data on each call. A reference script, `data_access_api_reference/download_data.py`, needs an access key and secret key from the portal's Manage Credentials page and the deployment URL.
+- Downloads use a separate 64-character key pair from the portal login, required on every download because data are encrypted on the server.
+- Before data reach the API they are batched. A processing manager checks for new uploads every 6 minutes; rows are sorted by timestamp, given a human-readable UTC column beside the millisecond timestamp, binned by hour, and deduplicated. Stream-specific fixes are applied (survey ID inserted into survey timings rows, call log columns corrected, Wi-Fi scan timestamps inserted per row, Android app log structured).
+- Uploads default to Wi-Fi only in most studies. Data buffer on the phone until Wi-Fi is available, so the dashboard lags for participants without it. Studies can choose cellular upload, which the wiki says makes uploads near real-time.
+- A summary-statistics API returns one JSON row per participant per day with two families of fields. Data-quantity fields give decrypted bytes per stream per day (accelerometer, ambient audio, app log, Bluetooth, calls, device motion, GPS, gyro, identifiers, image survey, iOS log, magnetometer, power state, proximity, reachability, survey answers, survey timings, texts, audio recordings, Wi-Fi). Forest fields carry the jasmine, willow and sycamore daily statistics. Filters are start and end date, participant IDs, fields and limit; queries over 60 seconds time out. Endpoints: `/tableau/summary-statistics/v1/<study_object_id>` and `/tableau/participant-table/v1/<study_object_id>`, with Tableau Web Data Connector wrappers, authenticated by the same key pair in `X-Access-Key-Id` and `X-Access-Key-Secret` headers. An OpenAPI specification sits at `api/tableau_api/spec.yaml` in the backend repository.
+- A study can be configured as a "production study", after which researchers can download only processed outputs from the analysis pipeline rather than raw GPS. This is the higher-security setting.
+- Retention defaults and deletion procedures are not stated on the pages read.
+
 ## APIs, SDKs, and Extensibility
 
 - Fully open source (BSD-3) across backend, iOS, and Android, the strongest extensibility position of any platform in this module by definition: a research team can fork and modify any layer. **Updated 2026-08-25 (second pass):** a direct fetch of `onnela-lab/beiwe-backend`'s repository structure confirms a `data_access_api_reference` directory exists in the codebase, indicating some form of documented data-access API is part of the backend. However, the README content retrieved this session did not detail the endpoint functionality, so whether this constitutes a public, researcher-facing REST API comparable to competitors' documented APIs, or an internal/administrative interface, remains **Unclear** rather than resolved, this is a narrower open question than the prior "no API identified" framing, not a fully closed one.
+
+- ~~Whether `data_access_api_reference` is a public researcher-facing API was Unclear.~~ Resolved 2026-09-03 from the wiki. It is: `download_data.py` (raw data with an incremental registry) and `other_api_reference_script.py` (every API the platform provides, kept updated by the developers) are documented reference scripts, and the summary-statistics endpoints have an OpenAPI specification. Credentials are issued per researcher from the portal.
 
 ## Deployment and Infrastructure
 
 - **Self-hosted**: AWS only (S3, EC2, Elastic Beanstalk, RDS/PostgreSQL). Requires "moderate AWS and Python expertise," per the backend README. No documented support for non-AWS clouds.
 - **Managed (BSC)**: runs on the Onnela Lab's own AWS deployment; researchers do not manage infrastructure. Pricing is quote-based, computed from three study-specific variables (see Pricing).
 - Backend uses rolling releases; mobile apps use semantic versioning.
+
+- The open-source version is "provided as-is" with no ongoing technical support from the Onnela Lab, per the wiki's FAQ; the two supported routes are self-deployment from the wiki instructions (single server or server cluster) or paid help from the platform's contract developers, Zagaran. Verified 2026-09-03.
+- Adding Forest to a self-hosted deployment means installing the data-processing requirements on the worker server and restarting processing; the wiki has a Forest Setup page.
 
 ## Participant Experience
 
@@ -156,12 +184,28 @@
 - The wiki's own warning: the fastest way to make participants uninstall the app is to bombard them with notifications.
 - Notification delivery depends on a token the device must periodically send to the server; its status is shown on each Participant Page, and a missing token nearly always means the app is not running or has been uninstalled.
 
+### From the wiki (added 2026-09-03, Verified)
+
+- Everything in the app sits behind a login with a minimum 6-character password, except the "Call My Clinician" button and the survey reminders. The app logs out after a configurable period of inactivity.
+- A forgotten password is reset by phoning the study's research assistant (the collaborator's staff, not the Onnela Lab), identifying by Beiwe ID only, and receiving a temporary password.
+- One participant ID registers on one phone at a time; a second phone with the same ID is refused. Reinstalling the app on a new phone regenerates the on-device key, so hashed identifiers change and a new identifiers file is written.
+- Data upload over Wi-Fi only is the usual configuration, chosen to spare participants data charges; the trade-off is upload delay, and in one profiled study a participant who never joined Wi-Fi lost all data (see [`../../module-03-applied-studies/profiles/beiwe-schizophrenia-state-clinic-pilot.md`](../../module-03-applied-studies/profiles/beiwe-schizophrenia-state-clinic-pilot.md)).
+
 ## Privacy, Security, and Compliance
 
 - **Verified**: multi-stage encryption (on-device, in-transit RSA-AES hybrid, at-rest with study master key) and identifier hashing, per the backend README.
 - **Updated 2026-08-25 (second pass):** a direct fetch of `onnela-lab/beiwe-backend`'s README surfaces the platform's own compliance framing precisely: it states the system "may interact with laws covering PII or PHI like HIPAA in the United States", an acknowledgment that HIPAA-relevant data may pass through the system, **not a HIPAA-compliance certification claim**. No mention of GDPR, SOC 2, or ISO certification was found in this fetch. This is a materially more precise finding than "not independently verified" but does not change the conclusion: no compliance certification is documented, and none should be inferred.
 - GDPR/DPA, SOC 2, and IRB-support specifics remain **not independently verified against current documentation**. Do not infer regulatory compliance from "Harvard" as an institutional affiliation, CLAUDE.md's instruction not to infer compliance from general claims applies here as much as to any vendor.
 - Self-hosting gives a research team full data custody (the Onnela Lab is never in the data path); using the BSC puts the Onnela Lab's AWS deployment in the data path, which is a materially different governance posture and should be weighed like any other vendor-hosted arrangement.
+
+### From the wiki's privacy page and IRB FAQ (added 2026-09-03, Verified)
+
+- Identity: participants are known to the platform only by a random 8-character ID; names and contact details stay with the collaborating site behind its own firewall.
+- Indirect identifiers (call and text phone numbers, Wi-Fi and Bluetooth MAC addresses) are replaced on the phone by PBKDF2 and SHA-256 surrogates using a per-installation key that is never uploaded, so the same number maps to the same 88-character string on one phone and cannot be reversed by the server.
+- Encryption chain: the device holds the public half of a 2048-bit RSA key from registration, encrypts a per-use AES key with it, and the server re-encrypts received data under a per-study master key before storage on S3. Connections are TLS. The wiki cites Amazon's HIPAA compliance whitepaper for EC2 and S3 and notes that hosted studies' data sit in the Onnela Lab AWS account, accessible only to Onnela and authorised staff.
+- GPS and audio recordings are named by the Onnela Lab IRB as the two streams that can contain identifying information; GPS fuzzing and the production-study setting are the mitigations.
+- Portal passwords need 8 or more characters with lower case, upper case, a digit and a special character. There is no account lockout after failed attempts (on the feature request list), and the portal timeout is longer than 15 minutes; data downloads need the separate 64-character credential pair.
+- None of this is a certification. HIPAA applicability is acknowledged, GDPR, SOC 2 and ISO are not mentioned anywhere read.
 
 ## Pricing
 
@@ -184,7 +228,7 @@
 ## Limitations
 
 - Self-hosting requires real AWS/Django/Python engineering capacity; this is a genuine adoption barrier relative to fully managed commercial platforms (Avicenna Research, MetricWire) in this module.
-- A `data_access_api_reference` directory exists in the backend repo, but whether it amounts to a documented, researcher-self-service public API (comparable to competitors with named developer-API pages) was not resolved this session, data access still appears primarily export/database-mediated.
+- ~~Whether the data access API is a documented researcher-facing API was not resolved.~~ Resolved 2026-09-03; it is documented, with reference scripts and an OpenAPI specification for the summary-statistics endpoints. Raw data still arrive as per-stream hourly CSV rather than through a query interface.
 - ~~iOS/Android feature and sampling parity was not independently verified this session and should not be assumed.~~ Resolved 2026-09-03; the stream table records the per-OS availability. Calls, SMS, Wi-Fi and Bluetooth are Android only; magnetometer, proximity, device motion and reachability are iOS only.
 - GDPR/DPA/SOC 2 compliance posture remains undocumented; the backend README's own language ("may interact with laws covering PII or PHI like HIPAA") is an acknowledgment of applicability, not a certification claim. Do not infer compliance from Harvard's institutional affiliation.
 - ~~BSC pricing is not public; every study needs a quote.~~ **Resolved 2026-08-25**: BSC publishes actual rate figures ($1,937/month fixed + $6/Active Participant Month variable) on its own overview page, see Pricing above.
@@ -199,14 +243,14 @@
 ## Poor-Fit Use Cases
 
 - Teams needing a no-code, point-and-click study builder with a polished commercial dashboard and immediate third-party integrations (see Avicenna Research, MetricWire, m-Path for that profile shape).
-- Studies requiring a documented, stable third-party REST API for real-time integration with external systems, this was not identified as a current Beiwe capability.
+- Studies requiring real-time integration with external systems. The documented API serves downloads and daily summary statistics with a 6-minute batching cycle, not streaming.
 - Very small pilots where BSC's quote-based pricing model is disproportionate to study size (self-hosting may be more appropriate, if AWS/Django capacity exists).
 
 ## Open Questions
 
 - *(Directed to: Onnela Lab / Beiwe Service Center, https://beiwe.hsph.harvard.edu, hsph.harvard.edu/research/onnela-lab)*
 
-- Does the `data_access_api_reference` directory in `beiwe-backend` document a public, researcher-self-service REST API, or an internal/administrative interface only?
+- ~~Does the `data_access_api_reference` directory in `beiwe-backend` document a public, researcher-self-service REST API, or an internal/administrative interface only?~~ Resolved 2026-09-03, see Data Access and Export.
 - ~~What are the exact iOS-vs-Android differences in passive-stream sampling and background execution?~~ Resolved 2026-09-03 from the wiki, see the stream table. One conflict remains: whether Power State (screen and charging events) exists on iOS. The Supported Data Streams page says no, the older Passive Data page shows iOS events.
 - ~~What is the full per-metric catalog within Forest's `jasmine` (mobility), `willow` (communication/sociability), and `sycamore` (survey) subpackages?~~ Resolved 2026-09-03 from forest.beiwe.org, see Derived Metrics. How the metrics are versioned across releases is still open.
 - What GDPR/DPA, SOC 2, or comparable compliance documentation exists for BSC-hosted studies specifically (as distinct from self-hosted deployments where the researcher is the data controller)?
@@ -238,3 +282,5 @@
 9. Beiwe wiki, "Supported Data Streams" and "Passive Data" pages, read 2026-09-03 from a clone of the `onnela-lab/beiwe-backend` wiki repository. **Primary/Verified.** Per-stream OS availability, configurability, file layouts, the GPS fuzzing parameter, the Android sampling-rate caveat, and the Power State documentation conflict.
 10. Beiwe wiki, "Survey Notification Resends, The App Heartbeat, and KeepAlive Notifications," read 2026-09-03. **Primary/Verified.** Five-minute heartbeat, one-hour default KeepAlive timer and message, survey resend mechanics, notification token.
 11. Forest documentation, forest.beiwe.org (jasmine, willow, oak, sycamore, poplar, bonsai and passive-data pages), read 2026-09-03. **Primary/Verified.** Subpackage catalogue and every summary statistic named in Derived Metrics.
+12. Beiwe wiki, "Data Download API," "Tableau API," "Data batching and indexing details" and "Forest Setup," read 2026-09-03. **Primary/Verified.** Download API and registry, credential model, summary-statistics endpoints and field list, batching cadence and guarantees, Forest enablement.
+13. Beiwe wiki, "Beiwe Data Privacy and Security," "IRB FAQs," "FAQs for Prospective Beiwe Users," "Monitoring Data Using the Dashboard" and "Beiwe Research Administration Manual" (old-wiki folder), read 2026-09-03. **Primary/Verified.** Identifier handling, encryption chain, participant authentication, portal password rules, survey scheduling and branching, dashboard deprecation, open-source support terms.
