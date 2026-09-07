@@ -85,7 +85,7 @@
     "10.3390/s22062110",
     "10.3390/s22072618"
   ],
-  "last_run_date": "2026-08-31",
+  "last_run_date": "2026-09-07",
   "runs": [
     {
       "date": "2026-08-31",
@@ -97,6 +97,17 @@
       "filed_module_01": 22,
       "pdfs_obtained": 54,
       "already_in_kb": 2
+    },
+    {
+      "date": "2026-09-07",
+      "source": "weekly-literature-scan routine (NCBI E-utilities PubMed + arXiv API)",
+      "scope": "9 platforms, PubMed since 2026-08-31 + arXiv all-time sorted by date, first firing",
+      "searched": {"pubmed_hits": 1, "arxiv_hits": 23},
+      "filed_this_module": 0,
+      "excluded": {
+        "false_positive_ordinary_word": 1,
+        "note": "PMID 42690552 'LAMP platform' PubMed hit is loop-mediated isothermal amplification (forensic DNA assay), unrelated to mindLAMP; arXiv 'RADAR-base'/'AWARE' hits were radar-sensor/engineering papers or outside the date window, not the profiled platforms"
+      }
     }
   ],
   "records": [

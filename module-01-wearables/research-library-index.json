@@ -20,9 +20,11 @@
     "41048429",
     "41297783",
     "41572285",
-    "42001665"
+    "42001665",
+    "42698643",
+    "42699587"
   ],
-  "last_run_date": "2026-08-31",
+  "last_run_date": "2026-09-07",
   "runs": [
     {
       "date": "2026-08-31",
@@ -34,6 +36,15 @@
       "filed_module_02": 91,
       "pdfs_obtained": 16,
       "already_in_kb": 1
+    },
+    {
+      "date": "2026-09-07",
+      "source": "weekly-literature-scan routine (NCBI E-utilities, PubMed [tiab] search)",
+      "scope": "Oura/WHOOP/Apple Watch PubMed search since 2026-08-31",
+      "searched": {"oura": 0, "whoop": 0, "apple_watch": 2},
+      "filed_this_module": 2,
+      "category_breakdown": {"use-case": 1, "review": 1},
+      "excluded": 0
     }
   ],
   "dois_seen": [
@@ -58,7 +69,9 @@
     "10.1210/clinem/dgae674",
     "10.2147/nss.s530812",
     "10.2196/29849",
-    "10.3389/fendo.2025.1585628"
+    "10.3389/fendo.2025.1585628",
+    "10.3389/fdgth.2026.1820224",
+    "10.1016/j.resplu.2026.101447"
   ],
   "records": [
     {

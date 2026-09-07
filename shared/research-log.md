@@ -2,6 +2,66 @@
 
 ---
 
+## 2026-09-07 — Weekly literature-scan routine: first live firing (Modules 1, 2, 3)
+
+**Module:** 1, 2, 3 (automated, unattended — see `shared/weekly-literature-scan.md` for the routine's
+canonical spec).
+
+This is the routine's first firing against the real NCBI E-utilities/arXiv endpoints. Module 1 and 2
+ledgers previously carried `last_run_date: 2026-08-31` from the manual Onnela-lab-page pass (a
+different source), so this run's window was 2026-08-31 to 2026-09-07 for both; Module 3's
+`last_run_date` was null, so it used the trailing-10-day window (2026-08-28 to 2026-09-07) as
+specified.
+
+**Module 1 (Oura/WHOOP/Apple Watch).** Searched: Oura 0, WHOOP 0, Apple Watch 2. Both Apple Watch
+hits passed the relevance bar and were filed under Apple Watch: one systematic review (Hogue et al.
+2026, *Frontiers in Digital Health*, 47 studies pooled — filed in the systematic-reviews section) and
+one Tier C case report (Jansen et al. 2026, *Resuscitation Plus* — Apple Watch fall detection
+triggering bystander CPR after an unwitnessed cardiac arrest; N=1, flagged explicitly as anecdotal and
+as a genuinely ambiguous Category fit, defaulted to Use-case per the routine's own rule). No Tier A/B
+hits, so no COI text needed quoting this run. The routine's own instruction to introduce a device-level
+Category (Validation/Use-case/Review) layer under Tier did not require any reorganization this run —
+the review mapped cleanly onto the file's existing "systematic reviews" appendix section (which already
+functions as that file's Review category) and the case report mapped cleanly onto the existing Tier C
+section, so no pre-existing entries were touched or reclassified.
+
+**Module 2 (phenotyping platforms).** Searched: 1 PubMed hit (mindLAMP query) + 23 arXiv hits across
+platforms with results (AWARE 2, CARP 1, RADAR-base 20). Zero qualified. The PubMed "mindLAMP"/"LAMP
+platform" hit was a forensic-science paper about loop-mediated isothermal amplification (LAMP) DNA
+assays — an acronym collision, not the digital-phenotyping platform. The arXiv RADAR-base hits were
+all radar-sensor/engineering papers (arXiv's `all:`/`ti:` fields don't enforce the hyphenated phrase,
+so "RADAR-base" matched on "radar" broadly); the AWARE hits were a federated-learning mood-inference
+paper (2026-02-17, outside this run's window) and a 2016 sensing-platform paper (also outside window).
+No changes to `literature-library.md` or `literature/`.
+
+**Module 3 (applied studies, triage only).** Searched: C1 (wearables) 7, C2 (platforms) 3, C3 (arXiv)
+30 raw hits (all on the platforms-side query; wearables-side arXiv query returned 0) — the arXiv hits
+were uniformly false positives (matched generic words like "Framework" or unrelated
+"Radar-based"/astronomy sensing papers) and are not individually logged to the `rejected` ledger since
+none named a profiled platform at all. Of the 10 PubMed candidates: **3 queued** to `_scan-queue.md`
+(Fitbit in a critical-care mobility study with early termination due to device unreliability; Withings
+Sleep Analyser in a dementia weighted-blanket crossover trial, flagged in the paper's own abstract as
+inadequate for sleep measurement; Garmin Vivoactive 5/Venu 3 in a one-year Norwegian nursing-home
+dementia deployment with explicit 88–96% adherence/acceptability and an 11-to-9 attrition funnel), **7
+rejected** (2 validation — a Polar Verity Sense HR-validation study and a Fitbit Sense 2 study whose
+core design is device-vs-reference accuracy despite a secondary feasibility component; 1 protocol — an
+autism physical-function study with no results yet; 1 review — the same Hogue et al. wrist-tracker
+review filed in Module 1; 3 no-cohort — two ESC/EHRA myocarditis consensus-statement co-publications
+and a clinical-nutrition review, none of which named any Module 2 platform in their abstracts despite
+matching the C2 grouped query on some other term). An empty or near-empty Module 3 week is the expected
+normal case per this module's deliberately high inclusion bar, not a failure; this week produced 3
+genuine candidates, which is the first real signal from the automated triage since the ledger was
+seeded.
+
+**Not done this run:** no reorganization of pre-existing Module 1 entries (see above — not triggered).
+No profile-writing in Module 3 (by design — triage only).
+
+**Files touched:** `module-01-wearables/research-library-wearables.md`,
+`module-01-wearables/research-library-index.json`,
+`module-02-digital-phenotyping/literature-library-index.json` (metadata only — no library changes),
+`module-03-applied-studies/_scan-queue.md`, `module-03-applied-studies/literature-index.json`,
+this file.
+
 ## 2026-09-03 (evening) — Module 3 coverage pass completed and integrated; Module 4 baseline; explorer pages
 
 **Module:** 3 (ten profiles now integrated), 4 (baseline search), explorer.

@@ -27,11 +27,13 @@ screening in this project has a measured platform-misattribution rate of roughly
 
 ## Pending
 
-_(empty — the routine has not yet run against Module 3. First firing expected the Monday following
-2026-09-02.)_
-
 | Found | DOI | PMCID | Title | Venue / year | Apparent technology | Signals | OA |
 |---|---|---|---|---|---|---|---|
+| 2026-09-07 | [10.4037/aacnacc2026416](https://doi.org/10.4037/aacnacc2026416) | — | Challenges of Using Fitness Trackers in Critical Care | *AACN Advanced Critical Care* 2026 | Fitbit | compliance (device placement/patient compliance issues); technical failure (devices "unreliable and inaccurate," study terminated early) | Unclear (no PMC listed; subscription journal) |
+| 2026-09-07 | [10.1016/j.gerinurse.2026.104269](https://doi.org/10.1016/j.gerinurse.2026.104269) | — | The feasibility and efficacy of weighted blankets as a sleep intervention for people with behavioural and psychological symptoms of dementia: a pilot randomised crossover trial | *Geriatric Nursing* 2026 | Withings (Sleep Analyser) | feasibility/acceptability (explicitly stated high); compliance (variable adherence to protocol); technical failure ("the Withings did not adequately measure sleep") | Unclear (no PMC listed; Elsevier subscription journal) |
+| 2026-09-07 | [10.2196/95194](https://doi.org/10.2196/95194) | PMC13524361 | A One-Year Study Using Digital Biomarkers From Sensing Technologies to Assess Changes in Physical Activity Levels and Sleep Quality in Nursing Home Residents With Dementia: Observational Study | *JMIR Nursing* 2026;9 | Garmin (Vivoactive 5 / Venu 3) — also uses a non-profiled Somnofy radar-based sensor alongside it | adherence/acceptability (88–96%, explicitly quantified); retention/attrition (11 enrolled, 9 in final analysis); longitudinal (baseline/6-month/1-year) | OA (JMIR, CC BY license; PMC available) |
+
+Platform attribution is Reported - verify from full text before profiling.
 
 ---
 

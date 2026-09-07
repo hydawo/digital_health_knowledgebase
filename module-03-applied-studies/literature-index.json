@@ -195,8 +195,18 @@
   "PMC9950693",
   "PMC9987377"
  ],
- "last_run_date": null,
- "runs": [],
+ "last_run_date": "2026-09-07",
+ "runs": [
+  {
+   "date": "2026-09-07",
+   "source": "weekly-literature-scan routine, first firing (NCBI E-utilities + arXiv API)",
+   "window": "2026-08-28 to 2026-09-07 (trailing 10 days, last_run_date was null)",
+   "searched": {"C1_wearables_pubmed": 7, "C2_platforms_pubmed": 3, "C3_arxiv": 30},
+   "screened_in_queued": 3,
+   "rejected": 7,
+   "note": "C3 arXiv (30 raw hits, platforms side only; wearables side returned 0) produced no genuine candidates - all false positives from arXiv's ti:/abs: fields not honoring hyphenated multi-word phrases (matched on 'Framework', 'Radar-based' engineering/astronomy papers, etc per this routine's documented known limitations). Not individually logged to 'rejected' since none named a profiled platform at all."
+  }
+ ],
  "records": [
   {
    "doi": "10.1186/s12984-024-01514-7",
@@ -879,6 +889,62 @@
    "reason": "no-cohort",
    "note": "9 of 74 analysed; keep the 10/74 Android-only comm-log gate as a corroboration of README finding 23.",
    "source": "module-03-coverage-build-2026-09-03"
+  },
+  {
+   "doi": "10.2340/jrm.v58.44975",
+   "pmcid": null,
+   "pmid": "42702963",
+   "reason": "validation",
+   "note": "Validation of heart rate measurements from the Polar Verity Sense during the submaximal Ekblom-Bak test in adults with obesity; PubMed PublicationType explicitly 'Validation Study'.",
+   "source": "weekly-literature-scan-2026-09-07"
+  },
+  {
+   "doi": "10.1016/j.ijmedinf.2026.106704",
+   "pmcid": null,
+   "pmid": "42691870",
+   "reason": "validation",
+   "note": "Fitbit Sense 2 in hospitalized general medicine patients: primary aim is validity of Fitbit-derived HR/steps/sleep/SpO2 vs Nox T3/StepWatch reference devices (Bland-Altman, ICC). Has a secondary feasibility/patient-perception component and data-completeness figures (100%/91%/56%/41% by stream) but core design is device-vs-reference accuracy, consistent with prior 'validation' rejections in this ledger (e.g. PMC12399887).",
+   "source": "weekly-literature-scan-2026-09-07"
+  },
+  {
+   "doi": "10.2196/86020",
+   "pmcid": null,
+   "pmid": "42673582",
+   "reason": "protocol",
+   "note": "Remote Assessment of Physical Function and Physical Activity in Adults With Autism Spectrum Disorder: explicitly a study protocol ('Participants complete...'); no results reported yet.",
+   "source": "weekly-literature-scan-2026-09-07"
+  },
+  {
+   "doi": "10.3389/fdgth.2026.1820224",
+   "pmcid": "PMC13542415",
+   "pmid": "42698643",
+   "reason": "review",
+   "note": "Systematic review of 47 wrist-tracker accuracy studies; also filed in Module 1 as a device-agnostic systematic review under Apple Watch.",
+   "source": "weekly-literature-scan-2026-09-07"
+  },
+  {
+   "doi": "10.1093/ejhf/xuag271",
+   "pmcid": null,
+   "pmid": "42663246",
+   "reason": "no-cohort",
+   "note": "ESC/EHRA myocarditis arrhythmia consensus statement; no Module 2 platform named anywhere in the abstract despite matching the C2 grouped query. False positive.",
+   "source": "weekly-literature-scan-2026-09-07"
+  },
+  {
+   "doi": "10.1016/j.clnu.2026.106769",
+   "pmcid": null,
+   "pmid": "42696857",
+   "reason": "no-cohort",
+   "note": "Review of oral nutritional supplements vs the Nova ultra-processed-food classification; no Module 2 platform named anywhere in the abstract despite matching the C2 grouped query. False positive.",
+   "source": "weekly-literature-scan-2026-09-07"
+  },
+  {
+   "doi": "10.1093/europace/euag153",
+   "pmcid": "PMC13522998",
+   "pmid": "42669046",
+   "reason": "no-cohort",
+   "note": "Duplicate/co-publication of the same EHRA/HFA myocarditis arrhythmia consensus statement as 10.1093/ejhf/xuag271; no Module 2 platform named in the abstract. False positive.",
+   "source": "weekly-literature-scan-2026-09-07"
   }
  ]
 }

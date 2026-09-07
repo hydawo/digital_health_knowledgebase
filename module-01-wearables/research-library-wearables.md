@@ -573,6 +573,18 @@ vendor. **Corroborated** (independent academic study; specific funding line not 
 this pass). 6/7 devices measured HR within 5%; energy expenditure inaccurate across all devices
 (best off by 27%, worst by 93%). n=60. https://med.stanford.edu/news/all-news/2017/05/fitness-trackers-accurately-measure-heart-rate-but-not-calories-burned.html
 
+**Jansen CE, Jaspers Focks J, Manglani Rodriguez S, Pol L, Edgar R, van Royen N, Bonnes JL. 2026.**
+"Wearable saving lives: a case report." *Resuscitation Plus* 31:101447. Radboud University Medical
+Center / Slingeland Hospital, the Netherlands. **CoiStatement present but does not mention Apple**
+(discloses ERC, Dutch Heart Foundation, Radboud, Biotronik, Abbott, Medtronic, Philips, and Bayer
+relationships, none Apple-related). **Corroborated** (absence of a disclosed Apple conflict is
+suggestive, not proof, of independence). **Category: Use-case (default — this is a single-patient
+case report, not a population study; flagged as a genuinely ambiguous category fit).** A 69-year-old
+man's unwitnessed out-of-hospital cardiac arrest while running alone; Apple Watch fall-detection
+(not a cardiac-arrest-specific feature) triggered automated alerts to family/EMS, CPR began ~6–7 min
+post-collapse, VF on EMS arrival, full neurological recovery after CABG + ICD. **N=1 anecdote —
+illustrative, not generalizable evidence of detection performance.** https://doi.org/10.1016/j.resplu.2026.101447
+
 ## Apple Watch — systematic reviews / meta-analyses
 
 **Shahid S, Iqbal M, Saeed H, et al. 2025.** "Diagnostic Accuracy of Apple Watch Electrocardiogram
@@ -596,6 +608,17 @@ login wall and not directly read. https://www.nature.com/articles/s41746-025-022
 Wearable Technology."** Nova Southeastern University, 2022, PMC8752409. 9 studies, n=1,581,
 wrist wearables (Apple Watch, Samsung, KardiaBand) vs. conventional AF detection. **Unclear** —
 funding/COI not confirmed this pass.
+
+**Hogue T, Khoury A, Njeim P, Aswad N, Youssef L, Birtulescu S, Faust A, Hajj-Boutros G. 2026.**
+"Advancement in wrist worn physical activity trackers: technological developments and measurement
+accuracy: a systematic review." *Frontiers in Digital Health* 8:1820224. Research Institute of the
+McGill University Health Centre. **CoiStatement states no commercial/financial conflicts.**
+**Corroborated.** PRISMA review of 47 studies (of 1,659 screened) evaluating wrist-worn tracker
+accuracy (HR, energy expenditure, steps, activity classification) vs. ECG/calorimetry/doubly
+labelled water/step counting/research accelerometry; not device-specific but names Apple Watch
+explicitly as a modern device with markedly improved validity (typically >0.80 during exercise)
+relative to pre-2010 monitors; energy-expenditure error remains 10–40% even in recent devices.
+https://doi.org/10.3389/fdgth.2026.1820224
 
 ## Apple Watch — access limitations and gaps
 
