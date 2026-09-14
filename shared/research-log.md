@@ -2,6 +2,148 @@
 
 ---
 
+## 2026-09-14 — First live firing of the weekly literature-scan routine (Modules 1–3): Module 1 +3, Module 2 arXiv partial failure, Module 3 1 queued / 6 rejected
+
+**Module:** 1, 2, 3. This is the first actual run of the automated `claude.ai/code` Routine against
+the full Parts A–D prompt in `shared/weekly-literature-scan.md`, including Module 3's first-ever
+firing (its ledger's `last_run_date` was null).
+
+### Search windows
+
+Module 1 and 2 used `last_run_date` 2026-08-31 (their ledgers' stored value) through today
+(2026-09-14). Module 3's `last_run_date` was null, so it used the trailing 10 days
+(2026-09-04–2026-09-14) per the routine's fallback rule.
+
+### Part A — Module 1 (Oura / WHOOP / Apple Watch)
+
+PubMed `[tiab]` search returned: **Oura 1**, **WHOOP 0**, **Apple Watch 3** — 4 candidates total, all
+new (none in `pmids_seen`). 3 of 4 passed the relevance bar and were added; 1 excluded.
+
+Added:
+- **Oura, Tier B, Use-case:** Ong et al. 2026, *BMC Medicine* — Oura Ring across three Singaporean
+  cohorts (N=1,967; university students/working-age/older adults) and cardiometabolic outcomes.
+  Senior author (Chee) sits on Oura's Medical Advisory Board; COI text quoted directly, confidence
+  **Verified**.
+- **Apple Watch, Tier C, Use-case:** Jansen et al. 2026, *Resuscitation Plus* — case report, Apple
+  Watch fall-detection triggering EMS response in an unwitnessed out-of-hospital cardiac arrest,
+  full neurological recovery. COI statement present, doesn't name Apple; confidence **Corroborated**.
+- **Apple Watch, systematic reviews section:** Hogue et al. 2026, *Frontiers in Digital Health* —
+  PRISMA systematic review of wrist-worn tracker accuracy (47 studies from 1,659 records); Apple
+  Watch named among devices covered. Confidence **Unclear** — multi-brand review, not
+  Apple-Watch-specific, full text not read this pass.
+
+Category breakdown of the 3 additions: 2 Use-case, 1 Review, 0 Validation.
+
+**Excluded (notable):** Qi et al. 2026, *Int J Neural Syst* (PMID 42711831) — Apple Watch named only
+as a contextual comparison point for a novel single-lead-ECG sleep-staging algorithm; the study
+collects no Apple Watch data itself. Technically satisfies the literal "named in title/abstract"
+relevance bar, but a conservative read of the file's own scope ("research involving" the device)
+excludes a passing mention with no device data. All 4 screened PMIDs, including this excluded one,
+were added to `pmids_seen`.
+
+**A structural decision not taken:** the routine's Part A instructions call for reorganizing each
+device section into **Category then Tier** (adding Validation/Use-case subheadings inside each Tier,
+moving existing entries into them) "on first run" if that structure doesn't exist yet. It does not
+exist yet for any of the three devices — the file currently organizes by Tier only, with Reviews
+already carved into their own per-device section (functioning as a de facto Review category). Given
+this is a fully unattended, no-confirmation pass with push access to a public repo, and the
+Tier-only structure holds ~600 lines of hand-curated, heavily-caveated entries accumulated over many
+sessions, a mechanical mass-reorganization of *all* existing Oura/Apple-Watch content in a single
+unsupervised pass was judged too high-risk relative to its benefit this run. **New entries were
+appended into the existing Tier structure instead**, and the Review-category entry went into the
+already-existing reviews section. This is a deliberate deviation, flagged here rather than silently
+applied or silently skipped — a human session should decide whether to do the full Category/Tier
+reorg as its own reviewed change, or amend the routine's prompt if Tier-only is actually preferred
+going forward.
+
+### Part B — Module 2 (Mobile Digital Phenotyping Platforms)
+
+PubMed (9 platform queries, same window): only the mindLAMP query returned a hit (PMID 42690552),
+and it is a **false positive** — an unrelated forensic-DNA "LAMP platform" paper (loop-mediated
+isothermal amplification; a molecular-biology acronym collision with the digital-phenotyping
+mindLAMP platform, not a false-positive trap this module's prompt already anticipated). Excluded;
+PMID added to `ids_seen` to prevent re-matching next run. The other 8 queries (Beiwe, RADAR-base,
+AWARE, Avicenna Research/Ethica, m-Path, CARP Mobile Sensing, MetricWire, LifeData) returned 0
+results each.
+
+**The arXiv portion failed outright.** All 9 arXiv queries returned a plain-text `Rate exceeded`
+body from `export.arxiv.org`. Four escalating attempts were made across this session: an initial
+back-to-back burst (failed), a background retry loop with ~4s spacing after a ~35s cooldown (failed
+on every query), a second retry loop with 20s spacing and up to 5 attempts per query (failed on the
+very first query after 4 straight attempts), and one final manual single-request probe after
+stopping the retry loop (failed). The proxy status endpoint showed zero `recentRelayFailures`,
+confirming this is arXiv's own rate limiting under (likely shared-egress-IP) load, not a local
+network-policy block — the environment's Custom allowlist does correctly permit `export.arxiv.org`;
+this is a rate limit, not a block. Per the routine's Part D.2 fallback rule, **Module 2's
+`last_run_date` was left at 2026-08-31, not advanced**, so the next run retries the full window
+including the arXiv portion. **Net result: 0 new papers added to `literature-library.md` this
+pass.**
+
+### Part C — Module 3 (Applied Studies, triage only)
+
+First-ever firing. PubMed grouped queries returned:
+- **C1 (wearables + deployment terms): 4 candidates** — PMID 42732826, 42717857, 42702963, 42698643.
+- **C2 (platforms + deployment terms): 3 candidates** — PMID 42715716, 42713484, 42696857.
+
+**C3 (arXiv) failed** with the same `Rate exceeded` condition described under Module 2, confirmed
+non-local by the same check. Per Part D.2, **Module 3's `last_run_date` was left null, not advanced
+to today**, so the next run retries the same trailing-window search across C1, C2, and C3 together.
+
+Screening of the 7 PubMed candidates: **1 queued, 6 rejected.**
+
+Queued:
+- Continuous Wrist-Derived Heart Rate Correlates With mYPAS Scores... A Feasibility Study
+  (*Paediatric Anaesthesia*, 2026; DOI `10.1002/pan.70309`) — Empatica EmbracePlus in pediatric
+  perioperative-anxiety monitoring, 32 consented → 15 analyzable. Two deployment-reality signals
+  (feasibility in the title; attrition from consent to analysis). Appended to `_scan-queue.md`;
+  platform attribution unverified pending full text per that file's standing caveat.
+
+Rejected (reason, one line each):
+- **validation** — Polar Verity Sense vs. Polar H10 chest-strap HR validation (Ekblom-Bak test,
+  adults with obesity); pure device-accuracy study.
+- **review** — the same Hogue et al. 2026 wrist-tracker systematic review added to Module 1's
+  reviews section; no deployment cohort of its own.
+- **no-cohort** — ActiGraph secondary analysis of Osteoarthritis Initiative activity percentiles;
+  matched on "longitudinal" describing the parent cohort's design, but reports no retention/
+  adherence/completeness/feasibility figures of its own (fewer than the required two
+  deployment-reality signals despite a real cohort).
+- **no-cohort** (×3) — three false-positive matches on "AWARE", none about the AWARE sensing
+  platform: a coronary-hemodynamics imaging paper matched on "uncertainty-**aware** framework"; a
+  Thai antibiotic-stewardship paper matched on the WHO "**AWaRe**" classification; a clinical-nutrition
+  review matched on "context-**aware** framework." This is the exact false-positive class the
+  routine's prompt warns about for AWARE/CARP/Polar/Avicenna/m-Path/Oura/Samsung, now confirmed to
+  also catch compound words like "uncertainty-aware" and unrelated acronyms like "AWaRe" that the
+  prompt's existing trap list didn't name individually.
+
+### Important unresolved questions / sources unavailable
+
+- **arXiv (`export.arxiv.org`) was unreachable for the entire session**, affecting Module 2's full
+  platform sweep and Module 3's C3. Given the persistence across multiple backoff strategies and
+  confirmation via the proxy status endpoint that it isn't a local block, this may recur on the next
+  scheduled run if the underlying shared-IP contention hasn't cleared — worth a manual check before
+  assuming the next automated run will succeed where this one didn't.
+
+### Decisions affecting later comparisons
+
+1. **Module 1's Category/Tier reorganization was deliberately not performed this run** — see the
+   full reasoning above under Part A. Left as an open item for a human-supervised session.
+2. **A dedup gap in Module 3's ledger, newly surfaced by this run's first-ever queued item:**
+   `literature-index.json`'s `dois_seen`/`pmcids_seen` fields are documented (in the file's own
+   `notes` field) as covering only *profiled* studies, and `rejected` covers only *rejected*
+   candidates. Neither covers a candidate that was **queued but not yet resolved** — so a queued
+   item's DOI/PMCID was deliberately *not* added to `dois_seen` this pass (that would silently
+   redefine the ledger's documented semantics), meaning next week's C1/C2 search will re-find
+   PMID 42717857 and append a **duplicate row** to `_scan-queue.md` unless a human resolves
+   (profiles or rejects) it before then, or the ledger schema is deliberately extended with a
+   `queued` tracking field. Flagged here rather than silently patched.
+3. **arXiv rate-limiting, not network-policy denial, is now the active blocker** for the arXiv leg of
+   Modules 2 and 3. The 2026-08-31/2026-09-01 entries fixed the prior network-egress denial at the
+   environment level (Custom allowlist); this run confirms that fix holds (`export.arxiv.org` is
+   reachable — it responds, just with a rate-limit body), so any future arXiv failure here should be
+   diagnosed as rate-limiting/contention first, not re-litigated as an egress-policy problem.
+
+---
+
 ## 2026-09-03 (evening) — Module 3 coverage pass completed and integrated; Module 4 baseline; explorer pages
 
 **Module:** 3 (ten profiles now integrated), 4 (baseline search), explorer.

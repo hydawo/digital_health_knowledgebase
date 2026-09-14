@@ -27,11 +27,11 @@ screening in this project has a measured platform-misattribution rate of roughly
 
 ## Pending
 
-_(empty — the routine has not yet run against Module 3. First firing expected the Monday following
-2026-09-02.)_
-
 | Found | DOI | PMCID | Title | Venue / year | Apparent technology | Signals | OA |
 |---|---|---|---|---|---|---|---|
+| 2026-09-14 | 10.1002/pan.70309 | — | Continuous Wrist-Derived Heart Rate Correlates With mYPAS Scores and Detects Between-Assessment Heart-Rate Elevations in Children: A Feasibility Study | *Paediatric Anaesthesia*, 2026 | Empatica EmbracePlus (wrist wearable) | feasibility (title); attrition (32 consented → 15 analyzable) | Paywalled (no PMC copy found) |
+
+Platform attribution is Reported - verify from full text before profiling.
 
 ---
 

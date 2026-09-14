@@ -83,7 +83,8 @@
     "10.3390/cancers17010139",
     "10.3390/s20133706",
     "10.3390/s22062110",
-    "10.3390/s22072618"
+    "10.3390/s22072618",
+    "pmid:42690552"
   ],
   "last_run_date": "2026-08-31",
   "runs": [
@@ -97,6 +98,25 @@
       "filed_module_01": 22,
       "pdfs_obtained": 54,
       "already_in_kb": 2
+    },
+    {
+      "date": "2026-09-14",
+      "status": "partial",
+      "pubmed_searched": {
+        "beiwe": 0,
+        "radar-base": 0,
+        "mindlamp": 1,
+        "aware": 0,
+        "avicenna-ethica": 0,
+        "m-path": 0,
+        "carp": 0,
+        "metricwire": 0,
+        "lifedata": 0
+      },
+      "pubmed_note": "Only hit was PMID 42690552 (mindLAMP query, false positive - unrelated forensic-DNA 'LAMP platform' paper, molecular-biology acronym collision). No qualifying papers found via PubMed.",
+      "arxiv_searched": "FAILED - arXiv API returned 'Rate exceeded' on every attempt across all 9 platform queries (single request and repeated backoff retries up to 20s spacing over multiple passes); confirmed not a local/proxy-side block via proxy status check.",
+      "new_papers_added": 0,
+      "note": "last_run_date intentionally left at 2026-08-31 (not advanced) because the arXiv portion of the search could not be completed, per routine instructions Part D.2. The false-positive PubMed PMID was still added to ids_seen to prevent redundant re-screening next run."
     }
   ],
   "records": [

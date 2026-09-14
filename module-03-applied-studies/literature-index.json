@@ -196,7 +196,21 @@
   "PMC9987377"
  ],
  "last_run_date": null,
- "runs": [],
+ "runs": [
+  {
+   "date": "2026-09-14",
+   "status": "partial",
+   "searched": {
+    "C1_wearables_pubmed": 4,
+    "C2_platforms_pubmed": 3,
+    "C3_arxiv": "FAILED - arXiv API returned 'Rate exceeded' on every attempt (single request and 5x backoff retries up to 20s spacing); confirmed not a local/proxy block via proxy status check"
+   },
+   "screened_in": 1,
+   "queued": 1,
+   "rejected": 6,
+   "note": "last_run_date intentionally left null (not advanced) because C3 (arXiv) could not be completed, per routine instructions Part D.2. Next run will retry the full trailing-10-day window across C1/C2/C3; C1/C2 candidates already screened this pass are protected from re-processing by the rejected array (and would simply be re-queued as duplicates for the one queued candidate, since queued-but-unresolved items have no dedicated ledger field - see research-log 2026-09-14 entry)."
+  }
+ ],
  "records": [
   {
    "doi": "10.1186/s12984-024-01514-7",
@@ -879,6 +893,48 @@
    "reason": "no-cohort",
    "note": "9 of 74 analysed; keep the 10/74 Android-only comm-log gate as a corroboration of README finding 23.",
    "source": "module-03-coverage-build-2026-09-03"
+  },
+  {
+   "doi": "10.2340/jrm.v58.44975",
+   "pmcid": "PMC13559670",
+   "reason": "validation",
+   "note": "Polar Verity Sense vs Polar H10 chest strap HR validation during Ekblom-Bak test in adults with obesity; pure device-accuracy study.",
+   "source": "weekly-scan-2026-09-14"
+  },
+  {
+   "doi": "10.3389/fdgth.2026.1820224",
+   "pmcid": "PMC13542415",
+   "reason": "review",
+   "note": "Systematic review of wrist-worn activity-tracker accuracy (PRISMA/PROSPERO); no deployment cohort of its own.",
+   "source": "weekly-scan-2026-09-14"
+  },
+  {
+   "doi": "10.1016/j.apmr.2026.09.003",
+   "pmcid": null,
+   "reason": "no-cohort",
+   "note": "ActiGraph secondary analysis of OAI cohort activity percentiles; matched on 'longitudinal' describing the parent cohort's design, but reports no retention/adherence/completeness/feasibility figures of its own — fewer than two deployment-reality signals.",
+   "source": "weekly-scan-2026-09-14"
+  },
+  {
+   "doi": "10.1016/j.media.2026.104273",
+   "pmcid": null,
+   "reason": "no-cohort",
+   "note": "False-positive AWARE match — 'uncertainty-aware' framework for coronary hemodynamics (PUNCH), unrelated to the AWARE sensing platform.",
+   "source": "weekly-scan-2026-09-14"
+  },
+  {
+   "doi": "10.1080/20523211.2026.2707845",
+   "pmcid": "PMC13552329",
+   "reason": "no-cohort",
+   "note": "False-positive AWARE match — WHO 'AWaRe' antibiotic-classification framework, unrelated to the AWARE sensing platform.",
+   "source": "weekly-scan-2026-09-14"
+  },
+  {
+   "doi": "10.1016/j.clnu.2026.106769",
+   "pmcid": null,
+   "reason": "no-cohort",
+   "note": "False-positive AWARE match — 'context-aware framework' in a Nova-classification/ultra-processed-food nutrition review, unrelated to the AWARE sensing platform.",
+   "source": "weekly-scan-2026-09-14"
   }
  ]
 }

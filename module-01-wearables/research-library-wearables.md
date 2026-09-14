@@ -113,6 +113,21 @@ for passive, early pregnancy detection," "AF detection using Oura Ring with phot
 candidates for Tier A or B given the author-overlap pattern, but each needs its own COI check before
 being relied on.
 
+**Ong JL, Qin S, Martin TH, Chua XY, Soon CS, Yilmaz G, Ling LH, Müller-Riemenschneider F, Koh WP,
+Chee MWL. 2026.** "24h movement behaviours in university students compared to working age and older
+adults: wearable-based evidence and cardiometabolic health implications." *BMC Medicine*. National
+University of Singapore, Centre for Sleep and Cognition. N=1,967 across three Singaporean cohorts
+(university students, working-age adults, older adults), each contributing 4 weeks of Oura Ring
+recordings; compositional-data analysis of physical activity/sedentary behaviour/sleep against
+cardiometabolic outcomes (BMI, body roundness index, pulse wave velocity). **"Michael W. L. Chee is
+a member of the medical advisory board of Ouraring Inc. As of August 2026, J.L.O, S.Q. and X.Y.C are
+members of the Oura–National University of Singapore (NUS) Joint Lab. This work was however
+conducted independently of the Joint Lab and was designed, funded, and executed solely by NUS."**
+**Verified** (COI text quoted directly). Reallocating time to physical activity or sleep from other
+behaviours was associated with lower cardiometabolic risk; university students showed unexpectedly
+higher sedentary time and lower activity/sleep than older adults, challenging conventional
+age-related-inactivity assumptions. https://doi.org/10.1186/s12916-026-05192-1
+
 ## Tier C — Fully independent
 
 **Cao R, Azimi I, Sarhaddi F, Niela-Vilen H, Axelin A, Liljeberg P, Rahmani AM. 2022.** "Accuracy
@@ -573,7 +588,31 @@ vendor. **Corroborated** (independent academic study; specific funding line not 
 this pass). 6/7 devices measured HR within 5%; energy expenditure inaccurate across all devices
 (best off by 27%, worst by 93%). n=60. https://med.stanford.edu/news/all-news/2017/05/fitness-trackers-accurately-measure-heart-rate-but-not-calories-burned.html
 
+**Jansen CE, Jaspers Focks J, Manglani Rodriguez S, Pol L, Edgar R, van Royen N, Bonnes JL. 2026.**
+"Wearable saving lives: a case report." *Resuscitation Plus*. Radboud University Medical Center /
+Slingeland Hospital, the Netherlands. Case report: a 69-year-old man's unwitnessed out-of-hospital
+cardiac arrest (ventricular fibrillation) while running alone was detected via Apple Watch
+fall-detection, triggering automated alerts to family/EMS; CPR began ~6–7 min post-collapse, patient
+survived with full neurological recovery after defibrillation, CABG, and ICD implantation.
+**COI statement discloses unrelated grants/speaker fees for two co-authors (European Resuscitation
+Council, Dutch Heart Foundation, Biotronik/Abbott/Medtronic/Philips, ZonMw) but does not mention
+Apple.** **Corroborated** (absence of a disclosed Apple-specific conflict is suggestive, not proof,
+of independence). https://pmc.ncbi.nlm.nih.gov/articles/PMC13543876/
+
 ## Apple Watch — systematic reviews / meta-analyses
+
+**Hogue T, Khoury A, Njeim P, Aswad N, Youssef L, Birtulescu S, Faust A, Hajj-Boutros G. 2026.**
+"Advancement in wrist worn physical activity trackers: technological developments and measurement
+accuracy: a systematic review." *Frontiers in Digital Health*. Research Institute of McGill
+University Health Centre. PRISMA systematic review (PROSPERO CRD42024551740), 47 studies from 1,659
+records screened, evaluating accuracy/acceptability of wrist-worn consumer and research-grade
+trackers (Apple Watch and Garmin named among "modern devices") against reference standards (ECG,
+indirect calorimetry, doubly-labelled water, research-grade accelerometry). **No competing
+interests declared.** **Unclear** — a multi-brand review, not Apple-Watch-specific; full text not
+read this pass to isolate device-specific findings. Reports accuracy improving substantially over
+time across brands (early pre-2010 HR monitors as low as r=0.50 vs. reference during exercise), with
+variability persisting across brands/activities/populations.
+https://pmc.ncbi.nlm.nih.gov/articles/PMC13542415/
 
 **Shahid S, Iqbal M, Saeed H, et al. 2025.** "Diagnostic Accuracy of Apple Watch Electrocardiogram
 for Atrial Fibrillation: A Systematic Review and Meta-Analysis." *JACC: Advances* 4(2):101538.
