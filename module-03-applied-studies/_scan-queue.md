@@ -27,11 +27,14 @@ screening in this project has a measured platform-misattribution rate of roughly
 
 ## Pending
 
-_(empty — the routine has not yet run against Module 3. First firing expected the Monday following
-2026-09-02.)_
+_(empty — the routine's first live firing (2026-09-21) screened 8 candidates across the C1/C2 grouped
+queries and queued none; all failed the screening bar. See `literature-index.json`'s `rejected` array
+and `shared/research-log.md`'s 2026-09-21 entry for the per-candidate reasons.)_
 
 | Found | DOI | PMCID | Title | Venue / year | Apparent technology | Signals | OA |
 |---|---|---|---|---|---|---|---|
+
+Platform attribution is Reported - verify from full text before profiling.
 
 ---
 

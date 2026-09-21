@@ -78,6 +78,21 @@ funding support from Oura Health for testing of Oura devices and co-development 
 (Oura's own announcement). **Corroborated** (partnership confirmed from Oura's blog; the paper's own
 COI text not directly read). https://www.mdpi.com/1424-8220/24/23/7475
 
+**Ong JL, Qin S, Martin TH, Chua XY, Soon CS, Yilmaz G, Ling LH, Müller-Riemenschneider F, Koh WP,
+Chee MW. 2026.** "24h movement behaviours in university students compared to working age and older
+adults: wearable-based evidence and cardiometabolic health implications." *BMC Medicine* 24(1). Same
+NUS Centre for Sleep and Cognition group as the Liang et al. 2024 entry above (Oura–NUS Joint Lab).
+N=1,967 across three Singaporean cohorts (500 university students, 437 working-age adults, 1,030
+older adults); 4 weeks of Oura Ring recordings per person; examined reallocation of physical
+activity/sedentary behaviour/sleep against cardiometabolic outcomes (BMI, body roundness index, pulse
+wave velocity, composite vascular score) via compositional data regression. University students had
+the most sedentary behaviour (633.89 min/day) and the least physical activity (320.28 min/day) and
+sleep (431.75 min/day) of the three age groups. **Funding/COI, quoted directly: "Michael W. L. Chee
+is a member of the medical advisory board of Ouraring Inc. As of August 2026, J.L.O, S.Q. and X.Y.C
+are members of the Oura–National University of Singapore (NUS) Joint Lab. This work was however
+conducted independently of the Joint Lab and was designed, funded, and executed solely by NUS."**
+**Verified.** https://doi.org/10.1186/s12916-026-05192-1 (PMID 42733115)
+
 **TemPredict Study 1 — Mason AE, Kasl P, Quer G, et al. 2022.** "Detection of COVID-19 using
 multimodal data from a wearable device: results from the first TemPredict Study." *Scientific
 Reports* 12:3463. **Funded by an Oura Health sponsored contract.** COI: Epel received loaned Oura
@@ -573,6 +588,29 @@ vendor. **Corroborated** (independent academic study; specific funding line not 
 this pass). 6/7 devices measured HR within 5%; energy expenditure inaccurate across all devices
 (best off by 27%, worst by 93%). n=60. https://med.stanford.edu/news/all-news/2017/05/fitness-trackers-accurately-measure-heart-rate-but-not-calories-burned.html
 
+**Alshamrani M, Alhazmi S, Alafif T, Qadah TM, Aljabri M, Al-Eidarous W, Alhawsawi A, Farrash M.
+2026.** "Machine Learning-Based Prediction Model of Pilgrims' Tiredness During Hajj Using Smartwatch
+Physiological and Mobility Indicators." *Sensors* 26(17):5625. Umm Al-Qura University (Custodian of
+the Two Holy Mosques Institute for Hajj and Umrah Research), Saudi Arabia. Uses a Hajj 1445 (June
+2024) Apple Watch dataset (120 records, 3 participants) with synthetic-data augmentation to predict
+pilgrim tiredness; best record-level test accuracy 93.33% (Decision Tree + multivariate-normal
+sampling), but leave-one-participant-out mean accuracy only 68.65% (SD 19.72%) — a small, single-event
+dataset with weak cross-participant generalization. **"The authors declare no conflicts of
+interest."** No Apple mention. **Corroborated** (COI statement present but does not name the vendor).
+https://doi.org/10.3390/s26175625 (PMID 42740245)
+
+**Jansen CE, Jaspers Focks J, Manglani Rodriguez S, Pol L, Edgar R, van Royen N, Bonnes JL. 2026.**
+"Wearable saving lives: a case report." *Resuscitation Plus* 31:101447. Radboud University Medical
+Center / Slingeland Hospital, Netherlands. Single case report: a 69-year-old man's unwitnessed
+out-of-hospital cardiac arrest while running alone was flagged by Apple Watch fall detection,
+triggering automated alerts; bystander CPR began ~6–7 minutes after collapse, EMS documented
+ventricular fibrillation, and the patient survived to discharge after CABG and ICD implantation.
+Illustrative only, not a sensitivity/specificity estimate — contrast with Abou et al. 2022 above,
+whose controlled trial found only 4.7% fall-detection sensitivity in wheelchair users. **No Apple
+mention in the funding/COI disclosure**, which names the European Resuscitation Council, Dutch Heart
+Foundation/Radboud UMC, ZonMw, and Biotronik/Abbott/Medtronic/Philips/Bayer relationships unrelated to
+this case. **Corroborated.** https://doi.org/10.1016/j.resplu.2026.101447 (PMID 42699587)
+
 ## Apple Watch — systematic reviews / meta-analyses
 
 **Shahid S, Iqbal M, Saeed H, et al. 2025.** "Diagnostic Accuracy of Apple Watch Electrocardiogram
@@ -596,6 +634,18 @@ login wall and not directly read. https://www.nature.com/articles/s41746-025-022
 Wearable Technology."** Nova Southeastern University, 2022, PMC8752409. 9 studies, n=1,581,
 wrist wearables (Apple Watch, Samsung, KardiaBand) vs. conventional AF detection. **Unclear** —
 funding/COI not confirmed this pass.
+
+**Hogue T, Khoury A, Njeim P, Aswad N, Youssef L, Birtulescu S, Faust A, Hajj-Boutros G. 2026.**
+"Advancement in wrist worn physical activity trackers: technological developments and measurement
+accuracy: a systematic review." *Frontiers in Digital Health* 8:1820224. McGill University Health
+Centre Research Institute. PRISMA review (PROSPERO CRD42024551740) of 47 studies (of 1,659 screened)
+evaluating wrist-worn tracker accuracy/acceptability against ECG, indirect calorimetry, doubly
+labelled water, manual step counts, and research-grade accelerometry; finds accuracy has improved
+substantially since pre-2010 devices but brand/activity/population variability persists, and
+specifically discusses "modern devices such as Apple Watch and Garmin." **"The author(s) declared
+that this work was conducted in the absence of any commercial or financial relationships that could
+be construed as a potential conflict of interest."** No Apple mention. **Corroborated.**
+https://doi.org/10.3389/fdgth.2026.1820224 (PMID 42698643)
 
 ## Apple Watch — access limitations and gaps
 

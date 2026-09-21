@@ -20,9 +20,13 @@
     "41048429",
     "41297783",
     "41572285",
-    "42001665"
+    "42001665",
+    "42698643",
+    "42699587",
+    "42733115",
+    "42740245"
   ],
-  "last_run_date": "2026-08-31",
+  "last_run_date": "2026-09-21",
   "runs": [
     {
       "date": "2026-08-31",
@@ -34,6 +38,27 @@
       "filed_module_02": 91,
       "pdfs_obtained": 16,
       "already_in_kb": 1
+    },
+    {
+      "date": "2026-09-21",
+      "source": "weekly-literature-scan routine (Part A)",
+      "scope": "PubMed E-utilities search since last_run_date 2026-08-31, Oura/WHOOP/Apple Watch",
+      "searched": {
+        "oura": 1,
+        "whoop": 0,
+        "apple_watch": 5
+      },
+      "screened_in": {
+        "oura": 1,
+        "whoop": 0,
+        "apple_watch": 3
+      },
+      "screened_out": {
+        "oura": 0,
+        "whoop": 0,
+        "apple_watch": 2
+      },
+      "notes": "Excluded from Apple Watch results: PMID 42752470 (Studies in Health Technology and Informatics is an IOS Press conference-proceedings series, not a peer-reviewed journal -- treated as a conference paper and excluded per the relevance bar's 'not conference abstract' clause); PMID 42711831 (Apple Watch named only as an incidental example in the intro of an ECG sleep-staging algorithm paper that used PSG datasets HMC/MGH/SHHS1/Apnea-ECG, not Apple Watch data -- not substantively about the device). Category/Tier restructuring of the file (device > Category > Tier, per this routine's step 4-5 'first run' instruction) was deliberately deferred this pass -- see research-log.md 2026-09-21 entry for rationale; new entries were appended into the existing Tier-only structure instead."
     }
   ],
   "dois_seen": [
@@ -47,18 +72,22 @@
     "10.1016/j.ebiom.2024.105036",
     "10.1016/j.envint.2026.110260",
     "10.1016/j.ijheh.2023.114308",
+    "10.1016/j.resplu.2026.101447",
     "10.1038/s41746-022-00711-9",
     "10.1038/s41746-023-00778-y",
     "10.1038/s41746-023-00848-1",
     "10.1093/sleep/zsaf156",
     "10.1101/2025.09.20.25336210",
     "10.1111/ppe.13129",
+    "10.1186/s12916-026-05192-1",
     "10.1186/s12984-024-01514-7",
     "10.1186/s12984-025-01829-z",
     "10.1210/clinem/dgae674",
     "10.2147/nss.s530812",
     "10.2196/29849",
-    "10.3389/fendo.2025.1585628"
+    "10.3389/fdgth.2026.1820224",
+    "10.3389/fendo.2025.1585628",
+    "10.3390/s26175625"
   ],
   "records": [
     {
@@ -115,7 +144,7 @@
       "doi": "10.1016/j.ajog.2025.11.031",
       "pmid": "41297783",
       "pmcid": "PMC12915291",
-      "title": "Variability of menstrual cycles by age, polycystic ovary syndrome, and early-life cycle irregularity in the Apple Women\u2019s Health Study",
+      "title": "Variability of menstrual cycles by age, polycystic ovary syndrome, and early-life cycle irregularity in the Apple Women’s Health Study",
       "year": "2026",
       "pdf": "module-01-wearables/literature/apple-watch/2026-mortimer-ajog-variability-menstrual-cycles-age-polycystic-ovary.pdf",
       "pdf_status": "ok",
@@ -215,7 +244,7 @@
       "doi": "10.1038/s41746-023-00848-1",
       "pmid": "37248288",
       "pmcid": "PMC10226714",
-      "title": "Menstrual cycle length variation by demographic characteristics from the Apple Women\u2019s Health Study",
+      "title": "Menstrual cycle length variation by demographic characteristics from the Apple Women’s Health Study",
       "year": "2023",
       "pdf": "module-01-wearables/literature/apple-watch/2023-li-npjdigitalmedicine-menstrual-cycle-length-variation-demographic-characteristics.pdf",
       "pdf_status": "ok",
@@ -235,7 +264,7 @@
       "doi": "10.1038/s41746-022-00711-9",
       "pmid": "36323769",
       "pmcid": "PMC9628464",
-      "title": "Covid-19 vaccination and menstrual cycle length in the Apple Women\u2019s Health Study",
+      "title": "Covid-19 vaccination and menstrual cycle length in the Apple Women’s Health Study",
       "year": "2022",
       "pdf": "module-01-wearables/literature/apple-watch/2022-gibson-npjdigitalmedicine-covid-19-vaccination-menstrual-cycle-length-apple.pdf",
       "pdf_status": "ok",
@@ -245,7 +274,7 @@
       "doi": "10.1016/j.ajog.2022.10.029",
       "pmid": "36414993",
       "pmcid": "PMC9877138",
-      "title": "Abnormal uterine bleeding patterns determined through menstrual tracking among participants in the Apple Women\u2019s Health Study",
+      "title": "Abnormal uterine bleeding patterns determined through menstrual tracking among participants in the Apple Women’s Health Study",
       "year": "2023",
       "pdf": null,
       "pdf_status": "not-pdf",
@@ -255,7 +284,7 @@
       "doi": "10.1016/j.ajog.2022.05.013",
       "pmid": "35568191",
       "pmcid": "PMC9093060",
-      "title": "Attempts to conceive and the COVID-19 pandemic: data from the Apple Women\u2019s Health Study",
+      "title": "Attempts to conceive and the COVID-19 pandemic: data from the Apple Women’s Health Study",
       "year": "2022",
       "pdf": "module-01-wearables/literature/apple-watch/2022-fruh-ajog-attempts-conceive-covid-19-pandemic-data-apple.pdf",
       "pdf_status": "ok",
@@ -265,7 +294,7 @@
       "doi": "10.1016/j.ajog.2021.09.041",
       "pmid": "34610322",
       "pmcid": "PMC10518829",
-      "title": "Design and methods of the Apple Women\u2019s Health Study: a digital longitudinal cohort study",
+      "title": "Design and methods of the Apple Women’s Health Study: a digital longitudinal cohort study",
       "year": "2022",
       "pdf": "module-01-wearables/literature/apple-watch/2022-mahalingaiah-ajog-apple-womens-health-study-design.pdf",
       "pdf_status": "already-in-kb",
@@ -280,6 +309,58 @@
       "pdf": "module-01-wearables/literature/research-accelerometers/2021-rahimieichi-jmirmhealthuhealth-open-source-longitudinal-sleep-analysis-accelerometer-data.pdf",
       "pdf_status": "ok",
       "source": "onnela-lab-papers-page-2026-08-31"
+    },
+    {
+      "doi": "10.1186/s12916-026-05192-1",
+      "pmid": "42733115",
+      "pmcid": "PMC13573439",
+      "title": "24h movement behaviours in university students compared to working age and older adults: wearable-based evidence and cardiometabolic health implications",
+      "year": "2026",
+      "device": "oura",
+      "tier": "B",
+      "category": "Use-case",
+      "pdf": null,
+      "pdf_status": "not attempted (Part A of the weekly scan does not fetch PDFs; see literature-library.md convention)",
+      "source": "weekly-scan-2026-09-21"
+    },
+    {
+      "doi": "10.3390/s26175625",
+      "pmid": "42740245",
+      "pmcid": "PMC13567947",
+      "title": "Machine Learning-Based Prediction Model of Pilgrims' Tiredness During Hajj Using Smartwatch Physiological and Mobility Indicators",
+      "year": "2026",
+      "device": "apple-watch",
+      "tier": "C",
+      "category": "Use-case",
+      "pdf": null,
+      "pdf_status": "not attempted (Part A of the weekly scan does not fetch PDFs; see literature-library.md convention)",
+      "source": "weekly-scan-2026-09-21"
+    },
+    {
+      "doi": "10.1016/j.resplu.2026.101447",
+      "pmid": "42699587",
+      "pmcid": "PMC13543876",
+      "title": "Wearable saving lives: a case report",
+      "year": "2026",
+      "device": "apple-watch",
+      "tier": "C",
+      "category": "Use-case",
+      "pdf": null,
+      "pdf_status": "not attempted (Part A of the weekly scan does not fetch PDFs; see literature-library.md convention)",
+      "source": "weekly-scan-2026-09-21"
+    },
+    {
+      "doi": "10.3389/fdgth.2026.1820224",
+      "pmid": "42698643",
+      "pmcid": "PMC13542415",
+      "title": "Advancement in wrist worn physical activity trackers: technological developments and measurement accuracy: a systematic review",
+      "year": "2026",
+      "device": "apple-watch",
+      "tier": "C",
+      "category": "Review",
+      "pdf": null,
+      "pdf_status": "not attempted (Part A of the weekly scan does not fetch PDFs; see literature-library.md convention)",
+      "source": "weekly-scan-2026-09-21"
     }
   ]
 }

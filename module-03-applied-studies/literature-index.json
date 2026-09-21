@@ -97,7 +97,15 @@
   "10.3390/s24196220",
   "10.3390/s24206532",
   "10.3390/s24237475",
-  "10.7759/cureus.45362"
+  "10.7759/cureus.45362",
+  "10.3233/SHTI260986",
+  "10.2196/99630",
+  "10.1016/j.apmr.2026.09.003",
+  "10.2196/108766",
+  "10.1080/09638288.2026.2731078",
+  "10.3389/fdgth.2026.1847917",
+  "10.3389/fdgth.2026.1860703",
+  "10.3390/cancers18172766"
  ],
  "pmcids_seen": [
   "PMC10031448",
@@ -193,10 +201,28 @@
   "PMC9906314",
   "PMC9938183",
   "PMC9950693",
-  "PMC9987377"
+  "PMC9987377",
+  "PMC13574307",
+  "PMC13582580",
+  "PMC13574954",
+  "PMC13564937"
  ],
- "last_run_date": null,
- "runs": [],
+ "last_run_date": "2026-09-21",
+ "runs": [
+  {
+   "date": "2026-09-21",
+   "source": "weekly-literature-scan routine (Part C)",
+   "scope": "First live firing. PubMed E-utilities grouped queries C1 (wearables) + C2 (platforms), date-sorted, since last_run_date null -> trailing 10 days (2026-09-11 to 2026-09-21); arXiv API C3 (same term sets, ti:/abs:/all: prefixes)",
+   "searched": {
+    "c1_wearables": 3,
+    "c2_platforms": 5,
+    "c3_arxiv": 0
+   },
+   "screened_in_queued": 0,
+   "screened_out_rejected": 8,
+   "notes": "Empty week -- expected per this module's deliberately high inclusion bar. All 8 candidates failed the 2-distinct-deployment-signal screening threshold (checked programmatically against the full abstract text, not just PubMed's own [tiab] match) or were false positives on named ordinary-word/acronym traps (AWARE). See rejected[] entries dated weekly-scan-2026-09-21 for per-paper reasons. No arXiv hits for either term set."
+  }
+ ],
  "records": [
   {
    "doi": "10.1186/s12984-024-01514-7",
@@ -879,6 +905,62 @@
    "reason": "no-cohort",
    "note": "9 of 74 analysed; keep the 10/74 Android-only comm-log gate as a corroboration of README finding 23.",
    "source": "module-03-coverage-build-2026-09-03"
+  },
+  {
+   "doi": "10.3233/SHTI260986",
+   "pmcid": null,
+   "reason": "architecture",
+   "note": "HiGHmed multi-site Apple Watch cardiology dashboard (conference proceedings, Studies in Health Technology and Informatics). A dashboard-tool paper, not a deployment-feasibility report; only 1 of 13 deployment-reality signal terms present in the abstract ('adherence'), fails the routine's 2-signal screening threshold despite a real cohort (93 enrolled, 12 analysed in this sub-study).",
+   "source": "weekly-scan-2026-09-21"
+  },
+  {
+   "doi": "10.2196/99630",
+   "pmcid": "PMC13574307",
+   "reason": "no-cohort",
+   "note": "Long COVID Fitbit Inspire 3 + FatigueSense app study, N=14, median 28d. Real wearable deployment but purely a within-person correlational/validity analysis (sleep/HRV vs fatigue); only 'longitudinal' matches the deployment-signal vocabulary, fails the 2-signal threshold -- no adherence/retention/completeness reporting.",
+   "source": "weekly-scan-2026-09-21"
+  },
+  {
+   "doi": "10.1016/j.apmr.2026.09.003",
+   "pmcid": null,
+   "reason": "no-cohort",
+   "note": "Knee-OA ActiGraph physical-activity percentiles, cross-sectional secondary analysis of the OAI accelerometer substudy (N=968). 'Longitudinal' describes the parent OAI cohort, not this analysis; no deployment/adherence/retention reporting of its own. Fails the 2-signal threshold.",
+   "source": "weekly-scan-2026-09-21"
+  },
+  {
+   "doi": "10.2196/108766",
+   "pmcid": null,
+   "reason": "no-cohort",
+   "note": "False positive on the ordinary-word/acronym trap: 'AWARE' here stands for 'AI Use, Why, Attachment, Reality and Risk, and Effect on Functioning' -- a proposed clinical-interviewing framework for assessing patients' conversational-AI use, unrelated to the AWARE mobile-sensing Framework. Viewpoint article, no participant cohort.",
+   "source": "weekly-scan-2026-09-21"
+  },
+  {
+   "doi": "10.1080/09638288.2026.2731078",
+   "pmcid": null,
+   "reason": "no-cohort",
+   "note": "m-Path ESM deployment in youth with physical disabilities (N=7, 2 weeks). Real small cohort but 0 of 13 deployment-signal terms present in the abstract; fails the 2-signal threshold. Already logged as a platform-methods addition in module-02-digital-phenotyping/literature-library.md.",
+   "source": "weekly-scan-2026-09-21"
+  },
+  {
+   "doi": "10.3389/fdgth.2026.1847917",
+   "pmcid": "PMC13582580",
+   "reason": "no-cohort",
+   "note": "FPGA/CNN accelerator for angiographic plaque classification. No Module 1/2 device or platform named; matched the grouped query on 'deployment' in an unrelated (FPGA hardware) sense. Not digital-health-platform relevant.",
+   "source": "weekly-scan-2026-09-21"
+  },
+  {
+   "doi": "10.3389/fdgth.2026.1860703",
+   "pmcid": "PMC13574954",
+   "reason": "no-cohort",
+   "note": "Conceptual Perspective proposing an infrastructure-aware digital-health evaluation framework, illustrated narratively by the Bright Health program (Kenya/Ethiopia) but reporting no participant-level deployment data of its own and no Module 1/2 profiled technology.",
+   "source": "weekly-scan-2026-09-21"
+  },
+  {
+   "doi": "10.3390/cancers18172766",
+   "pmcid": "PMC13564937",
+   "reason": "review",
+   "note": "Explicit review/commentary on cancer-diagnostics biomarker strategy; no wearable/phenotyping platform, no deployment cohort.",
+   "source": "weekly-scan-2026-09-21"
   }
  ]
 }

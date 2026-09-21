@@ -83,9 +83,12 @@
     "10.3390/cancers17010139",
     "10.3390/s20133706",
     "10.3390/s22062110",
-    "10.3390/s22072618"
+    "10.3390/s22072618",
+    "pmid:42742281",
+    "pmid:42761875",
+    "pmid:42690552"
   ],
-  "last_run_date": "2026-08-31",
+  "last_run_date": "2026-09-21",
   "runs": [
     {
       "date": "2026-08-31",
@@ -97,6 +100,36 @@
       "filed_module_01": 22,
       "pdfs_obtained": 54,
       "already_in_kb": 2
+    },
+    {
+      "date": "2026-09-21",
+      "source": "weekly-literature-scan routine (Part B)",
+      "scope": "PubMed E-utilities + arXiv API search since last_run_date 2026-08-31, all 9 platforms",
+      "searched_pubmed": {
+        "beiwe": 0,
+        "radar-base": 0,
+        "mindlamp": 2,
+        "aware": 0,
+        "avicenna": 0,
+        "m-path": 1,
+        "carp": 0,
+        "metricwire": 0,
+        "lifedata": 0
+      },
+      "searched_arxiv": {
+        "beiwe": 0,
+        "radar-base": 0,
+        "mindlamp": 0,
+        "aware": 0,
+        "avicenna": 0,
+        "m-path": 0,
+        "carp": 0,
+        "metricwire": 0,
+        "lifedata": 0
+      },
+      "screened_in": 1,
+      "screened_out": 2,
+      "notes": "mindLAMP's 2 PubMed hits (PMID 42761875, 42690552) are false positives -- both are molecular-biology 'LAMP' (loop-mediated isothermal amplification) assay papers, an unrelated meaning of the query term 'LAMP platform'; neither mentions the mindLAMP digital-phenotyping platform. Rejected, not added to the library. m-Path candidate (PMID 42742281) qualified: a genuine small-N ESM deployment study. PDF fetch not attempted for it -- this session's network egress policy allowlists only eutils.ncbi.nlm.nih.gov and export.arxiv.org; Europe PMC and all publisher domains returned 403 at the proxy. No arXiv hits for any platform this window."
     }
   ],
   "records": [
@@ -354,7 +387,7 @@
       "doi": "10.1227/neu.0000000000003051",
       "pmid": "38912791",
       "pmcid": null,
-      "title": "Assessing mobility in patients with glioblastoma using digital phenotyping \u2013 Piloting the digital assessment in neuro-oncology",
+      "title": "Assessing mobility in patients with glioblastoma using digital phenotyping – Piloting the digital assessment in neuro-oncology",
       "year": "2025",
       "pdf": null,
       "pdf_status": "no-source",
@@ -494,7 +527,7 @@
       "doi": "10.1038/s41746-022-00745-z",
       "pmid": "36823348",
       "pmcid": "PMC9950089",
-      "title": "A \u201cone-size-fits-most\u201d walking recognition method for smartphones, smartwatches, and wearable accelerometers",
+      "title": "A “one-size-fits-most” walking recognition method for smartphones, smartwatches, and wearable accelerometers",
       "year": "2023",
       "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2023-straczkiewicz-npjdigitalmedicine-one-size-fits-most-walking-recognition-method-smartphones-smartwatches.pdf",
       "pdf_status": "ok",
@@ -684,7 +717,7 @@
       "doi": "10.1002/mus.27110",
       "pmid": "33118628",
       "pmcid": "PMC7898508",
-      "title": "Smartphone data during the COVID\u201019 pandemic can quantify behavioral changes in people with ALS",
+      "title": "Smartphone data during the COVID‐19 pandemic can quantify behavioral changes in people with ALS",
       "year": "2021",
       "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2021-beukenhorst-musclenerve-smartphone-data-during-covid19-pandemic-can.pdf",
       "pdf_status": "ok",
@@ -924,7 +957,7 @@
       "doi": null,
       "pmid": null,
       "pmcid": null,
-      "title": "Smartphone\u00a0applications for monitoring mood disorders: A\u00a0systematic review",
+      "title": "Smartphone applications for monitoring mood disorders: A systematic review",
       "year": null,
       "pdf": null,
       "pdf_status": "not-pdf",
@@ -1009,6 +1042,16 @@
       "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2015-torous-jmirmentalhealth-utilizing-personal-smartphone-custom-app-assess.pdf",
       "pdf_status": "ok",
       "source": "onnela-lab-papers-page-2026-08-31"
+    },
+    {
+      "id": "pmid:42742281",
+      "doi": "10.1080/09638288.2026.2731078",
+      "title": "Participation involvement and mental health among young people with physical disabilities: preliminary findings using the experience sampling method",
+      "year": "2026",
+      "platform": "m-path",
+      "pdf": null,
+      "pdf_status": "not attempted -- Europe PMC and publisher domains policy-blocked this session (only eutils.ncbi.nlm.nih.gov and export.arxiv.org allowlisted)",
+      "source": "weekly-scan-2026-09-21"
     }
   ]
 }
