@@ -113,6 +113,23 @@ for passive, early pregnancy detection," "AF detection using Oura Ring with phot
 candidates for Tier A or B given the author-overlap pattern, but each needs its own COI check before
 being relied on.
 
+**Ong JL, Qin S, Martin TH, Chua XY, Soon CS, Yilmaz G, Ling LH, Müller-Riemenschneider F, Koh WP,
+Chee MW. 2026.** "24h movement behaviours in university students compared to working age and older
+adults: wearable-based evidence and cardiometabolic health implications." *BMC Medicine* 24(1).
+Centre for Sleep and Cognition, National University of Singapore (Soon, Yilmaz, Chee shared with the
+Liang/Yilmaz/Soon 2024 entry above). N=1,967 across three Singaporean cohorts (university students,
+working-age adults, community-dwelling older adults); 4 weeks of Oura Ring data per person;
+compositional-data regression linking reallocated activity/sedentary/sleep time to BMI, body
+roundness index, pulse-wave velocity, and a composite vascular score. **Flagged, not Verified:**
+same NUS Centre for Sleep and Cognition group as the disclosed **Oura–NUS Joint Lab** partnership
+noted above — this paper's own competing-interests text was not retrieved this pass (weekly scan;
+full-text fetch returned body text only, no back-matter/declarations section), so tiering follows
+the established institutional-partnership pattern rather than a directly-read disclosure.
+**Corroborated.** Students had the least activity (320.28 min/day) and most sedentary time
+(633.89 min/day) of the three cohorts; reallocating 30 min/day from sedentary time to other
+behaviours was associated with lower BMI (-0.28 kg/m²) and body roundness index (-0.07).
+https://doi.org/10.1186/s12916-026-05192-1
+
 ## Tier C — Fully independent
 
 **Cao R, Azimi I, Sarhaddi F, Niela-Vilen H, Axelin A, Liljeberg P, Rahmani AM. 2022.** "Accuracy
@@ -174,6 +191,20 @@ Wearable Devices Identify and Predict Inflammatory Bowel Disease Flares." *Gastr
 Icahn School of Medicine at Mount Sinai. Mixed-device study (Apple Watch, Fitbit, **or** Oura Ring
 — not Oura-specific). **Funded by NIDDK K23DK129835 (NIH); no Oura funding identified.**
 **Corroborated.**
+
+**Dine C, Rekkas Z, Frey BN, Krishnan S, Duarte D, Gomes FA, Mak MSB, Wanderley Espinola C. 2026.**
+"Wearable-Based Assessment for Relapse Prediction Following Repetitive Transcranial Magnetic
+Stimulation for Depression: Protocol for a Feasibility Study (WARN-D Study)." *JMIR Research
+Protocols* 15:e89466. McMaster University / St. Joseph's Healthcare Hamilton, Ontario. **Protocol
+paper, not a completed study** — categorized here as Use-case by default per this pass's
+classification rule, flagged as ambiguous since no participants had been enrolled and no data
+collected at time of publication (study funded Dec 2025; REB review pending). Planned single-arm
+pilot, N=25 outpatients with treatment-resistant depression, will use an Oura Ring throughout rTMS
+treatment and a 6-month follow-up to explore wearable-derived markers of relapse. **No Oura-specific
+funding/COI text found** in the accessible full text (only a generic note that "the wearable
+manufacturer is a global company" processing deidentified data internationally). **Tier C,
+Corroborated** — absence of a disclosed conflict is suggestive, not proof, of independence.
+https://doi.org/10.2196/89466
 
 ## Oura — systematic reviews (as discovery mechanism, and classified in their own right)
 
@@ -573,6 +604,58 @@ vendor. **Corroborated** (independent academic study; specific funding line not 
 this pass). 6/7 devices measured HR within 5%; energy expenditure inaccurate across all devices
 (best off by 27%, worst by 93%). n=60. https://med.stanford.edu/news/all-news/2017/05/fitness-trackers-accurately-measure-heart-rate-but-not-calories-burned.html
 
+**Sarikonda A, Jain H, Pasquariello LD, Baker CR, Bathon JF, De Oliveira N, Gardocki RJ, Wilson BR,
+Abtahi AM, Stephens BF, Zuckerman SL. 2026.** "Measuring Long-Term Outcomes After Degenerative Spine
+Surgery: Is It Time for Something New? A Smartphone-Based Analysis of 60,753 Days of Objective
+Mobility Data." *Neurosurgery Practice* 7(5):e000298. Vanderbilt University Medical Center. N=51
+patients (38 lumbar, 13 cervical) shared iPhone/Apple Watch mobility data for a combined 60,753
+patient-days; mobility declined immediately post-surgery then recovered by ~2–3 months, with
+sustained long-term improvement correlating with better Oswestry/Neck Disability Index and pain
+scores. **Unclear** — funding/COI text not accessible this pass. https://doi.org/10.1227/neuprac.0000000000000298
+
+**Yusuf KO, Steinbrinker TA, Jörß K, Richter J, Hanß S, Zeppernik T, Werle KK, Tute E, Freund R,
+Fette G, Bavendiek U, Grosse-Meininghaus D, Störk S, Krefting D. 2026.** "A Multi-Site Dashboard for
+Evaluating HiGHmed Cardiovascular Sensor Data from Apple Watch." *Studies in Health Technology and
+Informatics* 340:66–76. University Medical Center Göttingen, on behalf of the German HiGHmed
+consortium. **Format note:** this venue publishes short conference-style papers alongside full
+articles; treat as a preliminary report. Dashboard aggregating Apple Watch heart-rate/step data with
+hospitalization records, KCCQ-12 scores, and manual vitals for 12 of 93 enrolled chronic
+heart-failure patients across 4 German sites; pre-hospitalization deterioration visible as falling
+KCCQ-12 scores and daily steps dropping below 2,000. **Unclear** — no PMC deposit found and
+funding/COI text not accessible this pass; academic consortium with no indication of Apple funding.
+https://doi.org/10.3233/SHTI260986
+
+**Alshamrani M, Alhazmi S, Alafif T, Qadah TM, Aljabri M, Al-Eidarous W, Alhawsawi A, Farrash M.
+2026.** "Machine Learning-Based Prediction Model of Pilgrims' Tiredness During Hajj Using Smartwatch
+Physiological and Mobility Indicators." *Sensors* 26(17):5625. Umm Al-Qura University, Saudi Arabia.
+Uses the "Hajj 1445 (June 2024) Apple Watch dataset" — only 120 records from 3 participants —
+to compare synthetic-data-augmentation methods for a tiredness-prediction classifier; best
+record-level accuracy 93.33%, but leave-one-participant-out mean accuracy only 68.65% (SD 19.72%),
+indicating weak cross-participant generalization from this small a cohort. **Unclear** —
+funding/COI text not accessible this pass; no vendor tie indicated. https://doi.org/10.3390/s26175625
+
+**Hartman CA, Leroux A, Merchant RC, Roberts S, Bettcher BM, Lum HD, Resnik L, Berry SD, Mealer M,
+Mor V, Goldberg E. 2026.** "Smartphone-Based Measurement of Cognition and Physical Function in
+Older Emergency Department Patients: A Feasibility Study." *Academic Emergency Medicine*
+33(9):e70408. University of Colorado Anschutz Medical Campus (ClinicalTrials.gov NCT04304495). N=196
+community-dwelling older ED patients after a fall; Apple ResearchKit digital cognitive assessments
+(Stroop, Trail Making, reaction time) plus Apple Watch-monitored movement. 77% attempted at least
+one digital assessment; cognitive-test completion 68–87%, but physical-function-test completion only
+18–20%, mainly due to safety concerns, pain, and injury. **Unclear** — funding/COI text not
+accessible this pass. https://doi.org/10.1111/acem.70408
+
+**Jansen CE, Jaspers Focks J, Manglani Rodriguez S, Pol L, Edgar R, van Royen N, Bonnes JL. 2026.**
+"Wearable saving lives: a case report." *Resuscitation Plus* 31:101447. Radboud University Medical
+Center / Slingeland Hospital, the Netherlands. N=1 case report: a 69-year-old man's unwitnessed
+out-of-hospital cardiac arrest was detected by Apple Watch fall detection, triggering alerts that led
+family members to start CPR within 6–7 minutes; full neurological recovery after ICD implantation.
+**Verified — full competing-interest text read directly:** several co-authors disclose unrelated
+research grants (European Resuscitation Council, Dutch Heart Foundation, Radboud UMC, ZonMw) and
+device-industry ties pointed at other companies (Biotronik, Abbott, Medtronic, Philips, Bayer); the
+statement closes "All other authors declare no competing interests." **No author discloses any
+Apple Inc. relationship. Tier C, Corroborated** — a directly-read absence of Apple-specific COI is
+stronger than an unread one, but still not proof of independence. https://doi.org/10.1016/j.resplu.2026.101447
+
 ## Apple Watch — systematic reviews / meta-analyses
 
 **Shahid S, Iqbal M, Saeed H, et al. 2025.** "Diagnostic Accuracy of Apple Watch Electrocardiogram
@@ -596,6 +679,16 @@ login wall and not directly read. https://www.nature.com/articles/s41746-025-022
 Wearable Technology."** Nova Southeastern University, 2022, PMC8752409. 9 studies, n=1,581,
 wrist wearables (Apple Watch, Samsung, KardiaBand) vs. conventional AF detection. **Unclear** —
 funding/COI not confirmed this pass.
+
+**Hogue T, Khoury A, Njeim P, Aswad N, Youssef L, Birtulescu S, Faust A, Hajj-Boutros G. 2026.**
+"Advancement in wrist worn physical activity trackers: technological developments and measurement
+accuracy: a systematic review." *Frontiers in Digital Health* 8:1820224. Research Institute of
+McGill University Health Centre. PRISMA review (PROSPERO CRD42024551740) of 47 studies (of 1,659
+screened) spanning pre-2010 to current wrist-worn trackers, including but not specific to Apple
+Watch. Reports modern devices "such as Apple Watch" reaching HR validity >0.80 during exercise
+versus ≤0.50 for pre-2010 devices; energy-expenditure error remains 10–40% even in recent devices;
+step-count error has fallen from up to 25% (pre-2017) to commonly <5%. **Unclear** — funding/COI
+not accessible this pass. https://doi.org/10.3389/fdgth.2026.1820224
 
 ## Apple Watch — access limitations and gaps
 

@@ -20,9 +20,18 @@
     "41048429",
     "41297783",
     "41572285",
-    "42001665"
+    "42001665",
+    "42766673",
+    "42733115",
+    "42769884",
+    "42752470",
+    "42711831",
+    "42740245",
+    "42775945",
+    "42699587",
+    "42698643"
   ],
-  "last_run_date": "2026-08-31",
+  "last_run_date": "2026-09-28",
   "runs": [
     {
       "date": "2026-08-31",
@@ -34,6 +43,17 @@
       "filed_module_02": 91,
       "pdfs_obtained": 16,
       "already_in_kb": 1
+    },
+    {
+      "date": "2026-09-28",
+      "source": "weekly-literature-scan (NCBI E-utilities via PubMed MCP), window 2026-08-31 to 2026-09-28 (entry date)",
+      "scope": "Oura, WHOOP, Apple Watch PubMed searches per shared/weekly-literature-scan.md Part A",
+      "searched": {"oura": 2, "whoop": 0, "apple_watch": 7},
+      "screened_in": 8,
+      "screened_out": 1,
+      "screened_out_reason": "PMID 42711831 (SleepECGNet) excluded: Apple Watch named only as a passing benchmark/comparator reference in the abstract, not deployed or used for data collection in the study",
+      "category_breakdown": {"validation": 0, "use_case": 7, "review": 1},
+      "filed_this_module": 8
     }
   ],
   "dois_seen": [

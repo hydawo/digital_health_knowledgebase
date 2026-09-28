@@ -27,11 +27,17 @@ screening in this project has a measured platform-misattribution rate of roughly
 
 ## Pending
 
-_(empty — the routine has not yet run against Module 3. First firing expected the Monday following
-2026-09-02.)_
-
 | Found | DOI | PMCID | Title | Venue / year | Apparent technology | Signals | OA |
 |---|---|---|---|---|---|---|---|
+| 2026-09-28 | 10.1016/j.exger.2026.113337 | — | A reproducible pipeline for processing commercial wearable step-count data in aging cohorts: Application and evaluation in the STRRIDE-PD reunion study | Experimental Gerontology, 2026 | Garmin (step-count pipeline) | data completeness; wear-time inference | Unclear (no PMC id) |
+| 2026-09-28 | 10.1111/jgs.70726 | — | Development and Preliminary Feasibility Testing of PACERS, a Physical Activity-Centered Intervention for Rural Older Adults With Hypertension | J Am Geriatr Soc, 2026 | Fitbit | feasibility; recruitment/retention/fidelity/adherence | Unclear (no PMC id) |
+| 2026-09-28 | 10.1002/pon.70616 | PMC13613989 | Making Interventions More Effective: Changes in Theoretical Constructs During Delivery of a Peer-Led Physical Activity Program for Breast Cancer Survivors | Psycho-Oncology, 2026 | Fitbit | engagement; longitudinal | PMC deposit exists |
+| 2026-09-28 | 10.1111/acem.70408 | — | Smartphone-Based Measurement of Cognition and Physical Function in Older Emergency Department Patients: A Feasibility Study | Acad Emerg Med, 2026 | Apple Watch / Apple ResearchKit | feasibility; completion-rate reporting | Unclear (no PMC id) |
+| 2026-09-28 | 10.1371/journal.pdig.0001691 | PMC13614584 | Optimizing accelerometer implementation in a gerotherapeutic trial: Feasibility, adherence, and operational insights of ABLE | PLOS Digital Health, 2026 | ActiGraph | feasibility; adherence; wear time; attrition/dropout | PMC deposit exists (PLOS, typically CC BY) |
+| 2026-09-28 | 10.2196/88466 | PMC13592238 | Clinical Implementation of Wearable-Derived Sleep and Activity Reporting for Inpatient Psychiatric Monitoring | JMIR Form Res, 2026 | GENEActiv | feasibility; usability; technical-failure/barriers | PMC deposit exists (JMIR, typically CC BY) |
+| 2026-09-28 | 10.1177/03331024261492220 | — | Migraine attack prediction using wearable biosensor data | Cephalalgia, 2026 | Empatica EmbracePlus | feasibility; longitudinal (~1-month monitoring) | Unclear (no PMC id) |
+
+Platform attribution is Reported - verify from full text before profiling.
 
 ---
 

@@ -2,6 +2,85 @@
 
 ---
 
+## 2026-09-28 — Weekly literature scan (automated): Module 1 +8, Module 2 partial (+1), Module 3 triage 7 queued / 16 rejected
+
+**Module:** 1 (research-library-wearables.md), 2 (literature-library.md, partial), 3 (triage only,
+`_scan-queue.md`). Automated unattended run per `shared/weekly-literature-scan.md`; window since last
+run (2026-08-31) for Modules 1–2, trailing 10 days (2026-09-18 to 2026-09-28) for Module 3 (first
+Module 3 firing, `last_run_date` was null).
+
+**Network conditions this pass, affecting all three modules' scope:** only `eutils.ncbi.nlm.nih.gov`
+was reachable. `export.arxiv.org` returned **HTTP 406 from arXiv's own edge** on every query attempted
+(confirmed not a proxy policy block — the CONNECT succeeded; arXiv's Fastly/Varnish edge itself
+rejected the request), so the arXiv half of Module 2's Part B and Module 3's C3 did not run this
+pass. Europe PMC's render service and the direct NCBI `pmc.ncbi.nlm.nih.gov`/`www.ncbi.nlm.nih.gov`
+subdomains are also outside this session's network allowlist (403 policy denial), so no PDF could be
+fetched or verified this pass for any module — the PubMed MCP tool's own full-text endpoint (backed by
+PMC) was used where possible for COI-statement extraction instead, but it returns text, not a
+downloadable file, so it cannot substitute for the PDF-storage step Module 2 requires.
+
+**Module 1 (Oura, WHOOP, Apple Watch).** Searched: Oura 2, WHOOP 0, Apple Watch 7 (9 candidates, all
+new). 8 of 9 passed the relevance bar; 1 excluded (PMID 42711831, an ECG sleep-staging paper — Apple
+Watch named only as a passing benchmark comparator, not deployed). Category breakdown: 0 Validation,
+7 Use-case, 1 Review. All 8 filed as Tier C (independent) or flagged Tier B by institutional-pattern
+inference, all at Corroborated confidence — no CoiStatement back-matter was retrievable this pass for
+any of them (see network conditions above), so no entry could be marked Verified. Notably, one new
+Oura paper (Ong et al. 2026, NUS 24h-movement-behaviours study) shares the Centre for Sleep and
+Cognition's disclosed Oura–NUS Joint Lab authors (Soon, Yilmaz, Chee) with an existing Tier B entry —
+tiered B by the same institutional-partnership logic already established in the file, flagged rather
+than silently defaulted to Tier C. Followed the file's own stated convention ("organized by
+sponsorship status") rather than the routine's generic "Category then Tier" instruction, per
+CLAUDE.md's own instruction to follow each module's established convention exactly — new Review-
+category entries went into the existing per-device "systematic reviews" subsections instead of a new
+top-level Category structure.
+
+**Module 2 (digital phenotyping platforms) — partial run, `last_run_date` NOT advanced.** PubMed
+searched: Beiwe 0, RADAR-base 0, mindLAMP 4 (all false positives — genuine laboratory
+loop-mediated-isothermal-amplification assay papers, an acronym collision with the mindLAMP platform,
+not previously documented as a trap for this module), AWARE 0, Avicenna/Ethica 0, m-Path 1, CARP 0,
+MetricWire 0, LifeData 0. Only 1 candidate qualified (Madan et al. 2026, m-Path ESM study in youth
+with physical disabilities, N=7) — filed under m-Path with OA status "OA but not obtained this pass"
+since no PDF could be fetched (see network conditions above). `last_run_date` was deliberately left at
+2026-08-31 rather than advanced to today, specifically because arXiv did not run — advancing it would
+permanently skip this window for the CS/engineering-venue coverage (AWARE, CARP in particular) that
+Part B's arXiv leg exists to catch once arXiv is reachable again. ids_seen was still updated with all
+5 PubMed candidates evaluated (including the 4 mindLAMP false positives) to avoid re-screening them
+next week.
+
+**Module 3 (triage only) — partial run, `last_run_date` left null.** Grouped queries C1
+(wearables, split into two sub-queries for the API's 20-operator limit) returned 17 candidates, C2
+(platforms) returned 6, C3 (arXiv) did not run. Of the 23 PubMed candidates: **7 queued**, **16
+rejected** (3 protocol, 13 no-cohort). All 6 of C2's raw hits were false positives from the same class
+of ordinary-word phrase-matching failure this project has already documented for AWARE — one
+(a European school-obesity-policy paper) matched because its own text reads "Multi-Actor,
+Context-Aware framework," which tokenizes to "Aware framework" once the hyphen is stripped, exactly
+the quoted-phrase-matching gap PubMed's `[tiab]` has for this term. None of the 6 had any genuine
+connection to a Module 1/2 platform. Queued candidates worth flagging for the next human pass: an
+ActiGraph gerotherapeutic-trial feasibility/adherence/dropout study (N=120, ABLE trial), a GENEActiv
+inpatient-psychiatric implementation study with real offer/accept/completion funnel numbers (N=155),
+and a Fitbit rural-hypertension feasibility pilot with unusually complete recruitment/retention/
+fidelity/adherence figures (PACERS). As with Module 2, `last_run_date` was left null (not advanced to
+today) because C3 did not run — the next run will retry the same trailing-10-day-or-later window
+against arXiv once it is reachable, at no cost beyond re-running PubMed's C1/C2 queries, since the
+dedup ledger (`dois_seen`/`pmcids_seen`/`rejected`) already covers everything decided this pass.
+Also added the 7 queued (not yet profiled or rejected) DOIs/PMCIDs to `dois_seen`/`pmcids_seen`,
+beyond what the routine's own written instructions call for, so they are not silently re-queued as
+duplicates next week while they sit unresolved in `_scan-queue.md` — flagged in the ledger's own
+`runs` entry as a gap in the routine's dedup instructions worth fixing in `shared/weekly-literature-scan.md`
+if a human confirms this reasoning.
+
+**Decisions/gaps worth a follow-up pass:**
+1. `export.arxiv.org` returning HTTP 406 to a legitimate, correctly-formed API query (confirmed with
+   explicit `Accept`/`Accept-Encoding`/`User-Agent` headers, all still 406) looks like an IP-range
+   block rather than a request-shape problem. Worth checking from a different egress point before
+   assuming this is permanent.
+2. mindLAMP's acronym collision with laboratory LAMP assays should be added to this module's
+   documented false-positive traps alongside AWARE/CARP/Polar/Avicenna/Oura/Samsung/m-Path.
+3. Module 2's OA-verification pipeline (Europe PMC render + NCBI PMC subdomains) is entirely outside
+   this session's current network allowlist, not just arXiv — this blocks the PDF-download step of
+   Part B regardless of arXiv's status and should be raised with whoever manages the routine's custom
+   allowlist.
+
 ## 2026-09-03 (evening) — Module 3 coverage pass completed and integrated; Module 4 baseline; explorer pages
 
 **Module:** 3 (ten profiles now integrated), 4 (baseline search), explorer.

@@ -97,7 +97,30 @@
   "10.3390/s24196220",
   "10.3390/s24206532",
   "10.3390/s24237475",
-  "10.7759/cureus.45362"
+  "10.7759/cureus.45362",
+  "10.1016/j.exger.2026.113337",
+  "10.1111/jgs.70726",
+  "10.1002/pon.70616",
+  "10.1111/acem.70408",
+  "10.1371/journal.pdig.0001691",
+  "10.2196/88466",
+  "10.1177/03331024261492220",
+  "10.1111/jsr.70457",
+  "10.2196/89466",
+  "10.2196/99594",
+  "10.1227/neuprac.0000000000000298",
+  "10.1038/s41467-026-76147-6",
+  "10.1007/s10484-026-09811-8",
+  "10.3390/sports14090394",
+  "10.3390/jfmk11030338",
+  "10.3390/children13091132",
+  "10.3390/children13091129",
+  "10.1093/jamiaopen/ooag182",
+  "10.1016/j.talanta.2026.130639",
+  "10.1109/TCBBIO.2026.3731395",
+  "10.3389/fpubh.2026.1791618",
+  "10.3389/fdata.2026.1876811",
+  "10.3389/fdgth.2026.1847917"
  ],
  "pmcids_seen": [
   "PMC10031448",
@@ -193,10 +216,41 @@
   "PMC9906314",
   "PMC9938183",
   "PMC9950693",
-  "PMC9987377"
+  "PMC9987377",
+  "PMC13613989",
+  "PMC13614584",
+  "PMC13592238",
+  "PMC13592458",
+  "PMC13592738",
+  "PMC13592996",
+  "PMC13601627",
+  "PMC13611677",
+  "PMC13608073",
+  "PMC13605833",
+  "PMC13605536",
+  "PMC13612241",
+  "PMC13601350",
+  "PMC13590562",
+  "PMC13582580"
  ],
  "last_run_date": null,
- "runs": [],
+ "runs": [
+  {
+   "date": "2026-09-28",
+   "status": "partial",
+   "source": "weekly-literature-scan (PubMed via PubMed MCP), window 2026-09-18 to 2026-09-28 (entry date, trailing-10-day default since last_run_date was null)",
+   "issues": [
+    "arXiv API (export.arxiv.org) unreachable this pass: every query returned HTTP 406 from arXiv's own edge (not a proxy policy block), so C3 (arXiv, CS/engineering-venue coverage) was not performed"
+   ],
+   "last_run_date_advanced": false,
+   "reason_not_advanced": "C3 did not run; advancing last_run_date would permanently skip this window for arXiv-indexed candidates once arXiv is reachable again",
+   "searched": {"c1_wearables_pubmed": 17, "c2_platforms_pubmed": 6, "c3_arxiv": "not run (API unreachable)"},
+   "screened_in_queued": 7,
+   "screened_out_rejected": 16,
+   "rejected_reason_breakdown": {"protocol": 3, "no_cohort": 13},
+   "note": "C2's 6 raw hits were all false positives from PubMed's unreliable phrase-matching on the ordinary-word platform term \"AWARE framework\" (e.g. \"Context-Aware framework\" in an unrelated obesity-policy paper) — none were genuinely about any Module 1/2 platform; see rejected array. Queued-candidate DOIs/PMCIDs were also added to dois_seen/pmcids_seen (not just rejected ones) so they are not re-surfaced next week while sitting unresolved in _scan-queue.md; a future pass should also check _scan-queue.md's own Pending rows for dedup, since the routine's written instructions only name dois_seen/pmcids_seen/rejected."
+  }
+ ],
  "records": [
   {
    "doi": "10.1186/s12984-024-01514-7",
@@ -879,6 +933,118 @@
    "reason": "no-cohort",
    "note": "9 of 74 analysed; keep the 10/74 Android-only comm-log gate as a corroboration of README finding 23.",
    "source": "module-03-coverage-build-2026-09-03"
+  },
+  {
+   "doi": "10.1111/jsr.70457",
+   "pmcid": null,
+   "reason": "protocol",
+   "note": "Trial protocol for the 'Digital Sleep Revolution' OSA diagnostic pathway; design/planned-analyses only, no results yet.",
+   "source": "weekly-literature-scan-2026-09-28"
+  },
+  {
+   "doi": "10.2196/89466",
+   "pmcid": "PMC13592458",
+   "reason": "protocol",
+   "note": "WARN-D study (Oura Ring, rTMS relapse prediction): feasibility protocol; explicitly no participants enrolled and no data collected at submission.",
+   "source": "weekly-literature-scan-2026-09-28"
+  },
+  {
+   "doi": "10.2196/99594",
+   "pmcid": "PMC13592738",
+   "reason": "protocol",
+   "note": "Prospective observational cohort protocol for wrist-accelerometer remote monitoring of RA flare during DMARD tapering; only 16 of a planned 100 recruited as of writing, outcome analyses not yet conducted.",
+   "source": "weekly-literature-scan-2026-09-28"
+  },
+  {
+   "doi": "10.1227/neuprac.0000000000000298",
+   "pmcid": "PMC13592996",
+   "reason": "no-cohort",
+   "note": "Apple Watch/iPhone spine-surgery mobility study (N=51, 60,753 patient-days) is a clinical-outcomes correlation study (mobility vs. PROMs); no explicit feasibility/retention/adherence framing despite a real cohort.",
+   "source": "weekly-literature-scan-2026-09-28"
+  },
+  {
+   "doi": "10.1038/s41467-026-76147-6",
+   "pmcid": "PMC13601627",
+   "reason": "no-cohort",
+   "note": "All of Us Fitbit circadian rest-activity/biological-aging study (N=2,222); epidemiological association study, only 'longitudinal' signal matched, no adherence/retention/completeness reporting.",
+   "source": "weekly-literature-scan-2026-09-28"
+  },
+  {
+   "doi": "10.1007/s10484-026-09811-8",
+   "pmcid": null,
+   "reason": "no-cohort",
+   "note": "Polar H10 used only as an HRV-recording instrument in a single-session acute lab crossover breathing study (N=34); not a wearable deployment/feasibility study.",
+   "source": "weekly-literature-scan-2026-09-28"
+  },
+  {
+   "doi": "10.3390/sports14090394",
+   "pmcid": "PMC13611677",
+   "reason": "no-cohort",
+   "note": "ActiGraph GT9X used only as a covariate-measurement instrument in a cross-sectional adiposity study (N=264 schoolchildren); wear time appears only as an adjustment covariate, no deployment-reality reporting.",
+   "source": "weekly-literature-scan-2026-09-28"
+  },
+  {
+   "doi": "10.3390/jfmk11030338",
+   "pmcid": "PMC13608073",
+   "reason": "no-cohort",
+   "note": "ActiGraph+CGM glycemic-variability association study in T2D (N=140); accelerometry is the exposure variable, not the object of a feasibility/deployment report.",
+   "source": "weekly-literature-scan-2026-09-28"
+  },
+  {
+   "doi": "10.3390/children13091132",
+   "pmcid": "PMC13605833",
+   "reason": "no-cohort",
+   "note": "ActiGraph used only as a movement-behavior measurement instrument in a household-poverty association study (N=66 preschoolers); no feasibility/retention reporting.",
+   "source": "weekly-literature-scan-2026-09-28"
+  },
+  {
+   "doi": "10.3390/children13091129",
+   "pmcid": "PMC13605536",
+   "reason": "no-cohort",
+   "note": "SUNRISE Ecuador pilot secondary cross-sectional analysis (N=108); ActiGraph is an instrument for exposure measurement only, no deployment-reality reporting.",
+   "source": "weekly-literature-scan-2026-09-28"
+  },
+  {
+   "doi": "10.1093/jamiaopen/ooag182",
+   "pmcid": "PMC13612241",
+   "reason": "no-cohort",
+   "note": "False positive: 'medicalcoder' R package paper for ICD comorbidity scoring, unrelated to any Module 1/2 platform. Matched the C2 query only because PubMed's [tiab] phrase-matching for the ordinary-word term \"AWARE framework\" is unreliable (per this project's documented false-positive traps) — the word 'framework' appears in the abstract with no connection to the AWARE mobile-sensing platform.",
+   "source": "weekly-literature-scan-2026-09-28"
+  },
+  {
+   "doi": "10.1016/j.talanta.2026.130639",
+   "pmcid": null,
+   "reason": "no-cohort",
+   "note": "False positive: LC-MS metabolite retention-time-prediction chemistry paper, unrelated to any Module 1/2 platform; same AWARE-framework phrase-matching artifact as the other C2 false positives this pass.",
+   "source": "weekly-literature-scan-2026-09-28"
+  },
+  {
+   "doi": "10.1109/TCBBIO.2026.3731395",
+   "pmcid": null,
+   "reason": "no-cohort",
+   "note": "False positive: multiomics machine-learning methods paper, unrelated to any Module 1/2 platform; same AWARE-framework phrase-matching artifact.",
+   "source": "weekly-literature-scan-2026-09-28"
+  },
+  {
+   "doi": "10.3389/fpubh.2026.1791618",
+   "pmcid": "PMC13601350",
+   "reason": "no-cohort",
+   "note": "False positive: European school obesity-prevention policy review. Abstract's own phrase 'Multi-Actor, Context-Aware framework' contains 'Aware framework' as adjacent tokens once the hyphen is stripped, which is exactly the ordinary-word phrase-matching failure this project's screening notes warn about for AWARE — the paper has no connection to the AWARE mobile-sensing platform.",
+   "source": "weekly-literature-scan-2026-09-28"
+  },
+  {
+   "doi": "10.3389/fdata.2026.1876811",
+   "pmcid": "PMC13590562",
+   "reason": "no-cohort",
+   "note": "False positive: judicial-records crime-analytics ML paper, unrelated to any Module 1/2 platform; same AWARE-framework phrase-matching artifact.",
+   "source": "weekly-literature-scan-2026-09-28"
+  },
+  {
+   "doi": "10.3389/fdgth.2026.1847917",
+   "pmcid": "PMC13582580",
+   "reason": "no-cohort",
+   "note": "False positive: FPGA-based CNN coronary-angiography classifier paper, unrelated to any Module 1/2 platform; same AWARE-framework phrase-matching artifact.",
+   "source": "weekly-literature-scan-2026-09-28"
   }
  ]
 }

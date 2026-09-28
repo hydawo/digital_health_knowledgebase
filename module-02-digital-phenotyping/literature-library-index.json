@@ -83,7 +83,12 @@
     "10.3390/cancers17010139",
     "10.3390/s20133706",
     "10.3390/s22062110",
-    "10.3390/s22072618"
+    "10.3390/s22072618",
+    "10.1080/09638288.2026.2731078",
+    "10.1016/j.mex.2026.104138",
+    "10.1128/jcm.00662-26",
+    "10.3390/vetsci13090951",
+    "10.1007/s44211-026-00959-1"
   ],
   "last_run_date": "2026-08-31",
   "runs": [
@@ -97,6 +102,24 @@
       "filed_module_01": 22,
       "pdfs_obtained": 54,
       "already_in_kb": 2
+    },
+    {
+      "date": "2026-09-28",
+      "status": "partial",
+      "source": "weekly-literature-scan (PubMed via PubMed MCP), window 2026-08-31 to 2026-09-28 (entry date)",
+      "scope": "Beiwe, RADAR-base, mindLAMP, AWARE, Avicenna/Ethica, m-Path, CARP, MetricWire, LifeData per shared/weekly-literature-scan.md Part B",
+      "issues": [
+        "arXiv API (export.arxiv.org) unreachable this pass: returned HTTP 406 from arXiv's own edge (not a proxy policy block) on every query attempted, so the arXiv half of Part B's search (CS/engineering-venue coverage for AWARE, CARP, etc.) was not performed",
+        "Europe PMC render service and direct NCBI PMC/www subdomains are outside this session's network allowlist (only eutils.ncbi.nlm.nih.gov reachable), so PDF fetch/verification could not be attempted for any candidate this pass"
+      ],
+      "last_run_date_advanced": false,
+      "reason_not_advanced": "arXiv half of the search did not run; advancing last_run_date would permanently skip that window for arXiv-indexed platform coverage once arXiv is reachable again",
+      "searched_pubmed_only": {"beiwe": 0, "radar_base": 0, "mindlamp": 4, "aware": 0, "avicenna_ethica": 0, "m_path": 1, "carp": 0, "metricwire": 0, "lifedata": 0},
+      "screened_in": 1,
+      "screened_out": 4,
+      "screened_out_reason": "all 4 mindLAMP hits were false positives: genuine laboratory loop-mediated isothermal amplification (LAMP) assay papers unrelated to the mindLAMP digital-phenotyping platform (ambiguous-acronym trap, same class as this module's documented Polar/AWARE/CARP traps)",
+      "oa_status_breakdown": {"verified_oa": 0, "oa_not_obtained": 1, "paywalled": 0, "preprint_oa_publisher_blocked": 0, "not_a_formal_publication": 0},
+      "filed_this_module": 1
     }
   ],
   "records": [
