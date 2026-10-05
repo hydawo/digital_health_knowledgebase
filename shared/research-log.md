@@ -2,6 +2,124 @@
 
 ---
 
+## 2026-10-05 — Weekly literature-scan routine: first live firing (all three modules)
+
+**Module:** 1 (Oura/WHOOP/Apple Watch), 2 (phenotyping platforms), 3 (triage only). Automated,
+unattended run per `shared/weekly-literature-scan.md`'s full prompt.
+
+This is the routine's **first actual firing** since it was wired up on 2026-09-02 — Module 1/2's
+`last_run_date` was still 2026-08-31 (the manual pass that seeded them) and Module 3's was `null`.
+Window used: 2026-08-31 to 2026-10-05 for Modules 1–2 (edat); trailing 10 days
+(2026-09-25 to 2026-10-05) for Module 3 per its null-`last_run_date` rule.
+
+### Module 1 — Oura/WHOOP/Apple Watch
+
+Searched: Oura 6, WHOOP 0, Apple Watch 9 (15 PMIDs total). **11 passed the relevance bar** (10
+Use-case, 1 Review); **4 excluded**: one medRxiv preprint (not peer-reviewed — Oura+DBS framework
+paper, PMID 42818127), two false positives where "Apple Watch"[tiab] matched because of the query's
+broad OR-clause but the device itself was never named in title/abstract (Apple ResearchKit and
+iPhone-only studies, PMIDs 42775945/42769884), and one (PMID 42711831) where Apple Watch appeared
+only as a passing background comparator in an unrelated ECG-algorithm paper, excluded conservatively
+as not genuine "research involving" the device. All 11 appended to
+`research-library-wearables.md` within the existing device → sponsorship-tier structure (5 Oura
+Tier C, 1 Oura Tier B — Chee's Oura Medical Advisory Board membership, Verified; 5 Apple Watch, 4
+Tier C + 1 new systematic-review entry).
+
+**Scope decision, explained because it departs from the routine's literal prompt text:** Part A step
+5 says to add a device → Category (Validation/Use-case/Review) → Tier structure "on first run" if it
+doesn't already exist. It doesn't exist — the live file has always been organized strictly
+device → Tier, with no Category heading anywhere, confirmed by grepping for any prior "Category:"
+label. Restructuring ~50 existing entries into a new heading layout is a large, hard-to-verify
+content change for an unattended run on a public repo, and it conflicts directly with this task's
+own working-directory instruction to "follow each module's own established convention exactly, do
+not invent a fourth format." I judged the conflict should resolve in favor of the narrower,
+reversible action: new entries were appended inside the existing Tier sections, and each paper's
+Category classification (step 4) is recorded here instead of as a new file heading.
+**Category breakdown this run: Use-case 10, Review 1, Validation 0.**
+
+One new COI-classification nuance surfaced: PMID 42814730's disclosure states Oura Health "was not
+involved in study funding, design, data collection, analysis, interpretation, manuscript
+preparation, or the decision to submit" — the vendor is named, but only to disclaim involvement.
+The prompt's binary rule (mention vendor as funder/employer/etc. → Tier A/B Verified; no mention →
+Tier C Corroborated) doesn't cover this case. Classified Tier C but **Verified**, since the actual
+disclosure text addressing the vendor relationship was read directly — distinguished explicitly in
+the entry from the default no-mention Corroborated case.
+
+### Module 2 — phenotyping platforms
+
+Searched (PubMed, edat): Beiwe 0, RADAR-base 0, mindLAMP 4, AWARE 0, Avicenna/Ethica 1, m-Path 1,
+CARP 0, MetricWire 0, LifeData 0. Searched (arXiv, submittedDate): all 0 relevant — RADAR-base and
+AWARE queries returned 9 and 50 hits respectively, all false positives (radar signal-processing
+papers; "-aware" as an ordinary ML-paper-title suffix), screened out on title alone.
+
+**New query-design finding:** all 4 "mindLAMP"/"LAMP platform" PubMed hits were false positives for
+**L**oop-mediated is**o**thermal **AMP**lification — a molecular-biology assay technique, completely
+unrelated to the mindLAMP digital-phenotyping platform. "LAMP platform" is too weak a discriminator
+as an OR-term; a future prompt revision should probably require co-occurrence with "mindLAMP" itself
+or a phenotyping-specific term. Not changed this pass — prompt edits need a human to update the
+claude.ai Routines UI and `shared/weekly-literature-scan.md` together.
+
+**2 papers passed the relevance bar** and were appended as new rows to `literature-library.md`:
+an Avicenna Research protocol/pilot paper (MENTALSED, intellectual-disability EMA + wearables) and
+an m-Path deployment paper (n=7 ESM study, youth with physical disabilities). Both flagged as
+Module 3 candidates in their Relevance column, per this file's existing convention.
+
+**Infrastructure finding — network allowlist narrower than documented:** neither qualifying paper's
+PDF could be fetched. `pmc.ncbi.nlm.nih.gov` and `www.ebi.ac.uk` (Europe PMC's render service) both
+returned connection failures (`CONNECT tunnel failed, response 403`) under this run's environment.
+Only `eutils.ncbi.nlm.nih.gov` and `export.arxiv.org` were reachable — `shared/weekly-literature-scan.md`
+documents the allowlist as "eutils.ncbi.nlm.nih.gov, export.arxiv.org, plus the default
+package-manager list," which should not exclude PMC/Europe PMC. Both papers are recorded as "OA but
+not obtained this pass" / "Paywalled" with the specific network failure noted in place of a PDF.
+**This needs the account owner to check the environment's actual Custom-allowlist configuration** —
+either the documentation is stale or the allowlist regressed. Until fixed, every future firing of
+this routine will be unable to obtain any Module 2 PDF, silently degrading that module's OA-status
+confidence over time.
+
+### Module 3 — triage only
+
+Searched: C1 (wearables, PubMed) 20, C2 (platforms, PubMed) 5, C3-wearables (arXiv) 1,
+C3-platforms (arXiv) 17 — 43 candidates screened, all new (none matched existing `dois_seen`/
+`pmcids_seen`/`rejected`). **6 queued, 20 rejected** (7 architecture, 1 validation, 2 protocol, 10
+no-cohort — full reasons in `literature-index.json`'s `rejected` array).
+
+**C2 and the arXiv platforms query were 100% false positives** — the same "AWARE" ordinary-word
+problem as Module 2's query hit here too (privacy-aware federated learning, mechanobiology-aware
+antifouling, topology-aware retention-time prediction, "longitudinally aware" ICD-coding software).
+Zero genuine Beiwe/RADAR-base/mindLAMP/AWARE/Avicenna/Ethica/MetricWire/m-Path/CARP/LifeData
+deployment candidates surfaced this run.
+
+**Queued (6):** an AI-sleep-feedback feasibility RCT (Fitbit, n=25 HS athletes); a summer
+obesity-prevention pilot (Fitbit+ActiGraph, n=25); an Apple Watch rest-activity-rhythm feasibility
+study in dementia caregivers (n=21, also newly in Module 1's library this run); an Oura Ring ED
+sleep-feasibility study (n=15, also newly in Module 1's library); a 28-week ActiGraph HIV
+exercise-sustainability trial with an explicit 118→92 retention figure; and the ABLE gerotherapeutic
+trial's ActiGraph implementation paper (n=120, titled around "Feasibility, adherence, and
+operational insights" — the strongest candidate of the six).
+
+**A new false-positive pattern worth naming for future screening:** one Empatica EmbracePlus
+migraine-prediction paper (n=27) states it "supports the feasibility of migraine attack prediction"
+— that is the *prediction model's* feasibility, not the *deployment's* operational feasibility. Easy
+to conflate on an abstract-only read; rejected as architecture with a note explaining the
+distinction. Also rejected as architecture: an arXiv ML paper (SATURN) doing secondary graph-learning
+analysis of the ABCD Study's existing 21-day Fitbit records (N=6,091) — a real deployment cohort
+exists, but the paper itself reports nothing new about how that deployment went; device-adherence
+appears only as a modeling covariate.
+
+**Known limitation carried forward, not fixed this pass:** Part C's dedup step (1) only checks
+`dois_seen`/`pmcids_seen`/`rejected`, not `_scan-queue.md`'s own existing Pending rows. A paper
+queued this week and not yet resolved by a human pass could in principle be re-screened and
+re-queued next Monday if it's still inside the search window. Flagged here rather than silently
+patched, since changing the dedup logic is a routine-design decision, not a data-entry one.
+
+### Commit
+
+One combined commit covers all three modules' writes
+(`research-library-wearables.md` + `research-library-index.json`, `literature-library.md` +
+`literature-library-index.json`, `_scan-queue.md` + `literature-index.json`) plus this log entry.
+
+---
+
 ## 2026-09-03 (night) — Beiwe profile from the wiki; Module 3 Part B searches run
 
 **Module:** 2 (Beiwe), 3 (discovery).

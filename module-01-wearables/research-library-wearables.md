@@ -175,6 +175,58 @@ Icahn School of Medicine at Mount Sinai. Mixed-device study (Apple Watch, Fitbit
 — not Oura-specific). **Funded by NIDDK K23DK129835 (NIH); no Oura funding identified.**
 **Corroborated.**
 
+**Haimovich AD, Lacourciere A, Palihnich K, et al. 2026.** "Feasibility and Acceptability of Oura
+Ring Sleep Monitoring in Older Adults Admitted From the Emergency Department: Prospective Cohort
+Study." *JMIR Formative Research* 10:e92359. Beth Israel Deaconess Medical Center. **Oura Health
+Ltd explicitly named in the COI statement as "not involved in study funding, design, data
+collection, analysis, interpretation, manuscript preparation, or the decision to submit."**
+**Verified** (the vendor relationship was directly addressed in the read disclosure text, not
+merely absent — distinguished from the default no-mention case, which is marked Corroborated
+elsewhere in this file). Pilot cohort of 15 ED-boarded older adults; 92.9% of completers wore the
+ring ≥75% of the monitored period and 81.8% of exit-survey respondents found it not bothersome, but
+median device-estimated sleep was only 4.3 h/24 h. https://pmc.ncbi.nlm.nih.gov/articles/PMC13626187/
+
+**Azadifar S, Sameh A, Nauha L, Kärmeniemi M, Niemelä M, Farrahi V. 2026.** "Severity of depression
+and anxiety symptoms is reflected in physiological and behavioral metrics collected from a
+consumer-grade wearable ring." *BMC Medicine* 24(1):532. University of Oulu / TU Dortmund. **No
+competing interests declared; COI statement does not mention Oura.** **Corroborated.** Northern
+Finland Birth Cohort 1986 (n=1,290, two-week Oura wear); moderate-to-severe anxiety and
+depression/anxiety symptom groups showed lower REM/deep sleep, higher nocturnal HR, lower RMSSD,
+and lower daytime activity than symptom-free participants. https://pmc.ncbi.nlm.nih.gov/articles/PMC13625339/
+
+**Choi A, Gonzalez-Robles C, Xu SS, Krueger MT, Chari A. 2026.** "Monitoring Real-World Function
+With an Oura Ring Following Bilateral Subthalamic Nucleus Deep Brain Stimulation for Parkinson's
+Disease." *Cureus* 18(8):e115385. University College London / National Hospital for Neurology and
+Neurosurgery. **ICMJE disclosure: no financial support or financial relationships declared by any
+author; does not mention Oura.** **Corroborated.** Single-patient case report (STN DBS for PD):
+Oura "Sleep Score" rose from 45.0 to 53.5 and "Readiness Score" from 67.5 to 71.0 post-DBS, while
+"Activity Score" and step count stayed flat despite motor improvement on the MDS-UPDRS Part III — a
+dissociation between clinic-measured motor gains and free-living activity.
+https://pmc.ncbi.nlm.nih.gov/articles/PMC13617320/
+
+**Dine C, Rekkas Z, Frey BN, Krishnan S, Duarte D, Gomes FA, et al. 2026.** "Wearable-Based
+Assessment for Relapse Prediction Following Repetitive Transcranial Magnetic Stimulation for
+Depression: Protocol for a Feasibility Study (WARN-D Study)." *JMIR Research Protocols* 15:e89466.
+McMaster University / St. Joseph's Healthcare Hamilton. **No author discloses an Oura relationship;
+disclosed ties are to AbbVie, Lundbeck, Otsuka, Johnson & Johnson, Alcediag, Eisai, Idorsia, Jazz,
+Paladin, ResMed, Eli Lilly — none Oura.** **Corroborated.** Study protocol only (funded Dec 2025,
+not yet recruiting at submission): a 25-participant single-arm pilot will use an Oura Ring to test
+feasibility (recruitment, adherence, retention, missing data, usability) of wearable monitoring
+through rTMS treatment and 6-month follow-up for treatment-resistant depression. No results yet.
+https://pmc.ncbi.nlm.nih.gov/articles/PMC13592458/
+
+**Ong JL, Qin S, Martin TH, Chua XY, Soon CS, Yilmaz G, et al. 2026.** "24h movement behaviours in
+university students compared to working age and older adults: wearable-based evidence and
+cardiometabolic health implications." *BMC Medicine* 24(1):485. National University of Singapore,
+Centre for Sleep and Cognition. **Senior author Michael W. L. Chee is a member of Oura's medical
+advisory board; three co-authors are members of the Oura–NUS Joint Lab, though the paper states
+this specific work "was conducted independently of the Joint Lab and was designed, funded, and
+executed solely by NUS."** **Verified** (COI text read directly). 1,967 adults across three
+Singaporean cohorts, 4 weeks of Oura recordings each: university students logged the most sedentary
+time (633.9 min/day) and least activity (320.3 min/day) and sleep (431.8 min/day) of the three age
+groups; reallocating 30 min/day from sedentary time to sleep or activity was associated with lower
+BMI and body-roundness index. https://pmc.ncbi.nlm.nih.gov/articles/PMC13573439/
+
 ## Oura — systematic reviews (as discovery mechanism, and classified in their own right)
 
 **Khan et al. 2025, *OTO Open*.** "The Oura Ring Versus Medical-Grade Sleep Studies: A Systematic
@@ -573,7 +625,69 @@ vendor. **Corroborated** (independent academic study; specific funding line not 
 this pass). 6/7 devices measured HR within 5%; energy expenditure inaccurate across all devices
 (best off by 27%, worst by 93%). n=60. https://med.stanford.edu/news/all-news/2017/05/fitness-trackers-accurately-measure-heart-rate-but-not-calories-burned.html
 
+**Stahl ST, Rodakowski J, Patira R, Smagula SF. 2026.** "Enhancing a Behavioral Intervention Using
+Rest-Activity Rhythm Monitoring via a Consumer Wearable in Older Dementia Caregivers and People
+With Dementia: Feasibility and Acceptability Study." *JMIR Formative Research* 10:e88773.
+University of Pittsburgh. **Senior author Smagula is owner/CEO of Activity Rhythm Solutions, a
+university-licensed start-up that built the myRhythmWatch system used in this study (grant
+R41AG069596) — a direct commercial interest in the study instrument, not in Apple Watch itself.**
+**Corroborated** (no Apple-specific financial relationship found; flagged because the
+device-adjacent company COI is still relevant context). n=21 (15 caregivers, 6 people with
+dementia): all 21 met the minimum valid-day threshold; caregivers averaged 35 valid RAR-monitoring
+days with all 15 still using the app at week 6, versus 30 valid days and only 6/6 remaining active
+users among people with dementia; caregivers showed medium-to-large pre/post improvements in
+depression and insomnia scores. https://pmc.ncbi.nlm.nih.gov/articles/PMC13626640/
+
+**Al-Falahi ZS, Schlegel TT, Lee V, Chow CK, Kozor R, Lindow T, et al. 2026.** "Study protocol for
+The Heart Watch Study - Prognostic performance of smartwatch 12-lead ECG with advanced ECG analysis
+in consumer self-screening for cardiovascular disease." *American Heart Journal* (in press), doi
+10.1016/j.ahj.2026.107619. University of Sydney / Karolinska Institutet. **No CoiStatement present
+in the indexed record.** **Unclear.** Study protocol only: a planned 30,000-participant
+Australia-wide observational cohort will use an iPhone app plus Apple Watch to acquire a 12-lead
+smartwatch ECG for advanced-ECG (A-ECG) machine-learning analysis, with the primary endpoint a
+composite of all-cause mortality, cardiovascular hospitalization, and incident cardiovascular
+disease via administrative-data linkage. No results yet. https://doi.org/10.1016/j.ahj.2026.107619
+
+**Yusuf KO, Steinbrinker TA, Jörß K, Richter J, Hanß S, Zeppernik T, et al. 2026.** "A Multi-Site
+Dashboard for Evaluating HiGHmed Cardiovascular Sensor Data from Apple Watch." *Studies in Health
+Technology and Informatics* 340:66–76. University Medical Center Göttingen. **No CoiStatement
+present in the indexed record.** **Unclear.** HiGHmed cardiology use-case sensor sub-study (12 of
+93 enrolled participants shown): an R Shiny dashboard aggregating Apple Watch heart-rate/step data
+with clinical records showed pre-hospitalization deterioration (falling KCCQ-12 scores, daily steps
+dropping below 2,000) and a strong steps–heart-rate correlation (r≈0.8), alongside visible
+sensor-data gaps and inconsistent manual-measurement adherence. https://doi.org/10.3233/SHTI260986
+
+**Alshamrani M, Alhazmi S, Alafif T, Qadah TM, Aljabri M, Al-Eidarous W, et al. 2026.**
+"Machine Learning-Based Prediction Model of Pilgrims' Tiredness During Hajj Using Smartwatch
+Physiological and Mobility Indicators." *Sensors* 26(17):5625. Umm Al-Qura University, Saudi
+Arabia. **"The authors declare no conflicts of interest"; no Apple relationship.**
+**Corroborated.** Hajj 1445 (June 2024) Apple Watch dataset, 120 records from 3 participants: best
+record-level tiredness-classification accuracy 93.33% (Decision Tree, MVN-sampled synthetic
+augmentation), but leave-one-participant-out accuracy fell to 68.65% (SD 19.72%) — a reminder that
+in-sample accuracy on a 3-participant dataset overstates cross-participant generalization.
+https://pmc.ncbi.nlm.nih.gov/articles/PMC13567947/
+
+**Jansen CE, Jaspers Focks J, Manglani Rodriguez S, Pol L, Edgar R, van Royen N, et al. 2026.**
+"Wearable saving lives: a case report." *Resuscitation Plus* 31:101447. Radboud University Medical
+Center. **COI discloses unrelated grants/speaker fees (European Resuscitation Council, Dutch Heart
+Foundation, Biotronik, Abbott, Medtronic, Philips, Bayer, ZonMw) and an editorial-board role at the
+publishing journal; none naming Apple.** **Corroborated.** Single-patient case report: Apple Watch
+fall-detection triggered automated alerts during an unwitnessed out-of-hospital cardiac arrest,
+enabling bystander CPR ~6–7 min post-collapse and a favourable neurological outcome after VF
+arrest, CABG, and ICD implantation. https://pmc.ncbi.nlm.nih.gov/articles/PMC13543876/
+
 ## Apple Watch — systematic reviews / meta-analyses
+
+**Hogue T, Khoury A, Njeim P, Aswad N, Youssef L, Birtulescu S, et al. 2026.** "Advancement in
+wrist worn physical activity trackers: technological developments and measurement accuracy: a
+systematic review." *Frontiers in Digital Health* 8:1820224. Research Institute of McGill
+University Health Centre / Vanderbilt University Medical Center. **"Conducted in the absence of any
+commercial or financial relationships"; no Oura/WHOOP/Apple-specific disclosure (reviews wrist-worn
+trackers broadly, not an Apple-Watch-specific study).** **Corroborated.** PRISMA review of 47
+studies (of 1,659 screened, PROSPERO CRD42024551740) spanning pre-2010 to current devices: names
+Apple Watch (with Garmin vivosmart) among "modern devices" reaching >0.80 validity correlation for
+heart rate during exercise, versus ≤0.50 for early (pre-2010) monitors; energy-expenditure error
+remains 10–40% even in recent devices. https://pmc.ncbi.nlm.nih.gov/articles/PMC13542415/
 
 **Shahid S, Iqbal M, Saeed H, et al. 2025.** "Diagnostic Accuracy of Apple Watch Electrocardiogram
 for Atrial Fibrillation: A Systematic Review and Meta-Analysis." *JACC: Advances* 4(2):101538.

@@ -27,11 +27,16 @@ screening in this project has a measured platform-misattribution rate of roughly
 
 ## Pending
 
-_(empty — the routine has not yet run against Module 3. First firing expected the Monday following
-2026-09-02.)_
-
 | Found | DOI | PMCID | Title | Venue / year | Apparent technology | Signals | OA |
 |---|---|---|---|---|---|---|---|
+| 2026-10-05 | 10.2196/101615 | — | Feasibility and Preliminary Effects of AI-Generated Personalized Sleep Feedback in High School Female Soccer Players: Pilot Randomized Controlled Trial | JMIR Form Res, 2026 | Fitbit (C1 wearable query) | feasibility (primary outcome), adherence (valid Fitbit wear nights), data completeness (message delivery, questionnaire completion) | Likely OA (JMIR CC BY policy); PMCID not yet indexed |
+| 2026-10-05 | 10.3389/fphys.2026.1914161 | PMC13623721 | Integrating technology-assisted behavioral management into a summer obesity prevention intervention program: a pilot controlled trial | Front Physiol, 2026 | Fitbit + ActiGraph (C1 wearable query) | acceptability (explicit questionnaire), attrition (1/14 withdrew wk1), engagement (app-use decline post-camp) | OA (Frontiers CC BY; PMCID present) |
+| 2026-10-05 | 10.2196/88773 | PMC13626640 | Enhancing a Behavioral Intervention Using Rest-Activity Rhythm Monitoring via a Consumer Wearable in Older Dementia Caregivers and People With Dementia: Feasibility and Acceptability Study | JMIR Form Res, 2026 | Apple Watch (C1 wearable query) | feasibility + acceptability (explicit), adherence (valid-day/active-user rates differ sharply by subgroup) | OA (JMIR CC BY; PMCID present) |
+| 2026-10-05 | 10.2196/92359 | PMC13626187 | Feasibility and Acceptability of Oura Ring Sleep Monitoring in Older Adults Admitted From the Emergency Department: Prospective Cohort Study | JMIR Form Res, 2026 | Oura Ring (C1 wearable query) | feasibility + acceptability (explicit), attrition (29 approached → 15 enrolled → 14 completed), wear time (≥75% threshold) | OA (JMIR CC BY; PMCID present) |
+| 2026-10-05 | 10.1007/s10461-026-05317-w | — | Efficacy of Tailored Messages for 28-Week Exercise Sustainability in People with HIV | AIDS Behav, 2026 | ActiGraph (C1 wearable query) | retention/attrition (118 → 92 re-randomized, explicit "robust to attrition"), adherence (monthly ActiGraph wear-week protocol) | Unclear/likely Paywalled (Springer subscription journal; no PMCID indexed) |
+| 2026-10-05 | 10.1371/journal.pdig.0001691 | PMC13614584 | Optimizing accelerometer implementation in a gerotherapeutic trial: Feasibility, adherence, and operational insights of ABLE | PLOS Digit Health, 2026 | ActiGraph wGT3X-BT (C1 wearable query) | feasibility + adherence (title-level, explicit), retention/attrition (17% dropout, Cox model), technical ("device operational concerns" assessed) | OA (PLOS CC BY; PMCID present) |
+
+Platform attribution is Reported — verify from full text before profiling.
 
 ---
 

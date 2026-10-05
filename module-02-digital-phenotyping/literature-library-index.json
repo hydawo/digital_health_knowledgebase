@@ -19,6 +19,7 @@
   "10.1016/j.psychres.2022.114707",
   "10.1016/j.scog.2019.100144",
   "10.1016/j.wneu.2019.01.297",
+  "10.1016/s2589-7500(24)00219-x",
   "10.1037/abn0001054",
   "10.1037/abn0001060",
   "10.1037/abn0001117",
@@ -48,6 +49,7 @@
   "10.1093/jamia/ocab069",
   "10.1093/jamia/ocy121",
   "10.1093/jrsssc/qlae010",
+  "10.1093/pnasnexus/pgaf295",
   "10.1097/as9.0000000000000060",
   "10.1097/hrp.0000000000000133",
   "10.1097/phm.0000000000001506",
@@ -72,6 +74,8 @@
   "10.2196/53441",
   "10.2196/55170",
   "10.2196/57439",
+  "10.2196/57827",
+  "10.2196/68093",
   "10.2196/71375",
   "10.2196/91747",
   "10.2196/mental.3889",
@@ -84,12 +88,14 @@
   "10.3390/s20133706",
   "10.3390/s22062110",
   "10.3390/s22072618",
-  "10.2196/57827",
-  "10.1016/s2589-7500(24)00219-x",
-  "10.2196/68093",
-  "10.1093/pnasnexus/pgaf295"
+  "pmid:42690552",
+  "pmid:42742281",
+  "pmid:42761875",
+  "pmid:42766131",
+  "pmid:42797986",
+  "pmid:42814923"
  ],
- "last_run_date": "2026-08-31",
+ "last_run_date": "2026-10-05",
  "runs": [
   {
    "date": "2026-08-31",
@@ -101,6 +107,42 @@
    "filed_module_01": 22,
    "pdfs_obtained": 54,
    "already_in_kb": 2
+  },
+  {
+   "date": "2026-10-05",
+   "source": "weekly-literature-scan routine (PubMed esearch/efetch + arXiv API)",
+   "window": "2026-08-31 to 2026-10-05 (edat for PubMed; submittedDate for arXiv)",
+   "searched_pubmed": {
+    "beiwe": 0,
+    "radar_base": 0,
+    "mindlamp": 4,
+    "aware": 0,
+    "avicenna": 1,
+    "m_path": 1,
+    "carp": 0,
+    "metricwire": 0,
+    "lifedata": 0
+   },
+   "searched_arxiv": {
+    "beiwe": 0,
+    "radar_base": 0,
+    "mindlamp": 0,
+    "aware": 0,
+    "avicenna": 0,
+    "m_path": 0,
+    "carp": 0,
+    "metricwire": 0,
+    "lifedata": 0,
+    "note": "arXiv 'all:' field search does not enforce exact phrasing; RADAR-base and AWARE queries each returned ~9-50 unrelated hits (radar signal-processing papers; 'aware' as an ordinary adjective in ML paper titles) screened out as false positives, none relevant."
+   },
+   "screened_in": 2,
+   "screened_out": 4,
+   "screened_out_detail": "All 4 'mindLAMP'/'LAMP platform' PubMed hits were false positives for Loop-mediated isothermal AMPlification (LAMP), a molecular-biology assay technique unrelated to the mindLAMP digital-phenotyping platform ('LAMP platform' as a literal phrase matches assay papers). New query-design note for this file: the 'LAMP platform' OR-term is a weak discriminator and should probably be dropped or tightened in a future prompt revision (not changed this pass, since prompt edits require a human to update the claude.ai Routines UI and shared/weekly-literature-scan.md together).",
+   "oa_status_breakdown": {
+    "OA but not obtained this pass": 1,
+    "Paywalled": 1
+   },
+   "network_note": "PDF retrieval for both qualifying papers could not be attempted beyond a connection test: pmc.ncbi.nlm.nih.gov and www.ebi.ac.uk (Europe PMC) both returned connection failures under this environment's network allowlist, which exposed only eutils.ncbi.nlm.nih.gov and export.arxiv.org this run -- narrower than the allowlist shared/weekly-literature-scan.md documents (eutils + export.arxiv.org + default package-manager list, not excluding PMC/Europe PMC). Flagged in research-log.md for the account owner."
   }
  ],
  "records": [
@@ -1053,6 +1095,26 @@
    "pdf": "module-02-digital-phenotyping/literature/evidation/2025-pnasnexus-american-life-in-realtime-benchmark-person-generated-health-data.pdf",
    "pdf_status": "ok",
    "source": "evidation-profile-pass-2026-09-03"
+  },
+  {
+   "id": "pmid:42814923",
+   "doi": "10.2196/106072",
+   "pmcid": "PMC13626399",
+   "title": "A Digital System to Assess Mental Health in People With Intellectual Disability (MENTALSED): Protocol for a Development and Pilot Study",
+   "platform": "avicenna-research-ethica",
+   "year": "2026",
+   "oa_status": "OA but not obtained this pass",
+   "pdf": null
+  },
+  {
+   "id": "pmid:42742281",
+   "doi": "10.1080/09638288.2026.2731078",
+   "pmcid": null,
+   "title": "Participation involvement and mental health among young people with physical disabilities: preliminary findings using the experience sampling method",
+   "platform": "m-path",
+   "year": "2026",
+   "oa_status": "Paywalled",
+   "pdf": null
   }
  ]
 }

@@ -195,8 +195,28 @@
   "PMC9950693",
   "PMC9987377"
  ],
- "last_run_date": null,
- "runs": [],
+ "last_run_date": "2026-10-05",
+ "runs": [
+  {
+   "date": "2026-10-05",
+   "window": "2026-09-25 to 2026-10-05 (edat for PubMed C1/C2; submittedDate for arXiv C3) -- last_run_date was null, so the trailing-10-day default window was used",
+   "searched": {
+    "C1_wearables_pubmed": 20,
+    "C2_platforms_pubmed": 5,
+    "C3_arxiv_wearables": 1,
+    "C3_arxiv_platforms": 17
+   },
+   "screened_in_queued": 6,
+   "rejected": 20,
+   "rejected_breakdown": {
+    "architecture": 7,
+    "validation": 1,
+    "protocol": 2,
+    "no-cohort": 10
+   },
+   "note": "C2 (digital-phenotyping-platform PubMed query) and C3-platforms (arXiv) both returned only false positives this run -- 'AWARE'[tiab]/'all:AWARE framework' matched the ordinary adjective 'aware' inside compound ML-paper titles (privacy-aware, mechanobiology-aware, topology-aware, longitudinally-aware), not the AWARE Framework platform. No Beiwe, RADAR-base, mindLAMP, Avicenna, Ethica, MetricWire, m-Path, CARP, or LifeData deployment candidates were found this run. C3-wearables (arXiv) found 1 candidate (SATURN/ABCD-Fitbit), rejected as architecture (secondary ML analysis of existing data, not a deployment-operations report)."
+  }
+ ],
  "records": [
   {
    "doi": "10.1186/s12984-024-01514-7",
@@ -879,6 +899,147 @@
    "reason": "no-cohort",
    "note": "9 of 74 analysed; keep the 10/74 Android-only comm-log gate as a corroboration of README finding 23.",
    "source": "module-03-coverage-build-2026-09-03"
+  },
+  {
+   "doi": "10.1038/s44294-026-00156-5",
+   "pmcid": "PMC13626958",
+   "reason": "architecture",
+   "note": "Fitbit sedentary-bout forecasting framework for CPPD (n=134 females); a missing-data-resilient ML forecasting model, not a deployment-operations report (no retention/adherence/attrition figures).",
+   "source": "weekly-literature-scan-2026-10-05"
+  },
+  {
+   "doi": "10.3389/fpubh.2026.1928562",
+   "pmcid": "PMC13627327",
+   "reason": "architecture",
+   "note": "ActiGraph-measured metabolic-syndrome ML prediction model in 822 adolescents, cross-sectional; explicitly states 'feasibility assessment... required before large-scale screening' i.e. feasibility not yet assessed in this paper.",
+   "source": "weekly-literature-scan-2026-10-05"
+  },
+  {
+   "doi": "10.1080/03091902.2026.2741912",
+   "pmcid": null,
+   "reason": "validation",
+   "note": "Garmin Forerunner 265 VO2max/race-prediction accuracy vs reference; device-validation study.",
+   "source": "weekly-literature-scan-2026-10-05"
+  },
+  {
+   "doi": "10.64898/2026.09.18.26363453",
+   "pmcid": "PMC13622316",
+   "reason": "architecture",
+   "note": "DBS-sensing + Oura Ring synchronization framework (medRxiv preprint); 3-participant technical demonstration of a data-sync pipeline, not a deployment-reality report. Also screened out of Module 1 this pass as a non-peer-reviewed preprint.",
+   "source": "weekly-literature-scan-2026-10-05"
+  },
+  {
+   "doi": "10.3390/s26185703",
+   "pmcid": "PMC13611563",
+   "reason": "architecture",
+   "note": "Multimodal wearable+lifelog circadian-behavioral-coupling sensing-system feasibility demo, n=10; device is an unbranded 'heat-flux-based wearable temperature sensor' and generic 'wrist-worn actigraph', not identifiable as a Module 1/2-profiled technology. Paper itself frames the contribution as sensor-fusion feasibility, not deployment operations.",
+   "source": "weekly-literature-scan-2026-10-05"
+  },
+  {
+   "doi": "10.1136/bmjopen-2025-114578",
+   "pmcid": "PMC13630081",
+   "reason": "protocol",
+   "note": "BACK.BEAT HRV-biofeedback pilot study protocol (PubMed PublicationType=Clinical Trial Protocol); no results yet.",
+   "source": "weekly-literature-scan-2026-10-05"
+  },
+  {
+   "doi": "10.1016/j.jcjd.2026.09.005",
+   "pmcid": null,
+   "reason": "architecture",
+   "note": "ActiGraph cut-point/data-processing-protocol comparison in children with T1D (n=43); methodological/analytic comparison on already-collected data, not a deployment-feasibility report.",
+   "source": "weekly-literature-scan-2026-10-05"
+  },
+  {
+   "doi": "10.1186/s12916-026-05276-y",
+   "pmcid": "PMC13625339",
+   "reason": "no-cohort",
+   "note": "Oura Ring NFBC1986 cross-sectional depression/anxiety correlational study (n=1,290). Only one deployment-reality signal present (a >=15h wear-time inclusion threshold); no retention, adherence, acceptability, completeness, or technical-failure reporting despite a real cohort -- insufficient signal density per the two-distinct-signals screen.",
+   "source": "weekly-literature-scan-2026-10-05"
+  },
+  {
+   "doi": "10.7759/cureus.115385",
+   "pmcid": "PMC13617320",
+   "reason": "no-cohort",
+   "note": "Single-patient (N=1) Oura Ring case report following DBS for Parkinson's disease; a case report is not a cohort.",
+   "source": "weekly-literature-scan-2026-10-05"
+  },
+  {
+   "doi": "10.1016/j.ahj.2026.107619",
+   "pmcid": null,
+   "reason": "protocol",
+   "note": "Heart Watch Study protocol (Apple Watch 12-lead ECG, planned N=30,000); no results yet, data collection not started at submission.",
+   "source": "weekly-literature-scan-2026-10-05"
+  },
+  {
+   "doi": "10.3390/children13091132",
+   "pmcid": "PMC13605833",
+   "reason": "no-cohort",
+   "note": "ActiGraph-measured poverty/movement-behavior longitudinal correlational study (n=66, 1-year follow-up). Only 'longitudinal' signal present; no retention/attrition/adherence/completeness figures reported for the device deployment itself.",
+   "source": "weekly-literature-scan-2026-10-05"
+  },
+  {
+   "doi": "10.3390/children13091129",
+   "pmcid": "PMC13605536",
+   "reason": "no-cohort",
+   "note": "SUNRISE Ecuador pilot secondary analysis (ActiGraph, n=108), cross-sectional correlational analysis of movement behaviors vs anthropometrics; 'guideline adherence' refers to a PA-guidelines analytic variable, not device-wear adherence. No retention/attrition/completeness reporting.",
+   "source": "weekly-literature-scan-2026-10-05"
+  },
+  {
+   "doi": "10.1177/03331024261492220",
+   "pmcid": null,
+   "reason": "architecture",
+   "note": "Empatica EmbracePlus migraine-attack ML prediction model (n=27, ~31 days/participant). States 'feasibility of migraine attack prediction' -- algorithmic/prediction-method feasibility, not operational-deployment feasibility (no wear-time, adherence, attrition, or technical-failure reporting). Worth flagging as a recurring false-positive pattern: 'feasibility' describing a prediction model's performance, not a study's operations.",
+   "source": "weekly-literature-scan-2026-10-05"
+  },
+  {
+   "doi": "10.1002/pon.70616",
+   "pmcid": "PMC13613989",
+   "reason": "no-cohort",
+   "note": "webMFT breast-cancer-survivor PA program (Fitbit 'active minutes', n=30 analysed of 61 randomised); theoretical-construct (self-efficacy/social-support) mediation analysis. 'Engagement' and 'longitudinal' signals present structurally but no retention, attrition, or device-completeness figures reported for the Fitbit deployment itself.",
+   "source": "weekly-literature-scan-2026-10-05"
+  },
+  {
+   "doi": "10.3389/frai.2026.1898699",
+   "pmcid": "PMC13619810",
+   "reason": "no-cohort",
+   "note": "Privacy-aware federated-learning analytics on OULAD learning-platform data; false positive from 'AWARE'[tiab] matching 'Privacy-aware' -- no digital-phenotyping platform named.",
+   "source": "weekly-literature-scan-2026-10-05"
+  },
+  {
+   "doi": "10.1080/08927014.2026.2739961",
+   "pmcid": null,
+   "reason": "no-cohort",
+   "note": "Mechanobiology-aware antifouling-interface review; false positive from 'AWARE'[tiab] matching 'mechanobiology-aware' -- unrelated to digital phenotyping, no human cohort at all.",
+   "source": "weekly-literature-scan-2026-10-05"
+  },
+  {
+   "doi": "10.1016/j.talanta.2026.130639",
+   "pmcid": null,
+   "reason": "no-cohort",
+   "note": "LC-MS metabolite retention-time prediction (TC-TopoRT); false positive from 'AWARE'[tiab] matching 'topology-aware' -- no digital-phenotyping platform, no human cohort.",
+   "source": "weekly-literature-scan-2026-10-05"
+  },
+  {
+   "doi": "10.1093/jamiaopen/ooag182",
+   "pmcid": "PMC13612241",
+   "reason": "no-cohort",
+   "note": "medicalcoder R package for ICD-based comorbidity coding; false positive from 'AWARE'[tiab] matching 'longitudinally aware' -- no digital-phenotyping platform named.",
+   "source": "weekly-literature-scan-2026-10-05"
+  },
+  {
+   "doi": "10.3389/fpubh.2026.1791618",
+   "pmcid": "PMC13601350",
+   "reason": "no-cohort",
+   "note": "European school-based obesity-prevention-strategy review; no digital-phenotyping platform named in title/abstract despite the C2 query match (likely an 'AWARE'-adjacent token false positive in the full abstract).",
+   "source": "weekly-literature-scan-2026-10-05"
+  },
+  {
+   "doi": null,
+   "pmcid": null,
+   "arxiv_id": "2609.33428",
+   "reason": "architecture",
+   "note": "SATURN: graph-learning model predicting adolescent crystallized intelligence from 21-day Fitbit records in the ABCD Study (N=6,091). Secondary ML-modeling analysis of an existing large cohort's already-collected data; 'irregular device adherence' and 'invalid-day' pruning appear only as modeling covariates, not as a report of how the Fitbit deployment itself went (no new recruitment/retention/technical-failure reporting).",
+   "source": "weekly-literature-scan-2026-10-05"
   }
  ]
 }
