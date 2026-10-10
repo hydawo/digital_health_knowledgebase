@@ -75,7 +75,7 @@ profile does not establish it. **Presence is not access**; see Table 3.
 | Ultrahuman Ring AIR | ✓ | Unclear | ✓ | Unclear | ✓ | Unclear (nightly SpO2 metric, R) | Unclear | Unclear | Unclear | Unclear |
 | Biostrap / Sensor Bio wrist | ✓ | Unclear | ✓ | ✓ | Separate Thermo Patch (C) | Unclear | Unclear | Unclear | Unclear | Unclear |
 | Verily Study Watch | Unclear (records heart rate, C) | ✓ (C) | ✓ (inertial, C) | Unclear | Unclear | Unclear | Unclear | Unclear | ✓ (C) | Unclear |
-| Empatica EmbracePlus | ✓ | No | ✓ | ✓ (selected sensor modes) | ✓ | Unclear (FDA K221282 covers SpO2 under no-motion conditions) | No | Unclear | ✓ | No |
+| Empatica EmbracePlus | ✓ | No | ✓ | ✓ (selected sensor modes) | ✓ | ✓ (FDA K221282, no-motion conditions only; academic-plan output Unclear) | No | Unclear | ✓ | No |
 | Ametris LEAP | ✓ (green, red, IR) | No | ✓ | ✓ (IMU) | ✓ (skin) | No | No | ✓ | No | No |
 | Ametris Insight Watch / wGT3X-BT | No | No | ✓ | No | Insight Watch (near-body) | No | No | No | No | No |
 | Axivity AX3 / AX6 | No | No | ✓ | AX6 only | No | No | No | No | No | No |
@@ -225,7 +225,7 @@ derived metrics and study infrastructure.
 | **Fitrockr** (many brands) | n/a | **Basic from €50/$55 per month; Pro from €150/$165 per month**; 5 device licences included, extra €1–€15 per device per month; 3-month minimum | Raw accelerometer and gyroscope +25%; API +20% | **Yes** |
 | Withings | Consumer retail (no figure in profile) | **From 12 Oct 2026: Withings+ per participant** with a new account on the free plan (price not read); none on paid plans | Start for Free; Enterprise and Advanced Biomarkers custom; raw-data contract non-public | Plan structure yes; prices no |
 | Empatica | **EmbracePlus $1,166.40; EmbraceMini $641.52** | Included in bundle | **3-year bundle: EmbracePlus $2,332.80 list / $1,749.60 academic; EmbraceMini $1,516.32 / $1,137.24. 5-year: EmbracePlus $2,916 / $2,187; EmbraceMini $1,953.72 / $1,465.29**; Enterprise quote | **Yes, academic plan** |
-| Ametris | Not published ("calculated for each unique order"); GT3X+ / wGT3X-BT $325–1,016 (R, competitor source) | Non-public | ActiLife ~$1,695, CentrePoint ~$3,500/yr (R, competitor source, dated); academic pricing list on request | **No** |
+| Ametris | Not published ("calculated for each unique order"); GT3X+ / wGT3X-BT $325–1,016 (R, competitor source) | Non-public | ActiLife conflicting: ~$1,695 (R, competitor source, dated) or US$349 (Ngueleu 2022); CentrePoint ~$3,500/yr (R, competitor source, dated); academic pricing list on request | **No** |
 | Axivity / GENEActiv | **AX3 £139 (£149 with band); AX6 £199 (£209 with band), ex VAT**; GENEActiv by quote | **None** | **None, open toolchain** | **Axivity yes; GENEActiv no** |
 | Ultrahuman, Biostrap / Sensor Bio, Verily | Not disclosed | Not disclosed | Not disclosed | No |
 

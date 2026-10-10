@@ -11,7 +11,7 @@
 | Open source | No |
 | Hosting/deployment | Empatica Cloud; Care Portal web console; AWS S3 data access keys |
 | Pricing model | **Published, transparent bundle pricing for academic research**, unusual in this module |
-| Last verified | 2026-08-21; biomarker counts re-checked 2026-10-09; pricing, academic discount, sensor modes, FDA clearances and compliance re-verified 2026-10-10 |
+| Last verified | 2026-08-21; biomarker counts re-checked 2026-10-09; pricing, academic discount, sensor modes, FDA clearances and compliance re-verified 2026-10-10; SpO2 sensor row reconciled with K221282 2026-10-10 |
 
 ## Summary
 
@@ -44,7 +44,7 @@
 | Gyroscope | Yes, in selected sensor modes | Raw angular velocity ("with the gyroscope enabled in selected sensor modes") | 100 Hz in the Gyroscope 100 mode; otherwise not published | Verified 2026-10-10. |
 | Magnetometer | Unclear | Unclear | Unclear |  |
 | Temperature | Yes, digital skin temperature | Peripheral skin temperature | Unclear |  |
-| SpO2 | Unclear | Unclear | Unclear |  |
+| SpO2 | Yes, on EmbracePlus (the device in K221282) | SpO2 is an FDA-cleared parameter under K221282 for "trained healthcare professionals or researchers", **under no-motion conditions only**; the 510(k) states it is "not intended for SpO2 monitoring in conditions of motion or low perfusion". Whether SpO2 output is included in the Academic & Basic Research plan is Unclear. | Range 70 to 100%, resolution 1% (510(k) summary) | **Verified 2026-10-10** (openFDA record and K221282 summary read). Accuracy 2.6% Arms over 70 to 100% in a 13-subject arterial blood gas study, not tested with motion or low perfusion. Corrected from "Unclear" to agree with the compliance section. |
 | GPS | No | Not applicable | Not applicable |  |
 | Barometer / altimeter | Unclear | Unclear | Unclear |  |
 | EDA | Yes, ventral EDA | Electrical conductance at the skin surface | Unclear | The differentiating sensor. |

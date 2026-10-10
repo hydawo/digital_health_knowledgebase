@@ -1,7 +1,7 @@
 # Module 1 — Validation Evidence
 
 Full extraction from the primary validation literature, read in full rather than summarized.
-**Last verified: 2026-08-21.** Sections 3, 6b and 6c updated 2026-10-09 (open-questions pass); §3c and §6c corrected 2026-10-10 after the independent review.
+**Last verified: 2026-08-21.** Sections 3, 6b and 6c updated 2026-10-09 (open-questions pass); §3c and §6c corrected 2026-10-10 after the independent review. Cohen 2026 *Hypertension* author disclosures read and confirmed 2026-10-10.
 
 This file exists because the summary figures circulating about wearable sleep accuracy — including
 the ones in the first draft of this knowledge base — are systematically misleading. Reading the
@@ -576,7 +576,9 @@ K250507 (cleared 11 September 2025). N=2,229 adults without diagnosed hypertensi
 age 60 (risk ratio 0.69) and at BMI ≤30 (0.67). No peer-reviewed publication of the pivotal study was
 found in PubMed or Europe PMC as of 2026-10-09. Independent commentary: Cohen JB et al. 2026,
 *Hypertension* 83(2):e26031 (critique; notes the 510(k) predicate was an ECG-based cardiomyopathy
-notifier and no ISO/IEEE cuffless protocol was used; two authors disclose Apple stock), and Cohen JB et
+notifier and no ISO/IEEE cuffless protocol was used; two authors disclose Apple stock, S.P. Juraschek
+under $10k and E. Yang over $10k, per the disclosures footnote of the NIH author manuscript, PMC12826266,
+read 2026-10-10 via NCBI E-utilities), and Cohen JB et
 al. 2026, *JAMA* 335(11):1001 (population screening model, NIH/NHMRC funding). **Verified** (FDA
 summary and Apple white paper read directly).
 

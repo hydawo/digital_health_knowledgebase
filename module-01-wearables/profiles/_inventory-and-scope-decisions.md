@@ -2,32 +2,36 @@
 
 This file is the Phase 1 output: the full inventory of candidate technologies, which were profiled in this research phase, which were deliberately deferred, and why. Per the operating rules, uncertain inclusion decisions are recorded rather than silently made.
 
-**Status of this file:** the entries under "Deferred" were identified during discovery but **were not researched**. Nothing in those sections should be treated as verified. They exist so that a future session knows what is missing and does not have to rediscover it.
+**Status of this file:** written as the Phase 1 inventory on 2026-08-21 and **brought in line with the current profiles and the rebuilt `../comparison-matrix.md` on 2026-10-10** (Last verified: 2026-08-21; updated 2026-10-10). Several candidates first listed here as deferred have since been profiled or desk-checked; their rows now point to where that work lives. The entries still marked **Not researched** were identified during discovery but have not been researched, and nothing in those rows should be treated as verified. The historical scope reasoning below is kept as written.
 
 ---
 
-## Profiled in this phase (11 files, 12+ ecosystems)
+## Profiled (14 profile files plus this inventory)
+
+The rationale column says why each was included. It is not a ranking; Table 10 of `../comparison-matrix.md` holds the current differentiators and limitations, and where this table and a profile disagree, the profile wins.
 
 | Ecosystem | Profile | Rationale for inclusion |
 |---|---|---|
-| Apple Watch / HealthKit / SensorKit | `apple-watch-healthkit.md` | Largest installed base; unique architecture; named in scope |
-| Fitbit / Google | `fitbit-google.md` | Deepest research footprint; named in scope; API migration makes it time-critical |
-| Garmin | `garmin.md` | Best battery life; no subscription; named in scope |
-| Oura | `oura.md` | Best consumer sleep validation; named in scope |
-| WHOOP | `whoop.md` | Best independent sleep-staging result; named in scope |
-| Samsung | `samsung.md` | Only consumer vendor offering raw PPG/ECG/ACC; named in scope |
+| Apple Watch / HealthKit / SensorKit | `apple-watch-healthkit.md` | Largest installed base; no vendor in the HealthKit data path; SensorKit research signals for approved studies; named in scope |
+| Fitbit / Google | `fitbit-google.md` | Deepest validation literature and the *All of Us* dataset; named in scope; legacy API off 30 October 2026 and Google Health API not onboarding new projects (as of 2026-10-10) make it time-critical |
+| Garmin | `garmin.md` | Weeks of battery, no subscription, Enhanced BBI; named in scope |
+| Oura | `oura.md` | Highest four-stage kappa in Robbins 2024 (0.65, but Oura-funded) and best resting HR and HRV agreement in Dial 2025; independent PSG results are mixed and Oura was not in Schyvens 2025; named in scope |
+| WHOOP | `whoop.md` | Best deep-sleep (N3) accuracy in Schyvens 2025 (69.63%), but fourth of six on overall kappa (0.37); named in scope |
+| Samsung | `samsung.md` | Raw PPG, ECG, accelerometer, IBI and (Galaxy Watch8 and later) raw EDA from a mainstream watch via the Health Sensor SDK. One of several raw-signal routes in this module, not the only one (see Table 3 of the matrix); named in scope |
 | Polar | `polar.md` | Free open-source raw-signal SDK; field-standard H10; named in scope |
-| Withings | `withings.md` | Cellular/phone-free collection; BP and body composition; named in scope |
-| Empatica | `empatica.md` | Only wrist EDA; FDA-cleared platform; named in scope |
-| Ametris (formerly ActiGraph) | `ametris-actigraph.md` | Gold-standard research accelerometry; named in scope |
+| Withings | `withings.md` | Cellular/phone-free collection (Ametris also offers a cellular hub); BP and body composition; named in scope |
+| Empatica | `empatica.md` | Raw wrist EDA with an FDA-cleared EDA parameter; FDA-cleared platform. One of three raw EDA routes in this module, with Samsung Galaxy Watch8 and the Verily Study Watch (C); named in scope |
+| Ametris (formerly ActiGraph) | `ametris-actigraph.md` | Reference standard for research accelerometry; named in scope |
 | Axivity (AX3/AX6) + GENEActiv | `axivity-geneactiv.md` | Open research-grade accelerometry behind UK Biobank, Whitehall II, Fenland, Pelotas; added under the "not a closed list" clause |
-| Data intermediaries (cross-cutting) | `data-intermediaries.md` | Fitabase, unified APIs, and open datasets, not device ecosystems, but they determine what a study can actually access |
+| Movesense | `movesense.md` | Open sensor platform with custom firmware, single-lead ECG and a high-rate IMU; added under the "not a closed list" clause (formerly deferred, below) |
+| Ultrahuman, Biostrap (now Sensor Bio), Verily Study Watch; RingConn, Circular and Amazfit / Zepp desk check | `emerging-platforms.md` | Close the discovery gap recorded in the first pass: a ring with a developer PPG stream, a research-repositioned raw-PPG platform, a research-only watch, and a data-access check of three further ring and watch vendors (formerly deferred, below) |
+| Data intermediaries (cross-cutting) | `data-intermediaries.md` | Fitabase, Labfront, Fitrockr, unified APIs and open datasets, not device ecosystems, but they determine what a study can actually access |
 
 ---
 
 ## Deferred, research-grade accelerometry alternatives
 
-Axivity and GENEActiv, the two most important alternatives, **were profiled** (`axivity-geneactiv.md`). The remaining candidates below were not.
+Axivity and GENEActiv, the two most important alternatives, **were profiled** (`axivity-geneactiv.md`). The remaining candidates below were not (still true as of 2026-10-10).
 
 | Candidate | Why it matters | Status |
 |---|---|---|
@@ -40,16 +44,18 @@ Axivity and GENEActiv, the two most important alternatives, **were profiled** (`
 
 ## Deferred, other consumer and prosumer wearables
 
+Rows updated 2026-10-10. The "Why it matters" text is the original 2026-08-21 discovery note.
+
 | Candidate | Why it matters | Status |
 |---|---|---|
-| **Movesense** (Suunto) | Open developer platform with programmable sensor modules, potentially a Polar-like raw-access story with more extensibility. | **Not researched.** |
-| **Biostrap** | Positions explicitly toward research with raw PPG access claims. | **Not researched.** Claims need verification. |
-| **Ultrahuman Ring** | Oura competitor in the ring form factor with an API. | **Not researched.** |
-| **RingConn, Circular, other smart rings** | Growing category; relevant to any ring-based design as Oura alternatives. | **Not researched.** |
-| **Amazfit / Zepp Health** | Low-cost wearables with an open API; potentially relevant for large low-budget cohorts. | **Not researched.** |
-| **Verily Study Watch** | Purpose-built research watch used in the Project Baseline studies. **Current availability and status are unknown** and should be verified before assuming it is procurable. | **Not researched.** Status verification needed. |
-| **Muse** (InteraXon) | Consumer EEG headband; used in sleep and meditation research. Arguably a different modality rather than a wearable ecosystem competitor. | **Not researched.** Scope decision needed. |
-| **Dreem / Beacon Biosignals** | Wearable EEG for sleep, the only route to genuine consumer-deployable sleep staging by EEG rather than by inference. Highly relevant given how poorly every device in this module stages sleep. | **Not researched.** High priority for sleep research questions. |
+| **Movesense** (Suunto) | Open developer platform with programmable sensor modules, potentially a Polar-like raw-access story with more extensibility. | **Profiled:** `movesense.md`. |
+| **Biostrap** | Positions explicitly toward research with raw PPG access claims. | **Profiled:** `emerging-platforms.md` (now Sensor Bio). Raw-data claims remain vendor statements (Corroborated at most). |
+| **Ultrahuman Ring** | Oura competitor in the ring form factor with an API. | **Profiled:** `emerging-platforms.md` (UltraSignal and Partner API). |
+| **RingConn, Circular, other smart rings** | Growing category; relevant to any ring-based design as Oura alternatives. | **Desk-checked 2026-10-09:** `emerging-platforms.md`. No research API found for RingConn or Circular. Samsung Galaxy Ring as a distinct research target is still not investigated. |
+| **Amazfit / Zepp Health** | Low-cost wearables with an open API; potentially relevant for large low-budget cohorts. | **Desk-checked 2026-10-09, partnerships re-checked 2026-10-10:** `emerging-platforms.md`. On-device Zepp OS sensor API only; no research cloud API found. |
+| **Verily Study Watch** | Purpose-built research watch used in the Project Baseline studies. | **Profiled:** `emerging-platforms.md`. Enterprise only; current status still **Unclear** there. |
+| **Muse** (InteraXon) | Consumer EEG headband; used in sleep and meditation research. Arguably a different modality rather than a wearable ecosystem competitor. | **Not researched.** Deferred as a distinct modality (see `emerging-platforms.md`, "Not investigated"). |
+| **Dreem / Beacon Biosignals** | Wearable EEG for sleep, the only route to genuine consumer-deployable sleep staging by EEG rather than by inference. Highly relevant given how poorly every device in this module stages sleep. | **Not researched.** Deferred as a distinct modality. High priority for sleep research questions. |
 
 ---
 
@@ -93,7 +99,7 @@ Vendors covered there, at varying (mostly Reported) confidence:
 
 3. **ActiGraph was profiled under its current name, Ametris**, with the legacy name retained prominently in the filename, title, and headings, because essentially all existing literature and all researcher familiarity attaches to "ActiGraph."
 
-4. **Middleware/aggregators were identified but not profiled**, on the grounds that Phase 1 scope was defined around device ecosystems. Flagged above as a recommended addition.
+4. **Middleware/aggregators were identified but not profiled**, on the grounds that Phase 1 scope was defined around device ecosystems. Flagged above as a recommended addition. *(Later reversed: they were profiled in `data-intermediaries.md`; see the section above.)*
 
 5. **Axivity and GENEActiv were added to scope** despite not appearing in CLAUDE.md's starting list, under its explicit "starting point, not a closed list" clause. They underpin UK Biobank and comparable cohorts and set the openness and price benchmark for the whole module. **movisens, Shimmer, activPAL, and Fibion remain unprofiled**, the largest remaining device gap.
 

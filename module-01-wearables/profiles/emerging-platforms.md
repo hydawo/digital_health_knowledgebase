@@ -4,7 +4,7 @@ Platforms that materially belong in the Module 1 comparison but did not warrant 
 this pass, either because they are narrower in scope, or because public documentation is too thin
 to fill the template honestly. Each entry states what was established and what was not.
 
-**Last verified: 2026-08-21; RingConn, Circular and Amazfit / Zepp section added 2026-10-09; Ultrahuman access, Biostrap (now Sensor Bio), Verily status and Zepp research partnerships re-checked 2026-10-10.** These entries close the discovery gap recorded in the first pass.
+**Last verified: 2026-08-21; RingConn, Circular and Amazfit / Zepp section added 2026-10-09; Ultrahuman access, Biostrap (now Sensor Bio), Verily status and Zepp research partnerships re-checked 2026-10-10; Biostrap leg-placement claim qualified 2026-10-10.** These entries close the discovery gap recorded in the first pass.
 
 ---
 
@@ -65,8 +65,13 @@ Links: https://www.ultrahuman.com/ultrasignal/ · https://www.ultrahuman.com/blo
 Stack and Labfront. Biostrap explicitly repositioned from consumer to medical/research, unveiling a
 next-generation device with raw sensor data at HLTH as part of that shift. **Reported.**
 
-The multi-device framework (wrist + leg pod + chest strap + temperature patch) is also unusual: leg
-placement for gait, balance and jump metrics is not available from any other vendor in this module.
+The multi-device framework (wrist + leg pod + chest strap + temperature patch) is also unusual among
+consumer-derived platforms. Leg placement itself is not unique: ActiGraph devices can be worn at the
+ankle (see `ametris-actigraph.md`; Ngueleu et al. 2022, *J Neuroeng Rehabil*, PMC9575229, also
+reports manufacturer guidance for the thigh), and Open Movement documents attaching the Axivity AX3 at
+the thigh with tape or a bandage (see `axivity-geneactiv.md`). What Biostrap adds is vendor-computed
+gait, balance and jump metrics from its leg pod, rather than raw accelerometry for the researcher to
+process. (Qualified 2026-10-10.)
 
 **Research program and academic data access.** No separate academic program. Sensor Bio markets
 "Raw data access, IRB-friendly workflows, and reproducible signal quality for academic and research
@@ -157,7 +162,7 @@ Recorded so their absence remains a known gap rather than an implied judgement.
    via SDK, BBI via cloud API).
 2. **A ring with a developer PPG stream now exists** (Ultrahuman UltraSignal). Oura's closed-data position is a vendor choice, not a
    constraint of the form factor.
-3. **The raw-data tier is no longer synonymous with expensive.** Polar (~$95) and Movesense sit
+3. **The raw-data tier is no longer synonymous with expensive.** Polar ($104.95 for the H10 or Verity Sense, Polar US store, 2026-10-10) and Movesense sit
    alongside Empatica (~$1,750/3 yr) and Ametris.
 4. **Verily, Samsung means Galaxy Watch raw signal now has a commercial clinical-trial route**, not
    just a self-build one.

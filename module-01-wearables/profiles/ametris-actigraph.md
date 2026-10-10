@@ -11,7 +11,7 @@
 | Open source | No |
 | Hosting/deployment | CentrePoint cloud platform; legacy ActiLife desktop software |
 | Pricing model | Not public; "Pricing is calculated for each unique order" (quote); academic pricing list on request |
-| Last verified | 2026-08-21; acquisition dates, device specs, CentrePoint API, compliance and academic channel re-verified 2026-10-10 |
+| Last verified | 2026-08-21; acquisition dates, device specs, CentrePoint API, compliance and academic channel re-verified 2026-10-10; ActiLife price conflict recorded 2026-10-10 |
 
 ## Summary
 
@@ -147,16 +147,18 @@
 
 ## Pricing
 
-- **Not published.** Ametris's device pages say: "Pricing is calculated for each unique order. For a price quote or more information, please contact our team directly." (LEAP and Insight Watch pages, **Verified** 2026-10-10.) All figures below are **Reported** and come from a **competitor's** published pricing guides (Fibion, which sells alternative research accelerometry). Treat them as indicative order-of-magnitude only, and note the obvious source bias:
+- **Not published.** Ametris's device pages say: "Pricing is calculated for each unique order. For a price quote or more information, please contact our team directly." (LEAP and Insight Watch pages, **Verified** 2026-10-10.) All figures below are **Reported** and come from a **competitor's** published pricing guides (Fibion, which sells alternative research accelerometry), except the US$349 ActiLife figure, which is from a 2022 systematic review. Treat them as indicative order-of-magnitude only, and note the obvious source bias:
 
 | Item | Reported price |
 |---|---|
 | GT3X+ | $325, $1,016 (varies by region/distributor/agreement) |
 | GT9X Link | ~$500 (**no longer available to new customers**, EOL) |
 | wGT3X-BT | $325, $1,016 |
-| ActiLife software | ~$1,695 |
+| ActiLife software | **Conflicting secondary figures: US$349 or ~$1,695** (see note below the table) |
 | CentrePoint software | ~$3,500/year |
 | CentrePoint Hub | ~$600 purchase, or ~$300/year rental |
+
+- **ActiLife price conflict (recorded 2026-10-10, Unclear).** Two secondary sources disagree and neither is a vendor price. Ngueleu et al. 2022 (*J Neuroeng Rehabil*, PMC9575229, full text read 2026-10-10) gives device prices "between US$325 (+ US$349 for the Actilife software) and US$1016" with no date or region for the quote. The ~$1,695 figure is from the Fibion pricing guides read on 2026-08-21, which per search-engine excerpts attribute it to a ResearchGate forum post and describe it as a price from "some years ago"; a direct re-read on 2026-10-10 was blocked by a Cloudflare bot check and was not bypassed. The two figures may reflect different years, licence types or regions; this is not established. Ametris's ActiLife page (read 2026-10-10) shows no price, only "Request a Quote". Budget from a quote, not from either figure. (Independent review finding R-146.)
 
 ### Research program and academic data access (checked 2026-10-10)
 
@@ -264,3 +266,4 @@
 11. Ametris Compliance Center. https://ametris.com/compliance (accessed 2026-10-10). **Primary, vendor statement.**
 12. openFDA 510(k) K231532 and K181077. https://api.fda.gov/device/510k.json?search=k_number:K231532 ; https://api.fda.gov/device/510k.json?search=k_number:K181077 (accessed 2026-10-10). **Primary.**
 13. Ametris academic research site and academic store. https://academic.ametris.com/ ; https://store.ametris.com/ (accessed 2026-10-10). **Primary.** Academic channel, pricing-list form, grant toolkit, accessory prices, existing-account restriction.
+14. Ngueleu A.-M. et al. "Criterion validity of ActiGraph monitoring devices for step counting and distance measurement in adults and older adults: a systematic review." *J Neuroeng Rehabil* 2022;19:112. https://pmc.ncbi.nlm.nih.gov/articles/PMC9575229/ (DOI 10.1186/s12984-022-01085-5; full text read via NCBI E-utilities 2026-10-10). **Secondary.** Source of the US$349 ActiLife figure and of manufacturer wear-site guidance (wrist, ankle, thigh, hip).

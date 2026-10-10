@@ -11,7 +11,7 @@
 | Open source | **SDK is open source** (Polar BLE SDK, GitHub); devices and cloud are not |
 | Hosting/deployment | Direct BLE streaming to a researcher's own app (no cloud required), **or** Polar Flow cloud + AccessLink API |
 | Pricing model | Device purchase; no subscription for core use; SDK free |
-| Last verified | 2026-08-21; H10 accelerometer re-confirmed 2026-10-09; AccessLink scope, limits and history, Polar 360 SDK specs, privacy roles and H10 US price re-verified 2026-10-10 |
+| Last verified | 2026-08-21; H10 accelerometer re-confirmed 2026-10-09; AccessLink scope, limits and history, Polar 360 SDK specs, privacy roles and H10 and Verity Sense US prices re-verified 2026-10-10 |
 
 ## Summary
 
@@ -113,7 +113,7 @@
 
 ### Why this matters
 
-- **22-bit raw PPG at up to 176 Hz from a ~$95 armband, with a 9-axis IMU at up to 416 Hz, over an open-source SDK with no registration, no approval, no cloud and no fee, is the single most permissive raw-signal offer in this entire module.** It beats Samsung's 25 Hz accelerometer, beats Withings' ~25 Hz, and is obtained without a partner programme. The trade-off is form factor and wear duration, not signal quality.
+- **22-bit raw PPG at up to 176 Hz from a $104.95 armband (Polar US list price, 2026-10-10), with a 9-axis IMU at up to 416 Hz, over an open-source SDK with no registration, no approval, no cloud and no fee, is the single most permissive raw-signal offer in this entire module.** It beats Samsung's 25 Hz accelerometer, beats Withings' ~25 Hz, and is obtained without a partner programme. The trade-off is form factor and wear duration, not signal quality.
 
 ## Derived Metrics / Analytics
 
@@ -180,10 +180,10 @@
 ## Pricing
 
 - **SDK: free and open source.** No partner programme, no approval gate, no licence fee. This is the cheapest path to raw physiological signal in the entire module.
-- **Devices:** H10 and Verity Sense are inexpensive consumer sensors (roughly in the €80, €120 class at retail; verify current pricing). Watches span a wider range. Team Pro is a system-level purchase.
+- **Devices:** H10 and Verity Sense are inexpensive consumer sensors, each listed at **$104.95** on Polar's US store (2026-10-10, Verified). Prices in other regions were not checked and are not recorded here. Watches span a wider range. Team Pro is a system-level purchase.
 - **No subscription** for core functionality.
 - Polar Flow / AccessLink: no documented API fee.
-- **Device price check 2026-10-10:** Polar's US store lists the H10 at **$104.95** (polar.com/us-en, Verified). The Verity Sense US product page returned 404, so its current price was not read; the "~$95" figure above is from the 2026-08-21 pass.
+- **Device price check 2026-10-10:** Polar's US store lists the H10 at **$104.95** and the Verity Sense at **$104.95** (polar.com/us-en, Verified). The Verity Sense page has moved to `/us-en/products/accessories/polar-verity-sense` (the old `/us-en/sensors/verity-sense` path returns a 404 page). This replaces the earlier "~$95" Verity Sense figure and the unsourced EUR 80 to 120 retail range.
 - **Cost per raw-ECG-capable participant is roughly an order of magnitude below Empatica and ActiGraph/Ametris.**
 
 ## Research Evidence and Validation
@@ -276,3 +276,4 @@
 9. Polar privacy notice. https://www.polar.com/en/legal/privacy-notice (accessed 2026-10-10). **Primary.** Polar Electro Oy as controller; not responsible for data transferred out; processor role for Team Pro and GoFit under agreement; no HIPAA language.
 10. Polar BLE SDK product documentation, Polar 360. https://github.com/polarofficial/polar-ble-sdk/blob/master/documentation/products/Polar360.md (accessed 2026-10-10; latest SDK release 8.4.0, 2026-10-01). **Primary.**
 11. Polar H10 product page, Polar USA store. https://www.polar.com/us-en/sensors/h10-heart-rate-sensor (accessed 2026-10-10). $104.95 list price.
+12. Polar Verity Sense product page, Polar USA store. https://www.polar.com/us-en/products/accessories/polar-verity-sense (accessed 2026-10-10). $104.95 list price.

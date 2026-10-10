@@ -11,7 +11,7 @@
 | Open source | No |
 | Hosting/deployment | Vendor cloud (Garmin Connect), REST API with push or ping/pull delivery |
 | Pricing model | Device purchase; **no consumer subscription for core metrics**; API programme is free to join but business-use only, with license fees for some metrics (Garmin footnotes Enhanced Beat-To-Beat Interval: "Commercial use requires a license fee payment"). **New programme applications paused since spring 2026 (Corroborated)** |
-| Last verified | 2026-08-21; programme status, Health API metric list, Health SDK and research platforms re-verified 2026-10-10 |
+| Last verified | 2026-08-21; programme status, Health API metric list, Health SDK and research platforms re-verified 2026-10-10; Schyvens 2025 figures corrected from full text 2026-10-10 |
 
 ## Summary
 
@@ -143,7 +143,7 @@
 - **Heart rate:** the major systematic review of steps/EE/HR found Garmin among the more accurate brands for heart rate (alongside Apple), with all brands within roughly ±3% under controlled conditions.
 - **Steps:** accurate in lab settings; degraded in free living, consistent with the rest of the category.
 - **Energy expenditure:** unacceptable, as with every consumer brand (MAPE >30%).
-- **Sleep staging:** weak. The independent 2025 Schyvens six-device validation reported Garmin Vivosmart 4 at ~32.1% agreement for sleep-stage scoring against PSG, among the lowest of the six devices tested. Garmin sleep staging should not be used for stage-level endpoints.
+- **Sleep staging:** weak. The independent 2025 Schyvens six-device validation gave Garmin Vivosmart 4 an overall Cohen's kappa of 0.21 ("fair") against PSG, the lowest of the six devices tested, with deep-sleep (N3) accuracy of 47.46% (also the lowest) and REM accuracy of 33.10% (corrected 2026-10-10 from a stale search-summary percentage; full text read, see `../validation-evidence.md` §1). Garmin sleep staging should not be used for stage-level endpoints.
 - **Raw accelerometry:** Garmin devices have been included in mechanical shaker-table comparisons of raw accelerometry against ActiGraph, Apple Watch, and Fitbit, useful methodological literature for anyone attempting to treat consumer-device motion data as actigraphy.
 
 ## Strengths

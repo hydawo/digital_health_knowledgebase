@@ -11,7 +11,7 @@
 | Open source | **No.** Developer tools and APIs are free of charge, but the SDK is licensed under a proprietary 12-month "SDK License and Evaluation Agreement" for evaluation and development only; custom sensor firmware permitted under it (re-verified 2026-10-10) |
 | Hosting/deployment | **None required**, BLE to your own app, or onboard logging |
 | Pricing model | Device purchase (Movesense MD €349 ex VAT for 1 to 49 units); developer kits; volume pricing on request; **no software licence fee**; free sensors for selected academic projects (Movesense Academic Program) |
-| Last verified | 2026-08-21; SDK licence, MD price and Academic Program re-verified 2026-10-10 |
+| Last verified | 2026-08-21; SDK licence, MD price and Academic Program re-verified 2026-10-10; custom-firmware uniqueness claim qualified 2026-10-10 |
 
 ## Summary
 
@@ -104,7 +104,7 @@
 
 - Development requires C++ tooling for sensor-side apps and native iOS/Android tooling for mobile. Third-party SDK wrappers exist (e.g. a .NET/Xamarin SDK).
 
-- **Custom firmware is the capability nothing else here offers.** Practical uses: on-sensor feature extraction to cut BLE bandwidth and battery; custom sampling schedules; event-triggered high-rate capture; bespoke signal conditioning. This turns the device from an instrument into a platform.
+- **Custom firmware through a supported SDK is Movesense's distinguishing capability.** It is not unique in this module: Axivity's AX3/AX6 firmware source is published under a BSD 2-clause licence (Open Movement repository README, read 2026-10-10; see `axivity-geneactiv.md`), though that tree has had no firmware feature release in years, while Movesense supports sensor-side app development as a product. Practical uses: on-sensor feature extraction to cut BLE bandwidth and battery; custom sampling schedules; event-triggered high-rate capture; bespoke signal conditioning. This turns the device from an instrument into a platform.
 
 ## Deployment and Infrastructure
 

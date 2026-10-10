@@ -11,7 +11,7 @@
 | Open source | No |
 | Hosting/deployment | Vendor cloud (Google/Fitbit); researchers pull via REST API or via a third-party research platform |
 | Pricing model | Device purchase + optional Fitbit Premium subscription; API access is free but gated by approval for the streams researchers most want |
-| Last verified | 2026-08-21; migration dates, onboarding status, Health Research Policy, data types and scopes re-verified 2026-10-10 |
+| Last verified | 2026-08-21; migration dates, onboarding status, Health Research Policy, data types and scopes re-verified 2026-10-10; Schyvens 2025 figures corrected from full text 2026-10-10 |
 
 ## Summary
 
@@ -246,7 +246,7 @@
 - **Steps:** accurate in laboratory settings; the review found Apple, Fitbit, and Garmin accurate roughly half the time overall, with free-living conditions substantially degrading performance.
 - **Heart rate:** acceptable on average (all brands within ~±3% in controlled settings) but Fitbit specifically **tends to underestimate**, and performed less well than Apple Watch and Garmin in that review.
 - **Energy expenditure:** unacceptable, no brand met accuracy thresholds, MAPE >30%.
-- **Sleep staging:** the 2024 *Sensors* four-stage comparison put Fitbit Sense at 61.7 to 78.0% sensitivity and 72.8 to 73.2% precision, below Oura. The independent 2025 Schyvens six-device study was harsher still, reporting Fitbit Sense at ~48.3% and Fitbit Charge 5 at ~43.3% agreement, with most devices differing significantly from PSG on total sleep time, sleep efficiency, WASO, and light sleep.
+- **Sleep staging:** the 2024 *Sensors* four-stage comparison put Fitbit Sense at 61.7 to 78.0% sensitivity and 72.8 to 73.2% precision, below Oura. The independent 2025 Schyvens six-device study (N=62, PSG) gave Fitbit Sense an overall Cohen's kappa of 0.42 and Fitbit Charge 5 0.41 ("moderate", 2nd and 3rd of six behind Apple Watch Series 8 at 0.53), with deep-sleep (N3) accuracy of 50.86% and 51.50% respectively (corrected 2026-10-10 from stale search-summary percentages; full text read, see `../validation-evidence.md` §1). It also found most devices differing significantly from PSG on total sleep time, sleep efficiency, WASO, and light sleep.
 - The practical read: Fitbit's *sleep/wake and duration* outputs are usable for behavioural research; its *stage-level* outputs are not a substitute for PSG.
 
 ## Strengths

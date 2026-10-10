@@ -11,14 +11,14 @@
 | Open source | No |
 | Hosting/deployment | Vendor cloud (Withings Health Data API); **cellular-connected device options remove the smartphone dependency** |
 | Pricing model | Device purchase. API plans (Verified 2026-10-10): **Start for Free** (self-serve, 10 users, more after Withings review), **Enterprise** and **Advanced Biomarkers** (custom price by active users). **From 12 October 2026, Withings accounts created after that date need a paid Withings+ membership to share data with a Start for Free app**, unless the app is on Enterprise or Advanced Biomarkers. Advanced Research API (raw data) is contract-gated |
-| Last verified | 2026-08-21; raw accelerometer rate re-checked 2026-10-09; API plans, Withings+ requirement, security and compliance statements, API reference and FDA 510(k) list re-verified 2026-10-10 |
+| Last verified | 2026-08-21; raw accelerometer rate re-checked 2026-10-09; API plans, Withings+ requirement, security and compliance statements, API reference and FDA 510(k) list re-verified 2026-10-10; cellular uniqueness claim, Strengths sampling rate and Schyvens figure corrected 2026-10-10 |
 
 ## Summary
 
 - Withings is the wrong shape to compare directly against Apple/Fitbit/Garmin, and that is precisely why it belongs in this module. It is a **connected-health-device company with a purpose-built decentralised clinical trials business** (Withings Health Solutions), not a fitness-wearable company. Its distinguishing capabilities are:
 
 1. **Medically-oriented, regulated devices**, blood pressure monitors, weighing scales with body composition, ECG-capable hybrid watches, which cover measurement domains no wrist fitness tracker touches.
-2. **Cellular connectivity.** Withings offers device variants that transmit over cellular without a paired smartphone. For elderly, low-digital-literacy, or rural cohorts this **eliminates the single largest source of missing data in remote studies**, the participant's phone. No other vendor in this module solves this.
+2. **Cellular connectivity.** Withings offers device variants that transmit over cellular without a paired smartphone. For elderly, low-digital-literacy, or rural cohorts this **eliminates the single largest source of missing data in remote studies**, the participant's phone. Withings is not alone here: Ametris's CentrePoint Data Hub is a "cellular-powered communication gateway" that sends Insight Watch and LEAP data from the participant's home to the CentrePoint Cloud (ametris.com/centrepoint, read 2026-10-10; see `ametris-actigraph.md`). Withings' distinction is that its cellular options are built into consumer-priced measurement devices such as BP monitors and scales rather than a separate hub alongside an enterprise trial platform.
 3. **An Advanced Research API** giving contracted partners access to **raw accelerometer and raw PPG** signals, a genuine raw-data path on a consumer device.
 
 - The constraints are narrow scope and gated access: the raw-data programme is **ScanWatch only** and **contracted partners only**, and Withings' own sleep-staging performance was the weakest of six devices in the strongest recent independent validation.
@@ -206,8 +206,8 @@
 
 ## Strengths
 
-- **Cellular, phone-free data collection**, removes the dominant failure mode in remote studies and unlocks populations other platforms cannot reach.
-- **Raw accelerometer (25 to 100 Hz) and 3-wavelength raw PPG** available on a consumer device via the Advanced Research API.
+- **Cellular, phone-free data collection**, removes the dominant failure mode in remote studies and unlocks populations most consumer platforms cannot reach (Ametris offers a cellular hub for its research devices; see Summary).
+- **Raw accelerometer (about 24.8 Hz in the documented raw mode; the overview's "up to 100 Hz" is not a documented setting, see the sampling-rate reconciliation above) and 3-wavelength raw PPG** available on a consumer device via the Advanced Research API.
 - **Measurement domains nobody else covers**: blood pressure, body composition, and contactless under-mattress sleep.
 - ~30-day ScanWatch battery in normal mode, essentially no charging burden.
 - Zero-burden sleep measurement via the Sleep mat.
@@ -282,7 +282,7 @@
 2. Withings, Raw data documentation. https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data/ (accessed 2026-08-21). **Primary.** Establishes the ±4g accelerometer range, the ~24.824 Hz effective sampling rate for both sensors, "contracted partners only" access, the requirement to activate raw capture via API, the disabling of all other device features in raw mode, and the 4 to 7× battery drain reducing life to 3 to 4 days. Also establishes that ECG is not listed among Raw Data API types. Re-read 2026-10-09: wording unchanged, and the page also says "approximately 25 Hz" and "~2 mg" sensitivity.
 3. Withings Health Solutions, research and clinical trials. https://www.withings.com/us/en/health-solutions/research-clinical-trials (accessed 2026-08-21). Establishes the pharma/CRO decentralised-trials positioning and the multiple retrieval routes offered (cellular, mobile app, RPM platform, API).
 4. Withings Partner Hub. https://developer.withings.com/ (accessed 2026-08-21).
-5. Schyvens A.-M. et al., "A performance validation of six commercial wrist-worn wearable sleep-tracking devices for sleep stage scoring compared to polysomnography." *SLEEP Advances* 2025;6(2):zpaf021. https://academic.oup.com/sleepadvances/article/6/2/zpaf021/8090472, Withings ScanWatch lowest of six at ~29.8%.
+5. Schyvens A.-M. et al., "A performance validation of six commercial wrist-worn wearable sleep-tracking devices for sleep stage scoring compared to polysomnography." *SLEEP Advances* 2025;6(2):zpaf021. https://academic.oup.com/sleepadvances/article/6/2/zpaf021/8090472 (full text also at https://pmc.ncbi.nlm.nih.gov/articles/PMC12038347/, re-read 2026-10-10). Withings ScanWatch overall Cohen's kappa 0.22, 5th of six (only Garmin Vivosmart 4 lower at 0.21); "deep" accuracy 66.74%, but for a combined N3+REM category not comparable with the four-state devices. Corrected 2026-10-10 from a stale search-summary percentage.
 6. Fuller D. et al. *JMIR mHealth uHealth* 2020;8(9):e18694. https://mhealth.jmir.org/2020/9/e18694/, Apple Watch stronger agreement than Garmin, Fitbit, and Withings for heart rate.
 7. Medable, Withings Health Solutions partnership announcement (secondary). https://www.businesswire.com/news/home/20220721005032/en/ (accessed 2026-08-21). Evidence of DCT platform integration.
 8. Withings API plans. https://developer.withings.com/developer-guide/v3/withings-solutions/withings-api-plans/ (content served from https://static.withings.com/content/api/plans/plans.html), accessed 2026-10-10. **Primary.** Start for Free, Enterprise and Advanced Biomarkers plans; 10-user cap; 1,500+ req/min on paid plans; DPA, BAA and US hosting on paid plans; Withings+ required from 12 October 2026 for new accounts on the free plan, including via Apple Health or Google Health; exemption for "Cellular Solutions, SDK and Research partners".
