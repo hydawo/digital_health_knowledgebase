@@ -170,10 +170,10 @@ svg .ah{fill:var(--line)} svg .aa{fill:var(--accent)} svg .ahu{fill:var(--human)
     <rect x="508" y="474" width="196" height="30" rx="6" fill="var(--bg)" stroke="none"/>
     <text x="514" y="494" class="lbl">writes only after checks</text>
 
-    <!-- scout to KB -->
-    <path d="M30 188 L14 188 L14 556 L288 556" class="wg" marker-end="url(#ag)"/>
-    <text x="22" y="492" class="lbl">files papers,</text>
-    <text x="22" y="508" class="lbl">shortlists studies</text>
+    <!-- scout to coordinator -->
+    <path d="M280 200 L368 200" class="wg" marker-end="url(#ag)"/>
+    <text x="324" y="192" text-anchor="middle" class="lbl">weekly run</text>
+    <text x="324" y="218" text-anchor="middle" class="lbl">checked, merged</text>
 
     <!-- KB to reviewer and reviewer to Hassan -->
     <path d="M712 556 L986 556 L986 188 L972 188" class="wr" marker-end="url(#ar)"/>
@@ -204,6 +204,7 @@ svg .ah{fill:var(--line)} svg .aa{fill:var(--accent)} svg .ahu{fill:var(--human)
   </div>
   <div class="notes">
     <div class="note"><b>Why each agent owns its own files</b><span>Agents run at the same time. Giving each one a separate set of files means two agents never overwrite each other's edits.</span></div>
+    <div class="note"><b>How the scout's work is checked</b><span>Each weekly run goes to the coordinator first. A script compares every new paper with Crossref and prints its funding and conflict statements, so the sponsorship label can be checked before the merge.</span></div>
     <div class="note"><b>Why the scout only shortlists studies</b><span>A paper's abstract is enough to file it under a device. What happened in a study has to be read from the full paper, so a person-led session writes those up.</span></div>
     <div class="note"><b>Why the reviewer can't edit</b><span>Its findings go to Hassan first. A correction only enters the library after someone has looked at it.</span></div>
   </div>

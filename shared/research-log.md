@@ -2,6 +2,23 @@
 
 ---
 
+## 2026-10-10 — Weekly scan output checked; merge-and-check step added
+
+**Module:** 1, 2 (literature tracking). Prompted by the question of whether the scan's output gets
+the same checking as the research agents' work. It did not: the routine reads abstracts and PubMed
+metadata only, and the 2026-10-09 consolidation merged its runs without verifying them.
+
+- **All 17 papers the scan had added were checked** (15 in the Module 1 library, 2 in Module 2):
+  title, full author list, year and journal against Crossref; sponsorship tier against each paper's
+  own conflict-of-interest and funding text where Europe PMC has the full text (12 of 17); device
+  mentions in the body text. No wrong author, year, journal or tier. One truncated title (Stahl
+  2026, subtitle missing) and one author initial were corrected.
+- **New:** `shared/verify_scan_additions.py`, which runs the same check on any run before merging,
+  and a "Merging and checking a scan run" section in `shared/weekly-literature-scan.md`.
+- The architecture page now routes the scout through the coordinator.
+
+---
+
 ## 2026-10-09 (later) — Unresolved questions restructured; 34-question research pass
 
 **Module:** 1, 2, 3 and shared. Four parallel research agents, each owning a separate set of files.

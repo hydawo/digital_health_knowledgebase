@@ -822,7 +822,7 @@ rather than excluded, since it otherwise
 clears the relevance bar (device named in title, peer-reviewed journal article, has an abstract, in
 English).** **Added 2026-10-09 from the 2026-09-01 automated scan (branch consolidation).** https://pubmed.ncbi.nlm.nih.gov/42639363/
 
-**Serttaş A, Bulat Demir S, Uyanik Uğur Gizem, Altunkurt O. 2026.** "Bounded control in digital
+**Serttaş A, Bulat Demir S, Uyanik Uğur G, Altunkurt O. 2026.** "Bounded control in digital
 health: Privacy discourse and algorithmic governance in Apple Health." *Digital Health*. Faculty of
 Communication, İstanbul Aydın University. Qualitative study (critical discourse analysis of Apple's
 official "Health App and Privacy" text, plus semi-structured interviews with n=18 Apple Watch/Apple

@@ -52,6 +52,41 @@ little margin for prompt injection arriving through an MCP tool result from an u
 
 ---
 
+## Merging and checking a scan run
+
+**Added 2026-10-09.** Every run so far has pushed to its own `claude/*` branch instead of `main`,
+and nothing merged them for five weeks (see `research-log.md`, 2026-10-09). Until the routine's
+branch setting is changed, each Monday's run needs a session to merge it. That session is also the
+only check the scan's output gets: the routine reads abstracts and PubMed metadata, never full
+texts, and no one reviews its sponsorship tiers or relevance calls before they are committed.
+
+So every merge includes a check. Do this each week, and keep doing it after the branch setting is
+fixed, against the scan's commit on `main`.
+
+1. **Find the run.** `git fetch --prune` then `git branch -r | grep claude/`. One branch per run.
+   If more than one is waiting, take the newest as the base and union the older ones into it by
+   DOI, as on 2026-10-09; never merge two run branches blind, since they edit the same files.
+2. **Run the check.** `python3 shared/verify_scan_additions.py <commit the branch started from> <branch>`.
+   It changes nothing. For each new Module 1 and 2 paper it compares title, first author, year and
+   journal with Crossref, counts how often the device is named in the open full text, and prints the
+   conflict-of-interest and funding passages.
+3. **Act on what it shows.**
+   - A FLAG on title, author or year: correct the library entry and the index record from Crossref.
+   - A device named fewer than three times: open the paper and decide whether it is really about the
+     device. If not, remove it and record why in the run's research-log entry.
+   - Read every printed conflict-of-interest passage against the recorded tier. Tier A is vendor
+     employees, Tier B is vendor funding or affiliation (including advisory boards and joint labs),
+     Tier C is neither. Papers with no open full text keep the scan's Corroborated or Unclear marker
+     unless someone reads the disclosure on the publisher page.
+   - Module 3 queue rows are not checked here. They are checked from full text when profiled.
+4. **Merge and log.** Merge to `main`, then add one line to the run's research-log entry saying it
+   was checked, how many flags there were, and what was changed.
+
+The first check, on 2026-10-10, covered all 17 papers the scan had added so far: no wrong authors,
+years or journals, no wrong tiers, one truncated title.
+
+---
+
 ## Dedup ledgers
 
 | Module | Ledger | Key fields |
@@ -216,5 +251,6 @@ Do not ask for confirmation at any step - this must run fully unattended. Apply 
 
 | Date | Change |
 |---|---|
+| 2026-10-10 | **Merge-and-check step added** (section "Merging and checking a scan run" and `verify_scan_additions.py`). Process only; the routine prompt is unchanged. |
 | 2026-09-02 | **Module 3 added as Part C (triage-only).** Restructured the prompt so logging/commit/push became Part D covering all three modules — the initial draft had Module 3 appended after Part C's push with its own commit and no push, which would have left its work unpushed every week. Also: LifeData added to Part B; the JMIR byline-ordering trap added to Part B step 4; the Module 3 false-positive note corrected from "Europe PMC does not honour phrase quoting" to describe PubMed `[tiab]` behaviour, since that is the API the routine actually calls. |
 | 2026-09-01 | Network egress fixed at the environment level (Custom allowlist) rather than by adding a third-party MCP connector; PubCrawl removed. See `research-log.md`. |
