@@ -134,8 +134,29 @@
 - Kubios integration signals acceptance in the HRV methods community. **Reported.**
 - Movesense sensors appear in human movement analysis and machine-learning work published by the
 - company and by users. **Reported.**
-- **No independent head-to-head validation of Movesense against ECG or PSG references was located in
-- this pass.** **Unclear**, this is the platform's main evidentiary gap, and it is a real one given how strong the hardware specifications are.
+- ~~No independent head-to-head validation of Movesense against ECG or PSG references was located in
+- this pass.~~ **Corrected 2026-10-09.** A PubMed search (`movesense[tiab]`, 18 hits) found independent
+- validation against reference instruments for both the ECG and the IMU. No vendor authors and no
+- vendor cash funding in any of the four studies below, but **Movesense supplied the sensors free of
+- charge for both ECG validations** (in-kind support, disclosed in each paper's funding statement). All
+- are small (N=14 to 21) healthy-adult samples.
+
+| Study | Device | Reference | Key result | Funding / COI | Confidence |
+|---|---|---|---|---|---|
+| Rogers B et al. 2022, *Sensors* 22(5):2032, doi:10.3390/s22052032 | Movesense Medical chest belt, single-lead ECG | 12-lead ECG, N=21, rest and incremental cycling ramp | RR and HRV (meanRR, SDNN, RMSSD) r=0.98 to 1.0; DFA a1 r=0.95 to 0.97; meanRR bias 0.0 to 0.4 ms at rest, 6.0 to 11.2 ms during exercise | "Movesense provided the sensors for the study"; authors declare no commercial or financial relationships | **Verified** (funding and COI read in the PDF; figures as reported in the abstract) |
+| Martín Gómez R et al. 2024, *Sensors* 24(17):5713, doi:10.3390/s24175713 | Movesense HR+ ECG | 3-lead ECG, N=21, running and cycling to exhaustion | R-peak sensitivity 99.7%, precision 99.6%; RR mean difference 0.23 ms at rest, 0.38 ms during exercise; Garmin HRM-Pro far worse on the same protocol | Sensors "provided by Movesense Ltd. ... as part of the Movesense Academic Program"; "Movesense had no role in the design of the study" | **Verified** (funding and COI read in the PDF; figures as reported in the abstract) |
+| Rogers B et al. 2022, *Sensors* 22(19):7156, doi:10.3390/s22197156 | Movesense Medical ECG + Kubios | Gas-exchange respiratory frequency, N=21 | ECG-derived respiratory rate r=0.95, closer to reference than Polar H10 (r=0.85) | No commercial relationships declared | **Corroborated** (abstract) |
+| Martín Gómez R et al. 2025, *J Biomech* 190:112873, doi:10.1016/j.jbiomech.2025.112873 | Movesense IMU, chest, 208 Hz, custom firmware | Force plate, N=14, 33,477 steps | Step time mean difference 0 ± 6 ms (r=0.97); 100% of foot strikes correctly lateralised | No competing interests | **Corroborated** (abstract; not OA) |
+
+- Also relevant: Sabioni M et al. 2025, *Physiol Meas* 46(8), doi:10.1088/1361-6579/adece4, bench test
+- with synthetic ECG: Movesense had the shortest RR-interval latency (0.4 s median) of four Bluetooth
+- chest straps (Polar H10 2.6 s). And Hartikainen S et al. 2019, *Am J Cardiol* 123(10):1643, a
+- Movesense chest-strap ECG read by cardiologists and algorithms for AF detection against Holter
+- (N=220; algorithm sensitivity 95.3 to 96.3%); several co-authors hold shares in Heart2Save, an ECG
+- software company, not Movesense. **Corroborated** (abstracts).
+- **What is still missing:** no free-living, multi-day validation, no clinical-population ECG
+- validation beyond AF screening, and no validation of the MD variant's medical-grade claims by a
+- notified-body-independent group was located. IMU validation covers step timing in running only.
 
 ## Strengths
 
@@ -151,7 +172,7 @@
 
 ## Limitations
 
-- **No independent validation literature located**, a striking gap for a device with these specs.
+- Independent validation literature exists but is thin: four small lab studies (2022 to 2025) cover ECG R-R/HRV and running step timing, see Research Evidence. No free-living or long-duration validation. (Corrected 2026-10-09; the earlier "none located" claim was wrong.)
 - Chest-worn ECG products are session-wear; not a continuous multi-week instrument.
 - No derived metrics, no analytics, no dashboards, no participant management from the vendor.
 - Requires C++ competence for firmware work and mobile development for the app, unless routed
@@ -176,13 +197,14 @@
 - Multi-week continuous free-living monitoring.
 - Sleep-architecture research.
 - Studies without embedded or mobile engineering capacity (unless using Labfront).
-- Studies that need an established validation literature to satisfy reviewers.
+- Studies that need an extensive validation literature to satisfy reviewers (what exists is a handful of small lab studies).
 - BYOD recruitment, negligible consumer install base.
 
 ## Open Questions
 
-- **Is there any independent peer-reviewed validation of Movesense ECG or IMU against reference
-- instruments?** This is the most important gap.
+- ~~Is there any independent peer-reviewed validation of Movesense ECG or IMU against reference
+- instruments?~~ **Answered 2026-10-09: yes, for lab ECG/HRV and running step timing** (see Research
+- Evidence). Remaining gap: free-living and clinical-population validation.
 - Unit and developer-kit pricing.
 - Battery life at various sampling configurations; exact IMU ranges; water-resistance rating.
 - What licence governs the SDK and firmware source specifically? ("No licence cost" is stated;
@@ -204,3 +226,9 @@
 ## Sources
 
 - See `../sources.md` entries S-MVS-01 through S-MVS-04.
+- Rogers B, Schaffarczyk M, Clauß M, Mourot L, Gronwald T. 2022. *Sensors* 22(5):2032. https://doi.org/10.3390/s22052032 (PMC8914935). PDF: `../literature/movesense/2022-rogers-sensors-movesense-medical-ecg-rr-hrv-validation.pdf` (accessed 2026-10-09).
+- Martín Gómez R, Allevard E, Kamstra H, Cotter J, Lamb P. 2024. *Sensors* 24(17):5713. https://doi.org/10.3390/s24175713 (PMC11397956). PDF: `../literature/movesense/2024-martingomez-sensors-movesense-hr-plus-ecg-high-intensity.pdf` (accessed 2026-10-09).
+- Rogers B, Schaffarczyk M, Gronwald T. 2022. *Sensors* 22(19):7156. https://doi.org/10.3390/s22197156 (PMC9573071) (abstract read 2026-10-09).
+- Martín Gómez R et al. 2025. *J Biomech* 190:112873. https://doi.org/10.1016/j.jbiomech.2025.112873 (PMID 40694944; abstract read 2026-10-09; not OA).
+- Sabioni M, Willén J, Dual SA, Jacobsson M. 2025. *Physiol Meas* 46(8). https://doi.org/10.1088/1361-6579/adece4 (PMID 40623430; abstract read 2026-10-09).
+- Hartikainen S et al. 2019. *Am J Cardiol* 123(10):1643-1648. https://doi.org/10.1016/j.amjcard.2019.02.028 (PMID 30878151; abstract read 2026-10-09).

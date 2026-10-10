@@ -11,7 +11,7 @@
 | Open source | No |
 | Hosting/deployment | Empatica Cloud; Care Portal web console; AWS S3 data access keys |
 | Pricing model | **Published, transparent bundle pricing for academic research**, unusual in this module |
-| Last verified | 2026-08-21 |
+| Last verified | 2026-08-21; biomarker counts re-checked 2026-10-09 |
 
 ## Summary
 
@@ -71,6 +71,13 @@
 - Another Empatica page refers to **"over 100 research-grade biomarkers."**
 
 - The most likely reconciliation is that the tiers differ, the Academic & Basic Research plan gives "a standard suite of raw data and digital biomarkers" while the Enterprise plan gives "the complete suite." **Confirm exactly which biomarkers the academic plan includes before purchase**, because the differentiator (EDA-derived measures) may or may not be fully in the standard tier.
+
+- **Re-checked 2026-10-09 (partly resolved).** All three figures above have changed or gone. Read as of today:
+  - The research-studies page (now at https://www.empatica.com/platform/research-studies/, the `/en-eu/` path redirects) no longer states a count. It shows a table of **17 named digital biomarkers** with EmbracePlus and EmbraceMini columns: accelerometer magnitude standard deviation, acticounts, actigraphy counts, activity counts, activity classification, activity intensity, ambient light (EmbraceMini only), body position, EDA skin conductance level, METs/calories, pulse rate, pulse rate variability, respiratory rate, sleep detection, steps, skin temperature, and wearing detection. EmbracePlus covers 16 of them; EmbraceMini covers 12 (no PPG, EDA or temperature measures). **Verified.**
+  - The Academic plan store page carries the same table and now says "a selection of digital biomarkers"; the "over 11" wording is gone. **Verified.**
+  - The "over 100 research-grade biomarkers" line is no longer on the Care page. Empatica's homepage and clinical-trials page now say **"300+ digital measures"**, of which "Six measures carry direct FDA clearance" and the rest are described as research-grade. A November 2023 press release used 128. **Verified** for current wording.
+  - Reading: the large figure is the clinical-trial measure library, and the research-studies table is what the self-serve academic product exposes. That reading is **Corroborated**, not stated by Empatica in so many words. Whether an Academic buyer can get any measure outside the 17-row table needs Empatica to confirm.
+  - The same pages now list a second device, **EmbraceMini** (actigraphy-focused, FDA 510(k) for sleep, circadian rhythm and physical activity monitoring, 14+ days battery in its optimized mode). It was not profiled in the first pass.
 
 - Notable in that list for methodological reasons: **actigraphy counts** and **activity counts** are provided, meaning EmbracePlus output can be made comparable to the enormous ActiGraph-based physical activity literature, a genuinely useful bridge.
 
@@ -140,7 +147,7 @@
 
 - Volume discounts apply automatically at **5+ devices**. Taxes and shipping additional.
 
-- The academic plan includes **"11+ digital biomarkers"** per the store page, note this conflicts with the 18 named on the research-studies page and the "over 100" claimed in platform marketing. Three different public figures. **Unclear** which biomarkers a purchaser actually receives; this is now the most consequential remaining commercial question about Empatica, because it determines whether the academic tier is sufficient for a given protocol.
+- *(Superseded 2026-10-09: the store page no longer uses "11+"; see the re-check under Derived Metrics.)* The academic plan includes **"11+ digital biomarkers"** per the store page, note this conflicts with the 18 named on the research-studies page and the "over 100" claimed in platform marketing. Three different public figures. **Unclear** which biomarkers a purchaser actually receives; this is now the most consequential remaining commercial question about Empatica, because it determines whether the academic tier is sufficient for a given protocol.
 
 - **Enterprise plan** pricing remains quote-only. **Unclear.**
 
@@ -155,7 +162,7 @@
 - Empatica describes its PR and PRV measurements as clinically validated and its digital biomarkers as validated; the FDA clearances lend these claims more weight than the marketing language of consumer vendors.
 - The **E4 predecessor has a very large peer-reviewed footprint**, particularly in EDA/stress, affective computing, epilepsy/seizure detection, and autonomic research. Empatica's origins are in the seizure-detection domain (the Embrace line), which remains its deepest evidence base.
 - **Empatica was not included in either the 2024 *Sensors* or 2025 Schyvens PSG sleep-staging comparisons.** Its sleep-detection validity relative to consumer devices is therefore not established by those benchmarks, though its FDA clearance covering "movement during sleep" biomarkers suggests a regulatory validation package exists.
-- **EDA validation caveat that applies to the whole modality, not just Empatica:** wrist EDA is noisier and less well-standardised than palmar/finger EDA, is highly sensitive to motion artefact and ambient temperature, and produces substantial unusable data in free-living conditions. Studies should budget for aggressive artefact rejection and should not assume free-living wrist EDA behaves like laboratory EDA.
+- **EDA validation caveat that applies to the whole modality, not just Empatica:** wrist EDA is noisier and less well-standardised than palmar/finger EDA, is highly sensitive to motion artefact and ambient temperature, and produces substantial unusable data in free-living conditions. Studies should budget for aggressive artefact rejection and should not assume free-living wrist EDA behaves like laboratory EDA. **Quantified 2026-10-09:** against finger/palmar or laboratory references, E4 wrist EDA agrees poorly. Menghini et al. 2019 (*Psychophysiology* 56(11):e13441, N=40): wrist skin conductance "showed neither correlation nor visual resemblance with finger SC signal". Milstein and Gordon 2020 (*Front Behav Neurosci* 14:148, N=30): "The E4 failed to produce reliable EDA data". Hu et al. 2024 (*Behav Res Methods* 56(7), N=67): ICC 0.09 for skin conductance level and 0.38 for response count vs MindWare, with valid EDA about 41 to 43% of the time. No EmbracePlus validation against a palmar reference was located; Brandebusemeyer et al. 2026 (*Sensors* 26(14):4376) compared it only exploratorily with the E4. **Corroborated** (abstracts; Milstein PDF in `../literature/empatica/`).
 
 ## Strengths
 
@@ -209,7 +216,7 @@
 
 - **What are the exact per-sensor sampling rates for EmbracePlus** (EDA, PPG/BVP, ACC, temperature)? Are they configurable?
 - **Exactly which raw signals and which biomarkers are included in the Academic & Basic Research plan** versus Enterprise? Is EDA-derived biomarker output in the standard tier?
-- Reconcile the "18 biomarkers" / "over 11 biomarkers" / "over 100 research-grade biomarkers" discrepancy.
+- ~~Reconcile the "18 biomarkers" / "over 11 biomarkers" / "over 100 research-grade biomarkers" discrepancy.~~ Partly resolved 2026-10-09: the academic pages now show one 17-row table and the clinical-trial pages say "300+ digital measures". Still to confirm with Empatica: can an Academic plan buyer access any measure outside that table?
 - **What is EmbracePlus battery life, and what is the charging cadence?**
 - Is there a real-time or near-real-time streaming option under any plan? Is the E4's BLE streaming SDK capability available in any form?
 - Is there a REST API for study/participant management, or is the Care Portal the only interface?
@@ -239,4 +246,7 @@
 4. Empatica, "The Empatica Health Monitoring Platform receives FDA clearance." https://www.empatica.com/blog/the-empatica-health-monitoring-platform-receives-fda-clearance (accessed 2026-08-21). Establishes the November 2022 clearance covering EDA, SpO2, skin temperature, and movement-during-sleep digital biomarkers.
 5. Empatica, "Empatica Receives New FDA Clearance for Cardiac Digital Biomarkers." https://www.empatica.com/blog/empatica-receives-new-fda-clearance-for-cardiac-digital-biomarkers/ ; PR Newswire, https://www.prnewswire.com/news-releases/empaticas-platform-receives-new-fda-clearance-for-cardiac-digital-biomarkers-301975974.html (accessed 2026-08-21).
 6. Empatica Care. https://www.empatica.com/care/ (accessed 2026-08-21). Source of the "over 100 research-grade biomarkers" figure, conflicts with (1) and (2).
+8. Empatica, Health Monitoring Platform for Research Studies (current URL). https://www.empatica.com/platform/research-studies/ (accessed 2026-10-09). **Primary.** Supersedes the count in (1): no number stated, a 17-row digital-biomarker table split by EmbracePlus and EmbraceMini, EmbraceMini specification, sensor modes, Academic bundle prices unchanged from (2), 1 study, 1 site and 1,000 participants per Academic account, no SDK for academic research.
+9. Empatica store, Academic plan, re-read. https://www.empatica.com/store/platform-professional/ (accessed 2026-10-09). **Primary.** "A selection of digital biomarkers" with the same table; the "over 11" figure in (2) no longer appears.
+10. Empatica homepage and clinical-trials page. https://www.empatica.com/ , https://www.empatica.com/platform/clinical-trials/ (accessed 2026-10-09). **Primary, vendor marketing.** "300+ digital measures", six with direct FDA clearance, the rest described as research-grade. Replaces the "over 100" figure attributed to (6), which the Care page no longer shows.
 7. Wikipedia, Empatica. https://en.wikipedia.org/wiki/Empatica (accessed 2026-08-21). Background on the E4 lineage and seizure-detection origins; **secondary, low weight**.

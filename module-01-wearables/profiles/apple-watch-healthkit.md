@@ -11,7 +11,7 @@
 | Open source | No (ResearchKit and CareKit are open source; HealthKit, SensorKit, watchOS are not) |
 | Hosting/deployment | On-device HealthKit store on iPhone; **no Apple-operated cloud API for researchers**. Any cloud pipeline must be built by the research team inside their own iOS app. |
 | Pricing model | Device purchase only; no subscription required for core health metrics; no API fee |
-| Last verified | 2026-08-21 |
+| Last verified | 2026-08-21; ECG voltage access re-verified 2026-10-09 |
 
 ## Summary
 
@@ -44,7 +44,7 @@
 | Sensor | Present | Researcher access to underlying signal | Resolution or sampling | Notes |
 |---|---|---|---|---|
 | PPG | Yes | No raw PPG. Derived heart-rate samples and heartbeat series only. | Derived | Varies by Watch model and generation; check the SKU. |
-| ECG | Series 4 and later, Ultra, region-gated | `HKElectrocardiogram` samples. Per-sample voltage access is disputed, see Conflicting Evidence in the notes. | Single lead |  |
+| ECG | Series 4 and later, Ultra, region-gated | Yes for recorded ECGs. `HKElectrocardiogramQuery` returns each voltage measurement of a stored `HKElectrocardiogram` sample (Apple Developer docs, verified 2026-10-09). No continuous ECG exists to read. | Single lead (Lead I-like), sampling frequency stored per sample | On-demand 30-second recordings only. The ResearchKit and CareKit FAQ line saying raw ECG is not accessible conflicts with Apple's own API documentation, which is the authoritative source. |
 | Accelerometer | Yes | Not via HealthKit. In-app on watchOS via Core Motion while the app runs. | Core Motion rates | `CMMotionManager`, historically `CMSensorRecorder`. |
 | Gyroscope | Yes | Same as accelerometer, Core Motion in-app only. | Core Motion rates |  |
 | Magnetometer | Unclear | Unclear | Unclear |  |
@@ -65,7 +65,7 @@
 | Sensor | Present on Apple Watch (recent models) | Researcher access to underlying signal |
 |---|---|---|
 | PPG (optical heart) | Yes | **No raw PPG.** Only derived HR samples and heartbeat series. |
-| ECG (single-lead) | Series 4+ / Ultra (region-gated) | `HKElectrocardiogram` samples. Access to per-sample **voltage** is disputed, see Conflicting Evidence below. |
+| ECG (single-lead) | Series 4+ / Ultra (region-gated) | `HKElectrocardiogram` samples. Access to per-sample **voltage** was recorded as disputed in the first pass; resolved 2026-10-09 in favour of access for recorded ECGs, see Open Questions. |
 | Accelerometer | Yes | Not via HealthKit. Available in-app on watchOS via Core Motion (`CMMotionManager`, and historical `CMSensorRecorder`) while the app runs. |
 | Gyroscope | Yes | Same as accelerometer, Core Motion, in-app only. |
 | Temperature (wrist) | Series 8+ / Ultra | Derived sleeping-wrist-temperature deviation; not a raw stream. |
@@ -163,7 +163,9 @@
 - **Energy expenditure:** poor. The same review reported that **no brand** met acceptable accuracy limits for energy expenditure, with mean absolute percentage error above 30%. Energy expenditure from any consumer wearable should be treated as unsuitable for a primary endpoint.
 - **Sleep staging:** mixed and study-dependent.
   - Chinoy-style single-night lab comparisons place Apple Watch competitively: in a 2024 Brigham and Women's Hospital study (n=35, funded by Oura but independently conducted and published in *Sensors*), four-stage sensitivity was 50.5 to 86.1% and precision 72.7 to 87.8% for Apple, versus 76.0 to 79.5% / 77.0 to 79.5% for Oura and 61.7 to 78.0% / 72.8 to 73.2% for Fitbit, i.e. Apple had the widest spread, strong on some stages and weak on others, while Oura was the most uniformly accurate. **Note the funding source when citing this.**
-  - An independent 2025 six-device validation (Schyvens et al., *SLEEP Advances*, n=62) reported markedly lower agreement for most devices, with WHOOP 4.0 the strongest at ~69.6% and Apple Watch Series 8 at ~50.7%. Most devices differed significantly from PSG on total sleep time, sleep efficiency, WASO, and light sleep.
+  - An independent 2025 six-device validation (Schyvens et al., *SLEEP Advances*, n=62) reported markedly lower agreement for most devices, with Apple Watch Series 8 first on overall four-stage agreement (κ 0.53) and WHOOP 4.0 fourth (κ 0.37). The often-quoted ~69.6% (WHOOP) and ~50.7% (Apple) are deep-sleep classification accuracies, not overall agreement (corrected 2026-10-09; see `validation-evidence.md`). Most devices differed significantly from PSG on total sleep time, sleep efficiency, WASO, and light sleep.
+- **Hypertension notifications (added 2026-10-09):** validation exists only as vendor documents, Apple's September 2025 white paper and FDA 510(k) summary K250507 (cleared 2025-09-11). Pivotal study: 2,229 enrolled, 1,863 analysed, 30 days vs an FDA-cleared home cuff; sensitivity 41.2% (95% CI 37.2 to 45.3), specificity 92.3% (90.6 to 93.7), stage 2 sensitivity 53.7%; lower sensitivity under age 60 and at BMI ≤30; Fitzpatrick V-VI subgroup not significantly different. No peer-reviewed publication of the pivotal study located (PubMed, Europe PMC, 2026-10-09). Independent critique: Cohen et al. 2026, *Hypertension* 83(2):e26031 (two authors hold Apple stock), and a population-impact model, Cohen et al. 2026, *JAMA* 335(11):1001. **Verified** (FDA and Apple documents read).
+- **SpO2 (added 2026-10-09):** Walzel et al. 2023 (*Sensors* 23(22):9164, independent): Apple Watch 8 had the lowest bias of three smartwatches vs Masimo Radical-7 under induced hypoxemia. Jiang et al. 2026 (*JMIR Form Res* 10:e85253): Apple Watch Series 7 Arms 5.82% below 88% SaO2 vs arterial blood gas, with overestimation. **Corroborated.**
   - These two results are not reconcilable as a simple ranking; they differ in device generation, sample, and scoring approach. Treat consumer sleep *staging* as exploratory and consumer sleep *timing/duration* as more defensible.
 - A living systematic review and meta-analysis of Apple Watch accuracy has been published in *npj Digital Medicine* (2025) and is the best single entry point to this literature; it was paywall-gated during this session and its numbers have not been extracted here.
 
@@ -207,7 +209,7 @@
 
 ## Open Questions
 
-- Whether `HKElectrocardiogram` voltage measurements are retrievable by third-party apps. **Conflicting evidence:** the ResearchKit/CareKit consortium FAQ states raw ECG data cannot be accessed through HealthKit, while iOS 14 release coverage described a new ECG API exposing voltage measurements via `HKElectrocardiogramQuery`. Resolve against current Apple documentation before designing an ECG study.
+- ~~Whether `HKElectrocardiogram` voltage measurements are retrievable by third-party apps.~~ **Resolved 2026-10-09 (Verified).** Apple's developer documentation, read through its JSON endpoint, states that `HKElectrocardiogramQuery` is "a query that returns the underlying voltage measurements for an electrocardiogram sample", calling a handler once per measurement, and that `HKElectrocardiogram` is "a collection of voltage values" with `samplingFrequency` and `numberOfVoltageMeasurements` properties. `HKElectrocardiogram` is available from iOS 14 and watchOS 7. HealthKit gives read-only access to ECGs saved by Apple Watch, with user authorization for the electrocardiogram type. The ResearchKit and CareKit FAQ still says "You cannot access raw ECG data through HealthKit" (re-read 2026-10-09, undated page). The two sources still disagree in wording; Apple's API reference is treated as current, and the FAQ line is best read as meaning there is no continuous or background ECG stream, which is true. A study can retrieve the waveform of each on-demand 30-second recording a participant takes, not a continuous trace.
 - Current SpO2 availability on US-sold Apple Watches following the ongoing patent dispute and Apple's software workarounds. Feature status has changed more than once; verify by model and region at study start.
 - Whether SensorKit entitlement approval rates, timelines, and the current data-category list have changed since the sources consulted here.
 - Exact background sampling cadence for heart rate and HRV, Apple does not publish it, and it materially affects missing-data modelling.
@@ -235,3 +237,4 @@
 7. Schyvens A.-M. et al., "A performance validation of six commercial wrist-worn wearable sleep-tracking devices for sleep stage scoring compared to polysomnography." *SLEEP Advances* 2025;6(2):zpaf021. https://academic.oup.com/sleepadvances/article/6/2/zpaf021/8090472, independent; n=62.
 8. "The accuracy of Apple Watch measurements: a living systematic review and meta-analysis." *npj Digital Medicine* 2025. https://www.nature.com/articles/s41746-025-02238-1, identified but not extracted (access-gated at time of research).
 9. Apple Health data export format (community/secondary). https://discussions.apple.com/thread/255037259 (accessed 2026-08-21).
+10. Apple Developer Documentation, `HKElectrocardiogram` and `HKElectrocardiogramQuery`. https://developer.apple.com/documentation/healthkit/hkelectrocardiogram , https://developer.apple.com/documentation/healthkit/hkelectrocardiogramquery (read via the `developer.apple.com/tutorials/data/documentation/healthkit/*.json` endpoint, accessed 2026-10-09). **Primary.** Establishes per-measurement voltage access for stored ECG samples, the `samplingFrequency` and `numberOfVoltageMeasurements` properties, read-only access to Apple Watch ECGs, and availability from iOS 14 / watchOS 7. Supersedes (3) and conflicts in wording with (2).

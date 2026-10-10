@@ -19,7 +19,7 @@ Multiple tables are used deliberately. Do not read any single table as a ranking
 |---|---|---|---|---|
 | **Beiwe** | Onnela Lab, Harvard T.H. Chan SPH | Academic open source + optional managed service (BSC) | Active | BSD-3-Clause |
 | **RADAR-base** | King's College London + The Hyve | Academic/consortium open source | Active | Apache 2.0 |
-| **mindLAMP** | BIDMC Division of Digital Psychiatry | Academic open source | Active. **Verified 2026-08-24: `LAMP-portal`/`LAMP-app` formally archived 2020-11-17; current successors are `LAMP-dashboard`/`LAMP-core-android`/`LAMP-core-ios`** | Not confirmed this session |
+| **mindLAMP** | BIDMC Division of Digital Psychiatry | Academic, public source. Licences mixed (checked 2026-10-09): dashboard AGPL-3.0, server and apps carry no licence | Active. **Verified 2026-08-24: `LAMP-portal`/`LAMP-app` formally archived 2020-11-17; current successors are `LAMP-dashboard`/`LAMP-core-android`/`LAMP-core-ios`** | Not confirmed this session |
 | **AWARE Framework** | International academic collaboration (orig. Univ. of Oulu) | Academic open source | Active (2026 commits) | Not confirmed this session |
 | **Avicenna Research (Ethica)** | Avicenna Research (rebrand of Ethica Data) | Commercial SaaS | Active, renamed from Ethica | Closed source |
 | **MetricWire** | MetricWire Inc. (Waterloo, Canada) | Commercial SaaS | Active, founded 2013 | Closed source |
@@ -38,7 +38,7 @@ Multiple tables are used deliberately. Do not read any single table as a ranking
 | Beiwe | Yes, native app | Yes, native app | **Not independently verified this session** |
 | RADAR-base | Yes, but **Corroborated (2026-08-25 second pass): platform's own documentation states "substantial differences" exist and iOS availability is "more sparse... due to lack of background collection capabilities"** | Primary platform; 17-item itemized passive-sensor catalog Verified 2026-08-25 | **No — platform self-documents a gap, though the exact iOS-side item list was not itemized this pass** (see `profiles/radar-base.md`) |
 | mindLAMP | Yes | Yes | **Not independently verified this session** |
-| AWARE Framework | Port exists, but **Verified (2026-08-24 second pass) at only ~14 of ~33 documented sensor modules — Locations/GPS, Applications, Communication, Installations, Keyboard, Screenshot, Screentext, and Telephony are Android-only** | Primary platform, full ~33-module catalog | **No — quantified and Verified, not just self-described** (see `profiles/aware-framework.md`) |
+| AWARE Framework | Port exists. The website catalogue lists ~14 of ~33 modules on iOS, but the iOS repository also has Location, Proximity and Calls (event-only, via CXCallObserver), **corrected 2026-10-09**. Applications, Installations, Keyboard, SMS, Screenshot and Screentext are Android-only | Primary platform, full ~33-module catalog | **No — quantified and Verified, not just self-described** (see `profiles/aware-framework.md`) |
 | Avicenna Research (Ethica) | Yes | Yes | **Not independently verified this session** |
 | MetricWire | Yes | Yes | **Not independently verified this session** |
 | m-Path | Yes (mobile app) | Yes (mobile app) | **Not independently verified this session** |
@@ -48,8 +48,9 @@ Multiple tables are used deliberately. Do not read any single table as a ranking
 
 **Two platforms in this table now have a self-documented iOS/Android gap, both Verified/Corroborated
 via direct fetch rather than just self-described: AWARE (2026-08-24 second pass) and RADAR-base
-(2026-08-25 second pass).** AWARE's gap is the more precisely quantified of the two — **location data
-is Android-only**, ruling AWARE out for any iOS-inclusive study needing GPS. RADAR-base's own
+(2026-08-25 second pass).** AWARE's gap is the more precisely quantified of the two. **Corrected 2026-10-09:** location is
+not Android-only after all (the iOS repository has it, contradicting the website catalogue), so
+AWARE is not ruled out for iOS-inclusive GPS studies; app usage, SMS and keyboard remain Android-only. RADAR-base's own
 documentation names the same underlying cause (iOS background-execution limits) but without an
 itemized per-sensor iOS list, so it is Corroborated rather than fully Verified at the per-stream
 level. Every other "not independently verified" cell reflects a genuine research-session limitation,

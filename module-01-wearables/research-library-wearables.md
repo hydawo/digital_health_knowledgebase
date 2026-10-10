@@ -6,7 +6,9 @@ which does deep full-text extraction on the sleep-staging accuracy literature sp
 file is broader (any topic) but shallower per entry — authors, affiliations, funding/COI, key
 finding, and a link.
 
-**Last verified: 2026-08-24.** Supersedes the earlier two-device draft of this file.
+**Last verified: 2026-08-24.** Supersedes the earlier two-device draft of this file. Open-questions pass
+2026-10-09: new PSG entries for Oura and WHOOP, CQU funding checks, Apple hypertension, SpO2/temperature
+re-search; each change is dated in place.
 
 **PDFs for every legitimately open-access paper individually cited in this bibliography are now
 stored under `literature/<device-slug>/`.** See `literature-library.md` for the full index —
@@ -240,6 +242,43 @@ received evacuation alerts, associated with measurable changes in sleep heart ra
 fragmentation, and breath rate. **Added 2026-10-09 from the 2026-09-01 automated scan (branch consolidation).**
 https://pubmed.ncbi.nlm.nih.gov/42434202/
 
+**Added 2026-10-09 (open-questions pass): four PSG studies that include Oura, none Oura-funded.**
+
+**Miller DJ, Sargent C, Roach GD. 2022.** "A Validation of Six Wearable Devices for Estimating Sleep,
+Heart Rate and Heart Rate Variability in Healthy Adults." *Sensors* 22(16):6317, PMID 36016077,
+doi:10.3390/s22166317. CQUniversity. N=53, one lab night, Oura Ring Gen2 alongside WHOOP 3.0, Apple
+Watch S6, Garmin FR245, Polar Vantage V and Somfit. Oura four-stage κ 0.43 (WHOOP 0.44), two-state κ
+0.51 (best of six). Funded by the Australian Institute of Sport; the authors' lab receives WHOOP
+funding and equipment. **Tier C for Oura (no Oura relationship), but run by a WHOOP-supported lab.
+Verified** (full text read). Full table in `validation-evidence.md` §3c.
+PDF: `literature/whoop/2022-miller-sensors-six-wearables-sleep-hr-hrv-validation.pdf`
+
+**Grandner MA, Bromberg Z, Hadley A, Morrell Z, Graf A, Hutchison S, Freckleton D. 2023.**
+"Performance of a multisensor smart ring to evaluate sleep: in-lab and home-based evaluation of
+generalized and personalized algorithms." *Sleep* 46(1):zsac152, PMID 35767600. University of Arizona
+and Happy Health, Inc. Oura V2 and WHOOP 3.0 as comparators to the Happy Ring against one PSG night:
+sleep/wake accuracy Oura 0.88, WHOOP 0.86. "ZB, AH, ZM, AG, and DF are employees of Happy Health,
+Inc."; Grandner reports Fitbit consulting among others. **Tier C for Oura, but authored by a competing
+ring maker. Verified** (full text read via PMC). PDF not obtained (PMC/OUP bot checks).
+https://pmc.ncbi.nlm.nih.gov/articles/PMC13396806/
+
+**Lee T, Cho Y, Cha KS, et al. (incl. Kushida CA, Yoon IY, Kim JW). 2023.** "Accuracy of 11 Wearable,
+Nearable, and Airable Consumer Sleep Trackers: Prospective Multicenter Validation Study." *JMIR mHealth
+uHealth* 11:e50983, PMID 37917155. Asleep Co. with Seoul National University Bundang Hospital and
+Stanford. N=75, Oura Ring 3 four-stage κ 0.35 (macro F1 0.52), below Galaxy Watch 5 (0.42), Fitbit
+Sense 2 (0.42) and Pixel Watch (0.40), above Apple Watch 8 (0.30). COI: "Authors affiliated with Asleep
+and CAK hold stocks or stock options in Asleep" (Asleep makes the SleepRoutine app, the best performer).
+**Tier C for Oura, competitor-authored. Verified** (tables read via Europe PMC). PDF not obtained (JMIR
+bot check). https://pmc.ncbi.nlm.nih.gov/articles/PMC10654909/
+
+**Searles ME, Licata A, Cucinotta M, Kainec K, Spencer RMC. 2026.** "Performance evaluation of
+consumer sleep-tracking wearables and nearables in healthy young and older adults." *SLEEP Advances*
+7(1):zpag006, PMID 41768372. University of Massachusetts Amherst. Oura Gen3 (app 2.8.41), Fitbit Sense
+2, Withings Sleep Mat, SleepScore Max vs PSG in 13 young and 19 older adults. In older adults Oura
+underestimated TST by 75.5 min (p<0.0001) and overestimated deep sleep by 71.5 min. NIH NIA P30
+AG073107; "Financial disclosure: None." Skin tone explicitly "not measured". **Tier C. Verified** (full
+text read). PDF not obtained (OUP bot check). https://pmc.ncbi.nlm.nih.gov/articles/PMC12936866/
+
 ## Oura — systematic reviews (as discovery mechanism, and classified in their own right)
 
 **Khan et al. 2025, *OTO Open*.** "The Oura Ring Versus Medical-Grade Sleep Studies: A Systematic
@@ -267,7 +306,11 @@ bipolar episode detection 3–7 days early (79% sensitivity).
 Fetched directly: **ouraring.com/science-and-research** and **ouraring.com/blog/oura-in-research/**.
 The science-and-research page currently states **"130+ peer-reviewed publications"** (not the
 "170+" figure seen in earlier casual searches — worth re-checking which page or date carried that
-number, as it may be stale or page-specific). The blog page lists roughly 100 studies by year
+number, as it may be stale or page-specific). **Rechecked 2026-10-09:** the live page says "130+
+peer-reviewed publications" and "Powering research published in over 130 peer-reviewed publications".
+Wayback snapshots show "over 130" from November 2025 through September 2026 and no count at all in the
+July 2024, December 2024 and June 2025 snapshots. "170+" does not appear on this page in any snapshot
+checked; its source remains unidentified. **Verified** (live page), **Corroborated** (history). The blog page lists roughly 100 studies by year
 (2016–2025) with no running total stated on that page itself.
 
 **Composition, on a title-level skim (not individually tier-verified):** the large majority are
@@ -282,7 +325,11 @@ without per-paper sorting.
 ## Oura — confirmed evidence gaps
 
 - **No independent peer-reviewed SpO2 validation study found for Oura** — only Oura's own blog
-  claims of accuracy improvement Gen3→Gen4.
+  claims of accuracy improvement Gen3→Gen4. **Rechecked 2026-10-09** via PubMed and Europe PMC full
+  text (reference-oximeter terms): still none. Same for skin temperature against a reference
+  thermometer. Search strings in `validation-evidence.md` §6c.
+- **No independent validation of Ring 4 or Ring 5 sleep staging.** Gen4's only independent data is
+  nocturnal resting HR/HRV (Dial et al. 2025, no difference from Gen3). Rechecked 2026-10-09.
 - **Readiness/recovery score**: no independent validation found. The one external attempt located
   (a regression-based reverse-engineering of the score) explicitly notes the difficulty caused by
   the algorithm not being published — itself a notable finding, not just an absence of evidence.
@@ -326,6 +373,11 @@ read directly and **confirms that summary was correct**: Gonzalez and O'Day (Sta
 Performance Alliance) are lead/corresponding authors, with Johnson (Stanford) plus Kim, Jasinski, and
 Holmes (WHOOP Inc.) as co-authors. **Restored to Tier A** — mixed Stanford/WHOOP authorship with
 substantive WHOOP co-authorship, not pure independent. PDF: `../literature/whoop/2026-gonzalez-oday-npjdigitalmedicine-menstrual-cycle-lens-wearable.pdf`.
+**Final published version checked 2026-10-09:** *npj Digital Medicine* 9:633, published 2026-05-25,
+PMID 42185632, PMC13482339 (Crossref and nature.com). Same eight authors as the preprint. Competing
+interests: "Authors J.K., S.J., and K.H. hold shares in WHOOP, Inc. and were employees at the time of
+data analysis and writing." Funding: Wu Tsai Human Performance Alliance at Stanford and the Joe and
+Clara Tsai Foundation. Data held by WHOOP. **Tier A, Verified** against the published version.
 
 **Grosicki GJ, Robinson A, Joyner M, Carter S, von Hippel W, Presby D, Fielding F, Bigalke J, Kim J,
 Chapman C, Holmes KE. 2026.** "Real-world effects of alcohol on heart rate, sleep, and physical
@@ -376,16 +428,33 @@ https://jcsm.aasm.org/doi/10.5664/jcsm.8356
 Typical Day-to-Day Variability of WHOOP-Derived Heart Rate Variability in Olympic Water Polo
 Athletes." *Sensors* 22(18):6723. University of South Australia (ARENA), CQU Appleton Institute,
 Australian Catholic University, Water Polo Australia. Same author cluster as the WHOOP-sponsored
-Miller CQU position established above. **Corroborated, funding statement itself Unclear** —
-flagged as likely Tier B given the overlapping author cluster, but the paper's own funding section
-wasn't directly read. 11 elite male water polo players, 16 weeks pre-Tokyo Olympics, WHOOP 3.0.
+Miller CQU position established above. ~~Corroborated, funding statement itself Unclear~~ **Tier B,
+Verified 2026-10-09** from the stored PDF: "This study was supported by the Australian Institute of
+Sport" (funding acquisition by the Water Polo Australia author), and COI: Roach, Sargent and Miller
+"are members of a research group at Central Queensland University (i.e., The Sleep Lab @ Appleton
+Institute...) that receives support for research (i.e., funding, equipment) from WHOOP Inc. However,
+WHOOP was not involved in the design, conduct or reporting of this study." 11 elite male water polo
+players, 16 weeks pre-Tokyo Olympics, WHOOP 3.0.
 
 **Miller DJ, Lastella M, Scanlan AT, Bellenger CR, Halson SL, Roach GD, Sargent C. 2020.** "A
 validation study of the WHOOP strap against polysomnography to assess sleep." *Journal of Sports
 Sciences* 38(22):2631–2636, PMID 32713257. All-CQU/Australian author list, no WHOOP employees
 visible. **Unclear** — funding/COI text not retrievable (Tandfonline 403). Given the same author
 cluster's demonstrated WHOOP-sponsorship pattern elsewhere, flag as likely Tier B pending direct
-confirmation; do not assume independence.
+confirmation; do not assume independence. **Rechecked 2026-10-09:** Tandfonline still blocks with a
+bot check, and the CQU repository record (figshare 13411934) is metadata only. Crossref's
+publisher-deposited funder metadata lists the Australian Research Council (DP160104909) and the
+Australian Institute of Sport, no WHOOP. The abstract states that WHOOP "sleeps were scored by the
+company based on proprietary algorithms". The COI statement is still unread. **Funding Corroborated
+(non-WHOOP); COI Unclear; tier stays likely B.**
+
+**Miller DJ, Sargent C, Roach GD. 2022.** "A Validation of Six Wearable Devices for Estimating Sleep,
+Heart Rate and Heart Rate Variability in Healthy Adults." *Sensors* 22(16):6317, PMID 36016077. Added
+2026-10-09. Funded by the Australian Institute of Sport; COI discloses that the authors' CQU Sleep Lab
+receives WHOOP funding and equipment; WHOOP staff (blinded to PSG) supplied WHOOP sleep epochs and R-R
+data. WHOOP 3.0 four-stage κ 0.44, tied with Oura Gen2 (0.43); HR and RMSSD ICC 0.99 against ECG.
+**Tier B, Verified** (full text read). The first located PSG study with WHOOP and Oura in one protocol.
+Full table in `validation-evidence.md` §3c.
 
 ## Tier C — Fully independent
 
@@ -435,6 +504,11 @@ hand — the secondary-source COI claim still cannot be directly confirmed from 
 itself. See `../literature/whoop/2024-khodr-medrxiv-whoop-systematic-review.pdf`. This review's
 reference list remains a good discovery mechanism for additional WHOOP papers.
 
+**Grandner MA, et al. 2023.** *Sleep* 46(1):zsac152. Added 2026-10-09. Happy Ring development study
+with WHOOP 3.0 and Oura V2 as comparators against PSG; WHOOP sleep/wake accuracy 0.86, specificity
+0.54. Five of seven authors employed by Happy Health. **Tier C for WHOOP, competitor-authored.
+Verified.** See Oura Tier C entry.
+
 **Harms NR. 2018.** University of Nebraska-Lincoln dissertation (ProQuest/ERIC ED595664), "The
 Impact of Whoop Technology on Sleep, Recovery, and Performance in NAIA Baseball Players." **Not
 peer-reviewed** (thesis), 10 participants, no significant results. Low evidentiary weight — grey
@@ -466,6 +540,10 @@ literature, not a journal article; included here only for completeness.
   description of sampling methodology (30-sec samples roughly every 20 min during sleep, with
   signal-quality gating).
 - **No independent peer-reviewed skin/body-temperature validation study found** — same gap as SpO2.
+  **Both rechecked 2026-10-09** (PubMed and Europe PMC full text, search strings in
+  `validation-evidence.md` §6c): still none.
+- **No WHOOP 5.0/MG validation of any kind found** (PubMed and Europe PMC including preprints,
+  2026-10-09). Every independent result located is on WHOOP 2.0 to 4.0.
 - **No WHOOP-specific peer-reviewed military/tactical-athlete study found**, despite WHOOP's
   commercial military/first-responder marketing and conference presence (e.g. a NATO tactical-
   athlete conference). A genuine gap between WHOOP's marketing footprint and its published evidence.
@@ -522,7 +600,23 @@ independently verified; the PDF was not machine-readable via fetch in this pass,
 are drawn from secondary summaries, not the primary text directly.
 https://www.apple.com/healthcare/docs/site/Using_Apple_Watch_to_Estimate_Cardio_Fitness_with_VO2_max.pdf
 
+**Apple Inc. 2025.** "Hypertension Notification Feature on Apple Watch" (white paper, September 2025)
+and FDA 510(k) summary K250507 (cleared 2025-09-11). Added 2026-10-09. Pivotal study: 2,229 enrolled,
+1,863 analysed, 30 days against a home cuff; sensitivity 41.2% (95% CI 37.2 to 45.3), specificity
+92.3% (90.6 to 93.7); Fitzpatrick I-IV vs V-VI subgroup reported. Not a peer-reviewed paper; no journal
+publication of the pivotal study located in PubMed or Europe PMC as of 2026-10-09. **Tier A, Verified**
+(both documents read). https://www.apple.com/health/pdf/Hypertension_Notifications_Validation_Paper_September_2025.pdf ·
+https://www.accessdata.fda.gov/cdrh_docs/pdf25/K250507.pdf · PDF:
+`literature/apple-watch/2025-apple-whitepaper-hypertension-notifications.pdf`
+
 ## Tier B — Apple-funded/affiliated but independent authors, or run via a named Apple-partner institution
+
+**Cohen JB, Brady TM, Juraschek SP, Picone DS, Yang E, Schutte AE. 2026.** "Apple Watch for
+Hypertension Screening." *Hypertension* 83(2):e26031, PMID 41564145. Added 2026-10-09. A critique of
+the hypertension feature's validation (low sensitivity, predicate device was an ECG-based cardiomyopathy
+notifier, no ISO/IEEE cuffless protocol). Classified Tier B by this file's rule only because two
+authors disclose Apple stock (Juraschek <$10k, Yang >$10k); the paper is critical of Apple, another
+example of cross-cutting finding 1. **Verified** (COI and text read via PMC12826266).
 
 **Apple Hearing Study** — University of Michigan partnership (with WHO). Collects headphone/
 environmental sound exposure via iPhone + Apple Watch Noise app; examines cardiovascular/stress
@@ -534,6 +628,19 @@ launched via the Research app Feb 2025. **Corroborated** (secondary sources only
 paper yet identified. https://www.apple.com/newsroom/2025/02/new-holistic-apple-health-study-launches-today-in-the-research-app/
 
 ## Tier C — Fully independent
+
+**Added 2026-10-09:** Walzel S, Mikus R, Rafl-Huttova V, Rozanek M, Bachman TE, Rafl J. 2023.
+"Evaluation of Leading Smartwatches for the Detection of Hypoxemia: Comparison to Reference Oximeter."
+*Sensors* 23(22):9164, PMID 38005550. Czech Technical University grants; no conflicts. Apple Watch 8,
+Galaxy Watch 5 and Withings ScanWatch vs Masimo Radical-7 during induced hypoxemia (N=18); all met the
+≤4% Arms limit, Apple Watch 8 lowest bias. **Verified** (funding/COI read in the PDF). PDF:
+`literature/apple-watch/2023-walzel-sensors-smartwatches-hypoxemia-reference-oximeter.pdf`. Jiang Y et
+al. 2026, *JMIR Form Res* 10:e85253, PMID 41894520 (Duke): Apple Watch Series 7 vs arterial blood gas
+under controlled hypoxia, Arms 5.82% below 88% SaO2, overestimation; senior author consults for Samsung
+and sits on a Google advisory board (competitors, not Apple). **Corroborated** (abstract). Cohen JB,
+Addo DK, et al. 2026, *JAMA* 335(11):1001, PMID 41661624: population model of the hypertension
+notification feature in undiagnosed US adults; NIH/NHMRC funding, no Apple disclosures. **Corroborated**
+(abstract and COI).
 
 **Schyvens A, et al. 2025**, *SLEEP Advances* — already in this KB (Antwerp/VLAIO). Apple Watch
 Series 8 had the best overall kappa (0.53) of six devices, but ~15/35 device failures (highest
@@ -805,7 +912,8 @@ three landmark studies narratively rather than listing citations; a separate ML-
    study by extension of the same author cluster) turn out to have funding or personnel ties back to
    WHOOP once traced.
 5. **SpO2 and skin/body-temperature validation are near-total gaps for Oura and WHOOP alike** — no
-   independent peer-reviewed study was found for either metric on either device. Apple Watch has
+   independent peer-reviewed study was found for either metric on either device (confirmed by a
+   PubMed and Europe PMC full-text re-search on 2026-10-09, so this is a true gap, not an access gap). Apple Watch has
    independent SpO2 validation (Littell et al., pediatric population) but it is thin outside that
    one study. This is a genuine, cross-vendor evidence gap worth flagging prominently.
 6. ~~A genuine Oura-vs-WHOOP head-to-head now exists (Dial et al. 2025) and should be fully
@@ -817,24 +925,26 @@ three landmark studies narratively rather than listing citations; a separate ML-
 # Open items for a follow-up pass
 
 1. ~~Read Dial et al. 2025 in full~~ — **done 2026-08-25.**
-2. **Verify the actual author list of the 2026 npj "menstrual cycle through the lens of a wearable
-   device" paper** before citing its tier — the earlier assumption of Tier A is now downgraded to
-   Unclear pending a direct read.
-3. **Confirm funding for the Miller et al. 2020 J Sports Sciences WHOOP validation paper** and the
+2. ~~Verify the actual author list of the 2026 npj "menstrual cycle through the lens of a wearable
+   device" paper before citing its tier~~ **Done** (bioRxiv read 2026-08-24; published version 9:633
+   confirmed 2026-10-09). Tier A, Verified.
+3. **Partly done 2026-10-09:** Bellenger 2022 Verified Tier B; Miller 2020 funders Corroborated as
+   ARC/AIS, COI still unread. Original item: **Confirm funding for the Miller et al. 2020 J Sports Sciences WHOOP validation paper** and the
    Bellenger et al. 2022 water polo HRV paper — both likely Tier B given the CQU author cluster's
    established WHOOP-sponsorship pattern, but neither disclosure was directly read.
 4. **Individually verify the ~6 reproductive-health/arrhythmia papers on Oura's own research list**
    flagged above (labor onset, pregnancy biometrics, LH-surge ultradian rhythms, AF-via-PPG) — a
    likely dense Tier A/B cluster that hasn't been author-checked one by one.
-5. **Confirm which Oura page states "170+" vs "130+" studies** — may reflect a page-version or date
-   discrepancy.
+5. ~~Confirm which Oura page states "170+" vs "130+" studies (may reflect a page-version or date
+   discrepancy)~~ **Done 2026-10-09: the page says 130+; no 170+ found in any snapshot checked.**
 6. **Systematic reviews still needing direct funding/COI extraction**: Khan et al. 2025 (Oura, OTO
    Open), Shahid et al. 2025 (Apple Watch AF, JACC Advances), Choe & Kang 2025 (Apple Watch,
    Physiological Measurement), the Nova Southeastern AF wearables review, and the Khodr et al.
    WHOOP medRxiv preprint — all blocked by paywalls/CAPTCHAs this pass, all worth reading in full
    both for their own tier and as reference-list discovery mechanisms for papers not yet in this
    library.
-7. **No SpO2 or temperature validation found for Oura or WHOOP** — confirm this is a true evidence
+7. ~~No SpO2 or temperature validation found for Oura or WHOOP~~ **Done 2026-10-09: confirmed as a
+   true gap by PubMed and Europe PMC full-text searches.** Original item: confirm this is a true evidence
    gap rather than a search-access limitation, ideally by attempting direct database searches (e.g.
    PubMed advanced search) rather than general web search.
 8. **Apple's own VO2max white paper** — attempt a direct, readable fetch of the PDF rather than

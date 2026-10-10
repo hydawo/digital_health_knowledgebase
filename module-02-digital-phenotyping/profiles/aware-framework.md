@@ -30,13 +30,13 @@
 
 | Stream | Android | iOS | Raw or derived | Sampling configurable | Notes |
 |---|---|---|---|---|---|
-| GPS / location | Yes | No | Raw | Yes | The single most-used stream is Android only on the documented catalogue. |
+| GPS / location | Yes | Yes | Raw | Yes | Corrected 2026-10-09: the iOS client has Location, FusedLocations and Visit modules and keeps itself alive through Always location. The website catalogue still says Android only; the code wins. |
 | Accelerometer | Yes | Yes | Raw | Yes |  |
 | Gyroscope | Yes | Yes | Raw | Yes |  |
 | Magnetometer | Yes | Yes | Raw | Yes |  |
 | Barometer | Yes | Yes | Raw | Yes |  |
 | Ambient light | Yes | No | Raw | Yes |  |
-| Proximity | Yes | No | Raw | Yes |  |
+| Proximity | Yes | Yes | Raw | Yes | Corrected 2026-10-09 from the iOS repository; the website catalogue says Android only. |
 | Device motion / activity recognition | Yes | Yes | Raw. Gravity, linear accelerometer and rotation modules. | Yes | No OS activity labels in the catalogue. |
 | Screen state | Yes | Yes | Event | Yes |  |
 | App usage | Yes | No | Event. Applications and Installations modules. | Yes |  |
@@ -44,12 +44,14 @@
 | Network / connectivity | Yes | Yes | Event | Yes |  |
 | Wi-Fi | Yes | Yes | Scan | Yes |  |
 | Bluetooth | Yes | Yes | Scan | Yes |  |
-| Calls (metadata) | Yes | No (OS) | Metadata. Communication and Telephony modules. | Yes |  |
+| Calls (metadata) | Yes | Partial | Metadata. Communication and Telephony modules on Android. | Yes | Corrected 2026-10-09: the iOS Calls module uses CXCallObserver, which reports call events only while the app runs, with no history and no numbers. |
 | SMS (metadata) | Yes | No (OS) | Metadata | Yes |  |
 | Keyboard | Yes | No | Event | Yes |  |
 | Audio / microphone | Unclear | Unclear | Unclear | Unclear | Not in the core catalogue fetched; plugins exist outside it. |
 | Notifications | Unclear | No | Unclear | Unclear | Not listed as a core module. |
 | Device information | Yes | Yes | Event. The Aware core module. | Yes |  |
+
+**Correction 2026-10-09 (Verified, conflict recorded).** The AWARE iOS repository (https://github.com/tetujin/AWAREFramework-iOS, last push 2026-02-17) lists Location, Proximity and Call among its default iOS sensors, and its source tree has `Location`, `FusedLocations`, `Visit`, `Proximity` and `Calls` modules; awareframework.com/locations/ also has an iOS section. The website's sensors catalogue below still marks all three Android only. The repository is the primary source for what the iOS client does, so the stream table above follows it. Found while researching unresolved question 119.
 
 **Verification.** Verified 2026-08-24 from awareframework.com/sensors, which lists about 33 modules with per-platform availability; roughly 14 are available on iOS. Sampling configurability is Reported from the framework's study-configuration model rather than checked per module. Modules outside this table (Processor, Screenshot, Screentext, Touch, Temperature, Timezone, Scheduler, Text-to-speech, MQTT, Google Fit) are Android only except Timezone and Rotation.
 
@@ -92,7 +94,7 @@
 | Text-2-Speech | Yes | No |
 | Google Fit | Yes | No |
 
-- Of roughly 33 documented sensor/plugin modules, only about 14 are available on iOS, the large majority (including **Locations**, the single most commonly used passive-sensing stream in digital phenotyping) are **Android-only**. This is a materially larger and more consequential gap than the profile's earlier general "iOS differs" language conveyed: a study relying on GPS/location, app usage, call/SMS metadata, or keyboard-derived signals **cannot get that data from AWARE's iOS client at all**, not just a reduced version of it. Notably, **ESM/EMA is available on both platforms**, confirming AWARE does have a first-party survey module (resolves the "Active Data Collection" open question below in the affirmative).
+- **Superseded in part 2026-10-09:** Locations, Proximity and Calls do exist in the iOS client (see the correction above), so the website catalogue understates iOS. App usage, SMS, keyboard, light, screenshot and screentext remain Android only. Original 2026-08-24 text follows. Of roughly 33 documented sensor/plugin modules, only about 14 are available on iOS, the large majority (including **Locations**, the single most commonly used passive-sensing stream in digital phenotyping) are **Android-only**. This is a materially larger and more consequential gap than the profile's earlier general "iOS differs" language conveyed: a study relying on GPS/location, app usage, call/SMS metadata, or keyboard-derived signals **cannot get that data from AWARE's iOS client at all**, not just a reduced version of it. Notably, **ESM/EMA is available on both platforms**, confirming AWARE does have a first-party survey module (resolves the "Active Data Collection" open question below in the affirmative).
 
 ## Derived Metrics / Analytics
 
@@ -124,6 +126,13 @@
 
 - Not verified in any pass to date.
 
+### Background keepalive (added 2026-10-09)
+
+- **Yes on iOS, off by default.** AWARE-iOS supports "Continuous Silent Push Notification". A server sends silent pushes with no visible alert, which "monitor the status of running sensors" and ask the app to reopen. AWARE's tutorial says pushes generally arrive within 10 minutes.
+- It is off by default: `status_push_notification` is false and the server address is blank. Studies using the App Store client must ask the AWARE developers for a server URL. Custom builds on AWARE-iOS host their own Node.js `aware-push` server, which relays commands through APNs.
+- This is the closest match to Beiwe's mechanism in this module, though it uses silent rather than visible pushes. No Android equivalent was found; the Android client relies on its own service. Tutorial posted 2020-02-14, updated 2025-02-06.
+- Status: **Verified** for iOS from AWARE's own page, 2026-10-09. Sources 6 and 7.
+
 ## Privacy, Security, and Compliance
 
 - Not independently verified this session.
@@ -145,7 +154,7 @@
 
 ## Limitations
 
-- Primarily an Android framework; **now Verified (not just self-described) that the iOS port is missing roughly 19 of ~33 documented sensor modules**, including Locations, Applications, Communication (calls/SMS), Installations, Keyboard, Screenshot, Screentext, and Telephony, several of the most research-relevant passive streams are Android-only, not merely "reduced coverage" on iOS.
+- Primarily an Android framework. The website catalogue lists roughly 19 of ~33 modules as Android only; the iOS repository shows Location, Proximity and Calls do run on iOS (corrected 2026-10-09). App usage, SMS, keyboard, installations, screenshot and screentext remain Android only.
 - Not distributed via app stores, adding participant-onboarding friction (sideloading or enterprise distribution required).
 - Community/donation-based funding model (Open Collective) may imply less institutional continuity guarantee than a lab- or company-backed platform, this is a plausible risk factor, not a confirmed maintenance problem.
 - Study-management/dashboard features (beyond the AWARE-Configurator study-config tool), data export mechanics, and compliance posture remain **not independently verified against current documentation** even after this second pass, the AWARE-Configurator repository and awareframework.com's Configurator/RAPIDS pages would be the next direct-fetch target for a third pass.
@@ -157,8 +166,8 @@
 
 ## Poor-Fit Use Cases
 
-- iOS-primary or iOS/Android-parity-critical study designs, **now Verified as poor-fit, not just plausible**: iOS cannot collect location, app usage, call/SMS metadata, keyboard, or several other Android-exclusive streams at all.
-- Any study whose primary outcome measure is GPS/location and that needs iOS participants, location is Android-only.
+- iOS-primary or iOS/Android-parity-critical study designs that need app usage, SMS metadata, keyboard or other Android-only streams. Location, proximity and call events are available on iOS (corrected 2026-10-09), though iOS call data has no history.
+- ~~Any study whose primary outcome measure is GPS/location and that needs iOS participants.~~ Withdrawn 2026-10-09: the iOS client collects location.
 - Teams wanting a polished, app-store-distributed participant experience without custom distribution workarounds.
 
 ## Open Questions
@@ -189,3 +198,5 @@
 3. AWARE Framework GitHub organization. https://github.com/awareframework (accessed 2026-08-24, direct fetch second pass). Repository inventory (97 total repos), Apache-2.0 licence confirmed on `aware-client` and named plugin repos, commit activity as recently as Aug 2026.
 4. AWARE Framework, Open Collective. https://opencollective.com/aware-framework (accessed 2026-08-24, search summary). Community-funding model.
 5. Ferreira D. et al. "AWARE: Mobile Context Instrumentation Framework." Foundational project paper (ResearchGate listing). https://www.researchgate.net/publication/275349654_AWARE_Mobile_Context_Instrumentation_Framework (accessed 2026-08-24, search summary). Historical/architectural origin, used only to establish AWARE's long pedigree, not for current-state claims.
+6. AWARE Framework, "Continuous Silent Push Notification (SPN) on AWARE iOS." https://www.awareframework.com/continuous-silent-push-notification-spn-on-aware-ios/ (accessed 2026-10-09). **Primary/Direct.**
+7. `tetujin/aware-push`, Node.js APNs relay for AWARE-iOS. https://github.com/tetujin/aware-push (accessed 2026-10-09, search summary).

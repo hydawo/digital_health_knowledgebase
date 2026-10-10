@@ -11,7 +11,7 @@
 | Open source | No |
 | Hosting/deployment | Vendor cloud (Withings Health Data API); **cellular-connected device options remove the smartphone dependency** |
 | Pricing model | Device purchase; Withings Health Solutions is a B2B/quote-based programme; Advanced Research API is contract-gated |
-| Last verified | 2026-08-21 |
+| Last verified | 2026-08-21; raw accelerometer rate re-checked 2026-10-09 |
 
 ## Summary
 
@@ -48,7 +48,7 @@
 |---|---|---|---|---|
 | PPG | ScanWatch, 3-wavelength green, red and infrared (some configurations single green) | Raw via the Advanced Research API when raw mode is activated | About 24.824 Hz effective | Raw mode disables every other watch feature and drains the battery four to seven times faster, so it suits bounded windows, not weeks. |
 | ECG | ScanWatch 2 single lead; Body Scan 6-lead; some BPM models | Not mentioned as available through the Raw Data API; a device feature rather than a raw stream | Per reading |  |
-| Accelerometer | ScanWatch, 3-axis | Raw via the Advanced Research API in raw mode | 25 Hz by default, up to 100 Hz, plus or minus 4 g | Raw capture must be activated via API first. |
+| Accelerometer | ScanWatch, 3-axis | Raw via the Advanced Research API in raw mode | About 24.824 Hz in the documented raw mode, plus or minus 4 g, about 2 mg sensitivity. The overview page's "25 Hz by default (up to 100 Hz)" describes the sensor, and no documented setting reaches 100 Hz. | Raw capture must be activated via API first. Whether a contract can unlock a higher rate needs Withings to confirm (re-checked 2026-10-09). |
 | Gyroscope | Unclear | Unclear | Unclear |  |
 | Magnetometer | Unclear | Unclear | Unclear |  |
 | Temperature | ScanWatch 2 | Unclear | Unclear |  |
@@ -67,12 +67,13 @@
 
 | Signal | Detail |
 |---|---|
-| **3-axis accelerometer** | ±4g range. Samples at **25 Hz by default, up to 100 Hz**. |
+| **3-axis accelerometer** | ±4g range. Samples at **25 Hz by default, up to 100 Hz** per the Advanced Research API overview; see the 2026-10-09 reconciliation note below. |
 | **PPG (optical)** | **3-wavelength digital photoplethysmograph, green, red, and infrared** (some configurations single green LED). |
 | Effective sampling rate | Both sensors sample at **approximately 24.824 Hz** |
 | Device support | **Withings ScanWatch only** |
 | ECG raw waveform | **Not mentioned as available** through the Raw Data API, ECG appears to be a device feature, not a raw API stream |
 
+- **Sampling-rate reconciliation (re-read 2026-10-09, Corroborated).** Both Withings pages were re-read and still carry their original wording. The Advanced Research API overview says the accelerometer "samples at 25Hz by default (up to 100Hz)". The Raw Data page says data are "sampled at approximately 25 Hz" and that "Both sensors sampling rate are about 24.824 Hz". The two are compatible once read as different things: 24.824 Hz is the precise effective rate of the documented raw mode, which the overview rounds to 25 Hz, and "up to 100 Hz" is a hardware ceiling that neither page exposes as a setting. Plan a study at about 24.8 Hz. Only Withings can say whether a contracted partner can get 100 Hz.
 - **Critical operational constraints on raw mode**, documented by Withings:
 - Raw capture must be **explicitly activated via API** before data can be retrieved.
 - Activating raw data puts the device into a **specific mode that disables all features except raw data capture.** The watch stops being a watch.
@@ -239,6 +240,7 @@
 - **What are the terms and cost of an Advanced Research API contract, and will Withings contract with an individual academic investigator or only with institutions/sponsors?**
 - Will the raw-data programme extend beyond ScanWatch to ScanWatch 2 or other devices?
 - Is raw ECG waveform available under any agreement?
+- Can a contracted partner configure the ScanWatch accelerometer above the documented ~24.824 Hz raw-mode rate, up to the 100 Hz the overview page cites? Both pages re-read 2026-10-09 and neither documents a rate setting.
 - Precise raw-data file structure, retrieval mechanics, volume, and any retention window on Withings' side.
 - Rate limits, historical depth, and backfill for the Public Health Data API.
 - **Per-device regulatory clearance and validation-protocol compliance** (especially BP monitors against ESH/AAMI/ISO 81060-2, and ECG/SpO2 clearances by market).
@@ -259,8 +261,8 @@
 
 ## Sources
 
-1. Withings, Advanced Research API. https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis/ (accessed 2026-08-21). **Primary.** Establishes ScanWatch-only support, 3-axis accelerometer at 25 Hz default up to 100 Hz, PPG with three LEDs (green/red/IR) or one (green), the targeting at research groups and universities, and that access is gated by contacting Withings.
-2. Withings, Raw data documentation. https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data/ (accessed 2026-08-21). **Primary.** Establishes the ±4g accelerometer range, the ~24.824 Hz effective sampling rate for both sensors, "contracted partners only" access, the requirement to activate raw capture via API, the disabling of all other device features in raw mode, and the 4 to 7× battery drain reducing life to 3 to 4 days. Also establishes that ECG is not listed among Raw Data API types.
+1. Withings, Advanced Research API. https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis/ (accessed 2026-08-21). **Primary.** Establishes ScanWatch-only support, 3-axis accelerometer at 25 Hz default up to 100 Hz, PPG with three LEDs (green/red/IR) or one (green), the targeting at research groups and universities, and that access is gated by contacting Withings. Re-read 2026-10-09: wording unchanged, still "samples at 25Hz by default (up to 100Hz)" and still ScanWatch-only.
+2. Withings, Raw data documentation. https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data/ (accessed 2026-08-21). **Primary.** Establishes the ±4g accelerometer range, the ~24.824 Hz effective sampling rate for both sensors, "contracted partners only" access, the requirement to activate raw capture via API, the disabling of all other device features in raw mode, and the 4 to 7× battery drain reducing life to 3 to 4 days. Also establishes that ECG is not listed among Raw Data API types. Re-read 2026-10-09: wording unchanged, and the page also says "approximately 25 Hz" and "~2 mg" sensitivity.
 3. Withings Health Solutions, research and clinical trials. https://www.withings.com/us/en/health-solutions/research-clinical-trials (accessed 2026-08-21). Establishes the pharma/CRO decentralised-trials positioning and the multiple retrieval routes offered (cellular, mobile app, RPM platform, API).
 4. Withings Partner Hub. https://developer.withings.com/ (accessed 2026-08-21).
 5. Schyvens A.-M. et al., "A performance validation of six commercial wrist-worn wearable sleep-tracking devices for sleep stage scoring compared to polysomnography." *SLEEP Advances* 2025;6(2):zpaf021. https://academic.oup.com/sleepadvances/article/6/2/zpaf021/8090472, Withings ScanWatch lowest of six at ~29.8%.

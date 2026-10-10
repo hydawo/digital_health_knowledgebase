@@ -177,11 +177,43 @@
 
 - Even the best-performing consumer sleep tracker has *poor* between-person reliability for deep sleep and REM stage summaries. **A study using nightly deep-sleep or REM minutes from Oura as an outcome is substantially measuring device noise.** TST and SE are the defensible stage-derived endpoints.
 
+### Other PSG studies that include Oura (added 2026-10-09)
+
+- Found in a date-sorted PubMed and Europe PMC pass on 2026-10-09. None is Oura-funded, so they are a
+- useful check on Robbins. **The ranking is not stable across studies:** Oura led in Robbins (Oura-funded)
+- and in Miller 2022, tied WHOOP on four-stage kappa in Miller 2022, and trailed three wrist devices in Lee 2023.
+
+| Study | Oura hardware | Other devices, same night | Oura four-stage κ | Comparison | Funding / COI | Confidence |
+|---|---|---|---|---|---|---|
+| Miller DJ, Sargent C, Roach GD 2022, *Sensors* 22(16):6317 | Gen2 | Apple Watch S6, Garmin FR245, Polar Vantage V, **WHOOP 3.0**, Somfit | 0.43 (two-state κ 0.51, best of six) | WHOOP 0.44, Somfit 0.52, Apple 0.20 | Australian Institute of Sport; authors' CQU lab receives WHOOP funding and equipment, and WHOOP staff supplied WHOOP's epoch data | **Verified** (full text read) |
+| Grandner MA et al. 2023, *Sleep* 46(1):zsac152 | V2 | Happy Ring, **WHOOP 3.0**, Fitbit Charge 4, Actiwatch 2 | Not in main text (supplement) | Sleep/wake accuracy Oura 0.88 vs WHOOP 0.86; specificity 0.49 vs 0.54 | 5 of 7 authors employed by Happy Health, the competing ring's maker | **Verified** (full text read) |
+| Lee T et al. 2023, *JMIR mHealth uHealth* 11:e50983 | Ring 3 (Gen3) | Galaxy Watch 5, Pixel Watch, Fitbit Sense 2, Apple Watch 8, plus nearables | **0.35** (macro F1 0.52) | Galaxy Watch 5 0.42, Fitbit Sense 2 0.42, Pixel Watch 0.40, Apple Watch 8 0.30 | Most authors employed by and hold stock in Asleep, maker of a competing app (SleepRoutine) | **Verified** (tables read) |
+| Searles ME et al. 2026, *SLEEP Advances* 7(1):zpag006 | Gen3 | Fitbit Sense 2, Withings Sleep Mat, SleepScore Max | Not reported as κ | In older adults (n=19) Oura underestimated TST by 75.5 min and overestimated deep sleep by 71.5 min | NIH NIA P30 AG073107; "Financial disclosure: None" | **Verified** (full text read) |
+
+- Two of these four are authored by a competing device's maker (Happy Health, Asleep). That is a
+- different kind of interest from Robbins' Oura funding, but it is still an interest. Lee 2023 also
+- recorded a hospital/clinic sample with mean AHI 18, so it is not directly comparable to Robbins'
+- screened-healthy sample.
+
 ### What is missing
 
-- **Oura has never been tested against WHOOP under the same protocol.** Robbins excluded WHOOP;
-- Schyvens et al. 2025 (six devices, independently funded) excluded Oura. A bridged estimate through Apple Watch suggests Oura is meaningfully ahead of WHOOP on overall agreement, see `../validation-evidence.md` §3, but that is inference, not evidence.
-- The tested hardware was **Gen3**. Ring 4 and Ring 5 are untested in independent PSG work.
+- ~~Oura has never been tested against WHOOP under the same protocol.~~ **Corrected 2026-10-09:** two
+- PSG studies did test both, on older hardware: Miller et al. 2022 (Oura Gen2 vs WHOOP 3.0, N=53,
+- four-stage κ 0.43 vs 0.44, effectively tied) and Grandner et al. 2023 (Oura V2 vs WHOOP 3.0, N=30 to
+- 33). Dial et al. 2025 compared Oura Gen3/Gen4 with WHOOP 4.0 for resting HR and HRV, not sleep
+- stages. No study has compared Gen3 or later with WHOOP 4.0 or later against PSG. The bridged estimate
+- in `../validation-evidence.md` §3b remains the only (indirect) evidence for current-generation hardware.
+- The PSG-tested hardware is **Gen3 at newest**. Ring 4 has independent data only for nocturnal resting
+- HR and HRV (Dial et al. 2025: Gen4 CCC 0.98 and 0.99, against Gen3 0.97 and 0.97, so no evidence of a
+- difference). Ring 5 has none. Rechecked 2026-10-09 in PubMed (`oura` with Gen4/Ring 4/Ring 5 terms,
+- 1 hit, Dial) and Europe PMC full text (14 hits, none a validation of Ring 4 or 5 beyond Dial).
+- **Unclear** whether Ring 4/5 sleep staging differs from Gen3.
+- **SpO2 and skin temperature have no independent validation against a reference instrument.**
+- Rechecked 2026-10-09: PubMed `(oura OR whoop) AND (SpO2 OR oxygen saturation OR oximetry)` returned
+- 2 hits, neither a validation; Europe PMC full-text searches pairing Oura with reference oximeters
+- (Masimo, Nonin, arterial blood gas) and with temperature-reference terms found none. Oura's
+- temperature literature is association and prediction work (TemPredict, cycle tracking), mostly
+- Oura-affiliated, not sensor-accuracy work. **Still open.**
 - Temperature-based illness-onset detection (UCSF/TemPredict and related COVID-era work) remains
 - Oura's strongest non-sleep literature. **Reported**, not re-verified this session.
 - Health Radar, Blood Pressure Signals, and GLP-1 insights have **no located independent validation.**
@@ -189,7 +221,7 @@
 
 ## Strengths
 
-- Best-validated consumer sleep staging, and by a clear margin the most comfortable device to actually sleep in, which means better nocturnal data completeness in practice, not just better algorithms.
+- Largest sleep-staging evidence base of any consumer ring, and by a clear margin the most comfortable device to actually sleep in, which means better nocturnal data completeness in practice, not just better algorithms. Its best PSG result is Oura-funded (Robbins 2024); independent PSG results are mixed (see Research Evidence, updated 2026-10-09).
 - Continuous nocturnal RMSSD HRV and nightly temperature deviation, two research-grade-adjacent signals that most wrist competitors handle worse or not at all.
 - Clean, well-documented REST API with rich per-night detail (stage hypnograms plus within-night HR/HRV traces).
 - Generous rate limits.
@@ -262,3 +294,8 @@
 7. *Sensors* 2024;24(20):6532, "Accuracy of Three Commercial Wearable Devices for Sleep Tracking in Healthy Adults." https://www.mdpi.com/1424-8220/24/20/6532
 8. Schyvens A.-M. et al. *SLEEP Advances* 2025;6(2):zpaf021. https://academic.oup.com/sleepadvances/article/6/2/zpaf021/8090472, noted as **not** including Oura.
 9. Oura membership pricing (secondary, unverified against vendor page): https://www.bettervitals.com/learn/oura-ring-subscription-worth-it-2026 (accessed 2026-08-21).
+10. Miller DJ, Sargent C, Roach GD. "A Validation of Six Wearable Devices for Estimating Sleep, Heart Rate and Heart Rate Variability in Healthy Adults." *Sensors* 2022;22(16):6317. https://doi.org/10.3390/s22166317 (PMC9412437; accessed 2026-10-09). PDF: `../literature/whoop/2022-miller-sensors-six-wearables-sleep-hr-hrv-validation.pdf`.
+11. Grandner MA, Bromberg Z, Hadley A, Morrell Z, Graf A, Hutchison S, Freckleton D. "Performance of a multisensor smart ring to evaluate sleep." *Sleep* 2023;46(1):zsac152. https://doi.org/10.1093/sleep/zsac152 (PMC13396806; accessed 2026-10-09; PDF not obtained, PMC/OUP bot checks).
+12. Lee T, Cho Y, Cha KS, et al. "Accuracy of 11 Wearable, Nearable, and Airable Consumer Sleep Trackers: Prospective Multicenter Validation Study." *JMIR mHealth uHealth* 2023;11:e50983. https://doi.org/10.2196/50983 (PMC10654909; accessed 2026-10-09; PDF not obtained, JMIR bot check).
+13. Searles ME, Licata A, Cucinotta M, Kainec K, Spencer RMC. "Performance evaluation of consumer sleep-tracking wearables and nearables in healthy young and older adults." *SLEEP Advances* 2026;7(1):zpag006. https://doi.org/10.1093/sleepadvances/zpag006 (PMC12936866; accessed 2026-10-09; PDF not obtained, OUP bot check).
+14. Dial MB et al. *Physiological Reports* 2025;13(16):e70527. https://doi.org/10.14814/phy2.70527, the only located independent data on Oura Gen4.

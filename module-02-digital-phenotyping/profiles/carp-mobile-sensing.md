@@ -11,7 +11,7 @@
 | Open source | Yes, MIT licence |
 | Hosting/deployment | Self-hosted / researcher-integrated (framework/library, not a turnkey SaaS) |
 | Pricing model | Free/open source |
-| Last verified | 2026-08-25 (second pass) |
+| Last verified | 2026-10-09 (portal, adoption, DiaFocus and keepalive checks) |
 
 ## Summary
 
@@ -85,6 +85,16 @@
 
 - **Revised conclusion**: CARP is still fundamentally a framework/library-first ecosystem rather than a single polished turnkey product, and a research team should not assume `carp-portal` is a mature, feature-complete, documented dashboard equivalent to Beiwe's or Avicenna's, that was not established. But it is no longer accurate to say study-management tooling is "not offered" or "entirely the adopting team's responsibility to build", CARP's own organization maintains portal, CLI, and backend-service components alongside the sensing library.
 
+### `carp-portal` assessment (added 2026-10-09)
+
+- **What it is (Verified from the repository).** A React 18 and Material UI web app, MIT licence, created 2024-06-20. About 230 commits from four contributors, last push 2026-10-07. No tagged releases; the CHANGELOG's only entry is "2.0.0 [TBD]", which adds a Research Assistant role.
+- **Pages in the source tree.** Studies; study overview; study settings, with researchers, invitations, self-signup, study status and study data; protocols and protocol versions; participants, including add, bulk import and new deployment; per-deployment pages with devices, informed consent and data visualisation; per-participant pages with data cards and visualisation; recent-data and participant-record views; exports, with download and delete; study announcements; resources and translations; account management.
+- **What CARP says it does.** CARP's own pages describe it as the researcher interface for uploading JSON study protocols, creating and deploying studies, recruiting participants, managing running studies and downloading data as JSON. Protocols are written as JSON, or with `carp-cli`'s protocol editor, rather than built in a graphical form editor.
+- **Hosting.** It is not part of the CAMS app. It needs the CARP Web Services backend (`carp-webservices-spring`) and a Keycloak identity server, and ships as a Docker image built by GitHub Actions. Self-hosting means running all three, plus PostgreSQL, in Docker or Kubernetes. The alternative is DTU's hosted instance on DTU Computerome.
+- **Documentation.** The README covers developer setup and deployment only. No researcher user manual was found on carp.dk or in the repository.
+- **Conflict on who can use the hosted instance.** The CAWS page says "Researchers affiliated with DTU can use this service", on a best-effort basis with no uptime or data-integrity guarantee unless a contract says otherwise. The "Three ways to use CARP" page invites any researcher to email info@carp.dk for an account. Both are recorded here; neither states a price.
+- **Assessment.** The portal is a real, actively developed study-management dashboard covering protocols, deployments, participants, consent, data visualisation and export. It is not a configure-everything-in-the-browser product like Avicenna's. It has no versioned releases, no end-user documentation, and nothing found about adherence alerts or audit logs. It sits between "build it yourself" and a mature commercial dashboard. **Corroborated**: the page inventory is Verified from code, but feature depth was read from page names and vendor descriptions, not from running the portal.
+
 ## Data Access and Export
 
 - Standardized data-format output and privacy-preserving transformation are named framework features; exact export mechanics were not independently verified this session.
@@ -101,6 +111,12 @@
 
 - Not verified in any pass to date.
 
+### Background keepalive (added 2026-10-09)
+
+- CAMS has a `heartbeat` measure. It is a **client-side** data point that the phone records on a fixed interval, so researchers can check sampling coverage afterwards. The CHANGELOG says every 5 minutes; the current device sampling package sets a 15-minute default. It does not wake the app.
+- No server-triggered push that reopens a stopped CAMS app was found in the CAMS, CARP Web Services or portal materials checked. Any such mechanism would sit in the app built on CAMS. m-Path Sense, which embeds CAMS, has one (see the m-Path profile).
+- Status: **Corroborated** absence of a built-in server-side keepalive, from code and docs, not from a statement by DTU.
+
 ## Privacy, Security, and Compliance
 
 - Privacy-preserving data transformation is named as a first-class framework capability (allowing e.g. on-device or pipeline-stage anonymization/aggregation before storage), which is architecturally notable, few other platforms in this module document this as a built-in framework feature rather than a per-study custom implementation. Formal compliance certifications (GDPR/HIPAA/etc.) were not independently verified this session; DTU's EU/Denmark base makes GDPR a highly likely design consideration but this is an inference, not a verified compliance claim.
@@ -112,6 +128,14 @@
 ## Research Evidence and Validation
 
 - CAMS is documented in a dedicated architecture paper ("The CARP Mobile Sensing Framework, A Cross-platform, Reactive, Programming Framework and Runtime Environment for Digital Phenotyping") and has been used to build multiple distinct mHealth research applications across mental health, cardiovascular disease, and diabetes domains, per the project's own materials. **New 2026-08-25 (second pass, search-summary):** a follow-up demonstration paper, "The CARP Mobile Sensing Framework, Demonstration," was presented at the **2025 ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp/ISWC 2025)**, evidence of continued, current academic engagement with the framework at a major venue, five years after the original 2020 architecture paper. This session did not confirm the authors' institutional affiliation for the 2025 paper (i.e., whether it demonstrates DTU-external use or is authored by the same DTU group), so it should not yet be read as resolving the "adoption outside DTU" open question, it is evidence of currency, not external adoption. This session also did not attempt a systematic count of downstream published studies using apps built on CAMS.
+
+### Adoption outside DTU, and DiaFocus (added 2026-10-09)
+
+- **External adoption, Partly resolved.** A literature and code pass on 2026-10-09 found **one** confirmed production deployment of CAMS by a group outside DTU: **m-Path Sense**, built by KU Leuven's m-Path team by adding CAMS to m-Path as a plug-in. It is available in both app stores and was evaluated with 104 participants in Niemeijer et al. 2023, *JMIR Formative Research*. That paper thanks the CAMS creators "for their technical contribution", so it was built with DTU's help. Verified from full text.
+- Every other paper found that names CARP or CAMS in its full text (Europe PMC) has a DTU co-author: DiaFocus, SLEEPINESS (2024), the ambulatory ECG study (2025), episodic future thinking (2024) and the 2025 UbiComp demo. The demo's two authors are both DTU (Crossref), which closes the earlier open point about that paper.
+- The CAMS architecture papers are rarely cited: arXiv 2020 three times and *Sensors* 2022 four times, per OpenAlex. All 16 packages that depend on `carp_mobile_sensing` on pub.dev are CARP's own. A Münster psychiatry app paper (ReMAP, 2021) cites CAMS, but its abstract does not say it was built on CAMS.
+- Reading: external adoption is real but narrow. It amounts to one confirmed independent product, which has since become a widely used commercial EMA platform. Citation counts undercount use because a library is often not cited. **Corroborated.**
+- **DiaFocus is built on CAMS (Verified from the developer).** CARP's own DiaFocus page says the system "makes use of most CARP components". Its September 2025 post on the clinical validation says the app "was built using several CARP components, including CARP Mobile Sensing and the Research Package", connected to CARP Web Services hosted at DTU Computerome. The 2023 design paper's abstract says only "a generic data collection framework for mobile and wearable sensing", and the 2025 *JMIR Diabetes* pilot never names CARP, so attribution rests on the developer's own statement. DiaFocus ran a 6-week feasibility study with 12 patients (2023) and a 6-month clinical pilot at Steno Diabetes Center Copenhagen (2025). Both are DTU-led, so this adds a second CAMS deployment, not external adoption.
 
 ## Strengths
 
@@ -145,11 +169,12 @@
 
 - *(Directed to: CARP / Jakob Bardram's group, DTU, via https://carp.dk/)*
 
-- ~~Does a companion researcher dashboard/study-management product exist?~~ **Resolved (existence) 2026-08-25**, `carp-portal` exists. **New sub-question**: how feature-complete and documented is `carp-portal` relative to competitors' dashboards (Beiwe's, Avicenna's)?
+- ~~Does a companion researcher dashboard/study-management product exist?~~ **Resolved (existence) 2026-08-25**, `carp-portal` exists. ~~How feature-complete and documented is `carp-portal`?~~ Largely resolved 2026-10-09, see Researcher and Study Management Features. Still open: whether non-DTU researchers can get accounts on the hosted instance, and at what cost.
 - ~~What is the full current wearable-integration catalog beyond ECG monitors?~~ **Resolved 2026-08-25**, see Sensors and Data Streams above (Movisens, eSense, Polar, Movesense, Dexcom G7, plus Apple Health/Google Health Connect).
 - What GDPR/compliance documentation or guidance exists for CAMS-based deployments?, still unresolved; not targeted this pass beyond the CAMS feature page, which did not mention it.
 - What export formats and backend-storage patterns are typical/recommended for CAMS deployments, and does `carp-webservices-spring` represent the standard/recommended backend, or one option among several?
-- How many independent research groups outside DTU have built production studies on CAMS? Does the 2025 ACM UbiComp demonstration paper's author list include non-DTU institutions?
+- ~~How many independent research groups outside DTU have built production studies on CAMS? Does the 2025 UbiComp demo include non-DTU authors?~~ Partly resolved 2026-10-09: one confirmed (KU Leuven, m-Path Sense); the demo authors are both DTU. An exhaustive count would need DTU's own list of adopters.
+- ~~Is DiaFocus built on CAMS?~~ Resolved 2026-10-09: yes, per CARP's own DiaFocus pages.
 
 ## Key Links
 
@@ -170,3 +195,11 @@
 6. CARP Mobile Sensing (CAMS) feature page (second-pass direct fetch). https://carp.dk/cams/ (accessed 2026-08-25). **Primary/Verified.** Full named wearable-integration list (Movisens, eSense, Polar, Movesense, Dexcom G7) and confirmed Apple Health / Google Health Connect integration; no researcher dashboard mentioned on this specific page (see source 7 for the dashboard finding).
 7. `carp-dk` GitHub organization (second-pass direct fetch). https://github.com/carp-dk (accessed 2026-08-25). **Primary/Verified.** Confirms `carp-portal`, `carp-cli`, `carp-webservices-spring`, `carp.core-kotlin`, and `carp_study_app` repositories; MIT licence re-confirmed across multiple repos; 42 total repositories in the organization.
 8. "The CARP Mobile Sensing Framework, Demonstration." *Companion of the 2025 ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp/ISWC 2025)*. https://unpaywall.org/10.1145/3714394.3754442 (accessed 2026-08-25, search summary). Evidence of continued academic engagement with the framework in 2025; author affiliations not confirmed this session.
+9. `carp-dk/carp-portal` repository: README, CHANGELOG, `src/pages` tree, contributors and commit count via the GitHub API. https://github.com/carp-dk/carp-portal (accessed 2026-10-09). **Primary/Direct.**
+10. CARP, "Three ways to use CARP." https://carp.dk/three-ways-to-use-carp/ (accessed 2026-10-09). **Primary/Direct.** Hosted, self-hosted and custom-app routes; portal functions.
+11. CARP, "CARP Web Services (CAWS)." https://carp.dk/caws (accessed 2026-10-09). **Primary/Direct.** DTU-affiliated access wording; best-effort service terms.
+12. CARP, DiaFocus project page and "Clinical Validation of DiaFocus" (2025-09-05). https://carp.dk/?p=1533 ; https://carp.dk/clinical-validation-of-diafocus/ (accessed 2026-10-09). **Primary/Direct.** DiaFocus built on CAMS and the Research Package.
+13. Lind N. et al. 2025, *JMIR Diabetes*, doi 10.2196/63894 (full text via Europe PMC, PMC12377514), and Bardram J.E. et al. 2023, *ACM Trans Comput Healthcare* 4(2), doi 10.1145/3586579 (abstract via Crossref; ACM full text returned HTTP 403) (accessed 2026-10-09).
+14. Niemeijer K. et al. 2023, "Combining Experience Sampling and Mobile Sensing for Digital Phenotyping With m-Path Sense," *JMIR Formative Research*, doi 10.2196/43296 (full text via Europe PMC, PMC10031448) (accessed 2026-10-09). **Verified.** m-Path Sense built by adding CAMS to m-Path.
+15. Adoption pass: Europe PMC full-text search for "CARP Mobile Sensing", "carp_mobile_sensing" and "Copenhagen Research Platform"; OpenAlex citing works for the CAMS arXiv and *Sensors* papers; pub.dev dependency search; Crossref author record for doi 10.1145/3714394.3754442 (all accessed 2026-10-09).
+16. `carp-dk/carp.sensing-flutter`, `carp_mobile_sensing` CHANGELOG and device sampling package source (accessed 2026-10-09). **Primary/Direct.** Client-side `heartbeat` measure.

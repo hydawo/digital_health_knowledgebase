@@ -2,6 +2,64 @@
 
 ---
 
+## 2026-10-09 (later) — Unresolved questions restructured; 34-question research pass
+
+**Module:** 1, 2, 3 and shared. Four parallel research agents, each owning a separate set of files.
+
+### Restructure of `shared/unresolved-questions.md`
+
+The file was a flat list of 128 rows in 17 tiers ordered by the session that raised them, which
+made it read as 125 open tasks. It is now grouped by who can close each question: a decision
+(4, all for Hassan), the research queue, standing evidence gaps, hands-on tests, library access,
+author or lab contact, and per-vendor checklists. Question numbers and text are unchanged; the old
+tier survives in a Raised column, so existing "Tier 15 Q116" style references still resolve.
+Housekeeping in the same change: 57, 58, 91 and 113 were answered but not marked closed; 63, 64 and
+75 duplicated 1, 2 and 7; the number 6 had been used twice.
+
+### Research pass
+
+All 34 questions in the research queue were worked: **20 closed, 6 moved to standing evidence gaps,
+6 narrowed to a vendor-only remainder, 1 to library access, 1 merged as a duplicate.** Open
+questions fell from 104 to 83. Answers with sources are on each row.
+
+### Findings that changed conclusions
+
+- **AWARE on iOS (found under 119, Verified):** the iOS repository has Location, Proximity and Calls
+  modules, contradicting the website catalogue the profile was built from. The profile and the
+  Module 2 comparison matrix said AWARE could not collect location on iOS; both are corrected and
+  the conflict is recorded.
+- **mindLAMP licensing (87 sub-item, Verified):** `LAMP-dashboard` moved from BSD-3-Clause to
+  AGPL-3.0; the server and both phone apps carry no licence file. "Fully open source" was withdrawn.
+- **Oura vs WHOOP (59, Verified):** a same-protocol PSG study exists (Miller 2022, *Sensors*):
+  four-stage kappa tied, 0.44 vs 0.43. This weakens the bridged "Oura well ahead" estimate.
+- **WHOOP and Apple ranking (found under 59):** `whoop.md` called WHOOP the best sleep stager in
+  Schyvens 2025 and `apple-watch-healthkit.md` quoted 69.6% vs 50.7%. Those are deep-sleep
+  accuracies; on overall kappa Apple was first (0.53) and WHOOP fourth (0.37). Both corrected.
+- **Movesense (66):** the "no independent validation" gap is closed; four small lab studies exist.
+- **Empatica wrist EDA (61):** agreement with palmar or lab EDA is poor (ICC 0.09 for skin
+  conductance level in Hu 2024).
+- **Apple hypertension notifications (62):** validated only in vendor documents and FDA 510(k)
+  K250507; sensitivity 41.2%.
+- **Keepalives (107):** Beiwe's heartbeat is not unique; m-Path has the same design.
+- **OS background limits (108):** written up as [`os-background-limits.md`](os-background-limits.md).
+- **Post-heartbeat Beiwe data (124):** Zawada et al. 2025 (Mayo, monitoring March to November 2024)
+  qualifies for Module 3 and is queued with Odom's companion feasibility paper.
+
+### Files
+
+Module 1: seven profiles, `sources.md`, `validation-evidence.md`, `research-library-wearables.md`,
+`research-library-index.json`, `literature-library.md`; six PDFs in `literature/` (new `movesense/`
+and `empatica/` folders). Module 2: ten profiles, `sources.md`, `comparison-matrix.md`. Module 3:
+`_scan-queue.md`. Shared: `unresolved-questions.md`, new `os-background-limits.md`.
+
+### Quality control
+
+Titles of the 16 new Module 1 library records were checked against Crossref; all match. A first draft
+of four library rows had titles reconstructed from PDF filenames and was corrected before commit.
+PDFs not obtained (bot checks): Lee 2023, Searles 2026, Grandner 2023, Cohen 2026 *Hypertension*.
+
+---
+
 ## 2026-10-09 — Weekly scan: six unmerged run branches consolidated into main
 
 **Module:** 1, 2, 3 (literature tracking only). No profile, matrix or README content changed.

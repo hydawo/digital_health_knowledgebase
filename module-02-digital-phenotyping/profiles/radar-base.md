@@ -31,28 +31,28 @@
 
 | Stream | Android | iOS | Raw or derived | Sampling configurable | Notes |
 |---|---|---|---|---|---|
-| GPS / location | Yes | Unclear | Derived. Relative coordinates for privacy. | Unclear | Documented on the Android passive app (pRMT). |
-| Accelerometer | Yes | Unclear | Raw, about 200 ms intervals. | Unclear |  |
-| Gyroscope | Yes | Unclear | Raw, rad/s. | Unclear |  |
-| Magnetometer | Yes | Unclear | Raw, 200 ms intervals. | Unclear |  |
+| GPS / location | Yes | Conflicting documentation | Derived. Relative coordinates for privacy. | Unclear | Android pRMT. 2019 iOS chart: significant location changes in background, regular location foreground only. The iOS pRMT repo says it records location but does not send it to a server. |
+| Accelerometer | Yes | Conflicting documentation | Raw, about 200 ms intervals. | Unclear | 2019 iOS chart: foreground only. iOS pRMT repo is location-only and dormant. |
+| Gyroscope | Yes | Conflicting documentation | Raw, rad/s. | Unclear | 2019 iOS chart: foreground only. |
+| Magnetometer | Yes | Conflicting documentation | Raw, 200 ms intervals. | Unclear | 2019 iOS chart: foreground only. |
 | Barometer | Unclear | Unclear | Unclear | Unclear | Not in the fetched list. |
-| Ambient light | Yes | Unclear | Raw, lux on change. | Unclear |  |
+| Ambient light | Yes | Conflicting documentation | Raw, lux on change. | Unclear | 2019 iOS chart: foreground only. |
 | Proximity | Unclear | Unclear | Unclear | Unclear | Not verified against current documentation. |
-| Device motion / activity recognition | Yes | Unclear | Derived. OS activity-recognition events, OS sleep events, step count. | Unclear |  |
+| Device motion / activity recognition | Yes | Yes | Derived. Android: OS activity-recognition events, OS sleep events, step count. iOS: HealthKit steps, distance, flights, exercise time, workouts, sleep analysis. | Unclear | iOS data are read from HealthKit by the aRMT app's `healthkit` task when the participant opens it, not streamed in the background. No iOS activity-recognition events documented. |
 | Screen state | Yes | Unclear | Event. Lock, unlock, shutdown. | Unclear |  |
-| App usage | Yes | Unclear | Event. Foreground and background with category. | Unclear |  |
-| Battery / charging | Unclear | Unclear | Unclear | Unclear | Not in the fetched list. |
+| App usage | Yes | No | Event. Foreground and background with category. | Unclear | 2019 iOS chart: no. |
+| Battery / charging | Yes | Conflicting documentation | Unclear | Unclear | Battery level is in the Android list on the Phone Data Sensors page. 2019 iOS chart: foreground only. |
 | Network / connectivity | Unclear | Unclear | Unclear | Unclear | Not verified against current documentation. |
 | Wi-Fi | Unclear | Unclear | Unclear | Unclear | Not verified against current documentation. |
-| Bluetooth | Yes | Unclear | Derived. Device counts, hourly. | Unclear |  |
-| Calls (metadata) | Yes | No (OS) | Metadata, hashed numbers. | Unclear |  |
-| SMS (metadata) | Yes | No (OS) | Metadata | Unclear |  |
+| Bluetooth | Yes | Conflicting documentation | Derived. Device counts, hourly. | Unclear | 2019 iOS chart: scanning foreground only; connecting to known peripherals (wearables) yes. |
+| Calls (metadata) | Yes | No (OS) | Metadata, hashed numbers. | Unclear | 2019 chart: Android "for self-published apps only", since Google Play restricts call-log access. |
+| SMS (metadata) | Yes | No (OS) | Metadata | Unclear | Same Google Play restriction as calls. |
 | Keyboard | Unclear | Unclear | Unclear | Unclear | Not verified against current documentation. |
 | Audio / microphone | Unclear | Unclear | Unclear | Unclear | Not verified against current documentation. |
 | Notifications | Unclear | Unclear | Unclear | Unclear | Not verified against current documentation. |
 | Device information | Unclear | Unclear | Unclear | Unclear | Not verified against current documentation. |
 
-**Verification.** Android column Verified 2026-08-25 from radar-base.org's Phone Data Sensors page. The same page states that iOS availability is "more sparse" because of background-collection limits and carries a comparison chart the fetch could not extract, so the iOS column is Unclear throughout rather than inferred.
+**Verification.** Android column Verified 2026-08-25 from radar-base.org's Phone Data Sensors page, re-read 2026-10-09 (page updated 2026-05-28; battery level is in its list). iOS column updated 2026-10-09 from the page's "Sensors per phone type" chart, which was read directly as an image. The chart was uploaded in September 2019. It marks acceleration, gyroscope, magnetic field, light, battery, regular location, Bluetooth scanning, timezone, time sync and weather as "foreground only" on iOS. Significant location changes and connection to known peripherals work in the background. Steps are read from HealthKit history in the foreground. App usage and call and SMS logs are not available, and data are sent "when activated only". **The chart conflicts with the iOS app's own repository.** `RADAR-base/radar-prmt-ios`, last committed 2021-01-19, describes the app as "work in progress" that "only records location data without sending it to a server". Rows where the chart describes foreground-only collection are therefore marked Conflicting documentation, not Yes. In current code the working iOS route is the active (aRMT, `RADAR-Questionnaire`) app's HealthKit task. It reads 17 HealthKit types (steps, flights climbed, walking and cycling distance, active and basal energy, heart rate, resting heart rate, SpO2, respiratory rate, sleep analysis, workouts, exercise time, blood glucose, blood pressure, weight) when the participant opens the task. A `radar-sensorkit-cordova` plugin for Apple SensorKit exists (last push 2024-11), but nothing found shows it in use. A new React Native app kit (`radar-base-app`) is under active development. Confidence: chart contents Verified; current iOS phone-sensor capability Unclear; HealthKit route Verified from code.
 
 ### Notes from earlier verification passes
 
@@ -91,6 +91,13 @@
 ## Participant Experience
 
 - Not verified in any pass to date.
+
+### Background keepalive (added 2026-10-09)
+
+- No participant-facing, server-triggered keepalive like Beiwe's was found. The Android pRMT app runs as an Android foreground service (`startForeground` in `radar-commons-android`), the standard way to stay alive on Android.
+- On the server side, `RADAR-Backend`'s `DisconnectMonitor` watches whether each source has stopped sending and **emails researchers** at configured addresses (example timeout 5 minutes). It does not notify the participant. Whether current Kubernetes deployments enable it by default was not checked.
+- `RADAR-Appserver` schedules Firebase push notifications and data messages, but its documented use is questionnaire delivery and reminders for the aRMT app, not waking the passive app.
+- Status: **Corroborated** from code and READMEs, 2026-10-09.
 
 ## Privacy, Security, and Compliance
 
@@ -139,7 +146,7 @@
 
 - ~~Is there a managed-hosting or paid-support offering comparable to Beiwe's Service Center?~~ **Resolved 2026-08-25**, yes, "RADAR-base as a Service" via The Hyve; pricing still not public.
 - What does "RADAR-base as a Service" actually cost, and how does its ~200-participant single-server ceiling get raised for larger studies (multi-server pricing/architecture)?
-- ~~What is the exact current sensor/data-stream catalog, and how do iOS and Android differ?~~ **Largely resolved 2026-08-25** for Android (17-item itemized list) and qualitatively for the iOS gap ("substantial differences," iOS "more sparse"); the exact iOS-side itemized list (which of the 17 Android streams iOS lacks or restricts) is still not obtained.
+- ~~What is the exact current sensor/data-stream catalog, and how do iOS and Android differ?~~ **Largely resolved 2026-08-25** for Android (17-item itemized list) and qualitatively for the iOS gap ("substantial differences," iOS "more sparse"); the exact iOS-side itemized list (which of the 17 Android streams iOS lacks or restricts) is still not obtained. **Partly resolved 2026-10-09**: the 2019 per-stream chart is now in the stream table, but it conflicts with the dormant iOS pRMT repository, and current iOS passive collection appears to run through HealthKit in the aRMT app. Still open: which iOS app a new study would actually deploy for phone sensors.
 - What compliance certifications (HIPAA, GDPR DPA beyond hosting-infrastructure GDPR-compliance framing, SOC 2, ISO 27001) does the maintained reference deployment or a typical institutional deployment carry?
 - What is the realistic infrastructure/DevOps staffing requirement to stand up and operate a **self-hosted** production instance (as distinct from the now-confirmed managed-hosting alternative)?
 - What built-in derived-feature/analytics catalog exists natively versus requiring custom per-study development?
@@ -162,3 +169,8 @@
 7. RADAR-base, "Passive App (pRMT App)." https://radar-base.org/docs/prmt-app/ (accessed 2026-08-25, second pass, Direct fetch, limited detail retrieved). General passive-app description; did not itself yield iOS/Android platform-support detail (see source 6 instead).
 8. `github.com/RADAR-base` organization page (second pass). https://github.com/RADAR-base (accessed 2026-08-25). **Primary/Verified.** Confirms `ManagementPortal`, `radar-prmt-android`, `RADAR-Questionnaire`, `RADAR-Schemas`, `RADAR-Kubernetes`, and `radar-helm-charts` repositories, all Apache-2.0, active through August 2026.
 9. The Hyve, "RADAR-base as a Service." https://www.thehyve.nl/services/radar-base-as-a-service (accessed 2026-08-25, second pass). **Primary/Verified.** Confirms a named managed-hosting offering: GDPR-compliant cloud hosting, 2 to 4 week setup, ~200-participant single-server guidance, no published pricing. Resolves unresolved-question #86.
+10. RADAR-base, "Sensors per phone type" chart on the Phone Data Sensors page. https://radar-base.org/wp-content/uploads/2019/09/iOS_pRMT_App_Android_Sensor_Comparison.png (read 2026-10-09). **Primary/Direct.** Per-stream iOS vs Android availability as of 2019.
+11. `RADAR-base/radar-prmt-ios` README and commits via the GitHub API. https://github.com/RADAR-base/radar-prmt-ios (accessed 2026-10-09). **Primary/Direct.** "Work in progress", location only, not sent to server; last commit 2021-01-19.
+12. `RADAR-base/RADAR-Questionnaire` `package.json`, README and `src/app/shared/models/health.ts`. https://github.com/RADAR-base/RADAR-Questionnaire (accessed 2026-10-09). **Primary/Direct.** HealthKit task and supported types; Firebase messaging.
+13. `RADAR-base/RADAR-Appserver` README and `RADAR-base/RADAR-Backend` README and `DisconnectMonitor.java`. https://github.com/RADAR-base/RADAR-Appserver ; https://github.com/RADAR-base/RADAR-Backend (accessed 2026-10-09). **Primary/Direct.** Push scheduling for questionnaires; researcher email on source disconnect.
+14. RADAR-base GitHub repository listing, iOS-related repos (`radar-sensorkit-cordova`, `radar-base-app`) (accessed 2026-10-09). **Direct.**

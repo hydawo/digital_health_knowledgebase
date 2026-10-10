@@ -29,7 +29,7 @@ papers['methods-and-reviews'] = [[label(f), d + '/' + f] for f in sorted(os.list
 M1MAP = {'apple-watch-healthkit': (['apple-watch'], ['apple']), 'oura': (['oura'], ['oura']), 'whoop': (['whoop'], ['whoop']),
          'fitbit-google': (['fitbit'], ['fitbit']), 'ametris-actigraph': (['research-accelerometers'], ['actigraph']),
          'axivity-geneactiv': (['research-accelerometers'], ['axivity']), 'garmin': ([], ['garmin']), 'samsung': ([], ['samsung']),
-         'withings': ([], ['withings']), 'movesense': ([], ['movesense']), 'empatica': ([], ['empatica']), 'polar': ([], [])}
+         'withings': ([], ['withings']), 'movesense': (['movesense'], ['movesense']), 'empatica': (['empatica'], ['empatica']), 'polar': ([], [])}
 M2MAP = {'beiwe': (['beiwe'], ['beiwe']), 'radar-base': (['radar-base'], ['radar']), 'mindlamp': (['mindlamp'], ['mindlamp']),
          'aware-framework': (['aware-framework'], ['aware']), 'avicenna-research-ethica': (['avicenna-research-ethica'], ['avicenna']),
          'metricwire': ([], ['metricwire']), 'm-path': (['m-path'], ['mpath']), 'lifedata': (['lifedata'], ['lifedata']),

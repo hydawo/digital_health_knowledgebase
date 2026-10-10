@@ -166,7 +166,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
     <rect x="560" y="56" width="190" height="112" rx="8" class="box"/>
     <text x="574" y="82" class="ttl">Open questions</text>
     <text x="574" y="102" class="sm">unresolved-questions.md</text>
-    <text x="574" y="118" class="sm">128 entries, 10 closed.</text>
+    <text x="574" y="118" class="sm">83 open, 4 need you.</text>
     <text x="574" y="134" class="sm">Every dead end gets a</text>
     <text x="574" y="150" class="sm">number. Section 3.</text>
 
@@ -305,19 +305,16 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
   <div class="eyebrow">3 · The open questions</div>
   <h2>What "Q120" and the rest mean</h2>
   <p>Whenever research hits something it can't settle (a price that isn't published, two papers that disagree, a paper behind a paywall, a call only you can make), it goes into <code>shared/unresolved-questions.md</code> with a number. Numbers run 1 to 125 in the order they came up. When I say "Q120", I mean row 120 of that file. The file prints the numbers without the Q, which is why my search missed them this morning.</p>
-  <p>The file groups them into 17 "tiers". Tiers 1 to 7 are sorted by topic. From tier 8 on, each tier holds whatever one research session raised.</p>
+  <p>On 9 October the file was reorganised by <b>who can close each question</b>, and all 34 questions a research session could answer were researched. 20 were closed outright. 83 remain open, and only 4 of those need you.</p>
 
-  <div class="bars" role="list" aria-label="Questions per tier">
-    <div class="legend" style="padding-bottom:6px"><span><i class="sw" style="background:var(--accent);border-color:var(--accent)"></i>open</span><span><i class="sw" style="background:var(--muted);border-color:var(--muted);opacity:.6"></i>closed</span><span>Bar length = number of questions; longest is 15</span></div>
-    <div class="grouphead">By topic</div>
-    <div id="bars-topic"></div>
-    <div class="grouphead">By the session that raised them</div>
-    <div id="bars-session"></div>
+  <div class="bars" role="list" aria-label="Open questions by who closes them">
+    <div class="legend" style="padding-bottom:6px"><span>Open questions by who can close them. Bar length is to scale; longest is 55</span></div>
+    <div id="bars-sec"></div>
   </div>
+  <p class="muted">The 55 vendor questions are not work to do. They are the list to send a vendor before a study signs with them: unpublished prices, whether they will sign a HIPAA agreement, API limits.</p>
 
-  <h3 style="margin-top:8px">The ten from the most recent sessions (Q116 to Q125)</h3>
-  <p class="muted">These are the ones the last two handoffs pointed at. The label says what it takes to close each one.</p>
-  <div class="legend"><span><span class="pill p-you">Your call</span> a decision only you can make</span><span><span class="pill p-access">Needs access</span> library login or a browser</span><span><span class="pill p-contact">Needs a contact</span> email a vendor or author</span><span><span class="pill p-read">Claude can do</span> reading full texts</span></div>
+  <h3 style="margin-top:8px">The four that need you</h3>
+  <p class="muted">Each is a yes or no about what belongs in the knowledge base.</p>
   <div class="qs" id="qs"></div>
 </section>
 
@@ -326,39 +323,30 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
   <h2>Done, waiting on you, next</h2>
   <div class="status">
     <div class="st" style="--c:var(--ok)"><h3><i class="dot"></i>Done today</h3>
-      <ul><li>Six weeks of robot output merged into <code>main</code> and pushed</li><li>The open-questions file checked: nothing is missing</li><li>The six old scan branches deleted from GitHub (local backup tags kept)</li><li>KB Explorer republished with the merged papers</li><li>This map</li></ul></div>
+      <ul><li>Six weeks of robot output merged into <code>main</code> and pushed</li><li>Open questions reorganised by who can close them; 34 researched, 20 closed, 104 open down to 83</li><li>Corrections from that research: AWARE does collect location on iOS; mindLAMP's server and apps have no open-source licence; WHOOP and Apple sleep rankings fixed; Movesense does have independent validation</li><li>The six old scan branches deleted from GitHub (local backup tags kept)</li><li>KB Explorer republished with the merged papers</li><li>This map</li></ul></div>
     <div class="st" style="--c:var(--warn)"><h3><i class="dot"></i>Needs you (in claude.ai settings)</h3>
-      <ol><li>Set the scan routine to push to <code>main</code>, not a new branch</li><li>Add <code>www.ebi.ac.uk</code>, <code>pmc.ncbi.nlm.nih.gov</code>, <code>www.ncbi.nlm.nih.gov</code> to its network allowlist so it can save PDFs</li><li>Decide Q122 and Q123</li></ol></div>
+      <ol><li>Set the scan routine to push to <code>main</code>, not a new branch</li><li>Add <code>www.ebi.ac.uk</code>, <code>pmc.ncbi.nlm.nih.gov</code>, <code>www.ncbi.nlm.nih.gov</code> to its network allowlist so it can save PDFs</li><li>Four decisions: Q109, Q114, Q122, Q123 (below in section 3)</li></ol></div>
     <div class="st" style="--c:var(--accent)"><h3><i class="dot"></i>Next research</h3>
-      <ol><li>Update the Fitbit profile: Google's legacy Fitbit Web API was due to shut down on 30 September 2026</li><li>Spot-check five Module 3 profiles against their full texts</li><li>Three leftover Module 3 profiles: Vidal 2022, Nock 2026, Weingarden 2025</li><li>Screen the 16 queued candidates</li><li>Approve or drop the Module 4 robot proposal</li></ol></div>
+      <ol><li>Update the Fitbit profile: Google's legacy Fitbit Web API was due to shut down on 30 September 2026</li><li>Spot-check five Module 3 profiles against their full texts</li><li>Three leftover Module 3 profiles: Vidal 2022, Nock 2026, Weingarden 2025</li><li>Screen the 18 queued candidates, starting with Zawada 2025 (the first Beiwe study after the heartbeat change)</li><li>Approve or drop the Module 4 robot proposal</li></ol></div>
   </div>
 </section>
 
 </div>
 
 <script>
-const tiers=[
- [1,"Gating at scale",6,0,"topic"],[2,"Pricing",9,0,"topic"],[3,"Compliance and governance",12,0,"topic"],[4,"Undocumented specs",15,0,"topic"],[5,"Sources that contradict",5,0,"topic"],[6,"Discovery gaps",10,0,"topic"],[7,"Evidence retrieval",6,0,"topic"],
- [8,"Module 1 second pass",14,0,"s"],[9,"Sponsorship pass",7,1,"s"],[10,"Module 2 first pass",11,4,"s"],[11,"Module 2 library retrofit",2,0,"s"],[12,"Module 1 library retrofit",4,3,"s"],[13,"Module 2 third pass",5,0,"s"],[14,"Module 3 first pass",5,0,"s"],[15,"Module 3 extension",7,1,"s"],[16,"Module 3 AWARE pass",3,0,"s"],[17,"Module 3 coverage pass",7,1,"s"]];
-const max=15;
-for(const [n,name,total,closed,g] of tiers){
+const secs=[["Vendor checklists","only when a study picks that vendor",55],["Needs library access","optional, a few minutes each",8],["Standing evidence gaps","re-checked each literature pass",6],["Needs a hands-on test","developer account or device",6],["Needs an author or lab","optional emails",4],["Needs a decision","you",4],["Research queue","emptied 9 October",0]];
+const max=55;
+for(const [name,who,n] of secs){
   const row=document.createElement("div");row.className="bar";row.setAttribute("role","listitem");
-  const open=total-closed;
-  row.innerHTML=`<div class="lab"><b>T${n}</b>${name}</div><div class="track"><div class="fill" style="width:${open/max*100}%"></div><div class="fill closed" style="left:${open/max*100}%;width:${closed/max*100}%"></div></div><div class="n">${total}${closed?` <span title="closed">(${closed}✓)</span>`:""}</div>`;
-  document.getElementById(g==="topic"?"bars-topic":"bars-session").appendChild(row);
+  row.innerHTML=`<div class="lab">${name}<br><span class="muted" style="font-size:.8rem">${who}</span></div><div class="track"><div class="fill" style="width:${n/max*100}%"></div></div><div class="n">${n}</div>`;
+  document.getElementById("bars-sec").appendChild(row);
 }
 const P={you:["p-you","Your call"],access:["p-access","Needs access"],contact:["p-contact","Needs a contact"],read:["p-read","Claude can do"]};
 const qs=[
- [116,"access","Six studies with no free copy","Six candidate studies sit behind paywalls (Annals of Surgery, Neurosurgery and others), including the only ingestible-sensor study and the only speech study found. Module 3 lacks those two kinds of data because the papers can't be read, not because nobody did the research."],
- [117,"contact","2021 or 2022?","Two papers on the same 37-person study (mSavorUs, UC Irvine) give different enrolment years. It matters because 2021 was under COVID restrictions and 2022 was not. Only the authors can say."],
- [118,"access","Did this paper really use AWARE?","Best-matching AWARE paper found (Zhang and Poellabauer, ACM 2025), but the full text is blocked. One more try through a browser is worth it."],
- [119,"read","Why Android shows more sensors","On AWARE, Android phones delivered 8.4 sensor types on average and iPhones 4.7. Is that the same cause as the other iPhone and Android gaps, or a separate one?"],
- [120,"access","IBD study's per-device numbers","A 309-person study using Apple Watch, Fitbit and Oura (Hirten 2025) puts its wear statistics in a supplement that PMC hides behind a bot check."],
- [121,"contact","0 of 13 Android users","In one Beiwe survey study, 42 of 61 iPhone users finished the month-one survey and 0 of 13 Android users did. The paper doesn't say why. Another Beiwe study found the opposite."],
- [122,"you","Profile two small apps?","Mindful Moods (2015) and the Vaping and Health Study app (2024) each have a paper and an empty folder. Are they worth full Module 2 profiles, or just a note?"],
- [123,"you","Three Module 4 in-or-out calls","A wearables-in-serious-mental-illness abstract that may not be a full paper, and three validation-framework papers that sit between Module 1 and Module 4."],
- [124,"read","First Beiwe data after the 'heartbeat' fix?","Beiwe added a keep-alive feature in May 2024. Two studies with 2024 data might be the first to show whether it improved data completeness. Needs both full texts read."],
- [125,"contact","What does Evidation deliver?","Data format, delivery speed, security certifications and any academic access route are all unknown. The vendor site ends in a contact form."]];
+ [109,"you","Profile three more devices?","The Dreem EEG sleep headband, Fibaro home sensors and CANedge car data logger all appear in the RADAR-AD study but have no Module 1 profile. Add them, or record them as out of scope?"],
+ [114,"you","How to handle CARP's app family","CARP is a programming library inside other apps (DiaFocus, mCardia, Wrist Angel and others), so it never publishes under its own name. Should those apps be profiled in Module 2, or noted under CARP?"],
+ [122,"you","Profile two small apps?","Mindful Moods (2015) and the Vaping and Health Study app (2024) each have a paper and an empty folder. Full Module 2 profiles, or just a note?"],
+ [123,"you","Three Module 4 in-or-out calls","A wearables-in-serious-mental-illness abstract that may not be a full paper, and three validation-framework papers that sit between Module 1 and Module 4."]];
 const box=document.getElementById("qs");
 for(const [id,k,t,d] of qs){const c=document.createElement("div");c.className="qc";
  c.innerHTML=`<div class="top"><span><span class="qid">Q${id}</span> <h3 style="display:inline">${t}</h3></span><span class="pill ${P[k][0]}">${P[k][1]}</span></div><p>${d}</p>`;box.appendChild(c);}

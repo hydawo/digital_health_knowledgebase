@@ -156,14 +156,28 @@
 
 - WHOOP also significantly overestimated total sleep time (+24 min), overestimated sleep efficiency, underestimated WASO by 19 minutes, and was one of only two devices with a significant sleep-onset latency bias.
 
-- **No independent study has ever compared WHOOP and Oura under the same protocol.** Robbins 2024 (Oura's strongest evidence) excluded WHOOP; Schyvens 2025 excluded Oura. A bridged estimate using Apple Watch as the shared anchor across both studies suggests Oura's four-stage agreement is probably meaningfully better than WHOOP's, see `../validation-evidence.md` §3, but that is a labelled inference, not a result.
+- ~~No independent study has ever compared WHOOP and Oura under the same protocol.~~ **Corrected 2026-10-09.** Two PSG studies placed both under one protocol, on older hardware, and Dial et al. 2025 compared them for resting HR and HRV:
 
-- Further caveats: the tested device was **WHOOP 4.0**, not the current 5.0/MG generation. WHOOP has an active internal research programme and publishes vendor-authored validation, which should be weighted as **Reported**. WHOOP MG's ECG and Blood Pressure Insights carry regulatory clearances per WHOOP's claims; the specific clearance scope was not verified. **Unclear.**
+| Study | Hardware | Result | Funding / COI | Confidence |
+|---|---|---|---|---|
+| Miller DJ, Sargent C, Roach GD 2022, *Sensors* 22(16):6317, N=53, single night PSG + ECG | WHOOP 3.0 vs Oura Gen2 (plus Apple Watch S6, Garmin FR245, Polar Vantage V, Somfit) | Four-stage κ WHOOP 0.44 vs Oura 0.43 (tied); two-state κ 0.44 vs 0.51; WHOOP TST bias −12.2 min, Oura +1.5 min; WHOOP HR ICC 0.99, HRV ICC 0.99 vs ECG | Australian Institute of Sport funded it; the authors' CQU Sleep Lab "receives support for research (i.e., funding, equipment) from WHOOP Inc."; WHOOP staff, blinded to PSG, supplied WHOOP's sleep epochs and R-R intervals | **Verified** (full text read). Tier B for WHOOP |
+| Grandner MA et al. 2023, *Sleep* 46(1):zsac152, in-lab PSG night (WHOOP n=33, Oura n=30) | WHOOP 3.0 vs Oura V2 (plus Happy Ring, Fitbit Charge 4, Actiwatch 2) | Sleep/wake accuracy WHOOP 0.86 vs Oura 0.88; specificity 0.54 vs 0.49 | 5 of 7 authors employed by Happy Health, the competing ring's maker | **Verified** (full text read) |
+| Dial MB et al. 2025, *Physiol Rep* 13:e70527, 536 nights, Polar H10 reference | WHOOP 4.0 vs Oura Gen3/Gen4 | Resting HR and HRV: Oura ahead of WHOOP (see `../validation-evidence.md` §3a) | AFRL, no competing interests | **Verified** |
+
+- Read together: on PSG sleep staging the only direct comparison (Miller 2022) shows WHOOP 3.0 and Oura Gen2 tied, which does not support the bridged estimate's "Oura meaningfully ahead" for that generation. No PSG study compares WHOOP 4.0 or later with Oura Gen3 or later; the bridged estimate in `../validation-evidence.md` §3b is still the only (indirect) evidence for current hardware.
+
+- **No WHOOP 5.0/MG validation of any kind was located.** Searched 2026-10-09: PubMed `whoop[tiab] AND ("5.0" OR "WHOOP MG" OR "Whoop 5")` (3 hits, none a validation) and Europe PMC full text including preprints (`"WHOOP 5.0" OR "WHOOP MG"`, no validation study). Every located independent result is on WHOOP 2.0 to 4.0. Whether 5.0 performs differently is **Unclear**.
+
+- The CQU author cluster's WHOOP ties are now documented paper by paper (rechecked 2026-10-09): Bellenger et al. 2022 (*Sensors* 22:6723, water polo HRV) was funded by the Australian Institute of Sport, and its COI statement discloses that the CQU Sleep Lab receives WHOOP funding and equipment, so it is **Tier B, Verified**. Miller et al. 2020 (*J Sports Sci*, PSG validation) lists the Australian Research Council (DP160104909) and the Australian Institute of Sport as funders in Crossref metadata, and its abstract says WHOOP scored the sleeps with its proprietary algorithm; its COI statement could not be read (publisher bot check). **Likely Tier B, COI Unclear.**
+
+- **SpO2 and skin temperature:** no independent validation against a reference instrument located (PubMed and Europe PMC rechecked 2026-10-09). **Still open.**
+
+- Further caveats: the Schyvens device was **WHOOP 4.0**, not the current 5.0/MG generation. WHOOP has an active internal research programme and publishes vendor-authored validation, which should be weighted as **Reported**. WHOOP MG's ECG and Blood Pressure Insights carry regulatory clearances per WHOOP's claims; the specific clearance scope was not verified. **Unclear.**
 
 ## Strengths
 
 - **No charging gap**, the only wrist wearable here that can be charged while worn, giving the best structural 24/7 completeness.
-- Best independent sleep-staging performance among wrist devices in the strongest recent comparison.
+- Best deep-sleep classification accuracy (69.6%) in the strongest recent comparison (Schyvens 2025), though fourth of six on overall four-stage agreement (κ 0.37); and tied with Oura on four-stage κ in the only head-to-head PSG study (Miller 2022, CQU lab with WHOOP support). Corrected 2026-10-09.
 - Screenless design minimises measurement reactivity, genuinely useful for observational research.
 - Well-defined nocturnal RMSSD field.
 - Clean, small, easily consumed REST API with webhooks; simple to integrate.
@@ -237,3 +251,7 @@
 5. WHOOP API Terms of Use. https://developer.whoop.com/api-terms-of-use/ (accessed 2026-08-21, **partially retrieved via search index, not fetched in full**). Source of the prohibition on selling/renting/redistributing API access and on marketing, selling, licensing, or leasing API-accessed data to third parties. **Re-read in full before relying on this summary.**
 6. Schyvens A.-M. et al., "A performance validation of six commercial wrist-worn wearable sleep-tracking devices for sleep stage scoring compared to polysomnography." *SLEEP Advances* 2025;6(2):zpaf021. https://academic.oup.com/sleepadvances/article/6/2/zpaf021/8090472, independent, n=62; WHOOP 4.0 best of six at ~69.6%.
 7. WHOOP membership pricing (secondary, unverified against vendor page): https://lifestack.ai/blog/how-much-is-whoop-membership ; https://www.droid-life.com/2026/04/22/is-a-fitbit-air-at-99-plus-a-monthly-subscription-appealing/ (accessed 2026-08-21).
+8. Miller DJ, Sargent C, Roach GD. "A Validation of Six Wearable Devices for Estimating Sleep, Heart Rate and Heart Rate Variability in Healthy Adults." *Sensors* 2022;22(16):6317. https://doi.org/10.3390/s22166317 (PMC9412437; accessed 2026-10-09). PDF: `../literature/whoop/2022-miller-sensors-six-wearables-sleep-hr-hrv-validation.pdf`.
+9. Grandner MA et al. *Sleep* 2023;46(1):zsac152. https://doi.org/10.1093/sleep/zsac152 (PMC13396806; accessed 2026-10-09).
+10. Bellenger CR, Miller D, Halson SL, Roach GD, Maclennan M, Sargent C. *Sensors* 2022;22(18):6723. https://doi.org/10.3390/s22186723 (funding and COI read from `../literature/whoop/2022-bellenger-sensors-hrv-variability-water-polo.pdf`, 2026-10-09).
+11. Miller DJ, Lastella M, Scanlan AT, et al. *J Sports Sci* 2020;38(22):2631-2636. https://doi.org/10.1080/02640414.2020.1797448 (Crossref funder metadata, https://api.crossref.org/works/10.1080/02640414.2020.1797448, accessed 2026-10-09).

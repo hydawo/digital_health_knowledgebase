@@ -11,7 +11,7 @@
 | Open source | Partly, **Samsung Health Research Stack is open source** (GitHub: S-HealthStack); the SDKs themselves are not |
 | Hosting/deployment | On-device SDK access; Research Stack backend is self-hosted by the researcher |
 | Pricing model | Device purchase; no documented SDK fee; access gated by partner-programme approval |
-| Last verified | 2026-08-21 |
+| Last verified | 2026-08-21; minimum watch generation re-checked 2026-10-09 |
 
 ## Summary
 
@@ -134,6 +134,7 @@
 ## Participant Experience
 
 - **Android only, and specifically Galaxy.** Requires a Galaxy Watch4 or later; the SDK does not support phones or emulators. This is a hard exclusion of iPhone users and of non-Samsung Android users for the watch component.
+- **Watch4 versus Watch5 (resolved 2026-10-09, Verified).** These are two different statements, not a conflict. The SDK FAQ (now titled Samsung Health Sensor SDK) says the SDK "supports only Galaxy Watch4 and later models running Wear OS powered by Samsung". The Research Stack overview says "The Galaxy Watch 5 has been extensively tested for compatibility with this tech stack" and that "Other devices may work but have not been officially tested." So Watch4 is the SDK's minimum, and Watch5 is the only model Samsung has tested end to end with Research Stack. A study that runs Research Stack on Watch4 hardware should pilot it first. Tracker availability still varies by model and watch software version, per the FAQ.
 - Battery life on Galaxy Watch is roughly 1 to 2 days in normal use; **continuous raw sensor capture will reduce this substantially** (raw PPG/ACC subscription is power-hungry). Any study using the privileged SDK must pilot battery life under its actual sampling configuration, and should expect charging burden closer to Apple Watch than Garmin.
 - Requires the participant to install the study app and grant permissions.
 - Galaxy Watch is a mainstream, well-accepted consumer device with good comfort and wear compliance.
@@ -155,7 +156,9 @@
 
 - The systematic review of steps/energy expenditure/heart rate found **Apple and Samsung had the highest validity for step count**, and that Samsung measured steps accurately in laboratory settings.
 - Energy expenditure: unacceptable across all brands including Samsung (MAPE >30%).
-- **Sleep staging:** Samsung was **not** included in either of the two major recent PSG validations (the 2024 *Sensors* three-device study or the 2025 Schyvens six-device study). Its sleep-staging validity against PSG is therefore **not established** by the strongest available comparative evidence, a real gap.
+- **Sleep staging (corrected 2026-10-09):** Samsung is absent from Robbins 2024 and Schyvens 2025, but not from all PSG comparisons. Lee T et al. 2023 (*JMIR mHealth uHealth* 11:e50983, N=75, two Korean sleep centres; most authors employed by Asleep, a competing sleep-app maker) found Galaxy Watch 5 four-stage κ 0.42 (macro F1 0.58), level with Fitbit Sense 2 and ahead of Pixel Watch (0.40), Oura Ring 3 (0.35) and Apple Watch 8 (0.30). Byun et al. 2023 (*Chronobiol Int* 40(5):596, independent) found Galaxy Watch 2 underestimated total sleep time by 24.9 min in 127 OSA patients. **Corroborated.**
+- **Sleep apnea and SpO2:** Alavi et al. 2026 (*J Clin Sleep Med* 22:150, Stanford, N=152, two PSG nights): AUROC 0.94 for AHI ≥15; funding not stated in the abstract. Browne et al. 2024 (*J Clin Sleep Med* 20(9):1479, Samsung research grant): Galaxy Watch 4 overnight SpO2 RMSE 2.54% vs PSG oximetry. Walzel et al. 2023 (*Sensors* 23(22):9164, independent): Galaxy Watch 5 met the ISO ≤4% Arms limit vs Masimo during induced hypoxemia. HR/HRV: Sarhaddi et al. 2022 (*PLoS One* 17(12):e0268361, independent, Gear Sport). **Corroborated.**
+- **Antioxidant Index and Vascular Load: no independent or vendor peer-reviewed validation located** (PubMed searched 2026-10-09). **Unclear.**
 - The much more important point for research: because raw ECG/PPG/ACC are accessible, **a study does not have to rely on Samsung's derived metrics at all.** Validation of Samsung's consumer algorithms becomes largely irrelevant if the researcher computes their own outputs from the raw signal using published, validated methods. This inverts the usual validation problem.
 - Third-party research tooling exists, e.g. the CLAID framework (ETH Zurich) publishes a Galaxy Watch collector, indicating the platform is in genuine academic use.
 
@@ -178,7 +181,7 @@
 - Tracker availability varies by watch model and software version.
 - Only one on-demand tracker (ECG or BIA) at a time.
 - Partner-programme approval required, with cryptographic app-signature pinning that complicates build management.
-- Sleep staging validity against PSG not established.
+- Sleep staging has only one multi-device PSG comparison (Lee 2023, by a competing app maker) and no independent one; Antioxidant Index and Vascular Load have no published validation (checked 2026-10-09).
 - Thin comparative validation literature relative to Fitbit and Apple.
 - Galaxy Ring raw-data access unverified.
 
@@ -233,5 +236,6 @@
 3. Samsung Mobile Press, Health SDK Suite announcement, September 2024. https://www.samsungmobilepress.com/articles/samsungs-new-health-software-development-kit-suite-powers-advancements-in-healthcare-innovation (accessed 2026-08-21). Establishes the four-component suite, raw BioActive sensor access, first-time continuous PPG IR and Red LED access, the Data SDK from October, and Research Stack 2.0 integration plans.
 4. Samsung Newsroom, Samsung Health Research Stack. https://news.samsung.com/global/samsung-electronics-unveils-samsung-health-research-stack (accessed 2026-08-21). Establishes the open-source app SDK + backend + web portal architecture and the Alpha → 1.0 → 2.0 Beta timeline.
 5. Samsung Health Research Stack GitHub. https://github.com/S-HealthStack (accessed 2026-08-21).
+8. Samsung Health Research Stack overview. https://developer.samsung.com/health/research/overview.html (accessed 2026-10-09). **Primary.** Establishes that the Galaxy Watch 5 is the officially tested device for Research Stack and that other devices "may work but have not been officially tested"; release notes list v2.0 as the latest version. Read together with (1), re-read the same day, which still states Galaxy Watch4 and later as the SDK minimum and now titles the product Samsung Health Sensor SDK.
 6. Fuller D. et al. *JMIR mHealth uHealth* 2020;8(9):e18694. https://mhealth.jmir.org/2020/9/e18694/, Samsung among highest step-count validity; energy expenditure unacceptable across brands.
 7. CLAID framework Galaxy Watch collector (ETH Zurich). https://claid.ethz.ch/framework_components/Packages/data_collection/GalaxyWatchCollector/ (accessed 2026-08-21). Evidence of academic tooling.

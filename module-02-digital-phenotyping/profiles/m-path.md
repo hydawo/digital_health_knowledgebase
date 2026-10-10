@@ -86,6 +86,13 @@
 
 - Not verified in any pass to date.
 
+### Background keepalive (added 2026-10-09)
+
+- **Yes, researcher-configured.** The m-Path Sense app contacts the m-Path servers every 5 minutes. When a set period of "radio silence" passes, for example after the app has been closed, the server sends the participant a notification asking them to reopen the app. Researchers set the thresholds in a "Remind after app is closed (in minutes)" field; the manual's example is 30, 120, 360. The reminder title and text can be customised. The manual does not state a default. This is functionally the same design as Beiwe's KeepAlive.
+- The 2023 m-Path Sense performance paper (Niemeijer et al.) described this mechanism as "currently being implemented", so it postdates that study's data.
+- On iOS 26 or later, an optional Live Activity can keep sensing running in the background longer. The participant switches it on, and it can lapse if iOS ends it.
+- Status: **Verified** from the m-Path manual (updated 2026-10-05), 2026-10-09. Sources 8 to 10.
+
 ## Privacy, Security, and Compliance
 
 - **Updated 2026-08-25 (second pass, Corroborated via direct fetch of `m-path.io`'s homepage plus a targeted search).** m-Path's own homepage states directly: "Secure data processing and storage, compliant with GDPR and HIPAA." This is a vendor self-declared compliance claim, not an independently audited certification (contrast Avicenna Research's dated, audited ISO 27001:2022 certificate found this same pass), per CLAUDE.md's instruction not to manufacture certainty, this is recorded as **Corroborated** (a specific, findable claim on the vendor's own primary page) rather than **Verified** (which would require third-party audit evidence, not located this session). Additional corroboration: m-Path is confirmed as "an original spin-off from KU Leuven's research group Quantitative Psychology and Individual Differences" (search-summary source), consistent with the platform's already-noted Belgium/KU Leuven academic origin, and a dedicated `m-path.io/Privacy_Policy_m-Path_Sense.html` privacy policy exists specifically for the sensing module, evidence the vendor treats sensing data's privacy posture as materially distinct from the core EMA product's. No SOC 2, ISO 27001, or DPA-template document was located.
@@ -162,3 +169,6 @@
 5. m-Path, Pricing. http://m-path.io/pricing/ (accessed 2026-08-25, second pass). **Primary/Verified.** Full tier structure (Free/Essential/Standard/Comfort) and add-on pricing (Sensing Lite/Full, API Access, Smartwatch Integration, Cognitive Tests, Intervention Editor, Moodboard Editor, White-Label App). Resolves unresolved-question #93's pricing component.
 6. m-Path, "Welcome to m-Path" manual landing page (second-pass direct fetch). https://m-path.io/manual/knowledge-base/welcome-to-m-path/ (accessed 2026-08-25). **Primary/Direct, limited yield.** Confirmed no sensor-level or pricing/API detail present on this specific landing page, the manual's deeper sensor-specific sub-pages were not reached this pass.
 7. Search-summary corroboration of m-Path's KU Leuven spin-off origin and GDPR-specific privacy commitments (accessed 2026-08-25, search summary, not a single direct-fetched primary page, synthesized from m-path.io and m-path.io/Privacy_Policy_m-Path_Sense.html search results).
+8. m-Path manual, "Mobile Sensing (full)." https://m-path.io/manual/knowledge-base/mobile-sensing-full/ (accessed 2026-10-09). **Primary/Direct.** Five-minute server contact and reopen reminders.
+9. m-Path manual, "Live Activity background sensing." https://m-path.io/manual/knowledge-base/live-activity-background-sensing/ (accessed 2026-10-09). **Primary/Direct.**
+10. Niemeijer K. et al. 2023, *JMIR Formative Research*, doi 10.2196/43296 (full text via Europe PMC, PMC10031448; accessed 2026-10-09). **Verified.** m-Path Sense embeds CARP Mobile Sensing; keepalive then in development.

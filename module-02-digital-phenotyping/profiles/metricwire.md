@@ -84,6 +84,12 @@
 
 - Not verified in any pass to date.
 
+### Background keepalive (added 2026-10-09)
+
+- No server-triggered keepalive was found. MetricWire's help centre says force-quitting the app stops prompts until it is reopened. On iOS, the app schedules its next 64 local notifications at each refresh, and app versions 2.2.3 and 2.2.4 added a periodic background refresh. Participants can switch that refresh off in iOS settings.
+- Researchers can spot force-quitting from repeated "app_launched" events in Participant Activity. No server-initiated wake or reopen push was described.
+- Status: **Reported**, from search summaries of MetricWire's knowledge base (its main site blocks direct fetches), 2026-10-09. Source 8.
+
 ## Privacy, Security, and Compliance
 
 - Not independently verified against primary vendor documentation this session, flagged as an open question, particularly relevant given the platform's stated use by clinical research organizations, where compliance documentation (HIPAA, GDPR, 21 CFR Part 11) would typically be expected.
@@ -149,3 +155,4 @@
 5. PitchBook, MetricWire company profile. https://pitchbook.com/profiles/company/89864-11 (accessed 2026-08-24, search summary). Founding year (2013), Waterloo, Canada headquarters.
 6. Third-party software directories: Capterra, SoftwareWorld, SoftwareSuggest, TechnologyCounter, SourceForge, Visualping (accessed 2026-08-24, search summary, both sessions). Trial/demo-availability and contact-gated-pricing characterization; no specific pricing figures located in either session.
 7. ResearchGate figure caption referencing MetricWire as the platform used in a published EMA study. https://www.researchgate.net/figure/Select-screenshots-from-the-EMA-study-smartphone-platform-MetricWire-EMA-ecological_fig2_354098947 (accessed 2026-08-24, search summary). Evidence of research use.
+8. MetricWire knowledge base, "Missing Alerts Troubleshooting." https://metricwire.atlassian.net/wiki/spaces/mwknowledgebase/pages/6750210/Missing+Alerts+Troubleshooting (accessed 2026-10-09, search summary).

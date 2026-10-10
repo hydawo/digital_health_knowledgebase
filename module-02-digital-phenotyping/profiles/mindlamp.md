@@ -90,7 +90,7 @@
 
 ## APIs, SDKs, and Extensibility
 
-- Fully open source under the BIDMCDigitalPsychiatry GitHub organization, permitting institutional forking and modification. **Second-pass update (2026-08-24, Verified via direct fetch):** licence terms are **not uniform across the codebase**, `LAMP-js` and `LAMP-py` (the official API clients) are **BSD-3-Clause**, and `LAMP-toolkit` (the analytics successor to `LAMP-cortex`) is **MIT**. The licence covering the core `LAMP-server`/`LAMP-dashboard`/`LAMP-core-android`/`LAMP-core-ios` repositories specifically was not confirmed (GitHub's org-level repository list did not surface it in this pass), narrower open item than before, since the client-library and toolkit licences are now settled. An `/api` section is referenced in docs.lamp.digital's navigation, consistent with `LAMP-js`/`LAMP-py` wrapping a documented REST API, though the API reference content itself was not fetched this session.
+- Source is public under the BIDMCDigitalPsychiatry GitHub organization, but **not uniformly open-source licensed (checked 2026-10-09, Verified via the GitHub API and each repository's root):** `LAMP-dashboard` was relicensed to **AGPL-3.0** (its LICENSE.md says earlier copies stay under BSD-3-Clause), and `LAMP-server`, `LAMP-core-android` and `LAMP-core-ios` carry **no licence file at all**, which by default reserves all rights. Forking and modifying the server or the apps therefore needs permission from BIDMC; a modified dashboard run as a service must publish its changes under AGPL. All four repositories were pushed on 2026-10-08. **Second-pass update (2026-08-24, Verified via direct fetch):** licence terms are **not uniform across the codebase**, `LAMP-js` and `LAMP-py` (the official API clients) are **BSD-3-Clause**, and `LAMP-toolkit` (the analytics successor to `LAMP-cortex`) is **MIT**. The licence covering the core `LAMP-server`/`LAMP-dashboard`/`LAMP-core-android`/`LAMP-core-ios` repositories specifically was not confirmed (GitHub's org-level repository list did not surface it in this pass), narrower open item than before, since the client-library and toolkit licences are now settled. An `/api` section is referenced in docs.lamp.digital's navigation, consistent with `LAMP-js`/`LAMP-py` wrapping a documented REST API, though the API reference content itself was not fetched this session.
 
 ## Deployment and Infrastructure
 
@@ -99,6 +99,12 @@
 ## Participant Experience
 
 - Not verified in any pass to date.
+
+### Background keepalive (added 2026-10-09)
+
+- No server-triggered keepalive like Beiwe's was found. `LAMP-app-gateway` sends Apple and Firebase push notifications, email and SMS, but its documented role is logging and notifications. A code search of the BIDMCDigitalPsychiatry organization for "heartbeat" returned nothing.
+- The Android client runs a foreground service with low-priority notification channels. Community onboarding advice is to set location to "Always Allow", avoid low power mode and keep the phone charged, which puts the burden on participant behaviour.
+- Status: **Corroborated** absence, from code and forum material, 2026-10-09. The official docs site did not answer the question. Sources 7 and 8.
 
 ## Privacy, Security, and Compliance
 
@@ -140,7 +146,7 @@
 - *(Directed to: BIDMC Division of Digital Psychiatry / John Torous lab, via https://github.com/BIDMCDigitalPsychiatry or https://www.digitalpsych.org)*
 
 - ~~Which specific mindLAMP repositories are current/production, and which are the successors to the repositories explicitly marked deprecated (`LAMP-portal`, `LAMP-app`)?~~ **Resolved 2026-08-24**, see the repository table above (Verified, direct GitHub fetch).
-- What open-source licence governs the core `LAMP-server`/`LAMP-dashboard`/`LAMP-core-android`/`LAMP-core-ios` repositories specifically? (`LAMP-js`/`LAMP-py` = BSD-3-Clause and `LAMP-toolkit` = MIT are now confirmed, narrowing this question.)
+- ~~What open-source licence governs the core `LAMP-server`/`LAMP-dashboard`/`LAMP-core-android`/`LAMP-core-ios` repositories?~~ **Answered 2026-10-09:** dashboard AGPL-3.0; server and both apps unlicensed. New question: does BIDMC grant outside teams written permission to self-host and modify the unlicensed components?
 - What is the exact per-stream iOS-vs-Android sensor parity? (The general passive-sensor list, GPS, accelerometer, screen time, calls, heart rate, steps, sleep, gyroscope, is now Corroborated, but not broken out by platform.)
 - What HIPAA/GDPR/compliance documentation exists, particularly for the clinical-use pathway as distinct from pure research use?
 - Is the "flexible hosting" mentioned in the platform's own documentation a managed-hosting service available to outside teams, and under what terms/cost? (Existence of the phrase is now Corroborated; terms remain unconfirmed.)
@@ -162,3 +168,6 @@
 4. Vaidyam A, Halamka J, Torous J. "Enabling Research and Clinical Use of Patient-Generated Health Data (the mindLAMP Platform): Digital Phenotyping Study." *JMIR mHealth and uHealth* 2022;10(1). https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8783287/ (accessed 2026-08-24, search summary). Platform-description peer-reviewed paper.
 5. mindLAMP publications listing. https://docs.lamp.digital/about/publications/, **fetch attempted, returned HTTP 404 both sessions**; existence and framing corroborated via search summary only. Still flagged as a documentation-access gap.
 6. International/adapted-deployment claim (Canada, Australia), search-summary corroboration only, not independently traced to a specific named study or primary source in either session. **Reported**, not Verified.
+7. `BIDMCDigitalPsychiatry/LAMP-app-gateway` README and `LAMP-kotlin` source via the GitHub API, plus an organization code search for "heartbeat" (accessed 2026-10-09). **Primary/Direct.**
+8. mindLAMP community forum (mindlamp.discourse.group) threads on notifications, battery and onboarding (accessed 2026-10-09, search summary). **Reported.**
+9. BIDMCDigitalPsychiatry repository licences, checked 2026-10-09 via https://api.github.com/repos/BIDMCDigitalPsychiatry/<repo> and https://github.com/BIDMCDigitalPsychiatry/LAMP-dashboard/blob/master/LICENSE.md. **Primary/Verified.** LAMP-dashboard AGPL-3.0 (previously BSD-3-Clause); LAMP-server, LAMP-core-android, LAMP-core-ios no licence file.

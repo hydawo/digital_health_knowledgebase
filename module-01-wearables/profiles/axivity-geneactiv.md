@@ -11,7 +11,7 @@
 | Open source | **Axivity: firmware and software BSD 2-clause; hardware and enclosure CC BY 3.0.** GENEActiv: proprietary device, open analysis ecosystem |
 | Hosting/deployment | **None**, devices log to internal memory, downloaded by USB. No cloud, no account |
 | Pricing model | Device purchase only; no subscription, no platform fee |
-| Last verified | 2026-08-21 |
+| Last verified | 2026-08-21; GENEActiv supply and Open Movement maintenance re-checked 2026-10-09 |
 
 ## Summary
 
@@ -27,6 +27,7 @@
 - the Open Movement project at Newcastle University. **Verified** (github.com/digitalinteraction/openmovement/wiki/AX3).
 - **GENEActiv Original / GENEActiv Sleep** (Activinsights), wrist-worn raw accelerometer with
 - additional light and near-body temperature channels on the Original.
+- **GENEActiv supply status (re-checked 2026-10-09, Corroborated).** Activinsights still sells GENEActiv. Its product page was republished on 2026-01-29 with a "Request a Quote" route, a note that each order needs a USB cradle (up to 4 devices per cradle), "Up to 2 months battery life", and a statement that the device is moving from MDD 93/42/EEC Class I to EU MDR compliance. No discontinuation or end-of-life notice appears. The page names a single "GENEActiv" with no Original or Sleep variants, and the site lists a second wearable, the ActivInsights Band. Activinsights also co-owns the GENEAcore R package for raw GENEActiv files, released as version 1.2.0 on 2026-04-02. Whether the device is in current manufacture, and the lead times, are not stated publicly; ask Activinsights (info@activinsights.com) when ordering.
 
 - There is no platform. The architecture is: configure device → participant wears it → return device → download file → analyze.
 
@@ -74,6 +75,7 @@
 - **biobankAccelerometerAnalysis** (Oxford), the machine-learning activity classification pipeline
 - used on UK Biobank data. **Verified** (biobankaccanalysis.readthedocs.io).
 - **Open Movement software (OmGui)**, device configuration and download. BSD 2-clause.
+- **Maintenance status (re-checked 2026-10-09, Verified from the GitHub repository).** The project now lives at `github.com/openmovementproject/openmovement` (the old `digitalinteraction/openmovement` URL redirects). It is not archived. The repository was last pushed on 2026-08-18, mostly documentation and FAQ edits, and the separate `libomapi` library was updated on 2026-07-21. The tools themselves change slowly. The last OmGui (AX3 GUI) release is **version 45, dated 2022-10-31**. The newest AX3 firmware is **V50** (a WinUSB/generic variant dated 2020-05-19, committed to the firmware source tree 2024-04-26 and added to the download notes 2026-03-11); the newest AX6 firmware is **V56, dated 2019-12-09**. A browser-based configurator, AX Config (`config.openmovement.dev`, repository `openmovement-axconfig`), was last pushed 2025-09-09. Read this as maintained but mature: the documentation and libraries get attention, while OmGui and the firmware have had no feature release in years. Plan on OmGui 45 (Windows, .NET 3.5) or the web configurator.
 
 - Because the analysis code is open and published, an Axivity/GENEActiv study is **reproducible in a way that no consumer-wearable study can be.** Every transformation from raw acceleration to endpoint is inspectable. This is the single strongest methodological argument for this device class.
 
@@ -187,15 +189,18 @@
 
 - Current list and academic pricing for AX3, AX6, and GENEActiv?
 - Maximum recording duration at various sampling-rate/range configurations for each device?
-- Current status and maintenance of the Open Movement project and OmGui?
-- Is Activinsights' GENEActiv line still in active production and supply?
+- ~~Current status and maintenance of the Open Movement project and OmGui?~~ Resolved 2026-10-09: active repository, OmGui last released 2022-10-31 (v45), AX3 firmware V50, AX6 firmware V56; see Derived Metrics / Analytics.
+- Is Activinsights' GENEActiv line still in active production and supply? Partly resolved 2026-10-09: still offered for sale by quote with a 2026 product page and no discontinuation notice; manufacturing status and lead times need Activinsights to confirm.
 - What is the practical device-loss rate in postal deployments, and how do large cohorts mitigate it?
 
 ## Key Links
 
 - Axivity: https://axivity.com/
 - Axivity UK Biobank case study: https://axivity.com/case-studies/biobank
-- **Open Movement AX3 wiki: https://github.com/digitalinteraction/openmovement/wiki/AX3**
+- **Open Movement AX3 wiki: https://github.com/digitalinteraction/openmovement/wiki/AX3** (redirects to `github.com/openmovementproject/openmovement`)
+- OmGui revision history: https://github.com/openmovementproject/openmovement/blob/master/Downloads/AX3/AX3-GUI-revisions.md
+- AX Config web configurator: https://config.openmovement.dev
+- GENEActiv product page: https://activinsights.com/digital-health-technologies/professional-wearables/geneactiv/
 - UK Biobank Physical Activity Monitor documentation: https://biobank.ndph.ox.ac.uk/ukb/ukb/docs/PhysicalActivityMonitor.pdf
 - Doherty et al. PLOS ONE 2017: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0169649
 - actipy (Python SDK): https://github.com/OxWearables/actipy
@@ -203,4 +208,4 @@
 
 ## Sources
 
-- See `../sources.md` entries S-AXV-01 through S-AXV-05.
+- See `../sources.md` entries S-AXV-01 through S-AXV-05, and S-AXV-07 through S-AXV-09 (added 2026-10-09).

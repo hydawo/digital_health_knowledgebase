@@ -86,6 +86,12 @@
 
 - Not verified in any pass to date.
 
+### Background keepalive (added 2026-10-09)
+
+- No server-triggered keepalive was found. Notification triggers in the docs cover participation events (invited, joined) and activity-session events (released, completed, canceled, expired), not "app stopped sending".
+- Researchers get monitoring instead. The Participation page shows an "In Operation" percentage (share of time the app was running and collecting sensor data) and a Last Recorded Data Time per participant. "Reload Devices" sends a message to participants' devices to pull new study settings. That is a configuration sync, not a keepalive, and the periodic sync otherwise "can take about 30 days".
+- Status: **Corroborated** absence, from documentation dated 2025-06-16 and the notifications reference, 2026-10-09. Sources 12 and 13.
+
 ## Privacy, Security, and Compliance
 
 - **Materially upgraded 2026-08-25 (second pass, Verified via direct fetch of `avicennaresearch.com/legal/`).** This is now one of the better-documented compliance postures in this module:
@@ -166,3 +172,5 @@
 9. Avicenna Research, homepage (second-pass direct re-fetch). https://avicennaresearch.com/ (accessed 2026-08-25). **Primary/Direct.** Re-confirms no pricing, no developer API, no self-hosting mentioned; references security/compliance without naming frameworks on this specific page.
 10. Avicenna Research, "Legal Documents." https://avicennaresearch.com/legal/ (accessed 2026-08-25, second pass). **Primary/Verified.** ISO 27001:2022 certification (certified Nov 2024, zero nonconformities; surveillance audit Nov 2025, zero nonconformities), AES-256 encryption at rest, HIPAA Privacy/Security Rule language for minors' PHI, UK GDPR Article 8, EU GDPR, PIPEDA, DPA scope description. Resolves the majority of unresolved-question #84 for this platform.
 11. Avicenna Research, "Data Access & Analytics" (second-pass direct re-fetch). https://avicennaresearch.dev/features/data-access-and-analytics/ (accessed 2026-08-25). **Primary/Direct.** Re-confirms export formats (CSV, JSON, GEXF, KML); no developer API mentioned.
+12. Avicenna Research, "Participation" reference. https://forum.avicennaresearch.com/t/participation/1280 (redirected from learn.avicennaresearch.com; accessed 2026-10-09). **Primary/Direct.**
+13. Avicenna Research, "Notifications" reference. https://learn.avicennaresearch.com/reference/study-setup-and-deployment/notifications (accessed 2026-10-09, search summary).

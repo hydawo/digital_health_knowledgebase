@@ -4,7 +4,7 @@ Platforms that materially belong in the Module 1 comparison but did not warrant 
 this pass, either because they are narrower in scope, or because public documentation is too thin
 to fill the template honestly. Each entry states what was established and what was not.
 
-**Last verified: 2026-08-21.** These entries close the discovery gap recorded in the first pass.
+**Last verified: 2026-08-21; RingConn, Circular and Amazfit / Zepp section added 2026-10-09.** These entries close the discovery gap recorded in the first pass.
 
 ---
 
@@ -105,17 +105,30 @@ Links: https://verily.com/ · https://verily.com/perspectives/verily-and-samsung
 
 ---
 
+## RingConn, Circular and Amazfit / Zepp, data-access check (2026-10-09)
+
+A desk check of primary sources for whether any of these offers researchers a data route beyond the consumer app. None publishes a research API or research programme.
+
+| Platform | What is documented | Research data access | Confidence |
+|---|---|---|---|
+| **RingConn** (Ninenovo) | Syncs to Health Connect on Android 9 and later since Google Fit sync ended on 1 October 2025 (RingConn blog, 7 August 2025). Company-run studies with Shanghai Jiao Tong University and hospitals, including a 2026 *npj Digital Medicine* paper on bilateral ring PPG, per a company press release. | No public developer API, SDK or research programme found. Researchers can read whatever RingConn writes to Health Connect (and reportedly Apple Health) through those OS stores, which means summary metrics, not raw PPG. A community reverse-engineered BLE project (OpenCircuit) exists and is not a supportable research route. | No API: **Reported** (absence of evidence on the vendor site and in search). Health Connect sync: **Verified**. Apple Health sync: **Unclear**, not confirmed on a RingConn page. |
+| **Circular** (Circular Ring 2) | Consumer ring with ECG and FDA-cleared AFib detection per trade coverage. Companion app on iOS; the store listing names circular.xyz/help for support, and that page returned 403 to automated fetch. | No developer API, export documentation, OS health-store integration or research programme found on circular.xyz or in search. | **Unclear**. Needs Circular to confirm (support@circular.xyz). |
+| **Amazfit / Zepp Health** | Zepp OS developer framework (docs.zepp.com) for on-watch Mini Programs. The device-app API exposes an `Accelerometer` (x, y, z in cm/s², from API level 3.0, with `FREQ_MODE_LOW`, `FREQ_MODE_NORMAL` and `FREQ_MODE_HIGH` and no Hz values published), a `Gyroscope` with the same pattern, `HeartRate` as bpm values plus a per-minute array for the current day, and `BloodOxygen` as SpO2 results. | No raw PPG in the documented API. Accelerometer and gyroscope can be read only by building and side-loading a watch app that runs while the study needs data. No cloud research API or research programme found; the developer.zepp.com landing page is a JavaScript shell with no retrievable text. Third-party aggregators (Terra, Thryve) offer normalised summaries of daily activity, sleep and heart rate. Unofficial reverse-engineered cloud access exists and is not a supportable research route. | On-device sensor API: **Verified** from docs.zepp.com. No research cloud API: **Reported**. Accelerometer rate per mode: **Unclear**. |
+
+**Bottom line.** None of the three is a research-access platform in the sense Ultrahuman (UltraSignal) or Samsung (Health Sensor SDK) now are. For a study that wants their data, the realistic routes are OS health stores (Health Connect, Apple Health) or an aggregator, at summary-metric resolution. Zepp OS is the only one with a documented on-device route to motion sensors, and that requires building a watch app. Only the vendors can confirm whether an unpublished partner or research arrangement exists.
+
+---
+
 ## Not investigated in this pass
 
 Recorded so their absence remains a known gap rather than an implied judgement.
 
 | Technology | Note |
 |---|---|
-| **RingConn, Circular, Samsung Galaxy Ring (as a distinct research target)** | Smart rings with no established research data pathway identified |
-| **Amazfit / Zepp Health** | Significant install base outside the US; Zepp OS SDK and data access for research not assessed |
+| **Samsung Galaxy Ring (as a distinct research target)** | Smart ring with no separate research data pathway assessed beyond the Samsung profile. RingConn and Circular were checked on 2026-10-09; see the section above |
 | **Whoop 5.0 vs 4.0** | Whether the Schyvens 2025 result on the 4.0 transfers to current hardware is unknown |
-| **Activinsights / GENEActiv production status** | Whether the line remains in active supply |
-| **Open Movement project maintenance** | Current status of OmGui and the AX firmware |
+| **Activinsights / GENEActiv production status** | Checked 2026-10-09: still sold by quote, product page republished January 2026, no discontinuation notice. Manufacturing status and lead times not public. See `axivity-geneactiv.md` |
+| **Open Movement project maintenance** | Checked 2026-10-09: repository active (last push 2026-08-18), OmGui last released 2022-10-31 (v45), AX3 firmware V50, AX6 firmware V56. See `axivity-geneactiv.md` |
 | **Muse, Dreem and EEG wearables** | Deliberately deferred as a distinct modality |
 | **Dexcom, Abbott and CGM generally** | Deliberately deferred to a connected-medical-devices module. Note that both Labfront and Ultrahuman now integrate CGM with wearables, so this boundary is eroding |
 
@@ -136,4 +149,4 @@ Recorded so their absence remains a known gap rather than an implied judgement.
 
 ## Sources
 
-See `../sources.md` entries S-EMG-01 through S-EMG-08.
+See `../sources.md` entries S-EMG-01 through S-EMG-08, and S-EMG-09 through S-EMG-13 (added 2026-10-09).

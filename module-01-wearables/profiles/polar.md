@@ -11,7 +11,7 @@
 | Open source | **SDK is open source** (Polar BLE SDK, GitHub); devices and cloud are not |
 | Hosting/deployment | Direct BLE streaming to a researcher's own app (no cloud required), **or** Polar Flow cloud + AccessLink API |
 | Pricing model | Device purchase; no subscription for core use; SDK free |
-| Last verified | 2026-08-21 |
+| Last verified | 2026-08-21; H10 accelerometer re-confirmed 2026-10-09 |
 
 ## Summary
 
@@ -71,7 +71,7 @@
 
 - **Verified** (`documentation/products/PolarH10.md`).
 
-- **Contradiction resolved.** The first pass recorded a conflict between Polar's research-tools page (claiming H10 gives "raw sample data, such as ECG and 3D acceleration") and the SDK README's device matrix (which did not mark accelerometer for H10). The product documentation settles it: **the H10 does stream triaxial accelerometry, at up to 200 Hz and ±8 g.** The README matrix was incomplete.
+- **Contradiction resolved.** The first pass recorded a conflict between Polar's research-tools page (claiming H10 gives "raw sample data, such as ECG and 3D acceleration") and the SDK README's device matrix (which did not mark accelerometer for H10). The product documentation settles it: **the H10 does stream triaxial accelerometry, at up to 200 Hz and ±8 g.** The README matrix was incomplete. **Re-confirmed 2026-10-09 (Verified):** `PolarH10.md` (last changed 2026-03-13) still lists "Accelerometer data with sample rates of 25Hz, 50Hz, 100Hz and 200Hz and range of 2G, 4G and 8G", and the current README no longer carries a device capability matrix at all; it links each product to its own documentation page, so the conflicting source no longer exists.
 
 - Note the asymmetry in onboard recording: the H10 can *stream* ECG and ACC over BLE, but its **internal memory logs heart rate only**. A phone-free H10 protocol therefore captures HR, not ECG.
 
@@ -258,7 +258,7 @@
 1. Polar BLE SDK repository. https://github.com/polarofficial/polar-ble-sdk (accessed 2026-08-21). **Primary.** Establishes open-source status, Android/iOS support, streamable data types (HR, ECG, ACC, PPG), and the per-device support matrix, the latter containing apparent errors, see body text.
 2. Polar, Research tools. https://www.polar.com/en/science/research-tools/ (accessed 2026-08-21). **Primary (vendor).** Establishes H10 raw ECG and 3D acceleration access, Verity Sense PPG and acceleration with built-in memory and SDK connectivity, Open AccessLink's scope, Team Pro's GNSS/IMU/real-time telemetry and API, and the vendor claims of 600+ H10 studies, 180 Team Pro studies (2022 to 2023), and 1,000+ papers per year.
 3. Polar developers portal. https://www.polar.com/us-en/developers (accessed 2026-08-21).
-4. Polar H10 and Verity Sense per-product SDK documentation. https://github.com/polarofficial/polar-ble-sdk/blob/master/documentation/products/PolarH10.md ; .../PolarVeritySense.md (identified; **not retrieved in this session**, the source that should resolve the capability-matrix discrepancy).
+4. Polar H10 and Verity Sense per-product SDK documentation. https://github.com/polarofficial/polar-ble-sdk/blob/master/documentation/products/PolarH10.md ; .../PolarVeritySense.md (retrieved in the 2026-08-21 second pass and re-read 2026-10-09; `PolarH10.md` last changed 2026-03-13). **Primary.** Resolves the capability-matrix discrepancy: H10 streams ECG at 130 Hz and accelerometry at 25 to 200 Hz, plus or minus 2 to 8 g.
 5. Fibion, "Using Polar SDK & API in Research." https://web.fibion.com/articles/polar-sdk-api-research-fibion/ (accessed 2026-08-21). Secondary; corroborates real-time streaming of HR, RR intervals, and accelerometer from H10 and Verity Sense.
 6. Stanford wearipedia, Polar H10 extraction guide. https://wearipedia.readthedocs.io/en/latest/notebooks/polar_h10.html (accessed 2026-08-21). Evidence of academic tooling.
 7. Schyvens A.-M. et al. *SLEEP Advances* 2025;6(2):zpaf021. https://academic.oup.com/sleepadvances/article/6/2/zpaf021/8090472, noted as **not** including Polar.
