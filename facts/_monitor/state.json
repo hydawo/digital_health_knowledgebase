@@ -1,0 +1,1865 @@
+{
+ "http://m-path.io/pricing/": {
+  "fingerprint": "65e11f2570038718e4ed26189c7267d5991178925435821988bc987c7d0cede7",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://academic.ametris.com/": {
+  "fingerprint": "117122d74c2e7dd34cad904c48406759e38da7c1e2313e3be380b33799921914",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://activinsights.com/digital-health-technologies/professional-wearables/geneactiv/": {
+  "fingerprint": "1b653871e5b32129d226bb9b6afda8105cf207559925fdd1dcee6a36e5049ebc",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://ametris.com/": {
+  "fingerprint": "57a5fab7a32672eebd3895d7d8e21478e54752185957665ecac4483845d09ccd",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://ametris.com/actigraph-leap": {
+  "fingerprint": "1d6ffc81281e523d11ce2cdfde4e336cce853b3eb5f3deb5369dbb39e8e888f7",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://ametris.com/actigraph-wgt3x-bt": {
+  "fingerprint": "fef0aa037151c0993b1372d652a10a9fd0444f9d29c14841610f7c807febf9da",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://ametris.com/centrepoint": {
+  "fingerprint": "233249182dc79380c9642a7d9b4c96234caf1adae12eac63ac91c5dbe5eae3a0",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://ametris.com/compliance": {
+  "fingerprint": "25373ee74fe95f30e0f55c9ac73bbe50b20dde00e1b02128d9e7151edeb2c836",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://ametris.com/cpiw": {
+  "fingerprint": "073efee83ac17a2b58f778200c13187d49541392df56142e32e6fadce40ce48d",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://ametris.com/signant-health-company": {
+  "fingerprint": "37aaa69ce4427f68f39ad1b80f8def36464411ca7d0ed0830611fec6225187b6",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://api.ouraring.com/v2/docs": {
+  "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://app.lifedatacorp.com/": {
+  "fingerprint": "370b971c92803541f245f71d4e6ea802b4054e915b97933396cbb2a71b5bad39",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://apps.apple.com/us/app/oura-research/id6748037636": {
+  "fingerprint": "5bf40f35abd19e04b2a845dfa1a53d65d78c909593f8fc7484033151eda840c4",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://avicennaresearch.com/": {
+  "fingerprint": "bff32bd71c36ed286f7fa122f6405c9cf22b3c9f63ba13c332ad642038d48d20",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://avicennaresearch.com/legal/": {
+  "fingerprint": "0615418b32d569fb0565e093a3f8befa28ca806ba52d62bbc20b1e04dcde8d60",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://awareframework.com/": {
+  "fingerprint": "ac201d932d7a12395a87c12a76af7e21214717c924c5aa79abdc3b884fd7972c",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://awareframework.com/configurator/": {
+  "fingerprint": "1d7b568e01a122826df4c041f96ca7fe7631c900cf7ac72ba6af3aa808d69228",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://awareframework.com/plugins/": {
+  "fingerprint": "f11f199ee80a565c4feaee0d5edf33f31c13a42389e3c2b4bef16ee5fe0259b0",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://awareframework.com/rapids/": {
+  "fingerprint": "4451ee8a60ec9d5b7951164198976b54a28eb218ae2377b820f2a2bdec1936be",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://awareframework.com/sensors/": {
+  "fingerprint": "c7710dcece7f60b75dc1e9b0729ca79a57debd108f44ce5e008384ad02ca3e5e",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://axivity.com/": {
+  "fingerprint": "82a10b265cde8480019749c62795970c4cdd4386e7ccefd1622faa29369ec2ed",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://axivity.com/case-studies/biobank": {
+  "fingerprint": "146df2d87fefa654bd4e2e1550f238937f1040f7dff9ab04dcb24329b54959ea",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://axivity.com/product/ax3": {
+  "fingerprint": "078bc638ea77a6d282dd435803035777caa3ceb674f3649f6c6c0530e0607966",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://axivity.com/product/ax6": {
+  "fingerprint": "dbf6041bcdb3476e0563481b4e74318d72b83105c21e880e32f3f15759d9ce16",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://beiwe.hsph.harvard.edu/": {
+  "fingerprint": "24bd1d9f4317b78b2b1d01d663ed8c8b8fdaaec916b905f21731f4892783b908",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://biostrap.com/": {
+  "fingerprint": "1c039c00be8489b2c8ef20cefb1f9f10502461d6256449e8a80510612b630380",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://biostrap.com/research/": {
+  "fingerprint": "f0fc65b8bbcd9d099305d790bdfea223b4ea37535420113fbcb1e918b28c1271",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://biostrap.com/rpm/": {
+  "fingerprint": "10a1664096c60695891d911d7ec2ba96c9537c7450f5636c20f814ddb073b8a9",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://biostrap.com/science/": {
+  "fingerprint": "59138f1bad3b6092fb62157440d1f49edd284b582fa8d64acfdff380407c6d81",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://biostrap.com/validation/": {
+  "fingerprint": "29378b3adf9a6a32146e8a9636802b84bb59bff890cf91cddf903cf16d55d788",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://bitbucket.org/movesense/movesense-device-lib/raw/master/LICENSE.pdf": {
+  "fingerprint": "e54d1735cf9dfa80b82b5fe06ec98859265e365f019ce92e2150f474a16c57d6",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://blog.ametris.com/embracing-our-next-chapter-actigraph-is-now-ametris": {
+  "fingerprint": "14b4b0e7ff7cb1e6df452cd0717ff95ba4a52d9971765dd6c4ce2bfd6541f57e",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://blog.ametris.com/news/actigraph-rebrands-as-ametris": {
+  "fingerprint": "1a3237a5000759b41e94c2de314ad2f6bdc431fd60f36eda5e7262b924a85fb4",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://carp.dk/": {
+  "fingerprint": "b8b0f6d991db08004a51d53ccef4122c78f79792e5e450937bd20e8dcaf9a352",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://carp.dk/?p=1533": {
+  "fingerprint": "09dee9c7fa15edc390d2f37e24092e0b27f47126f119db7e42a40d02e8c2657f",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://carp.dk/cams/": {
+  "fingerprint": "051a383024327799ebb742d572301154fd33e1ecc4fd63478908b5c9036b2821",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://carp.dk/caws": {
+  "fingerprint": "7662de6bb0052edfc80b5afce6bc5d34e706405d7be0751c4d191bb53a6c6171",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://carp.dk/clinical-validation-of-diafocus/": {
+  "fingerprint": "e48ffdaa5dd0fda39549342604976329d0d77bf5fbddd427161671df5bbe148f",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://carp.dk/core/": {
+  "fingerprint": "1f0f732679d1ebafb98a82bb16d3786198c4060071af244920aab00f47142762",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://carp.dk/three-ways-to-use-carp/": {
+  "fingerprint": "380327f44577e2cd3bafb25bddb1f1e93980b5ef6ac457170fcdcfb02d456dbc",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://cloud.ouraring.com/": {
+  "fingerprint": "a543f6998a65a1e809aec97574672b5af9f6c8cab660194d337342ad0296bd71",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://cloud.ouraring.com/legal/api-agreement": {
+  "fingerprint": "47cf7c6ada1a391a2b11da266ff31c726bf225ead2e1ecc94b550958540a7257",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://cloud.ouraring.com/v2/docs": {
+  "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://cloud.ouraring.com/v2/static/json/openapi-1.41.json": {
+  "fingerprint": "8bfa83d52e2be1e0659510b01dfb6c34ef4eb1921af5d4a92c769d77bb7ac811",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://community.fitbit.com/t5/Web-API-Development/Introducing-the-next-phase-of-the-Fitbit-Web-API/td-p/5821061": {
+  "fingerprint": "0f8d5cfa353d047f78bcd99505d7fca8e37f24893609986d6c22c52a22db53af",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://dev.fitbit.com/build/reference/web-api/": {
+  "fingerprint": "400e63a56b4dc2f17ad2063d8ecd102a4ecc4c7ed5d7cf7dae35520b8a9a5ff7",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://dev.fitbit.com/build/reference/web-api/developer-guide/application-design/": {
+  "fingerprint": "a14e1f496c9eff13f1c6e2616bec6683ad90eeeab0f874da2791598ff5942179",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://dev.fitbit.com/build/reference/web-api/intraday/": {
+  "fingerprint": "1a7d1a39bd0b25194da410fa54ee6458360dc43a3dd28488121cec6b928b0e7f",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.apple.com/documentation/healthkit": {
+  "fingerprint": "e2b06b4d816dcd498e3d6063b092b16129ae806974bc3640219f1ee346b096a8",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.apple.com/documentation/healthkit/hkelectrocardiogram": {
+  "fingerprint": "39a12061df9ac3e1e1153b3d262bf380d7a4eb6041467bc5d041e97fa6ddfed7",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.apple.com/documentation/healthkit/hkelectrocardiogramquery": {
+  "fingerprint": "ce349b771ead03cfe0a6b24bcfbfda385095a5722f13e25bb322fbd1780fccf5",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.apple.com/documentation/sensorkit": {
+  "fingerprint": "52aa74ace1fbf8d1f2018340516513c782467076d4f618dd71ce89ab54c6170a",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.apple.com/documentation/sensorkit/srsensor": {
+  "fingerprint": "0a13afd8e0c4053ca25f269890ee2ca5a7cb58d154fa2a5575b9ab54583b3a08",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.apple.com/forums/thread/666206": {
+  "fingerprint": "6ca91fee32900ab661575a20c549bd70777961468881f87c58b402dcf35afad0",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.apple.com/forums/thread/746218": {
+  "fingerprint": "6ca91fee32900ab661575a20c549bd70777961468881f87c58b402dcf35afad0",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.garmin.com/connect-iq/overview/": {
+  "fingerprint": "655a5e6b64eb45195df0f573240419e85a1c83776c177f541bc37e4aeebdcb3d",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.garmin.com/fit/overview/": {
+  "fingerprint": "47b667bd366ec0f312ab4b03ac2817e36ff857c818efc5a0c5cdb33b00894bab",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.garmin.com/gc-developer-program/health-api/": {
+  "fingerprint": "f616047f85d4a9a3efd673015832179141c7bceb00e115758f6c95c24af73374",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.garmin.com/gc-developer-program/overview/": {
+  "fingerprint": "d6b10dcc8c63d604d20fa1966bff07b6c8c1a8c286b19417b84685472eb8c142",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.garmin.com/gc-developer-program/program-faq/": {
+  "fingerprint": "48b48c204345b5f0c5099a5d452485eb6749a323797b18154440b43279930cc4",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.garmin.com/health-sdk/": {
+  "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.garmin.com/health-sdk/overview/": {
+  "fingerprint": "86236b6f5ba49fba6a21ef44423d5e810f2afdceaa9d6c74bbd5f41ee64440d2",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.garmin.com/health-sdk/questions-answers/": {
+  "fingerprint": "59f9e9e1e0ef7cb18958402e9f320f988326ead109ae082fe37b4b2dee0689cc",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.samsung.com/health": {
+  "fingerprint": "babe6535b66d9430245d45a7a0b268ff99fba94916554bf21482f6af36dc6e1a",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.samsung.com/health/privileged/faq.html": {
+  "fingerprint": "baaac59dfa05d37933aa192c9b9aeb88c04d8015c5cae5034875c294ef42d861",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.samsung.com/health/research/overview.html": {
+  "fingerprint": "12c5992df7755278ad59a732bb0d9b591027e6f3a2d7ba8083a7a94d7361be20",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.samsung.com/health/research/release-notes/v11.html": {
+  "fingerprint": "abca4f086aab30e66e3d58dd8577571d22a3269631d0d13541fe8a51b36f1835",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.samsung.com/health/s-healthstack": {
+  "fingerprint": "d8feda2e6ed0fb26ce1e81f669bdadacb40bf7a4344ef15c418164f72b267b38",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.samsung.com/health/sensor/api-reference/overview-summary.html": {
+  "fingerprint": "bc6fb6c27e8b40ae570a3239a8ab20ee7cb1ef28bc07b613ae25e3e61ec3a62d",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.samsung.com/health/sensor/faq.html": {
+  "fingerprint": "baaac59dfa05d37933aa192c9b9aeb88c04d8015c5cae5034875c294ef42d861",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.samsung.com/health/sensor/guide/data-specifications.html": {
+  "fingerprint": "cafc696f5cd8bd0239e38fb59c0e8db8dcb1f97522705af6936cfdd153445ffa",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.samsung.com/health/sensor/overview.html": {
+  "fingerprint": "7a22d90c9c1960e7e3cc687cda345df784437f9198332103f90bad0d3f80d4ae",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.samsung.com/health/sensor/process.html": {
+  "fingerprint": "b02c10d0c782fad2c62d592a2bd9c4cc3483064e3bbb73ced4e29aeae0923fd3",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.samsung.com/health/sensor/sdk-license-partner-service-agreement.html": {
+  "fingerprint": "78921baa8f085d09468f75715b0bd06e793628fe2dfea47ed5d1920e7527a87f",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.whoop.com/": {
+  "fingerprint": "ba6f028efe08d13de545c53d7cf09bbe86ae4a49d59042c21f3904f80794bebf",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.whoop.com/api": {
+  "fingerprint": "bfa81ac9dc2b4c0cadca71c22182cda1875d7f626a82ab31e2a920c03ac9d36a",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.whoop.com/api-terms-of-use/": {
+  "fingerprint": "c825e8db9a70318648f65eec2a52462f732c60dda731ee5436f91f70f5f1073c",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.whoop.com/api/": {
+  "fingerprint": "bfa81ac9dc2b4c0cadca71c22182cda1875d7f626a82ab31e2a920c03ac9d36a",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.whoop.com/docs/developing/app-approval": {
+  "fingerprint": "751c6f031f7b388fe50503c47c59d4099a001baba401f74b96ee2b2dd4adfd2b",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.whoop.com/docs/developing/app-approval/": {
+  "fingerprint": "751c6f031f7b388fe50503c47c59d4099a001baba401f74b96ee2b2dd4adfd2b",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.whoop.com/docs/developing/getting-started/": {
+  "fingerprint": "a8570feba76f6e112b0bcf35097f969fa54517bee03c037fea92454cdc1c95be",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.whoop.com/docs/developing/rate-limiting/": {
+  "fingerprint": "f36ef16053ed35b7be1e726114fc9f32e1a7a8b21f28b55c99df991816b715a3",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.whoop.com/docs/developing/support/": {
+  "fingerprint": "f2f42323b37c4f14708343b622be1d3eb336c2a54e8db6dc136a3d1b8363e89f",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.whoop.com/docs/introduction/": {
+  "fingerprint": "0033d7cb85a1119f85337cdea395fd7ad7e35253002096020406e2c1b363d069",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.withings.com/": {
+  "fingerprint": "5670521bea71e05a2b71641c88d68a4d46a1b812a6860f27ccaf7bc8852d3e5b",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.withings.com/api-reference/": {
+  "fingerprint": "ee91496d6bd8fd98442d27f753f0876efe256e92aa528e89a9825a6495f3582b",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data/": {
+  "fingerprint": "cb03b80249462754fb2f595b433cc6c39f1c459d40f80dfd63811e6adf5abff2",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis/": {
+  "fingerprint": "71396f4d84b13d14f65e1879afd11191df00ee465feb82150cb761335211a870",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.withings.com/developer-guide/v3/withings-solutions/security-and-compliance/": {
+  "fingerprint": "4b2b6d273bc7eecab82c43aa3d5b0cb0d0c042c6b68342511420e828a1fdb998",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developer.withings.com/developer-guide/v3/withings-solutions/withings-api-plans/": {
+  "fingerprint": "76cb3984cf2f316bd1c7d4d7cd63e160de29964aaa0b52bf07330f15b2b4a4f3",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developers.google.com/health/about": {
+  "fingerprint": "6d53ebe30b9ec224943a3cbb029fbcb584e66bb4e5fca1def21340af8f0c9621",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developers.google.com/health/app-verification": {
+  "fingerprint": "3e88fdc92ac03e767a1c601efd8cadcb2633be123510c95165261050f94e531f",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developers.google.com/health/data-types": {
+  "fingerprint": "36420ecbc7d7e90e84122a977ac62b1dd6d2c90eb9fb1447d7403827d3aa444d",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developers.google.com/health/data-types/vitals": {
+  "fingerprint": "77aa8094857a6a0a2f54a808d788c0908e66df7a5b0eabf5b2bdba5d3f10fa75",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developers.google.com/health/policies/health-api-developer-terms-and-conditions": {
+  "fingerprint": "f9e9381feaad4ba91c65588f86f795be7bac548469e71365529d7a2b5c414aad",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developers.google.com/health/policies/health-api-research-pledge": {
+  "fingerprint": "f1245e48e8f142b34b63ab599434c3d05b6254ad9dbe0e563a12fc06a75fd401",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developers.google.com/health/policies/health-api-user-data-and-research-policy": {
+  "fingerprint": "76df6cc7b3cd0ef822f64cb0444a003a2c4ca3fc2e15eee7154d13e435cba5c2",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developers.google.com/health/rate-limits": {
+  "fingerprint": "fd43060193e751136a06385a93d440049b294d40a1d2337a44b50df33933d978",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developers.google.com/health/reference/rest": {
+  "fingerprint": "afa3895f9ca49a50ce1dc58b7d6062707385a7b58ae802282db40c6be7f1152a",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://developers.google.com/health/scopes": {
+  "fingerprint": "0bbe04f418e10fa34132ace7fd4fee8647ee5da88ca956e3e6e33f875b425093",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://discussions.apple.com/thread/255037259": {
+  "fingerprint": "2517c77278a9f010a1a62af831e1b15f3a82e9760295e808ec37fbbbab56c2ff",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://docs.lamp.digital/": {
+  "fingerprint": "e7c50b4b1290a173e9fe4a67c776f2d62b101256cd03f1ecaa970028896caa13",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://docs.lamp.digital/about/publications/": {
+  "last_checked": "2026-10-10",
+  "last_status": "dead"
+ },
+ "https://docs.lamp.digital/get-started": {
+  "fingerprint": "42a55db0779164539e7656ef7e6902b3f1a8ba98c963c15822805f31442b796d",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://docs.zepp.com/docs/reference/device-app-api/newAPI/sensor/Accelerometer/": {
+  "fingerprint": "02e8020da0c85d307ccd99de102a550b52a9cd34bed22bd106f5426376efe116",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://evidation.com/": {
+  "fingerprint": "93f8150fc5aa512a1a334cd7adb63d56f81a02bf6103ef898a350c777d907b1d",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://evidation.com/about": {
+  "fingerprint": "d8952ac71fd131759ad86612bccb649114c83ed58052a5c8ad417e2537dc91b0",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://evidation.com/how-it-works": {
+  "fingerprint": "f8b334f4e65e2ae268ef0624732b9005aaa3dc5dce83599ff0c5cfe0aba946a1",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://evidation.com/privacy": {
+  "fingerprint": "4aa6cfc373ebb194033416ad23df7a18e52c1f14c5fac10331a557be397be5e8",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://evidation.com/research": {
+  "fingerprint": "07dd7379f4614524c05cbf5c0abd5f86b59a120d0179a2e253f9d599f00deae8",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://fitabase.com/resources/knowledge-base/learn-about-garmin-data/collecting-enhanced-beat-to-beat-interval-data-using-garmin-devices/": {
+  "fingerprint": "ea6d9c6d6b133cc4851ae45c99c5940b99a6d73aee19519eba02759eef91fd7d",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://forest.beiwe.org/en/latest/": {
+  "fingerprint": "b94d4c4a578be6c456ca214c3bf91d03234c727c0d357b746346e9ade6a8d636",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://forum.avicennaresearch.com/t/1406": {
+  "fingerprint": "668a9f0516a4b70a305297e412c1d0e24819265f589ba83ce28d2b070f441866",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://forum.avicennaresearch.com/t/5": {
+  "fingerprint": "3a00c6e8a79c99ca1cae79514affa29e59b8d3456d9f747877630a4b513124d6",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://forum.avicennaresearch.com/t/notifications/1277": {
+  "fingerprint": "deed0ca7ab0789c119fb16ff532b0e1b23f6324e5b15c8b5072d53f4c3155486",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://forum.avicennaresearch.com/t/participation/1280": {
+  "fingerprint": "d72d4efa162952d5600217e7ef6015a55dde044d232262d22377c0f64ce66c0b",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://forum.avicennaresearch.com/t/security-and-compliance/1267": {
+  "fingerprint": "e74b90d623947f7f07f9648fa33752bc4fef566a44aec7eed3b131646822b20a",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://forums.garmin.com/developer/connect-iq/f/discussion/434798/cannot-access-developer-program-application-form-under-construction/2027757": {
+  "fingerprint": "fc679b48186f743ebba0acf3749632b5fadfdf734bc2e3e82269f9df7ce7f5c6",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/BIDMCDigitalPsychiatry": {
+  "fingerprint": "98b16c09e8a08dd12d3625ccc8825c835c5592d34d0b79081cde5ee9e0f75d5d",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/BIDMCDigitalPsychiatry/LAMP-app": {
+  "fingerprint": "eb177300d432a2265e7a3e54215c0cf4fae0af321a451dc1898611d4a58a648f",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/BIDMCDigitalPsychiatry/LAMP-app-gateway": {
+  "fingerprint": "5d60a790a36924514025fc1c0edaaf032d005cecca48b98360ab0fca4a02b5f5",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/BIDMCDigitalPsychiatry/LAMP-dashboard": {
+  "fingerprint": "2ab35b055866238f21ba2ca00c4fb45d3a3a8e3800ac8cf0560918829ba961c3",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/BIDMCDigitalPsychiatry/LAMP-dashboard/blob/master/LICENSE.md": {
+  "fingerprint": "2a30563665fac48b18dbf7d177bc80825d104ae44a1e045980b03f2d4bf2c1b0",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/BIDMCDigitalPsychiatry/LAMP-portal": {
+  "fingerprint": "176ee48e2658d77558d41d4da6ef04a1831795334220415f28f05e61ff76caa1",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/BIDMCDigitalPsychiatry/LAMP-server": {
+  "fingerprint": "d2a9ab56da1861a1908f5353cc9d35859c4e5e9384e54327be06b06f6701ea7d",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/BIDMCDigitalPsychiatry?tab=repositories": {
+  "fingerprint": "98b16c09e8a08dd12d3625ccc8825c835c5592d34d0b79081cde5ee9e0f75d5d",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/RADAR-base": {
+  "fingerprint": "2bfcfbd77e08de6c5b755acd752628dccf5132ef11dfd7af245a04dbb139d59e",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/RADAR-base/RADAR-Appserver": {
+  "fingerprint": "ce89d2ae95cb43feedb86ddb2116c7cf01054d60cdb2a585b93c5967918f15b9",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/RADAR-base/RADAR-Backend": {
+  "fingerprint": "6fc7b75197330f89021573b4800651a403b21ac05c0a226b7318238a4a9ef212",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/RADAR-base/RADAR-Questionnaire": {
+  "fingerprint": "b3e89510dbb16f780c84bc2251c954f3493f48599a1192f8ad2700d0b0563ef3",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/RADAR-base/radar-prmt-ios": {
+  "fingerprint": "17f54c95a6a9d0a152499b016d49d6d5c8583d248f61eddce6acb073abc04325",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/RADAR-base?q=ios": {
+  "fingerprint": "a16e2f9ba0255182df9af11c66281346127efbbdb4d5d20db785b4f738c0d4d8",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/S-HealthStack": {
+  "fingerprint": "746a765b14102db8a9ef1bc4f8e0cf692d8658688b830e74319a1545937a7965",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/S-HealthStack/backend-system": {
+  "fingerprint": "c28e1a2832933dd56517b5b3465d04e311576080481b9eb953b79e228f2089dc",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/actigraph/CentrePoint3APIDocumentation": {
+  "fingerprint": "2f0eb831479683795175bd013bebe91a7b9dcd222283054bf1ef9a4b8eade467",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/awareframework": {
+  "fingerprint": "0f3b931cf7b4458ae4f43e3b9a19c9e031050f9c562d7a57b0bb6f764a333901",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/awareframework/aware-client": {
+  "fingerprint": "fa825ee02b71d25e89441d88496526896edaaf6770772c91a17e9dbaf27e0375",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/carp-dk": {
+  "fingerprint": "b09d02ef61966d1648f3c4e0cc60f1435eb07ad898c839b1c8b47dd10cbf431a",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/carp-dk/carp-portal": {
+  "fingerprint": "7925c5a4fa83e87b023c6f0702de18de8abadb5301c0fb9e8cad4f8e459cde68",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/carp-dk/carp-portal/blob/main/package.json": {
+  "fingerprint": "eeff959c6af46268248c429cb6dc512411ea9cc90adf4aa40f748bd4c21448d0",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/carp-dk/carp.sensing-flutter": {
+  "fingerprint": "f6792375016e1f4ce839d25fd6f30dc389ad26cc16bc0807ea51d847cbb0f48f",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/cbitstech/Purple-Robot": {
+  "fingerprint": "a9843067e78178caf6e4b928830dd98d3d692e8d88a7dd98e0913ea5c9977e11",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/digitalinteraction/openmovement/wiki/AX3": {
+  "fingerprint": "96f9e57ca410d7aaad9adc6aa698d8ba0c4e0f976959286e5d9a39643d245ca2",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/onnela-lab": {
+  "fingerprint": "ded5b80c9cc6b2adae6f6c25f1618fbc300273c0ce5fbdc5dfcf9989cc245371",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/onnela-lab/beiwe-android": {
+  "fingerprint": "3fdd193065bedbca640209813528a348bdd192939d391807347776365107dc40",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/onnela-lab/beiwe-android/blob/master/app/build.gradle": {
+  "fingerprint": "7b66633de20f4e12210724c0e0148e0236e9535e788c201d4408211217481141",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/onnela-lab/beiwe-backend": {
+  "fingerprint": "58aaa148422711c7156764912bd0d1634a3925e6482ba05211695a48b7bd9a7d",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/onnela-lab/beiwe-backend/tree/main/data_access_api_reference": {
+  "fingerprint": "7a307a3b57412a46fbbff972449cb5816478380dfc7b01b13cdd26ff9fd9418f",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/onnela-lab/beiwe-backend/wiki": {
+  "fingerprint": "36c8ba8cd01be05d1e2bb463a0a08ea200c0c4771d14fc3f1d3c44fc63bcca4c",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/onnela-lab/beiwe-ios": {
+  "fingerprint": "4886c22bedfb090e1ed547bf61e6e615c6565a2eadec29bcfba6c3d0b0125a39",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/onnela-lab/forest": {
+  "fingerprint": "3250ce72c11db102a00e9d87a5e05d1c5b75c89871750bc1649949d1d9acfde1",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/onnela-lab/forest/tree/develop/src/forest": {
+  "fingerprint": "930cbd8a3211835d8553a55cc8579eff0bcbc71850b14b9d90c22f1bdd73d0b1",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/openmovementproject/openmovement": {
+  "fingerprint": "ae0c38acfe20a8c90dc0cd0037f952461ff43e7de66c3ad7151adebf9153d04e",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-faq.md": {
+  "fingerprint": "4be8c0d95a8aa2abbebec2e8e644c146f80e1d6895e0300cab61a0ed6af3d363",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/openmovementproject/openmovement/blob/master/Downloads/AX3/AX3-Firmware.md": {
+  "fingerprint": "462282798da8251648c88f84c91bf7fd0b4451ef494b6ea7b5e6ac11d1c2305c",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/openmovementproject/openmovement/blob/master/Downloads/AX3/AX3-GUI-revisions.md": {
+  "fingerprint": "3d3835a88e499bf6bb951fd19327dce727ebd2aecf4b65b79f32ae4e32753099",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/polarofficial/polar-ble-sdk": {
+  "fingerprint": "2428e6777ac32ac7eb425cf8274638b8e8ea53734051c75404d5911c9ccd83d4",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/polarofficial/polar-ble-sdk/blob/master/documentation/products/": {
+  "fingerprint": "18a0264917e8197742675ed5ceb72bf1dc6b970520a49782cca32155001f964d",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/polarofficial/polar-ble-sdk/blob/master/documentation/products/Polar360.md": {
+  "fingerprint": "9888e02f4768c8d29196a60856673b50ca61f876a11215ebcb77e8c463fdf091",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/polarofficial/polar-ble-sdk/blob/master/documentation/products/PolarH10.md": {
+  "fingerprint": "50fdb45597b836703c1f3e4b2423ed1260968a1fec71dee6fcff4577c52335cd",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/polarofficial/polar-ble-sdk/blob/master/documentation/products/PolarVeritySense.md": {
+  "fingerprint": "1dc939d2cae007b99309548143231bf2117ac6a7b2a7571b7a076789ad69bbf9",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/tetujin/AWAREFramework-iOS": {
+  "fingerprint": "eb2675603c01bd2df0003f09a2364e6de9daa6044979f1a90b1c9828e2917555",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://github.com/tetujin/aware-push": {
+  "fingerprint": "df0049af2c957807f3c2f9a86784193441ca695afa459b3220f9c8fce22bf8a4",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://help.labfront.com/garmin-overview": {
+  "fingerprint": "1da00253a94745f4b962e966b7837d729b13d55d05b4623bca2909eb0576765f",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://hsph.harvard.edu/research-resource/beiwe/": {
+  "fingerprint": "24bd1d9f4317b78b2b1d01d663ed8c8b8fdaaec916b905f21731f4892783b908",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://hsph.harvard.edu/research/onnela-lab/beiwe-service-center/": {
+  "fingerprint": "503e301cce1d252cd0cb053fd950de038f29fdcedbf3a63e55cc8e6686d386d9",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://hsph.harvard.edu/research/onnela-lab/digital-phenotyping-and-beiwe-research-platform/": {
+  "fingerprint": "40471ad91a7f2475405ce61fd0b3b86e989af78c26c71797f4db3b8467c01102",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://learn.avicennaresearch.com/reference/study-setup-and-deployment/notifications": {
+  "fingerprint": "deed0ca7ab0789c119fb16ff532b0e1b23f6324e5b15c8b5072d53f4c3155486",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://lifedatacorp.page.link/jgPjLQNpbRKch1nTA": {
+  "fingerprint": "a46938a5cdcdf0c1217b13382589529facd1e7ba23ce34d47366fe50d97153ed",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://lp.empatica.com/academic-discount-professional-plan": {
+  "fingerprint": "89e281137ba12404f1b777c2b94ff45bcb0d0f07bb0a566fbc3d22ecdfebdc55",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://m-path.io": {
+  "fingerprint": "5c2445cf90accc9933294c87e4bb08cd912cea62c901969c38e0b0e8cffbe6a6",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://m-path.io/": {
+  "fingerprint": "5c2445cf90accc9933294c87e4bb08cd912cea62c901969c38e0b0e8cffbe6a6",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://m-path.io/landing/research/": {
+  "fingerprint": "370662e5f1555556434d5353285c1045265551d291cb5750e0e406b1f5c936ed",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://m-path.io/manual/knowledge-base/live-activity-background-sensing/": {
+  "fingerprint": "cba5f0b88982c7aa305244d0e755a1e1c14643fdb9e86876f6ec53a31f53d611",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://m-path.io/manual/knowledge-base/mobile-sensing-full/": {
+  "fingerprint": "493693cff4d593f8766ca576add2069bd00e4d62b342baeafe962d74ad79f9ff",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://m-path.io/manual/knowledge-base/welcome-to-m-path/": {
+  "fingerprint": "d0b40ac0b9eb4e6756b33e5cccab0cbba666e343760c8707b73a92b860685e14",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://m-path.io/pricing/": {
+  "fingerprint": "65e11f2570038718e4ed26189c7267d5991178925435821988bc987c7d0cede7",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://metricwire.com": {
+  "fingerprint": "dbd3c1f13491c3da678b5950e23b33555d47203fab298dc9d9fe792dde3896ac",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://metricwire.com/": {
+  "fingerprint": "dbd3c1f13491c3da678b5950e23b33555d47203fab298dc9d9fe792dde3896ac",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://metricwire.com/data-privacy-security-summary/": {
+  "fingerprint": "8861e2921df6a752d16a37fd690ce96899f415cc70054085f0dd15e7024af0f1",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://metricwire.com/site-licence/": {
+  "fingerprint": "02d9650c20569983df23f4fffbb07bbf673943fadbf94725648a49f92ded9294",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://news.samsung.com/global/samsung-electronics-unveils-samsung-health-research-stack": {
+  "last_checked": "2026-10-10",
+  "last_status": "unreachable",
+  "unreachable_weeks": 1
+ },
+ "https://news.samsung.com/global/samsungs-new-health-software-development-kit-suite-powers-advancements-in-healthcare-innovation": {
+  "last_checked": "2026-10-10",
+  "last_status": "unreachable",
+  "unreachable_weeks": 1
+ },
+ "https://organizations.ouraring.com/": {
+  "fingerprint": "0d19914ac543ad5d666692388effa160cee19719e8b8528fdd789f68a89d2a59",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://organizations.ouraring.com/solutions/researchers": {
+  "fingerprint": "17efbff994f66583d90de28a3890fe8e06bbcff9e0184c2bc823df5a79e465ce",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://ouraring.com/": {
+  "fingerprint": "5269ce0f4e8ace0c1ef1184482a1ea6ae979aae3f021f87747a1df6b77903640",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://ouraring.com/membership": {
+  "fingerprint": "443980b1a7c7f13b132cd344ba7035b14c127b197c151bc6e65ce6f55c238cbf",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://ouraring.com/trust-center": {
+  "fingerprint": "f023877848fc99660c406d7354efec9cecd0daabeba7fc71a5b4257a1d298672",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://phidatalab.org/": {
+  "fingerprint": "fb126279b123de82a8a7ca48a96961754ede6005148730886f8c1aaa537dc5b5",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://phidatalab.org/software/": {
+  "last_checked": "2026-10-10",
+  "last_status": "dead"
+ },
+ "https://phidatalab.org/software__trashed/purple-robot-android-apps/": {
+  "last_checked": "2026-10-10",
+  "last_status": "dead"
+ },
+ "https://pub.dev/packages/carp_mobile_sensing": {
+  "fingerprint": "db66483eb3bee7d4afb7263a4609d7b2a0070823bf0e91ecdb3fd91c6068074b",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://pub.dev/packages?q=dependency%3Acarp_mobile_sensing": {
+  "last_checked": "2026-10-10",
+  "last_status": "robots_blocked",
+  "unreachable_weeks": 1
+ },
+ "https://radar-base.org": {
+  "fingerprint": "82188330394054c0a3b1be95fafe369427a2b6578d6ab247060a83bd947d5a6a",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://radar-base.org/": {
+  "fingerprint": "82188330394054c0a3b1be95fafe369427a2b6578d6ab247060a83bd947d5a6a",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://radar-base.org/2026/05/28/%F0%9F%9A%80-radar-base-symposium-2026-innovation-impact-the-future-of-mobile-health/": {
+  "fingerprint": "23351061fd531a6c668864dd4eef6f2bd74a4e45923205d98cd5a98adaa6c42f",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://radar-base.org/about/": {
+  "fingerprint": "948420256a323abcdf1ac983b60f18b1f27f1f4440e067c0830776717ca43879",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://radar-base.org/docs/4048-2/": {
+  "fingerprint": "77d4c2997f5705a69777f6f4d532dd1d6e31f1f6f6c0d1ad9baa47c58d52d7cc",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://radar-base.org/docs/prmt-app/": {
+  "fingerprint": "e73c0294b59d6567ea7037cdf413fa33256a7ad4112d4b118483aaf7ac0bff47",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://radar-base.org/publications/": {
+  "fingerprint": "b005b2233f254770f20f8f6dc6d55883587db47976bcd5c790d8f4f79351395a",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://radar-base.org/wp-content/uploads/2019/09/iOS_pRMT_App_Android_Sensor_Comparison.png": {
+  "fingerprint": "fccf09cb2de0d8e0ec405af035c06651edd63f559cd5698520b0ac5edc1da907",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://ringconn.com/blogs/news/ringconn-will-migrate-from-google-fit-to-health-connect": {
+  "fingerprint": "417d6cd1d4a7a4db75f5f07d0b02e834286b0aeaf2ec80d974f2640a9d981040",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://sensorbio.com/": {
+  "fingerprint": "bd8a91e31c6c19d7f003dcb4c2e96043216319bdfd524b54ffb35435a7012829",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://sensorbio.com/get-started/": {
+  "fingerprint": "08d5acf00bfe243a3f9307486294ccb266d9f69f0e60c11317b4f7c3dce2c792",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://server.lifedatacorp.com/server-frontend/index.html": {
+  "fingerprint": "29b834d8f57beb24fc0829640d73a0fcfe1f2996e0eaf0b02133b2330ef6d887",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://signanthealth.com/": {
+  "fingerprint": "432966d390b0bc89ace3addece1f241f2fdc4ba62295635c7c014bd6b3519d8e",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://signanthealth.com/company/news/signant-health-acquires-ametris": {
+  "fingerprint": "262a1669aed30fc6041daba13142abc6dc9de263c06d28215de30d6a1e56eef4",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://signanthealth.com/company/news/signant-health-enters-definitive-agreement-to-acquire-ametris": {
+  "fingerprint": "fbf74052a41bedaa82ff48bc671e98c17c9d61ed1a5943b26ad7bbb75ffe9abc",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://static.withings.com/content/api/plans/plans.html": {
+  "fingerprint": "de9b46e79fb0f83c56248a9c71bc4c0a40350d8e3a07668b6556b38f09dcbb60",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://store.ametris.com/": {
+  "fingerprint": "32fcbd24924f672f760ffc92c097543b125dfc782806dfa6f18a6f28429f20ef",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://support.empatica.com/": {
+  "last_checked": "2026-10-10",
+  "last_status": "unreachable",
+  "unreachable_weeks": 1
+ },
+ "https://support.empatica.com/hc/en-us/articles/17721117772317-Understanding-your-Empatica-Health-Monitoring-Platform-Plan": {
+  "last_checked": "2026-10-10",
+  "last_status": "unreachable",
+  "unreachable_weeks": 1
+ },
+ "https://support.google.com/cloud/answer/13464323": {
+  "fingerprint": "8aa99bf0e85d1def1cbe9c4c04b1388df5a2b0efb0e6488ce6a195f8ad52a272",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://tryterra.co/blog/garmin-connect-developer-program-pause": {
+  "fingerprint": "9f77044a0d459f81fb4198c1163751590aab3096d705832b2d0ec39d385148ac",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://tryterra.co/integrations/garmin": {
+  "fingerprint": "fcd2b1081e06bfe276ba90fc3a8768b8bd4289df48c35af2e3f0a84da3ecf70b",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://tryterra.co/integrations/zepp": {
+  "fingerprint": "550cb3934ebad6d4e2787a3d58140f02daeca7728beb5e2898bc61f088a1702b",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://tryterra.co/pricing": {
+  "fingerprint": "d73f45f55424ecd1c18fbb2cd227c50caa1001a55cc94b94ffdfd2e929353223",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://verily.com/": {
+  "fingerprint": "84da6c7c38bbaf3e65cc09262301a4eb01ed179b1ffdecd086d820355d6cf41c",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://verily.com/perspectives/verily-and-samsung-collaborate-to-accelerate-clinical-research-with-the-galaxy-watch-and-pre-platform": {
+  "fingerprint": "1db4050d52087b56681cb262027d31bf498939ccc5c3c8cd37ab2586a96a36af",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://verily.com/perspectives/verily-study-watch": {
+  "last_checked": "2026-10-10",
+  "last_status": "dead"
+ },
+ "https://verily.com/solutions/study-watch": {
+  "last_checked": "2026-10-10",
+  "last_status": "dead"
+ },
+ "https://web.archive.org/web/20260812101026/https://awareframework.com/sensors/": {
+  "fingerprint": "c7710dcece7f60b75dc1e9b0729ca79a57debd108f44ce5e008384ad02ca3e5e",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.apple.com/ios/research-app/": {
+  "fingerprint": "a8cbfd4091bb800eaaf487f91bab4a0da7301a970acc55c12228324d0850e6cd",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.apple.com/legal/privacy/data/en/health-app/": {
+  "fingerprint": "722c9da17083172115dfd551508ea8db0c2708beddb4b6451ee3dd7350ba3c4f",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.apple.com/watch/": {
+  "fingerprint": "251a3ecd015fe8c16ae8b0d5adcfdfa3334b57df4e562c3304dca5b8c797f965",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.awareframework.com/continuous-silent-push-notification-spn-on-aware-ios/": {
+  "fingerprint": "93ce78b460f8f2da480b48664bc85d5db57ba7296f931bb8ffc52f07ce80f000",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.beiwe.org/beiwe-service-center-overview/": {
+  "last_checked": "2026-10-10",
+  "last_status": "unreachable",
+  "unreachable_weeks": 1
+ },
+ "https://www.circular.xyz/": {
+  "fingerprint": "9f240232b5e4ecb6f58f29de0916350e2c676486084a8921cb7b6b3adfda3169",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.digitalpsych.org": {
+  "fingerprint": "9f99a747df95afd6be3c155ffdbf49e5a3e642f46c8579193f57afff745eb7b8",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.digitalpsych.org/mindlamp-core": {
+  "fingerprint": "3154c3b8554392627f1d7be7434e28c1f1ba635172743dff27fc4a343085cd45",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.digitalpsych.org/mindlamp1.html": {
+  "fingerprint": "9f99a747df95afd6be3c155ffdbf49e5a3e642f46c8579193f57afff745eb7b8",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.digitalpsych.org/privacy.html": {
+  "fingerprint": "9f99a747df95afd6be3c155ffdbf49e5a3e642f46c8579193f57afff745eb7b8",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.empatica.com/": {
+  "fingerprint": "5f747009540313d2f4eaa9cb7f13beebe7d6ed0f0a13eca51ae0ebdfa4a4f8c1",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.empatica.com/blog/empatica-receives-new-fda-clearance-for-cardiac-digital-biomarkers/": {
+  "fingerprint": "1ee115e25bbf0717bb79a451118428d9a7dbeeb94eaef612d50462a9cb9d5a3d",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.empatica.com/blog/the-empatica-health-monitoring-platform-receives-fda-clearance": {
+  "fingerprint": "81f7751c4af21ffdb28af630c1216e3b480412b8cb825d0aa084f8585f9563ee",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.empatica.com/care/": {
+  "fingerprint": "5206edd52e2107aeb15a9906817c5af0b66176a9b1518de6b77c87139a8796b6",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.empatica.com/en-eu/platform/clinical-trials/": {
+  "fingerprint": "f3fed2502e6e23551385a2f200b000cad196b6f848265eecaa753089eeab0d4a",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.empatica.com/en-eu/platform/research-studies/": {
+  "fingerprint": "e558faa9778f6fae73135571378ae5047a061eca503381c230b0bdd8e64bd5bd",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.empatica.com/legal/": {
+  "fingerprint": "2b5bba48f1614216c481c003a593613fafa5985fd1ea412c490460e60b6e49c3",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.empatica.com/llms.txt": {
+  "fingerprint": "dce90f7018994a2f5fb3df80e7b904007df2df420e9bb38149c7dbf78576127e",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.empatica.com/platform/clinical-trials/": {
+  "fingerprint": "f3fed2502e6e23551385a2f200b000cad196b6f848265eecaa753089eeab0d4a",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.empatica.com/platform/research-studies/": {
+  "fingerprint": "e558faa9778f6fae73135571378ae5047a061eca503381c230b0bdd8e64bd5bd",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.empatica.com/privacy-participant/": {
+  "fingerprint": "11ce315ed00b144455bdc607ff0bb87a1aca50a2c4970211cbf7095f98ec2370",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.empatica.com/store/platform-professional/": {
+  "fingerprint": "64add28a27cd502591d7c88d30446fada44fdbe646f8295b07e7d14c80c4375b",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.fitabase.com/": {
+  "fingerprint": "f9145200058bda5e38ccc870430764909febcc002af706f931fa9516cc3599d8",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.fitabase.com/engage/": {
+  "fingerprint": "cf65c34f68645cca8f74445309f6951d30844d4cf0c923edb07e66869b978852",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.fitabase.com/how-it-works/pricing/": {
+  "fingerprint": "9dd98093b5ec6ca1078c4339a95496d6a1993fa3fb6f64ee643d88b9aa96e00d",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.fitabase.com/privacy/": {
+  "fingerprint": "f786b86d8e2ea483d08c0ced3f5019a6bde0398e3ea8b6bf8e299b9066401833",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.fitabase.com/research-library/": {
+  "fingerprint": "a81674d3bcfbfc46c7fcc1b65160e531a4dc2edeb9dcafd4ea51eb6b7a751c7c",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.fitabase.com/resources/faq/": {
+  "fingerprint": "5f149199e5e4f90ba48671d44d713b33878e2966f173b14e6082cb416044969d",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.fitabase.com/resources/knowledge-base/fitabase-api/what-is-the-fitabase-api/": {
+  "fingerprint": "46c0296fadb004286b2eb78cb31a6bad52e767e9a1439f8937c2b548ba764aa9",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.fitabase.com/terms/": {
+  "fingerprint": "77d7732ea84806b09c124aab54700aaa4ecc9430386350b3a14454f026942bc7",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.fitrockr.com/compatible-devices/": {
+  "fingerprint": "6c3cf61adce3c4b6c4e5f8fd692e22cc32ea673c4ec0744774c8bc125ffe06d9",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.fitrockr.com/research/pricing": {
+  "fingerprint": "84eee41831dd073d6ab06d1f3e80568b6f0a4bc00d12017780f0c63f378bcb21",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.fitrockr.com/research/research-grants/": {
+  "fingerprint": "819152c4464bada1ca216604a78f71a1c38fd969f7629f99b524324ddba329b1",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.garmin.com/en-US/health/": {
+  "fingerprint": "fa6ee0893bc4bf2e58da5a78f70be4666b91f4f2d0fdfed7c2c276bd7091d791",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.labfront.com/": {
+  "fingerprint": "0b0f5a986109f7a22f814cef9a847abb331e3f03d81e6d367852025c96302425",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.labfront.com/blog/labfront-and-garmin-collaboration": {
+  "fingerprint": "1f1ae87e1cccaa468651049423c559313fa3fe2e74e598f03bdca0973ffceace",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.labfront.com/compatible-devices": {
+  "fingerprint": "f01558cc2bcc9d5157f94f1057d0098eaca5fd8577e458095a69b7e75b0aa004",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.labfront.com/grant": {
+  "fingerprint": "a0a09d44cc97aaabe01060984625bc5bef6c3b82541f65940ee981849c4826ef",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.labfront.com/pricing": {
+  "fingerprint": "a669b6504ea20ef86be2dd3bbaef0775191d47f6794cba93436c8244af83ba7e",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.lifedatacorp.com/": {
+  "fingerprint": "8a542cc7a9e2d4cfbc849c23fdb2ff7143b745f3234ad5583c0a874bb46e13b4",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.lifedatacorp.com/clinical-research/": {
+  "fingerprint": "2b335cfa7219ee615ceaa282b8e513e019d64f5eb286bbfbf52b91933a1993de",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.lifedatacorp.com/ecoa/": {
+  "fingerprint": "284322ac9cae946f8ca88e1b7f60b110601667c3d59b6c1975bc73221be81902",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.lifedatacorp.com/ecological-momentary-assessment-app-2/": {
+  "fingerprint": "69e9636825b623ce7e380284776e6f4f68585553e6e691b1dadd988a18c04bfd",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.lifedatacorp.com/ediary-app/": {
+  "fingerprint": "f82ddf8cdd4b39a4bce56dd4692114618a61fda37699a81c78d404e596e21a71",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.lifedatacorp.com/epro/": {
+  "fingerprint": "f81f0256092d377d6b2b41065063f04592363c2f1e2175a901d59af36de8f2cd",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.lifedatacorp.com/experience-sampling-app-2/": {
+  "fingerprint": "f9763dbeb22a671862483f5b6b3566ee48a21463f3a5b7b62c1257e46686c131",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.lifedatacorp.com/features/": {
+  "fingerprint": "a5ddda34495bc33f594c4036c398a50ac953b7f07c9598a0c09db641b5f6031b",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.lifedatacorp.com/products-2/": {
+  "fingerprint": "9ba75ce694b0a91acd460afa3ca5765328fdc239a43128ee708d0884854a01a9",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.lifedatacorp.com/remote-patient-monitoring/": {
+  "fingerprint": "e2031252943c1e04660804ed504e22f91045642167912678418743d12796f949",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.lifedatacorp.com/schedule-consultation/": {
+  "fingerprint": "60e6356d2874cf27ffb05d0a00b46c77bb9b0554fabb7500f919faa88ef353c2",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.lifedatacorp.com/solutions-research/": {
+  "fingerprint": "9f8dc0870a70fadf37f25dc39e6559a28360bb1fe5205af30de3b21bec0698b0",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.movesense.com/": {
+  "fingerprint": "1fc73b555b14e3b7a994e359271bb036238f3c34f02e1c794d5bcb3a0667d945",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.movesense.com/docs/": {
+  "fingerprint": "ce7bec0e69c58a118811237d615bae90ea67690f9ef74e605e8ce3cb8587bbe0",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.movesense.com/get-started/": {
+  "fingerprint": "77c02158b70dc4c5c9046b9e214ab9ca78b434283aa9a5caeaf340e051691466",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.movesense.com/movesense-academic-program/": {
+  "fingerprint": "d7bb1cb7a10f35b355afe39edd8ddf007d8acbefc2f82ebc9dd1e3ca6eab0cf2",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.movesense.com/product/movesense-flash/": {
+  "fingerprint": "7282ea653af93095aa97663b3fd0c43bdb15d0ba531ead2169d853e95c882da8",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.movesense.com/product/movesense-medical-mdr/": {
+  "fingerprint": "490f7f016adf386b42e4efa99b6e2afdaadefde38d22bf04428b50cf7fe04bd4",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.movesense.com/product/movesense-sensor-hr2/": {
+  "fingerprint": "74df1c393f292eaa576bd6e99420229455d32069e4de062aff98cf8f2bf9c55a",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.movesense.com/specifications/": {
+  "fingerprint": "20025ec426000ee40ef334fdc260d739a24d5545f46f7cb217e2356d14b5bfc6",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.polar.com/": {
+  "fingerprint": "7579976322795c2f672f309b172c64793eb45cde36058df282370c8f2289482a",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.polar.com/accesslink-api/": {
+  "fingerprint": "008cba7b4b044ecef1374490e1b6c30802f20f51cb63b9616a640c67ee7f452b",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.polar.com/en/business/team-pro": {
+  "fingerprint": "71a63b50ce7022a30748959b176fb7eab9f58c90c31251bbefa4aff59948e731",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.polar.com/en/developers": {
+  "fingerprint": "8a8cbb1b74278cda958c5c72c857be11ef76a8a88ffd61ec69d99fc4f5d9ac70",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.polar.com/en/legal/privacy-notice": {
+  "fingerprint": "3cf479e462a2898a5b324d14918a1c018250abbbc526b54d72007e66e0b9312a",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.polar.com/en/science": {
+  "fingerprint": "6cd9a6d11d774d6b052401d2655638fc6cef1c0602f8788b7acff29fa526559f",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.polar.com/en/science/": {
+  "fingerprint": "6cd9a6d11d774d6b052401d2655638fc6cef1c0602f8788b7acff29fa526559f",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.polar.com/en/science/research-tools/": {
+  "fingerprint": "918cd3966b4978de5edb8fa63877a9fc64a3540580a0a22feabd1dbb4fafd4fe",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.polar.com/us-en/developers": {
+  "fingerprint": "012706135e5563670da3f877433e250ba7cbe4080198ab0dfff3ff2c8a39164f",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.polar.com/us-en/sensors/h10-heart-rate-sensor": {
+  "fingerprint": "23c4c9be544118ccb47f7873ac29df4dd0d238d82bceda9b77439c1a46324734",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.researchandcare.org/": {
+  "fingerprint": "397f7cb62dab4c6eb08819418c1fe8b77eee1b8cc3dd10fa68acd51daa6cd21f",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.researchandcare.org/faq/": {
+  "fingerprint": "c28cd98cf174d6244afb4af0303da9a8992e4acb028d70ddb52372570614d881",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.researchandcare.org/investigator-support-program/": {
+  "fingerprint": "e0694da70ba6106832dfee7e9683d91ecc75678d17fdfea44875615e879062e0",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.researchandcare.org/resources/accessing-sensorkit-data/": {
+  "fingerprint": "6c3158174f2d7574ff53796b9f23e425f294dcdc8c1da4a6df7c6e040f6fbdae",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.thehyve.nl/services/radar-base-as-a-service": {
+  "fingerprint": "641b0563dbdab4050057adeea71b76bd15c785e42a22e323df03da8ef879497f",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.thryve.health/blog/fitbit-api-deprecation": {
+  "fingerprint": "52e95b6d8358bcca1b9e23439fae9282f16b870fe75aca2ba2268e00d0cd2733",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.thryve.health/features/connections/zepp-amazfit-integration": {
+  "last_checked": "2026-10-10",
+  "last_status": "dead"
+ },
+ "https://www.thryve.health/pricing": {
+  "fingerprint": "fa1953da31598a791db933d8b61c391d768d9fd7b2f853fd519aea8ef8bf7cd9",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.ultrahuman.com/blog/accessing-the-ultrahuman-partnership-api/": {
+  "fingerprint": "9d7f765b408f43a10872907b8ada6338be573d0b0d69c0cfaf2f2b89814faeee",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.ultrahuman.com/ultrasignal/": {
+  "fingerprint": "8a75748483f30a93f4b329604ab7dded8229207b6041af817b91ab27aa25ec93",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.ultrahuman.com/us/partners/": {
+  "fingerprint": "26b375e4fbccf8ba69be60a2a5224041d752a7fc2bd2479438bc847ce0723a15",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.whoop.com/": {
+  "last_checked": "2026-10-10",
+  "last_status": "unreachable",
+  "unreachable_weeks": 1
+ },
+ "https://www.whoop.com/termsofuse/": {
+  "last_checked": "2026-10-10",
+  "last_status": "unreachable",
+  "unreachable_weeks": 1
+ },
+ "https://www.whoop.com/us/en/membership/": {
+  "last_checked": "2026-10-10",
+  "last_status": "unreachable",
+  "unreachable_weeks": 1
+ },
+ "https://www.withings.com/": {
+  "fingerprint": "265dbe1459376ae49c65c3b878fb9d86f8d4adbe8c6a6390a32bd831abfcb834",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.withings.com/en-us/pages/research": {
+  "fingerprint": "ea2e23fcf6bba93ca24a9c6f40dcc88d4c8afc251ea0d09b54e6b28032f6879a",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.withings.com/us/en/for-professionals": {
+  "fingerprint": "60edc70d04b05e57ef732d7cc4fd97885ed4b42f074408176736dce59c600513",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.withings.com/us/en/health-solutions/research-clinical-trials": {
+  "fingerprint": "5e1eef0347ff82b1ab7adf456d6e8c6b2ee17b08425dd27d2a828919af0ab331",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.withings.com/us/en/scanwatch-nova": {
+  "fingerprint": "6d5d9d5566974708ac0a557a74ae85ab86669d453d3fc6d981f5a7d34510461a",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.withings.com/us/en/watches": {
+  "fingerprint": "698c1bba2e66e3fed7cdf31aac034b441561ac2c608b12bdc14db02b7eeb5173",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www.zepp.com/data-analytics": {
+  "fingerprint": "12190722e15177880fcb6bef50019375e0b218e33d364c8ae2d9c43f541784cd",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www8.garmin.com/en-US/GARMINCONNECTDEVELOPERPROGRAMAGREEMENT/GARMINCONNECTDEVELOPERPROGRAMAGREEMENT_EN.pdf": {
+  "fingerprint": "2fe2c9555881472b6c688704c2c16c6ef67d21641a712f34b4c6c5c8627ed9d7",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
+ "https://www8.garmin.com/garminhealth/news/Garmin-Enhanced-BBI_Final.pdf": {
+  "fingerprint": "118906dcbb8cebe9596a6f0d8dfc2362af6dc35c18ae039a535c54b6e67d75f1",
+  "last_checked": "2026-10-10",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ }
+}

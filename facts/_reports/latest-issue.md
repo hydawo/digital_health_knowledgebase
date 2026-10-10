@@ -1,0 +1,48 @@
+Vendor facts: 7 to re-check (2026-10-10)
+Checked 314 pages across 35 companies.
+
+| Result | Count |
+|---|---|
+| Quotes missing | 0 |
+| Quotes reworded | 0 |
+| Pages changed | 0 |
+| Dead links | 6 |
+| Check by hand | 1 |
+| Unreachable this week | 8 |
+| Overdue re-checks | 0 |
+| Validation errors | 0 |
+
+## Dead links
+
+- https://docs.lamp.digital/about/publications/: HTTP Error 404: Not Found. Cited by: watched page, no facts cite it yet
+- https://phidatalab.org/software/: HTTP Error 404: Not Found. Cited by: watched page, no facts cite it yet
+- https://phidatalab.org/software__trashed/purple-robot-android-apps/: HTTP Error 404: Not Found. Cited by: watched page, no facts cite it yet
+- https://verily.com/perspectives/verily-study-watch: HTTP Error 404: Not Found. Cited by: watched page, no facts cite it yet
+- https://verily.com/solutions/study-watch: HTTP Error 404: Not Found. Cited by: watched page, no facts cite it yet
+- https://www.thryve.health/features/connections/zepp-amazfit-integration: HTTP Error 404: Not Found. Cited by: watched page, no facts cite it yet
+
+## Check by hand
+
+Blocked to automated fetching. Open these in a browser.
+
+- https://pub.dev/packages?q=dependency%3Acarp_mobile_sensing: robots_blocked: robots.txt disallows. Cited by: watched page, no facts cite it yet
+
+## Unreachable this week
+
+Will move to "check by hand" if it fails again next week.
+
+- https://news.samsung.com/global/samsung-electronics-unveils-samsung-health-research-stack: unreachable: TimeoutError('The read operation timed out')
+- https://news.samsung.com/global/samsungs-new-health-software-development-kit-suite-powers-advancements-in-healthcare-innovation: unreachable: TimeoutError('The read operation timed out')
+- https://support.empatica.com/: unreachable (403): HTTP Error 403: Forbidden
+- https://support.empatica.com/hc/en-us/articles/17721117772317-Understanding-your-Empatica-Health-Monitoring-Platform-Plan: unreachable (403): HTTP Error 403: Forbidden
+- https://www.beiwe.org/beiwe-service-center-overview/: unreachable: [Errno 104] Connection reset by peer
+- https://www.whoop.com/: unreachable (403): HTTP Error 403: Forbidden
+- https://www.whoop.com/termsofuse/: unreachable (403): HTTP Error 403: Forbidden
+- https://www.whoop.com/us/en/membership/: unreachable (403): HTTP Error 403: Forbidden
+
+## Coverage
+
+18 of 1094 facts researched across 35 companies.
+
+
+Full report: `facts/_reports/2026-10-10.md`. How to work this: `facts/README.md`, "Re-check loop".
