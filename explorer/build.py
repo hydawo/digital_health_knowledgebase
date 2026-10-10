@@ -46,7 +46,8 @@ CAT_ORDER = [('deployment-profiled', 'Deployments profiled in Module 3'), ('depl
              ('validation', 'Validation studies'), ('methods', 'Methods and analytics'), ('platform', 'Platform papers'),
              ('protocol', 'Protocols'), ('review', 'Reviews and commentary')]
 led = json.load(open('module-03-applied-studies/literature-index.json'))
-prof = {r['doi'].lower(): r for r in led['records']}; rej = {r['doi'].lower(): r for r in led['rejected']}
+# The weekly scan records arXiv-only rejections with doi null; those cannot match a catalogue row.
+prof = {r['doi'].lower(): r for r in led['records'] if r.get('doi')}; rej = {r['doi'].lower(): r for r in led['rejected'] if r.get('doi')}
 hand = {k.lower(): v for k, v in json.load(open('explorer/paper-categories.json')).items()}
 VAL = re.compile(r'validat|accuracy|agreement|polysomnograph|bland|criterion|reliabilit|concordance', re.I)
 REV = re.compile(r'\breview\b|meta-analys|scoping|consensus|perspective|opportunities and challenges|new dimensions|harnessing|commentary|implications|realizing the potential|busy psychiatrist|digitally connected|methodology and reporting|limited evidence|bridging boundaries|decision models|machine learning and the digital', re.I)
@@ -101,6 +102,22 @@ for lib in ['module-01-wearables/literature-library.md', 'module-02-digital-phen
         if pdf: folder = pdf.split('/literature/')[1].split('/')[0]
         elif top in SECTION_FOLDER: folder = SECTION_FOLDER[top]
         if folder: add(folder, rec)
+# Papers the weekly scan adds go to research-library-wearables.md, not the PDF catalogue above, so pick
+# them up from its index. Authors and venue come from the entry paragraph that links the PubMed ID.
+RLW = open('module-01-wearables/research-library-wearables.md', encoding='utf8').read().split('\n\n')
+SCANCAT = {'Review': 'review', 'Validation': 'validation'}
+for r in json.load(open('module-01-wearables/research-library-index.json'))['records']:
+    if not r.get('device'): continue
+    keys = [k for k in (f"pubmed.ncbi.nlm.nih.gov/{r.get('pmid')}/", r.get('pmcid') and r['pmcid'] + '/', r.get('doi')) if k]
+    para = next((p for p in RLW if any(k in p for k in keys)), '')
+    a_m = re.match(r'\*\*(.+?)\s+(\d{4})\.\*\*', para.replace('\n', ' '))
+    v_m = re.search(r'\*([^*]+)\*', para.replace('\n', ' ')[a_m.end():] if a_m else '')
+    doi = r.get('doi') or ''
+    add(r['device'], {'t': r['title'], 'a': a_m.group(1) if a_m else '', 'v': f"*{v_m.group(1)}* {r['year']}" if v_m else r['year'],
+                      'doi': doi, 'url': 'https://doi.org/' + doi if doi else f"https://pubmed.ncbi.nlm.nih.gov/{r['pmid']}/",
+                      'pdf': '', 'oa': 'Found by weekly scan, no PDF yet',
+                      'cat': SCANCAT.get(r.get('category'), category(r['title'], doi, False)),
+                      'profile': prof[doi.lower()]['slug'] if doi.lower() in prof else ''})
 for k in cites:
     seen = set(); uniq = []
     for r in cites[k]:
