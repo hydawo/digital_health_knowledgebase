@@ -23,8 +23,6 @@ watch:
   role: repository
 - url: https://forest.beiwe.org/en/latest/
   role: other
-- url: https://www.beiwe.org/beiwe-service-center-overview/
-  role: other
 - url: https://github.com/onnela-lab
   role: repository
 - url: https://github.com/onnela-lab/beiwe-backend/tree/main/data_access_api_reference

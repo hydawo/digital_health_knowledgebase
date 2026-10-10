@@ -7,8 +7,6 @@ watch:
   role: changelog
 - url: https://www.thryve.health/pricing
   role: pricing
-- url: https://www.thryve.health/features/connections/zepp-amazfit-integration
-  role: other
 facts:
 - field: research_program
   status: unresearched

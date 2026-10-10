@@ -5,10 +5,6 @@ profile: module-02-digital-phenotyping/profiles/legacy-and-adjacent-platforms.md
 watch:
 - url: https://phidatalab.org/
   role: other
-- url: https://phidatalab.org/software/
-  role: other
-- url: https://phidatalab.org/software__trashed/purple-robot-android-apps/
-  role: other
 - url: https://github.com/cbitstech/Purple-Robot
   role: repository
 facts:

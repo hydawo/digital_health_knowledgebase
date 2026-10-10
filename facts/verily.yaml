@@ -7,10 +7,6 @@ watch:
   role: other
 - url: https://verily.com/perspectives/verily-and-samsung-collaborate-to-accelerate-clinical-research-with-the-galaxy-watch-and-pre-platform
   role: research_program
-- url: https://verily.com/solutions/study-watch
-  role: other
-- url: https://verily.com/perspectives/verily-study-watch
-  role: other
 facts:
 - field: research_program
   status: unresearched
