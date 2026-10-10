@@ -11,11 +11,11 @@
 | Duration | 6 months after surgery per participant. |
 | Devices/platforms used | [Beiwe](../../module-02-digital-phenotyping/profiles/beiwe.md) on participant-owned phones, used in this analysis for surveys only. A study-designed expectations survey and the SF-36. The parent cohort collected GPS and accelerometer data that this paper does not analyse. Clinical covariates were abstracted from the health record into REDCap. |
 | Funding/COI | NIH T32 DK007754-18 (Panda), an Ariadne Labs Spark Grant from the Paul G. Allen Family Foundation, and NIH/NIMH 1DP2MH103909 (Onnela). Onnela reports funding from Otsuka and an unrestricted gift from Mindstrong Health. Panda reports a contract with a DARPA contractor. Compensation is not reported. |
-| Last verified | 2026-09-03 |
+| Last verified | 2026-09-03; month-one sentence reworded and Android issue-tracker context added 2026-10-10 |
 
 ## Summary
 
-A thin deployment paper that carries one number the module needs. Of 13 Android users who completed the preoperative surveys, none completed the one-month SF-36. One completed it at three months and one at six. Every iPhone user who answered at month one was among 42 iPhone completers out of 61. The authors do not comment on this. It is in Table 3 and nowhere else.
+A thin deployment paper that carries one number the module needs. Of 13 Android users who completed the preoperative surveys, none completed the one-month SF-36. One completed it at three months and one at six. All 42 month-one completers were iPhone users, out of 61 iPhone users in the analysed sample. The authors do not comment on this. It is in Table 3 and nowhere else.
 
 The paper is a surgical outcomes study, and its deployment content is a survey funnel with an explicit completion rule, a completer-versus-non-completer comparison, and a sensitivity analysis. It reports no attrition reasons, no technical problems, no reminder schedule and no compensation. That is why it is thin. It is included because a zero-of-thirteen operating-system result in a Beiwe deployment from 2017 to 2019 bears directly on the module's stream-specific OS finding, and because the cancer-surgery population is otherwise absent from the Beiwe entries here.
 
@@ -62,6 +62,8 @@ Month-six responders were older (mean 59.7) and 95.8% non-Hispanic White, agains
 Survey completion is the only completeness measure. Passive-stream completeness is not reported because the passive data are not analysed in this paper.
 
 No technical failure modes are reported. Whether the Android result reflects notification delivery, an app problem, a rendering issue, or chance with 13 people cannot be examined from the paper, and the authors offer no explanation. The collection window (2017 to 2019) predates Beiwe's 2024 heartbeat feature.
+
+Public Beiwe Android issues from the same period record failure modes that would produce this pattern. They are a plausible mechanism, not a confirmed one, because the paper gives no app versions or phone models (**Reported**, read 2026-10-10). beiwe-android #8 (opened 2017-03-01, Android 6) reports that participants "don't get the notifications of new surveys unless they launch Beiwe and log in". #27 (opened 2018-04-20) reports several Android phones "missing >24 hours of data". #21 (opened 2017-10-27, Android 7) reports that grouped Beiwe notifications could be swiped away. Sources: https://github.com/onnela-lab/beiwe-android/issues/8, /issues/27 and /issues/21.
 
 Missing data were handled with a repeated-measures linear mixed model with multiple imputation as a sensitivity analysis. Observed and predicted SF-36 domain scores did not differ at any timepoint.
 

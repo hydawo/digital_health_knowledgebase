@@ -98,7 +98,8 @@
   "10.1016/j.mex.2026.104138",
   "10.1128/jcm.00662-26",
   "10.3390/vetsci13090951",
-  "10.1007/s44211-026-00959-1"
+  "10.1007/s44211-026-00959-1",
+  "10.1101/2024.10.03.24314808"
  ],
  "last_run_date": "2026-10-05",
  "runs": [
@@ -197,7 +198,7 @@
    "pmcid": "PMC13308188",
    "title": "Using smartphone surveys to predict next-week suicide attempts",
    "year": "2026",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2026-nock-jpsychopatholclinsci-smartphone-surveys-predict-next-week-suicide-attempts.pdf",
+   "pdf": "module-02-digital-phenotyping/literature/lifedata/2026-nock-jpsychopatholclinsci-smartphone-surveys-predict-next-week-suicide-attempts.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -227,7 +228,7 @@
    "pmcid": "PMC12212497",
    "title": "Design and feasibility of smartphone-based digital phenotyping for long-term mental health monitoring in adolescents",
    "year": "2025",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2025-huang-plosdigitalhealth-design-feasibility-smartphone-based-digital-phenotyping-long-term.pdf",
+   "pdf": "module-02-digital-phenotyping/literature/beiwe/2025-huang-plosdigitalhealth-design-feasibility-smartphone-based-digital-phenotyping-long-term.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -257,7 +258,7 @@
    "pmcid": "PMC12614476",
    "title": "Predicting concurrent and short-term desire and intent to attempt suicide among people with body dysmorphic disorder using ecological momentary assessment of anxiety and shame",
    "year": "2026",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2026-weingarden-jpsychopatholclinsci-predicting-concurrent-short-term-desire-intent-attempt.pdf",
+   "pdf": "module-02-digital-phenotyping/literature/beiwe/2026-weingarden-jpsychopatholclinsci-predicting-concurrent-short-term-desire-intent-attempt.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -277,7 +278,7 @@
    "pmcid": "PMC12407220",
    "title": "Measuring psychological well-being and behaviors using smartphone-based digital phenotyping: An intensive longitudinal observational mHealth pilot study embedded in a prospective cohort of women",
    "year": "2025",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2025-yi-jmirmhealthuhealth-measuring-psychological-well-being-behaviors-smartphone-based-digital.pdf",
+   "pdf": "module-02-digital-phenotyping/literature/beiwe/2025-yi-jmirmhealthuhealth-measuring-psychological-well-being-behaviors-smartphone-based-digital.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -287,7 +288,7 @@
    "pmcid": "PMC12143762",
    "title": "Predicting the strength of next-day negative emotion states in body dysmorphic disorder using passive smartphone data: An intensive longitudinal assessment study",
    "year": "2025",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2025-weingarden-internetinterventions-predicting-strength-next-day-negative-emotion-states.pdf",
+   "pdf": "module-02-digital-phenotyping/literature/beiwe/2025-weingarden-internetinterventions-predicting-strength-next-day-negative-emotion-states.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -297,7 +298,7 @@
    "pmcid": "PMC11719951",
    "title": "A digital phenotypic assessment in neuro-oncology (DANO): A pilot study on sociability changes in patients undergoing treatment for brain malignancies",
    "year": "2025",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2025-siddi-cancers-digital-phenotypic-assessment-neuro-oncology-dano-pilot.pdf",
+   "pdf": "module-02-digital-phenotyping/literature/beiwe/2025-siddi-cancers-digital-phenotypic-assessment-neuro-oncology-dano-pilot.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -315,8 +316,8 @@
    "doi": "10.1038/s44220-024-00335-w",
    "pmid": null,
    "pmcid": null,
-   "title": "Idiographic prediction of suicidal thoughts: Building personalized machine learning models with real-time monitoring data",
-   "year": null,
+   "title": "Building personalized machine learning models using real-time monitoring data to predict idiographic suicidal thoughts",
+   "year": "2024",
    "pdf": null,
    "pdf_status": "no-source",
    "source": "onnela-lab-papers-page-2026-08-31"
@@ -327,7 +328,7 @@
    "pmcid": "PMC11488461",
    "title": "Smartphone screen time characteristics in people with suicidal thoughts: Retrospective observational data analysis study",
    "year": "2024",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2024-karas-jmirmhealthuhealth-smartphone-screen-time-characteristics-people-suicidal.pdf",
+   "pdf": "module-02-digital-phenotyping/literature/beiwe/2024-karas-jmirmhealthuhealth-smartphone-screen-time-characteristics-people-suicidal.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -337,7 +338,7 @@
    "pmcid": "PMC11512133",
    "title": "Measuring environmental and behavioral drivers of chronic diseases using smartphone-based digital phenotyping: Intensive longitudinal observational mHealth substudy embedded in 2 prospective cohorts of adults",
    "year": "2024",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2024-yi-jmirpublichealthsurv-measuring-environmental-behavioral-drivers-chronic-diseases.pdf",
+   "pdf": "module-02-digital-phenotyping/literature/beiwe/2024-yi-jmirpublichealthsurv-measuring-environmental-behavioral-drivers-chronic-diseases.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -357,7 +358,7 @@
    "pmcid": "PMC11289986",
    "title": "Vaping habits and respiratory symptoms using a smartphone app platform",
    "year": "2024",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2024-lee-bmcpublichealth-vaping-habits-respiratory-symptoms-smartphone-app.pdf",
+   "pdf": "module-02-digital-phenotyping/literature/vaping-health-study-app/2024-lee-bmcpublichealth-vaping-habits-respiratory-symptoms-smartphone-app.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -377,7 +378,7 @@
    "pmcid": "PMC12624914",
    "title": "Smartphone-based markers of social connectivity in schizophrenia and bipolar disorder",
    "year": "2024",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2024-valeri-nppdigitalpsychiatryneur-smartphone-based-markers-social-connectivity-schizophrenia-bipolar.pdf",
+   "pdf": "module-02-digital-phenotyping/literature/beiwe/2024-valeri-nppdigitalpsychiatryneur-smartphone-based-markers-social-connectivity-schizophrenia-bipolar.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -387,7 +388,7 @@
    "pmcid": "PMC11323201",
    "title": "Heterogeneity in suicide risk: Evidence from personalized dynamic models",
    "year": "2024",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2024-coppersmith-behavresther-heterogeneity-suicide-risk-evidence-personalized-dynamic.pdf",
+   "pdf": "module-02-digital-phenotyping/literature/lifedata/2024-coppersmith-behavresther-heterogeneity-suicide-risk-evidence-personalized-dynamic.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -397,7 +398,7 @@
    "pmcid": "PMC11094608",
    "title": "Precision assessment of real-world associations between stress and sleep duration using actigraphy data collected continuously for an academic year: individual-level modeling study",
    "year": "2024",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2024-vidal-jmirformativeres-precision-assessment-real-world-associations-between-stress.pdf",
+   "pdf": "module-02-digital-phenotyping/literature/beiwe/2024-vidal-jmirformativeres-precision-assessment-real-world-associations-between-stress.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -417,7 +418,7 @@
    "pmcid": "PMC11187949",
    "title": "Tracking ALS disease progression using passively collected smartphone sensor data",
    "year": "2024",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2024-karas-annclintranslneurol-tracking-als-disease-progression-passively-collected.pdf",
+   "pdf": "module-02-digital-phenotyping/literature/beiwe/2024-karas-annclintranslneurol-tracking-als-disease-progression-passively-collected.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -445,9 +446,9 @@
    "doi": "10.3389/fpain.2024.1327859",
    "pmid": "38371228",
    "pmcid": "PMC10869590",
-   "title": "Pain intervention and digital research: An operational report on combining digital research and outpatient chronic disease management",
+   "title": "The Pain Intervention & Digital Research Program: an operational report on combining digital research with outpatient chronic disease management",
    "year": "2024",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2024-fu-frontierspainresearchlau-pain-intervention-digital-research-operational-report.pdf",
+   "pdf": "module-02-digital-phenotyping/literature/beiwe/2024-fu-frontierspainresearchlau-pain-intervention-digital-research-operational-report.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -477,7 +478,7 @@
    "pmcid": "PMC10687676",
    "title": "Validation of an open-source step counting algorithm for smartphone data collected in clinical and non-clinical settings",
    "year": "2023",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2023-straczkiewicz-jmircancer-validation-open-source-step-counting-algorithm-smartphone.pdf",
+   "pdf": "module-02-digital-phenotyping/literature/beiwe/2023-straczkiewicz-jmircancer-validation-open-source-step-counting-algorithm-smartphone.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -497,7 +498,7 @@
    "pmcid": "PMC10511540",
    "title": "Intensive longitudinal assessment of mobility, social activity and loneliness in individuals with severe mental illness during COVID-19",
    "year": "2023",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2023-valeri-schizophreniaheidelbergg-intensive-longitudinal-assessment-mobility-social-activity.pdf",
+   "pdf": "module-02-digital-phenotyping/literature/beiwe/2023-valeri-schizophreniaheidelbergg-intensive-longitudinal-assessment-mobility-social-activity.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -527,7 +528,7 @@
    "pmcid": null,
    "title": "Validation of an open-source smartphone step counting algorithm in clinical and non-clinical settings",
    "year": "2023",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2023-straczkiewicz-preprint-validation-open-source-smartphone-step-counting-algorithm.pdf",
+   "pdf": "module-02-digital-phenotyping/literature/beiwe/2023-straczkiewicz-preprint-validation-open-source-smartphone-step-counting-algorithm.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -547,7 +548,7 @@
    "pmcid": "PMC9950089",
    "title": "A “one-size-fits-most” walking recognition method for smartphones, smartwatches, and wearable accelerometers",
    "year": "2023",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2023-straczkiewicz-npjdigitalmedicine-one-size-fits-most-walking-recognition-method-smartphones-smartwatches.pdf",
+   "pdf": "module-02-digital-phenotyping/literature/beiwe/2023-straczkiewicz-npjdigitalmedicine-one-size-fits-most-walking-recognition-method-smartphones-smartwatches.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -577,7 +578,7 @@
    "pmcid": "PMC9002497",
    "title": "Combining accelerometer and gyroscope data in smartphone-based activity recognition using movelets",
    "year": "2022",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2022-huang-sensors-combining-accelerometer-gyroscope-data-smartphone-based-activity.pdf",
+   "pdf": "module-02-digital-phenotyping/literature/beiwe/2022-huang-sensors-combining-accelerometer-gyroscope-data-smartphone-based-activity.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -587,7 +588,7 @@
    "pmcid": "PMC8857693",
    "title": "Using smartphones to reduce research burden in a neurodegenerative population and assessing participant adherence: A randomized clinical trial and two observational studies",
    "year": "2022",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2022-beukenhorst-jmirmhealthuhealth-smartphones-reduce-research-burden-neurodegenerative-population.pdf",
+   "pdf": "module-02-digital-phenotyping/literature/beiwe/2022-beukenhorst-jmirmhealthuhealth-smartphones-reduce-research-burden-neurodegenerative-population.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -607,7 +608,7 @@
    "pmcid": "PMC8954023",
    "title": "Online anomaly detection for smartphone-based multivariate behavioral time series data",
    "year": "2022",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2022-liu-sensors-online-anomaly-detection-smartphone-based-multivariate-behavioral.pdf",
+   "pdf": "module-02-digital-phenotyping/literature/beiwe/2022-liu-sensors-online-anomaly-detection-smartphone-based-multivariate-behavioral.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -617,7 +618,7 @@
    "pmcid": "PMC8816914",
    "title": "Fluctuations in behavior and affect in college students measured using deep phenotyping",
    "year": "2022",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2022-vidal-scientificreports-fluctuations-behavior-affect-college-students-measured.pdf",
+   "pdf": "module-02-digital-phenotyping/literature/beiwe/2022-vidal-scientificreports-fluctuations-behavior-affect-college-students-measured.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -637,7 +638,7 @@
    "pmcid": "PMC8523707",
    "title": "A systematic review of smartphone-based human activity recognition methods for health research",
    "year": "2021",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2021-straczkiewicz-npjdigitalmedicine-systematic-review-smartphone-based-human-activity-recognition.pdf",
+   "pdf": "module-04-methods-and-reviews/literature/2021-straczkiewicz-npjdigitalmedicine-systematic-review-smartphone-based-human-activity-recognition.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -657,7 +658,7 @@
    "pmcid": "PMC8458705",
    "title": "Decision models and technology can help psychiatry develop biomarkers",
    "year": "2021",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2021-barron-frontierspsychiatry-decision-models-technology-can-help-psychiatry.pdf",
+   "pdf": "module-04-methods-and-reviews/literature/2021-barron-frontierspsychiatry-decision-models-technology-can-help-psychiatry.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -667,7 +668,7 @@
    "pmcid": "PMC8322366",
    "title": "Sociodemographic characteristics of missing data in digital phenotyping",
    "year": "2021",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2021-kiang-scientificreports-sociodemographic-characteristics-missing-data-digital-phenotyping.pdf",
+   "pdf": "module-02-digital-phenotyping/literature/beiwe/2021-kiang-scientificreports-sociodemographic-characteristics-missing-data-digital-phenotyping.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -687,7 +688,7 @@
    "pmcid": "PMC8324229",
    "title": "Bidirectional imputation of spatial GPS trajectories with missingness using sparse online Gaussian Process",
    "year": "2021",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2021-liu-journalamericanmedicalin-bidirectional-imputation-spatial-gps-trajectories-missingness.pdf",
+   "pdf": "module-02-digital-phenotyping/literature/beiwe/2021-liu-journalamericanmedicalin-bidirectional-imputation-spatial-gps-trajectories-missingness.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -697,7 +698,7 @@
    "pmcid": "PMC8221715",
    "title": "Expected versus experienced health-related quality of life among patients recovering from cancer surgery: a prospective cohort study",
    "year": "2021",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2021-panda-annalssurgeryopenperspec-expected-versus-experienced-health-related-quality-life.pdf",
+   "pdf": "module-02-digital-phenotyping/literature/beiwe/2021-panda-annalssurgeryopenperspec-expected-versus-experienced-health-related-quality-life.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -717,7 +718,7 @@
    "pmcid": "PMC8865149",
    "title": "Estimating longitudinal depressive symptoms from smartphone data in a transdiagnostic cohort",
    "year": "2022",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2022-pellegrini-brainbehav-estimating-longitudinal-depressive-symptoms-smartphone-data.pdf",
+   "pdf": "module-02-digital-phenotyping/literature/beiwe/2022-pellegrini-brainbehav-estimating-longitudinal-depressive-symptoms-smartphone-data.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -737,7 +738,7 @@
    "pmcid": "PMC7898508",
    "title": "Smartphone data during the COVID‐19 pandemic can quantify behavioral changes in people with ALS",
    "year": "2021",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2021-beukenhorst-musclenerve-smartphone-data-during-covid19-pandemic-can.pdf",
+   "pdf": "module-02-digital-phenotyping/literature/beiwe/2021-beukenhorst-musclenerve-smartphone-data-during-covid19-pandemic-can.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -757,7 +758,7 @@
    "pmcid": "PMC7574857",
    "title": "Can mHealth interventions improve quality of life of cancer patients? A systematic review and meta-analysis",
    "year": "2021",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2021-buneviciene-critrevoncolhematol-can-mhealth-interventions-improve-quality-life.pdf",
+   "pdf": "module-04-methods-and-reviews/literature/2021-buneviciene-critrevoncolhematol-can-mhealth-interventions-improve-quality-life.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -777,7 +778,7 @@
    "pmcid": "PMC8372411",
    "title": "Consensus statement on ethical & safety practices for conducting digital monitoring studies with people at risk of suicide and related behaviors",
    "year": "2021",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2021-nock-psychiatrresclinpract-consensus-statement-ethical-safety-practices-conducting.pdf",
+   "pdf": "module-04-methods-and-reviews/literature/2021-nock-psychiatrresclinpract-consensus-statement-ethical-safety-practices-conducting.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -807,7 +808,7 @@
    "pmcid": "PMC7727382",
    "title": "Determining sample size and length of follow-up for smartphone-based digital phenotyping studies",
    "year": "2020",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2020-barnett-journalamericanmedicalin-determining-sample-size-length-follow-up-smartphone-based.pdf",
+   "pdf": "module-02-digital-phenotyping/literature/beiwe/2020-barnett-journalamericanmedicalin-determining-sample-size-length-follow-up-smartphone-based.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -817,7 +818,7 @@
    "pmcid": "PMC7688649",
    "title": "Opportunities and challenges in the collection and analysis of digital phenotyping data",
    "year": "2021",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2021-onnela-neuropsychopharmacologyo-opportunities-challenges-collection-analysis-digital-phenotyping.pdf",
+   "pdf": "module-04-methods-and-reviews/literature/2021-onnela-neuropsychopharmacologyo-opportunities-challenges-collection-analysis-digital-phenotyping.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -827,7 +828,7 @@
    "pmcid": "PMC7374287",
    "title": "Augmented movelet method for activity classification using smartphone gyroscope and accelerometer data",
    "year": "2020",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2020-huang-sensors-augmented-movelet-method-activity-classification-smartphone.pdf",
+   "pdf": "module-02-digital-phenotyping/literature/beiwe/2020-huang-sensors-augmented-movelet-method-activity-classification-smartphone.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -837,7 +838,7 @@
    "pmcid": "PMC6546650",
    "title": "Smartphone-based tracking of sleep in depression, anxiety, and psychotic disorders",
    "year": "2019",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2019-aledavood-currpsychiatryrep-smartphone-based-tracking-sleep-depression-anxiety-psychotic.pdf",
+   "pdf": "module-04-methods-and-reviews/literature/2019-aledavood-currpsychiatryrep-smartphone-based-tracking-sleep-depression-anxiety-psychotic.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -867,7 +868,7 @@
    "pmcid": "PMC6550158",
    "title": "Harnessing digital technology to predict, diagnose, monitor, and develop treatments for brain disorders",
    "year": "2019",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2019-stroud-npjdigitalmedicine-harnessing-digital-technology-predict-diagnose-monitor.pdf",
+   "pdf": "module-04-methods-and-reviews/literature/2019-stroud-npjdigitalmedicine-harnessing-digital-technology-predict-diagnose-monitor.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -877,7 +878,7 @@
    "pmcid": "PMC6476810",
    "title": "Assessing the potential of longitudinal smartphone-based cognitive assessment in schizophrenia: A naturalistic pilot study",
    "year": "2019",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2019-liu-schizophrresconn-assessing-potential-longitudinal-smartphone-based-cognitive-assessment.pdf",
+   "pdf": "module-02-digital-phenotyping/literature/mindlamp/2019-liu-schizophrresconn-assessing-potential-longitudinal-smartphone-based-cognitive-assessment.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -887,7 +888,7 @@
    "pmcid": "PMC6529832",
    "title": "Design and results of a smartphone",
    "year": "2019",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2019-berry-annclintranslneurol-design-results-smartphone.pdf",
+   "pdf": "module-02-digital-phenotyping/literature/beiwe/2019-berry-annclintranslneurol-design-results-smartphone.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -907,7 +908,7 @@
    "pmcid": "PMC7868053",
    "title": "Inferring mobility measures from GPS with missing data",
    "year": "2020",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2020-barnett-biostatisticsoxfordengla-inferring-mobility-measures-gps-missing-data.pdf",
+   "pdf": "module-02-digital-phenotyping/literature/beiwe/2020-barnett-biostatisticsoxfordengla-inferring-mobility-measures-gps-missing-data.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -927,7 +928,7 @@
    "pmcid": "PMC6658863",
    "title": "Beyond smartphones and sensors: choosing appropriate statistical methods for the analysis of longitudinal data",
    "year": "2018",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2018-barnett-journalamericanmedicalin-beyond-smartphones-sensors-choosing-appropriate-statistical.pdf",
+   "pdf": "module-02-digital-phenotyping/literature/beiwe/2018-barnett-journalamericanmedicalin-beyond-smartphones-sensors-choosing-appropriate-statistical.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -937,7 +938,7 @@
    "pmcid": "PMC5889403",
    "title": "A crossroad for validating digital tools in schizophrenia and mental health",
    "year": "2018",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2018-torous-npjschizophrenia-crossroad-validating-digital-tools-schizophrenia-mental.pdf",
+   "pdf": "module-04-methods-and-reviews/literature/2018-torous-npjschizophrenia-crossroad-validating-digital-tools-schizophrenia-mental.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -947,7 +948,7 @@
    "pmcid": "PMC6550248",
    "title": "Characterizing the clinical relevance of digital phenotyping data quality with applications to a cohort with schizophrenia",
    "year": "2018",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2018-torous-npjdigitalmedicine-characterizing-clinical-relevance-digital-phenotyping-data.pdf",
+   "pdf": "module-02-digital-phenotyping/literature/beiwe/2018-torous-npjdigitalmedicine-characterizing-clinical-relevance-digital-phenotyping-data.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -957,7 +958,7 @@
    "pmcid": "PMC6556148",
    "title": "The HOPE pilot study: Harnessing patient-reported outcomes and biometric data to enhance cancer care",
    "year": "2018",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2018-wright-jcoccinformatics-hope-pilot-study-harnessing-patient-reported-outcomes.pdf",
+   "pdf": "module-02-digital-phenotyping/literature/beiwe/2018-wright-jcoccinformatics-hope-pilot-study-harnessing-patient-reported-outcomes.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -967,7 +968,7 @@
    "pmcid": "PMC6006347",
    "title": "Relapse prediction in schizophrenia through digital phenotyping: A pilot study",
    "year": "2018",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2018-barnett-neuropsychopharmacologyo-relapse-prediction-schizophrenia-through-digital-phenotyping.pdf",
+   "pdf": "module-02-digital-phenotyping/literature/beiwe/2018-barnett-neuropsychopharmacologyo-relapse-prediction-schizophrenia-through-digital-phenotyping.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -997,7 +998,7 @@
    "pmcid": "PMC5643440",
    "title": "A comparison of passive and active estimates of sleep in a cohort with schizophrenia",
    "year": "2017",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2017-staples-npjschizophrenia-comparison-passive-active-estimates-sleep-cohort.pdf",
+   "pdf": "module-02-digital-phenotyping/literature/beiwe/2017-staples-npjschizophrenia-comparison-passive-active-estimates-sleep-cohort.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -1017,7 +1018,7 @@
    "pmcid": "PMC5416670",
    "title": "New dimensions and new tools to realize the potential of RDoC: digital phenotyping via smartphones and connected devices",
    "year": "2017",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2017-torous-translationalpsychiatry-new-dimensions-new-tools-realize-potential.pdf",
+   "pdf": "module-04-methods-and-reviews/literature/2017-torous-translationalpsychiatry-new-dimensions-new-tools-realize-potential.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -1027,7 +1028,7 @@
    "pmcid": "PMC4869063",
    "title": "Harnessing smartphone-based digital phenotyping to enhance behavioral and mental health",
    "year": "2016",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2016-onnela-neuropsychopharmacologyo-harnessing-smartphone-based-digital-phenotyping-enhance-behavioral.pdf",
+   "pdf": "module-04-methods-and-reviews/literature/2016-onnela-neuropsychopharmacologyo-harnessing-smartphone-based-digital-phenotyping-enhance-behavioral.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -1057,7 +1058,7 @@
    "pmcid": "PMC4607379",
    "title": "Utilizing a personal smartphone custom app to assess the Patient Health Questionnaire-9 (PHQ-9) depressive symptoms in patients with major depressive disorder",
    "year": "2015",
-   "pdf": "module-02-digital-phenotyping/literature/onnela-lab/2015-torous-jmirmentalhealth-utilizing-personal-smartphone-custom-app-assess.pdf",
+   "pdf": "module-02-digital-phenotyping/literature/mindful-moods/2015-torous-jmirmentalhealth-utilizing-personal-smartphone-custom-app-assess.pdf",
    "pdf_status": "ok",
    "source": "onnela-lab-papers-page-2026-08-31"
   },
@@ -1120,6 +1121,16 @@
    "year": "2026",
    "oa_status": "Paywalled",
    "pdf": null
+  },
+  {
+   "doi": "10.1101/2024.10.03.24314808",
+   "pmid": null,
+   "pmcid": null,
+   "title": "Data Missingness in Digital Phenotyping: Implications for Clinical Inference and Decision-Making",
+   "year": "2024",
+   "pdf": null,
+   "pdf_status": "oa-not-obtained (medRxiv HTTP 403 to scripts, 2026-10-10)",
+   "source": "independent-review-correction-2026-10-10 (catalogue entry L033)"
   }
  ]
 }

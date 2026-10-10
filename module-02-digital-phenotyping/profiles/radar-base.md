@@ -6,12 +6,12 @@
 |---|---|
 | Organization | King's College London and The Hyve (joint maintainers); originated in the IMI RADAR-CNS consortium |
 | Category | Open-source, enterprise-grade remote monitoring / digital phenotyping platform |
-| Current status | Active, 2026 RADAR-base Symposium held; industry partners (Garmin, Huawei, Empatica, PsychPlus, mySkin) actively integrating |
-| Platforms/devices | Android and iOS apps ("RADAR-pRMT"/passive app), plus wearable and IoT device integrations |
+| Current status | Active; ManagementPortal pushed 2026-10-05, radar-prmt-android 2026-06-19, RADAR-Kubernetes 2026-10-06 (GitHub API, checked 2026-10-10); 2026 Symposium held. The iOS passive app (radar-prmt-ios) is dormant: last commit 2021-01-19 |
+| Platforms/devices | Android passive app "RADAR passive RMT" on Google Play (`org.radarcns.detail`, offered by The Hyve, updated 2026-06-18). Active questionnaire app "RADAR active RMT" on Google Play (`org.phidatalab.radar_armt`, updated 2026-09-09) and the App Store ("RADAR Active RMT", seller Onsentia Limited, v3.3.18, 2026-08-24). No maintained iOS passive app: radar-prmt-ios is "work in progress" that records location only; iOS data come via the aRMT app's HealthKit task. Plus wearable and IoT integrations. Checked 2026-10-10 |
 | Open source | Yes, Apache 2.0 |
-| Hosting/deployment | Self-hosted (institution-run, Kafka-based backend) or cloud-deployed |
-| Pricing model | Free/open-source software; infrastructure and hosting/support costs are the researcher's own |
-| Last verified | 2026-08-25 (second pass) |
+| Hosting/deployment | Self-hosted (institution-run, Kafka-based backend; RADAR-Kubernetes for cluster installs) or cloud-deployed; managed hosting ("RADAR-base as a Service") from co-maintainer The Hyve, single-server, ideal for up to about 200 participants |
+| Pricing model | Free/open-source software (Apache 2.0); self-hosting costs are the researcher's own; The Hyve's managed hosting is a subscription priced by quote only. No academic tier published (Verified 2026-10-10) |
+| Last verified | 2026-10-10 (The Hyve service terms, app-store listings, repository activity) |
 
 ## Summary
 
@@ -108,6 +108,8 @@
 - Software is free and open source (Apache 2.0). No published licence fee was found.
 
 - **Resolved 2026-08-25 (second pass, resolving unresolved-question #86, Verified via direct fetch of `thehyve.nl/services/radar-base-as-a-service`).** The Hyve, RADAR-base's co-maintainer, offers a named managed-hosting product, **"RADAR-base as a Service,"** distinct from self-hosting. Per the vendor's own service page: platform installation configured to the study's needs; hosting on a GDPR-compliant public cloud of the customer's choosing; support for "unlimited studies and participants" in the general offering description, though the same page separately caveats that the service is best suited to studies of **roughly 200 participants or fewer**, attributed to a single-server infrastructure model; end-user training for passive sensors, surveys, and wearable integrations (Fitbit/Garmin named); ongoing maintenance and technical support; and a stated 2 to 4 week setup timeline. **No pricing figures are published**, this remains a quote-based service, so RADAR-base does not yet match Beiwe's now-resolved rate transparency (see `profiles/beiwe.md`). This is RADAR-base's first confirmed managed-hosting alternative to self-hosting.
+- **Re-read 2026-10-10 (Verified):** the page states that "The client organisation will always be the owner of the collected data"; a Data Processing Agreement is drawn up if The Hyve keeps managing the platform after the initial period or gets access to sensitive data; the platform runs on "a single computer based server in contrast to a cluster of computers", so throughput can limit concurrent senders; "Studies with a maximum of 200 participants are ideal for this setup", although the subscription "allows you to use it for any number of studies or participants"; and the service is "best suited for small-scale and short-term studies", with pilots recommended. Hosting is in "a GDPR compliant public cloud infrastructure located at the choice of the client". No price is given; contact via office@thehyve.nl or the inquiry form. Export procedures are not described.
+- **How larger deployments scale (Unclear):** the page does not say how the ~200-participant ceiling is raised. The documented open-source route for larger installs is RADAR-Kubernetes (pushed 2026-10-06), whose README says it is used "in few production environments" and is still in its early stages. That this is The Hyve's scale-up path is an inference, not stated.
 
 ## Research Evidence and Validation
 
@@ -138,15 +140,16 @@
 ## Poor-Fit Use Cases
 
 - Small single-site pilots without dedicated infrastructure engineering support, the operational floor appears higher than several commercial or lighter-weight academic alternatives in this module.
-- Teams wanting a fully managed, no-infrastructure-to-run SaaS experience out of the box (unless an unverified managed-hosting option exists, see Open Questions).
+- Teams wanting a fully managed SaaS experience for studies above roughly 200 participants: The Hyve's managed service exists but is pitched at small, short-term studies on a single server.
+- Studies that need passive phone sensing on iOS: there is no maintained iOS passive app (radar-prmt-ios last committed 2021-01-19); iOS data come through HealthKit in the aRMT app.
 
 ## Open Questions
 
 - *(Directed to: RADAR-base maintainers, King's College London / The Hyve, via https://radar-base.org)*
 
 - ~~Is there a managed-hosting or paid-support offering comparable to Beiwe's Service Center?~~ **Resolved 2026-08-25**, yes, "RADAR-base as a Service" via The Hyve; pricing still not public.
-- What does "RADAR-base as a Service" actually cost, and how does its ~200-participant single-server ceiling get raised for larger studies (multi-server pricing/architecture)?
-- ~~What is the exact current sensor/data-stream catalog, and how do iOS and Android differ?~~ **Largely resolved 2026-08-25** for Android (17-item itemized list) and qualitatively for the iOS gap ("substantial differences," iOS "more sparse"); the exact iOS-side itemized list (which of the 17 Android streams iOS lacks or restricts) is still not obtained. **Partly resolved 2026-10-09**: the 2019 per-stream chart is now in the stream table, but it conflicts with the dormant iOS pRMT repository, and current iOS passive collection appears to run through HealthKit in the aRMT app. Still open: which iOS app a new study would actually deploy for phone sensors.
+- What does "RADAR-base as a Service" actually cost, and how does its ~200-participant single-server ceiling get raised for larger studies? (Re-checked 2026-10-10: still no price; RADAR-Kubernetes is the documented cluster route, but the page does not say The Hyve offers it.)
+- ~~What is the exact current sensor/data-stream catalog, and how do iOS and Android differ?~~ **Largely resolved 2026-08-25** for Android (17-item itemized list) and qualitatively for the iOS gap ("substantial differences," iOS "more sparse"); the exact iOS-side itemized list (which of the 17 Android streams iOS lacks or restricts) is still not obtained. **Partly resolved 2026-10-09**: the 2019 per-stream chart is now in the stream table, but it conflicts with the dormant iOS pRMT repository, and current iOS passive collection appears to run through HealthKit in the aRMT app. Still open: which iOS app a new study would actually deploy for phone sensors. Re-checked 2026-10-10: radar-prmt-ios unchanged (last commit 2021-01-19, last push 2023-06-20, not archived) and still the only iOS pRMT repository in the organization.
 - What compliance certifications (HIPAA, GDPR DPA beyond hosting-infrastructure GDPR-compliance framing, SOC 2, ISO 27001) does the maintained reference deployment or a typical institutional deployment carry?
 - What is the realistic infrastructure/DevOps staffing requirement to stand up and operate a **self-hosted** production instance (as distinct from the now-confirmed managed-hosting alternative)?
 - What built-in derived-feature/analytics catalog exists natively versus requiring custom per-study development?
@@ -154,6 +157,9 @@
 ## Key Links
 
 - Official site: https://radar-base.org/
+- The Hyve, RADAR-base as a Service: https://www.thehyve.nl/services/radar-base-as-a-service
+- RADAR passive RMT (Google Play): https://play.google.com/store/apps/details?id=org.radarcns.detail
+- RADAR active RMT (Google Play): https://play.google.com/store/apps/details?id=org.phidatalab.radar_armt ; App Store: https://apps.apple.com/us/app/radar-active-rmt/id1483953055
 - About: https://radar-base.org/about/
 - Publications: https://radar-base.org/publications/
 - 2026 Symposium announcement: https://radar-base.org/2026/05/28/%F0%9F%9A%80-radar-base-symposium-2026-innovation-impact-the-future-of-mobile-health/
@@ -174,3 +180,6 @@
 12. `RADAR-base/RADAR-Questionnaire` `package.json`, README and `src/app/shared/models/health.ts`. https://github.com/RADAR-base/RADAR-Questionnaire (accessed 2026-10-09). **Primary/Direct.** HealthKit task and supported types; Firebase messaging.
 13. `RADAR-base/RADAR-Appserver` README and `RADAR-base/RADAR-Backend` README and `DisconnectMonitor.java`. https://github.com/RADAR-base/RADAR-Appserver ; https://github.com/RADAR-base/RADAR-Backend (accessed 2026-10-09). **Primary/Direct.** Push scheduling for questionnaires; researcher email on source disconnect.
 14. RADAR-base GitHub repository listing, iOS-related repos (`radar-sensorkit-cordova`, `radar-base-app`) (accessed 2026-10-09). **Direct.**
+15. The Hyve, "RADAR-base as a Service," re-read. https://www.thehyve.nl/services/radar-base-as-a-service (accessed 2026-10-10). **Primary/Verified.** Data ownership, DPA conditions, single-server model, ~200 participants ideal, small-scale and short-term fit, subscription, no price.
+16. Google Play (`org.radarcns.detail`, `org.phidatalab.radar_armt`) and App Store (id 1483953055) listings, direct fetch 2026-10-10. **Primary/Verified.**
+17. GitHub API for ManagementPortal, radar-prmt-android, radar-prmt-ios and RADAR-Kubernetes, plus the RADAR-Kubernetes README (accessed 2026-10-10). **Primary/Verified.**

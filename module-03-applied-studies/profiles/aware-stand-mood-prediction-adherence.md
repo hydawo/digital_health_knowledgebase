@@ -11,7 +11,7 @@
 | Duration | Wave 1 up to **20 weeks** (Apr 2017 – Jun 2018); Wave 2 up to **40 weeks** (from academic year 2018, running three years, overlapping the Los Angeles Safer-At-Home order from March 2020). |
 | Devices/platforms used | **[AWARE](../../module-02-digital-phenotyping/profiles/aware-framework.md)** only — BYOD smartphone, location / screen state / call and SMS logs. Mood measured by **CAT-DI** (Computerized Adaptive Testing Depression Inventory), delivered online, not through AWARE. No wearable. |
 | Funding/COI | NSF #1829071; NIH R35GM125055; NSF III-1705121 and CAREER-1943497; NIH R01MH122569. **COI: "Dr. Gibbons is a founder of Adaptive Testing Technologies, who is the licensor of the CAT-DI."** The instrument-vendor relationship is on the *outcome measure*, not the sensing platform; no AWARE developer is an author. |
-| Last verified | 2026-09-02 |
+| Last verified | 2026-09-02; SMS-feature denominator corrected 2026-10-10 against the Europe PMC full text (PMC10902386) |
 
 ## Summary
 
@@ -27,7 +27,7 @@ This is the strongest evidence in the module for cross-cutting pattern 5 (*suppo
 
 Overall protocol adherence was nonetheless poor: **4,507 CAT-DI assessments delivered against 11,218 expected — 40.2%.**
 
-The second contribution is a **structural, stream-specific OS asymmetry**: SMS-derived features could not be computed on iOS at all, so they exist for **only 15 of 183 participants (8.2%)**.
+The second contribution is a **structural, stream-specific OS asymmetry**: SMS-derived features could not be computed on iOS at all and were computed for only **15 participants with Android devices**. The paper does not state the denominator. If all 15 are in the 183-person modelling sample, that is 8.2%.
 
 ## Instrumentation and Deployment Model
 
@@ -96,9 +96,9 @@ Adherence varied significantly by wave (LRT P<2.2×10⁻¹⁶), treatment group 
 
 > "Due to OS restrictions, sensors needed to extract text message features are not available on iOS devices and were only computed for the **15 participants with Android devices**."
 
-This is a **stream-specific, hard OS gate**: the SMS stream simply does not exist on iOS, so 168 of 183 participants (91.8%) contribute nothing to any SMS feature. It is a different phenomenon from the *yield* asymmetries reported by [McClaine 2024](aware-chemotherapy-engagement.md) (Android lower) and [Wu 2023](aware-alcohol-liver-disease-craving.md) (Android higher), and from the *survey-delivery* asymmetry [McInerney 2024](beiwe-type-2-diabetes-feasibility.md) found on Beiwe. It supports the module's current framing — **name the stream before stating an OS effect** — and adds a third category: streams that are OS-exclusive by platform policy, where the correct planning response is not mitigation but either accepting an 8% subsample or dropping the feature.
+This is a **stream-specific, hard OS gate**: the SMS stream simply does not exist on iOS, so participants on iPhones contribute nothing to any SMS feature. If all 15 Android users are in the 183-person modelling sample, that would be 168 of 183 (91.8%), but the paper does not say so. It is a different phenomenon from the *yield* asymmetries reported by [McClaine 2024](aware-chemotherapy-engagement.md) (Android lower) and [Wu 2023](aware-alcohol-liver-disease-craving.md) (Android higher), and from the *survey-delivery* asymmetry [McInerney 2024](beiwe-type-2-diabetes-feasibility.md) found on Beiwe. It supports the module's current framing — **name the stream before stating an OS effect** — and adds a third category: streams that are OS-exclusive by platform policy, where the correct planning response is not mitigation but either accepting a small Android subsample or dropping the feature.
 
-It also implies the cohort was **roughly 92% iOS**, which is unusually skewed and is not commented on in the paper.
+If the 15 are a subset of the 183, the cohort was **roughly 92% iOS**. That is an inference. The paper reports neither the full-cohort OS split nor the denominator of the 15.
 
 **Missingness mechanism the authors name.** In defending the missing-at-random assumption they write that "the data is missing more often for participants that did not receive regular reminders" — i.e. **missingness tracks the support regime**, the same variable driving the attrition difference. That is a coherent account, but it means missingness is correlated with treatment arm and therefore with baseline severity.
 
@@ -128,11 +128,11 @@ The authors' framing is that the study "verified the feasibility of using passiv
 
 **Reported** — the mechanism the authors give for the arm difference (in-session reconciliation of missed assessments). Plausible, stated by the authors, not experimentally isolated. Treatment arm is confounded with baseline severity by design, so this is not a randomised comparison of support intensity and should not be cited as one.
 
-**Unclear** — per-participant passive data completeness (a supplementary figure only; no numeric statement in the main text); the number of otherwise-eligible participants who refused AWARE installation; the exact iOS/Android split of the full 437 (inferable only from the 15-of-183 SMS note); and how much of the reported prediction accuracy depends on the interpolation and imputation choices.
+**Unclear** — per-participant passive data completeness (a supplementary figure only; no numeric statement in the main text); the number of otherwise-eligible participants who refused AWARE installation; the exact iOS/Android split of the full 437 (the paper gives only the count of 15 Android participants for the SMS features, without a denominator); and how much of the reported prediction accuracy depends on the interpolation and imputation choices.
 
 **Scope note.** This is a prediction/modelling paper and most of its content is out of Module 3's scope. It qualifies on the strength of its explicit adherence Results section, its published enrolment-to-analysis funnel, and the treatment-arm attrition contrast. **Cite it for the adherence findings; the ML results belong elsewhere.**
 
-**Generalisability caution.** UCLA students, 76.5% female, 26.5% White, roughly 92% iOS, recruited into an offered treatment programme rather than a standalone research study — participants had a therapeutic reason to stay engaged that a pure observational cohort does not. Wave 2 overlaps the COVID-19 Safer-At-Home period; the authors found no significant COVID effect on CAT-DI variance but did not test it against adherence.
+**Generalisability caution.** UCLA students, 76.5% female, 26.5% White, probably mostly iOS (OS split not reported), recruited into an offered treatment programme rather than a standalone research study — participants had a therapeutic reason to stay engaged that a pure observational cohort does not. Wave 2 overlaps the COVID-19 Safer-At-Home period; the authors found no significant COVID effect on CAT-DI variance but did not test it against adherence.
 
 **COI:** author Robert Gibbons founds the company licensing the CAT-DI, the study's outcome instrument. No AWARE developer is an author and the paper makes no claims about the platform's merits.
 

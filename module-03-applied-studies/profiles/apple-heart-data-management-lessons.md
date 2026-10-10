@@ -4,14 +4,14 @@
 
 | Field | Details |
 |---|---|
-| Citation | Garcia A, Balasubramanian V, Lee J, Gardner R, Gummidipundi S, Hung G, Ferris T, Cheung L, Granger C, Kowey P, et al. "Lessons learned in the Apple Heart Study and implications for the data management of future digital clinical trials." *Journal of Biopharmaceutical Statistics* 2022. DOI [10.1080/10543406.2022.2080698](https://doi.org/10.1080/10543406.2022.2080698). PMC9378511 (author manuscript). |
+| Citation | Garcia A, Balasubramanian V, Lee J, Gardner R, Gummidipundi S, Hung G, Ferris T, Cheung L, Granger C, Kowey P, et al. "Lessons learned in the Apple Heart Study and implications for the data management of future digital clinical trials." *Journal of Biopharmaceutical Statistics* 2022;32(3):496-510. DOI [10.1080/10543406.2022.2080698](https://doi.org/10.1080/10543406.2022.2080698). PMC9378511 (author manuscript). |
 | Study design | Methodological retrospective on the Apple Heart Study — a **pragmatic, single-arm, prospective, site-less digital trial**. Not a new cohort; a data-management post-mortem framed against the Clinical Trials Transformation Initiative (CTTI) guidelines. |
 | Sample size (enrolled / analyzed) | **419,297 enrolled across all 50 states in 8 months.** 2,161 (0.52%) notified of possible AF. The engagement funnel below is the point of the paper. |
 | Population | US Apple Watch owners, self-enrolled through an app. Described as having "broad diversity and inclusion." |
 | Duration | 8-month enrolment period |
 | Devices/platforms used | **[Apple Watch](../../module-01-wearables/profiles/apple-watch-healthkit.md)** (irregular-pulse algorithm), study app, **AmericanWell** telehealth, **BioTelemetry** single-lead ECG patch (now Philips), participant surveys |
-| Funding/COI | **Academic–industry partnership between Stanford University and Apple Inc.** — Apple is both the device manufacturer and a study partner. |
-| Last verified | 2026-08-31 |
+| Funding/COI | **Academic–industry partnership between Stanford University and Apple Inc.** — Apple is both the device manufacturer and a study partner. The paper states the work "was supported through a partnership sponsored by Apple, Inc" (NCT03335800). One author affiliation is Apple Inc. (Cupertino, CA). Formal declaration of interest: "None". Stanford served as the independent Data Coordinating Center behind a firewall from Apple. |
+| Last verified | 2026-08-31; volume/pages (Crossref) and funding statement (NCBI efetch PMC XML, PMC9378511) added 2026-10-10 |
 
 ## Summary
 

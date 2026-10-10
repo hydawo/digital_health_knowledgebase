@@ -10,8 +10,8 @@
 | Platforms/devices | Axivity **AX3** (accelerometer), **AX6** (accelerometer + gyroscope); GENEActiv Original / Sleep |
 | Open source | **Axivity: firmware and software BSD 2-clause; hardware and enclosure CC BY 3.0.** GENEActiv: proprietary device, open analysis ecosystem |
 | Hosting/deployment | **None**, devices log to internal memory, downloaded by USB. No cloud, no account |
-| Pricing model | Device purchase only; no subscription, no platform fee |
-| Last verified | 2026-08-21; GENEActiv supply and Open Movement maintenance re-checked 2026-10-09 |
+| Pricing model | Device purchase only; no subscription, no platform fee. **Axivity publishes list prices** (AX3 from £139, AX6 from £199, ex VAT); GENEActiv by quote |
+| Last verified | 2026-08-21; GENEActiv supply and Open Movement maintenance re-checked 2026-10-09; Axivity prices and specs, recording durations and GENEAcore re-verified 2026-10-10 |
 
 ## Summary
 
@@ -27,7 +27,7 @@
 - the Open Movement project at Newcastle University. **Verified** (github.com/digitalinteraction/openmovement/wiki/AX3).
 - **GENEActiv Original / GENEActiv Sleep** (Activinsights), wrist-worn raw accelerometer with
 - additional light and near-body temperature channels on the Original.
-- **GENEActiv supply status (re-checked 2026-10-09, Corroborated).** Activinsights still sells GENEActiv. Its product page was republished on 2026-01-29 with a "Request a Quote" route, a note that each order needs a USB cradle (up to 4 devices per cradle), "Up to 2 months battery life", and a statement that the device is moving from MDD 93/42/EEC Class I to EU MDR compliance. No discontinuation or end-of-life notice appears. The page names a single "GENEActiv" with no Original or Sleep variants, and the site lists a second wearable, the ActivInsights Band. Activinsights also co-owns the GENEAcore R package for raw GENEActiv files, released as version 1.2.0 on 2026-04-02. Whether the device is in current manufacture, and the lead times, are not stated publicly; ask Activinsights (info@activinsights.com) when ordering.
+- **GENEActiv supply status (re-checked 2026-10-09, Corroborated).** Activinsights still sells GENEActiv. Its product page was republished on 2026-01-29 with a "Request a Quote" route, a note that each order needs a USB cradle (up to 4 devices per cradle), "Up to 2 months battery life", and a statement that the device is moving from MDD 93/42/EEC Class I to EU MDR compliance. No discontinuation or end-of-life notice appears. The page names a single "GENEActiv" with no Original or Sleep variants, and the site lists a second wearable, the ActivInsights Band. Activinsights Ltd is the only copyright holder ("cph") listed for the GENEAcore R package for raw GENEActiv files, version 1.2.0, published on CRAN on 2026-04-02; its maintainer uses an activinsights.com address (CRAN, checked 2026-10-10; corrected from "co-owns"). Whether the device is in current manufacture, and the lead times, are not stated publicly; ask Activinsights (info@activinsights.com) when ordering. Re-checked 2026-10-10: still "Request a Quote", still "Up to 2 months battery life", no discontinuation notice; the site footer now styles the company "ActivInsights Ltd" (© 2026).
 
 - There is no platform. The architecture is: configure device → participant wears it → return device → download file → analyze.
 
@@ -39,8 +39,8 @@
 |---|---|---|---|---|
 | PPG | No | Not applicable | Not applicable |  |
 | ECG | No | Not applicable | Not applicable |  |
-| Accelerometer | Yes, all models | Raw, always | AX3 configurable rate and range; UK Biobank used 100 Hz at plus or minus 8 g | No vendor-derived metrics exist; every metric comes from the analyst's own pipeline. |
-| Gyroscope | AX6 only | Raw | Configurable | Enables orientation and gait work. |
+| Accelerometer | Yes, all models | Raw, always | **AX3: 12.5 to 3,200 Hz, ±2/4/8/16 g, configurable. AX6: 12.5 to 1,600 Hz, ±2/4/8/16 g.** UK Biobank used 100 Hz at ±8 g, a protocol setting, not the device limit | Verified 2026-10-10 (axivity.com product pages). No vendor-derived metrics exist; every metric comes from the analyst's own pipeline. |
+| Gyroscope | AX6 only | Raw | ±125/250/500/1000/2000 dps, configurable | Verified 2026-10-10. Enables orientation and gait work. |
 | Magnetometer | No | Not applicable | Not applicable |  |
 | Temperature | GENEActiv Original | Raw near-body temperature | Unclear |  |
 | SpO2 | No | Not applicable | Not applicable |  |
@@ -104,6 +104,7 @@
 ## Participant Experience
 
 - Small, sealed, screenless, waterproof pucks worn on a wrist strap (or thigh/hip with tape/belt).
+- **Recording duration (re-verified 2026-10-10).** Axivity's product pages state AX3 "30 days @ 12.5Hz; 14 days @ 100Hz" and AX6 "7+ days @ 100Hz, Accel & Gyro" and "31+ days @ 50Hz, Accel only". The Open Movement FAQ (by the team that designed the devices) gives a fuller table of approximate maximum duration on one charge: AX3 packed mode 13.5 days at 100 Hz, 27 days at 50 Hz, about 48 days at 25 Hz and about 65 days at 12.5 Hz (battery-limited; storage would allow 110); AX3 unpacked 9, 18 and 36.5 days at 100, 50 and 25 Hz; AX6 accelerometer-only 18.3, 36.5, 73 and 146 days at 100, 50, 25 and 12.5 Hz; AX6 with gyroscope 7 to 9 days at 25 to 100 Hz. The g-range does not affect duration. **Verified** for Axivity. GENEActiv: the vendor page says only "Up to 2 months battery life"; no official duration table was found (**Unclear**).
 - **No charging during the wear period**, battery is sized for the recording window. For UK
 - Biobank's protocol, a single charge covered the full seven days at 100 Hz.
 - No app, no phone, no account, no sync, no notifications. **Missing data from sync failure is
@@ -122,7 +123,8 @@
 
 ## Pricing
 
-- Device purchase only; no recurring cost. Public list pricing is limited; typical figures cited in the research community place AX3 and GENEActiv units in the low-to-mid hundreds of pounds/dollars each, well below ActiGraph. **Unclear**, no authoritative current price was verified in this pass. Both vendors quote directly and offer academic pricing.
+- Device purchase only; no recurring cost. **Corrected 2026-10-10: Axivity publishes list prices with online purchase.** AX3 puck £139.00, AX3 puck with wrist band (teal or black) £149.00, AX6 puck £199.00, AX6 puck with wrist band £209.00, all excluding VAT, with "Add to cart". **Verified** (axivity.com/product/ax3 and /ax6). The earlier statement that both vendors offer academic pricing is not supported: no academic discount appears on either vendor's pages (**Unclear** whether one exists). GENEActiv remains "Request a Quote" with no public price (**Verified**, activinsights.com, 2026-10-10).
+- **Research program and academic data access.** None exists and none is needed: researchers buy the devices at the same list price as anyone, and get the full raw signal by USB with no account, API, user cap, retention rule or data-use terms. The only access difference between buyers is GENEActiv's quote route. **Verified** for Axivity (2026-10-10).
 
 - **The absence of any software licence or platform subscription is the key economic point**: unlike ActiGraph (ActiLife ~$1,695, CentrePoint ~$3,500/yr per third-party report), the analysis toolchain here is free and open.
 
@@ -164,7 +166,7 @@
 - Device recovery logistics and loss are a genuine cost.
 - No study management, no participant engagement, no intervention capability.
 - Cannot support any adaptive or feedback-based design.
-- Public pricing is not available.
+- Public pricing is available for Axivity (AX3 £139 to £149, AX6 £199 to £209, ex VAT) but not for GENEActiv (quote only).
 
 ## Best-Fit Use Cases
 
@@ -187,8 +189,8 @@
 
 ## Open Questions
 
-- Current list and academic pricing for AX3, AX6, and GENEActiv?
-- Maximum recording duration at various sampling-rate/range configurations for each device?
+- ~~Current list pricing for AX3 and AX6?~~ Resolved 2026-10-10 (see Pricing). Still open: GENEActiv price, and whether either vendor offers academic pricing.
+- ~~Maximum recording duration for AX3 and AX6?~~ Resolved 2026-10-10 from the Open Movement FAQ (see Participant Experience). Still open: an official GENEActiv duration table.
 - ~~Current status and maintenance of the Open Movement project and OmGui?~~ Resolved 2026-10-09: active repository, OmGui last released 2022-10-31 (v45), AX3 firmware V50, AX6 firmware V56; see Derived Metrics / Analytics.
 - Is Activinsights' GENEActiv line still in active production and supply? Partly resolved 2026-10-09: still offered for sale by quote with a 2026 product page and no discontinuation notice; manufacturing status and lead times need Activinsights to confirm.
 - What is the practical device-loss rate in postal deployments, and how do large cohorts mitigate it?
@@ -209,3 +211,9 @@
 ## Sources
 
 - See `../sources.md` entries S-AXV-01 through S-AXV-05, and S-AXV-07 through S-AXV-09 (added 2026-10-09).
+- Added 2026-10-10 (rows for `../sources.md` proposed to the coordinator):
+  - Axivity, AX3 product page. https://axivity.com/product/ax3 (accessed 2026-10-10). **Primary.** £139/£149 ex VAT; 12.5 to 3,200 Hz; ±2 to 16 g; 30 days at 12.5 Hz, 14 days at 100 Hz.
+  - Axivity, AX6 product page. https://axivity.com/product/ax6 (accessed 2026-10-10). **Primary.** £199/£209 ex VAT; 12.5 to 1,600 Hz; ±2 to 16 g; gyroscope ±125 to 2000 dps.
+  - Open Movement, AX3 FAQ (recording duration table). https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-faq.md (accessed 2026-10-10). **Primary (device designers).**
+  - CRAN, GENEAcore package page. https://cran.r-project.org/package=GENEAcore (accessed 2026-10-10). **Primary.** Version 1.2.0, published 2026-04-02, Activinsights Ltd [cph].
+  - Activinsights, GENEActiv product page. https://activinsights.com/digital-health-technologies/professional-wearables/geneactiv/ (accessed 2026-10-10). **Primary.** "Request a Quote"; "Up to 2 months battery life".

@@ -10,8 +10,8 @@
 | Population | Adults (≥18) with clinically diagnosed spine disease seen as neurosurgical candidates. Mean age 52.0 (SD 14.0); 45.7% male; disease site 60.1% lumbar, 33.3% cervical, 5.7% thoracic. **52.4% (55/105) underwent neurosurgical intervention during follow-up.** |
 | Duration | Enrolment June 2016 – May 2017. **Median follow-up 94.5 days (3.15 months).** |
 | Devices/platforms used | **[Beiwe](../../module-02-digital-phenotyping/profiles/beiwe.md)** only — participants' own smartphones (BYOD, Android + iOS). |
-| Funding/COI | Brigham & Women's / Harvard Chan. **Onnela, Beiwe's originator, is co-senior author; Barnett, a Beiwe/Forest methods developer, is co-first author.** The paper states plainly that Beiwe was "developed by a subset of the authors." |
-| Last verified | 2026-09-01 |
+| Funding/COI | NIH Training Grant T32 CA 009001 (Cote), the only funding line in the paper. The formal disclosures statement reads "The authors have no disclosures." Brigham and Women's Hospital and Harvard T.H. Chan School of Public Health are affiliations, not funders. **Onnela, Beiwe's originator, is co-senior author; Barnett, a Beiwe/Forest methods developer, is co-first author.** The paper states plainly that Beiwe was "developed by a subset of the authors." |
+| Last verified | 2026-09-01; funding, disclosures and the Bluetooth/Wi-Fi line corrected 2026-10-10 against the NCBI efetch PMC XML of PMC6706326 |
 
 ## Summary
 
@@ -58,7 +58,7 @@ problem later formalised by [Beukenhorst et al.](beiwe-als-adherence.md).
   Beiwe (the paper states the app collects "phone and call logs (Android only)"), so the sociability
   stream covers only part of this BYOD cohort — and the paper does **not** report the OS split,
   which makes the null sociability result harder to interpret than it appears.
-- Bluetooth, Wi-Fi and screen on/off time also enumerated as collected.
+- Bluetooth, Wi-Fi and screen on/off time are listed as general capabilities of "the current version of the Beiwe app". The paper does not say whether they were enabled in this study.
 - Data encrypted on-device, stored temporarily, uploaded periodically over Wi-Fi.
 
 **Active protocol — one prompt per day, at a fixed time:** at 17:00 EST, "Please rate your pain over
@@ -241,7 +241,7 @@ should be treated as a floor even among pre-heartbeat studies. See
 [`beiwe-als-adherence.md`](beiwe-als-adherence.md) and Tier 14 Q106 in
 `../../shared/unresolved-questions.md`.
 
-**COI — the strongest in this tranche, and it is disclosed in the text.** Beiwe was, in the paper's
+**COI — the strongest in this tranche.** The Methods disclose developer authorship, but the formal disclosures statement reads "The authors have no disclosures." Beiwe was, in the paper's
 own words, "developed by a subset of the authors": **Onnela (originator) is co-senior author and
 Barnett (developer of the GPS imputation method the analysis relies on) is co-first author.** The
 exposure here is broader than in the other Beiwe papers, because the paper's scientific result

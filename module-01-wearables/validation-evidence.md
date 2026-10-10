@@ -1,7 +1,7 @@
 # Module 1 — Validation Evidence
 
 Full extraction from the primary validation literature, read in full rather than summarized.
-**Last verified: 2026-08-21.** Sections 3, 6b and 6c updated 2026-10-09 (open-questions pass).
+**Last verified: 2026-08-21.** Sections 3, 6b and 6c updated 2026-10-09 (open-questions pass); §3c and §6c corrected 2026-10-10 after the independent review.
 
 This file exists because the summary figures circulating about wearable sleep accuracy — including
 the ones in the first draft of this knowledge base — are systematically misleading. Reading the
@@ -274,8 +274,10 @@ two-device bridge across studies with different populations and different hardwa
 
 **It is an estimate, not a result.** A head-to-head Oura vs WHOOP **PSG sleep-stage** study on current
 hardware remains the single highest-value missing piece of evidence in this module. The one direct
-older-generation comparison (Miller 2022, §3c) found the two tied on four-stage kappa, which is a
-reason to hold the bridged "Oura well ahead" inference loosely. (Resting HR and HRV, the other
+older-generation comparison (Miller 2022, §3c) found the two tied on four-stage kappa (with Oura ahead
+on sleep/wake kappa, 0.51 vs 0.44), which is a reason to hold the bridged "Oura well ahead" inference
+loosely. It is not a clean head-to-head either: the two devices' epochs were obtained differently, and
+the authors disclaim a device-to-device comparison (added 2026-10-10). (Resting HR and HRV, the other
 outcome this bridge used to stand in for, now have direct evidence — see §3a.)
 
 **What can be said without inference:** WHOOP 4.0 had the best *deep-sleep classification accuracy*
@@ -316,16 +318,26 @@ the app-reported values of the other devices.
 > definition; for Oura it is a study run by a WHOOP-supported lab.
 
 **Grandner MA, Bromberg Z, Hadley A, Morrell Z, Graf A, Hutchison S, Freckleton D. 2023.**
-"Performance of a multisensor smart ring to evaluate sleep." *Sleep* 46(1):zsac152,
+"Performance of a multisensor smart ring to evaluate sleep: in-lab and home-based evaluation of
+generalized and personalized algorithms." *Sleep* 46(1):zsac152 (published online 29 June 2022),
 doi:10.1093/sleep/zsac152. Happy Ring development study; Oura V2, WHOOP 3.0, Fitbit Charge 4 and
 Actiwatch 2 as comparators against one in-lab PSG night (and Dreem 2 at home). In the lab: sleep/wake
 accuracy Oura 0.88 ± 0.05 (n=30), WHOOP 0.86 ± 0.05 (n=33); specificity 0.49 vs 0.54. Stage-level
 results are in a supplement not read here. **Five of seven authors are Happy Health employees, and data
-collection and analysis were done by the Happy Health team.** **Verified** (full text read via PMC).
+collection and analysis were done by the Happy Health team.** **Reported.** Corrected 2026-10-10 from
+"Verified (full text read via PMC)": the research log for 2026-10-09 records the PDF as not obtained,
+the full text is not open access in Europe PMC, PMC served a bot check on 2026-10-10, and the abstract
+gives Happy Ring figures only, so the Oura and WHOOP figures above are not backed by a full-text read
+on record. PubMed confirms the author affiliations (five of seven at Happy Health, Inc.) and lists NIH
+grant R01 MD011600. Re-read the full text in a browser before relying on the device figures.
 
-**Reading.** On the only direct PSG comparison, WHOOP 3.0 and Oura Gen2 are effectively tied on
-four-stage kappa (0.44 vs 0.43), with Oura better at wake/sleep and WHOOP better at REM. Both devices
-and both algorithms have since been replaced, and the lab running the study is WHOOP-supported. This
+**Reading.** On the only direct PSG comparison of four-stage staging (Miller 2022; Grandner 2023
+reports sleep/wake only), WHOOP 3.0 and Oura Gen2 are effectively tied on four-stage kappa (0.44 vs
+0.43), with Oura better at wake/sleep and WHOOP better at REM. The authors caution that "the analyses
+were comparisons of six independent devices to gold-standard PSG and ECG rather than a comparison
+between devices", and WHOOP's vendor-supplied 30-s epochs were processed differently from Oura's
+5-min app epochs, which the authors say "may have an impact on agreement" (re-read in the stored PDF,
+2026-10-10). Both devices and both algorithms have since been replaced, and the lab running the study is WHOOP-supported. This
 does not settle the current-generation question, but it removes the claim that no comparison exists.
 
 **Other independent Oura PSG data, for context.** Lee T et al. 2023 (*JMIR mHealth uHealth*
@@ -527,8 +539,10 @@ open-access papers and preprints.
 
 **SpO2 and temperature for Oura and WHOOP: still no independent validation.** PubMed
 `(oura[tiab] OR whoop[tiab]) AND (SpO2 OR "oxygen saturation" OR oximet* OR "blood oxygen")` returned
-2 hits (a vascular-age paper and a ketogenic-diet trial), neither a validation. PubMed
-`(oura OR whoop) AND temperature` returned 21 hits: association and prediction studies (TemPredict,
+3 hits on re-run 2026-10-10 (a vascular-age paper, a ketogenic-diet trial, and an unrelated 2004
+emergency-medicine review matching "whoop"), none a validation. PubMed
+`(oura[tiab] OR whoop[tiab]) AND temperature[tiab]` returned 21 hits (the unfielded form of this query
+returns 163; corrected 2026-10-10): association and prediction studies (TemPredict,
 cycle tracking, sleep onset), most Oura-affiliated, none comparing the sensor with a reference
 thermometer. Europe PMC full-text searches pairing Oura or WHOOP with reference oximeters (Masimo,
 Nonin, arterial blood gas) or temperature references (iButton, thermometer) found none. For contrast,
@@ -540,11 +554,13 @@ blood gas. **Confidence: Corroborated** (searched, abstracts read; absence canno
 
 **Skin tone in PSG validations: none located for an in-scope consumer device.** PubMed
 `polysomnograph* AND (wearable* OR smartwatch* OR ring OR oura OR fitbit OR "apple watch") AND
-(fitzpatrick OR "skin tone" OR "skin color" OR "skin pigmentation")` returned 3 hits, none a consumer
-sleep tracker. Europe PMC full-text search of PSG studies mentioning Fitzpatrick or skin tone alongside
+(fitzpatrick OR "skin tone" OR "skin color" OR "skin pigmentation")` returned 4 hits on re-run
+2026-10-10 (a ring-worn pulse oximeter for sleep apnoea, the SANSA device, the Verily Numetric Watch
+study noted below, and a 2024 review), none a validation of an in-scope consumer sleep tracker. Europe PMC full-text search of PSG studies mentioning Fitzpatrick or skin tone alongside
 a consumer brand returned 27 hits; the in-scope ones say skin tone was not measured (Searles 2026: sample
-"primarily White and, although not measured, fair-skinned"; Labie 2025, Fitbit Sense in knee OA: one
-African American participant). Several report race or ethnicity instead (Robbins 2024, Grandner 2023,
+"primarily White and, although not measured, fair-skinned"; Labie 2025, Fitbit Sense in knee OA: 52 of 53
+participants White-Caucasian and, in the authors' limitations, "only one African American
+participant"; skin tone not recorded; confirmed in the Europe PMC full text, 2026-10-10). Several report race or ethnicity instead (Robbins 2024, Grandner 2023,
 Lee 2023 by centre only), which is not a proxy for skin tone. The nearest exception is outside the
 module's device list: Nelson et al. 2025 (*J Sleep Res* 34(5):e70036, Verily-authored, N=41) ran an
 exploratory skin-tone subgroup analysis of the Verily Numetric Watch against PSG. Apple's hypertension
@@ -582,7 +598,8 @@ the E4 (Brandebusemeyer et al. 2026, *Sensors* 26(14):4376), not against a palma
 **Samsung derived metrics.** Sleep: Lee T et al. 2023 (Galaxy Watch 5, four-stage κ 0.42, authors from
 a competing app maker) and Byun et al. 2023 (*Chronobiol Int* 40(5):596, Galaxy Watch 2 in 127 OSA
 patients, TST underestimated by 24.9 min, independent). Sleep apnea: Alavi et al. 2026 (*J Clin Sleep
-Med* 22:150, Stanford, N=152, AUROC 0.94 for AHI ≥15; funding not stated in the abstract). SpO2: Browne
+Med* 22(1):150, Stanford, N=152, AUROC 0.94 for AHI ≥15; **Samsung-funded** per the Crossref funder
+record, checked 2026-10-10; corrected from "funding not stated in the abstract"). SpO2: Browne
 et al. 2024 (*J Clin Sleep Med* 20(9):1479, Galaxy Watch 4 vs PSG oximetry, RMSE 2.54%, Samsung research
 grant) and Walzel 2023 (above). HR/HRV: Sarhaddi et al. 2022 (*PLoS One* 17(12):e0268361, Gear Sport,
 independent). **Antioxidant Index and Vascular Load: nothing found** (PubMed `(samsung OR "galaxy
@@ -615,7 +632,9 @@ Doherty et al. 2025 (VO2max): https://journals.plos.org/plosone/article?id=10.13
 Doherty et al. 2024 (HRV): https://pmc.ncbi.nlm.nih.gov/articles/PMC11478500/
 Abou et al. 2022 (wheelchair fall detection): https://www.tandfonline.com/doi/full/10.1080/10400435.2021.1923087
 Miller et al. 2022 (six devices incl. Oura Gen2 and WHOOP 3.0 vs PSG): https://doi.org/10.3390/s22166317 (PMC9412437); PDF `literature/whoop/2022-miller-sensors-six-wearables-sleep-hr-hrv-validation.pdf`
-Grandner et al. 2023 (Happy Ring, Oura V2, WHOOP 3.0 vs PSG): https://doi.org/10.1093/sleep/zsac152 (PMC13396806)
+Grandner et al. 2023 (Happy Ring, Oura V2, WHOOP 3.0 vs PSG): https://doi.org/10.1093/sleep/zsac152 (PMC13396806; full text not read; PubMed record https://pubmed.ncbi.nlm.nih.gov/35767600/ for affiliations and grant)
+Labie et al. 2025 (Fitbit Sense, knee OA, PSG): https://pmc.ncbi.nlm.nih.gov/articles/PMC12349529/ (Europe PMC full text read 2026-10-10)
+Crossref funder record for Alavi 2026: https://api.crossref.org/works/10.1007/s44470-026-00159-8 (accessed 2026-10-10)
 Lee T et al. 2023 (11 consumer sleep trackers vs PSG): https://doi.org/10.2196/50983 (PMC10654909)
 Searles et al. 2026 (Oura Gen3, Fitbit Sense 2, nearables, older adults): https://doi.org/10.1093/sleepadvances/zpag006 (PMC12936866)
 Walzel et al. 2023 (smartwatch SpO2 vs Masimo): https://doi.org/10.3390/s23229164; PDF `literature/apple-watch/2023-walzel-sensors-smartwatches-hypoxemia-reference-oximeter.pdf`

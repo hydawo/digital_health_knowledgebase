@@ -1,12 +1,12 @@
 # Module 3 — Feasibility Matrix
 
-**Last updated: 2026-09-03.** **65 profiles / 64 distinct deployments** (two profiles report one cohort, see Part D; Part E folds two multi-paper cohorts into single profiles). One row per study. This is the resource a future study team should read
+**Last updated: 2026-09-03; corrected 2026-10-10** after the independent review (shared/reviews/2026-10-10-independent-review.md): every row's N and duration re-checked against its profile, and figures re-checked against full text where the review flagged them. **65 profiles / 63 distinct deployments** (two pairs of profiles report one cohort each: RADAR-MDD, Part A, and mSavorUs, Part D; Part E folds two multi-paper cohorts into single profiles). One row per study. This is the resource a future study team should read
 first: who else tried this device/platform combination, at what scale, for how long, and did it hold
 up.
 
 **How to read this file.** Retention and completeness are *different questions* and studies answer
-them very differently — a study can report 80% retention and 18% cross-stream completeness at the
-same time. Both columns are given where the study reports both. Figures are as reported; definitions
+them very differently — a study can report 80% retention while only 18% of participants have more than half of the expected data
+across all streams. Both columns are given where the study reports both. Figures are as reported; definitions
 are **not** standardised across studies (see the Definitions warning at the bottom, which is the
 single most important caveat in this file).
 
@@ -68,7 +68,7 @@ single most important caveat in this file).
 
 | Study | Takeaway |
 |---|---|
-| [Matcham 2022](profiles/radar-mdd-recruitment-retention.md) | 80% retention and 17.7% cross-stream completeness came from the same study — size multimodal analyses off the second number. |
+| [Matcham 2022](profiles/radar-mdd-recruitment-retention.md) | 80% retention, yet only 17.7% of participants had more than half their expected data across all streams, in the same study. Size multimodal analyses off the second number. |
 | [Zhang 2023](profiles/radar-mdd-longterm-engagement.md) | Retention is stream-specific; wearables outlast phones; **study-provided phones retained *worse* than BYOD** (HR≈1.66). |
 | [Muurling 2024](profiles/radar-ad-feasibility-usability.md) | Eight concurrent devices are feasible even in mild-moderate AD; **within-device design variation exceeded active-vs-passive category differences**. |
 | [de Angel 2023](profiles/radar-base-treatment-engagement.md) | More intensive treatment predicted *more* attrition; self-tracking without visible improvement made people remove the wearable. |
@@ -82,7 +82,7 @@ single most important caveat in this file).
 | [Raugh 2021](profiles/dp-schizophrenia-tolerability.md) | Passive stream reliability tracks **computational and radio demand**. A Bluetooth-tethered band returned ~20–28%. Use 25% adherence cut-offs, not 50%. |
 | [Böttcher 2022](profiles/empatica-epilepsy-data-quality.md) | **Recording mode dominates everything**: onboard <10% loss vs streaming ~50%. Participants wore the device; the system lost the data. |
 | [Jonker 2021](profiles/withings-postop-remote-monitoring.md) | Switching recruitment from phone to face-to-face nearly doubled participation (33%→63%). Barrier was at consent, not operation. |
-| [Helmer 2025](profiles/movesense-palliative-support-trial.md) | **A no-proxy-consent requirement excluded 95.6% of screened patients and killed the study.** Settle consent before designing recruitment. |
+| [Helmer 2025](profiles/movesense-palliative-support-trial.md) | **95.6% of screened patients failed eligibility, chiefly the written-consent criterion with no proxy consent allowed, and the study was terminated early.** Settle consent before designing recruitment. |
 | [Cho 2022](profiles/byod-demographic-imbalance.md) | 0 of 11 BYOD studies reporting demographics were representative. All of Us: >80% underrepresented overall → **70% White in its Fitbit substudy**. |
 | [Master 2022](profiles/allofus-fitbit-step-counts.md) | Self-generated data is far more complete than study-collected data (0.02% day exclusions), and buys 4-year horizons — at ~3% linkage yield. |
 | [Garcia 2022](profiles/apple-heart-data-management-lessons.md) | 419,297 enrolled → 450 usable. **You cannot reliably count your own participants** in app-enrolled trials; consider sample size as *estimated*. |
@@ -106,7 +106,7 @@ m-Path / CARP gap, and an **Onnela-tranche pass**. Same scope rules, same full-t
 | [Kivelä 2024](profiles/avicenna-ema-suicidal-ideation-iatrogenic.md) | **Ethica/Avicenna** | BYOD | 209 signed up → 90 intake → **82 enrolled, 81 completed** | 21 d, 4/day, ≤40 items | **Acceptability reported as both 39% and 98%** — see below |
 | [Kochhar 2025](profiles/avicenna-smoking-youth-ema-compliance.md) | **Avicenna** | BYOD | **84** | 7 d, 5/day | **Compliance 76.89%** (SD 5.81); 27 of 35 EMAs |
 | [Siebers 2025](profiles/metricwire-fraudulent-participation.md) | **MetricWire** (+ Fitbit) | Virtual/siteless, incentivised | **10 fraudulent enrolled**; later **37 blocked** | ~6 mo | n/a — adversarial failure mode |
-| [Spangenberg 2026](profiles/metricwire-post-discharge-ema-reactivity.md) | **MetricWire Catalyst** | BYOD | **16 interviewed** from parent cohort | **~7 mo, ~300 prompts** | **63.3% → 47.4%** across phases (vs 14–21% in prior comparable studies) |
+| [Spangenberg 2026](profiles/metricwire-post-discharge-ema-reactivity.md) | **MetricWire Catalyst** | BYOD | **16 interviewed** from parent cohort | **~7 mo, ~300 prompts** | **63.3% → 45.4%** across phases (vs 14–21% in prior comparable studies) |
 | [Clark 2025](profiles/metricwire-sgm-youth-ema-feasibility.md) | **MetricWire** | BYOD | **50** SGM youth | 28 d, 3/day | **80.21%** (SD 16.92) — highest mental-health compliance in the module |
 | [Dennard 2025 (AVATAR2)](profiles/mpath-avatar2-esm-engagement.md) | **m-Path** | Provisioned equipment + support | 207 → **134 (64.7%) consented to ESM** | 10/day × 6 d × 3 timepoints | **39.1%** (SD 28.5) — lowest in module, definitional; **35.3% declined ESM outright** |
 | [Bonnier 2025](profiles/mpath-nssi-ema-benefits-challenges.md) | **m-Path** | BYOD | 132 → **124** | 28 d, 6/day | **74.87%** (SD 18.78), declining linearly |
@@ -131,7 +131,7 @@ m-Path / CARP gap, and an **Onnela-tranche pass**. Same scope rules, same full-t
 | [Kivelä 2024](profiles/avicenna-ema-suicidal-ideation-iatrogenic.md) | **39% vs 98% acceptability for the same study, 59 points apart**, both defensible. Also: **no systematic ideation reactivity** over 21 days × 4/day. |
 | [Kochhar 2025](profiles/avicenna-smoking-youth-ema-compliance.md) | **28.8% objected to the 1.5-hour response window** — a configurable platform setting, and the single biggest complaint. |
 | [Siebers 2025](profiles/metricwire-fraudulent-participation.md) | **MetricWire's carrier-country field unmasked 10 fraudulent participants** (VPNs, Nigerian carriers) in a $480 virtual trial; a manual checklist later blocked 37. |
-| [Spangenberg 2026](profiles/metricwire-post-discharge-ema-reactivity.md) | 63.3% → 47.4% over ~7 months, against prior comparable studies at **14–21%**. Prompts occasionally **intensified distress**. |
+| [Spangenberg 2026](profiles/metricwire-post-discharge-ema-reactivity.md) | 63.3% → 45.4% over ~7 months, against prior comparable studies at **14–21%**. Prompts occasionally **intensified distress**. |
 | [Clark 2025](profiles/metricwire-sgm-youth-ema-feasibility.md) | **80.21% compliance** — and the participants themselves chose 3 prompts/day, reasoning about school phone policies. Co-design as an adherence intervention. |
 | [Dennard 2025](profiles/mpath-avatar2-esm-engagement.md) | 39.1% is an artefact: completion had to be defined as **100%-complete** because m-Path's partial-save export was unreliable. **Age, gender, ethnicity and severity did not predict completion (P=.74).** |
 | [Bonnier 2025](profiles/mpath-nssi-ema-benefits-challenges.md) | **78.57% reported at least one benefit** (64.58% increased self-insight); **7.29% found it overwhelming**. Emotional discomfort correlated with lower compliance (r=−0.29). |
@@ -163,13 +163,13 @@ citation counts, not deployment frequency.
 | [Calvert 2026 — LINC](profiles/mindlamp-linc-passive-data-quality.md) | mindLAMP | 373 | 2–3 wk | **Median GPS quality 0.92** vs 0.12–0.80 across six prior mindLAMP studies — and the cost: **1.3 troubleshooting contacts/participant, ~9 interventions/week, two RAs** |
 | [Mahmood 2026](profiles/vpn-network-traffic-phenotyping.md) | **VPN network-traffic sensing** (no Module 1/2 platform) | 29 contributing | 2 wk | **74.1% coverage, uniform across time of day, <1% battery/24 h** — but one **304-hour gap** after a reboot nobody noticed |
 | [Shen 2026 — TechSANS](profiles/sensorkit-techsans-older-adults.md) | **Apple SensorKit** (first in module) | 21 | ~6 mo | 141 days/participant = **74.4%** under a ≥14 h/day rule; uncompensated, and the authors conclude compensation matters even for low-burden passive work |
-| [McInerney 2024](profiles/beiwe-type-2-diabetes-feasibility.md) | Beiwe | 85 | — | **iPhone missed 70.0%/70.6% of morning/evening EMA vs Android 21.3%/26.8%** (p<0.001) — while accelerometer and GPS showed **no** OS association in the same cohort |
+| [McInerney 2024](profiles/beiwe-type-2-diabetes-feasibility.md) | Beiwe | 85 → 69 | 2 mo (57 EMA days) | **iPhone missed 70.0%/70.6% of morning/evening EMA vs Android 21.3%/26.8%** (p<0.001) — while accelerometer and GPS showed **no** OS association in the same cohort |
 | [Bladon 2026 — CONNECT](profiles/connect-multi-wearable-psychosis.md) | Fitbit vs Apple Watch vs **Samsung** | 105 | 20 wk | Satisfaction flat across devices; **completeness differed ~3×**. The most-chosen device was the worst-performing. **98% of Samsung sleep records present but corrupt** |
-| [Dewitte 2025](profiles/mpath-dementia-esm-feasibility.md) | m-Path | 12 | 10 d | **80% compliance at 7 prompts/day in dementia, zero dropouts, unpaid** |
+| [Dewitte 2025](profiles/mpath-dementia-esm-feasibility.md) | m-Path | 12 | 10 d | **80% compliance at 7 prompts/day in dementia, zero dropouts (compensation not reported)** |
 | [Carlson 2026 — ActiveKC](profiles/garmin-low-income-physical-activity.md) | **Garmin** (first in module) | 114 | 7 wk | **Zero of 181 screened excluded for smartphone access** — but access was defined at *household* level (see profile) |
 | [Presby 2025](profiles/whoop-mental-health-survey-engagement.md) | **WHOOP** (first in module) | 181,574 members | 13 mo | **170,320 → 3,196 (1.9%)** and **1.84 survey responses per person in 13 months** — with no recruitment, provisioning or clinic step at all |
-| [Domínguez 2026](profiles/samsung-palliative-pain-ecuador.md) | Samsung Galaxy Watch | 7 | 7 wk | **First Latin American deployment in the module.** Completed a palliative protocol by recruiting inside an existing care programme with family-present consent |
-| [Castillo 2025](profiles/mindlamp-global-cognitive-multisite.md) | mindLAMP | 56 | 30 d | India + US remote cognitive assessment. **Thinnest of the ten — flagged as such in-profile** |
+| [Domínguez 2026](profiles/samsung-palliative-pain-ecuador.md) | Samsung Galaxy Watch | 7 | 2 wk per patient (7-wk study window) | **First Latin American deployment in the module.** Completed a palliative protocol by recruiting inside an existing care programme with family-present consent |
+| [Castillo 2025](profiles/mindlamp-global-cognitive-multisite.md) | mindLAMP | 62 → 56 | 30 d | India + US remote cognitive assessment. **Thinnest of the ten — flagged as such in-profile** |
 
 
 ---
@@ -185,7 +185,7 @@ none was a background-citation misattribution — though two used modified build
 | Study | N | Duration | Headline operational number |
 |---|---|---|---|
 | [Wu 2023 — alcohol-associated liver disease](profiles/aware-alcohol-liver-disease-craving.md) | 163 → 24 → **12** | 30 d | **5 of 12 non-completers withdrew citing AWARE technical problems** (incl. one installation failure) vs 2 losing interest — the most explicit app-attributed dropout in the module |
-| [Aledavood 2024 — MoMo-Mood](profiles/aware-momo-mood-mood-disorders.md) | 164 → **151** | up to 1 yr | **Passive missingness 1.2% (controls) → 20.4% (BPD)** inside one study, one platform, one config. A **17× spread** — platform-level completeness figures for mixed cohorts are close to meaningless. AWARE **modified by the authors** (NIIMA/Niimpy) |
+| [Aledavood 2025 — MoMo-Mood](profiles/aware-momo-mood-mood-disorders.md) | 164 → **151** | up to 1 yr | **Passive missingness 1.2% (controls) → 20.4% (BPD)** inside one study, one platform, one config. A **17× spread** — platform-level completeness figures for mixed cohorts are close to meaningless. AWARE **modified by the authors** (NIIMA/Niimpy) |
 | [Balliu 2024 — STAND](profiles/aware-stand-mood-prediction-adherence.md) | 437 → **183** | up to 40 wk | **1.7% vs 33.5–37.3% two-week attrition** — in-person clinical care vs online support, with the *sicker* arm retaining **better**. Mechanism: missed assessments reconciled during routine visits |
 | [Borelli 2025 — mSavorUs completeness](profiles/aware-msavorus-passive-completeness-companion.md) | 37 → **28** | ≥19 wk | **Provisioned wearables beat the BYOD phone: 11% missing (Oura + Samsung) vs 16% (AWARE smartphone)** — same people, same months. ⚠️ **Same cohort as the mSavorUs row in Part B** — one deployment, two reports |
 | [Bae 2023 — binge-drinking JITAI](profiles/aware-binge-drinking-jitai-sensor-loss.md) | **75** | 14 wk | **35.4% of person-days unusable (414/1,168)** — participants disabled GPS via the settings menu after being told sensors were configurable. A **new data-loss class: participant-exercised configurability** |
@@ -207,10 +207,10 @@ as the primary instrument, chosen because each adds something the twelve earlier
 | Study | Platform / device | N | Duration | Headline operational number |
 |---|---|---|---|---|
 | [Shiba 2023, healthcare workers](profiles/oura-tempredict-healthcare-worker-adherence.md) | Oura Ring Gen 2, provisioned | 100 to 91 | 8+ weeks | Ring worn on 87.8% of nights against surveys on 63.8% of days. Residents were the low group on both, 82.8% and 49.8%. Parent TemPredict funnel 65,319 to 63,153 folded in |
-| [Truslow 2024, Apple Heart and Movement Study](profiles/apple-heart-movement-study-retention.md) | Apple Watch, BYOD | 82,809 | 1 year | Three retention numbers from one cohort. 3.24% withdrew, 38% quiet on day 365, 28% permanently inactive. Half of withdrawals inside 111 days |
+| [Truslow 2024, Apple Heart and Movement Study](profiles/apple-heart-movement-study-retention.md) | Apple Watch, BYOD | 82,809 | 1 to 2 years observed (figures at day 365) | Three retention numbers from one cohort. 3.24% withdrew, 38% quiet on day 365, 28% permanently inactive. Half of withdrawals inside 111 days |
 | [Mahalingaiah 2022, Apple Women's Health Study](profiles/apple-womens-health-study-retention.md) | Apple Watch and iPhone, BYOD | 10,000 | 6 months | Monthly survey 62.2% to 34.5% in six months while passive HealthKit cycle logging held at 72.4%. Month-six responders whiter and better educated than enrollees |
 | [Moshe 2021, AWARE on iOS plus Oura](profiles/aware-oura-delphi-covid-lockdown.md) | AWARE (custom iOS app) plus participant-owned Oura | 60 to 55 | 30 days | Bring your own ring and iPhone. No hardware cost, five drop-outs, 9.1% sensing missingness, and a cohort 93% White and 80% degree-holding by construction |
-| [Pellegrini 2022, four diagnostic groups](profiles/beiwe-transdiagnostic-outpatient-completeness.md) | Beiwe, BYOD | 45 to 38 | 8 weeks | Paid and visit-supported, 84% completed, yet only 39% of participants reached half the expected GPS. Retention and completeness diverge in the same people |
+| [Pellegrini 2022, four diagnostic groups](profiles/beiwe-transdiagnostic-outpatient-completeness.md) | Beiwe, BYOD | 45 to 41 analysed (38 completed) | 8 weeks | Paid and visit-supported, 84% completed, yet only 39% of participants reached half the expected GPS. Retention and completeness diverge in the same people |
 | [Torous, Barnett and Staples 2017 to 2018, schizophrenia pilot](profiles/beiwe-schizophrenia-state-clinic-pilot.md) | Beiwe, BYOD, no payment for app use | 17 to 15 | up to 90 days | The unsupported floor. Coverage 50.2% GPS and 46.9% accelerometer in month one, about half of surveys, one of 17 lost to Wi-Fi-only upload, two of five relapsers uninstalled before hospitalisation |
 | [Panda 2021, cancer surgery](profiles/beiwe-cancer-surgery-survey-retention.md) | Beiwe surveys, BYOD | 101 to 74 to 24 | 6 months | 42%, 33% and 24% of consented at 1, 3 and 6 months. Zero of 13 Android users answered at month one, the opposite direction to McInerney 2024 |
 | [Vidal Bustamante 2022, a full academic year](profiles/geneactiv-beiwe-college-year-deep-phenotyping.md) | GENEActiv, provisioned, plus Beiwe surveys | 68 to 49 | 256 days | Wristband swaps every 3 to 4 weeks and a 30 Hz to 10 Hz drop over winter break gave 220 usable actigraphy days a person. 88% re-enrolled two years later |
@@ -244,7 +244,7 @@ in this module.
 4. **OS asymmetry is STREAM-SPECIFIC before it is platform-specific.** This supersedes the earlier "direction not settled" framing. [McInerney 2024](profiles/beiwe-type-2-diabetes-feasibility.md) — a **Beiwe** study, the platform whose prior work favoured iOS — stratified by stream within one cohort and found **iPhones missing 70.0%/70.6% of morning/evening EMA vs Android's 21.3%/26.8% (p<0.001), while accelerometer and GPS showed no significant OS association in the same participants.** That reconciles the apparent contradiction: the earlier iOS-favouring results (Kiang, Yi) measured *passive* streams; the Android-favouring ones measured *active survey delivery*. **Never state an OS effect without naming the stream.** Mechanism unidentified — see Tier 15 Q111/Q111b.
 
     **Refined 2026-09-02 — there are three distinct kinds of OS effect, not one:**
-    (a) **Structural gates** — the stream is unavailable on one OS at all. [Balliu 2024](profiles/aware-stand-mood-prediction-adherence.md) could compute SMS features for only **15 of 183 participants (8.2%)** because iOS does not expose them. There is no mitigation; the choice is binary.
+    (a) **Structural gates** — the stream is unavailable on one OS at all. [Balliu 2024](profiles/aware-stand-mood-prediction-adherence.md) could compute SMS features only for the **15 participants with Android devices** (about 8% if all are in the 183-person modelling sample) because iOS does not expose them. There is no mitigation; the choice is binary.
     (b) **Yield differences** — same stream, different completeness. [McInerney 2024](profiles/beiwe-type-2-diabetes-feasibility.md)'s 70% vs 21% EMA miss rate.
     (c) **Breadth differences** — how many stream *types* arrive. [Wu 2023](profiles/aware-alcohol-liver-disease-craving.md) found Android delivering **8.4 vs iOS 4.7 mean sensor types** — Android ahead on breadth, the opposite direction to McInerney's yield finding, **on the same framework**.
     Note also that several dual-platform studies here report **no** OS breakdown at all, which is now a visible reporting gap.
@@ -294,15 +294,15 @@ in this module.
     oncologists **gatekept out 8 of 18 eligible patients** before a "100% approach-to-consent" rate.
     [Camargo 2025](profiles/aware-light-smartsense-d-youth-depression.md): **29% could not run the app
     on their own handset.** [Helmer 2025](profiles/movesense-palliative-support-trial.md): 95.6%
-    excluded at consent.
+    failed eligibility, chiefly the written-consent criterion.
 
 11. **Data can be present and wrong — completeness dashboards show green.** [Bladon 2026](profiles/connect-multi-wearable-psychosis.md) found **98% of Samsung sleep records were present but corrupt** (duplicated start timestamps, missing end times). No completeness metric in this module would have caught it. **Validate structure, not just presence.**
 
 12. **Vendor policy changes are a quantified study risk.** In the same study, **17 of 20 Samsung escalations traced to a mid-study Samsung privacy-policy change.** Compare RADAR-MDD losing call/SMS logs to a Google Play permissions change. Budget for it.
 
-13. **Support raises completion; payment raises persistence; neither raises engagement with interactive content — and interactive content is the component that stratifies demographically.** Reconciles [Dewitte's](profiles/mpath-dementia-esm-feasibility.md) unpaid 80% in dementia, [Shen's](profiles/sensorkit-techsans-older-adults.md) uncompensated withdrawal, and [Carlson's](profiles/garmin-low-income-physical-activity.md) paid-but-demographically-stratified reply rates.
+13. **Support raises completion; payment raises persistence; neither raises engagement with interactive content — and interactive content is the component that stratifies demographically.** Tentative. Reconciles [Dewitte's](profiles/mpath-dementia-esm-feasibility.md) 80% in dementia under intensive staff support (compensation not reported, so it cannot anchor the payment side), [Shen's](profiles/sensorkit-techsans-older-adults.md) uncompensated withdrawal, and [Carlson's](profiles/garmin-low-income-physical-activity.md) paid-but-demographically-stratified reply rates.
 
-14. **Research-infrastructure failure is a distinct data-loss class — and it is the one self-hosting owns.** Not device failure, not OS restriction, not participant behaviour: the *study's own* servers and network. [Borelli 2025](profiles/aware-msavorus-passive-completeness-companion.md) lost data to server congestion; [Bae 2023](profiles/aware-binge-drinking-jitai-sensor-loss.md) to Wi-Fi-gated upload; [Aledavood 2024](profiles/aware-momo-mood-mood-disorders.md) provisioned a **router per participant** to avoid it. Three independent studies clear the bar for a pattern. **This is a direct input to the self-host-vs-SaaS decision in Module 2** — a cost that moves to the vendor under SaaS and stays with the team under self-hosting.
+14. **Research-infrastructure failure is a distinct data-loss class — and it is the one self-hosting owns.** Not device failure, not OS restriction, not participant behaviour: the *study's own* servers and network. [Borelli 2025](profiles/aware-msavorus-passive-completeness-companion.md) lost data to server congestion; [Bae 2023](profiles/aware-binge-drinking-jitai-sensor-loss.md) to Wi-Fi-gated upload; [Aledavood 2025](profiles/aware-momo-mood-mood-disorders.md) provisioned a **router per participant** to avoid it. Three independent studies clear the bar for a pattern. **This is a direct input to the self-host-vs-SaaS decision in Module 2** — a cost that moves to the vendor under SaaS and stays with the team under self-hosting.
 
 15. **Participant-exercised configurability is its own data-loss class.** [Bae 2023](profiles/aware-binge-drinking-jitai-sensor-loss.md) lost **35.4% of person-days** because participants, having been told the sensors were configurable, turned GPS off in the settings menu. Telling participants they are in control is ethically right and operationally expensive; budget for it rather than being surprised.
 

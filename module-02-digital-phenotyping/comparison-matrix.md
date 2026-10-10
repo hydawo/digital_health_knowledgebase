@@ -1,214 +1,232 @@
-# Module 2 — Digital Phenotyping Comparison Matrix
+# Module 2: Digital Phenotyping Comparison Matrix
 
-**Last verified: 2026-08-25.** All cells reflect what is established in the individual profiles. Where
-a profile records a fact as Unclear or not independently verified, the cell says so rather than
-guessing. All eight platforms in this module have now had a second, direct-source-fetch verification
-pass (AWARE/mindLAMP/MetricWire on 2026-08-24; Beiwe/RADAR-base/Avicenna Research/m-Path/CARP Mobile
-Sensing on 2026-08-25) — a number of cells that read "Not independently verified this session" as of
-2026-08-24 have since been resolved or materially narrowed; those are marked below. A residual set of
-cells remain genuinely unresolved even after two passes (mostly non-public pricing and formal SOC 2/
-Part 11 compliance detail) — those still say so rather than guessing.
+**Rebuilt 2026-10-10 from the profiles.** Every cell below was rewritten from the current profile in
+`profiles/` after the 2026-10-10 independent-review corrections, replacing the matrix last rebuilt on
+2026-08-24/25. Each cell restates what the named profile says; where the profile says Unclear, the cell
+says Unclear rather than guessing. Dates in cells are the date the profile records the fact as checked.
+Vendor statements about a vendor's own certifications are Corroborated at most unless a certificate or
+registry entry was read; none was read for any Module 2 platform.
+
+Scope: ten current platforms with full profiles (Beiwe, RADAR-base, mindLAMP, AWARE Framework, Avicenna
+Research, MetricWire, m-Path, CARP Mobile Sensing, LifeData, Evidation), plus Purple Robot and
+StudentLife from `profiles/legacy-and-adjacent-platforms.md` where a row is useful. LifeData and
+Evidation sit at the edge of scope (EMA/ePRO and a participant network respectively, not phone sensing),
+which their rows state.
 
 Multiple tables are used deliberately. Do not read any single table as a ranking.
 
 ---
 
-## Table 1 — Platform identity and status
+## Table 1. Platform identity and status
 
-| Platform | Organization | Type | Current status | License |
+| Platform | Organization | Type | Current status | Licence |
 |---|---|---|---|---|
-| **Beiwe** | Onnela Lab, Harvard T.H. Chan SPH | Academic open source + optional managed service (BSC) | Active | BSD-3-Clause |
-| **RADAR-base** | King's College London + The Hyve | Academic/consortium open source | Active | Apache 2.0 |
-| **mindLAMP** | BIDMC Division of Digital Psychiatry | Academic, public source. Licences mixed (checked 2026-10-09): dashboard AGPL-3.0, server and apps carry no licence | Active. **Verified 2026-08-24: `LAMP-portal`/`LAMP-app` formally archived 2020-11-17; current successors are `LAMP-dashboard`/`LAMP-core-android`/`LAMP-core-ios`** | Not confirmed this session |
-| **AWARE Framework** | International academic collaboration (orig. Univ. of Oulu) | Academic open source | Active (2026 commits) | Not confirmed this session |
-| **Avicenna Research (Ethica)** | Avicenna Research (rebrand of Ethica Data) | Commercial SaaS | Active, renamed from Ethica | Closed source |
-| **MetricWire** | MetricWire Inc. (Waterloo, Canada) | Commercial SaaS | Active, founded 2013 | Closed source |
-| **m-Path** | KU Leuven-affiliated team | Commercial/academic hybrid SaaS | Active | Closed source (methodology published) |
-| **CARP Mobile Sensing** | DTU (Bardram group) | Academic open-source framework/library | Active | MIT |
-| **Purple Robot** | Northwestern CBITS / PHI Data Lab | Academic open source | **Legacy — maintenance status Unclear** | Not confirmed |
-| **StudentLife** | Dartmouth | Historical study + dataset | **Discontinued as a platform; dataset remains in use** | N/A (dataset only) |
-| **LifeData (RealLife Exp)** | LifeData, LLC (Marion, IN, USA) | Commercial SaaS | Active (app updates Apr–Aug 2026; new *LifeData+* generation shipped 2025–26 alongside the original) | Closed source (**Verified** — no GitHub org, no SDK) |
+| **Beiwe** | Onnela Lab, Harvard T.H. Chan SPH | Academic open source, plus a paid managed service (Beiwe Service Center, BSC) | Active: beiwe-backend pushed 2026-10-06, beiwe-ios 2026-10-07, beiwe-android 2026-09-08, forest 2026-10-06 | BSD-3-Clause (backend, iOS, Android, Forest) |
+| **RADAR-base** | King's College London and The Hyve | Academic/consortium open source; managed hosting sold by The Hyve | Active (ManagementPortal pushed 2026-10-05). The iOS passive app is dormant (last commit 2021-01-19) | Apache 2.0 |
+| **mindLAMP** | BIDMC Division of Digital Psychiatry | Academic, source-available; hosted and supported through the BIDMC mindLAMP Core | Active (server, dashboard and both app repos pushed 2026-10-08). `LAMP-portal` and `LAMP-app` archived 2020-11-17 | Mixed: LAMP-dashboard AGPL-3.0; LAMP-server, LAMP-core-android, LAMP-core-ios no licence file (all rights reserved by default); API clients BSD-3-Clause; LAMP-toolkit MIT |
+| **AWARE Framework** | International academic collaboration (originated University of Oulu) | Academic open source, plugin-extensible | Active: aware-client pushed 2026-08-07, AWAREFramework-iOS 2026-02-17 | Apache-2.0 (aware-client and AWAREFramework-iOS; not every repo checked) |
+| **Avicenna Research (formerly Ethica)** | Avicenna Research Inc. (Canada) | Commercial SaaS | Active (iOS app released 2026-10-07) | Closed source |
+| **MetricWire** | MetricWire Inc. (Waterloo, Canada), founded 2013 | Commercial SaaS | Active ("Catalyst By MetricWire" updated 2026-10-07 on both stores) | Closed source |
+| **m-Path** | m-Path, KU Leuven spin-off | Commercial SaaS with a peer-reviewed methods paper | Active (apps updated 2026-09-08 and 2026-10-05) | Closed source |
+| **CARP Mobile Sensing** | DTU (Bardram group) | Academic open-source framework, with a DTU-hosted service and web portal | Active: carp.sensing-flutter pushed 2026-10-09, carp-portal 2026-10-07 | MIT |
+| **LifeData (RealLife Exp / LifeData+)** | LifeData, LLC (Marion, IN, USA) | Commercial SaaS, EMA/ePRO; not passive sensing | Active; two app generations in parallel | Closed source (no GitHub organization or SDK) |
+| **Evidation** | Evidation Health, Inc. (San Mateo, CA, USA) | Commercial participant network and real-world-data platform; edge of scope (wearable plus survey intake, not phone sensing) | Active (apps updated 2026-10-02 and 2026-10-04) | Closed source |
+| **Purple Robot** | Northwestern CBITS / PHI Data Lab | Academic open source, Android only | **Dormant since 2016**: last commit 2016-04-11, last push 2017-04-07, lab page removed (Corroborated) | GPL-3.0 (`LICENSE.GPLv3` in repo root) |
+| **StudentLife** | Dartmouth | Historical study and dataset, not a platform | Dataset only; the dataset site refused connections on 2026-10-10 | `studentlife` R package GPL-2.0 (Zenodo 3371922) |
 
 ---
 
-## Table 2 — iOS / Android support (parity NOT assumed — see individual profiles)
+## Table 2. Apps, app stores and iOS/Android parity (parity NOT assumed)
 
-| Platform | iOS | Android | Parity confirmed? |
-|---|---|---|---|
-| Beiwe | Yes, native app | Yes, native app | **Not independently verified this session** |
-| RADAR-base | Yes, but **Corroborated (2026-08-25 second pass): platform's own documentation states "substantial differences" exist and iOS availability is "more sparse... due to lack of background collection capabilities"** | Primary platform; 17-item itemized passive-sensor catalog Verified 2026-08-25 | **No — platform self-documents a gap, though the exact iOS-side item list was not itemized this pass** (see `profiles/radar-base.md`) |
-| mindLAMP | Yes | Yes | **Not independently verified this session** |
-| AWARE Framework | Port exists. The website catalogue lists ~14 of ~33 modules on iOS, but the iOS repository also has Location, Proximity and Calls (event-only, via CXCallObserver), **corrected 2026-10-09**. Applications, Installations, Keyboard, SMS, Screenshot and Screentext are Android-only | Primary platform, full ~33-module catalog | **No — quantified and Verified, not just self-described** (see `profiles/aware-framework.md`) |
-| Avicenna Research (Ethica) | Yes | Yes | **Not independently verified this session** |
-| MetricWire | Yes | Yes | **Not independently verified this session** |
-| m-Path | Yes (mobile app) | Yes (mobile app) | **Not independently verified this session** |
-| CARP Mobile Sensing | Yes (Flutter cross-platform by design) | Yes (Flutter cross-platform by design) | Design goal stated; **not independently verified stream-by-stream** |
-| Purple Robot | **No — Android only** | Yes, most complete Android sensor coverage cited in literature | N/A — no iOS |
-| LifeData (RealLife Exp) | Yes, native app | Yes, native app | **Not independently verified.** Two live generations; *LifeData+* requires **iOS 18.0+** |
+| Platform | iOS client | Android client | iOS client maintained? | Parity |
+|---|---|---|---|---|
+| Beiwe | "Beiwe2" on the App Store (v2.5.11, 2026-09-30) | Native app; no Google Play listing could be confirmed on 2026-10-10 (Unclear) | Yes (beiwe-ios pushed 2026-10-07) | **No, Verified 2026-09-03 from the Beiwe wiki.** Calls, SMS, Wi-Fi and Bluetooth are Android only; power state is Android only per one wiki page and conflicting on iOS; magnetometer, proximity, device motion and reachability are iOS only |
+| RADAR-base | No maintained passive app: `radar-prmt-ios` is "work in progress" that "only records location data without sending it to a server". The questionnaire app "RADAR Active RMT" is on the App Store (2026-08-24) and reads HealthKit when opened | "RADAR passive RMT" (2026-06-18) and "RADAR active RMT" (2026-09-09) on Google Play | Active app yes; passive app no | **No.** Android passive catalogue of 17 streams Verified; current iOS phone-sensor capability Unclear (2019 chart and dormant repo conflict); platform docs say iOS sensors are "more sparse... due to lack of background collection capabilities" |
+| mindLAMP | "mindLAMP 2" on the App Store, last updated 2023-05-26 | "mindLAMP 2" on Google Play (2026-05-17) | Unclear: LAMP-core-ios pushed 2026-10-08, but the public App Store build dates from 2023 | Unclear (streams named without a per-OS breakdown) |
+| AWARE Framework | "AWARE Client V3" (v1.7.0, 2026-07-23) and "AWARE Client V2" on the App Store; needs the study's server URL | Not on Google Play; distributed from GitHub (sideloading) | Yes | **No, Verified 2026-10-10.** Website catalogue: 19 of 33 modules iOS-available, 14 Android only. The iOS repository also runs proximity and calls (call events only, no history). App usage, SMS, keyboard, light, screenshot and screentext are Android only |
+| Avicenna Research | App Store (v1065, 2026-10-07) | Google Play `com.ethica.logger` (2026-09-05) | Yes | Unclear (most streams unverified; one study found Bluetooth beaconing unreliable on iOS) |
+| MetricWire | "Catalyst By MetricWire" on the App Store (2026-10-07) | Same app on Google Play (2026-10-07) | Yes | Unclear |
+| m-Path | "m-Path" (2026-10-05) and "m-Path Sense" (2026-09-08) on the App Store | Android supported per the pricing page; Google Play listing not located (Unclear) | Yes | Unclear |
+| CARP Mobile Sensing | Flutter framework builds for iOS; DTU's "CARP Studies" app not found on the App Store (Unclear) | "CARP Studies" on Google Play (2026-10-06) | Framework yes; reference app on iOS Unclear | Not verified stream by stream; calls and SMS are No (OS) on iOS |
+| LifeData | RealLife Exp (2026-04-06) and LifeData+ (2026-10-10; needs iOS 18.0+) on the App Store | Both generations on Google Play | Yes | Same single stream on both (GPS captured with a survey response) |
+| Evidation | "Evidation" on the App Store (2026-10-02) | Google Play `com.achievemint.android` (2026-10-04) | Yes | Not applicable: no phone-sensor streams documented |
+| Purple Robot | None (Android only) | Not maintained since 2016 | Not applicable | Not applicable |
 
-**Two platforms in this table now have a self-documented iOS/Android gap, both Verified/Corroborated
-via direct fetch rather than just self-described: AWARE (2026-08-24 second pass) and RADAR-base
-(2026-08-25 second pass).** AWARE's gap is the more precisely quantified of the two. **Corrected 2026-10-09:** location is
-not Android-only after all (the iOS repository has it, contradicting the website catalogue), so
-AWARE is not ruled out for iOS-inclusive GPS studies; app usage, SMS and keyboard remain Android-only. RADAR-base's own
-documentation names the same underlying cause (iOS background-execution limits) but without an
-itemized per-sensor iOS list, so it is Corroborated rather than fully Verified at the per-stream
-level. Every other "not independently verified" cell reflects a genuine research-session limitation,
-not a claim of parity — a future pass should verify each remaining platform's developer documentation
-stream-by-stream before this table is used to make an iOS-heavy or Android-heavy study design
-decision.
+Two platforms have a documented, itemized gap: Beiwe (per-stream OS split from its wiki) and AWARE
+(per-module catalogue plus the iOS repository). RADAR-base documents the gap qualitatively, and has no
+current iOS passive app. Every other "Unclear" is an unverified question, not a claim of parity.
 
 ---
 
-## Table 3 — Open source, self-hosting, and deployment model
+## Table 3. Open source, hosting options and what you need to run it
 
-| Platform | Open source | Self-hosting | Hosting requirement to run it |
-|---|---|---|---|
-| Beiwe | Yes (BSD-3) | Yes, on AWS (own account) | AWS + Django/Python expertise, **or** pay for the BSC managed service (now with published rates — see Table 6) |
-| RADAR-base | Yes (Apache 2.0) | Yes, Kafka-based backend, **or** a confirmed managed-hosting alternative, **"RADAR-base as a Service" via The Hyve (Verified 2026-08-25)** | Institutional DevOps/data-engineering capacity for self-hosting — likely higher floor than Beiwe — **or** no infrastructure capacity needed via The Hyve's managed service (best suited to studies of ~200 participants or fewer per the vendor's own guidance) |
-| mindLAMP | Yes | Yes (`LAMP-server`) | Not independently benchmarked |
-| AWARE Framework | Yes (**Apache-2.0, confirmed 2026-08-24** on `aware-client` and named plugin repos) | Yes; distributed via GitHub, **not app stores** (permissions exceed store policy). No managed/SaaS hosting option found. | Sideloading/enterprise distribution needed for participants |
-| Avicenna Research (Ethica) | No | **No** — vendor SaaS only | None — fully managed |
-| MetricWire | No | **No** — vendor SaaS only | None — fully managed |
-| m-Path | No | **No** — vendor SaaS only | None — fully managed |
-| CARP Mobile Sensing | Yes (MIT) | N/A for the CAMS sensing library — **but a `carp-portal` repository (Verified 2026-08-25) indicates a study-management portal component exists within the broader CARP ecosystem**, of unconfirmed maturity | Flutter/Dart mobile-development capacity for the CAMS app itself |
-| LifeData (RealLife Exp) | No | No | Vendor SaaS only; **US-only data residency**, hosted on Microsoft Azure (named in the privacy policy) |
+| Platform | Source and licence | Self-hosting | Hosted or managed option (who; price public?) | Capacity needed |
+|---|---|---|---|---|
+| Beiwe | Open source (BSD-3) | Yes, AWS only; "moderate AWS and Python expertise" (README); open-source version provided as-is, paid help from contract developers (Zagaran) | **Beiwe Service Center**, run by the Onnela Lab on its AWS account; separate US and EU login portals; **rates published** (Table 6) | AWS and Django capacity, or none via the BSC |
+| RADAR-base | Open source (Apache 2.0) | Yes; Kafka-based backend; RADAR-Kubernetes for cluster installs ("used in few production environments") | **"RADAR-base as a Service"**, The Hyve: single server, "Studies with a maximum of 200 participants are ideal", "best suited for small-scale and short-term studies"; client owns the data; **quote only** | DevOps and data-engineering capacity, or none via The Hyve for small studies |
+| mindLAMP | Source-available: server and apps unlicensed, dashboard AGPL-3.0 | Technically yes (LAMP-server, Docker); the Core's own model is "Full mindLAMP stack in partner's own AWS account". Self-hosting or modifying the unlicensed code outside that needs BIDMC permission | **BIDMC mindLAMP Core**, "the supported deployment pathway": a separate BIDMC-hosted instance or the shared instance at lamp.digital; **priced by proposal** after a free consultation | Own AWS capacity, or none via the Core |
+| AWARE Framework | Open source (Apache-2.0) | Yes (backend); the only deployment path | **None found** | Server administration, plus Android sideloading |
+| Avicenna Research | Closed | No | Vendor SaaS only; data on servers in Canada (vendor-stated) | None |
+| MetricWire | Closed | No | Vendor SaaS only; data in the US on Google Cloud Platform (vendor-stated) | None |
+| m-Path | Closed | No self-hosting of the software; a custom-priced **"External servers" add-on** saves data "on your personal server" (scope not stated) | Vendor SaaS | None for the default SaaS |
+| CARP Mobile Sensing | Open source (MIT) | Yes: CARP Web Services, Web Portal and Studies App, with Keycloak and PostgreSQL, in Docker or Kubernetes | **DTU-hosted CARP service** on DTU Computerome: "Researchers affiliated with DTU can use this service" (CAWS page), while the "Three ways" page invites researchers to email info@carp.dk; best effort; DTU is data controller; **price not stated** | Flutter capacity for a custom app; container capacity to self-host; none for the hosted service if an account is granted |
+| LifeData | Closed | No | Vendor SaaS only; US servers, Microsoft Azure named in the privacy policy | None |
+| Evidation | Closed | No | Vendor runs the studies on its member base; sponsors deploy nothing | None (sponsor model) |
 
-**Practical read:** the module splits cleanly into three deployment postures — (1) self-hosted
-academic open source requiring real infrastructure capacity (Beiwe, RADAR-base, mindLAMP, AWARE),
-(2) fully managed commercial SaaS requiring none (Avicenna Research, MetricWire, m-Path), and (3) a
-build-your-own-app framework requiring mobile-development capacity rather than backend/DevOps
-capacity (CARP). **Updated 2026-08-25:** two platforms in this module now offer a documented
-managed-hosting alternative to self-hosting — Beiwe (via the Beiwe Service Center, with published
-rates) and RADAR-base (via The Hyve's "RADAR-base as a Service," pricing still non-public). This was
-previously described as "except Beiwe" only; RADAR-base's managed-hosting option was resolved this
-second pass.
+**Practical read.** Three postures remain: self-hosted platforms with public source (Beiwe, RADAR-base
+and AWARE under open licences; mindLAMP source-available, with the server and apps unlicensed), fully
+managed commercial SaaS (Avicenna Research, MetricWire, m-Path, LifeData, Evidation), and a framework
+for building your own app (CARP). The hosted picture changed: **four public-source platforms now have
+a documented hosted alternative to self-hosting**: Beiwe (BSC, the only one with published rates),
+RADAR-base (The Hyve, quote only), mindLAMP (BIDMC mindLAMP Core, priced by proposal) and CARP
+(DTU-hosted, stated for DTU-affiliated researchers, price not stated). AWARE has none.
 
 ---
 
-## Table 4 — Active data collection (EMA/survey) sophistication
+## Table 4. Active data collection (EMA and surveys)
 
-| Platform | Surveys/EMA | Distinctive active-collection feature |
+| Platform | Surveys/EMA | Notable documented features |
 |---|---|---|
-| Beiwe | Yes, scheduled, incl. audio-recording items | Simpler EMA model; branching-logic depth not independently verified |
-| RADAR-base | Yes — PROM/questionnaire delivery | Not independently verified in depth |
-| mindLAMP | Yes — surveys + **cognitive/behavioral tasks** | "Assess/Manage" clinical-assessment orientation baked into platform identity |
-| AWARE Framework | Yes — **Verified 2026-08-24**: a native ESM/EMA sensor module, on both Android and iOS | Framework's core identity is passive sensing; scheduling/branching sophistication not benchmarked against Beiwe/mindLAMP |
-| Avicenna Research (Ethica) | Yes — surveys, cognitive/behavioral tasks, **TeleVisit** | Broadest clinical-trial-style active-assessment feature set in this module |
-| MetricWire | Yes — mobile diaries, **context/trigger-based survey deployment** | Documented sensor-context-triggered (not just scheduled) survey firing |
-| m-Path | Yes — core platform identity; **explicit JITAI support** | No-code EMA/EMI design; the most EMA-sophistication-forward platform here |
-| CARP Mobile Sensing | Not a core framework feature; would be built by the adopting team | N/A — sensing-first framework |
-| LifeData (RealLife Exp) | Yes — **the deepest documented scheduling engine in this module**: fixed/random/triggered/event-based with configurable minimum inter-prompt spacing, branching, display logic, piped text, computed scores, 13 question types, offline collection, RTL languages | A trigger type that activates an **entire new schedule**, making it EMI/JITAI-adjacent without custom code |
+| Beiwe | Yes: written, audio and image surveys | Absolute, relative (to a per-participant date) and weekly schedules; branching from NOT/OR/AND blocks over slider, radio and numeric answers; randomized question selection (disables branching); survey resends tracked server-side. Verified 2026-09-03 |
+| RADAR-base | Yes: PROM/questionnaire delivery through the aRMT app | Scheduling, branching and event-triggered EMA not verified (Unclear) |
+| mindLAMP | Yes: surveys plus cognitive tests (LAMP-activities) | Clinical "Assess/Manage" orientation; EMA scheduling and branching depth not benchmarked |
+| AWARE Framework | Yes: a native ESM/EMA module on Android and iOS | Scheduling and branching depth not benchmarked |
+| Avicenna Research | Yes: surveys, cognitive and behavioral tasks, TeleVisit | Clinical-trial-style outcome assessment (vendor feature pages) |
+| MetricWire | Yes: mobile diaries; "contextualized trigger-based survey deployment" | Context-triggered surveys and electronic consent (vendor-described) |
+| m-Path | Yes: the platform's core | No-code EMA/EMI design with published JITAI support (Frontiers in Digital Health 2023) |
+| CARP Mobile Sensing | Survey data is a named CAMS sampling package; a Research Package is used in DTU apps | Scheduling and survey features not verified (Unclear) |
+| LifeData | Yes: the platform's core | Fixed, random (with minimum spacing), triggered and event-based schedules; branching; a trigger that starts a whole new schedule; display logic, piped text, scores; 13 question types; offline collection; right-to-left languages (vendor pages) |
+| Evidation | Yes: in-app survey cards, daily, weekly or event-triggered | Branching, randomized timing, cognitive tasks and audio diaries Unclear |
 
 ---
 
-## Table 5 — Passive sensing breadth (as documented; NOT independently bench-tested this session)
+## Table 5. Passive sensing and wearable integration (as documented, not bench-tested)
 
-| Platform | Named passive streams | Wearable integration named |
+| Platform | Phone streams documented (OS split where the profile gives one) | Wearable and health-platform integration |
 |---|---|---|
-| Beiwe | GPS, accelerometer, gyroscope, call logs, SMS logs, Wi-Fi, Bluetooth, screen/power state, audio samples | Not identified |
-| RADAR-base | **Itemized and Verified 2026-08-25**: 17 documented Android passive streams (relative location, acceleration, gyration, magnetic field, step count, light, Bluetooth device counts, activity recognition, sleep events, phone lock/unlock, app usage, call log, SMS log, contact-list changes, battery, local weather, connection monitoring) — see profile for iOS-availability caveat | **Yes — Garmin, Huawei, Empatica, and others named as 2026 partners** |
-| mindLAMP | Not independently itemized this session | Not established |
-| AWARE Framework | **Itemized and Verified 2026-08-24**: ~33 documented sensor/plugin modules (accelerometer, barometer, battery, Bluetooth, gravity, gyroscope, light, locations, magnetometer, network, proximity, rotation, screen, temperature, WiFi, and more — see profile for full per-platform table) | Historically device-agnostic via plugins; no specific wearable integration itemized |
-| Avicenna Research (Ethica) | "Wide range of smartphone sensors and wearables" (vendor framing, not itemized) | Yes, per vendor framing — not itemized |
-| MetricWire | Passive sensor + geolocation capture (vendor framing, not itemized) | Not established |
-| m-Path | GPS, Bluetooth, pedometer, environmental/noise context (m-Path sense module — **confirmed 2026-08-25 as a separately priced add-on, €3,000–€10,000/year, not included in base subscription**) | **Yes — "wearable triggers" named explicitly; a distinct "Smartwatch Integration" add-on (€3,000) was also found 2026-08-25** |
-| CARP Mobile Sensing | On-board phone sensors + attached wearables; **confirmed integration with Apple Health and Google Health Connect (Verified 2026-08-25)** | **Itemized and Verified 2026-08-25**: Movisens (Move4/EcgMove4/EdaMove4), eSense earplug, Polar (H10/Verity Sense), Movesense (MD/Active), Dexcom G7 CGM — materially broader than the prior "ECG monitor" reference |
-| **LifeData (RealLife Exp)** | **Response-linked GPS only** — captured *with* a survey response, not continuously. **No accelerometer, screen/app usage, communication metadata, Bluetooth, Wi-Fi or audio.** Corroborated across 5 vendor pages, 2 app-store listings and 2 Play data-safety declarations | **None documented** — no wearable, HealthKit, Health Connect or FHIR integration anywhere |
+| Beiwe | Both OS: GPS, accelerometer, gyroscope, device information. Android only: calls, SMS, Wi-Fi, Bluetooth, screen and power state (power state on iOS is conflicting documentation). iOS only: magnetometer, proximity, device motion, reachability. Audio only through audio surveys | None documented in the profile |
+| RADAR-base | Android: 17 streams, including relative location, acceleration, gyration, magnetic field, light, step count, activity recognition, sleep events, lock/unlock, app usage, call and SMS logs (hashed), Bluetooth counts, battery, weather. iOS phone sensors Unclear | Garmin, Huawei, Empatica and others named as partners; The Hyve trains on Fitbit and Garmin; iOS reads 17 HealthKit types through the aRMT app when opened |
+| mindLAMP | GPS, accelerometer, gyroscope, screen time and calls named, without a per-OS breakdown; everything else Unclear | Steps, sleep and heart rate from a paired wearable (devices not itemized) |
+| AWARE Framework | 33 catalogue modules; 19 iOS-available. Includes location, accelerometer, gyroscope, magnetometer, barometer, battery, screen, network, Wi-Fi, Bluetooth on both; light, app usage, keyboard, SMS, telephony Android only | Fitbit module in the iOS framework; an Apple Watch (watchOS) framework; Android plugin coverage not itemized |
+| Avicenna Research | GPS on both; Bluetooth beaconing on Android (unreliable on iOS in one study); the rest Unclear | Wearables integrated per vendor; Garmin Health SDK (wrist-status stream) confirmed in the notifications reference |
+| MetricWire | GPS on both (vendor-named); "Passive Sensors" named without a list; the rest Unclear | Not established |
+| m-Path | GPS, Bluetooth, pedometer/activity and noise context via m-Path Sense (vendor-named, Reported). Sensing Lite (€3,000) collects only when a questionnaire is completed; Sensing Full (€10,000) is continuous | Smartwatch integration add-on (€3,000; Fitbit, Garmin, Apple Watch named) |
+| CARP Mobile Sensing | Location, activity, connectivity, audio on both; app usage, calls and SMS on Android; other streams Unclear | Apple Health and Google Health Connect; Movisens, eSense, Polar, Movesense, Dexcom G7 |
+| LifeData | **GPS captured with a survey response only**, not continuous; every other stream No | None documented |
+| Evidation | No phone-sensor stream documented (device identifiers only; geolocation mentioned in the privacy notice, Unclear) | 20 or more connected consumer apps and devices, including Fitbit, Apple Health, Garmin and Oura |
 
 ---
 
-## Table 6 — Pricing and service model
+## Table 6. Pricing, service model and academic access
 
-| Platform | Software cost | Hosting/service cost | Pricing public? |
-|---|---|---|---|
-| Beiwe (self-hosted) | Free | Own AWS bill | Infra cost not public; no licence fee |
-| Beiwe (via BSC) | Free (same code) | **Verified 2026-08-25: $1,937/month fixed + $6/Active Participant Month variable**; worked examples total $24,144–$27,564 | **Yes — actual rates published**, resolving what was the module's clearest "methodology only" gap |
-| RADAR-base (self-hosted) | Free | Own infra | N/A |
-| RADAR-base (via The Hyve, "RADAR-base as a Service") | Free (same code) | **Confirmed to exist 2026-08-25**; GDPR-compliant cloud hosting, 2–4 week setup, best suited to ≤~200 participants (single-server) | Offering confirmed; **rate figures no** |
-| mindLAMP | Free | Not established | N/A |
-| AWARE Framework | Free | Own infra; community-funded via Open Collective | N/A |
-| Avicenna Research (Ethica) | N/A (SaaS) | **Non-public**; free trial reported by third-party directories (re-confirmed non-public 2026-08-25) | **No** |
-| MetricWire | N/A (SaaS) | **Non-public**; trial offered | **No** |
-| m-Path | N/A (SaaS) | **Verified 2026-08-25: fully public, itemized tiers** — Free (€0/50 participants), Essential (€1,599–€2,958), Standard (€2,099–€3,616), Comfort (€3,099–€5,338), plus separately priced add-ons (Sensing Lite €3,000, Sensing Full €10,000, API Access €5,000, Smartwatch Integration €3,000, and others) | **Yes — the most granular published pricing in this module** |
-| CARP Mobile Sensing | Free (MIT) | Adopting team's own dev + infra cost | N/A |
-| LifeData (RealLife Exp) | Not public — no `/pricing` page; the *formula* is described, the figures are not | Not public; heaviest paid-services menu in the module (10 named services incl. protocol building, UAT, site training) | **No** |
+| Platform | Software cost | Hosting or service cost | Academic program or pricing | Pricing public? |
+|---|---|---|---|---|
+| Beiwe (self-hosted) | Free | Own AWS bill | Not applicable | No licence fee |
+| Beiwe (BSC) | Free (same code) | **$1,937 per month fixed plus $6 per Active Participant Month**; examples headed "FY24" ($24,144 and $25,044 reproduce from the formula; a for-profit example of $27,564 does not); rates revisable on 30 days' notice | Single rate card; no separate academic rate stated; "not a scientific collaboration" | **Yes** |
+| RADAR-base (self-hosted) | Free | Own infrastructure | Not applicable | No licence fee |
+| RADAR-base (The Hyve) | Free (same code) | Subscription, quote only | No academic tier published | **No** |
+| mindLAMP | No licence fee identified | Self-hosting costs, or a BIDMC mindLAMP Core proposal (free first consultation) | No academic rate published; the Core names grant-funded projects as a fit | **No** |
+| AWARE Framework | Free | Own infrastructure; Open Collective donations | None | Not applicable |
+| Avicenna Research | Licence, non-public | Included in the licence | No academic rate found. A free trial exists for testing only (data wiped monthly, study deleted after one year) | **No** |
+| MetricWire | Non-public; demo by request | Included | **Academic Site Licence** for institutions ("cost effective", unpriced; page copyright 2023) | **No** |
+| m-Path | Free tier (€0, 50 participants/year); Essential, Standard, Comfort €1,599 to €5,338 per year excl. VAT (300 to 600 participants) | Add-ons by contact: Sensing Lite €3,000, Sensing Full €10,000, API €5,000, Smartwatch €3,000, Cognitive tests €4,500, white-label €10,000 plus €2,000 a year, and others; add-on billing period not stated | Only "research plans"; no academic/commercial split; basic version free for individual practitioners | **Yes** |
+| CARP Mobile Sensing | Free (MIT) | Own development and infrastructure, or the DTU-hosted service (price not stated) | Hosted service stated for DTU-affiliated researchers | Not applicable / not stated |
+| LifeData | Non-public; formula (researchers x duration x participants) described | Non-public; ten named paid services | Separate academic and commercial pricing; graduate-student discount (vendor-stated); no trial | **No** |
+| Evidation | Non-public sponsor pricing | Not applicable | No program on vendor pages; academics can obtain the Evidation-built American Life in Realtime data through USC's Understanding America Study Data Use Agreement | **No** |
 
-**Updated 2026-08-25: only two of eight active platforms now have entirely non-public commercial
-pricing (Avicenna Research and MetricWire).** m-Path's pricing, previously "not established," is now
-the most granular and fully itemized in the module (base tiers plus per-feature add-ons). Beiwe's BSC
-rates are now public (resolving unresolved-question #85). RADAR-base has a confirmed managed-hosting
-offering but its rates remain non-public (resolving the *existence* half of unresolved-question #86,
-not the pricing half).
+Beiwe and m-Path are the only platforms with published prices. Among the public-source platforms, the
+BSC is the only hosted service with published rates.
 
 ---
 
-## Table 7 — Privacy, security, and compliance posture
+## Table 7. Privacy, security and compliance
 
-| Platform | Documented encryption/security design | HIPAA/GDPR/SOC2 documentation located this session |
+| Platform | Documented security design | Compliance statements (confidence) |
 |---|---|---|
-| Beiwe | **Yes — specific**: on-device, in-transit (RSA-AES hybrid), at-rest encryption; SHA-256/PBKDF2 identifier hashing with device-specific salts | HIPAA-*applicability* language found 2026-08-25 ("may interact with laws covering PII or PHI like HIPAA") — **not a certification claim**. GDPR/SOC2 still not located |
-| RADAR-base | Self-hosting emphasized for "in-hospital" privacy control (design framing, not a certification); managed-hosting option (The Hyve) commits to "GDPR-compliant public cloud" **hosting infrastructure** specifically (Verified 2026-08-25) | HIPAA/SOC2/ISO **not located** even after second pass; the GDPR language found is about the hosting environment, not a RADAR-base compliance certification |
-| mindLAMP | Not established | **Not located**; clinical-use orientation makes this a first-order open question |
-| AWARE Framework | Not established | **Not located** |
-| Avicenna Research (Ethica) | AES-256 encryption at rest, stated on the vendor's legal page (Verified 2026-08-25) | **Materially resolved 2026-08-25**: **ISO 27001:2022 certified** (Verified — certified Nov 2024, zero-nonconformity surveillance audit Nov 2025); detailed HIPAA Privacy/Security Rule and UK GDPR/EU GDPR/PIPEDA language for minors' data (Corroborated — vendor-stated, not independently audited in what this session accessed). SOC 2 and 21 CFR Part 11 status **still not located** |
-| MetricWire | Not established | **Not located** despite stated CRO customer base |
-| m-Path | Not established | **Corroborated 2026-08-25**: vendor's own homepage states "compliant with GDPR and HIPAA" — a specific, findable claim, but self-declared rather than independently audited (contrast Avicenna Research's dated ISO 27001 certificate, which this session treats as the stronger evidence tier). SOC2/ISO/DPA-template **not located** |
-| CARP Mobile Sensing | **Yes — named framework feature**: privacy-preserving data-transformation pipeline | **Not located**; DTU/EU base makes GDPR a likely (not verified) design consideration |
-| LifeData (RealLife Exp) | Partial — US-only residency and Azure hosting named; **no public data dictionary, export schema or permission model** (help centre entirely login-gated; the worst documentation opacity in this module) | **Unclear — a real conflict.** Marketing asserts "HIPAA & GDPR compliant" on 4+ pages (one misspells it "HIPPA"), but the privacy policy and terms **mention HIPAA zero times** — no BAA, no Security/Privacy Rule language. **SOC 2, ISO 27001 and 21 CFR Part 11 appear nowhere**, despite a marketed "Clinical" eCOA tier. What *is* documented: **EU-U.S. / UK / Swiss Data Privacy Framework self-certification**, FTC jurisdiction, GDPR-processor role. Retention/deletion terms are **numeric and Verified** (180 d / ≤30 d / 12-month inactivity) — the most specific in the module |
+| Beiwe | On-device, in-transit (RSA-AES) and at-rest encryption; PBKDF2/SHA-256 identifier hashing with per-installation keys; production-study setting (Verified) | HIPAA applicability acknowledged ("may interact with laws covering PII or PHI like HIPAA"), not a compliance claim. No GDPR, SOC 2 or ISO statement. BSC EU portal exists; EU storage location not stated |
+| RADAR-base | Self-hosting for in-hospital data custody; The Hyve hosts in "a GDPR compliant public cloud infrastructure located at the choice of the client"; DPA when The Hyve keeps managing or accesses data | No HIPAA, SOC 2 or ISO statement located |
+| mindLAMP | The Core describes role-based access controls, audit logs and IRB/security-review language as part of its service | No HIPAA, SOC 2 or GDPR claim; the Division's privacy page makes none (checked 2026-10-10) |
+| AWARE Framework | Not established | Not located |
+| Avicenna Research | AES-256 at rest, TLS 1.2+ in transit, full-disk encryption; data in Canada (vendor-stated) | **Corroborated (vendor-stated):** ISO 27001:2022 stated (Nov 2024, surveillance audit Nov 2025), "through UKAS" with a CertCheck link that could not be read; HIPAA/GDPR/PIPEDA language; BAAs required for covered transactions. No SOC 2 or Part 11 |
+| MetricWire | AES-256 at rest, TLS 1.2+ in transit, MFA for production, US storage on Google Cloud Platform (vendor-stated) | **Corroborated (vendor-stated):** "ISO 27001 certified and SOC II Type II compliant"; claims compliance with 21 CFR Part 11, HIPAA and GDPR. No certificate, auditor or BAA terms published |
+| m-Path | Separate privacy policy for m-Path Sense | **Corroborated (vendor-stated):** "compliant with GDPR and HIPAA". No SOC 2, ISO or DPA template located |
+| CARP Mobile Sensing | Privacy-preserving data transformation as a framework feature | GDPR roles documented: DTU is controller for its hosted service and cannot act as processor for outside controllers; EU/EEA residency by default. No certification claimed |
+| LifeData | US residency, Azure hosting; retention figures (180 days, 30 days, 12 months) Verified from the legal documents | EU-U.S., UK and Swiss Data Privacy Framework self-certification; GDPR processor role. HIPAA claimed in marketing only, absent from the legal documents (Unclear). No SOC 2, ISO or Part 11 |
+| Evidation | Corporate privacy notice (identifiers, device data, geolocation, CCPA opt-out); US data centres | No security or trust page (evidation.com/security and /trust return 404); compliance Unclear |
 
-**Updated 2026-08-25: this is no longer a uniform "not located" table.** Avicenna Research now has
-the strongest compliance evidence in the module (an independently audited, dated ISO 27001:2022
-certificate), and m-Path and Beiwe both have specific, sourced language distinguishing a vendor's own
-compliance *claim* (m-Path: "compliant with GDPR and HIPAA," Corroborated) from mere legal-applicability
-acknowledgment (Beiwe: "may interact with laws covering... HIPAA," not a compliance claim at all).
-**Every remaining "Not located" in this table is still a vendor/maintainer question, not an inference
-of non-compliance.** See `../shared/unresolved-questions.md`.
+No Module 2 platform has an independently confirmed certification. Three vendors (Avicenna Research,
+MetricWire, m-Path) make specific compliance statements; treat them as vendor claims to be checked
+against a certificate or audit report before relying on them.
 
 ---
 
-## Table 8 — Study operations and management
+## Table 8. Study operations and management
 
-| Platform | Researcher dashboard | Study-management depth | Multi-study/multi-site |
-|---|---|---|---|
-| Beiwe | Yes (part of `beiwe-backend`) | Study/participant/survey configuration confirmed; adherence monitoring depth not independently verified | Supported (one backend can host multiple studies) |
-| RADAR-base | Yes — **Verified 2026-08-25**: `ManagementPortal` is an actively maintained GitHub repository (Apache-2.0), not just a referenced concept | Not independently verified in depth beyond confirming the repo's existence and active status | Consortium/multi-site origin (RADAR-CNS) suggests strong support |
-| mindLAMP | Yes | Not independently verified in depth | Not established |
-| AWARE Framework | **Not confirmed as existing** — framework may rely on external/custom tooling | N/A | N/A |
-| Avicenna Research (Ethica) | Yes, explicitly named "Study Management" | Not independently itemized | Not established |
-| MetricWire | Yes — real-time monitoring/analytics dashboard | Adherence/data-flow visibility implied | Not established |
-| m-Path | Yes — no-code web study builder | Strong for EMA/EMI design specifically; **API Access is a separate €5,000/year add-on (Verified 2026-08-25), not included by default** | Not established |
-| CARP Mobile Sensing | **Revised 2026-08-25**: a `carp-portal` repository exists within the `carp-dk` organization, indicating a dashboard component is part of the ecosystem — but its maturity/completeness is unconfirmed, so "not offered" is no longer accurate | N/A — not independently assessed | N/A |
-| LifeData (RealLife Exp) | Yes — real-time engagement and response-rate dashboards, smart reminders, alerts on responses/scores/events | Web builder, roles/permissions, QR/link/code onboarding, researcher-assigned IDs | Yes — institutional master subscriptions with department sub-accounts; multi-site on the Clinical tier |
+| Platform | Researcher dashboard | Monitoring and management documented | Background keepalive | Multi-study / multi-site |
+|---|---|---|---|---|
+| Beiwe | Yes (beiwe-backend portal) | Per-stream data-volume dashboard (being replaced by Tableau feeds); per-participant heartbeat, token and notification history; study and site admin roles | **Yes**: server push when the app has not checked in (default 1 hour), on by default since 2024 once servers are updated | One backend hosts multiple studies |
+| RADAR-base | Yes (ManagementPortal, maintained) | `DisconnectMonitor` emails researchers when a source stops sending | No participant-facing keepalive; researcher email only | Consortium origin; multi-site by design |
+| mindLAMP | Yes (LAMP-dashboard) | Core service includes role-based access, audit logs, uptime monitoring and study support | None found | Core claims 50+ active sites; multi-site deployments named as a fit |
+| AWARE Framework | Study configuration through AWARE-Configurator; no researcher dashboard confirmed | Unclear | iOS only, silent push, off by default | Unclear |
+| Avicenna Research | Yes ("Study Management") | Participation page with "In Operation" percentage and last-data time; server-side "Sensor Data Gap Detected" notifications for the Garmin wrist-status stream only | No phone-app keepalive | Unclear |
+| MetricWire | Yes, real-time monitoring dashboard | Participant Activity events (for example repeated app launches) | None found | Unclear |
+| m-Path | Yes, no-code web study builder | Unclear beyond the builder | **Yes** (m-Path Sense): 5-minute server check-in with researcher-set reopen reminders | Unlimited projects and accounts on the Standard tier and above |
+| CARP Mobile Sensing | Yes, CARP Web Portal (MIT, active): protocols, deployments, participants, consent, data visualisation, JSON export; no versioned releases or end-user docs | No adherence alerts or audit logs found | Client-side `heartbeat` record only | Unclear |
+| LifeData | Yes: engagement and response-rate dashboards, smart reminders, response/score/event alerts | Roles and permissions; audit trails as a paid custom service | Not documented | Institutional master subscriptions with department sub-accounts; multi-site on the Clinical tier |
+| Evidation | No self-service console; sponsors work with Evidation staff | Not documented publicly | Not applicable | Cohorts across 20 or more conditions (vendor) |
 
 ---
 
-## Table 9 — Meaningful differentiators, not feature lists
+## Table 9. Differentiators (checked against the profiles on 2026-10-10)
 
-| Platform | The one thing it does that others in this module do not |
+| Platform | What sets it apart |
 |---|---|
-| **Beiwe** | The only platform with both a free self-hosted path *and* a documented paid managed-hosting alternative (BSC) run by the same lab that builds the software |
-| **RADAR-base** | Kafka-based streaming architecture purpose-built for large multi-site, multi-modal (phone + wearable + IoT) consortium-scale studies |
-| **mindLAMP** | Explicit dual research-*and*-clinical-care orientation, with cognitive/behavioral assessment tasks built into the platform's core identity |
-| **AWARE Framework** | The longest-running, most plugin-extensible open-source sensing framework in the module, reflecting contributions from the widest range of independent academic groups |
-| **Avicenna Research (Ethica)** | The most clinically-oriented commercial feature set (TeleVisit, cognitive/behavioral tasks) plus unusually specific export-format support (GEXF network graphs, KML location data) **and, as of 2026-08-25, the only independently audited compliance certification (ISO 27001:2022) confirmed anywhere in this module** |
-| **MetricWire** | Documented context/trigger-based survey deployment — surveys fired by sensed context, not only by schedule — plus built-in electronic consent |
-| **m-Path** | The only platform in this module with a dedicated peer-reviewed methods paper *and* explicit, published JITAI (context-triggered intervention, not just prompt) support; **as of 2026-08-25, also the only platform with fully public, itemized à-la-carte pricing (base tiers plus priced add-ons for sensing, API access, and wearable integration)** |
-| **CARP Mobile Sensing** | The only genuinely library/framework-shaped option — a Flutter package a team builds its own app on top of, not a pre-built app to configure; **as of 2026-08-25, also the only platform in this module with confirmed native Apple Health and Google Health Connect integration** |
-| **LifeData (RealLife Exp)** | Sells **audit trails as bespoke service work rather than a shipped feature** — and pairs the module's deepest survey-scheduling engine with essentially **no passive sensing at all**, making it the clearest case in this module of an EMA/ePRO tool sitting inside a digital-phenotyping comparison |
+| **Beiwe** | The only public-source platform here whose managed hosting has published rates, offered by the lab that builds the software; a separate analysis package (Forest) with documented daily mobility, communication and survey metrics; and a server-side keepalive on by default |
+| **RADAR-base** | Kafka-based streaming architecture built for multi-site, multi-modal (phone, wearable, IoT) consortium studies, with named wearable partners (Garmin, Huawei, Empatica and others) |
+| **mindLAMP** | Explicit dual research and clinical-care orientation, cognitive tasks built in, and a builder-run hosted pathway (the mindLAMP Core); source-available rather than open source |
+| **AWARE Framework** | One of the longest-running, most plugin-extensible open-source sensing frameworks, with contributions from many academic groups; iOS on the App Store, Android by sideload |
+| **Avicenna Research** | A clinically oriented commercial feature set (TeleVisit, cognitive and behavioral tasks) and specific export formats (CSV, JSON, GEXF network graphs, KML location data) |
+| **MetricWire** | Context-triggered survey deployment and electronic consent, plus an institution-level Academic Site Licence |
+| **m-Path** | Published JITAI support with a peer-reviewed methods paper, and the most itemized published price list in the module (tiers plus priced add-ons) |
+| **CARP Mobile Sensing** | The only framework-shaped option, a Flutter library a team builds its own app on; also the only platform with documented integration with both Apple Health and Google Health Connect (RADAR-base reads Apple HealthKit through its aRMT app) |
+| **LifeData** | Detailed, specifically documented EMA scheduling and triggering with essentially no passive sensing; audit trails sold as service work |
+| **Evidation** | A recontactable member base with wearable connections and claims/EHR linkage at a scale no self-run platform reaches; the sponsor operates nothing |
+
+Superlatives removed in this rebuild because the profiles no longer support them: Beiwe as "the only
+platform with both a free self-hosted path and a documented paid managed-hosting alternative" (mindLAMP,
+CARP and RADAR-base now have hosted routes); Avicenna as "the only independently audited compliance
+certification" (its ISO statement is vendor-stated, and MetricWire states ISO 27001 and SOC 2 too);
+m-Path as "the only platform with a dedicated peer-reviewed methods paper" (Beiwe, RADAR-base, mindLAMP
+and CARP all have platform papers); CARP as the only platform with "native Apple Health and Google
+Health Connect" integration, now qualified to "both"; LifeData's "deepest scheduling engine in this
+module" and Avicenna's "broadest" active-assessment set, which no benchmark supports.
 
 ---
 
-## Table 10 — Choosing by research need
+## Table 10. Choosing by research need
 
-| If your primary need is… | Consider | Be cautious of | Why |
+| If your primary need is | Consider | Be cautious of | Why |
 |---|---|---|---|
-| Full data custody, algorithmic transparency, willing to run AWS | **Beiwe** (self-hosted) | Vendor SaaS platforms | BSD-3, self-hostable, established analysis package (Forest) |
-| No in-house infrastructure capacity, still want an open-source lineage | **Beiwe via BSC** | RADAR-base (no confirmed managed-hosting option) | BSC absorbs the infrastructure burden for a quoted fee |
-| Large multi-site, multi-country, multi-modal consortium study | **RADAR-base** | Beiwe (single-lab scale by default) | Kafka streaming, IoT gateway, EU consortium origin |
-| Bridging research into actual clinical care | **mindLAMP** | Purely research-only platforms | Explicit dual research/clinical design; verify current component status first |
-| Sophisticated no-code EMA/EMI/JITAI design | **m-Path** | Sensing-first platforms with thin EMA modules | Published methods paper; explicit JITAI support |
-| Context/trigger-based (not just scheduled) survey delivery | **MetricWire** | Purely schedule-based EMA tools | Explicitly documented trigger-based deployment |
-| Clinical-trial-style outcome assessment plus sensing, fully managed | **Avicenna Research (Ethica)** | Self-hosted academic platforms if no engineering capacity | Broad active-assessment feature set, fast data availability |
-| Full custom mobile app built on a proven sensing engine | **CARP Mobile Sensing** | Any dashboard-configured product, if the team lacks Flutter capacity | MIT-licensed, genuinely cross-platform by design |
-| Android-only legacy comparison or historical dataset reuse | **Purple Robot** (comparison context) / **StudentLife dataset** | Treating either as a live platform for new data collection | Purple Robot's live status is Unclear; StudentLife is a completed study, not a tool |
+| Full data custody, algorithmic transparency, willing to run AWS | **Beiwe** (self-hosted) | Vendor SaaS platforms; mindLAMP if you need to modify unlicensed code | BSD-3, self-hostable, Forest analysis package |
+| No in-house infrastructure, still want an open-source lineage | **Beiwe via BSC** (published rates) or **mindLAMP via the BIDMC Core** (priced by proposal) | RADAR-base via The Hyve above about 200 participants (single-server setup); CARP's hosted service if you are not DTU-affiliated (access terms conflict) | Each offloads infrastructure; only the BSC publishes rates |
+| Large multi-site, multi-modal consortium study | **RADAR-base** (self-hosted) | The Hyve's managed tier, pitched at small, short-term studies; Beiwe's single-lab default scale | Kafka streaming, IoT gateway, EU consortium origin |
+| iOS passive phone sensing | **Beiwe** or **AWARE** (itemized iOS coverage) | RADAR-base (no maintained iOS passive app); platforms whose iOS columns are Unclear | These two document per-stream iOS coverage from primary sources; elsewhere the iOS column is Unclear or conflicting |
+| Bridging research into clinical care | **mindLAMP** | Research-only platforms | Dual research/clinical design; Core service covers IRB and security-review language |
+| Sophisticated no-code EMA/EMI/JITAI | **m-Path** or **LifeData** | Sensing-first platforms with thin EMA modules | Published JITAI support (m-Path); detailed scheduling and triggers (LifeData) |
+| Context-triggered survey delivery | **MetricWire**, **LifeData**, **m-Path** | Schedule-only EMA tools | Each documents trigger-based delivery (vendor-described) |
+| Clinical-trial-style assessment plus sensing, fully managed | **Avicenna Research** | Its test-only trial for real data; self-hosted platforms if no engineering capacity | Broad active-assessment features, fast data availability |
+| Custom app on a proven sensing engine | **CARP Mobile Sensing** | Any team without Flutter capacity | MIT, cross-platform by design, wide wearable catalogue |
+| Population-scale wearable and survey cohort, or secondary data | **Evidation** (sponsored) or **American Life in Realtime** data via USC's UAS Data Use Agreement | Expecting phone sensing or a self-service console | Member scale; ALiR is the academic route |
+| Historical comparison or dataset reuse | **Purple Robot** (comparison only) / **StudentLife dataset** | Treating either as live for new data collection | Purple Robot unmaintained since 2016; StudentLife is a completed study |
+
+---
+
+## Cells changed in the 2026-10-10 rebuild (summary)
+
+- Table 1: mindLAMP licence column filled (was "Not confirmed"); AWARE licence filled (Apache-2.0); Purple Robot status and licence (dormant since 2016, GPL-3.0); Evidation and an updated StudentLife row added; activity dates refreshed.
+- Table 2: rebuilt with app-store columns. Beiwe parity changed from "not verified" to the wiki's OS split; RADAR-base iOS changed from "Yes" to no maintained passive app; AWARE counts corrected (19 of 33 on iOS, not 14) and App Store availability added; mindLAMP's stale iOS build recorded.
+- Table 3: hosted-option column added. mindLAMP Core, CARP DTU-hosted service and m-Path External servers added; "Beiwe and RADAR-base only" replaced by four hosted routes; AWARE "not app stores" corrected for iOS.
+- Table 6: academic-access column added. Avicenna trial now vendor-stated and test-only; MetricWire "trial offered" removed and Academic Site Licence added; mindLAMP Core pricing route added; m-Path add-on periods corrected (no stated billing period); Evidation row added.
+- Table 7: Avicenna downgraded from Verified to Corroborated; MetricWire changed from "Not located" to vendor-stated ISO 27001, SOC 2 Type II, Part 11, HIPAA, GDPR; CARP GDPR roles added; mindLAMP privacy-page check added; Evidation row added.
+- Table 8: keepalive column added; CARP portal assessed as a real dashboard; Avicenna gap notifications added.
+- Tables 9 and 10: superlatives removed as listed under Table 9; Table 10 rows corrected for hosting and iOS sensing, and rows added for Evidation and iOS-heavy studies.

@@ -13,7 +13,7 @@
 | Duration | **≥19 weeks (4.5 months)** per participant: 6 weeks monitoring → 4 weeks randomised monitoring-only vs. intervention → ≥9 weeks monitoring-only. |
 | Devices/platforms used | **[AWARE](../../module-02-digital-phenotyping/profiles/aware-framework.md)** (passive smartphone) + **[Oura](../../module-01-wearables/profiles/oura.md) Ring** + **[Samsung](../../module-01-wearables/profiles/samsung.md) Gear Sport smartwatch** + a separate survey app + the mSavorUs intervention app. Wearables provisioned; phone BYOD. |
 | Funding/COI | Academic (UC Irvine). Co-author **Amir Rahmani is credited elsewhere in this cohort's reporting as the developer of both mSavorUs and the AWARE deployment** — see the Nguyen profile. This paper carries no explicit competing-interests statement addressing that relationship. |
-| Last verified | 2026-09-02 |
+| Last verified | 2026-09-02; Jafarlou 2024 added to the enrolment-year conflict 2026-10-10 |
 
 ## Why this profile exists
 
@@ -33,14 +33,16 @@ Three further things this paper adds that its companion does not: an **Android-o
 
 **Two bibliographic discrepancies between the papers, unresolved:**
 
-| Item | Nguyen 2025 | Borelli 2025 |
-|---|---|---|
-| Enrolment window | late Jan – early Feb **2021** | Jan – Feb **2022** |
-| Duration | 22 weeks | **≥**19 weeks (4.5 months) |
-| Analytic N | 29 | 28 |
-| Race/ethnicity | 43.3% Latinx / 43.3% Asian American / 17.2% White | 46% Latine / 36% Asian / 14% White / 4% other |
+| Item | Nguyen 2025 | Borelli 2025 | Jafarlou 2024 (*PLOS ONE*, added 2026-10-10) |
+|---|---|---|---|
+| Enrolment window | late Jan – early Feb **2021** | Jan – Feb **2022** | "recruited during September 2021 until January 2022", yet also "data collection ... spanning from January to March 2021" |
+| Duration | 22 weeks | **≥**19 weeks (4.5 months) | "a two-month monitoring study" |
+| Analytic N | 29 | 28 | 30 |
+| Race/ethnicity | 43.3% Latinx / 43.3% Asian American / 17.2% White | 46% Latine / 36% Asian / 14% White / 4% other | not checked |
 
 The N and demographic differences are consistent with one participant differing between analytic samples. **The enrolment-year discrepancy is a genuine conflict and one of the two papers is wrong**; neither can be resolved from the published texts. It matters for interpretation — a Jan–Feb 2021 start places the whole monitoring period inside California's COVID-19 restrictions, which is how the Nguyen profile reads it, while a 2022 start does not. Recorded here rather than silently resolved, per this project's source-conflict rule.
+
+A third paper on what appears to be the same deployment adds a third reading (**Reported**, read 2026-10-10 from the Europe PMC full text, PMC11189241). Jafarlou S, Azimi I, Lai J, et al., Rahmani AM. "Objective monitoring of loneliness levels using smart devices: A multi-device approach for mental health applications." *PLOS ONE* 2024;19(6):e0298949. DOI 10.1371/journal.pone.0298949. It cites the same UCI IRB (HS#2019–5153, which Nguyen gives as 2019-5153) and the same Oura, Samsung watch, AWARE and mSavorUs set-up, with N=30. Its recruitment window (September 2021 to January 2022) supports a 2022 start, as Borelli says. Its own "January to March 2021" data-collection date contradicts that window inside the same paper. The conflict leans towards 2022 but is still open. Only the authors can settle it.
 
 ## Instrumentation and Deployment Model
 

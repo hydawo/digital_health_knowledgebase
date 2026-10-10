@@ -6,12 +6,12 @@
 |---|---|
 | Organization | Onnela Lab, Harvard T.H. Chan School of Public Health |
 | Category | Open-source smartphone digital phenotyping platform (passive sensing + active EMA) |
-| Current status | Active, commits to `beiwe-backend` and `beiwe-ios` observed as recently as Jan, Feb 2026 |
-| Platforms/devices | Native iOS and Android apps ("Beiwe2") |
+| Current status | Active; pushes to beiwe-backend (2026-10-06), beiwe-ios (2026-10-07), beiwe-android (2026-09-08) and forest (2026-10-06), checked 2026-10-10 via the GitHub API |
+| Platforms/devices | Native iOS and Android apps. iOS: "Beiwe2" on the App Store (seller Onnela Lab LLC, v2.5.11, released 2026-09-30). Android: the `googlePlayStore` build flavour is named Beiwe2, but no Google Play listing could be confirmed on 2026-10-10 (package `org.beiwe.app` returned 404), so Play availability is Unclear. Both clients are maintained |
 | Open source | Yes, BSD-3-Clause across backend, iOS, and Android repos |
-| Hosting/deployment | Self-hosted on AWS (own account), or managed via the Beiwe Service Center (BSC) |
-| Pricing model | Software free; self-hosting incurs AWS costs; BSC is a paid managed service with study-specific quoted pricing |
-| Last verified | 2026-09-03 (third pass: wiki and Forest documentation) |
+| Hosting/deployment | Self-hosted on AWS (own account), or managed via the Beiwe Service Center (BSC), which runs separate US (studies.beiwe.org) and EU (eu.beiwe.org) login portals |
+| Pricing model | Software free (BSD-3); self-hosting incurs AWS costs; BSC is a paid managed service with published rates ($1,937 per month fixed plus $6 per Active Participant Month; examples labelled FY24; rates revisable on 30 days' notice). No separate academic rate is stated (Verified 2026-10-10) |
+| Last verified | 2026-10-10 (BSC rates and portals, repository activity, app-store listing, heartbeat defaults) |
 
 ## Summary
 
@@ -24,7 +24,7 @@
 - **Beiwe2 apps** (iOS, Android), passive sensor collection plus configurable surveys/EMA, available on the App Store / Play Store for use with open-source backend deployments, or sideloaded.
 - **beiwe-backend**, Django application deployed on AWS (S3 for raw data storage, EC2 for app servers, Elastic Beanstalk for scaling, RDS/PostgreSQL for the study database). Provides the researcher-facing study-management web portal.
 - **Forest**, a separate, Onnela-Lab-maintained Python package (BSD-3) that turns Beiwe's raw passive data into processed/summary statistics (mobility metrics, sociability metrics, etc.). Forest can run standalone against exported raw data, or be invoked from within a Beiwe backend deployment to generate on-demand daily/hourly summaries stored back in the study's relational database.
-- **Beiwe Service Center (BSC)**, a paid, Onnela-Lab-run instance of the same open-source stack. Studies run on the lab's own production AWS deployment rather than the researcher's; BSC adds study design consultation, IRB-documentation assistance, a beta-testing phase, participant support, and final analysis using production Forest packages.
+- **Beiwe Service Center (BSC)**, a paid, Onnela-Lab-run instance of the same open-source stack. It runs separate US and EU login portals (studies.beiwe.org and eu.beiwe.org, linked from the Harvard Chan Beiwe resource page; Verified 2026-10-10). The page does not state where EU-portal data are stored or which legal entity is the processor, so EU data residency should be confirmed with the BSC before relying on it. Studies run on the lab's own production AWS deployment rather than the researcher's; BSC adds study design consultation, IRB-documentation assistance, a beta-testing phase, participant support, and final analysis using production Forest packages.
 
 ### Beiwe and Forest, relationship, stated precisely
 
@@ -122,7 +122,7 @@
 
 ## Data Access and Export
 
-- Raw data lands in S3 (self-hosted) or the BSC's AWS storage, and is described as being made available to researchers, including "access to raw data and summary metrics" under the BSC service model. Data is encrypted on-device before upload, in transit (RSA-AES hybrid), and at rest with a study-specific master key; phone numbers and other identifiers are hashed (SHA-256 + PBKDF2) with device-specific salts that are never uploaded. **Verified** from the `beiwe-backend` README's security section. Bulk/API-level export mechanics, exact file formats, and retention defaults were not independently re-verified against current documentation this session.
+- Raw data lands in S3 (self-hosted) or the BSC's AWS storage, and is described as being made available to researchers. (The 2026-08-24 quote "access to raw data and summary metrics" came from a beiwe.org BSC overview page that no longer loads; the current BSC pages read 2026-10-10 do not list data deliverables, but the wiki documents raw-data and summary-statistics download for all deployments, see below.) Data is encrypted on-device before upload, in transit (RSA-AES hybrid), and at rest with a study-specific master key; phone numbers and other identifiers are hashed (SHA-256 + PBKDF2) with device-specific salts that are never uploaded. **Verified** from the `beiwe-backend` README's security section. Bulk/API-level export mechanics, exact file formats, and retention defaults were not independently re-verified against current documentation this session.
 
 ### From the wiki (added 2026-09-03, Verified)
 
@@ -136,14 +136,14 @@
 
 ## APIs, SDKs, and Extensibility
 
-- Fully open source (BSD-3) across backend, iOS, and Android, the strongest extensibility position of any platform in this module by definition: a research team can fork and modify any layer. **Updated 2026-08-25 (second pass):** a direct fetch of `onnela-lab/beiwe-backend`'s repository structure confirms a `data_access_api_reference` directory exists in the codebase, indicating some form of documented data-access API is part of the backend. However, the README content retrieved this session did not detail the endpoint functionality, so whether this constitutes a public, researcher-facing REST API comparable to competitors' documented APIs, or an internal/administrative interface, remains **Unclear** rather than resolved, this is a narrower open question than the prior "no API identified" framing, not a fully closed one.
+- Fully open source (BSD-3) across backend, iOS, and Android: a research team can fork and modify any layer. RADAR-base (Apache 2.0), AWARE (Apache-2.0) and CARP (MIT) share this position; mindLAMP does not, since its server and apps carry no licence (reworded 2026-10-10 from "the strongest extensibility position of any platform in this module"). **Updated 2026-08-25 (second pass):** a direct fetch of `onnela-lab/beiwe-backend`'s repository structure confirms a `data_access_api_reference` directory exists in the codebase, indicating some form of documented data-access API is part of the backend. However, the README content retrieved this session did not detail the endpoint functionality, so whether this constitutes a public, researcher-facing REST API comparable to competitors' documented APIs, or an internal/administrative interface, remains **Unclear** rather than resolved, this is a narrower open question than the prior "no API identified" framing, not a fully closed one.
 
 - ~~Whether `data_access_api_reference` is a public researcher-facing API was Unclear.~~ Resolved 2026-09-03 from the wiki. It is: `download_data.py` (raw data with an incremental registry) and `other_api_reference_script.py` (every API the platform provides, kept updated by the developers) are documented reference scripts, and the summary-statistics endpoints have an OpenAPI specification. Credentials are issued per researcher from the portal. Re-checked 2026-10-09 via the GitHub API: the directory still holds `download_data.py` and `other_api_reference_script.py`, last changed 2026-03-10.
 
 ## Deployment and Infrastructure
 
 - **Self-hosted**: AWS only (S3, EC2, Elastic Beanstalk, RDS/PostgreSQL). Requires "moderate AWS and Python expertise," per the backend README. No documented support for non-AWS clouds.
-- **Managed (BSC)**: runs on the Onnela Lab's own AWS deployment; researchers do not manage infrastructure. Pricing is quote-based, computed from three study-specific variables (see Pricing).
+- **Managed (BSC)**: runs on the Onnela Lab's own AWS deployment; researchers do not manage infrastructure. Pricing follows a published formula: $1,937 per month for the study duration plus $6 per Active Participant Month (see Pricing). The BSC states it "is not a scientific collaboration with the Onnela Lab"; investigators apply through an online interest form. Separate US and EU login portals exist (Verified 2026-10-10).
 - Backend uses rolling releases; mobile apps use semantic versioning.
 
 - The open-source version is "provided as-is" with no ongoing technical support from the Onnela Lab, per the wiki's FAQ; the two supported routes are self-deployment from the wiki instructions (single server or server cluster) or paid help from the platform's contract developers, Zagaran. Verified 2026-09-03.
@@ -173,7 +173,8 @@
 
 - **Consequence for every Beiwe completeness figure in this knowledge base:** the two main sources, Beukenhorst et al. 2022 (data 2016 to 2021) and Kiang et al. 2021 (data 2015 to 2018), are both **pre-heartbeat**, and should be read as **lower bounds on data yield**, not as current platform performance. The magnitude of the improvement is not publicly published; logged as Tier 14 Q106 in [`../../shared/unresolved-questions.md`](../../shared/unresolved-questions.md).
 
-- Whether comparable server-triggered keepalive mechanisms exist and are enabled by default on RADAR-base, mindLAMP, AWARE, Avicenna, MetricWire, m-Path or CARP was **not established**, a genuine and currently undocumented differentiator, logged as Tier 14 Q107. **Answered 2026-10-09** in each profile's Participant Experience section. m-Path has the closest equivalent: a 5-minute server check-in with researcher-set reopen reminders. AWARE has an iOS-only silent-push version that is off by default. RADAR-base emails researchers when a source disconnects but does not notify participants. No such mechanism was found for mindLAMP, Avicenna, MetricWire or CARP (CAMS's `heartbeat` is a client-side coverage record).
+- **Rollout, Verified 2026-10-10:** backend issue #391 (opened 2024-05-31) says the developers decided "to enable it by default across all studies once your backend servers are updated", and a 2024-06-07 comment says "The feature is on by default and already rolled out." Self-hosted deployments therefore get the heartbeat only after updating their backend. The defaults (5-minute ping, 1-hour KeepAlive, default message) are documented on the wiki page "Survey Notification Resends, The App Heartbeat, and KeepAlive Notifications" (source 10).
+- Whether comparable server-triggered keepalive mechanisms exist and are enabled by default on RADAR-base, mindLAMP, AWARE, Avicenna, MetricWire, m-Path or CARP was **not established**, a genuine and currently undocumented differentiator, logged as Tier 14 Q107. **Answered 2026-10-09** in each profile's Participant Experience section. m-Path has the closest equivalent: a 5-minute server check-in with researcher-set reopen reminders. AWARE has an iOS-only silent-push version that is off by default. RADAR-base emails researchers when a source disconnects but does not notify participants. No phone-app keepalive was found for mindLAMP, Avicenna, MetricWire or CARP. Avicenna does send server-side "Sensor Data Gap Detected" notifications, but only for the Garmin wrist-status stream (corrected 2026-10-10); CAMS's `heartbeat` is a client-side coverage record.
 
 ### How heartbeat and survey resends work (added 2026-09-03, Verified from the wiki)
 
@@ -181,6 +182,7 @@
 - The KeepAlive timer is configured per study in Device Settings, with a duration and a message. If the app has not checked in within the duration, the server sends the message by push notification. The default duration is 1 hour and the default message is "Beiwe may not be running correctly, please open the Beiwe app."
 - The heartbeat history is available through the data access API and is described by the wiki as a rough proxy for when the app was running, with the caveat that it cannot cover periods without coverage.
 - Survey notifications on iOS can be cleared by the participant before the app receives them. The backend tracks sent, received and check-in times for every notification, resends an unacknowledged notification after a configurable interval, and lets a researcher resend manually per participant.
+- **How survey notifications are delivered (Reported 2026-10-10, from the code and the developers' issue tracker):** the backend sends iOS survey notifications as visible alert notifications (`Notification(title="Beiwe", body=...)`) and Android ones as data-only high-priority FCM messages (`services/survey_push_notifications.py`), so Apple's guidance on throttling background pushes does not apply directly to Beiwe's iOS survey alerts. The iOS app had no app-side survey scheduling and was "entirely dependent on the server and push notifications" (beiwe-ios #30, 2022 to 2025; #59, 2024, which also reported no recovery mechanism for missed notifications; resend logic was built and both issues closed in January 2025). Earlier Android issues record notifications not appearing until the app was opened on Android 6 (beiwe-android #8, 2017) and the OS killing the background service with more than 24 hours of data lost (#27, 2018). Whether these mechanisms explain any particular study's adherence figures is not established.
 - The wiki's own warning: the fastest way to make participants uninstall the app is to bombard them with notifications.
 - Notification delivery depends on a token the device must periodically send to the server; its status is shown on each Participant Page, and a missing token nearly always means the app is not running or has been uninstalled.
 
@@ -211,7 +213,7 @@
 
 - **Software**: free, BSD-3-Clause, no licence fee under either deployment path.
 - **Self-hosting**: AWS infrastructure costs only (S3/EC2/RDS), which scale with study size and are not separately published, this is a "your AWS bill" cost, not a Beiwe-specific fee.
-- **Beiwe Service Center**: **Verified 2026-08-25 (second pass, resolving unresolved-question #85)**, a direct fetch of the BSC's own overview page (`hsph.harvard.edu/research/onnela-lab/beiwe-service-center/`) now returns actual rate figures, not only the methodology: **Fixed Monthly Cost: $1,937/month**; **Variable Cost: $6 per Active Participant Month**. The page's own worked examples show total contract costs ranging from **$24,144 to $27,564** depending on study duration and participant-months. This resolves what was, as of 2026-08-24, the module's clearest "methodology published, rates not" gap, Beiwe now has among the more transparent pricing of any platform in this module. (Rates may change over time; re-verify before using in a real budget.)
+- **Beiwe Service Center**: **Verified 2026-08-25 (second pass, resolving unresolved-question #85)**, a direct fetch of the BSC's own overview page (`hsph.harvard.edu/research/onnela-lab/beiwe-service-center/`) now returns actual rate figures, not only the methodology: **Fixed Monthly Cost: $1,937/month**; **Variable Cost: $6 per Active Participant Month**. The page's own worked examples show total contract costs ranging from **$24,144 to $27,564** depending on study duration and participant-months. **Re-read 2026-10-10:** the examples are headed "FY24 Example Pricing". Two university examples ($24,144 for 50 participants x 3 months over 12 months; $25,044 for 25 x 12 over 12) reproduce exactly from the formula; the for-profit example ($27,564 for 160 x 3 over 12) does not (the formula gives $26,124), and the page does not explain the difference, so a for-profit rate may differ. A gap in data collection adds 0.5 month to a participant's data-collection period. Rates "are subject to periodic revisions" with at least 30 days' notice. The fee "is used to cover operational costs, fix software bugs, and maintain the platform." No separate academic rate is stated. Confirm the current rate card before budgeting. This resolves what was, as of 2026-08-24, the module's clearest "methodology published, rates not" gap, Beiwe now has among the more transparent pricing of any platform in this module. (Rates may change over time; re-verify before using in a real budget.)
 
 ## Research Evidence and Validation
 
@@ -244,23 +246,25 @@
 
 - Teams needing a no-code, point-and-click study builder with a polished commercial dashboard and immediate third-party integrations (see Avicenna Research, MetricWire, m-Path for that profile shape).
 - Studies requiring real-time integration with external systems. The documented API serves downloads and daily summary statistics with a 6-minute batching cycle, not streaming.
-- Very small pilots where BSC's quote-based pricing model is disproportionate to study size (self-hosting may be more appropriate, if AWS/Django capacity exists).
+- Very small pilots, where the BSC's fixed $1,937 per month fee dominates the budget regardless of participant count (self-hosting may be more appropriate, if AWS/Django capacity exists).
 
 ## Open Questions
 
-- *(Directed to: Onnela Lab / Beiwe Service Center, https://beiwe.hsph.harvard.edu, hsph.harvard.edu/research/onnela-lab)*
+- *(Directed to: Onnela Lab / Beiwe Service Center, https://hsph.harvard.edu/research-resource/beiwe/ , hsph.harvard.edu/research/onnela-lab)*
 
 - ~~Does the `data_access_api_reference` directory in `beiwe-backend` document a public, researcher-self-service REST API, or an internal/administrative interface only?~~ Resolved 2026-09-03, see Data Access and Export.
 - ~~What are the exact iOS-vs-Android differences in passive-stream sampling and background execution?~~ Resolved 2026-09-03 from the wiki, see the stream table. One conflict remains: whether Power State (screen and charging events) exists on iOS. The Supported Data Streams page says no, the older Passive Data page shows iOS events.
 - ~~What is the full per-metric catalog within Forest's `jasmine` (mobility), `willow` (communication/sociability), and `sycamore` (survey) subpackages?~~ Resolved 2026-09-03 from forest.beiwe.org, see Derived Metrics. How the metrics are versioned across releases is still open. Re-checked 2026-10-09: the repository still ships the same six subpackages (bonsai, jasmine, oak, poplar, sycamore, willow) and forest.beiwe.org is live.
-- What GDPR/DPA, SOC 2, or comparable compliance documentation exists for BSC-hosted studies specifically (as distinct from self-hosted deployments where the researcher is the data controller)?
+- What GDPR/DPA, SOC 2, or comparable compliance documentation exists for BSC-hosted studies specifically (as distinct from self-hosted deployments where the researcher is the data controller)? Where are EU-portal (eu.beiwe.org) data stored, and which entity is the processor?
+- Is Beiwe2 for Android currently listed on Google Play, and under which package name? (Not found on 2026-10-10.)
 - ~~What are actual BSC rate figures?~~ **Resolved 2026-08-25**, see Pricing above.
 - What published, systematic count of Beiwe-based peer-reviewed studies exists (this session did not attempt an exhaustive literature count)?
 
 ## Key Links
 
 - Official site / Onnela Lab platform page: https://hsph.harvard.edu/research/onnela-lab/digital-phenotyping-and-beiwe-research-platform/
-- Beiwe Service Center: https://beiwe.hsph.harvard.edu/
+- Beiwe Service Center: https://hsph.harvard.edu/research/onnela-lab/beiwe-service-center/ (rates) and https://hsph.harvard.edu/research-resource/beiwe/ (service overview, US and EU portals). The older https://beiwe.hsph.harvard.edu/ redirects to the latter.
+- Beiwe2 on the App Store: https://apps.apple.com/us/app/beiwe2/id1312962738
 - Backend repository: https://github.com/onnela-lab/beiwe-backend
 - iOS app repository: https://github.com/onnela-lab/beiwe-ios
 - Android app repository: https://github.com/onnela-lab/beiwe-android
@@ -274,8 +278,8 @@
 1. Onnela Lab, "Digital Phenotyping and Beiwe Research Platform." https://hsph.harvard.edu/research/onnela-lab/digital-phenotyping-and-beiwe-research-platform/ (accessed 2026-08-24). **Primary.** Data types, iOS/Android support, architecture summary, BSD-3 licence, self-host vs BSC paths.
 2. `onnela-lab/beiwe-backend` README. https://github.com/onnela-lab/beiwe-backend (accessed 2026-08-24). **Primary.** Django/AWS architecture, encryption design, identifier hashing, BSD-3 licence, related repos.
 3. `onnela-lab/forest` repository. https://github.com/onnela-lab/forest (accessed 2026-08-24). **Primary.** Forest's purpose and relationship to Beiwe.
-4. Beiwe Service Center overview. https://www.beiwe.org/beiwe-service-center-overview/ and https://hsph.harvard.edu/research/onnela-lab/beiwe-service-center/ (accessed 2026-08-24). **Primary.** BSC service scope, pricing methodology (fixed + variable fee structure).
-5. `onnela-lab` GitHub organization (activity check). https://github.com/onnela-lab (accessed 2026-08-24). Recent commit activity across `beiwe-backend` (Jan 2026) and `beiwe-ios` (Feb 2026) used to support "Active" status.
+4. Beiwe Service Center overview. https://hsph.harvard.edu/research/onnela-lab/beiwe-service-center/ (accessed 2026-08-24). The beiwe.org overview page cited on 2026-08-24 (https://www.beiwe.org/beiwe-service-center-overview/) is dead as of 2026-10-10 (HTTPS times out; HTTP redirects to a 404). **Primary.** BSC service scope, pricing methodology (fixed + variable fee structure).
+5. `onnela-lab` GitHub organization (activity check). https://github.com/onnela-lab (accessed 2026-08-24; re-checked 2026-10-10 via the GitHub API: beiwe-backend pushed 2026-10-06, beiwe-ios 2026-10-07, beiwe-android 2026-09-08, forest 2026-10-06, all BSD-3-Clause).
 6. `onnela-lab/beiwe-backend` repository structure and README (second-pass re-fetch). https://github.com/onnela-lab/beiwe-backend (accessed 2026-08-25). **Primary/Verified.** Confirms `data_access_api_reference` directory exists; confirms README's precise HIPAA-applicability language ("may interact with laws covering PII or PHI like HIPAA"), distinct from a compliance certification claim.
 7. `onnela-lab/forest` README (second-pass re-fetch). https://github.com/onnela-lab/forest (accessed 2026-08-25). **Primary/Verified.** Confirms subpackage structure: `jasmine` (GPS mobility metrics), `willow` (call/text communication metrics), `sycamore` (survey-completion metrics).
 8. Beiwe Service Center overview (second-pass direct fetch). https://hsph.harvard.edu/research/onnela-lab/beiwe-service-center/ (accessed 2026-08-25). **Primary/Verified.** Actual rate figures: $1,937/month fixed + $6/Active Participant Month variable; worked examples totaling $24,144, $27,564.
@@ -285,3 +289,7 @@
 12. Beiwe wiki, "Data Download API," "Tableau API," "Data batching and indexing details" and "Forest Setup," read 2026-09-03. **Primary/Verified.** Download API and registry, credential model, summary-statistics endpoints and field list, batching cadence and guarantees, Forest enablement.
 13. Beiwe wiki, "Beiwe Data Privacy and Security," "IRB FAQs," "FAQs for Prospective Beiwe Users," "Monitoring Data Using the Dashboard" and "Beiwe Research Administration Manual" (old-wiki folder), read 2026-09-03. **Primary/Verified.** Identifier handling, encryption chain, participant authentication, portal password rules, survey scheduling and branching, dashboard deprecation, open-source support terms.
 14. `onnela-lab/beiwe-backend` `data_access_api_reference` directory and `onnela-lab/forest` `src/forest` listing via the GitHub API; forest.beiwe.org status check (accessed 2026-10-09). **Primary/Direct.** Re-confirms the 2026-09-03 answers on the data access API and the Forest subpackages.
+15. Beiwe Service Center rate page, re-read. https://hsph.harvard.edu/research/onnela-lab/beiwe-service-center/ (accessed 2026-10-10). **Primary/Verified.** Rates, "FY24 Example Pricing", 30-day notice, fee purpose, not-a-collaboration statement, interest form.
+16. Harvard Chan, "Beiwe" research-resource page. https://hsph.harvard.edu/research-resource/beiwe/ (accessed 2026-10-10). **Primary/Verified.** US (studies.beiwe.org) and EU (eu.beiwe.org) BSC login portals; AWS-backed infrastructure; no storage location or pricing stated.
+17. App Store lookup, Beiwe2 (id 1312962738), and Google Play probe for `org.beiwe.app` (404), 2026-10-10; `beiwe-android` `app/build.gradle` (flavours `onnelaLabServer`, `googlePlayStore`, `commStatsCustomUrl`). **Primary.**
+18. `onnela-lab/beiwe-backend` issue #391 and `services/survey_push_notifications.py`; `onnela-lab/beiwe-ios` issues #13, #30, #59; `onnela-lab/beiwe-android` issues #8, #21, #27 (accessed 2026-10-10 via the GitHub API). **Primary (developer issue tracker), Reported.**

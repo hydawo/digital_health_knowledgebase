@@ -1,6 +1,6 @@
 # Module 3 — Applied Wearables and Digital Phenotyping Studies
 
-**Status:** **65 study profiles / 64 distinct deployments** (2026-09-03). Two profiles report one cohort. The 2026-09-03 coverage pass screened the PDFs already stored in Modules 1 and 2 and added ten. Baseline of 19 (2026-08-31) plus a 21-study
+**Status:** **65 study profiles / 63 distinct deployments** (2026-09-03; deployment count corrected 2026-10-10). Two pairs of profiles report one cohort each (RADAR-MDD and mSavorUs). The 2026-09-03 coverage pass screened the PDFs already stored in Modules 1 and 2 and added ten. Baseline of 19 (2026-08-31) plus a 21-study
 extension built in two parallel passes — a platform-coverage pass and an Onnela-tranche pass.
 
 ## What this module is
@@ -33,7 +33,7 @@ documentation and platform capability alone can't show?
 | [`_onnela-module3-candidates.md`](_onnela-module3-candidates.md) | 27 triaged candidates from the Onnela Lab publication sweep, ranked, not yet profiled. |
 | [`sources.md`](sources.md) | Consolidated source list with retrieval status. |
 | [`_scan-queue.md`](_scan-queue.md) | **Candidates awaiting a profile.** Fed by the weekly scan routine; also carries the unbuilt backlog from the manual discovery passes. |
-| [`literature-index.json`](literature-index.json) | Dedup ledger for the weekly scan — 55 profiled studies plus recorded rejections. |
+| [`literature-index.json`](literature-index.json) | Dedup ledger for the weekly scan. 70 paper records across all 65 profiles (some profiles fold several papers), plus 70 recorded rejections (counted 2026-10-10). |
 | [`literature/`](literature/) | Open-access PDFs. Five baseline studies are XML-extract only — see `sources.md`. |
 
 ## The ten findings that matter most
@@ -41,8 +41,8 @@ documentation and platform capability alone can't show?
 Drawn across the whole baseline. Each links to the profile that establishes it.
 
 1. **Retention and completeness are different questions, and studies mostly report the flattering
-   one.** RADAR-MDD achieved ~80% outcome retention and **17.7% cross-stream completeness** in the
-   same cohort. → [Matcham 2022](profiles/radar-mdd-recruitment-retention.md)
+   one.** RADAR-MDD achieved ~80% outcome retention, yet only **17.7% of participants had more than half of
+   the expected data across all streams** in the same cohort. → [Matcham 2022](profiles/radar-mdd-recruitment-retention.md)
 2. **Passive data outlasts active data — but not automatically.** Reproduced in five studies across
    three platforms; adolescent Beiwe passive held **flat at ~94% over 18 months while surveys fell
    65%→30%**. One study found the reverse for smartphone passive data.
@@ -66,8 +66,9 @@ Drawn across the whole baseline. Each links to the profile that establishes it.
 7. **Enrolment scale does not survive a multi-step protocol.** 419,297 → 450 usable; 455,699 → 1,057.
    A $50 incentive did not fix it. → [Garcia 2022](profiles/apple-heart-data-management-lessons.md),
    [Lubitz 2022](profiles/fitbit-heart-study-afib.md)
-8. **Consent design can be the binding constraint.** A no-proxy-consent requirement excluded 95.6% of
-   screened palliative patients and terminated the study.
+8. **Consent design can be the binding constraint.** 95.6% of screened palliative patients failed
+   eligibility, chiefly because the ethics committee allowed no proxy consent, and the study was
+   terminated early.
    → [Helmer 2025](profiles/movesense-palliative-support-trial.md)
 9. **Missingness can be signal, not noise.** Adding survey non-completion as a predictor raised AUC
    from 0.81 to 0.93 — it outranked most content features.
@@ -78,8 +79,8 @@ Drawn across the whole baseline. Each links to the profile that establishes it.
 
 ## What's covered
 
-**Module 2 platforms — all nine covered:** Beiwe (15 as primary instrument, plus 2 as the survey vehicle beside a wearable or another platform), **AWARE (8 profiles / 7 deployments)**, mindLAMP/LAMP (5), RADAR-base (4),
-**Avicenna/Ethica (3)**, **MetricWire (4)**, **m-Path (3)**, **CARP (1)**, **LifeData (1, new)**. AWARE is now 9 profiles / 8 deployments. Plus movisensXS, Ilumivu mEMA,
+**Module 2 platforms — all nine covered:** Beiwe (15 as primary instrument, plus 2 as the survey vehicle beside a wearable or another platform), **AWARE (9 profiles / 8 deployments)**, mindLAMP/LAMP (4), RADAR-base (4),
+**Avicenna/Ethica (3)**, **MetricWire (4)**, **m-Path (3)**, **CARP (1)**, **LifeData (1, new)**. Plus movisensXS, Ilumivu mEMA,
 Purple Robot and now **LifeData** in mixed designs.
 
 **Beyond Module 1/2 technologies:** the recency set added this module's first **Apple SensorKit** and
@@ -87,9 +88,10 @@ first **VPN network-traffic** deployments. Both carry explicit scope notes — n
 profiled Module 1/2 technology, and both are legitimate to reject on a stricter reading of the scope
 rule.
 
-**Module 1 devices:** Fitbit (10), **Apple Watch (5)**, **Samsung (3)**, ActiGraph (2), Empatica (2), **Oura (4)**,
-**Axivity/GENEActiv (2)**, Withings (1), Modus StepWatch (1), **Garmin (1, new)**, **WHOOP (1, new)**, plus a
-chest-wall ECG sensor. Garmin and WHOOP were previously absent.
+**Module 1 devices** (counted from the profiles' "Devices/platforms used" rows, 2026-10-10): Fitbit (13),
+**Apple Watch (5, plus one SensorKit-only iPhone study)**, **Oura (5)**, **Samsung (4)**, ActiGraph (2), Empatica (2),
+**Axivity/GENEActiv (2)**, **Garmin (2, one of them the Cho 2022 BYOD review)**, Withings (1), **WHOOP (1)**,
+Modus StepWatch (1), plus a chest-wall ECG sensor. Garmin and WHOOP were previously absent.
 
 **Priority areas covered:** longitudinal deployments (8 weeks to 4 years); multi-device and
 multi-modal studies (RADAR-AD's eight device types; Jonker's Fitbit + Withings + Connecare);
@@ -109,7 +111,7 @@ Recorded honestly, because the gaps shape what conclusions this module can suppo
   only substantial exception; no low-income-country deployments.
 - **Platform balance — partly addressed, but Beiwe still dominates.** All five previously uncovered
   platforms now have entries. However **Beiwe is 15 of 65 profiles (23%) as primary instrument**, most sharing an
-  author, so they are not eleven independent observations — and **every Beiwe figure in the module
+  author, so they are not fifteen independent observations — and **every Beiwe figure in the module
   predates the platform's `heartbeat` feature** (newest collection window closes 2023). The module's
   Beiwe evidence is simultaneously its largest and its most systematically dated. Each affected
   profile carries a pre-heartbeat lower-bound label.
@@ -202,7 +204,7 @@ Findings from the 21 new profiles that change what the module says:
 ## Additions from the 2026-09-02 AWARE pass
 
 23. **There are three kinds of OS effect, not one** — this refines #17. **Structural gates** (iOS does
-    not expose SMS at all: features computable for **15 of 183 participants, 8.2%**), **yield
+    not expose SMS at all: features computable only for the **15 participants with Android devices**, about 8% if all are in the 183-person modelling sample), **yield
     differences** (70% vs 21% EMA miss), and **breadth differences** (Android delivered **8.4 vs iOS
     4.7 mean sensor types** — the opposite direction to the yield finding, on the same framework).
     → [Balliu 2024](profiles/aware-stand-mood-prediction-adherence.md),
@@ -210,7 +212,7 @@ Findings from the 21 new profiles that change what the module says:
 24. **A single platform's completeness figure is close to meaningless for a mixed cohort.** Within one
     study, one platform and one configuration, passive missingness ranged **1.2% (controls) to 20.4%
     (borderline personality disorder)** — a **17× spread by diagnosis**.
-    → [Aledavood 2024](profiles/aware-momo-mood-mood-disorders.md)
+    → [Aledavood 2025](profiles/aware-momo-mood-mood-disorders.md)
 25. **Care setting beats clinical severity for retention.** **1.7% vs 33.5–37.3% two-week attrition**
     between in-person clinical care and online support — with the *sicker* arm retaining better,
     because missed assessments were reconciled during routine visits.

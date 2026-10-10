@@ -10,8 +10,8 @@
 | Population | US adults. Mean age 41.8 (SD 8.1); **93.9% female, 93.7% White**; 60.0% married; 75.9% non-smokers; mean BMI 27.4 (SD 6.7). Nurses and nurses' children — high SES, and the authors say so plainly. |
 | Duration | Enrolment Jul 2021 – Aug 2022; collection ended 15 Jun 2023. Intended 1 year per participant; **mean follow-up 214 days (SD 148)**. |
 | Devices/platforms used | **[Beiwe](../../module-02-digital-phenotyping/profiles/beiwe.md)** on participants' own smartphones (BYOD, Android + iOS), processed with the **Forest** library (`jasmine` for GPS) on AWS |
-| Funding/COI | Academic (Harvard Chan, Harvard Medical School/Harvard Pilgrim, Brigham and Women's, UC Davis). Onnela, Beiwe's originator, is a co-author. **Participants were not compensated.** |
-| Last verified | 2026-08-31 |
+| Funding/COI | NIH: NHLBI U01 HL145386 and R01 HL150119; NIEHS P30 ES000002 and F31 ES035252 (Acknowledgments). "Conflicts of Interest: None declared." Author affiliations include Harvard Chan, Harvard Medical School/Harvard Pilgrim, Brigham and Women's and UC Davis. Onnela, Beiwe's originator, is a co-author. **Participants were not compensated.** |
+| Last verified | 2026-08-31; funding row corrected 2026-10-10 against the Europe PMC full text (PMC11512133) |
 
 ## Summary
 

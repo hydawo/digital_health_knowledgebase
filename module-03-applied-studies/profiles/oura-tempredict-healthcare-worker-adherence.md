@@ -10,8 +10,8 @@
 | Population | Florida Atlantic University affiliated clinicians and trainees at multiple South Florida clinical sites during the early pandemic. 35 healthcare professionals, 39 residents, 17 medical students. 59% female, mean age 36 (SD 13). |
 | Duration | Minimum eight weeks per participant, in two enrolment phases. Phase I had 39 participants (hospital-based staff and residents only). Phase II had 71, of whom 19 continued from Phase I, and added medical students. |
 | Devices/platforms used | [Oura Ring Gen 2](../../module-01-wearables/profiles/oura.md), provisioned and sized in person. Data flowed through the standard consumer Oura app to Oura's cloud. Study staff read it through an Oura Teams account. The daily symptom survey was a Qualtrics link opened from inside the Oura app. Data were then transferred to REDCap at FAU. No phenotyping platform. |
-| Funding/COI | US Department of Defense (MTEC and USAMRDC), AFOSR via MIT Lincoln Laboratory, the #StartSmall foundation, Florida Blue Foundation, and Oura Health Oy. Oura provided a portion of the rings. Two authors (Mason, Smarr) hold Oura patents and have received Oura consulting fees, and Smarr holds Oura stock. Both state they were not being paid by Oura at the time of data collection. Participant compensation is not reported. |
-| Last verified | 2026-09-03 |
+| Funding/COI | US Department of Defense (MTEC and USAMRDC), AFOSR via MIT Lincoln Laboratory, the #StartSmall foundation, Florida Blue Foundation, and Oura Health Oy. Oura provided a portion of the rings. Two authors (Mason, Smarr) are listed as co-inventors on patent applications filed by Oura Health Oy on behalf of UCSD, and on one filed by UCSF. Both have received Oura consulting fees. Smarr also declares Oura stock or stock options. Both state they were not being paid by Oura at the time of data collection. Participant compensation is not reported. |
+| Last verified | 2026-09-03; patent wording and the survey-loss sentence corrected 2026-10-10 against the Europe PMC full text (PMC10578453) |
 
 ## Summary
 
@@ -95,7 +95,7 @@ The active stream is where occupational differences show up. If a study needs sy
 
 State the sleep-detection threshold. A ring that discards nights under four hours of sleep will under-report adherence in exactly the population that sleeps least, and this paper cannot separate non-wear from short sleep.
 
-The two-vendor survey chain lost data for 8 of 91 participants before analysis. That is a larger loss than the ring stream suffered, and it came from the research data pipeline rather than the device.
+The survey stream lost data for 8 of 91 participants before analysis. That is a larger loss than the ring stream suffered. The paper does not say whether the loss occurred in the Qualtrics, UCSF-to-FAU transfer or REDCap steps.
 
 ## Evidence Confidence
 

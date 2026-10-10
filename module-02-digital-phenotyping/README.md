@@ -1,6 +1,11 @@
 # Module 2 — Mobile Digital Phenotyping Platforms
 
-**Status: two research passes complete for all eight platforms, 2026-08-24 through 2026-08-25.**
+**Status, 2026-10-10:** ten current platforms are profiled. On 2026-10-10 every profile was corrected
+against an independent review (hosting and academic access, app-store availability, compliance
+evidence tiers, the AWARE sensor counts) and `comparison-matrix.md` was rebuilt from the corrected
+profiles. The history below describes the original 2026-08-24/25 passes.
+
+**Original status: two research passes complete for the first eight platforms, 2026-08-24 through 2026-08-25.**
 The initial research phase (2026-08-24, single session) is now followed by direct-source-fetch
 second passes covering every platform in the module: AWARE Framework, mindLAMP, and MetricWire
 (2026-08-24, same-day second session) and Beiwe, RADAR-base, Avicenna Research (Ethica), m-Path, and
@@ -9,10 +14,11 @@ narrower re-verification sweeps targeting each profile's specific "not independe
 "Unclear"/"Reported" flags rather than full re-research from scratch. Major second-pass resolutions:
 Beiwe Service Center's actual pricing (previously methodology-only), RADAR-base's confirmed
 managed-hosting offering and itemized Android sensor catalog, Avicenna Research's ISO 27001:2022
-certification, m-Path's fully public tiered pricing, and CARP Mobile Sensing's expanded
+statement (rated Verified at the time; corrected to Corroborated, vendor-stated, on 2026-10-10),
+m-Path's fully public tiered pricing, and CARP Mobile Sensing's expanded
 wearable/HealthKit-integration catalog and `carp-portal` dashboard repository. See
 `../shared/research-log.md`'s 2026-08-25 entry for the full account, and
-`../shared/unresolved-questions.md` Tier 13 for what the second passes could not close.
+`../shared/unresolved-questions.md` (questions raised in T13) for what the second passes could not close.
 
 ## Purpose
 
@@ -23,13 +29,13 @@ practical tradeoffs compared with alternatives?**
 
 ## Platforms covered
 
-Eight platforms received full profiles:
+Ten platforms received full profiles:
 
 | Platform | Category | Profile |
 |---|---|---|
-| **Beiwe** | Academic open source + optional managed service | `profiles/beiwe.md` |
-| **RADAR-base** | Academic/consortium open source, Kafka-based | `profiles/radar-base.md` |
-| **mindLAMP** | Academic open source, mental-health/clinical dual-use | `profiles/mindlamp.md` |
+| **Beiwe** | Academic open source + paid managed service (Beiwe Service Center, published rates) | `profiles/beiwe.md` |
+| **RADAR-base** | Academic/consortium open source, Kafka-based; managed hosting from The Hyve | `profiles/radar-base.md` |
+| **mindLAMP** | Academic, source-available (server and apps unlicensed), mental-health/clinical dual-use; hosted via the BIDMC mindLAMP Core | `profiles/mindlamp.md` |
 | **AWARE Framework** | Academic open source, plugin-extensible, Android-first | `profiles/aware-framework.md` |
 | **Avicenna Research (formerly Ethica)** | Commercial SaaS | `profiles/avicenna-research-ethica.md` |
 | **MetricWire** | Commercial SaaS | `profiles/metricwire.md` |
@@ -45,14 +51,14 @@ Eight platforms received full profiles:
 > restriction explicitly. Treat LifeData as an **EMA/ePRO platform benchmarked against phenotyping
 > platforms**, not as one of them.
 | **m-Path** | Commercial/academic hybrid, EMA/EMI-first | `profiles/m-path.md` |
-| **CARP Mobile Sensing** | Academic open-source framework/library (not a hosted product) | `profiles/carp-mobile-sensing.md` |
+| **CARP Mobile Sensing** | Academic open-source framework/library, with a DTU-hosted service and web portal | `profiles/carp-mobile-sensing.md` |
 | **Evidation** | Commercial participant network and real-world-data platform. **Wearable plus survey intake through connected consumer accounts, not phone sensing.** Edge of scope, included for its recruitment scale and its published engagement evidence | `profiles/evidation.md` |
 
 One additional file covers platforms that were identified but deliberately not given full profiles:
 
 | File | Covers |
 |---|---|
-| `profiles/legacy-and-adjacent-platforms.md` | **Purple Robot** (legacy, Android-only, maintenance status Unclear), **StudentLife** (historical study + dataset, not a live platform), **Koa Health** (active research program, no confirmed externally-deployable platform), and a note on candidates searched for but not found (PhoneStudy) |
+| `profiles/legacy-and-adjacent-platforms.md` | **Purple Robot** (legacy, Android-only, unmaintained since 2016), **StudentLife** (historical study + dataset, not a live platform), **Koa Health** (active research program, no confirmed externally-deployable platform), and a note on candidates searched for but not found (PhoneStudy) |
 
 See `_inventory-and-scope-decisions.md` for the full reasoning behind what was included, deferred, or
 excluded, mirroring the pattern used in Module 1.
@@ -62,8 +68,8 @@ excluded, mirroring the pattern used in Module 1.
 `literature-library.md` indexes the academic papers (as opposed to vendor docs/repos/news) cited
 across this module's profiles, plus a handful of additional decision-relevant papers found via a
 fresh per-platform search. Where a cited paper is legitimately open-access, the actual PDF is stored
-under `literature/<platform-slug>/` rather than just linked — 13 papers across 8 platforms as of
-2026-08-24 (MetricWire has none; see the literature library for why). This mirrors Module 1's
+under `literature/<platform-slug>/` rather than just linked: 54 of 91 catalogued papers as of
+2026-10-10 (MetricWire has none; see the literature library for why). This mirrors Module 1's
 `research-library-wearables.md` convention, without that file's funding/COI tiering (not applicable —
 these are software-platform papers, not vendor-funded device-validation studies).
 
@@ -79,42 +85,42 @@ about Beiwe as any other profile is about its own subject.
 
 ## What this module found, in brief
 
-1. **The module splits into three deployment postures**, not a simple open-source/commercial binary:
-   self-hosted academic open source requiring real infrastructure capacity (Beiwe, RADAR-base,
-   mindLAMP, AWARE); fully managed commercial SaaS requiring none (Avicenna Research, MetricWire,
-   m-Path); and a build-your-own-app framework requiring mobile-development rather than backend
-   capacity (CARP Mobile Sensing). See comparison-matrix.md Table 3.
-2. **Only Beiwe offers both a free self-hosted path and a documented paid managed-hosting
-   alternative** run by the same organization that builds the software (the Beiwe Service Center).
-   No comparable managed-hosting option was confirmed for RADAR-base, mindLAMP, or AWARE.
-3. **iOS/Android parity should not be assumed anywhere in this module**, per CLAUDE.md's explicit
-   instruction — and AWARE Framework is the one platform that says so about itself: its own
-   materials describe the iOS port as different/lesser in coverage than the Android client. Every
-   other platform's parity question was left as "not independently verified" rather than assumed.
-4. **Updated 2026-08-25 — commercial pricing is no longer almost-universally non-public.** After the
-   second pass, only **Avicenna Research and MetricWire** still require vendor contact for real
-   pricing. **Beiwe** now publishes actual Beiwe Service Center rates ($1,937/month + $6/Active
-   Participant Month), and **m-Path** now publishes a fully itemized tier-plus-add-on pricing
-   structure — the most granular in the module. RADAR-base has a confirmed managed-hosting option
-   (The Hyve) but its rates remain non-public.
-5. **Updated 2026-08-25 — compliance documentation is no longer undocumented for every platform.**
-   **Avicenna Research** has an independently audited, dated ISO 27001:2022 certification (the
-   strongest compliance evidence in the module), and **m-Path** has a vendor self-declared
-   "compliant with GDPR and HIPAA" statement. This is real progress but not closure: mindLAMP,
-   MetricWire, RADAR-base, Beiwe, CARP Mobile Sensing, and AWARE Framework still have no documented
-   compliance certification, and SOC 2/21 CFR Part 11 status remains unconfirmed even for Avicenna
-   Research and m-Path. This remains the module's largest residual cross-platform gap.
-6. **mindLAMP has explicitly deprecated components** in its own public GitHub organization
-   (`LAMP-portal`, `LAMP-app`), which a prospective adopter needs to map against the current
-   architecture before building on any specific repository.
-7. **CARP Mobile Sensing is architecturally distinct from every other platform in this module** — it
-   is a Flutter library/framework a team builds its own app on top of, not a pre-built,
-   dashboard-configured product. This changes both its adoption cost (mobile-dev capacity, not
-   backend/DevOps capacity) and its comparison basis against the others.
-8. **Purple Robot and StudentLife are historically important but were deliberately not given full
-   profiles** — Purple Robot's live maintenance status could not be established (and it is
-   Android-only regardless), and StudentLife's lasting value to new researchers is its dataset, not
-   a reusable data-collection tool.
+Updated 2026-10-10 to agree with the corrected profiles and the rebuilt matrix.
+
+1. **Three deployment postures**, not a simple open-source/commercial binary: self-hosted platforms
+   with public source (Beiwe, RADAR-base and AWARE under open licences; mindLAMP source-available,
+   its server and apps unlicensed); fully managed commercial SaaS (Avicenna Research, MetricWire,
+   m-Path, LifeData, Evidation); and a build-your-own-app framework (CARP Mobile Sensing). See
+   `comparison-matrix.md` Table 3.
+2. **Four public-source platforms now have a hosted alternative to self-hosting**: Beiwe (Beiwe
+   Service Center, the only one with published rates), RADAR-base (The Hyve, quote only, best for
+   about 200 participants or fewer), mindLAMP (BIDMC mindLAMP Core, priced by proposal) and CARP
+   (DTU-hosted, stated for DTU-affiliated researchers, price not stated). AWARE still has none.
+   (Corrected 2026-10-10; this item previously said only Beiwe offered managed hosting.)
+3. **iOS/Android parity should not be assumed anywhere.** Beiwe and AWARE document per-stream iOS
+   coverage: Beiwe's calls, SMS, Wi-Fi and Bluetooth are Android only; AWARE's catalogue marks 19 of
+   33 modules as iOS-available. RADAR-base has no maintained iOS passive app (its iOS data come from
+   HealthKit through the questionnaire app). Elsewhere the iOS question is Unclear.
+4. **App-store availability differs from what the module said before.** AWARE's iOS client is on the
+   App Store (only the Android client is sideloaded); mindLAMP's public iOS build dates from 2023;
+   no Google Play listing could be confirmed for Beiwe2 or for m-Path. See Table 2.
+5. **Pricing:** Beiwe (BSC) and m-Path publish prices. Avicenna Research, MetricWire, LifeData,
+   Evidation, The Hyve and the mindLAMP Core do not. Academic routes exist but are mostly unpriced:
+   MetricWire's Academic Site Licence, LifeData's academic pricing and student discount, and
+   Evidation-collected ALiR data through USC's Understanding America Study Data Use Agreement.
+   Avicenna's free trial is test-only (data wiped monthly).
+6. **Compliance:** no Module 2 platform has an independently confirmed certification. Avicenna
+   Research (ISO 27001:2022), MetricWire (ISO 27001, SOC 2 Type II, 21 CFR Part 11, HIPAA, GDPR) and
+   m-Path (GDPR, HIPAA) make vendor statements, all Corroborated at most; LifeData has a verifiable
+   Data Privacy Framework self-certification; CARP documents GDPR controller roles; Beiwe documents
+   its encryption design. (Corrected 2026-10-10: the module previously called Avicenna's statement an
+   independently audited certificate and said MetricWire had no compliance documentation.)
+7. **mindLAMP's licensing matters for self-hosters**: the server and apps carry no licence, so
+   modifying them needs BIDMC permission; the supported route is the mindLAMP Core.
+8. **CARP Mobile Sensing is architecturally distinct**: a Flutter library a team builds its own app
+   on, now with a DTU-hosted service and an actively developed web portal.
+9. **Purple Robot and StudentLife are historically important but not live platforms**: Purple Robot
+   has been unmaintained since 2016 and is Android-only; StudentLife survives as a dataset.
 
 ## How to use this module
 
@@ -133,12 +139,12 @@ about Beiwe as any other profile is about its own subject.
 
 ## Known gaps for a future pass
 
-- No platform in this module received the kind of full-text primary-documentation read that Module
-  1's second pass gave several wearable ecosystems; most claims here rest on search-summary
-  retrieval rather than direct fetch (see `sources.md`'s retrieval-method notes).
 - Sensor-level detail (exact passive-stream catalogs, sampling configurability, iOS/Android parity)
-  is the single most common "not independently verified" gap across every profile.
+  remains Unclear for mindLAMP, Avicenna Research, MetricWire, m-Path and CARP.
+- No compliance certificate or audit report has been read for any platform; the vendor statements
+  in Table 7 need checking against a certificate (Avicenna's UKAS CertCheck entry sits behind a
+  CAPTCHA) or direct vendor confirmation before a regulated study relies on them.
+- Hosted-service prices are unpublished for The Hyve, the mindLAMP Core and CARP's DTU service, and
+  the CARP hosted service's eligibility for non-DTU researchers is contradictory on its own pages.
 - No systematic published-use/citation-count survey was attempted for any platform (contrast
-  CLAUDE.md's "Evidence of use" ask) — this would be a natural focus for a second pass.
-- Compliance documentation (HIPAA/GDPR/SOC2/Part 11) is undocumented across the entire module and is
-  the highest-value item to close before recommending any platform for a regulated study.
+  CLAUDE.md's "Evidence of use" ask).

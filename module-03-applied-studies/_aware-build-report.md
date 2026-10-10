@@ -1,5 +1,7 @@
 # AWARE Framework build report — 2026-09-02
 
+*Correction 2026-10-10:* Aledavood et al. was published in *JMIR Mental Health* 2025;12:e63622 (Crossref). The "2024" below is the medRxiv preprint year. The profile, matrix and README now say 2025.
+
 Pass over the ranked AWARE candidate list from the dedicated OpenAlex citation-graph run
 (425 papers citing Ferreira, Kostakos & Dey 2015, W2078074240, since 2016).
 
@@ -131,7 +133,7 @@ that they measure three different things.** This strengthens the module's curren
 | Study | Measure | Direction | Category |
 |---|---|---|---|
 | **Wu 2023** | Mean **number of passive sensor types delivered** per participant: **Android 8.4 vs iOS 4.7** | **Android > iOS** (≈1.8×) | *Breadth of streams available* |
-| **Balliu 2024** | **SMS-derived features could not be computed on iOS at all** — available for **only 15 of 183 participants (8.2%)** | **Android-exclusive stream** | ***Structural OS gate*** — new category |
+| **Balliu 2024** | **SMS-derived features could not be computed on iOS at all** — available only for the **15 participants with Android devices** (denominator not stated in the paper; corrected 2026-10-10) | **Android-exclusive stream** | ***Structural OS gate*** — new category |
 | **McClaine 2024** (existing profile) | Passive **data yield** | **iOS > Android** | *Within-stream yield* |
 | **McInerney 2024** (existing, Beiwe) | **EMA delivery**: iPhone missed 70.0%/70.6% vs Android 21.3%/26.8%; **no OS effect on accelerometer or GPS** | **Android > iOS on active; null on passive** | *Active-stream delivery* |
 

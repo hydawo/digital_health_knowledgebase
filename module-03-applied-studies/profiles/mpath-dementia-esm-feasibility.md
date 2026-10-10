@@ -11,7 +11,7 @@
 | Duration | 10 days of ESM (extended by 1–2 days for 3 participants), preceded by a baseline questionnaire day. |
 | Devices/platforms used | **[m-Path](../../module-02-digital-phenotyping/profiles/m-path.md)**, BYOD, participants' own smartphones. **7 momentary notifications/day at semi-random intervals within 90-minute blocks** (minimum 15-minute gap), plus **1 end-of-day questionnaire**. Includes a **voice-recording item** for open-ended responses. REDCap for consent. |
 | Funding/COI | FWO Research Foundation Flanders 12A7322N (LD); NHMRC GNT2025228 and MRFF MRF2024329 (MI). **Platform-developer COI: "E.D. is co-founder and shareholder of m-Path Software, the commercial experience sampling platform that was used in this study."** Ethics: University of Sydney 2022/882; KU Leuven G-2022-4720-R3. |
-| Last verified | 2026-09-02 |
+| Last verified | 2026-09-02; compensation claims corrected 2026-10-10 (the paper does not mention compensation; local PDF searched for compensation, payment, incentive, reimbursement, voucher, reward and gift terms) |
 
 ## Summary
 
@@ -22,7 +22,7 @@ where it has kept people out of ESM research entirely.
 
 **Twelve people with mild-to-moderate dementia, given seven momentary prompts a day plus an
 end-of-day survey for ten days, with a 20-minute total response window, completed 799 of 1004
-prompts: a mean compliance of 80% (SD 13%, range 54%–91%). Nobody dropped out. Nobody was paid.**
+prompts: a mean compliance of 80% (SD 13%, range 54%–91%). Nobody dropped out.** The paper does not report whether participants were compensated.
 
 The authors position 80% against the ~78% average for ESM studies generally, ~78% in mild cognitive
 impairment, 71–80% in acquired brain injury and 54–99% in older adults — i.e. **at or above the
@@ -163,12 +163,13 @@ independently.
    This extends the module's severity-does-not-predict-attrition null into a fifth condition.
 3. **The 80% is bought with staff time, not money.** A screening call mapping the daily schedule, a
    video training tutorial, a supervised trial-run video call, a day-2-to-4 check-in call, and
-   per-participant schedule modifications. **No compensation was offered at all.** Set against
+   per-participant schedule modifications. **Compensation is not mentioned in the paper.** Set against
    [Mercier 2020](beiwe-spinal-cord-injury-incentives.md) (incentives raise enrolment persistence but
    not completion rate) and [Shen 2026](sensorkit-techsans-older-adults.md) (an uncompensated passive
    study losing a participant to "lack of perceived benefit"), the pattern that best fits the module
-   is: **structured human support raises completion; payment raises persistence; they are different
-   levers for different failure modes.**
+   is tentative: **structured human support may raise completion and payment may raise persistence.**
+   Dewitte reports no compensation either way, so this study cannot anchor the support-versus-payment
+   contrast.
 4. **Budget for schedule tailoring as a standard feature, not an exception.** Two of twelve
    participants needed the signalling schedule changed, and a third needed the collection window
    extended. A platform that cannot do this per-participant, mid-study, cannot run this protocol.
@@ -190,9 +191,10 @@ independently.
 the 799/1004 = 80% compliance with SD and range; all four compliance–covariate correlations with CIs
 and p-values; the full 18-item evaluation table; the completion times; the protocol (7+1 prompts, 90-min
 blocks, 15-min minimum gap, 5-min + 15-min response window); the four co-design recommendations and
-their implementation; all five named per-participant adaptations; the ICC/variance result; the absence
-of compensation; the diagnostic and cognitive characteristics of the sample. Read from the published
+their implementation; all five named per-participant adaptations; the ICC/variance result; the diagnostic and cognitive characteristics of the sample. Read from the published
 PDF (Nature/npj Dementia), 2026-09-02.
+
+**Unclear.** Participant compensation is not mentioned in the paper (local PDF re-searched 2026-10-10).
 
 **Underpowered.** n=12. Every correlation reported here has wide confidence intervals and the authors
 say explicitly that they "should be interpreted with caution given the small sample size."

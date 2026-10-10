@@ -95,6 +95,8 @@ mis-rendering**, not a product name. Europe PMC returns exactly **1** hit for `"
 | Export | CSV + media, multilevel-model-ready layouts | Not verified | CSV, JSON, GEXF, KML; "minutes after upload" |
 | Passive sensing | GPS-with-response only | "Passive sensor and geolocation capture" claimed, catalog unverified | "Wide range of smartphone sensors and wearables," catalog unverified |
 
+> **Correction 2026-10-10 (independent review).** The Pricing and Compliance rows above are out of date for MetricWire and Avicenna. MetricWire's site now loads: it states ISO 27001, SOC 2 Type II, 21 CFR Part 11, HIPAA and GDPR compliance and offers an unpriced Academic Site Licence, all vendor-stated. Avicenna's ISO 27001:2022 statement is vendor-stated with no certificate read (Corroborated, not audited evidence), and its free trial is test-only per its own FAQ. See the two profiles and `comparison-matrix.md` Tables 6 and 7. This report is otherwise kept as written on 2026-09-02.
+
 Rough placement: **LifeData beats both on evidence-of-use and on documented EMA depth; beats MetricWire
 on compliance and loses to Avicenna on it; loses to both on public documentation accessibility.**
 

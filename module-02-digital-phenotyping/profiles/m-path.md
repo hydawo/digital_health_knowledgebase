@@ -7,11 +7,11 @@
 | Organization | KU Leuven-affiliated research team (m-Path); commercialized as a platform serving 250+ universities per vendor claim |
 | Category | ESM/EMA platform with an add-on passive-sensing module |
 | Current status | Active |
-| Platforms/devices | Mobile app (regular m-Path) plus "m-Path sense" for passive sensing; web-based point-and-click study builder |
+| Platforms/devices | Mobile app (regular m-Path) plus "m-Path Sense" for passive sensing; web-based point-and-click study builder. On the App Store: "m-Path" (v1.3.4, 2026-10-05) and "m-Path Sense" (v1.2.0, 2026-09-08), seller m-Path Software. The pricing page says sensing works on Android and iOS; the Google Play listings were not located by automated search on 2026-10-10 (Unclear, not checked conclusively) |
 | Open source | No (platform); underlying methodology published in peer-reviewed literature |
-| Hosting/deployment | Vendor-hosted |
-| Pricing model | **Resolved 2026-08-25**: tiered SaaS subscription (Free/Essential/Standard/Comfort, published rates) plus separately priced add-ons (sensing, API access, cognitive tests, white-label, etc.) |
-| Last verified | 2026-08-25 (second pass) |
+| Hosting/deployment | Vendor-hosted SaaS. No self-hosting of the software, but a custom-priced "External servers" add-on collects, processes and saves data "on your personal server" (scope not further described) |
+| Pricing model | Published "research plans": Free (€0, 50 participants/year), Essential, Standard and Comfort (€1,599 to €5,338 per year, excl. VAT, 300 to 600 participants), plus separately priced add-ons; no separate academic or commercial rates; basic version free for individual practitioners (Verified 2026-10-10) |
+| Last verified | 2026-10-10 (pricing page re-read, App Store listings) |
 
 ## Summary
 
@@ -80,7 +80,7 @@
 
 ## Deployment and Infrastructure
 
-- Vendor-hosted; no self-hosting option identified.
+- Vendor-hosted; no self-hosting of the software was identified. The pricing page lists an **External servers** add-on (custom price): "Make sure the data is collected, processed and saved securely on your personal server." What this covers (data storage only, or a server-side install) is not stated, so ask the vendor (Verified 2026-10-10 that the add-on exists).
 
 ## Participant Experience
 
@@ -95,7 +95,7 @@
 
 ## Privacy, Security, and Compliance
 
-- **Updated 2026-08-25 (second pass, Corroborated via direct fetch of `m-path.io`'s homepage plus a targeted search).** m-Path's own homepage states directly: "Secure data processing and storage, compliant with GDPR and HIPAA." This is a vendor self-declared compliance claim, not an independently audited certification (contrast Avicenna Research's dated, audited ISO 27001:2022 certificate found this same pass), per CLAUDE.md's instruction not to manufacture certainty, this is recorded as **Corroborated** (a specific, findable claim on the vendor's own primary page) rather than **Verified** (which would require third-party audit evidence, not located this session). Additional corroboration: m-Path is confirmed as "an original spin-off from KU Leuven's research group Quantitative Psychology and Individual Differences" (search-summary source), consistent with the platform's already-noted Belgium/KU Leuven academic origin, and a dedicated `m-path.io/Privacy_Policy_m-Path_Sense.html` privacy policy exists specifically for the sensing module, evidence the vendor treats sensing data's privacy posture as materially distinct from the core EMA product's. No SOC 2, ISO 27001, or DPA-template document was located.
+- **Updated 2026-08-25 (second pass, Corroborated via direct fetch of `m-path.io`'s homepage plus a targeted search).** m-Path's own homepage states directly: "Secure data processing and storage, compliant with GDPR and HIPAA." This is a vendor self-declared compliance claim, not an independently audited certification (Avicenna Research's dated ISO 27001:2022 statement is at the same vendor-stated evidence tier, corrected 2026-10-10), per CLAUDE.md's instruction not to manufacture certainty, this is recorded as **Corroborated** (a specific, findable claim on the vendor's own primary page) rather than **Verified** (which would require third-party audit evidence, not located this session). Additional corroboration: m-Path is confirmed as "an original spin-off from KU Leuven's research group Quantitative Psychology and Individual Differences" (search-summary source), consistent with the platform's already-noted Belgium/KU Leuven academic origin, and a dedicated `m-path.io/Privacy_Policy_m-Path_Sense.html` privacy policy exists specifically for the sensing module, evidence the vendor treats sensing data's privacy posture as materially distinct from the core EMA product's. No SOC 2, ISO 27001, or DPA-template document was located.
 
 ## Pricing
 
@@ -108,7 +108,8 @@
 | Standard | €2,099, €3,616 | 300 to 600 | + priority email support, unlimited projects/accounts, collaboration, add-on selection |
 | Comfort | €3,099, €5,338 | 300 to 600 | + online-meeting support, advanced troubleshooting, yearly workshop, yearly study review |
 
-- **Add-ons** (all separately priced, confirmed on the same page): Cognitive Tests (€4,500), Sensing Lite (€3,000), Sensing Full (€10,000), Intervention Editor (€6,000), Moodboard Editor (€6,000), Smartwatch Integration (€3,000), White-Label App (€10,000), API Access (€5,000), plus unpriced custom consulting/development options.
+- **Add-ons** (added by contacting the vendor; re-read 2026-10-10): Cognitive Tests (€4,500), Sensing Lite (€3,000, sensor data collected only when a participant completes a questionnaire), Sensing Full (€10,000, continuous sensing on Android and iOS via the m-Path Sense app), Intervention Editor (€6,000), Moodboard Editor (€6,000), Smartwatch Integration (€3,000; Fitbit, Garmin and Apple Watch named), White-Label App (€10,000 plus a €2,000 annual update fee), API (€5,000), First ESM study support package (€800), and custom-priced Development, Consulting and External servers. The page does not state a billing period for add-ons; only the white-label update fee is stated as annual.
+- **Subscription terms (pricing FAQ, Verified 2026-10-10):** a subscription is one year of access; extra participant slots can be bought at any time. The page offers only "research plans" (heading "Research & Academic Licenses") with no academic versus commercial split, and the basic version is free for individual practitioners, funded by research licences.
 
 - This is now among the most transparent, itemized pricing structures in this module, more granular than Beiwe's BSC figures and far more so than Avicenna Research's or RADAR-base's still-nonpublic rates. It also materially reframes m-Path's earlier "no-code EMA platform with a passive-sensing add-on" description: sensing, API access, and smartwatch integration are all priced *well above* even the top Comfort subscription tier's base cost, meaning a full-featured deployment (EMA + sensing + API + wearable triggers) could plausibly cost more in add-ons than in the base subscription. That combination was not priced as a bundle by any source found this session.
 
@@ -126,8 +127,8 @@
 
 ## Limitations
 
-- Passive sensing (m-Path sense) is a **separately priced** add-on module (€3,000, €10,000/year on top of the base subscription), not the platform's core identity or an included capability; its depth relative to dedicated sensing-first platforms (Beiwe, RADAR-base, AWARE) was not independently benchmarked this session.
-- Closed-source, vendor-hosted only.
+- Passive sensing (m-Path Sense) is a **separately priced** add-on (Sensing Lite €3,000, questionnaire-time snapshots only; Sensing Full €10,000, continuous), on top of the base subscription; the page does not state the add-on billing period, not the platform's core identity or an included capability; its depth relative to dedicated sensing-first platforms (Beiwe, RADAR-base, AWARE) was not independently benchmarked this session.
+- Closed-source and vendor-hosted; the only server-side alternative is the custom-priced "External servers" add-on, whose scope is not described.
 - ~~Pricing... were not independently established this session~~, **resolved 2026-08-25**: full tier and add-on pricing is now public (see Pricing above). Data export mechanics and API-endpoint-level documentation remain unestablished; compliance is now Corroborated (vendor's own GDPR/HIPAA claim) but not independently audited.
 - API access, smartwatch/wearable-trigger integration, and full sensing are all **additional paid add-ons on top of even the top subscription tier**, a materially higher realistic cost than the base subscription price alone suggests for any study wanting the platform's full-featured combination.
 - The "250+ Universities" user-base figure is a vendor claim not independently corroborated.
@@ -141,7 +142,7 @@
 ## Poor-Fit Use Cases
 
 - Studies where passive sensing depth and breadth (not EMA sophistication) is the primary requirement, dedicated sensing platforms should be evaluated first.
-- Teams needing self-hosting or full source-code control.
+- Teams needing full source-code control, or self-hosting of the software itself (an External servers add-on exists for data storage on the customer's server; scope unconfirmed).
 
 ## Open Questions
 
@@ -150,15 +151,18 @@
 - What is m-Path sense's full current sensor catalog, and how does it compare in depth to dedicated passive-sensing platforms? (still open, pricing tier now known, sensor-level detail is not)
 - ~~What is the pricing model?~~ **Resolved 2026-08-25**, see Pricing above.
 - ~~What compliance documentation (GDPR, HIPAA) exists?~~ **Largely resolved 2026-08-25**, vendor states GDPR + HIPAA compliance directly (Corroborated, not independently audited). SOC 2/ISO status and a formal DPA template remain unconfirmed.
-- ~~Is there a documented developer API?~~ **Resolved (existence) 2026-08-25**, "API Access" is a named €5,000/year add-on. **New sub-question**: what does the API actually expose (endpoints, auth, data schema), and is documentation available before purchase?
+- ~~Is there a documented developer API?~~ **Resolved (existence) 2026-08-25**, "API" is a named €5,000 add-on (billing period not stated, corrected 2026-10-10). **New sub-question**: what does the API actually expose (endpoints, auth, data schema), and is documentation available before purchase?
 - What wearable devices are supported for "wearable triggers," and is this the same as, or distinct from, the separately priced "Smartwatch Integration" (€3,000) add-on found on the pricing page this pass?
-- Does the Free tier's "50 participants/year" cap reset annually or is it a lifetime/rolling cap, and is academic/non-profit pricing distinct from the published tiers?
+- Does the Free tier's "50 participants/year" cap reset annually? (A subscription is one year of access and extra participant slots can be bought at any time, per the pricing FAQ.) Academic pricing: answered 2026-10-10, the page lists only "research plans" with no academic/commercial split; the basic version is free for individual practitioners, funded by research licences.
+- What exactly does the "External servers" add-on provide, and at what price?
 
 ## Key Links
 
 - Official site: https://m-path.io/
 - Manual/knowledge base: https://m-path.io/manual/knowledge-base/welcome-to-m-path/
 - Research page: https://m-path.io/landing/research/
+- Pricing: https://m-path.io/pricing/
+- m-Path (App Store): https://apps.apple.com/us/app/m-path/id6733243074 ; m-Path Sense (App Store): https://apps.apple.com/us/app/m-path-sense/id6520394129
 
 ## Sources
 
@@ -172,3 +176,5 @@
 8. m-Path manual, "Mobile Sensing (full)." https://m-path.io/manual/knowledge-base/mobile-sensing-full/ (accessed 2026-10-09). **Primary/Direct.** Five-minute server contact and reopen reminders.
 9. m-Path manual, "Live Activity background sensing." https://m-path.io/manual/knowledge-base/live-activity-background-sensing/ (accessed 2026-10-09). **Primary/Direct.**
 10. Niemeijer K. et al. 2023, *JMIR Formative Research*, doi 10.2196/43296 (full text via Europe PMC, PMC10031448; accessed 2026-10-09). **Verified.** m-Path Sense embeds CARP Mobile Sensing; keepalive then in development.
+11. m-Path, Pricing, re-read. https://m-path.io/pricing/ (accessed 2026-10-10). **Primary/Verified.** Add-on descriptions (Sensing Lite vs Full, External servers, First ESM study support, white-label update fee), no add-on billing period, subscription FAQ, no academic/commercial split.
+12. iTunes lookup/search for m-Path (id 6733243074) and m-Path Sense (id 6520394129), 2026-10-10. **Primary/Verified.**

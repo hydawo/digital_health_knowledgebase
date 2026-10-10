@@ -15,6 +15,10 @@ a bigger determinant of study feasibility than the choice of device.
 marketing pages and secondary sources rather than deep primary documentation review. Treat
 everything below as **Reported** unless explicitly marked otherwise, and verify before selecting.
 
+**Last verified:** 2026-08-21; Fitabase, Labfront, Fitrockr, Terra and Thryve pricing and access terms re-verified 2026-10-10.
+
+**Dated context, 2026-10-10.** Two vendor routes these platforms sit on top of are closed to new direct applicants: Google is "not onboarding new projects" on the Google Health API and turns the legacy Fitbit Web API off on 30 October 2026 (`fitbit-google.md`), and Garmin has paused new Connect Developer Program access requests since spring 2026 (Corroborated; `garmin.md`). For a new study, an intermediary that already holds access is currently the main way to reach Fitbit or Garmin data at all.
+
 ---
 
 ## Category 1, Research operations platforms
@@ -30,9 +34,10 @@ a research team buys because Fitbit and Garmin do not provide it.
 | Granularity | Daily, hourly, **minute-level**; CSV export | **Verified** |
 | Study tooling | Monitoring dashboards, device battery and sync status, participant tagging, de-identified profiles, customizable data capture windows, unlimited batch exports | **Verified** |
 | API | Aggregate Data API for programmatic export in JSON/CSV | **Verified** |
-| Coming | "Fitabase Engage", mobile surveys, smartwatch prompts, SMS messaging, Summer 2026 | **Verified** (vendor-stated) |
-| Track record | 1,100+ research studies | **Reported** (vendor claim) |
-| Pricing | **Not public.** "Custom Pricing for Every Study"; contact hello@fitabase.com | **Verified** that it is non-public |
+| Coming | "Fitabase Engage": the Mobile App and Engage Wrist App are labelled "Preview · Summer 2026" on the Engage page (re-read 2026-10-10); SMS messaging is listed without a status. No Engage price is published | **Verified** (vendor-stated) |
+| Track record | Homepage: used in "over 1,100 research studies"; research library: "1650 publications have used Fitabase", last updated 5 October 2026 (both read 2026-10-10) | **Reported** (vendor claims; counting methods not stated) |
+| Pricing | **Not public.** "Custom Pricing for Every Study"; Premium Add-Ons (SMS Messages & Reminders; Aggregate Data API) also unpriced; contact hello@fitabase.com | **Verified** that it is non-public (re-read 2026-10-10) |
+| Compliance | FAQ: "the option to run your project completely de-identified" and "robust industry standards". The FAQ, privacy notice and terms pages contain no HIPAA, BAA or PHI wording (text search, 2026-10-10) | **Verified** that nothing is published |
 
 Fitabase is the single most important non-device entity in Module 1. If a study is using Fitbit and
 does not have engineering capacity, Fitabase is effectively the default, and its (unpublished) cost
@@ -43,11 +48,11 @@ Open question: does Fitabase execute a HIPAA BAA as standard? Its de-identificat
 a deliberate strategy of staying outside PHI, which is a different compliance posture from a BAA.
 **Unclear, ask directly.**
 
-### Labfront, the one with published pricing
+### Labfront, published pricing
 
-**Added 2026-08-21 second pass.** Labfront was missing from the first draft and is arguably the most
-consequential omission in it, because **it is the only research platform in this module that
-publishes its prices.**
+**Added 2026-08-21 second pass.** Labfront was missing from the first draft. It is one of two
+research-operations platforms in this file that publish their prices (Fitrockr, below, is the other;
+corrected 2026-10-10, the 2026-08-21 text called Labfront the only one).
 
 | Field | Detail | Confidence |
 |---|---|---|
@@ -57,14 +62,14 @@ publishes its prices.**
 | **Higher resolution than stock** | Labfront has a Garmin partnership letting it **configure devices via the Garmin Health SDKs to increase sensor resolution**, capturing higher-resolution data than Garmin normally collects, explicitly including beat-to-beat/interbeat intervals for HRV | **Corroborated** |
 | Included in all tiers | Physiological data collection, **survey tools (EMA)**, event tracking | **Verified** |
 
-#### Published pricing, **Verified** (labfront.com/pricing)
+#### Published pricing, **Verified** (labfront.com/pricing, re-read 2026-10-10)
 
 | Tier | Price | Participants | Notes |
 |---|---|---|---|
 | **Tester** | **Free** | 5 | 30-day data access window; limited sampling rates on some devices; all settings enabled so you can confirm a protocol works |
 | **Basic** | **$500 / year** | 20 included, **$10** each additional | Unlimited data history; **one** device integration (Garmin *or* Dexcom); standard sampling rates |
-| **Advanced** | **$1,250 / year** | 20 included, **$25** each additional | Unlimited data history; **all** integrations (Garmin, Dexcom, Movesense); **customisable high-resolution sampling rates** |
-| Analytics packages | from **$2,000** | | Optional add-on; requires Advanced |
+| **Advanced** | **$1,250 / year** | 20 included, **$25** each additional | Unlimited data history; **all** integrations (Garmin, Dexcom, Movesense); **customisable sampling rates, "from 100 Hz accelerometry down to beat-to-beat intervals for HRV"** |
+| Analytics packages | from **$3,000** plus **$50 per participant** (HRV linear from $4,000; HRV non-linear from $6,000; sleep actigraphy from $3,000; sleep regularity and timing from $5,000) | | Optional add-ons; require Advanced. Developer Access from $4,000; Data Audit from $500. (The 2026-08-21 figure of $2,000 is superseded.) |
 
 Labfront also runs a **grants programme** providing subsidised platform access, analytics packages
 and devices to researchers at every career stage on a rolling basis, plus hardware discounts through
@@ -74,7 +79,7 @@ sleep grant and an ACSM-linked award. **Corroborated.**
 #### Why this changes the picture
 
 A 40-participant Garmin study with high-resolution BBI and EMA costs **$1,250 + 20 × $25 = $1,750
-per year** in platform fees, plus devices. That is a fully specified, publicly quotable budget line, something no other research platform in Module 1 permits.
+per year** in platform fees, plus devices. That is a fully specified, publicly quotable budget line, which only Labfront and Fitrockr permit among the research platforms here.
 
 It also **removes the Garmin SDK licence question from the critical path** for many studies: rather
 than negotiating a Garmin Health SDK licence, a team can buy Labfront Advanced and inherit Labfront's
@@ -88,13 +93,27 @@ partnership-derived ability to raise sampling resolution.
 | Pricing | **Published** | Custom quote only |
 | EMA/surveys | **Included in all tiers** | "Engage" suite, Summer 2026 |
 | Free tier | **Yes, 5 participants** | No |
-| Track record | Smaller; grant-driven academic focus | **1,100+ studies** (some sources say 1,600+ publications) |
+| Track record | Smaller; grant-driven academic focus | **1,100+ studies** (homepage) and **1,650 publications** (research library, updated 5 October 2026), vendor figures |
 | Fitbit support | **No** | Yes |
 
-If your study is Fitbit-based, Fitabase remains the only real option. If it is Garmin-based,
-Labfront is cheaper, transparent, includes EMA, and adds Movesense and CGM.
+If your study is Fitbit-based, Fitabase remains the main research-operations option (Fitrockr also lists Google/Fitbit). If it is Garmin-based,
+Labfront is cheaper, transparent, includes EMA, and adds Movesense and CGM; Fitrockr is the other published-price option.
 
 Links: https://www.labfront.com/ · https://www.labfront.com/pricing · https://www.labfront.com/compatible-devices · https://www.labfront.com/grant · https://help.labfront.com/garmin-overview
+
+### Fitrockr, published pricing and Garmin research grants (added 2026-10-10)
+
+| Field | Detail | Confidence |
+|---|---|---|
+| Organization | Fitrockr (Berlin) | **Reported** |
+| Devices | Claims "700+ wearables"; the compatible-devices page lists Garmin, Apple, Google, Fitbit, Samsung, Withings, Polar, WHOOP, Oura, Dexcom and others, via direct integrations and Apple Health / Health Connect | **Reported** (vendor) |
+| Study tooling | Participant compliance and adherence tracking, tasks and scheduled push notifications, multi-language participant apps, dashboards, raw data downloads; surveys and notifications are a paid add-on (+20% on licence) | **Reported** (vendor) |
+| Pricing, research and clinical trials | Trial free for 2 weeks, up to 5 device connections. **Basic** from €50 or $55 per month (standard wearable data); **Pro** from €150 or $165 per month ("enhanced" wearable data, additional data types, higher sampling rates). Both: 5 device licences included, unlimited users, 3-month minimum contract and renewals; additional device licences €1 to €7.50 per month on Basic and €1 to €15 on Pro. Add-ons include raw accelerometer (25 Hz) and gyroscope (32 Hz) at +25% on licence, API access +20%, on-premise hosting €5,000 + 20%, and a Data Vault at €150 per month for post-project access | **Verified** (fitrockr.com/research/pricing, 2026-10-10) |
+| Hosting and compliance | Germany cloud included; country-of-choice cloud, local or on-premise hosting as add-ons. States "HIPAA-, CASA- and ISO-certified. GDPR-compliant." with no certificate linked | Hosting **Verified** (pricing page); compliance **Reported** (vendor claim) |
+| Grants | Fitrockr's grants page: "Fitrockr and Garmin support innovative research through grant programs". The Garmin Health x Fitrockr Health Solutions Research Grant Asia 2026 (five vívoactive 5 units) closed on 31 March 2026; an earlier Fitrockr and Garmin Health grant for projects up to 50 participants closed 31 August 2025; no current grant is listed | **Verified** (fitrockr.com, 2026-10-10) |
+
+Pricing is per connected device licence rather than per participant, so devices reused across
+sequential participants are licensed once (inference from the licence model; confirm with Fitrockr).
 
 ### MyDataHelps (CareEvolution)
 
@@ -144,7 +163,7 @@ that lets participants bring whatever device they already own.
   requirements and its own terms, which must themselves be compatible with the underlying vendor
   terms (see the WHOOP profile: WHOOP's terms prohibit licensing API data to third parties, which
   has obvious implications for routing WHOOP data through an intermediary).
-- Cost is generally usage-based and non-public.
+- Cost is usage-based. Entry prices are public for some vendors (Verified 2026-10-10): **Terra** Quick Start from $499 per month billed monthly, or $399 per month billed annually, with 100,000 credits per month; a signed BAA is listed only on the custom-priced Enterprise plan. **Thryve** Start Up from €499 per month for up to 500 users (€0.50 per additional user), Scale Up from €1,000 per month for up to 5,000 users, Enterprise bespoke; Thryve's plan table lists data storage of 1 day (free trial), 2 weeks (Start Up) and 1 month (Scale Up), and a "Data processing / Business association agreement" row. Neither publishes academic pricing. Thryve's FAQ calls itself "100% GDPR and HIPAA compliant" (vendor claim, **Reported**).
 
 **Practical guidance:** unified APIs are appropriate for descriptive, engagement, or intervention
 studies where the wearable is a behaviour-change tool rather than a measurement instrument. They are
@@ -169,8 +188,8 @@ The cheapest wearable study is one where someone else already collected the data
 | Caveat | Published work stresses that data quality control (wear-time, completeness filtering) materially changes results | **Corroborated** |
 
 This is the strongest single research asset in the entire Fitbit ecosystem and it requires no
-device procurement, no API approval, no participant recruitment, and no exposure to the September
-2026 Fitbit API turndown.
+device procurement, no API approval, no participant recruitment, and no exposure to the Fitbit Web API
+shutoff on 30 October 2026 or to Google's closure of Google Health API onboarding.
 
 ### UK Biobank accelerometry
 
@@ -185,12 +204,12 @@ open analysis toolchain. See `axivity-geneactiv.md`. Access via UK Biobank appli
 |---|---|
 | Physiological variable is a primary endpoint | Single device model, direct vendor API or SDK. **Never a unified API.** |
 | Need study operations, no engineering team, **Fitbit** | Fitabase (quote required) |
-| Need study operations, no engineering team, **Garmin** | **Labfront**, published pricing, EMA included, free 5-participant tier to pilot |
+| Need study operations, no engineering team, **Garmin** | **Labfront** (published pricing, EMA included, free 5-participant tier to pilot) or **Fitrockr** (published pricing, per-device licences); also the practical route while Garmin's own programme is closed to new applicants |
 | Need nocturnal beat-to-beat intervals for HRV | **Garmin Enhanced BBI** via Fitabase or Labfront, no custom app needed |
-| Need raw signal | Direct: Polar BLE SDK (cheapest), Movesense (highest rates), Samsung Privileged SDK, Garmin Health SDK, Empatica (EDA), Ultrahuman (ring PPG), Axivity/ActiGraph |
+| Need raw signal | Direct: Polar BLE SDK (cheapest), Movesense (highest rates), Samsung Health Sensor SDK (incl. raw EDA on Galaxy Watch8), Garmin Health SDK, Empatica (EDA), Ultrahuman (ring PPG), Axivity/ActiGraph |
 | BYOD, wearable is an intervention not an instrument | Unified API (Terra/Validic/Rook/Thryve) |
 | Question can be answered from existing data | All of Us Researcher Workbench or UK Biobank |
-| Study spans Sept 2026 and uses Fitbit | Unified API or Fitabase to absorb the migration, **or** re-plan on Google Health API |
+| Study uses Fitbit after 30 October 2026 | An intermediary that already holds Google Health API access (Fitabase or a unified API); a new direct Google Health API project is not possible while Google is not onboarding new projects (2026-10-10) |
 
 ## Key Links
 
@@ -209,3 +228,12 @@ open analysis toolchain. See `axivity-geneactiv.md`. Access via UK Biobank appli
 ## Sources
 
 See `../sources.md` entries S-INT-01 through S-INT-08.
+
+Added 2026-10-10 (all accessed 2026-10-10; rows proposed for `../sources.md`):
+
+1. Fitabase homepage, pricing page, Engage page, FAQ, privacy notice and terms. https://www.fitabase.com/ ; https://www.fitabase.com/how-it-works/pricing/ ; https://www.fitabase.com/engage/ ; https://www.fitabase.com/resources/faq/ ; https://www.fitabase.com/privacy/ ; https://www.fitabase.com/terms/
+2. Fitabase research library. https://www.fitabase.com/research-library/ . 1,650 publications, last updated 5 October 2026.
+3. Labfront pricing. https://www.labfront.com/pricing . Tiers, analytics add-ons from $3,000 plus $50 per participant, Developer Access from $4,000, Data Audit from $500.
+4. Fitrockr research pricing, research grants and compatible devices. https://www.fitrockr.com/research/pricing ; https://www.fitrockr.com/research/research-grants/ ; https://www.fitrockr.com/compatible-devices/
+5. Terra pricing. https://tryterra.co/pricing . Quick Start $499 per month or $399 billed annually, 100,000 credits; BAA on Enterprise.
+6. Thryve pricing. https://www.thryve.health/pricing . Start Up from €499 per month (500 users), Scale Up from €1,000 per month (5,000 users), storage windows, compliance FAQ.

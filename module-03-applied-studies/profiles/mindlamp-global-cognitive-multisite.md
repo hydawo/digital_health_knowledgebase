@@ -9,9 +9,9 @@
 | Sample size (enrolled / analyzed) | **62 enrolled and downloaded mindLAMP → 6 dropped out → 56 analysed (9.7% attrition).** By site: **Bangalore 21, Bhopal 23, Boston 12.** |
 | Population | Adults ≥18 with schizophrenia or schizoaffective disorder, owning a smartphone able to run the app, speaking the local study language (English in Boston; English or Hindi in Bhopal and Bangalore). Excluded: uncontrolled mental illness, or speech/sight/hearing impairment affecting smartphone operation. Mean age 26.9 (SD 5.44, range 19–46); 31 male / 25 female; **45 of 56 Asian**. |
 | Duration | 30 days per participant. Recruitment September 2024 – March 2025. |
-| Devices/platforms used | **[mindLAMP](../../module-02-digital-phenotyping/profiles/mindlamp.md)**, BYOD. Ten in-app cognitive assessments; daily notifications at 18:00; 1–2 assessments or surveys assigned per day; GPS permissions enabled at intake for passive sensing; sleep inferred from **GPS + screen state**. REDCap for clinical instruments. |
-| Funding/COI | Academic collaboration across **Beth Israel Deaconess Medical Center (Boston)**, **NIMHANS (Bangalore)**, **AIIMS Bhopal** and **Sangath**. **Competing interests: "the authors declare no competing interests"** — note that **John Torous is mindLAMP's principal academic developer and is senior author**, and the paper evaluates his platform's own assessment suite. IRB approval at each site. Participants "compensated at the beginning and the end of the study"; amounts not stated. |
-| Last verified | 2026-09-02 |
+| Devices/platforms used | **[mindLAMP](../../module-02-digital-phenotyping/profiles/mindlamp.md)**, BYOD. Ten in-app cognitive assessments; daily notifications at 18:00; on average 2 to 3 assessments or surveys assigned per day; GPS permissions enabled at intake for passive sensing; sleep inferred from **GPS + screen state**. REDCap for clinical instruments. |
+| Funding/COI | **Funding: a Wellcome Trust grant (John Torous, PI).** Academic collaboration across **Beth Israel Deaconess Medical Center (Boston)**, **NIMHANS (Bangalore)**, **AIIMS Bhopal** and **Sangath**. **Competing interests: "the authors declare no competing interests"** — note that **John Torous is mindLAMP's principal academic developer and is senior author**, and the paper evaluates his platform's own assessment suite. IRB approval at each site. Participants "compensated at the beginning and the end of the study"; amounts not stated. |
+| Last verified | 2026-09-02; daily schedule, funding and the Boston exclusion corrected 2026-10-10 against the Europe PMC full text (PMC12660878) |
 
 ## Summary
 
@@ -32,10 +32,10 @@ comparability**. The three sites' MCCB distributions differed significantly (Spe
 F=6.591, p<0.01; Reasoning and Problem Solving F=9.481, p<0.01; Attention/Vigilance F=3.385, p<0.05;
 Overall Composite F=4.978, p<0.05), with the two Indian sites resembling each other more than either
 resembled Boston. Compounding this, **the Boston participants were asymptomatic** — every PANSS
-subscale score was exactly 7 (the floor) with SD 0 — so **Boston was excluded from the PANSS totals
-and from the primary analyses altogether**, which were run on the two Indian sites only.
+subscale score was exactly 7 (the floor) with SD 0 — so **Boston was excluded from the PANSS totals,
+and the MCCB analyses were run primarily on the two Indian sites**. The paper says the MCCB analyses "will primarily concern the two sites in India".
 
-A multi-site global pilot therefore ended up analysing a single country, because the sites recruited
+A multi-site global pilot therefore ran its MCCB analyses mainly on a single country, because the sites recruited
 clinically incomparable samples. **That is a study-operations finding, and a transferable one: "same
 protocol, multiple countries" does not deliver a poolable cohort.**
 
@@ -48,7 +48,7 @@ participation, at onboarding, is the "Notify"/"Correct" contract from
 [LINC](mindlamp-linc-passive-data-quality.md) stated to the participant up front. No troubleshooting
 counts or data-quality figures are reported, so the effect cannot be assessed.
 
-**Assessment schedule:** 1–2 cognitive assessments or surveys per day with a **single daily 18:00
+**Assessment schedule:** on average 2 to 3 cognitive assessments or surveys per day with a **single daily 18:00
 notification**, over 30 days, such that each of the ten tasks should have been completed at least
 four times.
 
@@ -160,8 +160,8 @@ re-diagnosis.
 **Verified** — the 62→56 enrolment and dropout counts; the per-site sample sizes; the demographic and
 PANSS table including the Boston floor effect (all subscales exactly 7, SD 0) and its exclusion from
 the totals; the ANOVA F statistics for cross-site MCCB differences; the assessment completion table
-with means, SDs and ranges; all nine ICCs with confidence intervals; the schedule (1–2 assessments
-per day, 18:00 notification, minimum four completions per task); the cultural stimulus substitution;
+with means, SDs and ranges; all nine ICCs with confidence intervals; the schedule (2 to 3 assessments
+or surveys per day on average, 18:00 notification, minimum four completions per task); the cultural stimulus substitution;
 the PANSS inter-rater ICCs; the sleep-inference method; the intake troubleshooting statement. Read
 from the full text and published PDF (PMC12660878), 2026-09-02.
 

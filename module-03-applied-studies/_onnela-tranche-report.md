@@ -204,7 +204,7 @@ re-derive them:
 | # | Study | Reason not built |
 |---|---|---|
 | 5 | Straczkiewicz 2026, short prescribed exercises, N=329 | Strong candidate. Deferred to avoid three adjacent ALS-accelerometer profiles in one pass. **Highest-priority remaining item.** |
-| 7 | van den Berg 2022, daily SF-36 micro-surveys, N=95 | **No PDF and no PMCID**; no OA route. Its 76% full-SF-36-vs-micro-survey comparison is genuinely novel for survey-burden design and is referenced from the Fu profile. **Needs institutional access.** |
+| 7 | van den Berg 2022, daily SF-36 micro-surveys, N=95 | **No PDF and no PMCID**; no OA route. *Update 2026-10-10:* Crossref gives the publication date as 2021-07-20, not 2022 (10.1007/s11136-021-02934-x). Its 76% full-SF-36-vs-micro-survey comparison is genuinely novel for survey-burden design and is referenced from the Fu profile. **Needs institutional access.** |
 | 9 | Lee 2024, vaping app, N=306 | Custom platform, not obviously a Module 1/2 technology — likely the same scope problem as Nock. **Check the platform identity before building.** |
 | 10 | Karas 2024, ALS passive smartphone, N=63 | Beiwe, same disease and lab as three profiles already built; marginal added operational content over Beukenhorst and Johnson. |
 | 11 | Pellegrini 2022, transdiagnostic, N=45 | Beiwe; per-group yield is the only novel angle. Moderate value. |
@@ -217,8 +217,8 @@ re-derive them:
 | 21 | Torous 2015, Mindful Moods, N=13 | Pre-Beiwe custom app — **same scope problem as Nock** (technology not profiled in Module 1/2). Historical baseline only. |
 | 22 | Beukenhorst 2021, ALS COVID, N=8 | N=8; the operational point (continuity through a disruption) is narrative. |
 | 23 | Nawabi 2025, glioblastoma, N=15 | No PMCID, no OA route; pilot scale. |
-| 24 | Duey 2023, speech recordings, N=60 | No PMCID, no OA route. **The only audio/speech collection study in the set** — a genuine gap if it stays unbuilt. |
-| 25 | Chung 2026, SMI daily surveys, N=56 | No PMCID, no OA route; platform not identified in the abstract (likely the same scope check as Nock). |
+| 24 | Duey 2023, speech recordings, N=60 | No PMCID. *Update 2026-10-10:* OpenAlex lists a green OA copy in Leiden University's repository (https://scholarlypublications.universiteitleiden.nl/access/item%3A3731595/view); the repository blocks scripted downloads, so it needs a browser. **The only audio/speech collection study in the set** — a genuine gap if it stays unbuilt. |
+| 25 | Chung 2026, SMI daily surveys, N=56 | *Update 2026-10-10:* now gold OA in *Translational Psychiatry* (10.1038/s41398-026-04218-9, PMC13623969). The Europe PMC full text says participants "installed the Beiwe smartphone application", with 56 outpatients enrolled between 2015 and 2022. Beiwe is confirmed, so it is buildable as a Beiwe profile (not yet screened against the Module 3 rubric). |
 | 27 | Mahalingaiah 2022, Apple Women's Health Study | Design-and-methods paper. Large and important, but it is a protocol/architecture description rather than a deployment report; sits close to the `CLAUDE.md` exclusion for methods papers. **Judgement call — flag for your decision.** |
 
 **Six of the eighteen unbuilt candidates (#7, #14, #15, #23, #24, #25) have no open-access route at

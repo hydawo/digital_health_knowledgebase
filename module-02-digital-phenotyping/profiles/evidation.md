@@ -7,11 +7,11 @@
 | Organization | Evidation Health, Inc., San Mateo, California, USA. Founded 2012. The consumer app has been branded Achievement, MyEvidation and now Evidation |
 | Category | Commercial participant-network and real-world-data platform. **Not a passive phone-sensing platform**, see the scope note in the Summary. Collects wearable data through connected consumer accounts, plus surveys, and links it to claims, EHR and biosample data for sponsors |
 | Current status | **Active.** Vendor pages fetched 2026-09-03 describe 20 or more live condition cohorts, a dermatology cohort launched in 2026 and a new chief executive and chief medical officer appointed in 2026 |
-| Platforms/devices | Consumer app on iOS and Android (Corroborated, the privacy notice names both operating systems; store listings not fetched). Wearable data arrives through 20 or more connected apps and devices, including Fitbit, Apple Health, Garmin and Oura |
+| Platforms/devices | Consumer app "Evidation" on the App Store (seller Evidation Health, Inc., v7.4.0, 2026-10-02) and Google Play (`com.achievemint.android`, updated 2026-10-04) (Verified 2026-10-10). Wearable data arrives through 20 or more connected apps and devices, including Fitbit, Apple Health, Garmin and Oura |
 | Open source | **No.** No public repositories, SDK or self-hosting route found |
 | Hosting/deployment | Vendor SaaS only. Sponsors commission studies that run on Evidation's platform and member base; no researcher-run instance exists |
-| Pricing model | **Non-public.** Every sponsor-facing page ends in a contact form. Members are paid in points redeemable for cash or charity donations |
-| Last verified | 2026-09-03 (first research pass) |
+| Pricing model | **Non-public.** Every sponsor-facing page ends in a contact form. Members are paid in points redeemable for cash or charity donations. No academic program on vendor pages; academics can reach the Evidation-built American Life in Realtime data through USC's Understanding America Study Data Use Agreement (see Data Access) |
+| Last verified | 2026-10-10 (ALiR access terms, Everyone Registry, app-store listings, security pages) |
 
 ## Summary
 
@@ -93,7 +93,8 @@
 
 - Sponsors receive de-identified, patient-level longitudinal datasets. Format, delivery mechanism and latency are not documented publicly (Unclear).
 - Members can see and control what they share, with whom and for how long, and consent to each data request (Reported, vendor pages).
-- The American Life in Realtime dataset, collected on the platform with provisioned Fitbit Inspire 2 devices, is described as publicly available benchmark data (Reported from the paper abstract; access terms not checked).
+- The American Life in Realtime (ALiR) dataset, collected with a study app that Evidation helped design and build ("designing and building the study app", acknowledgments) and provisioned Fitbit Inspire 2 devices, is distributed through USC's Understanding America Study (UAS). The Data Availability statement says UAS "makes deidentified study data available to registered researchers (who sign the Data Use Agreement)", with ALiR data to follow curation of one full year for the whole panel (anticipated late 2025). ALiR Fitbit data "include both minute-level sensor data and Fitbit's aggregated metrics". Funded by the National Library of Medicine (R01LM013237). **Verified 2026-10-10** from the full text (Angrisani et al. 2025, *PNAS Nexus*, PMC12501968). Whether the full ALiR wearable files are already downloadable could not be confirmed without a UAS login. This is the one documented route by which academics can obtain Evidation-collected data without sponsoring a study.
+- **Evidation Everyone Registry** (Reported, ISPOR 2026 poster abstract by Evidation staff: Martin, Ramirez, Khan): "a longitudinal, person-centered data resource" combining wearable data, patient-reported outcomes and optional EHR linkage, launched 2025-12-22 to a selected sample of 5,800 members, with over 3,800 consented by 2026-01-08; 75% of consenters opted to include EHR data and 97% of participants have connected at least one wearable. The abstract does not say whether outside researchers can access it.
 - No public API, bulk export tool or self-service data download for researchers was found.
 
 ## APIs, SDKs, and Extensibility
@@ -119,14 +120,14 @@
 
 - The corporate privacy notice fetched on 2026-09-03 describes identifiers, device information, geolocation and usage data, sharing with service providers and affiliates, disclosure of de-identified information, and a CCPA opt-out for sales or sharing. It states the company does not knowingly sell or share personal information of minors under 16 (Verified from the notice).
 - A separate privacy notice governs the consumer app. It was not fetched, so app-specific handling of health data is Unclear.
-- No SOC 2, ISO 27001, HIPAA or GDPR statement appears on the pages fetched. Compliance status is Unclear, not absent.
+- No SOC 2, ISO 27001, HIPAA or GDPR statement appears on the pages fetched. evidation.com/security and evidation.com/trust return HTTP 404 (checked 2026-10-10). Compliance status is Unclear, not absent.
 - Consent is described as per-request and revocable (Reported).
 
 ## Pricing
 
 - Non-public. Sponsor pricing requires contact through the vendor's form.
 - Member-side costs are zero; members are paid in points.
-- No academic pricing, per-participant fee or minimum commitment was found.
+- No academic pricing, per-participant fee or minimum commitment was found. The academic data route that does exist is ALiR via the UAS Data Use Agreement, which involves no payment to Evidation (see Data Access and Export).
 
 ## Research Evidence and Validation
 
@@ -163,17 +164,17 @@ The papers stored in [`../literature/evidation/`](../literature/evidation/) are 
 ## Poor-Fit Use Cases
 
 - Any study requiring raw phone sensor streams, custom sampling schedules or researcher-hosted data.
-- Small academic studies without sponsor budgets.
+- Small academic studies without sponsor budgets (secondary analysis of ALiR data via UAS is the exception).
 - Studies outside the United States.
 - Work needing an auditable, self-service study console.
 
 ## Open Questions
 
 - What does a sponsor actually receive, in what format and at what latency?
-- Which security certifications, if any, does the platform hold?
+- Which security certifications, if any, does the platform hold? (Still open 2026-10-10: no security or trust page exists.)
 - Does the app read any phone sensors itself, or only connected accounts?
-- Is there any academic or non-commercial access route?
-- What are the access terms for the American Life in Realtime benchmark dataset?
+- ~~Is there any academic or non-commercial access route?~~ Partly answered 2026-10-10: no academic program on Evidation's pages, but ALiR data reach academics through USC's UAS Data Use Agreement. Still open: whether the Evidation Everyone Registry (launched 2025-12-22) will be opened to outside researchers.
+- ~~What are the access terms for the American Life in Realtime benchmark dataset?~~ Answered 2026-10-10: UAS registration plus Data Use Agreement (see Data Access and Export).
 
 These are logged as Q125 in `shared/unresolved-questions.md`.
 
@@ -184,6 +185,8 @@ These are logged as Q125 in `shared/unresolved-questions.md`.
 - How it works (members): https://evidation.com/how-it-works
 - About: https://evidation.com/about
 - Privacy notice: https://evidation.com/privacy
+- Evidation app: https://apps.apple.com/us/app/evidation/id793039965 ; https://play.google.com/store/apps/details?id=com.achievemint.android
+- Understanding America Study data portal (ALiR access): https://uasdata.usc.edu/
 - Contact/sales: linked from every page as "Contact Us" (URL not fetched)
 - Developer/API documentation: none found
 - GitHub: none found
@@ -200,3 +203,6 @@ These are logged as Q125 in `shared/unresolved-questions.md`.
 7. Cho PJ, Olaye IM, Shandhi MMH, Daza EJ, Foschini L, Dunn JP. Identification of key factors related to digital health observational study adherence and retention by data-driven approaches. *Lancet Digit Health* 2025;7(1). doi:10.1016/s2589-7500(24)00219-x. Full-text XML stored; PDF render failed.
 8. Harry ML, et al. Using Social Media to Engage and Enroll Underrepresented Populations: Longitudinal Digital Health Research. *JMIR Form Res* 2025;9:e68093. doi:10.2196/68093. PDF stored.
 9. Angrisani M, et al. American Life in Realtime: Benchmark, publicly available person-generated health data for equity in precision health. *PNAS Nexus* 2025;4(10):pgaf295. doi:10.1093/pnasnexus/pgaf295. PDF stored.
+10. Angrisani et al. 2025, *PNAS Nexus*, full text XML via Europe PMC (PMC12501968), Data Availability, Methods and Acknowledgments sections (accessed 2026-10-10). **Primary/Verified.** UAS Data Use Agreement route, minute-level Fitbit data, Evidation's role in the study app, NLM funding.
+11. ISPOR 2026 poster abstract, "Inclusive Health Research in the Palm of Your Hand: The Evidation Everyone Registry." https://www.ispor.org/heor-resources/presentations-database/presentation-cti/ispor-2026/poster-session-4-3/inclusive-health-research-in-the-palm-of-your-hand-the-evidation-everyone-registry (accessed 2026-10-10). **Reported** (vendor-authored abstract).
+12. App Store (id 793039965) and Google Play (`com.achievemint.android`) listings, and HTTP checks of evidation.com/security and /trust (404), 2026-10-10. **Primary/Verified.**

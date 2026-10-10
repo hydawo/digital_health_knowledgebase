@@ -11,7 +11,7 @@
 | Duration | **8 days per participant** (day 1 baseline survey; days 2–8 intensive). Fielded 21 Jul – 21 Nov 2021. |
 | Devices/platforms used | **[Beiwe](../../module-02-digital-phenotyping/profiles/beiwe.md)** on participants' own smartphones (BYOD, iOS + Android). Twice-daily EMA + minute-level accelerometer and GPS. |
 | Funding/COI | NIH (R01 HL150119, U01 CA176726, U01 HL145386, R01 AG85375), Harvard Chan Dean's Fund, Thomas O. Pyle Fellowship. **Onnela, Beiwe's originator, is a co-author.** Authors declare no conflicts. **Participants were not compensated.** |
-| Last verified | 2026-09-01 |
+| Last verified | 2026-09-01; GPS-cadence comparison and onboarding attribution corrected 2026-10-10 (PMC12407220) |
 
 ## Summary
 
@@ -35,9 +35,10 @@ participants rated the app easy to use (median 85/100) and said they were likely
 whose defining characteristic is decades of voluntary survey compliance — making it close to a
 ceiling estimate for goodwill-driven adherence, and a sobering one.
 
-The authors' own diagnosis of the shortfall is **onboarding technical failure, not fatigue**:
-compliance was flat across the seven days with no downward trend, and the 32 zero-response
-participants clustered around installation and registration problems.
+The authors speculate that the shortfall reflects **onboarding technical difficulties rather than fatigue**.
+Compliance was flat across the seven days with no downward trend. The 19 participants who completed
+the feedback survey but not the baseline survey mainly reported problems with app installation and
+registration. The paper does not break down the 32 zero-response participants by cause.
 
 ## Instrumentation and Deployment Model
 
@@ -50,9 +51,10 @@ were instructed to delete the app and their accounts were deactivated.
 - **GPS: raw data every 15 minutes for 90 consecutive seconds.**
 - **Accelerometer: 10 Hz, every 30 seconds for 10 consecutive seconds.**
 
-Note this is a *denser* GPS cadence than the [2024 NHS3/GUTS substudy](beiwe-chronic-disease-substudy.md)
-(90 s on / 810 s off) but a *sparser* accelerometer duty cycle (10 s in 30 s vs 30 s in 90 s — the
-same 33% duty ratio, at a finer grain). The duty cycles are a deliberate battery trade and the
+Note this is the *same* GPS cadence as the [2024 NHS3/GUTS substudy](beiwe-chronic-disease-substudy.md)
+(90 s on / 810 s off, i.e. 90 s every 15 minutes) but a finer-grained accelerometer duty cycle
+(10 s in 30 s vs 30 s in 90 s, the same 33% duty ratio). Corrected 2026-10-10 against both papers'
+Europe PMC full text (PMC12407220, PMC11512133). The duty cycles are a deliberate battery trade and the
 authors flag in the discussion that this non-continuous sampling is itself a source of the
 completeness shortfall.
 

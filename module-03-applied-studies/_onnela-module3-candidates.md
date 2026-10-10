@@ -274,6 +274,8 @@ a PDF is already on disk, the path is given.
 
 ### 25. Chung Y et al., *Translational psychiatry* 2026 — "Ecological assessment of transdiagnostic clinical symptoms in serious mental illness with daily smartphone surveys"
 
+*Update 2026-10-10:* gold OA, PMC13623969. Full text confirms Beiwe ("installed the Beiwe smartphone application"), N=56, enrolled 2015 to 2022.
+
 - **DOI / PMCID:** `10.1038/s41398-026-04218-9` / no PMCID
 - **Catalog home:** Module 2 (`L006`)
 - **Technologies deployed:** Smartphone daily surveys (serious mental illness outpatients)

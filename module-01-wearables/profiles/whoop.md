@@ -11,7 +11,7 @@
 | Open source | No |
 | Hosting/deployment | Vendor cloud; REST API v2 |
 | Pricing model | **Subscription-only**, the hardware is bundled into a recurring membership |
-| Last verified | 2026-08-21 |
+| Last verified | 2026-08-21; API terms, member tiers, scopes and FDA status re-verified 2026-10-10 |
 
 ## Summary
 
@@ -19,7 +19,7 @@
 
 - For research the defining characteristic is that the **API returns only WHOOP's proprietary aggregated scores and summaries. There is no raw heart rate time series and no inter-beat-interval data through the documented endpoints.** A recovery score, an RMSSD value for the night, a strain figure, a sleep stage summary, these are the unit of analysis. A researcher who wants the underlying physiology cannot get it.
 
-- Against that, WHOOP performed best of six wrist devices in the strongest recent *independent* sleep-staging validation, which is a meaningful point in its favour and one that is often overlooked because the device is less common in academic settings than Fitbit.
+- Against that, WHOOP had the best deep-sleep classification accuracy of six wrist devices in the strongest recent *independent* sleep-staging validation (Schyvens 2025), though it was fourth of six on overall agreement (κ 0.37); see Research Evidence. Corrected 2026-10-10 to match the table below.
 
 ## Products / Platform Architecture
 
@@ -27,6 +27,11 @@
 - **WHOOP app** (iOS/Android), the entire user interface.
 - **WHOOP Developer Platform**, REST API v2, OAuth 2.0, webhooks.
 - WHOOP has a clinical research function internally (it recruits for roles such as Lead Clinical Research Scientist) and has run partnerships with clinical institutions, but a published, self-serve research programme with defined terms is **not established**.
+- **Research program and academic data access (checked 2026-10-10).**
+  - **No published academic or research program was found.** The only documented route for an academic team is the same public developer platform any company uses, under the same API Terms of Use. **Verified** for the developer platform; absence of a research program is **Reported** (whoop.com returned HTTP 403 to scripted requests on 2026-10-10, so WHOOP's own business and research pages could not be read).
+  - **WHOOP Unite** is WHOOP's enterprise offering. It was used in a research partnership with Ashley Addiction Treatment, announced November 2022, together with the phone-free **WHOOP Gateway** Bluetooth hub that sends band data to Unite without a phone (Business Wire press release, read via search results only). **Reported.** Unite's data-access terms, resolution and pricing are not public. **Unclear.**
+  - **What an academic team actually gets through the API:** WHOOP's derived scores and summaries only (see Derived Metrics), for up to 10 members on the default Sandbox tier, more only through manually reviewed tier upgrades (see Data Access and Export). The API terms bar permanent copies of WHOOP data and any use of it to train or test machine-learning or AI models, unless authorised by the data owner or by law. No separate academic tier, raw-data route or research carve-out is documented. **Verified** (developer.whoop.com, 2026-10-10).
+  - WHOOP also documents a "Healthcare Partner Integration" API (service requests and lab requisitions), which appears to serve clinical lab partners, not research data access. **Unclear** relevance.
 
 ## Sensors and Data Streams
 
@@ -91,6 +96,7 @@
 - None documented. No study console, no participant roster, no adherence dashboard, no bulk provisioning path in the public developer platform. A study must build its own OAuth enrolment flow and monitor adherence by inspecting returned data.
 
 - **App approval is required** before an integration launches, WHOOP documents design guidelines and an app approval process. This is an additional gate and timeline item.
+- **Member tiers (re-verified 2026-10-10).** "Every new app starts on the Sandbox tier, which allows up to 10 WHOOP members to connect." Tiers are Sandbox 10, Build 100, Growth 1,000, Scale 5,000 and Production unlimited. "Tiers are earned one at a time": an app can request only the next tier, and from Build onward "moving up requires at least 50% of your current tier's member limit to be connected" (so a Build app needs 50 connected members before it can request Growth). Requests "are reviewed manually", and requests without specific, detailed answers are rejected. **Verified** (developer.whoop.com/docs/developing/app-approval). For a study, this means a 300-person cohort cannot be authorised in one step: the app must pass Build (100) and reach 500 connected members on Growth before Scale is open, so tier requests have to be planned into the enrolment timeline.
 
 ## Data Access and Export
 
@@ -99,9 +105,19 @@
   - The daily cap is the binding constraint at scale: 10,000 requests/day across all users of the application. A 500-participant study pulling several endpoints daily with pagination will approach this. **Request a limit increase before enrolling, not after.**
 - **Historical depth:** not established.
 - **Participant self-export:** WHOOP has offered member data downloads; not verified in this session.
-- **Terms restrictions** (from the API Terms of Use, partially retrieved): the developer is responsible for all use under its credentials and **may not sell, rent, lease, redistribute, or syndicate access to the services through the APIs, nor market, sell, license, or lease data transferred or accessed through the API to any third party.** Further prohibitions cover reverse-engineering WHOOP algorithms, processing export-controlled data, altering WHOOP terms, competing with WHOOP, and disparaging WHOOP.
-  - **This matters directly for open science.** A blanket prohibition on transferring API-obtained data to third parties raises real questions about depositing WHOOP-derived data in a public repository or sharing it with collaborating institutions. No explicit research carve-out was found. **This should be resolved with WHOOP in writing before a study commits**, particularly for funders with open-data mandates.
-- No explicit prohibition on academic or clinical research use was found in the terms language retrieved, but neither was an explicit permission. The full terms document was not retrieved in this session.
+- **Terms restrictions** (WHOOP API Terms of Use, effective 6 October 2026, read in full 2026-10-10, **Verified**):
+  - The developer may not "build databases, or otherwise create permanent copies of WHOOP Data, or keep cached copies longer than permitted by the cache header" (§4.2).
+  - The developer may not "Use any API or WHOOP Data to create, develop, test, train, fine-tune or improve any large language model or any other machine learning or artificial intelligence model, application, or system" (§4.2).
+  - Both §4.2 bans open with "Unless expressly authorized by the WHOOP Data owner or by applicable law". The terms do not say whether the participant who connects their account counts as the "WHOOP Data owner", so whether participant consent lifts these bans is a legal question. **Unclear.**
+  - The developer may not copy, sell, distribute or sublicense WHOOP Data to any third party (§4.2), and may not market, sell, license or lease API data to a third party "even if an End User consents to such use" (§3.1).
+  - The developer may not use the APIs "to design, develop, augment, or support a medical device" (§3.1).
+  - HIPAA (§1.8): "Unless otherwise agreed in writing by WHOOP", WHOOP makes no HIPAA representations, and a covered entity or business associate may not transmit Protected Health Information through the APIs without WHOOP's prior written consent.
+  - WHOOP may limit "the number of API requests that Company may make, or the number of users Company may serve" (§1.5); use beyond those limits needs WHOOP's prior written consent and may carry additional terms or charges.
+  - API access "is currently provided at no charge" (§1.12).
+  - On termination the developer must delete any cached or stored content (§7).
+  - Further prohibitions cover reverse-engineering WHOOP algorithms, processing export-controlled data, altering WHOOP terms, competing with WHOOP, and disparaging WHOOP.
+  - Section numbers are counted from the order of clauses on the page, which does not print them.
+  - **This matters directly for open science and for analysis.** Read literally, a study cannot keep a permanent analysis dataset of WHOOP data, cannot train a machine-learning model on it, and cannot deposit it or share it with collaborating institutions, unless the "data owner" or "applicable law" exception applies or WHOOP agrees in writing. No research carve-out exists. **Resolve this with WHOOP (apisupport@whoop.com is the contact the terms give for limit requests) and with institutional counsel before a study commits**, particularly for funders with open-data mandates.
 
 ## APIs, SDKs, and Extensibility
 
@@ -123,14 +139,16 @@
 
 ## Privacy, Security, and Compliance
 
-- Not established. HIPAA/BAA, SOC 2, ISO certification, GDPR DPA, data residency, and deletion mechanics were not verified in this session. Given the restrictive data-transfer terms noted above, the compliance and data-governance conversation with WHOOP is a prerequisite, not a formality.
+- **HIPAA (re-verified 2026-10-10):** the API Terms say WHOOP "does not intend use of the APIs to create any obligations under HIPAA" unless otherwise agreed in writing, and bar covered entities and business associates from transmitting PHI through the APIs without WHOOP's prior written consent. A BAA-type arrangement is therefore contemplated but none is published. **Verified** (terms text).
+- SOC 2, ISO certification, GDPR DPA, data residency, and deletion mechanics were not verified. Given the restrictive data-transfer terms noted above, the compliance and data-governance conversation with WHOOP is a prerequisite, not a formality.
+- **FDA status (re-verified 2026-10-10 in FDA databases):** see Research Evidence and Validation. The ECG feature is 510(k)-cleared; Blood Pressure Insights is not cleared.
 
 ## Pricing
 
 - **Subscription includes hardware.** Reported 2026 tiers: WHOOP ONE from ~$199/year, PEAK ~$239/year, LIFE ~$359/year, depending on tier and device. Roughly $16.58, $29.92/month equivalent. *Status: Reported*, secondary sources, not verified against WHOOP's pricing page.
 - **This is the most expensive per-participant recurring cost in this module**, roughly 3 to 5× Oura's membership and far above Garmin's zero. For a 100-person 12-month study, WHOOP membership alone is on the order of $20,000, $36,000.
-- No published academic or research pricing. Whether WHOOP offers research discounts or bulk study provisioning is an open question.
-- No API fee documented.
+- No published academic or research pricing. Whether WHOOP offers research discounts or bulk study provisioning is an open question. WHOOP Unite pricing is not public (searched 2026-10-10). **Unclear.**
+- No API fee: the API Terms state access "is currently provided at no charge", with prior notice promised if that changes. **Verified** (2026-10-10).
 
 ## Research Evidence and Validation
 
@@ -161,18 +179,21 @@
 | Study | Hardware | Result | Funding / COI | Confidence |
 |---|---|---|---|---|
 | Miller DJ, Sargent C, Roach GD 2022, *Sensors* 22(16):6317, N=53, single night PSG + ECG | WHOOP 3.0 vs Oura Gen2 (plus Apple Watch S6, Garmin FR245, Polar Vantage V, Somfit) | Four-stage κ WHOOP 0.44 vs Oura 0.43 (tied); two-state κ 0.44 vs 0.51; WHOOP TST bias −12.2 min, Oura +1.5 min; WHOOP HR ICC 0.99, HRV ICC 0.99 vs ECG | Australian Institute of Sport funded it; the authors' CQU Sleep Lab "receives support for research (i.e., funding, equipment) from WHOOP Inc."; WHOOP staff, blinded to PSG, supplied WHOOP's sleep epochs and R-R intervals | **Verified** (full text read). Tier B for WHOOP |
-| Grandner MA et al. 2023, *Sleep* 46(1):zsac152, in-lab PSG night (WHOOP n=33, Oura n=30) | WHOOP 3.0 vs Oura V2 (plus Happy Ring, Fitbit Charge 4, Actiwatch 2) | Sleep/wake accuracy WHOOP 0.86 vs Oura 0.88; specificity 0.54 vs 0.49 | 5 of 7 authors employed by Happy Health, the competing ring's maker | **Verified** (full text read) |
+| Grandner MA et al. 2023, *Sleep* 46(1):zsac152, in-lab PSG night (WHOOP n=33, Oura n=30) | WHOOP 3.0 vs Oura V2 (plus Happy Ring, Fitbit Charge 4, Actiwatch 2) | Sleep/wake accuracy WHOOP 0.86 vs Oura 0.88; specificity 0.54 vs 0.49 | 5 of 7 authors affiliated with Happy Health, the competing ring's maker (PubMed affiliations); NIH grant R01 MD011600 listed | **Reported.** Corrected 2026-10-10: the full text has never been read (PDF not obtained, PMC and OUP bot checks; not in Europe PMC's open-access set), and the abstract gives Happy Ring figures only, so the WHOOP and Oura figures cannot be checked against a source on record |
 | Dial MB et al. 2025, *Physiol Rep* 13:e70527, 536 nights, Polar H10 reference | WHOOP 4.0 vs Oura Gen3/Gen4 | Resting HR and HRV: Oura ahead of WHOOP (see `../validation-evidence.md` §3a) | AFRL, no competing interests | **Verified** |
 
-- Read together: on PSG sleep staging the only direct comparison (Miller 2022) shows WHOOP 3.0 and Oura Gen2 tied, which does not support the bridged estimate's "Oura meaningfully ahead" for that generation. No PSG study compares WHOOP 4.0 or later with Oura Gen3 or later; the bridged estimate in `../validation-evidence.md` §3b is still the only (indirect) evidence for current hardware.
+- Read together: on PSG four-stage staging the only direct comparison (Miller 2022) shows WHOOP 3.0 and Oura Gen2 tied (0.44 vs 0.43), which does not support the bridged estimate's "Oura meaningfully ahead" for that generation. It is not a clean head-to-head either: Oura led on two-state sleep/wake kappa (0.51 vs 0.44), WHOOP's 30-second epochs were supplied by WHOOP staff while Oura's were exported from the app at 5-minute precision, and the authors state the analyses "were comparisons of six independent devices to gold-standard PSG and ECG rather than a comparison between devices" (re-read in the stored PDF, 2026-10-10). No PSG study compares WHOOP 4.0 or later with Oura Gen3 or later; the bridged estimate in `../validation-evidence.md` §3b is still the only (indirect) evidence for current hardware.
 
 - **No WHOOP 5.0/MG validation of any kind was located.** Searched 2026-10-09: PubMed `whoop[tiab] AND ("5.0" OR "WHOOP MG" OR "Whoop 5")` (3 hits, none a validation) and Europe PMC full text including preprints (`"WHOOP 5.0" OR "WHOOP MG"`, no validation study). Every located independent result is on WHOOP 2.0 to 4.0. Whether 5.0 performs differently is **Unclear**.
 
-- The CQU author cluster's WHOOP ties are now documented paper by paper (rechecked 2026-10-09): Bellenger et al. 2022 (*Sensors* 22:6723, water polo HRV) was funded by the Australian Institute of Sport, and its COI statement discloses that the CQU Sleep Lab receives WHOOP funding and equipment, so it is **Tier B, Verified**. Miller et al. 2020 (*J Sports Sci*, PSG validation) lists the Australian Research Council (DP160104909) and the Australian Institute of Sport as funders in Crossref metadata, and its abstract says WHOOP scored the sleeps with its proprietary algorithm; its COI statement could not be read (publisher bot check). **Likely Tier B, COI Unclear.**
+- The CQU author cluster's WHOOP ties are now documented paper by paper (rechecked 2026-10-09; Biosensors 2021 added 2026-10-10): Miller et al. 2021 (*Biosensors* 11(6):185) states that Dean Miller's CQUniversity position "is currently sponsored by WHOOP Inc", that this "was initiated after the data were collected", and that it "represents a potential conflict of interest" for Miller and for Roach, Sargent and Lastella; funding was ARC DP160104909 and the Australian Institute of Sport (Europe PMC full text of PMC8226553, **Verified**). Bellenger et al. 2022 (*Sensors* 22:6723, water polo HRV) was funded by the Australian Institute of Sport, and its COI statement discloses that the CQU Sleep Lab receives WHOOP funding and equipment, so it is **Tier B, Verified**. Miller et al. 2020 (*J Sports Sci*, PSG validation) lists the Australian Research Council (DP160104909) and the Australian Institute of Sport as funders in Crossref metadata, and its abstract says WHOOP scored the sleeps with its proprietary algorithm; its COI statement could not be read (publisher bot check). **Likely Tier B, COI Unclear.**
 
 - **SpO2 and skin temperature:** no independent validation against a reference instrument located (PubMed and Europe PMC rechecked 2026-10-09). **Still open.**
 
-- Further caveats: the Schyvens device was **WHOOP 4.0**, not the current 5.0/MG generation. WHOOP has an active internal research programme and publishes vendor-authored validation, which should be weighted as **Reported**. WHOOP MG's ECG and Blood Pressure Insights carry regulatory clearances per WHOOP's claims; the specific clearance scope was not verified. **Unclear.**
+- Further caveats: the Schyvens device was **WHOOP 4.0**, not the current 5.0/MG generation. WHOOP has an active internal research programme and publishes vendor-authored validation, which should be weighted as **Reported**.
+- **Regulatory status, corrected 2026-10-10.** The earlier text said both MG features carry clearances "per WHOOP's claims"; that was wrong for blood pressure.
+  - **ECG:** FDA 510(k) **K243236**, "WHOOP ECG (electrocardiogram) Feature (1.0)", decision 2025-04-04 (substantially equivalent), product code QDA. It is the only WHOOP 510(k) in openFDA. **Verified** (openFDA).
+  - **Blood Pressure Insights (BPI): not cleared.** FDA Warning Letter CMS #709755 (14 July 2025) states WHOOP "is marketing Blood Pressure Insights ... in the United States without marketing clearance or approval" and that BPI falls outside the general-wellness policy. A close-out letter dated 17 June 2026 says that, after WHOOP's changes to BPI and its labelling, "FDA does not intend to enforce the device statutory and regulatory requirements for your BPI product as modified", and that the letter is specific to BPI as modified. So BPI is now marketed as a general-wellness feature under enforcement discretion, not as a cleared device. **Verified** (FDA letters, read 2026-10-10).
 
 ## Strengths
 
@@ -188,14 +209,15 @@
 
 - **No raw data of any kind.** No HR time series, no IBI/RR, no accelerometry, no PPG. The API exposes only WHOOP's own scores and summaries. This is the most restrictive data model of any platform in this module.
 - **Highest recurring per-participant cost** by a wide margin.
-- **Restrictive API terms prohibiting transfer of API data to third parties**, with no located research carve-out, a potential conflict with open-data and data-sharing mandates.
+- **Restrictive API terms** (effective 6 October 2026): no permanent copies of WHOOP data, no ML or AI model training on it, no transfer to third parties, each unless authorised by the data owner or by law; no research carve-out. A potential conflict with open-data and data-sharing mandates and with any analysis that trains a model.
+- **Member tiers cap a new app at 10 members** and require stepwise, manually reviewed upgrades (Build 100, Growth 1,000, Scale 5,000).
 - Proprietary black-box composites (Strain, Recovery) with no published algorithms and no researcher control over version changes.
 - No GPS, no step time series.
-- Journal (self-report) data appears not to be exportable.
+- Journal (self-report) data is not exportable through the API: the v2 OAuth scopes are exactly `read:body_measurement`, `read:cycles`, `read:profile`, `read:recovery`, `read:sleep` and `read:workout`, with no Journal scope or endpoint (**Verified**, developer.whoop.com/api, 2026-10-10).
 - Default rate limits are low (10,000 requests/day per client) and require proactive negotiation at cohort scale.
 - No study management tooling; app approval adds a gate.
 - Thinner academic literature than Fitbit.
-- Compliance posture unverified.
+- Compliance posture largely unverified; HIPAA explicitly disclaimed for the APIs.
 
 ## Best-Fit Use Cases
 
@@ -209,6 +231,7 @@
 
 - Any study needing raw or high-resolution physiological signals.
 - Studies with open-data or data-deposition requirements, until the terms question is resolved.
+- Studies that plan to train or validate a machine-learning model on WHOOP data, without WHOOP's written agreement.
 - Large cohorts on a tight budget.
 - Location, mobility, or step-based endpoints.
 - Studies needing participant-facing device feedback as part of an intervention.
@@ -218,13 +241,14 @@
 
 - *(Directed to WHOOP: developer support via https://developer.whoop.com/docs/developing/support/ , and WHOOP business/partnerships.)*
 
-- **Do WHOOP's API Terms of Use permit depositing derived data in public research repositories or sharing it with collaborating institutions?** This is the single most important question for any funded academic study.
+- **Do WHOOP's API Terms of Use permit depositing derived data in public research repositories or sharing it with collaborating institutions?** This is the single most important question for any funded academic study. As of the terms effective 6 October 2026, the default answer is no unless the data-owner or applicable-law exception applies (see Data Access and Export).
 - Is there any research/academic programme, research pricing, bulk membership provisioning, or study-management offering?
 - Is any raw or higher-resolution data (HR time series, IBI) obtainable under a separate research agreement, outside the public API?
 - Is WHOOP Journal data exportable via API or any other route?
 - What historical depth is retrievable for a newly authorised member?
 - What rate-limit increases are realistically granted, and on what evidence?
-- Is ECG data from the WHOOP MG generation available via API?
+- Is ECG data from the WHOOP MG generation available via API? (Re-checked 2026-10-10: the six v2 OAuth scopes have no ECG scope.)
+- Does WHOOP treat the participant as the "WHOOP Data owner" who can authorise a permanent research copy under §4.2 of the API Terms? Will WHOOP agree in writing to research retention, data deposit or model training?
 - HIPAA/BAA, SOC 2, ISO 27001, GDPR DPA, data residency, and participant deletion mechanics.
 - Independent validation of WHOOP HRV against ECG.
 - Current, vendor-confirmed membership pricing and tier definitions.
@@ -248,10 +272,16 @@
 2. WHOOP Developer Platform introduction. https://developer.whoop.com/docs/introduction/ (accessed 2026-08-21). Establishes v2 status, v1 webhook removal, and the app-approval requirement.
 3. WHOOP API rate limiting. https://developer.whoop.com/docs/developing/rate-limiting/ (accessed 2026-08-21). Establishes 100 req/min and 10,000 req/day per client, the rate-limit headers, and that increases are available on request.
 4. WHOOP OAuth scopes (corroborated across developer documentation and integration guides). https://developer.whoop.com/docs/developing/getting-started/ ; https://openwearables.io/docs/providers/whoop-api-integration (accessed 2026-08-21).
-5. WHOOP API Terms of Use. https://developer.whoop.com/api-terms-of-use/ (accessed 2026-08-21, **partially retrieved via search index, not fetched in full**). Source of the prohibition on selling/renting/redistributing API access and on marketing, selling, licensing, or leasing API-accessed data to third parties. **Re-read in full before relying on this summary.**
+5. WHOOP API Terms of Use. https://developer.whoop.com/api-terms-of-use/ (accessed 2026-08-21 via search index; **re-read in full 2026-10-10**, effective date 6 October 2026). **Primary.** Source of the permanent-copy and AI/ML bans and their data-owner exception (§4.2), the third-party and medical-device prohibitions (§3.1), the HIPAA clause (§1.8), the user-cap clause (§1.5), the no-charge clause and the termination deletion duty.
 6. Schyvens A.-M. et al., "A performance validation of six commercial wrist-worn wearable sleep-tracking devices for sleep stage scoring compared to polysomnography." *SLEEP Advances* 2025;6(2):zpaf021. https://academic.oup.com/sleepadvances/article/6/2/zpaf021/8090472, independent, n=62; WHOOP 4.0 best of six at ~69.6%.
 7. WHOOP membership pricing (secondary, unverified against vendor page): https://lifestack.ai/blog/how-much-is-whoop-membership ; https://www.droid-life.com/2026/04/22/is-a-fitbit-air-at-99-plus-a-monthly-subscription-appealing/ (accessed 2026-08-21).
 8. Miller DJ, Sargent C, Roach GD. "A Validation of Six Wearable Devices for Estimating Sleep, Heart Rate and Heart Rate Variability in Healthy Adults." *Sensors* 2022;22(16):6317. https://doi.org/10.3390/s22166317 (PMC9412437; accessed 2026-10-09). PDF: `../literature/whoop/2022-miller-sensors-six-wearables-sleep-hr-hrv-validation.pdf`.
 9. Grandner MA et al. *Sleep* 2023;46(1):zsac152. https://doi.org/10.1093/sleep/zsac152 (PMC13396806; accessed 2026-10-09).
 10. Bellenger CR, Miller D, Halson SL, Roach GD, Maclennan M, Sargent C. *Sensors* 2022;22(18):6723. https://doi.org/10.3390/s22186723 (funding and COI read from `../literature/whoop/2022-bellenger-sensors-hrv-variability-water-polo.pdf`, 2026-10-09).
 11. Miller DJ, Lastella M, Scanlan AT, et al. *J Sports Sci* 2020;38(22):2631-2636. https://doi.org/10.1080/02640414.2020.1797448 (Crossref funder metadata, https://api.crossref.org/works/10.1080/02640414.2020.1797448, accessed 2026-10-09).
+12. WHOOP for Developers, App Approval. https://developer.whoop.com/docs/developing/app-approval (accessed 2026-10-10). **Primary.** Sandbox, Build, Growth, Scale and Production member tiers, the 50% rule and manual review.
+13. WHOOP for Developers, API reference. https://developer.whoop.com/api (accessed 2026-10-10). **Primary.** The six v2 OAuth scopes; no Journal or ECG scope.
+14. FDA 510(k) K243236, WHOOP ECG (electrocardiogram) Feature (1.0). https://api.fda.gov/device/510k.json?search=k_number:K243236 ; https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K243236 (accessed 2026-10-10). **Primary.** Decision 2025-04-04, product code QDA; the only WHOOP record in openFDA (https://api.fda.gov/device/510k.json?search=applicant:whoop).
+15. FDA Warning Letter, WHOOP, Inc., MARCS-CMS 709755, 14 July 2025. https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/whoop-inc-709755-07142025 ; close-out letter, 17 June 2026, https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/whoop-inc-709755-06172026 (both accessed 2026-10-10). **Primary.** BPI marketed without clearance; enforcement discretion for BPI as modified.
+16. Business Wire, "WHOOP Unite and Ashley Addiction Treatment Partner to Break New Ground in Research and Patient Care", 10 November 2022. https://www.businesswire.com/news/home/20221110005420/en/ (seen via search results 2026-10-10, not opened). **Secondary/press.** WHOOP Unite and WHOOP Gateway in a research partnership.
+17. Miller DJ, Roach GD, Lastella M, et al. *Biosensors* 2021;11(6):185. https://doi.org/10.3390/bios11060185 (funding and conflict-of-interest sections read in Europe PMC full text of PMC8226553, 2026-10-10).

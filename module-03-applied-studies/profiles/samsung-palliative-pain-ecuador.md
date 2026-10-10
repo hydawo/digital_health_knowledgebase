@@ -21,8 +21,8 @@ small — 7 patients — but it earns a place for three reasons: it is the only 
 the module's other palliative study, and it produces a clean, unexpected result about **where
 participants prefer to enter patient-reported outcomes**.
 
-**[Helmer 2025](movesense-palliative-support-trial.md) terminated: a no-proxy-consent requirement
-excluded 95.6% of screened palliative patients.** This study, in the same clinical setting, ran to
+**[Helmer 2025](movesense-palliative-support-trial.md) terminated early: 95.6% of screened palliative patients
+failed eligibility, chiefly because the ethics committee allowed no proxy consent.** This study, in the same clinical setting, ran to
 completion with 7 patients — because it structured recruitment differently. Recruitment ran **through
 the existing home-based palliative care team during routine visits**, with a clinician performing a
 **KPS assessment first** and only then introducing the study, and **consent taken in person with a

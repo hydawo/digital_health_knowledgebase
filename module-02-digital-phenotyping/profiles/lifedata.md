@@ -7,7 +7,7 @@
 | Organization | LifeData, LLC, 1800 N Wabash Rd, Suite 300, Marion, Indiana 46952, USA |
 | Category | Commercial EMA / ESM / eDiary / ePRO / eCOA platform. **Not a passive-sensing digital phenotyping platform**, see the scope note below |
 | Current status | **Active.** Two live product generations in parallel: the original platform (participant app **RealLife Exp**, researcher console `server.lifedatacorp.com`) and a successor platform marketed as **LifeData+** (participant app **LifeData**, console `app.lifedatacorp.com`) |
-| Platforms/devices | Native iOS and Android participant apps (four store listings total, two per generation); web researcher console |
+| Platforms/devices | Native iOS and Android participant apps (four store listings total, two per generation); web researcher console. App Store re-checked 2026-10-10: LifeData v1.0.17 (2026-10-10), RealLife Exp v2.8.14 (2026-04-06), both seller LIFEDATA LLC |
 | Open source | **No.** No GitHub organization, no public repositories, no SDK found (Verified, `api.github.com/orgs/lifedatacorp` returns 404; a GitHub code/repo search for the product names returns zero results) |
 | Hosting/deployment | Vendor SaaS only. Servers **located in the United States**; onward hosting via **Microsoft / Microsoft Azure**, named in the vendor's own privacy policy. No self-hosting option identified |
 | Pricing model | Commercial subscription, **entirely non-public**, priced on number of researchers × subscription duration × number of participants; five named tiers (Individual, Team, Enterprise, Clinical, Monitoring) with no rate figures; graduate-student discount stated to exist; every tier's call-to-action is "Schedule Consultation" |
@@ -168,7 +168,7 @@
 - **SOC 2: not mentioned anywhere.** **ISO 27001: not mentioned anywhere.** **21 CFR Part 11: not mentioned anywhere**, notable given that the vendor sells a "Clinical" tier with "Real-time eCOA" and multi-site support into regulated clinical trials, where Part 11 / Annex 11 validation is normally a threshold question. **No trust centre, no security whitepaper, no DPA template is published.**
 - No penetration-test, sub-processor list (beyond the generic "Microsoft"), or breach-notification commitment is published.
 
-- **Net assessment:** on *documented data-protection posture* LifeData sits mid-pack in this module, better than MetricWire (whose compliance documentation could not be located at all across two passes) and better than the academic open-source platforms on retention/deletion specificity, but clearly behind **Avicenna Research**, which holds a dated, third-party-audited ISO 27001:2022 certification. LifeData's DPF certification is a real, externally verifiable status; its HIPAA claim is marketing text with no legal-document backing.
+- **Net assessment (corrected 2026-10-10):** on *documented data-protection posture* LifeData sits mid-pack in this module. It is better than the academic open-source platforms on retention/deletion specificity. Avicenna Research (ISO 27001:2022) and MetricWire (ISO 27001, SOC 2 Type II, Part 11) both publish certification statements that LifeData lacks, but neither links a certificate that could be read, so both are vendor statements (Corroborated), not audited evidence. The 2026-09-02 text called Avicenna's certification "third-party-audited" and said MetricWire's compliance documentation "could not be located"; both were wrong (see those profiles). LifeData's DPF certification is a real, externally verifiable status; its HIPAA claim is marketing text with no legal-document backing.
 
 ## Pricing
 
@@ -183,7 +183,7 @@
 - A **graduate-student discount** exists for qualifying students (vendor-stated).
 - A substantial **paid professional-services menu** sits alongside the subscription: protocol consultation, protocol review, protocol building, sponsor/site training, methodological consultation, user-acceptance testing, data monitoring/reporting, dashboard development, custom audit-trail reports, and data-analysis consultation. **None is priced publicly**, and several (audit trails in particular) cover ground a research team might reasonably have assumed was included.
 
-- No free tier or public free trial is advertised, a difference from Avicenna Research, whose free trial is at least third-party-reported. All figures require vendor contact.
+- No free tier or public free trial is advertised. Contrast Avicenna Research, whose vendor-stated free trial is for testing only (data wiped monthly; corrected 2026-10-10). All figures require vendor contact.
 
 ## Research Evidence and Validation
 

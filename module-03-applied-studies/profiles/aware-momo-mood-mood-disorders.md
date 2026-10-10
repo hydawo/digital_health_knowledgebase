@@ -1,17 +1,17 @@
-# Aledavood et al. 2024 — MoMo-Mood: AWARE + actigraph + bed sensor in mood disorders, N=151 for up to 1 year
+# Aledavood et al. 2025 — MoMo-Mood: AWARE + actigraph + bed sensor in mood disorders, N=151 for up to 1 year
 
 ## Quick Facts
 
 | Field | Details |
 |---|---|
-| Citation | Aledavood T, Luong N, Baryshnikov I, Darst R, Heikkilä R, Holmén J, Ikäheimonen A, Martikkala A, Riihimäki K, Saleva O, Triana AM, Isometsä E. "Multimodal Digital Phenotyping Study in Patients With Major Depressive Episodes and Healthy Controls (Mobile Monitoring of Mood): Observational Longitudinal Study." *JMIR Mental Health* 2024;11:e63622. DOI [10.2196/63622](https://doi.org/10.2196/63622). PMID 39984168 / PMC11890149. |
+| Citation | Aledavood T, Luong N, Baryshnikov I, Darst R, Heikkilä R, Holmén J, Ikäheimonen A, Martikkala A, Riihimäki K, Saleva O, Triana AM, Isometsä E. "Multimodal Digital Phenotyping Study in Patients With Major Depressive Episodes and Healthy Controls (Mobile Monitoring of Mood): Observational Longitudinal Study." *JMIR Mental Health* 2025;12:e63622 (published online 2025-02-21). DOI [10.2196/63622](https://doi.org/10.2196/63622). PMID 39984168 / PMC11890149. |
 | Study design | Observational longitudinal cohort with **four subcohorts** (MDD, bipolar disorder, borderline personality disorder, healthy controls), preceded by a separately-recruited pilot. **Study adherence is research question 1**, not a footnote. Two-phase design: a 2-week *active* phase, then a *passive* phase of up to 1 year. |
 | Sample size (enrolled / analyzed) | **Main study: 164 recruited → 13 (7.9%) supplied no passive data at all → 151 analyzed** (30 controls; 121 patients — 76 MDD, 24 BPD, 21 BD). **Pilot: 37 recruited (23 controls + 14 MDD), 1 control excluded on baseline PHQ-9.** |
 | Population | Finnish psychiatric **outpatients** already diagnosed by structured interview (MINI; SCID-II for BPD), recruited from Helsinki University Hospital Mood Disorder Division, Turku University Central Hospital and City of Espoo Mental Health Services, plus healthy controls. Patients mean age 34.7 (SD 12.71), 71.1% female; controls mean 42 (SD 14.07), 77% female. Excluded: psychotic features, concurrent substance use disorder, imminent suicide risk. |
 | Duration | **Up to 1 year** (pilot: 6 months for patients, 1 year for controls). Active phase 2 weeks; passive phase the remainder. |
 | Devices/platforms used | **[AWARE](../../module-02-digital-phenotyping/profiles/aware-framework.md)** — "modified and adapted" by the authors — orchestrated by the **Niimpy / Non-Intrusive Individual Monitoring Architecture (NIIMA)** platform; **Philips Actiwatch 2** actigraph; **Murata SCA11H** ballistocardiographic bed sensor with a preconfigured Wi-Fi router. Smartphone BYOD; actigraph, bed sensor and router provisioned. |
 | Funding/COI | Academic (Aalto University, University of Helsinki). James S. McDonnell Foundation (TA); Aalto Science-IT. **"Conflicts of Interest: None declared."** Acknowledgements thank Denzil Ferreira — an AWARE author — for discussions, but no AWARE developer is on the byline. |
-| Last verified | 2026-09-02 |
+| Last verified | 2026-09-02; year and volume corrected 2026-10-10 against Crossref (10.2196/63622) and Europe PMC (PMID 39984168) |
 
 ## Summary
 
@@ -146,4 +146,4 @@ That last point is a feasibility finding in the strict sense: **a year of multim
 
 ## Sources
 
-1. Aledavood T, Luong N, Baryshnikov I, Darst R, Heikkilä R, Holmén J, Ikäheimonen A, Martikkala A, Riihimäki K, Saleva O, Triana AM, Isometsä E. *JMIR Ment Health* 2024;11:e63622. DOI 10.2196/63622. Full text read from Europe PMC (PMC11890149), 2026-09-02. Byline verified against the publisher PDF (PMC JATS lists the handling editor and peer reviewers in separate contrib-groups after the authors). Establishes every figure in this profile.
+1. Aledavood T, Luong N, Baryshnikov I, Darst R, Heikkilä R, Holmén J, Ikäheimonen A, Martikkala A, Riihimäki K, Saleva O, Triana AM, Isometsä E. *JMIR Ment Health* 2025;12:e63622. DOI 10.2196/63622. Full text read from Europe PMC (PMC11890149), 2026-09-02. Byline verified against the publisher PDF (PMC JATS lists the handling editor and peer reviewers in separate contrib-groups after the authors). Establishes every figure in this profile.

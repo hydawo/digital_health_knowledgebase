@@ -11,7 +11,7 @@
 | Duration | Oct 2023 – Nov 2024. Monitoring up to **30 days**, or until discharge or death. |
 | Devices/platforms used | A **wrist-worn monitor** and a **single-lead chest-wall ECG sensor**, both **CE-marked certified medical devices**. See [Movesense](../../module-01-wearables/profiles/movesense.md) — note the device-identification caveat under Evidence Confidence. |
 | Funding/COI | Academic (University Hospital Würzburg). No device-manufacturer authorship apparent. |
-| Last verified | 2026-08-31 |
+| Last verified | 2026-08-31; consent wording in Relevance to Future Study Design corrected 2026-10-10 (PMC12126900) |
 
 ## Summary
 
@@ -134,8 +134,11 @@ with the ethics committee *before* designing the recruitment plan, not after.
 
 ## Relevance to Future Study Design
 
-1. **Settle the consent mechanism before anything else in populations with impaired capacity.** A
-   no-proxy-consent requirement excluded 95.6% of screened patients and killed the study. This
+1. **Settle the consent mechanism before anything else in populations with impaired capacity.** 95.6%
+   of screened patients failed eligibility, "especially the written informed consent criteria", because
+   the ethics committee allowed no proxy consent. The study was terminated early, with recruitment
+   challenges including strict consent requirements given as the reason (wording corrected 2026-10-10
+   against the Europe PMC full text, PMC12126900). This
    applies equally to dementia, ICU, acute stroke, and severe psychiatric illness cohorts.
 2. **Beware consent requirements that select against your target population.** Patients able to
    self-consent had systematically different prognoses from those who could not — so even a

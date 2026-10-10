@@ -4,14 +4,14 @@
 
 | Field | Details |
 |---|---|
-| Organization | **Ametris**, formerly ActiGraph; rebranded 25 June 2025; **acquired by Signant Health, announced May 2026** |
+| Organization | **Ametris**, formerly ActiGraph; rebranded 25 June 2025; **acquired by Signant Health** (definitive agreement announced 16 April 2026; acquisition announced 14 May 2026; ametris.com now reads "A Signant Health Company") |
 | Category | Research-grade actigraphy and clinical-trial digital endpoint platform |
 | Current status | Active, but **undergoing significant corporate and product transition** |
 | Platforms/devices | CentrePoint Insight Watch, ActiGraph LEAP; legacy wGT3X-BT, GT9X Link (end-of-life), GT3X+ |
 | Open source | No |
 | Hosting/deployment | CentrePoint cloud platform; legacy ActiLife desktop software |
-| Pricing model | Not public; quote-based |
-| Last verified | 2026-08-21 |
+| Pricing model | Not public; "Pricing is calculated for each unique order" (quote); academic pricing list on request |
+| Last verified | 2026-08-21; acquisition dates, device specs, CentrePoint API, compliance and academic channel re-verified 2026-10-10 |
 
 ## Summary
 
@@ -21,7 +21,7 @@
 
 - January 2025, acquired the **Biofourmis Connect** digital trial platform, including the Biovitals Analytics Engine and RhythmAnalytics SaMD products.
 - 25 June 2025, **rebranded from ActiGraph to Ametris** (pronounced "uh-ME-tris").
-- May 2026, **Signant Health announced its acquisition of Ametris**, to create an end-to-end eCOA and digital outcome measures platform.
+- 16 April 2026, **Signant Health announced a definitive agreement to acquire Ametris**, subject to regulatory approvals and closing conditions; on 14 May 2026 Signant announced the acquisition, to create an end-to-end eCOA and digital outcome measures platform (Signant release and PR Newswire, read 2026-10-10). Corrected 2026-10-10; the earlier text dated the announcement to May only.
 - The **GT9X Link is in end-of-life transition** and no longer available to new customers.
 - The current device line is the **CentrePoint Insight Watch** and **ActiGraph LEAP**.
 
@@ -53,20 +53,20 @@
 
 | Sensor | Present | Researcher access to underlying signal | Resolution or sampling | Notes |
 |---|---|---|---|---|
-| PPG | Some models | Unclear | Unclear | Legacy GT9X had an optional module; Insight Watch status not established. |
+| PPG | LEAP: multi-wavelength (green 530 nm, red 655 nm, IR 940 nm) | Raw PPG via CentrePoint API Data Access Files: green 25 Hz, green 100 Hz, red/IR 50 Hz, "only available for certain devices, firmware versions, and study configuration, and ... subject to contract restrictions" | 25 to 100 Hz by category | Verified 2026-10-10 (LEAP page; CentrePoint API docs). No PPG listed for Insight Watch or wGT3X-BT. |
 | ECG | No | Not applicable | Not applicable |  |
-| Accelerometer | Yes | Raw, retained | Configurable, historically 30 to 100 Hz | The core capability. Current-device rates not established; confirm for Insight Watch and LEAP. |
-| Gyroscope | Some legacy models | Unclear | Unclear | GT9X Link had an IMU; current status not established. |
-| Magnetometer | Some legacy models | Unclear | Unclear | As gyroscope. |
-| Temperature | Unclear | Unclear | Unclear | Not established for current devices. |
+| Accelerometer | Yes | Raw, retained; raw files via CentrePoint API | **Insight Watch and LEAP: 32 to 256 Hz**, primary accelerometer ±8 g (default 32 Hz); **wGT3X-BT: 30 to 100 Hz, ±8 g** | Verified 2026-10-10 (Ametris product pages). Primary range is listed as fixed, not configurable. LEAP IMU accelerometer ±16 g in one spec block, ±2 g/±16 g in another. |
+| Gyroscope | LEAP (IMU) | Raw IMU files via CentrePoint API (`imu` category) | ±2000 dps; rate not stated | Verified 2026-10-10. One LEAP spec block footnotes these sensors as available "Q1 2024 or later". |
+| Magnetometer | Not listed for current devices | Not applicable | Not applicable | Not on the Insight Watch, LEAP or wGT3X-BT spec pages (2026-10-10). |
+| Temperature | LEAP (skin, -20 to 50 °C); Insight Watch (near-body) | Raw temperature files via CentrePoint API | Not stated | Verified 2026-10-10. |
 | SpO2 | No | Not applicable | Not applicable |  |
 | GPS | No | Not applicable | Not applicable |  |
-| Barometer / altimeter | No | Not applicable | Not applicable |  |
+| Barometer / altimeter | LEAP: 300 to 1100 hPa | Raw barometer files via CentrePoint API | Not stated | Verified 2026-10-10. LEAP also has a microphone (100 Hz to 10 kHz), disabled by default. |
 | EDA | No | Not applicable | Not applicable |  |
-| Ambient light | Some legacy models | Unclear | Unclear |  |
+| Ambient light | wGT3X-BT | Lux values alongside motion data | Not stated | Verified 2026-10-10 (wGT3X-BT page). |
 | Other | Unclear | Unclear | Unclear | Not verified against current documentation. |
 
-**Verification.** Drawn from the pages retrieved in the Module 1 passes; sampling rates for current devices were not established. See the notes below for the original wording.
+**Verification.** Re-verified 2026-10-10 against ametris.com/cpiw, /actigraph-leap and /actigraph-wgt3x-bt and the CentrePoint API documentation (**Verified**). Storage and battery: Insight Watch 30 days / 512 MB and 30 days battery at the default 32 Hz; wGT3X-BT 180 days / 4 GB and 25 days battery. **Conflict:** the LEAP page shows two spec blocks, one with 30 days battery and 30 days / 1 GB storage, the other with 32 days battery and 79 days / 1 GB storage (32 Hz, display on 48 times a day); treat the LEAP duration as **Unclear** until Ametris confirms. See the notes below for the original wording.
 
 ### Notes from earlier verification passes
 
@@ -107,15 +107,18 @@
 ## Data Access and Export
 
 - **Raw sensor data** retained and reprocessable indefinitely.
-- **CentrePoint API**, enables data outcomes to be integrated directly into a third-party system.
+- **CentrePoint API (V3), documented publicly on GitHub (`actigraph/CentrePoint3APIDocumentation`, last pushed 2026-07-08; read 2026-10-10, Verified).** Ametris's marketing says "Data outcomes" can be integrated through the API, which undersells it: the API returns raw data as well as outcomes.
+  - **Authentication:** OAuth 2.0 client-credentials grant; tokens expire after 3,600 s. ActiGraph/Ametris must enable API access for the account and issue the client ID and secret.
+  - **Raw data:** "Data Access Files", pre-made day files under the `DataAccess` scope, in categories raw-accelerometer, temperature, ppg-green (25 Hz), ppg-green-100-hz, barometer, imu and ppg-red-ir-50-hz. The PPG categories are "only available for certain devices, firmware versions, and study configuration, and ... subject to contract restrictions". Formats: gzipped CSV or AVRO.
+  - **Raw activity requests** (`DataRetrieval` scope, formats gt3x, csv or avro) are capped at 10 concurrent requests, and must not be used "to retrieve ALL the historic RAW data for all subjects in a given study"; they are meant to be used with the raw-processing-complete webhook as data arrive. The docs warn that "There may be fees associated for historical data access file generation if the study has not been previously setup."
+  - **Derived data:** minute (epoch) summaries, daily statistics, sleep periods, study, subject and visit management, and webhooks.
+  - **Rate limit:** more than 500 requests per minute from one IP address returns HTTP 429.
 - **Web portal** access to compliance and outcome data.
-- Legacy path: device → ActiLife → local files (`.gt3x` raw, plus derived `.agd`/CSV).
-
-- API specifics, authentication, rate limits, whether raw waveform data (as opposed to processed outcomes) is retrievable via API, and export formats, are **not established** from public documentation and are a priority vendor question.
+- Legacy path: device → ActiLife → local files (`.gt3x` raw, plus derived `.agd`/CSV). ActiLife licences include one year of maintenance and 20 GB of Data Vault cloud storage (ametris.com/actilife, 2026-10-10).
 
 ## APIs, SDKs, and Extensibility
 
-- CentrePoint API (details not public).
+- CentrePoint API: public documentation on GitHub (see Data Access and Export).
 - Third-party sensor support in the Connect platform (ECG patch, spirometer, BP cuff).
 - The `.gt3x` raw file format has been reverse-engineered/documented by the research community, and open-source readers exist in R and Python, an important hedge against vendor lock-in.
 - No device SDK.
@@ -134,11 +137,17 @@
 
 ## Privacy, Security, and Compliance
 
-- Not verified in this session. Given the clinical-trial positioning, the 70+ country footprint, the SaMD products acquired from Biofourmis, and the Signant Health acquisition, a substantial compliance apparatus almost certainly exists (21 CFR Part 11, HIPAA, GDPR, ISO). **None of it is confirmed here**, obtain documentation directly.
+- **Ametris Compliance Center (read 2026-10-10).**
+  - QMS conforms to **ISO 13485:2016**, with participation in **MDSAP** since 2018 and annual surveillance audits by an independent auditing organisation; certificates are linked on the page. **Verified** that the page says so.
+  - **GDPR:** Ametris "will support customers in meeting their GDPR requirements with data processing agreement[s]" including standard contractual clauses, and states compliance with the EU-U.S. Data Privacy Framework, its UK Extension and the Swiss-U.S. DPF.
+  - **Security:** the page lists **ISO/IEC 27001:2022** but links no certificate or scope (**Corroborated**, vendor statement). Hosting uses "qualified cloud vendors: Microsoft Azure and Amazon Web Services".
+  - **Validation:** describes design validation and a procedure for validating computerised systems; the page does not say "21 CFR Part 11" in words.
+  - **Not found:** any BAA or HIPAA statement, any SOC 2 statement, or any statement on whether the Signant acquisition changed data-processing terms.
+- **FDA 510(k)s (openFDA, 2026-10-10):** K231532, ActiGraph LEAP activity monitor (2023-06-23); K181077, ActiGraph CentrePoint Insight Watch (2018-05-24). **Verified.**
 
 ## Pricing
 
-- **Not published.** All figures below are **Reported** and come from a **competitor's** published pricing guides (Fibion, which sells alternative research accelerometry). Treat them as indicative order-of-magnitude only, and note the obvious source bias:
+- **Not published.** Ametris's device pages say: "Pricing is calculated for each unique order. For a price quote or more information, please contact our team directly." (LEAP and Insight Watch pages, **Verified** 2026-10-10.) All figures below are **Reported** and come from a **competitor's** published pricing guides (Fibion, which sells alternative research accelerometry). Treat them as indicative order-of-magnitude only, and note the obvious source bias:
 
 | Item | Reported price |
 |---|---|
@@ -148,6 +157,13 @@
 | ActiLife software | ~$1,695 |
 | CentrePoint software | ~$3,500/year |
 | CentrePoint Hub | ~$600 purchase, or ~$300/year rental |
+
+### Research program and academic data access (checked 2026-10-10)
+
+- **An academic channel exists.** academic.ametris.com ("Academic Research and Population Health") offers a "Get Pricing List" form, a "Grant Toolkit", a dataset library and a contact route to an "academic and public health research team". Its Academic Store (store.ametris.com) sells accessories online (wristbands, chargers, docks, USB hubs, priced in USD) but device prices are not shown, and "Online purchasing through our store is currently available only to academic institutions with existing client accounts". International customers are sent to resellers. **Verified** (2026-10-10). No academic discount, grant program or free-device scheme is described.
+- **What academics can get:** the same devices and the same data as sponsors. Raw accelerometry (and, where licensed, PPG, temperature, barometer and IMU files) comes through CentrePoint's API or portal, or through ActiLife from `.gt3x` files on the legacy workflow. The API docs warn that historical raw-file generation may carry fees and that some PPG categories are "subject to contract restrictions". **Verified.**
+- **How it differs from commercial access:** no separate academic data tier is documented; the difference is the sales channel (academic store and pricing list) rather than the data. **Unclear** whether academic prices differ.
+- **Status:** active; now part of Signant Health.
 
 - Current-device (Insight Watch, LEAP) and CentrePoint platform pricing under Ametris/Signant is **entirely non-public**. The strategic shift toward pharmaceutical clients suggests pricing is now oriented to sponsor budgets rather than academic grants, which should be tested early in study planning rather than assumed.
 
@@ -173,12 +189,12 @@
 ## Limitations
 
 - **Corporate instability**: rebrand (2025) plus acquisition (2026) means product roadmaps, pricing, support arrangements, and even product names are in flux. Long studies face real continuity risk.
-- **Pricing entirely non-public**, and the strategic direction is toward pharma budgets rather than academic ones.
+- **Device pricing non-public** (quote or pricing list on request), and the strategic direction is toward pharma budgets rather than academic ones.
 - **Legacy devices going end-of-life** (GT9X Link), breaking continuity with prior study protocols and requiring re-validation for longitudinal cohorts.
 - **Cloud-only current platform**, the fully local ActiLife workflow that many institutions preferred may not survive.
 - No physiological sensing depth comparable to Empatica (no EDA) or consumer devices (limited/no HR, SpO2, temperature on the core accelerometry devices).
 - No participant engagement value.
-- Current-device sampling rates, API details, and compliance credentials all unverified.
+- BAA, HIPAA, SOC 2 and an explicit Part 11 statement are not published (sampling rates, API details and ISO/GDPR statements were verified 2026-10-10).
 - Validation of current devices against the legacy devices that generated the literature not established.
 - Substantially higher cost per participant than consumer wearables.
 
@@ -207,13 +223,13 @@
 - *(Directed to Ametris / Signant Health: https://ametris.com/ , https://signanthealth.com/)*
 
 - **What is the actual pricing** for CentrePoint plus Insight Watch or LEAP at academic-study scale? Is there academic pricing at all?
-- **What are the sampling rates and configurable ranges** for Insight Watch and ActiGraph LEAP?
+- ~~What are the sampling rates and configurable ranges for Insight Watch and ActiGraph LEAP?~~ Resolved 2026-10-10: 32 to 256 Hz, primary accelerometer ±8 g (fixed). Still open: which LEAP spec block (30 or 79 days storage) is current.
 - Are these current devices validated against the legacy wGT3X-BT/GT3X+ that generated the literature? Are activity counts comparable?
 - **Is ActiLife still supported, and is a fully local (no-cloud) workflow still available?**
-- CentrePoint API: authentication, rate limits, export formats, and **whether raw waveform data is retrievable via API** or only processed outcomes.
+- ~~CentrePoint API: authentication, rate limits, export formats, raw vs outcomes.~~ Resolved 2026-10-10 from the public API docs: OAuth client credentials, 500 requests per minute per IP, CSV or AVRO, raw and derived both available. Still open: the fees for historical raw-file generation and the contract terms behind PPG access.
 - What is the roadmap for the ActiGraph device line under Signant Health ownership? What are the end-of-life commitments for currently sold devices?
 - Which additional sensors (gyro, magnetometer, HR, light, temperature) are on the current devices?
-- 21 CFR Part 11, HIPAA/BAA, GDPR DPA, ISO certifications, data residency, and audit-logging capabilities.
+- 21 CFR Part 11 attestation, HIPAA/BAA, SOC 2, data residency, audit logging, and whether the Signant acquisition changed data-processing terms. (DPA with SCCs, DPF, ISO 13485/MDSAP and a stated ISO 27001:2022 were documented 2026-10-10.)
 - Battery life, storage capacity, and maximum unattended deployment duration for current devices.
 - Does the platform now offer integrated ePRO (given Signant's eCOA business)?
 - Data retention and what happens to study data at contract end.
@@ -225,6 +241,10 @@
 - Rebrand announcement: https://blog.ametris.com/news/actigraph-rebrands-as-ametris
 - "Embracing Our Next Chapter": https://blog.ametris.com/embracing-our-next-chapter-actigraph-is-now-ametris
 - Signant Health acquisition: https://signanthealth.com/company/news/signant-health-acquires-ametris
+- Signant definitive-agreement release (16 April 2026): https://signanthealth.com/company/news/signant-health-enters-definitive-agreement-to-acquire-ametris
+- CentrePoint API documentation: https://github.com/actigraph/CentrePoint3APIDocumentation
+- Compliance Center: https://ametris.com/compliance
+- Academic research site: https://academic.ametris.com/ ; academic store: https://store.ametris.com/
 - Acquisition press release: https://www.prnewswire.com/news-releases/signant-health-acquires-ametris-to-create-an-end-to-end-ecoa-and-digital-outcome-measures-platform-302771426.html
 - Signant Health: https://signanthealth.com/
 - (Legacy domain `theactigraph.com` now 301-redirects to `ametris.com`)
@@ -237,3 +257,10 @@
 4. Clinical Leader, ActiGraph rebrand coverage. https://www.clinicalleader.com/doc/actigraph-rebrands-as-ametris-to-reflect-expanded-clinical-evidence-generation-capabilities-0001 (accessed 2026-08-21). Establishes the January 2025 Biofourmis Connect acquisition, the Biovitals Analytics Engine and RhythmAnalytics SaMD products, and third-party sensor support (ECG patch, digital spirometer, blood pressure cuff).
 5. Fibion pricing guides (**secondary, competitor-published, treat with caution**): https://web.fibion.com/articles/actigraph-pricing-information-guide/ ; https://web.fibion.com/articles/guide-to-actigraph-gt9x-pricing/ ; https://web.fibion.com/articles/actigraph-wgt3x-bt-pricing-accessories-guide/ (accessed 2026-08-21). Source of all reported price figures and of the GT9X end-of-life statement.
 6. "Comparison of raw accelerometry data from ActiGraph, Apple Watch, Garmin, and Fitbit using a mechanical shaker table." https://pmc.ncbi.nlm.nih.gov/articles/PMC10980217/ (preprint: https://www.medrxiv.org/content/10.1101/2023.05.25.23290556.full.pdf). Evidence of ActiGraph's use as a reference measure.
+7. Signant Health, "Signant Health Enters Definitive Agreement to Acquire Ametris", 16 April 2026. https://signanthealth.com/company/news/signant-health-enters-definitive-agreement-to-acquire-ametris (accessed 2026-10-10). **Primary.**
+8. PR Newswire, "Signant Health Acquires Ametris to Create an End-to-End eCOA and Digital Outcome Measures Platform", 14 May 2026. https://tools.prnewswire.com/en-us/live/20813/release/20260514EN58707 (accessed 2026-10-10). **Primary (company release).** Announces the acquisition; no explicit closing sentence. Ametris's own page (https://ametris.com/signant-health-company, accessed 2026-10-10) reads "A Signant Health Company".
+9. Ametris product pages: https://ametris.com/cpiw , https://ametris.com/actigraph-leap , https://ametris.com/actigraph-wgt3x-bt , https://ametris.com/actilife (accessed 2026-10-10). **Primary.** Sample rates, ranges, storage, battery, sensors, the per-order pricing statement, ActiLife maintenance and Data Vault.
+10. ActiGraph CentrePoint V3 API documentation. https://github.com/actigraph/CentrePoint3APIDocumentation (README, sections/authorization.md, sections/data_access_files.md, sections/raw_data_request.md; repository last pushed 2026-07-08; accessed 2026-10-10). **Primary.**
+11. Ametris Compliance Center. https://ametris.com/compliance (accessed 2026-10-10). **Primary, vendor statement.**
+12. openFDA 510(k) K231532 and K181077. https://api.fda.gov/device/510k.json?search=k_number:K231532 ; https://api.fda.gov/device/510k.json?search=k_number:K181077 (accessed 2026-10-10). **Primary.**
+13. Ametris academic research site and academic store. https://academic.ametris.com/ ; https://store.ametris.com/ (accessed 2026-10-10). **Primary.** Academic channel, pricing-list form, grant toolkit, accessory prices, existing-account restriction.

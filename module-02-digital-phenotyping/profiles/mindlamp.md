@@ -6,12 +6,12 @@
 |---|---|
 | Organization | BIDMC Division of Digital Psychiatry (Beth Israel Deaconess Medical Center / Harvard Medical School), led by John Torous |
 | Category | Open-source digital phenotyping and mobile-intervention platform, mental-health oriented |
-| Current status | Active, with some component repositories explicitly marked deprecated (see below) |
-| Platforms/devices | iOS and Android apps; web dashboard/portal |
-| Open source | Yes, code hosted publicly under the BIDMCDigitalPsychiatry GitHub organization |
-| Hosting/deployment | Self-hostable (server component); mindLAMP's own documentation advertises "flexible hosting and complete data access," implying a managed-hosting option exists alongside self-hosting, but the site did not state whether it is offered to outside teams or under what terms this session |
-| Pricing model | Free/open source (software); no pricing figures found for any managed-hosting arrangement |
-| Last verified | 2026-08-24 (second-pass direct-source re-verification) |
+| Current status | Active; LAMP-server, LAMP-dashboard, LAMP-core-ios and LAMP-core-android all pushed 2026-10-08 (GitHub API, checked 2026-10-10). Two old repositories archived in 2020 (see below) |
+| Platforms/devices | "mindLAMP 2" app on Google Play (`digital.lamp.mindlamp`, updated 2026-05-17) and the App Store (seller John Torous, v2023.5.2, last updated 2023-05-26, although the LAMP-core-ios repository is still pushed in 2026); web dashboard. Checked 2026-10-10. |
+| Open source | Partly. Source is public, but LAMP-server, LAMP-core-android and LAMP-core-ios carry no licence file (all rights reserved by default); LAMP-dashboard is AGPL-3.0; the API clients are BSD-3-Clause and LAMP-toolkit MIT (Verified 2026-10-10) |
+| Hosting/deployment | Through the BIDMC **mindLAMP Core**, "the supported deployment pathway": self-hosted in the partner's own AWS account, a separate instance hosted and managed by BIDMC, or the shared BIDMC instance (lamp.digital). Self-hosting the unlicensed server outside that pathway needs BIDMC permission (Verified 2026-10-10) |
+| Pricing model | No licence fee identified; source public with mixed licences. mindLAMP Core services and hosting are priced in a tailored proposal after a free consultation; no published figures (Verified 2026-10-10) |
+| Last verified | 2026-10-10 (mindLAMP Core, licences, app-store listings, dead links) |
 
 ## Summary
 
@@ -94,7 +94,8 @@
 
 ## Deployment and Infrastructure
 
-- Self-hostable server component (`LAMP-server`, confirmed current and actively maintained, Verified). **Second-pass update (2026-08-24):** docs.lamp.digital's own content advertises "flexible hosting and complete data access" as a platform capability, which is suggestive of a managed-hosting option beyond pure self-hosting, but the fetched content did not state whether this is a service offered to outside research/clinical teams, under what terms, or at what cost, **the managed-hosting question is upgraded from Unclear to Reported, not fully resolved; still requires direct BIDMC contact.** The earlier "clinical research teams in Canada and Australia" framing remains Reported only, not independently traced to a specific citation this session. Infrastructure requirements for self-hosting were not independently benchmarked.
+- **Resolved 2026-10-10 (Verified):** the BIDMC **mindLAMP Core** is "the supported deployment pathway for the mindLAMP platform" (digitalpsych.org/mindlamp-core). Process (docs.lamp.digital/get-started): interest form, a reply "within a few business days", a free consultation, then "a tailored proposal including scope, deployment option, and pricing", then configuration and staff training. Deployment models (research.bidmc.org/mindlamp/services): "Full mindLAMP stack in partner's own AWS account", a "Dedicated instance managed by BIDMC team", or "the main mindLAMP instance at lamp.digital". The Core "requires a business agreement (established after Phase 1)". Its five phases cover a free design consultation; protocol optimisation; privacy-aware configuration, including "standardized language and configuration patterns for IRB and security review", role-based access controls and audit logs; hosting, uptime monitoring and software updates; and study support including shared analytics pipelines such as Cortex. The digitalpsych page names clinical research studies, grant-funded projects, clinical care programs and multi-site deployments as good fits and claims 50+ active sites. Eligibility criteria, fees and data-ownership terms are not published (the FAQ answers on cost and data access did not render for automated reading).
+- Self-hostable server component (`LAMP-server`, Docker-deployable per its README, actively maintained). Because LAMP-server has no licence file, running or modifying it outside the Core pathway needs written permission from BIDMC. **Second-pass update (2026-08-24, superseded 2026-10-10 by the Core finding above):** docs.lamp.digital's own content advertises "flexible hosting and complete data access" as a platform capability, which is suggestive of a managed-hosting option beyond pure self-hosting, but the fetched content did not state whether this is a service offered to outside research/clinical teams, under what terms, or at what cost, **the managed-hosting question is upgraded from Unclear to Reported, not fully resolved; still requires direct BIDMC contact.** The earlier "clinical research teams in Canada and Australia" framing remains Reported only, not independently traced to a specific citation this session. Infrastructure requirements for self-hosting were not independently benchmarked.
 
 ## Participant Experience
 
@@ -108,11 +109,12 @@
 
 ## Privacy, Security, and Compliance
 
-- Not independently verified this session. Given the platform's explicit clinical-use positioning (not just research), HIPAA and comparable clinical-data-handling documentation would be a first-order question for any team considering clinical deployment, and CLAUDE.md's instruction not to infer compliance from institutional affiliation (Harvard/BIDMC) applies here as directly as anywhere in this module.
+- **Checked 2026-10-10:** the Division of Digital Psychiatry privacy page (digitalpsych.org/privacy.html) makes no HIPAA, SOC 2 or GDPR claim and links only to BIDMC's general privacy policy. The mindLAMP Core page describes role-based access controls, audit logs for data access and changes, and IRB and security-review language as part of its configuration service; these are service descriptions, not certifications. No compliance certification is documented.
+- Given the platform's explicit clinical-use positioning (not just research), HIPAA and comparable clinical-data-handling documentation would be a first-order question for any team considering clinical deployment, and CLAUDE.md's instruction not to infer compliance from institutional affiliation (Harvard/BIDMC) applies here as directly as anywhere in this module.
 
 ## Pricing
 
-- Free and open source; no licence fee identified. As with Beiwe and RADAR-base, actual cost is a function of self-hosting infrastructure and staff time, or reliance on whatever hosted-instance arrangement the maintaining team currently offers to outside teams, not independently confirmed this session.
+- No licence fee identified. Cost is either self-hosting infrastructure and staff time (with BIDMC permission for the unlicensed server and apps), or a BIDMC mindLAMP Core proposal covering services and hosting; figures are not public, and the first consultation is free (Verified 2026-10-10). No separate academic or commercial rate is published.
 
 ## Research Evidence and Validation
 
@@ -122,13 +124,15 @@
 
 - Explicit dual research/clinical orientation, distinguishing it from research-only competitors, potentially valuable for teams bridging digital phenotyping research into actual care pathways.
 - Strong, mental-health-specific published research record from an established academic digital-psychiatry group.
-- Fully open source, permitting institutional self-hosting and modification.
+- Public source code permitting inspection and institutional self-hosting; modifying the server or apps needs BIDMC permission because those repositories carry no licence (the dashboard is AGPL-3.0).
+- A supported hosted route, the BIDMC mindLAMP Core, with a shared or dedicated BIDMC-hosted instance for teams without infrastructure capacity (priced by proposal).
 - Combines active clinical assessment tools (cognitive/behavioral tasks) more deeply than some passive-sensing-first competitors.
 
 ## Limitations
 
 - ~~Some component repositories are explicitly marked deprecated... this session could not fully map which components are current successors~~ **Resolved 2026-08-24**, `LAMP-portal` and `LAMP-app` are formally archived (2020-11-17); successors are `LAMP-dashboard` and `LAMP-core-android`/`LAMP-core-ios` respectively (Verified, direct GitHub fetch).
-- Exact per-stream iOS/Android sensor parity, full data-export mechanics, the licence covering the core server/dashboard/app repositories specifically (as opposed to the now-confirmed BSD-3-Clause/MIT client-and-toolkit licences), and compliance posture remain not independently verified against current documentation, even after this second pass, docs.lamp.digital's full reference documentation (as opposed to its landing content) is the next direct-fetch target for a third pass.
+- The core server and apps carry no licence (dashboard AGPL-3.0), so the platform is source-available rather than open source end to end (Verified 2026-10-10).
+- Exact per-stream iOS/Android sensor parity, full data-export mechanics and compliance posture remain not independently verified against current documentation, even after this second pass, docs.lamp.digital's full reference documentation (as opposed to its landing content) is the next direct-fetch target for a third pass.
 - The clinical-use positioning raises data-governance questions (patient-care data vs. research data) that a purely research-oriented platform doesn't have to answer, and this session did not establish how mindLAMP handles that distinction.
 
 ## Best-Fit Use Cases
@@ -148,8 +152,9 @@
 - ~~Which specific mindLAMP repositories are current/production, and which are the successors to the repositories explicitly marked deprecated (`LAMP-portal`, `LAMP-app`)?~~ **Resolved 2026-08-24**, see the repository table above (Verified, direct GitHub fetch).
 - ~~What open-source licence governs the core `LAMP-server`/`LAMP-dashboard`/`LAMP-core-android`/`LAMP-core-ios` repositories?~~ **Answered 2026-10-09:** dashboard AGPL-3.0; server and both apps unlicensed. New question: does BIDMC grant outside teams written permission to self-host and modify the unlicensed components?
 - What is the exact per-stream iOS-vs-Android sensor parity? (The general passive-sensor list, GPS, accelerometer, screen time, calls, heart rate, steps, sleep, gyroscope, is now Corroborated, but not broken out by platform.)
-- What HIPAA/GDPR/compliance documentation exists, particularly for the clinical-use pathway as distinct from pure research use?
-- Is the "flexible hosting" mentioned in the platform's own documentation a managed-hosting service available to outside teams, and under what terms/cost? (Existence of the phrase is now Corroborated; terms remain unconfirmed.)
+- What HIPAA/GDPR/compliance documentation exists, particularly for the clinical-use pathway as distinct from pure research use? (Still open 2026-10-10: the privacy page makes no such claim.)
+- ~~Is "flexible hosting" a managed service for outside teams?~~ Resolved 2026-10-10: yes, via the mindLAMP Core (separate or shared BIDMC instance). Still open: fee schedule, academic vs industry rates, eligibility, and data-ownership terms for BIDMC-hosted studies.
+- Why does the public App Store build (v2023.5.2, 2023-05-26) lag the actively pushed LAMP-core-ios repository? Is a newer iOS build distributed another way?
 
 ## Key Links
 
@@ -158,7 +163,9 @@
 - GitHub organization: https://github.com/BIDMCDigitalPsychiatry
 - LAMP-server repository: https://github.com/BIDMCDigitalPsychiatry/LAMP-server
 - LAMP-dashboard repository: https://github.com/BIDMCDigitalPsychiatry/LAMP-dashboard
-- Publications: https://docs.lamp.digital/about/publications/ (site returned an error on direct fetch this session, see Sources)
+- Publications: https://docs.lamp.digital/about/publications/ (dead link, HTTP 404, checked 2026-10-10; use https://docs.lamp.digital/)
+- mindLAMP Core: https://www.digitalpsych.org/mindlamp-core ; https://research.bidmc.org/mindlamp/services ; https://docs.lamp.digital/get-started
+- Google Play: https://play.google.com/store/apps/details?id=digital.lamp.mindlamp ; App Store: https://apps.apple.com/us/app/mindlamp-2/id1495947054
 
 ## Sources
 
@@ -169,5 +176,11 @@
 5. mindLAMP publications listing. https://docs.lamp.digital/about/publications/, **fetch attempted, returned HTTP 404 both sessions**; existence and framing corroborated via search summary only. Still flagged as a documentation-access gap.
 6. International/adapted-deployment claim (Canada, Australia), search-summary corroboration only, not independently traced to a specific named study or primary source in either session. **Reported**, not Verified.
 7. `BIDMCDigitalPsychiatry/LAMP-app-gateway` README and `LAMP-kotlin` source via the GitHub API, plus an organization code search for "heartbeat" (accessed 2026-10-09). **Primary/Direct.**
-8. mindLAMP community forum (mindlamp.discourse.group) threads on notifications, battery and onboarding (accessed 2026-10-09, search summary). **Reported.**
+8. mindLAMP community forum (mindlamp.discourse.group) threads on notifications, battery and onboarding (accessed 2026-10-09, search summary). **Reported.** The host no longer resolves (DNS failure, checked 2026-10-10), so these threads cannot be re-read.
 9. BIDMCDigitalPsychiatry repository licences, checked 2026-10-09 via https://api.github.com/repos/BIDMCDigitalPsychiatry/<repo> and https://github.com/BIDMCDigitalPsychiatry/LAMP-dashboard/blob/master/LICENSE.md. **Primary/Verified.** LAMP-dashboard AGPL-3.0 (previously BSD-3-Clause); LAMP-server, LAMP-core-android, LAMP-core-ios no licence file.
+10. BIDMC, "mindLAMP Core services." https://research.bidmc.org/mindlamp/services (accessed 2026-10-10, direct fetch). **Primary/Verified.** Three deployment models, five phases, business agreement after Phase 1; no prices.
+11. mindLAMP documentation, "Get started." https://docs.lamp.digital/get-started (accessed 2026-10-10, direct fetch). **Primary/Verified.** Interest form, free consultation, tailored proposal with scope, deployment option and pricing.
+12. Division of Digital Psychiatry, "mindLAMP Core." https://www.digitalpsych.org/mindlamp-core (accessed 2026-10-10, direct fetch). **Primary/Verified.** "supported deployment pathway"; good-fit users; 50+ active sites (vendor claim).
+13. GitHub API repository metadata for LAMP-server, LAMP-dashboard, LAMP-core-ios, LAMP-core-android (accessed 2026-10-10). **Primary/Verified.** All pushed 2026-10-08; licence None for server and apps, AGPL-3.0 text in LAMP-dashboard/LICENSE.md.
+14. App Store (iTunes lookup id 1495947054) and Google Play (`digital.lamp.mindlamp`) listings, direct fetch 2026-10-10. **Primary/Verified.**
+15. Division of Digital Psychiatry privacy page. https://www.digitalpsych.org/privacy.html (accessed 2026-10-10, direct fetch). **Primary.** No compliance claims.

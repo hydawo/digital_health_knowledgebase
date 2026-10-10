@@ -8,10 +8,10 @@
 | Study design | Randomized controlled **pilot** with a mixed-methods design: Aim 1 thematic analysis of participant feedback on the intervention *and the monitoring tools*; Aim 2 quantitative outcomes (loneliness, connectedness). |
 | Sample size (enrolled / analyzed) | **37 enrolled → 8 withdrew → 29 analyzed.** |
 | Population | US college students (single university), mean age **19.93 (SD 1.22)**; 13 male / 16 female; **43.3% Latinx, 43.3% Asian American, 17.2% White** — one of the few genuinely non-White-majority cohorts in this module. Excluded: parents, married students, and those returning after a ≥3-year absence. |
-| Duration | **22 weeks**, enrolled late Jan – early Feb 2021 (i.e. during COVID-19 restrictions). Three phases: initial monitoring, intervention, continued monitoring. |
+| Duration | **22 weeks**, enrolled late Jan – early Feb 2021 per this paper. The year is disputed: Borelli 2025 gives January to February 2022 for the same cohort, and Jafarlou 2024 gives a September 2021 to January 2022 recruitment window (see the companion profile). Three phases: initial monitoring, intervention, continued monitoring. |
 | Devices/platforms used | **[AWARE](../../module-02-digital-phenotyping/profiles/aware-framework.md)** (passive smartphone sensing) + **[Oura](../../module-01-wearables/profiles/oura.md) Ring** + **[Samsung](../../module-01-wearables/profiles/samsung.md) Gear Sport smartwatch** + **mSavorUs** (custom intervention app). All wearables **provisioned**. |
 | Funding/COI | Academic (UC Irvine). **AWARE deployment and mSavorUs are attributed in-text to co-author Amir Rahmani ("developed by AR")** — a developer-author relationship on both the intervention and the sensing stack. |
-| Last verified | 2026-09-01 |
+| Last verified | 2026-09-01; enrolment-year statements hedged 2026-10-10 after a third paper on the cohort (Jafarlou 2024, PMC11189241) was read |
 
 
 > ### ⚠️ Same cohort as `aware-msavorus-passive-completeness-companion.md`
@@ -97,7 +97,7 @@ The deployment-relevant reading: **a just-in-time adaptive intervention triggere
 
 **Unclear** — Oura and Samsung wear time and data yield (not reported); reasons for 7 of 8 withdrawals (not reported); the number of participants or days affected by the AWARE outages; and whether the continued-monitoring phase adherence figure was computed and simply not stated.
 
-**Small-sample caution.** N=29 analyzed, single site, one university, enrolled during COVID-19 restrictions in early 2021, when both loneliness levels and daily mobility were atypical. Treat all quantitative figures as pilot-scale.
+**Small-sample caution.** N=29 analyzed, single site, one university. If enrolment was in early 2021, as this paper states, the study ran during COVID-19 restrictions, when both loneliness levels and daily mobility were atypical. Two other papers on the same cohort point to 2022 instead (see the companion profile). Treat all quantitative figures as pilot-scale.
 
 **COI:** co-author Amir Rahmani is credited in-text as the developer of both mSavorUs and the AWARE deployment. The paper's headline quantitative result is null and its qualitative arm surfaces technical failures, which runs against interest; the feasibility framing does not.
 

@@ -241,6 +241,8 @@ component that stratifies demographically.* That reconciles Mercier's retention-
 result, Liu's unpaid high engagement, Clark's co-designed 80.21%, Dewitte's unpaid 80% and Shen's
 uncompensated withdrawal without discarding any of them.
 
+*Correction 2026-10-10:* Dewitte 2025 does not mention participant compensation, so "unpaid" was an inference from silence. The profile and the feasibility matrix now read "compensation not reported", and the synthesis above is tentative.
+
 ### New — the palliative consent constraint is a design problem, not a population property
 
 Finding #8 currently rests on [Helmer 2025](profiles/movesense-palliative-support-trial.md), where a

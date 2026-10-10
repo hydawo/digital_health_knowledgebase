@@ -8,10 +8,10 @@
 | Category | Open, programmable research-grade sensor platform |
 | Current status | Active |
 | Platforms/devices | Movesense MD, Movesense Flash, Movesense HR2, Movesense HR+; CardioRTHM clinical solution |
-| Open source | Open APIs and developer tools with **no licence cost**; custom sensor firmware permitted |
+| Open source | **No.** Developer tools and APIs are free of charge, but the SDK is licensed under a proprietary 12-month "SDK License and Evaluation Agreement" for evaluation and development only; custom sensor firmware permitted under it (re-verified 2026-10-10) |
 | Hosting/deployment | **None required**, BLE to your own app, or onboard logging |
-| Pricing model | Device purchase; developer kits; volume pricing on request; **no software licence fee** |
-| Last verified | 2026-08-21 |
+| Pricing model | Device purchase (Movesense MD €349 ex VAT for 1 to 49 units); developer kits; volume pricing on request; **no software licence fee**; free sensors for selected academic projects (Movesense Academic Program) |
+| Last verified | 2026-08-21; SDK licence, MD price and Academic Program re-verified 2026-10-10 |
 
 ## Summary
 
@@ -67,7 +67,7 @@
 | Heart rate | Standard BLE heart rate profile | **Verified** |
 | Connectivity | Bluetooth Low Energy | **Verified** |
 
-- **512 Hz ECG and a 1.6 kHz IMU are research-instrument specifications, not consumer ones.** For comparison: Polar H10 tops out at 130 Hz ECG and 200 Hz accelerometry; Samsung's Privileged SDK gives 25 Hz accelerometry. Movesense's IMU ceiling is roughly 8× the Polar Verity Sense's SDK-mode maximum and 64× Samsung's.
+- **512 Hz ECG and a 1.6 kHz IMU are research-instrument specifications, not consumer ones.** For comparison: Polar H10 tops out at 130 Hz ECG and 200 Hz accelerometry; Samsung's Health Sensor SDK (formerly the Privileged Health SDK) gives 25 Hz continuous accelerometry. The Axivity AX3 logger goes higher still for accelerometry alone (up to 3,200 Hz; see `axivity-geneactiv.md`). Movesense's IMU ceiling is roughly 8× the Polar Verity Sense's SDK-mode maximum and 64× Samsung's.
 
 ## Derived Metrics / Analytics
 
@@ -82,6 +82,8 @@
 ## Researcher and Study Management Features
 
 - None natively. Available indirectly through Labfront.
+- **Movesense Academic Program** (movesense.com/movesense-academic-program, read 2026-10-10). "Movesense supplies the selected research teams with a limited number of Movesense sensors and associated accessories such as heart rate straps", sized to the project, plus technical support; no charge is mentioned. Researchers apply by online form with a project description, timeline and planned use. Movesense reviews applications monthly and "invites up to three projects per quarter". Selection criteria include innovativeness, "Potential of commercial applications of the project results", potential to build awareness for Movesense, and "Additional non-published criteria". Selected teams must mention Movesense in publications and allow Movesense to list the project. The page says the program "started on November, 2019 and is open until further notice", but the latest cohort it lists is Q1 2023. At least one validation study (Martín Gómez 2024, below) received sensors through it. **Verified** that the page exists and says this; whether the program is still selecting projects is **Unclear**.
+- **What academics get:** the same data any developer gets (raw ECG, IMU and R-R over BLE or onboard logging, no cloud, no user caps or data-use terms from Movesense), under the same SDK licence. The program changes the hardware cost, not the data.
 
 ## Data Access and Export
 
@@ -93,6 +95,12 @@
 ## APIs, SDKs, and Extensibility
 
 - Movesense states the platform provides "powerful, low-cost tools for creating your own sensor firmware or compatible mobile app," with **"no license cost involved."** Open APIs, sample code, a **desktop simulator**, and documentation are provided. Software repositories are hosted on Bitbucket. Firmware can be uploaded to the sensor through the Movesense Showcase mobile app. **Verified** (movesense.com/get-started/).
+- **SDK licence (read 2026-10-10, Verified).** The licence file in the official `movesense-device-lib` repository is the proprietary "Movesense Software Development ("SDK") License and Evaluation Agreement" with Movesense Ltd. It is not an open-source licence.
+  - "Purpose" means "the Licensees' evaluation, testing and potential development of a software application"; "possible commercialization of the Application ... is subject to a separate agreement".
+  - "the Licensee shall not incorporate or integrate the Licensed Technology or any part thereof in any products or services", and may not reverse engineer it.
+  - The agreement runs for twelve months from signature; either party may terminate on 30 days' notice, and on termination the licensee must destroy or return the Licensed Technology within five days.
+  - No fee clause appears, consistent with "no license cost".
+  - For a study, institutional legal review should decide whether a deployed study app or custom firmware counts as evaluation and development or needs a separate agreement with Movesense.
 
 - Development requires C++ tooling for sensor-side apps and native iOS/Android tooling for mobile. Third-party SDK wrappers exist (e.g. a .NET/Xamarin SDK).
 
@@ -122,10 +130,10 @@
 |---|---|---|
 | Developer kits | Sensor + chest strap + mounting accessories; **free access to developer tools, sample code and documentation** | **Verified** |
 | SDK / firmware tooling | **No licence cost** | **Verified** |
-| Individual sensor retail | Not publicly listed | **Unclear** |
+| Individual sensor retail | **Movesense MD: €349 per unit (VAT 0%) for 1 to 49 units, €344 for 50 to 99**, "Add to cart" on movesense.com; other models also listed in the web shop | **Verified** (2026-10-10; corrected from "not publicly listed") |
 | Volume pricing | Business customers only; sales@movesense.com | **Corroborated** |
 
-- The absence of any licence fee, combined with the openness, makes Movesense's total cost of ownership structurally low even though unit prices are unpublished.
+- The absence of any licence fee, combined with published unit prices and the Academic Program's free sensors for selected projects, makes Movesense's total cost of ownership structurally low.
 
 ## Research Evidence and Validation
 
@@ -153,17 +161,17 @@
 - chest straps (Polar H10 2.6 s). And Hartikainen S et al. 2019, *Am J Cardiol* 123(10):1643, a
 - Movesense chest-strap ECG read by cardiologists and algorithms for AF detection against Holter
 - (N=220; algorithm sensitivity 95.3 to 96.3%); several co-authors hold shares in Heart2Save, an ECG
-- software company, not Movesense. **Corroborated** (abstracts).
+- software company, not Movesense. **Corroborated** (abstracts; the Heart2Save shareholding comes from an earlier read and the paper's COI statement was not re-read on 2026-10-10, since the article is not open access).
 - **What is still missing:** no free-living, multi-day validation, no clinical-population ECG
 - validation beyond AF screening, and no validation of the MD variant's medical-grade claims by a
 - notified-body-independent group was located. IMU validation covers step timing in running only.
 
 ## Strengths
 
-- **512 Hz single-lead ECG and a 13 Hz, 1.6 kHz 9-axis IMU**, the highest sampling specifications of
-- any device in this module.
+- **512 Hz single-lead ECG and a 13 Hz, 1.6 kHz 9-axis IMU**, the highest ECG and IMU sampling
+- specifications in this module (the Axivity AX3 accelerometer alone reaches 3,200 Hz; corrected 2026-10-10).
 - 1 ms R, R interval resolution.
-- **Custom sensor firmware permitted, with no licence cost**, unique here.
+- **Custom sensor firmware permitted, with no licence cost**, unique here (under a proprietary evaluation licence; see APIs).
 - **Class IIa EU medical device certification** on the MD variant.
 - 128 MB onboard logging on Flash for phone-free deployment.
 - No cloud, no vendor processor, trivial data governance.
@@ -177,7 +185,7 @@
 - No derived metrics, no analytics, no dashboards, no participant management from the vendor.
 - Requires C++ competence for firmware work and mobile development for the app, unless routed
 - through Labfront.
-- Unit pricing not public; business-customer sales model.
+- Licence is a proprietary 12-month evaluation agreement that bars incorporating the technology in products or services without a separate agreement.
 - Detailed specification tables (battery, water rating, exact IMU ranges) are behind gated PDF
 - downloads rather than on the web page.
 - Much smaller research community than Polar or ActiGraph, so fewer worked examples.
@@ -205,10 +213,9 @@
 - ~~Is there any independent peer-reviewed validation of Movesense ECG or IMU against reference
 - instruments?~~ **Answered 2026-10-09: yes, for lab ECG/HRV and running step timing** (see Research
 - Evidence). Remaining gap: free-living and clinical-population validation.
-- Unit and developer-kit pricing.
+- ~~Unit pricing.~~ Movesense MD €349 ex VAT (2026-10-10). Developer-kit pricing and whether the Academic Program still selects projects remain open.
 - Battery life at various sampling configurations; exact IMU ranges; water-resistance rating.
-- What licence governs the SDK and firmware source specifically? ("No licence cost" is stated;
-- the licence identity is not.)
+- ~~What licence governs the SDK and firmware source?~~ Resolved 2026-10-10: the proprietary Movesense SDK License and Evaluation Agreement (see APIs). Still open: whether a deployed research app needs Movesense's separate agreement.
 - FDA regulatory status, if any.
 - Maximum continuous logging duration on Flash's 128 MB at given rates.
 
@@ -222,6 +229,8 @@
 - Movesense Flash: https://www.movesense.com/product/movesense-flash/
 - Movesense HR2: https://www.movesense.com/product/movesense-sensor-hr2/
 - Sales: sales@movesense.com
+- Movesense Academic Program: https://www.movesense.com/movesense-academic-program/
+- SDK licence (PDF): https://bitbucket.org/movesense/movesense-device-lib/raw/master/LICENSE.pdf
 
 ## Sources
 
@@ -232,3 +241,6 @@
 - Martín Gómez R et al. 2025. *J Biomech* 190:112873. https://doi.org/10.1016/j.jbiomech.2025.112873 (PMID 40694944; abstract read 2026-10-09; not OA).
 - Sabioni M, Willén J, Dual SA, Jacobsson M. 2025. *Physiol Meas* 46(8). https://doi.org/10.1088/1361-6579/adece4 (PMID 40623430; abstract read 2026-10-09).
 - Hartikainen S et al. 2019. *Am J Cardiol* 123(10):1643-1648. https://doi.org/10.1016/j.amjcard.2019.02.028 (PMID 30878151; abstract read 2026-10-09).
+- Movesense, Movesense Academic Program. https://www.movesense.com/movesense-academic-program/ (accessed 2026-10-10). **Primary.** Program terms, monthly review, up to three projects per quarter, latest listed cohort Q1 2023.
+- Movesense, Movesense MD Sensor product page. https://www.movesense.com/product/movesense-medical-mdr/ (accessed 2026-10-10). **Primary.** €349 VAT 0% (1 to 49 units), volume tiers.
+- Movesense Ltd, Movesense Software Development ("SDK") License and Evaluation Agreement. https://bitbucket.org/movesense/movesense-device-lib/raw/master/LICENSE.pdf (accessed 2026-10-10). **Primary.**

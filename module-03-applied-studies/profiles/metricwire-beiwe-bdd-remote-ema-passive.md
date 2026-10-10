@@ -11,7 +11,7 @@
 | Duration | About 3 months. EMA in two 14-day waves, after baseline and after the 1.5-month midpoint, 28 EMA days in total. Passive sensing ran continuously for the full 3 months. Data were collected between July 2020 and May 2023 (2026 paper). |
 | Devices/platforms used | [MetricWire](../../module-02-digital-phenotyping/profiles/metricwire.md) for EMA and [Beiwe](../../module-02-digital-phenotyping/profiles/beiwe.md) for raw GPS and accelerometer, both installed on participants' own iOS or Android phones. Forest produced the daily passive summaries. REDCap held the baseline self-report surveys. No wearable. |
 | Funding/COI | NIMH K23MH119372 (Weingarden). Weingarden reports employment at HabitAware, advisory roles with Augmend Health and APA Labs, and research funding from Koa Health. Armey is a compensated member of Ilumivu's scientific advisory board, holds stock options in a company providing EMA services, and the 2026 paper states he "could potentially benefit from the results of this research." Wilhelm reports advisory roles with One Mind, Koa Health, Noom and Jimini Health. Onnela declares none in either paper. Participant compensation is not reported in either paper. |
-| Last verified | 2026-09-03 |
+| Last verified | 2026-09-03; PMCIDs confirmed 2026-10-10 |
 
 ## Summary
 
@@ -118,7 +118,7 @@ Verified. The eligibility criteria, the 87 consented and eligible, the 3 with no
 
 Verified. The four-questionnaire EMA day including the unused morning diary, the 1.5-month wave separation, the July 2020 to May 2023 collection window, the three-stage remote funnel, the 5 exclusions at screening, the safety-protocol thresholds, the 72% completion with mean 61.25 (SD 16.21) and 80.46% above 60%, the 50% completion assumption in the power analysis, the N of 86 in the prospective models, the sample characteristics, and the 2026 conflict declarations including the Ilumivu statement were all read from the PMC author manuscript of the 2026 paper on 2026-09-03.
 
-Reported. The PMCIDs in Quick Facts were supplied with the profiling brief. The 2025 PDF does not print its PMCID, and the 2026 manuscript states only that it will be available in PMC from 2025-11-14. The 2025 PMID 40486130 is printed in the 2026 paper's reference list.
+Verified 2026-10-10. PMC12143762 (Europe PMC full-text XML) carries DOI 10.1016/j.invent.2025.100833 and PMID 40486130, and PMC12614476 (NCBI efetch PMC XML, NIHMS2110797) carries DOI 10.1037/abn0001054. Both resolve to the papers' full text. Earlier note: the PMCIDs in Quick Facts were supplied with the profiling brief. The 2025 PDF does not print its PMCID, and the 2026 manuscript states only that it will be available in PMC from 2025-11-14. The 2025 PMID 40486130 is printed in the 2026 paper's reference list.
 
 Unclear. Why 3 participants produced no Beiwe data, whether the 86 in Table 3 reflects one participant with a single EMA observation or something else, and whether the 85.9% figure is computed over 83 or 87 participants. The 2025 text places it in the Methods after the 83 are defined, so 83 is the more likely denominator, but the paper does not say.
 

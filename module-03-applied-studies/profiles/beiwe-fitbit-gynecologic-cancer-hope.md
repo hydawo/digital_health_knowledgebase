@@ -10,8 +10,8 @@
 | Population | Women with advanced gynecologic cancer receiving palliative chemotherapy, age >20. Mean age 60 (SD 11); 8 married; **4 of 10 identified as Black or other non-White race**; high health literacy and numeracy; 80% reported being somewhat or very comfortable with smartphone apps; mean 3 symptoms at baseline; mean ECOG performance status 1 (SD 0.66). |
 | Duration | **30 days.** |
 | Devices/platforms used | **[Beiwe](../../module-02-digital-phenotyping/profiles/beiwe.md)** on participants' own smartphones (BYOD, iOS + Android) + **two provisioned [Fitbits](../../module-01-wearables/profiles/fitbit-google.md)**: **Fitbit Zip** worn at the waist and **Fitbit Charge 2** worn on the non-dominant wrist, both during all waking hours, both synced daily via the **Fitabase** analytics platform. |
-| Funding/COI | Dana-Farber/Harvard Cancer Center and Harvard Chan. **Onnela, Beiwe's originator, is senior author; Staples and Carlson are Onnela-lab affiliates.** ASCO conflict-of-interest disclosures accompany the paper. |
-| Last verified | 2026-09-01 |
+| Funding/COI | NCI K07-CA166210, a National Palliative Care Research Center pilot grant and a Dana-Farber Cancer Institute Department of Medical Oncology grant. Staples, Carlson and Onnela were supported by NIMH 1DP2-MH103909-01, and Keating by NCI K24-CA181510. The Dana-Farber/Harvard Cancer Center and Harvard Chan are the approving IRBs, not funders. **Onnela, Beiwe's originator, is senior author; Staples and Carlson are Harvard Chan co-authors funded on Onnela's NIMH grant.** ASCO disclosures: no relationships declared except one author's stock in Accuray, listed under Kenzie Carlson in the text extraction of the local PDF (2026-10-10). |
+| Last verified | 2026-09-01; funding row corrected 2026-10-10 against the local PDF's Support and disclosure sections |
 
 ## Summary
 

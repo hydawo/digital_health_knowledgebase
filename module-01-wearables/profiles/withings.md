@@ -10,8 +10,8 @@
 | Platforms/devices | ScanWatch / ScanWatch 2 / ScanWatch Light, Body series smart scales, BPM series blood pressure monitors, Sleep / Sleep Rx under-mattress mats, U-Scan; iOS and Android |
 | Open source | No |
 | Hosting/deployment | Vendor cloud (Withings Health Data API); **cellular-connected device options remove the smartphone dependency** |
-| Pricing model | Device purchase; Withings Health Solutions is a B2B/quote-based programme; Advanced Research API is contract-gated |
-| Last verified | 2026-08-21; raw accelerometer rate re-checked 2026-10-09 |
+| Pricing model | Device purchase. API plans (Verified 2026-10-10): **Start for Free** (self-serve, 10 users, more after Withings review), **Enterprise** and **Advanced Biomarkers** (custom price by active users). **From 12 October 2026, Withings accounts created after that date need a paid Withings+ membership to share data with a Start for Free app**, unless the app is on Enterprise or Advanced Biomarkers. Advanced Research API (raw data) is contract-gated |
+| Last verified | 2026-08-21; raw accelerometer rate re-checked 2026-10-09; API plans, Withings+ requirement, security and compliance statements, API reference and FDA 510(k) list re-verified 2026-10-10 |
 
 ## Summary
 
@@ -22,6 +22,8 @@
 3. **An Advanced Research API** giving contracted partners access to **raw accelerometer and raw PPG** signals, a genuine raw-data path on a consumer device.
 
 - The constraints are narrow scope and gated access: the raw-data programme is **ScanWatch only** and **contracted partners only**, and Withings' own sleep-staging performance was the weakest of six devices in the strongest recent independent validation.
+
+- **Dated change, 12 October 2026 (Verified, Withings API plans page, read 2026-10-10).** Withings now publishes a self-serve **Start for Free** API plan (10 users, more once Withings reviews the app). From **12 October 2026**, Withings accounts created after that date "will need a membership to share health data with a free-plan app, including apps that are already live". The membership is Withings+. Withings states the requirement also covers sharing through Apple Health or Google Health. Accounts created before that date are unaffected. Enterprise and Advanced Biomarkers plans lift the requirement for the use cases in the agreement, and Withings says it "can be removed for specific use cases: Cellular Solutions, SDK and Research partners." **A free-plan study recruiting participants with new Withings accounts after 12 October 2026 must budget for each participant's Withings+ membership or move to a paid plan.**
 
 ## Products / Platform Architecture
 
@@ -36,8 +38,8 @@
 
 | Tier | Content | Access |
 |---|---|---|
-| **Public Health Data API** | Measures, sleep, heart, activity, workouts, processed data | Standard OAuth partner registration |
-| **Raw Data API** | Raw accelerometer and raw PPG | **Contracted partners only** |
+| **Public Health Data API** | Measures, sleep, heart, activity, workouts, processed data | OAuth app registration. Plans (2026-10-10): Start for Free (10 users, more after review, "Standard" rate limits, EU-hosted; Withings+ required for users with accounts created after 12 October 2026), Enterprise (custom, 1,500+ requests/minute, US-hosted HIPAA, HDS, DPA and BAA) and Advanced Biomarkers (custom; FDA/CE-cleared biomarkers, "AI model training contract", anonymisation, clinical study support add-on) |
+| **Raw Data API** | Raw accelerometer and raw PPG; the API reference calls it "part of the Advanced research API", "around 25Hz", ScanWatch only | **Contracted partners only**; which plan carries it is not stated on the plans page |
 | **Advanced Research API** | The research-oriented packaging of raw access | Gated; contact Withings |
 
 ## Sensors and Data Streams
@@ -110,27 +112,36 @@
 
 - This is a **services-and-integration model**, not a self-service research console. It suits funded clinical trials better than investigator-initiated academic studies with small budgets.
 
+### Research program and academic data access (added 2026-10-10)
+
+- **Two research routes exist, both gated:**
+  - **Advanced Research API.** Withings describes it as "Designed for research groups, universities, and advanced health studies", giving "direct access to raw sensor data": accelerometer "25Hz by default (up to 100Hz)" and PPG with three LEDs or one, **ScanWatch only**, by contacting Withings (developer page re-read 2026-10-10, **Verified**). Contract terms and price are not published.
+  - **Advanced Biomarkers plan** ("Clinical studies & AI research"). Custom-priced; adds FDA/CE-cleared biomarkers (ECG, AFib, SpO2, vascular age, AHI, "EDA/NHS"), risk scores, symptom tracking and questionnaires, an "AI model training contract", anonymisation, and a "Clinical study support team" add-on (plans page, **Verified** that these are offered; the cleared-biomarker wording is Withings' own).
+- **What a low-budget academic study can get without a contract:** the Start for Free plan's derived data (activity, sleep, body, heart) for up to 10 users, more after a Withings review, at "Standard" rate limits, EU-hosted. **From 12 October 2026**, participants whose Withings accounts are created after that date need a paid Withings+ membership to share data with a free-plan app, and Withings says this also applies to sharing via Apple Health or Google Health. Withings says the requirement can be removed for "Research partners", but the terms for that are not published.
+- **How it differs from commercial access:** the plans are the same for academic and commercial customers; there is no published academic price. Raw signals and the AI-training right come only by contract. No history-depth or retention term is published for any plan.
+- **Is it active?** Yes (pages current, 2026-10-10). Withings' research and clinical-trials page returned 403 to scripted requests and was not re-read.
+
 ## Data Access and Export
 
 | Route | Content | Gate |
 |---|---|---|
-| Public Health Data API | Processed measures, sleep, heart, activity | Partner registration via Withings Partner Hub |
+| Public Health Data API | Processed measures, sleep, heart, activity | App registration; Start for Free plan self-serve up to 10 users; Withings+ needed for participants with accounts created after 12 October 2026 unless on Enterprise or Advanced Biomarkers |
 | Raw Data API / Advanced Research API | Raw ACC + PPG from ScanWatch | **Contracted partners only** |
 | Cellular device direct-to-cloud | All standard measures | Device purchase; no participant phone needed |
 | Participant self-export | Withings account data export | GDPR-backed |
 
-- Rate limits, historical depth, and backfill behaviour are **not established** from the pages retrieved.
+- **Rate limits (2026-10-10):** Enterprise and Advanced Biomarkers "1,500+ requests/minute"; Start for Free is labelled only "Standard" (**Verified**, plans page). A search snippet of an earlier version of the page gave 120 requests/minute for the free tier (**Reported**, not on the current page). Throttled calls return body status 601 "Too many request" (**Verified**, API reference). Historical depth, backfill and retention are **not documented**; sync uses the `lastupdate` parameter.
 
 ## APIs, SDKs, and Extensibility
 
-- REST + OAuth 2.0 via the Withings Partner Hub (`developer.withings.com`).
+- REST + OAuth 2.0 via the Withings Partner Hub (`developer.withings.com`). The full API reference at `developer.withings.com/api-reference/` is public, with no login (re-checked 2026-10-10; the 2026-08-21 pass recorded it as login-gated).
 - Notification/webhook mechanism for new measurements (referenced by Withings' integration guide; not verified in detail here).
 - No device SDK; devices are not programmable.
 - Documented integrations with DCT and RPM platforms.
 
 ## Deployment and Infrastructure
 
-- Vendor cloud. No self-hosting. Withings is EU-headquartered (France), which is often advantageous for GDPR-governed studies, but **actual data residency was not verified** and should be confirmed.
+- Vendor cloud. No self-hosting, but a **choice of cloud**: Withings describes an EU Medical Cloud based in France and a US Medical Cloud (security and compliance page, read 2026-10-10). The plans page puts the free plan on EU hosting and offers US hosting on Enterprise and Advanced Biomarkers. **Corroborated** (vendor statements).
 
 ## Participant Experience
 
@@ -144,17 +155,18 @@
 
 ## Privacy, Security, and Compliance
 
-- Withings devices in the medical lines carry regulatory clearances (ScanWatch ECG and SpO2, BPM devices); **specific clearance status by device, market, and feature was not verified in this session** and varies by jurisdiction.
-- Withings Health Solutions is oriented toward regulated clinical trial use, which implies compliance infrastructure exists, but **HIPAA/BAA, SOC 2, ISO 13485/27001, GDPR DPA terms, and data residency were not verified** and must be obtained in writing.
+- Withings devices in the medical lines carry regulatory clearances. The US FDA 510(k) list is now checked (see below); clearance status in other markets and the exact feature scope of each clearance were not verified and vary by jurisdiction.
+- **Compliance statements (re-checked 2026-10-10; Corroborated, vendor statements without linked certificates):** Withings' developer security page says its EU Medical Cloud, based in France, "is GDPR compliant, HDS, HIPAA and ISO 27001:2017 certified", and its US Medical Cloud "is a US based, ISO 27001:2017 certified and HIPAA compliant", adding "Withings complies with HIPAA rules and regulations". The plans page offers "DPA, BAA and security questionnaire" on Enterprise and Advanced Biomarkers only, not on Start for Free. No SOC 2 statement was found. No certificate registry entry was checked, so none of these is Verified independently. (The 2026-08-21 text said HIPAA, ISO and DPA terms were not found.)
+- **FDA 510(k) clearances (Verified, openFDA, 2026-10-10):** Withings Blood Pressure Monitor K110872 (2011) and K133125 (2014); Withings Thermo K160544 (2016); Scan Monitor K201456 (2021-10-05) and Scan Monitor 2.0 K230812 (2023-08-23); Withings Sleep Rx K231667 (2024-09-06); Withings ECG App K240795 (2025-06-15); Withings BeamO K252474 (2025-11-10). CE-mark scope per device was not checked.
 - **Do not infer regulatory clearance of a device from the existence of a clinical trials business.**
 
 ## Pricing
 
 - **Devices:** consumer retail pricing for scales, BP monitors, ScanWatch, and Sleep mats, generally moderate. Cellular variants and Health Solutions pricing differ.
-- **Public API:** no documented fee.
+- **Public API:** Start for Free plan has no fee, but from 12 October 2026 participants with Withings accounts created after that date need their own **Withings+** membership to share data with a free-plan app; Withings says this cannot be avoided by routing through Apple Health or Google Health. Enterprise and Advanced Biomarkers are custom-priced by active users (and biomarkers); on those plans Withings says users "do not subscribe individually and there is no per-member charge". Withings+ membership price was not read (withings.com returned 403 to scripted requests).
 - **Advanced Research API / Raw Data API:** contract-gated; **pricing not public.**
 - **Withings Health Solutions:** quote-based B2B.
-- No consumer subscription is required for core measurements.
+- No consumer subscription is required for core measurements in the Withings app itself; the API data-sharing requirement above is the exception for new accounts on the free plan.
 
 ## Research Evidence and Validation
 
@@ -210,10 +222,11 @@
 - **Worst sleep-staging performance of six devices** in the strongest independent validation.
 - Wrist heart rate accuracy is in the lower tier.
 - No self-serve research console; access to the research capability runs through a sales conversation.
-- Pricing for research access is entirely non-public.
+- Pricing for research access is non-public: the plan structure is published, but Enterprise, Advanced Biomarkers and raw-data prices are custom.
+- **From 12 October 2026 the free API plan needs a paid Withings+ membership for each participant with a new Withings account.**
 - No survey/EMA capability.
 - Not a general activity-tracking platform, step/activity outputs are secondary to the measurement devices.
-- Compliance and per-device regulatory status unverified.
+- Compliance is vendor-stated only (no certificates checked); BAA and DPA only on paid plans.
 
 ## Best-Fit Use Cases
 
@@ -242,9 +255,11 @@
 - Is raw ECG waveform available under any agreement?
 - Can a contracted partner configure the ScanWatch accelerometer above the documented ~24.824 Hz raw-mode rate, up to the 100 Hz the overview page cites? Both pages re-read 2026-10-09 and neither documents a rate setting.
 - Precise raw-data file structure, retrieval mechanics, volume, and any retention window on Withings' side.
-- Rate limits, historical depth, and backfill for the Public Health Data API.
+- Historical depth, backfill and retention for the Public Health Data API (rate limits partly published 2026-10-10).
+- Does a research partner on a free plan qualify for the Withings+ exemption, and on what terms?
+- Which plan includes the Raw Data API, and at what price?
 - **Per-device regulatory clearance and validation-protocol compliance** (especially BP monitors against ESH/AAMI/ISO 81060-2, and ECG/SpO2 clearances by market).
-- HIPAA/BAA availability, SOC 2, ISO 13485/27001, GDPR DPA, and actual data residency.
+- Partly answered 2026-10-10: HIPAA, HDS, ISO 27001:2017 and GDPR are vendor-stated; DPA and BAA are offered on Enterprise and Advanced Biomarkers; EU or US cloud. Still open: SOC 2, ISO 13485, certificate evidence, and the conflict between ISO 27001:2017 on the developer page and the 2022 version that search snippets attribute to Withings' consumer security page.
 - Cellular device coverage by country and carrier, and cost of the cellular data component.
 - Sleep mat validation evidence for staging and apnoea detection.
 
@@ -254,7 +269,9 @@
 - Health Solutions, research & clinical trials: https://www.withings.com/us/en/health-solutions/research-clinical-trials
 - Research page: https://www.withings.com/en-us/pages/research
 - Partner Hub (developer portal): https://developer.withings.com/
-- API reference: https://developer.withings.com/api-reference/
+- API reference (public, no login): https://developer.withings.com/api-reference/
+- **API plans:** https://developer.withings.com/developer-guide/v3/withings-solutions/withings-api-plans/ (content at https://static.withings.com/content/api/plans/plans.html)
+- Security and compliance: https://developer.withings.com/developer-guide/v3/withings-solutions/security-and-compliance/
 - **Advanced Research API:** https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis/
 - **Raw data documentation:** https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data/
 - For health professionals: https://www.withings.com/us/en/for-professionals
@@ -268,3 +285,8 @@
 5. Schyvens A.-M. et al., "A performance validation of six commercial wrist-worn wearable sleep-tracking devices for sleep stage scoring compared to polysomnography." *SLEEP Advances* 2025;6(2):zpaf021. https://academic.oup.com/sleepadvances/article/6/2/zpaf021/8090472, Withings ScanWatch lowest of six at ~29.8%.
 6. Fuller D. et al. *JMIR mHealth uHealth* 2020;8(9):e18694. https://mhealth.jmir.org/2020/9/e18694/, Apple Watch stronger agreement than Garmin, Fitbit, and Withings for heart rate.
 7. Medable, Withings Health Solutions partnership announcement (secondary). https://www.businesswire.com/news/home/20220721005032/en/ (accessed 2026-08-21). Evidence of DCT platform integration.
+8. Withings API plans. https://developer.withings.com/developer-guide/v3/withings-solutions/withings-api-plans/ (content served from https://static.withings.com/content/api/plans/plans.html), accessed 2026-10-10. **Primary.** Start for Free, Enterprise and Advanced Biomarkers plans; 10-user cap; 1,500+ req/min on paid plans; DPA, BAA and US hosting on paid plans; Withings+ required from 12 October 2026 for new accounts on the free plan, including via Apple Health or Google Health; exemption for "Cellular Solutions, SDK and Research partners".
+9. Withings, Security and compliance. https://developer.withings.com/developer-guide/v3/withings-solutions/security-and-compliance/ (accessed 2026-10-10). **Primary (vendor statement).** EU Medical Cloud in France: GDPR, HDS, HIPAA, ISO 27001:2017; US Medical Cloud: ISO 27001:2017, HIPAA.
+10. Withings API reference. https://developer.withings.com/api-reference/ (accessed 2026-10-10; public, OpenAPI spec embedded in the page bundle). **Primary.** Raw Data "part of the Advanced research API", PPG and accelerometer "around 25Hz", ScanWatch only; activation takes `rawdata_type` and `enddate`; status 601 "Too many request".
+11. openFDA 510(k) database, applicant Withings. https://api.fda.gov/device/510k.json?search=applicant:withings (accessed 2026-10-10). **Primary (independent record).** K110872, K133125, K160544, K201456, K230812, K231667, K240795, K252474.
+12. Withings, Advanced Research API (re-read 2026-10-10). https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis/ . Wording unchanged from source 1.

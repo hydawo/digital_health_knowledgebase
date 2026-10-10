@@ -6,18 +6,18 @@
 |---|---|
 | Citation | Spangenberg L, Spahn C, Serebriakova J, Forkmann T, Glaesmer H. "Qualitative content analysis of reactivity effects and feasibility of ecological momentary assessments of suicide-related thoughts and behaviors in the long-term and in suicidal crises." *Frontiers in Psychiatry* 2026;17:1744947. DOI [10.3389/fpsyt.2026.1744947](https://doi.org/10.3389/fpsyt.2026.1744947). PMID 41868844 / PMC13003599. |
 | Study design | Qualitative content analysis (inductive–deductive, consensual coding) of interviews with a **purposively selected subsample** of a preregistered long-term EMA cohort study, stratified by high vs. low compliance and by suicide-related thought/behaviour (STB) occurrence during the study. |
-| Sample size (enrolled / analyzed) | **16 interviewed**, drawn from the parent EMA cohort (parent-cohort N not stated in this paper). Of the 16, **7 stopped responding during the second phase**. |
+| Sample size (enrolled / analyzed) | **16 interviewed**, drawn from the 76 parent-cohort participants whose participation ended between May 2024 and February 2025, of whom 27 (35.5%) were reached and agreed to a final follow-up interview. The parent cohort's total N is not stated. Of the 16, **7 stopped responding during the second phase**. |
 | Population | Adults **18–75**, German-speaking, recruited **as inpatients** in seven psychiatric clinics in **Leipzig and the Ruhr area around Essen, Germany**, following a suicide attempt or suicidal crisis, and followed after discharge. |
 | Duration | **Two phases totalling ~7 months.** EMA 1: 21–24 days, starting 1–3 days before discharge, **4 semi-random prompts/day** (08:00–22:00, ≥120 min apart). EMA 2: **26 weeks**, prompts on **two random consecutive days per week**. Total **84–96 prompts in EMA 1** and **208 in EMA 2**. |
 | Devices/platforms used | **[MetricWire](../../module-02-digital-phenotyping/profiles/metricwire.md)** — the **"Catalyst"** app, installed on participants' own smartphones at an in-hospital baseline. |
 | Funding/COI | German Research Foundation (FO 784/8-1, SP 1556/5-1, GL 818/8-1); Open Access fund of Leipzig University. **No platform relationship stated.** |
-| Last verified | 2026-09-01 |
+| Last verified | 2026-09-01; sampling-frame funnel and 0% floor corrected 2026-10-10 against the Europe PMC full text (PMC13003599) |
 
 ## Summary
 
 The **longest EMA protocol in this module** — roughly seven months, ~300 prompts — in one of the highest-risk populations research reaches: psychiatric inpatients discharged after a suicide attempt or crisis.
 
-The compliance trajectory in the interview subsample is the number to carry: **63.3% in the 3-week post-discharge phase (SD 21.7, range 23–91) falling to 45.4% over the following 26 weeks (SD 28.5, range 0–87)**, with **7 of 16 ceasing to respond before the final days**. A range whose floor is 0% means at least one retained participant contributed nothing in phase 2.
+The compliance trajectory in the interview subsample is the number to carry: **63.3% in the 3-week post-discharge phase (SD 21.7, range 23–91) falling to 45.4% over the following 26 weeks (SD 28.5, range 0–87)**, with **7 of 16 ceasing to respond before the final days**. A range whose floor is 0% means at least one participant contributed nothing in phase 2. That participant (participant 15 in Table 1) stopped responding on day 1 of EMA 2.
 
 Those figures are, in context, *good*. The authors cite prior post-discharge EMA studies reporting **21%**, **14–16%**, and **17.6%** compliance. A protocol that holds 45% over 26 weeks in this population is at the top of its literature — which tells you how low the ceiling is.
 
@@ -41,7 +41,7 @@ The qualitative findings are what makes it a Module 3 entry rather than a clinic
 
 Recruitment was in-person: research staff **attended routine meetings in seven clinics** to identify eligible inpatients, who were then approached individually. This is the highest-touch recruitment model in this module and stands in direct contrast to the online funnels of [Kivelä et al.](avicenna-ema-suicidal-ideation-iatrogenic.md) (39% of sign-ups started) and [Siebers et al.](metricwire-fraudulent-participation.md) (where virtual recruitment admitted fraud).
 
-**The parent cohort's enrolment funnel, total N, and overall retention are not reported in this paper** — it is a qualitative sub-study. All retention and compliance figures below apply to the **16 purposively selected interviewees only**, who were deliberately sampled to span high and low compliance and are therefore *not* representative of the parent cohort in either direction.
+**The parent cohort's total N, full enrolment funnel and overall retention are not reported in this paper** — it is a qualitative sub-study. The paper does give the sampling frame. Participation ended for 76 parent-cohort participants between May 2024 and February 2025. Of those, 27 (35.5%) were reached and agreed to a final follow-up interview, and 16 were interviewed. All retention and compliance figures below apply to the **16 purposively selected interviewees only**, who were deliberately sampled to span high and low compliance and are therefore *not* representative of the parent cohort in either direction.
 
 ## Data Completeness and Technical Issues
 
@@ -94,7 +94,7 @@ No app crashes, sync failures or platform faults are reported.
 
 **Verified** — the two-phase protocol structure and prompt counts, the 20-minute window and 10-minute reminder, the 29–31-item survey design, the <30 s careless-response exclusion rule, both phase-level compliance figures with SDs and ranges, the 7-of-16 phase-2 dropout, the emergency-numbers safety feature, the comparison compliance figures cited from the literature, and all qualitative themes. Read from the full text (Europe PMC PMC13003599), 2026-09-01.
 
-**Unclear / not reported** — the parent cohort's total N, enrolment funnel, and overall compliance. **All figures in this profile describe 16 purposively selected interviewees, sampled to span high and low compliance.** They must not be quoted as cohort-level compliance for the parent study. Anyone needing that should retrieve the parent study's preregistration (cited as refs 40–41).
+**Unclear / not reported** — the parent cohort's total N, full enrolment funnel, and overall compliance. The 76 → 27 → 16 sampling-frame funnel is reported (Verified 2026-10-10, PMC13003599). **All figures in this profile describe 16 purposively selected interviewees, sampled to span high and low compliance.** They must not be quoted as cohort-level compliance for the parent study. Anyone needing that should retrieve the parent study's preregistration (cited as refs 40–41).
 
 **Stated limitations:** selection bias in the interview sample, and no quantitative validation of the qualitative reactivity findings. The authors are explicit that generalisability is limited.
 

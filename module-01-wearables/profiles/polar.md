@@ -11,7 +11,7 @@
 | Open source | **SDK is open source** (Polar BLE SDK, GitHub); devices and cloud are not |
 | Hosting/deployment | Direct BLE streaming to a researcher's own app (no cloud required), **or** Polar Flow cloud + AccessLink API |
 | Pricing model | Device purchase; no subscription for core use; SDK free |
-| Last verified | 2026-08-21; H10 accelerometer re-confirmed 2026-10-09 |
+| Last verified | 2026-08-21; H10 accelerometer re-confirmed 2026-10-09; AccessLink scope, limits and history, Polar 360 SDK specs, privacy roles and H10 US price re-verified 2026-10-10 |
 
 ## Summary
 
@@ -19,7 +19,7 @@
 
 - The **Polar H10 chest strap** is, in practice, the field-standard reference device for heart rate and RR-interval measurement in exercise and physiology research. Polar states it was used in over 600 scientific studies in 2022 to 2023 and describes it as a gold-standard reference technology for HR in field settings, a vendor claim, but one broadly consistent with how the device is used in the literature.
 
-- The trade-off is that Polar is a **sensor company, not a longitudinal-monitoring ecosystem**. The H10 and Verity Sense are session devices: they need a phone or watch nearby (or use limited internal memory), they are not 24/7 wearables, and Polar offers nothing resembling a research participant-management platform. For continuous free-living monitoring across weeks, Polar's watch line goes through the Polar Flow cloud and AccessLink API, which is a much more conventional (and more limited) consumer API.
+- The trade-off is that Polar is a **sensor company, not a longitudinal-monitoring ecosystem**. The H10 and Verity Sense are session devices: they need a phone or watch nearby (or use limited internal memory), they are not 24/7 wearables, and Polar offers nothing resembling a research participant-management platform. For continuous free-living monitoring across weeks, Polar's watch line goes through the Polar Flow cloud and AccessLink API, which is a much more conventional (and more limited) consumer API: open to any registered Polar Flow user, but returning exercises only from the last 30 days and only after a participant links to the study's client, with continuous HR at 5-minute intervals (Verified 2026-10-10).
 
 ## Products / Platform Architecture
 
@@ -29,7 +29,7 @@
 - An open-source Android/iOS SDK that connects directly to Polar sensors over Bluetooth LE and streams raw data. No account, no cloud, no API key. Data lands in the researcher's own app. This is the research-relevant path.
 
 ### Path 2, Polar Open AccessLink (cloud API)
-- Polar's REST API providing access to data recorded by Polar consumer devices and synced to Polar Flow, basic user information, training sessions, daily activity, and (on supported devices) sleep and recharge data. Conventional OAuth consumer API; summary-level.
+- Polar's REST API providing access to data recorded by Polar consumer devices and synced to Polar Flow, basic user information, training sessions, daily activity, and (on supported devices) sleep and recharge data. Conventional OAuth consumer API, mostly summary-level, with two finer-grained exceptions: exercise samples include **RR interval in ms when the session was recorded with a Polar H6, H7, H9 or H10 chest strap**, and continuous heart rate is returned as 5-minute samples. Re-read 2026-10-10 (changelog entry 13.01.2026); see Data Access for limits.
 
 ### Path 3, Polar Team Pro
 - A team-sport system: sensors with GNSS positioning and IMU, real-time telemetry, and an API for exporting performance data to third-party analysis platforms. Polar reports it was used in 180 scientific studies in 2022 to 2023.
@@ -107,6 +107,10 @@
 
 - Accelerometer, gyroscope, magnetometer and temperature via the SDK, plus HR. Per-device rates were not retrieved for these models. **Unclear.**
 
+### Polar 360 / Loop, SDK specifications (added 2026-10-10)
+
+- Per `documentation/products/Polar360.md` (read 2026-10-10, **Verified**): accelerometer 12 to 400 Hz online and 1 to 50 Hz offline, plus or minus 2 to 16 g; **PPG 22, 50 or 100 Hz online and offline, 24-bit, green channels**; skin temperature 1, 2 or 4 Hz; PP interval and 24/7 PPI samples. The device has **15 MB** of storage shared by activity, sleep and SDK offline recordings, so data must be synced and deleted regularly. This makes the 360 the only Polar device in this profile with a documented multi-day raw-PPG offline path, bounded by 15 MB.
+
 ### Why this matters
 
 - **22-bit raw PPG at up to 176 Hz from a ~$95 armband, with a 9-axis IMU at up to 416 Hz, over an open-source SDK with no registration, no approval, no cloud and no fee, is the single most permissive raw-signal offer in this entire module.** It beats Samsung's 25 Hz accelerometer, beats Withings' ~25 Hz, and is obtained without a partner programme. The trade-off is form factor and wear duration, not signal quality.
@@ -127,6 +131,12 @@
 
 - There is no enrolment portal, adherence dashboard, or remote configuration. A study using the BLE SDK is building all of that itself, or using a third-party platform. Several third-party research tools integrate Polar sensors (e.g. Fibion's research offerings; Stanford's `wearipedia` includes a Polar H10 extraction guide).
 
+### Research program and academic data access (added 2026-10-10)
+
+- **No formal external research programme, academic tier or academic price is published.** Polar's science page (read 2026-10-10) offers a "Collaborate with us" contact, describes the in-house Polar Research Centre, lists partner institutions, and points researchers to the same developer tools everyone uses. No grant, discount or application process is described.
+- **What academics get is what everyone gets, at no fee:** the open BLE SDK (raw ECG, accelerometer, PPG and IMU, no registration) and AccessLink (any registered Polar Flow user can create a client). AccessLink limits: exercises only from the last 30 days and only after the participant links to the client, continuous HR at 5-minute intervals, activity no older than 365 days, rate limits of 500 + 20 x users per 15 minutes and 5,000 + 100 x users per 24 hours, under the AccessLink Limited License Agreement. **Verified** (polar.com/accesslink-api, 2026-10-10).
+- **Active:** yes (AccessLink changelog 13.01.2026; BLE SDK release 8.4.0 on 2026-10-01).
+
 ## Data Access and Export
 
 | Route | What you get | Constraints |
@@ -134,7 +144,7 @@
 | **BLE SDK live stream** | Raw ECG, ACC, PPG, PPI, gyro, magnetometer, temperature (device-dependent) | Requires a phone/app within Bluetooth range and running; you write the app |
 | **Device internal memory** | H10 and Verity Sense have built-in memory for offline recording | Capacity-limited; a session-recording model, not weeks of continuous capture |
 | **Polar Flow export** | Session files, CSV/TCX exports | Consumer-grade, summary-level |
-| **Open AccessLink API** | Training sessions, daily activity, sleep, user info | OAuth; conventional consumer API; not raw |
+| **Open AccessLink API (v3)** | Exercises with per-session samples (HR, speed, cadence and others, plus **RR interval in ms when recorded with a Polar H6, H7, H9 or H10 chest strap**), continuous HR in **5-minute** samples, daily activity, sleep, Nightly Recharge, SleepWise alertness and circadian bedtime (last 28 days), user info; webhooks | OAuth 2.0; "Any registered Polar Flow user can create API client"; governed by the AccessLink Limited License Agreement. **Only exercises uploaded to Flow in the last 30 days, and only those uploaded after the user registered with your client, are returned**; activity lists default to 28 days and reject dates older than 365 days. Rate limits: 500 + 20 x users per 15 minutes and 5,000 + 100 x users per 24 hours. Verified 2026-10-10 (polar.com/accesslink-api). |
 | **Team Pro API** | Performance data for third-party analysis platforms | Team-sport oriented |
 
 - The internal-memory feature is important for field research: **Verity Sense and H10 can record without a phone present** and be offloaded later, which enables protocols (swimming, occupational settings, paediatric use) where carrying a phone is impossible. Recording duration is limited and should be checked per device.
@@ -165,7 +175,7 @@
 ## Privacy, Security, and Compliance
 
 - The BLE SDK path is the strongest privacy story in this module: **no data leaves the participant's device except by the researcher's own code.** Compliance attaches entirely to the researcher's stack.
-- For the Polar Flow/AccessLink path, Polar is EU-based (Finland), which is generally favourable for GDPR, but specific DPA terms, data residency, HIPAA posture, and certifications were **not verified** in this session.
+- For the Polar Flow/AccessLink path, Polar is EU-based (Finland), which is generally favourable for GDPR. **Roles (Verified, Polar privacy notice, read 2026-10-10):** Polar Electro Oy is the data controller for Polar Flow, and "Polar is not responsible for customer shared data once it is transferred out of Polar's system". So data a participant links to a study through AccessLink is a transfer the participant authorises, with the research team as an independent recipient, not a processor arrangement. Polar acts as data processor under a signed agreement only for B2B products such as Polar Team Pro and GoFit. No HIPAA or BAA language appears in the notice. Certifications and data residency were not checked.
 
 ## Pricing
 
@@ -173,6 +183,7 @@
 - **Devices:** H10 and Verity Sense are inexpensive consumer sensors (roughly in the €80, €120 class at retail; verify current pricing). Watches span a wider range. Team Pro is a system-level purchase.
 - **No subscription** for core functionality.
 - Polar Flow / AccessLink: no documented API fee.
+- **Device price check 2026-10-10:** Polar's US store lists the H10 at **$104.95** (polar.com/us-en, Verified). The Verity Sense US product page returned 404, so its current price was not read; the "~$95" figure above is from the 2026-08-21 pass.
 - **Cost per raw-ECG-capable participant is roughly an order of magnitude below Empatica and ActiGraph/Ametris.**
 
 ## Research Evidence and Validation
@@ -204,7 +215,7 @@
 - Device capability matrix in the SDK documentation contains at least one apparent error; per-device verification is necessary.
 - Sampling rates not documented at the top level of the SDK.
 - No survey/EMA capability.
-- AccessLink is a conventional summary-level consumer API, not a research API.
+- AccessLink is a conventional consumer API, not a research API: no backfill before a participant registers with the client, a 30-day window for exercises, and 5-minute continuous HR.
 
 ## Best-Fit Use Cases
 
@@ -232,13 +243,12 @@
 - ~~Resolve the device capability matrix~~, **RESOLVED from the per-product SDK docs.** H10 does
 - stream accelerometry (25/50/100/200 Hz, ±2/4/8 g). Verity Sense does **not** list ECG, but does have gyroscope and magnetometer. The SDK README matrix is incomplete; the product docs govern.
 - Documented sampling rates and configurable ranges for H10 ECG/ACC and Verity Sense PPG/ACC.
-- Internal memory recording capacity and maximum continuous duration for H10 and Verity Sense.
+- Internal memory recording capacity and maximum continuous duration for H10 and Verity Sense (the SDK docs give 15 MB only for Polar 360).
 - Battery life under continuous raw streaming for each sensor.
-- Whether Open AccessLink exposes any beat-to-beat/RR data, or only session summaries.
-- AccessLink rate limits, historical depth, and backfill.
-- Polar Flow / AccessLink GDPR DPA terms, data residency, HIPAA posture, certifications.
+- ~~Whether Open AccessLink exposes any beat-to-beat/RR data, or only session summaries.~~ ~~AccessLink rate limits, historical depth, and backfill.~~ Resolved 2026-10-10 (Verified, polar.com/accesslink-api): AccessLink returns exercise RR intervals when a Polar chest strap was used; rate limits are 500 + 20 x users per 15 minutes and 5,000 + 100 x users per 24 hours; there is no backfill before a user registers with the client, and exercises older than 30 days are not returned.
+- Polar Flow / AccessLink: partly answered 2026-10-10 (controller-to-controller transfer under the privacy notice; no HIPAA or BAA language). Still open: whether Polar will sign a BAA, whether a research institution can get a Team-Pro-style processor agreement, data residency and certifications.
 - Methodology behind the "600 studies" and "1,000 papers per year" claims.
-- Polar 360's data-access model, is it SDK-accessible or cloud-only?
+- ~~Polar 360's data-access model, is it SDK-accessible or cloud-only?~~ Answered 2026-10-10: SDK-accessible (see Watch line section).
 
 ## Key Links
 
@@ -262,3 +272,7 @@
 5. Fibion, "Using Polar SDK & API in Research." https://web.fibion.com/articles/polar-sdk-api-research-fibion/ (accessed 2026-08-21). Secondary; corroborates real-time streaming of HR, RR intervals, and accelerometer from H10 and Verity Sense.
 6. Stanford wearipedia, Polar H10 extraction guide. https://wearipedia.readthedocs.io/en/latest/notebooks/polar_h10.html (accessed 2026-08-21). Evidence of academic tooling.
 7. Schyvens A.-M. et al. *SLEEP Advances* 2025;6(2):zpaf021. https://academic.oup.com/sleepadvances/article/6/2/zpaf021/8090472, noted as **not** including Polar.
+8. Polar AccessLink API v3 documentation. https://www.polar.com/accesslink-api/ (accessed 2026-10-10; changelog entry 13.01.2026). **Primary.** Any registered Polar Flow user can create a client; Limited License Agreement; RR interval samples with H6, H7, H9 or H10; continuous HR in 5-minute samples; 30-day and post-registration exercise window; 28-day default and 365-day limit for activity; rate-limit formulas; webhooks.
+9. Polar privacy notice. https://www.polar.com/en/legal/privacy-notice (accessed 2026-10-10). **Primary.** Polar Electro Oy as controller; not responsible for data transferred out; processor role for Team Pro and GoFit under agreement; no HIPAA language.
+10. Polar BLE SDK product documentation, Polar 360. https://github.com/polarofficial/polar-ble-sdk/blob/master/documentation/products/Polar360.md (accessed 2026-10-10; latest SDK release 8.4.0, 2026-10-01). **Primary.**
+11. Polar H10 product page, Polar USA store. https://www.polar.com/us-en/sensors/h10-heart-rate-sensor (accessed 2026-10-10). $104.95 list price.
