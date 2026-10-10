@@ -84,6 +84,18 @@ These come from `CLAUDE.md` and apply to all of them.
   Module 4 catalogue.
 - **Extra rule:** verify the first author from the paper's byline, never search metadata.
 
+### 📌 Fact keeper
+
+- **What it is:** the session that works the weekly `facts-monitor` GitHub issue.
+- **Does:** re-reads every page the weekly check flagged (quote missing or reworded, page changed,
+  dead link, check by hand, overdue), updates the affected facts in `facts/<company>.yaml` with a
+  fresh exact quote and date, regenerates the tables, fixes any profile prose the change
+  contradicts, logs the change and closes the issue.
+- **May change:** the fact records, the generated files (only by running `generate.py`), and the
+  profiles' prose where a fact changed.
+- **Rules:** [`../facts/README.md`](../facts/README.md). A quote is always copied from the live page,
+  never reconstructed. A company's own compliance claim stays Corroborated without independent evidence.
+
 ### 🧐 Independent reviewer
 
 - **Does:** starts with no earlier conclusions and assumes nothing is correct until checked. Fact-checks

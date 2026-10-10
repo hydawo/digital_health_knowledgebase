@@ -1,0 +1,89 @@
+# Schema for vendor fact records (facts/<company>.yaml). Read by tools/facts/validate.py.
+# Designed 2026-10-10; see facts/README.md.
+
+groups:
+  research_access:
+    label: Research access
+    recheck_days: 30
+    fields:
+      research_program: Formal research or academic program (name, what it offers)
+      program_eligibility: Who can join the research program
+      program_application: How to apply, and any approval or review step
+      program_status: Whether the program is active, paused, renamed or closed
+      developer_program_status: Whether the general developer or API program is open to new applicants
+      user_cap: Participant or user limits before approval or by tier
+      academic_vs_commercial: How academic access differs from commercial or consumer access
+  pricing:
+    label: Pricing
+    recheck_days: 30
+    fields:
+      device_price: Device or hardware list price
+      subscription_price: Consumer subscription or membership price
+      academic_pricing: Research or academic pricing or discount
+      api_platform_fees: Fees for API, SDK, platform or data access
+      minimum_commitment: Minimum order, term or commitment
+      quote_required: Whether pricing requires contacting sales
+      hosting_price: {text: Price of managed hosting, applies_to: [platform]}
+  data_access:
+    label: Data access and terms
+    recheck_days: 30
+    fields:
+      raw_streams: Raw signals available to researchers, and by which route
+      derived_metrics: Derived or processed metrics available to researchers
+      sampling_rates: Documented sampling rates or temporal resolution
+      history_depth: How far back data can be retrieved
+      export_routes: Export, API, SDK or file routes
+      rate_limits: API rate limits
+      retention_terms: Terms on retaining, storing or deleting data
+      ai_training_terms: Terms on using data to train AI or ML models
+      deprecations: Announced shutdowns, deprecations or migrations, with dates
+      licence: {text: Software licence of the platform's components, applies_to: [platform]}
+      hosting_options: {text: Self-hosting and managed-hosting options, applies_to: [platform]}
+      app_availability: {text: App store availability on iOS and Android, applies_to: [platform]}
+  compliance:
+    label: Compliance and regulatory
+    recheck_days: 90
+    fields:
+      baa: Whether a HIPAA Business Associate Agreement is offered
+      dpa: Whether a data processing agreement is offered
+      hipaa_statement: Published HIPAA statement
+      gdpr_statement: Published GDPR statement
+      iso27001: ISO/IEC 27001 status and evidence
+      soc2: SOC 2 status and evidence
+      fda_clearances: FDA clearances, from the FDA database
+      data_residency: Where data is stored, and residency options
+
+statuses:
+  stated: The source says it. Needs at least one source with an exact quote.
+  not_public: Searched and not published. Needs the pages checked, in sources, with no quote required.
+  conflict: Sources disagree. Needs at least two sources.
+  unclear: Evidence is incomplete or ambiguous.
+  not_applicable: The field does not apply to this company or product.
+  unresearched: Not yet researched. Allowed only until the baseline run fills the record.
+
+confidence: [Verified, Corroborated, Reported, Unclear]
+
+source_types:
+  vendor_page: The company's own marketing or product page
+  vendor_legal: The company's own terms, agreements or policies
+  vendor_docs: The company's own developer or technical documentation
+  regulator_db: A regulator's database or letter (FDA, EUDAMED)
+  certificate: A certificate, registry entry or signed agreement from an independent party
+  repository: A code repository or package registry
+  app_store: An app store listing
+  paper: A peer-reviewed paper or preprint
+  secondary: Press, blogs, forums, integrator docs and other third parties
+  vendor_confirmation: A written answer from the company to this project
+
+# Fields where a company's statement about itself cannot be Verified without independent evidence.
+self_claim_cap:
+  fields: [hipaa_statement, gdpr_statement, iso27001, soc2, baa, dpa]
+  max_without_independent: Corroborated
+  independent_types: [certificate, regulator_db, vendor_confirmation]
+
+# FDA status may be Verified only from the regulator.
+regulator_only:
+  fields: [fda_clearances]
+  verified_requires: [regulator_db]
+
+watch_roles: [pricing, terms, research_program, developer_program, docs, trust, regulatory, app_store, repository, changelog, other]

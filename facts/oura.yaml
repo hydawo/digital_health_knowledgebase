@@ -1,0 +1,249 @@
+# Vendor fact record. Schema: facts/_schema.yaml. How to work it: facts/README.md.
+# Pilot record, filled 2026-10-10 from live pages to prove the pipeline.
+name: Oura
+kind: wearable
+profile: module-01-wearables/profiles/oura.md
+watch:
+- url: https://organizations.ouraring.com/solutions/researchers
+  role: research_program
+- url: https://cloud.ouraring.com/legal/api-agreement
+  role: terms
+- url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+  role: docs
+- url: https://ouraring.com/membership
+  role: pricing
+- url: https://ouraring.com/trust-center
+  role: trust
+- url: https://ouraring.com/
+  role: other
+- url: https://organizations.ouraring.com/
+  role: research_program
+- url: https://apps.apple.com/us/app/oura-research/id6748037636
+  role: app_store
+- url: https://cloud.ouraring.com/v2/docs
+  role: docs
+- url: https://api.ouraring.com/v2/docs
+  role: docs
+- url: https://cloud.ouraring.com/
+  role: other
+facts:
+- field: research_program
+  status: stated
+  value: 'Oura for research, part of Oura for Organizations: dashboards, group data export, API integration'
+  confidence: Verified
+  sources:
+  - url: https://organizations.ouraring.com/solutions/researchers
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Oura offers a solution for researchers, combining the unparalleled accuracy of Oura Ring with customizable
+      dashboards and simple data integration
+  recheck_by: '2026-11-09'
+- field: program_eligibility
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://organizations.ouraring.com/solutions/researchers
+    type: vendor_page
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+  note: The research page states no eligibility criteria.
+- field: program_application
+  status: stated
+  value: Contact form only; no published application process
+  confidence: Verified
+  sources:
+  - url: https://organizations.ouraring.com/solutions/researchers
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Track participant metrics with research-grade accuracy across a variety of research studies. Contact
+      us
+  recheck_by: '2026-11-09'
+- field: program_status
+  status: stated
+  value: Active (page live)
+  confidence: Verified
+  sources:
+  - url: https://organizations.ouraring.com/solutions/researchers
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Oura for research Power your scientific discoveries
+  recheck_by: '2026-11-09'
+- field: developer_program_status
+  status: stated
+  value: Open to new API applications; more than 10 users needs Oura's approval
+  confidence: Verified
+  sources:
+  - url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: API applications accessing more than 10 users require approval from Oura
+  recheck_by: '2026-11-09'
+- field: user_cap
+  status: stated
+  value: 10 users before approval
+  confidence: Verified
+  sources:
+  - url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: API applications accessing more than 10 users require approval from Oura
+  recheck_by: '2026-11-09'
+- field: academic_vs_commercial
+  status: unclear
+  confidence: Unclear
+  sources:
+  - url: https://organizations.ouraring.com/solutions/researchers
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://cloud.ouraring.com/legal/api-agreement
+    type: vendor_legal
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+  note: Neither the research page nor the API Agreement describes different terms for academic users.
+- field: device_price
+  status: unresearched
+- field: subscription_price
+  status: stated
+  value: US $5.99/month or $69.99/year before tax
+  confidence: Verified
+  sources:
+  - url: https://ouraring.com/membership
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: $5.99 USD/month or $69.99 USD/annually before tax for US members
+  recheck_by: '2026-11-09'
+- field: academic_pricing
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://organizations.ouraring.com/solutions/researchers
+    type: vendor_page
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+  note: The research page has no prices.
+- field: api_platform_fees
+  status: unresearched
+- field: minimum_commitment
+  status: unresearched
+- field: quote_required
+  status: stated
+  value: Yes, the research offering is contact-only
+  confidence: Verified
+  sources:
+  - url: https://organizations.ouraring.com/solutions/researchers
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Track participant metrics with research-grade accuracy across a variety of research studies. Contact
+      us
+  recheck_by: '2026-11-09'
+- field: raw_streams
+  status: unresearched
+- field: derived_metrics
+  status: unresearched
+- field: sampling_rates
+  status: unresearched
+- field: history_depth
+  status: unresearched
+- field: export_routes
+  status: stated
+  value: API v2 with OAuth and webhooks; research platform exports raw data to CSV or JSON
+  confidence: Verified
+  sources:
+  - url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: Webhooks are the preferred way to consume Oura data
+  - url: https://organizations.ouraring.com/solutions/researchers
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Flexible data export of raw data to CSV or JSON file
+  recheck_by: '2026-11-09'
+  note: What 'raw data' means on the research platform is not defined.
+- field: rate_limits
+  status: stated
+  value: Two layers (per access token and per application); numbers not published
+  confidence: Verified
+  sources:
+  - url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: The API enforces rate limits at two layers to ensure fair access across all applications
+  recheck_by: '2026-11-09'
+- field: retention_terms
+  status: stated
+  value: API data may not be stored or retained beyond the duration strictly necessary; aggregators may not store
+    or cache it
+  confidence: Verified
+  sources:
+  - url: https://cloud.ouraring.com/legal/api-agreement
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: User Data or Oura Data and User Data accessed or obtained through the Oura API may not be stored or retained
+      beyond the duration strictly necessary
+  recheck_by: '2026-11-09'
+- field: ai_training_terms
+  status: stated
+  value: Training, fine-tuning or improving any AI model with Oura data is prohibited, as is using it in an evaluation
+    or benchmark dataset
+  confidence: Verified
+  sources:
+  - url: https://cloud.ouraring.com/legal/api-agreement
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: training, fine-tuning, developing, or improving any AI Model or AI Platform or allowing the training,
+      fine-tuning, developing, or improving of any AI Model or AI Platform
+  recheck_by: '2026-11-09'
+  note: A repair agent on 2026-10-10 reported that one clause allows training with Oura's prior written consent.
+    The clause text read for this record states the prohibition without that route. Read the full section before
+    relying on either reading.
+- field: deprecations
+  status: stated
+  value: Personal access tokens retired December 2025
+  confidence: Verified
+  sources:
+  - url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: personal access tokens were deprecated in December 2025 and are no longer available for use
+  recheck_by: '2026-11-09'
+- field: baa
+  status: unresearched
+- field: dpa
+  status: unresearched
+- field: hipaa_statement
+  status: stated
+  value: Meets HIPAA requirements where it handles PHI for a healthcare partner (vendor statement)
+  confidence: Corroborated
+  sources:
+  - url: https://ouraring.com/trust-center
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: We also meet HIPAA requirements where we handle protected health information for a healthcare partner
+  recheck_by: '2027-01-08'
+- field: gdpr_statement
+  status: stated
+  value: States compliance with GDPR (vendor statement)
+  confidence: Corroborated
+  sources:
+  - url: https://organizations.ouraring.com/solutions/researchers
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Complies with stringent data protection laws like GDPR and processes PHI in accordance with HIPAA
+  recheck_by: '2027-01-08'
+- field: iso27001
+  status: unresearched
+- field: soc2
+  status: stated
+  value: Annual independent audit under a SOC 2 heading (vendor statement; report not seen)
+  confidence: Corroborated
+  sources:
+  - url: https://ouraring.com/trust-center
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Each year, independent auditors carefully review our security controls and verify that they are designed
+      and operating as effectively as intended
+  recheck_by: '2027-01-08'
+- field: fda_clearances
+  status: unresearched
+- field: data_residency
+  status: unresearched

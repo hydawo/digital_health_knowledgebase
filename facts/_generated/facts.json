@@ -1,0 +1,8944 @@
+[
+ {
+  "company": "fitabase",
+  "name": "Fitabase",
+  "kind": "intermediary",
+  "field": "research_program",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitabase",
+  "name": "Fitabase",
+  "kind": "intermediary",
+  "field": "program_eligibility",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitabase",
+  "name": "Fitabase",
+  "kind": "intermediary",
+  "field": "program_application",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitabase",
+  "name": "Fitabase",
+  "kind": "intermediary",
+  "field": "program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitabase",
+  "name": "Fitabase",
+  "kind": "intermediary",
+  "field": "developer_program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitabase",
+  "name": "Fitabase",
+  "kind": "intermediary",
+  "field": "user_cap",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitabase",
+  "name": "Fitabase",
+  "kind": "intermediary",
+  "field": "academic_vs_commercial",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitabase",
+  "name": "Fitabase",
+  "kind": "intermediary",
+  "field": "device_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitabase",
+  "name": "Fitabase",
+  "kind": "intermediary",
+  "field": "subscription_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitabase",
+  "name": "Fitabase",
+  "kind": "intermediary",
+  "field": "academic_pricing",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitabase",
+  "name": "Fitabase",
+  "kind": "intermediary",
+  "field": "api_platform_fees",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitabase",
+  "name": "Fitabase",
+  "kind": "intermediary",
+  "field": "minimum_commitment",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitabase",
+  "name": "Fitabase",
+  "kind": "intermediary",
+  "field": "quote_required",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitabase",
+  "name": "Fitabase",
+  "kind": "intermediary",
+  "field": "raw_streams",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitabase",
+  "name": "Fitabase",
+  "kind": "intermediary",
+  "field": "derived_metrics",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitabase",
+  "name": "Fitabase",
+  "kind": "intermediary",
+  "field": "sampling_rates",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitabase",
+  "name": "Fitabase",
+  "kind": "intermediary",
+  "field": "history_depth",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitabase",
+  "name": "Fitabase",
+  "kind": "intermediary",
+  "field": "export_routes",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitabase",
+  "name": "Fitabase",
+  "kind": "intermediary",
+  "field": "rate_limits",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitabase",
+  "name": "Fitabase",
+  "kind": "intermediary",
+  "field": "retention_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitabase",
+  "name": "Fitabase",
+  "kind": "intermediary",
+  "field": "ai_training_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitabase",
+  "name": "Fitabase",
+  "kind": "intermediary",
+  "field": "deprecations",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitabase",
+  "name": "Fitabase",
+  "kind": "intermediary",
+  "field": "baa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitabase",
+  "name": "Fitabase",
+  "kind": "intermediary",
+  "field": "dpa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitabase",
+  "name": "Fitabase",
+  "kind": "intermediary",
+  "field": "hipaa_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitabase",
+  "name": "Fitabase",
+  "kind": "intermediary",
+  "field": "gdpr_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitabase",
+  "name": "Fitabase",
+  "kind": "intermediary",
+  "field": "iso27001",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitabase",
+  "name": "Fitabase",
+  "kind": "intermediary",
+  "field": "soc2",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitabase",
+  "name": "Fitabase",
+  "kind": "intermediary",
+  "field": "fda_clearances",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitabase",
+  "name": "Fitabase",
+  "kind": "intermediary",
+  "field": "data_residency",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitrockr",
+  "name": "Fitrockr",
+  "kind": "intermediary",
+  "field": "research_program",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitrockr",
+  "name": "Fitrockr",
+  "kind": "intermediary",
+  "field": "program_eligibility",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitrockr",
+  "name": "Fitrockr",
+  "kind": "intermediary",
+  "field": "program_application",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitrockr",
+  "name": "Fitrockr",
+  "kind": "intermediary",
+  "field": "program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitrockr",
+  "name": "Fitrockr",
+  "kind": "intermediary",
+  "field": "developer_program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitrockr",
+  "name": "Fitrockr",
+  "kind": "intermediary",
+  "field": "user_cap",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitrockr",
+  "name": "Fitrockr",
+  "kind": "intermediary",
+  "field": "academic_vs_commercial",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitrockr",
+  "name": "Fitrockr",
+  "kind": "intermediary",
+  "field": "device_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitrockr",
+  "name": "Fitrockr",
+  "kind": "intermediary",
+  "field": "subscription_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitrockr",
+  "name": "Fitrockr",
+  "kind": "intermediary",
+  "field": "academic_pricing",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitrockr",
+  "name": "Fitrockr",
+  "kind": "intermediary",
+  "field": "api_platform_fees",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitrockr",
+  "name": "Fitrockr",
+  "kind": "intermediary",
+  "field": "minimum_commitment",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitrockr",
+  "name": "Fitrockr",
+  "kind": "intermediary",
+  "field": "quote_required",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitrockr",
+  "name": "Fitrockr",
+  "kind": "intermediary",
+  "field": "raw_streams",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitrockr",
+  "name": "Fitrockr",
+  "kind": "intermediary",
+  "field": "derived_metrics",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitrockr",
+  "name": "Fitrockr",
+  "kind": "intermediary",
+  "field": "sampling_rates",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitrockr",
+  "name": "Fitrockr",
+  "kind": "intermediary",
+  "field": "history_depth",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitrockr",
+  "name": "Fitrockr",
+  "kind": "intermediary",
+  "field": "export_routes",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitrockr",
+  "name": "Fitrockr",
+  "kind": "intermediary",
+  "field": "rate_limits",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitrockr",
+  "name": "Fitrockr",
+  "kind": "intermediary",
+  "field": "retention_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitrockr",
+  "name": "Fitrockr",
+  "kind": "intermediary",
+  "field": "ai_training_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitrockr",
+  "name": "Fitrockr",
+  "kind": "intermediary",
+  "field": "deprecations",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitrockr",
+  "name": "Fitrockr",
+  "kind": "intermediary",
+  "field": "baa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitrockr",
+  "name": "Fitrockr",
+  "kind": "intermediary",
+  "field": "dpa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitrockr",
+  "name": "Fitrockr",
+  "kind": "intermediary",
+  "field": "hipaa_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitrockr",
+  "name": "Fitrockr",
+  "kind": "intermediary",
+  "field": "gdpr_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitrockr",
+  "name": "Fitrockr",
+  "kind": "intermediary",
+  "field": "iso27001",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitrockr",
+  "name": "Fitrockr",
+  "kind": "intermediary",
+  "field": "soc2",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitrockr",
+  "name": "Fitrockr",
+  "kind": "intermediary",
+  "field": "fda_clearances",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitrockr",
+  "name": "Fitrockr",
+  "kind": "intermediary",
+  "field": "data_residency",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "labfront",
+  "name": "Labfront",
+  "kind": "intermediary",
+  "field": "research_program",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "labfront",
+  "name": "Labfront",
+  "kind": "intermediary",
+  "field": "program_eligibility",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "labfront",
+  "name": "Labfront",
+  "kind": "intermediary",
+  "field": "program_application",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "labfront",
+  "name": "Labfront",
+  "kind": "intermediary",
+  "field": "program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "labfront",
+  "name": "Labfront",
+  "kind": "intermediary",
+  "field": "developer_program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "labfront",
+  "name": "Labfront",
+  "kind": "intermediary",
+  "field": "user_cap",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "labfront",
+  "name": "Labfront",
+  "kind": "intermediary",
+  "field": "academic_vs_commercial",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "labfront",
+  "name": "Labfront",
+  "kind": "intermediary",
+  "field": "device_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "labfront",
+  "name": "Labfront",
+  "kind": "intermediary",
+  "field": "subscription_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "labfront",
+  "name": "Labfront",
+  "kind": "intermediary",
+  "field": "academic_pricing",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "labfront",
+  "name": "Labfront",
+  "kind": "intermediary",
+  "field": "api_platform_fees",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "labfront",
+  "name": "Labfront",
+  "kind": "intermediary",
+  "field": "minimum_commitment",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "labfront",
+  "name": "Labfront",
+  "kind": "intermediary",
+  "field": "quote_required",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "labfront",
+  "name": "Labfront",
+  "kind": "intermediary",
+  "field": "raw_streams",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "labfront",
+  "name": "Labfront",
+  "kind": "intermediary",
+  "field": "derived_metrics",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "labfront",
+  "name": "Labfront",
+  "kind": "intermediary",
+  "field": "sampling_rates",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "labfront",
+  "name": "Labfront",
+  "kind": "intermediary",
+  "field": "history_depth",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "labfront",
+  "name": "Labfront",
+  "kind": "intermediary",
+  "field": "export_routes",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "labfront",
+  "name": "Labfront",
+  "kind": "intermediary",
+  "field": "rate_limits",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "labfront",
+  "name": "Labfront",
+  "kind": "intermediary",
+  "field": "retention_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "labfront",
+  "name": "Labfront",
+  "kind": "intermediary",
+  "field": "ai_training_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "labfront",
+  "name": "Labfront",
+  "kind": "intermediary",
+  "field": "deprecations",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "labfront",
+  "name": "Labfront",
+  "kind": "intermediary",
+  "field": "baa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "labfront",
+  "name": "Labfront",
+  "kind": "intermediary",
+  "field": "dpa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "labfront",
+  "name": "Labfront",
+  "kind": "intermediary",
+  "field": "hipaa_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "labfront",
+  "name": "Labfront",
+  "kind": "intermediary",
+  "field": "gdpr_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "labfront",
+  "name": "Labfront",
+  "kind": "intermediary",
+  "field": "iso27001",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "labfront",
+  "name": "Labfront",
+  "kind": "intermediary",
+  "field": "soc2",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "labfront",
+  "name": "Labfront",
+  "kind": "intermediary",
+  "field": "fda_clearances",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "labfront",
+  "name": "Labfront",
+  "kind": "intermediary",
+  "field": "data_residency",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "terra",
+  "name": "Terra",
+  "kind": "intermediary",
+  "field": "research_program",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "terra",
+  "name": "Terra",
+  "kind": "intermediary",
+  "field": "program_eligibility",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "terra",
+  "name": "Terra",
+  "kind": "intermediary",
+  "field": "program_application",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "terra",
+  "name": "Terra",
+  "kind": "intermediary",
+  "field": "program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "terra",
+  "name": "Terra",
+  "kind": "intermediary",
+  "field": "developer_program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "terra",
+  "name": "Terra",
+  "kind": "intermediary",
+  "field": "user_cap",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "terra",
+  "name": "Terra",
+  "kind": "intermediary",
+  "field": "academic_vs_commercial",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "terra",
+  "name": "Terra",
+  "kind": "intermediary",
+  "field": "device_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "terra",
+  "name": "Terra",
+  "kind": "intermediary",
+  "field": "subscription_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "terra",
+  "name": "Terra",
+  "kind": "intermediary",
+  "field": "academic_pricing",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "terra",
+  "name": "Terra",
+  "kind": "intermediary",
+  "field": "api_platform_fees",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "terra",
+  "name": "Terra",
+  "kind": "intermediary",
+  "field": "minimum_commitment",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "terra",
+  "name": "Terra",
+  "kind": "intermediary",
+  "field": "quote_required",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "terra",
+  "name": "Terra",
+  "kind": "intermediary",
+  "field": "raw_streams",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "terra",
+  "name": "Terra",
+  "kind": "intermediary",
+  "field": "derived_metrics",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "terra",
+  "name": "Terra",
+  "kind": "intermediary",
+  "field": "sampling_rates",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "terra",
+  "name": "Terra",
+  "kind": "intermediary",
+  "field": "history_depth",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "terra",
+  "name": "Terra",
+  "kind": "intermediary",
+  "field": "export_routes",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "terra",
+  "name": "Terra",
+  "kind": "intermediary",
+  "field": "rate_limits",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "terra",
+  "name": "Terra",
+  "kind": "intermediary",
+  "field": "retention_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "terra",
+  "name": "Terra",
+  "kind": "intermediary",
+  "field": "ai_training_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "terra",
+  "name": "Terra",
+  "kind": "intermediary",
+  "field": "deprecations",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "terra",
+  "name": "Terra",
+  "kind": "intermediary",
+  "field": "baa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "terra",
+  "name": "Terra",
+  "kind": "intermediary",
+  "field": "dpa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "terra",
+  "name": "Terra",
+  "kind": "intermediary",
+  "field": "hipaa_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "terra",
+  "name": "Terra",
+  "kind": "intermediary",
+  "field": "gdpr_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "terra",
+  "name": "Terra",
+  "kind": "intermediary",
+  "field": "iso27001",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "terra",
+  "name": "Terra",
+  "kind": "intermediary",
+  "field": "soc2",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "terra",
+  "name": "Terra",
+  "kind": "intermediary",
+  "field": "fda_clearances",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "terra",
+  "name": "Terra",
+  "kind": "intermediary",
+  "field": "data_residency",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "thryve",
+  "name": "Thryve",
+  "kind": "intermediary",
+  "field": "research_program",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "thryve",
+  "name": "Thryve",
+  "kind": "intermediary",
+  "field": "program_eligibility",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "thryve",
+  "name": "Thryve",
+  "kind": "intermediary",
+  "field": "program_application",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "thryve",
+  "name": "Thryve",
+  "kind": "intermediary",
+  "field": "program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "thryve",
+  "name": "Thryve",
+  "kind": "intermediary",
+  "field": "developer_program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "thryve",
+  "name": "Thryve",
+  "kind": "intermediary",
+  "field": "user_cap",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "thryve",
+  "name": "Thryve",
+  "kind": "intermediary",
+  "field": "academic_vs_commercial",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "thryve",
+  "name": "Thryve",
+  "kind": "intermediary",
+  "field": "device_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "thryve",
+  "name": "Thryve",
+  "kind": "intermediary",
+  "field": "subscription_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "thryve",
+  "name": "Thryve",
+  "kind": "intermediary",
+  "field": "academic_pricing",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "thryve",
+  "name": "Thryve",
+  "kind": "intermediary",
+  "field": "api_platform_fees",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "thryve",
+  "name": "Thryve",
+  "kind": "intermediary",
+  "field": "minimum_commitment",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "thryve",
+  "name": "Thryve",
+  "kind": "intermediary",
+  "field": "quote_required",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "thryve",
+  "name": "Thryve",
+  "kind": "intermediary",
+  "field": "raw_streams",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "thryve",
+  "name": "Thryve",
+  "kind": "intermediary",
+  "field": "derived_metrics",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "thryve",
+  "name": "Thryve",
+  "kind": "intermediary",
+  "field": "sampling_rates",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "thryve",
+  "name": "Thryve",
+  "kind": "intermediary",
+  "field": "history_depth",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "thryve",
+  "name": "Thryve",
+  "kind": "intermediary",
+  "field": "export_routes",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "thryve",
+  "name": "Thryve",
+  "kind": "intermediary",
+  "field": "rate_limits",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "thryve",
+  "name": "Thryve",
+  "kind": "intermediary",
+  "field": "retention_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "thryve",
+  "name": "Thryve",
+  "kind": "intermediary",
+  "field": "ai_training_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "thryve",
+  "name": "Thryve",
+  "kind": "intermediary",
+  "field": "deprecations",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "thryve",
+  "name": "Thryve",
+  "kind": "intermediary",
+  "field": "baa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "thryve",
+  "name": "Thryve",
+  "kind": "intermediary",
+  "field": "dpa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "thryve",
+  "name": "Thryve",
+  "kind": "intermediary",
+  "field": "hipaa_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "thryve",
+  "name": "Thryve",
+  "kind": "intermediary",
+  "field": "gdpr_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "thryve",
+  "name": "Thryve",
+  "kind": "intermediary",
+  "field": "iso27001",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "thryve",
+  "name": "Thryve",
+  "kind": "intermediary",
+  "field": "soc2",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "thryve",
+  "name": "Thryve",
+  "kind": "intermediary",
+  "field": "fda_clearances",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "thryve",
+  "name": "Thryve",
+  "kind": "intermediary",
+  "field": "data_residency",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "avicenna",
+  "name": "Avicenna Research (formerly Ethica)",
+  "kind": "platform",
+  "field": "research_program",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "avicenna",
+  "name": "Avicenna Research (formerly Ethica)",
+  "kind": "platform",
+  "field": "program_eligibility",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "avicenna",
+  "name": "Avicenna Research (formerly Ethica)",
+  "kind": "platform",
+  "field": "program_application",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "avicenna",
+  "name": "Avicenna Research (formerly Ethica)",
+  "kind": "platform",
+  "field": "program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "avicenna",
+  "name": "Avicenna Research (formerly Ethica)",
+  "kind": "platform",
+  "field": "developer_program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "avicenna",
+  "name": "Avicenna Research (formerly Ethica)",
+  "kind": "platform",
+  "field": "user_cap",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "avicenna",
+  "name": "Avicenna Research (formerly Ethica)",
+  "kind": "platform",
+  "field": "academic_vs_commercial",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "avicenna",
+  "name": "Avicenna Research (formerly Ethica)",
+  "kind": "platform",
+  "field": "device_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "avicenna",
+  "name": "Avicenna Research (formerly Ethica)",
+  "kind": "platform",
+  "field": "subscription_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "avicenna",
+  "name": "Avicenna Research (formerly Ethica)",
+  "kind": "platform",
+  "field": "academic_pricing",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "avicenna",
+  "name": "Avicenna Research (formerly Ethica)",
+  "kind": "platform",
+  "field": "api_platform_fees",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "avicenna",
+  "name": "Avicenna Research (formerly Ethica)",
+  "kind": "platform",
+  "field": "minimum_commitment",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "avicenna",
+  "name": "Avicenna Research (formerly Ethica)",
+  "kind": "platform",
+  "field": "quote_required",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "avicenna",
+  "name": "Avicenna Research (formerly Ethica)",
+  "kind": "platform",
+  "field": "hosting_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "avicenna",
+  "name": "Avicenna Research (formerly Ethica)",
+  "kind": "platform",
+  "field": "raw_streams",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "avicenna",
+  "name": "Avicenna Research (formerly Ethica)",
+  "kind": "platform",
+  "field": "derived_metrics",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "avicenna",
+  "name": "Avicenna Research (formerly Ethica)",
+  "kind": "platform",
+  "field": "sampling_rates",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "avicenna",
+  "name": "Avicenna Research (formerly Ethica)",
+  "kind": "platform",
+  "field": "history_depth",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "avicenna",
+  "name": "Avicenna Research (formerly Ethica)",
+  "kind": "platform",
+  "field": "export_routes",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "avicenna",
+  "name": "Avicenna Research (formerly Ethica)",
+  "kind": "platform",
+  "field": "rate_limits",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "avicenna",
+  "name": "Avicenna Research (formerly Ethica)",
+  "kind": "platform",
+  "field": "retention_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "avicenna",
+  "name": "Avicenna Research (formerly Ethica)",
+  "kind": "platform",
+  "field": "ai_training_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "avicenna",
+  "name": "Avicenna Research (formerly Ethica)",
+  "kind": "platform",
+  "field": "deprecations",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "avicenna",
+  "name": "Avicenna Research (formerly Ethica)",
+  "kind": "platform",
+  "field": "licence",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "avicenna",
+  "name": "Avicenna Research (formerly Ethica)",
+  "kind": "platform",
+  "field": "hosting_options",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "avicenna",
+  "name": "Avicenna Research (formerly Ethica)",
+  "kind": "platform",
+  "field": "app_availability",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "avicenna",
+  "name": "Avicenna Research (formerly Ethica)",
+  "kind": "platform",
+  "field": "baa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "avicenna",
+  "name": "Avicenna Research (formerly Ethica)",
+  "kind": "platform",
+  "field": "dpa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "avicenna",
+  "name": "Avicenna Research (formerly Ethica)",
+  "kind": "platform",
+  "field": "hipaa_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "avicenna",
+  "name": "Avicenna Research (formerly Ethica)",
+  "kind": "platform",
+  "field": "gdpr_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "avicenna",
+  "name": "Avicenna Research (formerly Ethica)",
+  "kind": "platform",
+  "field": "iso27001",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "avicenna",
+  "name": "Avicenna Research (formerly Ethica)",
+  "kind": "platform",
+  "field": "soc2",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "avicenna",
+  "name": "Avicenna Research (formerly Ethica)",
+  "kind": "platform",
+  "field": "fda_clearances",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "avicenna",
+  "name": "Avicenna Research (formerly Ethica)",
+  "kind": "platform",
+  "field": "data_residency",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "aware",
+  "name": "AWARE Framework",
+  "kind": "platform",
+  "field": "research_program",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "aware",
+  "name": "AWARE Framework",
+  "kind": "platform",
+  "field": "program_eligibility",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "aware",
+  "name": "AWARE Framework",
+  "kind": "platform",
+  "field": "program_application",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "aware",
+  "name": "AWARE Framework",
+  "kind": "platform",
+  "field": "program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "aware",
+  "name": "AWARE Framework",
+  "kind": "platform",
+  "field": "developer_program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "aware",
+  "name": "AWARE Framework",
+  "kind": "platform",
+  "field": "user_cap",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "aware",
+  "name": "AWARE Framework",
+  "kind": "platform",
+  "field": "academic_vs_commercial",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "aware",
+  "name": "AWARE Framework",
+  "kind": "platform",
+  "field": "device_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "aware",
+  "name": "AWARE Framework",
+  "kind": "platform",
+  "field": "subscription_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "aware",
+  "name": "AWARE Framework",
+  "kind": "platform",
+  "field": "academic_pricing",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "aware",
+  "name": "AWARE Framework",
+  "kind": "platform",
+  "field": "api_platform_fees",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "aware",
+  "name": "AWARE Framework",
+  "kind": "platform",
+  "field": "minimum_commitment",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "aware",
+  "name": "AWARE Framework",
+  "kind": "platform",
+  "field": "quote_required",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "aware",
+  "name": "AWARE Framework",
+  "kind": "platform",
+  "field": "hosting_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "aware",
+  "name": "AWARE Framework",
+  "kind": "platform",
+  "field": "raw_streams",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "aware",
+  "name": "AWARE Framework",
+  "kind": "platform",
+  "field": "derived_metrics",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "aware",
+  "name": "AWARE Framework",
+  "kind": "platform",
+  "field": "sampling_rates",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "aware",
+  "name": "AWARE Framework",
+  "kind": "platform",
+  "field": "history_depth",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "aware",
+  "name": "AWARE Framework",
+  "kind": "platform",
+  "field": "export_routes",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "aware",
+  "name": "AWARE Framework",
+  "kind": "platform",
+  "field": "rate_limits",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "aware",
+  "name": "AWARE Framework",
+  "kind": "platform",
+  "field": "retention_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "aware",
+  "name": "AWARE Framework",
+  "kind": "platform",
+  "field": "ai_training_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "aware",
+  "name": "AWARE Framework",
+  "kind": "platform",
+  "field": "deprecations",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "aware",
+  "name": "AWARE Framework",
+  "kind": "platform",
+  "field": "licence",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "aware",
+  "name": "AWARE Framework",
+  "kind": "platform",
+  "field": "hosting_options",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "aware",
+  "name": "AWARE Framework",
+  "kind": "platform",
+  "field": "app_availability",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "aware",
+  "name": "AWARE Framework",
+  "kind": "platform",
+  "field": "baa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "aware",
+  "name": "AWARE Framework",
+  "kind": "platform",
+  "field": "dpa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "aware",
+  "name": "AWARE Framework",
+  "kind": "platform",
+  "field": "hipaa_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "aware",
+  "name": "AWARE Framework",
+  "kind": "platform",
+  "field": "gdpr_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "aware",
+  "name": "AWARE Framework",
+  "kind": "platform",
+  "field": "iso27001",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "aware",
+  "name": "AWARE Framework",
+  "kind": "platform",
+  "field": "soc2",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "aware",
+  "name": "AWARE Framework",
+  "kind": "platform",
+  "field": "fda_clearances",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "aware",
+  "name": "AWARE Framework",
+  "kind": "platform",
+  "field": "data_residency",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "beiwe",
+  "name": "Beiwe and Forest (Onnela Lab, Beiwe Service Center)",
+  "kind": "platform",
+  "field": "research_program",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "beiwe",
+  "name": "Beiwe and Forest (Onnela Lab, Beiwe Service Center)",
+  "kind": "platform",
+  "field": "program_eligibility",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "beiwe",
+  "name": "Beiwe and Forest (Onnela Lab, Beiwe Service Center)",
+  "kind": "platform",
+  "field": "program_application",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "beiwe",
+  "name": "Beiwe and Forest (Onnela Lab, Beiwe Service Center)",
+  "kind": "platform",
+  "field": "program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "beiwe",
+  "name": "Beiwe and Forest (Onnela Lab, Beiwe Service Center)",
+  "kind": "platform",
+  "field": "developer_program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "beiwe",
+  "name": "Beiwe and Forest (Onnela Lab, Beiwe Service Center)",
+  "kind": "platform",
+  "field": "user_cap",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "beiwe",
+  "name": "Beiwe and Forest (Onnela Lab, Beiwe Service Center)",
+  "kind": "platform",
+  "field": "academic_vs_commercial",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "beiwe",
+  "name": "Beiwe and Forest (Onnela Lab, Beiwe Service Center)",
+  "kind": "platform",
+  "field": "device_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "beiwe",
+  "name": "Beiwe and Forest (Onnela Lab, Beiwe Service Center)",
+  "kind": "platform",
+  "field": "subscription_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "beiwe",
+  "name": "Beiwe and Forest (Onnela Lab, Beiwe Service Center)",
+  "kind": "platform",
+  "field": "academic_pricing",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "beiwe",
+  "name": "Beiwe and Forest (Onnela Lab, Beiwe Service Center)",
+  "kind": "platform",
+  "field": "api_platform_fees",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "beiwe",
+  "name": "Beiwe and Forest (Onnela Lab, Beiwe Service Center)",
+  "kind": "platform",
+  "field": "minimum_commitment",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "beiwe",
+  "name": "Beiwe and Forest (Onnela Lab, Beiwe Service Center)",
+  "kind": "platform",
+  "field": "quote_required",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "beiwe",
+  "name": "Beiwe and Forest (Onnela Lab, Beiwe Service Center)",
+  "kind": "platform",
+  "field": "hosting_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "beiwe",
+  "name": "Beiwe and Forest (Onnela Lab, Beiwe Service Center)",
+  "kind": "platform",
+  "field": "raw_streams",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "beiwe",
+  "name": "Beiwe and Forest (Onnela Lab, Beiwe Service Center)",
+  "kind": "platform",
+  "field": "derived_metrics",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "beiwe",
+  "name": "Beiwe and Forest (Onnela Lab, Beiwe Service Center)",
+  "kind": "platform",
+  "field": "sampling_rates",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "beiwe",
+  "name": "Beiwe and Forest (Onnela Lab, Beiwe Service Center)",
+  "kind": "platform",
+  "field": "history_depth",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "beiwe",
+  "name": "Beiwe and Forest (Onnela Lab, Beiwe Service Center)",
+  "kind": "platform",
+  "field": "export_routes",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "beiwe",
+  "name": "Beiwe and Forest (Onnela Lab, Beiwe Service Center)",
+  "kind": "platform",
+  "field": "rate_limits",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "beiwe",
+  "name": "Beiwe and Forest (Onnela Lab, Beiwe Service Center)",
+  "kind": "platform",
+  "field": "retention_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "beiwe",
+  "name": "Beiwe and Forest (Onnela Lab, Beiwe Service Center)",
+  "kind": "platform",
+  "field": "ai_training_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "beiwe",
+  "name": "Beiwe and Forest (Onnela Lab, Beiwe Service Center)",
+  "kind": "platform",
+  "field": "deprecations",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "beiwe",
+  "name": "Beiwe and Forest (Onnela Lab, Beiwe Service Center)",
+  "kind": "platform",
+  "field": "licence",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "beiwe",
+  "name": "Beiwe and Forest (Onnela Lab, Beiwe Service Center)",
+  "kind": "platform",
+  "field": "hosting_options",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "beiwe",
+  "name": "Beiwe and Forest (Onnela Lab, Beiwe Service Center)",
+  "kind": "platform",
+  "field": "app_availability",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "beiwe",
+  "name": "Beiwe and Forest (Onnela Lab, Beiwe Service Center)",
+  "kind": "platform",
+  "field": "baa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "beiwe",
+  "name": "Beiwe and Forest (Onnela Lab, Beiwe Service Center)",
+  "kind": "platform",
+  "field": "dpa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "beiwe",
+  "name": "Beiwe and Forest (Onnela Lab, Beiwe Service Center)",
+  "kind": "platform",
+  "field": "hipaa_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "beiwe",
+  "name": "Beiwe and Forest (Onnela Lab, Beiwe Service Center)",
+  "kind": "platform",
+  "field": "gdpr_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "beiwe",
+  "name": "Beiwe and Forest (Onnela Lab, Beiwe Service Center)",
+  "kind": "platform",
+  "field": "iso27001",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "beiwe",
+  "name": "Beiwe and Forest (Onnela Lab, Beiwe Service Center)",
+  "kind": "platform",
+  "field": "soc2",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "beiwe",
+  "name": "Beiwe and Forest (Onnela Lab, Beiwe Service Center)",
+  "kind": "platform",
+  "field": "fda_clearances",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "beiwe",
+  "name": "Beiwe and Forest (Onnela Lab, Beiwe Service Center)",
+  "kind": "platform",
+  "field": "data_residency",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "carp",
+  "name": "CARP Mobile Sensing (DTU)",
+  "kind": "platform",
+  "field": "research_program",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "carp",
+  "name": "CARP Mobile Sensing (DTU)",
+  "kind": "platform",
+  "field": "program_eligibility",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "carp",
+  "name": "CARP Mobile Sensing (DTU)",
+  "kind": "platform",
+  "field": "program_application",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "carp",
+  "name": "CARP Mobile Sensing (DTU)",
+  "kind": "platform",
+  "field": "program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "carp",
+  "name": "CARP Mobile Sensing (DTU)",
+  "kind": "platform",
+  "field": "developer_program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "carp",
+  "name": "CARP Mobile Sensing (DTU)",
+  "kind": "platform",
+  "field": "user_cap",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "carp",
+  "name": "CARP Mobile Sensing (DTU)",
+  "kind": "platform",
+  "field": "academic_vs_commercial",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "carp",
+  "name": "CARP Mobile Sensing (DTU)",
+  "kind": "platform",
+  "field": "device_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "carp",
+  "name": "CARP Mobile Sensing (DTU)",
+  "kind": "platform",
+  "field": "subscription_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "carp",
+  "name": "CARP Mobile Sensing (DTU)",
+  "kind": "platform",
+  "field": "academic_pricing",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "carp",
+  "name": "CARP Mobile Sensing (DTU)",
+  "kind": "platform",
+  "field": "api_platform_fees",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "carp",
+  "name": "CARP Mobile Sensing (DTU)",
+  "kind": "platform",
+  "field": "minimum_commitment",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "carp",
+  "name": "CARP Mobile Sensing (DTU)",
+  "kind": "platform",
+  "field": "quote_required",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "carp",
+  "name": "CARP Mobile Sensing (DTU)",
+  "kind": "platform",
+  "field": "hosting_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "carp",
+  "name": "CARP Mobile Sensing (DTU)",
+  "kind": "platform",
+  "field": "raw_streams",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "carp",
+  "name": "CARP Mobile Sensing (DTU)",
+  "kind": "platform",
+  "field": "derived_metrics",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "carp",
+  "name": "CARP Mobile Sensing (DTU)",
+  "kind": "platform",
+  "field": "sampling_rates",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "carp",
+  "name": "CARP Mobile Sensing (DTU)",
+  "kind": "platform",
+  "field": "history_depth",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "carp",
+  "name": "CARP Mobile Sensing (DTU)",
+  "kind": "platform",
+  "field": "export_routes",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "carp",
+  "name": "CARP Mobile Sensing (DTU)",
+  "kind": "platform",
+  "field": "rate_limits",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "carp",
+  "name": "CARP Mobile Sensing (DTU)",
+  "kind": "platform",
+  "field": "retention_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "carp",
+  "name": "CARP Mobile Sensing (DTU)",
+  "kind": "platform",
+  "field": "ai_training_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "carp",
+  "name": "CARP Mobile Sensing (DTU)",
+  "kind": "platform",
+  "field": "deprecations",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "carp",
+  "name": "CARP Mobile Sensing (DTU)",
+  "kind": "platform",
+  "field": "licence",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "carp",
+  "name": "CARP Mobile Sensing (DTU)",
+  "kind": "platform",
+  "field": "hosting_options",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "carp",
+  "name": "CARP Mobile Sensing (DTU)",
+  "kind": "platform",
+  "field": "app_availability",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "carp",
+  "name": "CARP Mobile Sensing (DTU)",
+  "kind": "platform",
+  "field": "baa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "carp",
+  "name": "CARP Mobile Sensing (DTU)",
+  "kind": "platform",
+  "field": "dpa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "carp",
+  "name": "CARP Mobile Sensing (DTU)",
+  "kind": "platform",
+  "field": "hipaa_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "carp",
+  "name": "CARP Mobile Sensing (DTU)",
+  "kind": "platform",
+  "field": "gdpr_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "carp",
+  "name": "CARP Mobile Sensing (DTU)",
+  "kind": "platform",
+  "field": "iso27001",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "carp",
+  "name": "CARP Mobile Sensing (DTU)",
+  "kind": "platform",
+  "field": "soc2",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "carp",
+  "name": "CARP Mobile Sensing (DTU)",
+  "kind": "platform",
+  "field": "fda_clearances",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "carp",
+  "name": "CARP Mobile Sensing (DTU)",
+  "kind": "platform",
+  "field": "data_residency",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "evidation",
+  "name": "Evidation",
+  "kind": "platform",
+  "field": "research_program",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "evidation",
+  "name": "Evidation",
+  "kind": "platform",
+  "field": "program_eligibility",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "evidation",
+  "name": "Evidation",
+  "kind": "platform",
+  "field": "program_application",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "evidation",
+  "name": "Evidation",
+  "kind": "platform",
+  "field": "program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "evidation",
+  "name": "Evidation",
+  "kind": "platform",
+  "field": "developer_program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "evidation",
+  "name": "Evidation",
+  "kind": "platform",
+  "field": "user_cap",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "evidation",
+  "name": "Evidation",
+  "kind": "platform",
+  "field": "academic_vs_commercial",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "evidation",
+  "name": "Evidation",
+  "kind": "platform",
+  "field": "device_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "evidation",
+  "name": "Evidation",
+  "kind": "platform",
+  "field": "subscription_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "evidation",
+  "name": "Evidation",
+  "kind": "platform",
+  "field": "academic_pricing",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "evidation",
+  "name": "Evidation",
+  "kind": "platform",
+  "field": "api_platform_fees",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "evidation",
+  "name": "Evidation",
+  "kind": "platform",
+  "field": "minimum_commitment",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "evidation",
+  "name": "Evidation",
+  "kind": "platform",
+  "field": "quote_required",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "evidation",
+  "name": "Evidation",
+  "kind": "platform",
+  "field": "hosting_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "evidation",
+  "name": "Evidation",
+  "kind": "platform",
+  "field": "raw_streams",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "evidation",
+  "name": "Evidation",
+  "kind": "platform",
+  "field": "derived_metrics",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "evidation",
+  "name": "Evidation",
+  "kind": "platform",
+  "field": "sampling_rates",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "evidation",
+  "name": "Evidation",
+  "kind": "platform",
+  "field": "history_depth",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "evidation",
+  "name": "Evidation",
+  "kind": "platform",
+  "field": "export_routes",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "evidation",
+  "name": "Evidation",
+  "kind": "platform",
+  "field": "rate_limits",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "evidation",
+  "name": "Evidation",
+  "kind": "platform",
+  "field": "retention_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "evidation",
+  "name": "Evidation",
+  "kind": "platform",
+  "field": "ai_training_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "evidation",
+  "name": "Evidation",
+  "kind": "platform",
+  "field": "deprecations",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "evidation",
+  "name": "Evidation",
+  "kind": "platform",
+  "field": "licence",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "evidation",
+  "name": "Evidation",
+  "kind": "platform",
+  "field": "hosting_options",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "evidation",
+  "name": "Evidation",
+  "kind": "platform",
+  "field": "app_availability",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "evidation",
+  "name": "Evidation",
+  "kind": "platform",
+  "field": "baa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "evidation",
+  "name": "Evidation",
+  "kind": "platform",
+  "field": "dpa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "evidation",
+  "name": "Evidation",
+  "kind": "platform",
+  "field": "hipaa_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "evidation",
+  "name": "Evidation",
+  "kind": "platform",
+  "field": "gdpr_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "evidation",
+  "name": "Evidation",
+  "kind": "platform",
+  "field": "iso27001",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "evidation",
+  "name": "Evidation",
+  "kind": "platform",
+  "field": "soc2",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "evidation",
+  "name": "Evidation",
+  "kind": "platform",
+  "field": "fda_clearances",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "evidation",
+  "name": "Evidation",
+  "kind": "platform",
+  "field": "data_residency",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "lifedata",
+  "name": "LifeData (RealLife Exp)",
+  "kind": "platform",
+  "field": "research_program",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "lifedata",
+  "name": "LifeData (RealLife Exp)",
+  "kind": "platform",
+  "field": "program_eligibility",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "lifedata",
+  "name": "LifeData (RealLife Exp)",
+  "kind": "platform",
+  "field": "program_application",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "lifedata",
+  "name": "LifeData (RealLife Exp)",
+  "kind": "platform",
+  "field": "program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "lifedata",
+  "name": "LifeData (RealLife Exp)",
+  "kind": "platform",
+  "field": "developer_program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "lifedata",
+  "name": "LifeData (RealLife Exp)",
+  "kind": "platform",
+  "field": "user_cap",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "lifedata",
+  "name": "LifeData (RealLife Exp)",
+  "kind": "platform",
+  "field": "academic_vs_commercial",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "lifedata",
+  "name": "LifeData (RealLife Exp)",
+  "kind": "platform",
+  "field": "device_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "lifedata",
+  "name": "LifeData (RealLife Exp)",
+  "kind": "platform",
+  "field": "subscription_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "lifedata",
+  "name": "LifeData (RealLife Exp)",
+  "kind": "platform",
+  "field": "academic_pricing",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "lifedata",
+  "name": "LifeData (RealLife Exp)",
+  "kind": "platform",
+  "field": "api_platform_fees",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "lifedata",
+  "name": "LifeData (RealLife Exp)",
+  "kind": "platform",
+  "field": "minimum_commitment",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "lifedata",
+  "name": "LifeData (RealLife Exp)",
+  "kind": "platform",
+  "field": "quote_required",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "lifedata",
+  "name": "LifeData (RealLife Exp)",
+  "kind": "platform",
+  "field": "hosting_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "lifedata",
+  "name": "LifeData (RealLife Exp)",
+  "kind": "platform",
+  "field": "raw_streams",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "lifedata",
+  "name": "LifeData (RealLife Exp)",
+  "kind": "platform",
+  "field": "derived_metrics",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "lifedata",
+  "name": "LifeData (RealLife Exp)",
+  "kind": "platform",
+  "field": "sampling_rates",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "lifedata",
+  "name": "LifeData (RealLife Exp)",
+  "kind": "platform",
+  "field": "history_depth",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "lifedata",
+  "name": "LifeData (RealLife Exp)",
+  "kind": "platform",
+  "field": "export_routes",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "lifedata",
+  "name": "LifeData (RealLife Exp)",
+  "kind": "platform",
+  "field": "rate_limits",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "lifedata",
+  "name": "LifeData (RealLife Exp)",
+  "kind": "platform",
+  "field": "retention_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "lifedata",
+  "name": "LifeData (RealLife Exp)",
+  "kind": "platform",
+  "field": "ai_training_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "lifedata",
+  "name": "LifeData (RealLife Exp)",
+  "kind": "platform",
+  "field": "deprecations",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "lifedata",
+  "name": "LifeData (RealLife Exp)",
+  "kind": "platform",
+  "field": "licence",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "lifedata",
+  "name": "LifeData (RealLife Exp)",
+  "kind": "platform",
+  "field": "hosting_options",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "lifedata",
+  "name": "LifeData (RealLife Exp)",
+  "kind": "platform",
+  "field": "app_availability",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "lifedata",
+  "name": "LifeData (RealLife Exp)",
+  "kind": "platform",
+  "field": "baa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "lifedata",
+  "name": "LifeData (RealLife Exp)",
+  "kind": "platform",
+  "field": "dpa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "lifedata",
+  "name": "LifeData (RealLife Exp)",
+  "kind": "platform",
+  "field": "hipaa_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "lifedata",
+  "name": "LifeData (RealLife Exp)",
+  "kind": "platform",
+  "field": "gdpr_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "lifedata",
+  "name": "LifeData (RealLife Exp)",
+  "kind": "platform",
+  "field": "iso27001",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "lifedata",
+  "name": "LifeData (RealLife Exp)",
+  "kind": "platform",
+  "field": "soc2",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "lifedata",
+  "name": "LifeData (RealLife Exp)",
+  "kind": "platform",
+  "field": "fda_clearances",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "lifedata",
+  "name": "LifeData (RealLife Exp)",
+  "kind": "platform",
+  "field": "data_residency",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "m-path",
+  "name": "m-Path (KU Leuven)",
+  "kind": "platform",
+  "field": "research_program",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "m-path",
+  "name": "m-Path (KU Leuven)",
+  "kind": "platform",
+  "field": "program_eligibility",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "m-path",
+  "name": "m-Path (KU Leuven)",
+  "kind": "platform",
+  "field": "program_application",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "m-path",
+  "name": "m-Path (KU Leuven)",
+  "kind": "platform",
+  "field": "program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "m-path",
+  "name": "m-Path (KU Leuven)",
+  "kind": "platform",
+  "field": "developer_program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "m-path",
+  "name": "m-Path (KU Leuven)",
+  "kind": "platform",
+  "field": "user_cap",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "m-path",
+  "name": "m-Path (KU Leuven)",
+  "kind": "platform",
+  "field": "academic_vs_commercial",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "m-path",
+  "name": "m-Path (KU Leuven)",
+  "kind": "platform",
+  "field": "device_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "m-path",
+  "name": "m-Path (KU Leuven)",
+  "kind": "platform",
+  "field": "subscription_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "m-path",
+  "name": "m-Path (KU Leuven)",
+  "kind": "platform",
+  "field": "academic_pricing",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "m-path",
+  "name": "m-Path (KU Leuven)",
+  "kind": "platform",
+  "field": "api_platform_fees",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "m-path",
+  "name": "m-Path (KU Leuven)",
+  "kind": "platform",
+  "field": "minimum_commitment",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "m-path",
+  "name": "m-Path (KU Leuven)",
+  "kind": "platform",
+  "field": "quote_required",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "m-path",
+  "name": "m-Path (KU Leuven)",
+  "kind": "platform",
+  "field": "hosting_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "m-path",
+  "name": "m-Path (KU Leuven)",
+  "kind": "platform",
+  "field": "raw_streams",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "m-path",
+  "name": "m-Path (KU Leuven)",
+  "kind": "platform",
+  "field": "derived_metrics",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "m-path",
+  "name": "m-Path (KU Leuven)",
+  "kind": "platform",
+  "field": "sampling_rates",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "m-path",
+  "name": "m-Path (KU Leuven)",
+  "kind": "platform",
+  "field": "history_depth",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "m-path",
+  "name": "m-Path (KU Leuven)",
+  "kind": "platform",
+  "field": "export_routes",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "m-path",
+  "name": "m-Path (KU Leuven)",
+  "kind": "platform",
+  "field": "rate_limits",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "m-path",
+  "name": "m-Path (KU Leuven)",
+  "kind": "platform",
+  "field": "retention_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "m-path",
+  "name": "m-Path (KU Leuven)",
+  "kind": "platform",
+  "field": "ai_training_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "m-path",
+  "name": "m-Path (KU Leuven)",
+  "kind": "platform",
+  "field": "deprecations",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "m-path",
+  "name": "m-Path (KU Leuven)",
+  "kind": "platform",
+  "field": "licence",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "m-path",
+  "name": "m-Path (KU Leuven)",
+  "kind": "platform",
+  "field": "hosting_options",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "m-path",
+  "name": "m-Path (KU Leuven)",
+  "kind": "platform",
+  "field": "app_availability",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "m-path",
+  "name": "m-Path (KU Leuven)",
+  "kind": "platform",
+  "field": "baa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "m-path",
+  "name": "m-Path (KU Leuven)",
+  "kind": "platform",
+  "field": "dpa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "m-path",
+  "name": "m-Path (KU Leuven)",
+  "kind": "platform",
+  "field": "hipaa_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "m-path",
+  "name": "m-Path (KU Leuven)",
+  "kind": "platform",
+  "field": "gdpr_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "m-path",
+  "name": "m-Path (KU Leuven)",
+  "kind": "platform",
+  "field": "iso27001",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "m-path",
+  "name": "m-Path (KU Leuven)",
+  "kind": "platform",
+  "field": "soc2",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "m-path",
+  "name": "m-Path (KU Leuven)",
+  "kind": "platform",
+  "field": "fda_clearances",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "m-path",
+  "name": "m-Path (KU Leuven)",
+  "kind": "platform",
+  "field": "data_residency",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "metricwire",
+  "name": "MetricWire",
+  "kind": "platform",
+  "field": "research_program",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "metricwire",
+  "name": "MetricWire",
+  "kind": "platform",
+  "field": "program_eligibility",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "metricwire",
+  "name": "MetricWire",
+  "kind": "platform",
+  "field": "program_application",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "metricwire",
+  "name": "MetricWire",
+  "kind": "platform",
+  "field": "program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "metricwire",
+  "name": "MetricWire",
+  "kind": "platform",
+  "field": "developer_program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "metricwire",
+  "name": "MetricWire",
+  "kind": "platform",
+  "field": "user_cap",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "metricwire",
+  "name": "MetricWire",
+  "kind": "platform",
+  "field": "academic_vs_commercial",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "metricwire",
+  "name": "MetricWire",
+  "kind": "platform",
+  "field": "device_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "metricwire",
+  "name": "MetricWire",
+  "kind": "platform",
+  "field": "subscription_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "metricwire",
+  "name": "MetricWire",
+  "kind": "platform",
+  "field": "academic_pricing",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "metricwire",
+  "name": "MetricWire",
+  "kind": "platform",
+  "field": "api_platform_fees",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "metricwire",
+  "name": "MetricWire",
+  "kind": "platform",
+  "field": "minimum_commitment",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "metricwire",
+  "name": "MetricWire",
+  "kind": "platform",
+  "field": "quote_required",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "metricwire",
+  "name": "MetricWire",
+  "kind": "platform",
+  "field": "hosting_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "metricwire",
+  "name": "MetricWire",
+  "kind": "platform",
+  "field": "raw_streams",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "metricwire",
+  "name": "MetricWire",
+  "kind": "platform",
+  "field": "derived_metrics",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "metricwire",
+  "name": "MetricWire",
+  "kind": "platform",
+  "field": "sampling_rates",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "metricwire",
+  "name": "MetricWire",
+  "kind": "platform",
+  "field": "history_depth",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "metricwire",
+  "name": "MetricWire",
+  "kind": "platform",
+  "field": "export_routes",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "metricwire",
+  "name": "MetricWire",
+  "kind": "platform",
+  "field": "rate_limits",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "metricwire",
+  "name": "MetricWire",
+  "kind": "platform",
+  "field": "retention_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "metricwire",
+  "name": "MetricWire",
+  "kind": "platform",
+  "field": "ai_training_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "metricwire",
+  "name": "MetricWire",
+  "kind": "platform",
+  "field": "deprecations",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "metricwire",
+  "name": "MetricWire",
+  "kind": "platform",
+  "field": "licence",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "metricwire",
+  "name": "MetricWire",
+  "kind": "platform",
+  "field": "hosting_options",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "metricwire",
+  "name": "MetricWire",
+  "kind": "platform",
+  "field": "app_availability",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "metricwire",
+  "name": "MetricWire",
+  "kind": "platform",
+  "field": "baa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "metricwire",
+  "name": "MetricWire",
+  "kind": "platform",
+  "field": "dpa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "metricwire",
+  "name": "MetricWire",
+  "kind": "platform",
+  "field": "hipaa_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "metricwire",
+  "name": "MetricWire",
+  "kind": "platform",
+  "field": "gdpr_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "metricwire",
+  "name": "MetricWire",
+  "kind": "platform",
+  "field": "iso27001",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "metricwire",
+  "name": "MetricWire",
+  "kind": "platform",
+  "field": "soc2",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "metricwire",
+  "name": "MetricWire",
+  "kind": "platform",
+  "field": "fda_clearances",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "metricwire",
+  "name": "MetricWire",
+  "kind": "platform",
+  "field": "data_residency",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "mindlamp",
+  "name": "mindLAMP (BIDMC Division of Digital Psychiatry)",
+  "kind": "platform",
+  "field": "research_program",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "mindlamp",
+  "name": "mindLAMP (BIDMC Division of Digital Psychiatry)",
+  "kind": "platform",
+  "field": "program_eligibility",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "mindlamp",
+  "name": "mindLAMP (BIDMC Division of Digital Psychiatry)",
+  "kind": "platform",
+  "field": "program_application",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "mindlamp",
+  "name": "mindLAMP (BIDMC Division of Digital Psychiatry)",
+  "kind": "platform",
+  "field": "program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "mindlamp",
+  "name": "mindLAMP (BIDMC Division of Digital Psychiatry)",
+  "kind": "platform",
+  "field": "developer_program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "mindlamp",
+  "name": "mindLAMP (BIDMC Division of Digital Psychiatry)",
+  "kind": "platform",
+  "field": "user_cap",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "mindlamp",
+  "name": "mindLAMP (BIDMC Division of Digital Psychiatry)",
+  "kind": "platform",
+  "field": "academic_vs_commercial",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "mindlamp",
+  "name": "mindLAMP (BIDMC Division of Digital Psychiatry)",
+  "kind": "platform",
+  "field": "device_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "mindlamp",
+  "name": "mindLAMP (BIDMC Division of Digital Psychiatry)",
+  "kind": "platform",
+  "field": "subscription_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "mindlamp",
+  "name": "mindLAMP (BIDMC Division of Digital Psychiatry)",
+  "kind": "platform",
+  "field": "academic_pricing",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "mindlamp",
+  "name": "mindLAMP (BIDMC Division of Digital Psychiatry)",
+  "kind": "platform",
+  "field": "api_platform_fees",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "mindlamp",
+  "name": "mindLAMP (BIDMC Division of Digital Psychiatry)",
+  "kind": "platform",
+  "field": "minimum_commitment",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "mindlamp",
+  "name": "mindLAMP (BIDMC Division of Digital Psychiatry)",
+  "kind": "platform",
+  "field": "quote_required",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "mindlamp",
+  "name": "mindLAMP (BIDMC Division of Digital Psychiatry)",
+  "kind": "platform",
+  "field": "hosting_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "mindlamp",
+  "name": "mindLAMP (BIDMC Division of Digital Psychiatry)",
+  "kind": "platform",
+  "field": "raw_streams",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "mindlamp",
+  "name": "mindLAMP (BIDMC Division of Digital Psychiatry)",
+  "kind": "platform",
+  "field": "derived_metrics",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "mindlamp",
+  "name": "mindLAMP (BIDMC Division of Digital Psychiatry)",
+  "kind": "platform",
+  "field": "sampling_rates",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "mindlamp",
+  "name": "mindLAMP (BIDMC Division of Digital Psychiatry)",
+  "kind": "platform",
+  "field": "history_depth",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "mindlamp",
+  "name": "mindLAMP (BIDMC Division of Digital Psychiatry)",
+  "kind": "platform",
+  "field": "export_routes",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "mindlamp",
+  "name": "mindLAMP (BIDMC Division of Digital Psychiatry)",
+  "kind": "platform",
+  "field": "rate_limits",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "mindlamp",
+  "name": "mindLAMP (BIDMC Division of Digital Psychiatry)",
+  "kind": "platform",
+  "field": "retention_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "mindlamp",
+  "name": "mindLAMP (BIDMC Division of Digital Psychiatry)",
+  "kind": "platform",
+  "field": "ai_training_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "mindlamp",
+  "name": "mindLAMP (BIDMC Division of Digital Psychiatry)",
+  "kind": "platform",
+  "field": "deprecations",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "mindlamp",
+  "name": "mindLAMP (BIDMC Division of Digital Psychiatry)",
+  "kind": "platform",
+  "field": "licence",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "mindlamp",
+  "name": "mindLAMP (BIDMC Division of Digital Psychiatry)",
+  "kind": "platform",
+  "field": "hosting_options",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "mindlamp",
+  "name": "mindLAMP (BIDMC Division of Digital Psychiatry)",
+  "kind": "platform",
+  "field": "app_availability",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "mindlamp",
+  "name": "mindLAMP (BIDMC Division of Digital Psychiatry)",
+  "kind": "platform",
+  "field": "baa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "mindlamp",
+  "name": "mindLAMP (BIDMC Division of Digital Psychiatry)",
+  "kind": "platform",
+  "field": "dpa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "mindlamp",
+  "name": "mindLAMP (BIDMC Division of Digital Psychiatry)",
+  "kind": "platform",
+  "field": "hipaa_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "mindlamp",
+  "name": "mindLAMP (BIDMC Division of Digital Psychiatry)",
+  "kind": "platform",
+  "field": "gdpr_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "mindlamp",
+  "name": "mindLAMP (BIDMC Division of Digital Psychiatry)",
+  "kind": "platform",
+  "field": "iso27001",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "mindlamp",
+  "name": "mindLAMP (BIDMC Division of Digital Psychiatry)",
+  "kind": "platform",
+  "field": "soc2",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "mindlamp",
+  "name": "mindLAMP (BIDMC Division of Digital Psychiatry)",
+  "kind": "platform",
+  "field": "fda_clearances",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "mindlamp",
+  "name": "mindLAMP (BIDMC Division of Digital Psychiatry)",
+  "kind": "platform",
+  "field": "data_residency",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "purple-robot",
+  "name": "Purple Robot (Northwestern CBITS)",
+  "kind": "platform",
+  "field": "research_program",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "purple-robot",
+  "name": "Purple Robot (Northwestern CBITS)",
+  "kind": "platform",
+  "field": "program_eligibility",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "purple-robot",
+  "name": "Purple Robot (Northwestern CBITS)",
+  "kind": "platform",
+  "field": "program_application",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "purple-robot",
+  "name": "Purple Robot (Northwestern CBITS)",
+  "kind": "platform",
+  "field": "program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "purple-robot",
+  "name": "Purple Robot (Northwestern CBITS)",
+  "kind": "platform",
+  "field": "developer_program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "purple-robot",
+  "name": "Purple Robot (Northwestern CBITS)",
+  "kind": "platform",
+  "field": "user_cap",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "purple-robot",
+  "name": "Purple Robot (Northwestern CBITS)",
+  "kind": "platform",
+  "field": "academic_vs_commercial",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "purple-robot",
+  "name": "Purple Robot (Northwestern CBITS)",
+  "kind": "platform",
+  "field": "device_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "purple-robot",
+  "name": "Purple Robot (Northwestern CBITS)",
+  "kind": "platform",
+  "field": "subscription_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "purple-robot",
+  "name": "Purple Robot (Northwestern CBITS)",
+  "kind": "platform",
+  "field": "academic_pricing",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "purple-robot",
+  "name": "Purple Robot (Northwestern CBITS)",
+  "kind": "platform",
+  "field": "api_platform_fees",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "purple-robot",
+  "name": "Purple Robot (Northwestern CBITS)",
+  "kind": "platform",
+  "field": "minimum_commitment",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "purple-robot",
+  "name": "Purple Robot (Northwestern CBITS)",
+  "kind": "platform",
+  "field": "quote_required",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "purple-robot",
+  "name": "Purple Robot (Northwestern CBITS)",
+  "kind": "platform",
+  "field": "hosting_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "purple-robot",
+  "name": "Purple Robot (Northwestern CBITS)",
+  "kind": "platform",
+  "field": "raw_streams",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "purple-robot",
+  "name": "Purple Robot (Northwestern CBITS)",
+  "kind": "platform",
+  "field": "derived_metrics",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "purple-robot",
+  "name": "Purple Robot (Northwestern CBITS)",
+  "kind": "platform",
+  "field": "sampling_rates",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "purple-robot",
+  "name": "Purple Robot (Northwestern CBITS)",
+  "kind": "platform",
+  "field": "history_depth",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "purple-robot",
+  "name": "Purple Robot (Northwestern CBITS)",
+  "kind": "platform",
+  "field": "export_routes",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "purple-robot",
+  "name": "Purple Robot (Northwestern CBITS)",
+  "kind": "platform",
+  "field": "rate_limits",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "purple-robot",
+  "name": "Purple Robot (Northwestern CBITS)",
+  "kind": "platform",
+  "field": "retention_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "purple-robot",
+  "name": "Purple Robot (Northwestern CBITS)",
+  "kind": "platform",
+  "field": "ai_training_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "purple-robot",
+  "name": "Purple Robot (Northwestern CBITS)",
+  "kind": "platform",
+  "field": "deprecations",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "purple-robot",
+  "name": "Purple Robot (Northwestern CBITS)",
+  "kind": "platform",
+  "field": "licence",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "purple-robot",
+  "name": "Purple Robot (Northwestern CBITS)",
+  "kind": "platform",
+  "field": "hosting_options",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "purple-robot",
+  "name": "Purple Robot (Northwestern CBITS)",
+  "kind": "platform",
+  "field": "app_availability",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "purple-robot",
+  "name": "Purple Robot (Northwestern CBITS)",
+  "kind": "platform",
+  "field": "baa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "purple-robot",
+  "name": "Purple Robot (Northwestern CBITS)",
+  "kind": "platform",
+  "field": "dpa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "purple-robot",
+  "name": "Purple Robot (Northwestern CBITS)",
+  "kind": "platform",
+  "field": "hipaa_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "purple-robot",
+  "name": "Purple Robot (Northwestern CBITS)",
+  "kind": "platform",
+  "field": "gdpr_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "purple-robot",
+  "name": "Purple Robot (Northwestern CBITS)",
+  "kind": "platform",
+  "field": "iso27001",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "purple-robot",
+  "name": "Purple Robot (Northwestern CBITS)",
+  "kind": "platform",
+  "field": "soc2",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "purple-robot",
+  "name": "Purple Robot (Northwestern CBITS)",
+  "kind": "platform",
+  "field": "fda_clearances",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "purple-robot",
+  "name": "Purple Robot (Northwestern CBITS)",
+  "kind": "platform",
+  "field": "data_residency",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "radar-base",
+  "name": "RADAR-base (and The Hyve hosting)",
+  "kind": "platform",
+  "field": "research_program",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "radar-base",
+  "name": "RADAR-base (and The Hyve hosting)",
+  "kind": "platform",
+  "field": "program_eligibility",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "radar-base",
+  "name": "RADAR-base (and The Hyve hosting)",
+  "kind": "platform",
+  "field": "program_application",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "radar-base",
+  "name": "RADAR-base (and The Hyve hosting)",
+  "kind": "platform",
+  "field": "program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "radar-base",
+  "name": "RADAR-base (and The Hyve hosting)",
+  "kind": "platform",
+  "field": "developer_program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "radar-base",
+  "name": "RADAR-base (and The Hyve hosting)",
+  "kind": "platform",
+  "field": "user_cap",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "radar-base",
+  "name": "RADAR-base (and The Hyve hosting)",
+  "kind": "platform",
+  "field": "academic_vs_commercial",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "radar-base",
+  "name": "RADAR-base (and The Hyve hosting)",
+  "kind": "platform",
+  "field": "device_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "radar-base",
+  "name": "RADAR-base (and The Hyve hosting)",
+  "kind": "platform",
+  "field": "subscription_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "radar-base",
+  "name": "RADAR-base (and The Hyve hosting)",
+  "kind": "platform",
+  "field": "academic_pricing",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "radar-base",
+  "name": "RADAR-base (and The Hyve hosting)",
+  "kind": "platform",
+  "field": "api_platform_fees",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "radar-base",
+  "name": "RADAR-base (and The Hyve hosting)",
+  "kind": "platform",
+  "field": "minimum_commitment",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "radar-base",
+  "name": "RADAR-base (and The Hyve hosting)",
+  "kind": "platform",
+  "field": "quote_required",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "radar-base",
+  "name": "RADAR-base (and The Hyve hosting)",
+  "kind": "platform",
+  "field": "hosting_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "radar-base",
+  "name": "RADAR-base (and The Hyve hosting)",
+  "kind": "platform",
+  "field": "raw_streams",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "radar-base",
+  "name": "RADAR-base (and The Hyve hosting)",
+  "kind": "platform",
+  "field": "derived_metrics",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "radar-base",
+  "name": "RADAR-base (and The Hyve hosting)",
+  "kind": "platform",
+  "field": "sampling_rates",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "radar-base",
+  "name": "RADAR-base (and The Hyve hosting)",
+  "kind": "platform",
+  "field": "history_depth",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "radar-base",
+  "name": "RADAR-base (and The Hyve hosting)",
+  "kind": "platform",
+  "field": "export_routes",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "radar-base",
+  "name": "RADAR-base (and The Hyve hosting)",
+  "kind": "platform",
+  "field": "rate_limits",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "radar-base",
+  "name": "RADAR-base (and The Hyve hosting)",
+  "kind": "platform",
+  "field": "retention_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "radar-base",
+  "name": "RADAR-base (and The Hyve hosting)",
+  "kind": "platform",
+  "field": "ai_training_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "radar-base",
+  "name": "RADAR-base (and The Hyve hosting)",
+  "kind": "platform",
+  "field": "deprecations",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "radar-base",
+  "name": "RADAR-base (and The Hyve hosting)",
+  "kind": "platform",
+  "field": "licence",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "radar-base",
+  "name": "RADAR-base (and The Hyve hosting)",
+  "kind": "platform",
+  "field": "hosting_options",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "radar-base",
+  "name": "RADAR-base (and The Hyve hosting)",
+  "kind": "platform",
+  "field": "app_availability",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "radar-base",
+  "name": "RADAR-base (and The Hyve hosting)",
+  "kind": "platform",
+  "field": "baa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "radar-base",
+  "name": "RADAR-base (and The Hyve hosting)",
+  "kind": "platform",
+  "field": "dpa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "radar-base",
+  "name": "RADAR-base (and The Hyve hosting)",
+  "kind": "platform",
+  "field": "hipaa_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "radar-base",
+  "name": "RADAR-base (and The Hyve hosting)",
+  "kind": "platform",
+  "field": "gdpr_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "radar-base",
+  "name": "RADAR-base (and The Hyve hosting)",
+  "kind": "platform",
+  "field": "iso27001",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "radar-base",
+  "name": "RADAR-base (and The Hyve hosting)",
+  "kind": "platform",
+  "field": "soc2",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "radar-base",
+  "name": "RADAR-base (and The Hyve hosting)",
+  "kind": "platform",
+  "field": "fda_clearances",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "radar-base",
+  "name": "RADAR-base (and The Hyve hosting)",
+  "kind": "platform",
+  "field": "data_residency",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "research_program",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "program_eligibility",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "program_application",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "developer_program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "user_cap",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "academic_vs_commercial",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "device_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "subscription_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "academic_pricing",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "api_platform_fees",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "minimum_commitment",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "quote_required",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "raw_streams",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "derived_metrics",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "sampling_rates",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "history_depth",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "export_routes",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "rate_limits",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "retention_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "ai_training_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "deprecations",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "baa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "dpa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "hipaa_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "gdpr_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "iso27001",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "soc2",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "fda_clearances",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "data_residency",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "research_program",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "program_eligibility",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "program_application",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "developer_program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "user_cap",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "academic_vs_commercial",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "device_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "subscription_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "academic_pricing",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "api_platform_fees",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "minimum_commitment",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "quote_required",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "raw_streams",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "derived_metrics",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "sampling_rates",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "history_depth",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "export_routes",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "rate_limits",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "retention_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "ai_training_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "deprecations",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "baa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "dpa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "hipaa_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "gdpr_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "iso27001",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "soc2",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "fda_clearances",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "data_residency",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "apple",
+  "name": "Apple (Apple Watch, HealthKit, SensorKit, ResearchKit)",
+  "kind": "wearable",
+  "field": "research_program",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "apple",
+  "name": "Apple (Apple Watch, HealthKit, SensorKit, ResearchKit)",
+  "kind": "wearable",
+  "field": "program_eligibility",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "apple",
+  "name": "Apple (Apple Watch, HealthKit, SensorKit, ResearchKit)",
+  "kind": "wearable",
+  "field": "program_application",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "apple",
+  "name": "Apple (Apple Watch, HealthKit, SensorKit, ResearchKit)",
+  "kind": "wearable",
+  "field": "program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "apple",
+  "name": "Apple (Apple Watch, HealthKit, SensorKit, ResearchKit)",
+  "kind": "wearable",
+  "field": "developer_program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "apple",
+  "name": "Apple (Apple Watch, HealthKit, SensorKit, ResearchKit)",
+  "kind": "wearable",
+  "field": "user_cap",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "apple",
+  "name": "Apple (Apple Watch, HealthKit, SensorKit, ResearchKit)",
+  "kind": "wearable",
+  "field": "academic_vs_commercial",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "apple",
+  "name": "Apple (Apple Watch, HealthKit, SensorKit, ResearchKit)",
+  "kind": "wearable",
+  "field": "device_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "apple",
+  "name": "Apple (Apple Watch, HealthKit, SensorKit, ResearchKit)",
+  "kind": "wearable",
+  "field": "subscription_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "apple",
+  "name": "Apple (Apple Watch, HealthKit, SensorKit, ResearchKit)",
+  "kind": "wearable",
+  "field": "academic_pricing",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "apple",
+  "name": "Apple (Apple Watch, HealthKit, SensorKit, ResearchKit)",
+  "kind": "wearable",
+  "field": "api_platform_fees",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "apple",
+  "name": "Apple (Apple Watch, HealthKit, SensorKit, ResearchKit)",
+  "kind": "wearable",
+  "field": "minimum_commitment",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "apple",
+  "name": "Apple (Apple Watch, HealthKit, SensorKit, ResearchKit)",
+  "kind": "wearable",
+  "field": "quote_required",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "apple",
+  "name": "Apple (Apple Watch, HealthKit, SensorKit, ResearchKit)",
+  "kind": "wearable",
+  "field": "raw_streams",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "apple",
+  "name": "Apple (Apple Watch, HealthKit, SensorKit, ResearchKit)",
+  "kind": "wearable",
+  "field": "derived_metrics",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "apple",
+  "name": "Apple (Apple Watch, HealthKit, SensorKit, ResearchKit)",
+  "kind": "wearable",
+  "field": "sampling_rates",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "apple",
+  "name": "Apple (Apple Watch, HealthKit, SensorKit, ResearchKit)",
+  "kind": "wearable",
+  "field": "history_depth",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "apple",
+  "name": "Apple (Apple Watch, HealthKit, SensorKit, ResearchKit)",
+  "kind": "wearable",
+  "field": "export_routes",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "apple",
+  "name": "Apple (Apple Watch, HealthKit, SensorKit, ResearchKit)",
+  "kind": "wearable",
+  "field": "rate_limits",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "apple",
+  "name": "Apple (Apple Watch, HealthKit, SensorKit, ResearchKit)",
+  "kind": "wearable",
+  "field": "retention_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "apple",
+  "name": "Apple (Apple Watch, HealthKit, SensorKit, ResearchKit)",
+  "kind": "wearable",
+  "field": "ai_training_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "apple",
+  "name": "Apple (Apple Watch, HealthKit, SensorKit, ResearchKit)",
+  "kind": "wearable",
+  "field": "deprecations",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "apple",
+  "name": "Apple (Apple Watch, HealthKit, SensorKit, ResearchKit)",
+  "kind": "wearable",
+  "field": "baa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "apple",
+  "name": "Apple (Apple Watch, HealthKit, SensorKit, ResearchKit)",
+  "kind": "wearable",
+  "field": "dpa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "apple",
+  "name": "Apple (Apple Watch, HealthKit, SensorKit, ResearchKit)",
+  "kind": "wearable",
+  "field": "hipaa_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "apple",
+  "name": "Apple (Apple Watch, HealthKit, SensorKit, ResearchKit)",
+  "kind": "wearable",
+  "field": "gdpr_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "apple",
+  "name": "Apple (Apple Watch, HealthKit, SensorKit, ResearchKit)",
+  "kind": "wearable",
+  "field": "iso27001",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "apple",
+  "name": "Apple (Apple Watch, HealthKit, SensorKit, ResearchKit)",
+  "kind": "wearable",
+  "field": "soc2",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "apple",
+  "name": "Apple (Apple Watch, HealthKit, SensorKit, ResearchKit)",
+  "kind": "wearable",
+  "field": "fda_clearances",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "apple",
+  "name": "Apple (Apple Watch, HealthKit, SensorKit, ResearchKit)",
+  "kind": "wearable",
+  "field": "data_residency",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "axivity",
+  "name": "Axivity",
+  "kind": "wearable",
+  "field": "research_program",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "axivity",
+  "name": "Axivity",
+  "kind": "wearable",
+  "field": "program_eligibility",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "axivity",
+  "name": "Axivity",
+  "kind": "wearable",
+  "field": "program_application",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "axivity",
+  "name": "Axivity",
+  "kind": "wearable",
+  "field": "program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "axivity",
+  "name": "Axivity",
+  "kind": "wearable",
+  "field": "developer_program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "axivity",
+  "name": "Axivity",
+  "kind": "wearable",
+  "field": "user_cap",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "axivity",
+  "name": "Axivity",
+  "kind": "wearable",
+  "field": "academic_vs_commercial",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "axivity",
+  "name": "Axivity",
+  "kind": "wearable",
+  "field": "device_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "axivity",
+  "name": "Axivity",
+  "kind": "wearable",
+  "field": "subscription_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "axivity",
+  "name": "Axivity",
+  "kind": "wearable",
+  "field": "academic_pricing",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "axivity",
+  "name": "Axivity",
+  "kind": "wearable",
+  "field": "api_platform_fees",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "axivity",
+  "name": "Axivity",
+  "kind": "wearable",
+  "field": "minimum_commitment",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "axivity",
+  "name": "Axivity",
+  "kind": "wearable",
+  "field": "quote_required",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "axivity",
+  "name": "Axivity",
+  "kind": "wearable",
+  "field": "raw_streams",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "axivity",
+  "name": "Axivity",
+  "kind": "wearable",
+  "field": "derived_metrics",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "axivity",
+  "name": "Axivity",
+  "kind": "wearable",
+  "field": "sampling_rates",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "axivity",
+  "name": "Axivity",
+  "kind": "wearable",
+  "field": "history_depth",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "axivity",
+  "name": "Axivity",
+  "kind": "wearable",
+  "field": "export_routes",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "axivity",
+  "name": "Axivity",
+  "kind": "wearable",
+  "field": "rate_limits",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "axivity",
+  "name": "Axivity",
+  "kind": "wearable",
+  "field": "retention_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "axivity",
+  "name": "Axivity",
+  "kind": "wearable",
+  "field": "ai_training_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "axivity",
+  "name": "Axivity",
+  "kind": "wearable",
+  "field": "deprecations",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "axivity",
+  "name": "Axivity",
+  "kind": "wearable",
+  "field": "baa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "axivity",
+  "name": "Axivity",
+  "kind": "wearable",
+  "field": "dpa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "axivity",
+  "name": "Axivity",
+  "kind": "wearable",
+  "field": "hipaa_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "axivity",
+  "name": "Axivity",
+  "kind": "wearable",
+  "field": "gdpr_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "axivity",
+  "name": "Axivity",
+  "kind": "wearable",
+  "field": "iso27001",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "axivity",
+  "name": "Axivity",
+  "kind": "wearable",
+  "field": "soc2",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "axivity",
+  "name": "Axivity",
+  "kind": "wearable",
+  "field": "fda_clearances",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "axivity",
+  "name": "Axivity",
+  "kind": "wearable",
+  "field": "data_residency",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "circular",
+  "name": "Circular",
+  "kind": "wearable",
+  "field": "research_program",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "circular",
+  "name": "Circular",
+  "kind": "wearable",
+  "field": "program_eligibility",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "circular",
+  "name": "Circular",
+  "kind": "wearable",
+  "field": "program_application",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "circular",
+  "name": "Circular",
+  "kind": "wearable",
+  "field": "program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "circular",
+  "name": "Circular",
+  "kind": "wearable",
+  "field": "developer_program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "circular",
+  "name": "Circular",
+  "kind": "wearable",
+  "field": "user_cap",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "circular",
+  "name": "Circular",
+  "kind": "wearable",
+  "field": "academic_vs_commercial",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "circular",
+  "name": "Circular",
+  "kind": "wearable",
+  "field": "device_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "circular",
+  "name": "Circular",
+  "kind": "wearable",
+  "field": "subscription_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "circular",
+  "name": "Circular",
+  "kind": "wearable",
+  "field": "academic_pricing",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "circular",
+  "name": "Circular",
+  "kind": "wearable",
+  "field": "api_platform_fees",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "circular",
+  "name": "Circular",
+  "kind": "wearable",
+  "field": "minimum_commitment",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "circular",
+  "name": "Circular",
+  "kind": "wearable",
+  "field": "quote_required",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "circular",
+  "name": "Circular",
+  "kind": "wearable",
+  "field": "raw_streams",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "circular",
+  "name": "Circular",
+  "kind": "wearable",
+  "field": "derived_metrics",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "circular",
+  "name": "Circular",
+  "kind": "wearable",
+  "field": "sampling_rates",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "circular",
+  "name": "Circular",
+  "kind": "wearable",
+  "field": "history_depth",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "circular",
+  "name": "Circular",
+  "kind": "wearable",
+  "field": "export_routes",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "circular",
+  "name": "Circular",
+  "kind": "wearable",
+  "field": "rate_limits",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "circular",
+  "name": "Circular",
+  "kind": "wearable",
+  "field": "retention_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "circular",
+  "name": "Circular",
+  "kind": "wearable",
+  "field": "ai_training_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "circular",
+  "name": "Circular",
+  "kind": "wearable",
+  "field": "deprecations",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "circular",
+  "name": "Circular",
+  "kind": "wearable",
+  "field": "baa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "circular",
+  "name": "Circular",
+  "kind": "wearable",
+  "field": "dpa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "circular",
+  "name": "Circular",
+  "kind": "wearable",
+  "field": "hipaa_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "circular",
+  "name": "Circular",
+  "kind": "wearable",
+  "field": "gdpr_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "circular",
+  "name": "Circular",
+  "kind": "wearable",
+  "field": "iso27001",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "circular",
+  "name": "Circular",
+  "kind": "wearable",
+  "field": "soc2",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "circular",
+  "name": "Circular",
+  "kind": "wearable",
+  "field": "fda_clearances",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "circular",
+  "name": "Circular",
+  "kind": "wearable",
+  "field": "data_residency",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "empatica",
+  "name": "Empatica",
+  "kind": "wearable",
+  "field": "research_program",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "empatica",
+  "name": "Empatica",
+  "kind": "wearable",
+  "field": "program_eligibility",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "empatica",
+  "name": "Empatica",
+  "kind": "wearable",
+  "field": "program_application",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "empatica",
+  "name": "Empatica",
+  "kind": "wearable",
+  "field": "program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "empatica",
+  "name": "Empatica",
+  "kind": "wearable",
+  "field": "developer_program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "empatica",
+  "name": "Empatica",
+  "kind": "wearable",
+  "field": "user_cap",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "empatica",
+  "name": "Empatica",
+  "kind": "wearable",
+  "field": "academic_vs_commercial",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "empatica",
+  "name": "Empatica",
+  "kind": "wearable",
+  "field": "device_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "empatica",
+  "name": "Empatica",
+  "kind": "wearable",
+  "field": "subscription_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "empatica",
+  "name": "Empatica",
+  "kind": "wearable",
+  "field": "academic_pricing",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "empatica",
+  "name": "Empatica",
+  "kind": "wearable",
+  "field": "api_platform_fees",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "empatica",
+  "name": "Empatica",
+  "kind": "wearable",
+  "field": "minimum_commitment",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "empatica",
+  "name": "Empatica",
+  "kind": "wearable",
+  "field": "quote_required",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "empatica",
+  "name": "Empatica",
+  "kind": "wearable",
+  "field": "raw_streams",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "empatica",
+  "name": "Empatica",
+  "kind": "wearable",
+  "field": "derived_metrics",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "empatica",
+  "name": "Empatica",
+  "kind": "wearable",
+  "field": "sampling_rates",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "empatica",
+  "name": "Empatica",
+  "kind": "wearable",
+  "field": "history_depth",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "empatica",
+  "name": "Empatica",
+  "kind": "wearable",
+  "field": "export_routes",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "empatica",
+  "name": "Empatica",
+  "kind": "wearable",
+  "field": "rate_limits",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "empatica",
+  "name": "Empatica",
+  "kind": "wearable",
+  "field": "retention_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "empatica",
+  "name": "Empatica",
+  "kind": "wearable",
+  "field": "ai_training_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "empatica",
+  "name": "Empatica",
+  "kind": "wearable",
+  "field": "deprecations",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "empatica",
+  "name": "Empatica",
+  "kind": "wearable",
+  "field": "baa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "empatica",
+  "name": "Empatica",
+  "kind": "wearable",
+  "field": "dpa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "empatica",
+  "name": "Empatica",
+  "kind": "wearable",
+  "field": "hipaa_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "empatica",
+  "name": "Empatica",
+  "kind": "wearable",
+  "field": "gdpr_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "empatica",
+  "name": "Empatica",
+  "kind": "wearable",
+  "field": "iso27001",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "empatica",
+  "name": "Empatica",
+  "kind": "wearable",
+  "field": "soc2",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "empatica",
+  "name": "Empatica",
+  "kind": "wearable",
+  "field": "fda_clearances",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "empatica",
+  "name": "Empatica",
+  "kind": "wearable",
+  "field": "data_residency",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitbit-google",
+  "name": "Fitbit / Google Health API",
+  "kind": "wearable",
+  "field": "research_program",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitbit-google",
+  "name": "Fitbit / Google Health API",
+  "kind": "wearable",
+  "field": "program_eligibility",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitbit-google",
+  "name": "Fitbit / Google Health API",
+  "kind": "wearable",
+  "field": "program_application",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitbit-google",
+  "name": "Fitbit / Google Health API",
+  "kind": "wearable",
+  "field": "program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitbit-google",
+  "name": "Fitbit / Google Health API",
+  "kind": "wearable",
+  "field": "developer_program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitbit-google",
+  "name": "Fitbit / Google Health API",
+  "kind": "wearable",
+  "field": "user_cap",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitbit-google",
+  "name": "Fitbit / Google Health API",
+  "kind": "wearable",
+  "field": "academic_vs_commercial",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitbit-google",
+  "name": "Fitbit / Google Health API",
+  "kind": "wearable",
+  "field": "device_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitbit-google",
+  "name": "Fitbit / Google Health API",
+  "kind": "wearable",
+  "field": "subscription_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitbit-google",
+  "name": "Fitbit / Google Health API",
+  "kind": "wearable",
+  "field": "academic_pricing",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitbit-google",
+  "name": "Fitbit / Google Health API",
+  "kind": "wearable",
+  "field": "api_platform_fees",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitbit-google",
+  "name": "Fitbit / Google Health API",
+  "kind": "wearable",
+  "field": "minimum_commitment",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitbit-google",
+  "name": "Fitbit / Google Health API",
+  "kind": "wearable",
+  "field": "quote_required",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitbit-google",
+  "name": "Fitbit / Google Health API",
+  "kind": "wearable",
+  "field": "raw_streams",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitbit-google",
+  "name": "Fitbit / Google Health API",
+  "kind": "wearable",
+  "field": "derived_metrics",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitbit-google",
+  "name": "Fitbit / Google Health API",
+  "kind": "wearable",
+  "field": "sampling_rates",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitbit-google",
+  "name": "Fitbit / Google Health API",
+  "kind": "wearable",
+  "field": "history_depth",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitbit-google",
+  "name": "Fitbit / Google Health API",
+  "kind": "wearable",
+  "field": "export_routes",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitbit-google",
+  "name": "Fitbit / Google Health API",
+  "kind": "wearable",
+  "field": "rate_limits",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitbit-google",
+  "name": "Fitbit / Google Health API",
+  "kind": "wearable",
+  "field": "retention_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitbit-google",
+  "name": "Fitbit / Google Health API",
+  "kind": "wearable",
+  "field": "ai_training_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitbit-google",
+  "name": "Fitbit / Google Health API",
+  "kind": "wearable",
+  "field": "deprecations",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitbit-google",
+  "name": "Fitbit / Google Health API",
+  "kind": "wearable",
+  "field": "baa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitbit-google",
+  "name": "Fitbit / Google Health API",
+  "kind": "wearable",
+  "field": "dpa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitbit-google",
+  "name": "Fitbit / Google Health API",
+  "kind": "wearable",
+  "field": "hipaa_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitbit-google",
+  "name": "Fitbit / Google Health API",
+  "kind": "wearable",
+  "field": "gdpr_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitbit-google",
+  "name": "Fitbit / Google Health API",
+  "kind": "wearable",
+  "field": "iso27001",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitbit-google",
+  "name": "Fitbit / Google Health API",
+  "kind": "wearable",
+  "field": "soc2",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitbit-google",
+  "name": "Fitbit / Google Health API",
+  "kind": "wearable",
+  "field": "fda_clearances",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "fitbit-google",
+  "name": "Fitbit / Google Health API",
+  "kind": "wearable",
+  "field": "data_residency",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "garmin",
+  "name": "Garmin",
+  "kind": "wearable",
+  "field": "research_program",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "garmin",
+  "name": "Garmin",
+  "kind": "wearable",
+  "field": "program_eligibility",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "garmin",
+  "name": "Garmin",
+  "kind": "wearable",
+  "field": "program_application",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "garmin",
+  "name": "Garmin",
+  "kind": "wearable",
+  "field": "program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "garmin",
+  "name": "Garmin",
+  "kind": "wearable",
+  "field": "developer_program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "garmin",
+  "name": "Garmin",
+  "kind": "wearable",
+  "field": "user_cap",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "garmin",
+  "name": "Garmin",
+  "kind": "wearable",
+  "field": "academic_vs_commercial",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "garmin",
+  "name": "Garmin",
+  "kind": "wearable",
+  "field": "device_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "garmin",
+  "name": "Garmin",
+  "kind": "wearable",
+  "field": "subscription_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "garmin",
+  "name": "Garmin",
+  "kind": "wearable",
+  "field": "academic_pricing",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "garmin",
+  "name": "Garmin",
+  "kind": "wearable",
+  "field": "api_platform_fees",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "garmin",
+  "name": "Garmin",
+  "kind": "wearable",
+  "field": "minimum_commitment",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "garmin",
+  "name": "Garmin",
+  "kind": "wearable",
+  "field": "quote_required",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "garmin",
+  "name": "Garmin",
+  "kind": "wearable",
+  "field": "raw_streams",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "garmin",
+  "name": "Garmin",
+  "kind": "wearable",
+  "field": "derived_metrics",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "garmin",
+  "name": "Garmin",
+  "kind": "wearable",
+  "field": "sampling_rates",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "garmin",
+  "name": "Garmin",
+  "kind": "wearable",
+  "field": "history_depth",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "garmin",
+  "name": "Garmin",
+  "kind": "wearable",
+  "field": "export_routes",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "garmin",
+  "name": "Garmin",
+  "kind": "wearable",
+  "field": "rate_limits",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "garmin",
+  "name": "Garmin",
+  "kind": "wearable",
+  "field": "retention_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "garmin",
+  "name": "Garmin",
+  "kind": "wearable",
+  "field": "ai_training_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "garmin",
+  "name": "Garmin",
+  "kind": "wearable",
+  "field": "deprecations",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "garmin",
+  "name": "Garmin",
+  "kind": "wearable",
+  "field": "baa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "garmin",
+  "name": "Garmin",
+  "kind": "wearable",
+  "field": "dpa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "garmin",
+  "name": "Garmin",
+  "kind": "wearable",
+  "field": "hipaa_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "garmin",
+  "name": "Garmin",
+  "kind": "wearable",
+  "field": "gdpr_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "garmin",
+  "name": "Garmin",
+  "kind": "wearable",
+  "field": "iso27001",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "garmin",
+  "name": "Garmin",
+  "kind": "wearable",
+  "field": "soc2",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "garmin",
+  "name": "Garmin",
+  "kind": "wearable",
+  "field": "fda_clearances",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "garmin",
+  "name": "Garmin",
+  "kind": "wearable",
+  "field": "data_residency",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "research_program",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "program_eligibility",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "program_application",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "developer_program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "user_cap",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "academic_vs_commercial",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "device_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "subscription_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "academic_pricing",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "api_platform_fees",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "minimum_commitment",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "quote_required",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "raw_streams",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "derived_metrics",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "sampling_rates",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "history_depth",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "export_routes",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "rate_limits",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "retention_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "ai_training_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "deprecations",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "baa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "dpa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "hipaa_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "gdpr_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "iso27001",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "soc2",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "fda_clearances",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "data_residency",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "oura",
+  "name": "Oura",
+  "kind": "wearable",
+  "field": "research_program",
+  "status": "stated",
+  "value": "Oura for research, part of Oura for Organizations: dashboards, group data export, API integration",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://organizations.ouraring.com/solutions/researchers",
+    "type": "vendor_page",
+    "retrieved": "2026-10-10",
+    "quote": "Oura offers a solution for researchers, combining the unparalleled accuracy of Oura Ring with customizable dashboards and simple data integration"
+   }
+  ]
+ },
+ {
+  "company": "oura",
+  "name": "Oura",
+  "kind": "wearable",
+  "field": "program_eligibility",
+  "status": "not_public",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "The research page states no eligibility criteria.",
+  "sources": [
+   {
+    "url": "https://organizations.ouraring.com/solutions/researchers",
+    "type": "vendor_page",
+    "retrieved": "2026-10-10"
+   }
+  ]
+ },
+ {
+  "company": "oura",
+  "name": "Oura",
+  "kind": "wearable",
+  "field": "program_application",
+  "status": "stated",
+  "value": "Contact form only; no published application process",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://organizations.ouraring.com/solutions/researchers",
+    "type": "vendor_page",
+    "retrieved": "2026-10-10",
+    "quote": "Track participant metrics with research-grade accuracy across a variety of research studies. Contact us"
+   }
+  ]
+ },
+ {
+  "company": "oura",
+  "name": "Oura",
+  "kind": "wearable",
+  "field": "program_status",
+  "status": "stated",
+  "value": "Active (page live)",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://organizations.ouraring.com/solutions/researchers",
+    "type": "vendor_page",
+    "retrieved": "2026-10-10",
+    "quote": "Oura for research Power your scientific discoveries"
+   }
+  ]
+ },
+ {
+  "company": "oura",
+  "name": "Oura",
+  "kind": "wearable",
+  "field": "developer_program_status",
+  "status": "stated",
+  "value": "Open to new API applications; more than 10 users needs Oura's approval",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://cloud.ouraring.com/v2/static/json/openapi-1.41.json",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-10",
+    "quote": "API applications accessing more than 10 users require approval from Oura"
+   }
+  ]
+ },
+ {
+  "company": "oura",
+  "name": "Oura",
+  "kind": "wearable",
+  "field": "user_cap",
+  "status": "stated",
+  "value": "10 users before approval",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://cloud.ouraring.com/v2/static/json/openapi-1.41.json",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-10",
+    "quote": "API applications accessing more than 10 users require approval from Oura"
+   }
+  ]
+ },
+ {
+  "company": "oura",
+  "name": "Oura",
+  "kind": "wearable",
+  "field": "academic_vs_commercial",
+  "status": "unclear",
+  "confidence": "Unclear",
+  "recheck_by": "2026-11-09",
+  "note": "Neither the research page nor the API Agreement describes different terms for academic users.",
+  "sources": [
+   {
+    "url": "https://organizations.ouraring.com/solutions/researchers",
+    "type": "vendor_page",
+    "retrieved": "2026-10-10"
+   },
+   {
+    "url": "https://cloud.ouraring.com/legal/api-agreement",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-10"
+   }
+  ]
+ },
+ {
+  "company": "oura",
+  "name": "Oura",
+  "kind": "wearable",
+  "field": "device_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "oura",
+  "name": "Oura",
+  "kind": "wearable",
+  "field": "subscription_price",
+  "status": "stated",
+  "value": "US $5.99/month or $69.99/year before tax",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://ouraring.com/membership",
+    "type": "vendor_page",
+    "retrieved": "2026-10-10",
+    "quote": "$5.99 USD/month or $69.99 USD/annually before tax for US members"
+   }
+  ]
+ },
+ {
+  "company": "oura",
+  "name": "Oura",
+  "kind": "wearable",
+  "field": "academic_pricing",
+  "status": "not_public",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "The research page has no prices.",
+  "sources": [
+   {
+    "url": "https://organizations.ouraring.com/solutions/researchers",
+    "type": "vendor_page",
+    "retrieved": "2026-10-10"
+   }
+  ]
+ },
+ {
+  "company": "oura",
+  "name": "Oura",
+  "kind": "wearable",
+  "field": "api_platform_fees",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "oura",
+  "name": "Oura",
+  "kind": "wearable",
+  "field": "minimum_commitment",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "oura",
+  "name": "Oura",
+  "kind": "wearable",
+  "field": "quote_required",
+  "status": "stated",
+  "value": "Yes, the research offering is contact-only",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://organizations.ouraring.com/solutions/researchers",
+    "type": "vendor_page",
+    "retrieved": "2026-10-10",
+    "quote": "Track participant metrics with research-grade accuracy across a variety of research studies. Contact us"
+   }
+  ]
+ },
+ {
+  "company": "oura",
+  "name": "Oura",
+  "kind": "wearable",
+  "field": "raw_streams",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "oura",
+  "name": "Oura",
+  "kind": "wearable",
+  "field": "derived_metrics",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "oura",
+  "name": "Oura",
+  "kind": "wearable",
+  "field": "sampling_rates",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "oura",
+  "name": "Oura",
+  "kind": "wearable",
+  "field": "history_depth",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "oura",
+  "name": "Oura",
+  "kind": "wearable",
+  "field": "export_routes",
+  "status": "stated",
+  "value": "API v2 with OAuth and webhooks; research platform exports raw data to CSV or JSON",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "What 'raw data' means on the research platform is not defined.",
+  "sources": [
+   {
+    "url": "https://cloud.ouraring.com/v2/static/json/openapi-1.41.json",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-10",
+    "quote": "Webhooks are the preferred way to consume Oura data"
+   },
+   {
+    "url": "https://organizations.ouraring.com/solutions/researchers",
+    "type": "vendor_page",
+    "retrieved": "2026-10-10",
+    "quote": "Flexible data export of raw data to CSV or JSON file"
+   }
+  ]
+ },
+ {
+  "company": "oura",
+  "name": "Oura",
+  "kind": "wearable",
+  "field": "rate_limits",
+  "status": "stated",
+  "value": "Two layers (per access token and per application); numbers not published",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://cloud.ouraring.com/v2/static/json/openapi-1.41.json",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-10",
+    "quote": "The API enforces rate limits at two layers to ensure fair access across all applications"
+   }
+  ]
+ },
+ {
+  "company": "oura",
+  "name": "Oura",
+  "kind": "wearable",
+  "field": "retention_terms",
+  "status": "stated",
+  "value": "API data may not be stored or retained beyond the duration strictly necessary; aggregators may not store or cache it",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://cloud.ouraring.com/legal/api-agreement",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-10",
+    "quote": "User Data or Oura Data and User Data accessed or obtained through the Oura API may not be stored or retained beyond the duration strictly necessary"
+   }
+  ]
+ },
+ {
+  "company": "oura",
+  "name": "Oura",
+  "kind": "wearable",
+  "field": "ai_training_terms",
+  "status": "stated",
+  "value": "Training, fine-tuning or improving any AI model with Oura data is prohibited, as is using it in an evaluation or benchmark dataset",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "A repair agent on 2026-10-10 reported that one clause allows training with Oura's prior written consent. The clause text read for this record states the prohibition without that route. Read the full section before relying on either reading.",
+  "sources": [
+   {
+    "url": "https://cloud.ouraring.com/legal/api-agreement",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-10",
+    "quote": "training, fine-tuning, developing, or improving any AI Model or AI Platform or allowing the training, fine-tuning, developing, or improving of any AI Model or AI Platform"
+   }
+  ]
+ },
+ {
+  "company": "oura",
+  "name": "Oura",
+  "kind": "wearable",
+  "field": "deprecations",
+  "status": "stated",
+  "value": "Personal access tokens retired December 2025",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://cloud.ouraring.com/v2/static/json/openapi-1.41.json",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-10",
+    "quote": "personal access tokens were deprecated in December 2025 and are no longer available for use"
+   }
+  ]
+ },
+ {
+  "company": "oura",
+  "name": "Oura",
+  "kind": "wearable",
+  "field": "baa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "oura",
+  "name": "Oura",
+  "kind": "wearable",
+  "field": "dpa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "oura",
+  "name": "Oura",
+  "kind": "wearable",
+  "field": "hipaa_statement",
+  "status": "stated",
+  "value": "Meets HIPAA requirements where it handles PHI for a healthcare partner (vendor statement)",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-08",
+  "sources": [
+   {
+    "url": "https://ouraring.com/trust-center",
+    "type": "vendor_page",
+    "retrieved": "2026-10-10",
+    "quote": "We also meet HIPAA requirements where we handle protected health information for a healthcare partner"
+   }
+  ]
+ },
+ {
+  "company": "oura",
+  "name": "Oura",
+  "kind": "wearable",
+  "field": "gdpr_statement",
+  "status": "stated",
+  "value": "States compliance with GDPR (vendor statement)",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-08",
+  "sources": [
+   {
+    "url": "https://organizations.ouraring.com/solutions/researchers",
+    "type": "vendor_page",
+    "retrieved": "2026-10-10",
+    "quote": "Complies with stringent data protection laws like GDPR and processes PHI in accordance with HIPAA"
+   }
+  ]
+ },
+ {
+  "company": "oura",
+  "name": "Oura",
+  "kind": "wearable",
+  "field": "iso27001",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "oura",
+  "name": "Oura",
+  "kind": "wearable",
+  "field": "soc2",
+  "status": "stated",
+  "value": "Annual independent audit under a SOC 2 heading (vendor statement; report not seen)",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-08",
+  "sources": [
+   {
+    "url": "https://ouraring.com/trust-center",
+    "type": "vendor_page",
+    "retrieved": "2026-10-10",
+    "quote": "Each year, independent auditors carefully review our security controls and verify that they are designed and operating as effectively as intended"
+   }
+  ]
+ },
+ {
+  "company": "oura",
+  "name": "Oura",
+  "kind": "wearable",
+  "field": "fda_clearances",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "oura",
+  "name": "Oura",
+  "kind": "wearable",
+  "field": "data_residency",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "research_program",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "program_eligibility",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "program_application",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "developer_program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "user_cap",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "academic_vs_commercial",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "device_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "subscription_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "academic_pricing",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "api_platform_fees",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "minimum_commitment",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "quote_required",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "raw_streams",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "derived_metrics",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "sampling_rates",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "history_depth",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "export_routes",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "rate_limits",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "retention_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "ai_training_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "deprecations",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "baa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "dpa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "hipaa_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "gdpr_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "iso27001",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "soc2",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "fda_clearances",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "data_residency",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ringconn",
+  "name": "RingConn",
+  "kind": "wearable",
+  "field": "research_program",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ringconn",
+  "name": "RingConn",
+  "kind": "wearable",
+  "field": "program_eligibility",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ringconn",
+  "name": "RingConn",
+  "kind": "wearable",
+  "field": "program_application",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ringconn",
+  "name": "RingConn",
+  "kind": "wearable",
+  "field": "program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ringconn",
+  "name": "RingConn",
+  "kind": "wearable",
+  "field": "developer_program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ringconn",
+  "name": "RingConn",
+  "kind": "wearable",
+  "field": "user_cap",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ringconn",
+  "name": "RingConn",
+  "kind": "wearable",
+  "field": "academic_vs_commercial",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ringconn",
+  "name": "RingConn",
+  "kind": "wearable",
+  "field": "device_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ringconn",
+  "name": "RingConn",
+  "kind": "wearable",
+  "field": "subscription_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ringconn",
+  "name": "RingConn",
+  "kind": "wearable",
+  "field": "academic_pricing",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ringconn",
+  "name": "RingConn",
+  "kind": "wearable",
+  "field": "api_platform_fees",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ringconn",
+  "name": "RingConn",
+  "kind": "wearable",
+  "field": "minimum_commitment",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ringconn",
+  "name": "RingConn",
+  "kind": "wearable",
+  "field": "quote_required",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ringconn",
+  "name": "RingConn",
+  "kind": "wearable",
+  "field": "raw_streams",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ringconn",
+  "name": "RingConn",
+  "kind": "wearable",
+  "field": "derived_metrics",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ringconn",
+  "name": "RingConn",
+  "kind": "wearable",
+  "field": "sampling_rates",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ringconn",
+  "name": "RingConn",
+  "kind": "wearable",
+  "field": "history_depth",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ringconn",
+  "name": "RingConn",
+  "kind": "wearable",
+  "field": "export_routes",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ringconn",
+  "name": "RingConn",
+  "kind": "wearable",
+  "field": "rate_limits",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ringconn",
+  "name": "RingConn",
+  "kind": "wearable",
+  "field": "retention_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ringconn",
+  "name": "RingConn",
+  "kind": "wearable",
+  "field": "ai_training_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ringconn",
+  "name": "RingConn",
+  "kind": "wearable",
+  "field": "deprecations",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ringconn",
+  "name": "RingConn",
+  "kind": "wearable",
+  "field": "baa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ringconn",
+  "name": "RingConn",
+  "kind": "wearable",
+  "field": "dpa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ringconn",
+  "name": "RingConn",
+  "kind": "wearable",
+  "field": "hipaa_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ringconn",
+  "name": "RingConn",
+  "kind": "wearable",
+  "field": "gdpr_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ringconn",
+  "name": "RingConn",
+  "kind": "wearable",
+  "field": "iso27001",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ringconn",
+  "name": "RingConn",
+  "kind": "wearable",
+  "field": "soc2",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ringconn",
+  "name": "RingConn",
+  "kind": "wearable",
+  "field": "fda_clearances",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ringconn",
+  "name": "RingConn",
+  "kind": "wearable",
+  "field": "data_residency",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "samsung",
+  "name": "Samsung (Galaxy Watch, Health Sensor SDK, Research Stack)",
+  "kind": "wearable",
+  "field": "research_program",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "samsung",
+  "name": "Samsung (Galaxy Watch, Health Sensor SDK, Research Stack)",
+  "kind": "wearable",
+  "field": "program_eligibility",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "samsung",
+  "name": "Samsung (Galaxy Watch, Health Sensor SDK, Research Stack)",
+  "kind": "wearable",
+  "field": "program_application",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "samsung",
+  "name": "Samsung (Galaxy Watch, Health Sensor SDK, Research Stack)",
+  "kind": "wearable",
+  "field": "program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "samsung",
+  "name": "Samsung (Galaxy Watch, Health Sensor SDK, Research Stack)",
+  "kind": "wearable",
+  "field": "developer_program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "samsung",
+  "name": "Samsung (Galaxy Watch, Health Sensor SDK, Research Stack)",
+  "kind": "wearable",
+  "field": "user_cap",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "samsung",
+  "name": "Samsung (Galaxy Watch, Health Sensor SDK, Research Stack)",
+  "kind": "wearable",
+  "field": "academic_vs_commercial",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "samsung",
+  "name": "Samsung (Galaxy Watch, Health Sensor SDK, Research Stack)",
+  "kind": "wearable",
+  "field": "device_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "samsung",
+  "name": "Samsung (Galaxy Watch, Health Sensor SDK, Research Stack)",
+  "kind": "wearable",
+  "field": "subscription_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "samsung",
+  "name": "Samsung (Galaxy Watch, Health Sensor SDK, Research Stack)",
+  "kind": "wearable",
+  "field": "academic_pricing",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "samsung",
+  "name": "Samsung (Galaxy Watch, Health Sensor SDK, Research Stack)",
+  "kind": "wearable",
+  "field": "api_platform_fees",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "samsung",
+  "name": "Samsung (Galaxy Watch, Health Sensor SDK, Research Stack)",
+  "kind": "wearable",
+  "field": "minimum_commitment",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "samsung",
+  "name": "Samsung (Galaxy Watch, Health Sensor SDK, Research Stack)",
+  "kind": "wearable",
+  "field": "quote_required",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "samsung",
+  "name": "Samsung (Galaxy Watch, Health Sensor SDK, Research Stack)",
+  "kind": "wearable",
+  "field": "raw_streams",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "samsung",
+  "name": "Samsung (Galaxy Watch, Health Sensor SDK, Research Stack)",
+  "kind": "wearable",
+  "field": "derived_metrics",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "samsung",
+  "name": "Samsung (Galaxy Watch, Health Sensor SDK, Research Stack)",
+  "kind": "wearable",
+  "field": "sampling_rates",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "samsung",
+  "name": "Samsung (Galaxy Watch, Health Sensor SDK, Research Stack)",
+  "kind": "wearable",
+  "field": "history_depth",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "samsung",
+  "name": "Samsung (Galaxy Watch, Health Sensor SDK, Research Stack)",
+  "kind": "wearable",
+  "field": "export_routes",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "samsung",
+  "name": "Samsung (Galaxy Watch, Health Sensor SDK, Research Stack)",
+  "kind": "wearable",
+  "field": "rate_limits",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "samsung",
+  "name": "Samsung (Galaxy Watch, Health Sensor SDK, Research Stack)",
+  "kind": "wearable",
+  "field": "retention_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "samsung",
+  "name": "Samsung (Galaxy Watch, Health Sensor SDK, Research Stack)",
+  "kind": "wearable",
+  "field": "ai_training_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "samsung",
+  "name": "Samsung (Galaxy Watch, Health Sensor SDK, Research Stack)",
+  "kind": "wearable",
+  "field": "deprecations",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "samsung",
+  "name": "Samsung (Galaxy Watch, Health Sensor SDK, Research Stack)",
+  "kind": "wearable",
+  "field": "baa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "samsung",
+  "name": "Samsung (Galaxy Watch, Health Sensor SDK, Research Stack)",
+  "kind": "wearable",
+  "field": "dpa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "samsung",
+  "name": "Samsung (Galaxy Watch, Health Sensor SDK, Research Stack)",
+  "kind": "wearable",
+  "field": "hipaa_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "samsung",
+  "name": "Samsung (Galaxy Watch, Health Sensor SDK, Research Stack)",
+  "kind": "wearable",
+  "field": "gdpr_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "samsung",
+  "name": "Samsung (Galaxy Watch, Health Sensor SDK, Research Stack)",
+  "kind": "wearable",
+  "field": "iso27001",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "samsung",
+  "name": "Samsung (Galaxy Watch, Health Sensor SDK, Research Stack)",
+  "kind": "wearable",
+  "field": "soc2",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "samsung",
+  "name": "Samsung (Galaxy Watch, Health Sensor SDK, Research Stack)",
+  "kind": "wearable",
+  "field": "fda_clearances",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "samsung",
+  "name": "Samsung (Galaxy Watch, Health Sensor SDK, Research Stack)",
+  "kind": "wearable",
+  "field": "data_residency",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "sensor-bio",
+  "name": "Sensor Bio (formerly Biostrap)",
+  "kind": "wearable",
+  "field": "research_program",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "sensor-bio",
+  "name": "Sensor Bio (formerly Biostrap)",
+  "kind": "wearable",
+  "field": "program_eligibility",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "sensor-bio",
+  "name": "Sensor Bio (formerly Biostrap)",
+  "kind": "wearable",
+  "field": "program_application",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "sensor-bio",
+  "name": "Sensor Bio (formerly Biostrap)",
+  "kind": "wearable",
+  "field": "program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "sensor-bio",
+  "name": "Sensor Bio (formerly Biostrap)",
+  "kind": "wearable",
+  "field": "developer_program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "sensor-bio",
+  "name": "Sensor Bio (formerly Biostrap)",
+  "kind": "wearable",
+  "field": "user_cap",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "sensor-bio",
+  "name": "Sensor Bio (formerly Biostrap)",
+  "kind": "wearable",
+  "field": "academic_vs_commercial",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "sensor-bio",
+  "name": "Sensor Bio (formerly Biostrap)",
+  "kind": "wearable",
+  "field": "device_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "sensor-bio",
+  "name": "Sensor Bio (formerly Biostrap)",
+  "kind": "wearable",
+  "field": "subscription_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "sensor-bio",
+  "name": "Sensor Bio (formerly Biostrap)",
+  "kind": "wearable",
+  "field": "academic_pricing",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "sensor-bio",
+  "name": "Sensor Bio (formerly Biostrap)",
+  "kind": "wearable",
+  "field": "api_platform_fees",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "sensor-bio",
+  "name": "Sensor Bio (formerly Biostrap)",
+  "kind": "wearable",
+  "field": "minimum_commitment",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "sensor-bio",
+  "name": "Sensor Bio (formerly Biostrap)",
+  "kind": "wearable",
+  "field": "quote_required",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "sensor-bio",
+  "name": "Sensor Bio (formerly Biostrap)",
+  "kind": "wearable",
+  "field": "raw_streams",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "sensor-bio",
+  "name": "Sensor Bio (formerly Biostrap)",
+  "kind": "wearable",
+  "field": "derived_metrics",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "sensor-bio",
+  "name": "Sensor Bio (formerly Biostrap)",
+  "kind": "wearable",
+  "field": "sampling_rates",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "sensor-bio",
+  "name": "Sensor Bio (formerly Biostrap)",
+  "kind": "wearable",
+  "field": "history_depth",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "sensor-bio",
+  "name": "Sensor Bio (formerly Biostrap)",
+  "kind": "wearable",
+  "field": "export_routes",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "sensor-bio",
+  "name": "Sensor Bio (formerly Biostrap)",
+  "kind": "wearable",
+  "field": "rate_limits",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "sensor-bio",
+  "name": "Sensor Bio (formerly Biostrap)",
+  "kind": "wearable",
+  "field": "retention_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "sensor-bio",
+  "name": "Sensor Bio (formerly Biostrap)",
+  "kind": "wearable",
+  "field": "ai_training_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "sensor-bio",
+  "name": "Sensor Bio (formerly Biostrap)",
+  "kind": "wearable",
+  "field": "deprecations",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "sensor-bio",
+  "name": "Sensor Bio (formerly Biostrap)",
+  "kind": "wearable",
+  "field": "baa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "sensor-bio",
+  "name": "Sensor Bio (formerly Biostrap)",
+  "kind": "wearable",
+  "field": "dpa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "sensor-bio",
+  "name": "Sensor Bio (formerly Biostrap)",
+  "kind": "wearable",
+  "field": "hipaa_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "sensor-bio",
+  "name": "Sensor Bio (formerly Biostrap)",
+  "kind": "wearable",
+  "field": "gdpr_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "sensor-bio",
+  "name": "Sensor Bio (formerly Biostrap)",
+  "kind": "wearable",
+  "field": "iso27001",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "sensor-bio",
+  "name": "Sensor Bio (formerly Biostrap)",
+  "kind": "wearable",
+  "field": "soc2",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "sensor-bio",
+  "name": "Sensor Bio (formerly Biostrap)",
+  "kind": "wearable",
+  "field": "fda_clearances",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "sensor-bio",
+  "name": "Sensor Bio (formerly Biostrap)",
+  "kind": "wearable",
+  "field": "data_residency",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ultrahuman",
+  "name": "Ultrahuman",
+  "kind": "wearable",
+  "field": "research_program",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ultrahuman",
+  "name": "Ultrahuman",
+  "kind": "wearable",
+  "field": "program_eligibility",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ultrahuman",
+  "name": "Ultrahuman",
+  "kind": "wearable",
+  "field": "program_application",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ultrahuman",
+  "name": "Ultrahuman",
+  "kind": "wearable",
+  "field": "program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ultrahuman",
+  "name": "Ultrahuman",
+  "kind": "wearable",
+  "field": "developer_program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ultrahuman",
+  "name": "Ultrahuman",
+  "kind": "wearable",
+  "field": "user_cap",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ultrahuman",
+  "name": "Ultrahuman",
+  "kind": "wearable",
+  "field": "academic_vs_commercial",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ultrahuman",
+  "name": "Ultrahuman",
+  "kind": "wearable",
+  "field": "device_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ultrahuman",
+  "name": "Ultrahuman",
+  "kind": "wearable",
+  "field": "subscription_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ultrahuman",
+  "name": "Ultrahuman",
+  "kind": "wearable",
+  "field": "academic_pricing",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ultrahuman",
+  "name": "Ultrahuman",
+  "kind": "wearable",
+  "field": "api_platform_fees",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ultrahuman",
+  "name": "Ultrahuman",
+  "kind": "wearable",
+  "field": "minimum_commitment",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ultrahuman",
+  "name": "Ultrahuman",
+  "kind": "wearable",
+  "field": "quote_required",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ultrahuman",
+  "name": "Ultrahuman",
+  "kind": "wearable",
+  "field": "raw_streams",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ultrahuman",
+  "name": "Ultrahuman",
+  "kind": "wearable",
+  "field": "derived_metrics",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ultrahuman",
+  "name": "Ultrahuman",
+  "kind": "wearable",
+  "field": "sampling_rates",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ultrahuman",
+  "name": "Ultrahuman",
+  "kind": "wearable",
+  "field": "history_depth",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ultrahuman",
+  "name": "Ultrahuman",
+  "kind": "wearable",
+  "field": "export_routes",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ultrahuman",
+  "name": "Ultrahuman",
+  "kind": "wearable",
+  "field": "rate_limits",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ultrahuman",
+  "name": "Ultrahuman",
+  "kind": "wearable",
+  "field": "retention_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ultrahuman",
+  "name": "Ultrahuman",
+  "kind": "wearable",
+  "field": "ai_training_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ultrahuman",
+  "name": "Ultrahuman",
+  "kind": "wearable",
+  "field": "deprecations",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ultrahuman",
+  "name": "Ultrahuman",
+  "kind": "wearable",
+  "field": "baa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ultrahuman",
+  "name": "Ultrahuman",
+  "kind": "wearable",
+  "field": "dpa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ultrahuman",
+  "name": "Ultrahuman",
+  "kind": "wearable",
+  "field": "hipaa_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ultrahuman",
+  "name": "Ultrahuman",
+  "kind": "wearable",
+  "field": "gdpr_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ultrahuman",
+  "name": "Ultrahuman",
+  "kind": "wearable",
+  "field": "iso27001",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ultrahuman",
+  "name": "Ultrahuman",
+  "kind": "wearable",
+  "field": "soc2",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ultrahuman",
+  "name": "Ultrahuman",
+  "kind": "wearable",
+  "field": "fda_clearances",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "ultrahuman",
+  "name": "Ultrahuman",
+  "kind": "wearable",
+  "field": "data_residency",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "verily",
+  "name": "Verily (Study Watch)",
+  "kind": "wearable",
+  "field": "research_program",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "verily",
+  "name": "Verily (Study Watch)",
+  "kind": "wearable",
+  "field": "program_eligibility",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "verily",
+  "name": "Verily (Study Watch)",
+  "kind": "wearable",
+  "field": "program_application",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "verily",
+  "name": "Verily (Study Watch)",
+  "kind": "wearable",
+  "field": "program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "verily",
+  "name": "Verily (Study Watch)",
+  "kind": "wearable",
+  "field": "developer_program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "verily",
+  "name": "Verily (Study Watch)",
+  "kind": "wearable",
+  "field": "user_cap",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "verily",
+  "name": "Verily (Study Watch)",
+  "kind": "wearable",
+  "field": "academic_vs_commercial",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "verily",
+  "name": "Verily (Study Watch)",
+  "kind": "wearable",
+  "field": "device_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "verily",
+  "name": "Verily (Study Watch)",
+  "kind": "wearable",
+  "field": "subscription_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "verily",
+  "name": "Verily (Study Watch)",
+  "kind": "wearable",
+  "field": "academic_pricing",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "verily",
+  "name": "Verily (Study Watch)",
+  "kind": "wearable",
+  "field": "api_platform_fees",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "verily",
+  "name": "Verily (Study Watch)",
+  "kind": "wearable",
+  "field": "minimum_commitment",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "verily",
+  "name": "Verily (Study Watch)",
+  "kind": "wearable",
+  "field": "quote_required",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "verily",
+  "name": "Verily (Study Watch)",
+  "kind": "wearable",
+  "field": "raw_streams",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "verily",
+  "name": "Verily (Study Watch)",
+  "kind": "wearable",
+  "field": "derived_metrics",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "verily",
+  "name": "Verily (Study Watch)",
+  "kind": "wearable",
+  "field": "sampling_rates",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "verily",
+  "name": "Verily (Study Watch)",
+  "kind": "wearable",
+  "field": "history_depth",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "verily",
+  "name": "Verily (Study Watch)",
+  "kind": "wearable",
+  "field": "export_routes",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "verily",
+  "name": "Verily (Study Watch)",
+  "kind": "wearable",
+  "field": "rate_limits",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "verily",
+  "name": "Verily (Study Watch)",
+  "kind": "wearable",
+  "field": "retention_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "verily",
+  "name": "Verily (Study Watch)",
+  "kind": "wearable",
+  "field": "ai_training_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "verily",
+  "name": "Verily (Study Watch)",
+  "kind": "wearable",
+  "field": "deprecations",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "verily",
+  "name": "Verily (Study Watch)",
+  "kind": "wearable",
+  "field": "baa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "verily",
+  "name": "Verily (Study Watch)",
+  "kind": "wearable",
+  "field": "dpa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "verily",
+  "name": "Verily (Study Watch)",
+  "kind": "wearable",
+  "field": "hipaa_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "verily",
+  "name": "Verily (Study Watch)",
+  "kind": "wearable",
+  "field": "gdpr_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "verily",
+  "name": "Verily (Study Watch)",
+  "kind": "wearable",
+  "field": "iso27001",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "verily",
+  "name": "Verily (Study Watch)",
+  "kind": "wearable",
+  "field": "soc2",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "verily",
+  "name": "Verily (Study Watch)",
+  "kind": "wearable",
+  "field": "fda_clearances",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "verily",
+  "name": "Verily (Study Watch)",
+  "kind": "wearable",
+  "field": "data_residency",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "whoop",
+  "name": "WHOOP",
+  "kind": "wearable",
+  "field": "research_program",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "whoop",
+  "name": "WHOOP",
+  "kind": "wearable",
+  "field": "program_eligibility",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "whoop",
+  "name": "WHOOP",
+  "kind": "wearable",
+  "field": "program_application",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "whoop",
+  "name": "WHOOP",
+  "kind": "wearable",
+  "field": "program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "whoop",
+  "name": "WHOOP",
+  "kind": "wearable",
+  "field": "developer_program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "whoop",
+  "name": "WHOOP",
+  "kind": "wearable",
+  "field": "user_cap",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "whoop",
+  "name": "WHOOP",
+  "kind": "wearable",
+  "field": "academic_vs_commercial",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "whoop",
+  "name": "WHOOP",
+  "kind": "wearable",
+  "field": "device_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "whoop",
+  "name": "WHOOP",
+  "kind": "wearable",
+  "field": "subscription_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "whoop",
+  "name": "WHOOP",
+  "kind": "wearable",
+  "field": "academic_pricing",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "whoop",
+  "name": "WHOOP",
+  "kind": "wearable",
+  "field": "api_platform_fees",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "whoop",
+  "name": "WHOOP",
+  "kind": "wearable",
+  "field": "minimum_commitment",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "whoop",
+  "name": "WHOOP",
+  "kind": "wearable",
+  "field": "quote_required",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "whoop",
+  "name": "WHOOP",
+  "kind": "wearable",
+  "field": "raw_streams",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "whoop",
+  "name": "WHOOP",
+  "kind": "wearable",
+  "field": "derived_metrics",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "whoop",
+  "name": "WHOOP",
+  "kind": "wearable",
+  "field": "sampling_rates",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "whoop",
+  "name": "WHOOP",
+  "kind": "wearable",
+  "field": "history_depth",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "whoop",
+  "name": "WHOOP",
+  "kind": "wearable",
+  "field": "export_routes",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "whoop",
+  "name": "WHOOP",
+  "kind": "wearable",
+  "field": "rate_limits",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "whoop",
+  "name": "WHOOP",
+  "kind": "wearable",
+  "field": "retention_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "whoop",
+  "name": "WHOOP",
+  "kind": "wearable",
+  "field": "ai_training_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "whoop",
+  "name": "WHOOP",
+  "kind": "wearable",
+  "field": "deprecations",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "whoop",
+  "name": "WHOOP",
+  "kind": "wearable",
+  "field": "baa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "whoop",
+  "name": "WHOOP",
+  "kind": "wearable",
+  "field": "dpa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "whoop",
+  "name": "WHOOP",
+  "kind": "wearable",
+  "field": "hipaa_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "whoop",
+  "name": "WHOOP",
+  "kind": "wearable",
+  "field": "gdpr_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "whoop",
+  "name": "WHOOP",
+  "kind": "wearable",
+  "field": "iso27001",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "whoop",
+  "name": "WHOOP",
+  "kind": "wearable",
+  "field": "soc2",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "whoop",
+  "name": "WHOOP",
+  "kind": "wearable",
+  "field": "fda_clearances",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "whoop",
+  "name": "WHOOP",
+  "kind": "wearable",
+  "field": "data_residency",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "withings",
+  "name": "Withings",
+  "kind": "wearable",
+  "field": "research_program",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "withings",
+  "name": "Withings",
+  "kind": "wearable",
+  "field": "program_eligibility",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "withings",
+  "name": "Withings",
+  "kind": "wearable",
+  "field": "program_application",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "withings",
+  "name": "Withings",
+  "kind": "wearable",
+  "field": "program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "withings",
+  "name": "Withings",
+  "kind": "wearable",
+  "field": "developer_program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "withings",
+  "name": "Withings",
+  "kind": "wearable",
+  "field": "user_cap",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "withings",
+  "name": "Withings",
+  "kind": "wearable",
+  "field": "academic_vs_commercial",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "withings",
+  "name": "Withings",
+  "kind": "wearable",
+  "field": "device_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "withings",
+  "name": "Withings",
+  "kind": "wearable",
+  "field": "subscription_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "withings",
+  "name": "Withings",
+  "kind": "wearable",
+  "field": "academic_pricing",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "withings",
+  "name": "Withings",
+  "kind": "wearable",
+  "field": "api_platform_fees",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "withings",
+  "name": "Withings",
+  "kind": "wearable",
+  "field": "minimum_commitment",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "withings",
+  "name": "Withings",
+  "kind": "wearable",
+  "field": "quote_required",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "withings",
+  "name": "Withings",
+  "kind": "wearable",
+  "field": "raw_streams",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "withings",
+  "name": "Withings",
+  "kind": "wearable",
+  "field": "derived_metrics",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "withings",
+  "name": "Withings",
+  "kind": "wearable",
+  "field": "sampling_rates",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "withings",
+  "name": "Withings",
+  "kind": "wearable",
+  "field": "history_depth",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "withings",
+  "name": "Withings",
+  "kind": "wearable",
+  "field": "export_routes",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "withings",
+  "name": "Withings",
+  "kind": "wearable",
+  "field": "rate_limits",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "withings",
+  "name": "Withings",
+  "kind": "wearable",
+  "field": "retention_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "withings",
+  "name": "Withings",
+  "kind": "wearable",
+  "field": "ai_training_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "withings",
+  "name": "Withings",
+  "kind": "wearable",
+  "field": "deprecations",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "withings",
+  "name": "Withings",
+  "kind": "wearable",
+  "field": "baa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "withings",
+  "name": "Withings",
+  "kind": "wearable",
+  "field": "dpa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "withings",
+  "name": "Withings",
+  "kind": "wearable",
+  "field": "hipaa_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "withings",
+  "name": "Withings",
+  "kind": "wearable",
+  "field": "gdpr_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "withings",
+  "name": "Withings",
+  "kind": "wearable",
+  "field": "iso27001",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "withings",
+  "name": "Withings",
+  "kind": "wearable",
+  "field": "soc2",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "withings",
+  "name": "Withings",
+  "kind": "wearable",
+  "field": "fda_clearances",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "withings",
+  "name": "Withings",
+  "kind": "wearable",
+  "field": "data_residency",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "zepp-amazfit",
+  "name": "Zepp Health (Amazfit)",
+  "kind": "wearable",
+  "field": "research_program",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "zepp-amazfit",
+  "name": "Zepp Health (Amazfit)",
+  "kind": "wearable",
+  "field": "program_eligibility",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "zepp-amazfit",
+  "name": "Zepp Health (Amazfit)",
+  "kind": "wearable",
+  "field": "program_application",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "zepp-amazfit",
+  "name": "Zepp Health (Amazfit)",
+  "kind": "wearable",
+  "field": "program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "zepp-amazfit",
+  "name": "Zepp Health (Amazfit)",
+  "kind": "wearable",
+  "field": "developer_program_status",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "zepp-amazfit",
+  "name": "Zepp Health (Amazfit)",
+  "kind": "wearable",
+  "field": "user_cap",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "zepp-amazfit",
+  "name": "Zepp Health (Amazfit)",
+  "kind": "wearable",
+  "field": "academic_vs_commercial",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "zepp-amazfit",
+  "name": "Zepp Health (Amazfit)",
+  "kind": "wearable",
+  "field": "device_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "zepp-amazfit",
+  "name": "Zepp Health (Amazfit)",
+  "kind": "wearable",
+  "field": "subscription_price",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "zepp-amazfit",
+  "name": "Zepp Health (Amazfit)",
+  "kind": "wearable",
+  "field": "academic_pricing",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "zepp-amazfit",
+  "name": "Zepp Health (Amazfit)",
+  "kind": "wearable",
+  "field": "api_platform_fees",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "zepp-amazfit",
+  "name": "Zepp Health (Amazfit)",
+  "kind": "wearable",
+  "field": "minimum_commitment",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "zepp-amazfit",
+  "name": "Zepp Health (Amazfit)",
+  "kind": "wearable",
+  "field": "quote_required",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "zepp-amazfit",
+  "name": "Zepp Health (Amazfit)",
+  "kind": "wearable",
+  "field": "raw_streams",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "zepp-amazfit",
+  "name": "Zepp Health (Amazfit)",
+  "kind": "wearable",
+  "field": "derived_metrics",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "zepp-amazfit",
+  "name": "Zepp Health (Amazfit)",
+  "kind": "wearable",
+  "field": "sampling_rates",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "zepp-amazfit",
+  "name": "Zepp Health (Amazfit)",
+  "kind": "wearable",
+  "field": "history_depth",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "zepp-amazfit",
+  "name": "Zepp Health (Amazfit)",
+  "kind": "wearable",
+  "field": "export_routes",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "zepp-amazfit",
+  "name": "Zepp Health (Amazfit)",
+  "kind": "wearable",
+  "field": "rate_limits",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "zepp-amazfit",
+  "name": "Zepp Health (Amazfit)",
+  "kind": "wearable",
+  "field": "retention_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "zepp-amazfit",
+  "name": "Zepp Health (Amazfit)",
+  "kind": "wearable",
+  "field": "ai_training_terms",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "zepp-amazfit",
+  "name": "Zepp Health (Amazfit)",
+  "kind": "wearable",
+  "field": "deprecations",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "zepp-amazfit",
+  "name": "Zepp Health (Amazfit)",
+  "kind": "wearable",
+  "field": "baa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "zepp-amazfit",
+  "name": "Zepp Health (Amazfit)",
+  "kind": "wearable",
+  "field": "dpa",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "zepp-amazfit",
+  "name": "Zepp Health (Amazfit)",
+  "kind": "wearable",
+  "field": "hipaa_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "zepp-amazfit",
+  "name": "Zepp Health (Amazfit)",
+  "kind": "wearable",
+  "field": "gdpr_statement",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "zepp-amazfit",
+  "name": "Zepp Health (Amazfit)",
+  "kind": "wearable",
+  "field": "iso27001",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "zepp-amazfit",
+  "name": "Zepp Health (Amazfit)",
+  "kind": "wearable",
+  "field": "soc2",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "zepp-amazfit",
+  "name": "Zepp Health (Amazfit)",
+  "kind": "wearable",
+  "field": "fda_clearances",
+  "status": "unresearched",
+  "sources": []
+ },
+ {
+  "company": "zepp-amazfit",
+  "name": "Zepp Health (Amazfit)",
+  "kind": "wearable",
+  "field": "data_residency",
+  "status": "unresearched",
+  "sources": []
+ }
+]

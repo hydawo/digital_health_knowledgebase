@@ -1,0 +1,73 @@
+name: Vendor fact monitor
+
+# Weekly: fetch every watched page and cited source, check quotes and fingerprints, validate the
+# records, commit a dated report, and open (or comment on) one issue in this repository when
+# something needs re-checking. On every push and pull request: validate and check generated files.
+# See facts/README.md.
+
+on:
+  schedule:
+    - cron: '0 10 * * 1'   # Mondays 10:00 UTC (06:00 US Eastern in summer, 05:00 in winter)
+  workflow_dispatch: {}
+  push:
+    paths: ['facts/**', 'tools/facts/**', '.github/workflows/facts-monitor.yml']
+  pull_request:
+    paths: ['facts/**', 'tools/facts/**']
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: facts-monitor
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    if: github.event_name == 'push' || github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install pyyaml==6.0.2
+      - name: Tests
+        run: python tools/facts/test_facts.py
+      - name: Validate records
+        run: python tools/facts/validate.py
+      - name: Generated files match the records
+        run: python tools/facts/generate.py --check
+
+  weekly:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install pyyaml==6.0.2 && sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
+      - name: Run the weekly check
+        run: python tools/facts/weekly.py > /dev/null
+      - name: Commit the report and monitor state
+        run: |
+          git config user.name "facts-monitor"
+          git config user.email "facts-monitor@users.noreply.github.com"
+          git add facts/_reports facts/_monitor
+          git diff --cached --quiet || git commit -m "Vendor fact check $(date -u +%F)"
+          git pull --rebase --quiet && git push
+      - name: Open or update the re-check issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          f=facts/_reports/latest-issue.md
+          [ -f "$f" ] || { echo "Nothing to act on."; exit 0; }
+          title=$(head -1 "$f"); tail -n +2 "$f" > body.md
+          gh label create facts-monitor --color 1f6f5c --description "Vendor fact re-checks" 2>/dev/null || true
+          open=$(gh issue list --label facts-monitor --state open --json number --jq '.[0].number')
+          if [ -n "$open" ]; then
+            gh issue comment "$open" --body-file body.md
+            gh issue edit "$open" --title "$title"
+          else
+            gh issue create --title "$title" --label facts-monitor --body-file body.md
+          fi
