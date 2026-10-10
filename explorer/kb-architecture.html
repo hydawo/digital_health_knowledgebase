@@ -1,0 +1,304 @@
+<title>Knowledge Base Architecture</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one column, two wide diagrams in their own scroll boxes, a short key under each. */
+:root{
+  --bg:#f5f7f6; --surface:#ffffff; --fg:#17201d; --muted:#5b6964; --line:#b9c6c1;
+  --accent:#1f6f5c; --accent-soft:#dcefe8;
+  --human:#a2552a; --human-soft:#f8e7dc;
+  --agent:#3d5fa8; --agent-soft:#e3eaf8;
+  --review:#7a4aa6; --review-soft:#efe5f7;
+  --src:#6b6f38; --src-soft:#eef0dc;
+  --m1:#2f6db3; --m1-soft:#e2ecf8; --m2:#8a4fb0; --m2-soft:#f0e6f7; --m3:#b4651e; --m3-soft:#f8eadc; --m4:#4d6b2e; --m4-soft:#e8f0dc;
+  --display:"Instrument Serif", Georgia, serif; --body:"Instrument Sans", system-ui, sans-serif; --mono:"JetBrains Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#111816; --surface:#18211e; --fg:#e4ebe8; --muted:#9aaba5; --line:#3a4a45;
+  --accent:#5cc3a6; --accent-soft:#1d3a32;
+  --human:#eda077; --human-soft:#3a271c; --agent:#8fb0ee; --agent-soft:#1c2840;
+  --review:#c9a0ee; --review-soft:#2e2140; --src:#c4c98a; --src-soft:#2c2e1b;
+  --m1:#7fb0ea; --m1-soft:#1b2a3c; --m2:#c79ae6; --m2-soft:#2d2238; --m3:#e6a36a; --m3-soft:#3a2a1c; --m4:#a7c97f; --m4-soft:#25301b;
+  color-scheme:dark }}
+:root[data-theme="dark"]{
+  --bg:#111816; --surface:#18211e; --fg:#e4ebe8; --muted:#9aaba5; --line:#3a4a45;
+  --accent:#5cc3a6; --accent-soft:#1d3a32;
+  --human:#eda077; --human-soft:#3a271c; --agent:#8fb0ee; --agent-soft:#1c2840;
+  --review:#c9a0ee; --review-soft:#2e2140; --src:#c4c98a; --src-soft:#2c2e1b;
+  --m1:#7fb0ea; --m1-soft:#1b2a3c; --m2:#c79ae6; --m2-soft:#2d2238; --m3:#e6a36a; --m3-soft:#3a2a1c; --m4:#a7c97f; --m4-soft:#25301b;
+  color-scheme:dark }
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.55;margin:0}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:20px;padding-block:40px 64px;display:grid;gap:52px}
+h1,h2{font-family:var(--display);font-weight:400;text-wrap:balance;margin:0;line-height:1.1}
+h1{font-size:clamp(2.2rem,5vw,3.2rem)}
+h2{font-size:clamp(1.6rem,3.4vw,2.1rem)}
+p{margin:0;max-width:68ch}
+.eyebrow{font-size:.74rem;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);font-weight:600}
+section{display:grid;gap:16px}
+.lede{font-size:1.08rem}
+.muted{color:var(--muted)}
+code{font-family:var(--mono);font-size:.84em}
+.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+.scroll svg{display:block;min-width:900px;width:100%;height:auto}
+svg text{font-family:var(--body);fill:var(--fg)}
+svg .t{font-size:15px;font-weight:600}
+svg .s{font-size:12px;fill:var(--muted)}
+svg .x{font-size:11px;fill:var(--muted)}
+svg .m{font-family:var(--mono);font-size:11.5px;fill:var(--fg)}
+svg .hd{font-size:11.5px;font-weight:600;letter-spacing:.08em;fill:var(--muted)}
+svg .lbl{font-size:11.5px;fill:var(--muted);font-style:italic}
+svg .human{fill:var(--human-soft);stroke:var(--human);stroke-width:1.5}
+svg .agent{fill:var(--agent-soft);stroke:var(--agent);stroke-width:1.5}
+svg .coord{fill:var(--accent-soft);stroke:var(--accent);stroke-width:2}
+svg .review{fill:var(--review-soft);stroke:var(--review);stroke-width:1.5}
+svg .src{fill:var(--src-soft);stroke:var(--src);stroke-width:1.2}
+svg .kb{fill:var(--surface);stroke:var(--fg);stroke-width:1.8}
+svg .out{fill:var(--surface);stroke:var(--line);stroke-width:1.2}
+svg .m1{fill:var(--m1-soft);stroke:var(--m1);stroke-width:1.5}
+svg .m2{fill:var(--m2-soft);stroke:var(--m2);stroke-width:1.5}
+svg .m3{fill:var(--m3-soft);stroke:var(--m3);stroke-width:1.5}
+svg .m4{fill:var(--m4-soft);stroke:var(--m4);stroke-width:1.5}
+svg .w{fill:none;stroke:var(--line);stroke-width:1.8}
+svg .wa{fill:none;stroke:var(--accent);stroke-width:2}
+svg .wh{fill:none;stroke:var(--human);stroke-width:1.8}
+svg .wr{fill:none;stroke:var(--review);stroke-width:1.8;stroke-dasharray:6 4}
+svg .wg{fill:none;stroke:var(--agent);stroke-width:1.8}
+svg .ah{fill:var(--line)} svg .aa{fill:var(--accent)} svg .ahu{fill:var(--human)} svg .ar{fill:var(--review)} svg .ag{fill:var(--agent)}
+.key{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:.88rem;color:var(--muted)}
+.key span{display:inline-flex;align-items:center;gap:7px}
+.sw{width:14px;height:14px;border-radius:4px;display:inline-block;border:1.5px solid}
+.notes{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
+.note{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:grid;gap:6px;align-content:start;min-width:0;font-size:.93rem}
+.note b{font-size:.98rem}
+</style>
+
+<div class="wrap">
+
+<header style="display:grid;gap:12px">
+  <div class="eyebrow">digital_health_knowledgebase · 10 October 2026</div>
+  <h1>Knowledge Base Architecture</h1>
+  <p class="lede">How the agents divide the work, and how the library itself is laid out. The library is a set of plain text files and PDFs in one public GitHub repository. There is no database server. Every change is a commit, so the full history of every claim can be traced.</p>
+</header>
+
+<section>
+  <div class="eyebrow">Part 1</div>
+  <h2>🤖 How the agents work together</h2>
+  <p class="muted">Read top to bottom. Hassan sets the questions. The coordinator hands out the work and checks it. Nothing reaches the library without a check, and the reviewer's findings come back to Hassan before anything changes.</p>
+  <div class="scroll">
+  <svg viewBox="0 0 1000 730" role="img" aria-label="Agent workflow diagram">
+    <defs>
+      <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="ah"/></marker>
+      <marker id="aa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="aa"/></marker>
+      <marker id="ahu" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="ahu"/></marker>
+      <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="ar"/></marker>
+      <marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="ag"/></marker>
+    </defs>
+
+    <!-- Hassan -->
+    <rect x="390" y="18" width="220" height="74" rx="10" class="human"/>
+    <text x="500" y="46" text-anchor="middle" class="t">👤 Hassan</text>
+    <text x="500" y="66" text-anchor="middle" class="s">Sets questions and standards</text>
+    <text x="500" y="82" text-anchor="middle" class="s">Makes the scope decisions</text>
+
+    <!-- Coordinator -->
+    <rect x="370" y="140" width="260" height="84" rx="10" class="coord"/>
+    <text x="500" y="168" text-anchor="middle" class="t">🧑‍💼 Coordinator</text>
+    <text x="500" y="188" text-anchor="middle" class="s">Hands out work, one set of files each</text>
+    <text x="500" y="204" text-anchor="middle" class="s">Checks reports, merges, logs changes</text>
+    <path d="M500 92 L500 138" class="wh" marker-end="url(#ahu)"/>
+    <text x="510" y="120" class="lbl">tasks and decisions</text>
+
+    <!-- Scout -->
+    <rect x="30" y="140" width="250" height="96" rx="10" class="agent"/>
+    <text x="155" y="166" text-anchor="middle" class="t">🗓️ Monday scout</text>
+    <text x="155" y="186" text-anchor="middle" class="s">Cloud routine, every Monday</text>
+    <text x="155" y="202" text-anchor="middle" class="s">Searches PubMed and arXiv</text>
+    <text x="155" y="218" text-anchor="middle" class="s">for new papers since last run</text>
+
+    <!-- Reviewer -->
+    <rect x="720" y="140" width="250" height="96" rx="10" class="review"/>
+    <text x="845" y="166" text-anchor="middle" class="t">🧐 Independent reviewer</text>
+    <text x="845" y="186" text-anchor="middle" class="s">Fresh start, no earlier conclusions</text>
+    <text x="845" y="202" text-anchor="middle" class="s">Fact-checks a random sample</text>
+    <text x="845" y="218" text-anchor="middle" class="s">Writes a report, edits nothing</text>
+
+    <!-- Specialists -->
+    <rect x="30" y="294" width="215" height="92" rx="10" class="agent"/>
+    <text x="137" y="320" text-anchor="middle" class="t">🔎 Device detective</text>
+    <text x="137" y="340" text-anchor="middle" class="s">Wearable makers' docs and code</text>
+    <text x="137" y="356" text-anchor="middle" class="x">owns the wearable profiles</text>
+
+    <rect x="265" y="294" width="215" height="92" rx="10" class="agent"/>
+    <text x="372" y="320" text-anchor="middle" class="t">📖 Literature reader</text>
+    <text x="372" y="340" text-anchor="middle" class="s">Accuracy studies and who paid</text>
+    <text x="372" y="356" text-anchor="middle" class="x">owns the evidence files and PDFs</text>
+
+    <rect x="520" y="294" width="215" height="92" rx="10" class="agent"/>
+    <text x="627" y="320" text-anchor="middle" class="t">📱 Platform inspector</text>
+    <text x="627" y="340" text-anchor="middle" class="s">Phone apps' code and manuals</text>
+    <text x="627" y="356" text-anchor="middle" class="x">owns the platform profiles</text>
+
+    <rect x="755" y="294" width="215" height="92" rx="10" class="agent"/>
+    <text x="862" y="320" text-anchor="middle" class="t">⚙️ Systems analyst</text>
+    <text x="862" y="340" text-anchor="middle" class="s">Android and iPhone rules</text>
+    <text x="862" y="356" text-anchor="middle" class="x">reads full study papers</text>
+
+    <!-- coordinator to specialists -->
+    <path d="M440 224 C440 260 137 256 137 292" class="wa" marker-end="url(#aa)"/>
+    <path d="M470 224 C470 260 372 256 372 292" class="wa" marker-end="url(#aa)"/>
+    <path d="M530 224 C530 260 627 256 627 292" class="wa" marker-end="url(#aa)"/>
+    <path d="M560 224 C560 260 862 256 862 292" class="wa" marker-end="url(#aa)"/>
+    <text x="34" y="406" class="lbl">specialists run in parallel; each sends a report back to the coordinator</text>
+
+    <!-- sources band -->
+    <rect x="30" y="418" width="940" height="44" rx="8" class="src"/>
+    <text x="500" y="445" text-anchor="middle" class="s">🌐 Primary sources: vendor and developer docs · GitHub · PubMed · PMC · Europe PMC · Crossref · FDA · arXiv</text>
+    <path d="M137 416 L137 388" class="w" marker-end="url(#a)"/>
+    <path d="M372 416 L372 388" class="w" marker-end="url(#a)"/>
+    <path d="M627 416 L627 388" class="w" marker-end="url(#a)"/>
+    <path d="M862 416 L862 388" class="w" marker-end="url(#a)"/>
+
+    <!-- Knowledge base -->
+    <rect x="290" y="512" width="420" height="88" rx="12" class="kb"/>
+    <text x="500" y="542" text-anchor="middle" class="t">📚 The knowledge base</text>
+    <text x="500" y="562" text-anchor="middle" class="s">Four modules, shared files and 208 PDFs</text>
+    <text x="500" y="580" text-anchor="middle" class="s">in one public GitHub repository (Part 2)</text>
+
+    <!-- coordinator to KB -->
+    <path d="M500 224 L500 510" class="wa" marker-end="url(#aa)"/>
+    <rect x="508" y="474" width="196" height="30" rx="6" fill="var(--bg)" stroke="none"/>
+    <text x="514" y="494" class="lbl">writes only after checks</text>
+
+    <!-- scout to KB -->
+    <path d="M30 188 L14 188 L14 556 L288 556" class="wg" marker-end="url(#ag)"/>
+    <text x="22" y="492" class="lbl">files papers,</text>
+    <text x="22" y="508" class="lbl">shortlists studies</text>
+
+    <!-- KB to reviewer and reviewer to Hassan -->
+    <path d="M712 556 L986 556 L986 188 L972 188" class="wr" marker-end="url(#ar)"/>
+    <text x="830" y="548" class="lbl">reads everything</text>
+    <path d="M845 140 L845 55 L612 55" class="wr" marker-end="url(#ar)"/>
+    <text x="640" y="47" class="lbl">report: findings and proposed fixes</text>
+
+    <!-- outputs -->
+    <text x="500" y="640" text-anchor="middle" class="hd">BUILT FROM THE LIBRARY BY A SCRIPT, THEN PUBLISHED</text>
+    <path d="M500 600 L500 624" class="w"/>
+    <rect x="150" y="654" width="220" height="56" rx="8" class="out"/>
+    <text x="260" y="678" text-anchor="middle" class="t">🗂️ Explorer</text>
+    <text x="260" y="697" text-anchor="middle" class="x">every write-up, with filters</text>
+    <rect x="390" y="654" width="220" height="56" rx="8" class="out"/>
+    <text x="500" y="678" text-anchor="middle" class="t">🗺️ Wearable Data Atlas</text>
+    <text x="500" y="697" text-anchor="middle" class="x">wearables side by side</text>
+    <rect x="630" y="654" width="220" height="56" rx="8" class="out"/>
+    <text x="740" y="678" text-anchor="middle" class="t">🧭 Map and this page</text>
+    <text x="740" y="697" text-anchor="middle" class="x">how it all fits together</text>
+  </svg>
+  </div>
+  <div class="key">
+    <span><i class="sw" style="background:var(--human-soft);border-color:var(--human)"></i>Person</span>
+    <span><i class="sw" style="background:var(--accent-soft);border-color:var(--accent)"></i>Coordinator</span>
+    <span><i class="sw" style="background:var(--agent-soft);border-color:var(--agent)"></i>Research agents</span>
+    <span><i class="sw" style="background:var(--review-soft);border-color:var(--review)"></i>Independent review (dashed)</span>
+    <span><i class="sw" style="background:var(--src-soft);border-color:var(--src)"></i>Outside sources</span>
+  </div>
+  <div class="notes">
+    <div class="note"><b>Why each agent owns its own files</b><span>Agents run at the same time. Giving each one a separate set of files means two agents never overwrite each other's edits.</span></div>
+    <div class="note"><b>Why the scout only shortlists studies</b><span>A paper's abstract is enough to file it under a device. What happened in a study has to be read from the full paper, so a person-led session writes those up.</span></div>
+    <div class="note"><b>Why the reviewer can't edit</b><span>Its findings go to Hassan first. A correction only enters the library after someone has looked at it.</span></div>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">Part 2</div>
+  <h2>📚 How the library is laid out</h2>
+  <p class="muted">Four modules sit side by side. Each one has its own write-ups, a comparison table, a source list and a folder of papers. A shared folder holds what applies to all four. A script turns the whole thing into the web pages.</p>
+  <div class="scroll">
+  <svg viewBox="0 0 1000 690" role="img" aria-label="Repository architecture diagram">
+    <defs>
+      <marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="ah"/></marker>
+      <marker id="ba" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="aa"/></marker>
+    </defs>
+    <rect x="300" y="14" width="400" height="56" rx="10" class="kb"/>
+    <text x="500" y="38" text-anchor="middle" class="t">📚 GitHub repository</text>
+    <text x="500" y="58" text-anchor="middle" class="m">hydawo/digital_health_knowledgebase</text>
+    <path d="M500 70 L500 86 M128 86 L872 86 M128 86 L128 100 M376 86 L376 100 M624 86 L624 100 M872 86 L872 100" class="w"/>
+
+    <!-- M1 -->
+    <rect x="20" y="100" width="216" height="316" rx="10" class="m1"/>
+    <text x="36" y="126" class="t">⌚ 1 · Wearables</text>
+    <text x="36" y="144" class="x">What a device lets you collect</text>
+    <text x="36" y="174" class="m">profiles/</text><text x="36" y="190" class="s">12 devices + 2 overviews</text>
+    <text x="36" y="216" class="m">comparison-matrix.md</text>
+    <text x="36" y="242" class="m">validation-evidence.md</text><text x="36" y="258" class="s">accuracy studies, in depth</text>
+    <text x="36" y="284" class="m">research-library-*.md</text><text x="36" y="300" class="s">papers sorted by who funded them</text>
+    <text x="36" y="326" class="m">literature/</text><text x="36" y="342" class="s">67 PDFs</text>
+    <text x="36" y="368" class="m">*-index.json</text><text x="36" y="384" class="s">list of papers already seen</text>
+    <text x="36" y="406" class="m">sources.md</text>
+
+    <!-- M2 -->
+    <rect x="268" y="100" width="216" height="316" rx="10" class="m2"/>
+    <text x="284" y="126" class="t">📱 2 · Phone platforms</text>
+    <text x="284" y="144" class="x">What an app collects, by phone type</text>
+    <text x="284" y="174" class="m">profiles/</text><text x="284" y="190" class="s">10 platforms + legacy list</text>
+    <text x="284" y="216" class="m">comparison-matrix.md</text>
+    <text x="284" y="242" class="m">literature-library.md</text><text x="284" y="258" class="s">platform papers</text>
+    <text x="284" y="284" class="m">literature/</text><text x="284" y="300" class="s">54 PDFs, one folder per platform</text>
+    <text x="284" y="326" class="m">*-index.json</text><text x="284" y="342" class="s">list of papers already seen</text>
+    <text x="284" y="368" class="m">sources.md</text>
+
+    <!-- M3 -->
+    <rect x="516" y="100" width="216" height="316" rx="10" class="m3"/>
+    <text x="532" y="126" class="t">🏥 3 · Real studies</text>
+    <text x="532" y="144" class="x">What happened in actual deployments</text>
+    <text x="532" y="174" class="m">profiles/</text><text x="532" y="190" class="s">65 studies, from full papers</text>
+    <text x="532" y="216" class="m">feasibility-matrix.md</text><text x="532" y="232" class="s">one row per study</text>
+    <text x="532" y="258" class="m">_scan-queue.md</text><text x="532" y="274" class="s">18 candidates to read</text>
+    <text x="532" y="300" class="m">literature-index.json</text><text x="532" y="316" class="s">seen and rejected, with reasons</text>
+    <text x="532" y="342" class="m">literature/</text><text x="532" y="358" class="s">39 PDFs</text>
+    <text x="532" y="384" class="m">sources.md</text>
+
+    <!-- M4 -->
+    <rect x="764" y="100" width="216" height="316" rx="10" class="m4"/>
+    <text x="780" y="126" class="t">📑 4 · Methods</text>
+    <text x="780" y="144" class="x">How this research should be done</text>
+    <text x="780" y="174" class="m">literature-library.md</text><text x="780" y="190" class="s">51 reviews and methods papers</text>
+    <text x="780" y="216" class="m">literature/</text><text x="780" y="232" class="s">48 PDFs</text>
+    <text x="780" y="258" class="m">*-index.json</text><text x="780" y="274" class="s">list of papers already seen</text>
+    <text x="780" y="310" class="x">A catalogue so far.</text>
+    <text x="780" y="326" class="x">No write-ups yet.</text>
+
+    <!-- cross links M3 -> M1/M2 -->
+    <path d="M560 416 C560 448 380 448 380 418" class="wa" marker-end="url(#ba)"/>
+    <path d="M540 416 C540 466 128 466 128 418" class="wa" marker-end="url(#ba)"/>
+    <text x="620" y="452" class="lbl">each study links back to the devices and platforms it used</text>
+
+    <!-- shared -->
+    <rect x="20" y="490" width="960" height="92" rx="10" class="out"/>
+    <text x="36" y="514" class="t">🗃️ shared/ · used by all four modules</text>
+    <text x="36" y="538" class="m">unresolved-questions.md</text><text x="36" y="554" class="s">83 open questions, grouped by who can close them</text>
+    <text x="370" y="538" class="m">research-log.md</text><text x="370" y="554" class="s">what each session and scan changed</text>
+    <text x="620" y="538" class="m">weekly-literature-scan.md</text><text x="620" y="554" class="s">the scout's instructions</text>
+    <text x="36" y="574" class="x">Also a glossary, the format rules, the Android and iPhone rules, and the independent reviews.</text>
+
+    <!-- explorer -->
+    <rect x="20" y="606" width="960" height="70" rx="10" class="coord"/>
+    <text x="36" y="630" class="t">🛠️ explorer/</text>
+    <text x="150" y="630" class="m">build.py</text>
+    <text x="220" y="630" class="s">reads every module and rebuilds the web pages</text>
+    <text x="36" y="656" class="m">kb-explorer.html</text><text x="166" y="656" class="s">→ Explorer</text>
+    <text x="270" y="656" class="m">kb-map.html</text><text x="365" y="656" class="s">→ Map</text>
+    <text x="440" y="656" class="m">tags.json</text><text x="515" y="656" class="s">hand-kept filter tags</text>
+    <text x="680" y="656" class="m">kb-architecture.html</text><text x="840" y="656" class="s">→ this page</text>
+    <path d="M500 582 L500 604" class="w" marker-end="url(#b)"/>
+  </svg>
+  </div>
+  <div class="notes">
+    <div class="note"><b>Write-ups</b><span>One file per device, platform or study. Every one uses the same headings in the same order, so any two can be compared line by line.</span></div>
+    <div class="note"><b>Comparison tables</b><span>The same facts across every device or platform at once, so a reader can scan one column, like cost or raw data access.</span></div>
+    <div class="note"><b>Paper ledgers</b><span>Machine-readable lists of every paper already seen or rejected. They stop the Monday scout from adding the same paper twice.</span></div>
+    <div class="note"><b>Confidence labels</b><span>Claims are marked Verified, Corroborated, Reported or Unclear, depending on how strong the source is.</span></div>
+  </div>
+</section>
+
+</div>
