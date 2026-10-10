@@ -1,7 +1,9 @@
-# Module 1 — Wearables
+# Module 1, Wearables
 
-**Status:** initial research phase complete; **second deep-research pass completed 2026-08-21** (papers read in full, documentation gaps closed, several first-pass findings corrected).
-**Last verified:** 2026-08-21.
+**Status:** initial research phase complete (2026-08-21); every device profile corrected and
+re-verified against primary sources after the independent review of 2026-10-10 (commit c774edb);
+comparison matrix, atlas and this README **rebuilt 2026-10-10 from the profiles**.
+**Last verified:** 2026-10-10.
 **Central question:** *What can researchers actually collect, access, export, and use from each
 wearable ecosystem, under what conditions, and at what cost?*
 
@@ -11,12 +13,13 @@ wearable ecosystem, under what conditions, and at what cost?*
 
 | File | Purpose |
 |---|---|
-| `comparison-matrix.md` | Ten cross-platform tables — access model, sensors, **raw data availability**, API characteristics, study operations, participant burden, cost, compliance, evidence, differentiators |
-| `validation-evidence.md` | **Full extraction from the primary validation literature**, read in full — per-stage tables, ICCs, biases, conflicts of interest, and what the evidence base does not contain |
-| `research-library-wearables.md` | ~90-paper sponsorship/COI bibliography (Tier A/B/C) for Oura, WHOOP, and Apple Watch |
-| `literature-library.md` | OA-status index and local PDF store for every individually-named paper in `research-library-wearables.md` — 43 of 54 papers obtained as verified PDFs under `literature/<device-slug>/` |
+| `comparison-matrix.md` | Thirteen cross-platform tables, rebuilt 2026-10-10 from the profiles: access model, sensors, **raw data availability**, API characteristics, study operations, participant burden, cost, compliance, evidence, differentiators and limitations, study-operations platforms, choosing by research question, and **research programs and academic access** (Table 13). Opens with a list of dated items |
+| `wearable-data-atlas.html` | Published HTML view of Tables 1 to 12 of the matrix; resync whenever the matrix changes |
+| `validation-evidence.md` | Full extraction from the primary validation literature: per-stage tables, ICCs, biases, conflicts of interest, and what the evidence base does not contain |
+| `research-library-wearables.md` | ~90-paper sponsorship and COI bibliography (Tier A/B/C) for Oura, WHOOP and Apple Watch |
+| `literature-library.md` | OA-status index and local PDF store for every individually named paper in `research-library-wearables.md`; 67 PDFs stored under `literature/<device-slug>/` as of 2026-10-10 |
 | `sources.md` | Consolidated source register with type, retrieval method, date accessed, and what each source establishes |
-| `profiles/` | One structured profile per ecosystem |
+| `profiles/` | One structured profile per ecosystem; **the source of truth for every summary file** |
 | `../shared/terminology.md` | Definitions used consistently across profiles |
 | `../shared/research-log.md` | Session log, decisions, and what could not be retrieved |
 | `../shared/unresolved-questions.md` | Questions requiring direct vendor contact, with contacts |
@@ -24,132 +27,174 @@ wearable ecosystem, under what conditions, and at what cost?*
 ### Profiles
 
 **Consumer ecosystems**
-- [`apple-watch-healthkit.md`](profiles/apple-watch-healthkit.md) — Apple Watch, HealthKit, SensorKit, ResearchKit
-- [`fitbit-google.md`](profiles/fitbit-google.md) — Fitbit, Google Health API, Health Connect, Fitabase, *All of Us*
-- [`garmin.md`](profiles/garmin.md) — Health API, Health SDK (Standard and Companion)
-- [`oura.md`](profiles/oura.md) — Oura Ring 4, API v2
-- [`whoop.md`](profiles/whoop.md) — WHOOP 5.0 / MG, API v2, WHOOP Unite
-- [`samsung.md`](profiles/samsung.md) — Galaxy Watch/Ring, Privileged Health SDK, Research Stack
-- [`polar.md`](profiles/polar.md) — H10, Verity Sense, open BLE SDK, AccessLink
-- [`withings.md`](profiles/withings.md) — ScanWatch line, Advanced Research API, Health Solutions
+- [`apple-watch-healthkit.md`](profiles/apple-watch-healthkit.md): Apple Watch, HealthKit, SensorKit (incl. PPG and ECG samples, iOS 17.4+), ResearchKit
+- [`fitbit-google.md`](profiles/fitbit-google.md): Fitbit, Google Health API, Health Research Policy, Health Connect, Fitabase, *All of Us*
+- [`garmin.md`](profiles/garmin.md): Health API, Health SDK (Standard and Companion), paused developer programme
+- [`oura.md`](profiles/oura.md): Oura Ring Gen3, 4 and 5, API v2, API and MCP Agreement, Oura for Organizations research offering
+- [`whoop.md`](profiles/whoop.md): WHOOP 4.0, 5.0 / MG, API v2, member tiers, API Terms of Use, WHOOP Unite
+- [`samsung.md`](profiles/samsung.md): Galaxy Watch and Ring, Samsung Health Sensor SDK (formerly Privileged Health SDK), Research Stack
+- [`polar.md`](profiles/polar.md): H10, Verity Sense, Polar 360, open BLE SDK, AccessLink
+- [`withings.md`](profiles/withings.md): ScanWatch line, API plans and Withings+, Advanced Research API, Health Solutions
 
 **Open / programmable sensor platforms**
-- [`polar.md`](profiles/polar.md) — see above; H10 and Verity Sense are research instruments
-- [`movesense.md`](profiles/movesense.md) — Movesense MD / Flash / HR2, custom firmware, 512 Hz ECG, 1.6 kHz IMU
+- [`polar.md`](profiles/polar.md): see above; H10 and Verity Sense are research instruments
+- [`movesense.md`](profiles/movesense.md): Movesense MD / Flash / HR2, custom firmware, 512 Hz ECG, 1.6 kHz IMU, Academic Program
 
 **Research- and medical-grade**
-- [`empatica.md`](profiles/empatica.md) — EmbracePlus, Care Portal
-- [`ametris-actigraph.md`](profiles/ametris-actigraph.md) — ActiGraph → Ametris → Signant Health
-- [`axivity-geneactiv.md`](profiles/axivity-geneactiv.md) — AX3/AX6, GENEActiv, open toolchain
+- [`empatica.md`](profiles/empatica.md): EmbracePlus, EmbraceMini, Care Portal, academic plan
+- [`ametris-actigraph.md`](profiles/ametris-actigraph.md): ActiGraph, now Ametris, now part of Signant Health; CentrePoint API
+- [`axivity-geneactiv.md`](profiles/axivity-geneactiv.md): AX3/AX6, GENEActiv, open toolchain
 
 **Emerging and specialist**
-- [`emerging-platforms.md`](profiles/emerging-platforms.md) — Ultrahuman UltraSignal, Biostrap, Verily Study Watch (incl. the March 2026 Verily–Samsung collaboration)
+- [`emerging-platforms.md`](profiles/emerging-platforms.md): Ultrahuman UltraSignal and Partner API, Biostrap (now Sensor Bio), Verily Study Watch and the March 2026 Verily and Samsung collaboration, plus a data-access check of RingConn, Circular and Amazfit / Zepp
 
 **Cross-cutting**
-- [`data-intermediaries.md`](profiles/data-intermediaries.md) — **Labfront** (published pricing), Fitabase, unified APIs (Terra, Validic, Thryve, Rook, Sahha, Open Wearables), open datasets
+- [`data-intermediaries.md`](profiles/data-intermediaries.md): Labfront and Fitrockr (published pricing), Fitabase, unified APIs (Terra, Validic, Thryve, Rook, Sahha, Open Wearables), open datasets
+
+Coverage: 12 device profiles (Apple, Fitbit/Google, Garmin, Oura, WHOOP, Samsung, Polar,
+Withings, Movesense, Empatica, Ametris, and Axivity with GENEActiv in one file); short entries for
+Ultrahuman, Biostrap/Sensor Bio and Verily, plus a data-access check of RingConn, Circular and
+Amazfit / Zepp; and a cross-cutting file on intermediaries and open datasets.
 
 ---
 
-## What changed in the second pass
+## What changed on 2026-10-10
 
-Four first-pass conclusions were wrong or materially incomplete. They are corrected in place, and
-named here because a knowledge base that quietly fixes its own errors is not auditable.
+The independent review (`../shared/reviews/2026-10-10-independent-review.md`) found that the
+comparison matrix had last been rebuilt on 2026-08-24, that only about half its sampled cells could
+be confirmed, and that the atlas, this README and the explorer disagreed with the profiles. The
+profiles were corrected first; the summaries were then rebuilt from them. The changes that matter
+most for a study:
 
-| First pass said | Corrected |
+| Earlier summary said | Now |
 |---|---|
-| "WHOOP had the best independently measured deep-sleep sensitivity" — presented as a headline strength | WHOOP had the best deep-sleep **accuracy** (69.6%) but only the **fourth-best overall agreement (κ=0.37)** of six devices. Apple Watch led at κ=0.53. Quoting one without the other is misleading |
-| Robbins 2024 flagged only as "vendor-promoted" | **The study was funded by Oura, and the lead author sits on Oura's Medical Advisory Board and takes consulting fees from Oura.** A declared conflict, not just promotion |
-| Garmin BBI framed as SDK-only, requiring a custom app | **Enhanced BBI is available through the cloud Health API and through Fitabase/Labfront via ordinary Garmin Connect OAuth** — no custom app. But it is **nocturnal only** |
-| Empatica, Polar sampling rates and several prices listed as "non-public" or "unclear" | **Empatica's academic pricing is published** ($1,749.60 / device / 3 yr). **Polar's exact per-stream rates are published** in the SDK repo. **Labfront publishes full pricing.** These were retrieval failures, not vendor secrecy |
-
-Also added: **Movesense**, **Ultrahuman**, **Biostrap**, **Verily**, **Labfront** — five platforms
-the first pass missed, three of which expose raw signal.
+| Fitbit legacy API "turns down in September 2026"; Google Health API open to new integrations | Legacy support ended 30 Sep 2026 and the API is **turned off 30 Oct 2026**; Google is **not onboarding new Google Health API projects** (2026-10-10) |
+| Garmin confirms applications within two business days | **New access requests paused since spring 2026** (Corroborated); Garmin's FAQ wording is stale |
+| Empatica is the only raw EDA source | **Samsung Galaxy Watch8 and later expose raw EDA at 1 Hz** through the Health Sensor SDK; Verily also records EDA |
+| Samsung raw PPG rate undocumented | PPG 25 Hz continuous and 100 Hz on demand; ECG 500 Hz; accelerometer 25 Hz |
+| Apple: no raw PPG or accelerometer | SensorKit exposes PPG and ECG samples (iOS 17.4+) and accelerometer (iOS 14+) to Apple-approved studies; HealthKit still does not |
+| WHOOP "MG ECG / BP claimed" | ECG feature FDA-cleared (K243236); Blood Pressure Insights not cleared (warning letter 2025, close-out 2026) |
+| WHOOP terms bar permanent copies | They also bar AI/ML training, and new apps start at a 10-member Sandbox tier |
+| Oura: no research console; rate limit 5,000 per 5 minutes | Oura for Organizations has a research offering; current docs publish no numeric rate limits; the API Agreement limits retention and bars AI training |
+| Withings compliance Unclear; API reference behind login | Vendor states HIPAA, GDPR, HDS and ISO 27001:2017; API reference is public; free plan needs **Withings+ from 12 Oct 2026** for new accounts |
+| Labfront is the only research platform publishing prices | Fitrockr also publishes prices, and so do Terra and Thryve |
+| Axivity accelerometer to 100 Hz; price by quote | AX3 12.5 to 3,200 Hz; AX3 from £139 and AX6 from £199, ex VAT, sold online |
+| Movesense has no independent validation; price not public | Four small independent lab validations exist; MD €349 ex VAT; free sensors through an Academic Program |
+| Enhanced BBI is nocturnal only | Garmin's 2023 note says it is measured during sleep, and the API route (Fitabase) captures it during sleep, but the Health SDK lists it for real-time streaming |
+| Dial 2025: WHOOP worst of five on resting HR and HRV | WHOOP was behind both Oura generations but ahead of the Polar watch (and Garmin on HRV) |
 
 ---
 
 ## The findings that should change how you plan a study
 
-### 1. Sensor presence is nearly uninformative. Data access is everything — and more platforms give it than the first pass found.
+### 1. Sensor presence is nearly uninformative. Data access is what matters.
 
-**Raw signal available:** Polar (ECG 130 Hz, PPG 28–176 Hz at 22-bit, IMU to 416 Hz — **for ~$95,
-open SDK, no approval**), Movesense (ECG to **512 Hz**, IMU to **1.6 kHz**, custom firmware),
-Samsung (raw PPG incl. IR/Red, raw ECG, IBI, 25 Hz accel), Garmin (raw accel; BBI with per-beat
-confidence), Withings (raw accel + 3-wavelength PPG, heavily conditioned), Empatica (**the only raw
-EDA**), Ultrahuman (**the only ring with raw PPG**), Biostrap, Verily, Ametris, Axivity/GENEActiv.
+**Raw signal documented:** Polar (H10 ECG 130 Hz; Verity Sense PPG to 176 Hz at 22-bit; IMU to
+416 Hz; open SDK, no approval), Movesense (ECG to 512 Hz, IMU to 1.6 kHz, custom firmware),
+Samsung (PPG green, IR and red, ECG 500 Hz, IBI, accelerometer 25 Hz, **EDA 1 Hz on Watch8**),
+Axivity (accelerometry to 3,200 Hz), Ametris (accelerometry to 256 Hz; LEAP PPG under contract),
+Withings (ScanWatch accelerometry and three-wavelength PPG at about 24.8 Hz, by contract),
+Empatica (raw EDA, PPG and accelerometry; most rates unpublished), Apple through SensorKit only,
+Garmin through the enterprise Health SDK only. Ultrahuman (a ring PPG "data stream", raw format
+undocumented), Biostrap/Sensor Bio and Verily rest on vendor or Corroborated statements.
 
-**No raw signal at any price:** Apple (except discrete ECG voltage), Fitbit/Google, **Oura**,
-**WHOOP**.
+**No raw signal through any documented route:** Fitbit/Google (except per-reading ECG voltage in
+the Google Health API), **Oura**, **WHOOP**.
 
-**The highest sampling rates in this module come from the cheapest, most open vendors.** Polar and
-Movesense beat every major consumer platform *and* every clinical-trial vendor on raw specification.
+The highest documented raw rates come from open, modestly priced sensors (Axivity, Movesense,
+Polar), not from the clinical-trial vendors; Samsung is the consumer exception. See
+`comparison-matrix.md` Table 3.
 
-### 2. Deep sleep and REM minutes are not measurable with consumer wearables. Full stop.
+### 2. Deep sleep and REM minutes are not measurable with consumer wearables.
 
-This is the finding most likely to be ignored, so it is stated bluntly. Robbins 2024 reports
-intraclass correlation coefficients for stage summaries: **deep sleep — Oura 0.32, Fitbit 0.36,
-Apple 0.13; REM — Oura 0.27, Fitbit 0.13, Apple 0.37.** All poor. Epoch-level kappa looks
-respectable; between-person reliability of the numbers a study would actually analyse does not.
+Robbins 2024 ICCs for stage summaries: **deep sleep, Oura 0.32, Fitbit 0.36, Apple 0.13; REM, Oura
+0.27, Fitbit 0.13, Apple 0.37.** All poor. Total sleep time and sleep efficiency (ICC 0.74 for Oura,
+0.85 for Apple, 0.56 for Fitbit) are the defensible stage-derived endpoints. Every device in
+Schyvens 2025 underestimated WASO by 12 to 48 minutes. Robbins was Oura-funded; independent PSG
+results for Oura are mixed (Miller 2022, Lee 2023, Searles 2026). See `validation-evidence.md`.
 
-Total sleep time and sleep efficiency (ICC 0.74–0.85) are the defensible stage-derived endpoints.
-Every device also underestimates WASO by 12–48 minutes, so fragmentation endpoints are systematically
-flattered. See `validation-evidence.md`.
+### 3. Two of the biggest consumer routes are closed to new studies right now.
 
-### 3. Fitbit's migration is now a compliance problem, not just an engineering one.
+- **Fitbit / Google:** the legacy Fitbit Web API is turned off on **30 October 2026**, and Google is
+  **not onboarding new Google Health API projects** (2026-10-10). A new study cannot get its own
+  direct access; the routes are an intermediary that already holds access, participant self-export,
+  or the *All of Us* dataset. Existing projects still face the 100-user cap for unverified apps and a
+  CASA assessment ($500 to $4,500) above it.
+- **Garmin:** new Connect Developer Program access requests have been **paused since spring 2026**
+  (Corroborated). Labfront, Fitabase and Fitrockr already hold access.
 
-The legacy API turns down in September 2026; the consumer app already became **Google Health** on
-19 May 2026. Beyond forced re-consent, three new gates emerged on close reading:
+### 4. Vendor terms now constrain what a study can keep.
 
-- **Unverified apps are capped at 100 users.**
-- Verification requires a **third-party CASA security assessment: $500–$4,500, 2–6 weeks**, and
-  **annually** if a third-party server is involved — which describes every research pipeline.
-- In-app disclosure requirements apply.
+- **WHOOP** (terms effective 6 October 2026): no permanent copies of WHOOP data and no AI/ML training
+  or testing on it, unless authorised by the WHOOP data owner or by applicable law; no third-party
+  transfer; no research carve-out. New apps start at a 10-member Sandbox tier.
+- **Oura** (API and MCP Agreement, effective 8 June 2026): keep API data only as long as strictly
+  necessary, delete within 72 hours of a request, no AI/ML training, no research carve-out.
+- **Withings:** from **12 October 2026**, participants with new Withings accounts need a paid
+  Withings+ membership to share data with a free-plan app, including via Apple Health or Google
+  Health.
 
-And the intraday question resolved **leaning negative**: Heart Rate is documented as a *Sample* type
-with **no stated sampling interval**, HRV/SpO2/RHR appear as **Daily Aggregates**, and there is no
-Intraday endpoint family. Nobody should assume minute-level heart rate survives.
+Resolve these in writing with the vendor and institutional counsel before a protocol depends on them.
+Polar's BLE SDK, Movesense, Axivity, Samsung's Sensor SDK and Apple's HealthKit have no vendor in
+the data path and no such terms.
 
-### 4. Study operations is the systematic gap — and there is now a priced answer for Garmin.
+### 5. Study operations is still the systematic gap, and some of it now has a price.
 
-Apple, Fitbit/Google, Garmin, Oura and WHOOP provide **no** participant management, adherence
-monitoring, or wear-time tracking. Only Empatica, Ametris and Samsung's Research Stack do natively.
+Apple, Fitbit/Google, Garmin and WHOOP provide no participant management. Empatica (Care Portal),
+Ametris (CentrePoint) and Samsung (Research Stack, unmaintained since October 2024) do natively;
+Oura now sells a research offering at an unpublished price. **Labfront** (free 5-participant tier,
+$500 or $1,250 a year, EMA at every tier) and **Fitrockr** (from €50 or €150 a month per device
+licence) publish prices; Fitabase quotes per study. Table 13 of the matrix lists each vendor's
+research programme, user caps, retention and AI-training terms, cost and status.
 
-**Labfront** changes the arithmetic for Garmin studies: free 5-participant tier,
-**$500/yr for 20 participants**, **$1,250/yr** for all integrations and high-resolution sampling,
-**EMA included at every tier**, and a Garmin partnership that raises sensor resolution beyond stock.
-It is the only research platform in Module 1 that publishes prices. Fitabase remains the only option
-for Fitbit, at quote-only pricing.
-
-### 5. The cheapest good answers are still often not devices at all.
+### 6. The cheapest good answers are still often not devices at all.
 
 ***All of Us*** holds Fitbit data from 59,000+ participants over 14 years, minute-level, 46% linked
-to EHR and genomics — no procurement, no API, no exposure to the September 2026 turndown.
-**UK Biobank** holds raw 100 Hz wrist accelerometry from 100,000+ participants.
-
-### 6. WHOOP's contractual position remains the sharpest constraint in the module.
-
-Its API terms bar building databases or permanent copies, bar third-party transfer even with
-consent, and disclaim HIPAA. Read literally, incompatible with retaining an analysis dataset. There
-is a written-agreement carve-out; obtain it before writing a protocol.
+to EHR and other data, with no exposure to the 30 October 2026 shutoff. **UK Biobank** holds raw
+100 Hz wrist accelerometry from 100,000+ participants.
 
 ---
 
-## What is actually gated — a correction of emphasis
+## What is actually gated
 
-The first pass implied more vendor gatekeeping than exists. To be precise:
+**Documentation is public for almost everything here.** Oura's, WHOOP's, Google's, Polar's,
+Samsung's and Withings' API references were all read without an account (Withings' reference was
+recorded as login-gated in August; it is public). Samsung's Sensor SDK is a public download;
+partner approval is needed only to distribute an app.
 
-**Documentation is public for almost everything here.** Oura's, WHOOP's, Fitbit/Google's, Polar's
-and Samsung's references were all read directly, without an account. Only **Garmin** (portal login
-for field schemas), **Withings** (Partner Hub) and **Samsung's Privileged SDK download** sit behind
-a wall.
+**You can start today, without contacting the vendor, on:** Oura up to 10 users; WHOOP up to 10
+members; Withings' free plan up to 10 users (Withings+ costs apply from 12 October 2026); Polar and
+Movesense with no registration; Samsung in developer mode for testing; Labfront free for 5
+participants; Empatica's academic plan by store purchase; Axivity by buying a device.
 
-**You can start today, free, on most of them:** Oura up to 10 users; Google Health up to 100 users;
-Polar and Movesense with no registration at all; WHOOP freely, subject to its terms; Labfront free
-for 5 participants; Axivity by buying a device.
+**You cannot start today on:** a new direct Fitbit/Google project (Google not onboarding) or a new
+direct Garmin integration (applications paused).
 
-**What genuinely requires contact is (a) scale thresholds** — Oura above 10 users, Google Health
-above 100 — **and (b) commercial terms nobody publishes**: Garmin's SDK licence, the Withings
-research contract, Fitabase's fees, Ametris's price list, and BAA availability. Those block
-*scaling* and *budgeting*, not *starting*. See `../shared/unresolved-questions.md`.
+**What genuinely requires contact:** scale thresholds (Oura above 10 users, WHOOP tier upgrades,
+Withings free plan above 10 users), and commercial terms nobody publishes: Garmin's Enhanced BBI and
+SDK licences, Withings' research and paid plans, Fitabase's fees, Ametris's prices, Oura's research
+offering, and BAA availability almost everywhere. See `../shared/unresolved-questions.md`.
+
+---
+
+## Known gaps
+
+- **Current hardware is largely unvalidated:** Oura Ring 5, WHOOP 5.0/MG, Apple Series 11 and Fitbit
+  Air postdate every PSG study here; no Oura versus WHOOP PSG comparison exists on current hardware.
+- **Unpublished sampling rates:** Empatica PPG and EDA per sensor mode, Apple SensorKit PPG, Garmin
+  Health SDK accelerometer, Ultrahuman, Biostrap, Verily.
+- **Compliance rests on vendor statements:** no certificate was checked for any vendor; BAA
+  availability is unpublished for most.
+- **Live conflicts in the sources:** Ametris LEAP's two spec blocks (30 or 79 days storage); Withings
+  ISO 27001:2017 on the developer page versus 2022 in search snippets; Garmin's FAQ still quoting
+  two-business-day approval while applications are paused; which Empatica measures an academic
+  buyer can access.
+- **Not assessed:** movisens, Shimmer, activPAL, Fibion (research-grade alternatives); Galaxy Ring as
+  a research target; EEG wearables; CGM.
+- **Emerging entries** (Ultrahuman, Biostrap/Sensor Bio, Verily) rest partly on vendor statements, and
+  the Verily Study Watch's current status is Unclear.
+
+---
 
 ## Scope decisions
 
@@ -157,9 +202,10 @@ research contract, Fitabase's fees, Ametris's price list, and BAA availability. 
 
 | Addition | Rationale |
 |---|---|
-| **Axivity AX3/AX6 and GENEActiv** | Underpin UK Biobank, Whitehall II, Fenland, Pelotas. Excluding them would misrepresent research-grade accelerometry as ActiGraph-only and would omit the only genuinely open-hardware option |
-| **Fitabase and unified APIs** | Not wearables, but the layer through which most Fitbit/Garmin research actually runs. Omitting them would misdescribe practice |
-| **Open datasets (*All of Us*, UK Biobank)** | A legitimate and often superior alternative to collecting new wearable data |
+| **Axivity AX3/AX6 and GENEActiv** | Underpin UK Biobank, Whitehall II, Fenland, Pelotas. Excluding them would misrepresent research-grade accelerometry as ActiGraph-only and would omit the open-hardware option |
+| **Movesense** | A programmable research sensor with high ECG and IMU rates; missed in the first pass |
+| **Fitabase, Labfront, Fitrockr and unified APIs** | Not wearables, but the layer through which most Fitbit and Garmin research runs, and currently the only route to new Fitbit and Garmin data |
+| **Open datasets (*All of Us*, UK Biobank)** | A legitimate and often better alternative to collecting new wearable data |
 | **Health Connect** | The Android analogue to HealthKit; covered inside the Fitbit/Google profile |
 | **Google Health API** | Not a separate ecosystem, but a discontinuity large enough to structure the Fitbit profile around |
 
@@ -167,23 +213,23 @@ research contract, Fitabase's fees, Ametris's price list, and BAA availability. 
 
 | Excluded | Reason |
 |---|---|
-| **CGM (Dexcom, Abbott)** | A distinct device class with its own regulatory and access model. Belongs in a "connected medical devices" module |
+| **CGM (Dexcom, Abbott)** | A distinct device class with its own regulatory and access model. Belongs in a connected-medical-devices module |
 | **EEG wearables (Muse, Dreem)** | Distinct modality; would need its own validation frame |
-| **Smart clothing / patches (Hexoskin, VitalConnect, iRhythm)** | Distinct class, better suited to a remote patient monitoring module |
-| ~~**Verily Study Watch, Biostrap, Ultrahuman**~~ | **Now covered** in `profiles/emerging-platforms.md` (second pass) |
-| ~~**Movesense**~~ | **Now covered** with a full profile — it should have been in the first pass |
-| **Amazfit/Zepp, RingConn, Circular** | Still not assessed. Recorded in `profiles/emerging-platforms.md` and `../shared/unresolved-questions.md` as a remaining discovery gap |
+| **Smart clothing and patches (Hexoskin, VitalConnect, iRhythm)** | Distinct class, better suited to a remote patient monitoring module |
+| **movisens, Shimmer, activPAL, Fibion** | Research-grade alternatives not yet profiled; see `profiles/_inventory-and-scope-decisions.md` |
 | **Blood pressure and scale devices generally** | Covered only where they sit inside a profiled ecosystem (Withings, Garmin Index) |
+
+RingConn, Circular and Amazfit / Zepp were checked for research data access on 2026-10-09 and
+recorded in `profiles/emerging-platforms.md`; none publishes a research API.
 
 ### Inclusion judgements worth flagging
 
-- **Polar** is listed in `CLAUDE.md` as a consumer wearable, but its research value is almost
-  entirely in the sensor line (H10, Verity Sense), not the watches. The profile is weighted
-  accordingly.
-- **Withings** is arguably not a wearable company at all; the profile says so and treats the
-  non-wearable devices as first-class.
-- **ActiGraph** is profiled under its current name **Ametris**, with the rebrand and the Signant
-  Health acquisition treated as decision-relevant facts rather than trivia.
+- **Polar** is listed in `CLAUDE.md` as a consumer wearable, but its research value is mostly in the
+  sensor line (H10, Verity Sense), not the watches. The profile is weighted accordingly.
+- **Withings** is arguably not a wearable company; the profile treats its non-wearable devices as
+  first-class.
+- **ActiGraph** is profiled under its current name, **Ametris**, with the rebrand and the Signant
+  Health acquisition treated as decision-relevant facts.
 
 ---
 
@@ -191,48 +237,36 @@ research contract, Fitabase's fees, Ametris's price list, and BAA availability. 
 
 | Label | Meaning |
 |---|---|
-| **Verified** | Read directly from a current authoritative primary source during this session |
+| **Verified** | Read directly from a current authoritative primary source |
 | **Corroborated** | Multiple credible sources agree, but not confirmed in current primary documentation |
 | **Reported** | Found in a credible source, not independently confirmed. Vendor marketing claims default here |
 | **Unclear** | Evidence incomplete, conflicting, or absent. **Not an invitation to infer** |
 
-Where two sources conflict, both are recorded and the conflict is named. Five live contradictions
-are open in this module: Apple's ECG access, Withings' accelerometer sampling rate, Polar's H10
-accelerometer streaming, Samsung's minimum supported watch generation, and Empatica's biomarker
-count. See `../shared/unresolved-questions.md`.
+Where two sources conflict, both are recorded and the conflict is named. The five contradictions
+open in August (Apple ECG access, Withings accelerometer rate, Polar H10 accelerometry, Samsung's
+minimum watch, Empatica's biomarker count) were resolved or reconciled on 2026-10-09; the conflicts
+still open are listed under Known gaps.
 
 ---
 
 ## Recommended next research steps
 
-Ordered by value per unit of effort. Steps 1–3 need no vendor contact at all.
-
-1. **Empirically test Google Health API heart rate density.** Register a Google Cloud project (free,
-   up to 100 users unverified), authorise one account, pull a day of Heart Rate samples, and count
-   them. This single test resolves the highest-value open question in the module and requires
-   nobody's permission.
-2. **Pilot Labfront's free tier with a Garmin device** (5 participants, all settings enabled). This
-   empirically answers what Enhanced BBI data actually looks like, what resolution is obtainable,
-   and whether the platform suits the protocol — at zero cost.
-3. **Test the Oura API path you already have** against the documented scope list, and specifically
-   establish the **temporal resolution of the `heartrate` endpoint** and whether Ring 5's Health
-   Radar outputs appear at all. Both are open questions answerable from an existing integration.
-4. **Ask Oura what approval above 10 users involves.** In-product, via the applications portal. This
-   is the only true blocker for an Oura study of realistic size.
-5. **Ask Google whether an academic study qualifies for the "internal use within an organization"
-   verification exception.** The difference is free registration versus a recurring $500–$4,500 CASA
-   assessment.
-6. **Get the WHOOP written-retention question answered** before any protocol depends on WHOOP.
-7. **Request quotes** where pricing genuinely is unpublished: Fitabase, Ametris/Signant, the Withings
-   Advanced Research API, Movesense volume, Empatica Enterprise. Empatica academic and Labfront no
-   longer need a quote.
-8. **Resolve the remaining contradictions**: build a test app to read `HKElectrocardiogramQuery`
-   voltage samples; ask Withings which accelerometer rate is correct; ask Samsung whether Watch4 or
-   Watch5 is the true Research Stack minimum; ask Empatica which biomarkers the academic plan
-   actually includes (11+, 18, or 100+).
-9. **Look for independent validation of Movesense** — the specifications are the best in the module
-   and the evidence base appears empty, which is worth confirming rather than assuming.
-10. **Close the last discovery gaps**: Amazfit/Zepp, RingConn, Activinsights' production status, and
-    whether Schyvens' WHOOP 4.0 result transfers to the 5.0 hardware.
+1. **Ask Google when it will resume onboarding Google Health API projects**, and whether an approved
+   Health Research Application is exempt from the CASA assessment or the 100-user cap.
+2. **Ask Garmin when Connect Developer Program applications reopen** and whether academic use counts
+   as "commercial use" for the Enhanced BBI licence fee.
+3. **Pilot Labfront's free tier with a Garmin device** (5 participants) to see what Enhanced BBI and
+   higher-resolution sampling look like in practice.
+4. **Get the WHOOP and Oura retention and AI-training questions answered in writing** before any
+   protocol depends on either.
+5. **Ask Oura** what its research offering costs, what its "raw data" export contains, and whether
+   research customers sign different terms from the API Agreement.
+6. **Ask Withings** whether a research partner on the free plan is exempt from the Withings+
+   requirement.
+7. **Ask Empatica** for per-mode PPG, EDA and temperature rates and battery life for EmbracePlus.
+8. **Request quotes** where pricing is unpublished: Fitabase, Ametris/Signant, the Withings Advanced
+   Research API, Oura for research, Empatica Enterprise.
+9. **Profile movisens, Shimmer and activPAL**, the largest remaining device gap.
+10. **Watch for validation of current hardware** (Oura Ring 5, WHOOP 5.0/MG, Fitbit Air).
 
 Do not begin Module 2 as a consequence of this file.

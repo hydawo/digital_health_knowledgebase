@@ -472,48 +472,59 @@
 <div class="page">
 
   <header class="masthead">
-    <p class="eyebrow">Module 1 — Wearables · Research Reference</p>
+    <p class="eyebrow">Module 1, Wearables · Research Reference</p>
     <h1 class="title">Wearable Data Atlas</h1>
-    <p class="dek">What sixteen consumer, athletic, and research-grade wearable platforms actually let a
-      study collect, access, and export — access model, sensors, raw-signal specifications, API
-      mechanics, study operations, participant burden, cost, compliance posture, and validation
+    <p class="dek">What fifteen consumer, athletic and research-grade wearable platforms actually let a
+      study collect, access and export: access model, sensors, raw-signal specifications, API
+      mechanics, study operations, participant burden, cost, compliance posture and validation
       evidence.</p>
     <div class="meta-row">
-      <span>Published <strong>2026-08-21</strong></span>
-      <span>Reconciled against sponsorship-tiered evidence <strong>2026-08-24</strong></span>
+      <span>First published <strong>2026-08-21</strong></span>
+      <span>Rebuilt from the profiles <strong>2026-10-10</strong></span>
       <span><strong>12</strong> comparison tables</span>
-      <span><strong>16</strong> platforms</span>
+      <span><strong>15</strong> platforms</span>
       <span>Source: Digital Health Knowledge Base, Module 1</span>
     </div>
     <div class="caution">
+      <strong>Dated items.</strong> The legacy Fitbit Web API is turned off on <strong>30 October 2026</strong>
+      (support ended 30 September); Google is <strong>not onboarding new Google Health API projects</strong>
+      (2026-10-10); Garmin has <strong>paused new developer-programme access requests</strong> since spring 2026
+      (Corroborated); and from <strong>12 October 2026</strong> participants with new Withings accounts need a paid
+      Withings+ membership to share data with a free-plan app.
+    </div>
+    <div class="caution">
       <strong>Read across tables, not within one.</strong> A platform that leads on raw signal access
-      (Table 3) may be the weakest on study operations (Table 5) or the most expensive per participant
-      (Table 7). No single table ranks these platforms — the right one depends on the research question.
-      See Table 12.
+      (Table 03) may be the weakest on study operations (Table 05) or the most expensive per participant
+      (Table 07). No single table ranks these platforms; the right one depends on the research question.
+      See Table 12. Markers: (C) Corroborated, (R) Reported.
     </div>
   </header>
 
   <!-- ============ TABLE 1 ============ -->
   <section class="tsec" id="t1">
     <div class="tsec-head"><span class="tnum">TABLE 01</span><h2 class="thead">Ecosystem orientation &amp; access model</h2></div>
-    <p class="tcap">How each platform is positioned, how a study actually reaches its data, and whether a vendor sits in the data path at all.</p>
+    <p class="tcap">How each platform is positioned, how a study actually reaches its data, whether a vendor sits in the data path, and whether a new study can start today without contacting the vendor.</p>
     <div class="table-scroll">
       <table class="wide">
         <thead><tr>
-          <th class="colhead">Ecosystem</th><th>Orientation</th><th>Access model</th><th>Vendor cloud in path?</th><th>Approval required?</th><th>Self-serve?</th>
+          <th class="colhead">Ecosystem</th><th>Orientation</th><th>Access model</th><th>Vendor cloud in path?</th><th>Approval required?</th><th>Start today?</th>
         </tr></thead>
         <tbody>
-          <tr><td class="rowhead">Apple</td><td>Consumer</td><td>Researcher-built iOS app reading HealthKit</td><td><span class="tag tag--yes">No</span> — never receives study data</td><td>SensorKit only (IRB + Apple review)</td><td>HealthKit yes; SensorKit no</td></tr>
-          <tr><td class="rowhead">Fitbit / Google</td><td>Consumer</td><td>Public REST API (migrating to Google Health API)</td><td><span class="tag tag--no">Yes</span></td><td>Intraday: yes. Google Health scopes: <strong class="hi">all Restricted</strong></td><td><span class="tag tag--partial">Partly</span></td></tr>
-          <tr><td class="rowhead">Garmin</td><td>Consumer / athletic</td><td>Health API (cloud) <em>or</em> Health SDK (mobile, can bypass cloud)</td><td>API yes; Standard SDK no</td><td>Yes — enterprise program application</td><td><span class="tag tag--no">No</span></td></tr>
-          <tr><td class="rowhead">Oura</td><td>Consumer</td><td>Public REST API + webhooks</td><td><span class="tag tag--no">Yes</span></td><td><strong class="hi">Yes, above 10 users</strong></td><td>Up to 10 users</td></tr>
-          <tr><td class="rowhead">WHOOP</td><td>Consumer</td><td>REST API v2 + webhooks</td><td><span class="tag tag--no">Yes</span></td><td>App approval before launch</td><td><span class="tag tag--partial">Partly</span></td></tr>
-          <tr><td class="rowhead">Samsung</td><td>Consumer</td><td>Privileged Health SDK (on-device) + Research Stack (self-deployed)</td><td><span class="tag tag--yes">No</span> for Privileged SDK</td><td>Yes — Samsung Partner Program</td><td><span class="tag tag--no">No</span></td></tr>
+          <tr><td class="rowhead">Apple</td><td>Consumer</td><td>HealthKit via a researcher-built iOS app; SensorKit for research signals</td><td><span class="tag tag--yes">No</span> Apple never receives study data</td><td>SensorKit only: per-study Apple approval plus IRB</td><td>HealthKit yes; SensorKit no</td></tr>
+          <tr><td class="rowhead">Fitbit / Google</td><td>Consumer</td><td>Google Health API. Legacy Fitbit Web API <strong class="hi">off 30 Oct 2026</strong></td><td><span class="tag tag--no">Yes</span></td><td>Most scopes Restricted; 100-user cap until verification and CASA assessment</td><td><span class="tag tag--block">No</span> not onboarding new projects</td></tr>
+          <tr><td class="rowhead">Garmin</td><td>Consumer / athletic</td><td>Health API (cloud) <em>or</em> Health SDK (enterprise partners)</td><td>Health API yes; Standard SDK no</td><td>Business-use application; <strong class="hi">paused since spring 2026 (C)</strong></td><td><span class="tag tag--block">No</span> use Labfront, Fitabase or Fitrockr</td></tr>
+          <tr><td class="rowhead">Oura</td><td>Consumer</td><td>API v2 (OAuth only) + webhooks; Oura for Organizations research offering</td><td><span class="tag tag--no">Yes</span></td><td><strong class="hi">Yes, above 10 users</strong></td><td>Up to 10 users, under the API Agreement</td></tr>
+          <tr><td class="rowhead">WHOOP</td><td>Consumer</td><td>API v2 + webhooks</td><td><span class="tag tag--no">Yes</span></td><td>App approval; member tiers by manual review</td><td><span class="tag tag--partial">Partly</span> 10-member Sandbox</td></tr>
+          <tr><td class="rowhead">Samsung</td><td>Consumer</td><td>Health Sensor SDK (formerly Privileged Health SDK) on the watch; Research Stack, self-hosted</td><td><span class="tag tag--yes">No</span> for the Sensor SDK</td><td>Partner Program approval to <strong>distribute</strong>; SDK download is public</td><td><span class="tag tag--partial">Partly</span> testing only</td></tr>
           <tr><td class="rowhead">Polar</td><td>Athletic / research</td><td><strong class="hi">Open BLE SDK</strong> (GitHub) or AccessLink API</td><td><span class="tag tag--yes">No</span> for BLE path</td><td><strong class="hi">None</strong> for BLE SDK</td><td><span class="tag tag--yes">Yes</span></td></tr>
-          <tr><td class="rowhead">Withings</td><td>Medical-grade home health</td><td>Public Health Data API; Advanced Research API</td><td><span class="tag tag--no">Yes</span></td><td>Yes — <strong class="hi">contracted partners only</strong> for raw</td><td><span class="tag tag--partial">Partly</span></td></tr>
-          <tr><td class="rowhead">Empatica</td><td>Research / medical</td><td>Care Portal export</td><td><span class="tag tag--no">Yes</span></td><td>Commercial engagement</td><td><span class="tag tag--no">No</span></td></tr>
-          <tr><td class="rowhead">Ametris (ActiGraph)</td><td>Clinical trials</td><td>CentrePoint platform + API; ActiLife offline</td><td>Optional (ActiLife offline)</td><td>Commercial engagement</td><td><span class="tag tag--no">No</span></td></tr>
-          <tr><td class="rowhead">Axivity / GENEActiv</td><td>Research</td><td><strong class="hi">USB download.</strong> No cloud, no API, no account</td><td><span class="tag tag--yes">No</span></td><td><strong class="hi">None</strong></td><td><span class="tag tag--yes">Yes</span></td></tr>
+          <tr><td class="rowhead">Withings</td><td>Connected health devices</td><td>Health Data API plans; Advanced Research API for raw</td><td><span class="tag tag--no">Yes</span> EU or US cloud</td><td>Raw: <strong class="hi">contracted partners only</strong></td><td><span class="tag tag--partial">Partly</span> free plan, 10 users; Withings+ from 12 Oct 2026</td></tr>
+          <tr><td class="rowhead">Empatica</td><td>Research / medical</td><td>Care Portal; CSV; S3 access keys</td><td><span class="tag tag--no">Yes</span></td><td>Academic discount by application</td><td><span class="tag tag--yes">Yes</span> academic plan from store</td></tr>
+          <tr><td class="rowhead">Ametris (ActiGraph)</td><td>Clinical trials</td><td>CentrePoint + V3 API; ActiLife legacy</td><td>CentrePoint yes; ActiLife local</td><td>Quote; API enabled by Ametris</td><td><span class="tag tag--no">No</span></td></tr>
+          <tr><td class="rowhead">Axivity / GENEActiv</td><td>Research</td><td><strong class="hi">USB download.</strong> No cloud, no API, no account</td><td><span class="tag tag--yes">No</span></td><td><strong class="hi">None</strong></td><td><span class="tag tag--yes">Yes</span> Axivity; GENEActiv by quote</td></tr>
+          <tr><td class="rowhead">Movesense</td><td>Open sensor</td><td>BLE to own app; onboard logging; custom firmware</td><td><span class="tag tag--yes">No</span></td><td>None to develop; 12-month evaluation licence</td><td><span class="tag tag--yes">Yes</span></td></tr>
+          <tr><td class="rowhead">Ultrahuman</td><td>Consumer ring</td><td>UltraSignal (loaned kit) or Partner API</td><td>Partner API yes</td><td>Yes, both routes</td><td><span class="tag tag--no">No</span></td></tr>
+          <tr><td class="rowhead">Biostrap / Sensor Bio</td><td>Research platform</td><td>RPM dashboard or custom pipelines (R)</td><td class="muted">Unclear</td><td>Demo request</td><td><span class="tag tag--no">No</span></td></tr>
+          <tr><td class="rowhead">Verily Study Watch</td><td>Clinical research only</td><td>Verily Pre / Viewpoint Evidence</td><td><span class="tag tag--no">Yes</span></td><td>Enterprise engagement</td><td><span class="tag tag--no">No</span> status Unclear</td></tr>
         </tbody>
       </table>
     </div>
@@ -522,7 +533,7 @@
   <!-- ============ TABLE 2 ============ -->
   <section class="tsec" id="t2">
     <div class="tsec-head"><span class="tnum">TABLE 02</span><h2 class="thead">Sensors present</h2></div>
-    <p class="tcap">Hardware sensor presence on at least the flagship device in each line. <strong>Presence is not access</strong> — see Table 03 for what a researcher can actually obtain from each sensor.</p>
+    <p class="tcap">Hardware sensor presence on the named device or line. <strong>Presence is not access</strong>; see Table 03 for what a researcher can actually obtain. Three routes to raw EDA exist: Empatica, Samsung Galaxy Watch8 and later (1 Hz) and the Verily Study Watch (C).</p>
     <div class="specgrid-wrap">
       <div class="specgrid">
         <div class="gh corner">Device</div>
@@ -530,53 +541,41 @@
 
         <div class="gname">Apple Watch</div>
         <div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div>
-
         <div class="gname">Fitbit / Pixel Watch</div>
-        <div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--some" title="Some models"></span></div><div class="gcell"><span class="dot dot--some" title="Sense only"></span></div><div class="gcell"><span class="dot"></span></div>
-
+        <div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--some" title="Sense, Sense 2, Charge 5/6"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="muted mono" title="Unclear; Fitbit Air has one (C)">?</span></div><div class="gcell"><span class="dot dot--some" title="Supported models"></span></div><div class="gcell"><span class="dot dot--some" title="Supported models"></span></div><div class="gcell"><span class="dot dot--some" title="Some models"></span></div><div class="gcell"><span class="dot dot--some" title="Some models"></span></div><div class="gcell"><span class="dot dot--some" title="Sense, Sense 2"></span></div><div class="gcell"><span class="dot"></span></div>
         <div class="gname">Garmin</div>
-        <div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--some" title="Some models"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div>
-
-        <div class="gname">Oura Ring 5</div>
-        <div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div>
-
-        <div class="gname">WHOOP 5.0 / MG</div>
-        <div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--some" title="MG only"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div>
-
+        <div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--some" title="Venu 3 and newer"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--some" title="Some models"></span></div><div class="gcell"><span class="dot dot--some" title="Model-specific"></span></div><div class="gcell"><span class="dot dot--some" title="Many models"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--some" title="Many models"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div>
+        <div class="gname">Oura Ring (Gen3–5)</div>
+        <div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="muted mono" title="Not documented as user-accessible">?</span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div>
+        <div class="gname">WHOOP 4.0 / 5.0 / MG</div>
+        <div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--some" title="MG only"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="muted mono" title="Unclear">?</span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="muted mono" title="Unclear">?</span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div>
         <div class="gname">Samsung Galaxy Watch8</div>
-        <div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div>
-
+        <div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--some" title="LTE and GPS models"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on" title="Watch8 and later"></span></div><div class="gcell"><span class="dot dot--on"></span></div>
         <div class="gname">Polar H10</div>
         <div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div>
-
         <div class="gname">Polar Verity Sense</div>
         <div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div>
-
+        <div class="gname">Polar 360 / Loop</div>
+        <div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="muted mono" title="Unclear">?</span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="muted mono" title="Unclear">?</span></div><div class="gcell"><span class="muted mono" title="Unclear">?</span></div><div class="gcell"><span class="muted mono" title="Unclear">?</span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div>
         <div class="gname">Movesense MD / Flash / HR2</div>
-        <div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div>
-
-        <div class="gname">Withings ScanWatch</div>
-        <div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--some" title="Some models"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div>
-
+        <div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--some" title="MD and Flash"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="muted mono" title="Unclear">?</span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div>
+        <div class="gname">Withings ScanWatch 2</div>
+        <div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="muted mono" title="Unclear">?</span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="muted mono" title="Unclear">?</span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div>
         <div class="gname">Ultrahuman Ring AIR</div>
-        <div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div>
-
-        <div class="gname">Biostrap</div>
-        <div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div>
-
+        <div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="muted mono" title="Unclear">?</span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="muted mono" title="Unclear">?</span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="muted mono" title="Unclear">?</span></div><div class="gcell"><span class="muted mono" title="Unclear">?</span></div><div class="gcell"><span class="muted mono" title="Unclear">?</span></div><div class="gcell"><span class="muted mono" title="Unclear">?</span></div><div class="gcell"><span class="muted mono" title="Unclear">?</span></div>
+        <div class="gname">Biostrap / Sensor Bio</div>
+        <div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="muted mono" title="Unclear">?</span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--some" title="Separate Thermo Patch (C)"></span></div><div class="gcell"><span class="muted mono" title="Unclear">?</span></div><div class="gcell"><span class="muted mono" title="Unclear">?</span></div><div class="gcell"><span class="muted mono" title="Unclear">?</span></div><div class="gcell"><span class="muted mono" title="Unclear">?</span></div><div class="gcell"><span class="muted mono" title="Unclear">?</span></div>
         <div class="gname">Verily Study Watch</div>
-        <div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div>
-
+        <div class="gcell"><span class="muted mono" title="Records heart rate; PPG not stated">?</span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="muted mono" title="Unclear">?</span></div><div class="gcell"><span class="muted mono" title="Unclear">?</span></div><div class="gcell"><span class="muted mono" title="Unclear">?</span></div><div class="gcell"><span class="muted mono" title="Unclear">?</span></div><div class="gcell"><span class="muted mono" title="Unclear">?</span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="muted mono" title="Unclear">?</span></div>
         <div class="gname">Empatica EmbracePlus</div>
-        <div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div>
-
-        <div class="gname">Ametris LEAP / wGT3X</div>
-        <div class="gcell"><span class="dot dot--some" title="Some models"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--some" title="Some models"></span></div><div class="gcell"><span class="dot dot--some" title="Some models"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div>
-
+        <div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--some" title="Selected sensor modes"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="muted mono" title="Unclear in profile; FDA K221282 covers SpO2">?</span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="muted mono" title="Unclear">?</span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div>
+        <div class="gname">Ametris LEAP</div>
+        <div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div>
+        <div class="gname">Ametris Insight Watch / wGT3X-BT</div>
+        <div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--some" title="Insight Watch, near-body"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div>
         <div class="gname">Axivity AX3 / AX6</div>
         <div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot dot--some" title="AX6 only"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div>
-
-        <div class="gname">GENEActiv Original</div>
+        <div class="gname">GENEActiv</div>
         <div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--on"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot dot--some" title="Near-body"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div><div class="gcell"><span class="dot"></span></div>
       </div>
     </div>
@@ -584,12 +583,13 @@
       <span><span class="dot dot--on"></span> Present</span>
       <span><span class="dot dot--some"></span> Present on some models</span>
       <span><span class="dot"></span> Absent</span>
+      <span><span class="muted mono">?</span> Unclear in the profile</span>
     </div>
   </section>
 
   <!-- ============ TABLE 3 ============ -->
   <section class="tsec" id="t3">
-    <div class="tsec-head"><span class="tnum">TABLE 03</span><h2 class="thead">Raw signal availability — the decisive table</h2></div>
+    <div class="tsec-head"><span class="tnum">TABLE 03</span><h2 class="thead">Raw signal availability, the decisive table</h2></div>
     <p class="tcap">What a researcher can actually pull off the sensor, not the processed score the app shows. This is the table that most changes which platform is right for a given study.</p>
     <div class="table-scroll">
       <table class="wide">
@@ -597,48 +597,51 @@
           <th class="colhead">Ecosystem</th><th>Raw accel</th><th>Raw PPG waveform</th><th>ECG</th><th>IBI / RR / BBI</th><th>Raw EDA</th><th>Route</th>
         </tr></thead>
         <tbody>
-          <tr><td class="rowhead">Apple</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td>Discrete voltage samples via <span class="mono">HKElectrocardiogramQuery</span>; continuous ECG no. <em class="foot">Contradicted by ResearchKit FAQ — Unclear</em></td><td class="tag tag--no">No</td><td class="muted">n/a</td><td>HealthKit</td></tr>
-          <tr><td class="rowhead">Fitbit / Google</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td>ECG readings; raw waveform no</td><td class="tag tag--no">No</td><td class="muted">n/a</td><td>REST API</td></tr>
-          <tr><td class="rowhead">Garmin</td><td class="tag tag--yes">Yes</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td><strong class="hi">Enhanced BBI</strong>, per-beat confidence, via cloud API, SDK, or Fitabase / Labfront. <strong>Nocturnal only</strong></td><td class="muted">n/a</td><td>Health API, Health SDK, or a research platform</td></tr>
-          <tr><td class="rowhead">Oura</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td class="muted">n/a</td><td class="tag tag--no">No</td><td class="muted">n/a</td><td class="muted">—</td></tr>
-          <tr><td class="rowhead">WHOOP</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td>MG only, not via API</td><td class="tag tag--no">No</td><td class="muted">n/a</td><td class="muted">—</td></tr>
-          <tr><td class="rowhead">Samsung</td><td><strong class="hi">Yes, 25 Hz</strong></td><td><strong class="hi">Yes</strong> — incl. IR + Red channels</td><td><strong class="hi">Yes, raw, on-demand</strong></td><td>Yes (IBI)</td><td class="muted">n/a</td><td>Privileged Health SDK; also via Verily Pre</td></tr>
-          <tr><td class="rowhead">Polar H10</td><td>Yes, 25 / 50 / 100 / 200 Hz, ±2/4/8 g</td><td class="muted">—</td><td><strong class="hi">Yes, 130 Hz in µV</strong></td><td>Yes, RR at 1 Hz</td><td class="muted">n/a</td><td><strong class="hi">Open BLE SDK, no registration</strong></td></tr>
-          <tr><td class="rowhead">Polar Verity Sense</td><td>Yes, 52 Hz; SDK mode 26–416 Hz, ±2–16 g</td><td><strong class="hi">Yes</strong> — SDK mode 28–176 Hz, 22-bit</td><td class="tag tag--no">No</td><td>Yes (PPI) — not in SDK mode</td><td class="muted">n/a</td><td>Open BLE SDK</td></tr>
-          <tr><td class="rowhead">Movesense</td><td><strong class="hi">Yes — IMU 13 Hz–1.6 kHz, 9-axis</strong></td><td class="muted">—</td><td><strong class="hi">Yes, 125–512 Hz</strong></td><td>Yes, RR at 1 ms resolution</td><td class="muted">n/a</td><td>Open API, custom firmware, no licence cost</td></tr>
-          <tr><td class="rowhead">Withings</td><td>Yes, ScanWatch, ~25 Hz</td><td>Yes, green / red / IR</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td class="muted">n/a</td><td><strong class="hi">Advanced Research API</strong> — contracted only; disables all other watch features; 3–4 day battery</td></tr>
-          <tr><td class="rowhead">Ultrahuman</td><td>Yes</td><td><strong class="hi">Yes — raw PPG from a ring</strong></td><td class="muted">—</td><td class="tag tag--no">No</td><td class="muted">n/a</td><td>UltraSignal, whitelist + loaner dev kit</td></tr>
-          <tr><td class="rowhead">Biostrap</td><td>Yes (+ gyroscope)</td><td>Yes, waveform kept raw</td><td class="muted">—</td><td class="tag tag--no">No</td><td class="muted">n/a</td><td>RPM dashboard / API / BLE SDK, configurable rates</td></tr>
-          <tr><td class="rowhead">Empatica</td><td>Yes, 64 Hz</td><td>Yes — BVP, 64 Hz</td><td class="tag tag--no">No</td><td>Systolic peaks</td><td><strong class="hi">Yes, 4 Hz</strong></td><td>Avro / CSV from Care Portal</td></tr>
-          <tr><td class="rowhead">Verily Study Watch</td><td>Yes (inertial)</td><td class="muted">—</td><td>Yes</td><td class="muted">—</td><td><strong class="hi">Yes</strong></td><td>Verily Pre / Viewpoint Evidence, enterprise only</td></tr>
-          <tr><td class="rowhead">Ametris</td><td>Yes, configurable</td><td class="muted">Unclear</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td class="muted">n/a</td><td>ActiLife / CentrePoint</td></tr>
-          <tr><td class="rowhead">Axivity / GENEActiv</td><td>Yes, to 100 Hz, ±8 g</td><td class="muted">n/a</td><td class="muted">n/a</td><td class="muted">n/a</td><td class="muted">n/a</td><td><strong class="hi">USB, raw file, no vendor</strong></td></tr>
+          <tr><td class="rowhead">Apple</td><td>SensorKit only (iOS 14+); not HealthKit</td><td>SensorKit only (iOS 17.4+); rate undocumented</td><td>Per-recording voltage via <span class="mono">HKElectrocardiogramQuery</span>; SensorKit ECG (iOS 17.4+); no continuous ECG</td><td>Context-limited heartbeat series</td><td class="muted">n/a</td><td>HealthKit; SensorKit entitlement</td></tr>
+          <tr><td class="rowhead">Fitbit / Google</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td>ECG session with raw waveform voltage (documented, untested)</td><td class="tag tag--no">No</td><td>No EDA data type</td><td>Google Health API (not onboarding)</td></tr>
+          <tr><td class="rowhead">Garmin</td><td>Health SDK only; rate not published</td><td class="tag tag--no">No</td><td>Not via Health API</td><td><strong class="hi">Enhanced BBI</strong>, per-beat confidence: Health API (licence fee for commercial use) and Health SDK streaming. API route captures it during sleep</td><td class="muted">n/a</td><td>Health SDK, Health API, or Labfront / Fitabase / Fitrockr</td></tr>
+          <tr><td class="rowhead">Oura</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td class="muted">n/a</td><td class="tag tag--no">No</td><td class="muted">n/a</td><td>API v2, derived only</td></tr>
+          <tr><td class="rowhead">WHOOP</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td>MG ECG; no API scope</td><td class="tag tag--no">No</td><td class="muted">n/a</td><td>API v2, derived only</td></tr>
+          <tr><td class="rowhead">Samsung</td><td><strong class="hi">Yes, 25 Hz</strong></td><td><strong class="hi">Green, IR, red: 25 Hz continuous, 100 Hz on demand</strong></td><td><strong class="hi">Yes, 500 Hz on demand</strong></td><td>Yes, IBI at 1 Hz</td><td><strong class="hi">Yes, 1 Hz (Watch8+)</strong></td><td>Health Sensor SDK; also Verily Pre (C)</td></tr>
+          <tr><td class="rowhead">Polar H10</td><td>Yes, 25 / 50 / 100 / 200 Hz, ±2/4/8 g</td><td class="muted">n/a</td><td><strong class="hi">Yes, 130 Hz in µV</strong></td><td>Yes, RR in ms</td><td class="muted">n/a</td><td><strong class="hi">Open BLE SDK, no registration</strong></td></tr>
+          <tr><td class="rowhead">Polar Verity Sense</td><td>Yes, 52 Hz; SDK mode 26–416 Hz</td><td><strong class="hi">Yes, SDK mode 28–176 Hz, 22-bit</strong></td><td class="tag tag--no">No</td><td>PPI, not in SDK mode</td><td class="muted">n/a</td><td>Open BLE SDK</td></tr>
+          <tr><td class="rowhead">Movesense</td><td><strong class="hi">IMU 13 Hz–1.6 kHz, 9-axis (C)</strong></td><td class="muted">n/a</td><td><strong class="hi">Yes, 125–512 Hz (C)</strong></td><td>R-R at 1 ms resolution</td><td class="muted">n/a</td><td>BLE or onboard logging; custom firmware</td></tr>
+          <tr><td class="rowhead">Withings</td><td>ScanWatch, ~24.8 Hz, ±4 g</td><td>Green / red / IR, ~24.8 Hz</td><td>Not in Raw Data API</td><td class="muted">Not documented</td><td class="muted">n/a</td><td><strong class="hi">Advanced Research API</strong>, contracted only; raw mode disables other features; 3–4 day battery</td></tr>
+          <tr><td class="rowhead">Ultrahuman</td><td>"Data stream"</td><td>PPG "data stream"; raw format undocumented</td><td class="muted">n/a</td><td>Derived HRV</td><td class="muted">n/a</td><td>UltraSignal, application and loaned kit</td></tr>
+          <tr><td class="rowhead">Biostrap / Sensor Bio</td><td>Yes, plus gyro (vendor, C)</td><td>Yes (vendor, C)</td><td class="muted">n/a</td><td>IBI (vendor, C)</td><td class="muted">n/a</td><td>RPM dashboard or pipelines; rates unpublished</td></tr>
+          <tr><td class="rowhead">Empatica</td><td>Yes; 64 Hz (Actigraphy Pro), 32 Hz (Optimized), 100 Hz (Gyroscope 100)</td><td>Yes; rate not published</td><td class="tag tag--no">No</td><td class="muted">Unclear</td><td><strong class="hi">Yes</strong>; rate not published</td><td>CSV and S3 keys; no streaming</td></tr>
+          <tr><td class="rowhead">Verily Study Watch</td><td>Yes, inertial (C)</td><td class="muted">Unclear</td><td>Yes (C)</td><td class="muted">Unclear</td><td><strong class="hi">Yes (C)</strong></td><td>Verily Pre / Viewpoint Evidence, enterprise only</td></tr>
+          <tr><td class="rowhead">Ametris</td><td>32–256 Hz, ±8 g (Insight Watch, LEAP); wGT3X-BT 30–100 Hz</td><td>LEAP green 25 / 100 Hz, red/IR 50 Hz, contract-restricted</td><td class="tag tag--no">No</td><td class="muted">Not documented</td><td class="muted">n/a</td><td>CentrePoint API files; ActiLife</td></tr>
+          <tr><td class="rowhead">Axivity / GENEActiv</td><td><strong class="hi">AX3 12.5–3,200 Hz</strong>, AX6 to 1,600 Hz, ±2–16 g</td><td class="muted">n/a</td><td class="muted">n/a</td><td class="muted">n/a</td><td class="muted">n/a</td><td><strong class="hi">USB, raw file, no vendor</strong></td></tr>
         </tbody>
       </table>
     </div>
 
-    <p class="subhead">Sampling-rate league table, cheapest-first</p>
+    <p class="subhead">Sampling-rate reference, by signal</p>
     <div class="table-scroll">
       <table class="narrow">
-        <thead><tr><th>Signal</th><th>Best available</th><th>Rate</th><th>Cost of entry</th></tr></thead>
+        <thead><tr><th>Signal</th><th>Device</th><th>Max documented rate</th><th>Cost of entry</th></tr></thead>
         <tbody>
-          <tr><td class="rowhead">ECG</td><td><strong class="hi">Movesense</strong></td><td class="num">up to 512 Hz</td><td>Developer kit, no licence fee</td></tr>
-          <tr><td class="rowhead">ECG</td><td>Polar H10</td><td class="num">130 Hz</td><td><strong class="hi">~$95, open SDK, no approval</strong></td></tr>
-          <tr><td class="rowhead">IMU / accelerometer</td><td><strong class="hi">Movesense</strong></td><td class="num">up to 1.6 kHz, 9-axis</td><td>Developer kit</td></tr>
-          <tr><td class="rowhead">Accelerometer</td><td>Polar Verity Sense (SDK mode)</td><td class="num">up to 416 Hz</td><td>~$95</td></tr>
-          <tr><td class="rowhead">Accelerometer</td><td>Axivity AX3</td><td class="num">100 Hz, ±8 g</td><td>Device only, no software cost</td></tr>
-          <tr><td class="rowhead">Accelerometer</td><td>Empatica / Ametris</td><td class="num">64 Hz / configurable</td><td>$1,750+ / five figures</td></tr>
-          <tr><td class="rowhead">Accelerometer</td><td>Samsung</td><td class="num">25 Hz</td><td>Partner approval</td></tr>
-          <tr><td class="rowhead">Raw PPG</td><td><strong class="hi">Polar Verity Sense (SDK mode)</strong></td><td class="num">28–176 Hz, 22-bit</td><td><strong class="hi">~$95</strong></td></tr>
-          <tr><td class="rowhead">Raw PPG</td><td>Empatica (BVP)</td><td class="num">64 Hz</td><td>~$1,750 / 3 yr</td></tr>
-          <tr><td class="rowhead">Raw PPG</td><td>Samsung (incl. IR + Red)</td><td class="muted">undocumented</td><td>Partner approval</td></tr>
+          <tr><td class="rowhead">ECG</td><td><strong class="hi">Movesense</strong></td><td class="num">512 Hz (C)</td><td>MD €349 ex VAT; no licence fee</td></tr>
+          <tr><td class="rowhead">ECG</td><td>Samsung Galaxy Watch</td><td class="num">500 Hz on demand</td><td>Partner registration</td></tr>
+          <tr><td class="rowhead">ECG</td><td>Polar H10</td><td class="num">130 Hz</td><td><strong class="hi">$104.95, open SDK, no approval</strong></td></tr>
+          <tr><td class="rowhead">Accelerometer</td><td><strong class="hi">Axivity AX3</strong></td><td class="num">3,200 Hz</td><td>£139 ex VAT; no software cost</td></tr>
+          <tr><td class="rowhead">IMU</td><td>Movesense</td><td class="num">1.6 kHz, 9-axis (C)</td><td>€349 ex VAT</td></tr>
+          <tr><td class="rowhead">Accelerometer</td><td>Polar Verity Sense (SDK mode)</td><td class="num">416 Hz</td><td>~$95 (not re-read)</td></tr>
+          <tr><td class="rowhead">Accelerometer</td><td>Ametris Insight Watch / LEAP</td><td class="num">256 Hz</td><td>Quote only</td></tr>
+          <tr><td class="rowhead">Accelerometer</td><td>Empatica EmbracePlus</td><td class="num">100 Hz (Gyroscope 100 mode)</td><td>$1,749.60 / 3 yr academic</td></tr>
+          <tr><td class="rowhead">Accelerometer</td><td>Samsung / Withings</td><td class="num">25 Hz / ~24.8 Hz</td><td>Partner registration / contract</td></tr>
+          <tr><td class="rowhead">Raw PPG</td><td><strong class="hi">Polar Verity Sense (SDK mode)</strong></td><td class="num">176 Hz, 22-bit</td><td>~$95 (not re-read)</td></tr>
+          <tr><td class="rowhead">Raw PPG</td><td>Samsung (green, IR, red)</td><td class="num">100 Hz on demand; 25 Hz continuous</td><td>Partner registration</td></tr>
+          <tr><td class="rowhead">Raw PPG</td><td>Ametris LEAP (green)</td><td class="num">100 Hz</td><td>Quote; contract-restricted</td></tr>
           <tr><td class="rowhead">Raw PPG</td><td>Withings ScanWatch</td><td class="num">~24.8 Hz</td><td>Contract</td></tr>
-          <tr><td class="rowhead">EDA</td><td><strong class="hi">Empatica</strong></td><td class="num">4 Hz</td><td>~$1,750 / 3 yr</td></tr>
-          <tr><td class="rowhead">EDA</td><td>Verily Study Watch</td><td class="muted">undocumented</td><td>Enterprise only</td></tr>
+          <tr><td class="rowhead">Raw PPG</td><td>Empatica, Apple SensorKit, Ultrahuman</td><td class="muted">not published</td><td class="muted">see Table 07</td></tr>
+          <tr><td class="rowhead">EDA</td><td>Samsung Galaxy Watch8</td><td class="num">1 Hz</td><td>Partner registration</td></tr>
+          <tr><td class="rowhead">EDA</td><td>Empatica / Verily</td><td class="muted">not published</td><td>$1,749.60 / 3 yr academic / enterprise only</td></tr>
         </tbody>
       </table>
     </div>
-    <div class="tnote"><strong>The highest sampling rates in this module come from the cheapest, most open vendors.</strong> Polar and Movesense beat every major consumer platform and every clinical-trial vendor on raw specification, at a fraction of the cost and with no approval process. What you give up is form factor, wear duration, derived metrics, and study infrastructure — not signal.</div>
+    <div class="tnote"><strong>The highest documented raw rates come from open sensors sold at modest prices</strong> (Axivity AX3 accelerometry to 3,200 Hz, Movesense ECG to 512 Hz and IMU to 1.6 kHz, Polar Verity Sense PPG to 176 Hz), not from the clinical-trial vendors. Samsung is the consumer exception. What the open sensors give up is form factor, wear duration, derived metrics and study infrastructure.</div>
   </section>
 
   <!-- ============ TABLE 4 ============ -->
@@ -649,22 +652,23 @@
       <table class="wide">
         <thead><tr><th class="colhead">Ecosystem</th><th>Auth</th><th>Rate limit</th><th>Push / webhooks</th><th>Historical backfill</th><th>Latency driver</th></tr></thead>
         <tbody>
-          <tr><td class="rowhead">Apple</td><td>On-device permission</td><td class="muted">n/a</td><td>HealthKit background delivery</td><td><strong class="hi">Full device history at enrollment</strong></td><td>iOS background execution limits</td></tr>
-          <tr><td class="rowhead">Fitbit (legacy)</td><td>Fitbit OAuth 2.0</td><td class="num"><strong class="hi">150 req/hr per user</strong></td><td>Subscription API</td><td>Date-ranged; intraday HR max 24h/request, <strong>silently degrades to summary</strong></td><td>Participant app sync</td></tr>
-          <tr><td class="rowhead">Google Health API</td><td>Google OAuth 2.0</td><td class="muted">Unclear (see below)</td><td><span class="mono">projects.subscribers</span></td><td class="muted">Unclear</td><td class="muted">Unclear</td></tr>
-          <tr><td class="rowhead">Garmin</td><td>Garmin consent</td><td class="muted">Unclear</td><td>Ping/Pull or Push</td><td>Supported on first connect; depth unclear</td><td>Device→Garmin Connect sync</td></tr>
-          <tr><td class="rowhead">Oura</td><td>OAuth 2.0 only (PATs retired Dec 2025)</td><td class="num">5,000 req / 5 min, per-token &amp; per-app tiers</td><td>Yes, ~30s after app sync</td><td>Bulk on first connect, 1–3 month chunks</td><td><strong class="hi">Sleep only syncs when user opens the app</strong></td></tr>
-          <tr><td class="rowhead">WHOOP</td><td>OAuth 2.0</td><td class="num">100 req/min, 10,000 req/day per client</td><td>Yes (v2; v1 removed)</td><td>Date-ranged</td><td>Device→cloud sync</td></tr>
-          <tr><td class="rowhead">Samsung</td><td>On-device SDK</td><td class="muted">n/a</td><td class="muted">n/a</td><td class="muted">n/a</td><td>Researcher's own pipeline</td></tr>
+          <tr><td class="rowhead">Apple</td><td>On-device permission</td><td class="muted">n/a</td><td>HealthKit background delivery</td><td><strong class="hi">Full authorised on-device history</strong></td><td>iOS background execution limits</td></tr>
+          <tr><td class="rowhead">Fitbit (legacy)</td><td>Fitbit OAuth 2.0</td><td class="num">150 req/hr per user</td><td>Subscription API</td><td class="muted">Moot</td><td class="tag tag--block">Off 30 Oct 2026</td></tr>
+          <tr><td class="rowhead">Google Health API</td><td>Google OAuth 2.0</td><td class="num">300/min per user; 120,000/min per project</td><td><span class="mono">projects.subscribers</span></td><td>Backfill tools after re-consent; depth unclear</td><td>App sync; not onboarding new projects</td></tr>
+          <tr><td class="rowhead">Garmin</td><td>Garmin consent</td><td class="muted">Not published</td><td>Ping/Pull or Push</td><td>30 days before consent (R)</td><td>Device to Garmin Connect sync</td></tr>
+          <tr><td class="rowhead">Oura</td><td>OAuth 2.0 only (PATs retired Dec 2025)</td><td>Per-token and per-app layers; <strong>numbers not published</strong></td><td>Webhooks, ~30 s after app sync, 10 retries</td><td>One request on first connect; depth unclear</td><td><strong class="hi">Sleep reaches the API only after the app is opened</strong></td></tr>
+          <tr><td class="rowhead">WHOOP</td><td>OAuth 2.0</td><td class="num">100 req/min, 10,000 req/day per client</td><td>Yes (v2; v1 removed)</td><td class="muted">Not established</td><td>Device to cloud sync</td></tr>
+          <tr><td class="rowhead">Samsung</td><td>On-device SDK</td><td class="muted">n/a</td><td class="muted">n/a</td><td>From enrolment onward</td><td>Researcher's own pipeline</td></tr>
           <tr><td class="rowhead">Polar (BLE)</td><td>None</td><td class="tag tag--yes">None</td><td class="muted">n/a</td><td>Device onboard memory</td><td>Bluetooth range</td></tr>
-          <tr><td class="rowhead">Withings</td><td>OAuth 2.0</td><td class="muted">Unclear</td><td class="muted">Unclear</td><td class="muted">Unclear</td><td>Cellular or app sync</td></tr>
-          <tr><td class="rowhead">Empatica</td><td>Portal login</td><td class="muted">n/a</td><td class="tag tag--no">No real-time access</td><td>Full study history in cloud</td><td>Batch upload</td></tr>
-          <tr><td class="rowhead">Ametris</td><td class="muted">Unclear</td><td class="muted">Unclear</td><td class="muted">Unclear</td><td>Full</td><td>Cellular gateway or app</td></tr>
+          <tr><td class="rowhead">Polar AccessLink</td><td>OAuth 2.0</td><td class="num">500 + 20×users / 15 min; 5,000 + 100×users / 24 h</td><td>Webhooks</td><td><strong>None before registration</strong>; exercises 30 days</td><td>Polar Flow sync</td></tr>
+          <tr><td class="rowhead">Withings</td><td>OAuth 2.0</td><td>1,500+ req/min on paid plans; free "Standard"</td><td class="muted">Not verified</td><td class="muted">Not documented</td><td>Cellular or app sync</td></tr>
+          <tr><td class="rowhead">Empatica</td><td>Portal login; S3 keys</td><td class="muted">n/a</td><td class="tag tag--no">No real-time access</td><td>Full study history in cloud</td><td>Batch upload</td></tr>
+          <tr><td class="rowhead">Ametris</td><td>OAuth 2.0 client credentials</td><td class="num">&gt;500 req/min per IP returns 429</td><td>Webhooks</td><td>Historical raw files may carry fees</td><td>Cellular gateway or app</td></tr>
           <tr><td class="rowhead">Axivity / GENEActiv</td><td class="muted">n/a</td><td class="muted">n/a</td><td class="muted">n/a</td><td class="muted">n/a</td><td><strong class="hi">Device return</strong></td></tr>
         </tbody>
       </table>
     </div>
-    <p class="subhead">Google Health API — since resolved with published limits</p>
+    <p class="subhead">Google Health API, published limits</p>
     <div class="table-scroll">
       <table class="narrow">
         <thead><tr><th>Scope</th><th>Limit</th></tr></thead>
@@ -676,27 +680,27 @@
         </tbody>
       </table>
     </div>
-    <div class="tnote">Rate limits are generous once verified — the real Google Health API constraint is a <strong>two-part verification process</strong> (Trust &amp; Safety review, plus a third-party security assessment costing <strong>$500–$4,500</strong> and taking 2–6 weeks), not throughput.</div>
+    <div class="tnote">Throughput is generous once verified; the constraint is a <strong>two-part verification process</strong> (Trust &amp; Safety review plus a third-party CASA assessment costing <strong>$500–$4,500</strong> and taking 2–6 weeks). As of 2026-10-10 the question is moot for new studies: <strong>Google is not onboarding new projects</strong>.</div>
   </section>
 
   <!-- ============ TABLE 5 ============ -->
   <section class="tsec" id="t5">
     <div class="tsec-head"><span class="tnum">TABLE 05</span><h2 class="thead">Study operations &amp; management</h2></div>
-    <p class="tcap">Whether the vendor (or a companion platform) provides participant rosters, adherence monitoring, multi-site support, and EMA — the layer that most wearable vendors leave to the researcher.</p>
+    <p class="tcap">Whether the vendor (or a companion platform) provides participant rosters, adherence monitoring, multi-site support and EMA, the layer most wearable vendors leave to the researcher.</p>
     <div class="table-scroll">
       <table class="wide">
         <thead><tr><th class="colhead">Ecosystem</th><th>Researcher portal</th><th>Participant roster</th><th>Adherence / wear-time</th><th>Multi-site</th><th>Surveys / EMA</th><th>Device reuse</th></tr></thead>
         <tbody>
           <tr><td class="rowhead">Apple</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td>Build with ResearchKit</td><td class="muted">n/a (BYOD)</td></tr>
-          <tr><td class="rowhead">Fitbit / Google</td><td>No (Fitabase)</td><td>Via Fitabase</td><td>Via Fitabase (sync + battery)</td><td>Via Fitabase</td><td>Fitabase Engage, Summer 2026</td><td>Via Fitabase</td></tr>
-          <tr><td class="rowhead">Garmin</td><td>No (Fitabase / Labfront)</td><td>Via platform</td><td>Via platform</td><td>Via platform</td><td>No native; yes via Labfront</td><td>Via platform</td></tr>
-          <tr><td class="rowhead">Oura</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td>Tags only</td><td>Requires re-sizing</td></tr>
-          <tr><td class="rowhead">WHOOP</td><td>No (Unite is enterprise)</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td>Journal (API availability unclear)</td><td>Membership-bound</td></tr>
-          <tr><td class="rowhead">Samsung</td><td><strong class="hi">Research Stack portal</strong></td><td class="tag tag--yes">Yes</td><td class="muted">Unclear</td><td class="muted">Unclear</td><td><strong class="hi">Yes</strong></td><td class="muted">Unclear</td></tr>
-          <tr><td class="rowhead">Polar</td><td>No (Team Pro is team-sport)</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td>Yes, trivially</td></tr>
-          <tr><td class="rowhead">Withings</td><td>Partnership model</td><td>Via partner/RPM</td><td>Via partner</td><td class="tag tag--yes">Yes</td><td>Via DCT partner</td><td>Yes</td></tr>
-          <tr><td class="rowhead">Empatica</td><td><strong class="hi">Care Portal</strong></td><td><strong class="hi">Yes, unlimited</strong></td><td><strong class="hi">Yes, live wear-time</strong></td><td class="tag tag--yes">Yes</td><td>Tags only</td><td><strong class="hi">Yes — first-class</strong></td></tr>
-          <tr><td class="rowhead">Ametris</td><td><strong class="hi">CentrePoint / Connect</strong></td><td class="tag tag--yes">Yes</td><td><strong class="hi">Near-real-time + reports</strong></td><td><strong class="hi">Yes, 70+ countries</strong></td><td>Via Connect / Signant eCOA</td><td>Yes</td></tr>
+          <tr><td class="rowhead">Fitbit / Google</td><td>No (Fitabase or Fitrockr)</td><td>Via platform</td><td>Via Fitabase (sync + battery)</td><td>Via platform</td><td>Fitabase Engage preview, Summer 2026</td><td>Via platform</td></tr>
+          <tr><td class="rowhead">Garmin</td><td>No (Labfront, Fitabase, Fitrockr)</td><td>Via platform</td><td>Via platform</td><td>Via platform</td><td>Labfront (all tiers); Fitrockr add-on</td><td>Via platform</td></tr>
+          <tr><td class="rowhead">Oura</td><td><strong class="hi">Research dashboards</strong> (Oura for Organizations)</td><td>Group management (vendor)</td><td>Adoption and attrition tracking (vendor)</td><td class="muted">Unclear</td><td>Tags only</td><td>Requires re-sizing</td></tr>
+          <tr><td class="rowhead">WHOOP</td><td>None public (Unite is enterprise)</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td>Journal not exportable</td><td>Membership-bound</td></tr>
+          <tr><td class="rowhead">Samsung</td><td>Research Stack portal, <strong>unmaintained since Oct 2024</strong></td><td class="tag tag--yes">Yes</td><td class="muted">Unclear</td><td class="muted">Unclear</td><td><strong class="hi">Yes</strong></td><td class="muted">Unclear</td></tr>
+          <tr><td class="rowhead">Polar</td><td>No (Team Pro is team-sport)</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td>Yes</td></tr>
+          <tr><td class="rowhead">Withings</td><td>Health Solutions services</td><td>Via partner/RPM</td><td>Via partner</td><td>Via Health Solutions</td><td>Via DCT partner</td><td>Yes</td></tr>
+          <tr><td class="rowhead">Empatica</td><td><strong class="hi">Care Portal</strong></td><td><strong class="hi">Yes</strong>; academic account 1 study, 1 site, 1,000 participants</td><td><strong class="hi">Yes, live wear-time</strong></td><td>Enterprise yes</td><td>None</td><td><strong class="hi">Yes, first-class</strong></td></tr>
+          <tr><td class="rowhead">Ametris</td><td><strong class="hi">CentrePoint</strong></td><td class="tag tag--yes">Yes</td><td><strong class="hi">Near-real-time + reports</strong></td><td><strong class="hi">Yes, 70+ countries</strong></td><td>Signant eCOA direction; not established</td><td>Yes</td></tr>
           <tr><td class="rowhead">Axivity / GENEActiv</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td class="tag tag--block">Impossible during wear</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td>Yes</td></tr>
         </tbody>
       </table>
@@ -711,17 +715,17 @@
       <table class="wide">
         <thead><tr><th class="colhead">Ecosystem</th><th>Form factor</th><th>Battery</th><th>Charging vs. sleep conflict?</th><th>Phone required?</th><th>BYOD viable?</th></tr></thead>
         <tbody>
-          <tr><td class="rowhead">Apple</td><td>Watch</td><td class="num">~1–2 days</td><td class="tag tag--block">Yes — significant</td><td>Yes (iPhone)</td><td><strong class="hi">Yes, excellent</strong></td></tr>
-          <tr><td class="rowhead">Fitbit</td><td>Band / watch</td><td class="num">~5–10 days</td><td class="tag tag--partial">Minor</td><td>Yes</td><td>Yes</td></tr>
-          <tr><td class="rowhead">Garmin</td><td>Watch</td><td class="num"><strong class="hi">7–14+ days</strong></td><td class="tag tag--yes">No</td><td>Yes (API); yes for SDK</td><td>Yes</td></tr>
-          <tr><td class="rowhead">Oura</td><td>Ring</td><td class="num">~4–7 days</td><td class="tag tag--partial">Minor</td><td>Yes — sleep sync depends on it</td><td>Partly (sizing)</td></tr>
-          <tr><td class="rowhead">WHOOP</td><td>Screenless strap</td><td class="num">~4–5 days, on-wrist swap</td><td class="tag tag--yes">No — no interruption</td><td>Yes</td><td>Partly (membership)</td></tr>
-          <tr><td class="rowhead">Samsung</td><td>Watch / ring</td><td class="num">~1.5–3 days (less streaming raw)</td><td class="tag tag--partial">Yes</td><td>Yes (Android)</td><td>Android only</td></tr>
-          <tr><td class="rowhead">Polar H10</td><td>Chest strap</td><td>Session-wear</td><td class="muted">n/a</td><td>No (onboard memory)</td><td class="tag tag--no">No</td></tr>
-          <tr><td class="rowhead">Withings</td><td>Hybrid watch / scale / BP / sleep mat</td><td class="num">~30 days (3–4 raw mode)</td><td class="tag tag--yes">No</td><td>No — cellular options</td><td>Partly</td></tr>
-          <tr><td class="rowhead">Empatica</td><td>Wristband</td><td class="num"><strong class="hi">7 days raw, 14 extended</strong></td><td class="tag tag--yes">No</td><td>Yes</td><td class="tag tag--no">No</td></tr>
-          <tr><td class="rowhead">Ametris</td><td>Research puck / watch</td><td class="num">~25–30 days</td><td class="tag tag--yes">No</td><td>No — cellular gateway</td><td class="tag tag--no">No</td></tr>
-          <tr><td class="rowhead">Axivity / GENEActiv</td><td>Sealed puck</td><td>Full recording window, no charging</td><td class="tag tag--yes">No</td><td>No</td><td class="tag tag--no">No</td></tr>
+          <tr><td class="rowhead">Apple</td><td>Watch</td><td class="num">About a day (non-Ultra)</td><td class="tag tag--block">Yes, significant</td><td>Yes (iPhone)</td><td><strong class="hi">Yes</strong>, iPhone owners</td></tr>
+          <tr><td class="rowhead">Fitbit</td><td>Band / watch</td><td class="num">Several days to a week+; Air up to 7 days (C)</td><td class="tag tag--partial">Minor</td><td>Yes</td><td>Yes</td></tr>
+          <tr><td class="rowhead">Garmin</td><td>Watch</td><td class="num"><strong class="hi">1–3 weeks</strong></td><td class="tag tag--yes">No</td><td>Yes (Garmin Connect)</td><td>Yes</td></tr>
+          <tr><td class="rowhead">Oura</td><td>Ring</td><td class="num">~4–7 days</td><td class="tag tag--partial">Minor</td><td>Yes; sleep sync depends on it</td><td>Partly (sizing, membership)</td></tr>
+          <tr><td class="rowhead">WHOOP</td><td>Screenless band</td><td>Charged on the wrist (slide-on pack)</td><td class="tag tag--yes">No interruption</td><td>Yes</td><td>Partly (membership)</td></tr>
+          <tr><td class="rowhead">Samsung</td><td>Watch / ring</td><td class="num">~1–2 days (less streaming raw)</td><td class="tag tag--partial">Yes</td><td>Yes (Android, Galaxy)</td><td>Galaxy only</td></tr>
+          <tr><td class="rowhead">Polar H10</td><td>Chest strap</td><td>Session wear</td><td class="muted">n/a</td><td>For ECG yes; HR-only logging no</td><td class="tag tag--no">No</td></tr>
+          <tr><td class="rowhead">Withings</td><td>Hybrid watch / scale / BP / sleep mat</td><td class="num">~30 days (3–4 raw mode)</td><td class="tag tag--yes">No</td><td>No for cellular devices</td><td>Partly</td></tr>
+          <tr><td class="rowhead">Empatica</td><td>Wristband</td><td class="num">Up to 14 days (Actigraphy Optimized); others not documented</td><td class="tag tag--yes">No</td><td class="muted">Not stated</td><td class="tag tag--no">No</td></tr>
+          <tr><td class="rowhead">Ametris</td><td>Research watch / puck</td><td class="num">Insight Watch 30 days; wGT3X-BT 25 days</td><td class="tag tag--yes">No</td><td>No, cellular gateway</td><td class="tag tag--no">No</td></tr>
+          <tr><td class="rowhead">Axivity / GENEActiv</td><td>Sealed puck</td><td>AX3 14 days at 100 Hz; no charging during wear</td><td class="tag tag--yes">No</td><td>No</td><td class="tag tag--no">No</td></tr>
         </tbody>
       </table>
     </div>
@@ -735,19 +739,20 @@
       <table class="wide">
         <thead><tr><th class="colhead">Ecosystem</th><th>Device cost</th><th>Recurring per-participant</th><th>API / platform fee</th><th>Pricing public?</th></tr></thead>
         <tbody>
-          <tr><td class="rowhead">Apple</td><td>Consumer retail</td><td class="tag tag--yes">None</td><td>Free ($99/yr dev account)</td><td>Device yes; total cost is engineering</td></tr>
-          <tr><td class="rowhead">Fitbit / Google</td><td class="num">~$80–180</td><td>Premium for some metrics</td><td>API free; Fitabase non-public</td><td>Partly</td></tr>
-          <tr><td class="rowhead">Garmin</td><td class="num">~$150–1,000+</td><td class="tag tag--yes">None</td><td>API free; SDK licence fee or device MOQ, non-public</td><td>Devices only</td></tr>
-          <tr><td class="rowhead">Oura</td><td class="num">Ring 5 $399–$499</td><td class="num"><strong class="hi">$69.99/yr mandatory</strong></td><td>API free</td><td>Mostly</td></tr>
-          <tr><td class="rowhead">WHOOP</td><td>Included in membership</td><td class="num"><strong class="hi">$199 / $239 / $359 per yr</strong> (One / Peak / Life=MG)</td><td>No published fee</td><td><strong class="hi">Yes</strong></td></tr>
-          <tr><td class="rowhead">Samsung</td><td>Consumer retail</td><td class="tag tag--yes">None</td><td>No published fee; Research Stack free/open</td><td>Devices only</td></tr>
-          <tr><td class="rowhead">Polar</td><td class="num"><strong class="hi">~$90</strong> (H10 / Verity Sense)</td><td class="tag tag--yes">None</td><td><strong class="hi">Free, open SDK</strong></td><td><strong class="hi">Yes</strong></td></tr>
-          <tr><td class="rowhead">Movesense</td><td class="muted">Not public</td><td class="tag tag--yes">None</td><td>No licence cost</td><td>Partly</td></tr>
-          <tr><td class="rowhead">Labfront (Garmin/Movesense platform)</td><td class="muted">—</td><td class="num"><strong class="hi">Free / $500 / $1,250/yr</strong> + $10–25/extra</td><td>Included</td><td><strong class="hi">Yes — only platform that publishes prices</strong></td></tr>
-          <tr><td class="rowhead">Withings</td><td class="num">~$100–350</td><td>Varies</td><td>Research API contracted, non-public</td><td>Devices only</td></tr>
-          <tr><td class="rowhead">Empatica</td><td class="num"><strong class="hi">From $1,166.40</strong>; academic bundle $1,749.60/3yr</td><td>Included in bundle</td><td>Included</td><td><strong class="hi">Yes, for academic</strong></td></tr>
-          <tr><td class="rowhead">Ametris</td><td class="num">~$325–1,016 reported</td><td class="muted">Non-public</td><td>ActiLife ~$1,695, CentrePoint ~$3,500/yr <em class="foot">(third-party, dated)</em></td><td class="tag tag--block">No</td></tr>
-          <tr><td class="rowhead">Axivity / GENEActiv</td><td>Low–mid hundreds</td><td class="tag tag--yes">None</td><td>None — open toolchain</td><td>No (quote), but no recurring cost</td></tr>
+          <tr><td class="rowhead">Apple</td><td>Consumer retail</td><td class="tag tag--yes">None</td><td>Apple Developer Program fee</td><td>Devices yes; main cost is engineering</td></tr>
+          <tr><td class="rowhead">Fitbit / Google</td><td class="num">Fitbit Air $99.99 (C)</td><td>Premium generally not required</td><td>No API fee; CASA $500–$4,500; Fitabase quote</td><td>Partly</td></tr>
+          <tr><td class="rowhead">Garmin</td><td>Wide retail range</td><td class="tag tag--yes">None</td><td>Enhanced BBI licence fee for commercial use; SDK licence or MOQ</td><td>Devices only</td></tr>
+          <tr><td class="rowhead">Oura</td><td class="num">Ring 5 $399–$499 (C)</td><td class="num"><strong class="hi">$69.99/yr mandatory</strong></td><td>API free; research offering unpriced</td><td>Mostly</td></tr>
+          <tr><td class="rowhead">WHOOP</td><td>Included in membership</td><td class="num"><strong class="hi">~$199 / $239 / $359 per yr</strong> (R)</td><td>No charge</td><td>Reported only</td></tr>
+          <tr><td class="rowhead">Samsung</td><td>Consumer retail</td><td class="tag tag--yes">None</td><td>No SDK fee documented</td><td>Devices only</td></tr>
+          <tr><td class="rowhead">Polar</td><td class="num"><strong class="hi">H10 $104.95</strong>; Verity Sense ~$95</td><td class="tag tag--yes">None</td><td><strong class="hi">Free, open SDK</strong></td><td><strong class="hi">Yes</strong></td></tr>
+          <tr><td class="rowhead">Movesense</td><td class="num"><strong class="hi">MD €349</strong> ex VAT</td><td class="tag tag--yes">None</td><td>No licence cost</td><td><strong class="hi">Yes</strong></td></tr>
+          <tr><td class="rowhead">Labfront</td><td class="muted">n/a</td><td class="num"><strong class="hi">Free / $500 / $1,250 per yr</strong> + $10–25 per extra participant</td><td>Analytics from $3,000 + $50/participant</td><td><strong class="hi">Yes</strong></td></tr>
+          <tr><td class="rowhead">Fitrockr</td><td class="muted">n/a</td><td class="num">From €50 / €150 per month</td><td>Per device licence; add-ons extra</td><td><strong class="hi">Yes</strong></td></tr>
+          <tr><td class="rowhead">Withings</td><td>Consumer retail</td><td><strong class="hi">Withings+ from 12 Oct 2026</strong> (new accounts, free plan)</td><td>Paid plans and raw-data contract non-public</td><td>Plans yes; prices no</td></tr>
+          <tr><td class="rowhead">Empatica</td><td class="num"><strong class="hi">EmbracePlus $1,166.40</strong>; EmbraceMini $641.52</td><td>Included in bundle</td><td>3-yr academic $1,749.60 (Plus) / $1,137.24 (Mini)</td><td><strong class="hi">Yes, for academic</strong></td></tr>
+          <tr><td class="rowhead">Ametris</td><td class="num">Quote; $325–1,016 (R)</td><td class="muted">Non-public</td><td>ActiLife ~$1,695, CentrePoint ~$3,500/yr <em class="foot">(competitor source, dated)</em></td><td class="tag tag--block">No</td></tr>
+          <tr><td class="rowhead">Axivity / GENEActiv</td><td class="num">AX3 £139, AX6 £199 ex VAT; GENEActiv quote</td><td class="tag tag--yes">None</td><td>None, open toolchain</td><td>Axivity yes; GENEActiv no</td></tr>
         </tbody>
       </table>
     </div>
@@ -756,22 +761,22 @@
   <!-- ============ TABLE 8 ============ -->
   <section class="tsec" id="t8">
     <div class="tsec-head"><span class="tnum">TABLE 08</span><h2 class="thead">Privacy, security &amp; compliance posture</h2></div>
-    <p class="tcap">Every <span class="tag tag--partial">Unclear</span> here is an open vendor question, not an inference — see the knowledge base's unresolved-questions register before assuming an answer either way.</p>
+    <p class="tcap">Vendor compliance statements are the vendor's own; no certificate was checked. Every <span class="tag tag--partial">Unclear</span> is an open vendor question, not an inference.</p>
     <div class="table-scroll">
       <table class="wide">
-        <thead><tr><th class="colhead">Ecosystem</th><th>HIPAA BAA</th><th>GDPR/DPA</th><th>SOC 2 / ISO</th><th>Regulatory clearance</th><th>Self-hosting / custody</th></tr></thead>
+        <thead><tr><th class="colhead">Ecosystem</th><th>HIPAA / BAA</th><th>GDPR/DPA</th><th>SOC 2 / ISO</th><th>Regulatory clearance</th><th>Self-hosting / custody</th></tr></thead>
         <tbody>
-          <tr><td class="rowhead">Apple</td><td class="tag tag--yes">N/A — not in the data path</td><td>Researcher's obligation</td><td class="muted">n/a</td><td>ECG, AFib, sleep apnea, hypertension features cleared</td><td><strong class="hi">Full — researcher holds all data</strong></td></tr>
-          <tr><td class="rowhead">Fitbit / Google</td><td class="tag tag--partial">Unclear</td><td class="tag tag--partial">Unclear</td><td class="tag tag--partial">Unclear</td><td>ECG / AFib features cleared</td><td class="tag tag--no">No</td></tr>
-          <tr><td class="rowhead">Garmin</td><td>Standard SDK claimed HIPAA-compliant (vendor claim)</td><td class="tag tag--partial">Unclear</td><td class="tag tag--partial">Unclear</td><td>Some ECG features</td><td><strong class="hi">Yes via Standard SDK</strong></td></tr>
-          <tr><td class="rowhead">Oura</td><td class="tag tag--partial">Unclear</td><td>Unclear (EU company)</td><td class="tag tag--partial">Unclear</td><td>Limited</td><td class="tag tag--no">No</td></tr>
-          <tr><td class="rowhead">WHOOP</td><td class="tag tag--block">Explicitly disclaimed</td><td class="tag tag--partial">Unclear</td><td class="tag tag--partial">Unclear</td><td>MG ECG / BP claimed</td><td class="tag tag--block">No — terms prohibit permanent copies</td></tr>
-          <tr><td class="rowhead">Samsung</td><td class="tag tag--partial">Unclear</td><td class="tag tag--partial">Unclear</td><td class="tag tag--partial">Unclear</td><td>Some features cleared</td><td><strong class="hi">Yes — Research Stack self-deployed</strong></td></tr>
-          <tr><td class="rowhead">Polar</td><td>Unclear (Flow)</td><td>Unclear (EU company)</td><td class="tag tag--partial">Unclear</td><td>H10 is a reference-grade sensor</td><td><strong class="hi">Yes — BLE path has no processor</strong></td></tr>
-          <tr><td class="rowhead">Withings</td><td class="tag tag--partial">Unclear</td><td>Unclear (EU company)</td><td class="tag tag--partial">Unclear</td><td>Medical-grade, multiple clearances</td><td class="tag tag--no">No</td></tr>
-          <tr><td class="rowhead">Empatica</td><td class="tag tag--partial">Unclear</td><td class="tag tag--partial">Unclear</td><td class="tag tag--partial">Unclear</td><td><strong class="hi">FDA-cleared platform + biomarkers; CE</strong></td><td class="tag tag--no">No</td></tr>
-          <tr><td class="rowhead">Ametris</td><td class="tag tag--partial">Unclear</td><td class="tag tag--partial">Unclear</td><td class="tag tag--partial">Unclear</td><td><strong class="hi">FDA-cleared medical-grade; SaMD</strong></td><td>Partial (ActiLife offline)</td></tr>
-          <tr><td class="rowhead">Axivity / GENEActiv</td><td class="tag tag--yes">N/A — no processor exists</td><td class="tag tag--yes">Trivial — no processor</td><td class="muted">n/a</td><td>None (research instruments)</td><td><strong class="hi">Full</strong></td></tr>
+          <tr><td class="rowhead">Apple</td><td class="tag tag--yes">N/A, not in the data path</td><td>Researcher's obligation</td><td class="muted">n/a</td><td>Hypertension notifications K250507</td><td><strong class="hi">Full, researcher holds all data</strong></td></tr>
+          <tr><td class="rowhead">Fitbit / Google</td><td class="tag tag--block">No BAA; PHI only with written consent</td><td>Health Research Policy obligations</td><td class="tag tag--partial">Unclear</td><td class="muted">Not itemised</td><td class="tag tag--no">No</td></tr>
+          <tr><td class="rowhead">Garmin</td><td>Standard SDK "HIPAA-compliant" (vendor, C)</td><td class="tag tag--partial">Unclear</td><td class="tag tag--partial">Unclear</td><td class="muted">Not itemised</td><td><strong class="hi">Standard SDK keeps data out of Garmin Connect</strong></td></tr>
+          <tr><td class="rowhead">Oura</td><td>HIPAA for healthcare partners (vendor, C); no BAA published</td><td>GDPR (vendor); retention only as strictly necessary</td><td>HITRUST; annual SOC 2-style audit (C)</td><td class="muted">None documented</td><td class="tag tag--no">No</td></tr>
+          <tr><td class="rowhead">WHOOP</td><td class="tag tag--block">No HIPAA obligations unless agreed in writing</td><td class="tag tag--partial">Unclear</td><td class="tag tag--partial">Unclear</td><td><strong>ECG K243236 cleared</strong>; Blood Pressure Insights not cleared</td><td class="tag tag--block">No; terms bar permanent copies and AI/ML training</td></tr>
+          <tr><td class="rowhead">Samsung</td><td>No HIPAA/BAA/DPA language; no Samsung server in path</td><td>Researcher's obligation</td><td class="tag tag--partial">Unclear</td><td class="muted">Not itemised</td><td><strong class="hi">Yes, on-device; Research Stack self-hosted</strong></td></tr>
+          <tr><td class="rowhead">Polar</td><td>No HIPAA/BAA language</td><td>Polar controller for Flow; processor only for Team Pro</td><td class="muted">Not checked</td><td class="muted">None documented</td><td><strong class="hi">Yes, BLE path has no processor</strong></td></tr>
+          <tr><td class="rowhead">Withings</td><td>HIPAA stated (C); <strong>BAA on paid plans only</strong></td><td>GDPR, HDS stated (C); DPA on paid plans</td><td>ISO 27001:2017 stated (C)</td><td>Eight 510(k)s incl. BP, Sleep Rx, ECG App</td><td>No; EU or US medical cloud</td></tr>
+          <tr><td class="rowhead">Empatica</td><td>HIPAA-compliant US hosting stated (C); no BAA found</td><td><strong>Published DPA</strong>; service + 10 years retention</td><td>ISO 27001:2022, ISO 13485 (C)</td><td><strong class="hi">K221282, K230457, K242737, K260374, K252981</strong></td><td class="tag tag--no">No</td></tr>
+          <tr><td class="rowhead">Ametris</td><td>No BAA or HIPAA statement</td><td><strong>DPA with SCCs; DPF</strong></td><td>ISO 13485 + MDSAP; ISO 27001:2022 listed (C)</td><td><strong class="hi">K231532 (LEAP), K181077 (Insight Watch)</strong></td><td>Cloud; ActiLife local</td></tr>
+          <tr><td class="rowhead">Axivity / GENEActiv</td><td class="tag tag--yes">N/A, no processor exists</td><td class="tag tag--yes">Trivial, no processor</td><td class="muted">n/a</td><td>GENEActiv moving to EU MDR</td><td><strong class="hi">Full</strong></td></tr>
         </tbody>
       </table>
     </div>
@@ -780,11 +785,11 @@
   <!-- ============ TABLE 9 ============ -->
   <section class="tsec" id="t9">
     <div class="tsec-head"><span class="tnum">TABLE 09</span><h2 class="thead">Evidence &amp; validation summary</h2></div>
-    <p class="tcap">Sleep-staging agreement vs. polysomnography, drawn from two independently read studies. Not a ranking — see the findings below the table before citing either number.</p>
-    <div class="tnote"><strong>Reconciled 2026-08-24</strong> against a companion sponsorship-tiered bibliography (<span class="mono">research-library-wearables.md</span>, ~90 papers across Oura/WHOOP/Apple Watch, each tagged vendor-employee / vendor-funded / independent with a Verified–Corroborated–Unclear confidence marker). Two rows below changed as a result — a direct Oura-vs-WHOOP comparison was found, and Apple's non-cardiac validation record turned out thinner than a single "Apple Heart Study" citation implies.</div>
+    <p class="tcap">Sleep-staging agreement vs. polysomnography from the two largest current-class studies. Not a ranking; see the findings below the table before citing either number.</p>
+    <div class="tnote"><strong>Not the only PSG studies.</strong> Miller 2022 and Grandner 2023 tested Oura Gen2/V2 and WHOOP 3.0 under one protocol (Miller: four-stage κ WHOOP 0.44, Oura 0.43, in a WHOOP-supported lab), and Lee 2023 adds Galaxy Watch 5 (κ 0.42), Fitbit Sense 2 (0.42), Oura Ring 3 (0.35) and Apple Watch 8 (0.30). See <span class="mono">validation-evidence.md</span> §3c.</div>
     <div class="table-scroll">
       <table class="narrow">
-        <thead><tr><th>Device</th><th>Robbins 2024 (N=35, healthy, <strong style="color:var(--danger)">Oura-funded</strong>) — four-stage κ</th><th>Schyvens 2025 (N=62, independent) — overall κ</th></tr></thead>
+        <thead><tr><th>Device</th><th>Robbins 2024 (N=35, healthy, <strong style="color:var(--danger)">Oura-funded</strong>), four-stage κ</th><th>Schyvens 2025 (N=62, independent), overall κ</th></tr></thead>
         <tbody>
           <tr><td class="rowhead">Oura Gen3</td><td class="num"><strong class="hi">0.65</strong></td><td class="muted">not tested</td></tr>
           <tr><td class="rowhead">Apple Watch S8</td><td class="num">0.60</td><td class="num"><strong class="hi">0.53</strong></td></tr>
@@ -801,15 +806,15 @@
     <div class="table-scroll">
       <table class="narrow">
         <tbody>
-          <tr><td class="rowhead" style="width:220px">Deep sleep &amp; REM are unreliable on every device</td><td>Robbins ICCs — deep sleep: Oura <strong class="hi">0.32</strong>, Fitbit 0.36, Apple <strong class="hi">0.13</strong>; REM: Oura <strong class="hi">0.27</strong>, Fitbit <strong class="hi">0.13</strong>, Apple 0.37. All poor. <strong>Stage-minute outcomes are largely device noise.</strong></td></tr>
-          <tr><td class="rowhead">TST and SE are the defensible endpoints</td><td>ICC 0.74–0.85 across devices</td></tr>
-          <tr><td class="rowhead">Every device underestimates WASO</td><td>−12 to −48 min. Fragmentation endpoints are systematically flattered</td></tr>
-          <tr><td class="rowhead">High sensitivity, poor specificity — universal</td><td>Sleep detection 92–96%; wake detection <strong class="hi">27–52%</strong></td></tr>
-          <tr><td class="rowhead">Data loss is a real design risk</td><td>Schyvens: Garmin failed <strong class="hi">18/43</strong> nights, Apple <strong class="hi">15/35</strong>, in a supervised lab. Withings and Oura lost zero</td></tr>
+          <tr><td class="rowhead" style="width:220px">Deep sleep &amp; REM are unreliable on every device</td><td>Robbins ICCs, deep sleep: Oura <strong class="hi">0.32</strong>, Fitbit 0.36, Apple <strong class="hi">0.13</strong>; REM: Oura <strong class="hi">0.27</strong>, Fitbit <strong class="hi">0.13</strong>, Apple 0.37. All poor. <strong>Stage-minute outcomes are largely device noise.</strong></td></tr>
+          <tr><td class="rowhead">TST and SE are the defensible endpoints</td><td>Robbins ICC: Oura 0.74, Apple 0.85, Fitbit 0.56</td></tr>
+          <tr><td class="rowhead">Every device underestimates WASO</td><td>Schyvens: −12 to −48 min. Fragmentation endpoints are systematically flattered</td></tr>
+          <tr><td class="rowhead">High sensitivity, poor specificity</td><td>Schyvens sleep detection 92–96%; specificity <strong class="hi">29–52%</strong></td></tr>
+          <tr><td class="rowhead">Data loss is a real design risk</td><td>Schyvens: Garmin failed <strong class="hi">18/43</strong> nights, Apple <strong class="hi">15/35</strong>, Withings 0/41, in a supervised lab. Robbins: Oura 0/35. Oura was not in Schyvens</td></tr>
           <tr><td class="rowhead">Robbins 2024 has a declared conflict</td><td>Funded by Oura; lead author on Oura's Medical Advisory Board and a paid consultant. Never cite κ=0.65 without it</td></tr>
-          <tr><td class="rowhead">Oura beats WHOOP on resting HR/HRV — now a direct result</td><td>Dial et al. 2025 put Oura Gen3/Gen4, WHOOP 4.0, Garmin and Polar on the <strong>same 13 participants for 536 nights</strong> vs. an ECG reference: Oura Gen4 CCC=0.98, Gen3 CCC=0.97, <strong class="hi">WHOOP 4.0 CCC=0.91</strong> (worst of the four). <em class="foot">Corroborated, not Verified — full text still blocked.</em> <strong>PSG-scored sleep-stage kappa is still an estimate</strong> — Robbins excluded WHOOP, Schyvens excluded Oura</td></tr>
+          <tr><td class="rowhead">Oura ahead of WHOOP on resting HR/HRV, directly measured</td><td>Dial et al. 2025 (AFRL-funded, <strong>Verified</strong>): 13 participants, 536 nights, Polar H10 reference. Resting HR CCC: Oura Gen4 0.98, Gen3 0.97, <strong class="hi">WHOOP 4.0 0.91</strong>, Polar Grit X Pro 0.86. HRV CCC: Oura 0.99 / 0.97, WHOOP 0.94, Garmin 0.87, Polar 0.82. <strong>No PSG comparison of current Oura and WHOOP hardware exists</strong></td></tr>
           <tr><td class="rowhead">No consumer brand is acceptable for energy expenditure</td><td>Unchanged across six years of reviews</td></tr>
-          <tr><td class="rowhead">Current hardware is untested</td><td>Oura Ring 5, WHOOP 5.0/MG, Apple Series 11, Fitbit Air all postdate every study above</td></tr>
+          <tr><td class="rowhead">Current hardware is largely untested</td><td>Oura Ring 5, WHOOP 5.0/MG, Apple Series 11, Fitbit Air all postdate every PSG study above</td></tr>
         </tbody>
       </table>
     </div>
@@ -817,20 +822,20 @@
     <p class="subhead">Non-sleep evidence positions</p>
     <div class="table-scroll">
       <table class="wide">
-        <thead><tr><th class="colhead">Ecosystem</th><th>Strongest evidence asset</th></tr></thead>
+        <thead><tr><th class="colhead">Ecosystem</th><th>Strongest evidence asset, with its caveat</th></tr></thead>
         <tbody>
-          <tr><td class="rowhead">Apple</td><td><strong class="hi">Apple Heart Study</strong> — AFib notification at scale, 419,297 participants — <strong>itself Apple-sponsored</strong>, the same disclosure category this table already flags for Oura. Outside cardiac rhythm the independent record is thinner than that one citation implies: VO2max underestimated 13.31% MAPE ("not sufficiently accurate to inform clinical decision-making"), HRV fails equivalence testing (28.88% MAPE), wheelchair-user fall detection <strong class="hi">4.7% sensitivity</strong></td></tr>
-          <tr><td class="rowhead">Fitbit / Google</td><td><em><strong class="hi">All of Us</strong></em> — 59,000+ participants, minute-level, EHR/genomics-linked</td></tr>
-          <tr><td class="rowhead">Garmin</td><td>Enhanced BBI vs ECG: mean error 0.506 ms, SD 8.55 ms, r=0.975 — but N=1, one night, manufacturer-published</td></tr>
-          <tr><td class="rowhead">Oura</td><td>Robbins 2024 (Oura-funded, conflict disclosed) + temperature/illness-onset literature + <strong class="hi">Dial et al. 2025 head-to-head vs WHOOP</strong> (best resting-HR/HRV agreement of five devices). Dominates the smart-ring literature by volume (72% of 107 studies in one review) — but 65% of that literature carries moderate-to-high risk of bias</td></tr>
-          <tr><td class="rowhead">WHOOP</td><td>Schyvens 2025 (independent) — best deep-sleep accuracy (69.6%), fourth-best overall agreement; <strong class="hi">worst resting-HR/HRV agreement of five devices</strong> in Dial et al. 2025 (CCC=0.91). WHOOP's own most-cited flagship (Berryhill 2020, JCSM) is <strong class="hi">WHOOP-funded</strong> — same pattern as Robbins/Oura</td></tr>
-          <tr><td class="rowhead">Samsung</td><td>High step-count validity in cross-brand reviews; absent from every PSG comparison</td></tr>
-          <tr><td class="rowhead">Polar</td><td><strong class="hi">Used as the criterion device</strong> in others' validations — revealed preference of the field</td></tr>
-          <tr><td class="rowhead">Withings</td><td>Medical-grade validation for BP and weight, not sleep</td></tr>
-          <tr><td class="rowhead">Empatica</td><td><strong class="hi">FDA-cleared platform and cleared digital biomarkers</strong></td></tr>
-          <tr><td class="rowhead">Movesense</td><td>Class IIa MDR 2017/745 on the MD variant; no independent validation located</td></tr>
-          <tr><td class="rowhead">Verily</td><td>Multiple FDA 510(k) clearances incl. on-demand ECG and irregular pulse</td></tr>
-          <tr><td class="rowhead">Ametris</td><td><strong class="hi">Is the actigraphy reference standard</strong></td></tr>
+          <tr><td class="rowhead">Apple</td><td><strong class="hi">Apple Heart Study</strong>, 419,297 participants, <strong>itself Apple-sponsored</strong>. Outside cardiac rhythm the independent record is mixed: VO2max MAPE 13.31%, HRV fails equivalence (MAPE 28.88%), wheelchair-user fall detection <strong class="hi">4.7% sensitivity</strong>. Hypertension notifications: vendor validation only, sensitivity 41.2%</td></tr>
+          <tr><td class="rowhead">Fitbit / Google</td><td>Most-studied brand; HR tends to be underestimated; <em><strong class="hi">All of Us</strong></em>, 59,000+ participants, minute-level, EHR-linked</td></tr>
+          <tr><td class="rowhead">Garmin</td><td>Enhanced BBI vs ECG: mean error 0.506 ms, SD 8.55 ms, r=0.975, but N=1, one night, manufacturer-published</td></tr>
+          <tr><td class="rowhead">Oura</td><td>Robbins 2024 (Oura-funded) and <strong class="hi">Dial et al. 2025</strong> (independent, best resting HR/HRV agreement of the devices tested). Independent PSG results mixed (Miller 2022, Lee 2023). 72% of 107 smart-ring studies in one review used Oura; 65% of the 107 carry moderate-to-high risk of bias</td></tr>
+          <tr><td class="rowhead">WHOOP</td><td>Schyvens 2025: best deep-sleep accuracy (69.6%), fourth of six on κ. Behind Oura in Dial 2025. Berryhill 2020 is <strong class="hi">WHOOP-funded</strong>. No 5.0/MG validation located</td></tr>
+          <tr><td class="rowhead">Samsung</td><td>Lee 2023 Galaxy Watch 5 κ 0.42; Alavi 2026 apnoea AUROC 0.94 (Samsung-funded); Browne 2024 SpO2 RMSE 2.54% (Samsung grant)</td></tr>
+          <tr><td class="rowhead">Polar</td><td><strong class="hi">Used as the criterion device</strong> in others' validations</td></tr>
+          <tr><td class="rowhead">Withings</td><td>Cleared BP, thermometer, Sleep Rx and ECG devices; ScanWatch sleep staging poor, but zero data loss</td></tr>
+          <tr><td class="rowhead">Empatica</td><td><strong class="hi">FDA-cleared platform and biomarkers</strong>; wrist EDA agrees poorly with palmar EDA in E4 studies</td></tr>
+          <tr><td class="rowhead">Movesense</td><td>Class IIa MDR on the MD; <strong>independent lab validations</strong> of ECG R-R/HRV (N=21 each, sensors supplied by Movesense) and IMU step timing</td></tr>
+          <tr><td class="rowhead">Verily</td><td>FDA 510(k)s incl. on-demand ECG and irregular pulse (C)</td></tr>
+          <tr><td class="rowhead">Ametris</td><td><strong class="hi">The actigraphy reference standard</strong>; current devices not shown equivalent to legacy ones</td></tr>
           <tr><td class="rowhead">Axivity / GENEActiv</td><td><strong class="hi">UK Biobank, 100,000+</strong>, open reproducible toolchain</td></tr>
         </tbody>
       </table>
@@ -840,48 +845,49 @@
   <!-- ============ TABLE 10 ============ -->
   <section class="tsec" id="t10">
     <div class="tsec-head"><span class="tnum">TABLE 10</span><h2 class="thead">Meaningful differentiators</h2></div>
-    <p class="tcap">The one thing each platform does that none of the others do — not a feature list.</p>
+    <p class="tcap">What matters about each platform, and the limitation that most often rules it out.</p>
     <div class="diffgrid">
-      <div class="diffcard"><div class="dname">Apple</div><p>SensorKit behavioural/phone-usage signals plus deep retrospective history at enrollment, with <strong>no vendor in the data path</strong>.</p></div>
-      <div class="diffcard"><div class="dname">Fitbit / Google</div><p>Cheapest devices, largest literature, and an existing <strong>59,000-participant open dataset</strong> requiring no procurement at all.</p></div>
-      <div class="diffcard"><div class="dname">Garmin</div><p><strong>Raw accelerometry and beat-to-beat intervals</strong> at consumer cost, with 2-week battery and no subscription.</p></div>
-      <div class="diffcard"><div class="dname">Oura</div><p>Best measured sleep-staging agreement in a form factor people actually keep on overnight.</p></div>
-      <div class="diffcard"><div class="dname">WHOOP</div><p>Uninterrupted 24/7 wear (on-wrist battery swap) with <strong>no screen to change behaviour</strong>.</p></div>
-      <div class="diffcard"><div class="dname">Samsung</div><p>Raw PPG (IR + Red), raw ECG, and IBI from a mainstream smartwatch — <strong>plus</strong> an open-source research backend and portal.</p></div>
-      <div class="diffcard"><div class="dname">Polar</div><p><strong>Raw ECG from a $90 device</strong> via an open GitHub SDK, with no cloud, no approval, and no fee.</p></div>
-      <div class="diffcard"><div class="dname">Withings</div><p>Cellular-connected medical-grade home devices that remove the participant's phone from the data path, plus a zero-burden under-mattress sleep mat.</p></div>
-      <div class="diffcard"><div class="dname">Empatica</div><p><strong>Raw EDA</strong> — available nowhere else here — with FDA clearance and real study management.</p></div>
-      <div class="diffcard"><div class="dname">Ametris</div><p>The actigraphy reference standard, with regulated-trial operations in 70+ countries.</p></div>
-      <div class="diffcard"><div class="dname">Axivity / GENEActiv</div><p><strong>Fully open</strong> hardware, firmware, and analysis — no vendor even exists for governance purposes — with direct comparability to UK Biobank.</p></div>
-      <div class="diffcard"><div class="dname">Movesense</div><p>The only sensor here you can <strong>reprogram</strong> — custom firmware, no licence cost — at 512 Hz ECG and 1.6 kHz IMU, with EU Class IIa certification.</p></div>
-      <div class="diffcard"><div class="dname">Ultrahuman</div><p>The only <strong>ring</strong> exposing raw PPG, and the only ecosystem pairing ring biometrics with CGM in one API.</p></div>
-      <div class="diffcard"><div class="dname">Biostrap</div><p>Raw PPG plus configurable sampling plus integrated surveys plus a participant dashboard, with leg-worn gait/balance/jump metrics no one else offers.</p></div>
-      <div class="diffcard"><div class="dname">Verily Study Watch</div><p>ECG <strong>and</strong> EDA <strong>and</strong> inertial in one FDA-cleared device with weeks of onboard raw storage — never sold to consumers.</p></div>
-      <div class="diffcard"><div class="dname">Labfront</div><p>The only research platform here that <strong>publishes its pricing</strong>, with a free 5-participant tier and EMA included at every level.</p></div>
+      <div class="diffcard"><div class="dname">Apple</div><p><strong>No vendor in the data path</strong>, full history at enrolment, and SensorKit PPG, ECG and accelerometer samples for approved studies. Limitation: iPhone only, no server API.</p></div>
+      <div class="diffcard"><div class="dname">Fitbit / Google</div><p>Deepest validation literature and a <strong>59,000-participant open dataset</strong>. Limitation: legacy API off 30 Oct 2026; no new Google Health API projects.</p></div>
+      <div class="diffcard"><div class="dname">Garmin</div><p>Weeks of battery, no subscription, and <strong>Enhanced BBI with per-beat confidence</strong>. Limitation: new direct access paused (C); raw accelerometry via the enterprise SDK only.</p></div>
+      <div class="diffcard"><div class="dname">Oura</div><p>Nightly RMSSD and temperature from a ring people keep on overnight; best resting HR/HRV in Dial 2025. Limitation: membership required; <strong>API terms limit retention and bar AI training</strong>.</p></div>
+      <div class="diffcard"><div class="dname">WHOOP</div><p>Charged on the wrist, so <strong>no charging gap</strong>, and no screen. Limitation: derived scores only; terms bar permanent copies and AI training.</p></div>
+      <div class="diffcard"><div class="dname">Samsung</div><p>Raw PPG (green, IR, red), raw ECG at 500 Hz, IBI and <strong>raw EDA at 1 Hz (Watch8)</strong> from a mainstream watch. Limitation: Galaxy only; Research Stack unmaintained since Oct 2024.</p></div>
+      <div class="diffcard"><div class="dname">Polar</div><p><strong>Raw ECG from a $104.95 H10</strong> and 22-bit PPG from Verity Sense via an open SDK, with no cloud, approval or fee. Limitation: session devices.</p></div>
+      <div class="diffcard"><div class="dname">Withings</div><p>Cellular devices that remove the participant's phone from the data path, plus blood pressure and an under-mattress sleep mat. Limitation: raw data by contract; Withings+ from 12 Oct 2026.</p></div>
+      <div class="diffcard"><div class="dname">Empatica</div><p><strong>Raw wrist EDA</strong> with an FDA-cleared EDA parameter and a published-price academic plan with study management. Limitation: most rates unpublished; no streaming.</p></div>
+      <div class="diffcard"><div class="dname">Ametris</div><p>The actigraphy reference standard, with regulated-trial operations in 70+ countries. Limitation: non-public pricing; corporate transition.</p></div>
+      <div class="diffcard"><div class="dname">Axivity / GENEActiv</div><p><strong>Open</strong> firmware, software and hardware (Axivity), no vendor in the data path, AX3 to 3,200 Hz, and comparability with UK Biobank. Limitation: movement only.</p></div>
+      <div class="diffcard"><div class="dname">Movesense</div><p>Custom sensor firmware with <strong>no licence cost</strong>, 512 Hz ECG and 1.6 kHz IMU (C), EU Class IIa on the MD. Limitation: proprietary evaluation licence; session wear.</p></div>
+      <div class="diffcard"><div class="dname">Ultrahuman</div><p>The only published <strong>ring</strong> route to a PPG data stream found, and ring plus CGM in one API (R). Limitation: raw format undocumented; no validation.</p></div>
+      <div class="diffcard"><div class="dname">Biostrap / Sensor Bio</div><p>Raw PPG, configurable sampling, surveys and a participant dashboard in one product (vendor). Limitation: rebranded; no rates or prices published.</p></div>
+      <div class="diffcard"><div class="dname">Verily Study Watch</div><p>ECG <strong>and</strong> EDA <strong>and</strong> inertial in one FDA-cleared research device (C). Limitation: enterprise only; current status Unclear.</p></div>
+      <div class="diffcard"><div class="dname">Labfront</div><p><strong>Published pricing</strong> (as do Fitrockr, Terra and Thryve), a free 5-participant tier and EMA at every level. Limitation: no Fitbit.</p></div>
     </div>
   </section>
 
   <!-- ============ TABLE 11 ============ -->
   <section class="tsec" id="t11">
     <div class="tsec-head"><span class="tnum">TABLE 11</span><h2 class="thead">Study-operations platforms</h2></div>
-    <p class="tcap">The management layer most device vendors don't provide — compared head to head.</p>
+    <p class="tcap">The management layer most device vendors don't provide, compared head to head. The full matrix also covers Fitrockr.</p>
     <div class="table-scroll">
       <table class="wide">
         <thead><tr><th class="colhead">&nbsp;</th><th>Labfront</th><th>Fitabase</th><th>Empatica Care Portal</th><th>Ametris CentrePoint</th><th>Samsung Research Stack</th></tr></thead>
         <tbody>
-          <tr><td class="rowhead">Devices</td><td>Garmin, Movesense, Dexcom</td><td><strong class="hi">Fitbit</strong>, Garmin</td><td>EmbracePlus only</td><td>ActiGraph LEAP, Insight Watch</td><td>Galaxy Watch / Ring</td></tr>
+          <tr><td class="rowhead">Devices</td><td>Garmin, Movesense, Dexcom</td><td><strong class="hi">Fitbit</strong>, Garmin</td><td>EmbracePlus, EmbraceMini</td><td>LEAP, Insight Watch</td><td>Galaxy Watch (Watch5 tested)</td></tr>
           <tr><td class="rowhead">Pricing public?</td><td class="tag tag--yes">Yes</td><td class="tag tag--no">No</td><td class="tag tag--yes">Yes (academic)</td><td class="tag tag--no">No</td><td>Free / open source</td></tr>
-          <tr><td class="rowhead">Cost</td><td class="num">Free (5p) / $500 (20p) / $1,250 (20p, all)</td><td>Custom quote</td><td class="num">$1,749.60/device/3yr academic</td><td>Five figures reported</td><td class="num">$0</td></tr>
-          <tr><td class="rowhead">EMA / surveys</td><td><strong class="hi">Yes, all tiers</strong></td><td>Engage, Summer 2026</td><td>Tags only</td><td>Via Connect / Signant</td><td><strong class="hi">Yes</strong></td></tr>
+          <tr><td class="rowhead">Cost</td><td class="num">Free (5p) / $500 (20p) / $1,250 (20p, all)</td><td>Custom quote</td><td class="num">$1,749.60/device/3yr academic</td><td>~$3,500/yr reported (R)</td><td class="num">$0 + hosting</td></tr>
+          <tr><td class="rowhead">EMA / surveys</td><td><strong class="hi">Yes, all tiers</strong></td><td>Engage preview, Summer 2026</td><td>None</td><td>Not established</td><td><strong class="hi">Yes</strong></td></tr>
           <tr><td class="rowhead">Adherence monitoring</td><td class="tag tag--yes">Yes</td><td>Yes (sync + battery)</td><td><strong class="hi">Yes, live wear-time</strong></td><td><strong class="hi">Yes, near-real-time</strong></td><td class="muted">Unclear</td></tr>
-          <tr><td class="rowhead">Multi-site</td><td class="tag tag--yes">Yes</td><td class="tag tag--yes">Yes</td><td class="tag tag--yes">Yes</td><td><strong class="hi">Yes, 70+ countries</strong></td><td class="muted">Unclear</td></tr>
-          <tr><td class="rowhead">Raises sampling resolution</td><td><strong class="hi">Yes — Garmin SDK partnership</strong></td><td>Enhanced BBI via OAuth</td><td>Configurable on device</td><td>Configurable</td><td>Full SDK control</td></tr>
-          <tr><td class="rowhead">Self-hosting</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td>ActiLife offline</td><td class="tag tag--yes">Yes</td></tr>
+          <tr><td class="rowhead">Multi-site</td><td class="tag tag--yes">Yes</td><td class="tag tag--yes">Yes</td><td>Enterprise; academic 1 site</td><td><strong class="hi">Yes, 70+ countries</strong></td><td class="muted">Unclear</td></tr>
+          <tr><td class="rowhead">Sampling resolution</td><td><strong class="hi">Raised via Garmin SDK partnership</strong></td><td>Enhanced BBI via OAuth, during sleep</td><td>Fixed sensor modes</td><td>32–256 Hz</td><td>Full SDK control</td></tr>
+          <tr><td class="rowhead">Self-hosting</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td>ActiLife local (legacy)</td><td class="tag tag--yes">Yes</td></tr>
           <tr><td class="rowhead">Free tier to pilot</td><td class="tag tag--yes">Yes</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td class="tag tag--yes">Yes</td></tr>
+          <tr><td class="rowhead">Maintenance</td><td>Active</td><td>Active</td><td>Active</td><td>Active</td><td class="tag tag--block">No code since Oct 2024</td></tr>
         </tbody>
       </table>
     </div>
-    <div class="tnote">If your study is <strong>Fitbit-based</strong>, Fitabase is effectively the only option and you must request a quote. If it is <strong>Garmin-based</strong>, Labfront is cheaper, transparent, includes EMA, and can raise sampling resolution — and you can pilot it free with five participants before spending anything.</div>
+    <div class="tnote">A <strong>Fitbit</strong> study starting now cannot open its own Google Health API project, so it needs an intermediary that already holds access (Fitabase, or Fitrockr). A <strong>Garmin</strong> study cannot currently apply to Garmin directly (C); Labfront and Fitrockr publish prices, and Labfront includes EMA and a free five-participant pilot.</div>
   </section>
 
   <!-- ============ TABLE 12 ============ -->
@@ -893,27 +899,28 @@
         <thead><tr><th class="colhead">If your primary endpoint is…</th><th>Use</th><th>Avoid</th><th>Why</th></tr></thead>
         <tbody>
           <tr><td class="rowhead">Physical activity / sedentary behaviour</td><td>Axivity, GENEActiv, Ametris</td><td>Any device where EE is the metric</td><td>Raw accelerometry, open pipelines, cohort comparability</td></tr>
-          <tr><td class="rowhead">Sleep timing / duration (not stages)</td><td>Oura, Withings ScanWatch, actigraphy</td><td class="muted">—</td><td>TST and SE have good ICC; both had zero data loss in PSG studies</td></tr>
-          <tr><td class="rowhead">Sleep architecture (stages)</td><td>Reconsider the design; PSG or ambulatory EEG</td><td class="tag tag--block">All consumer wearables</td><td>Deep/REM ICC is 0.13–0.36 on the best devices</td></tr>
+          <tr><td class="rowhead">Sleep timing / duration (not stages)</td><td>Oura, Apple Watch, Fitbit, research actigraphy</td><td>Withings ScanWatch, Garmin Vivosmart 4</td><td>Robbins TST ICC 0.74 (Oura), 0.85 (Apple); Schyvens TST bias largest for ScanWatch and Vivosmart 4</td></tr>
+          <tr><td class="rowhead">Sleep architecture (stages)</td><td>Reconsider the design; PSG or ambulatory EEG</td><td class="tag tag--block">All consumer wearables</td><td>Deep/REM ICC is 0.13–0.36 on the best-studied devices</td></tr>
           <tr><td class="rowhead">Sleep fragmentation / WASO</td><td>Reconsider; PSG</td><td class="tag tag--block">All consumer wearables</td><td>Every device underestimates WASO by 12–48 min</td></tr>
-          <tr><td class="rowhead">HRV — nocturnal</td><td><strong class="hi">Garmin Enhanced BBI</strong> (Labfront/Fitabase), Polar H10, Movesense</td><td>PPG devices reporting only summary HRV</td><td>Beat-level data with confidence flags, or true ECG RR</td></tr>
-          <tr><td class="rowhead">HRV — daytime / during stressors</td><td>Polar H10, Movesense, Garmin Health SDK</td><td>Garmin Enhanced BBI</td><td>Enhanced BBI is nocturnal only</td></tr>
-          <tr><td class="rowhead">Cardiac rhythm / AFib</td><td>Apple Watch, Withings ScanWatch, Verily, Movesense MD</td><td class="muted">—</td><td>FDA/CE-cleared ECG features with real evidence</td></tr>
-          <tr><td class="rowhead">Electrodermal / arousal / stress</td><td><strong class="hi">Empatica</strong>, Verily Study Watch</td><td>Everything else</td><td>Only sources of raw EDA</td></tr>
+          <tr><td class="rowhead">HRV, nocturnal</td><td>Polar H10, Movesense, <strong class="hi">Garmin Enhanced BBI</strong> (Labfront/Fitabase), Oura</td><td>Opaque HRV scores</td><td>Beat-level data or ECG RR; Oura HRV CCC 0.97–0.99 (Dial 2025)</td></tr>
+          <tr><td class="rowhead">HRV, daytime / during stressors</td><td>Polar H10, Movesense, Samsung IBI, Garmin Health SDK</td><td>Enhanced BBI via the Health API or Fitabase</td><td>The API route captures Enhanced BBI during sleep</td></tr>
+          <tr><td class="rowhead">Cardiac rhythm / AFib</td><td>Apple Watch ECG, Withings ECG App, Movesense MD, Samsung raw ECG, Verily</td><td>Treating notifications as the ECG app</td><td>Cleared ECG features or raw ECG; Apple notification sensitivity 21.4–72% vs ECG app 94.8%</td></tr>
+          <tr><td class="rowhead">Electrodermal / arousal / stress</td><td><strong class="hi">Empatica</strong>, <strong class="hi">Samsung Galaxy Watch8</strong>, Verily Study Watch</td><td>Everything else</td><td>The only raw EDA routes found</td></tr>
           <tr><td class="rowhead">Energy expenditure</td><td>Indirect calorimetry, doubly labelled water</td><td class="tag tag--block">Every consumer wearable</td><td>No brand within acceptable limits, six years running</td></tr>
-          <tr><td class="rowhead">Custom algorithm development</td><td>Movesense, Polar, Samsung, Biostrap, Ultrahuman</td><td>Oura, WHOOP</td><td>Requires raw signal</td></tr>
-          <tr><td class="rowhead">Large-N with no budget</td><td><em><strong class="hi">All of Us</strong></em> or UK Biobank secondary analysis</td><td class="muted">—</td><td>Data already collected, no procurement, no API</td></tr>
-          <tr><td class="rowhead">Regulated trial endpoint</td><td>Ametris, Empatica, Verily</td><td>Consumer platforms</td><td>Cleared devices, locked algorithms, Part 11 operations</td></tr>
-          <tr><td class="rowhead">Behaviour-change intervention</td><td>Any consumer device; unified APIs fine</td><td class="muted">—</td><td>The device is a tool, not an instrument; brand confounding is tolerable</td></tr>
-          <tr><td class="rowhead">Minimal reactivity / observational purity</td><td>WHOOP, Fitbit Air, ActiGraph, Axivity</td><td>Feedback-rich smartwatches</td><td>Screenless devices do not induce behaviour change</td></tr>
+          <tr><td class="rowhead">Custom algorithm development</td><td>Movesense, Polar, Samsung, Axivity, Ametris</td><td>Oura, WHOOP, Fitbit</td><td>Requires documented raw signal</td></tr>
+          <tr><td class="rowhead">Data retention, deposit or ML training</td><td>Polar BLE, Movesense, Axivity, Samsung SDK, Apple HealthKit</td><td>WHOOP and Oura APIs without written agreement</td><td>Their API terms limit retention and bar AI/ML training</td></tr>
+          <tr><td class="rowhead">Large-N with no budget</td><td><em><strong class="hi">All of Us</strong></em> or UK Biobank secondary analysis</td><td class="muted">n/a</td><td>Data already collected, no procurement, no API</td></tr>
+          <tr><td class="rowhead">Regulated trial endpoint</td><td>Ametris, Empatica, Withings cleared devices</td><td>Consumer platforms</td><td>Cleared devices and established trial operations</td></tr>
+          <tr><td class="rowhead">Behaviour-change intervention</td><td>Any consumer device; unified APIs fine</td><td class="muted">n/a</td><td>The device is a tool, not an instrument; brand confounding is tolerable</td></tr>
+          <tr><td class="rowhead">Minimal reactivity / observational purity</td><td>WHOOP, Oura, Fitbit Air, Ametris, Axivity</td><td>Feedback-rich smartwatches</td><td>Screenless devices show the participant nothing</td></tr>
         </tbody>
       </table>
     </div>
   </section>
 
   <footer>
-    <span>Wearable Data Atlas — Module 1, Digital Health Knowledge Base</span>
-    <span>12 tables · last verified 2026-08-21</span>
+    <span>Wearable Data Atlas, Module 1, Digital Health Knowledge Base</span>
+    <span>12 tables · rebuilt from the profiles 2026-10-10</span>
   </footer>
 
 </div>
