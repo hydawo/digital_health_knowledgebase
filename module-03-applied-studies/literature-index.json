@@ -97,7 +97,41 @@
   "10.3390/s24196220",
   "10.3390/s24206532",
   "10.3390/s24237475",
-  "10.7759/cureus.45362"
+  "10.7759/cureus.45362",
+  "10.3233/SHTI260986",
+  "10.2196/99630",
+  "10.1016/j.apmr.2026.09.003",
+  "10.2196/108766",
+  "10.1080/09638288.2026.2731078",
+  "10.3389/fdgth.2026.1847917",
+  "10.3389/fdgth.2026.1860703",
+  "10.3390/cancers18172766",
+  "10.1016/j.exger.2026.113337",
+  "10.1111/jgs.70726",
+  "10.1002/pon.70616",
+  "10.1111/acem.70408",
+  "10.1371/journal.pdig.0001691",
+  "10.2196/88466",
+  "10.1177/03331024261492220",
+  "10.1111/jsr.70457",
+  "10.2196/89466",
+  "10.2196/99594",
+  "10.1227/neuprac.0000000000000298",
+  "10.1038/s41467-026-76147-6",
+  "10.1007/s10484-026-09811-8",
+  "10.3390/sports14090394",
+  "10.3390/jfmk11030338",
+  "10.3390/children13091132",
+  "10.3390/children13091129",
+  "10.1093/jamiaopen/ooag182",
+  "10.1016/j.talanta.2026.130639",
+  "10.1109/TCBBIO.2026.3731395",
+  "10.3389/fpubh.2026.1791618",
+  "10.3389/fdata.2026.1876811",
+  "10.4037/aacnacc2026416",
+  "10.1016/j.gerinurse.2026.104269",
+  "10.2196/95194",
+  "10.1002/pan.70309"
  ],
  "pmcids_seen": [
   "PMC10031448",
@@ -193,7 +227,25 @@
   "PMC9906314",
   "PMC9938183",
   "PMC9950693",
-  "PMC9987377"
+  "PMC9987377",
+  "PMC13574307",
+  "PMC13582580",
+  "PMC13574954",
+  "PMC13564937",
+  "PMC13613989",
+  "PMC13614584",
+  "PMC13592238",
+  "PMC13592458",
+  "PMC13592738",
+  "PMC13592996",
+  "PMC13601627",
+  "PMC13611677",
+  "PMC13608073",
+  "PMC13605833",
+  "PMC13605536",
+  "PMC13612241",
+  "PMC13601350",
+  "PMC13590562"
  ],
  "last_run_date": "2026-10-05",
  "runs": [
@@ -215,6 +267,11 @@
     "no-cohort": 10
    },
    "note": "C2 (digital-phenotyping-platform PubMed query) and C3-platforms (arXiv) both returned only false positives this run -- 'AWARE'[tiab]/'all:AWARE framework' matched the ordinary adjective 'aware' inside compound ML-paper titles (privacy-aware, mechanobiology-aware, topology-aware, longitudinally-aware), not the AWARE Framework platform. No Beiwe, RADAR-base, mindLAMP, Avicenna, Ethica, MetricWire, m-Path, CARP, or LifeData deployment candidates were found this run. C3-wearables (arXiv) found 1 candidate (SATURN/ABCD-Fitbit), rejected as architecture (secondary ML analysis of existing data, not a deployment-operations report)."
+  },
+  {
+   "date": "2026-10-09",
+   "source": "consolidation of six unmerged scan-routine branches",
+   "note": "Unioned seen-ID lists and rejections from the 2026-09-07, 09-14, 09-21 and 09-28 runs. 10 queue rows from those runs added to _scan-queue.md. 2 papers rejected by the 2026-10-05 run but queued by an earlier run were moved to the queue, with the rejection reason kept on the row."
   }
  ],
  "records": [
@@ -985,20 +1042,6 @@
    "source": "weekly-literature-scan-2026-10-05"
   },
   {
-   "doi": "10.1177/03331024261492220",
-   "pmcid": null,
-   "reason": "architecture",
-   "note": "Empatica EmbracePlus migraine-attack ML prediction model (n=27, ~31 days/participant). States 'feasibility of migraine attack prediction' -- algorithmic/prediction-method feasibility, not operational-deployment feasibility (no wear-time, adherence, attrition, or technical-failure reporting). Worth flagging as a recurring false-positive pattern: 'feasibility' describing a prediction model's performance, not a study's operations.",
-   "source": "weekly-literature-scan-2026-10-05"
-  },
-  {
-   "doi": "10.1002/pon.70616",
-   "pmcid": "PMC13613989",
-   "reason": "no-cohort",
-   "note": "webMFT breast-cancer-survivor PA program (Fitbit 'active minutes', n=30 analysed of 61 randomised); theoretical-construct (self-efficacy/social-support) mediation analysis. 'Engagement' and 'longitudinal' signals present structurally but no retention, attrition, or device-completeness figures reported for the Fitbit deployment itself.",
-   "source": "weekly-literature-scan-2026-10-05"
-  },
-  {
    "doi": "10.3389/frai.2026.1898699",
    "pmcid": "PMC13619810",
    "reason": "no-cohort",
@@ -1040,6 +1083,202 @@
    "reason": "architecture",
    "note": "SATURN: graph-learning model predicting adolescent crystallized intelligence from 21-day Fitbit records in the ABCD Study (N=6,091). Secondary ML-modeling analysis of an existing large cohort's already-collected data; 'irregular device adherence' and 'invalid-day' pruning appear only as modeling covariates, not as a report of how the Fitbit deployment itself went (no new recruitment/retention/technical-failure reporting).",
    "source": "weekly-literature-scan-2026-10-05"
+  },
+  {
+   "doi": "10.2340/jrm.v58.44975",
+   "pmcid": null,
+   "pmid": "42702963",
+   "reason": "validation",
+   "note": "Validation of heart rate measurements from the Polar Verity Sense during the submaximal Ekblom-Bak test in adults with obesity; PubMed PublicationType explicitly 'Validation Study'.",
+   "source": "weekly-literature-scan-2026-09-07"
+  },
+  {
+   "doi": "10.1016/j.ijmedinf.2026.106704",
+   "pmcid": null,
+   "pmid": "42691870",
+   "reason": "validation",
+   "note": "Fitbit Sense 2 in hospitalized general medicine patients: primary aim is validity of Fitbit-derived HR/steps/sleep/SpO2 vs Nox T3/StepWatch reference devices (Bland-Altman, ICC). Has a secondary feasibility/patient-perception component and data-completeness figures (100%/91%/56%/41% by stream) but core design is device-vs-reference accuracy, consistent with prior 'validation' rejections in this ledger (e.g. PMC12399887).",
+   "source": "weekly-literature-scan-2026-09-07"
+  },
+  {
+   "doi": "10.2196/86020",
+   "pmcid": null,
+   "pmid": "42673582",
+   "reason": "protocol",
+   "note": "Remote Assessment of Physical Function and Physical Activity in Adults With Autism Spectrum Disorder: explicitly a study protocol ('Participants complete...'); no results reported yet.",
+   "source": "weekly-literature-scan-2026-09-07"
+  },
+  {
+   "doi": "10.3389/fdgth.2026.1820224",
+   "pmcid": "PMC13542415",
+   "pmid": "42698643",
+   "reason": "review",
+   "note": "Systematic review of 47 wrist-tracker accuracy studies; also filed in Module 1 as a device-agnostic systematic review under Apple Watch.",
+   "source": "weekly-literature-scan-2026-09-07"
+  },
+  {
+   "doi": "10.1093/ejhf/xuag271",
+   "pmcid": null,
+   "pmid": "42663246",
+   "reason": "no-cohort",
+   "note": "ESC/EHRA myocarditis arrhythmia consensus statement; no Module 2 platform named anywhere in the abstract despite matching the C2 grouped query. False positive.",
+   "source": "weekly-literature-scan-2026-09-07"
+  },
+  {
+   "doi": "10.1016/j.clnu.2026.106769",
+   "pmcid": null,
+   "pmid": "42696857",
+   "reason": "no-cohort",
+   "note": "Review of oral nutritional supplements vs the Nova ultra-processed-food classification; no Module 2 platform named anywhere in the abstract despite matching the C2 grouped query. False positive.",
+   "source": "weekly-literature-scan-2026-09-07"
+  },
+  {
+   "doi": "10.1093/europace/euag153",
+   "pmcid": "PMC13522998",
+   "pmid": "42669046",
+   "reason": "no-cohort",
+   "note": "Duplicate/co-publication of the same EHRA/HFA myocarditis arrhythmia consensus statement as 10.1093/ejhf/xuag271; no Module 2 platform named in the abstract. False positive.",
+   "source": "weekly-literature-scan-2026-09-07"
+  },
+  {
+   "doi": "10.1016/j.apmr.2026.09.003",
+   "pmcid": null,
+   "reason": "no-cohort",
+   "note": "ActiGraph secondary analysis of OAI cohort activity percentiles; matched on 'longitudinal' describing the parent cohort's design, but reports no retention/adherence/completeness/feasibility figures of its own — fewer than two deployment-reality signals.",
+   "source": "weekly-scan-2026-09-14"
+  },
+  {
+   "doi": "10.1016/j.media.2026.104273",
+   "pmcid": null,
+   "reason": "no-cohort",
+   "note": "False-positive AWARE match — 'uncertainty-aware' framework for coronary hemodynamics (PUNCH), unrelated to the AWARE sensing platform.",
+   "source": "weekly-scan-2026-09-14"
+  },
+  {
+   "doi": "10.1080/20523211.2026.2707845",
+   "pmcid": "PMC13552329",
+   "reason": "no-cohort",
+   "note": "False-positive AWARE match — WHO 'AWaRe' antibiotic-classification framework, unrelated to the AWARE sensing platform.",
+   "source": "weekly-scan-2026-09-14"
+  },
+  {
+   "doi": "10.3233/SHTI260986",
+   "pmcid": null,
+   "reason": "architecture",
+   "note": "HiGHmed multi-site Apple Watch cardiology dashboard (conference proceedings, Studies in Health Technology and Informatics). A dashboard-tool paper, not a deployment-feasibility report; only 1 of 13 deployment-reality signal terms present in the abstract ('adherence'), fails the routine's 2-signal screening threshold despite a real cohort (93 enrolled, 12 analysed in this sub-study).",
+   "source": "weekly-scan-2026-09-21"
+  },
+  {
+   "doi": "10.2196/99630",
+   "pmcid": "PMC13574307",
+   "reason": "no-cohort",
+   "note": "Long COVID Fitbit Inspire 3 + FatigueSense app study, N=14, median 28d. Real wearable deployment but purely a within-person correlational/validity analysis (sleep/HRV vs fatigue); only 'longitudinal' matches the deployment-signal vocabulary, fails the 2-signal threshold -- no adherence/retention/completeness reporting.",
+   "source": "weekly-scan-2026-09-21"
+  },
+  {
+   "doi": "10.2196/108766",
+   "pmcid": null,
+   "reason": "no-cohort",
+   "note": "False positive on the ordinary-word/acronym trap: 'AWARE' here stands for 'AI Use, Why, Attachment, Reality and Risk, and Effect on Functioning' -- a proposed clinical-interviewing framework for assessing patients' conversational-AI use, unrelated to the AWARE mobile-sensing Framework. Viewpoint article, no participant cohort.",
+   "source": "weekly-scan-2026-09-21"
+  },
+  {
+   "doi": "10.1080/09638288.2026.2731078",
+   "pmcid": null,
+   "reason": "no-cohort",
+   "note": "m-Path ESM deployment in youth with physical disabilities (N=7, 2 weeks). Real small cohort but 0 of 13 deployment-signal terms present in the abstract; fails the 2-signal threshold. Already logged as a platform-methods addition in module-02-digital-phenotyping/literature-library.md.",
+   "source": "weekly-scan-2026-09-21"
+  },
+  {
+   "doi": "10.3389/fdgth.2026.1847917",
+   "pmcid": "PMC13582580",
+   "reason": "no-cohort",
+   "note": "FPGA/CNN accelerator for angiographic plaque classification. No Module 1/2 device or platform named; matched the grouped query on 'deployment' in an unrelated (FPGA hardware) sense. Not digital-health-platform relevant.",
+   "source": "weekly-scan-2026-09-21"
+  },
+  {
+   "doi": "10.3389/fdgth.2026.1860703",
+   "pmcid": "PMC13574954",
+   "reason": "no-cohort",
+   "note": "Conceptual Perspective proposing an infrastructure-aware digital-health evaluation framework, illustrated narratively by the Bright Health program (Kenya/Ethiopia) but reporting no participant-level deployment data of its own and no Module 1/2 profiled technology.",
+   "source": "weekly-scan-2026-09-21"
+  },
+  {
+   "doi": "10.3390/cancers18172766",
+   "pmcid": "PMC13564937",
+   "reason": "review",
+   "note": "Explicit review/commentary on cancer-diagnostics biomarker strategy; no wearable/phenotyping platform, no deployment cohort.",
+   "source": "weekly-scan-2026-09-21"
+  },
+  {
+   "doi": "10.1111/jsr.70457",
+   "pmcid": null,
+   "reason": "protocol",
+   "note": "Trial protocol for the 'Digital Sleep Revolution' OSA diagnostic pathway; design/planned-analyses only, no results yet.",
+   "source": "weekly-literature-scan-2026-09-28"
+  },
+  {
+   "doi": "10.2196/89466",
+   "pmcid": "PMC13592458",
+   "reason": "protocol",
+   "note": "WARN-D study (Oura Ring, rTMS relapse prediction): feasibility protocol; explicitly no participants enrolled and no data collected at submission.",
+   "source": "weekly-literature-scan-2026-09-28"
+  },
+  {
+   "doi": "10.2196/99594",
+   "pmcid": "PMC13592738",
+   "reason": "protocol",
+   "note": "Prospective observational cohort protocol for wrist-accelerometer remote monitoring of RA flare during DMARD tapering; only 16 of a planned 100 recruited as of writing, outcome analyses not yet conducted.",
+   "source": "weekly-literature-scan-2026-09-28"
+  },
+  {
+   "doi": "10.1227/neuprac.0000000000000298",
+   "pmcid": "PMC13592996",
+   "reason": "no-cohort",
+   "note": "Apple Watch/iPhone spine-surgery mobility study (N=51, 60,753 patient-days) is a clinical-outcomes correlation study (mobility vs. PROMs); no explicit feasibility/retention/adherence framing despite a real cohort.",
+   "source": "weekly-literature-scan-2026-09-28"
+  },
+  {
+   "doi": "10.1038/s41467-026-76147-6",
+   "pmcid": "PMC13601627",
+   "reason": "no-cohort",
+   "note": "All of Us Fitbit circadian rest-activity/biological-aging study (N=2,222); epidemiological association study, only 'longitudinal' signal matched, no adherence/retention/completeness reporting.",
+   "source": "weekly-literature-scan-2026-09-28"
+  },
+  {
+   "doi": "10.1007/s10484-026-09811-8",
+   "pmcid": null,
+   "reason": "no-cohort",
+   "note": "Polar H10 used only as an HRV-recording instrument in a single-session acute lab crossover breathing study (N=34); not a wearable deployment/feasibility study.",
+   "source": "weekly-literature-scan-2026-09-28"
+  },
+  {
+   "doi": "10.3390/sports14090394",
+   "pmcid": "PMC13611677",
+   "reason": "no-cohort",
+   "note": "ActiGraph GT9X used only as a covariate-measurement instrument in a cross-sectional adiposity study (N=264 schoolchildren); wear time appears only as an adjustment covariate, no deployment-reality reporting.",
+   "source": "weekly-literature-scan-2026-09-28"
+  },
+  {
+   "doi": "10.3390/jfmk11030338",
+   "pmcid": "PMC13608073",
+   "reason": "no-cohort",
+   "note": "ActiGraph+CGM glycemic-variability association study in T2D (N=140); accelerometry is the exposure variable, not the object of a feasibility/deployment report.",
+   "source": "weekly-literature-scan-2026-09-28"
+  },
+  {
+   "doi": "10.1109/TCBBIO.2026.3731395",
+   "pmcid": null,
+   "reason": "no-cohort",
+   "note": "False positive: multiomics machine-learning methods paper, unrelated to any Module 1/2 platform; same AWARE-framework phrase-matching artifact.",
+   "source": "weekly-literature-scan-2026-09-28"
+  },
+  {
+   "doi": "10.3389/fdata.2026.1876811",
+   "pmcid": "PMC13590562",
+   "reason": "no-cohort",
+   "note": "False positive: judicial-records crime-analytics ML paper, unrelated to any Module 1/2 platform; same AWARE-framework phrase-matching artifact.",
+   "source": "weekly-literature-scan-2026-09-28"
   }
  ]
 }

@@ -227,6 +227,19 @@ time (633.9 min/day) and least activity (320.3 min/day) and sleep (431.8 min/day
 groups; reallocating 30 min/day from sedentary time to sleep or activity was associated with lower
 BMI and body-roundness index. https://pmc.ncbi.nlm.nih.gov/articles/PMC13573439/
 
+**Liao J, Chen R, Tian R, Qiu C, Chen W, Yang Z, Hao J, Ge Y, Lin Y, Dunn J, Bergin M, Gilliland FD,
+Black M, Kalafut D, Wilson M, Zhang JJ, Chen Z. 2026.** "Wearable measured physiological stress and
+activity patterns changes after 2025 Los Angeles wildfire among older adults: findings from a pilot
+prospective cohort study." *Environmental Research, Health* (ERH). USC Keck School of Medicine /
+Duke University / Cleveland Clinic. N=15 older adults (mean age 73.2), Oura Ring Gen 3 worn
+continuously across baseline, the 2025 Eaton Fire, and post-fire periods. **No CoiStatement field
+present in the PubMed record; no vendor funding or affiliation evident from the author list.**
+**Corroborated** (absence of a disclosed conflict is suggestive, not proof, of independence).
+41-minute increase in sedentary time observed during the fire period; six of fifteen participants
+received evacuation alerts, associated with measurable changes in sleep heart rate, HRV, sleep
+fragmentation, and breath rate. **Added 2026-10-09 from the 2026-09-01 automated scan (branch consolidation).**
+https://pubmed.ncbi.nlm.nih.gov/42434202/
+
 ## Oura — systematic reviews (as discovery mechanism, and classified in their own right)
 
 **Khan et al. 2025, *OTO Open*.** "The Oura Ring Versus Medical-Grade Sleep Studies: A Systematic
@@ -675,6 +688,46 @@ publishing journal; none naming Apple.** **Corroborated.** Single-patient case r
 fall-detection triggered automated alerts during an unwitnessed out-of-hospital cardiac arrest,
 enabling bystander CPR ~6–7 min post-collapse and a favourable neurological outcome after VF
 arrest, CABG, and ICD implantation. https://pmc.ncbi.nlm.nih.gov/articles/PMC13543876/
+
+**Zou L, Zhang L. 2026.** "Prescribing green dose for college students' mental health: Identifying
+thresholds for green space exposure duration, frequency, and cumulative dose via smartwatch."
+*Environmental Research*. Shanghai Jiao Tong University School of Design. N=43 healthy students,
+six-week wearable-based observational study using Apple Watch data. **Explicit COI statement read
+directly: "The authors declare that they have no known competing financial interests or personal
+relationships that could have appeared to influence the work reported in this paper." No Apple
+mention.** **Corroborated**. Single-session green-space
+exposure of ~17–35 min associated with sleep outcomes; ~3 sessions/week most associated with
+daytime functioning; cumulative weekly exposure of ~70–120 min associated with emotional outcomes
+and HRV amplitude differences. **Added 2026-10-09 from the 2026-09-01 automated scan (branch consolidation).**
+https://pubmed.ncbi.nlm.nih.gov/42250841/
+
+**Shroddha Aditi Das, Mukherjee I, Lambiase PD. 2026.** "Apple Watch Saves an Athlete: Unmasking
+Early Detection of Arrhythmogenic Cardiomyopathy." *Cureus*. Barts Health NHS Trust / Barts and the
+London School of Medicine and Dentistry / NIHR Barts BRC & UCLH/UCL BRC, London. Single-patient case
+report (33-year-old athlete): recurrent palpitations initially documented by a consumer wearable
+(named as Apple Watch in the title) prompted a diagnostic workup that revealed arrhythmogenic
+cardiomyopathy. **ICMJE disclosure read directly: "no financial support was received from any
+organization for the submitted work... no financial relationships... no other relationships or
+activities that could appear to have influenced the submitted work." No Apple mention.**
+**Corroborated** — Tier C. **Category note: this is a single-patient case report, not a
+population-level outcome study, so its fit under "Use-case" is genuinely ambiguous; included here
+rather than excluded, since it otherwise
+clears the relevance bar (device named in title, peer-reviewed journal article, has an abstract, in
+English).** **Added 2026-10-09 from the 2026-09-01 automated scan (branch consolidation).** https://pubmed.ncbi.nlm.nih.gov/42639363/
+
+**Serttaş A, Bulat Demir S, Uyanik Uğur Gizem, Altunkurt O. 2026.** "Bounded control in digital
+health: Privacy discourse and algorithmic governance in Apple Health." *Digital Health*. Faculty of
+Communication, İstanbul Aydın University. Qualitative study (critical discourse analysis of Apple's
+official "Health App and Privacy" text, plus semi-structured interviews with n=18 Apple Watch/Apple
+Health users) examining how user control over health data is constructed, communicated, and
+experienced. **Explicit COI statement read directly: "The authors declared no potential conflicts
+of interest with respect to the research, authorship, and/or publication of this article." No Apple
+mention.** **Corroborated** — Tier C. **Category note: this is a media/communication-studies paper
+(qualitative discourse and interview analysis of device users' privacy experience), not an
+accuracy-validation or health-outcome study — a genuinely ambiguous fit for a category scheme
+designed around those two kinds of literature. Flagged for reconsideration (e.g. a future "Policy/Ethics" category) in a later pass if more
+papers of this type are found.** **Added 2026-10-09 from the 2026-09-01 automated scan (branch consolidation).**
+https://pubmed.ncbi.nlm.nih.gov/42633020/
 
 ## Apple Watch — systematic reviews / meta-analyses
 

@@ -2,6 +2,58 @@
 
 ---
 
+## 2026-10-09 — Weekly scan: six unmerged run branches consolidated into main
+
+**Module:** 1, 2, 3 (literature tracking only). No profile, matrix or README content changed.
+
+### What was wrong
+
+The weekly literature-scan routine fired every Monday from 2026-09-01 and reported success each
+time, but every run pushed to its own `claude/*` branch instead of `main`. Nothing merged them. Two
+consequences:
+
+- None of the five weeks of results were in the knowledge base.
+- Each run read `last_run_date` from `main`, which never advanced, so every run re-searched from
+  2026-08-31. The branches overlap heavily, and three of them call themselves the "first live
+  firing". The 2026-10-05 entry below says the same thing, and that is also wrong.
+
+### What was merged
+
+| Run | Branch | Kept |
+|---|---|---|
+| 2026-09-01 | `claude/lucid-bardeen-eqwu0b` | 4 Module 1 papers from its 2026-08-22 to 08-31 window (Liao 2026 Oura; Zou 2026, Das 2026, Serttaş 2026 Apple Watch). Its restructuring of `research-library-wearables.md` into device > Category > Tier was **not** kept; every later run used the existing device > Tier layout. |
+| 2026-09-07 | `claude/hopeful-fermat-rvueca` | 3 Module 3 queue rows, 7 rejections. Module 1 papers all re-found by the 10-05 run. |
+| 2026-09-14 | `claude/hopeful-fermat-gb2s4e` | 1 Module 3 queue row, 6 rejections. arXiv rate-limited for the whole run. |
+| 2026-09-21 | `claude/hopeful-fermat-hpey6k` | 8 Module 3 rejections. |
+| 2026-09-28 | `claude/hopeful-fermat-bk8t3d` | 6 Module 3 queue rows, 11 rejections, 5 Module 2 seen IDs. Module 2 arXiv unreachable. |
+| 2026-10-05 | `claude/hopeful-fermat-jm3fjh` | Taken whole, as the base. Its PubMed window for Modules 1 and 2 (2026-08-31 to 10-05) covers every earlier run. |
+
+Method: fast-forward `main` to the 10-05 branch, then union every older branch's seen-ID lists,
+Module 3 rejections and Module 3 queue rows into it, matched on DOI.
+
+**Two conflicts.** Migraine attack prediction (10.1177/03331024261492220) and the peer-led physical
+activity program paper (10.1002/pon.70616) were queued on 09-28 and rejected on 10-05. Both are now
+in the queue with the 10-05 rejection reason on the row, because the queue is screened from full
+text anyway and a wrong rejection is never revisited.
+
+### Coverage that is still thin
+
+- **Module 3 arXiv:** the 09-14 run was rate-limited and the 09-28 run could not reach arXiv, so
+  C3 coverage for roughly 2026-09-04 to 09-25 is incomplete.
+- **PDFs:** no run could fetch a PDF. The cloud environment's allowlist blocks PMC, Europe PMC and
+  publisher domains (policy 403), which is narrower than `weekly-literature-scan.md` documents.
+  Every paper added by the routine so far is catalogued without a PDF.
+
+### Outstanding, requires the account owner
+
+1. Make the routine push to `main`, not a new branch. The prompt already says "push to origin
+   main", so the side branch comes from the routine or environment's branch setting.
+2. Add `www.ebi.ac.uk`, `pmc.ncbi.nlm.nih.gov` and `www.ncbi.nlm.nih.gov` to the environment's
+   network allowlist.
+3. Delete the six `claude/*` branches on GitHub once this merge is confirmed.
+
+---
+
 ## 2026-10-05 — Weekly literature-scan routine: first live firing (all three modules)
 
 **Module:** 1 (Oura/WHOOP/Apple Watch), 2 (phenotyping platforms), 3 (triage only). Automated,
