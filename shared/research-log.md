@@ -2,6 +2,44 @@
 
 ---
 
+## 2026-10-10 (later) — Repair pass after the independent review; vendor fact records built
+
+**Module:** 1, 2, 3, 4 and shared.
+
+### Repair pass
+
+The independent review (`shared/reviews/2026-10-10-independent-review.md`: 742 claims checked, 140
+wrong, 30 Critical and 89 Major findings) was applied by agents that each owned separate files and
+had to re-verify every finding against its source first:
+
+- **Phase 1:** Module 1 access vendors; Module 1 other devices and libraries; all of Module 2 (with
+  a rebuild of its comparison matrix from the profiles); Modules 3 and 4.
+- **Phase 2:** the Module 1 comparison matrix, README and atlas rebuilt from the corrected profiles,
+  with a new research-programs table; 68 source rows added.
+- **Phase 3:** the questions file updated from the verified answers (83 to 79 open, 10 closed, 6
+  new), explorer text and counts corrected, and a seven-item clean-up of profile inconsistencies the
+  rebuild surfaced.
+
+The agents rejected or corrected several reviewer findings with sources: Google's Research Pledge
+page exists; Fitabase's 1,650-publication figure is current; Labie 2025 and the Empatica
+$1,749.60 "conflict" did not hold; Ametris has an academic channel; WHOOP's blood-pressure warning
+letter was closed on 2026-06-17. The coordinator spot-checked the most consequential claims (Fitbit
+shutdown and Google onboarding banner, WHOOP K243236 and the close-out letter, SensorKit sensors,
+Withings+ date, Garmin pause, AWARE on the App Store, Spangenberg 45.4%, Aledavood 2025, the Cohen
+2026 Apple-stock disclosure); all held.
+
+### Vendor fact records
+
+Designed with the brainstorming process and built the same day (`facts/README.md`): one record
+per company (35) with required fields for research access, pricing, data access and terms, and
+compliance; each fact needs a source, an exact quote, a date, a confidence label and a re-check
+date. `tools/facts/` has a validator, a weekly checker (quote checks and page fingerprints), a
+generator for the comparison tables, a seeding script and 13 tests. A GitHub Actions job runs the
+weekly check on Mondays, commits a report and opens one issue in this repository. Oura is filled as
+the pilot (18 facts, every quote confirmed on its live page); 1,076 facts await the baseline run.
+
+---
+
 ## 2026-10-10 — Weekly scan output checked; merge-and-check step added
 
 **Module:** 1, 2 (literature tracking). Prompted by the question of whether the scan's output gets
