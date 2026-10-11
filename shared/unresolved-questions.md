@@ -33,9 +33,9 @@ questions. 33 and 46 are closed. 15 others are annotated, with annotations start
 | [Standing evidence gaps](#standing-evidence-gaps) | 6 | Re-checked on each literature pass |
 | [Needs a hands-on test](#needs-a-hands-on-test) | 7 | Someone with a developer account or device |
 | [Needs library access](#needs-library-access) | 7 | Anyone with institutional journal access |
-| [Needs an author or lab](#needs-an-author-or-lab) | 6 | Email to the study authors |
+| [Needs an author or lab](#needs-an-author-or-lab) | 5 | Email to the study authors |
 | [Vendor checklists](#vendor-checklists) | 48 | The vendor, when a study is choosing it |
-| **Total open** | **78** | |
+| **Total open** | **77** | |
 
 Closed questions and the duplicates folded into other rows are at the end, in
 [Closed and merged](#closed-and-merged).
@@ -127,7 +127,6 @@ Only the study authors or the platform's developers know.
 | 117 | **Was the mSavorUs cohort enrolled in January–February 2021 or 2022?** Nguyen et al. 2025 (`10.2196/70528`) and Borelli et al. 2025 (`10.2196/67964`) report **the same 37-participant deployment** but state different years — both verified verbatim from full text — and different durations (22 weeks vs ≥19 weeks) and analytic Ns (29 vs 28) | Corresponding authors (Borelli / Rahmani, UC Irvine) | **Repair pass 2026-10-10:** Partly. A third paper on the same cohort, Jafarlou 2024 (PMC11189241, same IRB), contradicts itself (recruitment Sept 2021 to Jan 2022, data Jan to Mar 2021). Leans 2022. Only the authors can settle it. Not cosmetic. **2021 places the study inside heavy California COVID-19 restrictions; 2022 is post-Omicron reopening** — materially different context for a study of loneliness and social connection in college students. Every date-dependent inference from this cohort is **Unclear** until resolved | T16 · M3 AWARE pass, 2026-09-02 |
 | 121 | **Why did none of 13 Android users complete the month-one survey in Panda et al. 2021?** A Beiwe survey-only deployment (2017 to 2019) in which iPhone users went 42 of 61 at month one and Android 0 of 13, then 1 of 13 at months three and six. The authors do not comment | The Onnela Lab or the study team (MGH surgery); Beiwe release history for 2017 to 2019 Android notification delivery | **Repair pass 2026-10-10:** Partly (Reported). Beiwe Android notification issues #8 and #21 (2017) and #27 (2018) fall in the study window; not confirmed for this cohort. Runs opposite to McInerney 2024's iOS survey penalty on the same platform. Together they mean the direction of an OS effect on survey delivery cannot be predicted even from platform and stream | T17 · M3 coverage pass, 2026-09-03 |
 | 130 | Where are data from the EU Beiwe Service Center portal (eu.beiwe.org) stored? | Beiwe Service Center | Data residency for EU studies. | T18 · repair pass, 2026-10-10 |
-| 131 | Does CARP's hosted service accept researchers outside DTU? Its CAWS page says DTU-affiliated only; its "three ways" page invites anyone to email. | CARP / DTU (info@carp.dk) | Decides whether CARP has a usable hosted route for outside teams. | T18 · repair pass, 2026-10-10 |
 
 ---
 
@@ -350,6 +349,7 @@ These asked the same thing as an earlier row and are tracked there.
 
 | # | Question | Who could answer | Answer / notes | Raised |
 |---|---|---|---|---|
+| 131 | ~~Does CARP's hosted service accept researchers outside DTU?~~ **Resolved 2026-10-11 (Verified).** carp.dk/hosting/, the hosted service's terms (modified 2026-08-23), limits it to projects where DTU Health Tech is an active research partner: DTU helps initiate, fund and design the study and takes part in publication. The 2026-09-28 Studies app post says the same. Non-DTU teams can use it only through such a partnership; otherwise they self-host. The docs line "Whoever you are ... we'll find a way to support it" is an invitation to get in touch, not an alternative access route. The same page publishes 2024 rates: 45,000 DKK setup, 1,250 DKK per study per month, staff time at cost plus 44%, no SLA. See `../facts/carp.yaml`. | CARP / DTU | | T18 · repair pass, 2026-10-10 |
 | 6 (second use) | ~~Empatica Academic & Basic Research plan cost~~ — **RESOLVED, pricing is public.** Device from **$1,166.40**; 3-year bundle **$2,332.80** list / **$1,749.60** academic (25% off); 5-year **$2,916** / **$2,187** academic. Volume discounts automatic at 5+ devices | Empatica. https://www.empatica.com/store/platform-professional/ |  | T2 · M1 first pass, 2026-08-21 |
 | 47 | ~~**Verily Study Watch**~~: **RESOLVED — active, not discontinued; clinical-research-only, never sold to consumers; records ECG, HR, EDA and inertial motion with weeks of onboard raw storage; multiple FDA 510(k) clearances. See `emerging-platforms.md`** |  |  | T6 · M1 first pass, 2026-08-21 |
 | 48 | ~~Biostrap~~: **RESOLVED — raw/processed PPG, gyroscope and accelerometer via RPM dashboard; configurable sampling rates; integrated surveys; pivoted from consumer to medical. Pricing still non-public** |  |  | T6 · M1 first pass, 2026-08-21 |
