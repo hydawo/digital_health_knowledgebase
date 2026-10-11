@@ -1,0 +1,708 @@
+# Draft record for polar, researcher A, baseline run 2026-10-11. Schema: facts/_schema.yaml
+name: Polar
+kind: wearable
+profile: module-01-wearables/profiles/polar.md
+watch:
+- url: https://www.polar.com/accesslink-api/
+  role: docs
+- url: https://www.polar.com/en/legal/polar-api-agreement
+  role: terms
+- url: https://github.com/polarofficial/polar-ble-sdk
+  role: repository
+- url: https://github.com/polarofficial/polar-ble-sdk/blob/master/Polar_SDK_License.txt
+  role: terms
+  fetch_url: https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/Polar_SDK_License.txt
+- url: https://github.com/polarofficial/polar-ble-sdk/releases
+  role: changelog
+- url: https://www.polar.com/en/science/collaborate-with-us
+  role: research_program
+- url: https://www.polar.com/en/science/research-tools
+  role: research_program
+- url: https://www.polar.com/en/business/developers
+  role: developer_program
+- url: https://www.polar.com/en/legal/privacy-notice
+  role: terms
+- url: https://www.polar.com/en/legal/data-notice
+  role: terms
+- url: https://www.polar.com/us-en/sensors/h10-heart-rate-sensor
+  role: pricing
+- url: https://www.polar.com/us-en/loop
+  role: pricing
+- url: https://www.polar.com/us-en/fitness-program
+  role: pricing
+- url: https://api.fda.gov/device/510k.json?search=applicant:%22polar+electro%22
+  role: regulatory
+facts:
+# ---------------- Research access ----------------
+- field: research_program
+  status: stated
+  value: 'Polar Research Center collaboration: research units submit a proposal to research@polar.com for a joint
+    study with Polar Electro Oy, and may request Polar support in technology, money or other forms. Separately, Polar
+    markets the H10, Verity Sense, AccessLink API and Team Pro as research tools, but this is product information,
+    not a program with its own terms.'
+  confidence: Verified
+  sources:
+  - url: https://www.polar.com/en/science/collaborate-with-us
+    type: vendor_page
+    quote: These guidelines apply to the scientific studies done in collaboration with Polar Electro Oy.
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/en/science/collaborate-with-us
+    type: vendor_page
+    quote: budget and proposal for Polar support (technology, money, other)
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/en/science/research-tools
+    type: vendor_page
+    quote: Find out how Polar technology and services can be used for research and science.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: program_eligibility
+  status: stated
+  value: No formal eligibility criteria. The proposal is expected from a research unit (institute, university,
+    department or similar), and proposals are rated by value to Polar, so studies outside Polar's interests are
+    rejected or wait-listed.
+  confidence: Verified
+  sources:
+  - url: https://www.polar.com/en/science/collaborate-with-us
+    type: vendor_page
+    quote: Presentation of the research unit (institute, university, department etc.)
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/en/science/collaborate-with-us
+    type: vendor_page
+    quote: Not interesting and not in relation to Company actions to be rejected
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: program_application
+  status: stated
+  value: 'Email a proposal (research unit, lead researcher CV, research plan of at most 10 pages) to research@polar.com.
+    Polar replies within two weeks; an accepted study gets a signed research agreement, and the research partner
+    handles ethical approvals.'
+  confidence: Verified
+  sources:
+  - url: https://www.polar.com/en/science/collaborate-with-us
+    type: vendor_page
+    quote: Proposals are evaluated and response given to applicant within two weeks.
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/en/science/collaborate-with-us
+    type: vendor_page
+    quote: After study proposal and a study plan are accepted a research agreement is signed.
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/en/science/collaborate-with-us
+    type: vendor_page
+    quote: Research partner takes care of ethical approvals needed.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: program_status
+  status: stated
+  value: Active; the collaboration page invites proposals and gives a submission address.
+  confidence: Corroborated
+  sources:
+  - url: https://www.polar.com/en/science/collaborate-with-us
+    type: vendor_page
+    quote: At Polar Research Center, we are always open to suggestions for new collaboration opportunities.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Status inferred from a live invitation page; no dated program announcement found.
+- field: developer_program_status
+  status: stated
+  value: Open. Any Polar Flow user can self-register an AccessLink API client at admin.polaraccesslink.com after
+    accepting the API Limited License Agreement; no review step is documented. The BLE SDK is public on GitHub
+    (latest release 8.4.0, 2026-10-01). EU Digital Markets Act gatekeepers are excluded.
+  confidence: Verified
+  sources:
+  - url: https://www.polar.com/accesslink-api/
+    type: vendor_docs
+    quote: Any registered Polar Flow user can create API client to AccessLink by filling application details at
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/en/legal/polar-api-agreement
+    type: vendor_legal
+    quote: Gatekeepers shall not be eligible to enter into this Agreement.
+    retrieved: '2026-10-11'
+  - url: https://github.com/polarofficial/polar-ble-sdk
+    type: repository
+    quote: Build apps that connect via Bluetooth LE and stream real-time heart rate, ECG, accelerometer, PPG, and more
+      from Polar devices.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: user_cap
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.polar.com/accesslink-api/
+    type: vendor_docs
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/en/legal/polar-api-agreement
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://github.com/polarofficial/polar-ble-sdk
+    type: repository
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: No participant or user cap is published for AccessLink or the SDK. AccessLink rate limits grow with the number
+    of registered users (see rate_limits) rather than capping them.
+- field: academic_vs_commercial
+  status: stated
+  value: No separate academic tier. AccessLink and the BLE SDK are offered free under the same licence to everyone,
+    and the SDK licence explicitly permits private and commercial use. The research collaboration route is a separate,
+    proposal-based partnership, and B2B partnerships go through a contact form.
+  confidence: Corroborated
+  sources:
+  - url: https://github.com/polarofficial/polar-ble-sdk/blob/master/Polar_SDK_License.txt
+    fetch_url: https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/Polar_SDK_License.txt
+    type: vendor_legal
+    quote: You are allowed to use the SDK for the development of software for your private as well as for commercial
+      use for as long as you use the SDK in compliance with the license terms.
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/en/legal/polar-api-agreement
+    type: vendor_legal
+    quote: At the moment Polar offers the use and activation of Polar API’s free of charge.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: '"No separate academic tier" is an inference from the absence of any academic terms on the API, SDK and
+    science pages.'
+# ---------------- Pricing ----------------
+- field: device_price
+  status: stated
+  scope: Polar H10 chest strap
+  value: USD 104.95 (US store, 2026-10-11)
+  confidence: Verified
+  sources:
+  - url: https://www.polar.com/us-en/sensors/h10-heart-rate-sensor
+    type: vendor_page
+    quote: Polar H10 Heart Rate Sensor $104.95
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: device_price
+  status: stated
+  scope: Polar Verity Sense
+  value: USD 104.95 (US store, 2026-10-11)
+  confidence: Verified
+  sources:
+  - url: https://www.polar.com/us-en/products/accessories/polar-verity-sense
+    type: vendor_page
+    quote: Polar Verity Sense Optical Heart Rate Sensor $104.95
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: device_price
+  status: stated
+  scope: POLAR Loop
+  value: USD 199.99 (US store, 2026-10-11)
+  confidence: Verified
+  sources:
+  - url: https://www.polar.com/us-en/loop
+    type: vendor_page
+    quote: POLAR Loop Screen-Free Wearable Health Band & Fitness Tracker $199.99
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: device_price
+  status: stated
+  scope: Polar Vantage V3
+  value: USD 699.99 (US store, 2026-10-11)
+  confidence: Verified
+  sources:
+  - url: https://www.polar.com/us-en/vantage/v3
+    type: vendor_page
+    quote: Polar Vantage V3 Premium Multisport Watch $699.99
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: subscription_price
+  status: stated
+  value: Polar Flow is free with optional paid premium features. The Fitness Program (requires a Polar watch) is free
+    to try, then EUR 9.99 per month. POLAR Loop is sold as subscription-free.
+  confidence: Verified
+  sources:
+  - url: https://www.polar.com/en/legal/data-notice
+    type: vendor_legal
+    quote: The Polar Flow service is free to use, but it includes premium features that require a paid subscription.
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/us-en/fitness-program
+    type: vendor_page
+    quote: Try for free, then 9,99 €/month
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/us-en/loop
+    type: vendor_page
+    quote: No monthly fees. No locked features.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: The US-English Fitness Program page shows the price in euros.
+- field: academic_pricing
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.polar.com/en/science/research-tools
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/uk-en/business/science
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/en/science/collaborate-with-us
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/en/business
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: The science pages call Polar products affordable for large test groups but publish no academic or volume
+    discount. Collaboration proposals may request Polar support in technology or money.
+- field: api_platform_fees
+  status: stated
+  value: AccessLink (and the Team Pro API) is free at present, but Polar reserves the right to charge fees. The BLE SDK
+    is free of charge under its licence.
+  confidence: Verified
+  sources:
+  - url: https://www.polar.com/en/legal/polar-api-agreement
+    type: vendor_legal
+    quote: At the moment Polar offers the use and activation of Polar API’s free of charge.
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/en/legal/polar-api-agreement
+    type: vendor_legal
+    quote: Polar reserves the right to charge fees from time to time at its discretion.
+    retrieved: '2026-10-11'
+  - url: https://github.com/polarofficial/polar-ble-sdk/blob/master/Polar_SDK_License.txt
+    fetch_url: https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/Polar_SDK_License.txt
+    type: vendor_legal
+    quote: Licensed Materials shall be offered free of charge, subject to You being in compliance with the terms of this
+      Agreement at all times.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: minimum_commitment
+  status: stated
+  scope: AccessLink API
+  value: None. The API agreement runs until either party gives 30 days' written notice; Polar may also suspend or
+    terminate access immediately for any reason.
+  confidence: Verified
+  sources:
+  - url: https://www.polar.com/en/legal/polar-api-agreement
+    type: vendor_legal
+    quote: This Agreement shall remain in force until terminated by either Party by providing a thirty (30) days prior
+      written notice to the other Party.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: minimum_commitment
+  status: not_public
+  scope: Business and B2B (Polar 360, volume device orders)
+  confidence: Verified
+  sources:
+  - url: https://www.polar.com/en/business/polar-360
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/en/business
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: quote_required
+  status: stated
+  value: Consumer devices have public list prices. Business offerings (Polar 360 and B2B partnerships) have no public
+    price and go through a contact form to the local B2B team.
+  confidence: Verified
+  sources:
+  - url: https://www.polar.com/en/business
+    type: vendor_page
+    quote: To learn more about Polar for Business and to discuss B2B partnership opportunities, please complete the form
+      below.
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/us-en/sensors/h10-heart-rate-sensor
+    type: vendor_page
+    quote: Polar H10 Heart Rate Sensor $104.95
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+# ---------------- Data access and terms ----------------
+- field: raw_streams
+  status: stated
+  scope: BLE SDK, Polar H10
+  value: Heart rate with RR intervals, ECG in microvolts, and 3-axis accelerometer, streamed live; internal recording of
+    HR only.
+  confidence: Verified
+  sources:
+  - url: https://github.com/polarofficial/polar-ble-sdk/blob/master/documentation/products/PolarH10.md
+    fetch_url: https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/documentation/products/PolarH10.md
+    type: vendor_docs
+    quote: Electrocardiography (ECG) data in µV with sample rate 130Hz.
+    retrieved: '2026-10-11'
+  - url: https://github.com/polarofficial/polar-ble-sdk/blob/master/documentation/products/PolarH10.md
+    fetch_url: https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/documentation/products/PolarH10.md
+    type: vendor_docs
+    quote: Heart rate as beats per minute and RR Interval in ms.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: raw_streams
+  status: stated
+  scope: BLE SDK, Polar Verity Sense
+  value: PPG, PP intervals, heart rate, accelerometer, gyroscope and magnetometer, by live streaming or offline
+    recording on the sensor.
+  confidence: Verified
+  sources:
+  - url: https://github.com/polarofficial/polar-ble-sdk/blob/master/documentation/products/PolarVeritySense.md
+    fetch_url: https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/documentation/products/PolarVeritySense.md
+    type: vendor_docs
+    quote: Photoplethysmograpy (PPG) values.
+    retrieved: '2026-10-11'
+  - url: https://github.com/polarofficial/polar-ble-sdk/blob/master/documentation/products/PolarVeritySense.md
+    fetch_url: https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/documentation/products/PolarVeritySense.md
+    type: vendor_docs
+    quote: Gyroscope data with sample rate of 52Hz and ranges of 2000deg/sec.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: raw_streams
+  status: stated
+  scope: BLE SDK, POLAR Loop and Polar 360
+  value: Green-channel PPG, PP intervals, accelerometer, skin temperature and heart rate (streaming and offline
+    recording), plus export of 24/7 HR and PPI samples from the device.
+  confidence: Verified
+  sources:
+  - url: https://github.com/polarofficial/polar-ble-sdk/blob/master/documentation/products/Polar360.md
+    fetch_url: https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/documentation/products/Polar360.md
+    type: vendor_docs
+    quote: 'Photoplethysmograpy (PPG): 22Hz, 24bit resolution, Green channels'
+    retrieved: '2026-10-11'
+  - url: https://github.com/polarofficial/polar-ble-sdk/blob/master/documentation/products/Polar360.md
+    fetch_url: https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/documentation/products/Polar360.md
+    type: vendor_docs
+    quote: 24/7 PPi samples in milliseconds (get247PPiSamples)
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: raw_streams
+  status: stated
+  scope: AccessLink API (Polar Flow cloud)
+  value: No raw sensor waveforms. Closest to raw are exercise samples (heart rate and other sample types, with route),
+    exercise FIT/TCX/GPX files, 5-minute continuous heart rate, and wrist ECG and SpO2 spot-test results from Elixir
+    biosensing watches.
+  confidence: Verified
+  sources:
+  - url: https://www.polar.com/accesslink-api/
+    type: vendor_docs
+    quote: Elixir™ Biosensing data consists of body temperature data, sleep skin temperature data, skin contacts data,
+      wrist ECG test report data and SpO2 test report data.
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/accesslink-api/
+    type: vendor_docs
+    quote: Use samples and zones query parameters to return optional samples and zone information of the exercises.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: '"No raw sensor waveforms" is from the endpoint list in the docs; raw PPG, ECG and accelerometer are only
+    reachable through the BLE SDK.'
+- field: derived_metrics
+  status: stated
+  value: 'AccessLink: daily activity (steps, calories, activity zones), sleep and Sleep Plus Stages, Nightly Recharge
+    (overnight HRV as RMSSD, breathing rate, ANS charge), Cardio Load (TRIMP-based strain, tolerance), SleepWise
+    alertness and circadian bedtime, Training Load Pro, body and sleep skin temperature. SDK on Loop/360: steps,
+    active time, calories, MET samples, Nightly Recharge, sleep.'
+  confidence: Verified
+  sources:
+  - url: https://www.polar.com/accesslink-api/
+    type: vendor_docs
+    quote: The Heart rate variability is Root Mean Square of Successive Differences (RMSSD) in beat-to-beat intervals.
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/accesslink-api/
+    type: vendor_docs
+    quote: Cardio load is based on training impulse calculation (TRIMP), a commonly accepted and scientifically proven
+      method to quantify training load.
+    retrieved: '2026-10-11'
+  - url: https://github.com/polarofficial/polar-ble-sdk/blob/master/documentation/products/Polar360.md
+    fetch_url: https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/documentation/products/Polar360.md
+    type: vendor_docs
+    quote: Nightly recharge data per night (getNightlyRecharge)
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: SleepWise and Elixir biosensing endpoints were released in beta status (changelog 13.03.2023 and 19.12.2023).
+- field: sampling_rates
+  status: stated
+  scope: BLE SDK
+  value: 'H10: ECG 130 Hz; accelerometer 25, 50, 100 or 200 Hz; HR and RR at 1 Hz. Verity Sense: accelerometer and
+    gyroscope 52 Hz by default (up to 416 Hz streaming in SDK mode), PPG 55 Hz by default (up to 176 Hz streaming in
+    SDK mode), magnetometer 10 to 100 Hz. Loop/360: PPG 22 Hz, accelerometer 50 Hz, skin temperature 1 to 4 Hz.'
+  confidence: Verified
+  sources:
+  - url: https://github.com/polarofficial/polar-ble-sdk/blob/master/documentation/products/PolarH10.md
+    fetch_url: https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/documentation/products/PolarH10.md
+    type: vendor_docs
+    quote: Accelerometer data with sample rates of 25Hz, 50Hz, 100Hz and 200Hz and range of 2G, 4G and 8G.
+    retrieved: '2026-10-11'
+  - url: https://github.com/polarofficial/polar-ble-sdk/blob/master/documentation/products/PolarVeritySense.md
+    fetch_url: https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/documentation/products/PolarVeritySense.md
+    type: vendor_docs
+    quote: 28Hz, 44Hz, **55Hz**, 135Hz, 176Hz
+    retrieved: '2026-10-11'
+  - url: https://github.com/polarofficial/polar-ble-sdk/blob/master/documentation/products/Polar360.md
+    fetch_url: https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/documentation/products/Polar360.md
+    type: vendor_docs
+    quote: 'Acceleration: 50Hz, 16bit resolution, Range 8G'
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: sampling_rates
+  status: stated
+  scope: AccessLink API
+  value: Continuous (24/7) heart rate at 5-minute intervals; training-session samples at a finer interval through the
+    exercise endpoints. On Loop/360 the device's own 24/7 HR is 5-minute averages at low activity and 60 samples per
+    minute at high activity.
+  confidence: Verified
+  sources:
+  - url: https://www.polar.com/accesslink-api/
+    type: vendor_docs
+    quote: Samples are recording in 5 minute intervals.
+    retrieved: '2026-10-11'
+  - url: https://github.com/polarofficial/polar-ble-sdk/blob/master/documentation/products/Polar360.md
+    fetch_url: https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/documentation/products/Polar360.md
+    type: vendor_docs
+    quote: 24/7 HR samples as 5 min averages when low or moderate activity and with 60 samples/minute when high activity
+      is detected
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: history_depth
+  status: stated
+  scope: AccessLink API
+  value: 'Nothing from before the user registered with the client. Exercises: last 30 days. Sleep, Nightly Recharge,
+    SleepWise: last 28 days. Daily activity and activity samples: up to 365 days back, in windows of at most 28 days.
+    Biosensing: 28-day ranges.'
+  confidence: Verified
+  sources:
+  - url: https://www.polar.com/accesslink-api/
+    type: vendor_docs
+    quote: Only Exercises uploaded to Flow in the last 30 days are returned.
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/accesslink-api/
+    type: vendor_docs
+    quote: Only exercises that have been uploaded to Flow after the user is registered with your client will be returned.
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/accesslink-api/
+    type: vendor_docs
+    quote: From date cannot be older than 365 days from today and the maximum range between from and to is 28 days.
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/accesslink-api/
+    type: vendor_docs
+    quote: List sleep data of user for the last 28 days.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: For anything older, a participant must export from account.polar.com themselves.
+- field: export_routes
+  status: stated
+  value: 'AccessLink REST API (OAuth2, JSON or XML, webhooks, exercise FIT/TCX/GPX files); BLE SDK for Android and
+    iOS (live streaming and offline recordings read from the device); participant self-export from account.polar.com;
+    sync to Apple Health and Google Fit; Team Pro API for team data.'
+  confidence: Verified
+  sources:
+  - url: https://www.polar.com/accesslink-api/
+    type: vendor_docs
+    quote: JSON and XML file formats are supported except for OAuth2 process where only JSON file format is supported.
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/en/legal/data-notice
+    type: vendor_legal
+    quote: To download your data, visit account.polar.com and sign in using the same username and password as your Flow
+      account.
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/en/developers
+    type: vendor_page
+    quote: Polar integrates with the Google Fit and Apple HealthKit fitness platforms.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: rate_limits
+  status: stated
+  scope: AccessLink API
+  value: Dynamic, per partner, recalculated daily. 15-minute limit 500 + 20 x registered users; 24-hour limit
+    5000 + 100 x registered users. Excess returns HTTP 429. Load testing without Polar's approval is prohibited.
+  confidence: Verified
+  sources:
+  - url: https://www.polar.com/accesslink-api/
+    type: vendor_docs
+    quote: '15min rate limit: 500 + number of users x 20 24h rate limit: 5000 + number of users x 100'
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/en/legal/polar-api-agreement
+    type: vendor_legal
+    quote: Load testing without prior approval by Polar will be construed as interfering with the proper working of
+      Polar Ecosystem
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: retention_terms
+  status: stated
+  value: 'Developer side: on a member''s request or when the relationship ends, the developer must stop access, revoke
+    the token and delete it; on termination of the agreement, all copies of Data must be destroyed. No fixed retention
+    period for retrieved data. Polar side: Flow data is kept while the account is active.'
+  confidence: Verified
+  sources:
+  - url: https://www.polar.com/en/legal/polar-api-agreement
+    type: vendor_legal
+    quote: revoke the token issued by Polar to access the Member’s account(s), and delete related token(s) from Your
+      database(s) and server(s)
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/en/legal/polar-api-agreement
+    type: vendor_legal
+    quote: You shall destroy and delete all copies of the Licensed Materials and Data.
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/en/legal/data-notice
+    type: vendor_legal
+    quote: By default, your data is retained as long as your Flow account remains active.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: ai_training_terms
+  status: unclear
+  value: Neither the API agreement nor the SDK licence mentions AI or machine-learning use of Data. Polar's own notices
+    say customer data is used internally for R&D, including developing and testing new algorithms.
+  confidence: Unclear
+  sources:
+  - url: https://www.polar.com/en/legal/polar-api-agreement
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://github.com/polarofficial/polar-ble-sdk/blob/master/Polar_SDK_License.txt
+    fetch_url: https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/Polar_SDK_License.txt
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/en/legal/data-notice
+    type: vendor_legal
+    quote: Polar may use your personal and non-personal data internally for research and development purposes to enhance
+      technologies, develop new products, and improve services.
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/en/legal/privacy-notice
+    type: vendor_legal
+    quote: New algorithms are being developed and tested, and customer mass data is being used to, for example, find
+      anomalies in the features or to find devices that may not work properly.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: deprecations
+  status: stated
+  scope: AccessLink API
+  value: Transactional endpoints for Exercises and Daily activity deprecated on 18.08.2025, and for Physical info on
+    13.01.2026, in favour of new non-transactional endpoints. No shutdown date published.
+  confidence: Verified
+  sources:
+  - url: https://www.polar.com/accesslink-api/
+    type: vendor_docs
+    quote: Transactional endpoint for Daily activity is deprecated Transactional endpoint for Exercises is deprecated
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/accesslink-api/
+    type: vendor_docs
+    quote: Transactional endpoint for Physical info is deprecated
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+# ---------------- Compliance ----------------
+- field: baa
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.polar.com/en/legal/privacy-notice
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/en/legal/data-notice
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/en/legal/polar-api-agreement
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/en/legal/terms-of-use
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/en/business
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: No BAA or HIPAA mention on any page checked.
+- field: dpa
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.polar.com/en/legal/polar-api-agreement
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/en/legal/data-notice
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/en/legal/privacy-notice
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: No DPA document is published. The API agreement makes Polar the controller for Flow data and the API developer
+    a controller too, so no processor agreement applies to AccessLink; for Team Pro, Polar is the processor under a
+    separate licence agreement that is not public.
+- field: hipaa_statement
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.polar.com/en/legal/privacy-notice
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/en/legal/terms-of-use
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/en/legal/polar-api-agreement
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+- field: gdpr_statement
+  status: stated
+  value: Polar Electro Oy (Finland) is the GDPR data controller for Polar Flow data; AccessLink developers are also
+    controllers for the data they receive; for Team Pro, the customer is controller and Polar the processor. The
+    privacy notice sets out GDPR rights and EU/EEA storage, and a separate Data Notice covers the EU Data Act.
+  confidence: Corroborated
+  sources:
+  - url: https://www.polar.com/en/legal/polar-api-agreement
+    type: vendor_legal
+    quote: In case of Polar Flow, Polar is data controller as defined in General Data Protection Regulation of the
+      European Union
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/en/legal/data-notice
+    type: vendor_legal
+    quote: We are committed to ensuring transparency, security, and compliance with the European Union’s Data Act
+      (2023/2854) in how we manage your data.
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+- field: iso27001
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.polar.com/img/documents/iso/ISO_9001_Certification_PEOY_en.pdf
+    type: certificate
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/en/legal/privacy-notice
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/en/business
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: Polar publishes ISO 9001 (quality) and ISO 14001 (environmental, Malaysia factory) certificates, but no ISO/IEC
+    27001 certificate was found.
+- field: soc2
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.polar.com/en/legal/privacy-notice
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/en/business
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/en/business/developers
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+- field: fda_clearances
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://api.fda.gov/device/510k.json?search=applicant:%22polar+electro%22
+    type: regulator_db
+    retrieved: '2026-10-11'
+  - url: https://api.fda.gov/device/pma.json?search=applicant:%22polar+electro%22
+    type: regulator_db
+    retrieved: '2026-10-11'
+  - url: https://api.fda.gov/device/registrationlisting.json?search=registration.owner_operator.firm_name:%22polar+electro%22
+    type: regulator_db
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: All three openFDA searches return no match (an applicant:polar 510(k) search returns only unrelated firms).
+    The SDK licence states Polar devices are not intended for medical purposes.
+- field: data_residency
+  status: stated
+  value: Polar Flow and Team Pro service data is stored on Polar's servers in the EU (Ireland and Sweden). Email
+    addresses or user IDs may go to service providers outside the EU for notifications and error reporting. No customer
+    choice of region is offered.
+  confidence: Corroborated
+  sources:
+  - url: https://www.polar.com/en/legal/data-notice
+    type: vendor_legal
+    quote: Polar Flow service data is stored on Polar’s servers in the EU (Ireland and Sweden).
+    retrieved: '2026-10-11'
+  - url: https://www.polar.com/en/legal/privacy-notice
+    type: vendor_legal
+    quote: Your data is stored on Polar ecosystem servers which are located in the EU/EEA area.
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: '"No customer choice of region" is inferred from the absence of any residency option.'
