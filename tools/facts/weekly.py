@@ -47,24 +47,32 @@ def main():
     urls = {}  # url -> {'fetch': fetch_url, 'roles': set, 'quotes': [(company, label, quote)]}
     for company, rec in records.items():
         for wch in rec.get('watch') or []:
-            u = urls.setdefault(wch['url'], {'fetch': source_fetch_url(wch), 'roles': set(), 'quotes': [], 'cited_by': set()})
+            # keyed by (page, address actually fetched): a source read through an archive or JSON rendering is a
+            # different fetch from the live page and must be checked on its own
+            u = urls.setdefault((wch['url'], source_fetch_url(wch)), {'fetch': source_fetch_url(wch), 'roles': set(), 'quotes': [], 'cited_by': set()})
             u['roles'].add(wch.get('role', 'other'))
         for f in rec.get('facts') or []:
             label = f['field'] + (f' [{f["scope"]}]' if f.get('scope') else '')
             for s in f.get('sources') or []:
                 if not s.get('url'):
                     continue
-                u = urls.setdefault(s['url'], {'fetch': source_fetch_url(s), 'roles': set(), 'quotes': [], 'cited_by': set()})
+                u = urls.setdefault((s['url'], source_fetch_url(s)), {'fetch': source_fetch_url(s), 'roles': set(), 'quotes': [], 'cited_by': set()})
                 u['cited_by'].add(f'{company}: {label}')
+                if s.get('expect_absent'):
+                    u['expect_absent'] = True
                 if s.get('quote') and f.get('status') in ('stated', 'conflict'):
-                    u['quotes'].append((company, label, s['quote']))
+                    u['quotes'].append((company, label, str(s['quote'])))
 
     missing, reworded, changed, dead, by_hand, unreachable, noisy_new = [], [], [], [], [], [], []
-    for url, u in sorted(urls.items()):
+    for (url, fetch_url), u in sorted(urls.items()):
         r = fetch(u['fetch'])
-        st = state.setdefault(url, {})
+        st = state.setdefault(url if fetch_url == url else f'{url} via {fetch_url}', {})
+        if fetch_url != url:
+            url = f'{url} (read via {fetch_url})'
         st['last_checked'] = TODAY
         st['last_status'] = r['status']
+        if r['status'] == 'dead' and u.get('expect_absent'):
+            continue  # the source exists to show the page or listing is gone; a 404 confirms it
         if r['status'] == 'dead':
             dead.append((url, r['error'], sorted(u['cited_by'])))
             continue

@@ -31,6 +31,8 @@ gone stale.
       quote: "...exact words copied from the page..."
       retrieved: 2026-10-10
       # fetch_url: optional, for pages built by JavaScript (for example Apple's JSON docs)
+      # expect_absent: true, when the source shows something does not exist (a removed page, a missing
+      #   store listing); a 404 then confirms the fact instead of being reported as a dead link
   recheck_by: 2026-11-09     # 30 days for access, pricing and terms; 90 for compliance
   scope: Ring 4             # optional, when products differ
   note: optional context

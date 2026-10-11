@@ -1,92 +1,896 @@
 # Vendor fact record. Schema: facts/_schema.yaml. How to work it: facts/README.md.
+# Baseline run judged 2026-10-10 from drafts A and B and the gap hunt (facts/_drafts/whoop/).
+# www.whoop.com answers scripts with HTTP 403. Facts resting only on an Internet Archive capture of a
+# whoop.com page, or on 2022 to 2023 WHOOP documents, are capped at Reported with recheck_by 2026-10-24
+# so a person can confirm the live page in a browser. Captures cannot show what a page says now, and
+# the weekly monitor cannot detect changes through them.
 name: WHOOP
 kind: wearable
 profile: module-01-wearables/profiles/whoop.md
 watch:
-- url: https://developer.whoop.com/docs/developing/support/
-  role: developer_program
-- url: https://www.whoop.com/
-  role: other
-- url: https://developer.whoop.com/
-  role: developer_program
-- url: https://developer.whoop.com/docs/introduction/
-  role: developer_program
-- url: https://developer.whoop.com/api/
-  role: developer_program
-- url: https://developer.whoop.com/docs/developing/rate-limiting/
-  role: developer_program
-- url: https://developer.whoop.com/docs/developing/getting-started/
-  role: developer_program
-- url: https://developer.whoop.com/docs/developing/app-approval/
-  role: developer_program
-- url: https://developer.whoop.com/api-terms-of-use/
-  role: terms
-- url: https://www.whoop.com/termsofuse/
-  role: terms
 - url: https://developer.whoop.com/docs/developing/app-approval
   role: developer_program
-- url: https://developer.whoop.com/api
+- url: https://developer.whoop.com/api-terms-of-use
+  role: terms
+- url: https://developer.whoop.com/docs/developing/support
   role: developer_program
+- url: https://developer.whoop.com/docs/developing/rate-limiting
+  role: docs
+- url: https://developer.whoop.com/api
+  role: docs
+- url: https://developer.whoop.com/docs/api-changelog
+  role: changelog
+- url: https://developer.whoop.com/docs/partner/overview
+  role: developer_program
+- url: https://whoopinc.typeform.com/whoop-research
+  role: research_program
+- url: https://www.whoop.com/us/en/research/
+  role: research_program
 - url: https://www.whoop.com/us/en/membership/
   role: pricing
+- url: https://www.whoop.com/privacy/full-privacy-policy/
+  role: terms
+- url: https://www.whoop.com/us/en/thelocker/access-your-whoop-data-with-new-integrations-data-export-options/
+  role: docs
+- url: https://api.fda.gov/device/510k.json?search=applicant:whoop
+  role: regulatory
 facts:
 - field: research_program
-  status: unresearched
+  status: stated
+  value: No named, self-serve program for outside researchers. WHOOP runs research through partnerships it
+    approves; it runs a research request intake form, says it uses de-identified member data with research
+    partners, and academic papers have analysed WHOOP-held member data with WHOOP's permission. Digital WHOOP
+    Labs is an in-app feature for members to join WHOOP's own studies. The WHOOP Unite enterprise route offered
+    study-site support in 2022 to 2023
+  confidence: Reported
+  sources:
+  - url: https://whoopinc.typeform.com/whoop-research
+    type: vendor_page
+    quote: Research Request Intake
+    retrieved: '2026-10-10'
+    note: WHOOP's own form on Typeform, linked from the research page (researcher B, browser read). Form title
+      only; the questions are built by JavaScript and were not read. Nothing was submitted.
+  - url: https://www.whoop.com/privacy/full-privacy-policy/
+    fetch_url: https://web.archive.org/web/20260806173749/https://www.whoop.com/privacy/full-privacy-policy/
+    type: vendor_legal
+    quote: We also use de-identified wellness data for research purposes to help us and our research partners
+      answer important questions about human performance
+    retrieved: '2026-10-10'
+    note: Internet Archive capture of 2026-08-06 (policy Last Updated August 3, 2026). Live page is 403 to scripts.
+  - url: https://doi.org/10.1038/s41746-026-02799-9
+    fetch_url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13482339/fullTextXML
+    type: paper
+    quote: Data are however available from the authors upon reasonable request and with permission of WHOOP, Inc.
+    retrieved: '2026-10-10'
+    note: npj Digital Medicine 2026, Stanford Wu Tsai Human Performance Alliance with WHOOP; members had
+      consented to a WHOOP women's health research study.
+  - url: https://www.whoop.com/us/en/digital-whoop-labs/
+    fetch_url: https://web.archive.org/web/20260727062958/https://www.whoop.com/us/en/digital-whoop-labs/
+    type: vendor_page
+    quote: Digital WHOOP Labs is an in-app feature that lets you participate in research studies remotely.
+    retrieved: '2026-10-10'
+    note: Internet Archive capture of 2026-07-27. Internal research, not a route for outside teams.
+  - url: https://www.mubadala.com/en/news/mubadala-partners-with-whoop-to-strengthen-preventative-health-and-research-capabilities-in-the-uae
+    type: secondary
+    quote: The WHOOP–Mubadala Health Research Initiative will support structured collaboration with leading UAE
+      institutions to conduct longitudinal studies in cardiovascular health, sleep science, recovery, and behavioral
+      performance.
+    retrieved: '2026-10-10'
+    note: Partner press release, 2026-05-07. Regional, institution-level.
+  - url: https://sensorlab.arizona.edu/sites/default/files/2023-05/Study%20Site%20Onboarding.pdf
+    type: secondary
+    quote: Understand WHOOP for clinical study applications
+    retrieved: '2026-10-10'
+    note: WHOOP-authored WHOOP Unite study-site deck (copyright 2022), hosted by the University of Arizona sensor lab.
+  - url: https://www.whoop.com/us/en/research/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    note: HTTP 403 to scripts and no Internet Archive capture since 2025. Researcher B's browser read says WHOOP
+      works "with academic and industry partners to design studies" and links CONTACT US to the intake form.
+  recheck_by: '2026-10-24'
+  note: Also a 2025 Invest Qatar partnership for a WHOOP performance lab in Doha with local research partnerships
+    (einpresswire, 2025-10-28). Check the research page in a browser.
 - field: program_eligibility
-  status: unresearched
+  status: unclear
+  confidence: Unclear
+  sources:
+  - url: https://www.whoop.com/us/en/research/
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://whoopinc.typeform.com/whoop-research
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://www.sensorlab.arizona.edu/sites/default/files/2023-05/WHOOP%20Unite%20Research%20FAQs_0.pdf
+    type: secondary
+    retrieved: '2026-10-10'
+  recheck_by: '2026-10-24'
+  note: No eligibility criteria found. The research page (403 to scripts, browser read by researcher B) addresses
+    "academic and industry partners" without criteria; the 2023 Unite FAQ states none.
 - field: program_application
-  status: unresearched
+  status: stated
+  value: No published application or review process. Research requests go through WHOOP's Research Request
+    Intake form; a 2026 tutorial reports WHOOP requires an institutional legal review, possibly tied to a minimum
+    device order, before API access; the 2023 Unite FAQ pointed to healthcare@whoop.com
+  confidence: Reported
+  sources:
+  - url: https://whoopinc.typeform.com/whoop-research
+    type: vendor_page
+    quote: Research Request Intake
+    retrieved: '2026-10-10'
+  - url: https://doi.org/10.1111/cts.70693
+    fetch_url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13438180/fullTextXML
+    type: paper
+    quote: Many manufacturers, including Garmin and WHOOP, require an institutional legal review (which may be
+      conditioned upon a minimum device order) before granting API access, along with a review process for API
+      applications.
+    retrieved: '2026-10-10'
+    note: Clinical and Translational Science 2026, experience-based tutorial.
+  - url: https://www.sensorlab.arizona.edu/sites/default/files/2023-05/WHOOP%20Unite%20Research%20FAQs_0.pdf
+    type: secondary
+    quote: For more information, contact healthcare@whoop.com
+    retrieved: '2026-10-10'
+    note: WHOOP-authored WHOOP Unite research FAQ, file dated 2023-05, hosted by the University of Arizona.
+  recheck_by: '2026-10-24'
+  note: The public developer API's own tier requests are covered under user_cap.
 - field: program_status
-  status: unresearched
+  status: unclear
+  value: A research request intake form is live (2026-10-10). The WHOOP Unite research route is not visible any
+    more and its status is undocumented; whoopunite.com redirects to www.whoop.com
+  confidence: Unclear
+  sources:
+  - url: https://whoopinc.typeform.com/whoop-research
+    type: vendor_page
+    quote: Research Request Intake
+    retrieved: '2026-10-10'
+  - url: https://whoopunite.com/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    note: HTTP 301 to https://www.whoop.com/ (curl, 2026-10-10).
+  - url: https://athletechnews.com/whoop-b2b-solution-unite-layoffs/
+    type: secondary
+    quote: Whoop Unite, which launched last year, has laid off 22 employees
+    retrieved: '2026-10-10'
+    note: Published January 13, 2023.
+  - url: https://www.whoop.com/us/en/unite/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    note: HTTP 403 to scripts; no Internet Archive capture since 2025.
+  recheck_by: '2026-10-24'
+  note: Judged unclear, not discontinued. No closure announcement was found, and the only Unite research documents
+    are from 2022 to 2023. Treat the Unite raw-data route as unconfirmed today and ask WHOOP through the intake form.
 - field: developer_program_status
-  status: unresearched
+  status: stated
+  value: Open. Anyone with a WHOOP membership and device can create up to 5 apps in the Developer Dashboard; every
+    new app starts on the Sandbox tier and higher tiers are requested and reviewed manually
+  confidence: Verified
+  sources:
+  - url: https://developer.whoop.com/docs/developing/getting-started
+    type: vendor_docs
+    quote: To start developing with WHOOP, you first need to create an App in the WHOOP Developer Dashboard .
+    retrieved: '2026-10-10'
+  - url: https://developer.whoop.com/docs/developing/getting-started
+    type: vendor_docs
+    quote: You can create up to 5 Apps.
+    retrieved: '2026-10-10'
+  - url: https://developer.whoop.com/docs/developing/overview
+    type: vendor_docs
+    quote: You must have a WHOOP membership to develop an app on the Developer Platform.
+    retrieved: '2026-10-10'
+  - url: https://developer.whoop.com/docs/developing/app-approval
+    type: vendor_docs
+    quote: Requests are reviewed manually, in the order they are received.
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+  note: A separate server-to-server Healthcare Partner API is limited to WHOOP-approved healthcare partners (lab
+    requisition workflows, not member wearable data).
+- field: developer_program_status
+  status: stated
+  scope: Tier upgrade turnaround (developer forum reports)
+  value: Developers reported waits of two to more than three months for tier upgrades above the 10-member Sandbox
+    in June to August 2026; in one thread WHOOP staff escalated and some apps were then approved within days
+  confidence: Reported
+  sources:
+  - url: https://www.community.whoop.com/t/no-response-on-api-app-approval-to-raise-the-10-user-limit/15246
+    type: secondary
+    quote: Same here - we have been waiting for a response for over 3 months now
+    retrieved: '2026-10-10'
+    note: Developer forum, post of 2026-06-30. WHOOP staff replies in the same thread (2026-07-04 to 07-08) escalated
+      cases, and at least two posters reported approval afterwards.
+  - url: https://www.community.whoop.com/t/production-api-access-submitted-jun-26-no-decision-after-60-days-playerslab-integration-already-built/15628
+    type: secondary
+    quote: No decision, no denial, and no stated reason in ~60 days
+    retrieved: '2026-10-10'
+    note: Post of 2026-07-26.
+  - url: https://www.community.whoop.com/t/app-approval-to-raise-the-10-user-limit-3-submissions-since-april-still-no-response-today-ai/15779
+    type: secondary
+    quote: we’ve had no approval, no rejection, and no timeline beyond the initial auto-reply
+    retrieved: '2026-10-10'
+    note: Post of 2026-08-06.
+  recheck_by: '2026-11-09'
+  note: User posts, not WHOOP policy. Build tier requests into a study timeline with slack.
 - field: user_cap
-  status: unresearched
+  status: stated
+  value: 'Member tiers per app: Sandbox 10, Build 100, Growth 1,000, Scale 5,000, Production unlimited. Tiers are
+    earned one at a time with manual review, and from Build onward 50% of the current limit must be connected before
+    requesting the next'
+  confidence: Verified
+  sources:
+  - url: https://developer.whoop.com/docs/developing/app-approval
+    type: vendor_docs
+    quote: Every new app starts on the Sandbox tier, which allows up to 10 WHOOP members to connect.
+    retrieved: '2026-10-10'
+  - url: https://developer.whoop.com/docs/developing/app-approval
+    type: vendor_docs
+    quote: Tier Member limit Sandbox 10 Build 100 Growth 1,000 Scale 5,000 Production Unlimited
+    retrieved: '2026-10-10'
+  - url: https://developer.whoop.com/docs/developing/app-approval
+    type: vendor_docs
+    quote: From Build onward, moving up requires at least 50% of your current tier's member limit to be connected.
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+  note: Reaching Scale needs 50 connected members on Build and then 500 on Growth. See the tier turnaround entry
+    under developer_program_status.
 - field: academic_vs_commercial
-  status: unresearched
+  status: not_public
+  confidence: Reported
+  sources:
+  - url: https://developer.whoop.com/api-terms-of-use
+    type: vendor_legal
+    retrieved: '2026-10-10'
+  - url: https://developer.whoop.com/docs/developing/app-approval
+    type: vendor_docs
+    retrieved: '2026-10-10'
+  - url: https://developer.whoop.com/docs/developing/support
+    type: vendor_docs
+    retrieved: '2026-10-10'
+  - url: https://www.whoop.com/us/en/research/
+    type: vendor_page
+    retrieved: '2026-10-10'
+  recheck_by: '2026-10-24'
+  note: The developer docs and API terms draw no academic or commercial distinction; one set of terms and tiers
+    applies to everyone. In practice academic access to richer data has come through collaborations on WHOOP-held
+    data (see research_program), whose terms are not published. The research page is 403 to scripts.
 - field: device_price
-  status: unresearched
+  status: stated
+  value: No separate device price; each membership includes the hardware (WHOOP 5.0 on One and Peak, WHOOP MG on
+    Life)
+  confidence: Reported
+  sources:
+  - url: https://www.whoop.com/us/en/membership/
+    fetch_url: https://web.archive.org/web/20261002041123/https://www.whoop.com/us/en/membership/
+    type: vendor_page
+    quote: Each membership includes a device, a charger, and a unique set of features
+    retrieved: '2026-10-10'
+    note: Internet Archive capture of 2026-10-02. Live page is 403 to scripts.
+  - url: https://developer.whoop.com/
+    type: vendor_page
+    quote: Try WHOOP free for 1 month. Trial includes Peak membership, 5.0 hardware, Onyx SuperKnit band, battery pack,
+      and more.
+    retrieved: '2026-10-10'
+  - url: https://trackervs.com/pricing/whoop-pricing/
+    type: secondary
+    quote: WHOOP is the only major wearable where the hardware is free but the band stops working the second you stop
+      paying.
+    retrieved: '2026-10-10'
+  recheck_by: '2026-10-24'
+  note: The same capture lists 14+ day battery life for 5.0 and MG.
 - field: subscription_price
-  status: unresearched
+  status: stated
+  value: 'US: One $199/yr, Peak $239/yr, Life $359/yr (secondary sources; matches researcher B''s browser read of the
+    vendor page). Canada, vendor page: One CA$259/yr, Peak CA$349/yr, Life CA$529/yr'
+  confidence: Reported
+  sources:
+  - url: https://trackervs.com/pricing/whoop-pricing/
+    type: secondary
+    quote: One at $199/yr ($25/mo), Peak at $239/yr ($30/mo), and Life at $359/yr ($40/mo) with the WHOOP MG hardware.
+    retrieved: '2026-10-10'
+    note: Page updated May 13, 2026.
+  - url: https://tomsguide.com/wellness/fitness-trackers/whoop-5-0-and-whoop-mg-just-announced-heres-everything-you-need-to-know
+    type: secondary
+    quote: Whoop One costs $199/£169 per year.
+    retrieved: '2026-10-10'
+  - url: https://www.whoop.com/us/en/membership/
+    fetch_url: https://web.archive.org/web/20261002041123/https://www.whoop.com/us/en/membership/
+    type: vendor_page
+    quote: Available at CA$349/yr
+    retrieved: '2026-10-10'
+    note: Internet Archive capture of 2026-10-02, served in Canadian dollars to the archive crawler. The capture also
+      reads "Available at CA$529/yr" and "Starting at CA$259/year."
+  recheck_by: '2026-10-24'
+  note: US dollar prices could not be read from WHOOP's own page by script. Researcher B's browser read on 2026-10-10
+    showed "Available at $199/yr", "$239/yr" and "$359/yr"; confirm in a browser.
 - field: academic_pricing
-  status: unresearched
+  status: not_public
+  confidence: Reported
+  sources:
+  - url: https://www.whoop.com/us/en/membership/
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://www.whoop.com/us/en/bulk-buy/
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://www.whoop.com/us/en/research/
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://www.sensorlab.arizona.edu/sites/default/files/2023-05/WHOOP%20Unite%20Research%20FAQs_0.pdf
+    type: secondary
+    retrieved: '2026-10-10'
+  recheck_by: '2026-10-24'
+  note: No research or academic price found. The bulk-buy page (403 to scripts, browser read by researcher B) offers
+    volume pricing to any buyer, up to 11% off Peak and 14% off Life, none on One. The 2023 Unite FAQ says study
+    memberships could be moved between participants but gives no price.
 - field: api_platform_fees
-  status: unresearched
+  status: stated
+  scope: Developer API
+  value: No charge for the Developer Platform or API; WHOOP may start charging with prior notice. Each user needs a
+    WHOOP membership
+  confidence: Verified
+  sources:
+  - url: https://developer.whoop.com/api-terms-of-use
+    type: vendor_legal
+    quote: Access to and use of the APIs is currently provided at no charge.
+    retrieved: '2026-10-10'
+  - url: https://developer.whoop.com/docs/developing/support
+    type: vendor_docs
+    quote: Access to the WHOOP Developer Platform and API is currently free. However, you must have a WHOOP device,
+      which requires a membership.
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+- field: api_platform_fees
+  status: stated
+  scope: Research partnerships
+  value: Research routes have carried extra fees. The 2023 Unite FAQ priced API extraction separately, and a 2026
+    tutorial reports a paid web application for viewing and downloading group data. Current fees are not published
+  confidence: Reported
+  sources:
+  - url: https://www.sensorlab.arizona.edu/sites/default/files/2023-05/WHOOP%20Unite%20Research%20FAQs_0.pdf
+    type: secondary
+    quote: WHOOP provides raw data for analysis via CSV/Excel files. We do have API capabilities for data extraction
+      at an additional cost.
+    retrieved: '2026-10-10'
+    note: WHOOP-authored, file dated 2023-05.
+  - url: https://doi.org/10.1111/cts.70693
+    fetch_url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13438180/fullTextXML
+    type: paper
+    quote: Oura and WHOOP provide web applications (with an additional fee) to view and download health data for
+      groups of individuals.
+    retrieved: '2026-10-10'
+  recheck_by: '2026-10-24'
 - field: minimum_commitment
-  status: unresearched
+  status: stated
+  value: Consumer memberships are sold by the year; a third party reports monthly billing only for existing members,
+    still with a 12-month commitment. A 2026 tutorial reports API access may be conditioned on a minimum device order.
+    No research minimum is published
+  confidence: Reported
+  sources:
+  - url: https://trackervs.com/pricing/whoop-pricing/
+    type: secondary
+    quote: monthly plans are only available to existing customers , and they still require a 12-month commitment
+    retrieved: '2026-10-10'
+  - url: https://doi.org/10.1111/cts.70693
+    fetch_url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13438180/fullTextXML
+    type: paper
+    quote: Many manufacturers, including Garmin and WHOOP, require an institutional legal review (which may be
+      conditioned upon a minimum device order) before granting API access, along with a review process for API
+      applications.
+    retrieved: '2026-10-10'
+  - url: https://www.whoop.com/us/en/terms-of-sale/
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    note: 403 to scripts. Researcher B's browser read found no membership term or renewal clause.
+  recheck_by: '2026-10-24'
+  note: The vendor membership page shows only per-year prices. Membership term length was not found on a page
+    readable by script.
 - field: quote_required
-  status: unresearched
+  status: stated
+  scope: Developer API
+  value: No; the API is free and self-serve
+  confidence: Verified
+  sources:
+  - url: https://developer.whoop.com/api-terms-of-use
+    type: vendor_legal
+    quote: Access to and use of the APIs is currently provided at no charge.
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+- field: quote_required
+  status: stated
+  scope: Research partnerships and Healthcare Partner API
+  value: Yes in practice. No research or partner price is published; access is by WHOOP approval through the
+    research intake form or partner agreement
+  confidence: Reported
+  sources:
+  - url: https://developer.whoop.com/docs/partner/overview
+    type: vendor_docs
+    quote: The Partner API is available exclusively to WHOOP-approved healthcare partners . It is not available to
+      general developers.
+    retrieved: '2026-10-10'
+  - url: https://whoopinc.typeform.com/whoop-research
+    type: vendor_page
+    quote: Research Request Intake
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
 - field: raw_streams
-  status: unresearched
+  status: stated
+  scope: Developer API
+  value: None. The API returns scored summaries only; continuous heart rate is not available. The device can
+    broadcast live heart rate over standard BLE
+  confidence: Verified
+  sources:
+  - url: https://developer.whoop.com/docs/developing/support
+    type: vendor_docs
+    quote: Continuous heart rate data is not available via the WHOOP API.
+    retrieved: '2026-10-10'
+  - url: https://developer.whoop.com/docs/developing/support
+    type: vendor_docs
+    quote: Each WHOOP device can broadcast heart rate over Bluetooth Low Energy (BLE) to other devices.
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+  note: A member reports the in-app CSV export also gives only per-stage totals, with no intraday heart rate (see
+    export_routes).
+- field: raw_streams
+  status: stated
+  scope: WHOOP Unite research (2023 FAQ; current availability unclear)
+  value: WHOOP supplied research partners with raw data files as CSV or Excel, each one-second row ending with RR
+    intervals
+  confidence: Reported
+  sources:
+  - url: https://www.sensorlab.arizona.edu/sites/default/files/2023-05/WHOOP%20Unite%20Research%20FAQs_0.pdf
+    type: secondary
+    quote: WHOOP provides raw data for analysis via CSV/Excel files. We do have API capabilities for data extraction
+      at an additional cost.
+    retrieved: '2026-10-10'
+    note: WHOOP-authored, file dated 2023-05.
+  - url: https://www.sensorlab.arizona.edu/sites/default/files/2023-05/WHOOP%20Unite%20Research%20FAQs_0.pdf
+    type: secondary
+    quote: Each row in the raw data file will end with RR-intervals.
+    retrieved: '2026-10-10'
+  recheck_by: '2026-10-24'
+  note: See program_status. Whether WHOOP still offers this through its research intake is unknown.
 - field: derived_metrics
-  status: unresearched
+  status: stated
+  value: 'Developer API v2. Cycle: day Strain, kilojoules, average and max HR, step count (since 2026-09-23).
+    Recovery: score, resting HR, HRV (RMSSD), and SpO2 and skin temperature on 4.0 and later. Sleep: stage durations,
+    performance, efficiency, consistency, respiratory rate, sleep need. Workout: Strain, HR, zones, distance. Body
+    measurements and basic profile'
+  confidence: Verified
+  sources:
+  - url: https://developer.whoop.com/api
+    type: vendor_docs
+    quote: read:recovery - Read Recovery data, including score, heart rate variability, and resting heart rate.
+    retrieved: '2026-10-10'
+  - url: https://developer.whoop.com/api
+    type: vendor_docs
+    quote: read:sleep - Read sleep data, including performance % and duration per sleep stage.
+    retrieved: '2026-10-10'
+  - url: https://developer.whoop.com/docs/developing/user-data/recovery
+    type: vendor_docs
+    quote: the Recovery object has objective measurements that factored into the score such as the resting heart rate
+      (RHR), heart rate variability (HRV), and for 4.0 members, blood oxygen (SpO2) and skin temperature.
+    retrieved: '2026-10-10'
+  - url: https://developer.whoop.com/docs/api-changelog
+    type: vendor_docs
+    quote: Cycles now include the total number of steps taken during the cycle.
+    retrieved: '2026-10-10'
+  - url: https://developer.whoop.com/docs/api-changelog
+    type: vendor_docs
+    quote: Covered by the existing read:cycles scope
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+  note: step_count is one total per cycle, null when no step data exists; not a time series. Features sold in Peak
+    and Life (Healthspan, Stress Monitor, ECG, Blood Pressure Insights) and Journal have no API scope.
 - field: sampling_rates
-  status: unresearched
+  status: stated
+  scope: Developer API
+  value: One record per physiological cycle, sleep, recovery or workout; no intraday time series
+  confidence: Verified
+  sources:
+  - url: https://developer.whoop.com/docs/developing/user-data/cycle
+    type: vendor_docs
+    quote: We always reference a member's activity in the context of a Physiological Cycle (known as Cycle for short)
+      rather than calendar days.
+    retrieved: '2026-10-10'
+  - url: https://developer.whoop.com/docs/developing/support
+    type: vendor_docs
+    quote: A day’s worth of member data (with one workout, one sleep, and one recovery) would be about 4 KB.
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+  note: A cycle runs from sleep to sleep, so it does not match a calendar day.
+- field: sampling_rates
+  status: stated
+  scope: Device sensors and WHOOP Unite research data (2022 to 2023 documents)
+  value: HR and accelerometer sampled at 52 Hz around the clock; sleep staged in 30-second epochs; Unite research data
+    offered at 1-second and daily grains
+  confidence: Reported
+  sources:
+  - url: https://www.sensorlab.arizona.edu/sites/default/files/2023-05/WHOOP%20Unite%20Research%20FAQs_0.pdf
+    type: secondary
+    quote: WHOOP collects HR and accelerometer data at 52 Hz 24/7.
+    retrieved: '2026-10-10'
+    note: WHOOP-authored, file dated 2023-05.
+  - url: https://www.sensorlab.arizona.edu/sites/default/files/2023-05/WHOOP%20Unite%20Research%20FAQs_0.pdf
+    type: secondary
+    quote: Sleep is recorded in 30-sec epochs
+    retrieved: '2026-10-10'
+  - url: https://sensorlab.arizona.edu/sites/default/files/2023-05/Study%20Site%20Onboarding.pdf
+    type: secondary
+    quote: Data Available by Subject in 1 sec and Daily Time Grains
+    retrieved: '2026-10-10'
+    note: WHOOP-authored deck, copyright 2022.
+  recheck_by: '2026-10-24'
+  note: WHOOP 4.0 era; not restated for 5.0 or MG in any source readable by script.
 - field: history_depth
-  status: unresearched
+  status: stated
+  value: The API's collection endpoints have no documented lower bound on start time, which implies but does not
+    state that a member's full history is returned once they authorize. The member CSV export can cover the entire
+    account history
+  confidence: Corroborated
+  sources:
+  - url: https://developer.whoop.com/api
+    type: vendor_docs
+    quote: If not specified, the response will not filter cycles by a minimum time.
+    retrieved: '2026-10-10'
+  - url: https://www.whoop.com/us/en/thelocker/access-your-whoop-data-with-new-integrations-data-export-options/
+    fetch_url: https://web.archive.org/web/20260617105808/https://www.whoop.com/us/en/thelocker/access-your-whoop-data-with-new-integrations-data-export-options/
+    type: vendor_page
+    quote: If you request a large date range or your entire account history, the file generation may take up to 24
+      hours.
+    retrieved: '2026-10-10'
+    note: Internet Archive capture of 2026-06-17 of an article dated June 15, 2026.
+  recheck_by: '2026-10-24'
+  note: Collections page at up to 25 records per request.
 - field: export_routes
-  status: unresearched
+  status: stated
+  scope: Developer API
+  value: OAuth 2.0 REST API (v2) with webhooks; live heart rate over standard BLE; a separate server-to-server Partner
+    API only for WHOOP-approved healthcare partners. No SDK
+  confidence: Verified
+  sources:
+  - url: https://developer.whoop.com/docs/developing/overview
+    type: vendor_docs
+    quote: WHOOP exposes RESTful endpoints that you can access using the Access and Refresh Token
+    retrieved: '2026-10-10'
+  - url: https://developer.whoop.com/docs/developing/webhooks
+    type: vendor_docs
+    quote: WHOOP webhooks allow you to get notified when an event takes place for users that have authenticated with
+      your app.
+    retrieved: '2026-10-10'
+  - url: https://developer.whoop.com/docs/developing/support
+    type: vendor_docs
+    quote: Each WHOOP device can broadcast heart rate over Bluetooth Low Energy (BLE) to other devices.
+    retrieved: '2026-10-10'
+  - url: https://developer.whoop.com/docs/partner/overview
+    type: vendor_docs
+    quote: The Partner API is available exclusively to WHOOP-approved healthcare partners . It is not available to
+      general developers.
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+- field: export_routes
+  status: stated
+  scope: Member self-export (app)
+  value: Members can request a CSV of daily scores, resting HR, HRV, respiratory rate, sleep architecture and their
+    Journal entries for a chosen date range, delivered by emailed link; MG members on Life get additional data. Per
+    a member, the export holds per-stage totals, not intraday data
+  confidence: Reported
+  sources:
+  - url: https://www.whoop.com/us/en/thelocker/access-your-whoop-data-with-new-integrations-data-export-options/
+    fetch_url: https://web.archive.org/web/20260617105808/https://www.whoop.com/us/en/thelocker/access-your-whoop-data-with-new-integrations-data-export-options/
+    type: vendor_page
+    quote: It also includes your individual Journal entries, allowing you to see how your behaviors correlate with
+      physiological changes.
+    retrieved: '2026-10-10'
+    note: Internet Archive capture of 2026-06-17 of an article dated June 15, 2026. Live page is 403 to scripts.
+  - url: https://www.whoop.com/us/en/thelocker/access-your-whoop-data-with-new-integrations-data-export-options/
+    fetch_url: https://web.archive.org/web/20260617105808/https://www.whoop.com/us/en/thelocker/access-your-whoop-data-with-new-integrations-data-export-options/
+    type: vendor_page
+    quote: The file contains your daily scores, resting heart rate, heart rate variability , respiratory rate , and
+      sleep architecture details.
+    retrieved: '2026-10-10'
+  - url: https://www.whoop.com/us/en/thelocker/access-your-whoop-data-with-new-integrations-data-export-options/
+    fetch_url: https://web.archive.org/web/20260617105808/https://www.whoop.com/us/en/thelocker/access-your-whoop-data-with-new-integrations-data-export-options/
+    type: vendor_page
+    quote: WHOOP Life members using WHOOP MG receive additional medical-grade health data.
+    retrieved: '2026-10-10'
+  - url: https://www.community.whoop.com/t/please-open-up-access-to-my-data-through-any-channel/14709
+    type: secondary
+    quote: Both the API and the export only return per-stage totals.
+    retrieved: '2026-10-10'
+    note: Member forum post, 2026-05-04.
+  recheck_by: '2026-10-24'
+  note: Each participant would have to run and forward their own export; this is not a researcher-side bulk route.
+- field: export_routes
+  status: stated
+  scope: Research partnerships
+  value: Research partners have received data outside the public API. The 2023 Unite FAQ describes raw CSV or Excel
+    files, and a 2026 tutorial reports a paid web application for viewing and downloading group data. Current terms
+    not published
+  confidence: Reported
+  sources:
+  - url: https://doi.org/10.1111/cts.70693
+    fetch_url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13438180/fullTextXML
+    type: paper
+    quote: Oura and WHOOP provide web applications (with an additional fee) to view and download health data for
+      groups of individuals.
+    retrieved: '2026-10-10'
+  - url: https://www.sensorlab.arizona.edu/sites/default/files/2023-05/WHOOP%20Unite%20Research%20FAQs_0.pdf
+    type: secondary
+    quote: WHOOP provides raw data for analysis via CSV/Excel files. We do have API capabilities for data extraction
+      at an additional cost.
+    retrieved: '2026-10-10'
+    note: WHOOP-authored, file dated 2023-05.
+  recheck_by: '2026-10-24'
+  note: The 2023 FAQ also describes a blinded mode in which participants see only device metrics such as battery.
 - field: rate_limits
-  status: unresearched
+  status: stated
+  value: 100 requests per minute and 10,000 per day per client by default; increases on request
+  confidence: Verified
+  sources:
+  - url: https://developer.whoop.com/docs/developing/rate-limiting
+    type: vendor_docs
+    quote: 'By default, clients may only send: 100 requests per minute. 10,000 requests per day.'
+    retrieved: '2026-10-10'
+  - url: https://developer.whoop.com/docs/developing/rate-limiting
+    type: vendor_docs
+    quote: Upon request, WHOOP can increase your rate limits.
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
 - field: retention_terms
-  status: unresearched
+  status: stated
+  value: API terms bar building databases or permanent copies of WHOOP Data, or caching beyond the cache header,
+    unless authorized by the WHOOP Data owner or by law; stored content must be deleted when the terms end
+  confidence: Verified
+  sources:
+  - url: https://developer.whoop.com/api-terms-of-use
+    type: vendor_legal
+    quote: Scrape, build databases, or otherwise create permanent copies of WHOOP Data, or keep cached copies longer
+      than permitted by the cache header;
+    retrieved: '2026-10-10'
+  - url: https://developer.whoop.com/api-terms-of-use
+    type: vendor_legal
+    quote: Unless expressly authorized by the WHOOP Data owner or by applicable law
+    retrieved: '2026-10-10'
+  - url: https://developer.whoop.com/api-terms-of-use
+    type: vendor_legal
+    quote: delete any cached or stored content that was permitted under the Terms
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+  note: 'Terms "Effective Date: October 6, 2026". Whether a consenting participant counts as the "WHOOP Data owner"
+    is untested; a study keeping a dataset needs WHOOP''s written agreement. Members can request deletion through
+    privacy.whoop.com, and WHOOP may keep de-identified or aggregated data (privacy policy, capture of 2026-08-06).'
 - field: ai_training_terms
-  status: unresearched
+  status: stated
+  value: Prohibited under the API terms; API data may not be used to create, train, test or improve any LLM or other
+    ML or AI model, unless authorized by the WHOOP Data owner or by law
+  confidence: Verified
+  sources:
+  - url: https://developer.whoop.com/api-terms-of-use
+    type: vendor_legal
+    quote: Use any API or WHOOP Data to create, develop, test, train, fine-tune or improve any large language model or
+      any other machine learning or artificial intelligence model, application, or system;
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+  note: On its face this covers study-specific predictive models. Get written clarification from WHOOP before
+    modelling. Separately, the consumer privacy policy says WHOOP's own LLM partner works under a zero-retention,
+    zero-training policy for WHOOP metrics.
 - field: deprecations
-  status: unresearched
+  status: stated
+  value: v2 API launched 2025-07-01 and v1 is no longer supported; v1 webhooks no longer published (changelog
+    2025-11-01); v1 activity ids dropped after 2025-09-01, with a v1-to-v2 id mapping endpoint. No later deprecation
+    in the changelog, whose newest entry is the 2026-09-23 step count
+  confidence: Verified
+  sources:
+  - url: https://developer.whoop.com/docs/developing/v1-v2-migration
+    type: vendor_docs
+    quote: The v1 API is no longer supported and any new features or functionality will be added to v2 only.
+    retrieved: '2026-10-10'
+  - url: https://developer.whoop.com/docs/api-changelog
+    type: vendor_docs
+    quote: The v2 API is now available, featuring improved data models and new capabilities.
+    retrieved: '2026-10-10'
+  - url: https://developer.whoop.com/docs/api-changelog
+    type: vendor_docs
+    quote: Updated webhook documentation to clarify that v1 webhooks are no longer being published.
+    retrieved: '2026-10-10'
+  - url: https://developer.whoop.com/docs/developing/user-data/sleep
+    type: vendor_docs
+    quote: Previous generation identifier for the activity. Will not exist past 09/01/2025
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
 - field: baa
-  status: unresearched
+  status: stated
+  value: No BAA offered publicly. API terms bar transmitting PHI without WHOOP's prior written consent; WHOOP's 2023
+    research FAQ said studies could be structured so that a BAA is unnecessary
+  confidence: Corroborated
+  sources:
+  - url: https://developer.whoop.com/api-terms-of-use
+    type: vendor_legal
+    quote: Company agrees that it will not use the APIs for any purpose or in any manner involving transmitting
+      Protected Health Information (as defined by HIPAA) unless Company has received prior written consent to such
+      use from WHOOP.
+    retrieved: '2026-10-10'
+  - url: https://www.sensorlab.arizona.edu/sites/default/files/2023-05/WHOOP%20Unite%20Research%20FAQs_0.pdf
+    type: secondary
+    quote: we can structure our relationship such that you do not disclose protected health information to WHOOP, or
+      the PI can obtain consent to disclosure, making a BAA unnecessary
+    retrieved: '2026-10-10'
+    note: WHOOP-authored, file dated 2023-05.
+  recheck_by: '2027-01-08'
 - field: dpa
-  status: unresearched
+  status: stated
+  value: No customer DPA published. The privacy policy says WHOOP will sign Standard Contractual Clauses with
+    customers on request for EU to US transfers
+  confidence: Reported
+  sources:
+  - url: https://www.whoop.com/privacy/full-privacy-policy/
+    fetch_url: https://web.archive.org/web/20260806173749/https://www.whoop.com/privacy/full-privacy-policy/
+    type: vendor_legal
+    quote: Whoop will enter into the Standard Contractual Clauses with our vendors who process personal data, and with
+      our customers upon request.
+    retrieved: '2026-10-10'
+    note: Internet Archive capture of 2026-08-06 (Last Updated August 3, 2026). Live page is 403 to scripts.
+  - url: https://www.sensorlab.arizona.edu/sites/default/files/2023-05/WHOOP%20Unite%20Research%20FAQs_0.pdf
+    type: secondary
+    quote: WHOOP enters into Data Protection Agreements with third-party vendors (when necessary and appropriate) to
+      protect the security of customer data.
+    retrieved: '2026-10-10'
+    note: WHOOP-authored, file dated 2023-05. Describes WHOOP's own vendors, not research customers.
+  - url: https://developer.whoop.com/api-terms-of-use
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    note: No DPA in the API terms.
+  recheck_by: '2026-10-24'
 - field: hipaa_statement
-  status: unresearched
+  status: stated
+  value: API terms say WHOOP makes no representation that the APIs meet HIPAA requirements unless agreed in writing.
+    The privacy policy says processing done on behalf of a covered entity follows that entity's Notice of Privacy
+    Practices
+  confidence: Corroborated
+  sources:
+  - url: https://developer.whoop.com/api-terms-of-use
+    type: vendor_legal
+    quote: Unless otherwise agreed in writing by WHOOP, WHOOP makes no representations that the APIs satisfy any
+      obligations or meet any requirements under the Health Insurance Portability and Accountability Act
+    retrieved: '2026-10-10'
+  - url: https://www.whoop.com/privacy/full-privacy-policy/
+    fetch_url: https://web.archive.org/web/20260806173749/https://www.whoop.com/privacy/full-privacy-policy/
+    type: vendor_legal
+    quote: our processing of your personal information in that context will be governed by the Notice of Privacy
+      Practices of the relevant covered entity
+    retrieved: '2026-10-10'
+    note: Internet Archive capture of 2026-08-06.
+  recheck_by: '2027-01-08'
+  note: The 2023 Unite FAQ says WHOOP is not a HIPAA covered entity. Consumer Advanced Labs needs a separate HIPAA
+    authorization for Quest Diagnostics and SteadyMD (consumer terms, April 13, 2026); not a research route.
 - field: gdpr_statement
-  status: unresearched
+  status: stated
+  value: The privacy policy has a GDPR notice for European residents, names WHOOP, Inc. as controller, Whoop Limited
+    (Dublin) as EU representative and a UK representative. A 2023 WHOOP FAQ called WHOOP GDPR compliant
+  confidence: Reported
+  sources:
+  - url: https://www.whoop.com/privacy/full-privacy-policy/
+    fetch_url: https://web.archive.org/web/20260806173749/https://www.whoop.com/privacy/full-privacy-policy/
+    type: vendor_legal
+    quote: PRIVACY NOTICE FOR EUROPEAN RESIDENTS
+    retrieved: '2026-10-10'
+    note: Internet Archive capture of 2026-08-06 (Last Updated August 3, 2026). Live page is 403 to scripts.
+  - url: https://www.whoop.com/privacy/full-privacy-policy/
+    fetch_url: https://web.archive.org/web/20260806173749/https://www.whoop.com/privacy/full-privacy-policy/
+    type: vendor_legal
+    quote: 'Our EU Representative is: Whoop Limited'
+    retrieved: '2026-10-10'
+  - url: https://www.sensorlab.arizona.edu/sites/default/files/2023-05/WHOOP%20Unite%20Research%20FAQs_0.pdf
+    type: secondary
+    quote: WHOOP is also GDPR compliant for doing business within the European Union and the UK.
+    retrieved: '2026-10-10'
+    note: WHOOP-authored, file dated 2023-05. The same FAQ claims Privacy Shield self-certification, invalidated in 2020.
+  recheck_by: '2026-10-24'
 - field: iso27001
-  status: unresearched
+  status: not_public
+  confidence: Reported
+  sources:
+  - url: https://developer.whoop.com/api-terms-of-use
+    type: vendor_legal
+    retrieved: '2026-10-10'
+  - url: https://www.whoop.com/privacy/full-privacy-policy/
+    fetch_url: https://web.archive.org/web/20260806173749/https://www.whoop.com/privacy/full-privacy-policy/
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    note: Internet Archive capture of 2026-08-06.
+  - url: https://www.sensorlab.arizona.edu/sites/default/files/2023-05/WHOOP%20Unite%20Research%20FAQs_0.pdf
+    type: secondary
+    retrieved: '2026-10-10'
+  - url: https://sensorlab.arizona.edu/sites/default/files/2023-05/Study%20Site%20Onboarding.pdf
+    type: secondary
+    retrieved: '2026-10-10'
+  recheck_by: '2027-01-08'
+  note: No ISO 27001 claim on these pages and no trust center found by web search (trust.whoop.com does not resolve).
 - field: soc2
-  status: unresearched
+  status: stated
+  value: The only claim found is a 2022 WHOOP study-onboarding deck listing SOC 2 among its compliance claims; no
+    current report, trust page or attestation found
+  confidence: Reported
+  sources:
+  - url: https://sensorlab.arizona.edu/sites/default/files/2023-05/Study%20Site%20Onboarding.pdf
+    type: secondary
+    quote: SOC2, GDPR, CCPA, and Privacy Shield Compliant
+    retrieved: '2026-10-10'
+    note: WHOOP-authored deck, copyright 2022, hosted by the University of Arizona.
+  - url: https://www.whoop.com/privacy/full-privacy-policy/
+    fetch_url: https://web.archive.org/web/20260806173749/https://www.whoop.com/privacy/full-privacy-policy/
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    note: No SOC 2 mention in the August 2026 policy (capture of 2026-08-06).
+  recheck_by: '2026-10-24'
+  note: The deck also lists Privacy Shield, invalid since 2020, so its list was already dated. Ask WHOOP for a
+    current SOC 2 report under NDA.
 - field: fda_clearances
-  status: unresearched
+  status: stated
+  value: 'One 510(k): K243236, WHOOP ECG (electrocardiogram) Feature (1.0), OTC ECG software, product code QDA,
+    cleared 2025-04-04. Blood Pressure Insights is not cleared: FDA warning letter of 2025-07-14; the close-out letter
+    of 2026-06-17 says FDA does not intend to enforce for BPI as modified'
+  confidence: Verified
+  sources:
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K243236
+    fetch_url: https://api.fda.gov/device/510k.json?search=k_number:K243236
+    type: regulator_db
+    quote: WHOOP ECG (electrocardiogram) Feature (1.0)
+    retrieved: '2026-10-10'
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K243236
+    fetch_url: https://api.fda.gov/device/510k.json?search=k_number:K243236
+    type: regulator_db
+    quote: '2025-04-04'
+    retrieved: '2026-10-10'
+  - url: https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/whoop-inc-709755-07142025
+    type: regulator_db
+    quote: Blood Pressure Insights (hereinafter, "BPI") in the United States without marketing clearance or approval
+    retrieved: '2026-10-10'
+  - url: https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/whoop-inc-709755-06172026
+    type: regulator_db
+    quote: FDA does not intend to enforce the device statutory and regulatory requirements for your BPI product as
+      modified
+    retrieved: '2026-10-10'
+  recheck_by: '2027-01-08'
+  note: openFDA 510(k) search on applicant whoop (https://api.fda.gov/device/510k.json?search=applicant:whoop) returns
+    this single record. The ECG feature runs on WHOOP MG (Life tier).
+- field: fda_clearances
+  status: stated
+  scope: Irregular Heart Rhythm Notifications
+  value: Listed on the Life membership but not available in the US; WHOOP staff cited regulatory restrictions (May
+    2025), and openFDA shows no 510(k) for it
+  confidence: Reported
+  sources:
+  - url: https://community.whoop.com/t/is-ihrn-available-in-the-us/477
+    type: secondary
+    quote: No, Irregular Heart Rhythm Notifications (IHRN) are not currently available in the United States due to
+      regulatory restrictions.
+    retrieved: '2026-10-10'
+    note: Reply by a WHOOP staff account, 2025-05-09.
+  - url: https://www.whoop.com/us/en/membership/
+    fetch_url: https://web.archive.org/web/20261002041123/https://www.whoop.com/us/en/membership/
+    type: vendor_page
+    quote: Heart Screener with ECG readings Irregular Heart Rhythm Notifications
+    retrieved: '2026-10-10'
+    note: Internet Archive capture of 2026-10-02 (served in Canadian dollars). Its footnote says IHRN "is not
+      currently available in every region".
+  - url: https://api.fda.gov/device/510k.json?search=applicant:whoop
+    type: regulator_db
+    retrieved: '2026-10-10'
+    note: One result, K243236 (ECG). No IHRN record.
+  recheck_by: '2026-10-24'
 - field: data_residency
-  status: unresearched
+  status: stated
+  value: Personal data is processed in the United States; a 2023 WHOOP FAQ says it is stored in AWS West. No
+    residency options published
+  confidence: Reported
+  sources:
+  - url: https://www.whoop.com/privacy/full-privacy-policy/
+    fetch_url: https://web.archive.org/web/20260806173749/https://www.whoop.com/privacy/full-privacy-policy/
+    type: vendor_legal
+    quote: To provide the Services, we will process your Personal Data in the United States, where WHOOP is based.
+    retrieved: '2026-10-10'
+    note: Internet Archive capture of 2026-08-06. Live page is 403 to scripts.
+  - url: https://www.sensorlab.arizona.edu/sites/default/files/2023-05/WHOOP%20Unite%20Research%20FAQs_0.pdf
+    type: secondary
+    quote: Data is stored in the United States in Amazon Web Services (AWS) West.
+    retrieved: '2026-10-10'
+    note: WHOOP-authored, file dated 2023-05.
+  recheck_by: '2026-10-24'

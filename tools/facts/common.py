@@ -102,7 +102,7 @@ def normalize(text):
 
 def match_quote(quote, text, threshold=0.9):
     """Return ('exact'|'reworded'|'missing', best ratio)."""
-    q, t = normalize(quote), normalize(text)
+    q, t = normalize(str(quote)), normalize(text)
     if not q:
         return 'missing', 0.0
     if q in t:

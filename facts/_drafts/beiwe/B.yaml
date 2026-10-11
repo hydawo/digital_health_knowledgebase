@@ -1,0 +1,766 @@
+# Draft record for beiwe, researcher B, 2026-10-10. Schema: facts/_schema.yaml
+name: Beiwe and Forest (Onnela Lab, Beiwe Service Center)
+kind: platform
+profile: module-02-digital-phenotyping/profiles/beiwe.md
+watch:
+- url: https://hsph.harvard.edu/research-resource/beiwe/use-beiwe/
+  role: pricing
+- url: https://hsph.harvard.edu/research/onnela-lab/beiwe-service-center
+  role: pricing
+- url: https://hsph.harvard.edu/research-resource/beiwe/
+  role: research_program
+- url: https://hsph.harvard.edu/research-resource/beiwe/about/
+  role: other
+- url: https://hsph.harvard.edu/research-resource/beiwe/technology/
+  role: docs
+- url: https://github.com/onnela-lab/beiwe-backend/wiki
+  role: changelog
+- url: https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-Supported-Data-Streams
+  role: docs
+- url: https://github.com/onnela-lab/beiwe-backend/wiki/Data-Download-API
+  role: docs
+- url: https://github.com/onnela-lab/beiwe-backend/wiki/Tableau-API
+  role: docs
+- url: https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-FAQs-for-Prospective-Beiwe-Users
+  role: developer_program
+- url: https://github.com/onnela-lab/beiwe-backend
+  role: repository
+- url: https://github.com/onnela-lab/forest
+  role: repository
+- url: https://forest.beiwe.org/
+  role: docs
+- url: https://apps.apple.com/us/app/beiwe2/id1312962738
+  role: app_store
+- url: https://api.fda.gov/device/510k.json?search=device_name:beiwe
+  role: regulatory
+facts:
+- field: research_program
+  status: stated
+  value: 'Beiwe Service Center (BSC), Harvard T.H. Chan School of Public Health (Onnela Lab): Beiwe run as a SaaS
+    on the lab''s production AWS deployment. Includes study design and configuration support, IRB documentation
+    help, team training, a four-week beta test, participant troubleshooting and technical support, raw data and
+    summary metrics, and final analysis with production Forest packages. Separately, the full platform is open source
+    for self-hosting.'
+  confidence: Verified
+  sources:
+  - url: https://hsph.harvard.edu/research-resource/beiwe/use-beiwe/
+    type: vendor_page
+    quote: The Beiwe Service Center (BSC) allows investigators to use the Beiwe platform under a Software as a Service
+      (SaaS) model.
+    retrieved: '2026-10-10'
+  - url: https://hsph.harvard.edu/research-resource/beiwe/use-beiwe/
+    type: vendor_page
+    quote: 'Service through the BSC includes: Comprehensive study design and configuration support Assistance with
+      IRB documentation of Beiwe platform In-depth platform training for your team Four-week beta testing phase
+      to ensure setup accuracy'
+    retrieved: '2026-10-10'
+  - url: https://hsph.harvard.edu/research-resource/beiwe/use-beiwe/
+    type: vendor_page
+    quote: Access to both raw data and summary metrics for in-depth insights Final data analysis at study completion
+      using production Forest packages
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+- field: program_eligibility
+  status: stated
+  value: Investigators anywhere; the BSC pricing examples cover both university-based and for-profit investigators.
+    No further eligibility criteria are published.
+  confidence: Verified
+  sources:
+  - url: https://hsph.harvard.edu/research/onnela-lab/beiwe-service-center
+    type: vendor_page
+    quote: The purpose of the Beiwe Service Center (BSC) is to make the Beiwe platform available to investigators
+      anywhere as a service.
+    retrieved: '2026-10-10'
+  - url: https://hsph.harvard.edu/research-resource/beiwe/use-beiwe/
+    type: vendor_page
+    quote: An investigator based at a for-profit entity wants to collected data for N=100 subjects, where length
+      of data collection per subject is L=12 months, and study duration is T=24 months. The total cost of the contract
+      is $73,440.
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+- field: program_application
+  status: stated
+  value: Fill out the BSC inquiry form (name, email, institution, purpose) and the team follows up; quotes and demos
+    are requested the same way. No published review or approval criteria. A direct scientific collaboration is a
+    separate route, through JP Onnela.
+  confidence: Verified
+  sources:
+  - url: https://hsph.harvard.edu/research/onnela-lab/beiwe-service-center
+    type: vendor_page
+    quote: please fill out this form , and we’ll be in touch shortly.
+    retrieved: '2026-10-10'
+  - url: https://hsph.harvard.edu/research-resource/beiwe/use-beiwe/
+    type: vendor_page
+    quote: Request a Quote or Platform Demo
+    retrieved: '2026-10-10'
+  - url: https://forms.gle/Dxx8o2vJrVopMyZv8
+    type: vendor_page
+    quote: If you're interested in a direct collaboration please contact JP Onnela directly.
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+- field: program_status
+  status: stated
+  value: 'Active: the BSC publishes FY26 pricing and runs separate US and EU login servers (studies.beiwe.org, eu.beiwe.org),
+    both live on 2026-10-10.'
+  confidence: Corroborated
+  sources:
+  - url: https://hsph.harvard.edu/research-resource/beiwe/
+    type: vendor_page
+    quote: US Beiwe Service Center Login EU Beiwe Service Center Login
+    retrieved: '2026-10-10'
+  - url: https://hsph.harvard.edu/research-resource/beiwe/use-beiwe/
+    type: vendor_page
+    quote: 'Fixed Monthly Cost: $2,640/month Based on the total studty duration (T) Variable Cost: $8.40/Active
+      Participant Month'
+    retrieved: '2026-10-10'
+  - url: https://studies.beiwe.org/
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://eu.beiwe.org/
+    type: vendor_page
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+  note: Status inferred from current pricing and live login pages; no explicit "accepting new studies" statement.
+- field: developer_program_status
+  status: stated
+  value: No developer program or application. All components are open source on GitHub (BSD-3) and free to deploy,
+    provided as-is with no ongoing technical support from the Onnela Lab for self-hosters.
+  confidence: Verified
+  sources:
+  - url: https://hsph.harvard.edu/research-resource/beiwe/technology/
+    type: vendor_page
+    quote: The entire Beiwe platform has been released and continues to be developed under the BSD-3 license.
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-FAQs-for-Prospective-Beiwe-Users
+    type: vendor_docs
+    quote: The open source version of the Beiwe platform is freely available and provided as-is. At this point,
+      the Onnela Lab does not provide any ongoing technical support for it.
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+- field: user_cap
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://hsph.harvard.edu/research-resource/beiwe/use-beiwe/
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://hsph.harvard.edu/research/onnela-lab/beiwe-service-center
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-FAQs-for-Prospective-Beiwe-Users
+    type: vendor_docs
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend
+    type: repository
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+  note: No participant or study caps published. BSC price scales with Active Participant Months; the About page
+    gives cost examples up to "a thousand or so subjects".
+- field: academic_vs_commercial
+  status: stated
+  value: Same service and published rate structure for both; the FY26 examples include a for-profit investigator
+    priced on the same $2,640/month plus $8.40/Active Participant Month formula as the university examples. The
+    older FY24 page's for-profit example ($27,564 for N=160, L=3, T=12) does not fit its own $1,937 + $6 formula
+    and implies about $9 per Active Participant Month, so for-profit rates may have differed in FY24. BSC use is
+    explicitly not a scientific collaboration.
+  confidence: Corroborated
+  sources:
+  - url: https://hsph.harvard.edu/research-resource/beiwe/use-beiwe/
+    type: vendor_page
+    quote: An investigator based at a for-profit entity wants to collected data for N=100 subjects, where length
+      of data collection per subject is L=12 months, and study duration is T=24 months. The total cost of the contract
+      is $73,440.
+    retrieved: '2026-10-10'
+  - url: https://hsph.harvard.edu/research-resource/beiwe/use-beiwe/
+    type: vendor_page
+    quote: 'Fixed Monthly Cost: $2,640/month Based on the total studty duration (T) Variable Cost: $8.40/Active
+      Participant Month'
+    retrieved: '2026-10-10'
+  - url: https://hsph.harvard.edu/research/onnela-lab/beiwe-service-center
+    type: vendor_page
+    quote: An investigator based at a for-profit entity wants to collected data for N=160 subjects, where length
+      of data collection per subject is L=3 months, and study duration is T=12 months. The total cost of the contract
+      is $27,564.
+    retrieved: '2026-10-10'
+  - url: https://hsph.harvard.edu/research/onnela-lab/beiwe-service-center
+    type: vendor_page
+    quote: This model is not a scientific collaboration with the Onnela Lab, but instead makes it possible for investigators
+      to use Beiwe without having to deploy and maintain their own version of the open source code base.
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+  note: The for-profit rate comparisons are arithmetic on the published examples, not a stated rate.
+- field: device_price
+  status: not_applicable
+  note: Phone-based platform; participants use their own iOS or Android phones and Beiwe sells no hardware.
+- field: subscription_price
+  status: not_applicable
+  note: No consumer subscription. The participant app (Beiwe2 on the App Store) is free and usable only by invited
+    study participants.
+- field: academic_pricing
+  status: stated
+  value: 'No separate academic discount is published; academic studies pay the BSC rates (FY26: $2,640/month fixed
+    plus $8.40 per Active Participant Month; example N=100, L=1, T=3 = $8,760). The About page describes the BSC
+    as not-for-profit and gives indicative totals of about $80 per subject-month for a small pilot and about $3.50
+    per subject-month for a ~1,000-subject, one-year study.'
+  confidence: Corroborated
+  sources:
+  - url: https://hsph.harvard.edu/research-resource/beiwe/use-beiwe/
+    type: vendor_page
+    quote: 'Fixed Monthly Cost: $2,640/month Based on the total studty duration (T) Variable Cost: $8.40/Active
+      Participant Month'
+    retrieved: '2026-10-10'
+  - url: https://hsph.harvard.edu/research-resource/beiwe/use-beiwe/
+    type: vendor_page
+    quote: A university-based investigator wants to collected data for N=100 subjects, where length of data collection
+      per subject is L=1 months, and study duration is T=3 months. The total cost of the contract is $8,760.
+    retrieved: '2026-10-10'
+  - url: https://hsph.harvard.edu/research-resource/beiwe/about/
+    type: vendor_page
+    quote: A small pilot study with some tens of subjects with a couple of months of data collection using Beiwe
+      through our not-for-profit Beiwe Service Center might cost around $80 per subject-month (total cost).
+    retrieved: '2026-10-10'
+  - url: https://hsph.harvard.edu/research-resource/beiwe/about/
+    type: vendor_page
+    quote: A large study with a thousand or so subjects with a year of data collection brings the cost down to about
+      $3.50 per subject-month (total cost).
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+  note: The About page per-subject-month figures are undated and may predate FY26 rates. See hosting_price for the
+    conflict between the two BSC pricing pages.
+- field: api_platform_fees
+  status: stated
+  value: No licence, API or data-access fee for the software, which is free and open source; self-hosters pay their
+    own AWS costs. Under the BSC, data download API and Tableau API access are part of the service fee (no separate
+    API charge published). Paid third-party support for self-hosting is available from Zagaran.
+  confidence: Corroborated
+  sources:
+  - url: https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-FAQs-for-Prospective-Beiwe-Users
+    type: vendor_docs
+    quote: The open source version of the Beiwe platform is freely available and provided as-is. At this point,
+      the Onnela Lab does not provide any ongoing technical support for it.
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend/wiki/Beiwe-deployment-extra-information-for-non-IT-users
+    type: vendor_docs
+    quote: otherwise your AWS will continue to incur charge.
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-FAQs-for-Prospective-Beiwe-Users
+    type: vendor_docs
+    quote: Contact our developers, Zagaran , directly, but please be advised that they will charge for their service.
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+- field: minimum_commitment
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://hsph.harvard.edu/research-resource/beiwe/use-beiwe/
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://hsph.harvard.edu/research/onnela-lab/beiwe-service-center
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://forms.gle/Dxx8o2vJrVopMyZv8
+    type: vendor_page
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+  note: No minimum term or minimum participant count published. The fixed monthly fee applies for the full study
+    duration T, so short studies still pay the fixed fee each month; the smallest FY26 example is T=3 months.
+- field: quote_required
+  status: stated
+  value: 'No for budgeting: the BSC publishes its rate formula and worked examples, and states 30 days notice of
+    rate changes. A formal quote and contract are requested through the inquiry form.'
+  confidence: Verified
+  sources:
+  - url: https://hsph.harvard.edu/research-resource/beiwe/use-beiwe/
+    type: vendor_page
+    quote: 'Fixed Monthly Cost: $2,640/month Based on the total studty duration (T) Variable Cost: $8.40/Active
+      Participant Month'
+    retrieved: '2026-10-10'
+  - url: https://hsph.harvard.edu/research-resource/beiwe/use-beiwe/
+    type: vendor_page
+    quote: Request a Quote or Platform Demo
+    retrieved: '2026-10-10'
+  - url: https://hsph.harvard.edu/research/onnela-lab/beiwe-service-center
+    type: vendor_page
+    quote: rates are subject to periodic revisions, but study teams will always be notified at least 30 days in
+      advance of any pricing changes.
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+- field: hosting_price
+  status: conflict
+  value: 'The two Harvard BSC pages publish different rates. Current Beiwe Service Center site (research-resource/beiwe/use-beiwe):
+    FY26, $2,640/month fixed over study duration T plus $8.40 per Active Participant Month (N x L, plus 0.5 month
+    per data-collection gap). Older Onnela Lab page (research/onnela-lab/beiwe-service-center): FY24, $1,937/month
+    plus $6 per Active Participant Month. The FY26 page is very likely current.'
+  confidence: Corroborated
+  sources:
+  - url: https://hsph.harvard.edu/research-resource/beiwe/use-beiwe/
+    type: vendor_page
+    quote: 'Fixed Monthly Cost: $2,640/month Based on the total studty duration (T) Variable Cost: $8.40/Active
+      Participant Month'
+    retrieved: '2026-10-10'
+  - url: https://hsph.harvard.edu/research/onnela-lab/beiwe-service-center
+    type: vendor_page
+    quote: 'Fixed Monthly Cost: $1,937/month Based on the total study duration (T) Variable Cost: $6/Active Participant
+      Month'
+    retrieved: '2026-10-10'
+  - url: https://hsph.harvard.edu/research-resource/beiwe/use-beiwe/
+    type: vendor_page
+    quote: A university-based investigator wants to collected data for N=100 subjects, where length of data collection
+      per subject is L=1 months, and study duration is T=3 months. The total cost of the contract is $8,760.
+    retrieved: '2026-10-10'
+  - url: https://hsph.harvard.edu/research/onnela-lab/beiwe-service-center
+    type: vendor_page
+    quote: A university-based investigator wants to collected data for N=50 subjects, where length of data collection
+      per subject is L=3 months, and study duration is T=12 months. The total cost of the contract is $24,144.
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+  note: Both pages were live on 2026-10-10. The older page also carries the FY24 for-profit example that implies
+    a ~$9 variable rate.
+- field: raw_streams
+  status: stated
+  value: 'Raw sensor data and phone logs, downloadable as CSV via the web page, the Data Download API or Mano. Both
+    OSes: accelerometer, gyroscope (iOS and select Android), GPS (with optional fuzzing), screen or power state,
+    identifiers, surveys and audio recordings. Android only: Wi-Fi, Bluetooth, call and text logs (hashed numbers),
+    power state. iOS only: proximity, magnetometer, DeviceMotion, reachability. A study set to "production data"
+    restricts download to processed pipeline output.'
+  confidence: Verified
+  sources:
+  - url: https://hsph.harvard.edu/research-resource/beiwe/technology/
+    type: vendor_page
+    quote: Beiwe collects raw sensor data and phone logs, which is crucial in scientific research settings.
+    retrieved: '2026-10-10'
+  - url: https://hsph.harvard.edu/research-resource/beiwe/technology/
+    type: vendor_page
+    quote: Wi-Fi Router Data (Android Only) Bluetooth Data (Android Only) Phone Call Log Data (Android Only) Text
+      Message Log Data (Android Only) Proximity (Apple iOS Only)
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-Supported-Data-Streams
+    type: vendor_docs
+    quote: Calls and Texts Log is an Android-only data stream.
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-Supported-Data-Streams
+    type: vendor_docs
+    quote: GPS has an extra "fuzzing" parameter that serves to obscure the exact location of the user.
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-Using-Beiwe-for-Open-Source-Users
+    type: vendor_docs
+    quote: 'Production data: researchers will only be able to download processed data output from the Data Analysis
+      Pipeline.'
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+- field: derived_metrics
+  status: stated
+  value: 'Forest (open-source Python, integrated into the backend and runnable locally) produces daily or hourly
+    summaries: Jasmine (GPS imputation and mobility: home time, distance, radius of gyration, significant places,
+    flights and pauses), Willow (Android call and text summaries), Sycamore (survey adherence and answers), Oak
+    (walking time, steps, cadence from accelerometer), plus data quantity stats; exposed in the dashboard and via
+    the Tableau API.'
+  confidence: Verified
+  sources:
+  - url: https://forest.beiwe.org/
+    type: vendor_docs
+    quote: 'Jasmine : Location data imputation and mobility summary statistics'
+    retrieved: '2026-10-10'
+  - url: https://forest.beiwe.org/
+    type: vendor_docs
+    quote: 'Willow : Call log and text log summary statistics'
+    retrieved: '2026-10-10'
+  - url: https://forest.beiwe.org/
+    type: vendor_docs
+    quote: 'Oak : Gait time, cadence, and step count statistics'
+    retrieved: '2026-10-10'
+  - url: https://hsph.harvard.edu/research-resource/beiwe/technology/
+    type: vendor_page
+    quote: Integrated with Beiwe, Forest can be used to generate on-demand analytics, most importantly daily or
+      hourly summary statistics of collected data, which are stored in a relational database on AWS.
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend/wiki/Tableau-API
+    type: vendor_docs
+    quote: Summary Statistics includes the data quantity stats visible to you on the Study Dashboard, plus extra
+      statistics generated by Forest statistical analyses.
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+- field: sampling_rates
+  status: stated
+  value: Configured per study in seconds as sensor on/off duty cycles and, for accelerometer and gyroscope, a sampling
+    frequency. Accelerometer records about 5 to 100 samples per second. Android delivers only discrete real intervals
+    (1-2 ms up to ~288 ms) regardless of the value requested, so devices should be tested before launch.
+  confidence: Verified
+  sources:
+  - url: https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-Using-Beiwe-for-Open-Source-Users
+    type: vendor_docs
+    quote: Study settings are configured in seconds. For example, sensors are configured for on/off intervals in
+      seconds.
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-Beiwe-Research-Administration-Manual
+    type: vendor_docs
+    quote: the accelerometer records about 5 to 100 datapoints per second.
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-Supported-Data-Streams
+    type: vendor_docs
+    quote: 'Only a handful of "real frequencies" exist: 1-2ms, 2-3ms, 4-5ms, 8-9ms, 18-19ms, 36-37ms, ~72ms, ~144ms,
+      and ~288ms.'
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+  note: Under the BSC, passive data settings are edited by Onnela Lab staff, not the study team.
+- field: history_depth
+  status: stated
+  value: All stored study data can be requested by participant, data stream and date range; the API registry then
+    fetches only new files. No look-back limit is published. Data are binned by the hour.
+  confidence: Corroborated
+  sources:
+  - url: https://github.com/onnela-lab/beiwe-backend/wiki/Data-Download-API
+    type: vendor_docs
+    quote: 'it lets you specify all the same things that the web page downloader lets you specify: participant IDs,
+      data streams, and date ranges.'
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend/wiki/Data-Download-API
+    type: vendor_docs
+    quote: each time you request more data from the API, it only downloads new data.
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+  note: '"No limit" is an absence of a published limit, not a stated guarantee.'
+- field: export_routes
+  status: stated
+  value: Web dashboard download (zip of per-file zstd-compressed CSV), Data Download API (access/secret keys from
+    Manage Credentials, incremental registry), Mano Python CLI/library for bulk sync, Tableau Web Data Connector
+    and JSON endpoints for Forest summary statistics and participant tables, and study configuration JSON export/import.
+  confidence: Verified
+  sources:
+  - url: https://github.com/onnela-lab/beiwe-backend/wiki/Data-Download-API
+    type: vendor_docs
+    quote: 'it lets you specify all the same things that the web page downloader lets you specify: participant IDs,
+      data streams, and date ranges.'
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend/wiki/Managing-ZSTD%E2%80%90Compressed-Data-From-The-Beiwe-Platform
+    type: vendor_docs
+    quote: If you are downloading many gigabytes of data you should use Mano.
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend/wiki/Tableau-API
+    type: vendor_docs
+    quote: Summary Statistics includes the data quantity stats visible to you on the Study Dashboard, plus extra
+      statistics generated by Forest statistical analyses.
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+- field: rate_limits
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://github.com/onnela-lab/beiwe-backend/wiki/Data-Download-API
+    type: vendor_docs
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend/wiki/Tableau-API
+    type: vendor_docs
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend/wiki/Managing-ZSTD%E2%80%90Compressed-Data-From-The-Beiwe-Platform
+    type: vendor_docs
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend
+    type: repository
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+  note: No API rate limits documented; a self-hosted deployment sets its own capacity.
+- field: retention_terms
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://hsph.harvard.edu/research-resource/beiwe/use-beiwe/
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://hsph.harvard.edu/research/onnela-lab/beiwe-service-center
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-Beiwe-Data-Privacy-and-Security
+    type: vendor_docs
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-FAQs-and-Beiwe-Troubleshooting
+    type: vendor_docs
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-IRB-FAQs
+    type: vendor_docs
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+  note: No BSC retention or end-of-contract deletion terms published. The troubleshooting FAQ says uninstalling
+    the app does not affect data already on the backend; the backend code has a participant data deletion queue
+    (ParticipantDeletionEvent), but no documented policy. Self-hosters control their own S3 retention.
+- field: ai_training_terms
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://hsph.harvard.edu/research-resource/beiwe/use-beiwe/
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://hsph.harvard.edu/research/onnela-lab/beiwe-service-center
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-Beiwe-Data-Privacy-and-Security
+    type: vendor_docs
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-IRB-FAQs
+    type: vendor_docs
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+  note: No terms on AI or ML training use of BSC study data found. The BSC is not a scientific collaboration, and
+    the IRB FAQ says the Onnela Lab has no access to traditional identifiers.
+- field: deprecations
+  status: stated
+  value: 'Rolling-release backend with no versioned legacy support; features are not expected to be removed. Self-hosted
+    deployments needed admin action for: the Python 3.8 to 3.12 Elastic Beanstalk platform swap (environments existing
+    in or before January 2025), last-leg encryption for environments deployed before 2025-09-09, and historical
+    data compression. The old Tableau summary-statistics endpoints are deprecated and may be removed at any time.
+    The single-server AMI is retired.'
+  confidence: Verified
+  sources:
+  - url: https://github.com/onnela-lab/beiwe-backend
+    type: repository
+    quote: No features are expected to be removed, unless they never worked to begin with.
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend/wiki
+    type: vendor_docs
+    quote: Applies to all Elastic Beanstalk environments deployed before 2025-09-09.
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend/wiki
+    type: vendor_docs
+    quote: The Python 3.12 update requires deploying and swapping to a new Elastic Beanstalk Environment technology
+      stack
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend/wiki/Tableau-API
+    type: vendor_docs
+    quote: This one will continue to work but is deprecated and may be removed at any time.
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+- field: licence
+  status: stated
+  value: BSD 3-Clause for the backend, iOS app, Android app, Forest and Mano (GitHub licence metadata checked for
+    all five repositories on 2026-10-10).
+  confidence: Verified
+  sources:
+  - url: https://hsph.harvard.edu/research-resource/beiwe/technology/
+    type: vendor_page
+    quote: The entire Beiwe platform has been released and continues to be developed under the BSD-3 license.
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/forest
+    type: repository
+    quote: BSD-3-Clause license
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend
+    type: repository
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+- field: hosting_options
+  status: stated
+  value: 'Two routes. (1) Managed: the Beiwe Service Center runs studies on the Onnela Lab production AWS deployment,
+    with US and EU servers. (2) Self-hosted: deploy the open-source backend on your own AWS account (Elastic Beanstalk,
+    EC2, S3, RDS PostgreSQL) using the launch script; AWS is the only supported cloud. Self-hosting needs basic-to-moderate
+    Python, AWS and CLI skill and gets no Onnela Lab support; Zagaran offers paid help.'
+  confidence: Verified
+  sources:
+  - url: https://hsph.harvard.edu/research/onnela-lab/beiwe-service-center
+    type: vendor_page
+    quote: This model is not a scientific collaboration with the Onnela Lab, but instead makes it possible for investigators
+      to use Beiwe without having to deploy and maintain their own version of the open source code base.
+    retrieved: '2026-10-10'
+  - url: https://hsph.harvard.edu/research-resource/beiwe/
+    type: vendor_page
+    quote: US Beiwe Service Center Login EU Beiwe Service Center Login
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend
+    type: repository
+    quote: Beiwe currently supports Amazon Web Services (AWS) cloud computing infrastructure and provides tools
+      to assist in deploying and managing an instance of the Beiwe Platform.
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-FAQs-for-Prospective-Beiwe-Users
+    type: vendor_docs
+    quote: Contact our developers, Zagaran , directly, but please be advised that they will charge for their service.
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+- field: app_availability
+  status: stated
+  value: 'iOS: Beiwe2 on the Apple App Store (free, iPhone only, Onnela Lab LLC), connects to any Beiwe server by
+    URL; usable only by invited participants. Android: sideloaded APK downloaded from the Beiwe server (for example
+    studies.beiwe.org); no current Google Play listing found (org.beiwe.app returned 404 on 2026-10-10).'
+  confidence: Verified
+  sources:
+  - url: https://apps.apple.com/us/app/beiwe2/id1312962738
+    type: app_store
+    quote: Only participants who have been invited to join a study, and have been provided with a participant ID
+      and registration password from a Beiwe server, can use this app.
+    retrieved: '2026-10-10'
+  - url: https://apps.apple.com/us/app/beiwe2/id1312962738
+    type: app_store
+    quote: Usage of this Beiwe app is open to any Beiwe server by providing a URL at participant registration.
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend
+    type: repository
+    quote: on Android sideload the app via a link accessible form your Beiwe instance's website
+    retrieved: '2026-10-10'
+  - url: https://studies.beiwe.org/
+    type: vendor_page
+    quote: Looking for the Android App? click here to download.
+    retrieved: '2026-10-10'
+  - url: https://play.google.com/store/apps/details?id=org.beiwe.app
+    type: app_store
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+  note: An older wiki release table listed a Beiwe2 Android app on Google Play; the Play URL for the app id in the
+    Android build file now 404s.
+- field: baa
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://hsph.harvard.edu/research-resource/beiwe/use-beiwe/
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://hsph.harvard.edu/research/onnela-lab/beiwe-service-center
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://hsph.harvard.edu/research-resource/beiwe/
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-Beiwe-Data-Privacy-and-Security
+    type: vendor_docs
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-IRB-FAQs
+    type: vendor_docs
+    retrieved: '2026-10-10'
+  recheck_by: '2027-01-08'
+  note: No BAA offer published for the BSC; would need confirmation from the BSC (hdawood@hsph.harvard.edu per the
+    BSC pages).
+- field: dpa
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://hsph.harvard.edu/research-resource/beiwe/use-beiwe/
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://hsph.harvard.edu/research/onnela-lab/beiwe-service-center
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://hsph.harvard.edu/research-resource/beiwe/
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://forms.gle/Dxx8o2vJrVopMyZv8
+    type: vendor_page
+    retrieved: '2026-10-10'
+  recheck_by: '2027-01-08'
+  note: No DPA published, although the BSC runs an EU server; BSC use is under a contract (pricing pages refer to
+    "the contract").
+- field: hipaa_statement
+  status: stated
+  value: No HIPAA compliance claim. The backend README notes Beiwe data may fall under laws such as HIPAA and therefore
+    makes SSL/TLS mandatory; documented safeguards are encryption on device, in transit and at rest (RSA-2048 wrapped
+    AES) and hashing of phone numbers and MAC addresses.
+  confidence: Corroborated
+  sources:
+  - url: https://github.com/onnela-lab/beiwe-backend
+    type: repository
+    quote: the platform makes it a fundamental requirement that you to add an SSL certificate so that web traffic
+      is encrypted.
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-IRB-FAQs
+    type: vendor_docs
+    quote: In terms of traditional identifiable information (name, ID numbers, social security numbers, emails,
+      birth dates, etc.), the Onnela Lab does not have access to any of this.
+    retrieved: '2026-10-10'
+  recheck_by: '2027-01-08'
+- field: gdpr_statement
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://hsph.harvard.edu/research-resource/beiwe/
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://hsph.harvard.edu/research-resource/beiwe/use-beiwe/
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://hsph.harvard.edu/research-resource/beiwe/technology/
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-Beiwe-Data-Privacy-and-Security
+    type: vendor_docs
+    retrieved: '2026-10-10'
+  - url: https://eu.beiwe.org/
+    type: vendor_page
+    retrieved: '2026-10-10'
+  recheck_by: '2027-01-08'
+  note: An EU BSC server exists but no GDPR statement was found.
+- field: iso27001
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://hsph.harvard.edu/research-resource/beiwe/use-beiwe/
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://hsph.harvard.edu/research-resource/beiwe/technology/
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-Beiwe-Data-Privacy-and-Security
+    type: vendor_docs
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend
+    type: repository
+    retrieved: '2026-10-10'
+  recheck_by: '2027-01-08'
+  note: No ISO 27001 certification claimed for the BSC. Underlying AWS infrastructure certifications are AWS's,
+    not the BSC's.
+- field: soc2
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://hsph.harvard.edu/research-resource/beiwe/use-beiwe/
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://hsph.harvard.edu/research-resource/beiwe/technology/
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-Beiwe-Data-Privacy-and-Security
+    type: vendor_docs
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend
+    type: repository
+    retrieved: '2026-10-10'
+  recheck_by: '2027-01-08'
+- field: fda_clearances
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://api.fda.gov/device/510k.json?search=device_name:beiwe
+    type: regulator_db
+    retrieved: '2026-10-10'
+  - url: https://api.fda.gov/device/510k.json?search=applicant:onnela
+    type: regulator_db
+    retrieved: '2026-10-10'
+  - url: https://api.fda.gov/device/510k.json?search=applicant:%22president+and+fellows+of+harvard%22
+    type: regulator_db
+    retrieved: '2026-10-10'
+  - url: https://api.fda.gov/device/pma.json?search=trade_name:beiwe
+    type: regulator_db
+    retrieved: '2026-10-10'
+  - url: https://api.fda.gov/device/registrationlisting.json?search=products.proprietary_name:beiwe
+    type: regulator_db
+    retrieved: '2026-10-10'
+  recheck_by: '2027-01-08'
+  note: All openFDA searches returned "No matches found" on 2026-10-10. Beiwe is a research platform and does not
+    claim to be a medical device.
+- field: data_residency
+  status: stated
+  value: 'BSC: separate US (studies.beiwe.org) and EU (eu.beiwe.org) servers, both on AWS. Self-hosted: any AWS
+    region the deployer chooses.'
+  confidence: Corroborated
+  sources:
+  - url: https://hsph.harvard.edu/research-resource/beiwe/
+    type: vendor_page
+    quote: US Beiwe Service Center Login EU Beiwe Service Center Login
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend
+    type: repository
+    quote: Beiwe currently supports Amazon Web Services (AWS) cloud computing infrastructure and provides tools
+      to assist in deploying and managing an instance of the Beiwe Platform.
+    retrieved: '2026-10-10'
+  - url: https://github.com/onnela-lab/beiwe-backend/wiki/Beiwe-deployment-extra-information-for-non-IT-users
+    type: vendor_docs
+    quote: If you are using other regions, simply replace
+    retrieved: '2026-10-10'
+  recheck_by: '2027-01-08'
+  note: DNS on 2026-10-10 resolved eu.beiwe.org to an AWS eu-north-1 (Stockholm) load balancer; the specific AWS
+    regions are not stated on any page.

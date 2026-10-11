@@ -1,0 +1,623 @@
+# Draft record for withings, researcher B, 2026-10-10. Schema: facts/_schema.yaml
+name: Withings
+kind: wearable
+profile: module-01-wearables/profiles/withings.md
+watch:
+- url: https://static.withings.com/content/api/plans/plans.html
+  role: pricing
+- url: https://www.withings.com/pages/withings-api-plans-form
+  role: developer_program
+- url: https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis/
+  role: research_program
+- url: https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data
+  role: docs
+- url: https://developer.withings.com/llms.md
+  role: docs
+- url: https://developer.withings.com/openapi.yaml
+  role: docs
+- url: https://www.withings.com/us/en/legal/api-terms-of-use
+  role: terms
+- url: https://www.withings.com/us/en/legal/privacy-policy
+  role: terms
+- url: https://developer.withings.com/developer-guide/v3/withings-solutions/security-and-compliance
+  role: trust
+- url: https://www.withings.com/us/en/data-security
+  role: trust
+- url: https://media.withings.com/web/med-pro/Certificat-ISO27001.pdf
+  role: trust
+- url: https://www.withings.com/us/en/research
+  role: research_program
+- url: https://www.withings.com/us/en/scanwatch-2
+  role: pricing
+- url: https://www.withings.com/us/en/beam-o/shop
+  role: pricing
+- url: https://api.fda.gov/device/510k.json?search=applicant:withings&limit=100
+  role: regulatory
+facts:
+- field: research_program
+  status: stated
+  value: >-
+    Two research routes. (1) Advanced Research API: raw ScanWatch accelerometer and PPG data for
+    research groups, universities and health studies, under contract. (2) The Advanced Biomarkers API
+    plan, which Withings markets for clinical studies and AI research (cleared biomarkers, custom
+    device provisioning, anonymization, AI training rights). Withings also runs a research page with
+    a publication library and a "Conduct a study" contact route.
+  confidence: Verified
+  sources:
+  - url: https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis/
+    type: vendor_docs
+    quote: "The Advanced Research API provides research institutions, universities, and healthcare innovators with direct access to raw sensor data from Withings devices"
+    retrieved: 2026-10-10
+  - url: https://static.withings.com/content/api/plans/plans.html
+    type: vendor_page
+    quote: "Trusted by 100+ research labs. Cleared biomarkers, custom device provisioning, anonymization and explicit AI training rights, all part of Advanced Biomarkers."
+    retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+- field: program_eligibility
+  status: stated
+  value: >-
+    Aimed at research groups, universities and advanced health studies. Raw data access is limited
+    to contracted partners. No published eligibility criteria beyond that.
+  confidence: Verified
+  sources:
+  - url: https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis/
+    type: vendor_docs
+    quote: "Designed for research groups, universities, and advanced health studies."
+    retrieved: 2026-10-10
+  - url: https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data
+    type: vendor_docs
+    quote: "Access to raw data is a special feature available only for contracted partners."
+    retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+- field: program_application
+  status: stated
+  value: >-
+    Contact Withings and sign a contract. No public application form, review criteria or turnaround
+    time is published for the research route.
+  confidence: Corroborated
+  sources:
+  - url: https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data
+    type: vendor_docs
+    quote: "If you are interested in using this feature, please contact us"
+    retrieved: 2026-10-10
+  - url: https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis/
+    type: vendor_docs
+    quote: "Interested in using our Advanced Research API? Click here."
+    retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+  note: The "contract" step is from the raw-data page; review criteria are not published.
+- field: program_status
+  status: stated
+  value: >-
+    Active as of 2026-10-10. The Advanced Research API is listed as a current solution and is
+    compatible only with the ScanWatch. No pause or closure notice found.
+  confidence: Corroborated
+  sources:
+  - url: https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis/
+    type: vendor_docs
+    quote: "Currently, the Advanced Research API is compatible exclusively with the Withings ScanWatch."
+    retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+  note: No explicit "active" statement; status inferred from the live solution page.
+- field: developer_program_status
+  status: stated
+  value: >-
+    Open and self-serve. The Public API needs no contract; apps are created in the developer
+    dashboard. From 2026-10-12, Withings accounts created after that date need a Withings+
+    membership to share data with apps on the free plan, unless the app is on Enterprise or
+    Advanced Biomarkers.
+  confidence: Verified
+  sources:
+  - url: https://developer.withings.com/llms.md
+    type: vendor_docs
+    quote: "No contract required"
+    retrieved: 2026-10-10
+  - url: https://static.withings.com/content/api/plans/plans.html
+    type: vendor_page
+    quote: "Withings+ becomes required on the Start for Free API plan from October 12, 2026"
+    retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+- field: user_cap
+  status: stated
+  scope: Start for Free plan
+  value: 10 active users, raised after Withings reviews the app (an app review form of about 10 questions).
+  confidence: Verified
+  sources:
+  - url: https://www.withings.com/pages/withings-api-plans-form
+    type: vendor_page
+    quote: "Every app on the Free API plan starts capped at 10 users so you can build, test, and validate."
+    retrieved: 2026-10-10
+  - url: https://static.withings.com/content/api/plans/plans.html
+    type: vendor_page
+    quote: "Once approved, your cap is raised to a level that fits your use case"
+    retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+  note: >-
+    Search-engine snippets of an older developer-guide version cite a 5,000 active-user cap on the
+    free plan; the live page now embeds the static plans page, which says 10. Treat 10 as current.
+- field: user_cap
+  status: stated
+  scope: Enterprise and Advanced Biomarkers plans
+  value: Unlimited active users.
+  confidence: Verified
+  sources:
+  - url: https://static.withings.com/content/api/plans/plans.html
+    type: vendor_page
+    quote: "Custom Based on number of active users Users Unlimited"
+    retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+- field: academic_vs_commercial
+  status: stated
+  value: >-
+    No separate academic API tier or academic price is published. Research use runs through the
+    contracted Advanced Research API or the Advanced Biomarkers plan. Research partners are one of
+    the use cases for which the end-user Withings+ requirement can be lifted.
+  confidence: Corroborated
+  sources:
+  - url: https://static.withings.com/content/api/plans/plans.html
+    type: vendor_page
+    quote: "The Withings+ requirement can be removed for specific use cases: Cellular Solutions, SDK and Research partners."
+    retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+- field: device_price
+  status: stated
+  scope: ScanWatch 2 (42mm, US store)
+  value: USD 369.95
+  confidence: Verified
+  sources:
+  - url: https://www.withings.com/us/en/scanwatch-2
+    type: vendor_page
+    quote: "ScanWatch 2 42mm Black $369.95 USD"
+    retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+- field: device_price
+  status: stated
+  scope: ScanWatch Light (37mm, US store)
+  value: USD 249.95
+  confidence: Verified
+  sources:
+  - url: https://www.withings.com/us/en/scanwatch-light
+    type: vendor_page
+    quote: "ScanWatch Light 37mm Black & Silver $249.95 USD"
+    retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+- field: device_price
+  status: stated
+  scope: ScanWatch Nova (42mm, US store)
+  value: USD 599.95
+  confidence: Verified
+  sources:
+  - url: https://www.withings.com/us/en/scanwatch-nova
+    type: vendor_page
+    quote: "ScanWatch Nova 42mm Blue $599.95 USD"
+    retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+- field: subscription_price
+  status: stated
+  scope: Withings+ (US)
+  value: USD 9.95 per month or USD 99.50 per year.
+  confidence: Verified
+  sources:
+  - url: https://www.withings.com/us/en/beam-o/shop
+    type: vendor_page
+    quote: "Withings+ access is $9.95/month (or $99.50/year), charged automatically until you cancel."
+    retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+  note: >-
+    Relevant to studies: from 2026-10-12, participants with Withings accounts created after that
+    date need Withings+ to share data with a free-plan API app.
+- field: academic_pricing
+  status: not_public
+  value: No academic or research discount is published for devices, Withings+ or API plans.
+  confidence: Verified
+  sources:
+  - url: https://static.withings.com/content/api/plans/plans.html
+    type: vendor_page
+    retrieved: 2026-10-10
+  - url: https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis/
+    type: vendor_docs
+    retrieved: 2026-10-10
+  - url: https://www.withings.com/us/en/research
+    type: vendor_page
+    retrieved: 2026-10-10
+  - url: https://www.withings.com/pages/research-clinical-trials
+    type: vendor_page
+    retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+- field: api_platform_fees
+  status: stated
+  value: >-
+    Start for Free is free. Enterprise is custom-priced by number of active users; Advanced
+    Biomarkers is custom-priced by active users and biomarkers. Apps do not pay per end-user
+    Withings+ membership on the paid plans.
+  confidence: Verified
+  sources:
+  - url: https://static.withings.com/content/api/plans/plans.html
+    type: vendor_page
+    quote: "Custom Based on active users and biomarkers"
+    retrieved: 2026-10-10
+  - url: https://static.withings.com/content/api/plans/plans.html
+    type: vendor_page
+    quote: "Your users do not subscribe individually and there is no per-member charge."
+    retrieved: 2026-10-10
+  - url: https://www.withings.com/us/en/legal/api-terms-of-use
+    type: vendor_legal
+    quote: "Withings reserves the right to charge for the Software and to change its fees from time to time, at its discretion."
+    retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+- field: minimum_commitment
+  status: not_public
+  value: No minimum term, order or user count is published for Enterprise, Advanced Biomarkers or the research API.
+  confidence: Verified
+  sources:
+  - url: https://static.withings.com/content/api/plans/plans.html
+    type: vendor_page
+    retrieved: 2026-10-10
+  - url: https://www.withings.com/pages/withings-api-plans-form
+    type: vendor_page
+    retrieved: 2026-10-10
+  - url: https://www.withings.com/us/en/legal/api-terms-of-use
+    type: vendor_legal
+    retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+- field: quote_required
+  status: stated
+  value: Yes for Enterprise, Advanced Biomarkers and the research API (custom pricing, "Talk to our team"). No for Start for Free.
+  confidence: Verified
+  sources:
+  - url: https://static.withings.com/content/api/plans/plans.html
+    type: vendor_page
+    quote: "Custom Based on number of active users"
+    retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+- field: raw_streams
+  status: stated
+  scope: Advanced Research API (ScanWatch only, contracted partners)
+  value: >-
+    Raw 3-axis accelerometer and 3-wavelength PPG (green, red, infrared) via the Rawdata v2
+    Activate, Deactivate and Get services. Activation puts the watch in a raw-only mode that disables
+    all other features and cuts battery life to about 3 to 4 days on continuous capture.
+  confidence: Verified
+  sources:
+  - url: https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data
+    type: vendor_docs
+    quote: "This includes accelerometer and optical sensor (PPG) data sampled at approximately 25 Hz"
+    retrieved: 2026-10-10
+  - url: https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data
+    type: vendor_docs
+    quote: "Raw data activation will put the Withings device in a specific mode that will disable all features except raw data capture."
+    retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+- field: raw_streams
+  status: stated
+  scope: Health data API (ECG signal)
+  value: Full single-lead ECG waveform in microvolts through Heart v2 Get (ScanWatch 30 s recordings).
+  confidence: Verified
+  sources:
+  - url: https://developer.withings.com/openapi.yaml
+    type: vendor_docs
+    quote: "Provides the high frequency data of an ECG recording in micro-volt"
+    retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+- field: derived_metrics
+  status: stated
+  value: >-
+    Activity (steps, distance, calories, intensity, workouts), heart rate, HRV, SpO2, core body
+    temperature, sleep stages and scores, respiratory rate, VO2 max, ECG intervals, AFib (PPG and
+    ECG), plus scale, blood pressure and sleep-mat metrics. Access depends on plan: the free plan
+    carries core biomarkers; FDA/CE cleared biomarkers (ECG, AFib, SpO2, vascular age, AHI) need
+    Advanced Biomarkers.
+  confidence: Verified
+  sources:
+  - url: https://static.withings.com/content/api/plans/plans.html
+    type: vendor_page
+    quote: "Core biomarkers : Activity, Sleep, Body, Heart"
+    retrieved: 2026-10-10
+  - url: https://static.withings.com/content/api/plans/plans.html
+    type: vendor_page
+    quote: "FDA/CE cleared biomarkers : ECG, AFib, SpO₂, vascular age, AHI"
+    retrieved: 2026-10-10
+  - url: https://openwearables.io/docs/providers/withings-api-integration
+    type: secondary
+    quote: "automatic SpO2 from watches needs a paid plan"
+    retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+- field: sampling_rates
+  status: conflict
+  scope: ScanWatch raw accelerometer and PPG
+  value: >-
+    Research page says the accelerometer samples at 25 Hz by default, up to 100 Hz; the raw-data
+    page says both sensors sample at about 24.824 Hz and does not mention 100 Hz.
+  confidence: Unclear
+  sources:
+  - url: https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis/
+    type: vendor_docs
+    quote: "samples at 25Hz by default (up to 100Hz)"
+    retrieved: 2026-10-10
+  - url: https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data
+    type: vendor_docs
+    quote: "Both sensors sampling rate are about 24.824 Hz"
+    retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+  note: Whether 100 Hz can be configured through the API is not documented; ask Withings.
+- field: sampling_rates
+  status: stated
+  scope: ScanWatch ECG signal
+  value: 300 Hz, 30-second recordings.
+  confidence: Verified
+  sources:
+  - url: https://developer.withings.com/openapi.yaml
+    type: vendor_docs
+    quote: "ScanWatch: 300 Hz."
+    retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+- field: history_depth
+  status: not_public
+  value: >-
+    No maximum look-back is documented. Endpoints take start and end dates or a lastupdate
+    timestamp with pagination; intraday activity returns at most 24 hours per request.
+  confidence: Verified
+  sources:
+  - url: https://developer.withings.com/openapi.yaml
+    type: vendor_docs
+    quote: "If your input ```startdate``` and ```enddate``` are separated by more than 24h, only the first 24h after ```startdate``` will be returned."
+    retrieved: 2026-10-10
+  - url: https://developer.withings.com/llms.md
+    type: vendor_docs
+    retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+- field: export_routes
+  status: stated
+  value: >-
+    Public Health Data API (OAuth 2.0 REST plus webhook notifications); contracted SDK (iOS,
+    Android), cellular and RPM routes; Advanced Research API for raw data; participant CSV export
+    from the Withings account. Apple Health and Google Health sharing are also covered by the
+    Withings+ requirement from 2026-10-12.
+  confidence: Verified
+  sources:
+  - url: https://static.withings.com/content/api/plans/plans.html
+    type: vendor_page
+    quote: "REST API, OAuth 2.0 and webhooks"
+    retrieved: 2026-10-10
+  - url: https://support.withings.com/hc/en-us/articles/360001391287-Privacy-How-can-I-export-my-data
+    type: vendor_docs
+    quote: "You will get your data in the form of a CSV file, which you can open using any spreadsheet software."
+    retrieved: 2026-10-10
+  - url: https://static.withings.com/content/api/plans/plans.html
+    type: vendor_page
+    quote: "Can my users share through Apple Health or Google Health instead? No. The requirement covers those routes too."
+    retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+- field: rate_limits
+  status: stated
+  value: >-
+    Enterprise and Advanced Biomarkers: 1,500+ requests per minute. Start for Free: "Standard rate
+    limits", no number on the current plans page. Docs advise polling each user no more than once
+    every 10 minutes; limit breaches return status 601.
+  confidence: Verified
+  sources:
+  - url: https://static.withings.com/content/api/plans/plans.html
+    type: vendor_page
+    quote: "API rate limit Standard 1,500+ req/min 1,500+ req/min"
+    retrieved: 2026-10-10
+  - url: https://developer.withings.com/llms.md
+    type: vendor_docs
+    quote: "Do not poll more than once every 10 minutes per user"
+    retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+  note: An earlier developer-guide version (seen only in search snippets) gave 120 requests per minute for the free plan; not on any live page.
+- field: retention_terms
+  status: stated
+  value: >-
+    The API terms set no retention period for developers; they require user consent and a public
+    privacy policy. Withings keeps personal data only as long as necessary, deletes accounts after
+    10 years of inactivity, and says copies may remain after material is removed from the service.
+  confidence: Verified
+  sources:
+  - url: https://www.withings.com/us/en/legal/api-terms-of-use
+    type: vendor_legal
+    quote: "After the Material is removed from the Service by either You or Withings, traces and copies of the Material may still remain."
+    retrieved: 2026-10-10
+  - url: https://www.withings.com/us/en/legal/privacy-policy
+    type: vendor_legal
+    quote: "We retain your Personal Information only for as long as necessary to achieve the purposes described in this Privacy Policy."
+    retrieved: 2026-10-10
+  - url: https://www.withings.com/us/en/legal/privacy-policy
+    type: vendor_legal
+    quote: "Your Withings App account will be considered inactive if for 10 years"
+    retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+- field: ai_training_terms
+  status: stated
+  value: >-
+    AI model training rights are sold only with the Advanced Biomarkers plan, under an AI model
+    training contract; the comparison table marks them absent on Start for Free and Enterprise. The
+    API terms say nothing on AI training.
+  confidence: Verified
+  sources:
+  - url: https://static.withings.com/content/api/plans/plans.html
+    type: vendor_page
+    quote: "Cleared biomarkers, risk scores and symptom tracking, plus AI model training rights."
+    retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+- field: deprecations
+  status: stated
+  value: >-
+    From 2026-10-12, Withings accounts created after that date need an active Withings+ membership
+    to share data with Start for Free apps (including through Apple Health and Google Health);
+    existing accounts are unaffected and Enterprise or Advanced Biomarkers can lift it. Smaller
+    items: some sleep fields (durationtosleep, durationtowakeup) and the Dropshipment Getorderstatus
+    service are marked deprecated.
+  confidence: Verified
+  sources:
+  - url: https://static.withings.com/content/api/plans/plans.html
+    type: vendor_page
+    quote: "Withings accounts created after that date will need a membership to share health data with a free-plan app, including apps that are already live."
+    retrieved: 2026-10-10
+  - url: https://developer.withings.com/openapi.yaml
+    type: vendor_docs
+    quote: "durationtosleep > Time to sleep (seconds). (deprecated)"
+    retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+- field: baa
+  status: stated
+  value: Offered on Enterprise and Advanced Biomarkers, not on Start for Free, per the plan comparison table.
+  confidence: Corroborated
+  sources:
+  - url: https://static.withings.com/content/api/plans/plans.html
+    type: vendor_page
+    quote: "DPA, BAA and security questionnaire"
+    retrieved: 2026-10-10
+  - url: https://media.withings.com/web/med-pro/HIPAA_Compliance_Guide_v2.pdf
+    type: vendor_docs
+    quote: "could make WITHINGS a business associate when WITHINGS provides these services to HIPAA-covered entities"
+    retrieved: 2026-10-10
+  recheck_by: 2027-01-08
+  note: The table row shows a cross for Start for Free and ticks for the two paid plans.
+- field: dpa
+  status: stated
+  value: Offered on Enterprise and Advanced Biomarkers (DPA and security review).
+  confidence: Corroborated
+  sources:
+  - url: https://static.withings.com/content/api/plans/plans.html
+    type: vendor_page
+    quote: "HDS certified, DPA and security review"
+    retrieved: 2026-10-10
+  recheck_by: 2027-01-08
+- field: hipaa_statement
+  status: stated
+  value: >-
+    Withings states its US Medical Cloud is HIPAA compliant; HIPAA-compliant US hosting is listed
+    for Enterprise and Advanced Biomarkers, not Start for Free. A HIPAA Compliance Guide (2024) is
+    published.
+  confidence: Corroborated
+  sources:
+  - url: https://developer.withings.com/developer-guide/v3/withings-solutions/security-and-compliance
+    type: vendor_docs
+    quote: "Withings complies with HIPAA rules and regulations so that our services can be more effectively integrated by entities that are covered by HIPAA."
+    retrieved: 2026-10-10
+  - url: https://static.withings.com/content/api/plans/plans.html
+    type: vendor_page
+    quote: "US-hosted, HIPAA compliant"
+    retrieved: 2026-10-10
+  recheck_by: 2027-01-08
+- field: gdpr_statement
+  status: stated
+  value: Withings states its EU-hosted cloud is GDPR compliant, on all API plans.
+  confidence: Corroborated
+  sources:
+  - url: https://static.withings.com/content/api/plans/plans.html
+    type: vendor_page
+    quote: "EU-hosted, GDPR compliant"
+    retrieved: 2026-10-10
+  - url: https://developer.withings.com/developer-guide/v3/withings-solutions/security-and-compliance
+    type: vendor_docs
+    quote: "Based in France, our EU Medical Cloud / Public Cloud is GDPR compliant"
+    retrieved: 2026-10-10
+  recheck_by: 2027-01-08
+- field: iso27001
+  status: stated
+  value: >-
+    Certified by AFNOR Certification to ISO/IEC 27001:2022 (certificate 2020/86561.8), valid
+    2026-04-22 to 2029-04-21. Scope includes the Withings apps, public API, SDK, consumer and
+    clinical services and devices; sites Issy-les-Moulineaux and Boston.
+  confidence: Verified
+  sources:
+  - url: https://media.withings.com/web/med-pro/Certificat-ISO27001.pdf
+    type: certificate
+    quote: "2026-04-22 Until 2029-04-21"
+    retrieved: 2026-10-10
+  - url: https://www.withings.com/us/en/data-security
+    type: vendor_page
+    quote: "ISO 27001:2022, ISO 27701:2019 & HDS"
+    retrieved: 2026-10-10
+  recheck_by: 2027-01-08
+  note: The developer security page still says "ISO 27001:2017 certified"; the certificate is the newer evidence. Real-time validity is on afnor.org.
+- field: soc2
+  status: not_public
+  value: No SOC 2 report or attestation is mentioned on Withings' security, compliance or plan pages.
+  confidence: Verified
+  sources:
+  - url: https://www.withings.com/us/en/data-security
+    type: vendor_page
+    retrieved: 2026-10-10
+  - url: https://developer.withings.com/developer-guide/v3/withings-solutions/security-and-compliance
+    type: vendor_docs
+    retrieved: 2026-10-10
+  - url: https://static.withings.com/content/api/plans/plans.html
+    type: vendor_page
+    retrieved: 2026-10-10
+  - url: https://media.withings.com/web/med-pro/HIPAA_Compliance_Guide_v2.pdf
+    type: vendor_docs
+    retrieved: 2026-10-10
+  recheck_by: 2027-01-08
+- field: fda_clearances
+  status: stated
+  scope: ScanWatch ECG
+  value: >-
+    510(k) K201456 "Scan Monitor" (Withings SA, cleared 2021-10-05, code DPS); K230812 "Withings
+    Scan Monitor 2.0" (cleared 2023-08-23, DPS); K240795 "Withings ECG App" (cleared 2025-06-15,
+    QDA, OTC ECG software).
+  confidence: Verified
+  sources:
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K201456
+    fetch_url: https://api.fda.gov/device/510k.json?search=k_number:K201456
+    type: regulator_db
+    quote: "Withings SA 2021-10-05 SESE FR Scan Monitor"
+    retrieved: 2026-10-10
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K230812
+    fetch_url: https://api.fda.gov/device/510k.json?search=k_number:K230812
+    type: regulator_db
+    quote: "Withings 2023-08-23 SESE FR Withings Scan Monitor 2.0"
+    retrieved: 2026-10-10
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K240795
+    fetch_url: https://api.fda.gov/device/510k.json?search=k_number:K240795
+    type: regulator_db
+    quote: "Withings 2025-06-15 SESE FR Withings ECG App"
+    retrieved: 2026-10-10
+  recheck_by: 2027-01-08
+  note: >-
+    The link between "Scan Monitor" and the ScanWatch is by name, not stated in the openFDA record.
+    No SpO2 or pulse-oximetry 510(k) under a Withings applicant was found in openFDA (searches:
+    applicant:withings, device_name:scanwatch, product_code:DQA AND applicant:withings), although
+    the plans page lists SpO2 among FDA/CE cleared biomarkers.
+- field: fda_clearances
+  status: stated
+  scope: Other Withings devices
+  value: >-
+    K231667 Withings Sleep Rx (2024-09-06, MNR); K252474 Withings BeamO (SCT02) (2025-11-10, DPS);
+    K160544 Withings Thermo (2016-06-17); K110872 and K133125 blood pressure monitors (2011, 2014).
+  confidence: Verified
+  sources:
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K231667
+    fetch_url: https://api.fda.gov/device/510k.json?search=k_number:K231667
+    type: regulator_db
+    quote: "Withings 2024-09-06 SESE FR Withings Sleep Rx"
+    retrieved: 2026-10-10
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K252474
+    fetch_url: https://api.fda.gov/device/510k.json?search=k_number:K252474
+    type: regulator_db
+    quote: "Withings 2025-11-10 SESE FR Withings BeamO (SCT02)"
+    retrieved: 2026-10-10
+  recheck_by: 2027-01-08
+  note: Full list from https://api.fda.gov/device/510k.json?search=applicant:withings&limit=100 (8 records on 2026-10-10).
+- field: data_residency
+  status: stated
+  value: >-
+    Start for Free data is EU-hosted (France); Enterprise and Advanced Biomarkers add US hosting
+    (US Medical Cloud) and French HDS hosting. Consumer personal data is hosted in the EU.
+  confidence: Verified
+  sources:
+  - url: https://static.withings.com/content/api/plans/plans.html
+    type: vendor_page
+    quote: "US-hosted, HIPAA compliant"
+    retrieved: 2026-10-10
+  - url: https://www.withings.com/us/en/legal/privacy-policy
+    type: vendor_legal
+    quote: "Your Personal Information is hosted in the European Union"
+    retrieved: 2026-10-10
+  - url: https://developer.withings.com/developer-guide/v3/withings-solutions/security-and-compliance
+    type: vendor_docs
+    quote: "Our US Medical Cloud is a US based, ISO 27001:2017 certified and HIPAA compliant."
+    retrieved: 2026-10-10
+  recheck_by: 2027-01-08

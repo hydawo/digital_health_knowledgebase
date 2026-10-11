@@ -83,6 +83,9 @@ def check(company, rec, schema):
                     e(f'{label}: source type "{s.get("type")}" not in {list(types)}')
                 if not as_date(s.get('retrieved')):
                     e(f'{label}: a source has no valid retrieved date')
+            for s in srcs:
+                if s.get('quote') is not None and not isinstance(s.get('quote'), str):
+                    e(f'{label}: quote must be a quoted string (YAML read {s.get("quote")!r} as {type(s.get("quote")).__name__})')
             if st in ('stated', 'conflict') and not any(s.get('quote') for s in srcs):
                 e(f'{label}: status {st} needs an exact quote in at least one source')
             if st == 'conflict' and len(srcs) < 2:
