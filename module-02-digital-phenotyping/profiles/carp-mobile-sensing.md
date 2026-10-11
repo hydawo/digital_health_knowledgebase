@@ -6,12 +6,12 @@
 |---|---|
 | Organization | Technical University of Denmark (DTU); Jakob E. Bardram's group |
 | Category | Open-source cross-platform mobile sensing framework for digital phenotyping |
-| Current status | Active; carp.sensing-flutter pushed 2026-10-09 and carp-portal 2026-10-07 (GitHub API, checked 2026-10-10); `carp_mobile_sensing` distributed via pub.dev |
-| Platforms/devices | Android and iOS (cross-platform via Flutter). DTU's reference app "CARP Studies" is on Google Play (`dk.cachet.carp_study_app`, updated 2026-10-06); no App Store listing was found on 2026-10-10 (Unclear). Teams can also build their own app on CAMS |
-| Open source | Yes, MIT licence |
-| Hosting/deployment | Three documented routes: the DTU-hosted CARP service on DTU Computerome (CAWS page: for DTU-affiliated researchers, best effort; "Three ways" page: email info@carp.dk for an account), a self-hosted CARP instance from the open-source components (CAWS backend, Web Portal, Studies App), or a custom app on CAMS pointed at any server (Verified 2026-10-10) |
-| Pricing model | Free/open source (MIT); no price stated for the DTU-hosted service |
-| Last verified | 2026-10-10 (hosting routes, data roles, JSON export, portal stack, app-store listing) |
+| Current status | Active; CAMS API 2.0 released April 2026 and the rebuilt CARP Studies app version 5 in September 2026 (iOS 5.1.0 on 2026-10-06) [22][28]; carp.sensing-flutter pushed 2026-10-09 and carp-portal 2026-10-07 (GitHub API, checked 2026-10-10); `carp_mobile_sensing` distributed via pub.dev |
+| Platforms/devices | Android and iOS (cross-platform via Flutter). DTU's reference app "CARP Studies" is free on Google Play (`dk.cachet.carp_study_app`) and on the Apple App Store as an unlisted app reachable only by link (id 1569798025, seller Danmarks Tekniske Universitet, iOS 15.0 or later, version 5.1.0 released 2026-10-06) (Verified 2026-10-11) [23]. Teams can also build their own app on CAMS |
+| Open source | Yes, MIT licence on all seven main repositories (Verified 2026-10-11) [34] |
+| Hosting/deployment | Three documented routes: the DTU-hosted CARP service on Computerome (only for research projects where DTU Health Tech is an active research partner; research use only; no SLA) [21], a self-hosted CARP instance from the open-source components (CAWS backend, Web Portal, Studies App), or a custom app on CAMS pointed at any server (Verified 2026-10-11) |
+| Pricing model | Software free/open source (MIT), no licence or API fees. DTU-hosted service has a published 2024 rate table: 45,000 DKK one-time study setup, 1,250 DKK per study per month, staff time and a Computerome operations fee; actual cost is agreed per project (Verified 2026-10-11) [21] |
+| Last verified | 2026-10-11 (vendor fact record) |
 
 ## Summary
 
@@ -32,28 +32,32 @@
 
 | Stream | Android | iOS | Raw or derived | Sampling configurable | Notes |
 |---|---|---|---|---|---|
-| GPS / location | Yes | Yes | Unclear | Yes | Location sampling package. |
-| Accelerometer | Unclear | Unclear | Unclear | Unclear | Not verified against current documentation. |
-| Gyroscope | Unclear | Unclear | Unclear | Unclear | Not verified against current documentation. |
-| Magnetometer | Unclear | Unclear | Unclear | Unclear | Not verified against current documentation. |
+| GPS / location | Yes | Yes | Raw location; derived mobility features | Yes | Location sampling package. |
+| Accelerometer | Yes | Yes | Raw, with and without gravity; derived higher-order features over a window | Yes, per measure; default every 200 ms (5 Hz) | Sensors package [24][25]. |
+| Gyroscope | Yes | Yes | Raw | Yes, per measure; default every 200 ms (5 Hz) | Sensors package [24][25]. |
+| Magnetometer | Yes | Yes | Raw | Yes, per measure; default every 200 ms (5 Hz) | Sensors package [24][25]. |
 | Barometer | Unclear | Unclear | Unclear | Unclear | Not verified against current documentation. |
-| Ambient light | Unclear | Unclear | Unclear | Unclear | Not verified against current documentation. |
+| Ambient light | Yes | No | Derived light summaries | Yes; default 10 s every 5 min | Marked Android only in the packages table [24][25]. |
 | Proximity | Unclear | Unclear | Unclear | Unclear | Not verified against current documentation. |
 | Device motion / activity recognition | Yes | Yes | Derived. Activity package. | Yes |  |
-| Screen state | Unclear | Unclear | Unclear | Unclear | Not verified against current documentation. |
-| App usage | Yes | Unclear | Unclear | Yes | Apps package. |
-| Battery / charging | Unclear | Unclear | Unclear | Unclear | Not verified against current documentation. |
+| Screen state | Yes | No | Event (screen on/off) | Unclear | Marked Android only in the packages table [24]. |
+| App usage | Yes | No | Unclear | Yes | Apps package; installed apps and app usage marked Android only [24]. |
+| Battery / charging | Yes | Yes | Unclear | Unclear | Battery package; battery level listed for the Studies app v5 [22][24]. |
 | Network / connectivity | Yes | Yes | Unclear | Yes | Connectivity package. |
-| Wi-Fi | Unclear | Unclear | Unclear | Unclear | Not verified against current documentation. |
-| Bluetooth | Unclear | Unclear | Unclear | Unclear | Not verified against current documentation. |
+| Wi-Fi | Yes | No | Event (scans) | Unclear | Marked Android only in the packages table [24]. |
+| Bluetooth | Yes | Yes | Event (scans) | Unclear | Connectivity package [24]. |
 | Calls (metadata) | Yes | No (OS) | Metadata. Communication package. | Yes |  |
 | SMS (metadata) | Yes | No (OS) | Metadata. Communication package. | Yes |  |
 | Keyboard | Unclear | Unclear | Unclear | Unclear | Not verified against current documentation. |
-| Audio / microphone | Yes | Yes | Raw. Audio package. | Yes | Video and image packages also exist. |
+| Audio / microphone | Yes | Yes | Raw audio; derived noise level. Audio package. | Yes | Video and image packages also exist. |
 | Notifications | Unclear | Unclear | Unclear | Unclear | Not verified against current documentation. |
 | Device information | Unclear | Unclear | Unclear | Unclear | Not verified against current documentation. |
 
-**Verification.** Verified 2026-08-25 from carp.dk/cams, which names the sampling packages. CAMS is a Flutter library, so cross-platform support is a stated design goal, but per-stream parity was not checked and the iOS column follows OS restrictions where they are known. Sampling is configurable by construction, since the study app is written against the library.
+**Verification.** Rows for accelerometer, gyroscope, magnetometer, ambient light, screen, app usage, battery, Wi-Fi and Bluetooth Verified 2026-10-11 against docs.carp.dk's available-packages table, which marks ambient light, screen events, Wi-Fi, app lists, app usage, call logs and SMS as Android only, and the sensors package source for the 200 ms default [24][25]. Other rows Verified 2026-08-25 from carp.dk/cams, which names the sampling packages. Barometer, proximity, keyboard, notifications and device information remain unverified. Sampling is configurable per measure in the study protocol. Data uploads to CAWS every 10 minutes by default. Wearable sampling rates are set by the device SDKs and are not tabulated in the CARP docs.
+
+**Achieved coverage.** CARP's own 2025 coverage tests on Android 14 and iOS 18 found that both OSes pause or kill the app without user interaction, unless a BLE wearable keeps it running, so nominal rates are not achieved coverage [31].
+
+**Wearables and health records (Verified 2026-10-11) [24][29].** Polar accelerometer, gyroscope, magnetometer, ECG, PPI, PPG and HR; Movesense HR, ECG and IMU; Movisens (Android); eSense; Apple Watch via the AWARE watchOS package (iOS/watchOS only); Apple Health and Health Connect records, which are read only while the app is in the foreground with the phone unlocked. CARP Gardener, a server-side component, pulls Fitbit, Garmin, Withings and Dexcom cloud data; CARP's 2026-09-28 post describes it as for future studies, so it is existing code, not a live route in the Studies app [22][29]. The CARP Studies app collects a subset of the CAMS streams.
 
 ### Notes from earlier verification passes
 
@@ -68,10 +72,13 @@
 ## Derived Metrics / Analytics
 
 - Data-transformer components support standardized-format conversion and privacy-preserving transformation as part of the core framework, per the project's own materials, implying at least some built-in processing capability beyond raw pass-through, though a Forest-comparable derived-metrics catalog was not identified.
+- **On the phone (Verified 2026-10-11) [24][30].** Mobility features from location, accelerometer higher-order features over a window, OS activity recognition, noise level and light summaries.
+- **Participant-facing.** The CARP Studies app shows weekly cards for steps, heart rate, sleep, mobility and task progress [22].
+- **Server side.** CAWS lets researchers deploy Python analysis scripts to a data processing pipeline, and the `carp-dsp` repository provides a data-science pipeline framework [30]. No ready-made catalogue of clinical digital biomarkers is published.
 
 ## Active Data Collection
 
-- Not verified in any pass to date.
+- Surveys and cognitive tests are CAMS data sources and are collected by the CARP Studies app (Verified 2026-10-11) [22][24]. Scheduling, branching and EMA options were not verified.
 
 ## Researcher and Study Management Features
 
@@ -92,29 +99,38 @@
 - **What CARP says it does.** CARP's own pages describe it as the researcher interface for uploading JSON study protocols, creating and deploying studies, recruiting participants, managing running studies and downloading data as JSON. Protocols are written as JSON, or with `carp-cli`'s protocol editor, rather than built in a graphical form editor.
 - **Hosting.** It is not part of the CAMS app. It needs the CARP Web Services backend (`carp-webservices-spring`) and a Keycloak identity server, and ships as a Docker image built by GitHub Actions. Self-hosting means running all three, plus PostgreSQL, in Docker or Kubernetes. The alternative is DTU's hosted instance on DTU Computerome.
 - **Documentation.** The README covers developer setup and deployment only. No researcher user manual was found on carp.dk or in the repository.
-- **Conflict on who can use the hosted instance.** The CAWS page says "Researchers affiliated with DTU can use this service", on a best-effort basis with no uptime or data-integrity guarantee unless a contract says otherwise. The "Three ways to use CARP" page invites any researcher to email info@carp.dk for an account. Both are recorded here; neither states a price.
+- **Who can use the hosted instance (resolved 2026-10-11, Verified) [21].** The hosting terms page (carp.dk/hosting/, modified 2026-08-23) limits the service to research projects where DTU Health Tech is an active research partner, meaning DTU helped initiate the study, secure funding and define the protocol, and takes part in publication. Non-DTU researchers can use it only through such a partnership; teams that cannot accept this are pointed to self-hosting. The 2026-09-28 Studies app post repeats the rule [22]. The older CAWS page's "Researchers affiliated with DTU" wording is a narrower phrasing of the same rule, and the "Three ways" page's invitation to email info@carp.dk is a route to that conversation, not separate access terms. The page also publishes prices (see Pricing).
+- **Getting an account [35].** No form. Email info@carp.dk or support@carp.dk, or ask on Discord. Researcher portal accounts are by invitation, on a test server first and production when ready.
 - **Assessment.** The portal is a real, actively developed study-management dashboard covering protocols, deployments, participants, consent, data visualisation and export. It is not a configure-everything-in-the-browser product like Avicenna's. It has no versioned releases, no end-user documentation, and nothing found about adherence alerts or audit logs. It sits between "build it yourself" and a mature commercial dashboard. **Corroborated**: the page inventory is Verified from code, but feature depth was read from page names and vendor descriptions, not from running the portal.
 
 ## Data Access and Export
 
 - Standardized data-format output and privacy-preserving transformation are named framework features.
 - The CARP Web Portal lets researchers "download the collected data in JSON format" for offline analysis in R, Python or other tools (Verified 2026-10-10, "Three ways to use CARP", posted 2026-07-14). On the DTU-hosted service DTU is the data controller, and CAWS provides a Python library for writing analysis scripts that are deployed to its data-processing pipeline (CAWS page, read 2026-10-10).
+- **Export routes (Verified 2026-10-11).** Hosted or self-hosted CAWS offers Portal Export (JSON), the `carp-cli` command-line tool and its Python module, the CAWS REST API and the `carp_webservices` Dart client. A custom CAMS app can store locally (SQLite or zipped JSON), send to any endpoint through its own data manager, or use Firebase, which is not yet on API 2.x. Transformer schemas map data to Open mHealth and FHIR [28][36].
+- **History.** Collection is prospective from enrolment. Probes that read stored phone data (app usage, calls and texts) look back one day by default, configurable [24].
+- **Rate limits.** The only documented limit is on the public self sign-up endpoint, 20 requests per minute per IP by default and configurable by the server operator. No limits are published for upload, export or the rest of the REST API [27].
+- **Known upload bug.** An open issue (carp.sensing-flutter #623, read only) reports that one rejected measurement can make an upload batch retry forever; a fix is proposed in PR 624.
 
 ## APIs, SDKs, and Extensibility
 
+- **Deprecations (Verified 2026-10-11) [28].** CAMS API level 2.0 (2026-04-14) redesigned the architecture and restructured the packages. The CAWS legacy DataPoint upload endpoint and the old informed-consent endpoint are deprecated but still supported. The `dk.cachet.carp` data namespace is to change to `carp.dk` at an unannounced date. The CARP health plugin dropped Google Fit in version 11.0.0, though the 2026-07-14 "Three ways" post still lists a Google Fit integration. CARP Studies app version 5 (2026-09-28) replaced the earlier app.
+- **Custom apps on a CAWS server.** Whoever runs the server must register the app and issue a clientId and redirect URI [35].
 - This is CAMS's core identity and its clearest differentiator in this module: it is, by design, a programming framework/SDK rather than a configured product. Full MIT-licence source access (copyright DTU) allows unrestricted institutional modification. Real-world use spans mental health, cardiovascular disease, and diabetes mHealth applications, per the project's own "About" materials, evidence that multiple distinct research apps have been built on top of CAMS rather than it being single-study tooling.
 
 ## Deployment and Infrastructure
 
-- **Three routes (Verified 2026-10-10, carp.dk "Three ways to use CARP", posted 2026-07-14, and the CAWS page):**
-  - **DTU-hosted service:** runs "on DTU Computerome", and the managed environment "handles infrastructure, security, and data storage on your behalf"; the Web Portal lets hosted users "upload protocols, create studies, recruit participants, deploy studies, and manage ongoing studies". The CAWS page says "Researchers affiliated with DTU can use this service", on "a best-effort basis", with "No guarantees ... for system uptime or data integrity unless specified in project-specific contracts". The "Three ways" page tells researchers to email info@carp.dk to set up an account. No price is stated.
-  - **Self-hosted:** "deploy your own instance of CARP using our open-source components" (CARP Web Services, the Web Portal and the Studies App).
+- **Three routes (Verified 2026-10-10, carp.dk "Three ways to use CARP", posted 2026-07-14; hosted-service terms re-verified 2026-10-11 on carp.dk/hosting/):**
+  - **DTU-hosted service:** runs "on DTU Computerome", and the managed environment "handles infrastructure, security, and data storage on your behalf"; the Web Portal lets hosted users "upload protocols, create studies, recruit participants, deploy studies, and manage ongoing studies". The hosting terms limit it to research projects where DTU Health Tech is an active research partner, exclude clinical treatment and commercial services, and give no SLA or service guarantee of any kind (Verified 2026-10-11) [21]. Data is stored on DTU servers at Computerome in Denmark [22]. Prices are published (see Pricing). No commercial managed hosting is offered.
+  - **Self-hosted:** "deploy your own instance of CARP using our open-source components" (CARP Web Services, the Web Portal and the Studies App), on Docker or Kubernetes with PostgreSQL. The self-hoster is data controller and sets its own SLAs [21].
   - **Custom app:** build a Flutter app on CAMS and the other packages.
 - For the custom-app route a research team integrates the `carp_mobile_sensing` package into its own Flutter app and stands up whatever backend/storage infrastructure it needs. This requires genuine mobile-development capacity (Flutter/Dart), a different and arguably higher technical floor than configuring an existing dashboard-based platform, though lower than standing up a full backend like Beiwe's or RADAR-base's if the study doesn't need custom backend infrastructure.
 
 ## Participant Experience
 
-- Not verified in any pass to date.
+- **App (Verified 2026-10-11) [23].** CARP Studies is free on Google Play and on the App Store as an unlisted app reached only by link (iOS 15.0 or later). Version 5 was rebuilt from the ground up and announced 2026-09-28. In mainland China iOS users install through TestFlight. The App Store lists English and Danish; CARP's v5 post says English, Danish and Spanish.
+- **Enrolment [22][35].** One protocol serves any number of participants. Participants join by email invitation, one per person, or by self sign-up with a study code, where the researcher sets the maximum number of participants and can turn sign-up off.
+- **Background operation.** See the coverage note under Sensors and Data Streams: without user interaction both OSes paused or killed the app in CARP's 2025 tests [31].
 
 ### Background keepalive (added 2026-10-09)
 
@@ -124,11 +140,24 @@
 
 ## Privacy, Security, and Compliance
 
-- Privacy-preserving data transformation is named as a first-class framework capability (allowing e.g. on-device or pipeline-stage anonymization/aggregation before storage), which is architecturally notable, few other platforms in this module document this as a built-in framework feature rather than a per-study custom implementation. - **GDPR roles are documented (Verified 2026-10-10, "Three ways to use CARP"):** for the hosted service "DTU acts as a data controller", "DTU cannot act as a data processor" for a non-DTU controller, and data "stays within the EU/EEA by default". For self-hosting, "your institution is both data controller and data processor"; for a custom app the team carries the regulatory responsibility. No certification, HIPAA or SOC 2 claim was found.
+- Privacy-preserving data transformation is named as a first-class framework capability (allowing e.g. on-device or pipeline-stage anonymization/aggregation before storage), which is architecturally notable, few other platforms in this module document this as a built-in framework feature rather than a per-study custom implementation. - **GDPR roles are documented (Verified 2026-10-10, "Three ways to use CARP"):** for the hosted service "DTU acts as a data controller", "DTU cannot act as a data processor" for a non-DTU controller, and data "stays within the EU/EEA by default". For self-hosting, "your institution is both data controller and data processor"; for a custom app the team carries the regulatory responsibility.
+- **GDPR basis (Corroborated 2026-10-11) [21][26].** DTU processes hosted-service data under the GDPR and the Danish Data Protection Act, on the basis of GDPR Articles 6(1)(e), 9(2)(j) and 10.
+- **Data processing agreements (Corroborated 2026-10-11) [21].** The hosted service cannot be subject to a data processor contract with another organisation. Outside partners can receive selected data under a short disclosure contract, or become DTU's data processors under a full DTU-standard data processor agreement; otherwise only aggregate anonymous data is shared. Joint controllership is possible only rarely, in large funded projects. The setup fee covers a data disclosure agreement but not fuller data processing agreements.
+- **Retention, conflict (Unclear, 2026-10-11) [26].** DTU's study-app privacy policy keeps data as long as relevant to the study and for at least five years, and lets participants request erasure; on the phone data is kept only until upload. The CARP Studies Google Play data safety section, filed by DTU, says data can't be deleted and that there is no way to request deletion. Both are DTU statements, so this stays a conflict until DTU corrects one. Self-hosted CAWS keeps export files 7 days by default.
+- **AI training.** Not public. No AI or machine-learning training terms; the app policy allows use of personal data to improve CARP applications and services and says DTU never sells or donates personal data [26].
+- **Certifications and US regulation (not public, 2026-10-11).** No HIPAA statement or BAA, no ISO 27001 claim and no SOC 2 report was found for CARP; the hosting page says only that data management follows DTU's research data management principles. openFDA returned no matches for DTU or CARP on 2026-10-11 [32]. CARP's own guidance says the EU MDR may apply to custom clinical apps built on it.
 
 ## Pricing
 
-- Free and open source (MIT licence); no vendor licence fee. Cost is the adopting team's own development and infrastructure effort, or, for DTU-hosted studies, whatever a project-specific arrangement with DTU sets; neither carp.dk page states a price (checked 2026-10-10). No academic program beyond the hosted service was found.
+- Free and open source (MIT licence); no licence or API fee. Self-hosting and custom-app cost is the adopting team's own development and infrastructure effort.
+- **DTU-hosted service (Verified 2026-10-11) [21].** Follows DTU's co-financed research price model. 2024 prices in DKK:
+  - One-time study setup 45,000, including a data disclosure agreement but not fuller data processing agreements.
+  - Hosting and maintenance 1,250 per study per month.
+  - Staff time per month: student assistant 16,700, research assistant 68,100, researcher 78,000, senior researcher 105,000.
+  - A monthly Computerome operations fee.
+- Normally the cost is a budget line in the joint project budget; smaller projects may pay as they go at actual cost plus 44% overhead. Invoicing is typically yearly. The actual amount is agreed per project, since the service is only available through a research partnership. Prices are labelled 2024 and may have been indexed since.
+- **Minimum commitment.** Not public. No minimum term or amount is stated; the partnership requirement is the effective commitment.
+- **Funding.** The hosted service is funded in part by a DKK 5 million Novo Nordisk Foundation infrastructure grant (2023) [33]. No grant or membership program for outside teams was found.
 
 ## Research Evidence and Validation
 
@@ -145,7 +174,8 @@
 ## Strengths
 
 - Genuinely cross-platform (Flutter) by architectural design from the outset, rather than an Android-first codebase with a later iOS port (contrast with AWARE).
-- MIT licence, one of the more permissive open-source licences among the platforms profiled in this module. **Re-confirmed 2026-08-25** across multiple `carp-dk` repositories (`carp_study_app`, `carp.sensing-flutter`, `carp-webservices-spring`, `carp-cli`).
+- MIT licence, one of the more permissive open-source licences among the platforms profiled in this module. **Verified 2026-10-11** on seven `carp-dk` repositories via GitHub's licence API: `carp.sensing-flutter`, `carp-webservices-spring`, `carp-portal`, `carp_study_app`, `carp.core-kotlin`, `carp-gardener` and `carp-cli`, copyright Technical University of Denmark. Some newer repositories (`carp-docs-starlight`, `carp-dsp-portal`, `carp-app-site-ts`) declare no licence [34].
+- Published price list for the hosted service, unusual among academic platforms in this module [21].
 - Built-in privacy-preserving data-transformation support as a first-class framework feature, not a per-study bolt-on.
 - Demonstrated reuse across multiple distinct disease-domain research apps, evidencing real framework maturity rather than single-study tooling; a 2025 ACM UbiComp demonstration paper indicates continued current engagement.
 - **Materially expanded 2026-08-25**: named wearable integration now spans Movisens (ECG/EDA/activity), eSense, Polar, Movesense, and the Dexcom G7 CGM, not just "ECG monitor", plus confirmed Apple Health and Google Health Connect integration, a genuine differentiator versus other platforms in this module.
@@ -153,9 +183,10 @@
 
 ## Limitations
 
-- Using CAMS for a bespoke app means building a custom Flutter app, which requires real mobile-development capacity. The DTU-hosted service with the CARP Studies app and Web Portal avoids that, but is stated for DTU-affiliated researchers, on a best-effort basis.
+- Using CAMS for a bespoke app means building a custom Flutter app, which requires real mobile-development capacity. The DTU-hosted service with the CARP Studies app and Web Portal avoids that, but only for research projects where DTU Health Tech is an active research partner (helping initiate, fund and design the study and taking part in publication), research use only, with no SLA [21].
 - ~~No researcher-facing web dashboard/study-management product was identified~~, **revised 2026-08-25**: a `carp-portal` repository exists, but its feature completeness, documentation, and production-readiness were not independently verified this session, treat as "exists, depth unconfirmed" rather than "absent."
-- Full sensor-parity (iOS vs. Android, stream-by-stream) and compliance-certification detail were not independently verified this session.
+- Several phone streams are Android only: ambient light, screen events, Wi-Fi, app lists, app usage, calls and SMS [24]. Barometer, proximity, keyboard, notifications and device information were not verified. No HIPAA, ISO 27001 or SOC 2 claim is published.
+- Retention terms conflict between DTU's privacy policy and its Google Play data safety label (see Privacy) [26].
 - Smaller apparent ecosystem/community footprint than Beiwe, RADAR-base, or AWARE in general digital-phenotyping methods literature, GitHub signals checked this session (84 stars / 31 forks on the core Flutter sensing repo) are modest relative to the module's larger academic platforms, though this was not systematically benchmarked star-for-star.
 
 ## Best-Fit Use Cases
@@ -166,7 +197,8 @@
 
 ## Poor-Fit Use Cases
 
-- Teams without mobile-development capacity who cannot use the DTU-hosted service (stated for DTU-affiliated researchers) and need a configure-don't-code study app.
+- Teams without mobile-development capacity that cannot take DTU Health Tech on as an active research partner (the condition for the hosted service) and need a configure-don't-code study app.
+- Clinical treatment or commercial services on the hosted instance, which its terms exclude; such teams must self-host or build on the open-source packages [21].
 - Studies needing an existing, ready-to-use, well-documented researcher dashboard for participant/study management out of the box, `carp-portal` exists (see above) but its maturity relative to Beiwe's or Avicenna's dashboards was not established this session, so this remains a caution rather than a confirmed absence.
 - Rapid-timeline pilots where standing up a custom app is not feasible before enrollment.
 
@@ -174,19 +206,28 @@
 
 - *(Directed to: CARP / Jakob Bardram's group, DTU, via https://carp.dk/)*
 
-- ~~Does a companion researcher dashboard/study-management product exist?~~ **Resolved (existence) 2026-08-25**, `carp-portal` exists. ~~How feature-complete and documented is `carp-portal`?~~ Largely resolved 2026-10-09, see Researcher and Study Management Features. Still open: whether non-DTU researchers can get accounts on the hosted instance (the two carp.dk pages conflict), and at what cost.
+- ~~Does a companion researcher dashboard/study-management product exist?~~ **Resolved (existence) 2026-08-25**, `carp-portal` exists. ~~How feature-complete and documented is `carp-portal`?~~ Largely resolved 2026-10-09, see Researcher and Study Management Features. ~~Whether non-DTU researchers can get accounts on the hosted instance, and at what cost.~~ Resolved 2026-10-11: only through a research partnership with DTU Health Tech; 2024 rates are published on carp.dk/hosting/ (see Pricing).
 - ~~What is the full current wearable-integration catalog beyond ECG monitors?~~ **Resolved 2026-08-25**, see Sensors and Data Streams above (Movisens, eSense, Polar, Movesense, Dexcom G7, plus Apple Health/Google Health Connect).
 - ~~What GDPR/compliance documentation or guidance exists?~~ Partly answered 2026-10-10: controller and processor roles and EU/EEA residency are documented (see Privacy). No certification is claimed.
 - What export formats and backend-storage patterns are typical/recommended for CAMS deployments (the portal exports JSON, Verified 2026-10-10), and does `carp-webservices-spring` represent the standard/recommended backend, or one option among several?
 - ~~How many independent research groups outside DTU have built production studies on CAMS? Does the 2025 UbiComp demo include non-DTU authors?~~ Partly resolved 2026-10-09: one confirmed (KU Leuven, m-Path Sense); the demo authors are both DTU. An exhaustive count would need DTU's own list of adopters.
 - ~~Is DiaFocus built on CAMS?~~ Resolved 2026-10-09: yes, per CARP's own DiaFocus pages.
 
+## Vendor Fact Record
+
+<!-- facts:begin -->
+<!-- facts:end -->
+
 ## Key Links
 
 - Official site: https://carp.dk/
 - Three ways to use CARP: https://carp.dk/three-ways-to-use-carp/
-- CARP Web Services (hosted service terms): https://carp.dk/caws
+- Hosted service terms and prices: https://carp.dk/hosting/
+- CARP Web Services (CAWS): https://carp.dk/caws
+- Documentation: https://docs.carp.dk/
+- Privacy policy (study app): https://carp.dk/privacy-policy-app/
 - CARP Studies (Google Play): https://play.google.com/store/apps/details?id=dk.cachet.carp_study_app
+- CARP Studies (App Store, unlisted): https://apps.apple.com/dk/app/carp-studies/id1569798025
 - CARP Mobile Sensing (CAMS): https://carp.dk/cams/
 - CARP Core: https://carp.dk/core/
 - GitHub organization: https://github.com/carp-dk
@@ -215,3 +256,19 @@
 18. `carp-dk/carp-portal` package.json on the default branch and GitHub API repository metadata (accessed 2026-10-10). **Primary/Verified.** React 19, MUI 9, version 2.0.0.
 19. Google Play listing `dk.cachet.carp_study_app` ("CARP Studies", offered by Copenhagen Research Platform @ DTU Health Tech, updated 2026-10-06), direct fetch 2026-10-10. **Primary/Verified.**
 20. Europe PMC record for PMC12377514 (Lind et al. 2025), author affiliations (accessed 2026-10-10).
+21. CARP, "Hosting" (hosted service terms, modified 2026-08-23). https://carp.dk/hosting/ (accessed 2026-10-11). **Primary/Verified.** Research-partner eligibility, research-only use, 2024 rate table, no SLA, data disclosure and processor terms, DTU as controller, GDPR legal basis.
+22. CARP, "New CARP Studies app" (2026-09-28). https://carp.dk/new-carp-studies-app/ (accessed 2026-10-11). **Primary/Verified.** Version 5, Computerome storage in Denmark, collected streams, weekly cards, enrolment, CARP Gardener described as for future studies.
+23. CARP Studies on the App Store (id 1569798025, DK and US storefronts, plus iTunes lookup API) and Google Play; CARP, "CARP Studies app published in the Apple App Store"; CARP, "Join". https://apps.apple.com/dk/app/carp-studies/id1569798025 ; https://carp.dk/carp-studies-app-published-in-the-apple-app-store/ ; https://carp.dk/join/ (accessed 2026-10-11). **Primary/Verified.**
+24. docs.carp.dk: available sampling packages, measures and data, historic sampling configuration, health package configuration. https://docs.carp.dk/carp-mobile-sensing/sampling-packages/available-packages/ ; https://docs.carp.dk/carp-mobile-sensing/domain/measures-and-data/ ; https://docs.carp.dk/api/carp_mobile_sensing/domain/historicsamplingconfiguration/ ; https://docs.carp.dk/sampling-packages/health/configure/ (accessed 2026-10-11). **Primary/Verified.**
+25. `carp-dk/carp.sensing-flutter`, sensors sampling package source (`sensor_package.dart`), 200 ms default interval. https://github.com/carp-dk/carp.sensing-flutter/blob/main/carp_mobile_sensing/lib/infrastructure/sampling_packages/sensors/sensor_package.dart (accessed 2026-10-11). **Primary/Verified.**
+26. CARP privacy policies (study app and service); CARP Studies Google Play data safety section; `carp-webservices-spring` `application.yml` export retention default. https://carp.dk/privacy-policy-app/ ; https://carp.dk/privacy-policy-service/ ; https://play.google.com/store/apps/datasafety?id=dk.cachet.carp_study_app ; https://github.com/carp-dk/carp-webservices-spring/blob/develop/src/main/resources/config/application.yml (accessed 2026-10-11). **Primary/Verified.**
+27. `carp-webservices-spring`, self sign-up documentation. https://github.com/carp-dk/carp-webservices-spring/blob/develop/docs/ws-self-signup.md (accessed 2026-10-11). **Primary/Verified.** 20 requests per minute per IP default.
+28. CARP, "CARP Mobile Sensing API 2.0 released"; `carp_webservices` backend README; docs.carp.dk data managers; `carp-health-flutter` README. https://carp.dk/carp-mobile-sensing-api-2-0-released/ ; https://github.com/carp-dk/carp.sensing-flutter/blob/main/backends/carp_webservices/README.md ; https://docs.carp.dk/carp-mobile-sensing/infrastructure/data-managers/ ; https://github.com/carp-dk/carp-health-flutter (accessed 2026-10-11). **Primary/Verified.** Deprecations.
+29. `carp-dk/carp_aware_package` and `carp-dk/carp-gardener` repositories. https://github.com/carp-dk/carp_aware_package ; https://github.com/carp-dk/carp-gardener (accessed 2026-10-11). **Primary/Verified.**
+30. CARP, "CARP Web Services (CAWS)", and `carp-dk/carp-dsp`. https://carp.dk/caws/ ; https://github.com/carp-dk/carp-dsp (accessed 2026-10-11). **Primary/Verified.** Python analysis pipeline; data-science framework.
+31. CARP, "Coverage analysis on Android 14 and iOS 18." https://carp.dk/coverage-analysis-on-android-14-and-ios-18/ (accessed 2026-10-11). **Primary/Verified.**
+32. openFDA 510(k), PMA and registration searches for Technical University of Denmark and CARP, no matches (accessed 2026-10-11). https://api.fda.gov/device/510k.json?search=applicant:%22Technical+University+of+Denmark%22
+33. CARP, "Funding from the Novo Nordisk Foundation." https://carp.dk/funding-from-the-novo-nordisk-foundation/ (accessed 2026-10-11). **Primary/Verified.** DKK 5 million infrastructure grant.
+34. GitHub licence API for seven `carp-dk` repositories; LICENSE files in `carp.sensing-flutter`, `carp-webservices-spring` and `carp-portal` (accessed 2026-10-11). **Primary/Verified.** MIT.
+35. docs.carp.dk "Go live" and "CAWS" backend pages; docs.carp.dk CARP Mobile Sensing overview. https://docs.carp.dk/start/run-your-study/go-live/ ; https://docs.carp.dk/backends/where-data-goes/caws/ ; https://docs.carp.dk/carp-mobile-sensing/ (accessed 2026-10-11). **Primary/Verified.** Account process, participant sign-up, app registration on a CAWS server.
+36. Export route sources: CARP "Three ways to use CARP" and `carp-dk/carp-cli` README. https://carp.dk/three-ways-to-use-carp/ ; https://github.com/carp-dk/carp-cli (accessed 2026-10-11). **Primary/Verified.**
