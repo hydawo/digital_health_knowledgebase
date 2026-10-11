@@ -6240,240 +6240,1273 @@
   "name": "Ametris (ActiGraph), a Signant Health company",
   "kind": "wearable",
   "field": "research_program",
-  "status": "unresearched",
-  "sources": []
+  "scope": "Academic channel",
+  "status": "stated",
+  "value": "No formal named research program with an application. Ametris runs an academic and public health research channel (academic.ametris.com): an academic team to contact, an academic online store, a pricing list on request, a grant toolkit and an open-source dataset library.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "A one-off research grant was announced in August 2022; no current grant call found. Ametris says NHANES selected the LEAP for its 2027-2030 cohort (blog.ametris.com/blog/actigraph-wearables-support-nhanes-2027, 2025-02-26; not confirmed on a CDC page). Ametris also runs pharma-member DECODE working groups on digital endpoints, with no academic membership route described.",
+  "sources": [
+   {
+    "url": "https://academic.ametris.com/",
+    "type": "vendor_page",
+    "quote": "Connect with a member of our academic and public health research team to discuss your specific research needs.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://academic.ametris.com/grant-toolkit",
+    "type": "vendor_page",
+    "quote": "This toolkit is designed to facilitate the application submission process by gathering information in one place for quick and convenient access.",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "research_program",
+  "scope": "Accelerant Partnership Program (CROs and technology partners)",
+  "status": "stated",
+  "value": "A three-tier partner program for CROs and technology vendors that resell or deliver Ametris technology to trial sponsors. The middle tier (Accelerant API) includes API integration and access to raw study data. Not aimed at academic investigators.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://ametris.com/partnerships",
+    "type": "vendor_page",
+    "quote": "The Ametris Accelerant ™ Partnership Program was developed to better enable our CRO and technology partners to sell and deliver our digital health technology (DHT) solutions to clinical trial sponsors.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://ametris.com/partnerships",
+    "type": "vendor_page",
+    "quote": "Comprehensive technology partnership to help trials run smoothly with full support, API integration, and access to raw study data.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "ametris-actigraph",
   "name": "Ametris (ActiGraph), a Signant Health company",
   "kind": "wearable",
   "field": "program_eligibility",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Online purchasing in the academic store is limited to academic institutions with existing client accounts (accredited universities, research institutions, healthcare organizations, government research centers). International buyers go through authorized resellers. The LEAP is sold for clinical research as a prescription device.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://store.ametris.com/",
+    "type": "vendor_page",
+    "quote": "Online purchasing through our store is currently available only to academic institutions with existing client accounts.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://store.ametris.com/",
+    "type": "vendor_page",
+    "quote": "This includes accredited universities, research institutions, healthcare organizations, and government research centers.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://store.ametris.com/",
+    "type": "vendor_page",
+    "quote": "International customers are encouraged to visit our International Resellers page to find a local authorized reseller for product pricing, availability, and sales support.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://blog.ametris.com/blog/leap-faq",
+    "type": "vendor_page",
+    "quote": "The ActiGraph LEAP is available globally for use in clinical research as prescription use only.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "ametris-actigraph",
   "name": "Ametris (ActiGraph), a Signant Health company",
   "kind": "wearable",
   "field": "program_application",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No application or review step is published. Researchers contact the academic team, request a quote or the pricing list, or schedule a meeting. CentrePoint API access is enabled per customer on request.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://academic.ametris.com/",
+    "type": "vendor_page",
+    "quote": "Store and Pricing Schedule a Meeting",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/actigraph/CentrePoint3APIDocumentation",
+    "type": "vendor_docs",
+    "quote": "Enabling API Access Please contact ActiGraph for more information.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "ametris-actigraph",
   "name": "Ametris (ActiGraph), a Signant Health company",
   "kind": "wearable",
   "field": "program_status",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Academic channel and store live under the Ametris name as of 2026-10-11. Signant Health announced a definitive agreement to acquire Ametris on 2026-04-16 and announced the acquisition on 2026-05-14. Signant says the combined company will keep Ametris' roadmap.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "The 14 May 2026 release says \"announced its acquisition\"; it does not use the word \"completed\" and gives no closing date. Treating May 2026 as the completion month is an inference from the April agreement plus the May announcement. ActiGraph rebranded as Ametris in June 2025.",
+  "sources": [
+   {
+    "url": "https://store.ametris.com/",
+    "type": "vendor_page",
+    "quote": "Welcome to our Public Health and Academic Research Online Store",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://signanthealth.com/company/news/signant-health-enters-definitive-agreement-to-acquire-ametris",
+    "type": "vendor_page",
+    "quote": "today announced that it has entered into a definitive agreement to acquire Ametris (formerly ActiGraph)",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://signanthealth.com/company/news/signant-health-acquires-ametris",
+    "type": "vendor_page",
+    "quote": "Signant Health , the evidence generation company, today announced its acquisition of Ametris (formerly ActiGraph)",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://blog.ametris.com/news/signant-health-acquires-ametris-to-create-an-end-to-end-ecoa-and-wearables-platform",
+    "type": "vendor_page",
+    "quote": "The combined company will maintain Ametris' innovation roadmap while investing significantly in platform integration capabilities.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "ametris-actigraph",
   "name": "Ametris (ActiGraph), a Signant Health company",
   "kind": "wearable",
   "field": "developer_program_status",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No self-serve developer program. The CentrePoint V3 API (OAuth 2.0) is documented publicly on GitHub, but access is enabled per customer by contacting the company, and it reaches only CentrePoint study data the client can already see. The V2 (Study Admin) API is still supported with separate credentials. CROs and technology vendors can get API and raw-data access through the Accelerant partner program.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "RADAR-base has an open roadmap issue (RADAR-REST-Connector issue 153, opened 2024-12-16) for a LEAP connector via the CentrePoint API; no shipped third-party connector was found.",
+  "sources": [
+   {
+    "url": "https://github.com/actigraph/CentrePoint3APIDocumentation",
+    "type": "vendor_docs",
+    "quote": "Enabling API Access Please contact ActiGraph for more information.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/actigraph/CentrePoint3APIDocumentation",
+    "type": "vendor_docs",
+    "quote": "The CentrePoint API uses OAuth 2.0 for its authorization flow.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/actigraph/CentrePointIntegrationGuide",
+    "type": "vendor_docs",
+    "quote": "ActiGraph continues to support the CentrePoint V2 API",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "ametris-actigraph",
   "name": "Ametris (ActiGraph), a Signant Health company",
   "kind": "wearable",
   "field": "user_cap",
-  "status": "unresearched",
-  "sources": []
+  "scope": "ActiLife licences",
+  "status": "stated",
+  "value": "ActiLife licences are tiered by activations, from Single (1 full, 5 lite) to Large Enterprise (15 full, 20 lite).",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://academic.ametris.com/actilife",
+    "type": "vendor_page",
+    "quote": "Single 1 Full Activation 5 Lite Activations Small Enterprise 5 Full Activation 10 Lite Activations Medium Enterprise 10 Full Activation 15 Lite Activations Large Enterprise 15 Full Activation 20 Lite Activations",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "user_cap",
+  "scope": "CentrePoint",
+  "status": "not_public",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "No participant, device or study limits are published for CentrePoint.",
+  "sources": [
+   {
+    "url": "https://academic.ametris.com/centrepoint",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/actigraph/CentrePoint3APIDocumentation",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://store.ametris.com/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "ametris-actigraph",
   "name": "Ametris (ActiGraph), a Signant Health company",
   "kind": "wearable",
   "field": "academic_vs_commercial",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Academic and population-health customers have a separate site, academic store and academic team, and can choose cloud CentrePoint or desktop ActiLife; LEAP is offered to academics in Core, Pro and Advanced configurations. Industry trials are served through ametris.com with operational and scientific support. Both are priced by quote; how academic prices or terms differ is not published.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "For sponsors, a combined Ametris DHT plus Signant eCOA offering for CNS trials was announced on 2026-03-10, before the acquisition; AliveCor ECG and Kayentis eCOA integrations were announced in early 2026.",
+  "sources": [
+   {
+    "url": "https://academic.ametris.com/",
+    "type": "vendor_page",
+    "quote": "We offer the flexibility of two powerful software platforms to meet the diverse needs of our academic research clients.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://academic.ametris.com/actigraph-leap",
+    "type": "vendor_page",
+    "quote": "LEAP is available in multiple configurations to help academic teams choose the sensor capabilities, digital measures, and study workflows",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://ametris.com/",
+    "type": "vendor_page",
+    "quote": "Ametris provides wearable digital health technology (DHT), along with integrated scientific and operational support, to help clinical teams capture real-world data that accurately reflects patient functioning.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "ametris-actigraph",
   "name": "Ametris (ActiGraph), a Signant Health company",
   "kind": "wearable",
   "field": "device_price",
-  "status": "unresearched",
-  "sources": []
+  "scope": "Vendor list prices",
+  "status": "not_public",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "The academic store lists only accessories (for example LEAP wristband 25.00 USD, CPIW charging dock 45.00 USD). A competitor (Fibion, 2024) repeats an unverified forum figure of about 600 USD for the LEAP; not used.",
+  "sources": [
+   {
+    "url": "https://store.ametris.com/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://academic.ametris.com/actigraph-leap",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://academic.ametris.com/cpiw",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://academic.ametris.com/actigraph-wgt3x-bt",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "device_price",
+  "scope": "ActiGraph LEAP, one reseller quote, Czech Republic, July 2025",
+  "status": "stated",
+  "value": "CZK 15,625 per LEAP device for 190 units (watchband CZK 875, charger CZK 1,500 each), quoted 2025-07-17 by reseller ProCare B.V. to Palacký University Olomouc. The same quote has a 3-year ActiLife 7 Single licence at CZK 136,750 and a CZK 1,067,025 discount on the CZK 3,556,750 subtotal (total CZK 2,489,725 excl. VAT). One academic order through a European reseller; not a list price.",
+  "confidence": "Reported",
+  "recheck_by": "2026-11-09",
+  "note": "Quotation 31576, attached to a public Czech contract-registry record. Prices are in CZK, excluding VAT, and are not converted here because no dated exchange rate is recorded. The discount is about 30% of the subtotal and applies to the whole order, so the per-device net price is not stated.",
+  "sources": [
+   {
+    "url": "https://smlouvy.gov.cz/smlouva/soubor/42219929/ProCare_BV_FPC_UPOL__Scientific_accelerometers_II._priloha_Redigo.pdf",
+    "type": "secondary",
+    "quote": "605081 Actigraph LEAP Device 190 st. 15.625,00 2.968.750,00",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://smlouvy.gov.cz/smlouva/soubor/42219929/ProCare_BV_FPC_UPOL__Scientific_accelerometers_II._priloha_Redigo.pdf",
+    "type": "secondary",
+    "quote": "Discount CZK 1.067.025,00",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "ametris-actigraph",
   "name": "Ametris (ActiGraph), a Signant Health company",
   "kind": "wearable",
   "field": "subscription_price",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_applicable",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "No consumer product or membership. CentrePoint is priced per quoted order (see api_platform_fees); ActiLife licences became perpetual on 2025-07-30, with optional paid coverage plans.",
+  "sources": [
+   {
+    "url": "https://store.ametris.com/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "ametris-actigraph",
   "name": "Ametris (ActiGraph), a Signant Health company",
   "kind": "wearable",
   "field": "academic_pricing",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "The academic site offers a \"Get Pricing List\" form (not followed); the list is not public and no academic discount is stated. The one real academic order found (device_price, Czech reseller quote, July 2025) carried a discount of about 30%.",
+  "sources": [
+   {
+    "url": "https://academic.ametris.com/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://store.ametris.com/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "ametris-actigraph",
   "name": "Ametris (ActiGraph), a Signant Health company",
   "kind": "wearable",
   "field": "api_platform_fees",
-  "status": "unresearched",
-  "sources": []
+  "scope": "CentrePoint API",
+  "status": "stated",
+  "value": "CentrePoint licence and API fees are not published. The API documentation says generating historical data access files may carry fees if the study was not set up for them.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://github.com/actigraph/CentrePoint3APIDocumentation/blob/main/sections/raw_data_request.md",
+    "type": "vendor_docs",
+    "fetch_url": "https://raw.githubusercontent.com/actigraph/CentrePoint3APIDocumentation/main/sections/raw_data_request.md",
+    "quote": "There may be fees associated for historical data access file generation if the study has not been previously setup.",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "api_platform_fees",
+  "scope": "ActiLife licences",
+  "status": "stated",
+  "value": "ActiLife is sold in activation tiers by quote. All active licences were converted to perpetual licences on 2025-07-30. New licences include one year of maintenance and service; paid coverage plans (support, file repair, updates, Data Vault storage) are offered for existing licences.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "A July 2025 reseller quote priced a 3-year ActiLife 7 Single licence at CZK 136,750 (see device_price), 13 days before the perpetual conversion.",
+  "sources": [
+   {
+    "url": "https://academic.ametris.com/actilife",
+    "type": "vendor_page",
+    "quote": "Interested in Purchasing ActiLife? Request a Quote",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://blog.theactigraph.com/blog/faq-actilife7-upgrade",
+    "type": "vendor_page",
+    "quote": "All active ActiLife licenses have been automatically converted to a perpetual license on July 30 th , 2025.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://blog.theactigraph.com/blog/faq-actilife7-upgrade",
+    "type": "vendor_page",
+    "quote": "Yes, Ametris will be offering coverage plans for existing ActiLife licenses.",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "api_platform_fees",
+  "scope": "ActiLife Data Vault storage",
+  "status": "conflict",
+  "value": "The ActiLife product page and the ActiLife 7 upgrade FAQ say licences or coverage plans include 20GB of Data Vault storage; the ActiLife 7 User's Manual (Revision I, effective 2026-01-30) says ActiLife 7 users get 4GB free.",
+  "confidence": "Unclear",
+  "recheck_by": "2026-11-09",
+  "note": "One possible reading is 4GB as the base allowance and 20GB while maintenance or a coverage plan is active, but no page says so. Ask Ametris.",
+  "sources": [
+   {
+    "url": "https://academic.ametris.com/actilife",
+    "type": "vendor_page",
+    "quote": "All ActiLife software licenses are automatically covered by Ametris' maintenance and service program for one year from the date of purchase, which includes access to all features updates and bug fixes, and 20GB of free Data Vault storage.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://blog.theactigraph.com/blog/faq-actilife7-upgrade",
+    "type": "vendor_page",
+    "quote": "20GB of Datavault Storage",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://ametris.com/hubfs/User%20Manuals/ActiLife%207%20Users%20Manual.pdf",
+    "type": "vendor_docs",
+    "quote": "ActiLife 7 users receive 4GB of free space.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "ametris-actigraph",
   "name": "Ametris (ActiGraph), a Signant Health company",
   "kind": "wearable",
   "field": "minimum_commitment",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://academic.ametris.com/cpiw",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://academic.ametris.com/actilife",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://academic.ametris.com/centrepoint",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://store.ametris.com/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "ametris-actigraph",
   "name": "Ametris (ActiGraph), a Signant Health company",
   "kind": "wearable",
   "field": "quote_required",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Yes. Devices, CentrePoint and ActiLife are priced per order by quote; international buyers go through authorized resellers.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://academic.ametris.com/cpiw",
+    "type": "vendor_page",
+    "quote": "Pricing is calculated for each unique order. For a price quote or more information, please contact our team directly",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://academic.ametris.com/actigraph-wgt3x-bt",
+    "type": "vendor_page",
+    "quote": "Pricing is calculated for each unique order.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://academic.ametris.com/actilife",
+    "type": "vendor_page",
+    "quote": "Interested in Purchasing ActiLife? Request a Quote",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "ametris-actigraph",
   "name": "Ametris (ActiGraph), a Signant Health company",
   "kind": "wearable",
   "field": "raw_streams",
-  "status": "unresearched",
-  "sources": []
+  "scope": "CentrePoint API",
+  "status": "stated",
+  "value": "Data Access Files by category: raw accelerometer for all devices, plus temperature, green PPG at 25 Hz or 100 Hz, red/IR PPG at 50 Hz, barometer and IMU only for certain devices, firmware, study configurations and contracts. Delivered as day files in CSV or AVRO.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://github.com/actigraph/CentrePoint3APIDocumentation/blob/main/sections/data_access_files.md",
+    "type": "vendor_docs",
+    "fetch_url": "https://raw.githubusercontent.com/actigraph/CentrePoint3APIDocumentation/main/sections/data_access_files.md",
+    "quote": "Data category is only available for certain devices, firmware versions, and study configuration, and it is subject to contract restrictions.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/actigraph/CentrePoint3APIDocumentation/blob/main/sections/data_access_files.md",
+    "type": "vendor_docs",
+    "fetch_url": "https://raw.githubusercontent.com/actigraph/CentrePoint3APIDocumentation/main/sections/data_access_files.md",
+    "quote": "ppg-red-ir-50-hz",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "raw_streams",
+  "scope": "Devices and ActiLife",
+  "status": "stated",
+  "value": "LEAP sensors: accelerometer, gyroscope, PPG (green, red, IR), skin temperature, barometer and a microphone that is off by default. wGT3X-BT: raw acceleration collected at 30 to 100 Hz and transferred to researchers. Raw device files can be processed locally in ActiLife; ActiLife 7 also processes LEAP PPG, which ActiLife 6 cannot.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "Which LEAP sensors are active depends on the configuration (Core, Pro, Advanced); per the academic LEAP page, Pro has green PPG only and Advanced has multiwave (red and green) PPG.",
+  "sources": [
+   {
+    "url": "https://academic.ametris.com/actigraph-leap",
+    "type": "vendor_page",
+    "quote": "Accelerometry Gyroscope Photoplethysmography (PPG) Skin Temperature Barometer Microphone Capabilities",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://ametris.com/actigraph-leap",
+    "type": "vendor_page",
+    "quote": "Microphone sensor is disabled by default and would only be activated for specific use cases.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://academic.ametris.com/actigraph-wgt3x-bt",
+    "type": "vendor_page",
+    "quote": "Participant raw data can be collected at sample rates ranging from 30Hz-100Hz and transferred directly to researchers for analysis.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://blog.theactigraph.com/blog/faq-actilife7-upgrade",
+    "type": "vendor_page",
+    "quote": "No, PPG sensor data from the ActiGraph LEAP can only be processed in ActiLife 7.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "ametris-actigraph",
   "name": "Ametris (ActiGraph), a Signant Health company",
   "kind": "wearable",
   "field": "derived_metrics",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "CentrePoint: minute (epoch) summaries, daily statistics, sleep periods and event markers covering steps, wear, sleep, energy expenditure and activity-intensity cut points. ActiLife scores data with published algorithms. LEAP vital signs (HR, HRV, skin temperature, AF/cardiac rhythm, SpO2, respiratory rate) and gait and balance measures need Scientific Services and are investigational; the LEAP 510(k) covers activity, sleep and mobility only. Partner algorithms (Hyfe cough, PKG by Empatica, Mobilise-D, CSEM vital signs) run in the Ametris platform.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://github.com/actigraph/CentrePointIntegrationGuide",
+    "type": "vendor_docs",
+    "fetch_url": "https://raw.githubusercontent.com/actigraph/CentrePointIntegrationGuide/master/README.md",
+    "quote": "Retrieve subject analytics data (i.e. CPW01 event markers, sleep periods, and minute/daily summary data which encapsulates steps, wear, sleep, energy expenditure, activity intensity classifications/cut points, etc.)",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://ametris.com/actigraph-leap",
+    "type": "vendor_page",
+    "quote": "Oxygen Saturation (SpO2)",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://ametris.com/actigraph-leap",
+    "type": "vendor_page",
+    "quote": "The ActiGraph LEAP is US FDA 510(k) cleared for the measurement of activity, sleep, and mobility. Additional vital signs are for investigational use only.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://ametris.com/algorithm-marketplace",
+    "type": "vendor_page",
+    "quote": "Capture clinically validated digital mobility outcomes using the latest Mobilise-D algorithms",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "ametris-actigraph",
   "name": "Ametris (ActiGraph), a Signant Health company",
   "kind": "wearable",
   "field": "sampling_rates",
-  "status": "unresearched",
-  "sources": []
+  "scope": "ActiGraph LEAP",
+  "status": "stated",
+  "value": "Accelerometer 32 to 256 Hz (32 Hz default); battery 1 to 32 days depending on configuration.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "The LEAP Instructions for Use (Rev 3, released 2024-12-04) give about 32 days at the default 32 Hz, accelerometer only, display on 48 times a day. One older spec block on ametris.com/actigraph-leap still says 30 days.",
+  "sources": [
+   {
+    "url": "https://academic.ametris.com/actigraph-leap",
+    "type": "vendor_page",
+    "quote": "Sample Rate 32-256 Hz",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://academic.ametris.com/actigraph-leap",
+    "type": "vendor_page",
+    "quote": "Battery Life 1-32 Days",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "sampling_rates",
+  "scope": "CentrePoint Insight Watch",
+  "status": "stated",
+  "value": "32 to 256 Hz raw acceleration",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://academic.ametris.com/cpiw",
+    "type": "vendor_page",
+    "quote": "Sample Rate: 32-256 Hertz",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "sampling_rates",
+  "scope": "ActiGraph wGT3X-BT",
+  "status": "stated",
+  "value": "30 to 100 Hz raw acceleration",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://academic.ametris.com/actigraph-wgt3x-bt",
+    "type": "vendor_page",
+    "quote": "Sample Rate: 30-100 Hertz",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "sampling_rates",
+  "scope": "CentrePoint API files and summaries",
+  "status": "stated",
+  "value": "Green PPG at 25 Hz or 100 Hz; red/IR PPG at 50 Hz; epoch summaries at 15, 30 or 60 seconds.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://github.com/actigraph/CentrePoint3APIDocumentation/blob/main/sections/data_access_files.md",
+    "type": "vendor_docs",
+    "fetch_url": "https://raw.githubusercontent.com/actigraph/CentrePoint3APIDocumentation/main/sections/data_access_files.md",
+    "quote": "ppg-green (25hz)",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/actigraph/CentrePointIntegrationGuide",
+    "type": "vendor_docs",
+    "fetch_url": "https://raw.githubusercontent.com/actigraph/CentrePointIntegrationGuide/master/README.md",
+    "quote": "Dynamically retrieve EPOCH summary records with a variable summary length (i.e. 15-sec, 30-sec, or 60-sec epoch length)",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "ametris-actigraph",
   "name": "Ametris (ActiGraph), a Signant Health company",
   "kind": "wearable",
   "field": "history_depth",
-  "status": "unresearched",
-  "sources": []
+  "scope": "On-device storage",
+  "status": "stated",
+  "value": "LEAP 79 days / 1 GB at the default 32 Hz with the accelerometer only; CentrePoint Insight Watch 30 days / 512 MB; wGT3X-BT 180 days / 4 GB.",
+  "confidence": "Corroborated",
+  "recheck_by": "2026-11-09",
+  "note": "LEAP: ametris.com/actigraph-leap carries two spec blocks, one saying \"Data Storage: 30 Days / 1GB\" and one saying 79 days. The 79-day figure is backed by the LEAP Instructions for Use (Model LEAP E.200.6025, Rev 3, released 2024-12-04), found as an attachment to a public Czech procurement record, and by every configuration on the academic LEAP page, so the record takes 79 days and treats the 30-day block as an unexplained older figure. Corroborated rather than Verified because the vendor page still contradicts itself and the IFU was read from a third-party copy.",
+  "sources": [
+   {
+    "url": "https://smlouvy.gov.cz/smlouva/soubor/42219929/ProCare_BV_FPC_UPOL__Scientific_accelerometers_II._priloha_Redigo.pdf",
+    "type": "secondary",
+    "quote": "Data Storage 79 Days / 1 GB*",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://academic.ametris.com/actigraph-leap",
+    "type": "vendor_page",
+    "quote": "Data Storage 1-79 Days / 1 GB",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://ametris.com/actigraph-leap",
+    "type": "vendor_page",
+    "quote": "Data Storage: 79 Days / 1GB",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://academic.ametris.com/cpiw",
+    "type": "vendor_page",
+    "quote": "Data Storage: 30 Days / 512MB",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://academic.ametris.com/actigraph-wgt3x-bt",
+    "type": "vendor_page",
+    "quote": "Data Storage: 180 Days / 4GB",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "history_depth",
+  "scope": "CentrePoint cloud",
+  "status": "unclear",
+  "value": "No limit on how far back CentrePoint data can be retrieved is published. Raw GT3X-format requests are capped at 15-day windows and must not be used to pull a whole study's history; historical data access files may carry a fee if not set up for the study.",
+  "confidence": "Unclear",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://github.com/actigraph/CentrePoint3APIDocumentation/blob/main/sections/raw_data_request.md",
+    "type": "vendor_docs",
+    "fetch_url": "https://raw.githubusercontent.com/actigraph/CentrePoint3APIDocumentation/main/sections/raw_data_request.md",
+    "quote": "RAW data retrieval requests SHALL NOT be performed to retrieve ALL the historic RAW data for all subjects in a given study.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://academic.ametris.com/centrepoint",
+    "type": "vendor_page",
+    "quote": "CentrePoint generates future-proof raw sensor data that can be reprocessed indefinitely as new methods emerge.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "ametris-actigraph",
   "name": "Ametris (ActiGraph), a Signant Health company",
   "kind": "wearable",
   "field": "export_routes",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "CentrePoint: web portal; V3 REST API (OAuth 2.0) with daily Data Access Files in gzipped CSV or AVRO, raw requests in GT3X, CSV or AVRO, summaries and webhooks that push daily statistics; the V2 API is still supported. ActiLife: local desktop processing of downloaded device files with consolidated CSV export, plus Data Vault cloud storage. ActiGraph publishes the .gt3x file format and open-source readers on GitHub.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "Other official repositories include agcounts (ActiLife counts in Python), actiapi (CentrePoint API client) and vertdetach (DETACH non-wear algorithm). The CentrePoint Connect iOS participant app requires iOS 18 or later.",
+  "sources": [
+   {
+    "url": "https://github.com/actigraph/CentrePoint3APIDocumentation/blob/main/sections/data_access_files.md",
+    "type": "vendor_docs",
+    "fetch_url": "https://raw.githubusercontent.com/actigraph/CentrePoint3APIDocumentation/main/sections/data_access_files.md",
+    "quote": "Downloaded files in CSV format will be a ZIP folder containing a GZipped CSV file.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/actigraph/CentrePointIntegrationGuide",
+    "type": "vendor_docs",
+    "fetch_url": "https://raw.githubusercontent.com/actigraph/CentrePointIntegrationGuide/master/README.md",
+    "quote": "Ability to *PUSH* day-level analytics data (or subject daily aggregates/statistics) via the [Daily Statistics Complete Event]",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://academic.ametris.com/actilife",
+    "type": "vendor_page",
+    "quote": "Export scored daily, hourly and summary data for multiple datasets and subjects as a single consolidated CSV file.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/actigraph/GT3X-File-Format",
+    "type": "repository",
+    "quote": "Documentation of the ActiGraph .gt3x file format",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/actigraph/pygt3x",
+    "type": "repository",
+    "quote": "Python module for reading GT3X/AGDC file format data",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "ametris-actigraph",
   "name": "Ametris (ActiGraph), a Signant Health company",
   "kind": "wearable",
   "field": "rate_limits",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "CentrePoint V3 API: more than 500 requests a minute from one IP returns HTTP 429. Raw data requests: at most 10 active at once, GT3X ranges limited to 15 days. V2 API: an unpublished daily request limit.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://github.com/actigraph/CentrePoint3APIDocumentation",
+    "type": "vendor_docs",
+    "fetch_url": "https://raw.githubusercontent.com/actigraph/CentrePoint3APIDocumentation/main/README.md",
+    "quote": "If an API consumer exceeds 500 requests within a minute, then the API will block any further requests with a 429 response code.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/actigraph/CentrePoint3APIDocumentation/blob/main/sections/raw_data_request.md",
+    "type": "vendor_docs",
+    "fetch_url": "https://raw.githubusercontent.com/actigraph/CentrePoint3APIDocumentation/main/sections/raw_data_request.md",
+    "quote": "Due to the heavy computation required to create a file in the GT3X format, the time range for GT3X format requests is limited to 15 days. A maximum of 10 active requests are allowed at one time.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/actigraph/StudyAdminAPIDocumentation",
+    "type": "vendor_docs",
+    "fetch_url": "https://raw.githubusercontent.com/actigraph/StudyAdminAPIDocumentation/master/README.md",
+    "quote": "This API is request limited. We only allow a certain number of requests per day.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "ametris-actigraph",
   "name": "Ametris (ActiGraph), a Signant Health company",
   "kind": "wearable",
   "field": "retention_terms",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Ametris acts as data processor for the study organization (controller). Personal data is kept in identifiable form only as long as it serves a processing purpose; customer removal requests are answered within 30 days, and participants must send access or deletion requests to the sponsor. No fixed retention period for study data is published.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "The first quote keeps the policy's own typo (\"Ametirs\"). Policy last updated 20 Feb 2025, before the Signant acquisition.",
+  "sources": [
+   {
+    "url": "https://ametris.com/privacy-policy",
+    "type": "vendor_legal",
+    "quote": "Ametirs takes reasonable and appropriate measures to retain Personal Data in identifiable form only for as long as it serves a purpose of processing",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://ametris.com/privacy-policy",
+    "type": "vendor_legal",
+    "quote": "The organization using Services to conduct the trial or study is the Data Controller.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://ametris.com/privacy-policy",
+    "type": "vendor_legal",
+    "quote": "For Data Subject participating in clinical trials, contact the trial sponsor not Ametris with requests for access, correction, amendment, or deletion.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "ametris-actigraph",
   "name": "Ametris (ActiGraph), a Signant Health company",
   "kind": "wearable",
   "field": "ai_training_terms",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Corroborated",
+  "recheck_by": "2026-11-09",
+  "note": "Nothing names AI or model training on customer data. The nearest term is the privacy policy's statement that customer instructions may include using personal data for providing or developing the platform. The Signant acquisition release names AI and machine learning across eCOA and sensor data as a direction. Customer contracts were not readable, so this is an absence finding only.",
+  "sources": [
+   {
+    "url": "https://ametris.com/privacy-policy",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://ametris.com/compliance",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/actigraph/CentrePoint3APIDocumentation",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://blog.ametris.com/news/signant-health-acquires-ametris-to-create-an-end-to-end-ecoa-and-wearables-platform",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "ametris-actigraph",
   "name": "Ametris (ActiGraph), a Signant Health company",
   "kind": "wearable",
   "field": "deprecations",
-  "status": "unresearched",
-  "sources": []
+  "scope": "ActiLife",
+  "status": "stated",
+  "value": "The ActiLife page calls ActiLife 7 \"legacy\" software, yet it is still updated (v7.3.2.0 released 2026-05-08) and is the only version that handles LEAP data; ActiLife 6 still works with GT3X and GT9X devices. No end-of-support date is published.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://academic.ametris.com/actilife",
+    "type": "vendor_page",
+    "quote": "ActiLife 7 is Ametris' legacy data processing software",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://ametris.com/downloads",
+    "type": "vendor_page",
+    "quote": "ActiLife® Current Release: v7.3.2.0 Release Date: May 8, 2026",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://blog.theactigraph.com/blog/faq-actilife7-upgrade",
+    "type": "vendor_page",
+    "quote": "Yes, ActiLife 6 can still be used with GT3X and GT9X devices.",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "deprecations",
+  "scope": "ActiGraph wGT3X-BT and GT9X Link",
+  "status": "stated",
+  "value": "Sales of new GT9X Link devices ended on 2023-08-23. The wGT3X-BT is described as a legacy device but is still sold; no end-of-sale date is published.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://blog.ametris.com/blog/gt9x-link-faq-old",
+    "type": "vendor_page",
+    "quote": "As of August 23, 2023, ActiGraph discontinued the sale of new GT9X Link wearable digital health technology (DHT) devices",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://academic.ametris.com/actigraph-wgt3x-bt",
+    "type": "vendor_page",
+    "quote": "The ActiGraph wGT3X-BT is Ametris' proven, legacy wearable device used by researchers around the world",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "deprecations",
+  "scope": "CentrePoint API",
+  "status": "stated",
+  "value": "The raw activity data request endpoint is superseded by Data Access Files for raw accelerometer data; the V2 (Study Admin) API is still supported alongside V3. No shutdown dates published.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "Signant Health announced the acquisition of Ametris on 2026-05-14 and plans platform integration; no product retirements announced.",
+  "sources": [
+   {
+    "url": "https://github.com/actigraph/CentrePoint3APIDocumentation/blob/main/sections/raw_data_request.md",
+    "type": "vendor_docs",
+    "fetch_url": "https://raw.githubusercontent.com/actigraph/CentrePoint3APIDocumentation/main/sections/raw_data_request.md",
+    "quote": "It is now recommended to use the [Data Access Files](data_access_files.md) for retrieving raw accelerometer data.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/actigraph/CentrePointIntegrationGuide",
+    "type": "vendor_docs",
+    "quote": "ActiGraph continues to support the CentrePoint V2 API",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "ametris-actigraph",
   "name": "Ametris (ActiGraph), a Signant Health company",
   "kind": "wearable",
   "field": "baa",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-08",
+  "note": "No BAA offer found on public pages. Customer contracts are not public, so a BAA could exist there. The privacy policy frames Ametris as a processor of key-coded data.",
+  "sources": [
+   {
+    "url": "https://ametris.com/compliance",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://ametris.com/privacy-policy",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://academic.ametris.com/centrepoint",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "ametris-actigraph",
   "name": "Ametris (ActiGraph), a Signant Health company",
   "kind": "wearable",
   "field": "dpa",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Yes. Ametris offers data processing agreements with standard contractual clauses to support customers' GDPR obligations.",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-08",
+  "sources": [
+   {
+    "url": "https://ametris.com/compliance",
+    "type": "vendor_page",
+    "quote": "Ametris will support customers in meeting their GDPR requirements with data processing agreements that include the standard contractual clauses (SCCs) regarding data processing, control, and transfer.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "ametris-actigraph",
   "name": "Ametris (ActiGraph), a Signant Health company",
   "kind": "wearable",
   "field": "hipaa_statement",
-  "status": "unresearched",
-  "sources": []
+  "status": "unclear",
+  "confidence": "Unclear",
+  "recheck_by": "2027-01-08",
+  "note": "No written HIPAA statement on the compliance page or in the privacy policy. The compliance page shows a logo image (file ametris_content_regulatory-icons_hippa-1.png) whose alt text is \"HIPAA Compliant\"; that is the only HIPAA claim, it is not page text, and it cannot be probed as a quote. The earlier actigraphcorp.com compliance page reportedly carried a HIPAA statement; that URL now redirects to ametris.com/compliance.",
+  "sources": [
+   {
+    "url": "https://ametris.com/compliance",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://ametris.com/privacy-policy",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "ametris-actigraph",
   "name": "Ametris (ActiGraph), a Signant Health company",
   "kind": "wearable",
   "field": "gdpr_statement",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Ametris states it complies with GDPR and has self-certified to the EU-U.S. Data Privacy Framework, its UK extension and the Swiss-U.S. DPF.",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-08",
+  "note": "The DPF participant list was not checked (it is a JavaScript application).",
+  "sources": [
+   {
+    "url": "https://ametris.com/compliance",
+    "type": "vendor_page",
+    "quote": "Ametris complies with General Data Privacy Regulation (GDPR) and implements technological and organizational controls around data privacy and protection.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://ametris.com/privacy-policy",
+    "type": "vendor_legal",
+    "quote": "Ametris has certified to the U.S. Department of Commerce that it adheres to the EU-U.S. Data Privacy Framework Principles",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "ametris-actigraph",
   "name": "Ametris (ActiGraph), a Signant Health company",
   "kind": "wearable",
   "field": "iso27001",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "ISO/IEC 27001:2022 certificate IA391-260410-001 issued by Ignyte Assurance LLC to Actigraph L.L.C. dba Ametris; initial certification 2026-04-16, valid to 2029-04-15. Scope is the ISMS for the digital health platform ecosystem.",
+  "confidence": "Verified",
+  "recheck_by": "2027-01-08",
+  "note": "The certificate PDF is hosted on the vendor's site, not a registry, and the certification body's accreditation was not checked. The quality system is separately certified to ISO 13485:2016 under MDSAP (Intertek).",
+  "sources": [
+   {
+    "url": "https://ametris.com/hubfs/Quality%20Assurance/Ametris%20-%20Ignyte%2027001%20Certificate.pdf",
+    "type": "certificate",
+    "quote": "Certificate Number: IA391-260410-001",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://ametris.com/hubfs/Quality%20Assurance/Ametris%20-%20Ignyte%2027001%20Certificate.pdf",
+    "type": "certificate",
+    "quote": "Initial Certification Date: 16 April 2026",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://ametris.com/hubfs/Quality%20Assurance/Ametris%20-%20Ignyte%2027001%20Certificate.pdf",
+    "type": "certificate",
+    "quote": "Certificate Valid To: 15 April 2029",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://ametris.com/hubfs/Quality%20Assurance/Ametris%20-%20Ignyte%2027001%20Certificate.pdf",
+    "type": "certificate",
+    "quote": "This Information Security Management System applies to Actigraph L.L.C. dba Ametris",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "ametris-actigraph",
   "name": "Ametris (ActiGraph), a Signant Health company",
   "kind": "wearable",
   "field": "soc2",
-  "status": "unresearched",
-  "sources": []
+  "status": "unclear",
+  "confidence": "Reported",
+  "recheck_by": "2027-01-08",
+  "note": "The only evidence is a company-data aggregator summarizing an Oct 2023 press release; the original release, the auditor and the report period were not found. The current Ametris compliance page does not mention SOC 2, so whether a current attestation exists is unknown. Ask Ametris for the latest SOC 2 Type II report.",
+  "sources": [
+   {
+    "url": "https://www.highperformr.ai/company/actigraph",
+    "type": "secondary",
+    "quote": "ActiGraph announced that its ActiLife software and CentrePoint data analytics platform have successfully achieved System and Organization Controls (SOC) 2 Type II attestation",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://ametris.com/compliance",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "ametris-actigraph",
   "name": "Ametris (ActiGraph), a Signant Health company",
   "kind": "wearable",
   "field": "fda_clearances",
-  "status": "unresearched",
-  "sources": []
+  "scope": "ActiGraph LEAP",
+  "status": "stated",
+  "value": "510(k) K231532, ActiGraph LEAP activity monitor, applicant Actigraph, LLC, cleared 2023-06-23 (Special 510(k)), product code LEL, 21 CFR 882.5050. Predicate K181077.",
+  "confidence": "Verified",
+  "recheck_by": "2027-01-08",
+  "sources": [
+   {
+    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K231532",
+    "type": "regulator_db",
+    "fetch_url": "https://api.fda.gov/device/510k.json?search=k_number:K231532",
+    "quote": "Actigraph, LLC 2023-06-23 SESE US ActiGraph LEAP activity monitor (ActiGraph LEAP)",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "fda_clearances",
+  "scope": "CentrePoint Insight Watch",
+  "status": "stated",
+  "value": "510(k) K181077, ActiGraph CentrePoint Insight Watch, cleared 2018-05-24 (Special 510(k)), product code LEL. Predicate K080545 (ActiTrainer).",
+  "confidence": "Verified",
+  "recheck_by": "2027-01-08",
+  "note": "Predicates read from the FDA 510(k) summary PDFs for K181077 and K231532 (accessdata.fda.gov, downloaded with a browser user agent); the probe cannot reach those PDFs, so the predicate wording is not quoted.",
+  "sources": [
+   {
+    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K181077",
+    "type": "regulator_db",
+    "fetch_url": "https://api.fda.gov/device/510k.json?search=k_number:K181077",
+    "quote": "Actigraph 2018-05-24 SESE US ActiGraph CentrePoint Insight Watch",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "fda_clearances",
+  "scope": "K080545 (ActiTrainer)",
+  "status": "stated",
+  "value": "510(k) K080545, ACTITRAINER, applicant Actigraph, LLC, cleared 2008-07-24 (Traditional 510(k)), product code ISD (exerciser, measuring, 21 CFR 890.5360). Predicate K040554 (ActiGraph AM7164).",
+  "confidence": "Verified",
+  "recheck_by": "2027-01-08",
+  "note": "The FDA record and its 510(k) summary name only the ActiTrainer; neither mentions the GT9X or wGT3X-BT.",
+  "sources": [
+   {
+    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K080545",
+    "type": "regulator_db",
+    "fetch_url": "https://api.fda.gov/device/510k.json?search=k_number:K080545",
+    "quote": "Actigraph, LLC 2008-07-24 SESE US ACTITRAINER",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "fda_clearances",
+  "scope": "ActiGraph wGT3X-BT and GT9X Link (vendor's mapping to K080545)",
+  "status": "stated",
+  "value": "Ametris lists K080545 as the clearance for the GT9X and wGT3X-BT. That mapping is the vendor's claim only. The FDA database has no 510(k) under either device name, and the K080545 record is the 2008 ActiTrainer.",
+  "confidence": "Reported",
+  "recheck_by": "2027-01-08",
+  "note": "Not recorded as a conflict: the FDA record does not contradict the vendor, it just does not show the later devices. Manufacturers can market modified devices under an existing 510(k) without a new submission, and the FDA database does not record that, so the mapping may be legitimate but cannot be Verified from the regulator. openFDA device_name searches for gt3x, gt9x and wgt3x return no matches; applicant \"actigraph\" returns only K080545, K181077 and K231532. Independently, Health Canada licence 102376 (Class II) lists the GT9X Link and wGT3X-BT from 2019-02-11 (MDALL). Ask Ametris which 510(k) and which letter-to-file cover each device.",
+  "sources": [
+   {
+    "url": "https://ametris.com/compliance",
+    "type": "vendor_page",
+    "quote": "K080545 - GT9X, wGT3X-BT K040554 - AM7164 (2004, inactive)",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K080545",
+    "type": "regulator_db",
+    "fetch_url": "https://api.fda.gov/device/510k.json?search=k_number:K080545",
+    "quote": "Actigraph, LLC 2008-07-24 SESE US ACTITRAINER",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "ametris-actigraph",
+  "name": "Ametris (ActiGraph), a Signant Health company",
+  "kind": "wearable",
+  "field": "fda_clearances",
+  "scope": "ActiGraph AM7164 (legacy)",
+  "status": "stated",
+  "value": "510(k) K040554, ActiGraph models AM7164-2.2 and AM71256, applicant Manufacturing Technology, Inc., cleared 2004-07-16, product code GWQ. Ametris lists it as inactive.",
+  "confidence": "Verified",
+  "recheck_by": "2027-01-08",
+  "sources": [
+   {
+    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K040554",
+    "type": "regulator_db",
+    "fetch_url": "https://api.fda.gov/device/510k.json?search=k_number:K040554",
+    "quote": "Manufacturing Technology, Inc. 2004-07-16 SESE US ACTIGRAPH, MODEL AM7164-2.2 AND ACTIGRAPH WITH EXTENDED MEMORY, MODEL AM71256",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "ametris-actigraph",
   "name": "Ametris (ActiGraph), a Signant Health company",
   "kind": "wearable",
   "field": "data_residency",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "CentrePoint is hosted on Amazon Web Services and Microsoft Azure. Regions and residency options are not published.",
+  "confidence": "Verified",
+  "recheck_by": "2027-01-08",
+  "note": "Ametris announced a China deployment partnership (Lingyan Innovation, 2025-11-20) without saying where Chinese participant data are hosted.",
+  "sources": [
+   {
+    "url": "https://ametris.com/privacy-policy",
+    "type": "vendor_legal",
+    "quote": "CentrePoint is implemented within the cloud infrastructure of Amazon Web Services (AWS) and Microsoft Azure",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://ametris.com/compliance",
+    "type": "vendor_page",
+    "quote": "For data storage, processing, and application services, Ametris leverages qualified cloud vendors: Microsoft Azure and Amazon Web Services.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "apple",
@@ -8384,240 +9417,1064 @@
   "name": "Axivity",
   "kind": "wearable",
   "field": "research_program",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Corroborated",
+  "recheck_by": "2026-11-09",
+  "note": "No named research or academic program. Axivity sells AX3 and AX6 loggers from a public web store, and research guidance lives in the open-source Open Movement docs, which are documentation rather than an enrolment route. The research guide names third parties offering paid help (McRoberts for data collection and processing; Vincent van Hees, the GGIR author, for consulting); the McRoberts link redirected to its homepage on 2026-10-11, so whether that service is still offered is unclear. Vendor case studies cite UK Biobank and INTERVAL (6000 participants, AX3 band).",
+  "sources": [
+   {
+    "url": "https://axivity.com/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/support",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/faq",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/contact",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/case-studies/biobank",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-research.md",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "axivity",
   "name": "Axivity",
   "kind": "wearable",
   "field": "program_eligibility",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_applicable",
+  "recheck_by": "2026-11-09",
+  "note": "No program exists to be eligible for (see research_program). Devices are bought from the public store with no stated eligibility restriction.",
+  "sources": [
+   {
+    "url": "https://axivity.com/products",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "axivity",
   "name": "Axivity",
   "kind": "wearable",
   "field": "program_application",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_applicable",
+  "recheck_by": "2026-11-09",
+  "note": "No program and no application or approval step. Devices are ordered through the web store cart; the software and file format are public on GitHub with no sign-up.",
+  "sources": [
+   {
+    "url": "https://axivity.com/products",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "axivity",
   "name": "Axivity",
   "kind": "wearable",
   "field": "program_status",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_applicable",
+  "recheck_by": "2026-11-09",
+  "note": "No program to have a status. The products and the Open Movement repository were both live on 2026-10-11.",
+  "sources": [
+   {
+    "url": "https://axivity.com/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "axivity",
   "name": "Axivity",
   "kind": "wearable",
   "field": "developer_program_status",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No developer program or registration is needed. The device communication is documented and a C device API (libOMAPI) can be used to build custom configuration and download software; firmware, software and file-format readers are open source under a BSD 2-clause licence. A third-party R wrapper, axR (Circadia Lab, r-universe), exposes device discovery, configuration and download from R.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "The API is a local USB device API, not a cloud web API. axR is third-party, published on r-universe (v0.1.3), not on CRAN.",
+  "sources": [
+   {
+    "url": "https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-research.md",
+    "type": "vendor_docs",
+    "quote": "The AX device communication is documented, and a software API exists that can be used to create your own software to communicate with the AX devices",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/help/3",
+    "type": "vendor_docs",
+    "quote": "For users who wish to develop their own software for the AX3 devices there is an open API available here",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/openmovementproject/libomapi",
+    "type": "repository",
+    "quote": "Separate repository for Open Movement's OMAPI library.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/openmovementproject/openmovement",
+    "type": "repository",
+    "quote": "The source code for the firmware and software is available under a BSD 2-clause license",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://circadia-bio.r-universe.dev/axR",
+    "type": "repository",
+    "quote": "Serial communication and data retrieval for Axivity AX3/AX6 accelerometer devices",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "axivity",
   "name": "Axivity",
   "kind": "wearable",
   "field": "user_cap",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_applicable",
+  "recheck_by": "2026-11-09",
+  "note": "Offline loggers with no cloud account or API tier, so there is no participant or user cap. Study size is bounded only by the number of devices bought.",
+  "sources": [
+   {
+    "url": "https://axivity.com/products",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-research.md",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "axivity",
   "name": "Axivity",
   "kind": "wearable",
   "field": "academic_vs_commercial",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Axivity publishes no academic vs commercial distinction. Everyone pays the same list prices and gets the same BSD 2-clause software. One third-party analysis package the Open Movement docs point to, Oxford's biobankAccelerometerAnalysis, is under an Academic Use Licence that excludes commercial users, and it cannot read AX6 data.",
+  "confidence": "Corroborated",
+  "recheck_by": "2026-11-09",
+  "note": "The absence of an academic price tier is inferred from the store and FAQ showing none; no page states it outright. GGIR remains the open option for commercial users and AX6 data.",
+  "sources": [
+   {
+    "url": "https://github.com/openmovementproject/openmovement",
+    "type": "repository",
+    "quote": "The source code for the firmware and software is available under a BSD 2-clause license",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-research.md",
+    "type": "vendor_docs",
+    "quote": "Academic Use Licence; not currently compatible with AX6 data",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/OxWearables/biobankAccelerometerAnalysis/blob/master/LICENSE.md",
+    "type": "repository",
+    "quote": "THE SOFTWARE IS INTENDED FOR USE BY ACADEMICS CARRYING OUT RESEARCH AND NOT FOR USE BY CONSUMERS OR COMMERCIAL BUSINESSES.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/products",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "axivity",
   "name": "Axivity",
   "kind": "wearable",
   "field": "device_price",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "scope": "AX3",
+  "value": "AX3 puck GBP 139.00, or GBP 149.00 with wrist band (ex VAT). Cable not included (micro USB cable GBP 3.50).",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "Price rose GBP 10 during 2025: the AX3 puck was GBP 129.00 ex VAT in an Internet Archive capture of 2025-01-04 (web.archive.org/web/20250104090451/https://axivity.com/product/ax3) and GBP 139.00 by 2026-01-25. Third-party guides still quote GBP 129. The shipping page says \"Prices include VAT where applicable\" while the product pages say ex VAT. Postage is extra and international buyers pay customs duties.",
+  "sources": [
+   {
+    "url": "https://axivity.com/product/ax3",
+    "type": "vendor_page",
+    "quote": "AX3 Puck £139.00 (exc VAT)",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/product/ax3",
+    "type": "vendor_page",
+    "quote": "AX3 Puck + Wrist Band (Teal) £149.00 (exc VAT)",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/products",
+    "type": "vendor_page",
+    "quote": "Micro USB Cable 25cm Length Supports Hi-Speed USB £3.50",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "axivity",
+  "name": "Axivity",
+  "kind": "wearable",
+  "field": "device_price",
+  "status": "stated",
+  "scope": "AX6",
+  "value": "AX6 puck GBP 199.00, or GBP 209.00 with wrist band (ex VAT). Cable not included.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "Price rose GBP 10 during 2025: the AX6 puck was GBP 189.00 ex VAT in an Internet Archive capture of 2024-09-13 (web.archive.org/web/20240913171031/https://axivity.com/product/ax6) and GBP 199.00 by 2025-12-10 (web.archive.org/web/20251210225700/https://axivity.com/product/ax6).",
+  "sources": [
+   {
+    "url": "https://axivity.com/product/ax6",
+    "type": "vendor_page",
+    "quote": "AX6 Puck £199.00 (exc VAT)",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/product/ax6",
+    "type": "vendor_page",
+    "quote": "AX6 Puck + Wrist Band (Teal) £209.00 (exc VAT)",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "axivity",
   "name": "Axivity",
   "kind": "wearable",
   "field": "subscription_price",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_applicable",
+  "recheck_by": "2026-11-09",
+  "note": "One-time hardware purchase. No membership, subscription or cloud service is offered.",
+  "sources": [
+   {
+    "url": "https://axivity.com/products",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "axivity",
   "name": "Axivity",
   "kind": "wearable",
   "field": "academic_pricing",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Corroborated",
+  "recheck_by": "2026-11-09",
+  "note": "No academic, research or volume discount on any page checked. Large institutional buys have gone through UK public contracts (a 2021 Newcastle University award for AX6 devices for IDEA-FAST and Mobilise-D, GBP 200,000, no unit price), which suggests negotiated pricing exists but is not posted. Ask info@axivity.com.",
+  "sources": [
+   {
+    "url": "https://axivity.com/products",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/product/ax3",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/product/ax6",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/shipping",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/faq",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/contact",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "axivity",
   "name": "Axivity",
   "kind": "wearable",
   "field": "api_platform_fees",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "None. Firmware, OmGui, the device API and file-format tools are open source under a BSD 2-clause licence and free to use.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://github.com/openmovementproject/openmovement",
+    "type": "repository",
+    "quote": "The source code for the firmware and software is available under a BSD 2-clause license",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-research.md",
+    "type": "vendor_docs",
+    "quote": "the electronic designs, device firmware, supporting software, and documentation are all open source and freely available",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "axivity",
   "name": "Axivity",
   "kind": "wearable",
   "field": "minimum_commitment",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Corroborated",
+  "recheck_by": "2026-11-09",
+  "note": "No minimum order or term is stated. Single units are priced with an add-to-cart button, which implies none, but no page says so. The hardware warranty is one year and excludes software.",
+  "sources": [
+   {
+    "url": "https://axivity.com/products",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/product/ax3",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/shipping",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/terms",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/warrantyterms",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "axivity",
   "name": "Axivity",
   "kind": "wearable",
   "field": "quote_required",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No for standard purchases. List prices are published and orders go through the web store. No quote route for volume or academic pricing is published.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://axivity.com/products",
+    "type": "vendor_page",
+    "quote": "AX3 3-Axis Logging Accelerometer Water Resistant £139.00 - 149.00 More Info",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/shipping",
+    "type": "vendor_legal",
+    "quote": "Postage and packaging is an additional charge",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "axivity",
   "name": "Axivity",
   "kind": "wearable",
   "field": "raw_streams",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Raw, unfiltered triaxial acceleration (AX3: Analog Devices ADXL345; AX6: Bosch BMI160) plus triaxial gyroscope on the AX6, each block timestamped. Both devices also always record low-rate auxiliary channels: light level, internal device temperature and battery voltage. All stored raw on device flash in the open .CWA format and read over USB by the researcher. No vendor cloud.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "Temperature is internal device temperature (affected by skin, coupling and environment), mainly for accelerometer auto-calibration; light reads through the case and is a relative indicator, not calibrated lux. GitHub issue 11 records that OmGui, cwa-convert and the Axivity help pages had used different temperature conversion formulas; the maintainer settled the correct one in July 2023, and absolute readings from the old formula need converting. No PPG, ECG or heart rate.",
+  "sources": [
+   {
+    "url": "https://axivity.com/product/ax6",
+    "type": "vendor_page",
+    "quote": "All data is stored in its raw unaltered format on the embedded flash memory.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-faq.md",
+    "type": "vendor_docs",
+    "quote": "Analog Devices ADXL345 Bosch BMI160",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/product/ax3",
+    "type": "vendor_page",
+    "quote": "The light sensor can be used to help determine periods of wear as well as provide useful environmental data.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/product/ax3",
+    "type": "vendor_page",
+    "quote": "The temperature sensor gives a rough sense of outside environment temperature and also if the sensor is being worn or not.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/product/ax6",
+    "type": "vendor_page",
+    "quote": "The AX6 has additional light and temperature sensors, their output is inserted in to the recorded data stream.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-auxiliary.md",
+    "type": "vendor_docs",
+    "quote": "This data is always recorded, regardless of configuration, whenever the device is logging movement data.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-auxiliary.md",
+    "type": "vendor_docs",
+    "quote": "The temperature sensor measures the internal temperature of the device, and it is primarily useful to help with sensor auto-calibration.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-auxiliary.md",
+    "type": "vendor_docs",
+    "quote": "The sensor arrangement is most suitable as a general, relative, indicator of light",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/openmovementproject/openmovement/issues/11",
+    "type": "repository",
+    "quote": "the correct temperature conversion from ADC values is",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "axivity",
   "name": "Axivity",
   "kind": "wearable",
   "field": "derived_metrics",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "The device stores raw data only and computes nothing. OmGui (through omconvert) has built-in, open analysis run by the researcher locally, which derives signal vector magnitude epochs, MET cut-point time in activity intensity bands, wear-time validation and a simple sleep-period detector. Richer metrics come from third-party open-source tools the docs recommend, chiefly GGIR.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "These are published, open algorithms run on the researcher's own computer, not proprietary vendor metrics. No step count is offered. biobankAccelerometerAnalysis is academic-use only and does not read AX6 files (see academic_vs_commercial).",
+  "sources": [
+   {
+    "url": "https://axivity.com/downloads/ax3",
+    "type": "vendor_page",
+    "quote": "Software for the AX3 sensors with built-in analysis (Windows)",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-research.md",
+    "type": "vendor_docs",
+    "quote": "Some simple analysis methods are available through the open source OmGui configuration tool",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/openmovementproject/openmovement/wiki/AX3-GUI",
+    "type": "vendor_docs",
+    "quote": "The signal vector magnitude (SVM) has been shown to be a useful measure for working with when axis specific information is not required.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/openmovementproject/openmovement/wiki/AX3-GUI",
+    "type": "vendor_docs",
+    "quote": "The Cut-point analysis reports the time user has spent in a specific intensity of physical activity where each intensity band is categorized in units of Metabolic Equivalent of Task (METS).",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/openmovementproject/openmovement/wiki/AX3-GUI",
+    "type": "vendor_docs",
+    "quote": "The wear time validation (WTV) algorithm is designed to give a high level view if the device has been worn or not.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/openmovementproject/openmovement/wiki/AX3-GUI",
+    "type": "vendor_docs",
+    "quote": "The algorithm detects periods of sleep.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-research.md",
+    "type": "vendor_docs",
+    "quote": "For a richer analysis, a popular option in research is the open source GGIR software, which includes sleep analysis and can also produce more visual reports.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "axivity",
   "name": "Axivity",
   "kind": "wearable",
   "field": "sampling_rates",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "scope": "AX3",
+  "value": "Accelerometer 12.5 to 3200 Hz configurable, range +/-2/4/8/16 g, 10-bit packed or 13-bit unpacked modes. OmGui default is 100 Hz, +/-8 g.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "The sensor keeps its own timing, so the actual rate varies slightly from the nominal rate; resample if a fixed rate is needed.",
+  "sources": [
+   {
+    "url": "https://axivity.com/product/ax3",
+    "type": "vendor_page",
+    "quote": "Accelerometer Sample Rate 12.5 - 3200Hz Configurable",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/help/22",
+    "type": "vendor_docs",
+    "quote": "The AX3 has 2 bit depth modes; 10bit (or packed) and 13bit (un-packed)",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "axivity",
+  "name": "Axivity",
+  "kind": "wearable",
+  "field": "sampling_rates",
+  "status": "stated",
+  "scope": "AX6",
+  "value": "Accelerometer and gyroscope 12.5 to 1600 Hz configurable; gyroscope +/-125 to 2000 dps.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://axivity.com/product/ax6",
+    "type": "vendor_page",
+    "quote": "Accelerometer Sample Rate 12.5 - 1600Hz Configurable",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "axivity",
+  "name": "Axivity",
+  "kind": "wearable",
+  "field": "sampling_rates",
+  "status": "stated",
+  "scope": "AX3 and AX6 auxiliary channels and clock",
+  "value": "Light, temperature and battery are sampled internally at 1 Hz and stored once per data sector (every 40 to 120 movement samples, by mode). The internal clock is set from the configuring computer and drifts by about +/-2 seconds per day.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-auxiliary.md",
+    "type": "vendor_docs",
+    "quote": "The sensors are internally sampled at 1 Hz",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-faq.md",
+    "type": "vendor_docs",
+    "quote": "The auxiliary data channels (device temperature and light level indicator) are sampled at a lower rate in all modes.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-faq.md",
+    "type": "vendor_docs",
+    "quote": "potentially of the order of around ±2 seconds per day",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "axivity",
   "name": "Axivity",
   "kind": "wearable",
   "field": "history_depth",
-  "status": "unresearched",
-  "sources": []
+  "status": "conflict",
+  "scope": "AX3",
+  "value": "One recording is bounded by battery and memory, and Axivity's own figures disagree. The AX3v2 datasheet description says up to 21 days; the same datasheet's spec table and the product page say 30 days at 12.5 Hz and 14 days at 100 Hz; the Open Movement FAQ gives about 13.5 days at 100 Hz and about 65 days at 12.5 Hz (packed mode). There is no vendor-side history; downloaded files are held by the researcher.",
+  "confidence": "Unclear",
+  "recheck_by": "2026-11-09",
+  "note": "The datasheet (v1.8, 18/04/2023) gives \"up to 21 days\" with no rate attached, against its own 30-day maximum at 12.5 Hz. The 14 days at 100 Hz figure agrees across sources. The FAQ table marks some low-rate figures as uncertain and gives 9 days at 100 Hz in unpacked mode. UK Biobank's activity monitor document (v2.0, 2025) reports 17% incomplete kits in season 1 of its repeat study, attributed to battery performance in reused devices, so plan for shorter windows on old units.",
+  "sources": [
+   {
+    "url": "https://axivity.com/files/resources/AX3v2_Datasheet.pdf",
+    "type": "vendor_docs",
+    "quote": "sensor will record for up to 21 days of continuous data",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/files/resources/AX3v2_Datasheet.pdf",
+    "type": "vendor_docs",
+    "quote": "Maximum Logging Periods 30 days at 12.5 Hz or 14 days at 100 Hz",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/product/ax3",
+    "type": "vendor_page",
+    "quote": "Battery Life 30 days @ 12.5Hz; 14 days @ 100Hz",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-faq.md",
+    "type": "vendor_docs",
+    "quote": "Approximate maximum recording duration from a single full battery charge.",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "axivity",
+  "name": "Axivity",
+  "kind": "wearable",
+  "field": "history_depth",
+  "status": "stated",
+  "scope": "AX6",
+  "value": "About 7 days at 100 Hz with gyroscope; 31+ days at 50 Hz and up to 140 days at 12.5 Hz accelerometer only. No vendor-side history.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "The Open Movement FAQ gives 7 to 9 days with gyroscope and marks low-rate accelerometer-only figures as uncertain.",
+  "sources": [
+   {
+    "url": "https://axivity.com/product/ax6",
+    "type": "vendor_page",
+    "quote": "Battery Life 7+ days @ 100Hz, Accel & Gyro 31+ days @ 50Hz, Accel only",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/files/resources/AX6_Datasheet.pdf",
+    "type": "vendor_docs",
+    "quote": "7 days IMU mode @ 100Hz",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/files/resources/AX6_Datasheet.pdf",
+    "type": "vendor_docs",
+    "quote": "Up to 140 days Accelerometer @ 12.5Hz",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "axivity",
   "name": "Axivity",
   "kind": "wearable",
   "field": "export_routes",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "USB only. The device mounts as a USB drive holding CWA-DATA.CWA. OmGui (Windows) downloads it and exports CSV or WAV; omconvert and cwa-convert do the same from the command line; the file loads directly into GGIR, openmovement-python, pampro, MATLAB and others. libOMAPI (C) and the third-party axR (R) let teams build their own download software. AX-Deploy handles mass deployment with per-device configuration but not AX6 gyroscopes; the web configurator AX Config configures one device at a time and cannot download.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "No wireless sync, phone app or cloud for AX3 or AX6. OmGui is Windows-only; Mac and Linux users use the cross-platform command-line converters.",
+  "sources": [
+   {
+    "url": "https://github.com/openmovementproject/openmovement/wiki/AX3-GUI",
+    "type": "vendor_docs",
+    "quote": "Data files can be downloaded by simply by mounting the AX device as USB-stick and copying (or moving off) the data file CWA-DATA.CWA from the devices.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/openmovementproject/openmovement/wiki/AX3-GUI",
+    "type": "vendor_docs",
+    "quote": "You can process or export the data with omconvert or cwa-convert .",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/openmovementproject/openmovement/wiki/AX3-GUI",
+    "type": "vendor_docs",
+    "quote": "You can also directly load the data into analysis environments with software such as: GGIR , openmovement-python , pampro , MATLAB or biobankAccelerometerAnalysis .",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/openmovementproject/openmovement/wiki/AX3-GUI",
+    "type": "vendor_docs",
+    "quote": "The system requirements for the OMGUI software are a Windows PC with XP SP3 or later operating system and Microsoft .NET Framework v3.5 or later.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/openmovementproject/openmovement/wiki/AX3-GUI",
+    "type": "vendor_docs",
+    "quote": "Download time is approximately 6 minutes for 7 days worth of data.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-research.md",
+    "type": "vendor_docs",
+    "quote": "The AX device communication is documented, and a software API exists that can be used to create your own software to communicate with the AX devices",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://circadia-bio.r-universe.dev/axR",
+    "type": "repository",
+    "quote": "Serial communication and data retrieval for Axivity AX3/AX6 accelerometer devices",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-research.md",
+    "type": "vendor_docs",
+    "quote": "software is specifically for mass deployments, where each device may have a unique configuration",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-research.md",
+    "type": "vendor_docs",
+    "quote": "This is not be compatible with AX6 device gyroscopes",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-research.md",
+    "type": "vendor_docs",
+    "quote": "one-at-a-time configuration (but not download)",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "axivity",
   "name": "Axivity",
   "kind": "wearable",
   "field": "rate_limits",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_applicable",
+  "recheck_by": "2026-11-09",
+  "note": "No web or cloud API exists; data moves over a local USB connection.",
+  "sources": [
+   {
+    "url": "https://github.com/openmovementproject/openmovement/wiki/AX3-GUI",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "axivity",
   "name": "Axivity",
   "kind": "wearable",
   "field": "retention_terms",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Sensor recordings never reach Axivity, so there are no vendor terms on retaining study data; retention is the researcher's own. The website privacy policy covers only customer and order data, kept for 6 years.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "The third quote is from a Newcastle University procurement notice, not Axivity.",
+  "sources": [
+   {
+    "url": "https://axivity.com/privacy",
+    "type": "vendor_legal",
+    "quote": "We retain Personal Data for period of 6 years.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/openmovementproject/openmovement/wiki/AX3-GUI",
+    "type": "vendor_docs",
+    "quote": "Data files can be downloaded by simply by mounting the AX device as USB-stick and copying (or moving off) the data file CWA-DATA.CWA from the devices.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.contractsfinder.service.gov.uk/Notice/202ae1a7-9e51-4348-ab6d-2c5df211ce83",
+    "type": "secondary",
+    "quote": "Data is stored on the device and requires manual transfer.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "axivity",
   "name": "Axivity",
   "kind": "wearable",
   "field": "ai_training_terms",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_applicable",
+  "recheck_by": "2026-11-09",
+  "note": "Axivity never receives sensor data, and its privacy policy and terms contain no AI or ML training terms.",
+  "sources": [
+   {
+    "url": "https://axivity.com/privacy",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/terms",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "axivity",
   "name": "Axivity",
   "kind": "wearable",
   "field": "deprecations",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Corroborated",
+  "recheck_by": "2026-11-09",
+  "note": "No announced shutdowns or end-of-life for AX3 or AX6. Quiet changes. The AX3v2 replaced the original AX3 enclosure (datasheet 18/04/2023) and the AX3 v1 datasheet link now returns 404. AX3 firmware V50 is an experimental interface build; V48 is the newest standard release. The WAX3 and WAX9 wireless sensors still have downloads but are not in the store (a 2017 GitHub reply relayed that the WAX9 was no longer made). The Multi Dock product page returns 404. The repository moved to the openmovementproject GitHub organisation.",
+  "sources": [
+   {
+    "url": "https://axivity.com/products",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/faq",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/openmovementproject/openmovement",
+    "type": "repository",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/files/resources/AX3v2_Datasheet.pdf",
+    "type": "vendor_docs",
+    "quote": "The AX3v2 is functionally identical to the AX3 and all the integrated sensor, LED and external marking positions and orientations are unchanged.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/openmovementproject/openmovement/blob/master/Downloads/AX3/AX3-Firmware.md",
+    "type": "repository",
+    "quote": "Experimental alternative generic (and WinUSB) interface support.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "axivity",
   "name": "Axivity",
   "kind": "wearable",
   "field": "baa",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_applicable",
+  "recheck_by": "2027-01-08",
+  "note": "Axivity never receives, hosts or processes participant data (offline loggers, USB download to the researcher's own computer), so it is not a business associate for study data and no BAA is needed. No BAA is mentioned on any page checked. If a third-party service handles collection or analysis, the question moves to that party.",
+  "sources": [
+   {
+    "url": "https://axivity.com/privacy",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/terms",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/support",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/openmovementproject/openmovement/wiki/AX3-GUI",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "axivity",
   "name": "Axivity",
   "kind": "wearable",
   "field": "dpa",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_applicable",
+  "recheck_by": "2027-01-08",
+  "note": "Axivity does not process study data on a sponsor's behalf, so it is not a processor and no DPA is needed for the data path. No DPA is published. If a third-party service (for example McRoberts, named in the Open Movement docs) handles collection or analysis, the DPA question moves to that party.",
+  "sources": [
+   {
+    "url": "https://axivity.com/privacy",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/terms",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "axivity",
   "name": "Axivity",
   "kind": "wearable",
   "field": "hipaa_statement",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-08",
+  "note": "No HIPAA statement found. UK company; of limited relevance because the vendor never holds study data.",
+  "sources": [
+   {
+    "url": "https://axivity.com/privacy",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/terms",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/faq",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "axivity",
   "name": "Axivity",
   "kind": "wearable",
   "field": "gdpr_statement",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "scope": "Website and order data",
+  "value": "The privacy policy cites UK GDPR lawful bases for customer and website data. It does not address study or participant data, which Axivity does not receive.",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-08",
+  "sources": [
+   {
+    "url": "https://axivity.com/privacy",
+    "type": "vendor_legal",
+    "quote": "Under the UK General Data Protection Regulation (UK GDPR), the lawful bases we rely on for processing this information are for the purpose of fulfilling our contractual and legal obligations with you.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "axivity",
   "name": "Axivity",
   "kind": "wearable",
   "field": "iso27001",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-08",
+  "note": "No ISO 27001 (or ISO 13485) claim found. The datasheets list EMC (Directive 2014/30/EU), FCC Part 15 Class B, IP68, WEEE and UN 38.3 battery transport only.",
+  "sources": [
+   {
+    "url": "https://axivity.com/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/privacy",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/files/resources/AX3v2_Datasheet.pdf",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/files/resources/AX6_Datasheet.pdf",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "axivity",
   "name": "Axivity",
   "kind": "wearable",
   "field": "soc2",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-08",
+  "note": "No SOC 2 claim found; there is no hosted service it would apply to.",
+  "sources": [
+   {
+    "url": "https://axivity.com/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/privacy",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "axivity",
   "name": "Axivity",
   "kind": "wearable",
   "field": "fda_clearances",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-08",
+  "note": "openFDA 510(k), registration-listing and UDI searches for Axivity returned no matches on 2026-10-11 (a 510(k) device_name search for \"AX3\" hit only an unrelated Edan ultrasound, K202856). The CE marking cited is under the EMC Directive, not medical device regulation; the AX3v2 is presented as a research logger, not a medical device.",
+  "sources": [
+   {
+    "url": "https://api.fda.gov/device/510k.json?search=applicant:axivity",
+    "type": "regulator_db",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://api.fda.gov/device/registrationlisting.json?search=registration.owner_operator.firm_name:axivity",
+    "type": "regulator_db",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://api.fda.gov/device/registrationlisting.json?search=proprietary_name:axivity",
+    "type": "regulator_db",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://api.fda.gov/device/udi.json?search=company_name:axivity",
+    "type": "regulator_db",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/files/resources/AX3v2_Datasheet.pdf",
+    "type": "vendor_docs",
+    "quote": "The product is compliant with the Directive 2014/30/EU; the relevant Declaration of Conformity is available from Axivity.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://axivity.com/files/resources/AX3v2_Datasheet.pdf",
+    "type": "vendor_docs",
+    "quote": "tested to comply with FCC CFR 47 part 15.107 and 15.109 (Class B Device)",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "axivity",
   "name": "Axivity",
   "kind": "wearable",
   "field": "data_residency",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No vendor storage. Recordings stay on the device's flash memory until a researcher downloads them over USB to their own computer, so residency is wherever the research team keeps the files.",
+  "confidence": "Verified",
+  "recheck_by": "2027-01-08",
+  "sources": [
+   {
+    "url": "https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-faq.md",
+    "type": "vendor_docs",
+    "quote": "There is no external communication while the AX devices are recording, so they cannot directly have their clocks set or read during normal use.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/openmovementproject/openmovement/wiki/AX3-GUI",
+    "type": "vendor_docs",
+    "quote": "Data files can be downloaded by simply by mounting the AX device as USB-stick and copying (or moving off) the data file CWA-DATA.CWA from the devices.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "circular",
