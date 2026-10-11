@@ -77,7 +77,7 @@ def build(records, schema):
             flat.append({'company': c, 'name': records[c].get('name'), 'kind': records[c].get('kind'), **{
                 k: (str(v) if k == 'recheck_by' else v) for k, v in f.items() if k != 'sources'},
                 'sources': [{k: str(v) if k == 'retrieved' else v for k, v in s.items()} for s in f.get('sources') or []]})
-    return '\n'.join(lines) + '\n', json.dumps(flat, indent=1, ensure_ascii=False) + '\n'
+    return '\n'.join(lines) + '\n', json.dumps(flat, indent=1, ensure_ascii=False, default=str) + '\n'
 
 
 def profile_block(rec, schema):
