@@ -32,6 +32,7 @@ FALSE_404_HOSTS = {'www.accessdata.fda.gov', 'accessdata.fda.gov'}
 # allows it. Never fetched automatically; their sources are listed under "check by hand" instead.
 TERMS_BLOCKED_HOSTS = {
     'activinsights.com', 'www.activinsights.com',  # website terms, 2026-10-11 (facts/_drafts/activinsights-geneactiv/judgement.md)
+    'evidation.com', 'www.evidation.com', 'help.evidation.com',  # website and member terms, 2026-10-11 (facts/_drafts/evidation/judgement.md)
 }
 
 

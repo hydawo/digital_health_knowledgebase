@@ -1,0 +1,558 @@
+# Draft record for evidation, researcher A, 2026-10-11. Schema: facts/_schema.yaml
+name: Evidation
+kind: platform
+profile: module-02-digital-phenotyping/profiles/evidation.md
+watch:
+- url: https://evidation.com/for-customers/our-solutions
+  role: research_program
+- url: https://evidation.com/for-customers/datasets
+  role: research_program
+- url: https://evidation.com/for-customers/our-platform
+  role: research_program
+- url: https://evidation.com/for-customers/non-profit
+  role: research_program
+- url: https://evidation.com/members-terms
+  role: terms
+- url: https://evidation.com/members-privacy
+  role: terms
+- url: https://evidation.com/consumer-health-data-privacy-notice
+  role: terms
+- url: https://evidation.com/frequently-asked-questions/how-do-i-download-my-data
+  role: docs
+- url: https://evidation.com/frequently-asked-questions/security
+  role: trust
+- url: https://help.evidation.com/hc/en-us/articles/50630998040211-How-to-Earn-Activity-Points-After-Google-Fit-Connection-Changes
+  role: changelog
+- url: https://evidation.com/resources-category/press-releases-announcements
+  role: changelog
+- url: https://apps.apple.com/us/app/achievemint/id793039965
+  role: app_store
+- url: https://play.google.com/store/apps/details?id=com.achievemint.android&hl=en_US
+  role: app_store
+- url: https://api.fda.gov/device/510k.json?search=applicant:evidation
+  role: regulatory
+facts:
+# ---------------- Research access ----------------
+- field: research_program
+  status: stated
+  value: 'No academic or research-access program in the sense of a data API. Evidation sells sponsor services built on
+    its member community: data offerings (Real-World Data, Patient Insights, Prospective Studies) and activation
+    offerings (Recruitment, Activation), available as one-time engagements or ongoing subscriptions, plus a licensable
+    Research & Engagement Platform.'
+  confidence: Verified
+  sources:
+  - url: https://evidation.com/for-customers/our-solutions
+    type: vendor_page
+    quote: Combine data and activation offerings to support research, evidence generation, and commercialization.
+    retrieved: '2026-10-11'
+  - url: https://evidation.com/for-customers/our-solutions
+    type: vendor_page
+    quote: Access deeply characterized populations through one-time engagements or ongoing subscriptions
+    retrieved: '2026-10-11'
+  - url: https://evidation.com/for-customers/non-profit
+    type: vendor_page
+    quote: Collect longitudinal, prospective data directly from participants by licensing our Research & Engagement Platform
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: program_eligibility
+  status: stated
+  value: Sponsors are organizations (biopharma, consumer health, technology, non-profit and government). No published
+    eligibility criteria for sponsors.
+  confidence: Verified
+  scope: Sponsors and customers
+  sources:
+  - url: https://evidation.com/for-customers/our-solutions
+    type: vendor_page
+    quote: Evidation partners include top biopharma companies , as well as consumer health companies, technology companies, non-profit organizations, and government agencies.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: program_eligibility
+  status: stated
+  value: Members (the participant population) must be 18 or older and US residents.
+  confidence: Verified
+  scope: Evidation app members
+  sources:
+  - url: https://evidation.com/members-terms
+    type: vendor_legal
+    quote: You may use the Services only if you are 18 years or older, are a resident of the United States
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: program_application
+  status: stated
+  value: Contact form only ("working with us"); no application, review criteria or timeline published. Evidation
+    says it prepares study content to fit IRB submission requirements during campaign planning.
+  confidence: Corroborated
+  sources:
+  - url: https://evidation.com/contact
+    type: vendor_page
+    quote: Are you interested in working with us? Click here
+    retrieved: '2026-10-11'
+  - url: https://evidation.com/for-customers/recruit
+    type: vendor_page
+    quote: Content creation to fit technical specifications for IRB submission
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: program_status
+  status: stated
+  value: Sponsor services active; new autoimmune temporal proteomics cohort launched 2026-01-08. On the public member
+    research page, the three listed studies (heart health, migraines, diabetes) all show enrollment closed.
+  confidence: Verified
+  sources:
+  - url: https://evidation.com/resources/evidation-launches-temporal-proteomics-platform-and-autoimmune-cohort
+    type: vendor_page
+    quote: is announcing the launch of a first-of-its-kind temporal biospecimen collection platform to support multiomics research in real-world settings
+    retrieved: '2026-10-11'
+  - url: https://evidation.com/join-research
+    type: vendor_page
+    quote: heart health Enrollment closed Migraines Enrollment closed Diabetes Enrollment closed
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: developer_program_status
+  status: stated
+  value: No public developer program or public API documentation. The member terms refer to "our API documentation",
+    so an API exists, but its documentation is not published.
+  confidence: Reported
+  sources:
+  - url: https://apis.io/providers/evidation-health/
+    type: secondary
+    quote: Evidation publishes no public developer program, API documentation, or machine-readable API contract
+    retrieved: '2026-10-11'
+  - url: https://evidation.com/members-terms
+    type: vendor_legal
+    quote: disable or circumvent our API usage safeguards or make calls to our API other than those authorized in our API documentation
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Searched evidation.com, help.evidation.com and github.com/evidation-health (no public repositories) for a
+    developer portal; none found.
+- field: user_cap
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://evidation.com/for-customers/our-solutions
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://evidation.com/for-customers/our-platform
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://evidation.com/for-customers/datasets
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: No per-study or per-tier participant limit published. The pool is stated as 5 million people across 100+
+    conditions ("Access 5 million engaged individuals across 100+ conditions", our-solutions page).
+- field: academic_vs_commercial
+  status: stated
+  value: No separate academic tier. Academic institutions are grouped under non-profit customers and offered the same
+    solutions (recruitment, patient insights, real-world studies, Research & Engagement Platform). Consumer members get
+    the app free and are paid points; they are participants, not data customers.
+  confidence: Corroborated
+  sources:
+  - url: https://evidation.com/for-customers/non-profit
+    type: vendor_page
+    quote: Solutions we offer for non-profit organizations, including academic institutions, patient advocacy groups and more
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+# ---------------- Pricing ----------------
+- field: device_price
+  status: not_applicable
+  note: Evidation sells no device. Members connect their own wearables and apps; where a study needs a device,
+    Evidation ships it to the participant free ("we'll send them to your door at no cost to you", join-research page).
+    Any device cost to a sponsor is not published.
+  sources:
+  - url: https://evidation.com/join-research
+    type: vendor_page
+    quote: if so, we’ll send them to your door at no cost to you
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: subscription_price
+  status: stated
+  value: Free to members, funded by research sponsors; members earn points redeemable for rewards.
+  confidence: Verified
+  scope: Evidation member app
+  sources:
+  - url: https://www.evidationapp.com/
+    type: vendor_page
+    quote: You will receive free research-grade insights from your own data.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: academic_pricing
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://evidation.com/for-customers/non-profit
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://evidation.com/for-customers/our-solutions
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: api_platform_fees
+  status: stated
+  value: Pricing model only, no prices. Datasets are licensed as a one-time extract or a subscription with recurring
+    updates; the platform is licensed. No fee figures published.
+  confidence: Verified
+  sources:
+  - url: https://evidation.com/for-customers/datasets
+    type: vendor_page
+    quote: License de-identified, individual-level datasets as a one-time extract or through a subscription model with recurring updates and continuous data enrichment.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: minimum_commitment
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://evidation.com/for-customers/datasets
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://evidation.com/for-customers/our-platform
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://evidation.com/terms
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: quote_required
+  status: stated
+  value: Yes in practice. No price list exists on any customer page; every customer page routes to a contact form.
+  confidence: Corroborated
+  sources:
+  - url: https://evidation.com/contact
+    type: vendor_page
+    quote: Are you interested in working with us? Click here
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: hosting_price
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://evidation.com/for-customers/our-platform
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://evidation.com/for-customers/non-profit
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Evidation hosts the licensed platform itself; the price of a platform licence or managed study is not published.
+# ---------------- Data access and terms ----------------
+- field: raw_streams
+  status: stated
+  value: 'Delivered to sponsors as licensed de-identified, individual-level datasets: PROs and surveys, behavioral and
+    functional measures, connected device and wearable data, clinical data (EHR via 1upHealth), and molecular data
+    where available. Whether wearable data comes at raw, intraday or daily-summary level is not documented. Wearable
+    data arrives through members'' connected apps (Apple Health, Fitbit, Garmin, Dexcom, MyFitnessPal, Oura, RunKeeper,
+    Strava, Withings, Samsung Health), not from the devices directly.'
+  confidence: Corroborated
+  sources:
+  - url: https://evidation.com/for-customers/datasets
+    type: vendor_page
+    quote: 'Data includes: Patient-reported outcomes and survey data Behavioral and functional measures Connected device and wearable data Clinical data Molecular data, where available'
+    retrieved: '2026-10-11'
+  - url: https://help.evidation.com/hc/en-us/articles/50630998040211-How-to-Earn-Activity-Points-After-Google-Fit-Connection-Changes
+    type: vendor_docs
+    quote: Fitbit, Garmin, Dexcom, MyFitnessPal, Oura, RunKeeper, Strava, Withings
+    retrieved: '2026-10-11'
+  - url: https://help.evidation.com/hc/en-us/articles/44473708031635-Electronic-Health-Record-FAQ
+    type: vendor_docs
+    quote: You’ll earn points when you successfully connect your first health care provider through 1UpHealth.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: derived_metrics
+  status: stated
+  value: Digital measures from wearables, program-level analytics, executive-ready reports and member
+    characterization labels (conditions, treatment, SDOH, digital health measures). No metric list or definitions
+    published.
+  confidence: Corroborated
+  sources:
+  - url: https://evidation.com/for-customers/our-platform
+    type: vendor_page
+    quote: such as digital measures from wearables, and active data from patient-reported outcomes
+    retrieved: '2026-10-11'
+  - url: https://evidation.com/for-customers/our-platform
+    type: vendor_page
+    quote: Program level analytics and actionable insights
+    retrieved: '2026-10-11'
+  - url: https://evidation.com/for-customers/engage
+    type: vendor_page
+    quote: Receive executive-ready reports and, where applicable, de-identified individual-level datasets to support deeper analysis and downstream decision-making.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: sampling_rates
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://evidation.com/for-customers/datasets
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://evidation.com/frequently-asked-questions/how-long-does-it-take-to-sync-my-data
+    type: vendor_docs
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: The temporal resolution of delivered wearable data is not documented. The only timing published is member sync
+    cadence ("Data syncs happen approximately every 4-6 hours and can take up to 24 hours to appear on your account.").
+- field: history_depth
+  status: unclear
+  confidence: Unclear
+  sources:
+  - url: https://evidation.com/for-customers/datasets
+    type: vendor_page
+    quote: Access rich, historical data unified at the individual level, capturing how health, treatment, and behavior evolve over time across multiple dimensions.
+    retrieved: '2026-10-11'
+  - url: https://help.evidation.com/hc/en-us/articles/360012332094
+    type: vendor_docs
+    quote: We will be unable to award points for activities that are over two weeks old and have not yet been synced with Evidation.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Sponsors are offered "historical" longitudinal data with no stated depth. The company dates to 2012, but how far
+    back member wearable data goes per person, and how much history is pulled at connection, is not published. The
+    two-week rule governs points, not data.
+- field: export_routes
+  status: stated
+  value: Sponsors get dataset deliveries (one-time extract or subscription), with no public API. Members can export
+    their own Evidation data as a .json file by email from account settings. Data from a sponsored program is requested
+    through support and routed to the study team or sponsor.
+  confidence: Verified
+  sources:
+  - url: https://evidation.com/for-customers/datasets
+    type: vendor_page
+    quote: License de-identified, individual-level datasets as a one-time extract or through a subscription model with recurring updates and continuous data enrichment.
+    retrieved: '2026-10-11'
+  - url: https://evidation.com/frequently-asked-questions/how-do-i-download-my-data
+    type: vendor_docs
+    quote: We will email you a .json file with your Evidation data.
+    retrieved: '2026-10-11'
+  - url: https://evidation.com/frequently-asked-questions/how-do-i-download-my-data
+    type: vendor_docs
+    quote: We will escalate your request to the Evidation study or program team, or to the sponsor on whose behalf the data was collected.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: rate_limits
+  status: not_applicable
+  note: No public API, so no published rate limits. Sponsor data arrives as dataset deliveries.
+  recheck_by: '2026-11-09'
+- field: retention_terms
+  status: stated
+  value: Member data is kept as long as reasonably necessary, with periods varying by data type and service. Members can
+    delete their account in settings, which is irreversible. Sponsored-program data falls under each program's own
+    consent terms and needs a support request to delete. Sponsor-side retention terms for licensed datasets are not
+    published.
+  confidence: Verified
+  scope: Member data
+  sources:
+  - url: https://evidation.com/members-privacy
+    type: vendor_legal
+    quote: We retain personal information for so long as reasonably necessary to provide the Services and fulfill the transactions you have requested
+    retrieved: '2026-10-11'
+  - url: https://evidation.com/members-privacy
+    type: vendor_legal
+    quote: may be subject to terms provided in the specific informed consent and/or other disclosures for the relevant Health Program
+    retrieved: '2026-10-11'
+  - url: https://evidation.com/frequently-asked-questions/how-do-i-delete-my-data
+    type: vendor_docs
+    quote: After deletion, your Evidation account and data cannot be downloaded or recovered (including any points you may have earned).
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: ai_training_terms
+  status: stated
+  value: Evidation may use member personal information in machine learning and other AI methods for certain services,
+    and analyzes cohort data with its own proprietary AI foundation models. Members are barred from using the services
+    or data for AI purposes. Terms on sponsors training models on licensed datasets are not published.
+  confidence: Verified
+  sources:
+  - url: https://evidation.com/members-privacy
+    type: vendor_legal
+    quote: for certain Services, this includes using personal information in machine learning and other artificial intelligence methods
+    retrieved: '2026-10-11'
+  - url: https://evidation.com/members-terms
+    type: vendor_legal
+    quote: access, visit, use, or store the Services or any related data or information for Artificial Intelligence Purposes
+    retrieved: '2026-10-11'
+  - url: https://evidation.com/resources/evidation-launches-temporal-proteomics-platform-and-autoimmune-cohort
+    type: vendor_page
+    quote: Data collected through the cohort are analyzed using Evidation’s proprietary AI foundation models
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: deprecations
+  status: stated
+  value: Google Fit connection removed on iOS and the Evidation website after a Google change (help article updated
+    2026-04-07); members told to switch to Apple Health or another connected app. No platform-level shutdown announced.
+  confidence: Verified
+  sources:
+  - url: https://help.evidation.com/hc/en-us/articles/50630998040211-How-to-Earn-Activity-Points-After-Google-Fit-Connection-Changes
+    type: vendor_docs
+    quote: Google Fit connections are no longer available on iOS and the Evidation website.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Both store listings still name Google Fit among supported sources, which contradicts the help article for iOS.
+- field: licence
+  status: stated
+  value: Proprietary. The participant platform is licensed commercially (for example to Our Future Health in the UK).
+    No open-source components; the evidation-health GitHub organization has no public repositories.
+  confidence: Verified
+  sources:
+  - url: https://evidation.com/for-customers/our-platform
+    type: vendor_page
+    quote: License Evidation's platform to enhance participant engagement, ensure protocol compliance, and improve patient outcomes.
+    retrieved: '2026-10-11'
+  - url: https://evidation.com/resources/evidation-selected-by-our-future-health-as-participant-platform-for-uks-largest-health-research-program
+    type: vendor_page
+    quote: Our Future Health will deploy Evidation’s enterprise digital health engagement and measurement platform
+    retrieved: '2026-10-11'
+  - url: https://github.com/evidation-health
+    type: repository
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: hosting_options
+  status: stated
+  value: Managed by Evidation only. Sponsors either license the Research & Engagement Platform or have Evidation run
+    the study end to end. No self-hosting or on-premises option documented.
+  confidence: Corroborated
+  sources:
+  - url: https://evidation.com/for-customers/non-profit
+    type: vendor_page
+    quote: or have Evidation manage your study end-to-end
+    retrieved: '2026-10-11'
+  - url: https://evidation.com/for-customers/our-platform
+    type: vendor_page
+    quote: License Evidation's platform to enhance participant engagement, ensure protocol compliance, and improve patient outcomes.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: For pure data licensing or recruitment, Evidation runs no software for the sponsor at all.
+- field: app_availability
+  status: stated
+  value: Evidation member app on the App Store (iPhone only, iOS 16.4 or later, rated 18+) and on Google Play.
+    Publisher Evidation Health, Inc. (iOS listing id 793039965, Android package com.achievemint.android).
+  confidence: Verified
+  sources:
+  - url: https://apps.apple.com/us/app/achievemint/id793039965
+    type: app_store
+    quote: Requires iOS 16.4 or later.
+    retrieved: '2026-10-11'
+  - url: https://play.google.com/store/apps/details?id=com.achievemint.android&hl=en_US
+    type: app_store
+    quote: Evidation - Apps on Google Play
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Sponsor-branded apps built on the licensed platform (for example Our Future Health) are listed separately.
+# ---------------- Compliance ----------------
+- field: baa
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://evidation.com/members-privacy
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://evidation.com/privacy
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://evidation.com/terms
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://evidation.com/for-customers/our-solutions
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+- field: dpa
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://evidation.com/members-privacy
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://evidation.com/privacy
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://evidation.com/terms
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+- field: hipaa_statement
+  status: unclear
+  confidence: Unclear
+  sources:
+  - url: https://evidation.com/for-customers/our-solutions
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://evidation.com/members-privacy
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://evidation.com/frequently-asked-questions/security
+    type: vendor_docs
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: 'No HIPAA text on any page checked. The only sign is an image under "Our commitment to privacy, security, and
+    compliance" on the our-solutions page whose alt text is "HIPAA Compliant logo for Evidation". It sits beside GDPR,
+    CCPA/CPRA, FDA 21 CFR Part 11, BARR certifications and Cyber Essentials Plus badges. A badge is not a statement of
+    scope. A separate Consumer Health Data Privacy Notice covers state consumer-health-data law.'
+- field: gdpr_statement
+  status: unclear
+  confidence: Unclear
+  sources:
+  - url: https://evidation.com/for-customers/our-solutions
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://evidation.com/members-terms
+    type: vendor_legal
+    quote: You may use the Services only if you are 18 years or older, are a resident of the United States
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: Only a "GDPR Logo" image (alt text) on the our-solutions page. The member service is US-only, so GDPR would bear
+    on licensed-platform deployments such as Our Future Health (UK), for which no terms are published.
+- field: iso27001
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://evidation.com/for-customers/our-solutions
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://evidation.com/frequently-asked-questions/security
+    type: vendor_docs
+    retrieved: '2026-10-11'
+  - url: https://evidation.com/members-privacy
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: Checked evidation.com/security and evidation.com/trust (both 404) as well.
+- field: soc2
+  status: unclear
+  confidence: Unclear
+  sources:
+  - url: https://evidation.com/for-customers/our-solutions
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://evidation.com/frequently-asked-questions/security
+    type: vendor_docs
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: No SOC 2 text anywhere. The our-solutions page shows an image with alt text "barr ceritfications logo" (BARR
+    Advisory audits SOC 2 and other frameworks), which suggests some third-party attestation but does not name it.
+    Ask the vendor for a report.
+- field: fda_clearances
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://api.fda.gov/device/510k.json?search=applicant:evidation
+    type: regulator_db
+    retrieved: '2026-10-11'
+  - url: https://api.fda.gov/device/pma.json?search=applicant:evidation
+    type: regulator_db
+    retrieved: '2026-10-11'
+  - url: https://api.fda.gov/device/registrationlisting.json?search=registration.owner_operator.firm_name:evidation
+    type: regulator_db
+    retrieved: '2026-10-11'
+  - url: https://api.fda.gov/device/510k.json?search=device_name:evidation
+    type: regulator_db
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: All four openFDA queries returned "No matches found" on 2026-10-11 (also checked applicant:achievemint). An "FDA
+    21 CFR Part 11" badge on the our-solutions page refers to electronic-records rules, not a clearance.
+- field: data_residency
+  status: stated
+  value: Member data is stored primarily in US data centers. No residency options are published for sponsors or for
+    licensed-platform deployments outside the US.
+  confidence: Corroborated
+  sources:
+  - url: https://evidation.com/members-privacy
+    type: vendor_legal
+    quote: Currently, we primarily use data centers in the United States.
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
