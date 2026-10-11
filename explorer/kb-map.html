@@ -166,7 +166,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
     <rect x="560" y="56" width="190" height="112" rx="8" class="box"/>
     <text x="574" y="82" class="ttl">Open questions</text>
     <text x="574" y="102" class="sm">unresolved-questions.md</text>
-    <text x="574" y="118" class="sm">79 open, 4 need you.</text>
+    <text x="574" y="118" class="sm">78 open, 4 need you.</text>
     <text x="574" y="134" class="sm">Every dead end gets a</text>
     <text x="574" y="150" class="sm">number. Section 3.</text>
 
@@ -305,7 +305,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
   <div class="eyebrow">3 · The open questions</div>
   <h2>What "Q120" and the rest mean</h2>
   <p>Whenever research hits something it can't settle (a price that isn't published, two papers that disagree, a paper behind a paywall, a call only you can make), it goes into <code>shared/unresolved-questions.md</code> with a number. Numbers run 1 to 125 in the order they came up. When I say "Q120", I mean row 120 of that file. The file prints the numbers without the Q, which is why my search missed them this morning.</p>
-  <p>On 9 October the file was reorganised by <b>who can close each question</b>, and all 34 questions a research session could answer were researched. 20 were closed outright. On 10 October an independent review and a repair pass closed 10 more and added 6 new ones. 79 remain open, and only 4 of those need you.</p>
+  <p>On 9 October the file was reorganised by <b>who can close each question</b>, and all 34 questions a research session could answer were researched. 20 were closed outright. On 10 October an independent review and a repair pass closed 10 more and added 6 new ones. On 11 October the vendor fact records closed 2 more and added 1. 78 remain open, and only 4 of those need you.</p>
 
   <div class="bars" role="list" aria-label="Open questions by who closes them">
     <div class="legend" style="padding-bottom:6px"><span>Open questions by who can close them. Bar length is to scale; longest is 49</span></div>
@@ -322,20 +322,20 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
   <div class="eyebrow">4 · Where it stands</div>
   <h2>Done, waiting on you, next</h2>
   <div class="status">
-    <div class="st" style="--c:var(--ok)"><h3><i class="dot"></i>Done today</h3>
-      <ul><li>Six weeks of robot output merged into <code>main</code> and pushed</li><li>Open questions reorganised by who can close them; 34 researched, 20 closed, 104 open down to 83</li><li>Corrections from that research: AWARE does collect location on iOS; mindLAMP's server and apps have no open-source licence; WHOOP and Apple sleep rankings fixed; Movesense does have independent validation</li><li>The six old scan branches deleted from GitHub (local backup tags kept)</li><li>KB Explorer republished with the merged papers</li><li>This map</li></ul></div>
+    <div class="st" style="--c:var(--ok)"><h3><i class="dot"></i>Done (10 and 11 October)</h3>
+      <ul><li>Vendor fact records for the first 10 companies: 436 facts, each with a source, an exact quote and a date; 275 Verified</li><li>Hand checks in a browser: WHOOP prices, Withings SpO2 clearance, Beiwe Play listing, Oura privacy-framework listing</li><li>All ten profiles, both comparison matrices and the READMEs corrected to match the records, with a generated facts block in each profile</li><li>Open questions: 15 updated, 2 closed, 1 added (78 open)</li><li>Batch 2 research started: 13 companies</li></ul></div>
     <div class="st" style="--c:var(--warn)"><h3><i class="dot"></i>Needs you (in claude.ai settings)</h3>
       <ol><li>Set the scan routine to push to <code>main</code>, not a new branch</li><li>Add <code>www.ebi.ac.uk</code>, <code>pmc.ncbi.nlm.nih.gov</code>, <code>www.ncbi.nlm.nih.gov</code> to its network allowlist so it can save PDFs</li><li>Four decisions: Q109, Q114, Q122, Q123 (below in section 3)</li></ol></div>
     <div class="st" style="--c:var(--accent)"><h3><i class="dot"></i>Next research</h3>
-      <ol><li>Update the Fitbit profile: Google's legacy Fitbit Web API was due to shut down on 30 September 2026</li><li>Spot-check five Module 3 profiles against their full texts</li><li>Three leftover Module 3 profiles: Vidal 2022, Nock 2026, Weingarden 2025</li><li>Screen the 18 queued candidates, starting with Zawada 2025 (the first Beiwe study after the heartbeat change)</li><li>Approve or drop the Module 4 robot proposal</li></ol></div>
+      <ol><li>Finish batch 2 (Polar, Ametris, Axivity, Activinsights, Movesense, mindLAMP, AWARE, Avicenna, MetricWire, m-Path, CARP, LifeData, Evidation), then batch 3 (12 intermediaries and newer companies)</li><li>Re-check the RADAR-base Fitbit route before Google turns the old API off on 30 October</li><li>Vendor confirmation sheets for the questions only a vendor can answer (sent only with your go-ahead)</li><li>Screen the 18 queued Module 3 candidates, starting with Zawada 2025</li><li>Approve or drop the Module 4 robot proposal</li></ol></div>
   </div>
 </section>
 
 </div>
 
 <script>
-const secs=[["Vendor checklists","only when a study picks that vendor",49],["Needs library access","optional, a few minutes each",7],["Standing evidence gaps","re-checked each literature pass",6],["Needs a hands-on test","developer account or device",7],["Needs an author or lab","optional emails",6],["Needs a decision","you",4],["Research queue","emptied 9 October",0]];
-const max=49;
+const secs=[["Vendor checklists","only when a study picks that vendor",48],["Needs library access","optional, a few minutes each",7],["Standing evidence gaps","re-checked each literature pass",6],["Needs a hands-on test","developer account or device",7],["Needs an author or lab","optional emails",6],["Needs a decision","you",4],["Research queue","emptied 9 October",0]];
+const max=48;
 for(const [name,who,n] of secs){
   const row=document.createElement("div");row.className="bar";row.setAttribute("role","listitem");
   row.innerHTML=`<div class="lab">${name}<br><span class="muted" style="font-size:.8rem">${who}</span></div><div class="track"><div class="fill" style="width:${n/max*100}%"></div></div><div class="n">${n}</div>`;
