@@ -33,6 +33,9 @@ def load_state():
 
 
 def main():
+    if '-h' in sys.argv or '--help' in sys.argv:
+        print(__doc__)
+        return
     only = None
     if '--only' in sys.argv:
         only = set(sys.argv[sys.argv.index('--only') + 1].split(','))
