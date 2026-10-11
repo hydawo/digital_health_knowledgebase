@@ -7,18 +7,18 @@
 | Organization | Empatica Inc. (US/Italy) |
 | Category | Research- and clinical-grade wearable with an FDA-cleared health monitoring platform |
 | Current status | Active |
-| Platforms/devices | **EmbracePlus** and **EmbraceMini** (current); **E4 wristband** (legacy predecessor, still widely cited in the literature) |
+| Platforms/devices | **EmbracePlus** and **EmbraceMini** (current); **E4 wristband** (legacy predecessor, still widely cited in the literature; E4 and its software suite sunset 14 February 2025) |
 | Open source | No |
 | Hosting/deployment | Empatica Cloud; Care Portal web console; AWS S3 data access keys |
 | Pricing model | **Published, transparent bundle pricing for academic research**, unusual in this module |
-| Last verified | 2026-08-21; biomarker counts re-checked 2026-10-09; pricing, academic discount, sensor modes, FDA clearances and compliance re-verified 2026-10-10; SpO2 sensor row reconciled with K221282 2026-10-10 |
+| Last verified | 2026-10-11 (vendor fact record); earlier passes 2026-08-21, 2026-10-09 and 2026-10-10 |
 
 ## Summary
 
 - Empatica is the platform to reach for when the research question requires **raw physiological signal from a regulated, purpose-built device** rather than a consumer product with an API bolted on. Two things distinguish it:
 
 1. **EDA (electrodermal activity).** Empatica's wrist EDA, available as raw signal with an FDA-cleared EDA parameter, is the reason the device exists for stress, arousal, emotion, seizure, and autonomic research. **Corrected 2026-10-10:** it is not the only EDA source in this module. Samsung's Health Sensor SDK documents a raw `EDA_CONTINUOUS` tracker at 1 Hz on Galaxy Watch8 and later (Samsung data specifications, **Verified**), and the Verily Study Watch records EDA (see `emerging-platforms.md`, **Corroborated**). Among those, Empatica remains the one with a published self-serve academic plan and an FDA-cleared EDA parameter. Apple, Fitbit, Garmin, Oura, WHOOP, Polar and Withings have no EDA route.
-2. **FDA clearance of the platform**, including cleared digital biomarkers. The Empatica Health Monitoring Platform was cleared in November 2022 (K221282: peripheral skin temperature, EDA, SpO2 under no-motion conditions, activity associated with movement during sleep), with later clearances adding pulse rate and respiratory rate (K230457, K242737) and Parkinson's movement measures (K260374); EmbraceMini has its own clearance (K252981). See Privacy, Security, and Compliance. This is a materially different regulatory posture from every consumer platform here.
+2. **FDA clearance of the platform**, including cleared digital biomarkers. The Empatica Health Monitoring Platform was cleared in November 2022 (K221282: peripheral skin temperature, EDA, SpO2 under no-motion conditions, activity associated with movement during sleep), with later clearances adding pulse rate and respiratory rate (K230457), a Predetermined Change Control Plan for the SpO2 algorithm (K242737) and Parkinson's movement measures (K260374); EmbraceMini has its own clearance (K252981). See Privacy, Security, and Compliance. This is a materially different regulatory posture from every consumer platform here. The research Care Lab App and Care Lab Portal themselves are research use only and not FDA-cleared (corrected 2026-10-11, vendor fact record).
 
 - Empatica also publishes **actual prices for an academic research plan**, which, after working through Garmin's "contact us", Withings' "contracted partners only", Fitabase's "we'll craft a plan", and Ametris' silence, is a significant practical advantage for grant budgeting.
 
@@ -26,7 +26,7 @@
 
 - **EmbracePlus**, wrist-worn multi-sensor device, the current product.
 - **EmbraceMini**, a smaller actigraphy-focused wearable sold alongside EmbracePlus (listed as "New" on Empatica's site), with its own FDA 510(k) K252981 (2025-12-22) for movement and sleep-movement monitoring. Its research-studies table covers 12 of the 17 named biomarkers, with no PPG, EDA or temperature measures. **Verified** (2026-10-10).
-- **E4 wristband**, the legacy device. It appears in a very large volume of published EDA and stress research and remains the reference point in that literature. Studies replicating E4-based work should confirm signal comparability with EmbracePlus rather than assuming equivalence.
+- **E4 wristband**, the legacy device. Empatica sunset the E4 and its whole software suite (E4 connect, manager, realtime app, streaming server and SDK) on 14 February 2025 [28]; hardware support ended 1 August 2024 per a University of Twente lab notice [29] (secondary). It appears in a very large volume of published EDA and stress research and remains the reference point in that literature. Studies replicating E4-based work should confirm signal comparability with EmbracePlus rather than assuming equivalence.
 - **Empatica Cloud**, data storage and processing.
 - **Care Portal**, web console for professionals to manage participants across sites and monitor digital biomarkers.
 - **Care app** (Enterprise plan) / **Care Lab app** (Academic & Basic Research plan), the participant/operator-facing applications; note the plan-tier split.
@@ -38,20 +38,24 @@
 
 | Sensor | Present | Researcher access to underlying signal | Resolution or sampling | Notes |
 |---|---|---|---|---|
-| PPG | Yes, advanced optical | Clinically validated pulse rate and pulse rate variability; raw access per the data-access section | Unclear | Per-sensor rates for EmbracePlus were not published on the pages retrieved. |
+| PPG | Yes, advanced optical (EmbracePlus only) | Raw blood volume pulse and systolic peaks (IBI) as Avro files [22]; pulse rate and pulse rate variability (RMSSD) biomarkers | 64 Hz via 5 LEDs (infrared, green, red) in Pulse Rate Pro; 4 Hz infrared via 1 LED in Actigraphy Pro; off in the other modes [20] | **Verified 2026-10-11** (vendor fact record). |
 | ECG | No | Not applicable | Not applicable |  |
-| Accelerometer | Yes | Raw acceleration data | Set by sensor mode: **Actigraphy Pro 64 Hz**, **Actigraphy Optimized 32 Hz** (up to 14 days battery); "Gyroscope 100" mode gives "6-axis motion sensing at 100 Hz" | Sensor modes are "hardware configurations", not free rates. Rates for Standard and Gyroscope Max modes not published. Verified 2026-10-10 (Empatica blog and research-studies page). |
-| Gyroscope | Yes, in selected sensor modes | Raw angular velocity ("with the gyroscope enabled in selected sensor modes") | 100 Hz in the Gyroscope 100 mode; otherwise not published | Verified 2026-10-10. |
-| Magnetometer | Unclear | Unclear | Unclear |  |
-| Temperature | Yes, digital skin temperature | Peripheral skin temperature | Unclear |  |
-| SpO2 | Yes, on EmbracePlus (the device in K221282) | SpO2 is an FDA-cleared parameter under K221282 for "trained healthcare professionals or researchers", **under no-motion conditions only**; the 510(k) states it is "not intended for SpO2 monitoring in conditions of motion or low perfusion". Whether SpO2 output is included in the Academic & Basic Research plan is Unclear. | Range 70 to 100%, resolution 1% (510(k) summary) | **Verified 2026-10-10** (openFDA record and K221282 summary read). Accuracy 2.6% Arms over 70 to 100% in a 13-subject arterial blood gas study, not tested with motion or low perfusion. Corrected from "Unclear" to agree with the compliance section. |
+| Accelerometer | Yes | Raw acceleration data | Set by sensor mode, all ±16 g. Pulse Rate Pro 64 Hz, Actigraphy Pro 64 Hz, Actigraphy Optimized 32 Hz, Gyroscope Max 64 Hz, Gyroscope 100 100 Hz [20] | Sensor modes are "hardware configurations", not free rates. **Verified 2026-10-11** (vendor fact record). |
+| Gyroscope | Yes, in selected sensor modes | Raw angular velocity ("with the gyroscope enabled in selected sensor modes") | 64 Hz in Gyroscope Max, 100 Hz in Gyroscope 100, ±2000 dps; off in the other three modes [20] | **Verified 2026-10-11** (vendor fact record). |
+| Magnetometer | EmbracePlus none listed. EmbraceMini yes, per Empatica's clinical-trials and EmbraceMini pages [10] | No researcher stream on the academic plan; absent from the raw-data table, the sensor-mode table and the Avro stream list | Not applicable | **Verified 2026-10-11** (vendor fact record). Whether Enterprise clients get magnetometer data is not stated. |
+| Temperature | Yes, digital skin temperature (EmbracePlus only) | Peripheral skin temperature | 1 Hz in every mode [20] | **Verified 2026-10-11** (vendor fact record). |
+| SpO2 | Yes, on EmbracePlus (the device in K221282) | SpO2 is an FDA-cleared parameter under K221282 for "trained healthcare professionals or researchers", **under no-motion conditions only**; the 510(k) states it is "not intended for SpO2 monitoring in conditions of motion or low perfusion". The academic help centre lists SpO2 as an Enterprise biomarker [38], so academic buyers should not expect it (vendor fact record, 2026-10-11). | Range 70 to 100%, resolution 1% (510(k) summary) | **Verified 2026-10-10** (openFDA record and K221282 summary read). Accuracy 2.6% Arms over 70 to 100% in a 13-subject arterial blood gas study, not tested with motion or low perfusion. Corrected from "Unclear" to agree with the compliance section. |
 | GPS | No | Not applicable | Not applicable |  |
 | Barometer / altimeter | Unclear | Unclear | Unclear |  |
-| EDA | Yes, ventral EDA | Electrical conductance at the skin surface | Unclear | The differentiating sensor. |
-| Ambient light | Unclear | Unclear | Unclear |  |
+| EDA | Yes, ventral EDA (EmbracePlus only) | Electrical conductance at the skin surface; skin conductance level biomarker | 4 Hz in Pulse Rate Pro and Actigraphy Pro; off in the other modes [20] | The differentiating sensor. **Verified 2026-10-11** (vendor fact record). |
+| Ambient light | EmbracePlus none listed. EmbraceMini yes | EmbraceMini ambient light stream and biomarker | 1 Hz (EmbraceMini) [20] | **Verified 2026-10-11** (vendor fact record). |
 | Other | Unclear | Unclear | Unclear | Not verified against current documentation. |
 
-**Verification.** Empatica describes "optimized sampling rates" without publishing most of them; a significant documentation gap recorded in the notes below. **Updated 2026-10-10:** the research-studies page now lists five sensor modes (Standard, Actigraphy Pro, Actigraphy Optimized, Gyroscope Max, Gyroscope 100), and the actigraphy rates above are published. Per-mode PPG, EDA and temperature rates are still not on Empatica's pages; the legacy E4 values (BVP 64 Hz, EDA 4 Hz) must not be assumed for EmbracePlus. Empatica says "All Empatica Actigraphy measures are available with both sensor modes for our Enterprise clients", which implies some mode and measure combinations are Enterprise-only (**Reported**).
+**Verification.** **Corrected 2026-10-11 (vendor fact record).** Empatica's academic help centre now publishes every rate for all five sensor modes (Pulse Rate Pro, Actigraphy Pro, Actigraphy Optimized, Gyroscope Max, Gyroscope 100) [20]. The first mode is named Pulse Rate Pro, not "Standard" as the 2026-10-10 pass had it. PPG and EDA run only in Pulse Rate Pro and Actigraphy Pro, and Pulse Rate Pro is EmbracePlus only. EDA 4 Hz and PPG 64 Hz happen to equal the legacy E4 values, but they are now documented for EmbracePlus, not assumed. Three constraints matter for study design.
+
+- Until 16 September 2026 the Academic & Basic Research plan offered EmbracePlus in one mode only, the one now called Pulse Rate Pro [31]. Studies created before that date run Pulse Rate Pro by default [20].
+- The sensor mode "cannot be changed once the account has been created" [20]. With one study per academic account, a protocol needing two modes needs two accounts.
+- The McRoberts algorithm set is Enterprise-only [32]. Gyroscope 100 computes no activity biomarkers, but its raw output is described as compatible with the McRoberts and Mobilise-D libraries, so academics can run those themselves.
 
 ### Notes from earlier verification passes
 
@@ -62,7 +66,7 @@
 | **Accelerometer** | Raw acceleration data |
 | **Digital temperature sensor** | Peripheral skin temperature |
 
-- Empatica describes the device as using "optimized sampling rates" to balance data quality against battery efficiency. **Specific per-sensor sampling rates for EmbracePlus were not published on the pages retrieved**, a significant documentation gap given that sampling rate is the whole point of buying a research device. (For reference, the legacy E4 sampled EDA at 4 Hz, PPG/BVP at 64 Hz, ACC at 32 Hz, and temperature at 4 Hz; **do not assume EmbracePlus matches these.**) Obtain the EmbracePlus sampling specification in writing before designing a study.
+- *(Superseded 2026-10-11: per-mode rates are now published; see the table above.)* Empatica describes the device as using "optimized sampling rates" to balance data quality against battery efficiency. **Specific per-sensor sampling rates for EmbracePlus were not published on the pages retrieved**, a significant documentation gap given that sampling rate is the whole point of buying a research device. (For reference, the legacy E4 sampled EDA at 4 Hz, PPG/BVP at 64 Hz, ACC at 32 Hz, and temperature at 4 Hz; **do not assume EmbracePlus matches these.**) Obtain the EmbracePlus sampling specification in writing before designing a study.
 
 ## Derived Metrics / Analytics
 
@@ -80,6 +84,8 @@
   - Reading: the large figure is the clinical-trial measure library, and the research-studies table is what the self-serve academic product exposes. That reading is **Corroborated**, not stated by Empatica in so many words. Whether an Academic buyer can get any measure outside the 17-row table needs Empatica to confirm.
   - The same pages now list a second device, **EmbraceMini** (actigraphy-focused, FDA 510(k) for sleep, circadian rhythm and physical activity monitoring, 14+ days battery in its optimized mode). It was not profiled in the first pass.
 
+- **Which biomarkers each mode yields (vendor fact record, 2026-10-11).** The academic help centre's biomarker list matches the 17-row table above [21]. Pulse, respiratory and EDA measures need EmbracePlus in Pulse Rate Pro. Gyroscope 100 computes no activity biomarkers. SpO2 is marked Enterprise [38]. Enterprise pages market 300+ measures, 6 of them FDA-cleared [10]. **Verified.**
+
 - Notable in that list for methodological reasons: **actigraphy counts** and **activity counts** are provided, meaning EmbracePlus output can be made comparable to the enormous ActiGraph-based physical activity literature, a genuinely useful bridge.
 
 ## Active Data Collection
@@ -90,18 +96,21 @@
 
 - The Care Portal provides a real study console, one of only two platforms in this module (with Ametris/CentrePoint) that does:
 
-- Create **studies, sites, and unlimited participant credentials**.
+- Create studies, sites and participant credentials. **Corrected 2026-10-11 (vendor fact record).** An academic account allows 1 study, 1 site, 1 study manager and up to 1,000 participants, and its sensor mode is fixed at creation [15][20]. Enterprise accounts manage multiple studies and sites [10], with a minimum order of 100 devices and no published participant cap [21].
 - Manage **multiple sessions across participants from one device**, meaning a single device can be recycled across participants, which materially changes the cost model for sequential-cohort designs.
 - **Live tracking of participant wearing time** to minimise data loss, active adherence monitoring, not post-hoc discovery.
 - Onboard and offboard participants in a few clicks.
-- Multi-site management.
+- Multi-site management (Enterprise plan only; the academic plan allows 1 site).
 
 ## Data Access and Export
 
 | Route | Detail |
 |---|---|
-| **Raw data download** | **CSV format**, via the Care Portal |
-| **Programmatic access** | **Data access keys via Amazon S3**, bulk, scriptable retrieval |
+| **Raw data download** | **Avro format only**, from the Empatica AWS S3 bucket, in files of up to about 30 minutes with UTC timestamps [22]. Streams are accelerometer, gyroscope, blood volume pulse, EDA, skin temperature, systolic peaks (IBI), steps and tags, depending on device and mode. Empatica supplies a Python Avro-to-CSV script, and community readers exist [37]. Corrected 2026-10-11 (vendor fact record); the earlier "CSV via the Care Portal" was wrong for raw signal. |
+| **Biomarker download** | CSV, from the Care Lab Portal Download Hub and the S3 bucket [25] |
+| **Programmatic access** | **Data access keys via Amazon S3**, bulk, scriptable retrieval with Cyberduck, the AWS CLI or AWS SDKs [23]. Up to two active key sets at a time [24]. No other rate limit is published; the full Data Access Documentation sits inside the portal |
+| **Upload latency** | The Care Lab App sends data in 30-minute batches [25]. Actigraphy Optimized syncs once a day, so data may be up to 24 hours old [20] |
+| **Enterprise Cloud API** | Sold through sales to clinical trial sponsors and CROs, with developer documentation given to clients only; data still in S3 as Avro and CSV [26] |
 | **Care Portal visualisation** | Biomarkers viewable in the console |
 | **Cloud storage** | Data held in Empatica Cloud with historical, timestamped retrieval |
 | **Real-time streaming** | **Not available.** Empatica's FAQ: data are "not viewable in real-time. This means you cannot stream data live". Re-verified 2026-10-10. Real-time seizure alerting exists only in the separate EpiMonitor product (K250515), not in the research plan. |
@@ -114,9 +123,9 @@
 
 - S3-based bulk data access.
 - Care Portal.
-- A general-purpose REST API for study/participant management was **not established** from the pages retrieved.
+- **Corrected 2026-10-11 (vendor fact record).** A **Cloud API** exists for clinical trial sponsors and CROs, sold through sales, with full developer documentation "provided" only to clients [26]. It is not part of the academic plan. **Verified.**
 - No device SDK; EmbracePlus is not user-programmable. Empatica's FAQ: "We do not provide an SDK for academic research purposes." (**Verified** 2026-10-10.)
-- The legacy E4 offered a real-time BLE streaming SDK; **EmbracePlus does not appear to**, which is a capability regression for lab-based real-time work and should be confirmed.
+- The legacy E4 offered a real-time BLE streaming SDK. **Resolved 2026-10-11:** the E4 SDK was sunset with the rest of the E4 suite on 14 February 2025 [28], and no research plan offers a replacement. A remote-patient-monitoring page still describes a "plug-and-play" platform SDK for building a patient app that streams EmbracePlus data, outside the research plans, with no public documentation [27]. Nothing shows it is still sold to new customers (**Corroborated**). A custom real-time EmbracePlus build exists for the DATALAND museum, so the hardware can stream, but no plan offers it.
 
 ## Deployment and Infrastructure
 
@@ -125,7 +134,9 @@
 ## Participant Experience
 
 - Wrist-worn. Purpose-built for continuous wear including sleep.
-- **Battery life and charging cadence were not stated on the pages retrieved**, an important omission for protocol design. Obtain this figure. (An extra charger is sold separately at $42.90, which implies charging is frequent enough that spares matter.)
+- **Battery life depends on the sensor mode (corrected 2026-10-11, vendor fact record).** The academic help centre gives EmbracePlus 2+, 7+, 14+, 5+ and 5+ days for Pulse Rate Pro, Actigraphy Pro, Actigraphy Optimized, Gyroscope Max and Gyroscope 100. EmbraceMini gives 7+, 14+, 3+ and 3+ days for the last four (Pulse Rate Pro is not available on it). On-device memory holds about 1.5 to 14 days of data, by mode [20]. Pulse Rate Pro, the only academic mode before 16 September 2026, runs about 2 days per charge, which matters when reading older EmbracePlus studies.
+- Empatica's clinical-trials and Cloud API pages say battery "can last up to 28 days" [10][26]. No published mode reaches 28 days, so treat that figure as unsupported. It may describe an unpublished Enterprise configuration; Empatica has not said.
+- An extra charger is sold separately at $42.90.
 - Silicone band loops are a separate accessory at $21.90.
 - The device is a medical/research device rather than a consumer product, so it offers little participant-facing engagement value, participants wear it because the study asks them to, not because they want to. Expect adherence to depend on study contact rather than device appeal.
 - Multi-session device reuse supports staggered enrolment designs.
@@ -134,13 +145,22 @@
 
 - **FDA clearances (re-verified 2026-10-10 in openFDA and the 510(k) indications for use).** FDA clearance of a platform is not a blanket endorsement of every output; cite the specific clearance.
   - **K221282** (2022-11-20), Empatica Health Monitoring Platform: for "trained healthcare professionals or researchers" to remotely monitor peripheral skin temperature, electrodermal activity, SpO2 under no-motion conditions, and activity associated with movement during sleep, in ambulatory adults 18 and older in home-healthcare settings.
-  - **K230457** (2023-10-30) and **K242737** (2025-06-06), Health Monitoring Platform with EmbracePlus, Empatica Care and Care Portal: add pulse rate and respiratory rate (no-motion). K242737 is for "retrospective remote monitoring" and states "the platform does not provide real-time alerts".
+  - **K230457** (2023-10-30), Health Monitoring Platform with EmbracePlus, Empatica Care and Care Portal, adds pulse rate and respiratory rate (no-motion).
+  - **K242737** (2025-06-06), same device as K230457 except for an authorized Predetermined Change Control Plan (PCCP) for a subcomponent of the SpO2 algorithm, per its 510(k) summary [18][34]. It is for "retrospective remote monitoring" and states "the platform does not provide real-time alerts". Corrected 2026-10-11 (vendor fact record); the profile previously credited it with pulse rate and respiratory rate.
   - **K260374** (2026-08-14), Health Monitoring Platform for Parkinson's Disease Monitoring (EmbracePlus, EmbraceMini, PKG Monitor): kinematics of tremor, bradykinesia and dyskinesia, ages 46 to 83.
   - **K252981** (2025-12-22), EmbraceMini: remote monitoring of limb or body movement and activity associated with movement during sleep.
   - Seizure products: Embrace (K172935, K181861) and EpiMonitor (K232915; **K250515**, 2025-06-19, EmbracePlus plus app, generalized tonic-clonic seizure alerts to a caregiver, ages 6 and up, prescription only).
-  - **Verified** (openFDA, https://api.fda.gov/device/510k.json?search=applicant:empatica, and the 510(k) PDFs, 2026-10-10).
-- **Security and data governance (read 2026-10-10).** Empatica's legal page lists ISO/IEC 27001:2022 ("performed by independent third-party auditors"), ISO 13485:2016 QMS certification, MDSAP and CE certificates, and a published "Empatica Health Monitoring Platform - Data Processing Agreement". The participant privacy policy says Empatica stores User Data "on HIPAA-compliant cloud infrastructure located in US, Virginia" and retains it during the service "plus a period of 10 years after the termination" of the contract. These are vendor statements; the ISO certificates are linked from the legal page but were not opened (**Corroborated**).
-- **Not found:** any SOC 2 statement or published BAA. An academic "vendor documentation pack" is offered behind a form and was not read.
+  - **PKG System** (acquired with PKG Health, October 2025), product code GYD: K140086 (2014-08-22), K161717 (2016-09-20) and Gen 2 Plus K211887 (2022-03-11). The holder of record in openFDA is GKC Manufacturing Pty, Ltd., not Empatica [35]. Empatica's homepage claims "12 FDA clearances"; the 9 Empatica 510(k)s plus these 3 make 12, but Empatica does not say which records it counts, so that reconciliation is an inference.
+  - The research Care Lab App and Care Lab Portal are research use only and not FDA-cleared.
+  - The only FDA enforcement record found is a Class II recall of the consumer Embrace2 (Z-0159-2024, battery may last under 48 hours), outside the research platform. Embrace2 is no longer sold; existing subscriptions continue [39].
+  - **Verified** (openFDA, https://api.fda.gov/device/510k.json?search=applicant:empatica, and the 510(k) PDFs, 2026-10-10; vendor fact record 2026-10-11).
+- **Security and data governance (read 2026-10-10).** Empatica's legal page lists ISO/IEC 27001:2022 ("performed by independent third-party auditors"), ISO 13485:2016 QMS certification, MDSAP and CE certificates, and a published "Empatica Health Monitoring Platform - Data Processing Agreement". The participant privacy policy says Empatica stores User Data "on HIPAA-compliant cloud infrastructure located in US, Virginia" and retains it during the service "plus a period of 10 years after the termination" of the contract. These are vendor statements (**Corroborated**), except as noted below.
+- **ISO/IEC 27001:2022 certificate, opened 2026-10-11 (vendor fact record).** TÜV Rheinland Cert GmbH, registration no. 01 153 2117571, holder Empatica Srl (Milan), valid 2025-10-31 to 2028-10-30, first certified 2023. Scope covers design and manufacture of the wearables and the monitoring software and platforms [33]. **Verified** from the certificate, though not cross-checked on TÜV's Certipedia registry. Separate TÜV Rheinland Italia certificates cover ISO 13485 (39 05 0072201, valid to 2028-05-24) and the EU MDR QMS (notified body 1936).
+- **HIPAA and GDPR.** Empatica says the platform is GDPR and HIPAA compliant and that data is stored and transmitted in line with 21 CFR Part 11, HIPAA and GDPR [10][15]. Empatica Srl has appointed a Data Protection Officer [17]. Vendor statements, **Corroborated**.
+- **Data residency.** Research participant data sits in an Amazon S3 bucket on AWS in Virginia, US [17][23]. No EU or regional residency option is published (**Corroborated**; Enterprise contracts may differ).
+- **DPA.** The terms of service incorporate an Empatica Health Monitoring Platform Data Processing Agreement [30], also listed in the academic vendor pack with a HECVAT and an IT risk assessment [36]. The DPA itself sits behind a JavaScript-rendered Salesforce link and was not read (**Corroborated**).
+- **Use of customer data.** The terms let Empatica use customer data to create digital biomarkers and anonymized data sets for its own business purposes, owned by Empatica [30]. No clause names AI or machine-learning training (**Corroborated**, since the DPA was not read).
+- **Not public (2026-10-11).** No SOC 2 report or statement; the legal page and vendor-pack contents list ISO 27001 instead (**Verified** absence). No Business Associate Agreement is mentioned on any public page (**Corroborated** absence, because the DPA and the form-gated vendor pack were not read). Ask compliance@empatica.com.
 
 ## Pricing
 
@@ -161,17 +181,19 @@
 
 - Volume discounts apply automatically at **5+ devices**. Taxes and shipping additional.
 
+- **Renewal (added 2026-10-11, vendor fact record).** After the bundled 3 or 5 years, the subscription can be extended one year at a time per device, from $388.80 / €359.64 a year (EmbracePlus) and $291.60 / €269.73 a year (EmbraceMini) [21]. Subscriptions are only sold with devices bought from Empatica, so devices from other sources cannot be added [21]. The store offers an optional 30-day quote with no payment method, and teams needing more than 30 devices are asked to contact Empatica [15][31]. **Verified.**
+
 - *(Superseded 2026-10-09: the store page no longer uses "11+"; see the re-check under Derived Metrics.)* The academic plan includes **"11+ digital biomarkers"** per the store page, note this conflicts with the 18 named on the research-studies page and the "over 100" claimed in platform marketing. Three different public figures. **Unclear** which biomarkers a purchaser actually receives; this is now the most consequential remaining commercial question about Empatica, because it determines whether the academic tier is sufficient for a given protocol.
 
-- **Enterprise plan** pricing remains quote-only. **Unclear.**
+- **Enterprise plan** pricing is not public and requires contacting Empatica (`llms.txt` says "enterprise pricing is not self-serve") [13]. The Enterprise minimum order is **100 devices** [21]. Cloud API fees are not public. Corrected 2026-10-11 (vendor fact record); the profile previously gave no minimum.
 
 ### Research program and academic data access (checked 2026-10-10)
 
-- **Program:** the **Academic & Basic Research plan**, sold self-serve on Empatica's store, with a 25% academic discount by application (above). Eligibility: university students and academics with an institutional email. Enterprise (pharma, CRO) is quote-only. **Verified.**
-- **What academics get:** the device plus 3 or 5 years of Empatica Cloud data access and Care Lab Portal access, with "Access to all EmbracePlus and EmbraceMini sensor raw data and a selection of digital biomarkers across vital signs, sleep and activity" (store page). Data come by self-serve download and Amazon S3 data access keys; there is no real-time streaming and no SDK for academic research. The academic account is limited to 1 study, 1 site and 1,000 participants (research-studies page, 2026-10-09). **Verified.**
-- **How it differs from Enterprise:** per earlier passes, Enterprise uses the Care app rather than Care Lab and gets the complete biomarker suite (support article, source 3, 2026-08-21), and Empatica's clinical-trial pages cite "300+ digital measures" (source 10, 2026-10-09). Empatica's blog adds that all actigraphy measures are available in both actigraphy modes "for our Enterprise clients" (**Reported**, 2026-10-10). Which measures are Enterprise-only is not published. **Unclear.**
-- **Retention:** participant data retained during the service plus 10 years after contract end, per the participant privacy policy (**Corroborated**). What a team can still download after its 3- or 5-year access window ends is not stated. **Unclear.**
-- **Status:** active (store page and academic-discount form live on 2026-10-10).
+- **Program:** the **Academic & Basic Research plan**, sold self-serve on Empatica's store with no application review, with a 25% academic discount by application (above). The discount code needs a university email. The terms limit Academic Subscriptions to educational institutions and qualified non-profit research organizations, used by their own staff or students for non-commercial teaching and research [30]. The platform as a whole is also sold to for-profit research institutions [17], and Enterprise qualification is decided with sales [21]. **Verified** (vendor fact record, 2026-10-11).
+- **What academics get:** the device plus 3 or 5 years of Empatica Cloud data access and Care Lab Portal access, with "Access to all EmbracePlus and EmbraceMini sensor raw data and a selection of digital biomarkers across vital signs, sleep and activity" (store page). Data come by self-serve download and Amazon S3 data access keys; there is no real-time streaming and no SDK for academic research. The academic account is limited to 1 study, 1 site, 1 study manager and 1,000 participants (research-studies page, 2026-10-09), and its sensor mode is fixed when the account is created [20]. **Verified.**
+- **How it differs from Enterprise (corrected 2026-10-11, vendor fact record).** The academic plan is aimed at smaller studies without a dedicated account manager, and is non-commercial only [21][30]. Until 16 September 2026 it offered EmbracePlus in one mode only, now called Pulse Rate Pro; four more modes and EmbraceMini were added that month [31]. Enterprise is for large clinical trials, with a 100-device minimum, multiple studies and sites, IRB support, audit trails, the Cloud API and quoted pricing [10][21][26]. Named Enterprise-only items are the McRoberts algorithms [32] and SpO2 [38]. Empatica's clinical-trial pages cite "300+ digital measures" (source 10). Enterprise uses the Care app rather than Care Lab (source 3). **Verified.**
+- **Retention (corrected 2026-10-11, vendor fact record).** Participant data is retained during the service plus 10 years after contract end [17]. Access can be extended yearly (see Pricing). After termination the customer can retrieve its data for 60 days, must stop using the platform when the term expires, and continued access beyond the term may carry extra charges [30]. Repair or replacement of a device may delete data stored on it [30]. **Verified.**
+- **Status:** active (store page and academic-discount form live on 2026-10-10). EmbraceMini and four extra EmbracePlus sensor modes joined the academic plan in September 2026 [31]. No deprecation is announced for EmbracePlus, EmbraceMini or the platform.
 
 ### What this means in practice
 
@@ -190,7 +212,7 @@
 
 - **Raw wrist EDA with an FDA-cleared EDA parameter and a self-serve academic plan**, still the most accessible EDA route in this module for stress, arousal, and seizure research (Samsung Galaxy Watch8 now also exposes raw EDA at 1 Hz through its partner-gated SDK; corrected 2026-10-10).
 - **FDA-cleared platform** with cleared digital biomarkers, a regulatory posture no consumer platform matches.
-- **Raw data access as a standard, documented feature** (CSV + S3 keys), not a gated partnership.
+- **Raw data access as a standard, documented feature** (Avro raw signal and CSV biomarkers through S3 keys), not a gated partnership.
 - **Published academic pricing**, genuinely rare and enormously helpful for grant writing.
 - Real study-management console with **live wear-time monitoring**.
 - **Device reuse across participants** dramatically improves cost efficiency in staggered designs.
@@ -201,11 +223,12 @@
 ## Limitations
 
 - **No real-time streaming**, rules out JITAI and closed-loop designs.
-- **Most sampling rates not published** for EmbracePlus (accelerometer rates per actigraphy mode now are; PPG, EDA and temperature are not), which is a serious documentation gap for a research device.
+- **One fixed sensor mode per academic account.** The mode cannot be changed after the account is created, and PPG and EDA run only in two of the five modes. (Sampling rates, listed as unpublished before 2026-10-11, are now documented per mode.)
 - Biomarker count stated inconsistently across Empatica's own pages; academic-tier contents unclear.
 - Cost per simultaneous participant is an order of magnitude above consumer devices.
-- Battery life and charging burden not documented.
-- Apparent loss of the E4's real-time BLE streaming SDK.
+- Short battery in the cardiac mode. Pulse Rate Pro lasts about 2 days per charge; only the actigraphy modes reach 7 to 14 days.
+- The E4's real-time BLE streaming SDK was sunset on 14 February 2025, with no replacement in any research plan.
+- Raw signal comes only as Avro files, which needs conversion tooling.
 - No survey/EMA capability.
 - No self-hosting; vendor cloud only.
 - Not included in the major comparative sleep validations.
@@ -220,7 +243,7 @@
 - Studies needing **raw multimodal physiological signal** (EDA + PPG + ACC + temperature) from a single validated device.
 - **Regulated or clinical studies** where an FDA-cleared platform materially eases the regulatory pathway.
 - **Staggered-enrolment designs** where devices rotate between participants, the cost model rewards this strongly.
-- Multi-site clinical studies needing centralised participant management and wear-time monitoring.
+- Multi-site clinical studies needing centralised participant management and wear-time monitoring (Enterprise plan; the academic plan allows 1 site).
 - Studies that need to bridge to the ActiGraph activity-count literature while also capturing autonomic signals.
 
 ## Poor-Fit Use Cases
@@ -236,17 +259,24 @@
 
 - *(Directed to Empatica: https://www.empatica.com/ , support at https://support.empatica.com/)*
 
-- **What are the exact per-sensor sampling rates for EmbracePlus in each sensor mode** (EDA, PPG/BVP, temperature; accelerometer is 64 Hz in Actigraphy Pro, 32 Hz in Actigraphy Optimized and 100 Hz in Gyroscope 100)? Rates are set by mode, not freely configurable.
+- ~~What are the exact per-sensor sampling rates for EmbracePlus in each sensor mode?~~ Resolved 2026-10-11; all rates are published per mode (see Sensors and Data Streams).
 - **Exactly which raw signals and which biomarkers are included in the Academic & Basic Research plan** versus Enterprise? Is EDA-derived biomarker output in the standard tier?
 - ~~Reconcile the "18 biomarkers" / "over 11 biomarkers" / "over 100 research-grade biomarkers" discrepancy.~~ Partly resolved 2026-10-09: the academic pages now show one 17-row table and the clinical-trial pages say "300+ digital measures". Still to confirm with Empatica: can an Academic plan buyer access any measure outside that table?
-- **What is EmbracePlus battery life, and what is the charging cadence?**
-- Is there a real-time or near-real-time streaming option under any plan? Is the E4's BLE streaming SDK capability available in any form?
-- Is there a REST API for study/participant management, or is the Care Portal the only interface?
+- ~~What is EmbracePlus battery life?~~ Resolved 2026-10-11; 2+ to 14+ days by mode. Still open: does an Enterprise-only mode back the "up to 28 days" claim?
+- ~~Is the E4's BLE streaming SDK available in any form?~~ Resolved 2026-10-11; sunset 14 February 2025. Still open: is the remote-patient-monitoring platform SDK still offered, and to whom?
+- ~~Is there a REST API?~~ Resolved 2026-10-11; a Cloud API exists for sponsors and CROs, documented to clients only. Its fees and rate limits are not public.
+- Do Enterprise clients get EmbraceMini magnetometer data?
 - ~~Exact scope of each FDA clearance.~~ Resolved 2026-10-10; see Privacy, Security, and Compliance.
-- BAA and SOC 2 (ISO 27001:2022, ISO 13485, a published DPA, US-Virginia hosting and 10-year retention are now documented).
+- BAA, and the DPA's content (SOC 2 is confirmed absent from Empatica's published certifications; ISO 27001 certificate, ISO 13485, a DPA, US-Virginia hosting and 10-year retention are documented). Ask compliance@empatica.com.
 - Signal comparability between E4 and EmbracePlus for replication studies.
-- Volume/multi-device pricing and whether device-only (no cloud) purchase is possible.
-- Data retention after the 3- or 5-year access window expires, what happens to the data?
+- Volume/multi-device pricing and whether device-only (no cloud) purchase is possible. (Subscription-only purchase for outside devices is not possible.)
+- ~~Data retention after the 3- or 5-year access window expires.~~ Resolved 2026-10-11; yearly extensions are sold, data stays retrievable for 60 days after termination, and later access may carry extra charges.
+- Have the three PKG 510(k)s been transferred from GKC Manufacturing to Empatica?
+
+## Vendor Fact Record
+
+<!-- facts:begin -->
+<!-- facts:end -->
 
 ## Key Links
 
@@ -262,6 +292,9 @@
 - FDA clearance (platform): https://www.empatica.com/blog/the-empatica-health-monitoring-platform-receives-fda-clearance
 - FDA clearance (cardiac digital biomarkers): https://www.empatica.com/blog/empatica-receives-new-fda-clearance-for-cardiac-digital-biomarkers/
 - Support: https://support.empatica.com/
+- Academic help centre: https://academic-support.empatica.com/
+- Cloud API (Enterprise): https://www.empatica.com/cloud-api
+- Terms of service (purchase agreement): https://www.empatica.com/purchase-agreement/
 
 ## Sources
 
@@ -284,3 +317,23 @@
 17. Empatica participant privacy policy. https://www.empatica.com/privacy-participant/ (accessed 2026-10-10). **Primary.** HIPAA-compliant US-Virginia hosting; service period plus 10 years retention.
 18. openFDA 510(k) records for Empatica. https://api.fda.gov/device/510k.json?search=applicant:empatica (accessed 2026-10-10), with indications for use read in https://www.accessdata.fda.gov/cdrh_docs/pdf22/K221282.pdf , https://www.accessdata.fda.gov/cdrh_docs/pdf24/K242737.pdf , https://www.accessdata.fda.gov/cdrh_docs/pdf26/K260374.pdf , https://www.accessdata.fda.gov/cdrh_docs/pdf25/K252981.pdf and https://www.accessdata.fda.gov/cdrh_docs/pdf25/K250515.pdf . **Primary.**
 19. Samsung Health Sensor SDK, data specifications. https://developer.samsung.com/health/sensor/guide/data-specifications.html (accessed 2026-10-10). **Primary.** `EDA_CONTINUOUS`, raw, 1 Hz, Galaxy Watch8 and later.
+20. Empatica academic help centre, "What is a Sensor Mode?" https://academic-support.empatica.com/hc/en-us/articles/38901007393053-What-is-a-Sensor-Mode (accessed 2026-10-10, vendor fact record). **Primary.** Per-mode rates for every sensor, battery and memory by mode, Actigraphy Optimized daily sync, mode fixed per account, Pulse Rate Pro default for studies created before 16 September 2026.
+21. Empatica academic help centre, "Available Features." https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features (accessed 2026-10-10). **Primary.** Academic and Enterprise plans, Enterprise MOQ of 100 devices, renewal prices, subscriptions only with Empatica devices, "Systolic Peaks (IBI)", academic biomarker list.
+22. Empatica academic help centre, "Raw Data in the Empatica Cloud." https://academic-support.empatica.com/hc/en-us/articles/36981046788765-Raw-Data-in-the-Empatica-Cloud (accessed 2026-10-10). **Primary.** Avro-only raw data, stream list, UTC timestamps.
+23. Empatica academic help centre, "Accessing Data on the S3 Bucket." https://academic-support.empatica.com/hc/en-us/articles/36981086545181-Accessing-Data-on-the-S3-Bucket (accessed 2026-10-10). **Primary.** S3 access tools; AWS storage.
+24. Empatica academic help centre, "Generating and Revoking Data Access Keys." https://academic-support.empatica.com/hc/en-us/articles/36981014631837-Generating-and-Revoking-Data-Access-Keys (accessed 2026-10-10). **Primary.** Up to two active key sets.
+25. Empatica academic help centre, "How the Empatica Health Monitoring Platform works." https://academic-support.empatica.com/hc/en-us/articles/36980824207261-How-the-Empatica-Health-Monitoring-Platform-works (accessed 2026-10-10). **Primary.** 30-minute upload batches; Data Access Keys for raw and biomarker data.
+26. Empatica, Cloud API. https://www.empatica.com/cloud-api (accessed 2026-10-10). **Primary, vendor.** Cloud API for sponsors and CROs, client-only documentation, Avro and CSV in S3, "up to 28 days of battery life".
+27. Empatica, Remote Patient Monitoring. https://www.empatica.com/platform/remote-patient-monitoring/ (accessed 2026-10-10). **Primary, vendor.** Platform SDK for patient apps, outside the research plans.
+28. Empatica, E4 sunset. https://www.empatica.com/research/e4-sunset/ (accessed 2026-10-10). **Primary.** E4 and its software suite, including the SDK, sunset 14 February 2025.
+29. University of Twente BMS Lab, notice on the Empatica E4. https://www.utwente.nl/en/bmslab/about-us-contact/news-and-events/news/2024/8/1702215/important-information-about-the-empatica-e4-wristband (accessed 2026-10-10). **Secondary.** E4 hardware support ended 1 August 2024.
+30. Empatica, Terms of Service (purchase agreement), version 1.0, effective 1 September 2022. https://www.empatica.com/purchase-agreement/ (accessed 2026-10-10). **Primary.** Academic eligibility and non-commercial limits, DPA incorporation, 60-day retrieval after termination, charges for access beyond the term, data deletion on repair, use of data for anonymized data sets.
+31. Empatica, "EmbraceMini is now available for the Academic and Basic Research plan." https://www.empatica.com/blog/embracemini-is-now-available-for-academic-and-basic-research-plan/ (accessed 2026-10-10). **Primary, vendor.** EmbraceMini and four EmbracePlus modes added; academic plan previously Pulse Rate Pro only; discount covers EmbraceMini; teams over 30 devices to contact Empatica.
+32. Empatica, McRoberts partnership. https://www.empatica.com/blog/empatica-and-mcroberts-partnership-achieves-20-endpoints-and-opens-platform-to-external-algorithm-developers/ (accessed 2026-10-10). **Primary, vendor.** McRoberts algorithms for Enterprise users.
+33. Empatica ISO/IEC 27001:2022 certificate (TÜV Rheinland). https://www.empatica.com/go/empatica-iso-iec (accessed 2026-10-10). **Certificate.** Registration 01 153 2117571, valid 2025-10-31 to 2028-10-30.
+34. Empatica, "Empatica receives landmark FDA PCCP authorization for pulse oximetry." https://www.empatica.com/blog/empatica-receives-landmark-fda-pccp-authorization-for-pulse-oximetry/ (accessed 2026-10-10). **Primary, vendor.** SpO2 algorithm PCCP (K242737).
+35. openFDA 510(k) records K140086, K161717 and K211887 (holder GKC Manufacturing Pty, Ltd.), https://api.fda.gov/device/510k.json?search=device_name:PKG ; Empatica, PKG Health acquisition, https://www.empatica.com/blog/empatica-acquires-pkg-health-to-transform-parkinson-s-disease-monitoring/ ; Empatica homepage, "12 FDA clearances", https://www.empatica.com/ (accessed 2026-10-10). **Primary.**
+36. Empatica, academic vendor documentation pack. https://lp.empatica.com/vendor-pack (accessed 2026-10-10). Contents list (HECVAT, ISO and CE certificates, DPA, IT risk assessment); pack itself form-gated.
+37. Sensors 2024, LOTUS paper. https://pmc.ncbi.nlm.nih.gov/articles/PMC11644628/ (accessed 2026-10-10). **Paper.** Avro-only raw signal, Empatica's Avro-to-CSV script, community readers.
+38. Empatica academic help centre, "Monitoring Participant Digital Biomarkers." https://academic-support.empatica.com/hc/en-us/articles/36980846789277-Monitoring-Participant-Digital-Biomarkers (accessed 2026-10-10). **Primary.** SpO2 marked Enterprise.
+39. Empatica, Embrace2. https://www.empatica.com/embrace2/ (accessed 2026-10-10). **Primary.** No longer sold; subscriptions continue.

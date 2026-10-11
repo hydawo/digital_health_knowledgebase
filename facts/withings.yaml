@@ -868,8 +868,8 @@ facts:
     retrieved: '2026-10-10'
   recheck_by: '2027-01-08'
   note: >-
-    Gap finding. The gap hunter called it Class II; the openFDA recall record carries no class and the
-    enforcement endpoint has no match, so the class is unconfirmed here. Also in openFDA: Z-2829-2018, Nokia BPM+ (K133125), "Device could not meet
+    Gap finding. The openFDA recall record carries no class; the enforcement endpoint gives Class II when
+    searched with recall_number.exact (an unquoted search matches the wrong recall). Also in openFDA: Z-2829-2018, Nokia BPM+ (K133125), "Device could not meet
     the requirements for systolic pressure", status Completed (cfres_id 165696). No warning letter was found.
 - field: fda_clearances
   status: stated

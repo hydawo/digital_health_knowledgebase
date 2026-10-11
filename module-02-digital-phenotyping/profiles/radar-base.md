@@ -11,11 +11,11 @@
 | Open source | Yes, Apache 2.0 |
 | Hosting/deployment | Self-hosted (institution-run, Kafka-based backend; RADAR-Kubernetes for cluster installs) or cloud-deployed; managed hosting ("RADAR-base as a Service") from co-maintainer The Hyve, single-server, ideal for up to about 200 participants |
 | Pricing model | Free/open-source software (Apache 2.0); self-hosting costs are the researcher's own; The Hyve's managed hosting is a subscription priced by quote only. No academic tier published (Verified 2026-10-10) |
-| Last verified | 2026-10-10 (The Hyve service terms, app-store listings, repository activity) |
+| Last verified | 2026-10-11 (vendor fact record) |
 
 ## Summary
 
-- RADAR-base is an open-source remote-monitoring and digital-phenotyping platform built around a streaming (Apache Kafka-based, per its own published architecture papers) backend, designed for scale, extensibility, and multi-modal data, combining phone sensors, wearables, IoT devices, and third-party REST APIs (e.g., Fitbit, Garmin) in one pipeline. It has been used across large clinical cohorts spanning multiple sclerosis, depression, epilepsy, ADHD, Alzheimer's disease, autism, and lung disease research. It is jointly maintained by King's College London and The Hyve, and licensed Apache 2.0.
+- RADAR-base is an open-source remote-monitoring and digital-phenotyping platform built around a streaming (Apache Kafka-based, per its own published architecture papers) backend, designed for scale, extensibility, and multi-modal data, combining phone sensors, wearables, IoT devices, and third-party REST APIs (Garmin, Oura, and Fitbit until the legacy Fitbit Web API turns off on 2026-10-30) in one pipeline. It has been used across large clinical cohorts spanning multiple sclerosis, depression, epilepsy, ADHD, Alzheimer's disease, autism, and lung disease research. It is jointly maintained by King's College London and The Hyve, and licensed Apache 2.0.
 
 - Where Beiwe is a lab-scale platform with an optional managed service, RADAR-base presents itself as enterprise/consortium-scale infrastructure, it emerged from and has been used across large EU-funded multi-site clinical consortia (RADAR-CNS and successors), and its architecture reflects that: Kafka-based streaming, IoT gateway support (RADAR-IoT), and explicit support for both in-house institutional hosting and cloud deployment.
 
@@ -23,7 +23,15 @@
 
 - **RADAR-base platform**, the overall open-source stack: mobile apps, backend streaming pipeline, management portal ("Management Portal"), and data pipeline for near-real-time processing and storage.
 - **RADAR-IoT**, an open-source, interoperable IoT gateway framework extending the platform to non-phone/non-wearable sensor sources, per a dedicated published architecture paper.
-- Wearable and third-party integrations named in vendor/partner materials include Garmin, Huawei, Empatica, and others as active industry partners (2026 Symposium).
+- Wearable integrations on the Supported Devices page (Verified 2026-10-10) [18]:
+  - Bluetooth through the Android pRMT app: Polar Vantage V3 and H10, Empatica E4. The E4 is listed with no deprecation notice although Empatica has retired it.
+  - Cloud REST connectors: Fitbit (released route ends 2026-10-30, see below), Garmin, Oura (Oura includes vendor metrics such as the Readiness Score).
+  - Apple Watch and other HealthKit data through the aRMT app's HealthKit plugin.
+  - Deprecated: Faros, Biovotion, Pebble 2. Garmin authorization moved from OAuth 1.0 to OAuth 2.0, the default from RADAR-Rest-Source-Auth v4.4.15 (2026-05-07) [27].
+  - Not shipped: a Huawei Health Kit connector (schemas released, connector PR #204 open); a Dexcom CGM connector from a 2026 internship, Reported in a radar-base.org post and absent from Supported Devices; Android Health Connect, an open feature request (issue #488, opened 2025-10-06) [31].
+- Huawei and Garmin were also named as industry partners at the 2026 Symposium [3]. Partnership is not the same as a released integration.
+- **Fitbit route (Verified 2026-10-10)** [19]. The released Fitbit connector (RADAR-REST-Connector v0.7.5, 2026-03-25) pulls from the legacy Fitbit Web API, which Google turns off on 2026-10-30. Google Health authorization (RADAR-Rest-Source-Auth v4.4.16, 2026-07-03) and schemas are released, but the ingest code is not. RADAR-PushEndpoint PR #92 and the REST-Connector converter PRs were open on 2026-10-10. As of that date no released RADAR-base component ingests Google Health API data.
+  - Effect on studies, inferred from repository state. A released install stops receiving new Fitbit data on 2026-10-30 unless an ingest release ships first or the team deploys unreleased branch code. Participants must re-authorise through Google. Data already collected is unaffected. The Google Health API is closed to new projects, so a self-hosting team without its own Google Health project may have no route.
 
 ## Sensors and Data Streams
 
@@ -48,11 +56,11 @@
 | Calls (metadata) | Yes | No (OS) | Metadata, hashed numbers. | Unclear | 2019 chart: Android "for self-published apps only", since Google Play restricts call-log access. |
 | SMS (metadata) | Yes | No (OS) | Metadata | Unclear | Same Google Play restriction as calls. |
 | Keyboard | Unclear | Unclear | Unclear | Unclear | Not verified against current documentation. |
-| Audio / microphone | Unclear | Unclear | Unclear | Unclear | Not verified against current documentation. |
+| Audio / microphone | Yes | Unclear | Derived. openSMILE audio features, not raw audio. | Unclear | Android via the `radar-android-audio` plugin; the Get Started page lists audio among pRMT streams [20]. Not checked on iOS. |
 | Notifications | Unclear | Unclear | Unclear | Unclear | Not verified against current documentation. |
 | Device information | Unclear | Unclear | Unclear | Unclear | Not verified against current documentation. |
 
-**Verification.** Android column Verified 2026-08-25 from radar-base.org's Phone Data Sensors page, re-read 2026-10-09 (page updated 2026-05-28; battery level is in its list). iOS column updated 2026-10-09 from the page's "Sensors per phone type" chart, which was read directly as an image. The chart was uploaded in September 2019. It marks acceleration, gyroscope, magnetic field, light, battery, regular location, Bluetooth scanning, timezone, time sync and weather as "foreground only" on iOS. Significant location changes and connection to known peripherals work in the background. Steps are read from HealthKit history in the foreground. App usage and call and SMS logs are not available, and data are sent "when activated only". **The chart conflicts with the iOS app's own repository.** `RADAR-base/radar-prmt-ios`, last committed 2021-01-19, describes the app as "work in progress" that "only records location data without sending it to a server". Rows where the chart describes foreground-only collection are therefore marked Conflicting documentation, not Yes. In current code the working iOS route is the active (aRMT, `RADAR-Questionnaire`) app's HealthKit task. It reads 17 HealthKit types (steps, flights climbed, walking and cycling distance, active and basal energy, heart rate, resting heart rate, SpO2, respiratory rate, sleep analysis, workouts, exercise time, blood glucose, blood pressure, weight) when the participant opens the task. A `radar-sensorkit-cordova` plugin for Apple SensorKit exists (last push 2024-11), but nothing found shows it in use. A new React Native app kit (`radar-base-app`) is under active development. Confidence: chart contents Verified; current iOS phone-sensor capability Unclear; HealthKit route Verified from code.
+**Verification.** Android column Verified 2026-08-25 from radar-base.org's Phone Data Sensors page, re-read 2026-10-09 (page updated 2026-05-28; battery level is in its list). iOS column updated 2026-10-09 from the page's "Sensors per phone type" chart, which was read directly as an image. The chart was uploaded in September 2019. It marks acceleration, gyroscope, magnetic field, light, battery, regular location, Bluetooth scanning, timezone, time sync and weather as "foreground only" on iOS. Significant location changes and connection to known peripherals work in the background. Steps are read from HealthKit history in the foreground. App usage and call and SMS logs are not available, and data are sent "when activated only". **The chart conflicts with the iOS app's own repository.** `RADAR-base/radar-prmt-ios`, last committed 2021-01-19, describes the app as "work in progress" that "only records location data without sending it to a server". Rows where the chart describes foreground-only collection are therefore marked Conflicting documentation, not Yes. In current code the working iOS route is the active (aRMT, `RADAR-Questionnaire`) app's HealthKit task. It reads 17 HealthKit types (steps, flights climbed, walking and cycling distance, active and basal energy, heart rate, resting heart rate, SpO2, respiratory rate, sleep analysis, workouts, exercise time, blood glucose, blood pressure, weight) when the participant opens the task. A `radar-sensorkit-cordova` plugin for Apple SensorKit exists (last push 2024-11), but nothing found shows it in use. A new React Native app kit (`radar-base-app`) is under active development. Confidence: chart contents Verified; current iOS phone-sensor capability Unclear; HealthKit route Verified from code. Audio row added 2026-10-11 from the vendor fact record (Verified 2026-10-10): `radar-commons-android` has an openSMILE plugin that sends extracted features, and a separate plugin measures PPG with the phone camera [20].
 
 ### Notes from earlier verification passes
 
@@ -64,7 +72,10 @@
 
 ## Derived Metrics / Analytics
 
-- RADAR-base's own materials describe "feature generation (such as behavioral, environmental, and physiological markers)" as part of the platform's scope, but the specific built-in feature-extraction catalog (comparable to Beiwe's Forest) was **not independently verified** this session. Published clinical papers using RADAR-base (multiple sclerosis, depression, epilepsy, ADHD, Alzheimer's, autism, lung disease) indicate substantial downstream analytics work occurs on RADAR-base-collected data, but whether that analytics logic ships as part of the platform or is built per-study was not established.
+- **No built-in behavioural feature catalogue (Verified 2026-10-10)** [21]. The platform itself computes time-windowed aggregates plus data-quality and compliance monitors for live dashboards, held in a MongoDB hot store. Android passes through OS activity and sleep classifications.
+- Behavioural feature extraction is a separate open-source Python package, `radarpipeline` ("feature generation and visualization"), a companion tool much as Forest is for Beiwe [21].
+- Wearable vendor metrics (for example Oura's Readiness Score) arrive already computed through the REST connectors [18].
+- Earlier passes quoted RADAR-base's description of "feature generation (such as behavioral, environmental, and physiological markers)" as platform scope. That work sits in `radarpipeline` and in per-study analysis, not in the platform.
 
 ## Active Data Collection
 
@@ -77,14 +88,27 @@
 ## Data Access and Export
 
 - Kafka-based streaming architecture is documented in RADAR-base's own peer-reviewed platform papers (e.g., the original RADAR-base description and RADAR-IoT). This supports near-real-time data flow by design, in contrast to platforms built around periodic batch sync. Self-hosting is explicit and emphasized, particularly for "in-hospital studies" needing enhanced privacy/data-residency control, a meaningfully different governance posture than a SaaS-only competitor. Cloud deployment is also supported for institutions that prefer it, including now via a confirmed managed-hosting route (see Pricing/Deployment below).
+- **Export routes beyond Kafka streaming (Verified 2026-10-10)** [22]:
+  - Raw data from cold storage as AVRO, JSON or CSV.
+  - `radar-output-restructure` writes files by project, participant, topic and hour from S3, Azure Blob or local storage. HDFS support was dropped in version 2.0.0.
+  - Aggregated data through the Swagger-documented REST API (RADAR-REST-API, reading MongoDB).
+  - Live dashboards, manual file upload through the Upload Connector, and direct access to the deployment's own Kafka, object storage and databases.
+- **History depth (Corroborated).** No platform limit, since data stays in the deployment the study owns. For REST wearables, staff set start and end dates per participant and can re-pull data between dates, subject to each vendor API's own history limits, which are not stated [28].
+- **Rate limits are not public (2026-10-10).** Each deployment sets its own; none is documented for the REST API or gateway. Upstream vendor limits apply to the REST connectors, and the Fitbit connector polls each user every 150 s by default [19].
 
 ## APIs, SDKs, and Extensibility
 
 - Apache 2.0 licence across the stack (per the project's own materials), meaning the full backend, mobile clients, and IoT gateway are open for institutional modification, comparable in openness to Beiwe, but architected for larger multi-site consortium deployments rather than single-lab studies.
+- **Licence detail (Verified 2026-10-10).** Apache 2.0 on the backend, Management Portal, Android pRMT, aRMT and RADAR-Kubernetes. A few side repositories report no standard licence (m2c2kit, the OpenSmile Cordova plugin) [1].
+- Developer access is open with no application: GitHub, a public wiki, Slack, Swagger API docs and a help desk. RADAR-Kubernetes states that community support is voluntary and given "as time permits" [23].
 
 ## Deployment and Infrastructure
 
 - Self-hosted (institution-run infrastructure) or cloud-deployed, both explicitly supported, per the platform's own "About" page.
+- **RADAR-Kubernetes sizing (Verified 2026-10-10)** [23]. Helm/helmfile install, on-premise or in any cloud. Minimum single node of 8 vCPU, 32 GB memory and 200 GB storage, or a 3-node cluster, plus a DNS and an SMTP server. The README calls it early-stage though used in a few production environments.
+- RADAR-Docker is deprecated in favour of RADAR-Kubernetes (announced for end of 2021) [23].
+- The Hyve can also host RADAR-base in a private cloud or on-premise, besides the public-cloud managed service [29].
+- A participant self-enrolment portal (`radar-self-enrolment-ui`) and a React Native app kit (`radar-base-app`, created 2025-11-26) exist on GitHub. Neither is described as a released product.
 - Kafka-based backend implies real operational/DevOps expertise is needed to run a production instance, likely a higher technical floor than Beiwe's already-nontrivial AWS/Django requirement, though this comparison was not independently benchmarked this session.
 - Multi-site/multi-institution deployment is a design goal reflected in RADAR-base's consortium origins (RADAR-CNS, an EU IMI-funded multi-country, multi-disease programme).
 
@@ -102,6 +126,15 @@
 ## Privacy, Security, and Compliance
 
 - Self-hosting is positioned by the platform's own materials as advantageous for privacy control in "in-hospital" contexts, implying institutional data custody rather than a third-party cloud intermediary by default. Specific HIPAA, GDPR/DPA, SOC 2, or ISO certification documentation was **not independently verified** in this session; the platform's EU consortium origin (IMI, an EU/EFPIA public-private programme) suggests GDPR was a design consideration, but this is an inference, not a verified compliance claim, and should not be treated as one.
+- **Vendor fact record, 2026-10-10.** The points below supersede the "not independently verified" statement above where they overlap.
+  - **ISO 27001 (Corroborated, self-claim).** The Hyve says it holds ISO 27001:2022 (recertified 2023, first certified 2017), scoped to development, hosting and support of open-source software, consultancy and biomedical data analysis. The scope does not name RADAR-base, and no certificate or registry entry was found. A three-year certificate from 2023 would be due for renewal around late 2026 (inference). Self-hosted deployments inherit no certification [25].
+  - **HIPAA, BAA and SOC 2 not public (2026-10-10).** No mention on RADAR-base or The Hyve pages; the managed service is EU and GDPR oriented [15].
+  - **GDPR and DPA (Corroborated).** Managed installs run in a GDPR-compliant public cloud at the client's chosen location. The Hyve draws up a Data Processing Agreement if it keeps managing the platform after the initial period or has access to sensitive data [15].
+  - **Responsibility and deletion (Verified).** The active-app privacy policy puts all responsibility for data on the project and deployment owners. Data is kept for the study's duration. Deletion requests go from the project owner to the deployment owner, and study data is deleted, including from backups, generally within 60 days. The developers (KCL, The Hyve) cannot delete project data. The app sends Firebase analytics and crash data to the developers [26].
+  - **Play data-safety declarations (Verified as declared).** The passive app's listing says data is not transferred over a secure connection and cannot be deleted. The active app's listing says data is encrypted in transit and cannot be deleted. The passive app's encryption declaration contradicts the platform docs (radar-commons sends data over HTTPS) and is most likely a wrong form entry, but it is what participants see. RADAR-Kubernetes uses TLS by default and has a `disable_tls` option, so encryption in transit depends on the deployment. "Cannot be deleted" fits the policy's model, where only the deployment owner deletes [16].
+  - **Data residency.** Set by whoever hosts. The radar-base.org Google Health integration stores data in AWS eu-west-2 (London) or university infrastructure, and The Hyve's demo service keeps app data in the EU [24, 32].
+  - **AI training.** Google Health API data collected through RADAR-base is not used to train generalised AI or ML models (Verified, scope Google Health integration; the policy appears to cover the KCL-run deployment, inference). No AI-training term is published for the platform generally or for The Hyve as host; The Hyve's demo-service policy says anonymised data may be kept indefinitely and identifiable contact data up to 10 years [24, 32].
+  - **FDA.** No clearance. openFDA searches for RADAR-base, The Hyve, King's College and Onsentia returned no matches on 2026-10-10. RADAR-base is research software and claims no FDA status [30].
 
 ## Pricing
 
@@ -109,6 +142,8 @@
 
 - **Resolved 2026-08-25 (second pass, resolving unresolved-question #86, Verified via direct fetch of `thehyve.nl/services/radar-base-as-a-service`).** The Hyve, RADAR-base's co-maintainer, offers a named managed-hosting product, **"RADAR-base as a Service,"** distinct from self-hosting. Per the vendor's own service page: platform installation configured to the study's needs; hosting on a GDPR-compliant public cloud of the customer's choosing; support for "unlimited studies and participants" in the general offering description, though the same page separately caveats that the service is best suited to studies of **roughly 200 participants or fewer**, attributed to a single-server infrastructure model; end-user training for passive sensors, surveys, and wearable integrations (Fitbit/Garmin named); ongoing maintenance and technical support; and a stated 2 to 4 week setup timeline. **No pricing figures are published**, this remains a quote-based service, so RADAR-base does not yet match Beiwe's now-resolved rate transparency (see `profiles/beiwe.md`). This is RADAR-base's first confirmed managed-hosting alternative to self-hosting.
 - **Re-read 2026-10-10 (Verified):** the page states that "The client organisation will always be the owner of the collected data"; a Data Processing Agreement is drawn up if The Hyve keeps managing the platform after the initial period or gets access to sensitive data; the platform runs on "a single computer based server in contrast to a cluster of computers", so throughput can limit concurrent senders; "Studies with a maximum of 200 participants are ideal for this setup", although the subscription "allows you to use it for any number of studies or participants"; and the service is "best suited for small-scale and short-term studies", with pilots recommended. Hosting is in "a GDPR compliant public cloud infrastructure located at the choice of the client". No price is given; contact via office@thehyve.nl or the inquiry form. Export procedures are not described.
+- **Minimum commitment not public (2026-10-10).** The service page mentions a "subscription model" and an "initial service period" but gives no term or minimum. Self-hosting has no commitment. No academic discount or academic price list is published; The Hyve markets the same services to pharma, academia and CROs (Corroborated) [15, 29].
+- The service page still advertises Fitbit training, although the released Fitbit route stops on 2026-10-30 (see Products / Platform Architecture) [19].
 - **How larger deployments scale (Unclear):** the page does not say how the ~200-participant ceiling is raised. The documented open-source route for larger installs is RADAR-Kubernetes (pushed 2026-10-06), whose README says it is used "in few production environments" and is still in its early stages. That this is The Hyve's scale-up path is an inference, not stated.
 
 ## Research Evidence and Validation
@@ -120,7 +155,7 @@
 - Purpose-built for large-scale, multi-site, multi-modal (phone + wearable + IoT) data collection, with a streaming architecture designed for near-real-time throughput rather than batch sync.
 - Broad, verifiable published-use record across multiple serious clinical domains.
 - Apache 2.0, fully open source, with explicit self-hosting support aimed at institutions needing to keep data on their own infrastructure.
-- Active industry-partner ecosystem (Garmin, Huawei, Empatica, and others named at the 2026 Symposium) suggests ongoing wearable-integration investment.
+- Broad shipped wearable catalogue (Polar, Empatica E4, Garmin, Oura, HealthKit) and ongoing integration work (Huawei, Google Health, Dexcom in progress; Garmin moved to OAuth 2.0 in 2026). Garmin and Huawei were also named as industry partners at the 2026 Symposium [3, 18].
 - Jointly maintained by an academic institution (KCL) and a dedicated open-source health-informatics company (The Hyve), which is a different (arguably more sustainable) maintenance model than a single academic lab.
 - **New (second pass):** unlike the 2026-08-24 assessment, RADAR-base now has a confirmed managed-hosting route ("RADAR-base as a Service," via The Hyve) for teams without in-house DevOps capacity, plus a maintained, itemized Android passive-sensor catalog and a confirmed, actively-developed Management Portal repository.
 
@@ -129,13 +164,14 @@
 - Kafka-based, self-hosted-by-default architecture implies a meaningfully higher DevOps/infrastructure floor than commercial no-code competitors, and likely higher than Beiwe's already-nontrivial AWS requirement, though this was not independently benchmarked head-to-head this session.
 - **Updated 2026-08-25**: a managed-hosting option now exists (The Hyve's "RADAR-base as a Service"), but the vendor's own page caveats it to studies of roughly 200 participants or fewer (single-server infrastructure) and does not publish pricing, a real but different limitation than "no option exists at all."
 - **Updated 2026-08-25**: iOS/Android sensor parity is now confirmed as *not* present, RADAR-base's own documentation states "substantial differences" exist and describes iOS sensor availability as "more sparse" due to background-execution constraints, consistent with the pattern already Verified for AWARE Framework in this module's earlier second pass. This should not be treated as a minor caveat.
-- Compliance documentation (HIPAA/SOC2/ISO) was not located and should not be inferred from EU/consortium origin. The managed-hosting page's own language commits only to "GDPR-compliant public cloud" hosting infrastructure, a hosting-environment claim, not a certification of RADAR-base's own compliance posture.
+- **Fitbit data stops on 2026-10-30** for released installs unless a Google Health ingest release ships first; none had shipped as of 2026-10-10 [19].
+- No HIPAA or SOC 2 documentation was located (2026-10-10). The only ISO 27001 claim is The Hyve's own, for The Hyve B.V., with a scope that does not name RADAR-base (Corroborated) [25]. Compliance should not be inferred from EU/consortium origin. The managed-hosting page's own language commits only to "GDPR-compliant public cloud" hosting infrastructure, a hosting-environment claim, not a certification of RADAR-base's own compliance posture.
 
 ## Best-Fit Use Cases
 
 - Large, multi-site, multi-country clinical cohort studies combining phone, wearable, and IoT data streams, especially where near-real-time data flow matters.
 - Institutions with existing DevOps/data-engineering capacity that want full data custody via self-hosting.
-- Studies already using or planning to use wearables from partner vendors (Garmin, Huawei, Empatica) alongside phone sensing.
+- Studies already using or planning to use supported wearables (Garmin, Oura, Polar, HealthKit devices) alongside phone sensing. Fitbit only once a Google Health ingest release ships; Huawei only once its connector is released [18, 19].
 
 ## Poor-Fit Use Cases
 
@@ -150,9 +186,16 @@
 - ~~Is there a managed-hosting or paid-support offering comparable to Beiwe's Service Center?~~ **Resolved 2026-08-25**, yes, "RADAR-base as a Service" via The Hyve; pricing still not public.
 - What does "RADAR-base as a Service" actually cost, and how does its ~200-participant single-server ceiling get raised for larger studies? (Re-checked 2026-10-10: still no price; RADAR-Kubernetes is the documented cluster route, but the page does not say The Hyve offers it.)
 - ~~What is the exact current sensor/data-stream catalog, and how do iOS and Android differ?~~ **Largely resolved 2026-08-25** for Android (17-item itemized list) and qualitatively for the iOS gap ("substantial differences," iOS "more sparse"); the exact iOS-side itemized list (which of the 17 Android streams iOS lacks or restricts) is still not obtained. **Partly resolved 2026-10-09**: the 2019 per-stream chart is now in the stream table, but it conflicts with the dormant iOS pRMT repository, and current iOS passive collection appears to run through HealthKit in the aRMT app. Still open: which iOS app a new study would actually deploy for phone sensors. Re-checked 2026-10-10: radar-prmt-ios unchanged (last commit 2021-01-19, last push 2023-06-20, not archived) and still the only iOS pRMT repository in the organization.
-- What compliance certifications (HIPAA, GDPR DPA beyond hosting-infrastructure GDPR-compliance framing, SOC 2, ISO 27001) does the maintained reference deployment or a typical institutional deployment carry?
+- What compliance certifications (HIPAA, GDPR DPA beyond hosting-infrastructure GDPR-compliance framing, SOC 2, ISO 27001) does the maintained reference deployment or a typical institutional deployment carry? **Partly answered 2026-10-10.** The Hyve claims ISO 27001:2022 for The Hyve B.V.; whether its scope covers RADAR-base as a Service, and whether it was renewed after 2023, are still open. HIPAA and SOC 2 remain unpublished.
+- Is the passive app's Play declaration that data is not transferred securely a form error? Only the developer (The Hyve) can answer.
+- When will a Google Health ingest release (RADAR-PushEndpoint PR #92, REST-Connector converters) ship, and will it land before the Fitbit Web API turns off on 2026-10-30?
 - What is the realistic infrastructure/DevOps staffing requirement to stand up and operate a **self-hosted** production instance (as distinct from the now-confirmed managed-hosting alternative)?
-- What built-in derived-feature/analytics catalog exists natively versus requiring custom per-study development?
+- ~~What built-in derived-feature/analytics catalog exists natively versus requiring custom per-study development?~~ **Resolved 2026-10-10**, no built-in behavioural catalogue; the platform computes aggregates and quality monitors, and feature generation is the separate `radarpipeline` package [21].
+
+## Vendor Fact Record
+
+<!-- facts:begin -->
+<!-- facts:end -->
 
 ## Key Links
 
@@ -183,3 +226,18 @@
 15. The Hyve, "RADAR-base as a Service," re-read. https://www.thehyve.nl/services/radar-base-as-a-service (accessed 2026-10-10). **Primary/Verified.** Data ownership, DPA conditions, single-server model, ~200 participants ideal, small-scale and short-term fit, subscription, no price.
 16. Google Play (`org.radarcns.detail`, `org.phidatalab.radar_armt`) and App Store (id 1483953055) listings, direct fetch 2026-10-10. **Primary/Verified.**
 17. GitHub API for ManagementPortal, radar-prmt-android, radar-prmt-ios and RADAR-Kubernetes, plus the RADAR-Kubernetes README (accessed 2026-10-10). **Primary/Verified.**
+18. RADAR-base, "Supported Devices." https://radar-base.org/docs/supported-devices/ (accessed 2026-10-10, vendor fact record). **Primary/Verified.** Polar, Empatica E4, Fitbit, Garmin, Oura, HealthKit plugin; deprecated Faros, Biovotion, Pebble 2.
+19. Fitbit route evidence (accessed 2026-10-10, vendor fact record). **Primary/Verified.** RADAR-PushEndpoint issue #91 https://github.com/RADAR-base/RADAR-PushEndpoint/issues/91 and PR #92 https://github.com/RADAR-base/RADAR-PushEndpoint/pull/92 ; RADAR-PushEndpoint releases https://github.com/RADAR-base/RADAR-PushEndpoint/releases ; RADAR-Rest-Source-Auth releases https://github.com/RADAR-base/RADAR-Rest-Source-Auth/releases ; RADAR-REST-Connector README and releases https://github.com/RADAR-base/RADAR-REST-Connector ; Fitbit Web API turn-off notice https://dev.fitbit.com/build/reference/web-api/intraday/ and https://developers.google.com/health .
+20. `radar-commons-android` audio and PPG plugins. https://github.com/RADAR-base/radar-commons-android/tree/master/plugins/radar-android-audio ; https://github.com/RADAR-base/radar-commons-android/tree/master/plugins/radar-android-ppg ; RADAR-base, "Getting Started." https://radar-base.org/getting-started-with-radar-base/ (accessed 2026-10-10). **Primary/Verified.**
+21. `RADAR-base/radarpipeline` https://github.com/RADAR-base/radarpipeline and RADAR-base, "Concepts and Components." https://radar-base.org/docs/concepts-and-components-of-radar-base/ (accessed 2026-10-10). **Primary/Verified.** Aggregates and quality monitors in the platform; feature generation in a separate package.
+22. Export routes. https://radar-base.org/getting-started-with-radar-base/ ; https://github.com/RADAR-base/radar-output-restructure ; https://radar-base.org/docs/concepts-and-components-of-radar-base/ (accessed 2026-10-10). **Primary/Verified.** AVRO, JSON, CSV export; restructure tool (no HDFS since 2.0.0); REST API.
+23. `RADAR-base/RADAR-Kubernetes` README https://github.com/RADAR-base/RADAR-Kubernetes ; `RADAR-base/RADAR-Docker` README https://github.com/RADAR-base/RADAR-Docker ; RADAR-base Community page https://radar-base.org/community/ (accessed 2026-10-10). **Primary/Verified.** Sizing, early-stage status, voluntary support, RADAR-Docker deprecation, developer channels.
+24. RADAR-base, "Google User Data Privacy Policy." https://radar-base.org/google-privacy-policy/ (accessed 2026-10-10). **Primary/Verified.** No AI/ML training on Google Health data; AWS eu-west-2 or university hosting.
+25. The Hyve, "The Hyve ISO certified" (2023-12-05). https://www.thehyve.nl/articles/the-hyve-iso-certified-2023 ; homepage https://www.thehyve.nl/ (accessed 2026-10-10). **Self-claim, Corroborated.** ISO 27001:2022 for The Hyve B.V.
+26. RADAR-base, "Active App (aRMT) Privacy Policy." https://radar-base.org/active-app-armt-privacy-policy/ (accessed 2026-10-10). **Primary/Verified.** Owner responsibility, retention for study duration, deletion within about 60 days via the deployment owner, Firebase.
+27. `RADAR-base/RADAR-Rest-Source-Auth` PR #317. https://github.com/RADAR-base/RADAR-Rest-Source-Auth/pull/317 (accessed 2026-10-10). **Primary/Verified.** Garmin OAuth 1.0 to OAuth 2.0.
+28. RADAR-base, "RADAR REST Source Auth." https://radar-base.org/docs/radar-rest-source-auth/ (accessed 2026-10-10). **Primary.** Per-participant start and end dates and re-pull for REST wearables.
+29. The Hyve, "RADAR-base." https://www.thehyve.nl/services/radar-base (accessed 2026-10-10). **Primary/Verified.** Audience (pharma, academia, CROs), free of licence costs, private-cloud or on-premise hosting, development services.
+30. openFDA 510(k), PMA and registration searches for RADAR-base, The Hyve, King's College and Onsentia, e.g. https://api.fda.gov/device/510k.json?search=device_name:"radar-base" (run 2026-10-10). **Regulator database.** No matches.
+31. `RADAR-base/radar-commons-android` issue #488, "Add Support for Reading Data from Google Health Connect." https://github.com/RADAR-base/radar-commons-android/issues/488 (accessed 2026-10-10). **Primary.** Open feature request.
+32. The Hyve, "RADAR-base demo privacy policy." https://www.thehyve.nl/radar-base-demo-privacy-policy (accessed 2026-10-10). **Primary/Verified.** EU data location; identifiable contact data up to 10 years; anonymised data may be kept indefinitely.
