@@ -79,13 +79,14 @@ svg .ah{fill:var(--line)} svg .aa{fill:var(--accent)} svg .ahu{fill:var(--human)
 .rule dd{margin:0;min-width:0}
 .everyone{background:var(--accent-soft);border-radius:10px;padding:14px 18px;display:grid;gap:8px}
 .everyone ul{margin:0;padding-left:20px;display:grid;gap:4px;font-size:.93rem}
+.sub{font-family:var(--display);font-weight:400;font-size:clamp(1.3rem,2.6vw,1.6rem);margin:12px 0 0;line-height:1.15}
 @media (max-width:480px){.rule dl{grid-template-columns:1fr}.rule dt{padding-top:6px}}
 </style>
 
 <div class="wrap">
 
 <header style="display:grid;gap:12px">
-  <div class="eyebrow">digital_health_knowledgebase · 10 October 2026</div>
+  <div class="eyebrow">digital_health_knowledgebase · 11 October 2026</div>
   <h1>Knowledge Base Architecture</h1>
   <p class="lede">How the agents divide the work, and how the library itself is laid out. The library is a set of plain text files and PDFs in one public GitHub repository. There is no database server. Every change is a commit, so the full history of every claim can be traced.</p>
 </header>
@@ -217,12 +218,111 @@ svg .ah{fill:var(--line)} svg .aa{fill:var(--accent)} svg .ahu{fill:var(--human)
     <div class="note"><b>Why the scout only shortlists studies</b><span>A paper's abstract is enough to file it under a device. What happened in a study has to be read from the full paper, so a person-led session writes those up.</span></div>
     <div class="note"><b>Why the reviewer can't edit</b><span>Its findings go to Hassan first. A correction only enters the library after someone has looked at it.</span></div>
   </div>
+
+  <h3 class="sub">📇 Vendor fact records</h3>
+  <p class="muted">A second set of agents keeps the facts a study team decides on, like research programs, prices, data terms and compliance. They run once per company to build its record. After that, a check runs every Monday and one agent fixes whatever it flags.</p>
+  <div class="scroll">
+  <svg viewBox="0 0 1000 510" role="img" aria-label="Vendor fact record workflow diagram">
+    <defs>
+      <marker id="c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="ah"/></marker>
+      <marker id="ca" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="aa"/></marker>
+      <marker id="cg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="ag"/></marker>
+    </defs>
+
+    <text x="30" y="30" class="hd">BASELINE RUN, ONCE PER COMPANY</text>
+
+    <!-- researchers and gap hunter -->
+    <rect x="30" y="48" width="250" height="70" rx="10" class="agent"/>
+    <text x="155" y="76" text-anchor="middle" class="t">🔬 Researcher A</text>
+    <text x="155" y="98" text-anchor="middle" class="s">Starts from developer docs and terms</text>
+    <rect x="30" y="132" width="250" height="70" rx="10" class="agent"/>
+    <text x="155" y="160" text-anchor="middle" class="t">🔬 Researcher B</text>
+    <text x="155" y="182" text-anchor="middle" class="s">Starts from research and pricing pages</text>
+    <rect x="30" y="216" width="250" height="70" rx="10" class="agent"/>
+    <text x="155" y="244" text-anchor="middle" class="t">🕳️ Gap hunter</text>
+    <text x="155" y="266" text-anchor="middle" class="s">Changelogs, forums, press, recalls</text>
+    <text x="30" y="308" class="lbl">A and B never see each other's work</text>
+
+    <!-- judge -->
+    <rect x="350" y="110" width="250" height="100" rx="10" class="agent"/>
+    <text x="475" y="136" text-anchor="middle" class="t">⚖️ Judge</text>
+    <text x="475" y="158" text-anchor="middle" class="s">Merges the three drafts</text>
+    <text x="475" y="176" text-anchor="middle" class="s">Keeps real disagreements as conflicts</text>
+    <text x="475" y="194" text-anchor="middle" class="s">Checks every quote on its page</text>
+    <path d="M280 83 L348 135" class="wg" marker-end="url(#cg)"/>
+    <path d="M280 167 L348 160" class="wg" marker-end="url(#cg)"/>
+    <path d="M280 251 L348 185" class="wg" marker-end="url(#cg)"/>
+
+    <!-- record -->
+    <rect x="660" y="110" width="310" height="100" rx="12" class="kb"/>
+    <text x="815" y="138" text-anchor="middle" class="t">📇 Fact record</text>
+    <text x="815" y="160" text-anchor="middle" class="m">facts/&lt;company&gt;.yaml</text>
+    <text x="815" y="182" text-anchor="middle" class="s">35 companies, one record each</text>
+    <text x="815" y="198" text-anchor="middle" class="x">every fact has a quote and a date</text>
+    <path d="M600 160 L658 160" class="wa" marker-end="url(#ca)"/>
+
+    <!-- correctors -->
+    <rect x="350" y="250" width="210" height="70" rx="10" class="agent"/>
+    <text x="455" y="276" text-anchor="middle" class="t">✏️ Profile correctors</text>
+    <text x="455" y="296" text-anchor="middle" class="s">one per company</text>
+    <text x="455" y="312" text-anchor="middle" class="x">fix each write-up to match</text>
+    <rect x="590" y="250" width="190" height="70" rx="10" class="agent"/>
+    <text x="685" y="276" text-anchor="middle" class="t">📊 Table fixers</text>
+    <text x="685" y="296" text-anchor="middle" class="s">one per module</text>
+    <text x="685" y="312" text-anchor="middle" class="x">fix the comparison tables</text>
+    <path d="M690 210 C690 236 455 222 455 248" class="wa" marker-end="url(#ca)"/>
+    <path d="M560 285 L588 285" class="wa" marker-end="url(#ca)"/>
+
+    <!-- weekly loop -->
+    <text x="30" y="380" class="hd">WEEKLY LOOP, EVERY MONDAY</text>
+    <path d="M830 210 L830 352 L395 352 L395 388" class="w" marker-end="url(#c)"/>
+    <text x="612" y="344" text-anchor="middle" class="lbl">the check reads every record</text>
+
+    <rect x="30" y="400" width="190" height="80" rx="10" class="src"/>
+    <text x="125" y="432" text-anchor="middle" class="t">🌐 Vendor pages</text>
+    <text x="125" y="454" text-anchor="middle" class="s">every page a record cites</text>
+
+    <rect x="270" y="390" width="250" height="100" rx="10" class="out"/>
+    <text x="395" y="416" text-anchor="middle" class="t">⏱️ Weekly check</text>
+    <text x="395" y="438" text-anchor="middle" class="s">GitHub Actions, every Monday</text>
+    <text x="395" y="456" text-anchor="middle" class="s">Fetches every cited page</text>
+    <text x="395" y="474" text-anchor="middle" class="s">Checks each quote is still there</text>
+    <path d="M220 440 L268 440" class="w" marker-end="url(#c)"/>
+
+    <rect x="565" y="400" width="180" height="80" rx="10" class="out"/>
+    <text x="655" y="432" text-anchor="middle" class="t">📮 One issue</text>
+    <text x="655" y="454" text-anchor="middle" class="s">lists what to re-check</text>
+    <path d="M520 440 L563 440" class="w" marker-end="url(#c)"/>
+
+    <rect x="790" y="390" width="180" height="100" rx="10" class="agent"/>
+    <text x="880" y="416" text-anchor="middle" class="t">📌 Fact keeper</text>
+    <text x="880" y="438" text-anchor="middle" class="s">Re-reads flagged pages</text>
+    <text x="880" y="456" text-anchor="middle" class="s">New quote and date</text>
+    <text x="880" y="474" text-anchor="middle" class="s">Closes the issue</text>
+    <path d="M745 440 L788 440" class="w" marker-end="url(#c)"/>
+
+    <path d="M880 388 L880 212" class="wg" marker-end="url(#cg)"/>
+    <text x="888" y="300" class="lbl">updates the fact</text>
+  </svg>
+  </div>
+  <div class="key">
+    <span><i class="sw" style="background:var(--agent-soft);border-color:var(--agent)"></i>Agents</span>
+    <span><i class="sw" style="background:var(--surface);border-color:var(--fg)"></i>Fact record</span>
+    <span><i class="sw" style="background:var(--surface);border-color:var(--line)"></i>Scheduled job and its issue</span>
+    <span><i class="sw" style="background:var(--src-soft);border-color:var(--src)"></i>Outside sources</span>
+  </div>
+  <div class="notes">
+    <div class="note"><b>Why two researchers work apart</b><span>A fact that one of them misses or misreads shows up as a disagreement. The judge then opens the page and settles it, or keeps both sources as a conflict.</span></div>
+    <div class="note"><b>Why every fact keeps its quote</b><span>The weekly check can only spot a stale fact if it knows the exact words to look for. A quote that is 90% the same counts as reworded. Anything less counts as missing.</span></div>
+    <div class="note"><b>What the weekly check never does</b><span>It never changes a fact. It reports, and the fact keeper reads the page and makes the change. A page that blocks automated visits is never treated as dead. After two weeks it is marked for a check by hand.</span></div>
+    <div class="note"><b>Who opens the issue</b><span>The scheduled job opens it in this repository, or adds a comment to the one already open. No agent writes it.</span></div>
+  </div>
 </section>
 
 <section>
   <div class="eyebrow">Part 2</div>
   <h2>📚 How the library is laid out</h2>
-  <p class="muted">Four modules sit side by side. Each one has its own write-ups, a comparison table, a source list and a folder of papers. A shared folder holds what applies to all four. A script turns the whole thing into the web pages.</p>
+  <p class="muted">Four modules sit side by side. Each one has its own write-ups, a comparison table, a source list and a folder of papers. A shared folder holds what applies to all four. A script turns the whole thing into the web pages. The vendor fact records sit in their own folder, described below the diagram.</p>
   <div class="scroll">
   <svg viewBox="0 0 1000 690" role="img" aria-label="Repository architecture diagram">
     <defs>
@@ -309,6 +409,14 @@ svg .ah{fill:var(--line)} svg .aa{fill:var(--accent)} svg .ahu{fill:var(--human)
     <div class="note"><b>Paper ledgers</b><span>Machine-readable lists of every paper already seen or rejected. They stop the Monday scout from adding the same paper twice.</span></div>
     <div class="note"><b>Confidence labels</b><span>Claims are marked Verified, Corroborated, Reported or Unclear, depending on how strong the source is.</span></div>
   </div>
+  <h3 class="sub">📇 Vendor fact records</h3>
+  <div class="notes">
+    <div class="note"><b><code>facts/</code></b><span>One record per company, 35 in all. Each fact holds the page it came from, the exact words that back it, the date it was read, a confidence label and a date to check it again.</span></div>
+    <div class="note"><b><code>facts/_generated/</code></b><span>Tables built from the records by a script. Never edited by hand. A check on every push fails if they no longer match the records.</span></div>
+    <div class="note"><b><code>facts/_drafts/</code></b><span>Working files from the baseline run, one folder per company. Each researcher's draft, the gap hunter's findings and the judge's reasoning are kept here.</span></div>
+    <div class="note"><b><code>facts/_reports/</code></b><span>One report per weekly check, named by its date. It lists quotes that went missing or changed, pages that changed, dead links and re-checks that are overdue.</span></div>
+    <div class="note"><b><code>tools/facts/</code></b><span>The scripts and instructions. A validator that enforces the record rules, the weekly check, the generator that builds the tables, a quote checker, and the written instructions for each baseline agent in <code>prompts/</code>.</span></div>
+  </div>
 </section>
 
 <section>
@@ -322,6 +430,7 @@ svg .ah{fill:var(--line)} svg .aa{fill:var(--accent)} svg .ahu{fill:var(--human)
       <li>Every claim gets a confidence label. A company's claim about itself is never more than "Corroborated".</li>
       <li>When sources disagree, record both.</li>
       <li>Every fact must come from a source read that day, never from memory or a file name.</li>
+      <li>Every vendor fact carries the exact words from its source page and the date it was read.</li>
       <li>No accounts, sign-ins, forms or getting past bot checks.</li>
       <li>Nothing is posted on GitHub without Hassan's approval.</li>
     </ul>
@@ -333,6 +442,11 @@ svg .ah{fill:var(--line)} svg .aa{fill:var(--accent)} svg .ahu{fill:var(--human)
     <div class="rule" style="--c:var(--agent)"><h3>📱 Platform inspector</h3><dl><dt>Job</dt><dd>Reads phone platforms' code, manuals and app-store listings.</dd><dt>Can change</dt><dd>Phone platform write-ups and, in a repair pass, their comparison table.</dd><dt>Never</dt><dd>Using the Beiwe repositories before the Beiwe wiki and Forest docs.</dd><dt>Rules in</dt><dd>Task prompt, under <code>shared/agents.md</code></dd></dl></div>
     <div class="rule" style="--c:var(--agent)"><h3>⚙️ Systems analyst</h3><dl><dt>Job</dt><dd>Maps Android and iPhone background rules; reads full study papers for dates and figures.</dd><dt>Can change</dt><dd>Nothing. It reports, and the coordinator writes it up.</dd><dt>Never</dt><dd>Editing any file.</dd><dt>Rules in</dt><dd>Task prompt, under <code>shared/agents.md</code></dd></dl></div>
     <div class="rule" style="--c:var(--agent)"><h3>🏥 Study checker</h3><dl><dt>Job</dt><dd>Repair pass. Re-reads study papers to check numbers, funders and first authors.</dd><dt>Can change</dt><dd>Study write-ups, the feasibility table, the methods catalogue.</dd><dt>Never</dt><dd>Taking a first author from search results instead of the paper's byline.</dd><dt>Rules in</dt><dd>Task prompt, under <code>shared/agents.md</code></dd></dl></div>
+    <div class="rule" style="--c:var(--agent)"><h3>🔬 Fact researchers A and B</h3><dl><dt>Job</dt><dd>Each fills one company's fact record from scratch, apart from the other. A starts from developer docs, terms and the FDA database. B starts from research, pricing and partner pages. Both then cover every field.</dd><dt>Can change</dt><dd>Only its own draft, <code>facts/_drafts/&lt;company&gt;/A.yaml</code> or <code>B.yaml</code>.</dd><dt>Never</dt><dd>Reading the other draft, the current record or the company's write-up. Using a quote it has not checked on the page.</dd><dt>Rules in</dt><dd><code>tools/facts/prompts/researcher.md</code></dd></dl></div>
+    <div class="rule" style="--c:var(--agent)"><h3>🕳️ Gap hunter</h3><dl><dt>Job</dt><dd>Looks for what both researchers would miss, in changelogs, deprecation notices, developer forums, FDA and recall databases, partner pages and papers. Then compares what it found with the library.</dd><dt>Can change</dt><dd>Only its findings file, <code>gaps.md</code>, in the company's drafts folder.</dd><dt>Never</dt><dd>Editing the record, the write-up or the tables.</dd><dt>Rules in</dt><dd><code>tools/facts/prompts/gap-hunter.md</code></dd></dl></div>
+    <div class="rule" style="--c:var(--agent)"><h3>⚖️ Judge</h3><dl><dt>Job</dt><dd>Merges both drafts and the gap hunter's findings into the company's record. Where the drafts disagree, it opens the sources and decides, or records a conflict. It checks every quote on its page again and lists the write-up and table lines the record contradicts.</dd><dt>Can change</dt><dd>The company's record and its own notes on how it decided, <code>judgement.md</code>.</dd><dt>Never</dt><dd>Picking a side without reading the page. Editing the write-up or the tables.</dd><dt>Rules in</dt><dd><code>tools/facts/prompts/judge.md</code></dd></dl></div>
+    <div class="rule" style="--c:var(--agent)"><h3>✏️ Profile corrector</h3><dl><dt>Job</dt><dd>Brings one company's write-up into line with its record, after checking each of the judge's claims against the record. Adds the generated facts block. Lists the table lines that need the same fix, and one agent per module then applies them.</dd><dt>Can change</dt><dd>That one write-up.</dd><dt>Never</dt><dd>The tables, READMEs, other write-ups, the record or the judge's notes.</dd><dt>Rules in</dt><dd><code>tools/facts/prompts/profile-corrector.md</code></dd></dl></div>
+    <div class="rule" style="--c:var(--agent)"><h3>📌 Fact keeper</h3><dl><dt>Job</dt><dd>Works the weekly check's issue. Re-reads every flagged page, updates the fact with a fresh quote and date, fixes any write-up the change contradicts, logs it and closes the issue.</dd><dt>Can change</dt><dd>The fact records, the write-ups where a fact changed, and the generated tables, only by running the generator.</dd><dt>Never</dt><dd>A quote typed from memory. A company's own compliance claim marked higher than Corroborated.</dd><dt>Rules in</dt><dd><code>facts/README.md</code></dd></dl></div>
     <div class="rule" style="--c:var(--review)"><h3>🧐 Independent reviewer</h3><dl><dt>Job</dt><dd>Fact-checks everything from scratch, assuming nothing is right until checked.</dd><dt>Can change</dt><dd>Only its own report in <code>shared/reviews/</code>.</dd><dt>Never</dt><dd>Changing the library. Its findings go to Hassan first.</dd><dt>Rules in</dt><dd>Task prompt, under <code>shared/agents.md</code></dd></dl></div>
     <div class="rule" style="--c:var(--accent)"><h3>🧑‍💼 Coordinator</h3><dl><dt>Job</dt><dd>Plans the work, gives each agent its own files, checks results, merges, logs and republishes.</dd><dt>Can change</dt><dd>Everything, after checking: Crossref for every new citation, spot checks of the biggest claims.</dd><dt>Never</dt><dd>Posting anything on Hassan's behalf without his approval.</dd><dt>Rules in</dt><dd><code>CLAUDE.md</code> and <code>shared/agents.md</code></dd></dl></div>
   </div>
