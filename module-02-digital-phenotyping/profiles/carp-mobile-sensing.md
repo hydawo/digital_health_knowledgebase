@@ -216,6 +216,62 @@
 ## Vendor Fact Record
 
 <!-- facts:begin -->
+*Generated from the fact record by `tools/facts/generate.py`. Edit the record, not this block.*
+
+**Research access**
+
+| Fact | Value |
+|---|---|
+| Formal research or academic program (name, what it offers) | No grant or membership program. DTU Health Tech runs a hosted CARP instance (CARP Web Services, the CARP Study Portal and the CARP Studies app) on Computerome for research projects in which DTU Health Tech is an active research partner. The service is funded in part by a DKK 5 million Novo Nordisk Foundation infrastructure grant (2023). Outside the hosted service, all components are open source for self-hosting or building a custom app. [V, 2026-10-11] |
+| Who can join the research program | The DTU-hosted service is only for research projects where DTU Health Tech is an active research partner, meaning DTU helped initiate the study, secure funding and define the protocol, and takes part in publication. Non-DTU researchers can use it only through such a partnership. Teams that cannot accept this are pointed to self-hosting. [V, 2026-10-11] |
+| How to apply, and any approval or review step | No form. Email info@carp.dk or support@carp.dk, or ask on Discord. Researcher portal accounts are by invitation; a test-server account comes first, production when ready. The hosted service charges a one-time study setup fee that includes a data disclosure agreement. [V, 2026-10-11] |
+| Whether the program is active, paused, renamed or closed | Active. The site invites new projects; CAMS API 2.0 was released in April 2026 and the rebuilt CARP Studies app version 5 in September 2026 (iOS 5.1.0 on 2026-10-06). Core repositories were pushed in September and October 2026. [V, 2026-10-11] |
+| Whether the general developer or API program is open to new applicants | Open. All components are open source (MIT) on GitHub and pub.dev with no application step. To connect a custom app to a CAWS server, whoever runs that server must register the app and issue a clientId and redirect URI. [V, 2026-10-11] |
+| Participant or user limits before approval or by tier | No platform participant cap is published. One protocol serves any number of participants; with self sign-up by study code the researcher sets the maximum number of participants. Email invitations are one per person. [V, 2026-10-11] |
+| How academic access differs from commercial or consumer access | The DTU-hosted service is research only; clinical treatment and commercial services are excluded. The open-source components carry no such restriction, and CARP points teams building commercial or clinical-grade products to the Flutter packages. [V, 2026-10-11] |
+
+**Pricing**
+
+| Fact | Value |
+|---|---|
+| Device or hardware list price | n/a |
+| Consumer subscription or membership price | n/a |
+| Research or academic pricing or discount | The hosted service follows DTU's co-financed research price model. Normally its cost is a budget line inside the joint project budget; smaller projects may pay as they go at actual cost plus 44% overhead, with staff time billed monthly, plus a monthly Computerome operations fee. Invoicing is typically yearly. Staff rates (2024, DKK per month): student assistant 16,700, research assistant 68,100, researcher 78,000, senior researcher 105,000. Self-hosting and the software are free. [V, 2026-10-11] |
+| Fees for API, SDK, platform or data access | No licence or API fees: the framework, server, portal and app are MIT licensed and free to use and self-host. Fees apply only to the DTU-hosted service (see hosting_price). [V, 2026-10-11] |
+| Minimum order, term or commitment | Not public [2026-10-11] |
+| Whether pricing requires contacting sales | Partly. A rate table (2024 prices in DKK) is published, but the hosted service is available only through a research partnership and its cost is normally set in the joint project budget, so the actual amount is agreed per project. Self-hosting needs no contact. [V, 2026-10-11] |
+| Price of managed hosting | DTU-hosted service, 2024 prices in DKK: one-time study setup 45,000, including a data disclosure agreement but not fuller data processing agreements; hosting and maintenance 1,250 per study per month; staff time per month from 16,700 (student assistant) to 105,000 (senior researcher); plus a Computerome operations fee. Pay as you go invoices actual cost plus 44% overhead. No SLA or service guarantee. [V, 2026-10-11] |
+
+**Data access and terms**
+
+| Fact | Value |
+|---|---|
+| Raw signals available to researchers, and by which route | Via CARP Mobile Sensing sampling packages (own app) or the CARP Studies app: accelerometer (with and without gravity), gyroscope, magnetometer, step events, ambient light (Android), location, activity recognition, Bluetooth and Wi-Fi scans, connectivity, microphone audio and noise, battery, screen events (Android), and on Android only call and SMS logs, installed apps and app usage; calendar; surveys and cognitive tests; Apple Health and Health Connect records. Wearables: Polar accelerometer, gyroscope, magnetometer, ECG, PPI, PPG and HR; Movesense HR, ECG and IMU; Movisens (Android); eSense; Apple Watch via the AWARE watchOS framework. The CARP Studies app collects a subset. CARP Gardener (server side) pulls Fitbit, Garmin, Withings and Dexcom cloud data, which CARP describes as for future studies. [V, 2026-10-11] |
+| Derived or processed metrics available to researchers | On the phone: mobility features from location, accelerometer higher-order features over a window, OS activity recognition, noise level and light summaries. The CARP Studies app shows participants weekly cards for steps, heart rate, sleep, mobility and task progress. Server side, CAWS lets researchers deploy Python analysis scripts to a data processing pipeline, and the carp-dsp repository provides a data-science pipeline framework. No ready-made catalogue of clinical digital biomarkers is published. [V, 2026-10-11] |
+| Documented sampling rates or temporal resolution | Configurable per measure in the study protocol. Defaults: accelerometer, gyroscope and magnetometer every 200 ms (5 Hz); ambient light 10 s every 5 min; app heartbeat every 15 min. Data uploads to CAWS every 10 minutes by default. Wearable sampling rates are set by the device SDKs and are not tabulated in the CARP docs. [V, 2026-10-11] |
+| How far back data can be retrieved | Prospective collection from enrolment. Probes that read stored phone data (app usage, calls and texts) look back one day by default, configurable. Apple Health and Health Connect measures read back to the last successful sample, and only while the app is in the foreground with the phone unlocked. [V, 2026-10-11] |
+| Export, API, SDK or file routes | Hosted or self-hosted CAWS: Portal Export (JSON), the carp-cli command-line tool and its Python module, the CAWS REST API, and the carp_webservices Dart client. A custom CAMS app can store locally (SQLite or zipped JSON), send to any endpoint through its own data manager, or use Firebase (not yet on API 2.x). Transformer schemas map data to Open mHealth and FHIR. [V, 2026-10-11] |
+| API rate limits | **CAWS self sign-up endpoint:** Only one limit is documented: the public self sign-up endpoint is throttled per IP address, default 20 requests per minute (configurable by the server operator). No limits are published for data upload, export or the rest of the REST API. [V, 2026-10-11] |
+| Terms on retaining, storing or deleting data | DTU's study-app privacy policy keeps data as long as relevant to the study and for at least five years, and lets participants request erasure; on the phone data is kept only until upload. The CARP Studies Google Play data safety section declares that data can't be deleted and that the developer gives no way to request deletion. Self-hosted CAWS keeps export files 7 days by default. (conflict) [U, 2026-10-11] |
+| Terms on using data to train AI or ML models | Not public [2026-10-11] |
+| Announced shutdowns, deprecations or migrations, with dates | CAMS API level 2.0 released 2026-04-14 with a redesigned architecture and restructured packages. The CAWS legacy DataPoint upload endpoint and the old informed-consent endpoint are deprecated but still supported. The Firebase data manager has not been updated to API 2.x. The dk.cachet.carp data namespace is to change to carp.dk at an unannounced date. The CARP health plugin dropped Google Fit in version 11.0.0, but the 2026-07-14 "Three Ways" post still lists the health package as a Google Fit integration. CARP Studies app version 5 (2026-09-28) replaced the earlier app. [V, 2026-10-11] |
+| Software licence of the platform's components | MIT for all main components: CARP Mobile Sensing and its packages (carp.sensing-flutter), CARP Web Services (carp-webservices-spring), the CARP web portal (carp-portal), the CARP Studies app (carp_study_app), CARP Core (carp.core-kotlin), CARP Gardener and carp-cli. Copyright Technical University of Denmark. [V, 2026-10-11] |
+| Self-hosting and managed-hosting options | Three routes: (1) the DTU-hosted service on Computerome (research partner projects only, DTU as data controller, no SLA, best effort); (2) self-host CARP Web Services, the portal and the Studies app on your own Docker or Kubernetes infrastructure with PostgreSQL; (3) build a custom Flutter app with CAMS and send data to any backend. No commercial managed hosting is offered. [V, 2026-10-11] |
+| App store availability on iOS and Android | CARP Studies is free on the Apple App Store as an unlisted app, reachable only by link (id 1569798025, seller Danmarks Tekniske Universitet, iPhone, iOS 15.0 or later, version 5.1.0 released 2026-10-06, first released 2025-03-21) and on Google Play (dk.cachet.carp_study_app). Version 5, rebuilt from the ground up, was announced for Android and iOS on 2026-09-28. In mainland China iOS users install through TestFlight. [V, 2026-10-11] |
+
+**Compliance and regulatory**
+
+| Fact | Value |
+|---|---|
+| Whether a HIPAA Business Associate Agreement is offered | Not public [2026-10-11] |
+| Whether a data processing agreement is offered | On the hosted service DTU is the controller and will not act as a data processor for another organisation. Outside partners can receive selected data under a short disclosure contract, or become DTU's data processors under a full DTU-standard data processor agreement; only aggregate anonymous data is shared otherwise. Joint controllership is possible only rarely, in large funded projects. [C, 2026-10-11] |
+| Published HIPAA statement | Not public [2026-10-11] |
+| Published GDPR statement | DTU is the data controller for the hosted service and processes data under the GDPR and the Danish Data Protection Act, on the legal basis of GDPR Articles 6(1)(e), 9(2)(j) and 10. DTU's data protection officer is at dpo@dtu.dk. Self-hosters are their own controller. [C, 2026-10-11] |
+| ISO/IEC 27001 status and evidence | Not public [2026-10-11] |
+| SOC 2 status and evidence | Not public [2026-10-11] |
+| FDA clearances, from the FDA database | Not public [2026-10-11] |
+| Where data is stored, and residency options | Hosted service: DTU servers at Computerome, the Danish National Life Science Supercomputing Center, in Denmark, so data stays in the EU/EEA by default. Self-hosted: wherever the institution deploys. [V, 2026-10-11] |
+
 <!-- facts:end -->
 
 ## Key Links

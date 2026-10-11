@@ -200,6 +200,62 @@
 ## Vendor Fact Record
 
 <!-- facts:begin -->
+*Generated from the fact record by `tools/facts/generate.py`. Edit the record, not this block.*
+
+**Research access**
+
+| Fact | Value |
+|---|---|
+| Formal research or academic program (name, what it offers) | No separate research or academic program. Research use runs on the research licences themselves (Free, Essential, Standard, Comfort), sold on a page titled "Research & Academic Licenses", with paid add-ons, consulting and a first-ESM-study support package. The research page claims 1000+ researchers, 150+ institutions and 90000+ participants (vendor figures). [V, 2026-10-11] |
+| Who can join the research program | Anyone can open a free dashboard account; paid subscriptions are optional and no eligibility criteria are published for them. Individual practitioners (therapy use) get the basic version free. Participants aged 13 to 16 need a parent's or guardian's consent, subject to national law. [V, 2026-10-11] |
+| How to apply, and any approval or review step | Self-service. Sign up with email verification, then buy Essential, Standard or Comfort by card on the pricing page; add-ons and other purchases go through a payment link, invoice or formal quote from m-Path. No review or approval step. Ethics approval is the researcher's responsibility. [V, 2026-10-11] |
+| Whether the program is active, paused, renamed or closed | Active. Plans and add-ons are on sale on the live pricing page, and the manual's billing and sensing pages were updated in October 2026. [V, 2026-10-11] |
+| Whether the general developer or API program is open to new applicants | No open developer program and no public API documentation. API access is a paid add-on (EUR 5,000), available from the Standard plan up by contacting m-Path. The open R packages (mpathr, mpathsenser) read exported files, not a live API. [C, 2026-10-11] |
+| Participant or user limits before approval or by tier | Free plan 50 participants a year. Paid plans 300 to 3,000 participant slots a year in steps of 100; 300 is the smallest paid licence. Extra blocks of 100 can be bought mid-year. Add-on prices hold up to 1,000 slots and scale above that. [V, 2026-10-11] |
+| How academic access differs from commercial or consumer access | No separate academic tier; the research licences are the same for any researcher. Individual practitioners get the basic version free, funded by research licences, and the site markets m-Path for therapy and blended care. Enterprise (workplace) use is by contact, with no public price. The Terms, however, exclude using the services to provide clinical or medical services. [C, 2026-10-11] |
+
+**Pricing**
+
+| Fact | Value |
+|---|---|
+| Device or hardware list price | n/a |
+| Consumer subscription or membership price | **Research plans:** Per year, excl. VAT. At 300 slots: Essential EUR 1,599, Standard EUR 2,099, Comfort EUR 3,099. At 1,000: EUR 4,441 / 5,829 / 8,607. At 3,000: EUR 9,043 / 11,380 / 16,593. Free plan EUR 0. Extra 100 slots mid-term EUR 535 (Essential) or EUR 700 (Standard). [V, 2026-10-11]<br>**Individual practitioners:** Free for individual practitioners (therapy use). [V, 2026-10-11] |
+| Research or academic pricing or discount | No academic discount; the published research plans (page titled "Research & Academic Licenses") are the academic prices. Half of unused slots bought beyond the first 300 can be recovered, as can half of the slots used by participants who filled in one questionnaire or fewer. US institutions can buy through SAM.gov. [V, 2026-10-11] |
+| Fees for API, SDK, platform or data access | Add-ons, excl. VAT, added to the one-year subscription from the Standard plan up; prices hold up to 1,000 participant slots a year and scale above that. API EUR 5,000; Sensing lite EUR 3,000; Sensing full EUR 10,000 (includes Sensing lite; required for the direct Garmin integration); Smartwatch integration via Thryve EUR 3,000, with Oura EUR 3,000 more; Cognitive tests EUR 4,500; Intervention editor EUR 6,000; Moodboard editor EUR 6,000; White-label app EUR 10,000 plus EUR 2,000 a year; External servers custom. Garmin Lite is a separate add-on with no published price. [V, 2026-10-11] |
+| Minimum order, term or commitment | Paid subscriptions run at least one year and start at 300 participant slots; extensions from 3 months. No automatic renewal; a lapsed account falls back to the Free plan. [V, 2026-10-11] |
+| Whether pricing requires contacting sales | No for the base plans, which are priced and bought online. Add-ons are priced but enabled by contacting m-Path; external servers, consulting and custom development are custom-priced. A formal quote is available on request. [V, 2026-10-11] |
+| Price of managed hosting | Managed hosting on m-Path's Azure servers is included in every plan. Storing answer data on the customer's own servers ("External servers") is custom-priced with a development cost. Sensing-full, Garmin-direct and media data go to the researcher's own pCloud, OneDrive or SFTP storage, which the researcher pays for. [V, 2026-10-11] |
+
+**Data access and terms**
+
+| Fact | Value |
+|---|---|
+| Raw signals available to researchers, and by which route | Phone, continuous (Sensing full, m-Path Sense app, CARP-based): location, device, weather, pedometer, activity, screen (Android), battery, app usage (Android), connectivity, Wi-Fi, periodic accelerometer features, light (Android), memory (Android); a vendor comparison page also lists gyroscope, Bluetooth and anonymised call and text data. JSON files go straight to the researcher's cloud. Phone, in-survey (Sensing lite): location, noise level, step count, app usage (Android; iOS only with a study-specific SensorKit app), nearby Bluetooth, audio, photo, video. m-Path Keyboard: keystroke and typing data sent to the researcher. Wearables: direct Garmin gives heart rate down to 1 s, all beat-to-beat intervals, raw accelerometer 25 Hz and gyroscope 32 Hz, plus SpO2, stress, respiration and skin temperature; Garmin, Fitbit, Apple Health and Polar via Thryve at lower resolution. Empatica, movisens and ActiGraph are not integrated. [V, 2026-10-11] |
+| Derived or processed metrics available to researchers | Phone accelerometer comes as window summary features (means, SDs, energy and so on), not raw samples, and light as lux summaries; activity type with confidence. Thryve wearables include computed measures such as sleep scores, sleep stages and daily summaries. The m-Path keyboard derives sentiment and typing behaviour without storing raw text. Dashboard visualisations and compliance monitoring; R packages mpathr and mpathsenser for processing. [V, 2026-10-11] |
+| Documented sampling rates or temporal resolution | m-Path Sense: periodic sensors use a researcher-set interval in seconds, others are event-based; location every minute on Android and every 10 m moved on iOS. The OS pausing the app makes real rates lower than configured. Direct Garmin: heart rate default 30 s (1 to 3600 s), stress and respiration default 10 s, SpO2 default 30 s, steps fixed at 60 s, all beat-to-beat intervals, accelerometer 25 Hz, gyroscope 32 Hz. Thryve wearables are lower resolution; Fitbit syncs about every 15 minutes, Garmin and Apple Health less often. [V, 2026-10-11] |
+| How far back data can be retrieved | No backfill of pre-enrolment history is documented. Survey data stays in the dashboard for the life of the account, including after a plan lapses, until deletion is requested. Thryve wearable access runs for a researcher-set expiration time after the participant connects. Garmin Lite syncs a configurable number of hours back, or from the last sync. [C, 2026-10-11] |
+| Export, API, SDK or file routes | Dashboard: single-participant export in the Visualize tab (all plans) and bulk semicolon-delimited .csv in the Export tab (paid plans only); wearable data exported from the dashboard as JSON. Sensing-full, Garmin-direct, Garmin Lite, keyboard and media data go straight to the researcher's pCloud, OneDrive or self-hosted SFTP. API as a paid add-on. R packages mpathr and mpathsenser read the exports. [V, 2026-10-11] |
+| API rate limits | Not public [2026-10-11] |
+| Terms on retaining, storing or deleting data | DPA clause 8.1: m-Path deletes controller data as soon as services end, unless the controller asks in writing at least 5 days before for return as .csv. In practice a lapsed paid account falls back to the Free plan and keeps its data until the researcher asks for removal. Participants can delete all their online data in the app, immediately and permanently. Database backups are daily and kept up to one month. [V, 2026-10-11] |
+| Terms on using data to train AI or ML models | Unclear |
+| Announced shutdowns, deprecations or migrations, with dates | No dated shutdowns. Legacy invitation codes will be phased out (no date). The Legal page still announces a legal-document update for November 1, 2025, with no changelog. The Terms reserve the right to discontinue services without notice. [C, 2026-10-11] |
+| Software licence of the platform's components | Platform (dashboard, m-Path and m-Path Sense apps) is proprietary; users get a personal, revocable access right and no object code. The companion R packages mpathr and mpathsenser are GPL (>= 3) on CRAN. m-Path Sense builds on the open-source CARP mobile sensing framework. [V, 2026-10-11] |
+| Self-hosting and managed-hosting options | Managed SaaS only by default, with survey data on Microsoft Azure in Frankfurt (but see data_residency). Continuous sensing, Garmin-direct and media data bypass m-Path's servers and go to the researcher's pCloud, OneDrive or self-hosted SFTP. Storing answer data on the customer's own servers is a custom-priced add-on built with the customer's IT. No self-hostable release. [V, 2026-10-11] |
+| App store availability on iOS and Android | Two free apps from m-Path Software on both stores: m-Path (surveys, Sensing lite, Thryve wearables; Play id io.m_Path.kuleuven, 50K+ downloads; App Store id6733243074) and m-Path Sense (continuous sensing and direct Garmin, built on CARP; Play id io.m_Path_Sense.kuleuven, 1K+ downloads; App Store id6520394129). A white-label app is a paid add-on. [V, 2026-10-11] |
+
+**Compliance and regulatory**
+
+| Fact | Value |
+|---|---|
+| Whether a HIPAA Business Associate Agreement is offered | Not public [2026-10-11] |
+| Whether a data processing agreement is offered | Yes. A GDPR Article 28 data processing agreement is Annex 1 of the Terms (researcher or practitioner as controller, m-Path as processor), with a public sub-processor list, audits at the controller's cost (EUR 125 per staff hour) and SCC Module 4 (Annex 2) for controllers outside the EEA. [C, 2026-10-11] |
+| Published HIPAA statement | The homepage, FAQ and research page claim GDPR and HIPAA compliance. No HIPAA policy, BAA or attestation is published, and the legal documents do not mention HIPAA. [C, 2026-10-11] |
+| Published GDPR statement | Belgian company acting as GDPR processor under an Article 28 DPA; services provided only in the EU/EEA unless the controller is in a third country; privacy statements set out data subject rights; participants can delete their online data in the app. [C, 2026-10-11] |
+| ISO/IEC 27001 status and evidence | Not public [2026-10-11] |
+| SOC 2 status and evidence | Not public [2026-10-11] |
+| FDA clearances, from the FDA database | Not public [2026-10-11] |
+| Where data is stored, and residency options | EU, but m-Path's own documents disagree on the host. The manual's storage page (updated 2026-10-09), the FAQ and the sub-processor list say survey data is on Microsoft Azure in Frankfurt; the privacy statement for app and dashboard instead names KU Leuven as server host, and KU Leuven is absent from the sub-processor list. The DPA keeps services in the EU/EEA unless the controller is outside it. Continuous sensing, Garmin-direct and media data go straight to the researcher's pCloud, OneDrive or SFTP server, wherever that is. Thryve wearable data passes through the manufacturer's servers and Thryve before reaching m-Path. (conflict) [U, 2026-10-11] |
+
 <!-- facts:end -->
 
 ## Key Links

@@ -188,6 +188,62 @@
 ## Vendor Fact Record
 
 <!-- facts:begin -->
+*Generated from the fact record by `tools/facts/generate.py`. Edit the record, not this block.*
+
+**Research access**
+
+| Fact | Value |
+|---|---|
+| Formal research or academic program (name, what it offers) | Metricwire Academic Site Licence, an institution-level licence that adds beta programs, academic advisory boards, product updates, a dedicated account manager and dedicated engineering support for novel protocols. [V, 2026-10-11] |
+| Who can join the research program | **MetricWire Academic Site Licence:** Aimed at researchers at institutions ("leading institutions"); no eligibility criteria are published. [R, 2026-10-11]<br>**Penn State SRC enterprise licence (third-party sub-licence):** Penn State-affiliated investigators and external partners can use the SRC's licence (independent licence or an SRC-run project); the no-cost tier is for pilot data and student thesis or dissertation projects. [R, 2026-10-11] |
+| How to apply, and any approval or review step | Not public [2026-10-11] |
+| Whether the program is active, paused, renamed or closed | Unclear |
+| Whether the general developer or API program is open to new applicants | Unclear |
+| Participant or user limits before approval or by tier | Not public [2026-10-11] |
+| How academic access differs from commercial or consumer access | Academic institutions get a separate Academic Site Licence pitched on feasible pricing plus partnership services; commercial terms and the actual price difference are not published. [R, 2026-10-11] |
+
+**Pricing**
+
+| Fact | Value |
+|---|---|
+| Device or hardware list price | n/a |
+| Consumer subscription or membership price | n/a |
+| Research or academic pricing or discount | **MetricWire Academic Site Licence:** Offered as balancing tools and "feasible pricing", but no figures are published. [C, 2026-10-11]<br>**Penn State SRC enterprise licence (third-party sub-licence):** Since March 2024 Penn State's Survey Research Center holds an enterprise-level MetricWire licence and offers access at significantly reduced cost (independent licence, or projects run by the SRC with its programming and data management), and no-cost access for pilot data and student thesis or dissertation projects. No prices published. [R, 2026-10-11] |
+| Fees for API, SDK, platform or data access | Not public [2026-10-11] |
+| Minimum order, term or commitment | Not public [2026-10-11] |
+| Whether pricing requires contacting sales | Yes in practice. No prices are posted, researcher portal access is requested by email, and the site licence and demo pages route to contact forms. [R, 2026-10-11] |
+| Price of managed hosting | Not public [2026-10-11] |
+
+**Data access and terms**
+
+| Fact | Value |
+|---|---|
+| Raw signals available to researchers, and by which route | The Consumer API sensor endpoint lists 31 phone stream types: accelerometer, gyroscope, magnetometer, passive location, linear acceleration, pedometer, ambient, gravity, activity types, device information, activity, steps, noise, light, mobility, battery, Bluetooth, screen events, messages, calls, apps, app usage, app usage events, mobility places/stops/moves, and iOS-specific usage events, usage, calls, messages and light. Wearables: Fitbit (19 types including intraday heart rate, HRV, breathing rate, SpO2, plus ECG and temperature) and Polar (continuous heart rate, training heart rate, sleep and hypnogram, Nightly Recharge HRV and breathing rate). Apple HealthKit and Android Health Connect are also integrated. Routes: researcher portal and the Consumer API. [C, 2026-10-11] |
+| Derived or processed metrics available to researchers | Derived data come mainly from partner ecosystems (Fitbit activity, sleep, Active Zone Minutes, heart-rate zones and daily HRV; Polar daily activity, sleep and Nightly Recharge; HealthKit sleep, steps, exercise, distance). The API also lists phone stream types named mobility, mobility places, stops and moves, and activity types, but their derivation is not documented. No platform-native feature-extraction documentation found. [R, 2026-10-11] |
+| Documented sampling rates or temporal resolution | Not public [2026-10-11] |
+| How far back data can be retrieved | Not public [2026-10-11] |
+| Export, API, SDK or file routes | Two routes: configurable exports from the researcher web portal, and the MetricWire Consumer API (REST, JSON, OAuth2 client credentials, host consumer-api.metricwire.com). The API returns workspaces, studies, surveys, intakes, survey, diary and analysis submissions (with a PII option), media, participants, device snapshot and study activity, cognitive-task submissions, phone sensor data, Fitbit and Polar data, and can create, update and delete API triggers and digital interventions. No SDK. Portal export file formats are not documented. [C, 2026-10-11] |
+| API rate limits | Not public [2026-10-11] |
+| Terms on retaining, storing or deleting data | Data sync to US servers and are removed from the phone. When the study ends the research team deletes the data from MetricWire servers and MetricWire says it keeps no further copies, except that one archival copy may be kept where law requires. No fixed retention period is stated. [V, 2026-10-11] |
+| Terms on using data to train AI or ML models | Unclear |
+| Announced shutdowns, deprecations or migrations, with dates | Not public [2026-10-11] |
+| Software licence of the platform's components | Proprietary. MetricWire owns the software; users get a personal, non-exclusive, revocable, non-transferable licence. No open-source components or product repositories published. [V, 2026-10-11] |
+| Self-hosting and managed-hosting options | Vendor-hosted SaaS only, on Google Cloud Platform in the United States. No self-hosted or on-premises option is published. [C, 2026-10-11] |
+| App store availability on iOS and Android | **Catalyst By MetricWire (current participant app):** iOS (requires iOS 15.0 or later; version 6.9.0 released 2026-10-07, regular releases through 2026) and Android (com.metricwire.digitalhealth, updated 2026-10-07). Free. Supports HealthKit on iOS and Health Connect on Android. [V, 2026-10-11]<br>**MetricWire (legacy generic participant app):** Still listed on iOS (version 4.9.9, requires iOS 12.0 or later, last updated 2022-04-06) and Android (com.metricwire.android3, updated 2024-07-30), but no longer maintained in step with Catalyst. [V, 2026-10-11]<br>**Study-branded (white-label) apps:** MetricWire Inc. also publishes study-branded apps, for example ARTEMIS, Rhythms In Daily Life, SOAR, MAP ARC, PLAD TRACE, TRACC MH and TREAT, which points to custom builds offered as a service. [C, 2026-10-11] |
+
+**Compliance and regulatory**
+
+| Fact | Value |
+|---|---|
+| Whether a HIPAA Business Associate Agreement is offered | Not public [2026-10-11] |
+| Whether a data processing agreement is offered | Unclear |
+| Published HIPAA statement | MetricWire says its software was built to comply with HIPAA and 21 CFR Part 11 (and GDPR), that synced data go to HIPAA-compliant US servers, and that it is "the only EMA platform" complying with Part 11, HIPAA and GDPR. No independent evidence published. [C, 2026-10-11] |
+| Published GDPR statement | Claims GDPR compliance and names Prighter Group as its EU and UK representative. The general privacy policy is written to Canada's PIPEDA. [C, 2026-10-11] |
+| ISO/IEC 27001 status and evidence | Claims ISO 27001 certification (security summary last reviewed 2025-09-08); no certificate, certification body, scope or date published. [C, 2026-10-11] |
+| SOC 2 status and evidence | Claims SOC 2 Type II compliance; no report, auditor or period published. [C, 2026-10-11] |
+| FDA clearances, from the FDA database | Not public [2026-10-11] |
+| Where data is stored, and residency options | United States only, on Google Cloud Platform. No other region option is published. [V, 2026-10-11] |
+
 <!-- facts:end -->
 
 ## Key Links

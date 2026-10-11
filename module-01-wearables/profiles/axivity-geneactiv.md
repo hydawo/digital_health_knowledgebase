@@ -261,6 +261,58 @@
 ### Axivity
 
 <!-- facts:begin axivity -->
+*Generated from the fact record by `tools/facts/generate.py`. Edit the record, not this block.*
+
+**Research access**
+
+| Fact | Value |
+|---|---|
+| Formal research or academic program (name, what it offers) | Not public [2026-10-11] |
+| Who can join the research program | n/a |
+| How to apply, and any approval or review step | n/a |
+| Whether the program is active, paused, renamed or closed | n/a |
+| Whether the general developer or API program is open to new applicants | No developer program or registration is needed. The device communication is documented and a C device API (libOMAPI) can be used to build custom configuration and download software; firmware, software and file-format readers are open source under a BSD 2-clause licence. A third-party R wrapper, axR (Circadia Lab, r-universe), exposes device discovery, configuration and download from R. [V, 2026-10-11] |
+| Participant or user limits before approval or by tier | n/a |
+| How academic access differs from commercial or consumer access | Axivity publishes no academic vs commercial distinction. Everyone pays the same list prices and gets the same BSD 2-clause software. One third-party analysis package the Open Movement docs point to, Oxford's biobankAccelerometerAnalysis, is under an Academic Use Licence that excludes commercial users, and it cannot read AX6 data. [C, 2026-10-11] |
+
+**Pricing**
+
+| Fact | Value |
+|---|---|
+| Device or hardware list price | **AX3:** AX3 puck GBP 139.00, or GBP 149.00 with wrist band (ex VAT). Cable not included (micro USB cable GBP 3.50). [V, 2026-10-11]<br>**AX6:** AX6 puck GBP 199.00, or GBP 209.00 with wrist band (ex VAT). Cable not included. [V, 2026-10-11] |
+| Consumer subscription or membership price | n/a |
+| Research or academic pricing or discount | Not public [2026-10-11] |
+| Fees for API, SDK, platform or data access | None. Firmware, OmGui, the device API and file-format tools are open source under a BSD 2-clause licence and free to use. [V, 2026-10-11] |
+| Minimum order, term or commitment | Not public [2026-10-11] |
+| Whether pricing requires contacting sales | No for standard purchases. List prices are published and orders go through the web store. No quote route for volume or academic pricing is published. [V, 2026-10-11] |
+
+**Data access and terms**
+
+| Fact | Value |
+|---|---|
+| Raw signals available to researchers, and by which route | Raw, unfiltered triaxial acceleration (AX3: Analog Devices ADXL345; AX6: Bosch BMI160) plus triaxial gyroscope on the AX6, each block timestamped. Both devices also always record low-rate auxiliary channels: light level, internal device temperature and battery voltage. All stored raw on device flash in the open .CWA format and read over USB by the researcher. No vendor cloud. [V, 2026-10-11] |
+| Derived or processed metrics available to researchers | The device stores raw data only and computes nothing. OmGui (through omconvert) has built-in, open analysis run by the researcher locally, which derives signal vector magnitude epochs, MET cut-point time in activity intensity bands, wear-time validation and a simple sleep-period detector. Richer metrics come from third-party open-source tools the docs recommend, chiefly GGIR. [V, 2026-10-11] |
+| Documented sampling rates or temporal resolution | **AX3:** Accelerometer 12.5 to 3200 Hz configurable, range +/-2/4/8/16 g, 10-bit packed or 13-bit unpacked modes. OmGui default is 100 Hz, +/-8 g. [V, 2026-10-11]<br>**AX6:** Accelerometer and gyroscope 12.5 to 1600 Hz configurable; gyroscope +/-125 to 2000 dps. [V, 2026-10-11]<br>**AX3 and AX6 auxiliary channels and clock:** Light, temperature and battery are sampled internally at 1 Hz and stored once per data sector (every 40 to 120 movement samples, by mode). The internal clock is set from the configuring computer and drifts by about +/-2 seconds per day. [V, 2026-10-11] |
+| How far back data can be retrieved | **AX3:** One recording is bounded by battery and memory, and Axivity's own figures disagree. The AX3v2 datasheet description says up to 21 days; the same datasheet's spec table and the product page say 30 days at 12.5 Hz and 14 days at 100 Hz; the Open Movement FAQ gives about 13.5 days at 100 Hz and about 65 days at 12.5 Hz (packed mode). There is no vendor-side history; downloaded files are held by the researcher. (conflict) [U, 2026-10-11]<br>**AX6:** About 7 days at 100 Hz with gyroscope; 31+ days at 50 Hz and up to 140 days at 12.5 Hz accelerometer only. No vendor-side history. [V, 2026-10-11] |
+| Export, API, SDK or file routes | USB only. The device mounts as a USB drive holding CWA-DATA.CWA. OmGui (Windows) downloads it and exports CSV or WAV; omconvert and cwa-convert do the same from the command line; the file loads directly into GGIR, openmovement-python, pampro, MATLAB and others. libOMAPI (C) and the third-party axR (R) let teams build their own download software. AX-Deploy handles mass deployment with per-device configuration but not AX6 gyroscopes; the web configurator AX Config configures one device at a time and cannot download. [V, 2026-10-11] |
+| API rate limits | n/a |
+| Terms on retaining, storing or deleting data | Sensor recordings never reach Axivity, so there are no vendor terms on retaining study data; retention is the researcher's own. The website privacy policy covers only customer and order data, kept for 6 years. [V, 2026-10-11] |
+| Terms on using data to train AI or ML models | n/a |
+| Announced shutdowns, deprecations or migrations, with dates | Not public [2026-10-11] |
+
+**Compliance and regulatory**
+
+| Fact | Value |
+|---|---|
+| Whether a HIPAA Business Associate Agreement is offered | n/a |
+| Whether a data processing agreement is offered | n/a |
+| Published HIPAA statement | Not public [2026-10-11] |
+| Published GDPR statement | **Website and order data:** The privacy policy cites UK GDPR lawful bases for customer and website data. It does not address study or participant data, which Axivity does not receive. [C, 2026-10-11] |
+| ISO/IEC 27001 status and evidence | Not public [2026-10-11] |
+| SOC 2 status and evidence | Not public [2026-10-11] |
+| FDA clearances, from the FDA database | Not public [2026-10-11] |
+| Where data is stored, and residency options | No vendor storage. Recordings stay on the device's flash memory until a researcher downloads them over USB to their own computer, so residency is wherever the research team keeps the files. [V, 2026-10-11] |
+
 <!-- facts:end -->
 
 ### Activinsights (GENEActiv)

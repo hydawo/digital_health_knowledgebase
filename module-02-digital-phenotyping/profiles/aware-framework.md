@@ -223,6 +223,62 @@
 ## Vendor Fact Record
 
 <!-- facts:begin -->
+*Generated from the fact record by `tools/facts/generate.py`. Edit the record, not this block.*
+
+**Research access**
+
+| Fact | Value |
+|---|---|
+| Formal research or academic program (name, what it offers) | No research access program. AWARE is open-source academic software that anyone can download and self-host. The only researcher offering is a paid service from the University of Melbourne team, covering dedicated study set-up or fixing support and hosting a study on their AWARE hosting service, arranged by contacting Dr Simon D'Alfonso. [V, 2026-10-11] |
+| Who can join the research program | n/a |
+| How to apply, and any approval or review step | n/a |
+| Whether the program is active, paused, renamed or closed | n/a |
+| Whether the general developer or API program is open to new applicants | Open source with no developer program or sign-up. Actively maintained by a team in the University of Melbourne's School of Computing and Information Systems (Dr Simon D'Alfonso, Prof Vassilis Kostakos); AWARE was created by Denzil Ferreira in his PhD, co-supervised by Kostakos and Anind K. Dey. Android stable is 4.2.1 and beta 4.7.3 (GitHub release 2026-08-07). The iOS apps are published under Yuuki Nishiyama's developer account. Contributions go to D'Alfonso or Kostakos; community support is on Discord. [V, 2026-10-11] |
+| Participant or user limits before approval or by tier | Not public [2026-10-11] |
+| How academic access differs from commercial or consumer access | No difference. The Apache 2.0 licence permits commercial and research use without restriction. [V, 2026-10-11] |
+
+**Pricing**
+
+| Fact | Value |
+|---|---|
+| Device or hardware list price | n/a |
+| Consumer subscription or membership price | Free. Both iOS apps (AWARE Client V3 and V2) are free on the App Store, and the Android APKs are free downloads from GitHub and awareframework.com. [V, 2026-10-11] |
+| Research or academic pricing or discount | Not public [2026-10-11] |
+| Fees for API, SDK, platform or data access | None for the software. All core components are open source; there is no hosted API to pay for. Costs are the researcher's own server, or the unpriced paid support and hosting services. [V, 2026-10-11] |
+| Minimum order, term or commitment | Not public [2026-10-11] |
+| Whether pricing requires contacting sales | Yes for the paid services. Dedicated support and the University of Melbourne hosting service are arranged by contacting Dr Simon D'Alfonso; no price is listed. The software itself is free. [V, 2026-10-11] |
+| Price of managed hosting | Not public [2026-10-11] |
+
+**Data access and terms**
+
+| Fact | Value |
+|---|---|
+| Raw signals available to researchers, and by which route | **Android (AWARE, formerly AWARE-Light):** Raw phone sensor and event streams written to the researcher's own database, including accelerometer, gyroscope, magnetometer, gravity, linear accelerometer, rotation, barometer, light, proximity, temperature, locations (GPS and network), battery, Bluetooth, WiFi, network, telephony, calls and messages, applications, installations, keyboard, touch, notifications, screen, screenshot, screentext and ESM/EMA answers. Applications, touch, notifications, keyboard and screentext need Android Accessibility access. Keyboard logs keystrokes on any keyboard, Screenshot captures full screen images, and Screentext captures on-screen text. [V, 2026-10-11]<br>**iOS, AWARE Client V3 (App Store, released 2026-06-28):** Motion (accelerometer, gyroscope, gravity, magnetometer, linear accelerometer, rotation, barometer, pedometer, activity recognition labels, significant motion, AirPods head motion), device and connectivity (battery, screen, device, processor, network, Bluetooth LE, timezone, app lifecycle), HealthKit records (heart rate, sleep, activity, workouts, ECG, activity summaries, audiograms), Apple Watch sensors, music and photo metadata, keyboard metadata from AWARE's own bundled keyboard, location, Wi-Fi, iBeacon, call events, OpenWeather, notifications and Shortcuts triggers. Ambient noise (decibels and sound labels) was added in a version update. Enrolment is by QR code. [V, 2026-10-11]<br>**iOS, AWARE Client V2 (App Store, version 1.14.2) and AWAREFramework-iOS:** Location, barometer, Wi-Fi and Bluetooth; accelerometer, gyroscope, gravity, linear accelerometer, magnetometer and activity recognition; ambient noise features; screen state and call events; network; timezone; OpenWeatherMap; BLE heart rate; HealthKit heart rate, sleep and workouts; calendar; Fitbit via web API; and ESM. Some sensors are extensions that need extra Info.plist permissions and App Store review. [V, 2026-10-11] |
+| Derived or processed metrics available to researchers | The clients mostly store raw records; some sensors add higher-level context (for example call availability in Communication, OS activity labels on iOS). Behavioural features come from the separate RAPIDS pipeline (AGPL-3.0, maintained outside AWARE). The AWARE Narrator tool turns records into English statements for LLM use and can optionally send coordinates to the Google Maps API for reverse geocoding. [V, 2026-10-11] |
+| Documented sampling rates or temporal resolution | **Android:** Configurable per sensor. The accelerometer is set as a sampling delay in microseconds (200000 normal, 60000 UI, 20000 game, 0 fastest) and is hardware-dependent and non-deterministic. GPS location is checked every 180 seconds by default. [V, 2026-10-11] |
+| How far back data can be retrieved | No vendor-held copy or limit. Phones upload straight to the researcher's own server, so history is whatever the study keeps; data not yet uploaded sits in the phone's local database. [C, 2026-10-11] |
+| Export, API, SDK or file routes | Android phones upload to the researcher's MySQL database at a configured offload frequency. iOS and AWARE Legacy upload to a self-run AWARE Micro server. Local data can also be copied off the phone and opened with an SQLite client. No vendor API. [V, 2026-10-11] |
+| API rate limits | n/a |
+| Terms on retaining, storing or deleting data | By default the client stores data only on the phone; in a study it is uploaded to the study server. Participants can withdraw and remove their data from the server and phone from the app. Retention on the server is otherwise the researcher's decision. [C, 2026-10-11] |
+| Terms on using data to train AI or ML models | Not public [2026-10-11] |
+| Announced shutdowns, deprecations or migrations, with dates | In January 2025 AWARE-Light became the main Android AWARE and the original client became AWARE Legacy (denzilferreira/aware-client, archived 2023-06-18). The old free hosted dashboard at api.awareframework.com is not compatible with AWARE Micro and the host no longer resolves. The Google Fit add-on depends on Google Fit APIs that Google is deprecating in 2026. [V, 2026-10-11] |
+| Software licence of the platform's components | Apache License 2.0 for the Android client, AWARE Micro server, configurator and AWAREFramework-iOS. The iOS V2 app repository has no LICENSE file, though its README states Apache 2.0. Many new iOS sensor-module repositories have no detected licence, and one (calendar) is MIT. RAPIDS, the separate feature pipeline, is AGPL-3.0. [V, 2026-10-11] |
+| Self-hosting and managed-hosting options | Self-hosted, or a paid managed option. Android needs a researcher-run MySQL 5.x server reachable from the internet (own, AWS, Azure or Docker). iOS and AWARE Legacy need a self-run AWARE Micro server (JVM, Docker on AWS, GCP or Azure). The University of Melbourne team will set up and host a study on its AWARE hosting service, by arrangement. [V, 2026-10-11] |
+| App store availability on iOS and Android | **Android:** Not on Google Play. Distributed as APKs from the AWARE site and GitHub and sideloaded; stable 4.2.1, beta 4.7.3. Since May 2025 some participants see a Play Protect "unsafe app blocked" warning when installing. [V, 2026-10-11]<br>**iOS:** Two free App Store apps, both published by Yuuki Nishiyama. AWARE Client V3 is the current one (released 2026-06-28, version 1.7.0 on 2026-07-23, iOS 16.6 or later). AWARE Client V2 is still listed (version 1.14.2, 2025-07-10, iOS 12 or later) and is the one awareframework.com links to. [V, 2026-10-11] |
+
+**Compliance and regulatory**
+
+| Fact | Value |
+|---|---|
+| Whether a HIPAA Business Associate Agreement is offered | Not public [2026-10-11] |
+| Whether a data processing agreement is offered | Not public [2026-10-11] |
+| Published HIPAA statement | Not public [2026-10-11] |
+| Published GDPR statement | The 2019 privacy policy has a GDPR section. It says a random 128-bit ID is generated on install, no personal identifiers are collected by design, data stays on the phone by default, encryption and obfuscation are on by default, and participants can withdraw and delete their data. [C, 2026-10-11] |
+| ISO/IEC 27001 status and evidence | Not public [2026-10-11] |
+| SOC 2 status and evidence | Not public [2026-10-11] |
+| FDA clearances, from the FDA database | Not public [2026-10-11] |
+| Where data is stored, and residency options | Wherever the researcher puts their own server. Android phones upload directly to the researcher's MySQL server with no intermediate service. The optional hosted service is based at the University of Melbourne (Australia). [V, 2026-10-11] |
+
 <!-- facts:end -->
 
 ## Key Links

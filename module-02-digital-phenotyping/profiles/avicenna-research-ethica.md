@@ -195,6 +195,62 @@
 ## Vendor Fact Record
 
 <!-- facts:begin -->
+*Generated from the fact record by `tools/facts/generate.py`. Edit the record, not this block.*
+
+**Research access**
+
+| Fact | Value |
+|---|---|
+| Formal research or academic program (name, what it offers) | No separate academic or research program; the platform itself is sold to researchers. Each study starts on a free Trial licence (full default features, no participant cap, for testing only) and must be upgraded to a paid full licence before field research with real participants. [V, 2026-10-11] |
+| Who can join the research program | Open self sign-up for a researcher account (name, organization, email, password; email must be verified before a study can be created). The privacy policy defines a Researcher as someone affiliated with an academic institution, and the terms require account holders to be at least 18. Whether non-academic customers are excluded is not stated, and the homepage markets clinical-trial use. [C, 2026-10-11] |
+| How to apply, and any approval or review step | Self-serve sign-up creates Trial studies. Moving a study from Trial to Licensed is done by emailing support with the study ID; a demo can be booked. No review or approval criteria are published. Studies using Apple SensorKit also need a per-study Apple entitlement, applied for by the institution, for which Avicenna builds a separate app. [V, 2026-10-11] |
+| Whether the program is active, paused, renamed or closed | Active. Self sign-up and the free Trial are open and weekly release notes continue (latest read 2026-10-06). Renamed from Ethica Data to Avicenna Research in 2023-2024; the Ethica name was to be dropped by July 2024. [V, 2026-10-11] |
+| Whether the general developer or API program is open to new applicants | No public self-serve developer program. A Data Export API exists and is documented in a how-to article (posted 2026-02-09); researchers request an API key from support, tied to their researcher account. There is no full API reference. A Product Ideas card "Export Data with API" (2025-09-29), to follow "OpenAPI Compatible APIs", is still filed under To Do. [V, 2026-10-11] |
+| Participant or user limits before approval or by tier | The free Trial licence has no participant-number limit, but trial data is wiped monthly and the study deleted after one year. No caps are published for licensed studies. [V, 2026-10-11] |
+| How academic access differs from commercial or consumer access | Not public [2026-10-11] |
+
+**Pricing**
+
+| Fact | Value |
+|---|---|
+| Device or hardware list price | n/a |
+| Consumer subscription or membership price | n/a |
+| Research or academic pricing or discount | Not public [2026-10-11] |
+| Fees for API, SDK, platform or data access | Licence fees are not published (Trial is free; the paid licence is arranged by email). The terms refer to fees and overage fees set in separate Specific Conditions. No separate API fee is mentioned. SMS notifications are off by default and, if enabled through support, are billed at Twilio's per-message cost plus a 30% markup, including leased-number fees; in-app and email notifications carry no such charge. [V, 2026-10-11] |
+| Minimum order, term or commitment | Not public [2026-10-11] |
+| Whether pricing requires contacting sales | Yes. No public price list (the /pricing page returns 404). A study is upgraded to a paid licence by emailing support with the study ID, or through a demo booking; the terms describe some services as billed per study. [V, 2026-10-11] |
+| Price of managed hosting | Not public [2026-10-11] |
+
+**Data access and terms**
+
+| Fact | Value |
+|---|---|
+| Raw signals available to researchers, and by which route | Raw phone sensors through the Avicenna app (accelerometer, gyroscope, magnetic field, light, pressure, proximity, GPS, Wi-Fi, Bluetooth and beacons, battery, screen state, app usage, keyboard, web activity), with many sources Android-only; iOS app usage via hourly Screen Time summaries (added 2026-04). Garmin Health SDK raw watch data (25 Hz accelerometer, 32 Hz gyroscope, beat-to-beat intervals and more). Apple SensorKit streams including ECG and PPG, on approved studies with a custom app. Cloud data from Fitbit, Garmin Health API, Oura, WHOOP, Polar, HealthKit, Hexoskin and Mira. Exported via the dashboard, Kibana or the Data Export API. [V, 2026-10-11] |
+| Derived or processed metrics available to researchers | Phone-derived step count and activity type; vendor-computed wearable metrics pulled from cloud accounts (Garmin, Fitbit, Oura readiness and sleep, WHOOP recovery, Polar sleep). Platform-native GPS mobility features computed in a nightly batch (daily distance, radius of gyration, location entropy, time at home, daily location clusters). An Analysis page for data quality, engagement and retention (added 2026-03). Kibana and Vega charts in the dashboard. [V, 2026-10-11] |
+| Documented sampling rates or temporal resolution | Phone sensors are polled once per data-collection cycle, every 5 minutes by default, configurable from 1 to 60 minutes (iOS honours the interval, Android may not). Burst sources sample for a fixed window per cycle (accelerometer 60 seconds; GPS cycles stay active 60 seconds). Garmin Health SDK accelerometer 25 Hz, gyroscope 32 Hz, heart rate or SpO2 configurable from 1 second to 1 hour. SensorKit motion downsampled to 32 Hz. Cloud wearable data is fetched daily; Fitbit intraday activity is 1-minute, Garmin Health API 15-minute slices. [V, 2026-10-11] |
+| How far back data can be retrieved | Data is collected from study participation onward; Fitbit daily summaries dated before the study start are excluded. No backfill of pre-enrolment history is documented for any source. SensorKit data becomes exportable about 30 hours after collection. [C, 2026-10-11] |
+| Export, API, SDK or file routes | Researcher Dashboard export (ZIP of CSV; GPS also KML/GPX, Bluetooth Beacon also GEXF; the marketing page also names JSON), each file downloadable for 7 days. In-dashboard Kibana querying and charts. A Data Export API for sensor data: POST to /api/study/export/create/, poll GET /api/v1/filter/export/, header "Authorization: ApiKey USERNAME:API_KEY", key issued by support. Direct database access on request (an older forum answer says only for self-hosted deployments). Participants can ask support for a machine-readable copy of their own data. [V, 2026-10-11] |
+| API rate limits | Not public [2026-10-11] |
+| Terms on retaining, storing or deleting data | After contract termination Avicenna keeps data for at least two years unless immediate deletion is requested, then deletes it unless law requires retention. Trial-licence study data is wiped monthly and the study deleted after a year. Export files are deleted after 7 days. Participants can delete all or part of their data at any time. [V, 2026-10-11] |
+| Terms on using data to train AI or ML models | Not public [2026-10-11] |
+| Announced shutdowns, deprecations or migrations, with dates | Rebrand from Ethica Data to Avicenna Research, the Ethica name dropped by July 2024 (app IDs still carry "ethica"). App Usage (Legacy) closed to new studies. Some GraphQL endpoints replaced by REST (2023-10). WHOOP integration moved to WHOOP API v2 after v1 was deprecated (2025-11). Fitbit participants must move to Google Accounts; legacy Fitbit accounts can no longer sync. [V, 2026-10-11] |
+| Software licence of the platform's components | Proprietary, closed source. The terms say all service software is the property of Avicenna Research or its software providers; the company GitHub organisation holds only an EMA software comparison list, no platform code. [V, 2026-10-11] |
+| Self-hosting and managed-hosting options | Default: managed cloud service run by Avicenna. White-label option: rebranded apps, with installation ranging from in-house data storage to a full on-premises installation of the (closed-source) Avicenna services on the customer's infrastructure, data routed to the customer's own servers. On-premise deployments are in use: a product card plans per-organisation login pages for on-premise subdomains, and the 2026-09-22 Garmin SDK post routes data to "an institution's own Avicenna infrastructure where applicable". Terms and prices are not published. [V, 2026-10-11] |
+| App store availability on iOS and Android | Participant app "Avicenna Research" is free on the iOS App Store (id1137173052, Avicenna Research Inc.) and Google Play (com.ethica.logger). Requires iOS 16.0+ or Android 9.0+. A web app supports surveys and cloud wearables but no phone sensors. White-label study apps are a working service: on 2026-10-11 the App Store listed 33 further iOS apps under Avicenna Research Inc. (32 study-branded apps plus Avicenna Keyboard), and a 2025 JMIR mHealth paper used a customised Android app (Sesikhona). [V, 2026-10-11] |
+
+**Compliance and regulatory**
+
+| Fact | Value |
+|---|---|
+| Whether a HIPAA Business Associate Agreement is offered | Unclear |
+| Whether a data processing agreement is offered | Yes. Avicenna acts as data processor and says multiple European institutions have controller-processor agreements with it; the privacy policy describes DPA contents (security, audit rights, sub-processors, breach notice, return or deletion). No DPA template is published. [C, 2026-10-11] |
+| Published HIPAA statement | Self-described HIPAA compliance, with HIPAA Security Rule safeguards "where applicable". A forum guide also claims compliance with GDPR, PIPEDA, HIPAA, FDA 21 CFR Part 11 and ISO 27001. No independent HIPAA attestation found. [C, 2026-10-11] |
+| Published GDPR statement | Says it complies with GDPR as a data processor. Two independent register entries exist, neither of which establishes GDPR compliance or ISO certification. UK ICO register of fee payers ZC009135 (registered 2025-10-07, expires 2027-10-06) shows only that Avicenna has registered and paid the UK data-protection fee. The NHS DSPT entry AVRESC001 shows a published 2025-26 self-assessment marked "Standards met" (25 November 2025), so it records a self-assessment against NHS data-security standards, not an audit. [C, 2026-10-11] |
+| ISO/IEC 27001 status and evidence | Self-claimed ISO/IEC 27001:2022 certification "through UKAS", certified November 2024, with a November 2025 surveillance audit. No certificate, certificate number or certification body is published (UKAS accredits certification bodies; it does not certify companies). [C, 2026-10-11] |
+| SOC 2 status and evidence | Not public [2026-10-11] |
+| FDA clearances, from the FDA database | Not public [2026-10-11] |
+| Where data is stored, and residency options | The security page says all data is on servers physically in Canada, with all staff in Canada, and the privacy policy says information may be stored on servers in Canada. The privacy policy's children's-data section says UK/EEA data is processed and stored within the UK/EEA unless safeguards are in place, and the legal page claims an "infrastructure-agnostic approach" to residency. The security page also lists AWS EC2 instances with no region. On-premises installation (see hosting_options) is the documented route to local residency. (conflict) [U, 2026-10-11] |
+
 <!-- facts:end -->
 
 ## Key Links

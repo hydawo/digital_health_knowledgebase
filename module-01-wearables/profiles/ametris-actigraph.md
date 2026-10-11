@@ -269,6 +269,58 @@ The figures below are older and **Reported**, from a **competitor's** published 
 ## Vendor Fact Record
 
 <!-- facts:begin -->
+*Generated from the fact record by `tools/facts/generate.py`. Edit the record, not this block.*
+
+**Research access**
+
+| Fact | Value |
+|---|---|
+| Formal research or academic program (name, what it offers) | **Academic channel:** No formal named research program with an application. Ametris runs an academic and public health research channel (academic.ametris.com): an academic team to contact, an academic online store, a pricing list on request, a grant toolkit and an open-source dataset library. [V, 2026-10-11]<br>**Accelerant Partnership Program (CROs and technology partners):** A three-tier partner program for CROs and technology vendors that resell or deliver Ametris technology to trial sponsors. The middle tier (Accelerant API) includes API integration and access to raw study data. Not aimed at academic investigators. [V, 2026-10-11] |
+| Who can join the research program | Online purchasing in the academic store is limited to academic institutions with existing client accounts (accredited universities, research institutions, healthcare organizations, government research centers). International buyers go through authorized resellers. The LEAP is sold for clinical research as a prescription device. [V, 2026-10-11] |
+| How to apply, and any approval or review step | No application or review step is published. Researchers contact the academic team, request a quote or the pricing list, or schedule a meeting. CentrePoint API access is enabled per customer on request. [V, 2026-10-11] |
+| Whether the program is active, paused, renamed or closed | Academic channel and store live under the Ametris name as of 2026-10-11. Signant Health announced a definitive agreement to acquire Ametris on 2026-04-16 and announced the acquisition on 2026-05-14. Signant says the combined company will keep Ametris' roadmap. [V, 2026-10-11] |
+| Whether the general developer or API program is open to new applicants | No self-serve developer program. The CentrePoint V3 API (OAuth 2.0) is documented publicly on GitHub, but access is enabled per customer by contacting the company, and it reaches only CentrePoint study data the client can already see. The V2 (Study Admin) API is still supported with separate credentials. CROs and technology vendors can get API and raw-data access through the Accelerant partner program. [V, 2026-10-11] |
+| Participant or user limits before approval or by tier | **ActiLife licences:** ActiLife licences are tiered by activations, from Single (1 full, 5 lite) to Large Enterprise (15 full, 20 lite). [V, 2026-10-11]<br>**CentrePoint:** Not public [2026-10-11] |
+| How academic access differs from commercial or consumer access | Academic and population-health customers have a separate site, academic store and academic team, and can choose cloud CentrePoint or desktop ActiLife; LEAP is offered to academics in Core, Pro and Advanced configurations. Industry trials are served through ametris.com with operational and scientific support. Both are priced by quote; how academic prices or terms differ is not published. [V, 2026-10-11] |
+
+**Pricing**
+
+| Fact | Value |
+|---|---|
+| Device or hardware list price | **Vendor list prices:** Not public [2026-10-11]<br>**ActiGraph LEAP, one reseller quote, Czech Republic, July 2025:** CZK 15,625 per LEAP device for 190 units (watchband CZK 875, charger CZK 1,500 each), quoted 2025-07-17 by reseller ProCare B.V. to Palacký University Olomouc. The same quote has a 3-year ActiLife 7 Single licence at CZK 136,750 and a CZK 1,067,025 discount on the CZK 3,556,750 subtotal (total CZK 2,489,725 excl. VAT). One academic order through a European reseller; not a list price. [R, 2026-10-11] |
+| Consumer subscription or membership price | n/a |
+| Research or academic pricing or discount | Not public [2026-10-11] |
+| Fees for API, SDK, platform or data access | **CentrePoint API:** CentrePoint licence and API fees are not published. The API documentation says generating historical data access files may carry fees if the study was not set up for them. [V, 2026-10-11]<br>**ActiLife licences:** ActiLife is sold in activation tiers by quote. All active licences were converted to perpetual licences on 2025-07-30. New licences include one year of maintenance and service; paid coverage plans (support, file repair, updates, Data Vault storage) are offered for existing licences. [V, 2026-10-11]<br>**ActiLife Data Vault storage:** The ActiLife product page and the ActiLife 7 upgrade FAQ say licences or coverage plans include 20GB of Data Vault storage; the ActiLife 7 User's Manual (Revision I, effective 2026-01-30) says ActiLife 7 users get 4GB free. (conflict) [U, 2026-10-11] |
+| Minimum order, term or commitment | Not public [2026-10-11] |
+| Whether pricing requires contacting sales | Yes. Devices, CentrePoint and ActiLife are priced per order by quote; international buyers go through authorized resellers. [V, 2026-10-11] |
+
+**Data access and terms**
+
+| Fact | Value |
+|---|---|
+| Raw signals available to researchers, and by which route | **CentrePoint API:** Data Access Files by category: raw accelerometer for all devices, plus temperature, green PPG at 25 Hz or 100 Hz, red/IR PPG at 50 Hz, barometer and IMU only for certain devices, firmware, study configurations and contracts. Delivered as day files in CSV or AVRO. [V, 2026-10-11]<br>**Devices and ActiLife:** LEAP sensors: accelerometer, gyroscope, PPG (green, red, IR), skin temperature, barometer and a microphone that is off by default. wGT3X-BT: raw acceleration collected at 30 to 100 Hz and transferred to researchers. Raw device files can be processed locally in ActiLife; ActiLife 7 also processes LEAP PPG, which ActiLife 6 cannot. [V, 2026-10-11] |
+| Derived or processed metrics available to researchers | CentrePoint: minute (epoch) summaries, daily statistics, sleep periods and event markers covering steps, wear, sleep, energy expenditure and activity-intensity cut points. ActiLife scores data with published algorithms. LEAP vital signs (HR, HRV, skin temperature, AF/cardiac rhythm, SpO2, respiratory rate) and gait and balance measures need Scientific Services and are investigational; the LEAP 510(k) covers activity, sleep and mobility only. Partner algorithms (Hyfe cough, PKG by Empatica, Mobilise-D, CSEM vital signs) run in the Ametris platform. [V, 2026-10-11] |
+| Documented sampling rates or temporal resolution | **ActiGraph LEAP:** Accelerometer 32 to 256 Hz (32 Hz default); battery 1 to 32 days depending on configuration. [V, 2026-10-11]<br>**CentrePoint Insight Watch:** 32 to 256 Hz raw acceleration [V, 2026-10-11]<br>**ActiGraph wGT3X-BT:** 30 to 100 Hz raw acceleration [V, 2026-10-11]<br>**CentrePoint API files and summaries:** Green PPG at 25 Hz or 100 Hz; red/IR PPG at 50 Hz; epoch summaries at 15, 30 or 60 seconds. [V, 2026-10-11] |
+| How far back data can be retrieved | **On-device storage:** LEAP 79 days / 1 GB at the default 32 Hz with the accelerometer only; CentrePoint Insight Watch 30 days / 512 MB; wGT3X-BT 180 days / 4 GB. [C, 2026-10-11]<br>**CentrePoint cloud:** Unclear |
+| Export, API, SDK or file routes | CentrePoint: web portal; V3 REST API (OAuth 2.0) with daily Data Access Files in gzipped CSV or AVRO, raw requests in GT3X, CSV or AVRO, summaries and webhooks that push daily statistics; the V2 API is still supported. ActiLife: local desktop processing of downloaded device files with consolidated CSV export, plus Data Vault cloud storage. ActiGraph publishes the .gt3x file format and open-source readers on GitHub. [V, 2026-10-11] |
+| API rate limits | CentrePoint V3 API: more than 500 requests a minute from one IP returns HTTP 429. Raw data requests: at most 10 active at once, GT3X ranges limited to 15 days. V2 API: an unpublished daily request limit. [V, 2026-10-11] |
+| Terms on retaining, storing or deleting data | Ametris acts as data processor for the study organization (controller). Personal data is kept in identifiable form only as long as it serves a processing purpose; customer removal requests are answered within 30 days, and participants must send access or deletion requests to the sponsor. No fixed retention period for study data is published. [V, 2026-10-11] |
+| Terms on using data to train AI or ML models | Not public [2026-10-11] |
+| Announced shutdowns, deprecations or migrations, with dates | **ActiLife:** The ActiLife page calls ActiLife 7 "legacy" software, yet it is still updated (v7.3.2.0 released 2026-05-08) and is the only version that handles LEAP data; ActiLife 6 still works with GT3X and GT9X devices. No end-of-support date is published. [V, 2026-10-11]<br>**ActiGraph wGT3X-BT and GT9X Link:** Sales of new GT9X Link devices ended on 2023-08-23. The wGT3X-BT is described as a legacy device but is still sold; no end-of-sale date is published. [V, 2026-10-11]<br>**CentrePoint API:** The raw activity data request endpoint is superseded by Data Access Files for raw accelerometer data; the V2 (Study Admin) API is still supported alongside V3. No shutdown dates published. [V, 2026-10-11] |
+
+**Compliance and regulatory**
+
+| Fact | Value |
+|---|---|
+| Whether a HIPAA Business Associate Agreement is offered | Not public [2026-10-11] |
+| Whether a data processing agreement is offered | Yes. Ametris offers data processing agreements with standard contractual clauses to support customers' GDPR obligations. [C, 2026-10-11] |
+| Published HIPAA statement | Unclear |
+| Published GDPR statement | Ametris states it complies with GDPR and has self-certified to the EU-U.S. Data Privacy Framework, its UK extension and the Swiss-U.S. DPF. [C, 2026-10-11] |
+| ISO/IEC 27001 status and evidence | ISO/IEC 27001:2022 certificate IA391-260410-001 issued by Ignyte Assurance LLC to Actigraph L.L.C. dba Ametris; initial certification 2026-04-16, valid to 2029-04-15. Scope is the ISMS for the digital health platform ecosystem. [V, 2026-10-11] |
+| SOC 2 status and evidence | Unclear |
+| FDA clearances, from the FDA database | **ActiGraph LEAP:** 510(k) K231532, ActiGraph LEAP activity monitor, applicant Actigraph, LLC, cleared 2023-06-23 (Special 510(k)), product code LEL, 21 CFR 882.5050. Predicate K181077. [V, 2026-10-11]<br>**CentrePoint Insight Watch:** 510(k) K181077, ActiGraph CentrePoint Insight Watch, cleared 2018-05-24 (Special 510(k)), product code LEL. Predicate K080545 (ActiTrainer). [V, 2026-10-11]<br>**K080545 (ActiTrainer):** 510(k) K080545, ACTITRAINER, applicant Actigraph, LLC, cleared 2008-07-24 (Traditional 510(k)), product code ISD (exerciser, measuring, 21 CFR 890.5360). Predicate K040554 (ActiGraph AM7164). [V, 2026-10-11]<br>**ActiGraph wGT3X-BT and GT9X Link (vendor's mapping to K080545):** Ametris lists K080545 as the clearance for the GT9X and wGT3X-BT. That mapping is the vendor's claim only. The FDA database has no 510(k) under either device name, and the K080545 record is the 2008 ActiTrainer. [R, 2026-10-11]<br>**ActiGraph AM7164 (legacy):** 510(k) K040554, ActiGraph models AM7164-2.2 and AM71256, applicant Manufacturing Technology, Inc., cleared 2004-07-16, product code GWQ. Ametris lists it as inactive. [V, 2026-10-11] |
+| Where data is stored, and residency options | CentrePoint is hosted on Amazon Web Services and Microsoft Azure. Regions and residency options are not published. [V, 2026-10-11] |
+
 <!-- facts:end -->
 
 ## Key Links
