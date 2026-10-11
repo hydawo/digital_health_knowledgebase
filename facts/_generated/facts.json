@@ -6000,47 +6000,164 @@
   "name": "Activinsights (GENEActiv)",
   "kind": "wearable",
   "field": "research_program",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No named academic or research access program. Research is the core market, served by device sales on quotation plus paid, quoted Study Services (study design, logistics and deployment, GENEActiv and R Markdown training, data acquisition and analysis, algorithm development), and by free sleep tools (Actigraphy Sleep Toolkit; Advanced Sleep Toolkit free up to 10 participants).",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-10",
+  "note": "No academic program, discount, grant or device-loan scheme found in the 73-page sitemap (searched by both researchers and the gap hunter, 2026-10-11).",
+  "sources": [
+   {
+    "url": "https://activinsights.com/research-study-services/",
+    "type": "vendor_page",
+    "quote": "We offer a full-scale service for clinical trials and academic research projects.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/digital-health-technologies/advance_sleeptoolkit/",
+    "type": "vendor_page",
+    "quote": "Our Advanced Sleep Toolkit is free for use with up to 10 participants.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "activinsights-geneactiv",
   "name": "Activinsights (GENEActiv)",
   "kind": "wearable",
   "field": "program_eligibility",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No eligibility rules published. Devices are supplied to healthcare professionals, researchers and clinical trial organisations; the GENEActiv IFU names healthcare professionals as intended users.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-10",
+  "sources": [
+   {
+    "url": "https://activinsights.com/resources/participant-information/",
+    "type": "vendor_page",
+    "quote": "we provide wearable devices to healthcare professionals, researchers and clinical trials organisations",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/wp-content/uploads/2026/02/IFU-GENEActiv-Rev.010.pdf",
+    "type": "vendor_docs",
+    "quote": "Intended Users Healthcare professionals",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "activinsights-geneactiv",
   "name": "Activinsights (GENEActiv)",
   "kind": "wearable",
   "field": "program_application",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No application or approval step. Buyers request a quotation through a web form; the Study Management Hub is offered by demo request.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-10",
+  "sources": [
+   {
+    "url": "https://activinsights.com/sales-quote-geneactiv-2/",
+    "type": "vendor_page",
+    "quote": "Kindly complete our form to receive a quote, tailored to your requirements.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/demo-request-study-management-hub/",
+    "type": "vendor_page",
+    "quote": "Request a demo by filling out your details below.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "activinsights-geneactiv",
   "name": "Activinsights (GENEActiv)",
   "kind": "wearable",
   "field": "program_status",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Active. GENEActiv and the ActivInsights Band are on sale; the GENEActiv 1.3 hardware revision, the macOS GENEActiv Software and the ActivInsights Companion app were updated in 2026; GENEAcore was published on CRAN in April 2026; a US office opened in Texas in June 2025.",
+  "confidence": "Corroborated",
+  "recheck_by": "2026-11-10",
+  "note": "Inferred from current activity; no page states program status as such.",
+  "sources": [
+   {
+    "url": "https://apps.apple.com/us/app/activinsights-companion/id1579732913",
+    "type": "app_store",
+    "quote": "Added support for GENEActiv version 1.3 devices. Added support for ActivInsights Study Management Hub.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://cran.r-project.org/web/packages/GENEAcore/index.html",
+    "type": "repository",
+    "quote": "Published: 2026-04-02",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/activinsights-announces-opening-of-new-u-s-office-in-texas-to-power-global-growth/",
+    "type": "vendor_page",
+    "quote": "ActivInsights is proud to announce the opening of its first U.S. office, in Texas.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "activinsights-geneactiv",
   "name": "Activinsights (GENEActiv)",
   "kind": "wearable",
   "field": "developer_program_status",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No self-serve developer program, developer portal or public API reference. SDKs are provided under licence on contact; the open R packages GENEAread, GENEAclassify and GENEAcore (GPL) read and process GENEActiv .bin files.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-10",
+  "note": "\"SKDs\" is the vendor's typo. The product page says \"open SDKs\" while the apps page says SDKs are licensed; the SDK licence terms are not published.",
+  "sources": [
+   {
+    "url": "https://activinsights.com/research-study-services/apps-software/",
+    "type": "vendor_page",
+    "quote": "ActivInsights can provide software development kits (SKDs) under licence to facilitate the integration of our professional measurement tools into your existing systems.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://cran.r-project.org/web/packages/GENEAcore/index.html",
+    "type": "repository",
+    "quote": "License: GPL-2 | GPL-3",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/digital-health-technologies/professional-wearables/geneactiv/",
+    "type": "vendor_page",
+    "quote": "Open-source analytics and open SDKs available",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "activinsights-geneactiv",
   "name": "Activinsights (GENEActiv)",
   "kind": "wearable",
   "field": "user_cap",
-  "status": "unresearched",
+  "status": "stated",
+  "value": "The Advanced Sleep Toolkit is free for up to 10 participants; the price beyond that is not published.",
+  "confidence": "Verified",
+  "scope": "Advanced Sleep Toolkit",
+  "recheck_by": "2026-11-10",
+  "sources": [
+   {
+    "url": "https://activinsights.com/digital-health-technologies/advance_sleeptoolkit/",
+    "type": "vendor_page",
+    "quote": "Our Advanced Sleep Toolkit is free for use with up to 10 participants.",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "user_cap",
+  "status": "not_applicable",
+  "scope": "GENEActiv and ActivInsights Band hardware",
+  "recheck_by": "2026-11-10",
+  "note": "Devices are bought outright and GENEActiv data are extracted to the study's own storage, so no participant cap applies. No cap is documented for Band cloud services either.",
   "sources": []
  },
  {
@@ -6048,192 +6165,1057 @@
   "name": "Activinsights (GENEActiv)",
   "kind": "wearable",
   "field": "academic_vs_commercial",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No separate academic tier or price. The vendor positions GENEActiv for academic researchers wanting raw data. Its R Markdown analysis tools are licensed for non-commercial analysis of raw data only and restricted to the Activinsights ecosystem; the CRAN packages are GPL with no such restriction.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-10",
+  "sources": [
+   {
+    "url": "https://activinsights.com/resources/faqs/",
+    "type": "vendor_page",
+    "quote": "The GENEActiv is designed for academic researchers as a general purpose objective measurement tool, who would like to gain high frequency, raw data.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/resources/geneactiv-support-1-2/",
+    "type": "vendor_legal",
+    "quote": "The agreement clearly states it can only be used for the non-commercial analysis of raw data.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/resources/geneactiv-support-1-2/",
+    "type": "vendor_legal",
+    "quote": "The resources are openly available for the research community but are restricted to use within the Activinsights ecosystem with limited rights of redistribution.",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "academic_vs_commercial",
+  "status": "stated",
+  "value": "Terms of sale clause 24 (Confidentiality), applying to every customer, academic or commercial: the customer may not publish or release, or permit publication of, any materials about the operation or use of the product without Activinsights' prior written consent. Relevant to methods papers and device documentation.",
+  "confidence": "Verified",
+  "scope": "Terms of sale, all customers",
+  "recheck_by": "2026-11-10",
+  "note": "The PDF is two-column and its extracted text interleaves the columns, so the quote stops at \"operation or\"; the clause ends \"use of the Product.\" (read in the layout text, 2026-10-11). The schema has no publication-terms field, so this sits here. Whether Activinsights enforces it against academic publications is unknown; ask the vendor before relying on it either way.",
+  "sources": [
+   {
+    "url": "https://activinsights.com/wp-content/uploads/2024/11/Activinsights-Terms-and-Conditions.pdf",
+    "type": "vendor_legal",
+    "quote": "shall not without prior Activinsights written consent, publish or release, or permit the publication or release of any materials regarding the operation or",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "activinsights-geneactiv",
   "name": "Activinsights (GENEActiv)",
   "kind": "wearable",
   "field": "device_price",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No vendor list price (quotation only). A competitor's guides put GENEActiv at about GBP 425 to 510 per device. Stated device lifetime: 50 charging cycles or 2 years. A USB charging cradle (holds 4) is needed as well.",
+  "confidence": "Reported",
+  "scope": "GENEActiv",
+  "recheck_by": "2026-11-10",
+  "note": "Both price figures come from Fibion, which sells competing devices, and they describe the range differently (one page ties it to 0.5 GB, the other to 0.5 vs 1.0 GB); current GENEActiv 1.2 and 1.3 have 2.0 GB, so the figures may be stale. Reported at most. Fibion also cites a historical US price of about USD 260 from a forum; not used. The US reseller First Nation Group is quote-only. Warranty is one year; the recycling programme gives GBP 5 off a replacement GENEActiv per device returned. The vendor said in June 2025 that US pricing was held despite tariffs.",
+  "sources": [
+   {
+    "url": "https://web.fibion.com/articles/best-accelerometers-circadian-rhythm-research/",
+    "type": "secondary",
+    "quote": "Device Price: GENEActiv 0.5 GB: £425–£510",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://web.fibion.com/articles/ambulatory-physical-activity-large-cohort-cost-scalability/",
+    "type": "secondary",
+    "quote": "Approximately £425–£510 per device , depending on memory configuration (0.5 GB vs 1.0 GB)",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/wp-content/uploads/2026/02/IFU-GENEActiv-Rev.010.pdf",
+    "type": "vendor_docs",
+    "quote": "The device is reusable with a lifetime of 50 charging cycles or 2 years from the date of purchase.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/digital-health-technologies/professional-wearables/geneactiv/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/sales-quote-geneactiv-2/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.firstnationgroup.com/products/geneactiv-original-single-unit-pack-w-software-1-strap-1-unit",
+    "type": "secondary",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "device_price",
+  "status": "not_public",
+  "confidence": "Verified",
+  "scope": "ActivInsights Band",
+  "recheck_by": "2026-11-10",
+  "sources": [
+   {
+    "url": "https://activinsights.com/digital-health-technologies/professional-wearables/activinsights-band/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/resources/activinsights-band-support/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "activinsights-geneactiv",
   "name": "Activinsights (GENEActiv)",
   "kind": "wearable",
   "field": "subscription_price",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No subscription. The GENEActiv Software is a free download, and the web Actigraphy Sleep Toolkit is free.",
+  "confidence": "Verified",
+  "scope": "GENEActiv",
+  "recheck_by": "2026-11-10",
+  "sources": [
+   {
+    "url": "https://apps.apple.com/us/app/geneactiv-software/id1658154045",
+    "type": "app_store",
+    "quote": "GENEActiv Software Manage GENEActiv devices Only for Mac Free",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/digital-health-technologies/activinsights-actigraphy-sleep-toolkit/",
+    "type": "vendor_page",
+    "quote": "Our web-based Sleep Toolkit is free, intuitive, and built for researchers and clinicians.",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "subscription_price",
+  "status": "stated",
+  "value": "Band software access for up to one year is included with the Band purchase; unlimited lifestyle reports are then provided on an annual, renewable basis at an unpublished price.",
+  "confidence": "Verified",
+  "scope": "ActivInsights Band",
+  "recheck_by": "2026-11-10",
+  "sources": [
+   {
+    "url": "https://activinsights.com/resources/activinsights-band-support/",
+    "type": "vendor_page",
+    "quote": "Access to the ActivInsights Band software for up to one year is included with the purchase of the ActivInsights Band.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/resources/activinsights-band-support/",
+    "type": "vendor_page",
+    "quote": "Access to unlimited lifestyle reports can be provided on an annual, renewable basis.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "activinsights-geneactiv",
   "name": "Activinsights (GENEActiv)",
   "kind": "wearable",
   "field": "academic_pricing",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-10",
+  "note": "The only published discount is the recycling trade-in (GBP 5 off a replacement GENEActiv per returned device).",
+  "sources": [
+   {
+    "url": "https://activinsights.com/research-study-services/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/sales-quote-geneactiv-2/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/resources/faqs/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/wp-content/uploads/2024/11/Activinsights-Terms-and-Conditions.pdf",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "activinsights-geneactiv",
   "name": "Activinsights (GENEActiv)",
   "kind": "wearable",
   "field": "api_platform_fees",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "The Actigraphy Sleep Toolkit is free with no software or licensing fees; the Advanced Sleep Toolkit is free for up to 10 participants.",
+  "confidence": "Verified",
+  "scope": "Sleep Toolkits",
+  "recheck_by": "2026-11-10",
+  "sources": [
+   {
+    "url": "https://activinsights.com/digital-health-technologies/activinsights-actigraphy-sleep-toolkit/",
+    "type": "vendor_page",
+    "quote": "with no software or licensing fees",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/digital-health-technologies/advance_sleeptoolkit/",
+    "type": "vendor_page",
+    "quote": "Our Advanced Sleep Toolkit is free for use with up to 10 participants.",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "api_platform_fees",
+  "status": "not_public",
+  "confidence": "Verified",
+  "scope": "Cloud API, SDK licence, Study Management Hub and Study Services",
+  "recheck_by": "2026-11-10",
+  "note": "A USB-only GENEActiv study pays no platform fee; the free GENEActiv Software writes .bin files locally.",
+  "sources": [
+   {
+    "url": "https://activinsights.com/research-study-services/apps-software/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/research-study-services/data-infrastructure/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/demo-request-study-management-hub/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/research-study-services/dht-wearable-data-acquisition-analysis/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "activinsights-geneactiv",
   "name": "Activinsights (GENEActiv)",
   "kind": "wearable",
   "field": "minimum_commitment",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Minimum order values apply (amount not published); products must be ordered in the pack sizes on the price list.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-10",
+  "sources": [
+   {
+    "url": "https://activinsights.com/wp-content/uploads/2024/11/Activinsights-Terms-and-Conditions.pdf",
+    "type": "vendor_legal",
+    "quote": "Minimum order values apply, please contact for further details.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "activinsights-geneactiv",
   "name": "Activinsights (GENEActiv)",
   "kind": "wearable",
   "field": "quote_required",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Yes. Products and services are priced by quotation, in GB pounds unless agreed otherwise, valid 90 days.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-10",
+  "sources": [
+   {
+    "url": "https://activinsights.com/wp-content/uploads/2024/11/Activinsights-Terms-and-Conditions.pdf",
+    "type": "vendor_legal",
+    "quote": "Prices quoted are effective for ninety (90) days from the date",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/sales-quote-geneactiv-2/",
+    "type": "vendor_page",
+    "quote": "Kindly complete our form to receive a quote, tailored to your requirements.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "activinsights-geneactiv",
   "name": "Activinsights (GENEActiv)",
   "kind": "wearable",
   "field": "raw_streams",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Raw, unfiltered tri-axial acceleration in SI units (+/- 8 g, 12 bit), ambient light, near-body temperature and event-button presses, stored on the device and extracted to an open-format .bin file over the USB cradle. GENEActiv 1.3 also sends adherence data over Bluetooth during wear; raw data still come off by USB.",
+  "confidence": "Verified",
+  "scope": "GENEActiv",
+  "recheck_by": "2026-11-10",
+  "note": "Light data from GENEActiv 1.2 and later need the calibration added in GGIRread 1.0.11 (September 2026); older GGIRread versions read it uncalibrated.",
+  "sources": [
+   {
+    "url": "https://activinsights.com/digital-health-technologies/professional-wearables/geneactiv/",
+    "type": "vendor_page",
+    "quote": "It produces raw, unfiltered tri-axial acceleration data in SI units in an open data format.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/wp-content/uploads/2026/02/Product-Information-Sheet-Rev.002.pdf",
+    "type": "vendor_docs",
+    "quote": "Range +/- 8g",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/wp-content/uploads/2026/02/IFU-GENEActiv-Rev.010.pdf",
+    "type": "vendor_docs",
+    "quote": "Once a device has started recording, it will attempt to initiate a Bluetooth connection periodically to provide adherence data.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/wadpac/GGIRread/releases/tag/1.0.11",
+    "type": "repository",
+    "quote": "Added GENEActiv light calibration needed for device model GENEActiv 1.2 and above.",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "raw_streams",
+  "status": "stated",
+  "value": "No raw sensor output documented. The Band classifies behaviour on the device and uploads behavioural events (open COEL atom format) through the companion app.",
+  "confidence": "Corroborated",
+  "scope": "ActivInsights Band",
+  "recheck_by": "2026-11-10",
+  "note": "The data-infrastructure page lists raw data among the platform's API outputs without naming a device; that fits GENEActiv .bin files uploaded to the cloud, and nothing says raw Band acceleration is retrievable. Hence Corroborated, not Verified.",
+  "sources": [
+   {
+    "url": "https://activinsights.com/privacy-policies/privacy-policy-for-activinsights-band/",
+    "type": "vendor_legal",
+    "quote": "The Activinsights Band is designed to collect only basic behavioural information and associated metrics.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/wp-content/uploads/2026/03/GENEActiv-Product-Comparison-Sheet-Jan-2025.pdf",
+    "type": "vendor_docs",
+    "quote": "Behavioural event output inferred from",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/research-study-services/data-infrastructure/",
+    "type": "vendor_page",
+    "quote": "Configurable APIs Raw data Event data Summary data",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "activinsights-geneactiv",
   "name": "Activinsights (GENEActiv)",
   "kind": "wearable",
   "field": "derived_metrics",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No on-device metrics. The vendor advertises 150+ digital measures (activity intensity, sedentary vs movement, posture changes, sleep/wake, sleep events) delivered by its analysis service; the GENEActiv Software produces epoch summaries; the Sleep Toolkits score sleep (total sleep, onset latency, efficiency, WASO, naps); open R packages are available.",
+  "confidence": "Verified",
+  "scope": "GENEActiv",
+  "recheck_by": "2026-11-10",
+  "note": "The data acquisition page says 50+ digital clinical measures are regularly used, against 150+ on the product page.",
+  "sources": [
+   {
+    "url": "https://activinsights.com/digital-health-technologies/professional-wearables/geneactiv/",
+    "type": "vendor_page",
+    "quote": "Our 150+ digital measures include",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/digital-health-technologies/advance_sleeptoolkit/",
+    "type": "vendor_page",
+    "quote": "Total Sleep Duration Sleep Onset Latency Sleep Efficiency WASO (Wake After Sleep Onset) Naps",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "derived_metrics",
+  "status": "stated",
+  "value": "Behavioural events (about 12 activity classes including sleep, sedentary, standing, walking, running, cycling, swimming, exercise and non-wear), steps, energy expenditure, sleep/wake patterns and event markers, delivered in reports, the Band Clinic App or by API.",
+  "confidence": "Verified",
+  "scope": "ActivInsights Band",
+  "recheck_by": "2026-11-10",
+  "sources": [
+   {
+    "url": "https://activinsights.com/resources/activinsights-band-support/",
+    "type": "vendor_page",
+    "quote": "The ActivInsights Band detects up to 12 basic activities with estimates of steps, movement and energy expenditure.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/research-study-services/apps-software/",
+    "type": "vendor_page",
+    "quote": "The uploaded data can be queried, downloaded or analysed on-demand by the ActivInsights Band Clinic App or via application programming interface (API).",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "activinsights-geneactiv",
   "name": "Activinsights (GENEActiv)",
   "kind": "wearable",
   "field": "sampling_rates",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Acceleration selectable from 10 to 100 Hz (+/- 8 g, 12 bit); temperature at least every 30 s. GENEActiv 1.3 offers 10, 20, 25, 50 and 100 Hz only (the IFU table marks the intermediate rates N/A).",
+  "confidence": "Verified",
+  "scope": "GENEActiv",
+  "recheck_by": "2026-11-10",
+  "note": "Recording duration at each rate is in history_depth, where the vendor's documents conflict.",
+  "sources": [
+   {
+    "url": "https://activinsights.com/wp-content/uploads/2026/02/Product-Information-Sheet-Rev.002.pdf",
+    "type": "vendor_docs",
+    "quote": "Logging Frequencies Selectable 10-100Hz",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/wp-content/uploads/2026/02/Product-Information-Sheet-Rev.002.pdf",
+    "type": "vendor_docs",
+    "quote": "Measurement Frequency Every 30s minimum",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/wp-content/uploads/2026/02/IFU-GENEActiv-Rev.010.pdf",
+    "type": "vendor_docs",
+    "quote": "30 21 35 N/A 40 18 30 N/A",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "sampling_rates",
+  "status": "not_public",
+  "confidence": "Verified",
+  "scope": "ActivInsights Band",
+  "recheck_by": "2026-11-10",
+  "note": "The Band reports behavioural events; no sensor sampling rate or event resolution is published.",
+  "sources": [
+   {
+    "url": "https://activinsights.com/wp-content/uploads/2024/11/AI-Band-Product-Information-Sheet.pdf",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/digital-health-technologies/professional-wearables/activinsights-band/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/privacy-policies/privacy-policy-for-activinsights-band/",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "activinsights-geneactiv",
   "name": "Activinsights (GENEActiv)",
   "kind": "wearable",
   "field": "history_depth",
-  "status": "unresearched",
-  "sources": []
+  "status": "conflict",
+  "value": "On-device recording length at a given rate is stated three ways. The product sheet and the IFU's specification table give 14 days at 100 Hz and 60 days at 20 Hz; the IFU's own per-version table gives, for versions 1.2 and 1.3, 14 days at 100 Hz, 44 at 20 Hz and 56 at 10 Hz (version 1.1, 7 and 30); the FAQ gives 7 days at 100 Hz and 30 at 20 Hz. Once extracted, files sit in the study's own storage with no vendor limit.",
+  "confidence": "Unclear",
+  "scope": "GENEActiv",
+  "recheck_by": "2026-11-10",
+  "note": "Most likely reading: the FAQ describes version 1.1 (its figures match the 1.1 column exactly), and 14 days at 100 Hz holds for 1.2 and 1.3. The 60-days-at-20-Hz figure is contradicted by the IFU's own table, where no rate reaches 60 days; plan on 44 days at 20 Hz until the vendor confirms. The IFU also says a start delay cuts the achievable period by about 5% per week, and its \"Duration of use 14 to 60 days\" line is followed by an unremoved editorial comment, so the document was published mid-edit. The comparison sheet (Jan 2025) gives battery life as 2 weeks to 2 months and data capacity as 1 Gb, about 3 weeks of wear. Plugging a recording device into the cradle ends the recording (IFU).",
+  "sources": [
+   {
+    "url": "https://activinsights.com/wp-content/uploads/2026/02/Product-Information-Sheet-Rev.002.pdf",
+    "type": "vendor_docs",
+    "quote": "Maximum Logging Periods 60 days @20hz, 14 days @100hz",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/wp-content/uploads/2026/02/IFU-GENEActiv-Rev.010.pdf",
+    "type": "vendor_docs",
+    "quote": "Measurement Max. Measurement Period (Days) Frequency Ver Ver Ver 1.1 1.2 1.3 10 30 56 56 20 30 44 44",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/resources/faqs/",
+    "type": "vendor_page",
+    "quote": "For example, recording at 100Hz lasts for 7 days and 20Hz records for 30 days.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/research-study-services/apps-software/",
+    "type": "vendor_page",
+    "quote": "As wearables are returned from the field, the GENEActiv software will extract sensor-level, raw data to local, sovereign data stores.",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "history_depth",
+  "status": "stated",
+  "value": "The Band monitors for 6 months to a year without charging and should upload at least weekly; cloud-held data fall under a 10-year review retention period.",
+  "confidence": "Verified",
+  "scope": "ActivInsights Band",
+  "recheck_by": "2026-11-10",
+  "sources": [
+   {
+    "url": "https://activinsights.com/digital-health-technologies/professional-wearables/activinsights-band/",
+    "type": "vendor_page",
+    "quote": "Its wireless communication function provides continuous remote monitoring for 6 months to a year with no charging required.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/resources/activinsights-band-support/",
+    "type": "vendor_page",
+    "quote": "The data collected should be uploaded via the app at least once a week.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/privacy-policies/privacy-policy-for-activinsights-band/",
+    "type": "vendor_legal",
+    "quote": "Retention Policy: Review Retention Period: 10 years",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "activinsights-geneactiv",
   "name": "Activinsights (GENEActiv)",
   "kind": "wearable",
   "field": "export_routes",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "USB route: the free GENEActiv Software (Windows, macOS) extracts .bin files over the 4-unit USB cradle and converts them to raw CSV, epoch CSV or epoch AWD (for Actiware-style scoring or the Sleep Toolkit); the open R packages read .bin. GENEActiv 1.3 adds Bluetooth adherence extraction by a background app (Windows, macOS, Android; iOS adherence only), repeating roughly every five hours. Optional cloud route: the ActivInsights Device Manager uploads .bin files to the Study Management Hub.",
+  "confidence": "Verified",
+  "scope": "GENEActiv",
+  "recheck_by": "2026-11-10",
+  "note": "Each adherence sync extracts and then erases the adherence data on the device (IFU). The Study Management Hub (demo by request) gives real-time device and participant status and adherence.",
+  "sources": [
+   {
+    "url": "https://activinsights.com/wp-content/uploads/2026/02/IFU-GENEActiv-Rev.010.pdf",
+    "type": "vendor_docs",
+    "quote": "Data extraction is the process of reading recorded data from a device at the end of a recording and saving it to a GENEActiv .bin file.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/wp-content/uploads/2026/02/IFU-GENEActiv-Rev.010.pdf",
+    "type": "vendor_docs",
+    "quote": "The process will typically repeat at roughly five-hour intervals, supporting the provision of near real-time adherence information.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/wp-content/uploads/2026/02/IFU-GENEActiv-Rev.010.pdf",
+    "type": "vendor_docs",
+    "quote": "Bluetooth 5 is required for adherence data extraction",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/resources/faqs/",
+    "type": "vendor_page",
+    "quote": "The GENEActiv software allows you to set up the device and extract raw data as a .bin file.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/digital-health-technologies/advance_sleeptoolkit/",
+    "type": "vendor_page",
+    "quote": "Upload a .bin file to the ActivInsights Study Management Hub (this is automated with the ActivInsights Device Manager).",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://cran.r-project.org/web/packages/GENEAread/index.html",
+    "type": "repository",
+    "quote": "Functions and analytics for GENEA-compatible accelerometer data into R objects.",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "export_routes",
+  "status": "stated",
+  "value": "Wireless upload through the ActivInsights Companion app (iOS, Android, Windows) to the Azure-hosted cloud; data come out through the Band Clinic App, reports, or configurable APIs (raw, event, summary, health, management and quality data). SDKs under licence.",
+  "confidence": "Verified",
+  "scope": "ActivInsights Band and cloud platform",
+  "recheck_by": "2026-11-10",
+  "note": "No public API reference exists; APIs are configured per study.",
+  "sources": [
+   {
+    "url": "https://activinsights.com/research-study-services/apps-software/",
+    "type": "vendor_page",
+    "quote": "The uploaded data can be queried, downloaded or analysed on-demand by the ActivInsights Band Clinic App or via application programming interface (API).",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/research-study-services/data-infrastructure/",
+    "type": "vendor_page",
+    "quote": "Configurable APIs allow integrations into study, client and research systems for all types of data and insight.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/research-study-services/dht-wearable-data-acquisition-analysis/",
+    "type": "vendor_page",
+    "quote": "We can deliver these measures into study systems through real-time APIs (application programming interfaces) or within a clinical study report.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "activinsights-geneactiv",
   "name": "Activinsights (GENEActiv)",
   "kind": "wearable",
   "field": "rate_limits",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-10",
+  "note": "No public API documentation. GENEActiv USB extraction is local and unlimited. The roughly five-hour Bluetooth adherence sync on GENEActiv 1.3 is a device schedule, not an API limit (see export_routes).",
+  "sources": [
+   {
+    "url": "https://activinsights.com/research-study-services/apps-software/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/research-study-services/data-infrastructure/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/research-study-services/dht-wearable-data-acquisition-analysis/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "activinsights-geneactiv",
   "name": "Activinsights (GENEActiv)",
   "kind": "wearable",
   "field": "retention_terms",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Personal data are kept as long as the original purpose needs, with a 10-year review retention period, in the GENEActiv and Band privacy notices. GENEActiv raw data extracted by USB stay in the study's own store unless sent to Activinsights.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-10",
+  "note": "The Google Play data-safety label for the ActivInsights Companion app says data cannot be deleted, which sits awkwardly with the erasure rights in the privacy notices.",
+  "sources": [
+   {
+    "url": "https://activinsights.com/privacy-policies/privacy-policy-for-geneactiv/",
+    "type": "vendor_legal",
+    "quote": "Retention Policy: Review Retention Period: 10 years",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/privacy-policies/privacy-policy-for-activinsights-band/",
+    "type": "vendor_legal",
+    "quote": "Retention Policy: Review Retention Period: 10 years",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://play.google.com/store/apps/details?id=com.activinsights.banduploader",
+    "type": "app_store",
+    "quote": "Data can’t be deleted",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "activinsights-geneactiv",
   "name": "Activinsights (GENEActiv)",
   "kind": "wearable",
   "field": "ai_training_terms",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-10",
+  "note": "No term addresses AI or ML training. The privacy notices allow use to support health and medical research, and the algorithm-development page describes permissioned data access under data sharing agreements with machine learning named as a method, so secondary use of study data for algorithm work is neither ruled in nor out. Ask the vendor.",
+  "sources": [
+   {
+    "url": "https://activinsights.com/privacy-policies/privacy-policy-for-activinsights-band/",
+    "type": "vendor_legal",
+    "quote": "We may use your data to maintain our records; promote our goods & services and support health & medical research.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/privacy-policies/privacy-policy-for-geneactiv/",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/research-study-services/wearable-data-algorithm-development/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/wp-content/uploads/2024/11/Activinsights-Terms-and-Conditions.pdf",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/website-terms-of-service/",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "activinsights-geneactiv",
   "name": "Activinsights (GENEActiv)",
   "kind": "wearable",
   "field": "deprecations",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No product shutdown announced. GENEActiv is moving from the EU Medical Device Directive to the EU MDR under the Regulation 2023/607 transition. A GENEActiv 1.3 hardware revision (Bluetooth adherence) shipped in 2026. The Band uploader app was rebranded ActivInsights Companion and now supports both devices. Support for the oldest GENEActiv units (serials starting 0) is by request.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-10",
+  "note": "GENEActiv 1.3 drops the 30, 40, 60, 66.7, 75 and 85.7 Hz options (IFU table). The sleep pages position GENEActiv and the Actigraphy Sleep Toolkit as replacements for the discontinued Philips Actiwatch and Actiware.",
+  "sources": [
+   {
+    "url": "https://activinsights.com/digital-health-technologies/professional-wearables/geneactiv/",
+    "type": "vendor_page",
+    "quote": "we will be transitioning to compliance with the EU Medical Device Regulation (EU MDR)",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://play.google.com/store/apps/details?id=com.activinsights.banduploader",
+    "type": "app_store",
+    "quote": "Rebrand with support for both GENEActiv and ActivInsights Band devices",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://apps.apple.com/us/app/geneactiv-software/id1658154045",
+    "type": "app_store",
+    "quote": "Adds full support for GENEActiv 1.3 devices",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/resources/geneactiv-support-1-2/",
+    "type": "vendor_page",
+    "quote": "If you require information for GENEActiv devices with serial numbers beginning with 0xxxxx, please contact us",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "activinsights-geneactiv",
   "name": "Activinsights (GENEActiv)",
   "kind": "wearable",
   "field": "baa",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Verified",
+  "recheck_by": "2027-01-09",
+  "note": "No mention of HIPAA or a Business Associate Agreement in any of the 73 pages of the page sitemap (searched 2026-10-11), despite the 2025 US office.",
+  "sources": [
+   {
+    "url": "https://activinsights.com/legal-data-protection/",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/research-study-services/data-infrastructure/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/privacy-policies/",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/wp-content/uploads/2024/11/Activinsights-Terms-and-Conditions.pdf",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "activinsights-geneactiv",
   "name": "Activinsights (GENEActiv)",
   "kind": "wearable",
   "field": "dpa",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Verified",
+  "recheck_by": "2027-01-09",
+  "note": "No DPA template or offer is published. The privacy notices describe processing by Coelition members on the controller's instructions, and the algorithm-development page mentions data sharing agreements, which are a different instrument.",
+  "sources": [
+   {
+    "url": "https://activinsights.com/legal-data-protection/",
+    "type": "vendor_legal",
+    "quote": "ActivInsights is a registered member of Coelition, as are our data services providers.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/privacy-policies/privacy-policy-for-activinsights-band/",
+    "type": "vendor_legal",
+    "quote": "Your personal data will be processed by other members of the Coelition ecosystem and associates who will process such personal data on behalf of the controller and in accordance with the controller’s instructions.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/wp-content/uploads/2024/11/Activinsights-Terms-and-Conditions.pdf",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "activinsights-geneactiv",
   "name": "Activinsights (GENEActiv)",
   "kind": "wearable",
   "field": "hipaa_statement",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Verified",
+  "recheck_by": "2027-01-09",
+  "note": "No HIPAA mention anywhere in the page sitemap (searched 2026-10-11).",
+  "sources": [
+   {
+    "url": "https://activinsights.com/legal-data-protection/",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/research-study-services/data-infrastructure/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/privacy-policies/",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "activinsights-geneactiv",
   "name": "Activinsights (GENEActiv)",
   "kind": "wearable",
   "field": "gdpr_statement",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Data services are UK-based and operated under GDPR; Activinsights is registered with the ICO (ZA258669); privacy notices follow the COEL consent model and list GB as the processing country.",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-09",
+  "note": "The ICO register entry was not checked (form-based search), so this stays Corroborated.",
+  "sources": [
+   {
+    "url": "https://activinsights.com/research-study-services/data-infrastructure/",
+    "type": "vendor_page",
+    "quote": "ActivInsights data services are based in the UK under European GDPR regulations.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/legal-data-protection/",
+    "type": "vendor_legal",
+    "quote": "ActivInsights ICO Registration Number is: ZA258669.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "activinsights-geneactiv",
   "name": "Activinsights (GENEActiv)",
   "kind": "wearable",
   "field": "iso27001",
-  "status": "unresearched",
-  "sources": []
+  "status": "unclear",
+  "confidence": "Unclear",
+  "recheck_by": "2027-01-09",
+  "note": "The only published certificate has expired. It is an image-only PDF with no text layer, so nothing on it can be quoted or probed; the judge read it by eye on 2026-10-11, as did researcher A and the gap hunter: British Assessment Bureau certificate 239005, Activinsights Ltd, BS EN ISO/IEC 27001:2017, UKAS 8289, initial certification and latest issue 16 June 2023, expiry 31 October 2025, subject to annual assessments. 31 October 2025 was also the end of the transition from the 2013/2017 edition to ISO/IEC 27001:2022. The WordPress media library (searched for 27001 and certificate on 2026-10-11) holds no other certificate. The company page and the sleep toolkit pages still claim ISO 27001. A current certificate may exist unpublished; UKAS CertCheck was not used (bot check). Ask the vendor for the current certificate before relying on this. The monitor can only check this certificate's link and fingerprint, not its text.",
+  "sources": [
+   {
+    "url": "https://activinsights.com/wp-content/uploads/2023/08/Activinsights-ISO-27001-Certificate-BAB-Exp.-Oct-2025-1.pdf",
+    "type": "certificate",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/activinsights-attains-coveted-iso-27001-certification-demonstrating-commitment-to-information-security-excellence/",
+    "type": "vendor_page",
+    "quote": "proudly announces its successful achievement of ISO 27001 certification",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/company/",
+    "type": "vendor_page",
+    "quote": "Our ISO27001-accredited system ensures anonymised data is securely transmitted directly to healthcare professionals",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/activinsights-announces-opening-of-new-u-s-office-in-texas-to-power-global-growth/",
+    "type": "vendor_page",
+    "quote": "ISO27001-certified systems with rigorous data privacy and security standards",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "activinsights-geneactiv",
   "name": "Activinsights (GENEActiv)",
   "kind": "wearable",
   "field": "soc2",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Verified",
+  "recheck_by": "2027-01-09",
+  "note": "No SOC 2 mention in the page sitemap (searched 2026-10-11).",
+  "sources": [
+   {
+    "url": "https://activinsights.com/research-study-services/data-infrastructure/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/company/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/legal-data-protection/",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "activinsights-geneactiv",
   "name": "Activinsights (GENEActiv)",
   "kind": "wearable",
   "field": "fda_clearances",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No 510(k), De Novo or PMA. Listed, not cleared, with FDA under establishment registration 3014083954 (owner/operator 10056642, Activinsights Ltd.), product code IKK, isokinetic testing and evaluation system, 21 CFR 890.1925, device class 2, 510(k) exempt; listed 2018-01-04.",
+  "confidence": "Verified",
+  "scope": "GENEActiv",
+  "recheck_by": "2027-01-09",
+  "note": "openFDA 510(k) searches on 2026-10-11 returned no matches for applicant:activinsights and device_name:geneactiv. The IKK classification record has submission_type_id 4 (510(k) exempt), so the vendor's \"510(k) exempt\" wording matches the listing. The vendor's class statements do not: IFU Rev.010 cites 21 CFR 882.1400 (electroencephalograph) and 882.5050 (biofeedback), neither of which is IKK, and calls GENEActiv EU MDR Class IIa; the web page and the comparison sheet call it Class I, which is the EU MDD class, not an FDA class. In openFDA, 882.5050 includes product code LEL (sleep assessment device), which needs a 510(k); the IKK listing does not cover that use. The FDA database is the authority for US status.",
+  "sources": [
+   {
+    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRL/rl.cfm?start_search=1&ownerOperatorNumber=10056642",
+    "fetch_url": "https://api.fda.gov/device/registrationlisting.json?search=registration.name:%22activinsights%22",
+    "type": "regulator_db",
+    "quote": "System, Isokinetic Testing And Evaluation",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPCD/classification.cfm?id=IKK",
+    "fetch_url": "https://api.fda.gov/device/classification.json?search=product_code:IKK",
+    "type": "regulator_db",
+    "quote": "890.1925",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/wp-content/uploads/2026/02/IFU-GENEActiv-Rev.010.pdf",
+    "type": "vendor_docs",
+    "quote": "GENEActiv is an FDA Regulatory Class II, 21 CFR 882.1400 Neurological Diagnostic Devices and Class II, 21 CFR 882.5050 Biofeedback Devices.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/digital-health-technologies/professional-wearables/geneactiv/",
+    "type": "vendor_page",
+    "quote": "GENEActiv falls under the classification of Class I Non-Sterile Medical Devices, under the Medical Device Directive 93/42/EEC.",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "fda_clearances",
+  "status": "not_public",
+  "confidence": "Verified",
+  "scope": "ActivInsights Band",
+  "recheck_by": "2027-01-09",
+  "note": "The only device listed under owner/operator 10056642 is GENEActiv; no listing or clearance for the Band.",
+  "sources": [
+   {
+    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRL/rl.cfm?start_search=1&ownerOperatorNumber=10056642",
+    "fetch_url": "https://api.fda.gov/device/registrationlisting.json?search=registration.name:%22activinsights%22",
+    "type": "regulator_db",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "activinsights-geneactiv",
   "name": "Activinsights (GENEActiv)",
   "kind": "wearable",
   "field": "data_residency",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Cloud raw-data management, analysis and API platform hosted on Microsoft Azure (region not stated), data services based in the UK, privacy notices list GB as the processing country; directly identifying data are held outside the cloud in study-specific systems.",
+  "confidence": "Corroborated",
+  "scope": "ActivInsights Band and cloud platform",
+  "recheck_by": "2027-01-09",
+  "note": "The data-infrastructure page also names a Fujitsu partnership for near-real-time return of IoT sensor data. No US or EU residency option is documented.",
+  "sources": [
+   {
+    "url": "https://activinsights.com/research-study-services/data-infrastructure/",
+    "type": "vendor_page",
+    "quote": "Our raw data management, cloud data analysis and application programming interface (API) platform is hosted on Azure.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/research-study-services/data-infrastructure/",
+    "type": "vendor_page",
+    "quote": "All our data infrastructure is pseudonymised, holding directly identifying personal data outside of the cloud infrastructure in physically separate, study-specific systems.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/privacy-policies/privacy-policy-for-activinsights-band/",
+    "type": "vendor_legal",
+    "quote": "Processing Countries: GB",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "activinsights-geneactiv",
+  "name": "Activinsights (GENEActiv)",
+  "kind": "wearable",
+  "field": "data_residency",
+  "status": "stated",
+  "value": "With the USB route, raw data are extracted to the study's own local store and never reach the vendor; uploading .bin files to the Study Management Hub or Advanced Sleep Toolkit moves them to the vendor cloud.",
+  "confidence": "Corroborated",
+  "scope": "GENEActiv",
+  "recheck_by": "2027-01-09",
+  "sources": [
+   {
+    "url": "https://activinsights.com/research-study-services/apps-software/",
+    "type": "vendor_page",
+    "quote": "As wearables are returned from the field, the GENEActiv software will extract sensor-level, raw data to local, sovereign data stores.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://activinsights.com/company/",
+    "type": "vendor_page",
+    "quote": "We give complete customer control of where data is stored and processed.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "ametris-actigraph",
@@ -14679,240 +15661,1293 @@
   "name": "Movesense",
   "kind": "wearable",
   "field": "research_program",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "scope": "Movesense Academic Program",
+  "value": "Movesense Academic Program. Selected research teams receive a limited number of Movesense sensors and accessories (such as heart rate straps) plus technical support, in exchange for crediting Movesense in publications and providing project material for Movesense news and social media.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "An equipment-and-support grant, not a data or platform program; Movesense has no cloud data platform for researchers. Outside the program there is no research tier, and teams buy sensors in the business-only web shop. Third parties (for example Fibion Flash) resell Movesense hardware as research kits.",
+  "sources": [
+   {
+    "url": "https://www.movesense.com/movesense-academic-program/",
+    "type": "vendor_page",
+    "quote": "Movesense supplies the selected research teams with a limited number of Movesense sensors and associated accessories such as heart rate straps.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/movesense-academic-program/",
+    "type": "vendor_page",
+    "quote": "Researchers agree to mention Movesense in scientific articles and other publications related to the project",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/movesense-academic-program/",
+    "type": "vendor_page",
+    "quote": "Research projects agree to provide the Movesense team with material related to the research project that can be used in news articles on www.movesense.com and shared in Movesense social media.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "movesense",
   "name": "Movesense",
   "kind": "wearable",
   "field": "program_eligibility",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "scope": "Movesense Academic Program",
+  "value": "Academic teams, researchers and students may apply. Selection weighs innovativeness and usefulness, the commercial potential of the results, how useful Movesense sensors are to the project, the project's potential to build awareness for Movesense, and additional non-published criteria.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "Past participants include non-university organizations (for example Neurobit Technologies, Singapore), so the program is not limited to universities. Selection explicitly weighs commercial potential and publicity value for Movesense, which teams should expect when framing an application.",
+  "sources": [
+   {
+    "url": "https://www.movesense.com/movesense-academic-program/",
+    "type": "vendor_page",
+    "quote": "Movesense team warmly welcome academic teams, researchers and students to apply for the Movesense Academic Program!",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/movesense-academic-program/",
+    "type": "vendor_page",
+    "quote": "Potential of commercial applications of the project results Utility value of Movesense sensors for completing the project Potential of the project to build awareness for Movesense Additional non-published criteria of Movesense",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "movesense",
   "name": "Movesense",
   "kind": "wearable",
   "field": "program_application",
-  "status": "unresearched",
-  "sources": []
+  "status": "conflict",
+  "scope": "Movesense Academic Program",
+  "value": "Apply through an online form (Google Form) with a short project description, timeline and planned use of the sensors; up to three projects are invited per quarter, at Movesense's discretion and without explanation. The review cadence conflicts between the program page (monthly) and the application form (weekly).",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "The form (linked from the program page as APPLY HERE, short link forms.gle/3TbrtfVbdAXFdM2S7) was accepting responses on 2026-10-11. It still says the program was initiated by the Movesense team at Suunto, which has been out of date since the October 2021 management buy-out. The conflict is minor (cadence only); the steps agree.",
+  "sources": [
+   {
+    "url": "https://www.movesense.com/movesense-academic-program/",
+    "type": "vendor_page",
+    "quote": "Interested researchers send an application to the Movesense team via an online form. The application includes a short description of the project, project timeline, and a description of how the Movesense sensors would be used.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/movesense-academic-program/",
+    "type": "vendor_page",
+    "quote": "Movesense team reviews the applications on a monthly basis and invites up to three projects per quarter to the program.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://docs.google.com/forms/d/e/1FAIpQLSe4R4gB78sni_M-LH1VJOWL-1j_h4mEo55T7MY0gp1KcLXFXA/viewform",
+    "type": "vendor_page",
+    "quote": "Movesense team reviews the applications on weekly basis and invites up to three projects per quarter to the program.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/movesense-academic-program/",
+    "type": "vendor_page",
+    "quote": "Movesense team has the right to select applications at its own consideration and is not obliged to explain why a project was selected or not selected to the program.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "movesense",
   "name": "Movesense",
   "kind": "wearable",
   "field": "program_status",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "scope": "Movesense Academic Program",
+  "value": "Active. The program page says it started in November 2019 and is open until further notice, and a December 2025 news post announced a new project (Ca' Foscari University of Venice) joining it. The page's own list of participating projects stops at Q1 2023.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "The page is stale (latest cohort Q1 2023; Google Scholar count dated January 20, 2023), but the news feed shows projects still being admitted. The Research Bundle linked from the Benefits for Scientific Research page (movesense.com/product/movesense-research-bundle-hr2/) returned 404 on 2026-10-11.",
+  "sources": [
+   {
+    "url": "https://www.movesense.com/movesense-academic-program/",
+    "type": "vendor_page",
+    "quote": "The program started on November, 2019 and is open until further notice.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/news/2025/12/university-of-venice-studies-seismocardiography-with-movesense-md-sensors/",
+    "type": "vendor_page",
+    "quote": "join the Movesense Academic Program. The project related to seismocardiography (SCG)",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/movesense-academic-program/",
+    "type": "vendor_page",
+    "quote": "Projects invited in Q1, 2023",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "movesense",
   "name": "Movesense",
   "kind": "wearable",
   "field": "developer_program_status",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Open, with no application step or account. The device library, mobile library, API documentation, sample code and tools are on public Bitbucket repositories and can be used without buying anything. Use of the device library is governed by the Movesense SDK License and Evaluation Agreement (LICENSE.pdf), an evaluation licence under which commercialization needs a separate agreement. The FAQ calls the SDKs, tools and sample code open and free to use.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "Public repositories seen through the Bitbucket API on 2026-10-11 include movesense-device-lib (updated 2025-11-20), movesense-mobile-lib (2026-06-01), python-datalogger-tool (2026-10-08) and sbem-tools (2026-09-14). Licences differ by repository; see academic_vs_commercial for what each document says.",
+  "sources": [
+   {
+    "url": "https://www.movesense.com/oem-services/",
+    "type": "vendor_page",
+    "quote": "They can be accessed even without a purchase via movesesense.com/resources",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/faq/",
+    "type": "vendor_page",
+    "quote": "Is there a license cost for using Movesense SDKs? No. All our SDK’s, developer tools, and sample code are open and free to use.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://bitbucket.org/movesense/movesense-device-lib/raw/master/README.md",
+    "type": "repository",
+    "quote": "See [LICENSE.pdf](LICENSE.pdf) for details on Movesense license.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://bitbucket.org/movesense/movesense-device-lib/raw/master/LICENSE.pdf",
+    "type": "repository",
+    "quote": "The possible commercialization of the Application, in connection with the sales and distribution of Movesense products, is subject to a separate agreement.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/product/movesense-flash-developer-kit/",
+    "type": "vendor_page",
+    "quote": "At this point the Movesense Developer kit is available for business customers only.",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "developer_program_status",
+  "status": "stated",
+  "scope": "Medical firmware for Movesense MD",
+  "value": "Firmware a team writes itself is not covered by Movesense MD's MDR registration; the team must validate and certify its own solution. Certified medical firmware is distributed through a separate Movesense Medical software repository, with access granted on request by email. The MD meets the medical device standards only when paired with certified Movesense firmware.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "Custom on-sensor firmware and Class IIa status are therefore alternatives on the MD, not a combination. A study relying on the MD's medical-device status must run certified Movesense firmware (2.3.1 brought later features to medical use in June 2025).",
+  "sources": [
+   {
+    "url": "https://www.movesense.com/news/2023/02/movesense-medicals-mdr-registration-approaches-what-does-it-mean-for-movesense-md-customers/",
+    "type": "vendor_page",
+    "quote": "If you are developing your own sensor firmware, it is not covered with the MDR registration of Movesense MD.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/news/2023/02/movesense-medicals-mdr-registration-approaches-what-does-it-mean-for-movesense-md-customers/",
+    "type": "vendor_page",
+    "quote": "You must validate the possible clinical benefit and certify the solution separately.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://movesense.com/docs/medical/medical_sw/",
+    "type": "vendor_docs",
+    "quote": "The Movesense Medical sensor only fulfills the requirements of the medical device standards if it has been paired with the certified Movesense firmware.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/product/movesense-medical-mdr/",
+    "type": "vendor_page",
+    "quote": "If starting to develop a commercial medical firmware, please send an email to info@movesense.com to receive access to the medical firmware development repository.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/news/2025/06/movesense-sensor-firmware-2-3-1-released-a-major-upgrade-for-medical-use/",
+    "type": "vendor_page",
+    "quote": "The previous firmware version certified for medical use is 2.1.5, and subsequent updates have been intended for non-medical use only.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "movesense",
   "name": "Movesense",
   "kind": "wearable",
   "field": "user_cap",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No participant or user cap applies to the developer tools, since data flows from the sensor to the researcher's own app or computer with no Movesense account in between. The Academic Program invites up to three projects per quarter and supplies a limited number of sensors sized to the project.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://www.movesense.com/movesense-academic-program/",
+    "type": "vendor_page",
+    "quote": "The exact amount of supplied equipment depends on the project scope.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/movesense-academic-program/",
+    "type": "vendor_page",
+    "quote": "invites up to three projects per quarter to the program",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/faq/",
+    "type": "vendor_page",
+    "quote": "If you integrate the sensors into your own application, you can decide where the data is stored. It does not go to Movesense servers.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "movesense",
   "name": "Movesense",
   "kind": "wearable",
   "field": "academic_vs_commercial",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No academic pricing; universities pay shop prices and can request a formal quote. The licensing documents say different things. The FAQ calls the SDKs, developer tools and sample code open and free to use. The Terms page carries a Limited Evaluation Licence Agreement with Movesense Ltd that runs twelve months, bars incorporating or integrating the Licensed Technology in any products or services, and points to a separate Commercial License for commercial use. The device library LICENSE.pdf (SDK License and Evaluation Agreement) limits use to evaluation, testing and potential development, with the same bar on incorporation, and makes commercialization subject to a separate agreement. Only the Showcase app and sample source in the mobile library are Apache 2.0, and sbem-tools is MIT.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "The FAQ's \"open\" describes access and cost, not an open-source licence; the device library itself is proprietary. Both evaluation texts are twelve-month agreements (Terms section 11 and LICENSE.pdf section 11). The Terms version also caps Movesense's liability at fifty euros. Commercial License terms are not published. The Python datalogger tool is described as open source but its README licence section is an unfilled placeholder. Whether a deployed research app counts as evaluation and development is not stated; institutional legal review should decide.",
+  "sources": [
+   {
+    "url": "https://www.movesense.com/faq/",
+    "type": "vendor_page",
+    "quote": "There is no general academic pricing. We are happy to provide an official quote if needed for university procurement.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/faq/",
+    "type": "vendor_page",
+    "quote": "All our SDK’s, developer tools, and sample code are open and free to use.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/terms/",
+    "type": "vendor_legal",
+    "quote": "stay in force for a period of twelve (12) months from the Effective Date",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/terms/",
+    "type": "vendor_legal",
+    "quote": "In particular, the Licensee shall not incorporate or integrate the Licensed Technology or any part thereof in any products or services.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/terms/",
+    "type": "vendor_legal",
+    "quote": "A separate Commercial License agreement, with straightforward terms, is available for commercial use.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://bitbucket.org/movesense/movesense-device-lib/raw/master/LICENSE.pdf",
+    "type": "repository",
+    "quote": "“Purpose” means the Licensees’ evaluation, testing and potential development of a software application",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://bitbucket.org/movesense/movesense-device-lib/raw/master/LICENSE.pdf",
+    "type": "repository",
+    "quote": "In particular, the Licensee shall not incorporate or integrate the Licensed Technology or any part thereof in any products or services.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://bitbucket.org/movesense/movesense-mobile-lib/raw/master/README.md",
+    "type": "repository",
+    "quote": "ShowcaseApp and sample source code is published under Apache 2.0 license.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://bitbucket.org/movesense/sbem-tools/raw/master/README.md",
+    "type": "repository",
+    "quote": "This project is licensed under the MIT License.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "movesense",
   "name": "Movesense",
   "kind": "wearable",
   "field": "device_price",
-  "status": "unresearched",
-  "sources": []
+  "scope": "Movesense MD sensor",
+  "status": "stated",
+  "value": "349 EUR per sensor for 1 to 49 units, 344 EUR for 50 to 99, 339 EUR for 100 to 199 (VAT 0%).",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://www.movesense.com/product/movesense-medical-mdr/",
+    "type": "vendor_page",
+    "quote": "1-49 349€ 50-99 344€ 100-199 339€",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/shop/",
+    "type": "vendor_page",
+    "quote": "Movesense MD Sensor 349,00 € VAT 0%",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "device_price",
+  "scope": "Movesense Flash sensor",
+  "status": "stated",
+  "value": "249 EUR per sensor for 1 to 49 units, 244 EUR for 50 to 99, 239 EUR for 100 to 199 (VAT 0%).",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://www.movesense.com/shop/",
+    "type": "vendor_page",
+    "quote": "1-49 249€ 50-99 244€ 100-199 239€",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "device_price",
+  "scope": "Movesense HR+ sensor",
+  "status": "stated",
+  "value": "119 EUR per sensor for 1 to 49 units, 114 EUR for 50 to 99, 109 EUR for 100 to 199 (VAT 0%).",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://www.movesense.com/shop/",
+    "type": "vendor_page",
+    "quote": "1-49 119€ 50-99 114€ 100-199 109€",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "device_price",
+  "scope": "Movesense HR2 sensor",
+  "status": "stated",
+  "value": "99 EUR per sensor for 1 to 49 units, 94 EUR for 50 to 99, 89 EUR for 100 to 199 (VAT 0%). An ECG Heart Rate Monitor Bundle (HR2 plus chest strap) is 120 EUR.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://www.movesense.com/shop/",
+    "type": "vendor_page",
+    "quote": "1-49 99€ 50-99 94€ 100-199 89€",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/shop/",
+    "type": "vendor_page",
+    "quote": "Movesense ECG Heart Rate Monitor Bundle 120,00 € VAT 0%",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "device_price",
+  "scope": "Developer kits and accessories",
+  "status": "stated",
+  "value": "MD Developer Kit 399 EUR (on sale from 479 EUR), Flash Developer Kit 379 EUR, HR+ Developer Kit 249 EUR, and the Debugger plus Programming Jig V2 649 EUR (all VAT 0%). Wearing accessories are sold separately from bare sensors.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "Prices exclude VAT; the shop sells to business customers only. A search-engine cache showed the Flash Developer Kit at 399 EUR and a five-unit minimum for the Flash sensor; the live pages read 379 EUR and tiers from one unit.",
+  "sources": [
+   {
+    "url": "https://www.movesense.com/shop/",
+    "type": "vendor_page",
+    "quote": "Original price was: 479,00 €. 399,00 € Current price is: 399,00 €.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/shop/",
+    "type": "vendor_page",
+    "quote": "Movesense Flash Developer Kit 379,00 € VAT 0%",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/shop/",
+    "type": "vendor_page",
+    "quote": "Movesense HR+ Developer Kit 249,00 € VAT 0%",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/shop/",
+    "type": "vendor_page",
+    "quote": "Movesense Debugger + Programming Jig V2 649,00 €",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "device_price",
+  "scope": "CardioRTHM (consumer kit, MD sensor plus chest strap and app)",
+  "status": "stated",
+  "value": "349.90 EUR including taxes on cardiorthm.com.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://cardiorthm.com/products/cardiorthm",
+    "type": "vendor_page",
+    "quote": "Regular price €349,90 EUR",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "movesense",
   "name": "Movesense",
   "kind": "wearable",
   "field": "subscription_price",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "None. The sensors, developer tools and the Movesense ECG Recorder app carry no recurring fee. Movesense has said some advanced ECG Recorder features will move into a premium subscription version; no price was found.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://www.cardiorthm.com/",
+    "type": "vendor_page",
+    "quote": "Are there ongoing fees for using the product? No.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://apps.apple.com/us/app/movesense-ecg-recorder/id6443902831",
+    "type": "app_store",
+    "quote": "Movesense ECG Recorder is a free application for viewing, recording, and sharing single-channel ECG/EKG",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/news/2025/07/movesense-ecg-recorder-update-2-1-adds-new-ecg-reports-to-the-app/",
+    "type": "vendor_page",
+    "quote": "some of the application’s advanced features will be packaged into a premium subscription version",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "movesense",
   "name": "Movesense",
   "kind": "wearable",
   "field": "academic_pricing",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No general academic pricing. Movesense will issue an official quote for university procurement on request. Free sensors only through the selective Academic Program.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://www.movesense.com/faq/",
+    "type": "vendor_page",
+    "quote": "Does Movesense support University / Research pricing? There is no general academic pricing.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "movesense",
   "name": "Movesense",
   "kind": "wearable",
   "field": "api_platform_fees",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No licence cost for the SDKs, developer tools, sample code or API, and none for custom firmware programmed on the production line. There is no cloud API to charge for. Fees can arise from optional custom firmware development by Movesense or partners, NRE for a custom production SKU, and the unpublished Commercial License.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://www.movesense.com/faq/",
+    "type": "vendor_page",
+    "quote": "Is there a license cost for using Movesense SDKs? No.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/oem-services/",
+    "type": "vendor_page",
+    "quote": "We provide instructions, tools, sample code, and tech support and program the sensors on the production line. No license cost involved.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/oem-services/",
+    "type": "vendor_page",
+    "quote": "This involves an NRE cost, but after that there is no customization surcharge in the product",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "movesense",
   "name": "Movesense",
   "kind": "wearable",
   "field": "minimum_commitment",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "None for standard sensors, sold from one unit. Custom logo labels have a minimum order of 100; custom branding and firmware on the production line start from 200 pieces; a custom production SKU is worthwhile from about 500 sensors a year and carries an NRE cost. Shop orders are binding and cannot be cancelled.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "Business-customer order changes after shipping incur a modification, return and re-stocking fee of up to 200 EUR (Terms).",
+  "sources": [
+   {
+    "url": "https://www.movesense.com/oem-services/",
+    "type": "vendor_page",
+    "quote": "The MOQ for custom logo labels is 100.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/benefits-of-movesense-sensor-for-scientific-research/",
+    "type": "vendor_page",
+    "quote": "Custom branding and custom sensor firmware can be added directly in the production line, starting from as low minimum quantities as 200 pieces",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/oem-services/",
+    "type": "vendor_page",
+    "quote": "With an annual volume of at least 500 sensors , it is worth creating a new SKU in our production system for the custom product.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/terms/",
+    "type": "vendor_legal",
+    "quote": "The orders you place in the Movesense Online Store are binding and may not be cancelled.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "movesense",
   "name": "Movesense",
   "kind": "wearable",
   "field": "quote_required",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Not for small quantities; list prices for 1 to 199 units are public. Volume pricing (with a substantial price step at 200 sensors), white labelling and custom firmware need contact with sales.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://www.movesense.com/faq/",
+    "type": "vendor_page",
+    "quote": "Prices for small quantities are shown on movesense.com/shop . Volume discounts apply for larger quantities. For sensors, there is a substantial price step at 200 pieces.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/shop/",
+    "type": "vendor_page",
+    "quote": "For inquiries regarding mass volume pricing, please contact sales@movesense.com .",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "movesense",
   "name": "Movesense",
   "kind": "wearable",
   "field": "raw_streams",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Raw, unfiltered single-channel ECG, accelerometer, gyroscope and magnetometer (9-axis IMU), plus internal temperature, on all models, through the sensor's REST-style API: streamed over Bluetooth LE to the iOS/Android mobile library or the GATT SensorData Protocol (Python client), or logged on the sensor and downloaded later. Custom firmware can process data on the sensor. The MD ECG front end uses a 0.5 Hz high-pass filter instead of 7 Hz on the sport models.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "Temperature is described as non-medical on the specifications page. The HR+ also has a 1-wire extension bus; the MD has the 1-wire master removed. Custom firmware on the MD falls outside its MDR registration (see developer_program_status, medical firmware).",
+  "sources": [
+   {
+    "url": "https://www.movesense.com/faq/",
+    "type": "vendor_page",
+    "quote": "You have full access to raw, unfiltered 1‑channel ECG as well as raw acceleration, gyroscope, and magnetometer data with different sample rates and measurement ranges.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://bitbucket.org/movesense/movesense-device-lib/raw/master/README.md",
+    "type": "repository",
+    "quote": "Movesense APIs follow well-known REST principle and can be used both internally by the sensor app or externally via the iOS/Android libraries.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/docs/esw/api_reference/",
+    "type": "vendor_docs",
+    "quote": "Movesense sensor is equipped with temperature sensor, which can be used to measure device's internal temperature.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/docs/medical/medical_sensor/",
+    "type": "vendor_docs",
+    "quote": "The biggest effect of this is the change of ECG input high pass filtering from 7 Hz to 0.5 Hz.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "movesense",
   "name": "Movesense",
   "kind": "wearable",
   "field": "derived_metrics",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "On-sensor heart rate (average) and R-R intervals at 1 ms resolution from the ECG front end. No other derived metrics in the standard firmware; researchers can run their own algorithms on the sensor or host. The ECG Recorder app (v2.1 and later) adds ECG and HRV visualizations and two ECG analysis reports.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "Kubios HRV use is a file workflow (record in the Showcase app, save CSV, open in Kubios), not an integration.",
+  "sources": [
+   {
+    "url": "https://www.movesense.com/docs/esw/api_reference/",
+    "type": "vendor_docs",
+    "quote": "Movesense sensor is equipped with analog front-end capable of capturing ECG signals and calculating user's heart rate.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/specifications/",
+    "type": "vendor_page",
+    "quote": "R-R intervals with 1ms accuracy and resolution",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/about-us/",
+    "type": "vendor_page",
+    "quote": "You can build your own services on top of the API to process the measured data on the sensor, and set the sensor to send calculated results instead of streaming raw data.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://apps.apple.com/us/app/movesense-ecg-recorder/id6443902831",
+    "type": "app_store",
+    "quote": "The version 2.1 adds two new ECG analysis reports",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "movesense",
   "name": "Movesense",
   "kind": "wearable",
   "field": "sampling_rates",
-  "status": "unresearched",
-  "sources": []
+  "scope": "ECG and R-R intervals",
+  "status": "stated",
+  "value": "ECG at 125, 128, 200, 250, 256, 500 or 512 Hz; R-R intervals at 1 ms resolution. ECG subscriptions above 256 Hz should not be streamed over BLE.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "ECG bandwidth is up to 40 Hz on the MD and 34 Hz on sport models, so Movesense recommends 125 to 200 Hz.",
+  "sources": [
+   {
+    "url": "https://www.movesense.com/faq/",
+    "type": "vendor_page",
+    "quote": "Available ECG sample rates are 125 / 128 / 200 / 250 / 256 / 500 / 512 Hz",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/docs/esw/api_reference/",
+    "type": "vendor_docs",
+    "quote": "ECG subscriptions with high sample frequency (>256 Hz) over BLE should be avoided.",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "sampling_rates",
+  "scope": "Accelerometer, gyroscope, magnetometer (IMU)",
+  "status": "conflict",
+  "value": "The maximum IMU rate differs by source. The API reference's Info responses list 13, 26, 52, 104, 208, 416, 833 and 1666 Hz for the accelerometer, gyroscope, magnetometer and combined IMU. The Flash Developer Kit spec sheet lists 12.5 to 416 Hz for the accelerometer, and the HR2 product page lists 12.5 to 833 Hz. Movesense warns that the highest rates may be limited by BLE bandwidth.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "The 1666 Hz figure appears only in example API responses, not on any product spec sheet. Whether 1666 Hz is usable on every model, and whether it survives BLE streaming or only on-sensor logging, needs vendor confirmation. The KB's \"1.6 kHz IMU\" headline rests on the API example alone.",
+  "sources": [
+   {
+    "url": "https://www.movesense.com/docs/esw/api_reference/",
+    "type": "vendor_docs",
+    "quote": "\"SampleRates\": [ 13, 26, 52, 104, 208, 416, 833, 1666 ], \"AccRanges\": [ 2, 4, 8, 16 ]",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/product/movesense-flash-developer-kit/",
+    "type": "vendor_page",
+    "quote": "Accelerometer, range :±2/±4/±8/±16 g full scale, sampling frequency: 12.5/26/52/104/208/416 Hz",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/product/movesense-sensor-hr2/",
+    "type": "vendor_page",
+    "quote": "sampling frequency: 12.5/26/52/104/208/416/833 Hz",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/docs/esw/api_reference/",
+    "type": "vendor_docs",
+    "quote": "Please note that using highest sample rates may be limited by the BLE bandwidth.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "movesense",
   "name": "Movesense",
   "kind": "wearable",
   "field": "history_depth",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No cloud history; data exists only where the researcher streams or downloads it. On-sensor logging is bounded by memory. HR2, HR+ and MD have 384 kB EEPROM used as a ring buffer that overwrites the oldest data. Flash has 128 MB flash that stops writing when full; Movesense says it holds up to five days of single-channel ECG, over four months of heart rate intervals, four days of 26 Hz acceleration or almost 19 hours of 52 Hz 9-axis motion.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "Two unit discrepancies, neither material. The data storage doc says 386 kB EEPROM where the hardware variants table says 384 kB; the HR2 page gives 3 Mbit, which is 384 kB, so 386 is a typo. The Flash product page says \"128 Mb integrated memory\" while the specifications page and hardware table say 128 MB; the published logging durations fit 128 MB, so \"Mb\" is a typo. For heart rate interval logging on Flash the battery must be replaced about once a month.",
+  "sources": [
+   {
+    "url": "https://www.movesense.com/docs/system/hw_variants/",
+    "type": "vendor_docs",
+    "quote": "Movesense HR2 SS2 384 kB EEPROM NO Movesense HR+ SS2 384 kB EEPROM YES Movesense MD SS2 384 kB EEPROM NO",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/docs/system/hw_variants/",
+    "type": "vendor_docs",
+    "quote": "When the filesystem is full, data can no longer be written (vs the EEPROM where it overwrites the old data)",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/news/2026/03/improved-ecg-imu-data-logger-for-movesense-flash-now-available/",
+    "type": "vendor_page",
+    "quote": "can store up to five days of single-channel ECG or heart rate intervals for over four months",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/news/2026/03/improved-ecg-imu-data-logger-for-movesense-flash-now-available/",
+    "type": "vendor_page",
+    "quote": "For 9-axis motion data (acceleration, gyro, magnetometer) at 52 Hz, the capacity is enough for almost 19 hours.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "movesense",
   "name": "Movesense",
   "kind": "wearable",
   "field": "export_routes",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Mobile library (MDS) for iOS and Android, with Flutter, Unity3D and .NET MAUI plugins; GATT SensorData Protocol with a Python desktop client; Python datalogger tool and Android datalogger sample for Flash offline logging (CSV); Movesense Showcase app (CSV, JSON); Movesense ECG Recorder app for the MD (CSV, PDF, EDF+; .fit export of heart rate intervals). No cloud API. Third-party route: Labfront supports Movesense Medical, HR2 and Flash.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "The GATT SensorData Protocol is in the default firmware, so raw ECG and IMU can be collected on a laptop without custom firmware. On Labfront, participants must start each Movesense recording manually through a task, which bears on adherence; Labfront also offers its customers a Movesense device discount. Fibion Flash resells the Flash sensor as an HRV research kit with Kubios-ready export.",
+  "sources": [
+   {
+    "url": "https://www.movesense.com/developers/",
+    "type": "vendor_page",
+    "quote": "Movesense mobile library on Bitbucket Movesense Showcase App for iOS Movesense Example App for Android Movesense plugin for Unity3D Movesense plugin for .NET Maui Movesense plugin for Flutter",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/news/2025/11/recording-data-with-movesense-sensors-five-free-tools-to-get-you-started/",
+    "type": "vendor_page",
+    "quote": "Export formats: CSV, PDF, and for Movesense MD: EDF+",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://apps.apple.com/us/app/movesense-showcase/id1439876677",
+    "type": "app_store",
+    "quote": "Sharing recorded data logs (CSV and JSON)",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://apps.apple.com/us/app/movesense-ecg-recorder/id6443902831",
+    "type": "app_store",
+    "quote": "the export of heart rate interval data as a .fit file",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://help.labfront.com/movesense-overview",
+    "type": "secondary",
+    "quote": "Labfront is compatible with the following Movesense devices: Movesense Medical Movesense HR2 Movesense Flash",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://help.labfront.com/movesense-overview",
+    "type": "secondary",
+    "quote": "manually start recording data through a task on the participant app in order to capture their data",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "movesense",
   "name": "Movesense",
   "kind": "wearable",
   "field": "rate_limits",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_applicable",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "There is no cloud or web API. Throughput is bounded by Bluetooth LE bandwidth instead (see sampling_rates).",
+  "sources": [
+   {
+    "url": "https://www.movesense.com/faq/",
+    "type": "vendor_page",
+    "quote": "If you integrate the sensors into your own application, you can decide where the data is stored. It does not go to Movesense servers.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "movesense",
   "name": "Movesense",
   "kind": "wearable",
   "field": "retention_terms",
-  "status": "unresearched",
-  "sources": []
+  "scope": "Own app or Movesense developer tools",
+  "status": "stated",
+  "value": "Movesense does not receive or retain the data; storage and deletion are under the researcher's control.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "The evaluation licence requires returning or destroying the licensed software on termination; that concerns the software, not study data.",
+  "sources": [
+   {
+    "url": "https://www.movesense.com/faq/",
+    "type": "vendor_page",
+    "quote": "The Movesense development tools (Movesense Showcase app, Python client, etc.) store data locally on your host device.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/about-us/",
+    "type": "vendor_page",
+    "quote": "Data storage and use is completely under your own control.",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "retention_terms",
+  "scope": "Movesense ECG Recorder app (CardioRTHM)",
+  "status": "stated",
+  "value": "The app stores recordings locally and makes an anonymized backup to Movesense servers. Personal data is kept while the user has an app username, or as long afterwards as Movesense deems necessary; deletion can be requested except where law requires retention.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "These terms apply to the ECG Recorder app only, not to data from a team's own integration.",
+  "sources": [
+   {
+    "url": "https://www.movesense.com/faq/",
+    "type": "vendor_page",
+    "quote": "The Movesense ECG recorder stores data locally and makes an anonymized backup to Movesense servers.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/movesense-ecg-recorder-app-data-protection-statement/",
+    "type": "vendor_legal",
+    "quote": "we will retain your personal data for as long as you have a username for the application or as long after the customer relationship as we deem necessary to retain the data.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/movesense-ecg-recorder-app-data-protection-statement/",
+    "type": "vendor_legal",
+    "quote": "However, we will not be able to delete personal data that are necessary for complying with binding legal obligations or that must be retained under applicable law.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "movesense",
   "name": "Movesense",
   "kind": "wearable",
   "field": "ai_training_terms",
-  "status": "unresearched",
-  "sources": []
+  "scope": "Own app or Movesense developer tools",
+  "status": "not_applicable",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "Data never reaches Movesense on this route, so no use by Movesense arises.",
+  "sources": [
+   {
+    "url": "https://www.movesense.com/faq/",
+    "type": "vendor_page",
+    "quote": "If you integrate the sensors into your own application, you can decide where the data is stored. It does not go to Movesense servers.",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "ai_training_terms",
+  "scope": "Movesense ECG Recorder app (CardioRTHM)",
+  "status": "stated",
+  "value": "AI and machine learning are not mentioned. After anonymization, Movesense may use ECG and other health data for its own commercial and non-commercial purposes \"such as product development, research etc.\", which is broad enough to cover model training but does not name it. The anonymized record keeps a technical identifier, year of birth or age, and gender.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "Movesense announced a non-binding pilot with NeuralCloud Solutions (February 2026) for AI-assisted ECG and Holter reporting; whether ECG Recorder data feeds it is not stated.",
+  "sources": [
+   {
+    "url": "https://www.movesense.com/movesense-ecg-recorder-app-data-protection-statement/",
+    "type": "vendor_legal",
+    "quote": "After anonymization we may also use this special category of data for our further commercial and non-commercial purposes, such as product development, research etc.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/movesense-ecg-recorder-app-data-protection-statement/",
+    "type": "vendor_legal",
+    "quote": "After anonymization the stored data includes the following non-personal information: technical identifier, year of birth/age, gender.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "movesense",
   "name": "Movesense",
   "kind": "wearable",
   "field": "deprecations",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No product shutdowns announced. Developer-facing migrations: the Logbook JSON format changed in firmware 2.2 (code reading Logbook output needs updating when moving from 2.1.x); /Component/Led PUT is deprecated in favour of /Component/Leds; sensor software 1.9.x documentation is kept as legacy; mobile library MDS 3.33.1 crashed on 32-bit Android devices, later fixed. The MDD-certified Movesense MD (product number SS050341000) has been succeeded by the MDR-certified MS060222000.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "Organization, for context rather than as a deprecation: Movesense left Suunto through a management buy-out effective 1 October 2021 and now trades as Movesense Ltd (Vantaa, Finland), with operational links to Suunto continuing. A buyer of MD units should check the SKU, since older stock is MDD-certified.",
+  "sources": [
+   {
+    "url": "https://www.movesense.com/docs/esw/migration_21/",
+    "type": "vendor_docs",
+    "quote": "To support conversion of large SBEM log files from Movesense Flash without running out of memory on the phone, the JSON format from Logbook was changed.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/docs/esw/api_reference/",
+    "type": "vendor_docs",
+    "quote": "/Component/Led : PUT - DEPRECATED",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://bitbucket.org/movesense/movesense-mobile-lib/raw/master/CHANGES.md",
+    "type": "repository",
+    "quote": "Bugfix: Fix crash on 32-bit Android devices",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/conformity",
+    "type": "vendor_legal",
+    "quote": "Product number MS060222000: MDR 2017/745 Product number SS050341000: MDD 93/42/EEC",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/news/2021/09/movesense-grows-independent-from-suunto/",
+    "type": "vendor_page",
+    "quote": "is becoming independent of Suunto following a management buy-out deal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/news/2021/09/movesense-grows-independent-from-suunto/",
+    "type": "vendor_page",
+    "quote": "The deal effective of Oct 1st 2021 will transfer Movesense team and business to the new company led by Jussi Kaasinen.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/terms/",
+    "type": "vendor_legal",
+    "quote": "Movesense Ltd, a limited liability company incorporated in Finland",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "movesense",
   "name": "Movesense",
   "kind": "wearable",
   "field": "baa",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-09",
+  "note": "No mention of HIPAA or a BAA on any page checked. On the SDK route Movesense never handles study data, so a BAA would only matter for the ECG Recorder app's backups.",
+  "sources": [
+   {
+    "url": "https://www.movesense.com/privacy-policy/",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/terms/",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/faq/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/movesense-ecg-recorder-app-data-protection-statement/",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "movesense",
   "name": "Movesense",
   "kind": "wearable",
   "field": "dpa",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-09",
+  "note": "No customer DPA is published. For the ECG Recorder app Movesense names itself controller, not processor, so a study using the app would not get a processor relationship by default.",
+  "sources": [
+   {
+    "url": "https://www.movesense.com/privacy-policy/",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/terms/",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/movesense-ecg-recorder-app-data-protection-statement/",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/faq/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "movesense",
   "name": "Movesense",
   "kind": "wearable",
   "field": "hipaa_statement",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-09",
+  "sources": [
+   {
+    "url": "https://www.movesense.com/privacy-policy/",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/faq/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/conformity",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/movesense-ecg-recorder-app-data-protection-statement/",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/news/2024/06/faq-regarding-movesense-md-medical-sensor/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "movesense",
   "name": "Movesense",
   "kind": "wearable",
   "field": "gdpr_statement",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Movesense Ltd (Vantaa, Finland) is the controller under its privacy policy and the ECG Recorder data protection statement. It names a DPO contact, relies on Standard Contractual Clauses or adequacy decisions for transfers outside the EU/EEA, processes ECG data as special-category data on consent, and points complaints to the Finnish Data Protection Ombudsman.",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-09",
+  "sources": [
+   {
+    "url": "https://www.movesense.com/privacy-policy/",
+    "type": "vendor_legal",
+    "quote": "Movesense DPO contacts via email to info@movesense.com . Please use email topic",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/movesense-ecg-recorder-app-data-protection-statement/",
+    "type": "vendor_legal",
+    "quote": "Movesense is the controller to data in the application and contact details are in the Privacy Policy.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/movesense-ecg-recorder-app-data-protection-statement/",
+    "type": "vendor_legal",
+    "quote": "Such collection and processing of special category of data is subject to your consent in accordance with applicable laws",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/movesense-ecg-recorder-app-data-protection-statement/",
+    "type": "vendor_legal",
+    "quote": "However, in all transfers to third countries, Movesense always complies with either an Equivalence Decision or Standard Contractual Clauses.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "movesense",
   "name": "Movesense",
   "kind": "wearable",
   "field": "iso27001",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-09",
+  "note": "Movesense holds ISO 13485:2016 (medical device quality management; the conformity page names Eurofins Electric & Electronics Finland Ltd as auditor and certifier), which is not an information security certification. The certificate itself was not located.",
+  "sources": [
+   {
+    "url": "https://www.movesense.com/conformity",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/about-us/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/privacy-policy/",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/faq/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "movesense",
   "name": "Movesense",
   "kind": "wearable",
   "field": "soc2",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-09",
+  "sources": [
+   {
+    "url": "https://www.movesense.com/conformity",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/privacy-policy/",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/terms/",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/faq/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "movesense",
   "name": "Movesense",
   "kind": "wearable",
   "field": "fda_clearances",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Verified",
+  "recheck_by": "2027-01-09",
+  "note": "All openFDA searches returned no matches (510(k), PMA, registration and listing, GUDID); the only Suunto 510(k) is an unrelated 1997 record. EU status, for context, is that the MD and the ECG Recorder app are EU MDR Class IIa (Annex IX rule 9), only with certified Movesense firmware. EUDAMED and the notified-body certificate were not located. The conformity page lists FCC Part 15 radio approvals, which are not FDA clearances.",
+  "sources": [
+   {
+    "url": "https://api.fda.gov/device/510k.json?search=applicant:movesense",
+    "type": "regulator_db",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://api.fda.gov/device/510k.json?search=device_name:movesense",
+    "type": "regulator_db",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://api.fda.gov/device/510k.json?search=device_name:cardiorthm",
+    "type": "regulator_db",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://api.fda.gov/device/registrationlisting.json?search=proprietary_name:movesense",
+    "type": "regulator_db",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://api.fda.gov/device/pma.json?search=applicant:movesense",
+    "type": "regulator_db",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://api.fda.gov/device/udi.json?search=brand_name:movesense",
+    "type": "regulator_db",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/news/2024/06/faq-regarding-movesense-md-medical-sensor/",
+    "type": "vendor_page",
+    "quote": "FDA 510k is on the roadmap and coming up in the future.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/faq/",
+    "type": "vendor_page",
+    "quote": "Movesense MD is certified as a Class IIa medical device ( EU MDR) and manufactured under ISO 13485 medical quality system in Finland. Other medical certifications pending.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "movesense",
   "name": "Movesense",
   "kind": "wearable",
   "field": "data_residency",
-  "status": "unresearched",
-  "sources": []
+  "scope": "Own app or Movesense developer tools",
+  "status": "stated",
+  "value": "Wherever the researcher stores it. Data goes from the sensor to the researcher's phone, computer or own backend and does not pass through Movesense servers.",
+  "confidence": "Verified",
+  "recheck_by": "2027-01-09",
+  "sources": [
+   {
+    "url": "https://www.movesense.com/faq/",
+    "type": "vendor_page",
+    "quote": "If you integrate the sensors into your own application, you can decide where the data is stored. It does not go to Movesense servers.",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "movesense",
+  "name": "Movesense",
+  "kind": "wearable",
+  "field": "data_residency",
+  "scope": "Movesense ECG Recorder app and other Movesense services",
+  "status": "stated",
+  "value": "Backups go to Movesense servers whose location is not stated; Movesense says its services may use servers in various countries, with transfers outside the EU/EEA under adequacy decisions or SCCs. No residency option is offered.",
+  "confidence": "Verified",
+  "recheck_by": "2027-01-09",
+  "sources": [
+   {
+    "url": "https://www.movesense.com/movesense-ecg-recorder-app-data-protection-statement/",
+    "type": "vendor_legal",
+    "quote": "Our products and services can be provided using resources and servers located in different countries.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.movesense.com/privacy-policy/",
+    "type": "vendor_legal",
+    "quote": "Our products and services may be provided using resources and servers located in various countries around the world.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "oura",
@@ -16156,240 +18191,1506 @@
   "name": "Polar",
   "kind": "wearable",
   "field": "research_program",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Polar Research Center collaboration (\"Collaborate with us\"): a research unit sends a research co-operation proposal for a study done jointly with Polar Electro Oy, and may ask for Polar support in technology, money or other forms. Polar also markets the H10, Verity Sense, the AccessLink API, the BLE SDK and Team Pro as research tools, but researchers buy and use these on standard terms; that is product information, not a program with its own terms.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "In Polar-run research collaborations the privacy notice says customer data stays inside Polar. A separate Polar-linked grant, the Seppo Saynajakangas Science Foundation, is open only to Finnish citizens studying in northern Finland, so it is not an access route for most study teams.",
+  "sources": [
+   {
+    "url": "https://www.polar.com/en/science/collaborate-with-us",
+    "type": "vendor_page",
+    "quote": "These guidelines apply to the scientific studies done in collaboration with Polar Electro Oy.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/science/collaborate-with-us",
+    "type": "vendor_page",
+    "quote": "budget and proposal for Polar support (technology, money, other)",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/business/science",
+    "type": "vendor_page",
+    "quote": "The Polar Research Center consists of our in-house team of experts from technology, physiology and data science.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/science/research-tools",
+    "type": "vendor_page",
+    "quote": "Find out how Polar technology and services can be used for research and science.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "polar",
   "name": "Polar",
   "kind": "wearable",
   "field": "program_eligibility",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No published eligibility rule. The proposal is expected from a research unit (institute, university, department or similar) with a responsible researcher, and proposals are rated partly on their value to Polar, so studies outside Polar's interests are rejected or wait-listed.",
+  "confidence": "Corroborated",
+  "recheck_by": "2026-11-09",
+  "note": "\"No published eligibility rule\" is an inference from the page, which lists documents and review criteria but no eligibility conditions.",
+  "sources": [
+   {
+    "url": "https://www.polar.com/en/science/collaborate-with-us",
+    "type": "vendor_page",
+    "quote": "Presentation of the research unit (institute, university, department etc.)",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/science/collaborate-with-us",
+    "type": "vendor_page",
+    "quote": "significance and originality value for the company",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/science/collaborate-with-us",
+    "type": "vendor_page",
+    "quote": "Not interesting and not in relation to Company actions to be rejected",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "polar",
   "name": "Polar",
   "kind": "wearable",
   "field": "program_application",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Email a research co-operation application to research@polar.com with a presentation of the research unit, the responsible researcher's CV and recent publications, and a research plan of at most 10 pages that includes benefits to Polar, a budget and a proposal for Polar support (technology, money, other). Proposals are reviewed on criteria including \"value for the company\", and Polar replies within two weeks; NDAs are used if needed. An accepted study gets a signed research agreement, and the research partner handles ethical approvals.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "API and SDK access need no application; see developer_program_status.",
+  "sources": [
+   {
+    "url": "https://www.polar.com/en/science/collaborate-with-us",
+    "type": "vendor_page",
+    "quote": "Please send your research co-operation application to the email address below.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/science/collaborate-with-us",
+    "type": "vendor_page",
+    "quote": "Research plan (max 10 pages)",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/science/collaborate-with-us",
+    "type": "vendor_page",
+    "quote": "Proposals are evaluated and response given to applicant within two weeks. NDA procedures are used if needed.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/science/collaborate-with-us",
+    "type": "vendor_page",
+    "quote": "After study proposal and a study plan are accepted a research agreement is signed.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/science/collaborate-with-us",
+    "type": "vendor_page",
+    "quote": "Research partner takes care of ethical approvals needed.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/science/collaborate-with-us",
+    "type": "vendor_page",
+    "quote": "Send your proposal to: research@polar.com",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "polar",
   "name": "Polar",
   "kind": "wearable",
   "field": "program_status",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Active as of 2026-10-11; the collaboration page invites proposals and gives a submission address. No pause or closure announced.",
+  "confidence": "Corroborated",
+  "recheck_by": "2026-11-09",
+  "note": "Status inferred from a live invitation page; no dated program announcement found.",
+  "sources": [
+   {
+    "url": "https://www.polar.com/en/science/collaborate-with-us",
+    "type": "vendor_page",
+    "quote": "At Polar Research Center, we are always open to suggestions for new collaboration opportunities.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/science/collaborate-with-us",
+    "type": "vendor_page",
+    "quote": "Submit your research proposal and we’ll be in touch.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "polar",
   "name": "Polar",
   "kind": "wearable",
   "field": "developer_program_status",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Open. Any Polar Flow user can self-register an AccessLink API client at admin.polaraccesslink.com after accepting the API Limited License Agreement; no review step is documented, but EU Digital Markets Act gatekeepers are excluded. The Team Pro API uses the same admin portal. The BLE SDK is public on GitHub (release 8.4.0, 2026-10-01) under Polar's own limited licence. Polar 360 is also sold B2B as a band to build apps on through the SDK or API.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://www.polar.com/accesslink-api/",
+    "type": "vendor_docs",
+    "quote": "Any registered Polar Flow user can create API client to AccessLink by filling application details at",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/legal/polar-api-agreement",
+    "type": "vendor_legal",
+    "quote": "Gatekeepers shall not be eligible to enter into this Agreement.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk",
+    "type": "repository",
+    "fetch_url": "https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/README.md",
+    "quote": "Build apps that connect via Bluetooth LE and stream real-time heart rate, ECG, accelerometer, PPG, and more from Polar devices.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/business/polar-360",
+    "type": "vendor_page",
+    "quote": "Build your own app from scratch, or integrate Polar 360's powerful data into existing ecosystems seamlessly with Polar SDK; or plug ‘n’ play with Polar API.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "polar",
   "name": "Polar",
   "kind": "wearable",
   "field": "user_cap",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Corroborated",
+  "recheck_by": "2026-11-09",
+  "note": "No participant or user cap is published for AccessLink or the SDK. AccessLink rate limits grow with the number of registered users (see rate_limits) rather than capping them.",
+  "sources": [
+   {
+    "url": "https://www.polar.com/accesslink-api/",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/legal/polar-api-agreement",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk",
+    "type": "repository",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "polar",
   "name": "Polar",
   "kind": "wearable",
   "field": "academic_vs_commercial",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No separate academic tier. AccessLink and the BLE SDK are free on the same terms for everyone, and the SDK licence allows private and commercial use. The only research-specific route is the collaboration proposal, which Polar chooses whether to support; B2B partnerships go through a contact form.",
+  "confidence": "Corroborated",
+  "recheck_by": "2026-11-09",
+  "note": "\"No separate academic tier\" is inferred from the absence of academic terms on the API, SDK and science pages. The SDK licence is a proprietary limited licence, not an open-source one (see api_platform_fees and retention_terms, scope BLE SDK); Polar approved one research project's GPLv3-with-linking-exception licence case by case in SDK issue #835 (closed 2026-06-18), which shows the two need separate checking.",
+  "sources": [
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk/blob/master/Polar_SDK_License.txt",
+    "fetch_url": "https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/Polar_SDK_License.txt",
+    "type": "vendor_legal",
+    "quote": "You are allowed to use the SDK for the development of software for your private as well as for commercial use for as long as you use the SDK in compliance with the license terms.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/legal/polar-api-agreement",
+    "type": "vendor_legal",
+    "quote": "At the moment Polar offers the use and activation of Polar API’s free of charge.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "polar",
   "name": "Polar",
   "kind": "wearable",
   "field": "device_price",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "scope": "Polar H10 chest strap",
+  "value": "USD 104.95 (US store, 2026-10-11)",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://www.polar.com/us-en/sensors/h10-heart-rate-sensor",
+    "type": "vendor_page",
+    "quote": "Polar H10 Heart Rate Sensor $104.95",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "device_price",
+  "status": "stated",
+  "scope": "Polar Verity Sense",
+  "value": "USD 104.95 (US store, 2026-10-11)",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "The comparison matrix and the Wearable Data Atlas still carry \"~$95 (2026-08-21, not re-read)\"; the live US store says $104.95, matching the profile.",
+  "sources": [
+   {
+    "url": "https://www.polar.com/us-en/products/accessories/polar-verity-sense",
+    "type": "vendor_page",
+    "quote": "Polar Verity Sense Optical Heart Rate Sensor $104.95",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "device_price",
+  "status": "stated",
+  "scope": "POLAR Loop",
+  "value": "USD 199.99 (US store, 2026-10-11)",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://www.polar.com/us-en/loop",
+    "type": "vendor_page",
+    "quote": "POLAR Loop Screen-Free Wearable Health Band & Fitness Tracker $199.99",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "device_price",
+  "status": "stated",
+  "scope": "Watches",
+  "value": "US store, 2026-10-11: Pacer $299.90, Ignite 3 $399.99, Vantage V3 $699.99, Grit X2 Pro $999.99",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://www.polar.com/us-en/pacer",
+    "type": "vendor_page",
+    "quote": "Polar Pacer GPS Sports Watch $299.90",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/us-en/ignite3",
+    "type": "vendor_page",
+    "quote": "Polar Ignite 3 Fitness & Wellness Watch $399.99",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/us-en/vantage/v3",
+    "type": "vendor_page",
+    "quote": "Polar Vantage V3 Premium Multisport Watch $699.99",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/us-en/grit-x2-pro",
+    "type": "vendor_page",
+    "quote": "Polar Grit X2 Pro Premium Outdoor Watch $999.99",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "polar",
   "name": "Polar",
   "kind": "wearable",
   "field": "subscription_price",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No subscription needed for Polar Flow or the devices. The optional Fitness Program (needs a Polar watch) is free to try, then EUR 9.99 a month; the live product page shows this price on 2026-10-11, as did the April 2025 launch release. POLAR Loop is sold as subscription-free.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "The US-English Fitness Program page shows the price in euros; no USD price is published by Polar.",
+  "sources": [
+   {
+    "url": "https://www.polar.com/us-en/fitness-program",
+    "type": "vendor_page",
+    "quote": "Try for free, then 9,99 €/month",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/media-room/polar-introduces-fitness-program",
+    "type": "vendor_page",
+    "quote": "Fitness Program is available to Polar users as a subscription service for €9.99 (or the equivalent in local currency) per month.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/media-room/polar-introduces-fitness-program",
+    "type": "vendor_page",
+    "quote": "Polar Flow remains free. A subscription to Fitness Program is not required to fully enjoy Polar products or the Flow service.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/us-en/loop",
+    "type": "vendor_page",
+    "quote": "No monthly fees. No locked features.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "polar",
   "name": "Polar",
   "kind": "wearable",
   "field": "academic_pricing",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Corroborated",
+  "recheck_by": "2026-11-09",
+  "note": "No academic or volume discount is published. A collaboration proposal may ask Polar for support in technology or money, decided case by case.",
+  "sources": [
+   {
+    "url": "https://www.polar.com/en/science/research-tools",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/business/science",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/science/collaborate-with-us",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/business",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "polar",
   "name": "Polar",
   "kind": "wearable",
   "field": "api_platform_fees",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "scope": "AccessLink and Team Pro API",
+  "value": "Free at present, but Polar reserves the right to charge fees at its discretion.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://www.polar.com/en/legal/polar-api-agreement",
+    "type": "vendor_legal",
+    "quote": "At the moment Polar offers the use and activation of Polar API’s free of charge.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/legal/polar-api-agreement",
+    "type": "vendor_legal",
+    "quote": "Polar reserves the right to charge fees from time to time at its discretion.",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "api_platform_fees",
+  "status": "stated",
+  "scope": "BLE SDK",
+  "value": "Free of charge while the licensee complies. The SDK ships under Polar's proprietary \"Software Development Kit Limited License Agreement\", not an open-source licence: you may use, copy and modify it with the notice kept, for private or commercial software, but the grant is worldwide, non-exclusive, non-transferable and limited to enabling data transfer between Polar products and your software; Polar keeps all ownership; Polar has no duty to provide updates or support; and the SDK and devices are not intended for medical use. Termination terms are under retention_terms (BLE SDK).",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "The schema's licence field applies to platforms only, so the SDK licence is recorded here and under retention_terms. GitHub reports the repository licence as NOASSERTION. The profile and matrix call the SDK \"open source\", which this text does not support; \"source-available, free, under Polar's limited licence\" is accurate.",
+  "sources": [
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk/blob/master/Polar_SDK_License.txt",
+    "fetch_url": "https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/Polar_SDK_License.txt",
+    "type": "vendor_legal",
+    "quote": "SOFTWARE DEVELOPMENT KIT LIMITED LICENSE AGREEMENT",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk/blob/master/Polar_SDK_License.txt",
+    "fetch_url": "https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/Polar_SDK_License.txt",
+    "type": "vendor_legal",
+    "quote": "Licensed Materials shall be offered free of charge, subject to You being in compliance with the terms of this Agreement at all times.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk/blob/master/Polar_SDK_License.txt",
+    "fetch_url": "https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/Polar_SDK_License.txt",
+    "type": "vendor_legal",
+    "quote": "You may use, copy and modify the SDK as long as you include the original copyright and license notice in any copy of the software/source and you comply with the license terms.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk/blob/master/Polar_SDK_License.txt",
+    "fetch_url": "https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/Polar_SDK_License.txt",
+    "type": "vendor_legal",
+    "quote": "solely for purpose of enabling Data transfer between POLAR product and Developer Software",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk/blob/master/Polar_SDK_License.txt",
+    "fetch_url": "https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/Polar_SDK_License.txt",
+    "type": "vendor_legal",
+    "quote": "Polar and its licensors shall continue to own all right, title and interest, including copyright and all other intellectual property rights in and to the Licensed Materials",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk/blob/master/Polar_SDK_License.txt",
+    "fetch_url": "https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/Polar_SDK_License.txt",
+    "type": "vendor_legal",
+    "quote": "Licensed Materials and Polar's devices are not intended to be used in life critical, life supporting or medical purpose.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "polar",
   "name": "Polar",
   "kind": "wearable",
   "field": "minimum_commitment",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "scope": "AccessLink API",
+  "value": "None. The API agreement runs until either party gives 30 days' written notice; Polar may also suspend or terminate access immediately for any or no reason.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://www.polar.com/en/legal/polar-api-agreement",
+    "type": "vendor_legal",
+    "quote": "This Agreement shall remain in force until terminated by either Party by providing a thirty (30) days prior written notice to the other Party.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/legal/polar-api-agreement",
+    "type": "vendor_legal",
+    "quote": "to suspend or terminate Your, Your Corporate Customer’s or any Member’s access to Polar Ecosystem for any or no reason, with immediate effect",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "minimum_commitment",
+  "status": "not_public",
+  "scope": "Business and B2B (Polar 360, volume device orders)",
+  "confidence": "Corroborated",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://www.polar.com/en/business/polar-360",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/business",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "polar",
   "name": "Polar",
   "kind": "wearable",
   "field": "quote_required",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "scope": "Consumer devices",
+  "value": "Consumer watches and sensors have public list prices.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://www.polar.com/us-en/sensors/h10-heart-rate-sensor",
+    "type": "vendor_page",
+    "quote": "Polar H10 Heart Rate Sensor $104.95",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "quote_required",
+  "status": "stated",
+  "scope": "Polar 360 and B2B",
+  "value": "Polar 360 (the business band) and B2B partnerships go through a contact form; no price is published.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://www.polar.com/en/business/polar-360",
+    "type": "vendor_page",
+    "quote": "Ready to get started with Polar 360? Contact us",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/business",
+    "type": "vendor_page",
+    "quote": "To learn more about Polar for Business and to discuss B2B partnership opportunities, please complete the form below.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "polar",
   "name": "Polar",
   "kind": "wearable",
   "field": "raw_streams",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "scope": "BLE SDK, Polar H10",
+  "value": "Heart rate with RR intervals, ECG in microvolts, and 3-axis accelerometer, streamed live; the internal recording holds HR only.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk/blob/master/documentation/products/PolarH10.md",
+    "fetch_url": "https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/documentation/products/PolarH10.md",
+    "type": "vendor_docs",
+    "quote": "Electrocardiography (ECG) data in µV with sample rate 130Hz.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk/blob/master/documentation/products/PolarH10.md",
+    "fetch_url": "https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/documentation/products/PolarH10.md",
+    "type": "vendor_docs",
+    "quote": "Heart rate as beats per minute and RR Interval in ms.",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "raw_streams",
+  "status": "stated",
+  "scope": "BLE SDK, Polar Verity Sense",
+  "value": "PPG, PP intervals, heart rate, accelerometer, gyroscope and magnetometer, by live streaming or offline recording on the sensor.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "A Polar staff reply in SDK issue #887 (2026-10-05) says \"PolarOfflineRecordingApi is currently supported only by Polar H10\", which disagrees with the Verity Sense and Polar 360 product docs (both document offline recording). The per-device docs are kept as governing; the reply is Reported only and may mean the H10's separate internal recording. Worth asking Polar before relying on Verity Sense offline recording.",
+  "sources": [
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk/blob/master/documentation/products/PolarVeritySense.md",
+    "fetch_url": "https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/documentation/products/PolarVeritySense.md",
+    "type": "vendor_docs",
+    "quote": "Photoplethysmograpy (PPG) values.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk/blob/master/documentation/products/PolarVeritySense.md",
+    "fetch_url": "https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/documentation/products/PolarVeritySense.md",
+    "type": "vendor_docs",
+    "quote": "Gyroscope data with sample rate of 52Hz and ranges of 2000deg/sec.",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "raw_streams",
+  "status": "stated",
+  "scope": "BLE SDK, POLAR Loop and Polar 360",
+  "value": "Green-channel PPG, PP intervals, accelerometer, skin temperature and heart rate (streaming and offline recording), plus export of 24/7 HR and PPi samples stored on the device.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "24/7 PPi on these bands is a set of automatically triggered sessions, not a continuous recording (see sampling_rates, scope 24/7 PPi).",
+  "sources": [
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk/blob/master/documentation/products/Polar360.md",
+    "fetch_url": "https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/documentation/products/Polar360.md",
+    "type": "vendor_docs",
+    "quote": "Photoplethysmograpy (PPG): 22Hz, 24bit resolution, Green channels",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk/blob/master/documentation/products/Polar360.md",
+    "fetch_url": "https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/documentation/products/Polar360.md",
+    "type": "vendor_docs",
+    "quote": "24/7 PPi samples in milliseconds (get247PPiSamples)",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "raw_streams",
+  "status": "stated",
+  "scope": "BLE SDK, Vantage V3, Vantage M3, Grit X2 Pro and Grit X2",
+  "value": "Online streaming only: heart rate, accelerometer (50 Hz, 8 g), PPG, PP intervals, gyroscope, magnetometer, pressure and skin temperature. Streaming works only from the watch's exercise-wait view after a manual pairing and sharing step; SDK mode is not supported on watches. No ECG over the SDK: Polar staff say the wrist ECG is not available through the BLE SDK.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "The ECG statement is a Polar staff reply (samulimaa, 2026-10-05), not product documentation. Stored 24/7 data on these watches is in conflict; see export_routes (watch line).",
+  "sources": [
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk/blob/master/documentation/products/PolarVantageV3andGritX2Pro.md",
+    "fetch_url": "https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/documentation/products/PolarVantageV3andGritX2Pro.md",
+    "type": "vendor_docs",
+    "quote": "Accelerometer data with sample rate of 50 Hz and range of 8 G.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk/blob/master/documentation/UsingSDKWithWatches.md",
+    "fetch_url": "https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/documentation/UsingSDKWithWatches.md",
+    "type": "vendor_docs",
+    "quote": "SDK Mode is currently not supported in Polar watches.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk/issues/887",
+    "type": "repository",
+    "quote": "ECG / Elixir is not available through the Vantage V3 BLE SDK.",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "raw_streams",
+  "status": "stated",
+  "scope": "AccessLink API (Polar Flow cloud)",
+  "value": "No raw PPG or accelerometer. Closest to raw are exercise samples (with RR intervals when an H6, H7, H9 or H10 strap was used), exercise FIT/TCX/GPX files, and 5-minute continuous heart rate. The Elixir Biosensing resource (beta) returns wrist ECG test results that include the ECG waveform as samples (amplitude in mV with a time offset in ms) plus quality levels, average HR, HRV, RR and pulse transit time, and SpO2 test results, from the watch line's on-demand spot tests. The cloud API is therefore the only route to a Polar watch's ECG.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "Both researchers wrote \"no raw ECG\" for AccessLink; the API schema's ECG samples array shows otherwise. The ECG sample rate is not documented, and these are spot tests the wearer starts, not continuous recording.",
+  "sources": [
+   {
+    "url": "https://www.polar.com/accesslink-api/",
+    "type": "vendor_docs",
+    "quote": "Elixir™ Biosensing data consists of body temperature data, sleep skin temperature data, skin contacts data, wrist ECG test report data and SpO2 test report data.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/accesslink-api/",
+    "type": "vendor_docs",
+    "quote": "Get user's wrist ECG test result data for last 28 days or for given date range.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/accesslink-api/",
+    "type": "vendor_docs",
+    "quote": "\"amplitude_mv\" : 0.1",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/accesslink-api/",
+    "type": "vendor_docs",
+    "quote": "Elixir™ biosensing data released in beta status",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/accesslink-api/",
+    "type": "vendor_docs",
+    "quote": "In order to get RR interval samples, training needs to be performed with Polar H6, H7, H9 or H10 heart rate sensors.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://support.polar.com/en/wrist-ecg",
+    "type": "vendor_page",
+    "quote": "The ECG test is not intended for medical or diagnostic use.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "polar",
   "name": "Polar",
   "kind": "wearable",
   "field": "derived_metrics",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "AccessLink: exercises (with optional samples, zones, Training Load Pro), daily activity (steps, calories, activity zones), 5-minute continuous heart rate, sleep and Sleep Plus Stages, Nightly Recharge (overnight HRV as RMSSD, breathing rate, ANS charge), Cardio Load (TRIMP-based), SleepWise alertness and circadian bedtime, and Elixir biosensing (body and sleep skin temperature, wrist ECG and SpO2 test results). SDK on Loop/360 and the watch line: steps, active time, calories, MET samples, Nightly Recharge, sleep.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "SleepWise and Elixir biosensing endpoints were released in beta status (changelog 13.03.2023 and 19.12.2023).",
+  "sources": [
+   {
+    "url": "https://www.polar.com/accesslink-api/",
+    "type": "vendor_docs",
+    "quote": "The Heart rate variability is Root Mean Square of Successive Differences (RMSSD) in beat-to-beat intervals.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/accesslink-api/",
+    "type": "vendor_docs",
+    "quote": "Cardio load is based on training impulse calculation (TRIMP), a commonly accepted and scientifically proven method to quantify training load.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/accesslink-api/",
+    "type": "vendor_docs",
+    "quote": "SleepWise&trade data consists of alertness periods and circadian bedtime periods.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk/blob/master/documentation/products/Polar360.md",
+    "fetch_url": "https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/documentation/products/Polar360.md",
+    "type": "vendor_docs",
+    "quote": "Nightly recharge data per night (getNightlyRecharge)",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "polar",
   "name": "Polar",
   "kind": "wearable",
   "field": "sampling_rates",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "scope": "BLE SDK",
+  "value": "H10: ECG 130 Hz; accelerometer 25, 50, 100 or 200 Hz; HR and RR at 1 Hz. Verity Sense: accelerometer and gyroscope 52 Hz by default (more options in SDK mode), PPG 55 Hz by default (28 to 176 Hz in SDK mode), magnetometer 10 to 100 Hz. Loop/360: PPG 22 Hz, accelerometer 50 Hz, skin temperature 1 to 4 Hz. Vantage V3 / Grit X2 line: accelerometer 50 Hz; other stream settings must be queried from the device.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk/blob/master/documentation/products/PolarH10.md",
+    "fetch_url": "https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/documentation/products/PolarH10.md",
+    "type": "vendor_docs",
+    "quote": "Accelerometer data with sample rates of 25Hz, 50Hz, 100Hz and 200Hz and range of 2G, 4G and 8G.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk/blob/master/documentation/products/PolarVeritySense.md",
+    "fetch_url": "https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/documentation/products/PolarVeritySense.md",
+    "type": "vendor_docs",
+    "quote": "SDK mode gives more sampling rate and range options.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk/blob/master/documentation/products/Polar360.md",
+    "fetch_url": "https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/documentation/products/Polar360.md",
+    "type": "vendor_docs",
+    "quote": "Acceleration: 50Hz, 16bit resolution, Range 8G",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk/issues/887",
+    "type": "repository",
+    "quote": "The available settings for PPG, gyroscope, magnetometer, pressure, and skin temperature should be queried from the device with requestStreamSettings().",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "sampling_rates",
+  "status": "stated",
+  "scope": "AccessLink API",
+  "value": "Continuous (24/7) heart rate in 5-minute samples; training-session samples at a finer interval through the exercise endpoints. On Loop/360 the device's own 24/7 HR is 5-minute averages at low activity and 60 samples per minute at high activity.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://www.polar.com/accesslink-api/",
+    "type": "vendor_docs",
+    "quote": "Samples are recording in 5 minute intervals.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk/blob/master/documentation/products/Polar360.md",
+    "fetch_url": "https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/documentation/products/Polar360.md",
+    "type": "vendor_docs",
+    "quote": "24/7 HR samples as 5 min averages when low or moderate activity and with 60 samples/minute when high activity is detected",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "sampling_rates",
+  "status": "stated",
+  "scope": "BLE SDK, 24/7 PPi on Polar 360 and Loop",
+  "value": "Not continuous. 24/7 PPi is stored as automatically triggered measurement sessions; the trigger schedule, session length and day/night differences are undocumented. Each interval carries an error estimate and skin-contact, movement and online/offline flags. Polar advises measuring coverage in a pilot.",
+  "confidence": "Corroborated",
+  "recheck_by": "2026-11-09",
+  "note": "Polar staff reply (2026-10-05), not product documentation.",
+  "sources": [
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk/issues/886",
+    "type": "repository",
+    "quote": "PPi is stored as separate, automatically triggered measurement sessions rather than a continuous 24/7 recording.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk/issues/886",
+    "type": "repository",
+    "quote": "The exact acquisition schedule is not documented.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "polar",
   "name": "Polar",
   "kind": "wearable",
   "field": "history_depth",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "scope": "AccessLink API",
+  "value": "Nothing from before the user registered with the client. Exercises: last 30 days. Sleep, Nightly Recharge, SleepWise: last 28 days. Daily activity and activity samples: up to 365 days back, in windows of at most 28 days. Biosensing (ECG, SpO2, temperature): last 28 days or a range of at most 28 days. Older data needs the participant's own export from account.polar.com.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://www.polar.com/accesslink-api/",
+    "type": "vendor_docs",
+    "quote": "Only Exercises uploaded to Flow in the last 30 days are returned.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/accesslink-api/",
+    "type": "vendor_docs",
+    "quote": "Only exercises that have been uploaded to Flow after the user is registered with your client will be returned.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/accesslink-api/",
+    "type": "vendor_docs",
+    "quote": "From date cannot be older than 365 days from today and the maximum range between from and to is 28 days.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/accesslink-api/",
+    "type": "vendor_docs",
+    "quote": "List sleep data of user for the last 28 days.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "polar",
   "name": "Polar",
   "kind": "wearable",
   "field": "export_routes",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "AccessLink REST API (OAuth2, JSON or XML, webhooks, exercise FIT/TCX/GPX files); BLE SDK for Android and iOS (live streaming, and offline or stored data read from the device); Team Pro API for Team Pro data; participant self-export at account.polar.com; sync to Apple Health and Google Fit.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "Operational caveats. AccessLink webhooks switch off after 7 days of failed delivery, and a 403 is returned if the user has not accepted all mandatory consents. An H10 long internal recording download is cut off if the sensor is taken off the strap, so keep it on a worn strap while reading.",
+  "sources": [
+   {
+    "url": "https://www.polar.com/accesslink-api/",
+    "type": "vendor_docs",
+    "quote": "JSON and XML file formats are supported except for OAuth2 process where only JSON file format is supported.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/business/developers",
+    "type": "vendor_page",
+    "quote": "Polar mobile SDK enables you to read and interpret live data from Polar devices, including ECG data, acceleration data, and heart rate broadcast.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/business/developers",
+    "type": "vendor_page",
+    "quote": "Team Pro API provides data from Polar Team Pro System and offers a gateway for 3rd parties to connect with Team Pro specific data.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/legal/data-notice",
+    "type": "vendor_legal",
+    "quote": "To download your data, visit account.polar.com and sign in using the same username and password as your Flow account.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/developers",
+    "type": "vendor_page",
+    "quote": "Polar integrates with the Google Fit and Apple HealthKit fitness platforms.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/accesslink-api/",
+    "type": "vendor_docs",
+    "quote": "Webhooks are automatically deactivated if they fail to deliver data for 7 days",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk/blob/master/documentation/KnownIssues.md",
+    "fetch_url": "https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/documentation/KnownIssues.md",
+    "type": "vendor_docs",
+    "quote": "H10 disconnects the BLE connection after 45 seconds timeout when H10 is removed from strap.",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "export_routes",
+  "status": "conflict",
+  "scope": "BLE SDK, stored 24/7 data on Vantage V3, Vantage M3, Grit X2 Pro and Grit X2",
+  "value": "The watch-line SDK product page lists data export of 24/7 HR samples, 24/7 PPi samples and skin temperature data; a Polar staff reply (issue #887, 2026-10-05) says the Vantage V3 does not save 24/7 HR, PPi or skin temperature for SDK loading and that these are available only by online streaming.",
+  "confidence": "Unclear",
+  "recheck_by": "2026-11-09",
+  "note": "Both are Polar sources and they genuinely disagree on whether stored 24/7 HR and PPi can be read back from the watch. The staff reply is the more specific and more recent, but until Polar updates its docs, plan a watch-line study on live streaming or AccessLink, and pilot any SDK read-back. Offline recording (the SDK's recording API) is not claimed for the watch line in either source, and the SDK's device capability file marks recording unsupported on these watches, so there is no conflict on that point.",
+  "sources": [
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk/blob/master/documentation/products/PolarVantageV3andGritX2Pro.md",
+    "fetch_url": "https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/documentation/products/PolarVantageV3andGritX2Pro.md",
+    "type": "vendor_docs",
+    "quote": "24/7 PPi samples",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk/blob/master/documentation/products/PolarVantageV3andGritX2Pro.md",
+    "fetch_url": "https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/documentation/products/PolarVantageV3andGritX2Pro.md",
+    "type": "vendor_docs",
+    "quote": "SPO2 test results",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk/issues/887",
+    "type": "repository",
+    "quote": "Vantage V3 does not save offline/24/7 HR, PPi, or skin-temperature data.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk/issues/886",
+    "type": "repository",
+    "quote": "Therefore, get247PPiSamples() cannot be used to retrieve retrospective Vantage V3 PPi data for RMSSD or HF-HRV analysis.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "polar",
   "name": "Polar",
   "kind": "wearable",
   "field": "rate_limits",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "scope": "AccessLink API",
+  "value": "Dynamic, per partner, recalculated daily. 15-minute limit 500 + 20 x registered users; 24-hour limit 5000 + 100 x registered users. Excess returns HTTP 429. Load testing without Polar's approval is prohibited.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://www.polar.com/accesslink-api/",
+    "type": "vendor_docs",
+    "quote": "15min rate limit: 500 + number of users x 20 24h rate limit: 5000 + number of users x 100",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/legal/polar-api-agreement",
+    "type": "vendor_legal",
+    "quote": "Load testing without prior approval by Polar will be construed as interfering with the proper working of Polar Ecosystem",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "rate_limits",
+  "status": "stated",
+  "scope": "Team Pro API",
+  "value": "About 1 request per second per client.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://www.polar.com/teampro-api/",
+    "type": "vendor_docs",
+    "quote": "The rate limit is basically allowing 1 request per second speed.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "polar",
   "name": "Polar",
   "kind": "wearable",
   "field": "retention_terms",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "scope": "AccessLink and Polar Flow",
+  "value": "API licensees must stop access, revoke and delete the member's token when the member asks or the relationship ends, and must delete all copies of Polar Data when the agreement ends. No fixed retention period for retrieved data while the agreement runs. Polar keeps Flow data while the account is active; Team Pro data is kept 180 days after the licence ends unless earlier deletion is requested.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "Polar can end API access at any time (see minimum_commitment), which would trigger the deletion duty for data a study has already pulled.",
+  "sources": [
+   {
+    "url": "https://www.polar.com/en/legal/polar-api-agreement",
+    "type": "vendor_legal",
+    "quote": "revoke the token issued by Polar to access the Member’s account(s), and delete related token(s) from Your database(s) and server(s)",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/legal/polar-api-agreement",
+    "type": "vendor_legal",
+    "quote": "You shall destroy and delete all copies of the Licensed Materials and Data.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/legal/data-notice",
+    "type": "vendor_legal",
+    "quote": "By default, your data is retained as long as your Flow account remains active.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/legal/data-notice",
+    "type": "vendor_legal",
+    "quote": "Data is retained for 180 days after the license period ends, unless the organization requests earlier deletion.",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "retention_terms",
+  "status": "stated",
+  "scope": "BLE SDK licence",
+  "value": "The licence runs until terminated on 90 days' written notice (the clause reads \"terminated by Polar by either Party\"); Polar may also terminate immediately for a material breach not cured within 7 days, or on the licensee's insolvency. On termination for any reason the licensee must stop using the SDK and delete all copies of the SDK and of Polar's Confidential Information. The clause does not name participant Data collected through the SDK, unlike the API agreement.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "note": "The garbled wording of clause 10.2 is Polar's own; it is quoted as written. The profile's \"no API deprecation risk on the raw-data path\" should allow for this notice-based termination.",
+  "sources": [
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk/blob/master/Polar_SDK_License.txt",
+    "fetch_url": "https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/Polar_SDK_License.txt",
+    "type": "vendor_legal",
+    "quote": "This Agreement shall remain in force until terminated by Polar by either Party by providing a ninety (90) days prior written notice to the other Party.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk/blob/master/Polar_SDK_License.txt",
+    "fetch_url": "https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/Polar_SDK_License.txt",
+    "type": "vendor_legal",
+    "quote": "for any material breach of Agreement, that is not cured within seven (7) days of receipt by You of a written notice specifying the breach and requiring its cure",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk/blob/master/Polar_SDK_License.txt",
+    "fetch_url": "https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/Polar_SDK_License.txt",
+    "type": "vendor_legal",
+    "quote": "You shall cease the use of Licensed Materials and Confidential Information and any of its rights under Section 3, and destroy and delete all copies of the Licensed Materials and Confidential Information.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "polar",
   "name": "Polar",
   "kind": "wearable",
   "field": "ai_training_terms",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "scope": "API and SDK licensees",
+  "confidence": "Corroborated",
+  "recheck_by": "2026-11-09",
+  "note": "Neither the API agreement (updated 22 August 2025) nor the SDK licence mentions AI or machine-learning use of the data by licensees.",
+  "sources": [
+   {
+    "url": "https://www.polar.com/en/legal/polar-api-agreement",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk/blob/master/Polar_SDK_License.txt",
+    "fetch_url": "https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/Polar_SDK_License.txt",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "ai_training_terms",
+  "status": "stated",
+  "scope": "Polar's own use of user data",
+  "value": "Polar uses customer data internally for R&D, including developing and testing new algorithms, with identifiers removed as far as possible; users can opt out in Polar Flow or account.polar.com. No explicit AI or ML wording.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://www.polar.com/en/legal/privacy-notice",
+    "type": "vendor_legal",
+    "quote": "New algorithms are being developed and tested, and customer mass data is being used to, for example, find anomalies in the features or to find devices that may not work properly.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/legal/privacy-notice",
+    "type": "vendor_legal",
+    "quote": "We may use some of the data in research and development work to improve our services, but for such purposes data is cleared from identifiers to the maximum amount possible.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/legal/privacy-notice",
+    "type": "vendor_legal",
+    "quote": "You can opt out from handling of your data for research and development purposes at Polar Flow or account.polar.com services",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/legal/data-notice",
+    "type": "vendor_legal",
+    "quote": "Polar may use your personal and non-personal data internally for research and development purposes to enhance technologies, develop new products, and improve services.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "polar",
   "name": "Polar",
   "kind": "wearable",
   "field": "deprecations",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "scope": "AccessLink API",
+  "value": "Transactional endpoints for Exercises and Daily activity deprecated on 18.08.2025, and for Physical info on 13.01.2026, in favour of new non-transactional endpoints. No removal date published.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://www.polar.com/accesslink-api/",
+    "type": "vendor_docs",
+    "quote": "Transactional endpoint for Daily activity is deprecated Transactional endpoint for Exercises is deprecated",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/accesslink-api/",
+    "type": "vendor_docs",
+    "quote": "Transactional endpoint for Physical info is deprecated",
+    "retrieved": "2026-10-11"
+   }
+  ]
+ },
+ {
+  "company": "polar",
+  "name": "Polar",
+  "kind": "wearable",
+  "field": "deprecations",
+  "status": "stated",
+  "scope": "BLE SDK",
+  "value": "Breaking major releases in 2026: 7.0.0 (2026-04-15) moved Android from RxJava to Kotlin Flow, and 8.0.0 (2026-05-27) moved iOS from RxSwift to Combine and Swift Concurrency; both need app changes. 8.4.0 (2026-10-01) says the next major release, 9.0.0, will add Xcode 27 support, which drops pre-iOS 15, and asks users to move off CocoaPods, which goes read-only by 2 December 2026.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-09",
+  "sources": [
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk/releases/tag/7.0.0",
+    "type": "repository",
+    "quote": "This is a major release due to major changes to Android SDK.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk/releases/tag/8.0.0",
+    "type": "repository",
+    "quote": "Note that your app requires some work to accommodate to these changes.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk/releases/tag/8.4.0",
+    "type": "repository",
+    "quote": "we will add the support for Xcode 27 in the next SDK major release (9.0.0)",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://github.com/polarofficial/polar-ble-sdk/releases/tag/8.4.0",
+    "type": "repository",
+    "quote": "CocoaPods will change its repository to read-only by December 2nd 2026",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "polar",
   "name": "Polar",
   "kind": "wearable",
   "field": "baa",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-08",
+  "note": "No BAA or HIPAA mention on any page checked.",
+  "sources": [
+   {
+    "url": "https://www.polar.com/en/legal/privacy-notice",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/legal/data-notice",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/legal/polar-api-agreement",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/legal/terms-of-use",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/business/science",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "polar",
   "name": "Polar",
   "kind": "wearable",
   "field": "dpa",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "For B2B services (Team Pro, and per the privacy notice GoFit) the customer signs an agreement under which Polar is the data processor and the customer the controller; that agreement is not published. No DPA applies to AccessLink, where Polar and the API developer are each controllers, or to the BLE SDK, where the licensee alone is responsible for the data.",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-08",
+  "sources": [
+   {
+    "url": "https://www.polar.com/en/legal/privacy-notice",
+    "type": "vendor_legal",
+    "quote": "When a team buys Polar Team Pro, it signs an agreement with Polar on the use of the service. Under this agreement, Polar acts as the data processor while the team is the data controller.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/legal/polar-api-agreement",
+    "type": "vendor_legal",
+    "quote": "When using AccessLink, You (or the relevant Corporate Customer as the case may be) shall also be data controller",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/legal/polar-service-providers",
+    "type": "vendor_legal",
+    "quote": "If Polar is a Processor, the service provider is a Sub-processor.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "polar",
   "name": "Polar",
   "kind": "wearable",
   "field": "hipaa_statement",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-08",
+  "sources": [
+   {
+    "url": "https://www.polar.com/en/legal/privacy-notice",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/legal/privacy",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/legal/terms-of-use",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/legal/polar-api-agreement",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "polar",
   "name": "Polar",
   "kind": "wearable",
   "field": "gdpr_statement",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Polar says it complies with the GDPR. Polar Electro Oy (Finland) is the controller for Polar Flow data, AccessLink developers are also controllers for the data they receive, and for Team Pro Polar is the processor. Transfers outside the EU/EEA use the EU-US, UK-US and Swiss-US Data Privacy Frameworks or standard contractual clauses. A separate Data Notice covers the EU Data Act.",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-08",
+  "note": "DPF participation was not checked on the Commerce Department registry.",
+  "sources": [
+   {
+    "url": "https://www.polar.com/en/legal/privacy",
+    "type": "vendor_legal",
+    "quote": "Polar complies with the EU GDPR regulation",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/legal/polar-api-agreement",
+    "type": "vendor_legal",
+    "quote": "In case of Polar Flow, Polar is data controller as defined in General Data Protection Regulation of the European Union",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/legal/privacy-notice",
+    "type": "vendor_legal",
+    "quote": "we apply the terms of the EU-U.S. Data Privacy Framework (DPF), U.K.-U.S. Data Privacy Framework and Swiss-U.S. Data Privacy Framework, or those of the agreements based on European Commission’s standard contractual clauses.",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/legal/data-notice",
+    "type": "vendor_legal",
+    "quote": "We are committed to ensuring transparency, security, and compliance with the European Union’s Data Act (2023/2854) in how we manage your data.",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "polar",
   "name": "Polar",
   "kind": "wearable",
   "field": "iso27001",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-08",
+  "note": "Polar publishes only quality and environmental certificates: ISO 9001:2015 for Polar Electro Oy (Kiwa, issued 2025-06-25, valid until 2028-08-31) and ISO 14001:2015 for the Malaysian manufacturing subsidiary (SGS, valid 2024-01-08 to 2027-01-07). No ISO/IEC 27001 certificate or claim was found. The 9001 quote is the certificate's scope, given as evidence of what Polar does certify.",
+  "sources": [
+   {
+    "url": "https://polar.com/img/documents/iso/ISO_9001_Certification_PEOY_en.pdf",
+    "type": "certificate",
+    "quote": "complies with the requirements of the standard ISO 9001:2015",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/img/documents/iso/PEM_ISO_14001_2015_certification.pdf",
+    "type": "certificate",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/legal/privacy-notice",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/legal/polar-service-providers",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/business",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "polar",
   "name": "Polar",
   "kind": "wearable",
   "field": "soc2",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-08",
+  "sources": [
+   {
+    "url": "https://www.polar.com/en/legal/privacy-notice",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/legal/polar-service-providers",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/business",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/business/developers",
+    "type": "vendor_page",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "polar",
   "name": "Polar",
   "kind": "wearable",
   "field": "fda_clearances",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Verified",
+  "recheck_by": "2027-01-08",
+  "note": "No 510(k), PMA or establishment registration for Polar Electro in openFDA (an applicant:polar 510(k) search returns only unrelated firms). The SDK licence says the SDK and devices are not intended for medical use, and the wrist ECG is labelled not for medical or diagnostic use.",
+  "sources": [
+   {
+    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm",
+    "type": "regulator_db",
+    "fetch_url": "https://api.fda.gov/device/510k.json?search=applicant:\"polar+electro\"",
+    "expect_absent": true,
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm",
+    "type": "regulator_db",
+    "fetch_url": "https://api.fda.gov/device/pma.json?search=applicant:\"polar+electro\"",
+    "expect_absent": true,
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRL/rl.cfm",
+    "type": "regulator_db",
+    "fetch_url": "https://api.fda.gov/device/registrationlisting.json?search=registration.owner_operator.firm_name:\"polar+electro\"",
+    "expect_absent": true,
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "polar",
   "name": "Polar",
   "kind": "wearable",
   "field": "data_residency",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Polar Flow and Team Pro service data is stored on Polar's servers in the EU (Ireland and Sweden), hosted on AWS in the EU; email addresses or user IDs may go to service providers outside the EU for notifications and error reporting. No customer choice of region is offered. BLE SDK data never passes through Polar unless the device also syncs to Polar Flow.",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-08",
+  "note": "\"No customer choice of region\" is inferred from the absence of any residency option.",
+  "sources": [
+   {
+    "url": "https://www.polar.com/en/legal/data-notice",
+    "type": "vendor_legal",
+    "quote": "Polar Flow service data is stored on Polar’s servers in the EU (Ireland and Sweden).",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/legal/privacy-notice",
+    "type": "vendor_legal",
+    "quote": "The actual service data (your account details and the data coming from your Polar devices) is stored on servers located in the EU/EEA area; Ireland and Sweden",
+    "retrieved": "2026-10-11"
+   },
+   {
+    "url": "https://www.polar.com/en/legal/polar-service-providers",
+    "type": "vendor_legal",
+    "quote": "AWS Amazon Data hosting all when created EU",
+    "retrieved": "2026-10-11"
+   }
+  ]
  },
  {
   "company": "ringconn",
