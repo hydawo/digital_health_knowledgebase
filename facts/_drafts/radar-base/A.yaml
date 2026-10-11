@@ -1,0 +1,581 @@
+# Draft record for radar-base, researcher A, 2026-10-10. Schema: facts/_schema.yaml
+name: RADAR-base (and The Hyve hosting)
+kind: platform
+profile: module-02-digital-phenotyping/profiles/radar-base.md
+watch:
+- url: https://www.thehyve.nl/services/radar-base-as-a-service
+  role: pricing
+- url: https://www.thehyve.nl/services/radar-base
+  role: research_program
+- url: https://radar-base.org/about/
+  role: other
+- url: https://radar-base.org/docs/4048-2/
+  role: docs
+- url: https://radar-base.org/docs/supported-devices/
+  role: docs
+- url: https://radar-base.org/getting-started-with-radar-base/
+  role: docs
+- url: https://github.com/RADAR-base/RADAR-Kubernetes
+  role: repository
+- url: https://radar-base.org/active-app-armt-privacy-policy/
+  role: terms
+- url: https://radar-base.org/google-privacy-policy/
+  role: terms
+- url: https://www.thehyve.nl/articles/the-hyve-iso-certified-2023
+  role: trust
+- url: https://play.google.com/store/apps/details?id=org.radarcns.detail&hl=en_US
+  role: app_store
+- url: https://play.google.com/store/apps/details?id=org.phidatalab.radar_armt&hl=en_US
+  role: app_store
+- url: https://apps.apple.com/gb/app/radar-active-rmt/id1483953055
+  role: app_store
+- url: https://radar-base.org/posts/news/
+  role: changelog
+facts:
+- field: research_program
+  status: stated
+  value: No vendor research program as such; RADAR-base is open-source research software. The commercial route is The Hyve's
+    RADAR-base as a Service (installation, cloud hosting, training, maintenance and support)
+  confidence: Verified
+  sources:
+  - url: https://www.thehyve.nl/services/radar-base-as-a-service
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: We offer an all-inclusive, fully managed solution to use RADAR-base in your remote patient-monitoring studies
+  - url: https://radar-base.org/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: All components are available as open source software under an Apache 2 license.
+  recheck_by: '2026-11-09'
+  note: The Hyve describes itself as the only service provider of the platform. Community support is via Slack, GitHub
+    and a help desk.
+- field: program_eligibility
+  status: stated
+  value: Open source, so anyone may self-host. The Hyve's service addresses pharma and academic researchers and CROs; no
+    formal eligibility criteria are published
+  confidence: Verified
+  sources:
+  - url: https://www.thehyve.nl/services/radar-base
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Are you a researcher in pharma or academia or a CRO setting-up a new observational study or decentralized trial
+      to identify digital biomarkers?
+  - url: https://radar-base.org/docs/prmt/
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: This means that you are free to access and use all functionalities of the platform on a self-service basis
+      without incurring any licensing costs from a software provider.
+  recheck_by: '2026-11-09'
+- field: program_application
+  status: stated
+  value: 'Self-hosting: no application, install from the public repositories. Managed service: inquiry form to The Hyve,
+    set-up in 2 to 4 weeks'
+  confidence: Verified
+  sources:
+  - url: https://www.thehyve.nl/services/radar-base-as-a-service
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Get in touch to explore how RADAR-base as a Service can optimally facilitate your research study.
+  - url: https://www.thehyve.nl/services/radar-base-as-a-service
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Within 2 to 4 weeks we can set up the platform
+  recheck_by: '2026-11-09'
+- field: program_status
+  status: stated
+  value: Active. Repositories updated in October 2026, managed service page live, 2026 symposium held
+  confidence: Verified
+  sources:
+  - url: https://radar-base.org/posts/news/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: 'RADAR-base Symposium 2026: Innovation, Impact & the Future of Mobile Health'
+  - url: https://www.thehyve.nl/services/radar-base-as-a-service
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: The Hyve is one of the core creators, contributors and the only service provider of the platform.
+  recheck_by: '2026-11-09'
+  note: GitHub API on 2026-10-10 showed RADAR-Kubernetes, ManagementPortal, RADAR-Schemas and radar-commons-android pushed
+    in October 2026.
+- field: developer_program_status
+  status: stated
+  value: Open source and open to all; community support is voluntary and best-effort
+  confidence: Verified
+  sources:
+  - url: https://github.com/RADAR-base/RADAR-Kubernetes
+    type: repository
+    retrieved: '2026-10-10'
+    quote: The RADAR-base developers support the community on a voluntary basis and will pick up your requests as time
+      permits.
+  recheck_by: '2026-11-09'
+- field: user_cap
+  status: stated
+  value: No licence cap. The managed service allows unlimited studies and participants but runs on a single server and
+    is described as ideal for studies of up to 200 participants
+  confidence: Verified
+  sources:
+  - url: https://www.thehyve.nl/services/radar-base-as-a-service
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Unlimited number of studies or participants can be included.
+  - url: https://www.thehyve.nl/services/radar-base-as-a-service
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Studies with a maximum of 200 participants are ideal for this setup.
+  recheck_by: '2026-11-09'
+  scope: RADAR-base as a Service
+- field: academic_vs_commercial
+  status: stated
+  value: Same Apache 2 software for academic and commercial users, with no licence cost; any difference in The Hyve's
+    service terms for academic versus commercial clients is not published
+  confidence: Verified
+  sources:
+  - url: https://www.thehyve.nl/services/radar-base
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: The RADAR-base stack is published under an open-source license and therefore free of license costs.
+  recheck_by: '2026-11-09'
+- field: device_price
+  status: not_applicable
+  recheck_by: '2026-11-09'
+  note: RADAR-base sells no hardware. Phones are participant-owned or study-provided, and wearables (Fitbit, Garmin,
+    Oura, Polar, Empatica and others) are bought from their makers.
+- field: subscription_price
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.thehyve.nl/services/radar-base-as-a-service
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://www.thehyve.nl/services/radar-base
+    type: vendor_page
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+  scope: RADAR-base as a Service
+  note: The Hyve calls the managed service a subscription model but publishes no price. There is no consumer subscription.
+- field: academic_pricing
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.thehyve.nl/services/radar-base-as-a-service
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://www.thehyve.nl/services/radar-base
+    type: vendor_page
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+- field: api_platform_fees
+  status: stated
+  value: None for the software; all components are Apache 2 and free of licence cost. Hosting, support and development
+    from The Hyve are paid services
+  confidence: Verified
+  sources:
+  - url: https://www.thehyve.nl/services/radar-base
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: The RADAR-base stack is published under an open-source license and therefore free of license costs.
+  recheck_by: '2026-11-09'
+- field: minimum_commitment
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.thehyve.nl/services/radar-base-as-a-service
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://www.thehyve.nl/services/radar-base
+    type: vendor_page
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+  scope: RADAR-base as a Service
+- field: quote_required
+  status: stated
+  value: Yes for The Hyve's managed service (inquiry form); self-hosting needs no quote
+  confidence: Verified
+  sources:
+  - url: https://www.thehyve.nl/services/radar-base-as-a-service
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Get in touch to explore how RADAR-base as a Service can optimally facilitate your research study.
+  recheck_by: '2026-11-09'
+- field: hosting_price
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.thehyve.nl/services/radar-base-as-a-service
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://www.thehyve.nl/services/radar-base
+    type: vendor_page
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+  note: Self-hosting cost is the team's own infrastructure. RADAR-Kubernetes states minimum requirements of 8 vCPU, 32
+    GB memory and 200 GB storage for a single node.
+- field: raw_streams
+  status: stated
+  value: 'Android pRMT app: phone accelerometer, gyroscope, magnetometer, relative location, light, steps, Bluetooth counts,
+    calls and SMS metadata (hashed numbers), app usage, battery, and Bluetooth wearables (Empatica E4, Polar). REST connectors:
+    Fitbit, Garmin, Oura cloud data. HealthKit via the aRMT app. iOS passive collection is sparser'
+  confidence: Verified
+  sources:
+  - url: https://radar-base.org/docs/4048-2/
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: Collects the raw acceleration values from the 3-axis accelerometer with the gravitational constant
+  - url: https://radar-base.org/about/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: In addition, RADAR-base supports integration with third-party REST APIs (e.g. Fitbit, Garmin) and IoT sensors
+  - url: https://radar-base.org/docs/supported-devices/
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: 'RADAR-base Integration: via Active App HealthKit Plugin'
+  - url: https://radar-base.org/docs/4048-2/
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: these may be more sparse in iOS due to lack of background collection capabilities
+  recheck_by: '2026-11-09'
+  note: Location is stored only as coordinates relative to a hidden per-participant offset; no absolute location reaches
+    the server.
+- field: derived_metrics
+  status: stated
+  value: Platform computes time-windowed aggregates and data-quality and compliance monitors (Kafka Streams) for dashboards;
+    vendor-derived metrics (for example sleep, readiness, stress) arrive through the REST connectors. No built-in behavioural
+    feature library is documented
+  confidence: Verified
+  sources:
+  - url: https://radar-base.org/docs/concepts-and-components-of-radar-base/
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: to compute aggregated values of published data based on various time windows and to monitor data quality and
+      compliance
+  - url: https://radar-base.org/docs/supported-devices/
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: Readiness Score
+  recheck_by: '2026-11-09'
+- field: sampling_rates
+  status: stated
+  value: 'Android phone defaults: accelerometer, gyroscope and magnetometer about every 200 ms; Bluetooth devices hourly;
+    contact list daily; weather every 3 hours; light and battery on change. Configurable per study'
+  confidence: Verified
+  sources:
+  - url: https://radar-base.org/docs/4048-2/
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: By default, the values are collected in roughly 200 millisecond intervals.
+  - url: https://radar-base.org/docs/4048-2/
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: By default, the data is collected every hour.
+  recheck_by: '2026-11-09'
+- field: history_depth
+  status: stated
+  value: Phone data starts at enrolment. For REST wearable sources, staff set start and end dates per participant and
+    can reset to re-pull data between dates; how far back each vendor API allows is not stated
+  confidence: Verified
+  sources:
+  - url: https://radar-base.org/docs/radar-rest-source-auth/
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: to re-pull all the data between particular dates or to change the start and end dates
+  recheck_by: '2026-11-09'
+- field: export_routes
+  status: stated
+  value: Raw data exported from cold storage as Avro, JSON or CSV per project, participant, topic and hour; aggregated
+    data via the REST API; manual file upload via the Upload Connector; dashboards
+  confidence: Verified
+  sources:
+  - url: https://radar-base.org/getting-started-with-radar-base/
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: exporting raw data for analysis in multiple formats, including AVRO, JSON, and CSV
+  - url: https://radar-base.org/docs/concepts-and-components-of-radar-base/
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: RADAR-REST-API component of RADAR-base, provides interfaces to access the aggregated data stored in MongoDB.
+  recheck_by: '2026-11-09'
+- field: rate_limits
+  status: not_applicable
+  recheck_by: '2026-11-09'
+  note: Self-hosted software with no central RADAR-base API, so there is no platform rate limit. Upstream vendor API limits
+    (Fitbit, Garmin, Oura) still apply to the REST connectors.
+- field: retention_terms
+  status: stated
+  value: Data kept for the study's duration under the deployment owner's policies; on written request study data is deleted,
+    including from backups, generally within 60 days. On a self-hosted deployment the deployment owner controls retention
+    and deletion
+  confidence: Verified
+  sources:
+  - url: https://radar-base.org/active-app-armt-privacy-policy/
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: securely delete study data and remove it from system backups, generally within 60 days unless otherwise legally
+      required to retain it
+  - url: https://radar-base.org/active-app-armt-privacy-policy/
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: Requests to delete data should be made by the PROJECT OWNER and carried out by the DEPLOYMENT OWNER.
+  recheck_by: '2026-11-09'
+- field: ai_training_terms
+  status: stated
+  value: Google Health data collected through RADAR-base is not used to train generalised AI or ML models
+  confidence: Verified
+  sources:
+  - url: https://radar-base.org/google-privacy-policy/
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: No training of generalised AI/ML models.
+  recheck_by: '2026-11-09'
+  scope: Google Health API integration
+- field: ai_training_terms
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://radar-base.org/active-app-armt-privacy-policy/
+    type: vendor_legal
+    retrieved: '2026-10-10'
+  - url: https://www.thehyve.nl/services/radar-base-as-a-service
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://www.thehyve.nl/privacy
+    type: vendor_legal
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+  scope: Platform and The Hyve managed service
+  note: Study data belongs to the deployment owner; no AI-training term for The Hyve as host is published.
+- field: deprecations
+  status: stated
+  value: RADAR-Docker deployment deprecated in favour of RADAR-Kubernetes (announced for end of 2021)
+  confidence: Verified
+  sources:
+  - url: https://github.com/RADAR-base/RADAR-Docker
+    type: repository
+    retrieved: '2026-10-10'
+    quote: Please note that the RADAR-Docker stack is not actively maintained and will be deprecated by the end of 2021.
+  recheck_by: '2026-11-09'
+  scope: Deployment
+- field: deprecations
+  status: stated
+  value: Faros, Biovotion and Pebble 2 device integrations marked deprecated
+  confidence: Verified
+  sources:
+  - url: https://radar-base.org/docs/supported-devices/
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: 'Notice: Deprecated Device'
+  recheck_by: '2026-11-09'
+  scope: Device integrations
+- field: licence
+  status: stated
+  value: Apache 2.0 for all components (platform, Management Portal, Android pRMT, aRMT, Kubernetes stack)
+  confidence: Verified
+  sources:
+  - url: https://radar-base.org/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: All components are available as open source software under an Apache 2 license.
+  - url: https://raw.githubusercontent.com/RADAR-base/RADAR-Kubernetes/main/LICENSE
+    type: repository
+    retrieved: '2026-10-10'
+    quote: Apache License Version 2.0, January 2004
+  - url: https://raw.githubusercontent.com/RADAR-base/radar-prmt-android/master/LICENSE
+    type: repository
+    retrieved: '2026-10-10'
+    quote: Apache License Version 2.0, January 2004
+  - url: https://raw.githubusercontent.com/RADAR-base/radar-questionnaire/master/LICENSE
+    type: repository
+    retrieved: '2026-10-10'
+    quote: Apache License Version 2.0, January 2004
+  recheck_by: '2026-11-09'
+- field: hosting_options
+  status: stated
+  value: 'Self-host on any Kubernetes cluster (RADAR-Kubernetes, Helm; Terraform for AWS EKS), on-premise or cloud, with
+    optional managed Kafka, Postgres and S3 or Azure blob storage. Managed: The Hyve hosts a dedicated instance per client
+    on a public cloud of the client''s choice, or on-premise'
+  confidence: Verified
+  sources:
+  - url: https://github.com/RADAR-base/RADAR-Kubernetes
+    type: repository
+    retrieved: '2026-10-10'
+    quote: Minimum requirements for a single node
+  - url: https://github.com/RADAR-base/RADAR-Kubernetes
+    type: repository
+    retrieved: '2026-10-10'
+    quote: Even though, RADAR-Kubernetes is being used in few production environments, it is still in its early stage of
+      development.
+  - url: https://www.thehyve.nl/services/radar-base-as-a-service
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Hosting the platform on a public cloud of your choice
+  - url: https://www.thehyve.nl/services/radar-base
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: If desired, The Hyve can host RADAR-base and make sure the platform runs in a secure and private Cloud environment
+      or on-premise.
+  recheck_by: '2026-11-09'
+  note: Self-hosting needs Kubernetes and Helm expertise, a DNS server and an SMTP server.
+- field: app_availability
+  status: stated
+  value: Passive app (RADAR passive RMT, by The Hyve) on Google Play for Android only
+  confidence: Verified
+  sources:
+  - url: https://play.google.com/store/apps/details?id=org.radarcns.detail&hl=en_US
+    type: app_store
+    retrieved: '2026-10-10'
+    quote: Passive data collection from wearables and phone sensors for clinical studies
+  recheck_by: '2026-11-09'
+  scope: pRMT (passive) Android
+  note: The Play data-safety section, as declared by the developer, says the data is not encrypted and cannot be deleted.
+- field: app_availability
+  status: stated
+  value: No passive app on the iOS App Store; the iOS pRMT repository is work in progress, records location only and sends
+    nothing to a server (last pushed June 2023)
+  confidence: Verified
+  sources:
+  - url: https://github.com/RADAR-base/radar-prmt-ios
+    type: repository
+    retrieved: '2026-10-10'
+    quote: The app is work in progress, and only records location data without sending it to a server.
+  recheck_by: '2026-11-09'
+  scope: pRMT (passive) iOS
+  note: App Store searches for "passive RMT", "RADAR pRMT", "RADAR passive" and "RADAR-base" (gb, us, nl) on 2026-10-10
+    found only the active app.
+- field: app_availability
+  status: stated
+  value: Active app (RADAR active RMT) on Google Play and the iOS App Store (iOS 16.0 or later; listed under Onsentia Limited
+    on iOS, PhiDataLab on Android)
+  confidence: Verified
+  sources:
+  - url: https://play.google.com/store/apps/details?id=org.phidatalab.radar_armt&hl=en_US
+    type: app_store
+    retrieved: '2026-10-10'
+    quote: The active remote monitoring app of the RADAR-base platform.
+  - url: https://apps.apple.com/gb/app/radar-active-rmt/id1483953055
+    type: app_store
+    retrieved: '2026-10-10'
+    quote: Requires iOS 16.0 or later.
+  recheck_by: '2026-11-09'
+  scope: aRMT (active) Android and iOS
+  note: The docs still say iOS 11 minimum; the App Store listing says iOS 16.
+- field: baa
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.thehyve.nl/services/radar-base-as-a-service
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://www.thehyve.nl/privacy
+    type: vendor_legal
+    retrieved: '2026-10-10'
+  - url: https://radar-base.org/active-app-armt-privacy-policy/
+    type: vendor_legal
+    retrieved: '2026-10-10'
+  recheck_by: '2027-01-08'
+  note: No mention of HIPAA or a BAA on RADAR-base or The Hyve pages; the managed service is EU and GDPR oriented.
+- field: dpa
+  status: stated
+  value: The Hyve draws up a Data Processing Agreement when it keeps managing the platform after the initial service period
+    or has access to sensitive data
+  confidence: Corroborated
+  sources:
+  - url: https://www.thehyve.nl/services/radar-base-as-a-service
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: a Data Processing Agreement (DPA) will be drawn up if The Hyve continues to manage the platform after the initial
+      service period or have access to sensitive data
+  recheck_by: '2027-01-08'
+  scope: RADAR-base as a Service
+- field: hipaa_statement
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://radar-base.org/about/
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://www.thehyve.nl/services/radar-base-as-a-service
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://radar-base.org/active-app-armt-privacy-policy/
+    type: vendor_legal
+    retrieved: '2026-10-10'
+  recheck_by: '2027-01-08'
+- field: gdpr_statement
+  status: stated
+  value: Managed instances are hosted in a GDPR-compliant public cloud at a location the client chooses; the client owns
+    the data. For self-hosted deployments the deployment and project owners carry responsibility
+  confidence: Corroborated
+  sources:
+  - url: https://www.thehyve.nl/services/radar-base-as-a-service
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: hosted in a GDPR compliant public cloud infrastructure located at the choice of the client
+  - url: https://radar-base.org/active-app-armt-privacy-policy/
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: By using RADAR-base the PROJECT OWNER and/or the DEPLOYMENT OWNER accept all responsibility and liabilities for
+      data collection, storage, sharing and use of RADAR-base.
+  recheck_by: '2027-01-08'
+- field: iso27001
+  status: stated
+  value: The Hyve reports ISO 27001:2022 certification (first certified 2017), scope including development, hosting and
+    support of open-source software; no certificate or registry entry found
+  confidence: Corroborated
+  sources:
+  - url: https://www.thehyve.nl/articles/the-hyve-iso-certified-2023
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: 'In 2023, we received the new and updated 27001:2022 certificate, which validates our compliance with the latest
+      security requirements within our scope: the development, hosting, and support of open-source software, consultancy,
+      and biomedical informatics data analysis services.'
+  recheck_by: '2027-01-08'
+  scope: The Hyve B.V.
+  note: The announcement is dated 2023-12-05; current validity not confirmed. Do not confuse with Hyve Managed Hosting
+    (UK), a different company with its own ISO 27001 certificate. Self-hosted deployments inherit no certification.
+- field: soc2
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.thehyve.nl/services/radar-base-as-a-service
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://www.thehyve.nl/articles/the-hyve-iso-certified-2023
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://radar-base.org/about/
+    type: vendor_page
+    retrieved: '2026-10-10'
+  recheck_by: '2027-01-08'
+- field: fda_clearances
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://api.fda.gov/device/510k.json?search=device_name:"radar-base"
+    type: regulator_db
+    retrieved: '2026-10-10'
+  - url: https://api.fda.gov/device/510k.json?search=applicant:"hyve"
+    type: regulator_db
+    retrieved: '2026-10-10'
+  - url: https://api.fda.gov/device/registrationlisting.json?search=firm_name:"hyve"
+    type: regulator_db
+    retrieved: '2026-10-10'
+  - url: https://api.fda.gov/device/pma.json?search=applicant:"hyve"
+    type: regulator_db
+    retrieved: '2026-10-10'
+  recheck_by: '2027-01-08'
+  note: All openFDA queries (also applicant "king's college", applicant "onsentia", registration proprietary_name "radar-base")
+    returned no matches on 2026-10-10. RADAR-base is research software, not a cleared device.
+- field: data_residency
+  status: stated
+  value: Self-hosted wherever the deployment owner installs it. The Hyve's managed service lets the client choose the cloud
+    location. The KCL-run Google Health integration stores data in AWS eu-west-2 (London) or university infrastructure
+  confidence: Verified
+  sources:
+  - url: https://www.thehyve.nl/services/radar-base-as-a-service
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: hosted in a GDPR compliant public cloud infrastructure located at the choice of the client
+  - url: https://radar-base.org/google-privacy-policy/
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: hosted either in AWS eu-west-2 (London) or university infrastructure
+  recheck_by: '2027-01-08'

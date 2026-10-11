@@ -170,6 +170,11 @@ def fetch(url, retries=1):
                 ctype = r.headers.get('Content-Type', '')
             return {'status': 'ok', 'http': 200, 'text': _body_to_text(body, ctype, url), 'error': None}
         except urllib.error.HTTPError as e:
+            if e.code == 404 and host == 'api.fda.gov':
+                # openFDA answers a search with no results as 404 + {"error": {"code": "NOT_FOUND"}}: a valid negative result
+                body = e.read().decode('utf8', 'ignore')
+                if 'NOT_FOUND' in body:
+                    return {'status': 'ok', 'http': 404, 'text': body, 'error': None}
             if e.code in (404, 410) and host not in FALSE_404_HOSTS:
                 return {'status': 'dead', 'http': e.code, 'text': None, 'error': str(e)}
             err = {'status': 'unreachable', 'http': e.code, 'text': None, 'error': str(e)}
