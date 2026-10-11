@@ -7,6 +7,10 @@ says Unclear rather than guessing. Dates in cells are the date the profile recor
 Vendor statements about a vendor's own certifications are Corroborated at most unless a certificate or
 registry entry was read; none was read for any Module 2 platform.
 
+**Updated 2026-10-11.** The Beiwe and RADAR-base cells were corrected against their committed vendor
+fact records (`../facts/beiwe.yaml`, `../facts/radar-base.yaml`). Those cells carry the records' dates
+(facts checked 2026-10-10). See the change list at the end.
+
 Scope: ten current platforms with full profiles (Beiwe, RADAR-base, mindLAMP, AWARE Framework, Avicenna
 Research, MetricWire, m-Path, CARP Mobile Sensing, LifeData, Evidation), plus Purple Robot and
 StudentLife from `profiles/legacy-and-adjacent-platforms.md` where a row is useful. LifeData and
@@ -40,7 +44,7 @@ Multiple tables are used deliberately. Do not read any single table as a ranking
 
 | Platform | iOS client | Android client | iOS client maintained? | Parity |
 |---|---|---|---|---|
-| Beiwe | "Beiwe2" on the App Store (v2.5.11, 2026-09-30) | Native app; no Google Play listing could be confirmed on 2026-10-10 (Unclear) | Yes (beiwe-ios pushed 2026-10-07) | **No, Verified 2026-09-03 from the Beiwe wiki.** Calls, SMS, Wi-Fi and Bluetooth are Android only; power state is Android only per one wiki page and conflicting on iOS; magnetometer, proximity, device motion and reachability are iOS only |
+| Beiwe | "Beiwe2" on the App Store (v2.5.11, 2026-09-30) | APK sideloaded from each deployment's download link; no Google Play listing (Not Found in a browser and in Play search, 2026-10-10; Unclear) | Yes (beiwe-ios pushed 2026-10-07) | **No, Verified 2026-09-03 from the Beiwe wiki.** Calls, SMS (lab-distributed Android builds only), Wi-Fi and Bluetooth are Android only; power state is Android only per one wiki page and conflicting on iOS; magnetometer, proximity, device motion and reachability are iOS only |
 | RADAR-base | No maintained passive app: `radar-prmt-ios` is "work in progress" that "only records location data without sending it to a server". The questionnaire app "RADAR Active RMT" is on the App Store (2026-08-24) and reads HealthKit when opened | "RADAR passive RMT" (2026-06-18) and "RADAR active RMT" (2026-09-09) on Google Play | Active app yes; passive app no | **No.** Android passive catalogue of 17 streams Verified; current iOS phone-sensor capability Unclear (2019 chart and dormant repo conflict); platform docs say iOS sensors are "more sparse... due to lack of background collection capabilities" |
 | mindLAMP | "mindLAMP 2" on the App Store, last updated 2023-05-26 | "mindLAMP 2" on Google Play (2026-05-17) | Unclear: LAMP-core-ios pushed 2026-10-08, but the public App Store build dates from 2023 | Unclear (streams named without a per-OS breakdown) |
 | AWARE Framework | "AWARE Client V3" (v1.7.0, 2026-07-23) and "AWARE Client V2" on the App Store; needs the study's server URL | Not on Google Play; distributed from GitHub (sideloading) | Yes | **No, Verified 2026-10-10.** Website catalogue: 19 of 33 modules iOS-available, 14 Android only. The iOS repository also runs proximity and calls (call events only, no history). App usage, SMS, keyboard, light, screenshot and screentext are Android only |
@@ -104,8 +108,8 @@ RADAR-base (The Hyve, quote only), mindLAMP (BIDMC mindLAMP Core, priced by prop
 
 | Platform | Phone streams documented (OS split where the profile gives one) | Wearable and health-platform integration |
 |---|---|---|
-| Beiwe | Both OS: GPS, accelerometer, gyroscope, device information. Android only: calls, SMS, Wi-Fi, Bluetooth, screen and power state (power state on iOS is conflicting documentation). iOS only: magnetometer, proximity, device motion, reachability. Audio only through audio surveys | None documented in the profile |
-| RADAR-base | Android: 17 streams, including relative location, acceleration, gyration, magnetic field, light, step count, activity recognition, sleep events, lock/unlock, app usage, call and SMS logs (hashed), Bluetooth counts, battery, weather. iOS phone sensors Unclear | Garmin, Huawei, Empatica and others named as partners; The Hyve trains on Fitbit and Garmin; iOS reads 17 HealthKit types through the aRMT app when opened |
+| Beiwe | Both OS: GPS, accelerometer, gyroscope, device information. Android only: calls and SMS (lab-distributed builds only; the Google Play build has not collected them since 2.5.0), Wi-Fi, Bluetooth, screen and power state (power state on iOS is conflicting documentation). iOS only: magnetometer, proximity, device motion, reachability. Audio through audio surveys; Android also has an optional ambient audio stream, off by default, set per study | None documented in the profile |
+| RADAR-base | Android: 17 streams, including relative location, acceleration, gyration, magnetic field, light, step count, activity recognition, sleep events, lock/unlock, app usage, call and SMS logs (hashed), Bluetooth counts, battery, weather; audio features through an openSMILE plugin. iOS phone sensors Unclear | Shipped: Polar Vantage V3 and H10 and Empatica E4 (Bluetooth via pRMT; Empatica has retired the E4), Garmin and Oura (REST). The Fitbit REST route ends 2026-10-30, with no released Google Health ingest as of 2026-10-10. Huawei connector unreleased; no Health Connect. iOS reads 17 HealthKit types through the aRMT app when opened |
 | mindLAMP | GPS, accelerometer, gyroscope, screen time and calls named, without a per-OS breakdown; everything else Unclear | Steps, sleep and heart rate from a paired wearable (devices not itemized) |
 | AWARE Framework | 33 catalogue modules; 19 iOS-available. Includes location, accelerometer, gyroscope, magnetometer, barometer, battery, screen, network, Wi-Fi, Bluetooth on both; light, app usage, keyboard, SMS, telephony Android only | Fitbit module in the iOS framework; an Apple Watch (watchOS) framework; Android plugin coverage not itemized |
 | Avicenna Research | GPS on both; Bluetooth beaconing on Android (unreliable on iOS in one study); the rest Unclear | Wearables integrated per vendor; Garmin Health SDK (wrist-status stream) confirmed in the notifications reference |
@@ -122,9 +126,9 @@ RADAR-base (The Hyve, quote only), mindLAMP (BIDMC mindLAMP Core, priced by prop
 | Platform | Software cost | Hosting or service cost | Academic program or pricing | Pricing public? |
 |---|---|---|---|---|
 | Beiwe (self-hosted) | Free | Own AWS bill | Not applicable | No licence fee |
-| Beiwe (BSC) | Free (same code) | **$1,937 per month fixed plus $6 per Active Participant Month**; examples headed "FY24" ($24,144 and $25,044 reproduce from the formula; a for-profit example of $27,564 does not); rates revisable on 30 days' notice | Single rate card; no separate academic rate stated; "not a scientific collaboration" | **Yes** |
+| Beiwe (BSC) | Free (same code) | **$2,640 per month fixed plus $8.40 per Active Participant Month (FY26)**; examples $8,760 (N=100, L=1, T=3) and $73,440 for-profit (N=100, L=12, T=24), both reproduce from the formula; rates revisable on 30 days' notice; no minimum published; FY24 card ($1,937 + $6) superseded. An FY27 card may exist but was not published on 2026-10-10 | One rate structure for university and for-profit use (Corroborated, from the arithmetic); no separate academic rate published; "not a scientific collaboration" | **Yes** |
 | RADAR-base (self-hosted) | Free | Own infrastructure | Not applicable | No licence fee |
-| RADAR-base (The Hyve) | Free (same code) | Subscription, quote only | No academic tier published | **No** |
+| RADAR-base (The Hyve) | Free (same code) | Subscription, quote only (Corroborated: no price and an inquiry route); no minimum term published | No academic tier or price published | **No** |
 | mindLAMP | No licence fee identified | Self-hosting costs, or a BIDMC mindLAMP Core proposal (free first consultation) | No academic rate published; the Core names grant-funded projects as a fit | **No** |
 | AWARE Framework | Free | Own infrastructure; Open Collective donations | None | Not applicable |
 | Avicenna Research | Licence, non-public | Included in the licence | No academic rate found. A free trial exists for testing only (data wiped monthly, study deleted after one year) | **No** |
@@ -137,14 +141,18 @@ RADAR-base (The Hyve, quote only), mindLAMP (BIDMC mindLAMP Core, priced by prop
 Beiwe and m-Path are the only platforms with published prices. Among the public-source platforms, the
 BSC is the only hosted service with published rates.
 
+For Beiwe and RADAR-base, the generated, quote-backed version of this table is
+`../facts/_generated/research-and-access.md` (built from the vendor fact records; it covers batch 1
+so far).
+
 ---
 
 ## Table 7. Privacy, security and compliance
 
 | Platform | Documented security design | Compliance statements (confidence) |
 |---|---|---|
-| Beiwe | On-device, in-transit (RSA-AES) and at-rest encryption; PBKDF2/SHA-256 identifier hashing with per-installation keys; production-study setting (Verified) | HIPAA applicability acknowledged ("may interact with laws covering PII or PHI like HIPAA"), not a compliance claim. No GDPR, SOC 2 or ISO statement. BSC EU portal exists; EU storage location not stated |
-| RADAR-base | Self-hosting for in-hospital data custody; The Hyve hosts in "a GDPR compliant public cloud infrastructure located at the choice of the client"; DPA when The Hyve keeps managing or accesses data | No HIPAA, SOC 2 or ISO statement located |
+| Beiwe | On-device, in-transit (RSA-AES) and at-rest encryption; PBKDF2/SHA-256 identifier hashing with per-installation keys; production-study setting (Verified). Portal locks an account for 10 minutes after 10 failed logins (current code, Corroborated) | HIPAA applicability acknowledged ("may interact with laws covering PII or PHI like HIPAA"), not a compliance claim. No GDPR, SOC 2 or ISO statement; no BAA or DPA published. BSC EU portal exists; EU storage location not stated |
+| RADAR-base | Self-hosting for in-hospital data custody; The Hyve hosts in "a GDPR compliant public cloud infrastructure located at the choice of the client"; DPA when The Hyve keeps managing or accesses data. aRMT policy: deletion through the deployment owner, generally within 60 days. Google Health data in AWS eu-west-2 or university infrastructure, not used for AI training. The passive app's Play listing declares no encryption in transit, which contradicts the docs | **Corroborated (vendor-stated):** The Hyve states ISO 27001:2022 for The Hyve B.V.; the scope does not name RADAR-base and no certificate was found. No HIPAA or SOC 2 statement (2026-10-10) |
 | mindLAMP | The Core describes role-based access controls, audit logs and IRB/security-review language as part of its service | No HIPAA, SOC 2 or GDPR claim; the Division's privacy page makes none (checked 2026-10-10) |
 | AWARE Framework | Not established | Not located |
 | Avicenna Research | AES-256 at rest, TLS 1.2+ in transit, full-disk encryption; data in Canada (vendor-stated) | **Corroborated (vendor-stated):** ISO 27001:2022 stated (Nov 2024, surveillance audit Nov 2025), "through UKAS" with a CertCheck link that could not be read; HIPAA/GDPR/PIPEDA language; BAAs required for covered transactions. No SOC 2 or Part 11 |
@@ -155,7 +163,8 @@ BSC is the only hosted service with published rates.
 | Evidation | Corporate privacy notice (identifiers, device data, geolocation, CCPA opt-out); US data centres | No security or trust page (evidation.com/security and /trust return 404); compliance Unclear |
 
 No Module 2 platform has an independently confirmed certification. Three vendors (Avicenna Research,
-MetricWire, m-Path) make specific compliance statements; treat them as vendor claims to be checked
+MetricWire, m-Path) make specific compliance statements, and The Hyve states ISO 27001 for itself, not
+for RADAR-base by name; treat them as vendor claims to be checked
 against a certificate or audit report before relying on them.
 
 ---
@@ -164,7 +173,7 @@ against a certificate or audit report before relying on them.
 
 | Platform | Researcher dashboard | Monitoring and management documented | Background keepalive | Multi-study / multi-site |
 |---|---|---|---|---|
-| Beiwe | Yes (beiwe-backend portal) | Per-stream data-volume dashboard (being replaced by Tableau feeds); per-participant heartbeat, token and notification history; study and site admin roles | **Yes**: server push when the app has not checked in (default 1 hour), on by default since 2024 once servers are updated | One backend hosts multiple studies |
+| Beiwe | Yes (beiwe-backend portal) | Per-stream data-volume dashboard (an archived wiki page says it is being replaced by Tableau feeds; use the newer Tableau endpoint path); per-participant heartbeat, token and notification history; study and site admin roles | **Yes**: server push when the app has not checked in (default 1 hour), on by default since 2024 once servers are updated | One backend hosts multiple studies |
 | RADAR-base | Yes (ManagementPortal, maintained) | `DisconnectMonitor` emails researchers when a source stops sending | No participant-facing keepalive; researcher email only | Consortium origin; multi-site by design |
 | mindLAMP | Yes (LAMP-dashboard) | Core service includes role-based access, audit logs, uptime monitoring and study support | None found | Core claims 50+ active sites; multi-site deployments named as a fit |
 | AWARE Framework | Study configuration through AWARE-Configurator; no researcher dashboard confirmed | Unclear | iOS only, silent push, off by default | Unclear |
@@ -182,7 +191,7 @@ against a certificate or audit report before relying on them.
 | Platform | What sets it apart |
 |---|---|
 | **Beiwe** | The only public-source platform here whose managed hosting has published rates, offered by the lab that builds the software; a separate analysis package (Forest) with documented daily mobility, communication and survey metrics; and a server-side keepalive on by default |
-| **RADAR-base** | Kafka-based streaming architecture built for multi-site, multi-modal (phone, wearable, IoT) consortium studies, with named wearable partners (Garmin, Huawei, Empatica and others) |
+| **RADAR-base** | Kafka-based streaming architecture built for multi-site, multi-modal (phone, wearable, IoT) consortium studies, with a shipped wearable catalogue (Polar, Empatica E4, Garmin, Oura, HealthKit through the aRMT app; the Fitbit route ends 2026-10-30) |
 | **mindLAMP** | Explicit dual research and clinical-care orientation, cognitive tasks built in, and a builder-run hosted pathway (the mindLAMP Core); source-available rather than open source |
 | **AWARE Framework** | One of the longest-running, most plugin-extensible open-source sensing frameworks, with contributions from many academic groups; iOS on the App Store, Android by sideload |
 | **Avicenna Research** | A clinically oriented commercial feature set (TeleVisit, cognitive and behavioral tasks) and specific export formats (CSV, JSON, GEXF network graphs, KML location data) |
@@ -230,3 +239,11 @@ module" and Avicenna's "broadest" active-assessment set, which no benchmark supp
 - Table 7: Avicenna downgraded from Verified to Corroborated; MetricWire changed from "Not located" to vendor-stated ISO 27001, SOC 2 Type II, Part 11, HIPAA, GDPR; CARP GDPR roles added; mindLAMP privacy-page check added; Evidation row added.
 - Table 8: keepalive column added; CARP portal assessed as a real dashboard; Avicenna gap notifications added.
 - Tables 9 and 10: superlatives removed as listed under Table 9; Table 10 rows corrected for hosting and iOS sensing, and rows added for Evidation and iOS-heavy studies.
+
+## Cells changed on 2026-10-11 (vendor fact records, batch 1)
+
+- Table 2, Beiwe: Android column now says the APK is sideloaded from each deployment, Play listing still Unclear; parity cell notes SMS and calls come only from lab-distributed Android builds.
+- Table 5, Beiwe: call and SMS build caveat and the optional Android ambient audio stream added. RADAR-base: "named partners" replaced by the shipped device list, the Fitbit cutoff, the unreleased Huawei connector and no Health Connect; openSMILE audio features added.
+- Table 6: Beiwe BSC moved to the FY26 card ($2,640 + $8.40), FY24 marked superseded; RADAR-base (The Hyve) minimum term added; pointer to `../facts/_generated/research-and-access.md` added.
+- Table 7: Beiwe lockout, BAA and DPA added. RADAR-base now shows The Hyve's ISO 27001 self-claim (Corroborated), retention, residency, AI-training and Play-declaration details.
+- Table 9: RADAR-base "named wearable partners" replaced by the shipped catalogue.

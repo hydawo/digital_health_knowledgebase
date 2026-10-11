@@ -17,7 +17,7 @@ everything below as **Reported** unless explicitly marked otherwise, and verify 
 
 **Last verified:** 2026-08-21; Fitabase, Labfront, Fitrockr, Terra and Thryve pricing and access terms re-verified 2026-10-10.
 
-**Dated context, 2026-10-10.** Two vendor routes these platforms sit on top of are closed to new direct applicants: Google is "not onboarding new projects" on the Google Health API and turns the legacy Fitbit Web API off on 30 October 2026 (`fitbit-google.md`), and Garmin has paused new Connect Developer Program access requests since spring 2026 (Corroborated; `garmin.md`). For a new study, an intermediary that already holds access is currently the main way to reach Fitbit or Garmin data at all.
+**Dated context, 2026-10-10.** Two vendor routes these platforms sit on top of are closed to new direct applicants: Google is "not onboarding new projects" on the Google Health API and turns the legacy Fitbit Web API off on 30 October 2026 (`fitbit-google.md`), and Garmin has paused new Connect Developer Program access requests since spring 2026 (Corroborated; `garmin.md`). For a new study, an intermediary that already holds access is currently the main way to reach Garmin data. For Fitbit, unified APIs (Thryve, Validic) require each customer's own Google Cloud project, verified app and CASA (Corroborated). The Google Health app's writes to Apple Health and Health Connect give an on-device route with no Google Health API project (Corroborated; `../../facts/fitbit-google.yaml`, 2026-10-11).
 
 ---
 
@@ -209,7 +209,7 @@ open analysis toolchain. See `axivity-geneactiv.md`. Access via UK Biobank appli
 | Need raw signal | Direct: Polar BLE SDK (cheapest), Movesense (highest rates), Samsung Health Sensor SDK (incl. raw EDA on Galaxy Watch8), Garmin Health SDK, Empatica (EDA), Ultrahuman (ring PPG), Axivity/ActiGraph |
 | BYOD, wearable is an intervention not an instrument | Unified API (Terra/Validic/Rook/Thryve) |
 | Question can be answered from existing data | All of Us Researcher Workbench or UK Biobank |
-| Study uses Fitbit after 30 October 2026 | An intermediary that already holds Google Health API access (Fitabase or a unified API); a new direct Google Health API project is not possible while Google is not onboarding new projects (2026-10-10) |
+| Study uses Fitbit after 30 October 2026 | Fitabase (holds its own project; new-study capacity not stated), or on-device collection via Apple Health or Health Connect. Unified APIs need the customer's own Google Cloud project, verified app and CASA (Corroborated). A new direct Google Health API project is not possible while Google is not onboarding new projects (2026-10-10) |
 
 ## Key Links
 

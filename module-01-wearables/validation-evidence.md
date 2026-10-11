@@ -528,7 +528,7 @@ accuracy, and fall detection has an independently-documented population-specific
 | Empatica absent from consumer head-to-heads; wrist EDA does not track palmar/finger EDA (§6c) | Cannot compare EmbracePlus sleep detection to Oura/WHOOP; E4 wrist EDA should not be treated as a substitute for palmar EDA |
 | Skin tone not systematically recorded in either PSG study, nor in any consumer-device PSG validation located (searched 2026-10-09, §6c) | PPG performance across skin tones is a known physical concern and remains unquantified here |
 | All PSG validations are single-night, laboratory, 8-hour windows | Systematically overestimates real-world agreement, by the authors' own admission |
-| Current-generation hardware untested | Oura Ring 5 (June 2026), WHOOP 5.0/MG, Apple Series 11, Fitbit Air all postdate every study above. Rechecked 2026-10-09: Oura Gen4 has independent data only for resting HR/HRV (Dial 2025, no difference from Gen3); no WHOOP 5.0/MG or Oura Ring 5 validation located |
+| Current-generation hardware untested | Oura Ring 5 (June 2026), WHOOP 5.0/MG, Apple Series 12, Fitbit Air all postdate every study above. Rechecked 2026-10-09: Oura Gen4 has independent data only for resting HR/HRV (Dial 2025, no difference from Gen3); no WHOOP 5.0/MG or Oura Ring 5 validation located |
 | No validation of Oura Health Radar, Samsung Antioxidant Index, or WHOOP Blood Pressure Insights located. Apple hypertension notifications: vendor validation only (white paper + FDA 510(k) K250507, sensitivity 41.2%), no peer-reviewed publication of the pivotal study (§6c) | The newest and most clinically consequential features are the least evidenced |
 
 ## 6c. Open-questions pass, 2026-10-09

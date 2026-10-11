@@ -118,7 +118,7 @@
 - Survey scheduling has three modes. Absolute (an exact date and time in the study time zone, delivered on registration if the participant joins later), relative (days before or after a per-participant intervention date, set on the participant page), and a repeating weekly schedule. The study time zone must be set before any survey is sent, since changing it resets surveys.
 - Branching logic is built from NOT, OR and AND blocks and single conditionals over slider, radio-button and numeric open-response questions. Contradictory logic saves without error; only unparseable references fail. Randomized question selection (with or without replacement) exists but disables branching in that survey.
 - Survey question text accepts Unicode for other languages, but the app's own interface strings are English only.
-- Data monitoring: a study dashboard shows data volume per stream per participant per day, and the wiki recommends checking it once or twice a week. The dashboard is being deprecated in favour of Tableau, fed by the summary-statistics endpoints above.
+- Data monitoring: a study dashboard shows data volume per stream per participant per day, and the wiki recommends checking it once or twice a week. An archived wiki page says the dashboard "is being deprecated in favor of Tableau", fed by the summary-statistics endpoints above. The current Tableau API page marks the old endpoint path deprecated in favour of a newer one, so use the newer path.
 - Forest runs per study once enabled, through a Create Forest Tasks page, with tasks picked up by a cron job about every five minutes.
 - Per-participant pages show the latest heartbeat, the notification token status and the notification history.
 

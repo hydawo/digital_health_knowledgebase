@@ -145,7 +145,7 @@ Recorded so their absence remains a known gap rather than an implied judgement.
 
 | Technology | Note |
 |---|---|
-| **Samsung Galaxy Ring (as a distinct research target)** | Smart ring with no separate research data pathway assessed beyond the Samsung profile. RingConn and Circular were checked on 2026-10-09; see the section above |
+| **Samsung Galaxy Ring (as a distinct research target)** | Smart ring with no separate research data pathway assessed beyond the Samsung profile. Samsung's docs confirm only a processed route through the phone-side Data SDK and no raw route (`../../facts/samsung.yaml`, 2026-10-11). RingConn and Circular were checked on 2026-10-09; see the section above |
 | **Whoop 5.0 vs 4.0** | Whether the Schyvens 2025 result on the 4.0 transfers to current hardware is unknown |
 | **Activinsights / GENEActiv production status** | Checked 2026-10-09: still sold by quote, product page republished January 2026, no discontinuation notice. Manufacturing status and lead times not public. See `axivity-geneactiv.md` |
 | **Open Movement project maintenance** | Checked 2026-10-09: repository active (last push 2026-08-18), OmGui last released 2022-10-31 (v45), AX3 firmware V50, AX6 firmware V56. See `axivity-geneactiv.md` |

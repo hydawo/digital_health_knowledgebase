@@ -1,5 +1,8 @@
 # Module 2 — Mobile Digital Phenotyping Platforms
 
+**Update, 2026-10-11:** the Beiwe and RADAR-base profiles and their matrix cells were corrected
+against the committed vendor fact records in `../facts/` (batch 1).
+
 **Status, 2026-10-10:** ten current platforms are profiled. On 2026-10-10 every profile was corrected
 against an independent review (hosting and academic access, app-store availability, compliance
 evidence tiers, the AWARE sensor counts) and `comparison-matrix.md` was rebuilt from the corrected
@@ -98,20 +101,22 @@ Updated 2026-10-10 to agree with the corrected profiles and the rebuilt matrix.
    (DTU-hosted, stated for DTU-affiliated researchers, price not stated). AWARE still has none.
    (Corrected 2026-10-10; this item previously said only Beiwe offered managed hosting.)
 3. **iOS/Android parity should not be assumed anywhere.** Beiwe and AWARE document per-stream iOS
-   coverage: Beiwe's calls, SMS, Wi-Fi and Bluetooth are Android only; AWARE's catalogue marks 19 of
+   coverage: Beiwe's calls, SMS (lab-distributed Android builds only), Wi-Fi and Bluetooth are Android only; AWARE's catalogue marks 19 of
    33 modules as iOS-available. RADAR-base has no maintained iOS passive app (its iOS data come from
    HealthKit through the questionnaire app). Elsewhere the iOS question is Unclear.
 4. **App-store availability differs from what the module said before.** AWARE's iOS client is on the
    App Store (only the Android client is sideloaded); mindLAMP's public iOS build dates from 2023;
-   no Google Play listing could be confirmed for Beiwe2 or for m-Path. See Table 2.
-5. **Pricing:** Beiwe (BSC) and m-Path publish prices. Avicenna Research, MetricWire, LifeData,
+   no Google Play listing could be confirmed for Beiwe2 (its Android app is sideloaded from each
+   deployment) or for m-Path. See Table 2.
+5. **Pricing:** Beiwe (BSC, FY26 card) and m-Path publish prices. Avicenna Research, MetricWire, LifeData,
    Evidation, The Hyve and the mindLAMP Core do not. Academic routes exist but are mostly unpriced:
    MetricWire's Academic Site Licence, LifeData's academic pricing and student discount, and
    Evidation-collected ALiR data through USC's Understanding America Study Data Use Agreement.
    Avicenna's free trial is test-only (data wiped monthly).
 6. **Compliance:** no Module 2 platform has an independently confirmed certification. Avicenna
    Research (ISO 27001:2022), MetricWire (ISO 27001, SOC 2 Type II, 21 CFR Part 11, HIPAA, GDPR) and
-   m-Path (GDPR, HIPAA) make vendor statements, all Corroborated at most; LifeData has a verifiable
+   m-Path (GDPR, HIPAA) make vendor statements, all Corroborated at most. The Hyve states ISO 27001
+   for itself, with a scope that does not name RADAR-base (Corroborated, added 2026-10-11); LifeData has a verifiable
    Data Privacy Framework self-certification; CARP documents GDPR controller roles; Beiwe documents
    its encryption design. (Corrected 2026-10-10: the module previously called Avicenna's statement an
    independently audited certificate and said MetricWire had no compliance documentation.)
@@ -134,7 +139,7 @@ Updated 2026-10-10 to agree with the corrected profiles and the rebuilt matrix.
   compliance claim for an actual study design — this module surfaced an unusually large number of
   "requires direct vendor/maintainer contact" items relative to Module 1.
 - Cross-reference Module 1's `samsung.md` if a study design pairs Samsung wearables with phone-based
-  sensing — Samsung's Health Research Stack has digital-phenotyping-adjacent characteristics but is
+  sensing. Samsung's Health Research Stack has digital-phenotyping-adjacent characteristics but is
   profiled there, not duplicated here.
 
 ## Known gaps for a future pass

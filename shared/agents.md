@@ -1,6 +1,6 @@
 # Agents and their rules
 
-**Last updated: 2026-10-10.** Every agent that works on this knowledge base, what it is for, what it
+**Last updated: 2026-10-11.** Every agent that works on this knowledge base, what it is for, what it
 may and may not change, and where its full instructions live. The agent names (scout, detective and
 so on) are descriptive labels; in practice each specialist is a Claude agent launched with a task
 prompt that follows the rules below.
@@ -95,6 +95,36 @@ These come from `CLAUDE.md` and apply to all of them.
   profiles' prose where a fact changed.
 - **Rules:** [`../facts/README.md`](../facts/README.md). A quote is always copied from the live page,
   never reconstructed. A company's own compliance claim stays Corroborated without independent evidence.
+
+### 🔬 Fact researchers A and B (baseline run)
+
+- **Does:** fill one company's fact record from scratch, independently of each other, so a fact
+  either missed or misread by one shows up as a disagreement.
+- **May change:** only their own draft, `facts/_drafts/<company>/A.yaml` or `B.yaml`.
+- **Rules:** [`../tools/facts/prompts/researcher.md`](../tools/facts/prompts/researcher.md). Every
+  quote copied from the page and probed with `quote_probe.py`.
+
+### 🕳️ Gap hunter (baseline run)
+
+- **Does:** looks for what both researchers would miss: changelogs, deprecation notices, developer
+  forums, FDA and recall databases, partner press releases, papers describing access.
+- **May change:** only `facts/_drafts/<company>/gaps.md`.
+- **Rules:** [`../tools/facts/prompts/gap-hunter.md`](../tools/facts/prompts/gap-hunter.md).
+
+### ⚖️ Judge (baseline run)
+
+- **Does:** merges A, B and the gap hunter into `facts/<company>.yaml`, keeps genuine disagreements
+  as conflicts, re-probes every quote, and lists the profile and matrix lines the record contradicts.
+- **May change:** the company's record and `facts/_drafts/<company>/judgement.md`.
+- **Rules:** [`../tools/facts/prompts/judge.md`](../tools/facts/prompts/judge.md).
+
+### ✏️ Profile corrector (after each batch)
+
+- **Does:** brings one company's profile into line with its committed record, checking each judge
+  claim against the record first, and adds the generated facts block. Lists the matrix and README
+  lines that need the same fix; one agent per module then applies those.
+- **May change:** that one profile only.
+- **Rules:** [`../tools/facts/prompts/profile-corrector.md`](../tools/facts/prompts/profile-corrector.md).
 
 ### 🧐 Independent reviewer
 
