@@ -23,7 +23,7 @@ every quote. See `facts/README.md` and `shared/agents.md`.
 | Batch | Companies | Status |
 |---|---|---|
 | 1 | Oura, WHOOP, Apple, Fitbit / Google, Garmin, Samsung, Empatica, Withings, Beiwe, RADAR-base | Done 2026-10-10: 436 facts, 275 Verified. Profile and matrix corrections listed in each `judgement.md`, not yet applied |
-| 2 | Polar, Ametris, Axivity, Activinsights, Movesense, mindLAMP, AWARE, Avicenna, MetricWire, m-Path, CARP, LifeData, Evidation | Next |
+| 2 | Polar, Ametris, Axivity, Activinsights, Movesense, mindLAMP, AWARE, Avicenna, MetricWire, m-Path, CARP, LifeData, Evidation | In progress 2026-10-11: 8 records committed (Polar, Ametris, Axivity, Activinsights, Movesense, AWARE, MetricWire, Avicenna); judges for m-Path, mindLAMP, CARP, Evidation and LifeData were running at session end, so check `git status` for their uncommitted records, validate and commit. Then profile correctors and matrix pass as for batch 1 |
 | 3 | Fitabase, Labfront, Fitrockr, Terra, Thryve, Ultrahuman, Sensor Bio, RingConn, Circular, Zepp, Verily, Purple Robot | After batch 2 |
 
 After each batch: generate the tables, opt the completed profiles in to the generated facts block,
