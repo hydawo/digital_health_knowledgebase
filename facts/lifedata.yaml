@@ -3,102 +3,862 @@ name: LifeData (RealLife Exp)
 kind: platform
 profile: module-02-digital-phenotyping/profiles/lifedata.md
 watch:
-- url: https://server.lifedatacorp.com/server-frontend/index.html
-  role: other
-- url: https://app.lifedatacorp.com/
-  role: other
-- url: https://lifedatacorp.page.link/jgPjLQNpbRKch1nTA
-  role: other
-- url: https://www.lifedatacorp.com/schedule-consultation/
-  role: other
-- url: https://www.lifedatacorp.com/
-  role: other
-- url: https://www.lifedatacorp.com/features/
-  role: other
 - url: https://www.lifedatacorp.com/products-2/
   role: pricing
+- url: https://www.usaspending.gov/award/CONT_AWD_36C26224C0205_3600_-NONE-_-NONE-
+  fetch_url: https://api.usaspending.gov/api/v2/awards/CONT_AWD_36C26224C0205_3600_-NONE-_-NONE-/
+  role: pricing
+- url: https://www.lifedatacorp.com/lifedata-terms-of-use/
+  role: terms
+- url: https://www.lifedatacorp.com/lifedata-privacy-policy/
+  role: terms
+- url: https://www.lifedatacorp.com/features/
+  role: docs
 - url: https://www.lifedatacorp.com/solutions-research/
-  role: research_program
-- url: https://www.lifedatacorp.com/experience-sampling-app-2/
-  role: other
-- url: https://www.lifedatacorp.com/ecological-momentary-assessment-app-2/
-  role: other
-- url: https://www.lifedatacorp.com/ediary-app/
-  role: other
-- url: https://www.lifedatacorp.com/epro/
-  role: other
-- url: https://www.lifedatacorp.com/ecoa/
-  role: other
+  role: docs
+- url: https://www.lifedatacorp.com/
+  role: changelog
+- url: https://www.lifedatacorp.com/who-we-serve-healthcare-research/
+  role: trust
 - url: https://www.lifedatacorp.com/clinical-research/
-  role: research_program
-- url: https://www.lifedatacorp.com/remote-patient-monitoring/
-  role: other
+  role: trust
+- url: https://www.dataprivacyframework.gov/list
+  fetch_url: https://dpfapi.azurewebsites.net/api/participants/6382
+  role: trust
+- url: https://apps.apple.com/us/app/reallife-exp/id939951918
+  role: app_store
+- url: https://apps.apple.com/us/app/lifedata/id6443996884
+  role: app_store
+- url: https://play.google.com/store/apps/details?id=com.lifedata.reallife_exp&hl=en_US
+  role: app_store
+- url: https://play.google.com/store/apps/details?id=com.lifedata.lifedata&hl=en_US
+  role: app_store
+- url: https://api.fda.gov/device/510k.json?search=applicant:lifedata
+  role: regulatory
 facts:
+# ---------------- Research access ----------------
 - field: research_program
-  status: unresearched
+  status: stated
+  value: No separate research or academic program. LifeData is itself a paid research platform (EMA, experience
+    sampling, eDiary, eCOA, ePRO) sold as Individual, Team, Enterprise, Clinical and Monitoring subscriptions, with
+    optional paid services such as protocol building, user acceptance testing, audit trails and data analysis
+    consultation.
+  confidence: Verified
+  sources:
+  - url: https://www.lifedatacorp.com/products-2/
+    type: vendor_page
+    quote: Individual State of the science mobile data collection Academic and commercial pricing Half-year and annual
+      subscriptions All features included
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/products-2/
+    type: vendor_page
+    quote: With a wide range of additional paid services
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-10'
+  note: Academic pricing and the graduate-student discount are recorded under academic_pricing and program_eligibility.
+    The VA contracts under subscription_price are procurement, not a program.
 - field: program_eligibility
-  status: unresearched
+  status: stated
+  value: No program as such. Sold to academic and commercial customers; Team covers teams and labs of up to 9 users,
+    Enterprise 10+ users. A discount is offered to "qualifying graduate students"; the qualifying criteria are not
+    published.
+  confidence: Verified
+  sources:
+  - url: https://www.lifedatacorp.com/products-2/
+    type: vendor_page
+    quote: Yes, LifeData offers a discount to qualifying graduate students that are interested in using the platform.
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/products-2/
+    type: vendor_page
+    quote: Teams and labs up to 9 users
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-10'
 - field: program_application
-  status: unresearched
+  status: stated
+  value: No application or review step is published. Every plan is sold through a scheduled consultation with a
+    LifeData representative; subscriptions are then billed per cycle and auto-renew under the Terms of Use.
+  confidence: Verified
+  sources:
+  - url: https://www.lifedatacorp.com/products-2/
+    type: vendor_page
+    quote: Schedule a consultation with a LifeData representative today!
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/lifedata-terms-of-use/
+    type: vendor_legal
+    quote: Your Subscription will automatically renew at the end of each billing cycle
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-10'
 - field: program_status
-  status: unresearched
+  status: stated
+  value: Active. Two platform generations run side by side, "LifeData Original" (researcher console
+    server.lifedatacorp.com, participant app RealLife Exp) and the rebuilt LifeData+ (console app.lifedatacorp.com,
+    participant app "LifeData"), each with its own login.
+  confidence: Verified
+  sources:
+  - url: https://www.lifedatacorp.com/
+    type: vendor_page
+    quote: LifeData Original Go to LifeData LifeData+ Released in 2026 Go to LifeData +
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/features/
+    type: vendor_page
+    quote: LifeData+ was built from the ground up using everything we’ve learned over 14 years working with researchers.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-10'
+  note: The release year of LifeData+ conflicts between the website (2026) and the store listings (2025); see
+    deprecations.
 - field: developer_program_status
-  status: unresearched
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://www.lifedatacorp.com/features/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/products-2/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/lifedata-terms-of-use/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://help.lifedatacorp.com/hc/en-us
+    type: vendor_docs
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-10'
+  note: No developer program, public API or SDK on the website or its sitemap, and no GitHub organization.
+    api.lifedatacorp.com returns 404 at its root. The help centres (help.lifedatacorp.com, support.lifedatacorp.com)
+    sit behind a bot check and their Zendesk API asks for sign-in, so they were not read; this is why the record
+    is Corroborated, not Verified. The LifeData+ console builds exports through its own backend (gap hunter), which
+    is not a documented researcher API. The terms bar access "using a method other than through the interfaces and
+    instructions that we provide".
 - field: user_cap
-  status: unresearched
+  status: stated
+  value: 'Caps are by researcher seats, not by approval: Team covers teams and labs of up to 9 users; Enterprise is 10+
+    users with institutional master subscriptions and department sub-accounts. Participant numbers over the
+    subscription are a pricing input; no participant ceiling per tier is published.'
+  confidence: Verified
+  sources:
+  - url: https://www.lifedatacorp.com/products-2/
+    type: vendor_page
+    quote: Enterprise Real-time data for your whole organization 10+ Users Institutional master subscriptions Department
+      sub-accounts
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/products-2/
+    type: vendor_page
+    quote: Teams and labs up to 9 users
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/products-2/
+    type: vendor_page
+    quote: Pricing is straightforward and involves the number of researchers, the duration of your subscription, and
+      the number of participants over the duration of your subscription.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-10'
 - field: academic_vs_commercial
-  status: unresearched
+  status: stated
+  value: Separate academic and commercial pricing (stated on the Individual plan), with all features included either
+    way, plus a graduate-student discount. The size of the difference is not published. The Clinical and Monitoring
+    plans add eCOA, multi-site support, clinician dashboards and site training.
+  confidence: Verified
+  sources:
+  - url: https://www.lifedatacorp.com/products-2/
+    type: vendor_page
+    quote: Academic and commercial pricing
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/products-2/
+    type: vendor_page
+    quote: All features included
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-10'
+# ---------------- Pricing ----------------
 - field: device_price
-  status: unresearched
+  status: not_applicable
+  confidence: Verified
+  sources:
+  - url: https://www.lifedatacorp.com/products-2/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-10'
+  note: Software only. Participants use their own iOS or Android phone; LifeData sells no hardware.
 - field: subscription_price
-  status: unresearched
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.lifedatacorp.com/products-2/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/features/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/lifedata-terms-of-use/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-10'
+  note: No list price is published anywhere (no /pricing page). Pricing depends on number of researchers,
+    subscription duration and participants, and is "not feature or project-based", so several projects run at no
+    extra cost. The terms mention possible overage fees. Participant apps are free. Prices actually paid by one
+    federal customer are in the scoped entry below.
+- field: subscription_price
+  scope: VA San Diego Healthcare System contracts (USAspending), 2023 to 2029
+  status: stated
+  value: Three firm-fixed-price U.S. Department of Veterans Affairs awards to LIFEDATA LLC for VA San Diego, through
+    Network Contract Office 22, are on USAspending - a "LIFEDATA SURVEY SUBSCRIPTION" contract, an "ACADEMIC RESEARCH
+    SERVICES" contract and a "LIFE DATA RESEARCH" purchase order. Dollar amounts are in the note (Reported).
+  confidence: Reported
+  sources:
+  - url: https://www.usaspending.gov/award/CONT_AWD_36C26224C0205_3600_-NONE-_-NONE-
+    fetch_url: https://api.usaspending.gov/api/v2/awards/CONT_AWD_36C26224C0205_3600_-NONE-_-NONE-/
+    type: secondary
+    quote: LIFEDATA SURVEY SUBSCRIPTION
+    retrieved: '2026-10-11'
+  - url: https://www.usaspending.gov/award/CONT_AWD_36C26224C0205_3600_-NONE-_-NONE-
+    fetch_url: https://api.usaspending.gov/api/v2/awards/CONT_AWD_36C26224C0205_3600_-NONE-_-NONE-/
+    type: secondary
+    quote: ONLY ONE SOURCE-OTHER (FAR 6.302-1 OTHER)
+    retrieved: '2026-10-11'
+  - url: https://www.usaspending.gov/award/CONT_AWD_36C26224C0221_3600_-NONE-_-NONE-
+    fetch_url: https://api.usaspending.gov/api/v2/awards/CONT_AWD_36C26224C0221_3600_-NONE-_-NONE-/
+    type: secondary
+    quote: LIFEDATA ACADEMIC RESEARCH SERVICES
+    retrieved: '2026-10-11'
+  - url: https://www.usaspending.gov/award/CONT_AWD_36C26223P0320_3600_-NONE-_-NONE-
+    fetch_url: https://api.usaspending.gov/api/v2/awards/CONT_AWD_36C26223P0320_3600_-NONE-_-NONE-/
+    type: secondary
+    quote: NOT COMPETED UNDER SAP
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-10'
+  note: 'Reported, scoped to these three VA San Diego awards only; not list prices. The figures sit in numeric JSON
+    fields that quote_probe cannot read, so they are copied from the API responses on 2026-10-11, not quote-checked.
+    (1) 36C26224C0205, "LIFEDATA SURVEY SUBSCRIPTION", sole source under FAR 6.302-1, period 2024-05-01 to
+    2027-04-30, potential end 2029-04-30: total_obligation 18000.0, base_and_all_options 25360.0. Transactions (POST
+    https://api.usaspending.gov/api/v2/transactions/ with this award id): base 3680.0 on 2024-05-01, option year 1
+    3680.0 on 2025-04-06, a funding-only increase of 3480.0 on 2025-06-23, option year 2 7160.0 on 2026-03-19, and a
+    0.0 modification on 2026-06-09. (2) 36C26224C0221, "LIFEDATA ACADEMIC RESEARCH SERVICES", sole source, 2024-05-30
+    to 2025-05-29: total_obligation 3480.0 in one action. (3) 36C26223P0320, "LIFE DATA RESEARCH", a purchase order
+    under simplified acquisition (FAR 6.302-5(a)(2)(i)), listed period 2023-06-01 to 2024-12-05, potential end
+    2027-05-31: total_obligation 13920.0, made of four 3480.0 actions (2023-05-25, then options on 2024-05-24,
+    2025-06-01 and 2026-05-04). The number of researchers or participants each award covers is not stated, so
+    reading these as annual subscription prices is inference.'
 - field: academic_pricing
-  status: unresearched
+  status: stated
+  value: Academic pricing exists (amount not published) and qualifying graduate students get a discount (size not
+    published).
+  confidence: Verified
+  sources:
+  - url: https://www.lifedatacorp.com/products-2/
+    type: vendor_page
+    quote: Academic and commercial pricing
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/products-2/
+    type: vendor_page
+    quote: Yes, LifeData offers a discount to qualifying graduate students that are interested in using the platform.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-10'
+  note: The VA San Diego "ACADEMIC RESEARCH SERVICES" award (subscription_price, scoped entry) is one price actually
+    paid by a federal research customer; it is not a published academic rate.
 - field: api_platform_fees
-  status: unresearched
+  status: stated
+  value: Platform access is the subscription itself, which includes all study-builder features, the native apps,
+    support, "easy and unlimited data access" and dashboards, with multiple projects at no extra cost. Add-on services
+    (protocol building, user acceptance testing, dashboard development, audit trails, data analysis consultation) are
+    paid extras with unpublished prices.
+  confidence: Verified
+  sources:
+  - url: https://www.lifedatacorp.com/products-2/
+    type: vendor_page
+    quote: At LifeData, subscription pricing is not feature or project-based.
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/products-2/
+    type: vendor_page
+    quote: Pilot future projects while running a current project or enjoy the benefits of running multiple projects at
+      no extra cost.
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/products-2/
+    type: vendor_page
+    quote: Easy and unlimited data access
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-10'
+  note: No API is documented, so there is no API fee to record.
 - field: minimum_commitment
-  status: unresearched
+  status: stated
+  value: Subscriptions are sold in half-year and annual terms, billed per cycle and auto-renewing; fees are
+    non-refundable except as the terms or law provide. No shorter term is advertised.
+  confidence: Corroborated
+  sources:
+  - url: https://www.lifedatacorp.com/products-2/
+    type: vendor_page
+    quote: Half-year and annual subscriptions
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/lifedata-terms-of-use/
+    type: vendor_legal
+    quote: Fees paid by you are non-refundable, except as provided in these Terms or when required by law.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-10'
+  note: The half-year and annual wording is on the Individual plan card; terms for the other plans are not stated.
+    That six months is the minimum is inferred from the absence of anything shorter, hence Corroborated.
 - field: quote_required
-  status: unresearched
+  status: stated
+  value: Yes. No prices are published; every plan routes to a consultation with a LifeData representative.
+  confidence: Verified
+  sources:
+  - url: https://www.lifedatacorp.com/products-2/
+    type: vendor_page
+    quote: Multiple factors go into how you might make these choices. Schedule a consultation with a LifeData
+      representative today!
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/products-2/
+    type: vendor_page
+    quote: At LifeData, subscription pricing is not feature or project-based.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-10'
 - field: hosting_price
-  status: unresearched
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.lifedatacorp.com/products-2/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/lifedata-terms-of-use/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/lifedata-privacy-policy/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-10'
+  note: Hosting is vendor-run and bundled into the subscription; no separate hosting price is published.
+# ---------------- Data access and terms ----------------
 - field: raw_streams
-  status: unresearched
+  status: stated
+  value: 'Active data only: timestamped EMA, ESM and eDiary responses across 13 question types (including media
+    uploads), with GPS coordinates captured once per response when the participant allows location. No passive
+    smartphone sensing and no wearable, HealthKit or Health Connect integration is documented. Route: the web study
+    builder and data download.'
+  confidence: Corroborated
+  sources:
+  - url: https://www.lifedatacorp.com/solutions-research/
+    type: vendor_page
+    quote: All responses are timestamped and geolocation reporting is standard.
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/solutions-research/
+    type: vendor_page
+    quote: Gather GPS coordinates with each user response.
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/features/
+    type: vendor_page
+    quote: Choose from 13 question types, including multiple choice, scales, free text, media uploads, and web.
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/features/
+    type: vendor_page
+    quote: Capture location data with participant responses for deeper insights.
+    retrieved: '2026-10-11'
+  - url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12481226/
+    fetch_url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12481226/fullTextXML
+    type: paper
+    quote: geolocation tracking data were collected through Google Maps (Google), while participants completed a series
+      of ecological momentary assessment questions each day through the RealLife Exp application (LifeData, LLC)
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-10'
+  note: The absence of passive sensing and wearables comes from searching the site (sensor, wearable, Fitbit, passive
+    return only blog literature roundups); the gated help centre cannot rule out an undocumented option, so
+    Corroborated. Published deployments that wanted continuous location or wearables ran a separate app alongside
+    (Google Maps Timeline in the JAMA Netw Open 2025 study cited; Fitbit and Oura in others found by the gap hunter).
+    The LifeData+ App Store privacy label lists "Audio Data" and "Health Fitness"; the console's question types
+    include video responses but no audio or sensor type, so the label most likely covers video sound and survey
+    answers. That reading is inference.
 - field: derived_metrics
-  status: unresearched
+  status: stated
+  value: Study-defined scores computed from responses (usable in display logic), response-rate and engagement
+    monitoring, session metadata in the export, and real-time dashboards for individuals and groups. No
+    sensor-derived or behavioural features.
+  confidence: Verified
+  sources:
+  - url: https://www.lifedatacorp.com/
+    type: vendor_page
+    quote: Well-labeled datasets in multiple formats with timestamps, scores, and session metadata; ready for immediate
+      analysis.
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/features/
+    type: vendor_page
+    quote: Use display logic, piped text, and scores to create adaptive study experiences.
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/features/
+    type: vendor_page
+    quote: Track participant engagement, response rates, and study activity in real time.
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/features/
+    type: vendor_page
+    quote: Visualize participant data in real time with customizable dashboards for individuals and groups.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-10'
 - field: sampling_rates
-  status: unresearched
+  status: stated
+  value: Event-based, not continuous. Prompts follow fixed, random, triggered or event-based schedules set by the
+    researcher; GPS is captured once per response, not at a fixed rate; notification delivery and response timestamps
+    are recorded to the millisecond.
+  confidence: Verified
+  sources:
+  - url: https://www.lifedatacorp.com/features/
+    type: vendor_page
+    quote: Track notification delivery, response timing, and participant engagement with millisecond precision.
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/solutions-research/
+    type: vendor_page
+    quote: Gather GPS coordinates with each user response.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-10'
 - field: history_depth
-  status: unresearched
+  status: stated
+  value: All study data stays downloadable for the life of the subscription. After cancellation or lapse it can be
+    retrieved on request for 180 days, then it is permanently deleted. Accounts inactive for over 12 months may be
+    terminated and their content deleted.
+  confidence: Verified
+  sources:
+  - url: https://www.lifedatacorp.com/products-2/
+    type: vendor_page
+    quote: Easy and unlimited data access
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/lifedata-terms-of-use/
+    type: vendor_legal
+    quote: Any data collected prior to account cancellation or subscription end date will be permanently deleted in
+      180 days.
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/lifedata-terms-of-use/
+    type: vendor_legal
+    quote: LifeData may terminate your account and delete any content contained in it if there is no account activity
+      (such as a log in event or payment) for over 12 months.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-10'
 - field: export_routes
-  status: unresearched
+  status: stated
+  value: File download from the web app as .csv in multiple layouts (including layouts for multilevel modelling, ready
+    for R, Stata, SPSS and Python), plus media files; real-time dashboards. No API, SDK, webhook or streaming route is
+    documented.
+  confidence: Verified
+  sources:
+  - url: https://www.lifedatacorp.com/solutions-research/
+    type: vendor_page
+    quote: Download your data to a .csv file for easy importing to any statistical program. Multiple data formats
+      available for various types of analyses, including multilevel modeling.
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/experience-sampling-app-2/
+    type: vendor_page
+    quote: Download .csv data in multiple formats that are ready for analysis in R, Stata, SPSS, and more.
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/features/
+    type: vendor_page
+    quote: Export study data and media files in formats ready for analysis.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-10'
+  note: The LifeData+ console builds exports as data requests per session type (Startup, Check-in, Notification,
+    Closeout), seen in its public JavaScript by the gap hunter; that is a UI backend, not a documented API. One
+    field study (JMIR Form Res 2026, PMC13392534) settled questions about exported fields with the vendor before
+    enrolment, because the export documentation is behind the help-centre login.
 - field: rate_limits
-  status: unresearched
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.lifedatacorp.com/features/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/lifedata-terms-of-use/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-10'
+  note: No API is documented, so no rate limits are published. The terms only bar undefined "abusive or excessive
+    usage" that degrades the service for others.
 - field: retention_terms
-  status: unresearched
+  status: stated
+  value: Data is permanently deleted 180 days after account cancellation or subscription end. Studies or participant
+    data deleted by the researcher in the web app are kept for no more than 30 days. Accounts with no activity for
+    over 12 months may be terminated and their content deleted. A participant deleting a study on the phone does not
+    delete server data. Storage is on US servers.
+  confidence: Verified
+  sources:
+  - url: https://www.lifedatacorp.com/lifedata-terms-of-use/
+    type: vendor_legal
+    quote: Any data collected prior to account cancellation or subscription end date will be permanently deleted in
+      180 days.
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/lifedata-privacy-policy/
+    type: vendor_legal
+    quote: LifeData retains a copy for no longer than 30 days after which it will be permanently deleted
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/lifedata-terms-of-use/
+    type: vendor_legal
+    quote: LifeData may terminate your account and delete any content contained in it if there is no account activity
+      (such as a log in event or payment) for over 12 months.
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/lifedata-privacy-policy/
+    type: vendor_legal
+    quote: This will not delete data from LifeData servers.
+    retrieved: '2026-10-11'
+  - url: https://play.google.com/store/apps/details?id=com.lifedata.lifedata&hl=en_US
+    type: app_store
+    quote: This app may share these data types with third parties Device or other IDs
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-10'
+  note: The privacy policy is dated December 12, 2024; the terms carry an effective date of December 12, 2014. The
+    LifeData+ Google Play data-safety section (listing updated Oct 8, 2026) now declares that the app may share
+    "Device or other IDs" with third parties, for app functionality and analytics; the profile recorded this app as
+    sharing nothing. The RealLife Exp listing declares sharing "App info and performance".
 - field: ai_training_terms
-  status: unresearched
+  status: stated
+  value: No term names AI, machine learning or model training. The general use clause excludes non-public study
+    content (prompts and responses) from internal analysis to improve the services, while public study data and
+    anonymized study metadata may be used to create new services, features or content. Whether this governs model
+    training is not stated.
+  confidence: Corroborated
+  sources:
+  - url: https://www.lifedatacorp.com/lifedata-terms-of-use/
+    type: vendor_legal
+    quote: However, we do not use the non-public content of Studies (i.e. the content of prompts and responses that
+      you have not publicly shared) for these purposes.
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/lifedata-terms-of-use/
+    type: vendor_legal
+    quote: We may use public Study data and anonymized Study metadata (that is, data about the characteristics of a
+      Study but not its non-public content), to create and provide new services, features or content.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-10'
+  note: Neither the terms (effective December 12, 2014) nor the privacy policy (December 12, 2024) mentions AI or ML.
+    Corroborated because applying a 2014 general-use clause to model training is interpretation.
 - field: deprecations
-  status: unresearched
+  status: conflict
+  value: A rebuilt platform, LifeData+, with its own participant app ("LifeData"), runs alongside "LifeData Original"
+    and its RealLife Exp app. The website says LifeData+ was released in 2026; both store listings for the new app say
+    2025, and the App Store gives a first release of 2025-05-28. No shutdown or end-of-support date for the Original
+    platform or RealLife Exp is announced.
+  confidence: Unclear
+  sources:
+  - url: https://www.lifedatacorp.com/
+    type: vendor_page
+    quote: LifeData Original Go to LifeData LifeData+ Released in 2026 Go to LifeData +
+    retrieved: '2026-10-11'
+  - url: https://apps.apple.com/us/app/lifedata/id6443996884
+    type: app_store
+    quote: The LifeData app is part of the new LifeData platform released in 2025 designed to interact with you
+      throughout the day.
+    retrieved: '2026-10-11'
+  - url: https://play.google.com/store/apps/details?id=com.lifedata.lifedata&hl=en_US
+    type: app_store
+    quote: The LifeData app is part of the new LifeData platform released in 2025 designed to interact with you
+      throughout the day.
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/lifedata-terms-of-use/
+    type: vendor_legal
+    quote: If LifeData discontinues a Service, we will give you reasonable advance notice to provide you with an
+      opportunity to export a copy of your Content from that Service.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-10'
+  note: The conflict is the release year of the successor, not a shutdown. The iTunes lookup API
+    (itunes.apple.com/lookup?id=6443996884) gives releaseDate 2025-05-28. A 2025 limited release and a 2026 general
+    launch would reconcile them, but that is inference. Study teams should confirm which generation, and so which
+    participant app, a new study will use.
 - field: licence
-  status: unresearched
+  status: stated
+  value: Proprietary, closed-source SaaS. The terms grant no ownership of the services and bar reverse engineering; no
+    source repository or open licence exists.
+  confidence: Corroborated
+  sources:
+  - url: https://www.lifedatacorp.com/lifedata-terms-of-use/
+    type: vendor_legal
+    quote: Neither these Terms nor your use of the Services grants you ownership in the Services
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/lifedata-terms-of-use/
+    type: vendor_legal
+    quote: Unless permitted by applicable law, you may not deny others access to, or reverse engineer, the Services, or
+      attempt to do so.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-10'
+  note: No GitHub organization (api.github.com/orgs/lifedatacorp returns 404) and no repository for LifeData or
+    RealLife Exp found. Corroborated because closed source is inferred from the terms plus that absence.
 - field: hosting_options
-  status: unresearched
+  status: stated
+  value: Vendor-hosted SaaS only, on servers in the United States; no self-hosting or on-premises option is published.
+    The privacy policy names Microsoft Azure as an example of its data hosting company.
+  confidence: Corroborated
+  sources:
+  - url: https://www.lifedatacorp.com/lifedata-terms-of-use/
+    type: vendor_legal
+    quote: LifeData hosts Studies for Study creators, but these creators are the primary curators of Study data.
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/lifedata-privacy-policy/
+    type: vendor_legal
+    quote: Data is stored on servers located in the United States.
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/lifedata-privacy-policy/
+    type: vendor_legal
+    quote: LifeData may transfer personal data to a third party outside the European Union or United Kingdom, for
+      example a secure data hosting company such as Microsoft Azure.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-10'
+  note: Corroborated because "no self-hosting" is an absence across the product, features and legal pages rather than
+    a stated exclusion.
 - field: app_availability
-  status: unresearched
+  scope: LifeData Original (RealLife Exp)
+  status: stated
+  value: RealLife Exp, free, on iOS (App Store id939951918, first released 2015-01-03, v2.8.14 of 2026-04-06, iOS 13.0
+    or later) and Android (com.lifedata.reallife_exp, 10K+ downloads). Seller LIFEDATA LLC. Studies in this
+    generation are called LifePaks.
+  confidence: Verified
+  sources:
+  - url: https://apps.apple.com/us/app/reallife-exp/id939951918
+    type: app_store
+    quote: Use it to download LifePaks created by experts using the LifeData web application
+    retrieved: '2026-10-11'
+  - url: https://play.google.com/store/apps/details?id=com.lifedata.reallife_exp&hl=en_US
+    type: app_store
+    quote: The RealLife Exp app is part of a system designed to interact with you throughout the day.
+    retrieved: '2026-10-11'
+  - url: https://play.google.com/store/apps/details?id=com.lifedata.reallife_exp&hl=en_US
+    type: app_store
+    quote: 10K+ Downloads
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-10'
+  note: Release date, version and minimum iOS are from the iTunes lookup API (itunes.apple.com/lookup?id=939951918) on
+    2026-10-11. The literature sometimes misnames the app "Realtime EXP" (for example doi:10.1016/j.beth.2025.05.007).
+- field: app_availability
+  scope: LifeData+ (LifeData app)
+  status: stated
+  value: LifeData, free, on iOS (App Store id6443996884, first released 2025-05-28, v1.0.17 of 2026-10-10, iOS 18.0 or
+    later) and Android (com.lifedata.lifedata, 100+ downloads, updated Oct 8, 2026). Seller LIFEDATA LLC.
+  confidence: Verified
+  sources:
+  - url: https://apps.apple.com/us/app/lifedata/id6443996884
+    type: app_store
+    quote: Use it to download Studies created by experts using the LifeData web application
+    retrieved: '2026-10-11'
+  - url: https://apps.apple.com/us/app/lifedata/id6443996884
+    type: app_store
+    quote: Requires iOS 18.0 or later.
+    retrieved: '2026-10-11'
+  - url: https://play.google.com/store/apps/details?id=com.lifedata.lifedata&hl=en_US
+    type: app_store
+    quote: 100+ Downloads
+    retrieved: '2026-10-11'
+  - url: https://play.google.com/store/apps/details?id=com.lifedata.lifedata&hl=en_US
+    type: app_store
+    quote: Updated on Oct 8, 2026
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-10'
+  note: Release date and version are from the iTunes lookup API (itunes.apple.com/lookup?id=6443996884) on 2026-10-11.
+    The iOS 18 minimum is a BYOD constraint for participants on older iPhones. The Play data-safety section now says
+    the app may share Device or other IDs with third parties (see retention_terms).
+# ---------------- Compliance ----------------
 - field: baa
-  status: unresearched
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.lifedatacorp.com/lifedata-terms-of-use/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/lifedata-privacy-policy/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/who-we-serve-healthcare-research/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/clinical-research/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/features/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-09'
+  note: No page, and neither legal document, mentions a Business Associate Agreement. The clinical research page says
+    "Speak with our compliance team to learn more." The LifeData+ console's onboarding asks study owners whether they
+    will collect, store or transmit PHI (gap hunter, public JavaScript); that shows a PHI setting exists, not that a
+    BAA is signed. Ask the vendor.
 - field: dpa
-  status: unresearched
+  status: stated
+  value: No separate data processing agreement is published. The Terms of Use say they themselves serve as the contract
+    between LifeData as GDPR processor and the study creators as controllers.
+  confidence: Corroborated
+  sources:
+  - url: https://www.lifedatacorp.com/lifedata-terms-of-use/
+    type: vendor_legal
+    quote: This Terms of Use document serves as a contract describing the relationship between LifeData as a Processor
+      and Data Controllers
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-09'
+  note: Whether the 2014 terms meet GDPR Article 28 requirements is not assessed here; an institution needing a
+    signed DPA should ask.
 - field: hipaa_statement
-  status: unresearched
+  status: stated
+  value: Marketing pages call the platform HIPAA compliant; the features page now says it supports "HIPAA- and GDPR-
+    compliant research workflows" through configurable privacy and consent options. The privacy policy and terms of use
+    never mention HIPAA, and no BAA, audit or attestation is cited anywhere.
+  confidence: Corroborated
+  sources:
+  - url: https://www.lifedatacorp.com/who-we-serve-healthcare-research/
+    type: vendor_page
+    quote: The LifeData platform is HIPAA compliant and includes an anonymized data collection option which avoids
+      collecting PII altogether.
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/features/
+    type: vendor_page
+    quote: Support HIPAA- and GDPR- compliant research workflows with configurable privacy and consent options.
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/epro/
+    type: vendor_page
+    quote: LifeData's ePRO Data Collection is HIPAA and GDPR compliant.
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/clinical-research/
+    type: vendor_page
+    quote: Anonymously and securely collect participant data to protect patient privacy and comply with HIPPA, GDPR, IRB
+      standards, and more.
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/lifedata-privacy-policy/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/lifedata-terms-of-use/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-09'
+  note: The two legal documents were searched for "HIPAA" on 2026-10-11 with no match. The home page frames compliance
+    as collecting no PII ("Gather data without Personally Identifiable Information (PII) Comply with IRB/HIPAA
+    requirements"), which is compliance by de-identification, not a HIPAA-covered service under a BAA. The
+    clinical-research page misspells it "HIPPA". The LifeData+ console has a PHI yes/no setting (see baa).
 - field: gdpr_statement
-  status: unresearched
+  status: stated
+  value: LifeData says it acts as a GDPR data processor on the instructions of study creators (controllers) and
+    complies with GDPR. Its privacy policy (updated December 12, 2024) says it complies with the EU-U.S. Data Privacy
+    Framework, the UK Extension and the Swiss-U.S. DPF; the Terms of Use (effective December 12, 2014) still say it
+    participates in the invalidated Privacy Shield.
+  confidence: Corroborated
+  sources:
+  - url: https://www.lifedatacorp.com/lifedata-privacy-policy/
+    type: vendor_legal
+    quote: Where LifeData products or services are used to collect or process personal data of EU residents, LifeData
+      is subject to GDPR, and complies with all requirements.
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/lifedata-terms-of-use/
+    type: vendor_legal
+    quote: Under GDPR, LifeData operates as a Data Processor, and fulfills all obligations of that role.
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/lifedata-privacy-policy/
+    type: vendor_legal
+    quote: LifeData complies with the EU-U.S. Data Privacy Framework (EU-U.S. DPF) and the UK Extension to the EU-U.S.
+      DPF, and the Swiss-U.S. Data Privacy Framework (Swiss-U.S. DPF) as set forth by the U.S. Department of
+      Commerce.
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/lifedata-terms-of-use/
+    type: vendor_legal
+    quote: Further, as a U.S-based organization, LifeData participates in the U.S.-EU and U.S.-Swiss Privacy Shield
+      Networks.
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-09'
+  note: GDPR compliance itself is LifeData's own claim, so this entry stays Corroborated. The DPF certification is
+    confirmed on the Commerce Department registry in the scoped entry below. The terms' Privacy Shield sentence is
+    stale (Privacy Shield was invalidated in 2020 and replaced by the DPF).
+- field: gdpr_statement
+  scope: Data Privacy Framework certification
+  status: stated
+  value: 'LifeData (Marion, IN) is listed on the Commerce Department''s Data Privacy Framework registry as "Active -
+    Re-certification under Review" under the EU-U.S. DPF, the Swiss-U.S. DPF and the UK Extension, covering HR and
+    non-HR data. EU-U.S. and Swiss-U.S. first certified 2018-05-31, UK Extension 2023-10-31, next certification due
+    2027-04-28. Verification method: self-assessment. One recorded lapse, 2019-06-30 to 2019-07-08.'
+  confidence: Verified
+  sources:
+  - url: https://www.dataprivacyframework.gov/list
+    fetch_url: https://dpfapi.azurewebsites.net/api/participants/6382
+    type: certificate
+    quote: EU-US Certification Active - Re-certification under Review 2018-05-31T12:00:00+00:00
+      2027-04-28T12:00:00+00:00
+    retrieved: '2026-10-11'
+  - url: https://www.dataprivacyframework.gov/list
+    fetch_url: https://dpfapi.azurewebsites.net/api/participants/6382
+    type: certificate
+    quote: UK Extension Certification Active - Re-certification under Review 2023-10-31T12:00:00+00:00
+      2027-04-28T12:00:00+00:00
+    retrieved: '2026-10-11'
+  - url: https://www.dataprivacyframework.gov/list
+    fetch_url: https://dpfapi.azurewebsites.net/api/participants/6382
+    type: certificate
+    quote: Lapse 2019-06-30T12:00:00+00:00 2019-07-08T12:00:00+00:00
+    retrieved: '2026-10-11'
+  - url: https://www.dataprivacyframework.gov/list
+    fetch_url: https://dpfapi.azurewebsites.net/api/participants/6382
+    type: certificate
+    quote: Self-Assessment
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-09'
+  note: Coordinator read the registry in a browser on 2026-10-11 ("LifeData, Marion, IN", same status, all three
+    frameworks, HR and non-HR); the JSON behind the list (participant 6382) gives the dates. The registered privacy
+    policy is the June 12, 2024 version. "Re-certification under Review" means the annual re-certification is being
+    processed; the listing remains Active. A DPF listing confirms the transfer mechanism, not GDPR compliance as a
+    whole.
 - field: iso27001
-  status: unresearched
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.lifedatacorp.com/lifedata-privacy-policy/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/lifedata-terms-of-use/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/features/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/clinical-research/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-09'
+  note: No ISO 27001 claim anywhere on the site's sitemap pages; no trust portal (trust.lifedatacorp.com does not
+    resolve).
 - field: soc2
-  status: unresearched
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.lifedatacorp.com/lifedata-privacy-policy/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/lifedata-terms-of-use/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/features/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/clinical-research/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-09'
+  note: No SOC 2 claim anywhere on the site's sitemap pages; no trust portal.
 - field: fda_clearances
-  status: unresearched
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm
+    fetch_url: https://api.fda.gov/device/510k.json?search=applicant:lifedata
+    type: regulator_db
+    retrieved: '2026-10-11'
+    expect_absent: true
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfrl/rl.cfm
+    fetch_url: https://api.fda.gov/device/registrationlisting.json?search=registration.name:lifedata
+    type: regulator_db
+    retrieved: '2026-10-11'
+    expect_absent: true
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm
+    fetch_url: https://api.fda.gov/device/pma.json?search=applicant:lifedata
+    type: regulator_db
+    retrieved: '2026-10-11'
+    expect_absent: true
+  recheck_by: '2027-01-09'
+  note: openFDA returned "No matches found" for 510(k) applicant lifedata, 510(k) device names lifedata and RealLife,
+    registration name lifedata and PMA applicant lifedata. LifeData does not market the app as a medical device.
 - field: data_residency
-  status: unresearched
+  status: stated
+  value: Data is stored on servers in the United States, with Microsoft Azure named as an example hosting company. No
+    other region or residency option is offered; EU, UK and Swiss transfers rely on the Data Privacy Framework.
+  confidence: Verified
+  sources:
+  - url: https://www.lifedatacorp.com/lifedata-privacy-policy/
+    type: vendor_legal
+    quote: Data is stored on servers located in the United States.
+    retrieved: '2026-10-11'
+  - url: https://www.lifedatacorp.com/lifedata-privacy-policy/
+    type: vendor_legal
+    quote: LifeData may transfer personal data to a third party outside the European Union or United Kingdom, for
+      example a secure data hosting company such as Microsoft Azure.
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-09'
+  note: The absence of non-US options is from the absence of any mention, not an explicit statement. Not a
+    self-claim-capped field; the vendor's own policy is the primary source for where it stores data.

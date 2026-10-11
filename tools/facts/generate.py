@@ -104,7 +104,8 @@ def main():
         p = os.path.join(ROOT, prof)
         if not os.path.exists(p):
             continue
-        text = open(p, encoding='utf8').read()
+        # a profile shared by several records is updated cumulatively, not re-read from disk each time
+        text = targets[p] if p in targets else open(p, encoding='utf8').read()
         # a shared profile (for example data-intermediaries.md) can hold several blocks: <!-- facts:begin fitabase -->
         def repl(m, c=c, rec=rec):
             tag = m.group(1)
@@ -114,7 +115,7 @@ def main():
                 return m.group(0)
             return m.group(1) + profile_block(rec, schema) + '\n' + m.group(3)
         new = MARK.sub(repl, text)
-        if new != text:
+        if new != text or p in targets:
             targets[p] = new
     stale = []
     for path, content in targets.items():
