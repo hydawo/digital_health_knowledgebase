@@ -3,6 +3,8 @@
 
     python3 tools/facts/weekly.py [--only oura,withings] [--no-state]
 
+With --only, the report is printed and no report files are written.
+
 Writes facts/_reports/<date>.md, updates facts/_monitor/state.json (fingerprints only, never page
 text), and writes facts/_reports/latest-issue.md when there is something to act on. The GitHub
 Actions job (.github/workflows/facts-monitor.yml) turns that file into an issue.
@@ -70,6 +72,11 @@ def main():
             continue
         st['unreachable_weeks'] = 0
         text = r['text'] or ''
+        # Some sites vary their markup between requests; before calling a quote missing, fetch once more.
+        if any(match_quote(q, text)[0] == 'missing' for _, _, q in u['quotes']):
+            r2 = fetch(u['fetch'])
+            if r2['status'] == 'ok' and r2['text']:
+                text = text + ' ' + r2['text']
         quotes_ok = True
         for company, label, quote in u['quotes']:
             res, ratio = match_quote(quote, text)
@@ -136,6 +143,9 @@ def main():
     tot = sum(c['total'] for c in val['coverage'].values())
     lines += ['## Coverage', '', f'{done} of {tot} facts researched across {len(val["coverage"])} companies.', '']
     report = '\n'.join(lines)
+    if only:  # a single-company check prints only; it never touches the weekly report files
+        print(report)
+        return
     os.makedirs(REPORTS, exist_ok=True)
     with open(os.path.join(REPORTS, f'{TODAY}.md'), 'w', encoding='utf8') as f:
         f.write(report)

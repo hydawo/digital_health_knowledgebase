@@ -1,0 +1,905 @@
+# Draft record for apple, researcher B, 2026-10-10. Schema: facts/_schema.yaml
+name: Apple (Apple Watch, HealthKit, SensorKit, ResearchKit)
+kind: wearable
+profile: module-01-wearables/profiles/apple-watch-healthkit.md
+watch:
+- url: https://www.researchandcare.org/investigator-support-program/
+  role: research_program
+- url: https://www.researchandcare.org/faq/
+  role: research_program
+- url: https://www.researchandcare.org/resources/healthkit-research-entitlement/
+  role: research_program
+- url: https://www.researchandcare.org/resources/accessing-sensorkit-data/
+  role: research_program
+- url: https://www.apple.com/ios/research-app/
+  role: research_program
+- url: https://developer.apple.com/programs/enroll/
+  role: developer_program
+- url: https://www.apple.com/shop/buy-watch/apple-watch
+  role: pricing
+- url: https://developer.apple.com/app-store/review/guidelines/
+  role: terms
+- url: https://developer.apple.com/support/terms/apple-developer-program-license-agreement/
+  role: terms
+- url: https://developer.apple.com/documentation/sensorkit
+  role: docs
+- url: https://developer.apple.com/documentation/healthkit
+  role: docs
+- url: https://support.apple.com/guide/certifications/apc34d2c0468b/web
+  role: trust
+- url: https://www.apple.com/legal/privacy/en-ww/
+  role: terms
+- url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K250507
+  role: regulatory
+- url: https://apps.apple.com/us/app/apple-research/id1463884356
+  role: app_store
+facts:
+- field: research_program
+  status: stated
+  value: 'Investigator Support Program: Apple devices (mostly Apple Watch; Apple Vision Pro and AirPods Pro where
+    available) and the Study App Template for approved studies; no funding'
+  confidence: Verified
+  sources:
+  - url: https://www.researchandcare.org/investigator-support-program/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: The program provides researchers with the opportunities to receive Apple devices to use in their research
+      studies, as well as access to app development resources to enhance their projects.
+  - url: https://www.researchandcare.org/investigator-support-program/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: The Investigator Support Program does not provide study sponsorship or funding.
+  - url: https://www.researchandcare.org/faq/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: The Investigator Support Program most commonly focuses on Apple Watch devices. Apple Vision Pro and AirPods
+      Pro can now be requested through this program where available.
+  recheck_by: '2026-11-09'
+  scope: Investigator Support Program
+- field: research_program
+  status: stated
+  value: 'SensorKit: a research-only framework that exposes extra iPhone and Apple Watch data types to apps granted
+    a private entitlement'
+  confidence: Verified
+  sources:
+  - url: https://www.researchandcare.org/faq/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: The SensorKit framework makes additional data types available for research use through an entitlement.
+  - url: https://www.researchandcare.org/resources/accessing-sensorkit-data/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Access to these data types is limited to research uses and requires an app to have a private entitlement,
+      which is reviewed separately for each study.
+  recheck_by: '2026-11-09'
+  scope: SensorKit
+- field: research_program
+  status: stated
+  value: 'HealthKit Research Entitlement: for health research apps, removes the iOS 27 option to limit read access
+    to 30 days and reduces access reminders; it does not gate HealthKit data types'
+  confidence: Verified
+  sources:
+  - url: https://www.researchandcare.org/resources/healthkit-research-entitlement/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: This entitlement modifies how your health research app requests access to HealthKit data.
+  - url: https://www.researchandcare.org/faq/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: No this entitlement does not gate access to HealthKit data types.
+  recheck_by: '2026-11-09'
+  scope: HealthKit Research Entitlement
+- field: research_program
+  status: stated
+  value: 'Apple Research app: Apple''s own studies with academic partners (Apple Health Study, Women''s Health Study,
+    Hearing Study) that individuals join as participants; not a route for outside investigators'
+  confidence: Verified
+  sources:
+  - url: https://www.apple.com/ios/research-app/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: We invite you to join over 350,000 people contributing to groundbreaking research using Apple Watch and
+      iPhone.
+  - url: https://www.apple.com/ios/research-app/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Initiated in early 2025, this study continues our impactful research partnership with Brigham and Women’s
+      Hospital to explore different areas of health.
+  recheck_by: '2026-11-09'
+  scope: Apple Research app
+  note: The page describes participant enrolment only; no outside-investigator access to Research app data is described.
+- field: program_eligibility
+  status: stated
+  value: Open to researchers with a study protocol; the institution must sign an Investigator Support Program Agreement
+    and show ethics board approval before devices are awarded
+  confidence: Verified
+  sources:
+  - url: https://www.researchandcare.org/investigator-support-program/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: your institution will need to complete a standard Investigator Support Program Agreement and provide
+      proof of study ethics board approval before devices can be awarded
+  recheck_by: '2026-11-09'
+  scope: Investigator Support Program
+- field: program_eligibility
+  status: stated
+  value: Study must have IRB or IEC approval; app must be exclusively for health research and for one unique study
+  confidence: Verified
+  sources:
+  - url: https://www.researchandcare.org/resources/healthkit-research-entitlement/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Your study must have approval from an Independent Ethics Committee (IEC) or Institutional Review Board
+      (IRB), ensuring participant safety, welfare, and rights.
+  - url: https://www.researchandcare.org/resources/healthkit-research-entitlement/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Your app must be exclusively designed to conduct health research. Your app must be designed for one unique
+      study.
+  recheck_by: '2026-11-09'
+  scope: HealthKit Research Entitlement
+- field: program_eligibility
+  status: stated
+  value: Research uses only, reviewed per study; the entitlement goes to the researcher, institution or company,
+    and the app must be published under that developer account (not an external developer)
+  confidence: Verified
+  sources:
+  - url: https://www.researchandcare.org/resources/accessing-sensorkit-data/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Because you, your institution, or company as the researcher will be granted the entitlement, the app
+      will need to be submitted and published under your developer account.
+  - url: https://www.researchandcare.org/resources/accessing-sensorkit-data/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: If you use an external developer, they should not submit their app under their account.
+  recheck_by: '2026-11-09'
+  scope: SensorKit
+- field: program_application
+  status: stated
+  value: Emailed application form; three review cycles a year (due January 5, April 5, September 5); decision typically
+    6 to 8 weeks after the due date; SensorKit data needs a separate entitlement request
+  confidence: Verified
+  sources:
+  - url: https://www.researchandcare.org/investigator-support-program/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Complete the Investigator Support Program application form and submit it to research_proposals@apple.com
+  - url: https://www.researchandcare.org/investigator-support-program/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: The review committee typically makes a determination 6-8 weeks after the due date in each cycle.
+  - url: https://www.researchandcare.org/investigator-support-program/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: If your proposal includes data types accessible by SensorKit, you will also need to request a SensorKit
+      entitlement
+  recheck_by: '2026-11-09'
+  scope: Investigator Support Program
+- field: program_application
+  status: stated
+  value: Research proposal form emailed to Apple; development entitlement first, then a distribution entitlement
+    after IRB approval; standard App Store review still applies
+  confidence: Verified
+  sources:
+  - url: https://www.researchandcare.org/resources/accessing-sensorkit-data/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Send your completed form to sensorkitrequest@apple.com.
+  - url: https://www.researchandcare.org/resources/accessing-sensorkit-data/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: You’ll first be granted a development entitlement to use when developing your app.
+  - url: https://www.researchandcare.org/resources/accessing-sensorkit-data/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: your app will still have to pass standard App Store review
+  recheck_by: '2026-11-09'
+  scope: SensorKit
+- field: program_application
+  status: stated
+  value: Entitlement request by the Apple Developer Program Account Holder, granted per bundle ID; app update and
+    redistribution required after grant
+  confidence: Verified
+  sources:
+  - url: https://www.researchandcare.org/resources/healthkit-research-entitlement/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Account Holders in the Apple Developer Program can submit an entitlement request.
+  - url: https://www.researchandcare.org/resources/healthkit-research-entitlement/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Requests are granted per bundle ID (the app’s unique identifier), and an app update and redistribution
+      will be required once the entitlement is granted.
+  recheck_by: '2026-11-09'
+  scope: HealthKit Research Entitlement
+- field: program_status
+  status: stated
+  value: Active; accepting applications in three cycles a year
+  confidence: Verified
+  sources:
+  - url: https://www.researchandcare.org/investigator-support-program/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Apple reviews applications in three cycles per year with due dates on January 5, April 5, and September
+      5.
+  recheck_by: '2026-11-09'
+  scope: Investigator Support Program
+- field: program_status
+  status: stated
+  value: New; requires iOS 27.1 or later
+  confidence: Verified
+  sources:
+  - url: https://www.researchandcare.org/resources/healthkit-research-entitlement/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: HealthKitResearch requires iOS 27.1 or later.
+  recheck_by: '2026-11-09'
+  scope: HealthKit Research Entitlement
+- field: program_status
+  status: stated
+  value: Active; proposals accepted by email
+  confidence: Verified
+  sources:
+  - url: https://www.researchandcare.org/resources/accessing-sensorkit-data/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Send your completed form to sensorkitrequest@apple.com.
+  - url: https://www.researchandcare.org/faq/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: You can apply for the entitlement through the SensorKit Research Proposal
+  recheck_by: '2026-11-09'
+  scope: SensorKit
+- field: developer_program_status
+  status: stated
+  value: 'Open: anyone can enrol in the Apple Developer Program after identity verification, agreeing to the licence
+    agreement and paying the annual fee; HealthKit needs no separate approval'
+  confidence: Verified
+  sources:
+  - url: https://developer.apple.com/programs/enroll/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Once your enrollment information has been verified, you’ll need to agree to the Apple Developer Program
+      License Agreement and complete your membership purchase.
+  - url: https://www.researchandcare.org/faq/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Access to HealthKit data still requires user consent.
+  recheck_by: '2026-11-09'
+- field: user_cap
+  status: stated
+  value: No fixed device limit in the Investigator Support Program, but supply is limited and quantity must be justified;
+    no participant cap published for HealthKit or SensorKit
+  confidence: Verified
+  sources:
+  - url: https://www.researchandcare.org/faq/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: While there is no specific limit, Apple has a limited number of devices available for the program.
+  - url: https://www.researchandcare.org/faq/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: In your application, please provide justification for the quantity requested.
+  recheck_by: '2026-11-09'
+  note: No participant or user cap found in the HealthKit, SensorKit or entitlement pages checked.
+- field: academic_vs_commercial
+  status: stated
+  value: HealthKit access is the same for any developer; SensorKit and the HealthKit Research Entitlement are restricted
+    to research apps; nonprofits, accredited educational institutions and government entities can request a waiver
+    of the developer fee
+  confidence: Verified
+  sources:
+  - url: https://developer.apple.com/help/account/membership/fee-waivers/
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: If you’re a nonprofit organization, accredited educational institution, or government entity and meet
+      certain requirements, you can request an Apple Developer Program fee waiver.
+  - url: https://www.researchandcare.org/resources/accessing-sensorkit-data/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Access to these data types is limited to research uses and requires an app to have a private entitlement,
+      which is reviewed separately for each study.
+  - url: https://www.researchandcare.org/resources/healthkit-research-entitlement/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Your app must be exclusively designed to conduct health research.
+  recheck_by: '2026-11-09'
+- field: device_price
+  status: stated
+  value: From $399 (US)
+  confidence: Verified
+  sources:
+  - url: https://www.apple.com/shop/buy-watch/apple-watch
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: New Apple Watch Series 12 From $399
+  recheck_by: '2026-11-09'
+  scope: Apple Watch Series 12
+- field: device_price
+  status: stated
+  value: From $799 (US)
+  confidence: Verified
+  sources:
+  - url: https://www.apple.com/shop/buy-watch/apple-watch
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: New Apple Watch Ultra 4 From $799
+  recheck_by: '2026-11-09'
+  scope: Apple Watch Ultra 4
+- field: device_price
+  status: stated
+  value: From $249 (US); no ECG app or hypertension notifications
+  confidence: Verified
+  sources:
+  - url: https://www.apple.com/shop/buy-watch/apple-watch
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Apple Watch SE 3 From $249
+  recheck_by: '2026-11-09'
+  scope: Apple Watch SE 3
+- field: subscription_price
+  status: stated
+  value: 'Optional Apple Fitness+: $9.99 per month or $79.99 per year (US) after trial'
+  confidence: Verified
+  sources:
+  - url: https://www.apple.com/apple-fitness-plus/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: then pay $9.99 per month or $79.99 annually
+  recheck_by: '2026-11-09'
+  scope: Apple Fitness+ (optional)
+  note: No Apple page checked ties HealthKit data or Watch health features to a subscription; Fitness+ is a workout
+    content service.
+- field: academic_pricing
+  status: stated
+  value: Developer Program fee waiver for approved nonprofits, accredited educational institutions and government
+    entities
+  confidence: Verified
+  sources:
+  - url: https://developer.apple.com/help/account/membership/fee-waivers/
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: If your organization is approved for an Apple Developer Program fee waiver, you won’t need to pay annual
+      membership fees.
+  recheck_by: '2026-11-09'
+  scope: Apple Developer Program
+- field: academic_pricing
+  status: stated
+  value: No published research discount on Apple Watch; devices can instead be awarded free through the Investigator
+    Support Program
+  confidence: Corroborated
+  sources:
+  - url: https://www.researchandcare.org/faq/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Apple created the Investigator Support Program to provide health researchers with the opportunity to
+      receive Apple devices for use in research studies.
+  - url: https://www.apple.com/shop/buy-watch/apple-watch
+    type: vendor_page
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+  scope: Apple Watch devices
+  note: The buy page lists consumer prices only; an education or research device discount was not found.
+- field: api_platform_fees
+  status: stated
+  value: No per-API or per-participant fee found; HealthKit and SensorKit apps need an Apple Developer Program membership
+    (99 USD a year); ResearchKit and CareKit are free
+  confidence: Verified
+  sources:
+  - url: https://developer.apple.com/programs/enroll/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: The Apple Developer Program is 99 USD per membership year.
+  - url: https://www.researchandcare.org/faq/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: There is no cost to use the ResearchKit or CareKit open source developer frameworks.
+  recheck_by: '2026-11-09'
+- field: minimum_commitment
+  status: stated
+  value: Developer Program is an annual membership; Investigator Support Program awardees owe quarterly status reports
+  confidence: Verified
+  sources:
+  - url: https://developer.apple.com/programs/enroll/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: The Apple Developer Program is 99 USD per membership year.
+  - url: https://www.researchandcare.org/investigator-support-program/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: After devices have been distributed, investigators will provide quarterly status reports on the research
+      and share details of any planned publications.
+  recheck_by: '2026-11-09'
+- field: quote_required
+  status: stated
+  value: 'No: device, membership and Fitness+ prices are published; Investigator Support Program devices are by
+    application, not quote'
+  confidence: Verified
+  sources:
+  - url: https://www.apple.com/shop/buy-watch/apple-watch
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: New Apple Watch Series 12 From $399
+  - url: https://developer.apple.com/programs/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: $99 annual membership
+  recheck_by: '2026-11-09'
+- field: raw_streams
+  status: stated
+  value: Raw photoplethysmogram (PPG) and ECG samples, accelerometer and rotation rate via SensorKit with a research
+    entitlement
+  confidence: Verified
+  sources:
+  - url: https://developer.apple.com/documentation/sensorkit
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: enables an app to access select raw data, or metrics that the system processes from a sensor
+    fetch_url: https://developer.apple.com/tutorials/data/documentation/sensorkit.json
+  - url: https://developer.apple.com/documentation/sensorkit/srsensor
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: A sensor that streams sample PPG sensor data.
+    fetch_url: https://developer.apple.com/tutorials/data/documentation/sensorkit/srsensor.json
+  - url: https://developer.apple.com/documentation/sensorkit/srsensor
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: A sensor that streams sample ECG sensor data.
+    fetch_url: https://developer.apple.com/tutorials/data/documentation/sensorkit/srsensor.json
+  - url: https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramsample
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: Apple Watch uses LED lights, paired with light-sensitive photodiodes (PD), to track the heartbeat-induced
+      pulsations.
+    fetch_url: https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramsample.json
+  recheck_by: '2026-11-09'
+  scope: SensorKit
+- field: raw_streams
+  status: conflict
+  value: Apple research FAQ says raw ECG is not available through HealthKit, but HealthKit documentation describes
+    a query returning the voltage measurements of an ECG sample
+  confidence: Unclear
+  sources:
+  - url: https://www.researchandcare.org/faq/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: No. You cannot access raw ECG data through HealthKit.
+  - url: https://developer.apple.com/documentation/healthkit/hkelectrocardiogramquery
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: A query that returns the underlying voltage measurements for an electrocardiogram sample.
+    fetch_url: https://developer.apple.com/tutorials/data/documentation/healthkit/hkelectrocardiogramquery.json
+  recheck_by: '2026-11-09'
+  scope: HealthKit ECG
+  note: The two may use "raw" differently (stored ECG-app voltages vs live sensor signal). Confirm with Apple before
+    relying on either.
+- field: raw_streams
+  status: stated
+  value: Beat-to-beat heartbeat series samples are stored in HealthKit, but real-time heartbeat data is not available
+  confidence: Verified
+  sources:
+  - url: https://developer.apple.com/documentation/healthkit/hkheartbeatseriessample
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: A sample that represents a series of heartbeats.
+    fetch_url: https://developer.apple.com/tutorials/data/documentation/healthkit/hkheartbeatseriessample.json
+  - url: https://www.researchandcare.org/faq/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: No. You cannot access real-time heartbeat data.
+  recheck_by: '2026-11-09'
+  scope: HealthKit heartbeat
+- field: raw_streams
+  status: stated
+  value: Accelerometer recording at 50 Hz via Core Motion CMSensorRecorder, without a research entitlement
+  confidence: Verified
+  sources:
+  - url: https://developer.apple.com/documentation/coremotion/cmsensorrecorder/recordaccelerometer(forduration:)
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: the system begins capturing accelerometer data at a sample rate of 50 Hz
+    fetch_url: https://developer.apple.com/tutorials/data/documentation/coremotion/cmsensorrecorder/recordaccelerometer(forduration:).json
+  recheck_by: '2026-11-09'
+  scope: Core Motion
+- field: derived_metrics
+  status: stated
+  value: HealthKit types include heart rate, resting heart rate, HRV (SDNN), respiratory rate, oxygen saturation,
+    VO2 max and sleep stages (awake, core, deep, REM), among many others
+  confidence: Verified
+  sources:
+  - url: https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: A quantity sample type that measures the user’s resting heart rate.
+    fetch_url: https://developer.apple.com/tutorials/data/documentation/healthkit/hkquantitytypeidentifier.json
+  - url: https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: A quantity sample type that measures the standard deviation of heartbeat intervals.
+    fetch_url: https://developer.apple.com/tutorials/data/documentation/healthkit/hkquantitytypeidentifier.json
+  - url: https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: A quantity sample type that measures the user’s respiratory rate.
+    fetch_url: https://developer.apple.com/tutorials/data/documentation/healthkit/hkquantitytypeidentifier.json
+  - url: https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: A quantity sample type that measures the user’s oxygen saturation.
+    fetch_url: https://developer.apple.com/tutorials/data/documentation/healthkit/hkquantitytypeidentifier.json
+  - url: https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: A quantity sample that measures the maximal oxygen consumption during exercise.
+    fetch_url: https://developer.apple.com/tutorials/data/documentation/healthkit/hkquantitytypeidentifier.json
+  - url: https://developer.apple.com/documentation/healthkit/hkcategoryvaluesleepanalysis
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: These detailed samples show when the user was awake, in core sleep, in deep sleep, or in rapid eye movement
+      (REM) sleep.
+    fetch_url: https://developer.apple.com/tutorials/data/documentation/healthkit/hkcategoryvaluesleepanalysis.json
+  recheck_by: '2026-11-09'
+  scope: HealthKit
+- field: derived_metrics
+  status: stated
+  value: SensorKit metrics include device usage, keyboard metrics, messages and phone usage, visits, wrist detection
+    and ambient light
+  confidence: Verified
+  sources:
+  - url: https://www.researchandcare.org/resources/accessing-sensorkit-data/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Keyboard (various metrics about the length of words, time between keystrokes, and errors a user makes
+      while typing on their iPhone)
+  - url: https://www.researchandcare.org/resources/accessing-sensorkit-data/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Wrist detection (for Apple Watch users - the time the Watch is worn and the orientation)
+  recheck_by: '2026-11-09'
+  scope: SensorKit
+- field: sampling_rates
+  status: stated
+  value: Accelerometer 50 Hz (CMSensorRecorder, up to 12 hours per call); heart rate is higher frequency only during
+    workouts and ECG sessions (or via SensorKit); ECG sampling frequency is reported per sample
+  confidence: Verified
+  sources:
+  - url: https://developer.apple.com/documentation/coremotion/cmsensorrecorder/recordaccelerometer(forduration:)
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: the system begins capturing accelerometer data at a sample rate of 50 Hz
+    fetch_url: https://developer.apple.com/tutorials/data/documentation/coremotion/cmsensorrecorder/recordaccelerometer(forduration:).json
+  - url: https://developer.apple.com/documentation/coremotion/cmsensorrecorder/recordaccelerometer(forduration:)
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: You may specify a time interval of up to 43,200 seconds (12 hours).
+    fetch_url: https://developer.apple.com/tutorials/data/documentation/coremotion/cmsensorrecorder/recordaccelerometer(forduration:).json
+  - url: https://www.researchandcare.org/faq/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Higher frequency Heart Rate data is available within HealthKit for samples collected during Workouts
+      and ECG sessions.
+  - url: https://developer.apple.com/documentation/healthkit/hkelectrocardiogram/samplingfrequency
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: The frequency at which the Apple Watch sampled the voltage.
+    fetch_url: https://developer.apple.com/tutorials/data/documentation/healthkit/hkelectrocardiogram/samplingfrequency.json
+  recheck_by: '2026-11-09'
+  note: No numeric background heart-rate interval or ECG rate is given in the developer pages checked.
+- field: history_depth
+  status: stated
+  value: All history back to a systemwide earliest permitted date; from iOS 27 participants can limit an app to
+    the past 30 days unless the app holds the HealthKit Research Entitlement
+  confidence: Verified
+  sources:
+  - url: https://developer.apple.com/documentation/healthkit/hkhealthstore/earliestpermittedsampledate()
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: HealthKit doesn’t allow saving or querying samples prior to this date.
+    fetch_url: https://developer.apple.com/tutorials/data/documentation/healthkit/hkhealthstore/earliestpermittedsampledate().json
+  - url: https://www.researchandcare.org/resources/healthkit-research-entitlement/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: New HealthKit permission requests will not include the option to limit historical data to 30 days
+  recheck_by: '2026-11-09'
+  scope: HealthKit
+- field: history_depth
+  status: stated
+  value: 7 days of prior data for an active sensor, after a 24-hour holding period
+  confidence: Verified
+  sources:
+  - url: https://developer.apple.com/documentation/sensorkit/srsensorreader
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: An app has access to 7 days of prior recorded data for an active sensor.
+    fetch_url: https://developer.apple.com/tutorials/data/documentation/sensorkit/srsensorreader.json
+  - url: https://developer.apple.com/documentation/sensorkit/srfetchrequest
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: SensorKit places a 24-hour holding period on newly recorded data before an app can access it.
+    fetch_url: https://developer.apple.com/tutorials/data/documentation/sensorkit/srfetchrequest.json
+  recheck_by: '2026-11-09'
+  scope: SensorKit
+- field: history_depth
+  status: stated
+  value: Recorded accelerometer data stays available for up to three days
+  confidence: Verified
+  sources:
+  - url: https://developer.apple.com/documentation/coremotion/cmsensorrecorder/recordaccelerometer(forduration:)
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: The collected data remains accessible to your app for up to three days.
+    fetch_url: https://developer.apple.com/tutorials/data/documentation/coremotion/cmsensorrecorder/recordaccelerometer(forduration:).json
+  recheck_by: '2026-11-09'
+  scope: Core Motion CMSensorRecorder
+- field: export_routes
+  status: stated
+  value: 'On-device only: the study iOS app reads HealthKit (and SensorKit with entitlement) after participant consent
+    and uploads to the researcher; participants can also export all Health data as XML; no Apple cloud API'
+  confidence: Verified
+  sources:
+  - url: https://www.researchandcare.org/faq/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Data collected by Apple Watch is available to your iOS study app using the HealthKit API.
+  - url: https://www.researchandcare.org/faq/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: You will need to develop an iOS app for your research that allows participants in a research study to
+      consent to sharing this data with you.
+  - url: https://support.apple.com/guide/iphone/share-your-health-data-iph5ede58c3d/ios
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: You can export all of your health and fitness data from Health in XML format
+  recheck_by: '2026-11-09'
+  note: '"No Apple cloud API" is inferred from the FAQ routing all access through an iOS app; no Apple-hosted research
+    API was found.'
+- field: rate_limits
+  status: not_applicable
+  recheck_by: '2026-11-09'
+  note: HealthKit and SensorKit are on-device frameworks read by the study app; there is no Apple-hosted web API
+    to rate-limit. CMSensorRecorder limits a single recording to 12 hours.
+- field: retention_terms
+  status: stated
+  value: Apps may not store personal health information in iCloud; SensorKit entitlement adds terms on data use
+    and handling (not public); the SensorKit holding period lets users delete data before apps see it
+  confidence: Verified
+  sources:
+  - url: https://developer.apple.com/app-store/review/guidelines/
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: may not store personal health information in iCloud
+  - url: https://www.researchandcare.org/resources/accessing-sensorkit-data/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Accessing SensorKit data requires additional entitlement agreement to certain terms and conditions for
+      use and handling.
+  - url: https://developer.apple.com/documentation/sensorkit/srfetchrequest
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: This gives the user an opportunity to delete any data they don’t want to share with the app.
+    fetch_url: https://developer.apple.com/tutorials/data/documentation/sensorkit/srfetchrequest.json
+  recheck_by: '2026-11-09'
+- field: ai_training_terms
+  status: stated
+  value: No HealthKit clause names AI or model training; HealthKit data may be used only for health, motion or fitness
+    services, and sharing personal data with third-party AI needs disclosure and explicit permission
+  confidence: Verified
+  sources:
+  - url: https://developer.apple.com/support/terms/apple-developer-program-license-agreement/
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: for any purpose other than providing health, motion, and/or fitness services in connection with Your
+      Application (e.g., not for serving advertising)
+  - url: https://developer.apple.com/app-store/review/guidelines/
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: You must clearly disclose where personal data will be shared with third parties, including with third-party
+      AI, and obtain explicit permission before doing so.
+  recheck_by: '2026-11-09'
+  note: Searched the licence agreement and review guidelines; the only model-training ban found applies to accessory
+    notification data, not health data.
+- field: deprecations
+  status: stated
+  value: No shutdowns found. iOS 27 adds participant controls (limit read access to 30 days, periodic access reminders);
+    the HealthKit Research Entitlement (iOS 27.1+) removes the 30-day option for research apps
+  confidence: Verified
+  sources:
+  - url: https://www.researchandcare.org/resources/healthkit-research-entitlement/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Starting in iOS 27, participants will have more granular control over how they share HealthKit data
+  - url: https://www.researchandcare.org/resources/healthkit-research-entitlement/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: HealthKitResearch requires iOS 27.1 or later.
+  recheck_by: '2026-11-09'
+  note: The Apple Heart and Movement Study is no longer listed on the Research app page, which now lists the Apple
+    Health Study (started early 2025); no closure notice was found.
+- field: baa
+  status: stated
+  value: No BAA found; iCloud terms bar covered entities and business associates from using iCloud for PHI or in
+    a way that would make Apple a business associate
+  confidence: Corroborated
+  sources:
+  - url: https://www.apple.com/legal/internet-services/icloud/
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: You agree that you will not use any component, function or other facility of the Service to create, receive,
+      maintain or transmit any “protected health information”
+  recheck_by: '2027-01-08'
+  note: With HealthKit, data flows from the participant device to the researcher app and servers, so Apple is not
+    in the data path for study data.
+- field: dpa
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://www.apple.com/legal/privacy/en-ww/
+    type: vendor_legal
+    retrieved: '2026-10-10'
+  - url: https://developer.apple.com/support/terms/apple-developer-program-license-agreement/
+    type: vendor_legal
+    retrieved: '2026-10-10'
+  - url: https://support.apple.com/guide/certifications/apc34d2c0468b/web
+    type: vendor_docs
+    retrieved: '2026-10-10'
+  recheck_by: '2027-01-08'
+  note: No data processing agreement for HealthKit, SensorKit or researcher use was found. Apple is not the processor
+    of study data collected by a researcher app.
+- field: hipaa_statement
+  status: stated
+  value: Research app data is stored in an Apple system designed to meet HIPAA technical safeguard requirements;
+    iCloud may not be used for PHI by covered entities
+  confidence: Corroborated
+  sources:
+  - url: https://www.apple.com/ios/research-app/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Once shared, it is stored securely in a system within Apple that is designed to meet the technical safeguard
+      requirements of the Health Insurance Portability and Accountability Act.
+  - url: https://www.apple.com/legal/internet-services/icloud/
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: You agree that you will not use any component, function or other facility of the Service to create, receive,
+      maintain or transmit any “protected health information”
+  recheck_by: '2027-01-08'
+- field: gdpr_statement
+  status: stated
+  value: EEA, UK and Swiss personal data is controlled by Apple Distribution International Limited (Ireland); transfers
+    use Standard Contractual Clauses
+  confidence: Corroborated
+  sources:
+  - url: https://www.apple.com/legal/privacy/en-ww/
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: Personal data relating to individuals in the European Economic Area, the United Kingdom, and Switzerland
+      is controlled by Apple Distribution International Limited in Ireland.
+  - url: https://www.apple.com/legal/privacy/en-ww/
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: Apple’s international transfer of personal data collected in the European Economic Area, the United Kingdom,
+      and Switzerland is governed by Standard Contractual Clauses
+  recheck_by: '2027-01-08'
+- field: iso27001
+  status: stated
+  value: ISO/IEC 27001 and 27018 for Apple internet services including iCloud, with annual independent attestation;
+    certificates listed in Coalfire directory
+  confidence: Corroborated
+  sources:
+  - url: https://support.apple.com/guide/certifications/apc34d2c0468b/web
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: Apple maintains certifications in compliance with the ISO/IEC 27001 and ISO/IEC 27018 standards to enable
+      Apple customers to address their regulatory and contractual obligations.
+  - url: https://support.apple.com/guide/certifications/apc34d2c0468b/web
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: Apple undergoes an independent attestation by an accredited registrar on an annual basis.
+  recheck_by: '2027-01-08'
+  note: HealthKit storage is on-device, so the certification covers iCloud sync, not the researcher pipeline.
+- field: soc2
+  status: stated
+  value: SOC 3 reports published for Private Cloud Compute provisioning only
+  confidence: Corroborated
+  sources:
+  - url: https://support.apple.com/guide/certifications/apc95a31b9d8/web
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: Apple commissioned an independent examination of its controls over the Private Cloud Compute (PCC) Provisioning
+      System
+  recheck_by: '2027-01-08'
+  scope: Private Cloud Compute
+- field: soc2
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://support.apple.com/guide/certifications/apc3cea61877b/web
+    type: vendor_docs
+    retrieved: '2026-10-10'
+  - url: https://support.apple.com/guide/certifications/apc34d2c0468b/web
+    type: vendor_docs
+    retrieved: '2026-10-10'
+  - url: https://support.apple.com/guide/certifications/apc95a31b9d8/web
+    type: vendor_docs
+    retrieved: '2026-10-10'
+  recheck_by: '2027-01-08'
+  scope: Health services
+  note: No SOC 2 report for HealthKit, iCloud Health or the Research app was found on Apple certification pages.
+- field: fda_clearances
+  status: stated
+  value: 'Apple Watch features: ECG app (De Novo DEN180044, 2018; ECG 2.0 K201525), Irregular Rhythm Notification
+    (DEN180042; K212516; K231173), AFib History (K213971), Sleep Apnea Notification (K240929), Hypertension Notification
+    (K250507, 2025-09-11)'
+  confidence: Verified
+  sources:
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/denovo.cfm?id=DEN180044
+    type: regulator_db
+    retrieved: '2026-10-10'
+    quote: ECG App
+    fetch_url: https://api.fda.gov/device/510k.json?search=k_number:DEN180044
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/denovo.cfm?id=DEN180042
+    type: regulator_db
+    retrieved: '2026-10-10'
+    quote: Irregular Rhythm Notification Feature
+    fetch_url: https://api.fda.gov/device/510k.json?search=k_number:DEN180042
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K201525
+    type: regulator_db
+    retrieved: '2026-10-10'
+    quote: ECG App
+    fetch_url: https://api.fda.gov/device/510k.json?search=k_number:K201525
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K212516
+    type: regulator_db
+    retrieved: '2026-10-10'
+    quote: IRNF App
+    fetch_url: https://api.fda.gov/device/510k.json?search=k_number:K212516
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K213971
+    type: regulator_db
+    retrieved: '2026-10-10'
+    quote: Atrial Fibrillation History Feature
+    fetch_url: https://api.fda.gov/device/510k.json?search=k_number:K213971
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K231173
+    type: regulator_db
+    retrieved: '2026-10-10'
+    quote: Irregular Rhythm Notification Feature (IRNF)
+    fetch_url: https://api.fda.gov/device/510k.json?search=k_number:K231173
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K240929
+    type: regulator_db
+    retrieved: '2026-10-10'
+    quote: Sleep Apnea Notification Feature (SANF)
+    fetch_url: https://api.fda.gov/device/510k.json?search=k_number:K240929
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K250507
+    type: regulator_db
+    retrieved: '2026-10-10'
+    quote: Hypertension Notification Feature (HTNF)
+    fetch_url: https://api.fda.gov/device/510k.json?search=k_number:K250507
+  recheck_by: '2027-01-08'
+  note: 'accessdata.fda.gov blocks the monitor user agent, so quotes are checked against openFDA (fetch_url). Other
+    Apple authorisations not for Apple Watch: DEN230081 Hearing Aid Feature (AirPods), K242058 and K250143 Digital
+    Prism Correction, K253582 Medical Imaging Calibration.'
+- field: data_residency
+  status: stated
+  value: HealthKit data is stored on the device; iCloud Health sync is end-to-end encrypted with keys Apple does
+    not hold; Research app data is stored in an Apple system; EEA personal data is controlled by Apple Distribution
+    International (Ireland)
+  confidence: Verified
+  sources:
+  - url: https://developer.apple.com/documentation/healthkit/protecting-user-privacy
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: The user’s device stores all HealthKit data locally.
+    fetch_url: https://developer.apple.com/tutorials/data/documentation/healthkit/protecting-user-privacy.json
+  - url: https://support.apple.com/en-us/102651
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: Apple doesn't have the encryption keys for these categories
+  - url: https://www.apple.com/ios/research-app/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Once shared, it is stored securely in a system within Apple
+  - url: https://www.apple.com/legal/privacy/en-ww/
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: Personal data relating to individuals in the European Economic Area, the United Kingdom, and Switzerland
+      is controlled by Apple Distribution International Limited in Ireland.
+  recheck_by: '2027-01-08'
+  note: No data residency choice is offered; for study data the researcher chooses where the app uploads.

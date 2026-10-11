@@ -1,0 +1,581 @@
+# Draft record for oura (researcher A, 2026-10-10). Schema: facts/_schema.yaml
+name: Oura
+kind: wearable
+profile: module-01-wearables/profiles/oura.md
+watch:
+  - url: https://cloud.ouraring.com/v2/docs
+    role: docs
+    fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+  - url: https://cloud.ouraring.com/legal/api-agreement
+    role: terms
+  - url: https://cloud.ouraring.com/docs/
+    role: developer_program
+  - url: https://partnersupport.ouraring.com/hc/en-us/articles/20949682312211-Using-the-Oura-API
+    role: developer_program
+  - url: https://organizations.ouraring.com/solutions/researchers
+    role: research_program
+  - url: https://ouraring.com/membership
+    role: pricing
+  - url: https://support.ouraring.com/hc/en-us/articles/360025587353
+    role: pricing
+  - url: https://ouraring.com/store/rings/oura-ring-5/silver
+    role: pricing
+  - url: https://ouraring.com/security
+    role: trust
+  - url: https://ouraring.com/assets/documents/public-security-whitepaper.pdf
+    role: trust
+  - url: https://ouraring.com/privacy-policy
+    role: terms
+  - url: https://support.ouraring.com/hc/en-us/articles/360025441594
+    role: docs
+  - url: https://apps.apple.com/us/app/oura-research/id6748037636
+    role: app_store
+  - url: https://api.fda.gov/device/registrationlisting.json?search=registration.owner_operator.firm_name:oura
+    role: regulatory
+facts:
+# ---------------- Research access ----------------
+- field: research_program
+  status: stated
+  value: "Oura for research: a commercial offering for research teams combining Oura Ring, the Oura Enterprise Platform (dashboards, group management, download by individual or group, Oura API integration, CSV/JSON export) and a separate Oura Research App for enrolled participants, in which the research sponsor is the data controller and Oura may act as processor."
+  confidence: Verified
+  sources:
+    - url: https://organizations.ouraring.com/solutions/researchers
+      type: vendor_page
+      quote: "Oura offers a solution for researchers, combining the unparalleled accuracy of Oura Ring with customizable dashboards and simple data integration."
+      retrieved: 2026-10-10
+    - url: https://ouraring.com/privacy-policy
+      type: vendor_legal
+      quote: "The Oura Research App is a separate application that enables individuals to participate in research studies conducted by or on behalf of Oura or an independent research sponsor (“Research Sponsor”)."
+      retrieved: 2026-10-10
+    - url: https://apps.apple.com/us/app/oura-research/id6748037636
+      type: app_store
+      quote: "Oura Research App collects data from your Oura Ring and shares it securely with your study's research team with your consent."
+      retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+  note: No free or grant-style academic program found; the offering is sold through the Oura for Organizations sales channel. Oura Labs (in-app, member-facing studies) is a different thing and not a researcher access route.
+- field: program_eligibility
+  status: stated
+  value: The research page lists academic researchers, life science researchers, academic medical centers, government and non-profits, contract research organizations and consumer product researchers as target customers. No formal eligibility criteria are published.
+  confidence: Verified
+  sources:
+    - url: https://organizations.ouraring.com/solutions/researchers
+      type: vendor_page
+      quote: "Academic researchers Life science researchers Academic medical centers Government and non-profits Contract research organizations (CRO) Consumer product researchers"
+      retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+- field: program_application
+  status: not_public
+  confidence: Verified
+  sources:
+    - url: https://organizations.ouraring.com/solutions/researchers
+      type: vendor_page
+      retrieved: 2026-10-10
+    - url: https://partnersupport.ouraring.com
+      type: vendor_docs
+      retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+  note: The research page offers only a "Contact us" sales form. No application, review or approval process for the research offering is published. The separate self-serve API route (register an app, submit for review above 10 users) is covered under developer_program_status and user_cap.
+- field: program_status
+  status: stated
+  value: Active. The research page (2026) markets the offering and claims 200+ active research collaborations; the Oura Research App had iOS releases through version 1.0.11 (Sep 15).
+  confidence: Corroborated
+  sources:
+    - url: https://organizations.ouraring.com/solutions/researchers
+      type: vendor_page
+      quote: "200+ active research collaborations worldwide"
+      retrieved: 2026-10-10
+    - url: https://apps.apple.com/us/app/oura-research/id6748037636
+      type: app_store
+      quote: "Oura Research App collects data from your Oura Ring and shares it securely with your study's research team with your consent."
+      retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+- field: developer_program_status
+  status: stated
+  value: Open. Anyone with an Oura account can register an OAuth2 API application (now through the developer portal at developer.ouraring.com; the older cloud.ouraring.com portal still edits existing apps). Personal access tokens were withdrawn in December 2025, so OAuth2 is the only route.
+  confidence: Verified
+  sources:
+    - url: https://partnersupport.ouraring.com/hc/en-us/articles/20949682312211-Using-the-Oura-API
+      type: vendor_docs
+      quote: "You can use the Oura API by creating an API application in our developer portal ."
+      retrieved: 2026-10-10
+    - url: https://cloud.ouraring.com/v2/docs
+      fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+      type: vendor_docs
+      quote: "Please note that personal access tokens were deprecated in December 2025 and are no longer available for use."
+      retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+- field: user_cap
+  status: stated
+  value: An API application is limited to 10 users until Oura approves it; after approval there is no user limit. Approval is requested from the application's page.
+  confidence: Verified
+  sources:
+    - url: https://cloud.ouraring.com/v2/docs
+      fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+      type: vendor_docs
+      quote: "API Applications are limited to **10** users before requiring approval from Oura. There is no limit once an application is approved."
+      retrieved: 2026-10-10
+    - url: https://cloud.ouraring.com/docs/
+      type: vendor_docs
+      quote: "By default, API Applications have a ten user limit. If you want to release your application to a wider audience, your application needs to be approved. Once you have finished developing your application, you can submit it for review from the application's page."
+      retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+- field: academic_vs_commercial
+  status: stated
+  value: The public API agreement makes no academic/commercial distinction (one agreement for all API users, no fees today, but Oura reserves the right to introduce differentiated pricing for business users). On the Enterprise Platform, Oura says academic researchers can access premium metrics; what that covers is not defined.
+  confidence: Corroborated
+  sources:
+    - url: https://organizations.ouraring.com/solutions/researchers
+      type: vendor_page
+      quote: "Academic researchers can access premium metrics"
+      retrieved: 2026-10-10
+    - url: https://cloud.ouraring.com/legal/api-agreement
+      type: vendor_legal
+      quote: "Oura reserves the right to charge you fees for use of the MCP Server, the Oura API, or for access to the Oura Platform in the future at its discretion, including, without limitation, rated pricing and/or differentiated pricing for business users. Oura will provide you with notice in the event Oura decides to start charging for such use or access."
+      retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+# ---------------- Pricing ----------------
+- field: device_price
+  scope: Oura Ring 5
+  status: stated
+  value: USD 399 (Silver finish, US store)
+  confidence: Verified
+  sources:
+    - url: https://ouraring.com/store/rings/oura-ring-5/silver
+      type: vendor_page
+      quote: "Silver – $399"
+      retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+  note: Other finishes may be priced differently; not checked one by one.
+- field: device_price
+  scope: Oura Ring 4
+  status: stated
+  value: USD 349 (Silver finish, US store)
+  confidence: Verified
+  sources:
+    - url: https://ouraring.com/store/rings/oura-ring-4/silver
+      type: vendor_page
+      quote: "Silver – $349"
+      retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+- field: device_price
+  scope: Oura Ring 4 Ceramic
+  status: stated
+  value: USD 399 (Cloud finish, US store)
+  confidence: Verified
+  sources:
+    - url: https://ouraring.com/store/rings/oura-ring-4-ceramic/cloud
+      type: vendor_page
+      quote: "Cloud – $399"
+      retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+- field: subscription_price
+  status: stated
+  value: Oura Membership USD 5.99/month or USD 69.99/year (US, before tax); EUR 5.99/month or EUR 69.99/year in the EU; first month free for new members. Required for Gen3 and later rings to reach data through the API.
+  confidence: Verified
+  sources:
+    - url: https://support.ouraring.com/hc/en-us/articles/360025587353
+      type: vendor_docs
+      quote: "Oura Membership is available for $5.99/month and $69.99/year in the US, and 5.99 €/month and 69.99 €/year in the European Union."
+      retrieved: 2026-10-10
+    - url: https://ouraring.com/membership
+      type: vendor_page
+      quote: "$5.99 USD/month or $69.99 USD/annually before tax for US members"
+      retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+- field: academic_pricing
+  status: not_public
+  confidence: Verified
+  sources:
+    - url: https://organizations.ouraring.com/solutions/researchers
+      type: vendor_page
+      retrieved: 2026-10-10
+    - url: https://ouraring.com/membership
+      type: vendor_page
+      retrieved: 2026-10-10
+    - url: https://partnersupport.ouraring.com/hc/en-us/articles/45053628755347-Using-the-Bulk-Order-Portal
+      type: vendor_docs
+      retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+  note: No research or academic discount is published; organizational pricing is set by quote.
+- field: api_platform_fees
+  scope: Oura API
+  status: stated
+  value: No API fee is published or charged today, but Oura reserves the right to start charging (including differentiated pricing for business users) with notice. Each Gen3+ participant needs an active Oura Membership for their data to be reachable through the API, which is the effective per-participant cost.
+  confidence: Verified
+  sources:
+    - url: https://cloud.ouraring.com/legal/api-agreement
+      type: vendor_legal
+      quote: "Oura reserves the right to charge you fees for use of the MCP Server, the Oura API, or for access to the Oura Platform in the future at its discretion, including, without limitation, rated pricing and/or differentiated pricing for business users. Oura will provide you with notice in the event Oura decides to start charging for such use or access."
+      retrieved: 2026-10-10
+    - url: https://partnersupport.ouraring.com/hc/en-us/articles/20949682312211-Using-the-Oura-API
+      type: vendor_docs
+      quote: "Oura Ring Gen3 users without active Oura Membership will no longer be able to access their data through the Oura API."
+      retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+- field: api_platform_fees
+  scope: Oura Enterprise Platform
+  status: not_public
+  confidence: Verified
+  sources:
+    - url: https://partnersupport.ouraring.com
+      type: vendor_docs
+      retrieved: 2026-10-10
+    - url: https://organizations.ouraring.com/solutions/researchers
+      type: vendor_page
+      retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+  note: The Enterprise Support Center describes the Enterprise Platform as a "licensed platform"; licence fees are not published.
+- field: minimum_commitment
+  status: not_public
+  confidence: Verified
+  sources:
+    - url: https://partnersupport.ouraring.com/hc/en-us/articles/45053628755347-Using-the-Bulk-Order-Portal
+      type: vendor_docs
+      retrieved: 2026-10-10
+    - url: https://partnersupport.ouraring.com/hc/en-us/articles/29588952984723-Managing-Oura-Membership-for-Organizations
+      type: vendor_docs
+      retrieved: 2026-10-10
+    - url: https://organizations.ouraring.com/solutions/researchers
+      type: vendor_page
+      retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+  note: No minimum order or term is published. Organization-paid memberships do not auto-renew; Oura contacts administrators at least 30 days before expiry, and participants are then asked for a personal payment method.
+- field: quote_required
+  status: stated
+  value: Yes for organizational purchases. Bulk orders start from a quote prepared by an Oura point of contact, and the Enterprise Platform is a licensed product sold via the Contact us form. Consumer rings and memberships have public list prices.
+  confidence: Verified
+  sources:
+    - url: https://partnersupport.ouraring.com/hc/en-us/articles/45053628755347-Using-the-Bulk-Order-Portal
+      type: vendor_docs
+      quote: "Oura POC will provide an order quote to sign for your purchase"
+      retrieved: 2026-10-10
+    - url: https://partnersupport.ouraring.com
+      type: vendor_docs
+      quote: "Enterprise Platform Monitor data and insights (licensed platform)"
+      retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+# ---------------- Data access and terms ----------------
+- field: raw_streams
+  scope: Oura API
+  status: stated
+  value: None. The API serves only processed data (scores, summaries and 5-minute heart rate/HRV series); raw PPG, accelerometer and temperature signals are not exposed. Interpreted from the docs' data-flow description and the endpoint list (no raw-signal endpoint exists in OpenAPI spec 1.41).
+  confidence: Corroborated
+  sources:
+    - url: https://cloud.ouraring.com/v2/docs
+      fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+      type: vendor_docs
+      quote: "Processed data becomes available through API endpoints"
+      retrieved: 2026-10-10
+    - url: https://cloud.ouraring.com/v2/docs
+      fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+      type: vendor_docs
+      quote: "Algorithms analyze raw data to generate insights and scores"
+      retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+  note: Corroborated rather than Verified because the absence of raw signals is inferred from the endpoint list, not stated outright. The API agreement also forbids deriving Oura's signal processing techniques.
+- field: raw_streams
+  scope: Oura Enterprise Platform
+  status: unclear
+  confidence: Unclear
+  sources:
+    - url: https://organizations.ouraring.com/solutions/researchers
+      type: vendor_page
+      quote: "Flexible data export of raw data to CSV or JSON file"
+      retrieved: 2026-10-10
+    - url: https://ouraring.com/assets/documents/public-security-whitepaper.pdf
+      type: vendor_docs
+      quote: "Research partners may receive data that has been processed to protect data subject privacy (“Research Data”)."
+      retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+  note: Marketing promises "raw data" export, but no page defines whether that means sensor-level signals or just unaggregated metrics. Needs vendor confirmation.
+- field: derived_metrics
+  status: stated
+  value: "API v2 endpoints: daily activity, readiness, sleep, SpO2, stress, resilience, cardiovascular age, VO2 max; sleep periods (staging, average and lowest HR, average HRV, respiratory rate, temperature deviation); sleep time recommendations; heart rate series; sessions; workouts; tags and enhanced tags; rest mode periods; ring configuration and battery level; personal info. Users must consent to each data type."
+  confidence: Verified
+  sources:
+    - url: https://partnersupport.ouraring.com/hc/en-us/articles/28571089902227-Metrics-Available-via-the-Oura-API
+      type: vendor_docs
+      quote: "Temperature Deviation from Baseline SpO2 average"
+      retrieved: 2026-10-10
+    - url: https://cloud.ouraring.com/v2/docs
+      fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+      type: vendor_docs
+      quote: "Oura users **must provide consent** to share each data type an API Application has access to."
+      retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+  note: Endpoint list read from OpenAPI spec openapi-1.41.json (paths under /v2/usercollection/).
+- field: sampling_rates
+  status: stated
+  value: Heart rate and HRV time series at 5-minute resolution; 30-second movement classification and 5-minute activity classification strings; sleep HR averages computed from 30-second samples (differs from the app, which uses 5-minute aggregates).
+  confidence: Verified
+  sources:
+    - url: https://cloud.ouraring.com/v2/docs
+      fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+      type: vendor_docs
+      quote: "Heart rate is provided at 5-minute increments."
+      retrieved: 2026-10-10
+    - url: https://partnersupport.ouraring.com/hc/en-us/articles/28571089902227-Metrics-Available-via-the-Oura-API
+      type: vendor_docs
+      quote: "Heart rate time series (5-min resolution) Heart rate variability average Heart rate variability time series (5-min resolution)"
+      retrieved: 2026-10-10
+    - url: https://cloud.ouraring.com/v2/docs
+      fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+      type: vendor_docs
+      quote: "30-second movement classification for the period"
+      retrieved: 2026-10-10
+    - url: https://cloud.ouraring.com/v2/docs
+      fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+      type: vendor_docs
+      quote: "this is the average calculated by ecore (based on 30-second samples) which is different from what is shown in the app"
+      retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+- field: history_depth
+  scope: Oura API
+  status: not_public
+  confidence: Verified
+  sources:
+    - url: https://cloud.ouraring.com/v2/docs
+      fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+      type: vendor_docs
+      retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+  note: No lookback limit is documented. The docs advise one historical request when a user first connects, then webhooks, which implies back-fill is possible but does not state how far.
+- field: history_depth
+  scope: Membership Hub export
+  status: stated
+  value: All of a user's Oura data, exportable as CSV, with or without an active membership.
+  confidence: Verified
+  sources:
+    - url: https://ouraring.com/membership
+      type: vendor_page
+      quote: "Even without a membership, you can export all of your Oura data in CSV format through the Membership Hub."
+      retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+- field: export_routes
+  status: stated
+  value: "(1) Oura API v2, OAuth2 only, with webhooks recommended (about 30 s after app sync); (2) Oura MCP Server, the only permitted route for use with LLMs; (3) participant self-export via Membership Hub (CSV, up to 10 days to prepare, available without membership); (4) Shareable Reports PDF; (5) Oura Enterprise Platform download by individual or group, CSV/JSON export and Enterprise API; (6) Oura Research App for sponsor-run studies. Oura on the Web was discontinued on 5 Oct 2026."
+  confidence: Verified
+  sources:
+    - url: https://cloud.ouraring.com/v2/docs
+      fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+      type: vendor_docs
+      quote: "Webhook notifications come approximately 30 seconds after data syncs from the mobile app"
+      retrieved: 2026-10-10
+    - url: https://support.ouraring.com/hc/en-us/articles/360025441594
+      type: vendor_docs
+      quote: "Note that it may take up to 10 days from the time of request before your data is available for download"
+      retrieved: 2026-10-10
+    - url: https://organizations.ouraring.com/solutions/researchers
+      type: vendor_page
+      quote: "Integrate data into existing systems with Oura API"
+      retrieved: 2026-10-10
+    - url: https://cloud.ouraring.com/legal/api-agreement
+      type: vendor_legal
+      quote: "You shall not use, and shall not permit any third party to use, the Oura API to develop, train, fine-tune, evaluate, prompt, or otherwise provide input or data to any AI Model or AI Platform."
+      retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+- field: rate_limits
+  status: stated
+  value: 5,000 requests per 5-minute period. Limits apply per access token and per application (aggregate across all a study's participants); a 429 response carries Retry-After and X-RateLimit headers. Higher limits on request to api-support@ouraring.com.
+  confidence: Verified
+  sources:
+    - url: https://cloud.ouraring.com/v2/docs
+      fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+      type: vendor_docs
+      quote: "The Oura API is limited to 5000 requests per 5-minute period."
+      retrieved: 2026-10-10
+    - url: https://cloud.ouraring.com/v2/docs
+      fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+      type: vendor_docs
+      quote: "a per-application limit, which caps the aggregate traffic across all of an application's end-user tokens"
+      retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+  note: The 5000/5-min figure appears in the FAQ part of the docs; the newer two-layer rate-limit section gives no numbers, so the per-token and per-application ceilings may differ.
+- field: retention_terms
+  status: stated
+  value: API data may not be stored or retained beyond the duration strictly necessary; deletion requests must be honoured within 72 hours; data obtained through the MCP Server may not be stored or cached at all without separate written authorization; storing location data is prohibited.
+  confidence: Verified
+  sources:
+    - url: https://cloud.ouraring.com/legal/api-agreement
+      type: vendor_legal
+      quote: "User Data or Oura Data and User Data accessed or obtained through the Oura API may not be stored or retained beyond the duration strictly necessary."
+      retrieved: 2026-10-10
+    - url: https://cloud.ouraring.com/legal/api-agreement
+      type: vendor_legal
+      quote: "Upon a request for deletion, you shall delete all User Data relating to such User within seventy-two (72) hours."
+      retrieved: 2026-10-10
+    - url: https://cloud.ouraring.com/legal/api-agreement
+      type: vendor_legal
+      quote: "aggregating, caching, or storing geographic location information or other User Data accessible via the Oura API or MCP Server"
+      retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+  note: "Agreement effective date June 8, 2026. Read literally, the retention and linking clauses sit awkwardly with a longitudinal research dataset; a study team should seek a separate written agreement (the Enterprise or Research App route) before relying on the public API."
+- field: ai_training_terms
+  status: stated
+  value: API users may not use Oura user data to train, fine-tune, develop or improve any AI or ML model, and may not feed API data to any AI model or platform at all; LLM use is permitted only through Oura's MCP Server. Violation is a material breach, and Oura may audit for it. Oura itself may use member data to improve its own AI features.
+  confidence: Verified
+  sources:
+    - url: https://cloud.ouraring.com/legal/api-agreement
+      type: vendor_legal
+      quote: "YOU SHALL NOT USE OR ALLOW THE USE OF USER DATA TO TRAIN, FINE-TUNE, DEVELOP, IMPROVE, OR ENHANCE ANY AI MODEL OR OTHER ARTIFICIAL INTELLIGENCE OR MACHINE LEARNING SYSTEM, WHETHER DEVELOPED OR OPERATED BY YOU OR ANY THIRD PARTY."
+      retrieved: 2026-10-10
+    - url: https://cloud.ouraring.com/legal/api-agreement
+      type: vendor_legal
+      quote: "You shall not use, and shall not permit any third party to use, the Oura API to develop, train, fine-tune, evaluate, prompt, or otherwise provide input or data to any AI Model or AI Platform."
+      retrieved: 2026-10-10
+    - url: https://ouraring.com/privacy-policy
+      type: vendor_legal
+      quote: "We may collect and use personal data to develop, test, improve, and support Oura’s own AI, machine learning, and large language model-powered features."
+      retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+  note: The AI-model definition covers "any artificial intelligence system, machine learning model, neural network", which on its face includes ordinary statistical ML in a research analysis.
+- field: deprecations
+  status: stated
+  value: "API v1 removed 22 Jan 2024; personal access tokens withdrawn Dec 2025; Oura on the Web discontinued 5 Oct 2026; Tag endpoint deprecated in favour of Enhanced Tag; Gen3 users without an active membership lost API access (date not given). Oura may modify or discontinue any part of the API with or without notice."
+  confidence: Verified
+  sources:
+    - url: https://cloud.ouraring.com/docs/
+      type: vendor_docs
+      quote: "The V1 API was removed on January 22nd, 2024."
+      retrieved: 2026-10-10
+    - url: https://cloud.ouraring.com/v2/docs
+      fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+      type: vendor_docs
+      quote: "Please note that personal access tokens were deprecated in December 2025 and are no longer available for use."
+      retrieved: 2026-10-10
+    - url: https://support.ouraring.com/hc/en-us/articles/360025587353
+      type: vendor_docs
+      quote: "Oura on the Web has been discontinued as of October 5, 2026."
+      retrieved: 2026-10-10
+    - url: https://cloud.ouraring.com/v2/docs
+      fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+      type: vendor_docs
+      quote: "Tag is deprecated. We recommend transitioning to [Enhanced Tag](#tag/Enhanced-Tag-Routes)."
+      retrieved: 2026-10-10
+    - url: https://partnersupport.ouraring.com/hc/en-us/articles/20949682312211-Using-the-Oura-API
+      type: vendor_docs
+      quote: "Oura Ring Gen3 users without active Oura Membership will no longer be able to access their data through the Oura API."
+      retrieved: 2026-10-10
+    - url: https://cloud.ouraring.com/legal/api-agreement
+      type: vendor_legal
+      quote: "The Company reserves the right to modify, update, or discontinue any aspect of the Oura API or the MCP Server at any time, with or without notice."
+      retrieved: 2026-10-10
+  recheck_by: 2026-11-09
+# ---------------- Compliance ----------------
+- field: baa
+  status: stated
+  value: Yes, for business partners. Oura says it runs an enclave for processing HIPAA data from partners who sign a BAA with it, with third-party HIPAA audits. Not offered for the public API (whose agreement treats each party as an independent controller).
+  confidence: Corroborated
+  sources:
+    - url: https://ouraring.com/assets/documents/public-security-whitepaper.pdf
+      type: vendor_docs
+      quote: "We have an enclave available for processing HIPAA Eligibility data from our partners signing a Business Associate Agreement (BAA) with us."
+      retrieved: 2026-10-10
+  recheck_by: 2027-01-08
+  note: Whitepaper dated August 2026. The phrase "HIPAA Eligibility data" suggests health-plan eligibility files; whether a BAA covers research cohorts on the Enterprise Platform needs vendor confirmation.
+- field: dpa
+  status: unclear
+  confidence: Unclear
+  sources:
+    - url: https://ouraring.com/privacy-policy
+      type: vendor_legal
+      quote: "Oura may act as a processor or service provider to the Research Sponsor in connection with the hosting, storage, or technical administration of the Oura Research App, unless otherwise described in the applicable ICF."
+      retrieved: 2026-10-10
+    - url: https://cloud.ouraring.com/legal/api-agreement
+      type: vendor_legal
+      quote: "For the purposes of Article 26 of the GDPR, the Parties acknowledge that each Party is a separate and independent controller of the Personal Data which it discloses or receives under this Agreement."
+      retrieved: 2026-10-10
+  recheck_by: 2027-01-08
+  note: No DPA template is published. Oura can be a processor for Research App sponsors, which would normally require one, but no page says a DPA is offered. Under the public API both parties are independent controllers, so no DPA applies there.
+- field: hipaa_statement
+  status: stated
+  value: Oura says it is generally not a HIPAA covered entity for direct-to-consumer services, but meets HIPAA requirements where it handles PHI for a healthcare partner, and markets the Enterprise Platform as processing PHI in accordance with HIPAA.
+  confidence: Corroborated
+  sources:
+    - url: https://ouraring.com/security
+      type: vendor_page
+      quote: "We also meet HIPAA requirements where we handle protected health information for a healthcare partner."
+      retrieved: 2026-10-10
+    - url: https://ouraring.com/privacy-policy
+      type: vendor_legal
+      quote: "Oura is generally not a Covered Entity under HIPAA for our direct-to-consumer Services."
+      retrieved: 2026-10-10
+    - url: https://organizations.ouraring.com/solutions/researchers
+      type: vendor_page
+      quote: "Complies with stringent data protection laws like GDPR and processes PHI in accordance with HIPAA"
+      retrieved: 2026-10-10
+  recheck_by: 2027-01-08
+- field: gdpr_statement
+  status: stated
+  value: Oura Health Oy (Finland) is the controller for most processing and says it adheres to the EU and UK GDPR; it participates in the EU-US, UK and Swiss-US Data Privacy Frameworks for transfers.
+  confidence: Corroborated
+  sources:
+    - url: https://ouraring.com/assets/documents/public-security-whitepaper.pdf
+      type: vendor_docs
+      quote: "Oura processes personal data of data subjects in the European Economic Area (EEA) and adheres to the EU and UK General Data Protection Regulation."
+      retrieved: 2026-10-10
+    - url: https://ouraring.com/privacy-policy
+      type: vendor_legal
+      quote: "Oura participates in the EU-US Data Privacy Framework, the UK Extension to the EU-US Data Privacy Framework, and the Swiss-US Data Privacy Framework"
+      retrieved: 2026-10-10
+  recheck_by: 2027-01-08
+  note: DPF participation could be confirmed on dataprivacyframework.gov (JavaScript list, not checked here).
+- field: iso27001
+  status: not_public
+  confidence: Corroborated
+  sources:
+    - url: https://ouraring.com/security
+      type: vendor_page
+      retrieved: 2026-10-10
+    - url: https://ouraring.com/assets/documents/public-security-whitepaper.pdf
+      type: vendor_docs
+      retrieved: 2026-10-10
+  recheck_by: 2027-01-08
+  note: Neither the Trust Center nor the August 2026 whitepaper mentions ISO 27001. Oura cites SOC 2, HITRUST and the NIST Cybersecurity Framework instead.
+- field: soc2
+  status: stated
+  value: Oura says it undergoes an annual SOC 2 examination and also holds HITRUST certification. Reports are not public; the Trust Center points enterprise customers to a Security Resource Center "upon request".
+  confidence: Corroborated
+  sources:
+    - url: https://ouraring.com/assets/documents/public-security-whitepaper.pdf
+      type: vendor_docs
+      quote: "We undergo an annual SOC 2 examination and maintain HITRUST certification, assessed on its certification cycle."
+      retrieved: 2026-10-10
+    - url: https://ouraring.com/security
+      type: vendor_page
+      quote: "Each year, independent auditors carefully review our security controls and verify that they are designed and operating as effectively as intended."
+      retrieved: 2026-10-10
+  recheck_by: 2027-01-08
+  note: SOC 2 type (I or II) is not stated.
+- field: fda_clearances
+  status: stated
+  value: "No FDA 510(k) clearance found for Oura (openFDA 510(k) search on applicant 'oura' returns no matches). Oura Health Oy holds an FDA establishment registration listing one device, 'Fertile Window', under product code LHD (Device, Fertility Diagnostic, Proceptive; unclassified), with no 510(k) or PMA number. Oura states the Ring is not a medical device."
+  confidence: Corroborated
+  sources:
+    - url: https://api.fda.gov/device/registrationlisting.json?search=registration.owner_operator.firm_name:oura
+      type: regulator_db
+      quote: "Device, Fertility Diagnostic, Proceptive"
+      retrieved: 2026-10-10
+    - url: https://api.fda.gov/device/510k.json?search=applicant:oura
+      type: regulator_db
+      retrieved: 2026-10-10
+    - url: https://organizations.ouraring.com/solutions/researchers
+      type: vendor_page
+      quote: "Oura Ring is not a medical device and is not intended to diagnose, treat, cure, monitor, or prevent medical conditions or illnesses."
+      retrieved: 2026-10-10
+  recheck_by: 2027-01-08
+  note: Capped at Corroborated because the accessdata.fda.gov 510(k), De Novo and registration search pages could not be read (Akamai bot protection redirects the fact-check fetcher; WebFetch returned only the blank search form). De Novo and PMA not checked. Press reports in 2026 say Oura is pursuing clearance for a hypertension-risk feature; confirm against accessdata by hand.
+- field: data_residency
+  status: stated
+  value: Consumer data may be processed on servers worldwide, on a single unnamed leading cloud provider. For enterprise customers and partners, Oura says deployment options can support geo-specific residency and secure enclaves, with enterprise partner data segmented from member data.
+  confidence: Corroborated
+  sources:
+    - url: https://ouraring.com/assets/documents/public-security-whitepaper.pdf
+      type: vendor_docs
+      quote: "Deployment options can support geo-specific residency and secure enclave deployment needs that may vary among customers & partners."
+      retrieved: 2026-10-10
+    - url: https://ouraring.com/privacy-policy
+      type: vendor_legal
+      quote: "Oura is a global company with servers around the world, and your personal data may at times be processed on servers located outside of the country where you live."
+      retrieved: 2026-10-10
+  recheck_by: 2027-01-08
