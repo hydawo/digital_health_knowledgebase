@@ -1,0 +1,594 @@
+# Draft record for metricwire, researcher B, 2026-10-11. Schema: facts/_schema.yaml
+name: MetricWire
+kind: platform
+profile: module-02-digital-phenotyping/profiles/metricwire.md
+watch:
+- url: https://metricwire.com/site-licence/
+  role: research_program
+- url: https://metricwire.com/data-privacy-security-summary/
+  role: trust
+- url: https://metricwire.com/participant-privacy-policy/
+  role: terms
+- url: https://metricwire.com/privacy-policy/
+  role: terms
+- url: https://metricwire.com/terms-of-use/
+  role: terms
+- url: https://metricwire.com/
+  role: other
+- url: https://metricwire.com/security/
+  role: trust
+- url: https://apps.apple.com/us/app/metricwire/id1117108543
+  role: app_store
+- url: https://apps.apple.com/us/app/catalyst-by-metricwire/id1585123028
+  role: app_store
+- url: https://play.google.com/store/apps/details?id=com.metricwire.android3&hl=en_US
+  role: app_store
+- url: https://play.google.com/store/apps/details?id=com.metricwire.digitalhealth&hl=en_US
+  role: app_store
+- url: https://survey.psu.edu/trace/metricwire
+  role: pricing
+- url: https://metricwire.com/pricing/
+  role: pricing
+facts:
+- field: research_program
+  status: stated
+  value: 'Academic Site Licence: an institution-level licence with self-serve researcher administration, dedicated
+    engineering support for novel protocols, beta programs, an academic advisory board and a dedicated account manager'
+  confidence: Corroborated
+  sources:
+  - url: https://metricwire.com/site-licence/
+    type: vendor_page
+    quote: The Metricwire Academic Site Licence program is designed to provide researchers at leading institutions
+      with technology solutions that support the future direction of their work and transform their field.
+    retrieved: '2026-10-11'
+  - url: https://metricwire.com/site-licence/
+    type: vendor_page
+    quote: researchers gain access to advanced beta programs, academic advisory board(s), up to date product advancements
+      and a dedicated account manager.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: program_eligibility
+  status: stated
+  value: Researchers at academic institutions (licence is arranged with the institution); no published eligibility
+    criteria beyond that
+  confidence: Reported
+  sources:
+  - url: https://metricwire.com/site-licence/
+    type: vendor_page
+    quote: The Metricwire Academic Site Licence program is designed to provide researchers at leading institutions
+      with technology solutions that support the future direction of their work and transform their field.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: 'Institutions can resell or sub-licence access: Penn State SRC offers its licence to Penn State and external
+    investigators, free for pilot and student thesis work.'
+- field: program_application
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://metricwire.com/site-licence/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://metricwire.com/contact-us/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://metricwire.com/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: No application or review process is published. The site licence page and the rest of the site carry only
+    a contact or demo-request form.
+- field: program_status
+  status: unclear
+  confidence: Unclear
+  sources:
+  - url: https://metricwire.com/site-licence/
+    type: vendor_page
+    quote: Site licence partners benefit from dedicated engineering resources to support novel protocol designs
+      and leverage unique data sources.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: The site licence page is live (read 2026-10-11) with no closure notice, but the site footer still reads
+    Copyright 2023 and no dated program news was found, so current activity cannot be confirmed from the page alone.
+- field: developer_program_status
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://metricwire.com/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://metricwire.com/terms-of-use/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://metricwire.atlassian.net/wiki/spaces/mwknowledgebase/overview
+    type: vendor_docs
+    retrieved: '2026-10-11'
+    expect_absent: true
+  - url: https://api.metricwire.com
+    type: vendor_docs
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: No public developer program, API documentation or SDK found. api.metricwire.com answers with an empty JSON
+    object; the former Atlassian knowledge base returns 404.
+- field: user_cap
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - &id001
+    url: https://metricwire.com/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - &id002
+    url: https://metricwire.com/site-licence/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - &id003
+    url: https://metricwire.com/terms-of-use/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - &id004
+    url: https://metricwire.com/contact-us/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://survey.psu.edu/trace/metricwire
+    type: secondary
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: No participant or researcher limits published for any plan.
+- field: academic_vs_commercial
+  status: stated
+  value: Academic institutions get a separate Academic Site Licence pitched on lower pricing plus partnership services;
+    commercial terms and the actual price difference are not published
+  confidence: Reported
+  sources:
+  - url: https://metricwire.com/site-licence/
+    type: vendor_page
+    quote: Metricwire has created a balance between impactful tools and feasible pricing.
+    retrieved: '2026-10-11'
+  - url: https://survey.psu.edu/trace/metricwire
+    type: secondary
+    quote: The SRC holds an enterprise-level license of Metricwire and can provide access to investigators at significantly
+      reduced costs.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: device_price
+  status: not_applicable
+  sources:
+  - url: https://metricwire.com/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Software platform; MetricWire sells no hardware. Wearables (Fitbit, Polar, Apple Watch via HealthKit) are
+    bought separately.
+- field: subscription_price
+  status: not_applicable
+  sources:
+  - url: https://apps.apple.com/us/app/metricwire/id1117108543
+    type: app_store
+    retrieved: '2026-10-11'
+  - url: https://play.google.com/store/apps/details?id=com.metricwire.android3&hl=en_US
+    type: app_store
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: No consumer subscription. Participant apps are free to download; researchers pay for platform access, see
+    api_platform_fees and quote_required.
+- field: academic_pricing
+  status: stated
+  value: An academic site licence with reduced pricing exists, but no figures are published. Penn State SRC re-offers
+    its enterprise licence at reduced cost, and free for Penn State pilot and thesis projects
+  confidence: Reported
+  sources:
+  - url: https://metricwire.com/site-licence/
+    type: vendor_page
+    quote: Metricwire has created a balance between impactful tools and feasible pricing.
+    retrieved: '2026-10-11'
+  - url: https://survey.psu.edu/trace/metricwire
+    type: secondary
+    quote: can gain access to the enterprise-level license at no cost.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: api_platform_fees
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - *id001
+  - *id002
+  - *id003
+  - *id004
+  - url: https://metricwire.com/pricing/
+    type: vendor_page
+    retrieved: '2026-10-11'
+    expect_absent: true
+  recheck_by: '2026-11-09'
+  note: No price list on the site; /pricing returns 404. The terms refer to fees posted on the website "(if any)",
+    and none are posted.
+- field: minimum_commitment
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - *id001
+  - *id002
+  - *id003
+  - *id004
+  recheck_by: '2026-11-09'
+  note: No minimum term, seat count or participant minimum published.
+- field: quote_required
+  status: stated
+  value: 'Effectively yes: no prices are posted anywhere on the site, and the only route to pricing is the demo
+    or contact form'
+  confidence: Reported
+  sources:
+  - url: https://metricwire.com/terms-of-use/
+    type: vendor_legal
+    quote: the fees posted for such Services on MetricWire’s website (if any)
+    retrieved: '2026-10-11'
+  - url: https://metricwire.com/site-licence/
+    type: vendor_page
+    quote: Metricwire has created a balance between impactful tools and feasible pricing.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Inference from the absence of a price list plus the terms wording; the site never says "contact sales for
+    pricing" in so many words.
+- field: hosting_price
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - *id001
+  - *id002
+  - *id003
+  - *id004
+  - url: https://metricwire.com/data-privacy-security-summary/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Hosting is bundled in the vendor-hosted service; no separate hosting price is published.
+- field: raw_streams
+  status: stated
+  value: Phone background location (latitude, longitude, altitude, speed), accelerometer, connected wearables (Fitbit,
+    Polar named), Apple HealthKit and Android Health Connect data, plus EMA responses and multimedia; all through
+    the researcher portal
+  confidence: Corroborated
+  sources:
+  - url: https://metricwire.com/participant-privacy-policy/
+    type: vendor_legal
+    quote: This data includes the longitude, latitude, altitude and speed during the use of the MetricWire application.
+    retrieved: '2026-10-11'
+  - url: https://metricwire.com/portfolio/symptom-tracking/
+    type: vendor_page
+    quote: passive sensors (accelerometer, passive location tracking, etc)
+    retrieved: '2026-10-11'
+  - url: https://metricwire.com/participant-privacy-policy/
+    type: vendor_legal
+    quote: we may collect this data after you authorize and connect your wearable devices to the MetricWire platform
+      if researchers enable these features.
+    retrieved: '2026-10-11'
+  - url: https://apps.apple.com/us/app/catalyst-by-metricwire/id1585123028
+    type: app_store
+    quote: Catalyst integrates with Apple HealthKit to collect movement data such as sleep, step count, exercise,
+      and distance if enabled by the Study Team.
+    retrieved: '2026-10-11'
+  - url: https://play.google.com/store/apps/details?id=com.metricwire.digitalhealth&hl=en_US
+    type: app_store
+    quote: collect data through wearable sensors like Fitbit or Polar
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Whether accelerometer data is exported raw or summarised is not documented publicly.
+- field: derived_metrics
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://metricwire.com/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://metricwire.com/portfolio/symptom-tracking/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://metricwire.com/participant-privacy-policy/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: No published list of derived features (mobility, sleep, activity summaries). Marketing mentions activity
+    visualisations and triggers on activity data only.
+- field: sampling_rates
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://metricwire.com/participant-privacy-policy/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://metricwire.com/portfolio/symptom-tracking/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://apps.apple.com/us/app/metricwire/id1117108543
+    type: app_store
+    retrieved: '2026-10-11'
+  - url: https://metricwire.atlassian.net/wiki/spaces/mwknowledgebase/overview
+    type: vendor_docs
+    retrieved: '2026-10-11'
+    expect_absent: true
+  recheck_by: '2026-11-09'
+  note: No GPS or accelerometer sampling rates published. A study (PMC10826934) analysed MetricWire GPS at one-minute
+    resolution, but that is a study design, not a documented platform rate.
+- field: history_depth
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://metricwire.com/participant-privacy-policy/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://metricwire.com/data-privacy-security-summary/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: No limit on how far back researchers can export is published; data stays on the servers until the research
+    team deletes it at study end.
+- field: export_routes
+  status: stated
+  value: Configurable exports from the web researcher portal (dashboard). No public API, SDK or documented file
+    formats
+  confidence: Reported
+  sources:
+  - url: https://metricwire.com/
+    type: vendor_page
+    quote: Easily customize your result set and exports to minimize the time to insight.
+    retrieved: '2026-10-11'
+  - url: https://survey.psu.edu/trace/metricwire
+    type: secondary
+    quote: With this option investigators have full programming and project management autonomy and have will have
+      full access to their data through a personal dashboard.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: rate_limits
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://metricwire.com/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://api.metricwire.com
+    type: vendor_docs
+    retrieved: '2026-10-11'
+  - url: https://metricwire.atlassian.net/wiki/spaces/mwknowledgebase/overview
+    type: vendor_docs
+    retrieved: '2026-10-11'
+    expect_absent: true
+  recheck_by: '2026-11-09'
+  note: No public API is documented, so no rate limits are published.
+- field: retention_terms
+  status: stated
+  value: Data uploads from the phone and is removed from the device; the research team deletes study data from MetricWire
+    servers at study end and MetricWire says it keeps no extra copies. No fixed retention period stated
+  confidence: Corroborated
+  sources:
+  - url: https://metricwire.com/participant-privacy-policy/
+    type: vendor_legal
+    quote: When the study is over, the Research Team will delete your data from the MetricWire servers. MetricWire
+      does not retain any additional copies of your data on our servers or in the MetricWire Mobile Application.
+    retrieved: '2026-10-11'
+  - url: https://metricwire.com/participant-privacy-policy/
+    type: vendor_legal
+    quote: your data are immediately synced to HIPAA-Compliant servers located in the United States and removed
+      from your mobile device.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: ai_training_terms
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://metricwire.com/participant-privacy-policy/
+    type: vendor_legal
+    quote: MetricWire has no commercial interest in the data and information you submit through the MetricWire Mobile
+      Application
+    retrieved: '2026-10-11'
+  - url: https://metricwire.com/privacy-policy/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://metricwire.com/terms-of-use/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: No terms mention AI or ML training. The participant policy says data is owned by the research team and MetricWire
+    has no commercial interest in it, but does not address model training. The general privacy policy (2023) allows
+    aggregated, de-identified disclosure to third parties.
+- field: deprecations
+  status: unclear
+  confidence: Unclear
+  sources:
+  - url: https://apps.apple.com/us/app/metricwire/id1117108543
+    type: app_store
+    quote: Version 4.9.9 04/06/2022
+    retrieved: '2026-10-11'
+  - url: https://play.google.com/store/apps/details?id=com.metricwire.android3&hl=en_US
+    type: app_store
+    quote: Updated on Jul 30, 2024
+    retrieved: '2026-10-11'
+  - url: https://play.google.com/store/apps/details?id=com.metricwire.digitalhealth&hl=en_US
+    type: app_store
+    quote: Updated on Oct 7, 2026
+    retrieved: '2026-10-11'
+  - url: https://metricwire.atlassian.net/wiki/spaces/mwknowledgebase/overview
+    type: vendor_docs
+    retrieved: '2026-10-11'
+    expect_absent: true
+  recheck_by: '2026-11-09'
+  note: No announced shutdowns. But the original generic MetricWire iOS app has not been updated since April 2022
+    and the Android one since July 2024, while Catalyst By MetricWire and many study-branded apps are current, which
+    suggests the generic app is being superseded without a published notice. The public Atlassian knowledge base
+    now returns 404.
+- field: licence
+  status: stated
+  value: Proprietary closed-source software; users get a personal, non-exclusive, revocable licence. No open-source
+    components published
+  confidence: Verified
+  sources:
+  - url: https://metricwire.com/terms-of-use/
+    type: vendor_legal
+    quote: You acknowledge that the Software is owned by MetricWire, who retains all right, title and interest therein
+    retrieved: '2026-10-11'
+  - url: https://metricwire.com/terms-of-use/
+    type: vendor_legal
+    quote: MetricWire hereby grants you a personal, non-exclusive, revocable, non-transferable license to use the
+      Software
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: hosting_options
+  status: stated
+  value: Vendor-hosted SaaS only (researcher web portal, data on Google Cloud Platform in the US). No self-hosting
+    or on-premises option published
+  confidence: Corroborated
+  sources:
+  - url: https://metricwire.com/data-privacy-security-summary/
+    type: vendor_page
+    quote: All data are stored in the United States using Google Cloud Platform
+    retrieved: '2026-10-11'
+  - url: https://play.google.com/store/apps/details?id=com.metricwire.android3&hl=en_US
+    type: app_store
+    quote: In order for researchers to create and design studies, an account must be created via our online researcher
+      portal.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Absence of self-hosting is inferred from all published material describing only the hosted portal.
+- field: app_availability
+  status: stated
+  value: 'Free participant apps on iOS and Android: the original MetricWire app (iOS v4.9.9, April 2022; Android
+    updated July 2024) and the current Catalyst By MetricWire (Android updated 7 Oct 2026), plus about 20 study-branded
+    apps from MetricWire Inc. on both stores'
+  confidence: Verified
+  sources:
+  - url: https://apps.apple.com/us/app/metricwire/id1117108543
+    type: app_store
+    quote: Version 4.9.9 04/06/2022
+    retrieved: '2026-10-11'
+  - url: https://play.google.com/store/apps/details?id=com.metricwire.android3&hl=en_US
+    type: app_store
+    quote: Updated on Jul 30, 2024
+    retrieved: '2026-10-11'
+  - url: https://apps.apple.com/us/app/catalyst-by-metricwire/id1585123028
+    type: app_store
+    quote: Catalyst integrates with Apple HealthKit to collect movement data such as sleep, step count, exercise,
+      and distance if enabled by the Study Team.
+    retrieved: '2026-10-11'
+  - url: https://play.google.com/store/apps/details?id=com.metricwire.digitalhealth&hl=en_US
+    type: app_store
+    quote: Updated on Oct 7, 2026
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Study-branded apps on the App Store include TREAT, DIAN, ARTEMIS, LTM, MAP ARC, TRACC MH and Rhythms In
+    Daily Life, which points to white-label custom builds as a service.
+- field: baa
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://metricwire.com/data-privacy-security-summary/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://metricwire.com/participant-privacy-policy/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://metricwire.com/site-licence/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://metricwire.com/terms-of-use/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: HIPAA compliance is claimed but no page mentions offering a Business Associate Agreement.
+- field: dpa
+  status: unclear
+  confidence: Unclear
+  sources:
+  - url: https://metricwire.com/participant-privacy-policy/
+    type: vendor_legal
+    quote: We enter into Data Protection Agreements and regularly audit our relationships with all of our service
+      providers
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: The quote covers MetricWire signing DPAs with its own sub-processors. Whether it signs a DPA with customer
+    institutions is not published.
+- field: hipaa_statement
+  status: stated
+  value: Claims HIPAA compliance and 21 CFR Part 11 compliance; data synced to HIPAA-compliant US servers
+  confidence: Corroborated
+  sources:
+  - url: https://metricwire.com/participant-privacy-policy/
+    type: vendor_legal
+    quote: Our Software was built to protect the most sensitive research data and comply with the Health Insurance
+      Portability and Accountability Act (HIPAA) and 21 CFR Part 11 (Electronic Signatures in Clinical Research)
+      in the United States and, the General Data Protection Regulation (GDPR) in the EU.
+    retrieved: '2026-10-11'
+  - url: https://metricwire.com/site-licence/
+    type: vendor_page
+    quote: Metricwire is the only EMA platform that complies with FDA 21 CFR Part 11, HIPAA & GDPR.
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+- field: gdpr_statement
+  status: stated
+  value: Claims GDPR compliance and has appointed Prighter Group as EU and UK representative; privacy policies are
+    written to Canadian PIPEDA
+  confidence: Corroborated
+  sources:
+  - url: https://metricwire.com/participant-privacy-policy/
+    type: vendor_legal
+    quote: Metricwire has appointed Prighter Group as our privacy representative in both the European Union (EU)
+      and United Kingdom (UK).
+    retrieved: '2026-10-11'
+  - url: https://metricwire.com/site-licence/
+    type: vendor_page
+    quote: Metricwire is the only EMA platform that complies with FDA 21 CFR Part 11, HIPAA & GDPR.
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: All data is stored in the US, so EU studies rely on transfer mechanisms that are not described.
+- field: iso27001
+  status: stated
+  value: Claims ISO 27001 certification (page last reviewed 8 Sep 2025); no certificate, registrar or scope published
+  confidence: Corroborated
+  sources:
+  - url: https://metricwire.com/data-privacy-security-summary/
+    type: vendor_page
+    quote: Metricwire is ISO 27001 certified and SOC II Type II compliant.
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+- field: soc2
+  status: stated
+  value: Claims SOC 2 Type II compliance; no report or auditor named publicly
+  confidence: Corroborated
+  sources:
+  - url: https://metricwire.com/data-privacy-security-summary/
+    type: vendor_page
+    quote: Metricwire is ISO 27001 certified and SOC II Type II compliant.
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: A Vanta trust URL (app.vanta.com/metricwire/trust) loads only a JavaScript shell, so it could not be read.
+- field: fda_clearances
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm
+    type: regulator_db
+    retrieved: '2026-10-11'
+    fetch_url: https://api.fda.gov/device/510k.json?search=applicant:metricwire
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfrl/rl.cfm
+    type: regulator_db
+    retrieved: '2026-10-11'
+    fetch_url: https://api.fda.gov/device/registrationlisting.json?search=registration.name:metricwire
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm
+    type: regulator_db
+    retrieved: '2026-10-11'
+    fetch_url: https://api.fda.gov/device/pma.json?search=applicant:metricwire
+  recheck_by: '2027-01-08'
+  note: openFDA 510(k), PMA and registration searches for MetricWire return no matches (404). The site claims 21
+    CFR Part 11 compliance, which concerns electronic records and is not a device clearance.
+- field: data_residency
+  status: stated
+  value: All data stored in the United States on Google Cloud Platform; no other regions offered
+  confidence: Corroborated
+  sources:
+  - url: https://metricwire.com/data-privacy-security-summary/
+    type: vendor_page
+    quote: All data are stored in the United States using Google Cloud Platform
+    retrieved: '2026-10-11'
+  - url: https://metricwire.com/participant-privacy-policy/
+    type: vendor_legal
+    quote: your data are immediately synced to HIPAA-Compliant servers located in the United States and removed
+      from your mobile device.
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
