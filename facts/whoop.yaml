@@ -42,7 +42,7 @@ facts:
     partners, and academic papers have analysed WHOOP-held member data with WHOOP's permission. Digital WHOOP
     Labs is an in-app feature for members to join WHOOP's own studies. The WHOOP Unite enterprise route offered
     study-site support in 2022 to 2023
-  confidence: Reported
+  confidence: Corroborated
   sources:
   - url: https://whoopinc.typeform.com/whoop-research
     type: vendor_page
@@ -84,12 +84,15 @@ facts:
     note: WHOOP-authored WHOOP Unite study-site deck (copyright 2022), hosted by the University of Arizona sensor lab.
   - url: https://www.whoop.com/us/en/research/
     type: vendor_page
+    quote: we work with academic and industry partners to design studies, validate findings, and expand the
+      scientific understanding of human physiology.
     retrieved: '2026-10-10'
-    note: HTTP 403 to scripts and no Internet Archive capture since 2025. Researcher B's browser read says WHOOP
-      works "with academic and industry partners to design studies" and links CONTACT US to the intake form.
+    note: Read in a browser on 2026-10-10 by the coordinator, confirming researcher B. HTTP 403 to scripts and no
+      Internet Archive capture since 2025, so the weekly check lists it under check by hand. The page's CONTACT US
+      button links to the intake form; it names no eligibility criteria, fees or data terms.
   recheck_by: '2026-10-24'
   note: Also a 2025 Invest Qatar partnership for a WHOOP performance lab in Doha with local research partnerships
-    (einpresswire, 2025-10-28). Check the research page in a browser.
+    (einpresswire, 2025-10-28).
 - field: program_eligibility
   status: unclear
   confidence: Unclear
@@ -276,10 +279,16 @@ facts:
   note: The same capture lists 14+ day battery life for 5.0 and MG.
 - field: subscription_price
   status: stated
-  value: 'US: One $199/yr, Peak $239/yr, Life $359/yr (secondary sources; matches researcher B''s browser read of the
-    vendor page). Canada, vendor page: One CA$259/yr, Peak CA$349/yr, Life CA$529/yr'
-  confidence: Reported
+  value: 'US, vendor page: One $199/yr, Peak $239/yr, Life $359/yr. Canada, vendor page capture of 2026-10-02: One
+    CA$259/yr, Peak CA$349/yr, Life CA$529/yr'
+  confidence: Verified
   sources:
+  - url: https://www.whoop.com/us/en/membership/
+    type: vendor_page
+    quote: Available at $359/yr
+    retrieved: '2026-10-10'
+    note: Read in a browser on 2026-10-10 by the coordinator. The same page reads "Available at $199/yr" (One) and
+      "Available at $239/yr" (Peak). HTTP 403 to scripts, so the weekly check lists it under check by hand.
   - url: https://trackervs.com/pricing/whoop-pricing/
     type: secondary
     quote: One at $199/yr ($25/mo), Peak at $239/yr ($30/mo), and Life at $359/yr ($40/mo) with the WHOOP MG hardware.
@@ -297,8 +306,8 @@ facts:
     note: Internet Archive capture of 2026-10-02, served in Canadian dollars to the archive crawler. The capture also
       reads "Available at CA$529/yr" and "Starting at CA$259/year."
   recheck_by: '2026-10-24'
-  note: US dollar prices could not be read from WHOOP's own page by script. Researcher B's browser read on 2026-10-10
-    showed "Available at $199/yr", "$239/yr" and "$359/yr"; confirm in a browser.
+  note: US prices confirmed on WHOOP's live page in a browser on 2026-10-10. The page states no membership term;
+    see minimum_commitment.
 - field: academic_pricing
   status: not_public
   confidence: Reported

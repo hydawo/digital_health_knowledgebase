@@ -797,10 +797,10 @@ facts:
   status: stated
   scope: ScanWatch, ScanWatch 2 (ECG and SpO2)
   value: >-
-    510(k) K201456 "Scan Monitor" (Withings SA, cleared 2021-10-05, product code DPS). The FDA registration and
-    listing database lists ScanWatch (HWA09) and ScanWatch 2 (HWA10) under K201456 with product codes DPS
-    (electrocardiograph), DQA (oximeter) and DXH. No separate SpO2 or pulse-oximetry 510(k) under a Withings
-    applicant was found.
+    510(k) K201456 "Scan Monitor" (Withings SA, cleared 2021-10-05, product code DPS, subsequent codes DQA
+    (oximeter) and DXH). The cleared indications cover single-channel ECG with AFib detection and spot-check SpO2
+    in adults. The FDA registration and listing database lists ScanWatch (HWA09) and ScanWatch 2 (HWA10) under
+    K201456. No separate SpO2 or pulse-oximetry 510(k) under a Withings applicant was found.
   confidence: Verified
   sources:
   - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K201456
@@ -821,19 +821,27 @@ facts:
     type: regulator_db
     quote: Oximeter
     retrieved: '2026-10-10'
+  - url: https://www.accessdata.fda.gov/cdrh_docs/pdf20/K201456.pdf
+    type: regulator_db
+    quote: The Scan Monitor is also indicated for use in measuring and displaying functional oxygen saturation of
+      arterial hemoglobin (SpO2).
+    retrieved: '2026-10-10'
+    note: The 510(k) summary, section 3. Read on 2026-10-10 by the coordinator; the accessdata record page, opened
+      in a browser the same day, lists DPS with subsequent product codes DQA and DXH. The host answers the monitor
+      with 404, so this source appears under check by hand.
   recheck_by: '2027-01-08'
   note: >-
     The plans page lists SpO2 among "FDA/CE cleared biomarkers". openFDA searches applicant:withings,
-    device_name:scanwatch and product_code:DQA AND applicant:withings found no SpO2-specific 510(k). The 510(k)
-    record itself carries only DPS; the DQA link comes from the device listing, so the exact SpO2 scope of
-    K201456 should be read on the accessdata page (summary PDF) by hand.
+    device_name:scanwatch and product_code:DQA AND applicant:withings found no SpO2-specific 510(k), because SpO2
+    is covered by K201456 itself. openFDA's 510(k) record shows only the primary code DPS; the subsequent codes
+    appear on the accessdata page.
 - field: fda_clearances
   status: stated
   scope: ScanWatch recall (2023)
   value: >-
     Recall Z-1280-2023 (event 91523, initiated 2022-12-19) of Scan Monitor/ScanWatch HWA09 under
-    K201456: a software bug skipped the required physician activation and review of ECG. Status Open,
-    Classified in openFDA.
+    K201456: a software bug skipped the required physician activation and review of ECG. Class II; status Open,
+    Classified.
   confidence: Verified
   sources:
   - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRES/res.cfm?id=198114
@@ -846,6 +854,13 @@ facts:
     type: regulator_db
     quote: Z-1280-2023
     retrieved: '2026-10-10'
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRES/res.cfm?id=198114
+    fetch_url: https://api.fda.gov/device/enforcement.json?search=recall_number.exact:"Z-1280-2023"
+    type: regulator_db
+    quote: Class II
+    retrieved: '2026-10-10'
+    note: openFDA enforcement report for Z-1280-2023 (recalling firm Withings, status Ongoing). The accessdata
+      page, read in a browser the same day, is titled "Class 2 Device Recall Scan Monitor/ScanWatch".
   - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRES/res.cfm?id=198114
     fetch_url: https://api.fda.gov/device/recall.json?search=cfres_id:198114
     type: regulator_db

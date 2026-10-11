@@ -702,7 +702,9 @@ facts:
     expect_absent: true
   recheck_by: 2026-11-09
   note: The README describes a Google Play build (Beiwe2, without call and text logs or background location). The
-    Play listing returned HTTP 404 to automated requests on 2026-10-10; check by hand in a browser. The app targets
+    Play listing returned HTTP 404 to automated requests on 2026-10-10, and also "Not Found" in a browser the same
+    day; Play searches for "beiwe" and "Beiwe2 Onnela" return no Beiwe app (logged out, US store). The Play flavour
+    in app/build.gradle adds no package suffix, so org.beiwe.app is the right ID. The app targets
     SDK 33 and its last changelog entry is 3.6.0 (2024), below Google Play's current target-API floor; that this
     explains the missing listing is inference only.
 - field: baa
