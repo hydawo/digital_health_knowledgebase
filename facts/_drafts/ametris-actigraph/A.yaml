@@ -1,0 +1,587 @@
+# Draft record for ametris-actigraph, researcher A, 2026-10-11. Schema: facts/_schema.yaml
+name: Ametris (ActiGraph), a Signant Health company
+kind: wearable
+profile: module-01-wearables/profiles/ametris-actigraph.md
+watch:
+- url: https://github.com/actigraph/CentrePoint3APIDocumentation
+  role: docs
+  fetch_url: https://raw.githubusercontent.com/actigraph/CentrePoint3APIDocumentation/main/README.md
+- url: https://github.com/actigraph/CentrePoint3APIDocumentation/blob/main/sections/data_access_files.md
+  role: docs
+  fetch_url: https://raw.githubusercontent.com/actigraph/CentrePoint3APIDocumentation/main/sections/data_access_files.md
+- url: https://github.com/actigraph/CentrePoint3APIDocumentation/blob/main/sections/raw_data_request.md
+  role: docs
+  fetch_url: https://raw.githubusercontent.com/actigraph/CentrePoint3APIDocumentation/main/sections/raw_data_request.md
+- url: https://github.com/actigraph/CentrePointIntegrationGuide
+  role: developer_program
+  fetch_url: https://raw.githubusercontent.com/actigraph/CentrePointIntegrationGuide/master/README.md
+- url: https://github.com/actigraph/StudyAdminAPIDocumentation
+  role: docs
+  fetch_url: https://raw.githubusercontent.com/actigraph/StudyAdminAPIDocumentation/master/README.md
+- url: https://academic.ametris.com
+  role: research_program
+- url: https://store.ametris.com/
+  role: pricing
+- url: https://academic.ametris.com/actilife
+  role: pricing
+- url: https://ametris.com/compliance
+  role: trust
+- url: https://ametris.com/hubfs/Quality%20Assurance/Ametris%20-%20Ignyte%2027001%20Certificate.pdf
+  role: trust
+- url: https://ametris.com/privacy-policy
+  role: terms
+- url: https://ametris.com/downloads
+  role: changelog
+- url: https://ametris.com/actigraph-leap
+  role: docs
+- url: https://signanthealth.com/company/news/signant-health-acquires-ametris
+  role: other
+- url: https://api.fda.gov/device/510k.json?search=applicant:actigraph&limit=20
+  role: regulatory
+facts:
+# ---------------- Research access ----------------
+- field: research_program
+  status: stated
+  value: 'No formal named research program. The academic channel is a dedicated "Academic Research and Population
+    Health" site (academic.ametris.com) with an academic research team, an academic online store, a grant toolkit, an
+    open-source dataset library and pricing on request.'
+  confidence: Verified
+  sources:
+  - url: https://academic.ametris.com
+    type: vendor_page
+    quote: "Connect with a member of our academic and public health research team to discuss your specific research needs."
+    retrieved: 2026-10-11
+  - url: https://academic.ametris.com/grant-toolkit
+    type: vendor_page
+    quote: "This toolkit is designed to facilitate the application submission process by gathering information in one place for quick and convenient access."
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-09
+  note: A one-off research grant was announced in August 2022 (blog.ametris.com); no current grant call found.
+- field: program_eligibility
+  status: stated
+  value: Online purchasing in the academic store is limited to academic institutions with existing client accounts
+    (accredited universities, research institutions, healthcare organizations, government research centers).
+    International customers are directed to resellers.
+  confidence: Verified
+  sources:
+  - url: https://store.ametris.com/
+    type: vendor_page
+    quote: "Online purchasing through our store is currently available only to academic institutions with existing client accounts. This includes accredited universities, research institutions, healthcare organizations, and government research centers."
+    retrieved: 2026-10-11
+  - url: https://store.ametris.com/
+    type: vendor_page
+    quote: "International customers are encouraged to visit our International Resellers page to find a local authorized reseller for product pricing, availability, and sales support."
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-09
+- field: program_application
+  status: stated
+  value: No application process; researchers contact the academic team, request a quote or a pricing list, or schedule
+    a meeting. API access is enabled on request by contacting ActiGraph/Ametris.
+  confidence: Verified
+  sources:
+  - url: https://academic.ametris.com
+    type: vendor_page
+    quote: "Store and Pricing Schedule a Meeting"
+    retrieved: 2026-10-11
+  - url: https://github.com/actigraph/CentrePoint3APIDocumentation
+    type: vendor_docs
+    fetch_url: https://raw.githubusercontent.com/actigraph/CentrePoint3APIDocumentation/main/README.md
+    quote: "## Enabling API Access Please contact [ActiGraph]"
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-09
+- field: program_status
+  status: stated
+  value: Academic channel active as of 2026-10-11. Ametris (formerly ActiGraph) was acquired by Signant Health
+    (announced 2026-05-14); the academic site and store remain live under the Ametris name.
+  confidence: Verified
+  sources:
+  - url: https://signanthealth.com/company/news/signant-health-acquires-ametris
+    type: vendor_page
+    quote: "Signant Health , the evidence generation company, today announced its acquisition of Ametris (formerly ActiGraph)"
+    retrieved: 2026-10-11
+  - url: https://store.ametris.com/
+    type: vendor_page
+    quote: "Welcome to our Public Health and Academic Research Online Store"
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-09
+  note: Watch for academic-channel changes after the Signant integration.
+- field: developer_program_status
+  status: stated
+  value: No self-serve developer program. The CentrePoint API (V3, OAuth 2.0; V2 still supported) is documented
+    publicly on GitHub, but access is enabled per customer by contacting the company, and the API only reaches data in
+    CentrePoint studies the client has access to.
+  confidence: Verified
+  sources:
+  - url: https://github.com/actigraph/CentrePoint3APIDocumentation
+    type: vendor_docs
+    fetch_url: https://raw.githubusercontent.com/actigraph/CentrePoint3APIDocumentation/main/README.md
+    quote: "The API provides access to the same core study and de-identified subject data that can be accessed within [CentrePoint]"
+    retrieved: 2026-10-11
+  - url: https://github.com/actigraph/CentrePointIntegrationGuide
+    type: vendor_docs
+    fetch_url: https://raw.githubusercontent.com/actigraph/CentrePointIntegrationGuide/master/README.md
+    quote: "ActiGraph continues to support the [CentrePoint V2 API](https://github.com/actigraph/StudyAdminAPIDocumentation). This API is based on a different authentication mechanism than the CentrePoint V3 API and therefore requires a different set of credentials."
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-09
+- field: user_cap
+  status: stated
+  value: No participant cap published. ActiLife desktop licences are sold in tiers capped by activations (Single 1
+    full + 5 lite up to Large Enterprise 15 full + 20 lite). CentrePoint participant or study limits are not published.
+  confidence: Verified
+  scope: ActiLife licences
+  sources:
+  - url: https://academic.ametris.com/actilife
+    type: vendor_page
+    quote: "Single 1 Full Activation 5 Lite Activations Small Enterprise 5 Full Activation 10 Lite Activations Medium Enterprise 10 Full Activation 15 Lite Activations Large Enterprise 15 Full Activation 20 Lite Activations"
+    retrieved: 2026-10-11
+  - url: https://academic.ametris.com/centrepoint
+    type: vendor_page
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-09
+- field: academic_vs_commercial
+  status: stated
+  value: Academic and population-health customers are served through a separate academic site and store (devices,
+    ActiLife desktop software and CentrePoint); industry-sponsored clinical trials are served through ametris.com with
+    full-service operational and scientific support. Pricing for both is quoted per order. No consumer product.
+  confidence: Corroborated
+  sources:
+  - url: https://academic.ametris.com
+    type: vendor_page
+    quote: "We offer the flexibility of two powerful software platforms to meet the diverse needs of our academic research clients."
+    retrieved: 2026-10-11
+  - url: https://ametris.com
+    type: vendor_page
+    quote: "Ametris provides wearable digital health technology (DHT), along with integrated scientific and operational support, to help clinical teams capture real-world data that accurately reflects patient functioning."
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-09
+  note: How academic pricing or terms differ from commercial ones is not published.
+# ---------------- Pricing ----------------
+- field: device_price
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://store.ametris.com/
+    type: vendor_page
+    retrieved: 2026-10-11
+  - url: https://academic.ametris.com/actigraph-wgt3x-bt
+    type: vendor_page
+    retrieved: 2026-10-11
+  - url: https://ametris.com/actigraph-leap
+    type: vendor_page
+    retrieved: 2026-10-11
+  - url: https://web.fibion.com/articles/actigraph-pricing-guide-researchers-2024/
+    type: secondary
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-09
+  note: The academic store lists only accessories (for example LEAP wristband 25.00 USD, CPIW charging dock 45.00 USD);
+    devices are quote-only. A competitor (Fibion) cites unverified forum figures of about 600 USD for LEAP and 325 to
+    1,016 USD for GT3X+/wGT3X+.
+- field: subscription_price
+  status: not_applicable
+  note: No consumer subscription. CentrePoint is sold to institutions as part of a quoted order; its price is not
+    published (see api_platform_fees).
+- field: academic_pricing
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://academic.ametris.com
+    type: vendor_page
+    retrieved: 2026-10-11
+  - url: https://store.ametris.com/
+    type: vendor_page
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-09
+  note: The academic site offers a "Get Pricing List" form; the list itself is not public. No academic discount is
+    stated.
+- field: api_platform_fees
+  status: stated
+  value: CentrePoint and API fees are not published. The API documentation says historical data access file generation
+    may carry fees if the study was not set up for it.
+  confidence: Verified
+  scope: CentrePoint API
+  sources:
+  - url: https://github.com/actigraph/CentrePoint3APIDocumentation/blob/main/sections/raw_data_request.md
+    type: vendor_docs
+    fetch_url: https://raw.githubusercontent.com/actigraph/CentrePoint3APIDocumentation/main/sections/raw_data_request.md
+    quote: "There may be fees associated for historical data access file generation if the study has not been previously setup."
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-09
+- field: api_platform_fees
+  status: conflict
+  value: ActiLife licences include one year of maintenance and service; the free Data Vault cloud storage allowance is
+    20GB on the product page but 4GB in the ActiLife 7 user manual. Licence prices are quote-only.
+  confidence: Unclear
+  scope: ActiLife licences and Data Vault
+  sources:
+  - url: https://academic.ametris.com/actilife
+    type: vendor_page
+    quote: "All ActiLife software licenses are automatically covered by Ametris' maintenance and service program for one year from the date of purchase, which includes access to all features updates and bug fixes, and 20GB of free Data Vault storage."
+    retrieved: 2026-10-11
+  - url: https://ametris.com/hubfs/User%20Manuals/ActiLife%207%20Users%20Manual.pdf
+    type: vendor_docs
+    quote: "ActiLife 7 users receive 4GB of free space."
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-09
+- field: minimum_commitment
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://academic.ametris.com
+    type: vendor_page
+    retrieved: 2026-10-11
+  - url: https://academic.ametris.com/actilife
+    type: vendor_page
+    retrieved: 2026-10-11
+  - url: https://store.ametris.com/
+    type: vendor_page
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-09
+- field: quote_required
+  status: stated
+  value: Yes. Devices, ActiLife and CentrePoint are priced per order on request.
+  confidence: Verified
+  sources:
+  - url: https://academic.ametris.com/actigraph-wgt3x-bt
+    type: vendor_page
+    quote: "Pricing is calculated for each unique order. For a price quote or more information, please contact our team directly ."
+    retrieved: 2026-10-11
+  - url: https://academic.ametris.com/actilife
+    type: vendor_page
+    quote: "Interested in Purchasing ActiLife? Request a Quote"
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-09
+# ---------------- Data access and terms ----------------
+- field: raw_streams
+  status: stated
+  value: 'Raw data is the core offering. Through the CentrePoint V3 API Data Access Files: raw-accelerometer,
+    temperature, ppg-green (25 Hz), ppg-green-100-hz, barometer, imu and ppg-red-ir-50-hz, the non-accelerometer
+    categories only for certain devices, firmware, study configurations and contracts. Offline devices (wGT3X-BT) give
+    raw .gt3x files via ActiLife. LEAP also has a microphone, disabled by default.'
+  confidence: Verified
+  sources:
+  - url: https://github.com/actigraph/CentrePoint3APIDocumentation/blob/main/sections/data_access_files.md
+    type: vendor_docs
+    fetch_url: https://raw.githubusercontent.com/actigraph/CentrePoint3APIDocumentation/main/sections/data_access_files.md
+    quote: "- raw-accelerometer - temperature* - ppg-green (25hz)* - ppg-green-100-hz* - barometer* - imu* - ppg-red-ir-50-hz* **Data category is only available for certain devices, firmware versions, and study configuration, and it is subject to contract restrictions.*"
+    retrieved: 2026-10-11
+  - url: https://academic.ametris.com/actigraph-wgt3x-bt
+    type: vendor_page
+    quote: "Participant raw data can be collected at sample rates ranging from 30Hz-100Hz and transferred directly to researchers for analysis."
+    retrieved: 2026-10-11
+  - url: https://ametris.com/actigraph-leap
+    type: vendor_page
+    quote: "Microphone sensor is disabled by default and would only be activated for specific use cases."
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-09
+- field: derived_metrics
+  status: stated
+  value: 'CentrePoint API: minute (epoch) summaries, daily statistics, sleep periods and event markers covering steps,
+    wear, sleep, energy expenditure and activity intensity. ActiLife scores data with published algorithms. LEAP vital
+    signs (HR, HRV, skin temperature, AF/rhythm, SpO2, respiratory rate) and gait/balance measures require Scientific
+    Services.'
+  confidence: Verified
+  sources:
+  - url: https://github.com/actigraph/CentrePointIntegrationGuide
+    type: vendor_docs
+    fetch_url: https://raw.githubusercontent.com/actigraph/CentrePointIntegrationGuide/master/README.md
+    quote: "Retrieve subject analytics data (i.e. CPW01 event markers, sleep periods, and minute/daily summary data which encapsulates steps, wear, sleep, energy expenditure, activity intensity classifications/cut points, etc.)"
+    retrieved: 2026-10-11
+  - url: https://ametris.com/actigraph-leap
+    type: vendor_page
+    quote: "Vital sign measures are generated by the CentrePoint ® platform ."
+    retrieved: 2026-10-11
+  - url: https://ametris.com/actigraph-leap
+    type: vendor_page
+    quote: "Note: The ActiGraph LEAP is US FDA 510(k) cleared for the measurement of activity, sleep, and mobility. Additional vital signs are for investigational use only."
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-09
+- field: sampling_rates
+  status: stated
+  value: 'Accelerometer: LEAP and CentrePoint Insight Watch 32 to 256 Hz (battery figures quoted at the 32 Hz default);
+    wGT3X-BT 30 to 100 Hz. PPG files at 25 Hz or 100 Hz (green) and 50 Hz (red/IR). API epoch summaries at 15, 30 or
+    60 seconds (V3); V2 limited to 60 seconds.'
+  confidence: Verified
+  sources:
+  - url: https://ametris.com/actigraph-leap
+    type: vendor_page
+    quote: "Sample Rate: 32-256 Hertz"
+    retrieved: 2026-10-11
+  - url: https://academic.ametris.com/actigraph-wgt3x-bt
+    type: vendor_page
+    quote: "Sample Rate: 30-100 Hertz"
+    retrieved: 2026-10-11
+  - url: https://github.com/actigraph/CentrePointIntegrationGuide
+    type: vendor_docs
+    fetch_url: https://raw.githubusercontent.com/actigraph/CentrePointIntegrationGuide/master/README.md
+    quote: "Dynamically retrieve EPOCH summary records with a variable summary length (i.e. 15-sec, 30-sec, or 60-sec epoch length)"
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-09
+- field: history_depth
+  status: stated
+  value: 'On-device storage: wGT3X-BT 180 days / 4GB; CentrePoint Insight Watch 30 days / 512MB; LEAP 30 or 79 days /
+    1GB (two spec tables on the same page disagree). Cloud history in CentrePoint has no published limit; raw GT3X API
+    requests are capped at 15 days each and must not be used to pull a whole study history.'
+  confidence: Corroborated
+  sources:
+  - url: https://academic.ametris.com/actigraph-wgt3x-bt
+    type: vendor_page
+    quote: "Data Storage: 180 Days / 4GB"
+    retrieved: 2026-10-11
+  - url: https://ametris.com/actigraph-leap
+    type: vendor_page
+    quote: "Data Storage: 79 Days / 1GB"
+    retrieved: 2026-10-11
+  - url: https://github.com/actigraph/CentrePoint3APIDocumentation/blob/main/sections/raw_data_request.md
+    type: vendor_docs
+    fetch_url: https://raw.githubusercontent.com/actigraph/CentrePoint3APIDocumentation/main/sections/raw_data_request.md
+    quote: "RAW data retrieval requests SHALL NOT be performed to retrieve ALL the historic RAW data for all subjects in a given study."
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-09
+- field: export_routes
+  status: stated
+  value: 'CentrePoint V3 REST API (OAuth 2.0): Data Access Files as daily CSV (gzipped) or AVRO, raw requests in GT3X,
+    CSV or AVRO, summaries; webhooks push daily statistics events to EDCs; CentrePoint V2 API; ActiLife desktop export
+    to CSV and its Data Vault cloud storage; documented .gt3x format with open-source readers (pygt3x, agcounts).'
+  confidence: Verified
+  sources:
+  - url: https://github.com/actigraph/CentrePoint3APIDocumentation/blob/main/sections/data_access_files.md
+    type: vendor_docs
+    fetch_url: https://raw.githubusercontent.com/actigraph/CentrePoint3APIDocumentation/main/sections/data_access_files.md
+    quote: "Downloaded files in CSV format will be a ZIP folder containing a GZipped CSV file."
+    retrieved: 2026-10-11
+  - url: https://github.com/actigraph/CentrePointIntegrationGuide
+    type: vendor_docs
+    fetch_url: https://raw.githubusercontent.com/actigraph/CentrePointIntegrationGuide/master/README.md
+    quote: "Ability to *PUSH* day-level analytics data (or subject daily aggregates/statistics) via the [Daily Statistics Complete Event]"
+    retrieved: 2026-10-11
+  - url: https://academic.ametris.com/actilife
+    type: vendor_page
+    quote: "Export scored daily, hourly and summary data for multiple datasets and subjects as a single consolidated CSV file."
+    retrieved: 2026-10-11
+  - url: https://github.com/actigraph/GT3X-File-Format
+    type: repository
+    quote: "Documentation of the ActiGraph .gt3x file format"
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-09
+- field: rate_limits
+  status: stated
+  value: 'CentrePoint V3 API: more than 500 requests per minute from one IP returns 429 (sliding window, Retry-After
+    header). Raw data requests: at most 10 active at once, GT3X ranges limited to 15 days, cancelled after 6 hours.
+    V2 API: an unpublished daily request limit.'
+  confidence: Verified
+  sources:
+  - url: https://github.com/actigraph/CentrePoint3APIDocumentation
+    type: vendor_docs
+    fetch_url: https://raw.githubusercontent.com/actigraph/CentrePoint3APIDocumentation/main/README.md
+    quote: "If an API consumer exceeds 500 requests within a minute, then the API will block any further requests with a 429 response code."
+    retrieved: 2026-10-11
+  - url: https://github.com/actigraph/CentrePoint3APIDocumentation/blob/main/sections/raw_data_request.md
+    type: vendor_docs
+    fetch_url: https://raw.githubusercontent.com/actigraph/CentrePoint3APIDocumentation/main/sections/raw_data_request.md
+    quote: "Due to the heavy computation required to create a file in the GT3X format, the time range for GT3X format requests is limited to 15 days. A maximum of 10 active requests are allowed at one time."
+    retrieved: 2026-10-11
+  - url: https://github.com/actigraph/StudyAdminAPIDocumentation
+    type: vendor_docs
+    fetch_url: https://raw.githubusercontent.com/actigraph/StudyAdminAPIDocumentation/master/README.md
+    quote: "This API is request limited. We only allow a certain number of requests per day."
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-09
+- field: retention_terms
+  status: stated
+  value: Ametris acts as data processor for the study sponsor (controller). Personal data is retained in identifiable
+    form only as long as it serves a processing purpose; customer removal requests are answered within 30 days.
+    Participants must direct access or deletion requests to the sponsor. No fixed CentrePoint retention period is
+    published.
+  confidence: Verified
+  sources:
+  - url: https://ametris.com/privacy-policy
+    type: vendor_legal
+    quote: "If Ametris customer requests Ametris to remove the personal data to comply with data protection regulations, Ametris will respond to such request s within 30 days ."
+    retrieved: 2026-10-11
+  - url: https://ametris.com/privacy-policy
+    type: vendor_legal
+    quote: "For Data Subject participating in clinical trials, contact the trial sponsor not Ametris with requests for access, correction, amendment, or deletion."
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-09
+- field: ai_training_terms
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://ametris.com/privacy-policy
+    type: vendor_legal
+    retrieved: 2026-10-11
+  - url: https://ametris.com/compliance
+    type: vendor_page
+    retrieved: 2026-10-11
+  - url: https://github.com/actigraph/CentrePoint3APIDocumentation
+    type: vendor_docs
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-09
+  note: Nothing names AI or model training. The privacy policy says customer instructions "may include processing or
+    using personal data for purposes of providing or developing the Ametris platform", which is the nearest term.
+- field: deprecations
+  status: stated
+  value: 'CentrePoint V2 API still supported but superseded by V3; within V3 the raw data request endpoint is superseded
+    by Data Access Files. wGT3X-BT and ActiLife are labelled "legacy" though ActiLife 7.3.2.0 shipped 2026-05-08. A
+    competitor reports the GT9X is in end-of-life transition and no longer sold to new customers (not confirmed by
+    Ametris). Ownership change: Signant Health acquired Ametris, announced 2026-05-14.'
+  confidence: Corroborated
+  sources:
+  - url: https://github.com/actigraph/CentrePoint3APIDocumentation/blob/main/sections/raw_data_request.md
+    type: vendor_docs
+    fetch_url: https://raw.githubusercontent.com/actigraph/CentrePoint3APIDocumentation/main/sections/raw_data_request.md
+    quote: "It is now recommended to use the [Data Access Files](data_access_files.md) for retrieving raw accelerometer data."
+    retrieved: 2026-10-11
+  - url: https://academic.ametris.com/actilife
+    type: vendor_page
+    quote: "ActiLife 7 is Ametris' legacy data processing software customized to power advanced analytics and optimize usability in your research studies."
+    retrieved: 2026-10-11
+  - url: https://ametris.com/downloads
+    type: vendor_page
+    quote: "ActiLife® Current Release: v7.3.2.0 Release Date: May 8, 2026"
+    retrieved: 2026-10-11
+  - url: https://academic.ametris.com/actigraph-wgt3x-bt
+    type: vendor_page
+    quote: "The ActiGraph wGT3X-BT is Ametris' proven, legacy wearable device used by researchers around the world"
+    retrieved: 2026-10-11
+  - url: https://web.fibion.com/articles/guide-to-actigraph-gt9x-pricing
+    type: secondary
+    quote: "ActiGraph GT9X device is no longer available for sale for new customers , as ActiGraph has started the end-of-life transition of this product"
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-09
+# ---------------- Compliance ----------------
+- field: baa
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://ametris.com/compliance
+    type: vendor_page
+    retrieved: 2026-10-11
+  - url: https://ametris.com/privacy-policy
+    type: vendor_legal
+    retrieved: 2026-10-11
+  recheck_by: 2027-01-08
+  note: No BAA offer found. The privacy policy frames Ametris as a processor of key-coded data that does not collect
+    participant names.
+- field: dpa
+  status: stated
+  value: Yes. Data processing agreements including standard contractual clauses are offered to support customers' GDPR
+    obligations.
+  confidence: Corroborated
+  sources:
+  - url: https://ametris.com/compliance
+    type: vendor_page
+    quote: "Ametris will support customers in meeting their GDPR requirements with data processing agreements that include the standard contractual clauses (SCCs) regarding data processing, control, and transfer."
+    retrieved: 2026-10-11
+  recheck_by: 2027-01-08
+- field: hipaa_statement
+  status: unclear
+  confidence: Unclear
+  sources:
+  - url: https://ametris.com/compliance
+    type: vendor_page
+    retrieved: 2026-10-11
+  - url: https://ametris.com/privacy-policy
+    type: vendor_legal
+    retrieved: 2026-10-11
+  recheck_by: 2027-01-08
+  note: The compliance page shows only an image badge (alt text "HIPAA Compliant") with no written HIPAA statement;
+    the privacy policy does not mention HIPAA.
+- field: gdpr_statement
+  status: stated
+  value: Ametris states it complies with GDPR and is self-certified under the EU-U.S. Data Privacy Framework, its UK
+    extension and the Swiss-U.S. DPF.
+  confidence: Corroborated
+  sources:
+  - url: https://ametris.com/compliance
+    type: vendor_page
+    quote: "Ametris complies with General Data Privacy Regulation (GDPR) and implements technological and organizational controls around data privacy and protection."
+    retrieved: 2026-10-11
+  - url: https://ametris.com/privacy-policy
+    type: vendor_legal
+    quote: "Ametris has certified to the U.S. Department of Commerce that it adheres to the EU-U.S. Data Privacy Framework Principles"
+    retrieved: 2026-10-11
+  recheck_by: 2027-01-08
+- field: iso27001
+  status: stated
+  value: Certified to ISO/IEC 27001:2022 by Ignyte Assurance LLC, certificate IA391-260410-001, initial certification
+    2026-04-16, valid to 2029-04-15; scope is the digital health platform ecosystem. Also ISO 13485:2016 (quality, MDSAP).
+  confidence: Verified
+  sources:
+  - url: https://ametris.com/hubfs/Quality%20Assurance/Ametris%20-%20Ignyte%2027001%20Certificate.pdf
+    type: certificate
+    quote: "Ignyte Assurance LLC certifies Certificate Number: IA391-260410-001"
+    retrieved: 2026-10-11
+  - url: https://ametris.com/hubfs/Quality%20Assurance/Ametris%20-%20Ignyte%2027001%20Certificate.pdf
+    type: certificate
+    quote: "Certificate Valid To: 15 April 2029"
+    retrieved: 2026-10-11
+  - url: https://ametris.com/compliance
+    type: vendor_page
+    quote: "Our Quality Management System (QMS) conforms with the requirements of the ISO 13485:2016 international standard"
+    retrieved: 2026-10-11
+  recheck_by: 2027-01-08
+  note: The certificate PDF is issued by Ignyte but hosted on the vendor's site; the certification body's accreditation
+    was not checked.
+- field: soc2
+  status: unclear
+  confidence: Reported
+  sources:
+  - url: https://www.highperformr.ai/company/actigraph
+    type: secondary
+    quote: "ActiGraph announced that its ActiLife software and CentrePoint data analytics platform have successfully achieved System and Organization Controls (SOC) 2 Type II attestation"
+    retrieved: 2026-10-11
+  - url: https://ametris.com/compliance
+    type: vendor_page
+    retrieved: 2026-10-11
+  recheck_by: 2027-01-08
+  note: An aggregator reproduces an Oct 24, 2023 PR Newswire item on a SOC 2 Type II attestation; the current Ametris
+    compliance page does not mention SOC 2 and no report or current attestation was found.
+- field: fda_clearances
+  status: stated
+  value: 'Four 510(k) clearances: K231532 ActiGraph LEAP activity monitor (2023-06-23, code LEL); K181077 CentrePoint
+    Insight Watch (2018-05-24, LEL); K080545 ActiTrainer (2008-07-24, ISD), which the vendor lists as covering GT9X and
+    wGT3X-BT; K040554 ActiGraph AM7164 (2004-07-16, GWQ, applicant Manufacturing Technology, Inc.; vendor lists it as
+    inactive).'
+  confidence: Verified
+  sources:
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K231532
+    type: regulator_db
+    fetch_url: https://api.fda.gov/device/510k.json?search=k_number:K231532
+    quote: "Actigraph, LLC 2023-06-23 SESE US ActiGraph LEAP activity monitor (ActiGraph LEAP)"
+    retrieved: 2026-10-11
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K181077
+    type: regulator_db
+    fetch_url: https://api.fda.gov/device/510k.json?search=k_number:K181077
+    quote: "Actigraph 2018-05-24 SESE US ActiGraph CentrePoint Insight Watch"
+    retrieved: 2026-10-11
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K080545
+    type: regulator_db
+    fetch_url: https://api.fda.gov/device/510k.json?search=k_number:K080545
+    quote: "Actigraph, LLC 2008-07-24 SESE US ACTITRAINER"
+    retrieved: 2026-10-11
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K040554
+    type: regulator_db
+    fetch_url: https://api.fda.gov/device/510k.json?search=k_number:K040554
+    quote: "Manufacturing Technology, Inc. 2004-07-16 SESE US ACTIGRAPH, MODEL AM7164-2.2 AND ACTIGRAPH WITH EXTENDED MEMORY, MODEL AM71256"
+    retrieved: 2026-10-11
+  - url: https://ametris.com/compliance
+    type: vendor_page
+    quote: "K080545 - GT9X, wGT3X-BT K040554 - AM7164 (2004, inactive)"
+    retrieved: 2026-10-11
+  recheck_by: 2027-01-08
+- field: data_residency
+  status: stated
+  value: Data is stored and processed on Microsoft Azure and Amazon Web Services. Regions and residency options are
+    not published.
+  confidence: Verified
+  sources:
+  - url: https://ametris.com/compliance
+    type: vendor_page
+    quote: "For data storage, processing, and application services, Ametris leverages qualified cloud vendors: Microsoft Azure and Amazon Web Services."
+    retrieved: 2026-10-11
+  - url: https://ametris.com/privacy-policy
+    type: vendor_legal
+    quote: "CentrePoint is implemented within the cloud infrastructure of Amazon Web Services (AWS) and Microsoft Azure"
+    retrieved: 2026-10-11
+  recheck_by: 2027-01-08

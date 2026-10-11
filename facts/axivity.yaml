@@ -1,84 +1,766 @@
 # Vendor fact record. Schema: facts/_schema.yaml. How to work it: facts/README.md.
+# Baseline run judged 2026-10-11 from drafts A and B and the gap hunt (facts/_drafts/axivity/).
+# Axivity sells offline USB loggers and never receives study data, so many access and compliance fields
+# are not_applicable. The Open Movement repository moved from digitalinteraction/openmovement to
+# openmovementproject/openmovement; old links redirect, and this record cites the new URLs only.
 name: Axivity
 kind: wearable
 profile: module-01-wearables/profiles/axivity-geneactiv.md
 watch:
-- url: https://axivity.com/
-  role: other
-- url: https://axivity.com/case-studies/biobank
-  role: other
-- url: https://github.com/digitalinteraction/openmovement/wiki/AX3
-  role: repository
-- url: https://github.com/openmovementproject/openmovement/blob/master/Downloads/AX3/AX3-GUI-revisions.md
-  role: repository
 - url: https://axivity.com/product/ax3
   role: pricing
 - url: https://axivity.com/product/ax6
   role: pricing
-- url: https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-faq.md
-  role: repository
+- url: https://axivity.com/products
+  role: pricing
+- url: https://axivity.com/files/resources/AX3v2_Datasheet.pdf
+  role: docs
+- url: https://axivity.com/files/resources/AX6_Datasheet.pdf
+  role: docs
+- url: https://axivity.com/privacy
+  role: terms
+- url: https://axivity.com/terms
+  role: terms
+- url: https://axivity.com/downloads/ax3
+  role: docs
 - url: https://github.com/openmovementproject/openmovement
   role: repository
+- url: https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-research.md
+  role: docs
+- url: https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-faq.md
+  role: docs
+- url: https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-auxiliary.md
+  role: docs
+- url: https://github.com/openmovementproject/openmovement/wiki/AX3-GUI
+  role: docs
 - url: https://github.com/openmovementproject/openmovement/blob/master/Downloads/AX3/AX3-Firmware.md
-  role: repository
+  role: changelog
+- url: https://api.fda.gov/device/510k.json?search=applicant:axivity
+  role: regulatory
 facts:
+# ---------------- Research access ----------------
 - field: research_program
-  status: unresearched
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://axivity.com/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/support
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/faq
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/contact
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/case-studies/biobank
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-research.md
+    type: vendor_docs
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: No named research or academic program. Axivity sells AX3 and AX6 loggers from a public web store, and
+    research guidance lives in the open-source Open Movement docs, which are documentation rather than an
+    enrolment route. The research guide names third parties offering paid help (McRoberts for data collection
+    and processing; Vincent van Hees, the GGIR author, for consulting); the McRoberts link redirected to its homepage on 2026-10-11,
+    so whether that service is still offered is unclear. Vendor case studies cite UK Biobank and INTERVAL (6000
+    participants, AX3 band).
 - field: program_eligibility
-  status: unresearched
+  status: not_applicable
+  sources:
+  - url: https://axivity.com/products
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: No program exists to be eligible for (see research_program). Devices are bought from the public store with
+    no stated eligibility restriction.
 - field: program_application
-  status: unresearched
+  status: not_applicable
+  sources:
+  - url: https://axivity.com/products
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: No program and no application or approval step. Devices are ordered through the web store cart; the
+    software and file format are public on GitHub with no sign-up.
 - field: program_status
-  status: unresearched
+  status: not_applicable
+  sources:
+  - url: https://axivity.com/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: No program to have a status. The products and the Open Movement repository were both live on 2026-10-11.
 - field: developer_program_status
-  status: unresearched
+  status: stated
+  value: No developer program or registration is needed. The device communication is documented and a C device
+    API (libOMAPI) can be used to build custom configuration and download software; firmware, software and
+    file-format readers are open source under a BSD 2-clause licence. A third-party R wrapper, axR (Circadia Lab,
+    r-universe), exposes device discovery, configuration and download from R.
+  confidence: Verified
+  sources:
+  - url: https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-research.md
+    type: vendor_docs
+    quote: The AX device communication is documented, and a software API exists that can be used to create your
+      own software to communicate with the AX devices
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/help/3
+    type: vendor_docs
+    quote: For users who wish to develop their own software for the AX3 devices there is an open API available here
+    retrieved: '2026-10-11'
+  - url: https://github.com/openmovementproject/libomapi
+    type: repository
+    quote: Separate repository for Open Movement's OMAPI library.
+    retrieved: '2026-10-11'
+  - url: https://github.com/openmovementproject/openmovement
+    type: repository
+    quote: The source code for the firmware and software is available under a BSD 2-clause license
+    retrieved: '2026-10-11'
+  - url: https://circadia-bio.r-universe.dev/axR
+    type: repository
+    quote: Serial communication and data retrieval for Axivity AX3/AX6 accelerometer devices
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: The API is a local USB device API, not a cloud web API. axR is third-party, published on r-universe
+    (v0.1.3), not on CRAN.
 - field: user_cap
-  status: unresearched
+  status: not_applicable
+  sources:
+  - url: https://axivity.com/products
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-research.md
+    type: vendor_docs
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Offline loggers with no cloud account or API tier, so there is no participant or user cap. Study size is
+    bounded only by the number of devices bought.
 - field: academic_vs_commercial
-  status: unresearched
+  status: stated
+  value: Axivity publishes no academic vs commercial distinction. Everyone pays the same list prices and gets the
+    same BSD 2-clause software. One third-party analysis package the Open Movement docs point to, Oxford's
+    biobankAccelerometerAnalysis, is under an Academic Use Licence that excludes commercial users, and it cannot
+    read AX6 data.
+  confidence: Corroborated
+  sources:
+  - url: https://github.com/openmovementproject/openmovement
+    type: repository
+    quote: The source code for the firmware and software is available under a BSD 2-clause license
+    retrieved: '2026-10-11'
+  - url: https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-research.md
+    type: vendor_docs
+    quote: Academic Use Licence; not currently compatible with AX6 data
+    retrieved: '2026-10-11'
+  - url: https://github.com/OxWearables/biobankAccelerometerAnalysis/blob/master/LICENSE.md
+    type: repository
+    quote: THE SOFTWARE IS INTENDED FOR USE BY ACADEMICS CARRYING OUT RESEARCH AND NOT FOR USE BY CONSUMERS OR
+      COMMERCIAL BUSINESSES.
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/products
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: The absence of an academic price tier is inferred from the store and FAQ showing none; no page states it
+    outright. GGIR remains the open option for commercial users and AX6 data.
+# ---------------- Pricing ----------------
 - field: device_price
-  status: unresearched
+  status: stated
+  scope: AX3
+  value: AX3 puck GBP 139.00, or GBP 149.00 with wrist band (ex VAT). Cable not included (micro USB cable GBP 3.50).
+  confidence: Verified
+  sources:
+  - url: https://axivity.com/product/ax3
+    type: vendor_page
+    quote: AX3 Puck £139.00 (exc VAT)
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/product/ax3
+    type: vendor_page
+    quote: AX3 Puck + Wrist Band (Teal) £149.00 (exc VAT)
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/products
+    type: vendor_page
+    quote: Micro USB Cable 25cm Length Supports Hi-Speed USB £3.50
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: 'Price rose GBP 10 during 2025: the AX3 puck was GBP 129.00 ex VAT in an Internet Archive capture of
+    2025-01-04 (web.archive.org/web/20250104090451/https://axivity.com/product/ax3) and GBP 139.00 by 2026-01-25.
+    Third-party guides still quote GBP 129. The shipping page says "Prices include VAT where applicable" while the
+    product pages say ex VAT. Postage is extra and international buyers pay customs duties.'
+- field: device_price
+  status: stated
+  scope: AX6
+  value: AX6 puck GBP 199.00, or GBP 209.00 with wrist band (ex VAT). Cable not included.
+  confidence: Verified
+  sources:
+  - url: https://axivity.com/product/ax6
+    type: vendor_page
+    quote: AX6 Puck £199.00 (exc VAT)
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/product/ax6
+    type: vendor_page
+    quote: AX6 Puck + Wrist Band (Teal) £209.00 (exc VAT)
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: 'Price rose GBP 10 during 2025: the AX6 puck was GBP 189.00 ex VAT in an Internet Archive capture of
+    2024-09-13 (web.archive.org/web/20240913171031/https://axivity.com/product/ax6) and GBP 199.00 by 2025-12-10
+    (web.archive.org/web/20251210225700/https://axivity.com/product/ax6).'
 - field: subscription_price
-  status: unresearched
+  status: not_applicable
+  sources:
+  - url: https://axivity.com/products
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: One-time hardware purchase. No membership, subscription or cloud service is offered.
 - field: academic_pricing
-  status: unresearched
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://axivity.com/products
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/product/ax3
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/product/ax6
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/shipping
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/faq
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/contact
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: No academic, research or volume discount on any page checked. Large institutional buys have gone through
+    UK public contracts (a 2021 Newcastle University award for AX6 devices for IDEA-FAST and Mobilise-D, GBP
+    200,000, no unit price), which suggests negotiated pricing exists but is not posted. Ask info@axivity.com.
 - field: api_platform_fees
-  status: unresearched
+  status: stated
+  value: None. Firmware, OmGui, the device API and file-format tools are open source under a BSD 2-clause licence
+    and free to use.
+  confidence: Verified
+  sources:
+  - url: https://github.com/openmovementproject/openmovement
+    type: repository
+    quote: The source code for the firmware and software is available under a BSD 2-clause license
+    retrieved: '2026-10-11'
+  - url: https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-research.md
+    type: vendor_docs
+    quote: the electronic designs, device firmware, supporting software, and documentation are all open source and
+      freely available
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
 - field: minimum_commitment
-  status: unresearched
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://axivity.com/products
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/product/ax3
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/shipping
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/terms
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/warrantyterms
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: No minimum order or term is stated. Single units are priced with an add-to-cart button, which implies none,
+    but no page says so. The hardware warranty is one year and excludes software.
 - field: quote_required
-  status: unresearched
+  status: stated
+  value: No for standard purchases. List prices are published and orders go through the web store. No quote route
+    for volume or academic pricing is published.
+  confidence: Verified
+  sources:
+  - url: https://axivity.com/products
+    type: vendor_page
+    quote: AX3 3-Axis Logging Accelerometer Water Resistant £139.00 - 149.00 More Info
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/shipping
+    type: vendor_legal
+    quote: Postage and packaging is an additional charge
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+# ---------------- Data access and terms ----------------
 - field: raw_streams
-  status: unresearched
+  status: stated
+  value: 'Raw, unfiltered triaxial acceleration (AX3: Analog Devices ADXL345; AX6: Bosch BMI160) plus triaxial
+    gyroscope on the AX6, each block timestamped. Both devices also always record low-rate auxiliary channels:
+    light level, internal device temperature and battery voltage. All stored raw on device flash in the open .CWA
+    format and read over USB by the researcher. No vendor cloud.'
+  confidence: Verified
+  sources:
+  - url: https://axivity.com/product/ax6
+    type: vendor_page
+    quote: All data is stored in its raw unaltered format on the embedded flash memory.
+    retrieved: '2026-10-11'
+  - url: https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-faq.md
+    type: vendor_docs
+    quote: Analog Devices ADXL345 Bosch BMI160
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/product/ax3
+    type: vendor_page
+    quote: The light sensor can be used to help determine periods of wear as well as provide useful environmental
+      data.
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/product/ax3
+    type: vendor_page
+    quote: The temperature sensor gives a rough sense of outside environment temperature and also if the sensor is
+      being worn or not.
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/product/ax6
+    type: vendor_page
+    quote: The AX6 has additional light and temperature sensors, their output is inserted in to the recorded data
+      stream.
+    retrieved: '2026-10-11'
+  - url: https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-auxiliary.md
+    type: vendor_docs
+    quote: This data is always recorded, regardless of configuration, whenever the device is logging movement data.
+    retrieved: '2026-10-11'
+  - url: https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-auxiliary.md
+    type: vendor_docs
+    quote: The temperature sensor measures the internal temperature of the device, and it is primarily useful to
+      help with sensor auto-calibration.
+    retrieved: '2026-10-11'
+  - url: https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-auxiliary.md
+    type: vendor_docs
+    quote: The sensor arrangement is most suitable as a general, relative, indicator of light
+    retrieved: '2026-10-11'
+  - url: https://github.com/openmovementproject/openmovement/issues/11
+    type: repository
+    quote: the correct temperature conversion from ADC values is
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Temperature is internal device temperature (affected by skin, coupling and environment), mainly for
+    accelerometer auto-calibration; light reads through the case and is a relative indicator, not calibrated lux.
+    GitHub issue 11 records that OmGui, cwa-convert and the Axivity help pages had used different temperature
+    conversion formulas; the maintainer settled the correct one in July 2023, and absolute readings from the old
+    formula need converting. No PPG, ECG or heart rate.
 - field: derived_metrics
-  status: unresearched
+  status: stated
+  value: The device stores raw data only and computes nothing. OmGui (through omconvert) has built-in, open
+    analysis run by the researcher locally, which derives signal vector magnitude epochs, MET cut-point time in
+    activity intensity bands, wear-time validation and a simple sleep-period detector. Richer metrics come from
+    third-party open-source tools the docs recommend, chiefly GGIR.
+  confidence: Verified
+  sources:
+  - url: https://axivity.com/downloads/ax3
+    type: vendor_page
+    quote: Software for the AX3 sensors with built-in analysis (Windows)
+    retrieved: '2026-10-11'
+  - url: https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-research.md
+    type: vendor_docs
+    quote: Some simple analysis methods are available through the open source OmGui configuration tool
+    retrieved: '2026-10-11'
+  - url: https://github.com/openmovementproject/openmovement/wiki/AX3-GUI
+    type: vendor_docs
+    quote: The signal vector magnitude (SVM) has been shown to be a useful measure for working with when axis
+      specific information is not required.
+    retrieved: '2026-10-11'
+  - url: https://github.com/openmovementproject/openmovement/wiki/AX3-GUI
+    type: vendor_docs
+    quote: The Cut-point analysis reports the time user has spent in a specific intensity of physical activity where
+      each intensity band is categorized in units of Metabolic Equivalent of Task (METS).
+    retrieved: '2026-10-11'
+  - url: https://github.com/openmovementproject/openmovement/wiki/AX3-GUI
+    type: vendor_docs
+    quote: The wear time validation (WTV) algorithm is designed to give a high level view if the device has been worn
+      or not.
+    retrieved: '2026-10-11'
+  - url: https://github.com/openmovementproject/openmovement/wiki/AX3-GUI
+    type: vendor_docs
+    quote: The algorithm detects periods of sleep.
+    retrieved: '2026-10-11'
+  - url: https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-research.md
+    type: vendor_docs
+    quote: For a richer analysis, a popular option in research is the open source GGIR software, which includes
+      sleep analysis and can also produce more visual reports.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: These are published, open algorithms run on the researcher's own computer, not proprietary vendor metrics.
+    No step count is offered. biobankAccelerometerAnalysis is academic-use only and does not read AX6 files (see
+    academic_vs_commercial).
 - field: sampling_rates
-  status: unresearched
+  status: stated
+  scope: AX3
+  value: Accelerometer 12.5 to 3200 Hz configurable, range +/-2/4/8/16 g, 10-bit packed or 13-bit unpacked modes.
+    OmGui default is 100 Hz, +/-8 g.
+  confidence: Verified
+  sources:
+  - url: https://axivity.com/product/ax3
+    type: vendor_page
+    quote: Accelerometer Sample Rate 12.5 - 3200Hz Configurable
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/help/22
+    type: vendor_docs
+    quote: The AX3 has 2 bit depth modes; 10bit (or packed) and 13bit (un-packed)
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: The sensor keeps its own timing, so the actual rate varies slightly from the nominal rate; resample if a
+    fixed rate is needed.
+- field: sampling_rates
+  status: stated
+  scope: AX6
+  value: Accelerometer and gyroscope 12.5 to 1600 Hz configurable; gyroscope +/-125 to 2000 dps.
+  confidence: Verified
+  sources:
+  - url: https://axivity.com/product/ax6
+    type: vendor_page
+    quote: Accelerometer Sample Rate 12.5 - 1600Hz Configurable
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: sampling_rates
+  status: stated
+  scope: AX3 and AX6 auxiliary channels and clock
+  value: Light, temperature and battery are sampled internally at 1 Hz and stored once per data sector (every 40 to
+    120 movement samples, by mode). The internal clock is set from the configuring computer and drifts by about
+    +/-2 seconds per day.
+  confidence: Verified
+  sources:
+  - url: https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-auxiliary.md
+    type: vendor_docs
+    quote: The sensors are internally sampled at 1 Hz
+    retrieved: '2026-10-11'
+  - url: https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-faq.md
+    type: vendor_docs
+    quote: The auxiliary data channels (device temperature and light level indicator) are sampled at a lower rate in
+      all modes.
+    retrieved: '2026-10-11'
+  - url: https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-faq.md
+    type: vendor_docs
+    quote: potentially of the order of around ±2 seconds per day
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
 - field: history_depth
-  status: unresearched
+  status: conflict
+  scope: AX3
+  value: One recording is bounded by battery and memory, and Axivity's own figures disagree. The AX3v2 datasheet
+    description says up to 21 days; the same datasheet's spec table and the product page say 30 days at 12.5 Hz
+    and 14 days at 100 Hz; the Open Movement FAQ gives about 13.5 days at 100 Hz and about 65 days at 12.5 Hz
+    (packed mode). There is no vendor-side history; downloaded files are held by the researcher.
+  confidence: Unclear
+  sources:
+  - url: https://axivity.com/files/resources/AX3v2_Datasheet.pdf
+    type: vendor_docs
+    quote: sensor will record for up to 21 days of continuous data
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/files/resources/AX3v2_Datasheet.pdf
+    type: vendor_docs
+    quote: Maximum Logging Periods 30 days at 12.5 Hz or 14 days at 100 Hz
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/product/ax3
+    type: vendor_page
+    quote: Battery Life 30 days @ 12.5Hz; 14 days @ 100Hz
+    retrieved: '2026-10-11'
+  - url: https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-faq.md
+    type: vendor_docs
+    quote: Approximate maximum recording duration from a single full battery charge.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: The datasheet (v1.8, 18/04/2023) gives "up to 21 days" with no rate attached, against its own 30-day
+    maximum at 12.5 Hz. The 14 days at 100 Hz figure agrees across sources. The FAQ table marks some low-rate
+    figures as uncertain and gives 9 days at 100 Hz in unpacked mode. UK Biobank's activity monitor document
+    (v2.0, 2025) reports 17% incomplete kits in season 1 of its repeat study, attributed to battery performance in
+    reused devices, so plan for shorter windows on old units.
+- field: history_depth
+  status: stated
+  scope: AX6
+  value: About 7 days at 100 Hz with gyroscope; 31+ days at 50 Hz and up to 140 days at 12.5 Hz accelerometer only.
+    No vendor-side history.
+  confidence: Verified
+  sources:
+  - url: https://axivity.com/product/ax6
+    type: vendor_page
+    quote: Battery Life 7+ days @ 100Hz, Accel & Gyro 31+ days @ 50Hz, Accel only
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/files/resources/AX6_Datasheet.pdf
+    type: vendor_docs
+    quote: 7 days IMU mode @ 100Hz
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/files/resources/AX6_Datasheet.pdf
+    type: vendor_docs
+    quote: Up to 140 days Accelerometer @ 12.5Hz
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: The Open Movement FAQ gives 7 to 9 days with gyroscope and marks low-rate accelerometer-only figures as
+    uncertain.
 - field: export_routes
-  status: unresearched
+  status: stated
+  value: 'USB only. The device mounts as a USB drive holding CWA-DATA.CWA. OmGui (Windows) downloads it and exports
+    CSV or WAV; omconvert and cwa-convert do the same from the command line; the file loads directly into GGIR,
+    openmovement-python, pampro, MATLAB and others. libOMAPI (C) and the third-party axR (R) let teams build
+    their own download software. AX-Deploy handles mass deployment with per-device configuration but not AX6
+    gyroscopes; the web configurator AX Config configures one device at a time and cannot download.'
+  confidence: Verified
+  sources:
+  - url: https://github.com/openmovementproject/openmovement/wiki/AX3-GUI
+    type: vendor_docs
+    quote: Data files can be downloaded by simply by mounting the AX device as USB-stick and copying (or moving off)
+      the data file CWA-DATA.CWA from the devices.
+    retrieved: '2026-10-11'
+  - url: https://github.com/openmovementproject/openmovement/wiki/AX3-GUI
+    type: vendor_docs
+    quote: You can process or export the data with omconvert or cwa-convert .
+    retrieved: '2026-10-11'
+  - url: https://github.com/openmovementproject/openmovement/wiki/AX3-GUI
+    type: vendor_docs
+    quote: 'You can also directly load the data into analysis environments with software such as: GGIR , openmovement-python
+      , pampro , MATLAB or biobankAccelerometerAnalysis .'
+    retrieved: '2026-10-11'
+  - url: https://github.com/openmovementproject/openmovement/wiki/AX3-GUI
+    type: vendor_docs
+    quote: The system requirements for the OMGUI software are a Windows PC with XP SP3 or later operating system and
+      Microsoft .NET Framework v3.5 or later.
+    retrieved: '2026-10-11'
+  - url: https://github.com/openmovementproject/openmovement/wiki/AX3-GUI
+    type: vendor_docs
+    quote: Download time is approximately 6 minutes for 7 days worth of data.
+    retrieved: '2026-10-11'
+  - url: https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-research.md
+    type: vendor_docs
+    quote: The AX device communication is documented, and a software API exists that can be used to create your
+      own software to communicate with the AX devices
+    retrieved: '2026-10-11'
+  - url: https://circadia-bio.r-universe.dev/axR
+    type: repository
+    quote: Serial communication and data retrieval for Axivity AX3/AX6 accelerometer devices
+    retrieved: '2026-10-11'
+  - url: https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-research.md
+    type: vendor_docs
+    quote: software is specifically for mass deployments, where each device may have a unique configuration
+    retrieved: '2026-10-11'
+  - url: https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-research.md
+    type: vendor_docs
+    quote: This is not be compatible with AX6 device gyroscopes
+    retrieved: '2026-10-11'
+  - url: https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-research.md
+    type: vendor_docs
+    quote: one-at-a-time configuration (but not download)
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: No wireless sync, phone app or cloud for AX3 or AX6. OmGui is Windows-only; Mac and Linux users use the
+    cross-platform command-line converters.
 - field: rate_limits
-  status: unresearched
+  status: not_applicable
+  sources:
+  - url: https://github.com/openmovementproject/openmovement/wiki/AX3-GUI
+    type: vendor_docs
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: No web or cloud API exists; data moves over a local USB connection.
 - field: retention_terms
-  status: unresearched
+  status: stated
+  value: Sensor recordings never reach Axivity, so there are no vendor terms on retaining study data; retention is
+    the researcher's own. The website privacy policy covers only customer and order data, kept for 6 years.
+  confidence: Verified
+  sources:
+  - url: https://axivity.com/privacy
+    type: vendor_legal
+    quote: We retain Personal Data for period of 6 years.
+    retrieved: '2026-10-11'
+  - url: https://github.com/openmovementproject/openmovement/wiki/AX3-GUI
+    type: vendor_docs
+    quote: Data files can be downloaded by simply by mounting the AX device as USB-stick and copying (or moving off)
+      the data file CWA-DATA.CWA from the devices.
+    retrieved: '2026-10-11'
+  - url: https://www.contractsfinder.service.gov.uk/Notice/202ae1a7-9e51-4348-ab6d-2c5df211ce83
+    type: secondary
+    quote: Data is stored on the device and requires manual transfer.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: The third quote is from a Newcastle University procurement notice, not Axivity.
 - field: ai_training_terms
-  status: unresearched
+  status: not_applicable
+  sources:
+  - url: https://axivity.com/privacy
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/terms
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Axivity never receives sensor data, and its privacy policy and terms contain no AI or ML training terms.
 - field: deprecations
-  status: unresearched
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://axivity.com/products
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/faq
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://github.com/openmovementproject/openmovement
+    type: repository
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/files/resources/AX3v2_Datasheet.pdf
+    type: vendor_docs
+    quote: The AX3v2 is functionally identical to the AX3 and all the integrated sensor, LED and external marking
+      positions and orientations are unchanged.
+    retrieved: '2026-10-11'
+  - url: https://github.com/openmovementproject/openmovement/blob/master/Downloads/AX3/AX3-Firmware.md
+    type: repository
+    quote: Experimental alternative generic (and WinUSB) interface support.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: No announced shutdowns or end-of-life for AX3 or AX6. Quiet changes. The AX3v2 replaced the original AX3
+    enclosure (datasheet 18/04/2023) and the AX3 v1 datasheet link now returns 404. AX3 firmware V50 is an
+    experimental interface build; V48 is the newest standard release. The WAX3 and WAX9 wireless sensors still
+    have downloads but are not in the store (a 2017 GitHub reply relayed that the WAX9 was no longer made). The
+    Multi Dock product page returns 404. The repository moved to the openmovementproject GitHub organisation.
+# ---------------- Compliance ----------------
 - field: baa
-  status: unresearched
+  status: not_applicable
+  sources:
+  - url: https://axivity.com/privacy
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/terms
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/support
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://github.com/openmovementproject/openmovement/wiki/AX3-GUI
+    type: vendor_docs
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: Axivity never receives, hosts or processes participant data (offline loggers, USB download to the
+    researcher's own computer), so it is not a business associate for study data and no BAA is needed. No BAA is
+    mentioned on any page checked. If a third-party service handles collection or analysis, the question moves to
+    that party.
 - field: dpa
-  status: unresearched
+  status: not_applicable
+  sources:
+  - url: https://axivity.com/privacy
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/terms
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: Axivity does not process study data on a sponsor's behalf, so it is not a processor and no DPA is needed
+    for the data path. No DPA is published. If a third-party service (for example McRoberts, named in the Open
+    Movement docs) handles collection or analysis, the DPA question moves to that party.
 - field: hipaa_statement
-  status: unresearched
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://axivity.com/privacy
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/terms
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/faq
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: No HIPAA statement found. UK company; of limited relevance because the vendor never holds study data.
 - field: gdpr_statement
-  status: unresearched
+  status: stated
+  scope: Website and order data
+  value: The privacy policy cites UK GDPR lawful bases for customer and website data. It does not address study or
+    participant data, which Axivity does not receive.
+  confidence: Corroborated
+  sources:
+  - url: https://axivity.com/privacy
+    type: vendor_legal
+    quote: Under the UK General Data Protection Regulation (UK GDPR), the lawful bases we rely on for processing this
+      information are for the purpose of fulfilling our contractual and legal obligations with you.
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
 - field: iso27001
-  status: unresearched
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://axivity.com/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/privacy
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/files/resources/AX3v2_Datasheet.pdf
+    type: vendor_docs
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/files/resources/AX6_Datasheet.pdf
+    type: vendor_docs
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: No ISO 27001 (or ISO 13485) claim found. The datasheets list EMC (Directive 2014/30/EU), FCC Part 15 Class
+    B, IP68, WEEE and UN 38.3 battery transport only.
 - field: soc2
-  status: unresearched
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://axivity.com/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/privacy
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: No SOC 2 claim found; there is no hosted service it would apply to.
 - field: fda_clearances
-  status: unresearched
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://api.fda.gov/device/510k.json?search=applicant:axivity
+    type: regulator_db
+    retrieved: '2026-10-11'
+  - url: https://api.fda.gov/device/registrationlisting.json?search=registration.owner_operator.firm_name:axivity
+    type: regulator_db
+    retrieved: '2026-10-11'
+  - url: https://api.fda.gov/device/registrationlisting.json?search=proprietary_name:axivity
+    type: regulator_db
+    retrieved: '2026-10-11'
+  - url: https://api.fda.gov/device/udi.json?search=company_name:axivity
+    type: regulator_db
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/files/resources/AX3v2_Datasheet.pdf
+    type: vendor_docs
+    quote: The product is compliant with the Directive 2014/30/EU; the relevant Declaration of Conformity is
+      available from Axivity.
+    retrieved: '2026-10-11'
+  - url: https://axivity.com/files/resources/AX3v2_Datasheet.pdf
+    type: vendor_docs
+    quote: tested to comply with FCC CFR 47 part 15.107 and 15.109 (Class B Device)
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: openFDA 510(k), registration-listing and UDI searches for Axivity returned no matches on 2026-10-11 (a
+    510(k) device_name search for "AX3" hit only an unrelated Edan ultrasound, K202856). The CE marking cited is
+    under the EMC Directive, not medical device regulation; the AX3v2 is presented as a research logger, not a
+    medical device.
 - field: data_residency
-  status: unresearched
+  status: stated
+  value: No vendor storage. Recordings stay on the device's flash memory until a researcher downloads them over USB
+    to their own computer, so residency is wherever the research team keeps the files.
+  confidence: Verified
+  sources:
+  - url: https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-faq.md
+    type: vendor_docs
+    quote: There is no external communication while the AX devices are recording, so they cannot directly have their
+      clocks set or read during normal use.
+    retrieved: '2026-10-11'
+  - url: https://github.com/openmovementproject/openmovement/wiki/AX3-GUI
+    type: vendor_docs
+    quote: Data files can be downloaded by simply by mounting the AX device as USB-stick and copying (or moving off)
+      the data file CWA-DATA.CWA from the devices.
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
