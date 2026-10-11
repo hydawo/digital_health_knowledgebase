@@ -45,8 +45,11 @@ Rules the validator enforces:
 - A company's statement about its own HIPAA, GDPR, ISO 27001, SOC 2, BAA or DPA status is capped at
   **Corroborated** unless a source is a certificate, a registry entry, a regulator record or a written
   vendor confirmation.
-- FDA status is **Verified** only from the FDA database. openFDA returns HTTP 404 for "no
-  matches", so cite the accessdata.fda.gov search page for a negative result.
+- FDA status is **Verified** only from the FDA database. Cite the accessdata.fda.gov record page as
+  `url` and the openFDA query (`https://api.fda.gov/device/510k.json?search=k_number:K...`) as
+  `fetch_url`, because accessdata.fda.gov answers automated requests with 404 while working in a
+  browser. openFDA also returns 404 for "no matches", so a negative result is `not_public` with the
+  searches listed, not a quote.
 
 Run `python3 tools/facts/validate.py` before committing, then `python3 tools/facts/generate.py`.
 

@@ -24,6 +24,10 @@ UA = ('Mozilla/5.0 (compatible; digital-health-kb-fact-monitor/1.0; '
       '+https://github.com/hydawo/digital_health_knowledgebase)')
 TIMEOUT = 30
 PAUSE = 2.0  # seconds between requests to the same host
+# Hosts that answer automated requests with 404 even for live pages (they work in a browser).
+# A 404 from these is reported as unreachable, never as dead. Cite a machine-readable route as
+# fetch_url where one exists (for FDA records: https://api.fda.gov/device/510k.json?search=k_number:K...).
+FALSE_404_HOSTS = {'www.accessdata.fda.gov', 'accessdata.fda.gov'}
 
 
 def load_schema():
@@ -166,7 +170,7 @@ def fetch(url, retries=1):
                 ctype = r.headers.get('Content-Type', '')
             return {'status': 'ok', 'http': 200, 'text': _body_to_text(body, ctype, url), 'error': None}
         except urllib.error.HTTPError as e:
-            if e.code in (404, 410):
+            if e.code in (404, 410) and host not in FALSE_404_HOSTS:
                 return {'status': 'dead', 'http': e.code, 'text': None, 'error': str(e)}
             err = {'status': 'unreachable', 'http': e.code, 'text': None, 'error': str(e)}
         except urllib.error.URLError as e:
