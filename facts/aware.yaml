@@ -3,94 +3,748 @@ name: AWARE Framework
 kind: platform
 profile: module-02-digital-phenotyping/profiles/aware-framework.md
 watch:
-- url: https://github.com/tetujin/AWAREFramework-iOS
-  role: repository
-- url: https://awareframework.com/sensors/
-  role: other
-- url: https://awareframework.com/configurator/
-  role: other
-- url: https://awareframework.com/rapids/
+- url: https://awareframework.com/support/
+  role: pricing
+- url: https://awareframework.com/downloads/
+  role: changelog
+- url: https://awareframework.com/use-aware/
   role: docs
-- url: https://github.com/awareframework
-  role: repository
-- url: https://awareframework.com/
+- url: https://awareframework.com/sensors/
+  role: docs
+- url: https://awareframework.com/privacy/
+  role: terms
+- url: https://awareframework.com/open/
+  role: terms
+- url: https://awareframework.com/team/
   role: other
-- url: https://awareframework.com/plugins/
-  role: other
-- url: https://www.awareframework.com/continuous-silent-push-notification-spn-on-aware-ios/
-  role: other
-- url: https://github.com/tetujin/aware-push
-  role: repository
-- url: https://web.archive.org/web/20260812101026/https://awareframework.com/sensors/
-  role: other
+- url: https://awareframework.com/category/news/
+  role: changelog
 - url: https://github.com/awareframework/aware-client
   role: repository
+- url: https://github.com/awareframework/aware-client/releases
+  role: changelog
+- url: https://github.com/awareframework/aware-micro-server
+  role: repository
+- url: https://github.com/awareframework
+  role: repository
+- url: https://apps.apple.com/us/app/aware-client-v3/id6781949744
+  role: app_store
+- url: https://apps.apple.com/us/app/aware-client-v2/id1455986181
+  role: app_store
 facts:
 - field: research_program
-  status: unresearched
+  status: stated
+  value: No research access program. AWARE is open-source academic software that anyone can download and self-host.
+    The only researcher offering is a paid service from the University of Melbourne team, covering dedicated study
+    set-up or fixing support and hosting a study on their AWARE hosting service, arranged by contacting Dr Simon
+    D'Alfonso.
+  confidence: Verified
+  sources:
+  - url: https://awareframework.com/support/
+    type: vendor_page
+    quote: "For those who would like dedicated support in setting up a study or fixing an issue, we offer a paid service option, with all payment going back into further development of AWARE"
+    retrieved: 2026-10-11
+  - url: https://awareframework.com/support/
+    type: vendor_page
+    quote: "we can set it up and host it for you on our AWARE hosting service based at the University of Melbourne"
+    retrieved: 2026-10-11
+  - url: https://awareframework.com/open/
+    type: vendor_page
+    quote: "AWARE is available to everyone on GitHub under the Apache Software License 2.0"
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-10
+  note: Orygen (Melbourne youth mental health) says its partnership with the university gives it unrestricted access
+    to AWARE (https://www.orygen.org.au/Research/Research-Areas/Orygen-Digital/Personal-sensing). That is an informal
+    partnership, not a published program.
 - field: program_eligibility
-  status: unresearched
+  status: not_applicable
+  note: No access program, so no eligibility rule. The software is open to anyone under Apache 2.0 (see
+    academic_vs_commercial). No eligibility rule is published for the paid support or hosting service either.
 - field: program_application
-  status: unresearched
+  status: not_applicable
+  note: No application or approval step. A study is set up by building a JSON configuration in the public
+    configurator (configurator.awareframework.com) and sending participants its link, or by scanning a QR code on
+    iOS. The paid service is by contact only (see quote_required).
 - field: program_status
-  status: unresearched
+  status: not_applicable
+  note: The field describes an access program's status, and AWARE has none. The project's own status (maintainers,
+    releases) is recorded under developer_program_status, and the AWARE-Light rename and archived clients under
+    deprecations. The paid support and hosting service is advertised on the Support page (modified 2025-09-29); no
+    intake status is published.
 - field: developer_program_status
-  status: unresearched
+  status: stated
+  value: Open source with no developer program or sign-up. Actively maintained by a team in the University of
+    Melbourne's School of Computing and Information Systems (Dr Simon D'Alfonso, Prof Vassilis Kostakos); AWARE was
+    created by Denzil Ferreira in his PhD, co-supervised by Kostakos and Anind K. Dey. Android stable is 4.2.1 and
+    beta 4.7.3 (GitHub release 2026-08-07). The iOS apps are published under Yuuki Nishiyama's developer account.
+    Contributions go to D'Alfonso or Kostakos; community support is on Discord.
+  confidence: Verified
+  sources:
+  - url: https://awareframework.com/team/
+    type: vendor_page
+    quote: "The AWARE platform is currently managed by a team within the University of Melbourne’s School of Computing and Information Systems"
+    retrieved: 2026-10-11
+  - url: https://awareframework.com/team/
+    type: vendor_page
+    quote: "Created by Dr. Denzil Ferreira as a result of his PhD – co-supervised by Prof. Vassilis Kostakos and Prof. Anind K. Dey"
+    retrieved: 2026-10-11
+  - url: https://github.com/awareframework/aware-client
+    type: repository
+    quote: "If you would like to contribute to AWARE, please contact Dr Simon D'Alfonso or Dr Vassilis Kostakos"
+    retrieved: 2026-10-11
+  - url: https://awareframework.com/downloads/
+    type: vendor_page
+    quote: "Stable Version (latest version = 4.2.1)"
+    retrieved: 2026-10-11
+  - url: https://github.com/awareframework/aware-client/releases
+    type: repository
+    quote: "4.7.3.beta"
+    retrieved: 2026-10-11
+  - url: https://awareframework.com/support/
+    type: vendor_page
+    quote: "You can join the AWARE community on Discord to get in touch with others using this framework"
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-10
+  note: GitHub API on 2026-10-11 shows 4.2.1 released 2025-05-26 and 4.7.3.beta on 2026-08-07. The downloads page
+    text still says beta "latest version = 4.7.2" while listing a 4.7.3 build. About 40 iOS sensor-module
+    repositories in the awareframework org were pushed in June and July 2026. Open Collective funding is negligible
+    (USD 16.82 raised in total, checked 2026-10-11). Some maintenance signals are weak. Issue 56 (2025-06-08,
+    scheduled ESMs not appearing on the stable client) has no reply.
 - field: user_cap
-  status: unresearched
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://awareframework.com/use-aware/
+    type: vendor_docs
+    retrieved: 2026-10-11
+  - url: https://awareframework.com/support/
+    type: vendor_page
+    retrieved: 2026-10-11
+  - url: https://github.com/awareframework/aware-micro-server
+    type: repository
+    quote: "It is a reactive, non-blocking server able to handle thousands of requests per second on a single machine"
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-10
+  note: No participant or study limit is published. Capacity is set by the researcher's own MySQL or AWARE Micro
+    server; any limit on the University of Melbourne hosting service is not published.
 - field: academic_vs_commercial
-  status: unresearched
+  status: stated
+  value: No difference. The Apache 2.0 licence permits commercial and research use without restriction.
+  confidence: Verified
+  sources:
+  - url: https://awareframework.com/open/
+    type: vendor_page
+    quote: "you may use it for commercial and research purposes without restrictions"
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-10
 - field: device_price
-  status: unresearched
+  status: not_applicable
+  note: Software only. Participants use their own Android phones or iPhones.
 - field: subscription_price
-  status: unresearched
+  status: stated
+  value: Free. Both iOS apps (AWARE Client V3 and V2) are free on the App Store, and the Android APKs are free
+    downloads from GitHub and awareframework.com.
+  confidence: Verified
+  sources:
+  - url: https://apps.apple.com/us/app/aware-client-v3/id6781949744
+    type: app_store
+    quote: "Free"
+    retrieved: 2026-10-11
+  - url: https://apps.apple.com/us/app/aware-client-v2/id1455986181
+    type: app_store
+    quote: "Free"
+    retrieved: 2026-10-11
+  - url: https://awareframework.com/
+    type: vendor_page
+    quote: "We are now hosting the client on GitHub"
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-10
 - field: academic_pricing
-  status: unresearched
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://awareframework.com/support/
+    type: vendor_page
+    retrieved: 2026-10-11
+  - url: https://opencollective.com/aware-framework
+    type: secondary
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-10
+  note: The software is free to all. Prices for the paid support and hosting services are not published, and no
+    academic rate is mentioned.
 - field: api_platform_fees
-  status: unresearched
+  status: stated
+  value: None for the software. All core components are open source; there is no hosted API to pay for. Costs are
+    the researcher's own server, or the unpriced paid support and hosting services.
+  confidence: Verified
+  sources:
+  - url: https://awareframework.com/open/
+    type: vendor_page
+    quote: "AWARE is available to everyone on GitHub under the Apache Software License 2.0"
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-10
 - field: minimum_commitment
-  status: unresearched
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://awareframework.com/support/
+    type: vendor_page
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-10
+  note: None for the free software. Terms of the paid support and hosting services are not published.
 - field: quote_required
-  status: unresearched
+  status: stated
+  value: Yes for the paid services. Dedicated support and the University of Melbourne hosting service are arranged
+    by contacting Dr Simon D'Alfonso; no price is listed. The software itself is free.
+  confidence: Verified
+  sources:
+  - url: https://awareframework.com/support/
+    type: vendor_page
+    quote: "we offer a paid service option, with all payment going back into further development of AWARE"
+    retrieved: 2026-10-11
+  - url: https://awareframework.com/support/
+    type: vendor_page
+    quote: "Contact Dr Simon D’Alfonso if you are interested in this option"
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-10
 - field: hosting_price
-  status: unresearched
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://awareframework.com/support/
+    type: vendor_page
+    retrieved: 2026-10-11
+  - url: https://awareframework.com/use-aware/
+    type: vendor_docs
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-10
+  note: A paid hosting service at the University of Melbourne exists (see hosting_options) but no price is
+    published; contact Dr Simon D'Alfonso. Self-hosting costs are the researcher's own server.
 - field: raw_streams
-  status: unresearched
+  status: stated
+  scope: Android (AWARE, formerly AWARE-Light)
+  value: Raw phone sensor and event streams written to the researcher's own database, including accelerometer,
+    gyroscope, magnetometer, gravity, linear accelerometer, rotation, barometer, light, proximity, temperature,
+    locations (GPS and network), battery, Bluetooth, WiFi, network, telephony, calls and messages, applications,
+    installations, keyboard, touch, notifications, screen, screenshot, screentext and ESM/EMA answers.
+    Applications, touch, notifications, keyboard and screentext need Android Accessibility access. Keyboard logs
+    keystrokes on any keyboard, Screenshot captures full screen images, and Screentext captures on-screen text.
+  confidence: Verified
+  sources:
+  - url: https://awareframework.com/sensors/
+    type: vendor_docs
+    quote: "Accelerometer Applications Aware Barometer Battery Bluetooth Communication ESM/EMA Gravity Gyroscope Installations Light Linear Accelerometer Locations Magnetometer MQTT Network Keyboard Processor Proximity Rotation Scheduler Screen Screenshot Screentext Telephony Touch Temperature Timezone WiFi"
+    retrieved: 2026-10-11
+  - url: https://github.com/awareframework/aware-client
+    type: repository
+    quote: "Accessibility needs to be turned on for AWARE for special sensors to work: Applications, Touch, Notifications, Keyboard, Crash logs, Screen reader"
+    retrieved: 2026-10-11
+  - url: https://awareframework.com/keyboard/
+    type: vendor_docs
+    quote: "This sensor records the users' keystrokes regardless of which keyboard is used"
+    retrieved: 2026-10-11
+  - url: https://awareframework.com/screenshot-sensor/
+    type: vendor_docs
+    quote: "This sensor records screenshots that include all visual elements displayed on the screen at the moment of capture"
+    retrieved: 2026-10-11
+  - url: https://awareframework.com/screentext/
+    type: vendor_docs
+    quote: "Application passwords may be captured by screen readers if the show-password functionality is enabled by the smartphone user"
+    retrieved: 2026-10-11
+  - url: https://github.com/awareframework/aware-client/issues/31
+    type: repository
+    quote: "Need to detect and anonymize sensitive information, e.g., passwords, username"
+    retrieved: 2026-10-11
+  - url: https://awareframework.com/notes-advice/
+    type: vendor_docs
+    quote: "An unresolved issue with AWARE concerns duplication of data records"
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-10
+  note: 'Decision-relevant for ethics review: the Screentext page says the sensor "does not record password inputs",
+    but AWARE''s own test list shows some apps expose passwords to it when the participant turns on show-password.
+    Issue #31 on sensitive-data handling (passwords, usernames) has been open since 2024-02-28. Records can also be
+    duplicated (same device_id and timestamp), so deduplicate during cleaning. The Google Fit module is not in the
+    standard build and must be requested.'
+- field: raw_streams
+  status: stated
+  scope: iOS, AWARE Client V3 (App Store, released 2026-06-28)
+  value: Motion (accelerometer, gyroscope, gravity, magnetometer, linear accelerometer, rotation, barometer,
+    pedometer, activity recognition labels, significant motion, AirPods head motion), device and connectivity
+    (battery, screen, device, processor, network, Bluetooth LE, timezone, app lifecycle), HealthKit records (heart
+    rate, sleep, activity, workouts, ECG, activity summaries, audiograms), Apple Watch sensors, music and photo
+    metadata, keyboard metadata from AWARE's own bundled keyboard, location, Wi-Fi, iBeacon, call events,
+    OpenWeather, notifications and Shortcuts triggers. Ambient noise (decibels and sound labels) was added in a
+    version update. Enrolment is by QR code.
+  confidence: Verified
+  sources:
+  - url: https://apps.apple.com/us/app/aware-client-v3/id6781949744
+    type: app_store
+    quote: "selected Apple Health records such as heart rate, sleep, activity, workouts, ECG, activity summaries, and audiograms"
+    retrieved: 2026-10-11
+  - url: https://apps.apple.com/us/app/aware-client-v3/id6781949744
+    type: app_store
+    quote: "supported AirPods head motion and orientation data"
+    retrieved: 2026-10-11
+  - url: https://apps.apple.com/us/app/aware-client-v3/id6781949744
+    type: app_store
+    quote: "Keyboard data collection requires enabling the bundled custom keyboard and Full Access in iOS Settings"
+    retrieved: 2026-10-11
+  - url: https://apps.apple.com/us/app/aware-client-v3/id6781949744
+    type: app_store
+    quote: "The default keyboard storage mode stores only metadata and masks the key and text fields"
+    retrieved: 2026-10-11
+  - url: https://apps.apple.com/us/app/aware-client-v3/id6781949744
+    type: app_store
+    quote: "Added Ambient Noise collection for decibel values and optional environmental sound labels"
+    retrieved: 2026-10-11
+  - url: https://github.com/awareframework/com.awareframework.ios.sensor.keyboard
+    type: repository
+    quote: "This sensor module captures keystroke events from a custom iOS keyboard extension and persists them to a local SQLite database"
+    retrieved: 2026-10-11
+  - url: https://github.com/awareframework/com.awareframework.ios.sensor.notification
+    type: repository
+    quote: "It records notifications received while the app is in the foreground"
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-10
+  note: Not equivalent to the Android streams of the same name. The iOS keyboard sees only typing done on AWARE's
+    own keyboard, and the notification module records the app's own pushes, not other apps' notifications. The App
+    Store sensor list for V3 does not mention ESM/EMA. The sensor modules are new Swift repositories in the
+    awareframework org (many created 2026-06-11); no public source repository for the V3 app itself was found.
+- field: raw_streams
+  status: stated
+  scope: iOS, AWARE Client V2 (App Store, version 1.14.2) and AWAREFramework-iOS
+  value: Location, barometer, Wi-Fi and Bluetooth; accelerometer, gyroscope, gravity, linear accelerometer,
+    magnetometer and activity recognition; ambient noise features; screen state and call events; network;
+    timezone; OpenWeatherMap; BLE heart rate; HealthKit heart rate, sleep and workouts; calendar; Fitbit via web API;
+    and ESM. Some sensors are extensions that need extra Info.plist permissions and App Store review.
+  confidence: Verified
+  sources:
+  - url: https://apps.apple.com/us/app/aware-client-v2/id1455986181
+    type: app_store
+    quote: "this app collects heart-rate, sleep, and workout data via HealthKit API if the user allows the app to access HealthKit API"
+    retrieved: 2026-10-11
+  - url: https://github.com/tetujin/AWAREFramework-iOS
+    type: repository
+    quote: "The following sensors can be used under extension(s)because these sensors need additional permission(s) into Info.plist and take a review by apple."
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-10
+  note: V2 is the app awareframework.com still links to, but it was last updated 2025-07-10 and its description
+    still sends researchers to the retired AWARE Dashboard.
 - field: derived_metrics
-  status: unresearched
+  status: stated
+  value: The clients mostly store raw records; some sensors add higher-level context (for example call availability
+    in Communication, OS activity labels on iOS). Behavioural features come from the separate RAPIDS pipeline
+    (AGPL-3.0, maintained outside AWARE). The AWARE Narrator tool turns records into English statements for LLM use
+    and can optionally send coordinates to the Google Maps API for reverse geocoding.
+  confidence: Verified
+  sources:
+  - url: https://awareframework.com/rapids/
+    type: vendor_page
+    quote: "RAPIDS can generates various behavioral features from AWARE sensor data"
+    retrieved: 2026-10-11
+  - url: https://github.com/carissalow/rapids
+    type: repository
+    quote: "AGPL-3.0 license"
+    retrieved: 2026-10-11
+  - url: https://awareframework.com/aware-narrator/
+    type: vendor_page
+    quote: "The AWARE Narrator tool converts AWARE data records into English statements that describe the records"
+    retrieved: 2026-10-11
+  - url: https://github.com/awareframework/aware_narrator
+    type: repository
+    quote: "It includes Google Maps API integration for reverse geocoding"
+    retrieved: 2026-10-11
+  - url: https://awareframework.com/communication/
+    type: vendor_docs
+    quote: "It also provides higher level context on the users’ calling availability and actions"
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-10
 - field: sampling_rates
-  status: unresearched
+  status: stated
+  scope: Android
+  value: Configurable per sensor. The accelerometer is set as a sampling delay in microseconds (200000 normal, 60000
+    UI, 20000 game, 0 fastest) and is hardware-dependent and non-deterministic. GPS location is checked every 180
+    seconds by default.
+  confidence: Verified
+  sources:
+  - url: https://awareframework.com/accelerometer/
+    type: vendor_docs
+    quote: "non-deterministic frequency in microseconds (dependent of the hardware sensor capabilities and resources), e.g., 200000 (normal), 60000 (UI), 20000 (game), 0 (fastest)"
+    retrieved: 2026-10-11
+  - url: https://awareframework.com/locations/
+    type: vendor_docs
+    quote: "how frequent to check the GPS location, in seconds. By default, every 180 seconds"
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-10
+  note: The V3 iOS app lets sampling frequency, save interval and sample interval be set in Settings; per-sensor
+    iOS rates were not itemized.
 - field: history_depth
-  status: unresearched
+  status: stated
+  value: No vendor-held copy or limit. Phones upload straight to the researcher's own server, so history is whatever
+    the study keeps; data not yet uploaded sits in the phone's local database.
+  confidence: Corroborated
+  sources:
+  - url: https://awareframework.com/use-aware/
+    type: vendor_docs
+    quote: "AWARE runs on Android devices, and those devices directly upload data to your MySQL server, without any intermediate servers or cloud services"
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-10
+  note: An inference from the self-hosted architecture; no page states a history depth. Terms of the hosted service
+    are not published.
 - field: export_routes
-  status: unresearched
+  status: stated
+  value: Android phones upload to the researcher's MySQL database at a configured offload frequency. iOS and AWARE
+    Legacy upload to a self-run AWARE Micro server. Local data can also be copied off the phone and opened with an
+    SQLite client. No vendor API.
+  confidence: Verified
+  sources:
+  - url: https://awareframework.com/use-aware/
+    type: vendor_docs
+    quote: "“Offload frequency” determines the frequency at which the mobile app will try to send the collected data to the database"
+    retrieved: 2026-10-11
+  - url: https://awareframework.com/downloads/
+    type: vendor_page
+    quote: "To operate the iPhone AWARE setup, you will also need to run the AWARE server"
+    retrieved: 2026-10-11
+  - url: https://awareframework.com/privacy/
+    type: vendor_legal
+    quote: "it can be backed up and opened by connecting the device to your computer and using an SQLite client"
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-10
+  note: Setting up a study in the hosted configurator requires entering the database's root credentials, which the
+    page says it does not store permanently. Deduplicate records on (device_id, timestamp).
 - field: rate_limits
-  status: unresearched
+  status: not_applicable
+  note: No hosted API. Throughput is bounded by the researcher's own server; AWARE Micro is documented as handling
+    thousands of requests per second on one machine.
 - field: retention_terms
-  status: unresearched
+  status: stated
+  value: By default the client stores data only on the phone; in a study it is uploaded to the study server.
+    Participants can withdraw and remove their data from the server and phone from the app. Retention on the server
+    is otherwise the researcher's decision.
+  confidence: Corroborated
+  sources:
+  - url: https://awareframework.com/privacy/
+    type: vendor_legal
+    quote: "By default, the mobile client only stores data locally on the users’ phones"
+    retrieved: 2026-10-11
+  - url: https://awareframework.com/privacy/
+    type: vendor_legal
+    quote: "During a study deployment, a user can withdraw and remove the collected data from the server and the mobile phone at any time, directly from his phone"
+    retrieved: 2026-10-11
+  - url: https://awareframework.com/privacy/
+    type: vendor_legal
+    quote: "Last modified 24.January 2019"
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-10
+  note: Corroborated because the policy dates from 2019 and says it covers clients offered in the Play Store, which
+    no longer exist. Whether the current client still deletes server data on withdrawal was not confirmed; the
+    current use-aware page lists only opting out of the study.
 - field: ai_training_terms
-  status: unresearched
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://awareframework.com/privacy/
+    type: vendor_legal
+    retrieved: 2026-10-11
+  - url: https://awareframework.com/use-aware/
+    type: vendor_docs
+    retrieved: 2026-10-11
+  - url: https://awareframework.com/support/
+    type: vendor_page
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-10
+  note: The project never receives study data on a self-hosted deployment. Terms for the hosting service are not
+    published.
 - field: deprecations
-  status: unresearched
+  status: stated
+  value: In January 2025 AWARE-Light became the main Android AWARE and the original client became AWARE Legacy
+    (denzilferreira/aware-client, archived 2023-06-18). The old free hosted dashboard at api.awareframework.com is
+    not compatible with AWARE Micro and the host no longer resolves. The Google Fit add-on depends on Google Fit
+    APIs that Google is deprecating in 2026.
+  confidence: Verified
+  sources:
+  - url: https://awareframework.com/changes-to-the-aware-ecosystem/
+    type: vendor_page
+    quote: "The version of AWARE formerly known as AWARE-Light has now become the main version of AWARE, whilst the archived original AWARE is now known as AWARE Legacy"
+    retrieved: 2026-10-11
+  - url: https://github.com/denzilferreira/aware-client
+    type: repository
+    quote: "This repository was archived by the owner on Jun 18, 2023. It is now read-only."
+    retrieved: 2026-10-11
+  - url: https://github.com/awareframework/aware-micro-server
+    type: repository
+    quote: "This is not compatible with the old dashboard located at api.awareframework.com"
+    retrieved: 2026-10-11
+  - url: https://developers.google.com/fit
+    type: secondary
+    quote: "The Google Fit APIs, including the Google Fit REST API, will be deprecated in 2026"
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-10
+  note: api.awareframework.com returned NXDOMAIN on 2026-10-11. The changes post is dated 2025-01-13. Three pages
+    still point at the old dashboard on 2026-10-11 (the 2019 privacy policy, the 2015 "Run a study with AWARE"
+    tutorial and the AWARE Client V2 App Store description), and the use-aware page still says AWARE runs on
+    Android only.
 - field: licence
-  status: unresearched
+  status: stated
+  value: Apache License 2.0 for the Android client, AWARE Micro server, configurator and AWAREFramework-iOS. The iOS
+    V2 app repository has no LICENSE file, though its README states Apache 2.0. Many new iOS sensor-module
+    repositories have no detected licence, and one (calendar) is MIT. RAPIDS, the separate feature pipeline, is
+    AGPL-3.0.
+  confidence: Verified
+  sources:
+  - url: https://github.com/awareframework/aware-client
+    type: repository
+    quote: "Open-source (Apache 2.0)"
+    retrieved: 2026-10-11
+  - url: https://github.com/awareframework/aware-micro-server/blob/master/LICENSE
+    type: repository
+    quote: "Apache License"
+    retrieved: 2026-10-11
+  - url: https://github.com/tetujin/AWAREFramework-iOS/blob/master/LICENSE
+    type: repository
+    quote: "Licensed under the Apache License, Version 2.0"
+    retrieved: 2026-10-11
+  - url: https://github.com/tetujin/aware-client-ios-v2
+    type: repository
+    quote: "Licensed under the Apache License, Version 2.0"
+    retrieved: 2026-10-11
+  - url: https://github.com/awareframework/com.awareframework.ios.sensor.calendar
+    type: repository
+    quote: "MIT license"
+    retrieved: 2026-10-11
+  - url: https://github.com/carissalow/rapids
+    type: repository
+    quote: "AGPL-3.0 license"
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-10
+  note: Licence detection from the GitHub API, 2026-10-11. Repositories with no detected licence include the iOS
+    keyboard, notification, airpods, ambientnoise, photos and esm modules; older iOS modules report NOASSERTION. No
+    public source repository for the V3 app was found.
 - field: hosting_options
-  status: unresearched
+  status: stated
+  value: Self-hosted, or a paid managed option. Android needs a researcher-run MySQL 5.x server reachable from the
+    internet (own, AWS, Azure or Docker). iOS and AWARE Legacy need a self-run AWARE Micro server (JVM, Docker on
+    AWS, GCP or Azure). The University of Melbourne team will set up and host a study on its AWARE hosting service,
+    by arrangement.
+  confidence: Verified
+  sources:
+  - url: https://awareframework.com/use-aware/
+    type: vendor_docs
+    quote: "You will need a MySQL server (version 5.x) that is accessible over the Internet"
+    retrieved: 2026-10-11
+  - url: https://awareframework.com/use-aware/
+    type: vendor_docs
+    quote: "Your organisation may already manage MySQL servers, or you can opt for Amazon AWS , Microsoft Azure , or configure your own server user Docker"
+    retrieved: 2026-10-11
+  - url: https://github.com/awareframework/aware-micro-server
+    type: repository
+    quote: "By using Docker, you can quickly deploy your server to AWS, GCP, and Azure and scale up"
+    retrieved: 2026-10-11
+  - url: https://awareframework.com/support/
+    type: vendor_page
+    quote: "If you don’t want the hassle of setting up the technical infrastructure for your study, we can set it up and host it for you on our AWARE hosting service based at the University of Melbourne"
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-10
+  note: The free hosted dashboard the 2019 privacy policy describes no longer exists (see deprecations).
 - field: app_availability
-  status: unresearched
+  status: stated
+  scope: Android
+  value: Not on Google Play. Distributed as APKs from the AWARE site and GitHub and sideloaded; stable 4.2.1, beta
+    4.7.3. Since May 2025 some participants see a Play Protect "unsafe app blocked" warning when installing.
+  confidence: Verified
+  sources:
+  - url: https://awareframework.com/
+    type: vendor_page
+    quote: "You won’t find AWARE on the Google Play Store"
+    retrieved: 2026-10-11
+  - url: https://play.google.com/store/apps/details?id=com.aware.phone
+    type: app_store
+    retrieved: 2026-10-11
+    expect_absent: true
+  - url: https://awareframework.com/unsafe-app-blocked/
+    type: vendor_page
+    quote: "some Android participants might now get the following message when installing AWARE"
+    retrieved: 2026-10-11
+  - url: https://awareframework.com/downloads/
+    type: vendor_page
+    quote: "newer versions might not be compatible with your study configuration file"
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-10
+  note: The maintainers advise keeping all participants on one version. On Android 13 and later a sideloaded app
+    needs "Allow restricted settings" before Accessibility can be enabled.
+- field: app_availability
+  status: stated
+  scope: iOS
+  value: Two free App Store apps, both published by Yuuki Nishiyama. AWARE Client V3 is the current one (released
+    2026-06-28, version 1.7.0 on 2026-07-23, iOS 16.6 or later). AWARE Client V2 is still listed (version 1.14.2,
+    2025-07-10, iOS 12 or later) and is the one awareframework.com links to.
+  confidence: Verified
+  sources:
+  - url: https://apps.apple.com/us/app/aware-client-v3/id6781949744
+    type: app_store
+    quote: "AWARE Client V3"
+    retrieved: 2026-10-11
+  - url: https://apps.apple.com/us/app/aware-client-v3/id6781949744
+    type: app_store
+    quote: "1.7.0"
+    retrieved: 2026-10-11
+  - url: https://apps.apple.com/us/app/aware-client-v3/id6781949744
+    type: app_store
+    quote: "Yuuki Nishiyama"
+    retrieved: 2026-10-11
+  - url: https://apps.apple.com/us/app/aware-client-v2/id1455986181
+    type: app_store
+    quote: "Version 1.14.2"
+    retrieved: 2026-10-11
+  - url: https://awareframework.com/downloads/
+    type: vendor_page
+    quote: "AWARE for iPhone can be downloaded via the Apple App Store"
+    retrieved: 2026-10-11
+  recheck_by: 2026-11-10
+  note: Release dates and minimum iOS versions from the iTunes lookup API (itunes.apple.com/lookup?id=6781949744 and
+    id=1455986181). Calling V3 current is a judgement from its recency and its awareframework bundle ID; AWARE's
+    site has not announced it. The V3 privacy label declares health, location, audio and identifiers as linked to
+    the user, which Apple notes is unverified.
 - field: baa
-  status: unresearched
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://awareframework.com/privacy/
+    type: vendor_legal
+    retrieved: 2026-10-11
+  - url: https://awareframework.com/support/
+    type: vendor_page
+    retrieved: 2026-10-11
+  - url: https://awareframework.com/wp-json/wp/v2/search?search=HIPAA
+    type: vendor_page
+    retrieved: 2026-10-11
+  recheck_by: 2027-01-09
+  note: Nothing on a BAA for the University of Melbourne hosting service. Self-hosted deployments sit with the
+    researcher's institution.
 - field: dpa
-  status: unresearched
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://awareframework.com/privacy/
+    type: vendor_legal
+    retrieved: 2026-10-11
+  - url: https://awareframework.com/support/
+    type: vendor_page
+    retrieved: 2026-10-11
+  recheck_by: 2027-01-09
+  note: No data processing agreement is published for the hosting service.
 - field: hipaa_statement
-  status: unresearched
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://awareframework.com/wp-json/wp/v2/search?search=HIPAA
+    type: vendor_page
+    retrieved: 2026-10-11
+  - url: https://awareframework.com/privacy/
+    type: vendor_legal
+    retrieved: 2026-10-11
+  recheck_by: 2027-01-09
+  note: A site search for HIPAA returned no pages.
 - field: gdpr_statement
-  status: unresearched
+  status: stated
+  value: The 2019 privacy policy has a GDPR section. It says a random 128-bit ID is generated on install, no
+    personal identifiers are collected by design, data stays on the phone by default, encryption and obfuscation
+    are on by default, and participants can withdraw and delete their data.
+  confidence: Corroborated
+  sources:
+  - url: https://awareframework.com/privacy/
+    type: vendor_legal
+    quote: "General Data Protection Regulation (GDPR)"
+    retrieved: 2026-10-11
+  - url: https://awareframework.com/privacy/
+    type: vendor_legal
+    quote: "By design, AWARE does not collect any personal identifiers in its data"
+    retrieved: 2026-10-11
+  - url: https://awareframework.com/privacy/
+    type: vendor_legal
+    quote: "AWARE offers data encryption and obfuscation by default"
+    retrieved: 2026-10-11
+  - url: https://awareframework.com/privacy/
+    type: vendor_legal
+    quote: "the client lets us know every 15 minutes that your device exists and is still using AWARE"
+    retrieved: 2026-10-11
+  - url: https://raw.githubusercontent.com/awareframework/aware-client/main/aware-core/src/main/java/com/aware/Aware.java
+    type: repository
+    quote: 'if (Aware.getSetting(getApplicationContext(), Aware_Preferences.AWARE_DONATE_USAGE).equals("true")) {'
+    retrieved: 2026-10-11
+  recheck_by: 2027-01-09
+  note: 'Self-claim, so Corroborated at most; it describes a design, not a compliance certification, and a study''s
+    GDPR position depends on the researcher''s own server. Still current: the local-first storage, direct upload to
+    the researcher''s server and withdrawal model. Stale: the policy is dated 24 January 2019 and covers clients
+    "offered by AWARE Framework in the Play Store", which no longer exist; the free hosted dashboard it describes is
+    gone; and the 15-minute ping (device ID, timestamp, platform, package and version) goes to api.awareframework.com,
+    which no longer resolves. In the current Android source the ping runs only when the aware_donate_usage setting is
+    "true", and that preference is commented out of the settings screen. The "no personal identifiers" claim sits
+    uneasily with the later keyboard, screenshot and screentext sensors.'
 - field: iso27001
-  status: unresearched
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://awareframework.com/privacy/
+    type: vendor_legal
+    retrieved: 2026-10-11
+  - url: https://awareframework.com/wp-json/wp/v2/search?search=ISO
+    type: vendor_page
+    retrieved: 2026-10-11
+  recheck_by: 2027-01-09
 - field: soc2
-  status: unresearched
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://awareframework.com/privacy/
+    type: vendor_legal
+    retrieved: 2026-10-11
+  - url: https://awareframework.com/wp-json/wp/v2/search?search=SOC
+    type: vendor_page
+    retrieved: 2026-10-11
+  recheck_by: 2027-01-09
 - field: fda_clearances
-  status: unresearched
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://api.fda.gov/device/510k.json?search=device_name:"AWARE+Framework"
+    type: regulator_db
+    retrieved: 2026-10-11
+  - url: https://api.fda.gov/device/510k.json?search=device_name:"AWARE-Light"
+    type: regulator_db
+    retrieved: 2026-10-11
+  - url: https://api.fda.gov/device/510k.json?search=applicant:"University+of+Melbourne"
+    type: regulator_db
+    retrieved: 2026-10-11
+  - url: https://api.fda.gov/device/510k.json?search=applicant:"University+of+Oulu"
+    type: regulator_db
+    retrieved: 2026-10-11
+  - url: https://api.fda.gov/device/pma.json?search=applicant:"University+of+Melbourne"
+    type: regulator_db
+    retrieved: 2026-10-11
+  recheck_by: 2027-01-09
+  note: All searches returned no matches (404) on 2026-10-11. A broad device_name:aware search returns unrelated
+    devices from other companies. AWARE is research software and makes no medical-device claim.
 - field: data_residency
-  status: unresearched
+  status: stated
+  value: Wherever the researcher puts their own server. Android phones upload directly to the researcher's MySQL
+    server with no intermediate service. The optional hosted service is based at the University of Melbourne
+    (Australia).
+  confidence: Verified
+  sources:
+  - url: https://awareframework.com/use-aware/
+    type: vendor_docs
+    quote: "AWARE runs on Android devices, and those devices directly upload data to your MySQL server, without any intermediate servers or cloud services"
+    retrieved: 2026-10-11
+  - url: https://awareframework.com/support/
+    type: vendor_page
+    quote: "If you don’t want the hassle of setting up the technical infrastructure for your study, we can set it up and host it for you on our AWARE hosting service based at the University of Melbourne"
+    retrieved: 2026-10-11
+  - url: https://apps.apple.com/us/app/aware-client-v3/id6781949744
+    type: app_store
+    quote: "Data is transmitted only to the server configured by your study administrator"
+    retrieved: 2026-10-11
+  recheck_by: 2027-01-09
+  note: The AWARE Narrator analysis tool can optionally send coordinates to the Google Maps API; that is the only
+    third-party data flow found.
