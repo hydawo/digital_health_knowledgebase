@@ -3,6 +3,7 @@
 
     python3 tools/facts/validate.py            # all records; exit 1 on errors
     python3 tools/facts/validate.py --json     # machine-readable result (used by weekly.py)
+    python3 tools/facts/validate.py --file facts/_drafts/oura/A.yaml   # check a draft
 
 Errors break the record (missing required field, bad status, a stated fact with no quote, a
 confidence above what its sources allow). Warnings are coverage or housekeeping (unresearched
@@ -10,6 +11,7 @@ fields, overdue re-checks, no watched pages).
 """
 import datetime
 import json
+import os
 import sys
 
 from common import field_specs, load_records, load_schema
@@ -104,10 +106,15 @@ def check(company, rec, schema):
     return errors, warnings, overdue
 
 
-def run():
+def run(files=None):
     schema = load_schema()
     out = {'errors': [], 'warnings': [], 'overdue': [], 'coverage': {}}
-    for company, rec in load_records().items():
+    if files:
+        from common import load_record
+        recs = {os.path.relpath(f): load_record(f) for f in files}
+    else:
+        recs = load_records()
+    for company, rec in recs.items():
         er, wa, ov = check(company, rec, schema)
         out['errors'] += er
         out['warnings'] += wa
@@ -120,7 +127,8 @@ def run():
 
 
 if __name__ == '__main__':
-    res = run()
+    files = sys.argv[sys.argv.index('--file') + 1:] if '--file' in sys.argv else None
+    res = run(files)
     if '--json' in sys.argv:
         print(json.dumps(res, indent=1))
     else:
