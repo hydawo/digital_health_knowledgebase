@@ -56,7 +56,7 @@ corrected 2026-10-10, the 2026-08-21 text called Labfront the only one).
 
 | Field | Detail | Confidence |
 |---|---|---|
-| Devices supported | **Garmin** (vívosmart 5, vívoactive 5, Index BPM, Index S2 scale), **Movesense HR2**, **Dexcom G7 CGM** | **Verified** |
+| Devices supported | **Garmin** (vívosmart 5, vívoactive 5, Index BPM, Index S2 scale), **Movesense Medical, HR2 and Flash** (participants start each Movesense recording manually; updated 2026-10-11 from `../../facts/movesense.yaml`), **Dexcom G7 CGM** | **Verified** |
 | Garmin data | **Beat-to-Beat Interval**, steps, heart rate, oxygen saturation, respiration, accelerometer, naps, wheelchair activities | **Verified** |
 | Movesense data | **RR-interval, ECG, IMU, accelerometer, gyroscope, magnetometer** | **Verified** |
 | **Higher resolution than stock** | Labfront has a Garmin partnership letting it **configure devices via the Garmin Health SDKs to increase sensor resolution**, capturing higher-resolution data than Garmin normally collects, explicitly including beat-to-beat/interbeat intervals for HRV | **Corroborated** |

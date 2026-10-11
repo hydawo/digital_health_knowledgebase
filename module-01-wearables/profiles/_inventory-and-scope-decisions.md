@@ -18,7 +18,7 @@ The rationale column says why each was included. It is not a ranking; Table 10 o
 | Oura | `oura.md` | Highest four-stage kappa in Robbins 2024 (0.65, but Oura-funded) and best resting HR and HRV agreement in Dial 2025; independent PSG results are mixed and Oura was not in Schyvens 2025; named in scope |
 | WHOOP | `whoop.md` | Best deep-sleep (N3) accuracy in Schyvens 2025 (69.63%), but fourth of six on overall kappa (0.37); named in scope |
 | Samsung | `samsung.md` | Raw PPG, ECG, accelerometer, IBI and (Galaxy Watch8 and later) raw EDA from a mainstream watch via the Health Sensor SDK. One of several raw-signal routes in this module, not the only one (see Table 3 of the matrix); named in scope |
-| Polar | `polar.md` | Free open-source raw-signal SDK; field-standard H10; named in scope |
+| Polar | `polar.md` | Free, source-available raw-signal SDK (Polar limited licence); field-standard H10; named in scope |
 | Withings | `withings.md` | Cellular/phone-free collection (Ametris also offers a cellular hub); BP and body composition; named in scope |
 | Empatica | `empatica.md` | Raw wrist EDA with an FDA-cleared EDA parameter; FDA-cleared platform. One of three raw EDA routes in this module, with Samsung Galaxy Watch8 and the Verily Study Watch (C); named in scope |
 | Ametris (formerly ActiGraph) | `ametris-actigraph.md` | Reference standard for research accelerometry; named in scope |
@@ -48,7 +48,7 @@ Rows updated 2026-10-10. The "Why it matters" text is the original 2026-08-21 di
 
 | Candidate | Why it matters | Status |
 |---|---|---|
-| **Movesense** (Suunto) | Open developer platform with programmable sensor modules, potentially a Polar-like raw-access story with more extensibility. | **Profiled:** `movesense.md`. |
+| **Movesense** (Movesense Ltd; independent of Suunto since October 2021) | Open developer platform with programmable sensor modules, potentially a Polar-like raw-access story with more extensibility. | **Profiled:** `movesense.md`. |
 | **Biostrap** | Positions explicitly toward research with raw PPG access claims. | **Profiled:** `emerging-platforms.md` (now Sensor Bio). Raw-data claims remain vendor statements (Corroborated at most). |
 | **Ultrahuman Ring** | Oura competitor in the ring form factor with an API. | **Profiled:** `emerging-platforms.md` (UltraSignal and Partner API). |
 | **RingConn, Circular, other smart rings** | Growing category; relevant to any ring-based design as Oura alternatives. | **Desk-checked 2026-10-09:** `emerging-platforms.md`. No research API found for RingConn or Circular. Samsung Galaxy Ring as a distinct research target is still not investigated in depth, but Samsung's docs confirm it has only a processed route through the phone-side Data SDK and no raw route (`../../facts/samsung.yaml`, 2026-10-11). |

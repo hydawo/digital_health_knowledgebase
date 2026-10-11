@@ -10,6 +10,11 @@ Empatica and Withings were checked against the committed vendor fact records (`.
 and corrected where they differed. For these eight vendors the record is the source of truth. Their
 profiles carry the same facts in generated fact blocks.
 
+**Batch-2 correction, 2026-10-11.** Cells for Polar, Ametris, Axivity, Activinsights (GENEActiv) and
+Movesense were checked the same way against `../facts/polar.yaml`, `ametris-actigraph.yaml`,
+`axivity.yaml`, `activinsights-geneactiv.yaml` and `movesense.yaml`. Axivity and GENEActiv still
+share rows here; where the two vendors differ, the cell names each.
+
 **Confidence markers in cells.** (C) = Corroborated, (R) = Reported, copied from the profile. A cell
 with no marker repeats a profile statement that the profile marks Verified or leaves unmarked; check
 the profile before relying on it for a decision. The 2026-08-21 and 2026-08-24 versions of this file
@@ -47,11 +52,11 @@ Several tables are used deliberately. Do not read any single table as a ranking.
 | **Oura** | Consumer | API v2 (OAuth 2.0 only) with webhooks; Oura for Organizations research offering | Yes | An API app is limited to 10 users until Oura approves it; research offering by contact | Yes, up to 10 users, under the API and MCP Agreement |
 | **WHOOP** | Consumer | API v2 (OAuth 2.0) with webhooks | Yes | App approval; member tiers raised one step at a time by manual review | Yes, Sandbox tier only (10 members) |
 | **Samsung** | Consumer | Samsung Health Sensor SDK (formerly Privileged Health SDK) on the watch; Research Stack, self-hosted, no code updates since Oct 2024 | **No** for the Sensor SDK path | SDK v1.4.1 is a public download; **Samsung Partner Program approval to distribute** the app (package name and SHA-256 registered) | Development and testing yes (developer mode); deployment no |
-| **Polar** | Athletic / research | Open BLE SDK (GitHub), or AccessLink cloud API | **No** for BLE; yes for AccessLink | **None** for the BLE SDK; any registered Polar Flow user can create an AccessLink client | **Yes** |
+| **Polar** | Athletic / research | BLE SDK (GitHub, source-available under Polar's limited licence), or AccessLink cloud API | **No** for BLE; yes for AccessLink | **None** for the BLE SDK; any registered Polar Flow user can create an AccessLink client | **Yes** |
 | **Withings** | Connected health devices | Public Health Data API (Start for Free, Enterprise, Advanced Biomarkers plans); Advanced Research API for raw data | Yes; EU or US medical cloud | Raw data: contracted partners only; free plan above 10 users: Withings review | Yes on the free plan, up to 10 users; **Withings+ needed from 12 Oct 2026** for participants with new accounts |
 | **Empatica** | Research / medical | Care Portal (Care Lab Portal on the academic plan); CSV biomarker download; raw signal as Avro via Amazon S3 data access keys; Enterprise Cloud API | Yes | Academic plan bought from the store; academic discount by application with an institutional email | Yes for the academic plan; Enterprise by quote |
 | **Ametris (ActiGraph)** | Clinical trials | CentrePoint platform and V3 API; legacy ActiLife desktop workflow | CentrePoint yes; ActiLife local | Quote; API access must be enabled by Ametris | No |
-| **Axivity / GENEActiv** | Research | **USB download. No cloud, no API, no account** | **No** | **None** | Axivity yes (online shop); GENEActiv by quote |
+| **Axivity / GENEActiv** | Research | **Axivity: USB only**, no vendor cloud (local device API libOMAPI). **GENEActiv: USB by default**; optional Activinsights cloud (Azure) with per-study APIs and the Study Management Hub; GENEActiv 1.3 adds Bluetooth adherence sync | **No** for Axivity and for GENEActiv by USB; yes on the optional Activinsights cloud | **None** | Axivity yes (online shop); GENEActiv by quote |
 | **Movesense** | Open sensor | BLE to the team's own app; onboard logging (Flash); custom firmware | **No** | None to develop; SDK under a proprietary 12-month evaluation licence, separate agreement for commercialisation | Yes |
 | **Ultrahuman** | Consumer ring | UltraSignal (application, loaned developer kit) or Partner API (OAuth for approved apps) | Partner API yes | Yes for both routes | No |
 | **Biostrap (now Sensor Bio)** | Research platform | RPM dashboard or custom pipelines; API or Bluetooth SDKs (R) | Unclear | Demo request only | No |
@@ -75,21 +80,21 @@ profile does not establish it. **Presence is not access**; see Table 3.
 | Polar H10 | No | ✓ | ✓ | No | No | No | No | No | No | No |
 | Polar Verity Sense | ✓ | No | ✓ | ✓ (plus magnetometer) | No | No | No | No | No | No |
 | Polar 360 / Loop | ✓ | No | ✓ | Unclear | ✓ (skin) | Unclear | Unclear | Unclear | No | No |
-| Movesense MD / Flash / HR2 | No | ✓ | ✓ | ✓ (plus magnetometer) | some (MD, Flash) | No | No | Unclear | No | No |
+| Movesense MD / Flash / HR2 | No | ✓ | ✓ | ✓ (plus magnetometer) | ✓ (internal, non-medical) | No | No | Unclear | No | No |
 | Withings ScanWatch 2 | ✓ | ✓ | ✓ | Unclear | ✓ | ✓ | Unclear | ✓ | No (Body Scan scale has EDA) | No (Body Scan scale has segmental impedance) |
 | Ultrahuman Ring AIR | ✓ | Unclear | ✓ | Unclear | ✓ | Unclear (nightly SpO2 metric, R) | Unclear | Unclear | Unclear | Unclear |
 | Biostrap / Sensor Bio wrist | ✓ | Unclear | ✓ | ✓ | Separate Thermo Patch (C) | Unclear | Unclear | Unclear | Unclear | Unclear |
 | Verily Study Watch | Unclear (records heart rate, C) | ✓ (C) | ✓ (inertial, C) | Unclear | Unclear | Unclear | Unclear | Unclear | ✓ (C) | Unclear |
 | Empatica EmbracePlus | ✓ | No | ✓ | ✓ (selected sensor modes) | ✓ | ✓ (FDA K221282, no-motion conditions only; SpO2 biomarker is Enterprise only, not on the academic list) | No | Unclear | ✓ | No |
-| Ametris LEAP | ✓ (green, red, IR) | No | ✓ | ✓ (IMU) | ✓ (skin) | No | No | ✓ | No | No |
+| Ametris LEAP | ✓ (green, red, IR) | No | ✓ | ✓ (IMU) | ✓ (skin) | Investigational metric (Scientific Services; outside the 510(k)) | No | ✓ | No | No |
 | Ametris Insight Watch / wGT3X-BT | No | No | ✓ | No | Insight Watch (near-body) | No | No | No | No | No |
-| Axivity AX3 / AX6 | No | No | ✓ | AX6 only | No | No | No | No | No | No |
+| Axivity AX3 / AX6 | No | No | ✓ | AX6 only | ✓ (internal device temperature) | No | No | No | No | No |
 | GENEActiv | No | No | ✓ | No | ✓ (near-body) | No | No | No | No | No |
 
 Raw EDA has three routes in this module: Empatica, **Samsung Galaxy Watch8 and later (1 Hz, via
 the Health Sensor SDK)** and the Verily Study Watch (C). Fitbit Sense has an EDA sensor but no EDA
-data type in the Google Health API. Ambient light is also present on the GENEActiv and the
-wGT3X-BT; Ametris LEAP also has a microphone, disabled by default.
+data type in the Google Health API. Ambient light is also present on the GENEActiv, the Axivity
+AX3/AX6 (relative level, not lux) and the wGT3X-BT; Ametris LEAP also has a microphone, disabled by default.
 
 ---
 
@@ -103,17 +108,17 @@ wGT3X-BT; Ametris LEAP also has a microphone, disabled by default.
 | **Oura** | No | No | n/a | No (HR at 5-minute increments; nightly HRV) | n/a | API v2, derived only |
 | **WHOOP** | No | No | MG ECG feature exists; no ECG scope in the API | No | n/a | API v2, derived scores only; Unite research raw files with RR intervals (2023, R), current availability Unclear |
 | **Samsung** | **Yes, 25 Hz** | **Yes, green, IR and red: 25 Hz continuous, 100 Hz on demand** | **Yes, raw, 500 Hz on demand** (one on-demand tracker at a time, about 30 s) | **Yes, HR with IBI at 1 Hz** | **Yes, 1 Hz, Galaxy Watch8 and later** | Health Sensor SDK (partner registration to distribute); also via Verily Pre / Viewpoint Evidence (C) |
-| **Polar H10** | **Yes, 25 / 50 / 100 / 200 Hz, ±2 / 4 / 8 g** | n/a | **Yes, 130 Hz in µV** (streaming only; internal memory logs HR only) | **Yes, RR in ms with HR at 1 Hz** | n/a | **Open BLE SDK, no registration**; AccessLink returns exercise RR when an H10 was used |
-| **Polar Verity Sense** | **Yes, 52 Hz; SDK mode 26–416 Hz, ±2–16 g** | **Yes, SDK mode 28–176 Hz, 22-bit** | No | Yes (PPI), but not in SDK mode | n/a | Open BLE SDK |
-| **Polar 360 / Loop** | Yes, 12–400 Hz online, 1–50 Hz offline | **Yes, 22 / 50 / 100 Hz online and offline, 24-bit, green** | No | PP interval and 24/7 PPI samples | n/a | Open BLE SDK; 15 MB storage shared with activity and sleep |
-| **Movesense** | **Yes, 9-axis IMU 13 Hz to 1.6 kHz (C)** | n/a | **Yes, single lead, 125–512 Hz (C)** | **Yes, R-R at 1 ms resolution** | n/a | BLE or onboard logging (Flash, 128 MB); custom firmware; no licence fee, proprietary evaluation licence |
+| **Polar H10** | **Yes, 25 / 50 / 100 / 200 Hz, ±2 / 4 / 8 g** | n/a | **Yes, 130 Hz in µV** (streaming only; internal memory logs HR only) | **Yes, RR in ms with HR at 1 Hz** | n/a | **BLE SDK (Polar limited licence), no registration**; AccessLink returns exercise RR when an H10 was used |
+| **Polar Verity Sense** | **Yes, 52 Hz; SDK mode 26 to 416 Hz, ±2 to 16 g** | **Yes, SDK mode 28 to 176 Hz, 22-bit** | No | Yes (PPI), but not in SDK mode | n/a | BLE SDK (Polar limited licence) |
+| **Polar 360 / Loop** | Yes, 12 to 400 Hz online, 1 to 50 Hz offline | **Yes, 22 / 50 / 100 Hz online and offline, 24-bit, green** | No | PP interval; 24/7 PPI as automatically triggered sessions, schedule undocumented (C) | n/a | BLE SDK (Polar limited licence); 15 MB storage shared with activity and sleep |
+| **Movesense** | **Yes, 9-axis IMU; maximum 416, 833 or 1666 Hz depending on the vendor source (conflict)**; the highest rates may be limited by BLE | n/a | **Yes, single lead, 125 to 512 Hz** (above 256 Hz not advised over BLE) | **Yes, R-R at 1 ms resolution** | n/a | BLE or onboard logging (Flash, 128 MB); custom firmware; no licence fee, proprietary evaluation licence |
 | **Withings** | Yes, ScanWatch, about 24.824 Hz in raw mode, ±4 g (overview page says "25 Hz by default (up to 100 Hz)"; no documented setting reaches 100 Hz) | Yes, green, red and IR, about 24.824 Hz | Not in the Raw Data API | Not documented | n/a | **Advanced Research API, contracted partners only**; raw mode disables all other watch features; battery falls to 3–4 days |
 | **Ultrahuman** | Accelerometer "data stream" | PPG "data stream"; **raw format and rates undocumented** | n/a | Derived HRV via the Partner API | n/a | UltraSignal application with a loaned developer kit |
 | **Biostrap / Sensor Bio** | Raw and/or processed, with gyroscope (vendor statement, C) | Raw PPG (vendor statement, C) | n/a | IBI (vendor statement, C) | n/a | RPM dashboard or custom pipelines; configurable sampling rates, no Hz figures published |
 | **Empatica** | **Yes; 64 / 64 / 32 / 64 / 100 Hz by sensor mode** (Pulse Rate Pro / Actigraphy Pro / Actigraphy Optimized / Gyroscope Max / Gyroscope 100), ±16 g; gyroscope in the two Gyroscope modes | **Yes; 64 Hz (Pulse Rate Pro) or 4 Hz infrared (Actigraphy Pro)**, off in other modes | No | Yes, raw systolic peaks (IBI) | **Yes; 4 Hz in Pulse Rate Pro and Actigraphy Pro**, off otherwise | Avro raw files and CSV biomarkers via S3 access keys; **no real-time streaming**; one mode per academic account (Pulse Rate Pro was the only academic mode until 16 Sep 2026) |
 | **Verily Study Watch** | Yes, inertial (C) | Unclear | Yes (C) | Unclear | **Yes (C)** | Verily Pre / Viewpoint Evidence, enterprise only |
-| **Ametris** | **Yes; Insight Watch and LEAP 32–256 Hz, ±8 g; wGT3X-BT 30–100 Hz, ±8 g** | **LEAP: green 25 Hz and 100 Hz, red/IR 50 Hz**, "only available for certain devices, firmware versions, and study configuration, and ... subject to contract restrictions" | No | Not documented | n/a | CentrePoint API Data Access Files (CSV or AVRO); ActiLife `.gt3x` |
-| **Axivity / GENEActiv** | **Yes; AX3 12.5–3,200 Hz, AX6 12.5–1,600 Hz, ±2–16 g, configurable** (UK Biobank used 100 Hz, ±8 g); GENEActiv raw, rate not in the profile | n/a | n/a | n/a | n/a | **USB, raw file, no vendor** |
+| **Ametris** | **Yes; Insight Watch and LEAP 32 to 256 Hz, ±8 g; wGT3X-BT 30 to 100 Hz, ±8 g** | **LEAP: green 25 Hz and 100 Hz, red/IR 50 Hz**, "only available for certain devices, firmware versions, and study configuration, and ... subject to contract restrictions"; LEAP PPG also processed locally in ActiLife 7 | No | Not documented | n/a | CentrePoint API Data Access Files (CSV or AVRO); ActiLife `.gt3x` |
+| **Axivity / GENEActiv** | **Yes; AX3 12.5 to 3,200 Hz, AX6 12.5 to 1,600 Hz, ±2 to 16 g, configurable** (UK Biobank used 100 Hz, ±8 g); GENEActiv 10 to 100 Hz, ±8 g, 12 bit (v1.3: 10, 20, 25, 50 or 100 Hz only) | n/a | n/a | n/a | n/a | **USB raw file** (Axivity, GENEActiv); optional Activinsights cloud API for GENEActiv |
 
 ### Sampling-rate reference, by signal
 
@@ -122,22 +127,22 @@ rate; a blank price means the profile gives none.
 
 | Signal | Device | Maximum documented rate | Cost of entry |
 |---|---|---|---|
-| ECG | Movesense | 512 Hz (C) | MD €349 ex VAT (1–49 units); no licence fee |
+| ECG | Movesense | 512 Hz (above 256 Hz not advised over BLE) | MD €349 ex VAT (1 to 49 units), €339 (100 to 199); no licence fee |
 | ECG | Samsung Galaxy Watch | 500 Hz, on demand | Consumer watch; partner registration to distribute |
-| ECG | Polar H10 | 130 Hz | **$104.95** (Polar US store, 2026-10-10); open SDK, no approval |
+| ECG | Polar H10 | 130 Hz | **$104.95** (Polar US store, 2026-10-11); free SDK under Polar's limited licence, no approval |
 | Accelerometer | **Axivity AX3** | **3,200 Hz** | **£139 ex VAT**; no software cost |
-| Accelerometer (IMU) | Movesense | 1.6 kHz, 9-axis (C) | €349 ex VAT |
+| Accelerometer (IMU) | Movesense | 416 to 1666 Hz, 9-axis (vendor sources conflict) | €349 ex VAT |
 | Accelerometer (with gyro) | Axivity AX6 | 1,600 Hz | £199 ex VAT |
-| Accelerometer | Polar Verity Sense (SDK mode) | 416 Hz | ~$95 (2026-08-21 figure, not re-read) |
-| Accelerometer | Polar 360 | 400 Hz online | Price not in profile |
+| Accelerometer | Polar Verity Sense (SDK mode) | 416 Hz | $104.95 (Polar US store, 2026-10-11) |
+| Accelerometer | Polar 360 / Loop | 400 Hz online | Loop $199.99 (US store, 2026-10-11); Polar 360 by B2B contact, no price published |
 | Accelerometer | Ametris Insight Watch / LEAP | 256 Hz | Quote only |
 | Accelerometer | Polar H10 | 200 Hz | $104.95 |
 | Accelerometer | Empatica EmbracePlus | 100 Hz (Gyroscope 100); 64 Hz (Pulse Rate Pro, Actigraphy Pro, Gyroscope Max); 32 Hz (Actigraphy Optimized) | $1,749.60 academic 3-year bundle |
 | Accelerometer | Samsung | 25 Hz | Partner registration |
 | Accelerometer | Withings ScanWatch | ~24.8 Hz | Contract |
-| Raw PPG | **Polar Verity Sense (SDK mode)** | **176 Hz, 22-bit** | ~$95 (not re-read) |
+| Raw PPG | **Polar Verity Sense (SDK mode)** | **176 Hz, 22-bit** | $104.95 (Polar US store, 2026-10-11) |
 | Raw PPG | Samsung (green, IR, red) | 100 Hz on demand; 25 Hz continuous | Partner registration |
-| Raw PPG | Polar 360 | 100 Hz, 24-bit | Price not in profile |
+| Raw PPG | Polar 360 / Loop | 100 Hz, 24-bit | Loop $199.99 (US store, 2026-10-11); Polar 360 by B2B contact, no price published |
 | Raw PPG | Ametris LEAP (green) | 100 Hz; subject to contract restrictions | Quote only |
 | Raw PPG | Empatica EmbracePlus | 64 Hz (Pulse Rate Pro); 4 Hz (Actigraphy Pro) | $1,749.60 academic 3-year bundle |
 | Raw PPG | Withings ScanWatch | ~24.8 Hz | Contract |
@@ -147,8 +152,8 @@ rate; a blank price means the profile gives none.
 | EDA | Verily Study Watch | Not published | Enterprise only |
 
 **Reading.** The highest documented raw rates in the module come from open sensors sold at modest
-prices (Axivity AX3 accelerometry to 3,200 Hz, Movesense ECG to 512 Hz and IMU to 1.6 kHz, Polar
-Verity Sense PPG to 176 Hz), not from the clinical-trial vendors. Samsung is the consumer exception
+prices (Axivity AX3 accelerometry to 3,200 Hz, Movesense ECG to 512 Hz and IMU to at least 416 Hz,
+with vendor sources giving up to 1666 Hz, Polar Verity Sense PPG to 176 Hz), not from the clinical-trial vendors. Samsung is the consumer exception
 (ECG 500 Hz, PPG 100 Hz on demand). What the open sensors give up is form factor, wear duration,
 derived metrics and study infrastructure.
 
@@ -169,9 +174,9 @@ derived metrics and study infrastructure.
 | Polar AccessLink | OAuth 2.0 | 500 + 20 × users per 15 min; 5,000 + 100 × users per 24 h | Webhooks | **None before the user registers with the client**; exercises from the last 30 days only; activity 28-day default, no older than 365 days | Polar Flow sync |
 | Withings | OAuth 2.0 | Enterprise and Advanced Biomarkers "1,500+ requests/minute"; Start for Free "Standard"; throttled calls return status 601 | Webhooks | No maximum published; per-call windows (24 h intraday activity, 7 days on one sleep endpoint); sync by `lastupdate` | Cellular or app sync |
 | Empatica | Portal login; S3 access keys | n/a | **No real-time streaming** | Full study history for the 3- or 5-year subscription (extendable yearly) and 60 days after termination | 30-minute batches; once a day in Actigraphy Optimized |
-| Ametris CentrePoint | OAuth 2.0 client credentials (tokens 3,600 s), enabled by Ametris | More than 500 req/min from one IP returns 429; 10 concurrent raw requests | Webhooks, including raw-processing-complete | Historical raw-file generation may carry fees | Cellular gateway or app |
+| Ametris CentrePoint | OAuth 2.0 client credentials (tokens 3,600 s), enabled by Ametris | More than 500 req/min from one IP returns 429; 10 concurrent raw requests, GT3X ranges of at most 15 days; V2 API daily limit unpublished | Webhooks, including raw-processing-complete | Historical raw-file generation may carry fees; no lookback limit published (Unclear) | Cellular gateway or app |
 | Ultrahuman Partner API | OAuth 2.0 for approved apps; tokens last about a week | Not published | Unclear | Unclear | Unclear |
-| Axivity / GENEActiv | n/a | n/a | n/a | n/a | **Device return** |
+| Axivity / GENEActiv | n/a for USB (Activinsights cloud: per-study APIs, no public reference) | n/a (Activinsights: not published) | n/a | n/a | **Device return** (GENEActiv 1.3: adherence data by Bluetooth about every 5 h) |
 
 ---
 
@@ -188,9 +193,9 @@ derived metrics and study infrastructure.
 | Polar | No (Team Pro is team-sport) | No | No | No | No | Yes |
 | Withings | Withings Health Solutions services model | Via partner or RPM platform | Via partner | Via Health Solutions | Patient Insights questionnaires on BPM Pro 2 (Advanced Biomarkers plan); otherwise via DCT partner | Yes |
 | **Empatica** | **Care Portal** (Care Lab on the academic plan) | Yes; **academic account limited to 1 study, 1 site, 1,000 participants, sensor mode fixed per account**; Enterprise minimum order 100 devices | **Yes, live wear-time** | Yes (Enterprise); 1 site on the academic plan | None (event marking only) | **Yes, multiple participants per device** |
-| **Ametris** | **CentrePoint** | Yes | **Yes, near-real-time and monthly reports** | **Yes, 70+ countries** | Signant eCOA integration is the stated direction; current availability not established | Yes, automated device assignment |
-| Axivity / GENEActiv | **No** | No | **Impossible during wear** | No | No | Yes |
-| Movesense | No; via Labfront (HR2) | Via Labfront | Via Labfront | Via Labfront | Via Labfront | Yes |
+| **Ametris** | **CentrePoint** | Yes | **Yes, near-real-time and monthly reports** | **Yes, 70+ countries** | Combined Ametris DHT and Signant eCOA offering for CNS trials announced 2026-03-10, for sponsors; integration depth not stated | Yes, automated device assignment |
+| Axivity / GENEActiv | **Axivity no**; Activinsights Study Management Hub (demo by request) | Axivity no; Activinsights Hub | **Axivity and GENEActiv 1.1/1.2: impossible during wear**; GENEActiv 1.3: Bluetooth adherence about every 5 h | No | No | Yes |
+| Movesense | No; via Labfront (MD, HR2, Flash; participants start each recording manually) | Via Labfront | Via Labfront | Via Labfront | Via Labfront | Yes |
 | Biostrap / Sensor Bio | Participant management dashboard (vendor) | Enrolment workflows (vendor) | Compliance notifications (vendor) | Unclear | Integrated surveys (vendor) | Unclear |
 
 ---
@@ -206,12 +211,12 @@ derived metrics and study infrastructure.
 | WHOOP | Screenless band or apparel | 14+ days for 5.0 and MG (R, vendor page capture 2026-10-02); **charged on the wrist with a slide-on pack** | **No wear interruption** | Yes | Partly (membership) |
 | Samsung | Watch / ring | About 1 to 2 days; **continuous raw capture reduces this substantially** (not measured by Samsung) | Yes | Yes (Android; Galaxy Watch4 or later) | Galaxy Watch owners for the watch app; the phone-side Data SDK also runs on non-Samsung Android phones (Samsung Health 6.30.2+) |
 | Polar H10 | Chest strap | Session wear | n/a | ECG and accelerometry need a phone; internal memory logs HR only | No |
-| Polar Verity Sense | Armband | Session wear | n/a | No (offline recording) | No |
-| Movesense | Chest-worn sensor | Unclear (datasheets gated) | n/a | Flash logs phone-free (128 MB) | No |
+| Polar Verity Sense | Armband | Session wear | n/a | No (offline recording per the product docs; a Polar staff reply says offline recording is H10-only, R) | No |
+| Movesense | Chest-worn sensor | Battery life not published; MD runs on a user-replaceable CR2025 coin cell and is rated IP68 (vendor FAQ, 2024); Flash logs up to 5 days of ECG | n/a | Flash logs phone-free (128 MB) | No |
 | Withings | Hybrid watch, scale, BP cuff, **under-mattress sleep mat** | ScanWatch about 30 days (3–4 days in raw mode) | No | **No for cellular devices** | Partly |
 | Empatica | Wristband | EmbracePlus 2+ / 7+ / 14+ / 5+ / 5+ days by mode (Pulse Rate Pro about 2 days); EmbraceMini 7+ / 14+ / 3+ / 3+ (no Pulse Rate Pro); Enterprise "up to 28 days" matches no published mode | No | Care / Care Lab app used; phone requirement not stated in the profile | No |
-| Ametris | Research watch / puck | Insight Watch 30 days at 32 Hz; wGT3X-BT 25 days; LEAP 30 or 32 days (conflicting spec blocks, Unclear) | No | **No, cellular gateway option** | No |
-| Axivity / GENEActiv | Sealed puck | AX3 14 days at 100 Hz, 30 days at 12.5 Hz (vendor); AX6 7+ days at 100 Hz with gyro; GENEActiv "up to 2 months"; **no charging during wear** | **No** | **No** | No |
+| Ametris | Research watch / puck | Insight Watch 30 days at 32 Hz; wGT3X-BT 25 days; LEAP 1 to 32 days by configuration, about 32 at the 32 Hz default; LEAP storage 79 days / 1 GB (C) | No | **No, cellular gateway option** | No |
+| Axivity / GENEActiv | Sealed puck | AX3 14 days at 100 Hz; 30 days at 12.5 Hz per the product page, but the datasheet also says "up to 21 days" (conflict); AX6 about 7 days at 100 Hz with gyro, up to 140 days at 12.5 Hz; GENEActiv 1.2/1.3 14 days at 100 Hz, 44 days at 20 Hz (product sheet says 60, conflict); **no charging during wear** | **No** | **No** | No |
 
 ---
 
@@ -225,14 +230,14 @@ derived metrics and study infrastructure.
 | Oura | Ring 5 $399 to $499, Ring 4 from $349 (US store) | **$5.99/month or $69.99/year (US), mandatory for API data on Gen3 and later** | API free today; the Agreement reserves the right to charge, including differentiated business pricing; research offering price not published | Ring and membership yes; research offering no |
 | WHOOP | Included in membership | One $199, Peak $239, Life $359 per year (US vendor page, 2026-10-10) | API "currently provided at no charge"; research routes have carried extra fees (R) | Yes, consumer prices; research pricing not public |
 | Samsung | Consumer retail | **None** | No SDK fee published, but the partner licence reserves Samsung's right to charge in future; Research Stack open source (engineering and hosting cost) | Devices only |
-| **Polar** | **H10 $104.95** (US store, 2026-10-10); Verity Sense ~$95 (2026-08-21, not re-read) | **None** | **Free, open SDK**; AccessLink no fee | **Yes** |
-| **Movesense** | **MD €349 ex VAT (1–49 units), €344 (50–99)**; free sensors for selected Academic Program projects | **None** | No licence cost | **Yes** (MD) |
+| **Polar** | **H10 $104.95, Verity Sense $104.95, Loop $199.99** (US store, 2026-10-11) | **None required** (optional Fitness Program EUR 9.99/month) | **SDK free under Polar's limited licence**; AccessLink free at present, agreement reserves the right to charge | **Yes** (devices); Polar 360 B2B by contact |
+| **Movesense** | **MD €349 ex VAT (1 to 49 units), €344 (50 to 99), €339 (100 to 199)**; Flash €249, HR2 €99 (1 to 49); developer kits €249 to €399; free sensors for selected Academic Program projects | **None** | No licence cost; separate Commercial License unpublished | **Yes** (1 to 199 units; volume and custom firmware by contact) |
 | **Labfront** (Garmin, Movesense, Dexcom) | n/a | **Tester free (5 participants, 30-day window); Basic $500/yr (20 + $10 each); Advanced $1,250/yr (20 + $25 each)** | Analytics packages from $3,000 + $50 per participant | **Yes** |
 | **Fitrockr** (many brands) | n/a | **Basic from €50/$55 per month; Pro from €150/$165 per month**; 5 device licences included, extra €1–€15 per device per month; 3-month minimum | Raw accelerometer and gyroscope +25%; API +20% | **Yes** |
 | Withings | ScanWatch 2 $369.95, Light $249.95, Nova $599.95 (US store) | **From 12 Oct 2026: Withings+ per participant** with a new account on the free plan ($9.95/month; annual $99.50 or $99.95, vendor pages conflict); none on paid plans | Start for Free; Enterprise and Advanced Biomarkers custom; raw-data contract non-public | Devices and Withings+ yes; API plan prices no |
 | Empatica | **EmbracePlus $1,166.40; EmbraceMini $641.52** | Included in the 3- or 5-year bundle; renewal from $388.80/yr (EmbracePlus), $291.60/yr (EmbraceMini); subscriptions sold only with Empatica devices | **3-year bundle: EmbracePlus $2,332.80 list / $1,749.60 academic; EmbraceMini $1,516.32 / $1,137.24. 5-year: EmbracePlus $2,916 / $2,187; EmbraceMini $1,953.72 / $1,465.29**; Enterprise quote, 100-device minimum | **Yes, academic plan** |
-| Ametris | Not published ("calculated for each unique order"); GT3X+ / wGT3X-BT $325–1,016 (R, competitor source) | Non-public | ActiLife conflicting: ~$1,695 (R, competitor source, dated) or US$349 (Ngueleu 2022); CentrePoint ~$3,500/yr (R, competitor source, dated); academic pricing list on request | **No** |
-| Axivity / GENEActiv | **AX3 £139 (£149 with band); AX6 £199 (£209 with band), ex VAT**; GENEActiv by quote | **None** | **None, open toolchain** | **Axivity yes; GENEActiv no** |
+| Ametris | Not published ("calculated for each unique order"); GT3X+ / wGT3X-BT $325 to $1,016 (R, competitor source); one reseller quote (Czech Republic, 2025-07-17): LEAP CZK 15,625 each before a whole-order discount of about 30% (R) | Non-public | ActiLife licences perpetual since 2025-07-30, sold by activation tier; older figures conflict: ~$1,695 (R, competitor source, dated) or US$349 (Ngueleu 2022); the same Czech quote has a 3-year ActiLife 7 Single licence at CZK 136,750 (R); CentrePoint ~$3,500/yr (R, competitor source, dated); academic pricing list on request | **No** |
+| Axivity / GENEActiv | **AX3 £139 (£149 with band); AX6 £199 (£209 with band), ex VAT**; GENEActiv by quote, with minimum order values (a competitor reports £425 to £510, R) | **None** for USB use; Activinsights cloud, SDK and services priced on request | **None for the open toolchain** (biobankAccelerometerAnalysis is academic use only; Activinsights R Markdown tools are non-commercial) | **Axivity yes; GENEActiv no** |
 | Ultrahuman, Biostrap / Sensor Bio, Verily | Not disclosed | Not disclosed | Not disclosed | No |
 
 ---
@@ -240,8 +245,9 @@ derived metrics and study infrastructure.
 ## Table 8, Privacy, security and compliance posture
 
 Every vendor compliance statement here is the vendor's own unless a certificate was checked. Only
-Empatica's (TÜV Rheinland) and Withings' (AFNOR) ISO 27001 certificates were read, both as
-vendor-hosted PDFs. Every "Unclear" is a vendor question, not an inference; see
+Empatica's (TÜV Rheinland), Withings' (AFNOR) and Ametris's (Ignyte Assurance) ISO 27001 certificates
+were read, all as vendor-hosted PDFs; Activinsights' only published certificate expired on 31 October
+2025. Every "Unclear" is a vendor question, not an inference; see
 `../shared/unresolved-questions.md`.
 
 | Ecosystem | HIPAA / BAA | GDPR / DPA | SOC 2 / ISO | Regulatory clearance (FDA 510(k) unless stated) | Self-hosting / data custody |
@@ -252,12 +258,12 @@ vendor-hosted PDFs. Every "Unclear" is a vendor question, not an inference; see
 | Oura | Security page: HIPAA "where we handle protected health information for a healthcare partner"; research page "processes PHI in accordance with HIPAA" (C); BAA available to business customers and healthcare partners (C), no template published | Research page says GDPR-compliant (C); enterprise geo-specific residency options, regions not named (C); API Agreement: retention only as strictly necessary, 72-hour deletion, also on subscription cancellation | Annual SOC 2 examination and HITRUST (C, whitepaper); ISO 27001 not public | No FDA clearance; FDA registration lists Fertile Window (product code LHD, class U, no premarket number) | No |
 | WHOOP | **No HIPAA obligations unless agreed in writing; PHI only with prior written consent**; no public BAA (C) | GDPR notice with EU and UK representatives; no DPA published; SCCs on request (R) | SOC 2 claimed only in a 2022 deck (R); ISO 27001 not public | **ECG feature cleared, K243236 (2025-04-04). Blood Pressure Insights not cleared**: warning letter 14 Jul 2025; close-out 17 Jun 2026 says FDA does not intend to enforce for BPI as modified (general wellness) | No; **terms bar permanent copies and AI/ML training on WHOOP data** unless authorised by the data owner or by law |
 | Samsung | Partner agreement has no HIPAA, BAA or DPA language; no Samsung server in the Sensor SDK path, but the licence lets Samsung collect information about the service and its use, with user consent | Researcher's obligation for the study copy | Unclear | Galaxy Watch features, not the SDKs: ECG App K201168, K230292, K240909; Sleep Apnea Feature DEN230041, K261011 | **Yes, on-device SDK; Research Stack self-hosted** |
-| Polar | No HIPAA or BAA language (privacy notice) | Polar is controller for Flow and not responsible after transfer out; processor agreements only for Team Pro and GoFit | Not checked | None documented | **Yes, BLE path has no processor** |
+| Polar | No HIPAA or BAA language (privacy notice) (C) | Polar is controller for Flow and not responsible after transfer out; processor agreements only for Team Pro and GoFit; Flow and Team Pro data stored in the EU (Ireland, Sweden; AWS) (C) | ISO 9001 (Polar Electro Oy, to 2028-08-31) and ISO 14001 (Malaysia) only; ISO 27001 and SOC 2 not public | None in openFDA; the SDK licence says the SDK and devices are not for medical use | **Yes, BLE path has no processor** |
 | Withings | "HIPAA compliant" EU and US clouds (vendor, C); **BAA and DPA on Enterprise and Advanced Biomarkers only** | EU Medical Cloud "GDPR compliant" (C) | ISO 27001:2022, ISO 27701 and HDS v2 (AFNOR certificates, vendor-hosted PDFs); no SOC 2 | BP monitors K110872, K133125, and via Transtek K223374, K240102; Thermo K160544; ScanWatch K201456 (ECG and spot-check SpO2; recall Z-1280-2023, Class II); Body Scan K230812; Sleep Rx K231667; ECG App K240795; BeamO K252474 | No self-hosting; **choice of EU (France) or US medical cloud** |
 | Empatica | "HIPAA-compliant cloud infrastructure located in US, Virginia" (C); no BAA found | **Published DPA**; retention for the service plus 10 years | ISO/IEC 27001:2022, TÜV Rheinland certificate 01 153 2117571, valid to 2028-10-30 (vendor-hosted PDF); ISO 13485, MDSAP, CE; no SOC 2 found | **K221282, K230457, K242737 (adds an SpO2 algorithm change plan), K260374, K252981; seizure products incl. K250515**; PKG K140086, K161717, K211887 held by GKC Manufacturing; Care Lab is research use only | No |
-| Ametris | No BAA or HIPAA statement found | **DPA with SCCs; EU-U.S. Data Privacy Framework** | ISO 13485:2016 with MDSAP; ISO/IEC 27001:2022 listed without a certificate (C); no SOC 2 found; Part 11 not stated in words | **K231532 (LEAP), K181077 (Insight Watch)** | CentrePoint cloud (Azure, AWS); ActiLife local |
-| Axivity / GENEActiv | **N/A, no processor exists** | **Trivial, no processor** | n/a | GENEActiv moving from MDD Class I to EU MDR | **Full** |
-| Movesense | **N/A, no processor in the BLE path** | Trivial | n/a | **MD: Class IIa, EU MDR 2017/745**; FDA status Unclear | **Full** |
+| Ametris | No BAA published (C); HIPAA only as a "HIPAA Compliant" badge image, no written statement (Unclear) | **DPA with SCCs; EU-U.S. Data Privacy Framework** (C) | ISO 13485:2016 with MDSAP; **ISO/IEC 27001:2022 certificate IA391-260410-001** (Ignyte Assurance, to 2029-04-15); SOC 2 Type II reported for 2023 by an aggregator only, no current evidence (Unclear); Part 11 not stated in words | **K231532 (LEAP), K181077 (Insight Watch)**; K080545 (ActiTrainer, which Ametris maps to GT9X and wGT3X-BT, R); K040554 (AM7164, inactive) | CentrePoint cloud (Azure, AWS; regions not published); ActiLife local |
+| Axivity / GENEActiv | **Axivity N/A** (never receives data); Activinsights: no BAA or HIPAA statement published | **Axivity: no processor.** Activinsights: processor when its cloud is used, no DPA published, UK/GB processing (C) | Axivity none claimed; Activinsights ISO 27001 certificate expired 2025-10-31 (Unclear); no SOC 2 | Axivity: no FDA records, CE under the EMC Directive only (C). GENEActiv: FDA-listed (product code IKK, 510(k) exempt), not cleared; EU class given as MDD Class I (web page) or MDR Class IIa (IFU), moving to EU MDR | **Full** for Axivity and GENEActiv by USB; Activinsights cloud on Azure, region not stated (C) |
+| Movesense | **N/A, no processor in the BLE path**; no BAA or HIPAA statement published (C) | Trivial on the SDK path; Movesense is controller for its ECG Recorder app (C) | ISO 13485:2016 (quality, not security); no ISO 27001 or SOC 2 (C) | **MD: Class IIa, EU MDR 2017/745, only with certified Movesense firmware**; no FDA clearance in openFDA (2026-10-11), Movesense says a 510(k) is on its roadmap | **Full** |
 
 ---
 
@@ -308,7 +314,7 @@ Apple and Fitbit results (`validation-evidence.md` §3c).
 | Polar | H10 is used as the criterion device in others' validations; watch-line metrics not in the major PSG comparisons |
 | Withings | Cleared BP, thermometer, Sleep Rx and ECG devices, including ScanWatch ECG and spot-check SpO2 (K201456); ScanWatch sleep staging poor (Schyvens κ 0.22, largest TST, SE and WASO biases) but zero data loss |
 | Empatica | **FDA clearances listed in Table 8.** Wrist EDA agrees poorly with palmar or finger EDA in E4 studies (Hu 2024 ICC 0.09 for SCL); no EmbracePlus validation against a palmar reference |
-| Movesense | **Independent lab validations exist**: Rogers 2022 vs 12-lead ECG (r=0.98–1.0 for RR and HRV), Martín Gómez 2024 R-peak sensitivity 99.7%, both N=21 with sensors supplied by Movesense; IMU step timing vs force plate (N=14). MD is Class IIa MDR |
+| Movesense | **Independent lab validations exist**: Rogers 2022 vs 12-lead ECG (r=0.98 to 1.0 for RR and HRV), Martín Gómez 2024 R-peak sensitivity 99.7%, both N=21 with sensors supplied by Movesense; IMU step timing vs force plate (N=14). MD is Class IIa MDR with certified Movesense firmware |
 | Verily | FDA 510(k)s including on-demand ECG and irregular pulse (C) |
 | Ametris | **The actigraphy reference standard** for raw accelerometry and its pipelines; current Insight Watch and LEAP not shown equivalent to the legacy devices |
 | Axivity / GENEActiv | **UK Biobank AX3, 100,000+ participants**; AX3 equivalent to GENEActiv on shaking tests; open reproducible toolchain |
@@ -325,12 +331,12 @@ Apple and Fitbit results (`validation-evidence.md` §3c).
 | **Oura** | Nightly RMSSD and temperature deviation from a ring people keep on overnight; best resting HR and HRV agreement in Dial 2025; a research offering with dashboards | Mandatory membership; derived data only; **API Agreement limits retention and bars AI training** |
 | **WHOOP** | Charged on the wrist, so no charging gap; screenless | Derived scores only through the API (2023 Unite raw route, status Unclear); **terms bar permanent copies and AI/ML training**; 10-member Sandbox to start |
 | **Samsung** | Raw PPG (green, IR, red), raw ECG at 500 Hz, IBI and **raw EDA at 1 Hz (Watch8)** from a mainstream watch, with no Samsung server in the path for sensor data | Galaxy and Android only; partner registration to distribute; Samsung may end the licence without cause on 30 business days' notice; Research Stack status Unclear, no code since Oct 2024 |
-| **Polar** | Raw ECG and accelerometry from a $104.95 H10, and 22-bit PPG from Verity Sense, over an open SDK with no cloud, approval or fee | Session devices, not 24/7 wear; no study tooling |
+| **Polar** | Raw ECG and accelerometry from a $104.95 H10, and 22-bit PPG from Verity Sense, over a free, source-available SDK with no cloud, approval or fee | Session devices, not 24/7 wear; no study tooling; Polar can end the SDK licence on 90 days' notice |
 | **Withings** | Cellular devices that remove the participant's phone from the data path; blood pressure, body composition and an under-mattress sleep mat | Raw data ScanWatch-only and by contract; worst Schyvens sleep biases; **Withings+ from 12 Oct 2026** |
 | **Empatica** | Raw wrist EDA with an FDA-cleared EDA parameter, and a published-price, self-serve academic plan with study management | Sensor mode fixed per academic account (PPG and EDA only in 2 of 5 modes); no real-time streaming; academic account limited to 1 study and 1 site |
 | **Ametris** | The actigraphy reference standard, raw data reprocessable later, regulated-trial operations in 70+ countries | Non-public pricing; corporate transition under Signant |
-| **Axivity / GENEActiv** | Open firmware, software and hardware (Axivity), no vendor in the data path, and direct comparability with UK Biobank; AX3 up to 3,200 Hz | Movement only; nothing known until the device is returned |
-| **Movesense** | Custom sensor firmware with no licence cost, 512 Hz ECG and 1.6 kHz IMU (C), Class IIa MDR on the MD | Proprietary 12-month evaluation licence; small validation base; session wear |
+| **Axivity / GENEActiv** | Open firmware, software and hardware (Axivity), no vendor in the data path (Axivity; GENEActiv by USB), and direct comparability with UK Biobank; AX3 up to 3,200 Hz | Movement, light and temperature only; nothing known until the device is returned, except GENEActiv 1.3 adherence; Activinsights' terms of sale (clause 24) bar publishing about the product without its consent |
+| **Movesense** | Custom sensor firmware with no licence cost, 512 Hz ECG, a high-rate IMU (maximum is a vendor conflict), and Class IIa MDR on the MD with certified firmware (custom firmware and Class IIa are alternatives, not a combination) | Proprietary 12-month evaluation licence; small validation base; no FDA clearance; session or multi-day wear (Flash logs up to 5 days of ECG) |
 | **Ultrahuman** | The only published ring route to a PPG data stream found (UltraSignal), and ring plus CGM in one API (R) | Raw format and rates undocumented; selection-based loaner kits; no validation located |
 | **Biostrap / Sensor Bio** | Raw PPG, configurable sampling, surveys and a participant dashboard in one product, plus a leg-worn Activity Pod (vendor statements) | Rebranded; no Hz figures or prices; validation counts vendor-compiled |
 | **Verily Study Watch** | ECG, EDA and inertial data in one FDA-cleared research device with weeks of onboard raw storage (C) | Enterprise only; **current status Unclear** |
@@ -343,14 +349,14 @@ Apple and Fitbit results (`validation-evidence.md` §3c).
 
 | | **Labfront** | **Fitabase** | **Fitrockr** | **Empatica Care Portal** | **Ametris CentrePoint** | **Samsung Research Stack** |
 |---|---|---|---|---|---|---|
-| Devices | Garmin, Movesense HR2, Dexcom G7 | **Fitbit**, Garmin | Claims 700+ wearables incl. Garmin, Fitbit, Apple, Oura, WHOOP, Samsung, Withings, Polar (R) | EmbracePlus, EmbraceMini | LEAP, Insight Watch | Galaxy Watch (Watch5 tested) |
+| Devices | Garmin, Movesense MD, HR2 and Flash, Dexcom G7 | **Fitbit**, Garmin | Claims 700+ wearables incl. Garmin, Fitbit, Apple, Oura, WHOOP, Samsung, Withings, Polar (R) | EmbracePlus, EmbraceMini | LEAP, Insight Watch | Galaxy Watch (Watch5 tested) |
 | **Pricing public?** | **Yes** | No | **Yes** | **Yes (academic)** | No | Free, open source |
 | Cost | Free (5 participants) / $500 (20) / $1,250 (20, all integrations) per year, + $10–25 per extra participant | Custom quote | From €50/$55 or €150/$165 per month, per device licence | $1,749.60 per EmbracePlus, 3 years, academic | Not published; CentrePoint ~$3,500/yr (R, competitor source) | $0 plus hosting |
-| **EMA / surveys** | **Yes, all tiers** | Engage apps in preview, Summer 2026 | Paid add-on (+20%) | None | Signant eCOA direction; not established | **Yes** |
+| **EMA / surveys** | **Yes, all tiers** | Engage apps in preview, Summer 2026 | Paid add-on (+20%) | None | Combined Ametris DHT and Signant eCOA offering announced 2026-03-10 (sponsors, CNS trials) | **Yes** |
 | Adherence monitoring | Yes | Yes (sync and battery) | Yes (R) | **Yes, live wear-time** | **Yes, near-real-time** | Unclear |
 | Multi-site | Yes | Yes | Unclear | Enterprise yes; academic 1 site | **Yes, 70+ countries** | Unclear |
 | Sampling resolution | **Raised via Garmin Health SDK partnership**; Advanced tier customisable | Enhanced BBI via Garmin OAuth, during sleep | Raw accelerometer 25 Hz, gyroscope 32 Hz (add-on) | Fixed sensor modes | 32–256 Hz | Full SDK control |
-| Self-hosting | No | No | On-premise add-on | No | ActiLife local (legacy) | **Yes** |
+| Self-hosting | No | No | On-premise add-on | No | ActiLife 7 local (labelled legacy, still updated 2026-05-08) | **Yes** |
 | Free tier to pilot | **Yes** | No | 2-week trial | No | No | **Yes** |
 | Maintenance | Active | Active | Active | Active | Active | **No code updates since 24 Oct 2024** |
 
@@ -395,18 +401,19 @@ prices, Labfront includes EMA and a free five-participant pilot.
 | **Oura** | **Oura for Organizations, "Oura for research"**, plus the Oura Research participant app; public API v2 | Dashboards, group or individual download, "raw data" CSV/JSON export (meaning undefined), "premium metrics" for academics (vendor page) | API: 10 users until Oura approves; none after | **API and MCP Agreement (8 Jun 2026): keep data only as long as strictly necessary; delete within 72 h of a request or on subscription cancellation; no AI/ML training, evaluation or prompting via the API (s.4(d) and s.6(g) have no consent route; user consent cannot lift Prohibited Uses, s.4(c)); benchmarking needs consent; no research carve-out.** Enterprise Platform: participant withdrawal does not affect data already extracted; a Research Agreement is named in the business terms, its terms not public | Membership $69.99/yr per participant (mandatory for API data); API free today, Agreement reserves the right to charge; Enterprise Platform priced per Order, not published | Active |
 | **WHOOP** | No named programme; Research Request Intake form; research page invites academic and industry partners, no criteria stated (C); Unite status Unclear | Derived scores only through the API; Unite partners received raw files with RR intervals in 2023 (R) | **Sandbox 10, Build 100, Growth 1,000, Scale 5,000, Production unlimited**; one tier at a time, 50% fill rule, manual review; upgrades reported to take 2 to 3+ months (R) | **Terms (6 Oct 2026): no permanent copies; no AI/ML training or testing; both "unless expressly authorized by the WHOOP Data owner or by applicable law"; no research carve-out** | API no charge; membership $199 to $359/yr (US vendor page, 2026-10-10); research fees not published | Active; intake form live |
 | **Samsung** | No academic tier; invitation collaborations (Open Innovation Initiative) and, since June 2026, a sponsor route via Alcedis (Huma) (C); Samsung Partner Program for the Health Sensor SDK; Research Stack (open source) | Raw and processed on-watch signals to the team's own app | None (no Samsung server) | Sensor data none; Samsung may collect service-use information under the licence; partner agreement has no HIPAA, BAA or DPA language | No fee published; licence reserves future fees | Sensor SDK active (v1.4.1, 20 Aug 2025); Research Stack status Unclear, no code since 24 Oct 2024 |
-| **Polar** | No formal programme; "Collaborate with us" contact | Open BLE SDK raw data; AccessLink derived data and exercise RR | None | BLE: none. AccessLink: Limited License Agreement (not summarised in the profile) | Free | Active (SDK 8.4.0, 2026-10-01) |
+| **Polar** | **Collaboration proposal route** ("Collaborate with us"): research plan of at most 10 pages, budget and support request to research@polar.com, judged partly on value to Polar, reply within two weeks, research agreement if accepted; no published eligibility rule (C) | BLE SDK raw data (Polar limited licence); AccessLink derived data, exercise RR, and watch spot-test ECG and SpO2 (Elixir, beta) | None | BLE SDK: licence ends on 90 days' notice, then SDK copies must be deleted. AccessLink: 30 days' notice or immediate suspension, all Polar data deleted on termination. AI-training terms for licensees not public (C) | SDK free; AccessLink free at present, fees reserved | Active (SDK 8.4.0, 2026-10-01); proposal route open (C) |
 | **Withings** | **Advanced Research API** ("for research groups, universities"); **Advanced Biomarkers** plan ("Clinical studies & AI research"); Start for Free | Raw ScanWatch accelerometer and PPG by contract; free plan derived data | Free plan 10 users, more after review | **"AI model training contract" only on Advanced Biomarkers**; partner retention unbounded in the API terms; inactive participant accounts deleted after 3 or 10 years (vendor pages conflict) | Free plan, but **Withings+ per new-account participant from 12 Oct 2026**; paid plans custom; "Research partners" exemption terms unpublished | Active |
 | **Empatica** | **Academic & Basic Research plan**, self-serve store; 25% academic discount by application (institutional email) | All EmbracePlus and EmbraceMini raw sensor data and a selection of biomarkers; S3 keys; no streaming; no SDK | **1 study, 1 site, 1,000 participants** per academic account | Participant data retained for the service plus 10 years; yearly extensions sold; data retrievable 60 days after termination; continued access may cost extra | EmbracePlus 3-year $1,749.60; EmbraceMini 3-year $1,137.24 (academic) | Active |
-| **Ametris** | academic.ametris.com: pricing-list form, grant toolkit, dataset library; academic store for existing accounts | Same devices and data as sponsors; PPG files "subject to contract restrictions" | Not stated | Not stated; historical raw-file generation may carry fees | Not published | Active; part of Signant Health |
-| **Axivity / GENEActiv** | None needed | Full raw signal by USB | None | None | AX3 from £139, AX6 from £199 (ex VAT); GENEActiv quote | Active |
-| **Movesense** | **Movesense Academic Program**: free sensors and accessories for selected projects; monthly review, up to three projects per quarter; publications must credit Movesense | Same data as any developer | None | None from the vendor; SDK is a 12-month evaluation licence, deployed use may need a separate agreement | Free sensors if selected; MD €349 | Page says open "until further notice"; latest listed cohort Q1 2023, so **Unclear** |
+| **Ametris** | academic.ametris.com: pricing-list form, grant toolkit, dataset library; academic store for existing accounts; no application step. The Accelerant Partnership Program is for CROs and technology partners, not academics | Same devices and data as sponsors; PPG files "subject to contract restrictions"; CentrePoint API enabled per customer on request | None published for CentrePoint; ActiLife licences by activation tier | Ametris is processor for the study's controller; no fixed retention period published; AI-training terms not public (C); historical raw-file generation may carry fees | Not published; one reseller quote found (Table 7, R) | Active; part of Signant Health |
+| **Axivity / GENEActiv** | None needed (Activinsights sells paid, quoted Study Services; no named program) | Full raw signal by USB | None (Activinsights Advanced Sleep Toolkit free to 10 participants) | Axivity: none, it never receives data. Activinsights: 10-year review retention for cloud data; AI-training terms not public; terms of sale clause 24 bars publishing about the product without consent | AX3 from £139, AX6 from £199 (ex VAT); GENEActiv quote | Active |
+| **Movesense** | **Movesense Academic Program**: free sensors and accessories for selected projects; review monthly (program page) or weekly (application form), a conflict; up to three projects per quarter; publications must credit Movesense | Same data as any developer | None | None from the vendor on the SDK path; SDK is a 12-month evaluation licence, deployed use may need a separate agreement; the ECG Recorder app backs up anonymised data that Movesense may use for product development and research | Free sensors if selected; MD €349 | **Active** (December 2025 project announced; the page's own list stops at Q1 2023) |
 | **Ultrahuman** | No academic programme; UltraSignal (loaned kit) or Partner API | PPG, temperature and accelerometer stream; derived ring and CGM metrics | Not published | Not read, **Unclear** | Not disclosed | Unclear |
 | **Biostrap / Sensor Bio** | No separate programme; white-label platform by demo | Raw PPG and derived signals (vendor) | Not published | Not published | Not public | Rebranded to Sensor Bio |
 | **Verily** | Enterprise engagement only | Not procurable by an academic group | n/a | n/a | Not public | Study Watch status Unclear |
 | Intermediaries | Labfront grants programme; Fitrockr and Garmin grants; Fitabase quote | See Table 11 | Platform-specific | Thryve stores data 2 weeks (Start Up) or 1 month (Scale Up); Fitrockr Data Vault €150/month for post-project access | See Tables 7 and 11 | Active |
 
-Rows for Apple, Fitbit/Google, Garmin, Oura, WHOOP, Samsung, Empatica and Withings were corrected on
-2026-10-11 from the fact records. The generated, quote-backed version of this table is
-`../facts/_generated/research-and-access.md`. It covers only the batch-1 companies so far. This
+Rows for Apple, Fitbit/Google, Garmin, Oura, WHOOP, Samsung, Empatica and Withings (batch 1) and
+for Polar, Ametris, Axivity / GENEActiv and Movesense (batch 2) were corrected on 2026-10-11 from
+the fact records. The generated, quote-backed version of this table is
+`../facts/_generated/research-and-access.md`. It covers the batch-1 and batch-2 companies so far. This
 hand-written table will be replaced by it once every company has been researched.

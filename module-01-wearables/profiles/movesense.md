@@ -17,7 +17,7 @@
 
 - Movesense was missing from the first research pass and should not have been. It is the closest thing in this module to a *programmable* research sensor: a small coin-shaped device with a 9-axis IMU and a single-lead ECG front end, an open API, no licence fee, and, uniquely here, **the explicit ability to write and flash your own firmware onto the sensor**.
 
-- Where Polar gives you an open SDK to *read* a fixed device, Movesense lets you change what the device does. For methods research, unusual protocols, or on-sensor processing to save power and bandwidth, that is a categorical difference.
+- Where Polar gives you a free, source-available SDK to *read* a fixed device, Movesense lets you change what the device does. For methods research, unusual protocols, or on-sensor processing to save power and bandwidth, that is a categorical difference.
 
 - It also holds something no other device in this module does at this price point: **Movesense MD is a Class IIa medical device under EU MDR 2017/745.**
 
@@ -128,8 +128,7 @@
 
 ## Privacy, Security, and Compliance
 
-- **No vendor data processor exists** in the BLE/onboard-logging path. Same trivial governance story
-- as Polar's SDK path and Axivity/GENEActiv.
+- **No vendor data processor exists** in the BLE/onboard-logging path. Same trivial governance story as Polar's SDK path, Axivity, and GENEActiv used by USB only (Activinsights' optional cloud makes it a processor).
 - **Movesense MD carries Class IIa MDR 2017/745 certification**, genuine EU medical device status, only when running certified Movesense firmware. Older MD stock (SS050341000) is MDD-certified, so buyers should check the SKU ([conformity](https://www.movesense.com/conformity)).
 - This is a stronger EU regulatory position than any consumer wearable in this module.
 - Manufactured under ISO 13485:2016 (quality management, not an information security certification). No ISO 27001, SOC 2, HIPAA statement, BAA or customer DPA is published (checked 2026-10-11).

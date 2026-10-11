@@ -34,17 +34,17 @@ wearable ecosystem, under what conditions, and at what cost?*
 - [`oura.md`](profiles/oura.md): Oura Ring Gen3, 4 and 5, API v2, API and MCP Agreement, Oura for Organizations research offering
 - [`whoop.md`](profiles/whoop.md): WHOOP 4.0, 5.0 / MG, API v2, member tiers, API Terms of Use, WHOOP Unite
 - [`samsung.md`](profiles/samsung.md): Galaxy Watch and Ring, Samsung Health Sensor SDK (formerly Privileged Health SDK), Research Stack
-- [`polar.md`](profiles/polar.md): H10, Verity Sense, Polar 360, open BLE SDK, AccessLink
+- [`polar.md`](profiles/polar.md): H10, Verity Sense, Polar 360, BLE SDK (source-available, Polar limited licence), AccessLink
 - [`withings.md`](profiles/withings.md): ScanWatch line, API plans and Withings+, Advanced Research API, Health Solutions
 
 **Open / programmable sensor platforms**
 - [`polar.md`](profiles/polar.md): see above; H10 and Verity Sense are research instruments
-- [`movesense.md`](profiles/movesense.md): Movesense MD / Flash / HR2, custom firmware, 512 Hz ECG, 1.6 kHz IMU, Academic Program
+- [`movesense.md`](profiles/movesense.md): Movesense MD / Flash / HR2, custom firmware, 512 Hz ECG, high-rate IMU (maximum a vendor conflict, 416 to 1666 Hz), Academic Program
 
 **Research- and medical-grade**
 - [`empatica.md`](profiles/empatica.md): EmbracePlus, EmbraceMini, Care Portal, academic plan
 - [`ametris-actigraph.md`](profiles/ametris-actigraph.md): ActiGraph, now Ametris, now part of Signant Health; CentrePoint API
-- [`axivity-geneactiv.md`](profiles/axivity-geneactiv.md): AX3/AX6, GENEActiv, open toolchain
+- [`axivity-geneactiv.md`](profiles/axivity-geneactiv.md): AX3/AX6, GENEActiv, open toolchain; Activinsights cloud option
 
 **Emerging and specialist**
 - [`emerging-platforms.md`](profiles/emerging-platforms.md): Ultrahuman UltraSignal and Partner API, Biostrap (now Sensor Bio), Verily Study Watch and the March 2026 Verily and Samsung collaboration, plus a data-access check of RingConn, Circular and Amazfit / Zepp
@@ -91,7 +91,8 @@ most for a study:
 ### 1. Sensor presence is nearly uninformative. Data access is what matters.
 
 **Raw signal documented:** Polar (H10 ECG 130 Hz; Verity Sense PPG to 176 Hz at 22-bit; IMU to
-416 Hz; open SDK, no approval), Movesense (ECG to 512 Hz, IMU to 1.6 kHz, custom firmware),
+416 Hz; free SDK under Polar's limited licence, no approval), Movesense (ECG to 512 Hz, IMU to at
+least 416 Hz with vendor sources giving up to 1666 Hz, custom firmware),
 Samsung (PPG green, IR and red, ECG 500 Hz, IBI, accelerometer 25 Hz, **EDA 1 Hz on Watch8**),
 Axivity (accelerometry to 3,200 Hz), Ametris (accelerometry to 256 Hz; LEAP PPG under contract),
 Withings (ScanWatch accelerometry and three-wavelength PPG at about 24.8 Hz, by contract),
@@ -195,9 +196,12 @@ offering, and BAA availability almost everywhere. See `../shared/unresolved-ques
 - **Unpublished sampling rates:** Apple SensorKit PPG, Garmin Health SDK accelerometer (integrators
   report 25 Hz), Ultrahuman, Biostrap, Verily.
 - **Compliance rests on vendor statements:** only Empatica's ISO 27001 certificate (TÜV Rheinland
-  01 153 2117571) and Withings' AFNOR certificates were read, both as vendor-hosted PDFs; none for
-  other vendors. BAA availability is unpublished for most.
-- **Live conflicts in the sources:** Ametris LEAP's two spec blocks (30 or 79 days storage); the
+  01 153 2117571), Withings' AFNOR certificates and Ametris's ISO 27001:2022 certificate (Ignyte
+  Assurance IA391-260410-001) were read, all as vendor-hosted PDFs; none for other vendors.
+  Activinsights' only published ISO 27001 certificate expired on 31 October 2025. BAA availability is unpublished for most.
+- **Live conflicts in the sources:** Ametris's ActiLife Data Vault allowance (4 GB in the manual,
+  20 GB on the product page); Movesense's maximum IMU rate (416, 833 or 1666 Hz by source); Axivity
+  AX3 and GENEActiv recording durations (each vendor's own documents disagree); the
   Withings+ US annual price ($99.50 or $99.95); Withings' inactive-account deletion (3 or 10 years);
   whether HealthKit's per-recording ECG voltage counts as raw (Apple's own pages disagree); Garmin's
   FAQ still quoting two-business-day approval while applications are paused.
