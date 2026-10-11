@@ -2643,7 +2643,7 @@
   "scope": "Google Play (Beiwe2, org.beiwe.app)",
   "confidence": "Unclear",
   "recheck_by": "2026-11-09",
-  "note": "The README describes a Google Play build (Beiwe2, without call and text logs or background location). The Play listing returned HTTP 404 to automated requests on 2026-10-10; check by hand in a browser. The app targets SDK 33 and its last changelog entry is 3.6.0 (2024), below Google Play's current target-API floor; that this explains the missing listing is inference only.",
+  "note": "The README describes a Google Play build (Beiwe2, without call and text logs or background location). The Play listing returned HTTP 404 to automated requests on 2026-10-10, and also \"Not Found\" in a browser the same day; Play searches for \"beiwe\" and \"Beiwe2 Onnela\" return no Beiwe app (logged out, US store). The Play flavour in app/build.gradle adds no package suffix, so org.beiwe.app is the right ID. The app targets SDK 33 and its last changelog entry is 3.6.0 (2024), below Google Play's current target-API floor; that this explains the missing listing is inference only.",
   "sources": [
    {
     "url": "https://github.com/onnela-lab/beiwe-android",
@@ -15735,9 +15735,9 @@
   "field": "research_program",
   "status": "stated",
   "value": "No named, self-serve program for outside researchers. WHOOP runs research through partnerships it approves; it runs a research request intake form, says it uses de-identified member data with research partners, and academic papers have analysed WHOOP-held member data with WHOOP's permission. Digital WHOOP Labs is an in-app feature for members to join WHOOP's own studies. The WHOOP Unite enterprise route offered study-site support in 2022 to 2023",
-  "confidence": "Reported",
+  "confidence": "Corroborated",
   "recheck_by": "2026-10-24",
-  "note": "Also a 2025 Invest Qatar partnership for a WHOOP performance lab in Doha with local research partnerships (einpresswire, 2025-10-28). Check the research page in a browser.",
+  "note": "Also a 2025 Invest Qatar partnership for a WHOOP performance lab in Doha with local research partnerships (einpresswire, 2025-10-28).",
   "sources": [
    {
     "url": "https://whoopinc.typeform.com/whoop-research",
@@ -15787,8 +15787,9 @@
    {
     "url": "https://www.whoop.com/us/en/research/",
     "type": "vendor_page",
+    "quote": "we work with academic and industry partners to design studies, validate findings, and expand the scientific understanding of human physiology.",
     "retrieved": "2026-10-10",
-    "note": "HTTP 403 to scripts and no Internet Archive capture since 2025. Researcher B's browser read says WHOOP works \"with academic and industry partners to design studies\" and links CONTACT US to the intake form."
+    "note": "Read in a browser on 2026-10-10 by the coordinator, confirming researcher B. HTTP 403 to scripts and no Internet Archive capture since 2025, so the weekly check lists it under check by hand. The page's CONTACT US button links to the intake form; it names no eligibility criteria, fees or data terms."
    }
   ]
  },
@@ -16065,11 +16066,18 @@
   "kind": "wearable",
   "field": "subscription_price",
   "status": "stated",
-  "value": "US: One $199/yr, Peak $239/yr, Life $359/yr (secondary sources; matches researcher B's browser read of the vendor page). Canada, vendor page: One CA$259/yr, Peak CA$349/yr, Life CA$529/yr",
-  "confidence": "Reported",
+  "value": "US, vendor page: One $199/yr, Peak $239/yr, Life $359/yr. Canada, vendor page capture of 2026-10-02: One CA$259/yr, Peak CA$349/yr, Life CA$529/yr",
+  "confidence": "Verified",
   "recheck_by": "2026-10-24",
-  "note": "US dollar prices could not be read from WHOOP's own page by script. Researcher B's browser read on 2026-10-10 showed \"Available at $199/yr\", \"$239/yr\" and \"$359/yr\"; confirm in a browser.",
+  "note": "US prices confirmed on WHOOP's live page in a browser on 2026-10-10. The page states no membership term; see minimum_commitment.",
   "sources": [
+   {
+    "url": "https://www.whoop.com/us/en/membership/",
+    "type": "vendor_page",
+    "quote": "Available at $359/yr",
+    "retrieved": "2026-10-10",
+    "note": "Read in a browser on 2026-10-10 by the coordinator. The same page reads \"Available at $199/yr\" (One) and \"Available at $239/yr\" (Peak). HTTP 403 to scripts, so the weekly check lists it under check by hand."
+   },
    {
     "url": "https://trackervs.com/pricing/whoop-pricing/",
     "type": "secondary",
@@ -18006,10 +18014,10 @@
   "field": "fda_clearances",
   "status": "stated",
   "scope": "ScanWatch, ScanWatch 2 (ECG and SpO2)",
-  "value": "510(k) K201456 \"Scan Monitor\" (Withings SA, cleared 2021-10-05, product code DPS). The FDA registration and listing database lists ScanWatch (HWA09) and ScanWatch 2 (HWA10) under K201456 with product codes DPS (electrocardiograph), DQA (oximeter) and DXH. No separate SpO2 or pulse-oximetry 510(k) under a Withings applicant was found.",
+  "value": "510(k) K201456 \"Scan Monitor\" (Withings SA, cleared 2021-10-05, product code DPS, subsequent codes DQA (oximeter) and DXH). The cleared indications cover single-channel ECG with AFib detection and spot-check SpO2 in adults. The FDA registration and listing database lists ScanWatch (HWA09) and ScanWatch 2 (HWA10) under K201456. No separate SpO2 or pulse-oximetry 510(k) under a Withings applicant was found.",
   "confidence": "Verified",
   "recheck_by": "2027-01-08",
-  "note": "The plans page lists SpO2 among \"FDA/CE cleared biomarkers\". openFDA searches applicant:withings, device_name:scanwatch and product_code:DQA AND applicant:withings found no SpO2-specific 510(k). The 510(k) record itself carries only DPS; the DQA link comes from the device listing, so the exact SpO2 scope of K201456 should be read on the accessdata page (summary PDF) by hand.",
+  "note": "The plans page lists SpO2 among \"FDA/CE cleared biomarkers\". openFDA searches applicant:withings, device_name:scanwatch and product_code:DQA AND applicant:withings found no SpO2-specific 510(k), because SpO2 is covered by K201456 itself. openFDA's 510(k) record shows only the primary code DPS; the subsequent codes appear on the accessdata page.",
   "sources": [
    {
     "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K201456",
@@ -18036,6 +18044,13 @@
     "type": "regulator_db",
     "quote": "Oximeter",
     "retrieved": "2026-10-10"
+   },
+   {
+    "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf20/K201456.pdf",
+    "type": "regulator_db",
+    "quote": "The Scan Monitor is also indicated for use in measuring and displaying functional oxygen saturation of arterial hemoglobin (SpO2).",
+    "retrieved": "2026-10-10",
+    "note": "The 510(k) summary, section 3. Read on 2026-10-10 by the coordinator; the accessdata record page, opened in a browser the same day, lists DPS with subsequent product codes DQA and DXH. The host answers the monitor with 404, so this source appears under check by hand."
    }
   ]
  },
@@ -18046,7 +18061,7 @@
   "field": "fda_clearances",
   "status": "stated",
   "scope": "ScanWatch recall (2023)",
-  "value": "Recall Z-1280-2023 (event 91523, initiated 2022-12-19) of Scan Monitor/ScanWatch HWA09 under K201456: a software bug skipped the required physician activation and review of ECG. Status Open, Classified in openFDA.",
+  "value": "Recall Z-1280-2023 (event 91523, initiated 2022-12-19) of Scan Monitor/ScanWatch HWA09 under K201456: a software bug skipped the required physician activation and review of ECG. Class II; status Open, Classified.",
   "confidence": "Verified",
   "recheck_by": "2027-01-08",
   "note": "Gap finding. The gap hunter called it Class II; the openFDA recall record carries no class and the enforcement endpoint has no match, so the class is unconfirmed here. Also in openFDA: Z-2829-2018, Nokia BPM+ (K133125), \"Device could not meet the requirements for systolic pressure\", status Completed (cfres_id 165696). No warning letter was found.",
@@ -18064,6 +18079,14 @@
     "type": "regulator_db",
     "quote": "Z-1280-2023",
     "retrieved": "2026-10-10"
+   },
+   {
+    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRES/res.cfm?id=198114",
+    "fetch_url": "https://api.fda.gov/device/enforcement.json?search=recall_number.exact:\"Z-1280-2023\"",
+    "type": "regulator_db",
+    "quote": "Class II",
+    "retrieved": "2026-10-10",
+    "note": "openFDA enforcement report for Z-1280-2023 (recalling firm Withings, status Ongoing). The accessdata page, read in a browser the same day, is titled \"Class 2 Device Recall Scan Monitor/ScanWatch\"."
    },
    {
     "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRES/res.cfm?id=198114",
