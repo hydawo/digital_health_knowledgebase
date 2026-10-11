@@ -291,6 +291,62 @@
 ## Vendor Fact Record
 
 <!-- facts:begin -->
+*Generated from the fact record by `tools/facts/generate.py`. Edit the record, not this block.*
+
+**Research access**
+
+| Fact | Value |
+|---|---|
+| Formal research or academic program (name, what it offers) | Beiwe Service Center (BSC), Harvard T.H. Chan School of Public Health (Onnela Lab): Beiwe run as Software as a Service on the lab's production AWS deployment. Includes study design and configuration support, IRB documentation help, team training, a four-week beta test, participant troubleshooting and technical support, raw data and summary metrics, and final analysis with production Forest packages. Explicitly not a scientific collaboration with the Onnela Lab. Separately, the whole platform is open source for self-hosting. [V, 2026-10-10] |
+| Who can join the research program | Investigators anywhere, including investigators at for-profit entities (one published pricing example is for-profit). No further eligibility criteria are published. [V, 2026-10-10] |
+| How to apply, and any approval or review step | Fill out the BSC interest form (linked as "Request a Quote or Platform Demo") and the BSC follows up. No review or approval criteria are published. A direct scientific collaboration is a separate route, through the lab director. [V, 2026-10-10] |
+| Whether the program is active, paused, renamed or closed | Active. The BSC publishes FY26 pricing (page last modified 2026-07-23) and links live US and EU service logins. [C, 2026-10-10] |
+| Whether the general developer or API program is open to new applicants | No application program. The whole platform is open source (BSD-3) and anyone can self-deploy on their own AWS account; the open-source version is provided as-is and the Onnela Lab gives no ongoing technical support for it. Paid help is available from the original developers, Zagaran. [V, 2026-10-10] |
+| Participant or user limits before approval or by tier | Not public [2026-10-10] |
+| How academic access differs from commercial or consumer access | One service and one published rate structure. The FY26 for-profit example is priced on the same $2,640 per month plus $8.40 per Active Participant Month formula as the university examples. No separate for-profit or academic rate is published. BSC use is not a scientific collaboration. [C, 2026-10-10] |
+
+**Pricing**
+
+| Fact | Value |
+|---|---|
+| Device or hardware list price | n/a |
+| Consumer subscription or membership price | n/a |
+| Research or academic pricing or discount | **Beiwe Service Center:** No separate academic rate or discount is published; university investigators pay the BSC rates (FY26: $2,640 per month of study duration plus $8.40 per Active Participant Month). Example: 100 participants for 1 month each in a 3-month study costs $8,760. [V, 2026-10-10] |
+| Fees for API, SDK, platform or data access | No software, licence or API fee for the open-source platform (BSD-3); self-hosters pay their own AWS bill. Under the BSC, Data Download API and Tableau API access come with the service fee; no separate API charge is published. Paid self-hosting support is available from Zagaran. [C, 2026-10-10] |
+| Minimum order, term or commitment | Not public [2026-10-10] |
+| Whether pricing requires contacting sales | Not for budgeting. The BSC publishes its rate formula and worked examples and gives 30 days' notice of rate changes; a formal quote and contract are requested through the interest form. [V, 2026-10-10] |
+| Price of managed hosting | **Beiwe Service Center managed hosting:** BSC managed hosting, FY26 rates: $2,640 per month over the total study duration (T) plus $8.40 per Active Participant Month (participants x months of data collection, plus 0.5 month per data-collection gap). Examples: $8,760 (N=100, L=1, T=3); $73,440 (N=100, L=12, T=24, for-profit). Self-hosting has no licence fee; cost is the deployer's own AWS bill, which no page quantifies. [V, 2026-10-10] |
+
+**Data access and terms**
+
+| Fact | Value |
+|---|---|
+| Raw signals available to researchers, and by which route | Raw phone sensor data and logs, downloadable by researchers through the web download page, the Data Download API or Mano. Streams: accelerometer, gyroscope, GPS (optional fuzzing), screen and power state, identifiers, Wi-Fi, Bluetooth, call and text logs (Android only), proximity, magnetometer, device motion and reachability (iOS only), plus surveys and audio-survey recordings. Android also has an optional ambient (continuous) audio stream, off by default and set per study. Call and text logs come only from the lab-distributed Android builds (onnelaLabServer, commStatsCustomUrl); the Google Play build (Beiwe2) has not asked for SMS/MMS or call-log permissions since 2.5.0. Studies set to "production data" restrict downloads to processed output. [V, 2026-10-10] |
+| Derived or processed metrics available to researchers | Forest (open-source Python, integrated into the backend and runnable locally) produces daily or hourly summary statistics: Jasmine (GPS imputation and mobility, such as home time, distance travelled, radius of gyration), Willow (call and text log summaries, Android only), Oak (gait time, cadence, step count from accelerometer), Sycamore (survey summaries). Summary statistics and data-quantity stats are served through the dashboard and the Tableau API. [V, 2026-10-10] |
+| Documented sampling rates or temporal resolution | Configured per study in seconds as sensor on/off duty cycles plus, for accelerometer and gyroscope, a sampling frequency; for example a default Wi-Fi scan every 900 seconds. The accelerometer records about 5 to 100 samples per second. On Android the requested accelerometer and gyroscope rates snap to a few device-specific real intervals, so devices should be tested before launch. [V, 2026-10-10] |
+| How far back data can be retrieved | All stored study data can be requested by participant, data stream and date range; the API then fetches only new files. No look-back limit is published. [C, 2026-10-10] |
+| Export, API, SDK or file routes | Web dashboard download (zip of per-file zstd-compressed CSVs), Data Download API with access and secret keys, the Mano Python library and CLI for bulk sync, a Tableau Web Data Connector and JSON endpoints for Forest summary statistics and participant tables, and direct S3 access for self-hosters. [V, 2026-10-10] |
+| API rate limits | Not public [2026-10-10] |
+| Terms on retaining, storing or deleting data | No published retention period or end-of-contract deletion term for the BSC. The platform lets study staff permanently delete all of a participant's uploaded and internal data from the participant page; the action is final. A deployment setting chooses which role may delete, defaulting to study researcher. On the BSC, data sits on the Onnela Lab's AWS account. [C, 2026-10-10] |
+| Terms on using data to train AI or ML models | Not public [2026-10-10] |
+| Announced shutdowns, deprecations or migrations, with dates | Rolling-release backend; features are not expected to be removed. Self-hosted deployments need admin action for: the Elastic Beanstalk move from Python 3.8 on Amazon Linux 2 to Python 3.12 on Amazon Linux 2023; last-leg encryption on environments deployed before 2025-09-09; and (announcement #471, 2026-03-06) a data processing bug, earliest affected data about March 2024, that could leave downloaded hourly files incomplete until servers are updated and old data reprocessed (raw uploads were kept). The old Tableau summary-statistics endpoints are deprecated and may be removed at any time. The single-server AMI is retired. [V, 2026-10-10] |
+| Software licence of the platform's components | BSD 3-Clause for beiwe-backend, beiwe-android, beiwe-ios and forest. Mano is BSD-3-Clause too, per GitHub's licence metadata. [V, 2026-10-10] |
+| Self-hosting and managed-hosting options | Two routes. Managed: the Beiwe Service Center runs the study on the Onnela Lab's production AWS deployment, with US and EU service instances. Self-hosted: deploy the open-source stack on your own AWS account (Elastic Beanstalk, EC2, RDS PostgreSQL, S3) with the launch script, in any AWS region that offers those services. AWS is the only supported cloud. Self-hosters get no Onnela Lab support; Zagaran offers paid help. [V, 2026-10-10] |
+| App store availability on iOS and Android | **iOS App Store and Android APK:** iOS: Beiwe2 on the App Store (Onnela Lab LLC, free, iPhone, iOS 15.0 or later, version 2.5.11 of 2026-09-30), usable by invited participants on any Beiwe server. Android: APK downloaded from each deployment's download link (studies.beiwe.org and eu.beiwe.org serve the commStatsCustomUrl build, which collects call and text logs). [V, 2026-10-10]<br>**Google Play (Beiwe2, org.beiwe.app):** Unclear |
+
+**Compliance and regulatory**
+
+| Fact | Value |
+|---|---|
+| Whether a HIPAA Business Associate Agreement is offered | Not public [2026-10-10] |
+| Whether a data processing agreement is offered | Not public [2026-10-10] |
+| Published HIPAA statement | No claim of HIPAA compliance for Beiwe or the BSC. The docs say Beiwe often handles data potentially covered by HIPAA (so an SSL certificate is mandatory), that all data is encrypted in transit and at rest, and point to an AWS whitepaper on how EC2 and S3 meet HIPAA standards. [C, 2026-10-10] |
+| Published GDPR statement | Not public [2026-10-10] |
+| ISO/IEC 27001 status and evidence | Not public [2026-10-10] |
+| SOC 2 status and evidence | Not public [2026-10-10] |
+| FDA clearances, from the FDA database | Not public [2026-10-10] |
+| Where data is stored, and residency options | BSC: data on the Onnela Lab's AWS account, with separate US (studies.beiwe.org) and EU (eu.beiwe.org) service instances; the AWS regions are not published. Self-hosted: the deployer picks the AWS region and keeps data in their own account. [C, 2026-10-10] |
+
 <!-- facts:end -->
 
 ## Key Links

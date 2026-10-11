@@ -195,6 +195,62 @@
 ## Vendor Fact Record
 
 <!-- facts:begin -->
+*Generated from the fact record by `tools/facts/generate.py`. Edit the record, not this block.*
+
+**Research access**
+
+| Fact | Value |
+|---|---|
+| Formal research or academic program (name, what it offers) | No vendor research program as such; RADAR-base is open-source research software. The formal researcher offering is The Hyve's RADAR-base as a Service, an all-inclusive managed deployment (installation, cloud hosting, training, maintenance and support). The Hyve also sells deployment, integration and development services. [V, 2026-10-10] |
+| Who can join the research program | No formal eligibility criteria. Anyone may self-host the open-source stack. The Hyve's service addresses pharma and academic researchers and CROs. [V, 2026-10-10] |
+| How to apply, and any approval or review step | Self-hosting: no application, install from the public GitHub repositories. Managed service: inquiry to The Hyve, with set-up in 2 to 4 weeks; no review step is published. [V, 2026-10-10] |
+| Whether the program is active, paused, renamed or closed | Active. The managed-service page is live, the 2026 symposium was held, and the GitHub organisation shows releases and pushes in October 2026 (RADAR-Schemas v0.9.2 on 2026-10-06). [V, 2026-10-10] |
+| Whether the general developer or API program is open to new applicants | Open to all with no application. All components are on GitHub with a public wiki, Slack, Swagger API docs and a help desk. Community support is voluntary and best effort. [V, 2026-10-10] |
+| Participant or user limits before approval or by tier | **RADAR-base as a Service (The Hyve):** No licence cap. RADAR-base as a Service allows any number of studies or participants but runs on a single server, and The Hyve says studies of at most 200 participants are ideal for it. Self-hosted capacity depends on the cluster. [V, 2026-10-10] |
+| How academic access differs from commercial or consumer access | No published difference. The whole stack is Apache 2 for every user with no licence cost, and The Hyve markets the same services to pharma, academia and CROs. No separate academic terms or prices are published. [C, 2026-10-10] |
+
+**Pricing**
+
+| Fact | Value |
+|---|---|
+| Device or hardware list price | n/a |
+| Consumer subscription or membership price | n/a |
+| Research or academic pricing or discount | Not public [2026-10-10] |
+| Fees for API, SDK, platform or data access | None for the software; all components are Apache 2 and free of licence cost. Costs are infrastructure and any paid services from The Hyve. [V, 2026-10-10] |
+| Minimum order, term or commitment | **RADAR-base as a Service (The Hyve):** Not public [2026-10-10] |
+| Whether pricing requires contacting sales | Yes for The Hyve's managed service and other services, which start with an inquiry; no prices are published. Self-hosting needs no quote. [C, 2026-10-10] |
+| Price of managed hosting | Not public [2026-10-10] |
+
+**Data access and terms**
+
+| Fact | Value |
+|---|---|
+| Raw signals available to researchers, and by which route | Android passive app (pRMT): relative location (no absolute location reaches the server), accelerometer, gyroscope, magnetometer, steps, light, Bluetooth device counts, Android activity-recognition and sleep events, screen state, app usage, call and SMS metadata (hashed numbers), battery, weather; audio features via an openSMILE plugin, and a camera-PPG plugin. Bluetooth wearables via pRMT (Polar Vantage V3 and H10, Empatica E4); cloud wearables via REST connectors (Fitbit, Garmin, Oura); Apple Watch and other HealthKit data via the active app. iOS passive collection is sparser. No Android Health Connect route. [V, 2026-10-10] |
+| Derived or processed metrics available to researchers | The platform computes time-windowed aggregates and data-quality and compliance monitors for live dashboards (MongoDB hot store), and Android passes through OS activity and sleep classifications. Behavioural feature extraction is a separate open-source Python package, radarpipeline. Wearable vendor metrics (for example Oura readiness) arrive through REST connectors. [V, 2026-10-10] |
+| Documented sampling rates or temporal resolution | Android defaults: accelerometer, gyroscope and magnetometer about every 200 ms (about 5 Hz); Bluetooth device count hourly; contact list daily; weather every 3 hours; light and battery on change. Configurable per study. [V, 2026-10-10] |
+| How far back data can be retrieved | No platform limit; phone data starts at enrolment and is kept in the deployment the study owns. For REST wearables staff set start and end dates per participant and can reset to re-pull data between dates, subject to each vendor API's own history limits, which are not stated. [C, 2026-10-10] |
+| Export, API, SDK or file routes | Raw data exported from cold storage as AVRO, JSON or CSV; radar-output-restructure writes files by project, participant, topic and hour from S3, Azure Blob or local storage; aggregated data via the REST API (Swagger-documented); live dashboards; manual file upload via the Upload Connector; direct access to the deployment's own Kafka, object storage and databases. [V, 2026-10-10] |
+| API rate limits | Not public [2026-10-10] |
+| Terms on retaining, storing or deleting data | The deployment owner controls retention and deletion. The active-app policy says data is kept for the study's duration, deletion requests go from the project owner to the deployment owner, and study data is deleted including from backups generally within 60 days; the developers (KCL, The Hyve) cannot delete project data. Both Play listings declare that the developer gives no way to request deletion. The Hyve's demo service keeps identifiable contact data up to 10 years. [V, 2026-10-10] |
+| Terms on using data to train AI or ML models | **Google Health API integration:** Google Health API data collected through RADAR-base is not used to train generalised AI or ML models. [V, 2026-10-10]<br>**Platform and The Hyve managed service:** Not public [2026-10-10] |
+| Announced shutdowns, deprecations or migrations, with dates | **Fitbit route (legacy Fitbit Web API to Google Health API):** The released Fitbit connector (RADAR-REST-Connector, latest release v0.7.5, 2026-03-25) pulls from the legacy Fitbit Web API, which Google turns off on 2026-10-30. Migration to the Google Health API is under way: authorization is released (RADAR-Rest-Source-Auth v4.4.16, 2026-07-03) and schemas are merged and released (RADAR-Schemas, push/googlehealth), but the data-ingest code is not. RADAR-PushEndpoint PR #92 "Add Google Health API push integration" is open (last updated 2026-06-05; newest release v0.4.0, 2025-06-19), and the REST-Connector Google Health converter PRs are open. As of 2026-10-10 no released RADAR-base component ingests Google Health API data. [V, 2026-10-10]<br>**Deployment and export:** RADAR-Docker deployment is deprecated in favour of RADAR-Kubernetes (announced for end of 2021). radar-output-restructure dropped HDFS from version 2.0.0. [V, 2026-10-10]<br>**Device integrations:** Faros, Biovotion and Pebble 2 integrations are marked deprecated. Garmin authorization moved from OAuth 1.0 to OAuth 2.0 (default from RADAR-Rest-Source-Auth v4.4.15, 2026-05-07). The iOS passive app repository has had no commit since 2021-01-19. [V, 2026-10-10] |
+| Software licence of the platform's components | Apache 2.0 for the whole stack (backend, Management Portal, Android pRMT, aRMT, RADAR-Kubernetes). A few side repositories report no standard licence (m2c2kit, the OpenSmile Cordova plugin). [V, 2026-10-10] |
+| Self-hosting and managed-hosting options | Self-host on-premise or in any cloud via RADAR-Kubernetes (Helm/helmfile; minimum single node 8 vCPU, 32 GB memory, 200 GB storage, or a 3-node cluster), with a DNS and SMTP server; the README calls it early-stage though used in production. Managed: The Hyve's RADAR-base as a Service, a dedicated per-organisation install on a public cloud of the client's choice; The Hyve also hosts in private cloud or on-premise. [V, 2026-10-10] |
+| App store availability on iOS and Android | **pRMT (passive) Android:** RADAR passive RMT (publisher TheHyve) on Google Play, Android only. Its Play data-safety section, as declared by the developer, says data is not encrypted in transit and cannot be deleted. [V, 2026-10-10]<br>**pRMT (passive) iOS:** No passive app on the iOS App Store. The iOS pRMT repository is work in progress, records location only and sends nothing to a server; last commit 2021-01-19 (last push 2023-06-20). [V, 2026-10-10]<br>**aRMT (active) Android and iOS:** RADAR active RMT on Google Play (PhiDataLab) and on the iOS App Store (iPhone only, iOS 16.0 or later; seller Onsentia Limited). Its Play data-safety section declares data encrypted in transit. [V, 2026-10-10] |
+
+**Compliance and regulatory**
+
+| Fact | Value |
+|---|---|
+| Whether a HIPAA Business Associate Agreement is offered | Not public [2026-10-10] |
+| Whether a data processing agreement is offered | **RADAR-base as a Service (The Hyve):** The Hyve draws up a Data Processing Agreement when it keeps managing a RADAR-base as a Service platform after the initial service period or has access to sensitive data. The client owns the data. [C, 2026-10-10] |
+| Published HIPAA statement | Not public [2026-10-10] |
+| Published GDPR statement | RADAR-base as a Service installs are hosted in a GDPR-compliant public cloud at the client's chosen location. The active-app policy places responsibility for data on the project and deployment owners, and says the app sends Firebase analytics and crash data to the developers. [C, 2026-10-10] |
+| ISO/IEC 27001 status and evidence | **The Hyve B.V.:** The Hyve says it holds ISO 27001:2022 (recertified 2023, first certified 2017), scoped to development, hosting and support of open-source software, consultancy and biomedical data analysis. No certificate or registry entry found. [C, 2026-10-10] |
+| SOC 2 status and evidence | Not public [2026-10-10] |
+| FDA clearances, from the FDA database | Not public [2026-10-10] |
+| Where data is stored, and residency options | Set by whoever hosts the deployment. RADAR-base as a Service runs in a public cloud location of the client's choice. The radar-base.org Google Health integration stores data in AWS eu-west-2 (London) or university infrastructure. The Hyve's demo service keeps app data in the EU. [V, 2026-10-10] |
+
 <!-- facts:end -->
 
 ## Key Links

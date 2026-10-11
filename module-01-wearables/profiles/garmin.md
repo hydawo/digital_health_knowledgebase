@@ -219,6 +219,58 @@
 ## Vendor Fact Record
 
 <!-- facts:begin -->
+*Generated from the fact record by `tools/facts/generate.py`. Edit the record, not this block.*
+
+**Research access**
+
+| Fact | Value |
+|---|---|
+| Formal research or academic program (name, what it offers) | No academic programme with its own terms. Garmin Health sells research access as an enterprise offering (launched 2022 as Garmin Health Research Solutions) with high-resolution data by definable interval logging, independent hosting and device control; runs periodic research grants with Fitrockr (Asia Research Grant 2026, launched by Garmin Health); and strikes direct institutional deals (King's College London EMBRACE programme, Garmin as exclusive smartwatch provider, up to 40,000 participants, announced 17 September 2025) [V, 2026-10-10] |
+| Who can join the research program | **Garmin Health SDKs and Connect Developer Program:** Health SDKs are for Garmin Health enterprise partners; the Connect Developer Program is for business use only (an integrator reports applicants must be a legal entity, universities included, and personal applications are rejected) [V, 2026-10-10]<br>**Garmin Health x Fitrockr Asia Research Grant 2026:** Postgraduates, PhD candidates and senior scholars in 11 Asian markets; applications closed 31 March 2026 [V, 2026-10-10] |
+| How to apply, and any approval or review step | **Garmin Health SDKs:** Request Now form, then the Garmin Health team discusses business needs and arranges evaluation licences [V, 2026-10-10]<br>**Garmin Connect Developer Program:** Application reviewed by Garmin (FAQ says status within two business days), then a Garmin call; the application form is currently withdrawn and reviews are paused (see developer_program_status) [V, 2026-10-10] |
+| Whether the program is active, paused, renamed or closed | Garmin Health research offering active (Garmin published a study using the Health API and Companion SDK on 21 August 2026; the Health SDK request route is published). No open grant call (Asia 2026 closed 31 March 2026; Fitrockr lists none). The Connect Developer Program route is paused to new applicants (see developer_program_status) [C, 2026-10-10] |
+| Whether the general developer or API program is open to new applicants | **Garmin Connect Developer Program:** Paused to new applicants. Garmin stopped reviewing and approving new Connect Developer Program requests in spring 2026 while it redesigns the programme; requests already in the queue are also on hold; no reopening date. Existing approved integrations are reported to keep working [C, 2026-10-10] |
+| Participant or user limits before approval or by tier | Not public [2026-10-10] |
+| How academic access differs from commercial or consumer access | No separate academic tier. Access is business-only; fees attach to commercial use (a licence fee for Enhanced Beat-To-Beat Interval on the Health API; a licence fee or minimum device order for the Health SDKs). Whether a non-commercial academic study counts as commercial use is not stated [V, 2026-10-10]<br>**Agreement naming Garmin China Shanghai RHQ Co., Ltd. (PDF created 2026-03-03):** Health API data used only in defense, research or remote patient monitoring is exempt from Garmin attribution rules, unless shown with licensee or third-party branding [V, 2026-10-10] |
+
+**Pricing**
+
+| Fact | Value |
+|---|---|
+| Device or hardware list price | **vivosmart 5:** US $149.99 suggested retail at launch (2022) [V, 2026-10-10]<br>**CIRQA Smart Band:** US $199.99 suggested retail (screen-free band, July 2026) [V, 2026-10-10]<br>**Forerunner 70 and 170:** US $249.99 (Forerunner 70), $299.99 (Forerunner 170), $349.99 (Forerunner 170 Music) suggested retail, May 2026 [V, 2026-10-10] |
+| Consumer subscription or membership price | No subscription needed for core Garmin Connect features. Optional Garmin Connect+ (launched March 2025) is US $6.99 a month or $69.99 a year after a 30-day trial; not needed for API or SDK data [V, 2026-10-10] |
+| Research or academic pricing or discount | Not public [2026-10-10] |
+| Fees for API, SDK, platform or data access | **Connect Developer Program (Health API and related APIs):** No licence fee or other payment is due under the developer agreement, and the FAQ says no licensing or maintenance fee for the programme. Garmin reserves the right to add API fees on 30 days' notice and to charge for request volume above limits. Enhanced Beat-To-Beat Interval needs a licence fee for commercial use [V, 2026-10-10]<br>**Garmin Health SDKs (Standard, Companion):** Evaluation free; commercial use needs a licence fee or a minimum device order commitment, amounts not published. An integrator describes the SDK licence cost as high [V, 2026-10-10] |
+| Minimum order, term or commitment | No published minimum; a device minimum order quantity is one of two payment routes for commercial Health SDK use and for some Health API metrics; the quantity is not published [V, 2026-10-10] |
+| Whether pricing requires contacting sales | Yes for Health SDK licences, licensed metrics and bulk devices; Garmin Health designs commercial terms per customer. Connect Developer Program access itself is free but by application (currently paused) [V, 2026-10-10] |
+
+**Data access and terms**
+
+| Fact | Value |
+|---|---|
+| Raw signals available to researchers, and by which route | Health SDKs (Bluetooth to the study's own app): real-time streams and configurable on-device logging of accelerometer, gyroscope, Enhanced Beat-To-Beat Intervals, heart rate, Pulse Ox, respiration and actigraphy. Health API (cloud): summaries plus licensed Enhanced Beat-To-Beat Interval, no raw accelerometer. Connect IQ apps read motion sensors on the watch [V, 2026-10-10] |
+| Derived or processed metrics available to researchers | Health API: steps, intensity minutes, sleep, calories, heart rate, stress, Pulse Ox, Body Battery, body composition, respiration, blood pressure, plus epoch summaries; Activity API: full activity data for over 30 activity types; Women's Health API: menstrual cycle and pregnancy data [V, 2026-10-10] |
+| Documented sampling rates or temporal resolution | **Health API (Garmin):** Garmin publishes no Hz figures; its page says all-day summaries through to second-level heart rate during activities [V, 2026-10-10]<br>**Health API epochs (integrator):** 15-minute epochs for steps, heart rate and intensity; stress every 3 minutes (per an integrator) [R, 2026-10-10]<br>**Health SDK accelerometer logging:** Logged accelerometer data is fixed at 25 Hz and cannot be adjusted (two integrators; not on Garmin's public pages) [C, 2026-10-10]<br>**Connect IQ Sensor API:** Connect IQ apps set the motion-sensor sample rate up to a device-reported maximum [V, 2026-10-10] |
+| How far back data can be retrieved | Unclear |
+| Export, API, SDK or file routes | Cloud APIs with user consent over OAuth 2.0 (Health API JSON; Activity API FIT, GPX and TCX files; Women's Health API) by ping/pull or push; Health SDKs for Android and iOS (Standard SDK bypasses Garmin servers; Companion SDK works alongside Garmin Connect); Connect IQ on-device apps with a free SDK. Research platforms such as Fitrockr, Labfront and Fitabase resell access [V, 2026-10-10] |
+| API rate limits | Not public [2026-10-10] |
+| Terms on retaining, storing or deleting data | **Garmin International agreement (FRM-0952 Rev. B, PDF created 2023-10-04):** Under the agreement's EU Standard Contractual Clauses annex, the licensee keeps personal data for as long as the user keeps an account with it or until the user asks for deletion; the licensee must honour access, erasure and export requests [V, 2026-10-10] |
+| Terms on using data to train AI or ML models | **Garmin International agreement (FRM-0952 Rev. B, PDF created 2023-10-04) and API Brand Guidelines:** No ban on using Garmin data for AI or machine learning. The API Brand Guidelines require Garmin attribution when Garmin device data feeds analytics, ML models or AI. The Garmin International agreement has no AI clause [V, 2026-10-10]<br>**Agreement naming Garmin China Shanghai RHQ Co., Ltd. (PDF created 2026-03-03, served at the www8.garmin.com en-US path):** Clause 15.10 requires a conspicuous AI Transparency Statement in the licensee's privacy policy if user data will train or be processed by AI systems, and explicit user consent before such processing; Garmin may audit compliance [V, 2026-10-10] |
+| Announced shutdowns, deprecations or migrations, with dates | Unclear |
+
+**Compliance and regulatory**
+
+| Fact | Value |
+|---|---|
+| Whether a HIPAA Business Associate Agreement is offered | Unclear |
+| Whether a data processing agreement is offered | **Garmin International agreement (FRM-0952 Rev. B):** No processor DPA. The developer agreement treats Garmin as an independent controller, not the licensee's processor, and incorporates EU Standard Contractual Clauses module one (controller to controller) for transfers [C, 2026-10-10]<br>**Agreement naming Garmin China Shanghai RHQ Co., Ltd. (PDF created 2026-03-03):** A Chinese standard contract on cross-border transfer of personal information (PIPL) is attached for data transferred out of the PRC [C, 2026-10-10] |
+| Published HIPAA statement | **Garmin Health Standard SDK:** Garmin says the Standard Health SDK is HIPAA-compliant; no HIPAA statement covers Garmin Connect or the cloud APIs [C, 2026-10-10] |
+| Published GDPR statement | **Garmin International agreement (FRM-0952 Rev. B):** The developer agreement sets GDPR roles (Garmin as independent controller) and uses EU Standard Contractual Clauses, with Garmin Wurzburg GmbH as controller for EEA, UK and Swiss data [C, 2026-10-10] |
+| ISO/IEC 27001 status and evidence | Not public [2026-10-10] |
+| SOC 2 status and evidence | Not public [2026-10-10] |
+| FDA clearances, from the FDA database | **Garmin ECG App:** Garmin ECG App, 510(k) K221774, decision 2023-01-12, product code QDA (over-the-counter ECG software), applicant Garmin International, Inc. The only 510(k) with Garmin as applicant [V, 2026-10-10]<br>**Index BPM:** Index BPM blood pressure monitor, 510(k) K221486, decision 2022-08-30, applicant Ya Horng Electronic Co., Ltd., not Garmin [V, 2026-10-10] |
+| Where data is stored, and residency options | Unclear |
+
 <!-- facts:end -->
 
 ## Key Links

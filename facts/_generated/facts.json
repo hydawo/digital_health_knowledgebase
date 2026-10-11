@@ -19014,7 +19014,7 @@
   "value": "Recall Z-1280-2023 (event 91523, initiated 2022-12-19) of Scan Monitor/ScanWatch HWA09 under K201456: a software bug skipped the required physician activation and review of ECG. Class II; status Open, Classified.",
   "confidence": "Verified",
   "recheck_by": "2027-01-08",
-  "note": "Gap finding. The gap hunter called it Class II; the openFDA recall record carries no class and the enforcement endpoint has no match, so the class is unconfirmed here. Also in openFDA: Z-2829-2018, Nokia BPM+ (K133125), \"Device could not meet the requirements for systolic pressure\", status Completed (cfres_id 165696). No warning letter was found.",
+  "note": "Gap finding. The openFDA recall record carries no class; the enforcement endpoint gives Class II when searched with recall_number.exact (an unquoted search matches the wrong recall). Also in openFDA: Z-2829-2018, Nokia BPM+ (K133125), \"Device could not meet the requirements for systolic pressure\", status Completed (cfres_id 165696). No warning letter was found.",
   "sources": [
    {
     "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRES/res.cfm?id=198114",

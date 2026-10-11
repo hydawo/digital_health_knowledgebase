@@ -271,6 +271,58 @@
 ## Vendor Fact Record
 
 <!-- facts:begin -->
+*Generated from the fact record by `tools/facts/generate.py`. Edit the record, not this block.*
+
+**Research access**
+
+| Fact | Value |
+|---|---|
+| Formal research or academic program (name, what it offers) | No named, self-serve program for outside researchers. WHOOP runs research through partnerships it approves; it runs a research request intake form, says it uses de-identified member data with research partners, and academic papers have analysed WHOOP-held member data with WHOOP's permission. Digital WHOOP Labs is an in-app feature for members to join WHOOP's own studies. The WHOOP Unite enterprise route offered study-site support in 2022 to 2023 [C, 2026-10-10] |
+| Who can join the research program | Unclear |
+| How to apply, and any approval or review step | No published application or review process. Research requests go through WHOOP's Research Request Intake form; a 2026 tutorial reports WHOOP requires an institutional legal review, possibly tied to a minimum device order, before API access; the 2023 Unite FAQ pointed to healthcare@whoop.com [R, 2026-10-10] |
+| Whether the program is active, paused, renamed or closed | Unclear |
+| Whether the general developer or API program is open to new applicants | Open. Anyone with a WHOOP membership and device can create up to 5 apps in the Developer Dashboard; every new app starts on the Sandbox tier and higher tiers are requested and reviewed manually [V, 2026-10-10]<br>**Tier upgrade turnaround (developer forum reports):** Developers reported waits of two to more than three months for tier upgrades above the 10-member Sandbox in June to August 2026; in one thread WHOOP staff escalated and some apps were then approved within days [R, 2026-10-10] |
+| Participant or user limits before approval or by tier | Member tiers per app: Sandbox 10, Build 100, Growth 1,000, Scale 5,000, Production unlimited. Tiers are earned one at a time with manual review, and from Build onward 50% of the current limit must be connected before requesting the next [V, 2026-10-10] |
+| How academic access differs from commercial or consumer access | Not public [2026-10-10] |
+
+**Pricing**
+
+| Fact | Value |
+|---|---|
+| Device or hardware list price | No separate device price; each membership includes the hardware (WHOOP 5.0 on One and Peak, WHOOP MG on Life) [R, 2026-10-10] |
+| Consumer subscription or membership price | US, vendor page: One $199/yr, Peak $239/yr, Life $359/yr. Canada, vendor page capture of 2026-10-02: One CA$259/yr, Peak CA$349/yr, Life CA$529/yr [V, 2026-10-10] |
+| Research or academic pricing or discount | Not public [2026-10-10] |
+| Fees for API, SDK, platform or data access | **Developer API:** No charge for the Developer Platform or API; WHOOP may start charging with prior notice. Each user needs a WHOOP membership [V, 2026-10-10]<br>**Research partnerships:** Research routes have carried extra fees. The 2023 Unite FAQ priced API extraction separately, and a 2026 tutorial reports a paid web application for viewing and downloading group data. Current fees are not published [R, 2026-10-10] |
+| Minimum order, term or commitment | Consumer memberships are sold by the year; a third party reports monthly billing only for existing members, still with a 12-month commitment. A 2026 tutorial reports API access may be conditioned on a minimum device order. No research minimum is published [R, 2026-10-10] |
+| Whether pricing requires contacting sales | **Developer API:** No; the API is free and self-serve [V, 2026-10-10]<br>**Research partnerships and Healthcare Partner API:** Yes in practice. No research or partner price is published; access is by WHOOP approval through the research intake form or partner agreement [R, 2026-10-10] |
+
+**Data access and terms**
+
+| Fact | Value |
+|---|---|
+| Raw signals available to researchers, and by which route | **Developer API:** None. The API returns scored summaries only; continuous heart rate is not available. The device can broadcast live heart rate over standard BLE [V, 2026-10-10]<br>**WHOOP Unite research (2023 FAQ; current availability unclear):** WHOOP supplied research partners with raw data files as CSV or Excel, each one-second row ending with RR intervals [R, 2026-10-10] |
+| Derived or processed metrics available to researchers | Developer API v2. Cycle: day Strain, kilojoules, average and max HR, step count (since 2026-09-23). Recovery: score, resting HR, HRV (RMSSD), and SpO2 and skin temperature on 4.0 and later. Sleep: stage durations, performance, efficiency, consistency, respiratory rate, sleep need. Workout: Strain, HR, zones, distance. Body measurements and basic profile [V, 2026-10-10] |
+| Documented sampling rates or temporal resolution | **Developer API:** One record per physiological cycle, sleep, recovery or workout; no intraday time series [V, 2026-10-10]<br>**Device sensors and WHOOP Unite research data (2022 to 2023 documents):** HR and accelerometer sampled at 52 Hz around the clock; sleep staged in 30-second epochs; Unite research data offered at 1-second and daily grains [R, 2026-10-10] |
+| How far back data can be retrieved | The API's collection endpoints have no documented lower bound on start time, which implies but does not state that a member's full history is returned once they authorize. The member CSV export can cover the entire account history [C, 2026-10-10] |
+| Export, API, SDK or file routes | **Developer API:** OAuth 2.0 REST API (v2) with webhooks; live heart rate over standard BLE; a separate server-to-server Partner API only for WHOOP-approved healthcare partners. No SDK [V, 2026-10-10]<br>**Member self-export (app):** Members can request a CSV of daily scores, resting HR, HRV, respiratory rate, sleep architecture and their Journal entries for a chosen date range, delivered by emailed link; MG members on Life get additional data. Per a member, the export holds per-stage totals, not intraday data [R, 2026-10-10]<br>**Research partnerships:** Research partners have received data outside the public API. The 2023 Unite FAQ describes raw CSV or Excel files, and a 2026 tutorial reports a paid web application for viewing and downloading group data. Current terms not published [R, 2026-10-10] |
+| API rate limits | 100 requests per minute and 10,000 per day per client by default; increases on request [V, 2026-10-10] |
+| Terms on retaining, storing or deleting data | API terms bar building databases or permanent copies of WHOOP Data, or caching beyond the cache header, unless authorized by the WHOOP Data owner or by law; stored content must be deleted when the terms end [V, 2026-10-10] |
+| Terms on using data to train AI or ML models | Prohibited under the API terms; API data may not be used to create, train, test or improve any LLM or other ML or AI model, unless authorized by the WHOOP Data owner or by law [V, 2026-10-10] |
+| Announced shutdowns, deprecations or migrations, with dates | v2 API launched 2025-07-01 and v1 is no longer supported; v1 webhooks no longer published (changelog 2025-11-01); v1 activity ids dropped after 2025-09-01, with a v1-to-v2 id mapping endpoint. No later deprecation in the changelog, whose newest entry is the 2026-09-23 step count [V, 2026-10-10] |
+
+**Compliance and regulatory**
+
+| Fact | Value |
+|---|---|
+| Whether a HIPAA Business Associate Agreement is offered | No BAA offered publicly. API terms bar transmitting PHI without WHOOP's prior written consent; WHOOP's 2023 research FAQ said studies could be structured so that a BAA is unnecessary [C, 2026-10-10] |
+| Whether a data processing agreement is offered | No customer DPA published. The privacy policy says WHOOP will sign Standard Contractual Clauses with customers on request for EU to US transfers [R, 2026-10-10] |
+| Published HIPAA statement | API terms say WHOOP makes no representation that the APIs meet HIPAA requirements unless agreed in writing. The privacy policy says processing done on behalf of a covered entity follows that entity's Notice of Privacy Practices [C, 2026-10-10] |
+| Published GDPR statement | The privacy policy has a GDPR notice for European residents, names WHOOP, Inc. as controller, Whoop Limited (Dublin) as EU representative and a UK representative. A 2023 WHOOP FAQ called WHOOP GDPR compliant [R, 2026-10-10] |
+| ISO/IEC 27001 status and evidence | Not public [2026-10-10] |
+| SOC 2 status and evidence | The only claim found is a 2022 WHOOP study-onboarding deck listing SOC 2 among its compliance claims; no current report, trust page or attestation found [R, 2026-10-10] |
+| FDA clearances, from the FDA database | One 510(k): K243236, WHOOP ECG (electrocardiogram) Feature (1.0), OTC ECG software, product code QDA, cleared 2025-04-04. Blood Pressure Insights is not cleared: FDA warning letter of 2025-07-14; the close-out letter of 2026-06-17 says FDA does not intend to enforce for BPI as modified [V, 2026-10-10]<br>**Irregular Heart Rhythm Notifications:** Listed on the Life membership but not available in the US; WHOOP staff cited regulatory restrictions (May 2025), and openFDA shows no 510(k) for it [R, 2026-10-10] |
+| Where data is stored, and residency options | Personal data is processed in the United States; a 2023 WHOOP FAQ says it is stored in AWS West. No residency options published [R, 2026-10-10] |
+
 <!-- facts:end -->
 
 ## Key Links
