@@ -1,0 +1,753 @@
+# Draft record for mindlamp, researcher A, 2026-10-11. Schema: facts/_schema.yaml
+name: mindLAMP (BIDMC Division of Digital Psychiatry)
+kind: platform
+profile: module-02-digital-phenotyping/profiles/mindlamp.md
+watch:
+- url: https://docs.lamp.digital/get-started
+  role: pricing
+  fetch_url: https://docs.lamp.digital/assets/js/bf7df328.1cccf923.js
+- url: https://digitalpsych.org/mindlamp-core
+  role: research_program
+- url: https://docs.lamp.digital/capabilities/configure
+  role: other
+- url: https://docs.lamp.digital/privacy
+  role: terms
+- url: https://docs.lamp.digital/sensors-data/configuration
+  role: docs
+- url: https://docs.lamp.digital/developer/api-sdks/python-sdk
+  role: docs
+- url: https://docs.lamp.digital/developer/architecture/components
+  role: docs
+- url: https://docs.lamp.digital/blog
+  role: changelog
+- url: https://docs.lamp.digital/blog/authentication-upgrade
+  role: changelog
+- url: https://github.com/BIDMCDigitalPsychiatry/LAMP-dashboard/blob/master/LICENSE.md
+  role: repository
+  fetch_url: https://raw.githubusercontent.com/BIDMCDigitalPsychiatry/LAMP-dashboard/master/LICENSE.md
+- url: https://github.com/BIDMCDigitalPsychiatry/LAMP-server
+  role: repository
+- url: https://github.com/BIDMCDigitalPsychiatry/LAMP-platform
+  role: repository
+- url: https://apps.apple.com/us/app/mindlamp-2/id1495947054
+  role: app_store
+- url: https://play.google.com/store/apps/details?id=digital.lamp.mindlamp&hl=en_US
+  role: app_store
+facts:
+# ---------------- Research access ----------------
+- field: research_program
+  status: stated
+  value: 'mindLAMP Core (also called Core Services), run by the BIDMC Division of Digital Psychiatry: the supported
+    deployment pathway, giving research and clinical teams the full toolkit plus consultation, configuration, training
+    and ongoing support. It is a paid service, not a free or grant-style program; the platform is described as
+    compatible with grant funding and the team offers letters of support.'
+  confidence: Verified
+  sources:
+  - url: https://digitalpsych.org/mindlamp-core
+    type: vendor_page
+    quote: mindLAMP Core is the supported deployment pathway for the mindLAMP platform, offered directly by the team
+      at Beth Israel Deaconess Medical Center.
+    retrieved: '2026-10-11'
+  - url: https://digitalpsych.org/mindlamp-core
+    type: vendor_page
+    quote: The platform is compatible with grant funding and currently supports 50+ active sites worldwide.
+    retrieved: '2026-10-11'
+  - url: https://docs.lamp.digital/get-started
+    fetch_url: https://docs.lamp.digital/assets/js/bf7df328.1cccf923.js
+    type: vendor_page
+    quote: We are happy to provide our services and support for grant purposes, including letters of support.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: The FAQ answers on the Get Started page are rendered by JavaScript; the fetch_url is the page's Docusaurus
+    chunk, whose hashed file name changes on every site rebuild, so re-find it if the quote goes missing. The older
+    "LAMP Consortium" (the App Store listing still says the app "is used by members of the mindLAMP consortium")
+    survives only in archived legacy docs in the LAMP-platform repo; current pages present mindLAMP Core instead.
+    Self-hosting the open-source code needs no program at all.
+- field: program_eligibility
+  status: stated
+  value: Research groups and clinical programs; the Core page lists clinical research studies, grant-funded projects,
+    clinical care programs, international and multi-site deployments, and first-time users. Individuals cannot start
+    their own project; they use mindLAMP by enrolling in a project or clinic that runs it (or the limited Self Help
+    mode).
+  confidence: Verified
+  sources:
+  - url: https://digitalpsych.org/mindlamp-core
+    type: vendor_page
+    quote: Clinical research studies Grant-funded projects Clinical care programs International & multi-site deployments
+      First-time mindLAMP users
+    retrieved: '2026-10-11'
+  - url: https://docs.lamp.digital/get-started
+    fetch_url: https://docs.lamp.digital/assets/js/bf7df328.1cccf923.js
+    type: vendor_page
+    quote: Currently, individuals can use mindLAMP if they enroll in a project or clinic that is running mindLAMP.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: No published restriction by sector (academic, clinical or industry) or by country was found.
+- field: program_application
+  status: stated
+  value: 'Submit an interest form (a Notion form linked from docs.lamp.digital/get-started); the Core team reviews it
+    within a few business days, holds a free consultation call, then issues a tailored proposal with scope,
+    deployment option and pricing; once agreed, the team configures the platform and trains staff.'
+  confidence: Verified
+  sources:
+  - url: https://digitalpsych.org/mindlamp-core
+    type: vendor_page
+    quote: Tell us about your project goals, participant population, and timeline. The team reviews all submissions
+      within a few business days.
+    retrieved: '2026-10-11'
+  - url: https://docs.lamp.digital/get-started
+    type: vendor_page
+    quote: 'Consultation call (free): We discuss your goals, project design, timeline, and any technical requirements.'
+    retrieved: '2026-10-11'
+  - url: https://docs.lamp.digital/get-started
+    type: vendor_page
+    quote: 'Proposal & agreement: Based on the consultation, we provide a tailored proposal including scope, deployment
+      option, and pricing.'
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: program_status
+  status: stated
+  value: Active as of 2026-10-11. mindLAMP Core takes new projects through the interest form, the docs site was
+    rebuilt in 2026 with a running updates blog (posts February to July 2026), and the core repositories had commits
+    in late September and early October 2026.
+  confidence: Verified
+  sources:
+  - url: https://digitalpsych.org/mindlamp-core
+    type: vendor_page
+    quote: The platform is compatible with grant funding and currently supports 50+ active sites worldwide.
+    retrieved: '2026-10-11'
+  - url: https://docs.lamp.digital/blog/authentication-upgrade
+    type: vendor_page
+    quote: This update is planned for later this summer. We do not have a firm release date yet.
+    retrieved: '2026-10-11'
+  - url: https://github.com/BIDMCDigitalPsychiatry/LAMP-server
+    type: repository
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Site counts differ by source (50+ on the Core page; 65 sites in 17 countries in the AWS blog of 2026-09-29).
+- field: developer_program_status
+  status: stated
+  value: There is no gated developer program. The REST API (OpenAPI spec), SDKs and server code are public on GitHub;
+    anyone can self-host and use the API against their own server. API access to the BIDMC-hosted server requires
+    credentials issued for a project.
+  confidence: Corroborated
+  sources:
+  - url: https://docs.lamp.digital/capabilities/configure
+    type: vendor_page
+    quote: REST API Full programmatic access. Create participants, push activities, pull sensor readings, query results.
+    retrieved: '2026-10-11'
+  - url: https://docs.lamp.digital/privacy
+    type: vendor_legal
+    quote: If self-deploying the LAMP Platform, you will be in sole control and ownership of all data consumed or
+      produced by the LAMP platform.
+    retrieved: '2026-10-11'
+  - url: https://github.com/BIDMCDigitalPsychiatry/LAMP-server
+    type: repository
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Corroborated rather than Verified because "no developer program" is inferred from the absence of one plus the
+    public repositories; note also that the server repository carries no licence file (see licence).
+- field: user_cap
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://docs.lamp.digital/get-started
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://digitalpsych.org/mindlamp-core
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://docs.lamp.digital/capabilities/configure
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: No participant or user cap is published. Participant count is one of the inputs to Core pricing. Self-hosted
+    deployments are limited only by infrastructure.
+- field: academic_vs_commercial
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://docs.lamp.digital/get-started
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://digitalpsych.org/mindlamp-core
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://docs.lamp.digital/privacy
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: No published difference in terms or price between academic and commercial users. The licences differ by
+    component, which matters more for commercial reuse than for study use (dashboard AGPL-3.0 since 2026-08-05; SDKs
+    and Cortex BSD-3-Clause; server and native apps carry no licence file).
+# ---------------- Pricing ----------------
+- field: device_price
+  status: not_applicable
+  note: Software platform; runs on participants' own iOS and Android phones (BYOD) or study-provided phones.
+- field: subscription_price
+  status: not_applicable
+  note: No consumer subscription. The apps are free in the stores but only usable with project credentials.
+- field: academic_pricing
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://docs.lamp.digital/get-started
+    fetch_url: https://docs.lamp.digital/assets/js/bf7df328.1cccf923.js
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://digitalpsych.org/mindlamp-core
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: No academic rate or discount published; all Core pricing is by quote.
+- field: api_platform_fees
+  status: stated
+  value: The software is free and open source with no per-API or licence fee; paid Core Services are priced by project
+    scope (participants, sites, duration, custom development) and quoted after a free consultation.
+  confidence: Verified
+  sources:
+  - url: https://docs.lamp.digital/privacy
+    type: vendor_legal
+    quote: The LAMP Platform is free and open source software currently developed by Beth Israel Deaconess Medical
+      Center but does not have any licensing restrictions for intellectual property.
+    retrieved: '2026-10-11'
+  - url: https://docs.lamp.digital/get-started
+    fetch_url: https://docs.lamp.digital/assets/js/bf7df328.1cccf923.js
+    type: vendor_page
+    quote: Pricing depends on your project scope, including the number of participants, sites, duration, and any custom
+      development needs. We provide detailed quotes after an initial consultation to understand your specific needs.
+      The consultation itself is free.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: minimum_commitment
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://docs.lamp.digital/get-started
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://digitalpsych.org/mindlamp-core
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: No minimum term, size or spend published for Core Services.
+- field: quote_required
+  status: stated
+  value: Yes for Core-hosted or Core-supported projects; pricing comes in a tailored proposal after a free consultation.
+    Self-hosting the open-source code needs no quote.
+  confidence: Verified
+  sources:
+  - url: https://docs.lamp.digital/get-started
+    fetch_url: https://docs.lamp.digital/assets/js/bf7df328.1cccf923.js
+    type: vendor_page
+    quote: Pricing depends on your project scope, including the number of participants, sites, duration, and any custom
+      development needs. We provide detailed quotes after an initial consultation to understand your specific needs.
+      The consultation itself is free.
+    retrieved: '2026-10-11'
+  - url: https://digitalpsych.org/mindlamp-core
+    type: vendor_page
+    quote: Receive a tailored deployment plan with pricing, timeline, and configuration specifics for your project.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: hosting_price
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://docs.lamp.digital/get-started
+    fetch_url: https://docs.lamp.digital/assets/js/bf7df328.1cccf923.js
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://digitalpsych.org/mindlamp-core
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://docs.lamp.digital/capabilities/configure
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Price of the Core-hosted shared and dedicated instances is by quote only. See the separate self-hosting entry
+    for the team's own infrastructure cost estimates.
+- field: hosting_price
+  scope: Self-hosted on AWS (infrastructure cost estimate, unpublished draft docs)
+  status: stated
+  value: 'Estimated monthly AWS cost: about $35 for a small clinic (~15 participants, active data only), about $100
+    for a small study (~50 participants, active and passive), about $1,500 for a large study (200+ participants, active,
+    passive and ML).'
+  confidence: Reported
+  sources:
+  - url: https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/blob/master/docs/06-developer/05-deployment/index.md
+    fetch_url: https://raw.githubusercontent.com/BIDMCDigitalPsychiatry/LAMP-platform/master/docs/06-developer/05-deployment/index.md
+    type: repository
+    quote: '| Small study | ~50 | Active + passive | ~$100 |'
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: This page is marked draft and is not published on docs.lamp.digital (the /developer/deployment/ route returns
+    404); it is readable only in the public source repository. These are infrastructure estimates, not a BIDMC
+    price.
+# ---------------- Data access and terms ----------------
+- field: raw_streams
+  status: stated
+  value: 'Raw sensor events (timestamped JSON) from 9 phone sensors (GPS, accelerometer, device motion, device state,
+    steps, nearby devices, telephony, analytics, activity recognition) and 10 HealthKit or Health Connect types (sleep,
+    heart rate, HRV, respiratory rate, blood pressure, blood glucose, oxygen saturation, body temperature, workouts,
+    nutrition), plus SensorKit streams on approved iOS research studies, and active data (surveys, cognitive games,
+    voice recordings). Retrieved by REST API, Python, JavaScript and R SDKs, Cortex, or the dashboard Data Portal.
+    Passive sensing works only in the mobile apps, not the web version.'
+  confidence: Verified
+  sources:
+  - url: https://docs.lamp.digital/sensors-data/
+    type: vendor_docs
+    quote: mindLAMP supports 9 device sensors (GPS, accelerometer, device motion, device state, steps, nearby devices,
+      telephony, analytics, activity recognition) and 10 health platform sensors that read from Apple HealthKit or Google
+      Health Connect (sleep, heart rate, HRV, respiratory rate, blood pressure, blood glucose, oxygen saturation, body
+      temperature, workouts, nutrition).
+    retrieved: '2026-10-11'
+  - url: https://docs.lamp.digital/sensors-data/data
+    type: vendor_docs
+    quote: Sensor event data — sometimes referred to as raw data — is what the Cortex pipeline uses to calculate higher-level
+      behavioral metrics.
+    retrieved: '2026-10-11'
+  - url: https://docs.lamp.digital/sensors-data/configuration
+    type: vendor_docs
+    quote: The web version supports active data collection (surveys, games) and dashboard access but does not support
+      passive sensor data.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Wearable data arrives only through HealthKit or Health Connect; the docs say mindLAMP does not connect
+    directly to wearable devices. Watch companion apps (Apple Watch, WearOS) add wrist sensing.
+- field: derived_metrics
+  status: stated
+  value: Cortex, the open-source Python package (pip install lamp-cortex), turns raw events into primary features
+    (significant locations, trips, screen-on bouts, accelerometer jerk) and daily secondary features (home time,
+    location entropy, trip distance and duration, screen duration, step count, call counts and degree, sleep duration,
+    data quality, and more). Some features (unlocks, app time, texts, visits) need iOS SensorKit, which requires an
+    Apple-approved research study.
+  confidence: Verified
+  sources:
+  - url: https://docs.lamp.digital/capabilities/analyze
+    type: vendor_docs
+    quote: Cortex is mindLAMP's open-source Python library for turning raw sensor and activity data into research-ready
+      behavioral features.
+    retrieved: '2026-10-11'
+  - url: https://docs.lamp.digital/developer/cortex/features/secondary-features/
+    type: vendor_docs
+    quote: These features require enrollment in an Apple-approved research study.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: sampling_rates
+  status: stated
+  value: Default accelerometer 5 Hz and GPS 1 Hz, both configurable at the sensor-spec level through the API (the
+    dashboard Sensors tab only turns sensors on or off). The OS throttles background GPS, so the effective rate is often
+    lower. Other sensors are continuous (event-driven) or interval-reported.
+  confidence: Verified
+  sources:
+  - url: https://docs.lamp.digital/sensors-data/configuration
+    type: vendor_docs
+    quote: Accelerometer — 5 Hz (5 samples per second). Configurable via the frequency setting.
+    retrieved: '2026-10-11'
+  - url: https://docs.lamp.digital/sensors-data/configuration
+    type: vendor_docs
+    quote: GPS — 1 Hz (1 sample per second). Configurable via the frequency setting. In practice, mobile operating systems
+      throttle background GPS delivery, so the effective rate is often lower than the configured rate
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: history_depth
+  status: stated
+  value: The query API takes from/to timestamps (Unix milliseconds) with no documented lookback limit; all data stored
+    on the server for a participant can be retrieved. Requests return up to 1,000 events by default, so long ranges
+    are paged by time window.
+  confidence: Corroborated
+  sources:
+  - url: https://docs.lamp.digital/api/query-sensor-events-for-a-participant
+    type: vendor_docs
+    quote: The maximum number of events to return in the query. Positive values like +1000 return latest events first,
+      while negative values like -1000 return earliest events first.
+    retrieved: '2026-10-11'
+  - url: https://docs.lamp.digital/developer/api-sdks/python-sdk
+    type: vendor_docs
+    quote: Results are limited to 1000 entries per request.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: '"No lookback limit" is inferred from the API design and the absence of any stated limit; retention depends on
+    the deployment (see retention_terms).'
+- field: export_routes
+  status: stated
+  value: REST API (OpenAPI, documented at docs.lamp.digital/api); official Python (LAMP-core) and JavaScript (lamp-core)
+    SDKs, R via reticulate; Cortex for features; JSONata queries run on the server; and the dashboard Data Portal (older,
+    not actively updated) for ad-hoc queries and CSV export.
+  confidence: Verified
+  sources:
+  - url: https://docs.lamp.digital/capabilities/configure
+    type: vendor_docs
+    quote: REST API Full programmatic access. Create participants, push activities, pull sensor readings, query results.
+    retrieved: '2026-10-11'
+  - url: https://docs.lamp.digital/capabilities/configure
+    type: vendor_docs
+    quote: Transform and filter data directly on the platform using JSONata without downloading raw files.
+    retrieved: '2026-10-11'
+  - url: https://docs.lamp.digital/dashboard/data-portal
+    type: vendor_docs
+    quote: The Data Portal UI is an older feature that has not been actively updated.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: rate_limits
+  status: stated
+  value: No request rate limit is documented. The documented constraint is page size (1,000 events per request by
+    default). In the server source merged on 2026-09-30, new API keys are created with a cap of 1,000 requests per key
+    per rate-limit window; the window is not set in mindLAMP's code (the auth library's default applies).
+  confidence: Reported
+  sources:
+  - url: https://docs.lamp.digital/developer/api-sdks/python-sdk
+    type: vendor_docs
+    quote: Results are limited to 1000 entries per request.
+    retrieved: '2026-10-11'
+  - url: https://github.com/BIDMCDigitalPsychiatry/LAMP-server/blob/master/src/service/ApiKeyService.ts
+    fetch_url: https://raw.githubusercontent.com/BIDMCDigitalPsychiatry/LAMP-server/master/src/service/ApiKeyService.ts
+    type: repository
+    quote: 'rateLimitMax: 1000,'
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Reported because the API-key limit comes from source code (the better-auth library, whose documented default
+    window is one day) and it is not known whether that code is live on the BIDMC server; the authentication upgrade
+    that introduces API keys had no release date as of the last blog post (July 2026).
+- field: retention_terms
+  status: stated
+  value: Deleted content has a 90-day soft-deletion period (restorable on request), then is permanently deleted.
+    Participants can delete their account in the app or by a Google form. Aggregated usage statistics may be kept
+    indefinitely. Self-hosters control their own data and retention.
+  confidence: Verified
+  sources:
+  - url: https://docs.lamp.digital/privacy
+    type: vendor_legal
+    quote: There is a soft-deletion period of 90 days during which the data is unavailable but may be restored by request.
+      Once the 90 day period ends, the data is deleted permanently, after which it may no longer be recovered.
+    retrieved: '2026-10-11'
+  - url: https://docs.lamp.digital/privacy
+    type: vendor_legal
+    quote: This data may be kept for an indefinite amount of time
+    retrieved: '2026-10-11'
+  - url: https://docs.lamp.digital/privacy
+    type: vendor_legal
+    quote: If self-deploying the LAMP Platform, you will be in sole control and ownership of all data consumed or produced
+      by the LAMP platform.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: The Google Play data-safety panel says "Data can't be deleted", which sits awkwardly with the in-app delete
+    button described on the privacy page. No default retention period for active studies on the BIDMC server is
+    published; it is presumably set in the Core agreement.
+- field: ai_training_terms
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://docs.lamp.digital/privacy
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://docs.lamp.digital/get-started
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://digitalpsych.org/mindlamp-core
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Nothing addresses AI or model training. The closest terms are in the privacy page, which says data used for
+    research is used only in aggregate form and never for marketing or commercial purposes, and that BIDMC will never
+    access data without prior consent and permission. The division is building an AI agent (Corvin) on mindLAMP per
+    the AWS blog of 2026-09-29.
+- field: deprecations
+  status: stated
+  value: '(1) Authentication upgrade: phase 1 (dashboard sign-in by server button) went live 2026-07-29; the later
+    phase replaces basic auth with server sessions, mandatory 2FA or OAuth for staff, and API keys for LAMP-py, which
+    will break scripts that connect with a username and password. No firm date was given; the server code was merged
+    on 2026-09-30. Self-hosted servers are unaffected. (2) Sensor identifiers superseded: gyroscope and magnetometer
+    into device_motion, screen_state into device_state, calls and sms into telephony, bluetooth and wifi into
+    nearby_device; distance, flights, weight and height removed. (3) mindLAMP v1 app and LAMP-portal backend
+    deprecated ("DO NOT USE"). (4) The dashboard was relicensed from BSD-3-Clause to AGPL-3.0 on 2026-08-05.'
+  confidence: Verified
+  sources:
+  - url: https://docs.lamp.digital/blog/authentication-upgrade
+    type: vendor_page
+    quote: 'A developer or data scientist using LAMP-py (Python SDK) High : LAMP-py will require an API key instead of
+      a username and password.'
+    retrieved: '2026-10-11'
+  - url: https://docs.lamp.digital/blog/authentication-upgrade
+    type: vendor_page
+    quote: This update is planned for later this summer. We do not have a firm release date yet.
+    retrieved: '2026-10-11'
+  - url: https://docs.lamp.digital/sensors-data/data
+    type: vendor_docs
+    quote: The following sensor identifiers have been superseded. Data collected under these identifiers may still appear
+      in historical records.
+    retrieved: '2026-10-11'
+  - url: https://docs.lamp.digital/developer/architecture/components
+    type: vendor_docs
+    quote: 'LAMP-app : The mindLAMP v1 native app for iOS and Android. DO NOT USE.'
+    retrieved: '2026-10-11'
+  - url: https://github.com/BIDMCDigitalPsychiatry/LAMP-dashboard/blob/master/LICENSE.md
+    fetch_url: https://raw.githubusercontent.com/BIDMCDigitalPsychiatry/LAMP-dashboard/master/LICENSE.md
+    type: repository
+    quote: Prior to this release, LAMP Dashboard was distributed under the BSD 3-Clause License. Copies obtained under
+      that license remain governed by its terms.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: The 2026-09-30 merge date and the 2026-08-05 relicensing date come from the GitHub commit history (LAMP-server
+    PR 284; LAMP-dashboard commit 8e6ad0f0). Whether the server-side auth change is deployed on the BIDMC server was
+    not announced as of 2026-10-11.
+- field: licence
+  status: conflict
+  value: 'The privacy page says the platform has no licensing restrictions, but the components are licensed
+    differently: dashboard AGPL-3.0-only (since 2026-08-05, previously BSD-3-Clause); Cortex, LAMP-py, LAMP-js,
+    LAMP-swift, LAMP-kotlin, LAMP-protocol and the app gateway BSD-3-Clause; the server (LAMP-server), worker, native
+    apps (LAMP-core-ios, LAMP-core-android) and LAMP-activities carry no licence file at all.'
+  confidence: Verified
+  sources:
+  - url: https://docs.lamp.digital/privacy
+    type: vendor_legal
+    quote: The LAMP Platform is free and open source software currently developed by Beth Israel Deaconess Medical Center
+      but does not have any licensing restrictions for intellectual property.
+    retrieved: '2026-10-11'
+  - url: https://github.com/BIDMCDigitalPsychiatry/LAMP-dashboard/blob/master/LICENSE.md
+    fetch_url: https://raw.githubusercontent.com/BIDMCDigitalPsychiatry/LAMP-dashboard/master/LICENSE.md
+    type: repository
+    quote: 'This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero
+      General Public License version 3 as published by the Free Software Foundation.'
+    retrieved: '2026-10-11'
+  - url: https://github.com/BIDMCDigitalPsychiatry/LAMP-cortex/blob/master/LICENSE.md
+    fetch_url: https://raw.githubusercontent.com/BIDMCDigitalPsychiatry/LAMP-cortex/master/LICENSE.md
+    type: repository
+    quote: BSD 3-Clause License
+    retrieved: '2026-10-11'
+  - url: https://github.com/BIDMCDigitalPsychiatry/LAMP-py/blob/master/LICENSE
+    fetch_url: https://raw.githubusercontent.com/BIDMCDigitalPsychiatry/LAMP-py/master/LICENSE
+    type: repository
+    quote: BSD 3-Clause License
+    retrieved: '2026-10-11'
+  - url: https://github.com/BIDMCDigitalPsychiatry/LAMP-js/blob/master/LICENSE.md
+    fetch_url: https://raw.githubusercontent.com/BIDMCDigitalPsychiatry/LAMP-js/master/LICENSE.md
+    type: repository
+    quote: BSD 3-Clause License
+    retrieved: '2026-10-11'
+  - url: https://github.com/BIDMCDigitalPsychiatry/LAMP-server
+    type: repository
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Licence status per repo read from the GitHub API on 2026-10-11 (LAMP-server, LAMP-worker, LAMP-core-ios,
+    LAMP-core-android, LAMP-activities report no licence; LAMP-server's package.json declares none). Code with no
+    licence is all rights reserved by default, so self-hosting the server rests on BIDMC's informal statement, not a
+    licence grant. The AGPL dashboard requires anyone running a modified dashboard over a network to offer its
+    source.
+- field: hosting_options
+  status: stated
+  value: 'Three options: shared Core-hosted (BIDMC runs it; most projects), a dedicated isolated instance on Core
+    infrastructure (Core maintains it), or self-hosted on the institution''s own infrastructure using containers
+    (Docker Swarm per the draft deployment docs). BIDMC''s own hosting runs on AWS (ECS Fargate, DocumentDB) and is
+    defined in Terraform; per the AWS blog, each of 65 sites stands up its own instance.'
+  confidence: Verified
+  sources:
+  - url: https://docs.lamp.digital/capabilities/configure
+    type: vendor_docs
+    quote: Hosted and maintained by the mindLAMP Core team at BIDMC. Start collecting data immediately.
+    retrieved: '2026-10-11'
+  - url: https://docs.lamp.digital/capabilities/configure
+    type: vendor_docs
+    quote: Isolated environment on Core infrastructure. Fully separated data, Core team handles maintenance.
+    retrieved: '2026-10-11'
+  - url: https://docs.lamp.digital/capabilities/configure
+    type: vendor_docs
+    quote: Self-Hosted Best for institutions with data residency requirements Deploy on your own infrastructure using
+      standard container technology.
+    retrieved: '2026-10-11'
+  - url: https://aws.amazon.com/blogs/industries/from-cloud-to-clinic-how-aws-powers-digital-psychiatry-at-scale/
+    type: secondary
+    quote: 'Amazon DocumentDB : The primary data store for mindLAMP data, with AWS handling backups, replication, and
+      failover.'
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: No third-party or partner-run managed hosting service was found. The public self-hosting guide is a draft not
+    published on the docs site (only in the LAMP-platform repo). The AWS blog is co-written by the BIDMC team but
+    published by AWS, so typed secondary.
+- field: app_availability
+  status: stated
+  value: '"mindLAMP 2" is free on the iOS App Store (iOS 14+, with an Apple Watch app) and Google Play (Android 8+,
+    with a WearOS companion; package digital.lamp.mindlamp, 1K+ downloads, updated 2026-05-17), developer listed as
+    John Torous. Usable only with credentials from an enrolled study or clinic (plus a limited Self Help mode). A web
+    version runs at dashboard.lamp.digital without passive sensing.'
+  confidence: Verified
+  sources:
+  - url: https://apps.apple.com/us/app/mindlamp-2/id1495947054
+    type: app_store
+    quote: If you are part of a mindLAMP clinical study, we invite you to download mindLAMP onto your phone after signing
+      informed consent with study staff.
+    retrieved: '2026-10-11'
+  - url: https://play.google.com/store/apps/details?id=digital.lamp.mindlamp&hl=en_US
+    type: app_store
+    quote: If you are not part of a partner study or clinic, you will not be able to access the app.
+    retrieved: '2026-10-11'
+  - url: https://play.google.com/store/apps/details?id=digital.lamp.mindlamp&hl=en_US
+    type: app_store
+    quote: A standalone companion app is available for Google WearOS devices.
+    retrieved: '2026-10-11'
+  - url: https://docs.lamp.digital/get-started
+    fetch_url: https://docs.lamp.digital/assets/js/bf7df328.1cccf923.js
+    type: vendor_page
+    quote: mindLAMP supports iOS (14+) and Android (8+), with companion apps for Apple Watch and WearOS devices.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Self-hosted teams use the same store apps and point them at their own server. Some projects ship branded
+    variants (for example "Level Up" for the Army SAFEGUARD project).
+# ---------------- Compliance ----------------
+- field: baa
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://docs.lamp.digital/privacy
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://docs.lamp.digital/get-started
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://digitalpsych.org/mindlamp-core
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: No published statement on whether BIDMC signs a BAA for Core-hosted projects. The only BAA mention found is in
+    the unpublished draft deployment docs, telling self-hosters to sign a BAA with their own cloud provider.
+- field: dpa
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://docs.lamp.digital/privacy
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://docs.lamp.digital/get-started
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://digitalpsych.org/mindlamp-core
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: No DPA published or mentioned. Core projects proceed under a "Core Services agreement" whose terms are not
+    public.
+- field: hipaa_statement
+  status: stated
+  value: 'BIDMC states that LAMP offers safeguards in line with the HIPAA Security Rule (access control, audit logs,
+    integrity controls, encrypted transmission; AES-256 at rest with a per-site key, TLS 1.3 in transit) and that the
+    platform supports HIPAA-compliant workflows. It is a self-description, not a certification. A third-party
+    penetration test (Echelon Risk + Cyber) was run in July 2025 on a BIDMC test environment.'
+  confidence: Corroborated
+  sources:
+  - url: https://docs.lamp.digital/privacy
+    type: vendor_legal
+    quote: LAMP offers physical and technical safeguards that are in line with the HIPAA Security Privacy Rule.
+    retrieved: '2026-10-11'
+  - url: https://docs.lamp.digital/privacy
+    type: vendor_legal
+    quote: As data is accepted by the server, it is stored in the data lake encrypted at rest using AES-256 encryption
+      through a secret key unique to each site.
+    retrieved: '2026-10-11'
+  - url: https://docs.lamp.digital/get-started
+    fetch_url: https://docs.lamp.digital/assets/js/bf7df328.1cccf923.js
+    type: vendor_page
+    quote: The platform supports HIPAA-compliant workflows, and deployment options can be tailored to meet your institutional
+      data and privacy requirements.
+    retrieved: '2026-10-11'
+  - url: https://docs.lamp.digital/privacy
+    type: vendor_legal
+    quote: 'July 2025: Echelon Risk + Cyber previously performed penetration testing against both the Mobile and Web Application
+      for mindLAMP in a test environment located on BIDMC infrastructure.'
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+- field: gdpr_statement
+  status: stated
+  value: The architecture docs say AES-256 and TLS 1.3 enable storage and transmission "in a HIPAA, COPPA, and
+    GDPR-compliant manner". No GDPR-specific policy (lawful basis, controller and processor roles, transfers) is
+    published; the privacy page is US-oriented.
+  confidence: Corroborated
+  sources:
+  - url: https://docs.lamp.digital/developer/architecture/data-flow
+    type: vendor_docs
+    quote: The industry encryption standards AES-256 and TLSv1.3 facilitate secure storage and transmission of data in
+      a HIPAA, COPPA, and GDPR-compliant manner.
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: The AWS blog (2026-09-29) names GDPR and data sovereignty as reasons each site runs its own instance.
+- field: iso27001
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://docs.lamp.digital/privacy
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://digitalpsych.org/mindlamp-core
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://docs.lamp.digital/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: No ISO 27001 claim or certificate found for mindLAMP or the Core service. BIDMC hosting sits on AWS, whose own
+    certifications do not cover the application.
+- field: soc2
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://docs.lamp.digital/privacy
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://digitalpsych.org/mindlamp-core
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://docs.lamp.digital/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: No SOC 2 report or claim found. The only external security evidence is the July 2025 penetration test noted
+    on the privacy page.
+- field: fda_clearances
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://api.fda.gov/device/510k.json?search=device_name:mindlamp
+    type: regulator_db
+    retrieved: '2026-10-11'
+  - url: https://api.fda.gov/device/510k.json?search=applicant:%22beth+israel+deaconess%22
+    type: regulator_db
+    retrieved: '2026-10-11'
+  - url: https://api.fda.gov/device/registrationlisting.json?search=products.proprietary_name:mindlamp
+    type: regulator_db
+    retrieved: '2026-10-11'
+  - url: https://api.fda.gov/device/registrationlisting.json?search=registration.owner_operator.firm_name:%22beth+israel+deaconess%22
+    type: regulator_db
+    retrieved: '2026-10-11'
+  - url: https://api.fda.gov/device/pma.json?search=trade_name:mindlamp
+    type: regulator_db
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: All openFDA searches returned "No matches found" (510(k) by device name, applicant and "lamp platform"; PMA by
+    trade name; registration and listing by proprietary name and owner). mindLAMP is positioned as a research and
+    clinical-support tool, not a medical device; the privacy page says LAMP is not an electronic health record
+    system.
+- field: data_residency
+  status: stated
+  value: Core-hosted data sits on BIDMC's AWS deployment (region not published). Teams with residency needs are steered
+    to self-hosting, and the AWS blog says each site runs its own instance and keeps its own data. Institutions own
+    their data.
+  confidence: Corroborated
+  sources:
+  - url: https://docs.lamp.digital/capabilities/configure
+    type: vendor_docs
+    quote: Self-Hosted Best for institutions with data residency requirements Deploy on your own infrastructure using
+      standard container technology.
+    retrieved: '2026-10-11'
+  - url: https://aws.amazon.com/blogs/industries/from-cloud-to-clinic-how-aws-powers-digital-psychiatry-at-scale/
+    type: secondary
+    quote: Each site stands up their own instance and retains their own data, satisfying data residency and sovereignty
+      requirements without the BIDMC team needing to build each deployment individually.
+    retrieved: '2026-10-11'
+  - url: https://docs.lamp.digital/get-started
+    fetch_url: https://docs.lamp.digital/assets/js/bf7df328.1cccf923.js
+    type: vendor_page
+    quote: Your institution owns its data. mindLAMP can be deployed on shared infrastructure (hosted by the Core team at
+      BIDMC) or on a dedicated instance for your project.
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: The AWS blog's "each site stands up their own instance" conflicts in emphasis with the docs, which call shared
+    Core hosting the option for most projects; both may be true if "site" means a Core-run instance per project.

@@ -3,88 +3,970 @@ name: m-Path (KU Leuven)
 kind: platform
 profile: module-02-digital-phenotyping/profiles/m-path.md
 watch:
-- url: https://m-path.io
-  role: other
-- url: https://m-path.io/
-  role: other
-- url: https://m-path.io/manual/knowledge-base/welcome-to-m-path/
-  role: other
-- url: https://m-path.io/landing/research/
-  role: research_program
 - url: https://m-path.io/pricing/
   role: pricing
-- url: http://m-path.io/pricing/
+- url: https://m-path.io/manual/knowledge-base/subscriptions-and-billing/
   role: pricing
+- url: https://m-path.io/manual/knowledge-base/buying-participant-slots/
+  role: pricing
+- url: https://m-path.io/manual/knowledge-base/subscription-length/
+  role: terms
+- url: https://m-path.io/terms-and-conditions/
+  role: terms
+  fetch_url: https://m-path.io/LegalPage/terms.html
+- url: https://m-path.io/data-processing/
+  role: terms
+  fetch_url: https://m-path.io/LegalPage/dpa.html
+- url: https://m-path.io/privacy-policy/
+  role: terms
+  fetch_url: https://m-path.io/LegalPage/privacy.html
+- url: https://m-path.io/subcontractors/
+  role: trust
+  fetch_url: https://m-path.io/LegalPage/subcontractors.html
+- url: https://m-path.io/manual/knowledge-base/storage/
+  role: trust
+- url: https://m-path.io/faq/
+  role: trust
+- url: https://m-path.io/landing/research/
+  role: research_program
 - url: https://m-path.io/manual/knowledge-base/mobile-sensing-full/
-  role: other
-- url: https://m-path.io/manual/knowledge-base/live-activity-background-sensing/
-  role: other
+  role: docs
+- url: https://m-path.io/manual/knowledge-base/which-wearable-integration-is-right-for-my-project/
+  role: docs
+- url: https://m-path.io/manual/knowledge-base/wearables-garmin-direct-integration/
+  role: docs
+- url: https://m-path.io/manual/knowledge-base/export-data/
+  role: docs
 facts:
+# ---------------- Research access ----------------
 - field: research_program
-  status: unresearched
+  status: stated
+  value: No separate research or academic program. Research use runs on the research licences themselves (Free,
+    Essential, Standard, Comfort), sold on a page titled "Research & Academic Licenses", with paid add-ons, consulting
+    and a first-ESM-study support package. The research page claims 1000+ researchers, 150+ institutions and 90000+
+    participants (vendor figures).
+  confidence: Verified
+  sources:
+  - url: https://m-path.io/pricing/
+    type: vendor_page
+    quote: m-Path Pricing | Research & Academic Licenses
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/subscriptions-and-billing/
+    type: vendor_docs
+    quote: m-Path offers four subscription plans designed to support different types of research projects.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/landing/research/
+    type: vendor_page
+    quote: Institutions 150+
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Operated by m-Path Software BV (Leuven), which the about page describes as a 2024 spin-off of KU Leuven's
+    Faculty of Psychology. The research page no longer carries the "250+ Universities" figure the profile cites; the
+    usage counts are vendor claims (Reported strength).
 - field: program_eligibility
-  status: unresearched
+  status: stated
+  value: Anyone can open a free dashboard account; paid subscriptions are optional and no eligibility criteria are
+    published for them. Individual practitioners (therapy use) get the basic version free. Participants aged 13 to 16
+    need a parent's or guardian's consent, subject to national law.
+  confidence: Verified
+  sources:
+  - url: https://m-path.io/manual/knowledge-base/create-an-online-dashboard-account/
+    type: vendor_docs
+    quote: A researcher or practitioner can always create an account for free.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/terms-and-conditions/
+    fetch_url: https://m-path.io/LegalPage/terms.html
+    type: vendor_legal
+    quote: The use of the m-Path Services is free. However, Practitioners or Researcher may agree to a paid Subscription
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/terms-and-conditions/
+    fetch_url: https://m-path.io/LegalPage/terms.html
+    type: vendor_legal
+    quote: can only use the m-Path Services with the consent and under the supervision of a parent or legal guardian
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
 - field: program_application
-  status: unresearched
+  status: stated
+  value: Self-service. Sign up with email verification, then buy Essential, Standard or Comfort by card on the pricing
+    page; add-ons and other purchases go through a payment link, invoice or formal quote from m-Path. No review or
+    approval step. Ethics approval is the researcher's responsibility.
+  confidence: Verified
+  sources:
+  - url: https://m-path.io/manual/knowledge-base/create-an-online-dashboard-account/
+    type: vendor_docs
+    quote: Verify your e-mail address. You will receive a verification e-mail.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/subscriptions-and-billing/
+    type: vendor_docs
+    quote: 'Credit card on our website: buy an Essential, Standard or Comfort subscription directly on our pricing page'
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/subscriptions-and-billing/
+    type: vendor_docs
+    quote: for add-ons, or for subscriptions you can’t buy on the pricing page, we can send you a secure credit card
+      payment link.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/terms-and-conditions/
+    fetch_url: https://m-path.io/LegalPage/terms.html
+    type: vendor_legal
+    quote: the Practitioner or Researcher is solely responsible for obtaining prior ethical approval for the use of the
+      m-Path Services
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
 - field: program_status
-  status: unresearched
+  status: stated
+  value: Active. Plans and add-ons are on sale on the live pricing page, and the manual's billing and sensing pages
+    were updated in October 2026.
+  confidence: Verified
+  sources:
+  - url: https://m-path.io/manual/knowledge-base/subscriptions-and-billing/
+    type: vendor_docs
+    quote: Updated on October 6, 2026
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/pricing/
+    type: vendor_page
+    quote: Choose a plan based on your count and support needs, with customizable add-ons to fit your goals.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
 - field: developer_program_status
-  status: unresearched
+  status: stated
+  value: No open developer program and no public API documentation. API access is a paid add-on (EUR 5,000),
+    available from the Standard plan up by contacting m-Path. The open R packages (mpathr, mpathsenser) read exported
+    files, not a live API.
+  confidence: Corroborated
+  sources:
+  - url: https://m-path.io/pricing/
+    type: vendor_page
+    quote: Get access to the m-Path API and communicate with different software platforms.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/subscriptions-and-billing/
+    type: vendor_docs
+    quote: Add-ons can be selected from the Standard plan onwards; contact us to include them in your subscription.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Absence of public API docs comes from searching the site, the manual (wp-json ht-kb?search=API) and the web,
+    not from a vendor statement.
 - field: user_cap
-  status: unresearched
+  status: stated
+  value: Free plan 50 participants a year. Paid plans 300 to 3,000 participant slots a year in steps of 100; 300 is
+    the smallest paid licence. Extra blocks of 100 can be bought mid-year. Add-on prices hold up to 1,000 slots and
+    scale above that.
+  confidence: Verified
+  sources:
+  - url: https://m-path.io/pricing/
+    type: vendor_page
+    quote: Try out the platform and set up a small pilot study. € 0 50 participants per year
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/subscriptions-and-billing/
+    type: vendor_docs
+    quote: The paid plans are available for 300 up to 3000 participants per year, in steps of 100
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/buying-participant-slots/
+    type: vendor_docs
+    quote: The standard premium research license in m-Path includes 300 participant slots for one year. This is also
+      the smallest possible license available.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/subscriptions-and-billing/
+    type: vendor_docs
+    quote: Pricing for add-ons hold for up to 1000 participant slots per year. Over 1000 participant slots, the pricing
+      scales relatively to this price.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
 - field: academic_vs_commercial
-  status: unresearched
+  status: stated
+  value: No separate academic tier; the research licences are the same for any researcher. Individual practitioners
+    get the basic version free, funded by research licences, and the site markets m-Path for therapy and blended care.
+    Enterprise (workplace) use is by contact, with no public price. The Terms, however, exclude using the services to
+    provide clinical or medical services.
+  confidence: Corroborated
+  sources:
+  - url: https://m-path.io/pricing/
+    type: vendor_page
+    quote: 'By keeping the basic version free, individual practitioners can use momentary assessment and intervention
+      tools without needing large budgets. Our research partners make this possible: every premium research license
+      directly sponsors free access for practitioners'
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/clinical/
+    type: vendor_page
+    quote: Interesting patterns and critical insights can be shared with the client during the actual therapy session.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/enterprise/
+    type: vendor_page
+    quote: contact us to help you set up the a dashboard tailored to your company needs
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/terms-and-conditions/
+    fetch_url: https://m-path.io/LegalPage/terms.html
+    type: vendor_legal
+    quote: The grant of this access and use right does not include the right to use the m-Path Services to provide services
+      for the benefit of third parties or to provide clinical or medical services.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: The clinical marketing (/clinical/, "m-Path for Therapy") and Terms clause 11.4 pull against each other; the
+    Terms do not define "clinical or medical services". Clause 14.1 also says the services give no medical advice.
+    Ask m-Path how therapy use squares with 11.4 before a clinical deployment.
+# ---------------- Pricing ----------------
 - field: device_price
-  status: unresearched
+  status: not_applicable
+  value: Software platform; participants use their own phones. Smartwatches, if used, are bought separately.
+  recheck_by: '2026-11-09'
 - field: subscription_price
-  status: unresearched
+  status: stated
+  value: 'Per year, excl. VAT. At 300 slots: Essential EUR 1,599, Standard EUR 2,099, Comfort EUR 3,099. At 1,000:
+    EUR 4,441 / 5,829 / 8,607. At 3,000: EUR 9,043 / 11,380 / 16,593. Free plan EUR 0. Extra 100 slots mid-term
+    EUR 535 (Essential) or EUR 700 (Standard).'
+  confidence: Verified
+  scope: Research plans
+  sources:
+  - url: https://m-path.io/manual/knowledge-base/subscriptions-and-billing/
+    type: vendor_docs
+    quote: 300 €1,599 €2,099 €3,099
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/subscriptions-and-billing/
+    type: vendor_docs
+    quote: 1,000 €4,441 €5,829 €8,607
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/subscriptions-and-billing/
+    type: vendor_docs
+    quote: 3,000 €9,043 €11,380 €16,593
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/pricing/
+    type: vendor_page
+    quote: € 1599 € 2052 € 2505 € 2958 Prices are excl. VAT per year
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/buying-participant-slots/
+    type: vendor_docs
+    quote: Adding 100 new participant slots costs 535 Euro for the essential subscription, 700 Euro for the standard
+      subscription
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: On the pricing page the tabs run 300 to 600 participants while each card lists its participant labels 600 down
+    to 300 beside prices that rise, so a card read literally pairs EUR 1,599 with 600. The manual's table (300 =
+    EUR 1,599 Essential) settles it.
+- field: subscription_price
+  status: stated
+  value: Free for individual practitioners (therapy use).
+  confidence: Verified
+  scope: Individual practitioners
+  sources:
+  - url: https://m-path.io/manual/knowledge-base/subscriptions-and-billing/
+    type: vendor_docs
+    quote: m-Path is free for individual practitioners.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
 - field: academic_pricing
-  status: unresearched
+  status: stated
+  value: No academic discount; the published research plans (page titled "Research & Academic Licenses") are the
+    academic prices. Half of unused slots bought beyond the first 300 can be recovered, as can half of the slots used
+    by participants who filled in one questionnaire or fewer. US institutions can buy through SAM.gov.
+  confidence: Verified
+  sources:
+  - url: https://m-path.io/pricing/
+    type: vendor_page
+    quote: m-Path Pricing | Research & Academic Licenses
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/buying-participant-slots/
+    type: vendor_docs
+    quote: From any additionally bought participant slots, you can recover 50% of the unused slots.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/buying-participant-slots/
+    type: vendor_docs
+    quote: 50% of all participant slots that were used for participants that filled in 1 questionnaire or less, can
+      be recovered.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/subscriptions-and-billing/
+    type: vendor_docs
+    quote: m-Path is registered on SAM.gov for US institutions.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
 - field: api_platform_fees
-  status: unresearched
+  status: stated
+  value: 'Add-ons, excl. VAT, added to the one-year subscription from the Standard plan up; prices hold up to 1,000
+    participant slots a year and scale above that. API EUR 5,000; Sensing lite EUR 3,000; Sensing full EUR 10,000 (includes Sensing lite; required for the direct
+    Garmin integration); Smartwatch integration via Thryve EUR 3,000, with Oura EUR 3,000 more; Cognitive tests EUR
+    4,500; Intervention editor EUR 6,000; Moodboard editor EUR 6,000; White-label app EUR 10,000 plus EUR 2,000 a year;
+    External servers custom. Garmin Lite is a separate add-on with no published price.'
+  confidence: Verified
+  sources:
+  - url: https://m-path.io/manual/knowledge-base/subscriptions-and-billing/
+    type: vendor_docs
+    quote: 'API (€5,000) : Get access to the m-Path API to exchange data with other software platforms.'
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/subscriptions-and-billing/
+    type: vendor_docs
+    quote: 'Full mobile sensing (€10,000): This subscription allows you to constantly read the sensors of participants
+      phone'
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/subscriptions-and-billing/
+    type: vendor_docs
+    quote: 'Mobile sensing lite (€3,000) : allows you to read some sensors during a questionnaire.'
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/subscriptions-and-billing/
+    type: vendor_docs
+    quote: Mobile sensing lite is included in the full mobile sensing subscription.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/subscriptions-and-billing/
+    type: vendor_docs
+    quote: 'Smartwatch integration (€3,000) : Collect data through participants’ smartwatches (e.g. Fitbit, Garmin, Apple
+      Watch).'
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/wearables/
+    type: vendor_docs
+    quote: Oura can be added for €3,000 per year.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/subscriptions-and-billing/
+    type: vendor_docs
+    quote: White-label app (€10,000, plus an annual update fee of €2,000)
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/subscriptions-and-billing/
+    type: vendor_docs
+    quote: Add-ons can be selected from the Standard plan onwards; contact us to include them in your subscription.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/wearables-garmin-lite/
+    type: vendor_docs
+    quote: The Garmin Lite integration is available as an add-on (you need to have a Standard of Comfort subscription
+      for this).
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Only Oura and the white-label update fee are explicitly stated as per year; the other add-ons attach to the
+    one-year subscription and are priced per year of participant slots. Researcher A said Sensing full includes Garmin Lite; the Garmin Lite page describes it as its own add-on, so
+    that claim was dropped. The which-integration page lists Sensing full as the add-on the direct Garmin route needs.
 - field: minimum_commitment
-  status: unresearched
+  status: stated
+  value: Paid subscriptions run at least one year and start at 300 participant slots; extensions from 3 months. No
+    automatic renewal; a lapsed account falls back to the Free plan.
+  confidence: Verified
+  sources:
+  - url: https://m-path.io/manual/knowledge-base/subscription-length/
+    type: vendor_docs
+    quote: It is not possible to buy a subscription for less than one year.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/buying-participant-slots/
+    type: vendor_docs
+    quote: The standard premium research license in m-Path includes 300 participant slots for one year. This is also
+      the smallest possible license available.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/subscription-length/
+    type: vendor_docs
+    quote: m-Path never renews a subscription automatically.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/subscription-length/
+    type: vendor_docs
+    quote: The smallest possible extension is 3 months.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
 - field: quote_required
-  status: unresearched
+  status: stated
+  value: No for the base plans, which are priced and bought online. Add-ons are priced but enabled by contacting
+    m-Path; external servers, consulting and custom development are custom-priced. A formal quote is available on
+    request.
+  confidence: Verified
+  sources:
+  - url: https://m-path.io/manual/knowledge-base/subscriptions-and-billing/
+    type: vendor_docs
+    quote: 'Quote first: need an official quote (offer) before you can purchase? We can always send you one.'
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/pricing/
+    type: vendor_page
+    quote: Contact us to include the following add ons in your subscription.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
 - field: hosting_price
-  status: unresearched
+  status: stated
+  value: Managed hosting on m-Path's Azure servers is included in every plan. Storing answer data on the customer's
+    own servers ("External servers") is custom-priced with a development cost. Sensing-full, Garmin-direct and media
+    data go to the researcher's own pCloud, OneDrive or SFTP storage, which the researcher pays for.
+  confidence: Verified
+  sources:
+  - url: https://m-path.io/manual/knowledge-base/buying-participant-slots/
+    type: vendor_docs
+    quote: the price paid for the first 300 participants also include administrative overhead, support, and the basic
+      cost of hosting our platform
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/subscriptions-and-billing/
+    type: vendor_docs
+    quote: 'External servers (custom pricing) : Have the data collected, processed and stored securely on your own server.'
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/storage/
+    type: vendor_docs
+    quote: It is possible to store data on your own servers. Doing so requires an additional development cost as m-Path
+      will need to work closely together with your own IT personel.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+# ---------------- Data access and terms ----------------
 - field: raw_streams
-  status: unresearched
+  status: stated
+  value: 'Phone, continuous (Sensing full, m-Path Sense app, CARP-based): location, device, weather, pedometer, activity,
+    screen (Android), battery, app usage (Android), connectivity, Wi-Fi, periodic accelerometer features, light (Android),
+    memory (Android); a vendor comparison page also lists gyroscope, Bluetooth and anonymised call and text data. JSON
+    files go straight to the researcher''s cloud. Phone, in-survey (Sensing lite): location, noise level, step count,
+    app usage (Android; iOS only with a study-specific SensorKit app), nearby Bluetooth, audio, photo, video. m-Path
+    Keyboard: keystroke and typing data sent to the researcher. Wearables: direct Garmin gives heart rate down to 1 s,
+    all beat-to-beat intervals, raw accelerometer 25 Hz and gyroscope 32 Hz, plus SpO2, stress, respiration and skin
+    temperature; Garmin, Fitbit, Apple Health and Polar via Thryve at lower resolution. Empatica, movisens and ActiGraph
+    are not integrated.'
+  confidence: Verified
+  sources:
+  - url: https://m-path.io/manual/knowledge-base/mobile-sensing-full/
+    type: vendor_docs
+    quote: All sensor data is immediately uploaded to the cloud provider of the researcher.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/mobile-sensing-full/
+    type: vendor_docs
+    quote: m-Path uses the CARP open source package to gather sense data.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/full-sensing-vs-sensing-lite-which-do-you-need/
+    type: vendor_docs
+    quote: Call and text data (cryptographically anonimized)
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/full-sensing-vs-sensing-lite-which-do-you-need/
+    type: vendor_docs
+    quote: GPS location (at this moment) App usage data (of the last day) Step count data (since last boot) Noise level
+      (at this moment) Nearby bluetooth devices (at this moment) Audio/Picture/Video recording (as an answer to a question)
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/mobile-sensing-lite-version/
+    type: vendor_docs
+    quote: By default, app usage only works on Android. It is possible to collect app usage on iOS, but this requires
+      a new, study-specific app that includes Apple’s SensorKit features.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/m-path-keyboard/
+    type: vendor_docs
+    quote: sent directly to the researcher, bypassing MPath servers entirely
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/which-wearable-integration-is-right-for-my-project/
+    type: vendor_docs
+    quote: This includes heart rate at up to 1-second intervals and raw beat-to-beat intervals (BBI) for HRV computation.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/which-wearable-integration-is-right-for-my-project/
+    type: vendor_docs
+    quote: Lower resolution but includes computed measures (e.g. sleep, daily summaries)
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/wearables-garmin-direct-integration/
+    type: vendor_docs
+    quote: Raw accelerometer at 25Hz. Not configurable.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/wearables-garmin-direct-integration/
+    type: vendor_docs
+    quote: Raw gyroscope at 32Hz. Not configurable.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/wearables/
+    type: vendor_docs
+    quote: Through the Thryve platform , m-Path supports most commercial wearables, including Garmin, Fitbit, Apple and
+      Polar.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/wearables/
+    type: vendor_docs
+    quote: Research devices such as Empatica, movisens and ActiGraph are not integrated.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: The sensing-full sensor table lists screen, app usage, light and memory as Android only, and does not list
+    gyroscope or call and text data, which the comparison page does; per-stream iOS and Android parity is not fully
+    stated. The Module 3 Niemeijer profile says calls and SMS were left out of the Play Store build of m-Path Sense;
+    current docs give no such caveat. The which-integration page names Garmin, Fitbit and Apple Health for Thryve; the
+    wearables page adds Polar.
 - field: derived_metrics
-  status: unresearched
+  status: stated
+  value: Phone accelerometer comes as window summary features (means, SDs, energy and so on), not raw samples, and
+    light as lux summaries; activity type with confidence. Thryve wearables include computed measures such as sleep
+    scores, sleep stages and daily summaries. The m-Path keyboard derives sentiment and typing behaviour without storing
+    raw text. Dashboard visualisations and compliance monitoring; R packages mpathr and mpathsenser for processing.
+  confidence: Verified
+  sources:
+  - url: https://m-path.io/manual/knowledge-base/mobile-sensing-full/
+    type: vendor_docs
+    quote: This is a summary of all accelerometer data collected from sensorStartTime to sensorEndTime.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/which-wearable-integration-is-right-for-my-project/
+    type: vendor_docs
+    quote: Thryve provides higher-level computed measures such as sleep scores, sleep stages, and daily activity summaries
+      that are derived from raw sensor data.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/mobile-sensing/
+    type: vendor_page
+    quote: Securely derive momentary sentiment from phone-based communication and assess typing behavior (speed, errors,
+      emoji use, etc.) without the need to access or store raw text data.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
 - field: sampling_rates
-  status: unresearched
+  status: stated
+  value: 'm-Path Sense: periodic sensors use a researcher-set interval in seconds, others are event-based; location
+    every minute on Android and every 10 m moved on iOS. The OS pausing the app makes real rates lower than configured.
+    Direct Garmin: heart rate default 30 s (1 to 3600 s), stress and respiration default 10 s, SpO2 default 30 s, steps
+    fixed at 60 s, all beat-to-beat intervals, accelerometer 25 Hz, gyroscope 32 Hz. Thryve wearables are lower resolution;
+    Fitbit syncs about every 15 minutes, Garmin and Apple Health less often.'
+  confidence: Verified
+  sources:
+  - url: https://m-path.io/manual/knowledge-base/mobile-sensing-full/
+    type: vendor_docs
+    quote: Some sensors are periodic (researcher can choose the period), while others are event based (new data entry
+      is created in case of a specific event).
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/mobile-sensing-full/
+    type: vendor_docs
+    quote: GPS coordinates every minute. ✔ ✔ Event for iOS (every 10 meter moved), periodic for Android
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/mobile-sensing-full/
+    type: vendor_docs
+    quote: This means that the actual sensing frequency only approximates the theoretical sensing frequency.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/wearables-garmin-direct-integration/
+    type: vendor_docs
+    quote: Heart Rate 30s 1s 3600s
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/wearables-garmin-direct-integration/
+    type: vendor_docs
+    quote: Steps 60s 60s 60s Locked at 1 minute.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/wearables-garmin-direct-integration/
+    type: vendor_docs
+    quote: Raw gyroscope at 32Hz. Not configurable.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/wearables/
+    type: vendor_docs
+    quote: Fitbit devices sync approximately every 15 minutes when connected, Garmin and Apple Health devices sync less
+      frequently.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
 - field: history_depth
-  status: unresearched
+  status: stated
+  value: No backfill of pre-enrolment history is documented. Survey data stays in the dashboard for the life of the
+    account, including after a plan lapses, until deletion is requested. Thryve wearable access runs for a researcher-set
+    expiration time after the participant connects. Garmin Lite syncs a configurable number of hours back, or from
+    the last sync.
+  confidence: Corroborated
+  sources:
+  - url: https://m-path.io/manual/knowledge-base/subscription-length/
+    type: vendor_docs
+    quote: Your data is not deleted and stays viewable in the dashboard.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/wearables/
+    type: vendor_docs
+    quote: how long (in seconds) you’ll be able to gather the participant’s wearable data after they initially connect
+      their device
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/wearables-garmin-lite/
+    type: vendor_docs
+    quote: How many hours back the sync should reach.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Whether the Thryve route backfills data recorded before the participant connected is not stated.
 - field: export_routes
-  status: unresearched
+  status: stated
+  value: 'Dashboard: single-participant export in the Visualize tab (all plans) and bulk semicolon-delimited .csv in
+    the Export tab (paid plans only); wearable data exported from the dashboard as JSON. Sensing-full, Garmin-direct,
+    Garmin Lite, keyboard and media data go straight to the researcher''s pCloud, OneDrive or self-hosted SFTP. API
+    as a paid add-on. R packages mpathr and mpathsenser read the exports.'
+  confidence: Verified
+  sources:
+  - url: https://m-path.io/manual/knowledge-base/export-data/
+    type: vendor_docs
+    quote: 'There are two ways of exporting data from your dashboard: single participant export in the Visualize tab,
+      or advanced export of a larger dataset for statistical analysis in the Export tab (available for paid subscriptions
+      only).'
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/adding-a-cloud-storage-location-for-client-file-uploads/
+    type: vendor_docs
+    quote: 'It is possible to connect two cloud storage providers: pCloud and OneDrive. It is also possible to upload
+      this data to your own servers via SFTP (i.e. self-hosted SFTP server).'
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/wearables/
+    type: vendor_docs
+    quote: The export function includes both the dynamic and daily wearable data in JSON format, making it easy to integrate
+      with statistical analysis software.
+    retrieved: '2026-10-11'
+  - url: https://cran.r-project.org/package=mpathsenser
+    type: repository
+    quote: Process and Analyse Data from m-Path Sense
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
 - field: rate_limits
-  status: unresearched
+  status: not_public
+  value: No API documentation or rate limits published; the API is a paid add-on.
+  confidence: Corroborated
+  sources:
+  - url: https://m-path.io/pricing/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/subscriptions-and-billing/
+    type: vendor_docs
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/export-data/
+    type: vendor_docs
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/terms-and-conditions/
+    fetch_url: https://m-path.io/LegalPage/terms.html
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
 - field: retention_terms
-  status: unresearched
+  status: stated
+  value: 'DPA clause 8.1: m-Path deletes controller data as soon as services end, unless the controller asks in writing
+    at least 5 days before for return as .csv. In practice a lapsed paid account falls back to the Free plan and keeps
+    its data until the researcher asks for removal. Participants can delete all their online data in the app, immediately
+    and permanently. Database backups are daily and kept up to one month.'
+  confidence: Verified
+  sources:
+  - url: https://m-path.io/data-processing/
+    fetch_url: https://m-path.io/LegalPage/dpa.html
+    type: vendor_legal
+    quote: The Processor will delete the above personal data immediately as soon as the provision of services to the
+      Controller has ended.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/data-processing/
+    fetch_url: https://m-path.io/LegalPage/dpa.html
+    type: vendor_legal
+    quote: 'it must notify the Processor in writing at least five (5) days before the end of the provision of the services.
+      In this case, the Processor will provide the personal data in the following file format immediately after the
+      termination of the services: csv.'
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/subscription-length/
+    type: vendor_docs
+    quote: Your data is not deleted and stays viewable in the dashboard. You can however ask m-Path by mail to remove
+      the data.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/delete-online-data/
+    type: vendor_docs
+    quote: All data gathered on this participant will immediately be permanently deleted from our databases.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/storage/
+    type: vendor_docs
+    quote: Our databases are backed up daily (maximum retainment of one month).
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Read together, not a conflict. A lapse to the Free plan keeps services running, so clause 8.1's "services ended"
+    trigger is not met; the DPA does not say when, short of account removal, services count as ended. Ask m-Path whether
+    data held on a Free-plan account after a paid study is ever deleted without a request.
 - field: ai_training_terms
-  status: unresearched
+  status: unclear
+  value: No clause anywhere mentions AI or model training. Terms clause 11.7 gives m-Path a worldwide, irrevocable,
+    royalty-free licence to use content users provide "for any purpose", and "User" includes participants. Clause
+    10.3 lets m-Path process personal data for its own purposes such as improving the services. The DPA limits processing
+    of personal data to the controller's instructions. Whether 11.7 reaches participant responses, or training, is
+    not stated.
+  confidence: Unclear
+  sources:
+  - url: https://m-path.io/terms-and-conditions/
+    fetch_url: https://m-path.io/LegalPage/terms.html
+    type: vendor_legal
+    quote: The User retains ownership of all content it provides but grants m-Path a worldwide, irrevocable, non-exclusive,
+      royalty-free license to use the content for any purpose, including to provide and enhance the m-Path Services.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/terms-and-conditions/
+    fetch_url: https://m-path.io/LegalPage/terms.html
+    type: vendor_legal
+    quote: “User” shall mean the Client, Participant, Practitioner or Researcher using the m-Path Services.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/terms-and-conditions/
+    fetch_url: https://m-path.io/LegalPage/terms.html
+    type: vendor_legal
+    quote: m-Path also processes the personal data of Clients or Participants and Practitioners or Researcher for its
+      own purposes, linked to the registration for uses, such as the use of the Services and the improvement of the
+      Services.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/data-processing/
+    fetch_url: https://m-path.io/LegalPage/dpa.html
+    type: vendor_legal
+    quote: The Processor will only process the personal data on the Controller’s written instructions
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Worth a written question to m-Path on how clause 11.7 and the DPA apply to participant data.
 - field: deprecations
-  status: unresearched
+  status: stated
+  value: No dated shutdowns. Legacy invitation codes will be phased out (no date). The Legal page still announces a
+    legal-document update for November 1, 2025, with no changelog. The Terms reserve the right to discontinue services
+    without notice.
+  confidence: Corroborated
+  sources:
+  - url: https://m-path.io/manual/knowledge-base/export-data/
+    type: vendor_docs
+    quote: legacy invitation code with which participant originally enrolled, but they will be phased out eventually
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/legal/
+    type: vendor_legal
+    quote: 'Upcoming update: Our legal documents will be updated on November 1, 2025'
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/terms-and-conditions/
+    fetch_url: https://m-path.io/LegalPage/terms.html
+    type: vendor_legal
+    quote: m-Path reserves the right to discontinue m-Path Services at any time without prior notice.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
 - field: licence
-  status: unresearched
+  status: stated
+  value: Platform (dashboard, m-Path and m-Path Sense apps) is proprietary; users get a personal, revocable access right
+    and no object code. The companion R packages mpathr and mpathsenser are GPL (>= 3) on CRAN. m-Path Sense builds
+    on the open-source CARP mobile sensing framework.
+  confidence: Verified
+  sources:
+  - url: https://m-path.io/terms-and-conditions/
+    fetch_url: https://m-path.io/LegalPage/terms.html
+    type: vendor_legal
+    quote: you obtain a personal, revocable, non-exclusive, non-transferable right to access and use the m-Path Services
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/terms-and-conditions/
+    fetch_url: https://m-path.io/LegalPage/terms.html
+    type: vendor_legal
+    quote: The dashboard, the object code of which is not provided
+    retrieved: '2026-10-11'
+  - url: https://cran.r-project.org/package=mpathr
+    type: repository
+    quote: 'License: GPL (≥ 3)'
+    retrieved: '2026-10-11'
+  - url: https://cran.r-project.org/package=mpathsenser
+    type: repository
+    quote: 'License: GPL (≥ 3)'
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/mobile-sensing-full/
+    type: vendor_docs
+    quote: m-Path uses the CARP open source package to gather sense data.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
 - field: hosting_options
-  status: unresearched
+  status: stated
+  value: Managed SaaS only by default, with survey data on Microsoft Azure in Frankfurt (but see data_residency).
+    Continuous sensing, Garmin-direct and media data bypass m-Path's servers and go to the researcher's pCloud, OneDrive
+    or self-hosted SFTP. Storing answer data on the customer's own servers is a custom-priced add-on built with the
+    customer's IT. No self-hostable release.
+  confidence: Verified
+  sources:
+  - url: https://m-path.io/manual/knowledge-base/storage/
+    type: vendor_docs
+    quote: In general, all survey responses are stored on Microsoft Azure servers located in Frankfurt, Germany.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/storage/
+    type: vendor_docs
+    quote: For most sensing data or media file uploads data is directly sent to your preferred cloud provider, or even
+      directly to your universities servers using SFTP .
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/storage/
+    type: vendor_docs
+    quote: It is possible to store data on your own servers. Doing so requires an additional development cost as m-Path
+      will need to work closely together with your own IT personel.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
 - field: app_availability
-  status: unresearched
+  status: stated
+  value: 'Two free apps from m-Path Software on both stores: m-Path (surveys, Sensing lite, Thryve wearables; Play
+    id io.m_Path.kuleuven, 50K+ downloads; App Store id6733243074) and m-Path Sense (continuous sensing and direct Garmin,
+    built on CARP; Play id io.m_Path_Sense.kuleuven, 1K+ downloads; App Store id6520394129). A white-label app is
+    a paid add-on.'
+  confidence: Verified
+  sources:
+  - url: https://play.google.com/store/apps/details?id=io.m_Path.kuleuven&hl=en
+    type: app_store
+    quote: 50K+ Downloads
+    retrieved: '2026-10-11'
+  - url: https://play.google.com/store/apps/details?id=io.m_Path_Sense.kuleuven&hl=en
+    type: app_store
+    quote: The app is a tool for researchers to track their participants.
+    retrieved: '2026-10-11'
+  - url: https://apps.apple.com/us/app/m-path/id6733243074
+    type: app_store
+    quote: Developer m-Path Software
+    retrieved: '2026-10-11'
+  - url: https://apps.apple.com/us/app/m-path-sense/id6520394129
+    type: app_store
+    quote: m-Path Sense Health & Fitness Free
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+# ---------------- Compliance ----------------
 - field: baa
-  status: unresearched
+  status: not_public
+  value: No HIPAA Business Associate Agreement is mentioned in the Terms, DPA, privacy statement, FAQ, research page
+    or manual, although the site claims HIPAA compliance.
+  confidence: Corroborated
+  sources:
+  - url: https://m-path.io/terms-and-conditions/
+    fetch_url: https://m-path.io/LegalPage/terms.html
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/data-processing/
+    fetch_url: https://m-path.io/LegalPage/dpa.html
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/faq/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/landing/research/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/wp-json/wp/v2/ht-kb?search=HIPAA
+    type: vendor_docs
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: Ask m-Path before any US covered-entity study.
 - field: dpa
-  status: unresearched
+  status: stated
+  value: Yes. A GDPR Article 28 data processing agreement is Annex 1 of the Terms (researcher or practitioner as controller,
+    m-Path as processor), with a public sub-processor list, audits at the controller's cost (EUR 125 per staff hour)
+    and SCC Module 4 (Annex 2) for controllers outside the EEA.
+  confidence: Corroborated
+  sources:
+  - url: https://m-path.io/data-processing/
+    fetch_url: https://m-path.io/LegalPage/dpa.html
+    type: vendor_legal
+    quote: the data controller is either the Practitioner or the Researcher (the “Controller”) and m-Path is the data
+      processor (the “Processor”)
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/terms-and-conditions/
+    fetch_url: https://m-path.io/LegalPage/terms.html
+    type: vendor_legal
+    quote: m-Path invokes Module 4 of the Standard Contractual Clauses (“SCCs”) for the transfer of Personal Data to
+      a data controller in a third country.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/data-processing/
+    fetch_url: https://m-path.io/LegalPage/dpa.html
+    type: vendor_legal
+    quote: will be invoiced to the Controller at an hourly rate of 125 EUR per staff member
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
 - field: hipaa_statement
-  status: unresearched
+  status: stated
+  value: The homepage, FAQ and research page claim GDPR and HIPAA compliance. No HIPAA policy, BAA or attestation is
+    published, and the legal documents do not mention HIPAA.
+  confidence: Corroborated
+  sources:
+  - url: https://m-path.io/
+    type: vendor_page
+    quote: Secure data processing and storage, compliant with GDPR and HIPAA.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/faq/
+    type: vendor_page
+    quote: Is m-Path GDPR and HIPAA compliant? Yes.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/landing/research/
+    type: vendor_page
+    quote: Our platform complies with GDPR and HIPAA regulations
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
 - field: gdpr_statement
-  status: unresearched
+  status: stated
+  value: Belgian company acting as GDPR processor under an Article 28 DPA; services provided only in the EU/EEA unless
+    the controller is in a third country; privacy statements set out data subject rights; participants can delete
+    their online data in the app.
+  confidence: Corroborated
+  sources:
+  - url: https://m-path.io/data-processing/
+    fetch_url: https://m-path.io/LegalPage/dpa.html
+    type: vendor_legal
+    quote: The Processor takes all measures required by virtue of the Article 32 GDPR
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/delete-online-data/
+    type: vendor_docs
+    quote: App users (participants) are at any time able to delete their online data. This is a GDPR requirement.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/faq/
+    type: vendor_page
+    quote: Is m-Path GDPR and HIPAA compliant? Yes.
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
 - field: iso27001
-  status: unresearched
+  status: not_public
+  value: No ISO 27001 certificate for m-Path itself. The storage page cites ISO 27001 and SOC 2 only for its hosting
+    provider, Microsoft Azure.
+  confidence: Corroborated
+  sources:
+  - url: https://m-path.io/manual/knowledge-base/storage/
+    type: vendor_docs
+    quote: Microsoft Azure maintains high security standards, complies with internationally recognized certifications
+      such as ISO 27001 and SOC 2
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/faq/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/about/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: Inherited from the sub-processor; not an m-Path certificate.
 - field: soc2
-  status: unresearched
+  status: not_public
+  value: No SOC 2 report for m-Path itself. SOC 2 is cited only for Microsoft Azure, the hosting provider.
+  confidence: Corroborated
+  sources:
+  - url: https://m-path.io/manual/knowledge-base/storage/
+    type: vendor_docs
+    quote: Microsoft Azure maintains high security standards, complies with internationally recognized certifications
+      such as ISO 27001 and SOC 2
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/faq/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
 - field: fda_clearances
-  status: unresearched
+  status: not_public
+  value: No FDA 510(k), PMA or establishment registration for m-Path or m-Path Software. The Terms say the services
+    are not a diagnostic tool.
+  confidence: Verified
+  sources:
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm
+    type: regulator_db
+    fetch_url: https://api.fda.gov/device/510k.json?search=applicant:%22m-Path%22
+    expect_absent: true
+    retrieved: '2026-10-11'
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm
+    type: regulator_db
+    fetch_url: https://api.fda.gov/device/510k.json?search=applicant:%22m-Path+Software%22
+    expect_absent: true
+    retrieved: '2026-10-11'
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm
+    type: regulator_db
+    fetch_url: https://api.fda.gov/device/pma.json?search=applicant:%22m-Path%22
+    expect_absent: true
+    retrieved: '2026-10-11'
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRL/rl.cfm
+    type: regulator_db
+    fetch_url: https://api.fda.gov/device/registrationlisting.json?search=registration.name:%22m-Path%22
+    expect_absent: true
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/terms-and-conditions/
+    fetch_url: https://m-path.io/LegalPage/terms.html
+    type: vendor_legal
+    quote: It is not a diagnostic tool for psychopathology or any other condition
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: A device_name:"m-Path" 510(k) search returns only K946356, an unrelated M-PATH guidewire from Microvena Corp.
 - field: data_residency
-  status: unresearched
+  status: conflict
+  value: EU, but m-Path's own documents disagree on the host. The manual's storage page (updated 2026-10-09), the FAQ
+    and the sub-processor list say survey data is on Microsoft Azure in Frankfurt; the privacy statement for app and
+    dashboard instead names KU Leuven as server host, and KU Leuven is absent from the sub-processor list. The DPA
+    keeps services in the EU/EEA unless the controller is outside it. Continuous sensing, Garmin-direct and media
+    data go straight to the researcher's pCloud, OneDrive or SFTP server, wherever that is. Thryve wearable data passes
+    through the manufacturer's servers and Thryve before reaching m-Path.
+  confidence: Unclear
+  sources:
+  - url: https://m-path.io/manual/knowledge-base/storage/
+    type: vendor_docs
+    quote: 'Questionnaire answers filled out by participants: Microsoft Azure servers in Germany'
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/faq/
+    type: vendor_page
+    quote: For regular app interactions, such as survey responses and logs, data are stored securely on Microsoft Azure
+      servers in Frankfurt, Germany .
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/subcontractors/
+    fetch_url: https://m-path.io/LegalPage/subcontractors.html
+    type: vendor_legal
+    quote: Microsoft Azure servers located in Germany (Frankfurt). This is our most important sub-processor as this is
+      where we store our data.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/privacy-policy/
+    fetch_url: https://m-path.io/LegalPage/privacy.html
+    type: vendor_legal
+    quote: The KU Leuven, as our server host, will only have access to any information on the App in an encrypted at
+      rest manner.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/data-processing/
+    fetch_url: https://m-path.io/LegalPage/dpa.html
+    type: vendor_legal
+    quote: Unless the Controller is established in a third country, the m-Path Services shall be provided exclusively
+      in the EU or EEA.
+    retrieved: '2026-10-11'
+  - url: https://m-path.io/manual/knowledge-base/adding-a-cloud-storage-location-for-client-file-uploads/
+    type: vendor_docs
+    quote: 'It is possible to connect two cloud storage providers: pCloud and OneDrive.'
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: Likely a migration from KU Leuven servers to Azure that the privacy statement has not caught up with (the gap
+    hunter saw a 2023 storage-page snippet naming KU Leuven servers, not probed). Researcher B recorded only Azure;
+    the privacy statement was read and the conflict stands. Ask m-Path to confirm the host and update the privacy
+    statement.
