@@ -4584,7 +4584,7 @@
   "value": "The released Fitbit connector (RADAR-REST-Connector, latest release v0.7.5, 2026-03-25) pulls from the legacy Fitbit Web API, which Google turns off on 2026-10-30. Migration to the Google Health API is under way: authorization is released (RADAR-Rest-Source-Auth v4.4.16, 2026-07-03) and schemas are merged and released (RADAR-Schemas, push/googlehealth), but the data-ingest code is not. RADAR-PushEndpoint PR #92 \"Add Google Health API push integration\" is open (last updated 2026-06-05; newest release v0.4.0, 2025-06-19), and the REST-Connector Google Health converter PRs are open. As of 2026-10-10 no released RADAR-base component ingests Google Health API data.",
   "confidence": "Verified",
   "recheck_by": "2026-10-31",
-  "note": "What this means for studies (inference from the repository state): a study collecting Fitbit data through a released RADAR-base install will stop receiving new Fitbit data on 2026-10-30 unless a Google Health ingest release lands first or it deploys unreleased branch code. Participants must also re-consent through Google OAuth, since Google Health authorization is a new grant. Data already in the deployment is unaffected. The Google Health API is closed to new projects (facts/fitbit-google.yaml), so a self-hosting team without its own Google Health project may have no route at all; the radar-base.org Google User Data Privacy Policy suggests KCL holds one for its own deployment. The Hyve's managed service still advertises Fitbit training. GitHub API checked 2026-10-10: PushEndpoint #92 open, unmerged; REST-Connector PRs #199, #201, #202, #215 open; RADAR-Schemas PR #424 merged 2026-06-25. Re-check before 2026-10-30.",
+  "note": "What this means for studies (inference from the repository state): a study collecting Fitbit data through a released RADAR-base install will stop receiving new Fitbit data on 2026-10-30 unless a Google Health ingest release lands first or it deploys unreleased branch code. Participants must also re-consent through Google OAuth, since Google Health authorization is a new grant. Data already in the deployment is unaffected. The Google Health API is closed to new projects (facts/fitbit-google.yaml), so a self-hosting team without its own Google Health project may have no route at all; the radar-base.org Google User Data Privacy Policy suggests KCL holds one for its own deployment. The Hyve's managed service still advertises Fitbit training. GitHub API checked 2026-10-10: PushEndpoint #92 open, unmerged; REST-Connector PRs #199, #201, #202, #215 open; RADAR-Schemas PR #424 merged 2026-06-25. Re-check before 2026-10-30. The RADAR-base issue quotes Google's earlier September 2026 date; Google later set the turn-off for 2026-10-30 (Google source added 2026-10-10).",
   "sources": [
    {
     "url": "https://github.com/RADAR-base/RADAR-PushEndpoint/issues/91",
@@ -4621,6 +4621,12 @@
     "type": "vendor_docs",
     "retrieved": "2026-10-10",
     "quote": "On October 30, 2026, the Fitbit Web API will be turned off and will no longer function or sync data to or from Fitbit users."
+   },
+   {
+    "url": "https://developers.google.com/health",
+    "type": "vendor_docs",
+    "quote": "On October 30, 2026 , the Fitbit Web API will be turned off and will no longer function or sync data to or from Fitbit users.",
+    "retrieved": "2026-10-10"
    }
   ]
  },
