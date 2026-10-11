@@ -204,6 +204,62 @@ These are logged as Q125 in `shared/unresolved-questions.md`.
 ## Vendor Fact Record
 
 <!-- facts:begin -->
+*Generated from the fact record by `tools/facts/generate.py`. Edit the record, not this block.*
+
+**Research access**
+
+| Fact | Value |
+|---|---|
+| Formal research or academic program (name, what it offers) | **Sponsors:** No academic or self-serve research program and no data API. Evidation sells sponsor services built on its US member community: data offerings (licensed real-world datasets, patient insights, prospective studies) and activation offerings (recruitment, activation), as one-time engagements or ongoing subscriptions, plus a licensable Research & Engagement Platform that Evidation runs for the sponsor. [V, 2026-10-11]<br>**Outside researchers seeking existing Evidation data:** No open-access route to existing Evidation data. Three published routes each stop short of one: (1) the Evidation Everyone Research Registry codes member data before sharing it with "research partners", with no criteria or terms for who counts as a partner; (2) the WAVE study (NCT06207929, sponsor Evidation Health, collaborator BARDA, 18,157 enrolled, 2024-01-21 to 2024-08-07) plans to share coded data with approved external research partners, but its individual-data sharing is marked undecided and the process not finalized; (3) a July 2026 release offers data, on-demand analyses and population-level insights from a GLP-1 cohort of more than 165,000 people through partner@evidation.com, which is a commercial route. [V, 2026-10-11] |
+| Who can join the research program | **Sponsors:** Sponsors are organisations (biopharma, consumer health, technology, non-profit, government). No eligibility criteria for sponsors are published. [V, 2026-10-11]<br>**Members (Evidation app):** Members must be US residents aged 18 or over; each study sets its own criteria through a screener. [V, 2026-10-11] |
+| How to apply, and any approval or review step | **Sponsors:** Sponsors start through the "working with us" contact route or partner@evidation.com. No application form, review step or timeline is published. Evidation prepares recruitment content to fit the sponsor's IRB submission. [V, 2026-10-11]<br>**Members (Evidation app):** Members see study invitations in the app or by email, complete a screener and are told whether they qualify; each study is opt-in. [V, 2026-10-11] |
+| Whether the program is active, paused, renamed or closed | Sponsor services active. An autoimmune temporal proteomics cohort launched in January 2026 and a GLP-1 insights release followed in July 2026; the member app's new Research tab gathers programs and research opportunities. On the public join-research page the three listed studies (heart health, migraines, diabetes) all show enrollment closed. [V, 2026-10-11] |
+| Whether the general developer or API program is open to new applicants | Not public [2026-10-11] |
+| Participant or user limits before approval or by tier | Not public [2026-10-11] |
+| How academic access differs from commercial or consumer access | No separate academic tier, terms or price. Academic institutions are grouped with non-profit customers and offered the same solutions (recruitment, patient insights, real-world studies, licensing the Research & Engagement Platform, or having Evidation run the study). Members get the app free and are paid in points; they are participants, not data customers. [C, 2026-10-11] |
+
+**Pricing**
+
+| Fact | Value |
+|---|---|
+| Device or hardware list price | n/a |
+| Consumer subscription or membership price | **Members (Evidation app):** The Evidation member app is free; members are paid in points, with a $10 reward at 10,000 points. [V, 2026-10-11] |
+| Research or academic pricing or discount | Not public [2026-10-11] |
+| Fees for API, SDK, platform or data access | Not public [2026-10-11] |
+| Minimum order, term or commitment | Not public [2026-10-11] |
+| Whether pricing requires contacting sales | **Sponsors:** Yes in practice. No price is published for any sponsor offering, and the only published routes to buy are the contact form and partner@evidation.com. [C, 2026-10-11] |
+| Price of managed hosting | **Licensed Research & Engagement Platform:** Not public [2026-10-11]<br>**Data licensing, insights and recruitment engagements:** n/a |
+
+**Data access and terms**
+
+| Fact | Value |
+|---|---|
+| Raw signals available to researchers, and by which route | Device data reaches Evidation only through members' connected third-party apps (Apple Health, Dexcom, Fitbit, Garmin, Google Fit, MyFitnessPal, Oura, Qardio, RunKeeper, Samsung Health, Strava, Withings), not from the wearables directly, plus surveys and EHR records linked through 1upHealth's Patient Connect. Sponsors receive it in licensed de-identified individual-level datasets (PROs and surveys, behavioural and functional measures, connected device and wearable data, clinical data, molecular data where available). Whether wearable data is delivered at raw, intraday or daily-summary level is not documented. [V, 2026-10-11] |
+| Derived or processed metrics available to researchers | Vendor-processed measures from connected apps (activity, steps, sleep, heart rate, HRV), digital measures from wearables, program-level analytics, executive-ready reports and member characterization. No metric list or definitions are published. [C, 2026-10-11] |
+| Documented sampling rates or temporal resolution | Not public [2026-10-11] |
+| How far back data can be retrieved | **Connected third-party apps:** On connection, Evidation may pull data the third-party app recorded up to 30 days before the member connected it; after that, data accrues for as long as the member stays connected. [V, 2026-10-11]<br>**Member self-export:** A member's detailed data export covers only the last year. [V, 2026-10-11]<br>**Sponsor datasets:** Not public [2026-10-11] |
+| Export, API, SDK or file routes | Sponsors: licensed de-identified individual-level datasets (one-time extract or subscription), structured analysis-ready study datasets, reports, and on-demand analyses of existing cohorts. No public API or SDK. Members: a .json export of their own Evidation data by email from account settings; data from a sponsored program is requested through support and routed to the study team or sponsor. [V, 2026-10-11] |
+| API rate limits | n/a |
+| Terms on retaining, storing or deleting data | **Member and research-participant data:** Member data is kept as long as reasonably necessary for the service, legal obligations and other legitimate business purposes. Retention for research-program data is set by each program's informed consent, and study data already archived into a study dataset is not deleted on request. Account deletion is irreversible. Retention terms binding sponsors that receive data are not published. [V, 2026-10-11] |
+| Terms on using data to train AI or ML models | The Member Privacy Notice (last updated 2026-07-13) lets Evidation use member personal information in machine learning and other AI methods for certain services, and Evidation analyses cohort data with its own AI foundation models. Members themselves are barred from using the services or related data for AI purposes. No terms on sponsors training models on licensed data are published. [V, 2026-10-11] |
+| Announced shutdowns, deprecations or migrations, with dates | Google Fit connections were withdrawn on iOS and the Evidation website after a Google change (help article updated 2026-04-07; no withdrawal date given). Members are told to switch to Apple Health or another source. [V, 2026-10-11] |
+| Software licence of the platform's components | **Licensed Research & Engagement Platform:** Proprietary. The participant platform is licensed commercially and run by Evidation (Our Future Health in the UK chose it in November 2023). No open-source components; the evidation-health GitHub organisation has no public repositories. [V, 2026-10-11]<br>**Data licensing, insights and recruitment engagements:** n/a |
+| Self-hosting and managed-hosting options | **Licensed Research & Engagement Platform:** Evidation-managed only. Sponsors either license the Research & Engagement Platform, which Evidation runs (including the participant-facing app and infrastructure, as for Our Future Health), or have Evidation manage the study end to end. No self-hosting or on-premises option is documented. [C, 2026-10-11]<br>**Data licensing, insights and recruitment engagements:** n/a |
+| App store availability on iOS and Android | **Evidation member app:** Evidation member app on the App Store (iPhone only, iOS 16.4 or later) and on Google Play (1M+ downloads), published by Evidation Health, Inc. (iOS id 793039965, Android package com.achievemint.android). This is the app participants use in data, recruitment and Evidation-run engagements. [V, 2026-10-11]<br>**Sponsor-branded apps on the licensed platform:** Licensed-platform customers get their own branded apps, which Evidation builds and runs (for example the Our Future Health participant app, accessible by app or browser). These are listed under the customer's name, not Evidation's. [C, 2026-10-11] |
+
+**Compliance and regulatory**
+
+| Fact | Value |
+|---|---|
+| Whether a HIPAA Business Associate Agreement is offered | Not public [2026-10-11] |
+| Whether a data processing agreement is offered | Not public [2026-10-11] |
+| Published HIPAA statement | Unclear |
+| Published GDPR statement | Unclear |
+| ISO/IEC 27001 status and evidence | Not public [2026-10-11] |
+| SOC 2 status and evidence | Not public [2026-10-11] |
+| FDA clearances, from the FDA database | Not public [2026-10-11] |
+| Where data is stored, and residency options | Member data is stored primarily in US data centres. No residency options are published for sponsors or for licensed deployments outside the US. [C, 2026-10-11] |
+
 <!-- facts:end -->
 
 ## Key Links

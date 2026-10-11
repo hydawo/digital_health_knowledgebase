@@ -295,6 +295,62 @@
 ## Vendor Fact Record
 
 <!-- facts:begin -->
+*Generated from the fact record by `tools/facts/generate.py`. Edit the record, not this block.*
+
+**Research access**
+
+| Fact | Value |
+|---|---|
+| Formal research or academic program (name, what it offers) | No separate research or academic program. LifeData is itself a paid research platform (EMA, experience sampling, eDiary, eCOA, ePRO) sold as Individual, Team, Enterprise, Clinical and Monitoring subscriptions, with optional paid services such as protocol building, user acceptance testing, audit trails and data analysis consultation. [V, 2026-10-11] |
+| Who can join the research program | No program as such. Sold to academic and commercial customers; Team covers teams and labs of up to 9 users, Enterprise 10+ users. A discount is offered to "qualifying graduate students"; the qualifying criteria are not published. [V, 2026-10-11] |
+| How to apply, and any approval or review step | No application or review step is published. Every plan is sold through a scheduled consultation with a LifeData representative; subscriptions are then billed per cycle and auto-renew under the Terms of Use. [V, 2026-10-11] |
+| Whether the program is active, paused, renamed or closed | Active. Two platform generations run side by side, "LifeData Original" (researcher console server.lifedatacorp.com, participant app RealLife Exp) and the rebuilt LifeData+ (console app.lifedatacorp.com, participant app "LifeData"), each with its own login. [V, 2026-10-11] |
+| Whether the general developer or API program is open to new applicants | Not public [2026-10-11] |
+| Participant or user limits before approval or by tier | Caps are by researcher seats, not by approval: Team covers teams and labs of up to 9 users; Enterprise is 10+ users with institutional master subscriptions and department sub-accounts. Participant numbers over the subscription are a pricing input; no participant ceiling per tier is published. [V, 2026-10-11] |
+| How academic access differs from commercial or consumer access | Separate academic and commercial pricing (stated on the Individual plan), with all features included either way, plus a graduate-student discount. The size of the difference is not published. The Clinical and Monitoring plans add eCOA, multi-site support, clinician dashboards and site training. [V, 2026-10-11] |
+
+**Pricing**
+
+| Fact | Value |
+|---|---|
+| Device or hardware list price | n/a |
+| Consumer subscription or membership price | Not public [2026-10-11]<br>**VA San Diego Healthcare System contracts (USAspending), 2023 to 2029:** Three firm-fixed-price U.S. Department of Veterans Affairs awards to LIFEDATA LLC for VA San Diego, through Network Contract Office 22, are on USAspending - a "LIFEDATA SURVEY SUBSCRIPTION" contract, an "ACADEMIC RESEARCH SERVICES" contract and a "LIFE DATA RESEARCH" purchase order. Dollar amounts are in the note (Reported). [R, 2026-10-11] |
+| Research or academic pricing or discount | Academic pricing exists (amount not published) and qualifying graduate students get a discount (size not published). [V, 2026-10-11] |
+| Fees for API, SDK, platform or data access | Platform access is the subscription itself, which includes all study-builder features, the native apps, support, "easy and unlimited data access" and dashboards, with multiple projects at no extra cost. Add-on services (protocol building, user acceptance testing, dashboard development, audit trails, data analysis consultation) are paid extras with unpublished prices. [V, 2026-10-11] |
+| Minimum order, term or commitment | Subscriptions are sold in half-year and annual terms, billed per cycle and auto-renewing; fees are non-refundable except as the terms or law provide. No shorter term is advertised. [C, 2026-10-11] |
+| Whether pricing requires contacting sales | Yes. No prices are published; every plan routes to a consultation with a LifeData representative. [V, 2026-10-11] |
+| Price of managed hosting | Not public [2026-10-11] |
+
+**Data access and terms**
+
+| Fact | Value |
+|---|---|
+| Raw signals available to researchers, and by which route | Active data only: timestamped EMA, ESM and eDiary responses across 13 question types (including media uploads), with GPS coordinates captured once per response when the participant allows location. No passive smartphone sensing and no wearable, HealthKit or Health Connect integration is documented. Route: the web study builder and data download. [C, 2026-10-11] |
+| Derived or processed metrics available to researchers | Study-defined scores computed from responses (usable in display logic), response-rate and engagement monitoring, session metadata in the export, and real-time dashboards for individuals and groups. No sensor-derived or behavioural features. [V, 2026-10-11] |
+| Documented sampling rates or temporal resolution | Event-based, not continuous. Prompts follow fixed, random, triggered or event-based schedules set by the researcher; GPS is captured once per response, not at a fixed rate; notification delivery and response timestamps are recorded to the millisecond. [V, 2026-10-11] |
+| How far back data can be retrieved | All study data stays downloadable for the life of the subscription. After cancellation or lapse it can be retrieved on request for 180 days, then it is permanently deleted. Accounts inactive for over 12 months may be terminated and their content deleted. [V, 2026-10-11] |
+| Export, API, SDK or file routes | File download from the web app as .csv in multiple layouts (including layouts for multilevel modelling, ready for R, Stata, SPSS and Python), plus media files; real-time dashboards. No API, SDK, webhook or streaming route is documented. [V, 2026-10-11] |
+| API rate limits | Not public [2026-10-11] |
+| Terms on retaining, storing or deleting data | Data is permanently deleted 180 days after account cancellation or subscription end. Studies or participant data deleted by the researcher in the web app are kept for no more than 30 days. Accounts with no activity for over 12 months may be terminated and their content deleted. A participant deleting a study on the phone does not delete server data. Storage is on US servers. [V, 2026-10-11] |
+| Terms on using data to train AI or ML models | No term names AI, machine learning or model training. The general use clause excludes non-public study content (prompts and responses) from internal analysis to improve the services, while public study data and anonymized study metadata may be used to create new services, features or content. Whether this governs model training is not stated. [C, 2026-10-11] |
+| Announced shutdowns, deprecations or migrations, with dates | A rebuilt platform, LifeData+, with its own participant app ("LifeData"), runs alongside "LifeData Original" and its RealLife Exp app. The website says LifeData+ was released in 2026; both store listings for the new app say 2025, and the App Store gives a first release of 2025-05-28. No shutdown or end-of-support date for the Original platform or RealLife Exp is announced. (conflict) [U, 2026-10-11] |
+| Software licence of the platform's components | Proprietary, closed-source SaaS. The terms grant no ownership of the services and bar reverse engineering; no source repository or open licence exists. [C, 2026-10-11] |
+| Self-hosting and managed-hosting options | Vendor-hosted SaaS only, on servers in the United States; no self-hosting or on-premises option is published. The privacy policy names Microsoft Azure as an example of its data hosting company. [C, 2026-10-11] |
+| App store availability on iOS and Android | **LifeData Original (RealLife Exp):** RealLife Exp, free, on iOS (App Store id939951918, first released 2015-01-03, v2.8.14 of 2026-04-06, iOS 13.0 or later) and Android (com.lifedata.reallife_exp, 10K+ downloads). Seller LIFEDATA LLC. Studies in this generation are called LifePaks. [V, 2026-10-11]<br>**LifeData+ (LifeData app):** LifeData, free, on iOS (App Store id6443996884, first released 2025-05-28, v1.0.17 of 2026-10-10, iOS 18.0 or later) and Android (com.lifedata.lifedata, 100+ downloads, updated Oct 8, 2026). Seller LIFEDATA LLC. [V, 2026-10-11] |
+
+**Compliance and regulatory**
+
+| Fact | Value |
+|---|---|
+| Whether a HIPAA Business Associate Agreement is offered | Not public [2026-10-11] |
+| Whether a data processing agreement is offered | No separate data processing agreement is published. The Terms of Use say they themselves serve as the contract between LifeData as GDPR processor and the study creators as controllers. [C, 2026-10-11] |
+| Published HIPAA statement | Marketing pages call the platform HIPAA compliant; the features page now says it supports "HIPAA- and GDPR- compliant research workflows" through configurable privacy and consent options. The privacy policy and terms of use never mention HIPAA, and no BAA, audit or attestation is cited anywhere. [C, 2026-10-11] |
+| Published GDPR statement | LifeData says it acts as a GDPR data processor on the instructions of study creators (controllers) and complies with GDPR. Its privacy policy (updated December 12, 2024) says it complies with the EU-U.S. Data Privacy Framework, the UK Extension and the Swiss-U.S. DPF; the Terms of Use (effective December 12, 2014) still say it participates in the invalidated Privacy Shield. [C, 2026-10-11]<br>**Data Privacy Framework certification:** LifeData (Marion, IN) is listed on the Commerce Department's Data Privacy Framework registry as "Active - Re-certification under Review" under the EU-U.S. DPF, the Swiss-U.S. DPF and the UK Extension, covering HR and non-HR data. EU-U.S. and Swiss-U.S. first certified 2018-05-31, UK Extension 2023-10-31, next certification due 2027-04-28. Verification method: self-assessment. One recorded lapse, 2019-06-30 to 2019-07-08. [V, 2026-10-11] |
+| ISO/IEC 27001 status and evidence | Not public [2026-10-11] |
+| SOC 2 status and evidence | Not public [2026-10-11] |
+| FDA clearances, from the FDA database | Not public [2026-10-11] |
+| Where data is stored, and residency options | Data is stored on servers in the United States, with Microsoft Azure named as an example hosting company. No other region or residency option is offered; EU, UK and Swiss transfers rely on the Data Privacy Framework. [V, 2026-10-11] |
+
 <!-- facts:end -->
 
 ## Key Links
