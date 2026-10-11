@@ -869,9 +869,15 @@ facts:
     type: vendor_page
     quote: Complies with stringent data protection laws like GDPR and processes PHI in accordance with HIPAA
     retrieved: '2026-10-10'
+  - url: https://www.dataprivacyframework.gov/list
+    type: certificate
+    retrieved: '2026-10-10'
+    note: 'Registry read in a browser on 2026-10-10: "Oura, San Francisco, CA" is Active under the EU-U.S. DPF, the
+      Swiss-U.S. DPF and the UK Extension, covering HR and non-HR data. The list is built by JavaScript, so no quote
+      is checkable by script.'
   recheck_by: '2027-01-08'
-  note: DPF participation could be confirmed on dataprivacyframework.gov (JavaScript list, not checked); that would
-    allow a higher confidence for the DPF part.
+  note: The DPF part is confirmed on the Commerce Department's registry. GDPR adherence itself is Oura's own claim,
+    so the fact stays Corroborated.
 - field: iso27001
   status: not_public
   confidence: Corroborated
