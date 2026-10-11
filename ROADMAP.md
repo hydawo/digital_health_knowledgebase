@@ -22,7 +22,7 @@ every quote. See `facts/README.md` and `shared/agents.md`.
 
 | Batch | Companies | Status |
 |---|---|---|
-| 1 | Oura, WHOOP, Apple, Fitbit / Google, Garmin, Samsung, Empatica, Withings, Beiwe, RADAR-base | Started 2026-10-10 |
+| 1 | Oura, WHOOP, Apple, Fitbit / Google, Garmin, Samsung, Empatica, Withings, Beiwe, RADAR-base | Done 2026-10-10: 436 facts, 275 Verified. Profile and matrix corrections listed in each `judgement.md`, not yet applied |
 | 2 | Polar, Ametris, Axivity, Activinsights, Movesense, mindLAMP, AWARE, Avicenna, MetricWire, m-Path, CARP, LifeData, Evidation | Next |
 | 3 | Fitabase, Labfront, Fitrockr, Terra, Thryve, Ultrahuman, Sensor Bio, RingConn, Circular, Zepp, Verily, Purple Robot | After batch 2 |
 

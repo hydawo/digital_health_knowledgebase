@@ -3,94 +3,895 @@ name: Samsung (Galaxy Watch, Health Sensor SDK, Research Stack)
 kind: wearable
 profile: module-01-wearables/profiles/samsung.md
 watch:
-- url: https://developer.samsung.com/health
-  role: developer_program
 - url: https://developer.samsung.com/health/sensor/overview.html
-  role: developer_program
-- url: https://developer.samsung.com/health/sensor/faq.html
-  role: developer_program
+  role: docs
 - url: https://developer.samsung.com/health/sensor/guide/data-specifications.html
-  role: developer_program
+  role: docs
 - url: https://developer.samsung.com/health/sensor/process.html
   role: developer_program
-- url: https://developer.samsung.com/health/sensor/api-reference/overview-summary.html
-  role: developer_program
-- url: https://developer.samsung.com/health/s-healthstack
-  role: developer_program
-- url: https://github.com/S-HealthStack
-  role: repository
-- url: https://github.com/S-HealthStack/backend-system
-  role: repository
-- url: https://developer.samsung.com/health/research/release-notes/v11.html
-  role: research_program
-- url: https://news.samsung.com/global/samsungs-new-health-software-development-kit-suite-powers-advancements-in-healthcare-innovation
+- url: https://developer.samsung.com/health/sensor/release-note.html
   role: changelog
-- url: https://developer.samsung.com/health/privileged/faq.html
-  role: developer_program
-- url: https://news.samsung.com/global/samsung-electronics-unveils-samsung-health-research-stack
-  role: research_program
-- url: https://developer.samsung.com/health/research/overview.html
-  role: research_program
 - url: https://developer.samsung.com/health/sensor/sdk-license-partner-service-agreement.html
   role: terms
+- url: https://developer.samsung.com/health/data/overview.html
+  role: docs
+- url: https://developer.samsung.com/health/data/process.html
+  role: developer_program
+- url: https://developer.samsung.com/health/data/migration-guide/overview.html
+  role: changelog
+- url: https://developer.samsung.com/health/research/overview.html
+  role: research_program
+- url: https://developer.samsung.com/health/partnerships
+  role: research_program
+- url: https://github.com/S-HealthStack
+  role: repository
+- url: https://samsunghealth.com/privacy
+  role: terms
+  fetch_url: https://content.samsungknowledge.com/agreement/terms/samsunghealth.oobe.pp_us/18.0.1/en-US.html
+- url: https://samsunghealth.com/shd/gen-ai
+  role: terms
+  fetch_url: https://content.samsungknowledge.com/agreement/terms/samsunghealth.oobe.shd_gen_ai_us/1.0.0/en-US.html
+- url: https://www.samsung.com/us/watches/galaxy-watch9/
+  role: pricing
+- url: https://api.fda.gov/device/510k.json?search=applicant:%22samsung+electronics%22&sort=decision_date:desc&limit=20
+  role: regulatory
 facts:
+# ---------------- Research access ----------------
 - field: research_program
-  status: unresearched
+  status: stated
+  scope: Samsung Health Research Stack
+  value: 'Samsung Health Research Stack: an open-source toolset (App SDK, Web Portal, backend services) that a study
+    team installs and runs itself to collect and analyse wearable data on Android and Wear OS. It is software, not a
+    data-access or academic program; production use of the Sensor or Data SDK inside it still needs partner approval.'
+  confidence: Verified
+  sources:
+  - url: https://developer.samsung.com/health/research/overview.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: Samsung Health Research Stack is an open-source technology stack offering end-to-end solutions for collecting
+      and analyzing data from wearable devices in Android and Wear OS environments.
+  - url: https://developer.samsung.com/health/research
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: It includes the App SDK, Web Portal, and a System to support backend services through API endpoints.
+  - url: https://developer.samsung.com/health
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Samsung Health Research Stack is backed by open-source tools, applications, and services for running, managing,
+      and analyzing medical research studies and clinician services on Android and Wear OS devices.
+  recheck_by: '2026-11-09'
+- field: research_program
+  status: stated
+  scope: Institutional collaborations and the Samsung research platform (via Alcedis)
+  value: 'Samsung also runs direct research collaborations with chosen institutions, with no published application
+    route: the Open Innovation Initiative (announced October 2023 at SDC23) and named studies with Stanford (sleep
+    apnoea), Tulane and Huma (HEARTBEAT), UCSF Neuroscape (cognition, announced July 2026) and MGH (GLP-1 and body
+    composition, May 2026). In June 2026 Samsung announced a partnership with Alcedis, a CRO owned by Huma, offering
+    "Samsung''s research platform" (study setup, biosensor control, participant- and device-level biosensor data)
+    with Alcedis running study execution. No sign-up, eligibility or pricing for it is published.'
+  confidence: Corroborated
+  sources:
+  - url: https://developer.samsung.com/health/partnerships
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: From academic and research institutions to industry-leading digital health innovators, we work with a wide
+      range of partners to fuel groundbreaking studies
+  - url: https://developer.samsung.com/health/partnerships
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Samsung announces the Open Innovation Initiative, building a digital health ecosystem with universities and
+      hospitals.
+  - url: https://samsungmobilepress.com/articles/samsung-announces-open-innovation-initiative-with-leading-universities-and-academic-hospitals-to-build-digital-health-ecosystem
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Samsung Electronics Co., Ltd. today announced a new Open Innovation Initiative at the Samsung Developer Conference
+      2023 (SDC23) in San Francisco.
+  - url: https://samsungmobilepress.com/articles/neuroscape-samsung-cognitive-study-partnership
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: The study advances Samsung’s Open Innovation Initiative
+  - url: https://news.samsung.com/global/samsung-partners-with-alcedis-to-advance-clinical-research-using-wearable-based-endpoints
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Samsung’s research platform allows for faster study setup with fine-grained control of biosensors and access
+      to participant- and device-level insights and biosensor data with respect to the study and established protocols
+  - url: https://news.samsung.com/global/samsung-partners-with-alcedis-to-advance-clinical-research-using-wearable-based-endpoints
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Alcedis will lead study execution and participant engagement, while Samsung will provide its advanced wearable
+      technology and research infrastructure to support evidence generation.
+  - url: https://www.techrepublic.com/article/news-samsung-alcedis-galaxy-watch-clinical-trials/
+    type: secondary
+    retrieved: '2026-10-10'
+    quote: The company is part of Huma, a global healthcare AI firm.
+  - url: https://www.engadget.com/2182683/samsung-study-galaxy-watch-8-glp1-ozempic/
+    type: secondary
+    retrieved: '2026-10-10'
+    quote: will divide 100 adults just starting GLP-1 treatment into two groups
+  - url: https://www.sammobile.com/news/samsung-partners-stanford-university-medicine-improve-sleep-apnea-detection-galaxy-watches/
+    type: secondary
+    retrieved: '2026-10-10'
+    quote: The study will be led by professor Robson Capasso as principal investigator and professor Clete Kushida as
+      co-principal investigator.
+  recheck_by: '2026-11-09'
+  note: Corroborated rather than Verified because several of the named studies rest on press coverage, and no
+    program terms are published. The Alcedis release is cited from Samsung's newsroom (read in a browser and by the
+    fetcher on 2026-10-10; it had timed out for the fetcher earlier the same day). The UCSF study targets 200 adults per decade
+    aged 40 to 89 over one year. Whether the Alcedis platform is Research Stack, the Sensor SDK or something new is
+    not stated. Treat this as an invitation or sponsor route, not an open program.
 - field: program_eligibility
-  status: unresearched
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://developer.samsung.com/health/sensor/process.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+  - url: https://developer.samsung.com/health/data/process.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+  - url: https://developer.samsung.com/health/partnerships
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://developer.samsung.com/health/sensor/sdk-license-partner-service-agreement.html
+    type: vendor_legal
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+  note: No eligibility criteria are published for the Sensor SDK or Data SDK partner request, for the institutional
+    collaborations, or for the Alcedis research platform. The partner request form sits behind a Samsung account
+    sign-in and was not opened. Research Stack itself needs no approval (app-sdk and backend-system are Apache-2.0;
+    web-portal has no licence GitHub detects). The partner agreement's licence is worldwide except sanctioned or
+    embargoed countries.
 - field: program_application
-  status: unresearched
+  status: stated
+  value: Submit a partner request on Samsung Developer (signed-in form) before distributing an app; after approval the
+    app's package name and SHA-256 signature are registered. Until then the Sensor SDK and Data SDK work only in
+    developer mode, which is for testing only. Writing to Samsung Health also needs an access code issued after
+    approval. Approvals under the deprecated Samsung Health SDK for Android do not carry over to the Data SDK.
+  confidence: Verified
+  sources:
+  - url: https://developer.samsung.com/health/sensor/process.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: Please submit partner request before your app distribution. Your app's information including the app package
+      name and signature (SHA-256) can be registered in the Samsung Health's system after an approval. Otherwise, the
+      app using the Samsung Health Sensor SDK works only with the developer mode turned on.
+  - url: https://developer.samsung.com/health/sensor/process.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: The developer mode is intended only for testing or debugging your app. It is not intended for app users.
+  - url: https://developer.samsung.com/health/data/process.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: Please submit partner request before your app distribution. Your app's information including the app package
+      name and signature (SHA-256) will be registered in the Samsung Health's system after an approval. Otherwise, the
+      app using the Samsung Health Data SDK works only with the developer mode turned on.
+  - url: https://developer.samsung.com/health/data/process.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: To write health data to Samsung Health from an app, the access code is required. You can request partnership
+      and receive the access code after an approval.
+  - url: https://docs.thryve.health/thryve-data-sources/samsung-health
+    type: secondary
+    retrieved: '2026-10-10'
+    quote: Approvals granted for the legacy SDK do not transfer to the Data SDK.
+  recheck_by: '2026-11-09'
+  note: Review criteria and turnaround are not published. Junction (an integrator) adds that the signing key must be
+    allowlisted before the permission flow works in production. Developer-forum threads from 2022 and 2023 reporting
+    refused or paused intake returned 404 to the fetcher and are not relied on.
 - field: program_status
-  status: unresearched
+  status: unclear
+  scope: Samsung Health Research Stack
+  confidence: Unclear
+  sources:
+  - url: https://developer.samsung.com/health/research/overview.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+  - url: https://developer.samsung.com/health/research/release-notes/v20.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+  - url: https://github.com/S-HealthStack
+    type: repository
+    retrieved: '2026-10-10'
+  - url: https://www.samsungmobilepress.com/articles/samsungs-new-health-software-development-kit-suite-powers-advancements-in-healthcare-innovation
+    type: vendor_page
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+  note: 'Judged unmaintained, not mature, but left unclear because Samsung states neither. Evidence: the docs are live
+    and still promoted on the developer hub; the latest release is "v 2.0 Beta" (release notes; last backend commit
+    "Release v2.0-beta", 2024-10-10); the September 2024 SDK Suite release called a "forthcoming 2.0 version" that
+    would integrate the Sensor and Data SDKs, and only that beta has appeared, with no non-beta 2.0. GitHub API on
+    2026-10-10: backend-system, app-sdk and web-portal last pushed 2024-10-24, starter-app 2024-08-20, none archived,
+    no published releases. Nearly two years without a commit on a beta that depends on Android, Wear OS and Firebase
+    APIs is not a finished product. No retirement has been announced. The SDK partner program itself is active (see
+    developer_program_status).'
+- field: program_status
+  status: stated
+  scope: Samsung research platform (via Alcedis)
+  value: Announced 24 June 2026 as a new partnership; no later status found.
+  confidence: Verified
+  sources:
+  - url: https://news.samsung.com/global/samsung-partners-with-alcedis-to-advance-clinical-research-using-wearable-based-endpoints
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Alcedis will lead study execution and participant engagement, while Samsung will provide its advanced wearable
+      technology and research infrastructure to support evidence generation.
+  recheck_by: '2026-11-09'
+  note: Date and wording from Samsung's newsroom release of 24 June 2026.
 - field: developer_program_status
-  status: unresearched
+  status: stated
+  value: 'Open. Sensor SDK v1.4.1 (20 August 2025) and Data SDK v1.1.0 are public downloads usable in developer mode;
+    public distribution needs partner approval. Data SDK read-only development no longer needs a partner request. No
+    Sensor SDK release since August 2025.'
+  confidence: Verified
+  sources:
+  - url: https://developer.samsung.com/health/sensor/faq.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: You can download the Samsung Health Sensor SDK on the Samsung developer portal and develop your app with enabling
+      the developer mode of Health Sensor Service.
+  - url: https://developer.samsung.com/health/sensor/release-note.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: 1.4.1 - August 20, 2025 This patch version improves operational stability.
+  - url: https://developer.samsung.com/health/data/overview.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: Samsung Health Data SDK v1.1.0 (1.78 MB)
+  - url: https://developer.samsung.com/health/data/migration-guide/overview.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: Now, with Samsung Health Data SDK, you can download and use the SDK in developer mode without submitting a partner
+      request.
+  recheck_by: '2026-11-09'
+  note: Whether partner requests are being approved, and how fast, is not published.
 - field: user_cap
-  status: unresearched
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://developer.samsung.com/health/sensor/process.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+  - url: https://developer.samsung.com/health/data/process.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+  - url: https://developer.samsung.com/health/sensor/faq.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+  - url: https://developer.samsung.com/health/sensor/sdk-license-partner-service-agreement.html
+    type: vendor_legal
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+  note: No numeric cap is published. Before approval the practical cap is developer mode, which Samsung says is for
+    testing only and not for app users; the licence allows development installs on a "limited number of devices"
+    the licensee owns or controls, with no number.
 - field: academic_vs_commercial
-  status: unresearched
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://developer.samsung.com/health/sensor/sdk-license-partner-service-agreement.html
+    type: vendor_legal
+    retrieved: '2026-10-10'
+  - url: https://developer.samsung.com/health/partnerships
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://developer.samsung.com/health/sensor/process.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+  - url: https://developer.samsung.com/health/data/process.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+  note: One partner request and one agreement for every applicant; the agreement names research among the licensed
+    purposes ("for use in connection with the development of applications and Services, research") but sets no
+    separate academic terms.
+# ---------------- Pricing ----------------
 - field: device_price
-  status: unresearched
+  status: stated
+  scope: Galaxy Watch9
+  value: From $379.99 (samsung.com US, before trade-in)
+  confidence: Verified
+  sources:
+  - url: https://www.samsung.com/us/watches/galaxy-watch9/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: From $379.99 or $15.83/mo before trade-in
+  recheck_by: '2026-11-09'
+  note: Store price, which may include promotions. The Sensor SDK supports Galaxy Watch4 and later, so older models
+    also work.
+- field: device_price
+  status: stated
+  scope: Galaxy Watch Ultra2
+  value: From $699.99 (samsung.com US, before trade-in)
+  confidence: Verified
+  sources:
+  - url: https://www.samsung.com/us/watches/galaxy-watch-ultra2/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: From $699.99 or $29.17/mo before trade-in
+  recheck_by: '2026-11-09'
+- field: device_price
+  status: stated
+  scope: Galaxy Ring
+  value: From $299.99 (samsung.com US, before trade-in)
+  confidence: Verified
+  sources:
+  - url: https://www.samsung.com/us/rings/galaxy-ring/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Galaxy Ring From $299.99 before trade-in
+  recheck_by: '2026-11-09'
+  note: Launched in the US in July 2024 at $399.99 (Samsung US newsroom, read by researcher B through its API, not
+    cited here), so $299.99 may be a reduction or promotion.
 - field: subscription_price
-  status: unresearched
+  status: stated
+  value: None required. Samsung Health is free; optional premium workout content powered by iFit is a paid subscription.
+  confidence: Verified
+  sources:
+  - url: https://www.samsung.com/us/apps/samsung-health/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Yes, Samsung Health app can be downloaded for free on the Google Play Store.
+  - url: https://www.samsung.com/us/apps/samsung-health/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Premium content (optional) powered by iFit requires paid subscription.
+  recheck_by: '2026-11-09'
+  note: Samsung has said publicly it is considering a paid Samsung Health tier; none was live on 2026-10-10.
 - field: academic_pricing
-  status: unresearched
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://developer.samsung.com/health/partnerships
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://developer.samsung.com/health/research/overview.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+  - url: https://www.samsung.com/us/shop/discount-program/education/
+    type: vendor_page
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+  note: No research or institutional pricing is published. Samsung's US Education Offer Program gives individual
+    verified students and educators consumer discounts (an extra 15% off Galaxy Watch9 on 2026-10-10); that is a
+    personal retail promotion, not research pricing. Samsung Business lists volume discounts without published terms.
 - field: api_platform_fees
-  status: unresearched
+  status: stated
+  value: No SDK or partner fee is published and both SDKs are free downloads, but the partner licence reserves Samsung's
+    right to charge for the SDK in future. Research Stack is open source; hosting costs fall on the team.
+  confidence: Verified
+  sources:
+  - url: https://developer.samsung.com/health/sensor/sdk-license-partner-service-agreement.html
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: SAMSUNG reserves the right to charge for use of the SDK in the future.
+  - url: https://developer.samsung.com/health/sensor/overview.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: You can download Samsung Health Sensor SDK and begin development of integrating it into your app.
+  recheck_by: '2026-11-09'
+  note: The reservation is in Appendix 1 clause 4(m). It matters for multi-year studies, together with Samsung's right
+    to terminate without cause (see minimum_commitment).
 - field: minimum_commitment
-  status: unresearched
+  status: stated
+  value: No minimum order or spend. The Samsung Health Partner Service and SDK Licence Agreement runs for an initial
+    two years and then renews yearly unless either party gives 60 days' notice; Samsung may end it without cause on
+    30 business days' written notice.
+  confidence: Verified
+  sources:
+  - url: https://developer.samsung.com/health/sensor/sdk-license-partner-service-agreement.html
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: shall commence on the Effective Date and continue for two (2) years
+  - url: https://developer.samsung.com/health/sensor/sdk-license-partner-service-agreement.html
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: Following the Initial Term, this Agreement shall automatically renew for successive one (1) year periods
+  - url: https://developer.samsung.com/health/sensor/sdk-license-partner-service-agreement.html
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: Samsung may terminate this Agreement (including all Appendices continuing at the time of such notice) upon
+      thirty (30) business days prior written notice to Provider without cause.
+  recheck_by: '2026-11-09'
+  note: The term is a licence term, not a spending commitment. No equivalent without-cause right for the provider was
+    found in the termination clause.
 - field: quote_required
-  status: unresearched
+  status: stated
+  value: No for devices and SDKs. Device prices are published on samsung.com and the SDKs are free downloads; volume
+    or research pricing is not published.
+  confidence: Corroborated
+  sources:
+  - url: https://www.samsung.com/us/watches/galaxy-watch9/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: From $379.99 or $15.83/mo before trade-in
+  - url: https://developer.samsung.com/health/sensor/overview.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: You can download Samsung Health Sensor SDK and begin development of integrating it into your app.
+  recheck_by: '2026-11-09'
+  note: The Alcedis research platform has no published price, so a sponsor would presumably need to contact Samsung or
+    Alcedis; not confirmed.
+# ---------------- Data access and terms ----------------
 - field: raw_streams
-  status: unresearched
+  status: stated
+  value: 'Sensor SDK only (Galaxy Watch4 and later, on-watch, live): raw accelerometer, raw PPG green, infrared and red,
+    raw ECG (on demand) and raw EDA (Galaxy Watch8 and later). No raw route from Galaxy Ring or through the Data SDK.
+    For apps targeting Android 16, ECG, EDA, PPG and BIA trackers need the Samsung READ_ADDITIONAL_HEALTH_DATA
+    permission.'
+  confidence: Verified
+  sources:
+  - url: https://developer.samsung.com/health/sensor/overview.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: The accelerometer, ECG, and PPG data are provided as raw data by Samsung Health Sensor SDK.
+  - url: https://developer.samsung.com/health/sensor/guide/data-specifications.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: EDA measurement is available with Galaxy Watch8 series and later models
+  - url: https://developer.samsung.com/health/sensor/faq.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: The Samsung Health Sensor SDK supports only Galaxy Watch4 and later models running Wear OS powered by Samsung.
+  - url: https://developer.samsung.com/health/sensor/release-note.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: Required permissions to use each HealthTrackerType have been changed for targeting Android 16
+  - url: https://developer.samsung.com/health/sensor/release-note.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: com.samsung.android.hardware.sensormanager.permission.READ_ADDITIONAL_HEALTH_DATA
+  recheck_by: '2026-11-09'
+  note: 'The Android 16 change came in v1.4.0 (31 July 2025). The release-note table lists BIA_ON_DEMAND, ECG_ON_DEMAND,
+    EDA_CONTINUOUS, MF_BIA_ON_DEMAND, PPG_CONTINUOUS and PPG_ON_DEMAND under the Samsung permission, with heart rate
+    and SpO2 under standard Android HealthPermissions; it adds a permission prompt for participants. Sensor SDK data
+    does not pass through Samsung Health, so the study app must capture and upload it.'
 - field: derived_metrics
-  status: unresearched
+  status: stated
+  value: 'Data SDK (Android phone, reading Samsung Health, including Galaxy Watch and Galaxy Ring data): activity summary,
+    exercise, floors, heart rate, sleep, sleep apnea, irregular heart rhythm notification, energy score, blood oxygen,
+    skin and body temperature, blood pressure, blood glucose, body composition, nutrition, water, steps (aggregate only),
+    goals and user profile. Sensor SDK (on-watch): heart rate with inter-beat intervals, SpO2, BIA and MF-BIA, skin
+    temperature and sweat loss. HRV is not exposed; it must be computed from IBI.'
+  confidence: Verified
+  sources:
+  - url: https://developer.samsung.com/health/data/overview.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: 'Samsung Health Data SDK supports various read data types: Activity summary Active calories burned goal Active
+      time goal Blood glucose Blood oxygen Blood pressure Body composition Body temperature Energy score Exercise Exercise
+      location Floors climbed Heart rate Irregular heart rhythm notification Nutrition Nutrition goal Skin temperature
+      Sleep Sleep apnea Sleep goal Steps Step goal Water intake Water intake goal User profile'
+  - url: https://developer.samsung.com/health/data/guide/features/data-types.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: Steps Aggregate Step goal Aggregate
+  - url: https://developer.samsung.com/health/sensor/faq.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: The Samsung Health Sensor SDK provides heart rate data tracking with IBI (inter-beat interval), which can be
+      used to calculate HRV (heart rate variability).
+  - url: https://developer.samsung.com/health/data/overview.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: Data measured using Samsung Health Data SDK is intended for fitness and wellness purposes only and is not for
+      the diagnosis or treatment of any medical condition.
+  recheck_by: '2026-11-09'
+  note: Thryve (integrator) reports intraday steps are no longer available under the Data SDK, consistent with the
+    aggregate-only step type.
 - field: sampling_rates
-  status: unresearched
+  status: stated
+  value: 'Sensor SDK: accelerometer 25 Hz; PPG 25 Hz continuous or 100 Hz on demand; ECG 500 Hz on demand; heart rate
+    with IBI 1 Hz; EDA 1 Hz. No rate parameter is documented. Data SDK record resolution is not documented.'
+  confidence: Verified
+  sources:
+  - url: https://developer.samsung.com/health/sensor/guide/data-specifications.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: ACCELEROMETER_CONTINUOUS Raw It provides x, y, and z axis values measured at a frequency of 25 Hz.
+  - url: https://developer.samsung.com/health/sensor/guide/data-specifications.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: Includes Photoplethysmogram (PPG) green, Infrared (IR), and red data measured at a frequency of 25 Hz.
+  - url: https://developer.samsung.com/health/sensor/guide/data-specifications.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: Includes PPG Green, IR, and Red data measured at a frequency of 100 Hz.
+  - url: https://developer.samsung.com/health/sensor/guide/data-specifications.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: ECG_ON_DEMAND Raw ECG data measured at a frequency of 500 Hz.
+  - url: https://developer.samsung.com/health/sensor/guide/data-specifications.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: Heart rate data including inter-beat interval (IBI) measured at a frequency of 1 Hz.
+  - url: https://developer.samsung.com/health/sensor/guide/data-specifications.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: Electrodemal activity data measured at a frequency of 1 Hz.
+  recheck_by: '2026-11-09'
+  note: '"Electrodemal" is Samsung''s spelling. On-demand trackers run in the foreground, one at a time, for about 30
+    seconds.'
 - field: history_depth
-  status: unresearched
+  status: stated
+  value: Sensor SDK has no history; it delivers data only while the study app is tracking. Data SDK reads whatever the
+    phone's Samsung Health store holds for a requested time range; no lookback limit is documented. Via Health Connect,
+    apps read only 30 days before the first permission grant unless they request the history permission.
+  confidence: Corroborated
+  sources:
+  - url: https://developer.samsung.com/health/sensor/release-note.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: The tracking APIs of the Samsung Health Sensor SDK enable partner apps to register events for tracking health
+      sensor data and to retrieve that data while tracking on a Galaxy Watch.
+  - url: https://developer.samsung.com/health/data/guide/features/data-access.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: A reading operation is a basic query to get a set of data from Samsung Health. Users can set conditions such
+      as data types, time range, or data source.
+  - url: https://developer.android.com/health-and-fitness/health-connect/read-data
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: By default, all applications can read data from Health Connect for up to 30 days prior to when any permission
+      was first granted.
+  recheck_by: '2026-11-09'
+  note: Corroborated because the Data SDK "no limit" is an absence in the docs (a migration-guide sample queries 400 days
+    back, an example rather than a limit). The Health Connect source is Google's, describing the platform route.
 - field: export_routes
-  status: unresearched
+  status: stated
+  scope: Samsung Health Sensor SDK
+  value: Custom Wear OS watch app on Galaxy Watch4 and later; raw and processed signals, live; the app must move data
+    off the watch itself.
+  confidence: Verified
+  sources:
+  - url: https://developer.samsung.com/health/sensor/faq.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: No. The Samsung Health Sensor SDK does not share data with Samsung Health.
+  - url: https://developer.samsung.com/health/sensor/overview.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: Samsung Health Sensor SDK only works on Galaxy Watch4 series and later models running Wear OS powered by Samsung.
+  recheck_by: '2026-11-09'
+- field: export_routes
+  status: stated
+  scope: Samsung Health Data SDK
+  value: Android phone app reading the Samsung Health store, including Galaxy Watch and Galaxy Ring data; works on
+    non-Samsung Android phones with Samsung Health 6.30.2 or later. No cloud or web API; no iOS.
+  confidence: Verified
+  sources:
+  - url: https://developer.samsung.com/health/data/overview.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: Health data in the Samsung Health app can also be collected from connected devices, like the Galaxy Watch or
+      Galaxy Ring, which automatically transfers its data to a paired mobile phone’s Samsung Health app.
+  - url: https://developer.samsung.com/health/data/overview.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: It is available on all Samsung smartphones and also non-Samsung Android smartphones.
+  - url: https://developer.samsung.com/health/data/overview.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: Samsung Health Data SDK requires Samsung Health version 6.30.2 or later.
+  - url: https://developer.samsung.com/health/data/faq.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: can be a Galaxy Watch, Galaxy Ring, Galaxy Fit
+  recheck_by: '2026-11-09'
+  note: Integrators reach Samsung through this route (Thryve, Junction; Terra claims a "privileged partnership" with
+    Samsung giving direct Samsung Health SDK access, still requiring the customer's own Samsung approval).
+- field: export_routes
+  status: stated
+  scope: Health Connect and participant self-export
+  value: Samsung Health syncs activity, heart rate and sleep to Android Health Connect, readable by any approved Health
+    Connect app; participants can also download their own data from the Samsung Health app.
+  confidence: Verified
+  sources:
+  - url: https://developer.samsung.com/health/overview.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: Activity data, such as steps and exercise, heart rate, and sleep, are synchronized between Samsung Health and
+      Health Connect.
+  - url: https://www.samsung.com/us/support/answer/ANS10001379/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: you can download and view the data to get a better idea
+  recheck_by: '2026-11-09'
+  note: Self-export format and completeness not verified.
+- field: export_routes
+  status: stated
+  scope: Samsung Health Research Stack
+  value: Self-hosted backend (Docker) with a web portal and app SDK that collect from the Sensor SDK and Health Connect;
+    the team controls storage and export.
+  confidence: Verified
+  sources:
+  - url: https://developer.samsung.com/health/research/developer-guide/installation/install-backend.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: Download Docker Desktop to get all the necessary packages for this installation
+  - url: https://developer.samsung.com/health/research/overview.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: The Galaxy Watch 5 has been extensively tested for compatibility with this tech stack. Other devices may work
+      but have not been officially tested.
+  recheck_by: '2026-11-09'
+  note: Unmaintained since October 2024 (see program_status).
 - field: rate_limits
-  status: unresearched
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://developer.samsung.com/health/data/guide/features/data-access.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+  - url: https://developer.samsung.com/health/data/faq.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+  - url: https://developer.samsung.com/health/sensor/guide/data-specifications.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+  note: Samsung offers no cloud API for health data, so web-style rate limits do not arise; the Data SDK documents no
+    query limits. The documented constraint is one on-demand Sensor SDK tracker at a time, in the foreground.
 - field: retention_terms
-  status: unresearched
+  status: stated
+  value: 'Partner agreement: the provider may process User Data only to provide its service and only as far as
+    necessary; no retention period is set. Samsung may collect and use information about the partner''s service and
+    its use, to improve the SDK, and the partner must obtain users'' consent for that. Samsung Health (consumer): data
+    kept while the user is active, or as long as needed for the service, then deleted or anonymised.'
+  confidence: Verified
+  sources:
+  - url: https://developer.samsung.com/health/sensor/sdk-license-partner-service-agreement.html
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: Provider shall ensure that its authorized employees, subcontractors, and agents process User Data solely for
+      the purpose of providing the Service, and solely to the extent necessary to provide the Service
+  - url: https://developer.samsung.com/health/sensor/sdk-license-partner-service-agreement.html
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: SAMSUNG may collect and use information about the Service and use of Service
+  - url: https://developer.samsung.com/health/sensor/sdk-license-partner-service-agreement.html
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: Licensee shall obtain all consents from the users of the Service necessary for SAMSUNG to use the foregoing
+      information for the purpose of improving SDK
+  - url: https://samsunghealth.com/privacy
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: Your information will be kept for as long as it is needed to provide you with the Service
+    fetch_url: https://content.samsungknowledge.com/agreement/terms/samsunghealth.oobe.pp_us/18.0.1/en-US.html
+  - url: https://samsunghealth.com/privacy?cc=IE&lc=en
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: As long as you are an active user of Samsung Health, we will retain and process this data.
+    fetch_url: https://content.samsungknowledge.com/agreement/terms/samsunghealth.oobe.pp_eugdpr/18.0.0/en-IE.html
+  recheck_by: '2026-11-09'
+  note: The scope of "information about the Service and use of Service" (Appendix 1 clause 4(m)) is not defined; it
+    may be telemetry rather than sensor data, but it is a Samsung use the participant consent form should cover.
+    samsunghealth.com/privacy is a JavaScript app; the fetch_url pages on content.samsungknowledge.com carry version
+    numbers in their paths (18.0.1, 18.0.0) and will move when Samsung republishes. Re-find them from the browser
+    network log at samsunghealth.com/privacy?cc=US&lc=en.
 - field: ai_training_terms
-  status: unresearched
+  status: stated
+  value: 'Samsung Health (consumer): with separate opt-in consent (notice dated July 2026), Samsung uses Samsung Health
+    data for AI training and modelling, including human review; consent can be withdrawn in settings, and Samsung says
+    only the AI-development data is then deleted. Partner agreement: no AI terms, but it bars providers from using or
+    disclosing User Data to third parties for advertising, marketing, selling or data mining.'
+  confidence: Verified
+  sources:
+  - url: https://samsunghealth.com/shd/gen-ai
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: The health data you have allowed us to collect and process will be used for AI training and modelling, including
+      human review, to improve Samsung Health, including algorithms to analyse health conditions and our AI features.
+    fetch_url: https://content.samsungknowledge.com/agreement/terms/samsunghealth.oobe.shd_gen_ai_us/1.0.0/en-US.html
+  - url: https://samsunghealth.com/shd/gen-ai
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: You may withdraw your consent at any time in the Samsung Health settings > Privacy. If you withdraw your consent,
+      we will stop using your data for AI training and modelling.
+    fetch_url: https://content.samsungknowledge.com/agreement/terms/samsunghealth.oobe.shd_gen_ai_us/1.0.0/en-US.html
+  - url: https://samsunghealth.com/privacy
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: With your consent, your health data may be used to develop and train our artificial algorithms and models
+    fetch_url: https://content.samsungknowledge.com/agreement/terms/samsunghealth.oobe.pp_us/18.0.1/en-US.html
+  - url: https://developer.samsung.com/health/sensor/sdk-license-partner-service-agreement.html
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: PROVIDER IS NOT PERMITTED TO USE OR DISCLOSE USER DATA TO THIRD PARTIES FOR PURPOSES OF ADVERTISING, MARKETING,
+      SELLING OR DATA MINING.
+  - url: https://9to5google.com/2026/07/15/samsung-health-ai-training-data-consent/
+    type: secondary
+    retrieved: '2026-10-10'
+    quote: When consent is withdrawn, only the data collected for AI development will be deleted.
+  recheck_by: '2026-11-09'
+  note: Relevant to studies using the Data SDK or Health Connect routes, which read from the consumer Samsung Health
+    store; the Sensor SDK path does not pass through Samsung Health. Regions where the consent is shown are not
+    published (TechRepublic, 2026-07-16). The fetch_url pages carry version numbers in their paths and may move.
 - field: deprecations
-  status: unresearched
+  status: stated
+  value: 'Samsung Health SDK for Android deprecated 31 July 2025, replaced by the Data SDK; it stays operational at least
+    two years and reaches end of service in 2028. Sensor SDK renamed from Privileged Health SDK (v1.3.0, 22 September
+    2024). Sensor SDK v1.4.0 (31 July 2025) changed tracker permissions for apps targeting Android 16.'
+  confidence: Verified
+  sources:
+  - url: https://developer.samsung.com/health/android/overview.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: Samsung Health SDK for Android has been depricated as of 31 July, 2025.
+  - url: https://developer.samsung.com/health/data/migration-guide/overview.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: Samsung Health SDK for Android will remain operational for at least 2 years after its deprecation.
+  - url: https://developer.samsung.com/sdp/news/en/2025/10/30/dev-insight-oct-2025-move-to-samsung-health-data-sdk-as-samsung-health-sdk-for-android-deprecates-and-other-latest-news
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: will reach the end of its service in 2028
+  - url: https://developer.samsung.com/health/sensor/release-note.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: 1.3.0 - September 22, 2024 Rebranding the SDK name to "Samsung Health Sensor SDK".
+  recheck_by: '2026-11-09'
+  note: '"depricated" is Samsung''s spelling. No exact 2028 date is given. Research Stack has no announced
+    deprecation but no code since October 2024 (see program_status).'
+# ---------------- Compliance ----------------
 - field: baa
-  status: unresearched
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://developer.samsung.com/health/sensor/sdk-license-partner-service-agreement.html
+    type: vendor_legal
+    retrieved: '2026-10-10'
+  - url: https://samsunghealth.com/privacy
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    fetch_url: https://content.samsungknowledge.com/agreement/terms/samsunghealth.oobe.pp_us/18.0.1/en-US.html
+  - url: https://developer.samsung.com/health/partnerships
+    type: vendor_page
+    retrieved: '2026-10-10'
+  recheck_by: '2027-01-08'
+  note: The partner agreement contains no "HIPAA" or "business associate" text (searched 2026-10-10). With the Sensor
+    SDK the study data path is the study's own, so a BAA with Samsung may not be needed for it.
 - field: dpa
-  status: unresearched
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://developer.samsung.com/health/sensor/sdk-license-partner-service-agreement.html
+    type: vendor_legal
+    retrieved: '2026-10-10'
+  - url: https://samsunghealth.com/privacy?cc=IE&lc=en
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    fetch_url: https://content.samsungknowledge.com/agreement/terms/samsunghealth.oobe.pp_eugdpr/18.0.0/en-IE.html
+  - url: https://developer.samsung.com/health/partnerships
+    type: vendor_page
+    retrieved: '2026-10-10'
+  recheck_by: '2027-01-08'
+  note: No standalone DPA is published. The partner agreement has data-protection clauses (User Data, Data Security
+    Breach, third-party flow-down) and says User Data "may be outlined in a supplemental agreement", but no
+    supplement or DPA template was found.
 - field: hipaa_statement
-  status: unresearched
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://samsunghealth.com/privacy
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    fetch_url: https://content.samsungknowledge.com/agreement/terms/samsunghealth.oobe.pp_us/18.0.1/en-US.html
+  - url: https://developer.samsung.com/health/sensor/sdk-license-partner-service-agreement.html
+    type: vendor_legal
+    retrieved: '2026-10-10'
+  - url: https://www.samsung.com/us/privacy-policy/washington-privacy-notice/
+    type: vendor_legal
+    retrieved: '2026-10-10'
+  recheck_by: '2027-01-08'
+  note: Neither the US Samsung Health Privacy Notice (effective July 29, 2026), the consumer health data statement nor
+    the partner agreement mentions HIPAA. Samsung's "HIPAA-ready" Knox marketing is about device security, not Samsung
+    Health data.
 - field: gdpr_statement
-  status: unresearched
+  status: stated
+  value: The EU/UK Samsung Health Privacy Notice names Samsung Electronics Co., Ltd. as data controller and sets out GDPR
+    Article 6 legal bases. It covers the consumer service; for SDK partner apps the study is the controller.
+  confidence: Corroborated
+  sources:
+  - url: https://samsunghealth.com/privacy?cc=GB&lc=en
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: Samsung is the data controller for Samsung Health.
+    fetch_url: https://content.samsungknowledge.com/agreement/terms/samsunghealth.oobe.pp_eugdpr/18.0.0/en-GB.html
+  - url: https://samsunghealth.com/privacy?cc=GB&lc=en
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: Keeping our promise to you GDPR Article 6(1)(b)
+    fetch_url: https://content.samsungknowledge.com/agreement/terms/samsunghealth.oobe.pp_eugdpr/18.0.0/en-GB.html
+  recheck_by: '2027-01-08'
+  note: EU notice effective 9 June 2025. Capped at Corroborated as a self-statement. The fetch_url carries a version
+    number and may move.
 - field: iso27001
-  status: unresearched
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://samsunghealth.com/privacy
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    fetch_url: https://content.samsungknowledge.com/agreement/terms/samsunghealth.oobe.pp_us/18.0.1/en-US.html
+  - url: https://developer.samsung.com/health/data/overview.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+  - url: https://developer.samsung.com/health/partnerships
+    type: vendor_page
+    retrieved: '2026-10-10'
+  recheck_by: '2027-01-08'
+  note: ISO 27001 certificates found only for other Samsung services (SmartThings Cloud, signage, internal CRM), which
+    do not cover Samsung Health or the SDKs.
 - field: soc2
-  status: unresearched
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://samsunghealth.com/privacy
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    fetch_url: https://content.samsungknowledge.com/agreement/terms/samsunghealth.oobe.pp_us/18.0.1/en-US.html
+  - url: https://developer.samsung.com/health/data/overview.html
+    type: vendor_docs
+    retrieved: '2026-10-10'
+  - url: https://developer.samsung.com/health/partnerships
+    type: vendor_page
+    retrieved: '2026-10-10'
+  recheck_by: '2027-01-08'
 - field: fda_clearances
-  status: unresearched
+  status: stated
+  value: 'Galaxy Watch features (Samsung Health Monitor), not the SDKs: ECG Monitor App 510(k) K201168 (2020-08-04);
+    ECG Monitor Application with Irregular Heart Rhythm Notification K230292 (2023-05-02); Samsung ECG App v1.3
+    K240909 (2024-08-02); Sleep Apnea Feature De Novo DEN230041 (2024-02-06); Sleep Apnea Feature v2.0 K261011
+    (2026-07-20).'
+  confidence: Verified
+  sources:
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K201168
+    type: regulator_db
+    retrieved: '2026-10-10'
+    quote: ECG Monitor App
+    fetch_url: https://api.fda.gov/device/510k.json?search=k_number:K201168
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K230292
+    type: regulator_db
+    retrieved: '2026-10-10'
+    quote: Samsung ECG Monitor Application with Irregular Heart Rhythm Notification
+    fetch_url: https://api.fda.gov/device/510k.json?search=k_number:K230292
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K240909
+    type: regulator_db
+    retrieved: '2026-10-10'
+    quote: Samsung ECG App v 1.3 (ECG)
+    fetch_url: https://api.fda.gov/device/510k.json?search=k_number:K240909
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/denovo.cfm?id=DEN230041
+    type: regulator_db
+    retrieved: '2026-10-10'
+    quote: Sleep Apnea Feature
+    fetch_url: https://api.fda.gov/device/510k.json?search=k_number:DEN230041
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K261011
+    type: regulator_db
+    retrieved: '2026-10-10'
+    quote: Sleep Apnea Feature (v2.0)
+    fetch_url: https://api.fda.gov/device/510k.json?search=k_number:K261011
+  recheck_by: '2027-01-08'
+  note: 'Product codes QDA (OTC ECG software) and QZW (OTC sleep apnoea risk). Searched openFDA by applicant "samsung
+    electronics" on 2026-10-10. Left out: K261187 "Hearing Aid Feature" (2026-07-31, product code SCR, air-conduction
+    hearing aid software), since nothing in the record ties it to a watch or ring and it is probably Galaxy Buds; and
+    K132148 "S HEALTH" (2013, physiological signal transmitter). The Data SDK and Sensor SDK both say their data is
+    for fitness and wellness only. In the EU, the ECG App instructions for use (v1.2, 2024-12) carry the
+    medical-device symbol; MDR class and notified body not checked.'
 - field: data_residency
-  status: unresearched
+  status: stated
+  value: 'Samsung Health (EU/UK notice): data is transferred to, stored and processed in other countries including the
+    EEA and the Republic of Korea; no residency choice is offered. The US notice names no location. Sensor SDK data
+    stays wherever the study app sends it.'
+  confidence: Verified
+  sources:
+  - url: https://samsunghealth.com/privacy?cc=GB&lc=en
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: Your use of Samsung Health will involve the transfer, storage and processing of your personal information to
+      other countries; such countries include, without limitation, countries in the European Economic Area and the Republic
+      of Korea.
+    fetch_url: https://content.samsungknowledge.com/agreement/terms/samsunghealth.oobe.pp_eugdpr/18.0.0/en-GB.html
+  recheck_by: '2027-01-08'
+  note: The list is "without limitation", so other countries may be involved. The fetch_url carries a version number
+    and may move.

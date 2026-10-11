@@ -2,6 +2,51 @@
 
 ---
 
+## 2026-10-10 (last) — Vendor fact records: baseline batch 1 (10 companies)
+
+**Module:** 1, 2 and shared (`facts/`).
+
+**Companies:** Oura, WHOOP, Apple, Fitbit / Google, Garmin, Samsung, Empatica, Withings, Beiwe,
+RADAR-base. Each had two independent researchers, a gap hunter and a judge
+(`tools/facts/prompts/`). Drafts and each judge's reasoning are in `facts/_drafts/<company>/`.
+
+**Result:** 436 facts, every required field filled. 357 are stated and 4 are recorded conflicts (Oura
+1, Apple 1, Withings 2: the Withings+ annual price and the inactive-account deletion rule); of those
+361, 275 are Verified, 65 Corroborated and 21 Reported or Unclear. 61 are not public, with the pages
+that were searched; 9 are unclear and 5 do not apply.
+Every quote was re-probed as exact on its page or on a named archive or JSON copy.
+
+**Findings that change earlier text in the profiles and matrices** (full tables, with line numbers, in
+each `judgement.md`; not yet applied):
+
+- Samsung's partner licence reserves a right to charge for the SDK and lets Samsung end it without
+  cause on 30 business days' notice. Research Stack 2.0 shipped only as a beta (last push 2024-10-24).
+  An invitation-only route exists (Open Innovation Initiative; Alcedis, part of Huma, 2026-06-24).
+- WHOOP's API terms ban permanent copies and AI training; tier upgrades above 10 members took two to
+  three months for some developers in mid-2026; the Unite raw-data route's current status is unclear.
+- Withings: raw ECG waveform through Heart v2; SpO2 is cleared under the ECG 510(k) K201456 itself.
+- Beiwe: FY26 service-center rates replace FY24; the Google Play app is gone; Play builds never
+  collected calls and SMS.
+- Empatica: academic plan capped at 1 study and 1,000 participants; E4 suite sunset 2025-02-14.
+
+**Coordinator checks in a browser:** WHOOP US prices and research page; Withings K201456 indications
+and recall class (Class II); the Beiwe Play listing (absent under either name); Oura's DPF listing
+(active on all three frameworks); Samsung's Alcedis release (now cited from Samsung's newsroom).
+
+**Tool fixes made during the batch:**
+
+- The weekly check now keys sources by (page, address fetched), so archive and JSON copies are
+  checked. Before, a quote read through an archive copy was skipped silently.
+- Quotes are cast to text, and the validator rejects quotes that are not strings.
+- `expect_absent` marks a source whose 404 confirms the fact.
+- openFDA's "no matches" 404 counts as a valid result.
+- Generated tables are built from committed records only, in a clean worktree.
+
+**Still open:** the items under "check by hand" in each `judgement.md` need a vendor answer, for
+example Apple ECG filtering, Garmin's licence version, WHOOP Unite, and the Beiwe FY27 rates.
+
+---
+
 ## 2026-10-10 (later) — Repair pass after the independent review; vendor fact records built
 
 **Module:** 1, 2, 3, 4 and shared.
