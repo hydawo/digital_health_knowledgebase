@@ -1,0 +1,607 @@
+# Draft record for empatica, researcher A, 2026-10-10. Schema: facts/_schema.yaml
+name: Empatica
+kind: wearable
+profile: module-01-wearables/profiles/empatica.md
+watch:
+- url: https://www.empatica.com/platform/research-studies
+  role: research_program
+- url: https://www.empatica.com/store/platform-professional
+  role: pricing
+- url: https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features
+  role: docs
+- url: https://academic-support.empatica.com/hc/en-us/articles/38901007393053-What-is-a-Sensor-Mode
+  role: docs
+- url: https://academic-support.empatica.com/hc/en-us/articles/36981046788765-Raw-Data-in-the-Empatica-Cloud
+  role: docs
+- url: https://academic-support.empatica.com/hc/en-us/articles/36981086545181-Accessing-Data-on-the-S3-Bucket
+  role: docs
+- url: https://www.empatica.com/cloud-api
+  role: developer_program
+- url: https://www.empatica.com/llms.txt
+  role: pricing
+- url: https://www.empatica.com/purchase-agreement/
+  role: terms
+- url: https://www.empatica.com/privacy-participant
+  role: terms
+- url: https://www.empatica.com/legal/
+  role: trust
+- url: https://www.empatica.com/go/empatica-iso-iec
+  role: trust
+- url: https://www.empatica.com/research/e4-sunset/
+  role: changelog
+- url: https://api.fda.gov/device/510k.json?search=applicant:empatica&limit=50
+  role: regulatory
+facts:
+- field: research_program
+  status: stated
+  value: 'Two plans on the Empatica Health Monitoring Platform: Academic & Basic Research (self-serve store bundles:
+    device, Care Lab App, Care Lab Portal, Empatica Cloud data access) and Enterprise (large clinical trials, dedicated
+    services)'
+  confidence: Verified
+  sources:
+  - url: https://www.empatica.com/platform/research-studies
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Empatica Health Monitoring Platform for Academic Research Access comprehensive raw data, EDA, vital signs,
+      activity and more, in one wearable solution.
+  - url: https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: 'The Platform features two different plans: Academic & Basic Research or enterprise The two plans differ
+      and are attributed to studies based on their size and nature.'
+  recheck_by: '2026-11-09'
+- field: program_eligibility
+  status: stated
+  value: Academic subscriptions are for qualified educational or non-profit research institutions, used by their
+    staff or students for non-commercial teaching and research; the 25% discount requires a university institutional
+    email. Enterprise qualification is decided with sales
+  confidence: Verified
+  sources:
+  - url: https://www.empatica.com/purchase-agreement/
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: 'Use of the Empatica Health Monitoring Platform pursuant to an Academic Subscription is limited as follows:
+      (i) Users must be employed by, or enrolled in a course of academic study at, the Academic Institution'
+  - url: https://lp.empatica.com/academic-discount-professional-plan
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Only University institutional email addresses will be considered.
+  - url: https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: Speak with our Sales Team to understand if you qualify for our Enterprise Plan.
+  recheck_by: '2026-11-09'
+- field: program_application
+  status: stated
+  value: Academic plan bought from the online store (studies of 30 devices or fewer) or via sales; academic discount
+    code requested by form; Enterprise via sales
+  confidence: Verified
+  sources:
+  - url: https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: Academic & Basic Research Can be purchased directly through our Online Store , or through our Sales Team.
+  - url: https://lp.empatica.com/academic-discount-professional-plan
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Fill out the form to apply for the Academic Discount and receive your code via email.
+  - url: https://www.empatica.com/platform/research-studies
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: If your study requires a larger number of devices, reach out to our team for a more bespoke solution.
+  recheck_by: '2026-11-09'
+- field: program_status
+  status: stated
+  value: 'Active: Academic & Basic Research plan on sale in the online store. The earlier E4 research wristband
+    and its software were sunset on 14 February 2025'
+  confidence: Verified
+  sources:
+  - url: https://www.empatica.com/store/platform-professional
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Academic & Basic Research plan Empatica Health Monitoring Platform Choose device
+  - url: https://www.empatica.com/research/e4-sunset/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: As of February 14th, 2025, the E4 and its software suite have officially been sunset
+  recheck_by: '2026-11-09'
+- field: developer_program_status
+  status: stated
+  value: No public developer program. A Cloud API for clinical trial sponsors and CROs is provided under contract
+    via sales; no SDK for academic research
+  confidence: Verified
+  sources:
+  - url: https://www.empatica.com/cloud-api
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: All Cloud API clients will be provided with full developer documentation.
+  - url: https://www.empatica.com/platform/research-studies
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: We do not provide an SDK for academic research purposes.
+  recheck_by: '2026-11-09'
+  note: The Cloud API page offers only "Talk to our team"; developer documentation is given to Cloud API clients,
+    not published.
+- field: user_cap
+  status: stated
+  value: 'Academic & Basic Research account: 1 study, 1 site, up to 1000 participants. Enterprise plan: minimum
+    order of 100 devices'
+  confidence: Verified
+  sources:
+  - url: https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: To start using the Platform, simply create your own Care Lab Portal account , which comes with 1 Study,
+      1 Site, and up to 1000 participants.
+  - url: https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: 'Speak with our Sales Team to understand if you qualify for our Enterprise Plan. *MOQ: 100 devices'
+  recheck_by: '2026-11-09'
+- field: academic_vs_commercial
+  status: stated
+  value: 'Academic plan: self-serve, 1 study/site, store pricing with 25% discount, non-commercial use only. Enterprise:
+    large trials, dedicated services (IRB support, audit trails), sales-quoted pricing, 100-device MOQ, Cloud API
+    available'
+  confidence: Verified
+  sources:
+  - url: https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: Academic & Basic Research Designed with smaller research studies in mind. For example, an academic study
+      that does not require dedicated Account Manager support.
+  - url: https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: enterprise Available for large-scale clinical trials, with a wide range of dedicated services through
+      Empatica. For example, a clinical trial that requires one-on-one support with IRB submissions, audit trails,
+      and custom materials for global studies.
+  - url: https://www.empatica.com/purchase-agreement/
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: Academic Subscriptions may not be used for commercial, professional, or productive purposes, for commercial
+      training, or for any other for-profit purposes.
+  recheck_by: '2026-11-09'
+- field: device_price
+  status: stated
+  value: 'Research store: EmbracePlus $1,166.40, EmbraceMini $641.52 (before academic discount; sold only with a
+    platform subscription). EpiMonitor (consumer epilepsy) EmbracePlus: $399 / EUR 399'
+  confidence: Verified
+  sources:
+  - url: https://www.empatica.com/store/platform-professional
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: EmbracePlus Cortina White $1,166.40 Pack Contains USB charger EmbraceMini $641.52
+  - url: https://www.empatica.com/llms.txt
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: 'EmbracePlus \- 1 unit: $399 / €399'
+  recheck_by: '2026-11-09'
+  note: Research and consumer EmbracePlus are priced as different offerings; research devices are sold only as device-plus-subscription
+    packages.
+- field: subscription_price
+  status: stated
+  value: 'Research platform subscription (per EmbracePlus): 3-year $1,166.40, 5-year $1,749.60 list; extension from
+    $388.80/yr (EmbracePlus) or $291.60/yr (EmbraceMini). EpiMonitor consumer plans from $17.40/month (Basic) to
+    $52.90/month (Plus)'
+  confidence: Verified
+  sources:
+  - url: https://www.empatica.com/llms.txt
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: '3-year Platform Subscription: $1,166.40'
+  - url: https://www.empatica.com/llms.txt
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: '5-year Platform Subscription: $1,749.60'
+  - url: https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: Subscription extension Per device, per additional year Starting from $388.80 or €359.64 Starting from
+      $291.60 or €269.73
+  - url: https://www.empatica.com/llms.txt
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: 'Basic (essential for 1 caregiver): $17.40/mo. / €16.90/mo.'
+  recheck_by: '2026-11-09'
+- field: academic_pricing
+  status: stated
+  value: '25% academic discount: EmbracePlus 3-year bundle $1,749.60 (list $2,332.80), 5-year $2,187 (list $2,916);
+    EmbraceMini 3-year $1,137.24 (list $1,516.32), 5-year $1,465.29 (list $1,953.72). Volume discounts from 5 devices'
+  confidence: Verified
+  sources:
+  - url: https://www.empatica.com/platform/research-studies
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Academic Standard Save 25% EmbracePlus 3 year bundle $2332.80 $1749.60 /plan
+  - url: https://www.empatica.com/platform/research-studies
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: 10% additional savings on data access EmbracePlus 5 year bundle $2916 $2187 /plan
+  - url: https://www.empatica.com/platform/research-studies
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: EmbraceMini 3 year bundle $1516.32 $1137,24 /plan
+  - url: https://www.empatica.com/platform/research-studies
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Volume discounts are available from 5 devices and up and are automatically applied upon checkout.
+  recheck_by: '2026-11-09'
+- field: api_platform_fees
+  status: stated
+  value: 'Academic: Empatica Cloud data access and Care Lab Portal are included in the per-device bundle; no separate
+    data fee. Enterprise and Cloud API fees are not published (contact sales)'
+  confidence: Verified
+  sources:
+  - url: https://www.empatica.com/platform/research-studies
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: 'Included in the bundle: 1 EmbracePlus device 3 years of data access via the Empatica Cloud 3 years of
+      access to the Care Lab Portal for study management and data visualization Ongoing service and maintenance'
+  - url: https://www.empatica.com/llms.txt
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: 'Pricing for Enterprise Trials: For pricing information, please reach out to the Empatica team.'
+  recheck_by: '2026-11-09'
+- field: minimum_commitment
+  status: stated
+  value: 'Academic: each device must be bought with a 3- or 5-year platform subscription; extensions one year at
+    a time. Enterprise: minimum order of 100 devices'
+  confidence: Verified
+  sources:
+  - url: https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: Each device is purchased as a package that includes the device and its platform subscription.
+  - url: https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: Platform subscriptions are only sold together with a device purchased from Empatica, and can only be
+      extended for those devices.
+  - url: https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: '*MOQ: 100 devices'
+  recheck_by: '2026-11-09'
+- field: quote_required
+  status: stated
+  value: Academic plan priced publicly in the online store (quote optional); Enterprise pricing requires contacting
+    sales; studies over 30 devices are steered to sales
+  confidence: Verified
+  sources:
+  - url: https://www.empatica.com/llms.txt
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: enterprise pricing is not self-serve
+  - url: https://www.empatica.com/platform/research-studies
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: we recommend using our online store to buy your hardware and software package for smaller studies, requiring
+      30 devices or fewer.
+  recheck_by: '2026-11-09'
+- field: raw_streams
+  status: stated
+  value: 'EmbracePlus: accelerometer, gyroscope (selected modes), blood volume pulse (PPG), EDA, skin temperature,
+    systolic peaks (IBI), steps, user tags. EmbraceMini: accelerometer, gyroscope, ambient light, steps, tags. Delivered
+    as Avro files in an AWS S3 bucket; streams depend on the sensor mode'
+  confidence: Verified
+  sources:
+  - url: https://academic-support.empatica.com/hc/en-us/articles/36981046788765-Raw-Data-in-the-Empatica-Cloud
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: 'Raw data streams contained within Empatica''s Avro files are the following: Accelerometer Blood Volume
+      Pulse ElectroDermal Activity (EDA) Gyroscope Steps Systolic Peaks Tags'
+  - url: https://www.empatica.com/platform/research-studies
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Raw Data Accelerometer Supported Supported Ambient Light Not supported Supported Blood Volume Pulse Supported
+      Not supported Electrodermal Activity Supported Not supported Gyroscope Supported Supported IBI (Systolic peaks)
+      Supported Not supported Steps Supported Supported Skin Temperature Supported Not supported
+  recheck_by: '2026-11-09'
+- field: derived_metrics
+  status: stated
+  value: 'Digital biomarkers (CSV): pulse rate, pulse rate variability (RMSSD), respiratory rate, EDA skin conductance
+    level, skin temperature, wearing detection, sleep detection, steps, activity counts/classification/intensity,
+    actigraphy counts, METs, body position, ambient light (EmbraceMini); availability depends on device and sensor
+    mode'
+  confidence: Verified
+  sources:
+  - url: https://www.empatica.com/platform/research-studies
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Digital biomarkers Accelerometer Magnitude Standard Deviation Supported Supported Acticounts Supported
+      Supported Actigraphy counts Supported Supported Activity counts Supported Supported Activity Classification
+      Supported Supported Activity Intensity Supported Supported
+  recheck_by: '2026-11-09'
+  note: Same page lists Pulse Rate, Pulse Rate Variability and Respiratory Rate as EmbracePlus only. SpO2 appears
+    as an enterprise-only visualization in support docs.
+- field: sampling_rates
+  status: stated
+  value: 'Fixed by sensor mode (Pulse Rate Pro / Actigraphy Pro / Actigraphy Optimized / Gyroscope Max / Gyroscope
+    100): accelerometer 64/64/32/64/100 Hz; gyroscope off/off/off/64/100 Hz; PPG 64 Hz (Pulse Rate Pro) or 4 Hz
+    (Actigraphy Pro); EDA 4 Hz; skin temperature 1 Hz; ambient light 1 Hz (EmbraceMini)'
+  confidence: Verified
+  sources:
+  - url: https://academic-support.empatica.com/hc/en-us/articles/38901007393053-What-is-a-Sensor-Mode
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: Skin Temperature** 1 Hz 1 Hz 1 Hz 1 Hz 1 Hz PPG** 64 Hz (infrared, green and red, via 5 LEDs) 4 Hz (infrared,
+      via 1 LED) OFF OFF OFF Electrodermal Activity (EDA)** 4 Hz 4 Hz OFF OFF OFF
+  - url: https://academic-support.empatica.com/hc/en-us/articles/38901007393053-What-is-a-Sensor-Mode
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: Accelerometer 64 Hz, ±16 g 64 Hz, ±16 g 32 Hz, ±16 g 64 Hz, ±16 g 100 Hz, ±16 g Gyroscope OFF OFF OFF
+      64 Hz, ±2000 dps 100 Hz, ±2000 dps
+  recheck_by: '2026-11-09'
+  note: Sensor mode is chosen at study creation and cannot be changed for that account. Actigraphy Optimized syncs
+    once a day.
+- field: history_depth
+  status: stated
+  value: Cloud data access for the length of the subscription (3 or 5 years per device); access after the term may
+    carry additional charges
+  confidence: Verified
+  sources:
+  - url: https://www.empatica.com/platform/research-studies
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: 3 years of data access via the Empatica Cloud
+  - url: https://www.empatica.com/purchase-agreement/
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: Any continued access to and use of the Empatica Health Monitoring Platform beyond the Subscription Term
+      may be subject to additional charges at Empatica’s then-current standard price for such access and use.
+  recheck_by: '2026-11-09'
+  note: No statement found on what happens to data in the S3 bucket after a subscription lapses.
+- field: export_routes
+  status: stated
+  value: Care Lab Portal download hub; AWS S3 bucket with Data Access Keys (Cyberduck, AWS CLI, AWS SDKs); raw Avro
+    files every ~30 min and CSV digital biomarkers; Cloud API for enterprise clients. No live streaming and no academic
+    SDK
+  confidence: Verified
+  sources:
+  - url: https://academic-support.empatica.com/hc/en-us/articles/36981086545181-Accessing-Data-on-the-S3-Bucket
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: 'There are multiple ways to access the data stored in the S3 Bucket: File Transfer Tools'
+  - url: https://academic-support.empatica.com/hc/en-us/articles/36981014631837-Generating-and-Revoking-Data-Access-Keys
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: In this space, you can generate, download, and revoke your Data Access Keys to access the data stored
+      on the AWS S3 Bucket.
+  - url: https://academic-support.empatica.com/hc/en-us/articles/36981046788765-Raw-Data-in-the-Empatica-Cloud
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: High-frequency raw data is uploaded to the Empatica Cloud every 30 minutes and then made available on
+      the S3 Data Bucket for download.
+  - url: https://www.empatica.com/cloud-api
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: The Empatica Health Monitoring Platform uses two formats of files, Avro and CSV
+  recheck_by: '2026-11-09'
+  note: 'Research page: data "is not viewable in real-time". Up to 2 active key sets at a time.'
+- field: rate_limits
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://academic-support.empatica.com/hc/en-us/articles/36981086545181-Accessing-Data-on-the-S3-Bucket
+    type: vendor_docs
+    retrieved: '2026-10-10'
+  - url: https://academic-support.empatica.com/hc/en-us/articles/36981014631837-Generating-and-Revoking-Data-Access-Keys
+    type: vendor_docs
+    retrieved: '2026-10-10'
+  - url: https://www.empatica.com/cloud-api
+    type: vendor_page
+    retrieved: '2026-10-10'
+  - url: https://www.empatica.com/purchase-agreement/
+    type: vendor_legal
+    retrieved: '2026-10-10'
+  recheck_by: '2026-11-09'
+  note: No API or S3 request limits published; the Data Access Documentation inside the Care Portal and the Cloud
+    API docs are not public.
+- field: retention_terms
+  status: stated
+  value: Participant data retained for the duration of the services plus 10 years after the contract ends (participant
+    privacy policy); no customer-facing deletion schedule published
+  confidence: Verified
+  sources:
+  - url: https://www.empatica.com/privacy-participant
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: is retained during the provision of the Services plus a period of 10 years after the termination or Provider’s
+      withdrawal from the contract with Empatica
+  - url: https://www.empatica.com/purchase-agreement/
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: Customer will promptly cease its use of the Empatica Health Monitoring Platform, and return any leased
+      devices, upon expiration of the Subscription Term.
+  recheck_by: '2026-11-09'
+- field: ai_training_terms
+  status: stated
+  value: Platform terms let Empatica use customer study data to create digital biomarkers (algorithms) and fully
+    anonymized data sets for its own business purposes, owned by Empatica; no explicit mention of AI or ML training
+  confidence: Verified
+  sources:
+  - url: https://www.empatica.com/purchase-agreement/
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: Empatica may use the Data Services to create Digital Biomarkers and anonymized data sets for Empatica’s
+      own business purposes.
+  - url: https://www.empatica.com/purchase-agreement/
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: All derivative intellectual property generated by Empatica under these Terms, including the Digital Biomarkers
+      and anonymized data sets, are solely owned by Empatica
+  recheck_by: '2026-11-09'
+  note: Terms of Service version 1.0, effective 1 September 2022. The DPA could not be read (JavaScript-rendered
+    Salesforce file, robots-blocked).
+- field: deprecations
+  status: stated
+  value: E4 wristband and its software (E4 connect, manager, realtime, streaming server, SDK) sunset 14 February
+    2025. Embrace2 no longer sold (subscriptions continue). Studies created before 16 September 2026 default to
+    the Pulse Rate Pro sensor mode
+  confidence: Verified
+  sources:
+  - url: https://www.empatica.com/research/e4-sunset/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: The E4 software suite (E4 connect, E4 manager, E4 realtime app, E4 streaming server, and E4 SDK) can
+      no longer collect and store data
+  - url: https://www.empatica.com/research/e4-sunset/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: As of February 14th, 2025, the E4 and its software suite have officially been sunset
+  - url: https://www.empatica.com/embrace2/
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: Embrace2 is no longer available for purchase.
+  recheck_by: '2026-11-09'
+- field: baa
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://www.empatica.com/legal/
+    type: vendor_legal
+    retrieved: '2026-10-10'
+  - url: https://www.empatica.com/purchase-agreement/
+    type: vendor_legal
+    retrieved: '2026-10-10'
+  - url: https://www.empatica.com/privacy-participant
+    type: vendor_legal
+    retrieved: '2026-10-10'
+  - url: https://www.empatica.com/platform/research-studies
+    type: vendor_page
+    retrieved: '2026-10-10'
+  recheck_by: '2027-01-08'
+  note: No mention of a Business Associate Agreement on the legal page, Terms of Service or participant policy.
+    The DPA is linked but could not be read.
+- field: dpa
+  status: stated
+  value: 'Yes: an Empatica Health Monitoring Platform DPA is incorporated into the platform Terms of Service and
+    linked from the legal page'
+  confidence: Corroborated
+  sources:
+  - url: https://www.empatica.com/legal/
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: Empatica Health Monitoring Platform - Data Processing Agreement
+  - url: https://www.empatica.com/purchase-agreement/
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: Empatica’s processing of Customer Personal Data under these Terms is subject to the terms of the Empatica
+      Health Monitoring Platform Data Processing Agreement (“DPA”)
+  recheck_by: '2027-01-08'
+- field: hipaa_statement
+  status: stated
+  value: Empatica states the platform is HIPAA compliant and stores participant data on HIPAA-compliant cloud infrastructure
+  confidence: Corroborated
+  sources:
+  - url: https://www.empatica.com/platform/research-studies
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: The Empatica Health Monitoring Platform is GDPR/HIPAA compliant.
+  - url: https://www.empatica.com/privacy-participant
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: Empatica will process and store User Data on HIPAA-compliant cloud infrastructure located in US, Virginia
+  recheck_by: '2027-01-08'
+- field: gdpr_statement
+  status: stated
+  value: Empatica states the platform is GDPR compliant; Empatica Srl (Milan) has an appointed DPO
+  confidence: Corroborated
+  sources:
+  - url: https://www.empatica.com/platform/research-studies
+    type: vendor_page
+    retrieved: '2026-10-10'
+    quote: The Empatica Health Monitoring Platform is GDPR/HIPAA compliant.
+  - url: https://www.empatica.com/privacy
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: The Data Protection Officer appointed by Empatica pursuant to Section 37 of the Privacy Regulation can
+      be contacted at the following postal address
+  recheck_by: '2027-01-08'
+- field: iso27001
+  status: stated
+  value: ISO/IEC 27001:2022 certified by TUV Rheinland (reg. no. 01 153 2117571), Empatica Srl Milan and Surrey
+    UK sites, valid 2025-10-31 to 2028-10-30
+  confidence: Verified
+  sources:
+  - url: https://www.empatica.com/go/empatica-iso-iec
+    type: certificate
+    retrieved: '2026-10-10'
+    quote: 'Certificate Holder: Empatica Srl Via Stendhal 36 20144 Milano Italy'
+  - url: https://www.empatica.com/go/empatica-iso-iec
+    type: certificate
+    retrieved: '2026-10-10'
+    quote: The certificate is valid from 2025-10-31 until 2028-10-30.
+  recheck_by: '2027-01-08'
+  note: Certificate PDF hosted by Empatica. Also ISO 13485 and MDSAP certified per the legal page.
+- field: soc2
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://www.empatica.com/legal/
+    type: vendor_legal
+    retrieved: '2026-10-10'
+  - url: https://www.empatica.com/purchase-agreement/
+    type: vendor_legal
+    retrieved: '2026-10-10'
+  - url: https://www.empatica.com/cloud-api
+    type: vendor_page
+    retrieved: '2026-10-10'
+  recheck_by: '2027-01-08'
+  note: No SOC 2 report or attestation mentioned; the legal page cites ISO/IEC 27001:2022 for information security.
+- field: fda_clearances
+  status: stated
+  value: '510(k) cleared: Empatica Health Monitoring Platform K221282 (2022-11-20, DQA); Platform + EmbracePlus
+    + Empatica Care + Care Portal K230457 (2023-10-30, MWI) and K242737 (2025-06-06, MWI); EmbraceMini K252981 (2025-12-22,
+    LEL, sleep assessment); Platform for Parkinson''s Disease Monitoring incl. EmbracePlus, EmbraceMini, PKG Monitor
+    K260374 (2026-08-14, GYD). Also EpiMonitor K232915, K250515 and Embrace K172935, K181861 (seizure monitoring,
+    POS)'
+  confidence: Verified
+  sources:
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K230457
+    type: regulator_db
+    retrieved: '2026-10-10'
+    fetch_url: https://api.fda.gov/device/510k.json?search=k_number:K230457
+    quote: Empatica S.r.l. 2023-10-30 SESE IT Empatica Health Monitoring Platform; EmbracePlus; Empatica Care; Care
+      Portal
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K242737
+    type: regulator_db
+    retrieved: '2026-10-10'
+    fetch_url: https://api.fda.gov/device/510k.json?search=k_number:K242737
+    quote: Empatica S.r.l. 2025-06-06 SESE IT Empatica Health Monitoring Platform; EmbracePlus; Empatica Care; Care
+      Portal
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K221282
+    type: regulator_db
+    retrieved: '2026-10-10'
+    fetch_url: https://api.fda.gov/device/510k.json?search=k_number:K221282
+    quote: Empatica S.r.l. 2022-11-20 SESE IT Empatica Health Monitoring Platform
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K252981
+    type: regulator_db
+    retrieved: '2026-10-10'
+    fetch_url: https://api.fda.gov/device/510k.json?search=k_number:K252981
+    quote: Empatica S.r.l. 2025-12-22 SESE IT EmbraceMini
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K260374
+    type: regulator_db
+    retrieved: '2026-10-10'
+    fetch_url: https://api.fda.gov/device/510k.json?search=k_number:K260374
+    quote: Empatica S.r.l. 2026-08-14 SESE IT Empatica Health Monitoring Platform for Parkinson's Disease Monitoring;
+      EmbracePlus; EmbraceMini; Empatica Care; PKG Monitor by Empatica; Care Portal
+  recheck_by: '2027-01-08'
+  note: Care Lab App and Care Lab Portal (academic plan) are research-use only and not FDA-cleared, per the store
+    page.
+- field: data_residency
+  status: stated
+  value: Participant data stored on AWS in the US (Virginia); no residency options published
+  confidence: Corroborated
+  sources:
+  - url: https://www.empatica.com/privacy-participant
+    type: vendor_legal
+    retrieved: '2026-10-10'
+    quote: Empatica will process and store User Data on HIPAA-compliant cloud infrastructure located in US, Virginia
+  - url: https://academic-support.empatica.com/hc/en-us/articles/36981086545181-Accessing-Data-on-the-S3-Bucket
+    type: vendor_docs
+    retrieved: '2026-10-10'
+    quote: The data by the Empatica Health Monitoring Platform is securely stored and encrypted within AWS Cloud
+      Services, particularly within an Amazon S3 bucket
+  recheck_by: '2027-01-08'
