@@ -318,6 +318,58 @@
 ### Activinsights (GENEActiv)
 
 <!-- facts:begin activinsights-geneactiv -->
+*Generated from the fact record by `tools/facts/generate.py`. Edit the record, not this block.*
+
+**Research access**
+
+| Fact | Value |
+|---|---|
+| Formal research or academic program (name, what it offers) | No named academic or research access program. Research is the core market, served by device sales on quotation plus paid, quoted Study Services (study design, logistics and deployment, GENEActiv and R Markdown training, data acquisition and analysis, algorithm development), and by free sleep tools (Actigraphy Sleep Toolkit; Advanced Sleep Toolkit free up to 10 participants). [V, 2026-10-11] |
+| Who can join the research program | No eligibility rules published. Devices are supplied to healthcare professionals, researchers and clinical trial organisations; the GENEActiv IFU names healthcare professionals as intended users. [V, 2026-10-11] |
+| How to apply, and any approval or review step | No application or approval step. Buyers request a quotation through a web form; the Study Management Hub is offered by demo request. [V, 2026-10-11] |
+| Whether the program is active, paused, renamed or closed | Active. GENEActiv and the ActivInsights Band are on sale; the GENEActiv 1.3 hardware revision, the macOS GENEActiv Software and the ActivInsights Companion app were updated in 2026; GENEAcore was published on CRAN in April 2026; a US office opened in Texas in June 2025. [C, 2026-10-11] |
+| Whether the general developer or API program is open to new applicants | No self-serve developer program, developer portal or public API reference. SDKs are provided under licence on contact; the open R packages GENEAread, GENEAclassify and GENEAcore (GPL) read and process GENEActiv .bin files. [V, 2026-10-11] |
+| Participant or user limits before approval or by tier | **Advanced Sleep Toolkit:** The Advanced Sleep Toolkit is free for up to 10 participants; the price beyond that is not published. [V, 2026-10-11]<br>**GENEActiv and ActivInsights Band hardware:** n/a |
+| How academic access differs from commercial or consumer access | No separate academic tier or price. The vendor positions GENEActiv for academic researchers wanting raw data. Its R Markdown analysis tools are licensed for non-commercial analysis of raw data only and restricted to the Activinsights ecosystem; the CRAN packages are GPL with no such restriction. [V, 2026-10-11]<br>**Terms of sale, all customers:** Terms of sale clause 24 (Confidentiality), applying to every customer, academic or commercial: the customer may not publish or release, or permit publication of, any materials about the operation or use of the product without Activinsights' prior written consent. Relevant to methods papers and device documentation. [V, 2026-10-11] |
+
+**Pricing**
+
+| Fact | Value |
+|---|---|
+| Device or hardware list price | **GENEActiv:** No vendor list price (quotation only). A competitor's guides put GENEActiv at about GBP 425 to 510 per device. Stated device lifetime: 50 charging cycles or 2 years. A USB charging cradle (holds 4) is needed as well. [R, 2026-10-11]<br>**ActivInsights Band:** Not public [2026-10-11] |
+| Consumer subscription or membership price | **GENEActiv:** No subscription. The GENEActiv Software is a free download, and the web Actigraphy Sleep Toolkit is free. [V, 2026-10-11]<br>**ActivInsights Band:** Band software access for up to one year is included with the Band purchase; unlimited lifestyle reports are then provided on an annual, renewable basis at an unpublished price. [V, 2026-10-11] |
+| Research or academic pricing or discount | Not public [2026-10-11] |
+| Fees for API, SDK, platform or data access | **Sleep Toolkits:** The Actigraphy Sleep Toolkit is free with no software or licensing fees; the Advanced Sleep Toolkit is free for up to 10 participants. [V, 2026-10-11]<br>**Cloud API, SDK licence, Study Management Hub and Study Services:** Not public [2026-10-11] |
+| Minimum order, term or commitment | Minimum order values apply (amount not published); products must be ordered in the pack sizes on the price list. [V, 2026-10-11] |
+| Whether pricing requires contacting sales | Yes. Products and services are priced by quotation, in GB pounds unless agreed otherwise, valid 90 days. [V, 2026-10-11] |
+
+**Data access and terms**
+
+| Fact | Value |
+|---|---|
+| Raw signals available to researchers, and by which route | **GENEActiv:** Raw, unfiltered tri-axial acceleration in SI units (+/- 8 g, 12 bit), ambient light, near-body temperature and event-button presses, stored on the device and extracted to an open-format .bin file over the USB cradle. GENEActiv 1.3 also sends adherence data over Bluetooth during wear; raw data still come off by USB. [V, 2026-10-11]<br>**ActivInsights Band:** No raw sensor output documented. The Band classifies behaviour on the device and uploads behavioural events (open COEL atom format) through the companion app. [C, 2026-10-11] |
+| Derived or processed metrics available to researchers | **GENEActiv:** No on-device metrics. The vendor advertises 150+ digital measures (activity intensity, sedentary vs movement, posture changes, sleep/wake, sleep events) delivered by its analysis service; the GENEActiv Software produces epoch summaries; the Sleep Toolkits score sleep (total sleep, onset latency, efficiency, WASO, naps); open R packages are available. [V, 2026-10-11]<br>**ActivInsights Band:** Behavioural events (about 12 activity classes including sleep, sedentary, standing, walking, running, cycling, swimming, exercise and non-wear), steps, energy expenditure, sleep/wake patterns and event markers, delivered in reports, the Band Clinic App or by API. [V, 2026-10-11] |
+| Documented sampling rates or temporal resolution | **GENEActiv:** Acceleration selectable from 10 to 100 Hz (+/- 8 g, 12 bit); temperature at least every 30 s. GENEActiv 1.3 offers 10, 20, 25, 50 and 100 Hz only (the IFU table marks the intermediate rates N/A). [V, 2026-10-11]<br>**ActivInsights Band:** Not public [2026-10-11] |
+| How far back data can be retrieved | **GENEActiv:** On-device recording length at a given rate is stated three ways. The product sheet and the IFU's specification table give 14 days at 100 Hz and 60 days at 20 Hz; the IFU's own per-version table gives, for versions 1.2 and 1.3, 14 days at 100 Hz, 44 at 20 Hz and 56 at 10 Hz (version 1.1, 7 and 30); the FAQ gives 7 days at 100 Hz and 30 at 20 Hz. Once extracted, files sit in the study's own storage with no vendor limit. (conflict) [U, 2026-10-11]<br>**ActivInsights Band:** The Band monitors for 6 months to a year without charging and should upload at least weekly; cloud-held data fall under a 10-year review retention period. [V, 2026-10-11] |
+| Export, API, SDK or file routes | **GENEActiv:** USB route: the free GENEActiv Software (Windows, macOS) extracts .bin files over the 4-unit USB cradle and converts them to raw CSV, epoch CSV or epoch AWD (for Actiware-style scoring or the Sleep Toolkit); the open R packages read .bin. GENEActiv 1.3 adds Bluetooth adherence extraction by a background app (Windows, macOS, Android; iOS adherence only), repeating roughly every five hours. Optional cloud route: the ActivInsights Device Manager uploads .bin files to the Study Management Hub. [V, 2026-10-11]<br>**ActivInsights Band and cloud platform:** Wireless upload through the ActivInsights Companion app (iOS, Android, Windows) to the Azure-hosted cloud; data come out through the Band Clinic App, reports, or configurable APIs (raw, event, summary, health, management and quality data). SDKs under licence. [V, 2026-10-11] |
+| API rate limits | Not public [2026-10-11] |
+| Terms on retaining, storing or deleting data | Personal data are kept as long as the original purpose needs, with a 10-year review retention period, in the GENEActiv and Band privacy notices. GENEActiv raw data extracted by USB stay in the study's own store unless sent to Activinsights. [V, 2026-10-11] |
+| Terms on using data to train AI or ML models | Not public [2026-10-11] |
+| Announced shutdowns, deprecations or migrations, with dates | No product shutdown announced. GENEActiv is moving from the EU Medical Device Directive to the EU MDR under the Regulation 2023/607 transition. A GENEActiv 1.3 hardware revision (Bluetooth adherence) shipped in 2026. The Band uploader app was rebranded ActivInsights Companion and now supports both devices. Support for the oldest GENEActiv units (serials starting 0) is by request. [V, 2026-10-11] |
+
+**Compliance and regulatory**
+
+| Fact | Value |
+|---|---|
+| Whether a HIPAA Business Associate Agreement is offered | Not public [2026-10-11] |
+| Whether a data processing agreement is offered | Not public [2026-10-11] |
+| Published HIPAA statement | Not public [2026-10-11] |
+| Published GDPR statement | Data services are UK-based and operated under GDPR; Activinsights is registered with the ICO (ZA258669); privacy notices follow the COEL consent model and list GB as the processing country. [C, 2026-10-11] |
+| ISO/IEC 27001 status and evidence | Unclear |
+| SOC 2 status and evidence | Not public [2026-10-11] |
+| FDA clearances, from the FDA database | **GENEActiv:** No 510(k), De Novo or PMA. Listed, not cleared, with FDA under establishment registration 3014083954 (owner/operator 10056642, Activinsights Ltd.), product code IKK, isokinetic testing and evaluation system, 21 CFR 890.1925, device class 2, 510(k) exempt; listed 2018-01-04. [V, 2026-10-11]<br>**ActivInsights Band:** Not public [2026-10-11] |
+| Where data is stored, and residency options | **ActivInsights Band and cloud platform:** Cloud raw-data management, analysis and API platform hosted on Microsoft Azure (region not stated), data services based in the UK, privacy notices list GB as the processing country; directly identifying data are held outside the cloud in study-specific systems. [C, 2026-10-11]<br>**GENEActiv:** With the USB route, raw data are extracted to the study's own local store and never reach the vendor; uploading .bin files to the Study Management Hub or Advanced Sleep Toolkit moves them to the vendor cloud. [C, 2026-10-11] |
+
 <!-- facts:end -->
 
 ## Key Links
