@@ -90,10 +90,10 @@ def check(company, rec, schema):
             if st == 'stated' and not str(f.get('value', '')).strip():
                 e(f'{label}: status stated needs a value')
             stypes = {s.get('type') for s in srcs}
-            if fname in cap['fields'] and f.get('confidence') == 'Verified' and not stypes & set(cap['independent_types']):
+            if st in ('stated', 'conflict') and fname in cap['fields'] and f.get('confidence') == 'Verified' and not stypes & set(cap['independent_types']):
                 e(f'{label}: a company statement about itself is capped at {cap["max_without_independent"]} '
                   f'without a source of type {cap["independent_types"]}')
-            if fname in reg['fields'] and f.get('confidence') == 'Verified' and not stypes & set(reg['verified_requires']):
+            if st in ('stated', 'conflict') and fname in reg['fields'] and f.get('confidence') == 'Verified' and not stypes & set(reg['verified_requires']):
                 e(f'{label}: Verified FDA status needs a regulator_db source')
             due = as_date(f.get('recheck_by'))
             if not due:

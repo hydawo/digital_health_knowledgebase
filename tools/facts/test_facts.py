@@ -72,6 +72,11 @@ class Validation(unittest.TestCase):
         ok['sources'].append({'url': 'https://registry.example', 'type': 'certificate', 'retrieved': '2026-10-10'})
         self.assertEqual(self.errs(with_fact(ok)), [])
 
+    def test_cap_does_not_apply_to_not_public(self):
+        f = {'field': 'soc2', 'status': 'not_public', 'confidence': 'Verified', 'recheck_by': '2999-01-01',
+             'sources': [{'url': 'https://example.com/trust', 'type': 'vendor_page', 'retrieved': '2026-10-10'}]}
+        self.assertEqual(self.errs(with_fact(f)), [])
+
     def test_fda_needs_regulator(self):
         self.assertTrue(any('regulator_db' in e for e in self.errs(with_fact(stated('fda_clearances')))))
 
