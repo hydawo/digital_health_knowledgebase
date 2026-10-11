@@ -1,0 +1,602 @@
+# Draft record for labfront, researcher B, 2026-10-11. Schema: facts/_schema.yaml
+name: Labfront
+kind: intermediary
+profile: module-01-wearables/profiles/data-intermediaries.md
+watch:
+- url: https://www.labfront.com/pricing
+  role: pricing
+- url: https://help.labfront.com/pricing-plans-and-payment-1
+  role: pricing
+- url: https://www.labfront.com/grant
+  role: research_program
+- url: https://www.labfront.com/collaborator
+  role: research_program
+- url: https://help.labfront.com/developer-access
+  role: developer_program
+- url: https://www.labfront.com/compatible-devices
+  role: docs
+- url: https://help.labfront.com/download-your-data
+  role: docs
+- url: https://www.labfront.com/trust-security
+  role: trust
+- url: https://help.labfront.com/security-statement
+  role: trust
+- url: https://help.labfront.com/privacy-and-security-faqs
+  role: trust
+- url: https://help.labfront.com/privacy-policy
+  role: terms
+- url: https://help.labfront.com/terms-of-service
+  role: terms
+- url: https://apps.apple.com/us/app/labfront-companion/id1626813782
+  role: app_store
+- url: https://play.google.com/store/apps/details?id=com.labfront.production
+  role: app_store
+facts:
+# ---------------- Research access ----------------
+- field: research_program
+  status: stated
+  value: 'Two programs. A Grants Program that subsidises Labfront platform access, analytics packages and Garmin devices
+    (2026 calls include the Labfront x Garmin Health Research Grant, a Sleep Science grant and an Aging Science grant,
+    each worth about $5,000 to $5,500), plus institution-specific grants. And a free Research Collaborator Program for
+    academic institutions offering dedicated grants, product discounts, analytics guidance and a device loaner program.'
+  confidence: Verified
+  sources:
+  - url: https://www.labfront.com/pricing
+    type: vendor_page
+    quote: Our Grants Program provides subsidized access to the Labfront platform, analytics packages, and devices for
+      researchers with limited budgets.
+    retrieved: '2026-10-11'
+  - url: https://www.labfront.com/grant
+    type: vendor_page
+    quote: '1-year access to a Labfront Advanced account (incl. 20 participants) 1 x Labfront analytics package (standard)
+      Onboarding support Total value: $5500'
+    retrieved: '2026-10-11'
+  - url: https://www.labfront.com/collaborator
+    type: vendor_page
+    quote: Access unique grant opportunities reserved only for collaborators
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: program_eligibility
+  status: stated
+  scope: Research Collaborator Program
+  value: Any academic institution may register.
+  confidence: Verified
+  sources:
+  - url: https://www.labfront.com/collaborator
+    type: vendor_page
+    quote: Any academic institution is welcome to register and become part of the Labfront Collaborator Program.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: program_eligibility
+  status: stated
+  scope: Grants (2026 calls)
+  value: Set per call. The Labfront x Garmin Health grant is open globally (EMEA, APAC, Americas) and excludes previous
+    recipients of that grant; the Aging Science grant requires affiliation with an accredited academic, research or
+    professional institution and a plan to collect data with Labfront.
+  confidence: Verified
+  sources:
+  - url: https://www.labfront.com/grant
+    type: vendor_page
+    quote: Open to a global audience of researchers (EMEA, APAC, and Americas), subject to applicable mandatory regulation
+      and legislation.
+    retrieved: '2026-10-11'
+  - url: https://www.labfront.com/grant
+    type: vendor_page
+    quote: Open to researchers at any career stage affiliated with an accredited academic, research, or professional institution.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: program_application
+  status: stated
+  value: 'Collaborator Program: fill out a form; selected institutions get a dedicated Labfront liaison. Grants: a
+    short study summary or abstract (about 200 words), a personal statement (200 words max) and a CV, by each call''s
+    deadline; Garmin and Labfront may reject applications, for example for compliance reasons.'
+  confidence: Verified
+  sources:
+  - url: https://www.labfront.com/collaborator
+    type: vendor_page
+    quote: Applying is as simple as filling out a form. If selected, a dedicated Labfront liaison will be provided to your
+      institution to guide you through the program.
+    retrieved: '2026-10-11'
+  - url: https://www.labfront.com/grant
+    type: vendor_page
+    quote: Summary of research study (Apx. 200 words) Personal statement (Max. 200 words) Curriculum Vitae Application deadline
+      November 2, 2026
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: program_status
+  status: stated
+  value: Active. Three 2026 grant calls are open with deadlines of 2 November, 27 November and 7 December 2026, and
+    grants are described as rolling and year-round. The Collaborator Program is taking applications.
+  confidence: Verified
+  sources:
+  - url: https://www.labfront.com/grant
+    type: vendor_page
+    quote: Application deadline December 7, 2026
+    retrieved: '2026-10-11'
+  - url: https://www.labfront.com/pricing
+    type: vendor_page
+    quote: we award grants on a rolling basis
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: developer_program_status
+  status: stated
+  value: Developer Access is a paid beta add-on (from $4,000, Advanced plan only). The project owner emails support and
+    Labfront grants access within 5 working days. Access is to an S3 bucket; there is no external API or SDK.
+  confidence: Verified
+  sources:
+  - url: https://help.labfront.com/developer-access
+    type: vendor_docs
+    quote: Labfront does not currently provide an external SDK or API for data access.
+    retrieved: '2026-10-11'
+  - url: https://help.labfront.com/developer-access
+    type: vendor_docs
+    quote: Labfront will review your access request and, within 5 working days, grant the appropriate access rights.
+    retrieved: '2026-10-11'
+  - url: https://www.labfront.com/pricing
+    type: vendor_page
+    quote: Add-ons Available on Advanced Plan Only
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: user_cap
+  status: stated
+  value: Tester (free) 5 participants; Basic and Advanced 20 participants included, with more at $10 (Basic) or $25
+    (Advanced) per participant per year. Every participant account counts, even when participants share a device.
+  confidence: Verified
+  sources:
+  - url: https://www.labfront.com/pricing
+    type: vendor_page
+    quote: Participants Included 5 20 20 Additional Participants N/A $10/participant $25/participant
+    retrieved: '2026-10-11'
+  - url: https://www.labfront.com/pricing
+    type: vendor_page
+    quote: Every new participant created in Labfront counts as one participant, regardless of whether participants share
+      the same device.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: academic_vs_commercial
+  status: stated
+  value: One published price list with no separate academic or commercial plan. Academic-only extras are the Garmin
+    and Movesense device discounts, the Collaborator Program (academic institutions) and the grants. Commercial terms
+    are not described separately.
+  confidence: Corroborated
+  sources:
+  - url: https://www.labfront.com/compatible-devices
+    type: vendor_page
+    quote: We’ve partnered with Garmin and Movesense to offer exclusive discounts to academic researchers.
+    retrieved: '2026-10-11'
+  - url: https://www.labfront.com/collaborator
+    type: vendor_page
+    quote: Any academic institution is welcome to register and become part of the Labfront Collaborator Program.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: The absence of a commercial tier is read from the pricing page, which lists one set of plans for everyone.
+# ---------------- Pricing ----------------
+- field: device_price
+  status: stated
+  value: Labfront does not sell or include hardware. Customers get a Garmin discount, typically about 20% (20 to 25%
+    on the help centre), and a Movesense discount, by quote.
+  confidence: Verified
+  sources:
+  - url: https://www.labfront.com/pricing
+    type: vendor_page
+    quote: No, hardware is not included in any plan.
+    retrieved: '2026-10-11'
+  - url: https://help.labfront.com/pricing-plans-and-payment-1
+    type: vendor_docs
+    quote: The discount varies by device model and quantity, but is typically around 20%
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: subscription_price
+  status: not_applicable
+  note: No consumer subscription. Participants use the free Labfront Companion app; researcher plan prices are under
+    api_platform_fees.
+- field: academic_pricing
+  status: stated
+  value: No discounted academic plan price. Academic support comes as grants (subsidised platform, analytics and
+    devices), Collaborator Program discounts on Labfront products, and academic device discounts.
+  confidence: Verified
+  sources:
+  - url: https://www.labfront.com/pricing
+    type: vendor_page
+    quote: Our Grants Program provides subsidized access to the Labfront platform, analytics packages, and devices for
+      researchers with limited budgets.
+    retrieved: '2026-10-11'
+  - url: https://www.labfront.com/collaborator
+    type: vendor_page
+    quote: Enjoy significant discounts on Labfront products and services
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: api_platform_fees
+  status: stated
+  value: 'Plans: Tester free, Basic $500/yr (one integration, Garmin Connect or Dexcom), Advanced $1,250/yr (all
+    integrations, high-resolution data). Add-ons on Advanced only: Developer Access from $4,000, analytics reports from
+    $3,000 to $6,000 plus $50 per participant, Data Audit from $500. All in USD.'
+  confidence: Verified
+  sources:
+  - url: https://www.labfront.com/pricing
+    type: vendor_page
+    quote: Annual Price Free $500/yr $1250/yr
+    retrieved: '2026-10-11'
+  - url: https://www.labfront.com/pricing
+    type: vendor_page
+    quote: Developer Access N/A N/A Starting from $4000 Data Audit N/A N/A Starting from $500
+    retrieved: '2026-10-11'
+  - url: https://www.labfront.com/pricing
+    type: vendor_page
+    quote: $3000 + $50/participant
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: minimum_commitment
+  status: stated
+  value: Annual billing in advance, no monthly plans (short studies by negotiation). Subscriptions renew automatically
+    and fees are non-refundable except as the Terms of Service set out.
+  confidence: Verified
+  sources:
+  - url: https://help.labfront.com/pricing-plans-and-payment-1
+    type: vendor_docs
+    quote: We don't currently offer monthly plans.
+    retrieved: '2026-10-11'
+  - url: https://help.labfront.com/terms-of-service
+    type: vendor_legal
+    quote: Except as set forth in the Agreement, all fees for the Services are non-refundable.
+    retrieved: '2026-10-11'
+  - url: https://help.labfront.com/terms-of-service
+    type: vendor_legal
+    quote: Your subscription will continue indefinitely until terminated in accordance with the Agreement.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: quote_required
+  status: stated
+  value: Plan prices are public. Add-ons ("Starting from"), hardware discounts, extra participant slots, short-term
+    studies and retroactive Garmin Connect extraction need contact with Labfront.
+  confidence: Verified
+  sources:
+  - url: https://help.labfront.com/developer-access
+    type: vendor_docs
+    quote: For detailed pricing information, please contact support@labfront.com .
+    retrieved: '2026-10-11'
+  - url: https://www.labfront.com/pricing
+    type: vendor_page
+    quote: Contact us to access your discount and get a hardware quote.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+# ---------------- Data access ----------------
+- field: raw_streams
+  status: stated
+  value: 'Advanced plan: Garmin device-direct data through the Labfront app (raw 3-axis accelerometer, enhanced
+    beat-to-beat interval, actigraphy), Movesense ECG waveform, RR interval and 9-axis IMU, and Dexcom CGM. Basic plan:
+    standard Garmin Connect data only. Movesense recordings must be started by the participant in a task; they cannot run
+    continuously in the background. Current supported brands are Garmin, Movesense and Dexcom.'
+  confidence: Verified
+  sources:
+  - url: https://help.labfront.com/download-your-data
+    type: vendor_docs
+    quote: Yes, the device-direct raw data can be downloaded if you have an Advanced Plan.
+    retrieved: '2026-10-11'
+  - url: https://help.labfront.com/download-your-data
+    type: vendor_docs
+    quote: On Basic plans, only the standard Garmin Connect data will be available to download.
+    retrieved: '2026-10-11'
+  - url: https://help.labfront.com/movesense-overview
+    type: vendor_docs
+    quote: The data cannot be captured continuously in the background.
+    retrieved: '2026-10-11'
+  - url: https://www.labfront.com/compatible-devices
+    type: vendor_page
+    quote: Labfront is currently compatible with select Garmin, Movesense and Dexcom devices, but we plan to add more devices
+      in the near future.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: raw_streams
+  status: conflict
+  scope: Polar devices
+  value: A 2022 founder interview says Labfront works with Garmin and Polar; Labfront's current device pages list only
+    Garmin, Movesense and Dexcom. No current Labfront page mentions Polar.
+  confidence: Unclear
+  sources:
+  - url: https://insider.fitt.co/?p=4903
+    type: secondary
+    quote: we focused on building an analytics engine that works with consumer wearables like Garmin and Polar
+    retrieved: '2026-10-11'
+  - url: https://www.labfront.com/compatible-devices
+    type: vendor_page
+    quote: Labfront is currently compatible with select Garmin, Movesense and Dexcom devices, but we plan to add more devices
+      in the near future.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Likely a dropped or never-shipped integration; worth asking Labfront before planning a Polar study.
+- field: derived_metrics
+  status: stated
+  value: Garmin Connect summaries (daily summary, activity, sleep, stress, respiration, SpO2), Labfront's own actigraphy
+    sleep algorithms run on Garmin accelerometer data, and paid analytics reports (HRV time and frequency domain, HRV
+    non-linear, actigraphy sleep, sleep regularity and timing).
+  confidence: Verified
+  sources:
+  - url: https://www.labfront.com/collect/physiological-data
+    type: vendor_page
+    quote: Researchers are able to observe high-level data for each day such as average heart rate, maximum/minimum stress
+      levels, total steps taken, calories burned, etc.
+    retrieved: '2026-10-11'
+  - url: https://www.labfront.com/collect/physiological-data
+    type: vendor_page
+    quote: We've adapted medical-grade actigraphy algorithms to process raw accelerometer data from Garmin wearables, achieving
+      over 95% accuracy.
+    retrieved: '2026-10-11'
+  - url: https://www.labfront.com/pricing
+    type: vendor_page
+    quote: Measures time-domain (HR, pRR50, SDRR, RMSSD) and frequency-domain (TP, VLF, LF, HF, LF/HF ratio) markers of
+      autonomic nervous system activity, computed from beat-to-beat interval data.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: The 95% actigraphy accuracy figure is a vendor claim with no linked validation on the page.
+- field: sampling_rates
+  status: stated
+  value: 'Advanced: Garmin heart rate 1 s to 60 min, accelerometer streaming 25, 50 or 100 Hz, beat-to-beat each beat,
+    actigraphy 10 s to 1 min; Movesense IMU 12.5 to 208 Hz, ECG 125, 250 or 500 Hz, RR each beat, recordings up to
+    12 h. Basic: Garmin Connect heart rate 1 min, respiration, SpO2 and stress 3 min, no beat-to-beat or accelerometer,
+    no Movesense. Tester: Movesense recordings capped at 15 min. Dexcom CGM every 5 min.'
+  confidence: Verified
+  sources:
+  - url: https://www.labfront.com/pricing
+    type: vendor_page
+    quote: Adjust sampling rates from 100 Hz accelerometry down to beat-to-beat intervals for HRV.
+    retrieved: '2026-10-11'
+  - url: https://www.labfront.com/pricing
+    type: vendor_page
+    quote: ECG Waveform 125Hz 125Hz, 250Hz, 500Hz
+    retrieved: '2026-10-11'
+  - url: https://www.labfront.com/pricing
+    type: vendor_page
+    quote: Maximum Data Recording Duration 15 min Movesense Not Available 12 hrs
+    retrieved: '2026-10-11'
+  - url: https://www.labfront.com/collect/physiological-data
+    type: vendor_page
+    quote: Sampling Rate 5 min
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: The physiological-data page gives Movesense RR as 128 Hz to 512 Hz, while the pricing table gives ECG as 125,
+    250 or 500 Hz; the pricing table is used here.
+- field: history_depth
+  status: stated
+  value: Tester downloads are limited to the last 30 days; paid plans have unlimited history for data collected in the
+    project. A separately quoted service extracts participants' existing Garmin Connect data up to two years back.
+  confidence: Verified
+  sources:
+  - url: https://www.labfront.com/pricing
+    type: vendor_page
+    quote: Access Data History Last 30 days Unlimited Unlimited
+    retrieved: '2026-10-11'
+  - url: https://www.labfront.com/blog/retroactively-collect-garmin-data
+    type: vendor_page
+    quote: We can collect data that's up to two years old.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: The 2022 retroactive-extraction post says it needs the participant's Garmin Connect login details, which an IRB
+    may object to.
+- field: export_routes
+  status: stated
+  value: Dashboard download as a ZIP of CSV files, filterable by participant and date. Developer Access (paid add-on)
+    gives an S3 bucket refreshed every 6 hours. No API or SDK. Participants can download a copy of their own data.
+  confidence: Verified
+  sources:
+  - url: https://help.labfront.com/download-your-data
+    type: vendor_docs
+    quote: as we can only provide ZIP files for data downloads
+    retrieved: '2026-10-11'
+  - url: https://help.labfront.com/developer-access
+    type: vendor_docs
+    quote: Developers are provided access to an S3 Bucket, which is updated every 6 hours with the latest available data.
+    retrieved: '2026-10-11'
+  - url: https://help.labfront.com/labfront-documentation-for-irb
+    type: vendor_docs
+    quote: Labfront also offers study participants the opportunity to download a copy of their collected data.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: rate_limits
+  status: not_applicable
+  note: Labfront has no external API (help.labfront.com/developer-access, checked 2026-10-11), so there are no API
+    rate limits. The S3 bucket refresh interval (every 6 hours) is under export_routes.
+- field: retention_terms
+  status: stated
+  value: Research data is typically kept for 3 years after study completion (the Security Statement says at least 3
+    years, longer on request for local law). Researchers can ask for full deletion at any time, and terminating all
+    services deletes the account's data.
+  confidence: Verified
+  sources:
+  - url: https://www.labfront.com/trust-security
+    type: vendor_page
+    quote: We typically save research data for 3 years after study completion, following the write-up of the results.
+    retrieved: '2026-10-11'
+  - url: https://help.labfront.com/security-statement
+    type: vendor_legal
+    quote: Labfront stores all data for at least 3 years after your study finishes and allows you to easily export it at
+      any time.
+    retrieved: '2026-10-11'
+  - url: https://help.labfront.com/privacy-and-security-faqs
+    type: vendor_docs
+    quote: Researchers can also request full data deletion at any time.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: ai_training_terms
+  status: conflict
+  value: The Privacy Policy (updated 30 December 2025) defines personal information to include participants' Experiment
+    Data, wearable data among it, and says Labfront uses data to train its machine learning models. The Trust page and
+    FAQs say researchers own the data and Labfront does not access it. No opt-out from model training is described.
+  confidence: Unclear
+  sources:
+  - url: https://help.labfront.com/privacy-policy
+    type: vendor_legal
+    quote: We also use data to train and improve our machine learning models.
+    retrieved: '2026-10-11'
+  - url: https://help.labfront.com/privacy-policy
+    type: vendor_legal
+    quote: including your data collected through a wearable device (e.g. physiological data such as heart rate, activity,
+      sleep quality, etc.)
+    retrieved: '2026-10-11'
+  - url: https://www.labfront.com/trust-security
+    type: vendor_page
+    quote: You own your data and we do not access it.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Worth a written answer from Labfront before an IRB submission.
+- field: deprecations
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://help.labfront.com/
+    type: vendor_docs
+    retrieved: '2026-10-11'
+  - url: https://www.labfront.com/compatible-devices
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://apps.apple.com/us/app/labfront-companion/id1626813782
+    type: app_store
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: No changelog or deprecation notices found. Developer Access is labelled Beta and Data Visualizer "Coming Soon";
+    Polar no longer appears on any Labfront page (see raw_streams, Polar scope).
+# ---------------- Compliance ----------------
+- field: baa
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://www.labfront.com/trust-security
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://help.labfront.com/security-statement
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://help.labfront.com/privacy-and-security-faqs
+    type: vendor_docs
+    retrieved: '2026-10-11'
+  - url: https://help.labfront.com/privacy-policy
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://help.labfront.com/terms-of-service
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: No page mentions a Business Associate Agreement. Labfront's model is that participant data is pseudonymous
+    (invite codes, no names), which it uses to argue PHI is limited.
+- field: dpa
+  status: stated
+  value: A Data Processing Agreement is available to specific customers on request; a Data Use Agreement template is
+    also available on request. Labfront describes itself as primarily a processor.
+  confidence: Corroborated
+  sources:
+  - url: https://help.labfront.com/privacy-policy
+    type: vendor_legal
+    quote: Additionally, Labfront can provide a Data Processing Agreement (DPA) for specific customers upon request to further
+      ensure compliance with data protection requirements.
+    retrieved: '2026-10-11'
+  - url: https://help.labfront.com/privacy-and-security-faqs
+    type: vendor_docs
+    quote: However, if a DUA is specifically required, you can contact support@labfront.com for a template.
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+- field: hipaa_statement
+  status: stated
+  value: Labfront says its privacy and compliance policy aligns with HIPAA and that it works to ensure HIPAA compliance.
+    No BAA or audit is published.
+  confidence: Corroborated
+  sources:
+  - url: https://www.labfront.com/trust-security
+    type: vendor_page
+    quote: Our comprehensive privacy and compliance policy ensures alignment with regulations such as the Health Insurance
+      Portability and Accountability Act (HIPAA) among others.
+    retrieved: '2026-10-11'
+  - url: https://www.labfront.com/research/data-storage
+    type: vendor_page
+    quote: We work continuously to ensure compliance with HIPAA, GDPR, GCP and more.
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+- field: gdpr_statement
+  status: stated
+  value: Labfront states GDPR adherence and certifies under the EU-U.S. Data Privacy Framework, its UK Extension and
+    the Swiss-U.S. DPF (Kiipo Co.). It describes itself as primarily a processor for research teams.
+  confidence: Corroborated
+  sources:
+  - url: https://help.labfront.com/privacy-policy
+    type: vendor_legal
+    quote: Kiipo Co. (d/b/a Labfront) complies with the EU-U.S. Data Privacy Framework (EU-U.S. DPF)
+    retrieved: '2026-10-11'
+  - url: https://help.labfront.com/privacy-and-security-faqs
+    type: vendor_docs
+    quote: Labfront primarily acts as a data processor
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: The DPF registry entry was not checked (dataprivacyframework.gov did not render for scripts); checking it would
+    lift this.
+- field: iso27001
+  status: unclear
+  value: No Labfront ISO 27001 certificate is published. The IRB template lists ISO 27001 among best practices it
+    complies with, while the Security Statement attributes ISO 27001 to the AWS data centres.
+  confidence: Unclear
+  sources:
+  - url: https://help.labfront.com/labfront-documentation-for-irb
+    type: vendor_docs
+    quote: such as ICH-GCP, HIPAA, PIPEDA, GDPR, ISO 27001, and ISO 9001
+    retrieved: '2026-10-11'
+  - url: https://help.labfront.com/security-statement
+    type: vendor_legal
+    quote: AWS data centers are certified with a broad set of international and industry-specific standards
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+- field: soc2
+  status: unclear
+  value: One page says Labfront "adheres to" SOC 1/2/3, but no SOC 2 report, auditor or attestation date is published,
+    and the Trust page lists only HIPAA, GDPR, GCP and StateRAMP. Possibly AWS's reports.
+  confidence: Unclear
+  sources:
+  - url: https://www.labfront.com/research/data-storage
+    type: vendor_page
+    quote: Labfront adheres to ICH-GCP, HIPAA, SOC 1/2/3 and GDPR.
+    retrieved: '2026-10-11'
+  - url: https://www.labfront.com/trust-security
+    type: vendor_page
+    quote: Labfront adheres to global privacy laws and security standards ensuring we breeze through IRBs and purchasing
+      committees.
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: HECVAT documentation is available on request from support@labfront.com.
+- field: fda_clearances
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://api.fda.gov/device/510k.json?search=applicant:%22kiipo%22
+    type: regulator_db
+    retrieved: '2026-10-11'
+  - url: https://api.fda.gov/device/510k.json?search=applicant:%22labfront%22
+    type: regulator_db
+    retrieved: '2026-10-11'
+  - url: https://api.fda.gov/device/510k.json?search=device_name:%22labfront%22
+    type: regulator_db
+    retrieved: '2026-10-11'
+  - url: https://api.fda.gov/device/registrationlisting.json?search=registration.name:kiipo
+    type: regulator_db
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: All four openFDA queries returned no matches (404). Labfront is a data platform, not a device; the Garmin CIRQA
+    band used in its grants is described on the grant page as not a medical device.
+- field: data_residency
+  status: conflict
+  value: US only (AWS), with EU servers planned but not live. Pages disagree on the state - the Trust page and FAQs say
+    Virginia, the 2022 Security Statement says primarily Ohio, with backups across US regions.
+  confidence: Corroborated
+  sources:
+  - url: https://www.labfront.com/trust-security
+    type: vendor_page
+    quote: We currently only support U.S. data centers and the data is stored in Virginia, America.
+    retrieved: '2026-10-11'
+  - url: https://help.labfront.com/security-statement
+    type: vendor_legal
+    quote: Labfront primarily uses an AWS data center in Ohio.
+    retrieved: '2026-10-11'
+  - url: https://www.labfront.com/trust-security
+    type: vendor_page
+    quote: Labfront is currently hosted in the US but will be opening up new EU servers in the future to support our European
+      customers.
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: Hosting is managed by Labfront only (no self-hosting found); the Security Statement offers a source-code escrow
+    if the product is discontinued. The participant app, Labfront Companion, is free on iOS (iPhone only) and Android.
