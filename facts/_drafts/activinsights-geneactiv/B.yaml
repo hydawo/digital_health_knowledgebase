@@ -1,0 +1,569 @@
+# Draft record for activinsights-geneactiv, researcher B, 2026-10-11. Schema: facts/_schema.yaml
+name: Activinsights (GENEActiv)
+kind: wearable
+profile: module-01-wearables/profiles/axivity-geneactiv.md
+watch:
+- url: https://activinsights.com/digital-health-technologies/professional-wearables/geneactiv/
+  role: other
+- url: https://activinsights.com/digital-health-technologies/professional-wearables/activinsights-band/
+  role: other
+- url: https://activinsights.com/research-study-services/apps-software/
+  role: developer_program
+- url: https://activinsights.com/research-study-services/data-infrastructure/
+  role: trust
+- url: https://activinsights.com/research-study-services/
+  role: research_program
+- url: https://activinsights.com/resources/geneactiv-support-1-2/
+  role: docs
+- url: https://activinsights.com/resources/faqs/
+  role: docs
+- url: https://activinsights.com/wp-content/uploads/2026/02/Product-Information-Sheet-Rev.002.pdf
+  role: docs
+- url: https://activinsights.com/wp-content/uploads/2024/11/Activinsights-Terms-and-Conditions.pdf
+  role: terms
+- url: https://activinsights.com/privacy-policies/privacy-policy-for-geneactiv/
+  role: terms
+- url: https://activinsights.com/privacy-policies/privacy-policy-for-activinsights-band/
+  role: terms
+- url: https://activinsights.com/research-study-services/dht-wearable-data-acquisition-analysis/
+  role: trust
+- url: https://cran.r-project.org/web/packages/GENEAcore/index.html
+  role: repository
+- url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRL/rl.cfm?start_search=1&ownerOperatorNumber=10056642
+  role: regulatory
+- url: https://activinsights.com/news-insights/
+  role: changelog
+facts:
+- field: research_program
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://activinsights.com/research-study-services/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://activinsights.com/digital-health-technologies/professional-wearables/geneactiv/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://activinsights.com/resources/faqs/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: No named academic or research access program was found on the site (full page sitemap searched 2026-10-11 for
+    academic, discount, program terms). Research use runs through ordinary device purchase plus paid, quoted Study
+    Services (study design help, logistics and device deployment, GENEActiv and R Markdown training, data acquisition and
+    analysis, algorithm development). The services page says it offers a full-scale service for clinical trials and
+    academic research projects.
+- field: program_eligibility
+  status: not_applicable
+  recheck_by: '2026-11-09'
+  note: No research program exists to be eligible for. Devices and services are sold to any customer on quotation.
+- field: program_application
+  status: not_applicable
+  recheck_by: '2026-11-09'
+  note: No research program; access is by requesting a quote from Activinsights (Request a Quote forms on each product page).
+- field: program_status
+  status: not_applicable
+  recheck_by: '2026-11-09'
+  note: No research program found. The company and both products (GENEActiv, ActivInsights Band) are actively marketed, and
+    the Study Services pages were updated 2026-01-29.
+- field: developer_program_status
+  status: stated
+  value: No self-serve developer program. SDKs are provided under licence on request, and the open R packages
+    (GENEAread, GENEAcore, GENEAclassify) are on CRAN for reading GENEActiv .bin files
+  confidence: Corroborated
+  sources:
+  - url: https://activinsights.com/research-study-services/apps-software/
+    type: vendor_page
+    quote: ActivInsights can provide software development kits (SKDs) under licence to facilitate the integration of our professional measurement tools into your existing systems.
+    retrieved: '2026-10-11'
+  - url: https://cran.r-project.org/web/packages/GENEAcore/index.html
+    type: repository
+    quote: 'License: GPL-2 | GPL-3'
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: GENEAcore 1.2.0 was published on CRAN 2026-04-02, maintained by an Activinsights staff member. The SDK licence terms
+    are not published.
+- field: user_cap
+  status: not_applicable
+  recheck_by: '2026-11-09'
+  note: Hardware is bought outright and data are extracted to the study's own storage, so no participant or user caps
+    apply to GENEActiv. No caps are documented for the ActivInsights Band cloud service either.
+- field: academic_vs_commercial
+  status: stated
+  value: The vendor positions GENEActiv for academic researchers wanting raw data and the ActivInsights Band for healthcare
+    professionals. The free R Markdown analysis tools are licensed for non-commercial analysis only
+  confidence: Corroborated
+  sources:
+  - url: https://activinsights.com/resources/faqs/
+    type: vendor_page
+    quote: The GENEActiv is designed for academic researchers as a general purpose objective measurement tool, who would like to gain high frequency, raw data.
+    retrieved: '2026-10-11'
+  - url: https://activinsights.com/resources/geneactiv-support-1-2/
+    type: vendor_page
+    quote: The agreement clearly states it can only be used for the non-commercial analysis of raw data.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: No separate academic price list or terms were found. Commercial (pharma) users are directed to quoted Study
+    Services; the CRAN packages are GPL and carry no non-commercial restriction.
+- field: device_price
+  status: stated
+  value: Not published by Activinsights (quote only). A competitor's guide gives about GBP 425 to 510 per GENEActiv; the
+    same competitor cites a historical US price of about USD 260 from a forum
+  confidence: Reported
+  scope: GENEActiv
+  sources:
+  - url: https://web.fibion.com/articles/ambulatory-physical-activity-large-cohort-cost-scalability/
+    type: secondary
+    quote: Approximately £425–£510 per device , depending on memory configuration (0.5 GB vs 1.0 GB)
+    retrieved: '2026-10-11'
+  - url: https://web.fibion.com/articles/geneactiv-pricing-specifications-guide/
+    type: secondary
+    quote: GENEActiv devices were historically priced at around $260 in the U.S.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Both figures come from Fibion, which sells competing devices. A USB charging and data cradle (holds 4 units) must
+    be bought as well. The US federal distributor First Nation Group lists the GENEActiv Original single-unit pack (item
+    GATV04) without a public price.
+- field: device_price
+  status: not_public
+  confidence: Unclear
+  scope: ActivInsights Band
+  sources:
+  - url: https://activinsights.com/digital-health-technologies/professional-wearables/activinsights-band/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://activinsights.com/resources/activinsights-band-support/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: subscription_price
+  status: stated
+  value: No subscription for GENEActiv. The PC/Mac software, R packages and the web Sleep Toolkit are free; a third party
+    reports no extra software or support charges
+  confidence: Corroborated
+  scope: GENEActiv
+  sources:
+  - url: https://activinsights.com/digital-health-technologies/activinsights-actigraphy-sleep-toolkit/
+    type: vendor_page
+    quote: Our web-based Sleep Toolkit is free, intuitive, and built for researchers and clinicians.
+    retrieved: '2026-10-11'
+  - url: https://web.fibion.com/articles/geneactiv-pricing-specifications-guide/
+    type: secondary
+    quote: There are no additional charges for software or support , regardless of the number of units purchased.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: subscription_price
+  status: not_public
+  confidence: Unclear
+  scope: ActivInsights Band and cloud data services
+  sources:
+  - url: https://activinsights.com/research-study-services/data-infrastructure/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://activinsights.com/research-study-services/apps-software/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: academic_pricing
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://activinsights.com/digital-health-technologies/recycling-programme/
+    type: vendor_page
+    quote: When a GENEActiv device is returned, we will reward you with £5 off* a new device purchased as a replacement.
+    retrieved: '2026-10-11'
+  - url: https://activinsights.com/resources/faqs/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: No academic discount is published. The only published discount is the recycling trade-in (GBP 5 off a replacement
+    GENEActiv per returned device, used within 12 months).
+- field: api_platform_fees
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://activinsights.com/research-study-services/data-infrastructure/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://activinsights.com/research-study-services/apps-software/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://activinsights.com/research-study-services/dht-wearable-data-acquisition-analysis/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: API, cloud analysis, SDK licences and Study Services are all quote-based. GENEActiv data extraction needs no
+    platform fee, since the free GENEActiv software writes raw .bin files locally.
+- field: minimum_commitment
+  status: stated
+  value: Minimum order values apply (amount not published); products must be ordered in the pack sizes on the price list
+  confidence: Verified
+  sources:
+  - url: https://activinsights.com/wp-content/uploads/2024/11/Activinsights-Terms-and-Conditions.pdf
+    type: vendor_legal
+    quote: Minimum order values apply, please contact for further details.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: quote_required
+  status: stated
+  value: Yes. Products and services are priced by quotation, valid for 90 days, in GB pounds unless agreed otherwise
+  confidence: Verified
+  sources:
+  - url: https://activinsights.com/wp-content/uploads/2024/11/Activinsights-Terms-and-Conditions.pdf
+    type: vendor_legal
+    quote: Prices quoted are effective for ninety (90) days from the date
+    retrieved: '2026-10-11'
+  - url: https://activinsights.com/digital-health-technologies/professional-wearables/geneactiv/
+    type: vendor_page
+    quote: Request a Quote
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: raw_streams
+  status: stated
+  value: Raw unfiltered tri-axial acceleration (SI units), ambient light and near-body temperature, plus event-button
+    presses, stored on the device and extracted over the USB cradle with the GENEActiv software
+  confidence: Verified
+  scope: GENEActiv
+  sources:
+  - url: https://activinsights.com/digital-health-technologies/professional-wearables/geneactiv/
+    type: vendor_page
+    quote: It produces raw, unfiltered tri-axial acceleration data in SI units in an open data format.
+    retrieved: '2026-10-11'
+  - url: https://activinsights.com/research-study-services/apps-software/
+    type: vendor_page
+    quote: As wearables are returned from the field, the GENEActiv software will extract sensor-level, raw data to local, sovereign data stores.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: raw_streams
+  status: unclear
+  confidence: Unclear
+  scope: ActivInsights Band
+  sources:
+  - url: https://activinsights.com/research-study-services/data-infrastructure/
+    type: vendor_page
+    quote: Configurable APIs allow integrations into study, client and research systems for all types of data and insight.
+    retrieved: '2026-10-11'
+  - url: https://activinsights.com/resources/faqs/
+    type: vendor_page
+    quote: The ActivInsights Band detects up to 12 basic activities with estimates of steps, movement and energy expenditure.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: The Band runs onboard algorithms and uploads behavioural event data (COEL format). The data-infrastructure page
+    lists raw data among its configurable APIs, but nothing says whether raw Band acceleration is retrievable.
+- field: derived_metrics
+  status: stated
+  value: Activinsights advertises 150+ digital measures from GENEActiv data (activity intensity, sedentary vs movement,
+    posture changes, sleep/wake, sleep events), delivered by its analysis service or computed by researchers with open
+    R tools
+  confidence: Corroborated
+  scope: GENEActiv
+  sources:
+  - url: https://activinsights.com/digital-health-technologies/professional-wearables/geneactiv/
+    type: vendor_page
+    quote: 'Our 150+ digital measures include: • Acceleration • Physical Activity intensity • Sedentary vs movement activity • Posture changes • Sleep / wake time • Sleep event characterisation'
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: The Data Acquisition page instead says 50+ digital clinical measures are regularly used. The GENEActiv software also
+    converts .bin to .csv epoch files and to AWD for Actiware-style sleep scoring.
+- field: derived_metrics
+  status: stated
+  value: Behavioural events (sleep, sedentary, active, exercise types, non-wear), steps, energy expenditure, sleep/wake
+    patterns and event markers, via reports, the Clinic App or API
+  confidence: Corroborated
+  scope: ActivInsights Band
+  sources:
+  - url: https://activinsights.com/resources/faqs/
+    type: vendor_page
+    quote: The ActivInsights Band detects up to 12 basic activities with estimates of steps, movement and energy expenditure.
+    retrieved: '2026-10-11'
+  - url: https://activinsights.com/research-study-services/apps-software/
+    type: vendor_page
+    quote: The uploaded data can be queried, downloaded or analysed on-demand by the ActivInsights Band Clinic App or via application programming interface (API).
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: sampling_rates
+  status: stated
+  value: Acceleration selectable from 10 to 100 Hz (+/- 8 g, 12-bit); temperature at least every 30 s
+  confidence: Verified
+  scope: GENEActiv
+  sources:
+  - url: https://activinsights.com/wp-content/uploads/2026/02/Product-Information-Sheet-Rev.002.pdf
+    type: vendor_docs
+    quote: Logging Frequencies Selectable 10-100Hz
+    retrieved: '2026-10-11'
+  - url: https://activinsights.com/wp-content/uploads/2026/02/Product-Information-Sheet-Rev.002.pdf
+    type: vendor_docs
+    quote: Measurement Frequency Every 30s minimum
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: sampling_rates
+  status: not_public
+  confidence: Unclear
+  scope: ActivInsights Band
+  sources:
+  - url: https://activinsights.com/wp-content/uploads/2024/11/AI-Band-Product-Information-Sheet.pdf
+    type: vendor_docs
+    retrieved: '2026-10-11'
+  - url: https://activinsights.com/digital-health-technologies/professional-wearables/activinsights-band/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Band outputs are behavioural events; no sensor sampling rate or event resolution is published.
+- field: history_depth
+  status: conflict
+  value: GENEActiv recording length is capped by battery and memory, and vendor pages disagree on the cap (14 days at
+    100 Hz and 60 days at 20 Hz on the product sheet, 7 days at 100 Hz and 30 days at 20 Hz in the FAQ). Once extracted,
+    data sit in the study's own storage with no vendor-side limit
+  confidence: Unclear
+  scope: GENEActiv
+  sources:
+  - url: https://activinsights.com/wp-content/uploads/2026/02/Product-Information-Sheet-Rev.002.pdf
+    type: vendor_docs
+    quote: Maximum Logging Periods 60 days @20hz, 14 days @100hz
+    retrieved: '2026-10-11'
+  - url: https://activinsights.com/resources/faqs/
+    type: vendor_page
+    quote: For example, recording at 100Hz lasts for 7 days and 20Hz records for 30 days.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: The FAQ figures may describe battery life of older units; the product sheet (Rev.002, 2025) is the newer document.
+    The comparison sheet gives battery life as 2 weeks to 2 months.
+- field: history_depth
+  status: stated
+  value: Band monitors continuously for 6 to 12 months without charging; cloud-held data fall under a 10-year review
+    retention period
+  confidence: Corroborated
+  scope: ActivInsights Band
+  sources:
+  - url: https://activinsights.com/digital-health-technologies/professional-wearables/activinsights-band/
+    type: vendor_page
+    quote: Its wireless communication function provides continuous remote monitoring for 6 months to a year with no charging required.
+    retrieved: '2026-10-11'
+  - url: https://activinsights.com/privacy-policies/privacy-policy-for-activinsights-band/
+    type: vendor_legal
+    quote: 'Retention Policy: Review Retention Period: 10 years'
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: export_routes
+  status: stated
+  value: GENEActiv uses the free Windows/macOS GENEActiv software over a USB cradle to export raw .bin files and .csv
+    epoch files (and AWD), readable with the open R packages. The Band uploads wirelessly via apps to the Activinsights
+    Azure cloud, and data come out through the Clinic App, reports or configurable APIs
+  confidence: Verified
+  sources:
+  - url: https://activinsights.com/resources/faqs/
+    type: vendor_page
+    quote: The GENEActiv software allows you to set up the device and extract raw data as a .bin file. The software offers capabilities to convert this into .csv compressed epoch files, which are readable in Excel.
+    retrieved: '2026-10-11'
+  - url: https://activinsights.com/research-study-services/apps-software/
+    type: vendor_page
+    quote: The uploaded data can be queried, downloaded or analysed on-demand by the ActivInsights Band Clinic App or via application programming interface (API).
+    retrieved: '2026-10-11'
+  - url: https://activinsights.com/research-study-services/dht-wearable-data-acquisition-analysis/
+    type: vendor_page
+    quote: We can deliver these measures into study systems through real-time APIs (application programming interfaces) or within a clinical study report.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: The product sheet says GENEActiv 1.3 has a Bluetooth 4.2 module for real-time adherence data; bulk raw data still
+    come off over USB.
+- field: rate_limits
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://activinsights.com/research-study-services/data-infrastructure/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://activinsights.com/research-study-services/apps-software/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: No public API documentation exists; APIs are configured per study. Not applicable to GENEActiv's local USB export.
+- field: retention_terms
+  status: stated
+  value: Personal data processed for as long as the original purpose requires, with a 10-year review retention period, and
+    longer for archiving or research when disclosed; erasure rights apply. GENEActiv raw data stay in the study's own
+    stores unless sent to Activinsights
+  confidence: Verified
+  sources:
+  - url: https://activinsights.com/privacy-policies/privacy-policy-for-geneactiv/
+    type: vendor_legal
+    quote: 'Retention Policy: Review Retention Period: 10 years'
+    retrieved: '2026-10-11'
+  - url: https://activinsights.com/privacy-policies/privacy-policy-for-activinsights-band/
+    type: vendor_legal
+    quote: 'Retention Policy: Review Retention Period: 10 years'
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Both policies were published 20 Dec 2021 and list processing country GB.
+- field: ai_training_terms
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://activinsights.com/privacy-policies/privacy-policy-for-geneactiv/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://activinsights.com/privacy-policies/privacy-policy-for-activinsights-band/
+    type: vendor_legal
+    quote: We may use your data to maintain our records; promote our goods & services and support health & medical research.
+    retrieved: '2026-10-11'
+  - url: https://activinsights.com/research-study-services/wearable-data-algorithm-development/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://activinsights.com/wp-content/uploads/2024/11/Activinsights-Terms-and-Conditions.pdf
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: No AI or ML training clause found. The privacy policies allow use to support health and medical research, and the
+    algorithm-development page says data sharing agreements give permissioned access to data for new methods and
+    algorithms (machine learning is named as a capability).
+- field: deprecations
+  status: stated
+  value: No product shutdown announced. GENEActiv is moving from the EU Medical Device Directive to EU MDR under the
+    Regulation 2023/607 transition; support for the oldest units (serials starting 0) is by request only
+  confidence: Corroborated
+  sources:
+  - url: https://activinsights.com/digital-health-technologies/professional-wearables/geneactiv/
+    type: vendor_page
+    quote: we will be transitioning to compliance with the EU Medical Device Regulation (EU MDR)
+    retrieved: '2026-10-11'
+  - url: https://activinsights.com/resources/geneactiv-support-1-2/
+    type: vendor_page
+    quote: If you require information for GENEActiv devices with serial numbers beginning with 0xxxxx, please contact us .
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: News page (post sitemap) checked 2026-10-11; no end-of-life notice. The sleep pages position GENEActiv as the
+    replacement for the discontinued Philips Actiwatch.
+- field: baa
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://activinsights.com/legal-data-protection/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://activinsights.com/research-study-services/data-infrastructure/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://activinsights.com/wp-content/uploads/2024/11/Activinsights-Terms-and-Conditions.pdf
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: All 73 pages in the site's page sitemap were searched for HIPAA and Business Associate on 2026-10-11 with no
+    match, although Activinsights opened a US office in Texas.
+- field: dpa
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://activinsights.com/legal-data-protection/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://activinsights.com/privacy-policies/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://activinsights.com/wp-content/uploads/2024/11/Activinsights-Terms-and-Conditions.pdf
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: No data processing agreement is published or mentioned. The algorithm-development page mentions data sharing
+    agreements, which are a different instrument.
+- field: hipaa_statement
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://activinsights.com/legal-data-protection/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://activinsights.com/research-study-services/data-infrastructure/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://activinsights.com/privacy-policies/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: No HIPAA mention anywhere in the page sitemap (searched 2026-10-11).
+- field: gdpr_statement
+  status: stated
+  value: Data services are UK-based under GDPR; Activinsights is registered with the ICO as a data controller (ZA258669)
+    and its privacy notices follow the COEL privacy-by-design standard
+  confidence: Corroborated
+  sources:
+  - url: https://activinsights.com/research-study-services/data-infrastructure/
+    type: vendor_page
+    quote: ActivInsights data services are based in the UK under European GDPR regulations.
+    retrieved: '2026-10-11'
+  - url: https://activinsights.com/privacy-policies/privacy-policy-for-geneactiv/
+    type: vendor_legal
+    quote: 'Processing Countries: GB'
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: The ICO registration number could be checked on the ICO public register (not done; that search is form-based).
+- field: iso27001
+  status: stated
+  value: Activinsights announced ISO 27001 certification on 2023-09-06. The certifying body, scope and certificate number
+    are not published
+  confidence: Corroborated
+  sources:
+  - url: https://activinsights.com/activinsights-attains-coveted-iso-27001-certification-demonstrating-commitment-to-information-security-excellence/
+    type: vendor_page
+    quote: proudly announces its successful achievement of ISO 27001 certification
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: Current pages describe an ISMS compliant with ISO 27001 and an ISO27001-compliant environment for the Sleep
+    Toolkit. No certificate was found. By inference, ISO 27001 certificates run three years, so a 2023 certificate would have needed
+    recertification around September 2026; confirm current status with the vendor.
+- field: soc2
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://activinsights.com/research-study-services/data-infrastructure/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://activinsights.com/legal-data-protection/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: No SOC 2 mention in the page sitemap (searched 2026-10-11).
+- field: fda_clearances
+  status: stated
+  value: No 510(k) or other clearance. GENEActiv is listed with FDA (owner/operator ActivInsights Ltd. 10056642,
+    registration 3014083954) under product code IKK, isokinetic testing and evaluation system, 21 CFR 890.1925, class 2,
+    510(k) exempt
+  confidence: Verified
+  scope: GENEActiv
+  sources:
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRL/rl.cfm?start_search=1&ownerOperatorNumber=10056642
+    type: regulator_db
+    quote: IKK 2018-01-04 10056642 System, Isokinetic Testing And Evaluation Physical Medicine 890.1925
+    retrieved: '2026-10-11'
+    fetch_url: https://api.fda.gov/device/registrationlisting.json?search=proprietary_name:geneactiv
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPCD/classification.cfm?start_search=1&productcode=IKK
+    type: regulator_db
+    quote: System, Isokinetic Testing And Evaluation
+    retrieved: '2026-10-11'
+    fetch_url: https://api.fda.gov/device/classification.json?search=product_code:IKK
+  recheck_by: '2027-01-08'
+  note: openFDA 510(k) searches applicant:activinsights and device_name:geneactiv returned no matches on 2026-10-11. The
+    classification record has submission_type_id 4 (510(k) exempt). The vendor page says the GENEActiv has received
+    FDA 510(k) exemption status. The listing is the only one under owner/operator 10056642; the ActivInsights Band has
+    no FDA listing.
+- field: data_residency
+  status: stated
+  value: UK. Cloud raw data management, analysis and API platform hosted on Microsoft Azure (region not stated); privacy
+    notices list GB as the processing country; identifying data held outside the cloud in study-specific systems.
+    GENEActiv raw data can stay entirely in the study's own stores
+  confidence: Corroborated
+  sources:
+  - url: https://activinsights.com/research-study-services/data-infrastructure/
+    type: vendor_page
+    quote: Our raw data management, cloud data analysis and application programming interface (API) platform is hosted on Azure.
+    retrieved: '2026-10-11'
+  - url: https://activinsights.com/privacy-policies/privacy-policy-for-geneactiv/
+    type: vendor_legal
+    quote: 'Processing Countries: GB'
+    retrieved: '2026-10-11'
+  - url: https://activinsights.com/research-study-services/apps-software/
+    type: vendor_page
+    quote: As wearables are returned from the field, the GENEActiv software will extract sensor-level, raw data to local, sovereign data stores.
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: The data-infrastructure page also names a Fujitsu partnership for near-real-time return of IoT sensor data. No
+    US or EU residency option is documented.

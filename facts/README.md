@@ -69,6 +69,9 @@ Every Monday the GitHub Actions job:
    the open one) when there is something to act on.
 
 A bot-blocked page is never treated as dead. Two weeks unreachable moves it to "check by hand".
+Sites whose own terms forbid automated collection (listed in `TERMS_BLOCKED_HOSTS` in
+`tools/facts/common.py`, currently activinsights.com) are never fetched by script, even where
+robots.txt allows it; their sources go straight to "check by hand".
 
 ## Re-check loop (the fact keeper)
 

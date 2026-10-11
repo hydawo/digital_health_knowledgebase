@@ -28,6 +28,11 @@ PAUSE = 2.0  # seconds between requests to the same host
 # A 404 from these is reported as unreachable, never as dead. Cite a machine-readable route as
 # fetch_url where one exists (for FDA records: https://api.fda.gov/device/510k.json?search=k_number:K...).
 FALSE_404_HOSTS = {'www.accessdata.fda.gov', 'accessdata.fda.gov'}
+# Hosts whose website terms forbid automated collection without written consent, even where robots.txt
+# allows it. Never fetched automatically; their sources are listed under "check by hand" instead.
+TERMS_BLOCKED_HOSTS = {
+    'activinsights.com', 'www.activinsights.com',  # website terms, 2026-10-11 (facts/_drafts/activinsights-geneactiv/judgement.md)
+}
 
 
 def load_schema():
@@ -152,9 +157,11 @@ def robots_allows(url):
 def fetch(url, retries=1):
     """Fetch a URL and return a dict: status, http, text (visible text or None), error.
 
-    status is one of ok, unreachable, dead, robots_blocked.
+    status is one of ok, unreachable, dead, robots_blocked, terms_blocked.
     """
     host = urllib.parse.urlsplit(url).netloc
+    if host in TERMS_BLOCKED_HOSTS:
+        return {'status': 'terms_blocked', 'http': None, 'text': None, 'error': "site terms forbid automated collection"}
     if not robots_allows(url):
         return {'status': 'robots_blocked', 'http': None, 'text': None, 'error': 'robots.txt disallows'}
     wait = PAUSE - (time.time() - _last_hit.get(host, 0))

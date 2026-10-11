@@ -76,10 +76,10 @@ def main():
         if r['status'] == 'dead':
             dead.append((url, r['error'], sorted(u['cited_by'])))
             continue
-        if r['status'] in ('unreachable', 'robots_blocked'):
+        if r['status'] in ('unreachable', 'robots_blocked', 'terms_blocked'):
             st['unreachable_weeks'] = st.get('unreachable_weeks', 0) + 1
             entry = (url, r['status'] + (f' ({r["http"]})' if r['http'] else '') + f': {r["error"]}', sorted(u['cited_by']))
-            (by_hand if st['unreachable_weeks'] >= CHECK_BY_HAND_AFTER or r['status'] == 'robots_blocked' else unreachable).append(entry)
+            (by_hand if st['unreachable_weeks'] >= CHECK_BY_HAND_AFTER or r['status'] in ('robots_blocked', 'terms_blocked') else unreachable).append(entry)
             continue
         st['unreachable_weeks'] = 0
         text = r['text'] or ''

@@ -1,0 +1,769 @@
+# Draft record for movesense, researcher A, 2026-10-11. Schema: facts/_schema.yaml
+name: Movesense
+kind: wearable
+profile: module-01-wearables/profiles/movesense.md
+watch:
+- url: https://www.movesense.com/docs/esw/api_reference/
+  role: docs
+- url: https://www.movesense.com/developers/
+  role: developer_program
+- url: https://bitbucket.org/movesense/movesense-device-lib/raw/master/LICENSE.pdf
+  role: terms
+- url: https://www.movesense.com/terms/
+  role: terms
+- url: https://bitbucket.org/movesense/movesense-device-lib/raw/master/CHANGES.md
+  role: changelog
+- url: https://bitbucket.org/movesense/movesense-mobile-lib/raw/master/CHANGES.md
+  role: changelog
+- url: https://www.movesense.com/movesense-academic-program/
+  role: research_program
+- url: https://www.movesense.com/shop/
+  role: pricing
+- url: https://www.movesense.com/faq/
+  role: other
+- url: https://www.movesense.com/privacy-policy/
+  role: terms
+- url: https://www.movesense.com/movesense-ecg-recorder-app-data-protection-statement/
+  role: terms
+- url: https://www.movesense.com/conformity
+  role: regulatory
+- url: https://api.fda.gov/device/510k.json?search=applicant:movesense
+  role: regulatory
+- url: https://apps.apple.com/us/app/movesense-ecg-recorder/id6443902831
+  role: app_store
+- url: https://www.movesense.com/docs/system/hw_variants/
+  role: docs
+facts:
+# ---------------- Research access ----------------
+- field: research_program
+  status: stated
+  value: Movesense Academic Program. Selected research teams receive a limited number of Movesense sensors and
+    accessories (such as heart rate straps) free of charge, plus technical support from the Movesense team, in
+    exchange for crediting Movesense in publications and sharing project material for Movesense news and social
+    media.
+  confidence: Verified
+  sources:
+  - url: https://www.movesense.com/movesense-academic-program/
+    type: vendor_page
+    quote: Movesense Academic Program equips scientists and researchers with sensor hardware and tools for efficiently
+      measuring and collecting motion and physiology data.
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/movesense-academic-program/
+    type: vendor_page
+    quote: Movesense supplies the selected research teams with a limited number of Movesense sensors and associated
+      accessories such as heart rate straps.
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/movesense-academic-program/
+    type: vendor_page
+    quote: Researchers agree to mention Movesense in scientific articles and other publications related to the project
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: The program is an equipment-and-support grant, not a data or platform program; Movesense has no cloud data
+    platform for researchers. Outside the program, research teams buy sensors in the shop and use the free developer
+    tools like any other customer.
+- field: program_eligibility
+  status: stated
+  value: Academic teams, researchers and students may apply. Selection weighs innovativeness and usefulness, the
+    commercial potential of the results, how useful Movesense sensors are to the project, the project's potential to
+    build awareness for Movesense, and additional non-published criteria.
+  confidence: Verified
+  sources:
+  - url: https://www.movesense.com/movesense-academic-program/
+    type: vendor_page
+    quote: Movesense team warmly welcome academic teams, researchers and students to apply for the Movesense Academic
+      Program!
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/movesense-academic-program/
+    type: vendor_page
+    quote: Potential of commercial applications of the project results Utility value of Movesense sensors for completing
+      the project Potential of the project to build awareness for Movesense Additional non-published criteria of Movesense
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Past participants include non-university organizations (for example Neurobit Technologies and Universal
+    Diagnostics Pvt. Ltd), so the program is not strictly limited to universities.
+- field: program_application
+  status: stated
+  value: Apply through an online form with a short project description, timeline and planned use of the sensors.
+    Movesense reviews applications monthly and invites up to three projects per quarter, at its own discretion and
+    without explaining decisions.
+  confidence: Verified
+  sources:
+  - url: https://www.movesense.com/movesense-academic-program/
+    type: vendor_page
+    quote: Interested researchers send an application to the Movesense team via an online form. The application includes
+      a short description of the project, project timeline, and a description of how the Movesense sensors would be
+      used.
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/movesense-academic-program/
+    type: vendor_page
+    quote: Movesense team reviews the applications on a monthly basis and invites up to three projects per quarter to
+      the program.
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/movesense-academic-program/
+    type: vendor_page
+    quote: Movesense team has the right to select applications at its own consideration and is not obliged to explain
+      why a project was selected or not selected to the program.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: program_status
+  status: stated
+  value: Active. The program page says it started in November 2019 and is open until further notice, and a December
+    2025 news post announced a new project (Ca' Foscari University of Venice) joining it.
+  confidence: Verified
+  sources:
+  - url: https://www.movesense.com/movesense-academic-program/
+    type: vendor_page
+    quote: The program started on November, 2019 and is open until further notice.
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/news/2025/12/university-of-venice-studies-seismocardiography-with-movesense-md-sensors/
+    type: vendor_page
+    quote: join the Movesense Academic Program. The project related to seismocardiography (SCG)
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: The program page's list of participating projects stops at Q1 2023 and its Google Scholar count is dated
+    January 20, 2023, so the page itself is stale even though the program is still taking projects.
+- field: developer_program_status
+  status: stated
+  value: Open, with no application step. The sensor library, mobile library, API specification, sample code and tools
+    are published on public Bitbucket repositories and can be used without buying anything. Use is governed by the
+    Movesense SDK License and Evaluation Agreement (LICENSE.pdf in the device library), which grants an evaluation
+    licence; commercialization needs a separate agreement.
+  confidence: Verified
+  sources:
+  - url: https://www.movesense.com/oem-services/
+    type: vendor_page
+    quote: They can be accessed even without a purchase via movesesense.com/resources
+    retrieved: '2026-10-11'
+  - url: https://bitbucket.org/movesense/movesense-device-lib/raw/master/README.md
+    type: repository
+    quote: See [LICENSE.pdf](LICENSE.pdf) for details on Movesense license.
+    retrieved: '2026-10-11'
+  - url: https://bitbucket.org/movesense/movesense-device-lib/raw/master/LICENSE.pdf
+    type: repository
+    quote: The possible commercialization of the Application, in connection with the sales and distribution of Movesense
+      products, is subject to a separate agreement.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Repositories checked through the Bitbucket API on 2026-10-11 (all public) were movesense-device-lib (updated
+    2025-11-20), movesense-mobile-lib (2026-06-01), python-datalogger-tool (2026-10-08) and sbem-tools (2026-09-14).
+- field: user_cap
+  status: stated
+  value: No participant or user cap applies to the developer tools; data flows directly from the sensor to the
+    researcher's own app or computer. The Academic Program caps intake at up to three projects per quarter and supplies
+    a limited number of sensors sized to the project.
+  confidence: Verified
+  sources:
+  - url: https://www.movesense.com/movesense-academic-program/
+    type: vendor_page
+    quote: The exact amount of supplied equipment depends on the project scope.
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/movesense-academic-program/
+    type: vendor_page
+    quote: invites up to three projects per quarter to the program
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/faq/
+    type: vendor_page
+    quote: If you integrate the sensors into your own application, you can decide where the data is stored. It does
+      not go to Movesense servers.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: The Python datalogger tool supports multiple sensors at once, which bears on multi-participant field logging.
+- field: academic_vs_commercial
+  status: stated
+  value: There is no general academic pricing; universities pay the same shop prices and can request an official
+    quote for procurement. The difference that matters is the licence. The website and SDK licence are evaluation
+    licences, and incorporating the technology into products or services, or commercializing an application, needs a
+    separate Commercial License agreement from Movesense. The online store sells to business users only.
+  confidence: Verified
+  sources:
+  - url: https://www.movesense.com/faq/
+    type: vendor_page
+    quote: There is no general academic pricing. We are happy to provide an official quote if needed for university
+      procurement.
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/terms/
+    type: vendor_legal
+    quote: A separate Commercial License agreement, with straightforward terms, is available for commercial use.
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/terms/
+    type: vendor_legal
+    quote: In particular, the Licensee shall not incorporate or integrate the Licensed Technology or any part thereof
+      in any products or services.
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/terms/
+    type: vendor_legal
+    quote: At this point the Movesense Online Store is available for business users only.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: The evaluation licence on the Terms page runs twelve months from signature and limits Movesense's liability to
+    50 euros. The FAQ and OEM page describe the tools as free and open, which sits awkwardly with the evaluation-only
+    licence text; the Showcase app and sample code are Apache 2.0 per the mobile library README. Commercial License
+    terms are not published.
+# ---------------- Pricing ----------------
+- field: device_price
+  scope: Movesense MD sensor
+  status: stated
+  value: 349 EUR per sensor (VAT 0%).
+  confidence: Verified
+  sources:
+  - url: https://www.movesense.com/shop/
+    type: vendor_page
+    quote: Movesense MD Sensor 349,00 € VAT 0%
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: device_price
+  scope: Movesense Flash sensor
+  status: stated
+  value: 249 EUR per sensor for 1 to 49 units, 244 EUR for 50 to 99, 239 EUR for 100 to 199 (VAT 0%).
+  confidence: Verified
+  sources:
+  - url: https://www.movesense.com/shop/
+    type: vendor_page
+    quote: 1-49 249€ 50-99 244€ 100-199 239€
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: device_price
+  scope: Movesense HR+ sensor
+  status: stated
+  value: 119 EUR per sensor for 1 to 49 units, 114 EUR for 50 to 99, 109 EUR for 100 to 199 (VAT 0%).
+  confidence: Verified
+  sources:
+  - url: https://www.movesense.com/shop/
+    type: vendor_page
+    quote: 1-49 119€ 50-99 114€ 100-199 109€
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: device_price
+  scope: Movesense HR2 sensor
+  status: stated
+  value: 99 EUR per sensor for 1 to 49 units, 94 EUR for 50 to 99, 89 EUR for 100 to 199 (VAT 0%). An ECG Heart
+    Rate Monitor Bundle (HR2 plus size M chest strap) is 120 EUR.
+  confidence: Verified
+  sources:
+  - url: https://www.movesense.com/shop/
+    type: vendor_page
+    quote: 1-49 99€ 50-99 94€ 100-199 89€
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/shop/
+    type: vendor_page
+    quote: Movesense ECG Heart Rate Monitor Bundle 120,00 € VAT 0%
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: device_price
+  scope: Developer kits
+  status: stated
+  value: MD Developer Kit 399 EUR (on sale from 479 EUR), Flash Developer Kit 379 EUR, HR+ Developer Kit 249 EUR (all
+    VAT 0%). Chest straps are 25 EUR each; the debugger and programming jig V2 is 649 EUR.
+  confidence: Verified
+  sources:
+  - url: https://www.movesense.com/shop/
+    type: vendor_page
+    quote: 'Original price was: 479,00 €. 399,00 € Current price is: 399,00 €.'
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/shop/
+    type: vendor_page
+    quote: Movesense Flash Developer Kit 379,00 € VAT 0%
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/shop/
+    type: vendor_page
+    quote: Movesense HR+ Developer Kit 249,00 € VAT 0%
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/shop/
+    type: vendor_page
+    quote: Movesense Debugger + Programming Jig V2 649,00 €
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: device_price
+  scope: CardioRTHM (consumer kit, MD sensor plus chest strap and app)
+  status: stated
+  value: 349.90 EUR including taxes on cardiorthm.com.
+  confidence: Verified
+  sources:
+  - url: https://cardiorthm.com/products/cardiorthm
+    type: vendor_page
+    quote: Regular price €349,90 EUR
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: subscription_price
+  status: stated
+  value: None. The sensors need no subscription, and the Movesense ECG Recorder app (used with the MD sensor as
+    CardioRTHM) is free in its basic version.
+  confidence: Verified
+  sources:
+  - url: https://www.cardiorthm.com/
+    type: vendor_page
+    quote: Are there ongoing fees for using the product? No.
+    retrieved: '2026-10-11'
+  - url: https://apps.apple.com/us/app/movesense-ecg-recorder/id6443902831
+    type: app_store
+    quote: Movesense ECG Recorder is a free application for viewing, recording, and sharing single-channel ECG/EKG
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: The CardioRTHM FAQ refers to a "basic version" of the app, which implies paid tiers could exist, but none were
+    found.
+- field: academic_pricing
+  status: stated
+  value: No general academic pricing. Movesense will issue an official quote for university procurement on request.
+    The Academic Program can supply free sensors to selected projects.
+  confidence: Verified
+  sources:
+  - url: https://www.movesense.com/faq/
+    type: vendor_page
+    quote: Does Movesense support University / Research pricing? There is no general academic pricing.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: api_platform_fees
+  status: stated
+  value: No licence cost for the SDKs, developer tools, sample code or API. There is no cloud API to charge for. Fees
+    may arise from optional custom firmware development by Movesense, NRE for a custom production SKU, and the
+    unpublished Commercial License.
+  confidence: Verified
+  sources:
+  - url: https://www.movesense.com/faq/
+    type: vendor_page
+    quote: Is there a license cost for using Movesense SDKs? No.
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/specifications/
+    type: vendor_page
+    quote: Powerful, low-cost tools for creating your own sensor firmware or compatible mobile app and integrating the
+      sensor into existing applications. No license cost involved.
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/oem-services/
+    type: vendor_page
+    quote: This involves an NRE cost, but after that there is no customization surcharge in the product
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: minimum_commitment
+  status: stated
+  value: None for standard sensors, which are sold from one unit. Custom logo labels have a minimum order of 100, a
+    custom production SKU makes sense from about 500 sensors a year, and hardware changes only from six-digit annual
+    volumes. Shop orders are binding and cannot be cancelled.
+  confidence: Verified
+  sources:
+  - url: https://www.movesense.com/oem-services/
+    type: vendor_page
+    quote: The MOQ for custom logo labels is 100.
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/oem-services/
+    type: vendor_page
+    quote: With an annual volume of at least 500 sensors , it is worth creating a new SKU in our production system for
+      the custom product.
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/terms/
+    type: vendor_legal
+    quote: The orders you place in the Movesense Online Store are binding and may not be cancelled.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: quote_required
+  status: stated
+  value: Not for small quantities; list prices for 1 to 199 units are public in the shop. Volume pricing (with a
+    substantial price step at 200 sensors), white labelling and custom firmware need contact with sales.
+  confidence: Verified
+  sources:
+  - url: https://www.movesense.com/faq/
+    type: vendor_page
+    quote: Prices for small quantities are shown on movesense.com/shop . Volume discounts apply for larger quantities.
+      For sensors, there is a substantial price step at 200 pieces.
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/shop/
+    type: vendor_page
+    quote: For inquiries regarding mass volume pricing, please contact sales@movesense.com .
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+# ---------------- Data access and terms ----------------
+- field: raw_streams
+  status: stated
+  value: 'Raw single-channel ECG, accelerometer, gyroscope and magnetometer (9-axis IMU), plus temperature, all models,
+    through the sensor''s REST-style API (Whiteboard): streamed over Bluetooth LE to the iOS/Android mobile library or
+    the GATT SensorData Protocol (Python client), or logged on the sensor and downloaded later. Custom firmware can
+    process data on the sensor. The MD sensor ECG front end is modified for IEC 60601-2-47 (0.5 Hz high-pass instead
+    of 7 Hz on sport models).'
+  confidence: Verified
+  sources:
+  - url: https://www.movesense.com/about-us/
+    type: vendor_page
+    quote: The standard firmware provides access to raw unprocessed ECG, HR, HRV (RR intervals), acceleration, angular
+      velocity and magnetic field data with configurable sample rates and dynamic ranges.
+    retrieved: '2026-10-11'
+  - url: https://bitbucket.org/movesense/movesense-device-lib/raw/master/README.md
+    type: repository
+    quote: Movesense APIs follow well-known REST principle and can be used both internally by the sensor app or externally
+      via the iOS/Android libraries.
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/docs/medical/medical_sensor/
+    type: vendor_docs
+    quote: The biggest effect of this is the change of ECG input high pass filtering from 7 Hz to 0.5 Hz.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Temperature is described as a non-medical sensor on the specifications page. The HR+ also has a 1-wire
+    extension bus; the MD sensor has the 1-wire master removed.
+- field: derived_metrics
+  status: stated
+  value: 'On-sensor heart rate (average) and R-R intervals (/Meas/HR), with R-R intervals at 1 ms resolution. No other
+    derived metrics in the standard firmware; researchers can run their own algorithms on the sensor. The ECG Recorder
+    app (v2.1 and later) adds ECG and HRV visualizations and two ECG analysis reports.'
+  confidence: Verified
+  sources:
+  - url: https://www.movesense.com/docs/esw/api_reference/
+    type: vendor_docs
+    quote: '"average": 50.890586853027344, "rrData": [ 1179 ]'
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/specifications/
+    type: vendor_page
+    quote: R-R intervals with 1ms accuracy and resolution
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/about-us/
+    type: vendor_page
+    quote: You can build your own services on top of the API to process the measured data on the sensor, and set the
+      sensor to send calculated results instead of streaming raw data.
+    retrieved: '2026-10-11'
+  - url: https://apps.apple.com/us/app/movesense-ecg-recorder/id6443902831
+    type: app_store
+    quote: The version 2.1 adds two new ECG analysis reports
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: sampling_rates
+  status: stated
+  value: 'ECG: 125, 128, 200, 250, 256, 500 or 512 Hz (bandwidth up to 40 Hz on MD, 34 Hz on sport models; 125 to 200
+    Hz recommended; above 256 Hz should not be streamed over BLE). Accelerometer, gyroscope, magnetometer and combined
+    IMU: 13, 26, 52, 104, 208, 416, 833 or 1666 Hz, with high rates limited by BLE bandwidth. R-R intervals at 1 ms
+    resolution.'
+  confidence: Verified
+  sources:
+  - url: https://www.movesense.com/faq/
+    type: vendor_page
+    quote: Available ECG sample rates are 125 / 128 / 200 / 250 / 256 / 500 / 512 Hz
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/docs/esw/api_reference/
+    type: vendor_docs
+    quote: '"SampleRates": [ 13, 26, 52, 104, 208, 416, 833, 1666 ], "AccRanges": [ 2, 4, 8, 16 ]'
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/docs/esw/api_reference/
+    type: vendor_docs
+    quote: ECG subscriptions with high sample frequency (>256 Hz) over BLE should be avoided.
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/docs/esw/api_reference/
+    type: vendor_docs
+    quote: Please note that using highest sample rates may be limited by the BLE bandwidth.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: history_depth
+  status: stated
+  value: 'No cloud history: data exists only where the researcher streams or downloads it. On-sensor logging is limited
+    by memory: HR2, HR+ and MD have 384 kB EEPROM used as a ring buffer that overwrites the oldest data; Flash has
+    128 MB flash that stops writing when full. Battery life with live streaming is about 7 days at ECG 256 Hz, about
+    400 h for heart rate and R-R.'
+  confidence: Verified
+  sources:
+  - url: https://www.movesense.com/docs/system/hw_variants/
+    type: vendor_docs
+    quote: Movesense HR2 SS2 384 kB EEPROM NO Movesense HR+ SS2 384 kB EEPROM YES Movesense MD SS2 384 kB EEPROM NO
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/docs/system/hw_variants/
+    type: vendor_docs
+    quote: When the filesystem is full, data can no longer be written (vs the EEPROM where it overwrites the old data)
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/faq/
+    type: vendor_page
+    quote: ECG @ 256 Hz with live data streaming = 7 days Heart rate & R-R intervals with live data streaming = 400h
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: The data storage doc says 386 kB while the hardware variants table says 384 kB.
+- field: export_routes
+  status: stated
+  value: 'Mobile library (MDS) for iOS and Android, with Flutter, Unity3D and .NET MAUI plugins; GATT SensorData
+    Protocol with a Python client for desktop streaming to CSV; Python datalogger tool and Android datalogger app for
+    Flash offline logging; Movesense Showcase app (CSV, JSON export); Movesense ECG Recorder app (CSV, PDF and EDF+
+    for MD; .fit export of heart rate intervals from v2.2). No cloud API.'
+  confidence: Verified
+  sources:
+  - url: https://www.movesense.com/developers/
+    type: vendor_page
+    quote: Movesense mobile library on Bitbucket Movesense Showcase App for iOS Movesense Example App for Android Movesense
+      plugin for Unity3D Movesense plugin for .NET Maui Movesense plugin for Flutter
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/news/2025/11/recording-data-with-movesense-sensors-five-free-tools-to-get-you-started/
+    type: vendor_page
+    quote: 'Export formats: CSV, PDF, and for Movesense MD: EDF+'
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/news/2025/11/recording-data-with-movesense-sensors-five-free-tools-to-get-you-started/
+    type: vendor_page
+    quote: The app parses the sensor
+    retrieved: '2026-10-11'
+  - url: https://apps.apple.com/us/app/movesense-ecg-recorder/id6443902831
+    type: app_store
+    quote: the export of heart rate interval data as a .fit file
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: rate_limits
+  status: not_applicable
+  confidence: Verified
+  sources:
+  - url: https://www.movesense.com/faq/
+    type: vendor_page
+    quote: If you integrate the sensors into your own application, you can decide where the data is stored. It does
+      not go to Movesense servers.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: There is no cloud or web API. Throughput is bounded by Bluetooth LE bandwidth instead (see sampling_rates).
+- field: retention_terms
+  scope: Own app or Movesense developer tools
+  status: stated
+  value: Movesense does not receive or retain the data; storage and deletion are under the researcher's control.
+  confidence: Verified
+  sources:
+  - url: https://www.movesense.com/faq/
+    type: vendor_page
+    quote: The Movesense development tools (Movesense Showcase app, Python client, etc.) store data locally on your host
+      device.
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/about-us/
+    type: vendor_page
+    quote: Data storage and use is completely under your own control.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: retention_terms
+  scope: Movesense ECG Recorder app (CardioRTHM)
+  status: stated
+  value: The app stores recordings locally and makes an anonymized backup to Movesense servers (automatic Wi-Fi backup
+    from v2.1). Personal data is kept while the user has an app username, or as long afterwards as Movesense deems
+    necessary; deletion can be requested except where law requires retention.
+  confidence: Verified
+  sources:
+  - url: https://www.movesense.com/faq/
+    type: vendor_page
+    quote: The Movesense ECG recorder stores data locally and makes an anonymized backup to Movesense servers.
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/movesense-ecg-recorder-app-data-protection-statement/
+    type: vendor_legal
+    quote: If you have registered with Movesense
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/movesense-ecg-recorder-app-data-protection-statement/
+    type: vendor_legal
+    quote: However, we will not be able to delete personal data that are necessary for complying with binding legal
+      obligations or that must be retained under applicable law.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: ai_training_terms
+  scope: Own app or Movesense developer tools
+  status: not_applicable
+  confidence: Verified
+  sources:
+  - url: https://www.movesense.com/faq/
+    type: vendor_page
+    quote: If you integrate the sensors into your own application, you can decide where the data is stored. It does
+      not go to Movesense servers.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Data never reaches Movesense on this route, so no use by Movesense arises.
+- field: ai_training_terms
+  scope: Movesense ECG Recorder app (CardioRTHM)
+  status: stated
+  value: AI or machine learning is not mentioned. After anonymization, Movesense may use ECG and other health data for
+    its own commercial and non-commercial purposes such as product development and research. The anonymized record
+    keeps a technical identifier, year of birth or age, and gender.
+  confidence: Verified
+  sources:
+  - url: https://www.movesense.com/movesense-ecg-recorder-app-data-protection-statement/
+    type: vendor_legal
+    quote: After anonymization we may also use this special category of data for our further commercial and non-commercial
+      purposes, such as product development, research etc.
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/movesense-ecg-recorder-app-data-protection-statement/
+    type: vendor_legal
+    quote: 'After anonymization the stored data includes the following non-personal information: technical identifier,
+      year of birth/age, gender.'
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Movesense announced a pilot with NeuralCloud Solutions (February 2026) for AI-enhanced ECG and Holter-style
+    reporting; whether app data feeds it is not stated.
+- field: deprecations
+  status: stated
+  value: 'No product shutdowns announced. Developer-facing migrations: the Logbook JSON format changed in firmware 2.2
+    and 2.3 (code reading Logbook output needs updating when moving from 2.1.5); /Component/Led PUT is deprecated in
+    favour of /Component/Leds; Old 1.9.x sensor software documentation is kept as legacy. The mobile library 3.33.1
+    crashed on 32-bit Android devices, fixed in MDS 3.33.7.'
+  confidence: Verified
+  sources:
+  - url: https://www.movesense.com/docs/esw/migration_21/
+    type: vendor_docs
+    quote: To support conversion of large SBEM log files from Movesense Flash without running out of memory on the phone,
+      the JSON format from Logbook was changed.
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/docs/esw/api_reference/
+    type: vendor_docs
+    quote: '/Component/Led : PUT - DEPRECATED'
+    retrieved: '2026-10-11'
+  - url: https://bitbucket.org/movesense/movesense-mobile-lib/raw/master/CHANGES.md
+    type: repository
+    quote: 'Bugfix: Fix crash on 32-bit Android devices'
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: The Movesense MD under the MDD (product number SS050341000) has been succeeded by the MDR-certified product
+    MS060222000 (conformity page). Corporate change, not a deprecation, for context only; Movesense left Suunto in a
+    management buy-out effective 1 October 2021 and is now Movesense Ltd, privately owned, in Vantaa, Finland.
+# ---------------- Compliance ----------------
+- field: baa
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://www.movesense.com/privacy-policy/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/terms/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/faq/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/movesense-ecg-recorder-app-data-protection-statement/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: No mention of HIPAA or a BAA on any page checked. On the SDK route Movesense never handles study data, so a BAA
+    would only matter for the ECG Recorder app's backups.
+- field: dpa
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://www.movesense.com/privacy-policy/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/terms/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/movesense-ecg-recorder-app-data-protection-statement/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: No DPA is offered publicly. For the ECG Recorder app Movesense names itself controller, not processor, so a
+    study using the app would not get a processor relationship by default.
+- field: hipaa_statement
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://www.movesense.com/privacy-policy/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/faq/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/conformity
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/movesense-ecg-recorder-app-data-protection-statement/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+- field: gdpr_statement
+  status: stated
+  value: Movesense Ltd (Vantaa, Finland) is the data controller under its privacy policy and the ECG Recorder data
+    protection statement; it names a DPO contact, relies on adequacy decisions or Standard Contractual Clauses for
+    transfers outside the EU/EEA, processes ECG data as special-category data on consent, and points complaints to the
+    Finnish Data Protection Ombudsman.
+  confidence: Corroborated
+  sources:
+  - url: https://www.movesense.com/privacy-policy/
+    type: vendor_legal
+    quote: Movesense DPO contacts via email to info@movesense.com . Please use email topic
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/movesense-ecg-recorder-app-data-protection-statement/
+    type: vendor_legal
+    quote: Such collection and processing of special category of data is subject to your consent in accordance with
+      applicable laws
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/movesense-ecg-recorder-app-data-protection-statement/
+    type: vendor_legal
+    quote: However, in all transfers to third countries, Movesense always complies with either an Equivalence Decision
+      or Standard Contractual Clauses.
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+- field: iso27001
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://www.movesense.com/conformity
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/about-us/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/privacy-policy/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: Movesense holds ISO 13485:2016 (medical device quality management, certified by Eurofins Electric & Electronics
+    Finland Ltd per the conformity page), which is not an information security certification.
+- field: soc2
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://www.movesense.com/conformity
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/about-us/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/privacy-policy/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+- field: fda_clearances
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://api.fda.gov/device/510k.json?search=applicant:movesense
+    type: regulator_db
+    retrieved: '2026-10-11'
+  - url: https://api.fda.gov/device/510k.json?search=device_name:movesense
+    type: regulator_db
+    retrieved: '2026-10-11'
+  - url: https://api.fda.gov/device/registrationlisting.json?search=registration.owner_operator.firm_name:movesense
+    type: regulator_db
+    retrieved: '2026-10-11'
+  - url: https://api.fda.gov/device/registrationlisting.json?search=proprietary_name:movesense
+    type: regulator_db
+    retrieved: '2026-10-11'
+  - url: https://api.fda.gov/device/pma.json?search=applicant:movesense
+    type: regulator_db
+    retrieved: '2026-10-11'
+  - url: https://api.fda.gov/device/udi.json?search=brand_name:movesense
+    type: regulator_db
+    retrieved: '2026-10-11'
+  - url: https://api.fda.gov/device/510k.json?search=device_name:cardiorthm
+    type: regulator_db
+    retrieved: '2026-10-11'
+  - url: https://www.movesense.com/faq/
+    type: vendor_page
+    quote: Movesense MD is certified as a Class IIa medical device ( EU MDR) and manufactured under ISO 13485 medical
+      quality system in Finland. Other medical certifications pending.
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: All openFDA searches returned no matches (510(k), PMA, registration and listing, GUDID). The MD sensor and ECG
+    Recorder app are EU MDR Class IIa (Annex IX rule 9) only. The conformity page lists FCC Part 15 radio approvals,
+    which are not FDA clearances.
+- field: data_residency
+  scope: Own app or Movesense developer tools
+  status: stated
+  value: Wherever the researcher stores it. Data goes from the sensor to the researcher's phone, computer or own backend
+    and does not pass through Movesense servers.
+  confidence: Verified
+  sources:
+  - url: https://www.movesense.com/faq/
+    type: vendor_page
+    quote: If you integrate the sensors into your own application, you can decide where the data is stored. It does
+      not go to Movesense servers.
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+- field: data_residency
+  scope: Movesense ECG Recorder app (CardioRTHM)
+  status: stated
+  value: Backups go to Movesense servers whose location is not stated; Movesense says servers may be in different
+    countries, with transfers outside the EU/EEA covered by adequacy decisions or SCCs.
+  confidence: Verified
+  sources:
+  - url: https://www.movesense.com/movesense-ecg-recorder-app-data-protection-statement/
+    type: vendor_legal
+    quote: Our products and services can be provided using resources and servers located in different countries.
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
