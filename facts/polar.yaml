@@ -1022,7 +1022,10 @@ facts:
       (2023/2854) in how we manage your data.
     retrieved: '2026-10-11'
   recheck_by: '2027-01-08'
-  note: DPF participation was not checked on the Commerce Department registry.
+  note: 'Polar Electro is not on the Commerce Department''s DPF list, active or inactive (searched "Polar Electro"
+    and "Polar" in a browser, 2026-10-11). Polar Electro Oy is a Finnish company, so the privacy notice''s DPF wording
+    most likely refers to its US recipients'' certification (inference); the transfer route that can be verified is
+    standard contractual clauses as stated.'
 - field: iso27001
   status: not_public
   confidence: Corroborated
