@@ -247,7 +247,7 @@
   "PMC13601350",
   "PMC13590562"
  ],
- "last_run_date": "2026-10-05",
+ "last_run_date": "2026-10-12",
  "runs": [
   {
    "date": "2026-10-05",
@@ -272,6 +272,26 @@
    "date": "2026-10-09",
    "source": "consolidation of six unmerged scan-routine branches",
    "note": "Unioned seen-ID lists and rejections from the 2026-09-07, 09-14, 09-21 and 09-28 runs. 10 queue rows from those runs added to _scan-queue.md. 2 papers rejected by the 2026-10-05 run but queued by an earlier run were moved to the queue, with the rejection reason kept on the row."
+  },
+  {
+   "date": "2026-10-12",
+   "window": "2026-10-05 to 2026-10-12 (edat for PubMed C1/C2; submittedDate for arXiv C3)",
+   "searched": {
+    "C1_wearables_pubmed": 11,
+    "C2_platforms_pubmed": 4,
+    "C3_arxiv_wearables": 0,
+    "C3_arxiv_platforms": 2
+   },
+   "screened_in_queued": 3,
+   "rejected": 14,
+   "rejected_breakdown": {
+    "architecture": 0,
+    "validation": 2,
+    "protocol": 1,
+    "review": 1,
+    "no-cohort": 10
+   },
+   "note": "C2 (digital-phenotyping-platform query) returned only false positives again this run, same mechanism as 2026-10-05, on both PubMed and arXiv: 'AWARE framework' matched ordinary English '[X]-aware framework'/'[X]-Aware' constructions in 6 completely unrelated papers -- 4 from PubMed (radiology image retrieval, SUDEP consensus statement, TB granuloma modeling, gut-metagenomic CRC benchmarking) and 2 from arXiv in the 2026-10-05-to-2026-10-12 window (a federated-learning paper matching 'Heterogeneity-aware', an LLM-agent paper matching 'Cost-Aware') -- none naming any Module 2 platform. No Beiwe, RADAR-base, mindLAMP, Avicenna, Ethica, MetricWire, m-Path, CARP, or LifeData deployment candidates were found on either API. C1 (wearables) found 11 PubMed candidates and 0 in-window arXiv candidates; 3 queued (2 Apple Watch feasibility/acceptability studies, 1 Fitbit feasibility/acceptability study), 8 rejected. 4 of the 8 C1 rejections were 'no-cohort' for insufficient signal density -- a real participant cohort existed but only one of the five deployment-reality signal categories was clearly present in the abstract (e.g. an enrolled-vs-analyzed gap, or a wear-time eligibility threshold used as an inclusion criterion rather than reported as an outcome), one notably borderline (10.1016/j.nwh.2026.09.001, substantively about Fitbit data-availability/missingness but only that one signal category). Both arXiv endpoints were reachable this run (export.arxiv.org required https, not http)."
   }
  ],
  "records": [
@@ -1279,6 +1299,118 @@
    "reason": "no-cohort",
    "note": "False positive: judicial-records crime-analytics ML paper, unrelated to any Module 1/2 platform; same AWARE-framework phrase-matching artifact.",
    "source": "weekly-literature-scan-2026-09-28"
+  },
+  {
+   "doi": "10.1080/07448481.2026.2741615",
+   "pmcid": null,
+   "pmid": "42841757",
+   "reason": "validation",
+   "note": "Agreement of physical activity metrics from ActivPAL and ActiGraph accelerometers worn concurrently among college students (n=36); device-vs-device accuracy/agreement study (ICC, Bland-Altman, equivalence testing), not a deployment-feasibility report.",
+   "source": "weekly-literature-scan-2026-10-12"
+  },
+  {
+   "doi": "10.2196/86345",
+   "pmcid": "PMC13641314",
+   "pmid": "42837523",
+   "reason": "protocol",
+   "note": "Remote Longitudinal Tracking of Sleep, Depression, and Cognition Across Early Adolescence; PubMed PublicationType explicitly 'Clinical Trial Protocol' -- no results yet.",
+   "source": "weekly-literature-scan-2026-10-12"
+  },
+  {
+   "doi": "10.1016/j.dcn.2026.101826",
+   "pmcid": null,
+   "pmid": "42843149",
+   "reason": "review",
+   "note": "A systematic review of digital and wearable sensor data in the ABCD study; title explicitly 'systematic review'.",
+   "source": "weekly-literature-scan-2026-10-12"
+  },
+  {
+   "doi": "10.1123/jmpb.2025-0086",
+   "pmcid": "PMC13641217",
+   "pmid": "42840830",
+   "reason": "validation",
+   "note": "External validation of the CHAP (Convolutional Neural Network Hip Accelerometer Posture) deep-learning sedentary-behavior classifier against a reference method in an RCT sample; algorithm-accuracy validation, not a deployment-operations report.",
+   "source": "weekly-literature-scan-2026-10-12"
+  },
+  {
+   "doi": "10.1016/j.pmedr.2026.103639",
+   "pmcid": "PMC13641033",
+   "pmid": "42841029",
+   "reason": "no-cohort",
+   "note": "Fitbit sleep/social-jetlag study in 20,886 Japanese corporate employees (10,670 with complete data). Only one deployment-reality signal present (an enrolled-vs-complete-data gap, read as retention/completeness); no explicit adherence/wear-time, feasibility/acceptability, or technical-failure reporting -- insufficient signal density per the two-distinct-signals screen.",
+   "source": "weekly-literature-scan-2026-10-12"
+  },
+  {
+   "doi": "10.1016/j.jshs.2026.101182",
+   "pmcid": null,
+   "pmid": "42858823",
+   "reason": "no-cohort",
+   "note": "Fitbit/All of Us physical-activity-vs-ophthalmic-disease outcome study (n=14,757). Only one deployment-reality signal present (a >=6-month/10h-day/100-steps-day wear-time inclusion threshold, used as an eligibility criterion, not reported as a deployment outcome); no retention, acceptability, completeness, or technical-failure reporting.",
+   "source": "weekly-literature-scan-2026-10-12"
+  },
+  {
+   "doi": "10.1007/s00787-026-03207-z",
+   "pmcid": null,
+   "pmid": "42853407",
+   "reason": "no-cohort",
+   "note": "Fitbit-derived sleep architecture vs ADHD/externalizing-behavior cross-sectional outcome study in the ABCD cohort (n=4,545). No retention/attrition, adherence/wear-time, feasibility/acceptability, completeness, or technical-failure signal identified in the abstract -- fails the two-distinct-signals screen despite a real cohort.",
+   "source": "weekly-literature-scan-2026-10-12"
+  },
+  {
+   "doi": "10.1016/j.nwh.2026.09.001",
+   "pmcid": null,
+   "pmid": "42833286",
+   "reason": "no-cohort",
+   "note": "Sociodemographic correlates of longitudinal Fitbit sleep-data availability among women in the All of Us Research Program (n=7,385, BYOD cohort); substantively about data completeness/missingness, but only that single signal category is present -- no retention/attrition, adherence/wear-time, feasibility/acceptability, or technical-failure reporting. Flagged as a borderline exclusion: thematically close to Module 3's core question but fails the mechanical two-distinct-signals bar as written.",
+   "source": "weekly-literature-scan-2026-10-12"
+  },
+  {
+   "doi": "10.1007/s10278-026-02377-1",
+   "pmcid": null,
+   "pmid": "42855632",
+   "reason": "no-cohort",
+   "note": "CXR-CoRe chest X-ray report-retrieval framework; false positive from 'AWARE framework'[tiab] matching 'section-aware framework' -- no digital-phenotyping platform, no wearable/smartphone cohort.",
+   "source": "weekly-literature-scan-2026-10-12"
+  },
+  {
+   "doi": "10.1002/epi4.70358",
+   "pmcid": "PMC13643408",
+   "pmid": "42839771",
+   "reason": "no-cohort",
+   "note": "Italian expert consensus statement on SUDEP risk/mechanisms/prevention; false positive from 'AWARE framework'[tiab] matching 'mechanism-aware framework' -- no digital-phenotyping platform, no participant cohort (consensus statement, not a deployment study).",
+   "source": "weekly-literature-scan-2026-10-12"
+  },
+  {
+   "doi": "10.3389/fimmu.2026.1933352",
+   "pmcid": "PMC13648034",
+   "pmid": "42852373",
+   "reason": "no-cohort",
+   "note": "Necro-mosaic TB-granuloma cell-death modeling framework; false positive from 'AWARE framework'[tiab] matching 'lesion-aware framework' -- no digital-phenotyping platform, no human participant cohort (lesion/tissue modeling paper).",
+   "source": "weekly-literature-scan-2026-10-12"
+  },
+  {
+   "doi": "10.3389/fmicb.2026.1971707",
+   "pmcid": "PMC13650428",
+   "pmid": "42857378",
+   "reason": "no-cohort",
+   "note": "CRC-TrustBench gut-metagenomic colorectal-cancer classifier benchmark; false positive from 'AWARE framework'[tiab] matching 'leakage-aware framework' -- no digital-phenotyping platform, no participant cohort (metagenomic ML benchmarking paper).",
+   "source": "weekly-literature-scan-2026-10-12"
+  },
+  {
+   "doi": null,
+   "pmcid": null,
+   "arxiv_id": "2610.09091",
+   "reason": "no-cohort",
+   "note": "FedRSPO+: A Heterogeneity-aware Algorithm for Decision-focused Federated Learning; false positive from the arXiv C2 'AWARE framework' query matching 'Heterogeneity-aware' -- unrelated federated-learning paper, no digital-health content, no participant cohort.",
+   "source": "weekly-literature-scan-2026-10-12"
+  },
+  {
+   "doi": null,
+   "pmcid": null,
+   "arxiv_id": "2610.07335",
+   "reason": "no-cohort",
+   "note": "Selective Critique for Cost-Aware LLM Agents in Long-Horizon Decision Making; false positive from the arXiv C2 'AWARE framework' query matching 'Cost-Aware' -- unrelated LLM-agent paper, no digital-health content, no participant cohort.",
+   "source": "weekly-literature-scan-2026-10-12"
   }
  ]
 }

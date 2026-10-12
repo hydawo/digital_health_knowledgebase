@@ -51,9 +51,12 @@
     "42811329",
     "42814730",
     "42815039",
-    "42818127"
+    "42818127",
+    "42855352",
+    "42854191",
+    "42832266"
   ],
-  "last_run_date": "2026-10-05",
+  "last_run_date": "2026-10-12",
   "runs": [
     {
       "date": "2026-08-31",
@@ -111,6 +114,24 @@
       "date": "2026-10-09",
       "source": "2026-10-09 unresolved-questions pass (Q53/59/60/61/62/66/71/72/73/77/78/79/81/82)",
       "note": "Targeted searches (PubMed E-utilities date-sorted, Europe PMC full text) to resolve open questions, not a weekly-scan window. Records added for papers newly cited in research-library-wearables.md, validation-evidence.md, oura.md, whoop.md and movesense.md. Tier is relative to the record's device vendor; Movesense and Empatica records sit outside the Oura/WHOOP/Apple scan scope and are here only to track stored PDFs. last_run_date left unchanged because this was not a scan run."
+    },
+    {
+      "date": "2026-10-12",
+      "source": "weekly-literature-scan routine (PubMed esearch/efetch, eutils.ncbi.nlm.nih.gov)",
+      "window": "2026-10-05 to 2026-10-12 (edat)",
+      "searched": {
+        "oura": 2,
+        "whoop": 0,
+        "apple_watch": 2
+      },
+      "screened_in": 3,
+      "screened_out": 0,
+      "category_breakdown": {
+        "Use-case": 2,
+        "Validation": 1,
+        "Review": 0
+      },
+      "note": "PMID 42854191 double-counted in the oura/apple_watch searched tallies above (it matched both queries) but filed once per device section (Oura Tier C and Apple Watch Tier C, cross-referenced) for a net 3 distinct new papers. PMID 42855352 (Oura ring vs. Actiwatch validation, NUS Oura-NUS Joint Lab) tiered B on the Affiliation field directly from the primary PubMed record, since no <CoiStatement> element was present to parse; see entry note in research-library-wearables.md and shared/research-log.md."
     }
   ],
   "dois_seen": [

@@ -101,7 +101,7 @@
   "10.1007/s44211-026-00959-1",
   "10.1101/2024.10.03.24314808"
  ],
- "last_run_date": "2026-10-05",
+ "last_run_date": "2026-10-12",
  "runs": [
   {
    "date": "2026-08-31",
@@ -149,6 +149,37 @@
     "Paywalled": 1
    },
    "network_note": "PDF retrieval for both qualifying papers could not be attempted beyond a connection test: pmc.ncbi.nlm.nih.gov and www.ebi.ac.uk (Europe PMC) both returned connection failures under this environment's network allowlist, which exposed only eutils.ncbi.nlm.nih.gov and export.arxiv.org this run -- narrower than the allowlist shared/weekly-literature-scan.md documents (eutils + export.arxiv.org + default package-manager list, not excluding PMC/Europe PMC). Flagged in research-log.md for the account owner."
+  },
+  {
+   "date": "2026-10-12",
+   "source": "weekly-literature-scan routine (PubMed esearch/efetch + arXiv API)",
+   "window": "2026-10-05 to 2026-10-12 (edat for PubMed; submittedDate for arXiv)",
+   "searched_pubmed": {
+    "beiwe": 0,
+    "radar_base": 0,
+    "mindlamp": 0,
+    "aware": 0,
+    "avicenna_ethica": 0,
+    "m_path": 0,
+    "carp": 0,
+    "metricwire": 0,
+    "lifedata": 0
+   },
+   "searched_arxiv": {
+    "beiwe": 0,
+    "radar_base": 1,
+    "mindlamp": 0,
+    "aware": 0,
+    "avicenna_ethica": 0,
+    "m_path": 0,
+    "carp": 0,
+    "metricwire": 0,
+    "lifedata": 0,
+    "note": "Same arXiv 'all:'-field phrase-matching gap recorded in the 2026-10-05 run recurred: the one in-window hit for the RADAR-base query ('Radar2Plan: Benchmarking 4D Radar for End-to-End Open-Loop Ego-Trajectory Planning', arXiv 2610.06121) is an autonomous-vehicle 4D-radar paper, a false positive from 'RADAR-base' stem-matching 'Radar-Based', unrelated to the RADAR-base digital phenotyping platform. Screened out, no action."
+   },
+   "screened_in": 0,
+   "screened_out": 1,
+   "note": "Zero qualifying papers this run across all 9 platforms (0 PubMed hits for every platform; 1 arXiv candidate reviewed and excluded as a false positive). pmc.ncbi.nlm.nih.gov and www.ebi.ac.uk remained unreachable under the environment's current network allowlist (same connect_rejected as 2026-10-05), but no PDF retrieval was needed this run since nothing qualified."
   }
  ],
  "records": [

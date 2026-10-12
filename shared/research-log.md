@@ -2,6 +2,99 @@
 
 ---
 
+## 2026-10-12 — Weekly literature-scan routine: second live firing (all three modules)
+
+**Module:** 1 (Oura/WHOOP/Apple Watch), 2 (phenotyping platforms), 3 (triage only). Automated,
+unattended run per `shared/weekly-literature-scan.md`'s full prompt. Window: 2026-10-05 to
+2026-10-12 (edat for PubMed; submittedDate for arXiv) for all three modules — all three
+`last_run_date`s were 2026-10-05.
+
+### Module 1 — Oura/WHOOP/Apple Watch
+
+Searched: Oura 2, WHOOP 0, Apple Watch 2 (one PMID, 42854191, matched both queries). **3 distinct
+new papers passed the relevance bar**, all appended within the existing device → sponsorship-tier
+structure: 1 Oura Tier B, 1 Oura Tier C (also cross-filed to Apple Watch Tier C since it discusses
+both devices substantively), 1 Apple Watch Tier C. **Category breakdown: Use-case 2, Validation 1,
+Review 0.**
+
+**COI-classification note, since it departs from the literal prompt text:** PMID 42855352 (Oura ring
+vs. Actiwatch rest-activity-rhythm validation, NUS Centre for Sleep and Cognition) has no
+`<CoiStatement>` element at all in the PubMed record. The prompt's rule (step 4) only says to parse
+`<CoiStatement>`; taken completely literally that would default this to Tier C/Corroborated. The
+record's own `Affiliation` field, however, directly and unambiguously names the senior author's
+affiliation as "Oura-National University of Singapore (NUS) Joint Lab, Oura Pte Ltd, Singapore" — the
+same standing joint lab this file already tiers B for Liang et al. 2024 (tiered on a secondary source,
+Oura's own blog). Classified Tier B, **Verified**, quoting the affiliation text directly from the
+primary PubMed record — stronger sourcing than the existing Liang entry, despite not coming through
+the `CoiStatement` field the prompt names. Judged that following the letter of "parse CoiStatement
+only" into ignoring a vendor affiliation sitting in the same primary record would conflict with this
+project's own evidence standards (don't manufacture false certainty by omission).
+
+### Module 2 — phenotyping platforms
+
+Searched (PubMed, edat): all 9 platforms returned 0. Searched (arXiv, submittedDate): 0 relevant —
+the one in-window hit for the RADAR-base query ("Radar2Plan: Benchmarking 4D Radar for ... Ego-
+Trajectory Planning," arXiv 2610.06121) is an autonomous-vehicle 4D-radar paper, the same
+'RADAR-base'-matches-'Radar-Based' stemming false positive already documented for the 2026-10-05 run.
+**Zero qualifying papers this run.** No change to `literature-library.md`; `literature-library-index.json`
+`last_run_date` advanced to 2026-10-12 with a `runs` entry recording the null result.
+`pmc.ncbi.nlm.nih.gov`/`www.ebi.ac.uk` remained unreachable under the environment's network allowlist
+(same as 2026-10-05), but no PDF retrieval was needed since nothing qualified.
+
+### Module 3 — triage only
+
+Searched: C1 (wearables, PubMed) 11, C2 (platforms, PubMed) 4, C3-wearables (arXiv) 0, C3-platforms
+(arXiv) 2 — 17 candidates screened, all new (none matched existing `dois_seen`/`pmcids_seen`/
+`rejected`, and none duplicated an existing `_scan-queue.md` Pending row — checked manually since
+Part C step 1 doesn't itself cover the queue). **3 queued, 14 rejected** (2 validation, 1 protocol, 1
+review, 10 no-cohort — full reasons in `literature-index.json`'s `rejected` array).
+
+**C2 was 100% false positives again, on both APIs** — the same "AWARE framework" ordinary-word
+problem documented on 2026-10-05, now also confirmed on arXiv within this window: a federated-learning
+paper matching "Heterogeneity-aware" and an LLM-agent paper matching "Cost-Aware." On PubMed, "AWARE
+framework" matched "section-aware framework" (chest X-ray retrieval), "mechanism-aware framework"
+(SUDEP consensus statement), "lesion-aware framework" (TB granuloma modeling), and "leakage-aware
+framework" (gut-metagenomic CRC benchmarking) — none naming any Module 2 platform, none with a
+participant cohort. Zero genuine Beiwe/RADAR-base/mindLAMP/Avicenna/Ethica/MetricWire/m-Path/CARP/
+LifeData deployment candidates surfaced.
+
+**Queued (3), all C1/wearables:** a feasibility case report (N=2 college students, 4 months) using
+Apple Watch + Oura ring + Fitbit for sleep/balance tracking, with explicit missing-data figures
+(75.2% → 14.1%/20.3% after structured check-ins — also newly in Module 1's library this run); a pilot
+RCT of problem-solving therapy with Apple Watch support for college students with AUD symptoms
+(feasibility + acceptability as primary outcomes — also newly in Module 1's library); and a
+feasibility/acceptability study of the Roadmap mHealth positive-activity app for dementia caregivers
+(N=20, 14 days) in which both caregivers and recipients wore Fitbit devices, with explicit wear-rate
+figures (100%/75%). The Roadmap app itself is not a Module 1/2 technology — queued on Fitbit, the
+co-deployed Module 1 device, per this file's "flag, don't silently absorb" rule for non-profiled
+technologies appearing alongside a profiled one.
+
+**4 of the 8 rejected C1 candidates were "no-cohort" for insufficient signal density**, not absence
+of a cohort: a real participant cohort existed in each (ranging N=4,545 to N=20,886, mostly
+All of Us/ABCD secondary-analysis cohorts), but only one of the five deployment-reality signal
+categories was clearly present in the abstract — e.g., an enrolled-vs.-analyzed gap read as a single
+retention signal, or a wear-time threshold used only as an eligibility criterion rather than reported
+as a deployment outcome. One is a genuinely borderline call worth a human second look:
+10.1016/j.nwh.2026.09.001 (sociodemographic correlates of longitudinal Fitbit sleep-data availability
+among women in All of Us, N=7,385, BYOD cohort) is substantively *about* data completeness/missingness
+as its primary outcome — exactly Module 3's central question — but the abstract names only that one
+signal category, so it fails the screening step's literal "at least two distinct signals" test.
+Excluded per this pass's conservative instruction ("when genuinely unsure, exclude and say why"), but
+flagged here rather than silently dropped.
+
+**Known limitation carried forward again, not fixed this pass:** same as noted 2026-10-05 — Part C's
+dedup step (1) only checks `dois_seen`/`pmcids_seen`/`rejected`, not `_scan-queue.md`'s own Pending
+rows. Checked manually this run (no overlap found); still a routine-design gap, not patched here.
+
+### Commit
+
+One combined commit covers all three modules' writes
+(`research-library-wearables.md` + `research-library-index.json`, `literature-library-index.json`
+only — no Module 2 library rows this run, `_scan-queue.md` + `literature-index.json`) plus this log
+entry.
+
+---
+
 ## 2026-10-10 (last) — Vendor fact records: baseline batch 1 (10 companies)
 
 **Module:** 1, 2 and shared (`facts/`).
