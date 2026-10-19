@@ -51,9 +51,12 @@
     "42811329",
     "42814730",
     "42815039",
-    "42818127"
+    "42818127",
+    "42855352",
+    "42854191",
+    "42832266"
   ],
-  "last_run_date": "2026-10-05",
+  "last_run_date": "2026-10-19",
   "runs": [
     {
       "date": "2026-08-31",
@@ -111,6 +114,24 @@
       "date": "2026-10-09",
       "source": "2026-10-09 unresolved-questions pass (Q53/59/60/61/62/66/71/72/73/77/78/79/81/82)",
       "note": "Targeted searches (PubMed E-utilities date-sorted, Europe PMC full text) to resolve open questions, not a weekly-scan window. Records added for papers newly cited in research-library-wearables.md, validation-evidence.md, oura.md, whoop.md and movesense.md. Tier is relative to the record's device vendor; Movesense and Empatica records sit outside the Oura/WHOOP/Apple scan scope and are here only to track stored PDFs. last_run_date left unchanged because this was not a scan run."
+    },
+    {
+      "date": "2026-10-19",
+      "source": "weekly-literature-scan routine (PubMed esearch/efetch, eutils.ncbi.nlm.nih.gov)",
+      "window": "2026-10-05 to 2026-10-19 (edat)",
+      "searched": {
+        "oura": 2,
+        "whoop": 0,
+        "apple_watch": 2
+      },
+      "screened_in": 3,
+      "screened_out": 0,
+      "category_breakdown": {
+        "Use-case": 2,
+        "Validation": 1,
+        "Review": 0
+      },
+      "note": "PMID 42854191 matched both the Oura and Apple Watch searches (a 2-participant feasibility case report using Apple Watch + Oura, and Fitbit + Oura); filed once under Oura per this file's established convention of listing a mixed-device paper in one section with a note (cf. Hirten et al.), rather than duplicating across device sections. PMID 42855352 classified Tier B (not the scan prompt's literal CoiStatement-absence default of Tier C) because the PubMed record's own author-affiliation field names the 'Oura-National University of Singapore (NUS) Joint Lab, Oura Pte Ltd, Singapore' for 3 of 5 authors -- the same named vendor-university partnership already established as Tier B for the Liang/Yilmaz/Soon 2024 entry from the same joint lab."
     }
   ],
   "dois_seen": [
@@ -128,6 +149,7 @@
     "10.1016/j.envres.2026.124909",
     "10.1016/j.ijheh.2023.114308",
     "10.1016/j.resplu.2026.101447",
+    "10.1016/j.sleh.2026.09.011",
     "10.1038/s41746-022-00711-9",
     "10.1038/s41746-023-00778-y",
     "10.1038/s41746-023-00848-1",
@@ -150,8 +172,10 @@
     "10.2196/50983",
     "10.2196/85253",
     "10.2196/88773",
+    "10.2196/88846",
     "10.2196/89466",
     "10.2196/92359",
+    "10.2196/93019",
     "10.3233/SHTI260986",
     "10.3389/fdgth.2026.1820224",
     "10.3389/fendo.2025.1585628",
@@ -721,6 +745,43 @@
       "pdf": "module-01-wearables/literature/empatica/2020-milstein-frontbehavneurosci-empatica-e4-eda-hrv-dyadic.pdf",
       "pdf_status": "ok",
       "source": "2026-10-09 unresolved-questions pass (Q53/59/60/61/62/66/71/72/73/77/78/79/81/82)"
+    },
+    {
+      "pmid": "42855352",
+      "doi": "10.1016/j.sleh.2026.09.011",
+      "pmcid": null,
+      "title": "Comparison of rest-activity rhythm metrics derived from Oura ring and actiwatch devices: A device validation and analytical pipeline comparison study",
+      "year": "2026",
+      "device": "oura",
+      "category": "Validation",
+      "tier": "B",
+      "tier_confidence": "Corroborated",
+      "source": "weekly-literature-scan-2026-10-19"
+    },
+    {
+      "pmid": "42854191",
+      "doi": "10.2196/93019",
+      "pmcid": "PMC13652396",
+      "title": "Feasibility and Methodological Consideration of Using Wearable Devices to Examine the Relationship Between Sleep and Balance: Case Report With 2 College Students",
+      "year": "2026",
+      "device": "oura",
+      "category": "Use-case",
+      "tier": "C",
+      "tier_confidence": "Corroborated",
+      "note": "mixed-device study, also substantively covers Apple Watch (and Fitbit, out of scope); filed once under Oura per convention",
+      "source": "weekly-literature-scan-2026-10-19"
+    },
+    {
+      "pmid": "42832266",
+      "doi": "10.2196/88846",
+      "pmcid": "PMC13637571",
+      "title": "A Problem-Solving Therapy With Apple Watch Support for College Students With Alcohol Use Disorder Symptoms: Pilot Randomized Controlled Trial",
+      "year": "2026",
+      "device": "apple-watch",
+      "category": "Use-case",
+      "tier": "C",
+      "tier_confidence": "Corroborated",
+      "source": "weekly-literature-scan-2026-10-19"
     }
   ]
 }

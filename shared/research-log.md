@@ -2,6 +2,91 @@
 
 ---
 
+## 2026-10-19 — Weekly literature-scan routine (all three modules)
+
+**Module:** 1 (Oura/WHOOP/Apple Watch), 2 (phenotyping platforms), 3 (triage only). Automated,
+unattended run per `shared/weekly-literature-scan.md`'s full prompt. Window: 2026-10-05 to
+2026-10-19 (edat for PubMed; submittedDate for arXiv) for all three modules — `last_run_date` was
+2026-10-05 for every ledger.
+
+### Module 1 — Oura/WHOOP/Apple Watch
+
+Searched: Oura 2, WHOOP 0, Apple Watch 2 (3 distinct PMIDs — one PMID matched both the Oura and
+Apple Watch queries). **All 3 passed the relevance bar** (2 Use-case, 1 Validation; 0 Review; 0
+excluded). Appended to `research-library-wearables.md` within the existing device → sponsorship-tier
+structure: 1 new Oura Tier B entry, 1 new Oura Tier C entry (mixed-device case report, also covering
+Apple Watch), 1 new Apple Watch Tier C entry.
+
+**Tier-B judgment call, flagged for review:** PMID 42855352 (Oura-vs-Actiwatch rest-activity-rhythm
+validation study, National University of Singapore) has no `<CoiStatement>` field in its PubMed
+record at all — the prompt's literal default for that case is Tier C, Corroborated. I classified it
+**Tier B, Corroborated** instead, because 3 of its 5 authors are affiliated per the record's own
+author-affiliation field with the "Oura-National University of Singapore (NUS) Joint Lab, Oura Pte
+Ltd, Singapore" — the identical named vendor-university partnership already established as Tier B for
+a 2024 paper from the same joint lab (Liang/Yilmaz/Soon) already in this file. Judged that following
+the file's own precedent for a documented institutional relationship outweighs the prompt's
+CoiStatement-absence default, which did not anticipate an affiliation-only disclosure. A human should
+confirm this reading is intended.
+
+The mixed-device case report (PMID 42854191, Li et al., *JMIR Formative Research*) covers Apple Watch
++ Oura for one participant and Fitbit + Oura for the other; filed once under Oura per this file's
+established convention for mixed-device papers (cf. the Hirten et al. entry), with a note.
+
+### Module 2 — phenotyping platforms
+
+Searched (PubMed, edat): Beiwe 0, RADAR-base 0, mindLAMP 1, AWARE 1, Avicenna/Ethica 0, m-Path 0,
+CARP 0, MetricWire 0, LifeData 0. Searched (arXiv, submittedDate): RADAR-base 1, AWARE 1, all others
+0. **Zero papers passed the relevance bar this run** — all 4 raw hits were false positives: the
+mindLAMP PubMed hit was the same "TB-LAMP" (tuberculosis loop-mediated isothermal amplification assay)
+false-positive pattern already documented for the 2026-10-05 run; the AWARE PubMed hit was a
+connected-and-automated-vehicle traffic-resilience review whose keyword "communication-aware control"
+matched "AWARE"[tiab] as the ordinary adjective, not the AWARE Framework; both arXiv hits
+(automotive 4D-radar trajectory planning; a 5G/telco API paper matching "aware" as an adjective) were
+the same kind of phrase-matching artifact this file already documents for arXiv's `all:` field search.
+
+**Network note:** unlike the 2026-10-05 run, no PDF retrieval was attempted or needed this run since
+nothing qualified; `eutils.ncbi.nlm.nih.gov` and `export.arxiv.org` were both reachable.
+
+### Module 3 — triage only
+
+Searched: C1 (wearables, PubMed) 16, C2 (platforms, PubMed) 5, C3-wearables (arXiv) 0,
+C3-platforms (arXiv) 7 — 21 PubMed candidates screened, all new (none matched existing
+`dois_seen`/`pmcids_seen`/`rejected`). **2 queued, 19 rejected** (3 validation, 1 review, 1 protocol,
+14 no-cohort — full reasons in `literature-index.json`'s `rejected` array). The 7 arXiv C3-platforms
+hits were all the established "AWARE"-as-ordinary-adjective false-positive pattern (titles like
+"State-Aware Generation...", "Mode- and Support-Aware...", "Heterogeneity-aware Algorithm...",
+"Cost-Aware LLM Agents...") with no Module 2 platform involved and no DOI to record; not individually
+added to the `rejected` array, consistent with this ledger's practice of not cluttering it with
+arXiv phrase-matching artifacts.
+
+**Queued (2):** PROPHESY, a feasibility study of ActiGraph GT3X activity monitoring after open-heart
+surgery (178 screened, 64% of eligible recruited, 87% wear adherence, 98%/55% data-completeness
+figures — a strong, multi-signal candidate); and a Roadmap mHealth-app feasibility/acceptability
+study in dementia caregivers where the wearable component is Fitbit (20 dyads, 14 days, 87%/95%
+engagement rates, Fitbit worn by all caregivers and 75% of recipients).
+
+**Notable exclusions, flagged because they involved real cohorts and real wearable deployments but
+failed the two-distinct-deployment-signal threshold with only one signal category present each:** a
+Ghana/UK Parkinson's-disease digital-mobility comparison (Axivity AX6, feasibility/acceptability only,
+no retention/adherence-percentage/completeness reporting); a 3-year Japanese corporate-employee Fitbit
+sleep study (a 20,886-to-10,670 "complete data" funnel mentioned but not elaborated as a deployment
+finding); an All of Us Fitbit sleep-data-availability study among women that is centrally *about*
+data-completeness patterns by sociodemographic group but reports no second signal category; and the
+Apple Watch PST-APPLE pilot RCT (feasibility/acceptability only) that was separately added to Module
+1's library this run under that module's looser relevance bar. Per the prompt's own instruction to
+apply the relevance bar conservatively, all four were excluded rather than the two-signal rule being
+read loosely to include them.
+
+### Commit
+
+One combined commit across all three modules' edits, logging writes, and ledger updates; pushed to
+`origin/claude/hopeful-fermat-7k2zdt` (this branch has a public GitHub remote but is not the
+synchronization point the routine's own documentation assumes — see `shared/weekly-literature-scan.md`
+for the routine's branch-merge caveat; this firing happened directly inside an already-checked-out
+feature branch rather than the routine's own cloud environment).
+
+---
+
 ## 2026-10-10 (last) — Vendor fact records: baseline batch 1 (10 companies)
 
 **Module:** 1, 2 and shared (`facts/`).

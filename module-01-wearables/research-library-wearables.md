@@ -117,6 +117,22 @@ for passive, early pregnancy detection," "AF detection using Oura Ring with phot
 candidates for Tier A or B given the author-overlap pattern, but each needs its own COI check before
 being relied on.
 
+**Qin S, Jouvencel A, Soon CS, Shaif N, Ong JL, Chee MWL. 2026.** "Comparison of rest-activity
+rhythm metrics derived from Oura ring and actiwatch devices: A device validation and analytical
+pipeline comparison study." *Sleep Health*, PMID 42855352, DOI 10.1016/j.sleh.2026.09.011. National
+University of Singapore Centre for Sleep and Cognition. N=41 healthy adults, 14 days concurrent
+wear, Oura Ring vs. Actiwatch (AW2); IS/IV/RA/L5-M10 rest-activity-rhythm metrics computed via
+nparACT, MotionWare, and a custom pipeline. Three of five authors (Soon, Ong, Chee) are affiliated
+per the PubMed record with the **"Oura-National University of Singapore (NUS) Joint Lab, Oura Pte
+Ltd, Singapore"** — no separate `<CoiStatement>` field is present in this PubMed record. **Tier B**
+(named vendor-university partnership, consistent with the Liang/Yilmaz/Soon 2024 entry above from
+the same joint lab), **Corroborated** (the affiliation text was read directly from the record; the
+paper's own disclosure/COI section was not separately read). Moderate-to-excellent absolute
+agreement (ICC[A,1]=0.67–0.98) and strong rank-order correlation (Spearman's ρ=0.71–0.98) between
+devices across all four RAR metrics once Oura's MET zero-reference offset was accounted for; one
+M10 outlier sensitive to analytic-pipeline choice. **Category: Validation.** **Added 2026-10-19
+(weekly automated scan).** https://doi.org/10.1016/j.sleh.2026.09.011
+
 ## Tier C — Fully independent
 
 **Cao R, Azimi I, Sarhaddi F, Niela-Vilen H, Axelin A, Liljeberg P, Rahmani AM. 2022.** "Accuracy
@@ -283,6 +299,24 @@ consumer sleep-tracking wearables and nearables in healthy young and older adult
 underestimated TST by 75.5 min (p<0.0001) and overestimated deep sleep by 71.5 min. NIH NIA P30
 AG073107; "Financial disclosure: None." Skin tone explicitly "not measured". **Tier C. Verified** (full
 text read). PDF not obtained (OUP bot check). https://pmc.ncbi.nlm.nih.gov/articles/PMC12936866/
+
+**Li Y, Wang H, Chandrashekhar R, Major J, Chandna M, Bodison SC. 2026.** "Feasibility and
+Methodological Consideration of Using Wearable Devices to Examine the Relationship Between Sleep
+and Balance: Case Report With 2 College Students." *JMIR Formative Research* 10:e93019, PMID
+42854191, PMCID PMC13652396, DOI 10.2196/93019. University of Florida Department of Occupational
+Therapy. N=2 college students, 4 months; Participant 1 wore an Apple Watch Series 5 + Oura ring,
+Participant 2 wore a Fitbit Charge 5 + Oura ring, alongside daily sleep diaries and monthly
+sensory-organization-test balance assessments. **Mixed-device study — also substantively covers
+Apple Watch and Fitbit (Fitbit out of this module's Oura/WHOOP/Apple Watch scope); filed here per
+this file's convention of listing a mixed-device paper once (cf. Hirten et al. above).** `<CoiStatement>`
+read directly: "Conflicts of Interest: None declared." No Oura or Apple mention. **Tier C,
+Corroborated** (absence of a disclosed conflict is suggestive, not proof, of independence).
+Missing-data rate fell from up to 75.2% to 9.4–25% across devices after structured weekly
+check-ins; within-participant total-sleep-time agreement was excellent (ICC=0.97–0.99) but
+sleep-stage agreement was poor; the Apple Watch showed the least time-in-bed bias (-0.6 min) vs.
+sleep diary. **Category: Use-case** (feasibility case report; default per this routine's
+classification rule — concordance analysis is secondary to the feasibility framing). **Added
+2026-10-19 (weekly automated scan).** https://doi.org/10.2196/93019
 
 ## Oura — systematic reviews (as discovery mechanism, and classified in their own right)
 
@@ -853,6 +887,20 @@ accuracy-validation or health-outcome study — a genuinely ambiguous fit for a 
 designed around those two kinds of literature. Flagged for reconsideration (e.g. a future "Policy/Ethics" category) in a later pass if more
 papers of this type are found.** **Added 2026-10-09 from the 2026-09-01 automated scan (branch consolidation).**
 https://pubmed.ncbi.nlm.nih.gov/42633020/
+
+**Hallihan H, Lee S, Adomah R, Miranda R, Rospenda K. 2026.** "A Problem-Solving Therapy With Apple
+Watch Support for College Students With Alcohol Use Disorder Symptoms: Pilot Randomized Controlled
+Trial." *JMIR Formative Research* 10:e88846, PMID 42832266, PMCID PMC13637571, DOI 10.2196/88846.
+University of Illinois Chicago / Brown University / University of Wisconsin-Milwaukee. Pilot RCT,
+N=26 (12 intervention / 14 control) college students with alcohol-use-disorder symptoms; 12-week
+problem-solving-therapy intervention (PST-APPLE) delivered via Zoom with Apple Watch
+notifications/interactions vs. an education-only control. `<CoiStatement>` read directly:
+"Conflicts of Interest: None declared." No Apple mention. **Tier C, Corroborated** (absence of a
+disclosed conflict is suggestive, not proof, of independence). Feasible and acceptable; reduced
+alcohol-related problems (AUDIT mean difference -4.70, 95% CI -8.69 to -0.70) and reduced DMQR
+social/enhancement drinking-motivation scores vs. control; pilot not powered for definitive
+efficacy. **Category: Use-case.** **Added 2026-10-19 (weekly automated scan).**
+https://doi.org/10.2196/88846
 
 ## Apple Watch — systematic reviews / meta-analyses
 

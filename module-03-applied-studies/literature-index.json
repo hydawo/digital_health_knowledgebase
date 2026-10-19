@@ -247,8 +247,27 @@
   "PMC13601350",
   "PMC13590562"
  ],
- "last_run_date": "2026-10-05",
+ "last_run_date": "2026-10-19",
  "runs": [
+  {
+   "date": "2026-10-19",
+   "window": "2026-10-05 to 2026-10-19 (edat for PubMed C1/C2; submittedDate for arXiv C3)",
+   "searched": {
+    "C1_wearables_pubmed": 16,
+    "C2_platforms_pubmed": 5,
+    "C3_arxiv_wearables": 0,
+    "C3_arxiv_platforms": 7
+   },
+   "screened_in_queued": 2,
+   "rejected": 19,
+   "rejected_breakdown": {
+    "validation": 3,
+    "no-cohort": 15,
+    "review": 1,
+    "protocol": 1
+   },
+   "note": "C2 (digital-phenotyping-platform PubMed query) returned 5 hits, all false positives with no Module 2 platform named anywhere in title/abstract (tomato-breeding CRISPR review, gut-metagenomics CRC classifier, chest-X-ray retrieval framework, TB-granuloma cell-death framework, Italian SUDEP consensus statement) -- consistent with this query's history of low precision. C3-platforms (arXiv) returned 7 hits, all the established 'AWARE'-as-ordinary-adjective false-positive pattern (State-Aware, Mode-/Support-Aware, Role-costs-aware, Cost-Aware, etc.) with no Module 2 platform involved; not individually added to the rejected array per this ledger's established practice of not cluttering it with arXiv phrase-matching artifacts that have no DOI (see research-log.md for the list). C1 (wearables) yielded 2 genuine queued candidates (PROPHESY ActiGraph post-cardiac-surgery feasibility study; Roadmap app + Fitbit dementia-caregiver feasibility/acceptability study) out of 16 screened, and 14 rejections -- several were real cohorts with real wearable deployments (TraPCAf Ghana/UK Parkinson's study, Japan corporate-employee Fitbit sleep study, All of Us Fitbit sleep-data-availability study, PST-APPLE Apple Watch RCT) that failed the two-distinct-deployment-signal threshold with only one signal category present each; flagged as notable exclusions below and in research-log.md rather than silently dropped."
+  },
   {
    "date": "2026-10-05",
    "window": "2026-09-25 to 2026-10-05 (edat for PubMed C1/C2; submittedDate for arXiv C3) -- last_run_date was null, so the trailing-10-day default window was used",
@@ -1279,6 +1298,158 @@
    "reason": "no-cohort",
    "note": "False positive: judicial-records crime-analytics ML paper, unrelated to any Module 1/2 platform; same AWARE-framework phrase-matching artifact.",
    "source": "weekly-literature-scan-2026-09-28"
+  },
+  {
+   "doi": "10.1177/17455057261496048",
+   "pmcid": null,
+   "pmid": "42893436",
+   "reason": "validation",
+   "note": "Chronic-pelvic-pain-disorder IPAQ-vs-Fitbit construct-validity study (N=112, 966 person-weeks); explicitly a measurement-validity study (concordance/temporal-consistency of self-report vs. tracker), not a deployment-operations report.",
+   "source": "weekly-literature-scan-2026-10-19"
+  },
+  {
+   "doi": "10.3389/fnagi.2026.1899045",
+   "pmcid": "PMC13672635",
+   "pmid": "42890933",
+   "reason": "no-cohort",
+   "note": "TraPCAf Ghana/UK Parkinson's-disease digital-mobility comparison study (Axivity AX6, N=50 PD + 30 controls, 7-day wear). Real cohort, but only one deployment-reality signal category present ('Feasibility and acceptability were high, although discomfort was commonly reported'); no retention/adherence-percentage/completeness/technical-failure reporting -- fails the two-distinct-signal threshold.",
+   "source": "weekly-literature-scan-2026-10-19"
+  },
+  {
+   "doi": "10.1016/j.jad.2026.122643",
+   "pmcid": null,
+   "pmid": "42887784",
+   "reason": "no-cohort",
+   "note": "All of Us longitudinal Fitbit + polygenic-score major-depressive-disorder study (N=3,030). Epidemiological hazard-model association analysis of already-collected data; only 'longitudinal' matched, no adherence/retention/completeness reporting of its own -- consistent with prior All of Us Fitbit rejections in this ledger.",
+   "source": "weekly-literature-scan-2026-10-19"
+  },
+  {
+   "doi": "10.3389/fpsyg.2026.1932607",
+   "pmcid": "PMC13654704",
+   "pmid": "42865469",
+   "reason": "no-cohort",
+   "note": "UK Millennium Cohort Study compositional-data reallocation analysis of ActiGraph GT1M data at age 7 (N=5,145). Secondary analysis of an existing cohort's device data; no deployment-reality signals of its own.",
+   "source": "weekly-literature-scan-2026-10-19"
+  },
+  {
+   "doi": "10.1016/j.jshs.2026.101182",
+   "pmcid": null,
+   "pmid": "42858823",
+   "reason": "no-cohort",
+   "note": "All of Us Fitbit + ophthalmic-disease association study (N=14,757). Epidemiological association study; only a static wear-time inclusion threshold (>=10h/day, >=100 steps/day, >=6 months) present, no deployment-reality reporting of its own -- consistent with prior All of Us Fitbit rejections in this ledger.",
+   "source": "weekly-literature-scan-2026-10-19"
+  },
+  {
+   "doi": "10.2196/93019",
+   "pmcid": "PMC13652396",
+   "pmid": "42854191",
+   "reason": "no-cohort",
+   "note": "2-participant case report (Apple Watch + Oura ring; Fitbit + Oura ring), 4 months. Feasibility and missing-data signals both present, but PubMed article_type is 'Case Reports' -- same 'a case report is not a cohort' logic already applied to the N=1 Oura/DBS case report (10.7759/cureus.115385) elsewhere in this ledger. Also filed in Module 1's research-library-wearables.md, which has its own, looser relevance bar.",
+   "source": "weekly-literature-scan-2026-10-19"
+  },
+  {
+   "doi": "10.1007/s00787-026-03207-z",
+   "pmcid": null,
+   "pmid": "42853407",
+   "reason": "no-cohort",
+   "note": "ABCD-study cross-sectional Fitbit sleep-architecture/ADHD-symptom association analysis (N=4,545). Secondary analysis of existing cohort device data; no deployment-reality reporting of its own.",
+   "source": "weekly-literature-scan-2026-10-19"
+  },
+  {
+   "doi": "10.1016/j.dcn.2026.101826",
+   "pmcid": null,
+   "pmid": "42843149",
+   "reason": "review",
+   "note": "Explicit systematic review of digital and wearable sensor data in the ABCD study.",
+   "source": "weekly-literature-scan-2026-10-19"
+  },
+  {
+   "doi": "10.1080/07448481.2026.2741615",
+   "pmcid": null,
+   "pmid": "42841757",
+   "reason": "validation",
+   "note": "ActivPAL-vs-ActiGraph concurrent-wear agreement/cross-validation study in college students (N=36).",
+   "source": "weekly-literature-scan-2026-10-19"
+  },
+  {
+   "doi": "10.1016/j.pmedr.2026.103639",
+   "pmcid": "PMC13641033",
+   "pmid": "42841029",
+   "reason": "no-cohort",
+   "note": "Japanese corporate-employee Fitbit sleep/social-jetlag descriptive study (20,886 insured, 10,670 with 'complete data' contributing observations). The completeness funnel is mentioned but not elaborated as a deployment-reality finding, and no retention/adherence-percentage/technical-failure reporting is given -- fails the two-distinct-signal threshold.",
+   "source": "weekly-literature-scan-2026-10-19"
+  },
+  {
+   "doi": "10.1123/jmpb.2025-0086",
+   "pmcid": "PMC13641217",
+   "pmid": "42840830",
+   "reason": "validation",
+   "note": "CHAP deep-learning sedentary-behavior algorithm validation study against existing hip-accelerometer RCT data; an algorithm-accuracy paper, not a deployment-operations report.",
+   "source": "weekly-literature-scan-2026-10-19"
+  },
+  {
+   "doi": "10.2196/86345",
+   "pmcid": "PMC13641314",
+   "pmid": "42837523",
+   "reason": "protocol",
+   "note": "PubMed PublicationType 'Clinical Trial Protocol' (remote longitudinal sleep/depression/cognition tracking study); no results reported yet.",
+   "source": "weekly-literature-scan-2026-10-19"
+  },
+  {
+   "doi": "10.1016/j.nwh.2026.09.001",
+   "pmcid": null,
+   "pmid": "42833286",
+   "reason": "no-cohort",
+   "note": "All of Us Fitbit sleep-data-availability sociodemographic study among women (N=7,385). Centrally about data-completeness/missingness patterns (one signal category: longitudinal sleep-data availability low/medium/high/highest), but no second distinct category present (no retention/adherence-percentage/feasibility/technical-failure reporting) -- fails the two-distinct-signal threshold despite being thematically close to Module 3's scope. Notable exclusion, flagged in research-log.md.",
+   "source": "weekly-literature-scan-2026-10-19"
+  },
+  {
+   "doi": "10.2196/88846",
+   "pmcid": "PMC13637571",
+   "pmid": "42832266",
+   "reason": "no-cohort",
+   "note": "PST-APPLE pilot RCT (Apple Watch-supported problem-solving therapy for college students with alcohol-use-disorder symptoms, N=26). Feasibility/acceptability is the only deployment-reality signal category present; no retention-percentage/adherence-percentage/completeness/technical-failure reporting -- fails the two-distinct-signal threshold. Also filed in Module 1's research-library-wearables.md, which has its own, looser relevance bar.",
+   "source": "weekly-literature-scan-2026-10-19"
+  },
+  {
+   "doi": "10.3390/plants15192994",
+   "pmcid": null,
+   "pmid": "42884858",
+   "reason": "no-cohort",
+   "note": "False positive: tomato-breeding CRISPR genome-editing review; no Module 2 platform named anywhere in the abstract despite matching the C2 grouped query.",
+   "source": "weekly-literature-scan-2026-10-19"
+  },
+  {
+   "doi": "10.3389/fmicb.2026.1971707",
+   "pmcid": "PMC13650428",
+   "pmid": "42857378",
+   "reason": "no-cohort",
+   "note": "False positive: gut-metagenomic colorectal-cancer classifier cross-study/cross-country benchmarking framework (CRC-TrustBench); no Module 2 platform named.",
+   "source": "weekly-literature-scan-2026-10-19"
+  },
+  {
+   "doi": "10.1007/s10278-026-02377-1",
+   "pmcid": null,
+   "pmid": "42855632",
+   "reason": "no-cohort",
+   "note": "False positive: chest-X-ray image-report retrieval framework (CXR-CoRe); no Module 2 platform named.",
+   "source": "weekly-literature-scan-2026-10-19"
+  },
+  {
+   "doi": "10.3389/fimmu.2026.1933352",
+   "pmcid": "PMC13648034",
+   "pmid": "42852373",
+   "reason": "no-cohort",
+   "note": "False positive: tuberculosis-granuloma programmed-cell-death framework (Necro-Mosaic); no Module 2 platform named.",
+   "source": "weekly-literature-scan-2026-10-19"
+  },
+  {
+   "doi": "10.1002/epi4.70358",
+   "pmcid": "PMC13643408",
+   "pmid": "42839771",
+   "reason": "no-cohort",
+   "note": "False positive: Italian multidisciplinary SUDEP (epilepsy) expert-consensus statement; mentions 'wearable technologies' only generically (panel-member expertise), no Module 2 platform named.",
+   "source": "weekly-literature-scan-2026-10-19"
   }
  ]
 }
