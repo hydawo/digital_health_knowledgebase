@@ -1142,63 +1142,274 @@
   "name": "Fitrockr",
   "kind": "intermediary",
   "field": "research_program",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Garmin Health x Fitrockr research grants, run as regional or themed rounds (EMEA 2023, Americas 2023, India 2024, Biomarkers 2024, Australia and New Zealand 2025, Asia 2026). The Asia 2026 award was 5 Garmin vivoactive 5 watches, 6 months of unrestricted Fitrockr platform access for up to 50 participants, and a possible feature in Garmin Health communications; earlier rounds gave 3 months of access for up to 50 users. There is no standing academic program.",
+  "confidence": "Corroborated",
+  "recheck_by": "2026-11-20",
+  "note": "Garmin's release, read live, confirms the Asia 2026 package; the round history and the earlier 3-month terms rest on the 2026-07-13 capture.",
+  "sources": [
+   {
+    "url": "https://www.garmin.com/en-PH/newsroom/press-release/news-2026-mar-fitrockr/",
+    "type": "secondary",
+    "quote": "Professional Hardware: 5 Garmin vívoactive 5 smartwatches, featuring advanced health monitoring and long battery life.",
+    "retrieved": "2026-10-21",
+    "note": "Garmin Philippines press release dated 2026-03-05, read live. Garmin is the co-sponsor."
+   },
+   {
+    "url": "https://www.garmin.com/en-PH/newsroom/press-release/news-2026-mar-fitrockr/",
+    "type": "secondary",
+    "quote": "Full Platform Access: 6 months of unrestricted access to the Fitrockr Health Solutions Platform.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://www.fitrockr.com/research/research-grants/",
+    "fetch_url": "https://web.archive.org/web/20260713062221/https://www.fitrockr.com/research/research-grants/",
+    "type": "vendor_page",
+    "quote": "Fitrockr and Garmin support innovate research through grant programs that provide the tools to conduct health data research studies based on wearable data.",
+    "retrieved": "2026-10-21",
+    "note": "Wayback capture of 2026-07-13."
+   },
+   {
+    "url": "https://www.fitrockr.com/research/research-grants/",
+    "fetch_url": "https://web.archive.org/web/20260713062221/https://www.fitrockr.com/research/research-grants/",
+    "type": "vendor_page",
+    "quote": "6 months unrestricted access to the Fitrockr Health Solutions Platform for up to 50 participants",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://www.fitrockr.com/research/research-grants/",
+    "fetch_url": "https://web.archive.org/web/20260713062221/https://www.fitrockr.com/research/research-grants/",
+    "type": "vendor_page",
+    "quote": "3 months unrestricted access to the Fitrockr Health Solution Platform for up to 50 users",
+    "retrieved": "2026-10-21"
+   }
+  ]
  },
  {
   "company": "fitrockr",
   "name": "Fitrockr",
   "kind": "intermediary",
   "field": "program_eligibility",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Set per round, usually by region. Asia 2026 was open to academic researchers, post-docs and graduate students in Asia doing health or sports science studies with Garmin wearables, with projects starting within 2026. Americas 2023 was open to researchers in any North or South American country.",
+  "confidence": "Corroborated",
+  "recheck_by": "2026-11-20",
+  "sources": [
+   {
+    "url": "https://www.garmin.com/en-PH/newsroom/press-release/news-2026-mar-fitrockr/",
+    "type": "secondary",
+    "quote": "Eligibility: Academic researchers, post-docs, and graduate students in Asia (including Taiwan, Japan, Korea, and Southeast Asia) conducting health or sports science studies using Garmin wearables.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://www.fitrockr.com/research/research-grants/",
+    "fetch_url": "https://web.archive.org/web/20260713062221/https://www.fitrockr.com/research/research-grants/",
+    "type": "vendor_page",
+    "quote": "For our grant, we invite researchers from any country in North or South America.",
+    "retrieved": "2026-10-21",
+    "note": "Wayback capture of 2026-07-13 (Americas 2023 round)."
+   }
+  ]
  },
  {
   "company": "fitrockr",
   "name": "Fitrockr",
   "kind": "intermediary",
   "field": "program_application",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Applicants apply through the round's official grant page before a fixed deadline; between rounds Fitrockr points people to its newsletter. Selection criteria and the review process are not published.",
+  "confidence": "Corroborated",
+  "recheck_by": "2026-11-20",
+  "sources": [
+   {
+    "url": "https://www.garmin.com/en-PH/newsroom/press-release/news-2026-mar-fitrockr/",
+    "type": "secondary",
+    "quote": "How to Apply: Visit the Garmin Health x Fitrockr Research Grant Asia 2026 official page for details and submission.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://www.fitrockr.com/research/research-grants/",
+    "fetch_url": "https://web.archive.org/web/20260713062221/https://www.fitrockr.com/research/research-grants/",
+    "type": "vendor_page",
+    "quote": "Apply here for a grant which will provide support for research projects with up to 50 participants.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://www.fitrockr.com/research/research-grants/",
+    "fetch_url": "https://web.archive.org/web/20260713062221/https://www.fitrockr.com/research/research-grants/",
+    "type": "vendor_page",
+    "quote": "Sign up for our newsletter to get informed about new grants.",
+    "retrieved": "2026-10-21"
+   }
+  ]
  },
  {
   "company": "fitrockr",
   "name": "Fitrockr",
   "kind": "intermediary",
   "field": "program_status",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Between rounds. The Asia 2026 call closed on 31 March 2026 and its winners are listed; the next round is \"to be announced\". No open call on the 2026-07-13 capture or in researcher B's live reading of 2026-10-21.",
+  "confidence": "Reported",
+  "recheck_by": "2026-11-04",
+  "sources": [
+   {
+    "url": "https://www.fitrockr.com/research/research-grants/",
+    "fetch_url": "https://web.archive.org/web/20260713062221/https://www.fitrockr.com/research/research-grants/",
+    "type": "vendor_page",
+    "quote": "New grants will be announced soon.",
+    "retrieved": "2026-10-21",
+    "note": "Wayback capture of 2026-07-13. Researcher B read the same sentence on the live page on 2026-10-21."
+   },
+   {
+    "url": "https://www.fitrockr.com/research/research-grants/",
+    "fetch_url": "https://web.archive.org/web/20260713062221/https://www.fitrockr.com/research/research-grants/",
+    "type": "vendor_page",
+    "quote": "Applications closed on March 31, 2026.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://www.garmin.com/en-PH/newsroom/press-release/news-2026-mar-fitrockr/",
+    "type": "secondary",
+    "quote": "Deadline: March 31, 2026.",
+    "retrieved": "2026-10-21"
+   }
+  ]
  },
  {
   "company": "fitrockr",
   "name": "Fitrockr",
   "kind": "intermediary",
   "field": "developer_program_status",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No public developer program. Paying customers get the REST data API (all synced data) and a separate live-data API (needs the Live add-on) on request to support; API access is a priced add-on (+20% on licence). API documentation is not public.",
+  "confidence": "Reported",
+  "recheck_by": "2026-11-04",
+  "note": "Researcher B also reported a separate \"Wearable API\" product from EUR 150 per month for up to 20 users on the live site on 2026-10-21 but recorded no quote for it, so it is unconfirmed. A University of Bern open-source plugin (github.com/humdek-unibe-ch/sh-shp-fitrockr) shows the REST API at api.fitrockr.com/v1 with an API key.",
+  "sources": [
+   {
+    "url": "https://www.fitrockr.com/help-center/fitrockr-api/",
+    "fetch_url": "https://web.archive.org/web/20250909230659/https://www.fitrockr.com/help-center/fitrockr-api/",
+    "type": "vendor_docs",
+    "quote": "Request API access information at support@fitrockr.com",
+    "retrieved": "2026-10-21",
+    "note": "Wayback capture of 2025-09-09, the newest capture of this article; researcher B read the same sentence live on 2026-10-21."
+   },
+   {
+    "url": "https://www.fitrockr.com/help-center/fitrockr-api/",
+    "fetch_url": "https://web.archive.org/web/20250909230659/https://www.fitrockr.com/help-center/fitrockr-api/",
+    "type": "vendor_docs",
+    "quote": "Fitrockr LIVE-DATA-API can only be used if wearable data is live streamed (requires Live Add-on).",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://www.fitrockr.com/pricing/",
+    "type": "vendor_page",
+    "quote": "API Access Automatically import data via API. +20% on license",
+    "retrieved": "2026-10-21",
+    "note": "Read by researcher B on 2026-10-21; site blocks scripts, not re-confirmed by the judge."
+   },
+   {
+    "url": "https://www.fitrockr.com/research/pricing/",
+    "fetch_url": "https://web.archive.org/web/20260713062111/https://www.fitrockr.com/research/pricing/",
+    "type": "vendor_page",
+    "quote": "API Access +20% on license Automatically import data via API.",
+    "retrieved": "2026-10-21",
+    "note": "Wayback capture of 2026-07-13 (old pricing URL)."
+   }
+  ]
  },
  {
   "company": "fitrockr",
   "name": "Fitrockr",
   "kind": "intermediary",
   "field": "user_cap",
-  "status": "unresearched",
-  "sources": []
+  "status": "conflict",
+  "value": "No participant cap on the published plans: the pricing page bills by connected device (5 device licences included, more bought per device) with unlimited users, and a 2026 news post says licences moved from user accounts to devices. The pricing help article still says pricing is based on user numbers. Free trial: up to 5 device connections for 2 weeks. Grants cover up to 50 participants.",
+  "confidence": "Reported",
+  "recheck_by": "2026-11-04",
+  "note": "Both pages were live on 2026-10-21 per researcher B, so the vendor contradicts itself on the pricing basis. The help article is probably stale, but older contracts may still be user-based; ask Fitrockr.",
+  "sources": [
+   {
+    "url": "https://www.fitrockr.com/pricing/",
+    "type": "vendor_page",
+    "quote": "Users: Unlimited Licenses Included: 5 Device Licenses",
+    "retrieved": "2026-10-21",
+    "note": "Read by researcher B on 2026-10-21; site blocks scripts, not re-confirmed by the judge."
+   },
+   {
+    "url": "https://www.fitrockr.com/research/pricing/",
+    "fetch_url": "https://web.archive.org/web/20260713062111/https://www.fitrockr.com/research/pricing/",
+    "type": "vendor_page",
+    "quote": "Users: Unlimited Licenses Included: 5 Device Licenses",
+    "retrieved": "2026-10-21",
+    "note": "Wayback capture of 2026-07-13."
+   },
+   {
+    "url": "https://www.fitrockr.com/research/pricing/",
+    "fetch_url": "https://web.archive.org/web/20260713062111/https://www.fitrockr.com/research/pricing/",
+    "type": "vendor_page",
+    "quote": "Up to 5 Device Connections 2 Weeks",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://www.fitrockr.com/new-research-pricing-unlimited-users-with-all-packages/",
+    "fetch_url": "https://web.archive.org/web/20260515071904/https://www.fitrockr.com/new-research-pricing-unlimited-users-with-all-packages/",
+    "type": "vendor_page",
+    "quote": "this is achieved by basing our license fee on connected devices instead of user accounts",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://www.fitrockr.com/help-center/pricing-plans-payment/",
+    "type": "vendor_docs",
+    "quote": "Our pricing is based on user numbers and length of access.",
+    "retrieved": "2026-10-21",
+    "note": "Read by researcher B on 2026-10-21 on the live help centre; site blocks scripts, not re-confirmed by the judge."
+   },
+   {
+    "url": "https://www.fitrockr.com/research/help-center/pricing-plans-payment/",
+    "fetch_url": "https://web.archive.org/web/20260422051109/https://www.fitrockr.com/research/help-center/pricing-plans-payment/",
+    "type": "vendor_docs",
+    "quote": "Our pricing is based on user numbers and length of access.",
+    "retrieved": "2026-10-21",
+    "note": "Wayback capture of 2026-04-22 (old help-centre URL)."
+   }
+  ]
  },
  {
   "company": "fitrockr",
   "name": "Fitrockr",
   "kind": "intermediary",
   "field": "academic_vs_commercial",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No separate academic price list or terms. One \"Research & Clinical Trials\" price list covers universities, hospitals and companies; teams with limited research funds are asked to request a custom quote. The grants are the only academic-specific route.",
+  "confidence": "Reported",
+  "recheck_by": "2026-11-04",
+  "sources": [
+   {
+    "url": "https://www.fitrockr.com/research/help-center/pricing-plans-payment/",
+    "fetch_url": "https://web.archive.org/web/20260422051109/https://www.fitrockr.com/research/help-center/pricing-plans-payment/",
+    "type": "vendor_docs",
+    "quote": "Please contact us in case of large user numbers, limited research funds or if you need a custom quote.",
+    "retrieved": "2026-10-21",
+    "note": "Wayback capture of 2026-04-22."
+   },
+   {
+    "url": "https://www.fitrockr.com/help-center/pricing-plans-payment/",
+    "type": "vendor_docs",
+    "quote": "Please contact us in case of large user numbers, limited research funds or if you need a custom quote.",
+    "retrieved": "2026-10-21",
+    "note": "Read by researcher B on 2026-10-21; site blocks scripts, not re-confirmed by the judge."
+   }
+  ]
  },
  {
   "company": "fitrockr",
   "name": "Fitrockr",
   "kind": "intermediary",
   "field": "device_price",
-  "status": "unresearched",
+  "status": "not_applicable",
+  "note": "Fitrockr sells software only; teams buy the wearables (Garmin, Withings, Oura, Polar and others) from their makers. The grants supply 5 Garmin watches.",
   "sources": []
  },
  {
@@ -1206,7 +1417,8 @@
   "name": "Fitrockr",
   "kind": "intermediary",
   "field": "subscription_price",
-  "status": "unresearched",
+  "status": "not_applicable",
+  "note": "No consumer membership. Participants use the free Fitrockr Sync app; the organisation licence is under api_platform_fees.",
   "sources": []
  },
  {
@@ -1214,168 +1426,824 @@
   "name": "Fitrockr",
   "kind": "intermediary",
   "field": "academic_pricing",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No published academic price or discount. Teams with limited research funds are asked to contact Fitrockr for a custom quote.",
+  "confidence": "Reported",
+  "recheck_by": "2026-11-04",
+  "sources": [
+   {
+    "url": "https://www.fitrockr.com/research/help-center/pricing-plans-payment/",
+    "fetch_url": "https://web.archive.org/web/20260422051109/https://www.fitrockr.com/research/help-center/pricing-plans-payment/",
+    "type": "vendor_docs",
+    "quote": "Please contact us in case of large user numbers, limited research funds or if you need a custom quote.",
+    "retrieved": "2026-10-21",
+    "note": "Wayback capture of 2026-04-22; researcher B read the same sentence live on 2026-10-21."
+   }
+  ]
  },
  {
   "company": "fitrockr",
   "name": "Fitrockr",
   "kind": "intermediary",
   "field": "api_platform_fees",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Research & Clinical Trials plans per month, as researcher B read them on 2026-10-21: Basic from EUR 50 (USD 55), Pro from EUR 150 (USD 165), each with 5 device licences; extra device licences EUR 1 to 7.5 (Basic) or EUR 1 to 15 (Pro) per month. Add-ons: API access +20% on licence; accelerometer and gyroscope collection +25%; live streaming +20%; surveys +20%; on-premise hosting EUR 5,000 + 20%; Data Vault EUR 250 per month after the project; historic Garmin Connect import EUR 500 setup. Germany cloud hosting, support and admin accounts included.",
+  "confidence": "Reported",
+  "recheck_by": "2026-11-04",
+  "note": "Changed since the 2026-07-13 capture of /research/pricing/, per researcher B: Data Vault rose from EUR 150 to EUR 250 per month (capture: \"Data Vault €150 per month\"); accelerometer and gyroscope collection moved from \"Volume Based\" (Pro only) to +25% on licence; live streaming from EUR 500 + 20% to +20% (B gave no quote for the new live price); the plan table with per-stream sampling rates was removed. B also reported a separate Wearable API product from EUR 150 per month for up to 20 users, without a quote. The surveys +20% and historic-import EUR 500 figures are B's reading; only the old surveys price is in the capture.",
+  "sources": [
+   {
+    "url": "https://www.fitrockr.com/pricing/",
+    "type": "vendor_page",
+    "quote": "BASIC starting at € 50 Month",
+    "retrieved": "2026-10-21",
+    "note": "Read by researcher B on 2026-10-21; site blocks scripts, not re-confirmed by the judge. Same for every /pricing/ quote in this fact."
+   },
+   {
+    "url": "https://www.fitrockr.com/pricing/",
+    "type": "vendor_page",
+    "quote": "PRO starting at € 150 Month",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://www.fitrockr.com/pricing/",
+    "type": "vendor_page",
+    "quote": "Add. Device License: €1-€15/month",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://www.fitrockr.com/pricing/",
+    "type": "vendor_page",
+    "quote": "Collection of Accelerometer (25Hz) & Gyroscope (32 Hz) data. +25% on license",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://www.fitrockr.com/pricing/",
+    "type": "vendor_page",
+    "quote": "Data retention after the project. Keep accessing your data on Fitrockr. €250 / month",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://www.fitrockr.com/pricing/",
+    "type": "vendor_page",
+    "quote": "All subscriptions include secure Germany cloud hosting, support, and admin accounts.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://www.fitrockr.com/research/pricing/",
+    "fetch_url": "https://web.archive.org/web/20260713062111/https://www.fitrockr.com/research/pricing/",
+    "type": "vendor_page",
+    "quote": "BASIC starting at € 50 Month Users: Unlimited Licenses Included: 5 Device Licenses Add. Device License: €1-€7.5/month",
+    "retrieved": "2026-10-21",
+    "note": "Wayback capture of 2026-07-13 of the old pricing URL; the plan prices are unchanged."
+   },
+   {
+    "url": "https://www.fitrockr.com/research/pricing/",
+    "fetch_url": "https://web.archive.org/web/20260713062111/https://www.fitrockr.com/research/pricing/",
+    "type": "vendor_page",
+    "quote": "PRO starting at € 150 Month Users: Unlimited Licenses Included: 5 Device Licenses Add. Device License: €1-€15/month",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://www.fitrockr.com/research/pricing/",
+    "fetch_url": "https://web.archive.org/web/20260713062111/https://www.fitrockr.com/research/pricing/",
+    "type": "vendor_page",
+    "quote": "(Military) On-Premise Hosting €5.000 + 20% on license",
+    "retrieved": "2026-10-21"
+   }
+  ]
  },
  {
   "company": "fitrockr",
   "name": "Fitrockr",
   "kind": "intermediary",
   "field": "minimum_commitment",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "3-month minimum contract, with renewals in 3-month terms, on Basic and Pro. The terms say subscriptions do not renew automatically unless agreed.",
+  "confidence": "Reported",
+  "recheck_by": "2026-11-04",
+  "sources": [
+   {
+    "url": "https://www.fitrockr.com/research/pricing/",
+    "fetch_url": "https://web.archive.org/web/20260713062111/https://www.fitrockr.com/research/pricing/",
+    "type": "vendor_page",
+    "quote": "3 Months Minimum Contract & Renewals",
+    "retrieved": "2026-10-21",
+    "note": "Wayback capture of 2026-07-13; researcher B read the same line on the live /pricing/ page on 2026-10-21."
+   },
+   {
+    "url": "https://www.fitrockr.com/health-solutions/terms-of-use/",
+    "type": "vendor_legal",
+    "quote": "subscriptions do not automatically renew.",
+    "retrieved": "2026-10-21",
+    "note": "2026-09-19 terms, read by researcher B on 2026-10-21; site blocks scripts, not re-confirmed by the judge."
+   },
+   {
+    "url": "https://www.fitrockr.com/health-solutions/terms-of-use/",
+    "fetch_url": "https://web.archive.org/web/20260511153050/https://www.fitrockr.com/health-solutions/terms-of-use/",
+    "type": "vendor_legal",
+    "quote": "10.1 Subscriptions do not automatically renew unless otherwise agreed.",
+    "retrieved": "2026-10-21",
+    "note": "Terms effective 2025-11-09, Wayback capture of 2026-05-11 (superseded version)."
+   }
+  ]
  },
  {
   "company": "fitrockr",
   "name": "Fitrockr",
   "kind": "intermediary",
   "field": "quote_required",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Partly. \"Starting at\" plan and add-on prices are published, but contracts (fixed price per project or pay-as-you-go) are set in a Fitrockr quote, and some items (country-of-choice hosting, custom work) are priced on effort.",
+  "confidence": "Reported",
+  "recheck_by": "2026-11-04",
+  "sources": [
+   {
+    "url": "https://www.fitrockr.com/pricing/",
+    "type": "vendor_page",
+    "quote": "We provide fixed pricing contracts or pay-as-you-go subscriptions. Send us a quote request",
+    "retrieved": "2026-10-21",
+    "note": "Read by researcher B on 2026-10-21; site blocks scripts, not re-confirmed by the judge."
+   },
+   {
+    "url": "https://www.fitrockr.com/research/pricing/",
+    "fetch_url": "https://web.archive.org/web/20260713062111/https://www.fitrockr.com/research/pricing/",
+    "type": "vendor_page",
+    "quote": "Get in touch to receive your custom offer.",
+    "retrieved": "2026-10-21",
+    "note": "Wayback capture of 2026-07-13."
+   },
+   {
+    "url": "https://www.fitrockr.com/health-solutions/terms-of-use/",
+    "fetch_url": "https://web.archive.org/web/20260511153050/https://www.fitrockr.com/health-solutions/terms-of-use/",
+    "type": "vendor_legal",
+    "quote": "4.2 Fees are specified in the Provider quote.",
+    "retrieved": "2026-10-21",
+    "note": "Terms effective 2025-11-09 (superseded by the 2026-09-19 terms)."
+   }
+  ]
  },
  {
   "company": "fitrockr",
   "name": "Fitrockr",
   "kind": "intermediary",
   "field": "raw_streams",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Through the Fitrockr app's direct device sync (not Garmin Connect): raw and enhanced beat-to-beat intervals (every beat), accelerometer (fixed 25 Hz) and gyroscope (fixed 32 Hz) as a paid add-on, actigraphy, zero crossing and skin temperature, plus heart rate, stress, SpO2 and respiration at configurable epochs. Syncing through Garmin Connect \"supports less data\". GPS can be switched off per study. Garmin is the main source; other brands (Apple, Google, Withings, Oura, Polar and others) are supported.",
+  "confidence": "Reported",
+  "recheck_by": "2026-11-04",
+  "note": "A June 2026 news post (capture 2026-06-16) claims Google Fitbit Air support through the Google Health app; the data route is not stated.",
+  "sources": [
+   {
+    "url": "https://www.fitrockr.com/research/pricing/",
+    "fetch_url": "https://web.archive.org/web/20260713062111/https://www.fitrockr.com/research/pricing/",
+    "type": "vendor_page",
+    "quote": "Raw BBI – Each beat Enhanced BBI – Each beat",
+    "retrieved": "2026-10-21",
+    "note": "Wayback capture of 2026-07-13; this plan table was removed from the live page per researcher B."
+   },
+   {
+    "url": "https://www.fitrockr.com/help-center/data-dictionary/",
+    "fetch_url": "https://web.archive.org/web/20260907021750/https://www.fitrockr.com/help-center/data-dictionary/",
+    "type": "vendor_docs",
+    "quote": "Resolution is fixed at 25Hz (i.e. 25 measurements per second).",
+    "retrieved": "2026-10-21",
+    "note": "Wayback capture of 2026-09-07 of the restructured help centre."
+   },
+   {
+    "url": "https://www.fitrockr.com/pricing/",
+    "type": "vendor_page",
+    "quote": "Collection of Accelerometer (25Hz) & Gyroscope (32 Hz) data. +25% on license",
+    "retrieved": "2026-10-21",
+    "note": "Read by researcher B on 2026-10-21; site blocks scripts, not re-confirmed by the judge."
+   },
+   {
+    "url": "https://www.fitrockr.com/research/help-center/data-export/",
+    "fetch_url": "https://web.archive.org/web/20260713060548/https://www.fitrockr.com/research/help-center/data-export/",
+    "type": "vendor_docs",
+    "quote": "Availability and granularity of health data depends on the wearable model and whether the wearable has been synchronised using the Fitrockr app or Garmin Connect. The latter supports less data.",
+    "retrieved": "2026-10-21",
+    "note": "Wayback capture of 2026-07-13; researcher B read the same sentence on the live /help-center/data-export/."
+   },
+   {
+    "url": "https://www.fitrockr.com/disable-gps-data/",
+    "fetch_url": "https://web.archive.org/web/20260616113942/https://www.fitrockr.com/disable-gps-data/",
+    "type": "vendor_page",
+    "quote": "When GPS is disabled for a study, location data is not exposed or visible anywhere in the platform",
+    "retrieved": "2026-10-21",
+    "note": "News post dated 2026-05-27, Wayback capture of 2026-06-16."
+   },
+   {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12975902/",
+    "type": "paper",
+    "quote": "was exported from the Fitrockr hub/platform in the Comma-Separated Values (CSV) format.",
+    "retrieved": "2026-10-21",
+    "note": "Front Aging 2026. The sentence begins \"For each participant, raw acceleration (25 Hz)\"; the quote is shortened because the page's \"25 Hz\" uses a special space. Independent use of the 25 Hz export."
+   }
+  ]
  },
  {
   "company": "fitrockr",
   "name": "Fitrockr",
   "kind": "intermediary",
   "field": "derived_metrics",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Device metrics passed through (Garmin stress, Body Battery, sleep, steps, intensity minutes, respiration, SpO2) plus metrics Fitrockr computes itself, including HRV indices (RMSSD, SDNN, LF/HF) from beat-to-beat data and MET, and report types (HRV, sleep, 6-minute walk test and others).",
+  "confidence": "Reported",
+  "recheck_by": "2026-11-04",
+  "sources": [
+   {
+    "url": "https://www.fitrockr.com/research/help-center/data-dictionary/",
+    "fetch_url": "https://web.archive.org/web/20260713062642/https://www.fitrockr.com/research/help-center/data-dictionary/",
+    "type": "vendor_docs",
+    "quote": "The following health indicators are calculated by the Fitrockr platform: LF/HF Ratio",
+    "retrieved": "2026-10-21",
+    "note": "Wayback capture of 2026-07-13."
+   },
+   {
+    "url": "https://www.fitrockr.com/research/help-center/data-dictionary/",
+    "fetch_url": "https://web.archive.org/web/20260713062642/https://www.fitrockr.com/research/help-center/data-dictionary/",
+    "type": "vendor_docs",
+    "quote": "Met Calculation Type: Determines which system has calculated the MET. Can be Garmin or Fitrockr.",
+    "retrieved": "2026-10-21"
+   }
+  ]
  },
  {
   "company": "fitrockr",
   "name": "Fitrockr",
   "kind": "intermediary",
   "field": "sampling_rates",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Accelerometer fixed at 25 Hz and gyroscope at 32 Hz on Garmin (not adjustable); beat-to-beat intervals every beat; other streams configurable (Fitrockr lists 1 s, 60 s, 90 s and so on). Via Garmin Connect sync, HRV is limited to RMSSD in 5-minute intervals during the sleep window.",
+  "confidence": "Reported",
+  "recheck_by": "2026-11-04",
+  "note": "The 2026-07-13 capture of /research/pricing/ had a per-stream table (Basic vs Pro: heart rate 1 min vs 1 s to 60 min; stress 3 min vs 1 s to 60 min; respiration and SpO2 3 min vs 10 s to 60 min; steps 15 min vs 60 s; actigraphy 1 s to 30 s and skin temperature 1 s to 60 min on Pro). Researcher B reports the table is gone from the live /pricing/ page as of 2026-10-21.",
+  "sources": [
+   {
+    "url": "https://www.fitrockr.com/help-center/data-dictionary/",
+    "fetch_url": "https://web.archive.org/web/20260907021750/https://www.fitrockr.com/help-center/data-dictionary/",
+    "type": "vendor_docs",
+    "quote": "Resolution is fixed at 25Hz (i.e. 25 measurements per second).",
+    "retrieved": "2026-10-21",
+    "note": "Wayback capture of 2026-09-07; researcher B read the same sentences live on 2026-10-21."
+   },
+   {
+    "url": "https://www.fitrockr.com/help-center/data-dictionary/",
+    "fetch_url": "https://web.archive.org/web/20260907021750/https://www.fitrockr.com/help-center/data-dictionary/",
+    "type": "vendor_docs",
+    "quote": "Resolution is fixed at 32Hz (i.e. 32 measurements per second).",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://www.fitrockr.com/features/",
+    "type": "vendor_page",
+    "quote": "Flexibly adjust data samplings rates (32Hz, 25Hz, 1s, 60s, 90s, etc.).",
+    "retrieved": "2026-10-21",
+    "note": "Read by researcher B on 2026-10-21; site blocks scripts, not re-confirmed by the judge."
+   },
+   {
+    "url": "https://www.fitrockr.com/research/help-center/hrv-via-garmin-connect-sync/",
+    "fetch_url": "https://web.archive.org/web/20260617195731/https://www.fitrockr.com/research/help-center/hrv-via-garmin-connect-sync/",
+    "type": "vendor_docs",
+    "quote": "HRV data will be limited to HRV RMSSD measurements (5-minute intervals) during the configured sleeping time window of the user.",
+    "retrieved": "2026-10-21",
+    "note": "Wayback capture of 2026-06-17."
+   }
+  ]
  },
  {
   "company": "fitrockr",
   "name": "Fitrockr",
   "kind": "intermediary",
   "field": "history_depth",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "For Garmin Connect-linked users, up to 2 years of history can be imported (a paid add-on, EUR 500 setup per researcher B's reading of the pricing page). For direct Fitrockr app sync, history is limited to what is still on the watch; when storage is full, default data overwrites the oldest files.",
+  "confidence": "Reported",
+  "recheck_by": "2026-11-04",
+  "sources": [
+   {
+    "url": "https://www.fitrockr.com/research/help-center/smartphone-sync-single-sync-with-garmin-connect-app/",
+    "fetch_url": "https://web.archive.org/web/20260429195431/https://www.fitrockr.com/research/help-center/smartphone-sync-single-sync-with-garmin-connect-app/",
+    "type": "vendor_docs",
+    "quote": "With up to 2 years of historical health data can be potentially available depending on what the Garmin device can provide.",
+    "retrieved": "2026-10-21",
+    "note": "Wayback capture of 2026-04-29; researcher B read the same sentence on the live /help-center/ page."
+   },
+   {
+    "url": "https://www.fitrockr.com/pricing/",
+    "type": "vendor_page",
+    "quote": "Import of up to 2 years of historic data (Garmin Connect only). €500 setup",
+    "retrieved": "2026-10-21",
+    "note": "Read by researcher B on 2026-10-21; site blocks scripts, not re-confirmed by the judge."
+   },
+   {
+    "url": "https://www.fitrockr.com/research/help-center/what-happens-when-a-garmin-device-runs-full/",
+    "fetch_url": "https://web.archive.org/web/20260713063324/https://www.fitrockr.com/research/help-center/what-happens-when-a-garmin-device-runs-full/",
+    "type": "vendor_docs",
+    "quote": "Default data will overwrite oldest data files if device runs out of space.",
+    "retrieved": "2026-10-21",
+    "note": "Wayback capture of 2026-07-13."
+   }
+  ]
  },
  {
   "company": "fitrockr",
   "name": "Fitrockr",
   "kind": "intermediary",
   "field": "export_routes",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "On-demand dashboard exports (41 export options) in Excel, CSV or JSON (CSV or JSON for large data); REST data API for all synced data and a live-data API for live streams (both add-ons); a full database dump in BSON on request for long-term storage.",
+  "confidence": "Reported",
+  "recheck_by": "2026-11-04",
+  "sources": [
+   {
+    "url": "https://www.fitrockr.com/research/help-center/data-export/",
+    "fetch_url": "https://web.archive.org/web/20260713060548/https://www.fitrockr.com/research/help-center/data-export/",
+    "type": "vendor_docs",
+    "quote": "Select CSV or JSON for large data amounts.",
+    "retrieved": "2026-10-21",
+    "note": "Wayback capture of 2026-07-13."
+   },
+   {
+    "url": "https://www.fitrockr.com/help-center/fitrockr-api/",
+    "fetch_url": "https://web.archive.org/web/20250909230659/https://www.fitrockr.com/help-center/fitrockr-api/",
+    "type": "vendor_docs",
+    "quote": "Fitrockr REST-API can be used to import all synced data.",
+    "retrieved": "2026-10-21",
+    "note": "Wayback capture of 2025-09-09; researcher B read the same sentence live on 2026-10-21."
+   },
+   {
+    "url": "https://www.fitrockr.com/research/help-center/long-term-data-storage/",
+    "fetch_url": "https://web.archive.org/web/20260422051637/https://www.fitrockr.com/research/help-center/long-term-data-storage/",
+    "type": "vendor_docs",
+    "quote": "Fitrockr can provide a full data base dump as BSON file format that can be stored by yourself.",
+    "retrieved": "2026-10-21",
+    "note": "Wayback capture of 2026-04-22."
+   },
+   {
+    "url": "https://www.fitrockr.com/data-export-enhancements/",
+    "fetch_url": "https://web.archive.org/web/20261007165317/https://www.fitrockr.com/data-export-enhancements/",
+    "type": "vendor_page",
+    "quote": "The platform now supports 41 distinct export options.",
+    "retrieved": "2026-10-21",
+    "note": "Wayback capture of 2026-10-07."
+   }
+  ]
  },
  {
   "company": "fitrockr",
   "name": "Fitrockr",
   "kind": "intermediary",
   "field": "rate_limits",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Reported",
+  "recheck_by": "2026-11-04",
+  "note": "API documentation is given to customers on request and is not public. Researcher B reports the 2026-09-19 terms forbid automated access that exceeds \"documented API or usage limits\", so limits exist but are not published.",
+  "sources": [
+   {
+    "url": "https://www.fitrockr.com/help-center/fitrockr-api/",
+    "fetch_url": "https://web.archive.org/web/20250909230659/https://www.fitrockr.com/help-center/fitrockr-api/",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://www.fitrockr.com/api-access/",
+    "fetch_url": "https://web.archive.org/web/20260616115304/https://www.fitrockr.com/api-access/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://www.fitrockr.com/health-solutions/terms-of-use/",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-21",
+    "note": "2026-09-19 terms, read by researcher B."
+   }
+  ]
  },
  {
   "company": "fitrockr",
   "name": "Fitrockr",
   "kind": "intermediary",
   "field": "retention_terms",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Each research project runs on its own server instance, deleted with all data at the end of the study. Under the 2026-09-19 terms (researcher B's reading), Fitrockr deletes or returns customer data after a post-termination retrieval period, unless law or a written agreement says otherwise. Read-only access after the project is the paid Data Vault add-on; a free BSON database dump is the self-storage route.",
+  "confidence": "Reported",
+  "recheck_by": "2026-11-04",
+  "note": "The previous terms (effective 2025-11-09, capture 2026-05-11) said \"Provider irreversibly deletes all data at the end of Service\"; the 2026-09-19 version adds the retrieval period and the option to return data. The January 2026 privacy policy (capture 2026-05-11) said a deleted participant account's activity log is kept anonymously. Whether the BSON dump is free is not stated in the quoted sentence; the help article lists no fee.",
+  "sources": [
+   {
+    "url": "https://www.fitrockr.com/research/help-center/privacy-security/",
+    "fetch_url": "https://web.archive.org/web/20260429195431/https://www.fitrockr.com/research/help-center/privacy-security/",
+    "type": "vendor_docs",
+    "quote": "Each research project receives its own server instance which will be completely deleted including all data at the end of the study.",
+    "retrieved": "2026-10-21",
+    "note": "Wayback capture of 2026-04-29; researcher B read the same sentence on the live /help-center/privacy-security/."
+   },
+   {
+    "url": "https://www.fitrockr.com/health-solutions/terms-of-use/",
+    "type": "vendor_legal",
+    "quote": "Unless otherwise required by law or agreed in writing, Fitrockr will delete or return Customer Data following the applicable post-termination retrieval period.",
+    "retrieved": "2026-10-21",
+    "note": "2026-09-19 terms, read by researcher B on 2026-10-21; site blocks scripts, not re-confirmed by the judge."
+   },
+   {
+    "url": "https://www.fitrockr.com/data-vault/",
+    "fetch_url": "https://web.archive.org/web/20260414153944/https://www.fitrockr.com/data-vault/",
+    "type": "vendor_page",
+    "quote": "Secure, hosted storage of your collected data with read-only access after your main project phase.",
+    "retrieved": "2026-10-21",
+    "note": "Wayback capture of 2026-04-14."
+   },
+   {
+    "url": "https://www.fitrockr.com/research/help-center/long-term-data-storage/",
+    "fetch_url": "https://web.archive.org/web/20260422051637/https://www.fitrockr.com/research/help-center/long-term-data-storage/",
+    "type": "vendor_docs",
+    "quote": "Fitrockr can provide a full data base dump as BSON file format that can be stored by yourself.",
+    "retrieved": "2026-10-21"
+   }
+  ]
  },
  {
   "company": "fitrockr",
   "name": "Fitrockr",
   "kind": "intermediary",
   "field": "ai_training_terms",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Under the 2026-09-19 terms and privacy policy (researcher B's reading), Fitrockr will not use identifiable customer or participant health data to train general-purpose AI models unrelated to the customer's project. It may create and use aggregated or irreversibly anonymised data, which is not excluded from training.",
+  "confidence": "Reported",
+  "recheck_by": "2026-11-04",
+  "note": "The clause is narrow. Training on identifiable data for project-related or otherwise lawfully authorised purposes, and on aggregated or anonymised data generally, is not excluded. The previous terms (2025-11-09) and privacy policy (2026-01-28) had no AI or model-training language (researcher A, captures).",
+  "sources": [
+   {
+    "url": "https://www.fitrockr.com/health-solutions/terms-of-use/",
+    "type": "vendor_legal",
+    "quote": "Fitrockr will not use identifiable Customer Data or identifiable participant health data to train general-purpose AI models unrelated to the Customer’s Project.",
+    "retrieved": "2026-10-21",
+    "note": "Read by researcher B on 2026-10-21; site blocks scripts, not re-confirmed by the judge."
+   },
+   {
+    "url": "https://www.fitrockr.com/health-solutions/terms-of-use/",
+    "type": "vendor_legal",
+    "quote": "Fitrockr may create aggregated or irreversibly anonymized information derived from use of the Service",
+    "retrieved": "2026-10-21",
+    "note": "Read by researcher B on 2026-10-21."
+   },
+   {
+    "url": "https://www.fitrockr.com/health-solutions/privacy-policy/",
+    "type": "vendor_legal",
+    "quote": "we do not use identifiable health data belonging to customers or research participants to train general-purpose AI models for unrelated purposes.",
+    "retrieved": "2026-10-21",
+    "note": "2026-09-19 privacy policy, read by researcher B on 2026-10-21."
+   },
+   {
+    "url": "https://www.fitrockr.com/research/help-center/privacy-security/",
+    "fetch_url": "https://web.archive.org/web/20260429195431/https://www.fitrockr.com/research/help-center/privacy-security/",
+    "type": "vendor_docs",
+    "quote": "Data is only used for the project purpose.",
+    "retrieved": "2026-10-21",
+    "note": "Wayback capture of 2026-04-29; the older purpose-limitation statement."
+   }
+  ]
  },
  {
   "company": "fitrockr",
   "name": "Fitrockr",
   "kind": "intermediary",
   "field": "deprecations",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Garmin sync technology change by 7 September 2025: for projects syncing with the Fitrockr app, Garmin no longer provides sleep data for 13 older models (vivosmart 4, vivofit 4, vivomove 3/Style, vivomove Sport, vivoactive 4, Venu Sq, Venu, Lily, Instinct, Instinct Solar, Forerunner 245, 45, 55); Garmin Connect sync is unaffected. The old iOS participant app (id1553631734) no longer has an App Store page; the current app is Fitrockr Sync. The 2026-09-19 terms say third-party integrations are not guaranteed to stay available.",
+  "confidence": "Reported",
+  "recheck_by": "2026-11-04",
+  "sources": [
+   {
+    "url": "https://www.fitrockr.com/research/help-center/important-update-upcoming-transition-to-new-garmin-sync-technology/",
+    "fetch_url": "https://web.archive.org/web/20260429195431/https://www.fitrockr.com/research/help-center/important-update-upcoming-transition-to-new-garmin-sync-technology/",
+    "type": "vendor_docs",
+    "quote": "Fitrockr will update to a new and improved Garmin sync technology within the next weeks (by Sep 7, 2025).",
+    "retrieved": "2026-10-21",
+    "note": "Wayback capture of 2026-04-29; researcher B read the same article at its new /help-center/ URL."
+   },
+   {
+    "url": "https://www.fitrockr.com/research/help-center/important-update-upcoming-transition-to-new-garmin-sync-technology/",
+    "fetch_url": "https://web.archive.org/web/20260429195431/https://www.fitrockr.com/research/help-center/important-update-upcoming-transition-to-new-garmin-sync-technology/",
+    "type": "vendor_docs",
+    "quote": "sleep data provision will no longer be supported by Garmin for the following device models",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://www.fitrockr.com/research/help-center/important-update-upcoming-transition-to-new-garmin-sync-technology/",
+    "fetch_url": "https://web.archive.org/web/20260429195431/https://www.fitrockr.com/research/help-center/important-update-upcoming-transition-to-new-garmin-sync-technology/",
+    "type": "vendor_docs",
+    "quote": "This limitation applies only to projects that use the ‘Fitrockr app’ for syncing",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://apps.apple.com/us/app/fitrockr-hub-garmin-sync/id1553631734",
+    "type": "app_store",
+    "expect_absent": true,
+    "retrieved": "2026-10-21",
+    "note": "Returns 404, confirmed 2026-10-21."
+   },
+   {
+    "url": "https://apps.apple.com/us/app/fitrockr-sync/id6480404044",
+    "type": "app_store",
+    "quote": "Fitrockr Sync is the participant and patient app for the Fitrockr Health Solutions platform",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://www.fitrockr.com/health-solutions/terms-of-use/",
+    "type": "vendor_legal",
+    "quote": "Fitrockr will use reasonable efforts to maintain supported integrations but does not guarantee that a third-party integration will remain available indefinitely.",
+    "retrieved": "2026-10-21",
+    "note": "Read by researcher B on 2026-10-21; site blocks scripts, not re-confirmed by the judge."
+   }
+  ]
  },
  {
   "company": "fitrockr",
   "name": "Fitrockr",
   "kind": "intermediary",
   "field": "baa",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Offered where Fitrockr handles protected health information for a HIPAA covered entity; the 2026-09-19 privacy policy says Fitrockr may then act as a Business Associate under a BAA (researcher B's reading). The BAA text is not published.",
+  "confidence": "Reported",
+  "recheck_by": "2026-11-04",
+  "note": "Self-claim; capped at Corroborated even once re-read live. Researcher A recorded not_public from the older pages; the offer is new in the 2026-09-19 policy.",
+  "sources": [
+   {
+    "url": "https://www.fitrockr.com/health-solutions/privacy-policy/",
+    "type": "vendor_legal",
+    "quote": "Fitrockr may act as a Business Associate and the applicable Business Associate Agreement governs the relevant processing.",
+    "retrieved": "2026-10-21",
+    "note": "Read by researcher B on 2026-10-21; site blocks scripts, not re-confirmed by the judge."
+   },
+   {
+    "url": "https://www.fitrockr.com/health-solutions/privacy-policy/",
+    "fetch_url": "https://web.archive.org/web/20260511152739/https://www.fitrockr.com/health-solutions/privacy-policy/",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-21",
+    "note": "The previous policy (\"Last updated Jan 28, 2026\", capture 2026-05-11) has no \"Business Associate\" text, checked by the judge."
+   }
+  ]
  },
  {
   "company": "fitrockr",
   "name": "Fitrockr",
   "kind": "intermediary",
   "field": "dpa",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Yes, where required. Fitrockr acts as processor for customer data, and a separate Data Processing Agreement governs the processing. The DPA text is not published.",
+  "confidence": "Reported",
+  "recheck_by": "2026-11-04",
+  "sources": [
+   {
+    "url": "https://www.fitrockr.com/health-solutions/terms-of-use/",
+    "type": "vendor_legal",
+    "quote": "Where Fitrockr processes personal data on behalf of the Customer, the parties will enter into a Data Processing Agreement where required.",
+    "retrieved": "2026-10-21",
+    "note": "2026-09-19 terms, read by researcher B on 2026-10-21; site blocks scripts, not re-confirmed by the judge."
+   },
+   {
+    "url": "https://www.fitrockr.com/health-solutions/terms-of-use/",
+    "fetch_url": "https://web.archive.org/web/20260511153050/https://www.fitrockr.com/health-solutions/terms-of-use/",
+    "type": "vendor_legal",
+    "quote": "5.2 A separate Data Processing Agreement (DPA) governs details of personal data processing.",
+    "retrieved": "2026-10-21",
+    "note": "Terms effective 2025-11-09, Wayback capture of 2026-05-11 (superseded version)."
+   }
+  ]
  },
  {
   "company": "fitrockr",
   "name": "Fitrockr",
   "kind": "intermediary",
   "field": "hipaa_statement",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Fitrockr says it complies with HIPAA and markets itself as \"HIPAA certified\"; a 2023 news post says it \"received the certification\" but names no certifier (HHS issues no HIPAA certification). The 2026-09-19 privacy policy adds that processing health data does not by itself make every service subject to HIPAA.",
+  "confidence": "Reported",
+  "recheck_by": "2026-11-04",
+  "sources": [
+   {
+    "url": "https://www.fitrockr.com/research/help-center/privacy-security/",
+    "fetch_url": "https://web.archive.org/web/20260429195431/https://www.fitrockr.com/research/help-center/privacy-security/",
+    "type": "vendor_docs",
+    "quote": "We comply to HIPAA – the Health Insurance Portability and Accountability Act",
+    "retrieved": "2026-10-21",
+    "note": "Wayback capture of 2026-04-29."
+   },
+   {
+    "url": "https://www.fitrockr.com/fitrockr-received-hipaa-certification/",
+    "fetch_url": "https://web.archive.org/web/20260422051211/https://www.fitrockr.com/fitrockr-received-hipaa-certification/",
+    "type": "vendor_page",
+    "quote": "we have worked on HIPAA compliance and have successfully received the certification",
+    "retrieved": "2026-10-21",
+    "note": "Post dated 2023-01-01, Wayback capture of 2026-04-22."
+   },
+   {
+    "url": "https://www.fitrockr.com/features/",
+    "type": "vendor_page",
+    "quote": "We are HIPAA certified",
+    "retrieved": "2026-10-21",
+    "note": "Read by researcher B on 2026-10-21; site blocks scripts, not re-confirmed by the judge."
+   },
+   {
+    "url": "https://www.fitrockr.com/health-solutions/privacy-policy/",
+    "type": "vendor_legal",
+    "quote": "the fact that Fitrockr processes health information does not by itself make every Fitrockr service subject to HIPAA",
+    "retrieved": "2026-10-21",
+    "note": "2026-09-19 privacy policy, read by researcher B on 2026-10-21."
+   }
+  ]
  },
  {
   "company": "fitrockr",
   "name": "Fitrockr",
   "kind": "intermediary",
   "field": "gdpr_statement",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Fitrockr (Digital Rebels GmbH, Berlin) says it complies with GDPR, acts as data processor for customer data under German law, and (2026-09-19 privacy policy) uses Chapter V transfer mechanisms for data leaving the EEA.",
+  "confidence": "Reported",
+  "recheck_by": "2026-11-04",
+  "note": "Two company addresses are published. The January 2026 privacy policy gives Friedrichstr. 155, 10117 Berlin; the 2025-11-09 terms give Friedrichstraße 114A, 10117 Berlin (both in captures of 2026-05-11).",
+  "sources": [
+   {
+    "url": "https://www.fitrockr.com/research/help-center/privacy-security/",
+    "fetch_url": "https://web.archive.org/web/20260429195431/https://www.fitrockr.com/research/help-center/privacy-security/",
+    "type": "vendor_docs",
+    "quote": "We comply to GDPR – the General Data Protection Regulation",
+    "retrieved": "2026-10-21",
+    "note": "Wayback capture of 2026-04-29."
+   },
+   {
+    "url": "https://www.fitrockr.com/health-solutions/terms-of-use/",
+    "fetch_url": "https://web.archive.org/web/20260511153050/https://www.fitrockr.com/health-solutions/terms-of-use/",
+    "type": "vendor_legal",
+    "quote": "5.1 Provider acts as Data Processor for Customer Data.",
+    "retrieved": "2026-10-21",
+    "note": "Terms effective 2025-11-09 (superseded)."
+   },
+   {
+    "url": "https://www.fitrockr.com/health-solutions/privacy-policy/",
+    "type": "vendor_legal",
+    "quote": "Where the GDPR applies and personal data is transferred outside the EEA, we use an appropriate transfer mechanism under Chapter V GDPR.",
+    "retrieved": "2026-10-21",
+    "note": "2026-09-19 privacy policy, read by researcher B on 2026-10-21; not re-confirmed by the judge."
+   }
+  ]
  },
  {
   "company": "fitrockr",
   "name": "Fitrockr",
   "kind": "intermediary",
   "field": "iso27001",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Claimed for the cloud hosting centre only, not for Fitrockr itself; the hosting provider and certificate are not named, and no certificate naming Fitrockr or Digital Rebels GmbH was found. Fitrockr separately claims Google CASA certification, with no letter of validation published.",
+  "confidence": "Reported",
+  "recheck_by": "2026-11-04",
+  "sources": [
+   {
+    "url": "https://www.fitrockr.com/research/help-center/privacy-security/",
+    "fetch_url": "https://web.archive.org/web/20260429195431/https://www.fitrockr.com/research/help-center/privacy-security/",
+    "type": "vendor_docs",
+    "quote": "Our Cloud hosting center is ISO/IEC 27001 certified",
+    "retrieved": "2026-10-21",
+    "note": "Wayback capture of 2026-04-29."
+   },
+   {
+    "url": "https://www.fitrockr.com/features/",
+    "type": "vendor_page",
+    "quote": "Our Cloud hosting center is ISO/IEC 27001 certified and follows international standards on how to manage information security.",
+    "retrieved": "2026-10-21",
+    "note": "Read by researcher B on 2026-10-21; site blocks scripts, not re-confirmed by the judge."
+   },
+   {
+    "url": "https://www.fitrockr.com/features/",
+    "type": "vendor_page",
+    "quote": "We are CASA certified",
+    "retrieved": "2026-10-21",
+    "note": "Read by researcher B on 2026-10-21."
+   }
+  ]
  },
  {
   "company": "fitrockr",
   "name": "Fitrockr",
   "kind": "intermediary",
   "field": "soc2",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Reported",
+  "recheck_by": "2026-11-04",
+  "note": "No SOC 2 claim on any page checked; the security claims are ISO 27001 (hosting centre), CASA, GDPR and HIPAA.",
+  "sources": [
+   {
+    "url": "https://www.fitrockr.com/research/help-center/privacy-security/",
+    "fetch_url": "https://web.archive.org/web/20260429195431/https://www.fitrockr.com/research/help-center/privacy-security/",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://www.fitrockr.com/health-solutions/terms-of-use/",
+    "fetch_url": "https://web.archive.org/web/20260511153050/https://www.fitrockr.com/health-solutions/terms-of-use/",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://www.fitrockr.com/features/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-21",
+    "note": "Read by researcher B on 2026-10-21."
+   },
+   {
+    "url": "https://www.fitrockr.com/health-solutions/privacy-policy/",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-21",
+    "note": "2026-09-19 policy, read by researcher B on 2026-10-21."
+   }
+  ]
  },
  {
   "company": "fitrockr",
   "name": "Fitrockr",
   "kind": "intermediary",
   "field": "fda_clearances",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Verified",
+  "recheck_by": "2027-01-19",
+  "note": "openFDA returned NOT_FOUND for every query on 2026-10-21 (510(k) by applicant and device name, registration and listing by establishment and proprietary name). Fitrockr is a software data platform and makes no device claims.",
+  "sources": [
+   {
+    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm",
+    "fetch_url": "https://api.fda.gov/device/510k.json?search=applicant:%22digital+rebels%22",
+    "type": "regulator_db",
+    "expect_absent": true,
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm",
+    "fetch_url": "https://api.fda.gov/device/510k.json?search=device_name:fitrockr",
+    "type": "regulator_db",
+    "expect_absent": true,
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRL/rl.cfm",
+    "fetch_url": "https://api.fda.gov/device/registrationlisting.json?search=registration.name:%22digital+rebels%22",
+    "type": "regulator_db",
+    "expect_absent": true,
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRL/rl.cfm",
+    "fetch_url": "https://api.fda.gov/device/registrationlisting.json?search=proprietary_name:fitrockr",
+    "type": "regulator_db",
+    "expect_absent": true,
+    "retrieved": "2026-10-21"
+   }
+  ]
  },
  {
   "company": "fitrockr",
   "name": "Fitrockr",
   "kind": "intermediary",
   "field": "data_residency",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Default hosting in an ISO-certified data centre in Germany (included); the security help page says Germany or Switzerland. Hosting in a country of the customer's choice (for example the US), on-premise self-hosting and military on-premise hosting in a closed network are add-ons.",
+  "confidence": "Reported",
+  "recheck_by": "2026-11-04",
+  "note": "The vendor's pages disagree mildly (Germany only versus Germany or Switzerland); which centre a given project uses is not stated. Researcher B reports the 2026-09-19 privacy policy says data may be processed in the EEA, the US or elsewhere depending on the hosting chosen.",
+  "sources": [
+   {
+    "url": "https://www.fitrockr.com/country-of-choice-cloud-hosting/",
+    "fetch_url": "https://web.archive.org/web/20260617193313/https://www.fitrockr.com/country-of-choice-cloud-hosting/",
+    "type": "vendor_page",
+    "quote": "By default, the Fitrockr platform is hosted at an ISO-certified hosting center in Germany",
+    "retrieved": "2026-10-21",
+    "note": "Wayback capture of 2026-06-17."
+   },
+   {
+    "url": "https://www.fitrockr.com/country-of-choice-cloud-hosting/",
+    "fetch_url": "https://web.archive.org/web/20260617193313/https://www.fitrockr.com/country-of-choice-cloud-hosting/",
+    "type": "vendor_page",
+    "quote": "We host for you at a cloud in your country",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://www.fitrockr.com/research/help-center/privacy-security/",
+    "fetch_url": "https://web.archive.org/web/20260429195431/https://www.fitrockr.com/research/help-center/privacy-security/",
+    "type": "vendor_docs",
+    "quote": "ISO-certified cloud servers located in Germany or Switzerland.",
+    "retrieved": "2026-10-21",
+    "note": "Wayback capture of 2026-04-29; researcher B read the same sentence on the live /help-center/ page."
+   },
+   {
+    "url": "https://www.fitrockr.com/research/pricing/",
+    "fetch_url": "https://web.archive.org/web/20260713062111/https://www.fitrockr.com/research/pricing/",
+    "type": "vendor_page",
+    "quote": "(Military) On-Premise Hosting €5.000 + 20% on license",
+    "retrieved": "2026-10-21"
+   }
+  ]
  },
  {
   "company": "labfront",
@@ -30216,15 +31084,42 @@
   "name": "RingConn",
   "kind": "wearable",
   "field": "research_program",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-20",
+  "note": "No research, academic or enterprise data program is published, and the sitemap lists no research, developer or organisations page. The only institutional route today is a generic business enquiry address. History: the business article carried an \"Educational and Government Partnerships\" paragraph inviting schools, government agencies and institutions to partner for \"health monitoring, data analytics\" (Wayback capture 2025-11-25, quoted above; still seen by the researchers on 2026-10-11). It is gone from the live page, which is stamped \"Updated October 17, 2026\". That was an open invitation to propose a partnership, never a program with terms. Research with RingConn data so far has been company-involved: in-house work with Shanghai Jiao Tong University and hospitals (including a 2026 npj Digital Medicine paper, DOI 10.1038/s41746-026-03036-z) and a 2026 BMC Sports Science paper whose raw PPG came through company-customised firmware (see raw_streams).",
+  "sources": [
+   {
+    "url": "https://ringconn.com/blogs/news/feedback-and-business-collaboration-with-ringconn",
+    "type": "vendor_page",
+    "quote": "Institutional or other business proposals can be sent to business@ringconn.com.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://web.archive.org/web/20251125062457/https://ringconn.com/blogs/news/feedback-and-business-collaboration-with-ringconn",
+    "type": "vendor_page",
+    "quote": "We seek partnerships with schools, government agencies, and institutions to integrate smart ring technology into their programs, enhancing health monitoring, data analytics, and personal tracking.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/sitemap.xml",
+    "type": "vendor_page",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/pages/ringconn-app-privacy-policy",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-21"
+   }
+  ]
  },
  {
   "company": "ringconn",
   "name": "RingConn",
   "kind": "wearable",
   "field": "program_eligibility",
-  "status": "unresearched",
+  "status": "not_applicable",
+  "note": "No research program exists to be eligible for. The business article says \"No pricing, exclusivity, approval timeline or partnership eligibility is promised by this guide.\" (read 2026-10-21).",
   "sources": []
  },
  {
@@ -30232,31 +31127,104 @@
   "name": "RingConn",
   "kind": "wearable",
   "field": "program_application",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No application process. Institutional or business proposals go by email to business@ringconn.com; dealer and bulk-purchase enquiries go to sales@ringconn.com. RingConn says contacting it does not guarantee a partnership and that an enquiry does not establish that an unlisted capability (such as data access) can be supplied.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-20",
+  "sources": [
+   {
+    "url": "https://ringconn.com/blogs/news/feedback-and-business-collaboration-with-ringconn",
+    "type": "vendor_page",
+    "quote": "Institutional or other business proposals can be sent to business@ringconn.com.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/blogs/news/feedback-and-business-collaboration-with-ringconn",
+    "type": "vendor_page",
+    "quote": "Dealer and bulk-purchase enquiries can be sent to sales@ringconn.com.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/blogs/news/feedback-and-business-collaboration-with-ringconn",
+    "type": "vendor_page",
+    "quote": "Does contacting RingConn guarantee a partnership? No.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/blogs/news/feedback-and-business-collaboration-with-ringconn",
+    "type": "vendor_page",
+    "quote": "A business enquiry does not establish that an unlisted capability can be supplied.",
+    "retrieved": "2026-10-21"
+   }
+  ]
  },
  {
   "company": "ringconn",
   "name": "RingConn",
   "kind": "wearable",
   "field": "program_status",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No program has been launched, paused or closed. A published invitation for educational, government and institutional partnerships (including data analytics) was on the business article until at least 2025-11-25 and is absent from the version rewritten on 2026-10-17. The live page now offers only a business enquiry address and promises no partnership eligibility.",
+  "confidence": "Corroborated",
+  "recheck_by": "2026-11-20",
+  "note": "The removal is dated from the page's own update stamp plus both researchers seeing the paragraph on 2026-10-11; the probe of the partnership sentence against the live page returned \"missing\" on 2026-10-21. It reads as a narrowing of an open invitation, not the closure of a program. Confidence is Corroborated because the removal is shown by absence plus an archive, not by a RingConn statement.",
+  "sources": [
+   {
+    "url": "https://web.archive.org/web/20251125062457/https://ringconn.com/blogs/news/feedback-and-business-collaboration-with-ringconn",
+    "type": "vendor_page",
+    "quote": "We seek partnerships with schools, government agencies, and institutions to integrate smart ring technology into their programs, enhancing health monitoring, data analytics, and personal tracking.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/blogs/news/feedback-and-business-collaboration-with-ringconn",
+    "type": "vendor_page",
+    "quote": "Updated October 17, 2026.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/blogs/news/feedback-and-business-collaboration-with-ringconn",
+    "type": "vendor_page",
+    "quote": "No pricing, exclusivity, approval timeline or partnership eligibility is promised by this guide.",
+    "retrieved": "2026-10-21"
+   }
+  ]
  },
  {
   "company": "ringconn",
   "name": "RingConn",
   "kind": "wearable",
   "field": "developer_program_status",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-20",
+  "note": "No developer portal, public API, API terms, SDK or GitHub organisation was found. The app privacy policy lists \"APIs\" among its Services, but no API documentation is published, and a German review (nextpit) says the API is not open to end users. Searches for a RingConn API mostly return RingCentral, an unrelated company. Third-party access runs only through Apple Health and Android Health Connect. The Terms of Service page (/pages/terms-of-service) is disallowed by robots.txt and was not read.",
+  "sources": [
+   {
+    "url": "https://ringconn.com/sitemap.xml",
+    "type": "vendor_page",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/pages/ringconn-app-privacy-policy",
+    "type": "vendor_legal",
+    "quote": "This Privacy Policy applies to personal data collected and processed by us through our “Services” which includes: our RingConn devices (“Devices”) , Application (“App”) , websites, software, APIs, emails, newsletters and our services.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://www.nextpit.de/tests/ringconn-gen-2-test",
+    "type": "secondary",
+    "quote": "Die Kehrseite der Medaille ist, dass die API nicht für Endnutzer:innen zugänglich ist.",
+    "retrieved": "2026-10-21"
+   }
+  ]
  },
  {
   "company": "ringconn",
   "name": "RingConn",
   "kind": "wearable",
   "field": "user_cap",
-  "status": "unresearched",
+  "status": "not_applicable",
+  "note": "No research or developer program, so there are no participant or user caps to report.",
   "sources": []
  },
  {
@@ -30264,39 +31232,157 @@
   "name": "RingConn",
   "kind": "wearable",
   "field": "academic_vs_commercial",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-20",
+  "note": "No published distinction between academic and commercial access. The only education-related offer is a consumer student discount (see academic_pricing). Academic teams have obtained raw data only through a company collaboration (see raw_streams [Company research collaboration]), which is not a published offering.",
+  "sources": [
+   {
+    "url": "https://ringconn.com/blogs/news/feedback-and-business-collaboration-with-ringconn",
+    "type": "vendor_page",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/pages/student-discount-program",
+    "type": "vendor_page",
+    "retrieved": "2026-10-21"
+   }
+  ]
  },
  {
   "company": "ringconn",
   "name": "RingConn",
   "kind": "wearable",
   "field": "device_price",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "$349",
+  "scope": "RingConn Gen 3 (US store)",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-20",
+  "note": "Some Gen 3 variants are $369 in the store's products.json feed (not a quoted page). Some configurations showed \"Out of stock\" in the static rendering on 2026-10-21. Rings are listed as HSA/FSA eligible in the US.",
+  "sources": [
+   {
+    "url": "https://ringconn.com/products/ringconn-gen-3",
+    "type": "vendor_page",
+    "quote": "RingConn Gen 3 Sale price $349.00 USD",
+    "retrieved": "2026-10-21"
+   }
+  ]
+ },
+ {
+  "company": "ringconn",
+  "name": "RingConn",
+  "kind": "wearable",
+  "field": "device_price",
+  "status": "stated",
+  "value": "$299",
+  "scope": "RingConn Gen 2 (US store)",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-20",
+  "note": "A Rose Gold edition is $399 in the store's products.json feed (not a quoted page).",
+  "sources": [
+   {
+    "url": "https://ringconn.com/products/ringconn-gen-2",
+    "type": "vendor_page",
+    "quote": "RingConn Gen 2 Sale price $299.00 USD",
+    "retrieved": "2026-10-21"
+   }
+  ]
+ },
+ {
+  "company": "ringconn",
+  "name": "RingConn",
+  "kind": "wearable",
+  "field": "device_price",
+  "status": "stated",
+  "value": "$199",
+  "scope": "RingConn Gen 2 Air (US store)",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-20",
+  "sources": [
+   {
+    "url": "https://ringconn.com/products/ringconn-gen-2-air",
+    "type": "vendor_page",
+    "quote": "RingConn Gen 2 Air Sale price $199.00 USD",
+    "retrieved": "2026-10-21"
+   }
+  ]
  },
  {
   "company": "ringconn",
   "name": "RingConn",
   "kind": "wearable",
   "field": "subscription_price",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No subscription is required for any current ring (Gen 3, Gen 2, Gen 2 Air). The US App Store lists optional in-app purchases, \"RingConn Partner+\" at $5.99 monthly or $69.99 annually; no RingConn page found says what they unlock.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-20",
+  "note": "Partner+ was found by the judge on 2026-10-21 and is in neither researcher draft. Its contents are undocumented, so whether any data or export feature sits behind it is unknown; ask RingConn. The app privacy policy also refers to \"users of our subscription services\". Separately, RingConn Care+ is a paid device protection plan, not a data or feature subscription.",
+  "sources": [
+   {
+    "url": "https://ringconn.com/pages/product-compare",
+    "type": "vendor_page",
+    "quote": "Subscription Fee Subscription Fee No No No",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/products/ringconn-gen-3",
+    "type": "vendor_page",
+    "quote": "No Subscription Required",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/products/ringconn-gen-2",
+    "type": "vendor_page",
+    "quote": "Multi-Metric Health Tracking, No Subscription Required",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://apps.apple.com/us/app/ringconn/id6444470583",
+    "type": "app_store",
+    "quote": "RingConn Partner+(Monthly) $5.99",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://apps.apple.com/us/app/ringconn/id6444470583",
+    "type": "app_store",
+    "quote": "RingConn Partner+(Annual) $69.99",
+    "retrieved": "2026-10-21"
+   }
+  ]
  },
  {
   "company": "ringconn",
   "name": "RingConn",
   "kind": "wearable",
   "field": "academic_pricing",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No research or institutional pricing is published. Consumer student discount of 10% on a Gen 2 order, verified through ID.me. Customised offers or discounts for bulk purchases on request.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-20",
+  "note": "The student page names Gen 2 only; whether the discount applies to Gen 3 or Gen 2 Air is not stated.",
+  "sources": [
+   {
+    "url": "https://ringconn.com/pages/student-discount-program",
+    "type": "vendor_page",
+    "quote": "Enjoy 10% Off Your Gen 2 Order Verify your eligibility through ID.me and receive your student discount instantly.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/products/ringconn-gen-2",
+    "type": "vendor_page",
+    "quote": "For bulk purchase requests, we offer customized offers or discounts.",
+    "retrieved": "2026-10-21"
+   }
+  ]
  },
  {
   "company": "ringconn",
   "name": "RingConn",
   "kind": "wearable",
   "field": "api_platform_fees",
-  "status": "unresearched",
+  "status": "not_applicable",
+  "note": "No API, SDK or data platform is offered, so there are no access fees. Data reaches third parties free of charge through Apple Health and Health Connect.",
   "sources": []
  },
  {
@@ -30304,63 +31390,328 @@
   "name": "RingConn",
   "kind": "wearable",
   "field": "minimum_commitment",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-20",
+  "note": "Retail purchase has no commitment. Bulk-order thresholds or minimums are not published.",
+  "sources": [
+   {
+    "url": "https://ringconn.com/blogs/news/feedback-and-business-collaboration-with-ringconn",
+    "type": "vendor_page",
+    "quote": "No pricing, exclusivity, approval timeline or partnership eligibility is promised by this guide.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/products/ringconn-gen-2",
+    "type": "vendor_page",
+    "retrieved": "2026-10-21"
+   }
+  ]
  },
  {
   "company": "ringconn",
   "name": "RingConn",
   "kind": "wearable",
   "field": "quote_required",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Single-unit retail prices are public. Bulk and dealer pricing is not published; it is a customised offer through sales@ringconn.com.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-20",
+  "sources": [
+   {
+    "url": "https://ringconn.com/blogs/news/feedback-and-business-collaboration-with-ringconn",
+    "type": "vendor_page",
+    "quote": "Dealer and bulk-purchase enquiries can be sent to sales@ringconn.com.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/products/ringconn-gen-2",
+    "type": "vendor_page",
+    "quote": "For bulk purchase requests, we offer customized offers or discounts.",
+    "retrieved": "2026-10-21"
+   }
+  ]
  },
  {
   "company": "ringconn",
   "name": "RingConn",
   "kind": "wearable",
   "field": "raw_streams",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "scope": "Consumer and public routes",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-20",
+  "note": "The ring collects raw PPG, accelerometer, temperature and SpO2 measurements, but no published route gives anyone the raw signals; Health Connect, Apple Health and portability requests carry processed records only. The Blood Pressure Trends (Beta) policy says raw PPG, accelerometer and skin temperature are collected for that beta and used only for RingConn's own models (see retention_terms and ai_training_terms). OpenCircuit, a community reverse-engineered BLE client, is not a vendor route (see export_routes).",
+  "sources": [
+   {
+    "url": "https://ringconn.com/pages/ringconn-app-privacy-policy",
+    "type": "vendor_legal",
+    "quote": "The RingConn smart ring uses built-in sensors (such as PPG(a light-based sensor), accelerometers, temperature sensors, and SpO₂ sensors) to collect raw measurement data.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/blogs/news/ringconn-will-migrate-from-google-fit-to-health-connect",
+    "type": "vendor_page",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/blogs/guides/wearable-data-sync",
+    "type": "vendor_page",
+    "retrieved": "2026-10-21"
+   }
+  ]
+ },
+ {
+  "company": "ringconn",
+  "name": "RingConn",
+  "kind": "wearable",
+  "field": "raw_streams",
+  "status": "stated",
+  "scope": "Company research collaboration",
+  "value": "One documented case, not a general offering: a 2026 method-comparison study in shooting athletes (preprint 2026-06-11; version of record in BMC Sports Science, Medicine and Rehabilitation, 2026-08-18, DOI 10.1186/s13102-026-01960-x) used raw finger PPG from a RingConn Gen 2 at 100 Hz (green channel only; the ring has green, red and infrared sensors) to derive inter-beat intervals. The firmware and app build were customised for research data export. Three authors are Shenzhen Ninenovo and/or RingConn LLC staff, and the companies supplied the equipment and technical support.",
+  "confidence": "Reported",
+  "recheck_by": "2026-11-20",
+  "note": "Reported because a single company-involved paper describes it and RingConn publishes nothing about such a route; the paper itself says the research build \"may differ from the current consumer-facing workflow\". Quotes are from the Research Square preprint PDF; the journal page (biomedcentral.com, link.springer.com) served a bot challenge to scripted requests on 2026-10-21 and was not read. Crossref confirms the journal title, date and DOI. It shows that a raw route has been opened through the company, not that one is available on request.",
+  "sources": [
+   {
+    "url": "https://doi.org/10.21203/rs.3.rs-9564367/v1",
+    "fetch_url": "https://assets-eu.researchsquare.com/files/rs-9564367/v1_covered_1d7f615a-644b-4b19-8b6f-9f1d301ef27f.pdf",
+    "type": "paper",
+    "quote": "The firmware and app build used for research data export were customized",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://doi.org/10.21203/rs.3.rs-9564367/v1",
+    "fetch_url": "https://assets-eu.researchsquare.com/files/rs-9564367/v1_covered_1d7f615a-644b-4b19-8b6f-9f1d301ef27f.pdf",
+    "type": "paper",
+    "quote": "only the green channel was used in the",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://doi.org/10.21203/rs.3.rs-9564367/v1",
+    "fetch_url": "https://assets-eu.researchsquare.com/files/rs-9564367/v1_covered_1d7f615a-644b-4b19-8b6f-9f1d301ef27f.pdf",
+    "type": "paper",
+    "quote": "100 Hz, and ring sizes 6–14 were available",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://doi.org/10.21203/rs.3.rs-9564367/v1",
+    "fetch_url": "https://assets-eu.researchsquare.com/files/rs-9564367/v1_covered_1d7f615a-644b-4b19-8b6f-9f1d301ef27f.pdf",
+    "type": "paper",
+    "quote": "These organizations provided the study equipment and technical support.",
+    "retrieved": "2026-10-21"
+   }
+  ]
  },
  {
   "company": "ringconn",
   "name": "RingConn",
   "kind": "wearable",
   "field": "derived_metrics",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Via Health Connect (Android): resting energy, steps, exercise calories; time in bed, awake duration, sleep stages; resting and average heart rate; height; weight; oxygen saturation. HRV is not synced to Health Connect (\"algorithm compatibility issue\"). Apple Health sync is confirmed on RingConn pages but the HealthKit types are not listed. Blood Pressure Trends (Beta) results are never shared with any third-party health platform. In-app only: sleep, stress and recovery scores, respiratory rate, skin temperature trends and other proprietary metrics.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-20",
+  "note": "The Health Connect table also lists height and weight (\"Height User height information Weight User Weight information\"). The in-app-only list is from the product and compare pages and is not exhaustive.",
+  "sources": [
+   {
+    "url": "https://ringconn.com/blogs/news/ringconn-will-migrate-from-google-fit-to-health-connect",
+    "type": "vendor_page",
+    "quote": "Activity Data Resting energy, steps, calories burned during exercise Sleep Time in bed, awake duration, sleep stages Heart Rate Resting heart rate, average heart rate",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/blogs/news/ringconn-will-migrate-from-google-fit-to-health-connect",
+    "type": "vendor_page",
+    "quote": "Blood Oxygen Oxygen saturation",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/blogs/news/ringconn-will-migrate-from-google-fit-to-health-connect",
+    "type": "vendor_page",
+    "quote": "There is currently an algorithm compatibility issue, so we do not support syncing your HRV data at this time.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/blogs/guides/wearable-data-sync",
+    "type": "vendor_page",
+    "quote": "the current RingConn Health Connect integration does not export HRV.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/blogs/guides/how-sync-health-and-sleep-tracker-data",
+    "type": "vendor_page",
+    "quote": "Grant Apple Health permission to read and/or receive the supported health categories you want to sync.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/pages/ringconn-app-privacy-policy",
+    "type": "vendor_legal",
+    "quote": "will not be synchronized or shared with any third-party health platform (including Apple Health)",
+    "retrieved": "2026-10-21"
+   }
+  ]
  },
  {
   "company": "ringconn",
   "name": "RingConn",
   "kind": "wearable",
   "field": "sampling_rates",
-  "status": "unresearched",
-  "sources": []
+  "status": "unclear",
+  "confidence": "Unclear",
+  "recheck_by": "2026-11-20",
+  "note": "Product and compare pages say only \"24/7 Monitoring\", \"Nighttime Monitoring\" or \"Periodically\" per metric, and the Gen 3 manual gives no interval. On 2026-10-11 the App Features page was read as saying HR, HRV and SpO2 are tracked \"every 2.5 min\"; that text is not in the page's static rendering on 2026-10-21 (searched for \"2.5\", \"every\" and \"min\"), so it is not quoted and may sit in script-loaded content. The only documented rate is 100 Hz raw PPG under research firmware in one paper (see raw_streams [Company research collaboration]), which says nothing about the consumer sampling schedule.",
+  "sources": [
+   {
+    "url": "https://ringconn.com/products/ringconn-gen-2",
+    "type": "vendor_page",
+    "quote": "Skin Temperature Skin Temperature 24/7 Monitoring",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/pages/app-features",
+    "type": "vendor_page",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/pages/product-compare",
+    "type": "vendor_page",
+    "retrieved": "2026-10-21"
+   }
+  ]
  },
  {
   "company": "ringconn",
   "name": "RingConn",
   "kind": "wearable",
   "field": "history_depth",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "scope": "RingConn Gen 3",
+  "value": "On the ring: up to 10 days of unsynced data. In the account: synced history stays with the RingConn account, with no published cap; no API exists to retrieve it.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-20",
+  "note": "The account-history wording \"as long as your account is active\" was read on 2026-10-11 in the data-security article and is gone after its 2026-10-17 rewrite; the app policy's general \"as long as necessary\" clause applies.",
+  "sources": [
+   {
+    "url": "https://ringconn.com/products/ringconn-gen-3",
+    "type": "vendor_page",
+    "quote": "Offline Data Storage Duration 10 days",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0850/1769/0420/files/RingConn_Gen_3_Manual_Instruction_English.pdf?v=1779691635",
+    "type": "vendor_docs",
+    "quote": "The RingConn Ring can store data for up to 10 days, though the actual storage duration may vary depending on the ring model and usage frequency.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/blogs/guides/new-phone-data",
+    "type": "vendor_page",
+    "quote": "RingConn account history Associated with your RingConn account",
+    "retrieved": "2026-10-21"
+   }
+  ]
+ },
+ {
+  "company": "ringconn",
+  "name": "RingConn",
+  "kind": "wearable",
+  "field": "history_depth",
+  "status": "stated",
+  "scope": "RingConn Gen 2 and Gen 2 Air",
+  "value": "On the ring: 5 to 7 days of unsynced data per each product page's specifications; the compare tables give the upper figure, 7 days. In the account: as for Gen 3.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-20",
+  "note": "Both researchers were right in part: A read the compare tables (10, 7, 7 days, columns Gen 3, Gen 2, Gen 2 Air on /pages/product-compare and Gen 3, Gen 2 Air, Gen 2 on the Gen 3 page's table), B read the Gen 2 spec block (\"5–7 days\"). Plan on 5 days as the safe sync interval for Gen 2 and Gen 2 Air. RingConn's own sync guide says \"up to seven days\" without naming a model.",
+  "sources": [
+   {
+    "url": "https://ringconn.com/products/ringconn-gen-2",
+    "type": "vendor_page",
+    "quote": "Offline Storage 5–7 days",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/products/ringconn-gen-2-air",
+    "type": "vendor_page",
+    "quote": "Offline Storage 5–7 days",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/pages/product-compare",
+    "type": "vendor_page",
+    "quote": "Offline Data Storage Duration Offline Data Storage Duration 10 days 7 days 7 days",
+    "retrieved": "2026-10-21"
+   }
+  ]
  },
  {
   "company": "ringconn",
   "name": "RingConn",
   "kind": "wearable",
   "field": "export_routes",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Participant-side only. Apple Health (iOS) and Android Health Connect (Android 9 or later), both user-authorised per data type; Google Fit sync ended 2025-10-01. Portability on request (structured, machine-readable) through account settings, the in-app feedback feature or data_protect@ringconn.com. An in-app CSV export was reported in a December 2023 app update. No API, SDK, web dashboard, bulk researcher export or direct Strava sync.",
+  "confidence": "Corroborated",
+  "recheck_by": "2026-11-20",
+  "note": "Corroborated because the CSV export rests on a 2023 secondary source. On 2026-10-11 RingConn's data-security article said account settings let users download all their data; the 2026-10-17 rewrite dropped that and now only points to portability rights. RingConn's Apple Health guide still names Google Fit as a sync target, which ended on 2025-10-01. Sahha lists RingConn among sources read on-device through Apple Health or Health Connect; Terra, Thryve, Spike, ROOK and Open Wearables did not list it (2026-10-11). OpenCircuit is a community reverse-engineered BLE client that works with Gen 2 and Gen 3 without a RingConn account and writes to Apple Health; its licence is PolyForm Noncommercial 1.0.0, and it is not a vendor-supported route.",
+  "sources": [
+   {
+    "url": "https://ringconn.com/blogs/guides/how-sync-health-and-sleep-tracker-data",
+    "type": "vendor_page",
+    "quote": "Grant Apple Health permission to read and/or receive the supported health categories you want to sync.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/pages/ringconn-app-privacy-policy",
+    "type": "vendor_legal",
+    "quote": "When you authorize third-party applications (such as Apple Health) to access your data, we may share relevant health data with them based on your instructions.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/pages/ringconn-app-privacy-policy",
+    "type": "vendor_legal",
+    "quote": "You are entitled to obtain a copy of your personal data in structured, commonly used and machine-readable formats to the extent permitted by laws and regulations.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/blogs/news/smart-ring-health-data-security",
+    "type": "vendor_page",
+    "quote": "Use account settings or contact the privacy team to request the available data and process.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://gadgetsandwearables.com/2023/12/15/ringconn-wellness-balance-temperature/",
+    "type": "secondary",
+    "quote": "Furthermore, the new data export functionality allows users to download their health data in CSV format, a useful tool for those who wish to perform more detailed analysis or share information with healthcare providers.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://www.nextpit.de/tests/ringconn-gen-2-test",
+    "type": "secondary",
+    "quote": "Außerdem gibt es kein Browser-Dashboard, ihr müsst eure Daten also direkt aus der App exportieren.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/products/ringconn-gen-3",
+    "type": "vendor_page",
+    "quote": "RingConn data does not currently sync directly to the Strava app.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://github.com/perezjuanj/OpenCircuit/wiki",
+    "type": "repository",
+    "quote": "so OpenCircuit connects and streams on its own, with no RingConn account or app ever needed",
+    "retrieved": "2026-10-21"
+   }
+  ]
  },
  {
   "company": "ringconn",
   "name": "RingConn",
   "kind": "wearable",
   "field": "rate_limits",
-  "status": "unresearched",
+  "status": "not_applicable",
+  "note": "No API is offered.",
   "sources": []
  },
  {
@@ -30368,88 +31719,399 @@
   "name": "RingConn",
   "kind": "wearable",
   "field": "retention_terms",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Personal data kept only as long as necessary for the policy purposes or as required by law; data in backups that cannot be deleted at once is isolated until deletion is possible; anonymised data may be used indefinitely. Blood Pressure Trends (Beta): raw PPG, accelerometer and skin temperature data cannot be physically deleted per user during the beta (processing stops and the data is isolated on request), and are irreversibly anonymised within 90 days after the beta ends.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-20",
+  "note": "App privacy policy \"Last updated and effected\" April 8, 2026. Until 2026-10-17 RingConn's data-security article was read as saying it kept no hidden copies or backups of deleted data; the rewrite now defers to the policy's backup-isolation wording. The Terms of Service page is disallowed by robots.txt and was not read.",
+  "sources": [
+   {
+    "url": "https://ringconn.com/pages/ringconn-app-privacy-policy",
+    "type": "vendor_legal",
+    "quote": "We will only store your personal information for as long as necessary for the purposes described in this Policy and for as long as required by law, regulation and supervision",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/pages/ringconn-app-privacy-policy",
+    "type": "vendor_legal",
+    "quote": "Where the immediate deletion is not possible, for example, because your Personal Information has been stored in backup archives, then we will securely store your Personal Information and isolate it from any further processing until deletion is possible.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/pages/ringconn-app-privacy-policy",
+    "type": "vendor_legal",
+    "quote": "If we anonymize your personal information (so that it can no longer be associated with you), we may use this information indefinitely without further notice to you.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/pages/ringconn-app-privacy-policy",
+    "type": "vendor_legal",
+    "quote": "PPG Raw Signals, Accelerometer Data, Skin Temperature During Beta period Irreversibly anonymized within 90 days after Beta period ends",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/pages/ringconn-app-privacy-policy",
+    "type": "vendor_legal",
+    "quote": "Due to technical architecture limitations, physical deletion for individual users is not possible during the Beta period.",
+    "retrieved": "2026-10-21"
+   }
+  ]
  },
  {
   "company": "ringconn",
   "name": "RingConn",
   "kind": "wearable",
   "field": "ai_training_terms",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Only the Blood Pressure Trends (Beta) section addresses training: that data (questionnaires, tags, entered BP values and ring PPG, accelerometer and temperature signals) is used for algorithm optimisation and only for RingConn's own models, not for other health products or any third party's training. The general policy allows use of data to improve products, indefinite use of anonymised data, and sharing of aggregated non-personal data, with no explicit AI-training clause.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-20",
+  "scope": "App privacy policy (all users); the training restriction is specific to Blood Pressure Trends (Beta)",
+  "note": "Until 2026-10-17 the data-security article was read as describing an optional research opt-in; the rewritten article does not mention research, and the app policy has no research opt-in clause (searched 2026-10-21).",
+  "sources": [
+   {
+    "url": "https://ringconn.com/pages/ringconn-app-privacy-policy",
+    "type": "vendor_legal",
+    "quote": "The above data will only be used for training and optimizing RingConn‘s own algorithm models. It will not be used to develop other products related to your health, nor will it be provided to any third party for their algorithm training or product development.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/pages/ringconn-app-privacy-policy",
+    "type": "vendor_legal",
+    "quote": "will be used for algorithm optimization, feature iteration, and product improvement.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/pages/ringconn-app-privacy-policy",
+    "type": "vendor_legal",
+    "quote": "We may share non-personal data that is aggregated so that it cannot reasonably be used to identify an individual with or without combining additional information.",
+    "retrieved": "2026-10-21"
+   }
+  ]
  },
  {
   "company": "ringconn",
   "name": "RingConn",
   "kind": "wearable",
   "field": "deprecations",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Google Fit sync ended 2025-10-01 23:00 UTC, replaced by Android Health Connect (HRV not yet synced there). Separately, after Oura's 2025 US ITC patent case, Oura granted RingConn a multi-year, royalty-bearing licence (announced October 2025) so US sales and the companion app continue; RingConn says US devices, app access, updates, warranty and support continue uninterrupted.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-20",
+  "note": "The Oura blog post is dated October 21, 2025. The licence length is not public, so a multi-year study planning US supply should treat the end date as unknown. Ultrahuman, by contrast, was hit by the import exclusion.",
+  "sources": [
+   {
+    "url": "https://ringconn.com/blogs/news/ringconn-will-migrate-from-google-fit-to-health-connect",
+    "type": "vendor_page",
+    "quote": "RingConn will officially cease synchronizing your health data with Google Fit as of October 1, 2025, 23:00 (UTC+0)",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ouraring.com/blog/oura-itc-case/",
+    "type": "secondary",
+    "quote": "ŌURA has granted RingConn a multi-year license to continue offering RingConn smart rings and their companion app, with RingConn making royalty payments to ŌURA.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/blogs/news/ringconn-official-update-itc-ruling-and-our-commitment-to-you",
+    "type": "vendor_page",
+    "quote": "Devices, app access and updates, warranty, and support for all RingConn products purchased in the U.S. will continue uninterrupted",
+    "retrieved": "2026-10-21"
+   }
+  ]
  },
  {
   "company": "ringconn",
   "name": "RingConn",
   "kind": "wearable",
   "field": "baa",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-19",
+  "note": "No BAA offer and no mention of HIPAA in the app privacy policy, the privacy summary page, the store privacy policy or the business article. The Terms of Service page is disallowed by robots.txt and was not read.",
+  "sources": [
+   {
+    "url": "https://ringconn.com/pages/ringconn-app-privacy-policy",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/pages/your-privacy-at-ringconn-app",
+    "type": "vendor_page",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/pages/privacy-policy",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/blogs/news/feedback-and-business-collaboration-with-ringconn",
+    "type": "vendor_page",
+    "retrieved": "2026-10-21"
+   }
+  ]
  },
  {
   "company": "ringconn",
   "name": "RingConn",
   "kind": "wearable",
   "field": "dpa",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-19",
+  "note": "RingConn's own processors (for example its customer-service platforms) sign DPAs with it, but no DPA is offered to customers or research sponsors. RingConn acts as controller for app users.",
+  "sources": [
+   {
+    "url": "https://ringconn.com/pages/ringconn-app-privacy-policy",
+    "type": "vendor_legal",
+    "quote": "All third-party providers sign data processing agreements specifying their protection responsibilities.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/pages/your-privacy-at-ringconn-app",
+    "type": "vendor_page",
+    "retrieved": "2026-10-21"
+   }
+  ]
  },
  {
   "company": "ringconn",
   "name": "RingConn",
   "kind": "wearable",
   "field": "hipaa_statement",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-19",
+  "note": "No HIPAA statement on any of these pages. HSA/FSA eligibility is unrelated. The Gen 3 page states the ring is \"not a medical device\".",
+  "sources": [
+   {
+    "url": "https://ringconn.com/pages/ringconn-app-privacy-policy",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/pages/privacy-policy",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/pages/your-privacy-at-ringconn-app",
+    "type": "vendor_page",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/blogs/news/smart-ring-health-data-security",
+    "type": "vendor_page",
+    "retrieved": "2026-10-21"
+   }
+  ]
  },
  {
   "company": "ringconn",
   "name": "RingConn",
   "kind": "wearable",
   "field": "gdpr_statement",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "RingConn states it complies with GDPR and CCPA; health and other special-category data is processed only with explicit consent; cross-border transfers use EU Standard Contractual Clauses (and, per the store policy, the UK IDTA). DPO contact data_protect@ringconn.com.",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-19",
+  "note": "/pages/privacy-policy is the store (shopping) privacy notice; the app is governed by /pages/ringconn-app-privacy-policy, which does not itself name SCCs. Self-claim, capped at Corroborated.",
+  "sources": [
+   {
+    "url": "https://ringconn.com/pages/your-privacy-at-ringconn-app",
+    "type": "vendor_page",
+    "quote": "We comply with the EU General Data Protection Regulation (GDPR) , the California Consumer Privacy Act (CCPA) , and have also obtained EU cybersecurity certification under the European framework",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/pages/your-privacy-at-ringconn-app",
+    "type": "vendor_page",
+    "quote": "Health and other special-category data are processed only with your explicit consent .",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/pages/your-privacy-at-ringconn-app",
+    "type": "vendor_page",
+    "quote": "When personal data is transferred across borders, we use European Commission Standard Contractual Clauses (SCCs) and other appropriate safeguards required by law.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/pages/privacy-policy",
+    "type": "vendor_legal",
+    "quote": "We rely on the EU Standard Contractual Clauses (SCCs) and the UK International Data Transfer Agreement (IDTA).",
+    "retrieved": "2026-10-21"
+   }
+  ]
  },
  {
   "company": "ringconn",
   "name": "RingConn",
   "kind": "wearable",
   "field": "iso27001",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-19",
+  "note": "No ISO 27001 claim or certificate found. The privacy-commitments page still claims an unnamed \"EU cybersecurity certification under the European framework\" with no scheme, body or certificate named; reading it as a Radio Equipment Directive cybersecurity conformity (EN 18031) would be inference. RingConn's own rewritten data article (2026-10-17) cautions against describing \"a particular certification\" without official documentation. The euro-compliance page holds EU/UK Declarations of Conformity for Gen 2, Gen 2 Air and Gen 3, which are product self-declarations, not security certifications.",
+  "sources": [
+   {
+    "url": "https://ringconn.com/pages/your-privacy-at-ringconn-app",
+    "type": "vendor_page",
+    "quote": "We comply with the EU General Data Protection Regulation (GDPR) , the California Consumer Privacy Act (CCPA) , and have also obtained EU cybersecurity certification under the European framework",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/blogs/news/smart-ring-health-data-security",
+    "type": "vendor_page",
+    "quote": "A health tracking ring should not be described as offering instant removal of every backup, universal end-to-end encryption or a particular certification unless the applicable official documentation establishes that claim.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/pages/security-disclosure",
+    "type": "vendor_page",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/pages/euro-compliance",
+    "type": "vendor_page",
+    "retrieved": "2026-10-21"
+   }
+  ]
  },
  {
   "company": "ringconn",
   "name": "RingConn",
   "kind": "wearable",
   "field": "soc2",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-19",
+  "note": "No SOC 2 report or claim found.",
+  "sources": [
+   {
+    "url": "https://ringconn.com/pages/your-privacy-at-ringconn-app",
+    "type": "vendor_page",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/pages/ringconn-app-privacy-policy",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/pages/security-disclosure",
+    "type": "vendor_page",
+    "retrieved": "2026-10-21"
+   }
+  ]
  },
  {
   "company": "ringconn",
   "name": "RingConn",
   "kind": "wearable",
   "field": "fda_clearances",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "510(k) K260490, \"Ninenovo Blood Oxygen Ring\" (models BORMB-01-6 to BORMB-01-14), applicant Shenzhen Ninenovo Technology Limited (RingConn's maker), product code DQA (oximeter, 21 CFR 870.2700, class II), received 2026-02-13, decision Substantially Equivalent 2026-10-02. No source links the cleared BORMB-01 models to a consumer RingConn model, and the Gen 3 product page still says \"This product is not a medical device.\" No clearance for sleep apnea or blood pressure features was found.",
+  "confidence": "Verified",
+  "recheck_by": "2027-01-19",
+  "note": "Confirmed in openFDA on 2026-10-21 (dataset last updated 2026-10-12): k_number K260490, product_code DQA, decision_code SESE, date_received 2026-02-13, clearance_type Traditional. The search applicant:ninenovo also returns K260490 today; researcher B reported \"No matches\" for it, probably a read before the record was indexed or a failed query. Searches returning no match on 2026-10-21: 510(k) applicant:ringconn, applicant:onovo, device_name:ringconn; registration listing registration.name:ninenovo, registration.owner_operator.firm_name:ninenovo, registration.name:ringconn. The press release (PR Newswire, reposted by TechNode 2026-10-10) speaks of \"RingConn\" but names no model, and says clinical validation work continues. The Gen 2 and Gen 2 Air product pages carry no medical-device disclaimer in their static rendering. RingConn Japan says the clearance does not change the product's status in Japan (smartwatchlife.jp, secondary).",
+  "sources": [
+   {
+    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K260490",
+    "fetch_url": "https://api.fda.gov/device/510k.json?search=k_number:K260490",
+    "type": "regulator_db",
+    "quote": "Ninenovo Blood Oxygen Ring",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K260490",
+    "fetch_url": "https://api.fda.gov/device/510k.json?search=k_number:K260490",
+    "type": "regulator_db",
+    "quote": "Shenzhen Ninenovo Technology Limited",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K260490",
+    "fetch_url": "https://api.fda.gov/device/510k.json?search=k_number:K260490",
+    "type": "regulator_db",
+    "quote": "2026-10-02",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K260490",
+    "fetch_url": "https://api.fda.gov/device/510k.json?search=k_number:K260490",
+    "type": "regulator_db",
+    "quote": "Substantially Equivalent",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://technode.global/?p=994924",
+    "type": "secondary",
+    "quote": "RingConn has undergone FDA regulatory review and has been determined to be substantially equivalent to legally marketed predicate devices for non-invasive measurement of blood oxygen (SpO2).",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/products/ringconn-gen-3",
+    "type": "vendor_page",
+    "quote": "This product is not a medical device. RingConn and related applications are not intended to diagnose, treat,cure, or prevent any disease or medical condition.",
+    "retrieved": "2026-10-21"
+   }
+  ]
  },
  {
   "company": "ringconn",
   "name": "RingConn",
   "kind": "wearable",
   "field": "data_residency",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Mainland China users: stored on servers in the PRC. Users outside mainland China: stored on servers outside the PRC, possibly in a different jurisdiction from where the data was collected (\"RingConn Cloud infrastructure deployed for global operations\"), with SCCs for transfers. For all users, app crash and error monitoring (self-hosted Sentry, no health data) and customer-service system data are processed in mainland China. No region choice is offered. RingConn no longer claims universal UK storage.",
+  "confidence": "Verified",
+  "recheck_by": "2027-01-19",
+  "note": "On 2026-10-11 the data-security article said health data was on cloud servers in the United Kingdom and named AWS; the 2026-10-17 rewrite removed both and now disclaims universal UK or US storage (no Wayback capture exists to confirm the old wording). OpenCircuit's wiki repeats \"AWS, UK\", but that is a third-party claim and is not used here. The Sentry passage covers crash data only. Parties: the App Store seller and developer is Onovo Technology (Hong Kong) Limited, while the app privacy policy names Shenzhen Ninenovo Technology Limited and its affiliates as \"RingConn\"; which entity is the contracting party for a study is not stated, and the Terms of Service (robots.txt disallowed) were not read.",
+  "sources": [
+   {
+    "url": "https://ringconn.com/pages/ringconn-app-privacy-policy",
+    "type": "vendor_legal",
+    "quote": "the personal Information that we collect and generate outside the People's Republic of China will be stored on servers outside of the People's Republic of China, including in jurisdictions other than the one in which the data was collected",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/pages/ringconn-app-privacy-policy",
+    "type": "vendor_legal",
+    "quote": "the personal information we collect from and generate in the People's Republic of China will be stored on servers in the People's Republic of China",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/pages/ringconn-app-privacy-policy",
+    "type": "vendor_legal",
+    "quote": "All data processing for this solution takes place on our own servers within the territory of the People’s Republic of China and does not involve any cross-border data transfers.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/pages/ringconn-app-privacy-policy",
+    "type": "vendor_legal",
+    "quote": "Data shared with customer service systems will be stored on cloud servers located in Mainland China.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/pages/your-privacy-at-ringconn-app",
+    "type": "vendor_page",
+    "quote": "your personal data is processed and stored on RingConn Cloud infrastructure deployed for global operations.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://ringconn.com/blogs/news/smart-ring-health-data-security",
+    "type": "vendor_page",
+    "quote": "The current policy does not support a blanket statement that every user’s health data is stored exclusively in the United Kingdom or exclusively in the United States.",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://apps.apple.com/us/app/ringconn/id6444470583",
+    "type": "app_store",
+    "quote": "Seller Onovo Technology (Hong Kong) Limited",
+    "retrieved": "2026-10-21"
+   }
+  ]
  },
  {
   "company": "samsung",
