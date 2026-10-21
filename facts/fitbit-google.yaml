@@ -110,10 +110,11 @@ facts:
   note: No review time is published for the Google Health API attestation; the 7-day figure is from the legacy Fitbit FAQ.
 - field: program_status
   status: stated
-  value: The Health Research Policy has been in force since March 24, 2026, but Google is not onboarding new Google Health
-    API projects, and the legacy Fitbit Web API turns off October 30, 2026. A research application form is still linked from
-    the published-studies page; what it leads to is not published.
-  confidence: Verified
+  value: The Health Research Policy has been in force since March 24, 2026. The About page no longer says Google is not
+    onboarding new Google Health API projects (the sentence was removed between 2026-10-12 and 2026-10-19) and now invites
+    developers to get started; Google has not announced a reopening. The legacy Fitbit Web API turns off October 30, 2026.
+    A research application form is still linked from the published-studies page; what it leads to is not published.
+  confidence: Corroborated
   sources:
   - url: https://developers.google.com/health/policies/health-api-user-data-and-research-policy
     type: vendor_legal
@@ -121,9 +122,8 @@ facts:
     quote: Effective as of March 24, 2026
   - url: https://developers.google.com/health/about
     type: vendor_docs
-    retrieved: '2026-10-10'
-    quote: While we are not onboarding new projects at this time, we are actively working to open access to more developers
-      and will share updates here as availability expands.
+    retrieved: '2026-10-21'
+    quote: Like what you see? Get started now
   - url: https://healthapp.google/published-studies
     type: vendor_page
     retrieved: '2026-10-10'
@@ -132,16 +132,20 @@ facts:
 - field: developer_program_status
   status: stated
   scope: Google Health API
-  value: Launched March 24, 2026. Closed to new projects as of 2026-10-10, with no reopening date. Existing Fitbit Web API
-    developers and integrator customers are migrating onto new Google Cloud projects, so the freeze appears to apply to developers
-    without legacy access; Google does not say so.
-  confidence: Verified
+  value: Launched March 24, 2026. Apparently open to new projects again. On 2026-10-10 the About page said Google was "not
+    onboarding new projects at this time"; by 2026-10-19 that sentence was gone and the page invites developers to "Get started
+    now". Google has not announced the change (release notes checked to October 14, 2026). Every scope is Restricted and needs
+    Google's privacy and security review, so approval is not automatic.
+  confidence: Corroborated
   sources:
   - url: https://developers.google.com/health/about
     type: vendor_docs
-    retrieved: '2026-10-10'
-    quote: While we are not onboarding new projects at this time, we are actively working to open access to more developers
-      and will share updates here as availability expands.
+    retrieved: '2026-10-21'
+    quote: Like what you see? Get started now
+  - url: https://developers.google.com/health/about
+    type: vendor_docs
+    retrieved: '2026-10-21'
+    quote: All Google Health API scopes are categorized as Restricted, necessitating a privacy and security review for access.
   - url: https://developers.google.com/health/release-notes
     type: vendor_docs
     retrieved: '2026-10-10'
@@ -573,8 +577,8 @@ facts:
       API
   recheck_by: '2026-11-09'
   note: Two independent integrators state the bring-your-own-credentials model; Google's docs do not address intermediaries.
-    Combined with "not onboarding new projects", a study with no project of its own cannot reach Fitbit data through a unified
-    API's cloud route unless the customer can still open a project.
+    Until mid-October 2026 Google said it was not onboarding new projects; that statement has since been removed, so a
+    customer can apparently open its own project again (Corroborated, 2026-10-21).
 - field: export_routes
   status: stated
   scope: On-device (Apple Health and Health Connect)
