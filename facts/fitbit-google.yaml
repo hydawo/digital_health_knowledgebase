@@ -272,13 +272,13 @@ facts:
 - field: device_price
   status: stated
   scope: Pixel Watch 5 (US)
-  value: List from $399.99; on sale from $349.99 on 2026-10-10 (Google Store US)
+  value: List from $399.99 (Google Store US, 2026-10-21); it was on sale from $349.99 on 2026-10-10
   confidence: Verified
   sources:
   - url: https://store.google.com/us/product/pixel_watch_5
     type: vendor_page
-    retrieved: '2026-10-10'
-    quote: Google Pixel Watch 5 From $349.99 $399.99 Save $50
+    retrieved: '2026-10-21'
+    quote: Google Pixel Watch 5 From $399.99
   recheck_by: '2026-11-09'
 - field: device_price
   status: stated

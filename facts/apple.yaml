@@ -1030,10 +1030,10 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: Starting in iOS 27, participants will have more granular control over how they share HealthKit data
-  - url: https://developer.apple.com/documentation/healthkit/hkhealthstore/earliestauthorizedsampledate(for:)
+  - url: https://developer.apple.com/documentation/healthkit/hkhealthstore/getearliestauthorizedsampledate(for:completion:)
     type: vendor_docs
     retrieved: '2026-10-10'
-    fetch_url: https://developer.apple.com/tutorials/data/documentation/healthkit/hkhealthstore/earliestauthorizedsampledate(for:).json
+    fetch_url: https://developer.apple.com/tutorials/data/documentation/healthkit/hkhealthstore/getearliestauthorizedsampledate(for:completion:).json
     quote: Adjust your app’s workflow to work with less data.
   recheck_by: '2026-11-09'
   scope: HealthKit (iOS 27)

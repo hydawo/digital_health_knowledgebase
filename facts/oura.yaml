@@ -6,7 +6,7 @@ profile: module-01-wearables/profiles/oura.md
 watch:
 - url: https://cloud.ouraring.com/v2/docs
   role: docs
-  fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+  fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.42.json
 - url: https://cloud.ouraring.com/legal/api-agreement
   role: terms
 - url: https://organizations.ouraring.com/solutions/researchers
@@ -162,7 +162,7 @@ facts:
     quote: You can use the Oura API by creating an API application in our developer portal
     retrieved: '2026-10-10'
   - url: https://cloud.ouraring.com/v2/docs
-    fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+    fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.42.json
     type: vendor_docs
     quote: personal access tokens were deprecated in December 2025 and are no longer available for use
     retrieved: '2026-10-10'
@@ -175,7 +175,7 @@ facts:
   confidence: Verified
   sources:
   - url: https://cloud.ouraring.com/v2/docs
-    fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+    fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.42.json
     type: vendor_docs
     quote: API Applications are limited to **10** users before requiring approval from Oura. There is no limit once
       an application is approved.
@@ -195,7 +195,7 @@ facts:
   confidence: Corroborated
   sources:
   - url: https://cloud.ouraring.com/v2/docs
-    fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+    fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.42.json
     type: vendor_docs
     quote: Yes, the Oura API is free to use for both personal and commercial applications.
     retrieved: '2026-10-10'
@@ -295,7 +295,7 @@ facts:
   confidence: Verified
   sources:
   - url: https://cloud.ouraring.com/v2/docs
-    fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+    fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.42.json
     type: vendor_docs
     quote: Yes, the Oura API is free to use for both personal and commercial applications.
     retrieved: '2026-10-10'
@@ -392,14 +392,14 @@ facts:
   confidence: Corroborated
   sources:
   - url: https://cloud.ouraring.com/v2/docs
-    fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+    fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.42.json
     type: vendor_docs
     quote: 'Processing**: Algorithms analyze raw data to generate insights and scores 4. **API Availability**: Processed
       data becomes available through API endpoints'
     retrieved: '2026-10-10'
   recheck_by: '2026-11-09'
   note: Corroborated, not Verified, because the absence of raw signals is read from the data-flow description and
-    the endpoint list in OpenAPI 1.41 (no raw-signal route), not stated outright. The API Agreement also bars deriving
+    the endpoint list in OpenAPI 1.42 (no raw-signal route), not stated outright. The API Agreement also bars deriving
     Oura's signal processing techniques (s.4(a)(xi)).
 - field: raw_streams
   scope: Oura Enterprise Platform
@@ -433,17 +433,17 @@ facts:
     quote: Temperature Deviation from Baseline SpO2 average
     retrieved: '2026-10-10'
   - url: https://cloud.ouraring.com/v2/docs
-    fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+    fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.42.json
     type: vendor_docs
     quote: The Daily SpO2 (blood oxygenation) routes include daily SpO2 average.
     retrieved: '2026-10-10'
   - url: https://cloud.ouraring.com/v2/docs
-    fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+    fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.42.json
     type: vendor_docs
     quote: Oura users **must provide consent** to share each data type an API Application has access to.
     retrieved: '2026-10-10'
   recheck_by: '2026-11-09'
-  note: Route list read from openapi-1.41.json (paths under /v2/usercollection/). No route for blood pressure, GLP-1
+  note: Route list read from openapi-1.42.json (paths under /v2/usercollection/). No route for blood pressure, GLP-1
     or Health Radar.
 - field: derived_metrics
   scope: Oura Enterprise Platform
@@ -466,7 +466,7 @@ facts:
   confidence: Verified
   sources:
   - url: https://cloud.ouraring.com/v2/docs
-    fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+    fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.42.json
     type: vendor_docs
     quote: Heart rate is provided at 5-minute increments.
     retrieved: '2026-10-10'
@@ -475,18 +475,18 @@ facts:
     quote: Heart rate variability time series (5-min resolution)
     retrieved: '2026-10-10'
   - url: https://cloud.ouraring.com/v2/docs
-    fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+    fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.42.json
     type: vendor_docs
     quote: this is the average calculated by ecore (based on 30-second samples) which is different from what is shown
       in the app
     retrieved: '2026-10-10'
   - url: https://cloud.ouraring.com/v2/docs
-    fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+    fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.42.json
     type: vendor_docs
     quote: 30-second movement classification for the period
     retrieved: '2026-10-10'
   - url: https://cloud.ouraring.com/v2/docs
-    fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+    fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.42.json
     type: vendor_docs
     quote: 5-minute sleep phase classification for the period
     retrieved: '2026-10-10'
@@ -501,7 +501,7 @@ facts:
   confidence: Verified
   sources:
   - url: https://cloud.ouraring.com/v2/docs
-    fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+    fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.42.json
     type: vendor_docs
     retrieved: '2026-10-10'
   - url: https://support.ouraring.com/hc/en-us/articles/360025441594
@@ -532,7 +532,7 @@ facts:
   confidence: Verified
   sources:
   - url: https://cloud.ouraring.com/v2/docs
-    fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+    fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.42.json
     type: vendor_docs
     quote: Webhook notifications come approximately 30 seconds after data syncs from the mobile app
     retrieved: '2026-10-10'
@@ -573,12 +573,12 @@ facts:
   confidence: Verified
   sources:
   - url: https://cloud.ouraring.com/v2/docs
-    fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+    fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.42.json
     type: vendor_docs
     quote: The Oura API is limited to 5000 requests per 5-minute period.
     retrieved: '2026-10-10'
   - url: https://cloud.ouraring.com/v2/docs
-    fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+    fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.42.json
     type: vendor_docs
     quote: a per-application limit, which caps the aggregate traffic across all of an application's end-user tokens
     retrieved: '2026-10-10'
@@ -588,7 +588,7 @@ facts:
       notice)
     retrieved: '2026-10-10'
   recheck_by: '2026-11-09'
-  note: Both statements are in the current OpenAPI 1.41 document. The 5,000/5-min figure is in its FAQ section; the
+  note: Both statements are in the current OpenAPI 1.42 document. The 5,000/5-min figure is in its FAQ section; the
     newer Rate Limits section names the two layers but gives no number per layer, so whether 5,000 is the per-token
     or the per-application ceiling is not stated. The X-RateLimit-Limit and X-RateLimit-Window headers report the
     live ceiling. The pilot record and the profile said no number was published; the FAQ contradicts that.
@@ -627,7 +627,7 @@ facts:
       such use
     retrieved: '2026-10-10'
   - url: https://cloud.ouraring.com/v2/docs
-    fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+    fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.42.json
     type: vendor_docs
     quote: Store the historical data in your own database for easy access
     retrieved: '2026-10-10'
@@ -743,7 +743,7 @@ facts:
     quote: The V1 API was removed on January 22nd, 2024.
     retrieved: '2026-10-10'
   - url: https://cloud.ouraring.com/v2/docs
-    fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+    fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.42.json
     type: vendor_docs
     quote: personal access tokens were deprecated in December 2025 and are no longer available for use
     retrieved: '2026-10-10'
@@ -752,7 +752,7 @@ facts:
     quote: Oura on the Web has been discontinued as of October 5, 2026.
     retrieved: '2026-10-10'
   - url: https://cloud.ouraring.com/v2/docs
-    fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.41.json
+    fetch_url: https://cloud.ouraring.com/v2/static/json/openapi-1.42.json
     type: vendor_docs
     quote: Tag is deprecated. We recommend transitioning to [Enhanced Tag](#tag/Enhanced-Tag-Routes).
     retrieved: '2026-10-10'

@@ -333,8 +333,8 @@ facts:
   value: 'Raw phone sensor data and logs, downloadable by researchers through the web download page, the Data Download
     API or Mano. Streams: accelerometer, gyroscope, GPS (optional fuzzing), screen and power state, identifiers,
     Wi-Fi, Bluetooth, call and text logs (Android only), proximity, magnetometer, device motion and reachability
-    (iOS only), plus surveys and audio-survey recordings. Android also has an optional ambient (continuous) audio
-    stream, off by default and set per study. Call and text logs come only from the lab-distributed Android builds
+    (iOS only), plus surveys and audio-survey recordings. The optional Android ambient (continuous) audio stream
+    has been removed from the backend (commit "removes ambient audio", 2026-07-31, on main by 2026-10-19). Call and text logs come only from the lab-distributed Android builds
     (onnelaLabServer, commStatsCustomUrl); the Google Play build (Beiwe2) has not asked for SMS/MMS or call-log
     permissions since 2.5.0. Studies set to "production data" restrict downloads to processed output.'
   confidence: Verified
@@ -366,11 +366,11 @@ facts:
     quote: ambient audio can be enabled or disabled at the study level. It's disabled by default.
     fetch_url: https://raw.githubusercontent.com/onnela-lab/beiwe-android/main/app/build.gradle
     retrieved: 2026-10-10
-  - url: https://github.com/onnela-lab/beiwe-backend/blob/main/database/study_models.py
+  - url: https://github.com/onnela-lab/beiwe-backend/blob/main/database/migrations/0150_remove_devicesettings_ambient_audio_and_more.py
     type: repository
-    quote: ambient_audio = models.BooleanField(default=False)
-    fetch_url: https://raw.githubusercontent.com/onnela-lab/beiwe-backend/main/database/study_models.py
-    retrieved: 2026-10-10
+    quote: name='ambient_audio',
+    fetch_url: https://raw.githubusercontent.com/onnela-lab/beiwe-backend/main/database/migrations/0150_remove_devicesettings_ambient_audio_and_more.py
+    retrieved: 2026-10-21
   - url: https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-Using-Beiwe-for-Open-Source-Users
     type: vendor_docs
     quote: 'Production data: researchers will only be able to download processed data output from the Data Analysis
@@ -379,7 +379,9 @@ facts:
   recheck_by: 2026-11-09
   note: 'Phone numbers and Wi-Fi and Bluetooth MAC addresses are hashed on the phone with a per-device key. Power
     state on iOS is documented inconsistently (profile holds that conflict). Ambient audio: Android 3.1.0 added
-    it; backend defaults are 10 minutes on, 10 minutes off, 44.1 kHz. Whether the BSC permits it is not stated.
+    it (backend defaults were 10 minutes on, 10 minutes off, 44.1 kHz); migration 0150 (generated 2026-07-31) removes
+    the ambient_audio study settings, so the stream is gone from current backends. The Android build.gradle note
+    describing it has not been updated.
     The Play build also does not prompt for background location (Android 3.1.2). The build split dates from Google''s
     March 2019 policy change.'
 - field: derived_metrics

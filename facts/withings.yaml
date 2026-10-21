@@ -291,7 +291,8 @@ facts:
   value: >-
     Start for Free is free. Enterprise is custom-priced on active users; Advanced Biomarkers is custom-priced on
     active users and biomarkers. Figures are not published. On the paid plans the app pays no per-member
-    Withings+ charge. The 2018 developer agreement reserves the right to charge for the API.
+    Withings+ charge. The 2018 developer agreement reserved the right to charge for the API; since the terms rewrite of
+    13 October 2026 it is no longer on Withings' terms page, and the partner terms it points to were not located.
   confidence: Verified
   sources:
   - url: https://static.withings.com/content/api/plans/plans.html
@@ -305,11 +306,6 @@ facts:
   - url: https://static.withings.com/content/api/plans/plans.html
     type: vendor_page
     quote: Your users do not subscribe individually and there is no per-member charge.
-    retrieved: '2026-10-10'
-  - url: https://www.withings.com/us/en/legal/api-terms-of-use
-    type: vendor_legal
-    quote: Withings reserves the right to charge for the Software and to change its fees from time to time, at its
-      discretion.
     retrieved: '2026-10-10'
   recheck_by: '2026-11-09'
 - field: minimum_commitment
@@ -421,9 +417,8 @@ facts:
   sources:
   - url: https://developer.withings.com/developer-guide/v3/data-api/all-available-health-data
     type: vendor_docs
-    quote: This page details all available biomarkers, their device compatibility, and which API plan includes access
-      to each metric.
-    retrieved: '2026-10-10'
+    quote: 96 biomarkers across 9 device families
+    retrieved: '2026-10-21'
   - url: https://static.withings.com/content/api/plans/plans.html
     type: vendor_page
     quote: 'Core biomarkers : Activity, Sleep, Body, Heart'
@@ -525,10 +520,10 @@ facts:
     type: vendor_page
     quote: REST API, OAuth 2.0 and webhooks
     retrieved: '2026-10-10'
-  - url: https://developer.withings.com/llms.md
-    type: vendor_docs
-    quote: Embed Withings SDK (iOS / Android) into your mobile app
-    retrieved: '2026-10-10'
+  - url: https://static.withings.com/content/api/plans/plans.html
+    type: vendor_page
+    quote: 'The Withings+ requirement can be removed for specific use cases: Cellular Solutions, SDK and Research partners.'
+    retrieved: '2026-10-21'
   - url: https://developer.withings.com/llms.md
     type: vendor_docs
     quote: (after rotation, the previous token becomes invalid after 8 hours)
@@ -544,7 +539,9 @@ facts:
     retrieved: '2026-10-10'
   recheck_by: '2026-11-09'
   note: The SDK is a device setup and sync SDK, not device programming. A study that does not refresh a
-    participant's token within a year loses access until the participant re-authorizes.
+    participant's token within a year loses access until the participant re-authorizes. The SDK line was removed
+    from developer.withings.com/llms.md by 2026-10-19; the plans page still names the SDK, and says the Withings+
+    requirement can be lifted for Cellular Solutions, SDK and Research partners.
 - field: rate_limits
   status: stated
   value: >-
@@ -568,16 +565,17 @@ facts:
   status: stated
   scope: API partners and Withings' own retention
   value: >-
-    The API terms set no retention period for partners and say copies may remain after material is removed.
-    Withings keeps personal data only as long as necessary. If a participant's Withings+ lapses, sharing pauses
+    The 2018 API terms set no retention period for partners and said copies may remain after material is removed;
+    since 13 October 2026 Withings' terms page says partner terms are on the developer portal, where they were not
+    located on 2026-10-21. Withings keeps personal data only as long as necessary. If a participant's Withings+ lapses, sharing pauses
     but historical data is not deleted.
   confidence: Verified
   sources:
   - url: https://www.withings.com/us/en/legal/api-terms-of-use
     type: vendor_legal
-    quote: After the Material is removed from the Service by either You or Withings, traces and copies of the Material
-      may still remain.
-    retrieved: '2026-10-10'
+    quote: the terms applicable to partners apply and take precedence over this article; they are available on the Withings
+      developer portal.
+    retrieved: '2026-10-21'
   - url: https://www.withings.com/us/en/legal/privacy-policy
     type: vendor_legal
     quote: We retain your Personal Information only for as long as necessary to achieve the purposes described in
@@ -588,15 +586,18 @@ facts:
     quote: Historical data is not deleted, and sharing resumes where it left off.
     retrieved: '2026-10-10'
   recheck_by: '2026-11-09'
-  note: The US api-terms-of-use URL serves the combined terms page; the API terms are Part 2, "Withings Developer
-    Software Agreement", last updated 12 September 2018.
+  note: Until 13 October 2026 the US api-terms-of-use URL served the combined terms with Part 2, "Withings Developer
+    Software Agreement" (12 September 2018). The rewritten General Terms of Use (13 October 2026) replace it, and add
+    that a participant's sharing with third-party services needs Withings+ (with unnamed exceptions) and covers only
+    data generated after sharing is enabled.
 - field: retention_terms
   status: conflict
   scope: Inactive participant accounts
   value: >-
-    Withings deletes inactive accounts, but the threshold differs: the French General Terms (updated
-    2026-01-05) define inactive as no login, no device connection and no email click for more than 3 years;
-    the privacy policy (version of 2026-03-04) says 10 years, with a 90-day email warning.
+    Withings closes inactive accounts, but the threshold differs: the French General Terms (updated 13 October
+    2026) delete accounts with no login, no device connection and no email click for more than 3 years; the US
+    General Terms (same date) say Withings may deactivate an account after 5 years without a login; the privacy
+    policy (version of 2026-03-04) says 10 years, with a 90-day email warning.
   confidence: Unclear
   sources:
   - url: https://www.withings.com/fr/fr/legal/api-terms-of-use
@@ -605,17 +606,21 @@ facts:
     retrieved: '2026-10-10'
   - url: https://www.withings.com/fr/fr/legal/api-terms-of-use
     type: vendor_legal
-    quote: 'Dernière mise à jour : 5 janvier 2026'
-    retrieved: '2026-10-10'
+    quote: 'Dernière mise à jour : 13 octobre 2026'
+    retrieved: '2026-10-21'
+  - url: https://www.withings.com/us/en/legal/api-terms-of-use
+    type: vendor_legal
+    quote: WITHINGS may deactivate an Account if the User has not logged in for a period of five (5) years.
+    retrieved: '2026-10-21'
   - url: https://www.withings.com/us/en/legal/privacy-policy
     type: vendor_legal
     quote: Your Withings App account will be considered inactive if for 10 years
     retrieved: '2026-10-10'
   recheck_by: '2026-11-09'
   note: >-
-    Gap finding. The US terms page served on 2026-10-10 is an older version (Part 1 last updated 26 January
-    2023) with no inactive-account clause, so the 3-year rule may apply only where the French terms govern.
-    Matters for longitudinal studies on participants' own accounts; ask Withings which applies in the US.
+    The US terms served on 2026-10-10 had no inactive-account clause; the 13 October 2026 rewrite added the
+    5-year deactivation rule. So the thresholds now differ by region (US 5, France 3) and against the privacy
+    policy (10). Matters for longitudinal studies on participants' own accounts.
 - field: ai_training_terms
   status: stated
   scope: Partner data (API plans)

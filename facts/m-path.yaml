@@ -925,14 +925,14 @@ facts:
   recheck_by: '2027-01-08'
   note: A device_name:"m-Path" 510(k) search returns only K946356, an unrelated M-PATH guidewire from Microvena Corp.
 - field: data_residency
-  status: conflict
-  value: EU, but m-Path's own documents disagree on the host. The manual's storage page (updated 2026-10-09), the FAQ
-    and the sub-processor list say survey data is on Microsoft Azure in Frankfurt; the privacy statement for app and
-    dashboard instead names KU Leuven as server host, and KU Leuven is absent from the sub-processor list. The DPA
+  status: stated
+  value: EU. Survey data is on Microsoft Azure in Germany (Frankfurt), per the manual's storage page, the FAQ, the
+    sub-processor list and, since an update between 2026-10-12 and 2026-10-19, the privacy statement, which earlier
+    named KU Leuven as server host. The DPA
     keeps services in the EU/EEA unless the controller is outside it. Continuous sensing, Garmin-direct and media
     data go straight to the researcher's pCloud, OneDrive or SFTP server, wherever that is. Thryve wearable data passes
     through the manufacturer's servers and Thryve before reaching m-Path.
-  confidence: Unclear
+  confidence: Verified
   sources:
   - url: https://m-path.io/manual/knowledge-base/storage/
     type: vendor_docs
@@ -952,9 +952,8 @@ facts:
   - url: https://m-path.io/privacy-policy/
     fetch_url: https://m-path.io/LegalPage/privacy.html
     type: vendor_legal
-    quote: The KU Leuven, as our server host, will only have access to any information on the App in an encrypted at
-      rest manner.
-    retrieved: '2026-10-11'
+    quote: This information is stored on Microsoft Azure servers located in Germany.
+    retrieved: '2026-10-21'
   - url: https://m-path.io/data-processing/
     fetch_url: https://m-path.io/LegalPage/dpa.html
     type: vendor_legal
@@ -966,7 +965,7 @@ facts:
     quote: 'It is possible to connect two cloud storage providers: pCloud and OneDrive.'
     retrieved: '2026-10-11'
   recheck_by: '2027-01-08'
-  note: Likely a migration from KU Leuven servers to Azure that the privacy statement has not caught up with (the gap
-    hunter saw a 2023 storage-page snippet naming KU Leuven servers, not probed). Researcher B recorded only Azure;
-    the privacy statement was read and the conflict stands. Ask m-Path to confirm the host and update the privacy
-    statement.
+  note: Was a conflict on 2026-10-11, when the privacy statement still named KU Leuven as server host. The weekly
+    check of 2026-10-19 found that sentence changed; on 2026-10-21 the privacy statement names Microsoft Azure in
+    Germany, matching the other documents. Most likely a migration from KU Leuven servers that the policy had not
+    caught up with.

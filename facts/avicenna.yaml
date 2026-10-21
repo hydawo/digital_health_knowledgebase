@@ -120,7 +120,7 @@ facts:
   sources:
   - url: https://forum.avicennaresearch.com/t/weekly-release-notes-2026-10-06/2188
     type: vendor_docs
-    quote: This week’s release improves participant invitations with CSV import and new options for each invitee.
+    quote: This week’s release improves participant invitations with CSV import and new options for each invitee
     retrieved: '2026-10-11'
   - url: https://forum.avicennaresearch.com/t/our-new-brand-and-identity/1120
     type: vendor_page
@@ -329,9 +329,9 @@ facts:
 - field: derived_metrics
   status: stated
   value: Phone-derived step count and activity type; vendor-computed wearable metrics pulled from cloud accounts (Garmin,
-    Fitbit, Oura readiness and sleep, WHOOP recovery, Polar sleep). Platform-native GPS mobility features computed in
-    a nightly batch (daily distance, radius of gyration, location entropy, time at home, daily location clusters). An
-    Analysis page for data quality, engagement and retention (added 2026-03). Kibana and Vega charts in the dashboard.
+    Fitbit, Oura readiness and sleep, WHOOP recovery, Polar sleep). An Analysis page for data quality, engagement and
+    retention (added 2026-03). Kibana and Vega charts in the dashboard. Whether Avicenna still computes GPS mobility
+    features is unclear (see note).
   confidence: Verified
   sources:
   - url: https://avicennaresearch.com/features/sensor-based-data
@@ -346,22 +346,16 @@ facts:
     type: vendor_docs
     quote: 58 WHOOP Workout 59 WHOOP Sleep 60 WHOOP Recovery
     retrieved: '2026-10-11'
-  - url: https://forum.avicennaresearch.com/t/1460
-    type: vendor_docs
-    quote: Total distance travelled during the day Radius of gyration Location entropy Time spent at home
-    retrieved: '2026-10-11'
-  - url: https://forum.avicennaresearch.com/t/1460
-    type: vendor_docs
-    quote: All of this runs in a nightly batch process
-    retrieved: '2026-10-11'
   - url: https://forum.avicennaresearch.com/t/1508
     type: vendor_page
     quote: We introduced the Analysis page in the researcher dashboard
     retrieved: '2026-10-11'
   recheck_by: '2026-11-10'
-  note: The security page still says "Avicenna does not perform any processing on the data collected for a given study",
-    which the GPS mobility-features reference (2025-12-16) contradicts. Researcher A relied on the security page and
-    recorded no platform-native features.
+  note: A vendor forum reference (forum.avicennaresearch.com/t/1460, dated 2025-12-16, read 2026-10-11) described GPS
+    mobility features computed in a nightly batch (daily distance, radius of gyration, location entropy, time at home).
+    By 2026-10-19 that topic returned 404 and it is absent from forum search (2026-10-21). The security page says
+    "Avicenna does not perform any processing on the data collected for a given study". Ask Avicenna whether the
+    feature still exists.
 - field: sampling_rates
   status: stated
   value: Phone sensors are polled once per data-collection cycle, every 5 minutes by default, configurable from 1 to

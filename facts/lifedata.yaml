@@ -478,7 +478,7 @@ facts:
     retrieved: '2026-10-11'
   - url: https://www.lifedatacorp.com/lifedata-privacy-policy/
     type: vendor_legal
-    quote: LifeData retains a copy for no longer than 30 days after which it will be permanently deleted
+    quote: LifeData retains a copy for no longer than 30 days, after which it will be permanently deleted
     retrieved: '2026-10-11'
   - url: https://www.lifedatacorp.com/lifedata-terms-of-use/
     type: vendor_legal
@@ -572,7 +572,7 @@ facts:
 - field: hosting_options
   status: stated
   value: Vendor-hosted SaaS only, on servers in the United States; no self-hosting or on-premises option is published.
-    The privacy policy names Microsoft Azure as an example of its data hosting company.
+    The privacy policy names Microsoft as an example web hosting service.
   confidence: Corroborated
   sources:
   - url: https://www.lifedatacorp.com/lifedata-terms-of-use/
@@ -585,9 +585,8 @@ facts:
     retrieved: '2026-10-11'
   - url: https://www.lifedatacorp.com/lifedata-privacy-policy/
     type: vendor_legal
-    quote: LifeData may transfer personal data to a third party outside the European Union or United Kingdom, for
-      example a secure data hosting company such as Microsoft Azure.
-    retrieved: '2026-10-11'
+    quote: Usually, this involves disclosure of information to a web hosting service such as Microsoft.
+    retrieved: '2026-10-21'
   recheck_by: '2026-11-10'
   note: Corroborated because "no self-hosting" is an absence across the product, features and legal pages rather than
     a stated exclusion.
@@ -726,16 +725,16 @@ facts:
   sources:
   - url: https://www.lifedatacorp.com/lifedata-privacy-policy/
     type: vendor_legal
-    quote: Where LifeData products or services are used to collect or process personal data of EU residents, LifeData
-      is subject to GDPR, and complies with all requirements.
-    retrieved: '2026-10-11'
+    quote: Where LifeData products or services are used to collect or process personal data of EU, UK, or Swiss residents,
+      LifeData is subject to these laws, and complies with all requirements.
+    retrieved: '2026-10-21'
   - url: https://www.lifedatacorp.com/lifedata-terms-of-use/
     type: vendor_legal
     quote: Under GDPR, LifeData operates as a Data Processor, and fulfills all obligations of that role.
     retrieved: '2026-10-11'
   - url: https://www.lifedatacorp.com/lifedata-privacy-policy/
     type: vendor_legal
-    quote: LifeData complies with the EU-U.S. Data Privacy Framework (EU-U.S. DPF) and the UK Extension to the EU-U.S.
+    quote: LifeData complies with the EU-U.S. Data Privacy Framework (EU-U.S. DPF), the UK Extension to the EU-U.S.
       DPF, and the Swiss-U.S. Data Privacy Framework (Swiss-U.S. DPF) as set forth by the U.S. Department of
       Commerce.
     retrieved: '2026-10-11'
@@ -846,7 +845,7 @@ facts:
     registration name lifedata and PMA applicant lifedata. LifeData does not market the app as a medical device.
 - field: data_residency
   status: stated
-  value: Data is stored on servers in the United States, with Microsoft Azure named as an example hosting company. No
+  value: Data is stored on servers in the United States, with Microsoft named as an example web hosting service. No
     other region or residency option is offered; EU, UK and Swiss transfers rely on the Data Privacy Framework.
   confidence: Verified
   sources:
@@ -856,9 +855,8 @@ facts:
     retrieved: '2026-10-11'
   - url: https://www.lifedatacorp.com/lifedata-privacy-policy/
     type: vendor_legal
-    quote: LifeData may transfer personal data to a third party outside the European Union or United Kingdom, for
-      example a secure data hosting company such as Microsoft Azure.
-    retrieved: '2026-10-11'
+    quote: Usually, this involves disclosure of information to a web hosting service such as Microsoft.
+    retrieved: '2026-10-21'
   recheck_by: '2027-01-09'
   note: The absence of non-US options is from the absence of any mention, not an explicit statement. Not a
     self-claim-capped field; the vendor's own policy is the primary source for where it stores data.
