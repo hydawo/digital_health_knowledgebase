@@ -88,40 +88,51 @@ about Beiwe as any other profile is about its own subject.
 
 ## What this module found, in brief
 
-Updated 2026-10-10 to agree with the corrected profiles and the rebuilt matrix.
+Updated 2026-10-10 to agree with the corrected profiles and the rebuilt matrix. Updated 2026-10-21
+from the batch-2 vendor fact records (mindLAMP, AWARE, Avicenna Research, MetricWire, m-Path, CARP,
+LifeData, Evidation; facts checked 2026-10-11).
 
 1. **Three deployment postures**, not a simple open-source/commercial binary: self-hosted platforms
    with public source (Beiwe, RADAR-base and AWARE under open licences; mindLAMP source-available,
    its server and apps unlicensed); fully managed commercial SaaS (Avicenna Research, MetricWire,
-   m-Path, LifeData, Evidation); and a build-your-own-app framework (CARP Mobile Sensing). See
-   `comparison-matrix.md` Table 3.
-2. **Four public-source platforms now have a hosted alternative to self-hosting**: Beiwe (Beiwe
-   Service Center, the only one with published rates), RADAR-base (The Hyve, quote only, best for
-   about 200 participants or fewer), mindLAMP (BIDMC mindLAMP Core, priced by proposal) and CARP
-   (DTU-hosted, stated for DTU-affiliated researchers, price not stated). AWARE still has none.
-   (Corrected 2026-10-10; this item previously said only Beiwe offered managed hosting.)
+   m-Path, LifeData, Evidation; Avicenna also offers vendor-installed on-premises); and a
+   build-your-own-app framework (CARP Mobile Sensing). See `comparison-matrix.md` Table 3.
+2. **All five public-source platforms now have a hosted alternative to self-hosting**: Beiwe (Beiwe
+   Service Center, published rates), RADAR-base (The Hyve, quote only, best for about 200
+   participants or fewer), mindLAMP (BIDMC mindLAMP Core, priced by proposal), CARP (DTU-hosted,
+   research-partner projects only, 2024 rates published) and AWARE (University of Melbourne hosting
+   service, by contact, price not stated). (Corrected 2026-10-10; this item previously said only
+   Beiwe offered managed hosting. Corrected 2026-10-21 for AWARE's paid hosting and CARP's terms.)
 3. **iOS/Android parity should not be assumed anywhere.** Beiwe and AWARE document per-stream iOS
    coverage: Beiwe's calls, SMS (lab-distributed Android builds only), Wi-Fi and Bluetooth are Android only; AWARE's catalogue marks 19 of
-   33 modules as iOS-available. RADAR-base has no maintained iOS passive app (its iOS data come from
-   HealthKit through the questionnaire app). Elsewhere the iOS question is Unclear.
+   33 modules as iOS-available, and AWARE Client V3 (2026-06-28) adds Apple Watch, AirPods motion
+   and own-keyboard streams. CARP's package table marks light, screen, Wi-Fi, app usage, calls and SMS as
+   Android only. RADAR-base has no maintained iOS passive app (its iOS data come from HealthKit
+   through the questionnaire app). Elsewhere the iOS question is Unclear or only partly documented.
 4. **App-store availability differs from what the module said before.** AWARE's iOS client is on the
-   App Store (only the Android client is sideloaded); mindLAMP's public iOS build dates from 2023;
-   no Google Play listing could be confirmed for Beiwe2 (its Android app is sideloaded from each
-   deployment) or for m-Path. See Table 2.
-5. **Pricing:** Beiwe (BSC, FY26 card) and m-Path publish prices. Avicenna Research, MetricWire, LifeData,
-   Evidation, The Hyve and the mindLAMP Core do not. Academic routes exist but are mostly unpriced:
-   MetricWire's Academic Site Licence, LifeData's academic pricing and student discount, and
+   App Store (only the Android client is sideloaded); mindLAMP's public iOS build dates from 2023,
+   with newer builds on TestFlight for testers only; CARP Studies is on the App Store as an unlisted
+   app; no Google Play listing could be confirmed for Beiwe2 (its Android app is sideloaded from each
+   deployment). Both m-Path apps are on Google Play. See Table 2.
+5. **Pricing:** Beiwe (BSC, FY26 card), m-Path and CARP's DTU-hosted service (2024 rate table) publish
+   prices. Avicenna Research, MetricWire, LifeData (VA contract amounts are on USAspending, Reported),
+   Evidation, The Hyve, AWARE's paid service and the mindLAMP Core do not. Academic routes exist but
+   are mostly unpriced: MetricWire's Academic Site Licence (plus a Penn State sub-licence, Reported),
+   LifeData's academic pricing and student discount, and
    Evidation-collected ALiR data through USC's Understanding America Study Data Use Agreement.
    Avicenna's free trial is test-only (data wiped monthly).
 6. **Compliance:** no Module 2 platform has an independently confirmed certification. Avicenna
    Research (ISO 27001:2022), MetricWire (ISO 27001, SOC 2 Type II, 21 CFR Part 11, HIPAA, GDPR) and
-   m-Path (GDPR, HIPAA) make vendor statements, all Corroborated at most. The Hyve states ISO 27001
-   for itself, with a scope that does not name RADAR-base (Corroborated, added 2026-10-11); LifeData has a verifiable
-   Data Privacy Framework self-certification; CARP documents GDPR controller roles; Beiwe documents
-   its encryption design. (Corrected 2026-10-10: the module previously called Avicenna's statement an
+   m-Path (GDPR, HIPAA; it publishes a DPA but no BAA) make vendor statements, all Corroborated at
+   most; mindLAMP's documentation describes HIPAA Security Rule safeguards (Corroborated). The Hyve
+   states ISO 27001 for itself, with a scope that does not name RADAR-base (Corroborated, added
+   2026-10-11); LifeData's Data Privacy Framework certification is confirmed on the Commerce registry
+   (self-assessed, re-certification under review); CARP documents GDPR controller roles; Beiwe
+   documents its encryption design. (Corrected 2026-10-10: the module previously called Avicenna's statement an
    independently audited certificate and said MetricWire had no compliance documentation.)
-7. **mindLAMP's licensing matters for self-hosters**: the server and apps carry no licence, so
-   modifying them needs BIDMC permission; the supported route is the mindLAMP Core.
+7. **mindLAMP's licensing matters for self-hosters**: the server, apps, activities and worker carry
+   no licence file, while the vendor's privacy page claims "no licensing restrictions" and a public
+   request for written terms (issue 943) is unanswered; the supported route is the mindLAMP Core.
 8. **CARP Mobile Sensing is architecturally distinct**: a Flutter library a team builds its own app
    on, now with a DTU-hosted service and an actively developed web portal.
 9. **Purple Robot and StudentLife are historically important but not live platforms**: Purple Robot
@@ -145,11 +156,15 @@ Updated 2026-10-10 to agree with the corrected profiles and the rebuilt matrix.
 ## Known gaps for a future pass
 
 - Sensor-level detail (exact passive-stream catalogs, sampling configurability, iOS/Android parity)
-  remains Unclear for mindLAMP, Avicenna Research, MetricWire, m-Path and CARP.
+  is now documented in part (batch-2 fact records, 2026-10-11): m-Path's and CARP's stream tables and
+  OS splits; mindLAMP's sensor list and sampling, with an OS split only for telephony and SensorKit;
+  Avicenna's stream catalogue, with iOS parity still Unclear; MetricWire's API stream types, with
+  per-OS parity and sampling still Unclear.
 - No compliance certificate or audit report has been read for any platform; the vendor statements
   in Table 7 need checking against a certificate (Avicenna's UKAS CertCheck entry sits behind a
   CAPTCHA) or direct vendor confirmation before a regulated study relies on them.
-- Hosted-service prices are unpublished for The Hyve, the mindLAMP Core and CARP's DTU service, and
-  the CARP hosted service's eligibility for non-DTU researchers is contradictory on its own pages.
+- Hosted-service prices are unpublished for The Hyve, the mindLAMP Core and AWARE's University of
+  Melbourne service. CARP's DTU service publishes 2024 rates and is open only to research-partner
+  projects (Q131).
 - No systematic published-use/citation-count survey was attempted for any platform (contrast
   CLAUDE.md's "Evidence of use" ask).

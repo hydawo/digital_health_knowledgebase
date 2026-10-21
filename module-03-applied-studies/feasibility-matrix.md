@@ -100,7 +100,7 @@ m-Path / CARP gap, and an **Onnela-tranche pass**. Same scope rules, same full-t
 | Study | Platform / device | Deployment model | N | Duration | Retention / completion |
 |---|---|---|---|---|---|
 | [McClaine 2024](profiles/aware-chemotherapy-engagement.md) | **AWARE** + Fitbit | BYOD phone, provisioned Fitbit | 320 approached → 167 enrolled (52.2%) → **162** | 90 d | 90.1% completed; 9.9% withdrew |
-| [Camargo 2025 (SmartSense-D)](profiles/aware-light-smartsense-d-youth-depression.md) | **AWARE-Light** + actigraphy | BYOD, **Android only** | 48 consented → **40 (83%)** | 8 wk | 7 of 8 non-completers withdrew over **app technical issues** |
+| [Camargo 2025 (SmartSense-D)](profiles/aware-light-smartsense-d-youth-depression.md) | **AWARE-Light** (now the main Android AWARE, renamed January 2025) + actigraphy | BYOD, **Android only** | 48 consented → **40 (83%)** | 8 wk | 7 of 8 non-completers withdrew over **app technical issues** |
 | [Nguyen 2025 (mSavorUs)](profiles/aware-msavorus-loneliness-multidevice.md) | **AWARE** + **Oura** + **Samsung Watch** | Multi-device, provisioned wearables | 37 → **29** | **22 wk** | 8 withdrew; EMA adherence reported *by phase*, declining |
 | [Achterberg 2026](profiles/avicenna-adolescent-esm-school-phone-bans.md) | **Avicenna** | BYOD | 211 signed up (70% of approached) → **195** | 17 d, 6/day | **Compliance 78%** (95% CI 74.7–80.6) under a national school phone ban |
 | [Kivelä 2024](profiles/avicenna-ema-suicidal-ideation-iatrogenic.md) | **Ethica/Avicenna** | BYOD | 209 signed up → 90 intake → **82 enrolled, 81 completed** | 21 d, 4/day, ≤40 items | **Acceptability reported as both 39% and 98%** — see below |
