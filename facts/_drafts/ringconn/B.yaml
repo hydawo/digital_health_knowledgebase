@@ -1,0 +1,504 @@
+# Draft record for ringconn, researcher B. Researched 2026-10-11, all pages re-read and quotes re-probed 2026-10-21.
+name: RingConn
+kind: wearable
+profile: module-01-wearables/profiles/emerging-platforms.md
+watch:
+- url: https://ringconn.com/blogs/news/feedback-and-business-collaboration-with-ringconn
+  role: research_program
+- url: https://ringconn.com/products/ringconn-gen-3
+  role: pricing
+- url: https://ringconn.com/products/ringconn-gen-2
+  role: pricing
+- url: https://ringconn.com/products/ringconn-gen-2-air
+  role: pricing
+- url: https://ringconn.com/pages/student-discount-program
+  role: pricing
+- url: https://ringconn.com/pages/ringconn-app-privacy-policy
+  role: terms
+- url: https://ringconn.com/pages/your-privacy-at-ringconn-app
+  role: trust
+- url: https://ringconn.com/blogs/news/smart-ring-health-data-security
+  role: trust
+- url: https://ringconn.com/blogs/news/ringconn-will-migrate-from-google-fit-to-health-connect
+  role: changelog
+- url: https://ringconn.com/blogs/guides/wearable-data-sync
+  role: docs
+- url: https://ringconn.com/pages/security-disclosure
+  role: trust
+- url: https://apps.apple.com/us/app/ringconn/id6444470583
+  role: app_store
+- url: https://api.fda.gov/device/510k.json?search=applicant:ninenovo
+  role: regulatory
+- url: https://ouraring.com/blog/oura-itc-case/
+  role: other
+facts:
+# ---------------- Research access ----------------
+- field: research_program
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://ringconn.com/blogs/news/feedback-and-business-collaboration-with-ringconn
+    type: vendor_page
+    quote: "Institutional or other business proposals can be sent to business@ringconn.com."
+    retrieved: '2026-10-21'
+  - url: https://ringconn.com/pages/about-us
+    type: vendor_page
+    retrieved: '2026-10-21'
+  - url: https://ringconn.com/pages/ringconn-app-privacy-policy
+    type: vendor_legal
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: No research or academic program is published. The only institutional route is the business@ringconn.com
+    contact. On 2026-10-11 this article had an "Educational and Government Partnerships" section inviting schools,
+    government agencies and institutions to integrate the ring for health monitoring and data analytics; the
+    2026-10-17 rewrite removed it. RingConn's own research is in-house collaborations (Shanghai Jiao Tong University,
+    Shenzhen University, Ruijin Hospital) presented at IEEE AICAS and ISCAS 2024, not an access program.
+- field: program_eligibility
+  status: not_applicable
+  recheck_by: '2026-11-20'
+  note: No research program exists to be eligible for (see research_program).
+- field: program_application
+  status: stated
+  value: No application process. Institutional or business proposals go by email to business@ringconn.com, and the
+    page says no pricing, approval timeline or partnership eligibility is promised.
+  confidence: Verified
+  sources:
+  - url: https://ringconn.com/blogs/news/feedback-and-business-collaboration-with-ringconn
+    type: vendor_page
+    quote: "No pricing, exclusivity, approval timeline or partnership eligibility is promised by this guide."
+    retrieved: '2026-10-21'
+  - url: https://ringconn.com/blogs/news/feedback-and-business-collaboration-with-ringconn
+    type: vendor_page
+    quote: "Does contacting RingConn guarantee a partnership? No."
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+- field: program_status
+  status: not_applicable
+  recheck_by: '2026-11-20'
+  note: No program. The educational and government partnerships wording was removed from the business article in its
+    2026-10-17 rewrite, which may signal reduced institutional interest; unconfirmed.
+- field: developer_program_status
+  status: stated
+  value: No public developer program, API or SDK. A third-party review reports the API is not open to end users and
+    data must be exported from the app; RingConn's own site has no developer pages.
+  confidence: Reported
+  sources:
+  - url: https://www.nextpit.de/tests/ringconn-gen-2-test
+    type: secondary
+    quote: "Die Kehrseite der Medaille ist, dass die API nicht für Endnutzer:innen zugänglich ist."
+    retrieved: '2026-10-21'
+  - url: https://ringconn.com/sitemap.xml
+    type: vendor_page
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: The ringconn.com page sitemap (about 90 pages) lists no developer, API or partner documentation. Search for a
+    RingConn API mostly returns RingCentral, an unrelated company.
+- field: user_cap
+  status: not_applicable
+  recheck_by: '2026-11-20'
+  note: No program or API with tiers.
+- field: academic_vs_commercial
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://ringconn.com/blogs/news/feedback-and-business-collaboration-with-ringconn
+    type: vendor_page
+    retrieved: '2026-10-21'
+  - url: https://ringconn.com/pages/student-discount-program
+    type: vendor_page
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: No academic route is described. The only education-related offer is a consumer student discount (see
+    academic_pricing).
+# ---------------- Pricing ----------------
+- field: device_price
+  status: stated
+  value: $349
+  scope: RingConn Gen 3 (US store)
+  confidence: Verified
+  sources:
+  - url: https://ringconn.com/products/ringconn-gen-3
+    type: vendor_page
+    quote: "RingConn Gen 3 Sale price $349.00 USD"
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: Listed as out of stock in some configurations on 2026-10-21.
+- field: device_price
+  status: stated
+  value: $299
+  scope: RingConn Gen 2 (US store)
+  confidence: Verified
+  sources:
+  - url: https://ringconn.com/products/ringconn-gen-2
+    type: vendor_page
+    quote: "RingConn Gen 2 Sale price $299.00 USD"
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+- field: device_price
+  status: stated
+  value: $199
+  scope: RingConn Gen 2 Air (US store)
+  confidence: Verified
+  sources:
+  - url: https://ringconn.com/products/ringconn-gen-2-air
+    type: vendor_page
+    quote: "RingConn Gen 2 Air Sale price $199.00 USD"
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+- field: subscription_price
+  status: stated
+  value: None. No subscription is required for any current ring.
+  confidence: Verified
+  sources:
+  - url: https://ringconn.com/products/ringconn-gen-3
+    type: vendor_page
+    quote: "No Subscription Required"
+    retrieved: '2026-10-21'
+  - url: https://ringconn.com/products/ringconn-gen-2
+    type: vendor_page
+    quote: "Multi-Metric Health Tracking, No Subscription Required"
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+- field: academic_pricing
+  status: stated
+  value: No research or academic pricing. A consumer student discount of 10% on Gen 2 via ID.me verification, and
+    customised offers or discounts for bulk purchases on request.
+  confidence: Verified
+  sources:
+  - url: https://ringconn.com/pages/student-discount-program
+    type: vendor_page
+    quote: "Enjoy 10% Off Your Gen 2 Order Verify your eligibility through ID.me"
+    retrieved: '2026-10-21'
+  - url: https://ringconn.com/products/ringconn-gen-2
+    type: vendor_page
+    quote: "For bulk purchase requests, we offer customized offers or discounts."
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+- field: api_platform_fees
+  status: not_applicable
+  recheck_by: '2026-11-20'
+  note: No API, SDK or data platform is offered (see developer_program_status).
+- field: minimum_commitment
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://ringconn.com/products/ringconn-gen-2
+    type: vendor_page
+    retrieved: '2026-10-21'
+  - url: https://ringconn.com/blogs/news/feedback-and-business-collaboration-with-ringconn
+    type: vendor_page
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: Single rings are sold retail with no commitment. Bulk thresholds or minimum orders are not published.
+- field: quote_required
+  status: stated
+  value: Single-unit list prices are public; bulk and dealer pricing requires contacting sales@ringconn.com.
+  confidence: Verified
+  sources:
+  - url: https://ringconn.com/blogs/news/feedback-and-business-collaboration-with-ringconn
+    type: vendor_page
+    quote: "Dealer and bulk-purchase enquiries can be sent to sales@ringconn.com."
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+# ---------------- Data access and terms ----------------
+- field: raw_streams
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://ringconn.com/pages/ringconn-app-privacy-policy
+    type: vendor_legal
+    retrieved: '2026-10-21'
+  - url: https://ringconn.com/blogs/guides/wearable-data-sync
+    type: vendor_page
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: No route to raw PPG, accelerometer or temperature signals is published. The app policy says raw PPG,
+    accelerometer and skin temperature are collected for the Blood Pressure Trends beta but used only for RingConn's
+    own algorithm work, and BP results are excluded from third-party health platform sync.
+- field: derived_metrics
+  status: stated
+  value: 'Via Health Connect (Android): resting energy, steps, exercise calories, time in bed, awake duration, sleep
+    stages, resting and average heart rate, height, weight, SpO2. HRV is not exported to Health Connect. Apple Health
+    sync covers "certain health metrics"; the list is not published.'
+  confidence: Verified
+  sources:
+  - url: https://ringconn.com/blogs/news/ringconn-will-migrate-from-google-fit-to-health-connect
+    type: vendor_docs
+    quote: "Activity Data Resting energy, steps, calories burned during exercise Sleep Time in bed, awake duration, sleep stages Heart Rate Resting heart rate, average heart rate"
+    retrieved: '2026-10-21'
+  - url: https://ringconn.com/blogs/news/ringconn-will-migrate-from-google-fit-to-health-connect
+    type: vendor_docs
+    quote: "Blood Oxygen Oxygen saturation"
+    retrieved: '2026-10-21'
+  - url: https://ringconn.com/blogs/guides/wearable-data-sync
+    type: vendor_docs
+    quote: "the current RingConn Health Connect integration does not export HRV."
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+- field: sampling_rates
+  status: unclear
+  confidence: Unclear
+  sources:
+  - url: https://ringconn.com/products/ringconn-gen-2
+    type: vendor_page
+    quote: "Skin Temperature Skin Temperature 24/7 Monitoring"
+    retrieved: '2026-10-21'
+  - url: https://ringconn.com/pages/app-features
+    type: vendor_page
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: Product pages say only "24/7 Monitoring" or "Periodically" per metric. On 2026-10-11 the App Features page said
+    HR, HRV and SpO2 are tracked "every 2.5 min/each time"; on 2026-10-21 that text no longer appears in the page's
+    static rendering, so it is not quoted. No per-stream sampling rates are documented.
+- field: history_depth
+  status: unclear
+  confidence: Unclear
+  sources:
+  - url: https://ringconn.com/products/ringconn-gen-2
+    type: vendor_page
+    quote: "Offline Storage 5–7 days"
+    retrieved: '2026-10-21'
+  - url: https://ringconn.com/blogs/guides/new-phone-data
+    type: vendor_page
+    quote: "RingConn account history Associated with your RingConn account"
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: The ring buffers 5 to 7 days unsynced; synced history lives in the RingConn account. No limit on how far back
+    an export or Health Connect/Apple Health write reaches is documented.
+- field: export_routes
+  status: stated
+  value: Participant-side only. Sync to Apple Health (iOS) and Health Connect (Android; Google Fit ended 2025-10-01);
+    data portability request through account settings or data_protect@ringconn.com; an in-app CSV export was
+    reported in 2023 by a third party. No Strava sync, no web dashboard, no API.
+  confidence: Corroborated
+  sources:
+  - url: https://ringconn.com/pages/ringconn-app-privacy-policy
+    type: vendor_legal
+    quote: "You may choose to sync your RingConn data with third-party health platforms (e.g., Apple Health), in which case, we may receive or share certain health metrics according to your permissions and settings in those platforms."
+    retrieved: '2026-10-21'
+  - url: https://ringconn.com/pages/ringconn-app-privacy-policy
+    type: vendor_legal
+    quote: "You are entitled to obtain a copy of your personal data in structured, commonly used and machine-readable formats to the extent permitted by laws and regulations."
+    retrieved: '2026-10-21'
+  - url: https://ringconn.com/blogs/news/smart-ring-health-data-security
+    type: vendor_page
+    quote: "Use account settings or contact the privacy team to request the available data and process."
+    retrieved: '2026-10-21'
+  - url: https://gadgetsandwearables.com/2023/12/15/ringconn-wellness-balance-temperature/
+    type: secondary
+    quote: "the new data export functionality allows users to download their health data in CSV format"
+    retrieved: '2026-10-21'
+  - url: https://www.nextpit.de/tests/ringconn-gen-2-test
+    type: secondary
+    quote: "Außerdem gibt es kein Browser-Dashboard, ihr müsst eure Daten also direkt aus der App exportieren."
+    retrieved: '2026-10-21'
+  - url: https://ringconn.com/products/ringconn-gen-3
+    type: vendor_page
+    quote: "RingConn data does not currently sync directly to the Strava app."
+    retrieved: '2026-10-21'
+  - url: https://sahha.ai/integrations
+    type: secondary
+    quote: "Ride with GPS RingConn Runkeeper"
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: The 2026-10-17 rewrite of the data-security article dropped its earlier claim that account settings let users
+    download all data in standard formats. Sahha lists RingConn among sources read on-device through Apple Health or
+    Health Connect, without its cloud-API marker; Terra, Thryve, Spike, ROOK and Open Wearables pages did not mention
+    RingConn on 2026-10-11. So for studies, data reaches a researcher only via the participant's phone health store
+    or a manual export.
+- field: rate_limits
+  status: not_applicable
+  recheck_by: '2026-11-20'
+  note: No API.
+- field: retention_terms
+  status: stated
+  value: Kept as long as necessary for the stated purposes and as required by law; backups that cannot be deleted
+    at once are isolated until deletion; anonymised data may be used indefinitely. Blood Pressure Trends beta raw
+    signals cannot be physically deleted per user during the beta and are anonymised within 90 days after it ends.
+  confidence: Verified
+  sources:
+  - url: https://ringconn.com/pages/ringconn-app-privacy-policy
+    type: vendor_legal
+    quote: "We will only store your personal information for as long as necessary for the purposes described in this Policy and for as long as required by law, regulation and supervision"
+    retrieved: '2026-10-21'
+  - url: https://ringconn.com/pages/ringconn-app-privacy-policy
+    type: vendor_legal
+    quote: "If we anonymize your personal information (so that it can no longer be associated with you), we may use this information indefinitely without further notice to you."
+    retrieved: '2026-10-21'
+  - url: https://ringconn.com/pages/ringconn-app-privacy-policy
+    type: vendor_legal
+    quote: "Due to technical architecture limitations, physical deletion for individual users is not possible during the Beta period."
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: App Privacy Policy last updated April 8, 2026.
+- field: ai_training_terms
+  status: stated
+  value: Data from the Blood Pressure Trends beta (questionnaires, tags, entered BP values, ring PPG data) is used for
+    algorithm optimisation and only for RingConn's own models, never given to third parties for their training.
+    General data may be used in pseudonymised or aggregated form to improve products; no wider AI-training clause.
+  confidence: Verified
+  sources:
+  - url: https://ringconn.com/pages/ringconn-app-privacy-policy
+    type: vendor_legal
+    quote: "will be used for algorithm optimization, feature iteration, and product improvement."
+    retrieved: '2026-10-21'
+  - url: https://ringconn.com/pages/ringconn-app-privacy-policy
+    type: vendor_legal
+    quote: "It will not be used to develop other products related to your health, nor will it be provided to any third party for their algorithm training or product development."
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+- field: deprecations
+  status: stated
+  value: Google Fit sync ended 2025-10-01 23:00 UTC; Android sync moved to Health Connect. Separately, after a 2025 US
+    ITC ruling for Oura, Oura granted RingConn a multi-year patent licence (royalty-bearing) so US sales and the app
+    continue.
+  confidence: Verified
+  sources:
+  - url: https://ringconn.com/blogs/news/ringconn-will-migrate-from-google-fit-to-health-connect
+    type: vendor_docs
+    quote: "RingConn will officially cease synchronizing your health data with Google Fit as of October 1, 2025, 23:00 (UTC+0)"
+    retrieved: '2026-10-21'
+  - url: https://ouraring.com/blog/oura-itc-case/
+    type: secondary
+    quote: "granted RingConn a multi-year license to continue offering RingConn smart rings and their companion app, with RingConn making royalty payments to"
+    retrieved: '2026-10-21'
+  - url: https://ringconn.com/blogs/news/ringconn-official-update-itc-ruling-and-our-commitment-to-you
+    type: vendor_page
+    quote: "Devices, app access and updates, warranty, and support for all RingConn products purchased in the U.S. will continue uninterrupted"
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+# ---------------- Compliance ----------------
+- field: baa
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://ringconn.com/pages/ringconn-app-privacy-policy
+    type: vendor_legal
+    retrieved: '2026-10-21'
+  - url: https://ringconn.com/pages/your-privacy-at-ringconn-app
+    type: vendor_page
+    retrieved: '2026-10-21'
+  - url: https://ringconn.com/blogs/news/feedback-and-business-collaboration-with-ringconn
+    type: vendor_page
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
+- field: dpa
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://ringconn.com/pages/ringconn-app-privacy-policy
+    type: vendor_legal
+    retrieved: '2026-10-21'
+  - url: https://ringconn.com/pages/your-privacy-at-ringconn-app
+    type: vendor_page
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
+  note: No customer-facing DPA. The app policy says RingConn's own third-party providers sign data processing
+    agreements with it, which is not an agreement offered to studies.
+- field: hipaa_statement
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://ringconn.com/pages/ringconn-app-privacy-policy
+    type: vendor_legal
+    retrieved: '2026-10-21'
+  - url: https://ringconn.com/pages/privacy-policy
+    type: vendor_legal
+    retrieved: '2026-10-21'
+  - url: https://ringconn.com/pages/your-privacy-at-ringconn-app
+    type: vendor_page
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
+  note: Neither privacy policy mentions HIPAA. Rings are sold as HSA/FSA eligible, which is unrelated.
+- field: gdpr_statement
+  status: stated
+  value: RingConn states it complies with GDPR and CCPA, processes health data only with explicit consent, and uses EU
+    Standard Contractual Clauses for cross-border transfers.
+  confidence: Corroborated
+  sources:
+  - url: https://ringconn.com/pages/your-privacy-at-ringconn-app
+    type: vendor_page
+    quote: "We comply with the EU General Data Protection Regulation (GDPR)"
+    retrieved: '2026-10-21'
+  - url: https://ringconn.com/pages/your-privacy-at-ringconn-app
+    type: vendor_page
+    quote: "Health and other special-category data are processed only with your explicit consent"
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
+- field: iso27001
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://ringconn.com/pages/your-privacy-at-ringconn-app
+    type: vendor_page
+    retrieved: '2026-10-21'
+  - url: https://ringconn.com/pages/security-disclosure
+    type: vendor_page
+    retrieved: '2026-10-21'
+  - url: https://ringconn.com/pages/euro-compliance
+    type: vendor_page
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
+  note: No ISO 27001 claim. RingConn claims an unnamed "EU cybersecurity certification under the European
+    framework", with no certificate, scheme or body named. Its own rewritten data-security article (2026-10-17) warns
+    against describing "a particular certification unless the applicable official documentation establishes that
+    claim". The euro-compliance page holds EU/UK Declarations of Conformity for Gen 2, Gen 2 Air and Gen 3, which are
+    product-safety self-declarations, not security certifications.
+- field: soc2
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://ringconn.com/pages/your-privacy-at-ringconn-app
+    type: vendor_page
+    retrieved: '2026-10-21'
+  - url: https://ringconn.com/pages/security-disclosure
+    type: vendor_page
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
+- field: fda_clearances
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://api.fda.gov/device/510k.json?search=applicant:ninenovo
+    type: regulator_db
+    retrieved: '2026-10-21'
+  - url: https://api.fda.gov/device/510k.json?search=applicant:ringconn
+    type: regulator_db
+    retrieved: '2026-10-21'
+  - url: https://api.fda.gov/device/510k.json?search=device_name:ringconn
+    type: regulator_db
+    retrieved: '2026-10-21'
+  - url: https://api.fda.gov/device/registrationlisting.json?search=registration.name:ninenovo
+    type: regulator_db
+    retrieved: '2026-10-21'
+  - url: https://ringconn.com/products/ringconn-gen-3
+    type: vendor_page
+    quote: "This product is not a medical device. RingConn and related applications are not intended to diagnose, treat,cure, or prevent any disease or medical condition."
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
+  note: No 510(k) or establishment registration found for RingConn or its maker Shenzhen Ninenovo Technology (openFDA
+    "No matches found"). 2024 press said RingConn had filed for pulse oximeter and sleep apnea clearances; none is in
+    the database. Every product page states the ring is not a medical device.
+- field: data_residency
+  status: stated
+  value: Data from mainland China users is stored in mainland China; data collected outside China is stored outside
+    China, possibly in another jurisdiction, on RingConn Cloud infrastructure, with SCCs for transfers. No residency
+    choice. The earlier "UK servers" claim was withdrawn on 2026-10-17.
+  confidence: Verified
+  sources:
+  - url: https://ringconn.com/pages/ringconn-app-privacy-policy
+    type: vendor_legal
+    quote: "the personal Information that we collect and generate outside the People's Republic of China will be stored on servers outside of the People's Republic of China, including in jurisdictions other than the one in which the data was collected"
+    retrieved: '2026-10-21'
+  - url: https://ringconn.com/pages/your-privacy-at-ringconn-app
+    type: vendor_page
+    quote: "your personal data is processed and stored on RingConn Cloud infrastructure deployed for global operations."
+    retrieved: '2026-10-21'
+  - url: https://ringconn.com/blogs/news/smart-ring-health-data-security
+    type: vendor_page
+    quote: "Is all RingConn data stored in the U.K.? The current app policy does not make that universal promise."
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
+  note: Until 2026-10-17 the data-security article said data was on cloud servers in the United Kingdom and named AWS
+    as a provider; the rewrite removed both. Crash monitoring (self-hosted Sentry) and customer-service system data are
+    processed in mainland China.
