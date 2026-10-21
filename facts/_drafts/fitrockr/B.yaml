@@ -1,0 +1,593 @@
+# Draft record for fitrockr (researcher B). Schema: facts/_schema.yaml
+# On 2026-10-11 www.fitrockr.com answered every automated request with a MalCare firewall block, so the
+# first pass used Wayback captures. On 2026-10-21 the live site answered normally, and the site had been
+# restructured (help center moved from /research/help-center/ to /help-center/, pricing moved to /pricing/,
+# new terms of use and privacy policy dated 2026-09-19). Every quote below was re-read and confirmed on
+# the live page on 2026-10-21, so no fetch_url to the archive is needed. If the firewall returns, the
+# weekly check will list these pages under "check by hand".
+name: Fitrockr
+kind: intermediary
+profile: module-01-wearables/profiles/data-intermediaries.md
+watch:
+- url: https://www.fitrockr.com/pricing/
+  role: pricing
+- url: https://www.fitrockr.com/research/research-grants/
+  role: research_program
+- url: https://www.garmin.com/en-PH/newsroom/press-release/news-2026-mar-fitrockr/
+  role: research_program
+- url: https://www.fitrockr.com/help-center/fitrockr-api/
+  role: developer_program
+- url: https://www.fitrockr.com/help-center/data-dictionary/
+  role: docs
+- url: https://www.fitrockr.com/help-center/data-export/
+  role: docs
+- url: https://www.fitrockr.com/features/
+  role: trust
+- url: https://www.fitrockr.com/health-solutions/terms-of-use/
+  role: terms
+- url: https://www.fitrockr.com/health-solutions/privacy-policy/
+  role: terms
+- url: https://www.fitrockr.com/help-center/privacy-security/
+  role: trust
+- url: https://www.fitrockr.com/country-of-choice-cloud-hosting/
+  role: trust
+- url: https://www.fitrockr.com/help-center/important-update-upcoming-transition-to-new-garmin-sync-technology/
+  role: changelog
+- url: https://www.fitrockr.com/help-center/smartphone-sync-single-sync-with-garmin-connect-app/
+  role: docs
+- url: https://api.fda.gov/device/510k.json?search=applicant:%22digital+rebels%22
+  role: regulatory
+facts:
+# ---------------- Research access ----------------
+- field: research_program
+  status: stated
+  value: 'Garmin Health x Fitrockr research grants, run in regional or themed rounds (EMEA 2023, Americas 2023, India
+    2024, Biomarkers 2024, Australia and New Zealand 2025, Asia 2026). Awards are 5 Garmin wearables, unrestricted
+    Fitrockr platform access for up to 50 participants (3 months in earlier rounds, 6 months in Asia 2026) and a
+    chance to be featured in Garmin Health communications. There is no standing academic program; research teams
+    otherwise buy the normal research subscription.'
+  confidence: Verified
+  sources:
+  - url: https://www.fitrockr.com/research/research-grants/
+    type: vendor_page
+    quote: Fitrockr and Garmin support innovate research through grant programs that provide the tools to conduct
+      health data research studies based on wearable data.
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/research/research-grants/
+    type: vendor_page
+    quote: 6 months unrestricted access to the Fitrockr Health Solutions Platform for up to 50 participants
+    retrieved: '2026-10-21'
+  - url: https://www.garmin.com/en-PH/newsroom/press-release/news-2026-mar-fitrockr/
+    type: secondary
+    quote: Garmin Health officially launched its first research grant specific to Asia on February 2, in collaboration
+      with Fitrockr.
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+- field: program_eligibility
+  status: stated
+  value: Set per round, usually by region. Asia 2026 was open to academic researchers, post-docs and graduate students
+    in Asia doing health or sports science studies with Garmin wearables; Americas 2023 to researchers in any North or
+    South American country.
+  confidence: Corroborated
+  sources:
+  - url: https://www.garmin.com/en-PH/newsroom/press-release/news-2026-mar-fitrockr/
+    type: secondary
+    quote: 'Eligibility: Academic researchers, post-docs, and graduate students in Asia (including Taiwan, Japan, Korea,
+      and Southeast Asia) conducting health or sports science studies using Garmin wearables.'
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/research/research-grants/
+    type: vendor_page
+    quote: For our grant, we invite researchers from any country in North or South America.
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+- field: program_application
+  status: stated
+  value: Applicants apply through a per-round grant page before a fixed deadline. Selection criteria and the review
+    process are not published.
+  confidence: Verified
+  sources:
+  - url: https://www.fitrockr.com/research/research-grants/
+    type: vendor_page
+    quote: Apply here for a grant which will provide support for research projects with up to 50 participants.
+    retrieved: '2026-10-21'
+  - url: https://www.garmin.com/en-PH/newsroom/press-release/news-2026-mar-fitrockr/
+    type: secondary
+    quote: 'How to Apply: Visit the Garmin Health x Fitrockr Research Grant Asia 2026 official page for details and
+      submission.'
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+- field: program_status
+  status: stated
+  value: No round open. The most recent round (Asia 2026) closed on 31 March 2026 and its winners are listed; the next
+    round is "to be announced".
+  confidence: Verified
+  sources:
+  - url: https://www.fitrockr.com/research/research-grants/
+    type: vendor_page
+    quote: New grants will be announced soon.
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/research/research-grants/
+    type: vendor_page
+    quote: Applications closed on March 31, 2026.
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+- field: developer_program_status
+  status: stated
+  value: 'Open to paying customers: the REST API (all synced data) and a separate live-streaming API are granted on
+    request to support, and API access is a priced add-on (+20% on licence). API documentation is not public. A
+    separate "Wearable API" product is also sold (from EUR 150 per month for up to 20 users).'
+  confidence: Verified
+  sources:
+  - url: https://www.fitrockr.com/help-center/fitrockr-api/
+    type: vendor_docs
+    quote: Request API access information at support@fitrockr.com
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/pricing/
+    type: vendor_page
+    quote: API Access Automatically import data via API. +20% on license
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+- field: user_cap
+  status: stated
+  value: Participants are unlimited on the research plans; billing is by connected devices, with 5 device licences
+    included and more bought per device. The free trial is capped at 5 device connections for 2 weeks. Grants cover
+    up to 50 participants.
+  confidence: Verified
+  sources:
+  - url: https://www.fitrockr.com/pricing/
+    type: vendor_page
+    quote: 'Users: Unlimited Licenses Included: 5 Device Licenses'
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/pricing/
+    type: vendor_page
+    quote: Up to 5 Device Connections 2 Weeks
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: The help center's licence article says subscriptions are either user-based or device-based, so older
+    contracts may still cap users.
+- field: academic_vs_commercial
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.fitrockr.com/pricing/
+    type: vendor_page
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/help-center/pricing-plans-payment/
+    type: vendor_docs
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/health-solutions/terms-of-use/
+    type: vendor_legal
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: One "Research & Clinical Trials" price list and one set of business terms cover universities, hospitals and
+    companies alike; no academic tier is published. The grants are the only academic-specific route.
+# ---------------- Pricing ----------------
+- field: device_price
+  status: not_applicable
+  note: Fitrockr sells software only; teams buy the wearables (Garmin and others) themselves. Its devices page says
+    "Confirm device compatibility and available data types with us prior purchasing devices."
+    (https://www.fitrockr.com/research/compatible-devices/, read 2026-10-21).
+- field: subscription_price
+  status: not_applicable
+  note: No consumer membership. The organisation subscription is recorded under api_platform_fees.
+- field: academic_pricing
+  status: stated
+  value: No published academic price or discount. Teams with limited research funds are asked to contact Fitrockr for
+    a custom quote.
+  confidence: Verified
+  sources:
+  - url: https://www.fitrockr.com/help-center/pricing-plans-payment/
+    type: vendor_docs
+    quote: Please contact us in case of large user numbers, limited research funds or if you need a custom quote.
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+- field: api_platform_fees
+  status: stated
+  value: 'Research & Clinical Trials plans per month: Basic from EUR 50 (USD 55), Pro from EUR 150 (USD 165), each with
+    5 device licences; extra device licences EUR 1 to 7.5 (Basic) or EUR 1 to 15 (Pro) per month. Add-ons as a
+    surcharge on the licence: API access +20%, accelerometer and gyroscope collection +25%, live streaming +20%,
+    surveys +20%, all-day GPS +10%; on-premise hosting EUR 5,000 setup + 20%; Data Vault EUR 250 per month after the
+    project; historic Garmin Connect import EUR 500 setup. Germany cloud hosting, support and admin accounts are
+    included.'
+  confidence: Verified
+  sources:
+  - url: https://www.fitrockr.com/pricing/
+    type: vendor_page
+    quote: BASIC starting at € 50 Month
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/pricing/
+    type: vendor_page
+    quote: PRO starting at € 150 Month
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/pricing/
+    type: vendor_page
+    quote: 'Add. Device License: €1-€15/month'
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/pricing/
+    type: vendor_page
+    quote: API Access Automatically import data via API. +20% on license
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/pricing/
+    type: vendor_page
+    quote: Collection of Accelerometer (25Hz) & Gyroscope (32 Hz) data. +25% on license
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/pricing/
+    type: vendor_page
+    quote: Data retention after the project. Keep accessing your data on Fitrockr. €250 / month
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/pricing/
+    type: vendor_page
+    quote: All subscriptions include secure Germany cloud hosting, support, and admin accounts.
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: 'Changed since the 2026-07-13 Wayback capture of the old /research/pricing/ page: Data Vault rose from EUR 150
+    to EUR 250 per month, accelerometer and gyroscope moved from "volume based" to +25%, live streaming from EUR 500 +
+    20% to +20%, and the plan table that showed per-stream sampling rates and ticked API access for both plans was
+    removed.'
+- field: minimum_commitment
+  status: stated
+  value: 3-month minimum contract, renewing in 3-month terms, on Basic and Pro. The terms say subscriptions do not
+    renew automatically unless the order says so.
+  confidence: Verified
+  sources:
+  - url: https://www.fitrockr.com/pricing/
+    type: vendor_page
+    quote: 3 Months Minimum Contract & Renewals
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/health-solutions/terms-of-use/
+    type: vendor_legal
+    quote: subscriptions do not automatically renew.
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+- field: quote_required
+  status: stated
+  value: Partly. "Starting at" list prices are published, but contracts are quoted (fixed price per project or
+    pay-as-you-go) through a quote request or call.
+  confidence: Verified
+  sources:
+  - url: https://www.fitrockr.com/pricing/
+    type: vendor_page
+    quote: We provide fixed pricing contracts or pay-as-you-go subscriptions. Send us a quote request
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/help-center/pricing-plans-payment/
+    type: vendor_docs
+    quote: Our pricing is based on user numbers and length of access.
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: The help center still describes user-based pricing, while the pricing page bills by device licence with
+    unlimited users.
+# ---------------- Data access and terms ----------------
+- field: raw_streams
+  status: stated
+  value: 'Through the Fitrockr app (direct device sync, not Garmin Connect): raw and enhanced beat-to-beat intervals,
+    accelerometer (25 Hz) and gyroscope (32 Hz) as a paid add-on, actigraphy, zero crossing, skin temperature, plus
+    heart rate, stress, SpO2 and respiration at configurable epochs. Syncing through Garmin Connect gives less data.
+    Garmin is the main source; Apple, Google, Withings, Oura, Polar, Samsung, Omron and Dexcom are also supported.'
+  confidence: Verified
+  sources:
+  - url: https://www.fitrockr.com/help-center/data-dictionary/
+    type: vendor_docs
+    quote: Raw BBI timestamps will likely not maintain millisecond alignment with the BBI values over time
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/pricing/
+    type: vendor_page
+    quote: Collection of Accelerometer (25Hz) & Gyroscope (32 Hz) data. +25% on license
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/help-center/data-export/
+    type: vendor_docs
+    quote: Availability and granularity of health data depends on the wearable model and whether the wearable has been
+      synchronised using the Fitrockr app or Garmin Connect. The latter supports less data.
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+- field: derived_metrics
+  status: stated
+  value: Garmin-derived metrics (stress, Body Battery, sleep stages, intensity minutes, MET) passed through, plus
+    Fitrockr-computed HRV indices (RMSSD, SDNN, pNN50, SD1/SD2, LF/HF) and reports (HRV, sleep, 6-minute walk test,
+    Body Battery, heart rate, stress, vitality, performance).
+  confidence: Verified
+  sources:
+  - url: https://www.fitrockr.com/research/
+    type: vendor_page
+    quote: HRV Report Sleep Report 6-Min Walk Test Body Battery Report Heart Rate Report Stress Report Vitality Report
+      Performance Report
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/help-center/data-dictionary/
+    type: vendor_docs
+    quote: LF/HF ratio, calculated by the Fitrockr platform
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+- field: sampling_rates
+  status: stated
+  value: Accelerometer fixed at 25 Hz and gyroscope at 32 Hz on Garmin (not adjustable, recorded 24/7); BBI every beat;
+    other streams configurable (Fitrockr lists 1 s, 60 s, 90 s and so on).
+  confidence: Verified
+  sources:
+  - url: https://www.fitrockr.com/help-center/data-dictionary/
+    type: vendor_docs
+    quote: Resolution is fixed at 25Hz (i.e. 25 measurements per second).
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/help-center/data-dictionary/
+    type: vendor_docs
+    quote: Resolution is fixed at 32Hz (i.e. 32 measurements per second).
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/features/
+    type: vendor_page
+    quote: Flexibly adjust data samplings rates (32Hz, 25Hz, 1s, 60s, 90s, etc.).
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: The 2026-07-13 capture of the old pricing page gave per-stream ranges (Pro, heart rate 1 s to 60 min, SpO2 and
+    respiration 10 s to 60 min, actigraphy 1 to 30 s; Basic, heart rate 1 min, SpO2 3 min). That table is no longer on
+    the live page.
+- field: history_depth
+  status: stated
+  value: For Garmin Connect-linked users, up to 2 years of history can be backfilled on request (EUR 500 setup). For
+    direct Fitrockr app sync, history is limited to what is still on the watch; when storage is full, default data
+    overwrites the oldest files and logging data (BBI, accelerometer) stops recording.
+  confidence: Verified
+  sources:
+  - url: https://www.fitrockr.com/help-center/smartphone-sync-single-sync-with-garmin-connect-app/
+    type: vendor_docs
+    quote: With up to 2 years of historical health data can be potentially available depending on what the Garmin
+      device can provide.
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/pricing/
+    type: vendor_page
+    quote: Import of up to 2 years of historic data (Garmin Connect only). €500 setup
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/help-center/what-happens-when-a-garmin-device-runs-full/
+    type: vendor_docs
+    quote: Default data will overwrite oldest data files if device runs out of space.
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+- field: export_routes
+  status: stated
+  value: On-demand exports from the web console in XLS, CSV or JSON (accelerometer and gyroscope in CSV or JSON only);
+    REST API for all synced data and a live-streaming API (add-ons); a full database dump in BSON on request for
+    long-term storage.
+  confidence: Verified
+  sources:
+  - url: https://www.fitrockr.com/research/
+    type: vendor_page
+    quote: Exports can be triggered on demand supporting multiple formats (XLS, CSV, JSON) and customizable data ranges.
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/help-center/fitrockr-api/
+    type: vendor_docs
+    quote: Fitrockr REST-API can be used to import all synced data.
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/help-center/long-term-data-storage/
+    type: vendor_docs
+    quote: Fitrockr can provide a full data base dump as BSON file format that can be stored by yourself.
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+- field: rate_limits
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.fitrockr.com/help-center/fitrockr-api/
+    type: vendor_docs
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/api-access/
+    type: vendor_page
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/health-solutions/terms-of-use/
+    type: vendor_legal
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: The terms forbid automated access that "materially exceeds documented API or usage limits", so limits exist,
+    but the API documentation is shared only on request to support@fitrockr.com.
+- field: retention_terms
+  status: stated
+  value: Each research project runs in its own server instance, deleted with all data at the end of the study. Under
+    the 2026-09-19 terms, Fitrockr deletes or returns customer data after a post-termination retrieval period (backups
+    until overwritten, legal holds and anonymised data excepted); the customer must run its own exports. Post-project
+    read-only storage is the paid Data Vault add-on, or a free BSON dump.
+  confidence: Verified
+  sources:
+  - url: https://www.fitrockr.com/health-solutions/terms-of-use/
+    type: vendor_legal
+    quote: Unless otherwise required by law or agreed in writing, Fitrockr will delete or return Customer Data following
+      the applicable post-termination retrieval period.
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/help-center/privacy-security/
+    type: vendor_docs
+    quote: Each research project receives its own server instance which will be completely deleted including all data
+      at the end of the study.
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/data-vault/
+    type: vendor_page
+    quote: Secure, hosted storage of your collected data with read-only access after your main project phase.
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/health-solutions/privacy-policy/
+    type: vendor_legal
+    quote: When personal data is no longer required, it is deleted, anonymized or otherwise securely disposed of in
+      accordance with applicable requirements.
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: The previous terms (effective 2025-11-09) said "Provider irreversibly deletes all data at the end of Service".
+- field: ai_training_terms
+  status: stated
+  value: Fitrockr will not use identifiable customer or participant health data to train general-purpose AI models
+    unrelated to the customer's project, unless agreed in writing or otherwise lawfully authorised. It may use
+    aggregated or irreversibly anonymised data for statistics, product development, and research and analytics.
+  confidence: Verified
+  sources:
+  - url: https://www.fitrockr.com/health-solutions/terms-of-use/
+    type: vendor_legal
+    quote: Fitrockr will not use identifiable Customer Data or identifiable participant health data to train
+      general-purpose AI models unrelated to the Customer’s Project.
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/health-solutions/terms-of-use/
+    type: vendor_legal
+    quote: Fitrockr may create aggregated or irreversibly anonymized information derived from use of the Service
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/health-solutions/privacy-policy/
+    type: vendor_legal
+    quote: we do not use identifiable health data belonging to customers or research participants to train
+      general-purpose AI models for unrelated purposes.
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: The carve-outs are narrow in wording only. Training on identifiable data for project-related or "lawfully
+    authorized" purposes, and on anonymised data generally, is not excluded.
+- field: deprecations
+  status: stated
+  value: 'Fitrockr moved to a new Garmin sync technology by 7 September 2025; for projects syncing with the Fitrockr app,
+    Garmin no longer provides sleep data on older models (vivosmart 4, vivofit 4, vivomove 3/Style/Sport, vivoactive
+    4, Venu, Venu Sq, Lily, Instinct, Instinct Solar, Forerunner 245/45/55). Garmin Connect sync is unaffected. The
+    2026-09-19 terms add that third-party integrations are not guaranteed to remain available.'
+  confidence: Verified
+  sources:
+  - url: https://www.fitrockr.com/help-center/important-update-upcoming-transition-to-new-garmin-sync-technology/
+    type: vendor_docs
+    quote: Fitrockr will update to a new and improved Garmin sync technology within the next weeks (by Sep 7, 2025).
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/help-center/important-update-upcoming-transition-to-new-garmin-sync-technology/
+    type: vendor_docs
+    quote: sleep data provision will no longer be supported by Garmin for the following device models
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/health-solutions/terms-of-use/
+    type: vendor_legal
+    quote: Fitrockr will use reasonable efforts to maintain supported integrations but does not guarantee that a
+      third-party integration will remain available indefinitely.
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+# ---------------- Compliance ----------------
+- field: baa
+  status: stated
+  value: Offered where Fitrockr handles protected health information for a HIPAA covered entity; the privacy policy says
+    Fitrockr may then act as a Business Associate under a BAA. The BAA text is not published.
+  confidence: Corroborated
+  sources:
+  - url: https://www.fitrockr.com/health-solutions/privacy-policy/
+    type: vendor_legal
+    quote: Fitrockr may act as a Business Associate and the applicable Business Associate Agreement governs the
+      relevant processing.
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
+  note: New in the 2026-09-19 privacy policy; the earlier policy (last updated 2026-01-28) did not mention a BAA.
+- field: dpa
+  status: stated
+  value: Yes, where required. Fitrockr acts as processor for customer projects, and a Data Processing Agreement under
+    Article 28 GDPR takes precedence over the terms on data protection. The DPA text is not published.
+  confidence: Corroborated
+  sources:
+  - url: https://www.fitrockr.com/health-solutions/terms-of-use/
+    type: vendor_legal
+    quote: Where Fitrockr processes personal data on behalf of the Customer, the parties will enter into a Data
+      Processing Agreement where required.
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
+- field: hipaa_statement
+  status: stated
+  value: Fitrockr markets itself as "HIPAA certified" and says it complies with HIPAA (a 2023 news post says it
+    "received the certification", with no certifying body named; HHS issues no HIPAA certification). The privacy
+    policy adds that HIPAA applies only where Fitrockr handles PHI for a covered entity.
+  confidence: Corroborated
+  sources:
+  - url: https://www.fitrockr.com/features/
+    type: vendor_page
+    quote: We are HIPAA certified
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/help-center/privacy-security/
+    type: vendor_docs
+    quote: We comply to HIPAA
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/fitrockr-received-hipaa-certification/
+    type: vendor_page
+    quote: we have worked on HIPAA compliance and have successfully received the certification.
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/health-solutions/privacy-policy/
+    type: vendor_legal
+    quote: the fact that Fitrockr processes health information does not by itself make every Fitrockr service subject
+      to HIPAA
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
+- field: gdpr_statement
+  status: stated
+  value: Fitrockr (Digital Rebels GmbH, Berlin) says it complies with GDPR, acts as processor for customer projects and
+    uses Chapter V transfer mechanisms for data leaving the EEA.
+  confidence: Corroborated
+  sources:
+  - url: https://www.fitrockr.com/help-center/privacy-security/
+    type: vendor_docs
+    quote: We comply to GDPR
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/health-solutions/privacy-policy/
+    type: vendor_legal
+    quote: Where the GDPR applies and personal data is transferred outside the EEA, we use an appropriate transfer
+      mechanism under Chapter V GDPR.
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
+- field: iso27001
+  status: stated
+  value: Claimed for the cloud hosting centre only, not for Fitrockr itself. The hosting provider and certificate are not
+    named. Fitrockr separately claims Google CASA (Cloud Application Security Assessment) certification.
+  confidence: Corroborated
+  sources:
+  - url: https://www.fitrockr.com/features/
+    type: vendor_page
+    quote: Our Cloud hosting center is ISO/IEC 27001 certified and follows international standards on how to manage
+      information security.
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/features/
+    type: vendor_page
+    quote: We are CASA certified
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
+- field: soc2
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.fitrockr.com/features/
+    type: vendor_page
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/help-center/privacy-security/
+    type: vendor_docs
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/health-solutions/privacy-policy/
+    type: vendor_legal
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
+- field: fda_clearances
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm
+    fetch_url: https://api.fda.gov/device/510k.json?search=applicant:%22digital+rebels%22
+    type: regulator_db
+    retrieved: '2026-10-21'
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm
+    fetch_url: https://api.fda.gov/device/510k.json?search=applicant:fitrockr
+    type: regulator_db
+    retrieved: '2026-10-21'
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm
+    fetch_url: https://api.fda.gov/device/510k.json?search=device_name:fitrockr
+    type: regulator_db
+    retrieved: '2026-10-21'
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfrl/rl.cfm
+    fetch_url: https://api.fda.gov/device/registrationlisting.json?search=registration.name:%22digital+rebels%22
+    type: regulator_db
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
+  note: No 510(k) or establishment registration for Fitrockr or Digital Rebels GmbH. The terms leave medical-device
+    status to each configuration and say it must not be used for a regulated purpose it was not designed for.
+- field: data_residency
+  status: stated
+  value: Default hosting in an ISO-certified data centre in Germany (included); Switzerland also offered; hosting in
+    the customer's country (for example the US) or on-premise self-hosting, including air-gapped military networks,
+    as add-ons. The privacy policy says data may be processed in the EEA, the US or other countries where an
+    authorised service provider operates, depending on the hosting chosen.
+  confidence: Verified
+  sources:
+  - url: https://www.fitrockr.com/country-of-choice-cloud-hosting/
+    type: vendor_page
+    quote: By default, the Fitrockr platform is hosted at an ISO-certified hosting center in Germany
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/country-of-choice-cloud-hosting/
+    type: vendor_page
+    quote: We host for you at a cloud in your country
+    retrieved: '2026-10-21'
+  - url: https://www.fitrockr.com/help-center/privacy-security/
+    type: vendor_docs
+    quote: ISO-certified cloud servers located in Germany or Switzerland.
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
