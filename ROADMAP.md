@@ -24,7 +24,7 @@ every quote. See `facts/README.md` and `shared/agents.md`.
 |---|---|---|
 | 1 | Oura, WHOOP, Apple, Fitbit / Google, Garmin, Samsung, Empatica, Withings, Beiwe, RADAR-base | Done 2026-10-10: 436 facts, 275 Verified. Profile and matrix corrections listed in each `judgement.md`, not yet applied |
 | 2 | Polar, Ametris, Axivity, Activinsights, Movesense, mindLAMP, AWARE, Avicenna, MetricWire, m-Path, CARP, LifeData, Evidation | Done 2026-10-21: all 13 records, profiles, both matrices, atlas and open questions corrected |
-| 3 | Fitabase, Labfront, Fitrockr, Terra, Thryve, Ultrahuman, Sensor Bio, RingConn, Circular, Zepp, Verily, Purple Robot | In progress, run slowly (about 4 agents at a time): records committed for Fitabase, Labfront, Terra, Thryve. Researchers paused mid-run for Fitrockr, Ultrahuman, Sensor Bio, RingConn (resumable); Circular, Zepp, Verily, Purple Robot not started. Profile and matrix pass for batch 3 not started |
+| 3 | Fitabase, Labfront, Fitrockr, Terra, Thryve, Ultrahuman, Sensor Bio, RingConn, Circular, Zepp, Verily, Purple Robot | 8 of 12 records committed by 2026-10-21 (all but Circular, Zepp, Verily, Purple Robot, not started). Profile and matrix pass for batch 3 not started (shared profiles: data-intermediaries, emerging-platforms). Fitrockr facts mostly Reported: its site blocks scripts; confirm in a browser |
 
 After each batch: generate the tables, opt the completed profiles in to the generated facts block,
 and replace the hand-written research-program tables in both comparison matrices with the
@@ -32,7 +32,7 @@ generated ones.
 
 ## Next
 
-0. **Google Health API onboarding.** The weekly check of 2026-10-19 found Google no longer says it is closed to new projects; facts/fitbit-google.yaml is updated, but about 28 lines across the Fitbit profile, Module 1 matrix, README, atlas, explorer and open questions still say it is closed. One correction pass. Also work the rest of the 2026-10-19 report (15 missing quotes, 3 dead links).
+0. ~~**Google Health API onboarding.**~~ Done 2026-10-21 (profiles, matrix, atlas, open questions updated; the 2026-10-19 report worked). The weekly check of 2026-10-19 found Google no longer says it is closed to new projects; facts/fitbit-google.yaml is updated, but about 28 lines across the Fitbit profile, Module 1 matrix, README, atlas, explorer and open questions still say it is closed. One correction pass. Also work the rest of the 2026-10-19 report (15 missing quotes, 3 dead links).
 
 1. **Vendor confirmation sheets (sub-project 3).** One page per company listing what is on record,
    for the vendor to confirm or correct. Hassan reviews and sends each one ("confirmed, send it").
