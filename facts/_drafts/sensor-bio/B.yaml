@@ -1,0 +1,551 @@
+# Draft record for sensor-bio, researcher B. Schema: facts/_schema.yaml
+name: Sensor Bio (formerly Biostrap)
+kind: wearable
+profile: module-01-wearables/profiles/emerging-platforms.md
+watch:
+- url: https://sensorbio.com/product/sensor-bio-v2/
+  role: docs
+- url: https://sensorbio.com/science/
+  role: docs
+- url: https://sensorbio.com/
+  role: research_program
+- url: https://sensorbio.com/get-started/
+  role: pricing
+- url: https://sensorbio.com/terms-and-conditions/
+  role: terms
+- url: https://sensorbio.com/privacy-policy/
+  role: terms
+- url: https://sensorbio.com/biostrap-is-now-sensor-bio/
+  role: changelog
+- url: https://sensorbio.com/press/
+  role: changelog
+- url: https://biostrap.com/research/
+  role: research_program
+- url: https://biostrap.com/rpm/
+  role: research_program
+- url: https://apps.apple.com/us/app/sensor-bio/id6745620963
+  role: app_store
+- url: https://api.fda.gov/device/510k.json?search=applicant:biostrap
+  role: regulatory
+- url: https://tryterra.co/integrations/biostrap
+  role: other
+facts:
+# ---------------- Research access ----------------
+- field: research_program
+  status: stated
+  value: No named academic program. Sensor Bio sells a research offering (raw PPG and derived data, IRB-friendly
+    workflows, RPM dashboard) through its partnership sales route. The legacy Biostrap research page, still live,
+    describes a HIPAA-compliant Research Mode in the RPM dashboard with de-identified user IDs and de-identified
+    downloads, plus custom algorithm development.
+  confidence: Verified
+  sources:
+  - url: https://sensorbio.com/
+    type: vendor_page
+    quote: Raw data access, IRB-friendly workflows, and reproducible signal quality for academic and research studies.
+    retrieved: '2026-10-21'
+  - url: https://biostrap.com/research/
+    type: vendor_page
+    quote: assign de-identified Unique User ID's or download de-identified data, and efficiently manage participant
+      compliance via the Biostrap User Management dashboard
+    retrieved: '2026-10-21'
+  - url: https://biostrap.com/
+    type: vendor_page
+    quote: Biostrap provides full support including custom algorithm development, streamlined access to high-fidelity
+      raw or derived longitudinal data, integrated surveys and more.
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: The biostrap.com pages carry a "Biostrap is now Sensor Bio" banner and are the only place the Research Mode
+    features are described; sensorbio.com does not yet describe them. Ask Sensor Bio whether Research Mode carried over.
+- field: program_eligibility
+  status: stated
+  value: Aimed at IRB-approved and funded studies, institutions and research teams. No eligibility criteria are
+    published.
+  confidence: Verified
+  sources:
+  - url: https://sensorbio.com/
+    type: vendor_page
+    quote: Built for IRB-approved studies, institutional deployments, and population-level programs.
+    retrieved: '2026-10-21'
+  - url: https://biostrap.com/
+    type: vendor_page
+    quote: built for funded studies, institutions, and research teams
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+- field: program_application
+  status: stated
+  value: Contact form or a booked call on the Get Started page; units, configuration and platform terms are scoped
+    by a Sensor Bio contact. No review step or timeline is published.
+  confidence: Verified
+  sources:
+  - url: https://sensorbio.com/get-started/
+    type: vendor_page
+    quote: Prefer to talk first? Book a meeting
+    retrieved: '2026-10-21'
+  - url: https://sensorbio.com/product/sensor-bio-v2/
+    type: vendor_page
+    quote: V2 is sold through partnership, not checkout. Your Sensor Bio contact will scope units, configuration, and
+      platform terms with your team.
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+- field: program_status
+  status: stated
+  value: Active under the Sensor Bio name. Biostrap (founded 2016) rebranded as Sensor Bio; a new CEO was named in
+    February 2026, and the Sensor Bio iOS app was updated on 30 Sep 2026 (version 26.39.2).
+  confidence: Verified
+  sources:
+  - url: https://sensorbio.com/biostrap-is-now-sensor-bio/
+    type: vendor_page
+    quote: Sensor Bio is where that work continues.
+    retrieved: '2026-10-21'
+  - url: https://sensorbio.com/press/hydrow-founder-bruce-smith-named-ceo-of-sensor-bio-to-scale-global-preventive-he/
+    type: vendor_page
+    quote: Founded in 2016 as Biostrap, the company has spent nearly a decade validating high-fidelity wearable sensing
+      technology across research and enterprise deployments
+    retrieved: '2026-10-21'
+  - url: https://apps.apple.com/us/app/sensor-bio/id6745620963
+    type: app_store
+    quote: Sensor Bio is a biosensor-based remote monitoring platform.
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+- field: developer_program_status
+  status: stated
+  value: No self-serve developer program or public API documentation. An API and an SDK (v0.17.0 cited) exist and
+    are provided to partners through the partnership sales route; raw waveform export is limited to enterprise-tier
+    accounts.
+  confidence: Corroborated
+  sources:
+  - url: https://sensorbio.com/
+    type: vendor_page
+    quote: APIs and integrations built to support research pipelines, clinical systems, and AI development.
+    retrieved: '2026-10-21'
+  - url: https://sensorbio.com/product/sensor-bio-v2/
+    type: vendor_page
+    quote: Compiled from the SensorBio SDK interface, v0.17.0.
+    retrieved: '2026-10-21'
+  - url: https://sensorbio.com/product/sensor-bio-v2/
+    type: vendor_page
+    quote: Raw waveform export is available to partners on enterprise-tier accounts.
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: The absence of public docs or a sign-up is an observation from the sitemap (no developer or docs pages). The
+    rebrand left Terra and Spike listing a "Biostrap" web API; whether those connections still work is unknown.
+- field: user_cap
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://sensorbio.com/product/sensor-bio-v2/
+    type: vendor_page
+    retrieved: '2026-10-21'
+  - url: https://sensorbio.com/
+    type: vendor_page
+    retrieved: '2026-10-21'
+  - url: https://biostrap.com/research/
+    type: vendor_page
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+- field: academic_vs_commercial
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://sensorbio.com/
+    type: vendor_page
+    retrieved: '2026-10-21'
+  - url: https://sensorbio.com/product/sensor-bio-v2/
+    type: vendor_page
+    quote: Raw data export is available to partners, gated to enterprise-tier accounts
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: The only published tiering is that raw export needs an enterprise-tier account. Whether academic partners
+    get that tier, and on what terms, is not stated.
+# ---------------- Pricing ----------------
+- field: device_price
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://sensorbio.com/product/sensor-bio-v2/
+    type: vendor_page
+    quote: V2 is sold through partnership, not checkout.
+    retrieved: '2026-10-21'
+  - url: https://sensorbio.com/press/sensor-bio-joins-innovators-network-at-american-heart-association-center-for-hea/
+    type: vendor_page
+    quote: With a hardware cost of $80 per unit and a 76% gross margin at launch
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: No list price. The press release gives a hardware cost of $80 per unit, which is the company's cost, not
+    a price to buyers. Legacy Biostrap consumer pricing is no longer offered.
+- field: subscription_price
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://sensorbio.com/product/sensor-bio-v2/
+    type: vendor_page
+    retrieved: '2026-10-21'
+  - url: https://apps.apple.com/us/app/sensor-bio/id6745620963
+    type: app_store
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: The iOS app is free to download; account creation needs an activation code from the deploying organization.
+    No consumer membership is sold.
+- field: academic_pricing
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://sensorbio.com/
+    type: vendor_page
+    retrieved: '2026-10-21'
+  - url: https://biostrap.com/research/
+    type: vendor_page
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+- field: api_platform_fees
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://sensorbio.com/product/sensor-bio-v2/
+    type: vendor_page
+    retrieved: '2026-10-21'
+  - url: https://biostrap.com/connect/
+    type: vendor_page
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+- field: minimum_commitment
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://sensorbio.com/product/sensor-bio-v2/
+    type: vendor_page
+    retrieved: '2026-10-21'
+  - url: https://sensorbio.com/terms-and-conditions/
+    type: vendor_legal
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+- field: quote_required
+  status: stated
+  value: Yes. V2 is sold only through partnership; units, configuration and platform terms are scoped with a Sensor
+    Bio contact.
+  confidence: Verified
+  sources:
+  - url: https://sensorbio.com/product/sensor-bio-v2/
+    type: vendor_page
+    quote: V2 is sold through partnership, not checkout. Your Sensor Bio contact will scope units, configuration, and
+      platform terms with your team.
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+# ---------------- Data access and terms ----------------
+- field: raw_streams
+  status: stated
+  value: 'Raw three-wavelength PPG (green, red, infrared), inter-beat intervals and three-axis accelerometer, exported
+    at up to 100 Hz, gated to enterprise-tier accounts; also available in the RPM dashboard. A live stream during
+    active recordings carries raw PPG, IBI, HR, HRV, respiratory rate, SNR and motion. Skin temperature is captured.'
+  confidence: Verified
+  sources:
+  - url: https://sensorbio.com/product/sensor-bio-v2/
+    type: vendor_page
+    quote: Raw PPG, IBI, and accelerometer export up to 100 Hz
+    retrieved: '2026-10-21'
+  - url: https://sensorbio.com/product/sensor-bio-v2/
+    type: vendor_page
+    quote: During an active recording session the band streams HR, HRV, respiratory rate, beat-to-beat intervals, raw
+      PPG, signal-to-noise ratio, and motion.
+    retrieved: '2026-10-21'
+  - url: https://sensorbio.com/science/
+    type: vendor_page
+    quote: Sensor Bio provides access to raw and/or processed PPG, gyroscope, and accelerometer data to researchers via
+      the RPM dashboard.
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: The Science page lists gyroscope data, but the V2 hardware specification lists only PPG, a three-axis
+    accelerometer and a skin-temperature sensor. Gyroscope may apply to older Biostrap devices only. Ask Sensor Bio.
+- field: derived_metrics
+  status: stated
+  value: 'HR, HRV (rMSSD, HRV-CV, LF/HF; SDNN, SD1/SD2 in spot checks), respiratory rate, skin temperature deviation,
+    steps, activity score, calories, sleep stages and sleep, recovery and circadian scores, stress index and ANS
+    balance. HRV and respiratory rate need at least 50 Hz sampling. SpO2 is announced but not yet live.'
+  confidence: Verified
+  sources:
+  - url: https://sensorbio.com/product/sensor-bio-v2/
+    type: vendor_page
+    quote: Reports rMSSD, HRV-CV, and sympathetic-shifted LF/HF
+    retrieved: '2026-10-21'
+  - url: https://sensorbio.com/product/sensor-bio-v2/
+    type: vendor_page
+    quote: 'Stages: REM, deep, light, and awake, derived from HR, HRV, respiratory rate, and movement'
+    retrieved: '2026-10-21'
+  - url: https://sensorbio.com/product/sensor-bio-v2/
+    type: vendor_page
+    quote: Like HRV, requires at least 50 Hz PPG sampling. Not available at 25 Hz.
+    retrieved: '2026-10-21'
+  - url: https://sensorbio.com/product/sensor-bio-v2/
+    type: vendor_page
+    quote: Coming soon. Wellness-level SpO
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+- field: sampling_rates
+  status: conflict
+  value: The V2 specification gives PPG sampling of 50 Hz by default, configurable to 25 or 100 Hz per organization,
+    with HR at 1-second resolution during active captures and 1-minute averages otherwise, and HRV every 2 minutes
+    overnight. A May 2026 press release claims raw signals at 15,000 samples per second.
+  confidence: Unclear
+  sources:
+  - url: https://sensorbio.com/product/sensor-bio-v2/
+    type: vendor_page
+    quote: 50 Hz by default, configurable to 25 or 100 Hz per organization
+    retrieved: '2026-10-21'
+  - url: https://sensorbio.com/product/sensor-bio-v2/
+    type: vendor_page
+    quote: 1-second sampling during active captures, 1-minute averages otherwise
+    retrieved: '2026-10-21'
+  - url: https://sensorbio.com/press/sensor-bio-joins-innovators-network-at-american-heart-association-center-for-hea/
+    type: vendor_page
+    quote: captures raw physiological signals at 15,000 samples per second
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: The 15,000 figure may describe an internal sensor rate or an aggregate across channels; exported raw data
+    is documented at up to 100 Hz. Treat 100 Hz as the researcher-facing ceiling until Sensor Bio explains.
+- field: history_depth
+  status: stated
+  value: Cloud history is retained per deployment as configured with the partner. Each export covers a 1 to 7 day
+    window for raw sensor data and 1 to 30 days for computed metrics. The band buffers about 14 days at default
+    sampling, overwriting the oldest data.
+  confidence: Verified
+  sources:
+  - url: https://sensorbio.com/product/sensor-bio-v2/
+    type: vendor_page
+    quote: Configured per deployment to retain the history the partner actually needs
+    retrieved: '2026-10-21'
+  - url: https://sensorbio.com/product/sensor-bio-v2/
+    type: vendor_page
+    quote: Raw sensor metrics export across a 1 to 7 day window Computed metrics export across a 1 to 30 day window
+    retrieved: '2026-10-21'
+  - url: https://sensorbio.com/product/sensor-bio-v2/
+    type: vendor_page
+    quote: Approximately 14 days of data at default duty-cycled sampling, overwriting oldest data when full
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+- field: export_routes
+  status: stated
+  value: RPM web dashboard with raw and derived export (CSV or JSON, up to 2 GB per file); cloud API; mobile SDK
+    over BLE with eight data categories, a bulk date-range pull and a live stream; EMR/EHR integration; participant
+    self-download via the Privacy Center. Third-party aggregators (Terra, Spike) list a Biostrap web API connection
+    for derived metrics.
+  confidence: Verified
+  sources:
+  - url: https://sensorbio.com/product/sensor-bio-v2/
+    type: vendor_page
+    quote: CSV or JSON, up to 2 GB per file
+    retrieved: '2026-10-21'
+  - url: https://sensorbio.com/product/sensor-bio-v2/
+    type: vendor_page
+    quote: Customizable RPM, remote patient monitoring, dashboard with raw and derived export
+    retrieved: '2026-10-21'
+  - url: https://sensorbio.com/science/
+    type: vendor_page
+    quote: Processed biosignal data is accessible to external applications, EMR/EHR systems, wellness platforms, and
+      hospital networks via standardized API interfaces.
+    retrieved: '2026-10-21'
+  - url: https://sensorbio.com/privacy-policy/
+    type: vendor_legal
+    quote: you can acquire a download of your information in a commonly used file format
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/integrations/biostrap
+    type: secondary
+    quote: Terra manages the Biostrap API credentials, so there is nothing to register
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: Terra describes its Biostrap feed as activity, body, daily and sleep data, not raw waveform. Whether these
+    third-party connections survived the rebrand is unconfirmed.
+- field: rate_limits
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://sensorbio.com/product/sensor-bio-v2/
+    type: vendor_page
+    retrieved: '2026-10-21'
+  - url: https://sensorbio.com/science/
+    type: vendor_page
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/integrations/biostrap
+    type: secondary
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: No public API documentation was found, so no rate limits are published.
+- field: retention_terms
+  status: stated
+  value: For partners, retention is configured per deployment. For account holders, deletion requests remove most
+    data within 30 days and all data, including backups, within up to 90 days; data may be kept longer for legal
+    reasons.
+  confidence: Verified
+  sources:
+  - url: https://sensorbio.com/product/sensor-bio-v2/
+    type: vendor_page
+    quote: Data model, retention, and reporting shaped to the environment
+    retrieved: '2026-10-21'
+  - url: https://sensorbio.com/privacy-policy/
+    type: vendor_legal
+    quote: while most of your information will be deleted within 30 days, it may take up to 90 days to delete all of
+      your information
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+- field: ai_training_terms
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://sensorbio.com/privacy-policy/
+    type: vendor_legal
+    quote: we may disclose or sell Aggregate Information to third parties for a variety of business reasons
+    retrieved: '2026-10-21'
+  - url: https://sensorbio.com/terms-and-conditions/
+    type: vendor_legal
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: Neither the terms nor the privacy policy mention AI or machine-learning training. The privacy policy allows
+    use of data to develop new features and the sale of aggregate, non-identifying information. Partner contracts
+    are not published.
+- field: deprecations
+  status: stated
+  value: The Biostrap brand has been retired in favor of Sensor Bio; Biostrap and Biostrap Kairos users are routed
+    to Sensor Bio support, and the iOS app was renamed from MySensr. No dated shutdown of legacy Biostrap devices,
+    apps or integrations is published. SpO2 on V2 is announced as coming soon.
+  confidence: Verified
+  sources:
+  - url: https://sensorbio.com/biostrap-kairos/
+    type: vendor_page
+    quote: Biostrap Kairos now lives at Sensor Bio
+    retrieved: '2026-10-21'
+  - url: https://biostrap.com/
+    type: vendor_page
+    quote: Biostrap is now Sensor Bio
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: The legal documents still name Sensr Biotech, INC. and the App Store lists Sensr Biotech, LLC as developer,
+    while the site footer says Sensor Bio Inc. Check which entity contracts.
+# ---------------- Compliance ----------------
+- field: baa
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://sensorbio.com/privacy-policy/
+    type: vendor_legal
+    retrieved: '2026-10-21'
+  - url: https://sensorbio.com/terms-and-conditions/
+    type: vendor_legal
+    retrieved: '2026-10-21'
+  - url: https://biostrap.com/rpm/
+    type: vendor_page
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
+  note: Legacy Biostrap pages call the platform HIPAA-compliant but never mention a BAA.
+- field: dpa
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://sensorbio.com/privacy-policy/
+    type: vendor_legal
+    retrieved: '2026-10-21'
+  - url: https://sensorbio.com/terms-and-conditions/
+    type: vendor_legal
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
+- field: hipaa_statement
+  status: stated
+  scope: Legacy Biostrap pages (biostrap.com)
+  value: The legacy Biostrap pages describe a HIPAA-compliant research environment and RPM dashboard. The current
+    sensorbio.com site and its privacy policy make no HIPAA statement.
+  confidence: Corroborated
+  sources:
+  - url: https://biostrap.com/
+    type: vendor_page
+    quote: All in a HIPAA-compliant research environment.
+    retrieved: '2026-10-21'
+  - url: https://biostrap.com/rpm/
+    type: vendor_page
+    quote: Access selected data sets via a HIPAA-compliant cloud-based platform.
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
+- field: gdpr_statement
+  status: stated
+  value: The privacy policy asks GDPR-covered users for explicit consent to process health data and lists GDPR legal
+    bases. It still relies on the EU-US and Swiss-US Privacy Shield for transfers, a framework the EU Court of Justice
+    invalidated in 2020.
+  confidence: Corroborated
+  sources:
+  - url: https://sensorbio.com/privacy-policy/
+    type: vendor_legal
+    quote: we ask for your explicit consent to process the data
+    retrieved: '2026-10-21'
+  - url: https://sensorbio.com/privacy-policy/
+    type: vendor_legal
+    quote: These include your consent and the EU-US and Swiss-US Privacy Shield
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
+  note: No EU-U.S. Data Privacy Framework participation was checked; the policy text is effective April 24, 2025.
+- field: iso27001
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://sensorbio.com/
+    type: vendor_page
+    retrieved: '2026-10-21'
+  - url: https://sensorbio.com/privacy-policy/
+    type: vendor_legal
+    retrieved: '2026-10-21'
+  - url: https://sensorbio.com/product/sensor-bio-v2/
+    type: vendor_page
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
+- field: soc2
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://sensorbio.com/
+    type: vendor_page
+    retrieved: '2026-10-21'
+  - url: https://sensorbio.com/privacy-policy/
+    type: vendor_legal
+    retrieved: '2026-10-21'
+  - url: https://sensorbio.com/product/sensor-bio-v2/
+    type: vendor_page
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
+- field: fda_clearances
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPMN/pmn.cfm?start_search=1&Applicant=biostrap
+    fetch_url: https://api.fda.gov/device/510k.json?search=applicant:biostrap
+    type: regulator_db
+    retrieved: '2026-10-21'
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPMN/pmn.cfm?start_search=1&Applicant=sensr
+    fetch_url: https://api.fda.gov/device/510k.json?search=applicant:sensr
+    type: regulator_db
+    retrieved: '2026-10-21'
+  - url: https://api.fda.gov/device/registrationlisting.json?search=registration.name:sensr
+    type: regulator_db
+    retrieved: '2026-10-21'
+  - url: https://sensorbio.com/product/sensor-bio-v2/
+    type: vendor_page
+    quote: Not FDA cleared or approved, and not for diagnostic use.
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
+  note: openFDA 510(k) searches for applicant biostrap, sensr and "sensor bio", device name biostrap, and registration
+    listings for biostrap and sensr all returned no matches. The vendor calls V2 a general wellness device. The legacy
+    biostrap.com research page lists a "Thermo Patch" as FDA cleared; that is a partner temperature patch in the old
+    multi-device kit, not a Sensor Bio clearance. Earlier press reported a planned 510(k) for the Biostrap Ethos; no
+    clearance was found.
+- field: data_residency
+  status: stated
+  value: Data is stored on the Sensor Bio cloud platform hosted on AWS; information is transferred to the United
+    States and other countries. No region choice or residency option is published.
+  confidence: Corroborated
+  sources:
+  - url: https://sensorbio.com/product/sensor-bio-v2/
+    type: vendor_page
+    quote: Sensor Bio cloud platform, hosted on AWS
+    retrieved: '2026-10-21'
+  - url: https://sensorbio.com/privacy-policy/
+    type: vendor_legal
+    quote: We operate internationally and transfer information to the United States and other countries
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
+  note: The legacy Biostrap Connect page offers to move the cloud to a partner's own servers, which would change
+    residency; not confirmed for Sensor Bio.
