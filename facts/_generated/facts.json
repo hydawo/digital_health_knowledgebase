@@ -4858,7 +4858,7 @@
    {
     "url": "https://forum.avicennaresearch.com/t/weekly-release-notes-2026-10-06/2188",
     "type": "vendor_docs",
-    "quote": "This week’s release improves participant invitations with CSV import and new options for each invitee.",
+    "quote": "This week’s release improves participant invitations with CSV import and new options for each invitee",
     "retrieved": "2026-10-11"
    },
    {
@@ -5169,10 +5169,10 @@
   "kind": "platform",
   "field": "derived_metrics",
   "status": "stated",
-  "value": "Phone-derived step count and activity type; vendor-computed wearable metrics pulled from cloud accounts (Garmin, Fitbit, Oura readiness and sleep, WHOOP recovery, Polar sleep). Platform-native GPS mobility features computed in a nightly batch (daily distance, radius of gyration, location entropy, time at home, daily location clusters). An Analysis page for data quality, engagement and retention (added 2026-03). Kibana and Vega charts in the dashboard.",
+  "value": "Phone-derived step count and activity type; vendor-computed wearable metrics pulled from cloud accounts (Garmin, Fitbit, Oura readiness and sleep, WHOOP recovery, Polar sleep). An Analysis page for data quality, engagement and retention (added 2026-03). Kibana and Vega charts in the dashboard. Whether Avicenna still computes GPS mobility features is unclear (see note).",
   "confidence": "Verified",
   "recheck_by": "2026-11-10",
-  "note": "The security page still says \"Avicenna does not perform any processing on the data collected for a given study\", which the GPS mobility-features reference (2025-12-16) contradicts. Researcher A relied on the security page and recorded no platform-native features.",
+  "note": "A vendor forum reference (forum.avicennaresearch.com/t/1460, dated 2025-12-16, read 2026-10-11) described GPS mobility features computed in a nightly batch (daily distance, radius of gyration, location entropy, time at home). By 2026-10-19 that topic returned 404 and it is absent from forum search (2026-10-21). The security page says \"Avicenna does not perform any processing on the data collected for a given study\". Ask Avicenna whether the feature still exists.",
   "sources": [
    {
     "url": "https://avicennaresearch.com/features/sensor-based-data",
@@ -5190,18 +5190,6 @@
     "url": "https://forum.avicennaresearch.com/t/raw-data/1241",
     "type": "vendor_docs",
     "quote": "58 WHOOP Workout 59 WHOOP Sleep 60 WHOOP Recovery",
-    "retrieved": "2026-10-11"
-   },
-   {
-    "url": "https://forum.avicennaresearch.com/t/1460",
-    "type": "vendor_docs",
-    "quote": "Total distance travelled during the day Radius of gyration Location entropy Time spent at home",
-    "retrieved": "2026-10-11"
-   },
-   {
-    "url": "https://forum.avicennaresearch.com/t/1460",
-    "type": "vendor_docs",
-    "quote": "All of this runs in a nightly batch process",
     "retrieved": "2026-10-11"
    },
    {
@@ -7337,10 +7325,10 @@
   "kind": "platform",
   "field": "raw_streams",
   "status": "stated",
-  "value": "Raw phone sensor data and logs, downloadable by researchers through the web download page, the Data Download API or Mano. Streams: accelerometer, gyroscope, GPS (optional fuzzing), screen and power state, identifiers, Wi-Fi, Bluetooth, call and text logs (Android only), proximity, magnetometer, device motion and reachability (iOS only), plus surveys and audio-survey recordings. Android also has an optional ambient (continuous) audio stream, off by default and set per study. Call and text logs come only from the lab-distributed Android builds (onnelaLabServer, commStatsCustomUrl); the Google Play build (Beiwe2) has not asked for SMS/MMS or call-log permissions since 2.5.0. Studies set to \"production data\" restrict downloads to processed output.",
+  "value": "Raw phone sensor data and logs, downloadable by researchers through the web download page, the Data Download API or Mano. Streams: accelerometer, gyroscope, GPS (optional fuzzing), screen and power state, identifiers, Wi-Fi, Bluetooth, call and text logs (Android only), proximity, magnetometer, device motion and reachability (iOS only), plus surveys and audio-survey recordings. The optional Android ambient (continuous) audio stream has been removed from the backend (commit \"removes ambient audio\", 2026-07-31, on main by 2026-10-19). Call and text logs come only from the lab-distributed Android builds (onnelaLabServer, commStatsCustomUrl); the Google Play build (Beiwe2) has not asked for SMS/MMS or call-log permissions since 2.5.0. Studies set to \"production data\" restrict downloads to processed output.",
   "confidence": "Verified",
   "recheck_by": "2026-11-09",
-  "note": "Phone numbers and Wi-Fi and Bluetooth MAC addresses are hashed on the phone with a per-device key. Power state on iOS is documented inconsistently (profile holds that conflict). Ambient audio: Android 3.1.0 added it; backend defaults are 10 minutes on, 10 minutes off, 44.1 kHz. Whether the BSC permits it is not stated. The Play build also does not prompt for background location (Android 3.1.2). The build split dates from Google's March 2019 policy change.",
+  "note": "Phone numbers and Wi-Fi and Bluetooth MAC addresses are hashed on the phone with a per-device key. Power state on iOS is documented inconsistently (profile holds that conflict). Ambient audio: Android 3.1.0 added it (backend defaults were 10 minutes on, 10 minutes off, 44.1 kHz); migration 0150 (generated 2026-07-31) removes the ambient_audio study settings, so the stream is gone from current backends. The Android build.gradle note describing it has not been updated. The Play build also does not prompt for background location (Android 3.1.2). The build split dates from Google's March 2019 policy change.",
   "sources": [
    {
     "url": "https://hsph.harvard.edu/research-resource/beiwe/technology/",
@@ -7382,11 +7370,11 @@
     "retrieved": "2026-10-10"
    },
    {
-    "url": "https://github.com/onnela-lab/beiwe-backend/blob/main/database/study_models.py",
+    "url": "https://github.com/onnela-lab/beiwe-backend/blob/main/database/migrations/0150_remove_devicesettings_ambient_audio_and_more.py",
     "type": "repository",
-    "quote": "ambient_audio = models.BooleanField(default=False)",
-    "fetch_url": "https://raw.githubusercontent.com/onnela-lab/beiwe-backend/main/database/study_models.py",
-    "retrieved": "2026-10-10"
+    "quote": "name='ambient_audio',",
+    "fetch_url": "https://raw.githubusercontent.com/onnela-lab/beiwe-backend/main/database/migrations/0150_remove_devicesettings_ambient_audio_and_more.py",
+    "retrieved": "2026-10-21"
    },
    {
     "url": "https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-Using-Beiwe-for-Open-Source-Users",
@@ -10982,7 +10970,7 @@
    {
     "url": "https://www.lifedatacorp.com/lifedata-privacy-policy/",
     "type": "vendor_legal",
-    "quote": "LifeData retains a copy for no longer than 30 days after which it will be permanently deleted",
+    "quote": "LifeData retains a copy for no longer than 30 days, after which it will be permanently deleted",
     "retrieved": "2026-10-11"
    },
    {
@@ -11098,7 +11086,7 @@
   "kind": "platform",
   "field": "hosting_options",
   "status": "stated",
-  "value": "Vendor-hosted SaaS only, on servers in the United States; no self-hosting or on-premises option is published. The privacy policy names Microsoft Azure as an example of its data hosting company.",
+  "value": "Vendor-hosted SaaS only, on servers in the United States; no self-hosting or on-premises option is published. The privacy policy names Microsoft as an example web hosting service.",
   "confidence": "Corroborated",
   "recheck_by": "2026-11-10",
   "note": "Corroborated because \"no self-hosting\" is an absence across the product, features and legal pages rather than a stated exclusion.",
@@ -11118,8 +11106,8 @@
    {
     "url": "https://www.lifedatacorp.com/lifedata-privacy-policy/",
     "type": "vendor_legal",
-    "quote": "LifeData may transfer personal data to a third party outside the European Union or United Kingdom, for example a secure data hosting company such as Microsoft Azure.",
-    "retrieved": "2026-10-11"
+    "quote": "Usually, this involves disclosure of information to a web hosting service such as Microsoft.",
+    "retrieved": "2026-10-21"
    }
   ]
  },
@@ -11310,8 +11298,8 @@
    {
     "url": "https://www.lifedatacorp.com/lifedata-privacy-policy/",
     "type": "vendor_legal",
-    "quote": "Where LifeData products or services are used to collect or process personal data of EU residents, LifeData is subject to GDPR, and complies with all requirements.",
-    "retrieved": "2026-10-11"
+    "quote": "Where LifeData products or services are used to collect or process personal data of EU, UK, or Swiss residents, LifeData is subject to these laws, and complies with all requirements.",
+    "retrieved": "2026-10-21"
    },
    {
     "url": "https://www.lifedatacorp.com/lifedata-terms-of-use/",
@@ -11322,7 +11310,7 @@
    {
     "url": "https://www.lifedatacorp.com/lifedata-privacy-policy/",
     "type": "vendor_legal",
-    "quote": "LifeData complies with the EU-U.S. Data Privacy Framework (EU-U.S. DPF) and the UK Extension to the EU-U.S. DPF, and the Swiss-U.S. Data Privacy Framework (Swiss-U.S. DPF) as set forth by the U.S. Department of Commerce.",
+    "quote": "LifeData complies with the EU-U.S. Data Privacy Framework (EU-U.S. DPF), the UK Extension to the EU-U.S. DPF, and the Swiss-U.S. Data Privacy Framework (Swiss-U.S. DPF) as set forth by the U.S. Department of Commerce.",
     "retrieved": "2026-10-11"
    },
    {
@@ -11478,7 +11466,7 @@
   "kind": "platform",
   "field": "data_residency",
   "status": "stated",
-  "value": "Data is stored on servers in the United States, with Microsoft Azure named as an example hosting company. No other region or residency option is offered; EU, UK and Swiss transfers rely on the Data Privacy Framework.",
+  "value": "Data is stored on servers in the United States, with Microsoft named as an example web hosting service. No other region or residency option is offered; EU, UK and Swiss transfers rely on the Data Privacy Framework.",
   "confidence": "Verified",
   "recheck_by": "2027-01-09",
   "note": "The absence of non-US options is from the absence of any mention, not an explicit statement. Not a self-claim-capped field; the vendor's own policy is the primary source for where it stores data.",
@@ -11492,8 +11480,8 @@
    {
     "url": "https://www.lifedatacorp.com/lifedata-privacy-policy/",
     "type": "vendor_legal",
-    "quote": "LifeData may transfer personal data to a third party outside the European Union or United Kingdom, for example a secure data hosting company such as Microsoft Azure.",
-    "retrieved": "2026-10-11"
+    "quote": "Usually, this involves disclosure of information to a web hosting service such as Microsoft.",
+    "retrieved": "2026-10-21"
    }
   ]
  },
@@ -12721,11 +12709,11 @@
   "name": "m-Path (KU Leuven)",
   "kind": "platform",
   "field": "data_residency",
-  "status": "conflict",
-  "value": "EU, but m-Path's own documents disagree on the host. The manual's storage page (updated 2026-10-09), the FAQ and the sub-processor list say survey data is on Microsoft Azure in Frankfurt; the privacy statement for app and dashboard instead names KU Leuven as server host, and KU Leuven is absent from the sub-processor list. The DPA keeps services in the EU/EEA unless the controller is outside it. Continuous sensing, Garmin-direct and media data go straight to the researcher's pCloud, OneDrive or SFTP server, wherever that is. Thryve wearable data passes through the manufacturer's servers and Thryve before reaching m-Path.",
-  "confidence": "Unclear",
+  "status": "stated",
+  "value": "EU. Survey data is on Microsoft Azure in Germany (Frankfurt), per the manual's storage page, the FAQ, the sub-processor list and, since an update between 2026-10-12 and 2026-10-19, the privacy statement, which earlier named KU Leuven as server host. The DPA keeps services in the EU/EEA unless the controller is outside it. Continuous sensing, Garmin-direct and media data go straight to the researcher's pCloud, OneDrive or SFTP server, wherever that is. Thryve wearable data passes through the manufacturer's servers and Thryve before reaching m-Path.",
+  "confidence": "Verified",
   "recheck_by": "2027-01-08",
-  "note": "Likely a migration from KU Leuven servers to Azure that the privacy statement has not caught up with (the gap hunter saw a 2023 storage-page snippet naming KU Leuven servers, not probed). Researcher B recorded only Azure; the privacy statement was read and the conflict stands. Ask m-Path to confirm the host and update the privacy statement.",
+  "note": "Was a conflict on 2026-10-11, when the privacy statement still named KU Leuven as server host. The weekly check of 2026-10-19 found that sentence changed; on 2026-10-21 the privacy statement names Microsoft Azure in Germany, matching the other documents. Most likely a migration from KU Leuven servers that the policy had not caught up with.",
   "sources": [
    {
     "url": "https://m-path.io/manual/knowledge-base/storage/",
@@ -12750,8 +12738,8 @@
     "url": "https://m-path.io/privacy-policy/",
     "fetch_url": "https://m-path.io/LegalPage/privacy.html",
     "type": "vendor_legal",
-    "quote": "The KU Leuven, as our server host, will only have access to any information on the App in an encrypted at rest manner.",
-    "retrieved": "2026-10-11"
+    "quote": "This information is stored on Microsoft Azure servers located in Germany.",
+    "retrieved": "2026-10-21"
    },
    {
     "url": "https://m-path.io/data-processing/",
@@ -20442,10 +20430,10 @@
     "quote": "Starting in iOS 27, participants will have more granular control over how they share HealthKit data"
    },
    {
-    "url": "https://developer.apple.com/documentation/healthkit/hkhealthstore/earliestauthorizedsampledate(for:)",
+    "url": "https://developer.apple.com/documentation/healthkit/hkhealthstore/getearliestauthorizedsampledate(for:completion:)",
     "type": "vendor_docs",
     "retrieved": "2026-10-10",
-    "fetch_url": "https://developer.apple.com/tutorials/data/documentation/healthkit/hkhealthstore/earliestauthorizedsampledate(for:).json",
+    "fetch_url": "https://developer.apple.com/tutorials/data/documentation/healthkit/hkhealthstore/getearliestauthorizedsampledate(for:completion:).json",
     "quote": "Adjust your app’s workflow to work with less data."
    }
   ]
@@ -23938,15 +23926,15 @@
   "field": "device_price",
   "status": "stated",
   "scope": "Pixel Watch 5 (US)",
-  "value": "List from $399.99; on sale from $349.99 on 2026-10-10 (Google Store US)",
+  "value": "List from $399.99 (Google Store US, 2026-10-21); it was on sale from $349.99 on 2026-10-10",
   "confidence": "Verified",
   "recheck_by": "2026-11-09",
   "sources": [
    {
     "url": "https://store.google.com/us/product/pixel_watch_5",
     "type": "vendor_page",
-    "retrieved": "2026-10-10",
-    "quote": "Google Pixel Watch 5 From $349.99 $399.99 Save $50"
+    "retrieved": "2026-10-21",
+    "quote": "Google Pixel Watch 5 From $399.99"
    }
   ]
  },
@@ -27643,7 +27631,7 @@
    },
    {
     "url": "https://cloud.ouraring.com/v2/docs",
-    "fetch_url": "https://cloud.ouraring.com/v2/static/json/openapi-1.41.json",
+    "fetch_url": "https://cloud.ouraring.com/v2/static/json/openapi-1.42.json",
     "type": "vendor_docs",
     "quote": "personal access tokens were deprecated in December 2025 and are no longer available for use",
     "retrieved": "2026-10-10"
@@ -27663,7 +27651,7 @@
   "sources": [
    {
     "url": "https://cloud.ouraring.com/v2/docs",
-    "fetch_url": "https://cloud.ouraring.com/v2/static/json/openapi-1.41.json",
+    "fetch_url": "https://cloud.ouraring.com/v2/static/json/openapi-1.42.json",
     "type": "vendor_docs",
     "quote": "API Applications are limited to **10** users before requiring approval from Oura. There is no limit once an application is approved.",
     "retrieved": "2026-10-10"
@@ -27689,7 +27677,7 @@
   "sources": [
    {
     "url": "https://cloud.ouraring.com/v2/docs",
-    "fetch_url": "https://cloud.ouraring.com/v2/static/json/openapi-1.41.json",
+    "fetch_url": "https://cloud.ouraring.com/v2/static/json/openapi-1.42.json",
     "type": "vendor_docs",
     "quote": "Yes, the Oura API is free to use for both personal and commercial applications.",
     "retrieved": "2026-10-10"
@@ -27842,7 +27830,7 @@
   "sources": [
    {
     "url": "https://cloud.ouraring.com/v2/docs",
-    "fetch_url": "https://cloud.ouraring.com/v2/static/json/openapi-1.41.json",
+    "fetch_url": "https://cloud.ouraring.com/v2/static/json/openapi-1.42.json",
     "type": "vendor_docs",
     "quote": "Yes, the Oura API is free to use for both personal and commercial applications.",
     "retrieved": "2026-10-10"
@@ -27982,11 +27970,11 @@
   "value": "None. The API serves processed data only (scores, summaries, 5-minute heart rate and HRV series, 30-second sleep movement); raw PPG, accelerometer and temperature signals are not exposed.",
   "confidence": "Corroborated",
   "recheck_by": "2026-11-09",
-  "note": "Corroborated, not Verified, because the absence of raw signals is read from the data-flow description and the endpoint list in OpenAPI 1.41 (no raw-signal route), not stated outright. The API Agreement also bars deriving Oura's signal processing techniques (s.4(a)(xi)).",
+  "note": "Corroborated, not Verified, because the absence of raw signals is read from the data-flow description and the endpoint list in OpenAPI 1.42 (no raw-signal route), not stated outright. The API Agreement also bars deriving Oura's signal processing techniques (s.4(a)(xi)).",
   "sources": [
    {
     "url": "https://cloud.ouraring.com/v2/docs",
-    "fetch_url": "https://cloud.ouraring.com/v2/static/json/openapi-1.41.json",
+    "fetch_url": "https://cloud.ouraring.com/v2/static/json/openapi-1.42.json",
     "type": "vendor_docs",
     "quote": "Processing**: Algorithms analyze raw data to generate insights and scores 4. **API Availability**: Processed data becomes available through API endpoints",
     "retrieved": "2026-10-10"
@@ -28029,7 +28017,7 @@
   "value": "API v2 routes: daily activity, readiness, sleep, SpO2, stress, resilience, cardiovascular age, VO2 max; sleep periods (staging, average and lowest HR, HRV, respiratory rate, temperature deviation); sleep time recommendations; heart rate series; sessions; workouts; tags and enhanced tags; rest mode periods; ring configuration and battery level; personal info. Users consent per data type.",
   "confidence": "Verified",
   "recheck_by": "2026-11-09",
-  "note": "Route list read from openapi-1.41.json (paths under /v2/usercollection/). No route for blood pressure, GLP-1 or Health Radar.",
+  "note": "Route list read from openapi-1.42.json (paths under /v2/usercollection/). No route for blood pressure, GLP-1 or Health Radar.",
   "sources": [
    {
     "url": "https://partnersupport.ouraring.com/hc/en-us/articles/28571089902227-Metrics-Available-via-the-Oura-API",
@@ -28039,14 +28027,14 @@
    },
    {
     "url": "https://cloud.ouraring.com/v2/docs",
-    "fetch_url": "https://cloud.ouraring.com/v2/static/json/openapi-1.41.json",
+    "fetch_url": "https://cloud.ouraring.com/v2/static/json/openapi-1.42.json",
     "type": "vendor_docs",
     "quote": "The Daily SpO2 (blood oxygenation) routes include daily SpO2 average.",
     "retrieved": "2026-10-10"
    },
    {
     "url": "https://cloud.ouraring.com/v2/docs",
-    "fetch_url": "https://cloud.ouraring.com/v2/static/json/openapi-1.41.json",
+    "fetch_url": "https://cloud.ouraring.com/v2/static/json/openapi-1.42.json",
     "type": "vendor_docs",
     "quote": "Oura users **must provide consent** to share each data type an API Application has access to.",
     "retrieved": "2026-10-10"
@@ -28085,7 +28073,7 @@
   "sources": [
    {
     "url": "https://cloud.ouraring.com/v2/docs",
-    "fetch_url": "https://cloud.ouraring.com/v2/static/json/openapi-1.41.json",
+    "fetch_url": "https://cloud.ouraring.com/v2/static/json/openapi-1.42.json",
     "type": "vendor_docs",
     "quote": "Heart rate is provided at 5-minute increments.",
     "retrieved": "2026-10-10"
@@ -28098,21 +28086,21 @@
    },
    {
     "url": "https://cloud.ouraring.com/v2/docs",
-    "fetch_url": "https://cloud.ouraring.com/v2/static/json/openapi-1.41.json",
+    "fetch_url": "https://cloud.ouraring.com/v2/static/json/openapi-1.42.json",
     "type": "vendor_docs",
     "quote": "this is the average calculated by ecore (based on 30-second samples) which is different from what is shown in the app",
     "retrieved": "2026-10-10"
    },
    {
     "url": "https://cloud.ouraring.com/v2/docs",
-    "fetch_url": "https://cloud.ouraring.com/v2/static/json/openapi-1.41.json",
+    "fetch_url": "https://cloud.ouraring.com/v2/static/json/openapi-1.42.json",
     "type": "vendor_docs",
     "quote": "30-second movement classification for the period",
     "retrieved": "2026-10-10"
    },
    {
     "url": "https://cloud.ouraring.com/v2/docs",
-    "fetch_url": "https://cloud.ouraring.com/v2/static/json/openapi-1.41.json",
+    "fetch_url": "https://cloud.ouraring.com/v2/static/json/openapi-1.42.json",
     "type": "vendor_docs",
     "quote": "5-minute sleep phase classification for the period",
     "retrieved": "2026-10-10"
@@ -28138,7 +28126,7 @@
   "sources": [
    {
     "url": "https://cloud.ouraring.com/v2/docs",
-    "fetch_url": "https://cloud.ouraring.com/v2/static/json/openapi-1.41.json",
+    "fetch_url": "https://cloud.ouraring.com/v2/static/json/openapi-1.42.json",
     "type": "vendor_docs",
     "retrieved": "2026-10-10"
    },
@@ -28181,7 +28169,7 @@
   "sources": [
    {
     "url": "https://cloud.ouraring.com/v2/docs",
-    "fetch_url": "https://cloud.ouraring.com/v2/static/json/openapi-1.41.json",
+    "fetch_url": "https://cloud.ouraring.com/v2/static/json/openapi-1.42.json",
     "type": "vendor_docs",
     "quote": "Webhook notifications come approximately 30 seconds after data syncs from the mobile app",
     "retrieved": "2026-10-10"
@@ -28233,18 +28221,18 @@
   "value": "5,000 requests per 5-minute period (docs FAQ). Limits apply per access token and per application (aggregate across all of an app's users); a 429 response carries Retry-After and X-RateLimit headers, including the ceiling and window. Higher limits on request; Oura may change limits without notice.",
   "confidence": "Verified",
   "recheck_by": "2026-11-09",
-  "note": "Both statements are in the current OpenAPI 1.41 document. The 5,000/5-min figure is in its FAQ section; the newer Rate Limits section names the two layers but gives no number per layer, so whether 5,000 is the per-token or the per-application ceiling is not stated. The X-RateLimit-Limit and X-RateLimit-Window headers report the live ceiling. The pilot record and the profile said no number was published; the FAQ contradicts that.",
+  "note": "Both statements are in the current OpenAPI 1.42 document. The 5,000/5-min figure is in its FAQ section; the newer Rate Limits section names the two layers but gives no number per layer, so whether 5,000 is the per-token or the per-application ceiling is not stated. The X-RateLimit-Limit and X-RateLimit-Window headers report the live ceiling. The pilot record and the profile said no number was published; the FAQ contradicts that.",
   "sources": [
    {
     "url": "https://cloud.ouraring.com/v2/docs",
-    "fetch_url": "https://cloud.ouraring.com/v2/static/json/openapi-1.41.json",
+    "fetch_url": "https://cloud.ouraring.com/v2/static/json/openapi-1.42.json",
     "type": "vendor_docs",
     "quote": "The Oura API is limited to 5000 requests per 5-minute period.",
     "retrieved": "2026-10-10"
    },
    {
     "url": "https://cloud.ouraring.com/v2/docs",
-    "fetch_url": "https://cloud.ouraring.com/v2/static/json/openapi-1.41.json",
+    "fetch_url": "https://cloud.ouraring.com/v2/static/json/openapi-1.42.json",
     "type": "vendor_docs",
     "quote": "a per-application limit, which caps the aggregate traffic across all of an application's end-user tokens",
     "retrieved": "2026-10-10"
@@ -28301,7 +28289,7 @@
    },
    {
     "url": "https://cloud.ouraring.com/v2/docs",
-    "fetch_url": "https://cloud.ouraring.com/v2/static/json/openapi-1.41.json",
+    "fetch_url": "https://cloud.ouraring.com/v2/static/json/openapi-1.42.json",
     "type": "vendor_docs",
     "quote": "Store the historical data in your own database for easy access",
     "retrieved": "2026-10-10"
@@ -28441,7 +28429,7 @@
    },
    {
     "url": "https://cloud.ouraring.com/v2/docs",
-    "fetch_url": "https://cloud.ouraring.com/v2/static/json/openapi-1.41.json",
+    "fetch_url": "https://cloud.ouraring.com/v2/static/json/openapi-1.42.json",
     "type": "vendor_docs",
     "quote": "personal access tokens were deprecated in December 2025 and are no longer available for use",
     "retrieved": "2026-10-10"
@@ -28454,7 +28442,7 @@
    },
    {
     "url": "https://cloud.ouraring.com/v2/docs",
-    "fetch_url": "https://cloud.ouraring.com/v2/static/json/openapi-1.41.json",
+    "fetch_url": "https://cloud.ouraring.com/v2/static/json/openapi-1.42.json",
     "type": "vendor_docs",
     "quote": "Tag is deprecated. We recommend transitioning to [Enhanced Tag](#tag/Enhanced-Tag-Routes).",
     "retrieved": "2026-10-10"
@@ -33940,7 +33928,7 @@
   "kind": "wearable",
   "field": "api_platform_fees",
   "status": "stated",
-  "value": "Start for Free is free. Enterprise is custom-priced on active users; Advanced Biomarkers is custom-priced on active users and biomarkers. Figures are not published. On the paid plans the app pays no per-member Withings+ charge. The 2018 developer agreement reserves the right to charge for the API.",
+  "value": "Start for Free is free. Enterprise is custom-priced on active users; Advanced Biomarkers is custom-priced on active users and biomarkers. Figures are not published. On the paid plans the app pays no per-member Withings+ charge. The 2018 developer agreement reserved the right to charge for the API; since the terms rewrite of 13 October 2026 it is no longer on Withings' terms page, and the partner terms it points to were not located.",
   "confidence": "Verified",
   "recheck_by": "2026-11-09",
   "sources": [
@@ -33960,12 +33948,6 @@
     "url": "https://static.withings.com/content/api/plans/plans.html",
     "type": "vendor_page",
     "quote": "Your users do not subscribe individually and there is no per-member charge.",
-    "retrieved": "2026-10-10"
-   },
-   {
-    "url": "https://www.withings.com/us/en/legal/api-terms-of-use",
-    "type": "vendor_legal",
-    "quote": "Withings reserves the right to charge for the Software and to change its fees from time to time, at its discretion.",
     "retrieved": "2026-10-10"
    }
   ]
@@ -34129,8 +34111,8 @@
    {
     "url": "https://developer.withings.com/developer-guide/v3/data-api/all-available-health-data",
     "type": "vendor_docs",
-    "quote": "This page details all available biomarkers, their device compatibility, and which API plan includes access to each metric.",
-    "retrieved": "2026-10-10"
+    "quote": "96 biomarkers across 9 device families",
+    "retrieved": "2026-10-21"
    },
    {
     "url": "https://static.withings.com/content/api/plans/plans.html",
@@ -34267,7 +34249,7 @@
   "value": "Public Health Data API (OAuth 2.0 REST plus webhooks, no contract); contract-only routes: SDK for iOS and Android (device setup inside the partner's app), Cellular Dropship and Bulkship, Withings RPM and OnSite Mode; Advanced Research API for raw data; participant CSV export from the Withings account. Apple Health and Google Health sharing are covered by the Withings+ requirement from 2026-10-12. Refresh tokens last one year.",
   "confidence": "Verified",
   "recheck_by": "2026-11-09",
-  "note": "The SDK is a device setup and sync SDK, not device programming. A study that does not refresh a participant's token within a year loses access until the participant re-authorizes.",
+  "note": "The SDK is a device setup and sync SDK, not device programming. A study that does not refresh a participant's token within a year loses access until the participant re-authorizes. The SDK line was removed from developer.withings.com/llms.md by 2026-10-19; the plans page still names the SDK, and says the Withings+ requirement can be lifted for Cellular Solutions, SDK and Research partners.",
   "sources": [
    {
     "url": "https://static.withings.com/content/api/plans/plans.html",
@@ -34276,10 +34258,10 @@
     "retrieved": "2026-10-10"
    },
    {
-    "url": "https://developer.withings.com/llms.md",
-    "type": "vendor_docs",
-    "quote": "Embed Withings SDK (iOS / Android) into your mobile app",
-    "retrieved": "2026-10-10"
+    "url": "https://static.withings.com/content/api/plans/plans.html",
+    "type": "vendor_page",
+    "quote": "The Withings+ requirement can be removed for specific use cases: Cellular Solutions, SDK and Research partners.",
+    "retrieved": "2026-10-21"
    },
    {
     "url": "https://developer.withings.com/llms.md",
@@ -34333,16 +34315,16 @@
   "field": "retention_terms",
   "status": "stated",
   "scope": "API partners and Withings' own retention",
-  "value": "The API terms set no retention period for partners and say copies may remain after material is removed. Withings keeps personal data only as long as necessary. If a participant's Withings+ lapses, sharing pauses but historical data is not deleted.",
+  "value": "The 2018 API terms set no retention period for partners and said copies may remain after material is removed; since 13 October 2026 Withings' terms page says partner terms are on the developer portal, where they were not located on 2026-10-21. Withings keeps personal data only as long as necessary. If a participant's Withings+ lapses, sharing pauses but historical data is not deleted.",
   "confidence": "Verified",
   "recheck_by": "2026-11-09",
-  "note": "The US api-terms-of-use URL serves the combined terms page; the API terms are Part 2, \"Withings Developer Software Agreement\", last updated 12 September 2018.",
+  "note": "Until 13 October 2026 the US api-terms-of-use URL served the combined terms with Part 2, \"Withings Developer Software Agreement\" (12 September 2018). The rewritten General Terms of Use (13 October 2026) replace it, and add that a participant's sharing with third-party services needs Withings+ (with unnamed exceptions) and covers only data generated after sharing is enabled.",
   "sources": [
    {
     "url": "https://www.withings.com/us/en/legal/api-terms-of-use",
     "type": "vendor_legal",
-    "quote": "After the Material is removed from the Service by either You or Withings, traces and copies of the Material may still remain.",
-    "retrieved": "2026-10-10"
+    "quote": "the terms applicable to partners apply and take precedence over this article; they are available on the Withings developer portal.",
+    "retrieved": "2026-10-21"
    },
    {
     "url": "https://www.withings.com/us/en/legal/privacy-policy",
@@ -34365,10 +34347,10 @@
   "field": "retention_terms",
   "status": "conflict",
   "scope": "Inactive participant accounts",
-  "value": "Withings deletes inactive accounts, but the threshold differs: the French General Terms (updated 2026-01-05) define inactive as no login, no device connection and no email click for more than 3 years; the privacy policy (version of 2026-03-04) says 10 years, with a 90-day email warning.",
+  "value": "Withings closes inactive accounts, but the threshold differs: the French General Terms (updated 13 October 2026) delete accounts with no login, no device connection and no email click for more than 3 years; the US General Terms (same date) say Withings may deactivate an account after 5 years without a login; the privacy policy (version of 2026-03-04) says 10 years, with a 90-day email warning.",
   "confidence": "Unclear",
   "recheck_by": "2026-11-09",
-  "note": "Gap finding. The US terms page served on 2026-10-10 is an older version (Part 1 last updated 26 January 2023) with no inactive-account clause, so the 3-year rule may apply only where the French terms govern. Matters for longitudinal studies on participants' own accounts; ask Withings which applies in the US.",
+  "note": "The US terms served on 2026-10-10 had no inactive-account clause; the 13 October 2026 rewrite added the 5-year deactivation rule. So the thresholds now differ by region (US 5, France 3) and against the privacy policy (10). Matters for longitudinal studies on participants' own accounts.",
   "sources": [
    {
     "url": "https://www.withings.com/fr/fr/legal/api-terms-of-use",
@@ -34379,8 +34361,14 @@
    {
     "url": "https://www.withings.com/fr/fr/legal/api-terms-of-use",
     "type": "vendor_legal",
-    "quote": "Dernière mise à jour : 5 janvier 2026",
-    "retrieved": "2026-10-10"
+    "quote": "Dernière mise à jour : 13 octobre 2026",
+    "retrieved": "2026-10-21"
+   },
+   {
+    "url": "https://www.withings.com/us/en/legal/api-terms-of-use",
+    "type": "vendor_legal",
+    "quote": "WITHINGS may deactivate an Account if the User has not logged in for a period of five (5) years.",
+    "retrieved": "2026-10-21"
    },
    {
     "url": "https://www.withings.com/us/en/legal/privacy-policy",

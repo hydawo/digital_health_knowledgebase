@@ -349,7 +349,7 @@
 
 | Fact | Value |
 |---|---|
-| Device or hardware list price | **Fitbit Air (US):** From $99.99 (Google Store US) [V, 2026-10-10]<br>**Fitbit Charge 6 (US):** $159.95 (Google Store US) [V, 2026-10-10]<br>**Fitbit Versa 4 (US):** $199.95 (Google Store US) [V, 2026-10-10]<br>**Pixel Watch 5 (US):** List from $399.99; on sale from $349.99 on 2026-10-10 (Google Store US) [V, 2026-10-10]<br>**Pixel Watch 4 (US):** From $349.99 (Google Store US) [V, 2026-10-10] |
+| Device or hardware list price | **Fitbit Air (US):** From $99.99 (Google Store US) [V, 2026-10-10]<br>**Fitbit Charge 6 (US):** $159.95 (Google Store US) [V, 2026-10-10]<br>**Fitbit Versa 4 (US):** $199.95 (Google Store US) [V, 2026-10-10]<br>**Pixel Watch 5 (US):** List from $399.99 (Google Store US, 2026-10-21); it was on sale from $349.99 on 2026-10-10 [V, 2026-10-21]<br>**Pixel Watch 4 (US):** From $349.99 (Google Store US) [V, 2026-10-10] |
 | Consumer subscription or membership price | **Google Health Premium (formerly Fitbit Premium), US:** $9.99 per month or $99 per year; 18 and over only. Not needed for API data access. [V, 2026-10-10] |
 | Research or academic pricing or discount | Not public [2026-10-10] |
 | Fees for API, SDK, platform or data access | **Google Health API:** No API usage fee is published. Restricted-scope apps above 100 users pay a third-party CASA assessor $500 to $4,500, renewed annually; holders of ISO/IEC 27001 or SOC 2 may qualify for a reduced-scope CASA Accelerator (integrator report). [C, 2026-10-10]<br>**Legacy Fitbit Web API:** Royalty-free platform licence; no fee published. [C, 2026-10-10] |

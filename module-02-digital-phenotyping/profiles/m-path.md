@@ -254,7 +254,7 @@
 | ISO/IEC 27001 status and evidence | Not public [2026-10-11] |
 | SOC 2 status and evidence | Not public [2026-10-11] |
 | FDA clearances, from the FDA database | Not public [2026-10-11] |
-| Where data is stored, and residency options | EU, but m-Path's own documents disagree on the host. The manual's storage page (updated 2026-10-09), the FAQ and the sub-processor list say survey data is on Microsoft Azure in Frankfurt; the privacy statement for app and dashboard instead names KU Leuven as server host, and KU Leuven is absent from the sub-processor list. The DPA keeps services in the EU/EEA unless the controller is outside it. Continuous sensing, Garmin-direct and media data go straight to the researcher's pCloud, OneDrive or SFTP server, wherever that is. Thryve wearable data passes through the manufacturer's servers and Thryve before reaching m-Path. (conflict) [U, 2026-10-11] |
+| Where data is stored, and residency options | EU. Survey data is on Microsoft Azure in Germany (Frankfurt), per the manual's storage page, the FAQ, the sub-processor list and, since an update between 2026-10-12 and 2026-10-19, the privacy statement, which earlier named KU Leuven as server host. The DPA keeps services in the EU/EEA unless the controller is outside it. Continuous sensing, Garmin-direct and media data go straight to the researcher's pCloud, OneDrive or SFTP server, wherever that is. Thryve wearable data passes through the manufacturer's servers and Thryve before reaching m-Path. [V, 2026-10-21] |
 
 <!-- facts:end -->
 
