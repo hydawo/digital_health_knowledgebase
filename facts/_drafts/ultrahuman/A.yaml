@@ -1,0 +1,667 @@
+# Draft record for ultrahuman, researcher A. Baseline run started 2026-10-11, resumed and every quote re-probed 2026-10-21.
+# Schema: facts/_schema.yaml
+name: Ultrahuman
+kind: wearable
+profile: module-01-wearables/profiles/emerging-platforms.md
+watch:
+- url: https://vision.ultrahuman.com/developer-docs
+  role: docs
+  fetch_url: https://vision.ultrahuman.com/_next/static/chunks/5898-7e1e79f1b88fcd98.js
+- url: https://ultrahumanapp.notion.site/API-Agreement-for-Developers-and-Partners-120755317a9180999ce3edcfc1047f58
+  role: terms
+- url: https://www.ultrahuman.com/global/ultrasignal/
+  role: developer_program
+- url: https://www.ultrahuman.com/blog/accessing-the-ultrahuman-partnership-api/
+  role: developer_program
+- url: https://www.ultrahuman.com/global/partners/
+  role: research_program
+- url: https://www.ultrahuman.com/global/pulsomics/
+  role: research_program
+- url: https://www.ultrahuman.com/science/explainers/pulsomics/
+  role: research_program
+- url: https://www.ultrahuman.com/global/ring/pro-vs-air/
+  role: pricing
+- url: https://www.ultrahuman.com/us/ring-pro/buy/
+  role: pricing
+- url: https://www.ultrahuman.com/global/heroes/
+  role: pricing
+- url: https://www.ultrahuman.com/privacyPolicy/
+  role: terms
+- url: https://www.ultrahuman.com/llms.txt
+  role: other
+- url: https://www.ultrahuman.com/legal/notice-march-2026
+  role: trust
+- url: https://api.fda.gov/device/registrationlisting.json?search=registration.owner_operator.firm_name:ultrahuman
+  role: regulatory
+facts:
+# ---------------- Research access ----------------
+- field: research_program
+  status: stated
+  value: 'Three routes, none a dedicated academic-data program. (1) Partnerships: a "Research Institutions" offering
+    (devices plus an enterprise dashboard), reached through a "Become a partner" contact. (2) Pulsomics: Ultrahuman''s
+    own opt-in in-app research program (raw overnight pulse windows plus participant context), registered with CTRI;
+    universities, hospitals and research groups can collaborate on study design, cohort access and co-authored
+    publications, but raw recordings stay with the Ultrahuman science team. (3) UltraSignal: an application-based
+    developer platform (loaned Ring AIR developer kit) for PPG, temperature and accelerometer streams.'
+  confidence: Corroborated
+  sources:
+  - url: https://www.ultrahuman.com/global/partners/
+    type: vendor_page
+    quote: Ultrahuman enables researchers to collect high-resolution, longitudinal biomarker data in real-world settings.
+    retrieved: '2026-10-21'
+  - url: https://www.ultrahuman.com/global/partners/
+    type: vendor_page
+    quote: A unified enterprise-grade dashboard for teams and clinicians to track sleep, recovery, movement, cycles, and
+      long-term health using continuous biomarkers.
+    retrieved: '2026-10-21'
+  - url: https://www.ultrahuman.com/global/pulsomics/
+    type: vendor_page
+    quote: Universities, hospitals and research groups can work with us on study design, cohort access and co-authored
+      publications.
+    retrieved: '2026-10-21'
+  - url: https://www.ultrahuman.com/science/explainers/pulsomics/
+    type: vendor_page
+    quote: Access to the raw recordings is limited to the Ultrahuman science team.
+    retrieved: '2026-10-21'
+  - url: https://www.ultrahuman.com/global/ultrasignal/
+    type: vendor_page
+    quote: Using the Ring AIR's Photoplethysmography (PPG), temperature and accelerometer data stream, developers can
+      now build bespoke algorithms on top of their data.
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: Corroborated rather than Verified because the research offering is described only in marketing copy; what a
+    research partnership actually delivers (dashboard features, export, data rights) is not documented publicly.
+- field: program_eligibility
+  status: stated
+  value: 'UltraSignal: anyone may apply; applications are reviewed and priority goes to applicants building an app that
+    uses Ring AIR data. Pulsomics collaboration: universities, hospitals and research groups. Pulsomics participants:
+    Ring AIR and Ring PRO users aged 18 and over. Partnerships page lists research institutions, healthcare providers,
+    sports teams, gyms and companies; no further eligibility criteria published.'
+  confidence: Verified
+  sources:
+  - url: https://www.ultrahuman.com/global/ultrasignal/
+    type: vendor_page
+    quote: Submit a brief application for an Ultrahuman Ring AIR developer kit. Applications will be reviewed and
+      priority will be given to applicants creating an app that takes advantage of Ultrahuman Ring AIR’s data.
+    retrieved: '2026-10-21'
+  - url: https://www.ultrahuman.com/global/pulsomics/
+    type: vendor_page
+    quote: Universities, hospitals and research groups can work with us on study design, cohort access and co-authored
+      publications.
+    retrieved: '2026-10-21'
+  - url: https://www.ultrahuman.com/global/pulsomics/
+    type: vendor_page
+    quote: Available on Ring AIR and Ring PRO, for users aged 18 and above
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+- field: program_application
+  status: stated
+  value: 'UltraSignal: submit a brief application; applications are reviewed and selected applicants are loaned a Ring
+    developer kit. OAuth Partner API: client ID and secret are issued at partner onboarding (not self-serve).
+    Partnerships and Pulsomics collaboration: contact form ("Become a partner" / "Partner with Ultrahuman"); no review
+    criteria or timelines published.'
+  confidence: Verified
+  sources:
+  - url: https://www.ultrahuman.com/global/ultrasignal/
+    type: vendor_page
+    quote: If selected, we’ll loan you Ultrahuman Ring developer kit to prepare your app.
+    retrieved: '2026-10-21'
+  - url: https://www.ultrahuman.com/blog/accessing-the-ultrahuman-partnership-api/
+    type: vendor_docs
+    quote: Client ID and Client Secret (partner onboarding)
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+- field: program_status
+  status: stated
+  value: 'All three routes are live as of 2026-10-21. Pulsomics is new (explainer updated 2026-08-13; registered with
+    CTRI as CTRI/2026/08/115584). The UltraSignal page still describes a Ring AIR developer kit, although Ring AIR is no
+    longer sold in the US.'
+  confidence: Corroborated
+  sources:
+  - url: https://www.ultrahuman.com/global/pulsomics/
+    type: vendor_page
+    quote: 'Registered with the Clinical Trials Registry – India: CTRI/2026/08/115584.'
+    retrieved: '2026-10-21'
+  - url: https://www.ultrahuman.com/science/explainers/pulsomics/
+    type: vendor_page
+    quote: Pulsomics is an opt-in research program that runs inside the Ultrahuman app.
+    retrieved: '2026-10-21'
+  - url: https://www.ultrahuman.com/llms.txt
+    type: vendor_page
+    quote: Application-based developer access to Ring AIR PPG, temperature, and accelerometer data streams for building
+      custom algorithms.
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: Whether UltraSignal is still accepting and loaning kits is not confirmable from public pages; the page is up and
+    the application link is live, but no intake dates are published.
+- field: developer_program_status
+  status: stated
+  value: 'Open. Two routes on the live UltraSignal API docs: a self-serve Personal API token from the developer portal
+    (vision.ultrahuman.com, login required), which reads your own data or another user''s after they enter your data
+    sharing code in the app; and an OAuth 2.0 Partner API for approved apps, with client credentials issued at partner
+    onboarding. A read-only MCP server (OAuth 2.1, per-user) is also documented.'
+  confidence: Verified
+  sources:
+  - url: https://vision.ultrahuman.com/developer-docs
+    type: vendor_docs
+    quote: Create your Personal API token from the developer portal
+    retrieved: '2026-10-21'
+  - url: https://vision.ultrahuman.com/developer-docs
+    type: vendor_docs
+    quote: Enter the data sharing code provided by the API developer
+    retrieved: '2026-10-21'
+  - url: https://www.ultrahuman.com/blog/accessing-the-ultrahuman-partnership-api/
+    type: vendor_docs
+    quote: Ultrahuman’s Partner API enables approved apps to read user-consented data via OAuth 2.0.
+    retrieved: '2026-10-21'
+  - url: https://vision.ultrahuman.com/developer-docs
+    type: vendor_docs
+    quote: "Per-user: tokens are bound to your account and can never return another user's data"
+    retrieved: '2026-10-21'
+    fetch_url: https://vision.ultrahuman.com/_next/static/chunks/5898-7e1e79f1b88fcd98.js
+  recheck_by: '2026-11-20'
+  note: The docs page renders tabs from a Next.js chunk whose hashed filename changes on redeploy (977-a694c83c... on
+    2026-10-11, 5898-7e1e79f1... on 2026-10-21). Update fetch_url when it 404s.
+- field: user_cap
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://vision.ultrahuman.com/developer-docs
+    type: vendor_docs
+    retrieved: '2026-10-21'
+  - url: https://ultrahumanapp.notion.site/API-Agreement-for-Developers-and-Partners-120755317a9180999ce3edcfc1047f58
+    type: vendor_legal
+    retrieved: '2026-10-21'
+  - url: https://www.ultrahuman.com/global/ultrasignal/
+    type: vendor_page
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: No participant or connected-user limit is published for the Personal token, OAuth Partner API or partnership
+    route. The API agreement only says usage must stay within "reasonable limits set by Ultrahuman".
+- field: academic_vs_commercial
+  status: unclear
+  confidence: Unclear
+  sources:
+  - url: https://ultrahumanapp.notion.site/API-Agreement-for-Developers-and-Partners-120755317a9180999ce3edcfc1047f58
+    type: vendor_legal
+    quote: Commercial usage of the API includes, but is not limited to, applications, products, or services that are
+      monetized or generate revenue through integration with our platform.
+    retrieved: '2026-10-21'
+  - url: https://ultrahumanapp.notion.site/API-Agreement-for-Developers-and-Partners-120755317a9180999ce3edcfc1047f58
+    type: vendor_legal
+    quote: Partners may not use the API or its data to conduct research, analysis, or competitive studies against
+      Ultrahuman or its products.
+    retrieved: '2026-10-21'
+  - url: https://www.ultrahuman.com/global/heroes/
+    type: vendor_page
+    quote: Healthcare Workers Athletes Scientists & Researchers Veterans & Military Education
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: The API agreement defines commercial usage but sets no separate academic tier or terms; the only
+    researcher-specific offer found is consumer "Heroes" ring pricing. The anti-competitive-research clause is worth
+    reading before any study that compares Ultrahuman against other devices. Agreement quotes were matched against the
+    Notion page's public JSON; quote_probe cannot render this JavaScript-only Notion page.
+# ---------------- Pricing ----------------
+- field: device_price
+  status: stated
+  value: Ring PRO USD 479 (US store, with PRO charging case); Ring AIR USD 349 (global comparison page) and GBP 329 list
+    in the UK store. Prices are set per regional store; Ring AIR is not sold in the US or Puerto Rico.
+  confidence: Verified
+  sources:
+  - url: https://www.ultrahuman.com/us/ring-pro/buy/
+    type: vendor_page
+    quote: Ring PRO (with PRO charging case) $ 479
+    retrieved: '2026-10-21'
+  - url: https://www.ultrahuman.com/global/ring/pro-vs-air/
+    type: vendor_page
+    quote: Ultrahuman Ring AIR $349
+    retrieved: '2026-10-21'
+  - url: https://www.ultrahuman.com/gb/ring/buy/
+    type: vendor_page
+    quote: Ring AIR £ 329
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: From a US address, /global/ring/buy/ now serves the Ring PRO page (2026-10-11 it showed Ring AIR $349), so the
+    pro-vs-air page is used for the Ring AIR USD price. The UK page also showed a sale price on 2026-10-11.
+- field: subscription_price
+  status: stated
+  value: No subscription is needed to access ring data. Optional paid add-ons exist, for example PowerPlugs (Cardio
+    Adaptability USD 2.9/month) and, on the US store, the "Ultrahuman Max" bundle starting at USD 9.99/month.
+  confidence: Verified
+  sources:
+  - url: https://www.ultrahuman.com/llms.txt
+    type: vendor_page
+    quote: Ultrahuman rings are a one-time purchase with no recurring subscription for accessing health data.
+    retrieved: '2026-10-21'
+  - url: https://www.ultrahuman.com/global/powerplugs/
+    type: vendor_page
+    quote: Cardio Adaptability $ 2.9/month
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: Ultrahuman Max ("Starting at $9.99/mo", bundling premium PowerPlugs, Jade Pro and UltrahumanX) appeared on the
+    US Ring PRO buy page on 2026-10-21 and was not there on 2026-10-11.
+- field: academic_pricing
+  status: stated
+  value: '"Heroes" special pricing on the ring covers scientists and researchers (with proof of eligibility). The
+    discount amount is not published, and no institutional or bulk research pricing is published.'
+  confidence: Verified
+  sources:
+  - url: https://www.ultrahuman.com/global/heroes/
+    type: vendor_page
+    quote: Healthcare Workers Athletes Scientists & Researchers Veterans & Military Education
+    retrieved: '2026-10-21'
+  - url: https://www.ultrahuman.com/global/heroes/
+    type: vendor_page
+    quote: You may be asked to provide ID or proof of eligibility*
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+- field: api_platform_fees
+  status: stated
+  value: API Sandbox and Production access are unpaid; a Premium Access tier with priority support exists (price not
+    published). Enterprise partners can have "dedicated subscription plans" (price not published). Ultrahuman must give
+    30 days' notice before introducing fees.
+  confidence: Verified
+  sources:
+  - url: https://ultrahumanapp.notion.site/API-Agreement-for-Developers-and-Partners-120755317a9180999ce3edcfc1047f58
+    type: vendor_legal
+    quote: Both Sandbox and Production Access are provided on an unpaid, as-is basis.
+    retrieved: '2026-10-21'
+  - url: https://ultrahumanapp.notion.site/API-Agreement-for-Developers-and-Partners-120755317a9180999ce3edcfc1047f58
+    type: vendor_legal
+    quote: For partners needing enhanced support, Premium Access is available, which includes priority support from our
+      team to assist with integration and troubleshooting.
+    retrieved: '2026-10-21'
+  - url: https://vision.ultrahuman.com/developer-docs
+    type: vendor_docs
+    quote: For enterprise partners with dedicated subscription plans, special access can be configured to retrieve
+      patient data directly by email.
+    retrieved: '2026-10-21'
+    fetch_url: https://vision.ultrahuman.com/_next/static/chunks/5898-7e1e79f1b88fcd98.js
+  recheck_by: '2026-11-20'
+  note: Agreement quotes were matched against the Notion page's public JSON; quote_probe cannot render this Notion page.
+- field: minimum_commitment
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://www.ultrahuman.com/global/partners/
+    type: vendor_page
+    retrieved: '2026-10-21'
+  - url: https://ultrahumanapp.notion.site/API-Agreement-for-Developers-and-Partners-120755317a9180999ce3edcfc1047f58
+    type: vendor_legal
+    retrieved: '2026-10-21'
+  - url: https://www.ultrahuman.com/global/ultrasignal/
+    type: vendor_page
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: No minimum device order or contract term published. The API agreement lets either party terminate with 30 days'
+    notice.
+- field: quote_required
+  status: stated
+  value: Consumer ring and add-on prices are public per store. Research, enterprise and partnership pricing is not
+    published; the partners page offers only a "Become a partner" contact route.
+  confidence: Corroborated
+  sources:
+  - url: https://www.ultrahuman.com/global/partners/
+    type: vendor_page
+    quote: Ultrahuman enables researchers to collect high-resolution, longitudinal biomarker data in real-world settings.
+    retrieved: '2026-10-21'
+  - url: https://www.ultrahuman.com/us/ring-pro/buy/
+    type: vendor_page
+    quote: Ring PRO (with PRO charging case) $ 479
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+# ---------------- Data access and terms ----------------
+- field: raw_streams
+  status: stated
+  value: 'Raw PPG only, via the PPG Recordings API: sessions recorded by the account holder in the app''s Developer
+    Mode, downloadable as gzip-compressed NDJSON. The API returns only the token owner''s own recordings, so it does
+    not scale to a participant cohort without per-participant accounts. UltraSignal markets PPG, temperature and
+    accelerometer streams via a loaned Ring AIR developer kit; no public API documents raw temperature or accelerometer
+    access. The daily metrics API returns processed values only.'
+  confidence: Verified
+  sources:
+  - url: https://vision.ultrahuman.com/developer-docs
+    type: vendor_docs
+    quote: The PPG Recordings API provides access to raw photoplethysmography (PPG) data recorded through Developer Mode
+      on Ultrahuman Ring.
+    retrieved: '2026-10-21'
+    fetch_url: https://vision.ultrahuman.com/_next/static/chunks/5898-7e1e79f1b88fcd98.js
+  - url: https://vision.ultrahuman.com/developer-docs
+    type: vendor_docs
+    quote: This API returns only your own PPG recordings (associated with your partner account email)
+    retrieved: '2026-10-21'
+    fetch_url: https://vision.ultrahuman.com/_next/static/chunks/5898-7e1e79f1b88fcd98.js
+  - url: https://vision.ultrahuman.com/developer-docs
+    type: vendor_docs
+    quote: 'Developer Mode must be enabled in your Ultrahuman app before you can create PPG recordings:'
+    retrieved: '2026-10-21'
+    fetch_url: https://vision.ultrahuman.com/_next/static/chunks/5898-7e1e79f1b88fcd98.js
+  - url: https://www.ultrahuman.com/global/ultrasignal/
+    type: vendor_page
+    quote: Using the Ring AIR's Photoplethysmography (PPG), temperature and accelerometer data stream, developers can
+      now build bespoke algorithms on top of their data.
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+- field: derived_metrics
+  status: stated
+  value: 'Daily metrics API: heart rate, skin temperature, HRV, steps, motion, night and sleep resting HR, sleep (score,
+    total, efficiency, time in bed, REM/deep/light, temperature deviation, HR drop, restorative sleep, movements,
+    morning alertness, full sleep cycles, tosses and turns, average body temperature), recovery and recovery index,
+    movement index, VO2 max, SpO2, active minutes, and, with the CGM, glucose, metabolic score, glucose variability,
+    average glucose, estimated HbA1c and time in target. Separate APIs cover Home environment sensors and Blood Vision
+    reports.'
+  confidence: Verified
+  sources:
+  - url: https://vision.ultrahuman.com/developer-docs
+    type: vendor_docs
+    quote: hr Heart rate measurements throughout the day in beats per minute (BPM)
+    retrieved: '2026-10-21'
+  - url: https://vision.ultrahuman.com/developer-docs
+    type: vendor_docs
+    quote: glucose Continuous glucose monitoring data in mg/dL
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+- field: sampling_rates
+  status: stated
+  value: Raw PPG recordings are typically 50 Hz. The temporal resolution of daily-metric series (heart rate,
+    temperature, HRV and so on) is not documented; the example response is illustrative only.
+  confidence: Verified
+  sources:
+  - url: https://vision.ultrahuman.com/developer-docs
+    type: vendor_docs
+    quote: Sampling frequency (typically 50 Hz)
+    retrieved: '2026-10-21'
+    fetch_url: https://vision.ultrahuman.com/_next/static/chunks/5898-7e1e79f1b88fcd98.js
+  recheck_by: '2026-11-20'
+- field: history_depth
+  status: unclear
+  confidence: Unclear
+  sources:
+  - url: https://vision.ultrahuman.com/developer-docs
+    type: vendor_docs
+    quote: Date range queries cannot exceed 7 days
+    retrieved: '2026-10-21'
+  - url: https://vision.ultrahuman.com/developer-docs
+    type: vendor_docs
+    quote: Date range cannot exceed 365 days
+    retrieved: '2026-10-21'
+    fetch_url: https://vision.ultrahuman.com/_next/static/chunks/5898-7e1e79f1b88fcd98.js
+  - url: https://www.ultrahuman.com/global/ring/pro-vs-air/
+    type: vendor_page
+    quote: On-Device Storage Up to 250 days of data (internal and external flash) 4 days of data (internal flash only)
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: Docs cap each request window (7 days for daily metrics and PPG epoch queries, 365 days for blood reports) but
+    never say how far back data can be fetched in total. On-ring storage before sync is up to 250 days on Ring PRO and
+    4 days on Ring AIR, which matters for participants who sync rarely.
+- field: export_routes
+  status: stated
+  value: 'REST API at partner.ultrahuman.com (daily metrics, Home metrics, PPG recordings, Blood test reports and
+    details) via a Personal API token or OAuth 2.0 (scopes ring_data, cgm_data, profile; access tokens valid for a
+    week); raw PPG files as pre-signed download URLs that expire after 1 hour; a read-only MCP server for AI assistants;
+    and an enterprise dashboard for partners. No in-app CSV export documented.'
+  confidence: Verified
+  sources:
+  - url: https://vision.ultrahuman.com/developer-docs
+    type: vendor_docs
+    quote: 'Base URL: https://partner.ultrahuman.com/api/v1/partner/daily_metrics'
+    retrieved: '2026-10-21'
+  - url: https://vision.ultrahuman.com/developer-docs
+    type: vendor_docs
+    quote: Access tokens are required to access protected resources. They are issued after a successful token exchange
+      and are valid for a week, post week they need to be refreshed.
+    retrieved: '2026-10-21'
+    fetch_url: https://vision.ultrahuman.com/_next/static/chunks/5898-7e1e79f1b88fcd98.js
+  - url: https://vision.ultrahuman.com/developer-docs
+    type: vendor_docs
+    quote: Download URLs are pre-signed and expire after 1 hour
+    retrieved: '2026-10-21'
+    fetch_url: https://vision.ultrahuman.com/_next/static/chunks/5898-7e1e79f1b88fcd98.js
+  - url: https://vision.ultrahuman.com/developer-docs
+    type: vendor_docs
+    quote: Recording data is stored in NDJSON format (gzip compressed)
+    retrieved: '2026-10-21'
+    fetch_url: https://vision.ultrahuman.com/_next/static/chunks/5898-7e1e79f1b88fcd98.js
+  recheck_by: '2026-11-20'
+- field: rate_limits
+  status: stated
+  value: 'PPG Recordings API: 200 requests per minute. MCP server: a cost-weighted per-user budget, HTTP 429 with
+    Retry-After when exceeded. No numeric limit published for the daily metrics or OAuth endpoints; the API agreement
+    allows throttling for excessive use.'
+  confidence: Verified
+  sources:
+  - url: https://vision.ultrahuman.com/developer-docs
+    type: vendor_docs
+    quote: Rate limit exceeded (200 requests/minute)
+    retrieved: '2026-10-21'
+    fetch_url: https://vision.ultrahuman.com/_next/static/chunks/5898-7e1e79f1b88fcd98.js
+  - url: https://vision.ultrahuman.com/developer-docs
+    type: vendor_docs
+    quote: cost-weighted per user; over budget returns HTTP 429 with Retry-After
+    retrieved: '2026-10-21'
+    fetch_url: https://vision.ultrahuman.com/_next/static/chunks/5898-7e1e79f1b88fcd98.js
+  - url: https://ultrahumanapp.notion.site/API-Agreement-for-Developers-and-Partners-120755317a9180999ce3edcfc1047f58
+    type: vendor_legal
+    quote: API usage must remain within reasonable limits set by Ultrahuman.
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: The 200/minute figure appears in the PPG Recordings error list; whether it applies to the other endpoints is
+    not stated.
+- field: retention_terms
+  status: stated
+  value: 'API agreement: partners may not store data beyond what is necessary for legitimate use; all API data remains
+    Ultrahuman''s property, and partners hold only limited, revocable usage rights. Privacy policy: Ultrahuman keeps
+    personal data only as long as necessary or legally required, but may keep de-identified data longer for research
+    and statistics.'
+  confidence: Verified
+  sources:
+  - url: https://ultrahumanapp.notion.site/API-Agreement-for-Developers-and-Partners-120755317a9180999ce3edcfc1047f58
+    type: vendor_legal
+    quote: Partners shall not collect, store, or distribute any data retrieved via the API beyond what is necessary for
+      the legitimate use of the API.
+    retrieved: '2026-10-21'
+  - url: https://ultrahumanapp.notion.site/API-Agreement-for-Developers-and-Partners-120755317a9180999ce3edcfc1047f58
+    type: vendor_legal
+    quote: All data transmitted through the API remains the property of the Company.
+    retrieved: '2026-10-21'
+  - url: https://www.ultrahuman.com/privacyPolicy/
+    type: vendor_legal
+    quote: We keep your information only for as long as necessary to provide you with our Products and Services or as
+      may be required under any applicable law.
+    retrieved: '2026-10-21'
+  - url: https://www.ultrahuman.com/privacyPolicy/
+    type: vendor_legal
+    quote: We may keep de-identified data for research and statistical purposes for a longer period.
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: The data-ownership clause conflicts in spirit with a study team holding a research dataset; clarify in any
+    partnership contract. Agreement quotes were matched against the Notion page's public JSON.
+- field: ai_training_terms
+  status: stated
+  value: 'The API agreement says nothing about partners training AI or ML models on API data (it bars redistribution,
+    competitive research and reverse-engineering Ultrahuman''s algorithms). On its own side, Ultrahuman''s privacy
+    policy lists developing machine learning algorithms "with your consent", and Pulsomics explicitly pools opted-in
+    raw pulse data to build models.'
+  confidence: Corroborated
+  sources:
+  - url: https://www.ultrahuman.com/privacyPolicy/
+    type: vendor_legal
+    quote: Developing machine learning algorithms and tools to improve targeting of Products and Services, and other
+      products and services we offer you, with your consent.
+    retrieved: '2026-10-21'
+  - url: https://www.ultrahuman.com/science/explainers/pulsomics/
+    type: vendor_page
+    quote: The aim is to combine these to build wellness models that can read from the Ring alone.
+    retrieved: '2026-10-21'
+  - url: https://ultrahumanapp.notion.site/API-Agreement-for-Developers-and-Partners-120755317a9180999ce3edcfc1047f58
+    type: vendor_legal
+    quote: Partners may not use the API or its data to conduct research, analysis, or competitive studies against
+      Ultrahuman or its products.
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+- field: deprecations
+  status: stated
+  value: 'Ring AIR is no longer sold in the US or Puerto Rico, following the USITC limited exclusion order in
+    337-TA-1398 (final determination August 2025, Oura patent); the redesigned Ring PRO is the US product. The API
+    agreement reserves the right to modify or discontinue the API with at least 30 days'' notice for significant
+    changes. The older Notion-hosted API docs used /api/v1/metrics; current docs use /api/v1/partner/daily_metrics,
+    with no published deprecation date for the old path.'
+  confidence: Verified
+  sources:
+  - url: https://www.ultrahuman.com/llms.txt
+    type: vendor_page
+    quote: Not sold in the US or Puerto Rico
+    retrieved: '2026-10-21'
+  - url: https://www.usitc.gov/system/files/secretary/fed_reg_notices/337/337_1398_notice08212025sgl.pdf
+    type: regulator_db
+    quote: ISSUANCE OF A LIMITED EXCLUSION ORDER AND CEASE AND DESIST ORDERS
+    retrieved: '2026-10-21'
+  - url: https://ultrahumanapp.notion.site/API-Agreement-for-Developers-and-Partners-120755317a9180999ce3edcfc1047f58
+    type: vendor_legal
+    quote: Company reserves the right to modify or discontinue the API (or any part of it) at any time. For significant
+      changes, including those that materially affect the functionality of the API, Company will provide Partners with
+      at least 30 days’ prior notice.
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: UltraSignal is still marketed around a Ring AIR developer kit, so US-based applicants should confirm which
+    hardware they would receive.
+# ---------------- Compliance ----------------
+- field: baa
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://www.ultrahuman.com/privacyPolicy/
+    type: vendor_legal
+    retrieved: '2026-10-21'
+  - url: https://ultrahumanapp.notion.site/API-Agreement-for-Developers-and-Partners-120755317a9180999ce3edcfc1047f58
+    type: vendor_legal
+    retrieved: '2026-10-21'
+  - url: https://www.ultrahuman.com/global/partners/
+    type: vendor_page
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
+  note: No BAA offer found. The privacy policy says Ultrahuman is not a HIPAA covered entity; whether it signs BAAs with
+    covered-entity research partners needs vendor confirmation.
+- field: dpa
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://www.ultrahuman.com/privacyPolicy/
+    type: vendor_legal
+    retrieved: '2026-10-21'
+  - url: https://ultrahumanapp.notion.site/API-Agreement-for-Developers-and-Partners-120755317a9180999ce3edcfc1047f58
+    type: vendor_legal
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
+  note: The privacy policy says Ultrahuman's own suppliers must sign a DPA ("All suppliers and service providers must
+    enter into a Data Processing Agreement (DPA)"), but no DPA offered to customers, partners or research sponsors is
+    published.
+- field: hipaa_statement
+  status: stated
+  value: 'Ultrahuman says it is not a HIPAA covered entity but strives to meet HIPAA requirements for US customers'' health
+    data. The site footer claims "ISO27001, GDPR, and HIPAA compliant."'
+  confidence: Corroborated
+  sources:
+  - url: https://www.ultrahuman.com/privacyPolicy/
+    type: vendor_legal
+    quote: We do not provide medical care or advise and are thus not a Covered Entity under HIPAA
+    retrieved: '2026-10-21'
+  - url: https://www.ultrahuman.com/privacyPolicy/
+    type: vendor_legal
+    quote: in respect of the health data of our US-based customers, we strive to comply with all of the requirements as
+      per HIPAA.
+    retrieved: '2026-10-21'
+  - url: https://www.ultrahuman.com/global/partners/
+    type: vendor_page
+    quote: ISO27001, GDPR, and HIPAA compliant.
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
+- field: gdpr_statement
+  status: stated
+  value: Ultrahuman states it complies with UK and EU GDPR.
+  confidence: Corroborated
+  sources:
+  - url: https://www.ultrahuman.com/privacyPolicy/
+    type: vendor_legal
+    quote: We are compliant with the data protection and privacy laws of the jurisdictions where we are present including
+      UK and EU GDPR.
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
+- field: iso27001
+  status: stated
+  value: Ultrahuman states it is ISO 27001 certified and will share the certificate on request. No certificate, number,
+    scope or certification body is published.
+  confidence: Corroborated
+  sources:
+  - url: https://www.ultrahuman.com/privacyPolicy/
+    type: vendor_legal
+    quote: We are proud to say that we are ISO 27001 certified organization. We are happy to share the certificate upon
+      request.
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
+  note: 'A public notice reports a security incident on 2026-03-27: "On 27 March 2026, an unauthorised third-party gained
+    read-only access to an internal system used for internal analytics." (https://www.ultrahuman.com/legal/notice-march-2026,
+    read 2026-10-21). Some users'' fitness-related data was in the accessed dataset.'
+- field: soc2
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://www.ultrahuman.com/privacyPolicy/
+    type: vendor_legal
+    retrieved: '2026-10-21'
+  - url: https://www.ultrahuman.com/global/partners/
+    type: vendor_page
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
+  note: No SOC 2 report, attestation or trust center found; the security claims cite ISO 27001 only.
+- field: fda_clearances
+  status: stated
+  value: No FDA 510(k) or PMA found for Ultrahuman. openFDA holds one establishment registration and device listing
+    (owner Ultrahuman Healthcare Pvt Ltd) for "Ultrahuman Fertile Window", product code LHD (Device, Fertility
+    Diagnostic, Proceptive), with no K or PMA number. A listing is not a clearance.
+  confidence: Verified
+  sources:
+  - url: https://api.fda.gov/device/registrationlisting.json?search=registration.owner_operator.firm_name:ultrahuman
+    type: regulator_db
+    quote: Ultrahuman Fertile Window
+    retrieved: '2026-10-21'
+  - url: https://api.fda.gov/device/registrationlisting.json?search=registration.owner_operator.firm_name:ultrahuman
+    type: regulator_db
+    quote: Device, Fertility Diagnostic, Proceptive
+    retrieved: '2026-10-21'
+  - url: https://api.fda.gov/device/510k.json?search=applicant:ultrahuman
+    type: regulator_db
+    quote: No matches found!
+    retrieved: '2026-10-21'
+  - url: https://api.fda.gov/device/pma.json?search=applicant:ultrahuman
+    type: regulator_db
+    quote: No matches found!
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
+  note: Also searched 510(k) by device_name ultrahuman and "fertile window", and classification and UDI by name, all
+    with no matches. AFib detection is marketed (partners page) without any FDA clearance in the database.
+- field: data_residency
+  status: stated
+  value: Data may be stored and processed in any country where Ultrahuman operates, including the US; named storage
+    sub-processors are AWS, Snowflake and MongoDB Atlas in the United States. Raw PPG download URLs in the API docs
+    point to an AWS ap-south-1 (Mumbai) bucket. No customer-selectable residency is published. Ultrahuman is an Indian
+    company, and the API agreement is governed by Indian law.
+  confidence: Corroborated
+  sources:
+  - url: https://www.ultrahuman.com/privacyPolicy/
+    type: vendor_legal
+    quote: We may transfer your information to third-parties acting on our behalf, for the purposes of storage such as
+      including AWS, Snowflake and MongoDB Atlas in the United States.
+    retrieved: '2026-10-21'
+  - url: https://www.ultrahuman.com/privacyPolicy/
+    type: vendor_legal
+    quote: You agree that information collected may be stored and processed in any country including United States,
+      where we rent servers
+    retrieved: '2026-10-21'
+  - url: https://ultrahumanapp.notion.site/API-Agreement-for-Developers-and-Partners-120755317a9180999ce3edcfc1047f58
+    type: vendor_legal
+    quote: This Agreement shall be governed by and construed in accordance with the laws of India
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
+  note: The ap-south-1 bucket host appears only in an example response in the docs JavaScript, so it is inference rather
+    than a stated residency term.
