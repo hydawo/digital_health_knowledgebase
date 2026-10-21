@@ -1,0 +1,598 @@
+# Draft record for fitabase (researcher A, 2026-10-11). Schema: facts/_schema.yaml
+name: Fitabase
+kind: intermediary
+profile: module-01-wearables/profiles/data-intermediaries.md
+watch:
+- url: https://www.fitabase.com/how-it-works/pricing/
+  role: pricing
+- url: https://www.fitabase.com/resources/faq/
+  role: other
+- url: https://www.fitabase.com/terms/
+  role: terms
+- url: https://www.fitabase.com/privacy/
+  role: terms
+- url: https://www.fitabase.com/resources/knowledge-base/working-with-the-irb/data-security-privacy/
+  role: trust
+- url: https://www.fitabase.com/media/1780/fitabasesecurityandprivacy.pdf
+  role: trust
+- url: https://www.fitabase.com/resources/knowledge-base/fitabase-api/what-is-the-fitabase-api/
+  role: developer_program
+- url: https://www.fitabase.com/resources/knowledge-base/fitabase-api/available-core-apis/
+  role: docs
+- url: https://www.fitabase.com/resources/knowledge-base/learn-about-fitbit-data/data-resolutions/
+  role: docs
+- url: https://www.fitabase.com/resources/knowledge-base/learn-about-garmin-data/garmin-datasets/
+  role: docs
+- url: https://www.fitabase.com/resources/knowledge-base/google-health-api-migration/key-dates/
+  role: changelog
+- url: https://www.fitabase.com/resources/knowledge-base/google-health-api-migration/migration-faq/
+  role: changelog
+- url: https://www.fitabase.com/resources/knowledge-base/exporting-data/data-dictionaries/
+  role: docs
+- url: https://developers.google.com/health/reference/rest/v4beta/users
+  role: changelog
+facts:
+# ---------------- Research access ----------------
+- field: research_program
+  status: stated
+  value: Fitabase itself is the research offering, a hosted data management platform for studies using Fitbit (now
+    Google Health) and Garmin wearables, with dashboards, compliance monitoring and exports. There is no separate
+    research or academic program on top of it.
+  confidence: Corroborated
+  sources:
+  - url: https://www.fitabase.com/resources/faq/
+    type: vendor_page
+    quote: "Fitabase is a comprehensive data management platform designed to support innovative research projects using wearable and internet-connected devices."
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/
+    type: vendor_page
+    quote: "Fitabase has been used in over 1,100 research studies around the world."
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: program_eligibility
+  status: stated
+  value: Aimed at projects, studies and clinical trials that deploy multiple wearables; individuals cannot use it to
+    access their own data. No further eligibility criteria are published.
+  confidence: Corroborated
+  sources:
+  - url: https://www.fitabase.com/resources/faq/
+    type: vendor_page
+    quote: "Fitabase is a comprehensive data management platform intended to support projects, studies, and clinical trials that deploy multiple wearable devices. At this time we do not support downloading or access to personal data."
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: program_application
+  status: stated
+  value: No application or review step published. Prospective customers request a demo or a quote; Fitabase then
+    issues an invitation code and account creation link. Studies that cannot use participants' personal Google
+    accounts can request Google demo accounts through a separate Google research application that needs an IRB
+    approval or waiver, and Fitabase supplies the client ID.
+  confidence: Corroborated
+  sources:
+  - url: https://www.fitabase.com/how-it-works/pricing/
+    type: vendor_page
+    quote: "Contact our team for a customized quote based on your specific research needs."
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/resources/knowledge-base/getting-started/setting-up-your-fitabase-project/
+    type: vendor_docs
+    quote: "Once you've received your invitation code and account creation link from Fitabase you'll be able to create your Fitabase project."
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/resources/knowledge-base/getting-started/google-demo-accounts/
+    type: vendor_docs
+    quote: "To use these accounts, you'll need to complete a research application with Google."
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: program_status
+  status: stated
+  value: Active. Fitbit data collection is moving from the Fitbit Web API to the Google Health API; participant
+    reauthorization was due to open mid-to-late October 2026 (exact date not yet set on 2026-10-11).
+  confidence: Corroborated
+  sources:
+  - url: https://www.fitabase.com/resources/knowledge-base/google-health-api-migration/key-dates/
+    type: vendor_docs
+    quote: "Mid-to-late October 2026 (exact date TBD) Reauthorization opens."
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/resources/knowledge-base/google-health-api-migration/migration-overview/
+    type: vendor_docs
+    quote: "All apps built on the Fitbit Web API, Fitabase included, are moving to the Google Health API."
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: developer_program_status
+  status: stated
+  value: The Fitabase API is available to Fitabase customers as a paid add-on (not a public developer program).
+    Upstream, Google says it is not onboarding new projects to the Google Health API, so a study wanting Fitbit data
+    after 2026-10-30 without its own Google access currently depends on an approved intermediary such as Fitabase.
+  confidence: Corroborated
+  sources:
+  - url: https://www.fitabase.com/resources/knowledge-base/fitabase-api/what-is-the-fitabase-api/
+    type: vendor_docs
+    quote: "The Fitabase API and automated batch exports are currently offered as separate add ons to the Fitabase platform. Please inquire about pricing."
+    retrieved: '2026-10-11'
+  - url: https://developers.google.com/health/reference/rest/v4beta/users
+    type: secondary
+    quote: "While we are not onboarding new projects at this time, we are actively working to open access to more developers"
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: user_cap
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://www.fitabase.com/how-it-works/pricing/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/resources/faq/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/terms/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: No participant or project limit is published; pricing is custom per study.
+- field: academic_vs_commercial
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://www.fitabase.com/how-it-works/pricing/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/how-it-works/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: The site describes one research-focused offering (Fitabase Core plus add-ons) and does not distinguish
+    academic from commercial customers. It lists clinical trials and healthcare innovation among the uses served.
+# ---------------- Pricing ----------------
+- field: device_price
+  status: not_applicable
+  recheck_by: '2026-11-09'
+  note: Fitabase does not sell devices; studies buy Fitbit, Google or Garmin devices themselves or use participants'
+    own. No device sales page was found on fitabase.com.
+- field: subscription_price
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.fitabase.com/how-it-works/pricing/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: 'The pricing page states "Custom Pricing for Every Study" and lists Fitabase Core features without a price.'
+- field: academic_pricing
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://www.fitabase.com/how-it-works/pricing/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/resources/faq/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: api_platform_fees
+  status: stated
+  value: Platform fee is custom per study. The Fitabase API, automated batch exports (Batch Export API), Food and
+    Weight exports and SMS messaging are each charged extra; SMS is billed partly per message segment. No amounts
+    are published.
+  confidence: Corroborated
+  sources:
+  - url: https://www.fitabase.com/resources/knowledge-base/fitabase-api/available-core-apis/
+    type: vendor_docs
+    quote: "Use of this API is an additional charge on top of API access. Please inquire about pricing."
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/resources/knowledge-base/fitabase-api/automatic-file-transfers-with-the-batch-export-api/
+    type: vendor_docs
+    quote: "Automated batch exports are a premium offering in addition to basic API access."
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/resources/knowledge-base/exporting-data/individual-report-page-exports/
+    type: vendor_docs
+    quote: "Food and Weight data exports are a premium feature."
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/resources/knowledge-base/messaging-reminders/sms-messaging-details/
+    type: vendor_docs
+    quote: "we bill partially based on the number of text message segments sent"
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: minimum_commitment
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://www.fitabase.com/how-it-works/pricing/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/terms/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: quote_required
+  status: stated
+  value: 'Yes. All pricing is a custom quote per study.'
+  confidence: Verified
+  sources:
+  - url: https://www.fitabase.com/how-it-works/pricing/
+    type: vendor_page
+    quote: "Because no two studies are the same, Fitabase will work with you to craft an exact pricing plan."
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/how-it-works/pricing/
+    type: vendor_page
+    quote: "Contact our team for a customized quote based on your specific research needs."
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+# ---------------- Data access and terms ----------------
+- field: raw_streams
+  status: stated
+  scope: Fitbit / Google Health
+  value: No raw sensor signals (no raw accelerometer or PPG). The highest-resolution data the partner API provides,
+    including second-level heart rate (every 3 to 15 seconds), 30-second sleep stages and ECG logs. No GPS or
+    location data is collected.
+  confidence: Corroborated
+  sources:
+  - url: https://www.fitabase.com/resources/faq/
+    type: vendor_page
+    quote: "The Fitabase platform offers access to the highest resolution of data available from our partner APIs."
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/resources/knowledge-base/learn-about-fitbit-data/data-resolutions/
+    type: vendor_docs
+    quote: "Heart Rate - variable sampling with readings every 3-15 seconds."
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/resources/knowledge-base/working-with-the-irb/data-security-privacy/
+    type: vendor_docs
+    quote: "No GPS or other location information is collected."
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: raw_streams
+  status: stated
+  scope: Garmin
+  value: Enhanced beat-to-beat intervals (EBBI) captured at the wrist during sleep, with a per-beat confidence flag,
+    from devices with a gen 4 or later sensor, delivered through the Garmin API; 15-second heart rate.
+  confidence: Corroborated
+  sources:
+  - url: https://www.fitabase.com/resources/knowledge-base/learn-about-garmin-data/collecting-enhanced-beat-to-beat-interval-data-using-garmin-devices/
+    type: vendor_docs
+    quote: "This dataset includes the time beat signature, as well as a confidence variable that indicates whether a beat might be of higher error."
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/resources/knowledge-base/learn-about-garmin-data/collecting-enhanced-beat-to-beat-interval-data-using-garmin-devices/
+    type: vendor_docs
+    quote: "It is captured during sleep directly from the wrist."
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/resources/knowledge-base/learn-about-garmin-data/collecting-enhanced-beat-to-beat-interval-data-using-garmin-devices/
+    type: vendor_docs
+    quote: "Garmin EBBI data can be collected using any Garmin device with a gen 4 sensor or higher."
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: derived_metrics
+  status: stated
+  scope: Fitbit / Google Health
+  value: Steps, intensity and METs, calories, sleep and sleep stages, breathing rate, HRV, SpO2, Active Zone Minutes,
+    cardio fitness score, floors, distance, resting heart rate, skin and core temperature, wear time, plus weight,
+    food and activity logs.
+  confidence: Corroborated
+  sources:
+  - url: https://www.fitabase.com/resources/knowledge-base/learn-about-fitbit-data/data-resolutions/
+    type: vendor_docs
+    quote: "Day Steps Intensity - time spent in activity intensity classifications Calories (Estimated Energy Expenditure) Sleep and Sleep stages Breathing Rate HRV SpO2 Active Zone Minutes Cardio Fitness Score Floors Distance Food Logs Activity Logs Resting Heart Rate"
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: derived_metrics
+  status: stated
+  scope: Garmin
+  value: Daily stress, steps, floors, VO2max, fitness age, pulse ox, Move IQ, body composition, calories, nightly HRV
+    average and 5-minute high, wear time and activity logs; 15-minute epochs; sleep with Garmin validation levels.
+  confidence: Corroborated
+  sources:
+  - url: https://www.fitabase.com/resources/knowledge-base/learn-about-garmin-data/garmin-datasets/
+    type: vendor_docs
+    quote: "Day -Stress -Steps -Floors -VO2max -Fitness Age -PulseOx -MoveIQ -Body composition -Calorie expenditure -HRV nightly average and 5-minute high"
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: sampling_rates
+  status: stated
+  scope: Fitbit / Google Health
+  value: Heart rate every 3 to 15 seconds (variable); sleep stages 30 seconds; minute-level steps, intensity, METs,
+    calories, SpO2, AZM; HRV 5-minute readings; hourly and daily totals.
+  confidence: Corroborated
+  sources:
+  - url: https://www.fitabase.com/resources/knowledge-base/learn-about-fitbit-data/data-resolutions/
+    type: vendor_docs
+    quote: "Seconds Heart Rate - variable sampling with readings every 3-15 seconds. Sleep stages - 30 seconds"
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/resources/knowledge-base/learn-about-fitbit-data/data-resolutions/
+    type: vendor_docs
+    quote: "HRV - 5-minute readings"
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: sampling_rates
+  status: stated
+  scope: Garmin
+  value: Heart rate 15 seconds; stress 3 minutes; activity epochs 15 minutes; sleep as records at each stage change;
+    beat-to-beat intervals during sleep.
+  confidence: Corroborated
+  sources:
+  - url: https://www.fitabase.com/resources/knowledge-base/learn-about-garmin-data/garmin-datasets/
+    type: vendor_docs
+    quote: "Minute -Stress (3min) -Sleep (measurement records with each change in sleep stage) -PulseOx Seconds -HR (15sec)"
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/resources/knowledge-base/learn-about-garmin-data/garmin-datasets/
+    type: vendor_docs
+    quote: "15 Min Epochs -Steps -Heart rate -Distance -MET -Intensity -MeanMotion, MaxMotion"
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: history_depth
+  status: stated
+  scope: Garmin
+  value: Data before connection can be pulled by setting sync dates in the past, but only if the participant turns on
+    the off-by-default Historical Data permission in Garmin Connect. No maximum look-back is published.
+  confidence: Corroborated
+  sources:
+  - url: https://www.fitabase.com/resources/knowledge-base/learn-about-garmin-data/capturing-historical-garmin-data/
+    type: vendor_docs
+    quote: "Fitabase can pull historical data from a participant if you set sync dates to a window in the past. However, this option is turned off by default on Garmin Connect, and participants must explicitly opt into allowing Fitabase to pull this historical data."
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: history_depth
+  status: conflict
+  scope: Fitbit / Google Health
+  value: One Fitabase article says data from before the Fitbit account was connected cannot be retrieved; the example
+    consent form page describes a Fitabase study that included historical data collection with personal Fitbit
+    devices. Separately, devices hold minute and second data for only 5 to 7 days before sync.
+  confidence: Unclear
+  sources:
+  - url: https://www.fitabase.com/resources/knowledge-base/getting-started/example-markdown-article/
+    type: vendor_docs
+    quote: "Fitabase cannot retrieve historical data from before the participant's Fitbit account was connected."
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/resources/knowledge-base/working-with-the-irb/example-consent-form/
+    type: vendor_docs
+    quote: "This study included: Historical data collection Online Fitabase authorization Use of participants' personal Fitbit devices/data"
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/resources/knowledge-base/learn-about-fitbit-data/data-availability-integrity/
+    type: vendor_docs
+    quote: "Google Health devices only store high resolution (minute or second) data for 5-7 days, depending on the device model."
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: The first source's URL slug is "example-markdown-article" though it is titled "Setting Up a New Participant
+    with a Fitbit Device" (last updated February 6, 2026), so it may be template text. Ask Fitabase.
+- field: export_routes
+  status: stated
+  value: CSV downloads from individual participant report pages and the Batch Export Tool (per-participant or merged
+    files, minute, hour and day level); the Fitabase API (Daily Activity, Profiles, Sync, Batch Export endpoints,
+    key-authenticated) and an Aggregate Data API for bulk JSON or CSV export; automated batch exports at most daily.
+  confidence: Corroborated
+  sources:
+  - url: https://www.fitabase.com/resources/knowledge-base/exporting-data/individual-report-page-exports/
+    type: vendor_docs
+    quote: "The Fitabase platform provides two options for exporting (downloading) participant data: individual report page export and batch export."
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/resources/knowledge-base/fitabase-api/available-core-apis/
+    type: vendor_docs
+    quote: "Batch Export: Programmatic access to the batch export objects and .csv data download binaries from your Fitabase project."
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/how-it-works/pricing/
+    type: vendor_page
+    quote: "Enables large-volume programmatic data exports in JSON or CSV formats, eliminating manual per-participant data retrieval."
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/resources/knowledge-base/fitabase-api/automatic-file-transfers-with-the-batch-export-api/
+    type: vendor_docs
+    quote: "Currently, the most frequent schedule available is a daily batch export."
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: rate_limits
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://www.fitabase.com/resources/knowledge-base/fitabase-api/what-is-the-fitabase-api/
+    type: vendor_docs
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/resources/knowledge-base/fitabase-api/available-core-apis/
+    type: vendor_docs
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/resources/knowledge-base/fitabase-api/authentication/
+    type: vendor_docs
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: API reference lives in a customer-only API portal reached from inside a Fitabase project; not checked.
+- field: retention_terms
+  status: stated
+  value: On account cancellation, personally identifiable information is deleted and backups expire on the normal
+    schedule, but Fitabase may keep using de-identified, anonymized historical data. On termination Fitabase may
+    delete account data. Data already synced is kept through the Google Health API switch.
+  confidence: Verified
+  sources:
+  - url: https://www.fitabase.com/privacy/
+    type: vendor_legal
+    quote: "When you request cancellation of your account, your personally identifiable information will be deleted"
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/privacy/
+    type: vendor_legal
+    quote: "Following cancellation or termination of your account, Fitabase may continue to utilize de-identified and anonymized historical data associated with your use of the Fitabase Products."
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/terms/
+    type: vendor_legal
+    quote: "upon any termination of your account or access to the Fitabase Services we may delete all User Generated Content and other information related to your account and data."
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: No fixed retention period for study data is published. Terms of Use last updated Dec 3, 2013; privacy
+    policy updated October 1, 2026.
+- field: ai_training_terms
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://www.fitabase.com/privacy/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/terms/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/resources/knowledge-base/working-with-the-irb/data-security-privacy/
+    type: vendor_docs
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Nothing on AI or model training. Related terms are that Fitabase does not sell data or give it to third
+    parties, may keep using de-identified data after cancellation, and says its use of Fitbit Web API data follows the
+    Fitbit Web API Health Research Policy and its Limited Use requirements.
+- field: deprecations
+  status: stated
+  value: Google turns off the Fitbit Web API on 2026-10-30 (support ended 2026-09-30); every active Fitbit participant
+    must reauthorize Fitabase for the Google Health API, through 2026-11-30 via the in-app banner. The separate
+    classic-sleep dataset is dropped (folded into the main sleep export) and writing step goals is not yet available.
+    Exports gain UTC, time zone and source columns; the Fitabase API does not change.
+  confidence: Verified
+  sources:
+  - url: https://www.fitabase.com/resources/knowledge-base/google-health-api-migration/migration-overview/
+    type: vendor_docs
+    quote: "Google is retiring the Fitbit Web API at the end of October 2026 and requiring every third-party app, Fitabase included, to move to the new Google Health API."
+    retrieved: '2026-10-11'
+  - url: https://developers.google.com/health/reference/rest/v4beta/users
+    type: secondary
+    quote: "the Fitbit Web API will be turned off and will no longer function or sync data to or from Fitbit users."
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/resources/knowledge-base/google-health-api-migration/key-dates/
+    type: vendor_docs
+    quote: "Through November 30, 2026 The reconnect banner stays in the Google Health app, giving participants who missed the deadline a way back."
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/resources/knowledge-base/google-health-api-migration/migration-faq/
+    type: vendor_docs
+    quote: "There will no longer be classic sleep data split out as its own dataset that is available to be downloaded."
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/resources/knowledge-base/google-health-api-migration/migration-faq/
+    type: vendor_docs
+    quote: "Writing step goals to the participant's app isn't available in the Google Health API yet."
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/resources/knowledge-base/google-health-api-migration/export-changes/
+    type: vendor_docs
+    quote: "Exports will include UTC time and time zone columns alongside the existing local time columns."
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Reauthorization cannot be done programmatically or in bulk; each account goes through Google sign-in.
+# ---------------- Compliance ----------------
+- field: baa
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://www.fitabase.com/resources/knowledge-base/working-with-the-irb/data-security-privacy/
+    type: vendor_docs
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/media/1780/fitabasesecurityandprivacy.pdf
+    type: vendor_docs
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/privacy/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/resources/faq/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: No mention of HIPAA or a BAA anywhere on fitabase.com (privacy, terms, FAQ, security page and PDF, all 60+
+    knowledge base articles checked).
+- field: dpa
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://www.fitabase.com/privacy/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/terms/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: No data processing agreement is published or mentioned. The privacy policy's DPF statement says Small Steps
+    Labs acts as an agent for Fitabase Users, but that is not a DPA.
+- field: hipaa_statement
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://www.fitabase.com/resources/knowledge-base/working-with-the-irb/data-security-privacy/
+    type: vendor_docs
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/resources/knowledge-base/working-with-the-irb/answers-to-common-questions-irb-data-security/
+    type: vendor_docs
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/privacy/
+    type: vendor_legal
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/resources/faq/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: Fitabase encourages de-identified projects (study-chosen alphanumeric IDs, no email or account name collected),
+    which is its stated privacy approach in place of a HIPAA statement.
+- field: gdpr_statement
+  status: stated
+  value: No statement names GDPR. The privacy policy carries a Data Privacy Framework statement saying Small Steps
+    Labs self-certifies to the EU-U.S. DPF, its UK Extension and the Swiss-U.S. DPF, using self-assessment, with JAMS
+    as the dispute body.
+  confidence: Corroborated
+  sources:
+  - url: https://www.fitabase.com/privacy/
+    type: vendor_legal
+    quote: "complies with the EU-U.S. Data Privacy Framework (EU-U.S. DPF) and the UK Extension to the EU-U.S. DPF, and the Swiss-U.S. Data Privacy Framework (Swiss-U.S. DPF)"
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/privacy/
+    type: vendor_legal
+    quote: "Small Steps Labs utilizes the self-assessment approach to assure its compliance with this Statement."
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: The listing on dataprivacyframework.gov was not confirmed (the list is script-rendered and was not found by
+    search).
+- field: iso27001
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://www.fitabase.com/resources/knowledge-base/working-with-the-irb/data-security-privacy/
+    type: vendor_docs
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/media/1780/fitabasesecurityandprivacy.pdf
+    type: vendor_docs
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: No Fitabase certification. The security page cites Microsoft Azure data centers complying with ISO/IEC
+    27001:2005, which is Microsoft's hosting certification (and an outdated version), not Fitabase's.
+- field: soc2
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://www.fitabase.com/resources/knowledge-base/working-with-the-irb/data-security-privacy/
+    type: vendor_docs
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/media/1780/fitabasesecurityandprivacy.pdf
+    type: vendor_docs
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/resources/faq/
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: Three linked policy PDFs (security awareness training standard, business environment analysis,
+    cybersecurity policy) returned 404 on 2026-10-11, as did the FAQ's security PDF link (/media/1723/).
+- field: fda_clearances
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://api.fda.gov/device/510k.json?search=applicant:fitabase
+    type: regulator_db
+    retrieved: '2026-10-11'
+  - url: https://api.fda.gov/device/510k.json?search=applicant:"Small+Steps+Labs"
+    type: regulator_db
+    retrieved: '2026-10-11'
+  - url: https://api.fda.gov/device/pma.json?search=applicant:fitabase
+    type: regulator_db
+    retrieved: '2026-10-11'
+  - url: https://api.fda.gov/device/registrationlisting.json?search=registration.name:"Small+Steps+Labs"
+    type: regulator_db
+    retrieved: '2026-10-11'
+  - url: https://api.fda.gov/device/registrationlisting.json?search=registration.name:fitabase
+    type: regulator_db
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: All openFDA searches returned 404 (no matches). Fitabase is a data platform and does not claim to be a
+    medical device; its terms say it is not a medical care provider.
+- field: data_residency
+  status: stated
+  value: United States only, on Microsoft Azure; no other region offered.
+  confidence: Corroborated
+  sources:
+  - url: https://www.fitabase.com/privacy/
+    type: vendor_legal
+    quote: "Fitabase's Services are hosted and operated entirely in the United States and are subject to United States law."
+    retrieved: '2026-10-11'
+  - url: https://www.fitabase.com/resources/knowledge-base/working-with-the-irb/data-security-privacy/
+    type: vendor_docs
+    quote: "Fitabase code and databases physically reside on the Microsoft Azure platform"
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
