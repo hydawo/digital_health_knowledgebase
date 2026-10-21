@@ -13,7 +13,7 @@ The rationale column says why each was included. It is not a ranking; Table 10 o
 | Ecosystem | Profile | Rationale for inclusion |
 |---|---|---|
 | Apple Watch / HealthKit / SensorKit | `apple-watch-healthkit.md` | Largest installed base; no vendor in the HealthKit data path; SensorKit research signals for approved studies; named in scope |
-| Fitbit / Google | `fitbit-google.md` | Deepest validation literature and the *All of Us* dataset; named in scope; legacy API off 30 October 2026 and Google Health API not onboarding new projects (as of 2026-10-10) make it time-critical |
+| Fitbit / Google | `fitbit-google.md` | Deepest validation literature and the *All of Us* dataset; named in scope; legacy API off 30 October 2026 makes it time-critical; the Google Health API was not onboarding new projects on 2026-10-10 and is apparently open again by 2026-10-19 (C), subject to restricted-scope review |
 | Garmin | `garmin.md` | Weeks of battery, no subscription, Enhanced BBI; named in scope |
 | Oura | `oura.md` | Highest four-stage kappa in Robbins 2024 (0.65, but Oura-funded) and best resting HR and HRV agreement in Dial 2025; independent PSG results are mixed and Oura was not in Schyvens 2025; named in scope |
 | WHOOP | `whoop.md` | Best deep-sleep (N3) accuracy in Schyvens 2025 (69.63%), but fourth of six on overall kappa (0.37); named in scope |

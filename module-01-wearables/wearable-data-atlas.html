@@ -487,8 +487,8 @@
     </div>
     <div class="caution">
       <strong>Dated items.</strong> The legacy Fitbit Web API is turned off on <strong>30 October 2026</strong>
-      (support ended 30 September); Google is <strong>not onboarding new Google Health API projects</strong>
-      (2026-10-10); Garmin has <strong>paused new developer-programme access requests</strong> since spring 2026
+      (support ended 30 September); the Google Health API is <strong>apparently open to new projects again</strong>
+      (Corroborated; the 2026-10-10 notice was removed by 2026-10-19), with Google's restricted-scope review; Garmin has <strong>paused new developer-programme access requests</strong> since spring 2026
       (Corroborated); and from <strong>12 October 2026</strong> participants with new Withings accounts need a paid
       Withings+ membership to share data with a free-plan app.
     </div>
@@ -511,7 +511,7 @@
         </tr></thead>
         <tbody>
           <tr><td class="rowhead">Apple</td><td>Consumer</td><td>HealthKit via a researcher-built iOS app; SensorKit for research signals</td><td><span class="tag tag--yes">No</span> Apple never receives study data</td><td>SensorKit: per-study Apple approval plus IRB. Optional research entitlements (HealthKit Research Entitlement, Background Health Research Task) and Investigator Support Program devices by request to Apple</td><td>HealthKit yes; SensorKit no</td></tr>
-          <tr><td class="rowhead">Fitbit / Google</td><td>Consumer</td><td>Google Health API. Legacy Fitbit Web API <strong class="hi">off 30 Oct 2026</strong></td><td><span class="tag tag--no">Yes</span></td><td>Most scopes Restricted; 100-user cap until verification and CASA assessment</td><td><span class="tag tag--block">No</span> not onboarding new projects. Routes: Fitabase (own project; new-study capacity not stated), the on-device route via Apple Health or Health Connect (C), participant self-export, <em>All of Us</em>. Unified APIs need the customer's own project (C)</td></tr>
+          <tr><td class="rowhead">Fitbit / Google</td><td>Consumer</td><td>Google Health API. Legacy Fitbit Web API <strong class="hi">off 30 Oct 2026</strong></td><td><span class="tag tag--no">Yes</span></td><td>Most scopes Restricted; 100-user cap until verification and CASA assessment</td><td><span class="tag tag--partial">Partly</span> Google Health API apparently open to new projects again (C, 2026-10-21; Google was not onboarding them on 2026-10-10); approval needs Google's restricted-scope review and, above 100 users, verification and CASA. Other routes: Fitabase (own project; new-study capacity not stated), the on-device route via Apple Health or Health Connect (C), participant self-export, <em>All of Us</em>. Unified APIs need the customer's own project (C)</td></tr>
           <tr><td class="rowhead">Garmin</td><td>Consumer / athletic</td><td>Health API (cloud) <em>or</em> Health SDK (enterprise partners)</td><td>Health API yes; Standard SDK no</td><td>Business-use application; <strong class="hi">paused since spring 2026 (C)</strong></td><td><span class="tag tag--block">No</span> use Labfront, Fitabase or Fitrockr</td></tr>
           <tr><td class="rowhead">Oura</td><td>Consumer</td><td>API v2 (OAuth only) + webhooks; Oura for Organizations research offering</td><td><span class="tag tag--no">Yes</span></td><td><strong class="hi">Yes, above 10 users</strong></td><td>Up to 10 users, under the API Agreement</td></tr>
           <tr><td class="rowhead">WHOOP</td><td>Consumer</td><td>API v2 + webhooks</td><td><span class="tag tag--no">Yes</span></td><td>App approval; member tiers by manual review</td><td><span class="tag tag--partial">Partly</span> 10-member Sandbox</td></tr>
@@ -598,7 +598,7 @@
         </tr></thead>
         <tbody>
           <tr><td class="rowhead">Apple</td><td>Not via HealthKit. <strong class="hi">Core Motion <span class="mono">CMSensorRecorder</span> 50 Hz in the background, no entitlement</strong> (12 h per call, 3-day retention); 800 Hz during workouts; SensorKit (iOS 14+, research entitlement)</td><td>SensorKit only (iOS 17.4+); rate undocumented</td><td>Per-recording voltage via <span class="mono">HKElectrocardiogramQuery</span>; whether these count as raw is in conflict (Apple's research FAQ says no raw ECG via HealthKit); SensorKit ECG (iOS 17.4+); no continuous ECG</td><td>Context-limited heartbeat series</td><td class="muted">n/a</td><td>HealthKit; SensorKit entitlement</td></tr>
-          <tr><td class="rowhead">Fitbit / Google</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td>ECG session with raw waveform voltage (documented, untested)</td><td class="tag tag--no">No</td><td>No EDA data type</td><td>Google Health API (not onboarding)</td></tr>
+          <tr><td class="rowhead">Fitbit / Google</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td>ECG session with raw waveform voltage (documented, untested)</td><td class="tag tag--no">No</td><td>No EDA data type</td><td>Google Health API, apparently open to new projects again (C, 2026-10-21)</td></tr>
           <tr><td class="rowhead">Garmin</td><td>Health SDK only; rate not published by Garmin; logging fixed at 25 Hz per two integrators (C)</td><td class="tag tag--no">No</td><td>Not via Health API</td><td><strong class="hi">Enhanced BBI</strong>, per-beat confidence: Health API (licence fee for commercial use) and Health SDK streaming. API route captures it during sleep</td><td class="muted">n/a</td><td>Health SDK, Health API, or Labfront / Fitabase / Fitrockr</td></tr>
           <tr><td class="rowhead">Oura</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td class="muted">n/a</td><td class="tag tag--no">No</td><td class="muted">n/a</td><td>API v2, derived only</td></tr>
           <tr><td class="rowhead">WHOOP</td><td class="tag tag--no">No</td><td class="tag tag--no">No</td><td>MG ECG; no API scope</td><td class="tag tag--no">No</td><td class="muted">n/a</td><td>API v2, derived only; Unite research raw files with RR intervals (2023, R), current availability Unclear</td></tr>
@@ -656,7 +656,7 @@
         <tbody>
           <tr><td class="rowhead">Apple</td><td>On-device permission</td><td class="muted">n/a</td><td>HealthKit background delivery</td><td>On-device history back to the earliest permitted date; <strong class="hi">from iOS 27 participants can cap it at 30 days</strong> unless the app holds the HealthKit Research Entitlement</td><td>iOS background execution limits</td></tr>
           <tr><td class="rowhead">Fitbit (legacy)</td><td>Fitbit OAuth 2.0</td><td class="num">150 req/hr per user</td><td>Subscription API</td><td class="muted">Moot</td><td class="tag tag--block">Off 30 Oct 2026</td></tr>
-          <tr><td class="rowhead">Google Health API</td><td>Google OAuth 2.0</td><td class="num">300/min per user; 120,000/min per project</td><td><span class="mono">projects.subscribers</span></td><td>All recorded history, no API limit; rollup queries capped at 14 or 90 days per request</td><td>App sync; not onboarding new projects</td></tr>
+          <tr><td class="rowhead">Google Health API</td><td>Google OAuth 2.0</td><td class="num">300/min per user; 120,000/min per project</td><td><span class="mono">projects.subscribers</span></td><td>All recorded history, no API limit; rollup queries capped at 14 or 90 days per request</td><td>Participant app sync; apparently open to new projects again (C, 2026-10-21)</td></tr>
           <tr><td class="rowhead">Garmin</td><td>Garmin consent</td><td>Not published (evaluation access throttled; the agreement refers to request-volume limits)</td><td>Ping/Pull or Push</td><td>30 days before consent (R)</td><td>Device to Garmin Connect sync</td></tr>
           <tr><td class="rowhead">Oura</td><td>OAuth 2.0 only (PATs retired Dec 2025)</td><td class="num"><strong>5,000 requests per 5 minutes</strong> (OpenAPI 1.41 FAQ); per-token and per-app layers, split not stated; higher on request</td><td>Webhooks, ~30 s after app sync, 10 retries</td><td>One request on first connect; no lookback limit documented</td><td><strong class="hi">Sleep reaches the API only after the app is opened</strong></td></tr>
           <tr><td class="rowhead">WHOOP</td><td>OAuth 2.0</td><td class="num">100 req/min, 10,000 req/day per client</td><td>Yes (v2; v1 removed)</td><td>No documented lower bound on start time; full history implied, not stated (C)</td><td>Device to cloud sync</td></tr>
@@ -682,7 +682,7 @@
         </tbody>
       </table>
     </div>
-    <div class="tnote">Throughput is generous once verified; the constraint is a <strong>two-part verification process</strong> (Trust &amp; Safety review plus a third-party CASA assessment costing <strong>$500 to $4,500, renewed annually (C)</strong> and taking 2 to 6 weeks). As of 2026-10-10 the question is moot for new studies: <strong>Google is not onboarding new projects</strong>.</div>
+    <div class="tnote">Throughput is generous once verified; the constraint is a <strong>two-part verification process</strong> (Trust &amp; Safety review plus a third-party CASA assessment costing <strong>$500 to $4,500, renewed annually (C)</strong> and taking 2 to 6 weeks). Google said on 2026-10-10 it was not onboarding new projects; by 2026-10-19 that notice was gone, so a new study <strong>apparently faces this process again</strong> (C, 2026-10-21).</div>
   </section>
 
   <!-- ============ TABLE 5 ============ -->
@@ -889,7 +889,7 @@
         </tbody>
       </table>
     </div>
-    <div class="tnote">A <strong>Fitbit</strong> study starting now cannot open its own Google Health API project. It needs Fitabase or Fitrockr (whether either can add new studies is not stated), or the on-device route through Apple Health or Health Connect (C). Unified APIs need the study's own Google Cloud project and CASA (C). A <strong>Garmin</strong> study cannot currently apply to Garmin directly (C); Labfront and Fitrockr publish prices, and Labfront includes EMA and a free five-participant pilot.</div>
+    <div class="tnote">A <strong>Fitbit</strong> study starting now can apparently open its own Google Health API project again (C, 2026-10-21), but approval needs Google's restricted-scope review and, above 100 users, verification and CASA. Alternatives are Fitabase or Fitrockr (whether either can add new studies is not stated), or the on-device route through Apple Health or Health Connect (C). Unified APIs need the study's own Google Cloud project and CASA (C). A <strong>Garmin</strong> study cannot currently apply to Garmin directly (C); Labfront and Fitrockr publish prices, and Labfront includes EMA and a free five-participant pilot.</div>
   </section>
 
   <!-- ============ TABLE 12 ============ -->

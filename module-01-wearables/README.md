@@ -69,7 +69,7 @@ most for a study:
 
 | Earlier summary said | Now |
 |---|---|
-| Fitbit legacy API "turns down in September 2026"; Google Health API open to new integrations | Legacy support ended 30 Sep 2026 and the API is **turned off 30 Oct 2026**; Google is **not onboarding new Google Health API projects** (2026-10-10) |
+| Fitbit legacy API "turns down in September 2026"; Google Health API open to new integrations | Legacy support ended 30 Sep 2026 and the API is **turned off 30 Oct 2026**; Google was **not onboarding new Google Health API projects** on 2026-10-10 and is **apparently open again** by 2026-10-19 (Corroborated), with restricted-scope review |
 | Garmin confirms applications within two business days | **New access requests paused since spring 2026** (Corroborated); Garmin's FAQ wording is stale |
 | Empatica is the only raw EDA source | **Samsung Galaxy Watch8 and later expose raw EDA at 1 Hz** through the Health Sensor SDK; Verily also records EDA |
 | Samsung raw PPG rate undocumented | PPG 25 Hz continuous and 100 Hz on demand; ECG 500 Hz; accelerometer 25 Hz |
@@ -116,15 +116,17 @@ Robbins 2024 ICCs for stage summaries: **deep sleep, Oura 0.32, Fitbit 0.36, App
 Schyvens 2025 underestimated WASO by 12 to 48 minutes. Robbins was Oura-funded; independent PSG
 results for Oura are mixed (Miller 2022, Lee 2023, Searles 2026). See `validation-evidence.md`.
 
-### 3. Two of the biggest consumer routes are closed to new studies right now.
+### 3. Garmin is closed to new studies right now, and new Fitbit access is slow.
 
-- **Fitbit / Google:** the legacy Fitbit Web API is turned off on **30 October 2026**, and Google is
-  **not onboarding new Google Health API projects** (2026-10-10). A new study cannot get its own
-  direct access. The routes are Fitabase (whether it can add new studies is not stated), on-device
-  collection through Apple Health or Health Connect (Corroborated), participant self-export, or the
-  *All of Us* dataset. Unified APIs need the study's own Google Cloud project, verified app and CASA.
-  Existing projects still face the 100-user cap for unverified apps and a
-  CASA assessment ($500 to $4,500) above it.
+- **Fitbit / Google:** the legacy Fitbit Web API is turned off on **30 October 2026**. Google said on
+  2026-10-10 it was **not onboarding new Google Health API projects**; by 2026-10-19 that notice was
+  gone, with no announcement, so the API is **apparently open to new projects again** (Corroborated,
+  2026-10-21). A new study can apparently open its own project, but every scope is Restricted, so
+  approval needs Google's privacy and security review. Above 100 users it also needs verification and
+  a CASA assessment ($500 to $4,500). Other routes are Fitabase (whether it can add new studies is
+  not stated), on-device collection through Apple Health or Health Connect (Corroborated),
+  participant self-export, or the *All of Us* dataset. Unified APIs need the study's own Google Cloud
+  project, verified app and CASA.
 - **Garmin:** new Connect Developer Program access requests have been **paused since spring 2026**
   (Corroborated), and queued requests are also on hold. Labfront, Fitabase and Fitrockr already hold
   access.
@@ -179,8 +181,9 @@ members; Withings' free plan up to 10 users (Withings+ costs apply from 12 Octob
 Movesense with no registration; Samsung in developer mode for testing; Labfront free for 5
 participants; Empatica's academic plan by store purchase; Axivity by buying a device.
 
-**You cannot start today on:** a new direct Fitbit/Google project (Google not onboarding) or a new
-direct Garmin integration (applications paused).
+**You cannot start today on:** a new direct Garmin integration (applications paused). A new direct
+Fitbit/Google project apparently can be started again (2026-10-21), but approval waits on Google's
+restricted-scope review and, above 100 users, verification and CASA.
 
 **What genuinely requires contact:** scale thresholds (Oura above 10 users, WHOOP tier upgrades,
 Withings free plan above 10 users), and commercial terms nobody publishes: Garmin's Enhanced BBI and
