@@ -1,74 +1,780 @@
 # Vendor fact record. Schema: facts/_schema.yaml. How to work it: facts/README.md.
+# Baseline judged 2026-10-21 from drafts A, B and the gap hunt (facts/_drafts/terra/).
 name: Terra
 kind: intermediary
 profile: module-01-wearables/profiles/data-intermediaries.md
 watch:
-- url: https://tryterra.co/integrations/garmin
-  role: other
 - url: https://tryterra.co/pricing
   role: pricing
-- url: https://tryterra.co/blog/garmin-connect-developer-program-pause
+- url: https://docs.tryterra.co/unified-api/pricing
+  role: pricing
+- url: https://tryterra.co/startup-accelerator
+  role: research_program
+- url: https://tryterra.co/terms-of-service
+  role: terms
+- url: https://tryterra.co/end-user-privacy
+  role: terms
+- url: https://tryterra.co/dpa
+  role: terms
+- url: https://tryterra.co/integration-partner-terms
+  role: terms
+- url: https://tryterra.co/privacy/subprocessors
+  role: trust
+- url: https://tryterra.co/enterprise
+  role: trust
+- url: https://docs.tryterra.co/reference/health-and-fitness-api/rate-limits
+  role: docs
+- url: https://docs.tryterra.co/unified-api/integration-setup/understanding-terra-environments
   role: developer_program
-- url: https://tryterra.co/integrations/zepp
+- url: https://tryterra.co/integrations/garmin
+  role: developer_program
+- url: https://docs.tryterra.co/help-center/help-topics/data-api-sdk/account-config-environments-and-going-live/fitbit-to-google-migration
+  role: developer_program
+- url: https://tryterra.co/blog/garmin-connect-developer-program-pause
   role: other
+- url: https://docs.tryterra.co/changelog/2026/readme
+  role: changelog
 facts:
+# ---------------- Research access ----------------
 - field: research_program
-  status: unresearched
+  status: stated
+  value: No academic or research-access programme for outside researchers. The nearest route is the Terra Startup
+    Accelerator (up to $100,000 in API credits over up to six months), whose FAQ says research projects are eligible
+    if Terra is credited. "Terra Research" is Terra's in-house team publishing its own analyses of pooled end-user
+    data, not an access programme.
+  confidence: Corroborated
+  sources:
+  - url: https://tryterra.co/startup-accelerator
+    type: vendor_page
+    quote: The Terra Startup Accelerator gives early-stage startups building on health data, including AI health
+      apps and clinical tools, up to $100,000 in Terra API credits over up to six months.
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/startup-accelerator
+    type: vendor_page
+    quote: Are research projects eligible? Yes, if health data is central to the work and you credit Terra in any
+      resulting publications and datasets.
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/research
+    type: vendor_page
+    quote: Here you can find all research papers on health data published by the Terra Research team.
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: The absence of an academic programme is a search result (pricing, enterprise, accelerator and community pages),
+    not a statement by Terra. On the community forum Terra staff point a non-profit asking about special pricing to
+    the enterprise contact form. Terra Research has published a peer-reviewed paper on its own pooled data (Akhtar,
+    Brownlee and Crawford, npj Biological Timing and Sleep 3, 27, 2026, doi 10.1038/s44323-026-00092-2; 697 people,
+    185,143 nights), relying on platform consent; see ai_training_terms.
 - field: program_eligibility
-  status: unresearched
+  scope: Startup Accelerator
+  status: stated
+  value: Pre-revenue or early-revenue teams that cannot yet afford paid API access, with health data central to the
+    product. Research projects qualify if health data is central to the work and Terra is credited in resulting
+    publications and datasets.
+  confidence: Verified
+  sources:
+  - url: https://tryterra.co/startup-accelerator
+    type: vendor_page
+    quote: You are pre-revenue or early-revenue and genuinely cannot afford paid API access yet.
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/startup-accelerator
+    type: vendor_page
+    quote: Are research projects eligible? Yes, if health data is central to the work and you credit Terra in any
+      resulting publications and datasets.
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
 - field: program_application
-  status: unresearched
+  scope: Startup Accelerator
+  status: stated
+  value: Short-answer online form (about 20 to 30 minutes), rolling admission, decision within 10 business days, about
+    0.8% of applications accepted. A card is required to activate the credits.
+  confidence: Verified
+  sources:
+  - url: https://tryterra.co/startup-accelerator
+    type: vendor_page
+    quote: A structured short-answer form, about 20 to 30 minutes.
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/startup-accelerator
+    type: vendor_page
+    quote: Rolling admission, no equity taken, no cost to apply, with a decision within 10 business days. About
+      0.8% of applications are accepted.
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/startup-accelerator
+    type: vendor_page
+    quote: A card is required to activate; nothing is charged while your credit covers your invoices.
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: The gap hunter saw an acceptance rate of about 1.8% in a search summary only; the page says 0.8%.
 - field: program_status
-  status: unresearched
+  scope: Startup Accelerator
+  status: stated
+  value: Open, rolling admission (2026-10-21).
+  confidence: Verified
+  sources:
+  - url: https://tryterra.co/startup-accelerator
+    type: vendor_page
+    quote: Rolling admission, no equity taken, no cost to apply, with a decision within 10 business days. About
+      0.8% of applications are accepted.
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
 - field: developer_program_status
-  status: unresearched
+  status: stated
+  value: Open and self-serve. Sign up on the dashboard, choose a plan and get API keys; there is no separate gating
+    step for production. The Terms add compliance reviews (questionnaires, information requests) that Terra may run
+    for development or production access.
+  confidence: Verified
+  sources:
+  - url: https://docs.tryterra.co/introduction/account-setup-and-api-keys
+    type: vendor_docs
+    quote: During onboarding you'll be prompted to select your plan and enter billing details.
+    retrieved: '2026-10-21'
+  - url: https://docs.tryterra.co/help-center/help-topics/billing-account/environments-config-and-going-to-production/production-rollout-billing
+    type: vendor_docs
+    quote: There is no separate gating step to start prod.
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/terms-of-service
+    type: vendor_legal
+    quote: To access or use the Services, whether Development Accounts or Production Access, Customer must successfully
+      pass Terra's compliance reviews
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+- field: developer_program_status
+  scope: Garmin through Terra
+  status: stated
+  value: Terra's Garmin integration page now says the customer supplies its own Garmin app credentials and applies
+    at developerportal.garmin.com. Until at least 2026-10-14 the same page said Terra manages the Garmin credentials.
+    With Garmin's own programme taking no new applications, a new Terra customer may have no Garmin route.
+  confidence: Verified
+  sources:
+  - url: https://tryterra.co/integrations/garmin
+    type: vendor_page
+    quote: You supply your own Garmin app credentials . Apply at developerportal.garmin.com
+    retrieved: '2026-10-21'
+  - url: https://web.archive.org/web/20261014145651/https://tryterra.co/integrations/garmin
+    type: secondary
+    quote: Terra manages the Garmin API credentials, so there is nothing to register
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/blog/garmin-connect-developer-program-pause
+    type: vendor_page
+    quote: Terra is working with Garmin as a partner and will fold any new requirements into its integration
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: Changed between 2026-10-14 and 2026-10-21. The task brief and the gap hunt (2026-10-11) said Terra holds its
+    own Garmin credentials; the live page no longer says so. Whether existing customers keep Terra-managed Garmin
+    credentials, and whether a new customer without Garmin approval can connect Garmin users at all, is not stated.
+    Ask Terra before treating it as a Garmin route.
+- field: developer_program_status
+  scope: Google Health and Fitbit through Terra
+  status: stated
+  value: Terra's docs say Terra manages the credentials for its Google Health connection (the Google Health API
+    replacement for the Fitbit Web API), so the customer registers no Google app; each user re-consents once. Its
+    Fitbit (legacy Fitbit Web API) page says the same for Fitbit. Google Health became generally available in Terra
+    connections in August 2026.
+  confidence: Verified
+  sources:
+  - url: https://docs.tryterra.co/help-center/help-topics/data-api-sdk/account-config-environments-and-going-live/fitbit-to-google-migration
+    type: vendor_docs
+    quote: add Google Health to your environment in the dashboard. Terra manages the credentials, so there is no
+      Google app for you to register.
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/integrations/fitbit
+    type: vendor_page
+    quote: Terra manages the Fitbit API credentials, so there is nothing to register
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/blog/august-2026-product-update
+    type: vendor_page
+    quote: Google Health is now generally available in connections, having been in preview through the summer.
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: This contradicts the knowledge base's general statement (facts/fitbit-google.yaml export_routes, Intermediaries
+    scope, from Thryve and Validic) that unified APIs need the customer's own Google Cloud project, verified app and
+    CASA; for Terra, its own docs say otherwise. Terra does not say whether its shared Google project has completed
+    Google's restricted-scope review and CASA, or whether any user cap applies to it. Ask Terra before relying on it.
+- field: developer_program_status
+  scope: WHOOP, Strava, Dexcom, Huawei (bring your own credentials)
+  status: stated
+  value: The customer supplies its own provider credentials for WHOOP, Strava, Dexcom and Huawei, so the study needs
+    its own developer approval from each of these providers.
+  confidence: Verified
+  sources:
+  - url: https://tryterra.co/integrations/whoop
+    type: vendor_page
+    quote: You supply your own WHOOP app credentials
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/integrations/strava
+    type: vendor_page
+    quote: You supply your own Strava app credentials
+    retrieved: '2026-10-21'
+  - url: https://docs.tryterra.co/help-center/help-topics/connecting/setting-up-provider-credentials-bring-your-own-keys/dexcom-own-keys-production-access
+    type: vendor_docs
+    quote: Dexcom always uses your own developer credentials
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: Relevant to the WHOOP profile's warning that WHOOP's terms bar licensing API data to third parties; with
+    Terra the study is itself the WHOOP developer.
 - field: user_cap
-  status: unresearched
+  status: stated
+  value: Testing and staging environments are capped at 50 connected users each; production has no user cap and is
+    billed per active authentication. The Streaming add-on's included credits cover 20 active streaming users a month.
+  confidence: Verified
+  sources:
+  - url: https://docs.tryterra.co/unified-api/integration-setup/understanding-terra-environments
+    type: vendor_docs
+    quote: Note that for testing & staging, there is a user limit of 50 users on each environment.
+    retrieved: '2026-10-21'
+  - url: https://docs.tryterra.co/help-center/help-topics/data-api-sdk/account-config-environments-and-going-live/test-staging-user-limit
+    type: vendor_docs
+    quote: Production credentials are event-based and have no user cap (billed per user).
+    retrieved: '2026-10-21'
+  - url: https://docs.tryterra.co/streaming-api/pricing
+    type: vendor_docs
+    quote: The included 20,000 credits cover 20 active streaming users per month
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
 - field: academic_vs_commercial
-  status: unresearched
+  status: stated
+  value: 'No academic tier or academic terms; universities buy the same plans. Three terms matter for research use:
+    free development accounts are for internal evaluation only (no pilot study on a sandbox); the customer Terms bar
+    publicly disseminating information on the performance of the Services or Output (clause 1.2(v)), which reaches
+    methods papers that report on Terra data quality or delivery; and accelerator credits require crediting Terra in
+    publications and datasets.'
+  confidence: Verified
+  sources:
+  - url: https://tryterra.co/terms-of-service
+    type: vendor_legal
+    quote: (v) publicly disseminate information from any source regarding the performance of the Services or Output
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/terms-of-service
+    type: vendor_legal
+    quote: Customer may use Development Accounts solely for internal evaluation of the Services to determine whether
+      to place a paid Order, and not for Production Access or any other purpose.
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/startup-accelerator
+    type: vendor_page
+    quote: Are research projects eligible? Yes, if health data is central to the work and you credit Terra in any
+      resulting publications and datasets.
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/community/non-profit-pricing
+    type: secondary
+    quote: Please sign up via our enterprise form with details about your project and expected usage, and our team
+      can discuss pricing options for your organization.
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: Terms of Service last updated 2026-05-01. "Output" in the Terms covers data Terra delivers, so a paper comparing
+    Terra-delivered data with a reference device may fall under 1.2(v); ask Terra for written permission before
+    publishing such work. The Terms also say raw End User data belongs to the End User (clause 1.3).
+# ---------------- Pricing ----------------
 - field: device_price
-  status: unresearched
+  status: not_applicable
+  recheck_by: '2026-11-20'
+  note: Terra sells no hardware; it is a data API over devices bought from their makers.
 - field: subscription_price
-  status: unresearched
+  status: not_applicable
+  recheck_by: '2026-11-20'
+  note: No consumer subscription. Developer plans are under api_platform_fees.
 - field: academic_pricing
-  status: unresearched
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://tryterra.co/pricing
+    type: vendor_page
+    retrieved: '2026-10-21'
+  - url: https://docs.tryterra.co/unified-api/pricing
+    type: vendor_docs
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/startup-accelerator
+    type: vendor_page
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/community/non-profit-pricing
+    type: secondary
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: No academic or research discount published. The only research-eligible offer is the Startup Accelerator (up
+    to $100,000 in credits over up to six months, then billing continues on Quick Start); see research_program.
 - field: api_platform_fees
-  status: unresearched
+  status: stated
+  value: 'Quick Start: $399/month billed annually or $499/month billed monthly, with 100,000 credits a month. An active
+    authentication (one connected source for one end user) costs 200 credits a month; the first 400 events per
+    authentication are free, then 0.5 credits per event. Credits beyond 100,000 cost $0.005 (to 1,000,000) and $0.003
+    above. Streaming API add-on $99/month (20,000 credits, about 20 active streaming users). Graph API from $50 for 2
+    graphs a month. Enterprise is custom.'
+  confidence: Verified
+  sources:
+  - url: https://tryterra.co/pricing
+    type: vendor_page
+    quote: Subscriptions start from $399 per month billed annually, or $499 per month billed monthly.
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/pricing
+    type: vendor_page
+    quote: An active authentication is one connected data source for one end user, and costs 200 credits per month.
+    retrieved: '2026-10-21'
+  - url: https://docs.tryterra.co/unified-api/pricing
+    type: vendor_docs
+    quote: 100,001 - 1,000,000 $0.005 1,000,001+ $0.003
+    retrieved: '2026-10-21'
+  - url: https://docs.tryterra.co/unified-api/pricing
+    type: vendor_docs
+    quote: The first 400 events per active authentication are free. 0.5 credits per event beyond this.
+    retrieved: '2026-10-21'
+  - url: https://docs.tryterra.co/streaming-api/pricing
+    type: vendor_docs
+    quote: The Streaming API is available as an add-on to any Terra base plan for $99/month .
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: The 100,000 included credits cover about 500 connected sources a month before overage. Free development
+    accounts exist but are for evaluation only (academic_vs_commercial).
 - field: minimum_commitment
-  status: unresearched
+  status: stated
+  value: Monthly, or annual paid upfront. Annual renewals need at least 60 days' notice to cancel; monthly can be
+    cancelled any time in the current period, but the customer stays liable for that period. 30-day money-back
+    guarantee.
+  confidence: Verified
+  sources:
+  - url: https://tryterra.co/terms-of-service
+    type: vendor_legal
+    quote: for annual subscriptions, at least sixty (60) days' notice; for monthly subscriptions, any time during
+      the current period
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/terms-of-service
+    type: vendor_legal
+    quote: For annual subscriptions, the base allowance fees are paid upfront for the full year, while additional
+      usage charges are billed monthly.
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/pricing
+    type: vendor_page
+    quote: try our platform risk-free for 30 days, cancel anytime.
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
 - field: quote_required
-  status: unresearched
+  status: stated
+  value: No for Quick Start and the published add-ons. Yes for Enterprise (custom plans, signed BAA, dedicated
+    server, data storage) and for any non-profit or special pricing.
+  confidence: Verified
+  sources:
+  - url: https://tryterra.co/pricing
+    type: vendor_page
+    quote: Custom Plans tailored to your usage
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/pricing
+    type: vendor_page
+    quote: Signed BAA (data protection agreement)
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+# ---------------- Data access and terms ----------------
 - field: raw_streams
-  status: unresearched
+  status: stated
+  value: 'Unified API passes through what each provider exposes, unsmoothed: sample arrays such as heart rate, RR
+    interval, HRV, SpO2, glucose, position and raw ECG voltage where the provider supplies them; no raw PPG, no raw
+    uncalibrated CGM. The Streaming API add-on carries roughly per-second heart rate, HRV, RR interval, ECG,
+    acceleration and gyroscope from BLE/ANT+ devices, Wear OS, Apple Watch and phone sensors.'
+  confidence: Verified
+  sources:
+  - url: https://docs.tryterra.co/help-center/help-topics/data-api-sdk/data-model-fields-and-units/no-smoothing-sample-array-length-mismatch
+    type: vendor_docs
+    quote: Terra applies no smoothing or post-processing to sample data; values are piped through as the provider
+      supplies them
+    retrieved: '2026-10-21'
+  - url: https://docs.tryterra.co/streaming-api/data-types
+    type: vendor_docs
+    quote: Cardiac HEART_RATE , HRV , RR_INTERVAL , ECG
+    retrieved: '2026-10-21'
+  - url: https://docs.tryterra.co/streaming-api/data-types
+    type: vendor_docs
+    quote: Motion sensors ACCELERATION , GYROSCOPE
+    retrieved: '2026-10-21'
+  - url: https://docs.tryterra.co/help-center/help-topics/data-api-sdk/provider-coverage-and-per-provider-data-availability/raw-uncalibrated-cgm-not-available
+    type: vendor_docs
+    quote: Terra does not provide access to raw or uncalibrated CGM sensor data.
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: Raw ECG (RawECGSample, potential_uV) is in the samples reference (https://docs.tryterra.co/reference/health-and-fitness-api/samples).
+    Availability varies by provider; Fitbit does not expose RR intervals through its HRV endpoint.
 - field: derived_metrics
-  status: unresearched
+  status: stated
+  value: Provider summaries (daily, activity, sleep, body, nutrition, menstruation) normalised to Terra's schema, plus
+    Terra's own Health Scores (recovery, strain, stress, immunity and others) and Models. Smart Fill (August 2026,
+    called "health context" in the product blog) imputes missing sleep, daily and activity values, with a confidence
+    value on every estimated cell. Terra does not compute derived metrics such as speed from position samples.
+  confidence: Verified
+  sources:
+  - url: https://tryterra.co
+    type: vendor_page
+    quote: We transform raw health metrics such as HRV, respiratory rate, sleep and activity into validated scores
+      including recovery, strain, stress, and immunity.
+    retrieved: '2026-10-21'
+  - url: https://docs.tryterra.co/changelog/2026/august-update-2026
+    type: vendor_docs
+    quote: it reconstructs the metrics a device didn't record from the channels it did, with a confidence level
+      on every reconstructed value
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/blog/august-2026-product-update
+    type: vendor_page
+    quote: every estimated cell carries its own confidence value
+    retrieved: '2026-10-21'
+  - url: https://docs.tryterra.co/help-center/help-topics/something-else/provider-data-fields-and-coverage/no-derived-metrics-from-samples
+    type: vendor_docs
+    quote: Terra does not compute non-trivial derived metrics like speed from position samples
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: Terra calls its scores "validated"; no validation evidence was examined. Smart Fill output is imputed, not
+    measured; a study must flag or exclude estimated values. Whether it is on by default is not stated.
 - field: sampling_rates
-  status: unresearched
+  status: stated
+  value: Set by each device and provider, passed through unchanged (for example Huawei heart rate about once a
+    minute). Cloud integrations are event-driven or polled by Terra every 5 to 10 minutes. Streaming API events
+    arrive roughly once per second per stream.
+  confidence: Verified
+  sources:
+  - url: https://docs.tryterra.co/help-center/help-topics/data-api-sdk/provider-coverage-and-per-provider-data-availability/cgm-spo2-hrv-sample-regularity
+    type: vendor_docs
+    quote: Sample regularity is determined by the device.
+    retrieved: '2026-10-21'
+  - url: https://docs.tryterra.co/help-center/help-topics/data-api-sdk/provider-coverage-and-per-provider-data-availability/huawei-hr-downsampled-upstream
+    type: vendor_docs
+    quote: Huawei's public Health Kit only exposes the com.huawei.instantaneous.heart_rate stream, stored at roughly
+      one sample per minute
+    retrieved: '2026-10-21'
+  - url: https://docs.tryterra.co/reference/health-and-fitness-api/supported-integrations
+    type: vendor_docs
+    quote: fetched integrations are polled by Terra every 5-10 minutes for new data
+    retrieved: '2026-10-21'
+  - url: https://docs.tryterra.co/streaming-api/data-types
+    type: vendor_docs
+    quote: Streaming carries realtime, roughly per-second signals only .
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
 - field: history_depth
-  status: unresearched
+  status: stated
+  value: 'By default data flows only from connection onward. Historical pulls depend on the provider: Garmin up to 5
+    years, Google Health up to the last 12 months on connect (returned by REST, not pushed), Polar and Health Connect
+    30 days and never before the user granted permission. A single request may span at most 1,825 days.'
+  confidence: Verified
+  sources:
+  - url: https://docs.tryterra.co/unified-api/managing-user-health-data/requesting-historical-data
+    type: vendor_docs
+    quote: When an end user first connects an account (e.g. wearable, device, health app), you will by default only
+      receive data from that point onwards.
+    retrieved: '2026-10-21'
+  - url: https://docs.tryterra.co/unified-api/managing-user-health-data/requesting-historical-data
+    type: vendor_docs
+    quote: 'Garmin : 5 years into the past, from the current point in time.'
+    retrieved: '2026-10-21'
+  - url: https://docs.tryterra.co/unified-api/managing-user-health-data/requesting-historical-data
+    type: vendor_docs
+    quote: 'Health Connect : 30 days into the past, but not prior to the moment the user granted permission.'
+    retrieved: '2026-10-21'
+  - url: https://docs.tryterra.co/help-center/help-topics/data-api-sdk/provider-coverage-and-per-provider-data-availability/google-health-data-coverage
+    type: vendor_docs
+    quote: On connect, Terra fetches up to the last 12 months, depending on what Google holds for the account.
+    retrieved: '2026-10-21'
+  - url: https://docs.tryterra.co/reference/health-and-fitness-api/rate-limits
+    type: vendor_docs
+    quote: Per-request window size 1,825 days (5 years) per request
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
 - field: export_routes
-  status: unresearched
+  status: stated
+  value: 'Event-based push to a configured destination: webhooks, Postgres/MySQL, Supabase, S3, GCS, Azure Blob, SQS,
+    Kafka, MongoDB, Firestore. REST endpoints for historical backfill. Mobile SDKs for Apple Health, Samsung Health
+    and Health Connect (on-device sources have no cloud route). Output in Terra format, FIT or FHIR. Streaming
+    websocket as an add-on.'
+  confidence: Verified
+  sources:
+  - url: https://tryterra.co
+    type: vendor_page
+    quote: Terra delivers to webhooks, SQL databases (Postgres and MySQL), Supabase, cloud storage (S3, GCS and
+      Azure Blob), queueing services (SQS and Kafka), MongoDB and Firestore.
+    retrieved: '2026-10-21'
+  - url: https://docs.tryterra.co/unified-api/mobile-only-sources
+    type: vendor_docs
+    quote: 'The Mobile SDK is ONLY used to connect to the following integrations: Apple Health - iOS Samsung Health
+      - Android Google Fit & Health Connect - Android.'
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/pricing
+    type: vendor_page
+    quote: Data transformation to Terra Standard Format, Fit File and FHIR Format
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: Terra keeps no long-term copy on standard plans (retention_terms), so the study must store payloads as they
+    arrive. For iOS, a community staff reply points teams without an app to Terra's own "Avengers" app; no App Store
+    listing was found. Whose provider credentials are used per source is under developer_program_status.
 - field: rate_limits
-  status: unresearched
+  status: conflict
+  value: The Rate Limits reference sets two per-user rules on data-read endpoints (at most 1,825 days per request;
+    at most 6,000 requested days per user per hour, HTTP 429, raisable per dev_id). The environments page says Terra
+    imposes no rate limits on the REST API. Webhook delivery is not rate-limited; provider limits apply and are shared
+    across all of a customer's users.
+  confidence: Unclear
+  sources:
+  - url: https://docs.tryterra.co/reference/health-and-fitness-api/rate-limits
+    type: vendor_docs
+    quote: Cumulative requested days 6,000 days rolling 1-hour bucket per (user_id)
+    retrieved: '2026-10-21'
+  - url: https://docs.tryterra.co/reference/health-and-fitness-api/rate-limits
+    type: vendor_docs
+    quote: Fixed buckets aligned to UTC (e.g. 14:00–15:00 UTC).
+    retrieved: '2026-10-21'
+  - url: https://docs.tryterra.co/unified-api/integration-setup/understanding-terra-environments
+    type: vendor_docs
+    quote: Terra does not impose any rate limits on the REST API.
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/blog/march-2026-product-update
+    type: vendor_page
+    quote: Providers impose rate limits, and those limits are shared across all of your users rather than being per
+      user.
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: The reference is the more specific page and is probably current; the environments page looks stale. The
+    reference itself is inconsistent on the window, calling it "rolling" in the table and fixed UTC hours in its FAQ.
 - field: retention_terms
-  status: unresearched
+  status: stated
+  value: 'End User Privacy Policy (updated 2026-09-24): end-user data is usually kept two days after collection, in rare
+    cases up to six months, and never more than six months, with exceptions (an active connection, legal duty, separate
+    user permission, misuse investigation). Aggregated or de-identified derivatives may be kept longer for research,
+    analytics and service improvement. DPA: personal data deleted or returned within 90 days of termination. Storage
+    is an Enterprise feature.'
+  confidence: Verified
+  sources:
+  - url: https://tryterra.co/end-user-privacy
+    type: vendor_legal
+    quote: Usually, your data is retained for two days after the point of collection and then automatically deleted.
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/end-user-privacy
+    type: vendor_legal
+    quote: None of your data will be stored in our databases for longer than six months from the point of collection.
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/end-user-privacy
+    type: vendor_legal
+    quote: we may retain aggregated and/or de-identified information derived from your data for longer periods for
+      research, analytics, and service improvement
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/dpa
+    type: vendor_legal
+    quote: Within ninety (90) days following termination or expiration of this DPA
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/pricing
+    type: vendor_page
+    quote: Enable data storage for your users
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: The six-month ceiling sits beside an exception for "a functioning connection", so the effective cap during an
+    active study is unclear. The de-identified derivative clause has no time limit.
 - field: ai_training_terms
-  status: unresearched
+  status: stated
+  value: 'No clause names AI or model training for end-user data. The End User Privacy Policy lets Terra use collected
+    data for product development and to conduct "statistical, scientific, or market research" and publish
+    aggregated or de-identified results, and to keep de-identified derivatives without a stated limit. The research
+    wording was added between 2025-10-16 and 2026-02-24. Terra''s Integration Onboarding Terms (updated 2026-10-12)
+    let Terra use de-identified data from partner integrations for any lawful purpose. Anthropic and OpenAI are
+    subprocessors for AI-assisted support on anonymised end-user data, with a customer opt-out.'
+  confidence: Verified
+  sources:
+  - url: https://tryterra.co/end-user-privacy
+    type: vendor_legal
+    quote: 'Generate insights (including research and publication): by analysing the data we''ve collected, we generate
+      insights and conduct statistical, scientific, or market research related to wearable and health data.'
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/end-user-privacy
+    type: vendor_legal
+    quote: Any such publication or dissemination will contain only aggregated and/or de-identified information and
+      will not identify you.
+    retrieved: '2026-10-21'
+  - url: https://web.archive.org/web/20251016010147/https://tryterra.co/end-user-privacy
+    type: secondary
+    quote: 'Generate insights: by analysing the data we''ve collected, we generate insights. These insights assist
+      connected app developers in offering improved services or enhancing user experiences'
+    retrieved: '2026-10-21'
+  - url: https://web.archive.org/web/20260224075518/https://tryterra.co/end-user-privacy
+    type: secondary
+    quote: we generate insights and conduct statistical, scientific, or market research related to wearable and health
+      data
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/integration-partner-terms
+    type: vendor_legal
+    quote: Terra may create De-Identified Data and use, retain, copy, modify and sublicense it, worldwide and
+      royalty-free, for any lawful purpose.
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/privacy/subprocessors
+    type: vendor_legal
+    quote: Customers may opt out of AI-assisted support by submitting a request through our support portal.
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+  note: 'Draft A (2026-10-11) quoted an explicit "AI/ML development" clause in the Integration Partner Terms; that
+    page was rewritten on 2026-10-12 and the AI/ML wording is gone, replaced by the broader "any lawful purpose" clause
+    above. Context: Terra''s own peer-reviewed paper (Akhtar, Brownlee and Crawford, npj Biological Timing and Sleep 3,
+    27, 2026, doi 10.1038/s44323-026-00092-2) used pooled end-user data under platform consent, without study-specific
+    consent or NHS REC review. For an IRB, participants routed through Terra join Terra''s research pool by default;
+    no participant or customer opt-out from research use is stated.'
 - field: deprecations
-  status: unresearched
+  status: stated
+  value: 'Fitbit connection runs on the legacy Fitbit Web API (Google sunset September 2026); move users to the Google
+    Health connection, which needs every user to sign in again and gets a new user_id. July 2026: provider fitbit_v2
+    renamed google_health, old name rejected; Biostrap deprecated. Web Google connection (Google Fit REST) must move
+    to Google Health before Google ends Fit API support at the end of 2026; the Health Connect SDK route is unaffected.
+    Peloton and Technogym removed. Legacy JavaScript SDK no longer updated. Phased move to the access.tryterra.co/api/v2
+    base URL.'
+  confidence: Verified
+  sources:
+  - url: https://docs.tryterra.co/help-center/help-topics/data-api-sdk/account-config-environments-and-going-live/fitbit-to-google-migration
+    type: vendor_docs
+    quote: Move Fitbit users to the Google Health connection, because Terra's Fitbit connection runs on the legacy
+      Fitbit Web API that Google is deprecating.
+    retrieved: '2026-10-21'
+  - url: https://docs.tryterra.co/changelog/2026/july-update-2026
+    type: vendor_docs
+    quote: The fitbit_v2 provider is now named google_health ; the old name is no longer accepted
+    retrieved: '2026-10-21'
+  - url: https://docs.tryterra.co/help-center/help-topics/data-api-sdk/account-config-environments-and-going-live/google-fit-2026-deprecation
+    type: vendor_docs
+    quote: Google says the Google Fit APIs are only supported until the end of 2026 and recommends the Google Health
+      API for cloud integrations.
+    retrieved: '2026-10-21'
+  - url: https://docs.tryterra.co/help-center/help-topics/connecting/regional-and-account-restrictions/discontinued-integrations
+    type: vendor_docs
+    quote: Peloton and Technogym are no longer available as Terra integrations
+    retrieved: '2026-10-21'
+  - url: https://docs.tryterra.co/help-center/help-topics/data-api-sdk/api-endpoints-errors-and-migrations/js-sdk-deprecation-backend-sdk-versions
+    type: vendor_docs
+    quote: The legacy JavaScript npm package still functions but no longer receives updates and was removed from
+      the docs.
+    retrieved: '2026-10-21'
+  - url: https://docs.tryterra.co/help-center/help-topics/data-api-sdk/api-endpoints-errors-and-migrations/migrate-to-new-api-infrastructure
+    type: vendor_docs
+    quote: If you received the migration email, switch REST requests to the new base URL https://access.tryterra.co/api/v2
+    retrieved: '2026-10-21'
+  recheck_by: '2026-11-20'
+# ---------------- Compliance ----------------
 - field: baa
-  status: unresearched
+  status: stated
+  value: A signed BAA is listed on the Enterprise plan only, not on Quick Start.
+  confidence: Corroborated
+  sources:
+  - url: https://tryterra.co/pricing
+    type: vendor_page
+    quote: Signed BAA (data protection agreement)
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
 - field: dpa
-  status: unresearched
+  status: stated
+  value: A Data Processing Addendum (updated 2026-09-24, with EU SCCs and the UK addendum) forms part of the Terms and
+    is accepted with them. Subprocessor changes are posted at least 10 days ahead.
+  confidence: Corroborated
+  sources:
+  - url: https://tryterra.co/terms-of-service
+    type: vendor_legal
+    quote: Customer's acceptance of this Agreement constitutes acceptance and execution of the DPA
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/dpa
+    type: vendor_legal
+    quote: at least ten (10) days before the new Sub-Processor begins Processing Personal Data, notify Customer by
+      updating the Sub-Processor List
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
 - field: hipaa_statement
-  status: unresearched
+  status: stated
+  value: Terra says it is HIPAA compliant and adheres to HIPAA standards. Self-declared.
+  confidence: Corroborated
+  sources:
+  - url: https://tryterra.co
+    type: vendor_page
+    quote: Terra is HIPAA compliant, GDPR compliant, and SOC 2 Type II certified.
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/enterprise
+    type: vendor_page
+    quote: To commit to safeguarding protected health information (PHI), we adhere to HIPAA standards
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
 - field: gdpr_statement
-  status: unresearched
+  status: stated
+  value: Terra says it is GDPR compliant; its GDPR page (updated 2026-03-01) offers a downloadable GDPR assessment via a
+    Vanta trust centre. The DPA covers EU SCCs and the UK transfer addendum.
+  confidence: Corroborated
+  sources:
+  - url: https://tryterra.co/gdpr
+    type: vendor_legal
+    quote: You may download a detailed assessment of Terra's GDPR compliance here
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co
+    type: vendor_page
+    quote: Terra is HIPAA compliant, GDPR compliant, and SOC 2 Type II certified.
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
+  note: The Vanta trust centre (https://app.vanta.com/tryterra.co/trust/ta17vkzrua0zm6l68uo2) blocks automated reads
+    and was not read.
 - field: iso27001
-  status: unresearched
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://tryterra.co/dpa
+    type: vendor_legal
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/enterprise
+    type: vendor_page
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/gdpr
+    type: vendor_legal
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/partners
+    type: vendor_page
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
+  note: No ISO/IEC 27001 claim on these pages. The Vanta trust centre blocks automated reads and was not checked.
 - field: soc2
-  status: unresearched
+  status: stated
+  value: Terra says it is SOC 2 Type II certified, with an annual SOC 2 Type II audit (Security, Confidentiality,
+    Availability). No report or auditor seen.
+  confidence: Corroborated
+  sources:
+  - url: https://tryterra.co/dpa
+    type: vendor_legal
+    quote: Vendor undergoes annual SOC 2 Type II audit (including the Security, Confidentiality, and Availability
+      Trust Service Criteria).
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co
+    type: vendor_page
+    quote: Terra is HIPAA compliant, GDPR compliant, and SOC 2 Type II certified.
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
+  note: SOC 2 was announced on Terra's blog in December 2022. The report presumably sits in the Vanta trust centre,
+    which blocks automated reads.
 - field: fda_clearances
-  status: unresearched
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://api.fda.gov/device/510k.json?search=applicant:%22terra+enabling%22&limit=3
+    type: regulator_db
+    retrieved: '2026-10-11'
+  - url: https://api.fda.gov/device/registrationlisting.json?search=registration.owner_operator.firm_name:%22terra+enabling%22&limit=3
+    type: regulator_db
+    retrieved: '2026-10-11'
+  - url: https://api.fda.gov/device/pma.json?search=applicant:%22terra+enabling%22
+    type: regulator_db
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-19'
+  note: openFDA returned no matches for Terra Enabling Developers (510(k), PMA, registration). Terra is a data API and
+    makes no device claims.
 - field: data_residency
-  status: unresearched
+  status: stated
+  value: Primary processing in the United Kingdom and the Netherlands, with transfers to the US possible. End-user
+    data hosting subprocessors (AWS, Google Cloud, ClickHouse Cloud) are listed in the US, UK and EU; support tools
+    (Zendesk, HyperDX, Anthropic, OpenAI) in the US. Enterprise offers a dedicated instance in a chosen region; no
+    region choice is documented for Quick Start.
+  confidence: Verified
+  sources:
+  - url: https://tryterra.co/dpa
+    type: vendor_legal
+    quote: Vendor's primary Processing facilities are located in the United Kingdom and the Netherlands (European
+      Union).
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/end-user-privacy
+    type: vendor_legal
+    quote: Please note that our data processing takes place mainly in the United Kingdom.
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/privacy/subprocessors
+    type: vendor_legal
+    quote: 'Location: United States, UK, EU Services: Cloud hosting services Stores and processes end user data'
+    retrieved: '2026-10-21'
+  - url: https://tryterra.co/pricing
+    type: vendor_page
+    quote: Dedicated instance to localised area
+    retrieved: '2026-10-21'
+  recheck_by: '2027-01-19'
