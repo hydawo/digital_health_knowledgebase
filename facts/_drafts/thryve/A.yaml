@@ -1,0 +1,627 @@
+# Draft record for thryve (researcher A, 2026-10-11). Schema: facts/_schema.yaml
+name: Thryve
+kind: intermediary
+profile: module-01-wearables/profiles/data-intermediaries.md
+watch:
+- url: https://www.thryve.health/pricing
+  role: pricing
+- url: https://www.thryve.health/free-trial
+  role: pricing
+- url: https://www.thryve.health/research-partners
+  role: research_program
+- url: https://www.thryve.health/certifications-compliance
+  role: trust
+- url: https://cdn.prod.website-files.com/67e3d7181adc28c746ec890a/682f90418cc84c163c2df205_GTC-HealthSDK.pdf
+  role: terms
+- url: https://docs.thryve.health/thryve-data-sources/overview
+  role: docs
+  fetch_url: https://docs.thryve.health/thryve-data-sources/overview.md
+- url: https://docs.thryve.health/thryve-product-overview/control
+  role: docs
+- url: https://docs.thryve.health/thryve-product-overview/access/data-model
+  role: docs
+- url: https://docs.thryve.health/thryve-data-sources/overview/shared-and-custom-oauth-clients
+  role: docs
+- url: https://docs.thryve.health/further-resources/v5-api-reference/delete-end-user
+  role: docs
+- url: https://docs.thryve.health/getting-started/get-your-api-keys
+  role: developer_program
+- url: https://www.thryve.health/blog/fitbit-shutdown-september-2026-migration-options
+  role: changelog
+- url: https://www.thryve.health/supported-wearable-devices/google-health
+  role: other
+- url: https://www.thryve.health/updates
+  role: changelog
+- url: https://api.fda.gov/device/510k.json?search=applicant:"mHealth+Pioneers"
+  role: regulatory
+facts:
+- field: research_program
+  status: stated
+  value: 'Research Partners program ("Become a Partner"): access to Thryve research infrastructure, documentation
+    and compliance materials, with study setup support. Separately sold Multimodal Clinical Trial Platform with
+    the white-label Pulsatio participant app.'
+  confidence: Verified
+  sources:
+  - url: https://www.thryve.health/research-partners
+    type: vendor_page
+    quote: Thryve powers clinical and public health research with compliant, continuous, real-world health data,
+      from academic institutions and hospitals to post-COVID studies and oncology trials.
+    retrieved: '2026-10-11'
+  - url: https://www.thryve.health/research-partners
+    type: vendor_page
+    quote: Tell us about your research first. Get access to Thryve's research infrastructure, documentation, and
+      compliance materials.
+    retrieved: '2026-10-11'
+  - url: https://www.thryve.health/multimodal-clinical-trial-platform
+    type: vendor_page
+    quote: Through the Pulsatio app (iOS and Android), participants can easily enroll, complete surveys, and connect
+      wearables
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: No research-specific API, data terms or pricing are published; the program page is a marketing and contact
+    funnel.
+- field: program_eligibility
+  status: unclear
+  value: Target audience named (research organizations, academic institutions, CROs); no eligibility criteria published.
+  confidence: Unclear
+  sources:
+  - url: https://www.thryve.health/research-organizations
+    type: vendor_page
+    quote: Designed for research organizations, academic institutions, and CROs seeking reliable, scalable, and
+      fully compliant health data infrastructure.
+    retrieved: '2026-10-11'
+  - url: https://www.thryve.health/research-partners
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: program_application
+  status: stated
+  value: Apply via the "Become a Partner" contact route by describing the research; then study setup with Thryve
+    support. No review criteria or timeline published.
+  confidence: Verified
+  sources:
+  - url: https://www.thryve.health/research-partners
+    type: vendor_page
+    quote: Tell us about your research first.
+    retrieved: '2026-10-11'
+  - url: https://www.thryve.health/research-partners
+    type: vendor_page
+    quote: Become a Partner
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: program_status
+  status: stated
+  value: 'Active: the Research Partners page is live and accepting partner enquiries as of 2026-10-11.'
+  confidence: Verified
+  sources:
+  - url: https://www.thryve.health/research-partners
+    type: vendor_page
+    quote: How to become a research partner
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: developer_program_status
+  status: stated
+  value: 'Open and self-serve: 14-day free trial through Stripe checkout (card required, business email required),
+    converting to the paid Start Up plan unless cancelled. Credentials are emailed after checkout.'
+  confidence: Verified
+  sources:
+  - url: https://www.thryve.health/free-trial
+    type: vendor_page
+    quote: Personal email addresses (e.g. Gmail, Yahoo) will not be accepted.
+    retrieved: '2026-10-11'
+  - url: https://www.thryve.health/free-trial
+    type: vendor_page
+    quote: after 14 days your subscription automatically converts to the Start Up Plan at €499/month
+    retrieved: '2026-10-11'
+  - url: https://docs.thryve.health/getting-started/get-your-api-keys
+    type: vendor_docs
+    quote: Visit Thryve Health Pricing to choose a suitable plan. You'll be directed to Stripe checkout for payment.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: user_cap
+  status: stated
+  value: 'End users included: Free Trial 25, Start Up 500 (extra users EUR 0.50 each), Scale Up 5,000 (extra EUR
+    999 per 10,000 users), Enterprise flexible.'
+  confidence: Verified
+  sources:
+  - url: https://www.thryve.health/pricing
+    type: vendor_page
+    quote: End users included 25 500 5000 Flexible
+    retrieved: '2026-10-11'
+  - url: https://www.thryve.health/pricing
+    type: vendor_page
+    quote: Additional users billed at €0.50 each.
+    retrieved: '2026-10-11'
+  - url: https://www.thryve.health/pricing
+    type: vendor_page
+    quote: Scale your user base with additional €999 per 10,000 users.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  scope: Thryve plans
+- field: user_cap
+  status: stated
+  value: Google Health connections run on the customer's own Google OAuth app, capped at 100 users until Google
+    OAuth verification and the CASA assessment are complete.
+  confidence: Verified
+  sources:
+  - url: https://www.thryve.health/blog/fitbit-shutdown-september-2026-migration-options
+    type: vendor_page
+    quote: Until both are complete, you are capped at 100 users on an unverified configuration.
+    retrieved: '2026-10-11'
+  - url: https://www.thryve.health/blog/fitbit-shutdown-september-2026-migration-options
+    type: vendor_page
+    quote: Google OAuth verification is required to publish your app and to go beyond 100 users.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  scope: Google Health source
+  note: The cap is Google's, not Thryve's, but it binds any study using the Google Health route through Thryve.
+- field: academic_vs_commercial
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.thryve.health/pricing
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://www.thryve.health/research-partners
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://www.thryve.health/research-organizations
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: No academic plan, discount or separate academic terms published. The Scale Up plan is restricted to startups
+    founded less than 10 years ago.
+- field: device_price
+  status: not_applicable
+  confidence: Verified
+  sources:
+  - url: https://www.thryve.health/pricing
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Thryve sells no hardware; it is a data-integration API and SDK.
+- field: subscription_price
+  status: not_applicable
+  confidence: Verified
+  sources:
+  - url: https://www.thryve.health/pricing
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: No consumer subscription; business plan prices are under api_platform_fees.
+- field: academic_pricing
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.thryve.health/pricing
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://www.thryve.health/free-trial
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://www.thryve.health/research-partners
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: api_platform_fees
+  status: stated
+  value: Start Up from EUR 499 per month (500 users, EUR 0.50 per extra user); Scale Up from EUR 1,000 per month
+    (5,000 users, EUR 999 per extra 10,000; startups under 10 years old only); Enterprise bespoke. Analytics capabilities
+    upon request.
+  confidence: Verified
+  sources:
+  - url: https://www.thryve.health/pricing
+    type: vendor_page
+    quote: Starts at 499 € / Per Month
+    retrieved: '2026-10-11'
+  - url: https://www.thryve.health/pricing
+    type: vendor_page
+    quote: Additional users billed at €0.50 each.
+    retrieved: '2026-10-11'
+  - url: https://www.thryve.health/pricing
+    type: vendor_page
+    quote: Scale your user base with additional €999 per 10,000 users.
+    retrieved: '2026-10-11'
+  - url: https://www.thryve.health/pricing
+    type: vendor_page
+    quote: Tailored plans available upon request.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Scale Up price "Starts at 1.000 € / Per Month" also appears on the page. Using the Google Health source
+    needs Google's CASA assessment, which Thryve says typically starts around EUR 1,000 per year, payable to the
+    assessor.
+- field: minimum_commitment
+  status: stated
+  value: Start Up is monthly and cancellable at any time. Scale Up and Enterprise terms are not published.
+  confidence: Verified
+  sources:
+  - url: https://www.thryve.health/free-trial
+    type: vendor_page
+    quote: Monthly — cancel any time
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  scope: Start Up plan
+- field: quote_required
+  status: stated
+  value: Start Up is self-serve with a public price; Scale Up and Enterprise go through sales (Contact Us), Enterprise
+    is priced on request.
+  confidence: Verified
+  sources:
+  - url: https://www.thryve.health/pricing
+    type: vendor_page
+    quote: Tailored plans available upon request.
+    retrieved: '2026-10-11'
+  - url: https://www.thryve.health/pricing
+    type: vendor_page
+    quote: To change your plan at any time, please contact our sales team
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: raw_streams
+  status: stated
+  value: 'No raw sensor signals (accelerometer, PPG): Thryve passes on the manufacturer-processed values each source
+    exposes, unaggregated, as epoch data via REST API. Through the Apple Health SDK module it also reads heartbeat
+    series and ECG.'
+  confidence: Verified
+  sources:
+  - url: https://docs.thryve.health/thryve-product-overview/access/data-model
+    type: vendor_docs
+    quote: Sensors in wearables typically record data at high sampling rates (50Hz and higher), which manufacturers
+      transform into digestible values.
+    retrieved: '2026-10-11'
+  - url: https://docs.thryve.health/thryve-product-overview/access/data-model
+    type: vendor_docs
+    quote: Thryve always stores data at the highest possible granularity and does not pre-aggregate epoch data.
+    retrieved: '2026-10-11'
+  - url: https://docs.thryve.health/thryve-data-sources/apple-health
+    type: vendor_docs
+    quote: The ThryveAppleHealth module supports over 90 HealthKit data types, including quantity types (e.g. steps,
+      heart rate, body mass), category types (e.g. sleep analysis, mindful sessions), workouts, heartbeat series,
+      ECG and characteristics
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: derived_metrics
+  status: stated
+  value: '250+ harmonized data types (source-provided daily and epoch values) plus Thryve analytics: foundational
+    analytics, health status and health risk assessments (sleep, VO2max estimates and similar scores).'
+  confidence: Verified
+  sources:
+  - url: https://docs.thryve.health/further-resources/technology-overview
+    type: vendor_docs
+    quote: the analytics platform calculates relevant scores and biomarkers based on state-of-the-art medical research
+      in real-time
+    retrieved: '2026-10-11'
+  - url: https://docs.thryve.health/thryve-product-overview/access/data-types-biomarker
+    type: vendor_docs
+    quote: We've got 250+ data types covering everything from basic steps to advanced cardiac analysis.
+    retrieved: '2026-10-11'
+  - url: https://www.thryve.health/pricing
+    type: vendor_page
+    quote: Analytics Capabilities Upon Request Upon Request
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: Source scores (for example readiness scores) are often not exposed by vendor APIs, per Thryve's data-availability
+    page.
+- field: sampling_rates
+  status: stated
+  value: 'Set by each source: epoch data at seconds precision, but for example Withings steps in up to 10-minute
+    chunks, Polar hourly, Fitbit intraday only for sleep and workouts without Fitbit intraday access. Retrieval
+    latency: ping sources near real time, bulk sources every 15 minutes at most.'
+  confidence: Verified
+  sources:
+  - url: https://docs.thryve.health/thryve-product-overview/access/data-model
+    type: vendor_docs
+    quote: All timestamps maintain seconds-level precision
+    retrieved: '2026-10-11'
+  - url: https://docs.thryve.health/thryve-product-overview/access/data-model
+    type: vendor_docs
+    quote: 'Fitbit : Only provides intraday data for sleep periods and workout recordings without special access'
+    retrieved: '2026-10-11'
+  - url: https://docs.thryve.health/thryve-data-sources/overview/data-source-types-and-retrieval-methods
+    type: vendor_docs
+    quote: we request new data for all users on a schedule with an interval of a maximum of 15 minutes
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: history_depth
+  status: stated
+  value: Default 14 days of data from before user creation; Start Up and Scale Up up to 14 days, Enterprise flexible.
+    Polar has no historic retrieval; Health Connect beyond 30 days needs an extra user permission; Google Health
+    lookback undefined. Per call the API returns at most 30 days of epoch or 364 days of daily data.
+  confidence: Verified
+  sources:
+  - url: https://docs.thryve.health/thryve-product-overview/control
+    type: vendor_docs
+    quote: By default, we allow for the retrieval of 14 days of historic data. When set to 0, only data from the
+      user creation date onwards will be stored.
+    retrieved: '2026-10-11'
+  - url: https://www.thryve.health/pricing
+    type: vendor_page
+    quote: Up to 14 days of Fetching historical data Up to 1 month of data storage
+    retrieved: '2026-10-11'
+  - url: https://docs.thryve.health/thryve-data-sources/overview
+    type: vendor_docs
+    quote: Timeframes extending 30 days prior to user connection require user granting dedicated permission for
+      historic data retrieval.
+    retrieved: '2026-10-11'
+    fetch_url: https://docs.thryve.health/thryve-data-sources/overview.md
+  - url: https://www.thryve.health/blog/fitbit-shutdown-september-2026-migration-options
+    type: vendor_page
+    quote: Google has not yet published a definitive historical lookback limit for the Google Health API.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: export_routes
+  status: stated
+  value: REST Wearable API v5 (epoch and daily endpoints), webhook notifications and data push, mobile SDKs (iOS,
+    Android, Flutter, React Native) for on-device sources, and the Thryve dashboard. Google Health is a web source
+    (bulk retrieval) with no shared OAuth client; customers must bring their own.
+  confidence: Verified
+  sources:
+  - url: https://docs.thryve.health/further-resources/technology-overview
+    type: vendor_docs
+    quote: SDKs for native (Android & iOS) and cross-platform (Flutter & React Native)
+    retrieved: '2026-10-11'
+  - url: https://docs.thryve.health/further-resources/technology-overview
+    type: vendor_docs
+    quote: The Wearable API allows you to access all data stored in our data warehouse for your users.
+    retrieved: '2026-10-11'
+  - url: https://docs.thryve.health/further-resources/technology-overview
+    type: vendor_docs
+    quote: Webhook notifications keep your backend informed when users connect or disconnect their data sources
+      as well as inform you about new or updated epoch and daily data.
+    retrieved: '2026-10-11'
+  - url: https://docs.thryve.health/thryve-data-sources/overview
+    type: vendor_docs
+    quote: 49 Google Health Web Bulk yes no
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+- field: rate_limits
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://docs.thryve.health/further-resources/v5-api-reference
+    type: vendor_docs
+    retrieved: '2026-10-11'
+  - url: https://docs.thryve.health/access-data-via-wearable-api/get-epoch-data
+    type: vendor_docs
+    retrieved: '2026-10-11'
+  - url: https://docs.thryve.health/thryve-data-sources/overview/shared-and-custom-oauth-clients
+    type: vendor_docs
+    quote: API rate limits are tied to the customer’s own developer account, not shared with others
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: 'No limits published for the Thryve API itself. Upstream source limits apply: with shared Thryve OAuth clients
+    they are shared across Thryve customers; with your own client they are your own. Per-request query range limits:
+    30 days epoch, 364 days daily.'
+- field: retention_terms
+  status: stated
+  value: 'Thryve stores data only for the plan''s storage window: 1 day (trial), 2 weeks (Start Up), 1 month (Scale
+    Up), flexible (Enterprise). Users and their data can be deleted by API (asynchronous, from midnight UTC after
+    the deletion date). Stored data types are configurable.'
+  confidence: Verified
+  sources:
+  - url: https://www.thryve.health/pricing
+    type: vendor_page
+    quote: Data storage options 1 Day 2 Weeks 1 Month Flexible
+    retrieved: '2026-10-11'
+  - url: https://www.thryve.health/free-trial
+    type: vendor_page
+    quote: Data storage 1 Day
+    retrieved: '2026-10-11'
+  - url: https://docs.thryve.health/further-resources/v5-api-reference/delete-end-user
+    type: vendor_docs
+    quote: Users are deleted asynchronously starting at midnight (UTC) following the specified deletion date. Data
+      remains accessible via API until deletion is executed.
+    retrieved: '2026-10-11'
+  - url: https://docs.thryve.health/thryve-product-overview/control
+    type: vendor_docs
+    quote: you can granularly define the data types we will store for your end users by data type
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: For studies this means data must be pulled continuously into your own store; Thryve is not a long-term archive
+    below Enterprise.
+- field: ai_training_terms
+  status: unclear
+  value: No AI or ML terms published. The Health SDK General Terms (v1.2, 5 January 2020) let Thryve research new
+    information from processed data with external partners using only completely anonymized data, and use aggregate
+    data from customers' use.
+  confidence: Unclear
+  sources:
+  - url: https://cdn.prod.website-files.com/67e3d7181adc28c746ec890a/682f90418cc84c163c2df205_GTC-HealthSDK.pdf
+    type: vendor_legal
+    quote: use completely anonymized data for
+    retrieved: '2026-10-11'
+  - url: https://cdn.prod.website-files.com/67e3d7181adc28c746ec890a/682f90418cc84c163c2df205_GTC-HealthSDK.pdf
+    type: vendor_legal
+    quote: from processed data, also with external
+    retrieved: '2026-10-11'
+  - url: https://cdn.prod.website-files.com/67e3d7181adc28c746ec890a/682f90418cc84c163c2df205_GTC-HealthSDK.pdf
+    type: vendor_legal
+    quote: Company may use aggregate data derived from
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  note: The GTC PDF is laid out in two columns, so only short, contiguous fragments match in extracted text. Whether
+    these terms still govern current plans is not stated.
+- field: deprecations
+  status: conflict
+  value: 'Fitbit source ends with Google''s Fitbit Web API shutdown: docs say 29 October 2026, the 29 September
+    2026 blog says 30 October. Thryve disconnects all Fitbit connections within 24 hours; ingested data stays. Every
+    user must re-authorize via Google Health (own OAuth app) or the on-device Apple Health or Health Connect bridge.'
+  confidence: Corroborated
+  sources:
+  - url: https://docs.thryve.health/thryve-data-sources/overview
+    type: vendor_docs
+    quote: 1 Fitbit ( Deprecating on Oct 29 2026) Web Ping yes yes
+    retrieved: '2026-10-11'
+  - url: https://www.thryve.health/blog/fitbit-shutdown-september-2026-migration-options
+    type: vendor_page
+    quote: Google has since extended that cut-off to October 30
+    retrieved: '2026-10-11'
+  - url: https://www.thryve.health/blog/fitbit-shutdown-september-2026-migration-options
+    type: vendor_page
+    quote: Within 24 hours, we will proactively disconnect all Fitbit connections on the Thryve side.
+    retrieved: '2026-10-11'
+  - url: https://www.thryve.health/blog/fitbit-shutdown-september-2026-migration-options
+    type: vendor_page
+    quote: Everything already ingested remains available against the same end-user ID, under the Fitbit data source.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  scope: Fitbit Web API source
+- field: deprecations
+  status: stated
+  value: Old Samsung Health module (shealth) deprecated 16 April 2026; removed in Thryve SDK 5.3.0.
+  confidence: Verified
+  sources:
+  - url: https://docs.thryve.health/thryve-data-sources/samsung-health
+    type: vendor_docs
+    quote: the old implementation will be completely removed with Thryve SDK 5.3.0.
+    retrieved: '2026-10-11'
+  recheck_by: '2026-11-09'
+  scope: Samsung Health SDK module
+- field: deprecations
+  status: stated
+  value: GoogleFitREST and GoogleFitNative marked end of life; closed to new apps since 1 May 2024, existing integrations
+    through 2026.
+  confidence: Verified
+  sources:
+  - url: https://docs.thryve.health/thryve-data-sources/overview
+    type: vendor_docs
+    quote: As of May 1, 2024, new apps cannot sign up to use these APIs. Existing integrations will continue to
+      work till 2026.
+    retrieved: '2026-10-11'
+    fetch_url: https://docs.thryve.health/thryve-data-sources/overview.md
+  recheck_by: '2026-11-09'
+  scope: Google Fit sources
+- field: baa
+  status: stated
+  value: Thryve says a BAA is included on all plans.
+  confidence: Corroborated
+  sources:
+  - url: https://www.thryve.health/certifications-compliance
+    type: vendor_page
+    quote: BAA agreements included on all plans — no enterprise upgrade required.
+    retrieved: '2026-10-11'
+  - url: https://www.thryve.health/pricing
+    type: vendor_page
+    quote: Data processing / Business association agreement
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+- field: dpa
+  status: stated
+  value: DPA included as standard; Thryve acts as data processor for the customer.
+  confidence: Corroborated
+  sources:
+  - url: https://www.thryve.health/certifications-compliance
+    type: vendor_page
+    quote: Data Processing Agreements included as standard, with full data residency controls.
+    retrieved: '2026-10-11'
+  - url: https://docs.thryve.health/thryve-data-sources/overview/shared-and-custom-oauth-clients
+    type: vendor_docs
+    quote: as we're acting as a data processor on your behalf
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+- field: hipaa_statement
+  status: stated
+  value: Self-declared HIPAA compliant.
+  confidence: Corroborated
+  sources:
+  - url: https://www.thryve.health/certifications-compliance
+    type: vendor_page
+    quote: Full compliance with US healthcare data protection law.
+    retrieved: '2026-10-11'
+  - url: https://www.thryve.health/pricing
+    type: vendor_page
+    quote: being 100% GDPR and HIPAA compliant
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: The trust center calls its certifications "independently audited and certified, not self-reported", but
+    no HIPAA attestation document is public; HIPAA has no certification body.
+- field: gdpr_statement
+  status: stated
+  value: Self-declared GDPR compliant; data pseudonymized behind a Thryve user token.
+  confidence: Corroborated
+  sources:
+  - url: https://www.thryve.health/certifications-compliance
+    type: vendor_page
+    quote: Built for European data protection law from the ground up.
+    retrieved: '2026-10-11'
+  - url: https://docs.thryve.health/further-resources/technology-overview
+    type: vendor_docs
+    quote: All user data is linked to a fully pseudonymized Thryve user token, giving Thryve no information on who
+      your user is.
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+- field: iso27001
+  status: stated
+  value: Claims ISO/IEC 27001 (and ISO 9001) certification; certificates are available only on request via a form,
+    so the certifier, scope and expiry are not public.
+  confidence: Corroborated
+  sources:
+  - url: https://www.thryve.health/certifications-compliance
+    type: vendor_page
+    quote: Thryve's infrastructure, processes, and data handling are independently audited against the highest security
+      requirements.
+    retrieved: '2026-10-11'
+  - url: https://www.thryve.health/pricing
+    type: vendor_page
+    quote: ISO9001 & 27001 Certified
+    retrieved: '2026-10-11'
+  - url: https://www.thryve.health/
+    type: vendor_page
+    quote: Request Certificates
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+- field: soc2
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.thryve.health/certifications-compliance
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://www.thryve.health/trust-center
+    type: vendor_page
+    retrieved: '2026-10-11'
+  - url: https://www.thryve.health/pricing
+    type: vendor_page
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: No SOC 2 claim found. The only SOC 2 mention is in the Fitbit migration blog, as a route to Google's CASA
+    accelerator for customers.
+- field: fda_clearances
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://api.fda.gov/device/510k.json?search=applicant:"mHealth+Pioneers"
+    type: regulator_db
+    retrieved: '2026-10-11'
+  - url: https://api.fda.gov/device/510k.json?search=applicant:"Thryve"
+    type: regulator_db
+    retrieved: '2026-10-11'
+  - url: https://api.fda.gov/device/510k.json?search=device_name:"Thryve"
+    type: regulator_db
+    retrieved: '2026-10-11'
+  - url: https://api.fda.gov/device/denovo.json?search=applicant:"mHealth+Pioneers"
+    type: regulator_db
+    retrieved: '2026-10-11'
+  - url: https://api.fda.gov/device/registrationlisting.json?search=registration.name:"mHealth+Pioneers"
+    type: regulator_db
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
+  note: All openFDA searches returned 404 (no matches) on 2026-10-11. Legal entity is mHealth Pioneers GmbH, Berlin.
+    Thryve markets the clinical trial platform as supporting FDA documentation processes, not as cleared.
+- field: data_residency
+  status: stated
+  value: All data processed and stored in Germany; no other region option published.
+  confidence: Verified
+  sources:
+  - url: https://www.thryve.health/pricing
+    type: vendor_page
+    quote: All data processed and stored by Thryve is hosted in Germany.
+    retrieved: '2026-10-11'
+  - url: https://www.thryve.health/multimodal-clinical-trial-platform
+    type: vendor_page
+    quote: Data is encrypted and hosted on ISO 27017/27018-certified German servers.
+    retrieved: '2026-10-11'
+  - url: https://www.thryve.health/
+    type: vendor_page
+    quote: Developed and hosted entirely in Europe
+    retrieved: '2026-10-11'
+  recheck_by: '2027-01-08'
