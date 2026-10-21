@@ -205,7 +205,7 @@ offering, and BAA availability almost everywhere. See `../shared/unresolved-ques
 - **Live conflicts in the sources:** Ametris's ActiLife Data Vault allowance (4 GB in the manual,
   20 GB on the product page); Movesense's maximum IMU rate (416, 833 or 1666 Hz by source); Axivity
   AX3 and GENEActiv recording durations (each vendor's own documents disagree); the
-  Withings+ US annual price ($99.50 or $99.95); Withings' inactive-account deletion (3 or 10 years);
+  Withings+ US annual price ($99.50 or $99.95); Withings' inactive-account closure (3, 5 or 10 years);
   whether HealthKit's per-recording ECG voltage counts as raw (Apple's own pages disagree); Garmin's
   FAQ still quoting two-business-day approval while applications are paused.
 - **Not assessed:** movisens, Shimmer, activPAL, Fibion (research-grade alternatives); Galaxy Ring as
