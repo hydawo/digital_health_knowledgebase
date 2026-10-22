@@ -90,6 +90,15 @@ scripts, and any fact whose quote moved. Rules and code: `tools/facts/recheck.py
 When you re-verify a fact by hand, update `retrieved` on the sources you re-read as well as
 `recheck_by`; the monitor uses the latest `retrieved` date to decide how long it may keep extending.
 
+## Vendor confirmation sheets
+
+`python3 tools/facts/confirm_sheet.py COMPANY` prints a numbered list of everything on record for a
+company, for the vendor to confirm or correct by item number. The cover email and the questions only
+the vendor can answer are written by hand around it. Drafts live outside the repository until Hassan
+has reviewed and sent them. An answer goes into the record as a source of type
+`vendor_confirmation`, which is also the evidence that lifts a self-claim (HIPAA, GDPR, ISO, SOC 2,
+BAA, DPA) above Corroborated.
+
 ## Re-check loop (the fact keeper)
 
 When the issue arrives:
