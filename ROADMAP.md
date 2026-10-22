@@ -40,6 +40,9 @@ generated ones.
 2. **Re-check schedule.** Weekly: the fact monitor (running, GitHub Actions, Mondays). Monthly:
    re-verify pricing, access and terms facts as their `recheck_by` dates fall due. Quarterly: an
    independent review like `shared/reviews/2026-10-10-independent-review.md`.
+   Since 2026-10-22 the Monday monitor extends `recheck_by` itself for stated facts whose quotes all
+   still match (`facts/README.md`, "Automatic re-check extension"). The monthly pass covers only what
+   it cannot confirm: about 180 of the 763 facts due by 2026-11-10, plus any whose quotes moved.
 3. **Module 3 queue.** Screen the 18 queued candidates, starting with Zawada 2025 (the first Beiwe
    deployment mostly after the heartbeat change); write the leftover profiles (Vidal 2022, Nock
    2026, Weingarden 2025) and the two ALS addenda.

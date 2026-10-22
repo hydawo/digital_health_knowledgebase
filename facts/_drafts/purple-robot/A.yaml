@@ -1,0 +1,473 @@
+# Draft record for purple-robot. Researcher A (sole researcher, cheaper variant), 2026-10-22. Schema: facts/_schema.yaml
+name: Purple Robot (Northwestern CBITS)
+kind: platform
+profile: module-02-digital-phenotyping/profiles/legacy-and-adjacent-platforms.md
+watch:
+- url: https://github.com/cbitstech/Purple-Robot
+  role: repository
+- url: https://github.com/cbitstech/Purple-Robot/issues/282
+  role: changelog
+- url: https://api.github.com/repos/cbitstech/Purple-Robot/commits?per_page=1
+  role: changelog
+- url: https://github.com/audaciouscode/Purple-Robot-Android
+  role: repository
+- url: https://api.github.com/repos/audaciouscode/Purple-Robot-Android/commits?per_page=1
+  role: changelog
+- url: https://github.com/cbitstech/Purple-Robot-Django
+  role: repository
+- url: https://github.com/audaciouscode/Purple-Robot-Android/blob/master/PRIVACY.md
+  role: terms
+- url: https://github.com/cbitstech/Purple-Robot/wiki
+  role: docs
+- url: https://github.com/cbitstech/Purple-Robot/wiki/Data-Upload-Reference
+  role: docs
+- url: https://github.com/cbitstech/Purple-Robot/blob/master/LICENSE.GPLv3
+  role: terms
+- url: https://play.google.com/store/apps/details?id=edu.northwestern.cbits.purple_robot_manager
+  role: app_store
+- url: https://audacious-software.com/
+  role: other
+- url: https://cbits.northwestern.edu/our-research/our-research-projects/completed-projects.html
+  role: research_program
+facts:
+- field: research_program
+  status: stated
+  value: No research access program. Purple Robot is open-source Android software that Northwestern CBITS built as infrastructure for its own intervention and sensing studies. Outside teams build the
+    APK from source and run their own upload server. No program, service or support offer is published by CBITS or by Audacious Software, the developer's company.
+  confidence: Corroborated
+  sources:
+  - url: https://github.com/cbitstech/Purple-Robot
+    type: repository
+    quote: The app was created by the Center for Behavioral Intervention Technologies at Northwestern University as an infrastructural component for a variety of behavioral and medical intervention applications.
+    retrieved: 2026-10-22
+  - url: https://github.com/cbitstech/Purple-Robot
+    type: repository
+    quote: The instructions below describe how to create an APK Android package for your own testing and development.
+    retrieved: 2026-10-22
+  - url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4526997/
+    type: paper
+    quote: Purple Robot is an open-source Android app that we developed to collect mobile phone sensor data
+    retrieved: 2026-10-22
+  - url: https://cbits.northwestern.edu/our-research/our-research-projects/completed-projects.html
+    type: vendor_page
+    quote: The personal sensing research at the Center for Behavioral Intervention Technologies harnesses sensor data collected from mobile phones and other devices to identify behaviors and states related to mental health.
+    retrieved: 2026-10-22
+  recheck_by: 2026-11-21
+  note: The current CBITS site (home, research projects, completed projects) does not name Purple Robot at all; personal sensing appears only under completed projects. The old project host
+    tech.cbits.northwestern.edu did not resolve on 2026-10-22. phidatalab.org now answers HTTP 200, but it is the King's College London Precision Health Informatics Data Lab (NIHR Maudsley BRC), and its
+    site search for "purple robot" returns nothing, so it is not a Purple Robot source.
+- field: program_eligibility
+  status: not_applicable
+  note: No program. The GPL v3 licence lets anyone build, run and modify the software; there is no eligibility test.
+- field: program_application
+  status: not_applicable
+  note: No application or approval step. The source and build instructions are public on GitHub.
+- field: program_status
+  status: stated
+  value: Archived and no longer developed, per the maintainer (Chris Karr, audaciouscode) in December 2023, who pointed would-be users to him by email for "developments since this project". The CBITS
+    personal sensing work that used it is listed under completed projects.
+  confidence: Verified
+  sources:
+  - url: https://github.com/cbitstech/Purple-Robot/issues/282
+    type: repository
+    quote: This app is currently archived and no longer being currently developed.
+    retrieved: 2026-10-22
+  - url: https://github.com/cbitstech/Purple-Robot/issues/282
+    type: repository
+    quote: If you're looking for a replacement, e-mail me
+    retrieved: 2026-10-22
+  - url: https://cbits.northwestern.edu/our-research/our-research-projects/completed-projects.html
+    type: vendor_page
+    quote: The personal sensing research at the Center for Behavioral Intervention Technologies harnesses sensor data collected from mobile phones and other devices to identify behaviors and states related to mental health.
+    retrieved: 2026-10-22
+  recheck_by: 2026-11-21
+  note: The maintainer's comment is dated 2023-12-20 (issue opened 2022-12-13). "Archived" is his word, not GitHub's archive flag; the GitHub API reported archived=false for cbitstech/Purple-Robot,
+    cbitstech/Purple-Robot-Django and audaciouscode/Purple-Robot-Android on 2026-10-22. Only the older NU-CBITS/PurpleRobotClient repository carries the GitHub archive flag.
+- field: developer_program_status
+  status: not_applicable
+  note: No developer or API program. The full source is public under GPL v3; there are no API keys or registrations. Development has stopped (see program_status).
+- field: user_cap
+  status: not_applicable
+  note: No caps. Capacity is bounded by the researcher's own upload server.
+- field: academic_vs_commercial
+  status: not_applicable
+  note: The same GPL v3 terms apply to everyone; no academic or commercial tier is published.
+- field: device_price
+  status: not_applicable
+  note: Software only, Android phones. Saeb et al. 2015 gave participants without a compatible phone an Android Nexus 4.
+  sources:
+  - url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4526997/
+    type: paper
+    quote: Participants who did not own a compatible phone were given an Android Nexus 4 with Purple Robot installed and configured.
+    retrieved: 2026-10-22
+- field: subscription_price
+  status: not_applicable
+  note: No subscription; free open-source software.
+- field: academic_pricing
+  status: not_applicable
+  note: Free open-source software for everyone; no academic price exists.
+- field: api_platform_fees
+  status: stated
+  value: None. The app and the Django server component are free open-source software under GPL v3.
+  confidence: Verified
+  sources:
+  - url: https://github.com/cbitstech/Purple-Robot/blob/master/LICENSE.GPLv3
+    type: repository
+    quote: GNU GENERAL PUBLIC LICENSE
+    retrieved: 2026-10-22
+  - url: https://github.com/cbitstech/Purple-Robot-Django/blob/master/LICENSE
+    type: repository
+    quote: Version 3, 29 June 2007
+    retrieved: 2026-10-22
+  recheck_by: 2026-11-21
+  note: Infrastructure costs (server, storage) fall on the deploying team.
+- field: minimum_commitment
+  status: not_applicable
+  note: No contract or term; open-source software.
+- field: quote_required
+  status: not_applicable
+  note: Nothing is sold. Audacious Software (the maintainer's company) lists general consulting and development services but publishes no Purple Robot offer or price.
+- field: hosting_price
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://audacious-software.com/
+    type: vendor_page
+    retrieved: 2026-10-22
+  - url: https://cbits.northwestern.edu/our-research/our-research-projects/completed-projects.html
+    type: vendor_page
+    retrieved: 2026-10-22
+  - url: https://github.com/cbitstech/Purple-Robot
+    type: repository
+    retrieved: 2026-10-22
+  recheck_by: 2026-11-21
+  note: No managed hosting is offered or priced anywhere checked. Audacious Software's homepage lists "Data Acquisition and Analysis" and "Maintenance, Support, and Modernization" services in
+    general terms, with no price and no Purple Robot hosting offer; audacious-software.com/services/ returns 404.
+- field: raw_streams
+  status: stated
+  value: 'Android only. Probes cover the Android sensor framework (accelerometer, gyroscope, magnetometer, light, pressure, proximity, temperature, gravity, rotation, step counter), raw and fused location,
+    Wi-Fi access points, Bluetooth devices, visible satellites, battery, screen state, call state, communication log, running software, application launches, telephony, hardware and software information,
+    touch events and audio features. All go by HTTP upload to the research team''s own server.'
+  confidence: Verified
+  sources:
+  - url: https://github.com/cbitstech/Purple-Robot/wiki
+    type: vendor_docs
+    quote: including the accelerometer, gyroscope, pressure sensor, and more.
+    retrieved: 2026-10-22
+  - url: https://github.com/cbitstech/Purple-Robot/wiki
+    type: vendor_docs
+    quote: Location sensors that use the built-in GPS and cellular triangulation options to map the user's location.
+    retrieved: 2026-10-22
+  - url: https://github.com/cbitstech/Purple-Robot/wiki
+    type: vendor_docs
+    quote: Options to scan for external devices such as wireless access points and visible Bluetooth devices.
+    retrieved: 2026-10-22
+  - url: https://github.com/audaciouscode/Purple-Robot-Android/tree/master/app/src/main/java/edu/northwestern/cbits/purple_robot_manager/probes/builtin
+    type: repository
+    quote: CommunicationLogProbe.java
+    retrieved: 2026-10-22
+  - url: https://github.com/audaciouscode/Purple-Robot-Android/tree/master/app/src/main/java/edu/northwestern/cbits/purple_robot_manager/probes/builtin
+    type: repository
+    quote: AudioFeaturesProbe.java
+    retrieved: 2026-10-22
+  recheck_by: 2026-11-21
+  note: The probe list comes from the builtin probes directory of the last code (v3.0.13, January 2019). The manifest asks for READ_SMS, READ_CALL_LOG and READ_CONTACTS; current Google Play policy and
+    Android versions newer than the app's target (API 28) would block or limit several of these, which is untested here.
+- field: derived_metrics
+  status: stated
+  value: On-device features including basic statistics and frequency features for accelerometer, gyroscope, light, magnetic field, pressure, proximity and temperature, plus call history, device in use and
+    sunrise/sunset features. Communication data can be summarised statistically before upload, and researchers can define new features in JavaScript. No analysis pipeline is published.
+  confidence: Verified
+  sources:
+  - url: https://github.com/audaciouscode/Purple-Robot-Android/tree/master/app/src/main/java/edu/northwestern/cbits/purple_robot_manager/probes/features
+    type: repository
+    quote: AccelerometerBasicStatisticsFeature.java
+    retrieved: 2026-10-22
+  - url: https://github.com/audaciouscode/Purple-Robot-Android/tree/master/app/src/main/java/edu/northwestern/cbits/purple_robot_manager/probes/features
+    type: repository
+    quote: DeviceInUseFeature.java
+    retrieved: 2026-10-22
+  - url: https://github.com/cbitstech/Purple-Robot/wiki
+    type: vendor_docs
+    quote: Statistical summaries of the user's communication patterns, including phone logs and text-message transcripts.
+    retrieved: 2026-10-22
+  recheck_by: 2026-11-21
+  note: Behavioural features such as location variance or circadian movement in Saeb et al. 2015 were computed by the study team offline, not by Purple Robot.
+- field: sampling_rates
+  status: stated
+  value: Configurable per probe. Accelerometer options run from 200 per second down to every 10 seconds; other built-in sensors from 10 per second to every 10 seconds; the generic probe default interval
+    is 300000 ms (5 minutes). Saeb et al. 2015 sampled GPS once every 5 minutes and screen on/off events.
+  confidence: Verified
+  sources:
+  - url: https://github.com/audaciouscode/Purple-Robot-Android/blob/master/app/src/main/res/values/arrays.xml
+    type: repository
+    quote: 200 per second
+    retrieved: 2026-10-22
+  - url: https://github.com/audaciouscode/Purple-Robot-Android/blob/master/app/src/main/res/values/arrays.xml
+    type: repository
+    quote: Every 10 seconds
+    retrieved: 2026-10-22
+  - url: https://raw.githubusercontent.com/audaciouscode/Purple-Robot-Android/master/app/src/main/java/edu/northwestern/cbits/purple_robot_manager/probes/Probe.java
+    type: repository
+    quote: public static final String DEFAULT_FREQUENCY = "300000";
+    retrieved: 2026-10-22
+  - url: https://github.com/cbitstech/Purple-Robot/wiki/Probe-&-Feature-Reference
+    type: vendor_docs
+    quote: sampled at a high frequency (many times per second) from the built-in hardware sensor
+    retrieved: 2026-10-22
+  - url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4526997/
+    type: paper
+    quote: Purple Robot sampled the GPS location sensor once every 5 minutes and collected phone usage data by detecting the screen on and off events
+    retrieved: 2026-10-22
+  recheck_by: 2026-11-21
+  note: The option lists are settings labels in the source, not measured rates; achieved rates depend on the phone's hardware and Android's background limits.
+- field: history_depth
+  status: not_applicable
+  note: Data live on the research team's own server, so history is whatever the team keeps. On the phone, data are held only until a successful upload.
+- field: export_routes
+  status: stated
+  value: The app POSTs JSON sensor payloads to an HTTP endpoint the researcher configures, with store-and-forward retry. The Purple-Robot-Django server app receives them and offers a date-range export page
+    and CSV export jobs; a small CherryPy starter server is also documented. An embedded localhost HTTP API lets other apps on the phone reach Purple Robot data and scripts.
+  confidence: Verified
+  sources:
+  - url: https://github.com/cbitstech/Purple-Robot/wiki/Data-Upload-Reference
+    type: vendor_docs
+    quote: sensor data payloads to this endpoint
+    retrieved: 2026-10-22
+  - url: https://github.com/cbitstech/Purple-Robot/wiki/Data-Upload-Reference
+    type: vendor_docs
+    quote: If an error status is returned, the device running Purple Robot will retain the data and attempt to upload it at a later time
+    retrieved: 2026-10-22
+  - url: https://github.com/cbitstech/Purple-Robot-Django
+    type: repository
+    quote: The data upload endpoint where Purple Robot sends sensor data payloads.
+    retrieved: 2026-10-22
+  - url: https://github.com/cbitstech/Purple-Robot-Django
+    type: repository
+    quote: exports data into csv files where requested
+    retrieved: 2026-10-22
+  - url: https://github.com/cbitstech/Purple-Robot/wiki/Embedded-HTTP-API
+    type: vendor_docs
+    quote: Purple Robot now includes a local HTTP server that is accessible to local applications on the mobile device.
+    retrieved: 2026-10-22
+  recheck_by: 2026-11-21
+  note: The Django app pins Django 1.6 and South, long out of support. The upload protocol uses MD5 checksums.
+- field: rate_limits
+  status: not_applicable
+  note: No hosted API. Throughput is bounded by the team's own server.
+- field: retention_terms
+  status: stated
+  value: No vendor retention terms; the deploying research site sets its own privacy rules. On the phone, data are anonymised (MD5 hashing and AES) before storage, then deleted after transmission to the
+    server.
+  confidence: Verified
+  sources:
+  - url: https://github.com/audaciouscode/Purple-Robot-Android/blob/master/PRIVACY.md
+    type: vendor_legal
+    quote: Each research site is responsible for drafting and implementing its own privacy in accordance with local laws, research ethics boards, and other applicable regulatory powers.
+    retrieved: 2026-10-22
+  - url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4526997/
+    type: paper
+    quote: Once the data are anonymized, they are stored and later transmitted to the data collection server before being deleted from the device.
+    retrieved: 2026-10-22
+  - url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4526997/
+    type: paper
+    quote: Purple Robot anonymizes personally identifiable and other sensitive information before storage and transmission, using standard MD5 hashing and advanced encryption standard
+    retrieved: 2026-10-22
+  recheck_by: 2026-11-21
+  note: The paper is by the CBITS team that built the app (Saeb et al., JMIR 2015, 17(7):e175). MD5 hashing of identifiers is weak by current standards.
+- field: ai_training_terms
+  status: not_applicable
+  note: No vendor holds or processes study data, so there are no AI-training terms. Checked the GitHub README, wiki and PRIVACY.md.
+- field: deprecations
+  status: stated
+  value: Development has stopped. The maintainer called the app archived and no longer developed in December 2023. Last commits are 2016-04-11 on cbitstech/Purple-Robot master (v2.0.9), 2019-01-30
+    on audaciouscode/Purple-Robot-Android (v3.0.13, target API 28) and 2020-06-22 on audaciouscode/Purple-Robot-Django. The Google Play listing is gone. No formal end-of-life date was ever announced.
+  confidence: Verified
+  sources:
+  - url: https://github.com/cbitstech/Purple-Robot/issues/282
+    type: repository
+    quote: This app is currently archived and no longer being currently developed.
+    retrieved: 2026-10-22
+  - url: https://api.github.com/repos/cbitstech/Purple-Robot/commits?per_page=1
+    type: repository
+    quote: '2016-04-11T13:28:23Z'
+    retrieved: 2026-10-22
+  - url: https://api.github.com/repos/audaciouscode/Purple-Robot-Android/commits?per_page=1
+    type: repository
+    quote: '2019-01-30T00:04:00Z'
+    retrieved: 2026-10-22
+  - url: https://api.github.com/repos/audaciouscode/Purple-Robot-Django/commits?per_page=1
+    type: repository
+    quote: '2020-06-22T13:46:16Z'
+    retrieved: 2026-10-22
+  - url: https://github.com/audaciouscode/Purple-Robot-Android/blob/master/app/build.gradle
+    type: repository
+    quote: targetSdkVersion 28
+    retrieved: 2026-10-22
+  - url: https://play.google.com/store/apps/details?id=edu.northwestern.cbits.purple_robot_manager
+    type: app_store
+    retrieved: 2026-10-22
+    expect_absent: true
+  recheck_by: 2026-11-21
+  note: GitHub's archive flag is not set on the main repositories. Repository activity on 2026-10-15 was housekeeping only (an account closed the 2015 issue 272, and a star). audaciouscode/Purple-Robot-Starter-Site
+    has a dependabot merge on 2020-12-08 and a branch push in 2022, with no code changes.
+- field: licence
+  status: stated
+  value: GPL v3 for the Android app (cbitstech/Purple-Robot, as LICENSE.GPLv3, and audaciouscode/Purple-Robot-Android) and for the Purple-Robot-Django server app.
+  confidence: Verified
+  sources:
+  - url: https://github.com/cbitstech/Purple-Robot/blob/master/LICENSE.GPLv3
+    type: repository
+    quote: GNU GENERAL PUBLIC LICENSE
+    retrieved: 2026-10-22
+  - url: https://github.com/audaciouscode/Purple-Robot-Android/blob/master/LICENSE
+    type: repository
+    quote: Version 3, 29 June 2007
+    retrieved: 2026-10-22
+  - url: https://github.com/cbitstech/Purple-Robot-Django/blob/master/LICENSE
+    type: repository
+    quote: Version 3, 29 June 2007
+    retrieved: 2026-10-22
+  recheck_by: 2026-11-21
+  note: GitHub's licence detector reports NOASSERTION for cbitstech/Purple-Robot because the file is named LICENSE.GPLv3; the Android fork and both Django repositories detect as GPL-3.0. Older helper
+    repositories (dashboards, configuration tools, NU-CBITS/PurpleRobotClient) have no licence file.
+- field: hosting_options
+  status: stated
+  value: Self-hosting only. Teams run their own upload endpoint, either the Purple-Robot-Django app (PostgreSQL, cron-driven extraction and export) or the documented CherryPy starter server. No managed
+    hosting is offered.
+  confidence: Verified
+  sources:
+  - url: https://github.com/cbitstech/Purple-Robot-Django
+    type: repository
+    quote: This is a self-contained Django app for importing Purple Robot data from mobile devices.
+    retrieved: 2026-10-22
+  - url: https://github.com/cbitstech/Purple-Robot/wiki/Data-Upload-Reference
+    type: vendor_docs
+    quote: we've built a small starter server
+    retrieved: 2026-10-22
+  - url: https://github.com/cbitstech/Purple-Robot/wiki
+    type: vendor_docs
+    quote: A robust store-and-forward architecture for transmitting sensor data and user-provided information to custom data warehouses.
+    retrieved: 2026-10-22
+  recheck_by: 2026-11-21
+  note: The starter server link in the wiki points to a nupmmarkbegale repository that may no longer exist; the Test Server folder in cbitstech/Purple-Robot holds a copy.
+- field: app_availability
+  status: stated
+  value: Android only, and no longer in any store. The Google Play listing (edu.northwestern.cbits.purple_robot_manager) returns 404, there is no F-Droid listing, and there was never an iOS app. Teams
+    must build the APK from source; the cbitstech repository also holds a prebuilt Purple Robot.apk from 2016.
+  confidence: Verified
+  sources:
+  - url: https://play.google.com/store/apps/details?id=edu.northwestern.cbits.purple_robot_manager
+    type: app_store
+    retrieved: 2026-10-22
+    expect_absent: true
+  - url: https://audacious-software.com/
+    type: vendor_page
+    quote: Purple Robot Android / Web / Wearables / Devices
+    retrieved: 2026-10-22
+  - url: https://github.com/cbitstech/Purple-Robot
+    type: repository
+    quote: Purple Robot is an Android application for creating automated experiences on the Android platform with sensing and inference capabilities.
+    retrieved: 2026-10-22
+  - url: https://github.com/cbitstech/Purple-Robot
+    type: repository
+    quote: The instructions below describe how to create an APK Android package for your own testing and development.
+    retrieved: 2026-10-22
+  recheck_by: 2026-11-21
+  note: Audacious Software's homepage still links Purple Robot to that Play listing, which 404s. https://f-droid.org/packages/edu.northwestern.cbits.purple_robot_manager/ also returned 404 on 2026-10-22.
+    The prebuilt APK targets 2016-era Android (build against API 22) and was not tested on current phones.
+- field: baa
+  status: not_applicable
+  sources:
+  - url: https://github.com/audaciouscode/Purple-Robot-Android/blob/master/PRIVACY.md
+    type: vendor_legal
+    retrieved: 2026-10-22
+  - url: https://audacious-software.com/
+    type: vendor_page
+    retrieved: 2026-10-22
+  note: No vendor hosts or receives study data, so there is no business associate to sign a BAA; the deploying institution is responsible. No BAA is mentioned on any page checked.
+- field: dpa
+  status: not_applicable
+  sources:
+  - url: https://github.com/audaciouscode/Purple-Robot-Android/blob/master/PRIVACY.md
+    type: vendor_legal
+    retrieved: 2026-10-22
+  - url: https://audacious-software.com/
+    type: vendor_page
+    retrieved: 2026-10-22
+  note: No vendor processes study data, so there is no processor to offer a DPA. No DPA is mentioned on any page checked.
+- field: hipaa_statement
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://github.com/audaciouscode/Purple-Robot-Android/blob/master/PRIVACY.md
+    type: vendor_legal
+    retrieved: 2026-10-22
+  - url: https://github.com/cbitstech/Purple-Robot
+    type: repository
+    retrieved: 2026-10-22
+  - url: https://github.com/cbitstech/Purple-Robot/wiki
+    type: vendor_docs
+    retrieved: 2026-10-22
+  - url: https://github.com/cbitstech/Purple-Robot-Django
+    type: repository
+    retrieved: 2026-10-22
+  recheck_by: 2027-01-20
+  note: No HIPAA statement anywhere checked. The privacy note places responsibility on each research site.
+- field: gdpr_statement
+  status: not_public
+  confidence: Corroborated
+  sources:
+  - url: https://github.com/audaciouscode/Purple-Robot-Android/blob/master/PRIVACY.md
+    type: vendor_legal
+    retrieved: 2026-10-22
+  - url: https://github.com/cbitstech/Purple-Robot
+    type: repository
+    retrieved: 2026-10-22
+  - url: https://github.com/cbitstech/Purple-Robot/wiki
+    type: vendor_docs
+    retrieved: 2026-10-22
+  recheck_by: 2027-01-20
+  note: No GDPR statement. The project predates GDPR (last CBITS code 2016) and was never updated for it.
+- field: iso27001
+  status: not_applicable
+  note: Software only, with no vendor-operated service to certify. No certification is mentioned in the repositories, wiki or on audacious-software.com.
+- field: soc2
+  status: not_applicable
+  note: Software only, with no vendor-operated service to audit. No SOC 2 report is mentioned in the repositories, wiki or on audacious-software.com.
+- field: fda_clearances
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://api.fda.gov/device/510k.json?search=device_name:"Purple+Robot"
+    type: regulator_db
+    retrieved: 2026-10-22
+  - url: https://api.fda.gov/device/pma.json?search=device_name:"Purple+Robot"
+    type: regulator_db
+    retrieved: 2026-10-22
+  - url: https://api.fda.gov/device/510k.json?search=applicant:"Northwestern+University"
+    type: regulator_db
+    retrieved: 2026-10-22
+  - url: https://api.fda.gov/device/510k.json?search=applicant:"Audacious+Software"
+    type: regulator_db
+    retrieved: 2026-10-22
+  - url: https://api.fda.gov/device/registrationlisting.json?search=proprietary_name:"Purple+Robot"
+    type: regulator_db
+    retrieved: 2026-10-22
+  recheck_by: 2027-01-20
+  note: All searches returned no matches (404) on 2026-10-22, as did PMA searches for both applicants. Purple Robot is research software and makes no medical-device claim.
+- field: data_residency
+  status: stated
+  value: Wherever the deploying team runs its own server. Data stay on the phone until upload and then go only to the endpoint the researcher configures; there is no vendor storage.
+  confidence: Verified
+  sources:
+  - url: https://github.com/audaciouscode/Purple-Robot-Android/blob/master/PRIVACY.md
+    type: vendor_legal
+    quote: By default, Purple Robot is not configured to collect this data not transmit it until properly configured by a deploying researcher.
+    retrieved: 2026-10-22
+  - url: https://github.com/cbitstech/Purple-Robot/wiki/Data-Upload-Reference
+    type: vendor_docs
+    quote: sensor data payloads to this endpoint
+    retrieved: 2026-10-22
+  recheck_by: 2027-01-20
+  note: Some optional probes and integrations (Google Places, Facebook and other service integrations in older builds) contact third-party services from the phone.

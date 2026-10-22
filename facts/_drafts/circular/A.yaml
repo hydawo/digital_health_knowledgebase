@@ -1,0 +1,540 @@
+# Draft record for circular, researcher A (single-researcher run with own gap sweep). Schema: facts/_schema.yaml
+# Started 2026-10-11 (template only, nothing filled); researched and completed 2026-10-22. Every quote confirmed exact with quote_probe.py on 2026-10-22.
+name: Circular
+kind: wearable
+profile: module-01-wearables/profiles/emerging-platforms.md
+watch:
+- url: https://www.circular.xyz/science
+  role: research_program
+- url: https://www.circular.xyz/professionals
+  role: developer_program
+- url: https://shop.circular.xyz/products/circular-ring-2
+  role: pricing
+- url: https://www.circular.xyz/shop
+  role: pricing
+- url: https://www.circular.xyz/coins
+  role: pricing
+- url: https://www.circular.xyz/circular-ring-3
+  role: pricing
+- url: https://www.circular.xyz/terms-of-use
+  role: terms
+- url: https://www.circular.xyz/terms-of-sale
+  role: terms
+- url: https://www.circular.xyz/privacy-policy
+  role: terms
+- url: https://www.circular.xyz/release-notes
+  role: changelog
+- url: https://www.societe.com/societe/circular-850542804.html
+  role: other
+- url: https://apps.apple.com/us/app/circular-ring-health-tracker/id1583942047
+  role: app_store
+- url: https://play.google.com/store/apps/details?id=xyz.circular.circular
+  role: app_store
+facts:
+- field: research_program
+  status: stated
+  value: No named program. The science page invites research partners to "bring us a protocol"; Circular supplies
+    devices, raw signal access under agreement and engineering time for studies run against a reference standard.
+  confidence: Verified
+  sources:
+  - url: https://www.circular.xyz/science
+    type: vendor_page
+    quote: "Bring us a protocol. We supply devices, raw signal access under agreement and engineering time for studies that hold us to a reference standard."
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+  note: The same page lists six internal study protocols (sleep apnoea, AFib after ablation, cycle phase, illness
+    detection, shift work, athletes) whose summaries partners can request. No terms, cost or agreement template is published.
+- field: program_eligibility
+  status: stated
+  value: Clinical, academic and enterprise partners; no further criteria published beyond studies that use a reference
+    standard.
+  confidence: Verified
+  sources:
+  - url: https://www.circular.xyz/science
+    type: vendor_page
+    quote: "Clinical, academic and enterprise partners are all welcome."
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+- field: program_application
+  status: stated
+  value: Contact the research team through the science page (typical reply within five working days); no application
+    form, review criteria or timeline published. API access for business customers is by contact and limited to selected projects.
+  confidence: Verified
+  sources:
+  - url: https://www.circular.xyz/science
+    type: vendor_page
+    quote: "Contact the research team Request the validation summary Typical response within five working days."
+    retrieved: '2026-10-22'
+  - url: https://www.circular.xyz/professionals
+    type: vendor_page
+    quote: "Is there an API or data export? Yes. Please contact us for more information — access is currently limited to selected projects."
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+- field: program_status
+  status: unclear
+  value: The research offer is live on the site, but the original operator Circular SAS (SIREN 850 542 804) was converted
+    to judicial liquidation on 14 October 2025. Products and terms are now issued by Circular Health Limited, a Hong Kong
+    company registered in Paris (990 900 326). Whether research agreements signed with the old entity carry over is not published.
+  confidence: Unclear
+  sources:
+  - url: https://www.circular.xyz/science
+    type: vendor_page
+    quote: "Six active protocols, each with a named reference standard and a defined read-out date. Partners can request the protocol summary for any of them."
+    retrieved: '2026-10-22'
+  - url: https://www.societe.com/societe/circular-850542804.html
+    type: secondary
+    quote: "14/10/2025 Annonce BODACC - Jugement de conversion en liquidation judiciaire"
+    retrieved: '2026-10-22'
+  - url: https://www.circular.xyz/terms-of-use
+    type: vendor_legal
+    quote: "Circular Health Limited, which is registered in the Paris Register of Trade & Companies under the number 990 900 326"
+    retrieved: '2026-10-22'
+  - url: https://gadgetsandwearables.com/2026/02/14/circular-ring-liquidation/
+    type: secondary
+    quote: "The French company behind the Circular Ring officially entered judicial liquidation at the end of last year as part of a major corporate shuffle."
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+  note: BODACC (official gazette) record A202502091404, published 2025-10-30, records the 2025-10-14 conversion of the
+    redressement judiciaire (opened 2024-10-08, cessation of payments 2024-08-31) into liquidation, liquidator Selarl Asteren.
+    Read through the BODACC open-data API on 2026-10-22; robots.txt blocks scripted re-checks, so societe.com is cited.
+    The founders told press the business moved to Hong Kong under Circular Health Limited.
+- field: developer_program_status
+  status: stated
+  value: No public developer program or API documentation. An API and SDK are offered to business customers on the
+    Professional track, by contact, and access is limited to selected projects.
+  confidence: Verified
+  sources:
+  - url: https://www.circular.xyz/professionals
+    type: vendor_page
+    quote: "Is there an API or data export? Yes. Please contact us for more information — access is currently limited to selected projects."
+    retrieved: '2026-10-22'
+  - url: https://www.circular.xyz/professionals
+    type: vendor_page
+    quote: "Circular API and SDK, scoped to what you need"
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+  note: Searched for developer docs, an API reference and API terms; none found. The terms of use bar connections to the
+    service except through Circular devices, its apps and approved third-party applications.
+- field: user_cap
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.circular.xyz/professionals
+    type: vendor_page
+    retrieved: '2026-10-22'
+  - url: https://www.circular.xyz/science
+    type: vendor_page
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+  note: No participant or account cap is stated for the team dashboard or the API. The only number published is the
+    25-unit minimum order (see minimum_commitment).
+- field: academic_vs_commercial
+  status: stated
+  value: No separate academic track. Research partnerships are offered on the same terms to clinical, academic and
+    enterprise partners; business buyers choose between a no-code team dashboard track and a Professional API/SDK track.
+  confidence: Reported
+  sources:
+  - url: https://www.circular.xyz/science
+    type: vendor_page
+    quote: "Clinical, academic and enterprise partners are all welcome."
+    retrieved: '2026-10-22'
+  - url: https://www.circular.xyz/professionals
+    type: vendor_page
+    quote: "Circular API and SDK, scoped to what you need"
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+  note: Reported because "no difference" is read from the absence of any distinction, not from a statement that terms are identical.
+- field: device_price
+  status: conflict
+  value: Circular Ring 2 lists at $349 (US, Obsidian Black; store variants with sizing kit run $354 to $554 by finish),
+    but the shop page's HSA/FSA paragraph calls it a $299 ring. Circular Ring 3 price not yet announced (pre-orders December 2026).
+  confidence: Verified
+  sources:
+  - url: https://shop.circular.xyz/products/circular-ring-2
+    type: vendor_page
+    quote: "$349"
+    retrieved: '2026-10-22'
+  - url: https://www.circular.xyz/shop
+    type: vendor_page
+    quote: "which brings a $299 ring closer to $210 out of pocket depending on your bracket"
+    retrieved: '2026-10-22'
+  - url: https://www.circular.xyz/circular-ring-3
+    type: vendor_page
+    quote: "December 2026 Pre-orders open, with pricing announced at the same time."
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+  note: Variant prices read from the Shopify product JSON (shop.circular.xyz/products/circular-ring-2.js) on 2026-10-22.
+    The $299 figure appears only in the HSA example and may be stale copy.
+- field: subscription_price
+  status: stated
+  value: No subscription required. Optional premium "Circles" are unlocked month by month with in-app coins, 12,000 to
+    16,000 coins a month, at about 4,000 coins per euro (roughly 3 to 4 euros a month); coins can also be earned by wearing the ring.
+  confidence: Verified
+  sources:
+  - url: https://www.circular.xyz/terms-of-use
+    type: vendor_legal
+    quote: "The Circular ring is sold as a one-off purchase. No subscription is required to use the ring or the Circular app, and the health features included with the ring remain available at no further cost."
+    retrieved: '2026-10-22'
+  - url: https://www.circular.xyz/coins
+    type: vendor_page
+    quote: "Unlock a Circle 12,000 to 16,000 coins for one month, depending on the Circle. Recurring, and you can stop any month."
+    retrieved: '2026-10-22'
+  - url: https://www.circular.xyz/coins
+    type: vendor_page
+    quote: "Four thousand coins is worth about €1"
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+  note: Inconsistency on what is paid. The blood pressure page says BP trends are included with the ring permanently,
+    while the 28 September 2026 app release notes describe "Premium blood pressure". Ring 3 subscription terms are to be
+    confirmed with its pricing.
+- field: academic_pricing
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.circular.xyz/science
+    type: vendor_page
+    retrieved: '2026-10-22'
+  - url: https://www.circular.xyz/professionals
+    type: vendor_page
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+  note: Business tracks advertise a volume discount on every ring, but no academic or research price is published.
+    Research partners may be supplied devices under agreement (science page); terms not published.
+- field: api_platform_fees
+  status: stated
+  value: Team dashboard (multi-account web dashboard with CSV export) is free; API and SDK fees are not published and
+    go through a quote.
+  confidence: Verified
+  sources:
+  - url: https://www.circular.xyz/professionals
+    type: vendor_page
+    quote: "Free access to multiple accounts' data through a central web dashboard."
+    retrieved: '2026-10-22'
+  - url: https://www.circular.xyz/professionals
+    type: vendor_page
+    quote: "Request a quote"
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+- field: minimum_commitment
+  status: stated
+  value: Business orders start at 25 rings.
+  confidence: Verified
+  sources:
+  - url: https://www.circular.xyz/professionals
+    type: vendor_page
+    quote: "What is the minimum order? As low as 25 units."
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+- field: quote_required
+  status: stated
+  value: Yes for business and research use. Both business tracks are priced by quote (volume discount on every ring);
+    consumer rings are list-priced.
+  confidence: Verified
+  sources:
+  - url: https://www.circular.xyz/professionals
+    type: vendor_page
+    quote: "Request a quote"
+    retrieved: '2026-10-22'
+  - url: https://www.circular.xyz/professionals
+    type: vendor_page
+    quote: "Volume discount on every ring"
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+- field: raw_streams
+  status: stated
+  value: Raw signal (PPG green/red/IR, single-lead ECG, skin temperature, 3-axis accelerometer) only through a research
+    partnership, under agreement. No public route to raw signal; the app's Apple Health and Health Connect sync carries
+    processed intraday values, not waveforms.
+  confidence: Corroborated
+  sources:
+  - url: https://www.circular.xyz/science
+    type: vendor_page
+    quote: "Bring us a protocol. We supply devices, raw signal access under agreement and engineering time for studies that hold us to a reference standard."
+    retrieved: '2026-10-22'
+  - url: https://www.circular.xyz/release-notes
+    type: vendor_docs
+    quote: "Internal tool access to raw metrics restricted by user group"
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+  note: Corroborated because the raw-access offer is a marketing statement with no published format, schema or agreement.
+- field: derived_metrics
+  status: stated
+  value: Through the team dashboard, CSV export of any metric with daily and historical detail per wearer. Through the
+    phone, intraday values (temperature, SpO2, breathing rate and others), HRV and sport sessions sync to Apple Health and
+    Health Connect. ECG and blood pressure reports export as PDF.
+  confidence: Verified
+  sources:
+  - url: https://www.circular.xyz/professionals
+    type: vendor_page
+    quote: "Export clean CSV Any metric, readable columns, ready for your own analysis or a clinician's records."
+    retrieved: '2026-10-22'
+  - url: https://www.circular.xyz/release-notes
+    type: vendor_docs
+    quote: "Intra day data is now sent to Android Health Connect & Apple Health (temperature, SpO2, Breathing rate, etc)"
+    retrieved: '2026-10-22'
+  - url: https://www.circular.xyz/release-notes
+    type: vendor_docs
+    quote: "Sport sessions can be now uploaded to HealthKit an Health Connect"
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+  note: Circular's own science page says it does not infer blood glucose, blood pressure or hydration from optical data,
+    while its BP page and app offer calibrated blood pressure estimates and the firmware notes add glucose compatibility.
+    Treat BP and glucose outputs with caution.
+- field: sampling_rates
+  status: stated
+  value: Ring 2 sensor rates per the science page; PPG (green, red, infrared) 25 Hz, single-lead ECG 510 Hz (40 s
+    recordings), skin temperature 1 Hz at 0.01 °C resolution, 3-axis accelerometer 25 Hz. Resolution of exported
+    metrics is not documented.
+  confidence: Verified
+  sources:
+  - url: https://www.circular.xyz/science
+    type: vendor_page
+    quote: "Green, red and infrared LEDs sample blood volume at 25 Hz."
+    retrieved: '2026-10-22'
+  - url: https://www.circular.xyz/science
+    type: vendor_page
+    quote: "Two dry electrodes record the heart’s electrical activity at 510 Hz."
+    retrieved: '2026-10-22'
+  - url: https://www.circular.xyz/science
+    type: vendor_page
+    quote: "A thermistor in contact with the finger resolves 0.01 °C every second."
+    retrieved: '2026-10-22'
+  - url: https://www.circular.xyz/science
+    type: vendor_page
+    quote: "A 3-axis accelerometer at 25 Hz classifies activity type, cadence and intensity"
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+  scope: Circular Ring 2
+  note: These are on-ring sensor rates. Release notes (firmware 1.0.47) mention a PPG frequency switch between sport,
+    performance and eco modes, so the continuous rate may differ by mode.
+- field: history_depth
+  status: stated
+  value: The team dashboard shows each wearer's full record, from last night back to the start; no API history limit is
+    published.
+  confidence: Reported
+  sources:
+  - url: https://www.circular.xyz/professionals
+    type: vendor_page
+    quote: "Click into any client Full daily and historical detail for one person, from last night back through the whole record."
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+- field: export_routes
+  status: stated
+  value: (1) Team dashboard at dashboard.circular.care with CSV export, free for business customers; (2) API and SDK
+    for selected projects by contact; (3) app sync to Apple Health and Health Connect (Google Fit retired February 2025);
+    (4) PDF reports for ECG and blood pressure; (5) in-app export or deletion of a user's data; (6) raw signal under a
+    research agreement.
+  confidence: Verified
+  sources:
+  - url: https://www.circular.xyz/professionals
+    type: vendor_page
+    quote: "Export clean CSV Any metric, readable columns, ready for your own analysis or a clinician's records."
+    retrieved: '2026-10-22'
+  - url: https://www.circular.xyz/professionals
+    type: vendor_page
+    quote: "Is there an API or data export? Yes. Please contact us for more information — access is currently limited to selected projects."
+    retrieved: '2026-10-22'
+  - url: https://www.circular.xyz/release-notes
+    type: vendor_docs
+    quote: "Intra day data is now sent to Android Health Connect & Apple Health (temperature, SpO2, Breathing rate, etc)"
+    retrieved: '2026-10-22'
+  - url: https://www.circular.xyz/circular-ring-3
+    type: vendor_page
+    quote: "Your health data belongs to you. It is stored encrypted, it is never sold, and you can export or delete it from the app at any time."
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+  note: Circular is not a provider in Terra's integration list (api.tryterra.co/v2/integrations/detailed, checked
+    2026-10-22). The September 2026 release notes mention a "Terra integration", which appears to bring other devices'
+    data into the Circular app, not to expose Circular data. The help centre (helpdesk.circular.xyz) sits behind a bot
+    check and was not read.
+- field: rate_limits
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.circular.xyz/professionals
+    type: vendor_page
+    retrieved: '2026-10-22'
+  - url: https://www.circular.xyz/terms-of-use
+    type: vendor_legal
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+  note: No public API documentation exists to state limits.
+- field: retention_terms
+  status: stated
+  value: Personal data kept as long as needed for the stated purposes or as required by law, then deleted or kept only
+    in anonymised form; the terms of use add that data held for contractual and regulatory obligations is deleted no
+    later than ten years on, unless litigation arises. No API-side retention terms published.
+  confidence: Verified
+  sources:
+  - url: https://www.circular.xyz/privacy-policy
+    type: vendor_legal
+    quote: "We store all Personal Information for as long as necessary to fulfil the purposes set out in this Policy, or for as long as we are required to do so by law or in order to comply with regulatory obligation."
+    retrieved: '2026-10-22'
+  - url: https://www.circular.xyz/terms-of-use
+    type: vendor_legal
+    quote: "deleted no longer than ten (10) years later unless a litigation arises"
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+- field: ai_training_terms
+  status: stated
+  value: With the user's explicit consent, Circular uses users' data to improve its machine learning models. No terms
+    on research partners or API customers training models on Circular data are published.
+  confidence: Verified
+  sources:
+  - url: https://www.circular.xyz/privacy-policy
+    type: vendor_legal
+    quote: "We use your Circular Information, with your explicit consent, as part of Circular to analyze the efficacy of Circular and to improve the machine learning models."
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+- field: deprecations
+  status: stated
+  value: Circular Ring 1 Pro and Slim deprecated in ring firmware 1.1.142 (listed in early 2025); Google Fit replaced by
+    Health Connect (app 25.0.0, 14 February 2025). Circular SAS converted to liquidation 14 October 2025, with operations
+    moved to Circular Health Limited. Circular Ring 3 Pro and Slim announced, pre-orders December 2026.
+  confidence: Verified
+  sources:
+  - url: https://www.circular.xyz/release-notes
+    type: vendor_docs
+    quote: "Firmware support for Circular Ring 2 1.1.142 (Circular Ring 1 Pro & Slim deprecated)"
+    retrieved: '2026-10-22'
+  - url: https://www.circular.xyz/release-notes
+    type: vendor_docs
+    quote: "Android Health Connect migration (Google Fit deprecated)"
+    retrieved: '2026-10-22'
+  - url: https://www.societe.com/societe/circular-850542804.html
+    type: secondary
+    quote: "CIRCULAR Active Liquidation judiciaire"
+    retrieved: '2026-10-22'
+  - url: https://www.circular.xyz/circular-ring-3
+    type: vendor_page
+    quote: "December 2026 Pre-orders open, with pricing announced at the same time."
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+  note: The firmware entry carrying the Ring 1 deprecation sits between entries dated 11 July 2025 and 25 February 2025;
+    its own date is not shown clearly. The release notes also list Android and iOS background Bluetooth sync as "On Hold".
+- field: baa
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.circular.xyz/privacy-policy
+    type: vendor_legal
+    retrieved: '2026-10-22'
+  - url: https://www.circular.xyz/terms-of-use
+    type: vendor_legal
+    retrieved: '2026-10-22'
+  - url: https://www.circular.xyz/professionals
+    type: vendor_page
+    retrieved: '2026-10-22'
+  recheck_by: '2027-01-20'
+- field: dpa
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.circular.xyz/privacy-policy
+    type: vendor_legal
+    retrieved: '2026-10-22'
+  - url: https://www.circular.xyz/terms-of-use
+    type: vendor_legal
+    retrieved: '2026-10-22'
+  - url: https://www.circular.xyz/professionals
+    type: vendor_page
+    retrieved: '2026-10-22'
+  recheck_by: '2027-01-20'
+  note: No DPA for business or research customers is published. The privacy policy names subprocessors (AWS Paris,
+    Google Analytics, Typeform, Klaviyo, chatarmin) and the terms promise EU standard contractual clauses with subcontractors.
+- field: hipaa_statement
+  status: stated
+  value: The privacy policy says ring data is health information that may be subject to HIPAA; there is no claim of
+    HIPAA compliance and no BAA.
+  confidence: Corroborated
+  sources:
+  - url: https://www.circular.xyz/privacy-policy
+    type: vendor_legal
+    quote: "Additionally the data uploaded by the ring is considered health information and may be subject to HIPAA regulation."
+    retrieved: '2026-10-22'
+  recheck_by: '2027-01-20'
+- field: gdpr_statement
+  status: stated
+  value: Circular states it is the GDPR data controller; the policy lists EU data subject rights (access, erasure,
+    portability and others) and says data may be transferred to the US and UK with safeguards.
+  confidence: Corroborated
+  sources:
+  - url: https://www.circular.xyz/privacy-policy
+    type: vendor_legal
+    quote: "Circular is the entity responsible for the processing of your Personal Information, and for the purpose of the European Union's General Data Protection Regulation, is the data controller in respect of the processing of your Personal Information."
+    retrieved: '2026-10-22'
+  - url: https://www.circular.xyz/privacy-policy
+    type: vendor_legal
+    quote: "Portability. You have the right to receive, in a structured, commonly used and machine-readable format, Personal Information that you have provided to us"
+    retrieved: '2026-10-22'
+  recheck_by: '2027-01-20'
+  note: The policy does not name which legal entity "Circular" is; the terms of use name Circular Health Limited.
+- field: iso27001
+  status: unclear
+  value: The business page says data is stored on "medically certified ISO servers" without naming a standard or a
+    certificate. No ISO/IEC 27001 certificate for Circular found. The privacy policy cites a 2021-2022 penetration test
+    (WiLDSECOPS) and a CASA tier 2 assessment.
+  confidence: Unclear
+  sources:
+  - url: https://www.circular.xyz/professionals
+    type: vendor_page
+    quote: "Data is anonymised and stored on medically certified ISO servers."
+    retrieved: '2026-10-22'
+  - url: https://www.circular.xyz/privacy-policy
+    type: vendor_legal
+    quote: "Circular has also passed CASA tier 2 certification."
+    retrieved: '2026-10-22'
+  recheck_by: '2027-01-20'
+  note: The "ISO servers" wording may refer to the hosting provider (AWS Paris) rather than Circular itself.
+- field: soc2
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.circular.xyz/privacy-policy
+    type: vendor_legal
+    retrieved: '2026-10-22'
+  - url: https://www.circular.xyz/professionals
+    type: vendor_page
+    retrieved: '2026-10-22'
+  - url: https://www.circular.xyz/terms-of-use
+    type: vendor_legal
+    retrieved: '2026-10-22'
+  recheck_by: '2027-01-20'
+- field: fda_clearances
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm
+    type: regulator_db
+    retrieved: '2026-10-22'
+    fetch_url: https://api.fda.gov/device/510k.json?search=applicant:%22circular%22
+  - url: https://www.circular.xyz/terms-of-use
+    type: vendor_legal
+    retrieved: '2026-10-22'
+  recheck_by: '2027-01-20'
+  note: openFDA 510(k) searches on 2026-10-22 for applicant "circular" (only Circular Traction Supply, K063353, unrelated),
+    applicant "b-heart"/"bheart" (no matches) and device_name "circular" (surgical devices only) found no Circular
+    record; registration/listing search for Circular also returned no matches. The terms of use state "THE RING IS NOT A
+    MEDICAL DEVICE." 2025 press (e.g. Wareable) described Ring 2's AFib detection as FDA-cleared via a partner's algorithm
+    ("B-Heart"); if that is B-Secur's HeartKey, the partner's own clearances are K233755 (HeartKey Rhythm, 2024-08-16) and
+    K200884, which are not clearances of the Circular ring. Not confirmed with Circular.
+- field: data_residency
+  status: stated
+  value: Data stored with Amazon Web Services in the Paris region (France); may be transferred to the US and UK. The
+    terms add that personal data of visitors from the US is retained in the US. No residency choice offered.
+  confidence: Verified
+  sources:
+  - url: https://www.circular.xyz/privacy-policy
+    type: vendor_legal
+    quote: "Cloud service providers who we rely on for data storage, disaster recovery and to provide Circular, such as Amazon Web Services located in the Paris region (France)"
+    retrieved: '2026-10-22'
+  - url: https://www.circular.xyz/privacy-policy
+    type: vendor_legal
+    quote: "We may transfer your Personal Information outside of the country where you are located and the European Economic Area, including to the US and the UK."
+    retrieved: '2026-10-22'
+  - url: https://www.circular.xyz/terms-of-use
+    type: vendor_legal
+    quote: "By way of exception, if you visit the Websites from the United States of America, please note that your Personal Data will be retained by the USA."
+    retrieved: '2026-10-22'
+  recheck_by: '2027-01-20'
+  note: The operating company is now registered in Hong Kong; the policy has not been updated to say whether that changes storage.

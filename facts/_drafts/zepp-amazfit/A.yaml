@@ -1,0 +1,659 @@
+# Draft record for zepp-amazfit, researcher A (sole researcher, cheaper variant with own gap sweep), 2026-10-22.
+name: Zepp Health (Amazfit)
+kind: wearable
+profile: module-01-wearables/profiles/emerging-platforms.md
+watch:
+- url: https://docs.zepp.com/docs/intro/
+  role: docs
+- url: https://docs.zepp.com/docs/reference/device-app-api/newAPI/sensor/HeartRate/
+  role: docs
+- url: https://docs.zepp.com/docs/distribute/
+  role: developer_program
+- url: https://developer.zepp.com/os/home
+  role: developer_program
+- url: https://dev.huami.com/
+  role: developer_program
+- url: https://github.com/zepp-health/rest-api/wiki
+  role: repository
+- url: https://github.com/zepp-health/rest-api/issues
+  role: changelog
+- url: https://www.zepp.com/technology-2
+  role: research_program
+- url: https://www.zepp.com/data-analytics
+  role: research_program
+- url: https://www.zepp.com/contact-us
+  role: other
+- url: https://www.zepp.com/privacy-policy
+  role: terms
+- url: https://www.zepp.com/privacy-support
+  role: terms
+- url: https://us.amazfit.com/products/helio-strap
+  role: pricing
+- url: https://apps.apple.com/us/app/zepp/id1127269366
+  role: app_store
+- url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRL/rl.cfm?start_search=1&ownerOperatorNumber=10083608
+  role: regulatory
+  fetch_url: https://api.fda.gov/device/registrationlisting.json?search=registration.owner_operator.firm_name:huami&limit=10
+facts:
+# ---------------- Research access ----------------
+- field: research_program
+  status: stated
+  value: No named, open research or academic access program. Zepp describes bespoke research collaborations
+    (Stanford sleep study, UCSD Center for Wearable Sensors membership, NTNU on PAI, Peking University First Hospital
+    AF study, Chinese universities) and a "data analytics services" offer aimed at researchers, providers, insurers and
+    employers, with partnerships at 20 research labs, hospitals, pharma companies and universities as of end 2020.
+    The only documented data route for third parties is the legacy Huami/Zepp Open Platform "data cooperation" OAuth
+    Web API (see developer_program_status).
+  confidence: Corroborated
+  sources:
+  - url: https://www.zepp.com/technology-2
+    type: vendor_page
+    quote: Zepp Health has collaborated with universities around the world for research and development, operations,
+      and education
+    retrieved: '2026-10-22'
+  - url: https://www.zepp.com/technology-2
+    type: vendor_page
+    quote: Joint Study of the Effects of Sleep on Physical Recovery With the Stanford University Center for Sleep Sciences
+      and Medicine.
+    retrieved: '2026-10-22'
+  - url: https://www.zepp.com/data-analytics
+    type: vendor_page
+    quote: At the end of 2020, Zepp Health had partnerships with 20 independent research laboratories, hospitals, pharmaceutical
+      companies and universities
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+  note: The data-analytics page is dated in its own content ("42 million active users by the first half of 2021") and
+    has no application route. The 2025 Form 20-F (filed 2026-04-24) still lists "data analytics capabilities" as a
+    software and data service; sec.gov refuses the project fetcher, so that wording was read by hand and is not quoted.
+- field: program_eligibility
+  status: stated
+  value: 'No eligibility rules for a research program are published. For the legacy Open Platform data API: corporate
+    applicants only, not individuals; a PhD researcher must apply in the name of the institution.'
+  confidence: Corroborated
+  sources:
+  - url: https://github.com/zepp-health/rest-api/wiki
+    type: vendor_docs
+    quote: Data cooperation currently only supports corporate users, not individual users; if you are a PhD for scientific
+      research purposes, you need to apply in the name of the school.
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+  note: The wiki was last edited on 2020-11-27 and names old devices (Mi Band, Amazfit ARC/PACE), so current rules may
+    differ. Corroborated, not Verified, for that reason.
+- field: program_application
+  status: stated
+  value: 'Research and developer enquiries go to developer@zepp.com (contact page). Legacy data API: register and apply
+    on the Zepp Open Platform (dev.huami.com), 3 to 7 day review, then submit the cooperation details (country, platform,
+    business, user numbers, needs); escalation to datapartner@huami.com. A 2021 applicant reports being told a Zepp
+    business representative would contact them and sign an agreement, and later that they would need to pay for the
+    API and buy equipment.'
+  confidence: Corroborated
+  sources:
+  - url: https://www.zepp.com/contact-us
+    type: vendor_page
+    quote: For Researchers & Developers developer@zepp.com
+    retrieved: '2026-10-22'
+  - url: https://github.com/zepp-health/rest-api/wiki
+    type: vendor_docs
+    quote: The review period is 3-7 days, please wait patiently.
+    retrieved: '2026-10-22'
+  - url: https://github.com/zepp-health/rest-api/issues/25
+    type: secondary
+    quote: A Zepp business representative will contact you to learn more about your needs, and then sign an agreement
+      with you.
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+  note: dev.huami.com is a JavaScript app whose registration flow includes an "enterpriseFastTrack" sign-up route; it
+    was not logged into.
+- field: program_status
+  status: unclear
+  value: 'No research program page exists to have a status. The legacy Open Platform is still online (dev.huami.com
+    serves "Zepp Open Platform"; api-open.huami.com and auth.huami.com answer requests) and Zepp staff fixed a doc link
+    on the rest-api repo in June 2026, but a 2022 applicant reported the old platform was deprecated and the new Zepp
+    Console only accepts Zepp OS app packages. Whether new data partners are accepted today is not stated.'
+  confidence: Unclear
+  sources:
+  - url: https://dev.huami.com/
+    type: vendor_page
+    quote: Zepp Open Platform
+    retrieved: '2026-10-22'
+  - url: https://github.com/zepp-health/rest-api/issues/26
+    type: secondary
+    quote: because old platform was deprecated
+    retrieved: '2026-10-22'
+  - url: https://github.com/zepp-health/rest-api/issues/28
+    type: repository
+    quote: https://zepp-health.github.io/rest-api/api-doc.html
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+- field: developer_program_status
+  status: stated
+  value: 'Two programs. (1) Zepp OS developer program, open: free SDK, Zeus CLI, simulator and Zepp Console for watch
+    Mini Programs and watch faces, published through a store review. (2) Legacy Huami/Zepp Open Platform OAuth 2.0 Web
+    API (api-open.huami.com) for cloud data, by application and review for corporate partners; subscriptions (webhooks)
+    for invited partners only; docs last updated 2020; open-to-new-applicants status unclear.'
+  confidence: Corroborated
+  sources:
+  - url: https://developer.zepp.com/os/home
+    type: vendor_docs
+    quote: Tools and resources to help you build Zepp App faster and easier, across every Zepp OS device.
+    retrieved: '2026-10-22'
+  - url: https://docs.zepp.com/docs/distribute/
+    type: vendor_docs
+    quote: you can select the application you want to publish and Submit it for review
+    retrieved: '2026-10-22'
+  - url: https://github.com/zepp-health/rest-api/wiki
+    type: vendor_docs
+    quote: Subscription notification is available to invited partners only.
+    retrieved: '2026-10-22'
+  - url: https://www.zepp.com/technology-2
+    type: vendor_page
+    quote: The Zepp ecosystem is supported by a growing global Zepp developer community who are encouraged to develop
+      new apps and watch faces using Zepp OS Software Development Kit (SDK).
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+  note: The Android OAuth consent SDK repo (github.com/zepp-health/oauth-Android-sdk) had a release "hmauth/0.0.6" on
+    2025-11-28, the first commit since 2022, which suggests the OAuth route is still maintained.
+- field: user_cap
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://github.com/zepp-health/rest-api/wiki
+    type: vendor_docs
+    retrieved: '2026-10-22'
+  - url: https://docs.zepp.com/docs/distribute/
+    type: vendor_docs
+    retrieved: '2026-10-22'
+  - url: https://www.zepp.com/data-analytics
+    type: vendor_page
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+  note: No participant or user limit is published for either the Open Platform data API or Zepp OS apps.
+- field: academic_vs_commercial
+  status: stated
+  value: No separate academic track. The legacy data API treats academics as institutional (corporate) applicants; individuals
+    cannot apply. Commercial data-analytics customers (insurers, employers, wellness programs) are served by contract.
+  confidence: Corroborated
+  sources:
+  - url: https://github.com/zepp-health/rest-api/wiki
+    type: vendor_docs
+    quote: Data cooperation currently only supports corporate users, not individual users; if you are a PhD for scientific
+      research purposes, you need to apply in the name of the school.
+    retrieved: '2026-10-22'
+  - url: https://www.zepp.com/data-analytics
+    type: vendor_page
+    quote: The data collected from users can have tremendous value for medical researchers and healthcare providers, as
+      well as for population health managers such as insurers, employers and wellness program providers.
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+# ---------------- Pricing ----------------
+- field: device_price
+  status: stated
+  value: 'US store list prices on 2026-10-22, examples: Active 2 (Round) from $99.99; Helio Strap (screenless band)
+    $99.99; Balance 3 $369.99 to $449.99. Range in the store runs from about $50 (earbuds) to $649.99 (T-Rex Dual Solar).'
+  confidence: Verified
+  sources:
+  - url: https://us.amazfit.com/products/active-2-round
+    type: vendor_page
+    quote: Active 2 (Round) All Day. All Night. All You. $99.99
+    retrieved: '2026-10-22'
+  - url: https://us.amazfit.com/products/helio-strap
+    type: vendor_page
+    quote: Helio Strap No screen. No noise. Just your body’s data. Regular price $99.99
+    retrieved: '2026-10-22'
+  - url: https://us.amazfit.com/products/balance-3
+    type: vendor_page
+    quote: Balance 3 Train with Structure. $369.99 - $449.99
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+  note: Range figures come from the store's public products.json listing (us.amazfit.com/products.json), not a quote.
+- field: subscription_price
+  status: stated
+  value: Core features need no subscription. Optional Zepp Aura Premium (AI sleep and wellness coaching) and fitness
+    membership are sold in the app; the US App Store lists in-app plans including a $9.99 monthly plan and yearly plans
+    from $29.99 to $49.99, without naming which product each belongs to.
+  confidence: Corroborated
+  sources:
+  - url: https://apps.apple.com/us/app/zepp/id1127269366
+    type: app_store
+    quote: Zepp Aura Premium Subscription is available for a monthly or yearly fee, but there's no obligation to sign up
+    retrieved: '2026-10-22'
+  - url: https://apps.apple.com/us/app/zepp/id1127269366
+    type: app_store
+    quote: Monthly, 7-Day Free Trial $9.99
+    retrieved: '2026-10-22'
+  - url: https://us.amazfit.com/products/helio-strap
+    type: vendor_page
+    quote: Helio Strap No required subscription
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+  note: The aura.zepp.com store lists "1 year of Zepp Aura Premium" at $69.99 in its products.json, but the price is
+    rendered by script and could not be quote-confirmed.
+- field: academic_pricing
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://us.amazfit.com/pages/student-discount
+    type: vendor_page
+    retrieved: '2026-10-22'
+  - url: https://www.zepp.com/data-analytics
+    type: vendor_page
+    retrieved: '2026-10-22'
+  - url: https://www.zepp.com/contact-us
+    type: vendor_page
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+  note: No research or institutional pricing is published. The US store links consumer "Military, Teacher, Medical
+    Discounts" and a student-discount page, which are not research programs.
+- field: api_platform_fees
+  status: unclear
+  value: Zepp OS SDK tools are free to use (Zeus CLI is an ISC-licensed npm package). No fee schedule is published for
+    the Open Platform data API, but a 2021 applicant reports Zepp replied that API access must be paid for and devices
+    bought.
+  confidence: Reported
+  sources:
+  - url: https://github.com/zepp-health/rest-api/issues/25
+    type: secondary
+    quote: You need to pay for our API and purchase our equipment. Are you willing to purchase
+    retrieved: '2026-10-22'
+  - url: https://github.com/zepp-health/rest-api/wiki
+    type: vendor_docs
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+  note: Integrators (Terra, Thryve) charge their own fees for Zepp access; their pricing was not recorded here.
+- field: minimum_commitment
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://github.com/zepp-health/rest-api/wiki
+    type: vendor_docs
+    retrieved: '2026-10-22'
+  - url: https://www.zepp.com/data-analytics
+    type: vendor_page
+    retrieved: '2026-10-22'
+  - url: https://us.amazfit.com/products/helio-strap
+    type: vendor_page
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+  note: The 2021 issue report implies a device purchase may be expected of data partners, but no minimum is stated.
+- field: quote_required
+  status: stated
+  value: Devices are sold at public list prices. Data partnership and data-analytics terms are by agreement after contact
+    with Zepp (no public price list).
+  confidence: Corroborated
+  sources:
+  - url: https://github.com/zepp-health/rest-api/issues/25
+    type: secondary
+    quote: A Zepp business representative will contact you to learn more about your needs, and then sign an agreement
+      with you.
+    retrieved: '2026-10-22'
+  - url: https://www.zepp.com/contact-us
+    type: vendor_page
+    quote: For Researchers & Developers developer@zepp.com
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+# ---------------- Data access and terms ----------------
+- field: raw_streams
+  status: stated
+  scope: Zepp OS on-watch apps
+  value: A custom Zepp OS Mini Program can read accelerometer (x, y, z in cm/s^2), gyroscope (deg/s), barometer, compass
+    and GPS on the watch, each behind a permission; heart rate is exposed as computed BPM values, and no raw PPG or
+    ECG waveform API is documented.
+  confidence: Verified
+  sources:
+  - url: https://docs.zepp.com/docs/reference/device-app-api/newAPI/sensor/Accelerometer/
+    type: vendor_docs
+    quote: Measure the acceleration of the device along three orthogonal axes (x, y, z)
+    retrieved: '2026-10-22'
+  - url: https://docs.zepp.com/docs/reference/device-app-api/newAPI/sensor/Gyroscope/
+    type: vendor_docs
+    quote: Measuring the angular velocity of the device rotating along three orthogonal axes (x, y, z)
+    retrieved: '2026-10-22'
+  - url: https://docs.zepp.com/docs/reference/device-app-api/newAPI/sensor/Accelerometer/
+    type: vendor_docs
+    quote: 'permission code: device:os.accelerometer'
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+  note: Absence of a PPG API is judged from the full @zos/sensor module listing (docs.zepp.com/llms-full.txt), which
+    has no PPG class. Sensor APIs need API_LEVEL 3.0, so older watches are excluded.
+- field: raw_streams
+  status: stated
+  scope: Legacy Open Platform Web API
+  value: The legacy Web API documents raw ECG (250 samples per second, from ECG-capable devices), per-minute raw motion
+    data, and user-tagged sensor files (example shows a PPG CSV). Whether these endpoints still serve current devices is
+    not stated.
+  confidence: Reported
+  sources:
+  - url: https://zepp-health.github.io/rest-api/api-ecg-doc.html
+    type: vendor_docs
+    quote: standard ecg data, every point stand for 1/250 mv
+    retrieved: '2026-10-22'
+  - url: https://github.com/zepp-health/rest-api/wiki
+    type: vendor_docs
+    quote: The motion scope includes raw motion sensor data per minute of a day, consists of 1440(total minutes of one
+      day)*3 bytes
+    retrieved: '2026-10-22'
+  - url: https://zepp-health.github.io/rest-api/api-sensor-doc.html
+    type: vendor_docs
+    quote: The name of the pre-defined behavior, like sleep
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+  note: ECG doc page footer says last updated 2018-03-08. Reported because the docs are years old and current
+    availability is unconfirmed.
+- field: derived_metrics
+  status: stated
+  value: 'On watch (Zepp OS): heart rate, resting HR, daily HR summary, AFib records, SpO2, stress, sleep (score, stages,
+    times), steps, calories, distance, PAI, stand, fat burning, body temperature, workouts. Legacy Web API scopes:
+    profile, activity (steps, distance, calories), sleep, heart rate, motion, sport summary and detail, PAI. Integrators
+    (Terra, Thryve) expose activity, daily and sleep data.'
+  confidence: Verified
+  sources:
+  - url: https://docs.zepp.com/docs/reference/device-app-api/newAPI/sensor/HeartRate/
+    type: vendor_docs
+    quote: Atrial fibrillation test results, 0 - normal, 1 - high alert, 2 - low alert, 3 - atrial fibrillation
+    retrieved: '2026-10-22'
+  - url: https://docs.zepp.com/docs/reference/device-app-api/newAPI/sensor/Sleep/
+    type: vendor_docs
+    quote: Get the constant value of the sleep stage, used to determine the sleep stage in the getStage return value
+    retrieved: '2026-10-22'
+  - url: https://www.thryve.health/supported-wearable-devices/zepp-amazfit
+    type: secondary
+    quote: With Thryve’s API, you can access normalized data from these devices—covering steps, heart rate, sleep stages,
+      workouts, and more
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+- field: sampling_rates
+  status: stated
+  value: 'Zepp OS: heart-rate history is per minute (up to 1,440 values for the current day); accelerometer and gyroscope
+    offer low, normal and high trigger-frequency modes with no Hz figures published. Legacy Web API: ECG at 250 samples
+    per second; motion per minute; activity daily or hourly (hourly marked as becoming obsolete).'
+  confidence: Corroborated
+  sources:
+  - url: https://docs.zepp.com/docs/reference/device-app-api/newAPI/sensor/HeartRate/
+    type: vendor_docs
+    quote: Get the heart rate measurement data in minutes from 0:00 to the current moment of the day, the longest array
+      is 60*24
+    retrieved: '2026-10-22'
+  - url: https://docs.zepp.com/docs/reference/device-app-api/newAPI/sensor/Accelerometer/
+    type: vendor_docs
+    quote: Low power mode with low trigger frequency
+    retrieved: '2026-10-22'
+  - url: https://zepp-health.github.io/rest-api/api-ecg-doc.html
+    type: vendor_docs
+    quote: '"ecgSamplingRate" : 250'
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+- field: history_depth
+  status: unclear
+  value: On watch, the heart-rate API returns only the current day (from 00:00). The legacy Web API takes start and end
+    dates but publishes no limit on how far back. Cloud history in the app is not documented for third parties.
+  confidence: Unclear
+  sources:
+  - url: https://docs.zepp.com/docs/reference/device-app-api/newAPI/sensor/HeartRate/
+    type: vendor_docs
+    quote: Get the heart rate measurement data in minutes from 0:00 to the current moment of the day, the longest array
+      is 60*24
+    retrieved: '2026-10-22'
+  - url: https://zepp-health.github.io/rest-api/api-doc.html
+    type: vendor_docs
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+- field: export_routes
+  status: stated
+  value: '(1) Zepp OS Mini Program reading sensors on the watch, with a phone-side companion service that can send data
+    to a server by HTTP fetch; (2) legacy Open Platform OAuth 2.0 Web API (partners); (3) third-party aggregators (Terra,
+    which holds its own Zepp API credentials and polls every 5 to 10 minutes; Thryve); (4) one-way write from the Zepp
+    app to Android Health Connect (26 data types since January 2025), plus Apple Health, Google Fit and Strava linking;
+    (5) participant self-export of personal data from the app (Profile, Settings, Exercising user rights).'
+  confidence: Corroborated
+  sources:
+  - url: https://docs.zepp.com/docs/guides/framework/side-service/intro/
+    type: vendor_docs
+    quote: The "companion service" runs in the Zepp App, has no UI interface
+    retrieved: '2026-10-22'
+  - url: https://docs.zepp.com/docs/reference/side-service-api/fetch/
+    type: vendor_docs
+    quote: The Fetch API can be used to send HTTP requests in JS.
+    retrieved: '2026-10-22'
+  - url: https://tryterra.co/integrations/zepp
+    type: secondary
+    quote: Terra manages the Zepp API credentials, so there is nothing to register
+    retrieved: '2026-10-22'
+  - url: https://tryterra.co/integrations/zepp
+    type: secondary
+    quote: Zepp does not notify Terra when data changes, so Terra polls it every 5–10 minutes for each connected user
+    retrieved: '2026-10-22'
+  - url: https://gadgetsandwearables.com/2025/01/24/zepp-health-connect/
+    type: secondary
+    quote: You can now sync way more health and fitness data than before—26 types, to be exact
+    retrieved: '2026-10-22'
+  - url: https://www.zepp.com/privacy-support
+    type: vendor_page
+    quote: 'Zepp: App→ Profile → Setting→Exercising user rights'
+    retrieved: '2026-10-22'
+  - url: https://www.zepp.com/privacy-support
+    type: vendor_page
+    quote: Export data Export personal data
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+  note: A "continuous running" App Service (API_LEVEL 3.0+) can keep a Mini Program collecting in the background after
+    the user leaves it, which matters for passive collection. Format and completeness of the self-export are not
+    documented on fetchable pages.
+- field: rate_limits
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://github.com/zepp-health/rest-api/wiki
+    type: vendor_docs
+    retrieved: '2026-10-22'
+  - url: https://zepp-health.github.io/rest-api/api-doc.html
+    type: vendor_docs
+    retrieved: '2026-10-22'
+  - url: https://docs.zepp.com/docs/reference/side-service-api/fetch/
+    type: vendor_docs
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+  note: No request limits are documented. The wiki gives token lifetimes only (access token 90 days by default,
+    refresh token 10 years).
+- field: retention_terms
+  status: stated
+  value: Users can clear data, delete the account with all data, revoke consent, and request deletion through the app
+    or the privacy-support page. No retention terms for third-party data partners are published.
+  confidence: Corroborated
+  sources:
+  - url: https://www.zepp.com/privacy-support
+    type: vendor_page
+    quote: Delete account Delete the account and all data completely
+    retrieved: '2026-10-22'
+  - url: https://play.google.com/store/apps/datasafety?id=com.huami.watch.hmwatchmanager&hl=en_US
+    type: app_store
+    quote: You can request that data be deleted
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+  note: The Zepp App privacy policy (linked from zepp.com/privacy-policy, hosted at upload-cdn.zepp.com/tposts/8192 and
+    upload-cdn.huami.com) is disallowed by robots.txt, so its retention clause could not be quote-confirmed by the
+    project tool; check by hand. The website privacy policy states it does not cover app or device data.
+- field: ai_training_terms
+  status: not_public
+  confidence: Unclear
+  sources:
+  - url: https://www.zepp.com/privacy-policy
+    type: vendor_legal
+    retrieved: '2026-10-22'
+  - url: https://upload-cdn.zepp.com/tposts/8192
+    type: vendor_legal
+    retrieved: '2026-10-22'
+  - url: https://github.com/zepp-health/rest-api/wiki
+    type: vendor_docs
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+  note: No clause on training AI or ML models on user or partner data was found on fetchable pages. The app privacy
+    policy (robots-disallowed, check by hand) describes processing for AI features (Zepp Flow, Zepp Aura, Zepp Coach
+    Chat) and creating non-identifiable data for research and development, but no explicit model-training term was
+    seen. Zepp Flow uses OpenAI's Whisper per the technology page.
+- field: deprecations
+  status: unclear
+  value: No dated deprecation has been announced by Zepp. The legacy Huami Web API docs mark hourly activity as becoming
+    obsolete and a 2022 applicant reported the old Open Platform was deprecated; older Zepp OS 1.x/2.x devices lack
+    the API_LEVEL 3.0 sensor APIs.
+  confidence: Unclear
+  sources:
+  - url: https://github.com/zepp-health/rest-api/issues/26
+    type: secondary
+    quote: because old platform was deprecated
+    retrieved: '2026-10-22'
+  - url: https://zepp-health.github.io/rest-api/api-doc.html
+    type: vendor_docs
+    quote: daily/hourly(param hourly will be obsolete, not recommended)
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
+  note: Google Fit's API wind-down affects Zepp's Google Fit linking; Zepp expanded Health Connect sync in January 2025
+    in its place, per press. No Zepp notice on Google Fit linking was found.
+# ---------------- Compliance ----------------
+- field: baa
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.zepp.com/privacy-policy
+    type: vendor_legal
+    retrieved: '2026-10-22'
+  - url: https://www.zepp.com/data-analytics
+    type: vendor_page
+    retrieved: '2026-10-22'
+  - url: https://github.com/zepp-health/rest-api/wiki
+    type: vendor_docs
+    retrieved: '2026-10-22'
+  recheck_by: '2027-01-20'
+  note: No BAA offer found. Zepp is a consumer device maker, not a covered entity; the 2025 20-F mentions HIPAA only as
+    a regulation its products "may be subject to".
+- field: dpa
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.zepp.com/privacy-policy
+    type: vendor_legal
+    retrieved: '2026-10-22'
+  - url: https://github.com/zepp-health/rest-api/wiki
+    type: vendor_docs
+    retrieved: '2026-10-22'
+  - url: https://docs.zepp.com/docs/distribute/
+    type: vendor_docs
+    retrieved: '2026-10-22'
+  recheck_by: '2027-01-20'
+  note: No DPA template or offer is published. Data partnerships are by bespoke agreement per the 2021 issue report.
+- field: hipaa_statement
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://www.zepp.com/privacy-policy
+    type: vendor_legal
+    retrieved: '2026-10-22'
+  - url: https://www.zepp.com/data-analytics
+    type: vendor_page
+    retrieved: '2026-10-22'
+  - url: https://www.sec.gov/Archives/edgar/data/1720446/000110465926048127/zepp-20251231x20f.htm
+    type: vendor_legal
+    retrieved: '2026-10-22'
+  recheck_by: '2027-01-20'
+  note: No HIPAA compliance statement on Zepp's pages. The 2025 Form 20-F (read by hand; sec.gov refuses the fetcher)
+    mentions HIPAA only as a risk factor.
+- field: gdpr_statement
+  status: stated
+  value: Zepp says its privacy protection is designed following GDPR and CCPA, and a company blog calls Amazfit fully
+    GDPR compliant. EEA transfers use standard contractual clauses per the app privacy policy (check by hand).
+  confidence: Corroborated
+  sources:
+  - url: https://www.zepp.com/privacy-policy
+    type: vendor_legal
+    quote: designed following applicable laws and regulations, such as GDPR, CCPA
+    retrieved: '2026-10-22'
+  - url: https://www.zepp.com/blog/zepp-healths-commitment-to-best-of-breed-security-and-privacy-the-amazfit-t-rex-3
+    type: vendor_page
+    quote: Data uploaded to the cloud is encrypted, and Amazfit is fully GDPR compliant
+    retrieved: '2026-10-22'
+  recheck_by: '2027-01-20'
+  note: The website privacy policy explicitly does not cover app or device data; the app policy (robots-disallowed)
+    names a Data Protection Officer at dpo@zepp.com.
+- field: iso27001
+  status: unclear
+  value: The 2025 Form 20-F says Zepp obtained ISO/IEC 27001 certification in 2021, renewed since, but gives the renewal
+    year as 2025 in one place and 2024 in another. No certificate, certifying body or scope was found.
+  confidence: Unclear
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1720446/000110465926048127/zepp-20251231x20f.htm
+    type: vendor_legal
+    retrieved: '2026-10-22'
+  - url: https://src.zepp.com/
+    type: vendor_page
+    retrieved: '2026-10-22'
+  recheck_by: '2027-01-20'
+  note: 'Read by hand from EDGAR because sec.gov answers the project fetcher with 403, so no quote is recorded. Two
+    passages in the same filing differ: one says renewed in 2025, the other renewed in 2024. A self-claim in any case,
+    so Corroborated at most once quoted.'
+- field: soc2
+  status: not_public
+  confidence: Verified
+  sources:
+  - url: https://src.zepp.com/
+    type: vendor_page
+    retrieved: '2026-10-22'
+  - url: https://www.zepp.com/privacy-policy
+    type: vendor_legal
+    retrieved: '2026-10-22'
+  - url: https://www.sec.gov/Archives/edgar/data/1720446/000110465926048127/zepp-20251231x20f.htm
+    type: vendor_legal
+    retrieved: '2026-10-22'
+  recheck_by: '2027-01-20'
+  note: No SOC 2 report or claim found.
+- field: fda_clearances
+  status: stated
+  value: No 510(k), De Novo or PMA under Huami or Zepp. FDA establishment registration (Anhui Huami, owner/operator
+    10083608) lists the Amazfit Balance A2287 under product code PUH (body composition analyzer, class II, 510(k)
+    exempt) and Zepp Clarity hearing aids under QUG (OTC wireless hearing aid, class II, exempt). Amazfit watches'
+    ECG, AFib, SpO2 and blood-pressure features are not FDA-cleared.
+  confidence: Verified
+  sources:
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRL/rl.cfm?start_search=1&ownerOperatorNumber=10083608
+    fetch_url: https://api.fda.gov/device/registrationlisting.json?search=registration.owner_operator.firm_name:huami&limit=10
+    type: regulator_db
+    quote: Analyzer, Body Composition, Exempt
+    retrieved: '2026-10-22'
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRL/rl.cfm?start_search=1&ownerOperatorNumber=10083608
+    fetch_url: https://api.fda.gov/device/registrationlisting.json?search=registration.owner_operator.firm_name:huami&limit=10
+    type: regulator_db
+    quote: Hearing Aid, Air-Conduction With Wireless Technology, Over The Counter
+    retrieved: '2026-10-22'
+  - url: https://api.fda.gov/device/510k.json?search=applicant:huami
+    type: regulator_db
+    retrieved: '2026-10-22'
+  - url: https://api.fda.gov/device/510k.json?search=applicant:zepp
+    type: regulator_db
+    retrieved: '2026-10-22'
+  - url: https://api.fda.gov/device/510k.json?search=device_name:amazfit
+    type: regulator_db
+    retrieved: '2026-10-22'
+  recheck_by: '2027-01-20'
+  note: The three 510(k) searches returned no matches on 2026-10-22. openFDA classification gives submission type 4
+    (exempt) for both PUH and QUG. Zepp's technology page says PumpBeats blood pressure and RealBeats AFib screening are
+    "not currently supported globally".
+- field: data_residency
+  status: stated
+  value: Cloud data is held on AWS according to the company. Region detail (US and Canadian users in US data centres,
+    EEA users in Germany, mainland China users in China; 20-F says AWS for North America and most of Europe, Tencent
+    Cloud elsewhere) comes from documents the project fetcher cannot read; check by hand. Some devices (T-Rex 3) can
+    keep GPS data on the watch only.
+  confidence: Corroborated
+  sources:
+  - url: https://www.zepp.com/blog/zepp-healths-commitment-to-best-of-breed-security-and-privacy-the-amazfit-t-rex-3
+    type: vendor_page
+    quote: For users who prefer cloud storage, Amazfit utilizes Amazon Web Services (AWS) to provide best-in-class data
+      security.
+    retrieved: '2026-10-22'
+  - url: https://upload-cdn.zepp.com/tposts/8192
+    type: vendor_legal
+    retrieved: '2026-10-22'
+  - url: https://www.sec.gov/Archives/edgar/data/1720446/000110465926048127/zepp-20251231x20f.htm
+    type: vendor_legal
+    retrieved: '2026-10-22'
+  recheck_by: '2027-01-20'
+  note: The Zepp App privacy policy (effective 2026-07-14) is on a robots-disallowed CDN; the 20-F is on sec.gov, which
+    returns 403 to the fetcher. Both were read by hand only.
