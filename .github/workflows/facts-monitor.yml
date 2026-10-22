@@ -49,11 +49,13 @@ jobs:
       - run: pip install pyyaml==6.0.2 && sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
       - name: Run the weekly check
         run: python tools/facts/weekly.py > /dev/null
-      - name: Commit the report and monitor state
+      - name: Regenerate tables (re-check dates may have moved)
+        run: python tools/facts/generate.py && python tools/facts/validate.py
+      - name: Commit the report, monitor state and extended re-check dates
         run: |
           git config user.name "facts-monitor"
           git config user.email "facts-monitor@users.noreply.github.com"
-          git add facts/_reports facts/_monitor
+          git add facts/_reports facts/_monitor facts/*.yaml facts/_generated module-01-wearables/profiles module-02-digital-phenotyping/profiles
           git diff --cached --quiet || git commit -m "Vendor fact check $(date -u +%F)"
           git pull --rebase --quiet && git push
       - name: Open or update the re-check issue

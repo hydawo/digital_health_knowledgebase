@@ -73,6 +73,23 @@ Sites whose own terms forbid automated collection (listed in `TERMS_BLOCKED_HOST
 `tools/facts/common.py`, currently activinsights.com and evidation.com) are never fetched by script, even where
 robots.txt allows it; their sources go straight to "check by hand".
 
+## Automatic re-check extension
+
+Added 2026-10-22. Each Monday run also moves `recheck_by` forward, by the field's interval, for any
+fact that falls due within two weeks when its evidence is unchanged: status `stated`, no Internet
+Archive source, at least one quote, every quote an exact match this week, and every source page
+reachable. A fact whose latest `retrieved` date is more than three intervals old is never extended,
+so after about two automatic extensions it goes back to a person or agent for a real re-read. Only
+the `recheck_by` line changes, and the report lists how many facts moved per company.
+
+What still reaches a person: `not_public`, `unclear`, `conflict` and `not_applicable` facts (a quote
+cannot confirm an absence or a judgement), Archive-backed facts, facts citing pages that block
+scripts, and any fact whose quote moved. Rules and code: `tools/facts/recheck.py`. Run with
+`--no-extend` to turn it off.
+
+When you re-verify a fact by hand, update `retrieved` on the sources you re-read as well as
+`recheck_by`; the monitor uses the latest `retrieved` date to decide how long it may keep extending.
+
 ## Re-check loop (the fact keeper)
 
 When the issue arrives:

@@ -103,16 +103,16 @@ facts:
   - url: https://github.com/cbitstech/Purple-Robot/blob/master/LICENSE.GPLv3
     type: repository
     quote: either version 3 of the License, or
-    retrieved: &id001 2026-10-22
+    retrieved: '2026-10-22'
   - url: https://github.com/cbitstech/Purple-Robot/blob/master/LICENSE.GPLv3
     type: repository
     quote: Please contact Mark Begale at m-begale@northwestern.edu to discuss
-    retrieved: *id001
+    retrieved: '2026-10-22'
   - url: https://github.com/cbitstech/Purple-Robot/blob/master/LICENSE.GPLv3
     type: repository
     quote: other licensing options as needed.
-    retrieved: *id001
-  recheck_by: &id002 2026-11-21
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
   note: Corroborated rather than Verified because the alternative-licensing contact dates from 2015 and was not confirmed as still current. No price or terms for other licensing are published.
 - field: device_price
   status: not_applicable
@@ -242,12 +242,12 @@ facts:
   - url: https://github.com/cbitstech/Purple-Robot/wiki/Data-Upload-Reference
     type: vendor_docs
     quote: If an error status is returned, the device running Purple Robot will retain the data and attempt to upload it at a later time
-    retrieved: *id001
+    retrieved: '2026-10-22'
   - url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4526997/
     type: paper
     quote: Once the data are anonymized, they are stored and later transmitted to the data collection server before being deleted from the device.
-    retrieved: *id001
-  recheck_by: *id002
+    retrieved: '2026-10-22'
+  recheck_by: '2026-11-21'
   note: An inference from the architecture; no page states a history limit as such.
 - field: export_routes
   status: stated
@@ -301,27 +301,27 @@ facts:
   - url: https://github.com/cbitstech/Purple-Robot/wiki/Data-Upload-Reference
     type: vendor_docs
     quote: the UserHash key is an MD5 hash of the user identifier set in the app's settings
-    retrieved: *id001
+    retrieved: '2026-10-22'
   - url: https://github.com/cbitstech/Purple-Robot/wiki/Data-Upload-Reference
     type: vendor_docs
     quote: This defaults to your Google account if not set explicitly.
-    retrieved: *id001
+    retrieved: '2026-10-22'
   - url: https://github.com/audaciouscode/Purple-Robot-Android/blob/master/app/src/main/java/edu/northwestern/cbits/purple_robot_manager/EncryptionManager.java
     type: repository
     quote: String algorithm = prefs.getString("config_preferred_hash_function", "MD5");
-    retrieved: *id001
+    retrieved: '2026-10-22'
   - url: https://github.com/audaciouscode/Purple-Robot-Android/blob/master/app/src/main/res/values/arrays.xml
     type: repository
     quote: MD5 (Insecure, Legacy Default)
-    retrieved: *id001
+    retrieved: '2026-10-22'
   - url: https://github.com/audaciouscode/Purple-Robot-Android/blob/master/app/src/main/res/values/arrays.xml
     type: repository
     quote: SHA-2 (Secure, Recommended)
-    retrieved: *id001
+    retrieved: '2026-10-22'
   - url: https://github.com/audaciouscode/Purple-Robot-Android/blob/master/app/src/main/java/edu/northwestern/cbits/purple_robot_manager/EncryptionManager.java
     type: repository
     quote: private static final String CRYPTO_ALGORITHM = "AES/CBC/PKCS5Padding";
-    retrieved: *id001
+    retrieved: '2026-10-22'
   recheck_by: 2026-11-21
   note: 'MD5 claim confirmed three ways: Saeb et al., JMIR 2015, 17(7):e175, by the CBITS team that built the app; the Data Upload Reference (user identifier, by default the Google account name, sent as
     an MD5 hash; payload checksum also MD5); and the v3.0.13 source, where the identifier hash defaults to MD5 with SHA-256 selectable, and phone numbers are always hashed with MD5 (normalizedPhoneHash).
@@ -351,7 +351,7 @@ facts:
   - url: https://api.github.com/repos/cbitstech/Purple-Robot-Django/commits?per_page=1
     type: repository
     quote: '2016-12-27T16:36:40Z'
-    retrieved: *id001
+    retrieved: '2026-10-22'
   - url: https://api.github.com/repos/audaciouscode/Purple-Robot-Django/commits?per_page=1
     type: repository
     quote: '2020-06-22T13:46:16Z'
@@ -380,7 +380,7 @@ facts:
   - url: https://github.com/cbitstech/Purple-Robot/blob/master/LICENSE.GPLv3
     type: repository
     quote: other licensing options as needed.
-    retrieved: *id001
+    retrieved: '2026-10-22'
   - url: https://github.com/audaciouscode/Purple-Robot-Android/blob/master/LICENSE
     type: repository
     quote: Version 3, 29 June 2007
@@ -437,7 +437,7 @@ facts:
   - url: https://github.com/cbitstech/Purple-Robot/blob/master/Purple%20Robot/build.gradle
     type: repository
     quote: targetSdkVersion 23
-    retrieved: *id001
+    retrieved: '2026-10-22'
   recheck_by: 2026-11-21
   note: Audacious Software's homepage still links Purple Robot to that Play listing, which 404s. https://f-droid.org/packages/edu.northwestern.cbits.purple_robot_manager/ also returned 404 on 2026-10-22.
     The prebuilt APK was last changed 2015-11-03 (GitHub API); cbitstech master targets API 23 (the README asks for the API 22 SDK platform) and the audaciouscode continuation targets API 28. Neither was

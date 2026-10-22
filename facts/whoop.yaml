@@ -133,7 +133,7 @@ facts:
     quote: For more information, contact healthcare@whoop.com
     retrieved: '2026-10-10'
     note: WHOOP-authored WHOOP Unite research FAQ, file dated 2023-05, hosted by the University of Arizona.
-  recheck_by: '2026-10-24'
+  recheck_by: '2026-11-21'
   note: The public developer API's own tier requests are covered under user_cap.
 - field: program_status
   status: unclear
@@ -364,7 +364,7 @@ facts:
     quote: Oura and WHOOP provide web applications (with an additional fee) to view and download health data for
       groups of individuals.
     retrieved: '2026-10-10'
-  recheck_by: '2026-10-24'
+  recheck_by: '2026-11-21'
 - field: minimum_commitment
   status: stated
   value: Consumer memberships are sold by the year; a third party reports monthly billing only for existing members,
@@ -453,7 +453,7 @@ facts:
     type: secondary
     quote: Each row in the raw data file will end with RR-intervals.
     retrieved: '2026-10-10'
-  recheck_by: '2026-10-24'
+  recheck_by: '2026-11-21'
   note: See program_status. Whether WHOOP still offers this through its research intake is unknown.
 - field: derived_metrics
   status: stated
@@ -525,7 +525,7 @@ facts:
     quote: Data Available by Subject in 1 sec and Daily Time Grains
     retrieved: '2026-10-10'
     note: WHOOP-authored deck, copyright 2022.
-  recheck_by: '2026-10-24'
+  recheck_by: '2026-11-21'
   note: WHOOP 4.0 era; not restated for 5.0 or MG in any source readable by script.
 - field: history_depth
   status: stated
@@ -626,7 +626,7 @@ facts:
       at an additional cost.
     retrieved: '2026-10-10'
     note: WHOOP-authored, file dated 2023-05.
-  recheck_by: '2026-10-24'
+  recheck_by: '2026-11-21'
   note: The 2023 FAQ also describes a blinded mode in which participants see only device metrics such as battery.
 - field: rate_limits
   status: stated

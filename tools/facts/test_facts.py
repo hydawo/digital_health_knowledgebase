@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
 """Tests for the vendor fact tools. Run: python3 tools/facts/test_facts.py"""
 import copy
+import datetime
+import os
+import tempfile
 import unittest
 
 from common import html_to_text, json_strings, load_schema, match_quote, normalize
 from validate import check
+import recheck
 
 SCHEMA = load_schema()
 
@@ -98,6 +102,50 @@ class Validation(unittest.TestCase):
         e = self.errs(rec)
         self.assertTrue(any('status "maybe"' in x for x in e))
         self.assertTrue(any('role "gossip"' in x for x in e))
+
+
+class RecheckExtension(unittest.TestCase):
+    TODAY = datetime.date(2026, 11, 2)
+    URL = ('https://example.com', 'https://example.com')
+
+    def new(self, f, ok=True, exact=True):
+        return recheck.eligible(f, 30, self.TODAY, lambda k: ok, lambda k, q: exact, lambda s: s.get('fetch_url') or s['url'])
+
+    def test_due_and_intact_is_extended(self):
+        self.assertEqual(self.new(stated('device_price', recheck_by='2026-11-09')), datetime.date(2026, 12, 2))
+
+    def test_not_due_yet(self):
+        self.assertIsNone(self.new(stated('device_price', recheck_by='2026-12-30')))
+
+    def test_quote_changed_or_page_down(self):
+        f = stated('device_price', recheck_by='2026-11-09')
+        self.assertIsNone(self.new(f, exact=False))
+        self.assertIsNone(self.new(f, ok=False))
+
+    def test_only_stated_facts(self):
+        for st in ('not_public', 'conflict', 'unclear'):
+            self.assertIsNone(self.new(stated('device_price', status=st, recheck_by='2026-11-09')))
+
+    def test_archive_source_never_extended(self):
+        f = stated('device_price', recheck_by='2026-11-09')
+        f['sources'][0]['fetch_url'] = 'https://web.archive.org/web/2026/https://example.com'
+        self.assertIsNone(self.new(f))
+
+    def test_stale_read_goes_back_to_a_person(self):
+        f = stated('device_price', recheck_by='2026-11-09')
+        f['sources'][0]['retrieved'] = '2026-07-01'
+        self.assertIsNone(self.new(f))
+
+    def test_write_changes_only_the_date(self):
+        text = ("name: Test\nkind: wearable\nfacts:\n- field: a\n  status: stated\n  sources:\n  - url: u\n"
+                "    quote: q\n  recheck_by: '2026-11-09'\n- field: b\n  status: stated\n  recheck_by: '2026-11-09'\n")
+        with tempfile.NamedTemporaryFile('w', suffix='.yaml', delete=False) as fh:
+            fh.write(text)
+        recheck.write_dates(fh.name, {1: datetime.date(2026, 12, 2)})
+        with open(fh.name) as fh2:
+            out = fh2.read()
+        os.remove(fh.name)
+        self.assertEqual(out, text.replace("b\n  status: stated\n  recheck_by: '2026-11-09'", "b\n  status: stated\n  recheck_by: '2026-12-02'"))
 
 
 if __name__ == '__main__':

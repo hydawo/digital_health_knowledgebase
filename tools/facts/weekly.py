@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
 """Weekly vendor-fact check: page fingerprints, quote checks, validation, report, issue text.
 
-    python3 tools/facts/weekly.py [--only oura,withings] [--no-state]
+    python3 tools/facts/weekly.py [--only oura,withings] [--no-state] [--no-extend]
 
 With --only, the report is printed and no report files are written.
+
+A full run also rolls recheck_by forward for stated facts whose quotes all still match exactly and
+that fall due within two weeks (rules in recheck.py), so only facts whose evidence moved reach a
+person. --no-extend turns that off; --only and --no-state never extend.
 
 Writes facts/_reports/<date>.md, updates facts/_monitor/state.json (fingerprints only, never page
 text), and writes facts/_reports/latest-issue.md when there is something to act on. The GitHub
@@ -14,7 +18,8 @@ import json
 import os
 import sys
 
-from common import FACTS, fetch, fingerprint, load_records, match_quote, source_fetch_url
+from common import FACTS, field_specs, fetch, fingerprint, load_records, load_schema, match_quote, source_fetch_url
+import recheck
 import validate
 
 TODAY = datetime.date.today().isoformat()
@@ -40,6 +45,7 @@ def main():
     if '--only' in sys.argv:
         only = set(sys.argv[sys.argv.index('--only') + 1].split(','))
     keep_state = '--no-state' not in sys.argv
+    extend = keep_state and not only and '--no-extend' not in sys.argv
     records = {k: v for k, v in load_records().items() if not only or k in only}
     state = load_state()
 
@@ -64,7 +70,9 @@ def main():
                     u['quotes'].append((company, label, str(s['quote'])))
 
     missing, reworded, changed, dead, by_hand, unreachable, noisy_new = [], [], [], [], [], [], []
+    page_ok, quote_res = set(), {}  # for rolling recheck_by forward: pages read this week, quote results
     for (url, fetch_url), u in sorted(urls.items()):
+        key = (url, fetch_url)
         r = fetch(u['fetch'])
         st = state.setdefault(url if fetch_url == url else f'{url} via {fetch_url}', {})
         if fetch_url != url:
@@ -72,6 +80,7 @@ def main():
         st['last_checked'] = TODAY
         st['last_status'] = r['status']
         if r['status'] == 'dead' and u.get('expect_absent'):
+            page_ok.add(key)
             continue  # the source exists to show the page or listing is gone; a 404 confirms it
         if r['status'] == 'dead':
             dead.append((url, r['error'], sorted(u['cited_by'])))
@@ -82,6 +91,7 @@ def main():
             (by_hand if st['unreachable_weeks'] >= CHECK_BY_HAND_AFTER or r['status'] in ('robots_blocked', 'terms_blocked') else unreachable).append(entry)
             continue
         st['unreachable_weeks'] = 0
+        page_ok.add(key)
         text = r['text'] or ''
         # Some sites vary their markup between requests; before calling a quote missing, fetch once more.
         if any(match_quote(q, text)[0] == 'missing' for _, _, q in u['quotes']):
@@ -91,6 +101,7 @@ def main():
         quotes_ok = True
         for company, label, quote in u['quotes']:
             res, ratio = match_quote(quote, text)
+            quote_res[(key, quote)] = res
             if res == 'missing':
                 quotes_ok = False
                 missing.append((url, company, label, quote, ratio))
@@ -109,6 +120,25 @@ def main():
         elif old:
             st['consecutive_changes'] = 0
 
+    extended, extend_errors = {}, []
+    if extend:
+        schema, today = load_schema(), datetime.date.fromisoformat(TODAY)
+        for company, rec in records.items():
+            days = {fname: d for _, fname, _, d in field_specs(schema, rec.get('kind'))}
+            updates = {}
+            for i, f in enumerate(rec.get('facts') or []):
+                if f.get('field') not in days:
+                    continue
+                new = recheck.eligible(f, days[f['field']], today, lambda k: k in page_ok,
+                                       lambda k, q: quote_res.get((k, q)) == 'exact', source_fetch_url)
+                if new:
+                    updates[i] = new
+            if updates:
+                try:
+                    extended[company] = recheck.write_dates(os.path.join(FACTS, f'{company}.yaml'), updates)
+                except ValueError as err:
+                    extend_errors.append(str(err))
+
     val = validate.run()
     if keep_state:
         os.makedirs(os.path.dirname(STATE), exist_ok=True)
@@ -125,6 +155,7 @@ def main():
              f'| Quotes missing | {len(missing)} |', f'| Quotes reworded | {len(reworded)} |',
              f'| Pages changed | {len(changed)} |', f'| Dead links | {len(dead)} |',
              f'| Check by hand | {len(by_hand)} |', f'| Unreachable this week | {len(unreachable)} |',
+             f'| Re-check dates extended | {sum(extended.values())} |',
              f'| Overdue re-checks | {len(val["overdue"])} |', f'| Validation errors | {len(val["errors"])} |', '']
     if missing:
         lines += ['## Quotes missing', '', 'The cited text is no longer on the page. Re-check these facts first.', '']
@@ -146,6 +177,12 @@ def main():
     if noisy_new:
         lines += ['## Newly marked noisy', '', 'Changed three weeks running with every quote intact. Now watched through its quotes only.', '']
         lines += [f'- {u}' for u in noisy_new] + ['']
+    if extended:
+        lines += ['## Re-check dates extended', '', 'Every quote still matched exactly, so recheck_by moved forward by the '
+                  "field's interval. No other part of the record changed.", '']
+        lines += [f'- {c}: {n}' for c, n in sorted(extended.items())] + ['']
+    if extend_errors:
+        lines += ['## Re-check dates not extended (file layout)', ''] + [f'- {m}' for m in extend_errors] + ['']
     if val['overdue']:
         lines += ['## Overdue re-checks', ''] + [f'- {m}' for m in val['overdue']] + ['']
     if val['errors']:
@@ -161,7 +198,8 @@ def main():
     with open(os.path.join(REPORTS, f'{TODAY}.md'), 'w', encoding='utf8') as f:
         f.write(report)
 
-    actionable = len(missing) + len(reworded) + len(changed) + len(dead) + len(by_hand) + len(val['overdue']) + len(val['errors'])
+    actionable = (len(missing) + len(reworded) + len(changed) + len(dead) + len(by_hand) + len(val['overdue'])
+                  + len(val['errors']) + len(extend_errors))
     issue = os.path.join(REPORTS, 'latest-issue.md')
     if actionable:
         with open(issue, 'w', encoding='utf8') as f:
