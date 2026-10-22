@@ -358,26 +358,286 @@ open analysis toolchain. See `axivity-geneactiv.md`. Access via UK Biobank appli
 ### Fitabase
 
 <!-- facts:begin fitabase -->
+*Generated from the fact record by `tools/facts/generate.py`. Edit the record, not this block.*
+
+**Research access**
+
+| Fact | Value |
+|---|---|
+| Formal research or academic program (name, what it offers) | No separate research or academic program. Fitabase itself is a research-only data platform for studies and trials using Fitbit (now Google Health) and Garmin wearables, with monitoring dashboards and exports. A one-off Fitabase and Fitbit Health Equity Research Initiative (2021) awarded devices and services; no later round found. [C, 2026-10-21] |
+| Who can join the research program | Research projects, studies and clinical trials; individuals cannot use Fitabase to access their own data. No other eligibility criteria are published. [V, 2026-10-21] |
+| How to apply, and any approval or review step | Sales-led, with no review step. Teams request a demo or quote; Fitabase then issues an invitation code and account creation link. Studies that cannot use participants' personal Google accounts can use Google-created de-identified demo accounts, which need a Google research application with an IRB approval or waiver (about 5 to 7 business days); Fitabase supplies the client ID. [V, 2026-10-21] |
+| Whether the program is active, paused, renamed or closed | Active. Fitbit collection is moving to the Google Health API (reauthorization opened in the platform on 2026-10-15). On 2026-10-19 Fitabase extended all active Fitbit projects ending before 2027-01-01 to that date at no charge, because some datasets are not yet available from Google. Fitabase Engage was relaunched on 2026-04-21; on 2026-10-21 the Engage pages still label the Mobile App and Wrist App "Preview · Summer 2026", while the Fitabase Engage iPhone app is live on the App Store (version 1.6.8, Oct 9). [V, 2026-10-21] |
+| Whether the general developer or API program is open to new applicants | The Fitabase API is a paid add-on for existing customer projects (key from the project's API portal), not an open developer program. Automated batch exports are a further add-on. The Fitabase API is not changing in the Google Health API migration. [V, 2026-10-21] |
+| Participant or user limits before approval or by tier | Not public [2026-10-21] |
+| How academic access differs from commercial or consumer access | Not public [2026-10-21] |
+
+**Pricing**
+
+| Fact | Value |
+|---|---|
+| Device or hardware list price | n/a |
+| Consumer subscription or membership price | n/a |
+| Research or academic pricing or discount | Not public [2026-10-21] |
+| Fees for API, SDK, platform or data access | No public figures. Fitabase Core is quoted per study. Charged as extras, amounts unpublished, are the Fitabase API, automated batch exports (Batch Export API), SMS messages and reminders (billed partly per message segment), the Aggregate Data API, Food and Weight exports, and Garmin Enhanced BBI. [V, 2026-10-21] |
+| Minimum order, term or commitment | Not public [2026-10-21] |
+| Whether pricing requires contacting sales | Yes. All pricing, including add-ons, is by custom quote. Custom development is capacity-limited, with a limited number of custom projects accepted each year. [V, 2026-10-21] |
+
+**Data access and terms**
+
+| Fact | Value |
+|---|---|
+| Raw signals available to researchers, and by which route | **Fitbit / Google Health:** No raw sensor signals (no raw accelerometer or PPG); Fitabase passes through the highest resolution the partner API gives, including second-level heart rate (every 3 to 15 seconds), 30-second sleep stages and timestamped ECG logs. No GPS or location data is collected, by design. [V, 2026-10-21]<br>**Garmin:** Two documented beat-to-beat routes. (1) Garmin API (OAuth, Garmin Connect app) - Enhanced BBI with a per-beat confidence flag, captured at the wrist during sleep, from devices with a gen 4 or later sensor (premium dataset). (2) Garmin SDK - a 2026-07-29 blog post says Fitabase can pull beat-to-beat intervals with the Garmin SDK when participants sync through the Fitabase Engage app instead of Garmin Connect; daytime coverage and sampling for this route are not stated. Also 15-second heart rate, and Garmin Index blood pressure monitor readings (systolic, diastolic, pulse, source). [C, 2026-10-21] |
+| Derived or processed metrics available to researchers | **Fitbit / Google Health:** Steps, intensity and METs, calories, sleep and sleep stages, breathing rate, HRV, SpO2, Active Zone Minutes, cardio fitness score, floors, distance, resting heart rate, skin and core temperature, wear time, plus weight, food and activity logs. [V, 2026-10-21]<br>**Garmin:** Daily stress, steps, floors, VO2max, fitness age, Pulse Ox, Move IQ, body composition, calories, nightly HRV average and 5-minute high, wear time and activity logs; 15-minute epochs; sleep records at each stage change; Body Battery, respiration and sleep scores. [V, 2026-10-21] |
+| Documented sampling rates or temporal resolution | **Fitbit / Google Health:** Heart rate every 3 to 15 seconds (variable); sleep stages 30 seconds; minute-level steps, intensity, METs, calories, SpO2 and Active Zone Minutes; HRV 5-minute readings; hourly and daily totals. [V, 2026-10-21]<br>**Garmin:** Heart rate 15 seconds; stress 3 minutes; Pulse Ox minute level; activity epochs 15 minutes (steps, heart rate, distance, MET, intensity, motion); sleep as records at each stage change; Enhanced BBI per beat during sleep. No rate is stated for the Garmin SDK route. [V, 2026-10-21] |
+| How far back data can be retrieved | **Garmin:** Data before connection can be pulled by setting sync dates in the past, but only if the participant turns on the off-by-default Historical Data permission in Garmin Connect. No maximum look-back is published. [V, 2026-10-21]<br>**Fitbit / Google Health:** Unclear |
+| Export, API, SDK or file routes | CSV downloads from individual participant report pages and unlimited batch exports (minute, hour and day level); the Fitabase API add-on (Daily Activity, Profiles, Sync and Batch Export endpoints, key-authenticated); the Aggregate Data API for bulk JSON or CSV; scheduled batch exports at most daily; webhooks that POST to the customer's HTTPS endpoint when a participant's connection status changes. During the migration, exports gain UTC, time zone and source columns. [V, 2026-10-21] |
+| API rate limits | Not public [2026-10-21] |
+| Terms on retaining, storing or deleting data | On account cancellation, personally identifiable information is deleted and backups expire on the normal schedule, but Fitabase may keep using de-identified, anonymized historical data. On termination Fitabase may delete all account data, and it may close accounts inactive for more than 30 days. Fitabase's example IRB text says projects are removed and data deleted from servers and backups 90 days after data collection ends. Data already synced is kept through the Google Health API switch. [V, 2026-10-21] |
+| Terms on using data to train AI or ML models | Not public [2026-10-21] |
+| Announced shutdowns, deprecations or migrations, with dates | Google turns off the Fitbit Web API on 2026-10-30. Every Fitabase participant still collecting after that must reauthorize for the Google Health API, once, either in the Google Health app or by Fitabase link (platform reauthorization opened 2026-10-15); the reconnect option and links keep working through 2026-11-30. Late reauthorization backfills the gap if the device kept syncing to Google. Reauthorization cannot be done programmatically. Exports move dataset by dataset; on 2026-10-14, 29 of 40 were available, 8 delayed (including Intraday Calories, Intraday METs and ECG, whose import is paused) and 3 classic sleep exports Fitbit API only. Active Fitbit projects were extended to 2027-01-01 at no charge. Classic sleep stops being a separate dataset, writing step goals is not yet available, exports gain UTC, time zone and source columns, and the Fitabase API is unchanged. [V, 2026-10-21] |
+
+**Compliance and regulatory**
+
+| Fact | Value |
+|---|---|
+| Whether a HIPAA Business Associate Agreement is offered | Not public [2026-10-21] |
+| Whether a data processing agreement is offered | Not public [2026-10-21] |
+| Published HIPAA statement | Not public [2026-10-21] |
+| Published GDPR statement | Not public [2026-10-21]<br>**Data Privacy Framework certification:** Small Steps Labs LLC (display name Fitabase, San Diego) is listed Active on the Commerce Department's Data Privacy Framework registry under the EU-U.S. DPF, the Swiss-U.S. DPF and the UK Extension, for non-HR data. EU-U.S. and Swiss-U.S. first certified 2018-12-07, UK Extension 2024-06-27, next certification due 2027-10-16. Verification method: self-assessment; JAMS as the dispute body. Five recorded lapses, the latest 2026-09-07 to 2026-10-16. [V, 2026-10-21] |
+| ISO/IEC 27001 status and evidence | Not public [2026-10-21] |
+| SOC 2 status and evidence | Not public [2026-10-21] |
+| FDA clearances, from the FDA database | Not public [2026-10-21] |
+| Where data is stored, and residency options | United States only, on Microsoft Azure; no other region or residency option is offered. [V, 2026-10-21] |
+
 <!-- facts:end -->
 
 ### Labfront
 
 <!-- facts:begin labfront -->
+*Generated from the fact record by `tools/facts/generate.py`. Edit the record, not this block.*
+
+**Research access**
+
+| Fact | Value |
+|---|---|
+| Formal research or academic program (name, what it offers) | Two programs. (1) Labfront Grants: subsidised or free platform access (typically one year of the Advanced plan with 20 participants), an analytics package and devices, run with partners including Garmin Health. (2) The Research Collaborator Program, free to academic institutions: collaborator-only grants, product discounts, analytics guidance, a device loaner program and a dedicated liaison. [V, 2026-10-11] |
+| Who can join the research program | Collaborator Program: any academic institution. Grants are set per call: the 2026 Labfront x Garmin Health grant is open worldwide (EMEA, APAC, Americas) but not to previous recipients of that grant; the 2026 Aging Science grant requires affiliation with an accredited academic, research or professional institution; Garmin-sponsored grants are for academic or healthcare institutions, not private companies. [V, 2026-10-11] |
+| How to apply, and any approval or review step | Collaborator Program: an online form, then selection; selected institutions get a dedicated liaison. Grants: a study summary or abstract (about 200 words), a personal statement (200 words max) and a CV, by the call's deadline. The grants FAQ says applications are reviewed roughly every 2 to 3 months and a winner can take up to a month after the deadline to be announced. [V, 2026-10-11] |
+| Whether the program is active, paused, renamed or closed | Active. Open 2026 grant calls on 2026-10-11: Labfront x Garmin Health Research Grant built on the Garmin CIRQA Smart Band (value $5,500, deadline 2026-11-02), Sleep Science (deadline 2026-11-27) and Aging Science (deadline 2026-12-07). The pricing page still calls grants rolling and year-round. Collaborator Program taking applications. [V, 2026-10-11] |
+| Whether the general developer or API program is open to new applicants | Developer Access is labelled Beta and is a paid add-on (from $4,000) on the Advanced plan only. There is no external API or SDK; access is to an S3 bucket, granted after the project owner emails support, within 5 working days. [V, 2026-10-11] |
+| Participant or user limits before approval or by tier | Tester (free): 5 participants, 2 device types per project. Basic: 20 participants included, 1 device type (Garmin or Dexcom). Advanced: 20 included, unlimited device types. Extra participants are billed per participant per year on Basic ($10) and Advanced ($25); every participant account counts, even on a shared device. One Movesense sensor per participant. [V, 2026-10-11] |
+| How academic access differs from commercial or consumer access | One public price list for every customer; no separate academic or commercial tier is published. Academic users get extra routes in, namely Garmin and Movesense device discounts, the Collaborator Program (academic institutions only) and Garmin-sponsored grants that exclude private companies. [C, 2026-10-11] |
+
+**Pricing**
+
+| Fact | Value |
+|---|---|
+| Device or hardware list price | Labfront sells no hardware and no plan includes devices. Customers get a Garmin discount the FAQ gives as typically around 20% (elsewhere 20 to 25%), and a Movesense discount, by quote. [V, 2026-10-11] |
+| Consumer subscription or membership price | Researcher plans (there is no consumer subscription; the participant app is free): Tester free (5 participants, downloads limited to the last 30 days). Basic $500/yr with 20 participants, then $10 per extra participant, one integration (Garmin Connect or Dexcom), no beat-to-beat, actigraphy or accelerometer data. Advanced $1,250/yr with 20 participants, then $25 per extra participant, all integrations and high-resolution data. USD, billed annually in advance. [V, 2026-10-11] |
+| Research or academic pricing or discount | No academic discount on platform plans is published. Academic support comes as device discounts, Collaborator Program discounts, and grants giving free platform access (for example one year of Advanced with 20 participants, devices and an analytics package, valued at $5,000 to $5,500). [V, 2026-10-11] |
+| Fees for API, SDK, platform or data access | Add-ons, Advanced plan only. Developer Access (S3 bucket of raw data, Beta): from $4,000. Analytics reports: HRV linear $4,000, HRV non-linear $6,000, sleep actigraphy $3,000, sleep regularity and timing $5,000, each plus $50 per participant. Data Audit: from $500. [V, 2026-10-11] |
+| Minimum order, term or commitment | Annual subscription paid in advance; no monthly billing (short studies negotiable by email). Subscriptions renew automatically unless cancelled at least 30 days before renewal. Fees are refundable only if the service is cancelled within 30 days of the start or renewal date; otherwise non-refundable, with no prorated refund on cancellation. [V, 2026-10-11] |
+| Whether pricing requires contacting sales | No for the three plans, which are priced publicly with self-serve sign-up. Yes for add-ons (listed "starting from" with Contact Us), extra participant slots, device discounts, short-term studies and retroactive Garmin Connect extraction. [V, 2026-10-11] |
+
+**Data access and terms**
+
+| Fact | Value |
+|---|---|
+| Raw signals available to researchers, and by which route | **Advanced plan:** Garmin device-direct data through the Labfront Companion app: beat-to-beat intervals, actigraphy and 3-axis accelerometer (25 to 100 Hz). Movesense Medical, HR2 or Flash (recordings started by the participant in a task, not continuous in the background): ECG waveform, 9-axis IMU, RR interval. Dexcom CGM after Dexcom approves the study (about 2 months, including a data use agreement). Current pages list Garmin, Movesense and Dexcom only. [V, 2026-10-11]<br>**Basic plan:** No raw sensor streams. Standard Garmin Connect data only, from one device integration (Garmin Connect or Dexcom); no beat-to-beat interval, actigraphy, accelerometer or Movesense data. The free Tester plan, by contrast, gets beat-to-beat intervals and 25 Hz accelerometry. [V, 2026-10-11] |
+| Derived or processed metrics available to researchers | Garmin Connect post-processed metrics (daily and activity summaries, sleep, stress, respiration, SpO2, heart rate, steps); sleep requires the Garmin Connect source. Paid Labfront Analytics reports add HRV time and frequency domain, non-linear HRV (DFA, MSE), actigraphy sleep, and sleep regularity and timing indices. [V, 2026-10-11] |
+| Documented sampling rates or temporal resolution | Advanced: heart rate 1 s to 60 min; respiration, SpO2 and stress 10 s to 60 min; steps 1 or 15 min; BBI every beat; actigraphy 10 s to 1 min; accelerometer 25, 50 or 100 Hz; Movesense IMU 12.5 to 208 Hz, ECG 125, 250 or 500 Hz, recordings up to 12 h. Basic: heart rate 1 min; respiration, SpO2 and stress 3 min; steps 15 min; no BBI, actigraphy or accelerometer. Tester: accelerometer 25 Hz, Movesense IMU 12.5 Hz and ECG 125 Hz, recordings up to 15 min. [V, 2026-10-11] |
+| How far back data can be retrieved | Tester downloads are limited to the last 30 days (older data is kept and unlocked on upgrade); paid plans have unlimited history for project data and list "Retroactive Garmin Data Access". A separately quoted service (announced 2022) extracts participants' existing Garmin Connect data up to two years back and requires their Garmin Connect login details. [V, 2026-10-11] |
+| Export, API, SDK or file routes | Dashboard download: one ZIP of CSV files per request, filtered by participant and date range. Developer Access add-on (Beta): an S3 bucket refreshed every 6 hours (Garmin Connect, Garmin device-direct, tasks and questionnaires). No public API or SDK. Participants can download a copy of their own data. [V, 2026-10-11] |
+| API rate limits | n/a |
+| Terms on retaining, storing or deleting data | Research data is typically kept for 3 years after study completion (the 2022 Security Statement says at least 3 years, longer on request where local law requires), with NIH DMS Policy compliance stated. Researchers can request full deletion at any time. The Terms say that terminating all services deletes the account's data. [V, 2026-10-11] |
+| Terms on using data to train AI or ML models | The Privacy Policy (updated 2025-12-30) covers study participants' Experiment Data, including wearable data, and says Labfront uses data to train and improve its machine learning models and may share de-identified data with third parties. The trust page and FAQ say researchers own the data and Labfront does not access project data. No opt-out from model training is described. (conflict) [U, 2026-10-11] |
+| Announced shutdowns, deprecations or migrations, with dates | Not public [2026-10-11] |
+
+**Compliance and regulatory**
+
+| Fact | Value |
+|---|---|
+| Whether a HIPAA Business Associate Agreement is offered | Not public [2026-10-11] |
+| Whether a data processing agreement is offered | Labfront says it can provide a Data Processing Agreement to specific customers on request, and a Data Use Agreement template on request; most institutions, it says, need neither beyond the Terms and policies. It describes itself as primarily a data processor. No DPA text is published. [C, 2026-10-11] |
+| Published HIPAA statement | Labfront claims HIPAA alignment (trust page) and HIPAA compliance (data-storage page, grants FAQ). No BAA, audit or attestation is published. [C, 2026-10-11] |
+| Published GDPR statement | Labfront states GDPR adherence and describes itself as primarily a processor for research teams. Hosting is US only (see data_residency). [C, 2026-10-11]<br>**Data Privacy Framework certification:** Kiipo Co. (display name Labfront, Sharon, MA) is listed Active on the Commerce Department's Data Privacy Framework registry under the EU-U.S. DPF, the Swiss-U.S. DPF and the UK Extension, for non-HR data. Certified 2026-01-05, next certification due 2027-01-05, no inactive periods. Verification method: self-assessment. Dispute resolution: JAMS. [V, 2026-10-11] |
+| ISO/IEC 27001 status and evidence | Unclear |
+| SOC 2 status and evidence | Unclear |
+| FDA clearances, from the FDA database | Not public [2026-10-11] |
+| Where data is stored, and residency options | US only (AWS), with EU servers planned but undated. Pages disagree on the primary region: the current FAQ and trust page say Virginia; the Security Statement (last updated 2022-08-25) says primarily Ohio, with backups across US AWS locations. (conflict) [C, 2026-10-11] |
+
 <!-- facts:end -->
 
 ### Fitrockr
 
 <!-- facts:begin fitrockr -->
+*Generated from the fact record by `tools/facts/generate.py`. Edit the record, not this block.*
+
+**Research access**
+
+| Fact | Value |
+|---|---|
+| Formal research or academic program (name, what it offers) | Garmin Health x Fitrockr research grants, run as regional or themed rounds (EMEA 2023, Americas 2023, India 2024, Biomarkers 2024, Australia and New Zealand 2025, Asia 2026). The Asia 2026 award was 5 Garmin vivoactive 5 watches, 6 months of unrestricted Fitrockr platform access for up to 50 participants, and a possible feature in Garmin Health communications; earlier rounds gave 3 months of access for up to 50 users. There is no standing academic program. [C, 2026-10-21] |
+| Who can join the research program | Set per round, usually by region. Asia 2026 was open to academic researchers, post-docs and graduate students in Asia doing health or sports science studies with Garmin wearables, with projects starting within 2026. Americas 2023 was open to researchers in any North or South American country. [C, 2026-10-21] |
+| How to apply, and any approval or review step | Applicants apply through the round's official grant page before a fixed deadline; between rounds Fitrockr points people to its newsletter. Selection criteria and the review process are not published. [C, 2026-10-21] |
+| Whether the program is active, paused, renamed or closed | Between rounds. The Asia 2026 call closed on 31 March 2026 and its winners are listed; the next round is "to be announced". No open call on the 2026-07-13 capture or in researcher B's live reading of 2026-10-21. [R, 2026-10-21] |
+| Whether the general developer or API program is open to new applicants | No public developer program. Paying customers get the REST data API (all synced data) and a separate live-data API (needs the Live add-on) on request to support; API access is a priced add-on (+20% on licence). API documentation is not public. [R, 2026-10-21] |
+| Participant or user limits before approval or by tier | No participant cap on the published plans: the pricing page bills by connected device (5 device licences included, more bought per device) with unlimited users, and a 2026 news post says licences moved from user accounts to devices. The pricing help article still says pricing is based on user numbers. Free trial: up to 5 device connections for 2 weeks. Grants cover up to 50 participants. (conflict) [R, 2026-10-21] |
+| How academic access differs from commercial or consumer access | No separate academic price list or terms. One "Research & Clinical Trials" price list covers universities, hospitals and companies; teams with limited research funds are asked to request a custom quote. The grants are the only academic-specific route. [R, 2026-10-21] |
+
+**Pricing**
+
+| Fact | Value |
+|---|---|
+| Device or hardware list price | n/a |
+| Consumer subscription or membership price | n/a |
+| Research or academic pricing or discount | No published academic price or discount. Teams with limited research funds are asked to contact Fitrockr for a custom quote. [R, 2026-10-21] |
+| Fees for API, SDK, platform or data access | Research & Clinical Trials plans per month, as researcher B read them on 2026-10-21: Basic from EUR 50 (USD 55), Pro from EUR 150 (USD 165), each with 5 device licences; extra device licences EUR 1 to 7.5 (Basic) or EUR 1 to 15 (Pro) per month. Add-ons: API access +20% on licence; accelerometer and gyroscope collection +25%; live streaming +20%; surveys +20%; on-premise hosting EUR 5,000 + 20%; Data Vault EUR 250 per month after the project; historic Garmin Connect import EUR 500 setup. Germany cloud hosting, support and admin accounts included. [R, 2026-10-21] |
+| Minimum order, term or commitment | 3-month minimum contract, with renewals in 3-month terms, on Basic and Pro. The terms say subscriptions do not renew automatically unless agreed. [R, 2026-10-21] |
+| Whether pricing requires contacting sales | Partly. "Starting at" plan and add-on prices are published, but contracts (fixed price per project or pay-as-you-go) are set in a Fitrockr quote, and some items (country-of-choice hosting, custom work) are priced on effort. [R, 2026-10-21] |
+
+**Data access and terms**
+
+| Fact | Value |
+|---|---|
+| Raw signals available to researchers, and by which route | Through the Fitrockr app's direct device sync (not Garmin Connect): raw and enhanced beat-to-beat intervals (every beat), accelerometer (fixed 25 Hz) and gyroscope (fixed 32 Hz) as a paid add-on, actigraphy, zero crossing and skin temperature, plus heart rate, stress, SpO2 and respiration at configurable epochs. Syncing through Garmin Connect "supports less data". GPS can be switched off per study. Garmin is the main source; other brands (Apple, Google, Withings, Oura, Polar and others) are supported. [R, 2026-10-21] |
+| Derived or processed metrics available to researchers | Device metrics passed through (Garmin stress, Body Battery, sleep, steps, intensity minutes, respiration, SpO2) plus metrics Fitrockr computes itself, including HRV indices (RMSSD, SDNN, LF/HF) from beat-to-beat data and MET, and report types (HRV, sleep, 6-minute walk test and others). [R, 2026-10-21] |
+| Documented sampling rates or temporal resolution | Accelerometer fixed at 25 Hz and gyroscope at 32 Hz on Garmin (not adjustable); beat-to-beat intervals every beat; other streams configurable (Fitrockr lists 1 s, 60 s, 90 s and so on). Via Garmin Connect sync, HRV is limited to RMSSD in 5-minute intervals during the sleep window. [R, 2026-10-21] |
+| How far back data can be retrieved | For Garmin Connect-linked users, up to 2 years of history can be imported (a paid add-on, EUR 500 setup per researcher B's reading of the pricing page). For direct Fitrockr app sync, history is limited to what is still on the watch; when storage is full, default data overwrites the oldest files. [R, 2026-10-21] |
+| Export, API, SDK or file routes | On-demand dashboard exports (41 export options) in Excel, CSV or JSON (CSV or JSON for large data); REST data API for all synced data and a live-data API for live streams (both add-ons); a full database dump in BSON on request for long-term storage. [R, 2026-10-21] |
+| API rate limits | Not public [2026-10-21] |
+| Terms on retaining, storing or deleting data | Each research project runs on its own server instance, deleted with all data at the end of the study. Under the 2026-09-19 terms (researcher B's reading), Fitrockr deletes or returns customer data after a post-termination retrieval period, unless law or a written agreement says otherwise. Read-only access after the project is the paid Data Vault add-on; a free BSON database dump is the self-storage route. [R, 2026-10-21] |
+| Terms on using data to train AI or ML models | Under the 2026-09-19 terms and privacy policy (researcher B's reading), Fitrockr will not use identifiable customer or participant health data to train general-purpose AI models unrelated to the customer's project. It may create and use aggregated or irreversibly anonymised data, which is not excluded from training. [R, 2026-10-21] |
+| Announced shutdowns, deprecations or migrations, with dates | Garmin sync technology change by 7 September 2025: for projects syncing with the Fitrockr app, Garmin no longer provides sleep data for 13 older models (vivosmart 4, vivofit 4, vivomove 3/Style, vivomove Sport, vivoactive 4, Venu Sq, Venu, Lily, Instinct, Instinct Solar, Forerunner 245, 45, 55); Garmin Connect sync is unaffected. The old iOS participant app (id1553631734) no longer has an App Store page; the current app is Fitrockr Sync. The 2026-09-19 terms say third-party integrations are not guaranteed to stay available. [R, 2026-10-21] |
+
+**Compliance and regulatory**
+
+| Fact | Value |
+|---|---|
+| Whether a HIPAA Business Associate Agreement is offered | Offered where Fitrockr handles protected health information for a HIPAA covered entity; the 2026-09-19 privacy policy says Fitrockr may then act as a Business Associate under a BAA (researcher B's reading). The BAA text is not published. [R, 2026-10-21] |
+| Whether a data processing agreement is offered | Yes, where required. Fitrockr acts as processor for customer data, and a separate Data Processing Agreement governs the processing. The DPA text is not published. [R, 2026-10-21] |
+| Published HIPAA statement | Fitrockr says it complies with HIPAA and markets itself as "HIPAA certified"; a 2023 news post says it "received the certification" but names no certifier (HHS issues no HIPAA certification). The 2026-09-19 privacy policy adds that processing health data does not by itself make every service subject to HIPAA. [R, 2026-10-21] |
+| Published GDPR statement | Fitrockr (Digital Rebels GmbH, Berlin) says it complies with GDPR, acts as data processor for customer data under German law, and (2026-09-19 privacy policy) uses Chapter V transfer mechanisms for data leaving the EEA. [R, 2026-10-21] |
+| ISO/IEC 27001 status and evidence | Claimed for the cloud hosting centre only, not for Fitrockr itself; the hosting provider and certificate are not named, and no certificate naming Fitrockr or Digital Rebels GmbH was found. Fitrockr separately claims Google CASA certification, with no letter of validation published. [R, 2026-10-21] |
+| SOC 2 status and evidence | Not public [2026-10-21] |
+| FDA clearances, from the FDA database | Not public [2026-10-21] |
+| Where data is stored, and residency options | Default hosting in an ISO-certified data centre in Germany (included); the security help page says Germany or Switzerland. Hosting in a country of the customer's choice (for example the US), on-premise self-hosting and military on-premise hosting in a closed network are add-ons. [R, 2026-10-21] |
+
 <!-- facts:end -->
 
 ### Terra
 
 <!-- facts:begin terra -->
+*Generated from the fact record by `tools/facts/generate.py`. Edit the record, not this block.*
+
+**Research access**
+
+| Fact | Value |
+|---|---|
+| Formal research or academic program (name, what it offers) | No academic or research-access programme for outside researchers. The nearest route is the Terra Startup Accelerator (up to $100,000 in API credits over up to six months), whose FAQ says research projects are eligible if Terra is credited. "Terra Research" is Terra's in-house team publishing its own analyses of pooled end-user data, not an access programme. [C, 2026-10-21] |
+| Who can join the research program | **Startup Accelerator:** Pre-revenue or early-revenue teams that cannot yet afford paid API access, with health data central to the product. Research projects qualify if health data is central to the work and Terra is credited in resulting publications and datasets. [V, 2026-10-21] |
+| How to apply, and any approval or review step | **Startup Accelerator:** Short-answer online form (about 20 to 30 minutes), rolling admission, decision within 10 business days, about 0.8% of applications accepted. A card is required to activate the credits. [V, 2026-10-21] |
+| Whether the program is active, paused, renamed or closed | **Startup Accelerator:** Open, rolling admission (2026-10-21). [V, 2026-10-21] |
+| Whether the general developer or API program is open to new applicants | Open and self-serve. Sign up on the dashboard, choose a plan and get API keys; there is no separate gating step for production. The Terms add compliance reviews (questionnaires, information requests) that Terra may run for development or production access. [V, 2026-10-21]<br>**Garmin through Terra:** Terra's Garmin integration page now says the customer supplies its own Garmin app credentials and applies at developerportal.garmin.com. Until at least 2026-10-14 the same page said Terra manages the Garmin credentials. With Garmin's own programme taking no new applications, a new Terra customer may have no Garmin route. [V, 2026-10-21]<br>**Google Health and Fitbit through Terra:** Terra's docs say Terra manages the credentials for its Google Health connection (the Google Health API replacement for the Fitbit Web API), so the customer registers no Google app; each user re-consents once. Its Fitbit (legacy Fitbit Web API) page says the same for Fitbit. Google Health became generally available in Terra connections in August 2026. [V, 2026-10-21]<br>**WHOOP, Strava, Dexcom, Huawei (bring your own credentials):** The customer supplies its own provider credentials for WHOOP, Strava, Dexcom and Huawei, so the study needs its own developer approval from each of these providers. [V, 2026-10-21] |
+| Participant or user limits before approval or by tier | Testing and staging environments are capped at 50 connected users each; production has no user cap and is billed per active authentication. The Streaming add-on's included credits cover 20 active streaming users a month. [V, 2026-10-21] |
+| How academic access differs from commercial or consumer access | No academic tier or academic terms; universities buy the same plans. Three terms matter for research use: free development accounts are for internal evaluation only (no pilot study on a sandbox); the customer Terms bar publicly disseminating information on the performance of the Services or Output (clause 1.2(v)), which reaches methods papers that report on Terra data quality or delivery; and accelerator credits require crediting Terra in publications and datasets. [V, 2026-10-21] |
+
+**Pricing**
+
+| Fact | Value |
+|---|---|
+| Device or hardware list price | n/a |
+| Consumer subscription or membership price | n/a |
+| Research or academic pricing or discount | Not public [2026-10-21] |
+| Fees for API, SDK, platform or data access | Quick Start: $399/month billed annually or $499/month billed monthly, with 100,000 credits a month. An active authentication (one connected source for one end user) costs 200 credits a month; the first 400 events per authentication are free, then 0.5 credits per event. Credits beyond 100,000 cost $0.005 (to 1,000,000) and $0.003 above. Streaming API add-on $99/month (20,000 credits, about 20 active streaming users). Graph API from $50 for 2 graphs a month. Enterprise is custom. [V, 2026-10-21] |
+| Minimum order, term or commitment | Monthly, or annual paid upfront. Annual renewals need at least 60 days' notice to cancel; monthly can be cancelled any time in the current period, but the customer stays liable for that period. 30-day money-back guarantee. [V, 2026-10-21] |
+| Whether pricing requires contacting sales | No for Quick Start and the published add-ons. Yes for Enterprise (custom plans, signed BAA, dedicated server, data storage) and for any non-profit or special pricing. [V, 2026-10-21] |
+
+**Data access and terms**
+
+| Fact | Value |
+|---|---|
+| Raw signals available to researchers, and by which route | Unified API passes through what each provider exposes, unsmoothed: sample arrays such as heart rate, RR interval, HRV, SpO2, glucose, position and raw ECG voltage where the provider supplies them; no raw PPG, no raw uncalibrated CGM. The Streaming API add-on carries roughly per-second heart rate, HRV, RR interval, ECG, acceleration and gyroscope from BLE/ANT+ devices, Wear OS, Apple Watch and phone sensors. [V, 2026-10-21] |
+| Derived or processed metrics available to researchers | Provider summaries (daily, activity, sleep, body, nutrition, menstruation) normalised to Terra's schema, plus Terra's own Health Scores (recovery, strain, stress, immunity and others) and Models. Smart Fill (August 2026, called "health context" in the product blog) imputes missing sleep, daily and activity values, with a confidence value on every estimated cell. Terra does not compute derived metrics such as speed from position samples. [V, 2026-10-21] |
+| Documented sampling rates or temporal resolution | Set by each device and provider, passed through unchanged (for example Huawei heart rate about once a minute). Cloud integrations are event-driven or polled by Terra every 5 to 10 minutes. Streaming API events arrive roughly once per second per stream. [V, 2026-10-21] |
+| How far back data can be retrieved | By default data flows only from connection onward. Historical pulls depend on the provider: Garmin up to 5 years, Google Health up to the last 12 months on connect (returned by REST, not pushed), Polar and Health Connect 30 days and never before the user granted permission. A single request may span at most 1,825 days. [V, 2026-10-21] |
+| Export, API, SDK or file routes | Event-based push to a configured destination: webhooks, Postgres/MySQL, Supabase, S3, GCS, Azure Blob, SQS, Kafka, MongoDB, Firestore. REST endpoints for historical backfill. Mobile SDKs for Apple Health, Samsung Health and Health Connect (on-device sources have no cloud route). Output in Terra format, FIT or FHIR. Streaming websocket as an add-on. [V, 2026-10-21] |
+| API rate limits | The Rate Limits reference sets two per-user rules on data-read endpoints (at most 1,825 days per request; at most 6,000 requested days per user per hour, HTTP 429, raisable per dev_id). The environments page says Terra imposes no rate limits on the REST API. Webhook delivery is not rate-limited; provider limits apply and are shared across all of a customer's users. (conflict) [U, 2026-10-21] |
+| Terms on retaining, storing or deleting data | End User Privacy Policy (updated 2026-09-24): end-user data is usually kept two days after collection, in rare cases up to six months, and never more than six months, with exceptions (an active connection, legal duty, separate user permission, misuse investigation). Aggregated or de-identified derivatives may be kept longer for research, analytics and service improvement. DPA: personal data deleted or returned within 90 days of termination. Storage is an Enterprise feature. [V, 2026-10-21] |
+| Terms on using data to train AI or ML models | No clause names AI or model training for end-user data. The End User Privacy Policy lets Terra use collected data for product development and to conduct "statistical, scientific, or market research" and publish aggregated or de-identified results, and to keep de-identified derivatives without a stated limit. The research wording was added between 2025-10-16 and 2026-02-24. Terra's Integration Onboarding Terms (updated 2026-10-12) let Terra use de-identified data from partner integrations for any lawful purpose. Anthropic and OpenAI are subprocessors for AI-assisted support on anonymised end-user data, with a customer opt-out. [V, 2026-10-21] |
+| Announced shutdowns, deprecations or migrations, with dates | Fitbit connection runs on the legacy Fitbit Web API (Google sunset September 2026); move users to the Google Health connection, which needs every user to sign in again and gets a new user_id. July 2026: provider fitbit_v2 renamed google_health, old name rejected; Biostrap deprecated. Web Google connection (Google Fit REST) must move to Google Health before Google ends Fit API support at the end of 2026; the Health Connect SDK route is unaffected. Peloton and Technogym removed. Legacy JavaScript SDK no longer updated. Phased move to the access.tryterra.co/api/v2 base URL. [V, 2026-10-21] |
+
+**Compliance and regulatory**
+
+| Fact | Value |
+|---|---|
+| Whether a HIPAA Business Associate Agreement is offered | A signed BAA is listed on the Enterprise plan only, not on Quick Start. [C, 2026-10-21] |
+| Whether a data processing agreement is offered | A Data Processing Addendum (updated 2026-09-24, with EU SCCs and the UK addendum) forms part of the Terms and is accepted with them. Subprocessor changes are posted at least 10 days ahead. [C, 2026-10-21] |
+| Published HIPAA statement | Terra says it is HIPAA compliant and adheres to HIPAA standards. Self-declared. [C, 2026-10-21] |
+| Published GDPR statement | Terra says it is GDPR compliant; its GDPR page (updated 2026-03-01) offers a downloadable GDPR assessment via a Vanta trust centre. The DPA covers EU SCCs and the UK transfer addendum. [C, 2026-10-21] |
+| ISO/IEC 27001 status and evidence | Not public [2026-10-21] |
+| SOC 2 status and evidence | Terra says it is SOC 2 Type II certified, with an annual SOC 2 Type II audit (Security, Confidentiality, Availability). No report or auditor seen. [C, 2026-10-21] |
+| FDA clearances, from the FDA database | Not public [2026-10-11] |
+| Where data is stored, and residency options | Primary processing in the United Kingdom and the Netherlands, with transfers to the US possible. End-user data hosting subprocessors (AWS, Google Cloud, ClickHouse Cloud) are listed in the US, UK and EU; support tools (Zendesk, HyperDX, Anthropic, OpenAI) in the US. Enterprise offers a dedicated instance in a chosen region; no region choice is documented for Quick Start. [V, 2026-10-21] |
+
 <!-- facts:end -->
 
 ### Thryve
 
 <!-- facts:begin thryve -->
+*Generated from the fact record by `tools/facts/generate.py`. Edit the record, not this block.*
+
+**Research access**
+
+| Fact | Value |
+|---|---|
+| Formal research or academic program (name, what it offers) | **Thryve Research Partners:** Research Partners route ("Become a Partner"): describe the study, then get Thryve's research infrastructure, documentation and compliance materials and study setup support. Sold alongside a Multimodal Clinical Trial Platform built on the white-label Pulsatio participant app. It is the commercial platform with onboarding support, not a separate academic data-access program. [V, 2026-10-21]<br>**Terve Research:** Terve Research: a European research platform for academic and medical institutions, announced 31 August 2026, funded by Huawei and run by Thryve (mHealth Pioneers GmbH) on its white-label platform. Closed studies recruit their own participants; open studies can enrol Huawei wearable users across Europe. Researchers get joint-controllership and ethics-committee templates; selected studies may receive sponsored devices and implementation support. [C, 2026-10-21] |
+| Who can join the research program | **Thryve Research Partners:** Unclear<br>**Terve Research:** Aimed at European academic and medical institutions; participants need a compatible Huawei device at launch. No selection criteria for researchers or sponsored studies are published. [C, 2026-10-21] |
+| How to apply, and any approval or review step | **Thryve Research Partners:** "Become a Partner" contact route: describe the research, then configure participant flows, device connections and data collection with Thryve support. No review criteria or timeline published. Self-serve alternative: the 14-day trial or Start Up plan via Stripe checkout. [V, 2026-10-21] |
+| Whether the program is active, paused, renamed or closed | **Thryve Research Partners:** Active: research partner and research organization pages live as of 2026-10-21. [V, 2026-10-21]<br>**Terve Research:** Not live as of 2026-10-21. The 31 August 2026 announcement says two clinical studies launch in September, but terveresearch.com still says "launching soon" and collects early-access emails, and no Terve app from mHealth Pioneers appears in the Apple App Store (DE, GB, FI storefronts, 2026-10-21). (conflict) [U, 2026-10-21] |
+| Whether the general developer or API program is open to new applicants | Open and self-serve: 14-day free trial (25 users) through Stripe checkout, card and business email required, converting automatically to the Start Up plan at EUR 499 per month unless cancelled. Personal email addresses are refused. [V, 2026-10-21] |
+| Participant or user limits before approval or by tier | **Thryve plans:** End users included: Free Trial 25, Start Up 500 (extra users EUR 0.50 each), Scale Up 5,000 (extra EUR 999 per 10,000 users), Enterprise flexible. [V, 2026-10-21]<br>**Google Health API route (own OAuth client):** A study connecting Google Health through Thryve uses its own Google OAuth client and is capped by Google at 100 users until OAuth verification and the CASA assessment are complete. The on-device route (Apple Health or Health Connect) has no such cap. [V, 2026-10-21] |
+| How academic access differs from commercial or consumer access | Not public [2026-10-21] |
+
+**Pricing**
+
+| Fact | Value |
+|---|---|
+| Device or hardware list price | n/a |
+| Consumer subscription or membership price | n/a |
+| Research or academic pricing or discount | Not public [2026-10-21] |
+| Fees for API, SDK, platform or data access | **Thryve plans:** Start Up from EUR 499 per month (500 users, 1 app, EUR 0.50 per extra user); Scale Up from EUR 1,000 per month (5,000 users, EUR 999 per extra 10,000; only for startups founded less than 10 years ago); Enterprise bespoke. Foundational analytics included at no extra charge; further analytics upon request. [V, 2026-10-21]<br>**Google Health API route (own OAuth client):** Third-party cost on top of Thryve fees: a CASA security assessment for restricted health scopes, paid to a Google-authorised assessor and renewed annually. Google states $500 to $4,500 by app complexity; Thryve says it typically starts around EUR 1,000 and upwards. The on-device route avoids CASA. [C, 2026-10-21] |
+| Minimum order, term or commitment | **Start Up plan:** Start Up is monthly and cancellable at any time; the trial needs a card and converts to Start Up after 14 days. Scale Up and Enterprise terms not published. [V, 2026-10-21] |
+| Whether pricing requires contacting sales | Start Up is self-serve with a public price; Scale Up is "Contact Us"; Enterprise is bespoke through sales. [V, 2026-10-21] |
+
+**Data access and terms**
+
+| Fact | Value |
+|---|---|
+| Raw signals available to researchers, and by which route | No sensor-level raw signals (accelerometer, PPG) from web sources: Thryve passes on the manufacturer-processed values each source exposes, at the source's finest granularity, without pre-aggregating. Through the Apple Health SDK module it reads heartbeat series and ECG; ThryveBLE (beta) connects Bluetooth heart rate and glucose monitors directly. [V, 2026-10-21]<br>**Garmin Companion module (SDK 5.3.0):** Real-time Bluetooth streaming from paired Garmin devices into the app and Thryve's warehouse: heart rate, beat-to-beat intervals (BBI), SpO2, respiration, stress, steps, calories, floors, Body Battery and intensity minutes. Needs Garmin Connect on the phone and a Garmin Companion licence string, which Garmin issues per application ID on request through Thryve support. [V, 2026-10-21]<br>**Google Health on-device route:** The Google Health app writes Fitbit and Pixel data into Apple Health or Health Connect and Thryve reads it with its SDK, with no Google OAuth client, verification or CASA. On Health Connect this includes heart rate, resting heart rate, HRV, skin temperature, respiratory rate and blood glucose. [C, 2026-10-21] |
+| Derived or processed metrics available to researchers | 250+ harmonized data types (source-provided daily and epoch values); Foundational Analytics (standardized data and derived definitions such as a main-sleep period) included for all clients since December 2025; sleep, health status and health risk analytics upon request. [V, 2026-10-21] |
+| Documented sampling rates or temporal resolution | Set by each source: epoch values to second precision where provided, but Polar hourly and Fitbit intraday mostly only during recorded activities and sleep. Retrieval latency: bulk sources polled at most every 15 minutes, including Google Health direct (scheduled, up to 15 minutes delay). Garmin Companion streams in real time over Bluetooth. [V, 2026-10-21] |
+| How far back data can be retrieved | Default backfill of 14 days before user creation (configurable down to 0); Start Up and Scale Up up to 14 days, Enterprise flexible. Per source: Polar none; Health Connect beyond 30 days needs an extra user permission; Google Health lookback not defined by Google. Per API call: 30 days epoch, 364 days daily. [V, 2026-10-21] |
+| Export, API, SDK or file routes | REST Wearable API v5 (epoch and daily endpoints) by pull, or webhooks (notifications and data push); native SDKs for iOS and Android plus Flutter and React Native for on-device sources; Thryve dashboard. [V, 2026-10-21]<br>**Google Health:** Two routes. (A) Direct: the customer brings its own OAuth client tied to its own Google Cloud project and verified app, passes Google OAuth verification and an annual CASA assessment, and is capped at 100 users until both are done; Thryve then retrieves data as a web bulk source with no shared client. (B) On-device: Thryve's SDK reads what the Google Health app writes into Apple Health or Health Connect, avoiding Google credentials, verification and CASA. [V, 2026-10-21] |
+| API rate limits | Not public [2026-10-21] |
+| Terms on retaining, storing or deleting data | Thryve keeps data for the plan's storage window: 1 day (trial), 2 weeks (Start Up), 1 month (Scale Up), flexible (Enterprise), so studies must pull or receive data continuously. Stored data types are configurable. Users are deleted by API asynchronously from midnight UTC after the deletion date (default seven days ahead). [V, 2026-10-21] |
+| Terms on using data to train AI or ML models | Unclear |
+| Announced shutdowns, deprecations or migrations, with dates | **Fitbit Web API source:** Thryve's Fitbit source ends with Google's Fitbit Web API shutdown. Dates disagree: Thryve's docs table says 29 October 2026; Thryve's blog (updated 29 September 2026) says Google extended the cut-off to 30 October, while older paragraphs of the same post still say 30 September and that no extension was communicated; Google's own docs say 30 October 2026. Within 24 hours of the shutdown Thryve disconnects all Fitbit connections; already-ingested data stays. Every user must re-authorize through Google Health (route A or B, see export_routes). (conflict) [C, 2026-10-21]<br>**Google Health integration status:** Thryve's Google Health page still says the integration is available on fast-track request ahead of full public release, while its blog says connection flows were released 20 July 2026 and full integration with scheduled retrieval on 15 August 2026. (conflict) [U, 2026-10-21]<br>**Samsung Health SDK module:** Old Samsung Health module (shealth) deprecated 16 April 2026 and removed in Thryve SDK 5.3.0; the replacement uses Samsung's Health Data SDK, and users must reconnect because Samsung does not support migrating connections. [V, 2026-10-21]<br>**Google Fit sources:** GoogleFitREST and GoogleFitNative are end of life; closed to new apps since 1 May 2024, existing integrations working until 2026. [V, 2026-10-21] |
+
+**Compliance and regulatory**
+
+| Fact | Value |
+|---|---|
+| Whether a HIPAA Business Associate Agreement is offered | Thryve says a BAA is standard on every plan, not only Enterprise. No signed agreement seen. [C, 2026-10-21] |
+| Whether a data processing agreement is offered | DPA standard on every plan; Thryve acts as data processor for the customer. Terve Research instead offers joint-controllership templates. [C, 2026-10-21] |
+| Published HIPAA statement | Self-declared HIPAA compliant; raw data tokenized at ingestion. [C, 2026-10-21] |
+| Published GDPR statement | Self-declared GDPR compliant; data pseudonymized behind a Thryve user token and hosted in Germany. [C, 2026-10-21] |
+| ISO/IEC 27001 status and evidence | Claims ISO/IEC 27001 and ISO 9001 certification, recertified in 2025. Certificates only through a request form, so certifier, scope and expiry are not public. [C, 2026-10-21] |
+| SOC 2 status and evidence | Not public [2026-10-21] |
+| FDA clearances, from the FDA database | Not public [2026-10-21] |
+| Where data is stored, and residency options | All data processed and stored in Germany; no other region option published. Terve Research is hosted on T Cloud Public, Germany. [V, 2026-10-21] |
+
 <!-- facts:end -->
 
 ## Key Links

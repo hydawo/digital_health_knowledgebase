@@ -201,31 +201,343 @@ Recorded so their absence remains a known gap rather than an implied judgement.
 ### Ultrahuman
 
 <!-- facts:begin ultrahuman -->
+*Generated from the fact record by `tools/facts/generate.py`. Edit the record, not this block.*
+
+**Research access**
+
+| Fact | Value |
+|---|---|
+| Formal research or academic program (name, what it offers) | No dedicated academic data program with published terms. Three routes: (1) research partnerships, a "Research Institutions" offering on the partners page (devices plus an enterprise dashboard) reached through a "Become a partner" form; (2) Pulsomics, Ultrahuman's own opt-in in-app research program, registered with CTRI, which invites universities, hospitals and research groups to collaborate on study design, cohort access and co-authored papers while keeping the raw recordings with the Ultrahuman science team; (3) UltraSignal, an application-based developer platform with a loaned developer kit for PPG, temperature and accelerometer streams. [V, 2026-10-21] |
+| Who can join the research program | UltraSignal: open application; priority goes to applicants building an app on Ring AIR data. Pulsomics collaboration: universities, hospitals and research groups, no further criteria. Pulsomics participants: anyone 18 or over actively using a Ring AIR or Ring PRO. Partnerships: no eligibility criteria published. [V, 2026-10-21] |
+| How to apply, and any approval or review step | UltraSignal: a brief application (Typeform linked from the page); applications are reviewed and selected applicants are loaned a developer kit. Personal API tokens and OAuth app registration: created by the account holder in the developer portal (see developer_program_status). Ultrahuman's September 2025 Partner API guide lists the OAuth client ID and secret as coming from "partner onboarding". Research partnerships and Pulsomics collaboration: a "Become a partner" / "Partner with us" contact route, with no criteria, review step or timeline published. Pulsomics participants opt in inside the app. [V, 2026-10-21] |
+| Whether the program is active, paused, renamed or closed | All three routes are live as of 2026-10-21. Pulsomics is new in 2026 (CTRI/2026/08/115584; three studies open, two marked coming soon). The UltraSignal page is up, its title names Ring PRO, and its body still offers a Ring AIR developer kit, although Ring AIR is no longer sold in the US. [V, 2026-10-21] |
+| Whether the general developer or API program is open to new applicants | **Personal API token:** Open and self-serve. Any Ultrahuman account holder can generate a Personal API token in the developer portal (vision.ultrahuman.com/developer, sign-in required). The token reads the holder's own data, and another user's data once that user links their account by entering the developer's data sharing code (Partner ID) in the app. No approval step is described for this route. [V, 2026-10-21]<br>**Partner OAuth API:** Open, with an unclear approval step. The developer portal lets a signed-in account holder create an OAuth application, and Open Wearables' setup guide walks through doing so without any review. Ultrahuman's own Partner API guide (19 September 2025) still says "approved apps" with credentials from "partner onboarding", and an Open Wearables blog post (May 2026) says credentials are not self-serve. Reading the exact wording together: registering an app is self-serve today; whether an app needs Ultrahuman's approval before users outside the developer's own account can authorise it, or before production use, is not documented. [C, 2026-10-21] |
+| Participant or user limits before approval or by tier | Not public [2026-10-21] |
+| How academic access differs from commercial or consumer access | Unclear |
+
+**Pricing**
+
+| Fact | Value |
+|---|---|
+| Device or hardware list price | **Ring PRO:** USD 479 including the PRO charging case, on the US and global storefronts. Prices are set per regional store. [V, 2026-10-21]<br>**Ring AIR:** USD 349 on the global PRO-versus-AIR comparison page; GBP 329 list on the UK store. Not sold in the US or Puerto Rico (see deprecations). [V, 2026-10-21] |
+| Consumer subscription or membership price | None for ring data. Optional paid add-ons are priced per store, for example the Cardio Adaptability PowerPlug (USD 2.9/month) and, on the US store, the "Ultrahuman Max" bundle from USD 9.99/month (all premium PowerPlugs, Jade Pro, UltrahumanX and member pricing). CGM plans are also separate. [V, 2026-10-21] |
+| Research or academic pricing or discount | Heroes special pricing on Ring PRO covers scientists and researchers (plus healthcare workers, athletes, veterans and military, and education); proof of eligibility may be required. The discount is not shown. No institutional, bulk or study-volume research pricing is published. [V, 2026-10-21] |
+| Fees for API, SDK, platform or data access | No published fee for API access. The API Agreement says Sandbox and Production access are unpaid and as-is, offers a paid Premium Access support tier (price not published), and requires 30 days' notice before fees are introduced. The developer docs mention enterprise "dedicated subscription plans" (price not published). [R, 2026-10-21] |
+| Minimum order, term or commitment | Not public [2026-10-21] |
+| Whether pricing requires contacting sales | Consumer ring and add-on prices are published per store. Research partnership, enterprise dashboard and UltraWork bulk pricing is not published; those routes go through "Become a partner" and "Request access" forms. [C, 2026-10-21] |
+
+**Data access and terms**
+
+| Fact | Value |
+|---|---|
+| Raw signals available to researchers, and by which route | Raw PPG, through the PPG Recordings API: sessions the account holder starts and stops in the app's Developer Mode, downloaded as gzip-compressed NDJSON from pre-signed links. The API returns only the token holder's own recordings, so it does not reach a participant cohort without per-participant accounts and manual sessions. UltraSignal also names temperature and accelerometer streams for developer-kit holders, but no public endpoint documents raw temperature or accelerometer data. The daily metrics API returns processed values only. [V, 2026-10-21] |
+| Derived or processed metrics available to researchers | Daily metrics API: heart rate, skin temperature, HRV, steps, motion, night and sleep resting HR, sleep (score, total, efficiency, time in bed, REM/deep/light, temperature deviation, HR drop, restorative sleep, movements, morning alertness, full cycles, tosses and turns, average body temperature), recovery and recovery index, movement index, VO2 max, SpO2, active minutes; with CGM: glucose, metabolic score, glucose variability, average glucose, estimated HbA1c, time in target. Separate endpoints cover Home environment metrics and Blood Vision reports. Workouts are not exposed. [V, 2026-10-21] |
+| Documented sampling rates or temporal resolution | **Raw PPG recordings:** Typically 50 Hz, returned per recording as sampling_rate_hz. [V, 2026-10-21]<br>**Daily metrics and other sensors:** Not public [2026-10-21] |
+| How far back data can be retrieved | Unclear |
+| Export, API, SDK or file routes | (1) REST API at partner.ultrahuman.com (daily metrics, Home metrics, PPG recordings, blood test reports and details) with a Personal API token; another user's data needs their email and their entering the developer's code under Partner ID in the app. (2) Partner OAuth 2.0 API (scopes ring_data, cgm_data, profile). (3) Raw PPG files as pre-signed download URLs that expire after 1 hour. (4) A read-only MCP server (OAuth 2.1, per user). (5) App sync to Apple Health, Google Fit and other apps. Aggregators Terra and Open Wearables integrate Ultrahuman. No in-app CSV export was found. OAuth access-token lifetime is stated inconsistently: "valid for a week" and, in the next lines, 86400 seconds (1 day). [V, 2026-10-21] |
+| API rate limits | 200 requests per minute, documented as the 429 error for the PPG Recordings and blood report APIs; the MCP server uses a cost-weighted per-user budget returning HTTP 429 with Retry-After. No numeric limit is published for the daily metrics or OAuth endpoints. Per-request windows: 7 days for daily metrics and PPG, 365 days for blood reports. [V, 2026-10-21] |
+| Terms on retaining, storing or deleting data | Ultrahuman keeps personal data only as long as necessary or legally required, but may keep de-identified data longer for research and statistics. For API partners, the API Agreement limits storage to what is necessary for legitimate use, says all API data remains Ultrahuman's property with only limited, revocable usage rights for the partner, bars redistribution, and requires breach notice within 36 hours. Raw PPG download links expire after 1 hour. [C, 2026-10-21] |
+| Terms on using data to train AI or ML models | Ultrahuman's side: the privacy policy lists developing machine learning algorithms "with your consent", the terms of use allow user information to be used for "analysis, research, training", and Pulsomics pools opted-in raw pulse data to build models. Partner side: the API Agreement has no clause on training AI or ML models, but bars using API data for research or analysis against Ultrahuman and reverse-engineering its algorithms or metrics. [C, 2026-10-21] |
+| Announced shutdowns, deprecations or migrations, with dates | No API shutdown or migration is announced. Hardware: Ring AIR is no longer sold in the US or Puerto Rico. The USITC issued a limited exclusion order in 337-TA-1398 (Oura's '178 patent) on 21 August 2025, which took effect after Presidential review on 21 October 2025; Ring AIR cannot be imported, and retailers may sell existing stock. On 6 March 2026 CBP ruled (HQ H354023) that the redesigned Ring PRO is not subject to the order, so Ring PRO is the US product. The API Agreement promises at least 30 days' notice of significant API changes. [V, 2026-10-21] |
+
+**Compliance and regulatory**
+
+| Fact | Value |
+|---|---|
+| Whether a HIPAA Business Associate Agreement is offered | Not public [2026-10-21] |
+| Whether a data processing agreement is offered | Not public [2026-10-21] |
+| Published HIPAA statement | Privacy policy: Ultrahuman is not a HIPAA covered entity, but "strive[s] to comply" with HIPAA for US customers' health data. The site footer separately claims "ISO27001, GDPR, and HIPAA compliant." No attestation or audit is published. [C, 2026-10-21] |
+| Published GDPR statement | Claims compliance with UK and EU GDPR and names an outsourced EEA/UK Data Protection Officer (Ametros Group Ltd). Privacy policy last updated 13 September 2026. [C, 2026-10-21] |
+| ISO/IEC 27001 status and evidence | Claims ISO 27001 certification, with the certificate available on request. No certificate, number, scope or certification body is published, and no registry entry was found. [C, 2026-10-21] |
+| SOC 2 status and evidence | Not public [2026-10-21] |
+| FDA clearances, from the FDA database | Not public [2026-10-21] |
+| Where data is stored, and residency options | Stored with AWS, Snowflake and MongoDB Atlas in the United States, and may be processed in any country where Ultrahuman or its affiliates operate. No residency choice is offered. Ultrahuman Healthcare Private Limited is an Indian company, and the API Agreement is governed by Indian law with Bengaluru courts. [C, 2026-10-21] |
+
 <!-- facts:end -->
 
 ### Sensor Bio
 
 <!-- facts:begin sensor-bio -->
+*Generated from the fact record by `tools/facts/generate.py`. Edit the record, not this block.*
+
+**Research access**
+
+| Fact | Value |
+|---|---|
+| Formal research or academic program (name, what it offers) | No named academic program. Research is one of the marketed segments of the Sensor Bio B2B platform (raw data access, IRB-friendly workflows). The legacy Biostrap research page, still live under a "Biostrap is now Sensor Bio" banner, describes a Research Mode in the RPM dashboard with data access hierarchies, de-identified user IDs and de-identified downloads. [V, 2026-10-21] |
+| Who can join the research program | Aimed at IRB-approved studies, institutional deployments and population-level programs. No eligibility criteria are published. [V, 2026-10-21] |
+| How to apply, and any approval or review step | Contact sales: a form or a booked meeting on the Get Started page. A Sensor Bio contact scopes units, configuration and platform terms. No application form, review step or timeline is published. [V, 2026-10-21] |
+| Whether the program is active, paused, renamed or closed | Active under the Sensor Bio name. Biostrap (founded 2016) renamed itself Sensor Bio; Biostrap EVO and Kairos users are routed to Sensor Bio through continuity pages. Bruce Smith was named CEO in February 2026, and the CEO release refers to V2 and V3 devices. [V, 2026-10-21] |
+| Whether the general developer or API program is open to new applicants | A public REST API reference (Sensor Bio Developers API) is online, but it is not self-serve: API keys are created in the web dashboard by an organisation administrator whose account has the developer feature enabled, on request to developers@sensorbio.com. Mobile SDK keys are issued the same way and the Mobile SDK documentation is not public. OAuth2 per-user access is unclear: the API reference describes an OAuth2 Bearer token with in-browser user consent, while Sensor Bio's own MCP server README (repository last pushed 2026-02-19) says the auth server does not support the authorization_code grant for external OAuth2 apps. [V, 2026-10-21] |
+| Participant or user limits before approval or by tier | Not public [2026-10-21] |
+| How academic access differs from commercial or consumer access | Not public [2026-10-21] |
+
+**Pricing**
+
+| Fact | Value |
+|---|---|
+| Device or hardware list price | Not public [2026-10-21] |
+| Consumer subscription or membership price | Not public [2026-10-21] |
+| Research or academic pricing or discount | Not public [2026-10-21] |
+| Fees for API, SDK, platform or data access | Not public [2026-10-21] |
+| Minimum order, term or commitment | Not public [2026-10-21] |
+| Whether pricing requires contacting sales | Yes. V2 is sold only through partnership; units, configuration and platform terms are scoped with a Sensor Bio contact. No list prices. [V, 2026-10-21] |
+
+**Data access and terms**
+
+| Fact | Value |
+|---|---|
+| Raw signals available to researchers, and by which route | **Sensor Bio V2:** Three sensors: multi-wavelength PPG (green, red, infrared), a three-axis accelerometer and skin temperature. No gyroscope is listed. Raw PPG, inter-beat intervals and accelerometer export at up to 100 Hz through the RPM dashboard; the SDK live stream carries raw PPG, IBI, HR, HRV, respiratory rate, SNR and motion during active recording sessions. The REST API raw-download endpoint does not support V2 ("planned for a future release"). [V, 2026-10-21]<br>**Sensor Bio V2, who can get raw export:** Sensor Bio's pages disagree on whether raw export is tier-gated. The V2 specification page says raw export is "gated to enterprise-tier accounts". The Sensor Bio V2 vs Polar 360 comparison page says raw waveform export is "the default data product for every partner, not a gated upsell", and, in the same SDK paragraph where the specification page has its enterprise-tier sentence, says "No separate license. No gated tier." (conflict) [U, 2026-10-21]<br>**Biostrap EVO (legacy):** Raw PPG, accelerometer and gyroscope through the RPM dashboard and through the deprecated asynchronous REST raw-download endpoint (zipped archive, emailed link valid 5 hours, at most 10 users and 1 week per request), which still works only for EVO devices. [V, 2026-10-21] |
+| Derived or processed metrics available to researchers | **Sensor Bio V2:** Heart rate, HRV (rMSSD, HRV-CV, LF/HF; SDNN and SD1/SD2 on spot checks), respiratory rate, skin temperature deviation, steps, calories, activity score, recovery score, sleep stages (REM, deep, light, awake) and sleep, circadian score and sleep debt, workouts, stress index and ANS balance. Available through the SDK, the REST API and the RPM dashboard. HRV and respiratory rate need at least 50 Hz PPG sampling. SpO2 on V2 is announced but not live. [V, 2026-10-21] |
+| Documented sampling rates or temporal resolution | **Sensor Bio V2:** The V2 specification: PPG sampling 50 Hz by default, configurable to 25 or 100 Hz per organization, with up to 100 Hz raw export and a configurable duty cycle; HR at 1-second resolution during active captures and 1-minute averages otherwise; HRV sampled every 2 minutes overnight. Sensor Bio's May 2026 AHA press release says the platform "captures raw physiological signals at 15,000 samples per second". The press wording names no channel, sensor or aggregate, so it cannot be read as a different measure from the text; the two vendor statements conflict as written. (conflict) [U, 2026-10-21] |
+| How far back data can be retrieved | **Sensor Bio V2:** Cloud history is retained per deployment as configured with the partner; API queries cannot go back before the user's account creation. Per-request windows: raw export 1 to 7 days and computed metrics 1 to 30 days in the dashboard; at most 6 hours per API timeseries call. The band buffers about 14 days at default sampling, overwriting the oldest data. [V, 2026-10-21] |
+| Export, API, SDK or file routes | RPM web dashboard export (CSV or JSON, up to 2 GB per file; raw 1 to 7 day windows, computed 1 to 30 day windows); REST API with an Organization API Key (server-to-server) or a per-user OAuth2 token (availability unclear); a mobile SDK (interface v0.17.0) with BLE live stream; participant self-download of account data. Terra added a Sensor Bio integration in July 2026 and marked its Biostrap integration deprecated. [V, 2026-10-21] |
+| API rate limits | Not public [2026-10-21] |
+| Terms on retaining, storing or deleting data | For partners, retention is configured per deployment. For account holders, deletion removes most data within 30 days and all data, including backups, within up to 90 days. No published research-data retention terms. [V, 2026-10-21] |
+| Terms on using data to train AI or ML models | Not public [2026-10-21] |
+| Announced shutdowns, deprecations or migrations, with dates | API: the continuous-mode biometrics timeseries and normalized activity timeseries endpoints were to be discontinued on 30 September 2026; the raw-download endpoint is deprecated and works only for legacy EVO devices (V1/V2 support "planned for a future release"); several other EVO-only endpoints are deprecated. The old api.getsensr.io and auth.getsensr.io hostnames were to stop working after 30 September 2026 (read 2026-10-11; that text has since been removed). Brand: Biostrap renamed Sensor Bio, with EVO and Kairos continuity pages; Terra marked its Biostrap integration deprecated in July 2026. [V, 2026-10-21] |
+
+**Compliance and regulatory**
+
+| Fact | Value |
+|---|---|
+| Whether a HIPAA Business Associate Agreement is offered | Not public [2026-10-21] |
+| Whether a data processing agreement is offered | Not public [2026-10-21] |
+| Published HIPAA statement | **Legacy Biostrap pages (biostrap.com):** HIPAA-compliant research and RPM platform, claimed only on the legacy biostrap.com pages. The current sensorbio.com site, privacy policy and terms make no HIPAA statement. [R, 2026-10-21] |
+| Published GDPR statement | The privacy policy (effective 24 April 2025) asks GDPR-covered users for explicit consent to process health data, lists legal bases and names a Data Protection Officer at support@sensorbio.com. For EU-US transfers it still relies on consent and the EU-US and Swiss-US Privacy Shield, a framework the EU Court of Justice invalidated in July 2020. [C, 2026-10-21] |
+| ISO/IEC 27001 status and evidence | Not public [2026-10-21] |
+| SOC 2 status and evidence | Not public [2026-10-21] |
+| FDA clearances, from the FDA database | Not public [2026-10-21] |
+| Where data is stored, and residency options | Sensor Bio cloud platform hosted on AWS; data is transferred to the United States and other countries. No region or residency option is published. [V, 2026-10-21] |
+
 <!-- facts:end -->
 
 ### Verily
 
 <!-- facts:begin verily -->
+*Generated from the fact record by `tools/facts/generate.py`. Edit the record, not this block.*
+
+**Research access**
+
+| Fact | Value |
+|---|---|
+| Formal research or academic program (name, what it offers) | Verily no longer markets a Study Watch research program. What it offers researchers now is Verily Pre (Exchange data catalogue plus Workbench trusted research environment), with a free self-serve Standard tier for individual researchers, and, for study sponsors, Viewpoint Evidence, which since March 2026 bundles Samsung Galaxy Watch 8 sensor data with Verily's registry cohorts. [V, 2026-10-22] |
+| Who can join the research program | **Verily Pre Workbench and Viewpoint Evidence:** Workbench individual accounts are open to anyone with a Google identity; organisation users join through an enterprise contract. Viewpoint Evidence targets life sciences and government sponsors. [V, 2026-10-22] |
+| How to apply, and any approval or review step | Workbench Standard is self-serve sign-up, then a Data Use Agreement per data collection (including the Project Baseline Health Study Limited collection). Professional tier and Viewpoint go through Verily contact forms. Fuller Project Baseline (Study Watch) data for reproducibility is by request, subject to PBHS governance approval. [V, 2026-10-22] |
+| Whether the program is active, paused, renamed or closed | **Verily Pre Workbench Standard tier:** Workbench Standard Researcher tier is live but labelled beta. [V, 2026-10-22]<br>**Verily Study Watch:** Study Watch appears discontinued but Verily has not said so on its own public pages. Press quoting an August 2025 internal memo and a spokesperson reports that Verily fully wound down its devices program, including "Study Devices", stopped manufacturing medical devices and will no longer support them, and every Study Watch product page is gone. Yet the Security and Trust page still lists "Study Watch & Hub" in its SOC 2 and ISO 27001 scope, and a third party, Quipment Inc. (Kennesaw, GA), registered as a repack or relabel establishment, added an FDA device listing for Study Watch (K182456) on 2026-05-12. (conflict) [R, 2026-10-22] |
+| Whether the general developer or API program is open to new applicants | There is no public Study Watch API or SDK. The general researcher route, Workbench, is open to self-serve sign-up and documents a CLI (wb) and Terraform provider. [V, 2026-10-22] |
+| Participant or user limits before approval or by tier | **Verily Pre Workbench:** Standard (free) tier is capped at 5 workspaces and 5 collaborators per workspace; Professional (paid) is unlimited. No participant caps published for Viewpoint. [V, 2026-10-22] |
+| How academic access differs from commercial or consumer access | Access differs by tier (individual Standard or Professional vs contracted Enterprise), not by academic vs commercial status. No academic-specific terms are published. [V, 2026-10-22] |
+
+**Pricing**
+
+| Fact | Value |
+|---|---|
+| Device or hardware list price | Study Watch was an investigational device for research participants and not available to consumers; no list price was found. Galaxy Watch pricing in the Samsung bundle is not published by Verily. [C, 2026-10-22] |
+| Consumer subscription or membership price | n/a |
+| Research or academic pricing or discount | Not public [2026-10-22] |
+| Fees for API, SDK, platform or data access | **Verily Pre Workbench:** Workbench Standard is free; Professional is paid with no published price; cloud compute is billed to the researcher's own account on both tiers. [V, 2026-10-22] |
+| Minimum order, term or commitment | Not public [2026-10-22] |
+| Whether pricing requires contacting sales | Yes for everything paid. Professional upgrade is through a contact form; Viewpoint and Pre are "Request a demo". [V, 2026-10-22] |
+
+**Data access and terms**
+
+| Fact | Value |
+|---|---|
+| Raw signals available to researchers, and by which route | **Verily Study Watch (historical data):** Study Watch recorded PPG and accelerometry at 30 Hz, ECG, heart rate and electrodermal activity, plus environmental sensors, and was reported at launch to hold up to a week of raw data on the device. Researchers outside Verily get its data only as de-identified Project Baseline data on approved request. [C, 2026-10-22]<br>**Viewpoint Evidence with Samsung Galaxy Watch:** Verily's chief product officer told MedCity News the Galaxy Watch bundle gives researchers raw device signals, such as PPG and accelerometer and gyroscope motion data. Verily's own press release says only that it will "fully integrate sensor data" and lists no streams, rates or raw-signal terms. [R, 2026-10-22] |
+| Derived or processed metrics available to researchers | **Verily Study Watch:** Study Watch produced proprietary derived metrics including PPG inter-beat intervals with a per-beat quality flag, and an ambulatory-status classifier (10-second windows and total daily ambulatory time). [C, 2026-10-22] |
+| Documented sampling rates or temporal resolution | **Verily Study Watch:** PPG 30 Hz and accelerometer 30 Hz (Study Watch, per a Verily-co-authored PBHS paper). No rates published for the Galaxy Watch integration. [C, 2026-10-22] |
+| How far back data can be retrieved | Unclear |
+| Export, API, SDK or file routes | No device-level export route. Data reach researchers through Verily Pre (Exchange data collections analysed inside Workbench under a DUA), through PBHS data requests, or as a Viewpoint sponsor. Workbench Standard users cannot bring their own data. [V, 2026-10-22] |
+| API rate limits | Not public [2026-10-22] |
+| Terms on retaining, storing or deleting data | The general privacy policy keeps personal information as long as necessary for the collection purpose (it excludes HIPAA-covered and research-study data handled for sponsors). Workbench release notes say Verily may delete trial accounts' data when the licence expires. [V, 2026-10-22] |
+| Terms on using data to train AI or ML models | Unclear |
+| Announced shutdowns, deprecations or migrations, with dates | Verily fully wound down its medical device program and stopped manufacturing and supporting devices (internal memo of August 2025, reported by press). Its other devices are marked "Not in Commercial Distribution" in GUDID (retinal cameras ended 2026-04-27; Onduo December 2025). Study Watch has no GUDID record and its product pages are gone. Platform renames since then include Data Discovery becoming Data Exchange (30 Sep 2025) and Workbench moving into Verily Pre (11 Nov 2025). [C, 2026-10-22] |
+
+**Compliance and regulatory**
+
+| Fact | Value |
+|---|---|
+| Whether a HIPAA Business Associate Agreement is offered | Verily says it acts as a business associate when subject to HIPAA for research sponsors; no standalone BAA offer page. [C, 2026-10-22] |
+| Whether a data processing agreement is offered | Unclear |
+| Published HIPAA statement | Verily claims independent HIPAA Security and Privacy Rule audits for Lightpath, Retinal Service, Site CTMS and Onduo. Study Watch, Workbench and Viewpoint are not in that list. [C, 2026-10-22] |
+| Published GDPR statement | Privacy policy (Verily Health Inc., effective 2026-04-14) covers EU, UK and Swiss data, states participation in the EU-U.S. Data Privacy Framework and its UK and Swiss extensions, and uses standard contractual clauses for transfers. [C, 2026-10-22]<br>**Data Privacy Framework certification:** Two Verily entities, both in Dallas, TX, are listed Active on the Commerce Department's Data Privacy Framework registry under the EU-U.S. DPF, the Swiss-U.S. DPF and the UK Extension (HR and non-HR data for EU and UK, non-HR for Swiss). Verily Health Inc. (OrganizationId 10091, the entity named in the current privacy policy): certified 2026-04-20, next certification due 2027-04-20, no inactive periods. Verily Life Sciences, LLC (OrganizationId 7768): EU-U.S. and Swiss-U.S. since 2018-02-02, UK Extension since 2025-01-13, next certification due 2027-03-12, with lapses 2024-02-12 to 2025-01-13 and 2025-02-18 to 2025-03-17. Verification method for both: self-assessment. [V, 2026-10-22] |
+| ISO/IEC 27001 status and evidence | Verily claims ISO/IEC 27001 certification covering Lightpath, Onduo, Research Sponsor (Project Baseline), Site CTMS, Retinal Service, Study Watch & Hub, and Workbench. Certificate not published (the page shows a Coalfire certification seal); reports may need an NDA. [C, 2026-10-22] |
+| SOC 2 status and evidence | Verily claims a SOC 2 Type II audit for the same product list (including Study Watch & Hub and Workbench). Report available only on request, possibly under NDA. [C, 2026-10-22] |
+| FDA clearances, from the FDA database | Three 510(k) clearances, product code DXH, all to Verily Life Sciences, LLC: K182456 Study Watch (single-lead ECG), decided 2019-01-17; K192415 Study Watch with Irregular Pulse Monitor, 2020-01-17; K213357 Study Watch with Irregular Pulse Monitor (Home), 2022-07-19. No GUDID record exists for Study Watch. The only registration listing openFDA returns for any of the three is K182456 by Quipment Inc., a repack or relabel establishment (created 2026-05-12); none is listed under Verily. [V, 2026-10-22] |
+| Where data is stored, and residency options | General privacy policy says data may be stored outside the user's country, including in the United States. Workbench lets data owners apply region policies on GCP- and AWS-backed collections. [V, 2026-10-22] |
+
 <!-- facts:end -->
 
 ### RingConn
 
 <!-- facts:begin ringconn -->
+*Generated from the fact record by `tools/facts/generate.py`. Edit the record, not this block.*
+
+**Research access**
+
+| Fact | Value |
+|---|---|
+| Formal research or academic program (name, what it offers) | Not public [2026-10-21] |
+| Who can join the research program | n/a |
+| How to apply, and any approval or review step | No application process. Institutional or business proposals go by email to business@ringconn.com; dealer and bulk-purchase enquiries go to sales@ringconn.com. RingConn says contacting it does not guarantee a partnership and that an enquiry does not establish that an unlisted capability (such as data access) can be supplied. [V, 2026-10-21] |
+| Whether the program is active, paused, renamed or closed | No program has been launched, paused or closed. A published invitation for educational, government and institutional partnerships (including data analytics) was on the business article until at least 2025-11-25 and is absent from the version rewritten on 2026-10-17. The live page now offers only a business enquiry address and promises no partnership eligibility. [C, 2026-10-21] |
+| Whether the general developer or API program is open to new applicants | Not public [2026-10-21] |
+| Participant or user limits before approval or by tier | n/a |
+| How academic access differs from commercial or consumer access | Not public [2026-10-21] |
+
+**Pricing**
+
+| Fact | Value |
+|---|---|
+| Device or hardware list price | **RingConn Gen 3 (US store):** $349 [V, 2026-10-21]<br>**RingConn Gen 2 (US store):** $299 [V, 2026-10-21]<br>**RingConn Gen 2 Air (US store):** $199 [V, 2026-10-21] |
+| Consumer subscription or membership price | No subscription is required for any current ring (Gen 3, Gen 2, Gen 2 Air). The US App Store lists optional in-app purchases, "RingConn Partner+" at $5.99 monthly or $69.99 annually; no RingConn page found says what they unlock. [V, 2026-10-21] |
+| Research or academic pricing or discount | No research or institutional pricing is published. Consumer student discount of 10% on a Gen 2 order, verified through ID.me. Customised offers or discounts for bulk purchases on request. [V, 2026-10-21] |
+| Fees for API, SDK, platform or data access | n/a |
+| Minimum order, term or commitment | Not public [2026-10-21] |
+| Whether pricing requires contacting sales | Single-unit retail prices are public. Bulk and dealer pricing is not published; it is a customised offer through sales@ringconn.com. [V, 2026-10-21] |
+
+**Data access and terms**
+
+| Fact | Value |
+|---|---|
+| Raw signals available to researchers, and by which route | **Consumer and public routes:** Not public [2026-10-21]<br>**Company research collaboration:** One documented case, not a general offering: a 2026 method-comparison study in shooting athletes (preprint 2026-06-11; version of record in BMC Sports Science, Medicine and Rehabilitation, 2026-08-18, DOI 10.1186/s13102-026-01960-x) used raw finger PPG from a RingConn Gen 2 at 100 Hz (green channel only; the ring has green, red and infrared sensors) to derive inter-beat intervals. The firmware and app build were customised for research data export. Three authors are Shenzhen Ninenovo and/or RingConn LLC staff, and the companies supplied the equipment and technical support. [R, 2026-10-21] |
+| Derived or processed metrics available to researchers | Via Health Connect (Android): resting energy, steps, exercise calories; time in bed, awake duration, sleep stages; resting and average heart rate; height; weight; oxygen saturation. HRV is not synced to Health Connect ("algorithm compatibility issue"). Apple Health sync is confirmed on RingConn pages but the HealthKit types are not listed. Blood Pressure Trends (Beta) results are never shared with any third-party health platform. In-app only: sleep, stress and recovery scores, respiratory rate, skin temperature trends and other proprietary metrics. [V, 2026-10-21] |
+| Documented sampling rates or temporal resolution | Unclear |
+| How far back data can be retrieved | **RingConn Gen 3:** On the ring: up to 10 days of unsynced data. In the account: synced history stays with the RingConn account, with no published cap; no API exists to retrieve it. [V, 2026-10-21]<br>**RingConn Gen 2 and Gen 2 Air:** On the ring: 5 to 7 days of unsynced data per each product page's specifications; the compare tables give the upper figure, 7 days. In the account: as for Gen 3. [V, 2026-10-21] |
+| Export, API, SDK or file routes | Participant-side only. Apple Health (iOS) and Android Health Connect (Android 9 or later), both user-authorised per data type; Google Fit sync ended 2025-10-01. Portability on request (structured, machine-readable) through account settings, the in-app feedback feature or data_protect@ringconn.com. An in-app CSV export was reported in a December 2023 app update. No API, SDK, web dashboard, bulk researcher export or direct Strava sync. [C, 2026-10-21] |
+| API rate limits | n/a |
+| Terms on retaining, storing or deleting data | Personal data kept only as long as necessary for the policy purposes or as required by law; data in backups that cannot be deleted at once is isolated until deletion is possible; anonymised data may be used indefinitely. Blood Pressure Trends (Beta): raw PPG, accelerometer and skin temperature data cannot be physically deleted per user during the beta (processing stops and the data is isolated on request), and are irreversibly anonymised within 90 days after the beta ends. [V, 2026-10-21] |
+| Terms on using data to train AI or ML models | **App privacy policy (all users); the training restriction is specific to Blood Pressure Trends (Beta):** Only the Blood Pressure Trends (Beta) section addresses training: that data (questionnaires, tags, entered BP values and ring PPG, accelerometer and temperature signals) is used for algorithm optimisation and only for RingConn's own models, not for other health products or any third party's training. The general policy allows use of data to improve products, indefinite use of anonymised data, and sharing of aggregated non-personal data, with no explicit AI-training clause. [V, 2026-10-21] |
+| Announced shutdowns, deprecations or migrations, with dates | Google Fit sync ended 2025-10-01 23:00 UTC, replaced by Android Health Connect (HRV not yet synced there). Separately, after Oura's 2025 US ITC patent case, Oura granted RingConn a multi-year, royalty-bearing licence (announced October 2025) so US sales and the companion app continue; RingConn says US devices, app access, updates, warranty and support continue uninterrupted. [V, 2026-10-21] |
+
+**Compliance and regulatory**
+
+| Fact | Value |
+|---|---|
+| Whether a HIPAA Business Associate Agreement is offered | Not public [2026-10-21] |
+| Whether a data processing agreement is offered | Not public [2026-10-21] |
+| Published HIPAA statement | Not public [2026-10-21] |
+| Published GDPR statement | RingConn states it complies with GDPR and CCPA; health and other special-category data is processed only with explicit consent; cross-border transfers use EU Standard Contractual Clauses (and, per the store policy, the UK IDTA). DPO contact data_protect@ringconn.com. [C, 2026-10-21] |
+| ISO/IEC 27001 status and evidence | Not public [2026-10-21] |
+| SOC 2 status and evidence | Not public [2026-10-21] |
+| FDA clearances, from the FDA database | 510(k) K260490, "Ninenovo Blood Oxygen Ring" (models BORMB-01-6 to BORMB-01-14), applicant Shenzhen Ninenovo Technology Limited (RingConn's maker), product code DQA (oximeter, 21 CFR 870.2700, class II), received 2026-02-13, decision Substantially Equivalent 2026-10-02. No source links the cleared BORMB-01 models to a consumer RingConn model, and the Gen 3 product page still says "This product is not a medical device." No clearance for sleep apnea or blood pressure features was found. [V, 2026-10-21] |
+| Where data is stored, and residency options | Mainland China users: stored on servers in the PRC. Users outside mainland China: stored on servers outside the PRC, possibly in a different jurisdiction from where the data was collected ("RingConn Cloud infrastructure deployed for global operations"), with SCCs for transfers. For all users, app crash and error monitoring (self-hosted Sentry, no health data) and customer-service system data are processed in mainland China. No region choice is offered. RingConn no longer claims universal UK storage. [V, 2026-10-21] |
+
 <!-- facts:end -->
 
 ### Circular
 
 <!-- facts:begin circular -->
+*Generated from the fact record by `tools/facts/generate.py`. Edit the record, not this block.*
+
+**Research access**
+
+| Fact | Value |
+|---|---|
+| Formal research or academic program (name, what it offers) | No named program. The science page invites research partners to "bring us a protocol"; Circular supplies devices, raw signal access under agreement and engineering time for studies run against a reference standard. [V, 2026-10-22] |
+| Who can join the research program | Clinical, academic and enterprise partners; no further criteria published beyond studies that use a reference standard. [V, 2026-10-22] |
+| How to apply, and any approval or review step | Contact the research team through the science page (typical reply within five working days); no application form, review criteria or timeline published. API access for business customers is by contact and limited to selected projects. [V, 2026-10-22] |
+| Whether the program is active, paused, renamed or closed | Unclear |
+| Whether the general developer or API program is open to new applicants | No public developer program or API documentation. An API and SDK are offered to business customers on the Professional track, by contact, and access is limited to selected projects. [V, 2026-10-22] |
+| Participant or user limits before approval or by tier | Not public [2026-10-22] |
+| How academic access differs from commercial or consumer access | No separate academic track. Research partnerships are offered on the same terms to clinical, academic and enterprise partners; business buyers choose between a no-code team dashboard track and a Professional API/SDK track. [R, 2026-10-22] |
+
+**Pricing**
+
+| Fact | Value |
+|---|---|
+| Device or hardware list price | Circular Ring 2 lists at $349 (US, Obsidian Black) on the store product page, but the shop page's hero and HSA/FSA copy both call it a $299 ring. Circular Ring 3 price not yet announced (pre-orders December 2026). (conflict) [U, 2026-10-22] |
+| Consumer subscription or membership price | No subscription required. Optional premium "Circles" are unlocked month by month with in-app coins, 12,000 to 16,000 coins a month, at about 4,000 coins per euro (roughly 3 to 4 euros a month); coins can also be earned by wearing the ring. [V, 2026-10-22] |
+| Research or academic pricing or discount | Not public [2026-10-22] |
+| Fees for API, SDK, platform or data access | Team dashboard (multi-account web dashboard with CSV export) is free; API and SDK fees are not published and go through a quote. [V, 2026-10-22] |
+| Minimum order, term or commitment | Business orders start at 25 rings. [V, 2026-10-22] |
+| Whether pricing requires contacting sales | Yes for business and research use. Both business tracks are priced by quote (volume discount on every ring); consumer rings are list-priced. [V, 2026-10-22] |
+
+**Data access and terms**
+
+| Fact | Value |
+|---|---|
+| Raw signals available to researchers, and by which route | Raw signal (PPG green/red/IR, single-lead ECG, skin temperature, 3-axis accelerometer) only through a research partnership, under agreement. No public route to raw signal; the app's Apple Health and Health Connect sync carries processed intraday values, not waveforms. [C, 2026-10-22] |
+| Derived or processed metrics available to researchers | Through the team dashboard, CSV export of any metric with daily and historical detail per wearer. Through the phone, intraday values (temperature, SpO2, breathing rate and others), HRV and sport sessions sync to Apple Health and Health Connect. ECG and blood pressure reports export as PDF. [V, 2026-10-22] |
+| Documented sampling rates or temporal resolution | **Circular Ring 2:** Ring 2 sensor rates per the science page; PPG (green, red, infrared) 25 Hz, single-lead ECG 510 Hz (40 s recordings), skin temperature 1 Hz at 0.01 °C resolution, 3-axis accelerometer 25 Hz. Resolution of exported metrics is not documented. [V, 2026-10-22] |
+| How far back data can be retrieved | The team dashboard shows each wearer's full record, from last night back to the start; no API history limit is published. [R, 2026-10-22] |
+| Export, API, SDK or file routes | (1) Team dashboard at dashboard.circular.care with CSV export, free for business customers; (2) API and SDK for selected projects by contact; (3) app sync to Apple Health and Health Connect (Google Fit retired February 2025); (4) PDF reports for ECG and blood pressure; (5) in-app export or deletion of a user's data; (6) raw signal under a research agreement. [V, 2026-10-22] |
+| API rate limits | Not public [2026-10-22] |
+| Terms on retaining, storing or deleting data | Personal data kept as long as needed for the stated purposes or as required by law, then deleted or kept only in anonymised form; the terms of use add that data held for contractual and regulatory obligations is deleted no later than ten years on, unless litigation arises. No API-side retention terms published. [V, 2026-10-22] |
+| Terms on using data to train AI or ML models | With the user's explicit consent, Circular uses users' data to improve its machine learning models. No terms on research partners or API customers training models on Circular data are published. [V, 2026-10-22] |
+| Announced shutdowns, deprecations or migrations, with dates | Circular Ring 1 Pro and Slim deprecated in ring firmware 1.1.142 (listed in early 2025); Google Fit replaced by Health Connect (app 25.0.0, 14 February 2025). Circular SAS converted to liquidation 14 October 2025, with operations moved to Circular Health Limited. Circular Ring 3 Pro and Slim announced, pre-orders December 2026. [C, 2026-10-22] |
+
+**Compliance and regulatory**
+
+| Fact | Value |
+|---|---|
+| Whether a HIPAA Business Associate Agreement is offered | Not public [2026-10-22] |
+| Whether a data processing agreement is offered | Not public [2026-10-22] |
+| Published HIPAA statement | The privacy policy says ring data is health information that may be subject to HIPAA; there is no claim of HIPAA compliance and no BAA. [C, 2026-10-22] |
+| Published GDPR statement | Circular states it is the GDPR data controller; the policy lists EU data subject rights (access, erasure, portability and others) and says data may be transferred to the US and UK with safeguards. [C, 2026-10-22] |
+| ISO/IEC 27001 status and evidence | Unclear |
+| SOC 2 status and evidence | Not public [2026-10-22] |
+| FDA clearances, from the FDA database | Not public [2026-10-22] |
+| Where data is stored, and residency options | Data stored with Amazon Web Services in the Paris region (France); may be transferred to the US and UK. The terms add that personal data of visitors from the US is retained in the US. No residency choice offered. [V, 2026-10-22] |
+
 <!-- facts:end -->
 
 ### Zepp Health (Amazfit)
 
 <!-- facts:begin zepp-amazfit -->
+*Generated from the fact record by `tools/facts/generate.py`. Edit the record, not this block.*
+
+**Research access**
+
+| Fact | Value |
+|---|---|
+| Formal research or academic program (name, what it offers) | No named, open research or academic access program. Zepp describes bespoke research collaborations (Stanford sleep study, UCSD Center for Wearable Sensors membership, NTNU on PAI, Peking University First Hospital AF study, Chinese universities) and a "data analytics services" offer aimed at researchers, providers, insurers and employers, with partnerships at 20 research labs, hospitals, pharma companies and universities as of end 2020. The only documented data route for third parties is the legacy Huami/Zepp Open Platform "data cooperation" OAuth Web API (see developer_program_status). [C, 2026-10-22] |
+| Who can join the research program | No eligibility rules for a research program are published. For the legacy Open Platform data API: corporate applicants only, not individuals; a PhD researcher must apply in the name of the institution. [C, 2026-10-22] |
+| How to apply, and any approval or review step | Research and developer enquiries go to developer@zepp.com (contact page). Legacy data API: register and apply on the Zepp Open Platform (dev.huami.com), 3 to 7 day review, then submit the cooperation details (country, platform, business, user numbers, needs); escalation to datapartner@huami.com. A December 2021 applicant quotes the Open Platform's own application docs (item 4) as saying a Zepp business representative will make contact and sign an agreement, and reports that Zepp then replied that the API must be paid for and equipment bought. [C, 2026-10-22] |
+| Whether the program is active, paused, renamed or closed | Unclear |
+| Whether the general developer or API program is open to new applicants | Two programs. (1) Zepp OS developer program, open: free SDK, Zeus CLI, simulator and Zepp Console for watch Mini Programs and watch faces, published through a store review. (2) Legacy Huami/Zepp Open Platform OAuth 2.0 Web API (api-open.huami.com) for cloud data, by application and review for corporate partners; subscriptions (webhooks) for invited partners only; docs last updated 2020; open-to-new-applicants status unclear. [C, 2026-10-22] |
+| Participant or user limits before approval or by tier | Not public [2026-10-22] |
+| How academic access differs from commercial or consumer access | No separate academic track. The legacy data API treats academics as institutional (corporate) applicants; individuals cannot apply. Commercial data-analytics customers (insurers, employers, wellness programs) are served by contract. [C, 2026-10-22] |
+
+**Pricing**
+
+| Fact | Value |
+|---|---|
+| Device or hardware list price | US store list prices on 2026-10-22, examples: Active 2 (Round) from $99.99; Helio Strap (screenless band) $99.99; Balance 3 $369.99 to $449.99. Range in the store runs from about $50 (earbuds) to $649.99 (T-Rex Dual Solar). [V, 2026-10-22] |
+| Consumer subscription or membership price | Core features need no subscription. Optional Zepp Aura Premium (AI sleep and wellness coaching) and fitness membership are sold in the app; the US App Store lists in-app plans including a $9.99 monthly plan and yearly plans from $29.99 to $49.99, without naming which product each belongs to. [C, 2026-10-22] |
+| Research or academic pricing or discount | Not public [2026-10-22] |
+| Fees for API, SDK, platform or data access | Unclear |
+| Minimum order, term or commitment | Not public [2026-10-22] |
+| Whether pricing requires contacting sales | Devices are sold at public list prices. Data partnership and data-analytics terms are by agreement after contact with Zepp (no public price list). [C, 2026-10-22] |
+
+**Data access and terms**
+
+| Fact | Value |
+|---|---|
+| Raw signals available to researchers, and by which route | **Zepp OS on-watch apps:** A custom Zepp OS Mini Program can read accelerometer (x, y, z in cm/s^2), gyroscope (deg/s), barometer, compass and GPS on the watch, each behind a permission; heart rate is exposed as computed BPM values, and no raw PPG or ECG waveform API is documented. [V, 2026-10-22]<br>**Legacy Open Platform Web API:** The legacy Web API documents raw ECG (250 samples per second, from ECG-capable devices), per-minute raw motion data, and user-tagged sensor files (example shows a PPG CSV). Whether these endpoints still serve current devices is not stated. [R, 2026-10-22] |
+| Derived or processed metrics available to researchers | On watch (Zepp OS): heart rate, resting HR, daily HR summary, AFib records, SpO2, stress, sleep (score, stages, times), steps, calories, distance, PAI, stand, fat burning, body temperature, workouts. Legacy Web API scopes: profile, activity (steps, distance, calories), sleep, heart rate, motion, sport summary and detail, PAI. Integrators (Terra, Thryve) expose activity, daily and sleep data. [V, 2026-10-22] |
+| Documented sampling rates or temporal resolution | Zepp OS: heart-rate history is per minute (up to 1,440 values for the current day); accelerometer and gyroscope offer low, normal and high trigger-frequency modes with no Hz figures published. Legacy Web API: ECG at 250 samples per second; motion per minute; activity daily or hourly (hourly marked as becoming obsolete). [C, 2026-10-22] |
+| How far back data can be retrieved | Unclear |
+| Export, API, SDK or file routes | (1) Zepp OS Mini Program reading sensors on the watch, with a phone-side companion service that can send data to a server by HTTP fetch; (2) legacy Open Platform OAuth 2.0 Web API (partners); (3) third-party aggregators (Terra, which holds its own Zepp API credentials and polls every 5 to 10 minutes; Thryve); (4) one-way write from the Zepp app to Android Health Connect (26 data types since January 2025), plus Apple Health, Google Fit and Strava linking; (5) participant self-export of personal data from the app (Profile, Settings, Exercising user rights). [C, 2026-10-22] |
+| API rate limits | Not public [2026-10-22] |
+| Terms on retaining, storing or deleting data | Users can clear data, delete the account with all data, revoke consent, and request deletion through the app or the privacy-support page. No retention terms for third-party data partners are published. [C, 2026-10-22] |
+| Terms on using data to train AI or ML models | Unclear |
+| Announced shutdowns, deprecations or migrations, with dates | Unclear |
+
+**Compliance and regulatory**
+
+| Fact | Value |
+|---|---|
+| Whether a HIPAA Business Associate Agreement is offered | Not public [2026-10-22] |
+| Whether a data processing agreement is offered | Not public [2026-10-22] |
+| Published HIPAA statement | Not public [2026-10-22] |
+| Published GDPR statement | Zepp says its privacy protection is designed following GDPR and CCPA, and a company blog calls Amazfit fully GDPR compliant. EEA transfers use standard contractual clauses per the app privacy policy (check by hand). [C, 2026-10-22] |
+| ISO/IEC 27001 status and evidence | Unclear |
+| SOC 2 status and evidence | Not public [2026-10-22] |
+| FDA clearances, from the FDA database | No 510(k) or PMA found under Huami, Zepp or Amazfit in openFDA. FDA establishment registration (Anhui Huami Information Technology, owner/operator 10083608) lists the Amazfit Balance A2287 under product code PUH (body composition analyzer, class II, 510(k) exempt, listed 2023-08-08) and Zepp Clarity ONE, Omni and Pixie hearing aids under QUG (OTC air-conduction hearing aid with wireless technology, class II, exempt, listed 2023-04-04). Neither listing is a clearance. No clearance was found for any Amazfit watch feature (ECG, AFib, SpO2, blood pressure). [V, 2026-10-22] |
+| Where data is stored, and residency options | Cloud data is held on AWS according to the company. Region detail (US and Canadian users in US data centres, EEA users in Germany, mainland China users in China; 20-F says AWS for North America and most of Europe, Tencent Cloud elsewhere) comes from documents the project fetcher cannot read; check by hand. Some devices (T-Rex 3) can keep GPS data on the watch only. [C, 2026-10-22] |
+
 <!-- facts:end -->
 
 ## Sources

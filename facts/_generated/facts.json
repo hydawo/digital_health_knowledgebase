@@ -15968,15 +15968,45 @@
   "name": "Purple Robot (Northwestern CBITS)",
   "kind": "platform",
   "field": "research_program",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No research access program. Purple Robot is open-source Android software that Northwestern CBITS built as infrastructure for its own intervention and sensing studies. Outside teams build the APK from source and run their own upload server. No program, service or support offer is published by CBITS or by Audacious Software, the developer's company.",
+  "confidence": "Corroborated",
+  "recheck_by": "2026-11-21",
+  "note": "The current CBITS site (home, research projects, completed projects) does not name Purple Robot; personal sensing appears only under completed projects. The old project host tech.cbits.northwestern.edu did not resolve on 2026-10-22. phidatalab.org is the King's College London Precision Health Informatics Data Lab (NIHR Maudsley BRC), not a CBITS successor. Its former page phidatalab.org/software__trashed/purple-robot-android-apps/ (Wayback capture 2021-02-25) listed only the lab's own Purple Robot configuration for a \"Passive Sleep Monitor\" (KHP-Informatics/slam_sleep_test), and its site search for \"purple robot\" now returns nothing.",
+  "sources": [
+   {
+    "url": "https://github.com/cbitstech/Purple-Robot",
+    "type": "repository",
+    "quote": "The app was created by the Center for Behavioral Intervention Technologies at Northwestern University as an infrastructural component for a variety of behavioral and medical intervention applications.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/cbitstech/Purple-Robot",
+    "type": "repository",
+    "quote": "The instructions below describe how to create an APK Android package for your own testing and development.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4526997/",
+    "type": "paper",
+    "quote": "Purple Robot is an open-source Android app that we developed to collect mobile phone sensor data",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://cbits.northwestern.edu/our-research/our-research-projects/completed-projects.html",
+    "type": "vendor_page",
+    "quote": "The personal sensing research at the Center for Behavioral Intervention Technologies harnesses sensor data collected from mobile phones and other devices to identify behaviors and states related to mental health.",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "purple-robot",
   "name": "Purple Robot (Northwestern CBITS)",
   "kind": "platform",
   "field": "program_eligibility",
-  "status": "unresearched",
+  "status": "not_applicable",
+  "note": "No program. The GPL v3 licence lets anyone build, run and modify the software; there is no eligibility test.",
   "sources": []
  },
  {
@@ -15984,7 +16014,8 @@
   "name": "Purple Robot (Northwestern CBITS)",
   "kind": "platform",
   "field": "program_application",
-  "status": "unresearched",
+  "status": "not_applicable",
+  "note": "No application or approval step. The source and build instructions are public on GitHub.",
   "sources": []
  },
  {
@@ -15992,15 +16023,39 @@
   "name": "Purple Robot (Northwestern CBITS)",
   "kind": "platform",
   "field": "program_status",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Archived and no longer developed, per the maintainer (Chris Karr, audaciouscode) in December 2023, who pointed would-be users to him by email for \"developments since this project\". The CBITS personal sensing work that used it is listed under completed projects.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "note": "The comment is by GitHub user audaciouscode (profile name Chris Karr, Audacious Software), marked COLLABORATOR on the repository, dated 2023-12-20 in issue 282 (opened 2022-12-13, now closed). \"Archived\" is his word, not GitHub's archive flag: the GitHub API reported archived=false for cbitstech/Purple-Robot, cbitstech/Purple-Robot-Django, audaciouscode/Purple-Robot-Android and audaciouscode/Purple-Robot-Django on 2026-10-22. Only NU-CBITS/PurpleRobotClient carries the archive flag. No CBITS or Northwestern page announces a retirement.",
+  "sources": [
+   {
+    "url": "https://github.com/cbitstech/Purple-Robot/issues/282",
+    "type": "repository",
+    "quote": "This app is currently archived and no longer being currently developed.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/cbitstech/Purple-Robot/issues/282",
+    "type": "repository",
+    "quote": "If you're looking for a replacement, e-mail me",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://cbits.northwestern.edu/our-research/our-research-projects/completed-projects.html",
+    "type": "vendor_page",
+    "quote": "The personal sensing research at the Center for Behavioral Intervention Technologies harnesses sensor data collected from mobile phones and other devices to identify behaviors and states related to mental health.",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "purple-robot",
   "name": "Purple Robot (Northwestern CBITS)",
   "kind": "platform",
   "field": "developer_program_status",
-  "status": "unresearched",
+  "status": "not_applicable",
+  "note": "No developer or API program. The full source is public under GPL v3; there are no API keys or registrations. Development has stopped (see program_status).",
   "sources": []
  },
  {
@@ -16008,7 +16063,8 @@
   "name": "Purple Robot (Northwestern CBITS)",
   "kind": "platform",
   "field": "user_cap",
-  "status": "unresearched",
+  "status": "not_applicable",
+  "note": "No caps. Capacity is bounded by the researcher's own upload server.",
   "sources": []
  },
  {
@@ -16016,23 +16072,55 @@
   "name": "Purple Robot (Northwestern CBITS)",
   "kind": "platform",
   "field": "academic_vs_commercial",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No academic or commercial tier. Everyone gets the same GPL v3 (or later) terms. The 2015 licence file invites anyone needing other licensing terms to contact Mark Begale at Northwestern.",
+  "confidence": "Corroborated",
+  "recheck_by": "2026-11-21",
+  "note": "Corroborated rather than Verified because the alternative-licensing contact dates from 2015 and was not confirmed as still current. No price or terms for other licensing are published.",
+  "sources": [
+   {
+    "url": "https://github.com/cbitstech/Purple-Robot/blob/master/LICENSE.GPLv3",
+    "type": "repository",
+    "quote": "either version 3 of the License, or",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/cbitstech/Purple-Robot/blob/master/LICENSE.GPLv3",
+    "type": "repository",
+    "quote": "Please contact Mark Begale at m-begale@northwestern.edu to discuss",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/cbitstech/Purple-Robot/blob/master/LICENSE.GPLv3",
+    "type": "repository",
+    "quote": "other licensing options as needed.",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "purple-robot",
   "name": "Purple Robot (Northwestern CBITS)",
   "kind": "platform",
   "field": "device_price",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_applicable",
+  "note": "Software only, Android phones. Saeb et al. 2015 gave participants without a compatible phone an Android Nexus 4.",
+  "sources": [
+   {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4526997/",
+    "type": "paper",
+    "quote": "Participants who did not own a compatible phone were given an Android Nexus 4 with Purple Robot installed and configured.",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "purple-robot",
   "name": "Purple Robot (Northwestern CBITS)",
   "kind": "platform",
   "field": "subscription_price",
-  "status": "unresearched",
+  "status": "not_applicable",
+  "note": "No subscription; free open-source software.",
   "sources": []
  },
  {
@@ -16040,7 +16128,8 @@
   "name": "Purple Robot (Northwestern CBITS)",
   "kind": "platform",
   "field": "academic_pricing",
-  "status": "unresearched",
+  "status": "not_applicable",
+  "note": "Free open-source software for everyone; no academic price exists.",
   "sources": []
  },
  {
@@ -16048,15 +16137,33 @@
   "name": "Purple Robot (Northwestern CBITS)",
   "kind": "platform",
   "field": "api_platform_fees",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "None. The app and the Django server component are free open-source software under GPL v3.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "note": "Infrastructure costs (server, storage) fall on the deploying team.",
+  "sources": [
+   {
+    "url": "https://github.com/cbitstech/Purple-Robot/blob/master/LICENSE.GPLv3",
+    "type": "repository",
+    "quote": "either version 3 of the License, or",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/cbitstech/Purple-Robot-Django/blob/master/LICENSE",
+    "type": "repository",
+    "quote": "Version 3, 29 June 2007",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "purple-robot",
   "name": "Purple Robot (Northwestern CBITS)",
   "kind": "platform",
   "field": "minimum_commitment",
-  "status": "unresearched",
+  "status": "not_applicable",
+  "note": "No contract or term; open-source software.",
   "sources": []
  },
  {
@@ -16064,7 +16171,8 @@
   "name": "Purple Robot (Northwestern CBITS)",
   "kind": "platform",
   "field": "quote_required",
-  "status": "unresearched",
+  "status": "not_applicable",
+  "note": "Nothing is sold. Audacious Software (the maintainer's company) lists general consulting and development services but publishes no Purple Robot offer or price.",
   "sources": []
  },
  {
@@ -16072,7 +16180,8 @@
   "name": "Purple Robot (Northwestern CBITS)",
   "kind": "platform",
   "field": "hosting_price",
-  "status": "unresearched",
+  "status": "not_applicable",
+  "note": "No managed hosting exists to price. Checked audacious-software.com (general data acquisition and maintenance services, no Purple Robot hosting offer; /services/ returns 404), the CBITS completed-projects page and the cbitstech/Purple-Robot README on 2026-10-22. Server and storage costs fall on the deploying team.",
   "sources": []
  },
  {
@@ -16080,47 +16189,193 @@
   "name": "Purple Robot (Northwestern CBITS)",
   "kind": "platform",
   "field": "raw_streams",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Android only. Built-in probes cover the Android sensor framework (accelerometer, linear acceleration, gyroscope, magnetometer, light, pressure, proximity, temperature, humidity, gravity, rotation, significant motion, step counter), activity detection, raw and fused location, visible satellites, Wi-Fi access points, Bluetooth devices, NFC, network, battery, screen state, call state, communication events and log, address-book distances, calendar, running software, application launches, telephony, hardware and software information, wake locks, touch events and audio features. All go by HTTP upload to the research team's own server.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "note": "The probe list comes from the builtin probes directory of the last code (v3.0.13, January 2019), listed via the GitHub API on 2026-10-22. The manifest asks for READ_SMS, READ_CALL_LOG and READ_CONTACTS; current Google Play policy and Android versions newer than the app's target (API 28) would block or limit several of these, which is untested here. Phone numbers in communication data are hashed with unsalted MD5 (see retention_terms).",
+  "sources": [
+   {
+    "url": "https://github.com/cbitstech/Purple-Robot/wiki",
+    "type": "vendor_docs",
+    "quote": "including the accelerometer, gyroscope, pressure sensor, and more.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/cbitstech/Purple-Robot/wiki",
+    "type": "vendor_docs",
+    "quote": "Location sensors that use the built-in GPS and cellular triangulation options to map the user's location.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/cbitstech/Purple-Robot/wiki",
+    "type": "vendor_docs",
+    "quote": "Options to scan for external devices such as wireless access points and visible Bluetooth devices.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/audaciouscode/Purple-Robot-Android/tree/master/app/src/main/java/edu/northwestern/cbits/purple_robot_manager/probes/builtin",
+    "type": "repository",
+    "quote": "CommunicationLogProbe.java",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/audaciouscode/Purple-Robot-Android/tree/master/app/src/main/java/edu/northwestern/cbits/purple_robot_manager/probes/builtin",
+    "type": "repository",
+    "quote": "AudioFeaturesProbe.java",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "purple-robot",
   "name": "Purple Robot (Northwestern CBITS)",
   "kind": "platform",
   "field": "derived_metrics",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "On-device features including basic statistics and frequency features for accelerometer, gyroscope, light, magnetic field, pressure, proximity and temperature, plus call history, device in use and sunrise/sunset features. Communication data can be summarised statistically before upload, and researchers can define new features in JavaScript. No analysis pipeline is published.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "note": "Behavioural features such as location variance or circadian movement in Saeb et al. 2015 were computed by the study team offline, not by Purple Robot.",
+  "sources": [
+   {
+    "url": "https://github.com/audaciouscode/Purple-Robot-Android/tree/master/app/src/main/java/edu/northwestern/cbits/purple_robot_manager/probes/features",
+    "type": "repository",
+    "quote": "AccelerometerBasicStatisticsFeature.java",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/audaciouscode/Purple-Robot-Android/tree/master/app/src/main/java/edu/northwestern/cbits/purple_robot_manager/probes/features",
+    "type": "repository",
+    "quote": "DeviceInUseFeature.java",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/cbitstech/Purple-Robot/wiki",
+    "type": "vendor_docs",
+    "quote": "Statistical summaries of the user's communication patterns, including phone logs and text-message transcripts.",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "purple-robot",
   "name": "Purple Robot (Northwestern CBITS)",
   "kind": "platform",
   "field": "sampling_rates",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Configurable per probe. Accelerometer options run from 200 per second down to every 10 seconds; other built-in sensors from 10 per second to every 10 seconds; the generic probe default interval is 300000 ms (5 minutes). Saeb et al. 2015 sampled GPS once every 5 minutes and screen on/off events.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "note": "The option lists are settings labels in the source, not measured rates; achieved rates depend on the phone's hardware and Android's background limits.",
+  "sources": [
+   {
+    "url": "https://github.com/audaciouscode/Purple-Robot-Android/blob/master/app/src/main/res/values/arrays.xml",
+    "type": "repository",
+    "quote": "200 per second",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/audaciouscode/Purple-Robot-Android/blob/master/app/src/main/res/values/arrays.xml",
+    "type": "repository",
+    "quote": "Every 10 seconds",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://raw.githubusercontent.com/audaciouscode/Purple-Robot-Android/master/app/src/main/java/edu/northwestern/cbits/purple_robot_manager/probes/Probe.java",
+    "type": "repository",
+    "quote": "public static final String DEFAULT_FREQUENCY = \"300000\";",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/cbitstech/Purple-Robot/wiki/Probe-&-Feature-Reference",
+    "type": "vendor_docs",
+    "quote": "sampled at a high frequency (many times per second) from the built-in hardware sensor",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4526997/",
+    "type": "paper",
+    "quote": "Purple Robot sampled the GPS location sensor once every 5 minutes and collected phone usage data by detecting the screen on and off events",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "purple-robot",
   "name": "Purple Robot (Northwestern CBITS)",
   "kind": "platform",
   "field": "history_depth",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No vendor-held copy and no platform limit. Collection is prospective from installation; the phone holds data only until a successful upload to the team's own server, which keeps whatever history the team chooses.",
+  "confidence": "Corroborated",
+  "recheck_by": "2026-11-21",
+  "note": "An inference from the architecture; no page states a history limit as such.",
+  "sources": [
+   {
+    "url": "https://github.com/cbitstech/Purple-Robot/wiki/Data-Upload-Reference",
+    "type": "vendor_docs",
+    "quote": "If an error status is returned, the device running Purple Robot will retain the data and attempt to upload it at a later time",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4526997/",
+    "type": "paper",
+    "quote": "Once the data are anonymized, they are stored and later transmitted to the data collection server before being deleted from the device.",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "purple-robot",
   "name": "Purple Robot (Northwestern CBITS)",
   "kind": "platform",
   "field": "export_routes",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "The app POSTs JSON sensor payloads to an HTTP endpoint the researcher configures, with store-and-forward retry. The Purple-Robot-Django server app receives them and offers a date-range export page and CSV export jobs; a small CherryPy starter server is also documented. An embedded localhost HTTP API lets other apps on the phone reach Purple Robot data and scripts.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "note": "The Django app pins Django 1.6 and South, long out of support. The upload protocol uses MD5 checksums.",
+  "sources": [
+   {
+    "url": "https://github.com/cbitstech/Purple-Robot/wiki/Data-Upload-Reference",
+    "type": "vendor_docs",
+    "quote": "sensor data payloads to this endpoint",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/cbitstech/Purple-Robot/wiki/Data-Upload-Reference",
+    "type": "vendor_docs",
+    "quote": "If an error status is returned, the device running Purple Robot will retain the data and attempt to upload it at a later time",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/cbitstech/Purple-Robot-Django",
+    "type": "repository",
+    "quote": "The data upload endpoint where Purple Robot sends sensor data payloads.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/cbitstech/Purple-Robot-Django",
+    "type": "repository",
+    "quote": "exports data into csv files where requested",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/cbitstech/Purple-Robot/wiki/Embedded-HTTP-API",
+    "type": "vendor_docs",
+    "quote": "Purple Robot now includes a local HTTP server that is accessible to local applications on the mobile device.",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "purple-robot",
   "name": "Purple Robot (Northwestern CBITS)",
   "kind": "platform",
   "field": "rate_limits",
-  "status": "unresearched",
+  "status": "not_applicable",
+  "note": "No hosted API. Throughput is bounded by the team's own server.",
   "sources": []
  },
  {
@@ -16128,15 +16383,75 @@
   "name": "Purple Robot (Northwestern CBITS)",
   "kind": "platform",
   "field": "retention_terms",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No vendor retention terms; each deploying research site sets its own privacy rules. On the phone, identifiers are hashed and data encrypted with AES before storage, then deleted after transmission to the server. The hash function defaults to MD5; later builds let the researcher choose SHA-256.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "note": "MD5 claim confirmed three ways: Saeb et al., JMIR 2015, 17(7):e175, by the CBITS team that built the app; the Data Upload Reference (user identifier, by default the Google account name, sent as an MD5 hash; payload checksum also MD5); and the v3.0.13 source, where the identifier hash defaults to MD5 with SHA-256 selectable, and phone numbers are always hashed with MD5 (normalizedPhoneHash). Unsalted hashes of emails or phone numbers are pseudonymous, not anonymous, and can be reversed by dictionary attack, so the paper's \"anonymizes\" overstates it.",
+  "sources": [
+   {
+    "url": "https://github.com/audaciouscode/Purple-Robot-Android/blob/master/PRIVACY.md",
+    "type": "vendor_legal",
+    "quote": "Each research site is responsible for drafting and implementing its own privacy in accordance with local laws, research ethics boards, and other applicable regulatory powers.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4526997/",
+    "type": "paper",
+    "quote": "Once the data are anonymized, they are stored and later transmitted to the data collection server before being deleted from the device.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4526997/",
+    "type": "paper",
+    "quote": "Purple Robot anonymizes personally identifiable and other sensitive information before storage and transmission, using standard MD5 hashing and advanced encryption standard",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/cbitstech/Purple-Robot/wiki/Data-Upload-Reference",
+    "type": "vendor_docs",
+    "quote": "the UserHash key is an MD5 hash of the user identifier set in the app's settings",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/cbitstech/Purple-Robot/wiki/Data-Upload-Reference",
+    "type": "vendor_docs",
+    "quote": "This defaults to your Google account if not set explicitly.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/audaciouscode/Purple-Robot-Android/blob/master/app/src/main/java/edu/northwestern/cbits/purple_robot_manager/EncryptionManager.java",
+    "type": "repository",
+    "quote": "String algorithm = prefs.getString(\"config_preferred_hash_function\", \"MD5\");",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/audaciouscode/Purple-Robot-Android/blob/master/app/src/main/res/values/arrays.xml",
+    "type": "repository",
+    "quote": "MD5 (Insecure, Legacy Default)",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/audaciouscode/Purple-Robot-Android/blob/master/app/src/main/res/values/arrays.xml",
+    "type": "repository",
+    "quote": "SHA-2 (Secure, Recommended)",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/audaciouscode/Purple-Robot-Android/blob/master/app/src/main/java/edu/northwestern/cbits/purple_robot_manager/EncryptionManager.java",
+    "type": "repository",
+    "quote": "private static final String CRYPTO_ALGORITHM = \"AES/CBC/PKCS5Padding\";",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "purple-robot",
   "name": "Purple Robot (Northwestern CBITS)",
   "kind": "platform",
   "field": "ai_training_terms",
-  "status": "unresearched",
+  "status": "not_applicable",
+  "note": "No vendor holds or processes study data, so there are no AI-training terms. Checked the GitHub README, wiki and PRIVACY.md.",
   "sources": []
  },
  {
@@ -16144,71 +16459,273 @@
   "name": "Purple Robot (Northwestern CBITS)",
   "kind": "platform",
   "field": "deprecations",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Development has stopped. The maintainer called the app archived and no longer developed in December 2023. Last commits are 2016-04-11 on cbitstech/Purple-Robot master (v2.0.9), 2016-12-27 on cbitstech/Purple-Robot-Django, 2019-01-30 on audaciouscode/Purple-Robot-Android (v3.0.13, target API 28) and 2020-06-22 on the audaciouscode/Purple-Robot-Django fork. The Google Play listing is gone. No formal end-of-life date was ever announced.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "note": "GitHub's archive flag is not set on the main repositories. Repository activity on 2026-10-15 was housekeeping only (an account closed the 2015 issue 272, and a star). audaciouscode/Purple-Robot-Starter-Site has a dependabot merge on 2020-12-08 and a branch push in 2022, with no code changes.",
+  "sources": [
+   {
+    "url": "https://github.com/cbitstech/Purple-Robot/issues/282",
+    "type": "repository",
+    "quote": "This app is currently archived and no longer being currently developed.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://api.github.com/repos/cbitstech/Purple-Robot/commits?per_page=1",
+    "type": "repository",
+    "quote": "2016-04-11T13:28:23Z",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://api.github.com/repos/audaciouscode/Purple-Robot-Android/commits?per_page=1",
+    "type": "repository",
+    "quote": "2019-01-30T00:04:00Z",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://api.github.com/repos/cbitstech/Purple-Robot-Django/commits?per_page=1",
+    "type": "repository",
+    "quote": "2016-12-27T16:36:40Z",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://api.github.com/repos/audaciouscode/Purple-Robot-Django/commits?per_page=1",
+    "type": "repository",
+    "quote": "2020-06-22T13:46:16Z",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/audaciouscode/Purple-Robot-Android/blob/master/app/build.gradle",
+    "type": "repository",
+    "quote": "targetSdkVersion 28",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://play.google.com/store/apps/details?id=edu.northwestern.cbits.purple_robot_manager",
+    "type": "app_store",
+    "retrieved": "2026-10-22",
+    "expect_absent": true
+   }
+  ]
  },
  {
   "company": "purple-robot",
   "name": "Purple Robot (Northwestern CBITS)",
   "kind": "platform",
   "field": "licence",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "GPL v3 or any later version for the Android app (cbitstech/Purple-Robot, file LICENSE.GPLv3, a short notice rather than the full licence text) and GPL v3 for audaciouscode/Purple-Robot-Android and the Purple-Robot-Django server app. The cbitstech notice also offers other licensing by contact.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "note": "GitHub's licence detector reports NOASSERTION for cbitstech/Purple-Robot because LICENSE.GPLv3 is a 932-byte notice, not the licence text; audaciouscode/Purple-Robot-Android and both Django repositories detect as GPL-3.0. Older helper repositories (dashboards, configuration tools, NU-CBITS/PurpleRobotClient) have no licence file.",
+  "sources": [
+   {
+    "url": "https://github.com/cbitstech/Purple-Robot/blob/master/LICENSE.GPLv3",
+    "type": "repository",
+    "quote": "either version 3 of the License, or",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/cbitstech/Purple-Robot/blob/master/LICENSE.GPLv3",
+    "type": "repository",
+    "quote": "other licensing options as needed.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/audaciouscode/Purple-Robot-Android/blob/master/LICENSE",
+    "type": "repository",
+    "quote": "Version 3, 29 June 2007",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/cbitstech/Purple-Robot-Django/blob/master/LICENSE",
+    "type": "repository",
+    "quote": "Version 3, 29 June 2007",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "purple-robot",
   "name": "Purple Robot (Northwestern CBITS)",
   "kind": "platform",
   "field": "hosting_options",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Self-hosting only. Teams run their own upload endpoint, either the Purple-Robot-Django app (PostgreSQL, cron-driven extraction and export) or the documented CherryPy starter server. No managed hosting is offered.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "note": "The starter server link in the wiki points to a nupmmarkbegale repository that may no longer exist; the Test Server folder in cbitstech/Purple-Robot holds a copy.",
+  "sources": [
+   {
+    "url": "https://github.com/cbitstech/Purple-Robot-Django",
+    "type": "repository",
+    "quote": "This is a self-contained Django app for importing Purple Robot data from mobile devices.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/cbitstech/Purple-Robot/wiki/Data-Upload-Reference",
+    "type": "vendor_docs",
+    "quote": "we've built a small starter server",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/cbitstech/Purple-Robot/wiki",
+    "type": "vendor_docs",
+    "quote": "A robust store-and-forward architecture for transmitting sensor data and user-provided information to custom data warehouses.",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "purple-robot",
   "name": "Purple Robot (Northwestern CBITS)",
   "kind": "platform",
   "field": "app_availability",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Android only, and no longer in any store. The Google Play listing (edu.northwestern.cbits.purple_robot_manager) returns 404, there is no F-Droid listing, and there was never an iOS app. Teams must build the APK from source; the cbitstech repository also holds a prebuilt Purple Robot.apk last committed in November 2015.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "note": "Audacious Software's homepage still links Purple Robot to that Play listing, which 404s. https://f-droid.org/packages/edu.northwestern.cbits.purple_robot_manager/ also returned 404 on 2026-10-22. The prebuilt APK was last changed 2015-11-03 (GitHub API); cbitstech master targets API 23 (the README asks for the API 22 SDK platform) and the audaciouscode continuation targets API 28. Neither was tested on current phones.",
+  "sources": [
+   {
+    "url": "https://play.google.com/store/apps/details?id=edu.northwestern.cbits.purple_robot_manager",
+    "type": "app_store",
+    "retrieved": "2026-10-22",
+    "expect_absent": true
+   },
+   {
+    "url": "https://audacious-software.com/",
+    "type": "vendor_page",
+    "quote": "Purple Robot Android / Web / Wearables / Devices",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/cbitstech/Purple-Robot",
+    "type": "repository",
+    "quote": "Purple Robot is an Android application for creating automated experiences on the Android platform with sensing and inference capabilities.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/cbitstech/Purple-Robot",
+    "type": "repository",
+    "quote": "The instructions below describe how to create an APK Android package for your own testing and development.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/cbitstech/Purple-Robot/blob/master/Purple%20Robot/build.gradle",
+    "type": "repository",
+    "quote": "targetSdkVersion 23",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "purple-robot",
   "name": "Purple Robot (Northwestern CBITS)",
   "kind": "platform",
   "field": "baa",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_applicable",
+  "note": "No vendor hosts or receives study data, so there is no business associate to sign a BAA; the deploying institution is responsible. No BAA is mentioned on any page checked.",
+  "sources": [
+   {
+    "url": "https://github.com/audaciouscode/Purple-Robot-Android/blob/master/PRIVACY.md",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://audacious-software.com/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "purple-robot",
   "name": "Purple Robot (Northwestern CBITS)",
   "kind": "platform",
   "field": "dpa",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_applicable",
+  "note": "No vendor processes study data, so there is no processor to offer a DPA. No DPA is mentioned on any page checked.",
+  "sources": [
+   {
+    "url": "https://github.com/audaciouscode/Purple-Robot-Android/blob/master/PRIVACY.md",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://audacious-software.com/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "purple-robot",
   "name": "Purple Robot (Northwestern CBITS)",
   "kind": "platform",
   "field": "hipaa_statement",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-20",
+  "note": "No HIPAA statement anywhere checked. The privacy note places responsibility on each research site.",
+  "sources": [
+   {
+    "url": "https://github.com/audaciouscode/Purple-Robot-Android/blob/master/PRIVACY.md",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/cbitstech/Purple-Robot",
+    "type": "repository",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/cbitstech/Purple-Robot/wiki",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/cbitstech/Purple-Robot-Django",
+    "type": "repository",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "purple-robot",
   "name": "Purple Robot (Northwestern CBITS)",
   "kind": "platform",
   "field": "gdpr_statement",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-20",
+  "note": "No GDPR statement. The project predates GDPR (last CBITS code 2016) and was never updated for it.",
+  "sources": [
+   {
+    "url": "https://github.com/audaciouscode/Purple-Robot-Android/blob/master/PRIVACY.md",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/cbitstech/Purple-Robot",
+    "type": "repository",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/cbitstech/Purple-Robot/wiki",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "purple-robot",
   "name": "Purple Robot (Northwestern CBITS)",
   "kind": "platform",
   "field": "iso27001",
-  "status": "unresearched",
+  "status": "not_applicable",
+  "note": "Software only, with no vendor-operated service to certify. No certification is mentioned in the repositories, wiki or on audacious-software.com.",
   "sources": []
  },
  {
@@ -16216,7 +16733,8 @@
   "name": "Purple Robot (Northwestern CBITS)",
   "kind": "platform",
   "field": "soc2",
-  "status": "unresearched",
+  "status": "not_applicable",
+  "note": "Software only, with no vendor-operated service to audit. No SOC 2 report is mentioned in the repositories, wiki or on audacious-software.com.",
   "sources": []
  },
  {
@@ -16224,16 +16742,62 @@
   "name": "Purple Robot (Northwestern CBITS)",
   "kind": "platform",
   "field": "fda_clearances",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Verified",
+  "recheck_by": "2027-01-20",
+  "note": "Every search returned \"No matches found\" (HTTP 404) on 2026-10-22, as did PMA searches by applicant \"Northwestern University\" and \"Audacious Software\". Purple Robot is research software and makes no medical-device claim.",
+  "sources": [
+   {
+    "url": "https://api.fda.gov/device/510k.json?search=device_name:\"Purple+Robot\"",
+    "type": "regulator_db",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://api.fda.gov/device/pma.json?search=device_name:\"Purple+Robot\"",
+    "type": "regulator_db",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://api.fda.gov/device/510k.json?search=applicant:\"Northwestern+University\"",
+    "type": "regulator_db",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://api.fda.gov/device/510k.json?search=applicant:\"Audacious+Software\"",
+    "type": "regulator_db",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://api.fda.gov/device/registrationlisting.json?search=proprietary_name:\"Purple+Robot\"",
+    "type": "regulator_db",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "purple-robot",
   "name": "Purple Robot (Northwestern CBITS)",
   "kind": "platform",
   "field": "data_residency",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Wherever the deploying team runs its own server. Data stay on the phone until upload and then go only to the endpoint the researcher configures; there is no vendor storage.",
+  "confidence": "Verified",
+  "recheck_by": "2027-01-20",
+  "note": "Some optional probes and integrations (Google Places, Facebook and other service integrations in older builds) contact third-party services from the phone.",
+  "sources": [
+   {
+    "url": "https://github.com/audaciouscode/Purple-Robot-Android/blob/master/PRIVACY.md",
+    "type": "vendor_legal",
+    "quote": "By default, Purple Robot is not configured to collect this data not transmit it until properly configured by a deploying researcher.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/cbitstech/Purple-Robot/wiki/Data-Upload-Reference",
+    "type": "vendor_docs",
+    "quote": "sensor data payloads to this endpoint",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "radar-base",
@@ -22844,240 +23408,861 @@
   "name": "Circular",
   "kind": "wearable",
   "field": "research_program",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No named program. The science page invites research partners to \"bring us a protocol\"; Circular supplies devices, raw signal access under agreement and engineering time for studies run against a reference standard.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "note": "The same page lists six internal study protocols (sleep apnoea, AFib after ablation, cycle phase, illness detection, shift work, athletes) whose summaries partners can request. No terms, cost or agreement template is published.",
+  "sources": [
+   {
+    "url": "https://www.circular.xyz/science",
+    "type": "vendor_page",
+    "quote": "Bring us a protocol. We supply devices, raw signal access under agreement and engineering time for studies that hold us to a reference standard.",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "circular",
   "name": "Circular",
   "kind": "wearable",
   "field": "program_eligibility",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Clinical, academic and enterprise partners; no further criteria published beyond studies that use a reference standard.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "sources": [
+   {
+    "url": "https://www.circular.xyz/science",
+    "type": "vendor_page",
+    "quote": "Clinical, academic and enterprise partners are all welcome.",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "circular",
   "name": "Circular",
   "kind": "wearable",
   "field": "program_application",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Contact the research team through the science page (typical reply within five working days); no application form, review criteria or timeline published. API access for business customers is by contact and limited to selected projects.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "sources": [
+   {
+    "url": "https://www.circular.xyz/science",
+    "type": "vendor_page",
+    "quote": "Contact the research team Request the validation summary Typical response within five working days.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/professionals",
+    "type": "vendor_page",
+    "quote": "Is there an API or data export? Yes.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/professionals",
+    "type": "vendor_page",
+    "quote": "access is currently limited to selected projects.",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "circular",
   "name": "Circular",
   "kind": "wearable",
   "field": "program_status",
-  "status": "unresearched",
-  "sources": []
+  "status": "unclear",
+  "value": "The research offer is live on the site, but the original operator Circular SAS (SIREN 850 542 804) was converted to judicial liquidation on 14 October 2025. The current terms of use and sale name Circular Health Limited, registered in the Paris trade register under 990 900 326; the founders told press the headquarters moved to Hong Kong. Whether research agreements signed with the old entity carry over is not published.",
+  "confidence": "Unclear",
+  "recheck_by": "2026-11-21",
+  "note": "societe.com (a secondary reproduction of the official BODACC and RNE notices) shows the redressement judiciaire opened 2024-10-08 (cessation of payments 2024-08-31) and converted to liquidation on 2025-10-14, liquidator Selarl Asteren. The official gazette (bodacc.fr and its open-data API) disallows scripted access in robots.txt, so it was not read by script and the liquidation stays at secondary-source confidence. The Hong Kong move rests on the founders' account to press (relayed by Gadgets & Wearables from Android Police); the vendor's own terms give only a Paris registered office.",
+  "sources": [
+   {
+    "url": "https://www.circular.xyz/science",
+    "type": "vendor_page",
+    "quote": "Six active protocols, each with a named reference standard and a defined read-out date. Partners can request the protocol summary for any of them.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.societe.com/societe/circular-850542804.html",
+    "type": "secondary",
+    "quote": "14/10/2025 Annonce BODACC - Jugement de conversion en liquidation judiciaire",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/terms-of-use",
+    "type": "vendor_legal",
+    "quote": "Circular Health Limited, which is registered in the Paris Register of Trade & Companies under the number 990 900 326",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://gadgetsandwearables.com/2026/02/14/circular-ring-liquidation/",
+    "type": "secondary",
+    "quote": "The French company behind the Circular Ring officially entered judicial liquidation at the end of last year as part of a major corporate shuffle.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://gadgetsandwearables.com/2026/02/14/circular-ring-liquidation/",
+    "type": "secondary",
+    "quote": "They moved the headquarters to Hong Kong and established a new entity called Circular Health Limited.",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "circular",
   "name": "Circular",
   "kind": "wearable",
   "field": "developer_program_status",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No public developer program or API documentation. An API and SDK are offered to business customers on the Professional track, by contact, and access is limited to selected projects.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "note": "Searched for developer docs, an API reference and API terms; none found. The terms of use bar connections to the service except through Circular devices, its apps and approved third-party applications.",
+  "sources": [
+   {
+    "url": "https://www.circular.xyz/professionals",
+    "type": "vendor_page",
+    "quote": "Is there an API or data export? Yes.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/professionals",
+    "type": "vendor_page",
+    "quote": "access is currently limited to selected projects.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/professionals",
+    "type": "vendor_page",
+    "quote": "Circular API and SDK, scoped to what you need",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "circular",
   "name": "Circular",
   "kind": "wearable",
   "field": "user_cap",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "note": "No participant or account cap is stated for the team dashboard or the API. The only number published is the 25-unit minimum order (see minimum_commitment).",
+  "sources": [
+   {
+    "url": "https://www.circular.xyz/professionals",
+    "type": "vendor_page",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/science",
+    "type": "vendor_page",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "circular",
   "name": "Circular",
   "kind": "wearable",
   "field": "academic_vs_commercial",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No separate academic track. Research partnerships are offered on the same terms to clinical, academic and enterprise partners; business buyers choose between a no-code team dashboard track and a Professional API/SDK track.",
+  "confidence": "Reported",
+  "recheck_by": "2026-11-21",
+  "note": "Reported because \"no difference\" is read from the absence of any distinction, not from a statement that terms are identical.",
+  "sources": [
+   {
+    "url": "https://www.circular.xyz/science",
+    "type": "vendor_page",
+    "quote": "Clinical, academic and enterprise partners are all welcome.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/professionals",
+    "type": "vendor_page",
+    "quote": "Circular API and SDK, scoped to what you need",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "circular",
   "name": "Circular",
   "kind": "wearable",
   "field": "device_price",
-  "status": "unresearched",
-  "sources": []
+  "status": "conflict",
+  "value": "Circular Ring 2 lists at $349 (US, Obsidian Black) on the store product page, but the shop page's hero and HSA/FSA copy both call it a $299 ring. Circular Ring 3 price not yet announced (pre-orders December 2026).",
+  "confidence": "Unclear",
+  "recheck_by": "2026-11-21",
+  "note": "Shopify product JSON (shop.circular.xyz/products/circular-ring-2.js, read 2026-10-22): ring alone $349 Obsidian Black, $449 Silver, $549 Rose Gold and Gold; $5 more with a sizing kit; compare-at price equals price, so the store shows no markdown on Ring 2. The Ring 3 page advertises Ring 2 at up to 30% off, which may explain the $299 copy, but no page ties the two. Every site page's footer also says \"Circular Ring 2 $349\".",
+  "sources": [
+   {
+    "url": "https://shop.circular.xyz/products/circular-ring-2",
+    "type": "vendor_page",
+    "quote": "Circular Ring 2 The only smart ring with an ECG and blood pressure $349.00",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/shop",
+    "type": "vendor_page",
+    "quote": "$299 one purchase · no mandatory subscription · HSA/FSA eligible",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/shop",
+    "type": "vendor_page",
+    "quote": "which brings a $299 ring closer to $210 out of pocket depending on your bracket",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/circular-ring-3",
+    "type": "vendor_page",
+    "quote": "Circular Ring 2 is up to 30% off until the Ring 3 Series launches",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/circular-ring-3",
+    "type": "vendor_page",
+    "quote": "December 2026 Pre-orders open, with pricing announced at the same time.",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "circular",
   "name": "Circular",
   "kind": "wearable",
   "field": "subscription_price",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No subscription required. Optional premium \"Circles\" are unlocked month by month with in-app coins, 12,000 to 16,000 coins a month, at about 4,000 coins per euro (roughly 3 to 4 euros a month); coins can also be earned by wearing the ring.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "note": "Inconsistency on what is paid: the blood pressure page says BP trends are included with the ring permanently, while the 28 September 2026 app release notes describe \"Premium blood pressure\". Ring 3 subscription terms are to be confirmed with its pricing.",
+  "sources": [
+   {
+    "url": "https://www.circular.xyz/terms-of-use",
+    "type": "vendor_legal",
+    "quote": "The Circular ring is sold as a one-off purchase. No subscription is required to use the ring or the Circular app, and the health features included with the ring remain available at no further cost.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/coins",
+    "type": "vendor_page",
+    "quote": "Unlock a Circle 12,000 to 16,000 coins for one month, depending on the Circle. Recurring, and you can stop any month.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/coins",
+    "type": "vendor_page",
+    "quote": "Four thousand coins is worth about €1",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/blood-pressure",
+    "type": "vendor_page",
+    "quote": "Is this behind a subscription? No. Blood pressure trends are included with the ring, permanently, like every other measurement.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/release-notes",
+    "type": "vendor_docs",
+    "quote": "Premium blood pressure: past readings are easier to read, with a better-looking report",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/circular-ring-3",
+    "type": "vendor_page",
+    "quote": "Subscription details for the Circular Ring 3 Series are confirmed alongside pricing.",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "circular",
   "name": "Circular",
   "kind": "wearable",
   "field": "academic_pricing",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "note": "Business tracks advertise a volume discount on every ring, but no academic or research price is published. Research partners may be supplied devices under agreement (science page); terms not published.",
+  "sources": [
+   {
+    "url": "https://www.circular.xyz/science",
+    "type": "vendor_page",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/professionals",
+    "type": "vendor_page",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "circular",
   "name": "Circular",
   "kind": "wearable",
   "field": "api_platform_fees",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Team dashboard (multi-account web dashboard with CSV export) is free; API and SDK fees are not published and go through a quote.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "sources": [
+   {
+    "url": "https://www.circular.xyz/professionals",
+    "type": "vendor_page",
+    "quote": "Free access to multiple accounts' data through a central web dashboard.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/professionals",
+    "type": "vendor_page",
+    "quote": "Request a quote",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "circular",
   "name": "Circular",
   "kind": "wearable",
   "field": "minimum_commitment",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Business orders start at 25 rings.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "sources": [
+   {
+    "url": "https://www.circular.xyz/professionals",
+    "type": "vendor_page",
+    "quote": "What is the minimum order? As low as 25 units.",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "circular",
   "name": "Circular",
   "kind": "wearable",
   "field": "quote_required",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Yes for business and research use. Both business tracks are priced by quote (volume discount on every ring); consumer rings are list-priced.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "sources": [
+   {
+    "url": "https://www.circular.xyz/professionals",
+    "type": "vendor_page",
+    "quote": "Request a quote",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/professionals",
+    "type": "vendor_page",
+    "quote": "Volume discount on every ring",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "circular",
   "name": "Circular",
   "kind": "wearable",
   "field": "raw_streams",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Raw signal (PPG green/red/IR, single-lead ECG, skin temperature, 3-axis accelerometer) only through a research partnership, under agreement. No public route to raw signal; the app's Apple Health and Health Connect sync carries processed intraday values, not waveforms.",
+  "confidence": "Corroborated",
+  "recheck_by": "2026-11-21",
+  "note": "Corroborated because the raw-access offer is a marketing statement with no published format, schema or agreement. Firmware 1.7.2 (12 October 2026) mentions a \"Research mode\" that no public page documents; it may be the route for research partners, but that is not stated.",
+  "sources": [
+   {
+    "url": "https://www.circular.xyz/science",
+    "type": "vendor_page",
+    "quote": "Bring us a protocol. We supply devices, raw signal access under agreement and engineering time for studies that hold us to a reference standard.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/release-notes",
+    "type": "vendor_docs",
+    "quote": "Internal tool access to raw metrics restricted by user group",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/release-notes",
+    "type": "vendor_docs",
+    "quote": "More features for Research mode",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "circular",
   "name": "Circular",
   "kind": "wearable",
   "field": "derived_metrics",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Through the team dashboard, CSV export of any metric with daily and historical detail per wearer. Through the phone, intraday values (temperature, SpO2, breathing rate and others), HRV and sport sessions sync to Apple Health and Health Connect. ECG and blood pressure reports export as PDF.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "note": "Self-contradiction on blood pressure and glucose. The science page says Circular does not infer blood glucose, blood pressure or hydration from optical data, yet the blood pressure page offers cuff-calibrated BP estimates and claims Ring 2 meets the medical-grade error threshold (no study cited there), and the release notes add glucose monitoring compatibility (firmware 1.6.3) and a Glucose Circle at 75% development. Treat BP and any glucose output as unvalidated vendor estimates; the export claims above are unaffected.",
+  "sources": [
+   {
+    "url": "https://www.circular.xyz/professionals",
+    "type": "vendor_page",
+    "quote": "Export clean CSV Any metric, readable columns, ready for your own analysis or a clinician's records.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/release-notes",
+    "type": "vendor_docs",
+    "quote": "Intra day data is now sent to Android Health Connect & Apple Health (temperature, SpO2, Breathing rate, etc)",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/release-notes",
+    "type": "vendor_docs",
+    "quote": "Sport sessions can be now uploaded to HealthKit an Health Connect",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/science",
+    "type": "vendor_page",
+    "quote": "We do not infer blood glucose, blood pressure or hydration from optical data.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/blood-pressure",
+    "type": "vendor_page",
+    "quote": "The Circular Ring 2 meets that however a lot depends on the calibration phase.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/release-notes",
+    "type": "vendor_docs",
+    "quote": "Added Blood Glucose Monitoring functionality compatibility",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/release-notes",
+    "type": "vendor_docs",
+    "quote": "Glucose Circle: 75%",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "circular",
   "name": "Circular",
   "kind": "wearable",
   "field": "sampling_rates",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Ring 2 sensor rates per the science page; PPG (green, red, infrared) 25 Hz, single-lead ECG 510 Hz (40 s recordings), skin temperature 1 Hz at 0.01 °C resolution, 3-axis accelerometer 25 Hz. Resolution of exported metrics is not documented.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "scope": "Circular Ring 2",
+  "note": "These are on-ring sensor rates. Release notes (firmware 1.0.47) mention a PPG frequency switch between sport, performance and eco modes, so the continuous rate may differ by mode.",
+  "sources": [
+   {
+    "url": "https://www.circular.xyz/science",
+    "type": "vendor_page",
+    "quote": "Green, red and infrared LEDs sample blood volume at 25 Hz.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/science",
+    "type": "vendor_page",
+    "quote": "Two dry electrodes record the heart’s electrical activity at 510 Hz.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/science",
+    "type": "vendor_page",
+    "quote": "A thermistor in contact with the finger resolves 0.01 °C every second.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/science",
+    "type": "vendor_page",
+    "quote": "A 3-axis accelerometer at 25 Hz classifies activity type, cadence and intensity",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "circular",
   "name": "Circular",
   "kind": "wearable",
   "field": "history_depth",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "The team dashboard shows each wearer's full record, from last night back to the start; no API history limit is published.",
+  "confidence": "Reported",
+  "recheck_by": "2026-11-21",
+  "sources": [
+   {
+    "url": "https://www.circular.xyz/professionals",
+    "type": "vendor_page",
+    "quote": "Click into any client Full daily and historical detail for one person, from last night back through the whole record.",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "circular",
   "name": "Circular",
   "kind": "wearable",
   "field": "export_routes",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "(1) Team dashboard at dashboard.circular.care with CSV export, free for business customers; (2) API and SDK for selected projects by contact; (3) app sync to Apple Health and Health Connect (Google Fit retired February 2025); (4) PDF reports for ECG and blood pressure; (5) in-app export or deletion of a user's data; (6) raw signal under a research agreement.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "note": "Circular is not a provider in Terra's integration list (api.tryterra.co/v2/integrations/detailed, checked 2026-10-22). The September 2026 release notes mention a \"Terra integration\", which appears to bring other devices' data into the Circular app, not to expose Circular data. The help centre (helpdesk.circular.xyz) sits behind a bot check and was not read.",
+  "sources": [
+   {
+    "url": "https://www.circular.xyz/professionals",
+    "type": "vendor_page",
+    "quote": "Export clean CSV Any metric, readable columns, ready for your own analysis or a clinician's records.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/professionals",
+    "type": "vendor_page",
+    "quote": "Is there an API or data export? Yes.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/professionals",
+    "type": "vendor_page",
+    "quote": "access is currently limited to selected projects.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/release-notes",
+    "type": "vendor_docs",
+    "quote": "Intra day data is now sent to Android Health Connect & Apple Health (temperature, SpO2, Breathing rate, etc)",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/circular-ring-3",
+    "type": "vendor_page",
+    "quote": "Your health data belongs to you. It is stored encrypted, it is never sold, and you can export or delete it from the app at any time.",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "circular",
   "name": "Circular",
   "kind": "wearable",
   "field": "rate_limits",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "note": "No public API documentation exists to state limits.",
+  "sources": [
+   {
+    "url": "https://www.circular.xyz/professionals",
+    "type": "vendor_page",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/terms-of-use",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "circular",
   "name": "Circular",
   "kind": "wearable",
   "field": "retention_terms",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Personal data kept as long as needed for the stated purposes or as required by law, then deleted or kept only in anonymised form; the terms of use add that data held for contractual and regulatory obligations is deleted no later than ten years on, unless litigation arises. No API-side retention terms published.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "sources": [
+   {
+    "url": "https://www.circular.xyz/privacy-policy",
+    "type": "vendor_legal",
+    "quote": "We store all Personal Information for as long as necessary to fulfil the purposes set out in this Policy, or for as long as we are required to do so by law or in order to comply with regulatory obligation.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/terms-of-use",
+    "type": "vendor_legal",
+    "quote": "deleted no longer than ten (10) years later unless a litigation arises",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "circular",
   "name": "Circular",
   "kind": "wearable",
   "field": "ai_training_terms",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "With the user's explicit consent, Circular uses users' data to improve its machine learning models. No terms on research partners or API customers training models on Circular data are published.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "sources": [
+   {
+    "url": "https://www.circular.xyz/privacy-policy",
+    "type": "vendor_legal",
+    "quote": "We use your Circular Information, with your explicit consent, as part of Circular to analyze the efficacy of Circular and to improve the machine learning models.",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "circular",
   "name": "Circular",
   "kind": "wearable",
   "field": "deprecations",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Circular Ring 1 Pro and Slim deprecated in ring firmware 1.1.142 (listed in early 2025); Google Fit replaced by Health Connect (app 25.0.0, 14 February 2025). Circular SAS converted to liquidation 14 October 2025, with operations moved to Circular Health Limited. Circular Ring 3 Pro and Slim announced, pre-orders December 2026.",
+  "confidence": "Corroborated",
+  "recheck_by": "2026-11-21",
+  "note": "The firmware entry carrying the Ring 1 deprecation sits between entries dated 11 July 2025 and 25 February 2025; its own date is not shown clearly. The release notes also list Android and iOS background Bluetooth sync as \"On Hold\". Corroborated rather than Verified because the liquidation part rests on societe.com, a secondary source; the firmware, Health Connect and Ring 3 items are Verified on vendor pages.",
+  "sources": [
+   {
+    "url": "https://www.circular.xyz/release-notes",
+    "type": "vendor_docs",
+    "quote": "Firmware support for Circular Ring 2 1.1.142 (Circular Ring 1 Pro & Slim deprecated)",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/release-notes",
+    "type": "vendor_docs",
+    "quote": "Android Health Connect migration (Google Fit deprecated)",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.societe.com/societe/circular-850542804.html",
+    "type": "secondary",
+    "quote": "CIRCULAR Active Liquidation judiciaire",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/circular-ring-3",
+    "type": "vendor_page",
+    "quote": "December 2026 Pre-orders open, with pricing announced at the same time.",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "circular",
   "name": "Circular",
   "kind": "wearable",
   "field": "baa",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Verified",
+  "recheck_by": "2027-01-20",
+  "sources": [
+   {
+    "url": "https://www.circular.xyz/privacy-policy",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/terms-of-use",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/professionals",
+    "type": "vendor_page",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "circular",
   "name": "Circular",
   "kind": "wearable",
   "field": "dpa",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Verified",
+  "recheck_by": "2027-01-20",
+  "note": "No DPA for business or research customers is published. The privacy policy names subprocessors (AWS Paris, Google Analytics, Typeform, Klaviyo, chatarmin) and the terms promise EU standard contractual clauses with subcontractors.",
+  "sources": [
+   {
+    "url": "https://www.circular.xyz/privacy-policy",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/terms-of-use",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/professionals",
+    "type": "vendor_page",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "circular",
   "name": "Circular",
   "kind": "wearable",
   "field": "hipaa_statement",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "The privacy policy says ring data is health information that may be subject to HIPAA; there is no claim of HIPAA compliance and no BAA.",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-20",
+  "sources": [
+   {
+    "url": "https://www.circular.xyz/privacy-policy",
+    "type": "vendor_legal",
+    "quote": "Additionally the data uploaded by the ring is considered health information and may be subject to HIPAA regulation.",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "circular",
   "name": "Circular",
   "kind": "wearable",
   "field": "gdpr_statement",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Circular states it is the GDPR data controller; the policy lists EU data subject rights (access, erasure, portability and others) and says data may be transferred to the US and UK with safeguards.",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-20",
+  "note": "The policy does not name which legal entity \"Circular\" is; the terms of use name Circular Health Limited.",
+  "sources": [
+   {
+    "url": "https://www.circular.xyz/privacy-policy",
+    "type": "vendor_legal",
+    "quote": "Circular is the entity responsible for the processing of your Personal Information, and for the purpose of the European Union's General Data Protection Regulation, is the data controller in respect of the processing of your Personal Information.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/privacy-policy",
+    "type": "vendor_legal",
+    "quote": "Portability. You have the right to receive, in a structured, commonly used and machine-readable format, Personal Information that you have provided to us",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "circular",
   "name": "Circular",
   "kind": "wearable",
   "field": "iso27001",
-  "status": "unresearched",
-  "sources": []
+  "status": "unclear",
+  "value": "The business page says data is stored on \"medically certified ISO servers\" without naming a standard or a certificate. No ISO/IEC 27001 certificate for Circular found. The privacy policy cites a 2021-2022 penetration test (WiLDSECOPS) and a CASA tier 2 assessment.",
+  "confidence": "Unclear",
+  "recheck_by": "2027-01-20",
+  "note": "The \"ISO servers\" wording may refer to the hosting provider (AWS Paris) rather than Circular itself.",
+  "sources": [
+   {
+    "url": "https://www.circular.xyz/professionals",
+    "type": "vendor_page",
+    "quote": "Data is anonymised and stored on medically certified ISO servers.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/privacy-policy",
+    "type": "vendor_legal",
+    "quote": "Circular has also passed CASA tier 2 certification.",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "circular",
   "name": "Circular",
   "kind": "wearable",
   "field": "soc2",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Verified",
+  "recheck_by": "2027-01-20",
+  "sources": [
+   {
+    "url": "https://www.circular.xyz/privacy-policy",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/professionals",
+    "type": "vendor_page",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/terms-of-use",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "circular",
   "name": "Circular",
   "kind": "wearable",
   "field": "fda_clearances",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Verified",
+  "recheck_by": "2027-01-20",
+  "note": "openFDA searches on 2026-10-22: 510(k) applicant \"circular\" (only K063353, Circular Traction Supply, unrelated), applicant \"b-heart\" and \"bheart\" (no matches), device_name \"circular\" (surgical devices only), and registration and listing for \"circular\" (no matches). No Circular record exists. The terms of use state \"THE RING IS NOT A MEDICAL DEVICE.\" and \"THE APP IS NOT A MEDICAL DEVICE.\", and no Circular page claims FDA clearance. CES 2025 press (Wareable) called Ring 2's AFib detection FDA-cleared through a partner's algorithm (\"B-Heart\"). Any such clearance belongs to the partner's software, not to the ring. B-Secur's HeartKey has K233755 (2024-08-16) and K200884 (2020-12-07), but nothing published confirms that \"B-Heart\" is B-Secur or that Circular's app runs a cleared version.",
+  "sources": [
+   {
+    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm",
+    "type": "regulator_db",
+    "retrieved": "2026-10-22",
+    "fetch_url": "https://api.fda.gov/device/510k.json?search=applicant:%22circular%22"
+   },
+   {
+    "url": "https://www.circular.xyz/terms-of-use",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.wareable.com/ces/circular-ring-2-ces",
+    "type": "secondary",
+    "quote": "it's FDA-cleared thanks to a partnership with B-Heart, which is handling the algorithms",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "circular",
   "name": "Circular",
   "kind": "wearable",
   "field": "data_residency",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Data stored with Amazon Web Services in the Paris region (France); may be transferred to the US and UK. The terms add that personal data of visitors from the US is retained in the US. No residency choice offered.",
+  "confidence": "Verified",
+  "recheck_by": "2027-01-20",
+  "note": "The operating company is now registered in Hong Kong; the policy has not been updated to say whether that changes storage.",
+  "sources": [
+   {
+    "url": "https://www.circular.xyz/privacy-policy",
+    "type": "vendor_legal",
+    "quote": "Cloud service providers who we rely on for data storage, disaster recovery and to provide Circular, such as Amazon Web Services located in the Paris region (France)",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/privacy-policy",
+    "type": "vendor_legal",
+    "quote": "We may transfer your Personal Information outside of the country where you are located and the European Economic Area, including to the US and the UK.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.circular.xyz/terms-of-use",
+    "type": "vendor_legal",
+    "quote": "By way of exception, if you visit the Websites from the United States of America, please note that your Personal Data will be retained by the USA.",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "empatica",
@@ -35488,240 +36673,968 @@
   "name": "Verily (Study Watch)",
   "kind": "wearable",
   "field": "research_program",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Verily no longer markets a Study Watch research program. What it offers researchers now is Verily Pre (Exchange data catalogue plus Workbench trusted research environment), with a free self-serve Standard tier for individual researchers, and, for study sponsors, Viewpoint Evidence, which since March 2026 bundles Samsung Galaxy Watch 8 sensor data with Verily's registry cohorts.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "note": "No Study Watch product page survives in the verily.com sitemap (checked 2026-10-22); /solutions/verily-study-watch, /study-watch and /products return 404. Older Study Watch stories (FDA clearance posts, validation papers) are still listed under /stories.",
+  "sources": [
+   {
+    "url": "https://verily.com/newsroom/verily-launches-free-version-of-its-pre-exchange-and-workbench-solutions-powering-precision-health-ai-and-discovery",
+    "type": "vendor_page",
+    "quote": "This launch introduces a free Standard tier account for individual researchers to access the Exchange and Workbench solutions",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://verily.com/newsroom/verily-and-samsung-collaborate-to-accelerate-clinical-research-with-the-galaxy-watch-and-pre-platform",
+    "type": "vendor_page",
+    "quote": "Through this collaboration, Verily will fully integrate sensor data from Samsung Galaxy Watch and make it accessible in its Viewpoint Evidence solution, which is built on the Verily Pre platform and enables research sponsors to run real-world studies with re-contactable participant cohorts.",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "verily",
   "name": "Verily (Study Watch)",
   "kind": "wearable",
   "field": "program_eligibility",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Workbench individual accounts are open to anyone with a Google identity; organisation users join through an enterprise contract. Viewpoint Evidence targets life sciences and government sponsors.",
+  "confidence": "Verified",
+  "scope": "Verily Pre Workbench and Viewpoint Evidence",
+  "recheck_by": "2026-11-21",
+  "sources": [
+   {
+    "url": "https://support.workbench.verily.com/docs/guides/admin/licensing_tiers/",
+    "type": "vendor_docs",
+    "quote": "Anyone with a Google account can sign up for an individual researcher Workbench account.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://support.workbench.verily.com/docs/guides/admin/licensing_tiers/",
+    "type": "vendor_docs",
+    "quote": "Organization account users are those who are invited to create a Workbench account through an enterprise that has a contractual relationship with Verily. They will be placed in the Enterprise tier.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://verily.com/newsroom/verily-and-samsung-collaborate-to-accelerate-clinical-research-with-the-galaxy-watch-and-pre-platform",
+    "type": "vendor_page",
+    "quote": "This joint offering aims to accelerate research for life sciences and government customers by combining advanced health analytics with consumer-grade wearable data.",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "verily",
   "name": "Verily (Study Watch)",
   "kind": "wearable",
   "field": "program_application",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Workbench Standard is self-serve sign-up, then a Data Use Agreement per data collection (including the Project Baseline Health Study Limited collection). Professional tier and Viewpoint go through Verily contact forms. Fuller Project Baseline (Study Watch) data for reproducibility is by request, subject to PBHS governance approval.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "note": "Whether the PBHS Limited collection includes Study Watch sensor data is not stated on any live page; the former data-catalog page (verily.com/solutions/platform/data-catalog/project-baseline) is dead.",
+  "sources": [
+   {
+    "url": "https://verily.com/newsroom/verily-launches-free-version-of-its-pre-exchange-and-workbench-solutions-powering-precision-health-ai-and-discovery",
+    "type": "vendor_page",
+    "quote": "Upon agreeing to a Data Use Agreement (DUA), researchers can instantly view and analyze a growing number of data collections, including the Project Baseline Health Study – Limited and PRESCO data collections.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11699500/",
+    "type": "paper",
+    "quote": "Requests are subject to approval by PBHS governance.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://verily.com/solutions/viewpoint",
+    "type": "vendor_page",
+    "quote": "Request a demo",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "verily",
   "name": "Verily (Study Watch)",
   "kind": "wearable",
   "field": "program_status",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Workbench Standard Researcher tier is live but labelled beta.",
+  "confidence": "Verified",
+  "scope": "Verily Pre Workbench Standard tier",
+  "recheck_by": "2026-11-21",
+  "sources": [
+   {
+    "url": "https://support.workbench.verily.com/docs/guides/admin/licensing_tiers/",
+    "type": "vendor_docs",
+    "quote": "The Standard Researcher tier is currently in beta mode. The features offered in this tier are subject to change.",
+    "retrieved": "2026-10-22"
+   }
+  ]
+ },
+ {
+  "company": "verily",
+  "name": "Verily (Study Watch)",
+  "kind": "wearable",
+  "field": "program_status",
+  "status": "conflict",
+  "value": "Study Watch appears discontinued but Verily has not said so on its own public pages. Press quoting an August 2025 internal memo and a spokesperson reports that Verily fully wound down its devices program, including \"Study Devices\", stopped manufacturing medical devices and will no longer support them, and every Study Watch product page is gone. Yet the Security and Trust page still lists \"Study Watch & Hub\" in its SOC 2 and ISO 27001 scope, and a third party, Quipment Inc. (Kennesaw, GA), registered as a repack or relabel establishment, added an FDA device listing for Study Watch (K182456) on 2026-05-12.",
+  "confidence": "Reported",
+  "scope": "Verily Study Watch",
+  "recheck_by": "2026-11-21",
+  "note": "The memo (dated 2025-08-25 by MD+DI) names \"Study Devices\" but not Study Watch; the HIT Consultant item names neither. The Quipment listing (establishment type Repack or Relabel Medical Device, initial-importer flag Y, product code DXH, created 2026-05-12) is the only registration listing openFDA returns for any Study Watch 510(k); none exists under Verily. It suggests units still move through third-party logistics, not that Verily supplies new studies. Ask Verily directly whether Study Watch can be supplied to new studies. The security-trust fetch_url carries a Next.js build ID (1y9FmmHH1nlmtBVxwLMlY) that changes on every Verily redeploy; update it when the quote goes missing.",
+  "sources": [
+   {
+    "url": "https://hitconsultant.net/2025/08/29/alphabets-verily-shuts-down-medical-device-division-shifts-focus-to-ai/",
+    "type": "secondary",
+    "quote": "difficult decision to discontinue manufacturing medical devices” and will no longer support them moving forward",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.mddionline.com/business/verily-permanently-ceases-medical-device-manufacturing",
+    "type": "secondary",
+    "quote": "we cannot support the investment of the resources necessary for the long-term growth and scaling of our Devices programs, and have therefore made the difficult decision to fully wind down the program.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.mddionline.com/business/verily-permanently-ceases-medical-device-manufacturing",
+    "type": "secondary",
+    "quote": "to Study Devices launched with numerous study partners",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://verily.com/security-trust",
+    "type": "vendor_page",
+    "fetch_url": "https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/security-trust.json",
+    "quote": "Retinal Service, Study Watch & Hub, and",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRL/rl.cfm?start_search=1&knumber=K182456",
+    "type": "regulator_db",
+    "fetch_url": "https://api.fda.gov/device/registrationlisting.json?search=k_number:K182456",
+    "quote": "QUIPMENT INC.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRL/rl.cfm?start_search=1&knumber=K182456",
+    "type": "regulator_db",
+    "fetch_url": "https://api.fda.gov/device/registrationlisting.json?search=k_number:K182456",
+    "quote": "Repack or Relabel Medical Device",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://verily.com/solutions/verily-study-watch",
+    "type": "vendor_page",
+    "expect_absent": true,
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "verily",
   "name": "Verily (Study Watch)",
   "kind": "wearable",
   "field": "developer_program_status",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "There is no public Study Watch API or SDK. The general researcher route, Workbench, is open to self-serve sign-up and documents a CLI (wb) and Terraform provider.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "note": "No developer or API documentation for Study Watch was found on verily.com, support.verily.com or support.workbench.verily.com.",
+  "sources": [
+   {
+    "url": "https://support.workbench.verily.com/docs/guides/admin/licensing_tiers/",
+    "type": "vendor_docs",
+    "quote": "Anyone with a Google account can sign up for an individual researcher Workbench account.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://support.workbench.verily.com/docs/release_notes/",
+    "type": "vendor_docs",
+    "quote": "November 11: Workbench is now part of Verily Pre",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "verily",
   "name": "Verily (Study Watch)",
   "kind": "wearable",
   "field": "user_cap",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Standard (free) tier is capped at 5 workspaces and 5 collaborators per workspace; Professional (paid) is unlimited. No participant caps published for Viewpoint.",
+  "confidence": "Verified",
+  "scope": "Verily Pre Workbench",
+  "recheck_by": "2026-11-21",
+  "sources": [
+   {
+    "url": "https://verily.com/solutions/pre-platform/workbench/upgrade-contact",
+    "type": "vendor_page",
+    "quote": "Number of workspaces 5 Unlimited",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://verily.com/solutions/pre-platform/workbench/upgrade-contact",
+    "type": "vendor_page",
+    "quote": "Number of collaborators per workspace 5 Unlimited",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "verily",
   "name": "Verily (Study Watch)",
   "kind": "wearable",
   "field": "academic_vs_commercial",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Access differs by tier (individual Standard or Professional vs contracted Enterprise), not by academic vs commercial status. No academic-specific terms are published.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "sources": [
+   {
+    "url": "https://support.workbench.verily.com/docs/guides/admin/licensing_tiers/",
+    "type": "vendor_docs",
+    "quote": "Enterprise users have access to all Workbench features, while Standard Researcher tier customers have restricted access.",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "verily",
   "name": "Verily (Study Watch)",
   "kind": "wearable",
   "field": "device_price",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Study Watch was an investigational device for research participants and not available to consumers; no list price was found. Galaxy Watch pricing in the Samsung bundle is not published by Verily.",
+  "confidence": "Corroborated",
+  "recheck_by": "2026-11-21",
+  "note": "Lowered from Verified. The sources say not available to consumers and investigational; \"never sold\" and \"no price ever published\" are inferences from absence.",
+  "sources": [
+   {
+    "url": "https://verily.com/stories/verily-study-watch-afib-clearance",
+    "type": "vendor_page",
+    "quote": "Study Watch will not be directly available to consumers.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://verily.com/stories/verily-study-watch-receives-fda-510-k-clearance-for-ecg",
+    "type": "vendor_page",
+    "quote": "In April of 2017, we launched Verily Study Watch, an investigational device for capturing health information from clinical research participants while serving as an easy-to-read watch for daily wear.",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "verily",
   "name": "Verily (Study Watch)",
   "kind": "wearable",
   "field": "subscription_price",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_applicable",
+  "value": "No consumer subscription for Study Watch or the research platform. Verily Me is a free consumer app, unrelated to device data access.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "sources": [
+   {
+    "url": "https://verily.com/solutions/verily-me",
+    "type": "vendor_page",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "verily",
   "name": "Verily (Study Watch)",
   "kind": "wearable",
   "field": "academic_pricing",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "value": "No academic or research discount published for Workbench Professional, Enterprise or Viewpoint.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "sources": [
+   {
+    "url": "https://verily.com/solutions/pre-platform/workbench/upgrade-contact",
+    "type": "vendor_page",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://support.workbench.verily.com/docs/guides/admin/licensing_tiers/",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://verily.com/solutions/viewpoint",
+    "type": "vendor_page",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "verily",
   "name": "Verily (Study Watch)",
   "kind": "wearable",
   "field": "api_platform_fees",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Workbench Standard is free; Professional is paid with no published price; cloud compute is billed to the researcher's own account on both tiers.",
+  "confidence": "Verified",
+  "scope": "Verily Pre Workbench",
+  "recheck_by": "2026-11-21",
+  "sources": [
+   {
+    "url": "https://verily.com/solutions/pre-platform/workbench/upgrade-contact",
+    "type": "vendor_page",
+    "quote": "Professional Researcher (Paid)",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://verily.com/solutions/pre-platform/workbench/upgrade-contact",
+    "type": "vendor_page",
+    "quote": "Compute billing Bring your own account Bring your own account",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "verily",
   "name": "Verily (Study Watch)",
   "kind": "wearable",
   "field": "minimum_commitment",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "value": "No minimum term or order published for Workbench Professional, Enterprise or Viewpoint.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "sources": [
+   {
+    "url": "https://verily.com/solutions/pre-platform/workbench/upgrade-contact",
+    "type": "vendor_page",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://verily.com/solutions/viewpoint",
+    "type": "vendor_page",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://verily.com/solutions/pre-platform",
+    "type": "vendor_page",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "verily",
   "name": "Verily (Study Watch)",
   "kind": "wearable",
   "field": "quote_required",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Yes for everything paid. Professional upgrade is through a contact form; Viewpoint and Pre are \"Request a demo\".",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "sources": [
+   {
+    "url": "https://verily.com/solutions/pre-platform/workbench/upgrade-contact",
+    "type": "vendor_page",
+    "quote": "Professional Researcher (Paid)",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://verily.com/solutions/viewpoint",
+    "type": "vendor_page",
+    "quote": "Request a demo",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "verily",
   "name": "Verily (Study Watch)",
   "kind": "wearable",
   "field": "raw_streams",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Study Watch recorded PPG and accelerometry at 30 Hz, ECG, heart rate and electrodermal activity, plus environmental sensors, and was reported at launch to hold up to a week of raw data on the device. Researchers outside Verily get its data only as de-identified Project Baseline data on approved request.",
+  "confidence": "Corroborated",
+  "scope": "Verily Study Watch (historical data)",
+  "recheck_by": "2026-11-21",
+  "note": "Verily's 2017 launch post (verily.com/blog/introducing-verily-study-watch, now redirecting to a 404 under /perspectives/) was the primary source for EDA and storage; only 2017 press coverage survives. MassDevice says \"up to a week's worth\" of raw data; the profile says \"weeks\".",
+  "sources": [
+   {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11699500/",
+    "type": "paper",
+    "quote": "The VSW captures biological signals through several sensors, including photoplethysmography (PPG) at 30 Hz and accelerometry at 30 Hz.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://verily.com/stories/verily-study-watch-receives-fda-510-k-clearance-for-ecg",
+    "type": "vendor_page",
+    "quote": "With built-in biometric, environmental and movement sensors, Study Watch can contribute to research efforts broadly.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.massdevice.com/verily-launches-biosensor-equipped-study-watch-clinical-study-patient-monitoring/",
+    "type": "secondary",
+    "quote": "is equipped with multiple sensors, including an electrocardiogram, and can monitor heart rate, electrodermal activity and inertial movements, with a battery life of up to 1 week.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.massdevice.com/verily-launches-biosensor-equipped-study-watch-clinical-study-patient-monitoring/",
+    "type": "secondary",
+    "quote": "to allow it to store up to a week’s worth of raw data and lower the need for frequent syncs.",
+    "retrieved": "2026-10-22"
+   }
+  ]
+ },
+ {
+  "company": "verily",
+  "name": "Verily (Study Watch)",
+  "kind": "wearable",
+  "field": "raw_streams",
+  "status": "stated",
+  "value": "Verily's chief product officer told MedCity News the Galaxy Watch bundle gives researchers raw device signals, such as PPG and accelerometer and gyroscope motion data. Verily's own press release says only that it will \"fully integrate sensor data\" and lists no streams, rates or raw-signal terms.",
+  "confidence": "Reported",
+  "scope": "Viewpoint Evidence with Samsung Galaxy Watch",
+  "recheck_by": "2026-11-21",
+  "note": "The raw-signal statement is the journalist's paraphrase of Myoung Cha, Verily's chief product officer, not a Verily document. Ask Verily which Galaxy Watch streams and rates Viewpoint delivers.",
+  "sources": [
+   {
+    "url": "https://medcitynews.com/2026/03/verily-samsung-wearable-smartwatch-healthcare-pharma-research/",
+    "type": "secondary",
+    "quote": "He also pointed out that the partnership will give researchers access to raw device signals, such as photoplethysmography and motion data from the Galaxy watches’ accelerometers and gyroscopes.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://verily.com/newsroom/verily-and-samsung-collaborate-to-accelerate-clinical-research-with-the-galaxy-watch-and-pre-platform",
+    "type": "vendor_page",
+    "quote": "Through this collaboration, Verily will fully integrate sensor data from Samsung Galaxy Watch and make it accessible in its Viewpoint Evidence solution, which is built on the Verily Pre platform and enables research sponsors to run real-world studies with re-contactable participant cohorts.",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "verily",
   "name": "Verily (Study Watch)",
   "kind": "wearable",
   "field": "derived_metrics",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Study Watch produced proprietary derived metrics including PPG inter-beat intervals with a per-beat quality flag, and an ambulatory-status classifier (10-second windows and total daily ambulatory time).",
+  "confidence": "Corroborated",
+  "scope": "Verily Study Watch",
+  "recheck_by": "2026-11-21",
+  "sources": [
+   {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11699500/",
+    "type": "paper",
+    "quote": "The IBIs are calculated at each heartbeat, and each IBI value is also accompanied by a binary quality metric",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://verily.com/stories/study-watch-another-step-closer-to-powering-precision-health",
+    "type": "vendor_page",
+    "quote": "Testing showed that the algorithm was accurate in classifying ambulatory status both within 10-second periods, and on daily aggregated metrics (i.e., total daily ambulatory time).",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "verily",
   "name": "Verily (Study Watch)",
   "kind": "wearable",
   "field": "sampling_rates",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "PPG 30 Hz and accelerometer 30 Hz (Study Watch, per a Verily-co-authored PBHS paper). No rates published for the Galaxy Watch integration.",
+  "confidence": "Corroborated",
+  "scope": "Verily Study Watch",
+  "recheck_by": "2026-11-21",
+  "sources": [
+   {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11699500/",
+    "type": "paper",
+    "quote": "The VSW captures biological signals through several sensors, including photoplethysmography (PPG) at 30 Hz and accelerometry at 30 Hz.",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "verily",
   "name": "Verily (Study Watch)",
   "kind": "wearable",
   "field": "history_depth",
-  "status": "unresearched",
-  "sources": []
+  "status": "unclear",
+  "value": "Study Watch data exist only as historical study datasets (Project Baseline ran from 2017); the coverage window of the PBHS Limited collection on Exchange is not stated on any live page. Nothing published for the Galaxy Watch cohort.",
+  "confidence": "Unclear",
+  "recheck_by": "2026-11-21",
+  "sources": [
+   {
+    "url": "https://verily.com/newsroom/verily-launches-free-version-of-its-pre-exchange-and-workbench-solutions-powering-precision-health-ai-and-discovery",
+    "type": "vendor_page",
+    "quote": "Upon agreeing to a Data Use Agreement (DUA), researchers can instantly view and analyze a growing number of data collections, including the Project Baseline Health Study – Limited and PRESCO data collections.",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "verily",
   "name": "Verily (Study Watch)",
   "kind": "wearable",
   "field": "export_routes",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No device-level export route. Data reach researchers through Verily Pre (Exchange data collections analysed inside Workbench under a DUA), through PBHS data requests, or as a Viewpoint sponsor. Workbench Standard users cannot bring their own data.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "sources": [
+   {
+    "url": "https://verily.com/newsroom/verily-launches-free-version-of-its-pre-exchange-and-workbench-solutions-powering-precision-health-ai-and-discovery",
+    "type": "vendor_page",
+    "quote": "Upon agreeing to a Data Use Agreement (DUA), researchers can instantly view and analyze a growing number of data collections, including the Project Baseline Health Study – Limited and PRESCO data collections.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11699500/",
+    "type": "paper",
+    "quote": "The deidentified PBHS data corresponding to this study are available upon request for the purpose of examining its reproducibility.",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "verily",
   "name": "Verily (Study Watch)",
   "kind": "wearable",
   "field": "rate_limits",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "value": "No API rate limits published; there is no public Study Watch or data API.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "sources": [
+   {
+    "url": "https://support.workbench.verily.com/docs/release_notes/",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://support.workbench.verily.com/docs/guides/admin/licensing_tiers/",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://support.verily.com/kb/en",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "verily",
   "name": "Verily (Study Watch)",
   "kind": "wearable",
   "field": "retention_terms",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "The general privacy policy keeps personal information as long as necessary for the collection purpose (it excludes HIPAA-covered and research-study data handled for sponsors). Workbench release notes say Verily may delete trial accounts' data when the licence expires.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "note": "The privacy-policy fetch_url carries a Next.js build ID (1y9FmmHH1nlmtBVxwLMlY) that changes on every Verily redeploy; update it when the quote goes missing.",
+  "sources": [
+   {
+    "url": "https://verily.com/privacy-policy",
+    "type": "vendor_legal",
+    "fetch_url": "https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/privacy-policy.json",
+    "quote": "We generally keep Personal Information for as long as necessary for performing the purposes for which we collected it unless applicable laws and regulations require us to keep it for longer.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://support.workbench.verily.com/docs/release_notes/",
+    "type": "vendor_docs",
+    "quote": "Any data brought by these accounts is subject to deletion when the license expires.",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "verily",
   "name": "Verily (Study Watch)",
   "kind": "wearable",
   "field": "ai_training_terms",
-  "status": "unresearched",
-  "sources": []
+  "status": "unclear",
+  "value": "No explicit AI or model-training clause found. The privacy policy allows de-identified data to be used \"at our discretion\" for research analysis, and personal data for product development; study data handled as processor fall under sponsor terms instead.",
+  "confidence": "Unclear",
+  "recheck_by": "2026-11-21",
+  "note": "Searched the privacy policy and terms for \"artificial intelligence\", \"machine learning\" and \"train\" on 2026-10-22; no model-training clause. Both fetch_urls carry a Next.js build ID (1y9FmmHH1nlmtBVxwLMlY) that changes on every Verily redeploy; update it when the quotes go missing.",
+  "sources": [
+   {
+    "url": "https://verily.com/privacy-policy",
+    "type": "vendor_legal",
+    "fetch_url": "https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/privacy-policy.json",
+    "quote": "We may use or disclose such data at our discretion, such as for statistical and research analysis.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://verily.com/privacy-policy",
+    "type": "vendor_legal",
+    "fetch_url": "https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/privacy-policy.json",
+    "quote": "including product development and improvement, account management, and legal, security, and safety purposes.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://verily.com/terms",
+    "type": "vendor_legal",
+    "fetch_url": "https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/terms.json",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "verily",
   "name": "Verily (Study Watch)",
   "kind": "wearable",
   "field": "deprecations",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Verily fully wound down its medical device program and stopped manufacturing and supporting devices (internal memo of August 2025, reported by press). Its other devices are marked \"Not in Commercial Distribution\" in GUDID (retinal cameras ended 2026-04-27; Onduo December 2025). Study Watch has no GUDID record and its product pages are gone. Platform renames since then include Data Discovery becoming Data Exchange (30 Sep 2025) and Workbench moving into Verily Pre (11 Nov 2025).",
+  "confidence": "Corroborated",
+  "recheck_by": "2026-11-21",
+  "note": "Verily has published no dated Study Watch end-of-life notice of its own; the device-program exit is sourced to press quoting the CEO's memo and a spokesperson.",
+  "sources": [
+   {
+    "url": "https://hitconsultant.net/2025/08/29/alphabets-verily-shuts-down-medical-device-division-shifts-focus-to-ai/",
+    "type": "secondary",
+    "quote": "difficult decision to discontinue manufacturing medical devices” and will no longer support them moving forward",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.mddionline.com/business/verily-permanently-ceases-medical-device-manufacturing",
+    "type": "secondary",
+    "quote": "we cannot support the investment of the resources necessary for the long-term growth and scaling of our Devices programs, and have therefore made the difficult decision to fully wind down the program.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://accessgudid.nlm.nih.gov/devices/search?query=verily",
+    "type": "regulator_db",
+    "fetch_url": "https://api.fda.gov/device/udi.json?search=company_name:%22Verily%22&limit=20",
+    "quote": "Not in Commercial Distribution",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://support.workbench.verily.com/docs/release_notes/",
+    "type": "vendor_docs",
+    "quote": "September 30: Data Discovery becomes Data Exchange",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://verily.com/solutions/verily-study-watch",
+    "type": "vendor_page",
+    "expect_absent": true,
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "verily",
   "name": "Verily (Study Watch)",
   "kind": "wearable",
   "field": "baa",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Verily says it acts as a business associate when subject to HIPAA for research sponsors; no standalone BAA offer page.",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-20",
+  "note": "The privacy-policy fetch_url carries a Next.js build ID (1y9FmmHH1nlmtBVxwLMlY) that changes on every Verily redeploy; update it when the quote goes missing.",
+  "sources": [
+   {
+    "url": "https://verily.com/privacy-policy",
+    "type": "vendor_legal",
+    "fetch_url": "https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/privacy-policy.json",
+    "quote": "For example, Verily may manage wellness programs and research studies as a “processor” (or “business associate” when subject to HIPAA) to our business customers, such as  research study sponsors.",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "verily",
   "name": "Verily (Study Watch)",
   "kind": "wearable",
   "field": "dpa",
-  "status": "unresearched",
-  "sources": []
+  "status": "unclear",
+  "value": "Verily says it acts as a processor for business customers such as study sponsors, implying processor terms, but no DPA is published or explicitly offered.",
+  "confidence": "Unclear",
+  "recheck_by": "2027-01-20",
+  "note": "Privacy policy and terms searched for \"processing agreement\" and \"Data Processing\" on 2026-10-22, no hits. The privacy-policy fetch_url carries a Next.js build ID (1y9FmmHH1nlmtBVxwLMlY) that changes on every Verily redeploy; update it when the quote goes missing.",
+  "sources": [
+   {
+    "url": "https://verily.com/privacy-policy",
+    "type": "vendor_legal",
+    "fetch_url": "https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/privacy-policy.json",
+    "quote": "For example, Verily may manage wellness programs and research studies as a “processor” (or “business associate” when subject to HIPAA) to our business customers, such as  research study sponsors.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://verily.com/security-trust",
+    "type": "vendor_page",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "verily",
   "name": "Verily (Study Watch)",
   "kind": "wearable",
   "field": "hipaa_statement",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Verily claims independent HIPAA Security and Privacy Rule audits for Lightpath, Retinal Service, Site CTMS and Onduo. Study Watch, Workbench and Viewpoint are not in that list.",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-20",
+  "note": "The security-trust fetch_url carries a Next.js build ID (1y9FmmHH1nlmtBVxwLMlY) that changes on every Verily redeploy; update it when the quote goes missing.",
+  "sources": [
+   {
+    "url": "https://verily.com/security-trust",
+    "type": "vendor_page",
+    "fetch_url": "https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/security-trust.json",
+    "quote": "Independent audits to protect electronic health information (ePHI) through implementation of administrative, physical, and technical safeguards built into",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "verily",
   "name": "Verily (Study Watch)",
   "kind": "wearable",
   "field": "gdpr_statement",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Privacy policy (Verily Health Inc., effective 2026-04-14) covers EU, UK and Swiss data, states participation in the EU-U.S. Data Privacy Framework and its UK and Swiss extensions, and uses standard contractual clauses for transfers.",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-20",
+  "note": "The general GDPR position is a self-claim and stays Corroborated; DPF participation itself is confirmed on the registry in the scoped entry below. The privacy-policy fetch_url carries a Next.js build ID (1y9FmmHH1nlmtBVxwLMlY) that changes on every Verily redeploy; update it when the quote goes missing.",
+  "sources": [
+   {
+    "url": "https://verily.com/privacy-policy",
+    "type": "vendor_legal",
+    "fetch_url": "https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/privacy-policy.json",
+    "quote": "Verily complies with the EU-U.S. Data Privacy Framework (EU-U.S. DPF), the UK Extension to the EU-U.S. DPF, and the Swiss-U.S. Data Privacy Framework (Swiss-U.S. DPF) as set forth by the U.S. Department of Commerce.",
+    "retrieved": "2026-10-22"
+   }
+  ]
+ },
+ {
+  "company": "verily",
+  "name": "Verily (Study Watch)",
+  "kind": "wearable",
+  "field": "gdpr_statement",
+  "scope": "Data Privacy Framework certification",
+  "status": "stated",
+  "value": "Two Verily entities, both in Dallas, TX, are listed Active on the Commerce Department's Data Privacy Framework registry under the EU-U.S. DPF, the Swiss-U.S. DPF and the UK Extension (HR and non-HR data for EU and UK, non-HR for Swiss). Verily Health Inc. (OrganizationId 10091, the entity named in the current privacy policy): certified 2026-04-20, next certification due 2027-04-20, no inactive periods. Verily Life Sciences, LLC (OrganizationId 7768): EU-U.S. and Swiss-U.S. since 2018-02-02, UK Extension since 2025-01-13, next certification due 2027-03-12, with lapses 2024-02-12 to 2025-01-13 and 2025-02-18 to 2025-03-17. Verification method for both: self-assessment.",
+  "confidence": "Verified",
+  "recheck_by": "2027-01-20",
+  "note": "Found on 2026-10-22 with the registry list page's own read-only search (the POST it makes to dpfapi.azurewebsites.net/api/participants) for \"Verily\", which returned exactly these two Active records. A DPF listing confirms the transfer mechanism, not GDPR compliance as a whole.",
+  "sources": [
+   {
+    "url": "https://www.dataprivacyframework.gov/list",
+    "fetch_url": "https://dpfapi.azurewebsites.net/api/participants/10091",
+    "type": "certificate",
+    "quote": "Verily Health Inc. Verily Health Inc.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.dataprivacyframework.gov/list",
+    "fetch_url": "https://dpfapi.azurewebsites.net/api/participants/10091",
+    "type": "certificate",
+    "quote": "EU-US Certification Active 2026-04-20T12:00:00+00:00 2027-04-20T12:00:00+00:00",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.dataprivacyframework.gov/list",
+    "fetch_url": "https://dpfapi.azurewebsites.net/api/participants/10091",
+    "type": "certificate",
+    "quote": "SW-US Certification Active 2026-04-20T12:00:00+00:00 2027-04-20T12:00:00+00:00",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.dataprivacyframework.gov/list",
+    "fetch_url": "https://dpfapi.azurewebsites.net/api/participants/10091",
+    "type": "certificate",
+    "quote": "UK Extension Certification Active 2026-04-20T12:00:00+00:00 2027-04-20T12:00:00+00:00",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.dataprivacyframework.gov/list",
+    "fetch_url": "https://dpfapi.azurewebsites.net/api/participants/7768",
+    "type": "certificate",
+    "quote": "Verily Life Sciences, LLC Verily Life Sciences, LLC",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.dataprivacyframework.gov/list",
+    "fetch_url": "https://dpfapi.azurewebsites.net/api/participants/7768",
+    "type": "certificate",
+    "quote": "EU-US Certification Active 2018-02-02T12:00:00+00:00 2027-03-12T12:00:00+00:00",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.dataprivacyframework.gov/list",
+    "fetch_url": "https://dpfapi.azurewebsites.net/api/participants/7768",
+    "type": "certificate",
+    "quote": "SW-US Certification Active 2018-02-02T12:00:00+00:00 2027-03-12T12:00:00+00:00",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.dataprivacyframework.gov/list",
+    "fetch_url": "https://dpfapi.azurewebsites.net/api/participants/7768",
+    "type": "certificate",
+    "quote": "UK Extension Certification Active 2025-01-13T12:00:00+00:00 2027-03-12T12:00:00+00:00",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.dataprivacyframework.gov/list",
+    "fetch_url": "https://dpfapi.azurewebsites.net/api/participants/7768",
+    "type": "certificate",
+    "quote": "Lapse 2024-02-12T12:00:00+00:00 2025-01-13T12:00:00+00:00",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.dataprivacyframework.gov/list",
+    "fetch_url": "https://dpfapi.azurewebsites.net/api/participants/7768",
+    "type": "certificate",
+    "quote": "Lapse 2025-02-18T12:00:00+00:00 2025-03-17T12:00:00+00:00",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "verily",
   "name": "Verily (Study Watch)",
   "kind": "wearable",
   "field": "iso27001",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Verily claims ISO/IEC 27001 certification covering Lightpath, Onduo, Research Sponsor (Project Baseline), Site CTMS, Retinal Service, Study Watch & Hub, and Workbench. Certificate not published (the page shows a Coalfire certification seal); reports may need an NDA.",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-20",
+  "note": "The security-trust fetch_url carries a Next.js build ID (1y9FmmHH1nlmtBVxwLMlY) that changes on every Verily redeploy; update it when the quotes go missing.",
+  "sources": [
+   {
+    "url": "https://verily.com/security-trust",
+    "type": "vendor_page",
+    "fetch_url": "https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/security-trust.json",
+    "quote": "Certified compliant to this set of internationally-recognized standards for information security management in",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://verily.com/security-trust",
+    "type": "vendor_page",
+    "fetch_url": "https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/security-trust.json",
+    "quote": "Retinal Service, Study Watch & Hub, and",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "verily",
   "name": "Verily (Study Watch)",
   "kind": "wearable",
   "field": "soc2",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Verily claims a SOC 2 Type II audit for the same product list (including Study Watch & Hub and Workbench). Report available only on request, possibly under NDA.",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-20",
+  "note": "The first source's fetch_url carries a Next.js build ID (1y9FmmHH1nlmtBVxwLMlY) that changes on every Verily redeploy; update it when the quote goes missing. The NDA sentence is in the static HTML and needs no fetch_url.",
+  "sources": [
+   {
+    "url": "https://verily.com/security-trust",
+    "type": "vendor_page",
+    "fetch_url": "https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/security-trust.json",
+    "quote": "Third-party audit that assesses security controls and practices for the following solutions",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://verily.com/security-trust",
+    "type": "vendor_page",
+    "quote": "For additional information, such as access to attestation reports or product architecture details/white papers, a NDA may be required.",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "verily",
   "name": "Verily (Study Watch)",
   "kind": "wearable",
   "field": "fda_clearances",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Three 510(k) clearances, product code DXH, all to Verily Life Sciences, LLC: K182456 Study Watch (single-lead ECG), decided 2019-01-17; K192415 Study Watch with Irregular Pulse Monitor, 2020-01-17; K213357 Study Watch with Irregular Pulse Monitor (Home), 2022-07-19. No GUDID record exists for Study Watch. The only registration listing openFDA returns for any of the three is K182456 by Quipment Inc., a repack or relabel establishment (created 2026-05-12); none is listed under Verily.",
+  "confidence": "Verified",
+  "recheck_by": "2027-01-20",
+  "note": "A clearance is not evidence of current supply. openFDA registrationlisting searches on 2026-10-22 for k_number K192415 and K213357, and for owner-operator firm name Verily, returned no matches. openFDA also lists K242508 (Verily Numetric Retinal Camera), not a wearable. MD+DI (2025-08-28) reports that in 2021 FDA denied Verily's bid to add a Parkinson's disease exam tool to the watch; no FDA record of that request was looked up for this record.",
+  "sources": [
+   {
+    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K182456",
+    "type": "regulator_db",
+    "fetch_url": "https://api.fda.gov/device/510k.json?search=k_number:K182456",
+    "quote": "Verily Life Sciences, LLC",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K182456",
+    "type": "regulator_db",
+    "fetch_url": "https://api.fda.gov/device/510k.json?search=k_number:K182456",
+    "quote": "2019-01-17",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K192415",
+    "type": "regulator_db",
+    "fetch_url": "https://api.fda.gov/device/510k.json?search=k_number:K192415",
+    "quote": "Study Watch with Irregular Pulse Monitor",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K192415",
+    "type": "regulator_db",
+    "fetch_url": "https://api.fda.gov/device/510k.json?search=k_number:K192415",
+    "quote": "2020-01-17",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K213357",
+    "type": "regulator_db",
+    "fetch_url": "https://api.fda.gov/device/510k.json?search=k_number:K213357",
+    "quote": "Study Watch with Irregular Pulse Monitor (Home), Study Watch with Irregular Pulse Monitor",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K213357",
+    "type": "regulator_db",
+    "fetch_url": "https://api.fda.gov/device/510k.json?search=k_number:K213357",
+    "quote": "2022-07-19",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRL/rl.cfm?start_search=1&knumber=K182456",
+    "type": "regulator_db",
+    "fetch_url": "https://api.fda.gov/device/registrationlisting.json?search=k_number:K182456",
+    "quote": "2026-05-12",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "verily",
   "name": "Verily (Study Watch)",
   "kind": "wearable",
   "field": "data_residency",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "General privacy policy says data may be stored outside the user's country, including in the United States. Workbench lets data owners apply region policies on GCP- and AWS-backed collections.",
+  "confidence": "Verified",
+  "recheck_by": "2027-01-20",
+  "note": "The privacy-policy fetch_url carries a Next.js build ID (1y9FmmHH1nlmtBVxwLMlY) that changes on every Verily redeploy; update it when the quote goes missing.",
+  "sources": [
+   {
+    "url": "https://verily.com/privacy-policy",
+    "type": "vendor_legal",
+    "fetch_url": "https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/privacy-policy.json",
+    "quote": "we may use or store the Personal Information collected through the Services on servers located outside the country where you live, including in the United States.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://support.workbench.verily.com/docs/guides/governance/region_policy/",
+    "type": "vendor_docs",
+    "quote": "Region policies can be applied to both GCP- and AWS-backed data collections.",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "whoop",
@@ -38330,239 +40243,948 @@
   "name": "Zepp Health (Amazfit)",
   "kind": "wearable",
   "field": "research_program",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No named, open research or academic access program. Zepp describes bespoke research collaborations (Stanford sleep study, UCSD Center for Wearable Sensors membership, NTNU on PAI, Peking University First Hospital AF study, Chinese universities) and a \"data analytics services\" offer aimed at researchers, providers, insurers and employers, with partnerships at 20 research labs, hospitals, pharma companies and universities as of end 2020. The only documented data route for third parties is the legacy Huami/Zepp Open Platform \"data cooperation\" OAuth Web API (see developer_program_status).",
+  "confidence": "Corroborated",
+  "recheck_by": "2026-11-21",
+  "note": "The Stanford collaboration ran through a dedicated Zepp-built iOS app, \"STF Sleep Research\" (developer Zepp Inc., version 3.3.4, last updated 2021-03-05 per the iTunes lookup API), which syncs steps, sleep and heart rate to Apple Health. It shows study-specific apps are one collaboration route, not a public offer. The zepp.com footer's \"Academics\" link points to the technology page's academic section, not to a program page. The data-analytics page is dated in its own content (\"42 million active users by the first half of 2021\") and has no application route. The 2025 Form 20-F (filed 2026-04-24) still lists \"data analytics capabilities\" as a software and data service; sec.gov refuses the project fetcher, so that wording was read by hand and is not quoted.",
+  "sources": [
+   {
+    "url": "https://www.zepp.com/technology-2",
+    "type": "vendor_page",
+    "quote": "Zepp Health has collaborated with universities around the world for research and development, operations, and education",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.zepp.com/technology-2",
+    "type": "vendor_page",
+    "quote": "Joint Study of the Effects of Sleep on Physical Recovery With the Stanford University Center for Sleep Sciences and Medicine.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.zepp.com/data-analytics",
+    "type": "vendor_page",
+    "quote": "At the end of 2020, Zepp Health had partnerships with 20 independent research laboratories, hospitals, pharmaceutical companies and universities",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://apps.apple.com/us/app/stf-sleep-research/id1345157553",
+    "type": "app_store",
+    "quote": "The app will help Stanford University researchers to study Sleep Sciences.",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "zepp-amazfit",
   "name": "Zepp Health (Amazfit)",
   "kind": "wearable",
   "field": "program_eligibility",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No eligibility rules for a research program are published. For the legacy Open Platform data API: corporate applicants only, not individuals; a PhD researcher must apply in the name of the institution.",
+  "confidence": "Corroborated",
+  "recheck_by": "2026-11-21",
+  "note": "The wiki was last edited on 2020-11-27 and names old devices (Mi Band, Amazfit ARC/PACE), so current rules may differ. Corroborated, not Verified, for that reason.",
+  "sources": [
+   {
+    "url": "https://github.com/zepp-health/rest-api/wiki",
+    "type": "vendor_docs",
+    "quote": "Data cooperation currently only supports corporate users, not individual users; if you are a PhD for scientific research purposes, you need to apply in the name of the school.",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "zepp-amazfit",
   "name": "Zepp Health (Amazfit)",
   "kind": "wearable",
   "field": "program_application",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Research and developer enquiries go to developer@zepp.com (contact page). Legacy data API: register and apply on the Zepp Open Platform (dev.huami.com), 3 to 7 day review, then submit the cooperation details (country, platform, business, user numbers, needs); escalation to datapartner@huami.com. A December 2021 applicant quotes the Open Platform's own application docs (item 4) as saying a Zepp business representative will make contact and sign an agreement, and reports that Zepp then replied that the API must be paid for and equipment bought.",
+  "confidence": "Corroborated",
+  "recheck_by": "2026-11-21",
+  "note": "dev.huami.com is a JavaScript app whose registration flow includes an \"enterpriseFastTrack\" sign-up route; it was not logged into. The issue-25 \"business representative\" sentence is the applicant quoting the dev.huami.com docs (page data-applyfor), which are script-rendered and could not be quoted directly; hence type secondary.",
+  "sources": [
+   {
+    "url": "https://www.zepp.com/contact-us",
+    "type": "vendor_page",
+    "quote": "For Researchers & Developers developer@zepp.com",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/zepp-health/rest-api/wiki",
+    "type": "vendor_docs",
+    "quote": "The review period is 3-7 days, please wait patiently.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/zepp-health/rest-api/issues/25",
+    "type": "secondary",
+    "quote": "A Zepp business representative will contact you to learn more about your needs, and then sign an agreement with you.",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "zepp-amazfit",
   "name": "Zepp Health (Amazfit)",
   "kind": "wearable",
   "field": "program_status",
-  "status": "unresearched",
-  "sources": []
+  "status": "unclear",
+  "value": "No research program page exists to have a status. The legacy Open Platform is still online on 2026-10-22 (dev.huami.com serves \"Zepp Open Platform\"; api-open.huami.com and auth.huami.com return JSON API errors, not dead hosts), but its wiki was last edited 2020-11-27, the repo's last commit is 2020-12-29, and a 2022 applicant reported that after business approval the old platform was deprecated and the new Zepp Console only accepts Zepp OS app packages. That issue has no answer from Zepp. Whether new data partners are accepted today is not stated.",
+  "confidence": "Unclear",
+  "recheck_by": "2026-11-21",
+  "note": "Corrected from draft A, which said Zepp staff fixed a doc link in June 2026. Issue 28 (opened 2026-04-28) reports the wiki's api-doc link to huamitech.github.io is broken (it returns 404); the only reply, on 2026-06-24, is a bare working URL from an account with no stated affiliation and GitHub author_association NONE, and the wiki itself was not edited. It shows the docs are still hosted, not that Zepp is maintaining them. Probes on 2026-10-22: api-open.huami.com/users/-/profile answered HTTP 400 \"Missing required parameter 'Authorization'\"; auth.huami.com/oauth2/authorize answered HTTP 405. Only Zepp (developer@zepp.com or datapartner@huami.com) can say whether applications are still reviewed.",
+  "sources": [
+   {
+    "url": "https://dev.huami.com/",
+    "type": "vendor_page",
+    "quote": "Zepp Open Platform",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/zepp-health/rest-api/issues/26",
+    "type": "secondary",
+    "quote": "because old platform was deprecated",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/zepp-health/rest-api/issues/28",
+    "type": "secondary",
+    "quote": "https://zepp-health.github.io/rest-api/api-doc.html",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "zepp-amazfit",
   "name": "Zepp Health (Amazfit)",
   "kind": "wearable",
   "field": "developer_program_status",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Two programs. (1) Zepp OS developer program, open: free SDK, Zeus CLI, simulator and Zepp Console for watch Mini Programs and watch faces, published through a store review. (2) Legacy Huami/Zepp Open Platform OAuth 2.0 Web API (api-open.huami.com) for cloud data, by application and review for corporate partners; subscriptions (webhooks) for invited partners only; docs last updated 2020; open-to-new-applicants status unclear.",
+  "confidence": "Corroborated",
+  "recheck_by": "2026-11-21",
+  "note": "The Android OAuth consent SDK repo (github.com/zepp-health/oauth-Android-sdk) has a commit titled \"release |> hmauth/0.0.6\" dated 2025-11-28, the first since 2022 (no GitHub release object; the only tag is v0.0.5). That is weak evidence the OAuth route is still maintained; it does not show the partner program is open.",
+  "sources": [
+   {
+    "url": "https://developer.zepp.com/os/home",
+    "type": "vendor_docs",
+    "quote": "Tools and resources to help you build Zepp App faster and easier, across every Zepp OS device.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://docs.zepp.com/docs/distribute/",
+    "type": "vendor_docs",
+    "quote": "you can select the application you want to publish and Submit it for review",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/zepp-health/rest-api/wiki",
+    "type": "vendor_docs",
+    "quote": "Subscription notification is available to invited partners only.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.zepp.com/technology-2",
+    "type": "vendor_page",
+    "quote": "The Zepp ecosystem is supported by a growing global Zepp developer community who are encouraged to develop new apps and watch faces using Zepp OS Software Development Kit (SDK).",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "zepp-amazfit",
   "name": "Zepp Health (Amazfit)",
   "kind": "wearable",
   "field": "user_cap",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "note": "No participant or user limit is published for either the Open Platform data API or Zepp OS apps.",
+  "sources": [
+   {
+    "url": "https://github.com/zepp-health/rest-api/wiki",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://docs.zepp.com/docs/distribute/",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.zepp.com/data-analytics",
+    "type": "vendor_page",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "zepp-amazfit",
   "name": "Zepp Health (Amazfit)",
   "kind": "wearable",
   "field": "academic_vs_commercial",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No separate academic track. The legacy data API treats academics as institutional (corporate) applicants; individuals cannot apply. Commercial data-analytics customers (insurers, employers, wellness programs) are served by contract.",
+  "confidence": "Corroborated",
+  "recheck_by": "2026-11-21",
+  "sources": [
+   {
+    "url": "https://github.com/zepp-health/rest-api/wiki",
+    "type": "vendor_docs",
+    "quote": "Data cooperation currently only supports corporate users, not individual users; if you are a PhD for scientific research purposes, you need to apply in the name of the school.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.zepp.com/data-analytics",
+    "type": "vendor_page",
+    "quote": "The data collected from users can have tremendous value for medical researchers and healthcare providers, as well as for population health managers such as insurers, employers and wellness program providers.",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "zepp-amazfit",
   "name": "Zepp Health (Amazfit)",
   "kind": "wearable",
   "field": "device_price",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "US store list prices on 2026-10-22, examples: Active 2 (Round) from $99.99; Helio Strap (screenless band) $99.99; Balance 3 $369.99 to $449.99. Range in the store runs from about $50 (earbuds) to $649.99 (T-Rex Dual Solar).",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "note": "Range figures come from the store's public products.json listing (us.amazfit.com/products.json), not a quote.",
+  "sources": [
+   {
+    "url": "https://us.amazfit.com/products/active-2-round",
+    "type": "vendor_page",
+    "quote": "Active 2 (Round) All Day. All Night. All You. $99.99",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://us.amazfit.com/products/helio-strap",
+    "type": "vendor_page",
+    "quote": "Helio Strap No screen. No noise. Just your body’s data. Regular price $99.99",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://us.amazfit.com/products/balance-3",
+    "type": "vendor_page",
+    "quote": "Balance 3 Train with Structure. $369.99 - $449.99",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "zepp-amazfit",
   "name": "Zepp Health (Amazfit)",
   "kind": "wearable",
   "field": "subscription_price",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Core features need no subscription. Optional Zepp Aura Premium (AI sleep and wellness coaching) and fitness membership are sold in the app; the US App Store lists in-app plans including a $9.99 monthly plan and yearly plans from $29.99 to $49.99, without naming which product each belongs to.",
+  "confidence": "Corroborated",
+  "recheck_by": "2026-11-21",
+  "note": "The aura.zepp.com store lists \"1 year of Zepp Aura Premium\" at $69.99 in its products.json, but the price is rendered by script and could not be quote-confirmed.",
+  "sources": [
+   {
+    "url": "https://apps.apple.com/us/app/zepp/id1127269366",
+    "type": "app_store",
+    "quote": "Zepp Aura Premium Subscription is available for a monthly or yearly fee, but there's no obligation to sign up",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://apps.apple.com/us/app/zepp/id1127269366",
+    "type": "app_store",
+    "quote": "Monthly, 7-Day Free Trial $9.99",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://apps.apple.com/us/app/zepp/id1127269366",
+    "type": "app_store",
+    "quote": "Yearly, 14 Day Free Trial $29.99",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://us.amazfit.com/products/helio-strap",
+    "type": "vendor_page",
+    "quote": "Helio Strap No required subscription",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "zepp-amazfit",
   "name": "Zepp Health (Amazfit)",
   "kind": "wearable",
   "field": "academic_pricing",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "note": "No research or institutional pricing is published. The US store links consumer \"Military, Teacher, Medical Discounts\" and a student-discount page, which are not research programs.",
+  "sources": [
+   {
+    "url": "https://us.amazfit.com/pages/student-discount",
+    "type": "vendor_page",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.zepp.com/data-analytics",
+    "type": "vendor_page",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.zepp.com/contact-us",
+    "type": "vendor_page",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "zepp-amazfit",
   "name": "Zepp Health (Amazfit)",
   "kind": "wearable",
   "field": "api_platform_fees",
-  "status": "unresearched",
-  "sources": []
+  "status": "unclear",
+  "value": "Zepp OS SDK tools are free to use (Zeus CLI is an ISC-licensed npm package). No fee schedule is published for the Open Platform data API, but a 2021 applicant reports Zepp replied that API access must be paid for and devices bought.",
+  "confidence": "Reported",
+  "recheck_by": "2026-11-21",
+  "note": "The only evidence of a fee is the applicant's December 2021 report of Zepp's reply (issue 25, closed 2023-06-07 with no comment from Zepp), so Reported is the ceiling and the amount is unknown. Integrators (Terra, Thryve) charge their own fees for Zepp access; their pricing was not recorded here.",
+  "sources": [
+   {
+    "url": "https://github.com/zepp-health/rest-api/issues/25",
+    "type": "secondary",
+    "quote": "You need to pay for our API and purchase our equipment. Are you willing to purchase",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/zepp-health/rest-api/wiki",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "zepp-amazfit",
   "name": "Zepp Health (Amazfit)",
   "kind": "wearable",
   "field": "minimum_commitment",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "note": "The 2021 issue report implies a device purchase may be expected of data partners, but no minimum is stated.",
+  "sources": [
+   {
+    "url": "https://github.com/zepp-health/rest-api/wiki",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.zepp.com/data-analytics",
+    "type": "vendor_page",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://us.amazfit.com/products/helio-strap",
+    "type": "vendor_page",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "zepp-amazfit",
   "name": "Zepp Health (Amazfit)",
   "kind": "wearable",
   "field": "quote_required",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Devices are sold at public list prices. Data partnership and data-analytics terms are by agreement after contact with Zepp (no public price list).",
+  "confidence": "Corroborated",
+  "recheck_by": "2026-11-21",
+  "sources": [
+   {
+    "url": "https://github.com/zepp-health/rest-api/issues/25",
+    "type": "secondary",
+    "quote": "A Zepp business representative will contact you to learn more about your needs, and then sign an agreement with you.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.zepp.com/contact-us",
+    "type": "vendor_page",
+    "quote": "For Researchers & Developers developer@zepp.com",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "zepp-amazfit",
   "name": "Zepp Health (Amazfit)",
   "kind": "wearable",
   "field": "raw_streams",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "scope": "Zepp OS on-watch apps",
+  "value": "A custom Zepp OS Mini Program can read accelerometer (x, y, z in cm/s^2), gyroscope (deg/s), barometer, compass and GPS on the watch, each behind a permission; heart rate is exposed as computed BPM values, and no raw PPG or ECG waveform API is documented.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "note": "Absence of a PPG API is judged from the full @zos/sensor module listing (docs.zepp.com/llms-full.txt), which has no PPG class. Sensor APIs need API_LEVEL 3.0, so older watches are excluded.",
+  "sources": [
+   {
+    "url": "https://docs.zepp.com/docs/reference/device-app-api/newAPI/sensor/Accelerometer/",
+    "type": "vendor_docs",
+    "quote": "Measure the acceleration of the device along three orthogonal axes (x, y, z)",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://docs.zepp.com/docs/reference/device-app-api/newAPI/sensor/Gyroscope/",
+    "type": "vendor_docs",
+    "quote": "Measuring the angular velocity of the device rotating along three orthogonal axes (x, y, z)",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://docs.zepp.com/docs/reference/device-app-api/newAPI/sensor/Accelerometer/",
+    "type": "vendor_docs",
+    "quote": "permission code: device:os.accelerometer",
+    "retrieved": "2026-10-22"
+   }
+  ]
+ },
+ {
+  "company": "zepp-amazfit",
+  "name": "Zepp Health (Amazfit)",
+  "kind": "wearable",
+  "field": "raw_streams",
+  "status": "stated",
+  "scope": "Legacy Open Platform Web API",
+  "value": "The legacy Web API documents raw ECG (250 samples per second, from ECG-capable devices), per-minute raw motion data, and user-tagged sensor files (example shows a PPG CSV). Whether these endpoints still serve current devices is not stated.",
+  "confidence": "Reported",
+  "recheck_by": "2026-11-21",
+  "note": "ECG doc page footer says last updated 2018-03-08. Reported because the docs are years old and current availability is unconfirmed.",
+  "sources": [
+   {
+    "url": "https://zepp-health.github.io/rest-api/api-ecg-doc.html",
+    "type": "vendor_docs",
+    "quote": "standard ecg data, every point stand for 1/250 mv",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/zepp-health/rest-api/wiki",
+    "type": "vendor_docs",
+    "quote": "The motion scope includes raw motion sensor data per minute of a day, consists of 1440(total minutes of one day)*3 bytes",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://zepp-health.github.io/rest-api/api-sensor-doc.html",
+    "type": "vendor_docs",
+    "quote": "The name of the pre-defined behavior, like sleep",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "zepp-amazfit",
   "name": "Zepp Health (Amazfit)",
   "kind": "wearable",
   "field": "derived_metrics",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "On watch (Zepp OS): heart rate, resting HR, daily HR summary, AFib records, SpO2, stress, sleep (score, stages, times), steps, calories, distance, PAI, stand, fat burning, body temperature, workouts. Legacy Web API scopes: profile, activity (steps, distance, calories), sleep, heart rate, motion, sport summary and detail, PAI. Integrators (Terra, Thryve) expose activity, daily and sleep data.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "sources": [
+   {
+    "url": "https://docs.zepp.com/docs/reference/device-app-api/newAPI/sensor/HeartRate/",
+    "type": "vendor_docs",
+    "quote": "Atrial fibrillation test results, 0 - normal, 1 - high alert, 2 - low alert, 3 - atrial fibrillation",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://docs.zepp.com/docs/reference/device-app-api/newAPI/sensor/Sleep/",
+    "type": "vendor_docs",
+    "quote": "Get the constant value of the sleep stage, used to determine the sleep stage in the getStage return value",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.thryve.health/supported-wearable-devices/zepp-amazfit",
+    "type": "secondary",
+    "quote": "With Thryve’s API, you can access normalized data from these devices—covering steps, heart rate, sleep stages, workouts, and more",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "zepp-amazfit",
   "name": "Zepp Health (Amazfit)",
   "kind": "wearable",
   "field": "sampling_rates",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Zepp OS: heart-rate history is per minute (up to 1,440 values for the current day); accelerometer and gyroscope offer low, normal and high trigger-frequency modes with no Hz figures published. Legacy Web API: ECG at 250 samples per second; motion per minute; activity daily or hourly (hourly marked as becoming obsolete).",
+  "confidence": "Corroborated",
+  "recheck_by": "2026-11-21",
+  "sources": [
+   {
+    "url": "https://docs.zepp.com/docs/reference/device-app-api/newAPI/sensor/HeartRate/",
+    "type": "vendor_docs",
+    "quote": "Get the heart rate measurement data in minutes from 0:00 to the current moment of the day, the longest array is 60*24",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://docs.zepp.com/docs/reference/device-app-api/newAPI/sensor/Accelerometer/",
+    "type": "vendor_docs",
+    "quote": "Low power mode with low trigger frequency",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://zepp-health.github.io/rest-api/api-ecg-doc.html",
+    "type": "vendor_docs",
+    "quote": "\"ecgSamplingRate\" : 250",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "zepp-amazfit",
   "name": "Zepp Health (Amazfit)",
   "kind": "wearable",
   "field": "history_depth",
-  "status": "unresearched",
-  "sources": []
+  "status": "unclear",
+  "value": "On watch, the heart-rate API returns only the current day (from 00:00). The legacy Web API takes start and end dates but publishes no limit on how far back. Cloud history in the app is not documented for third parties.",
+  "confidence": "Unclear",
+  "recheck_by": "2026-11-21",
+  "sources": [
+   {
+    "url": "https://docs.zepp.com/docs/reference/device-app-api/newAPI/sensor/HeartRate/",
+    "type": "vendor_docs",
+    "quote": "Get the heart rate measurement data in minutes from 0:00 to the current moment of the day, the longest array is 60*24",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://zepp-health.github.io/rest-api/api-doc.html",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "zepp-amazfit",
   "name": "Zepp Health (Amazfit)",
   "kind": "wearable",
   "field": "export_routes",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "(1) Zepp OS Mini Program reading sensors on the watch, with a phone-side companion service that can send data to a server by HTTP fetch; (2) legacy Open Platform OAuth 2.0 Web API (partners); (3) third-party aggregators (Terra, which holds its own Zepp API credentials and polls every 5 to 10 minutes; Thryve); (4) one-way write from the Zepp app to Android Health Connect (26 data types since January 2025), plus Apple Health, Google Fit and Strava linking; (5) participant self-export of personal data from the app (Profile, Settings, Exercising user rights).",
+  "confidence": "Corroborated",
+  "recheck_by": "2026-11-21",
+  "note": "A \"continuous running\" App Service (API_LEVEL 3.0+) can keep a Mini Program collecting in the background after the user leaves it, which matters for passive collection. Format and completeness of the self-export are not documented on fetchable pages.",
+  "sources": [
+   {
+    "url": "https://docs.zepp.com/docs/guides/framework/side-service/intro/",
+    "type": "vendor_docs",
+    "quote": "The \"companion service\" runs in the Zepp App, has no UI interface",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://docs.zepp.com/docs/reference/side-service-api/fetch/",
+    "type": "vendor_docs",
+    "quote": "The Fetch API can be used to send HTTP requests in JS.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://tryterra.co/integrations/zepp",
+    "type": "secondary",
+    "quote": "Terra manages the Zepp API credentials, so there is nothing to register",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://tryterra.co/integrations/zepp",
+    "type": "secondary",
+    "quote": "Zepp does not notify Terra when data changes, so Terra polls it every 5–10 minutes for each connected user",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://gadgetsandwearables.com/2025/01/24/zepp-health-connect/",
+    "type": "secondary",
+    "quote": "You can now sync way more health and fitness data than before—26 types, to be exact",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.zepp.com/privacy-support",
+    "type": "vendor_page",
+    "quote": "Zepp: App→ Profile → Setting→Exercising user rights",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.zepp.com/privacy-support",
+    "type": "vendor_page",
+    "quote": "Export data Export personal data",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "zepp-amazfit",
   "name": "Zepp Health (Amazfit)",
   "kind": "wearable",
   "field": "rate_limits",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-21",
+  "note": "No request limits are documented. The wiki gives token lifetimes only (access token 90 days by default, refresh token 10 years).",
+  "sources": [
+   {
+    "url": "https://github.com/zepp-health/rest-api/wiki",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://zepp-health.github.io/rest-api/api-doc.html",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://docs.zepp.com/docs/reference/side-service-api/fetch/",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "zepp-amazfit",
   "name": "Zepp Health (Amazfit)",
   "kind": "wearable",
   "field": "retention_terms",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Users can clear data, delete the account with all data, revoke consent, and request deletion through the app or the privacy-support page. No retention terms for third-party data partners are published.",
+  "confidence": "Corroborated",
+  "recheck_by": "2026-11-21",
+  "note": "The Zepp App privacy policy (linked from zepp.com/privacy-policy, hosted at upload-cdn.zepp.com/tposts/8192 and upload-cdn.huami.com) is disallowed by robots.txt, so its retention clause could not be quote-confirmed by the project tool; check by hand. The website privacy policy states it does not cover app or device data.",
+  "sources": [
+   {
+    "url": "https://www.zepp.com/privacy-support",
+    "type": "vendor_page",
+    "quote": "Delete account Delete the account and all data completely",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://play.google.com/store/apps/datasafety?id=com.huami.watch.hmwatchmanager&hl=en_US",
+    "type": "app_store",
+    "quote": "You can request that data be deleted",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "zepp-amazfit",
   "name": "Zepp Health (Amazfit)",
   "kind": "wearable",
   "field": "ai_training_terms",
-  "status": "unresearched",
-  "sources": []
+  "status": "unclear",
+  "value": "No AI or ML training clause on any page the project tool can read. The governing Zepp App privacy policy is robots-disallowed, so its wording on AI features and de-identified research and development data rests on a reading by hand only.",
+  "confidence": "Unclear",
+  "recheck_by": "2026-11-21",
+  "note": "No clause on training AI or ML models on user or partner data was found on fetchable pages. The app privacy policy (robots-disallowed, check by hand) describes processing for AI features (Zepp Flow, Zepp Aura, Zepp Coach Chat) and creating non-identifiable data for research and development, but no explicit model-training term was seen. Zepp Flow uses OpenAI's Whisper per the technology page.",
+  "sources": [
+   {
+    "url": "https://www.zepp.com/privacy-policy",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://upload-cdn.zepp.com/tposts/8192",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/zepp-health/rest-api/wiki",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "zepp-amazfit",
   "name": "Zepp Health (Amazfit)",
   "kind": "wearable",
   "field": "deprecations",
-  "status": "unresearched",
-  "sources": []
+  "status": "unclear",
+  "value": "No dated deprecation has been announced by Zepp. The legacy Huami Web API docs mark hourly activity as becoming obsolete and a 2022 applicant reported the old Open Platform was deprecated; older Zepp OS 1.x/2.x devices lack the API_LEVEL 3.0 sensor APIs.",
+  "confidence": "Unclear",
+  "recheck_by": "2026-11-21",
+  "note": "Google Fit's API wind-down affects Zepp's Google Fit linking; Zepp expanded Health Connect sync in January 2025 in its place, per press. No Zepp notice on Google Fit linking was found.",
+  "sources": [
+   {
+    "url": "https://github.com/zepp-health/rest-api/issues/26",
+    "type": "secondary",
+    "quote": "because old platform was deprecated",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://zepp-health.github.io/rest-api/api-doc.html",
+    "type": "vendor_docs",
+    "quote": "daily/hourly(param hourly will be obsolete, not recommended)",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "zepp-amazfit",
   "name": "Zepp Health (Amazfit)",
   "kind": "wearable",
   "field": "baa",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-20",
+  "note": "No BAA offer found. Zepp is a consumer device maker, not a covered entity; the 2025 20-F mentions HIPAA only as a regulation its products \"may be subject to\".",
+  "sources": [
+   {
+    "url": "https://www.zepp.com/privacy-policy",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.zepp.com/data-analytics",
+    "type": "vendor_page",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/zepp-health/rest-api/wiki",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "zepp-amazfit",
   "name": "Zepp Health (Amazfit)",
   "kind": "wearable",
   "field": "dpa",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-20",
+  "note": "No DPA template or offer is published. Data partnerships are by bespoke agreement per the 2021 issue report.",
+  "sources": [
+   {
+    "url": "https://www.zepp.com/privacy-policy",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://github.com/zepp-health/rest-api/wiki",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://docs.zepp.com/docs/distribute/",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "zepp-amazfit",
   "name": "Zepp Health (Amazfit)",
   "kind": "wearable",
   "field": "hipaa_statement",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-20",
+  "note": "No HIPAA compliance statement on Zepp's pages. The 2025 Form 20-F (read by hand; sec.gov refuses the fetcher) mentions HIPAA only as a risk factor.",
+  "sources": [
+   {
+    "url": "https://www.zepp.com/privacy-policy",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.zepp.com/data-analytics",
+    "type": "vendor_page",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.sec.gov/Archives/edgar/data/1720446/000110465926048127/zepp-20251231x20f.htm",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "zepp-amazfit",
   "name": "Zepp Health (Amazfit)",
   "kind": "wearable",
   "field": "gdpr_statement",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Zepp says its privacy protection is designed following GDPR and CCPA, and a company blog calls Amazfit fully GDPR compliant. EEA transfers use standard contractual clauses per the app privacy policy (check by hand).",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-20",
+  "note": "The website privacy policy explicitly does not cover app or device data; the app policy (robots-disallowed) names a Data Protection Officer at dpo@zepp.com.",
+  "sources": [
+   {
+    "url": "https://www.zepp.com/privacy-policy",
+    "type": "vendor_legal",
+    "quote": "designed following applicable laws and regulations, such as GDPR, CCPA",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.zepp.com/blog/zepp-healths-commitment-to-best-of-breed-security-and-privacy-the-amazfit-t-rex-3",
+    "type": "vendor_page",
+    "quote": "Data uploaded to the cloud is encrypted, and Amazfit is fully GDPR compliant",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "zepp-amazfit",
   "name": "Zepp Health (Amazfit)",
   "kind": "wearable",
   "field": "iso27001",
-  "status": "unresearched",
-  "sources": []
+  "status": "unclear",
+  "value": "Zepp's website privacy policy says its management system holds ISO/IEC 27001:2022 and ISO/IEC 27701:2019 certificates, numbers IS 743462 and PM 743467, without naming the certifying body, scope or dates. The 2025 Form 20-F says the 27001 certification was first obtained in 2021 and renewed, but gives the renewal year as 2025 in one place and 2024 in another. The renewal year is not settled by any fetchable source.",
+  "confidence": "Unclear",
+  "recheck_by": "2027-01-20",
+  "note": "Kept unclear on the coordinator's instruction: the renewal year (2024 or 2025) is unsettled. The 20-F was read by hand from EDGAR because sec.gov refuses the project fetcher, so no quote is recorded and the fetcher was not worked around. The privacy-policy certificate numbers were found in the judge's gap sweep; the \"IS\" and \"PM\" prefixes match BSI's numbering style, but that is an inference, not a source. Once the year is settled, or if the year is judged immaterial, this can become stated at Corroborated (a self-claim); Verified needs a certificate or registry entry (for example a certification body's public directory, checked by hand).",
+  "sources": [
+   {
+    "url": "https://www.zepp.com/privacy-policy",
+    "type": "vendor_legal",
+    "quote": "ISO/IEC 27001:2022 and ISO/IEC 27701:2019 certificate number [IS 743462, PM 743467]",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.zepp.com/privacy-policy",
+    "type": "vendor_legal",
+    "quote": "Our information security and privacy protection management system has received certifications issued by the leading authoritative international organization.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.sec.gov/Archives/edgar/data/1720446/000110465926048127/zepp-20251231x20f.htm",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://src.zepp.com/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "zepp-amazfit",
   "name": "Zepp Health (Amazfit)",
   "kind": "wearable",
   "field": "soc2",
-  "status": "unresearched",
-  "sources": []
+  "status": "not_public",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-20",
+  "note": "No SOC 2 report or claim found.",
+  "sources": [
+   {
+    "url": "https://src.zepp.com/",
+    "type": "vendor_page",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.zepp.com/privacy-policy",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.sec.gov/Archives/edgar/data/1720446/000110465926048127/zepp-20251231x20f.htm",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "zepp-amazfit",
   "name": "Zepp Health (Amazfit)",
   "kind": "wearable",
   "field": "fda_clearances",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "No 510(k) or PMA found under Huami, Zepp or Amazfit in openFDA. FDA establishment registration (Anhui Huami Information Technology, owner/operator 10083608) lists the Amazfit Balance A2287 under product code PUH (body composition analyzer, class II, 510(k) exempt, listed 2023-08-08) and Zepp Clarity ONE, Omni and Pixie hearing aids under QUG (OTC air-conduction hearing aid with wireless technology, class II, exempt, listed 2023-04-04). Neither listing is a clearance. No clearance was found for any Amazfit watch feature (ECG, AFib, SpO2, blood pressure).",
+  "confidence": "Verified",
+  "recheck_by": "2027-01-20",
+  "note": "openFDA (510(k) data last updated 2026-10-12) returned \"No matches found\" on 2026-10-22 for 510(k) applicant huami, zepp and amazfit, 510(k) device_name amazfit, PMA applicant huami and zepp, and registration owner firm name zepp. De Novo was not searched by API (openFDA has no De Novo endpoint). openFDA classification gives submission type 4 (exempt) and class 2 for both PUH (21 CFR 870.2770) and QUG (21 CFR 874.3305). A second listing of \"Amazfit Balance A2287\" under PUH is held by Shenzhen Zowee Smart Manufacturing (owner/operator 10088482), registered as a contract manufacturer. Zepp's technology page says PumpBeats blood pressure and RealBeats AFib screening are \"not currently supported globally\".",
+  "sources": [
+   {
+    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRL/rl.cfm?start_search=1&ownerOperatorNumber=10083608",
+    "fetch_url": "https://api.fda.gov/device/registrationlisting.json?search=registration.owner_operator.firm_name:huami&limit=10",
+    "type": "regulator_db",
+    "quote": "Analyzer, Body Composition, Exempt",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRL/rl.cfm?start_search=1&ownerOperatorNumber=10083608",
+    "fetch_url": "https://api.fda.gov/device/registrationlisting.json?search=registration.owner_operator.firm_name:huami&limit=10",
+    "type": "regulator_db",
+    "quote": "Hearing Aid, Air-Conduction With Wireless Technology, Over The Counter",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRL/rl.cfm?start_search=1&ownerOperatorNumber=10083608",
+    "fetch_url": "https://api.fda.gov/device/registrationlisting.json?search=registration.owner_operator.firm_name:huami&limit=10",
+    "type": "regulator_db",
+    "quote": "Amazfit Balance A2287",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRL/rl.cfm?start_search=1&ownerOperatorNumber=10083608",
+    "fetch_url": "https://api.fda.gov/device/registrationlisting.json?search=registration.owner_operator.firm_name:huami&limit=10",
+    "type": "regulator_db",
+    "quote": "Zepp Clarity ONE",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm",
+    "fetch_url": "https://api.fda.gov/device/510k.json?search=applicant:huami",
+    "type": "regulator_db",
+    "expect_absent": true,
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm",
+    "fetch_url": "https://api.fda.gov/device/510k.json?search=applicant:zepp",
+    "type": "regulator_db",
+    "expect_absent": true,
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm",
+    "fetch_url": "https://api.fda.gov/device/510k.json?search=device_name:amazfit",
+    "type": "regulator_db",
+    "expect_absent": true,
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm",
+    "fetch_url": "https://api.fda.gov/device/pma.json?search=applicant:huami",
+    "type": "regulator_db",
+    "expect_absent": true,
+    "retrieved": "2026-10-22"
+   }
+  ]
  },
  {
   "company": "zepp-amazfit",
   "name": "Zepp Health (Amazfit)",
   "kind": "wearable",
   "field": "data_residency",
-  "status": "unresearched",
-  "sources": []
+  "status": "stated",
+  "value": "Cloud data is held on AWS according to the company. Region detail (US and Canadian users in US data centres, EEA users in Germany, mainland China users in China; 20-F says AWS for North America and most of Europe, Tencent Cloud elsewhere) comes from documents the project fetcher cannot read; check by hand. Some devices (T-Rex 3) can keep GPS data on the watch only.",
+  "confidence": "Corroborated",
+  "recheck_by": "2027-01-20",
+  "note": "The Zepp App privacy policy (effective 2026-07-14) is on a robots-disallowed CDN; the 20-F is on sec.gov, which returns 403 to the fetcher. Both were read by hand only.",
+  "sources": [
+   {
+    "url": "https://www.zepp.com/blog/zepp-healths-commitment-to-best-of-breed-security-and-privacy-the-amazfit-t-rex-3",
+    "type": "vendor_page",
+    "quote": "For users who prefer cloud storage, Amazfit utilizes Amazon Web Services (AWS) to provide best-in-class data security.",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://upload-cdn.zepp.com/tposts/8192",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-22"
+   },
+   {
+    "url": "https://www.sec.gov/Archives/edgar/data/1720446/000110465926048127/zepp-20251231x20f.htm",
+    "type": "vendor_legal",
+    "retrieved": "2026-10-22"
+   }
+  ]
  }
 ]

@@ -38,6 +38,62 @@ Key link: https://github.com/cbitstech/Purple-Robot (the former phidatalab.org p
 ### Purple Robot
 
 <!-- facts:begin purple-robot -->
+*Generated from the fact record by `tools/facts/generate.py`. Edit the record, not this block.*
+
+**Research access**
+
+| Fact | Value |
+|---|---|
+| Formal research or academic program (name, what it offers) | No research access program. Purple Robot is open-source Android software that Northwestern CBITS built as infrastructure for its own intervention and sensing studies. Outside teams build the APK from source and run their own upload server. No program, service or support offer is published by CBITS or by Audacious Software, the developer's company. [C, 2026-10-22] |
+| Who can join the research program | n/a |
+| How to apply, and any approval or review step | n/a |
+| Whether the program is active, paused, renamed or closed | Archived and no longer developed, per the maintainer (Chris Karr, audaciouscode) in December 2023, who pointed would-be users to him by email for "developments since this project". The CBITS personal sensing work that used it is listed under completed projects. [V, 2026-10-22] |
+| Whether the general developer or API program is open to new applicants | n/a |
+| Participant or user limits before approval or by tier | n/a |
+| How academic access differs from commercial or consumer access | No academic or commercial tier. Everyone gets the same GPL v3 (or later) terms. The 2015 licence file invites anyone needing other licensing terms to contact Mark Begale at Northwestern. [C, 2026-10-22] |
+
+**Pricing**
+
+| Fact | Value |
+|---|---|
+| Device or hardware list price | n/a |
+| Consumer subscription or membership price | n/a |
+| Research or academic pricing or discount | n/a |
+| Fees for API, SDK, platform or data access | None. The app and the Django server component are free open-source software under GPL v3. [V, 2026-10-22] |
+| Minimum order, term or commitment | n/a |
+| Whether pricing requires contacting sales | n/a |
+| Price of managed hosting | n/a |
+
+**Data access and terms**
+
+| Fact | Value |
+|---|---|
+| Raw signals available to researchers, and by which route | Android only. Built-in probes cover the Android sensor framework (accelerometer, linear acceleration, gyroscope, magnetometer, light, pressure, proximity, temperature, humidity, gravity, rotation, significant motion, step counter), activity detection, raw and fused location, visible satellites, Wi-Fi access points, Bluetooth devices, NFC, network, battery, screen state, call state, communication events and log, address-book distances, calendar, running software, application launches, telephony, hardware and software information, wake locks, touch events and audio features. All go by HTTP upload to the research team's own server. [V, 2026-10-22] |
+| Derived or processed metrics available to researchers | On-device features including basic statistics and frequency features for accelerometer, gyroscope, light, magnetic field, pressure, proximity and temperature, plus call history, device in use and sunrise/sunset features. Communication data can be summarised statistically before upload, and researchers can define new features in JavaScript. No analysis pipeline is published. [V, 2026-10-22] |
+| Documented sampling rates or temporal resolution | Configurable per probe. Accelerometer options run from 200 per second down to every 10 seconds; other built-in sensors from 10 per second to every 10 seconds; the generic probe default interval is 300000 ms (5 minutes). Saeb et al. 2015 sampled GPS once every 5 minutes and screen on/off events. [V, 2026-10-22] |
+| How far back data can be retrieved | No vendor-held copy and no platform limit. Collection is prospective from installation; the phone holds data only until a successful upload to the team's own server, which keeps whatever history the team chooses. [C, 2026-10-22] |
+| Export, API, SDK or file routes | The app POSTs JSON sensor payloads to an HTTP endpoint the researcher configures, with store-and-forward retry. The Purple-Robot-Django server app receives them and offers a date-range export page and CSV export jobs; a small CherryPy starter server is also documented. An embedded localhost HTTP API lets other apps on the phone reach Purple Robot data and scripts. [V, 2026-10-22] |
+| API rate limits | n/a |
+| Terms on retaining, storing or deleting data | No vendor retention terms; each deploying research site sets its own privacy rules. On the phone, identifiers are hashed and data encrypted with AES before storage, then deleted after transmission to the server. The hash function defaults to MD5; later builds let the researcher choose SHA-256. [V, 2026-10-22] |
+| Terms on using data to train AI or ML models | n/a |
+| Announced shutdowns, deprecations or migrations, with dates | Development has stopped. The maintainer called the app archived and no longer developed in December 2023. Last commits are 2016-04-11 on cbitstech/Purple-Robot master (v2.0.9), 2016-12-27 on cbitstech/Purple-Robot-Django, 2019-01-30 on audaciouscode/Purple-Robot-Android (v3.0.13, target API 28) and 2020-06-22 on the audaciouscode/Purple-Robot-Django fork. The Google Play listing is gone. No formal end-of-life date was ever announced. [V, 2026-10-22] |
+| Software licence of the platform's components | GPL v3 or any later version for the Android app (cbitstech/Purple-Robot, file LICENSE.GPLv3, a short notice rather than the full licence text) and GPL v3 for audaciouscode/Purple-Robot-Android and the Purple-Robot-Django server app. The cbitstech notice also offers other licensing by contact. [V, 2026-10-22] |
+| Self-hosting and managed-hosting options | Self-hosting only. Teams run their own upload endpoint, either the Purple-Robot-Django app (PostgreSQL, cron-driven extraction and export) or the documented CherryPy starter server. No managed hosting is offered. [V, 2026-10-22] |
+| App store availability on iOS and Android | Android only, and no longer in any store. The Google Play listing (edu.northwestern.cbits.purple_robot_manager) returns 404, there is no F-Droid listing, and there was never an iOS app. Teams must build the APK from source; the cbitstech repository also holds a prebuilt Purple Robot.apk last committed in November 2015. [V, 2026-10-22] |
+
+**Compliance and regulatory**
+
+| Fact | Value |
+|---|---|
+| Whether a HIPAA Business Associate Agreement is offered | n/a |
+| Whether a data processing agreement is offered | n/a |
+| Published HIPAA statement | Not public [2026-10-22] |
+| Published GDPR statement | Not public [2026-10-22] |
+| ISO/IEC 27001 status and evidence | n/a |
+| SOC 2 status and evidence | n/a |
+| FDA clearances, from the FDA database | Not public [2026-10-22] |
+| Where data is stored, and residency options | Wherever the deploying team runs its own server. Data stay on the phone until upload and then go only to the endpoint the researcher configures; there is no vendor storage. [V, 2026-10-22] |
+
 <!-- facts:end -->
 
 ## StudentLife
