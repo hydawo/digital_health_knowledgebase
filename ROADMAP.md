@@ -37,6 +37,9 @@ generated ones.
 1. **Vendor confirmation sheets (sub-project 3).** One page per company listing what is on record,
    for the vendor to confirm or correct. Hassan reviews and sends each one ("confirmed, send it").
    Answers become `vendor_confirmation` sources.
+   **Pilot drafted 2026-10-22** for Verily, Zepp, Circular and Sensor Bio: saved as Gmail drafts and in
+   `_private/vendor-sheets/` (not in git). Zepp and Sensor Bio have email addresses; Verily and Circular
+   take contact forms, which Hassan submits. Generator: `tools/facts/confirm_sheet.py`.
 2. **Re-check schedule.** Weekly: the fact monitor (running, GitHub Actions, Mondays). Monthly:
    re-verify pricing, access and terms facts as their `recheck_by` dates fall due. Quarterly: an
    independent review like `shared/reviews/2026-10-10-independent-review.md`.
