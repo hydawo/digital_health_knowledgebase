@@ -2,6 +2,16 @@
 
 ---
 
+## 2026-10-22 - Manual add: World Sleep Society consumer sleep tracker recommendations (Module 4)
+
+- **Module:** 4.
+- **Paper:** Chee MWL et al., World Sleep Society Sleep Tracker Task Force. "World Sleep Society recommendations for the use of wearable consumer health trackers that monitor sleep." *Sleep Medicine* 131:106506, 2025. DOI 10.1016/j.sleep.2025.106506, PMID 40300398, no PMCID.
+- **Files updated:** Module 4 `literature-library.md` (row M4-042), `literature-library-index.json` (`ids_seen`), `README.md` (52 papers, 4 paywalled); `explorer/kb-map.html` (count).
+- **Why Module 4:** a consensus recommendation covering all consumer sleep trackers, not one device (Module 1), platform (Module 2) or deployment (Module 3).
+- **OA status:** Paywalled. Elsevier, with no open licence in Crossref, and Europe PMC marks it not open access. The row is written from the abstract only. Its disclosures and its list of "fundamental sleep measures" were not read.
+- **Follow-up:** if a copy becomes available, read the conflict-of-interest statement and consider citing the device-selection and evaluation-study guidance in `module-01-wearables/validation-evidence.md`.
+- **Tooling:** first use of the `add-paper` skill. The skill did not know about Module 4, which was fixed in the same change.
+
 ## 2026-10-10 (last) — Vendor fact records: baseline batch 1 (10 companies)
 
 **Module:** 1, 2 and shared (`facts/`).

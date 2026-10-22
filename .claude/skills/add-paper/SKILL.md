@@ -1,6 +1,6 @@
 ---
 name: add-paper
-description: Manually add one paper to the knowledge base from a DOI, PMID, PMCID, arXiv ID, URL or local PDF. Decides which module(s) it belongs to, stores the PDF if open access, writes the entry in each module's own format, updates the dedup ledgers and research log, then commits and pushes. Use when Hassan says "add this paper", "file this paper", "put this in the knowledge base", or pastes a paper link and asks to add it.
+description: Manually add one paper to the knowledge base (Modules 1 to 4) from a DOI, PMID, PMCID, arXiv ID, URL or local PDF. Decides which module(s) it belongs to, stores the PDF if open access, writes the entry in each module's own format, updates the dedup ledgers and research log, then commits and pushes. Use when Hassan says "add this paper", "file this paper", "put this in the knowledge base", or pastes a paper link and asks to add it.
 ---
 
 # Add a paper by hand
@@ -32,6 +32,7 @@ Search all three ledgers, and grep the libraries for the DOI and the title:
 | 1 | `module-01-wearables/research-library-index.json` | `dois_seen`, `pmids_seen`, `records` |
 | 2 | `module-02-digital-phenotyping/literature-library-index.json` | `ids_seen` (`pmid:`, `arxiv:` and `doi:` prefixes), `records` |
 | 3 | `module-03-applied-studies/literature-index.json` | `dois_seen`, `pmcids_seen`, `records`, `rejected` |
+| 4 | `module-04-methods-and-reviews/literature-library-index.json` | `ids_seen` (`doi:` prefix) |
 
 If it's already there, say where and stop. Exception: Hassan wants it in another module, or a
 Module 3 rejection was for `unobtainable` and he now has the PDF.
@@ -75,6 +76,12 @@ Read the abstract and Methods. A paper can belong in more than one module.
   `module-03-applied-studies/_screening-and-profile-rules.md`, Part A, in full. It needs the full
   text. **Check from Methods which device or platform was actually deployed.** Abstracts misattribute
   this about 3 times in 12.
+- **Module 4: the paper is about how digital-health research is done, not about one technology or
+  one deployment.** This covers reviews, meta-analyses, consensus and guideline statements, ethics
+  and position papers, and research-practice methods papers (adherence, missing data, validation
+  frameworks, reporting, equity, privacy). See `module-04-methods-and-reviews/README.md` for scope.
+  A multi-device review or recommendation goes here, not in Module 1. A review rejected from Module
+  3 as `review` usually belongs here too.
 - **The technology isn't profiled yet.** Still file it, under a new `literature/<slug>/` folder and a
   new section in the Module 1 or 2 library. Note in the research log that it's a candidate for a new
   profile. For Module 3, flag it as a Module 1/2 expansion candidate. Don't write a Module 3 profile
@@ -102,6 +109,17 @@ If the module or tier is a judgment call, say so in one or two sentences and ask
 - Add the PDF to `module-02-digital-phenotyping/literature/<platform-slug>/`.
 - Add a row to that platform's table in `literature-library.md`: Title | Authors | Venue/Year | DOI/URL | OA status | PDF | Relevance.
 - Add the id to `ids_seen` and a `records` entry to `literature-library-index.json`.
+
+**Module 4**
+- Add the PDF to `module-04-methods-and-reviews/literature/` if it's open access.
+- Add a row after the last `M4-NNN` row in `literature-library.md`, numbered next in sequence:
+  # | Title | Authors | Venue / Year | DOI / URL | OA status | PDF | What it establishes. "What it
+  establishes" starts with a topic label used by other rows (Adherence and engagement, Missing data
+  and data quality, Ethics and consent, Validation frameworks, Reporting guidelines, and so on). It
+  then says in one plain sentence what the paper settles or proposes. If you wrote it from the
+  abstract only, say so.
+- Add `doi:<doi>` to `ids_seen` in `literature-library-index.json`, which uses a one-space indent.
+- Update the paper and paywalled counts in the module `README.md` status line and in `explorer/kb-map.html`.
 
 **Module 3, included**
 1. Write the screening extraction to `module-03-applied-studies/_screening-reports/<date>-manual-<slug>.md`, using Part A's field list.
