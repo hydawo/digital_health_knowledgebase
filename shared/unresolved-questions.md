@@ -21,6 +21,11 @@ questions. 90 is closed. 84, 89 and 125 are annotated, and the closed 93 and 105
 with annotations starting "Fact records 2026-10-11". Two new mindLAMP questions were added (133 and
 134, tier T20).
 
+**Updated 2026-10-22 (batch-3 emerging-platforms records):** the committed records for Ultrahuman,
+Sensor Bio, RingConn, Circular, Zepp Health and Verily touched seven questions. 47 is reopened and
+moved to a new Verily vendor checklist. 50, 51, 67 and 68 are annotated, and the closed 48 and 49
+carry corrections, with annotations starting "Fact records" and the record's date.
+
 ## How to read this file
 
 - **Numbers are permanent IDs.** The table cells print them bare (`| 120 |`); elsewhere in the repo
@@ -40,8 +45,8 @@ with annotations starting "Fact records 2026-10-11". Two new mindLAMP questions 
 | [Needs a hands-on test](#needs-a-hands-on-test) | 7 | Someone with a developer account or device |
 | [Needs library access](#needs-library-access) | 7 | Anyone with institutional journal access |
 | [Needs an author or lab](#needs-an-author-or-lab) | 5 | Email to the study authors |
-| [Vendor checklists](#vendor-checklists) | 49 | The vendor, when a study is choosing it |
-| **Total open** | **78** | |
+| [Vendor checklists](#vendor-checklists) | 50 | The vendor, when a study is choosing it |
+| **Total open** | **79** | |
 
 Closed questions and the duplicates folded into other rows are at the end, in
 [Closed and merged](#closed-and-merged).
@@ -280,13 +285,13 @@ a quote.
 
 | # | Question | Who can answer, and how | Why it matters / notes | Raised |
 |---|---|---|---|---|
-| 67 | Ultrahuman raw PPG **sampling rate**, and UltraSignal pricing and scale limits | Ultrahuman | **Repair pass 2026-10-10:** Still open. UltraSignal is described as a "data stream", not raw; no rates or price; loaned kit on application. Determines whether the only raw-PPG ring is actually usable at study scale | T8 · M1 second pass, 2026-08-21 |
+| 67 | Ultrahuman raw PPG **sampling rate**, and UltraSignal pricing and scale limits | Ultrahuman | **Fact records 2026-10-22:** Rate answered. The PPG Recordings API documents raw PPG "typically 50 Hz" as gzip NDJSON, but only for the token holder's own Developer Mode recordings (Verified). Ring prices are published (Ring PRO USD 479). Still open: UltraSignal pricing and scale, whether it still loans kits, and which ring a US applicant gets now that Ring AIR cannot be imported. Source: `../facts/ultrahuman.yaml`. **Repair pass 2026-10-10:** Still open. UltraSignal is described as a "data stream", not raw; no rates or price; loaned kit on application. Determines whether the only raw-PPG ring is actually usable at study scale | T8 · M1 second pass, 2026-08-21 |
 
 ### Biostrap
 
 | # | Question | Who can answer, and how | Why it matters / notes | Raised |
 |---|---|---|---|---|
-| 68 | Biostrap sampling rates and pricing | Biostrap | **Repair pass 2026-10-10:** Still open, premise outdated. Biostrap is now Sensor Bio, which claims raw PPG and IBI with configurable rates; no Hz figures or prices. Same | T8 · M1 second pass, 2026-08-21 |
+| 68 | Biostrap sampling rates and pricing | Biostrap | **Fact records 2026-10-21:** Rates answered for Sensor Bio V2: PPG 50 Hz by default, 25 or 100 Hz per organisation, raw export to 100 Hz (Verified). That conflicts with a May 2026 press claim of 15,000 samples per second. Pricing is still not public (V2 is sold through partnership). Also open: whether raw export needs an enterprise-tier account, since Sensor Bio's own pages disagree (developers@sensorbio.com). Source: `../facts/sensor-bio.yaml`. **Repair pass 2026-10-10:** Still open, premise outdated. Biostrap is now Sensor Bio, which claims raw PPG and IBI with configurable rates; no Hz figures or prices. Same | T8 · M1 second pass, 2026-08-21 |
 
 ### Movesense
 
@@ -330,13 +335,19 @@ a quote.
 
 | # | Question | Who can answer, and how | Why it matters / notes | Raised |
 |---|---|---|---|---|
-| 50 | RingConn, Circular, and other smart rings: Whether any offers research data access |  | **Checked 2026-10-09, still open (Reported).** RingConn: no public API, SDK or research programme; syncs to Health Connect (Google Fit sync ended 2025-10-01); runs company-led studies with Shanghai Jiao Tong University. Circular: no API, export, health-store sync or research programme found. Only the vendors can confirm an unpublished partner route (support@ringconn.com, support@circular.xyz). See `emerging-platforms.md`. | T6 · M1 first pass, 2026-08-21 |
+| 50 | RingConn, Circular, and other smart rings: Whether any offers research data access |  | **Fact records 2026-10-21 and 2026-10-22:** Partly answered. RingConn has no research programme; institutional proposals go to business@ringconn.com (bulk orders sales@ringconn.com), and one company-involved paper used raw 100 Hz PPG through research firmware (Reported). Circular publishes research partnerships with raw signal under agreement, an API and SDK for selected business projects by contact, a free CSV dashboard and Apple Health and Health Connect sync (Verified). Still open for Circular: agreement terms and pricing, whether agreements survive the October 2025 liquidation of Circular SAS, and which 510(k), if any, covers the AFib algorithm. Sources: `../facts/ringconn.yaml`, `../facts/circular.yaml`. The contacts below are superseded. **Checked 2026-10-09, still open (Reported).** RingConn: no public API, SDK or research programme; syncs to Health Connect (Google Fit sync ended 2025-10-01); runs company-led studies with Shanghai Jiao Tong University. Circular: no API, export, health-store sync or research programme found. Only the vendors can confirm an unpublished partner route (support@ringconn.com, support@circular.xyz). See `emerging-platforms.md`. | T6 · M1 first pass, 2026-08-21 |
 
 ### Zepp Health (Amazfit)
 
 | # | Question | Who can answer, and how | Why it matters / notes | Raised |
 |---|---|---|---|---|
-| 51 | Amazfit / Zepp Health: Zepp OS SDK and data access for research; significant in non-US markets |  | **Partly resolved 2026-10-09.** Zepp OS on-watch API (Verified): accelerometer and gyroscope with low, normal and high modes but no published Hz, heart rate per minute for the current day, SpO2 results, no raw PPG. Motion data needs a custom watch app. No cloud research API or programme found (Reported); Terra and Thryve offer summaries. Still for Zepp: actual sampling rates and any partner route. See `emerging-platforms.md`. | T6 · M1 first pass, 2026-08-21 |
+| 51 | Amazfit / Zepp Health: Zepp OS SDK and data access for research; significant in non-US markets |  | **Fact records 2026-10-22:** The partner route exists. Zepp documents a legacy Huami/Zepp Open Platform OAuth 2.0 cloud Web API for corporate partners, with institutional applications (Corroborated). The open questions are now whether it accepts new partners and what it costs; a 2021 applicant reported paid access (Reported). Ask developer@zepp.com or datapartner@huami.com. Source: `../facts/zepp-amazfit.yaml`. The "no cloud research API" reading below is superseded. **Partly resolved 2026-10-09.** Zepp OS on-watch API (Verified): accelerometer and gyroscope with low, normal and high modes but no published Hz, heart rate per minute for the current day, SpO2 results, no raw PPG. Motion data needs a custom watch app. No cloud research API or programme found (Reported); Terra and Thryve offer summaries. Still for Zepp: actual sampling rates and any partner route. See `emerging-platforms.md`. | T6 · M1 first pass, 2026-08-21 |
+
+### Verily
+
+| # | Question | Who can answer, and how | Why it matters / notes | Raised |
+|---|---|---|---|---|
+| 47 | **Verily Study Watch**: current status, and whether it can be supplied to new studies. Reopened 2026-10-22; it was closed on 2026-08-21 as "active, not discontinued" | Verily | **Fact records 2026-10-22: Reopened, status is a conflict (Reported).** Press quoting an August 2025 memo from Verily's CEO reports the devices program was fully wound down; every Study Watch product page is gone. Verily's Security and Trust page still lists "Study Watch & Hub", and Quipment Inc., a repack or relabel firm, added an FDA listing for K182456 on 2026-05-12. The rest of the 2026-08-21 answer stands with one correction: onboard raw storage is "up to a week" (MassDevice 2017), not weeks. The three 510(k)s are now Verified (K182456, K192415, K213357). Source: `../facts/verily.yaml`. Original answer: active, not discontinued; clinical-research-only, never sold to consumers; ECG, HR, EDA and inertial motion with weeks of onboard raw storage; multiple FDA 510(k) clearances | T6 · M1 first pass, 2026-08-21 |
 
 ### The RADAR-base maintainers
 
@@ -365,9 +376,8 @@ These asked the same thing as an earlier row and are tracked there.
 |---|---|---|---|---|
 | 131 | ~~Does CARP's hosted service accept researchers outside DTU?~~ **Resolved 2026-10-11 (Verified).** carp.dk/hosting/, the hosted service's terms (modified 2026-08-23), limits it to projects where DTU Health Tech is an active research partner: DTU helps initiate, fund and design the study and takes part in publication. The 2026-09-28 Studies app post says the same. Non-DTU teams can use it only through such a partnership; otherwise they self-host. The docs line "Whoever you are ... we'll find a way to support it" is an invitation to get in touch, not an alternative access route. The same page publishes 2024 rates: 45,000 DKK setup, 1,250 DKK per study per month, staff time at cost plus 44%, no SLA. See `../facts/carp.yaml`. | CARP / DTU | | T18 · repair pass, 2026-10-10 |
 | 6 (second use) | ~~Empatica Academic & Basic Research plan cost~~ — **RESOLVED, pricing is public.** Device from **$1,166.40**; 3-year bundle **$2,332.80** list / **$1,749.60** academic (25% off); 5-year **$2,916** / **$2,187** academic. Volume discounts automatic at 5+ devices | Empatica. https://www.empatica.com/store/platform-professional/ |  | T2 · M1 first pass, 2026-08-21 |
-| 47 | ~~**Verily Study Watch**~~: **RESOLVED — active, not discontinued; clinical-research-only, never sold to consumers; records ECG, HR, EDA and inertial motion with weeks of onboard raw storage; multiple FDA 510(k) clearances. See `emerging-platforms.md`** |  |  | T6 · M1 first pass, 2026-08-21 |
-| 48 | ~~Biostrap~~: **RESOLVED — raw/processed PPG, gyroscope and accelerometer via RPM dashboard; configurable sampling rates; integrated surveys; pivoted from consumer to medical. Pricing still non-public** |  |  | T6 · M1 first pass, 2026-08-21 |
-| 49 | ~~Ultrahuman Ring Air~~: **RESOLVED — UltraSignal exposes raw PPG, accelerometer and temperature; whitelist-only Partner API with loaner dev kits. The only ring with raw PPG. Sampling rates and pricing still unknown** |  |  | T6 · M1 first pass, 2026-08-21 |
+| 48 | ~~Biostrap~~: **RESOLVED — raw/processed PPG, gyroscope and accelerometer via RPM dashboard; configurable sampling rates; integrated surveys; pivoted from consumer to medical. Pricing still non-public** |  | **Correction, fact records 2026-10-21:** the gyroscope applies to legacy EVO devices only. Current Sensor Bio V2 exports raw PPG, IBI and accelerometer at up to 100 Hz; the surveys are described only on the legacy Biostrap page. See Q68 and `../facts/sensor-bio.yaml` | T6 · M1 first pass, 2026-08-21 |
+| 49 | ~~Ultrahuman Ring Air~~: **RESOLVED — UltraSignal exposes raw PPG, accelerometer and temperature; whitelist-only Partner API with loaner dev kits. The only ring with raw PPG. Sampling rates and pricing still unknown** |  | **Correction, fact records 2026-10-22:** personal API tokens and OAuth app registration are self-serve in the developer portal, not whitelist-only (production approval undocumented). Raw PPG is typically 50 Hz; ring prices are published. Circular also offers raw ring signal under a research agreement. See Q67 and `../facts/ultrahuman.yaml` | T6 · M1 first pass, 2026-08-21 |
 | 52 | ~~Movesense (Suunto)~~: **RESOLVED — full profile written. ECG 125–512 Hz, 9-axis IMU 13 Hz–1.6 kHz, custom firmware at no licence cost, Class IIa MDR on the MD variant. New gap: no independent validation located** |  |  | T6 · M1 first pass, 2026-08-21 |
 | 54 | ~~"Fitbit Air"~~: **RESOLVED — launched 7 May 2026 at $99.99. Screenless, 12 g; PPG, red/IR SpO2, skin temperature, 3-axis accelerometer, gyroscope; HR saved at 2-second intervals; 7-day battery. Open question: is the 2-second HR exposed via the API?** |  |  | T6 · M1 first pass, 2026-08-21 |
 | 57 | ~~Read Robbins et al. 2024 in full~~ |  | **DONE — full extraction in `../module-01-wearables/validation-evidence.md`. Surfaced the Oura funding and advisory-board conflict, and the poor deep/REM ICCs** | T7 · M1 first pass, 2026-08-21 |

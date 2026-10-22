@@ -98,8 +98,10 @@ Axivity (accelerometry to 3,200 Hz), Ametris (accelerometry to 256 Hz; LEAP PPG 
 Withings (ScanWatch accelerometry and three-wavelength PPG at about 24.8 Hz, by contract),
 Empatica (raw EDA, PPG and accelerometry; all rates published per sensor mode), Apple through
 SensorKit (plus 50 Hz accelerometry through Core Motion, no entitlement needed),
-Garmin through the enterprise Health SDK only. Ultrahuman (a ring PPG "data stream", raw format
-undocumented), Biostrap/Sensor Bio and Verily rest on vendor or Corroborated statements.
+Garmin through the enterprise Health SDK only. Ultrahuman (raw ring PPG, typically 50 Hz, own
+Developer Mode recordings only, Verified), Sensor Bio V2 (raw PPG, IBI and accelerometer to 100 Hz,
+vendor specification) and Verily (Corroborated; device program wound down in 2025) rest on vendor or
+Corroborated statements.
 
 **No raw signal through any documented route:** Fitbit/Google (except per-reading ECG voltage in
 the Google Health API), **Oura**, **WHOOP**.
@@ -199,7 +201,9 @@ offering, and BAA availability almost everywhere. See `../shared/unresolved-ques
 - **Current hardware is largely unvalidated:** Oura Ring 5, WHOOP 5.0/MG, Apple Series 12 and Fitbit
   Air postdate every PSG study here; no Oura versus WHOOP PSG comparison exists on current hardware.
 - **Unpublished sampling rates:** Apple SensorKit PPG, Garmin Health SDK accelerometer (integrators
-  report 25 Hz), Ultrahuman, Biostrap, Verily.
+  report 25 Hz), Ultrahuman daily-metric series and non-PPG sensors (its raw PPG, typically 50 Hz, is
+  published), Galaxy Watch streams through Verily Viewpoint, Zepp OS accelerometer modes, and RingConn's
+  consumer schedule. Sensor Bio V2 and Verily Study Watch rates are now published.
 - **Compliance rests on vendor statements:** only Empatica's ISO 27001 certificate (TÜV Rheinland
   01 153 2117571), Withings' AFNOR certificates and Ametris's ISO 27001:2022 certificate (Ignyte
   Assurance IA391-260410-001) were read, all as vendor-hosted PDFs; none for other vendors.
@@ -209,12 +213,16 @@ offering, and BAA availability almost everywhere. See `../shared/unresolved-ques
   AX3 and GENEActiv recording durations (each vendor's own documents disagree); the
   Withings+ US annual price ($99.50 or $99.95); Withings' inactive-account closure (3, 5 or 10 years);
   whether HealthKit's per-recording ECG voltage counts as raw (Apple's own pages disagree); Garmin's
-  FAQ still quoting two-business-day approval while applications are paused.
+  FAQ still quoting two-business-day approval while applications are paused; Sensor Bio's 100 Hz
+  specification against a 15,000 samples per second press claim, and whether its raw export needs an
+  enterprise-tier account; Circular's Ring 2 price ($349 or $299) and its blood pressure and glucose
+  claims; the Verily Study Watch's status.
 - **Not assessed:** movisens, Shimmer, activPAL, Fibion (research-grade alternatives); Galaxy Ring as
   a research target (Samsung's docs confirm only a processed route through the Data SDK, no raw
   route); EEG wearables; CGM.
 - **Emerging entries** (Ultrahuman, Biostrap/Sensor Bio, Verily) rest partly on vendor statements, and
-  the Verily Study Watch's current status is Unclear.
+  the Verily Study Watch's status is a conflict (Reported): press reports Verily wound down its device
+  program in August 2025, while Verily's trust page still lists Study Watch & Hub.
 
 ---
 
@@ -242,7 +250,10 @@ offering, and BAA availability almost everywhere. See `../shared/unresolved-ques
 | **Blood pressure and scale devices generally** | Covered only where they sit inside a profiled ecosystem (Withings, Garmin Index) |
 
 RingConn, Circular and Amazfit / Zepp were checked for research data access on 2026-10-09 and
-recorded in `profiles/emerging-platforms.md`; none publishes a research API.
+recorded in `profiles/emerging-platforms.md`; none publishes a self-serve research API. Circular
+offers raw signal under research agreements and an API and SDK to selected business projects by
+contact, and Zepp documents a legacy partner cloud API whose open status is unclear (corrected
+2026-10-22 from the fact records).
 
 ### Inclusion judgements worth flagging
 
