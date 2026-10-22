@@ -1,6 +1,6 @@
 # Roadmap
 
-**Last updated: 2026-10-10.** What is done, what is running, and what comes next. Detail for each
+**Last updated: 2026-10-22.** What is done, what is running, and what comes next. Detail for each
 item lives in the file it links to; `shared/research-log.md` has the dated history.
 
 ## Waiting on Hassan
@@ -24,7 +24,7 @@ every quote. See `facts/README.md` and `shared/agents.md`.
 |---|---|---|
 | 1 | Oura, WHOOP, Apple, Fitbit / Google, Garmin, Samsung, Empatica, Withings, Beiwe, RADAR-base | Done 2026-10-10: 436 facts, 275 Verified. Profile and matrix corrections listed in each `judgement.md`, not yet applied |
 | 2 | Polar, Ametris, Axivity, Activinsights, Movesense, mindLAMP, AWARE, Avicenna, MetricWire, m-Path, CARP, LifeData, Evidation | Done 2026-10-21: all 13 records, profiles, both matrices, atlas and open questions corrected |
-| 3 | Fitabase, Labfront, Fitrockr, Terra, Thryve, Ultrahuman, Sensor Bio, RingConn, Circular, Zepp, Verily, Purple Robot | 8 of 12 records committed by 2026-10-21 (all but Circular, Zepp, Verily, Purple Robot, not started). Profile and matrix pass for batch 3 not started (shared profiles: data-intermediaries, emerging-platforms). Fitrockr facts mostly Reported: its site blocks scripts; confirm in a browser |
+| 3 | Fitabase, Labfront, Fitrockr, Terra, Thryve, Ultrahuman, Sensor Bio, RingConn, Circular, Zepp, Verily, Purple Robot | 8 of 12 records committed by 2026-10-21 (all but Circular, Zepp, Verily, Purple Robot, not started). Last four researched 2026-10-22 with one researcher plus a judge each. Profile and matrix pass for batch 3 not started (shared profiles: data-intermediaries, emerging-platforms). Fitrockr facts mostly Reported: its site blocks scripts; confirm in a browser |
 
 After each batch: generate the tables, opt the completed profiles in to the generated facts block,
 and replace the hand-written research-program tables in both comparison matrices with the
@@ -45,6 +45,17 @@ generated ones.
    2026, Weingarden 2025) and the two ALS addenda.
 4. **Fitbit profile follow-up** after 2026-10-30, when the legacy Web API is turned off.
 5. **Module 4 scan proposal:** approve or drop `shared/weekly-literature-scan-module4-proposal.md`.
+6. **Module 5, measurement science by domain (proposed 2026-10-22).** One module, like Module 4, with
+   a section per domain: Sleep first, then Cardiac, Physical activity and fitness, and maybe Mental
+   health. It holds papers on the science of measuring that domain with wearables that are not tied
+   to one device: consensus statements, standard metrics, validation methods, known physiological
+   limits. Every existing paper in Modules 1 to 4 also gets a domain tag, and a script builds one hub
+   page per domain across all modules (the explorer's `tags.json` already does something similar).
+   The World Sleep Society recommendations (Module 4, M4-042) move to Sleep. Separate numbered
+   modules per domain were considered and rejected, because most domain papers are also device or
+   deployment papers and would need two homes. Cost: structure, small; tagging about 260 papers,
+   one or two agents; seeding each domain, about two agents. Starts after vendor fact records
+   batch 3.
 
 ## Later
 
