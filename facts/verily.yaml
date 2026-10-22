@@ -3,68 +3,637 @@ name: Verily (Study Watch)
 kind: wearable
 profile: module-01-wearables/profiles/emerging-platforms.md
 watch:
-- url: https://verily.com/
-  role: other
-- url: https://verily.com/perspectives/verily-and-samsung-collaborate-to-accelerate-clinical-research-with-the-galaxy-watch-and-pre-platform
+- url: https://verily.com/security-trust
+  role: trust
+  fetch_url: https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/security-trust.json
+- url: https://verily.com/privacy-policy
+  role: terms
+  fetch_url: https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/privacy-policy.json
+- url: https://verily.com/terms
+  role: terms
+  fetch_url: https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/terms.json
+- url: https://support.workbench.verily.com/docs/guides/admin/licensing_tiers/
   role: research_program
+- url: https://verily.com/solutions/pre-platform/workbench/upgrade-contact
+  role: pricing
+- url: https://verily.com/solutions/viewpoint
+  role: research_program
+- url: https://verily.com/newsroom/verily-and-samsung-collaborate-to-accelerate-clinical-research-with-the-galaxy-watch-and-pre-platform
+  role: research_program
+- url: https://verily.com/newsroom
+  role: changelog
+- url: https://support.workbench.verily.com/docs/release_notes/
+  role: changelog
+- url: https://support.workbench.verily.com/docs/guides/governance/region_policy/
+  role: docs
+- url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K213357
+  role: regulatory
+  fetch_url: https://api.fda.gov/device/510k.json?search=k_number:K213357
+- url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRL/rl.cfm?start_search=1&knumber=K182456
+  role: regulatory
+  fetch_url: https://api.fda.gov/device/registrationlisting.json?search=k_number:K182456
+- url: https://accessgudid.nlm.nih.gov/devices/search?query=verily
+  role: regulatory
+  fetch_url: https://api.fda.gov/device/udi.json?search=company_name:%22Verily%22&limit=20
+- url: https://www.dataprivacyframework.gov/list
+  role: trust
+  fetch_url: https://dpfapi.azurewebsites.net/api/participants/10091
+- url: https://verily.com/sitemap.xml
+  role: other
 facts:
 - field: research_program
-  status: unresearched
+  status: stated
+  value: Verily no longer markets a Study Watch research program. What it offers researchers now is Verily Pre (Exchange data catalogue plus Workbench trusted research environment), with a free self-serve Standard tier for individual researchers, and, for study sponsors, Viewpoint Evidence, which since March 2026 bundles Samsung Galaxy Watch 8 sensor data with Verily's registry cohorts.
+  confidence: Verified
+  sources:
+  - url: https://verily.com/newsroom/verily-launches-free-version-of-its-pre-exchange-and-workbench-solutions-powering-precision-health-ai-and-discovery
+    type: vendor_page
+    quote: "This launch introduces a free Standard tier account for individual researchers to access the Exchange and Workbench solutions"
+    retrieved: 2026-10-22
+  - url: https://verily.com/newsroom/verily-and-samsung-collaborate-to-accelerate-clinical-research-with-the-galaxy-watch-and-pre-platform
+    type: vendor_page
+    quote: "Through this collaboration, Verily will fully integrate sensor data from Samsung Galaxy Watch and make it accessible in its Viewpoint Evidence solution, which is built on the Verily Pre platform and enables research sponsors to run real-world studies with re-contactable participant cohorts."
+    retrieved: 2026-10-22
+  recheck_by: 2026-11-21
+  note: No Study Watch product page survives in the verily.com sitemap (checked 2026-10-22); /solutions/verily-study-watch, /study-watch and /products return 404. Older Study Watch stories (FDA clearance posts, validation papers) are still listed under /stories.
 - field: program_eligibility
-  status: unresearched
+  status: stated
+  value: Workbench individual accounts are open to anyone with a Google identity; organisation users join through an enterprise contract. Viewpoint Evidence targets life sciences and government sponsors.
+  confidence: Verified
+  scope: Verily Pre Workbench and Viewpoint Evidence
+  sources:
+  - url: https://support.workbench.verily.com/docs/guides/admin/licensing_tiers/
+    type: vendor_docs
+    quote: "Anyone with a Google account can sign up for an individual researcher Workbench account."
+    retrieved: 2026-10-22
+  - url: https://support.workbench.verily.com/docs/guides/admin/licensing_tiers/
+    type: vendor_docs
+    quote: "Organization account users are those who are invited to create a Workbench account through an enterprise that has a contractual relationship with Verily. They will be placed in the Enterprise tier."
+    retrieved: 2026-10-22
+  - url: https://verily.com/newsroom/verily-and-samsung-collaborate-to-accelerate-clinical-research-with-the-galaxy-watch-and-pre-platform
+    type: vendor_page
+    quote: "This joint offering aims to accelerate research for life sciences and government customers by combining advanced health analytics with consumer-grade wearable data."
+    retrieved: 2026-10-22
+  recheck_by: 2026-11-21
 - field: program_application
-  status: unresearched
+  status: stated
+  value: Workbench Standard is self-serve sign-up, then a Data Use Agreement per data collection (including the Project Baseline Health Study Limited collection). Professional tier and Viewpoint go through Verily contact forms. Fuller Project Baseline (Study Watch) data for reproducibility is by request, subject to PBHS governance approval.
+  confidence: Verified
+  sources:
+  - url: https://verily.com/newsroom/verily-launches-free-version-of-its-pre-exchange-and-workbench-solutions-powering-precision-health-ai-and-discovery
+    type: vendor_page
+    quote: "Upon agreeing to a Data Use Agreement (DUA), researchers can instantly view and analyze a growing number of data collections, including the Project Baseline Health Study – Limited and PRESCO data collections."
+    retrieved: 2026-10-22
+  - url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11699500/
+    type: paper
+    quote: "Requests are subject to approval by PBHS governance."
+    retrieved: 2026-10-22
+  - url: https://verily.com/solutions/viewpoint
+    type: vendor_page
+    quote: "Request a demo"
+    retrieved: 2026-10-22
+  recheck_by: 2026-11-21
+  note: Whether the PBHS Limited collection includes Study Watch sensor data is not stated on any live page; the former data-catalog page (verily.com/solutions/platform/data-catalog/project-baseline) is dead.
 - field: program_status
-  status: unresearched
+  status: stated
+  value: Workbench Standard Researcher tier is live but labelled beta.
+  confidence: Verified
+  scope: Verily Pre Workbench Standard tier
+  sources:
+  - url: https://support.workbench.verily.com/docs/guides/admin/licensing_tiers/
+    type: vendor_docs
+    quote: "The Standard Researcher tier is currently in beta mode. The features offered in this tier are subject to change."
+    retrieved: 2026-10-22
+  recheck_by: 2026-11-21
+- field: program_status
+  status: conflict
+  value: Study Watch appears discontinued but Verily has not said so on its own public pages. Press quoting an August 2025 internal memo and a spokesperson reports that Verily fully wound down its devices program, including "Study Devices", stopped manufacturing medical devices and will no longer support them, and every Study Watch product page is gone. Yet the Security and Trust page still lists "Study Watch & Hub" in its SOC 2 and ISO 27001 scope, and a third party, Quipment Inc. (Kennesaw, GA), registered as a repack or relabel establishment, added an FDA device listing for Study Watch (K182456) on 2026-05-12.
+  confidence: Reported
+  scope: Verily Study Watch
+  sources:
+  - url: https://hitconsultant.net/2025/08/29/alphabets-verily-shuts-down-medical-device-division-shifts-focus-to-ai/
+    type: secondary
+    quote: "difficult decision to discontinue manufacturing medical devices” and will no longer support them moving forward"
+    retrieved: 2026-10-22
+  - url: https://www.mddionline.com/business/verily-permanently-ceases-medical-device-manufacturing
+    type: secondary
+    quote: "we cannot support the investment of the resources necessary for the long-term growth and scaling of our Devices programs, and have therefore made the difficult decision to fully wind down the program."
+    retrieved: 2026-10-22
+  - url: https://www.mddionline.com/business/verily-permanently-ceases-medical-device-manufacturing
+    type: secondary
+    quote: "to Study Devices launched with numerous study partners"
+    retrieved: 2026-10-22
+  - url: https://verily.com/security-trust
+    type: vendor_page
+    fetch_url: https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/security-trust.json
+    quote: "Retinal Service, Study Watch & Hub, and"
+    retrieved: 2026-10-22
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRL/rl.cfm?start_search=1&knumber=K182456
+    type: regulator_db
+    fetch_url: https://api.fda.gov/device/registrationlisting.json?search=k_number:K182456
+    quote: "QUIPMENT INC."
+    retrieved: 2026-10-22
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRL/rl.cfm?start_search=1&knumber=K182456
+    type: regulator_db
+    fetch_url: https://api.fda.gov/device/registrationlisting.json?search=k_number:K182456
+    quote: "Repack or Relabel Medical Device"
+    retrieved: 2026-10-22
+  - url: https://verily.com/solutions/verily-study-watch
+    type: vendor_page
+    expect_absent: true
+    retrieved: 2026-10-22
+  recheck_by: 2026-11-21
+  note: The memo (dated 2025-08-25 by MD+DI) names "Study Devices" but not Study Watch; the HIT Consultant item names neither. The Quipment listing (establishment type Repack or Relabel Medical Device, initial-importer flag Y, product code DXH, created 2026-05-12) is the only registration listing openFDA returns for any Study Watch 510(k); none exists under Verily. It suggests units still move through third-party logistics, not that Verily supplies new studies. Ask Verily directly whether Study Watch can be supplied to new studies. The security-trust fetch_url carries a Next.js build ID (1y9FmmHH1nlmtBVxwLMlY) that changes on every Verily redeploy; update it when the quote goes missing.
 - field: developer_program_status
-  status: unresearched
+  status: stated
+  value: There is no public Study Watch API or SDK. The general researcher route, Workbench, is open to self-serve sign-up and documents a CLI (wb) and Terraform provider.
+  confidence: Verified
+  sources:
+  - url: https://support.workbench.verily.com/docs/guides/admin/licensing_tiers/
+    type: vendor_docs
+    quote: "Anyone with a Google account can sign up for an individual researcher Workbench account."
+    retrieved: 2026-10-22
+  - url: https://support.workbench.verily.com/docs/release_notes/
+    type: vendor_docs
+    quote: "November 11: Workbench is now part of Verily Pre"
+    retrieved: 2026-10-22
+  recheck_by: 2026-11-21
+  note: No developer or API documentation for Study Watch was found on verily.com, support.verily.com or support.workbench.verily.com.
 - field: user_cap
-  status: unresearched
+  status: stated
+  value: Standard (free) tier is capped at 5 workspaces and 5 collaborators per workspace; Professional (paid) is unlimited. No participant caps published for Viewpoint.
+  confidence: Verified
+  scope: Verily Pre Workbench
+  sources:
+  - url: https://verily.com/solutions/pre-platform/workbench/upgrade-contact
+    type: vendor_page
+    quote: "Number of workspaces 5 Unlimited"
+    retrieved: 2026-10-22
+  - url: https://verily.com/solutions/pre-platform/workbench/upgrade-contact
+    type: vendor_page
+    quote: "Number of collaborators per workspace 5 Unlimited"
+    retrieved: 2026-10-22
+  recheck_by: 2026-11-21
 - field: academic_vs_commercial
-  status: unresearched
+  status: stated
+  value: Access differs by tier (individual Standard or Professional vs contracted Enterprise), not by academic vs commercial status. No academic-specific terms are published.
+  confidence: Verified
+  sources:
+  - url: https://support.workbench.verily.com/docs/guides/admin/licensing_tiers/
+    type: vendor_docs
+    quote: "Enterprise users have access to all Workbench features, while Standard Researcher tier customers have restricted access."
+    retrieved: 2026-10-22
+  recheck_by: 2026-11-21
 - field: device_price
-  status: unresearched
+  status: stated
+  value: Study Watch was an investigational device for research participants and not available to consumers; no list price was found. Galaxy Watch pricing in the Samsung bundle is not published by Verily.
+  confidence: Corroborated
+  sources:
+  - url: https://verily.com/stories/verily-study-watch-afib-clearance
+    type: vendor_page
+    quote: "Study Watch will not be directly available to consumers."
+    retrieved: 2026-10-22
+  - url: https://verily.com/stories/verily-study-watch-receives-fda-510-k-clearance-for-ecg
+    type: vendor_page
+    quote: "In April of 2017, we launched Verily Study Watch, an investigational device for capturing health information from clinical research participants while serving as an easy-to-read watch for daily wear."
+    retrieved: 2026-10-22
+  recheck_by: 2026-11-21
+  note: Lowered from Verified. The sources say not available to consumers and investigational; "never sold" and "no price ever published" are inferences from absence.
 - field: subscription_price
-  status: unresearched
+  status: not_applicable
+  value: No consumer subscription for Study Watch or the research platform. Verily Me is a free consumer app, unrelated to device data access.
+  confidence: Verified
+  sources:
+  - url: https://verily.com/solutions/verily-me
+    type: vendor_page
+    retrieved: 2026-10-22
+  recheck_by: 2026-11-21
 - field: academic_pricing
-  status: unresearched
+  status: not_public
+  value: No academic or research discount published for Workbench Professional, Enterprise or Viewpoint.
+  confidence: Verified
+  sources:
+  - url: https://verily.com/solutions/pre-platform/workbench/upgrade-contact
+    type: vendor_page
+    retrieved: 2026-10-22
+  - url: https://support.workbench.verily.com/docs/guides/admin/licensing_tiers/
+    type: vendor_docs
+    retrieved: 2026-10-22
+  - url: https://verily.com/solutions/viewpoint
+    type: vendor_page
+    retrieved: 2026-10-22
+  recheck_by: 2026-11-21
 - field: api_platform_fees
-  status: unresearched
+  status: stated
+  value: Workbench Standard is free; Professional is paid with no published price; cloud compute is billed to the researcher's own account on both tiers.
+  confidence: Verified
+  scope: Verily Pre Workbench
+  sources:
+  - url: https://verily.com/solutions/pre-platform/workbench/upgrade-contact
+    type: vendor_page
+    quote: "Professional Researcher (Paid)"
+    retrieved: 2026-10-22
+  - url: https://verily.com/solutions/pre-platform/workbench/upgrade-contact
+    type: vendor_page
+    quote: "Compute billing Bring your own account Bring your own account"
+    retrieved: 2026-10-22
+  recheck_by: 2026-11-21
 - field: minimum_commitment
-  status: unresearched
+  status: not_public
+  value: No minimum term or order published for Workbench Professional, Enterprise or Viewpoint.
+  confidence: Verified
+  sources:
+  - url: https://verily.com/solutions/pre-platform/workbench/upgrade-contact
+    type: vendor_page
+    retrieved: 2026-10-22
+  - url: https://verily.com/solutions/viewpoint
+    type: vendor_page
+    retrieved: 2026-10-22
+  - url: https://verily.com/solutions/pre-platform
+    type: vendor_page
+    retrieved: 2026-10-22
+  recheck_by: 2026-11-21
 - field: quote_required
-  status: unresearched
+  status: stated
+  value: Yes for everything paid. Professional upgrade is through a contact form; Viewpoint and Pre are "Request a demo".
+  confidence: Verified
+  sources:
+  - url: https://verily.com/solutions/pre-platform/workbench/upgrade-contact
+    type: vendor_page
+    quote: "Professional Researcher (Paid)"
+    retrieved: 2026-10-22
+  - url: https://verily.com/solutions/viewpoint
+    type: vendor_page
+    quote: "Request a demo"
+    retrieved: 2026-10-22
+  recheck_by: 2026-11-21
 - field: raw_streams
-  status: unresearched
+  status: stated
+  value: Study Watch recorded PPG and accelerometry at 30 Hz, ECG, heart rate and electrodermal activity, plus environmental sensors, and was reported at launch to hold up to a week of raw data on the device. Researchers outside Verily get its data only as de-identified Project Baseline data on approved request.
+  confidence: Corroborated
+  scope: Verily Study Watch (historical data)
+  sources:
+  - url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11699500/
+    type: paper
+    quote: "The VSW captures biological signals through several sensors, including photoplethysmography (PPG) at 30 Hz and accelerometry at 30 Hz."
+    retrieved: 2026-10-22
+  - url: https://verily.com/stories/verily-study-watch-receives-fda-510-k-clearance-for-ecg
+    type: vendor_page
+    quote: "With built-in biometric, environmental and movement sensors, Study Watch can contribute to research efforts broadly."
+    retrieved: 2026-10-22
+  - url: https://www.massdevice.com/verily-launches-biosensor-equipped-study-watch-clinical-study-patient-monitoring/
+    type: secondary
+    quote: "is equipped with multiple sensors, including an electrocardiogram, and can monitor heart rate, electrodermal activity and inertial movements, with a battery life of up to 1 week."
+    retrieved: 2026-10-22
+  - url: https://www.massdevice.com/verily-launches-biosensor-equipped-study-watch-clinical-study-patient-monitoring/
+    type: secondary
+    quote: "to allow it to store up to a week’s worth of raw data and lower the need for frequent syncs."
+    retrieved: 2026-10-22
+  recheck_by: 2026-11-21
+  note: Verily's 2017 launch post (verily.com/blog/introducing-verily-study-watch, now redirecting to a 404 under /perspectives/) was the primary source for EDA and storage; only 2017 press coverage survives. MassDevice says "up to a week's worth" of raw data; the profile says "weeks".
+- field: raw_streams
+  status: stated
+  value: Verily's chief product officer told MedCity News the Galaxy Watch bundle gives researchers raw device signals, such as PPG and accelerometer and gyroscope motion data. Verily's own press release says only that it will "fully integrate sensor data" and lists no streams, rates or raw-signal terms.
+  confidence: Reported
+  scope: Viewpoint Evidence with Samsung Galaxy Watch
+  sources:
+  - url: https://medcitynews.com/2026/03/verily-samsung-wearable-smartwatch-healthcare-pharma-research/
+    type: secondary
+    quote: "He also pointed out that the partnership will give researchers access to raw device signals, such as photoplethysmography and motion data from the Galaxy watches’ accelerometers and gyroscopes."
+    retrieved: 2026-10-22
+  - url: https://verily.com/newsroom/verily-and-samsung-collaborate-to-accelerate-clinical-research-with-the-galaxy-watch-and-pre-platform
+    type: vendor_page
+    quote: "Through this collaboration, Verily will fully integrate sensor data from Samsung Galaxy Watch and make it accessible in its Viewpoint Evidence solution, which is built on the Verily Pre platform and enables research sponsors to run real-world studies with re-contactable participant cohorts."
+    retrieved: 2026-10-22
+  recheck_by: 2026-11-21
+  note: The raw-signal statement is the journalist's paraphrase of Myoung Cha, Verily's chief product officer, not a Verily document. Ask Verily which Galaxy Watch streams and rates Viewpoint delivers.
 - field: derived_metrics
-  status: unresearched
+  status: stated
+  value: Study Watch produced proprietary derived metrics including PPG inter-beat intervals with a per-beat quality flag, and an ambulatory-status classifier (10-second windows and total daily ambulatory time).
+  confidence: Corroborated
+  scope: Verily Study Watch
+  sources:
+  - url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11699500/
+    type: paper
+    quote: "The IBIs are calculated at each heartbeat, and each IBI value is also accompanied by a binary quality metric"
+    retrieved: 2026-10-22
+  - url: https://verily.com/stories/study-watch-another-step-closer-to-powering-precision-health
+    type: vendor_page
+    quote: "Testing showed that the algorithm was accurate in classifying ambulatory status both within 10-second periods, and on daily aggregated metrics (i.e., total daily ambulatory time)."
+    retrieved: 2026-10-22
+  recheck_by: 2026-11-21
 - field: sampling_rates
-  status: unresearched
+  status: stated
+  value: PPG 30 Hz and accelerometer 30 Hz (Study Watch, per a Verily-co-authored PBHS paper). No rates published for the Galaxy Watch integration.
+  confidence: Corroborated
+  scope: Verily Study Watch
+  sources:
+  - url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11699500/
+    type: paper
+    quote: "The VSW captures biological signals through several sensors, including photoplethysmography (PPG) at 30 Hz and accelerometry at 30 Hz."
+    retrieved: 2026-10-22
+  recheck_by: 2026-11-21
 - field: history_depth
-  status: unresearched
+  status: unclear
+  value: Study Watch data exist only as historical study datasets (Project Baseline ran from 2017); the coverage window of the PBHS Limited collection on Exchange is not stated on any live page. Nothing published for the Galaxy Watch cohort.
+  confidence: Unclear
+  sources:
+  - url: https://verily.com/newsroom/verily-launches-free-version-of-its-pre-exchange-and-workbench-solutions-powering-precision-health-ai-and-discovery
+    type: vendor_page
+    quote: "Upon agreeing to a Data Use Agreement (DUA), researchers can instantly view and analyze a growing number of data collections, including the Project Baseline Health Study – Limited and PRESCO data collections."
+    retrieved: 2026-10-22
+  recheck_by: 2026-11-21
 - field: export_routes
-  status: unresearched
+  status: stated
+  value: No device-level export route. Data reach researchers through Verily Pre (Exchange data collections analysed inside Workbench under a DUA), through PBHS data requests, or as a Viewpoint sponsor. Workbench Standard users cannot bring their own data.
+  confidence: Verified
+  sources:
+  - url: https://verily.com/newsroom/verily-launches-free-version-of-its-pre-exchange-and-workbench-solutions-powering-precision-health-ai-and-discovery
+    type: vendor_page
+    quote: "Upon agreeing to a Data Use Agreement (DUA), researchers can instantly view and analyze a growing number of data collections, including the Project Baseline Health Study – Limited and PRESCO data collections."
+    retrieved: 2026-10-22
+  - url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11699500/
+    type: paper
+    quote: "The deidentified PBHS data corresponding to this study are available upon request for the purpose of examining its reproducibility."
+    retrieved: 2026-10-22
+  recheck_by: 2026-11-21
 - field: rate_limits
-  status: unresearched
+  status: not_public
+  value: No API rate limits published; there is no public Study Watch or data API.
+  confidence: Verified
+  sources:
+  - url: https://support.workbench.verily.com/docs/release_notes/
+    type: vendor_docs
+    retrieved: 2026-10-22
+  - url: https://support.workbench.verily.com/docs/guides/admin/licensing_tiers/
+    type: vendor_docs
+    retrieved: 2026-10-22
+  - url: https://support.verily.com/kb/en
+    type: vendor_docs
+    retrieved: 2026-10-22
+  recheck_by: 2026-11-21
 - field: retention_terms
-  status: unresearched
+  status: stated
+  value: The general privacy policy keeps personal information as long as necessary for the collection purpose (it excludes HIPAA-covered and research-study data handled for sponsors). Workbench release notes say Verily may delete trial accounts' data when the licence expires.
+  confidence: Verified
+  sources:
+  - url: https://verily.com/privacy-policy
+    type: vendor_legal
+    fetch_url: https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/privacy-policy.json
+    quote: "We generally keep Personal Information for as long as necessary for performing the purposes for which we collected it unless applicable laws and regulations require us to keep it for longer."
+    retrieved: 2026-10-22
+  - url: https://support.workbench.verily.com/docs/release_notes/
+    type: vendor_docs
+    quote: "Any data brought by these accounts is subject to deletion when the license expires."
+    retrieved: 2026-10-22
+  recheck_by: 2026-11-21
+  note: The privacy-policy fetch_url carries a Next.js build ID (1y9FmmHH1nlmtBVxwLMlY) that changes on every Verily redeploy; update it when the quote goes missing.
 - field: ai_training_terms
-  status: unresearched
+  status: unclear
+  value: No explicit AI or model-training clause found. The privacy policy allows de-identified data to be used "at our discretion" for research analysis, and personal data for product development; study data handled as processor fall under sponsor terms instead.
+  confidence: Unclear
+  sources:
+  - url: https://verily.com/privacy-policy
+    type: vendor_legal
+    fetch_url: https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/privacy-policy.json
+    quote: "We may use or disclose such data at our discretion, such as for statistical and research analysis."
+    retrieved: 2026-10-22
+  - url: https://verily.com/privacy-policy
+    type: vendor_legal
+    fetch_url: https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/privacy-policy.json
+    quote: "including product development and improvement, account management, and legal, security, and safety purposes."
+    retrieved: 2026-10-22
+  - url: https://verily.com/terms
+    type: vendor_legal
+    fetch_url: https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/terms.json
+    retrieved: 2026-10-22
+  recheck_by: 2026-11-21
+  note: Searched the privacy policy and terms for "artificial intelligence", "machine learning" and "train" on 2026-10-22; no model-training clause. Both fetch_urls carry a Next.js build ID (1y9FmmHH1nlmtBVxwLMlY) that changes on every Verily redeploy; update it when the quotes go missing.
 - field: deprecations
-  status: unresearched
+  status: stated
+  value: Verily fully wound down its medical device program and stopped manufacturing and supporting devices (internal memo of August 2025, reported by press). Its other devices are marked "Not in Commercial Distribution" in GUDID (retinal cameras ended 2026-04-27; Onduo December 2025). Study Watch has no GUDID record and its product pages are gone. Platform renames since then include Data Discovery becoming Data Exchange (30 Sep 2025) and Workbench moving into Verily Pre (11 Nov 2025).
+  confidence: Corroborated
+  sources:
+  - url: https://hitconsultant.net/2025/08/29/alphabets-verily-shuts-down-medical-device-division-shifts-focus-to-ai/
+    type: secondary
+    quote: "difficult decision to discontinue manufacturing medical devices” and will no longer support them moving forward"
+    retrieved: 2026-10-22
+  - url: https://www.mddionline.com/business/verily-permanently-ceases-medical-device-manufacturing
+    type: secondary
+    quote: "we cannot support the investment of the resources necessary for the long-term growth and scaling of our Devices programs, and have therefore made the difficult decision to fully wind down the program."
+    retrieved: 2026-10-22
+  - url: https://accessgudid.nlm.nih.gov/devices/search?query=verily
+    type: regulator_db
+    fetch_url: https://api.fda.gov/device/udi.json?search=company_name:%22Verily%22&limit=20
+    quote: "Not in Commercial Distribution"
+    retrieved: 2026-10-22
+  - url: https://support.workbench.verily.com/docs/release_notes/
+    type: vendor_docs
+    quote: "September 30: Data Discovery becomes Data Exchange"
+    retrieved: 2026-10-22
+  - url: https://verily.com/solutions/verily-study-watch
+    type: vendor_page
+    expect_absent: true
+    retrieved: 2026-10-22
+  recheck_by: 2026-11-21
+  note: Verily has published no dated Study Watch end-of-life notice of its own; the device-program exit is sourced to press quoting the CEO's memo and a spokesperson.
 - field: baa
-  status: unresearched
+  status: stated
+  value: Verily says it acts as a business associate when subject to HIPAA for research sponsors; no standalone BAA offer page.
+  confidence: Corroborated
+  sources:
+  - url: https://verily.com/privacy-policy
+    type: vendor_legal
+    fetch_url: https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/privacy-policy.json
+    quote: "For example, Verily may manage wellness programs and research studies as a “processor” (or “business associate” when subject to HIPAA) to our business customers, such as  research study sponsors."
+    retrieved: 2026-10-22
+  recheck_by: 2027-01-20
+  note: The privacy-policy fetch_url carries a Next.js build ID (1y9FmmHH1nlmtBVxwLMlY) that changes on every Verily redeploy; update it when the quote goes missing.
 - field: dpa
-  status: unresearched
+  status: unclear
+  value: Verily says it acts as a processor for business customers such as study sponsors, implying processor terms, but no DPA is published or explicitly offered.
+  confidence: Unclear
+  sources:
+  - url: https://verily.com/privacy-policy
+    type: vendor_legal
+    fetch_url: https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/privacy-policy.json
+    quote: "For example, Verily may manage wellness programs and research studies as a “processor” (or “business associate” when subject to HIPAA) to our business customers, such as  research study sponsors."
+    retrieved: 2026-10-22
+  - url: https://verily.com/security-trust
+    type: vendor_page
+    retrieved: 2026-10-22
+  recheck_by: 2027-01-20
+  note: Privacy policy and terms searched for "processing agreement" and "Data Processing" on 2026-10-22, no hits. The privacy-policy fetch_url carries a Next.js build ID (1y9FmmHH1nlmtBVxwLMlY) that changes on every Verily redeploy; update it when the quote goes missing.
 - field: hipaa_statement
-  status: unresearched
+  status: stated
+  value: Verily claims independent HIPAA Security and Privacy Rule audits for Lightpath, Retinal Service, Site CTMS and Onduo. Study Watch, Workbench and Viewpoint are not in that list.
+  confidence: Corroborated
+  sources:
+  - url: https://verily.com/security-trust
+    type: vendor_page
+    fetch_url: https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/security-trust.json
+    quote: "Independent audits to protect electronic health information (ePHI) through implementation of administrative, physical, and technical safeguards built into"
+    retrieved: 2026-10-22
+  recheck_by: 2027-01-20
+  note: The security-trust fetch_url carries a Next.js build ID (1y9FmmHH1nlmtBVxwLMlY) that changes on every Verily redeploy; update it when the quote goes missing.
 - field: gdpr_statement
-  status: unresearched
+  status: stated
+  value: Privacy policy (Verily Health Inc., effective 2026-04-14) covers EU, UK and Swiss data, states participation in the EU-U.S. Data Privacy Framework and its UK and Swiss extensions, and uses standard contractual clauses for transfers.
+  confidence: Corroborated
+  sources:
+  - url: https://verily.com/privacy-policy
+    type: vendor_legal
+    fetch_url: https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/privacy-policy.json
+    quote: "Verily complies with the EU-U.S. Data Privacy Framework (EU-U.S. DPF), the UK Extension to the EU-U.S. DPF, and the Swiss-U.S. Data Privacy Framework (Swiss-U.S. DPF) as set forth by the U.S. Department of Commerce."
+    retrieved: 2026-10-22
+  recheck_by: 2027-01-20
+  note: The general GDPR position is a self-claim and stays Corroborated; DPF participation itself is confirmed on the registry in the scoped entry below. The privacy-policy fetch_url carries a Next.js build ID (1y9FmmHH1nlmtBVxwLMlY) that changes on every Verily redeploy; update it when the quote goes missing.
+- field: gdpr_statement
+  scope: Data Privacy Framework certification
+  status: stated
+  value: 'Two Verily entities, both in Dallas, TX, are listed Active on the Commerce Department''s Data Privacy Framework registry under the EU-U.S. DPF, the Swiss-U.S. DPF and the UK Extension (HR and non-HR data for EU and UK, non-HR for Swiss). Verily Health Inc. (OrganizationId 10091, the entity named in the current privacy policy): certified 2026-04-20, next certification due 2027-04-20, no inactive periods. Verily Life Sciences, LLC (OrganizationId 7768): EU-U.S. and Swiss-U.S. since 2018-02-02, UK Extension since 2025-01-13, next certification due 2027-03-12, with lapses 2024-02-12 to 2025-01-13 and 2025-02-18 to 2025-03-17. Verification method for both: self-assessment.'
+  confidence: Verified
+  sources:
+  - url: https://www.dataprivacyframework.gov/list
+    fetch_url: https://dpfapi.azurewebsites.net/api/participants/10091
+    type: certificate
+    quote: "Verily Health Inc. Verily Health Inc."
+    retrieved: 2026-10-22
+  - url: https://www.dataprivacyframework.gov/list
+    fetch_url: https://dpfapi.azurewebsites.net/api/participants/10091
+    type: certificate
+    quote: "EU-US Certification Active 2026-04-20T12:00:00+00:00 2027-04-20T12:00:00+00:00"
+    retrieved: 2026-10-22
+  - url: https://www.dataprivacyframework.gov/list
+    fetch_url: https://dpfapi.azurewebsites.net/api/participants/10091
+    type: certificate
+    quote: "SW-US Certification Active 2026-04-20T12:00:00+00:00 2027-04-20T12:00:00+00:00"
+    retrieved: 2026-10-22
+  - url: https://www.dataprivacyframework.gov/list
+    fetch_url: https://dpfapi.azurewebsites.net/api/participants/10091
+    type: certificate
+    quote: "UK Extension Certification Active 2026-04-20T12:00:00+00:00 2027-04-20T12:00:00+00:00"
+    retrieved: 2026-10-22
+  - url: https://www.dataprivacyframework.gov/list
+    fetch_url: https://dpfapi.azurewebsites.net/api/participants/7768
+    type: certificate
+    quote: "Verily Life Sciences, LLC Verily Life Sciences, LLC"
+    retrieved: 2026-10-22
+  - url: https://www.dataprivacyframework.gov/list
+    fetch_url: https://dpfapi.azurewebsites.net/api/participants/7768
+    type: certificate
+    quote: "EU-US Certification Active 2018-02-02T12:00:00+00:00 2027-03-12T12:00:00+00:00"
+    retrieved: 2026-10-22
+  - url: https://www.dataprivacyframework.gov/list
+    fetch_url: https://dpfapi.azurewebsites.net/api/participants/7768
+    type: certificate
+    quote: "SW-US Certification Active 2018-02-02T12:00:00+00:00 2027-03-12T12:00:00+00:00"
+    retrieved: 2026-10-22
+  - url: https://www.dataprivacyframework.gov/list
+    fetch_url: https://dpfapi.azurewebsites.net/api/participants/7768
+    type: certificate
+    quote: "UK Extension Certification Active 2025-01-13T12:00:00+00:00 2027-03-12T12:00:00+00:00"
+    retrieved: 2026-10-22
+  - url: https://www.dataprivacyframework.gov/list
+    fetch_url: https://dpfapi.azurewebsites.net/api/participants/7768
+    type: certificate
+    quote: "Lapse 2024-02-12T12:00:00+00:00 2025-01-13T12:00:00+00:00"
+    retrieved: 2026-10-22
+  - url: https://www.dataprivacyframework.gov/list
+    fetch_url: https://dpfapi.azurewebsites.net/api/participants/7768
+    type: certificate
+    quote: "Lapse 2025-02-18T12:00:00+00:00 2025-03-17T12:00:00+00:00"
+    retrieved: 2026-10-22
+  recheck_by: 2027-01-20
+  note: Found on 2026-10-22 with the registry list page's own read-only search (the POST it makes to dpfapi.azurewebsites.net/api/participants) for "Verily", which returned exactly these two Active records. A DPF listing confirms the transfer mechanism, not GDPR compliance as a whole.
 - field: iso27001
-  status: unresearched
+  status: stated
+  value: Verily claims ISO/IEC 27001 certification covering Lightpath, Onduo, Research Sponsor (Project Baseline), Site CTMS, Retinal Service, Study Watch & Hub, and Workbench. Certificate not published (the page shows a Coalfire certification seal); reports may need an NDA.
+  confidence: Corroborated
+  sources:
+  - url: https://verily.com/security-trust
+    type: vendor_page
+    fetch_url: https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/security-trust.json
+    quote: "Certified compliant to this set of internationally-recognized standards for information security management in"
+    retrieved: 2026-10-22
+  - url: https://verily.com/security-trust
+    type: vendor_page
+    fetch_url: https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/security-trust.json
+    quote: "Retinal Service, Study Watch & Hub, and"
+    retrieved: 2026-10-22
+  recheck_by: 2027-01-20
+  note: The security-trust fetch_url carries a Next.js build ID (1y9FmmHH1nlmtBVxwLMlY) that changes on every Verily redeploy; update it when the quotes go missing.
 - field: soc2
-  status: unresearched
+  status: stated
+  value: Verily claims a SOC 2 Type II audit for the same product list (including Study Watch & Hub and Workbench). Report available only on request, possibly under NDA.
+  confidence: Corroborated
+  sources:
+  - url: https://verily.com/security-trust
+    type: vendor_page
+    fetch_url: https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/security-trust.json
+    quote: "Third-party audit that assesses security controls and practices for the following solutions"
+    retrieved: 2026-10-22
+  - url: https://verily.com/security-trust
+    type: vendor_page
+    quote: "For additional information, such as access to attestation reports or product architecture details/white papers, a NDA may be required."
+    retrieved: 2026-10-22
+  recheck_by: 2027-01-20
+  note: The first source's fetch_url carries a Next.js build ID (1y9FmmHH1nlmtBVxwLMlY) that changes on every Verily redeploy; update it when the quote goes missing. The NDA sentence is in the static HTML and needs no fetch_url.
 - field: fda_clearances
-  status: unresearched
+  status: stated
+  value: "Three 510(k) clearances, product code DXH, all to Verily Life Sciences, LLC: K182456 Study Watch (single-lead ECG), decided 2019-01-17; K192415 Study Watch with Irregular Pulse Monitor, 2020-01-17; K213357 Study Watch with Irregular Pulse Monitor (Home), 2022-07-19. No GUDID record exists for Study Watch. The only registration listing openFDA returns for any of the three is K182456 by Quipment Inc., a repack or relabel establishment (created 2026-05-12); none is listed under Verily."
+  confidence: Verified
+  sources:
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K182456
+    type: regulator_db
+    fetch_url: https://api.fda.gov/device/510k.json?search=k_number:K182456
+    quote: "Verily Life Sciences, LLC"
+    retrieved: 2026-10-22
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K182456
+    type: regulator_db
+    fetch_url: https://api.fda.gov/device/510k.json?search=k_number:K182456
+    quote: "2019-01-17"
+    retrieved: 2026-10-22
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K192415
+    type: regulator_db
+    fetch_url: https://api.fda.gov/device/510k.json?search=k_number:K192415
+    quote: "Study Watch with Irregular Pulse Monitor"
+    retrieved: 2026-10-22
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K192415
+    type: regulator_db
+    fetch_url: https://api.fda.gov/device/510k.json?search=k_number:K192415
+    quote: "2020-01-17"
+    retrieved: 2026-10-22
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K213357
+    type: regulator_db
+    fetch_url: https://api.fda.gov/device/510k.json?search=k_number:K213357
+    quote: "Study Watch with Irregular Pulse Monitor (Home), Study Watch with Irregular Pulse Monitor"
+    retrieved: 2026-10-22
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K213357
+    type: regulator_db
+    fetch_url: https://api.fda.gov/device/510k.json?search=k_number:K213357
+    quote: "2022-07-19"
+    retrieved: 2026-10-22
+  - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRL/rl.cfm?start_search=1&knumber=K182456
+    type: regulator_db
+    fetch_url: https://api.fda.gov/device/registrationlisting.json?search=k_number:K182456
+    quote: "2026-05-12"
+    retrieved: 2026-10-22
+  recheck_by: 2027-01-20
+  note: A clearance is not evidence of current supply. openFDA registrationlisting searches on 2026-10-22 for k_number K192415 and K213357, and for owner-operator firm name Verily, returned no matches. openFDA also lists K242508 (Verily Numetric Retinal Camera), not a wearable. MD+DI (2025-08-28) reports that in 2021 FDA denied Verily's bid to add a Parkinson's disease exam tool to the watch; no FDA record of that request was looked up for this record.
 - field: data_residency
-  status: unresearched
+  status: stated
+  value: General privacy policy says data may be stored outside the user's country, including in the United States. Workbench lets data owners apply region policies on GCP- and AWS-backed collections.
+  confidence: Verified
+  sources:
+  - url: https://verily.com/privacy-policy
+    type: vendor_legal
+    fetch_url: https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/privacy-policy.json
+    quote: "we may use or store the Personal Information collected through the Services on servers located outside the country where you live, including in the United States."
+    retrieved: 2026-10-22
+  - url: https://support.workbench.verily.com/docs/guides/governance/region_policy/
+    type: vendor_docs
+    quote: "Region policies can be applied to both GCP- and AWS-backed data collections."
+    retrieved: 2026-10-22
+  recheck_by: 2027-01-20
+  note: The privacy-policy fetch_url carries a Next.js build ID (1y9FmmHH1nlmtBVxwLMlY) that changes on every Verily redeploy; update it when the quote goes missing.
