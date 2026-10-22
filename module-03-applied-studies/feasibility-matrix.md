@@ -1,6 +1,6 @@
 # Module 3 — Feasibility Matrix
 
-**Last updated: 2026-09-03; corrected 2026-10-10** after the independent review (shared/reviews/2026-10-10-independent-review.md): every row's N and duration re-checked against its profile, and figures re-checked against full text where the review flagged them. **72 profiles / 70 distinct deployments** (7 added 2026-10-22 from the scan queue) (two pairs of profiles report one cohort each: RADAR-MDD, Part A, and mSavorUs, Part D; Part E folds two multi-paper cohorts into single profiles). One row per study. This is the resource a future study team should read
+**Last updated: 2026-09-03; corrected 2026-10-10** after the independent review (shared/reviews/2026-10-10-independent-review.md): every row's N and duration re-checked against its profile, and figures re-checked against full text where the review flagged them. **73 profiles / 71 distinct deployments** (8 added 2026-10-22 from the scan queue and backlog) (two pairs of profiles report one cohort each: RADAR-MDD, Part A, and mSavorUs, Part D; Part E folds two multi-paper cohorts into single profiles). One row per study. This is the resource a future study team should read
 first: who else tried this device/platform combination, at what scale, for how long, and did it hold
 up.
 
@@ -317,18 +317,20 @@ in this module.
     an adversarial failure mode — MetricWire's carrier-country field unmasked 10 fraudulent
     participants; a manual checklist later blocked 37.
 
-# Part F - Queue set from the weekly scan (7 profiles, 2026-10-22)
+# Part F - Queue set from the weekly scan (8 profiles, 2026-10-22)
 
 The 16 papers queued by the weekly scan between 2026-09-07 and 2026-10-05, screened from full text.
 7 became profiles, 9 were rejected with reasons in the ledger (5 of them because the publisher served a
 bot check to scripts and no other legitimate copy exists; those can be re-screened from a PDF fetched
-by hand). Screening reports in `_screening-reports/2026-10-22-queue-A.md` to `-D.md`.
+by hand). Zawada 2025 was added the same day from the discovery backlog (the first Beiwe window mostly after
+the 2024-05-29 heartbeat change). Screening reports in `_screening-reports/2026-10-22-queue-A.md` to `-E.md`.
 
 ## Table 10 - Queue set
 
 | Study | Platform / device | N | Duration | Headline operational number |
 |---|---|---|---|---|
 | [Culhane 2026, inpatient psychiatry](profiles/geneactiv-inpatient-psychiatry-sleep-reporting.md) | GENEActiv Original, provisioned, offline | 155 admitted to 88 offered to 68 wore | 11 months (Aug 2023 to Jun 2024), worn for the inpatient stay | 77.3% of patients offered a device accepted, but nurses offered it to only 56.8% of admissions. 32 of 34 phase-2 reports went to one co-author psychiatrist. Wear time not reported |
+| [Zawada 2025, ischemic stroke and TIA](profiles/beiwe-stroke-tia-mood-2024-window.md) | Beiwe, BYOD (77.3% iOS), Forest Oak and Jasmine | 67 recruited to 54 enrolled to 44 downloaded to 35 completed | 8 weeks (up to 90 days), monitoring Mar to Nov 2024 | 64.8% of enrolled completed and 10 of 54 never installed. 73% completed 8+ weeks of PHQ-8. GPS missingness dropped 15 from the models. First Beiwe window mostly after the 2024-05-29 heartbeat, but heartbeat status not stated and Supplemental Table 2's completeness metric is undefined |
 | [Stahl 2026, dementia caregivers and people with dementia](profiles/apple-watch-myrhythmwatch-dementia-caregivers.md) | Apple Watch Series 8 with myRhythmWatch, provisioned by post | 21 to 21 | 6 weeks | Caregivers averaged 35.5 valid 20-hour days of 42, all still collecting in week 6. People with dementia averaged 30.0 and were cut to 1 month mid-study. 7 of 15 caregivers declined to enrol their care recipient |
 | [Lu 2026, ABLE ageing supplement trial](profiles/actigraph-able-gerotherapeutic-trial-adherence.md) | ActiGraph wGT3X-BT, provisioned, 7-day mail-back | 120 to 119 | 9 months, 4 wear weeks | Median wear 1400 min/day with no reminders, 81% to 97% adherent per visit, device issues in 8 of 432 visits. Each extra minute of wear lowered dropout hazard (HR 0.998). 17% dropout |
 | [Kedoin 2026, high school soccer](profiles/fitbit-ai-sleep-feedback-adolescent-soccer.md) | Fitbit Inspire 3, provisioned, own phone; custom Fitbit Web API to GPT-4o to LINE pipeline | 25 to 25 | 10 weeks | 25 of 25 retained, 100% delivery of messages sent. Valid nights median 26 vs 22 when feedback only arrived after a valid night, a gap the design cannot attribute. Window and denominator not stated |

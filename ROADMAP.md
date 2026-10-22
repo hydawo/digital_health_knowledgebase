@@ -47,7 +47,7 @@ generated ones.
    still match (`facts/README.md`, "Automatic re-check extension"). The monthly pass covers only what
    it cannot confirm: about 180 of the 763 facts due by 2026-11-10, plus any whose quotes moved.
 3. **Module 3 queue.** ~~Screen the queued candidates~~ done 2026-10-22: 16 screened, 7 profiled (72 profiles), 9 rejected; five free papers blocked by publisher bot checks wait for a PDF fetched by hand (list in `module-03-applied-studies/_scan-queue.md`). Zawada 2025 (the first Beiwe deployment mostly
-   after the heartbeat change) in progress 2026-10-22. Vidal 2022, Nock 2026, Weingarden 2025 and the
+   after the heartbeat change) profiled 2026-10-22 (73 profiles); heartbeat status not stated, Q115 still open. Vidal 2022, Nock 2026, Weingarden 2025 and the
    two ALS addenda were already written in an earlier repair pass; this line was stale.
 4. **Fitbit profile follow-up** after 2026-10-30, when the legacy Web API is turned off.
 5. **Module 4 scan proposal:** approve or drop `shared/weekly-literature-scan-module4-proposal.md`.

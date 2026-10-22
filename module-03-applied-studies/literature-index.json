@@ -136,7 +136,8 @@
   "10.2196/101615",
   "10.3389/fphys.2026.1914161",
   "10.2196/92359",
-  "10.1007/s10461-026-05317-w"
+  "10.1007/s10461-026-05317-w",
+  "10.1016/j.mcpdig.2025.100240"
  ],
  "pmcids_seen": [
   "PMC10031448",
@@ -255,7 +256,8 @@
   "PMC13673175",
   "PMC13623721",
   "PMC13626187",
-  "PMC13524361"
+  "PMC13524361",
+  "PMC12381640"
  ],
  "last_run_date": "2026-10-05",
  "runs": [
@@ -841,6 +843,13 @@
    "doi": "10.2196/95194",
    "pmcid": "PMC13524361",
    "slug": "garmin-nursing-home-dementia-one-year",
+   "profiled": true,
+   "source": "module-03-queue-2026-10-22"
+  },
+  {
+   "doi": "10.1016/j.mcpdig.2025.100240",
+   "pmcid": "PMC12381640",
+   "slug": "beiwe-stroke-tia-mood-2024-window",
    "profiled": true,
    "source": "module-03-queue-2026-10-22"
   }

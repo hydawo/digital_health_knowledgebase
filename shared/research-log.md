@@ -2,6 +2,13 @@
 
 ---
 
+## 2026-10-22 (later) - Zawada 2025 profiled: first Beiwe window mostly after heartbeat
+
+- **Module:** 3. Profile `beiwe-stroke-tia-mood-2024-window.md`, screening report `_screening-reports/2026-10-22-queue-E.md`, matrix Table 10, source S77, ledger record. Module 3 is now 73 profiles / 71 deployments.
+- **Finding:** Beiwe, BYOD (34 iOS, 10 Android), Mayo Clinic, monitoring 1 March to 15 November 2024; 171 of 260 window days fall after the 2024-05-29 heartbeat enablement. Heartbeat status, server version and host are not stated. 54 enrolled, 44 installed, 35 completed (64.8%); 73% completed 8+ weeks of PHQ-8.
+- **Passive completeness unusable:** Supplemental Table 2 has no denominator, its text describes minutes missing, and 4 GPS and 14 accelerometer values exceed what the stated duty cycles allow (agent arithmetic, flagged in the profile). Q106 and Q115 updated, both still open.
+- **Roadmap correction:** Vidal 2022, Nock 2026, Weingarden 2025 and the two ALS addenda were already written in the 2026-10-10 repair pass; the roadmap line listing them as pending was stale.
+
 ## 2026-10-22 - Module 3 scan queue screened (7 profiles added)
 
 - **Module:** 3.

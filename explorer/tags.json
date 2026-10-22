@@ -633,6 +633,13 @@
     "Mental health"
    ],
    "os": "not-reported"
+  },
+  "beiwe-stroke-tia-mood-2024-window": {
+   "areas": [
+    "Neurology",
+    "Mental health"
+   ],
+   "os": "both"
   }
  }
 }

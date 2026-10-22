@@ -150,7 +150,7 @@ Four further papers were read in full and folded into existing profiles as adden
 sourced separately: Berry 2019 and Beukenhorst 2021 into `beiwe-als-adherence`, Straczkiewicz 2024
 and Karas 2024 into `beiwe-actigraph-modus-als-progression`.
 
-## Queue set (7 profiles, 2026-10-22)
+## Queue set (8 profiles, 2026-10-22)
 
 Screened from full text out of the weekly scan queue. Read from Europe PMC XML or PDF; PDFs stored in
 `literature/` where open access. Screening reports: `_screening-reports/2026-10-22-queue-A.md` to `-D.md`.
@@ -164,6 +164,7 @@ Screened from full text out of the weekly scan queue. Read from Europe PMC XML o
 | S74 | Tan Q, Son P, Nie Y, Yang P, Staiano AE, Wang F, Shepherd DC, Queen K, Gordon S, Chen S. "Integrating technology-assisted behavioral management into a summer obesity prevention intervention program: a pilot controlled trial." *Frontiers in Physiology* 2026;17:1914161. | Non-randomized pilot controlled trial | [10.3389/fphys.2026.1914161](https://doi.org/10.3389/fphys.2026.1914161) | **PDF** (PMC13623721) | [fitbit-actigraph-proudme-summer-camp-adolescents](profiles/fitbit-actigraph-proudme-summer-camp-adolescents.md) |
 | S75 | Haimovich AD, Lacourciere A, Palihnich K, Mulqueen S, Jansen N, Bertisch SM, Schonberg MA, Naik AD, Berry SD, Marcantonio ER, Shapiro NI, Mullington JM. "Feasibility and Acceptability of Oura Ring Sleep Monitoring in Older Adults Admitted From the Emergency Department: Prospective Cohort Study." *JMIR Form Res* 2026;10:e92359. | Prospective cohort pilot | [10.2196/92359](https://doi.org/10.2196/92359) | **PDF** (PMC13626187), Module 3 literature folder | [oura-ed-admitted-older-adults-sleep](profiles/oura-ed-admitted-older-adults-sleep.md) |
 | S76 | Boyle LD, Patrascu M, Husebo BS, Haugarvoll K, Steihaug OM, Marty B. "A One-Year Study Using Digital Biomarkers From Sensing Technologies to Assess Changes in Physical Activity Levels and Sleep Quality in Nursing Home Residents With Dementia: Observational Study." *JMIR Nursing* 2026;9:e95194. | Observational pilot, three timepoints over one year | [10.2196/95194](https://doi.org/10.2196/95194) | **PDF** (PMC13524361), Module 3 literature folder | [garmin-nursing-home-dementia-one-year](profiles/garmin-nursing-home-dementia-one-year.md) |
+| S77 | Zawada S, Acosta J, Collins C, Dumitrascu O, Harahsheh E, Hagen C, Ganjizadeh A, Mahmoudi E, Erickson B, Demaerschalk B. "Real-World Smartphone Data Predicts Mood After Ischemic Stroke and Transient Ischemic Attack Symptoms and May Constitute Digital Endpoints: A Proof-of-Concept Study." *Mayo Clin Proc Digit Health* 2025;3(3):100240. | Prospective single-centre proof-of-concept cohort | [10.1016/j.mcpdig.2025.100240](https://doi.org/10.1016/j.mcpdig.2025.100240) | **XML** (Europe PMC JATS, PMC12381640) plus supplementary mmc1.docx. PDF blocked by browser check, not stored | [beiwe-stroke-tia-mood-2024-window](profiles/beiwe-stroke-tia-mood-2024-window.md) |
 
 ## Non-paper sources
 
