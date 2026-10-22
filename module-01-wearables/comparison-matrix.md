@@ -332,7 +332,7 @@ Apple and Fitbit results (`validation-evidence.md` §3c).
 | Ecosystem | What it does that matters | Key limitation |
 |---|---|---|
 | **Apple** | No vendor in the data path, on-device history at enrolment (participants can cap it at 30 days from iOS 27 unless the app holds the Research Entitlement), and SensorKit behavioural signals plus PPG, ECG and accelerometer samples for approved studies | iPhone only; no server API; little study tooling beyond the Study App Template; SensorKit needs per-study Apple approval |
-| **Fitbit / Google** | Deepest validation literature, devices among the cheapest, and an existing 59,000-participant *All of Us* dataset | **Legacy API off 30 Oct 2026; no new Google Health API projects as of 2026-10-10** |
+| **Fitbit / Google** | Deepest validation literature, devices among the cheapest, and an existing 59,000-participant *All of Us* dataset | **Legacy API off 30 Oct 2026; Google Health API apparently open to new projects again (C, 2026-10-21)** |
 | **Garmin** | Weeks of battery, no subscription required, and Enhanced BBI with per-beat confidence | **New direct access paused (C)**; raw accelerometry only via the enterprise Health SDK; opaque licence terms |
 | **Oura** | Nightly RMSSD and temperature deviation from a ring people keep on overnight; best resting HR and HRV agreement in Dial 2025; a research offering with dashboards | Mandatory membership; derived data only; **API Agreement limits retention and bars AI training** |
 | **WHOOP** | Charged on the wrist, so no charging gap; screenless | Derived scores only through the API (2023 Unite raw route, status Unclear); **terms bar permanent copies and AI/ML training**; 10-member Sandbox to start |
