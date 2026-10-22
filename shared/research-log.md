@@ -2,6 +2,17 @@
 
 ---
 
+## 2026-10-22 - Module 3 scan queue screened (7 profiles added)
+
+- **Module:** 3.
+- **Method:** the 16 papers queued by the weekly scan (2026-09-07 to 2026-10-05) were screened from full text by four agents under `module-03-applied-studies/_screening-and-profile-rules.md`. Reports in `_screening-reports/2026-10-22-queue-A.md` to `-D.md`.
+- **Profiled (7):** Kedoin 2026 (Fitbit, adolescent soccer, GPT-4o sleep feedback), Tan 2026 (Fitbit plus ActiGraph, ProudMe summer camp), Stahl 2026 (Apple Watch with myRhythmWatch, dementia caregivers), Lu 2026 (ActiGraph, ABLE gerotherapeutic trial), Haimovich 2026 (Oura, older adults admitted from the ED), Boyle 2026 (Garmin via Fitrockr, nursing home dementia, one year; borderline include, Somnofy radar data excluded), Culhane 2026 (GENEActiv, inpatient psychiatry).
+- **Rejected (9):** 2 no-cohort (AIDS Behav HIV exercise trial, borderline; Psycho-Oncology webMFT secondary analysis, settling the queue conflict), 1 architecture (STRRIDE-PD step-count pipeline, borderline), 6 unobtainable. Five of the six are free to read but the publisher (Wiley, Elsevier, SAGE) served a bot check to scripts; they can be re-screened from a PDF fetched by hand. One (AACN) is closed access.
+- **Files:** 7 profiles, 4 PDFs, `feasibility-matrix.md` (Part F, Table 10), `sources.md` (S70 to S76), `literature-index.json` (77 records, 79 rejections), `_scan-queue.md` (Pending cleared, hand-fetch list added), `README.md` (72 profiles / 70 deployments), `explorer/kb-map.html`.
+- **Expansion candidates flagged:** Vital Things Somnofy (contactless radar sleep sensor, Boyle 2026) and Pattern Health (data retrieval platform, STRRIDE-PD) are not profiled in Modules 1 or 2.
+- **Process slip:** one screening agent sent Hassan's email address to the Unpaywall API as its required `email` parameter. Later lookups used OpenAlex without an email. Future briefs forbid personal identifiers in lookup requests.
+- **Data-quality notes recorded in profiles:** Stahl 2026 has internal inconsistencies between text and tables; Tan 2026's abstract says 25 participants where Methods count 26; the Stahl app's developer is owned by the last author (disclosed COI).
+
 ## 2026-10-22 - Manual add: World Sleep Society consumer sleep tracker recommendations (Module 4)
 
 - **Module:** 4.

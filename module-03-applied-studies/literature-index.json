@@ -131,7 +131,12 @@
   "10.4037/aacnacc2026416",
   "10.1016/j.gerinurse.2026.104269",
   "10.2196/95194",
-  "10.1002/pan.70309"
+  "10.1002/pan.70309",
+  "10.2196/88773",
+  "10.2196/101615",
+  "10.3389/fphys.2026.1914161",
+  "10.2196/92359",
+  "10.1007/s10461-026-05317-w"
  ],
  "pmcids_seen": [
   "PMC10031448",
@@ -245,7 +250,12 @@
   "PMC13605536",
   "PMC13612241",
   "PMC13601350",
-  "PMC13590562"
+  "PMC13590562",
+  "PMC13626640",
+  "PMC13673175",
+  "PMC13623721",
+  "PMC13626187",
+  "PMC13524361"
  ],
  "last_run_date": "2026-10-05",
  "runs": [
@@ -272,6 +282,11 @@
    "date": "2026-10-09",
    "source": "consolidation of six unmerged scan-routine branches",
    "note": "Unioned seen-ID lists and rejections from the 2026-09-07, 09-14, 09-21 and 09-28 runs. 10 queue rows from those runs added to _scan-queue.md. 2 papers rejected by the 2026-10-05 run but queued by an earlier run were moved to the queue, with the rejection reason kept on the row."
+  },
+  {
+   "date": "2026-10-22",
+   "source": "manual queue screening, 4 agents, full text",
+   "note": "16 pending queue papers screened: 7 profiled, 9 rejected (5 unobtainable because the publisher served a bot check; re-screen from a hand-fetched PDF)."
   }
  ],
  "records": [
@@ -779,6 +794,55 @@
    "profiled": true,
    "source": "module-03-coverage-build-2026-09-03",
    "note": "co-source, same cohort as Weingarden 2025"
+  },
+  {
+   "doi": "10.2196/88466",
+   "pmcid": "PMC13592238",
+   "slug": "geneactiv-inpatient-psychiatry-sleep-reporting",
+   "profiled": true,
+   "source": "module-03-queue-2026-10-22"
+  },
+  {
+   "doi": "10.2196/88773",
+   "pmcid": "PMC13626640",
+   "slug": "apple-watch-myrhythmwatch-dementia-caregivers",
+   "profiled": true,
+   "source": "module-03-queue-2026-10-22"
+  },
+  {
+   "doi": "10.1371/journal.pdig.0001691",
+   "pmcid": "PMC13614584",
+   "slug": "actigraph-able-gerotherapeutic-trial-adherence",
+   "profiled": true,
+   "source": "module-03-queue-2026-10-22"
+  },
+  {
+   "doi": "10.2196/101615",
+   "pmcid": "PMC13673175",
+   "slug": "fitbit-ai-sleep-feedback-adolescent-soccer",
+   "profiled": true,
+   "source": "module-03-queue-2026-10-22"
+  },
+  {
+   "doi": "10.3389/fphys.2026.1914161",
+   "pmcid": "PMC13623721",
+   "slug": "fitbit-actigraph-proudme-summer-camp-adolescents",
+   "profiled": true,
+   "source": "module-03-queue-2026-10-22"
+  },
+  {
+   "doi": "10.2196/92359",
+   "pmcid": "PMC13626187",
+   "slug": "oura-ed-admitted-older-adults-sleep",
+   "profiled": true,
+   "source": "module-03-queue-2026-10-22"
+  },
+  {
+   "doi": "10.2196/95194",
+   "pmcid": "PMC13524361",
+   "slug": "garmin-nursing-home-dementia-one-year",
+   "profiled": true,
+   "source": "module-03-queue-2026-10-22"
   }
  ],
  "rejected": [
@@ -1279,6 +1343,69 @@
    "reason": "no-cohort",
    "note": "False positive: judicial-records crime-analytics ML paper, unrelated to any Module 1/2 platform; same AWARE-framework phrase-matching artifact.",
    "source": "weekly-literature-scan-2026-09-28"
+  },
+  {
+   "doi": "10.1111/jgs.70726",
+   "pmcid": null,
+   "reason": "unobtainable",
+   "note": "Wiley Cloudflare; worth fetching by hand",
+   "source": "module-03-queue-2026-10-22"
+  },
+  {
+   "doi": "10.1002/pon.70616",
+   "pmcid": "PMC13613989",
+   "reason": "no-cohort",
+   "note": "lead: parent RCT Pinto 2025 J Cancer Surviv 10.1007/s11764-025-01811-7",
+   "source": "module-03-queue-2026-10-22"
+  },
+  {
+   "doi": "10.1177/03331024261492220",
+   "pmcid": null,
+   "reason": "unobtainable",
+   "note": "SAGE Cloudflare",
+   "source": "module-03-queue-2026-10-22"
+  },
+  {
+   "doi": "10.1016/j.gerinurse.2026.104269",
+   "pmcid": null,
+   "reason": "unobtainable",
+   "note": "CC BY at ScienceDirect, captcha; fetch by hand",
+   "source": "module-03-queue-2026-10-22"
+  },
+  {
+   "doi": "10.1002/pan.70309",
+   "pmcid": null,
+   "reason": "unobtainable",
+   "note": "CC BY at Wiley, Cloudflare; fetch by hand",
+   "source": "module-03-queue-2026-10-22"
+  },
+  {
+   "doi": "10.1007/s10461-026-05317-w",
+   "pmcid": null,
+   "reason": "no-cohort",
+   "note": "borderline; ActiGraph only an outcome measure",
+   "source": "module-03-queue-2026-10-22"
+  },
+  {
+   "doi": "10.4037/aacnacc2026416",
+   "pmcid": null,
+   "reason": "unobtainable",
+   "note": "closed access",
+   "source": "module-03-queue-2026-10-22"
+  },
+  {
+   "doi": "10.1016/j.exger.2026.113337",
+   "pmcid": null,
+   "reason": "architecture",
+   "note": "borderline; step-count method paper",
+   "source": "module-03-queue-2026-10-22"
+  },
+  {
+   "doi": "10.1111/acem.70408",
+   "pmcid": null,
+   "reason": "unobtainable",
+   "note": "Wiley Cloudflare; preprint differs; fetch by hand",
+   "source": "module-03-queue-2026-10-22"
   }
  ]
 }

@@ -46,7 +46,7 @@ generated ones.
    Since 2026-10-22 the Monday monitor extends `recheck_by` itself for stated facts whose quotes all
    still match (`facts/README.md`, "Automatic re-check extension"). The monthly pass covers only what
    it cannot confirm: about 180 of the 763 facts due by 2026-11-10, plus any whose quotes moved.
-3. **Module 3 queue.** Screen the 18 queued candidates, starting with Zawada 2025 (the first Beiwe
+3. **Module 3 queue.** ~~Screen the queued candidates~~ done 2026-10-22: 16 screened, 7 profiled (72 profiles), 9 rejected; five free papers blocked by publisher bot checks wait for a PDF fetched by hand (list in `module-03-applied-studies/_scan-queue.md`). Still to do: Zawada 2025 (the first Beiwe
    deployment mostly after the heartbeat change); write the leftover profiles (Vidal 2022, Nock
    2026, Weingarden 2025) and the two ALS addenda.
 4. **Fitbit profile follow-up** after 2026-10-30, when the legacy Web API is turned off.

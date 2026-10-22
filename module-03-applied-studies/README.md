@@ -1,6 +1,6 @@
 # Module 3 — Applied Wearables and Digital Phenotyping Studies
 
-**Status:** **65 study profiles / 63 distinct deployments** (2026-09-03; deployment count corrected 2026-10-10). Two pairs of profiles report one cohort each (RADAR-MDD and mSavorUs). The 2026-09-03 coverage pass screened the PDFs already stored in Modules 1 and 2 and added ten. Baseline of 19 (2026-08-31) plus a 21-study
+**Status:** **72 study profiles / 70 distinct deployments** (2026-10-22: 7 added from the scan queue; deployment count corrected 2026-10-10). Two pairs of profiles report one cohort each (RADAR-MDD and mSavorUs). The 2026-09-03 coverage pass screened the PDFs already stored in Modules 1 and 2 and added ten. Baseline of 19 (2026-08-31) plus a 21-study
 extension built in two parallel passes — a platform-coverage pass and an Onnela-tranche pass.
 
 ## What this module is
@@ -22,7 +22,7 @@ documentation and platform capability alone can't show?
 | File | What it's for |
 |---|---|
 | **[`feasibility-matrix.md`](feasibility-matrix.md)** | **The main resource.** Three tables — scale/duration/retention, completeness/wear time, and a one-line takeaway per study — plus cross-cutting patterns and an important warning about non-standardised definitions. |
-| [`profiles/`](profiles/) | One deep profile per study (**65**). |
+| [`profiles/`](profiles/) | One deep profile per study (**72**). |
 | [`_citation-graph-scan-2026-09.md`](_citation-graph-scan-2026-09.md) | OpenAlex citation-graph discovery — finds deployments that cite a platform's methods paper without naming it. Confirms the CARP null by a second, independent method. |
 | [`_recency-scan-2026-09.md`](_recency-scan-2026-09.md) | Date-sorted discovery pass. Shows the citation-sorted baseline missed **62 of 64** recent candidates, and corrects two of its own conclusions. |
 | [`_device-side-scan-2026-09.md`](_device-side-scan-2026-09.md) | Date-sorted discovery from the device side, 2026-09-03. 30 ranked new candidates, six of them Polar. |
@@ -33,7 +33,7 @@ documentation and platform capability alone can't show?
 | [`_onnela-module3-candidates.md`](_onnela-module3-candidates.md) | 27 triaged candidates from the Onnela Lab publication sweep, ranked, not yet profiled. |
 | [`sources.md`](sources.md) | Consolidated source list with retrieval status. |
 | [`_scan-queue.md`](_scan-queue.md) | **Candidates awaiting a profile.** Fed by the weekly scan routine; also carries the unbuilt backlog from the manual discovery passes. |
-| [`literature-index.json`](literature-index.json) | Dedup ledger for the weekly scan. 70 paper records across all 65 profiles (some profiles fold several papers), plus 70 recorded rejections (counted 2026-10-10). |
+| [`literature-index.json`](literature-index.json) | Dedup ledger for the weekly scan. 77 paper records across all 72 profiles (some profiles fold several papers), plus 79 recorded rejections (counted 2026-10-22). |
 | [`literature/`](literature/) | Open-access PDFs. Five baseline studies are XML-extract only — see `sources.md`. |
 
 ## The ten findings that matter most
@@ -110,7 +110,7 @@ Recorded honestly, because the gaps shape what conclusions this module can suppo
 - **Geography.** Almost entirely North American and Western European. mindLAMP's India sites are the
   only substantial exception; no low-income-country deployments.
 - **Platform balance — partly addressed, but Beiwe still dominates.** All five previously uncovered
-  platforms now have entries. However **Beiwe is 15 of 65 profiles (23%) as primary instrument**, most sharing an
+  platforms now have entries. However **Beiwe is 15 of 72 profiles (21%) as primary instrument**, most sharing an
   author, so they are not fifteen independent observations — and **every Beiwe figure in the module
   predates the platform's `heartbeat` feature** (newest collection window closes 2023). The module's
   Beiwe evidence is simultaneously its largest and its most systematically dated. Each affected

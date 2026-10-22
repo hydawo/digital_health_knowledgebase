@@ -1,6 +1,6 @@
 # Module 3 — Feasibility Matrix
 
-**Last updated: 2026-09-03; corrected 2026-10-10** after the independent review (shared/reviews/2026-10-10-independent-review.md): every row's N and duration re-checked against its profile, and figures re-checked against full text where the review flagged them. **65 profiles / 63 distinct deployments** (two pairs of profiles report one cohort each: RADAR-MDD, Part A, and mSavorUs, Part D; Part E folds two multi-paper cohorts into single profiles). One row per study. This is the resource a future study team should read
+**Last updated: 2026-09-03; corrected 2026-10-10** after the independent review (shared/reviews/2026-10-10-independent-review.md): every row's N and duration re-checked against its profile, and figures re-checked against full text where the review flagged them. **72 profiles / 70 distinct deployments** (7 added 2026-10-22 from the scan queue) (two pairs of profiles report one cohort each: RADAR-MDD, Part A, and mSavorUs, Part D; Part E folds two multi-paper cohorts into single profiles). One row per study. This is the resource a future study team should read
 first: who else tried this device/platform combination, at what scale, for how long, and did it hold
 up.
 
@@ -316,6 +316,25 @@ in this module.
     [Siebers 2025](profiles/metricwire-fraudulent-participation.md) is the only study here addressing
     an adversarial failure mode — MetricWire's carrier-country field unmasked 10 fraudulent
     participants; a manual checklist later blocked 37.
+
+# Part F - Queue set from the weekly scan (7 profiles, 2026-10-22)
+
+The 16 papers queued by the weekly scan between 2026-09-07 and 2026-10-05, screened from full text.
+7 became profiles, 9 were rejected with reasons in the ledger (5 of them because the publisher served a
+bot check to scripts and no other legitimate copy exists; those can be re-screened from a PDF fetched
+by hand). Screening reports in `_screening-reports/2026-10-22-queue-A.md` to `-D.md`.
+
+## Table 10 - Queue set
+
+| Study | Platform / device | N | Duration | Headline operational number |
+|---|---|---|---|---|
+| [Culhane 2026, inpatient psychiatry](profiles/geneactiv-inpatient-psychiatry-sleep-reporting.md) | GENEActiv Original, provisioned, offline | 155 admitted to 88 offered to 68 wore | 11 months (Aug 2023 to Jun 2024), worn for the inpatient stay | 77.3% of patients offered a device accepted, but nurses offered it to only 56.8% of admissions. 32 of 34 phase-2 reports went to one co-author psychiatrist. Wear time not reported |
+| [Stahl 2026, dementia caregivers and people with dementia](profiles/apple-watch-myrhythmwatch-dementia-caregivers.md) | Apple Watch Series 8 with myRhythmWatch, provisioned by post | 21 to 21 | 6 weeks | Caregivers averaged 35.5 valid 20-hour days of 42, all still collecting in week 6. People with dementia averaged 30.0 and were cut to 1 month mid-study. 7 of 15 caregivers declined to enrol their care recipient |
+| [Lu 2026, ABLE ageing supplement trial](profiles/actigraph-able-gerotherapeutic-trial-adherence.md) | ActiGraph wGT3X-BT, provisioned, 7-day mail-back | 120 to 119 | 9 months, 4 wear weeks | Median wear 1400 min/day with no reminders, 81% to 97% adherent per visit, device issues in 8 of 432 visits. Each extra minute of wear lowered dropout hazard (HR 0.998). 17% dropout |
+| [Kedoin 2026, high school soccer](profiles/fitbit-ai-sleep-feedback-adolescent-soccer.md) | Fitbit Inspire 3, provisioned, own phone; custom Fitbit Web API to GPT-4o to LINE pipeline | 25 to 25 | 10 weeks | 25 of 25 retained, 100% delivery of messages sent. Valid nights median 26 vs 22 when feedback only arrived after a valid night, a gap the design cannot attribute. Window and denominator not stated |
+| [Tan 2026, ProudMe summer camp](profiles/fitbit-actigraph-proudme-summer-camp-adolescents.md) | Fitbit Charge 6, provisioned, plus ActiGraph GT3X+ and a custom GPT-4o app | 26 to 25 | 8 weeks | 3 of 13 Fitbits yielded nothing (1 lost, 2 sync failures). The other 10 recorded 4 to 43 days, mean 19.6. App entries fell after the supervised camp despite parent reminders |
+| [Haimovich 2026, older adults admitted from the ED](profiles/oura-ed-admitted-older-adults-sleep.md) | Oura Ring Gen 3, provisioned, paired to a study iPhone | 29 approached, 15 enrolled, 14 analysed | Up to 4 hospital days (median 2 nights) | 13 of 14 wore it for more than 75% of the period (median 93.4%). Delirium explains the one wear failure, all 3 missing exit surveys and one ring removed on ICU transfer. Acceptability 9 of 11 |
+| [Boyle 2026, nursing home residents with dementia](profiles/garmin-nursing-home-dementia-one-year.md) | Garmin Vivoactive 5, then Venu 3, via Fitrockr hub | 11 to 9 (2 died) | 7 days at baseline, 6 months and 1 year | Wear-time adherence 96%, 88% and 94%. Missing data came from a 1 to 2 hour charge on day 4 and self-removals of 2 hours or less. Watch model changed at 1 year for battery and storage. Wrist ENMO unstable within a person over the year (ICC 0.00 to 0.02) |
 
 ---
 

@@ -151,6 +151,7 @@ If the module or tier is a judgment call, say so in one or two sentences and ask
 
 - No em dashes or en dashes in anything you write.
 - Don't create accounts, sign in, submit forms or get past bot checks to fetch a paper.
+- Never send Hassan's email address or any personal identifier to a lookup service. Unpaywall requires one, so use OpenAlex or Crossref instead.
 - Don't cite the private `beiwe-discussions` repo.
 - Don't upgrade any confidence marker beyond what the quoted source supports.
 - For several papers at once, work through them one by one. Use subagents only if Hassan asks, and

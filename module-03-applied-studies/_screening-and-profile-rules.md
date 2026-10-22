@@ -11,6 +11,7 @@ Repo: this repository.
 Module 3 dir: module-03-applied-studies/ (read its README.md "Scope rules" section and CLAUDE.md's "Module 3" section first).
 Existing Module 3 profiles: module-03-applied-studies/profiles/*.md (55). Ledger: module-03-applied-studies/literature-index.json.
 READ THE WHOLE TEXT FILE. Never screen from the abstract alone.
+Never send Hassan's email address or any personal identifier to a lookup service (Unpaywall requires one; use OpenAlex or Crossref). Never get past a bot check; a free paper behind one is `unobtainable` until someone fetches it by hand.
 
 ## Scope (from CLAUDE.md, Module 3)
 INCLUDE only if ALL of:
