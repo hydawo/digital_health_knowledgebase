@@ -37736,7 +37736,7 @@
   "status": "stated",
   "value": "No published application or review process. Research requests go through WHOOP's Research Request Intake form; a 2026 tutorial reports WHOOP requires an institutional legal review, possibly tied to a minimum device order, before API access; the 2023 Unite FAQ pointed to healthcare@whoop.com",
   "confidence": "Reported",
-  "recheck_by": "2026-10-24",
+  "recheck_by": "2026-11-21",
   "note": "The public developer API's own tier requests are covered under user_cap.",
   "sources": [
    {
@@ -38075,7 +38075,7 @@
   "scope": "Research partnerships",
   "value": "Research routes have carried extra fees. The 2023 Unite FAQ priced API extraction separately, and a 2026 tutorial reports a paid web application for viewing and downloading group data. Current fees are not published",
   "confidence": "Reported",
-  "recheck_by": "2026-10-24",
+  "recheck_by": "2026-11-21",
   "sources": [
    {
     "url": "https://www.sensorlab.arizona.edu/sites/default/files/2023-05/WHOOP%20Unite%20Research%20FAQs_0.pdf",
@@ -38204,7 +38204,7 @@
   "scope": "WHOOP Unite research (2023 FAQ; current availability unclear)",
   "value": "WHOOP supplied research partners with raw data files as CSV or Excel, each one-second row ending with RR intervals",
   "confidence": "Reported",
-  "recheck_by": "2026-10-24",
+  "recheck_by": "2026-11-21",
   "note": "See program_status. Whether WHOOP still offers this through its research intake is unknown.",
   "sources": [
    {
@@ -38300,7 +38300,7 @@
   "scope": "Device sensors and WHOOP Unite research data (2022 to 2023 documents)",
   "value": "HR and accelerometer sampled at 52 Hz around the clock; sleep staged in 30-second epochs; Unite research data offered at 1-second and daily grains",
   "confidence": "Reported",
-  "recheck_by": "2026-10-24",
+  "recheck_by": "2026-11-21",
   "note": "WHOOP 4.0 era; not restated for 5.0 or MG in any source readable by script.",
   "sources": [
    {
@@ -38441,7 +38441,7 @@
   "scope": "Research partnerships",
   "value": "Research partners have received data outside the public API. The 2023 Unite FAQ describes raw CSV or Excel files, and a 2026 tutorial reports a paid web application for viewing and downloading group data. Current terms not published",
   "confidence": "Reported",
-  "recheck_by": "2026-10-24",
+  "recheck_by": "2026-11-21",
   "note": "The 2023 FAQ also describes a blinded mode in which participants see only device metrics such as battery.",
   "sources": [
    {
