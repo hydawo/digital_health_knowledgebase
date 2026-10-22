@@ -61,7 +61,7 @@ One additional file covers platforms that were identified but deliberately not g
 
 | File | Covers |
 |---|---|
-| `profiles/legacy-and-adjacent-platforms.md` | **Purple Robot** (legacy, Android-only, unmaintained since 2016), **StudentLife** (historical study + dataset, not a live platform), **Koa Health** (active research program, no confirmed externally-deployable platform), and a note on candidates searched for but not found (PhoneStudy) |
+| `profiles/legacy-and-adjacent-platforms.md` | **Purple Robot** (legacy, Android-only, archived: last code 2019, maintainer statement 2023), **StudentLife** (historical study + dataset, not a live platform), **Koa Health** (active research program, no confirmed externally-deployable platform), and a note on candidates searched for but not found (PhoneStudy) |
 
 See `_inventory-and-scope-decisions.md` for the full reasoning behind what was included, deferred, or
 excluded, mirroring the pattern used in Module 1.
@@ -136,7 +136,8 @@ LifeData, Evidation; facts checked 2026-10-11).
 8. **CARP Mobile Sensing is architecturally distinct**: a Flutter library a team builds its own app
    on, now with a DTU-hosted service and an actively developed web portal.
 9. **Purple Robot and StudentLife are historically important but not live platforms**: Purple Robot
-   has been unmaintained since 2016 and is Android-only; StudentLife survives as a dataset.
+   is archived (development ended in January 2019; the maintainer declared it archived in December
+   2023) and is Android-only; StudentLife survives as a dataset.
 
 ## How to use this module
 

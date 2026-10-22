@@ -40,7 +40,7 @@ Multiple tables are used deliberately. Do not read any single table as a ranking
 | **CARP Mobile Sensing** | DTU (Bardram group) | Academic open-source framework, with a DTU-hosted service and web portal | Active: carp.sensing-flutter pushed 2026-10-09, carp-portal 2026-10-07; CAMS API 2.0 (2026-04), CARP Studies v5 (2026-09) | MIT |
 | **LifeData (RealLife Exp / LifeData+)** | LifeData, LLC (Marion, IN, USA) | Commercial SaaS, EMA/ePRO; not passive sensing | Active; two app generations in parallel | Closed source (no GitHub organization or SDK) |
 | **Evidation** | Evidation Health, Inc. (San Mateo, CA, USA) | Commercial participant network and real-world-data platform; edge of scope (wearable plus survey intake, not phone sensing) | Active (apps updated 2026-10-02 and 2026-10-04) | Closed source |
-| **Purple Robot** | Northwestern CBITS / PHI Data Lab | Academic open source, Android only | **Dormant since 2016**: last commit 2016-04-11, last push 2017-04-07, lab page removed (Corroborated) | GPL-3.0 (`LICENSE.GPLv3` in repo root) |
+| **Purple Robot** | Northwestern CBITS (last maintained by Chris Karr, Audacious Software) | Academic open source, Android only | **Archived, no longer developed**: maintainer statement 2023-12-20 (issue 282); last code 2019-01-30 (audaciouscode/Purple-Robot-Android v3.0.13, API 28); cbitstech master last commit 2016-04-11 (Verified, 2026-10-22) | GPL v3 or later (`LICENSE.GPLv3` notice in repo root); other licensing by contact |
 | **StudentLife** | Dartmouth | Historical study and dataset, not a platform | Dataset only; the dataset site refused connections on 2026-10-10 | `studentlife` R package GPL-2.0 (Zenodo 3371922) |
 
 ---
@@ -59,7 +59,7 @@ Multiple tables are used deliberately. Do not read any single table as a ranking
 | CARP Mobile Sensing | Flutter framework builds for iOS; "CARP Studies" on the App Store as an unlisted, link-only app (5.1.0, 2026-10-06) | "CARP Studies" on Google Play (2026-10-06) | Yes | **No.** Accelerometer, gyroscope, magnetometer, location, activity, Bluetooth, battery and audio on both; light, screen events, Wi-Fi, app usage, calls and SMS Android only |
 | LifeData | RealLife Exp (2026-04-06) and LifeData+ (2026-10-10; needs iOS 18.0+) on the App Store | Both generations on Google Play | Yes | Same single stream on both (GPS captured with a survey response) |
 | Evidation | "Evidation" on the App Store (2026-10-02) | Google Play `com.achievemint.android` (2026-10-04) | Yes | Not applicable: no phone-sensor streams documented |
-| Purple Robot | None (Android only) | Not maintained since 2016 | Not applicable | Not applicable |
+| Purple Robot | None (Android only) | Archived per maintainer 2023-12-20; last Android code 2019-01-30 | Not applicable | Not applicable |
 
 Three platforms have a documented, itemized gap: Beiwe (per-stream OS split from its wiki), AWARE
 (per-module catalogue plus the iOS repository) and CARP (per-package table). m-Path and mindLAMP
@@ -238,13 +238,14 @@ with both Apple Health and Google Health Connect (mindLAMP and MetricWire docume
 | Clinical-trial-style assessment plus sensing, fully managed | **Avicenna Research** | Its test-only trial for real data; self-hosted platforms if no engineering capacity | Broad active-assessment features, fast data availability |
 | Custom app on a proven sensing engine | **CARP Mobile Sensing** | Any team without Flutter capacity | MIT, cross-platform by design, wide wearable catalogue |
 | Population-scale wearable and survey cohort, or secondary data | **Evidation** (sponsored) or **American Life in Realtime** data via USC's UAS Data Use Agreement | Expecting phone sensing or a self-service console | Member scale; ALiR is the academic route |
-| Historical comparison or dataset reuse | **Purple Robot** (comparison only) / **StudentLife dataset** | Treating either as live for new data collection | Purple Robot unmaintained since 2016; StudentLife is a completed study |
+| Historical comparison or dataset reuse | **Purple Robot** (comparison only) / **StudentLife dataset** | Treating either as live for new data collection | Purple Robot archived (last code 2019, maintainer statement 2023); StudentLife is a completed study |
 
 ---
 
 ## Cells changed in the 2026-10-10 rebuild (summary)
 
 - Table 1: mindLAMP licence column filled (was "Not confirmed"); AWARE licence filled (Apache-2.0); Purple Robot status and licence (dormant since 2016, GPL-3.0); Evidation and an updated StudentLife row added; activity dates refreshed.
+- 2026-10-22: Purple Robot corrected from its vendor fact record. It is archived per the maintainer (2023-12-20), Android development ran to 2019-01-30, the licence is GPL v3 or later, and phidatalab.org is an unrelated King's College London lab.
 - Table 2: rebuilt with app-store columns. Beiwe parity changed from "not verified" to the wiki's OS split; RADAR-base iOS changed from "Yes" to no maintained passive app; AWARE counts corrected (19 of 33 on iOS, not 14) and App Store availability added; mindLAMP's stale iOS build recorded.
 - Table 3: hosted-option column added. mindLAMP Core, CARP DTU-hosted service and m-Path External servers added; "Beiwe and RADAR-base only" replaced by four hosted routes; AWARE "not app stores" corrected for iOS.
 - Table 6: academic-access column added. Avicenna trial now vendor-stated and test-only; MetricWire "trial offered" removed and Academic Site Licence added; mindLAMP Core pricing route added; m-Path add-on periods corrected (no stated billing period); Evidation row added.
