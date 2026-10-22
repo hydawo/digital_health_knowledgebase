@@ -46,7 +46,7 @@ Then both cover every field.
    `python3 tools/facts/validate.py --file facts/_drafts/COMPANY/<letter>.yaml` until it reports 0
    errors. Leave no field `unresearched`.
 
-**Rules:** write only your own draft file. No accounts, sign-ins, forms or bot-check bypassing. No
+**Rules:** write only your own draft file. No accounts, sign-ins, forms or bot-check bypassing. Respect robots.txt: do not read a page or API that robots.txt disallows, even through an open-data endpoint; cite a fetchable secondary source instead, or record the fact for checking by hand. No
 GitHub issues. Do not commit. No em dashes.
 
 **Return:** counts by status, the 5 facts most likely to matter to a study team, and anything
