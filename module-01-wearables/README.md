@@ -81,7 +81,7 @@ most for a study:
 | Labfront is the only research platform publishing prices | Fitrockr also publishes prices, and so do Terra and Thryve |
 | Axivity accelerometer to 100 Hz; price by quote | AX3 12.5 to 3,200 Hz; AX3 from £139 and AX6 from £199, ex VAT, sold online |
 | Movesense has no independent validation; price not public | Four small independent lab validations exist; MD €349 ex VAT; free sensors through an Academic Program |
-| Enhanced BBI is nocturnal only | Garmin's 2023 note says it is measured during sleep, and the API route (Fitabase) captures it during sleep, but the Health SDK lists it for real-time streaming |
+| Enhanced BBI is nocturnal only | Garmin's 2023 note says it is measured during sleep, and the API route (Fitabase) captures it during sleep, but the Health SDK lists it for real-time streaming; Fitabase also has an SDK route via its Engage app, daytime coverage not stated |
 | Dial 2025: WHOOP worst of five on resting HR and HRV | WHOOP was behind both Oura generations but ahead of the Polar watch (and Garmin on HRV) |
 
 ---
@@ -125,11 +125,13 @@ results for Oura are mixed (Miller 2022, Lee 2023, Searles 2026). See `validatio
   approval needs Google's privacy and security review. Above 100 users it also needs verification and
   a CASA assessment ($500 to $4,500). Other routes are Fitabase (whether it can add new studies is
   not stated), on-device collection through Apple Health or Health Connect (Corroborated),
-  participant self-export, or the *All of Us* dataset. Unified APIs need the study's own Google Cloud
-  project, verified app and CASA.
+  participant self-export, or the *All of Us* dataset. Thryve and Validic need the study's own Google Cloud
+  project, verified app and CASA; Terra says it manages the Google Health credentials, with its
+  review and CASA status not stated.
 - **Garmin:** new Connect Developer Program access requests have been **paused since spring 2026**
   (Corroborated), and queued requests are also on hold. Labfront, Fitabase and Fitrockr already hold
-  access.
+  access. Terra no longer does for new customers (customer's own Garmin credentials since
+  mid-October 2026).
 
 ### 4. Vendor terms now constrain what a study can keep.
 
@@ -158,7 +160,7 @@ Ametris (CentrePoint) and Samsung (Research Stack, status unclear, no code since
 natively. Oura sells a research offering (Enterprise Platform, priced per Order). Published studies
 since 2022 used a portal called "Oura Teams". **Labfront** (free 5-participant tier,
 $500 or $1,250 a year, EMA at every tier) and **Fitrockr** (from €50 or €150 a month per device
-licence) publish prices; Fitabase quotes per study. Table 13 of the matrix lists each vendor's
+licence, Reported; its help centre still says user-based) publish prices; Fitabase quotes per study. Table 13 of the matrix lists each vendor's
 research programme, user caps, retention and AI-training terms, cost and status.
 
 ### 6. The cheapest good answers are still often not devices at all.
@@ -276,8 +278,8 @@ are listed under Known gaps.
    Health Research Application is exempt from the CASA assessment or the 100-user cap.
 2. **Ask Garmin when Connect Developer Program applications reopen** and whether academic use counts
    as "commercial use" for the Enhanced BBI licence fee.
-3. **Pilot Labfront's free tier with a Garmin device** (5 participants) to see what Enhanced BBI and
-   higher-resolution sampling look like in practice.
+3. **Pilot Labfront's free tier with a Garmin device** (5 participants) to see what Enhanced BBI looks like in
+   practice (Tester accelerometry is 25 Hz only; higher rates need Advanced).
 4. **Get the WHOOP and Oura retention and AI-training questions answered in writing** before any
    protocol depends on either.
 5. **Ask Oura** what its research offering costs, what its "raw data" export contains, and what its
