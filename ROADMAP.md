@@ -5,6 +5,9 @@ item lives in the file it links to; `shared/research-log.md` has the dated histo
 
 ## Waiting on Hassan
 
+Everything Hassan needs to do by hand (browser checks, vendor contacts, decisions) is collected in
+[`shared/manual-sweep.md`](shared/manual-sweep.md), worked in one sweep every week or two.
+
 | Item | Where |
 |---|---|
 | Point the Monday scan routine at `main` instead of a new branch each run | claude.ai routine settings; see `shared/weekly-literature-scan.md` |
