@@ -6,13 +6,154 @@ Everything in the knowledge base tagged **sleep**: the measurement-science paper
 
 | Where | Count |
 |---|---|
-| Module 5 catalogue | 1 |
-| Device and platform profiles | 0 |
-| Papers in Modules 1, 2 and 4 | 0 |
-| Module 3 deployment profiles | 0 |
+| Module 5 catalogue | 58 |
+| Device and platform profiles | 6 |
+| Papers in Modules 1, 2 and 4 | 30 |
+| Module 3 deployment profiles | 13 |
 
 ## Measurement science (this module)
 
-**Consensus, guidance and frameworks**
+**Consensus and guidance**
 
 - M4-042 (moved): World Sleep Society recommendations for the use of wearable consumer health trackers that monitor sleep, *Sleep medicine* 2025
+- S-001: Consumer sleep technology: an American Academy of Sleep Medicine position statement, *Journal of Clinical Sleep Medicine* 2018
+- S-002: Consumer sleep technologies: how to balance the promises of new technology with evidence-based medicine and clinical guidelines, *Journal of Clinical Sleep Medicine* 2019
+- S-003: Evaluating consumer and clinical sleep technologies: an American Academy of Sleep Medicine update, *Journal of Clinical Sleep Medicine* 2021
+- S-004: Consumer sleep technology: a position statement from the National Sleep Foundation, *Sleep Health* 2026
+- S-005: State of the science and recommendations for using wearable technology in sleep and circadian research, *Sleep* 2024
+- S-006: Wearable technologies for developing sleep and circadian biomarkers: a summary of workshop discussions, *Sleep* 2020
+- S-007: Sleep characterization with smart wearable devices: a call for standardization and consensus recommendations, *Sleep* 2022
+- S-008: Consumer-oriented (wearable) sleep technology: a systematic SWOT analysis and recommendations for athletes and fitness enthusiasts, *Frontiers in Sports and Active Living* 2026
+- S-009: Artificial intelligence in sleep medicine: an American Academy of Sleep Medicine position statement, *Journal of Clinical Sleep Medicine* 2020
+- S-010: Artificial intelligence in sleep medicine: an updated American Academy of Sleep Medicine position statement, *Journal of Clinical Sleep Medicine* 2025
+
+**Evaluation frameworks and standards**
+
+- S-011: A standardized framework for testing the performance of sleep-tracking technology: step-by-step guidelines and open-source code, *Sleep* 2021
+- S-012: Validation framework for sleep stage scoring in wearable sleep trackers and monitors with polysomnography ground truth, *Clocks & Sleep* 2021
+- S-013: ANSI/CTA/NSF-2052.1-A: Definitions and characteristics for wearable sleep monitors, *ANSI/CTA standard* 2022
+- S-014: ANSI/CTA/NSF-2052.2-A: Methodology of measurements for features in sleep tracking consumer technology devices and applications, *ANSI/CTA standard* 2024
+- S-015: ANSI/CTA/NSF-2052.3: Performance criteria and testing protocols for features in sleep tracking consumer technology devices and applications, *ANSI/CTA standard* 2019
+
+**Actigraphy practice**
+
+- S-016: Use of actigraphy for the evaluation of sleep disorders and circadian rhythm sleep-wake disorders: an American Academy of Sleep Medicine clinical practice guideline, *Journal of Clinical Sleep Medicine* 2018
+- S-017: Use of actigraphy for the evaluation of sleep disorders and circadian rhythm sleep-wake disorders: an American Academy of Sleep Medicine systematic review, meta-analysis, and GRADE assessment, *Journal of Clinical Sleep Medicine* 2018
+- S-018: The SBSM guide to actigraphy monitoring: clinical and research applications, *Behavioral Sleep Medicine* 2015
+- S-019: Actigraphy-based assessment of sleep parameters, *Annals of Work Exposures and Health* 2020
+- S-020: Use of actigraphy for assessment in pediatric sleep research, *Sleep Medicine Reviews* 2012
+- S-021: Actigraphy in sleep research with infants and young children: current practices and future benefits of standardized reporting, *Journal of Sleep Research* 2021
+- S-022: Practice parameters for the use of actigraphy in the military operational context: the Walter Reed Army Institute of Research Operational Research Kit-Actigraphy (WORK-A), *Military Medical Research* 2020
+- S-023: Australasian Sleep Association 2024 guidelines for sleep studies in adults, *Sleep* 2024
+
+**Metrics**
+
+- S-024: Irregular sleep/wake patterns are associated with poorer academic performance and delayed circadian and sleep/wake timing, *Scientific reports* 2017
+- S-025: Measuring sleep regularity: theoretical properties and practical usage of existing metrics, *Sleep* 2021
+- S-026: Validation of the Sleep Regularity Index in Older Adults and Associations with Cardiometabolic Risk, *Scientific reports* 2018
+- S-027: Comparison of Sleep Regularity Index scores calculated by open-source packages and implications for outcomes research: rationale and design of the RIRI statement (Reporting Items for Regularity Indices), *Sleep* 2026
+- S-028: Social jetlag: misalignment of biological and social time, *Chronobiology international* 2006
+- S-029: Chronotype and Social Jetlag: A (Self-) Critical Review, *Biology* 2019
+- S-030: A fresh look at the use of nonparametric analysis in actimetry, *Sleep medicine reviews* 2015
+- S-031: Measures of fragmentation of rest activity patterns: mathematical properties and interpretability based on accelerometer real life data, *BMC medical research methodology* 2024
+
+**Algorithms**
+
+- S-032: Automatic sleep/wake identification from wrist activity, *Sleep* 1992
+- S-033: Activity-based sleep-wake identification: an empirical test of methodological issues, *Sleep* 1994
+- S-034: A Novel, Open Access Method to Assess Sleep Duration Using a Wrist-Worn Accelerometer, *PloS one* 2015
+- S-035: Estimating sleep parameters using an accelerometer without sleep diary, *Scientific reports* 2018
+- S-036: GGIR: A Research Community-Driven Open Source R Package for Generating Physical Activity and Sleep Outcomes From Multi-Day Raw Accelerometer Data, *Journal for the Measurement of Physical Behaviour* 2019
+- S-037: Validation of an automated sleep detection algorithm using data from multiple accelerometer brands, *Journal of sleep research* 2023
+- S-038: Estimating sleep duration: performance of open-source processing of actigraphy compared to in-laboratory polysomnography in the community, *Sleep advances* 2023
+- S-039: Benchmark on a large cohort for sleep-wake classification with machine learning techniques, *NPJ digital medicine* 2019
+- S-040: Statistical machine learning of sleep and physical activity phenotypes from sensor data in 96,220 UK Biobank participants, *Scientific reports* 2018
+- S-041: Self-supervised learning of accelerometer data provides new insights for sleep and its association with mortality, *NPJ digital medicine* 2024
+- S-042: 40 years of actigraphy in sleep medicine and current state of the art algorithms, *NPJ digital medicine* 2023
+- S-043: Ambulatory sleep scoring using accelerometers-distinguishing between nonwear and sleep/wake states, *PeerJ* 2020
+- S-044: Detecting Sleep and Nonwear in 24-h Wrist Accelerometer Data from the National Health and Nutrition Examination Survey, *Medicine and science in sports and exercise* 2022
+- S-045: Sleep stage prediction with raw acceleration and photoplethysmography heart rate data derived from a consumer wearable device, *Sleep* 2019
+
+**Pooled accuracy across devices**
+
+- S-046: Agreement between actigraphic and polysomnographic measures of sleep in adults with and without chronic conditions: A systematic review and meta-analysis, *Sleep medicine reviews* 2019
+- S-047: A systematic review of the accuracy of sleep wearable devices for estimating sleep onset, *Sleep medicine reviews* 2020
+- S-048: A Systematic Review of Sensing Technologies for Wearable Sleep Staging, *Sensors* 2021
+- S-049: Performance of consumer wrist-worn sleep tracking devices compared to polysomnography: a meta-analysis, *Journal of clinical sleep medicine* 2025
+- S-050: Performance of seven consumer sleep-tracking devices compared with polysomnography, *Sleep* 2021
+
+**Physiological limits**
+
+- S-051: Deep learning for automated sleep staging using instantaneous heart rate, *NPJ digital medicine* 2020
+- S-052: A deep transfer learning approach for wearable sleep stage classification with photoplethysmography, *NPJ digital medicine* 2021
+- S-053: SleepPPG-Net: A Deep Learning Algorithm for Robust Sleep Staging From Continuous Photoplethysmography, *IEEE journal of biomedical and health informatics* 2023
+- S-054: Evaluating reliability in wearable devices for sleep staging, *NPJ digital medicine* 2024
+- S-055: Limiting racial disparities and bias for wearable devices in health science research, *Sleep* 2020
+- S-056: Home is where sleep is: an ecological approach to test the validity of actigraphy for the assessment of insomnia, *Journal of clinical sleep medicine* 2010
+- S-057: Optimizing actigraphic estimates of polysomnographic sleep features in insomnia disorder, *Sleep* 2020
+
+## Device and platform profiles
+
+- [Oura](../../module-01-wearables/profiles/oura.md) (Module 1 profile, primary): Sleep staging is core capability
+- [WHOOP](../../module-01-wearables/profiles/whoop.md) (Module 1 profile, primary): Sleep tracking is core capability
+- [Withings](../../module-01-wearables/profiles/withings.md) (Module 1 profile, primary): Sleep and Sleep Rx under-mattress mats
+- [Ametris / ActiGraph](../../module-01-wearables/profiles/ametris-actigraph.md) (Module 1 profile, secondary): Sadeh and Cole-Kripke sleep scoring
+- [Axivity / GENEActiv](../../module-01-wearables/profiles/axivity-geneactiv.md) (Module 1 profile, secondary): Actigraphy sleep toolkits, light channel
+- [Fitbit / Google](../../module-01-wearables/profiles/fitbit-google.md) (Module 1 profile, secondary): Sleep staging and Sleep Profile documented
+
+## Deployments (Module 3)
+
+- [Culhane 2026, GENEActiv inpatient sleep reporting](../../module-03-applied-studies/profiles/geneactiv-inpatient-psychiatry-sleep-reporting.md) (primary): Sleep and activity reporting
+- [Haimovich 2026, Oura sleep in ED older adults](../../module-03-applied-studies/profiles/oura-ed-admitted-older-adults-sleep.md) (primary): Sleep monitoring feasibility
+- [Kedoin 2026, Fitbit AI sleep feedback](../../module-03-applied-studies/profiles/fitbit-ai-sleep-feedback-adolescent-soccer.md) (primary): Sleep feedback intervention
+- [Meyer 2018, Sleepsight rest-activity](../../module-03-applied-studies/profiles/sleepsight-schizophrenia-rest-activity.md) (primary): Rest-activity profiling
+- [Soon 2025, Oura freshmen sleep](../../module-03-applied-studies/profiles/oura-university-freshmen-sleep.md) (primary): Sleep is the study subject
+- [Stahl 2026, Apple Watch rest-activity rhythm](../../module-03-applied-studies/profiles/apple-watch-myrhythmwatch-dementia-caregivers.md) (primary): Rest-activity rhythm monitoring
+- [Aledavood 2025, MoMo-Mood](../../module-03-applied-studies/profiles/aware-momo-mood-mood-disorders.md) (secondary): Sleep duration from actigraph and bed sensor
+- [Bladon 2026, CONNECT multi-wearable psychosis](../../module-03-applied-studies/profiles/connect-multi-wearable-psychosis.md) (secondary): Valid sleep days reported per device; borderline
+- [Boyle 2026, Garmin nursing home dementia](../../module-03-applied-studies/profiles/garmin-nursing-home-dementia-one-year.md) (secondary): Sleep quality in title, radar-derived
+- [Dominguez 2026, Samsung palliative pain](../../module-03-applied-studies/profiles/samsung-palliative-pain-ecuador.md) (secondary): Sleep-data completeness analysed; borderline
+- [Presby 2025, WHOOP mental health surveys](../../module-03-applied-studies/profiles/whoop-mental-health-survey-engagement.md) (secondary): Sleep metrics among physiology; borderline
+- [Torous/Staples 2017-18, Beiwe schizophrenia pilot](../../module-03-applied-studies/profiles/beiwe-schizophrenia-state-clinic-pilot.md) (secondary): Includes sleep analysis paper
+- [Vidal Bustamante 2022, GENEActiv college year](../../module-03-applied-studies/profiles/geneactiv-beiwe-college-year-deep-phenotyping.md) (secondary): Sleep pipeline among behaviour outcomes
+
+## Papers in other modules
+
+### Module 1, wearables
+
+- Accuracy of 11 consumer sleep trackers (primary; [catalogue](../../module-01-wearables/research-library-wearables.md)) [doi](https://doi.org/10.2196/50983): Sleep tracker validation vs PSG
+- Accuracy of three wearables for sleep tracking (primary; [catalogue](../../module-01-wearables/literature-library.md)) [doi](https://doi.org/10.3390/s24206532): Sleep tracking validation
+- Apple Watch sleep vs actigraphy, BCG, PSG (primary; [catalogue](../../module-01-wearables/literature-library.md)): Sleep tracking vs reference
+- Commercial wearable automatic sleep detection validation (primary; [catalogue](../../module-01-wearables/literature-library.md)) [doi](https://doi.org/10.3390/bios11060185): Sleep detection validation
+- Consumer sleep wearables in young and older adults (primary; [catalogue](../../module-01-wearables/research-library-wearables.md)) [doi](https://doi.org/10.1093/sleepadvances/zpag006): Sleep performance vs PSG
+- Consumer wearable sleep vs accelerometry and diaries (L015, primary; [catalogue](../../module-01-wearables/literature-library.md)) [doi](https://doi.org/10.2147/nss.s530812): Sleep measurement comparison
+- Core circadian behaviors, fitness, consistent sleep (WHOOP) (primary; [catalogue](../../module-01-wearables/literature-library.md)) [doi](https://doi.org/10.1093/sleep/zsaf318): Sleep consistency and circadian behaviour
+- Country differences in nocturnal sleep variability (Oura) (primary; [catalogue](../../module-01-wearables/literature-library.md)) [doi](https://doi.org/10.1016/j.sleep.2023.08.010): Large-scale sleep variability outcome
+- Digital phenotyping of circadian rest-activity rhythms (L003, primary; [catalogue](../../module-01-wearables/literature-library.md)) [doi](https://doi.org/10.1101/2025.09.20.25336210): Circadian rest-activity rhythm biomarkers
+- DPSleep open-source sleep analysis from accelerometer (L080, primary; [catalogue](../../module-01-wearables/literature-library.md)) [doi](https://doi.org/10.2196/29849): Sleep algorithm development and validation
+- Effect of wearables on sleep, crossover and validation (primary; [catalogue](../../module-01-wearables/literature-library.md)) [doi](https://doi.org/10.5664/jcsm.8356): Sleep effects and validation
+- Happy Ring sleep evaluation vs Oura, WHOOP (primary; [catalogue](../../module-01-wearables/research-library-wearables.md)) [doi](https://doi.org/10.1093/sleep/zsac152): Sleep validation vs PSG
+- Oura Ring vs medical-grade sleep studies meta-analysis (primary; [catalogue](../../module-01-wearables/literature-library.md)) [doi](https://doi.org/10.1002/oto2.70181): Sleep validity meta-analysis
+- Promise of Sleep: Oura sleep stage detection (primary; [catalogue](../../module-01-wearables/literature-library.md)) [doi](https://doi.org/10.3390/s21134302): Oura sleep staging algorithm
+- Six wearables for sleep, HR, HRV (primary; [catalogue](../../module-01-wearables/literature-library.md)) [doi](https://doi.org/10.3390/s22166317): Sleep estimation validation vs PSG
+- Six wrist wearables sleep staging vs PSG (primary; [catalogue](../../module-01-wearables/literature-library.md)) [doi](https://doi.org/10.1093/sleepadvances/zpaf021): Sleep stage scoring vs PSG
+- WHOOP strap vs polysomnography (primary; [catalogue](../../module-01-wearables/literature-library.md)) [doi](https://doi.org/10.1080/02640414.2020.1797448): Sleep validation against PSG
+- 24h movement behaviours, students vs adults (Oura) (secondary; [catalogue](../../module-01-wearables/research-library-wearables.md)) [doi](https://doi.org/10.1186/s12916-026-05192-1): Sleep one of 24h behaviours
+- Alcohol effects on HR, sleep, activity (WHOOP) (secondary; [catalogue](../../module-01-wearables/literature-library.md)) [doi](https://doi.org/10.1371/journal.pdig.0001284): Sleep one of three outcomes
+- Depression/anxiety severity and Oura metrics (secondary; [catalogue](../../module-01-wearables/research-library-wearables.md)) [doi](https://doi.org/10.1186/s12916-026-05276-y): Sleep stages among reported metrics
+- Green dose and college student mental health (Apple Watch) (secondary; [catalogue](../../module-01-wearables/research-library-wearables.md)) [doi](https://doi.org/10.1016/j.envres.2026.124909): Sleep outcomes among several; borderline
+- Menstrual cycle through wearable: physiology, sleep (secondary; [catalogue](../../module-01-wearables/literature-library.md)) [doi](https://doi.org/10.1038/s41746-026-02799-9): Sleep one of several cycle outcomes
+- Optimizing athlete travel for performance (Hatamiya 2026) (secondary; [catalogue](../../module-01-wearables/literature-library.md)) [doi](https://doi.org/10.1007/s40279-026-02455-y): Travel review; jet lag and sleep disturbance among several topics
+- Oura after DBS for Parkinson's (case report) (secondary; [catalogue](../../module-01-wearables/research-library-wearables.md)) [doi](https://doi.org/10.7759/cureus.115385): Sleep Score among outcomes; borderline
+- Sleep heart rate dynamics and mental health (LEMURS) (secondary; [catalogue](../../module-01-wearables/literature-library.md)) [doi](https://doi.org/10.1159/000539487): Sleep HR dynamics; borderline
+- WHOOP accuracy and utility systematic review (secondary; [catalogue](../../module-01-wearables/literature-library.md)) [doi](https://doi.org/10.1101/2024.01.04.24300784): Review includes WHOOP sleep validity; borderline
+- WHOOP on sleep, recovery, performance in baseball players (dissertation) (secondary; [catalogue](../../module-01-wearables/literature-library.md)): Sleep one of three outcomes; no DOI
+
+### Module 2, digital phenotyping
+
+- Passive vs active sleep estimates in schizophrenia (L108, primary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)) [doi](https://doi.org/10.1038/s41537-017-0038-0): Sleep estimation is primary
+- Stress and sleep duration via actigraphy, academic year (L039, primary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)) [doi](https://doi.org/10.2196/53441): Sleep duration is primary outcome
+
+### Module 4, methods and reviews
+
+- Smartphone-based sleep tracking in mental disorders (L092, primary; [catalogue](../../module-04-methods-and-reviews/literature-library.md)) [doi](https://doi.org/10.1007/s11920-019-1043-y): Review of smartphone sleep tracking

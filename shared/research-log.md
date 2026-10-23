@@ -2,6 +2,14 @@
 
 ---
 
+## 2026-10-22 (latest) - Module 5 created; Sleep seeded
+
+- **Module:** 5 (new), measurement science by domain. Scaffold: `module-05-measurement-science/README.md`, one ledger for the module, `sleep/` catalogue, `shared/domain-tags.json`, `tools/domains/build_hubs.py` (generates `sleep/hub.md`). CLAUDE.md and the add-paper skill cover Module 5.
+- **Moved:** M4-042 (World Sleep Society recommendations) from Module 4 to Sleep. Module 4 is 51 papers, 3 paywalled; the id stays in the Module 4 ledger.
+- **Seeding:** two search agents (A: consensus, frameworks, actigraphy practice; B: metrics, algorithms, pooled accuracy, physiological limits) via Europe PMC, Crossref and OpenAlex. 58 papers after removing one overlap (AASM actigraphy systematic review, in both lanes). 22 PDFs stored and checked (`%PDF`, pypdf text), 28 free but blocked to scripts (Europe PMC PDF render now returns a Cloudflare challenge for every PMCID; jcsm.aasm.org returns 404 to scripts), 8 paywalled. Hand-download list in `sleep/_hand-download.md`, manual sweep #10. arXiv API not used (robots.txt disallows it).
+- **Tagging:** one agent tagged sleep across Modules 1 to 4 from repo text: 49 entries after removing four papers that duplicate a Module 3 profile (6 Module 1 profiles, 30 papers, 13 Module 3 profiles). Hatamiya 2026 athlete travel review tagged secondary from its abstract.
+- **Uncertain:** S-002 and S-003 (AASM consumer sleep technology follow-ups) and Colvonen 2020 described without full text. The stored CTA/NSF 2052.3 is the free 2019 edition; the 2025 revision is sold by CTA. No phone-specific sleep guidance and no IEEE standard found.
+
 ## 2026-10-22 (later) - Zawada 2025 profiled: first Beiwe window mostly after heartbeat
 
 - **Module:** 3. Profile `beiwe-stroke-tia-mood-2024-window.md`, screening report `_screening-reports/2026-10-22-queue-E.md`, matrix Table 10, source S77, ledger record. Module 3 is now 73 profiles / 71 deployments.

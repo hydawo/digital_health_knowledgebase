@@ -20,6 +20,7 @@ put the newest at the bottom of its section.
 | 7 | Avicenna: ISO certificate on UKAS CertCheck (has a CAPTCHA) | Would raise the ISO fact | `facts/avicenna.yaml` | none |
 | 8 | Withings: find where the partner terms now live on the developer portal | The 13 Oct 2026 terms rewrite points there | `facts/withings.yaml` | none |
 | 9 | Download five free Module 3 papers the publishers block to scripts, then run `/add-paper` on each: 10.1111/jgs.70726 (PACERS), 10.1016/j.gerinurse.2026.104269 (weighted blankets), 10.1002/pan.70309 (EmbracePlus, paediatric anaesthesia), 10.1177/03331024261492220 (EmbracePlus, migraine), 10.1111/acem.70408 (Apple Watch, older ED patients) | Rejected as `unobtainable` only because of bot checks | `module-03-applied-studies/_scan-queue.md` | none |
+| 10 | Download 28 free Module 5 sleep papers blocked to scripts (AASM, Oxford Sleep, PMC copies), save under the given names and flip their rows to Verified OA | Seeding pass could not fetch them | `module-05-measurement-science/sleep/_hand-download.md` | none |
 
 ## Vendor and author confirmations
 

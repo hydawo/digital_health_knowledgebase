@@ -1,0 +1,535 @@
+[
+ {
+  "key": "10.3390/s21134302",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Promise of Sleep: Oura sleep stage detection",
+  "weight": "primary",
+  "reason": "Oura sleep staging algorithm"
+ },
+ {
+  "key": "10.1016/j.sleep.2023.08.010",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Country differences in nocturnal sleep variability (Oura)",
+  "weight": "primary",
+  "reason": "Large-scale sleep variability outcome"
+ },
+ {
+  "key": "10.3390/s24206532",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Accuracy of three wearables for sleep tracking",
+  "weight": "primary",
+  "reason": "Sleep tracking validation"
+ },
+ {
+  "key": "10.1159/000539487",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Sleep heart rate dynamics and mental health (LEMURS)",
+  "weight": "secondary",
+  "reason": "Sleep HR dynamics; borderline"
+ },
+ {
+  "key": "10.1002/oto2.70181",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Oura Ring vs medical-grade sleep studies meta-analysis",
+  "weight": "primary",
+  "reason": "Sleep validity meta-analysis"
+ },
+ {
+  "key": "10.1093/sleep/zsaf318",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Core circadian behaviors, fitness, consistent sleep (WHOOP)",
+  "weight": "primary",
+  "reason": "Sleep consistency and circadian behaviour"
+ },
+ {
+  "key": "10.2196/64955",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Physiology and mental health longitudinal (WHOOP)",
+  "weight": "secondary",
+  "reason": "Sleep metrics among physiology measures; borderline"
+ },
+ {
+  "key": "10.1038/s41746-026-02799-9",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Menstrual cycle through wearable: physiology, sleep",
+  "weight": "secondary",
+  "reason": "Sleep one of several cycle outcomes"
+ },
+ {
+  "key": "10.1371/journal.pdig.0001284",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Alcohol effects on HR, sleep, activity (WHOOP)",
+  "weight": "secondary",
+  "reason": "Sleep one of three outcomes"
+ },
+ {
+  "key": "10.5664/jcsm.8356",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Effect of wearables on sleep, crossover and validation",
+  "weight": "primary",
+  "reason": "Sleep effects and validation"
+ },
+ {
+  "key": "10.1080/02640414.2020.1797448",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "WHOOP strap vs polysomnography",
+  "weight": "primary",
+  "reason": "Sleep validation against PSG"
+ },
+ {
+  "key": "10.3390/s22166317",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Six wearables for sleep, HR, HRV",
+  "weight": "primary",
+  "reason": "Sleep estimation validation vs PSG"
+ },
+ {
+  "key": "10.3390/bios11060185",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Commercial wearable automatic sleep detection validation",
+  "weight": "primary",
+  "reason": "Sleep detection validation"
+ },
+ {
+  "key": "10.1093/sleepadvances/zpaf021",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Six wrist wearables sleep staging vs PSG",
+  "weight": "primary",
+  "reason": "Sleep stage scoring vs PSG"
+ },
+ {
+  "key": "10.1101/2024.01.04.24300784",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "WHOOP accuracy and utility systematic review",
+  "weight": "secondary",
+  "reason": "Review includes WHOOP sleep validity; borderline"
+ },
+ {
+  "key": "pmid:38083143",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Apple Watch sleep vs actigraphy, BCG, PSG",
+  "weight": "primary",
+  "reason": "Sleep tracking vs reference"
+ },
+ {
+  "key": "eric:ed595664",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "WHOOP on sleep, recovery, performance in baseball players (dissertation)",
+  "weight": "secondary",
+  "reason": "Sleep one of three outcomes; no DOI"
+ },
+ {
+  "key": "10.1101/2025.09.20.25336210",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": "L003",
+  "title": "Digital phenotyping of circadian rest-activity rhythms",
+  "weight": "primary",
+  "reason": "Circadian rest-activity rhythm biomarkers"
+ },
+ {
+  "key": "10.2147/nss.s530812",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": "L015",
+  "title": "Consumer wearable sleep vs accelerometry and diaries",
+  "weight": "primary",
+  "reason": "Sleep measurement comparison"
+ },
+ {
+  "key": "10.1093/sleep/zsaf156",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": "L022",
+  "title": "Longitudinal sleep in university freshmen (Oura)",
+  "weight": "primary",
+  "reason": "Sleep is primary outcome"
+ },
+ {
+  "key": "10.2196/29849",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": "L080",
+  "title": "DPSleep open-source sleep analysis from accelerometer",
+  "weight": "primary",
+  "reason": "Sleep algorithm development and validation"
+ },
+ {
+  "key": "10.2196/92359",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/research-library-wearables.md",
+  "row_id": null,
+  "title": "Oura sleep monitoring, older adults from ED",
+  "weight": "primary",
+  "reason": "Sleep monitoring feasibility"
+ },
+ {
+  "key": "10.1186/s12916-026-05276-y",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/research-library-wearables.md",
+  "row_id": null,
+  "title": "Depression/anxiety severity and Oura metrics",
+  "weight": "secondary",
+  "reason": "Sleep stages among reported metrics"
+ },
+ {
+  "key": "10.1186/s12916-026-05192-1",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/research-library-wearables.md",
+  "row_id": null,
+  "title": "24h movement behaviours, students vs adults (Oura)",
+  "weight": "secondary",
+  "reason": "Sleep one of 24h behaviours"
+ },
+ {
+  "key": "10.2196/88773",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/research-library-wearables.md",
+  "row_id": null,
+  "title": "Rest-activity rhythm monitoring in dementia caregivers",
+  "weight": "primary",
+  "reason": "Rest-activity rhythm is primary"
+ },
+ {
+  "key": "10.1093/sleep/zsac152",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/research-library-wearables.md",
+  "row_id": null,
+  "title": "Happy Ring sleep evaluation vs Oura, WHOOP",
+  "weight": "primary",
+  "reason": "Sleep validation vs PSG"
+ },
+ {
+  "key": "10.2196/50983",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/research-library-wearables.md",
+  "row_id": null,
+  "title": "Accuracy of 11 consumer sleep trackers",
+  "weight": "primary",
+  "reason": "Sleep tracker validation vs PSG"
+ },
+ {
+  "key": "10.1093/sleepadvances/zpag006",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/research-library-wearables.md",
+  "row_id": null,
+  "title": "Consumer sleep wearables in young and older adults",
+  "weight": "primary",
+  "reason": "Sleep performance vs PSG"
+ },
+ {
+  "key": "10.7759/cureus.115385",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/research-library-wearables.md",
+  "row_id": null,
+  "title": "Oura after DBS for Parkinson's (case report)",
+  "weight": "secondary",
+  "reason": "Sleep Score among outcomes; borderline"
+ },
+ {
+  "key": "10.1016/j.envres.2026.124909",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/research-library-wearables.md",
+  "row_id": null,
+  "title": "Green dose and college student mental health (Apple Watch)",
+  "weight": "secondary",
+  "reason": "Sleep outcomes among several; borderline"
+ },
+ {
+  "key": "10.2196/53441",
+  "kind": "paper",
+  "module": 2,
+  "file": "module-02-digital-phenotyping/literature-library.md",
+  "row_id": "L039",
+  "title": "Stress and sleep duration via actigraphy, academic year",
+  "weight": "primary",
+  "reason": "Sleep duration is primary outcome"
+ },
+ {
+  "key": "10.1038/s41537-017-0038-0",
+  "kind": "paper",
+  "module": 2,
+  "file": "module-02-digital-phenotyping/literature-library.md",
+  "row_id": "L108",
+  "title": "Passive vs active sleep estimates in schizophrenia",
+  "weight": "primary",
+  "reason": "Sleep estimation is primary"
+ },
+ {
+  "key": "10.1007/s11920-019-1043-y",
+  "kind": "paper",
+  "module": 4,
+  "file": "module-04-methods-and-reviews/literature-library.md",
+  "row_id": "L092",
+  "title": "Smartphone-based sleep tracking in mental disorders",
+  "weight": "primary",
+  "reason": "Review of smartphone sleep tracking"
+ },
+ {
+  "key": "module-01-wearables/profiles/oura.md",
+  "kind": "m1-profile",
+  "module": 1,
+  "file": "module-01-wearables/profiles/oura.md",
+  "row_id": null,
+  "title": "Oura",
+  "weight": "primary",
+  "reason": "Sleep staging is core capability"
+ },
+ {
+  "key": "module-01-wearables/profiles/whoop.md",
+  "kind": "m1-profile",
+  "module": 1,
+  "file": "module-01-wearables/profiles/whoop.md",
+  "row_id": null,
+  "title": "WHOOP",
+  "weight": "primary",
+  "reason": "Sleep tracking is core capability"
+ },
+ {
+  "key": "module-01-wearables/profiles/withings.md",
+  "kind": "m1-profile",
+  "module": 1,
+  "file": "module-01-wearables/profiles/withings.md",
+  "row_id": null,
+  "title": "Withings",
+  "weight": "primary",
+  "reason": "Sleep and Sleep Rx under-mattress mats"
+ },
+ {
+  "key": "module-01-wearables/profiles/fitbit-google.md",
+  "kind": "m1-profile",
+  "module": 1,
+  "file": "module-01-wearables/profiles/fitbit-google.md",
+  "row_id": null,
+  "title": "Fitbit / Google",
+  "weight": "secondary",
+  "reason": "Sleep staging and Sleep Profile documented"
+ },
+ {
+  "key": "module-01-wearables/profiles/axivity-geneactiv.md",
+  "kind": "m1-profile",
+  "module": 1,
+  "file": "module-01-wearables/profiles/axivity-geneactiv.md",
+  "row_id": null,
+  "title": "Axivity / GENEActiv",
+  "weight": "secondary",
+  "reason": "Actigraphy sleep toolkits, light channel"
+ },
+ {
+  "key": "module-01-wearables/profiles/ametris-actigraph.md",
+  "kind": "m1-profile",
+  "module": 1,
+  "file": "module-01-wearables/profiles/ametris-actigraph.md",
+  "row_id": null,
+  "title": "Ametris / ActiGraph",
+  "weight": "secondary",
+  "reason": "Sadeh and Cole-Kripke sleep scoring"
+ },
+ {
+  "key": "module-03-applied-studies/profiles/oura-university-freshmen-sleep.md",
+  "kind": "m3-profile",
+  "module": 3,
+  "file": "module-03-applied-studies/profiles/oura-university-freshmen-sleep.md",
+  "row_id": null,
+  "title": "Soon 2025, Oura freshmen sleep",
+  "weight": "primary",
+  "reason": "Sleep is the study subject",
+  "doi": "10.1093/sleep/zsaf156"
+ },
+ {
+  "key": "module-03-applied-studies/profiles/fitbit-ai-sleep-feedback-adolescent-soccer.md",
+  "kind": "m3-profile",
+  "module": 3,
+  "file": "module-03-applied-studies/profiles/fitbit-ai-sleep-feedback-adolescent-soccer.md",
+  "row_id": null,
+  "title": "Kedoin 2026, Fitbit AI sleep feedback",
+  "weight": "primary",
+  "reason": "Sleep feedback intervention",
+  "doi": "10.2196/101615"
+ },
+ {
+  "key": "module-03-applied-studies/profiles/geneactiv-inpatient-psychiatry-sleep-reporting.md",
+  "kind": "m3-profile",
+  "module": 3,
+  "file": "module-03-applied-studies/profiles/geneactiv-inpatient-psychiatry-sleep-reporting.md",
+  "row_id": null,
+  "title": "Culhane 2026, GENEActiv inpatient sleep reporting",
+  "weight": "primary",
+  "reason": "Sleep and activity reporting",
+  "doi": "10.2196/88466"
+ },
+ {
+  "key": "module-03-applied-studies/profiles/sleepsight-schizophrenia-rest-activity.md",
+  "kind": "m3-profile",
+  "module": 3,
+  "file": "module-03-applied-studies/profiles/sleepsight-schizophrenia-rest-activity.md",
+  "row_id": null,
+  "title": "Meyer 2018, Sleepsight rest-activity",
+  "weight": "primary",
+  "reason": "Rest-activity profiling",
+  "doi": "10.2196/mhealth.8292"
+ },
+ {
+  "key": "module-03-applied-studies/profiles/oura-ed-admitted-older-adults-sleep.md",
+  "kind": "m3-profile",
+  "module": 3,
+  "file": "module-03-applied-studies/profiles/oura-ed-admitted-older-adults-sleep.md",
+  "row_id": null,
+  "title": "Haimovich 2026, Oura sleep in ED older adults",
+  "weight": "primary",
+  "reason": "Sleep monitoring feasibility",
+  "doi": "10.2196/92359"
+ },
+ {
+  "key": "module-03-applied-studies/profiles/apple-watch-myrhythmwatch-dementia-caregivers.md",
+  "kind": "m3-profile",
+  "module": 3,
+  "file": "module-03-applied-studies/profiles/apple-watch-myrhythmwatch-dementia-caregivers.md",
+  "row_id": null,
+  "title": "Stahl 2026, Apple Watch rest-activity rhythm",
+  "weight": "primary",
+  "reason": "Rest-activity rhythm monitoring",
+  "doi": "10.2196/88773"
+ },
+ {
+  "key": "module-03-applied-studies/profiles/geneactiv-beiwe-college-year-deep-phenotyping.md",
+  "kind": "m3-profile",
+  "module": 3,
+  "file": "module-03-applied-studies/profiles/geneactiv-beiwe-college-year-deep-phenotyping.md",
+  "row_id": null,
+  "title": "Vidal Bustamante 2022, GENEActiv college year",
+  "weight": "secondary",
+  "reason": "Sleep pipeline among behaviour outcomes",
+  "doi": "10.1038/s41598-022-05331-7"
+ },
+ {
+  "key": "module-03-applied-studies/profiles/beiwe-schizophrenia-state-clinic-pilot.md",
+  "kind": "m3-profile",
+  "module": 3,
+  "file": "module-03-applied-studies/profiles/beiwe-schizophrenia-state-clinic-pilot.md",
+  "row_id": null,
+  "title": "Torous/Staples 2017-18, Beiwe schizophrenia pilot",
+  "weight": "secondary",
+  "reason": "Includes sleep analysis paper",
+  "doi": "10.1038/s41746-018-0022-8"
+ },
+ {
+  "key": "module-03-applied-studies/profiles/connect-multi-wearable-psychosis.md",
+  "kind": "m3-profile",
+  "module": 3,
+  "file": "module-03-applied-studies/profiles/connect-multi-wearable-psychosis.md",
+  "row_id": null,
+  "title": "Bladon 2026, CONNECT multi-wearable psychosis",
+  "weight": "secondary",
+  "reason": "Valid sleep days reported per device; borderline",
+  "doi": "10.2196/86049"
+ },
+ {
+  "key": "module-03-applied-studies/profiles/samsung-palliative-pain-ecuador.md",
+  "kind": "m3-profile",
+  "module": 3,
+  "file": "module-03-applied-studies/profiles/samsung-palliative-pain-ecuador.md",
+  "row_id": null,
+  "title": "Dominguez 2026, Samsung palliative pain",
+  "weight": "secondary",
+  "reason": "Sleep-data completeness analysed; borderline",
+  "doi": "10.2196/78098"
+ },
+ {
+  "key": "module-03-applied-studies/profiles/aware-momo-mood-mood-disorders.md",
+  "kind": "m3-profile",
+  "module": 3,
+  "file": "module-03-applied-studies/profiles/aware-momo-mood-mood-disorders.md",
+  "row_id": null,
+  "title": "Aledavood 2025, MoMo-Mood",
+  "weight": "secondary",
+  "reason": "Sleep duration from actigraph and bed sensor",
+  "doi": "10.2196/63622"
+ },
+ {
+  "key": "module-03-applied-studies/profiles/whoop-mental-health-survey-engagement.md",
+  "kind": "m3-profile",
+  "module": 3,
+  "file": "module-03-applied-studies/profiles/whoop-mental-health-survey-engagement.md",
+  "row_id": null,
+  "title": "Presby 2025, WHOOP mental health surveys",
+  "weight": "secondary",
+  "reason": "Sleep metrics among physiology; borderline",
+  "doi": "10.2196/64955"
+ },
+ {
+  "key": "module-03-applied-studies/profiles/garmin-nursing-home-dementia-one-year.md",
+  "kind": "m3-profile",
+  "module": 3,
+  "file": "module-03-applied-studies/profiles/garmin-nursing-home-dementia-one-year.md",
+  "row_id": null,
+  "title": "Boyle 2026, Garmin nursing home dementia",
+  "weight": "secondary",
+  "reason": "Sleep quality in title, radar-derived",
+  "doi": "10.2196/95194"
+ }
+]

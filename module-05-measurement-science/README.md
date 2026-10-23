@@ -1,6 +1,6 @@
 # Module 5: Measurement Science by Domain
 
-**Status:** created 2026-10-22. One domain so far: [Sleep](sleep/). Cardiac, physical activity and
+**Status:** created 2026-10-22. One domain so far: [Sleep](sleep/), seeded the same day with 58 papers (22 PDFs on disk, 28 free but needing a hand download, 8 paywalled) and a hub linking 49 tagged papers and profiles in Modules 1 to 4. Cardiac, physical activity and
 fitness, and possibly mental health follow, one at a time.
 
 ## What this module is
@@ -37,6 +37,8 @@ hub page instead of being copied (see below).
 | `literature-library-index.json` | One dedup ledger for the whole module, ids prefixed `doi:`, `pmid:` or `arxiv:` |
 | `<domain>/literature-library.md` | The domain catalogue, one row per paper |
 | `<domain>/literature/` | Open-access PDFs |
+| `<domain>/_hand-download.md` | Free papers the publishers block to scripts, to fetch by hand |
+| `<domain>/_seed/` | Search logs and agent output from the seeding pass, kept for provenance |
 | `<domain>/hub.md` | Generated page listing every paper and profile in Modules 1 to 5 tagged with the domain |
 | `../shared/domain-tags.json` | Domain tags for papers and profiles in Modules 1 to 4, keyed by DOI or profile path |
 
@@ -50,7 +52,7 @@ keeps one home per paper. Decision recorded in `ROADMAP.md`, item 6.
 
 | Domain | Status | Catalogue |
 |---|---|---|
-| Sleep | Seeding, started 2026-10-22 | [`sleep/literature-library.md`](sleep/literature-library.md) |
+| Sleep | Seeded 2026-10-22: 58 papers in 7 sections; [hub](sleep/hub.md) | [`sleep/literature-library.md`](sleep/literature-library.md) |
 | Cardiac | Not started | |
 | Physical activity and fitness | Not started | |
 | Mental health | Not decided | |
