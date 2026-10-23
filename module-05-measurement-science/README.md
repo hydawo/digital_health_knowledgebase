@@ -1,6 +1,6 @@
 # Module 5: Measurement Science by Domain
 
-**Status:** created 2026-10-22. One domain so far: [Sleep](sleep/), seeded the same day with 58 papers (22 PDFs on disk, 28 free but needing a hand download, 8 paywalled) and a hub linking 49 tagged papers and profiles in Modules 1 to 4. Cardiac, physical activity and
+**Status:** created 2026-10-22. One domain so far: [Sleep](sleep/), seeded the same day with 58 papers (17 PDFs on disk, 5 free to read but not redistributable, 28 free but needing a hand download, 8 paywalled) and a hub linking 49 tagged papers and profiles in Modules 1 to 4. Cardiac, physical activity and
 fitness, and possibly mental health follow, one at a time.
 
 ## What this module is

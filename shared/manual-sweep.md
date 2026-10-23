@@ -49,6 +49,7 @@ Generator for more sheets: `python3 tools/facts/confirm_sheet.py <company>`.
 | 3 | Point the Monday literature scan at `main`, and add `www.ebi.ac.uk`, `pmc.ncbi.nlm.nih.gov`, `www.ncbi.nlm.nih.gov` to its network allowlist | claude.ai Routines UI |
 | 4 | Compliance fields for a platform with no hosted service: `not_applicable` (Purple Robot now) or `not_public` (AWARE, Beiwe)? | `facts/purple-robot.yaml` |
 | 5 | LinkedIn draft still says 83 open questions; it is 79 now | your draft |
+| 6 | Five PDFs that may not be redistributed (three CTA/NSF 2052 sleep standards, Depner 2020, Baumert 2022) were pushed in commit 30046f4 and removed in the next commit, so they remain in public git history. Leave it, or rewrite history and force-push to purge them? | `module-05-measurement-science/sleep/literature-library.md`; reading copies in `_private/module5-sleep-reading/` |
 
 ## Done
 

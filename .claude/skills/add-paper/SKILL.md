@@ -47,6 +47,11 @@ Module 3 rejection was for `unobtainable` and he now has the PDF.
 - Then check it's real: the first bytes must be `%PDF`, and `pypdf` text extraction must return the
   paper's own text. A paywall or CAPTCHA page saved as `.pdf` doesn't count.
 - If Hassan gave a local PDF, use it, but run the same checks.
+- **Check the licence before storing.** This repo is public. Store a PDF only if it carries a
+  Creative Commons licence (journal page, PDF footer, or a CC-licensed arXiv version). A free
+  document that says "all rights reserved", "may not be reproduced" (standards bodies such as CTA),
+  or comes from a repository under a non-CC licence (e.g. Taverne) is recorded as
+  **Free to read, not stored (licence)** with its link, and the file stays out of git.
 - If you can't get an open copy, **don't bypass paywalls or bot checks.** Record the OA status
   (Verified OA / OA but not obtained this pass / Paywalled / Preprint OA, publisher-blocked / Not a
   formal publication). Ask Hassan whether he has a copy, especially if the paper is a Module 3

@@ -1,6 +1,6 @@
 # Sleep: papers to download by hand
 
-Free to read, but every automated route hit a bot check or returned 404 to scripts on 2026-10-22. Nothing was bypassed. Save each PDF into `literature/` with the given name, then change its row in `literature-library.md` to **Verified OA** with a PDF link and set `pdf`/`pdf_status` in `../literature-library-index.json`. Listed in `shared/manual-sweep.md`.
+Free to read, but every automated route hit a bot check or returned 404 to scripts on 2026-10-22. Nothing was bypassed. Save each PDF into `literature/` with the given name, check the PDF carries a Creative Commons licence first (this repo is public; if it does not, leave it out and mark the row **Free to read, not stored (licence)**), then change its row in `literature-library.md` to **Verified OA** with a PDF link and set `pdf`/`pdf_status` in `../literature-library-index.json`. Listed in `shared/manual-sweep.md`.
 
 | # | Title | DOI | PMCID | Save as |
 |---|---|---|---|---|

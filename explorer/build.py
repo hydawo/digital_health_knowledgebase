@@ -196,8 +196,8 @@ block = ("/*DATA-START*/\nvar REPO='" + REPO + "';\nvar PAPERS=" + json.dumps(pa
          ";\nvar CAT_ORDER=" + json.dumps(CAT_ORDER) + ";\nvar TAGS=" + json.dumps(TAGS, ensure_ascii=False) + ";\nvar FILTER_LISTS=" + json.dumps(FILTER_LISTS, ensure_ascii=False) + ";\n/*DATA-END*/\n")
 s = re.sub(r"/\*DATA-START\*/.*?/\*DATA-END\*/\n", lambda m: block, s, count=1, flags=re.S)
 
-pdfs = len([f for f in glob.glob('**/*.pdf', recursive=True) if not f.startswith('.git')])
-docs = len([f for f in glob.glob('**/*.md', recursive=True) if not f.startswith('.git') and not f.startswith('.claude')])
+pdfs = len([f for f in glob.glob('**/*.pdf', recursive=True) if not f.startswith(('.git', '_private'))])
+docs = len([f for f in glob.glob('**/*.md', recursive=True) if not f.startswith(('.git', '.claude', '_private'))])
 total = int(subprocess.run(['du', '-sk', '.'], capture_output=True, text=True).stdout.split()[0])
 git = int(subprocess.run(['du', '-sk', '.git'], capture_output=True, text=True).stdout.split()[0])
 writeups = sum(len(glob.glob(m + '/profiles/*.md')) for m in ['module-01-wearables', 'module-02-digital-phenotyping', 'module-03-applied-studies'])
