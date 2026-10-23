@@ -10,7 +10,7 @@
   --agent:#3d5fa8; --agent-soft:#e3eaf8;
   --review:#7a4aa6; --review-soft:#efe5f7;
   --src:#6b6f38; --src-soft:#eef0dc;
-  --m1:#2f6db3; --m1-soft:#e2ecf8; --m2:#8a4fb0; --m2-soft:#f0e6f7; --m3:#b4651e; --m3-soft:#f8eadc; --m4:#4d6b2e; --m4-soft:#e8f0dc;
+  --m1:#2f6db3; --m1-soft:#e2ecf8; --m2:#8a4fb0; --m2-soft:#f0e6f7; --m3:#b4651e; --m3-soft:#f8eadc; --m4:#4d6b2e; --m4-soft:#e8f0dc; --m5:#a23a5a; --m5-soft:#f7e3ea;
   --display:"Instrument Serif", Georgia, serif; --body:"Instrument Sans", system-ui, sans-serif; --mono:"JetBrains Mono", ui-monospace, monospace;
 }
 @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
@@ -18,14 +18,14 @@
   --accent:#5cc3a6; --accent-soft:#1d3a32;
   --human:#eda077; --human-soft:#3a271c; --agent:#8fb0ee; --agent-soft:#1c2840;
   --review:#c9a0ee; --review-soft:#2e2140; --src:#c4c98a; --src-soft:#2c2e1b;
-  --m1:#7fb0ea; --m1-soft:#1b2a3c; --m2:#c79ae6; --m2-soft:#2d2238; --m3:#e6a36a; --m3-soft:#3a2a1c; --m4:#a7c97f; --m4-soft:#25301b;
+  --m1:#7fb0ea; --m1-soft:#1b2a3c; --m2:#c79ae6; --m2-soft:#2d2238; --m3:#e6a36a; --m3-soft:#3a2a1c; --m4:#a7c97f; --m4-soft:#25301b; --m5:#e894ae; --m5-soft:#3a1f29;
   color-scheme:dark }}
 :root[data-theme="dark"]{
   --bg:#111816; --surface:#18211e; --fg:#e4ebe8; --muted:#9aaba5; --line:#3a4a45;
   --accent:#5cc3a6; --accent-soft:#1d3a32;
   --human:#eda077; --human-soft:#3a271c; --agent:#8fb0ee; --agent-soft:#1c2840;
   --review:#c9a0ee; --review-soft:#2e2140; --src:#c4c98a; --src-soft:#2c2e1b;
-  --m1:#7fb0ea; --m1-soft:#1b2a3c; --m2:#c79ae6; --m2-soft:#2d2238; --m3:#e6a36a; --m3-soft:#3a2a1c; --m4:#a7c97f; --m4-soft:#25301b;
+  --m1:#7fb0ea; --m1-soft:#1b2a3c; --m2:#c79ae6; --m2-soft:#2d2238; --m3:#e6a36a; --m3-soft:#3a2a1c; --m4:#a7c97f; --m4-soft:#25301b; --m5:#e894ae; --m5-soft:#3a1f29;
   color-scheme:dark }
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.55;margin:0}
@@ -59,6 +59,7 @@ svg .m1{fill:var(--m1-soft);stroke:var(--m1);stroke-width:1.5}
 svg .m2{fill:var(--m2-soft);stroke:var(--m2);stroke-width:1.5}
 svg .m3{fill:var(--m3-soft);stroke:var(--m3);stroke-width:1.5}
 svg .m4{fill:var(--m4-soft);stroke:var(--m4);stroke-width:1.5}
+svg .m5{fill:var(--m5-soft);stroke:var(--m5);stroke-width:1.5}
 svg .w{fill:none;stroke:var(--line);stroke-width:1.8}
 svg .wa{fill:none;stroke:var(--accent);stroke-width:2}
 svg .wh{fill:none;stroke:var(--human);stroke-width:1.8}
@@ -86,7 +87,7 @@ svg .ah{fill:var(--line)} svg .aa{fill:var(--accent)} svg .ahu{fill:var(--human)
 <div class="wrap">
 
 <header style="display:grid;gap:12px">
-  <div class="eyebrow">digital_health_knowledgebase · 11 October 2026</div>
+  <div class="eyebrow">digital_health_knowledgebase · 23 October 2026</div>
   <h1>Knowledge Base Architecture</h1>
   <p class="lede">How the agents divide the work, and how the library itself is laid out. The library is a set of plain text files and PDFs in one public GitHub repository. There is no database server. Every change is a commit, so the full history of every claim can be traced.</p>
 </header>
@@ -172,7 +173,7 @@ svg .ah{fill:var(--line)} svg .aa{fill:var(--accent)} svg .ahu{fill:var(--human)
     <!-- Knowledge base -->
     <rect x="290" y="512" width="420" height="88" rx="12" class="kb"/>
     <text x="500" y="542" text-anchor="middle" class="t">📚 The knowledge base</text>
-    <text x="500" y="562" text-anchor="middle" class="s">Four modules, shared files and 208 PDFs</text>
+    <text x="500" y="562" text-anchor="middle" class="s">Five modules, shared files and 282 PDFs</text>
     <text x="500" y="580" text-anchor="middle" class="s">in one public GitHub repository (Part 2)</text>
 
     <!-- coordinator to KB -->
@@ -322,9 +323,9 @@ svg .ah{fill:var(--line)} svg .aa{fill:var(--accent)} svg .ahu{fill:var(--human)
 <section>
   <div class="eyebrow">Part 2</div>
   <h2>📚 How the library is laid out</h2>
-  <p class="muted">Four modules sit side by side. Each one has its own write-ups, a comparison table, a source list and a folder of papers. A shared folder holds what applies to all four. A script turns the whole thing into the web pages. The vendor fact records sit in their own folder, described below the diagram.</p>
+  <p class="muted">Four modules sit side by side, each with its own write-ups, a comparison table, a source list and a folder of papers. The fifth, measurement science, runs underneath them: one catalogue per domain plus a generated hub page that links back into the other four. A shared folder holds what applies to all five. A script turns the whole thing into the web pages. The vendor fact records sit in their own folder, described below the diagram.</p>
   <div class="scroll">
-  <svg viewBox="0 0 1000 690" role="img" aria-label="Repository architecture diagram">
+  <svg viewBox="0 0 1000 800" role="img" aria-label="Repository architecture diagram">
     <defs>
       <marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="ah"/></marker>
       <marker id="ba" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="aa"/></marker>
@@ -361,11 +362,11 @@ svg .ah{fill:var(--line)} svg .aa{fill:var(--accent)} svg .ahu{fill:var(--human)
     <rect x="516" y="100" width="216" height="316" rx="10" class="m3"/>
     <text x="532" y="126" class="t">🏥 3 · Real studies</text>
     <text x="532" y="144" class="x">What happened in actual deployments</text>
-    <text x="532" y="174" class="m">profiles/</text><text x="532" y="190" class="s">65 studies, from full papers</text>
+    <text x="532" y="174" class="m">profiles/</text><text x="532" y="190" class="s">73 studies, from full papers</text>
     <text x="532" y="216" class="m">feasibility-matrix.md</text><text x="532" y="232" class="s">one row per study</text>
-    <text x="532" y="258" class="m">_scan-queue.md</text><text x="532" y="274" class="s">18 candidates to read</text>
+    <text x="532" y="258" class="m">_scan-queue.md</text><text x="532" y="274" class="s">candidates the robot found</text>
     <text x="532" y="300" class="m">literature-index.json</text><text x="532" y="316" class="s">seen and rejected, with reasons</text>
-    <text x="532" y="342" class="m">literature/</text><text x="532" y="358" class="s">39 PDFs</text>
+    <text x="532" y="342" class="m">literature/</text><text x="532" y="358" class="s">43 PDFs</text>
     <text x="532" y="384" class="m">sources.md</text>
 
     <!-- M4 -->
@@ -383,10 +384,20 @@ svg .ah{fill:var(--line)} svg .aa{fill:var(--accent)} svg .ahu{fill:var(--human)
     <path d="M540 416 C540 466 128 466 128 418" class="wa" marker-end="url(#ba)"/>
     <text x="620" y="452" class="lbl">each study links back to the devices and platforms it used</text>
 
+    <!-- M5 -->
+    <rect x="20" y="490" width="960" height="96" rx="10" class="m5"/>
+    <text x="36" y="514" class="t">📏 5 · Measurement science</text>
+    <text x="280" y="514" class="x">How well a domain can be measured, whatever the device</text>
+    <text x="36" y="540" class="m">sleep/ cardiac/ activity/ mental-health/</text><text x="36" y="556" class="s">245 papers, 70 PDFs, one catalogue per domain</text>
+    <text x="400" y="540" class="m">hub.md per domain</text><text x="400" y="556" class="s">links 284 papers and profiles in Modules 1 to 4</text>
+    <text x="700" y="540" class="m">shared/domain-tags.json</text><text x="700" y="556" class="s">the tags the hubs are built from</text>
+    <text x="36" y="576" class="x">tools/domains/build_hubs.py regenerates every hub; nobody edits a hub by hand.</text>
+
+    <g transform="translate(0,110)">
     <!-- shared -->
     <rect x="20" y="490" width="960" height="92" rx="10" class="out"/>
-    <text x="36" y="514" class="t">🗃️ shared/ · used by all four modules</text>
-    <text x="36" y="538" class="m">unresolved-questions.md</text><text x="36" y="554" class="s">83 open questions, grouped by who can close them</text>
+    <text x="36" y="514" class="t">🗃️ shared/ · used by all five modules</text>
+    <text x="36" y="538" class="m">unresolved-questions.md</text><text x="36" y="554" class="s">79 open questions, grouped by who can close them</text>
     <text x="370" y="538" class="m">research-log.md</text><text x="370" y="554" class="s">what each session and scan changed</text>
     <text x="620" y="538" class="m">weekly-literature-scan.md</text><text x="620" y="554" class="s">the scout's instructions</text>
     <text x="36" y="574" class="x">Also a glossary, the format rules, the Android and iPhone rules, and the independent reviews.</text>
@@ -401,6 +412,7 @@ svg .ah{fill:var(--line)} svg .aa{fill:var(--accent)} svg .ahu{fill:var(--human)
     <text x="440" y="656" class="m">tags.json</text><text x="515" y="656" class="s">hand-kept filter tags</text>
     <text x="680" y="656" class="m">kb-architecture.html</text><text x="840" y="656" class="s">→ this page</text>
     <path d="M500 582 L500 604" class="w" marker-end="url(#b)"/>
+    </g>
   </svg>
   </div>
   <div class="notes">
@@ -408,6 +420,7 @@ svg .ah{fill:var(--line)} svg .aa{fill:var(--accent)} svg .ahu{fill:var(--human)
     <div class="note"><b>Comparison tables</b><span>The same facts across every device or platform at once, so a reader can scan one column, like cost or raw data access.</span></div>
     <div class="note"><b>Paper ledgers</b><span>Machine-readable lists of every paper already seen or rejected. They stop the Monday scout from adding the same paper twice.</span></div>
     <div class="note"><b>Confidence labels</b><span>Claims are marked Verified, Corroborated, Reported or Unclear, depending on how strong the source is.</span></div>
+    <div class="note"><b>Domain hubs (Module 5)</b><span>One generated page per domain. It lists the domain's own catalogue, then every device profile, paper and study elsewhere in the library tagged with that domain, so a paper never needs two homes.</span></div>
   </div>
   <h3 class="sub">📇 Vendor fact records</h3>
   <div class="notes">
@@ -447,6 +460,8 @@ svg .ah{fill:var(--line)} svg .aa{fill:var(--accent)} svg .ahu{fill:var(--human)
     <div class="rule" style="--c:var(--agent)"><h3>⚖️ Judge</h3><dl><dt>Job</dt><dd>Merges both drafts and the gap hunter's findings into the company's record. Where the drafts disagree, it opens the sources and decides, or records a conflict. It checks every quote on its page again and lists the write-up and table lines the record contradicts.</dd><dt>Can change</dt><dd>The company's record and its own notes on how it decided, <code>judgement.md</code>.</dd><dt>Never</dt><dd>Picking a side without reading the page. Editing the write-up or the tables.</dd><dt>Rules in</dt><dd><code>tools/facts/prompts/judge.md</code></dd></dl></div>
     <div class="rule" style="--c:var(--agent)"><h3>✏️ Profile corrector</h3><dl><dt>Job</dt><dd>Brings one company's write-up into line with its record, after checking each of the judge's claims against the record. Adds the generated facts block. Lists the table lines that need the same fix, and one agent per module then applies them.</dd><dt>Can change</dt><dd>That one write-up.</dd><dt>Never</dt><dd>The tables, READMEs, other write-ups, the record or the judge's notes.</dd><dt>Rules in</dt><dd><code>tools/facts/prompts/profile-corrector.md</code></dd></dl></div>
     <div class="rule" style="--c:var(--agent)"><h3>📌 Fact keeper</h3><dl><dt>Job</dt><dd>Works the weekly check's issue. Re-reads every flagged page, updates the fact with a fresh quote and date, fixes any write-up the change contradicts, logs it and closes the issue.</dd><dt>Can change</dt><dd>The fact records, the write-ups where a fact changed, and the generated tables, only by running the generator.</dd><dt>Never</dt><dd>A quote typed from memory. A company's own compliance claim marked higher than Corroborated.</dd><dt>Rules in</dt><dd><code>facts/README.md</code></dd></dl></div>
+    <div class="rule" style="--c:var(--agent)"><h3>📏 Domain seeders A and B</h3><dl><dt>Job</dt><dd>Seed one Module 5 domain. A finds guidance, standards and frameworks; B finds metric definitions, open methods, pooled accuracy and known limits.</dd><dt>Can change</dt><dd>Only its own lane file in the domain's <code>_seed/</code> folder, and PDFs in that domain's <code>literature/</code>.</dd><dt>Never</dt><dd>Storing a PDF without a Creative Commons licence. Re-cataloguing a paper that already lives in another module. A number it did not read that day.</dd><dt>Rules in</dt><dd>Task prompt, under <code>shared/agents.md</code></dd></dl></div>
+    <div class="rule" style="--c:var(--agent)"><h3>🏷️ Domain tagger</h3><dl><dt>Job</dt><dd>Marks which papers and profiles in Modules 1 to 4 belong to a domain, primary or secondary, so the domain's hub page can link them.</dd><dt>Can change</dt><dd>Only its tag file. The coordinator merges the tags and rebuilds the hub.</dd><dt>Never</dt><dd>Moving a paper between modules or editing a catalogue.</dd><dt>Rules in</dt><dd>Task prompt, under <code>shared/agents.md</code></dd></dl></div>
     <div class="rule" style="--c:var(--review)"><h3>🧐 Independent reviewer</h3><dl><dt>Job</dt><dd>Fact-checks everything from scratch, assuming nothing is right until checked.</dd><dt>Can change</dt><dd>Only its own report in <code>shared/reviews/</code>.</dd><dt>Never</dt><dd>Changing the library. Its findings go to Hassan first.</dd><dt>Rules in</dt><dd>Task prompt, under <code>shared/agents.md</code></dd></dl></div>
     <div class="rule" style="--c:var(--accent)"><h3>🧑‍💼 Coordinator</h3><dl><dt>Job</dt><dd>Plans the work, gives each agent its own files, checks results, merges, logs and republishes.</dd><dt>Can change</dt><dd>Everything, after checking: Crossref for every new citation, spot checks of the biggest claims.</dd><dt>Never</dt><dd>Posting anything on Hassan's behalf without his approval.</dd><dt>Rules in</dt><dd><code>CLAUDE.md</code> and <code>shared/agents.md</code></dd></dl></div>
   </div>

@@ -2,6 +2,12 @@
 
 ---
 
+## 2026-10-23 (latest) - Module 5 added to the map, architecture page and docs
+
+- **Map** (`explorer/kb-map.html`): five modules in the system diagram (Module 5 box with arrows from papers and working sessions), a Module 5 card, five-module wording, date 23 October, Module 1 PDFs 67, and the status strip rewritten from `ROADMAP.md` and `shared/manual-sweep.md` (it still described 9 to 11 October).
+- **Architecture page** (`explorer/kb-architecture.html`, unpublished since 11 October): Module 5 band under the four module columns, domain hubs note, domain seeder and tagger rule cards; stale counts fixed (73 studies, 43 Module 3 PDFs, 79 open questions, 282 PDFs).
+- **Docs:** `shared/agents.md` gains the domain seeders and tagger; `explorer/README.md` lists all three published pages and how Module 5 domains are wired into the explorer; explorer footer says five modules. Cross-project activity note in the brainiac vault updated.
+
 ## 2026-10-23 (later) - Module 5 Mental health seeded
 
 - **Module:** 5, Mental health. Boundaries set before seeding: general research practice (EMA adherence, missing data, ethics, generic V3) stays in Module 4; a platform's own feature pipeline stays in Module 2; this section holds papers about measuring a mental-health construct.

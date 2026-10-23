@@ -126,6 +126,31 @@ These come from `CLAUDE.md` and apply to all of them.
 - **May change:** that one profile only.
 - **Rules:** [`../tools/facts/prompts/profile-corrector.md`](../tools/facts/prompts/profile-corrector.md).
 
+### 📏 Domain seeders, lanes A and B (Module 5)
+
+- **What they are:** two search agents run once per Module 5 domain (sleep, cardiac, physical
+  activity and fitness, and mental health, all seeded 2026-10-22 and 23). Lane A takes consensus
+  statements, guidance, standards, evaluation frameworks and reporting. Lane B takes metric
+  definitions, device-agnostic algorithms and datasets, pooled accuracy reviews and known limits.
+- **Does:** searches Europe PMC, Crossref and OpenAlex, skips anything already in the dedup list
+  `<domain>/_seed/known-dois.tsv` (built by the coordinator from every module's catalogues,
+  `sources.md` files and ledgers), writes catalogue rows and a records block, and downloads PDFs.
+- **May change:** only `module-05-measurement-science/<domain>/_seed/lane-a.md` or `lane-b.md`,
+  and PDFs in that domain's `literature/`.
+- **Extra rules:** store a PDF only if the file carries a Creative Commons licence (this repo is
+  public); record free-but-restricted documents as "Free to read, not stored (licence)". Leave out
+  any number not read in that pass. Do not use Unpaywall or send any personal identifier to a
+  lookup service. Respect robots.txt, including the arXiv export API and JMIR's `/PDF` path.
+- **Checked by:** the coordinator at merge: duplicates across lanes, labels, status against the
+  records block, a licence scan of every stored PDF, and spot checks of uncertain rows.
+
+### 🏷️ Domain tagger (Module 5)
+
+- **Does:** reads the catalogues and profiles in Modules 1 to 4 from the repo only, and tags the
+  papers and profiles where the domain is a primary or secondary subject.
+- **May change:** only `<domain>/_seed/tags.json` and `tags-notes.md`. The coordinator merges the
+  tags into `shared/domain-tags.json` and runs `tools/domains/build_hubs.py`.
+
 ### 🧐 Independent reviewer
 
 - **Does:** starts with no earlier conclusions and assumes nothing is correct until checked. Fact-checks

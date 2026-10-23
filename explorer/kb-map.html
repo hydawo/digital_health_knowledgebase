@@ -6,19 +6,19 @@
 :root{
   --bg:#f5f7f6; --surface:#ffffff; --fg:#17201d; --muted:#5b6964; --line:#cfd8d4;
   --accent:#1f6f5c; --accent-soft:#dcefe8;
-  --m1:#2f6db3; --m1-soft:#e2ecf8; --m2:#8a4fb0; --m2-soft:#f0e6f7; --m3:#b4651e; --m3-soft:#f8eadc; --m4:#4d6b2e; --m4-soft:#e8f0dc;
+  --m1:#2f6db3; --m1-soft:#e2ecf8; --m2:#8a4fb0; --m2-soft:#f0e6f7; --m3:#b4651e; --m3-soft:#f8eadc; --m4:#4d6b2e; --m4-soft:#e8f0dc; --m5:#a23a5a; --m5-soft:#f7e3ea;
   --warn:#a23b2a; --warn-soft:#f8e1dc; --ok:#2c7a4b; --ok-soft:#dcf1e4;
   --display:"Instrument Serif", Georgia, serif; --body:"Instrument Sans", system-ui, sans-serif; --mono:"JetBrains Mono", ui-monospace, monospace;
 }
 @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
   --bg:#111816; --surface:#18211e; --fg:#e4ebe8; --muted:#9aaba5; --line:#2e3b37;
   --accent:#5cc3a6; --accent-soft:#1d3a32;
-  --m1:#7fb0ea; --m1-soft:#1b2a3c; --m2:#c79ae6; --m2-soft:#2d2238; --m3:#e6a36a; --m3-soft:#3a2a1c; --m4:#a7c97f; --m4-soft:#25301b;
+  --m1:#7fb0ea; --m1-soft:#1b2a3c; --m2:#c79ae6; --m2-soft:#2d2238; --m3:#e6a36a; --m3-soft:#3a2a1c; --m4:#a7c97f; --m4-soft:#25301b; --m5:#e894ae; --m5-soft:#3a1f29;
   --warn:#f08f7d; --warn-soft:#3d221d; --ok:#77d39c; --ok-soft:#1b3326; color-scheme:dark }}
 :root[data-theme="dark"]{
   --bg:#111816; --surface:#18211e; --fg:#e4ebe8; --muted:#9aaba5; --line:#2e3b37;
   --accent:#5cc3a6; --accent-soft:#1d3a32;
-  --m1:#7fb0ea; --m1-soft:#1b2a3c; --m2:#c79ae6; --m2-soft:#2d2238; --m3:#e6a36a; --m3-soft:#3a2a1c; --m4:#a7c97f; --m4-soft:#25301b;
+  --m1:#7fb0ea; --m1-soft:#1b2a3c; --m2:#c79ae6; --m2-soft:#2d2238; --m3:#e6a36a; --m3-soft:#3a2a1c; --m4:#a7c97f; --m4-soft:#25301b; --m5:#e894ae; --m5-soft:#3a1f29;
   --warn:#f08f7d; --warn-soft:#3d221d; --ok:#77d39c; --ok-soft:#1b3326; color-scheme:dark }
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.55;margin:0}
@@ -48,6 +48,7 @@ svg .m1{fill:var(--m1-soft);stroke:var(--m1);stroke-width:1.4}
 svg .m2{fill:var(--m2-soft);stroke:var(--m2);stroke-width:1.4}
 svg .m3{fill:var(--m3-soft);stroke:var(--m3);stroke-width:1.4}
 svg .m4{fill:var(--m4-soft);stroke:var(--m4);stroke-width:1.4}
+svg .m5{fill:var(--m5-soft);stroke:var(--m5);stroke-width:1.4}
 svg .acc{fill:var(--accent-soft);stroke:var(--accent);stroke-width:1.4}
 svg .bad{fill:var(--warn-soft);stroke:var(--warn);stroke-width:1.4}
 svg .good{fill:var(--ok-soft);stroke:var(--ok);stroke-width:1.4}
@@ -93,23 +94,23 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 <div class="wrap">
 
 <header style="display:grid;gap:14px">
-  <div class="eyebrow">digital_health_knowledgebase · state on 9 October 2026</div>
+  <div class="eyebrow">digital_health_knowledgebase · state on 23 October 2026</div>
   <h1>Knowledge Base Map</h1>
-  <p class="lede">A research library on digital health tools for studies. It answers one question: if a study team picks a given wearable or phone platform, what data can they actually get, and how have real studies gone with it? It has four modules, a weekly robot that finds new papers, a list of open questions, and two web pages you browse it through.</p>
+  <p class="lede">A research library on digital health tools for studies. It answers one question: if a study team picks a given wearable or phone platform, what data can they actually get, and how have real studies gone with it? It has five modules (the fifth, added 22 and 23 October, holds the measurement science for sleep, cardiac, physical activity and mental health), a weekly robot that finds new papers, a list of open questions, and two web pages you browse it through.</p>
 </header>
 
 <section>
   <div class="eyebrow">1 · The whole system</div>
   <h2>What has been built</h2>
-  <p class="muted">Read left to right. Facts come in from the left, get filed into one of four modules, the loose ends get written down in the bookkeeping files, and you see the result through the pages on the right.</p>
+  <p class="muted">Read left to right. Facts come in from the left, get filed into one of five modules, the loose ends get written down in the bookkeeping files, and you see the result through the pages on the right.</p>
   <div class="scroll">
-  <svg viewBox="0 0 1000 600" role="img" aria-label="System map: sources feed four modules, which feed bookkeeping files and two browsing pages">
+  <svg viewBox="0 0 1000 700" role="img" aria-label="System map: sources feed five modules, which feed bookkeeping files and two browsing pages">
     <defs>
       <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="arrow"/></marker>
       <marker id="ara" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="arrow-a"/></marker>
     </defs>
     <text x="20" y="32" class="hd">WHERE FACTS COME FROM</text>
-    <text x="270" y="32" class="hd">THE FOUR MODULES</text>
+    <text x="270" y="32" class="hd">THE FIVE MODULES</text>
     <text x="560" y="32" class="hd">BOOKKEEPING  (shared/)</text>
     <text x="800" y="32" class="hd">WHAT YOU LOOK AT</text>
 
@@ -141,7 +142,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
     <rect x="270" y="56" width="240" height="100" rx="8" class="m1"/>
     <text x="284" y="82" class="ttl">1 · Wearables</text>
     <text x="284" y="102" class="sm">12 device profiles + 2 overviews</text>
-    <text x="284" y="118" class="sm">comparison matrix, 61 PDFs</text>
+    <text x="284" y="118" class="sm">comparison matrix, 67 PDFs</text>
     <text x="284" y="140" class="xs">Oura, WHOOP, Apple Watch, Garmin …</text>
 
     <rect x="270" y="176" width="240" height="100" rx="8" class="m2"/>
@@ -162,6 +163,13 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
     <text x="284" y="462" class="ttl">4 · Methods and reviews</text>
     <text x="284" y="482" class="sm">51 papers catalogued, 48 PDFs</text>
     <text x="284" y="500" class="xs">Filed, not yet researched</text>
+
+    <rect x="270" y="540" width="240" height="104" rx="8" class="m5"/>
+    <text x="284" y="566" class="ttl">5 · Measurement science</text>
+    <text x="284" y="586" class="sm">Sleep, cardiac, activity, mental</text>
+    <text x="284" y="602" class="sm">health: 245 papers, 70 PDFs</text>
+    <text x="284" y="618" class="sm">+ a hub page per domain</text>
+    <text x="284" y="636" class="xs">How to measure it, any device</text>
 
     <rect x="560" y="56" width="190" height="112" rx="8" class="box"/>
     <text x="574" y="82" class="ttl">Open questions</text>
@@ -220,6 +228,8 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
     <path d="M220 340 C246 340 246 240 268 240" class="wire-a" marker-end="url(#ara)"/>
     <path d="M220 340 C246 340 246 380 268 380" class="wire-a" marker-end="url(#ara)"/>
     <path d="M220 464 C245 464 245 320 268 320" class="wire" marker-end="url(#ar)"/>
+    <path d="M220 216 C245 216 245 584 268 584" class="wire" marker-end="url(#ar)"/>
+    <path d="M220 464 C245 464 245 600 268 600" class="wire" marker-end="url(#ar)"/>
 
     <path d="M510 106 C535 106 535 110 558 110" class="wire" marker-end="url(#ar)"/>
     <path d="M510 226 C535 226 535 236 558 236" class="wire" marker-end="url(#ar)"/>
@@ -230,8 +240,8 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
     <path d="M510 96 C650 40 760 40 798 96" class="wire" marker-end="url(#ar)"/>
     <path d="M510 130 C650 300 770 230 798 250" class="wire" marker-end="url(#ar)"/>
 
-    <text x="20" y="560" class="sm">Blue, purple, orange and green boxes are the four modules. Teal boxes are automated or published. Green arrows show what the robot writes.</text>
-    <text x="20" y="580" class="sm">Counts are from the repo on 9 Oct 2026.</text>
+    <text x="20" y="672" class="sm">Blue, purple, orange, green and rose boxes are the five modules. Teal boxes are automated or published. Green arrows show what the robot writes.</text>
+    <text x="20" y="692" class="sm">Counts are from the repo on 23 Oct 2026. Module 5 hubs also link 284 papers and profiles that live in Modules 1 to 4.</text>
   </svg>
   </div>
 
@@ -248,6 +258,9 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
     <div class="mod" style="--c:var(--m4)"><div class="eyebrow">Module 4</div><h3>Methods and reviews</h3>
       <p class="q">Reviews, consensus statements and methods papers about doing this kind of research.</p>
       <ul><li><span class="num">51</span> papers catalogued, created 3 Sept</li><li>A storage place so far; no analysis yet</li></ul></div>
+    <div class="mod" style="--c:var(--m5)"><div class="eyebrow">Module 5</div><h3>Measurement science</h3>
+      <p class="q">How well can a wearable or phone measure sleep, the heart, activity or mental health, whatever the device?</p>
+      <ul><li><span class="num">245</span> papers in four domains: sleep 58, cardiac 68, physical activity and fitness 66, mental health 53</li><li>Guidelines, standards, metric definitions, open algorithms, pooled accuracy, known limits</li><li>A generated hub per domain links the device, platform and study material in Modules 1 to 4</li><li>Only openly licensed PDFs are stored; about 89 free papers wait for a hand download</li></ul></div>
   </div>
 </section>
 
@@ -322,12 +335,12 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
   <div class="eyebrow">4 · Where it stands</div>
   <h2>Done, waiting on you, next</h2>
   <div class="status">
-    <div class="st" style="--c:var(--ok)"><h3><i class="dot"></i>Done (10 and 11 October)</h3>
-      <ul><li>Vendor fact records for the first 10 companies: 436 facts, each with a source, an exact quote and a date; 275 Verified</li><li>Hand checks in a browser: WHOOP prices, Withings SpO2 clearance, Beiwe Play listing, Oura privacy-framework listing</li><li>All ten profiles, both comparison matrices and the READMEs corrected to match the records, with a generated facts block in each profile</li><li>Open questions: 15 updated, 3 closed, 1 added (77 open)</li><li>Batch 2 research started: 13 companies</li></ul></div>
-    <div class="st" style="--c:var(--warn)"><h3><i class="dot"></i>Needs you (in claude.ai settings)</h3>
-      <ol><li>Set the scan routine to push to <code>main</code>, not a new branch</li><li>Add <code>www.ebi.ac.uk</code>, <code>pmc.ncbi.nlm.nih.gov</code>, <code>www.ncbi.nlm.nih.gov</code> to its network allowlist so it can save PDFs</li><li>Four decisions: Q109, Q114, Q122, Q123 (below in section 3)</li></ol></div>
+    <div class="st" style="--c:var(--ok)"><h3><i class="dot"></i>Done (21 to 23 October)</h3>
+      <ul><li>Vendor fact records finished for all three batches (35 companies), with profiles, both comparison matrices and the atlas corrected</li><li>The Monday monitor now extends re-check dates itself when every quote still matches</li><li>Vendor confirmation sheets drafted for Verily, Zepp, Circular and Sensor Bio (Gmail drafts, not sent)</li><li>Module 3 queue screened from full text: 73 study profiles</li><li>Module 5 created and seeded: sleep, cardiac, physical activity and fitness, mental health</li></ul></div>
+    <div class="st" style="--c:var(--warn)"><h3><i class="dot"></i>Needs you (one sweep, shared/manual-sweep.md)</h3>
+      <ol><li>Browser checks the scripts cannot do (Fitrockr, WHOOP, Circular, Zepp, Avicenna, Withings)</li><li>About 94 free papers to download by hand: five Module 3 papers and four Module 5 batches</li><li>Send or edit the four vendor drafts</li><li>Decisions: Q109, Q114, Q122, Q123; the Module 4 robot proposal; point the scan routine at <code>main</code></li></ol></div>
     <div class="st" style="--c:var(--accent)"><h3><i class="dot"></i>Next research</h3>
-      <ol><li>Finish batch 2 (Polar, Ametris, Axivity, Activinsights, Movesense, mindLAMP, AWARE, Avicenna, MetricWire, m-Path, CARP, LifeData, Evidation), then batch 3 (12 intermediaries and newer companies)</li><li>Re-check the RADAR-base Fitbit route before Google turns the old API off on 30 October</li><li>Vendor confirmation sheets for the questions only a vendor can answer (sent only with your go-ahead)</li><li>Screen the 18 queued Module 3 candidates, starting with Zawada 2025</li><li>Approve or drop the Module 4 robot proposal</li></ol></div>
+      <ol><li>Fitbit profile follow-up after Google turns the old Web API off on 30 October</li><li>Short write-ups per Module 5 domain: what the field agrees on, where devices fall short</li><li>Remaining vendor sheets (Terra, Labfront, Fitabase) and the Zawada author query, if wanted</li></ol></div>
   </div>
 </section>
 
