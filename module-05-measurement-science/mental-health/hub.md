@@ -6,9 +6,210 @@ Everything in the knowledge base tagged **mental-health**: the measurement-scien
 
 | Where | Count |
 |---|---|
-| Module 5 catalogue | 0 |
-| Device and platform profiles | 0 |
-| Papers in Modules 1, 2 and 4 | 0 |
-| Module 3 deployment profiles | 0 |
+| Module 5 catalogue | 53 |
+| Device and platform profiles | 7 |
+| Papers in Modules 1, 2 and 4 | 64 |
+| Module 3 deployment profiles | 36 |
 
 ## Measurement science (this module)
+
+**Consensus and guidance**
+
+- H-001: Rationale and Challenges for a New Instrument for Remote Measurement of Negative Symptoms, *Schizophrenia Bulletin Open* 2024
+- H-002: Remote Assessment of Negative Symptoms of Schizophrenia, *Schizophrenia Bulletin Open* 2023
+- H-003: Digital Mental Health for Schizophrenia and Other Severe Mental Illnesses: An International Consensus on Current Challenges and Potential Solutions, *JMIR Mental Health* 2024
+- H-004: Increasing psychopharmacology clinical trial success rates with digital measures and biomarkers: Future methods, *NPP: Digital Psychiatry and Neuroscience* 2024
+- H-005: A collaborative realist review of remote measurement technologies for depression in young people, *Nature Human Behaviour* 2024
+- H-006: Real-Time Monitoring of Suicide Risk among Adolescents: Potential Barriers, Possible Solutions, and Future Directions, *Journal of Clinical Child and Adolescent Psychology* 2019
+- H-007: Smartphones, Sensors, and Machine Learning to Advance Real-Time Prediction and Interventions for Suicide Prevention: a Review of Current Progress and Next Steps, *Current Psychiatry Reports* 2018
+
+**Validation frameworks**
+
+- H-008: Personal Sensing: Understanding Mental Health Using Ubiquitous Sensors and Machine Learning, *Annual Review of Clinical Psychology* 2017
+- H-009: Digital phenotyping: towards replicable findings with comprehensive assessments and integrative models in bipolar disorders, *International Journal of Bipolar Disorders* 2020
+- H-010: Aligning digital biomarker definitions in psychiatry with the National Institute of Mental Health Research Domain Criteria framework, *NPP: Digital Psychiatry and Neuroscience* 2024
+
+**EMA measurement**
+
+- H-011: Applied ambulatory assessment: Integrating idiographic and nomothetic principles of measurement, *Psychological Assessment* 2019
+- H-012: ESM-Q: A consensus-based quality assessment tool for experience sampling method items, *Behavior Research Methods* 2025
+- H-013: Assessing the reliability of single-item momentary affective measurements in experience sampling, *Psychological Assessment* 2022
+- H-014: Assessing suicidality in real time: A psychometric evaluation of self-report items for the assessment of suicidal ideation and its proximal risk factors using ecological momentary assessments, *Journal of Abnormal Psychology* 2018
+- H-015: Measuring affect in daily life: A multilevel psychometric evaluation of the PANAS-X across four ecological momentary assessment samples, *Psychological Assessment* 2023
+- H-016: Examining the Concurrent and Predictive Validity of Single Items in Ecological Momentary Assessments, *Assessment* 2023
+- H-017: Experience sampling methodology in mental health research: new insights and technical developments, *World Psychiatry* 2018
+- H-018: Don't Miss the Moment: A Systematic Review of Ecological Momentary Assessment in Suicide Research, *Frontiers in Digital Health* 2022
+- H-019: Ecological momentary assessment as a measurement tool in depression trials, *Journal of Psychiatric Research* 2021
+- H-020: Using the experience sampling methodology to measure anhedonia and its correlates in mental health research: A systematic review, *Clinical Psychology Review* 2025
+- H-021: When All Else Fails, Listen to the Patient: A Viewpoint on the Use of Ecological Momentary Assessment in Clinical Trials, *JMIR Mental Health* 2019
+
+**Reporting**
+
+- H-022: Reporting guidelines on remotely collected electronic mood data in mood disorder (eMOOD): recommendations, *Translational Psychiatry* 2019
+- H-023: Ambulatory assessment in psychopathology research: A review of recommended reporting guidelines and current practices, *Journal of Abnormal Psychology* 2020
+
+**Features**
+
+- H-024: Mobile phone sensor correlates of depressive symptom severity in daily-life behavior: an exploratory study, *Journal of Medical Internet Research* 2015
+- H-025: Trajectories of depression: unobtrusive monitoring of depressive states by means of smartphone mobility traces analysis, *Proceedings of the 2015 ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp)* 2015
+- H-026: The relationship between mobile phone location sensor data and depressive symptom severity, *PeerJ* 2016
+- H-027: A framework for assessing neuropsychiatric phenotypes by using smartphone-based location data, *Translational Psychiatry* 2020
+- H-028: The Geneva Minimalistic Acoustic Parameter Set (GeMAPS) for voice research and affective computing, *IEEE Transactions on Affective Computing* 2016
+- H-029: Effects of mood and aging on keystroke dynamics metadata and their diurnal patterns in a large open-science sample: a BiAffect iOS study, *Journal of the American Medical Informatics Association* 2020
+
+**Methods, tools and datasets**
+
+- H-030: Reproducible Analysis Pipeline for Data Streams: open-source software to process data collected with mobile devices, *Frontiers in Digital Health* 2021
+- H-031: StudentLife: assessing mental health, academic performance and behavioral trends of college students using smartphones, *Proceedings of the 2014 ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp)* 2014
+- H-032: GLOBEM dataset: multi-year datasets for longitudinal human behavior modeling generalization, *NeurIPS Datasets and Benchmarks Track* 2022
+- H-033: The accuracy of passive phone sensors in predicting daily mood, *Depression and Anxiety* 2019
+- H-034: Personalized machine learning of depressed mood using wearables, *Translational Psychiatry* 2021
+
+**Pooled evidence**
+
+- H-035: Correlations between objective behavioral features collected from mobile and wearable devices and depressive mood symptoms in patients with affective disorders: systematic review, *JMIR mHealth and uHealth* 2018
+- H-036: From smartphone data to clinically relevant predictions: a systematic review of digital phenotyping methods in depression, *Neuroscience and Biobehavioral Reviews* 2024
+- H-037: Systematic review and meta-analysis of performance of wearable artificial intelligence in detecting and predicting depression, *npj Digital Medicine* 2023
+- H-038: Wearable artificial intelligence for detecting anxiety: systematic review and meta-analysis, *Journal of Medical Internet Research* 2023
+- H-039: The performance of wearable AI in detecting stress among students: systematic review and meta-analysis, *Journal of Medical Internet Research* 2024
+- H-040: Key features of digital phenotyping for monitoring mental disorders: systematic review, *Journal of Medical Internet Research* 2025
+- H-041: Actigraphy for evaluation of mood disorders: a systematic review and meta-analysis, *Journal of Affective Disorders* 2019
+- H-042: Automated assessment of psychiatric disorders using speech: a systematic review, *Laryngoscope Investigative Otolaryngology* 2020
+- H-043: Diagnostic accuracy of deep learning using speech samples in depression: a systematic review and meta-analysis, *Journal of the American Medical Informatics Association* 2024
+- H-044: Digital markers for passive remote monitoring of bipolar disorder: systematic review, *JMIR Mental Health* 2026
+- H-045: A systematic review of passive data for remote monitoring in psychosis and schizophrenia, *npj Digital Medicine* 2025
+- H-046: Loneliness and social isolation detection using passive sensing techniques: scoping review, *JMIR mHealth and uHealth* 2022
+
+**Validity limits**
+
+- H-047: GLOBEM: cross-dataset generalization of longitudinal human behavior modeling, *Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies* 2022
+- H-048: Generalization and personalization of mobile sensing-based mood inference models: an analysis of college students in eight countries, *Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies* 2022
+- H-049: A systematic review and meta-analysis of discrepancies between logged and self-reported digital media use, *Nature Human Behaviour* 2021
+- H-050: The need to approximate the use-case in clinical machine learning, *GigaScience* 2017
+- H-051: Depression predictions from GPS-based mobility do not generalize well to large demographically heterogeneous samples, *Scientific Reports* 2021
+- H-052: Machine learning for passive mental health symptom prediction: generalization across different longitudinal mobile sensing studies, *PLOS ONE* 2022
+- H-053: Comparative assessment of multimodal sensor data quality collected using Android and iOS smartphones in real-world settings, *Sensors* 2024
+
+## Device and platform profiles
+
+- [LifeData (RealLife Exp / "LifeData+")](../../module-02-digital-phenotyping/profiles/lifedata.md) (Module 2 profile, primary): Heavy use in suicide and psychiatry EMA
+- [mindLAMP (LAMP Platform)](../../module-02-digital-phenotyping/profiles/mindlamp.md) (Module 2 profile, primary): Digital psychiatry platform
+- [Beiwe](../../module-02-digital-phenotyping/profiles/beiwe.md) (Module 2 profile, secondary): Psychiatry origin; many other conditions
+- [Empatica](../../module-01-wearables/profiles/empatica.md) (Module 1 profile, secondary): EDA for stress and affective research
+- [Legacy and Adjacent Platforms](../../module-02-digital-phenotyping/profiles/legacy-and-adjacent-platforms.md) (Module 2 profile, secondary): StudentLife and Koa Health mental health work
+- [m-Path](../../module-02-digital-phenotyping/profiles/m-path.md) (Module 2 profile, secondary): Psychology EMA origin; other uses too
+- [RADAR-base](../../module-02-digital-phenotyping/profiles/radar-base.md) (Module 2 profile, secondary): Depression flagship among several conditions
+
+## Deployments (Module 3)
+
+- [Aledavood et al. 2025 - MoMo-Mood: AWARE + actigraph + bed sensor in mood disorders, N=151 for up to 1 year](../../module-03-applied-studies/profiles/aware-momo-mood-mood-disorders.md) (primary): Mood disorder outpatients monitored for a year
+- [Bae et al. 2023 - AWARE-based app for binge-drinking prediction in young adults, N=75 over 14 weeks](../../module-03-applied-studies/profiles/aware-binge-drinking-jitai-sensor-loss.md) (primary): Binge-drinking prediction in young adults
+- [Balliu et al. 2024 - STAND: AWARE in a university depression treatment programme, N=437 enrolled / 183 modelle](../../module-03-applied-studies/profiles/aware-stand-mood-prediction-adherence.md) (primary): Students with depression or anxiety
+- [Bladon et al. 2026 - CONNECT nested pilot: Fitbit vs Apple Watch vs Samsung Galaxy Watch in psychosis, N=105 o](../../module-03-applied-studies/profiles/connect-multi-wearable-psychosis.md) (primary): Schizophrenia-spectrum relapse monitoring
+- [Bonnier et al. 2025 - Benefits and challenges of 28-day EMA in treatment-seeking self-injury patients (m-Path)](../../module-03-applied-studies/profiles/mpath-nssi-ema-benefits-challenges.md) (primary): Non-suicidal self-injury in treatment
+- [Borelli et al. 2025 - mSavorUs companion: passive-stream completeness for the AWARE + Oura + Samsung cohort, N](../../module-03-applied-studies/profiles/aware-msavorus-passive-completeness-companion.md) (primary): Depressive symptom detection from passive data
+- [Camargo et al. 2025 - SmartSense-D: AWARE-Light + actigraphy in young people with MDD, N=40](../../module-03-applied-studies/profiles/aware-light-smartsense-d-youth-depression.md) (primary): Young people with major depression
+- [Castillo et al. 2025 - mindLAMP remote cognitive assessment across India and the US, N=56 over 30 days](../../module-03-applied-studies/profiles/mindlamp-global-cognitive-multisite.md) (primary): Schizophrenia and schizoaffective disorder
+- [Clark et al. 2025 - Community-codesigned EMA of minority stress and suicidal ideation in SGM youth (MetricWire](../../module-03-applied-studies/profiles/metricwire-sgm-youth-ema-feasibility.md) (primary): Minority stress and suicidal ideation in youth
+- [Cohen et al. 2023 - SHARP: mindLAMP relapse prediction across three sites in two countries, N=132](../../module-03-applied-studies/profiles/mindlamp-relapse-3site.md) (primary): Schizophrenia relapse prediction
+- [de Angel et al. 2023 - RMT engagement during active psychological treatment for depression, N=66, 7 months](../../module-03-applied-studies/profiles/radar-base-treatment-engagement.md) (primary): Depression treatment engagement
+- [Dennard et al. 2025 - ESM engagement inside the AVATAR2 psychosis trial (m-Path), N=134 of 207](../../module-03-applied-studies/profiles/mpath-avatar2-esm-engagement.md) (primary): Psychosis trial, auditory hallucinations
+- [Huang et al. 2025 - Beiwe digital phenotyping in adolescents with bipolar disorder over 18 months, N=48](../../module-03-applied-studies/profiles/beiwe-adolescent-feasibility.md) (primary): Adolescents with bipolar disorder
+- [Kivelä et al. 2024 - Acceptability, feasibility and iatrogenic effects of EMA of suicidal ideation (Ethica/Avi](../../module-03-applied-studies/profiles/avicenna-ema-suicidal-ideation-iatrogenic.md) (primary): EMA of suicidal ideation; iatrogenic effects
+- [Kochhar et al. 2025 - EMA protocol psychometrics and participant experience in smoking youth (Avicenna), N=84](../../module-03-applied-studies/profiles/avicenna-smoking-youth-ema-compliance.md) (primary): EMA in smoking youth; substance use
+- [Liu et al. 2019 - LAMP app cognitive assessments in schizophrenia, unpaid, 12 weeks: patients engaged 3× more ](../../module-03-applied-studies/profiles/lamp-schizophrenia-cognition-unpaid.md) (primary): Schizophrenia cognition assessment
+- [Matcham et al. 2022 - RADAR-MDD: recruitment, retention and data availability, N=623, 3 countries, up to 24 mo](../../module-03-applied-studies/profiles/radar-mdd-recruitment-retention.md) (primary): Recurrent major depression
+- [Mercier et al. 2020 - Beiwe after spinal cord injury: retention before vs. after a financial incentive was int](../../module-03-applied-studies/profiles/beiwe-spinal-cord-injury-incentives.md) (primary): Depression and psychosocial well-being after injury
+- [Meyer et al. 2018 - Sleepsight: 8-week continuous rest-activity monitoring in community schizophrenia, N=15](../../module-03-applied-studies/profiles/sleepsight-schizophrenia-rest-activity.md) (primary): Schizophrenia rest-activity monitoring
+- [Moshe et al. 2021 - AWARE on iOS plus a participant-owned Oura Ring, 30 days under Finnish COVID-19 restrictio](../../module-03-applied-studies/profiles/aware-oura-delphi-covid-lockdown.md) (primary): Depression and anxiety symptom prediction
+- [Nguyen et al. 2025 - mSavorUs: AWARE + Oura Ring + Samsung Watch in college students, N=29 over 22 weeks](../../module-03-applied-studies/profiles/aware-msavorus-loneliness-multidevice.md) (primary): Loneliness prevention pilot in students
+- [Nock et al. 2026 - LifeData EMA after psychiatric emergency or inpatient presentation, 6 prompts a day for 84 ](../../module-03-applied-studies/profiles/lifedata-post-hospital-suicide-ema.md) (primary): Post-discharge suicidal thoughts and behaviours
+- [Pellegrini et al. 2022 - Beiwe across four diagnostic groups, 8 weeks, paid and visit-supported, N=45](../../module-03-applied-studies/profiles/beiwe-transdiagnostic-outpatient-completeness.md) (primary): Depression, bipolar, schizophrenia and controls
+- [Presby et al. 2025 - WHOOP in-app mental-health surveys, 181,574 members over 13 months](../../module-03-applied-studies/profiles/whoop-mental-health-survey-engagement.md) (primary): In-app mental-health surveys
+- [Raugh et al. 2021 - Digital phenotyping adherence, feasibility and tolerability in outpatients with schizophre](../../module-03-applied-studies/profiles/dp-schizophrenia-tolerability.md) (primary): Outpatients with schizophrenia
+- [Spangenberg et al. 2026 - Reactivity and feasibility of 7-month post-discharge EMA of suicidality (MetricWire ](../../module-03-applied-studies/profiles/metricwire-post-discharge-ema-reactivity.md) (primary): Post-discharge suicidality EMA
+- [Torous, Barnett and Staples 2017 to 2018 - Beiwe's first schizophrenia pilot, 17 outpatients, no payment for a](../../module-03-applied-studies/profiles/beiwe-schizophrenia-state-clinic-pilot.md) (primary): Outpatients with schizophrenia
+- [Vidal Bustamante et al. 2022 - GENEActiv wrist actigraphy plus Beiwe daily surveys across a full academic year](../../module-03-applied-studies/profiles/geneactiv-beiwe-college-year-deep-phenotyping.md) (primary): Student affect and stress across a year
+- [Wang et al. 2021 - Inpatient EMA of suicidal thinking to predict post-discharge suicide attempts, N=83](../../module-03-applied-studies/profiles/beiwe-inpatient-suicide-pilot.md) (primary): Suicidal thinking and post-discharge attempts
+- [Weingarden et al. 2025 and 2026 - MetricWire EMA plus Beiwe passive sensing in a nationally recruited body dys](../../module-03-applied-studies/profiles/metricwire-beiwe-bdd-remote-ema-passive.md) (primary): Body dysmorphic disorder with suicidality
+- [Wu et al. 2023 - AWARE in alcohol-associated liver disease with alcohol use disorder, N=24 over 30 days](../../module-03-applied-studies/profiles/aware-alcohol-liver-disease-craving.md) (primary): Alcohol use disorder craving and drinking
+- [Yi et al. 2025 - Beiwe 8-day intensive burst inside the Nurses' Health Study II, N=181, uncompensated](../../module-03-applied-studies/profiles/beiwe-nurses-health-study-burst.md) (primary): Psychological well-being measurement
+- [Zawada et al. 2025 - Beiwe after ischemic stroke and TIA, Mayo Clinic Arizona, 54 enrolled, the first Beiwe wi](../../module-03-applied-studies/profiles/beiwe-stroke-tia-mood-2024-window.md) (primary): Mood prediction after stroke or TIA
+- [Zhang et al. 2023 - RADAR-MDD long-term retention and engagement patterns, N=614, up to 94 weeks](../../module-03-applied-studies/profiles/radar-mdd-longterm-engagement.md) (primary): Recurrent major depression
+- [Culhane et al. 2026 - GENEActiv sleep and activity reports on a 21-bed psychiatric inpatient unit, 155 admissi](../../module-03-applied-studies/profiles/geneactiv-inpatient-psychiatry-sleep-reporting.md) (secondary): Psychiatric inpatients; sleep and activity reports
+- [McInerney et al. 2024 - Beiwe feasibility, tolerability and user experience in type 2 diabetes, N=85 over 2 mo](../../module-03-applied-studies/profiles/beiwe-type-2-diabetes-feasibility.md) (secondary): Mood study nested; diabetes cohort
+
+## Papers in other modules
+
+### Module 1, wearables
+
+- Alcohol use trajectories on WHOOP platform (primary; [catalogue](../../module-01-wearables/literature-library.md)) [doi](https://doi.org/10.2196/91288): Alcohol use over 72 weeks is the subject
+- Depression and anxiety severity and Oura ring metrics (primary; [catalogue](../../module-01-wearables/research-library-wearables.md)) [doi](https://doi.org/10.1186/s12916-026-05276-y): Depression and anxiety severity is the outcome
+- Elevated body temperature and depressive symptoms (TemPredict, Oura) (primary; [catalogue](../../module-01-wearables/literature-library.md)) [doi](https://doi.org/10.1038/s41598-024-51567-w): Depressive symptoms are the outcome
+- Green space dose and college student mental health (smartwatch) (primary; [catalogue](../../module-01-wearables/research-library-wearables.md)) [doi](https://doi.org/10.1016/j.envres.2026.124909): Student mental health is the outcome
+- Physiological stress after 2025 Los Angeles wildfire in older adults (Oura) (primary; [catalogue](../../module-01-wearables/research-library-wearables.md)) [doi](https://doi.org/10.1088/2752-5309/ae7faf): Wearable-measured stress is the outcome
+- Sleep heart rate dynamics and mental health in college students (LEMURS) (primary; [catalogue](../../module-01-wearables/literature-library.md)) [doi](https://doi.org/10.1159/000539487): Mental health outcomes linked to sleep HR
+- Wearable relapse prediction after rTMS for depression (WARN-D protocol) (primary; [catalogue](../../module-01-wearables/research-library-wearables.md)) [doi](https://doi.org/10.2196/89466): Depression relapse is the outcome
+- Alcohol effects on HR, sleep, activity (WHOOP) (secondary; [catalogue](../../module-01-wearables/literature-library.md)) [doi](https://doi.org/10.1371/journal.pdig.0001284): Alcohol use is the exposure; physiology the focus
+- DPSleep open-source sleep analysis from accelerometer data (L080, secondary; [catalogue](../../module-01-wearables/literature-library.md)) [doi](https://doi.org/10.2196/29849): Relates inferred sleep to mental health measures
+- Rest-activity rhythms as biomarkers of late-life neuropsychiatric health (L003, secondary; [catalogue](../../module-01-wearables/literature-library.md)) [doi](https://doi.org/10.1101/2025.09.20.25336210): Neuropsychiatric health among several outcomes
+- Wearable metrics, energy deficiency and psychological stress in swimmers (secondary; [catalogue](../../module-01-wearables/literature-library.md)) [doi](https://doi.org/10.1177/17479541231206424): Psychological stress is one of two outcomes
+
+### Module 2, digital phenotyping
+
+- AURORA study: biology and function after traumatic stress (L094, primary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)) [doi](https://doi.org/10.1038/s41380-020-00897-y): Post-traumatic stress outcomes
+- Beiwe 2016: new tools for new research in psychiatry (L112, primary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)) [doi](https://doi.org/10.2196/mental.5165): Psychiatry platform paper
+- Causal effect estimation among bipolar participants in mHealth studies (L005, primary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)) [doi](https://doi.org/10.1093/biomtc/ujag131): Bipolar disorder states
+- Daily smartphone surveys of transdiagnostic symptoms in serious mental illness (L006, primary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)) [doi](https://doi.org/10.1038/s41398-026-04218-9): Serious mental illness symptoms
+- Detecting worsening in body dysmorphic disorder from sensor data (L017, primary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)) [doi](https://doi.org/10.1016/j.beth.2025.09.001): BDD worsening and suicidal ideation
+- Digital phenotyping for the busy psychiatrist (L100, primary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)): Psychiatric practice; no DOI
+- EMA prediction of suicide desire and intent in BDD (L018, primary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)) [doi](https://doi.org/10.1037/abn0001054): Suicidality in BDD
+- Heterogeneity in suicide risk from personalized dynamic models (L037, primary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)) [doi](https://doi.org/10.1016/j.brat.2024.104574): Suicide risk
+- Increase in suicidal thinking during COVID-19 (L081, primary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)) [doi](https://doi.org/10.1177/2167702621993857): Suicidal thinking
+- Machine learning and digital measurement of psychological health (L059, primary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)) [doi](https://doi.org/10.1146/annurev-clinpsy-080921-073212): Psychological health measurement
+- Mentalizing imagery therapy for dementia caregivers (protocol) (L066, primary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)) [doi](https://doi.org/10.1016/j.cct.2022.106737): Caregiver stress and insomnia intervention
+- MENTALSED: digital mental health assessment in intellectual disability (protocol) (primary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)) [doi](https://doi.org/10.2196/106072): Continuous mental-health monitoring is the aim
+- mindLAMP digital phenotyping correlations in larger mental health samples (primary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)) [doi](https://doi.org/10.1192/bjo.2022.507): Passive sensing versus mental health surveys
+- mindLAMP platform for patient-generated health data (primary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)) [doi](https://doi.org/10.2196/30557): Digital psychiatry platform description
+- Mobile mental health: new methods for new data (L113, primary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)) [doi](https://doi.org/10.1007/s11920-015-0602-0): Mental health data
+- Mobility, social activity and loneliness in severe mental illness during COVID-19 (L051, primary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)) [doi](https://doi.org/10.1038/s41537-023-00383-8): Loneliness and social activity in SMI
+- Participation and mental health in youth with physical disabilities (m-Path) (primary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)) [doi](https://doi.org/10.1080/09638288.2026.2731078): Mental health is the outcome
+- Passive versus active sleep estimates in schizophrenia (L108, primary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)) [doi](https://doi.org/10.1038/s41537-017-0038-0): Schizophrenia cohort
+- Personal smartphone app for PHQ-9 in major depression (L114, primary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)) [doi](https://doi.org/10.2196/mental.3889): Depressive symptoms
+- Personalized models to predict idiographic suicidal thoughts (L030, primary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)) [doi](https://doi.org/10.1038/s44220-024-00335-w): Suicidal thoughts prediction
+- Relapse prediction in schizophrenia by digital phenotyping (L105, primary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)) [doi](https://doi.org/10.1038/s41386-018-0030-z): Schizophrenia relapse
+- Reporting of mHealth studies for schizophrenia (L109, primary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)) [doi](https://doi.org/10.1097/hrp.0000000000000133): Schizophrenia studies
+- Returning individual results from digital phenotyping in psychiatry (L054, primary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)) [doi](https://doi.org/10.1080/15265161.2023.2296424): Psychiatry digital phenotyping ethics; match uncertain
+- Sensing apps and public datasets for digital phenotyping of mental health (primary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)) [doi](https://doi.org/10.2196/28735): Mental health phenotyping review
+- Smartphone apps for monitoring mood disorders: systematic review (L106, primary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)): Mood disorders; no DOI
+- Smartphone screen time in people with suicidal thoughts (L031, primary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)) [doi](https://doi.org/10.2196/57439): Suicidal thoughts and screen time
+- Smartphone sensing of social interactions in schizophrenia (L085, primary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)) [doi](https://doi.org/10.1016/j.jpsychires.2020.11.002): Social impairment in schizophrenia
+- Smartphone voice data to monitor mood disorders (L107, primary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)) [doi](https://doi.org/10.1037/prj0000279): Mood disorder monitoring
+- Social connectivity markers in schizophrenia and bipolar disorder (L036, primary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)) [doi](https://doi.org/10.1038/s44277-024-00013-w): Social behaviour in psychiatric illness
+- Stress and sleep duration over an academic year by actigraphy (L039, primary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)) [doi](https://doi.org/10.2196/53441): Perceived stress is the exposure
+- Voice diaries and digital phenotyping of real-world life stress (L035, primary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)) [doi](https://doi.org/10.31219/osf.io/fn3aj): Affect and life stress
+- Commentary: methodological challenges in digital phenotyping (L012, secondary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)) [doi](https://doi.org/10.1037/abn0001060): Commentary on a psychopathology special issue
+- Digital pill and smartphone data for adherence in severe mental illness (L062, secondary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)) [doi](https://doi.org/10.1016/j.psychres.2022.114707): Medication adherence in SMI; not symptoms
+- m-Path platform for EMA and intervention (secondary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)) [doi](https://doi.org/10.3389/fdgth.2023.1182175): Psychology-origin EMA platform; field broader
+- RADAR-Base platform architecture paper (secondary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)) [doi](https://doi.org/10.2196/11734): Built around depression monitoring among other uses
+- RADAR-Base remote monitoring of mental and physical conditions (secondary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)) [doi](https://doi.org/10.2196/51259): Mental health is one of several conditions
+- Vaping habits and respiratory symptoms using an app (L034, secondary; [catalogue](../../module-02-digital-phenotyping/literature-library.md)) [doi](https://doi.org/10.1186/s12889-024-19439-0): Vaping is the exposure; respiratory outcome
+
+### Module 4, methods and reviews
+
+- Ambulatory assessment and mood monitoring recommendations (M4-037, primary; [catalogue](../../module-04-methods-and-reviews/literature-library.md)) [doi](https://doi.org/10.2196/79501): Mood monitoring
+- Attrition in mood monitoring for depression and bipolar disorder (M4-005, primary; [catalogue](../../module-04-methods-and-reviews/literature-library.md)) [doi](https://doi.org/10.2196/83765): Depression and bipolar monitoring
+- Decision models and technology for psychiatric biomarkers (L073, primary; [catalogue](../../module-04-methods-and-reviews/literature-library.md)) [doi](https://doi.org/10.3389/fpsyt.2021.706655): Psychiatric biomarkers
+- Digital phenotyping for behavioral and mental health (L111, primary; [catalogue](../../module-04-methods-and-reviews/literature-library.md)) [doi](https://doi.org/10.1038/npp.2016.7): Mental health
+- ESM compliance across severe mental disorders (meta-analysis) (M4-001, primary; [catalogue](../../module-04-methods-and-reviews/literature-library.md)) [doi](https://doi.org/10.2196/14475): Severe mental disorders
+- Ethical digital phenotyping tools for mental health (Delphi) (M4-015, primary; [catalogue](../../module-04-methods-and-reviews/literature-library.md)) [doi](https://doi.org/10.2196/27343): Mental health applications
+- Ethics consensus for digital monitoring of people at risk of suicide (L086, primary; [catalogue](../../module-04-methods-and-reviews/literature-library.md)) [doi](https://doi.org/10.1176/appi.prcp.20200029): Suicide risk monitoring
+- Passive monitoring of depression: systematic review (M4-034, primary; [catalogue](../../module-04-methods-and-reviews/literature-library.md)) [doi](https://doi.org/10.1038/s41746-021-00548-8): Depression
+- RDoC and digital phenotyping (L110, primary; [catalogue](../../module-04-methods-and-reviews/literature-library.md)) [doi](https://doi.org/10.1038/tp.2017.25): Psychiatry research framework
+- Smartphone sensors for depression indication (umbrella review) (M4-036, primary; [catalogue](../../module-04-methods-and-reviews/literature-library.md)) [doi](https://doi.org/10.2196/69686): Depression
+- Smartphone sleep tracking in depression, anxiety and psychosis (L092, primary; [catalogue](../../module-04-methods-and-reviews/literature-library.md)) [doi](https://doi.org/10.1007/s11920-019-1043-y): Mental illness sleep
+- Validating digital tools in schizophrenia and mental health (L102, primary; [catalogue](../../module-04-methods-and-reviews/literature-library.md)) [doi](https://doi.org/10.1038/s41537-018-0048-6): Schizophrenia and mental health
+- Digital technology for brain disorders (L095, secondary; [catalogue](../../module-04-methods-and-reviews/literature-library.md)) [doi](https://doi.org/10.1038/s41746-019-0123-z): Brain disorders including psychiatric
+- Opportunities and challenges in digital phenotyping data (L090, secondary; [catalogue](../../module-04-methods-and-reviews/literature-library.md)) [doi](https://doi.org/10.1038/s41386-020-0771-3): Neuropsychiatry venue; general scope
+- Smartphone digital phenotyping across health conditions (M4-038, secondary; [catalogue](../../module-04-methods-and-reviews/literature-library.md)) [doi](https://doi.org/10.2196/84146): Mental and substance use among conditions
+- Toward clinical digital phenotyping (M4-033, secondary; [catalogue](../../module-04-methods-and-reviews/literature-library.md)) [doi](https://doi.org/10.1038/s41746-019-0166-1): Clinical, largely psychiatric framing

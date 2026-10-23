@@ -2,6 +2,16 @@
 
 ---
 
+## 2026-10-23 (later) - Module 5 Mental health seeded
+
+- **Module:** 5, Mental health. Boundaries set before seeding: general research practice (EMA adherence, missing data, ethics, generic V3) stays in Module 4; a platform's own feature pipeline stays in Module 2; this section holds papers about measuring a mental-health construct.
+- **Catalogue:** 53 papers in 8 sections (consensus and guidance 7, validation frameworks 3, EMA measurement 11, reporting 2, features 6, methods tools and datasets 5, pooled evidence 12, validity limits 7). One overlap between lanes removed (Mohr 2017, personal sensing). 15 PDFs stored, each with a CC statement in the file except GLOBEM, whose arXiv page states CC BY 4.0; 13 free to read but not redistributable (author manuscripts and preprints with no licence); 21 CC but blocked to scripts or robots-disallowed (JMIR /PDF), `mental-health/_hand-download.md`, manual sweep #13; 4 paywalled.
+- **Corrected at merge:** StudentLife (Wang 2014) was marked paywalled because the Dartmouth PDF timed out; it is free from the authors under ACM copyright, so relabelled Free to read, not stored (licence).
+- **Kept borderline:** Robin 2020 (speech digital biomarkers, V3 across neurology and psychiatry) and the ISBD Big Data Task Force paper (bipolar measurement).
+- **Left out:** Cohen 2020 (World Psychiatry) and Insel 2017 (JAMA): no abstract and full text blocked, so nothing to write from.
+- **Gaps:** no test-retest reliability papers for passive features, nothing on weather or season confounding, and no guidance written specifically for stress or social behaviour measurement.
+- **Tagging:** 107 entries (Module 1: 12 including Empatica; Module 2: 43 including mindLAMP and LifeData primary, Beiwe, RADAR-base, m-Path and legacy platforms secondary; Module 3: 36; Module 4: 16). Five Module 2 rows tagged from titles only (L003, L019, L035, L054, L080). L100 and L106 keyed `file#row` (no DOI).
+
 ## 2026-10-23 - Module 5 Physical activity and fitness seeded
 
 - **Module:** 5, Physical activity and fitness (`activity/`): steps, energy expenditure, sedentary behaviour, 24-hour movement, cardiorespiratory fitness. Same method as Sleep and Cardiac.

@@ -23,6 +23,7 @@ put the newest at the bottom of its section.
 | 10 | Download 28 free Module 5 sleep papers blocked to scripts (AASM, Oxford Sleep, PMC copies), save under the given names and flip their rows to Verified OA | Seeding pass could not fetch them | `module-05-measurement-science/sleep/_hand-download.md` | none |
 | 11 | Download 17 free Module 5 cardiac papers blocked to scripts (Wiley, OUP, PMC copies), check each is CC-licensed, save under the given names and flip their rows to Verified OA | Seeding pass could not fetch them | `module-05-measurement-science/cardiac/_hand-download.md` | none |
 | 12 | Download 23 free Module 5 activity papers blocked to scripts (JMIR, Springer/BMC, BMJ, Elsevier, PMC copies), check each is CC-licensed (four have only a repository listing as evidence), save under the given names and flip their rows to Verified OA | Seeding pass could not fetch them | `module-05-measurement-science/activity/_hand-download.md` | none |
+| 13 | Download 21 free Module 5 mental health papers blocked to scripts (mostly JMIR, plus PeerJ, Wiley, ACM, OUP, SAGE, Springer, Elsevier, MDPI), check each is CC-licensed, save under the given names and flip their rows to Verified OA | Seeding pass could not fetch them | `module-05-measurement-science/mental-health/_hand-download.md` | none |
 
 ## Vendor and author confirmations
 

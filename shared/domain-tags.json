@@ -1830,5 +1830,1112 @@
    "reason": "Accelerometer-measured activity outcome handling"
   }
  ],
- "mental-health": []
+ "mental-health": [
+  {
+   "key": "10.1016/j.envres.2026.124909",
+   "kind": "paper",
+   "module": 1,
+   "file": "module-01-wearables/research-library-wearables.md",
+   "row_id": null,
+   "title": "Green space dose and college student mental health (smartwatch)",
+   "weight": "primary",
+   "reason": "Student mental health is the outcome"
+  },
+  {
+   "key": "10.1038/s41598-024-51567-w",
+   "kind": "paper",
+   "module": 1,
+   "file": "module-01-wearables/literature-library.md",
+   "row_id": null,
+   "title": "Elevated body temperature and depressive symptoms (TemPredict, Oura)",
+   "weight": "primary",
+   "reason": "Depressive symptoms are the outcome"
+  },
+  {
+   "key": "10.1088/2752-5309/ae7faf",
+   "kind": "paper",
+   "module": 1,
+   "file": "module-01-wearables/research-library-wearables.md",
+   "row_id": null,
+   "title": "Physiological stress after 2025 Los Angeles wildfire in older adults (Oura)",
+   "weight": "primary",
+   "reason": "Wearable-measured stress is the outcome"
+  },
+  {
+   "key": "10.1101/2025.09.20.25336210",
+   "kind": "paper",
+   "module": 1,
+   "file": "module-01-wearables/literature-library.md",
+   "row_id": "L003",
+   "title": "Rest-activity rhythms as biomarkers of late-life neuropsychiatric health",
+   "weight": "secondary",
+   "reason": "Neuropsychiatric health among several outcomes"
+  },
+  {
+   "key": "10.1159/000539487",
+   "kind": "paper",
+   "module": 1,
+   "file": "module-01-wearables/literature-library.md",
+   "row_id": null,
+   "title": "Sleep heart rate dynamics and mental health in college students (LEMURS)",
+   "weight": "primary",
+   "reason": "Mental health outcomes linked to sleep HR"
+  },
+  {
+   "key": "10.1177/17479541231206424",
+   "kind": "paper",
+   "module": 1,
+   "file": "module-01-wearables/literature-library.md",
+   "row_id": null,
+   "title": "Wearable metrics, energy deficiency and psychological stress in swimmers",
+   "weight": "secondary",
+   "reason": "Psychological stress is one of two outcomes"
+  },
+  {
+   "key": "10.1186/s12916-026-05276-y",
+   "kind": "paper",
+   "module": 1,
+   "file": "module-01-wearables/research-library-wearables.md",
+   "row_id": null,
+   "title": "Depression and anxiety severity and Oura ring metrics",
+   "weight": "primary",
+   "reason": "Depression and anxiety severity is the outcome"
+  },
+  {
+   "key": "10.1371/journal.pdig.0001284",
+   "kind": "paper",
+   "module": 1,
+   "file": "module-01-wearables/literature-library.md",
+   "row_id": null,
+   "title": "Alcohol effects on HR, sleep, activity (WHOOP)",
+   "weight": "secondary",
+   "reason": "Alcohol use is the exposure; physiology the focus"
+  },
+  {
+   "key": "10.2196/29849",
+   "kind": "paper",
+   "module": 1,
+   "file": "module-01-wearables/literature-library.md",
+   "row_id": "L080",
+   "title": "DPSleep open-source sleep analysis from accelerometer data",
+   "weight": "secondary",
+   "reason": "Relates inferred sleep to mental health measures"
+  },
+  {
+   "key": "10.2196/89466",
+   "kind": "paper",
+   "module": 1,
+   "file": "module-01-wearables/research-library-wearables.md",
+   "row_id": null,
+   "title": "Wearable relapse prediction after rTMS for depression (WARN-D protocol)",
+   "weight": "primary",
+   "reason": "Depression relapse is the outcome"
+  },
+  {
+   "key": "10.2196/91288",
+   "kind": "paper",
+   "module": 1,
+   "file": "module-01-wearables/literature-library.md",
+   "row_id": null,
+   "title": "Alcohol use trajectories on WHOOP platform",
+   "weight": "primary",
+   "reason": "Alcohol use over 72 weeks is the subject"
+  },
+  {
+   "key": "module-01-wearables/profiles/empatica.md",
+   "kind": "m1-profile",
+   "module": 1,
+   "file": "module-01-wearables/profiles/empatica.md",
+   "row_id": null,
+   "title": "Empatica",
+   "weight": "secondary",
+   "reason": "EDA for stress and affective research"
+  },
+  {
+   "key": "10.1007/s11920-015-0602-0",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L113",
+   "title": "Mobile mental health: new methods for new data",
+   "weight": "primary",
+   "reason": "Mental health data"
+  },
+  {
+   "key": "10.1016/j.beth.2025.09.001",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L017",
+   "title": "Detecting worsening in body dysmorphic disorder from sensor data",
+   "weight": "primary",
+   "reason": "BDD worsening and suicidal ideation"
+  },
+  {
+   "key": "10.1016/j.brat.2024.104574",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L037",
+   "title": "Heterogeneity in suicide risk from personalized dynamic models",
+   "weight": "primary",
+   "reason": "Suicide risk"
+  },
+  {
+   "key": "10.1016/j.cct.2022.106737",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L066",
+   "title": "Mentalizing imagery therapy for dementia caregivers (protocol)",
+   "weight": "primary",
+   "reason": "Caregiver stress and insomnia intervention"
+  },
+  {
+   "key": "10.1016/j.jpsychires.2020.11.002",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L085",
+   "title": "Smartphone sensing of social interactions in schizophrenia",
+   "weight": "primary",
+   "reason": "Social impairment in schizophrenia"
+  },
+  {
+   "key": "10.1016/j.psychres.2022.114707",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L062",
+   "title": "Digital pill and smartphone data for adherence in severe mental illness",
+   "weight": "secondary",
+   "reason": "Medication adherence in SMI; not symptoms"
+  },
+  {
+   "key": "10.1037/abn0001054",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L018",
+   "title": "EMA prediction of suicide desire and intent in BDD",
+   "weight": "primary",
+   "reason": "Suicidality in BDD"
+  },
+  {
+   "key": "10.1037/abn0001060",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L012",
+   "title": "Commentary: methodological challenges in digital phenotyping",
+   "weight": "secondary",
+   "reason": "Commentary on a psychopathology special issue"
+  },
+  {
+   "key": "10.1037/prj0000279",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L107",
+   "title": "Smartphone voice data to monitor mood disorders",
+   "weight": "primary",
+   "reason": "Mood disorder monitoring"
+  },
+  {
+   "key": "10.1038/s41380-020-00897-y",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L094",
+   "title": "AURORA study: biology and function after traumatic stress",
+   "weight": "primary",
+   "reason": "Post-traumatic stress outcomes"
+  },
+  {
+   "key": "10.1038/s41386-018-0030-z",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L105",
+   "title": "Relapse prediction in schizophrenia by digital phenotyping",
+   "weight": "primary",
+   "reason": "Schizophrenia relapse"
+  },
+  {
+   "key": "10.1038/s41398-026-04218-9",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L006",
+   "title": "Daily smartphone surveys of transdiagnostic symptoms in serious mental illness",
+   "weight": "primary",
+   "reason": "Serious mental illness symptoms"
+  },
+  {
+   "key": "10.1038/s41537-017-0038-0",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L108",
+   "title": "Passive versus active sleep estimates in schizophrenia",
+   "weight": "primary",
+   "reason": "Schizophrenia cohort"
+  },
+  {
+   "key": "10.1038/s41537-023-00383-8",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L051",
+   "title": "Mobility, social activity and loneliness in severe mental illness during COVID-19",
+   "weight": "primary",
+   "reason": "Loneliness and social activity in SMI"
+  },
+  {
+   "key": "10.1038/s44220-024-00335-w",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L030",
+   "title": "Personalized models to predict idiographic suicidal thoughts",
+   "weight": "primary",
+   "reason": "Suicidal thoughts prediction"
+  },
+  {
+   "key": "10.1038/s44277-024-00013-w",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L036",
+   "title": "Social connectivity markers in schizophrenia and bipolar disorder",
+   "weight": "primary",
+   "reason": "Social behaviour in psychiatric illness"
+  },
+  {
+   "key": "10.1080/09638288.2026.2731078",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": null,
+   "title": "Participation and mental health in youth with physical disabilities (m-Path)",
+   "weight": "primary",
+   "reason": "Mental health is the outcome"
+  },
+  {
+   "key": "10.1080/15265161.2023.2296424",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L054",
+   "title": "Returning individual results from digital phenotyping in psychiatry",
+   "weight": "primary",
+   "reason": "Psychiatry digital phenotyping ethics; match uncertain"
+  },
+  {
+   "key": "10.1093/biomtc/ujag131",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L005",
+   "title": "Causal effect estimation among bipolar participants in mHealth studies",
+   "weight": "primary",
+   "reason": "Bipolar disorder states"
+  },
+  {
+   "key": "10.1097/hrp.0000000000000133",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L109",
+   "title": "Reporting of mHealth studies for schizophrenia",
+   "weight": "primary",
+   "reason": "Schizophrenia studies"
+  },
+  {
+   "key": "10.1146/annurev-clinpsy-080921-073212",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L059",
+   "title": "Machine learning and digital measurement of psychological health",
+   "weight": "primary",
+   "reason": "Psychological health measurement"
+  },
+  {
+   "key": "10.1177/2167702621993857",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L081",
+   "title": "Increase in suicidal thinking during COVID-19",
+   "weight": "primary",
+   "reason": "Suicidal thinking"
+  },
+  {
+   "key": "10.1186/s12889-024-19439-0",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L034",
+   "title": "Vaping habits and respiratory symptoms using an app",
+   "weight": "secondary",
+   "reason": "Vaping is the exposure; respiratory outcome"
+  },
+  {
+   "key": "10.1192/bjo.2022.507",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": null,
+   "title": "mindLAMP digital phenotyping correlations in larger mental health samples",
+   "weight": "primary",
+   "reason": "Passive sensing versus mental health surveys"
+  },
+  {
+   "key": "10.2196/106072",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": null,
+   "title": "MENTALSED: digital mental health assessment in intellectual disability (protocol)",
+   "weight": "primary",
+   "reason": "Continuous mental-health monitoring is the aim"
+  },
+  {
+   "key": "10.2196/11734",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": null,
+   "title": "RADAR-Base platform architecture paper",
+   "weight": "secondary",
+   "reason": "Built around depression monitoring among other uses"
+  },
+  {
+   "key": "10.2196/28735",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": null,
+   "title": "Sensing apps and public datasets for digital phenotyping of mental health",
+   "weight": "primary",
+   "reason": "Mental health phenotyping review"
+  },
+  {
+   "key": "10.2196/30557",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": null,
+   "title": "mindLAMP platform for patient-generated health data",
+   "weight": "primary",
+   "reason": "Digital psychiatry platform description"
+  },
+  {
+   "key": "10.2196/51259",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": null,
+   "title": "RADAR-Base remote monitoring of mental and physical conditions",
+   "weight": "secondary",
+   "reason": "Mental health is one of several conditions"
+  },
+  {
+   "key": "10.2196/53441",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L039",
+   "title": "Stress and sleep duration over an academic year by actigraphy",
+   "weight": "primary",
+   "reason": "Perceived stress is the exposure"
+  },
+  {
+   "key": "10.2196/57439",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L031",
+   "title": "Smartphone screen time in people with suicidal thoughts",
+   "weight": "primary",
+   "reason": "Suicidal thoughts and screen time"
+  },
+  {
+   "key": "10.2196/mental.3889",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L114",
+   "title": "Personal smartphone app for PHQ-9 in major depression",
+   "weight": "primary",
+   "reason": "Depressive symptoms"
+  },
+  {
+   "key": "10.2196/mental.5165",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L112",
+   "title": "Beiwe 2016: new tools for new research in psychiatry",
+   "weight": "primary",
+   "reason": "Psychiatry platform paper"
+  },
+  {
+   "key": "10.31219/osf.io/fn3aj",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L035",
+   "title": "Voice diaries and digital phenotyping of real-world life stress",
+   "weight": "primary",
+   "reason": "Affect and life stress"
+  },
+  {
+   "key": "10.3389/fdgth.2023.1182175",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": null,
+   "title": "m-Path platform for EMA and intervention",
+   "weight": "secondary",
+   "reason": "Psychology-origin EMA platform; field broader"
+  },
+  {
+   "key": "module-02-digital-phenotyping/literature-library.md#L100",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L100",
+   "title": "Digital phenotyping for the busy psychiatrist",
+   "weight": "primary",
+   "reason": "Psychiatric practice; no DOI"
+  },
+  {
+   "key": "module-02-digital-phenotyping/literature-library.md#L106",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L106",
+   "title": "Smartphone apps for monitoring mood disorders: systematic review",
+   "weight": "primary",
+   "reason": "Mood disorders; no DOI"
+  },
+  {
+   "key": "module-02-digital-phenotyping/profiles/beiwe.md",
+   "kind": "m2-profile",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/profiles/beiwe.md",
+   "row_id": null,
+   "title": "Beiwe",
+   "weight": "secondary",
+   "reason": "Psychiatry origin; many other conditions"
+  },
+  {
+   "key": "module-02-digital-phenotyping/profiles/legacy-and-adjacent-platforms.md",
+   "kind": "m2-profile",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/profiles/legacy-and-adjacent-platforms.md",
+   "row_id": null,
+   "title": "Legacy and Adjacent Platforms",
+   "weight": "secondary",
+   "reason": "StudentLife and Koa Health mental health work"
+  },
+  {
+   "key": "module-02-digital-phenotyping/profiles/lifedata.md",
+   "kind": "m2-profile",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/profiles/lifedata.md",
+   "row_id": null,
+   "title": "LifeData (RealLife Exp / \"LifeData+\")",
+   "weight": "primary",
+   "reason": "Heavy use in suicide and psychiatry EMA"
+  },
+  {
+   "key": "module-02-digital-phenotyping/profiles/m-path.md",
+   "kind": "m2-profile",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/profiles/m-path.md",
+   "row_id": null,
+   "title": "m-Path",
+   "weight": "secondary",
+   "reason": "Psychology EMA origin; other uses too"
+  },
+  {
+   "key": "module-02-digital-phenotyping/profiles/mindlamp.md",
+   "kind": "m2-profile",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/profiles/mindlamp.md",
+   "row_id": null,
+   "title": "mindLAMP (LAMP Platform)",
+   "weight": "primary",
+   "reason": "Digital psychiatry platform"
+  },
+  {
+   "key": "module-02-digital-phenotyping/profiles/radar-base.md",
+   "kind": "m2-profile",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/profiles/radar-base.md",
+   "row_id": null,
+   "title": "RADAR-base",
+   "weight": "secondary",
+   "reason": "Depression flagship among several conditions"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/avicenna-ema-suicidal-ideation-iatrogenic.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/avicenna-ema-suicidal-ideation-iatrogenic.md",
+   "row_id": null,
+   "title": "Kivelä et al. 2024 - Acceptability, feasibility and iatrogenic effects of EMA of suicidal ideation (Ethica/Avi",
+   "weight": "primary",
+   "reason": "EMA of suicidal ideation; iatrogenic effects",
+   "doi": "10.1177/10731911231216053"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/avicenna-smoking-youth-ema-compliance.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/avicenna-smoking-youth-ema-compliance.md",
+   "row_id": null,
+   "title": "Kochhar et al. 2025 - EMA protocol psychometrics and participant experience in smoking youth (Avicenna), N=84",
+   "weight": "primary",
+   "reason": "EMA in smoking youth; substance use",
+   "doi": "10.1016/j.dadr.2024.100314"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/aware-alcohol-liver-disease-craving.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/aware-alcohol-liver-disease-craving.md",
+   "row_id": null,
+   "title": "Wu et al. 2023 - AWARE in alcohol-associated liver disease with alcohol use disorder, N=24 over 30 days",
+   "weight": "primary",
+   "reason": "Alcohol use disorder craving and drinking",
+   "doi": "10.1097/hc9.0000000000000329"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/aware-binge-drinking-jitai-sensor-loss.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/aware-binge-drinking-jitai-sensor-loss.md",
+   "row_id": null,
+   "title": "Bae et al. 2023 - AWARE-based app for binge-drinking prediction in young adults, N=75 over 14 weeks",
+   "weight": "primary",
+   "reason": "Binge-drinking prediction in young adults",
+   "doi": "10.2196/39862"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/aware-light-smartsense-d-youth-depression.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/aware-light-smartsense-d-youth-depression.md",
+   "row_id": null,
+   "title": "Camargo et al. 2025 - SmartSense-D: AWARE-Light + actigraphy in young people with MDD, N=40",
+   "weight": "primary",
+   "reason": "Young people with major depression",
+   "doi": "10.1177/20552076251330509"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/aware-momo-mood-mood-disorders.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/aware-momo-mood-mood-disorders.md",
+   "row_id": null,
+   "title": "Aledavood et al. 2025 - MoMo-Mood: AWARE + actigraph + bed sensor in mood disorders, N=151 for up to 1 year",
+   "weight": "primary",
+   "reason": "Mood disorder outpatients monitored for a year",
+   "doi": "10.2196/63622"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/aware-msavorus-loneliness-multidevice.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/aware-msavorus-loneliness-multidevice.md",
+   "row_id": null,
+   "title": "Nguyen et al. 2025 - mSavorUs: AWARE + Oura Ring + Samsung Watch in college students, N=29 over 22 weeks",
+   "weight": "primary",
+   "reason": "Loneliness prevention pilot in students",
+   "doi": "10.2196/70528"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/aware-msavorus-passive-completeness-companion.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/aware-msavorus-passive-completeness-companion.md",
+   "row_id": null,
+   "title": "Borelli et al. 2025 - mSavorUs companion: passive-stream completeness for the AWARE + Oura + Samsung cohort, N",
+   "weight": "primary",
+   "reason": "Depressive symptom detection from passive data",
+   "doi": "10.2196/67964"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/aware-oura-delphi-covid-lockdown.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/aware-oura-delphi-covid-lockdown.md",
+   "row_id": null,
+   "title": "Moshe et al. 2021 - AWARE on iOS plus a participant-owned Oura Ring, 30 days under Finnish COVID-19 restrictio",
+   "weight": "primary",
+   "reason": "Depression and anxiety symptom prediction",
+   "doi": "10.3389/fpsyt.2021.625247"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/aware-stand-mood-prediction-adherence.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/aware-stand-mood-prediction-adherence.md",
+   "row_id": null,
+   "title": "Balliu et al. 2024 - STAND: AWARE in a university depression treatment programme, N=437 enrolled / 183 modelle",
+   "weight": "primary",
+   "reason": "Students with depression or anxiety",
+   "doi": "10.1038/s41746-024-01035-6"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/beiwe-adolescent-feasibility.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/beiwe-adolescent-feasibility.md",
+   "row_id": null,
+   "title": "Huang et al. 2025 - Beiwe digital phenotyping in adolescents with bipolar disorder over 18 months, N=48",
+   "weight": "primary",
+   "reason": "Adolescents with bipolar disorder",
+   "doi": "10.1371/journal.pdig.0000883"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/beiwe-inpatient-suicide-pilot.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/beiwe-inpatient-suicide-pilot.md",
+   "row_id": null,
+   "title": "Wang et al. 2021 - Inpatient EMA of suicidal thinking to predict post-discharge suicide attempts, N=83",
+   "weight": "primary",
+   "reason": "Suicidal thinking and post-discharge attempts",
+   "doi": "10.1001/jamanetworkopen.2021.0591"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/beiwe-nurses-health-study-burst.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/beiwe-nurses-health-study-burst.md",
+   "row_id": null,
+   "title": "Yi et al. 2025 - Beiwe 8-day intensive burst inside the Nurses' Health Study II, N=181, uncompensated",
+   "weight": "primary",
+   "reason": "Psychological well-being measurement",
+   "doi": "10.2196/71375"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/beiwe-schizophrenia-state-clinic-pilot.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/beiwe-schizophrenia-state-clinic-pilot.md",
+   "row_id": null,
+   "title": "Torous, Barnett and Staples 2017 to 2018 - Beiwe's first schizophrenia pilot, 17 outpatients, no payment for a",
+   "weight": "primary",
+   "reason": "Outpatients with schizophrenia",
+   "doi": "10.1038/s41746-018-0022-8"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/beiwe-spinal-cord-injury-incentives.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/beiwe-spinal-cord-injury-incentives.md",
+   "row_id": null,
+   "title": "Mercier et al. 2020 - Beiwe after spinal cord injury: retention before vs. after a financial incentive was int",
+   "weight": "primary",
+   "reason": "Depression and psychosocial well-being after injury",
+   "doi": "10.1097/phm.0000000000001506"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/beiwe-stroke-tia-mood-2024-window.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/beiwe-stroke-tia-mood-2024-window.md",
+   "row_id": null,
+   "title": "Zawada et al. 2025 - Beiwe after ischemic stroke and TIA, Mayo Clinic Arizona, 54 enrolled, the first Beiwe wi",
+   "weight": "primary",
+   "reason": "Mood prediction after stroke or TIA",
+   "doi": "10.1016/j.mcpdig.2025.100240"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/beiwe-transdiagnostic-outpatient-completeness.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/beiwe-transdiagnostic-outpatient-completeness.md",
+   "row_id": null,
+   "title": "Pellegrini et al. 2022 - Beiwe across four diagnostic groups, 8 weeks, paid and visit-supported, N=45",
+   "weight": "primary",
+   "reason": "Depression, bipolar, schizophrenia and controls",
+   "doi": "10.1002/brb3.2077"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/beiwe-type-2-diabetes-feasibility.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/beiwe-type-2-diabetes-feasibility.md",
+   "row_id": null,
+   "title": "McInerney et al. 2024 - Beiwe feasibility, tolerability and user experience in type 2 diabetes, N=85 over 2 mo",
+   "weight": "secondary",
+   "reason": "Mood study nested; diabetes cohort",
+   "doi": "10.1186/s44247-024-00116-6"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/connect-multi-wearable-psychosis.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/connect-multi-wearable-psychosis.md",
+   "row_id": null,
+   "title": "Bladon et al. 2026 - CONNECT nested pilot: Fitbit vs Apple Watch vs Samsung Galaxy Watch in psychosis, N=105 o",
+   "weight": "primary",
+   "reason": "Schizophrenia-spectrum relapse monitoring",
+   "doi": "10.2196/86049"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/dp-schizophrenia-tolerability.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/dp-schizophrenia-tolerability.md",
+   "row_id": null,
+   "title": "Raugh et al. 2021 - Digital phenotyping adherence, feasibility and tolerability in outpatients with schizophre",
+   "weight": "primary",
+   "reason": "Outpatients with schizophrenia",
+   "doi": "10.1016/j.jpsychires.2021.04.022"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/geneactiv-beiwe-college-year-deep-phenotyping.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/geneactiv-beiwe-college-year-deep-phenotyping.md",
+   "row_id": null,
+   "title": "Vidal Bustamante et al. 2022 - GENEActiv wrist actigraphy plus Beiwe daily surveys across a full academic year",
+   "weight": "primary",
+   "reason": "Student affect and stress across a year",
+   "doi": "10.1038/s41598-022-05331-7"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/geneactiv-inpatient-psychiatry-sleep-reporting.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/geneactiv-inpatient-psychiatry-sleep-reporting.md",
+   "row_id": null,
+   "title": "Culhane et al. 2026 - GENEActiv sleep and activity reports on a 21-bed psychiatric inpatient unit, 155 admissi",
+   "weight": "secondary",
+   "reason": "Psychiatric inpatients; sleep and activity reports",
+   "doi": "10.2196/88466"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/lamp-schizophrenia-cognition-unpaid.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/lamp-schizophrenia-cognition-unpaid.md",
+   "row_id": null,
+   "title": "Liu et al. 2019 - LAMP app cognitive assessments in schizophrenia, unpaid, 12 weeks: patients engaged 3× more ",
+   "weight": "primary",
+   "reason": "Schizophrenia cognition assessment",
+   "doi": "10.1016/j.scog.2019.100144"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/lifedata-post-hospital-suicide-ema.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/lifedata-post-hospital-suicide-ema.md",
+   "row_id": null,
+   "title": "Nock et al. 2026 - LifeData EMA after psychiatric emergency or inpatient presentation, 6 prompts a day for 84 ",
+   "weight": "primary",
+   "reason": "Post-discharge suicidal thoughts and behaviours",
+   "doi": "10.1037/abn0001117"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/metricwire-beiwe-bdd-remote-ema-passive.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/metricwire-beiwe-bdd-remote-ema-passive.md",
+   "row_id": null,
+   "title": "Weingarden et al. 2025 and 2026 - MetricWire EMA plus Beiwe passive sensing in a nationally recruited body dys",
+   "weight": "primary",
+   "reason": "Body dysmorphic disorder with suicidality",
+   "doi": "10.1016/j.invent.2025.100833"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/metricwire-post-discharge-ema-reactivity.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/metricwire-post-discharge-ema-reactivity.md",
+   "row_id": null,
+   "title": "Spangenberg et al. 2026 - Reactivity and feasibility of 7-month post-discharge EMA of suicidality (MetricWire ",
+   "weight": "primary",
+   "reason": "Post-discharge suicidality EMA",
+   "doi": "10.3389/fpsyt.2026.1744947"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/metricwire-sgm-youth-ema-feasibility.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/metricwire-sgm-youth-ema-feasibility.md",
+   "row_id": null,
+   "title": "Clark et al. 2025 - Community-codesigned EMA of minority stress and suicidal ideation in SGM youth (MetricWire",
+   "weight": "primary",
+   "reason": "Minority stress and suicidal ideation in youth",
+   "doi": "10.1371/journal.pone.0330204"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/mindlamp-global-cognitive-multisite.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/mindlamp-global-cognitive-multisite.md",
+   "row_id": null,
+   "title": "Castillo et al. 2025 - mindLAMP remote cognitive assessment across India and the US, N=56 over 30 days",
+   "weight": "primary",
+   "reason": "Schizophrenia and schizoaffective disorder",
+   "doi": "10.1038/s41537-025-00660-8"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/mindlamp-relapse-3site.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/mindlamp-relapse-3site.md",
+   "row_id": null,
+   "title": "Cohen et al. 2023 - SHARP: mindLAMP relapse prediction across three sites in two countries, N=132",
+   "weight": "primary",
+   "reason": "Schizophrenia relapse prediction",
+   "doi": "10.1038/s41537-023-00332-5"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/mpath-avatar2-esm-engagement.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/mpath-avatar2-esm-engagement.md",
+   "row_id": null,
+   "title": "Dennard et al. 2025 - ESM engagement inside the AVATAR2 psychosis trial (m-Path), N=134 of 207",
+   "weight": "primary",
+   "reason": "Psychosis trial, auditory hallucinations",
+   "doi": "10.2196/78204"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/mpath-nssi-ema-benefits-challenges.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/mpath-nssi-ema-benefits-challenges.md",
+   "row_id": null,
+   "title": "Bonnier et al. 2025 - Benefits and challenges of 28-day EMA in treatment-seeking self-injury patients (m-Path)",
+   "weight": "primary",
+   "reason": "Non-suicidal self-injury in treatment",
+   "doi": "10.1016/j.ijchp.2025.100618"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/radar-base-treatment-engagement.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/radar-base-treatment-engagement.md",
+   "row_id": null,
+   "title": "de Angel et al. 2023 - RMT engagement during active psychological treatment for depression, N=66, 7 months",
+   "weight": "primary",
+   "reason": "Depression treatment engagement",
+   "doi": "10.2196/42866"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/radar-mdd-longterm-engagement.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/radar-mdd-longterm-engagement.md",
+   "row_id": null,
+   "title": "Zhang et al. 2023 - RADAR-MDD long-term retention and engagement patterns, N=614, up to 94 weeks",
+   "weight": "primary",
+   "reason": "Recurrent major depression",
+   "doi": "10.1038/s41746-023-00749-3"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/radar-mdd-recruitment-retention.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/radar-mdd-recruitment-retention.md",
+   "row_id": null,
+   "title": "Matcham et al. 2022 - RADAR-MDD: recruitment, retention and data availability, N=623, 3 countries, up to 24 mo",
+   "weight": "primary",
+   "reason": "Recurrent major depression",
+   "doi": "10.1186/s12888-022-03753-1"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/sleepsight-schizophrenia-rest-activity.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/sleepsight-schizophrenia-rest-activity.md",
+   "row_id": null,
+   "title": "Meyer et al. 2018 - Sleepsight: 8-week continuous rest-activity monitoring in community schizophrenia, N=15",
+   "weight": "primary",
+   "reason": "Schizophrenia rest-activity monitoring",
+   "doi": "10.2196/mhealth.8292"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/whoop-mental-health-survey-engagement.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/whoop-mental-health-survey-engagement.md",
+   "row_id": null,
+   "title": "Presby et al. 2025 - WHOOP in-app mental-health surveys, 181,574 members over 13 months",
+   "weight": "primary",
+   "reason": "In-app mental-health surveys",
+   "doi": "10.2196/64955"
+  },
+  {
+   "key": "10.1007/s11920-019-1043-y",
+   "kind": "paper",
+   "module": 4,
+   "file": "module-04-methods-and-reviews/literature-library.md",
+   "row_id": "L092",
+   "title": "Smartphone sleep tracking in depression, anxiety and psychosis",
+   "weight": "primary",
+   "reason": "Mental illness sleep"
+  },
+  {
+   "key": "10.1038/npp.2016.7",
+   "kind": "paper",
+   "module": 4,
+   "file": "module-04-methods-and-reviews/literature-library.md",
+   "row_id": "L111",
+   "title": "Digital phenotyping for behavioral and mental health",
+   "weight": "primary",
+   "reason": "Mental health"
+  },
+  {
+   "key": "10.1038/s41386-020-0771-3",
+   "kind": "paper",
+   "module": 4,
+   "file": "module-04-methods-and-reviews/literature-library.md",
+   "row_id": "L090",
+   "title": "Opportunities and challenges in digital phenotyping data",
+   "weight": "secondary",
+   "reason": "Neuropsychiatry venue; general scope"
+  },
+  {
+   "key": "10.1038/s41537-018-0048-6",
+   "kind": "paper",
+   "module": 4,
+   "file": "module-04-methods-and-reviews/literature-library.md",
+   "row_id": "L102",
+   "title": "Validating digital tools in schizophrenia and mental health",
+   "weight": "primary",
+   "reason": "Schizophrenia and mental health"
+  },
+  {
+   "key": "10.1038/s41746-019-0123-z",
+   "kind": "paper",
+   "module": 4,
+   "file": "module-04-methods-and-reviews/literature-library.md",
+   "row_id": "L095",
+   "title": "Digital technology for brain disorders",
+   "weight": "secondary",
+   "reason": "Brain disorders including psychiatric"
+  },
+  {
+   "key": "10.1038/s41746-019-0166-1",
+   "kind": "paper",
+   "module": 4,
+   "file": "module-04-methods-and-reviews/literature-library.md",
+   "row_id": "M4-033",
+   "title": "Toward clinical digital phenotyping",
+   "weight": "secondary",
+   "reason": "Clinical, largely psychiatric framing"
+  },
+  {
+   "key": "10.1038/s41746-021-00548-8",
+   "kind": "paper",
+   "module": 4,
+   "file": "module-04-methods-and-reviews/literature-library.md",
+   "row_id": "M4-034",
+   "title": "Passive monitoring of depression: systematic review",
+   "weight": "primary",
+   "reason": "Depression"
+  },
+  {
+   "key": "10.1038/tp.2017.25",
+   "kind": "paper",
+   "module": 4,
+   "file": "module-04-methods-and-reviews/literature-library.md",
+   "row_id": "L110",
+   "title": "RDoC and digital phenotyping",
+   "weight": "primary",
+   "reason": "Psychiatry research framework"
+  },
+  {
+   "key": "10.1176/appi.prcp.20200029",
+   "kind": "paper",
+   "module": 4,
+   "file": "module-04-methods-and-reviews/literature-library.md",
+   "row_id": "L086",
+   "title": "Ethics consensus for digital monitoring of people at risk of suicide",
+   "weight": "primary",
+   "reason": "Suicide risk monitoring"
+  },
+  {
+   "key": "10.2196/14475",
+   "kind": "paper",
+   "module": 4,
+   "file": "module-04-methods-and-reviews/literature-library.md",
+   "row_id": "M4-001",
+   "title": "ESM compliance across severe mental disorders (meta-analysis)",
+   "weight": "primary",
+   "reason": "Severe mental disorders"
+  },
+  {
+   "key": "10.2196/27343",
+   "kind": "paper",
+   "module": 4,
+   "file": "module-04-methods-and-reviews/literature-library.md",
+   "row_id": "M4-015",
+   "title": "Ethical digital phenotyping tools for mental health (Delphi)",
+   "weight": "primary",
+   "reason": "Mental health applications"
+  },
+  {
+   "key": "10.2196/69686",
+   "kind": "paper",
+   "module": 4,
+   "file": "module-04-methods-and-reviews/literature-library.md",
+   "row_id": "M4-036",
+   "title": "Smartphone sensors for depression indication (umbrella review)",
+   "weight": "primary",
+   "reason": "Depression"
+  },
+  {
+   "key": "10.2196/79501",
+   "kind": "paper",
+   "module": 4,
+   "file": "module-04-methods-and-reviews/literature-library.md",
+   "row_id": "M4-037",
+   "title": "Ambulatory assessment and mood monitoring recommendations",
+   "weight": "primary",
+   "reason": "Mood monitoring"
+  },
+  {
+   "key": "10.2196/83765",
+   "kind": "paper",
+   "module": 4,
+   "file": "module-04-methods-and-reviews/literature-library.md",
+   "row_id": "M4-005",
+   "title": "Attrition in mood monitoring for depression and bipolar disorder",
+   "weight": "primary",
+   "reason": "Depression and bipolar monitoring"
+  },
+  {
+   "key": "10.2196/84146",
+   "kind": "paper",
+   "module": 4,
+   "file": "module-04-methods-and-reviews/literature-library.md",
+   "row_id": "M4-038",
+   "title": "Smartphone digital phenotyping across health conditions",
+   "weight": "secondary",
+   "reason": "Mental and substance use among conditions"
+  },
+  {
+   "key": "10.3389/fpsyt.2021.706655",
+   "kind": "paper",
+   "module": 4,
+   "file": "module-04-methods-and-reviews/literature-library.md",
+   "row_id": "L073",
+   "title": "Decision models and technology for psychiatric biomarkers",
+   "weight": "primary",
+   "reason": "Psychiatric biomarkers"
+  }
+ ]
 }
