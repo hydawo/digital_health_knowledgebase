@@ -1,7 +1,6 @@
 # Module 5: Measurement Science by Domain
 
-**Status:** created 2026-10-22. Two domains: [Sleep](sleep/) and [Cardiac](cardiac/). Sleep was seeded the same day with 58 papers (17 PDFs on disk, 5 free to read but not redistributable, 28 free but needing a hand download, 8 paywalled) and a hub linking 49 tagged papers and profiles in Modules 1 to 4. Cardiac was seeded the same day with 68 papers (18 PDFs on disk, 23 free to read but not redistributable, 17 needing a hand download, 10 paywalled) and a hub linking 62 tagged papers and profiles. Physical activity and fitness, and
-possibly mental health, follow one at a time.
+**Status:** created 2026-10-22. Four domains: [Sleep](sleep/), [Cardiac](cardiac/), [Physical activity and fitness](activity/) and [Mental health](mental-health/). Sleep was seeded the same day with 58 papers (17 PDFs on disk, 5 free to read but not redistributable, 28 free but needing a hand download, 8 paywalled) and a hub linking 49 tagged papers and profiles in Modules 1 to 4. Cardiac was seeded the same day with 68 papers (18 PDFs on disk, 23 free to read but not redistributable, 17 needing a hand download, 10 paywalled) and a hub linking 62 tagged papers and profiles. Physical activity and fitness was seeded on 2026-10-23 with 66 papers (20 PDFs on disk, 14 free to read but not redistributable, 23 needing a hand download, 9 paywalled) and a hub linking 66 tagged papers and profiles. Mental health is being seeded.
 
 ## What this module is
 
@@ -54,5 +53,5 @@ keeps one home per paper. Decision recorded in `ROADMAP.md`, item 6.
 |---|---|---|
 | Sleep | Seeded 2026-10-22: 58 papers in 7 sections; [hub](sleep/hub.md) | [`sleep/literature-library.md`](sleep/literature-library.md) |
 | Cardiac | Seeded 2026-10-22: 68 papers in 7 sections; [hub](cardiac/hub.md) | [`cardiac/literature-library.md`](cardiac/literature-library.md) |
-| Physical activity and fitness | Not started | |
-| Mental health | Not decided | |
+| Physical activity and fitness | Seeded 2026-10-23: 66 papers in 7 sections; [hub](activity/hub.md) | [`activity/literature-library.md`](activity/literature-library.md) |
+| Mental health | Seeding, started 2026-10-23 | [`mental-health/literature-library.md`](mental-health/literature-library.md) |

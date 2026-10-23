@@ -2,6 +2,15 @@
 
 ---
 
+## 2026-10-23 - Module 5 Physical activity and fitness seeded
+
+- **Module:** 5, Physical activity and fitness (`activity/`): steps, energy expenditure, sedentary behaviour, 24-hour movement, cardiorespiratory fitness. Same method as Sleep and Cardiac.
+- **Dedup list fixed:** now built from every module's `sources.md` and Module 5 catalogues as well as the libraries, and JMIR URL-only citations are converted to `10.2196/<id>` DOIs (Fuller 2020 had slipped through on Cardiac). Agents were also told to grep the repo by title, and to leave out any number not read in this pass.
+- **Catalogue:** 66 papers in 7 sections (consensus and guidance 12, evaluation frameworks and standards 12, reporting and data processing 6, metrics 15, algorithms 11, pooled accuracy 6, physiological limits 4). 20 PDFs stored, each with a Creative Commons statement in the file; 14 free to read but not redistributable; 23 CC but blocked to scripts or disallowed by robots.txt (JMIR /PDF), listed in `activity/_hand-download.md`, manual sweep #12; 9 paywalled, including CTA-2056-A and CTA-2074. The INTERLIVE VO2max meta-analysis and expert statement (Molina-Garcia 2022) is under pooled accuracy.
+- **Already in the KB, not re-catalogued:** Fuller 2020, Chevance 2022 and Shcherbina 2017 (Module 1); GGIR and Willetts 2018 (Sleep); oak, walking recognition and the smartphone HAR review (Module 2); the INTERLIVE step and heart rate statements (Module 4).
+- **Tagging:** 66 entries (Module 1: 26 including 7 profiles; Module 2: 18 including Beiwe; Module 3: 17 profiles; Module 4: 5). L019, L026 and L051 tagged from title only.
+- **Uncertain:** CTA-2056-A edition year (CTA says 2019, the ANSI store 2021). Two stored PDFs are author or pre-proof versions (Gill, Giurgiu 2025), both CC.
+
 ## 2026-10-22 (latest) - Module 5 Cardiac seeded
 
 - **Module:** 5, Cardiac (heart rate, HRV, wearable ECG, PPG arrhythmia detection, cuffless BP). Same method as Sleep: two search lanes and one tagging agent.

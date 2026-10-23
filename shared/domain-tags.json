@@ -8,6 +8,14 @@
   "cardiac": {
    "label": "Cardiac",
    "started": "2026-10-22"
+  },
+  "activity": {
+   "label": "Physical activity and fitness",
+   "started": "2026-10-23"
+  },
+  "mental-health": {
+   "label": "Mental health",
+   "started": "2026-10-23"
   }
  },
  "sleep": [
@@ -1142,5 +1150,685 @@
    "weight": "primary",
    "reason": "PPG heart rate bias by skin tone"
   }
- ]
+ ],
+ "activity": [
+  {
+   "key": "10.1016/j.ebiom.2024.105036",
+   "kind": "paper",
+   "module": 1,
+   "file": "module-01-wearables/literature-library.md",
+   "row_id": "L044",
+   "title": "Upper limb movements as digital biomarkers in ALS",
+   "weight": "primary",
+   "reason": "Wearable accelerometer movement in free living; borderline"
+  },
+  {
+   "key": "10.1038/s41746-025-02238-1",
+   "kind": "paper",
+   "module": 1,
+   "file": "module-01-wearables/literature-library.md",
+   "row_id": null,
+   "title": "Apple Watch living systematic review",
+   "weight": "secondary",
+   "reason": "Steps, EE and VO2 among 14 metrics"
+  },
+  {
+   "key": "10.1088/1361-6579/adca82",
+   "kind": "paper",
+   "module": 1,
+   "file": "module-01-wearables/literature-library.md",
+   "row_id": null,
+   "title": "Apple Watch accuracy meta-analysis (HR, steps, EE)",
+   "weight": "secondary",
+   "reason": "Pools steps and energy expenditure error"
+  },
+  {
+   "key": "10.1088/2752-5309/ae7faf",
+   "kind": "paper",
+   "module": 1,
+   "file": "module-01-wearables/research-library-wearables.md",
+   "row_id": null,
+   "title": "Stress and activity changes after 2025 LA wildfire (Oura)",
+   "weight": "secondary",
+   "reason": "Sedentary time change is a reported outcome"
+  },
+  {
+   "key": "10.1093/sleep/zsaf318",
+   "kind": "paper",
+   "module": 1,
+   "file": "module-01-wearables/literature-library.md",
+   "row_id": null,
+   "title": "Circadian behaviours and cardiorespiratory fitness (WHOOP)",
+   "weight": "primary",
+   "reason": "Cardiorespiratory fitness is the outcome"
+  },
+  {
+   "key": "10.1101/2024.01.04.24300784",
+   "kind": "paper",
+   "module": 1,
+   "file": "module-01-wearables/literature-library.md",
+   "row_id": null,
+   "title": "WHOOP accuracy and utility systematic review",
+   "weight": "secondary",
+   "reason": "Covers strain and exercise metrics; borderline"
+  },
+  {
+   "key": "10.1101/2025.09.20.25336210",
+   "kind": "paper",
+   "module": 1,
+   "file": "module-01-wearables/literature-library.md",
+   "row_id": "L003",
+   "title": "Circadian rest-activity rhythms as late-life biomarkers",
+   "weight": "secondary",
+   "reason": "Rest-activity rhythms from accelerometry; borderline"
+  },
+  {
+   "key": "10.1186/s12874-023-01868-x",
+   "kind": "paper",
+   "module": 1,
+   "file": "module-01-wearables/literature-library.md",
+   "row_id": null,
+   "title": "Oura energy expenditure and steps validation",
+   "weight": "primary",
+   "reason": "Step and energy expenditure validity of Oura"
+  },
+  {
+   "key": "10.1186/s12916-026-05192-1",
+   "kind": "paper",
+   "module": 1,
+   "file": "module-01-wearables/research-library-wearables.md",
+   "row_id": null,
+   "title": "24h movement behaviours in students vs adults (Oura)",
+   "weight": "primary",
+   "reason": "Sedentary, activity and sleep minutes per day"
+  },
+  {
+   "key": "10.1186/s12916-026-05276-y",
+   "kind": "paper",
+   "module": 1,
+   "file": "module-01-wearables/research-library-wearables.md",
+   "row_id": null,
+   "title": "Depression and anxiety severity in Oura metrics",
+   "weight": "secondary",
+   "reason": "Daytime activity is one of several outcomes"
+  },
+  {
+   "key": "10.1186/s12984-025-01829-z",
+   "kind": "paper",
+   "module": 1,
+   "file": "module-01-wearables/literature-library.md",
+   "row_id": "L007",
+   "title": "Prescribed exercises quantify upper limb function (ALS)",
+   "weight": "secondary",
+   "reason": "Wrist accelerometry of prescribed exercises; borderline"
+  },
+  {
+   "key": "10.1371/journal.pdig.0001284",
+   "kind": "paper",
+   "module": 1,
+   "file": "module-01-wearables/literature-library.md",
+   "row_id": null,
+   "title": "Alcohol effects on HR, sleep and physical activity (WHOOP)",
+   "weight": "secondary",
+   "reason": "Physical activity is one of three outcomes"
+  },
+  {
+   "key": "10.1371/journal.pone.0323741",
+   "kind": "paper",
+   "module": 1,
+   "file": "module-01-wearables/literature-library.md",
+   "row_id": null,
+   "title": "Apple Watch VO2 max validation",
+   "weight": "primary",
+   "reason": "VO2 max estimate vs calorimetry"
+  },
+  {
+   "key": "10.3233/shti260986",
+   "kind": "paper",
+   "module": 1,
+   "file": "module-01-wearables/research-library-wearables.md",
+   "row_id": null,
+   "title": "HiGHmed Apple Watch dashboard (HR and steps)",
+   "weight": "secondary",
+   "reason": "Daily steps tracked against clinical decline"
+  },
+  {
+   "key": "10.3389/fdgth.2026.1820224",
+   "kind": "paper",
+   "module": 1,
+   "file": "module-01-wearables/research-library-wearables.md",
+   "row_id": null,
+   "title": "Wrist-worn physical activity trackers systematic review",
+   "weight": "primary",
+   "reason": "Accuracy of activity trackers across 47 studies"
+  },
+  {
+   "key": "10.3390/jpm7020003",
+   "kind": "paper",
+   "module": 1,
+   "file": "module-01-wearables/literature-library.md",
+   "row_id": null,
+   "title": "Wrist-worn HR and energy expenditure accuracy, 7 devices",
+   "weight": "primary",
+   "reason": "Energy expenditure accuracy across devices"
+  },
+  {
+   "key": "10.3390/s26175625",
+   "kind": "paper",
+   "module": 1,
+   "file": "module-01-wearables/research-library-wearables.md",
+   "row_id": null,
+   "title": "Pilgrim tiredness from smartwatch physiology and mobility",
+   "weight": "secondary",
+   "reason": "Mobility indicators are model inputs"
+  },
+  {
+   "key": "10.7759/cureus.115385",
+   "kind": "paper",
+   "module": 1,
+   "file": "module-01-wearables/research-library-wearables.md",
+   "row_id": null,
+   "title": "Oura after deep brain stimulation (case report)",
+   "weight": "secondary",
+   "reason": "Activity score and steps tracked; borderline"
+  },
+  {
+   "key": "module-01-wearables/literature/apple-watch/2021-apple-whitepaper-vo2max-cardio-fitness.pdf",
+   "kind": "paper",
+   "module": 1,
+   "file": "module-01-wearables/literature-library.md",
+   "row_id": null,
+   "title": "Apple Watch cardio fitness (VO2 max) white paper",
+   "weight": "primary",
+   "reason": "VO2 max estimation development and validation"
+  },
+  {
+   "key": "module-01-wearables/profiles/ametris-actigraph.md",
+   "kind": "m1-profile",
+   "module": 1,
+   "file": "module-01-wearables/profiles/ametris-actigraph.md",
+   "row_id": null,
+   "title": "Ametris (formerly ActiGraph), CentrePoint, ActiGraph LEAP, Insight Watch",
+   "weight": "primary",
+   "reason": "Research accelerometer, raw acceleration and counts"
+  },
+  {
+   "key": "module-01-wearables/profiles/apple-watch-healthkit.md",
+   "kind": "m1-profile",
+   "module": 1,
+   "file": "module-01-wearables/profiles/apple-watch-healthkit.md",
+   "row_id": null,
+   "title": "Apple Watch / Apple Health / HealthKit / SensorKit",
+   "weight": "secondary",
+   "reason": "Steps, VO2 max, active energy; EE poor"
+  },
+  {
+   "key": "module-01-wearables/profiles/axivity-geneactiv.md",
+   "kind": "m1-profile",
+   "module": 1,
+   "file": "module-01-wearables/profiles/axivity-geneactiv.md",
+   "row_id": null,
+   "title": "Axivity (AX3 / AX6) and GENEActiv, open research-grade accelerometers",
+   "weight": "primary",
+   "reason": "Research raw accelerometers for activity"
+  },
+  {
+   "key": "module-01-wearables/profiles/empatica.md",
+   "kind": "m1-profile",
+   "module": 1,
+   "file": "module-01-wearables/profiles/empatica.md",
+   "row_id": null,
+   "title": "Empatica",
+   "weight": "secondary",
+   "reason": "Raw accelerometry and activity counts"
+  },
+  {
+   "key": "module-01-wearables/profiles/fitbit-google.md",
+   "kind": "m1-profile",
+   "module": 1,
+   "file": "module-01-wearables/profiles/fitbit-google.md",
+   "row_id": null,
+   "title": "Fitbit / Google (Fitbit Web API → Google Health API)",
+   "weight": "secondary",
+   "reason": "Steps, Active Zone Minutes and VO2 max in API"
+  },
+  {
+   "key": "module-01-wearables/profiles/garmin.md",
+   "kind": "m1-profile",
+   "module": 1,
+   "file": "module-01-wearables/profiles/garmin.md",
+   "row_id": null,
+   "title": "Garmin",
+   "weight": "secondary",
+   "reason": "Steps, VO2 max estimates and activity API"
+  },
+  {
+   "key": "module-01-wearables/profiles/samsung.md",
+   "kind": "m1-profile",
+   "module": 1,
+   "file": "module-01-wearables/profiles/samsung.md",
+   "row_id": null,
+   "title": "Samsung (Galaxy Watch / Galaxy Ring / Samsung Health SDK Suite)",
+   "weight": "secondary",
+   "reason": "Raw accelerometer SDK and step validity"
+  },
+  {
+   "key": "10.1001/jamanetworkopen.2025.32488",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L019",
+   "title": "Smartphone measures of functional status in advanced cancer",
+   "weight": "secondary",
+   "reason": "Mobility-type measures inferred; abstract unavailable"
+  },
+  {
+   "key": "10.1001/jamasurg.2019.4702",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L093",
+   "title": "Smartphone recovery metrics after cancer surgery",
+   "weight": "primary",
+   "reason": "Postoperative physical activity from sensors"
+  },
+  {
+   "key": "10.1002/acn3.52050",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L041",
+   "title": "Tracking ALS progression with smartphone sensor data",
+   "weight": "primary",
+   "reason": "Physical activity and mobility are outcomes"
+  },
+  {
+   "key": "10.1002/acn3.770",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L097",
+   "title": "Smartphone digital phenotyping of ALS progression",
+   "weight": "secondary",
+   "reason": "Passive sensor movement features; borderline"
+  },
+  {
+   "key": "10.1002/mus.27110",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L082",
+   "title": "Smartphone data in ALS during COVID-19",
+   "weight": "secondary",
+   "reason": "Passive behavioural change incl. mobility; borderline"
+  },
+  {
+   "key": "10.1038/s41537-023-00383-8",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L051",
+   "title": "Mobility, social activity, loneliness in SMI during COVID-19",
+   "weight": "secondary",
+   "reason": "GPS-based mobility; abstract unavailable"
+  },
+  {
+   "key": "10.1038/s41746-022-00745-z",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L058",
+   "title": "One-size-fits-most walking recognition",
+   "weight": "primary",
+   "reason": "Walking recognition from accelerometers"
+  },
+  {
+   "key": "10.1093/biostatistics/kxy059",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L099",
+   "title": "Inferring mobility measures from GPS with missing data",
+   "weight": "secondary",
+   "reason": "GPS-only mobility method"
+  },
+  {
+   "key": "10.1097/sla.0000000000004487",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L087",
+   "title": "Postoperative physical activity and decision conflict",
+   "weight": "primary",
+   "reason": "Smartphone accelerometer physical activity outcome"
+  },
+  {
+   "key": "10.1101/2023.03.28.23287844",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L055",
+   "title": "Open-source step counting validation (preprint)",
+   "weight": "primary",
+   "reason": "Step count algorithm validation"
+  },
+  {
+   "key": "10.1159/000539989",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L026",
+   "title": "Perioperative mobility in acromegaly",
+   "weight": "secondary",
+   "reason": "Mobility via smartphone; abstract unavailable"
+  },
+  {
+   "key": "10.1227/neu.0000000000003051",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L040",
+   "title": "Mobility in glioblastoma by digital phenotyping",
+   "weight": "secondary",
+   "reason": "GPS-based mobility trends"
+  },
+  {
+   "key": "10.1245/s10434-020-09004-5",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L088",
+   "title": "GPS recovery assessment after breast surgery",
+   "weight": "secondary",
+   "reason": "GPS-based mobility only"
+  },
+  {
+   "key": "10.2196/47646",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L049",
+   "title": "Open-source smartphone step counting validation",
+   "weight": "primary",
+   "reason": "Step count algorithm validation"
+  },
+  {
+   "key": "10.3171/2021.2.spine202181",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L078",
+   "title": "GPS signatures after spine surgery",
+   "weight": "secondary",
+   "reason": "GPS-based mobility only"
+  },
+  {
+   "key": "10.3390/s20133706",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L091",
+   "title": "Augmented movelet activity classification",
+   "weight": "primary",
+   "reason": "Smartphone activity classification"
+  },
+  {
+   "key": "10.3390/s22072618",
+   "kind": "paper",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/literature-library.md",
+   "row_id": "L064",
+   "title": "Movelets activity recognition, accelerometer plus gyroscope",
+   "weight": "primary",
+   "reason": "Smartphone activity recognition"
+  },
+  {
+   "key": "module-02-digital-phenotyping/profiles/beiwe.md",
+   "kind": "m2-profile",
+   "module": 2,
+   "file": "module-02-digital-phenotyping/profiles/beiwe.md",
+   "row_id": null,
+   "title": "Beiwe",
+   "weight": "secondary",
+   "reason": "Forest Oak outputs walking time, steps, cadence"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/actigraph-able-gerotherapeutic-trial-adherence.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/actigraph-able-gerotherapeutic-trial-adherence.md",
+   "row_id": null,
+   "title": "Lu et al. 2026 - ActiGraph wGT3X-BT in the ABLE gerotherapeutic trial, Singapore, N=120",
+   "weight": "primary",
+   "reason": "Research wrist accelerometer deployed for activity and sleep",
+   "doi": "10.1371/journal.pdig.0001691"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/actigraph-als-upper-limb-wear-time.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/actigraph-als-upper-limb-wear-time.md",
+   "row_id": null,
+   "title": "Straczkiewicz et al. 2024 - Bilateral wrist accelerometers in the ALS Research Collaborative, N=202: the wear-",
+   "weight": "primary",
+   "reason": "Free-living wrist accelerometry of upper-limb movement; borderline",
+   "doi": "10.1186/s12984-024-01514-7"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/allofus-fitbit-step-counts.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/allofus-fitbit-step-counts.md",
+   "row_id": null,
+   "title": "Master et al. 2022 - All of Us BYOD Fitbit cohort linked to EHR, N=6,042, median 4 years, 5.9 million person-d",
+   "weight": "primary",
+   "reason": "Fitbit daily step counts over years are the exposure",
+   "doi": "10.1038/s41591-022-02012-w"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/apple-heart-movement-study-retention.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/apple-heart-movement-study-retention.md",
+   "row_id": null,
+   "title": "Truslow et al. 2024 - Apple Heart & Movement Study, first-year retention and engagement in an 82,809-person Ap",
+   "weight": "primary",
+   "reason": "Activity and mobility cohort on Apple Watch; retention focus",
+   "doi": "10.1038/s41746-024-01187-5"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/apple-watch-myrhythmwatch-dementia-caregivers.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/apple-watch-myrhythmwatch-dementia-caregivers.md",
+   "row_id": null,
+   "title": "Stahl et al. 2026 - Apple Watch rest-activity rhythm monitoring in dementia caregivers and people with dementi",
+   "weight": "secondary",
+   "reason": "Rest-activity rhythm from raw Apple Watch accelerometry",
+   "doi": "10.2196/88773"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/beiwe-actigraph-modus-als-progression.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/beiwe-actigraph-modus-als-progression.md",
+   "row_id": null,
+   "title": "Johnson et al. 2023 - Beiwe + ActiGraph Insight Watch vs. Modus StepWatch in ALS: dual-form-factor wear compli",
+   "weight": "primary",
+   "reason": "StepWatch and ActiGraph step and activity outcomes in ALS",
+   "doi": "10.1038/s41746-023-00778-y"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/beiwe-chronic-disease-substudy.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/beiwe-chronic-disease-substudy.md",
+   "row_id": null,
+   "title": "Yi et al. 2024 - Beiwe substudy embedded in the Nurses' Health Study 3 and Growing Up Today Study, N=2,394, 1 ",
+   "weight": "secondary",
+   "reason": "Beiwe accelerometer and activity surveys among behavioural drivers",
+   "doi": "10.2196/55170"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/beiwe-fitbit-gynecologic-cancer-hope.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/beiwe-fitbit-gynecologic-cancer-hope.md",
+   "row_id": null,
+   "title": "Wright et al. 2018 - HOPE pilot: Beiwe + two Fitbits in gynecologic cancer, N=10, 30 days, no financial incent",
+   "weight": "primary",
+   "reason": "Fitbit step and activity data alongside Beiwe; borderline",
+   "doi": "10.1200/cci.17.00149"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/beiwe-spine-disease-mobility.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/beiwe-spine-disease-mobility.md",
+   "row_id": null,
+   "title": "Cote et al. 2019 - Beiwe in clinic-recruited spine disease: the smartphone-ownership exclusion and a 43% daily",
+   "weight": "secondary",
+   "reason": "GPS-derived mobility metrics against pain; GPS-only",
+   "doi": "10.1016/j.wneu.2019.01.297"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/connect-multi-wearable-psychosis.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/connect-multi-wearable-psychosis.md",
+   "row_id": null,
+   "title": "Bladon et al. 2026 - CONNECT nested pilot: Fitbit vs Apple Watch vs Samsung Galaxy Watch in psychosis, N=105 o",
+   "weight": "secondary",
+   "reason": "Valid step-count days compared across three wearables",
+   "doi": "10.2196/86049"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/fitbit-actigraph-proudme-summer-camp-adolescents.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/fitbit-actigraph-proudme-summer-camp-adolescents.md",
+   "row_id": null,
+   "title": "Tan et al. 2026 - Fitbit Charge 6 and ActiGraph GT3X+ in the ProudMe summer obesity prevention pilot, adolesce",
+   "weight": "primary",
+   "reason": "Fitbit and ActiGraph activity in obesity prevention pilot",
+   "doi": "10.3389/fphys.2026.1914161"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/garmin-low-income-physical-activity.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/garmin-low-income-physical-activity.md",
+   "row_id": null,
+   "title": "Carlson et al. 2026 - Garmin Vívofit 4 + automated SMS (ActiveKC) in low-income Kansas City communities, N=114",
+   "weight": "primary",
+   "reason": "Garmin step-based physical activity intervention",
+   "doi": "10.2196/76991"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/garmin-nursing-home-dementia-one-year.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/garmin-nursing-home-dementia-one-year.md",
+   "row_id": null,
+   "title": "Boyle et al. 2026 - Garmin smartwatch over one year in nursing home residents with dementia, DIPH.DEM, N=11",
+   "weight": "primary",
+   "reason": "Wrist ENMO physical activity levels over one year",
+   "doi": "10.2196/95194"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/geneactiv-beiwe-college-year-deep-phenotyping.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/geneactiv-beiwe-college-year-deep-phenotyping.md",
+   "row_id": null,
+   "title": "Vidal Bustamante et al. 2022 - GENEActiv wrist actigraphy plus Beiwe daily surveys across a full academic year",
+   "weight": "secondary",
+   "reason": "Year of raw wrist accelerometry for behaviour",
+   "doi": "10.1038/s41598-022-05331-7"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/geneactiv-inpatient-psychiatry-sleep-reporting.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/geneactiv-inpatient-psychiatry-sleep-reporting.md",
+   "row_id": null,
+   "title": "Culhane et al. 2026 - GENEActiv sleep and activity reports on a 21-bed psychiatric inpatient unit, 155 admissi",
+   "weight": "secondary",
+   "reason": "Sleep and activity reports from wrist accelerometer",
+   "doi": "10.2196/88466"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/sleepsight-schizophrenia-rest-activity.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/sleepsight-schizophrenia-rest-activity.md",
+   "row_id": null,
+   "title": "Meyer et al. 2018 - Sleepsight: 8-week continuous rest-activity monitoring in community schizophrenia, N=15",
+   "weight": "secondary",
+   "reason": "Fitbit rest-activity profiles; borderline",
+   "doi": "10.2196/mhealth.8292"
+  },
+  {
+   "key": "module-03-applied-studies/profiles/withings-postop-remote-monitoring.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/withings-postop-remote-monitoring.md",
+   "row_id": null,
+   "title": "Jonker et al. 2021 - Remote home monitoring of older surgical oncology patients (Connecare: Fitbit + Withings)",
+   "weight": "secondary",
+   "reason": "Fitbit step counts monitored after surgery",
+   "doi": "10.1245/s10434-020-08705-1"
+  },
+  {
+   "key": "10.1016/j.ijmedinf.2022.104696",
+   "kind": "paper",
+   "module": 4,
+   "file": "module-04-methods-and-reviews/literature-library.md",
+   "row_id": "M4-039",
+   "title": "Reporting adherence, validity and PA of activity trackers",
+   "weight": "primary",
+   "reason": "Physical activity measures from trackers"
+  },
+  {
+   "key": "10.1038/s41746-021-00514-4",
+   "kind": "paper",
+   "module": 4,
+   "file": "module-04-methods-and-reviews/literature-library.md",
+   "row_id": "L071",
+   "title": "Smartphone human activity recognition systematic review",
+   "weight": "primary",
+   "reason": "Reviews activity recognition methods"
+  },
+  {
+   "key": "10.1111/sms.70143",
+   "kind": "paper",
+   "module": 4,
+   "file": "module-04-methods-and-reviews/literature-library.md",
+   "row_id": "M4-026",
+   "title": "Reporting of accelerometry in health research",
+   "weight": "primary",
+   "reason": "Accelerometer methods reporting guidance"
+  },
+  {
+   "key": "10.1136/bjsports-2020-103147",
+   "kind": "paper",
+   "module": 4,
+   "file": "module-04-methods-and-reviews/literature-library.md",
+   "row_id": "M4-022",
+   "title": "Validity of consumer step count: expert statement",
+   "weight": "primary",
+   "reason": "Step count validation checklist"
+  },
+  {
+   "key": "10.1186/s13063-021-05284-8",
+   "kind": "paper",
+   "module": 4,
+   "file": "module-04-methods-and-reviews/literature-library.md",
+   "row_id": "M4-009",
+   "title": "Missing accelerometer outcome data in trials",
+   "weight": "primary",
+   "reason": "Accelerometer-measured activity outcome handling"
+  }
+ ],
+ "mental-health": []
 }

@@ -22,6 +22,7 @@ put the newest at the bottom of its section.
 | 9 | Download five free Module 3 papers the publishers block to scripts, then run `/add-paper` on each: 10.1111/jgs.70726 (PACERS), 10.1016/j.gerinurse.2026.104269 (weighted blankets), 10.1002/pan.70309 (EmbracePlus, paediatric anaesthesia), 10.1177/03331024261492220 (EmbracePlus, migraine), 10.1111/acem.70408 (Apple Watch, older ED patients) | Rejected as `unobtainable` only because of bot checks | `module-03-applied-studies/_scan-queue.md` | none |
 | 10 | Download 28 free Module 5 sleep papers blocked to scripts (AASM, Oxford Sleep, PMC copies), save under the given names and flip their rows to Verified OA | Seeding pass could not fetch them | `module-05-measurement-science/sleep/_hand-download.md` | none |
 | 11 | Download 17 free Module 5 cardiac papers blocked to scripts (Wiley, OUP, PMC copies), check each is CC-licensed, save under the given names and flip their rows to Verified OA | Seeding pass could not fetch them | `module-05-measurement-science/cardiac/_hand-download.md` | none |
+| 12 | Download 23 free Module 5 activity papers blocked to scripts (JMIR, Springer/BMC, BMJ, Elsevier, PMC copies), check each is CC-licensed (four have only a repository listing as evidence), save under the given names and flip their rows to Verified OA | Seeding pass could not fetch them | `module-05-measurement-science/activity/_hand-download.md` | none |
 
 ## Vendor and author confirmations
 

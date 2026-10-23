@@ -24,7 +24,7 @@ for mod in ['module-01-wearables', 'module-02-digital-phenotyping']:
             papers[os.path.basename(d)] = [[label(f), d + '/' + f] for f in sorted(os.listdir(d)) if f.lower().endswith('.pdf')]
 d = 'module-04-methods-and-reviews/literature'
 papers['methods-and-reviews'] = [[label(f), d + '/' + f] for f in sorted(os.listdir(d)) if f.endswith('.pdf')] if os.path.isdir(d) else []
-for dom in ['sleep', 'cardiac']:
+for dom in ['sleep', 'cardiac', 'activity', 'mental-health']:
     d = 'module-05-measurement-science/' + dom + '/literature'
     papers[dom] = [[label(f), d + '/' + f] for f in sorted(os.listdir(d)) if f.endswith('.pdf')] if os.path.isdir(d) else []
 
@@ -39,7 +39,7 @@ M2MAP = {'beiwe': (['beiwe'], ['beiwe']), 'radar-base': (['radar-base'], ['radar
          'carp-mobile-sensing': (['carp-mobile-sensing'], ['carp']), 'evidation': (['evidation'], []),
          'legacy-and-adjacent-platforms': (['legacy-and-adjacent-platforms', 'mindful-moods', 'vaping-health-study-app'], [])}
 # Any literature folder not claimed above is reported so it is not silently invisible.
-claimed = {k for v in list(M1MAP.values()) + list(M2MAP.values()) for k in v[0]} | {'methods-and-reviews', 'sleep', 'cardiac'}
+claimed = {k for v in list(M1MAP.values()) + list(M2MAP.values()) for k in v[0]} | {'methods-and-reviews', 'sleep', 'cardiac', 'activity', 'mental-health'}
 for k in papers:
     if k not in claimed: print('WARNING: literature folder not mapped to any write-up:', k)
 
