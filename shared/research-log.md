@@ -2,6 +2,14 @@
 
 ---
 
+## 2026-10-22 (latest) - Module 5 Cardiac seeded
+
+- **Module:** 5, Cardiac (heart rate, HRV, wearable ECG, PPG arrhythmia detection, cuffless BP). Same method as Sleep: two search lanes and one tagging agent.
+- **Catalogue:** 68 papers in 7 sections (consensus and guidance 18, screening guidance 6, evaluation frameworks and standards 8, metrics 9, algorithms 11, pooled accuracy 7, physiological limits 9). 18 PDFs stored, all Creative Commons (APHRS 2021 is CC BY-NC); 23 free to read but not redistributable; 17 free and CC but blocked to scripts (`cardiac/_hand-download.md`, manual sweep #11); 10 paywalled, including ISO 81060-3, IEEE 1708 and CTA-2065, which are sold.
+- **Checked by hand:** C-B17 (PhysioNet/CinC 2017) dataset figures were written from memory by the agent; corrected from the OpenAlex abstract (12,186 recordings, 8,528 public, 3,658 hidden, 75 teams, best F1 0.83). HeartPy (C-048) has no indexed abstract; row says so.
+- **Scope calls:** Wyatt 2020 (Apple Watch abnormal pulse, diagnostic yield, JAMIA, 10.1093/jamia/ocaa137) left out of Module 5 because it studies one device; candidate for Module 1 Apple Watch via add-paper. Natarajan 2020 (Fitbit, 8 million users) kept because it is a population HRV reference, not a device validation. Sola 2022 cuffless BP guidance is largely by the device maker's staff; the row says so.
+- **Tagging:** 62 entries (12 device and platform profiles, 44 papers, 6 Module 3 profiles). Stove and Hansen 2023 (10.1080/02640414.2023.2180160) had no DOI in the repo; DOI found on Europe PMC and tagged by hand. Fuller 2020 (10.2196/18694) is cited in Module 1 `sources.md` but was missing from the dedup list; the next domain's known-DOI list should include every module's `sources.md`.
+
 ## 2026-10-22 (latest) - Module 5 created; Sleep seeded
 
 - **Module:** 5 (new), measurement science by domain. Scaffold: `module-05-measurement-science/README.md`, one ledger for the module, `sleep/` catalogue, `shared/domain-tags.json`, `tools/domains/build_hubs.py` (generates `sleep/hub.md`). CLAUDE.md and the add-paper skill cover Module 5.

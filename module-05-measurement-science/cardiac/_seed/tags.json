@@ -1,0 +1,618 @@
+[
+ {
+  "key": "10.3390/s24237475",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Nocturnal HR, rMSSD and HRV from the Oura Ring",
+  "weight": "primary",
+  "reason": "Oura HR and HRV validation vs ECG"
+ },
+ {
+  "key": "10.2196/27487",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Oura nocturnal HR and HRV vs ECG",
+  "weight": "primary",
+  "reason": "HR and HRV accuracy against ECG"
+ },
+ {
+  "key": "10.14814/phy2.70527",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Nocturnal RHR and HRV in five consumer wearables",
+  "weight": "primary",
+  "reason": "RHR and HRV validation vs ECG strap"
+ },
+ {
+  "key": "10.3389/fspor.2021.585870",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Accuracy of commercial technologies for resting HR and HRV",
+  "weight": "primary",
+  "reason": "RHR and HRV accuracy comparison"
+ },
+ {
+  "key": "10.1159/000539487",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Sleep heart rate dynamics and mental health (LEMURS)",
+  "weight": "primary",
+  "reason": "Overnight heart rate time series is the signal; borderline"
+ },
+ {
+  "key": "10.1053/j.gastro.2024.12.024",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Wearable physiology predicts IBD flares",
+  "weight": "secondary",
+  "reason": "HRV and HR among predictive wearable features; borderline"
+ },
+ {
+  "key": "10.3390/jpm7020003",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Wrist-worn HR and energy expenditure accuracy, 7 devices",
+  "weight": "primary",
+  "reason": "Heart rate accuracy across seven devices"
+ },
+ {
+  "key": "10.3390/s22166317",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Six wearables for sleep, HR and HRV",
+  "weight": "primary",
+  "reason": "HR and HRV validated vs ECG alongside sleep"
+ },
+ {
+  "key": "10.3390/s21103571",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "WHOOP wrist PPG HR and HRV validation",
+  "weight": "primary",
+  "reason": "WHOOP HR and HRV vs ECG"
+ },
+ {
+  "key": "10.3390/s22186723",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Day-to-day variability of WHOOP HRV in water polo athletes",
+  "weight": "primary",
+  "reason": "HRV variability is the outcome"
+ },
+ {
+  "key": "10.1038/s41746-024-01394-0",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "WHOOP cardiovascular parameters across menstrual cycle",
+  "weight": "primary",
+  "reason": "Daily HR and HRV amplitude is the outcome"
+ },
+ {
+  "key": "10.1101/2025.09.11.675620",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Menstrual cycle through a wearable (physiology, sleep)",
+  "weight": "secondary",
+  "reason": "HR, HRV among several physiology outcomes"
+ },
+ {
+  "key": "10.1371/journal.pdig.0001284",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Alcohol effects on heart rate, sleep, activity (WHOOP)",
+  "weight": "primary",
+  "reason": "Heart rate listed first among outcomes"
+ },
+ {
+  "key": "10.1038/s41746-025-01517-1",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "HRV metric and menstrual regularity (commentary)",
+  "weight": "primary",
+  "reason": "HRV is the subject"
+ },
+ {
+  "key": "10.1101/2024.01.04.24300784",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "WHOOP accuracy and utility systematic review",
+  "weight": "secondary",
+  "reason": "HR and HRV accuracy among reviewed outcomes"
+ },
+ {
+  "key": "10.1177/17479541231206424",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "WHOOP metrics and energy deficiency in swimmers",
+  "weight": "secondary",
+  "reason": "HRV and RHR among WHOOP metrics studied"
+ },
+ {
+  "key": "10.3390/biomimetics10120819",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Smart ring in clinical medicine systematic review",
+  "weight": "secondary",
+  "reason": "Pooled HR and HRV accuracy among several outcomes"
+ },
+ {
+  "key": "10.1056/nejmoa1901183",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Apple Heart Study: large-scale AF identification",
+  "weight": "primary",
+  "reason": "AF detection is the primary outcome"
+ },
+ {
+  "key": "module-01-wearables/literature/apple-watch/2025-apple-whitepaper-hypertension-notifications.pdf",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Apple Watch hypertension notification white paper",
+  "weight": "primary",
+  "reason": "Cuffless hypertension notification validation"
+ },
+ {
+  "key": "10.3390/s24196220",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Apple Watch S9/Ultra 2 HRV and RHR validity",
+  "weight": "primary",
+  "reason": "HRV and RHR validity vs Polar H10"
+ },
+ {
+  "key": "10.5334/gh.1456",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Apple Watch cardiovascular indices in cardiac patients",
+  "weight": "primary",
+  "reason": "HR, SpO2 in cardiac disease patients"
+ },
+ {
+  "key": "10.1111/jce.15892",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Apple Watch AF detection, multicentre",
+  "weight": "primary",
+  "reason": "AF detection accuracy"
+ },
+ {
+  "key": "10.1371/journal.pdig.0000051",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Apple Watch S6 ECG and SpO2 in children",
+  "weight": "primary",
+  "reason": "ECG intervals and rhythm algorithm accuracy"
+ },
+ {
+  "key": "pjc:2024.0712.055060",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Apple Watch AF detection vs 24-hour Holter",
+  "weight": "primary",
+  "reason": "AF detection vs Holter"
+ },
+ {
+  "key": "10.1093/eurheartj/ehae666.3538",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "DEFINE AFib: Apple Watch vs implantable monitor (abstract)",
+  "weight": "primary",
+  "reason": "AF notification vs ICM"
+ },
+ {
+  "key": "10.1088/1361-6579/adca82",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Apple Watch accuracy meta-analysis (health metrics)",
+  "weight": "secondary",
+  "reason": "HR among several metrics pooled"
+ },
+ {
+  "key": "10.1038/s41746-025-02238-1",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Apple Watch accuracy living systematic review",
+  "weight": "secondary",
+  "reason": "HR, HRV, AF among many metrics"
+ },
+ {
+  "key": "10.1016/j.jacadv.2024.101538",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Apple Watch ECG for AF meta-analysis",
+  "weight": "primary",
+  "reason": "AF diagnostic accuracy meta-analysis"
+ },
+ {
+  "key": "10.7759/cureus.20362",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Wrist wearables AF detection meta-analysis",
+  "weight": "primary",
+  "reason": "AF detection accuracy"
+ },
+ {
+  "key": "10.3390/s22052032",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Movesense single-channel ECG for RR and HRV",
+  "weight": "primary",
+  "reason": "ECG RR interval and HRV validation"
+ },
+ {
+  "key": "10.3390/s24175713",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Movesense HR+ ECG in running and cycling",
+  "weight": "primary",
+  "reason": "ECG heart rate validity"
+ },
+ {
+  "key": "10.3389/fnbeh.2020.00148",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/literature-library.md",
+  "row_id": null,
+  "title": "Empatica E4 EDA and HRV validation",
+  "weight": "primary",
+  "reason": "HRV is one of two validated measures"
+ },
+ {
+  "key": "10.1161/hypertensionaha.125.26031",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/research-library-wearables.md",
+  "row_id": null,
+  "title": "Apple Watch for hypertension screening (critique)",
+  "weight": "primary",
+  "reason": "Blood pressure notification validation critique"
+ },
+ {
+  "key": "10.1001/jama.2025.26925",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/research-library-wearables.md",
+  "row_id": null,
+  "title": "Smartwatch hypertension notification population model",
+  "weight": "primary",
+  "reason": "Hypertension notification screening impact"
+ },
+ {
+  "key": "10.1016/j.ahj.2026.107619",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/research-library-wearables.md",
+  "row_id": null,
+  "title": "Heart Watch Study protocol: smartwatch 12-lead ECG",
+  "weight": "primary",
+  "reason": "Smartwatch ECG for cardiovascular disease"
+ },
+ {
+  "key": "10.3233/shti260986",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/research-library-wearables.md",
+  "row_id": null,
+  "title": "HiGHmed cardiovascular sensor dashboard, Apple Watch",
+  "weight": "primary",
+  "reason": "Cardiology cohort heart rate dashboard"
+ },
+ {
+  "key": "10.7759/cureus.113337",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/research-library-wearables.md",
+  "row_id": null,
+  "title": "Apple Watch detects arrhythmogenic cardiomyopathy (case)",
+  "weight": "primary",
+  "reason": "Wearable-detected arrhythmia case"
+ },
+ {
+  "key": "10.1016/j.resplu.2026.101447",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/research-library-wearables.md",
+  "row_id": null,
+  "title": "Wearable saving lives: cardiac arrest case report",
+  "weight": "secondary",
+  "reason": "Fall detection alerting in cardiac arrest; borderline"
+ },
+ {
+  "key": "10.1007/s40279-025-02388-y",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/research-library-wearables.md",
+  "row_id": null,
+  "title": "Living review: wearable HRV across menstrual cycle",
+  "weight": "primary",
+  "reason": "HRV is the subject; surfaced, not read"
+ },
+ {
+  "key": "10.1088/2752-5309/ae7faf",
+  "kind": "paper",
+  "module": 1,
+  "file": "module-01-wearables/research-library-wearables.md",
+  "row_id": null,
+  "title": "Wildfire stress and activity, Oura older adults",
+  "weight": "secondary",
+  "reason": "Sleep HR and HRV among outcomes; borderline"
+ },
+ {
+  "key": "10.1136/bjsports-2020-103148",
+  "kind": "paper",
+  "module": 4,
+  "file": "module-04-methods-and-reviews/literature-library.md",
+  "row_id": "M4-021",
+  "title": "INTERLIVE wearable heart rate validity recommendations",
+  "weight": "primary",
+  "reason": "Heart rate validation standard"
+ },
+ {
+  "key": "10.1038/s41746-020-0297-4",
+  "kind": "paper",
+  "module": 4,
+  "file": "module-04-methods-and-reviews/literature-library.md",
+  "row_id": "M4-024",
+  "title": "Guidelines for wrist-worn heart rate assessment",
+  "weight": "primary",
+  "reason": "Heart rate measurement guidelines"
+ },
+ {
+  "key": "10.7759/cureus.94074",
+  "kind": "paper",
+  "module": 4,
+  "file": "module-04-methods-and-reviews/literature-library.md",
+  "row_id": "M4-029",
+  "title": "PPG in diverse skin tones, smartwatch bias",
+  "weight": "primary",
+  "reason": "PPG heart rate bias by skin tone"
+ },
+ {
+  "key": "module-03-applied-studies/profiles/fitbit-heart-study-afib.md",
+  "kind": "m3-profile",
+  "module": 3,
+  "file": "module-03-applied-studies/profiles/fitbit-heart-study-afib.md",
+  "row_id": null,
+  "title": "Fitbit Heart Study siteless AF trial, N=455,699",
+  "weight": "primary",
+  "reason": "AF detection trial; deployment lessons",
+  "doi": "10.1161/circulationaha.122.060291"
+ },
+ {
+  "key": "module-03-applied-studies/profiles/apple-heart-data-management-lessons.md",
+  "kind": "m3-profile",
+  "module": 3,
+  "file": "module-03-applied-studies/profiles/apple-heart-data-management-lessons.md",
+  "row_id": null,
+  "title": "Apple Heart Study data-management lessons, N=419,297",
+  "weight": "primary",
+  "reason": "AF notification study operations",
+  "doi": "10.1080/10543406.2022.2080698"
+ },
+ {
+  "key": "module-03-applied-studies/profiles/apple-heart-movement-study-retention.md",
+  "kind": "m3-profile",
+  "module": 3,
+  "file": "module-03-applied-studies/profiles/apple-heart-movement-study-retention.md",
+  "row_id": null,
+  "title": "Apple Heart & Movement Study retention, N=82,809",
+  "weight": "secondary",
+  "reason": "Cardiovascular cohort; ECG and rhythm-triggered surveys; borderline",
+  "doi": "10.1038/s41746-024-01187-5"
+ },
+ {
+  "key": "module-03-applied-studies/profiles/movesense-palliative-support-trial.md",
+  "kind": "m3-profile",
+  "module": 3,
+  "file": "module-03-applied-studies/profiles/movesense-palliative-support-trial.md",
+  "row_id": null,
+  "title": "Support trial: wrist and ECG chest sensor, palliative",
+  "weight": "secondary",
+  "reason": "Continuous ECG and HR among vitals; terminated",
+  "doi": "10.1186/s12904-025-01794-3"
+ },
+ {
+  "key": "module-03-applied-studies/profiles/withings-postop-remote-monitoring.md",
+  "kind": "m3-profile",
+  "module": 3,
+  "file": "module-03-applied-studies/profiles/withings-postop-remote-monitoring.md",
+  "row_id": null,
+  "title": "Connecare post-op home monitoring (Withings BPM)",
+  "weight": "secondary",
+  "reason": "Blood pressure and HR among monitored vitals",
+  "doi": "10.1245/s10434-020-08705-1"
+ },
+ {
+  "key": "module-03-applied-studies/profiles/whoop-mental-health-survey-engagement.md",
+  "kind": "m3-profile",
+  "module": 3,
+  "file": "module-03-applied-studies/profiles/whoop-mental-health-survey-engagement.md",
+  "row_id": null,
+  "title": "WHOOP in-app mental-health surveys, N=181,574",
+  "weight": "secondary",
+  "reason": "RHR and HRV among physiology metrics; borderline",
+  "doi": "10.2196/64955"
+ },
+ {
+  "key": "module-01-wearables/profiles/apple-watch-healthkit.md",
+  "kind": "m1-profile",
+  "module": 1,
+  "file": "module-01-wearables/profiles/apple-watch-healthkit.md",
+  "row_id": null,
+  "title": "Apple Watch / HealthKit",
+  "weight": "primary",
+  "reason": "ECG, AF and hypertension notifications, HRV"
+ },
+ {
+  "key": "module-01-wearables/profiles/movesense.md",
+  "kind": "m1-profile",
+  "module": 1,
+  "file": "module-01-wearables/profiles/movesense.md",
+  "row_id": null,
+  "title": "Movesense",
+  "weight": "primary",
+  "reason": "Single-lead ECG and RR interval access"
+ },
+ {
+  "key": "module-01-wearables/profiles/polar.md",
+  "kind": "m1-profile",
+  "module": 1,
+  "file": "module-01-wearables/profiles/polar.md",
+  "row_id": null,
+  "title": "Polar",
+  "weight": "primary",
+  "reason": "H10 ECG strap, HR and RR interval access"
+ },
+ {
+  "key": "module-01-wearables/profiles/withings.md",
+  "kind": "m1-profile",
+  "module": 1,
+  "file": "module-01-wearables/profiles/withings.md",
+  "row_id": null,
+  "title": "Withings",
+  "weight": "primary",
+  "reason": "ScanWatch ECG, blood pressure cuff"
+ },
+ {
+  "key": "module-01-wearables/profiles/samsung.md",
+  "kind": "m1-profile",
+  "module": 1,
+  "file": "module-01-wearables/profiles/samsung.md",
+  "row_id": null,
+  "title": "Samsung",
+  "weight": "primary",
+  "reason": "ECG and blood pressure on Galaxy Watch"
+ },
+ {
+  "key": "module-01-wearables/profiles/fitbit-google.md",
+  "kind": "m1-profile",
+  "module": 1,
+  "file": "module-01-wearables/profiles/fitbit-google.md",
+  "row_id": null,
+  "title": "Fitbit / Google",
+  "weight": "primary",
+  "reason": "ECG, irregular rhythm, HRV, Fitbit Heart Study"
+ },
+ {
+  "key": "module-01-wearables/profiles/garmin.md",
+  "kind": "m1-profile",
+  "module": 1,
+  "file": "module-01-wearables/profiles/garmin.md",
+  "row_id": null,
+  "title": "Garmin",
+  "weight": "secondary",
+  "reason": "ECG app, enhanced BBI, blood pressure via Health API"
+ },
+ {
+  "key": "module-01-wearables/profiles/whoop.md",
+  "kind": "m1-profile",
+  "module": 1,
+  "file": "module-01-wearables/profiles/whoop.md",
+  "row_id": null,
+  "title": "WHOOP",
+  "weight": "secondary",
+  "reason": "HRV and RHR core; no raw IBI; ECG on MG"
+ },
+ {
+  "key": "module-01-wearables/profiles/oura.md",
+  "kind": "m1-profile",
+  "module": 1,
+  "file": "module-01-wearables/profiles/oura.md",
+  "row_id": null,
+  "title": "Oura",
+  "weight": "secondary",
+  "reason": "HR and HRV time series; no ECG"
+ },
+ {
+  "key": "module-01-wearables/profiles/empatica.md",
+  "kind": "m1-profile",
+  "module": 1,
+  "file": "module-01-wearables/profiles/empatica.md",
+  "row_id": null,
+  "title": "Empatica",
+  "weight": "secondary",
+  "reason": "Raw PPG and IBI, pulse rate variability"
+ },
+ {
+  "key": "module-01-wearables/profiles/emerging-platforms.md",
+  "kind": "m1-profile",
+  "module": 1,
+  "file": "module-01-wearables/profiles/emerging-platforms.md",
+  "row_id": null,
+  "title": "Emerging platforms",
+  "weight": "secondary",
+  "reason": "Includes Verily Study Watch ECG, raw PPG and IBI exports"
+ },
+ {
+  "key": "module-02-digital-phenotyping/profiles/carp-mobile-sensing.md",
+  "kind": "m2-profile",
+  "module": 2,
+  "file": "module-02-digital-phenotyping/profiles/carp-mobile-sensing.md",
+  "row_id": null,
+  "title": "CARP Mobile Sensing",
+  "weight": "secondary",
+  "reason": "Polar and Movesense ECG, PPI and HR integrations"
+ }
+]

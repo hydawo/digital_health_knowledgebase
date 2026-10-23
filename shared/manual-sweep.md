@@ -21,6 +21,7 @@ put the newest at the bottom of its section.
 | 8 | Withings: find where the partner terms now live on the developer portal | The 13 Oct 2026 terms rewrite points there | `facts/withings.yaml` | none |
 | 9 | Download five free Module 3 papers the publishers block to scripts, then run `/add-paper` on each: 10.1111/jgs.70726 (PACERS), 10.1016/j.gerinurse.2026.104269 (weighted blankets), 10.1002/pan.70309 (EmbracePlus, paediatric anaesthesia), 10.1177/03331024261492220 (EmbracePlus, migraine), 10.1111/acem.70408 (Apple Watch, older ED patients) | Rejected as `unobtainable` only because of bot checks | `module-03-applied-studies/_scan-queue.md` | none |
 | 10 | Download 28 free Module 5 sleep papers blocked to scripts (AASM, Oxford Sleep, PMC copies), save under the given names and flip their rows to Verified OA | Seeding pass could not fetch them | `module-05-measurement-science/sleep/_hand-download.md` | none |
+| 11 | Download 17 free Module 5 cardiac papers blocked to scripts (Wiley, OUP, PMC copies), check each is CC-licensed, save under the given names and flip their rows to Verified OA | Seeding pass could not fetch them | `module-05-measurement-science/cardiac/_hand-download.md` | none |
 
 ## Vendor and author confirmations
 
@@ -49,8 +50,9 @@ Generator for more sheets: `python3 tools/facts/confirm_sheet.py <company>`.
 | 3 | Point the Monday literature scan at `main`, and add `www.ebi.ac.uk`, `pmc.ncbi.nlm.nih.gov`, `www.ncbi.nlm.nih.gov` to its network allowlist | claude.ai Routines UI |
 | 4 | Compliance fields for a platform with no hosted service: `not_applicable` (Purple Robot now) or `not_public` (AWARE, Beiwe)? | `facts/purple-robot.yaml` |
 | 5 | LinkedIn draft still says 83 open questions; it is 79 now | your draft |
-| 6 | Five PDFs that may not be redistributed (three CTA/NSF 2052 sleep standards, Depner 2020, Baumert 2022) were pushed in commit 30046f4 and removed in the next commit, so they remain in public git history. Leave it, or rewrite history and force-push to purge them? | `module-05-measurement-science/sleep/literature-library.md`; reading copies in `_private/module5-sleep-reading/` |
 
 ## Done
 
 (Move items here with the date when they are finished.)
+
+- 2026-10-22: Decision 6, licence-restricted sleep PDFs in git history. Hassan: leave them; the removal commit documents the correction.
