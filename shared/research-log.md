@@ -2,6 +2,13 @@
 
 ---
 
+## 2026-10-23 (latest) - Module 5 domain overviews written
+
+- **Files:** `module-05-measurement-science/<domain>/overview.md` for sleep, cardiac, activity and mental health, each about 1,000 words: what the field agrees on, where devices fall short, a study-team checklist, open gaps, five papers to read first, links into the hub. Linked from the module README, each catalogue and each hub (`build_hubs.py` adds the link when an overview exists), and shown inline in the explorer's Module 5 tab.
+- **Method:** one writing agent per domain, drawing only on its catalogue rows, hub and stored PDFs; every claim cites a row (36 to 39 distinct rows each). Coordinator checks: every cited ID exists, every link resolves, and every number in a bullet appears in the cited rows; numbers taken from PDFs were confirmed in the PDF text (ASA 72 hours to 14 days, S-023; Giurgiu 2022 risk-of-bias and single-validation shares, P-021; Pulsford 2023 wear-site and distribution effects, P-028). Humanizer rules applied by the agents and a tell scan run on all four.
+- **Edits at review:** mental health's EMA-versus-clinician bullet reworded so one 36-person trial does not read as consensus; sleep's "ceiling below PSG" softened to what the three catalogued models showed; activity's high-income share reworded because the source does not make clear whether it counts waves or studies.
+- **Explorer:** header now says five modules and states each module's question; Module 5 tab lists the four overviews first, rendered in place.
+
 ## 2026-10-23 (latest) - Module 5 added to the map, architecture page and docs
 
 - **Map** (`explorer/kb-map.html`): five modules in the system diagram (Module 5 box with arrows from papers and working sessions), a Module 5 card, five-module wording, date 23 October, Module 1 PDFs 67, and the status strip rewritten from `ROADMAP.md` and `shared/manual-sweep.md` (it still described 9 to 11 October).

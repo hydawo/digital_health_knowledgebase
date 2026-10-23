@@ -134,6 +134,10 @@ profiles = {}
 for mod in ['module-01-wearables', 'module-02-digital-phenotyping']:
     for f in sorted(glob.glob(mod + '/profiles/*.md')):
         profiles[os.path.basename(f)[:-3]] = open(f, encoding='utf8').read()
+for dom in ['sleep', 'cardiac', 'activity', 'mental-health']:
+    f = 'module-05-measurement-science/' + dom + '/overview.md'
+    if os.path.exists(f):
+        profiles['m5-' + dom] = open(f, encoding='utf8').read()
 
 # ---- filter tags: form factor and OS by hand (explorer/tags.json), data streams derived from the tables ----
 TAGJ = json.load(open('explorer/tags.json'))

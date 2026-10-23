@@ -38,6 +38,7 @@ hub page instead of being copied (see below).
 | `<domain>/literature/` | Open-access PDFs |
 | `<domain>/_hand-download.md` | Free papers the publishers block to scripts, to fetch by hand |
 | `<domain>/_seed/` | Search logs and agent output from the seeding pass, kept for provenance |
+| `<domain>/overview.md` | Short evidence write-up: what the field agrees on, where devices fall short, what a study team should do. Every claim cites a catalogue row |
 | `<domain>/hub.md` | Generated page listing every paper and profile in Modules 1 to 5 tagged with the domain |
 | `../shared/domain-tags.json` | Domain tags for papers and profiles in Modules 1 to 4, keyed by DOI or profile path |
 
@@ -51,7 +52,7 @@ keeps one home per paper. Decision recorded in `ROADMAP.md`, item 6.
 
 | Domain | Status | Catalogue |
 |---|---|---|
-| Sleep | Seeded 2026-10-22: 58 papers in 7 sections; [hub](sleep/hub.md) | [`sleep/literature-library.md`](sleep/literature-library.md) |
-| Cardiac | Seeded 2026-10-22: 68 papers in 7 sections; [hub](cardiac/hub.md) | [`cardiac/literature-library.md`](cardiac/literature-library.md) |
-| Physical activity and fitness | Seeded 2026-10-23: 66 papers in 7 sections; [hub](activity/hub.md) | [`activity/literature-library.md`](activity/literature-library.md) |
-| Mental health | Seeded 2026-10-23: 53 papers in 8 sections; [hub](mental-health/hub.md) | [`mental-health/literature-library.md`](mental-health/literature-library.md) |
+| Sleep | Seeded 2026-10-22: 58 papers in 7 sections; [overview](sleep/overview.md); [hub](sleep/hub.md) | [`sleep/literature-library.md`](sleep/literature-library.md) |
+| Cardiac | Seeded 2026-10-22: 68 papers in 7 sections; [overview](cardiac/overview.md); [hub](cardiac/hub.md) | [`cardiac/literature-library.md`](cardiac/literature-library.md) |
+| Physical activity and fitness | Seeded 2026-10-23: 66 papers in 7 sections; [overview](activity/overview.md); [hub](activity/hub.md) | [`activity/literature-library.md`](activity/literature-library.md) |
+| Mental health | Seeded 2026-10-23: 53 papers in 8 sections; [overview](mental-health/overview.md); [hub](mental-health/hub.md) | [`mental-health/literature-library.md`](mental-health/literature-library.md) |

@@ -4,7 +4,7 @@ Measurement science for sleep with wearables and phones, across devices. Scope i
 [`../README.md`](../README.md). PDFs are in [`literature/`](literature/). OA status markers follow
 Module 4: **Verified OA**, **OA but not obtained this pass**, **Paywalled**, plus **Free to read, not stored (licence)** for documents that are free to download but whose licence forbids redistribution (the CTA/NSF standards say they "may not be reproduced"; some journal copies are all rights reserved). This repo is public, so only openly licensed PDFs (Creative Commons, including CC-licensed arXiv versions) are stored.
 
-**Seeded 2026-10-22** from two search lanes (guidance and frameworks; metrics, algorithms, pooled accuracy and physiological limits). Search logs are in [`_seed/`](_seed/). 58 papers: 17 PDFs on disk, 5 free to read but not stored for licence reasons, 28 free but blocked to scripts (listed in [`_hand-download.md`](_hand-download.md)), 8 paywalled. Papers on sleep that live in other modules are listed in [`hub.md`](hub.md).
+**Seeded 2026-10-22** from two search lanes (guidance and frameworks; metrics, algorithms, pooled accuracy and physiological limits). Search logs are in [`_seed/`](_seed/). 58 papers: 17 PDFs on disk, 5 free to read but not stored for licence reasons, 28 free but blocked to scripts (listed in [`_hand-download.md`](_hand-download.md)), 8 paywalled. Papers on sleep that live in other modules are listed in [`hub.md`](hub.md). A short evidence write-up drawn from this catalogue is in [`overview.md`](overview.md).
 
 ## Consensus and guidance
 

@@ -49,6 +49,8 @@ def render(domain, label, entries):
            f'Everything in the knowledge base tagged **{domain}**: the measurement-science papers '
            'that live in this module, then the device, platform, deployment and methods material '
            'that lives in Modules 1 to 4.', '']
+    if os.path.exists(os.path.join(M5, domain, 'overview.md')):
+        out += ['For a short reading of what this evidence says, see [`overview.md`](overview.md).', '']
     profiles = [e for e in entries if e['kind'] in KIND_LABEL]
     papers = [e for e in entries if e['kind'] == 'paper']
     studies = [e for e in entries if e['kind'] == 'm3-profile']

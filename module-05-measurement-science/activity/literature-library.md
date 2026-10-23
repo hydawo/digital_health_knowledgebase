@@ -8,7 +8,7 @@ read, not stored (licence)**. Only openly licensed PDFs are stored, because this
 
 **Seeded 2026-10-23** from two search lanes (guidance, frameworks, standards and reporting; metrics, algorithms, pooled accuracy and physiological limits). Search logs are in [`_seed/`](_seed/). 66 papers: 20 PDFs on disk, 14 free to read but not stored for licence reasons, 23 free but blocked to scripts (listed in [`_hand-download.md`](_hand-download.md)), 9 paywalled, including the CTA step-counting and activity-monitor standards, which are sold.
 
-Papers on activity and fitness measurement that live in other modules are listed in [`hub.md`](hub.md).
+Papers on activity and fitness measurement that live in other modules are listed in [`hub.md`](hub.md). A short evidence write-up drawn from this catalogue is in [`overview.md`](overview.md).
 
 ## Consensus and guidance
 

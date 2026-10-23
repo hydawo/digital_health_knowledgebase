@@ -4,6 +4,8 @@
 
 Everything in the knowledge base tagged **mental-health**: the measurement-science papers that live in this module, then the device, platform, deployment and methods material that lives in Modules 1 to 4.
 
+For a short reading of what this evidence says, see [`overview.md`](overview.md).
+
 | Where | Count |
 |---|---|
 | Module 5 catalogue | 53 |

@@ -15,7 +15,7 @@ PDFs are in [`literature/`](literature/). OA status markers follow the Sleep cat
 
 **Seeded 2026-10-23** from two search lanes (consensus, validation frameworks, EMA measurement and reporting; features, methods and datasets, pooled evidence and validity limits). Search logs are in [`_seed/`](_seed/). 53 papers: 15 PDFs on disk, 13 free to read but not stored for licence reasons, 21 free but blocked to scripts (listed in [`_hand-download.md`](_hand-download.md)), 4 paywalled. Ten strong reviews and methods papers already in Modules 2 and 4 were deliberately not re-catalogued; they are on the hub.
 
-Papers on mental-health measurement that live in other modules are listed in [`hub.md`](hub.md).
+Papers on mental-health measurement that live in other modules are listed in [`hub.md`](hub.md). A short evidence write-up drawn from this catalogue is in [`overview.md`](overview.md).
 
 ## Consensus and guidance
 
