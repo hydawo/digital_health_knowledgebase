@@ -1008,6 +1008,27 @@ in this project has a measured platform-misattribution rate of roughly 3 in 12.
 
 ------------------------------------------------------------------------
 
+# Module 5: Measurement Science by Domain
+
+Created 2026-10-22 at Hassan's request. Full scope in
+`module-05-measurement-science/README.md`; the short version:
+
+-   One module with a section per physiological domain (Sleep first; then
+    Cardiac, Physical activity and fitness, maybe Mental health), not one
+    module per domain.
+-   It holds measurement science that is not tied to one device: consensus
+    statements and guidelines, metric definitions, device-agnostic
+    algorithms, cross-device reviews and meta-analyses, and the physiological
+    limits of what a sensor can infer.
+-   One home per paper. A single-device validation stays in Module 1, a
+    deployment in Module 3, general research methods in Module 4. Those are
+    linked into the domain through `shared/domain-tags.json`, and
+    `python3 tools/domains/build_hubs.py` regenerates each
+    `<domain>/hub.md`. Never edit a hub by hand.
+-   Start a new domain only when asked.
+
+------------------------------------------------------------------------
+
 # Standard Technology Profile Template
 
 Use a consistent profile structure, adapting sections when they

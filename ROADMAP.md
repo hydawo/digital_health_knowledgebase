@@ -54,7 +54,7 @@ generated ones.
    two ALS addenda were already written in an earlier repair pass; this line was stale.
 4. **Fitbit profile follow-up** after 2026-10-30, when the legacy Web API is turned off.
 5. **Module 4 scan proposal:** approve or drop `shared/weekly-literature-scan-module4-proposal.md`.
-6. **Module 5, measurement science by domain (proposed 2026-10-22).** One module, like Module 4, with
+6. **Module 5, measurement science by domain (proposed 2026-10-22; Sleep started 2026-10-22).** Structure built (`module-05-measurement-science/`, `shared/domain-tags.json`, `tools/domains/build_hubs.py`), M4-042 moved to Sleep; seeding (two search lanes) and sleep tagging of Modules 1 to 4 running. One module, like Module 4, with
    a section per domain: Sleep first, then Cardiac, Physical activity and fitness, and maybe Mental
    health. It holds papers on the science of measuring that domain with wearables that are not tied
    to one device: consensus statements, standard metrics, validation methods, known physiological

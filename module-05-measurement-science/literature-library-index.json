@@ -1,0 +1,11 @@
+{
+ "schema": "module-05 measurement science dedup ledger, v1",
+ "ids_seen": [
+  "doi:10.1016/j.sleep.2025.106506"
+ ],
+ "records": [
+  {"id": "M4-042", "domain": "sleep", "doi": "10.1016/j.sleep.2025.106506", "title": "World Sleep Society recommendations for the use of wearable consumer health trackers that monitor sleep", "year": "2025", "pdf": null, "pdf_status": "paywalled", "source": "moved from Module 4 2026-10-22"}
+ ],
+ "last_run_date": null,
+ "runs": []
+}

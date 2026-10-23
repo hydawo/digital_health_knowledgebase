@@ -1,6 +1,6 @@
 ---
 name: add-paper
-description: Manually add one paper to the knowledge base (Modules 1 to 4) from a DOI, PMID, PMCID, arXiv ID, URL or local PDF. Decides which module(s) it belongs to, stores the PDF if open access, writes the entry in each module's own format, updates the dedup ledgers and research log, then commits and pushes. Use when Hassan says "add this paper", "file this paper", "put this in the knowledge base", or pastes a paper link and asks to add it.
+description: Manually add one paper to the knowledge base (Modules 1 to 5) from a DOI, PMID, PMCID, arXiv ID, URL or local PDF. Decides which module(s) it belongs to, stores the PDF if open access, writes the entry in each module's own format, updates the dedup ledgers and research log, then commits and pushes. Use when Hassan says "add this paper", "file this paper", "put this in the knowledge base", or pastes a paper link and asks to add it.
 ---
 
 # Add a paper by hand
@@ -33,6 +33,7 @@ Search all three ledgers, and grep the libraries for the DOI and the title:
 | 2 | `module-02-digital-phenotyping/literature-library-index.json` | `ids_seen` (`pmid:`, `arxiv:` and `doi:` prefixes), `records` |
 | 3 | `module-03-applied-studies/literature-index.json` | `dois_seen`, `pmcids_seen`, `records`, `rejected` |
 | 4 | `module-04-methods-and-reviews/literature-library-index.json` | `ids_seen` (`doi:` prefix) |
+| 5 | `module-05-measurement-science/literature-library-index.json` | `ids_seen` (`doi:` prefix), `records` |
 
 If it's already there, say where and stop. Exception: Hassan wants it in another module, or a
 Module 3 rejection was for `unobtainable` and he now has the PDF.
@@ -82,6 +83,15 @@ Read the abstract and Methods. A paper can belong in more than one module.
   frameworks, reporting, equity, privacy). See `module-04-methods-and-reviews/README.md` for scope.
   A multi-device review or recommendation goes here, not in Module 1. A review rejected from Module
   3 as `review` usually belongs here too.
+- **Module 5: measurement science for one physiological domain, across devices** (consensus or
+  guidance for that domain, metric definitions, device-agnostic algorithms, cross-device accuracy
+  reviews, physiological limits). Only domains with a folder exist (Sleep since 2026-10-22). A
+  general research-practice paper stays in Module 4; a domain-specific one comes here. See
+  `module-05-measurement-science/README.md`.
+- **Domain tag, any module.** If a paper filed in Modules 1 to 4 has sleep (or another started
+  domain) as a main subject or outcome, add an entry to that domain's list in
+  `shared/domain-tags.json` (same fields as the existing entries) and run
+  `python3 tools/domains/build_hubs.py`.
 - **The technology isn't profiled yet.** Still file it, under a new `literature/<slug>/` folder and a
   new section in the Module 1 or 2 library. Note in the research log that it's a candidate for a new
   profile. For Module 3, flag it as a Module 1/2 expansion candidate. Don't write a Module 3 profile
@@ -120,6 +130,15 @@ If the module or tier is a judgment call, say so in one or two sentences and ask
   abstract only, say so.
 - Add `doi:<doi>` to `ids_seen` in `literature-library-index.json`, which uses a one-space indent.
 - Update the paper and paywalled counts in the module `README.md` status line and in `explorer/kb-map.html`.
+
+**Module 5**
+- Add the PDF to `module-05-measurement-science/<domain>/literature/` if it's open access.
+- Add a row to the right section of `<domain>/literature-library.md`, numbered next in that
+  section's sequence, same columns as Module 4. "What it establishes" starts with the sub-group label
+  the section's rows use.
+- Add `doi:<doi>` to `ids_seen` and a `records` entry (id, domain, doi, title, year, pdf,
+  pdf_status, source) to `module-05-measurement-science/literature-library-index.json`.
+- Run `python3 tools/domains/build_hubs.py` and update the counts in the module `README.md`.
 
 **Module 3, included**
 1. Write the screening extraction to `module-03-applied-studies/_screening-reports/<date>-manual-<slug>.md`, using Part A's field list.

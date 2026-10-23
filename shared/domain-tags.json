@@ -1,0 +1,7 @@
+{
+ "_about": "Domain tags for papers and profiles in Modules 1 to 4, read by tools/domains/build_hubs.py to build module-05-measurement-science/<domain>/hub.md. Keys are lowercase DOIs, or repo-relative paths for profiles. weight is primary (the domain is a main subject or outcome) or secondary (one of several outcomes). Papers that live in Module 5 itself are not tagged here; the hub reads their catalogue directly.",
+ "domains": {
+  "sleep": {"label": "Sleep", "started": "2026-10-22"}
+ },
+ "sleep": []
+}

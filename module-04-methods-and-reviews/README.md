@@ -1,6 +1,6 @@
 # Module 4 — Methods and Reviews
 
-**Status:** created 2026-09-03. 52 catalogued papers, 48 with PDFs on disk and 4 paywalled. Ten were
+**Status:** created 2026-09-03. 51 catalogued papers, 48 with PDFs on disk and 3 paywalled (the World Sleep Society paper moved to Module 5 on 2026-10-22). Ten were
 moved from the Module 2 catalogue; 41 came from a baseline search the same day (queries and counts are
 in the catalogue). No profiles yet.
 
