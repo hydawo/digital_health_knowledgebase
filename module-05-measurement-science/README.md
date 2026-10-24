@@ -42,6 +42,15 @@ hub page instead of being copied (see below).
 | `<domain>/hub.md` | Generated page listing every paper and profile in Modules 1 to 5 tagged with the domain |
 | `../shared/domain-tags.json` | Domain tags for papers and profiles in Modules 1 to 4, keyed by DOI or profile path |
 
+## Tools
+
+| Command | What it does |
+|---|---|
+| `python3 tools/domains/known_dois.py <domain>` | Writes the dedup list a new domain's seeding agents read (`<domain>/_seed/known-dois.tsv`) |
+| `python3 tools/domains/build_hubs.py` | Regenerates every `hub.md`; `--check` fails if one is out of date |
+| `python3 tools/domains/check_catalogue.py [domain ...]` | Checks every DOI row's title, first author and year against Crossref |
+| `python3 tools/domains/test_domains.py` | Tests for the above |
+
 ## Why one module and not one per domain
 
 Most sleep papers are also device or deployment papers, so separate modules would give them two
