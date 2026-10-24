@@ -29,9 +29,11 @@ screening in this project has a measured platform-misattribution rate of roughly
 
 | Found | DOI | PMCID | Title | Venue / year | Apparent technology | Signals | OA |
 |---|---|---|---|---|---|---|---|
+| 2026-10-12 | 10.2196/93019 | PMC13652396 | Feasibility and Methodological Consideration of Using Wearable Devices to Examine the Relationship Between Sleep and Balance: Case Report With 2 College Students | JMIR Form Res, 2026 | Apple Watch + Oura Ring + Fitbit (C1 wearable query) | feasibility (primary outcome, explicit), data completeness (missing-data rates reported: 75.2%→14.1%/20.3% wrist, →9.4%/25% Oura, after structured weekly check-ins) | OA (JMIR CC BY; PMCID present) |
+| 2026-10-12 | 10.2196/88846 | PMC13637571 | A Problem-Solving Therapy With Apple Watch Support for College Students With Alcohol Use Disorder Symptoms: Pilot Randomized Controlled Trial | JMIR Form Res, 2026 | Apple Watch (C1 wearable query) | feasibility + acceptability (explicit, primary outcomes of this pilot RCT) | OA (JMIR CC BY; PMCID present) |
+| 2026-10-12 | 10.3389/frdem.2026.1861809 | PMC13642210 | Use of the Roadmap positive activity app in daily life among dementia caregivers: evidence of feasibility and acceptability | Front Dement, 2026 | Fitbit (C1 wearable query) — primary intervention is the non-profiled "Roadmap" mHealth app; Fitbit is the co-deployed wearable | feasibility + acceptability (explicit, quantified: 87% app engagement, 95% survey completion, 100%/75% Fitbit wear by caregiver/recipient) | OA (Frontiers CC BY; PMCID present) |
 
-
-**2026-10-22:** all 16 rows above were screened from full text (7 profiled, 9 rejected; see
+**2026-10-22:** the 16 rows then pending were screened from full text (7 profiled, 9 rejected; see
 `feasibility-matrix.md` Part F and the ledger). Five rejections are `unobtainable` only because the publisher
 served a bot check to scripts. Re-screen these from a PDF fetched by hand in a browser:
 10.1111/jgs.70726 (PACERS), 10.1016/j.gerinurse.2026.104269 (weighted blankets), 10.1002/pan.70309

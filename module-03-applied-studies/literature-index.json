@@ -137,7 +137,42 @@
   "10.3389/fphys.2026.1914161",
   "10.2196/92359",
   "10.1007/s10461-026-05317-w",
-  "10.1016/j.mcpdig.2025.100240"
+  "10.1016/j.mcpdig.2025.100240",
+  "10.1038/s44294-026-00156-5",
+  "10.3389/fpubh.2026.1928562",
+  "10.1080/03091902.2026.2741912",
+  "10.64898/2026.09.18.26363453",
+  "10.3390/s26185703",
+  "10.1136/bmjopen-2025-114578",
+  "10.1016/j.jcjd.2026.09.005",
+  "10.1186/s12916-026-05276-y",
+  "10.7759/cureus.115385",
+  "10.1016/j.ahj.2026.107619",
+  "10.3389/frai.2026.1898699",
+  "10.1080/08927014.2026.2739961",
+  "10.2340/jrm.v58.44975",
+  "10.1016/j.ijmedinf.2026.106704",
+  "10.2196/86020",
+  "10.3389/fdgth.2026.1820224",
+  "10.1093/ejhf/xuag271",
+  "10.1016/j.clnu.2026.106769",
+  "10.1093/europace/euag153",
+  "10.1016/j.media.2026.104273",
+  "10.1080/20523211.2026.2707845",
+  "10.3233/shti260986",
+  "10.1109/tcbbio.2026.3731395",
+  "10.1080/07448481.2026.2741615",
+  "10.2196/86345",
+  "10.1016/j.dcn.2026.101826",
+  "10.1123/jmpb.2025-0086",
+  "10.1016/j.pmedr.2026.103639",
+  "10.1016/j.jshs.2026.101182",
+  "10.1007/s00787-026-03207-z",
+  "10.1016/j.nwh.2026.09.001",
+  "10.1007/s10278-026-02377-1",
+  "10.1002/epi4.70358",
+  "10.3389/fimmu.2026.1933352",
+  "10.3389/fmicb.2026.1971707"
  ],
  "pmcids_seen": [
   "PMC10031448",
@@ -259,7 +294,7 @@
   "PMC13524361",
   "PMC12381640"
  ],
- "last_run_date": "2026-10-05",
+ "last_run_date": "2026-10-12",
  "runs": [
   {
    "date": "2026-10-05",
@@ -289,6 +324,26 @@
    "date": "2026-10-22",
    "source": "manual queue screening, 4 agents, full text",
    "note": "16 pending queue papers screened: 7 profiled, 9 rejected (5 unobtainable because the publisher served a bot check; re-screen from a hand-fetched PDF)."
+  },
+  {
+   "date": "2026-10-12",
+   "window": "2026-10-05 to 2026-10-12 (edat for PubMed C1/C2; submittedDate for arXiv C3)",
+   "searched": {
+    "C1_wearables_pubmed": 11,
+    "C2_platforms_pubmed": 4,
+    "C3_arxiv_wearables": 0,
+    "C3_arxiv_platforms": 2
+   },
+   "screened_in_queued": 3,
+   "rejected": 14,
+   "rejected_breakdown": {
+    "architecture": 0,
+    "validation": 2,
+    "protocol": 1,
+    "review": 1,
+    "no-cohort": 10
+   },
+   "note": "C2 (digital-phenotyping-platform query) returned only false positives again this run, same mechanism as 2026-10-05, on both PubMed and arXiv: 'AWARE framework' matched ordinary English '[X]-aware framework'/'[X]-Aware' constructions in 6 completely unrelated papers -- 4 from PubMed (radiology image retrieval, SUDEP consensus statement, TB granuloma modeling, gut-metagenomic CRC benchmarking) and 2 from arXiv in the 2026-10-05-to-2026-10-12 window (a federated-learning paper matching 'Heterogeneity-aware', an LLM-agent paper matching 'Cost-Aware') -- none naming any Module 2 platform. No Beiwe, RADAR-base, mindLAMP, Avicenna, Ethica, MetricWire, m-Path, CARP, or LifeData deployment candidates were found on either API. C1 (wearables) found 11 PubMed candidates and 0 in-window arXiv candidates; 3 queued (2 Apple Watch feasibility/acceptability studies, 1 Fitbit feasibility/acceptability study), 8 rejected. 4 of the 8 C1 rejections were 'no-cohort' for insufficient signal density -- a real participant cohort existed but only one of the five deployment-reality signal categories was clearly present in the abstract (e.g. an enrolled-vs-analyzed gap, or a wear-time eligibility threshold used as an inclusion criterion rather than reported as an outcome), one notably borderline (10.1016/j.nwh.2026.09.001, substantively about Fitbit data-availability/missingness but only that one signal category). Both arXiv endpoints were reachable this run (export.arxiv.org required https, not http)."
   }
  ],
  "records": [
@@ -1415,6 +1470,118 @@
    "reason": "unobtainable",
    "note": "Wiley Cloudflare; preprint differs; fetch by hand",
    "source": "module-03-queue-2026-10-22"
+  },
+  {
+   "doi": "10.1080/07448481.2026.2741615",
+   "pmcid": null,
+   "pmid": "42841757",
+   "reason": "validation",
+   "note": "Agreement of physical activity metrics from ActivPAL and ActiGraph accelerometers worn concurrently among college students (n=36); device-vs-device accuracy/agreement study (ICC, Bland-Altman, equivalence testing), not a deployment-feasibility report.",
+   "source": "weekly-literature-scan-2026-10-12"
+  },
+  {
+   "doi": "10.2196/86345",
+   "pmcid": "PMC13641314",
+   "pmid": "42837523",
+   "reason": "protocol",
+   "note": "Remote Longitudinal Tracking of Sleep, Depression, and Cognition Across Early Adolescence; PubMed PublicationType explicitly 'Clinical Trial Protocol' -- no results yet.",
+   "source": "weekly-literature-scan-2026-10-12"
+  },
+  {
+   "doi": "10.1016/j.dcn.2026.101826",
+   "pmcid": null,
+   "pmid": "42843149",
+   "reason": "review",
+   "note": "A systematic review of digital and wearable sensor data in the ABCD study; title explicitly 'systematic review'.",
+   "source": "weekly-literature-scan-2026-10-12"
+  },
+  {
+   "doi": "10.1123/jmpb.2025-0086",
+   "pmcid": "PMC13641217",
+   "pmid": "42840830",
+   "reason": "validation",
+   "note": "External validation of the CHAP (Convolutional Neural Network Hip Accelerometer Posture) deep-learning sedentary-behavior classifier against a reference method in an RCT sample; algorithm-accuracy validation, not a deployment-operations report.",
+   "source": "weekly-literature-scan-2026-10-12"
+  },
+  {
+   "doi": "10.1016/j.pmedr.2026.103639",
+   "pmcid": "PMC13641033",
+   "pmid": "42841029",
+   "reason": "no-cohort",
+   "note": "Fitbit sleep/social-jetlag study in 20,886 Japanese corporate employees (10,670 with complete data). Only one deployment-reality signal present (an enrolled-vs-complete-data gap, read as retention/completeness); no explicit adherence/wear-time, feasibility/acceptability, or technical-failure reporting -- insufficient signal density per the two-distinct-signals screen.",
+   "source": "weekly-literature-scan-2026-10-12"
+  },
+  {
+   "doi": "10.1016/j.jshs.2026.101182",
+   "pmcid": null,
+   "pmid": "42858823",
+   "reason": "no-cohort",
+   "note": "Fitbit/All of Us physical-activity-vs-ophthalmic-disease outcome study (n=14,757). Only one deployment-reality signal present (a >=6-month/10h-day/100-steps-day wear-time inclusion threshold, used as an eligibility criterion, not reported as a deployment outcome); no retention, acceptability, completeness, or technical-failure reporting.",
+   "source": "weekly-literature-scan-2026-10-12"
+  },
+  {
+   "doi": "10.1007/s00787-026-03207-z",
+   "pmcid": null,
+   "pmid": "42853407",
+   "reason": "no-cohort",
+   "note": "Fitbit-derived sleep architecture vs ADHD/externalizing-behavior cross-sectional outcome study in the ABCD cohort (n=4,545). No retention/attrition, adherence/wear-time, feasibility/acceptability, completeness, or technical-failure signal identified in the abstract -- fails the two-distinct-signals screen despite a real cohort.",
+   "source": "weekly-literature-scan-2026-10-12"
+  },
+  {
+   "doi": "10.1016/j.nwh.2026.09.001",
+   "pmcid": null,
+   "pmid": "42833286",
+   "reason": "no-cohort",
+   "note": "Sociodemographic correlates of longitudinal Fitbit sleep-data availability among women in the All of Us Research Program (n=7,385, BYOD cohort); substantively about data completeness/missingness, but only that single signal category is present -- no retention/attrition, adherence/wear-time, feasibility/acceptability, or technical-failure reporting. Flagged as a borderline exclusion: thematically close to Module 3's core question but fails the mechanical two-distinct-signals bar as written.",
+   "source": "weekly-literature-scan-2026-10-12"
+  },
+  {
+   "doi": "10.1007/s10278-026-02377-1",
+   "pmcid": null,
+   "pmid": "42855632",
+   "reason": "no-cohort",
+   "note": "CXR-CoRe chest X-ray report-retrieval framework; false positive from 'AWARE framework'[tiab] matching 'section-aware framework' -- no digital-phenotyping platform, no wearable/smartphone cohort.",
+   "source": "weekly-literature-scan-2026-10-12"
+  },
+  {
+   "doi": "10.1002/epi4.70358",
+   "pmcid": "PMC13643408",
+   "pmid": "42839771",
+   "reason": "no-cohort",
+   "note": "Italian expert consensus statement on SUDEP risk/mechanisms/prevention; false positive from 'AWARE framework'[tiab] matching 'mechanism-aware framework' -- no digital-phenotyping platform, no participant cohort (consensus statement, not a deployment study).",
+   "source": "weekly-literature-scan-2026-10-12"
+  },
+  {
+   "doi": "10.3389/fimmu.2026.1933352",
+   "pmcid": "PMC13648034",
+   "pmid": "42852373",
+   "reason": "no-cohort",
+   "note": "Necro-mosaic TB-granuloma cell-death modeling framework; false positive from 'AWARE framework'[tiab] matching 'lesion-aware framework' -- no digital-phenotyping platform, no human participant cohort (lesion/tissue modeling paper).",
+   "source": "weekly-literature-scan-2026-10-12"
+  },
+  {
+   "doi": "10.3389/fmicb.2026.1971707",
+   "pmcid": "PMC13650428",
+   "pmid": "42857378",
+   "reason": "no-cohort",
+   "note": "CRC-TrustBench gut-metagenomic colorectal-cancer classifier benchmark; false positive from 'AWARE framework'[tiab] matching 'leakage-aware framework' -- no digital-phenotyping platform, no participant cohort (metagenomic ML benchmarking paper).",
+   "source": "weekly-literature-scan-2026-10-12"
+  },
+  {
+   "doi": null,
+   "pmcid": null,
+   "arxiv_id": "2610.09091",
+   "reason": "no-cohort",
+   "note": "FedRSPO+: A Heterogeneity-aware Algorithm for Decision-focused Federated Learning; false positive from the arXiv C2 'AWARE framework' query matching 'Heterogeneity-aware' -- unrelated federated-learning paper, no digital-health content, no participant cohort.",
+   "source": "weekly-literature-scan-2026-10-12"
+  },
+  {
+   "doi": null,
+   "pmcid": null,
+   "arxiv_id": "2610.07335",
+   "reason": "no-cohort",
+   "note": "Selective Critique for Cost-Aware LLM Agents in Long-Horizon Decision Making; false positive from the arXiv C2 'AWARE framework' query matching 'Cost-Aware' -- unrelated LLM-agent paper, no digital-health content, no participant cohort.",
+   "source": "weekly-literature-scan-2026-10-12"
   }
  ]
 }
