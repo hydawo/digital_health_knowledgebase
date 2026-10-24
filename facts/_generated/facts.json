@@ -5727,7 +5727,7 @@
     "url": "https://forum.avicennaresearch.com/t/weekly-release-notes-2026-10-06/2188",
     "type": "vendor_docs",
     "quote": "This week’s release improves participant invitations with CSV import and new options for each invitee",
-    "retrieved": "2026-10-11"
+    "retrieved": "2026-10-24"
    },
    {
     "url": "https://forum.avicennaresearch.com/t/our-new-brand-and-identity/1120",
@@ -11839,7 +11839,7 @@
     "url": "https://www.lifedatacorp.com/lifedata-privacy-policy/",
     "type": "vendor_legal",
     "quote": "LifeData retains a copy for no longer than 30 days, after which it will be permanently deleted",
-    "retrieved": "2026-10-11"
+    "retrieved": "2026-10-24"
    },
    {
     "url": "https://www.lifedatacorp.com/lifedata-terms-of-use/",
@@ -20467,7 +20467,7 @@
    {
     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13438180/",
     "type": "paper",
-    "retrieved": "2026-10-10",
+    "retrieved": "2026-10-24",
     "quote": "Apple has multiple partnerships with the research community, including an Investigator Support Program that provides free devices."
    }
   ]
@@ -26005,7 +26005,7 @@
    {
     "url": "https://store.google.com/us/product/pixel_watch_4?hl=en-US",
     "type": "vendor_page",
-    "retrieved": "2026-10-10",
+    "retrieved": "2026-10-24",
     "quote": "Google Pixel Watch 4 From $349.99"
    }
   ]
@@ -39943,12 +39943,14 @@
    },
    {
     "url": "https://api.fda.gov/device/registrationlisting.json?search=k_number:K201456",
+    "fetch_url": "https://api.fda.gov/device/registrationlisting.json?search=k_number:K201456&limit=100",
     "type": "regulator_db",
     "quote": "Scan Monitor (ScanWatch 2, HWA10)",
     "retrieved": "2026-10-10"
    },
    {
     "url": "https://api.fda.gov/device/registrationlisting.json?search=k_number:K201456",
+    "fetch_url": "https://api.fda.gov/device/registrationlisting.json?search=k_number:K201456&limit=100",
     "type": "regulator_db",
     "quote": "Oximeter",
     "retrieved": "2026-10-10"
@@ -40060,6 +40062,7 @@
    },
    {
     "url": "https://api.fda.gov/device/registrationlisting.json?search=k_number:K230812",
+    "fetch_url": "https://api.fda.gov/device/registrationlisting.json?search=k_number:K230812&limit=100",
     "type": "regulator_db",
     "quote": "Withings Scan Monitor 2 (Body Scan, wbs08; BodyScan 2, WBS15)",
     "retrieved": "2026-10-10"
@@ -40134,9 +40137,10 @@
   "sources": [
    {
     "url": "https://api.fda.gov/device/registrationlisting.json?search=k_number:K223374",
+    "fetch_url": "https://api.fda.gov/device/registrationlisting.json?search=k_number:K223374&limit=100",
     "type": "regulator_db",
     "quote": "WPM05- Withings BPM Connect",
-    "retrieved": "2026-10-10"
+    "retrieved": "2026-10-24"
    },
    {
     "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K223374",
@@ -40154,9 +40158,10 @@
    },
    {
     "url": "https://api.fda.gov/device/registrationlisting.json?search=k_number:K240102",
+    "fetch_url": "https://api.fda.gov/device/registrationlisting.json?search=k_number:K240102&limit=100",
     "type": "regulator_db",
     "quote": "Withings BPM Pro 2, Model: WPM07, REF: WPM07-07",
-    "retrieved": "2026-10-10"
+    "retrieved": "2026-10-24"
    }
   ]
  },
