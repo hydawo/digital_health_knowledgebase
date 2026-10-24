@@ -24,6 +24,7 @@ put the newest at the bottom of its section.
 | 11 | Download 17 free Module 5 cardiac papers blocked to scripts (Wiley, OUP, PMC copies), check each is CC-licensed, save under the given names and flip their rows to Verified OA | Seeding pass could not fetch them | `module-05-measurement-science/cardiac/_hand-download.md` | none |
 | 12 | Download 23 free Module 5 activity papers blocked to scripts (JMIR, Springer/BMC, BMJ, Elsevier, PMC copies), check each is CC-licensed (four have only a repository listing as evidence), save under the given names and flip their rows to Verified OA | Seeding pass could not fetch them | `module-05-measurement-science/activity/_hand-download.md` | none |
 | 13 | Download 21 free Module 5 mental health papers blocked to scripts (mostly JMIR, plus PeerJ, Wiley, ACM, OUP, SAGE, Springer, Elsevier, MDPI), check each is CC-licensed, save under the given names and flip their rows to Verified OA | Seeding pass could not fetch them | `module-05-measurement-science/mental-health/_hand-download.md` | none |
+| 14 | Download Wyatt 2020 (Apple Watch abnormal pulse, PMC7526465, CC BY-NC) and store it under `module-01-wearables/literature/apple-watch/` | Europe PMC served a bot check | `module-01-wearables/literature-library.md`, Apple Watch Tier C | none |
 
 ## Vendor and author confirmations
 
@@ -52,6 +53,7 @@ Generator for more sheets: `python3 tools/facts/confirm_sheet.py <company>`.
 | 3 | Point the Monday literature scan at `main`, and add `www.ebi.ac.uk`, `pmc.ncbi.nlm.nih.gov`, `www.ncbi.nlm.nih.gov` to its network allowlist | claude.ai Routines UI |
 | 4 | Compliance fields for a platform with no hosted service: `not_applicable` (Purple Robot now) or `not_public` (AWARE, Beiwe)? | `facts/purple-robot.yaml` |
 | 5 | LinkedIn draft still says 83 open questions; it is 79 now | your draft |
+| 6 | Delete the merged scan branches `claude/hopeful-fermat-crstik` and `claude/hopeful-fermat-7k2zdt` on GitHub (both merged into `main` on 2026-10-24; the session's permission check blocks deleting remote branches) | GitHub branches page |
 
 ## Done
 

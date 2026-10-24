@@ -665,6 +665,16 @@
    "reason": "AF notification vs ICM"
   },
   {
+   "key": "10.1093/jamia/ocaa137",
+   "kind": "paper",
+   "module": 1,
+   "file": "module-01-wearables/literature-library.md",
+   "row_id": null,
+   "title": "Apple Watch abnormal pulse: clinical yield (Wyatt 2020)",
+   "weight": "primary",
+   "reason": "Downstream testing and yield after irregular-pulse alerts"
+  },
+  {
    "key": "10.1101/2024.01.04.24300784",
    "kind": "paper",
    "module": 1,

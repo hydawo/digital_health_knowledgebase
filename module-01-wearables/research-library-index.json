@@ -54,7 +54,8 @@
     "42818127",
     "42855352",
     "42854191",
-    "42832266"
+    "42832266",
+    "32979046"
   ],
   "last_run_date": "2026-10-19",
   "runs": [
@@ -204,7 +205,8 @@
     "10.7759/cureus.115385",
     "10.1016/j.sleh.2026.09.011",
     "10.2196/88846",
-    "10.2196/93019"
+    "10.2196/93019",
+    "10.1093/jamia/ocaa137"
   ],
   "records": [
     {
@@ -800,6 +802,20 @@
       "tier": "C",
       "tier_confidence": "Corroborated",
       "source": "weekly-literature-scan-2026-10-19"
+    },
+    {
+      "pmid": "32979046",
+      "doi": "10.1093/jamia/ocaa137",
+      "pmcid": "PMC7526465",
+      "title": "Clinical evaluation and diagnostic yield following evaluation of abnormal pulse detected using Apple Watch",
+      "year": "2020",
+      "device": "apple-watch",
+      "category": "Use-case",
+      "tier": "C",
+      "tier_confidence": "Verified",
+      "pdf": null,
+      "pdf_status": "oa_not_obtained",
+      "source": "manual add-paper 2026-10-24"
     }
   ]
 }

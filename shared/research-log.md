@@ -2,6 +2,12 @@
 
 ---
 
+## 2026-10-24 - Manual add: Wyatt 2020, Apple Watch abnormal pulse (Module 1)
+
+- **Paper:** Wyatt KD et al. 2020, *JAMIA* 27(9):1359-1363, 10.1093/jamia/ocaa137, PMID 32979046, PMC7526465. Left out of Module 5 Cardiac on 2026-10-22 because it studies one device; filed here instead.
+- **Module 1, Apple Watch, Tier C Verified, Use-case.** COI and funding quoted from Europe PMC full-text XML: FDA (Yale-Mayo CERSI) and NIH funding, no Apple tie; Mayo Clinic's partnership with AliveCor (a competing ECG product) is disclosed and noted.
+- **OA:** CC BY-NC, but the Europe PMC PDF route served a bot check; recorded as OA but not obtained this pass and added to the manual sweep. Tagged cardiac (primary) for the Cardiac hub.
+
 ## 2026-10-23 (latest) - Module 5 domain overviews written
 
 - **Files:** `module-05-measurement-science/<domain>/overview.md` for sleep, cardiac, activity and mental health, each about 1,000 words: what the field agrees on, where devices fall short, a study-team checklist, open gaps, five papers to read first, links into the hub. Linked from the module README, each catalogue and each hub (`build_hubs.py` adds the link when an overview exists), and shown inline in the explorer's Module 5 tab.

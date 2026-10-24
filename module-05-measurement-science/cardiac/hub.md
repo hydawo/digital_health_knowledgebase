@@ -10,7 +10,7 @@ For a short reading of what this evidence says, see [`overview.md`](overview.md)
 |---|---|
 | Module 5 catalogue | 68 |
 | Device and platform profiles | 12 |
-| Papers in Modules 1, 2 and 4 | 44 |
+| Papers in Modules 1, 2 and 4 | 45 |
 | Module 3 deployment profiles | 6 |
 
 ## Measurement science (this module)
@@ -135,6 +135,7 @@ For a short reading of what this evidence says, see [`overview.md`](overview.md)
 - Accuracy of commercial technologies for resting HR and HRV (primary; [catalogue](../../module-01-wearables/literature-library.md)) [doi](https://doi.org/10.3389/fspor.2021.585870): RHR and HRV accuracy comparison
 - Alcohol effects on heart rate, sleep, activity (WHOOP) (primary; [catalogue](../../module-01-wearables/literature-library.md)) [doi](https://doi.org/10.1371/journal.pdig.0001284): Heart rate listed first among outcomes
 - Apple Heart Study: large-scale AF identification (primary; [catalogue](../../module-01-wearables/literature-library.md)) [doi](https://doi.org/10.1056/nejmoa1901183): AF detection is the primary outcome
+- Apple Watch abnormal pulse: clinical yield (Wyatt 2020) (primary; [catalogue](../../module-01-wearables/literature-library.md)) [doi](https://doi.org/10.1093/jamia/ocaa137): Downstream testing and yield after irregular-pulse alerts
 - Apple Watch AF detection vs 24-hour Holter (primary; [catalogue](../../module-01-wearables/literature-library.md)): AF detection vs Holter
 - Apple Watch AF detection, multicentre (primary; [catalogue](../../module-01-wearables/literature-library.md)) [doi](https://doi.org/10.1111/jce.15892): AF detection accuracy
 - Apple Watch cardiovascular indices in cardiac patients (primary; [catalogue](../../module-01-wearables/literature-library.md)) [doi](https://doi.org/10.5334/gh.1456): HR, SpO2 in cardiac disease patients

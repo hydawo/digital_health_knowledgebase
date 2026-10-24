@@ -901,6 +901,19 @@ college students with alcohol use disorder symptoms; Apple Watch used as an adju
 intervention, not evaluated for sensor accuracy. CoiStatement: "Conflicts of Interest: None declared."
 **Tier C. Corroborated.** **Category: Use-case.** https://pubmed.ncbi.nlm.nih.gov/42832266/
 
+**Added 2026-10-24 (manual add-paper).** Wyatt KD, Poole LR, Mullan AF, Kopecky SL, Heaton HA. 2020.
+"Clinical evaluation and diagnostic yield following evaluation of abnormal pulse detected using Apple
+Watch." *Journal of the American Medical Informatics Association* 27(9):1359-1363, PMID 32979046,
+PMC7526465. Mayo Clinic. Retrospective review of 264 patients evaluated over 4 months after an
+abnormal pulse detected with Apple Watch; a clinically actionable cardiovascular diagnosis was made in
+30 (11.4%), including 6 of 41 with an explicit alert, after frequent ECGs, Holter monitoring and chest
+x-rays. Funding: FDA grant U01FD005938 (Yale-Mayo CERSI) and NIH UL1TR002377. COI statement (full-text
+XML): "The authors have no personal conflicts of interest to declare. All authors are employed by Mayo
+Clinic. Mayo Clinic has a partnership with AliveCor, which sells a direct-to-consumer
+electrocardiogram product." No Apple tie; the AliveCor partnership is with a competing product.
+**Tier C. Verified.** **Category: Use-case (clinical yield of irregular-rhythm alerts; left out of
+Module 5 Cardiac because it studies one device).** https://pubmed.ncbi.nlm.nih.gov/32979046/
+
 ## Apple Watch — systematic reviews / meta-analyses
 
 **Hogue T, Khoury A, Njeim P, Aswad N, Youssef L, Birtulescu S, et al. 2026.** "Advancement in
