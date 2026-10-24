@@ -56,7 +56,7 @@
     "42854191",
     "42832266"
   ],
-  "last_run_date": "2026-10-12",
+  "last_run_date": "2026-10-19",
   "runs": [
     {
       "date": "2026-08-31",
@@ -132,6 +132,24 @@
         "Review": 0
       },
       "note": "PMID 42854191 double-counted in the oura/apple_watch searched tallies above (it matched both queries) but filed once per device section (Oura Tier C and Apple Watch Tier C, cross-referenced) for a net 3 distinct new papers. PMID 42855352 (Oura ring vs. Actiwatch validation, NUS Oura-NUS Joint Lab) tiered B on the Affiliation field directly from the primary PubMed record, since no <CoiStatement> element was present to parse; see entry note in research-library-wearables.md and shared/research-log.md."
+    },
+    {
+      "date": "2026-10-19",
+      "source": "weekly-literature-scan routine (PubMed esearch/efetch, eutils.ncbi.nlm.nih.gov)",
+      "window": "2026-10-05 to 2026-10-19 (edat)",
+      "searched": {
+        "oura": 2,
+        "whoop": 0,
+        "apple_watch": 2
+      },
+      "screened_in": 3,
+      "screened_out": 0,
+      "category_breakdown": {
+        "Use-case": 2,
+        "Validation": 1,
+        "Review": 0
+      },
+      "note": "PMID 42854191 matched both the Oura and Apple Watch searches (a 2-participant feasibility case report using Apple Watch + Oura, and Fitbit + Oura); filed once under Oura per this file's established convention of listing a mixed-device paper in one section with a note (cf. Hirten et al.), rather than duplicating across device sections. PMID 42855352 classified Tier B (not the scan prompt's literal CoiStatement-absence default of Tier C) because the PubMed record's own author-affiliation field names the 'Oura-National University of Singapore (NUS) Joint Lab, Oura Pte Ltd, Singapore' for 3 of 5 authors -- the same named vendor-university partnership already established as Tier B for the Liang/Yilmaz/Soon 2024 entry from the same joint lab."
     }
   ],
   "dois_seen": [
@@ -183,7 +201,10 @@
     "10.3390/s24175713",
     "10.3390/s26175625",
     "10.7759/cureus.113337",
-    "10.7759/cureus.115385"
+    "10.7759/cureus.115385",
+    "10.1016/j.sleh.2026.09.011",
+    "10.2196/88846",
+    "10.2196/93019"
   ],
   "records": [
     {
@@ -742,6 +763,43 @@
       "pdf": "module-01-wearables/literature/empatica/2020-milstein-frontbehavneurosci-empatica-e4-eda-hrv-dyadic.pdf",
       "pdf_status": "ok",
       "source": "2026-10-09 unresolved-questions pass (Q53/59/60/61/62/66/71/72/73/77/78/79/81/82)"
+    },
+    {
+      "pmid": "42855352",
+      "doi": "10.1016/j.sleh.2026.09.011",
+      "pmcid": null,
+      "title": "Comparison of rest-activity rhythm metrics derived from Oura ring and actiwatch devices: A device validation and analytical pipeline comparison study",
+      "year": "2026",
+      "device": "oura",
+      "category": "Validation",
+      "tier": "B",
+      "tier_confidence": "Corroborated",
+      "source": "weekly-literature-scan-2026-10-19"
+    },
+    {
+      "pmid": "42854191",
+      "doi": "10.2196/93019",
+      "pmcid": "PMC13652396",
+      "title": "Feasibility and Methodological Consideration of Using Wearable Devices to Examine the Relationship Between Sleep and Balance: Case Report With 2 College Students",
+      "year": "2026",
+      "device": "oura",
+      "category": "Use-case",
+      "tier": "C",
+      "tier_confidence": "Corroborated",
+      "note": "mixed-device study, also substantively covers Apple Watch (and Fitbit, out of scope); filed once under Oura per convention",
+      "source": "weekly-literature-scan-2026-10-19"
+    },
+    {
+      "pmid": "42832266",
+      "doi": "10.2196/88846",
+      "pmcid": "PMC13637571",
+      "title": "A Problem-Solving Therapy With Apple Watch Support for College Students With Alcohol Use Disorder Symptoms: Pilot Randomized Controlled Trial",
+      "year": "2026",
+      "device": "apple-watch",
+      "category": "Use-case",
+      "tier": "C",
+      "tier_confidence": "Corroborated",
+      "source": "weekly-literature-scan-2026-10-19"
     }
   ]
 }
