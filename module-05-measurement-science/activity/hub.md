@@ -39,7 +39,7 @@ For a short reading of what this evidence says, see [`overview.md`](overview.md)
 - P-017: Standardizing analytic methods and reporting in activity monitor validation studies, *Medicine and Science in Sports and Exercise* 2019
 - P-018: Recommendations for assessment of the reliability, sensitivity, and validity of data provided by wearable sensors designed for monitoring physical activity, *JMIR mHealth and uHealth* 2018
 - P-019: Using free-living heart rate data as an objective method to assess physical activity: a scoping review and recommendations by the INTERLIVE-Network targeting consumer wearables, *Sports Medicine* 2025
-- P-020: Disagreements in physical activity monitor validation study guidelines create challenges in conducting validity studies, *Frontiers in Digital Health* 2022
+- P-020: Disagreements in physical activity monitor validation study guidelines create challenges in conducting validity studies, *Frontiers in Digital Health* 2023
 - P-021: Quality evaluation of free-living validation studies for the assessment of 24-hour physical behavior in adults via wearables: systematic review, *JMIR mHealth and uHealth* 2022
 - P-022: The wearable landscape: issues pertaining to the validation of the measurement of 24-h physical activity, sedentary, and sleep behavior assessment, *Journal of Sport and Health Science* 2025
 - P-023: Physical activity monitoring for step counting (ANSI/CTA-2056-A), *CTA standard* 2019

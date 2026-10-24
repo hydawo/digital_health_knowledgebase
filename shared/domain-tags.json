@@ -2392,6 +2392,17 @@
    "reason": "Depression flagship among several conditions"
   },
   {
+   "key": "module-03-applied-studies/profiles/apple-watch-pst-college-alcohol-use-pilot-rct.md",
+   "kind": "m3-profile",
+   "module": 3,
+   "file": "module-03-applied-studies/profiles/apple-watch-pst-college-alcohol-use-pilot-rct.md",
+   "row_id": null,
+   "title": "Hallihan 2026, Apple Watch alcohol use pilot",
+   "weight": "primary",
+   "reason": "Alcohol use disorder symptoms; watch-supported therapy",
+   "doi": "10.2196/88846"
+  },
+  {
    "key": "module-03-applied-studies/profiles/avicenna-ema-suicidal-ideation-iatrogenic.md",
    "kind": "m3-profile",
    "module": 3,

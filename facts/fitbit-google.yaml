@@ -288,7 +288,7 @@ facts:
   sources:
   - url: https://store.google.com/us/product/pixel_watch_4?hl=en-US
     type: vendor_page
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-24'
     quote: Google Pixel Watch 4 From $349.99
   recheck_by: '2026-11-09'
 - field: subscription_price

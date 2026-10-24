@@ -11,7 +11,7 @@ For a short reading of what this evidence says, see [`overview.md`](overview.md)
 | Module 5 catalogue | 53 |
 | Device and platform profiles | 7 |
 | Papers in Modules 1, 2 and 4 | 64 |
-| Module 3 deployment profiles | 36 |
+| Module 3 deployment profiles | 37 |
 
 ## Measurement science (this module)
 
@@ -116,6 +116,7 @@ For a short reading of what this evidence says, see [`overview.md`](overview.md)
 - [Cohen et al. 2023 - SHARP: mindLAMP relapse prediction across three sites in two countries, N=132](../../module-03-applied-studies/profiles/mindlamp-relapse-3site.md) (primary): Schizophrenia relapse prediction
 - [de Angel et al. 2023 - RMT engagement during active psychological treatment for depression, N=66, 7 months](../../module-03-applied-studies/profiles/radar-base-treatment-engagement.md) (primary): Depression treatment engagement
 - [Dennard et al. 2025 - ESM engagement inside the AVATAR2 psychosis trial (m-Path), N=134 of 207](../../module-03-applied-studies/profiles/mpath-avatar2-esm-engagement.md) (primary): Psychosis trial, auditory hallucinations
+- [Hallihan 2026, Apple Watch alcohol use pilot](../../module-03-applied-studies/profiles/apple-watch-pst-college-alcohol-use-pilot-rct.md) (primary): Alcohol use disorder symptoms; watch-supported therapy
 - [Huang et al. 2025 - Beiwe digital phenotyping in adolescents with bipolar disorder over 18 months, N=48](../../module-03-applied-studies/profiles/beiwe-adolescent-feasibility.md) (primary): Adolescents with bipolar disorder
 - [Kivelä et al. 2024 - Acceptability, feasibility and iatrogenic effects of EMA of suicidal ideation (Ethica/Avi](../../module-03-applied-studies/profiles/avicenna-ema-suicidal-ideation-iatrogenic.md) (primary): EMA of suicidal ideation; iatrogenic effects
 - [Kochhar et al. 2025 - EMA protocol psychometrics and participant experience in smoking youth (Avicenna), N=84](../../module-03-applied-studies/profiles/avicenna-smoking-youth-ema-compliance.md) (primary): EMA in smoking youth; substance use

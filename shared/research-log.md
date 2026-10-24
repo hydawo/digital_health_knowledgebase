@@ -2,6 +2,15 @@
 
 ---
 
+## 2026-10-24 (later) - Unattended pass: scan merges, Module 3 queue, fact issue #2, Module 5 checks
+
+- **Scan branches:** 2026-10-12 merged whole; 2026-10-19 merged deduplicated (it re-filed the same three Module 1 papers). Both checked with `verify_scan_additions.py`, 0 flags. Deleting the two remote branches was blocked by the session's permission check; listed in the manual sweep.
+- **Module 3 queue (agent, full text):** Hallihan 2026 (Apple Watch with problem-solving therapy, college students with alcohol use disorder symptoms, pilot RCT, N=26) profiled; Li 2026 and the Roadmap dementia caregiver app rejected `no-cohort`; PROPHESY rejected `unobtainable` (bot check). Module 3 is 74 profiles / 72 deployments.
+- **Module 1 tiers:** Li 2026 and Hallihan 2026 confirmed Tier C from quoted statements. Qin 2026 corrected from B Verified to B Corroborated (affiliation quoted, COI statement not read; Tier A not excluded). Ong 2026 (BMC Medicine) moved from Tier C to Tier B: its own entry quotes the senior author's Oura advisory board seat, an author tie under the file's definition. Both changes bring the text library in line with the ledger, which already had them right.
+- **Fact issue #2 (agent):** all 22 items checked; most were fixed on 2026-10-21. No fact value, status or confidence changed. Withings FDA quotes flickered because openFDA returns one result in varying order; `&limit=100` fetch URLs added for four K numbers (one checked by hand). Retrieved dates refreshed where quotes match. Profile and source lines that still contradicted the 2026-10-21 changes fixed: Avicenna GPS mobility features now Unclear (forum page 404, security page says no processing), Beiwe ambient audio removed from the backend, m-Path privacy statement now names Azure. The 89 check-by-hand pages are on the manual sweep.
+- **Module 5 Crossref check (`tools/domains/check_catalogue.py`, new):** 237 DOI rows. Two years corrected (P-020 2023, C-040 2018, both published online in January). Other flags were subtitles, a Unicode hyphen and the script's own parsing; the script now handles those.
+- **Also:** Wyatt 2020 filed in Module 1; Q135 to Q139 added from the Module 5 gaps (84 open); `known_dois.py` and tests for the domain tools.
+
 ## 2026-10-24 - Manual add: Wyatt 2020, Apple Watch abnormal pulse (Module 1)
 
 - **Paper:** Wyatt KD et al. 2020, *JAMIA* 27(9):1359-1363, 10.1093/jamia/ocaa137, PMID 32979046, PMC7526465. Left out of Module 5 Cardiac on 2026-10-22 because it studies one device; filed here instead.

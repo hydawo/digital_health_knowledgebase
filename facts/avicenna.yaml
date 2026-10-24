@@ -121,7 +121,7 @@ facts:
   - url: https://forum.avicennaresearch.com/t/weekly-release-notes-2026-10-06/2188
     type: vendor_docs
     quote: This week’s release improves participant invitations with CSV import and new options for each invitee
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-24'
   - url: https://forum.avicennaresearch.com/t/our-new-brand-and-identity/1120
     type: vendor_page
     quote: The name Ethica will be dropped by July 2024.

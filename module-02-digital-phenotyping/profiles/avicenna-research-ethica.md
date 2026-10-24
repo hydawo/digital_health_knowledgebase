@@ -66,7 +66,7 @@
 - **Updated 2026-10-11 (vendor fact record, derived_metrics, Verified).**
 - Phone-derived step count and activity type [43].
 - Vendor-computed wearable metrics pulled from cloud accounts (Garmin, Fitbit, Oura readiness and sleep, WHOOP recovery, Polar sleep) [21].
-- Platform-native GPS mobility features computed in a nightly batch: daily distance, radius of gyration, location entropy, time at home, daily location clusters (reference posted 2025-12-16) [24].
+- GPS mobility features: **unclear whether still offered.** A vendor forum reference posted 2025-12-16 described a nightly batch (daily distance, radius of gyration, location entropy, time at home, daily location clusters), but that page has returned 404 since 2026-10-19 and is absent from forum search. Avicenna's security page says it "does not perform any processing on the data collected for a given study". Ask Avicenna [24].
 - An Analysis page in the researcher dashboard for data quality, engagement and retention (added 2026-03) [24]. Kibana and Vega charts in the dashboard.
 - The security post still says Avicenna "does not perform any processing on the data collected for a given study" [16], which the mobility-features reference contradicts.
 
@@ -157,7 +157,7 @@
 - Data made available to researchers within minutes of participant upload, per the vendor's own materials, a notably fast latency claim relative to platforms with less-documented sync behavior.
 - Academic origin (Ethica/iEpi, University of Saskatchewan) gives the platform a longer track record than a purely commercial startup.
 - White-label is a working service, not just a listed option: 33 further iOS apps under Avicenna Research Inc. on 2026-10-11 [30], with on-premises installation available on customer infrastructure [28].
-- Platform-native GPS mobility features (radius of gyration, location entropy, time at home) computed nightly [24], plus a documented sensor catalogue covering phone sensors, the Garmin Health SDK at 25 Hz and SensorKit [21][26][27].
+- A documented sensor catalogue covering phone sensors, the Garmin Health SDK at 25 Hz and SensorKit [21][26][27].
 - A specific, dated vendor compliance statement: ISO 27001:2022 certification stated (Nov 2024, surveillance audit Nov 2025, zero nonconformities), with a UKAS CertCheck link, plus detailed HIPAA/GDPR/PIPEDA language addressing minors' data. **Corroborated (vendor-stated)**; the certificate itself was not read (corrected 2026-10-10).
 
 ## Limitations
@@ -294,7 +294,7 @@
 21. Avicenna Research, "Raw Data" reference. https://forum.avicennaresearch.com/t/raw-data/1241 (accessed 2026-10-11, vendor fact record). **Primary/Verified.** Data-source list including SensorKit ECG and PPG and Oura, WHOOP and Polar metrics; ZIP of CSV, KML, GPX and GEXF exports; 7-day download window; export size limits; direct database access on request.
 22. Avicenna Research, "Data Sources" reference. https://forum.avicennaresearch.com/t/data-sources/1266 (accessed 2026-10-11, vendor fact record). **Primary/Verified.** Collection cycle 5 minutes by default, 1 to 60 minutes custom; 60-second accelerometer burst; daily cloud fetch; web-app participants contribute no phone-sensor data.
 23. Avicenna Research, "How to export study data using the API." https://forum.avicennaresearch.com/t/how-to-export-study-data-using-the-api/1496 (posted 2026-02-09; accessed 2026-10-11, vendor fact record). **Primary/Verified.** Data Export API for sensor data, key from support, create, status and download endpoints.
-24. Avicenna Research, GPS mobility features reference https://forum.avicennaresearch.com/t/1460 and Analysis page announcement https://forum.avicennaresearch.com/t/1508 (accessed 2026-10-11, vendor fact record). **Primary/Verified.** Nightly batch features (distance, radius of gyration, location entropy, time at home, clusters); Analysis page added 2026-03.
+24. Avicenna Research, GPS mobility features reference https://forum.avicennaresearch.com/t/1460 (read 2026-10-11; 404 since 2026-10-19, so **Unclear**) and Analysis page announcement https://forum.avicennaresearch.com/t/1508 (accessed 2026-10-11, vendor fact record; **Primary/Verified**, Analysis page added 2026-03). See `facts/avicenna.yaml`, `derived_metrics` note.
 25. Avicenna Research, iOS app usage announcement. https://forum.avicennaresearch.com/t/1512 (accessed 2026-10-11, vendor fact record). **Primary/Verified.** Hourly Screen Time usage summaries on iOS.
 26. Avicenna Research, "Garmin Health SDK" reference https://forum.avicennaresearch.com/t/garmin-health-sdk/1261 and Garmin SDK post https://forum.avicennaresearch.com/t/1645 (2026-09-22) (accessed 2026-10-11, vendor fact record). **Primary/Verified.** 25 Hz accelerometer, 32 Hz gyroscope, heart rate or SpO2 sampling from 1 second to 1 hour; data routed to an institution's own Avicenna infrastructure where applicable.
 27. Avicenna Research, "SensorKit" reference https://forum.avicennaresearch.com/t/sensorkit/1290 and "SensorKit approval" guide https://forum.avicennaresearch.com/t/sensorkit-approval/1563 (accessed 2026-10-11, vendor fact record). **Primary.** Per-study Apple entitlement, separate app, 32 Hz downsampling, about 30 hours to export; vendor-stated compliance with GDPR, PIPEDA, HIPAA, FDA 21 CFR Part 11 and ISO 27001.

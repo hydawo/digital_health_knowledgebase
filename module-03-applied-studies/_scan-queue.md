@@ -29,10 +29,6 @@ screening in this project has a measured platform-misattribution rate of roughly
 
 | Found | DOI | PMCID | Title | Venue / year | Apparent technology | Signals | OA |
 |---|---|---|---|---|---|---|---|
-| 2026-10-12 | 10.2196/93019 | PMC13652396 | Feasibility and Methodological Consideration of Using Wearable Devices to Examine the Relationship Between Sleep and Balance: Case Report With 2 College Students | JMIR Form Res, 2026 | Apple Watch + Oura Ring + Fitbit (C1 wearable query) | feasibility (primary outcome, explicit), data completeness (missing-data rates reported: 75.2%→14.1%/20.3% wrist, →9.4%/25% Oura, after structured weekly check-ins) | OA (JMIR CC BY; PMCID present) |
-| 2026-10-12 | 10.2196/88846 | PMC13637571 | A Problem-Solving Therapy With Apple Watch Support for College Students With Alcohol Use Disorder Symptoms: Pilot Randomized Controlled Trial | JMIR Form Res, 2026 | Apple Watch (C1 wearable query) | feasibility + acceptability (explicit, primary outcomes of this pilot RCT) | OA (JMIR CC BY; PMCID present) |
-| 2026-10-12 | 10.3389/frdem.2026.1861809 | PMC13642210 | Use of the Roadmap positive activity app in daily life among dementia caregivers: evidence of feasibility and acceptability | Front Dement, 2026 | Fitbit (C1 wearable query) — primary intervention is the non-profiled "Roadmap" mHealth app; Fitbit is the co-deployed wearable | feasibility + acceptability (explicit, quantified: 87% app engagement, 95% survey completion, 100%/75% Fitbit wear by caregiver/recipient) | OA (Frontiers CC BY; PMCID present) |
-| 2026-10-19 | 10.1016/j.aucc.2026.101711 | — | PhysiotheRapy following OPen HEart SurgerY (PROPHESY): A feasibility study investigating physical activity following open heart surgery | Aust Crit Care, 2026 | ActiGraph GT3X (C1 wearable query) | feasibility (title + explicit recruitment/wear/completeness outcomes), adherence/wear time (87% ActiGraph wear adherence), data completeness (98% activity-data collection; 55% complete outcome datasets), retention (178 screened, 64% of eligible recruited) | Unclear (no PMCID indexed; Elsevier subscription journal) |
 
 **2026-10-22:** the 16 rows then pending were screened from full text (7 profiled, 9 rejected; see
 `feasibility-matrix.md` Part F and the ledger). Five rejections are `unobtainable` only because the publisher
@@ -42,6 +38,8 @@ served a bot check to scripts. Re-screen these from a PDF fetched by hand in a b
 (Apple Watch, older ED patients). 10.4037/aacnacc2026416 is closed access. Leads: Pinto 2025 J Cancer Surviv
 10.1007/s11764-025-01811-7 (parent trial of a rejected Fitbit paper); two earlier DIPH.DEM papers,
 10.3390/s25216635 and 10.3389/fragi.2026.1768935 (same cohort as the Boyle 2026 profile).
+
+**2026-10-24:** the four rows then pending were screened from full text (1 profiled, Hallihan 2026; 3 rejected; report `_screening-reports/2026-10-24-queue.md`). PROPHESY (10.1016/j.aucc.2026.101711) is `unobtainable` only because of a bot check; re-screen from a PDF fetched by hand.
 
 Platform attribution is Reported — verify from full text before profiling.
 

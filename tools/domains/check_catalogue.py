@@ -5,7 +5,8 @@
     python3 tools/domains/check_catalogue.py                 # every domain folder
 
 Prints one line per row that does not match and a summary. Rows without a DOI (standards sold by
-their publisher) are skipped. Sends no personal identifier to Crossref and waits between requests.
+their publisher) and arXiv DOIs (registered with DataCite) are skipped. A title matches if it is close to
+Crossref's title, with or without the subtitle. Sends no personal identifier to Crossref and waits between requests.
 """
 import difflib
 import json
@@ -26,7 +27,8 @@ TITLE_MIN = 0.85
 
 
 def norm(s):
-    s = unicodedata.normalize('NFKD', s or '').encode('ascii', 'ignore').decode()
+    s = re.sub('[\u2010-\u2015\u2212]', '-', s or '')
+    s = unicodedata.normalize('NFKD', s).encode('ascii', 'ignore').decode()
     return re.sub(r'[^a-z0-9 ]', '', re.sub(r'<[^>]+>', '', s).lower().replace('-', ' ')).split()
 
 
@@ -35,11 +37,13 @@ def rows(domain):
         if not line.startswith('| ') or line.startswith(('| #', '|---')):
             continue
         c = [x.strip() for x in line.strip().strip('|').split('|')]
-        m = re.search(r'10\.\d{4,9}/[^\]\s]+?(?=\]|\))', c[4])
+        m = re.search(r'\[(10\.\d{4,9}/[^\]\s]+)\]', c[4])
         if not m:
             continue
         year = re.search(r'(\d{4})\s*$', c[3].replace('*', '').strip())
-        yield c[0], m.group(0), c[1], c[2], year.group(1) if year else ''
+        if m.group(1).lower().startswith('10.48550/'):
+            continue  # arXiv DOIs are registered with DataCite, not Crossref
+        yield c[0], m.group(1), c[1], c[2], year.group(1) if year else ''
 
 
 def crossref(doi):
@@ -62,7 +66,8 @@ def check(domain):
             continue
         problems = []
         ct = ' '.join((w.get('title') or [''])[:1])
-        ratio = difflib.SequenceMatcher(None, ' '.join(norm(title)), ' '.join(norm(ct))).ratio()
+        full = ct + ' ' + ' '.join((w.get('subtitle') or [''])[:1])
+        ratio = max(difflib.SequenceMatcher(None, ' '.join(norm(title)), ' '.join(norm(x))).ratio() for x in (ct, full))
         if ratio < TITLE_MIN:
             problems.append(f'title {ratio:.2f} vs "{ct[:90]}"')
         first = (w.get('author') or [{}])[0].get('family', '')

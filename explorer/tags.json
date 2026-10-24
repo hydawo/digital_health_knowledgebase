@@ -640,6 +640,13 @@
     "Mental health"
    ],
    "os": "both"
+  },
+  "apple-watch-pst-college-alcohol-use-pilot-rct": {
+   "areas": [
+    "Substance use",
+    "Adolescents and students"
+   ],
+   "os": "ios"
   }
  }
 }

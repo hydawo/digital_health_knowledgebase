@@ -65,7 +65,7 @@ For a short reading of what this evidence says, see [`overview.md`](overview.md)
 - C-037: Pulse rate variability in cardiovascular health: a review on its applications and relationship with heart rate variability, *Physiological Measurement* 2020
 - C-038: Inter- and intraindividual variability in daily resting heart rate and its associations with age, sex, sleep, BMI, and time of year: Retrospective, longitudinal cohort study of 92,457 adults, *PLoS ONE* 2020
 - C-039: Heart rate variability with photoplethysmography in 8 million individuals: a cross-sectional study, *The Lancet Digital Health* 2020
-- C-040: Reproducibility of Heart Rate Variability Is Parameter and Sleep Stage Dependent, *Frontiers in Physiology* 2017
+- C-040: Reproducibility of Heart Rate Variability Is Parameter and Sleep Stage Dependent, *Frontiers in Physiology* 2018
 - C-041: Heart Rate Variability in Psychology: A Review of HRV Indices and an Analysis Tutorial, *Sensors* 2021
 
 **Algorithms**

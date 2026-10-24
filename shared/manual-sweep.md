@@ -25,6 +25,9 @@ put the newest at the bottom of its section.
 | 12 | Download 23 free Module 5 activity papers blocked to scripts (JMIR, Springer/BMC, BMJ, Elsevier, PMC copies), check each is CC-licensed (four have only a repository listing as evidence), save under the given names and flip their rows to Verified OA | Seeding pass could not fetch them | `module-05-measurement-science/activity/_hand-download.md` | none |
 | 13 | Download 21 free Module 5 mental health papers blocked to scripts (mostly JMIR, plus PeerJ, Wiley, ACM, OUP, SAGE, Springer, Elsevier, MDPI), check each is CC-licensed, save under the given names and flip their rows to Verified OA | Seeding pass could not fetch them | `module-05-measurement-science/mental-health/_hand-download.md` | none |
 | 14 | Download Wyatt 2020 (Apple Watch abnormal pulse, PMC7526465, CC BY-NC) and store it under `module-01-wearables/literature/apple-watch/` | Europe PMC served a bot check | `module-01-wearables/literature-library.md`, Apple Watch Tier C | none |
+| 15 | Read the conflict-of-interest statement of Qin 2026 (*Sleep Health*, 10.1016/j.sleh.2026.09.011): are the Oura Pte Ltd affiliations employment (Tier A) or the joint lab (Tier B)? | Publisher served a bot check; tier now B Corroborated | `module-01-wearables/research-library-wearables.md`, Oura Tier B | none |
+| 16 | Download PROPHESY (10.1016/j.aucc.2026.101711, physical activity after open heart surgery) and re-screen it for Module 3 | Rejected `unobtainable` only because of a bot check | `module-03-applied-studies/_scan-queue.md` | none |
+| 17 | Fact monitor 2026-10-19 "check by hand" pages (89): Evidation 34, Activinsights/GENEActiv 29, WHOOP 9, Empatica 7, Withings 4, Samsung 2, Oura 2, LifeData 1, FDA watched page 1 | These sites block scripts; the monitor cannot confirm their quotes | `facts/_reports/2026-10-19.md`, "Check by hand" | none |
 
 ## Vendor and author confirmations
 

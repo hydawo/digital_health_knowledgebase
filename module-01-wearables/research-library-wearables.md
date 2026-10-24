@@ -123,12 +123,26 @@ analytical pipeline comparison study." *Sleep Health*, PMID 42855352. National U
 Singapore Centre for Sleep and Cognition. No `<CoiStatement>` element present in the PubMed record,
 but the senior/corresponding author's affiliation is given directly in the record as "Oura-National
 University of Singapore (NUS) Joint Lab, Oura Pte Ltd, Singapore" — the same standing Oura–NUS Joint
-Lab already tiered B for Liang et al. 2024 above. **Tier B. Verified** (affiliation text quoted
-directly from the primary PubMed record itself, which is stronger evidence than the Liang entry's
-secondary-source basis, even though no dedicated COI-statement field was present to parse). N=41
+Lab already tiered B for Liang et al. 2024 above. **Tier B. Corroborated** (corrected 2026-10-24
+from Verified: the affiliation is quoted from the PubMed record, but the paper's own conflict of
+interest statement has not been read, because the full text is blocked to scripts. Three authors,
+Soon, Ong and Chee, list "Oura Pte Ltd" in the affiliation, so Tier A cannot be excluded until the
+statement is read). N=41
 healthy adults, 14 days concurrent wear vs. Actiwatch (AW2); rest-activity rhythm metrics (IS, IV, RA,
 L5/M10 timing) via nparACT, MotionWare, and a custom pipeline (ICC, Spearman's ρ, Bland-Altman).
 https://pubmed.ncbi.nlm.nih.gov/42855352/
+
+**Moved from Tier C 2026-10-24.** **Ong JL, Qin S, Martin TH, Chua XY, Soon CS, Yilmaz G, et al. 2026.** "24h movement behaviours in
+university students compared to working age and older adults: wearable-based evidence and
+cardiometabolic health implications." *BMC Medicine* 24(1):485. National University of Singapore,
+Centre for Sleep and Cognition. **Senior author Michael W. L. Chee is a member of Oura's medical
+advisory board; three co-authors are members of the Oura–NUS Joint Lab, though the paper states
+this specific work "was conducted independently of the Joint Lab and was designed, funded, and
+executed solely by NUS."** **Verified** (COI text read directly). 1,967 adults across three
+Singaporean cohorts, 4 weeks of Oura recordings each: university students logged the most sedentary
+time (633.9 min/day) and least activity (320.3 min/day) and sleep (431.8 min/day) of the three age
+groups; reallocating 30 min/day from sedentary time to sleep or activity was associated with lower
+BMI and body-roundness index. **Tier B. Verified** (the senior author's advisory board seat is an author tie under this file's Tier B definition, whatever the paper says about the Joint Lab). https://pmc.ncbi.nlm.nih.gov/articles/PMC13573439/
 
 ## Tier C — Fully independent
 
@@ -231,18 +245,6 @@ not yet recruiting at submission): a 25-participant single-arm pilot will use an
 feasibility (recruitment, adherence, retention, missing data, usability) of wearable monitoring
 through rTMS treatment and 6-month follow-up for treatment-resistant depression. No results yet.
 https://pmc.ncbi.nlm.nih.gov/articles/PMC13592458/
-
-**Ong JL, Qin S, Martin TH, Chua XY, Soon CS, Yilmaz G, et al. 2026.** "24h movement behaviours in
-university students compared to working age and older adults: wearable-based evidence and
-cardiometabolic health implications." *BMC Medicine* 24(1):485. National University of Singapore,
-Centre for Sleep and Cognition. **Senior author Michael W. L. Chee is a member of Oura's medical
-advisory board; three co-authors are members of the Oura–NUS Joint Lab, though the paper states
-this specific work "was conducted independently of the Joint Lab and was designed, funded, and
-executed solely by NUS."** **Verified** (COI text read directly). 1,967 adults across three
-Singaporean cohorts, 4 weeks of Oura recordings each: university students logged the most sedentary
-time (633.9 min/day) and least activity (320.3 min/day) and sleep (431.8 min/day) of the three age
-groups; reallocating 30 min/day from sedentary time to sleep or activity was associated with lower
-BMI and body-roundness index. https://pmc.ncbi.nlm.nih.gov/articles/PMC13573439/
 
 **Liao J, Chen R, Tian R, Qiu C, Chen W, Yang Z, Hao J, Ge Y, Lin Y, Dunn J, Bergin M, Gilliland FD,
 Black M, Kalafut D, Wilson M, Zhang JJ, Chen Z. 2026.** "Wearable measured physiological stress and

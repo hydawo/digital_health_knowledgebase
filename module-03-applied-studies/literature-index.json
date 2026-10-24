@@ -302,7 +302,10 @@
   "PMC13623721",
   "PMC13626187",
   "PMC13524361",
-  "PMC12381640"
+  "PMC12381640",
+  "PMC13637571",
+  "PMC13652396",
+  "PMC13642210"
  ],
  "last_run_date": "2026-10-19",
  "runs": [
@@ -936,6 +939,13 @@
    "slug": "beiwe-stroke-tia-mood-2024-window",
    "profiled": true,
    "source": "module-03-queue-2026-10-22"
+  },
+  {
+   "doi": "10.2196/88846",
+   "pmcid": "PMC13637571",
+   "slug": "apple-watch-pst-college-alcohol-use-pilot-rct",
+   "profiled": true,
+   "source": "module-03-queue-2026-10-24"
   }
  ],
  "rejected": [
@@ -1667,6 +1677,28 @@
    "reason": "no-cohort",
    "note": "False positive: tomato-breeding CRISPR genome-editing review; no Module 2 platform named anywhere in the abstract despite matching the C2 grouped query.",
    "source": "weekly-literature-scan-2026-10-19"
+  },
+  {
+   "doi": "10.2196/93019",
+   "pmcid": "PMC13652396",
+   "reason": "no-cohort",
+   "note": "Two-person case report (CARE); missing-data percentages without day denominators. Borderline. Screened from full text 2026-10-24.",
+   "source": "module-03-queue-2026-10-24"
+  },
+  {
+   "doi": "10.3389/frdem.2026.1861809",
+   "pmcid": "PMC13642210",
+   "reason": "no-cohort",
+   "note": "Fitbit worn but its data not analysed; the only deployment figures are participation and acceptability. Screened from full text 2026-10-24.",
+   "source": "module-03-queue-2026-10-24"
+  },
+  {
+   "doi": "10.1016/j.aucc.2026.101711",
+   "pmcid": null,
+   "pmid": "42874539",
+   "reason": "unobtainable",
+   "note": "PROPHESY. ScienceDirect and the journal site served a bot check to scripts; OpenAlex shows no open copy. Re-screen from a PDF fetched by hand.",
+   "source": "module-03-queue-2026-10-24"
   }
  ]
 }

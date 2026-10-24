@@ -479,7 +479,7 @@ facts:
   - url: https://www.lifedatacorp.com/lifedata-privacy-policy/
     type: vendor_legal
     quote: LifeData retains a copy for no longer than 30 days, after which it will be permanently deleted
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-24'
   - url: https://www.lifedatacorp.com/lifedata-terms-of-use/
     type: vendor_legal
     quote: LifeData may terminate your account and delete any content contained in it if there is no account activity

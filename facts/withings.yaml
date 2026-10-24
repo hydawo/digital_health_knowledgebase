@@ -819,10 +819,12 @@ facts:
     quote: '2021-10-05'
     retrieved: '2026-10-10'
   - url: https://api.fda.gov/device/registrationlisting.json?search=k_number:K201456
+    fetch_url: https://api.fda.gov/device/registrationlisting.json?search=k_number:K201456&limit=100
     type: regulator_db
     quote: Scan Monitor (ScanWatch 2, HWA10)
     retrieved: '2026-10-10'
   - url: https://api.fda.gov/device/registrationlisting.json?search=k_number:K201456
+    fetch_url: https://api.fda.gov/device/registrationlisting.json?search=k_number:K201456&limit=100
     type: regulator_db
     quote: Oximeter
     retrieved: '2026-10-10'
@@ -911,6 +913,7 @@ facts:
     quote: '2023-08-23'
     retrieved: '2026-10-10'
   - url: https://api.fda.gov/device/registrationlisting.json?search=k_number:K230812
+    fetch_url: https://api.fda.gov/device/registrationlisting.json?search=k_number:K230812&limit=100
     type: regulator_db
     quote: Withings Scan Monitor 2 (Body Scan, wbs08; BodyScan 2, WBS15)
     retrieved: '2026-10-10'
@@ -959,9 +962,10 @@ facts:
   confidence: Verified
   sources:
   - url: https://api.fda.gov/device/registrationlisting.json?search=k_number:K223374
+    fetch_url: https://api.fda.gov/device/registrationlisting.json?search=k_number:K223374&limit=100
     type: regulator_db
     quote: WPM05- Withings BPM Connect
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-24'
   - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K223374
     fetch_url: https://api.fda.gov/device/510k.json?search=k_number:K223374
     type: regulator_db
@@ -973,9 +977,10 @@ facts:
     quote: Guangdong Transtek Medical Electronics Co., Ltd.
     retrieved: '2026-10-10'
   - url: https://api.fda.gov/device/registrationlisting.json?search=k_number:K240102
+    fetch_url: https://api.fda.gov/device/registrationlisting.json?search=k_number:K240102&limit=100
     type: regulator_db
     quote: 'Withings BPM Pro 2, Model: WPM07, REF: WPM07-07'
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-24'
   recheck_by: '2027-01-08'
   note: >-
     The 510(k) records name Transtek, not Withings; the link is the FDA device listing. This resolves the gap
