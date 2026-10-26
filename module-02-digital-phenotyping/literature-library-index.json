@@ -101,7 +101,7 @@
   "10.1007/s44211-026-00959-1",
   "10.1101/2024.10.03.24314808"
  ],
- "last_run_date": "2026-10-19",
+ "last_run_date": "2026-10-26",
  "runs": [
   {
    "date": "2026-08-31",
@@ -212,6 +212,38 @@
    "screened_out_detail": "PubMed mindLAMP hit (PMID 42885943) was a false positive for 'TB-LAMP' (loop-mediated isothermal amplification tuberculosis assay, not the mindLAMP digital-phenotyping platform) -- same known false-positive pattern documented for the 2026-10-05 run. PubMed AWARE hit (PMID 42884494) was a false positive: a connected-and-automated-vehicle traffic-resilience review whose keywords include 'communication-aware control', matching 'AWARE'[tiab] as the ordinary adjective 'aware', not the AWARE Framework (also matched 'mobile sensing' only in the automotive/V2X sense). arXiv RADAR-base hit ('Radar2Plan', automotive 4D-radar trajectory planning) and arXiv AWARE hit ('Exposing AI Inference as a Telco Network API over the 5G User Plane', matching 'aware' as an ordinary adjective) were both false positives, consistent with this file's documented note that arXiv's 'all:' field search does not enforce exact phrasing.",
    "oa_status_breakdown": {},
    "note": "No qualifying papers found for any of the nine platforms this run; all four raw hits were false positives. Network access to eutils.ncbi.nlm.nih.gov and export.arxiv.org was available this run (unlike the 2026-10-05 run, which could not reach PMC/Europe PMC for PDF retrieval under a narrower allowlist); no PDF retrieval was needed since nothing qualified."
+  },
+  {
+   "date": "2026-10-26",
+   "source": "weekly-literature-scan routine (PubMed esearch/efetch + arXiv API)",
+   "window": "2026-10-19 to 2026-10-26 (edat for PubMed; submittedDate for arXiv)",
+   "searched_pubmed": {
+    "beiwe": 0,
+    "radar_base": 0,
+    "mindlamp": 1,
+    "aware": 0,
+    "avicenna_ethica": 0,
+    "m_path": 0,
+    "carp": 0,
+    "metricwire": 0,
+    "lifedata": 0
+   },
+   "searched_arxiv": {
+    "beiwe": 0,
+    "radar_base": 2,
+    "mindlamp": 0,
+    "aware": 13,
+    "avicenna_ethica": 0,
+    "m_path": 0,
+    "carp": 0,
+    "metricwire": 0,
+    "lifedata": 0
+   },
+   "screened_in": 0,
+   "screened_out": 1,
+   "screened_out_detail": "PubMed mindLAMP hit (PMID 42897493, DOI 10.1186/s12884-026-09370-0, 'A novel digital hybrid care model for maternal mental health') genuinely names the mindLAMP app (used for 'digital phenotyping, psychoeducation, and CBT skills' alongside a Digital Health Navigator) -- not a LAMP-assay false positive this time. Excluded anyway as an incidental/supplementary mention: the study's primary instrument is clinician-delivered synchronous CBT, with mindLAMP as one supportive component of a hybrid care model rather than the paper being substantively about the platform or using it as the primary data-collection instrument, per this module's relevance bar. Conservative call per the prompt's 'when genuinely unsure, exclude' instruction; mindLAMP already has 2 papers in this library (Vaidyam 2022, Currey 2022) so the bar for a third was correspondingly higher. In-window arXiv hits (2 radar_base: ICASSP radar-speech and radar pose-estimation papers; 13 aware: ordinary-adjective '-aware' ML paper titles, e.g. Interaction-Aware, Prior-Aware, Gaze-Aware) were all the established false-positive patterns, none naming any Module 2 platform.",
+   "oa_status_breakdown": {},
+   "note": "Zero qualifying papers across all nine platforms this run. Network access to eutils.ncbi.nlm.nih.gov and export.arxiv.org was available throughout (arXiv required brief rate-limit retries with backoff, consistent with its documented request-rate policy, not a reachability failure); no PDF retrieval was needed since nothing qualified. python3 has neither pypdf nor PyPDF2 installed in this environment -- not exercised this run since nothing qualified for OA verification, but noting the fallback-to-magic-byte-only caveat for any future run that does."
   }
  ],
  "records": [

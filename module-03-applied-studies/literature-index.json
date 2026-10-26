@@ -307,7 +307,7 @@
   "PMC13652396",
   "PMC13642210"
  ],
- "last_run_date": "2026-10-19",
+ "last_run_date": "2026-10-26",
  "runs": [
   {
    "date": "2026-10-05",
@@ -376,6 +376,23 @@
     "protocol": 1
    },
    "note": "C2 (digital-phenotyping-platform PubMed query) returned 5 hits, all false positives with no Module 2 platform named anywhere in title/abstract (tomato-breeding CRISPR review, gut-metagenomics CRC classifier, chest-X-ray retrieval framework, TB-granuloma cell-death framework, Italian SUDEP consensus statement) -- consistent with this query's history of low precision. C3-platforms (arXiv) returned 7 hits, all the established 'AWARE'-as-ordinary-adjective false-positive pattern (State-Aware, Mode-/Support-Aware, Role-costs-aware, Cost-Aware, etc.) with no Module 2 platform involved; not individually added to the rejected array per this ledger's established practice of not cluttering it with arXiv phrase-matching artifacts that have no DOI (see research-log.md for the list). C1 (wearables) yielded 2 genuine queued candidates (PROPHESY ActiGraph post-cardiac-surgery feasibility study; Roadmap app + Fitbit dementia-caregiver feasibility/acceptability study) out of 16 screened, and 14 rejections -- several were real cohorts with real wearable deployments (TraPCAf Ghana/UK Parkinson's study, Japan corporate-employee Fitbit sleep study, All of Us Fitbit sleep-data-availability study, PST-APPLE Apple Watch RCT) that failed the two-distinct-deployment-signal threshold with only one signal category present each; flagged as notable exclusions below and in research-log.md rather than silently dropped."
+  },
+  {
+   "date": "2026-10-26",
+   "window": "2026-10-19 to 2026-10-26 (edat for PubMed C1/C2; submittedDate for arXiv C3)",
+   "searched": {
+    "C1_wearables_pubmed": 4,
+    "C2_platforms_pubmed": 3,
+    "C3_arxiv_wearables": 0,
+    "C3_arxiv_platforms": 0
+   },
+   "screened_in_queued": 1,
+   "rejected": 6,
+   "rejected_breakdown": {
+    "architecture": 1,
+    "no-cohort": 5
+   },
+   "note": "C1 (wearables) yielded 1 genuine queued candidate: a Withings BPM Connect Pro pharmacist-led telehealth pilot RCT for post-ED hypertension follow-up (N=24 randomised, 16/24 completing the 12-week visit), with feasibility, acceptability and retention all reported as primary/secondary outcomes -- the strongest signal density seen in several runs. 3 C1 rejections: an ABCD-study Fitbit data-quality/preprocessing methods paper (medRxiv preprint; illustrative use of the cohort, not a deployment-outcomes report, rejected architecture); a spinal-cord-injury nighttime-repositioning actigraphy study where 'actigraph' is used as the generic term for a sternum-worn accelerometer, not identifiable as the ActiGraph brand, and only one deployment signal (feasibility) is reported (no-cohort); and an ABCD-study Fitbit sleep/evening-phone-use analysis (JAMA Pediatrics, N=425) where the only candidate signal is a 14-day data threshold used as an inclusion criterion rather than a reported deployment outcome (no-cohort), consistent with this ledger's established practice for inclusion-criterion-only signals. C2 (digital-phenotyping-platform PubMed query) returned 3 hits, all false positives with no Module 2 platform named anywhere in title/abstract -- an autonomous-driving lane-change paper, a Rwanda antimicrobial-resistance paper matching WHO's unrelated 'AWaRe framework' antibiotic classification (not the AWARE Framework), and a Bayesian deep-clustering ML paper -- consistent with this query's history of low precision; all 3 logged as no-cohort. C3 (arXiv, both term sets) returned 0 in-window (2026-10-19 to 2026-10-26) candidates for either the wearables or platforms term set -- the newest wearables hit predates the window (2026-10-16) and the handful of in-window platforms hits were all the established 'aware'-as-ordinary-adjective false-positive pattern, not individually logged per this ledger's established practice for arXiv phrase-matching artifacts with no DOI."
   }
  ],
  "records": [
@@ -1699,6 +1716,54 @@
    "reason": "unobtainable",
    "note": "PROPHESY. ScienceDirect and the journal site served a bot check to scripts; OpenAlex shows no open copy. Re-screen from a PDF fetched by hand.",
    "source": "module-03-queue-2026-10-24"
+  },
+  {
+   "doi": "10.64898/2026.10.06.26364884",
+   "pmcid": "PMC13692566",
+   "pmid": "42926634",
+   "reason": "architecture",
+   "note": "ABCD-study data-quality/preprocessing-decisions methods paper (medRxiv preprint) using smartphone + Fitbit data as illustration; a methodological contribution on cleaning/imputation choices, not a deployment-outcomes report of its own.",
+   "source": "weekly-literature-scan-2026-10-26"
+  },
+  {
+   "doi": "10.1080/10790268.2026.2681360",
+   "pmcid": null,
+   "pmid": "42904664",
+   "reason": "no-cohort",
+   "note": "Spinal-cord-injury nighttime-repositioning study (N=28 enrolled/20 analysed); 'actigraph' used generically for a sternum-worn accelerometer, not identifiable as the ActiGraph brand profiled in Module 1, and only one deployment-reality signal (feasibility) is reported.",
+   "source": "weekly-literature-scan-2026-10-26"
+  },
+  {
+   "doi": "10.1001/jamapediatrics.2026.4902",
+   "pmcid": "PMC13681236",
+   "pmid": "42895708",
+   "reason": "no-cohort",
+   "note": "ABCD-study evening-phone-use/Fitbit-sleep analysis (N=425, 7591 person-nights). The only candidate signal is a 14-day concurrent-data threshold used as an inclusion criterion, not a reported deployment-outcome; fails the two-distinct-signal bar.",
+   "source": "weekly-literature-scan-2026-10-26"
+  },
+  {
+   "doi": "10.3389/fnbot.2026.1918469",
+   "pmcid": "PMC13690725",
+   "pmid": "42920632",
+   "reason": "no-cohort",
+   "note": "False positive: autonomous-driving lane-change-decision paper; no Module 2 platform named anywhere in the abstract despite matching the C2 grouped query.",
+   "source": "weekly-literature-scan-2026-10-26"
+  },
+  {
+   "doi": "10.1186/s12879-026-14689-2",
+   "pmcid": "PMC13689241",
+   "pmid": "42919245",
+   "reason": "no-cohort",
+   "note": "False positive: Rwanda cancer-patient antimicrobial-resistance paper matching WHO's unrelated 'AWaRe framework' antibiotic-classification scheme, not the AWARE Framework digital phenotyping platform.",
+   "source": "weekly-literature-scan-2026-10-26"
+  },
+  {
+   "doi": "10.3389/frai.2026.1935933",
+   "pmcid": "PMC13677874",
+   "pmid": "42898364",
+   "reason": "no-cohort",
+   "note": "False positive: semi-supervised Bayesian deep-clustering ML paper; no Module 2 platform named anywhere in the abstract despite matching the C2 grouped query.",
+   "source": "weekly-literature-scan-2026-10-26"
   }
  ]
 }

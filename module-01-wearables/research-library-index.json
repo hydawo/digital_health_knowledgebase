@@ -55,9 +55,11 @@
     "42855352",
     "42854191",
     "42832266",
-    "32979046"
+    "32979046",
+    "42904819",
+    "42897977"
   ],
-  "last_run_date": "2026-10-19",
+  "last_run_date": "2026-10-26",
   "runs": [
     {
       "date": "2026-08-31",
@@ -151,6 +153,30 @@
         "Review": 0
       },
       "note": "PMID 42854191 matched both the Oura and Apple Watch searches (a 2-participant feasibility case report using Apple Watch + Oura, and Fitbit + Oura); filed once under Oura per this file's established convention of listing a mixed-device paper in one section with a note (cf. Hirten et al.), rather than duplicating across device sections. PMID 42855352 classified Tier B (not the scan prompt's literal CoiStatement-absence default of Tier C) because the PubMed record's own author-affiliation field names the 'Oura-National University of Singapore (NUS) Joint Lab, Oura Pte Ltd, Singapore' for 3 of 5 authors -- the same named vendor-university partnership already established as Tier B for the Liang/Yilmaz/Soon 2024 entry from the same joint lab."
+    },
+    {
+      "date": "2026-10-26",
+      "source": "weekly-literature-scan routine (PubMed esearch/efetch, eutils.ncbi.nlm.nih.gov)",
+      "window": "2026-10-19 to 2026-10-26 (edat)",
+      "searched": {
+        "oura": 1,
+        "whoop": 1,
+        "apple_watch": 1
+      },
+      "screened_in": 2,
+      "screened_out": 1,
+      "screened_out_reasons": [
+        {
+          "pmid": "42923808",
+          "reason": "no abstract present (HeartRhythm Case Reports case report has no Abstract element at all) and 'Apple Watch' appears only in the PubMed keyword list, not in title or abstract -- fails both the 'device named explicitly in title/abstract' and 'has an actual abstract' relevance-bar conditions"
+        }
+      ],
+      "category_breakdown": {
+        "Use-case": 2,
+        "Validation": 0,
+        "Review": 0
+      },
+      "note": "PMID 42904819 (Oura, Barnard et al., Eur J Sport Sci) and PMID 42897977 (WHOOP 4.0, Paterson et al., JISSN) both screened in as Use-case, Tier C/Corroborated -- neither CoiStatement nor any author affiliation names Oura Health or WHOOP Inc. WHOOP device name ('WHOOP 4.0') appears only in body text stripped of its structured-abstract NlmCategory labels in the raw XML, not in the AbstractText.text direct child captured by naive XML parsing; verified by regex over the full raw record rather than ElementTree's first-text-node-only default, which is worth noting for any future automation of this routine."
     }
   ],
   "dois_seen": [
@@ -206,7 +232,9 @@
     "10.1016/j.sleh.2026.09.011",
     "10.2196/88846",
     "10.2196/93019",
-    "10.1093/jamia/ocaa137"
+    "10.1093/jamia/ocaa137",
+    "10.1002/ejsc.70274",
+    "10.1080/15502783.2026.2746899"
   ],
   "records": [
     {
@@ -816,6 +844,30 @@
       "pdf": null,
       "pdf_status": "oa_not_obtained",
       "source": "manual add-paper 2026-10-24"
+    },
+    {
+      "pmid": "42904819",
+      "doi": "10.1002/ejsc.70274",
+      "pmcid": "PMC13685518",
+      "title": "The Sleep and Diet of Elite Female Australian Rules Football Athletes Differ With Age and Season Phase",
+      "year": "2026",
+      "device": "oura",
+      "category": "Use-case",
+      "tier": "C",
+      "tier_confidence": "Corroborated",
+      "source": "weekly-literature-scan-2026-10-26"
+    },
+    {
+      "pmid": "42897977",
+      "doi": "10.1080/15502783.2026.2746899",
+      "pmcid": "PMC13686207",
+      "title": "Pre-sleep milk-derived proteins do not impair sleep or recovery in elite female athletes",
+      "year": "2026",
+      "device": "whoop",
+      "category": "Use-case",
+      "tier": "C",
+      "tier_confidence": "Corroborated",
+      "source": "weekly-literature-scan-2026-10-26"
     }
   ]
 }
