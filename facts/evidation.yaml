@@ -620,7 +620,7 @@ facts:
     type: app_store
     quote: 1M+ Downloads
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: app_availability
   status: stated
   value: Licensed-platform customers get their own branded apps, which Evidation builds and runs (for example the Our

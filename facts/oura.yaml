@@ -62,7 +62,7 @@ facts:
     type: app_store
     quote: For participants enrolled in research studies using the Oura Ring.
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: No free or grant-style academic program found; the offering is sold through the Oura for Organizations sales
     channel. Research App studies can blind participants to their scores while the ring keeps collecting (privacy
     policy). Oura also runs institutional partnerships outside any published program (Oura-NUS Joint Lab, opened
@@ -90,7 +90,7 @@ facts:
     type: paper
     quote: Data were exported from Oura Teams platform (Oura on the Web, Oura Health Oy, 2021)
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Chinoy et al. 2022 (Nat Sci Sleep, PMC8957400), Haimovich et al. 2026 (JMIR Form Res, PMC13626187) and a
     2025 paper (PMC12440682); 18 Europe PMC records mention "Oura Teams" (gap hunter query, 2026-10-10). teams.ouraring.com
     does not resolve (DNS, 2026-10-10). Consumer "Oura on the Web" was discontinued on 5 October 2026 (see deprecations);
@@ -111,7 +111,7 @@ facts:
     type: vendor_legal
     quote: Individuals will be selected for Study participation by a Research Sponsor.
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: The pilot record had not_public on the reading that a list of target segments is not an eligibility rule.
     Both are true; the value states the list and the absence of criteria.
 - field: program_application
@@ -130,7 +130,7 @@ facts:
     quote: if Buyer is a Research Sponsor, Oura and Buyer may enter into a Research Agreement incorporating this Agreement
       and Order(s) by reference
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: The absence of a published review step is an observation from the pages checked. The self-serve API route
     (register an app, submit for review above 10 users) is under developer_program_status and user_cap.
 - field: program_status
@@ -148,7 +148,7 @@ facts:
     quote: Oura Research App collects data from your Oura Ring and shares it securely with your study's research
       team with your consent.
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: The 200+ figure is a vendor claim. The App Store listing shows no year on its version dates.
 - field: developer_program_status
   status: stated
@@ -166,7 +166,7 @@ facts:
     type: vendor_docs
     quote: personal access tokens were deprecated in December 2025 and are no longer available for use
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Oura's partners page also offers custom integration options and dedicated partner support for the API.
 - field: user_cap
   status: stated
@@ -185,7 +185,7 @@ facts:
     quote: Once you have finished developing your application, you can submit it for review from the application's
       page.
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Approval criteria and turnaround are not published.
 - field: academic_vs_commercial
   status: stated
@@ -207,7 +207,7 @@ facts:
     type: vendor_page
     quote: Academic researchers can access premium metrics
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Corroborated because what "premium metrics" adds is undefined. The pilot record had this as unclear; the
     docs FAQ and the premium-metrics line were not in its sources.
 # ---------------- Pricing ----------------
@@ -221,7 +221,7 @@ facts:
     type: vendor_page
     quote: Oura Ring 5 From $399
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Finish prices read from the same store page on 2026-10-10.
 - field: device_price
   scope: Oura Ring 4
@@ -233,7 +233,7 @@ facts:
     type: vendor_page
     quote: Oura Ring 4 From $349
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: device_price
   scope: Oura Ring 4 Ceramic
   status: stated
@@ -244,7 +244,7 @@ facts:
     type: vendor_page
     quote: Oura Ring 4 Ceramic $399
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: subscription_price
   status: stated
   value: US $5.99/month or $69.99/year before tax; EU 5.99 EUR/month or 69.99 EUR/year after tax; first month included
@@ -260,7 +260,7 @@ facts:
     quote: Oura Membership is available for $5.99/month and $69.99/year in the US, and 5.99 €/month and 69.99 €/year
       in the European Union.
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: academic_pricing
   status: not_public
   confidence: Verified
@@ -314,7 +314,7 @@ facts:
     quote: Oura Ring Gen3 users without active Oura Membership will no longer be able to access their data through
       the Oura API.
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: The same partner article says Gen2 users see no change in API availability.
 - field: api_platform_fees
   scope: Oura Enterprise Platform
@@ -342,7 +342,7 @@ facts:
     type: vendor_page
     quote: You can cancel your Oura Membership whenever you choose by logging into the Membership Hub.
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: minimum_commitment
   scope: Organizational and research orders
   status: not_public
@@ -382,7 +382,7 @@ facts:
     quote: stating the Oura Products and Services being purchased, fees payable, total Eligible Person count covered
       by the Program, and other mutually agreed upon commercial terms and conditions
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 # ---------------- Data access and terms ----------------
 - field: raw_streams
   scope: Oura API
@@ -397,7 +397,7 @@ facts:
     quote: 'Processing**: Algorithms analyze raw data to generate insights and scores 4. **API Availability**: Processed
       data becomes available through API endpoints'
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Corroborated, not Verified, because the absence of raw signals is read from the data-flow description and
     the endpoint list in OpenAPI 1.42 (no raw-signal route), not stated outright. The API Agreement also bars deriving
     Oura's signal processing techniques (s.4(a)(xi)).
@@ -442,7 +442,7 @@ facts:
     type: vendor_docs
     quote: Oura users **must provide consent** to share each data type an API Application has access to.
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Route list read from openapi-1.42.json (paths under /v2/usercollection/). No route for blood pressure, GLP-1
     or Health Radar.
 - field: derived_metrics
@@ -456,7 +456,7 @@ facts:
     type: vendor_page
     quote: Heart rate Resting heart rate Heart rate variability (HRV) VO2 Max Blood pressure signals Nighttime breathing
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Marketing list of what the ring measures; which of these reach the platform export is not stated.
 - field: sampling_rates
   status: stated
@@ -494,7 +494,7 @@ facts:
     type: vendor_docs
     quote: 'Heart Rate: in one-minute intervals'
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: history_depth
   scope: Oura API
   status: not_public
@@ -520,7 +520,7 @@ facts:
     type: vendor_page
     quote: Even without a membership, you can export all of your Oura data in CSV format through the Membership Hub.
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: export_routes
   status: stated
   value: '(1) Oura API v2, OAuth2 only, webhooks recommended (about 30 s after app sync); Gen3+ users need an active
@@ -562,7 +562,7 @@ facts:
     type: vendor_docs
     quote: Oura on the Web has been discontinued as of October 5, 2026.
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Whether the "Enterprise API" differs from the public API v2 is not stated. Apple Health and Health Connect
     sync is per Oura's Data Export support article (360025441594); not re-quoted here.
 - field: rate_limits
@@ -587,7 +587,7 @@ facts:
     quote: respect all rate limits and access controls (which may be modified by Oura at any time with or without
       notice)
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Both statements are in the current OpenAPI 1.42 document. The 5,000/5-min figure is in its FAQ section; the
     newer Rate Limits section names the two layers but gives no number per layer, so whether 5,000 is the per-token
     or the per-application ceiling is not stated. The X-RateLimit-Limit and X-RateLimit-Window headers report the
@@ -653,7 +653,7 @@ facts:
     quote: Oura uses aggregated Oura Enterprise Platform data for analytics, statistics, research and development
       purposes
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: First published evidence that the Enterprise route does not carry the API Agreement's 72-hour deletion rule.
     Retention is then governed by the Order, any Research Agreement and the study's own protocol.
 - field: retention_terms
@@ -667,7 +667,7 @@ facts:
     quote: your measurement data regarding your sleep, readiness, and activity is stored only so long as your Oura
       account is active
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: ai_training_terms
   scope: Oura API and MCP Server
   status: stated
@@ -705,7 +705,7 @@ facts:
     quote: the foregoing Prohibited Uses shall apply regardless of whether a User has purportedly consented to any
       such use
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Resolves the pilot's open note. The repair agent (consent route exists) and the pilot (no route) were each
     reading a different clause. Oura's written consent lifts s.4(a)(iii) only; s.4(d) and s.6(g) carry no such route,
     so under this Agreement alone training on API data is not obtainable, and s.4(d) bars even prompting an AI model
@@ -728,7 +728,7 @@ facts:
     type: vendor_legal
     quote: We do not sell personal data for the purpose of training third party Large Language Models
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: deprecations
   status: stated
   value: 'API v1 removed 22 January 2024; personal access tokens withdrawn December 2025; Oura on the Web discontinued
@@ -769,7 +769,7 @@ facts:
     quote: The Company reserves the right to modify, update, or discontinue any aspect of the Oura API or the MCP Server
       at any time, with or without notice.
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: The support article was last updated 6 October 2026. cloud.ouraring.com now serves only a page titled "Oura
     on the web" (16 characters of text, 2026-10-10).
 # ---------------- Compliance ----------------

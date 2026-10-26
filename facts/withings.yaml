@@ -77,7 +77,7 @@ facts:
     type: vendor_legal
     quote: Uncheck "Research Center" in your notification center
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Gap finding. This is Withings' own research use of consumer data, not a route for outside study teams.
 - field: program_eligibility
   status: stated
@@ -160,7 +160,7 @@ facts:
     type: vendor_page
     quote: Withings+ becomes required on the Start for Free API plan from October 12, 2026
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: user_cap
   status: stated
   scope: Start for Free plan
@@ -177,7 +177,7 @@ facts:
     type: vendor_page
     quote: Once approved, your cap is raised to a level that fits your use case
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Search-engine snippets of an older developer-guide version cite larger free-plan caps (5,000 or 1,000
     active users). They are not on any live page; 10 is current.
 - field: user_cap
@@ -190,7 +190,7 @@ facts:
     type: vendor_page
     quote: Custom Based on number of active users Users Unlimited
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: academic_vs_commercial
   status: stated
   value: >-
@@ -204,7 +204,7 @@ facts:
     quote: 'The Withings+ requirement can be removed for specific use cases: Cellular Solutions, SDK and Research
       partners.'
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Corroborated because "no academic tier" is an absence across pages, not a statement. Terms of the research
     partner exemption are not published.
 - field: device_price
@@ -217,7 +217,7 @@ facts:
     type: vendor_page
     quote: ScanWatch 2 42mm Black $369.95 USD
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: device_price
   status: stated
   scope: ScanWatch Light (US store)
@@ -228,7 +228,7 @@ facts:
     type: vendor_page
     quote: ScanWatch Light 37mm Black & Silver $249.95 USD
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: device_price
   status: stated
   scope: ScanWatch Nova (US store)
@@ -239,7 +239,7 @@ facts:
     type: vendor_page
     quote: ScanWatch Nova 42mm Blue $599.95 USD
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Professional and cellular devices (Health Solutions catalogue) carry no public price.
 - field: subscription_price
   status: conflict
@@ -307,7 +307,7 @@ facts:
     type: vendor_page
     quote: Your users do not subscribe individually and there is no per-member charge.
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: minimum_commitment
   status: not_public
   value: No minimum term, order or user count is published for Enterprise, Advanced Biomarkers or the research API.
@@ -341,7 +341,7 @@ facts:
     quote: Apps that need unlimited users, or that want the Withings+ requirement lifted for specific use cases,
       move onto Enterprise.
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: raw_streams
   status: stated
   scope: Advanced Research API (ScanWatch, contracted partners)
@@ -386,7 +386,7 @@ facts:
     type: vendor_docs
     quote: ECG Signal
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: >-
     Gap finding, confirmed in the OpenAPI spec. The plans page lists ECG among "FDA/CE cleared biomarkers"
     available only on Advanced Biomarkers, so whether a Start for Free or Enterprise app can call Heart v2 is
@@ -405,7 +405,7 @@ facts:
     type: vendor_docs
     quote: Signal is A-law G 711 encoded with a sample rate of 4khz and each sample of 16 bit
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Gap finding. Plan gating for this signal is not stated.
 - field: derived_metrics
   status: stated
@@ -427,7 +427,7 @@ facts:
     type: vendor_page
     quote: 'FDA/CE cleared biomarkers : ECG, AFib, SpO₂, vascular age, AHI'
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Some metrics are region-specific (EU or US devices only), per the all-available-health-data page.
 - field: derived_metrics
   status: stated
@@ -450,7 +450,7 @@ facts:
     type: vendor_page
     quote: Symptom tracking & questionnaires
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Gap finding. No schema field fits active data collection exactly; recorded here as patient-reported data
     available to researchers.
 - field: sampling_rates
@@ -486,7 +486,7 @@ facts:
     type: vendor_docs
     quote: 'BPM Core: 500 Hz.'
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: history_depth
   status: not_public
   value: >-
@@ -558,7 +558,7 @@ facts:
     type: vendor_docs
     quote: Do not poll more than once every 10 minutes per user
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: An earlier developer-guide version, seen only in search snippets, gave 120 requests per minute for the
     free plan; not on any live page.
 - field: retention_terms
@@ -585,7 +585,7 @@ facts:
     type: vendor_page
     quote: Historical data is not deleted, and sharing resumes where it left off.
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Until 13 October 2026 the US api-terms-of-use URL served the combined terms with Part 2, "Withings Developer
     Software Agreement" (12 September 2018). The rewritten General Terms of Use (13 October 2026) replace it, and add
     that a participant's sharing with third-party services needs Withings+ (with unnamed exceptions) and covers only
@@ -637,7 +637,7 @@ facts:
     type: vendor_page
     quote: AI model training contract
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: ai_training_terms
   status: stated
   scope: Withings' own use of consumer data
@@ -650,7 +650,7 @@ facts:
     type: vendor_legal
     quote: These data are pseudonymized so that they do not allow you to identify yourself directly.
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Gap finding. The quote confirms pseudonymisation; the purposes (AI personalisation, algorithm performance
     improvement) are from the same processing table, whose layout breaks longer quotes.
 - field: deprecations
@@ -676,7 +676,7 @@ facts:
     type: vendor_docs
     quote: durationtosleep > Time to sleep (seconds). (deprecated)
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: The developer updates portal linked from the docs (support.withings.com/hc/en-us/categories/360003266557)
     returned 404 to researcher A on 2026-10-10.
 - field: baa

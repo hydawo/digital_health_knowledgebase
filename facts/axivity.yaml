@@ -256,7 +256,7 @@ facts:
     quote: the electronic designs, device firmware, supporting software, and documentation are all open source and
       freely available
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: minimum_commitment
   status: not_public
   confidence: Corroborated
@@ -443,7 +443,7 @@ facts:
     type: vendor_docs
     quote: potentially of the order of around ±2 seconds per day
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: history_depth
   status: conflict
   scope: AX3
@@ -550,7 +550,7 @@ facts:
     type: vendor_docs
     quote: one-at-a-time configuration (but not download)
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: No wireless sync, phone app or cloud for AX3 or AX6. OmGui is Windows-only; Mac and Linux users use the
     cross-platform command-line converters.
 - field: rate_limits
@@ -580,7 +580,7 @@ facts:
     type: secondary
     quote: Data is stored on the device and requires manual transfer.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: The third quote is from a Newcastle University procurement notice, not Axivity.
 - field: ai_training_terms
   status: not_applicable

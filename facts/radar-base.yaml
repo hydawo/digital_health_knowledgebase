@@ -60,7 +60,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: All components are available as open source software under an Apache 2 license.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: The Hyve calls itself the only service provider of the platform. Community support runs through Slack, GitHub
     and a help desk.
 - field: program_eligibility
@@ -79,7 +79,7 @@ facts:
     retrieved: '2026-10-10'
     quote: This means that you are free to access and use all functionalities of the platform on a self-service
       basis without incurring any licensing costs from a software provider.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: The Hyve quote is an audience statement, not an eligibility rule; no restriction is published.
 - field: program_application
   status: stated
@@ -99,7 +99,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: Have a look at our RADAR-base GitHub repositories, Wiki and Slack to get started!
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: program_status
   status: stated
   value: Active. The managed-service page is live, the 2026 symposium was held, and the GitHub organisation shows
@@ -118,7 +118,7 @@ facts:
     type: repository
     retrieved: '2026-10-10'
     quote: v0.9.2
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: developer_program_status
   status: stated
   value: Open to all with no application. All components are on GitHub with a public wiki, Slack, Swagger API docs
@@ -138,7 +138,7 @@ facts:
     retrieved: '2026-10-10'
     quote: The RADAR-base developers support the community on a voluntary basis and will pick up your requests as
       time permits.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: user_cap
   status: stated
   value: No licence cap. RADAR-base as a Service allows any number of studies or participants but runs on a single
@@ -159,7 +159,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: Studies with a maximum of 200 participants are ideal for this setup.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: academic_vs_commercial
   status: stated
   value: No published difference. The whole stack is Apache 2 for every user with no licence cost, and The Hyve
@@ -174,7 +174,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: The RADAR-base stack is published under an open-source license and therefore free of license costs.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Corroborated because "no difference" rests on the absence of separate terms, not on a statement.
 - field: device_price
   status: not_applicable
@@ -210,7 +210,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: The RADAR-base stack is published under an open-source license and therefore free of license costs.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: minimum_commitment
   status: not_public
   confidence: Verified
@@ -239,7 +239,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: Get in touch to find out if RADAR-base is the platform for you.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Inferred from the absence of any price plus the inquiry route; no page says "contact sales for pricing".
 - field: hosting_price
   status: not_public
@@ -309,7 +309,7 @@ facts:
     type: repository
     retrieved: '2026-10-10'
     quote: Add Support for Reading Data from Google Health Connect
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: 'Fitbit through RADAR-base depends on the legacy Fitbit Web API, which turns off 2026-10-30; see deprecations
     (Fitbit route). A Huawei Health Kit connector is in progress (schemas released, connector PR #204 open), so
     Huawei is not a shipped integration. A Dexcom CGM connector built in a 2026 internship is reported on radar-base.org
@@ -340,7 +340,7 @@ facts:
     type: vendor_docs
     retrieved: '2026-10-10'
     quote: Readiness Score
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: radarpipeline is a companion tool, not built into the platform, much as Forest is for Beiwe.
 - field: sampling_rates
   status: stated
@@ -361,7 +361,7 @@ facts:
     type: vendor_docs
     retrieved: '2026-10-10'
     quote: By default, the data is collected every 3 hours from the OpenWeatherMap API.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: history_depth
   status: stated
   value: No platform limit; phone data starts at enrolment and is kept in the deployment the study owns. For REST
@@ -373,7 +373,7 @@ facts:
     type: vendor_docs
     retrieved: '2026-10-10'
     quote: to re-pull all the data between particular dates or to change the start and end dates
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: '"No platform limit" follows from self-hosting rather than a statement.'
 - field: export_routes
   status: stated
@@ -396,7 +396,7 @@ facts:
     type: vendor_docs
     retrieved: '2026-10-10'
     quote: RADAR-REST-API component of RADAR-base, provides interfaces to access the aggregated data stored in MongoDB.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: rate_limits
   status: not_public
   confidence: Verified
@@ -449,7 +449,7 @@ facts:
     type: vendor_legal
     retrieved: '2026-10-10'
     quote: upto 10 years for identifiable contact data
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: The Play "Data can't be deleted" declaration (made on both the passive and active listings) fits the policy's
     model, where the developers cannot delete and the deployment owner must; it does not mean study data is undeletable.
     Participants should be told to ask their study team.
@@ -463,7 +463,7 @@ facts:
     type: vendor_legal
     retrieved: '2026-10-10'
     quote: No training of generalised AI/ML models.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: The policy appears to cover the KCL-run deployment that holds the Google OAuth client, not every self-hosted
     instance (inference).
 - field: ai_training_terms
@@ -552,7 +552,7 @@ facts:
     type: repository
     retrieved: '2026-10-10'
     quote: Since version 2.0.0, HDFS is no longer supported
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: deprecations
   status: stated
   scope: Device integrations
@@ -569,7 +569,7 @@ facts:
     type: repository
     retrieved: '2026-10-10'
     quote: This PR migrates Garmin authorization from OAuth 1.0 to OAuth 2.0.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Empatica E4 is still listed with no deprecation notice, though Empatica has retired the E4 (see facts/empatica.yaml).
 - field: licence
   status: stated
@@ -593,7 +593,7 @@ facts:
     type: repository
     retrieved: '2026-10-10'
     quote: Apache License Version 2.0, January 2004
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Side-repository licences read from the GitHub API on 2026-10-10 (researcher B).
 - field: hosting_options
   status: stated
@@ -621,7 +621,7 @@ facts:
     retrieved: '2026-10-10'
     quote: If desired, The Hyve can host RADAR-base and make sure the platform runs in a secure and private Cloud
       environment or on-premise.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: A participant self-enrolment portal (radar-self-enrolment-ui) and a React Native app kit (radar-base-app,
     created 2025-11-26) exist on GitHub; neither is described as a released product.
 - field: app_availability
@@ -643,7 +643,7 @@ facts:
     type: vendor_docs
     retrieved: '2026-10-10'
     quote: send data to Kafka topics using HTTPS requests
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: The "not encrypted" declaration contradicts the platform docs (radar-commons sends data over HTTPS) and
     the active app's own Play listing ("Data is encrypted in transit"). It is most likely a wrong form entry, but
     it is what participants see. RADAR-Kubernetes uses TLS by default with a disable_tls option, so encryption in
@@ -659,7 +659,7 @@ facts:
     type: repository
     retrieved: '2026-10-10'
     quote: The app is work in progress, and only records location data without sending it to a server.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: App Store searches for "passive RMT", "RADAR pRMT", "RADAR passive" and "RADAR-base" (gb, us, nl) on 2026-10-10
     found only the active app (researcher A). The absence comes from searches, not a vendor statement.
 - field: app_availability
@@ -681,7 +681,7 @@ facts:
     type: app_store
     retrieved: '2026-10-10'
     quote: Data is encrypted in transit
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: The docs still say iOS 11 minimum; the App Store listing says iOS 16. Who Onsentia Limited is, and how it
     relates to KCL or The Hyve, was not found.
 - field: baa

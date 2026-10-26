@@ -55,7 +55,7 @@ facts:
     type: vendor_page
     quote: "This toolkit is designed to facilitate the application submission process by gathering information in one place for quick and convenient access."
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
   note: A one-off research grant was announced in August 2022; no current grant call found. Ametris says NHANES
     selected the LEAP for its 2027-2030 cohort (blog.ametris.com/blog/actigraph-wearables-support-nhanes-2027,
     2025-02-26; not confirmed on a CDC page). Ametris also runs pharma-member DECODE working groups on digital
@@ -76,7 +76,7 @@ facts:
     type: vendor_page
     quote: "Comprehensive technology partnership to help trials run smoothly with full support, API integration, and access to raw study data."
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
 - field: program_eligibility
   status: stated
   value: Online purchasing in the academic store is limited to academic institutions with existing client accounts
@@ -101,7 +101,7 @@ facts:
     type: vendor_page
     quote: "The ActiGraph LEAP is available globally for use in clinical research as prescription use only."
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
 - field: program_application
   status: stated
   value: No application or review step is published. Researchers contact the academic team, request a quote or the
@@ -116,7 +116,7 @@ facts:
     type: vendor_docs
     quote: "Enabling API Access Please contact ActiGraph for more information."
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
 - field: program_status
   status: stated
   value: Academic channel and store live under the Ametris name as of 2026-10-11. Signant Health announced a
@@ -140,7 +140,7 @@ facts:
     type: vendor_page
     quote: "The combined company will maintain Ametris' innovation roadmap while investing significantly in platform integration capabilities."
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
   note: The 14 May 2026 release says "announced its acquisition"; it does not use the word "completed" and gives no
     closing date. Treating May 2026 as the completion month is an inference from the April agreement plus the May
     announcement. ActiGraph rebranded as Ametris in June 2025.
@@ -164,7 +164,7 @@ facts:
     type: vendor_docs
     quote: "ActiGraph continues to support the CentrePoint V2 API"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
   note: RADAR-base has an open roadmap issue (RADAR-REST-Connector issue 153, opened 2024-12-16) for a LEAP connector via
     the CentrePoint API; no shipped third-party connector was found.
 - field: user_cap
@@ -178,7 +178,7 @@ facts:
     type: vendor_page
     quote: "Single 1 Full Activation 5 Lite Activations Small Enterprise 5 Full Activation 10 Lite Activations Medium Enterprise 10 Full Activation 15 Lite Activations Large Enterprise 15 Full Activation 20 Lite Activations"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
 - field: user_cap
   scope: CentrePoint
   status: not_public
@@ -215,7 +215,7 @@ facts:
     type: vendor_page
     quote: "Ametris provides wearable digital health technology (DHT), along with integrated scientific and operational support, to help clinical teams capture real-world data that accurately reflects patient functioning."
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
   note: For sponsors, a combined Ametris DHT plus Signant eCOA offering for CNS trials was announced on 2026-03-10,
     before the acquisition; AliveCor ECG and Kayentis eCOA integrations were announced in early 2026.
 # ---------------- Pricing ----------------
@@ -256,7 +256,7 @@ facts:
     type: secondary
     quote: "Discount CZK 1.067.025,00"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
   note: Quotation 31576, attached to a public Czech contract-registry record. Prices are in CZK, excluding VAT, and
     are not converted here because no dated exchange rate is recorded. The discount is about 30% of the subtotal and
     applies to the whole order, so the per-device net price is not stated.
@@ -296,7 +296,7 @@ facts:
     fetch_url: https://raw.githubusercontent.com/actigraph/CentrePoint3APIDocumentation/main/sections/raw_data_request.md
     quote: "There may be fees associated for historical data access file generation if the study has not been previously setup."
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
 - field: api_platform_fees
   scope: ActiLife licences
   status: stated
@@ -317,7 +317,7 @@ facts:
     type: vendor_page
     quote: "Yes, Ametris will be offering coverage plans for existing ActiLife licenses."
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
   note: A July 2025 reseller quote priced a 3-year ActiLife 7 Single licence at CZK 136,750 (see device_price), 13
     days before the perpetual conversion.
 - field: api_platform_fees
@@ -378,7 +378,7 @@ facts:
     type: vendor_page
     quote: "Interested in Purchasing ActiLife? Request a Quote"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
 # ---------------- Data access and terms ----------------
 - field: raw_streams
   scope: CentrePoint API
@@ -398,7 +398,7 @@ facts:
     fetch_url: https://raw.githubusercontent.com/actigraph/CentrePoint3APIDocumentation/main/sections/data_access_files.md
     quote: "ppg-red-ir-50-hz"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
 - field: raw_streams
   scope: Devices and ActiLife
   status: stated
@@ -424,7 +424,7 @@ facts:
     type: vendor_page
     quote: "No, PPG sensor data from the ActiGraph LEAP can only be processed in ActiLife 7."
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
   note: Which LEAP sensors are active depends on the configuration (Core, Pro, Advanced); per the academic LEAP page,
     Pro has green PPG only and Advanced has multiwave (red and green) PPG.
 - field: derived_metrics
@@ -454,7 +454,7 @@ facts:
     type: vendor_page
     quote: "Capture clinically validated digital mobility outcomes using the latest Mobilise-D algorithms"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
 - field: sampling_rates
   scope: ActiGraph LEAP
   status: stated
@@ -469,7 +469,7 @@ facts:
     type: vendor_page
     quote: Battery Life 1-32 Days
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
   note: The LEAP Instructions for Use (Rev 3, released 2024-12-04) give about 32 days at the default 32 Hz,
     accelerometer only, display on 48 times a day. One older spec block on ametris.com/actigraph-leap still says
     30 days.
@@ -483,7 +483,7 @@ facts:
     type: vendor_page
     quote: 'Sample Rate: 32-256 Hertz'
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
 - field: sampling_rates
   scope: ActiGraph wGT3X-BT
   status: stated
@@ -494,7 +494,7 @@ facts:
     type: vendor_page
     quote: 'Sample Rate: 30-100 Hertz'
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
 - field: sampling_rates
   scope: CentrePoint API files and summaries
   status: stated
@@ -511,7 +511,7 @@ facts:
     fetch_url: https://raw.githubusercontent.com/actigraph/CentrePointIntegrationGuide/master/README.md
     quote: "Dynamically retrieve EPOCH summary records with a variable summary length (i.e. 15-sec, 30-sec, or 60-sec epoch length)"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
 - field: history_depth
   scope: On-device storage
   status: stated
@@ -539,7 +539,7 @@ facts:
     type: vendor_page
     quote: "Data Storage: 180 Days / 4GB"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
   note: 'LEAP: ametris.com/actigraph-leap carries two spec blocks, one saying "Data Storage: 30 Days / 1GB" and one
     saying 79 days. The 79-day figure is backed by the LEAP Instructions for Use (Model LEAP E.200.6025, Rev 3,
     released 2024-12-04), found as an attachment to a public Czech procurement record, and by every configuration
@@ -594,7 +594,7 @@ facts:
     type: repository
     quote: "Python module for reading GT3X/AGDC file format data"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
   note: Other official repositories include agcounts (ActiLife counts in Python), actiapi (CentrePoint API client)
     and vertdetach (DETACH non-wear algorithm). The CentrePoint Connect iOS participant app requires iOS 18 or later.
 - field: rate_limits
@@ -618,7 +618,7 @@ facts:
     fetch_url: https://raw.githubusercontent.com/actigraph/StudyAdminAPIDocumentation/master/README.md
     quote: "This API is request limited. We only allow a certain number of requests per day."
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
 - field: retention_terms
   status: stated
   value: Ametris acts as data processor for the study organization (controller). Personal data is kept in
@@ -639,7 +639,7 @@ facts:
     type: vendor_legal
     quote: "For Data Subject participating in clinical trials, contact the trial sponsor not Ametris with requests for access, correction, amendment, or deletion."
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
   note: The first quote keeps the policy's own typo ("Ametirs"). Policy last updated 20 Feb 2025, before the Signant
     acquisition.
 - field: ai_training_terms
@@ -699,7 +699,7 @@ facts:
     type: vendor_page
     quote: "The ActiGraph wGT3X-BT is Ametris' proven, legacy wearable device used by researchers around the world"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
 - field: deprecations
   scope: CentrePoint API
   status: stated
@@ -716,7 +716,7 @@ facts:
     type: vendor_docs
     quote: "ActiGraph continues to support the CentrePoint V2 API"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
   note: Signant Health announced the acquisition of Ametris on 2026-05-14 and plans platform integration; no product
     retirements announced.
 # ---------------- Compliance ----------------

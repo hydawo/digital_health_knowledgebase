@@ -59,7 +59,7 @@ facts:
     type: vendor_page
     quote: Institutions 150+
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Operated by m-Path Software BV (Leuven), which the about page describes as a 2024 spin-off of KU Leuven's
     Faculty of Psychology. The research page no longer carries the "250+ Universities" figure the profile cites; the
     usage counts are vendor claims (Reported strength).
@@ -84,7 +84,7 @@ facts:
     type: vendor_legal
     quote: can only use the m-Path Services with the consent and under the supervision of a parent or legal guardian
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: program_application
   status: stated
   value: Self-service. Sign up with email verification, then buy Essential, Standard or Comfort by card on the pricing
@@ -111,7 +111,7 @@ facts:
     quote: the Practitioner or Researcher is solely responsible for obtaining prior ethical approval for the use of the
       m-Path Services
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: program_status
   status: stated
   value: Active. Plans and add-ons are on sale on the live pricing page, and the manual's billing and sensing pages
@@ -142,7 +142,7 @@ facts:
     type: vendor_docs
     quote: Add-ons can be selected from the Standard plan onwards; contact us to include them in your subscription.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Absence of public API docs comes from searching the site, the manual (wp-json ht-kb?search=API) and the web,
     not from a vendor statement.
 - field: user_cap
@@ -170,7 +170,7 @@ facts:
     quote: Pricing for add-ons hold for up to 1000 participant slots per year. Over 1000 participant slots, the pricing
       scales relatively to this price.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: academic_vs_commercial
   status: stated
   value: No separate academic tier; the research licences are the same for any researcher. Individual practitioners
@@ -199,7 +199,7 @@ facts:
     quote: The grant of this access and use right does not include the right to use the m-Path Services to provide services
       for the benefit of third parties or to provide clinical or medical services.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: The clinical marketing (/clinical/, "m-Path for Therapy") and Terms clause 11.4 pull against each other; the
     Terms do not define "clinical or medical services". Clause 14.1 also says the services give no medical advice.
     Ask m-Path how therapy use squares with 11.4 before a clinical deployment.
@@ -237,7 +237,7 @@ facts:
     quote: Adding 100 new participant slots costs 535 Euro for the essential subscription, 700 Euro for the standard
       subscription
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: On the pricing page the tabs run 300 to 600 participants while each card lists its participant labels 600 down
     to 300 beside prices that rise, so a card read literally pairs EUR 1,599 with 600. The manual's table (300 =
     EUR 1,599 Essential) settles it.
@@ -251,7 +251,7 @@ facts:
     type: vendor_docs
     quote: m-Path is free for individual practitioners.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: academic_pricing
   status: stated
   value: No academic discount; the published research plans (page titled "Research & Academic Licenses") are the
@@ -276,7 +276,7 @@ facts:
     type: vendor_docs
     quote: m-Path is registered on SAM.gov for US institutions.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: api_platform_fees
   status: stated
   value: 'Add-ons, excl. VAT, added to the one-year subscription from the Standard plan up; prices hold up to 1,000
@@ -325,7 +325,7 @@ facts:
     quote: The Garmin Lite integration is available as an add-on (you need to have a Standard of Comfort subscription
       for this).
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Only Oura and the white-label update fee are explicitly stated as per year; the other add-ons attach to the
     one-year subscription and are priced per year of participant slots. Researcher A said Sensing full includes Garmin Lite; the Garmin Lite page describes it as its own add-on, so
     that claim was dropped. The which-integration page lists Sensing full as the add-on the direct Garmin route needs.
@@ -352,7 +352,7 @@ facts:
     type: vendor_docs
     quote: The smallest possible extension is 3 months.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: quote_required
   status: stated
   value: No for the base plans, which are priced and bought online. Add-ons are priced but enabled by contacting
@@ -368,7 +368,7 @@ facts:
     type: vendor_page
     quote: Contact us to include the following add ons in your subscription.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: hosting_price
   status: stated
   value: Managed hosting on m-Path's Azure servers is included in every plan. Storing answer data on the customer's
@@ -390,7 +390,7 @@ facts:
     quote: It is possible to store data on your own servers. Doing so requires an additional development cost as m-Path
       will need to work closely together with your own IT personel.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 # ---------------- Data access and terms ----------------
 - field: raw_streams
   status: stated
@@ -456,7 +456,7 @@ facts:
     type: vendor_docs
     quote: Research devices such as Empatica, movisens and ActiGraph are not integrated.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: The sensing-full sensor table lists screen, app usage, light and memory as Android only, and does not list
     gyroscope or call and text data, which the comparison page does; per-stream iOS and Android parity is not fully
     stated. The Module 3 Niemeijer profile says calls and SMS were left out of the Play Store build of m-Path Sense;
@@ -484,7 +484,7 @@ facts:
     quote: Securely derive momentary sentiment from phone-based communication and assess typing behavior (speed, errors,
       emoji use, etc.) without the need to access or store raw text data.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: sampling_rates
   status: stated
   value: 'm-Path Sense: periodic sensors use a researcher-set interval in seconds, others are event-based; location
@@ -524,7 +524,7 @@ facts:
     quote: Fitbit devices sync approximately every 15 minutes when connected, Garmin and Apple Health devices sync less
       frequently.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: history_depth
   status: stated
   value: No backfill of pre-enrolment history is documented. Survey data stays in the dashboard for the life of the
@@ -546,7 +546,7 @@ facts:
     type: vendor_docs
     quote: How many hours back the sync should reach.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Whether the Thryve route backfills data recorded before the participant connected is not stated.
 - field: export_routes
   status: stated
@@ -576,7 +576,7 @@ facts:
     type: repository
     quote: Process and Analyse Data from m-Path Sense
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: rate_limits
   status: not_public
   value: No API documentation or rate limits published; the API is a paid add-on.
@@ -630,7 +630,7 @@ facts:
     type: vendor_docs
     quote: Our databases are backed up daily (maximum retainment of one month).
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Read together, not a conflict. A lapse to the Free plan keeps services running, so clause 8.1's "services ended"
     trigger is not met; the DPA does not say when, short of account removal, services count as ended. Ask m-Path whether
     data held on a Free-plan account after a paid study is ever deleted without a request.
@@ -688,7 +688,7 @@ facts:
     type: vendor_legal
     quote: m-Path reserves the right to discontinue m-Path Services at any time without prior notice.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: licence
   status: stated
   value: Platform (dashboard, m-Path and m-Path Sense apps) is proprietary; users get a personal, revocable access right
@@ -718,7 +718,7 @@ facts:
     type: vendor_docs
     quote: m-Path uses the CARP open source package to gather sense data.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: hosting_options
   status: stated
   value: Managed SaaS only by default, with survey data on Microsoft Azure in Frankfurt (but see data_residency).
@@ -741,7 +741,7 @@ facts:
     quote: It is possible to store data on your own servers. Doing so requires an additional development cost as m-Path
       will need to work closely together with your own IT personel.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: app_availability
   status: stated
   value: 'Two free apps from m-Path Software on both stores: m-Path (surveys, Sensing lite, Thryve wearables; Play
@@ -766,7 +766,7 @@ facts:
     type: app_store
     quote: m-Path Sense Health & Fitness Free
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 # ---------------- Compliance ----------------
 - field: baa
   status: not_public

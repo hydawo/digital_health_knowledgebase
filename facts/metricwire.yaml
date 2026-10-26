@@ -55,7 +55,7 @@ facts:
     quote: Site licence partners benefit from dedicated engineering resources to support novel protocol designs and
       leverage unique data sources.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: A separate third-party route exists through Penn State's Survey Research Center, which holds an enterprise
     licence and sub-licenses it (see academic_pricing, scope Penn State SRC).
 - field: program_eligibility
@@ -69,7 +69,7 @@ facts:
     quote: The Metricwire Academic Site Licence program is designed to provide researchers at leading institutions with
       technology solutions that support the future direction of their work and transform their field.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: program_eligibility
   status: stated
   scope: Penn State SRC enterprise licence (third-party sub-licence)
@@ -82,7 +82,7 @@ facts:
     quote: Investigators, both affiliated with Penn State and external partners, can choose between three distinct levels
       of platform access
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: An arrangement run by Penn State, not a MetricWire programme. Whether the no-cost tier is open to non-Penn State
     students is not stated.
 - field: program_application
@@ -173,7 +173,7 @@ facts:
     quote: Site licence partners benefit from dedicated engineering resources to support novel protocol designs and
       leverage unique data sources.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 # ---------------- Pricing ----------------
 - field: device_price
   status: not_applicable
@@ -197,7 +197,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-11'
     expect_absent: true
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: academic_pricing
   status: stated
   scope: Penn State SRC enterprise licence (third-party sub-licence)
@@ -220,7 +220,7 @@ facts:
     quote: Finally, for those collecting pilot data or for students collecting data for the purpose of thesis/dissertation
       projects, access to the enterprise-level license will be provided at no cost.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: A university reseller arrangement, not MetricWire pricing. It shows the enterprise licence can be sub-licensed
     within and beyond one institution. Announcement dated 2024-03-14.
 - field: api_platform_fees
@@ -278,7 +278,7 @@ facts:
     quote: In order for researchers to create and design studies, an account must be created via our online researcher
       portal. To gain access to this portal please send us an e-mail at support@metricwire.com.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Inferred from the absence of a price list; the site never says "contact sales for pricing" in so many words.
 - field: hosting_price
   status: not_public
@@ -346,7 +346,7 @@ facts:
     quote: Ambient noise measurement can now continue in the background for studies that include it. Only sound levels
       are measured; no audio is recorded.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: The API list is an enumeration of stored stream types, not a per-OS availability statement; the separate "ios"
     types suggest iOS streams are stored apart from Android ones. Whether exported sensor records are raw samples or
     summaries is not documented. Sensor and cognitive-task operations are named "...Enterprise", so API access to
@@ -374,7 +374,7 @@ facts:
     quote: Catalyst integrates with Apple HealthKit to collect movement data such as sleep, step count, exercise, and
       distance if enabled by the Study Team.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: sampling_rates
   status: not_public
   confidence: Corroborated
@@ -452,7 +452,7 @@ facts:
     type: vendor_page
     quote: Easily customize your result set and exports to minimize the time to insight.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Corroborated rather than Verified because licence-tier access to the API is not published (sensor and
     cognitive-task operations carry an "Enterprise" suffix). Spec 3.0.0 was last modified 2025-05-21; 4.0.0 (2025-05-13)
     drops eight operations, mostly bulk trigger creation, and adds none. The UW-Madison zeolite client is built on this
@@ -499,7 +499,7 @@ facts:
     type: app_store
     quote: App interactions App functionality, Analytics, Advertising or marketing, Personalization
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Deletion at study end depends on the research team acting; nothing says it is automatic. Separately, the Google
     Play data-safety form for Catalyst By MetricWire lists app interactions under "Data shared" for app functionality,
     analytics, advertising or marketing, and personalization. That developer self-declaration sits oddly against the
@@ -578,7 +578,7 @@ facts:
     quote: MetricWire hereby grants you a personal, non-exclusive, revocable, non-transferable license to use the
       Software
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: hosting_options
   status: stated
   value: Vendor-hosted SaaS only, on Google Cloud Platform in the United States. No self-hosted or on-premises option is
@@ -594,7 +594,7 @@ facts:
     quote: In order for researchers to create and design studies, an account must be created via our online researcher
       portal.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Absence of self-hosting is inferred from all published material describing only the hosted portal.
 - field: app_availability
   status: stated
@@ -616,7 +616,7 @@ facts:
     type: app_store
     quote: Updated on Oct 7, 2026
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: app_availability
   status: stated
   scope: MetricWire (legacy generic participant app)
@@ -636,7 +636,7 @@ facts:
     type: app_store
     quote: Updated on Jul 30, 2024
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: New studies should not assume this app; check with the vendor which app a study uses.
 - field: app_availability
   status: stated
@@ -649,7 +649,7 @@ facts:
     type: app_store
     quote: PLAD TRACE by MetricWire
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Listed under "More by MetricWire Inc." on the App Store. No vendor page describes white-labelling terms or price.
 # ---------------- Compliance ----------------
 - field: baa

@@ -135,7 +135,7 @@ facts:
     type: app_store
     quote: "Developer Small Steps Labs LLC"
     retrieved: '2026-10-21'
-  recheck_by: '2026-11-02'
+  recheck_by: '2026-11-25'
   note: The relaunch post (2026-04-21) describes branching logic, triggers, variables, randomization and an AI
     Assistant that turns plain-language study descriptions into flows. The Wrist App's starting models are Garmin
     Vivoactive 5, Vivoactive 6, Venu 3 and Venu 4. "Summer 2026" has passed and the label has not been updated, so

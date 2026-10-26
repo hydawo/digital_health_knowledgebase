@@ -65,7 +65,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: up to 40,000 adult participants
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Garmin's current research page (garmin.com/en-US/health/solutions/research-and-clinical-trials/) renders its text
     from embedded script data that the quote checker cannot read; read by hand on 2026-10-10 it also mentions a Research
     Participation Program for recruitment, which is not quoted here. The profile says grants run "through partners, not
@@ -105,7 +105,7 @@ facts:
     retrieved: '2026-10-10'
     quote: invites researchers-including postgraduates, Ph.D. candidates, and senior scholars-across 11 key Asian markets to
       apply by March 31, 2026
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: program_application
   status: stated
   value: Request Now form, then the Garmin Health team discusses business needs and arranges evaluation licences
@@ -117,7 +117,7 @@ facts:
     retrieved: '2026-10-10'
     quote: Request access using the "Request Now" form and a member of the Garmin Health team will be in touch to discuss your
       business needs and arrange evaluation licenses.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: program_application
   status: stated
   value: Application reviewed by Garmin (FAQ says status within two business days), then a Garmin call; the application form
@@ -155,7 +155,7 @@ facts:
     type: secondary
     retrieved: '2026-10-10'
     quote: CURRENT GRANTS To be announced New grants will be announced soon.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: No Garmin page states the research offering's status directly; activity is inferred from recent Garmin publications,
     hence Corroborated.
 - field: developer_program_status
@@ -260,7 +260,7 @@ facts:
     type: vendor_legal
     retrieved: '2026-10-10'
     quote: is a binding agreement between Garmin China Shanghai RHQ Co., Ltd. and its affiliates
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: The Garmin International version (developerportal.garmin.com, FRM-0952 Rev. B, PDF created 2023-10-04) has no such
     exemption. No source says which version binds a licensee outside China; see ai_training_terms.
 - field: device_price
@@ -273,7 +273,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: The vívosmart 5 has a suggested retail price of $149.99 and is available now on Garmin.com
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Launch price; current store prices are rendered by script and could not be checked.
 - field: device_price
   status: stated
@@ -285,7 +285,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: Available now, CIRQA Smart Band has a suggested retail price of $199.99.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: device_price
   status: stated
   value: US $249.99 (Forerunner 70), $299.99 (Forerunner 170), $349.99 (Forerunner 170 Music) suggested retail, May 2026
@@ -296,7 +296,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: Forerunner 70 has a suggested retail price of $249.99, Forerunner 170 is $299.99 and Forerunner 170 Music is $349.99.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Prices for vivoactive and Venu models were not confirmed from a quotable Garmin page.
 - field: subscription_price
   status: stated
@@ -313,7 +313,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: All existing features and data in Garmin Connect will remain free.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Price from the March 2025 launch release; the live Connect+ page is script-rendered. The profile says "no consumer
     subscription" without mentioning Connect+; some AI insights are paywalled and can differ across participants.
 - field: academic_pricing
@@ -386,7 +386,7 @@ facts:
     type: secondary
     retrieved: '2026-10-10'
     quote: 'SDK: High license cost, complex development needed (iOS/Android app required), access to high-resolution data.'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: minimum_commitment
   status: stated
   value: No published minimum; a device minimum order quantity is one of two payment routes for commercial Health SDK use
@@ -490,7 +490,7 @@ facts:
     type: secondary
     retrieved: '2026-10-10'
     quote: 15 Min Epochs -Steps -Heart rate -Distance -MET -Intensity -MeanMotion, MaxMotion Minute -Stress (3min)
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: sampling_rates
   status: stated
   value: Logged accelerometer data is fixed at 25 Hz and cannot be adjusted (two integrators; not on Garmin's public pages)
@@ -505,7 +505,7 @@ facts:
     type: secondary
     retrieved: '2026-10-10'
     quote: Records 25Hz accelerometer data from all three axes in milli-Gs.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: sampling_rates
   status: stated
   value: Connect IQ apps set the motion-sensor sample rate up to a device-reported maximum
@@ -516,7 +516,7 @@ facts:
     type: vendor_docs
     retrieved: '2026-10-10'
     quote: Get the maximum sample rate supported for given sensor data type.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: history_depth
   status: unclear
   confidence: Unclear
@@ -614,7 +614,7 @@ facts:
     retrieved: '2026-10-10'
     quote: to access, rectify, erase, object to, restrict the Processing of, or export End User Personal Data that Licensee
       has collected via the API
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: The retention period sits in the annex for transfers out of the EEA, UK and Switzerland; no general retention cap
     appears elsewhere. The China-entity agreement replaces this annex with a PIPL cross-border standard contract and was not
     searched for an equivalent period.
@@ -634,7 +634,7 @@ facts:
     type: vendor_legal
     retrieved: '2026-10-10'
     quote: is a binding agreement between Garmin International, Inc. and its affiliates
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Searched the agreement text for "artificial intelligence" and "machine learning" on 2026-10-10; no matches.
 - field: ai_training_terms
   status: stated
@@ -655,7 +655,7 @@ facts:
     type: vendor_legal
     retrieved: '2026-10-10'
     quote: is a binding agreement between Garmin China Shanghai RHQ Co., Ltd. and its affiliates
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: 'Two agreement versions are live and no source says which binds a licensee outside China. The China-entity version
     is governed by PRC law, has a PIPL cross-border transfer annex instead of the EU SCC annex, yet also sets New York arbitration
     for licensees domiciled outside the PRC, so it does not limit itself to Chinese licensees. The Garmin International version

@@ -57,7 +57,7 @@ facts:
     type: vendor_page
     quote: "The Novo Nordisk Foundation (NNF) has recently decided to fund CARP with a DKK 5 million grant (EUR 700 000)"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
   note: The 2023 grant post states a goal of serving researchers, companies and students; the current hosting terms restrict the hosted service to research with DTU as a partner.
 - field: program_eligibility
   status: stated
@@ -137,7 +137,7 @@ facts:
     type: vendor_page
     quote: "We are pleased to announce the release of a new major version of the CARP Mobile Sensing (CAMS) framework"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
 - field: developer_program_status
   status: stated
   value: >-
@@ -188,7 +188,7 @@ facts:
     type: vendor_page
     quote: "who are building a commercial or clinical-grade product on top of CARP"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
 # ---------------- Pricing ----------------
 - field: device_price
   status: not_applicable
@@ -222,7 +222,7 @@ facts:
     type: vendor_legal
     quote: "Senior Researcher (PhD) A senior researcher with extensive experience. 105,000"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
   note: The rate table's column heading is "Price pr. month". The research assistant (68,100) and researcher (78,000) rows sit between the two quoted rows on the same table.
 - field: api_platform_fees
   status: stated
@@ -240,7 +240,7 @@ facts:
     type: vendor_page
     quote: "All three components are open source and available under permissive licenses."
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
 - field: minimum_commitment
   status: not_public
   confidence: Unclear
@@ -269,7 +269,7 @@ facts:
     type: vendor_legal
     quote: "In smaller projects, we may apply a “pay as you go” price model"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
 - field: hosting_price
   status: stated
   value: >-
@@ -304,7 +304,7 @@ facts:
     type: vendor_legal
     quote: "We do not provide any service-level agreements (SLAs) or any service guarantees whatsoever."
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
   note: >-
     "Price pr. month" is the heading of the table's price column, so the hosting row reads as 1,250
     DKK per study per month; the setup row overrides it with "(one time)". The page writes 45.000
@@ -488,7 +488,7 @@ facts:
     type: repository
     quote: "default 20/minute) guards against a single client hammering the endpoint"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
   note: Checked for other limits on 2026-10-11 in carp-webservices-spring, docs.carp.dk/backends/carp-webservices/ and docs.carp.dk/backends/where-data-goes/caws/. The Swagger API docs are only on the development server.
 - field: retention_terms
   status: conflict
@@ -609,7 +609,7 @@ facts:
     type: vendor_page
     quote: "the app is open source (MIT) on GitHub"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
   note: GitHub's licence API reported MIT for all seven repositories on 2026-10-11. Some newer org repositories (carp-docs-starlight, carp-dsp-portal, carp-app-site-ts) declare no licence.
 - field: hosting_options
   status: stated
@@ -636,7 +636,7 @@ facts:
     type: vendor_legal
     quote: "We do not provide any service-level agreements (SLAs) or any service guarantees whatsoever."
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
 - field: app_availability
   status: stated
   value: >-

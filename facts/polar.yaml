@@ -64,7 +64,7 @@ facts:
     type: vendor_page
     quote: Find out how Polar technology and services can be used for research and science.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: In Polar-run research collaborations the privacy notice says customer data stays inside Polar. A separate
     Polar-linked grant, the Seppo Saynajakangas Science Foundation, is open only to Finnish citizens studying in northern
     Finland, so it is not an access route for most study teams.
@@ -87,7 +87,7 @@ facts:
     type: vendor_page
     quote: Not interesting and not in relation to Company actions to be rejected
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: '"No published eligibility rule" is an inference from the page, which lists documents and review criteria but no
     eligibility conditions.'
 - field: program_application
@@ -123,7 +123,7 @@ facts:
     type: vendor_page
     quote: 'Send your proposal to: research@polar.com'
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: API and SDK access need no application; see developer_program_status.
 - field: program_status
   status: stated
@@ -139,7 +139,7 @@ facts:
     type: vendor_page
     quote: Submit your research proposal and we’ll be in touch.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Status inferred from a live invitation page; no dated program announcement found.
 - field: developer_program_status
   status: stated
@@ -168,7 +168,7 @@ facts:
     quote: Build your own app from scratch, or integrate Polar 360's powerful data into existing ecosystems seamlessly
       with Polar SDK; or plug ‘n’ play with Polar API.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: user_cap
   status: not_public
   confidence: Corroborated
@@ -202,7 +202,7 @@ facts:
     type: vendor_legal
     quote: At the moment Polar offers the use and activation of Polar API’s free of charge.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: '"No separate academic tier" is inferred from the absence of academic terms on the API, SDK and science pages.
     The SDK licence is a proprietary limited licence, not an open-source one (see api_platform_fees and retention_terms,
     scope BLE SDK); Polar approved one research project''s GPLv3-with-linking-exception licence case by case in SDK issue
@@ -218,7 +218,7 @@ facts:
     type: vendor_page
     quote: Polar H10 Heart Rate Sensor $104.95
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: device_price
   status: stated
   scope: Polar Verity Sense
@@ -229,7 +229,7 @@ facts:
     type: vendor_page
     quote: Polar Verity Sense Optical Heart Rate Sensor $104.95
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: The comparison matrix and the Wearable Data Atlas still carry "~$95 (2026-08-21, not re-read)"; the live US store
     says $104.95, matching the profile.
 - field: device_price
@@ -242,7 +242,7 @@ facts:
     type: vendor_page
     quote: POLAR Loop Screen-Free Wearable Health Band & Fitness Tracker $199.99
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: device_price
   status: stated
   scope: Watches
@@ -265,7 +265,7 @@ facts:
     type: vendor_page
     quote: Polar Grit X2 Pro Premium Outdoor Watch $999.99
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: subscription_price
   status: stated
   value: No subscription needed for Polar Flow or the devices. The optional Fitness Program (needs a Polar watch) is free
@@ -291,7 +291,7 @@ facts:
     type: vendor_page
     quote: No monthly fees. No locked features.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: The US-English Fitness Program page shows the price in euros; no USD price is published by Polar.
 - field: academic_pricing
   status: not_public
@@ -326,7 +326,7 @@ facts:
     type: vendor_legal
     quote: Polar reserves the right to charge fees from time to time at its discretion.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: api_platform_fees
   status: stated
   scope: BLE SDK
@@ -372,7 +372,7 @@ facts:
     quote: Licensed Materials and Polar's devices are not intended to be used in life critical, life supporting or medical
       purpose.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: The schema's licence field applies to platforms only, so the SDK licence is recorded here and under
     retention_terms. GitHub reports the repository licence as NOASSERTION. The profile and matrix call the SDK "open
     source", which this text does not support; "source-available, free, under Polar's limited licence" is accurate.
@@ -393,7 +393,7 @@ facts:
     quote: to suspend or terminate Your, Your Corporate Customer’s or any Member’s access to Polar Ecosystem for any or
       no reason, with immediate effect
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: minimum_commitment
   status: not_public
   scope: Business and B2B (Polar 360, volume device orders)
@@ -416,7 +416,7 @@ facts:
     type: vendor_page
     quote: Polar H10 Heart Rate Sensor $104.95
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: quote_required
   status: stated
   scope: Polar 360 and B2B
@@ -432,7 +432,7 @@ facts:
     quote: To learn more about Polar for Business and to discuss B2B partnership opportunities, please complete the form
       below.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 # ---------------- Data access and terms ----------------
 - field: raw_streams
   status: stated
@@ -451,7 +451,7 @@ facts:
     type: vendor_docs
     quote: Heart rate as beats per minute and RR Interval in ms.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: raw_streams
   status: stated
   scope: BLE SDK, Polar Verity Sense
@@ -469,7 +469,7 @@ facts:
     type: vendor_docs
     quote: Gyroscope data with sample rate of 52Hz and ranges of 2000deg/sec.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: 'A Polar staff reply in SDK issue #887 (2026-10-05) says "PolarOfflineRecordingApi is currently supported only by
     Polar H10", which disagrees with the Verity Sense and Polar 360 product docs (both document offline recording). The
     per-device docs are kept as governing; the reply is Reported only and may mean the H10''s separate internal
@@ -491,7 +491,7 @@ facts:
     type: vendor_docs
     quote: 24/7 PPi samples in milliseconds (get247PPiSamples)
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: 24/7 PPi on these bands is a set of automatically triggered sessions, not a continuous recording (see
     sampling_rates, scope 24/7 PPi).
 - field: raw_streams
@@ -517,7 +517,7 @@ facts:
     type: repository
     quote: ECG / Elixir is not available through the Vantage V3 BLE SDK.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: The ECG statement is a Polar staff reply (samulimaa, 2026-10-05), not product documentation. Stored 24/7 data on
     these watches is in conflict; see export_routes (watch line).
 - field: raw_streams
@@ -556,7 +556,7 @@ facts:
     type: vendor_page
     quote: The ECG test is not intended for medical or diagnostic use.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Both researchers wrote "no raw ECG" for AccessLink; the API schema's ECG samples array shows otherwise. The ECG
     sample rate is not documented, and these are spot tests the wearer starts, not continuous recording.
 - field: derived_metrics
@@ -586,7 +586,7 @@ facts:
     type: vendor_docs
     quote: Nightly recharge data per night (getNightlyRecharge)
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: SleepWise and Elixir biosensing endpoints were released in beta status (changelog 13.03.2023 and 19.12.2023).
 - field: sampling_rates
   status: stated
@@ -617,7 +617,7 @@ facts:
     quote: The available settings for PPG, gyroscope, magnetometer, pressure, and skin temperature should be queried from
       the device with requestStreamSettings().
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: sampling_rates
   status: stated
   scope: AccessLink API
@@ -636,7 +636,7 @@ facts:
     quote: 24/7 HR samples as 5 min averages when low or moderate activity and with 60 samples/minute when high activity
       is detected
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: sampling_rates
   status: stated
   scope: BLE SDK, 24/7 PPi on Polar 360 and Loop
@@ -653,7 +653,7 @@ facts:
     type: repository
     quote: The exact acquisition schedule is not documented.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Polar staff reply (2026-10-05), not product documentation.
 - field: history_depth
   status: stated
@@ -680,7 +680,7 @@ facts:
     type: vendor_docs
     quote: List sleep data of user for the last 28 days.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: export_routes
   status: stated
   value: 'AccessLink REST API (OAuth2, JSON or XML, webhooks, exercise FIT/TCX/GPX files); BLE SDK for Android and iOS
@@ -720,7 +720,7 @@ facts:
     type: vendor_docs
     quote: H10 disconnects the BLE connection after 45 seconds timeout when H10 is removed from strap.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Operational caveats. AccessLink webhooks switch off after 7 days of failed delivery, and a 403 is returned if the
     user has not accepted all mandatory consents. An H10 long internal recording download is cut off if the sensor is
     taken off the strap, so keep it on a worn strap while reading.
@@ -773,7 +773,7 @@ facts:
     quote: Load testing without prior approval by Polar will be construed as interfering with the proper working of
       Polar Ecosystem
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: rate_limits
   status: stated
   scope: Team Pro API
@@ -784,7 +784,7 @@ facts:
     type: vendor_docs
     quote: The rate limit is basically allowing 1 request per second speed.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: retention_terms
   status: stated
   scope: AccessLink and Polar Flow
@@ -812,7 +812,7 @@ facts:
     quote: Data is retained for 180 days after the license period ends, unless the organization requests earlier
       deletion.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Polar can end API access at any time (see minimum_commitment), which would trigger the deletion duty for data a
     study has already pulled.
 - field: retention_terms
@@ -843,7 +843,7 @@ facts:
     quote: You shall cease the use of Licensed Materials and Confidential Information and any of its rights under Section
       3, and destroy and delete all copies of the Licensed Materials and Confidential Information.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: The garbled wording of clause 10.2 is Polar's own; it is quoted as written. The profile's "no API deprecation
     risk on the raw-data path" should allow for this notice-based termination.
 - field: ai_training_terms
@@ -888,7 +888,7 @@ facts:
     quote: Polar may use your personal and non-personal data internally for research and development purposes to enhance
       technologies, develop new products, and improve services.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: deprecations
   status: stated
   scope: AccessLink API
@@ -904,7 +904,7 @@ facts:
     type: vendor_docs
     quote: Transactional endpoint for Physical info is deprecated
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: deprecations
   status: stated
   scope: BLE SDK
@@ -930,7 +930,7 @@ facts:
     type: repository
     quote: CocoaPods will change its repository to read-only by December 2nd 2026
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 # ---------------- Compliance ----------------
 - field: baa
   status: not_public

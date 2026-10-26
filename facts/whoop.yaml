@@ -183,7 +183,7 @@ facts:
     type: vendor_docs
     quote: Requests are reviewed manually, in the order they are received.
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: A separate server-to-server Healthcare Partner API is limited to WHOOP-approved healthcare partners (lab
     requisition workflows, not member wearable data).
 - field: developer_program_status
@@ -209,7 +209,7 @@ facts:
     quote: we’ve had no approval, no rejection, and no timeline beyond the initial auto-reply
     retrieved: '2026-10-10'
     note: Post of 2026-08-06.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: User posts, not WHOOP policy. Build tier requests into a study timeline with slack.
 - field: user_cap
   status: stated
@@ -230,7 +230,7 @@ facts:
     type: vendor_docs
     quote: From Build onward, moving up requires at least 50% of your current tier's member limit to be connected.
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Reaching Scale needs 50 connected members on Build and then 500 on Growth. See the tier turnaround entry
     under developer_program_status.
 - field: academic_vs_commercial
@@ -344,7 +344,7 @@ facts:
     quote: Access to the WHOOP Developer Platform and API is currently free. However, you must have a WHOOP device,
       which requires a membership.
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: api_platform_fees
   status: stated
   scope: Research partnerships
@@ -400,7 +400,7 @@ facts:
     type: vendor_legal
     quote: Access to and use of the APIs is currently provided at no charge.
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: quote_required
   status: stated
   scope: Research partnerships and Healthcare Partner API
@@ -417,7 +417,7 @@ facts:
     type: vendor_page
     quote: Research Request Intake
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: raw_streams
   status: stated
   scope: Developer API
@@ -433,7 +433,7 @@ facts:
     type: vendor_docs
     quote: Each WHOOP device can broadcast heart rate over Bluetooth Low Energy (BLE) to other devices.
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: A member reports the in-app CSV export also gives only per-stage totals, with no intraday heart rate (see
     export_routes).
 - field: raw_streams
@@ -484,7 +484,7 @@ facts:
     type: vendor_docs
     quote: Covered by the existing read:cycles scope
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: step_count is one total per cycle, null when no step data exists; not a time series. Features sold in Peak
     and Life (Healthspan, Stress Monitor, ECG, Blood Pressure Insights) and Journal have no API scope.
 - field: sampling_rates
@@ -502,7 +502,7 @@ facts:
     type: vendor_docs
     quote: A day’s worth of member data (with one workout, one sleep, and one recovery) would be about 4 KB.
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: A cycle runs from sleep to sleep, so it does not match a calendar day.
 - field: sampling_rates
   status: stated
@@ -572,7 +572,7 @@ facts:
     quote: The Partner API is available exclusively to WHOOP-approved healthcare partners . It is not available to
       general developers.
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: export_routes
   status: stated
   scope: Member self-export (app)
@@ -641,7 +641,7 @@ facts:
     type: vendor_docs
     quote: Upon request, WHOOP can increase your rate limits.
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: retention_terms
   status: stated
   value: API terms bar building databases or permanent copies of WHOOP Data, or caching beyond the cache header,
@@ -661,7 +661,7 @@ facts:
     type: vendor_legal
     quote: delete any cached or stored content that was permitted under the Terms
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: 'Terms "Effective Date: October 6, 2026". Whether a consenting participant counts as the "WHOOP Data owner"
     is untested; a study keeping a dataset needs WHOOP''s written agreement. Members can request deletion through
     privacy.whoop.com, and WHOOP may keep de-identified or aggregated data (privacy policy, capture of 2026-08-06).'
@@ -676,7 +676,7 @@ facts:
     quote: Use any API or WHOOP Data to create, develop, test, train, fine-tune or improve any large language model or
       any other machine learning or artificial intelligence model, application, or system;
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: On its face this covers study-specific predictive models. Get written clarification from WHOOP before
     modelling. Separately, the consumer privacy policy says WHOOP's own LLM partner works under a zero-retention,
     zero-training policy for WHOOP metrics.
@@ -703,7 +703,7 @@ facts:
     type: vendor_docs
     quote: Previous generation identifier for the activity. Will not exist past 09/01/2025
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: baa
   status: stated
   value: No BAA offered publicly. API terms bar transmitting PHI without WHOOP's prior written consent; WHOOP's 2023

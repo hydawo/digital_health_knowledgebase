@@ -57,7 +57,7 @@ facts:
     quote: Research projects agree to provide the Movesense team with material related to the research project that
       can be used in news articles on www.movesense.com and shared in Movesense social media.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: An equipment-and-support grant, not a data or platform program; Movesense has no cloud data platform for
     researchers. Outside the program there is no research tier, and teams buy sensors in the business-only web shop.
     Third parties (for example Fibion Flash) resell Movesense hardware as research kits.
@@ -79,7 +79,7 @@ facts:
     quote: Potential of commercial applications of the project results Utility value of Movesense sensors for completing
       the project Potential of the project to build awareness for Movesense Additional non-published criteria of Movesense
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Past participants include non-university organizations (for example Neurobit Technologies, Singapore), so
     the program is not limited to universities. Selection explicitly weighs commercial potential and publicity value
     for Movesense, which teams should expect when framing an application.
@@ -136,7 +136,7 @@ facts:
     type: vendor_page
     quote: Projects invited in Q1, 2023
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: The page is stale (latest cohort Q1 2023; Google Scholar count dated January 20, 2023), but the news feed shows
     projects still being admitted. The Research Bundle linked from the Benefits for Scientific Research page
     (movesense.com/product/movesense-research-bundle-hr2/) returned 404 on 2026-10-11.
@@ -171,7 +171,7 @@ facts:
     type: vendor_page
     quote: At this point the Movesense Developer kit is available for business customers only.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Public repositories seen through the Bitbucket API on 2026-10-11 include movesense-device-lib (updated
     2025-11-20), movesense-mobile-lib (2026-06-01), python-datalogger-tool (2026-10-08) and sbem-tools (2026-09-14).
     Licences differ by repository; see academic_vs_commercial for what each document says.
@@ -207,7 +207,7 @@ facts:
     quote: The previous firmware version certified for medical use is 2.1.5, and subsequent updates have been intended
       for non-medical use only.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Custom on-sensor firmware and Class IIa status are therefore alternatives on the MD, not a combination. A study
     relying on the MD's medical-device status must run certified Movesense firmware (2.3.1 brought later features to
     medical use in June 2025).
@@ -231,7 +231,7 @@ facts:
     quote: If you integrate the sensors into your own application, you can decide where the data is stored. It does
       not go to Movesense servers.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: academic_vs_commercial
   status: stated
   value: 'No academic pricing; universities pay shop prices and can request a formal quote. The licensing documents
@@ -283,7 +283,7 @@ facts:
     type: repository
     quote: This project is licensed under the MIT License.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: The FAQ's "open" describes access and cost, not an open-source licence; the device library itself is
     proprietary. Both evaluation texts are twelve-month agreements (Terms section 11 and LICENSE.pdf section 11). The
     Terms version also caps Movesense's liability at fifty euros. Commercial License terms are not published. The
@@ -305,7 +305,7 @@ facts:
     type: vendor_page
     quote: Movesense MD Sensor 349,00 € VAT 0%
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: device_price
   scope: Movesense Flash sensor
   status: stated
@@ -316,7 +316,7 @@ facts:
     type: vendor_page
     quote: 1-49 249€ 50-99 244€ 100-199 239€
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: device_price
   scope: Movesense HR+ sensor
   status: stated
@@ -327,7 +327,7 @@ facts:
     type: vendor_page
     quote: 1-49 119€ 50-99 114€ 100-199 109€
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: device_price
   scope: Movesense HR2 sensor
   status: stated
@@ -343,7 +343,7 @@ facts:
     type: vendor_page
     quote: Movesense ECG Heart Rate Monitor Bundle 120,00 € VAT 0%
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: device_price
   scope: Developer kits and accessories
   status: stated
@@ -368,7 +368,7 @@ facts:
     type: vendor_page
     quote: Movesense Debugger + Programming Jig V2 649,00 €
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Prices exclude VAT; the shop sells to business customers only. A search-engine cache showed the Flash
     Developer Kit at 399 EUR and a five-unit minimum for the Flash sensor; the live pages read 379 EUR and tiers from
     one unit.
@@ -382,7 +382,7 @@ facts:
     type: vendor_page
     quote: Regular price €349,90 EUR
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: subscription_price
   status: stated
   value: None. The sensors, developer tools and the Movesense ECG Recorder app carry no recurring fee. Movesense has
@@ -401,7 +401,7 @@ facts:
     type: vendor_page
     quote: some of the application’s advanced features will be packaged into a premium subscription version
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: academic_pricing
   status: stated
   value: No general academic pricing. Movesense will issue an official quote for university procurement on request.
@@ -412,7 +412,7 @@ facts:
     type: vendor_page
     quote: Does Movesense support University / Research pricing? There is no general academic pricing.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: api_platform_fees
   status: stated
   value: No licence cost for the SDKs, developer tools, sample code or API, and none for custom firmware programmed on
@@ -433,7 +433,7 @@ facts:
     type: vendor_page
     quote: This involves an NRE cost, but after that there is no customization surcharge in the product
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: minimum_commitment
   status: stated
   value: None for standard sensors, sold from one unit. Custom logo labels have a minimum order of 100; custom branding
@@ -459,7 +459,7 @@ facts:
     type: vendor_legal
     quote: The orders you place in the Movesense Online Store are binding and may not be cancelled.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Business-customer order changes after shipping incur a modification, return and re-stocking fee of up to 200
     EUR (Terms).
 - field: quote_required
@@ -477,7 +477,7 @@ facts:
     type: vendor_page
     quote: For inquiries regarding mass volume pricing, please contact sales@movesense.com .
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 # ---------------- Data access and terms ----------------
 - field: raw_streams
   status: stated
@@ -506,7 +506,7 @@ facts:
     type: vendor_docs
     quote: The biggest effect of this is the change of ECG input high pass filtering from 7 Hz to 0.5 Hz.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Temperature is described as non-medical on the specifications page. The HR+ also has a 1-wire extension bus;
     the MD has the 1-wire master removed. Custom firmware on the MD falls outside its MDR registration (see
     developer_program_status, medical firmware).
@@ -535,7 +535,7 @@ facts:
     type: app_store
     quote: The version 2.1 adds two new ECG analysis reports
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Kubios HRV use is a file workflow (record in the Showcase app, save CSV, open in Kubios), not an integration.
 - field: sampling_rates
   scope: ECG and R-R intervals
@@ -552,7 +552,7 @@ facts:
     type: vendor_docs
     quote: ECG subscriptions with high sample frequency (>256 Hz) over BLE should be avoided.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: ECG bandwidth is up to 40 Hz on the MD and 34 Hz on sport models, so Movesense recommends 125 to 200 Hz.
 - field: sampling_rates
   scope: Accelerometer, gyroscope, magnetometer (IMU)
@@ -607,7 +607,7 @@ facts:
     type: vendor_page
     quote: For 9-axis motion data (acceleration, gyro, magnetometer) at 52 Hz, the capacity is enough for almost 19 hours.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: 'Two unit discrepancies, neither material. The data storage doc says 386 kB EEPROM where the hardware variants
     table says 384 kB; the HR2 page gives 3 Mbit, which is 384 kB, so 386 is a typo. The Flash product page says
     "128 Mb integrated memory" while the specifications page and hardware table say 128 MB; the published logging
@@ -647,7 +647,7 @@ facts:
     type: secondary
     quote: manually start recording data through a task on the participant app in order to capture their data
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: 'The GATT SensorData Protocol is in the default firmware, so raw ECG and IMU can be collected on a laptop without
     custom firmware. On Labfront, participants must start each Movesense recording manually through a task, which
     bears on adherence; Labfront also offers its customers a Movesense device discount. Fibion Flash resells the Flash
@@ -678,7 +678,7 @@ facts:
     type: vendor_page
     quote: Data storage and use is completely under your own control.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: The evaluation licence requires returning or destroying the licensed software on termination; that concerns
     the software, not study data.
 - field: retention_terms
@@ -703,7 +703,7 @@ facts:
     quote: However, we will not be able to delete personal data that are necessary for complying with binding legal
       obligations or that must be retained under applicable law.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: These terms apply to the ECG Recorder app only, not to data from a team's own integration.
 - field: ai_training_terms
   scope: Own app or Movesense developer tools
@@ -736,7 +736,7 @@ facts:
     quote: 'After anonymization the stored data includes the following non-personal information: technical identifier,
       year of birth/age, gender.'
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Movesense announced a non-binding pilot with NeuralCloud Solutions (February 2026) for AI-assisted ECG and
     Holter reporting; whether ECG Recorder data feeds it is not stated.
 - field: deprecations
@@ -778,7 +778,7 @@ facts:
     type: vendor_legal
     quote: Movesense Ltd, a limited liability company incorporated in Finland
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: 'Organization, for context rather than as a deprecation: Movesense left Suunto through a management buy-out
     effective 1 October 2021 and now trades as Movesense Ltd (Vantaa, Finland), with operational links to Suunto
     continuing. A buyer of MD units should check the SKU, since older stock is MDD-certified.'

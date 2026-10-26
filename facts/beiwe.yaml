@@ -69,7 +69,7 @@ facts:
     quote: This model is not a scientific collaboration with the Onnela Lab, but instead makes it possible for investigators
       to use Beiwe without having to deploy and maintain their own version of the open source code base.
     retrieved: 2026-10-10
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
   note: The profile (line 125) says the current BSC pages list no data deliverables; the use-beiwe page does.
 - field: program_eligibility
   status: stated
@@ -88,7 +88,7 @@ facts:
       of data collection per subject is L=12 months, and study duration is T=24 months. The total cost of the contract
       is $73,440.
     retrieved: 2026-10-10
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
 - field: program_application
   status: stated
   value: Fill out the BSC interest form (linked as "Request a Quote or Platform Demo") and the BSC follows up. No
@@ -108,7 +108,7 @@ facts:
     type: vendor_page
     quote: If you're interested in a direct collaboration please contact JP Onnela directly.
     retrieved: 2026-10-10
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
 - field: program_status
   status: stated
   value: Active. The BSC publishes FY26 pricing (page last modified 2026-07-23) and links live US and EU service
@@ -129,7 +129,7 @@ facts:
   - url: https://eu.beiwe.org/
     type: vendor_page
     retrieved: 2026-10-10
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
   note: Active status is inferred from current fiscal-year pricing and live login pages; no page says "accepting
     new studies". The modified date is the page's own article:modified_time metadata.
 - field: developer_program_status
@@ -155,7 +155,7 @@ facts:
     type: vendor_docs
     quote: Contact our developers, Zagaran , directly, but please be advised that they will charge for their service.
     retrieved: 2026-10-10
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
   note: The FAQ sits in the wiki's older researcher section. The Harvard technology page is otherwise stale (it
     still calls the backend Python 3.6 and says Forest's first public release is anticipated for early 2021), so
     it is cited only for the licence.
@@ -200,7 +200,7 @@ facts:
     quote: This model is not a scientific collaboration with the Onnela Lab, but instead makes it possible for investigators
       to use Beiwe without having to deploy and maintain their own version of the open source code base.
     retrieved: 2026-10-10
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
   note: Same-rate is arithmetic on the published example ($2,640 x 24 + $8.40 x 1,200 = $73,440), not a stated policy.
     The superseded FY24 page's for-profit example ($27,564 for N=160, L=3, T=12) did not fit its own $1,937 plus
     $6 formula ($26,124) and implied about $9 per Active Participant Month, so for-profit rates may have differed
@@ -237,7 +237,7 @@ facts:
     quote: A small pilot study with some tens of subjects with a couple of months of data collection using Beiwe
       through our not-for-profit Beiwe Service Center might cost around $80 per subject-month (total cost).
     retrieved: 2026-10-10
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
   note: The About page's indicative figures (about $80 per subject-month for a small pilot, about $3.50 for a one-year
     study of about 1,000 subjects) are undated and may predate FY26. See hosting_price for the superseded FY24 rates.
 - field: api_platform_fees
@@ -259,7 +259,7 @@ facts:
     type: vendor_docs
     quote: The data download API is for raw/chunked data.
     retrieved: 2026-10-10
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
 - field: minimum_commitment
   status: not_public
   confidence: Verified
@@ -295,7 +295,7 @@ facts:
     quote: rates are subject to periodic revisions, but study teams will always be notified at least 30 days in
       advance of any pricing changes.
     retrieved: 2026-10-10
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
 - field: hosting_price
   status: stated
   value: 'BSC managed hosting, FY26 rates: $2,640 per month over the total study duration (T) plus $8.40 per Active
@@ -321,7 +321,7 @@ facts:
     type: vendor_page
     quote: The total cost of the contract is $73,440.
     retrieved: 2026-10-10
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
   note: 'Superseded, not a conflict. The older Onnela Lab page (hsph.harvard.edu/research/onnela-lab/beiwe-service-center/,
     still live) shows "Fixed Monthly Cost: $1,937/month" and "Variable Cost: $6/Active Participant Month" under
     "FY24 Example Pricing". Each page labels its own fiscal year, so the two are successive rate cards, not disagreeing
@@ -376,7 +376,7 @@ facts:
     quote: 'Production data: researchers will only be able to download processed data output from the Data Analysis
       Pipeline.'
     retrieved: 2026-10-10
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
   note: 'Phone numbers and Wi-Fi and Bluetooth MAC addresses are hashed on the phone with a per-device key. Power
     state on iOS is documented inconsistently (profile holds that conflict). Ambient audio: Android 3.1.0 added
     it (backend defaults were 10 minutes on, 10 minutes off, 44.1 kHz); migration 0150 (generated 2026-07-31) removes
@@ -418,7 +418,7 @@ facts:
     type: repository
     quote: Forest is putting daily summary data on the wrong day.
     retrieved: 2026-10-10
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
   note: 'Open Forest bug #343 (2026-10-01): after a daylight-saving change, Willow and Jasmine label every daily
     row one day early; totals are unaffected. Forest has one tagged release (v1.0, 2025-06-30, also beiwe-forest
     1.0 on PyPI), with develop 506 commits ahead on 2026-10-10, so a pip install lags the docs and the backend.'
@@ -446,7 +446,7 @@ facts:
     type: vendor_docs
     quote: Values entered for the sample rates of the accelerometer are not very reliable.
     retrieved: 2026-10-10
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
   note: Under the BSC, passive data settings are edited by Onnela Lab staff, not the study team.
 - field: history_depth
   status: stated
@@ -463,7 +463,7 @@ facts:
     type: vendor_docs
     quote: it only downloads new data
     retrieved: 2026-10-10
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
   note: The absence of a look-back limit is inferred from the docs, not stated.
 - field: export_routes
   status: stated
@@ -489,7 +489,7 @@ facts:
     quote: Summary Statistics includes the data quantity stats visible to you on the Study Dashboard, plus extra
       statistics generated by Forest statistical analyses.
     retrieved: 2026-10-10
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
   note: 'See deprecations for backend announcement #471, which affects files downloaded from about March 2024 until
     a server is updated and its data reprocessed.'
 - field: rate_limits
@@ -534,7 +534,7 @@ facts:
   - url: https://hsph.harvard.edu/research-resource/beiwe/use-beiwe/
     type: vendor_page
     retrieved: 2026-10-10
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
   note: Evidence for deletion is the code (dashboard template, settings, libs/participant_purge.py), not a policy.
     The profile (line 135) says deletion procedures are not stated.
 - field: ai_training_terms
@@ -593,7 +593,7 @@ facts:
     type: vendor_docs
     quote: This one will continue to work but is deprecated and may be removed at any time.
     retrieved: 2026-10-10
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
   note: '#471 says early affected data "likely only affected Onnela Lab servers"; the maintainer reports 25% to
     100% more data after reprocessing. Any Beiwe completeness figure computed from data downloaded in that window
     may undercount. Separately, announcement #494 (2026-10-07) says a Forest performance problem had been blocking
@@ -624,7 +624,7 @@ facts:
     quote: BSD 3-Clause License
     fetch_url: https://raw.githubusercontent.com/onnela-lab/forest/develop/LICENSE.md
     retrieved: 2026-10-10
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
 - field: hosting_options
   status: stated
   value: 'Two routes. Managed: the Beiwe Service Center runs the study on the Onnela Lab''s production AWS deployment,
@@ -651,7 +651,7 @@ facts:
     type: vendor_page
     quote: EU Beiwe Service Center Login
     retrieved: 2026-10-10
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
 - field: app_availability
   status: stated
   value: 'iOS: Beiwe2 on the App Store (Onnela Lab LLC, free, iPhone, iOS 15.0 or later, version 2.5.11 of 2026-09-30),
@@ -677,7 +677,7 @@ facts:
     type: vendor_page
     quote: Looking for the Android App? click here to download.
     retrieved: 2026-10-10
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-25'
   note: Version, seller and minimum iOS from the iTunes lookup API (itunes.apple.com/lookup?id=1312962738). The
     download links redirect to Beiwe-LATEST-commStatsCustomUrl.apk on S3 (researcher A, 2026-10-10).
 - field: app_availability

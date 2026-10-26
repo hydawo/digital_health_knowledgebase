@@ -63,7 +63,7 @@ facts:
     retrieved: '2026-10-24'
     quote: Apple has multiple partnerships with the research community, including an Investigator Support Program
       that provides free devices.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: Investigator Support Program
 - field: research_program
   status: stated
@@ -80,7 +80,7 @@ facts:
     retrieved: '2026-10-10'
     quote: Using Study App Template, minimal to no coding experience is required to build a study data collection
       app.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: Study App Template
 - field: research_program
   status: stated
@@ -97,7 +97,7 @@ facts:
     retrieved: '2026-10-10'
     quote: Access to these data types is limited to research uses and requires an app to have a private entitlement,
       which is reviewed separately for each study.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: SensorKit
 - field: research_program
   status: stated
@@ -119,7 +119,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: No this entitlement does not gate access to HealthKit data types.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: HealthKit Research Entitlement
 - field: research_program
   status: stated
@@ -140,7 +140,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: Note that access to Background Health Research Task is provided through an entitlement.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: Background Health Research Task
 - field: research_program
   status: stated
@@ -153,7 +153,7 @@ facts:
     retrieved: '2026-10-10'
     quote: ResearchKit and CareKit are open source developer frameworks that include commonly required modules for
       health research and care delivery applications.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: ResearchKit and CareKit
 - field: research_program
   status: stated
@@ -171,7 +171,7 @@ facts:
     retrieved: '2026-10-10'
     quote: Initiated in early 2025, this study continues our impactful research partnership with Brigham and Women’s
       Hospital to explore different areas of health.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: Apple Research app
   note: The page describes participant enrolment only; no route for outside investigators to run studies in the app
     or obtain its data was found.
@@ -193,7 +193,7 @@ facts:
     retrieved: '2026-10-10'
     quote: your institution will need to complete a standard Investigator Support Program Agreement and provide proof
       of study ethics board approval before devices can be awarded
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: Investigator Support Program
 - field: program_eligibility
   status: stated
@@ -210,7 +210,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: If you use an external developer, they should not submit their app under their account.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: SensorKit
 - field: program_eligibility
   status: stated
@@ -227,7 +227,7 @@ facts:
     retrieved: '2026-10-10'
     quote: Your app must be exclusively designed to conduct health research. Your app must be designed for one unique
       study.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: HealthKit Research Entitlement
 - field: program_eligibility
   status: stated
@@ -239,7 +239,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: You must intend to publish or otherwise make findings from the research study publicly available
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: Background Health Research Task
 - field: program_eligibility
   status: stated
@@ -251,7 +251,7 @@ facts:
     retrieved: '2026-10-10'
     quote: Apps conducting health-related human subject research must secure approval from an independent ethics review
       board.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: App Store research apps (Guideline 5.1.3)
 - field: program_application
   status: stated
@@ -283,7 +283,7 @@ facts:
     retrieved: '2026-10-10'
     quote: If your proposal includes data types accessible by SensorKit, you will also need to request a SensorKit
       entitlement
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: Investigator Support Program
 - field: program_application
   status: stated
@@ -308,7 +308,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: your app will still have to pass standard App Store review
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: SensorKit
 - field: program_application
   status: stated
@@ -325,7 +325,7 @@ facts:
     retrieved: '2026-10-10'
     quote: Requests are granted per bundle ID (the app’s unique identifier), and an app update and redistribution
       will be required once the entitlement is granted.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: HealthKit Research Entitlement
 - field: program_status
   status: stated
@@ -341,7 +341,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: Apple Vision Pro and AirPods Pro can now be requested through this program where available.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: Investigator Support Program
 - field: program_status
   status: stated
@@ -352,7 +352,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: HealthKitResearch requires iOS 27.1 or later.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: HealthKit Research Entitlement
 - field: program_status
   status: stated
@@ -367,7 +367,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: All requests will be reviewed according to a set of standard criteria.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: SensorKit
 - field: program_status
   status: stated
@@ -389,7 +389,7 @@ facts:
     retrieved: '2026-10-10'
     quote: Initiated in early 2025, this study continues our impactful research partnership with Brigham and Women’s
       Hospital to explore different areas of health.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: Apple Research app
   note: The study notice is on the Brigham and Women's study site, not an Apple page; Apple's Research app page no
     longer lists the Heart and Movement Study.
@@ -413,7 +413,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: Access to HealthKit data still requires user consent.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: user_cap
   status: stated
   value: No fixed device limit in the Investigator Support Program, but supply is limited and quantity must be justified;
@@ -428,7 +428,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: In your application, please provide justification for the quantity requested.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: No participant or user cap found in the HealthKit, SensorKit or entitlement pages checked.
 - field: academic_vs_commercial
   status: stated
@@ -456,7 +456,7 @@ facts:
     retrieved: '2026-10-10'
     quote: If you’re a nonprofit organization, accredited educational institution, or government entity and meet certain
       requirements, you can request an Apple Developer Program fee waiver.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 # ---------------- pricing ----------------
 - field: device_price
   status: stated
@@ -467,7 +467,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: Apple Watch Series 12 From $399
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: Apple Watch Series 12
 - field: device_price
   status: stated
@@ -478,7 +478,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: Apple Watch Ultra 4 From $799
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: Apple Watch Ultra 4
 - field: device_price
   status: stated
@@ -489,7 +489,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: Apple Watch SE 3 From $249
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: Apple Watch SE 3
   note: Researcher B noted the SE 3 lacks the ECG app and hypertension notifications; not quote-checked here, so
     it is left out of the value.
@@ -503,7 +503,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: New subscribers get 1 month of Apple Fitness+ free, then pay $9.99 per month or $79.99 annually.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: No Apple page checked ties HealthKit data or Watch health features to a subscription. A planned Health+ coaching
     subscription was reported wound down in February 2026 (pymnts.com citing Bloomberg; secondary, not an Apple statement).
 - field: academic_pricing
@@ -527,7 +527,7 @@ facts:
     retrieved: '2026-10-10'
     quote: If your organization is approved for an Apple Developer Program fee waiver, you won’t need to pay annual
       membership fees.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: The buy page lists consumer prices only; no education or research device discount was found.
 - field: api_platform_fees
   status: stated
@@ -548,7 +548,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: Available at no cost for approved applicants so you can focus on what truly matters
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: minimum_commitment
   status: stated
   value: Annual Developer Program membership; no device minimum or contract term published. Investigator Support
@@ -564,7 +564,7 @@ facts:
     retrieved: '2026-10-10'
     quote: After devices have been distributed, investigators will provide quarterly status reports on the research
       and share details of any planned publications.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: quote_required
   status: stated
   value: No. Device and membership prices are published; Investigator Support Program devices are by application,
@@ -579,7 +579,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: $99 annual membership
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 # ---------------- data access ----------------
 - field: raw_streams
   status: stated
@@ -608,7 +608,7 @@ facts:
     fetch_url: https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramsample.json
     quote: Apple Watch uses LED lights, paired with light-sensitive photodiodes (PD), to track the heartbeat-induced
       pulsations.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: SensorKit
 - field: raw_streams
   status: conflict
@@ -654,7 +654,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: No. You cannot access real-time heartbeat data.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: HealthKit heartbeat
 - field: raw_streams
   status: stated
@@ -673,7 +673,7 @@ facts:
     retrieved: '2026-10-10'
     fetch_url: https://developer.apple.com/tutorials/data/documentation/coremotion/cmsensorrecorder/recordaccelerometer(forduration:).json
     quote: The system records the data for the specified amount of time, even if your app is suspended or terminated.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: Core Motion CMSensorRecorder
   note: The class page lists iOS 9.0 and watchOS 2.0 with no deprecation flag (checked via the JSON rendering, 2026-10-10).
 - field: raw_streams
@@ -691,7 +691,7 @@ facts:
     type: vendor_docs
     retrieved: '2026-10-10'
     quote: Because this a workout-centric API, you need to have an active HealthKit workout session to get data.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: Core Motion batched sensors (watchOS)
 - field: derived_metrics
   status: stated
@@ -741,7 +741,7 @@ facts:
     retrieved: '2026-10-10'
     fetch_url: https://developer.apple.com/tutorials/data/documentation/updates/healthkit.json
     quote: Record and query menopausal state information using point-in-time samples.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: HealthKit
 - field: derived_metrics
   status: stated
@@ -758,7 +758,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: Wrist detection (for Apple Watch users - the time the Watch is worn and the orientation)
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: SensorKit
 - field: derived_metrics
   status: stated
@@ -776,7 +776,7 @@ facts:
     retrieved: '2026-10-10'
     fetch_url: https://developer.apple.com/tutorials/data/documentation/coremotion/cmmovementdisordermanager.json
     quote: Only collect data from patients clinically diagnosed with a movement disorder.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: Core Motion Movement Disorder API
 - field: sampling_rates
   status: stated
@@ -799,7 +799,7 @@ facts:
     retrieved: '2026-10-10'
     fetch_url: https://developer.apple.com/tutorials/data/documentation/coremotion/cmhighfrequencyheartratedata.json
     quote: A class that represents heart rate data collected at 1 Hz.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: Core Motion
   note: CMHighFrequencyHeartRateData is a Core Motion class (watchOS 10+), not SensorKit as researcher A's draft labelled
     it. When and how it is delivered was not checked.
@@ -819,7 +819,7 @@ facts:
     retrieved: '2026-10-10'
     fetch_url: https://developer.apple.com/tutorials/data/documentation/healthkit/hkelectrocardiogram/samplingfrequency.json
     quote: The frequency at which the Apple Watch sampled the voltage.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: HealthKit
 - field: sampling_rates
   status: stated
@@ -832,7 +832,7 @@ facts:
     retrieved: '2026-10-10'
     quote: Apple Watch Series 12 measures HRV as often as every five minutes and takes background heart rate readings
       every five seconds
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: Apple Watch Series 12
   note: Marketing page. The HealthKit cadence and whether Series 12 HRV is still SDNN are not stated anywhere checked.
 - field: history_depth
@@ -861,7 +861,7 @@ facts:
     retrieved: '2026-10-10'
     fetch_url: https://developer.apple.com/tutorials/data/documentation/healthkit/about-the-healthkit-framework.json
     quote: To save space, old data is periodically purged from Apple Watch.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: HealthKit
 - field: history_depth
   status: stated
@@ -878,7 +878,7 @@ facts:
     retrieved: '2026-10-10'
     fetch_url: https://developer.apple.com/tutorials/data/documentation/sensorkit/srfetchrequest.json
     quote: SensorKit places a 24-hour holding period on newly recorded data before an app can access it.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: SensorKit
 - field: history_depth
   status: stated
@@ -890,7 +890,7 @@ facts:
     retrieved: '2026-10-10'
     fetch_url: https://developer.apple.com/tutorials/data/documentation/coremotion/cmsensorrecorder/recordaccelerometer(forduration:).json
     quote: The collected data remains accessible to your app for up to three days.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: Core Motion CMSensorRecorder
 - field: export_routes
   status: stated
@@ -916,7 +916,7 @@ facts:
     type: vendor_docs
     retrieved: '2026-10-10'
     quote: Share your health and fitness data in XML format
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: HealthKit and SensorKit
   note: '"No Apple cloud API" is inferred from the FAQ routing all access through an iOS app; no Apple-hosted research
     API was found.'
@@ -930,7 +930,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: When data is exported to your servers, it's secured with built in encryption.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: Study App Template
 - field: export_routes
   status: stated
@@ -943,7 +943,7 @@ facts:
     fetch_url: https://developer.apple.com/tutorials/data/documentation/healthkit/accessing-health-records.json
     quote: Use HealthKit’s clinical record support to read Fast Healthcare Interoperability Resources (FHIR) from
       the HealthKit store.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: HealthKit clinical records
 - field: rate_limits
   status: not_applicable
@@ -966,7 +966,7 @@ facts:
     retrieved: '2026-10-10'
     quote: Further, You shall prohibit third parties to whom You provide any de-identified or coded data from re-identifying
       (or attempting to re-identify) any participants using such data without participant consent
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: HealthKit
 - field: retention_terms
   status: stated
@@ -988,7 +988,7 @@ facts:
     retrieved: '2026-10-10'
     fetch_url: https://developer.apple.com/tutorials/data/documentation/sensorkit/srfetchrequest.json
     quote: This gives the user an opportunity to delete any data they don’t want to share with the app.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: SensorKit
   note: The existence of extra terms is Verified on Apple's page; the public-sharing restriction comes only from the
     data availability statement of Funk et al. 2025 (PLOS One, Intern Health Study), hence Reported. The terms themselves
@@ -1014,7 +1014,7 @@ facts:
     retrieved: '2026-10-10'
     quote: You must clearly disclose where personal data will be shared with third parties, including with third-party
       AI, and obtain explicit permission before doing so.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Searched the licence agreement and review guidelines; the only model-training ban found applies to accessory
     notification data, not health data. Consented research modelling looks permitted; other training is not addressed.
     The SensorKit addendum is not public. Corroborated rather than Verified because the "no term names training" part
@@ -1035,7 +1035,7 @@ facts:
     retrieved: '2026-10-10'
     fetch_url: https://developer.apple.com/tutorials/data/documentation/healthkit/hkhealthstore/getearliestauthorizedsampledate(for:completion:).json
     quote: Adjust your app’s workflow to work with less data.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: HealthKit (iOS 27)
 - field: deprecations
   status: stated
@@ -1048,7 +1048,7 @@ facts:
     retrieved: '2026-10-10'
     quote: Following this update, sensor data from the Blood Oxygen app on Apple Watch will be measured and calculated
       on the paired iPhone, and results can be viewed in the Respiratory section of the Health app.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   scope: Blood Oxygen (US)
   note: The ITC terminated the import-ban proceeding on 2026-04-17, finding the redesign does not infringe (reported
     by 9to5mac quoting the order; secondary, not quote-checked by the judge). Whether iPhone-computed SpO2 samples land

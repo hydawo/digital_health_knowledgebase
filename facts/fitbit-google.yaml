@@ -60,7 +60,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: Health Plan Clinical Care Partner Wellness Partner Health System Employer Broker/Consultant Researcher
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: 'The research application form (forms.gle) needs a Google sign-in and was not read. healthsolutions.fitbit.com/research/
     and the former enterprise researcher pages redirect to the Google Health Enterprise page, which has no researcher section
     (curl, 2026-10-10). Historical: the Fitbit Health Equity Research Initiative with Fitabase (2021, six awardees) had no
@@ -81,7 +81,7 @@ facts:
     retrieved: '2026-10-10'
     quote: Health Research Applications and Web Services must confirm the eligibility of a participant before obtaining informed
       consent and requesting permission to access participant
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: 'Operational constraint: Google Health cannot be linked to a Google Workspace account, so institution-managed Workspace
     accounts cannot serve as provisioned participant accounts (see deprecations).'
 - field: program_application
@@ -106,7 +106,7 @@ facts:
     type: vendor_docs
     retrieved: '2026-10-10'
     quote: clinical research team will review your submission and contact you, usually within 7 business days
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: No review time is published for the Google Health API attestation; the 7-day figure is from the legacy Fitbit FAQ.
 - field: program_status
   status: stated
@@ -128,7 +128,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: Want to run a research study with our devices and platform? Research Application
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: developer_program_status
   status: stated
   scope: Google Health API
@@ -155,7 +155,7 @@ facts:
     retrieved: '2026-10-10'
     quote: Switching to Google Health is no small task. It requires a new Google Cloud project, credentials, OAuth verification
       from Google
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: The profile dates availability to late May 2026; the release notes date the launch announcement to March 24, 2026.
     May 26 added ECG and IRN scopes, rate limits and verification content. Who exactly Google is onboarding is not stated
     (Unclear).
@@ -175,7 +175,7 @@ facts:
     type: secondary
     retrieved: '2026-10-10'
     quote: New developer registrations are closed. If you do not already have Fitbit API credentials, you cannot get them.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: The closed-registration point is from one integrator only (Reported).
 - field: user_cap
   status: stated
@@ -197,7 +197,7 @@ facts:
     type: secondary
     retrieved: '2026-10-10'
     quote: Until CASA is completed, you are limited by Google to 100 connected users with your production Google Health credentials.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Internal-use apps skip the cap only for users inside the Workspace or Cloud Identity organization (support.google.com/cloud/answer/13464323),
     which excludes typical study participants.
 - field: academic_vs_commercial
@@ -212,7 +212,7 @@ facts:
     retrieved: '2026-10-10'
     quote: Fitbit is very supportive of non-profit research and personal projects. Commercial applications require thorough
       review and are subject to additional requirements.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Moot after October 30, 2026.
 - field: academic_vs_commercial
   status: not_public
@@ -246,7 +246,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: Google Fitbit Air From $99.99
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: device_price
   status: stated
   scope: Fitbit Charge 6 (US)
@@ -257,7 +257,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: Fitbit Charge 6 Tracker $159.95 or $13.33/month with 12-month financing
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: device_price
   status: stated
   scope: Fitbit Versa 4 (US)
@@ -268,7 +268,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: Fitbit Versa 4 Smartwatch $199.95 or $16.66/month with 12-month financing
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: device_price
   status: stated
   scope: Pixel Watch 5 (US)
@@ -279,7 +279,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-21'
     quote: Google Pixel Watch 5 From $399.99
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: device_price
   status: stated
   scope: Pixel Watch 4 (US)
@@ -290,7 +290,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-24'
     quote: Google Pixel Watch 4 From $349.99
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: subscription_price
   status: stated
   scope: Google Health Premium (formerly Fitbit Premium), US
@@ -309,7 +309,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: You must be over 18 years old to enroll in a Google Health Premium membership.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Google's own blog says $99 per year; press (droid-life, 2026-05-15) and the profile say $99.99. The vendor figure
     is used. Included with Google AI Pro and Ultra per the same blog post.
 - field: academic_pricing
@@ -348,7 +348,7 @@ facts:
     type: secondary
     retrieved: '2026-10-10'
     quote: If you hold ISO/IEC 27001 or SOC 2, you may qualify for the CASA Accelerator reduced scope and faster turnaround.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: The absence of an API fee is read from the docs and terms, which describe quotas but no billing. Thryve reports CASA
     typically starting around EUR 1,000.
 - field: api_platform_fees
@@ -361,7 +361,7 @@ facts:
     type: vendor_legal
     retrieved: '2026-10-10'
     quote: Fitbit grants you a nonexclusive, revocable, non-sublicensable, non-transferable, royalty-free license as follows
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: minimum_commitment
   status: stated
   scope: Google Health Premium (consumer)
@@ -372,7 +372,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: Automatically renews for $9.99/mo after trial; cancel anytime.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: minimum_commitment
   status: not_public
   scope: Google Health Enterprise
@@ -401,7 +401,7 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
     quote: Organizations get bulk device and subscription fulfillment for their members
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: raw_streams
   status: stated
   scope: Google Health API
@@ -428,7 +428,7 @@ facts:
     type: vendor_docs
     retrieved: '2026-10-10'
     quote: 'Location : GPS data based on a recorded exercise exposed in TCX format'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Absence of raw PPG and accelerometry is read from the full data-types list and scopes, not stated outright. ECG waveform
     access not tested with a real pull.
 - field: derived_metrics
@@ -462,7 +462,7 @@ facts:
     type: vendor_docs
     retrieved: '2026-10-10'
     quote: 20 Mar 2026 95 days, 4 hours
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: 'Data quality: Google''s status dashboard lists a web-API incident from 20 March 2026 lasting 95 days in which Pixel
     Watch step counts could come back wrong. Minute-level SpO2 is filtered more strictly than in the legacy API.'
 - field: sampling_rates
@@ -492,7 +492,7 @@ facts:
     type: vendor_docs
     retrieved: '2026-10-10'
     quote: Intraday support can extend the detail-level response to include 1sec, 1min, 5min or 15min for Heart Rate.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Storage resolution is not a promise of density; returned density outside exercise is untested. ECG example response
     shows 250 Hz, not stated as a fixed rate.
 - field: history_depth
@@ -512,7 +512,7 @@ facts:
     retrieved: '2026-10-10'
     quote: Because rollup and daily rollup endpoints enforce a maximum date range limit (14 or 90 days depending on the data
       type)
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Thryve says Google has not published a lookback limit; Google's endpoints page states there is none, so the vendor
     statement is used. Sleep and exercise pages return at most 25 sessions per page.
 - field: export_routes
@@ -544,7 +544,7 @@ facts:
     retrieved: '2026-10-10'
     quote: Open source data connector that provides automated data normalization and integration with Google Cloud BigQuery
       for advanced analytics.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Whether Device Connect has moved to the Google Health API was not established.
 - field: export_routes
   status: stated
@@ -575,7 +575,7 @@ facts:
     retrieved: '2026-10-10'
     quote: New UTC and time-zone columns, plus a source column showing whether data came from the Fitbit or Google Health
       API
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Two independent integrators state the bring-your-own-credentials model; Google's docs do not address intermediaries.
     Until mid-October 2026 Google said it was not onboarding new projects; that statement has since been removed, so a
     customer can apparently open its own project again (Corroborated, 2026-10-21).
@@ -616,7 +616,7 @@ facts:
     type: secondary
     retrieved: '2026-10-10'
     quote: Google shipped the Apple Health sync recently, and the public Google Health communities show a number of open bugs
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: The Apple Health write list is Verified from Google's help page. The Health Connect write path and the "avoids credentials"
     framing come from one integrator (Thryve), consistent with Fitbit's Health Connect support since 2022; no current Google
     page for the Health Connect direction was found. Records arrive as phone-store data at whatever granularity Google writes,
@@ -640,7 +640,7 @@ facts:
     type: vendor_docs
     retrieved: '2026-10-10'
     quote: Per project (daily) 86.4M requests / day
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: rate_limits
   status: stated
   scope: Legacy Fitbit Web API
@@ -651,7 +651,7 @@ facts:
     type: vendor_docs
     retrieved: '2026-10-10'
     quote: rate limit is 150 API requests per hour for each user who has consented to share their data
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: retention_terms
   status: stated
   value: No fixed retention limit on API clients. Developers must honour user deletion requests and store data at the granularity
@@ -680,7 +680,7 @@ facts:
     retrieved: '2026-10-10'
     quote: We keep other information, like your exercise or activity data, until you use your account settings or tools to
       delete the data or your account
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: ai_training_terms
   status: stated
   scope: Google's own use
@@ -697,7 +697,7 @@ facts:
     retrieved: '2026-10-10'
     quote: With your consent, you can also share data to be used for the research and development of new products and services
       or to support health research.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
 - field: ai_training_terms
   status: not_public
   scope: Developers using the API
@@ -814,7 +814,7 @@ facts:
     retrieved: '2026-10-10'
     quote: Our devices typically receive software updates for at least two years after the device is last sold on Fitbit.com
       or the Google Store
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-25'
   note: Studies holding provisioned Fitbit-login accounts that were never migrated have lost them. Institution-managed Workspace
     accounts cannot be used as participant accounts.
 - field: baa
