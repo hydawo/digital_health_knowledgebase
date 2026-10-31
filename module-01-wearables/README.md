@@ -69,7 +69,7 @@ most for a study:
 
 | Earlier summary said | Now |
 |---|---|
-| Fitbit legacy API "turns down in September 2026"; Google Health API open to new integrations | Legacy support ended 30 Sep 2026 and the API is **turned off 30 Oct 2026**; Google was **not onboarding new Google Health API projects** on 2026-10-10 and is **apparently open again** by 2026-10-19 (Corroborated), with restricted-scope review |
+| Fitbit legacy API "turns down in September 2026"; Google Health API open to new integrations | Legacy support ended 30 Sep 2026 and the API is **turned off 2 Nov 2026** (moved from 30 Oct on 23 Oct); Google was **not onboarding new Google Health API projects** on 2026-10-10 and is **apparently open again** by 2026-10-19 (Corroborated), with restricted-scope review |
 | Garmin confirms applications within two business days | **New access requests paused since spring 2026** (Corroborated); Garmin's FAQ wording is stale |
 | Empatica is the only raw EDA source | **Samsung Galaxy Watch8 and later expose raw EDA at 1 Hz** through the Health Sensor SDK; Verily also records EDA |
 | Samsung raw PPG rate undocumented | PPG 25 Hz continuous and 100 Hz on demand; ECG 500 Hz; accelerometer 25 Hz |
@@ -120,7 +120,7 @@ results for Oura are mixed (Miller 2022, Lee 2023, Searles 2026). See `validatio
 
 ### 3. Garmin is closed to new studies right now, and new Fitbit access is slow.
 
-- **Fitbit / Google:** the legacy Fitbit Web API is turned off on **30 October 2026**. Google said on
+- **Fitbit / Google:** the legacy Fitbit Web API is turned off on **2 November 2026** (Google moved it from 30 October on 23 October). Google said on
   2026-10-10 it was **not onboarding new Google Health API projects**; by 2026-10-19 that notice was
   gone, with no announcement, so the API is **apparently open to new projects again** (Corroborated,
   2026-10-21). A new study can apparently open its own project, but every scope is Restricted, so
@@ -168,7 +168,7 @@ research programme, user caps, retention and AI-training terms, cost and status.
 ### 6. The cheapest good answers are still often not devices at all.
 
 ***All of Us*** holds Fitbit data from 59,000+ participants over 14 years, minute-level, 46% linked
-to EHR and other data, with no exposure to the 30 October 2026 shutoff. **UK Biobank** holds raw
+to EHR and other data, with no exposure to the 2 November 2026 shutoff. **UK Biobank** holds raw
 100 Hz wrist accelerometry from 100,000+ participants.
 
 ---

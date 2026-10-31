@@ -584,7 +584,8 @@ facts:
     builds flows from study descriptions, with no published data-use terms.
 - field: deprecations
   status: stated
-  value: Google turns off the Fitbit Web API on 2026-10-30. Every Fitabase participant still collecting after that
+  value: Fitabase says Google turns off the Fitbit Web API on 2026-10-30 (Google itself moved the date to 2026-11-02
+    on 2026-10-23; see facts/fitbit-google.yaml). Every Fitabase participant still collecting after that
     must reauthorize for the Google Health API, once, either in the Google Health app or by Fitabase link
     (platform reauthorization opened 2026-10-15); the reconnect option and links keep working through 2026-11-30.
     Late reauthorization backfills the gap if the device kept syncing to Google. Reauthorization cannot be done
@@ -601,8 +602,8 @@ facts:
     retrieved: '2026-10-21'
   - url: https://developers.google.com/health/reference/rest/v4beta/users
     type: secondary
-    quote: "On October 30, 2026 , the Fitbit Web API will be turned off and will no longer function or sync data to or from Fitbit users."
-    retrieved: '2026-10-21'
+    quote: "On November 2, 2026 , the legacy Fitbit Web API and Fitbit OAuth endpoints will be turned off and will no longer function or sync data to or from Fitbit users."
+    retrieved: '2026-10-30'
   - url: https://www.fitabase.com/resources/knowledge-base/google-health-api-migration/key-dates/
     type: vendor_docs
     quote: "Through November 30, 2026 The reconnect option stays on the Partner apps screen in the Google Health app, giving participants who missed the deadline a way back."

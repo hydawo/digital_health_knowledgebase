@@ -112,7 +112,8 @@ facts:
   status: stated
   value: The Health Research Policy has been in force since March 24, 2026. The About page no longer says Google is not
     onboarding new Google Health API projects (the sentence was removed between 2026-10-12 and 2026-10-19) and now invites
-    developers to get started; Google has not announced a reopening. The legacy Fitbit Web API turns off October 30, 2026.
+    developers to get started; Google has not announced a reopening. The legacy Fitbit Web API turns off November 2, 2026
+    (moved from October 30 on 2026-10-23).
     A research application form is still linked from the published-studies page; what it leads to is not published.
   confidence: Corroborated
   sources:
@@ -162,10 +163,15 @@ facts:
 - field: developer_program_status
   status: stated
   scope: Legacy Fitbit Web API
-  value: 'Being turned down: support ended September 30, 2026, the API turns off October 30, 2026, and new registrations are
-    closed (integrator report).'
+  value: 'Being turned down: support ended September 30, 2026, the API and the Fitbit OAuth endpoints turn off November 2,
+    2026 (Google moved the date from October 30 on 2026-10-23), and new registrations are closed (integrator report).'
   confidence: Verified
   sources:
+  - url: https://developers.google.com/health/about
+    type: vendor_docs
+    retrieved: '2026-10-30'
+    quote: 'November 2, 2026 (API turn-off): The Fitbit Web API and Fitbit OAuth endpoints will be turned off and will no longer
+      function or sync data to or from Fitbit users.'
   - url: https://dev.fitbit.com/build/reference/web-api/intraday/
     type: vendor_docs
     retrieved: '2026-10-10'
@@ -176,7 +182,8 @@ facts:
     retrieved: '2026-10-10'
     quote: New developer registrations are closed. If you do not already have Fitbit API credentials, you cannot get them.
   recheck_by: '2026-11-25'
-  note: The closed-registration point is from one integrator only (Reported).
+  note: The closed-registration point is from one integrator only (Reported). The dev.fitbit.com intraday page still said
+    October 30 on 2026-10-30; Google's About page (last updated 2026-10-23) is newer and governs.
 - field: user_cap
   status: stated
   scope: Google Health API
@@ -213,7 +220,7 @@ facts:
     quote: Fitbit is very supportive of non-profit research and personal projects. Commercial applications require thorough
       review and are subject to additional requirements.
   recheck_by: '2026-11-25'
-  note: Moot after October 30, 2026.
+  note: Moot after November 2, 2026.
 - field: academic_vs_commercial
   status: not_public
   scope: Google Health API
@@ -520,7 +527,7 @@ facts:
   scope: Cloud and self-export
   value: 'Google Health API over REST or gRPC with Google OAuth 2.0: list endpoints with intraday data, rollups, and webhooks
     retried for up to 7 days. Participant self-export from the Google Health app or Google Account. Google Cloud Device Connect
-    for Fitbit (open-source BigQuery connector). Legacy Fitbit Web API until October 30, 2026.'
+    for Fitbit (open-source BigQuery connector). Legacy Fitbit Web API until November 2, 2026.'
   confidence: Verified
   sources:
   - url: https://developers.google.com/health/get-started
@@ -727,8 +734,9 @@ facts:
 - field: deprecations
   status: stated
   scope: APIs
-  value: 'Legacy Fitbit Web API: support ended September 30, 2026; turned off October 30, 2026 (moved from September 30, reportedly
-    for CASA delays). Tokens do not carry over, so every user re-consents through Google OAuth. Friends endpoints deprecated
+  value: 'Legacy Fitbit Web API: support ended September 30, 2026; turned off November 2, 2026, together with the Fitbit OAuth
+    endpoints, after which requests return HTTP 410 Gone. The date moved twice: from September 30 to October 30 (reportedly
+    for CASA delays), then to November 2 (About page updated 2026-10-23). Tokens do not carry over, so every user re-consents through Google OAuth. Friends endpoints deprecated
     May 6, 2026 with no successor. Fitbit Ace devices are not supported by the Google Health API. v4beta features (from October
     1, 2026) may change before v4. Fitabase warns of sync brown-outs during the transition.'
   confidence: Verified
@@ -739,9 +747,13 @@ facts:
     quote: 'September 30, 2026 (End of support): Support for the Fitbit Web API ends.'
   - url: https://developers.google.com/health/about
     type: vendor_docs
-    retrieved: '2026-10-10'
-    quote: 'October 30, 2026 (API turn-off): The Fitbit Web API will be turned off and will no longer function or sync data
-      to or from Fitbit users.'
+    retrieved: '2026-10-30'
+    quote: 'November 2, 2026 (API turn-off): The Fitbit Web API and Fitbit OAuth endpoints will be turned off and will no longer
+      function or sync data to or from Fitbit users.'
+  - url: https://developers.google.com/health/about
+    type: vendor_docs
+    retrieved: '2026-10-30'
+    quote: Requests to these endpoints will fail and return an HTTP 410 Gone status code.
   - url: https://developers.google.com/health/migration
     type: vendor_docs
     retrieved: '2026-10-10'

@@ -663,17 +663,18 @@ facts:
 - field: deprecations
   status: conflict
   scope: Fitbit Web API source
-  value: 'Thryve''s Fitbit source ends with Google''s Fitbit Web API shutdown. Dates disagree: Thryve''s docs table says 29
-    October 2026; Thryve''s blog (updated 29 September 2026) says Google extended the cut-off to 30 October, while older
-    paragraphs of the same post still say 30 September and that no extension was communicated; Google''s own docs say 30
-    October 2026. Within 24 hours of the shutdown Thryve disconnects all Fitbit connections; already-ingested data stays.
+  value: 'Thryve''s Fitbit source ends with Google''s Fitbit Web API shutdown. Dates disagree: Thryve''s docs table said 29
+    October 2026 until late October and now marks Fitbit "Deprecated" with no date, next to a new Google Health source (ID
+    49); Thryve''s blog (updated 29 September 2026) says Google extended the cut-off to 30 October, while older paragraphs
+    of the same post still say 30 September and that no extension was communicated; Google''s own docs now say 2 November
+    2026. Within 24 hours of the shutdown Thryve disconnects all Fitbit connections; already-ingested data stays.
     Every user must re-authorize through Google Health (route A or B, see export_routes).'
   confidence: Corroborated
   sources:
   - url: https://docs.thryve.health/thryve-data-sources/overview
     type: vendor_docs
-    quote: Fitbit ( Deprecating on Oct 29 2026)
-    retrieved: '2026-10-21'
+    quote: Fitbit (Deprecated)
+    retrieved: '2026-10-30'
     fetch_url: https://docs.thryve.health/thryve-data-sources/overview.md
   - url: https://www.thryve.health/blog/fitbit-shutdown-september-2026-migration-options
     type: vendor_page
@@ -683,11 +684,10 @@ facts:
     type: vendor_page
     quote: As of today, Google has not communicated an extension.
     retrieved: '2026-10-21'
-  - url: https://dev.fitbit.com/build/reference/web-api/intraday/
+  - url: https://developers.google.com/health/about
     type: secondary
-    quote: On October 30, 2026, the Fitbit Web API will be turned off and will no longer function or sync data to or from
-      Fitbit users.
-    retrieved: '2026-10-21'
+    quote: 'November 2, 2026 (API turn-off): The Fitbit Web API and Fitbit OAuth endpoints will be turned off'
+    retrieved: '2026-10-30'
   - url: https://www.thryve.health/blog/fitbit-shutdown-september-2026-migration-options
     type: vendor_page
     quote: Within 24 hours, we will proactively disconnect all Fitbit connections on the Thryve side.
@@ -700,9 +700,9 @@ facts:
     type: vendor_page
     quote: Every single user must re-authorize, whichever path you choose.
     retrieved: '2026-10-21'
-  recheck_by: '2026-10-31'
-  note: Google's 30 October date is Verified in facts/fitbit-google.yaml; the conflict is inside Thryve's own pages. All
-    three Thryve statements were unchanged on 2026-10-21. Recheck the day after the cutoff.
+  recheck_by: '2026-11-15'
+  note: Google's 2 November date is Verified in facts/fitbit-google.yaml (moved from 30 October on 2026-10-23); the
+    conflict is inside Thryve's own pages. Recheck after the cutoff whether Thryve's Google Health source is live.
 - field: deprecations
   status: conflict
   scope: Google Health integration status

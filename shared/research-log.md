@@ -2,6 +2,15 @@
 
 ---
 
+## 2026-10-30 - Fitbit follow-up: turn-off moved to 2 November; RADAR-base Google Health converters released
+
+- **Date change (Verified, primary):** Google's About the Google Health API page, last updated 2026-10-23, now gives **2 November 2026** as the turn-off for the legacy Fitbit Web API and the Fitbit OAuth endpoints, after which requests return HTTP 410 Gone. It was 30 October (and 30 September before that). The site-wide banner on every developers.google.com/health page says the same. The older dev.fitbit.com Web API pages still say 30 October; Google's newer page governs. Fitabase's migration pages still say 30 October too.
+- **Onboarding:** no developers.google.com/health page now says Google is not onboarding new projects, so the 2026-10-21 reading (apparently open again, Corroborated) stands. Not upgraded: Google has still not announced it.
+- **RADAR-base:** RADAR-REST-Connector v0.7.6 was released on 2026-10-30 with the Google Health converters as a separate google-health-library. RADAR-PushEndpoint PR #92 (the push ingest) is still open, last updated 2026-10-20, and the README documents only the legacy Fitbit route. Whether a released install ingests Google Health data end to end is Unclear.
+- **Thryve:** its docs table now marks Fitbit "Deprecated" with no date and lists a Google Health source (ID 49).
+- **Files updated:** `facts/fitbit-google.yaml`, `radar-base.yaml`, `fitabase.yaml`, `thryve.yaml` and the generated tables; Module 1 `fitbit-google.md`, `data-intermediaries.md`, `_inventory-and-scope-decisions.md`, `README.md`, `comparison-matrix.md`, `sources.md`, the atlas; Module 2 `radar-base.md`, `comparison-matrix.md`, `sources.md`; `shared/unresolved-questions.md` (Q126 date); explorer summary.
+- **Follow-up:** after 2 November, confirm the API actually returns 410 and whether RADAR-base ships PR #92.
+
 ## 2026-10-24 (later) - Unattended pass: scan merges, Module 3 queue, fact issue #2, Module 5 checks
 
 - **Scan branches:** 2026-10-12 merged whole; 2026-10-19 merged deduplicated (it re-filed the same three Module 1 papers). Both checked with `verify_scan_additions.py`, 0 flags. Deleting the two remote branches was blocked by the session's permission check; listed in the manual sweep.
