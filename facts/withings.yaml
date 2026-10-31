@@ -7,10 +7,6 @@ watch:
   role: pricing
 - url: https://www.withings.com/pages/withings-api-plans-form
   role: developer_program
-- url: https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis
-  role: research_program
-- url: https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data
-  role: docs
 - url: https://developer.withings.com/openapi.yaml
   role: docs
 - url: https://developer.withings.com/llms.md
@@ -38,16 +34,19 @@ facts:
   status: stated
   value: >-
     Two research routes. (1) Advanced Research API: raw ScanWatch accelerometer and PPG for research
-    institutions, under contract. (2) The Advanced Biomarkers API plan, marketed for clinical studies and
+    institutions, under contract; its public overview page was removed in late October 2026 and its
+    current status is unclear (see program_status). (2) The Advanced Biomarkers API plan, marketed for clinical studies and
     AI research (cleared biomarkers, custom device provisioning, anonymization, AI training rights).
     Withings Health Solutions also offers study partnerships and a study request form.
   confidence: Verified
   sources:
   - url: https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis
+    fetch_url: https://web.archive.org/web/20261013090128/https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis/
     type: vendor_docs
     quote: The Advanced Research API provides research institutions, universities, and healthcare innovators with
       direct access to raw sensor data from Withings devices
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-30'
+    note: Wayback capture of 2026-10-13. The live page has 302-redirected to the developer portal home since at least 2026-10-26 (checked 2026-10-30) and is no longer in the sitemap.
   - url: https://static.withings.com/content/api/plans/plans.html
     type: vendor_page
     quote: Cleared biomarkers, custom device provisioning, anonymization and explicit AI training rights, all part
@@ -58,7 +57,7 @@ facts:
     quote: We can help you find the best way to retrieve and adapt the data to suit your project, through cellular
       connectivity, mobile app, an RPM platform, API or other ways.
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-29'
   note: The plans page is shown on the developer portal (developer-guide/v3/withings-solutions/withings-api-plans)
     as an iframe of the static page cited here.
 - field: research_program
@@ -83,63 +82,87 @@ facts:
   status: stated
   value: >-
     Aimed at research groups, universities and advanced health studies. Raw data access is limited to
-    contracted partners. No further eligibility criteria are published.
+    contracted partners. No further eligibility criteria are published. Both pages stating this were
+    removed in late October 2026 (Wayback captures cited).
   confidence: Verified
   sources:
   - url: https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis
+    fetch_url: https://web.archive.org/web/20261013090128/https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis/
     type: vendor_docs
     quote: Designed for research groups, universities, and advanced health studies.
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-30'
+    note: Wayback capture of 2026-10-13. The live page has 302-redirected to the developer portal home since at least 2026-10-26 (checked 2026-10-30) and is no longer in the sitemap.
   - url: https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data
+    fetch_url: https://web.archive.org/web/20260521180015/https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data/
     type: vendor_docs
     quote: Access to raw data is a special feature available only for contracted partners.
-    retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-30'
+    note: Wayback capture of 2026-05-21 (the live page was read directly on 2026-10-10). The live page has 302-redirected to the developer portal home since at least 2026-10-26 (checked 2026-10-30); openapi.yaml still links to it as the raw-data integration guide.
+  recheck_by: '2026-11-29'
 - field: program_application
   status: stated
   value: >-
-    Contact Withings (Advanced Research API contact link, raw-data page contact, or the Health Solutions
-    study request form) and sign a contract. No review criteria or turnaround time is published.
+    Contact Withings and sign a contract. The Advanced Research API contact link and the raw-data page
+    contact were on pages removed in late October 2026; the Health Solutions study request form is still
+    live. No review criteria or turnaround time is published.
   confidence: Verified
   sources:
   - url: https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis
+    fetch_url: https://web.archive.org/web/20261013090128/https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis/
     type: vendor_docs
     quote: Interested in using our Advanced Research API? Click here.
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-30'
+    note: Wayback capture of 2026-10-13. The live page has 302-redirected to the developer portal home since at least 2026-10-26 (checked 2026-10-30) and is no longer in the sitemap.
   - url: https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data
+    fetch_url: https://web.archive.org/web/20260521180015/https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data/
     type: vendor_docs
     quote: If you are interested in using this feature, please contact us
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-30'
+    note: Wayback capture of 2026-05-21 (the live page was read directly on 2026-10-10). The live page has 302-redirected to the developer portal home since at least 2026-10-26 (checked 2026-10-30); openapi.yaml still links to it as the raw-data integration guide.
   - url: https://www.withings.com/en-us/pages/research-request
     type: vendor_page
     quote: You want to conduct a new study with us? Fill this form right now and we will contact you to work with
       you.
-    retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-30'
+  recheck_by: '2026-11-29'
   note: The Advanced Research API "Click here" link goes to a Withings Health Solutions partner contact form. No form
     was submitted.
 - field: program_status
-  status: stated
+  status: unclear
   value: >-
-    Active as of 2026-10-10: the Advanced Research API overview and the raw-data page are live and current,
-    ScanWatch only. No pause or closure notice found.
-  confidence: Corroborated
+    Unclear since late October 2026. Withings removed both public Advanced Research API pages (the
+    research overview and the raw-data integration guide) between 2026-10-13 and 2026-10-26; each now
+    redirects to the developer portal home, with no notice. The live API reference still lists the
+    Rawdata v2 Activate, Deactivate and Get services as part of the Advanced research API, ScanWatch only,
+    and the plans page still says "Trusted by 100+ research labs". Whether the program continues, moved
+    behind the Partner Hub login, or closed is not stated.
+  confidence: Unclear
   sources:
+  - url: https://developer.withings.com/openapi.yaml
+    type: vendor_docs
+    quote: These APIs are compatible only with the Withings ScanWatch.
+    retrieved: '2026-10-30'
+  - url: https://developer.withings.com/openapi.yaml
+    type: vendor_docs
+    quote: This service allows to activate Raw Data collection on a given device that is already set up, and set the
+      date at which the raw data collection will stop (enddate).
+    retrieved: '2026-10-30'
   - url: https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis
+    fetch_url: https://web.archive.org/web/20261013090128/https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis/
     type: vendor_docs
     quote: Currently, the Advanced Research API is compatible exclusively with the Withings ScanWatch.
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-30'
+    note: Wayback capture of 2026-10-13. The live page has 302-redirected to the developer portal home since at least 2026-10-26 (checked 2026-10-30) and is no longer in the sitemap.
   - url: https://static.withings.com/content/api/plans/plans.html
     type: vendor_page
     quote: Trusted by 100+ research labs.
-    retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-30'
+  recheck_by: '2026-11-29'
   note: >-
-    Corroborated rather than Verified because no page states the program is active; it is inferred from live
-    documentation. The separate "Advanced Research API Integration Guide"
-    (developer-guide/v3/integration-guide/advanced-research-api/advanced-research-api-overview) answered with
-    a 302 redirect on 2026-10-10 and is not in the sitemap; it may have moved behind the Partner Hub login.
-    Which ScanWatch generations (2, Light, Nova) are covered is not stated.
+    Changed 2026-10-30 from "Active" (Corroborated). The 2026-10-13 Wayback capture is the last copy of the
+    overview found. The removal is not announced on the track-changes page. The separate "Advanced Research
+    API Integration Guide" (integration-guide/advanced-research-api/advanced-research-api-overview) already
+    redirected on 2026-10-10. Ask Withings whether the program is still offered (see unresolved questions).
 - field: developer_program_status
   status: stated
   value: >-
@@ -277,15 +300,17 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
   - url: https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis
+    fetch_url: https://web.archive.org/web/20261013090128/https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis/
     type: vendor_docs
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-30'
+    note: Wayback capture of 2026-10-13. The live page has 302-redirected to the developer portal home since at least 2026-10-26 (checked 2026-10-30) and is no longer in the sitemap.
   - url: https://www.withings.com/en-us/pages/research-clinical-trials
     type: vendor_page
     retrieved: '2026-10-10'
   - url: https://www.withings.com/en-us/pages/research-request
     type: vendor_page
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-29'
 - field: api_platform_fees
   status: stated
   value: >-
@@ -320,12 +345,14 @@ facts:
     type: vendor_page
     retrieved: '2026-10-10'
   - url: https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis
+    fetch_url: https://web.archive.org/web/20261013090128/https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis/
     type: vendor_docs
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-30'
+    note: Wayback capture of 2026-10-13. The live page has 302-redirected to the developer portal home since at least 2026-10-26 (checked 2026-10-30) and is no longer in the sitemap.
   - url: https://www.withings.com/us/en/legal/api-terms-of-use
     type: vendor_legal
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-29'
 - field: quote_required
   status: stated
   value: Yes for Enterprise, Advanced Biomarkers and raw-data research access (custom pricing, "Talk to our team").
@@ -357,15 +384,19 @@ facts:
       and accelerometer data (around 25Hz).
     retrieved: '2026-10-10'
   - url: https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data
+    fetch_url: https://web.archive.org/web/20260521180015/https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data/
     type: vendor_docs
     quote: Raw data activation will put the Withings device in a specific mode that will disable all features except
       raw data capture.
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-30'
+    note: Wayback capture of 2026-05-21 (the live page was read directly on 2026-10-10). The live page has 302-redirected to the developer portal home since at least 2026-10-26 (checked 2026-10-30); openapi.yaml still links to it as the raw-data integration guide.
   - url: https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data
+    fetch_url: https://web.archive.org/web/20260521180015/https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data/
     type: vendor_docs
     quote: For Withings ScanWatch, continuous collection of raw data would reduce battery life to 3-4 days.
-    retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-30'
+    note: Wayback capture of 2026-05-21 (the live page was read directly on 2026-10-10). The live page has 302-redirected to the developer portal home since at least 2026-10-26 (checked 2026-10-30); openapi.yaml still links to it as the raw-data integration guide.
+  recheck_by: '2026-11-29'
 - field: raw_streams
   status: stated
   scope: ECG waveform (Heart v2, Health Data API)
@@ -462,15 +493,20 @@ facts:
   confidence: Verified
   sources:
   - url: https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data
+    fetch_url: https://web.archive.org/web/20260521180015/https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data/
     type: vendor_docs
     quote: Both sensors sampling rate are about 24.824 Hz
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-30'
+    note: Wayback capture of 2026-05-21 (the live page was read directly on 2026-10-10). The live page has 302-redirected to the developer portal home since at least 2026-10-26 (checked 2026-10-30); openapi.yaml still links to it as the raw-data integration guide.
   - url: https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis
+    fetch_url: https://web.archive.org/web/20261013090128/https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis/
     type: vendor_docs
     quote: samples at 25Hz by default (up to 100Hz)
-    retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
-  note: B recorded this as a conflict. The two pages agree on the default (25 Hz rounds 24.824 Hz); "up to 100Hz"
+    retrieved: '2026-10-30'
+    note: Wayback capture of 2026-10-13. The live page has 302-redirected to the developer portal home since at least 2026-10-26 (checked 2026-10-30) and is no longer in the sitemap.
+  recheck_by: '2026-11-29'
+  note: Both pages were removed from the live site in late October 2026; quotes are checked against Wayback captures.
+    B recorded this as a conflict. The two pages agree on the default (25 Hz rounds 24.824 Hz); "up to 100Hz"
     describes the sensor, not a documented API option. Whether a contract can unlock 100 Hz needs Withings.
 - field: sampling_rates
   status: stated

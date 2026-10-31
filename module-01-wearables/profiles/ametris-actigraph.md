@@ -9,7 +9,7 @@
 | Current status | Active, but **undergoing significant corporate and product transition** |
 | Platforms/devices | CentrePoint Insight Watch, ActiGraph LEAP; legacy wGT3X-BT (still sold), GT9X Link (new sales ended 2023-08-23), GT3X+ |
 | Open source | No for the platform; ActiGraph publishes the `.gt3x` file format and open-source readers (`pygt3x`, `agcounts`) on GitHub |
-| Hosting/deployment | CentrePoint cloud platform (AWS and Azure); ActiLife 7 desktop software, labelled "legacy" by Ametris but still updated (v7.3.2.0, 2026-05-08) |
+| Hosting/deployment | CentrePoint cloud platform (AWS and Azure); ActiLife 7 desktop software, labelled "legacy" by Ametris but still updated (v7.3.3.0, 2026-08-03) |
 | Pricing model | Not public; "Pricing is calculated for each unique order" (quote); academic pricing list on request; one dated reseller quote found (Czech Republic, July 2025, see Pricing) |
 | Last verified | 2026-10-11 (vendor fact record); earlier passes 2026-08-21 and 2026-10-10 |
 
@@ -44,7 +44,7 @@
 - **Legacy:** wGT3X-BT (still sold), GT9X Link (new sales ended 2023-08-23 [20]), GT3X+, the devices behind most of the published literature.
 - **LEAP configurations:** offered to academics as Core, Pro and Advanced; Pro has green PPG only and Advanced has multiwave (red and green) PPG [27]. Ametris sells the LEAP for clinical research as prescription use only [28].
 
-- **ActiLife**, the desktop software for device initialisation, download, and analysis (activity counts, cut-points, wear-time validation, sleep scoring algorithms such as Sadeh and Cole-Kripke). Ametris's ActiLife page calls ActiLife 7 "legacy" software, but it is still updated (v7.3.2.0 released 2026-05-08) and is the only version that processes LEAP data; ActiLife 6 still works with GT3X and GT9X devices. No end-of-support date is published (checked 2026-10-11) [27][17][19].
+- **ActiLife**, the desktop software for device initialisation, download, and analysis (activity counts, cut-points, wear-time validation, sleep scoring algorithms such as Sadeh and Cole-Kripke). Ametris's ActiLife page calls ActiLife 7 "legacy" software, but it is still updated (v7.3.3.0 released 2026-08-03) and is the only version that processes LEAP data; ActiLife 6 still works with GT3X and GT9X devices. No end-of-support date is published (checked 2026-10-30) [27][17][19].
 
 - **Post-acquisition additions** (from Biofourmis Connect): the Biovitals Analytics Engine and RhythmAnalytics, a software-as-a-medical-device product. Ametris states the integrated Connect platform supports proprietary ActiGraph wearables alongside validated third-party sensors including an ECG patch, digital spirometer, and blood pressure cuff, meaningfully broadening the platform beyond accelerometry.
 
@@ -255,7 +255,7 @@ The figures below are older and **Reported**, from a **competitor's** published 
 - **What is the actual pricing** for CentrePoint plus Insight Watch or LEAP at academic-study scale? Is there academic pricing at all?
 - ~~What are the sampling rates and configurable ranges for Insight Watch and ActiGraph LEAP?~~ Resolved 2026-10-10: 32 to 256 Hz, primary accelerometer ±8 g (fixed). LEAP storage taken as 79 days / 1 GB at the default (IFU Rev 3, 2026-10-11, Corroborated); Ametris should still remove or explain the 30-day spec block.
 - Are these current devices validated against the legacy wGT3X-BT/GT3X+ that generated the literature? Are activity counts comparable?
-- ~~Is ActiLife still supported, and is a fully local (no-cloud) workflow still available?~~ Resolved 2026-10-11: ActiLife 7 is current (v7.3.2.0, 2026-05-08), licences are perpetual since 2025-07-30, and local processing remains available. Still open: what the "legacy" label means for support, and whether the Data Vault allowance is 4 GB or 20 GB.
+- ~~Is ActiLife still supported, and is a fully local (no-cloud) workflow still available?~~ Resolved 2026-10-11: ActiLife 7 is current (v7.3.2.0, 2026-05-08; v7.3.3.0, 2026-08-03, on the 2026-10-30 re-check), licences are perpetual since 2025-07-30, and local processing remains available. Still open: what the "legacy" label means for support, and whether the Data Vault allowance is 4 GB or 20 GB.
 - Which 510(k) or letter-to-file covers the GT9X and wGT3X-BT (Ametris lists K080545, which the FDA record names as the ActiTrainer)?
 - What do the historical data access file fees cost, and is there any limit on CentrePoint history depth?
 - ~~CentrePoint API: authentication, rate limits, export formats, raw vs outcomes.~~ Resolved 2026-10-10 from the public API docs: OAuth client credentials, 500 requests per minute per IP, CSV or AVRO, raw and derived both available. Still open: the fees for historical raw-file generation and the contract terms behind PPG access.
@@ -306,7 +306,7 @@ The figures below are older and **Reported**, from a **competitor's** published 
 | API rate limits | CentrePoint V3 API: more than 500 requests a minute from one IP returns HTTP 429. Raw data requests: at most 10 active at once, GT3X ranges limited to 15 days. V2 API: an unpublished daily request limit. [V, 2026-10-11] |
 | Terms on retaining, storing or deleting data | Ametris acts as data processor for the study organization (controller). Personal data is kept in identifiable form only as long as it serves a processing purpose; customer removal requests are answered within 30 days, and participants must send access or deletion requests to the sponsor. No fixed retention period for study data is published. [V, 2026-10-11] |
 | Terms on using data to train AI or ML models | Not public [2026-10-11] |
-| Announced shutdowns, deprecations or migrations, with dates | **ActiLife:** The ActiLife page calls ActiLife 7 "legacy" software, yet it is still updated (v7.3.2.0 released 2026-05-08) and is the only version that handles LEAP data; ActiLife 6 still works with GT3X and GT9X devices. No end-of-support date is published. [V, 2026-10-11]<br>**ActiGraph wGT3X-BT and GT9X Link:** Sales of new GT9X Link devices ended on 2023-08-23. The wGT3X-BT is described as a legacy device but is still sold; no end-of-sale date is published. [V, 2026-10-11]<br>**CentrePoint API:** The raw activity data request endpoint is superseded by Data Access Files for raw accelerometer data; the V2 (Study Admin) API is still supported alongside V3. No shutdown dates published. [V, 2026-10-11] |
+| Announced shutdowns, deprecations or migrations, with dates | **ActiLife:** The ActiLife page calls ActiLife 7 "legacy" software, yet it is still updated (v7.3.3.0 released 2026-08-03) and is the only version that handles LEAP data; ActiLife 6 still works with GT3X and GT9X devices. No end-of-support date is published. [V, 2026-10-30]<br>**ActiGraph wGT3X-BT and GT9X Link:** Sales of new GT9X Link devices ended on 2023-08-23. The wGT3X-BT is described as a legacy device but is still sold; no end-of-sale date is published. [V, 2026-10-11]<br>**CentrePoint API:** The raw activity data request endpoint is superseded by Data Access Files for raw accelerometer data; the V2 (Study Admin) API is still supported alongside V3. No shutdown dates published. [V, 2026-10-11] |
 
 **Compliance and regulatory**
 
@@ -358,7 +358,7 @@ The figures below are older and **Reported**, from a **competitor's** published 
 16. Ametris ISO/IEC 27001:2022 certificate, Ignyte Assurance. https://ametris.com/hubfs/Quality%20Assurance/Ametris%20-%20Ignyte%2027001%20Certificate.pdf (accessed 2026-10-11). **Primary, certificate (vendor-hosted).**
 17. Ametris blog, ActiLife 7 upgrade FAQ. https://blog.theactigraph.com/blog/faq-actilife7-upgrade (accessed 2026-10-11). **Primary.** Perpetual licence conversion on 2025-07-30, coverage plans, 20 GB Data Vault, LEAP PPG only in ActiLife 7, ActiLife 6 still works with GT3X and GT9X.
 18. ActiLife 7 User's Manual, Revision I (effective 2026-01-30). https://ametris.com/hubfs/User%20Manuals/ActiLife%207%20Users%20Manual.pdf (accessed 2026-10-11). **Primary.** 4 GB free Data Vault space.
-19. Ametris downloads page. https://ametris.com/downloads (accessed 2026-10-11). **Primary.** ActiLife v7.3.2.0 released 2026-05-08.
+19. Ametris downloads page. https://ametris.com/downloads (accessed 2026-10-11, re-read 2026-10-30). **Primary.** ActiLife v7.3.3.0 released 2026-08-03 (v7.3.2.0, 2026-05-08, on 2026-10-11).
 20. Ametris blog, GT9X Link FAQ. https://blog.ametris.com/blog/gt9x-link-faq-old (accessed 2026-10-11). **Primary.** New GT9X Link sales ended 2023-08-23.
 21. ActiGraph GitHub repositories. https://github.com/actigraph/GT3X-File-Format ; https://github.com/actigraph/pygt3x (accessed 2026-10-11). **Primary.** Published `.gt3x` format and official readers.
 22. ActiGraph CentrePoint Integration Guide. https://github.com/actigraph/CentrePointIntegrationGuide (accessed 2026-10-11). **Primary.** Analytics outputs, epoch lengths, daily-statistics webhook, continued V2 API support.

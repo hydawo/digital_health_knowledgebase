@@ -414,9 +414,10 @@ facts:
     retrieved: '2026-10-21'
     note: News post dated 2026-05-27, Wayback capture of 2026-06-16.
   - url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12975902/
+    fetch_url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12975902/fullTextXML
     type: paper
     quote: was exported from the Fitrockr hub/platform in the Comma-Separated Values (CSV) format.
-    retrieved: '2026-10-21'
+    retrieved: '2026-10-30'
     note: Front Aging 2026. The sentence begins "For each participant, raw acceleration (25 Hz)"; the quote is
       shortened because the page's "25 Hz" uses a special space. Independent use of the 25 Hz export.
   recheck_by: '2026-11-04'

@@ -788,19 +788,16 @@ facts:
   value: Self-declared HIPAA compliant; raw data tokenized at ingestion.
   confidence: Corroborated
   sources:
-  - url: https://www.thryve.health/certifications-compliance
-    type: vendor_page
-    quote: Full compliance with US healthcare data protection law.
-    retrieved: '2026-10-21'
   - url: https://www.thryve.health/pricing
     type: vendor_page
     quote: being 100% GDPR and HIPAA compliant
-    retrieved: '2026-10-21'
+    retrieved: '2026-10-30'
   - url: https://www.thryve.health/certifications-compliance
     type: vendor_page
-    quote: Raw health data is tokenized at ingestion
-    retrieved: '2026-10-21'
-  recheck_by: '2027-01-19'
+    quote: Raw health data is tokenized at ingestion, meeting GDPR data minimization principles and HIPAA Safe Harbor
+      requirements.
+    retrieved: '2026-10-30'
+  recheck_by: '2027-01-28'
   note: HIPAA has no certification body; no attestation document is public.
 - field: gdpr_statement
   status: stated
@@ -809,14 +806,15 @@ facts:
   sources:
   - url: https://www.thryve.health/certifications-compliance
     type: vendor_page
-    quote: Built for European data protection law from the ground up.
-    retrieved: '2026-10-21'
+    quote: Raw health data is tokenized at ingestion, meeting GDPR data minimization principles and HIPAA Safe Harbor
+      requirements.
+    retrieved: '2026-10-30'
   - url: https://docs.thryve.health/further-resources/technology-overview
     type: vendor_docs
     quote: All user data is linked to a fully pseudonymized Thryve user token, giving Thryve no information on who your user
       is.
-    retrieved: '2026-10-21'
-  recheck_by: '2027-01-19'
+    retrieved: '2026-10-30'
+  recheck_by: '2027-01-28'
 - field: iso27001
   status: stated
   value: Claims ISO/IEC 27001 and ISO 9001 certification, recertified in 2025. Certificates only through a request form,
@@ -825,17 +823,21 @@ facts:
   sources:
   - url: https://www.thryve.health/certifications-compliance
     type: vendor_page
-    quote: Thryve's infrastructure, processes, and data handling are independently audited against the highest security requirements.
-    retrieved: '2026-10-21'
+    quote: Thryve is independently audited and certified.
+    retrieved: '2026-10-30'
+  - url: https://www.thryve.health/certifications-compliance
+    type: vendor_page
+    quote: ISO9001 & 27001 Certified
+    retrieved: '2026-10-30'
   - url: https://www.thryve.health/updates/2025-year-in-review-thryve
     type: vendor_page
     quote: Successfully passed ISO 9001 & ISO 27001 recertification
-    retrieved: '2026-10-21'
+    retrieved: '2026-10-30'
   - url: https://www.thryve.health/
     type: vendor_page
     quote: Request Certificates
-    retrieved: '2026-10-21'
-  recheck_by: '2027-01-19'
+    retrieved: '2026-10-30'
+  recheck_by: '2027-01-28'
   note: No certificate number or registry entry for mHealth Pioneers GmbH found (IAF CertSearch not queried; it needs an
     interactive search). Hosting is described as ISO 27017/27018-certified German servers, holder not named.
 - field: soc2

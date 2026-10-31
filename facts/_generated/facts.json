@@ -1635,9 +1635,10 @@
    },
    {
     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12975902/",
+    "fetch_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12975902/fullTextXML",
     "type": "paper",
     "quote": "was exported from the Fitrockr hub/platform in the Comma-Separated Values (CSV) format.",
-    "retrieved": "2026-10-21",
+    "retrieved": "2026-10-30",
     "note": "Front Aging 2026. The sentence begins \"For each participant, raw acceleration (25 Hz)\"; the quote is shortened because the page's \"25 Hz\" uses a special space. Independent use of the 25 Hz export."
    }
   ]
@@ -3594,25 +3595,25 @@
   "status": "stated",
   "value": "Testing and staging environments are capped at 50 connected users each; production has no user cap and is billed per active authentication. The Streaming add-on's included credits cover 20 active streaming users a month.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-20",
+  "recheck_by": "2026-11-29",
   "sources": [
    {
     "url": "https://docs.tryterra.co/unified-api/integration-setup/understanding-terra-environments",
     "type": "vendor_docs",
     "quote": "Note that for testing & staging, there is a user limit of 50 users on each environment.",
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://docs.tryterra.co/help-center/help-topics/data-api-sdk/account-config-environments-and-going-live/test-staging-user-limit",
     "type": "vendor_docs",
     "quote": "Production credentials are event-based and have no user cap (billed per user).",
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://docs.tryterra.co/streaming-api/pricing",
     "type": "vendor_docs",
-    "quote": "The included 20,000 credits cover 20 active streaming users per month",
-    "retrieved": "2026-10-21"
+    "quote": "The included 20,000 Streaming credits cover 20 active streaming users per month",
+    "retrieved": "2026-10-30"
    }
   ]
  },
@@ -3711,40 +3712,40 @@
   "kind": "intermediary",
   "field": "api_platform_fees",
   "status": "stated",
-  "value": "Quick Start: $399/month billed annually or $499/month billed monthly, with 100,000 credits a month. An active authentication (one connected source for one end user) costs 200 credits a month; the first 400 events per authentication are free, then 0.5 credits per event. Credits beyond 100,000 cost $0.005 (to 1,000,000) and $0.003 above. Streaming API add-on $99/month (20,000 credits, about 20 active streaming users). Graph API from $50 for 2 graphs a month. Enterprise is custom.",
+  "value": "Quick Start: $399/month billed annually or $499/month billed monthly, with 100,000 credits a month. An active authentication (one connected source for one end user) costs 200 credits a month; the first 400 events per authentication are free, then 0.5 credits per event. Credits beyond 100,000 cost $0.005 (to 1,000,000) and $0.003 above. Streaming API add-on $99/month, on its own or with any Terra plan (20,000 Streaming credits, about 20 active streaming users). Graph API from $50 for 2 graphs a month. Enterprise is custom.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-20",
+  "recheck_by": "2026-11-29",
   "note": "The 100,000 included credits cover about 500 connected sources a month before overage. Free development accounts exist but are for evaluation only (academic_vs_commercial).",
   "sources": [
    {
     "url": "https://tryterra.co/pricing",
     "type": "vendor_page",
     "quote": "Subscriptions start from $399 per month billed annually, or $499 per month billed monthly.",
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://tryterra.co/pricing",
     "type": "vendor_page",
-    "quote": "An active authentication is one connected data source for one end user, and costs 200 credits per month.",
-    "retrieved": "2026-10-21"
+    "quote": "An active authentication is one connected data source for one end user, and costs 200 Unified API credits per month.",
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://docs.tryterra.co/unified-api/pricing",
     "type": "vendor_docs",
     "quote": "100,001 - 1,000,000 $0.005 1,000,001+ $0.003",
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://docs.tryterra.co/unified-api/pricing",
     "type": "vendor_docs",
-    "quote": "The first 400 events per active authentication are free. 0.5 credits per event beyond this.",
-    "retrieved": "2026-10-21"
+    "quote": "The first 400 events per active authentication are free. 0.5 Unified API credits per event beyond this.",
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://docs.tryterra.co/streaming-api/pricing",
     "type": "vendor_docs",
-    "quote": "The Streaming API is available as an add-on to any Terra base plan for $99/month .",
-    "retrieved": "2026-10-21"
+    "quote": "The Streaming API is available for $99/month , on its own or alongside any Terra plan.",
+    "retrieved": "2026-10-30"
    }
   ]
  },
@@ -5449,26 +5450,20 @@
   "status": "stated",
   "value": "Self-declared HIPAA compliant; raw data tokenized at ingestion.",
   "confidence": "Corroborated",
-  "recheck_by": "2027-01-19",
+  "recheck_by": "2027-01-28",
   "note": "HIPAA has no certification body; no attestation document is public.",
   "sources": [
-   {
-    "url": "https://www.thryve.health/certifications-compliance",
-    "type": "vendor_page",
-    "quote": "Full compliance with US healthcare data protection law.",
-    "retrieved": "2026-10-21"
-   },
    {
     "url": "https://www.thryve.health/pricing",
     "type": "vendor_page",
     "quote": "being 100% GDPR and HIPAA compliant",
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://www.thryve.health/certifications-compliance",
     "type": "vendor_page",
-    "quote": "Raw health data is tokenized at ingestion",
-    "retrieved": "2026-10-21"
+    "quote": "Raw health data is tokenized at ingestion, meeting GDPR data minimization principles and HIPAA Safe Harbor requirements.",
+    "retrieved": "2026-10-30"
    }
   ]
  },
@@ -5480,19 +5475,19 @@
   "status": "stated",
   "value": "Self-declared GDPR compliant; data pseudonymized behind a Thryve user token and hosted in Germany.",
   "confidence": "Corroborated",
-  "recheck_by": "2027-01-19",
+  "recheck_by": "2027-01-28",
   "sources": [
    {
     "url": "https://www.thryve.health/certifications-compliance",
     "type": "vendor_page",
-    "quote": "Built for European data protection law from the ground up.",
-    "retrieved": "2026-10-21"
+    "quote": "Raw health data is tokenized at ingestion, meeting GDPR data minimization principles and HIPAA Safe Harbor requirements.",
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://docs.thryve.health/further-resources/technology-overview",
     "type": "vendor_docs",
     "quote": "All user data is linked to a fully pseudonymized Thryve user token, giving Thryve no information on who your user is.",
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-30"
    }
   ]
  },
@@ -5504,26 +5499,32 @@
   "status": "stated",
   "value": "Claims ISO/IEC 27001 and ISO 9001 certification, recertified in 2025. Certificates only through a request form, so certifier, scope and expiry are not public.",
   "confidence": "Corroborated",
-  "recheck_by": "2027-01-19",
+  "recheck_by": "2027-01-28",
   "note": "No certificate number or registry entry for mHealth Pioneers GmbH found (IAF CertSearch not queried; it needs an interactive search). Hosting is described as ISO 27017/27018-certified German servers, holder not named.",
   "sources": [
    {
     "url": "https://www.thryve.health/certifications-compliance",
     "type": "vendor_page",
-    "quote": "Thryve's infrastructure, processes, and data handling are independently audited against the highest security requirements.",
-    "retrieved": "2026-10-21"
+    "quote": "Thryve is independently audited and certified.",
+    "retrieved": "2026-10-30"
+   },
+   {
+    "url": "https://www.thryve.health/certifications-compliance",
+    "type": "vendor_page",
+    "quote": "ISO9001 & 27001 Certified",
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://www.thryve.health/updates/2025-year-in-review-thryve",
     "type": "vendor_page",
     "quote": "Successfully passed ISO 9001 & ISO 27001 recertification",
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://www.thryve.health/",
     "type": "vendor_page",
     "quote": "Request Certificates",
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-30"
    }
   ]
  },
@@ -5646,10 +5647,10 @@
   "kind": "platform",
   "field": "program_eligibility",
   "status": "stated",
-  "value": "Open self sign-up for a researcher account (name, organization, email, password; email must be verified before a study can be created). The privacy policy defines a Researcher as someone affiliated with an academic institution, and the terms require account holders to be at least 18. Whether non-academic customers are excluded is not stated, and the homepage markets clinical-trial use.",
+  "value": "Open self sign-up for a researcher account (name, organization, email, password; email must be verified before a study can be created). The privacy policy defines a Researcher as someone affiliated with an academic institution, and the terms require account holders to be at least 18. Whether non-academic customers are excluded is not stated, and the homepage markets clinical as well as behavioral and real-world studies.",
   "confidence": "Corroborated",
-  "recheck_by": "2026-11-10",
-  "note": "Corroborated rather than Verified because the published sign-up flow and the privacy-policy definition point different ways on whether academic affiliation is required.",
+  "recheck_by": "2026-11-29",
+  "note": "Corroborated rather than Verified because the published sign-up flow and the privacy-policy definition point different ways on whether academic affiliation is required. The site was redesigned by 2026-10-26; the old avicennaresearch.com/legal page is now an index, and the policy texts moved to /legal/privacy-policy/ and /legal/terms-of-use/ (re-read 2026-10-30).",
   "sources": [
    {
     "url": "https://forum.avicennaresearch.com/t/step-1-create-a-researcher-account/1160",
@@ -5664,22 +5665,22 @@
     "retrieved": "2026-10-11"
    },
    {
-    "url": "https://avicennaresearch.com/legal",
+    "url": "https://avicennaresearch.com/legal/privacy-policy/",
     "type": "vendor_legal",
     "quote": "is a researcher affiliated with an academic institution who uses Avicenna Research to design and conduct scientific studies",
-    "retrieved": "2026-10-11"
+    "retrieved": "2026-10-30"
    },
    {
-    "url": "https://avicennaresearch.com/legal",
+    "url": "https://avicennaresearch.com/legal/terms-of-use/",
     "type": "vendor_legal",
     "quote": "declares that he or she is at least eighteen (18) years of age",
-    "retrieved": "2026-10-11"
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://avicennaresearch.com/",
     "type": "vendor_page",
-    "quote": "Patient-centric Clinical Trial and Health Research Software Platform",
-    "retrieved": "2026-10-11"
+    "quote": "Design and run clinical, behavioral, and real-world studies",
+    "retrieved": "2026-10-30"
    }
   ]
  },
@@ -5788,7 +5789,7 @@
   "status": "not_public",
   "confidence": "Verified",
   "recheck_by": "2026-11-10",
-  "note": "The only published distinction is Trial (free, test only) versus Licensed. No academic versus commercial terms or price difference is published; /pricing returns 404. The privacy policy defines researchers as academically affiliated while the homepage markets clinical-trial use.",
+  "note": "The only published distinction is Trial (free, test only) versus Licensed. No academic versus commercial terms or price difference is published; /pricing returns 404. The privacy policy defines researchers as academically affiliated while the homepage markets clinical studies.",
   "sources": [
    {
     "url": "https://avicennaresearch.com/",
@@ -5874,7 +5875,7 @@
   "status": "stated",
   "value": "Licence fees are not published (Trial is free; the paid licence is arranged by email). The terms refer to fees and overage fees set in separate Specific Conditions. No separate API fee is mentioned. SMS notifications are off by default and, if enabled through support, are billed at Twilio's per-message cost plus a 30% markup, including leased-number fees; in-app and email notifications carry no such charge.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-29",
   "sources": [
    {
     "url": "https://forum.avicennaresearch.com/t/how-sms-notification-costs-are-calculated/1540",
@@ -5889,10 +5890,10 @@
     "retrieved": "2026-10-11"
    },
    {
-    "url": "https://avicennaresearch.com/legal",
+    "url": "https://avicennaresearch.com/legal/terms-of-use/",
     "type": "vendor_legal",
     "quote": "You shall pay all applicable fees (including any overage fees), as described on the Specific Conditions in connection with such Services selected by you.",
-    "retrieved": "2026-10-11"
+    "retrieved": "2026-10-30"
    }
   ]
  },
@@ -5932,7 +5933,7 @@
   "status": "stated",
   "value": "Yes. No public price list (the /pricing page returns 404). A study is upgraded to a paid licence by emailing support with the study ID, or through a demo booking; the terms describe some services as billed per study.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-29",
   "sources": [
    {
     "url": "https://forum.avicennaresearch.com/t/frequently-asked-questions/5",
@@ -5941,10 +5942,10 @@
     "retrieved": "2026-10-11"
    },
    {
-    "url": "https://avicennaresearch.com/legal",
+    "url": "https://avicennaresearch.com/legal/terms-of-use/",
     "type": "vendor_legal",
     "quote": "for Services billed on per-study basis, the old pricing will apply until the end of the currently defined studies.",
-    "retrieved": "2026-10-11"
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://avicennaresearch.com/pricing",
@@ -5990,8 +5991,8 @@
   "status": "stated",
   "value": "Raw phone sensors through the Avicenna app (accelerometer, gyroscope, magnetic field, light, pressure, proximity, GPS, Wi-Fi, Bluetooth and beacons, battery, screen state, app usage, keyboard, web activity), with many sources Android-only; iOS app usage via hourly Screen Time summaries (added 2026-04). Garmin Health SDK raw watch data (25 Hz accelerometer, 32 Hz gyroscope, beat-to-beat intervals and more). Apple SensorKit streams including ECG and PPG, on approved studies with a custom app. Cloud data from Fitbit, Garmin Health API, Oura, WHOOP, Polar, HealthKit, Hexoskin and Mira. Exported via the dashboard, Kibana or the Data Export API.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
-  "note": "The full list of data-source IDs is on the Raw Data page. A separate iOS keyboard app, Avicenna Keyboard, collects keystroke data (App Store, released 2025-12-16).",
+  "recheck_by": "2026-11-29",
+  "note": "The full list of data-source IDs is on the Raw Data page. The old /features/sensor-based-data page now redirects to /features/sensor-data/, which no longer says data can be accessed raw or processed in real time (re-read 2026-10-30). A separate iOS keyboard app, Avicenna Keyboard, collects keystroke data (App Store, released 2025-12-16).",
   "sources": [
    {
     "url": "https://forum.avicennaresearch.com/t/raw-data/1241",
@@ -6024,10 +6025,10 @@
     "retrieved": "2026-10-11"
    },
    {
-    "url": "https://avicennaresearch.com/features/sensor-based-data",
+    "url": "https://avicennaresearch.com/features/sensor-data/",
     "type": "vendor_page",
-    "quote": "You can access the raw or processed data in real-time",
-    "retrieved": "2026-10-11"
+    "quote": "Capture acceleration, rotation, gravity, and related motion data",
+    "retrieved": "2026-10-30"
    }
   ]
  },
@@ -6037,16 +6038,16 @@
   "kind": "platform",
   "field": "derived_metrics",
   "status": "stated",
-  "value": "Phone-derived step count and activity type; vendor-computed wearable metrics pulled from cloud accounts (Garmin, Fitbit, Oura readiness and sleep, WHOOP recovery, Polar sleep). An Analysis page for data quality, engagement and retention (added 2026-03). Kibana and Vega charts in the dashboard. Whether Avicenna still computes GPS mobility features is unclear (see note).",
+  "value": "Phone-derived step counts and other activity information; vendor-computed wearable metrics pulled from cloud accounts (Garmin, Fitbit, Oura readiness and sleep, WHOOP recovery, Polar sleep). An Analysis page for data quality, engagement and retention (added 2026-03). Kibana and Vega charts in the dashboard. Whether Avicenna still computes GPS mobility features is unclear (see note).",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-29",
   "note": "A vendor forum reference (forum.avicennaresearch.com/t/1460, dated 2025-12-16, read 2026-10-11) described GPS mobility features computed in a nightly batch (daily distance, radius of gyration, location entropy, time at home). By 2026-10-19 that topic returned 404 and it is absent from forum search (2026-10-21). The security page says \"Avicenna does not perform any processing on the data collected for a given study\". Ask Avicenna whether the feature still exists.",
   "sources": [
    {
-    "url": "https://avicennaresearch.com/features/sensor-based-data",
+    "url": "https://avicennaresearch.com/features/sensor-data/",
     "type": "vendor_page",
-    "quote": "from raw motion sensors like accelerometer, to processed data such as step count and activity type",
-    "retrieved": "2026-10-11"
+    "quote": "Collect step counts and activity-related information",
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://forum.avicennaresearch.com/t/raw-data/1241",
@@ -6250,19 +6251,19 @@
   "status": "stated",
   "value": "After contract termination Avicenna keeps data for at least two years unless immediate deletion is requested, then deletes it unless law requires retention. Trial-licence study data is wiped monthly and the study deleted after a year. Export files are deleted after 7 days. Participants can delete all or part of their data at any time.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-29",
   "sources": [
    {
-    "url": "https://avicennaresearch.com/legal",
+    "url": "https://avicennaresearch.com/legal/terms-of-use/",
     "type": "vendor_legal",
     "quote": "Avicenna Research will retain your data for a minimum period of two (2) years following contract termination, in accordance with our Data Management Policy.",
-    "retrieved": "2026-10-11"
+    "retrieved": "2026-10-30"
    },
    {
-    "url": "https://avicennaresearch.com/legal",
+    "url": "https://avicennaresearch.com/legal/privacy-policy/",
     "type": "vendor_legal",
     "quote": "As a Participant, you can delete all or part of the data you have provided for any study conducted using Avicenna Research, at any time",
-    "retrieved": "2026-10-11"
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://forum.avicennaresearch.com/t/frequently-asked-questions/5",
@@ -6350,13 +6351,13 @@
   "status": "stated",
   "value": "Proprietary, closed source. The terms say all service software is the property of Avicenna Research or its software providers; the company GitHub organisation holds only an EMA software comparison list, no platform code.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-29",
   "sources": [
    {
-    "url": "https://avicennaresearch.com/legal",
+    "url": "https://avicennaresearch.com/legal/terms-of-use/",
     "type": "vendor_legal",
     "quote": "All the software utilized for the use and development of the Services is the property of Avicenna Research or its software providers",
-    "retrieved": "2026-10-11"
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://github.com/avicennaresearch/ema_software_map",
@@ -6372,22 +6373,22 @@
   "kind": "platform",
   "field": "hosting_options",
   "status": "stated",
-  "value": "Default: managed cloud service run by Avicenna. White-label option: rebranded apps, with installation ranging from in-house data storage to a full on-premises installation of the (closed-source) Avicenna services on the customer's infrastructure, data routed to the customer's own servers. On-premise deployments are in use: a product card plans per-organisation login pages for on-premise subdomains, and the 2026-09-22 Garmin SDK post routes data to \"an institution's own Avicenna infrastructure where applicable\". Terms and prices are not published.",
+  "value": "Default: managed cloud service run by Avicenna. White-label option: rebranded apps, with installation ranging from in-house data storage (the database kept in the customer's own infrastructure, the only arrangement that gives researchers direct database access) to a full on-premises installation of the (closed-source) Avicenna services on the customer's infrastructure. On-premise deployments are in use: a product card plans per-organisation login pages for on-premise subdomains, and the 2026-09-22 Garmin SDK post routes data to \"an institution's own Avicenna infrastructure where applicable\". Terms and prices are not published.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-29",
   "note": "This is vendor-installed, closed-source software on customer infrastructure, not self-hosting from open source. The security page's \"on-premise servers running Rocky Linux 9.x\" sits in a list of Avicenna's own internal systems (Proxmox, GitLab, Mattermost, Keycloak) and is read here as Avicenna's own infrastructure, so it is not cited as evidence of customer on-premise installs. The profile and matrix say \"Vendor SaaS only, no self-hosting\".",
   "sources": [
    {
     "url": "https://avicennaresearch.com/features/white-label-solutions",
     "type": "vendor_page",
-    "quote": "Avicenna offers different installation alternatives, from eventual in-house storage to full on-premises installation.",
-    "retrieved": "2026-10-11"
+    "quote": "Choose the installation model that fits your organization's data-hosting, security, and regulatory needs, from in-house storage to a fully on-premises deployment.",
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://avicennaresearch.com/features/white-label-solutions",
     "type": "vendor_page",
-    "quote": "route all data from participants straight to your own servers",
-    "retrieved": "2026-10-11"
+    "quote": "Keep the database in your own infrastructure, the only arrangement in which researchers get direct database access",
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://forum.avicennaresearch.com/t/1475",
@@ -6421,9 +6422,9 @@
   "kind": "platform",
   "field": "app_availability",
   "status": "stated",
-  "value": "Participant app \"Avicenna Research\" is free on the iOS App Store (id1137173052, Avicenna Research Inc.) and Google Play (com.ethica.logger). Requires iOS 16.0+ or Android 9.0+. A web app supports surveys and cloud wearables but no phone sensors. White-label study apps are a working service: on 2026-10-11 the App Store listed 33 further iOS apps under Avicenna Research Inc. (32 study-branded apps plus Avicenna Keyboard), and a 2025 JMIR mHealth paper used a customised Android app (Sesikhona).",
+  "value": "Participant app \"Avicenna Research\" is free on the iOS App Store (id1137173052, Avicenna Research Inc.) and Google Play (com.ethica.logger). Requires iOS 16.0+ or Android 10.0+ (raised from Android 9.0+ by 2026-10-26). A web app supports surveys and cloud wearables but no phone sensors. White-label study apps are a working service: on 2026-10-11 the App Store listed 33 further iOS apps under Avicenna Research Inc. (32 study-branded apps plus Avicenna Keyboard), and a 2025 JMIR mHealth paper used a customised Android app (Sesikhona).",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-29",
   "note": "The app count comes from the iTunes lookup API for seller id 1137173051 (34 apps including the main app), and 13 of them were first released in 2026. The Sesikhona study (rural South Africa) collected GPS every 30 minutes and got only 28.4% of expected weekly points, with frequent app terminations; data went to an Avicenna-hosted server and was then transferred to the institute's own MySQL database. White-label cost is not published.",
   "sources": [
    {
@@ -6441,8 +6442,8 @@
    {
     "url": "https://forum.avicennaresearch.com/t/participant-app-settings/1278",
     "type": "vendor_docs",
-    "quote": "A smartphone (iOS 16.0+ or Android 9.0+ / API level 28+)",
-    "retrieved": "2026-10-11"
+    "quote": "A smartphone (iOS 16.0+ or Android 10.0+ / API level 29+)",
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://forum.avicennaresearch.com/t/data-sources/1266",
@@ -6486,20 +6487,20 @@
   "status": "unclear",
   "value": "No explicit offer of a BAA. The privacy policy's children's-data section says HIPAA requires Business Associate Agreements for covered transactions and offers \"HIPAA compliance documentation (where applicable)\", but no page says Avicenna signs BAAs with US covered entities.",
   "confidence": "Unclear",
-  "recheck_by": "2027-01-09",
+  "recheck_by": "2027-01-28",
   "note": "Ask the vendor directly whether it signs a BAA.",
   "sources": [
    {
-    "url": "https://avicennaresearch.com/legal",
+    "url": "https://avicennaresearch.com/legal/privacy-policy/",
     "type": "vendor_legal",
     "quote": "requires Business Associate Agreements for all covered transactions",
-    "retrieved": "2026-10-11"
+    "retrieved": "2026-10-30"
    },
    {
-    "url": "https://avicennaresearch.com/legal",
+    "url": "https://avicennaresearch.com/legal/privacy-policy/",
     "type": "vendor_legal",
     "quote": "HIPAA compliance documentation (where applicable)",
-    "retrieved": "2026-10-11"
+    "retrieved": "2026-10-30"
    }
   ]
  },
@@ -6511,7 +6512,7 @@
   "status": "stated",
   "value": "Yes. Avicenna acts as data processor and says multiple European institutions have controller-processor agreements with it; the privacy policy describes DPA contents (security, audit rights, sub-processors, breach notice, return or deletion). No DPA template is published.",
   "confidence": "Corroborated",
-  "recheck_by": "2027-01-09",
+  "recheck_by": "2027-01-28",
   "sources": [
    {
     "url": "https://forum.avicennaresearch.com/t/security-and-compliance/1267",
@@ -6520,10 +6521,10 @@
     "retrieved": "2026-10-11"
    },
    {
-    "url": "https://avicennaresearch.com/legal",
+    "url": "https://avicennaresearch.com/legal/privacy-policy/",
     "type": "vendor_legal",
     "quote": "approved sub-processors, breach notification procedures, data return/deletion obligations, and support for exercising data subject rights",
-    "retrieved": "2026-10-11"
+    "retrieved": "2026-10-30"
    }
   ]
  },
@@ -6535,13 +6536,13 @@
   "status": "stated",
   "value": "Self-described HIPAA compliance, with HIPAA Security Rule safeguards \"where applicable\". A forum guide also claims compliance with GDPR, PIPEDA, HIPAA, FDA 21 CFR Part 11 and ISO 27001. No independent HIPAA attestation found.",
   "confidence": "Corroborated",
-  "recheck_by": "2027-01-09",
+  "recheck_by": "2027-01-28",
   "sources": [
    {
-    "url": "https://avicennaresearch.com/legal",
+    "url": "https://avicennaresearch.com/legal/privacy-policy/",
     "type": "vendor_legal",
     "quote": "HIPAA Security Rule (where applicable): Administrative, physical, and technical safeguards meeting or exceeding addressable requirements.",
-    "retrieved": "2026-10-11"
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://forum.avicennaresearch.com/t/sensorkit-approval/1563",
@@ -6596,7 +6597,7 @@
   "status": "stated",
   "value": "Self-claimed ISO/IEC 27001:2022 certification \"through UKAS\", certified November 2024, with a November 2025 surveillance audit. No certificate, certificate number or certification body is published (UKAS accredits certification bodies; it does not certify companies).",
   "confidence": "Corroborated",
-  "recheck_by": "2027-01-09",
+  "recheck_by": "2027-01-28",
   "note": "Capped at Corroborated as a self-claim. The security post links a UKAS CertCheck entry, which is CAPTCHA-gated and was not read. The ICO and DSPT entries (see gdpr_statement) are not evidence of ISO certification. Request the certificate from the vendor.",
   "sources": [
    {
@@ -6606,10 +6607,10 @@
     "retrieved": "2026-10-11"
    },
    {
-    "url": "https://avicennaresearch.com/legal",
+    "url": "https://avicennaresearch.com/legal/privacy-policy/",
     "type": "vendor_legal",
     "quote": "Certified November 2024 with zero nonconformities; Surveillance Audit November 2025 with zero nonconformities.",
-    "retrieved": "2026-10-11"
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://forum.avicennaresearch.com/t/1443",
@@ -6684,9 +6685,9 @@
   "kind": "platform",
   "field": "data_residency",
   "status": "conflict",
-  "value": "The security page says all data is on servers physically in Canada, with all staff in Canada, and the privacy policy says information may be stored on servers in Canada. The privacy policy's children's-data section says UK/EEA data is processed and stored within the UK/EEA unless safeguards are in place, and the legal page claims an \"infrastructure-agnostic approach\" to residency. The security page also lists AWS EC2 instances with no region. On-premises installation (see hosting_options) is the documented route to local residency.",
+  "value": "The security page says all data is on servers physically in Canada, with all staff in Canada, and the privacy policy says information may be stored on servers in Canada. The privacy policy's children's-data section says UK/EEA data is processed and stored within the UK/EEA unless safeguards are in place, and the same policy claims an \"infrastructure-agnostic approach\" to residency. The security page also lists AWS EC2 instances with no region. On-premises installation (see hosting_options) is the documented route to local residency.",
   "confidence": "Unclear",
-  "recheck_by": "2027-01-09",
+  "recheck_by": "2027-01-28",
   "note": "A \"Server Region\" Product Ideas card (t/1031, created 2025-05-21) is filed under To Do but reads \"Closed epic: OP-9223\"; whether hosting regions other than Canada are now offered cannot be told from it. Ask the vendor: where UK/EEA study data is stored, and which AWS region the EC2 instances use.",
   "sources": [
    {
@@ -6696,22 +6697,22 @@
     "retrieved": "2026-10-11"
    },
    {
-    "url": "https://avicennaresearch.com/legal",
+    "url": "https://avicennaresearch.com/legal/privacy-policy/",
     "type": "vendor_legal",
     "quote": "your information may be transferred, processed, and stored in our servers in Canada",
-    "retrieved": "2026-10-11"
+    "retrieved": "2026-10-30"
    },
    {
-    "url": "https://avicennaresearch.com/legal",
+    "url": "https://avicennaresearch.com/legal/privacy-policy/",
     "type": "vendor_legal",
     "quote": "UK/EEA Data : Processed and stored within the UK/EEA unless specific safeguards are in place",
-    "retrieved": "2026-10-11"
+    "retrieved": "2026-10-30"
    },
    {
-    "url": "https://avicennaresearch.com/legal",
+    "url": "https://avicennaresearch.com/legal/privacy-policy/",
     "type": "vendor_legal",
     "quote": "Our infrastructure-agnostic approach enables flexibility in meeting data residency and regulatory requirements",
-    "retrieved": "2026-10-11"
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://forum.avicennaresearch.com/t/security-and-compliance/1267",
@@ -9020,8 +9021,8 @@
   "status": "stated",
   "value": "The DTU-hosted service is only for research projects where DTU Health Tech is an active research partner, meaning DTU helped initiate the study, secure funding and define the protocol, and takes part in publication. Non-DTU researchers can use it only through such a partnership. Teams that cannot accept this are pointed to self-hosting.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
-  "note": "Judged 2026-10-11, not a conflict. The hosting page is the service's terms (modified 2026-08-23) and the 2026-09-28 app post repeats the partner rule. The docs line is an invitation to get in touch, listed as its own route between \"DTU researchers can use the CAWS server hosted by DTU Health Tech\" and \"Run your own copy\"; it does not say outsiders get the DTU instance on other terms. The older CAWS page (carp.dk/caws) says \"Researchers affiliated with DTU can use this service\", which is narrower wording of the same rule.",
+  "recheck_by": "2026-11-29",
+  "note": "Judged 2026-10-11, not a conflict. The hosting page is the service's terms (modified 2026-08-23) and the 2026-09-28 app post repeats the partner rule. The docs line is an invitation to get in touch, listed as its own route between \"DTU researchers can use the CAWS server hosted by DTU Health Tech\" and \"Run your own instance\"; it does not say outsiders get the DTU instance on other terms. Re-read 2026-10-30 at the reorganised docs page (docs/data-storage/caws), same structure, new wording. The older CAWS page (carp.dk/caws) says \"Researchers affiliated with DTU can use this service\", which is narrower wording of the same rule.",
   "sources": [
    {
     "url": "https://carp.dk/hosting/",
@@ -9042,10 +9043,16 @@
     "retrieved": "2026-10-11"
    },
    {
-    "url": "https://docs.carp.dk/backends/where-data-goes/caws/",
+    "url": "https://docs.carp.dk/docs/data-storage/caws",
     "type": "vendor_docs",
-    "quote": "Whoever you are, if you’re planning a good study, contact us on Discord or at support@carp.dk and we’ll find a way to support it.",
-    "retrieved": "2026-10-11"
+    "quote": "DTU researchers can use the CAWS server hosted by DTU Health Tech.",
+    "retrieved": "2026-10-30"
+   },
+   {
+    "url": "https://docs.carp.dk/docs/data-storage/caws",
+    "type": "vendor_docs",
+    "quote": "Anyone planning a study can contact the CARP team on Discord or at support@carp.dk ; the team will find a way to support it.",
+    "retrieved": "2026-10-30"
    }
   ]
  },
@@ -9055,33 +9062,34 @@
   "kind": "platform",
   "field": "program_application",
   "status": "stated",
-  "value": "No form. Email info@carp.dk or support@carp.dk, or ask on Discord. Researcher portal accounts are by invitation; a test-server account comes first, production when ready. The hosted service charges a one-time study setup fee that includes a data disclosure agreement.",
+  "value": "No form. Email info@carp.dk or support@carp.dk, or ask on Discord. The CAWS team creates the study, invites a test participant or turns on self sign-up, and registers a custom app for sign-in; a test server (dev.carp.dk) is used while testing. The hosted service charges a one-time study setup fee that includes a data disclosure agreement.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
+  "recheck_by": "2026-11-29",
+  "note": "The docs page cited on 2026-10-11 (start/run-your-study/go-live) was 404 by 2026-10-26 after the docs site was rebuilt. It said researcher accounts are by invitation and that a test-server account comes before production. The rebuilt docs no longer state the invitation rule, so it is dropped from the value; the test server survives only as dev.carp.dk in a code sample.",
   "sources": [
    {
     "url": "https://carp.dk/three-ways-to-use-carp/",
     "type": "vendor_page",
     "quote": "Reach out to the CARP Team at info@carp.dk to set up an account in CARP.",
-    "retrieved": "2026-10-11"
+    "retrieved": "2026-10-30"
    },
    {
-    "url": "https://docs.carp.dk/start/run-your-study/go-live/",
+    "url": "https://docs.carp.dk/docs/data-storage/caws",
     "type": "vendor_docs",
-    "quote": "Researcher accounts are by invitation.",
-    "retrieved": "2026-10-11"
+    "quote": "Anyone planning a study can contact the CARP team on Discord or at support@carp.dk",
+    "retrieved": "2026-10-30"
    },
    {
-    "url": "https://docs.carp.dk/start/run-your-study/go-live/",
+    "url": "https://docs.carp.dk/docs/data-storage/caws",
     "type": "vendor_docs",
-    "quote": "You get an account on a test server first, and on production when you are ready.",
-    "retrieved": "2026-10-11"
+    "quote": "register your app for sign-in.",
+    "retrieved": "2026-10-30"
    },
    {
-    "url": "https://docs.carp.dk/start/run-your-study/go-live/",
+    "url": "https://docs.carp.dk/docs/data-storage/caws",
     "type": "vendor_docs",
-    "quote": "Ask the CARP team on Discord or at support@carp.dk",
-    "retrieved": "2026-10-11"
+    "quote": "use 'dev.carp.dk' while testing.",
+    "retrieved": "2026-10-30"
    }
   ]
  },
@@ -9123,19 +9131,25 @@
   "status": "stated",
   "value": "Open. All components are open source (MIT) on GitHub and pub.dev with no application step. To connect a custom app to a CAWS server, whoever runs that server must register the app and issue a clientId and redirect URI.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
+  "recheck_by": "2026-11-29",
   "sources": [
    {
-    "url": "https://docs.carp.dk/",
+    "url": "https://docs.carp.dk/docs/introduction",
     "type": "vendor_docs",
-    "quote": "Open source MIT license. Read the code, change it, run it yourself.",
-    "retrieved": "2026-10-11"
+    "quote": "CARP (Copenhagen Research Platform) is a free, open-source toolkit for building mobile apps that collect data for research and health studies.",
+    "retrieved": "2026-10-30"
    },
    {
-    "url": "https://docs.carp.dk/backends/where-data-goes/caws/",
+    "url": "https://docs.carp.dk/docs/mobile-sensing/building-sampling-packages/testing-and-publishing",
     "type": "vendor_docs",
-    "quote": "They’ll give you a clientId and a redirectURI (plus an anonymousRedirectURI if you use study codes) to use below",
-    "retrieved": "2026-10-11"
+    "quote": "the CARP packages use the MIT license",
+    "retrieved": "2026-10-30"
+   },
+   {
+    "url": "https://docs.carp.dk/docs/data-storage/caws",
+    "type": "vendor_docs",
+    "quote": "You get a clientId and a redirectURI (plus an anonymousRedirectURI if you use study codes) to use below.",
+    "retrieved": "2026-10-30"
    }
   ]
  },
@@ -9156,10 +9170,10 @@
     "retrieved": "2026-10-11"
    },
    {
-    "url": "https://docs.carp.dk/backends/where-data-goes/caws/",
+    "url": "https://docs.carp.dk/docs/data-storage/caws",
     "type": "vendor_docs",
     "quote": "The researcher sets a maximum number of participants, and can turn sign-up off at any time",
-    "retrieved": "2026-10-11"
+    "retrieved": "2026-10-30"
    }
   ]
  },
@@ -9371,25 +9385,25 @@
   "value": "Via CARP Mobile Sensing sampling packages (own app) or the CARP Studies app: accelerometer (with and without gravity), gyroscope, magnetometer, step events, ambient light (Android), location, activity recognition, Bluetooth and Wi-Fi scans, connectivity, microphone audio and noise, battery, screen events (Android), and on Android only call and SMS logs, installed apps and app usage; calendar; surveys and cognitive tests; Apple Health and Health Connect records. Wearables: Polar accelerometer, gyroscope, magnetometer, ECG, PPI, PPG and HR; Movesense HR, ECG and IMU; Movisens (Android); eSense; Apple Watch via the AWARE watchOS framework. The CARP Studies app collects a subset. CARP Gardener (server side) pulls Fitbit, Garmin, Withings and Dexcom cloud data, which CARP describes as for future studies.",
   "confidence": "Verified",
   "recheck_by": "2026-11-09",
-  "note": "The available-packages table marks ambient light, screen events, Wi-Fi, app lists, app usage, call logs and SMS as Android only, and the AWARE Apple Watch package as iOS/watchOS only.",
+  "note": "The measure-types table (re-read 2026-10-30, docs/mobile-sensing/measure-types) marks ambient light, screen events, free memory, installed apps, app usage, call logs and SMS as Android only, Bluetooth scans as foreground only on iOS, and the AWARE Apple Watch package as iOS/watchOS only. Wi-Fi is now listed for both Android and iOS; the 2026-10-11 table had it as Android only.",
   "sources": [
    {
-    "url": "https://docs.carp.dk/carp-mobile-sensing/sampling-packages/available-packages/",
+    "url": "https://docs.carp.dk/docs/mobile-sensing/measure-types",
     "type": "vendor_docs",
-    "quote": "Rate of change in velocity in x, y, z - including gravity",
-    "retrieved": "2026-10-11"
+    "quote": "Rate of change in velocity in x, y, z, including gravity",
+    "retrieved": "2026-10-30"
    },
    {
-    "url": "https://docs.carp.dk/carp-mobile-sensing/sampling-packages/available-packages/",
+    "url": "https://docs.carp.dk/docs/mobile-sensing/measure-types",
     "type": "vendor_docs",
-    "quote": "Inertial measurement (accelerometer, gyroscope, magnetometer) and heart rate (ECG, PPI, PPG, HR) data from the Polar devices",
-    "retrieved": "2026-10-11"
+    "quote": "Inertial measurement (accelerometer, gyroscope, magnetometer) and heart rate (ECG, PPI, PPG, HR) data from Polar devices",
+    "retrieved": "2026-10-30"
    },
    {
-    "url": "https://docs.carp.dk/carp-mobile-sensing/sampling-packages/available-packages/",
+    "url": "https://docs.carp.dk/docs/mobile-sensing/measure-types",
     "type": "vendor_docs",
-    "quote": "Log of text messages (sms) in/out",
-    "retrieved": "2026-10-11"
+    "quote": "Log of incoming and outgoing text messages (SMS)",
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://carp.dk/new-carp-studies-app/",
@@ -9434,16 +9448,16 @@
   "recheck_by": "2026-11-09",
   "sources": [
    {
-    "url": "https://docs.carp.dk/carp-mobile-sensing/sampling-packages/available-packages/",
+    "url": "https://docs.carp.dk/docs/mobile-sensing/measure-types",
     "type": "vendor_docs",
-    "quote": "Track location and calculates mobility features based on the mobility_features plugin",
-    "retrieved": "2026-10-11"
+    "quote": "Tracks location and calculates mobility features based on the mobility_features plugin",
+    "retrieved": "2026-10-30"
    },
    {
-    "url": "https://docs.carp.dk/carp-mobile-sensing/sampling-packages/available-packages/",
+    "url": "https://docs.carp.dk/docs/mobile-sensing/measure-types",
     "type": "vendor_docs",
-    "quote": "Acceleration events over a specific sampling period and calculates higher-order features",
-    "retrieved": "2026-10-11"
+    "quote": "Acceleration events over a specific sampling period, with calculated higher-order features",
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://carp.dk/new-carp-studies-app/",
@@ -9484,22 +9498,22 @@
     "retrieved": "2026-10-11"
    },
    {
-    "url": "https://docs.carp.dk/carp-mobile-sensing/domain/measures-and-data/",
+    "url": "https://docs.carp.dk/docs/mobile-sensing/domain-model",
     "type": "vendor_docs",
-    "quote": "the default configuration of the light measure is 10 seconds sampling every 5 minutes",
-    "retrieved": "2026-10-11"
+    "quote": "the default configuration of the light measure is 10 seconds of sampling every 5 minutes",
+    "retrieved": "2026-10-30"
    },
    {
-    "url": "https://docs.carp.dk/carp-mobile-sensing/sampling-packages/available-packages/",
+    "url": "https://docs.carp.dk/docs/mobile-sensing/measure-types",
     "type": "vendor_docs",
-    "quote": "A heartbeat measurement every 15 minutes (default) telling if the app is running",
-    "retrieved": "2026-10-11"
+    "quote": "A heartbeat measurement every 15 minutes (default) telling whether the app is running",
+    "retrieved": "2026-10-30"
    },
    {
-    "url": "https://docs.carp.dk/backends/where-data-goes/caws/",
+    "url": "https://docs.carp.dk/docs/data-storage/caws",
     "type": "vendor_docs",
     "quote": "uploads it automatically, every 10 minutes by default",
-    "retrieved": "2026-10-11"
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://carp.dk/coverage-analysis-on-android-14-and-ios-18/",
@@ -9515,22 +9529,40 @@
   "kind": "platform",
   "field": "history_depth",
   "status": "stated",
-  "value": "Prospective collection from enrolment. Probes that read stored phone data (app usage, calls and texts) look back one day by default, configurable. Apple Health and Health Connect measures read back to the last successful sample, and only while the app is in the foreground with the phone unlocked.",
+  "value": "Prospective collection from enrolment. Probes that read stored phone data (app usage, call log, calendar) look back one day on their first run by default, configurable, and later runs continue from the last run. Apple Health and Health Connect measures also read back one day on the first run by default (getHealthMeasure() sets 30 days), then continue from the last data read. Health data is read only while the app is in the foreground, and on iOS only while the phone is unlocked.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
-  "note": "No limit is documented on how far back the first Health read goes.",
+  "recheck_by": "2026-11-29",
+  "note": "No upper limit is documented on how far back a first Health read may be configured to go. The text message log ignores the time window and returns every message on each run. The 2026-10-11 docs said Health reads needed the phone unlocked on both platforms; the rebuilt docs (2026-10-30) limit the unlocked condition to iOS.",
   "sources": [
    {
-    "url": "https://docs.carp.dk/api/carp_mobile_sensing/domain/historicsamplingconfiguration/",
+    "url": "https://docs.carp.dk/docs/mobile-sensing/building-sampling-packages/sampling-configurations",
     "type": "vendor_docs",
-    "quote": "How far back in time to collect data. Default is one day.",
-    "retrieved": "2026-10-11"
+    "quote": "Reading stored data back from now, such as app usage or call logs.",
+    "retrieved": "2026-10-30"
    },
    {
-    "url": "https://docs.carp.dk/sampling-packages/health/configure/",
+    "url": "https://docs.carp.dk/docs/sampling-packages/apps/app-usage",
     "type": "vendor_docs",
-    "quote": "Health data can only be collected when the app is in the foreground and the phone is unlocked.",
-    "retrieved": "2026-10-11"
+    "quote": "Without a configuration on the measure, the package default applies, with a past of 1 day.",
+    "retrieved": "2026-10-30"
+   },
+   {
+    "url": "https://docs.carp.dk/docs/sampling-packages/communication/calls-and-messages",
+    "type": "vendor_docs",
+    "quote": "past only matters for the first run. Later runs start at lastTime , so each run continues where the previous one ended.",
+    "retrieved": "2026-10-30"
+   },
+   {
+    "url": "https://docs.carp.dk/docs/sampling-packages/health/collecting-data",
+    "type": "vendor_docs",
+    "quote": "getHealthMeasure() sets 30 days.",
+    "retrieved": "2026-10-30"
+   },
+   {
+    "url": "https://docs.carp.dk/docs/sampling-packages/health/collecting-data",
+    "type": "vendor_docs",
+    "quote": "The package reads health data only while the app is in the foreground, and on iOS only while the phone is unlocked.",
+    "retrieved": "2026-10-30"
    }
   ]
  },
@@ -9552,12 +9584,6 @@
     "retrieved": "2026-10-11"
    },
    {
-    "url": "https://docs.carp.dk/start/run-your-study/go-live/",
-    "type": "vendor_docs",
-    "quote": "Download it in the Portal under Export , or with carp-cli",
-    "retrieved": "2026-10-11"
-   },
-   {
     "url": "https://github.com/carp-dk/carp-cli",
     "fetch_url": "https://raw.githubusercontent.com/carp-dk/carp-cli/main/README.md",
     "type": "repository",
@@ -9571,10 +9597,16 @@
     "retrieved": "2026-10-11"
    },
    {
-    "url": "https://docs.carp.dk/carp-mobile-sensing/domain/data-endpoints-and-privacy/",
+    "url": "https://docs.carp.dk/docs/mobile-sensing/building-sampling-packages/privacy-and-formats",
     "type": "vendor_docs",
-    "quote": "Transformer schemas (CARP, OMH, FHIR) and PrivacySchema",
-    "retrieved": "2026-10-11"
+    "quote": "Open mHealth (OMH) transformers that packages add",
+    "retrieved": "2026-10-30"
+   },
+   {
+    "url": "https://docs.carp.dk/docs/mobile-sensing/building-sampling-packages/privacy-and-formats",
+    "type": "vendor_docs",
+    "quote": "Fast Healthcare Interoperability Resources (FHIR) transformers that packages add",
+    "retrieved": "2026-10-30"
    }
   ]
  },
@@ -9701,16 +9733,16 @@
     "retrieved": "2026-10-11"
    },
    {
-    "url": "https://docs.carp.dk/carp-mobile-sensing/infrastructure/data-managers/",
+    "url": "https://docs.carp.dk/docs/mobile-sensing/data-managers",
     "type": "vendor_docs",
     "quote": "The Firebase data manager has not yet been updated to API level 2.x.",
-    "retrieved": "2026-10-11"
+    "retrieved": "2026-10-30"
    },
    {
-    "url": "https://docs.carp.dk/carp-mobile-sensing/domain/measures-and-data/",
+    "url": "https://docs.carp.dk/docs/mobile-sensing/measure-types",
     "type": "vendor_docs",
-    "quote": "This will, however, be changed to carp.dk in the future.",
-    "retrieved": "2026-10-11"
+    "quote": "It will be changed to carp.dk in the future.",
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://github.com/carp-dk/carp-health-flutter",
@@ -9808,10 +9840,10 @@
   "kind": "platform",
   "field": "app_availability",
   "status": "stated",
-  "value": "CARP Studies is free on the Apple App Store as an unlisted app, reachable only by link (id 1569798025, seller Danmarks Tekniske Universitet, iPhone, iOS 15.0 or later, version 5.1.0 released 2026-10-06, first released 2025-03-21) and on Google Play (dk.cachet.carp_study_app). Version 5, rebuilt from the ground up, was announced for Android and iOS on 2026-09-28. In mainland China iOS users install through TestFlight.",
+  "value": "CARP Studies is free on the Apple App Store as an unlisted app, reachable only by link (id 1569798025, seller Danmarks Tekniske Universitet, iPhone, iOS 15.0 or later, version 5.1.0 released 2026-10-06, first released 2025-03-21) and on Google Play (dk.cachet.carp_study_app). Version 5, rebuilt from the ground up, was announced for Android and iOS on 2026-09-28.",
   "confidence": "Verified",
   "recheck_by": "2026-11-09",
-  "note": "Version, seller and dates from the iTunes lookup API (id 1569798025, DK storefront) on 2026-10-11. The App Store lists English and Danish; CARP's v5 post says English, Danish and Spanish. Self-hosters and custom-app builders publish their own apps.",
+  "note": "Version, seller and dates from the iTunes lookup API (id 1569798025, DK storefront) on 2026-10-11. The App Store lists English and Danish; CARP's v5 post says English, Danish and Spanish. Self-hosters and custom-app builders publish their own apps. Until October 2026 carp.dk/join said iOS users in mainland China install through TestFlight; that page was 404 on 2026-10-26 and 2026-10-30 and no current CARP page says this, so the claim was dropped from the value.",
   "sources": [
    {
     "url": "https://carp.dk/carp-studies-app-published-in-the-apple-app-store/",
@@ -9835,12 +9867,6 @@
     "url": "https://play.google.com/store/apps/details?id=dk.cachet.carp_study_app",
     "type": "app_store",
     "quote": "This app is used for health research studies in the Copenhagen Research Platform (CARP) at the Technical University of Denmark.",
-    "retrieved": "2026-10-11"
-   },
-   {
-    "url": "https://carp.dk/join/",
-    "type": "vendor_page",
-    "quote": "The iOS app is not published in the China App Store, so iOS users there install through TestFlight.",
     "retrieved": "2026-10-11"
    }
   ]
@@ -12018,34 +12044,40 @@
   "field": "app_availability",
   "scope": "LifeData+ (LifeData app)",
   "status": "stated",
-  "value": "LifeData, free, on iOS (App Store id6443996884, first released 2025-05-28, v1.0.17 of 2026-10-10, iOS 18.0 or later) and Android (com.lifedata.lifedata, 100+ downloads, updated Oct 8, 2026). Seller LIFEDATA LLC.",
+  "value": "LifeData, free, on iOS (App Store id6443996884, first released 2025-05-28, v1.0.18 of 2026-10-17, iOS 18.0 or later) and Android (com.lifedata.lifedata, 100+ downloads, updated Oct 20, 2026). Seller LIFEDATA LLC.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
-  "note": "Release date and version are from the iTunes lookup API (itunes.apple.com/lookup?id=6443996884) on 2026-10-11. The iOS 18 minimum is a BYOD constraint for participants on older iPhones. The Play data-safety section now says the app may share Device or other IDs with third parties (see retention_terms).",
+  "recheck_by": "2026-11-29",
+  "note": "Release date is from the iTunes lookup API (itunes.apple.com/lookup?id=6443996884) on 2026-10-11; version 1.0.18 (Oct 17) read on the App Store page 2026-10-30. The iOS 18 minimum is a BYOD constraint for participants on older iPhones. The Play data-safety section now says the app may share Device or other IDs with third parties (see retention_terms).",
   "sources": [
    {
     "url": "https://apps.apple.com/us/app/lifedata/id6443996884",
     "type": "app_store",
     "quote": "Use it to download Studies created by experts using the LifeData web application",
-    "retrieved": "2026-10-11"
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://apps.apple.com/us/app/lifedata/id6443996884",
     "type": "app_store",
     "quote": "Requires iOS 18.0 or later.",
-    "retrieved": "2026-10-11"
+    "retrieved": "2026-10-30"
+   },
+   {
+    "url": "https://apps.apple.com/us/app/lifedata/id6443996884",
+    "type": "app_store",
+    "quote": "Version 1.0.18 Oct 17",
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://play.google.com/store/apps/details?id=com.lifedata.lifedata&hl=en_US",
     "type": "app_store",
     "quote": "100+ Downloads",
-    "retrieved": "2026-10-11"
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://play.google.com/store/apps/details?id=com.lifedata.lifedata&hl=en_US",
     "type": "app_store",
-    "quote": "Updated on Oct 8, 2026",
-    "retrieved": "2026-10-11"
+    "quote": "Updated on Oct 20, 2026",
+    "retrieved": "2026-10-30"
    }
   ]
  },
@@ -12196,38 +12228,45 @@
   "field": "gdpr_statement",
   "scope": "Data Privacy Framework certification",
   "status": "stated",
-  "value": "LifeData (Marion, IN) is listed on the Commerce Department's Data Privacy Framework registry as \"Active - Re-certification under Review\" under the EU-U.S. DPF, the Swiss-U.S. DPF and the UK Extension, covering HR and non-HR data. EU-U.S. and Swiss-U.S. first certified 2018-05-31, UK Extension 2023-10-31, next certification due 2027-04-28. Verification method: self-assessment. One recorded lapse, 2019-06-30 to 2019-07-08.",
+  "value": "LifeData (Marion, IN) is listed on the Commerce Department's Data Privacy Framework registry as \"Active\" under the EU-U.S. DPF, the Swiss-U.S. DPF and the UK Extension, covering HR and non-HR data. EU-U.S. and Swiss-U.S. first certified 2018-05-31, UK Extension 2023-10-31, next certification due 2027-04-28. Verification method: self-assessment. One recorded lapse, 2019-06-30 to 2019-07-08.",
   "confidence": "Verified",
-  "recheck_by": "2027-01-09",
-  "note": "Coordinator read the registry in a browser on 2026-10-11 (\"LifeData, Marion, IN\", same status, all three frameworks, HR and non-HR); the JSON behind the list (participant 6382) gives the dates. The registered privacy policy is the June 12, 2024 version. \"Re-certification under Review\" means the annual re-certification is being processed; the listing remains Active. A DPF listing confirms the transfer mechanism, not GDPR compliance as a whole.",
+  "recheck_by": "2027-01-28",
+  "note": "Coordinator read the registry in a browser on 2026-10-11 (\"LifeData, Marion, IN\", same status, all three frameworks, HR and non-HR); the JSON behind the list (participant 6382) gives the dates. The registered privacy policy is the June 12, 2024 version (still so on 2026-10-30). On 2026-10-11 all three showed \"Active - Re-certification under Review\"; on 2026-10-30 the JSON gave plain \"Active\" for all three, dates unchanged. A DPF listing confirms the transfer mechanism, not GDPR compliance as a whole.",
   "sources": [
    {
     "url": "https://www.dataprivacyframework.gov/list",
     "fetch_url": "https://dpfapi.azurewebsites.net/api/participants/6382",
     "type": "certificate",
-    "quote": "EU-US Certification Active - Re-certification under Review 2018-05-31T12:00:00+00:00 2027-04-28T12:00:00+00:00",
-    "retrieved": "2026-10-11"
+    "quote": "EU-US Certification Active 2018-05-31T12:00:00+00:00 2027-04-28T12:00:00+00:00",
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://www.dataprivacyframework.gov/list",
     "fetch_url": "https://dpfapi.azurewebsites.net/api/participants/6382",
     "type": "certificate",
-    "quote": "UK Extension Certification Active - Re-certification under Review 2023-10-31T12:00:00+00:00 2027-04-28T12:00:00+00:00",
-    "retrieved": "2026-10-11"
+    "quote": "UK Extension Certification Active 2023-10-31T12:00:00+00:00 2027-04-28T12:00:00+00:00",
+    "retrieved": "2026-10-30"
+   },
+   {
+    "url": "https://www.dataprivacyframework.gov/list",
+    "fetch_url": "https://dpfapi.azurewebsites.net/api/participants/6382",
+    "type": "certificate",
+    "quote": "SW-US Certification Active 2018-05-31T12:00:00+00:00 2027-04-28T12:00:00+00:00",
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://www.dataprivacyframework.gov/list",
     "fetch_url": "https://dpfapi.azurewebsites.net/api/participants/6382",
     "type": "certificate",
     "quote": "Lapse 2019-06-30T12:00:00+00:00 2019-07-08T12:00:00+00:00",
-    "retrieved": "2026-10-11"
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://www.dataprivacyframework.gov/list",
     "fetch_url": "https://dpfapi.azurewebsites.net/api/participants/6382",
     "type": "certificate",
     "quote": "Self-Assessment",
-    "retrieved": "2026-10-11"
+    "retrieved": "2026-10-30"
    }
   ]
  },
@@ -12461,13 +12500,13 @@
   "status": "stated",
   "value": "Active. Plans and add-ons are on sale on the live pricing page, and the manual's billing and sensing pages were updated in October 2026.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
+  "recheck_by": "2026-11-29",
   "sources": [
    {
     "url": "https://m-path.io/manual/knowledge-base/subscriptions-and-billing/",
     "type": "vendor_docs",
-    "quote": "Updated on October 6, 2026",
-    "retrieved": "2026-10-11"
+    "quote": "Updated on October 26, 2026",
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://m-path.io/pricing/",
@@ -18019,10 +18058,10 @@
   "kind": "wearable",
   "field": "program_status",
   "status": "stated",
-  "value": "Active. GENEActiv and the ActivInsights Band are on sale; the GENEActiv 1.3 hardware revision, the macOS GENEActiv Software and the ActivInsights Companion app were updated in 2026; GENEAcore was published on CRAN in April 2026; a US office opened in Texas in June 2025.",
+  "value": "Active. GENEActiv and the ActivInsights Band are on sale; the GENEActiv 1.3 hardware revision, the macOS GENEActiv Software and the ActivInsights Companion app were updated in 2026; GENEAcore, first on CRAN in April 2025, had a new release (1.3.9) on 2026-10-22; a US office opened in Texas in June 2025.",
   "confidence": "Corroborated",
-  "recheck_by": "2026-11-10",
-  "note": "Inferred from current activity; no page states program status as such.",
+  "recheck_by": "2026-11-29",
+  "note": "Inferred from current activity; no page states program status as such. Corrected 2026-10-30, the earlier value said GENEAcore was first published in April 2026; that was the 1.2.0 release, and the CRAN archive lists 1.0.0 on 2025-04-01.",
   "sources": [
    {
     "url": "https://apps.apple.com/us/app/activinsights-companion/id1579732913",
@@ -18033,8 +18072,14 @@
    {
     "url": "https://cran.r-project.org/web/packages/GENEAcore/index.html",
     "type": "repository",
-    "quote": "Published: 2026-04-02",
-    "retrieved": "2026-10-11"
+    "quote": "Published: 2026-10-22",
+    "retrieved": "2026-10-30"
+   },
+   {
+    "url": "https://cran.r-project.org/src/contrib/Archive/GENEAcore/",
+    "type": "repository",
+    "quote": "GENEAcore_1.0.0.tar.gz 2025-04-01",
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://activinsights.com/activinsights-announces-opening-of-new-u-s-office-in-texas-to-power-global-growth/",
@@ -18050,9 +18095,9 @@
   "kind": "wearable",
   "field": "developer_program_status",
   "status": "stated",
-  "value": "No self-serve developer program, developer portal or public API reference. SDKs are provided under licence on contact; the open R packages GENEAread, GENEAclassify and GENEAcore (GPL) read and process GENEActiv .bin files.",
+  "value": "No self-serve developer program, developer portal or public API reference. SDKs are provided under licence on contact; the open R packages GENEAread, GENEAclassify and GENEAcore (GPL; GENEAcore is GPL 3 or later since its 2026-10-22 release) read and process GENEActiv .bin files.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-29",
   "note": "\"SKDs\" is the vendor's typo. The product page says \"open SDKs\" while the apps page says SDKs are licensed; the SDK licence terms are not published.",
   "sources": [
    {
@@ -18064,8 +18109,8 @@
    {
     "url": "https://cran.r-project.org/web/packages/GENEAcore/index.html",
     "type": "repository",
-    "quote": "License: GPL-2 | GPL-3",
-    "retrieved": "2026-10-11"
+    "quote": "License: GPL (≥ 3)",
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://activinsights.com/digital-health-technologies/professional-wearables/geneactiv/",
@@ -20073,27 +20118,27 @@
   "field": "deprecations",
   "scope": "ActiLife",
   "status": "stated",
-  "value": "The ActiLife page calls ActiLife 7 \"legacy\" software, yet it is still updated (v7.3.2.0 released 2026-05-08) and is the only version that handles LEAP data; ActiLife 6 still works with GT3X and GT9X devices. No end-of-support date is published.",
+  "value": "The ActiLife page calls ActiLife 7 \"legacy\" software, yet it is still updated (v7.3.3.0 released 2026-08-03) and is the only version that handles LEAP data; ActiLife 6 still works with GT3X and GT9X devices. No end-of-support date is published.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
+  "recheck_by": "2026-11-29",
   "sources": [
    {
     "url": "https://academic.ametris.com/actilife",
     "type": "vendor_page",
     "quote": "ActiLife 7 is Ametris' legacy data processing software",
-    "retrieved": "2026-10-11"
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://ametris.com/downloads",
     "type": "vendor_page",
-    "quote": "ActiLife® Current Release: v7.3.2.0 Release Date: May 8, 2026",
-    "retrieved": "2026-10-11"
+    "quote": "ActiLife® Current Release: v7.3.3.0 Release Date: August 3, 2026",
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://blog.theactigraph.com/blog/faq-actilife7-upgrade",
     "type": "vendor_page",
     "quote": "Yes, ActiLife 6 can still be used with GT3X and GT9X devices.",
-    "retrieved": "2026-10-11"
+    "retrieved": "2026-10-30"
    }
   ]
  },
@@ -27088,29 +27133,41 @@
   "kind": "wearable",
   "field": "program_eligibility",
   "status": "stated",
-  "value": "Health SDKs are for Garmin Health enterprise partners; the Connect Developer Program is for business use only (an integrator reports applicants must be a legal entity, universities included, and personal applications are rejected)",
+  "value": "Health SDKs are for Garmin Health enterprise partners. The Connect Developer Program's business tiers (Starter and Enterprise, relaunched October 2026) are for organisations building integrations for multiple users, from individual developers and startups to large companies; an integrator reports Garmin describes them as for organisations such as companies, universities, hospitals and research institutions. The separate Personal API gives one person their own data and is not for applications serving multiple users.",
   "confidence": "Verified",
   "scope": "Garmin Health SDKs and Connect Developer Program",
-  "recheck_by": "2026-11-09",
-  "note": "The legal-entity detail is an integrator's statement (Reported); Garmin's own pages say only \"business use\".",
+  "recheck_by": "2026-11-29",
+  "note": "The organisation list and the legal-entity requirement are an integrator's statements (Reported); Garmin's own public pages name no entity type. The 2026-10-10 FAQ line that the programme \"is only for business use\" is gone from the relaunched FAQ (program-faq moved to enterprise/program-faq).",
   "sources": [
    {
     "url": "https://developer.garmin.com/health-sdk/overview/",
     "type": "vendor_docs",
-    "retrieved": "2026-10-10",
+    "retrieved": "2026-10-30",
     "quote": "Available to Garmin Health enterprise partners, the Garmin Health SDKs allow for direct integration of Garmin wearables in your Android"
    },
    {
-    "url": "https://developer.garmin.com/gc-developer-program/program-faq/",
+    "url": "https://developer.garmin.com/gc-developer-program/overview/",
     "type": "vendor_docs",
-    "retrieved": "2026-10-10",
-    "quote": "There are no licensing or maintenance fees for access to the Garmin Connect Developer Program, but it is only for business use."
+    "retrieved": "2026-10-30",
+    "quote": "The Garmin Connect Developer Program supports a broad range of organizations, from individual developers and startups to companies operating at significant scale."
+   },
+   {
+    "url": "https://developer.garmin.com/gc-developer-program/personal/personal-faq/",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-30",
+    "quote": "It is not intended for commercial applications serving multiple end users."
    },
    {
     "url": "https://openwearables.io/docs/providers/garmin-api-integration",
     "type": "secondary",
-    "retrieved": "2026-10-10",
-    "quote": "You must apply as a legal entity (company, university, hospital, research institution, etc.). Personal-use applications are rejected."
+    "retrieved": "2026-10-30",
+    "quote": "Garmin describes both business tiers as intended for organizations (company, university, hospital, research institution, etc.)."
+   },
+   {
+    "url": "https://openwearables.io/docs/providers/garmin-api-integration",
+    "type": "secondary",
+    "retrieved": "2026-10-30",
+    "quote": "Requires legal entity and Garmin Developer Program approval."
    }
   ]
  },
@@ -27158,23 +27215,47 @@
   "kind": "wearable",
   "field": "program_application",
   "status": "stated",
-  "value": "Application reviewed by Garmin (FAQ says status within two business days), then a Garmin call; the application form is currently withdrawn and reviews are paused (see developer_program_status)",
+  "value": "Request access through Garmin's request form and create an app with Starter Access. After approval Garmin grants Developer Portal access and an evaluation environment; Enterprise Access is requested later through the Developer Portal. Garmin says a typical integration takes 1 to 4 weeks. Press reports that Starter apps carry an unverified label until Garmin reviews them, and that applicants need a public website and a published privacy policy.",
   "confidence": "Verified",
   "scope": "Garmin Connect Developer Program",
-  "recheck_by": "2026-11-09",
-  "note": "The two-business-day wording is stale while the pause lasts.",
+  "recheck_by": "2026-11-29",
+  "note": "Replaces the pause-era value (2026-10-10). The request form (www.garmin.com/en-US/forms/StarterGarminConnectDeveloperAccess/) is built by script and was not opened or submitted. The unverified-label and website requirements come from press (the5krunner, 2026-10-22) citing Garmin's portal documentation, so they are Reported.",
   "sources": [
    {
-    "url": "https://developer.garmin.com/gc-developer-program/program-faq/",
+    "url": "https://developer.garmin.com/gc-developer-program/overview/",
     "type": "vendor_docs",
-    "retrieved": "2026-10-10",
-    "quote": "After you request the Garmin Connect Developer Program, we will confirm the status of your application within two business days."
+    "retrieved": "2026-10-30",
+    "quote": "Apply for the Garmin Connect Developer Program and create an app with Starter Access."
    },
    {
-    "url": "https://developer.garmin.com/gc-developer-program/program-faq/",
+    "url": "https://developer.garmin.com/gc-developer-program/overview/",
     "type": "vendor_docs",
-    "retrieved": "2026-10-10",
-    "quote": "A member of the Garmin team will contact you to discuss how best to sell and provide the wearables to your users."
+    "retrieved": "2026-10-30",
+    "quote": "As your business and integration needs evolve, you can request Enterprise Access through Garmin Developer Portal."
+   },
+   {
+    "url": "https://developer.garmin.com/gc-developer-program/enterprise/program-faq/",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-30",
+    "quote": "After you request access to the Garmin Connect Developer Program and your request has been approved, you will be granted access to the Garmin Developer Portal and can get started on your integration right away."
+   },
+   {
+    "url": "https://developer.garmin.com/gc-developer-program/enterprise/program-faq/",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-30",
+    "quote": "A typical integration takes between 1 and 4 weeks."
+   },
+   {
+    "url": "https://developer.garmin.com/gc-developer-program/enterprise/health-api/",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-30",
+    "quote": "After approval, you will have access to an evaluation environment to test the Garmin Connect Health API."
+   },
+   {
+    "url": "https://the5krunner.com/2026/10/22/garmin-personal-api/",
+    "type": "secondary",
+    "retrieved": "2026-10-30",
+    "quote": "applicants need a public website and a published privacy policy"
    }
   ]
  },
@@ -27184,7 +27265,7 @@
   "kind": "wearable",
   "field": "program_status",
   "status": "stated",
-  "value": "Garmin Health research offering active (Garmin published a study using the Health API and Companion SDK on 21 August 2026; the Health SDK request route is published). No open grant call (Asia 2026 closed 31 March 2026; Fitrockr lists none). The Connect Developer Program route is paused to new applicants (see developer_program_status)",
+  "value": "Garmin Health research offering active (Garmin published a study using the Health API and Companion SDK on 21 August 2026; the Health SDK request route is published). No open grant call (Asia 2026 closed 31 March 2026; Fitrockr lists none). The Connect Developer Program reopened to new applicants in October 2026 (see developer_program_status)",
   "confidence": "Corroborated",
   "recheck_by": "2026-11-25",
   "note": "No Garmin page states the research offering's status directly; activity is inferred from recent Garmin publications, hence Corroborated.",
@@ -27215,47 +27296,53 @@
   "kind": "wearable",
   "field": "developer_program_status",
   "status": "stated",
-  "value": "Paused to new applicants. Garmin stopped reviewing and approving new Connect Developer Program requests in spring 2026 while it redesigns the programme; requests already in the queue are also on hold; no reopening date. Existing approved integrations are reported to keep working",
-  "confidence": "Corroborated",
+  "value": "Open again. Garmin relaunched the Connect Developer Program with two business tiers: Starter Access (immediate access to the Activity, Courses, Health, Training and Women's Health APIs; push delivery only; no historical data; limited user capacity) and Enterprise Access (adds the Golf API, ping/pull delivery, one month or more of history, unlimited users, technical support and tailored commercial terms). A separate Personal API gives an individual pull access to their own data. Integrators and press date the reopening to 21 October 2026, ending a pause on new applications that began in spring 2026.",
+  "confidence": "Verified",
   "scope": "Garmin Connect Developer Program",
-  "recheck_by": "2026-11-09",
-  "note": "Garmin's own pages carry only the \"Stay tuned\" line (overview and FAQ). The pause wording comes from Garmin support replies reposted by users on Garmin's developer forums and from press (the5krunner, Terra), so this is Corroborated rather than Verified. The FAQ still says \"If you are interested, please request the Garmin Connect Developer Program and we'll quickly review your application\", which is stale boilerplate rather than a contrary statement, so status is stated, not conflict. Connect IQ (on-device apps) is a separate programme and is not reported as paused.",
+  "recheck_by": "2026-11-29",
+  "note": "Changed 2026-10-30 from \"Paused to new applicants\" (Corroborated). Garmin's own overview and FAQ now invite requests and describe the tiers, so the open status is Verified from Garmin's pages; the 21 October date is from two secondary sources (Open Wearables, the5krunner) and is Corroborated. Whether requests are approved promptly was not observed: no request was made. The pause evidence (Garmin support replies on forums.garmin.com threads 435484 and 434798, the5krunner 2026-09-14, Terra) is historical. Connect IQ (on-device apps) is a separate programme.",
   "sources": [
    {
     "url": "https://developer.garmin.com/gc-developer-program/overview/",
     "type": "vendor_docs",
-    "retrieved": "2026-10-10",
-    "quote": "Stay tuned for more updates on the program"
+    "retrieved": "2026-10-30",
+    "quote": "Apply for the Garmin Connect Developer Program and create an app with Starter Access."
    },
    {
-    "url": "https://forums.garmin.com/developer/fit-sdk/f/discussion/435484/developer-onboarding-blocked/2054626",
-    "type": "secondary",
-    "retrieved": "2026-10-10",
-    "quote": "During this transition, we have temporarily paused the review and approval of new API access requests."
+    "url": "https://developer.garmin.com/gc-developer-program/overview/",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-30",
+    "quote": "Delivery Push only Historical Data Not included User Capacity Limited"
    },
    {
-    "url": "https://forums.garmin.com/developer/fit-sdk/f/discussion/435484/developer-onboarding-blocked/2054626",
-    "type": "secondary",
-    "retrieved": "2026-10-10",
-    "quote": "At this time, we are unable to provide a specific timeline for when new application processing will resume."
+    "url": "https://developer.garmin.com/gc-developer-program/overview/",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-30",
+    "quote": "Delivery Push or Ping/Pull Historical Data 1 month + User Capacity Unlimited Technical Support Included"
    },
    {
-    "url": "https://forums.garmin.com/developer/connect-iq/f/discussion/434798/cannot-access-developer-program-application-form-under-construction/2027757",
-    "type": "secondary",
-    "retrieved": "2026-10-10",
-    "quote": "During this transition, new access requests are temporarily paused"
+    "url": "https://developer.garmin.com/gc-developer-program/overview/",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-30",
+    "quote": "Secure access to your own Garmin Connect data for individuals who want to explore, analyze, and build personalized experiences using their own data."
    },
    {
-    "url": "https://the5krunner.com/2026/09/14/garmin-developer-api-access-paused/",
-    "type": "secondary",
-    "retrieved": "2026-10-10",
-    "quote": "It also said it could not process new requests already in the queue and could not say when processing would resume."
+    "url": "https://developer.garmin.com/gc-developer-program/enterprise/program-faq/",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-30",
+    "quote": "Starter Access: Developers can gain immediate access and launch with Garmin, with access to core data and tools."
    },
    {
-    "url": "https://tryterra.co/blog/garmin-connect-developer-program-pause",
+    "url": "https://openwearables.io/blog/garmin-connect-developer-program-reopened",
     "type": "secondary",
-    "retrieved": "2026-10-10",
-    "quote": "Garmin paused new Connect Developer Program applications while it updates the program."
+    "retrieved": "2026-10-30",
+    "quote": "Garmin reopened the Garmin Connect Developer Program on 21 October 2026."
+   },
+   {
+    "url": "https://the5krunner.com/2026/10/22/garmin-personal-api/",
+    "type": "secondary",
+    "retrieved": "2026-10-30",
+    "quote": "Garmin has reopened its Connect Developer Program after seven months of being closed to new applicants"
    }
   ]
  },
@@ -27264,40 +27351,35 @@
   "name": "Garmin",
   "kind": "wearable",
   "field": "user_cap",
-  "status": "not_public",
+  "status": "stated",
+  "value": "Starter Access has limited user capacity; Garmin does not publish the number, and integrators and press report up to 1,000 connected users. Enterprise Access has unlimited user capacity. No participant cap is published for the Health SDKs.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
-  "note": "No participant or user cap is published. Evaluation access is throttled (see rate_limits) and production follows a Garmin review.",
+  "recheck_by": "2026-11-29",
+  "note": "Changed 2026-10-30 from not_public, after the programme relaunch published per-tier capacity. The 1,000 figure is Reported (integrator and press), not on Garmin's public pages.",
   "sources": [
    {
-    "url": "https://developer.garmin.com/gc-developer-program/program-faq/",
+    "url": "https://developer.garmin.com/gc-developer-program/overview/",
     "type": "vendor_docs",
-    "retrieved": "2026-10-10"
+    "retrieved": "2026-10-30",
+    "quote": "Delivery Push only Historical Data Not included User Capacity Limited"
    },
    {
     "url": "https://developer.garmin.com/gc-developer-program/overview/",
     "type": "vendor_docs",
-    "retrieved": "2026-10-10"
+    "retrieved": "2026-10-30",
+    "quote": "Delivery Push or Ping/Pull Historical Data 1 month + User Capacity Unlimited Technical Support Included"
    },
    {
-    "url": "https://developer.garmin.com/gc-developer-program/health-api/",
-    "type": "vendor_docs",
-    "retrieved": "2026-10-10"
+    "url": "https://openwearables.io/docs/providers/garmin-api-integration",
+    "type": "secondary",
+    "retrieved": "2026-10-30",
+    "quote": "Up to 1,000 connected users"
    },
    {
-    "url": "https://developer.garmin.com/health-sdk/overview/",
-    "type": "vendor_docs",
-    "retrieved": "2026-10-10"
-   },
-   {
-    "url": "https://developer.garmin.com/health-sdk/questions-answers/",
-    "type": "vendor_docs",
-    "retrieved": "2026-10-10"
-   },
-   {
-    "url": "https://developerportal.garmin.com/sites/default/files/Garmin%20Connect%20Developer%20Program%20Agreement.pdf",
-    "type": "vendor_legal",
-    "retrieved": "2026-10-10"
+    "url": "https://openwearables.io/blog/garmin-connect-developer-program-reopened",
+    "type": "secondary",
+    "retrieved": "2026-10-30",
+    "quote": "Press reports put the limit at 1,000 connected users and say Starter is free."
    }
   ]
  },
@@ -27307,27 +27389,27 @@
   "kind": "wearable",
   "field": "academic_vs_commercial",
   "status": "stated",
-  "value": "No separate academic tier. Access is business-only; fees attach to commercial use (a licence fee for Enhanced Beat-To-Beat Interval on the Health API; a licence fee or minimum device order for the Health SDKs). Whether a non-commercial academic study counts as commercial use is not stated",
+  "value": "No separate academic tier. Connect Developer Program access is by business tier: Starter for organisations building apps, and Enterprise with commercial terms tailored to each company; the Personal API is not for applications serving multiple users. Health SDKs are free to evaluate and need a licence fee or minimum device order for commercial use. Whether a non-commercial academic study counts as commercial use is not stated",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
-  "note": "Both agreement versions (section 8.4) bar the licensee from press releases or public statements about Garmin or the agreement's subject matter without Garmin's written approval; how this bears on academic publication is not stated. See the academic_vs_commercial entry scoped to the China-entity agreement for its research exemption from attribution.",
+  "recheck_by": "2026-11-29",
+  "note": "Both agreement versions (section 8.4) bar the licensee from press releases or public statements about Garmin or the agreement's subject matter without Garmin's written approval; how this bears on academic publication is not stated. See the academic_vs_commercial entry scoped to the China-entity agreement for its research exemption from attribution. The 2026-10-10 pages said access was \"only for business use\" and that Enhanced Beat-To-Beat Interval needed a licence fee for commercial use; neither line is on the relaunched pages (2026-10-30).",
   "sources": [
    {
-    "url": "https://developer.garmin.com/gc-developer-program/program-faq/",
+    "url": "https://developer.garmin.com/gc-developer-program/overview/",
     "type": "vendor_docs",
-    "retrieved": "2026-10-10",
-    "quote": "There are no licensing or maintenance fees for access to the Garmin Connect Developer Program, but it is only for business use."
+    "retrieved": "2026-10-30",
+    "quote": "Available options and commercial terms are tailored based on business and technical requirements."
    },
    {
-    "url": "https://developer.garmin.com/gc-developer-program/health-api/",
+    "url": "https://developer.garmin.com/gc-developer-program/personal/personal-faq/",
     "type": "vendor_docs",
-    "retrieved": "2026-10-10",
-    "quote": "Commercial use requires a license fee payment."
+    "retrieved": "2026-10-30",
+    "quote": "It is not intended for commercial applications serving multiple end users."
    },
    {
     "url": "https://developer.garmin.com/health-sdk/overview/",
     "type": "vendor_docs",
-    "retrieved": "2026-10-10",
+    "retrieved": "2026-10-30",
     "quote": "Evaluation: Free Commercial Use: License Fee or Minimum Device Order Quantity"
    }
   ]
@@ -27449,13 +27531,18 @@
   "field": "academic_pricing",
   "status": "not_public",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
+  "recheck_by": "2026-11-29",
   "note": "No academic price or discount is published. Grants with Fitrockr supply devices and platform access, but that is an award, not a price.",
   "sources": [
    {
-    "url": "https://developer.garmin.com/gc-developer-program/program-faq/",
+    "url": "https://developer.garmin.com/gc-developer-program/enterprise/program-faq/",
     "type": "vendor_docs",
-    "retrieved": "2026-10-10"
+    "retrieved": "2026-10-30"
+   },
+   {
+    "url": "https://developer.garmin.com/gc-developer-program/overview/",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://developer.garmin.com/health-sdk/overview/",
@@ -27480,41 +27567,47 @@
   "kind": "wearable",
   "field": "api_platform_fees",
   "status": "stated",
-  "value": "No licence fee or other payment is due under the developer agreement, and the FAQ says no licensing or maintenance fee for the programme. Garmin reserves the right to add API fees on 30 days' notice and to charge for request volume above limits. Enhanced Beat-To-Beat Interval needs a licence fee for commercial use",
+  "value": "The developer agreement says no licence fee is due, lets Garmin add API fees on 30 days' notice, and lets it charge for request volume above limits. Garmin's relaunched pages publish no price; Enterprise terms are tailored per company. Integrators and press report that Starter is free and that Enterprise has an entry fee credited against billing for monthly active users, with billing starting 1 April 2027 (Reported)",
   "confidence": "Verified",
   "scope": "Connect Developer Program (Health API and related APIs)",
-  "recheck_by": "2026-11-09",
-  "note": "Section 10.1 is identical in the China-entity version of the agreement. The $5,000 one-time administrative fee the profile carries as Reported appears on no Garmin page and is contradicted by section 10.1 and the FAQ; its cited source (techdepot.blog) returned 403 on 2026-10-10, and aifitnessapi.com says only that \"some third-party reports mention a setup fee\". Treat it as unsupported. Metric licence fees sit outside the agreement and their amounts are not published.",
+  "recheck_by": "2026-11-29",
+  "note": "Section 10.1 is identical in the China-entity version of the agreement. Which agreement version governs the relaunched tiers is not stated. The 2026-10-10 FAQ said there was no licensing or maintenance fee and the Health API page said Enhanced Beat-To-Beat Interval needed a licence fee for commercial use; both pages were removed in the October 2026 relaunch and neither statement is on the new pages. The Enterprise entry fee and the Starter-is-free claim are secondary reports of fees that, if real, would sit outside section 10.1. The $5,000 one-time administrative fee the profile once carried as Reported appears on no Garmin page; treat it as unsupported.",
   "sources": [
    {
     "url": "https://developerportal.garmin.com/sites/default/files/Garmin%20Connect%20Developer%20Program%20Agreement.pdf",
     "type": "vendor_legal",
-    "retrieved": "2026-10-10",
+    "retrieved": "2026-10-30",
     "quote": "Licensee acknowledges and agrees that no license fees or other payments will be due under this Agreement in exchange for the rights granted under this Agreement."
    },
    {
     "url": "https://developerportal.garmin.com/sites/default/files/Garmin%20Connect%20Developer%20Program%20Agreement.pdf",
     "type": "vendor_legal",
-    "retrieved": "2026-10-10",
+    "retrieved": "2026-10-30",
     "quote": "If Garmin decides to charge for any API, such charges and terms of payment will be disclosed to Licensee and effective upon thirty (30) days’ prior notice from Garmin."
    },
    {
     "url": "https://developerportal.garmin.com/sites/default/files/Garmin%20Connect%20Developer%20Program%20Agreement.pdf",
     "type": "vendor_legal",
-    "retrieved": "2026-10-10",
+    "retrieved": "2026-10-30",
     "quote": "Garmin reserves the right to charge fees for request volume that exceeds any limits set forth in the Application Requirements."
    },
    {
-    "url": "https://developer.garmin.com/gc-developer-program/program-faq/",
+    "url": "https://developer.garmin.com/gc-developer-program/overview/",
     "type": "vendor_docs",
-    "retrieved": "2026-10-10",
-    "quote": "Access to some metrics may require a license fee payment or minimum device order quantity for commercial use."
+    "retrieved": "2026-10-30",
+    "quote": "Available options and commercial terms are tailored based on business and technical requirements."
    },
    {
-    "url": "https://developer.garmin.com/gc-developer-program/health-api/",
-    "type": "vendor_docs",
-    "retrieved": "2026-10-10",
-    "quote": "Commercial use requires a license fee payment."
+    "url": "https://openwearables.io/blog/garmin-connect-developer-program-reopened",
+    "type": "secondary",
+    "retrieved": "2026-10-30",
+    "quote": "According to press reports, there is an entry fee credited against a bill for monthly active users, and billing starts on 1 April 2027."
+   },
+   {
+    "url": "https://openwearables.io/blog/garmin-connect-developer-program-reopened",
+    "type": "secondary",
+    "retrieved": "2026-10-30",
+    "quote": "Press reports put the limit at 1,000 connected users and say Starter is free."
    }
   ]
  },
@@ -27549,21 +27642,16 @@
   "kind": "wearable",
   "field": "minimum_commitment",
   "status": "stated",
-  "value": "No published minimum; a device minimum order quantity is one of two payment routes for commercial Health SDK use and for some Health API metrics; the quantity is not published",
+  "value": "No published minimum; a device minimum order quantity is one of two payment routes for commercial Health SDK use; the quantity is not published",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
+  "recheck_by": "2026-11-29",
+  "note": "The 2026-10-10 Connect Developer Program FAQ also named a minimum device order for some Health API metrics; the relaunched FAQ (2026-10-30) does not.",
   "sources": [
    {
     "url": "https://developer.garmin.com/health-sdk/questions-answers/",
     "type": "vendor_docs",
-    "retrieved": "2026-10-10",
+    "retrieved": "2026-10-30",
     "quote": "Evaluation is free, but commercial use requires either a license fee or device minimum order quantity commitment."
-   },
-   {
-    "url": "https://developer.garmin.com/gc-developer-program/program-faq/",
-    "type": "vendor_docs",
-    "retrieved": "2026-10-10",
-    "quote": "Access to some metrics may require a license fee payment or minimum device order quantity for commercial use."
    }
   ]
  },
@@ -27573,21 +27661,27 @@
   "kind": "wearable",
   "field": "quote_required",
   "status": "stated",
-  "value": "Yes for Health SDK licences, licensed metrics and bulk devices; Garmin Health designs commercial terms per customer. Connect Developer Program access itself is free but by application (currently paused)",
+  "value": "Yes for Health SDK licences and for Connect Developer Program Enterprise Access, whose commercial terms Garmin tailors per company; projects that want to supply Garmin wearables contact Garmin through an inquiry form. Starter Access is requested through a form and no price is published",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
+  "recheck_by": "2026-11-29",
   "sources": [
    {
     "url": "https://developer.garmin.com/health-sdk/questions-answers/",
     "type": "vendor_docs",
-    "retrieved": "2026-10-10",
+    "retrieved": "2026-10-30",
     "quote": "A member of the Garmin Health team will work with you to design a business model that fits your needs."
    },
    {
-    "url": "https://developer.garmin.com/gc-developer-program/program-faq/",
+    "url": "https://developer.garmin.com/gc-developer-program/overview/",
     "type": "vendor_docs",
-    "retrieved": "2026-10-10",
-    "quote": "A member of the Garmin team will contact you to discuss how best to sell and provide the wearables to your users."
+    "retrieved": "2026-10-30",
+    "quote": "Available options and commercial terms are tailored based on business and technical requirements."
+   },
+   {
+    "url": "https://developer.garmin.com/gc-developer-program/enterprise/program-faq/",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-30",
+    "quote": "If you want to enhance your project by offering Garmin wearables, request the Garmin Connect Developer Program and contact us using the inquiry form with more information about your project."
    }
   ]
  },
@@ -27597,7 +27691,7 @@
   "kind": "wearable",
   "field": "raw_streams",
   "status": "stated",
-  "value": "Health SDKs (Bluetooth to the study's own app): real-time streams and configurable on-device logging of accelerometer, gyroscope, Enhanced Beat-To-Beat Intervals, heart rate, Pulse Ox, respiration and actigraphy. Health API (cloud): summaries plus licensed Enhanced Beat-To-Beat Interval, no raw accelerometer. Connect IQ apps read motion sensors on the watch",
+  "value": "Health SDKs (Bluetooth to the study's own app): real-time streams and configurable on-device logging of accelerometer, gyroscope, Enhanced Beat-To-Beat Intervals, heart rate, Pulse Ox, respiration and actigraphy. Health API (cloud): summaries plus Enhanced Beat-To-Beat Interval (Enterprise Access only), no raw accelerometer. Connect IQ apps read motion sensors on the watch",
   "confidence": "Verified",
   "recheck_by": "2026-11-09",
   "note": "Raw PPG and ECG traces are not listed for any route. Per-device availability of SDK streams varies by device family.",
@@ -27621,10 +27715,16 @@
     "quote": "subscribe to live streams of heart rate, stress scores, accelerometer, and more"
    },
    {
-    "url": "https://developer.garmin.com/gc-developer-program/health-api/",
+    "url": "https://developer.garmin.com/gc-developer-program/enterprise/health-api/",
     "type": "vendor_docs",
-    "retrieved": "2026-10-10",
-    "quote": "Steps Intensity Minutes Sleep Calories Heart Rate Stress Pulse Ox Body Battery Body Composition Respiration Blood Pressure Enhanced Beat-To-Beat Interval"
+    "retrieved": "2026-10-30",
+    "quote": "Steps Intensity Minutes Sleep Calories Heart Rate Stress Pulse Ox Body Battery Body Composition Respiration Blood Pressure *Enhanced Beat-To-Beat Interval *"
+   },
+   {
+    "url": "https://developer.garmin.com/gc-developer-program/enterprise/health-api/",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-30",
+    "quote": "* Supported with Enterprise Access only"
    },
    {
     "url": "https://developer.garmin.com/connect-iq/api-docs/Toybox/Sensor.html",
@@ -27640,27 +27740,40 @@
   "kind": "wearable",
   "field": "derived_metrics",
   "status": "stated",
-  "value": "Health API: steps, intensity minutes, sleep, calories, heart rate, stress, Pulse Ox, Body Battery, body composition, respiration, blood pressure, plus epoch summaries; Activity API: full activity data for over 30 activity types; Women's Health API: menstrual cycle and pregnancy data",
+  "value": "Health API: steps, intensity minutes, sleep, calories, heart rate, stress, Pulse Ox, Body Battery, body composition, respiration, blood pressure, plus epoch summaries (Enhanced Beat-To-Beat Interval with Enterprise Access only); Activity API: detailed fitness data from activities such as running, cycling, swimming, yoga and strength training; Women's Health API: menstrual cycle and pregnancy tracking data",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
+  "recheck_by": "2026-11-29",
+  "note": "The 2026-10-10 overview said the Activity API covered \"over 30 activity types\"; the relaunched pages give no count.",
   "sources": [
    {
-    "url": "https://developer.garmin.com/gc-developer-program/health-api/",
+    "url": "https://developer.garmin.com/gc-developer-program/enterprise/health-api/",
     "type": "vendor_docs",
-    "retrieved": "2026-10-10",
-    "quote": "Steps Intensity Minutes Sleep Calories Heart Rate Stress Pulse Ox Body Battery Body Composition Respiration Blood Pressure Enhanced Beat-To-Beat Interval"
+    "retrieved": "2026-10-30",
+    "quote": "Steps Intensity Minutes Sleep Calories Heart Rate Stress Pulse Ox Body Battery Body Composition Respiration Blood Pressure *Enhanced Beat-To-Beat Interval *"
    },
    {
-    "url": "https://developer.garmin.com/gc-developer-program/health-api/",
+    "url": "https://developer.garmin.com/gc-developer-program/enterprise/health-api/",
     "type": "vendor_docs",
-    "retrieved": "2026-10-10",
+    "retrieved": "2026-10-30",
+    "quote": "* Supported with Enterprise Access only"
+   },
+   {
+    "url": "https://developer.garmin.com/gc-developer-program/enterprise/health-api/",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-30",
     "quote": "detailed stress, pulse-ox, and epoch summaries for all-day activities"
    },
    {
-    "url": "https://developer.garmin.com/gc-developer-program/overview/",
+    "url": "https://developer.garmin.com/gc-developer-program/enterprise/activity-api/",
     "type": "vendor_docs",
-    "retrieved": "2026-10-10",
-    "quote": "Activity API - Full activity data for over 30 activity types."
+    "retrieved": "2026-10-30",
+    "quote": "The Activity API provides access to the detailed fitness data captured during an activity on the user’s wearable device or cycling computer."
+   },
+   {
+    "url": "https://developer.garmin.com/gc-developer-program/enterprise/womens-health-api/",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-30",
+    "quote": "The Garmin Connect Women’s Health API provides information captured in Menstrual Cycle Tracking and Pregnancy Tracking, including schedules and pregnancy details."
    }
   ]
  },
@@ -27673,12 +27786,12 @@
   "value": "Garmin publishes no Hz figures; its page says all-day summaries through to second-level heart rate during activities",
   "confidence": "Verified",
   "scope": "Health API (Garmin)",
-  "recheck_by": "2026-11-09",
+  "recheck_by": "2026-11-29",
   "sources": [
    {
-    "url": "https://developer.garmin.com/gc-developer-program/health-api/",
+    "url": "https://developer.garmin.com/gc-developer-program/enterprise/health-api/",
     "type": "vendor_docs",
-    "retrieved": "2026-10-10",
+    "retrieved": "2026-10-30",
     "quote": "Full spectrum of metrics from all-day steps to second-level HR during activities"
    }
   ]
@@ -27751,27 +27864,46 @@
   "name": "Garmin",
   "kind": "wearable",
   "field": "history_depth",
-  "status": "unclear",
-  "confidence": "Unclear",
-  "recheck_by": "2026-11-09",
-  "note": "Garmin documents a backfill tool but its limits are only in the portal-only API specification. One integrator (Open Wearables, two pages) reports about 30 days before the user's consent date. SDK logging history depends on device memory and sync.",
+  "status": "stated",
+  "value": "Starter Access includes no historical data, so data starts when the user connects. Enterprise Access includes one month or more of history through backfill, which is Enterprise only. An integrator reports backfill returns about the 30 days before the user's consent. Health SDK logging history depends on device memory and sync.",
+  "confidence": "Verified",
+  "recheck_by": "2026-11-29",
+  "note": "Changed 2026-10-30 from unclear, after the relaunch published per-tier history. Garmin's \"1 month +\" sets no stated upper limit; the exact backfill window is in the portal-only API specification.",
   "sources": [
    {
-    "url": "https://developer.garmin.com/gc-developer-program/health-api/",
+    "url": "https://developer.garmin.com/gc-developer-program/overview/",
     "type": "vendor_docs",
-    "retrieved": "2026-10-10",
-    "quote": "Developer Web Tools: Easy on-boarding, sample data, backfill user data, and auto-verification of your integration before production"
+    "retrieved": "2026-10-30",
+    "quote": "Delivery Push only Historical Data Not included User Capacity Limited"
+   },
+   {
+    "url": "https://developer.garmin.com/gc-developer-program/overview/",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-30",
+    "quote": "Delivery Push or Ping/Pull Historical Data 1 month + User Capacity Unlimited Technical Support Included"
+   },
+   {
+    "url": "https://developer.garmin.com/gc-developer-program/enterprise/health-api/",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-30",
+    "quote": "Developer Web Tools: Easy on-boarding, sample data, *backfill user data, and auto-verification of your integration before production"
+   },
+   {
+    "url": "https://developer.garmin.com/gc-developer-program/enterprise/health-api/",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-30",
+    "quote": "* Supported with Enterprise Access only"
    },
    {
     "url": "https://openwearables.io/docs/providers/garmin-api-integration",
     "type": "secondary",
-    "retrieved": "2026-10-10",
+    "retrieved": "2026-10-30",
     "quote": "Backfill typically returns ~last month of data"
    },
    {
     "url": "https://openwearables.io/docs/providers/historical-data",
     "type": "secondary",
-    "retrieved": "2026-10-10",
+    "retrieved": "2026-10-30",
     "quote": "Limited to 30 days before the user"
    }
   ]
@@ -27782,45 +27914,51 @@
   "kind": "wearable",
   "field": "export_routes",
   "status": "stated",
-  "value": "Cloud APIs with user consent over OAuth 2.0 (Health API JSON; Activity API FIT, GPX and TCX files; Women's Health API) by ping/pull or push; Health SDKs for Android and iOS (Standard SDK bypasses Garmin servers; Companion SDK works alongside Garmin Connect); Connect IQ on-device apps with a free SDK. Research platforms such as Fitrockr, Labfront and Fitabase resell access",
+  "value": "Cloud APIs with user consent over OAuth 2.0 (Health API JSON; Activity API JSON summaries and FIT, GPX and TCX files; Women's Health API) by push, or by ping/pull with Enterprise Access; a Personal API (pull only) for one person's own data; Health SDKs for Android and iOS (Standard SDK bypasses Garmin servers; Companion SDK works alongside Garmin Connect); Connect IQ on-device apps with a free SDK. Research platforms such as Fitrockr, Labfront and Fitabase resell access",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
-  "note": "Participants can export their own Garmin account data; the pages describing this are script-rendered and not quoted. The unofficial Garth library, used by many tools to pull Garmin Connect data without the developer programme, is deprecated after Garmin changed its auth flow (\"Garmin changed their auth flow, breaking the mobile auth approach that Garth depends on\", garth.readthedocs.io, read 2026-10-10), so that informal route is unreliable.",
+  "recheck_by": "2026-11-29",
+  "note": "Participants can export their own Garmin account data; the pages describing this are script-rendered and not quoted. The Personal API (launched October 2026) is the official route for a participant's own data and replaces the unofficial Garth library, which is deprecated after Garmin changed its auth flow (garth.readthedocs.io, read 2026-10-10).",
   "sources": [
    {
-    "url": "https://developer.garmin.com/gc-developer-program/health-api/",
+    "url": "https://developer.garmin.com/gc-developer-program/enterprise/health-api/",
     "type": "vendor_docs",
-    "retrieved": "2026-10-10",
-    "quote": "Ping/Pull or Push Architecture: Choose the integration option that best matches your needs"
+    "retrieved": "2026-10-30",
+    "quote": "Push or *Ping/Pull Architecture: Choose the integration option that best matches your needs"
    },
    {
-    "url": "https://developer.garmin.com/gc-developer-program/health-api/",
+    "url": "https://developer.garmin.com/gc-developer-program/enterprise/health-api/",
     "type": "vendor_docs",
-    "retrieved": "2026-10-10",
+    "retrieved": "2026-10-30",
     "quote": "We provide data in JSON format"
    },
    {
-    "url": "https://developer.garmin.com/gc-developer-program/program-faq/",
+    "url": "https://developer.garmin.com/gc-developer-program/enterprise/program-faq/",
     "type": "vendor_docs",
-    "retrieved": "2026-10-10",
+    "retrieved": "2026-10-30",
     "quote": "All APIs in the Developer Program use OAUTH 2.0."
    },
    {
-    "url": "https://developer.garmin.com/gc-developer-program/activity-api/",
+    "url": "https://developer.garmin.com/gc-developer-program/enterprise/activity-api/",
     "type": "vendor_docs",
-    "retrieved": "2026-10-10",
+    "retrieved": "2026-10-30",
     "quote": "Activity data files (.FIT, GPX, .TCX formats) available for complete activity details"
+   },
+   {
+    "url": "https://developer.garmin.com/gc-developer-program/personal/personal-faq/",
+    "type": "vendor_docs",
+    "retrieved": "2026-10-30",
+    "quote": "The Personal API provides access to an individual user's own data using a self-generated API key."
    },
    {
     "url": "https://developer.garmin.com/health-sdk/overview/",
     "type": "vendor_docs",
-    "retrieved": "2026-10-10",
+    "retrieved": "2026-10-30",
     "quote": "Create a single-app experience using Garmin devices that does not require use of any Garmin servers."
    },
    {
-    "url": "https://developer.garmin.com/gc-developer-program/program-faq/",
+    "url": "https://developer.garmin.com/gc-developer-program/enterprise/program-faq/",
     "type": "vendor_docs",
-    "retrieved": "2026-10-10",
+    "retrieved": "2026-10-30",
     "quote": "Learn more about Connect IQ and start using our free SDK."
    }
   ]
@@ -27832,29 +27970,28 @@
   "field": "rate_limits",
   "status": "not_public",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
-  "note": "Evaluation access is throttled and the agreement refers to request-volume limits in the Application Requirements, but no figures are public.",
+  "recheck_by": "2026-11-29",
+  "note": "The agreement refers to request-volume limits in the Application Requirements, but no figures are public. The 2026-10-10 overview's line about throttled evaluation access is gone from the relaunched page. Starter's limited user capacity is a user cap, not a request rate (see user_cap).",
   "sources": [
    {
     "url": "https://developer.garmin.com/gc-developer-program/overview/",
     "type": "vendor_docs",
-    "retrieved": "2026-10-10",
-    "quote": "Convenient and secure development against the production environment with throttled access"
+    "retrieved": "2026-10-30"
    },
    {
-    "url": "https://developer.garmin.com/gc-developer-program/health-api/",
+    "url": "https://developer.garmin.com/gc-developer-program/enterprise/health-api/",
     "type": "vendor_docs",
-    "retrieved": "2026-10-10"
+    "retrieved": "2026-10-30"
    },
    {
-    "url": "https://developer.garmin.com/gc-developer-program/program-faq/",
+    "url": "https://developer.garmin.com/gc-developer-program/enterprise/program-faq/",
     "type": "vendor_docs",
-    "retrieved": "2026-10-10"
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://developerportal.garmin.com/sites/default/files/Garmin%20Connect%20Developer%20Program%20Agreement.pdf",
     "type": "vendor_legal",
-    "retrieved": "2026-10-10",
+    "retrieved": "2026-10-30",
     "quote": "Garmin reserves the right to charge fees for request volume that exceeds any limits set forth in the Application Requirements."
    }
   ]
@@ -27950,14 +28087,14 @@
   "field": "deprecations",
   "status": "unclear",
   "confidence": "Unclear",
-  "recheck_by": "2026-11-09",
-  "note": "No API shutdown or deprecation is announced. Garmin has told applicants the programme is being redesigned, with no date or details, so terms or APIs may change. Press links the timing to the July 2025 API Brand Guidelines and Strava's short-lived 2025 lawsuit (BikeRadar quotes Strava on \"new developer guidelines for all of its API partners\"); that link is press interpretation. Health SDKs must be updated to receive new data types.",
+  "recheck_by": "2026-11-29",
+  "note": "No API shutdown is announced. In October 2026 Garmin relaunched the Connect Developer Program as Starter and Enterprise tiers; Starter has push delivery only and no historical data, so ping/pull and backfill are now Enterprise features. How existing integrations were moved onto the tiers is not stated on Garmin's pages. Press links the redesign's timing to the July 2025 API Brand Guidelines and Strava's short-lived 2025 lawsuit; that link is press interpretation. Health SDKs must be updated to receive new data types.",
   "sources": [
    {
-    "url": "https://developer.garmin.com/gc-developer-program/overview/",
+    "url": "https://developer.garmin.com/gc-developer-program/enterprise/program-faq/",
     "type": "vendor_docs",
-    "retrieved": "2026-10-10",
-    "quote": "Stay tuned for more updates on the program"
+    "retrieved": "2026-10-30",
+    "quote": "Enterprise Access: For companies operating at scale, this new model aligns with growth, offering expanded data access, reliability, and enterprise-grade support."
    },
    {
     "url": "https://the5krunner.com/2026/09/14/garmin-developer-api-access-paused/",
@@ -35894,34 +36031,40 @@
   "kind": "wearable",
   "field": "subscription_price",
   "status": "stated",
-  "value": "None for ring data. Optional paid add-ons are priced per store, for example the Cardio Adaptability PowerPlug (USD 2.9/month) and, on the US store, the \"Ultrahuman Max\" bundle from USD 9.99/month (all premium PowerPlugs, Jade Pro, UltrahumanX and member pricing). CGM plans are also separate.",
+  "value": "None for ring data. Optional paid add-ons are priced per store, for example the Cardio Adaptability PowerPlug (USD 2.9/month) and, on the US store, the \"Ultrahuman Max\" bundle at USD 29.97 for 3 months or USD 99.99 a year (all premium PowerPlugs, Jade Pro, UltrahumanX and member pricing). CGM plans are also separate.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-20",
-  "note": "Ultrahuman Max was first recorded on 2026-10-21; researcher A reports it was not on the US Ring PRO buy page on 2026-10-11 (not independently confirmed).",
+  "recheck_by": "2026-11-29",
+  "note": "Ultrahuman Max was first recorded on 2026-10-21; researcher A reports it was not on the US Ring PRO buy page on 2026-10-11 (not independently confirmed). On 2026-10-30 the buy page no longer showed \"Starting at $9.99/mo\"; it offered Max at $29.97 for 3 months or $99.99 for 1 year, so the 3-month rate is unchanged at $9.99 a month.",
   "sources": [
    {
     "url": "https://www.ultrahuman.com/us/ring-pro/buy/",
     "type": "vendor_page",
     "quote": "Rest assured, there are no recurring subscription fees for accessing your data.",
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://www.ultrahuman.com/us/ring-pro/buy/",
     "type": "vendor_page",
-    "quote": "Ultrahuman Max. Everything, covered. Starting at $9.99/mo",
-    "retrieved": "2026-10-21"
+    "quote": "Ultrahuman Max. Everything, covered. From $29.97",
+    "retrieved": "2026-10-30"
+   },
+   {
+    "url": "https://www.ultrahuman.com/us/ring-pro/buy/",
+    "type": "vendor_page",
+    "quote": "3 months $ 29.97 1 year $ 99.99",
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://www.ultrahuman.com/us/powerplugs/",
     "type": "vendor_page",
-    "quote": "Cardio Adaptability $ 2.9/month",
-    "retrieved": "2026-10-21"
+    "quote": "Cardio Adaptability $2.9/month",
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://www.ultrahuman.com/llms.txt",
     "type": "vendor_page",
     "quote": "Ultrahuman rings are a one-time purchase with no recurring subscription for accessing health data.",
-    "retrieved": "2026-10-21"
+    "retrieved": "2026-10-30"
    }
   ]
  },
@@ -37955,7 +38098,7 @@
   "status": "stated",
   "value": "No separate device price; each membership includes the hardware (WHOOP 5.0 on One and Peak, WHOOP MG on Life)",
   "confidence": "Reported",
-  "recheck_by": "2026-10-24",
+  "recheck_by": "2026-11-29",
   "note": "The same capture lists 14+ day battery life for 5.0 and MG.",
   "sources": [
    {
@@ -37970,13 +38113,13 @@
     "url": "https://developer.whoop.com/",
     "type": "vendor_page",
     "quote": "Try WHOOP free for 1 month. Trial includes Peak membership, 5.0 hardware, Onyx SuperKnit band, battery pack, and more.",
-    "retrieved": "2026-10-10"
+    "retrieved": "2026-10-30"
    },
    {
     "url": "https://trackervs.com/pricing/whoop-pricing/",
     "type": "secondary",
     "quote": "WHOOP is the only major wearable where the hardware is free but the band stops working the second you stop paying.",
-    "retrieved": "2026-10-10"
+    "retrieved": "2026-10-30"
    }
   ]
  },
@@ -38810,13 +38953,13 @@
   "scope": "Irregular Heart Rhythm Notifications",
   "value": "Listed on the Life membership but not available in the US; WHOOP staff cited regulatory restrictions (May 2025), and openFDA shows no 510(k) for it",
   "confidence": "Reported",
-  "recheck_by": "2026-10-24",
+  "recheck_by": "2027-01-28",
   "sources": [
    {
     "url": "https://community.whoop.com/t/is-ihrn-available-in-the-us/477",
     "type": "secondary",
     "quote": "No, Irregular Heart Rhythm Notifications (IHRN) are not currently available in the United States due to regulatory restrictions.",
-    "retrieved": "2026-10-10",
+    "retrieved": "2026-10-30",
     "note": "Reply by a WHOOP staff account, 2025-05-09."
    },
    {
@@ -38830,8 +38973,8 @@
    {
     "url": "https://api.fda.gov/device/510k.json?search=applicant:whoop",
     "type": "regulator_db",
-    "retrieved": "2026-10-10",
-    "note": "One result, K243236 (ECG). No IHRN record."
+    "retrieved": "2026-10-30",
+    "note": "One result, K243236 (ECG). No IHRN record (same on 2026-10-30)."
    }
   ]
  },
@@ -38868,16 +39011,18 @@
   "kind": "wearable",
   "field": "research_program",
   "status": "stated",
-  "value": "Two research routes. (1) Advanced Research API: raw ScanWatch accelerometer and PPG for research institutions, under contract. (2) The Advanced Biomarkers API plan, marketed for clinical studies and AI research (cleared biomarkers, custom device provisioning, anonymization, AI training rights). Withings Health Solutions also offers study partnerships and a study request form.",
+  "value": "Two research routes. (1) Advanced Research API: raw ScanWatch accelerometer and PPG for research institutions, under contract; its public overview page was removed in late October 2026 and its current status is unclear (see program_status). (2) The Advanced Biomarkers API plan, marketed for clinical studies and AI research (cleared biomarkers, custom device provisioning, anonymization, AI training rights). Withings Health Solutions also offers study partnerships and a study request form.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
+  "recheck_by": "2026-11-29",
   "note": "The plans page is shown on the developer portal (developer-guide/v3/withings-solutions/withings-api-plans) as an iframe of the static page cited here.",
   "sources": [
    {
     "url": "https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis",
+    "fetch_url": "https://web.archive.org/web/20261013090128/https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis/",
     "type": "vendor_docs",
     "quote": "The Advanced Research API provides research institutions, universities, and healthcare innovators with direct access to raw sensor data from Withings devices",
-    "retrieved": "2026-10-10"
+    "retrieved": "2026-10-30",
+    "note": "Wayback capture of 2026-10-13. The live page has 302-redirected to the developer portal home since at least 2026-10-26 (checked 2026-10-30) and is no longer in the sitemap."
    },
    {
     "url": "https://static.withings.com/content/api/plans/plans.html",
@@ -38925,21 +39070,25 @@
   "kind": "wearable",
   "field": "program_eligibility",
   "status": "stated",
-  "value": "Aimed at research groups, universities and advanced health studies. Raw data access is limited to contracted partners. No further eligibility criteria are published.",
+  "value": "Aimed at research groups, universities and advanced health studies. Raw data access is limited to contracted partners. No further eligibility criteria are published. Both pages stating this were removed in late October 2026 (Wayback captures cited).",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
+  "recheck_by": "2026-11-29",
   "sources": [
    {
     "url": "https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis",
+    "fetch_url": "https://web.archive.org/web/20261013090128/https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis/",
     "type": "vendor_docs",
     "quote": "Designed for research groups, universities, and advanced health studies.",
-    "retrieved": "2026-10-10"
+    "retrieved": "2026-10-30",
+    "note": "Wayback capture of 2026-10-13. The live page has 302-redirected to the developer portal home since at least 2026-10-26 (checked 2026-10-30) and is no longer in the sitemap."
    },
    {
     "url": "https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data",
+    "fetch_url": "https://web.archive.org/web/20260521180015/https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data/",
     "type": "vendor_docs",
     "quote": "Access to raw data is a special feature available only for contracted partners.",
-    "retrieved": "2026-10-10"
+    "retrieved": "2026-10-30",
+    "note": "Wayback capture of 2026-05-21 (the live page was read directly on 2026-10-10). The live page has 302-redirected to the developer portal home since at least 2026-10-26 (checked 2026-10-30); openapi.yaml still links to it as the raw-data integration guide."
    }
   ]
  },
@@ -38949,28 +39098,32 @@
   "kind": "wearable",
   "field": "program_application",
   "status": "stated",
-  "value": "Contact Withings (Advanced Research API contact link, raw-data page contact, or the Health Solutions study request form) and sign a contract. No review criteria or turnaround time is published.",
+  "value": "Contact Withings and sign a contract. The Advanced Research API contact link and the raw-data page contact were on pages removed in late October 2026; the Health Solutions study request form is still live. No review criteria or turnaround time is published.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
+  "recheck_by": "2026-11-29",
   "note": "The Advanced Research API \"Click here\" link goes to a Withings Health Solutions partner contact form. No form was submitted.",
   "sources": [
    {
     "url": "https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis",
+    "fetch_url": "https://web.archive.org/web/20261013090128/https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis/",
     "type": "vendor_docs",
     "quote": "Interested in using our Advanced Research API? Click here.",
-    "retrieved": "2026-10-10"
+    "retrieved": "2026-10-30",
+    "note": "Wayback capture of 2026-10-13. The live page has 302-redirected to the developer portal home since at least 2026-10-26 (checked 2026-10-30) and is no longer in the sitemap."
    },
    {
     "url": "https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data",
+    "fetch_url": "https://web.archive.org/web/20260521180015/https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data/",
     "type": "vendor_docs",
     "quote": "If you are interested in using this feature, please contact us",
-    "retrieved": "2026-10-10"
+    "retrieved": "2026-10-30",
+    "note": "Wayback capture of 2026-05-21 (the live page was read directly on 2026-10-10). The live page has 302-redirected to the developer portal home since at least 2026-10-26 (checked 2026-10-30); openapi.yaml still links to it as the raw-data integration guide."
    },
    {
     "url": "https://www.withings.com/en-us/pages/research-request",
     "type": "vendor_page",
     "quote": "You want to conduct a new study with us? Fill this form right now and we will contact you to work with you.",
-    "retrieved": "2026-10-10"
+    "retrieved": "2026-10-30"
    }
   ]
  },
@@ -38979,23 +39132,37 @@
   "name": "Withings",
   "kind": "wearable",
   "field": "program_status",
-  "status": "stated",
-  "value": "Active as of 2026-10-10: the Advanced Research API overview and the raw-data page are live and current, ScanWatch only. No pause or closure notice found.",
-  "confidence": "Corroborated",
-  "recheck_by": "2026-11-09",
-  "note": "Corroborated rather than Verified because no page states the program is active; it is inferred from live documentation. The separate \"Advanced Research API Integration Guide\" (developer-guide/v3/integration-guide/advanced-research-api/advanced-research-api-overview) answered with a 302 redirect on 2026-10-10 and is not in the sitemap; it may have moved behind the Partner Hub login. Which ScanWatch generations (2, Light, Nova) are covered is not stated.",
+  "status": "unclear",
+  "value": "Unclear since late October 2026. Withings removed both public Advanced Research API pages (the research overview and the raw-data integration guide) between 2026-10-13 and 2026-10-26; each now redirects to the developer portal home, with no notice. The live API reference still lists the Rawdata v2 Activate, Deactivate and Get services as part of the Advanced research API, ScanWatch only, and the plans page still says \"Trusted by 100+ research labs\". Whether the program continues, moved behind the Partner Hub login, or closed is not stated.",
+  "confidence": "Unclear",
+  "recheck_by": "2026-11-29",
+  "note": "Changed 2026-10-30 from \"Active\" (Corroborated). The 2026-10-13 Wayback capture is the last copy of the overview found. The removal is not announced on the track-changes page. The separate \"Advanced Research API Integration Guide\" (integration-guide/advanced-research-api/advanced-research-api-overview) already redirected on 2026-10-10. Ask Withings whether the program is still offered (see unresolved questions).",
   "sources": [
    {
+    "url": "https://developer.withings.com/openapi.yaml",
+    "type": "vendor_docs",
+    "quote": "These APIs are compatible only with the Withings ScanWatch.",
+    "retrieved": "2026-10-30"
+   },
+   {
+    "url": "https://developer.withings.com/openapi.yaml",
+    "type": "vendor_docs",
+    "quote": "This service allows to activate Raw Data collection on a given device that is already set up, and set the date at which the raw data collection will stop (enddate).",
+    "retrieved": "2026-10-30"
+   },
+   {
     "url": "https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis",
+    "fetch_url": "https://web.archive.org/web/20261013090128/https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis/",
     "type": "vendor_docs",
     "quote": "Currently, the Advanced Research API is compatible exclusively with the Withings ScanWatch.",
-    "retrieved": "2026-10-10"
+    "retrieved": "2026-10-30",
+    "note": "Wayback capture of 2026-10-13. The live page has 302-redirected to the developer portal home since at least 2026-10-26 (checked 2026-10-30) and is no longer in the sitemap."
    },
    {
     "url": "https://static.withings.com/content/api/plans/plans.html",
     "type": "vendor_page",
     "quote": "Trusted by 100+ research labs.",
-    "retrieved": "2026-10-10"
+    "retrieved": "2026-10-30"
    }
   ]
  },
@@ -39191,7 +39358,7 @@
   "status": "not_public",
   "value": "No academic or research discount is published for devices, Withings+ or API plans.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
+  "recheck_by": "2026-11-29",
   "sources": [
    {
     "url": "https://static.withings.com/content/api/plans/plans.html",
@@ -39200,8 +39367,10 @@
    },
    {
     "url": "https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis",
+    "fetch_url": "https://web.archive.org/web/20261013090128/https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis/",
     "type": "vendor_docs",
-    "retrieved": "2026-10-10"
+    "retrieved": "2026-10-30",
+    "note": "Wayback capture of 2026-10-13. The live page has 302-redirected to the developer portal home since at least 2026-10-26 (checked 2026-10-30) and is no longer in the sitemap."
    },
    {
     "url": "https://www.withings.com/en-us/pages/research-clinical-trials",
@@ -39253,7 +39422,7 @@
   "status": "not_public",
   "value": "No minimum term, order or user count is published for Enterprise, Advanced Biomarkers or the research API.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
+  "recheck_by": "2026-11-29",
   "sources": [
    {
     "url": "https://static.withings.com/content/api/plans/plans.html",
@@ -39267,8 +39436,10 @@
    },
    {
     "url": "https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis",
+    "fetch_url": "https://web.archive.org/web/20261013090128/https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis/",
     "type": "vendor_docs",
-    "retrieved": "2026-10-10"
+    "retrieved": "2026-10-30",
+    "note": "Wayback capture of 2026-10-13. The live page has 302-redirected to the developer portal home since at least 2026-10-26 (checked 2026-10-30) and is no longer in the sitemap."
    },
    {
     "url": "https://www.withings.com/us/en/legal/api-terms-of-use",
@@ -39310,7 +39481,7 @@
   "scope": "Advanced Research API (ScanWatch, contracted partners)",
   "value": "Raw 3-axis accelerometer and PPG (three wavelengths, green, red and infrared, or green only depending on device) via the Rawdata v2 Activate, Deactivate and Get services. Raw mode disables every other watch feature and cuts ScanWatch battery life to 3 to 4 days on continuous capture.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
+  "recheck_by": "2026-11-29",
   "sources": [
    {
     "url": "https://developer.withings.com/openapi.yaml",
@@ -39320,15 +39491,19 @@
    },
    {
     "url": "https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data",
+    "fetch_url": "https://web.archive.org/web/20260521180015/https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data/",
     "type": "vendor_docs",
     "quote": "Raw data activation will put the Withings device in a specific mode that will disable all features except raw data capture.",
-    "retrieved": "2026-10-10"
+    "retrieved": "2026-10-30",
+    "note": "Wayback capture of 2026-05-21 (the live page was read directly on 2026-10-10). The live page has 302-redirected to the developer portal home since at least 2026-10-26 (checked 2026-10-30); openapi.yaml still links to it as the raw-data integration guide."
    },
    {
     "url": "https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data",
+    "fetch_url": "https://web.archive.org/web/20260521180015/https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data/",
     "type": "vendor_docs",
     "quote": "For Withings ScanWatch, continuous collection of raw data would reduce battery life to 3-4 days.",
-    "retrieved": "2026-10-10"
+    "retrieved": "2026-10-30",
+    "note": "Wayback capture of 2026-05-21 (the live page was read directly on 2026-10-10). The live page has 302-redirected to the developer portal home since at least 2026-10-26 (checked 2026-10-30); openapi.yaml still links to it as the raw-data integration guide."
    }
   ]
  },
@@ -39462,20 +39637,24 @@
   "scope": "ScanWatch raw accelerometer and PPG",
   "value": "About 25 Hz; the raw-data page gives 24.824 Hz for both sensors. The research overview says the accelerometer samples at 25 Hz by default, up to 100 Hz, but no documented API setting selects a higher rate.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
-  "note": "B recorded this as a conflict. The two pages agree on the default (25 Hz rounds 24.824 Hz); \"up to 100Hz\" describes the sensor, not a documented API option. Whether a contract can unlock 100 Hz needs Withings.",
+  "recheck_by": "2026-11-29",
+  "note": "Both pages were removed from the live site in late October 2026; quotes are checked against Wayback captures. B recorded this as a conflict. The two pages agree on the default (25 Hz rounds 24.824 Hz); \"up to 100Hz\" describes the sensor, not a documented API option. Whether a contract can unlock 100 Hz needs Withings.",
   "sources": [
    {
     "url": "https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data",
+    "fetch_url": "https://web.archive.org/web/20260521180015/https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data/",
     "type": "vendor_docs",
     "quote": "Both sensors sampling rate are about 24.824 Hz",
-    "retrieved": "2026-10-10"
+    "retrieved": "2026-10-30",
+    "note": "Wayback capture of 2026-05-21 (the live page was read directly on 2026-10-10). The live page has 302-redirected to the developer portal home since at least 2026-10-26 (checked 2026-10-30); openapi.yaml still links to it as the raw-data integration guide."
    },
    {
     "url": "https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis",
+    "fetch_url": "https://web.archive.org/web/20261013090128/https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis/",
     "type": "vendor_docs",
     "quote": "samples at 25Hz by default (up to 100Hz)",
-    "retrieved": "2026-10-10"
+    "retrieved": "2026-10-30",
+    "note": "Wayback capture of 2026-10-13. The live page has 302-redirected to the developer portal home since at least 2026-10-26 (checked 2026-10-30) and is no longer in the sitemap."
    }
   ]
  },

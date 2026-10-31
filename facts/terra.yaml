@@ -220,16 +220,16 @@ facts:
   - url: https://docs.tryterra.co/unified-api/integration-setup/understanding-terra-environments
     type: vendor_docs
     quote: Note that for testing & staging, there is a user limit of 50 users on each environment.
-    retrieved: '2026-10-21'
+    retrieved: '2026-10-30'
   - url: https://docs.tryterra.co/help-center/help-topics/data-api-sdk/account-config-environments-and-going-live/test-staging-user-limit
     type: vendor_docs
     quote: Production credentials are event-based and have no user cap (billed per user).
-    retrieved: '2026-10-21'
+    retrieved: '2026-10-30'
   - url: https://docs.tryterra.co/streaming-api/pricing
     type: vendor_docs
-    quote: The included 20,000 credits cover 20 active streaming users per month
-    retrieved: '2026-10-21'
-  recheck_by: '2026-11-20'
+    quote: The included 20,000 Streaming credits cover 20 active streaming users per month
+    retrieved: '2026-10-30'
+  recheck_by: '2026-11-29'
 - field: academic_vs_commercial
   status: stated
   value: 'No academic tier or academic terms; universities buy the same plans. Three terms matter for research use:
@@ -295,31 +295,33 @@ facts:
   value: 'Quick Start: $399/month billed annually or $499/month billed monthly, with 100,000 credits a month. An active
     authentication (one connected source for one end user) costs 200 credits a month; the first 400 events per
     authentication are free, then 0.5 credits per event. Credits beyond 100,000 cost $0.005 (to 1,000,000) and $0.003
-    above. Streaming API add-on $99/month (20,000 credits, about 20 active streaming users). Graph API from $50 for 2
+    above. Streaming API add-on $99/month, on its own or with any Terra plan (20,000 Streaming credits, about 20 active
+    streaming users). Graph API from $50 for 2
     graphs a month. Enterprise is custom.'
   confidence: Verified
   sources:
   - url: https://tryterra.co/pricing
     type: vendor_page
     quote: Subscriptions start from $399 per month billed annually, or $499 per month billed monthly.
-    retrieved: '2026-10-21'
+    retrieved: '2026-10-30'
   - url: https://tryterra.co/pricing
     type: vendor_page
-    quote: An active authentication is one connected data source for one end user, and costs 200 credits per month.
-    retrieved: '2026-10-21'
+    quote: An active authentication is one connected data source for one end user, and costs 200 Unified API credits per
+      month.
+    retrieved: '2026-10-30'
   - url: https://docs.tryterra.co/unified-api/pricing
     type: vendor_docs
     quote: 100,001 - 1,000,000 $0.005 1,000,001+ $0.003
-    retrieved: '2026-10-21'
+    retrieved: '2026-10-30'
   - url: https://docs.tryterra.co/unified-api/pricing
     type: vendor_docs
-    quote: The first 400 events per active authentication are free. 0.5 credits per event beyond this.
-    retrieved: '2026-10-21'
+    quote: The first 400 events per active authentication are free. 0.5 Unified API credits per event beyond this.
+    retrieved: '2026-10-30'
   - url: https://docs.tryterra.co/streaming-api/pricing
     type: vendor_docs
-    quote: The Streaming API is available as an add-on to any Terra base plan for $99/month .
-    retrieved: '2026-10-21'
-  recheck_by: '2026-11-20'
+    quote: The Streaming API is available for $99/month , on its own or alongside any Terra plan.
+    retrieved: '2026-10-30'
+  recheck_by: '2026-11-29'
   note: The 100,000 included credits cover about 500 connected sources a month before overage. Free development
     accounts exist but are for evaluation only (academic_vs_commercial).
 - field: minimum_commitment

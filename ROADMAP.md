@@ -1,6 +1,6 @@
 # Roadmap
 
-**Last updated: 2026-10-22.** What is done, what is running, and what comes next. Detail for each
+**Last updated: 2026-10-30.** What is done, what is running, and what comes next. Detail for each
 item lives in the file it links to; `shared/research-log.md` has the dated history.
 
 ## Waiting on Hassan
@@ -14,6 +14,7 @@ Everything Hassan needs to do by hand (browser checks, vendor contacts, decision
 | Add `www.ebi.ac.uk`, `pmc.ncbi.nlm.nih.gov` and `www.ncbi.nlm.nih.gov` to the scan routine's network allowlist so it can save PDFs | claude.ai environment settings |
 | Four scope decisions: Q109, Q114, Q122, Q123 | `shared/unresolved-questions.md`, "Needs a decision" |
 | Move the Wearable Data Atlas's public share link to the latest version | the Atlas page's Share menu |
+| Delete the merged scan branches (`claude/hopeful-fermat-*`, three of them) | GitHub branches page; `shared/manual-sweep.md`, Decisions |
 
 ## In progress
 
@@ -43,7 +44,7 @@ generated ones.
    **Pilot drafted 2026-10-22** for Verily, Zepp, Circular and Sensor Bio: saved as Gmail drafts and in
    `_private/vendor-sheets/` (not in git). Zepp and Sensor Bio have email addresses; Verily and Circular
    take contact forms, which Hassan submits. Generator: `tools/facts/confirm_sheet.py`.
-2. **Re-check schedule.** Weekly: the fact monitor (running, GitHub Actions, Mondays). Monthly:
+2. **Re-check schedule.** The 2026-10-26 weekly report was worked on 2026-10-30 (Garmin reopened, Withings research API pages removed, CARP and Avicenna sites rebuilt; `facts/_reports/2026-10-30-worked-*.md`). Weekly: the fact monitor (running, GitHub Actions, Mondays). Monthly:
    re-verify pricing, access and terms facts as their `recheck_by` dates fall due. Quarterly: an
    independent review like `shared/reviews/2026-10-10-independent-review.md`.
    Since 2026-10-22 the Monday monitor extends `recheck_by` itself for stated facts whose quotes all
@@ -51,7 +52,7 @@ generated ones.
    it cannot confirm: about 180 of the 763 facts due by 2026-11-10, plus any whose quotes moved.
 3. **Module 3 queue.** ~~Screen the queued candidates~~ done 2026-10-22: 16 screened, 7 profiled (72 profiles), 9 rejected; five free papers blocked by publisher bot checks wait for a PDF fetched by hand (list in `module-03-applied-studies/_scan-queue.md`). Zawada 2025 (the first Beiwe deployment mostly
    after the heartbeat change) profiled 2026-10-22 (73 profiles); heartbeat status not stated, Q115 still open. Vidal 2022, Nock 2026, Weingarden 2025 and the
-   two ALS addenda were already written in an earlier repair pass; this line was stale.
+   two ALS addenda were already written in an earlier repair pass; this line was stale. Hallihan 2026 (2026-10-24) and Ghazi 2026 (2026-10-30) profiled: 75 profiles.
 4. **Fitbit profile follow-up.** Done 2026-10-30: Google moved the turn-off to 2026-11-02, every file updated; RADAR-base released Google Health converters the same day. One more look after 2 November (410 responses, RADAR-base PR #92).
 5. **Module 4 scan proposal:** approve or drop `shared/weekly-literature-scan-module4-proposal.md`.
 6. **Module 5, measurement science by domain (proposed 2026-10-22; Sleep started 2026-10-22).** Structure built (`module-05-measurement-science/`, `shared/domain-tags.json`, `tools/domains/build_hubs.py`), M4-042 moved to Sleep. Sleep seeded 2026-10-22: 58 papers in 7 sections, 49 papers and profiles in Modules 1 to 4 tagged, hub generated; 28 free PDFs wait for a hand download; 5 free-to-read documents not stored for licence reasons (manual sweep #10). Cardiac seeded 2026-10-22: 68 papers in 7 sections, 62 papers and profiles tagged, hub generated; 17 free PDFs wait for a hand download (manual sweep #11). Physical activity and fitness seeded 2026-10-23: 66 papers in 7 sections, 66 papers and profiles tagged, hub generated; 23 free PDFs wait for a hand download (manual sweep #12). Mental health seeded 2026-10-23: 53 papers in 8 sections, 107 papers and profiles tagged, hub generated; 21 free PDFs wait for a hand download (manual sweep #13). All four planned domains seeded. Short evidence overviews written for all four domains 2026-10-23. Further domains or deeper write-ups only when asked. One module, like Module 4, with

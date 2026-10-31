@@ -120,13 +120,13 @@ facts:
   sources:
   - url: https://m-path.io/manual/knowledge-base/subscriptions-and-billing/
     type: vendor_docs
-    quote: Updated on October 6, 2026
-    retrieved: '2026-10-11'
+    quote: Updated on October 26, 2026
+    retrieved: '2026-10-30'
   - url: https://m-path.io/pricing/
     type: vendor_page
     quote: Choose a plan based on your count and support needs, with customizable add-ons to fit your goals.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-29'
 - field: developer_program_status
   status: stated
   value: No open developer program and no public API documentation. API access is a paid add-on (EUR 5,000),

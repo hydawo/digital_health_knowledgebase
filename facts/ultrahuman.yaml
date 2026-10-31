@@ -308,29 +308,34 @@ facts:
 - field: subscription_price
   status: stated
   value: None for ring data. Optional paid add-ons are priced per store, for example the Cardio Adaptability PowerPlug
-    (USD 2.9/month) and, on the US store, the "Ultrahuman Max" bundle from USD 9.99/month (all premium PowerPlugs, Jade
-    Pro, UltrahumanX and member pricing). CGM plans are also separate.
+    (USD 2.9/month) and, on the US store, the "Ultrahuman Max" bundle at USD 29.97 for 3 months or USD 99.99 a year (all
+    premium PowerPlugs, Jade Pro, UltrahumanX and member pricing). CGM plans are also separate.
   confidence: Verified
   sources:
   - url: https://www.ultrahuman.com/us/ring-pro/buy/
     type: vendor_page
     quote: Rest assured, there are no recurring subscription fees for accessing your data.
-    retrieved: '2026-10-21'
+    retrieved: '2026-10-30'
   - url: https://www.ultrahuman.com/us/ring-pro/buy/
     type: vendor_page
-    quote: Ultrahuman Max. Everything, covered. Starting at $9.99/mo
-    retrieved: '2026-10-21'
+    quote: Ultrahuman Max. Everything, covered. From $29.97
+    retrieved: '2026-10-30'
+  - url: https://www.ultrahuman.com/us/ring-pro/buy/
+    type: vendor_page
+    quote: 3 months $ 29.97 1 year $ 99.99
+    retrieved: '2026-10-30'
   - url: https://www.ultrahuman.com/us/powerplugs/
     type: vendor_page
-    quote: Cardio Adaptability $ 2.9/month
-    retrieved: '2026-10-21'
+    quote: Cardio Adaptability $2.9/month
+    retrieved: '2026-10-30'
   - url: https://www.ultrahuman.com/llms.txt
     type: vendor_page
     quote: Ultrahuman rings are a one-time purchase with no recurring subscription for accessing health data.
-    retrieved: '2026-10-21'
-  recheck_by: '2026-11-20'
+    retrieved: '2026-10-30'
+  recheck_by: '2026-11-29'
   note: Ultrahuman Max was first recorded on 2026-10-21; researcher A reports it was not on the US Ring PRO buy page on
-    2026-10-11 (not independently confirmed).
+    2026-10-11 (not independently confirmed). On 2026-10-30 the buy page no longer showed "Starting at $9.99/mo";
+    it offered Max at $29.97 for 3 months or $99.99 for 1 year, so the 3-month rate is unchanged at $9.99 a month.
 - field: academic_pricing
   status: stated
   value: Heroes special pricing on Ring PRO covers scientists and researchers (plus healthcare workers, athletes,

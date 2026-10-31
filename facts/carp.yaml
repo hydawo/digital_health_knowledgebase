@@ -11,13 +11,13 @@ watch:
   role: terms
 - url: https://carp.dk/three-ways-to-use-carp/
   role: research_program
-- url: https://docs.carp.dk/backends/where-data-goes/caws/
+- url: https://docs.carp.dk/docs/data-storage/caws
   role: developer_program
-- url: https://docs.carp.dk/start/run-your-study/go-live/
+- url: https://docs.carp.dk/docs/introduction
   role: docs
-- url: https://docs.carp.dk/carp-mobile-sensing/
+- url: https://docs.carp.dk/docs/mobile-sensing
   role: docs
-- url: https://docs.carp.dk/carp-mobile-sensing/sampling-packages/available-packages/
+- url: https://docs.carp.dk/docs/mobile-sensing/measure-types
   role: docs
 - url: https://carp.dk/new-carp-studies-app/
   role: changelog
@@ -80,43 +80,54 @@ facts:
     type: vendor_page
     quote: "Studies where DTU Health Tech is a research partner can use the CARP-hosted service at DTU"
     retrieved: 2026-10-11
-  - url: https://docs.carp.dk/backends/where-data-goes/caws/
+  - url: https://docs.carp.dk/docs/data-storage/caws
     type: vendor_docs
-    quote: "Whoever you are, if you’re planning a good study, contact us on Discord or at support@carp.dk and we’ll find a way to support it."
-    retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+    quote: "DTU researchers can use the CAWS server hosted by DTU Health Tech."
+    retrieved: 2026-10-30
+  - url: https://docs.carp.dk/docs/data-storage/caws
+    type: vendor_docs
+    quote: "Anyone planning a study can contact the CARP team on Discord or at support@carp.dk ; the team will find a way to support it."
+    retrieved: 2026-10-30
+  recheck_by: 2026-11-29
   note: >-
     Judged 2026-10-11, not a conflict. The hosting page is the service's terms (modified
     2026-08-23) and the 2026-09-28 app post repeats the partner rule. The docs line is an invitation
     to get in touch, listed as its own route between "DTU researchers can use the CAWS server hosted
-    by DTU Health Tech" and "Run your own copy"; it does not say outsiders get the DTU instance on
-    other terms. The older CAWS page (carp.dk/caws) says "Researchers affiliated with DTU can use
+    by DTU Health Tech" and "Run your own instance"; it does not say outsiders get the DTU instance on
+    other terms. Re-read 2026-10-30 at the reorganised docs page (docs/data-storage/caws), same
+    structure, new wording. The older CAWS page (carp.dk/caws) says "Researchers affiliated with DTU can use
     this service", which is narrower wording of the same rule.
 - field: program_application
   status: stated
   value: >-
-    No form. Email info@carp.dk or support@carp.dk, or ask on Discord. Researcher portal accounts are
-    by invitation; a test-server account comes first, production when ready. The hosted service
-    charges a one-time study setup fee that includes a data disclosure agreement.
+    No form. Email info@carp.dk or support@carp.dk, or ask on Discord. The CAWS team creates the
+    study, invites a test participant or turns on self sign-up, and registers a custom app for
+    sign-in; a test server (dev.carp.dk) is used while testing. The hosted service charges a
+    one-time study setup fee that includes a data disclosure agreement.
   confidence: Verified
   sources:
   - url: https://carp.dk/three-ways-to-use-carp/
     type: vendor_page
     quote: "Reach out to the CARP Team at info@carp.dk to set up an account in CARP."
-    retrieved: 2026-10-11
-  - url: https://docs.carp.dk/start/run-your-study/go-live/
+    retrieved: 2026-10-30
+  - url: https://docs.carp.dk/docs/data-storage/caws
     type: vendor_docs
-    quote: "Researcher accounts are by invitation."
-    retrieved: 2026-10-11
-  - url: https://docs.carp.dk/start/run-your-study/go-live/
+    quote: "Anyone planning a study can contact the CARP team on Discord or at support@carp.dk"
+    retrieved: 2026-10-30
+  - url: https://docs.carp.dk/docs/data-storage/caws
     type: vendor_docs
-    quote: "You get an account on a test server first, and on production when you are ready."
-    retrieved: 2026-10-11
-  - url: https://docs.carp.dk/start/run-your-study/go-live/
+    quote: "register your app for sign-in."
+    retrieved: 2026-10-30
+  - url: https://docs.carp.dk/docs/data-storage/caws
     type: vendor_docs
-    quote: "Ask the CARP team on Discord or at support@carp.dk"
-    retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+    quote: "use 'dev.carp.dk' while testing."
+    retrieved: 2026-10-30
+  recheck_by: 2026-11-29
+  note: >-
+    The docs page cited on 2026-10-11 (start/run-your-study/go-live) was 404 by 2026-10-26 after
+    the docs site was rebuilt. It said researcher accounts are by invitation and that a test-server
+    account comes before production. The rebuilt docs no longer state the invitation rule, so it is
+    dropped from the value; the test server survives only as dev.carp.dk in a code sample.
 - field: program_status
   status: stated
   value: >-
@@ -146,15 +157,19 @@ facts:
     a clientId and redirect URI.
   confidence: Verified
   sources:
-  - url: https://docs.carp.dk/
+  - url: https://docs.carp.dk/docs/introduction
     type: vendor_docs
-    quote: "Open source MIT license. Read the code, change it, run it yourself."
-    retrieved: 2026-10-11
-  - url: https://docs.carp.dk/backends/where-data-goes/caws/
+    quote: "CARP (Copenhagen Research Platform) is a free, open-source toolkit for building mobile apps that collect data for research and health studies."
+    retrieved: 2026-10-30
+  - url: https://docs.carp.dk/docs/mobile-sensing/building-sampling-packages/testing-and-publishing
     type: vendor_docs
-    quote: "They’ll give you a clientId and a redirectURI (plus an anonymousRedirectURI if you use study codes) to use below"
-    retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+    quote: "the CARP packages use the MIT license"
+    retrieved: 2026-10-30
+  - url: https://docs.carp.dk/docs/data-storage/caws
+    type: vendor_docs
+    quote: "You get a clientId and a redirectURI (plus an anonymousRedirectURI if you use study codes) to use below."
+    retrieved: 2026-10-30
+  recheck_by: 2026-11-29
 - field: user_cap
   status: stated
   value: >-
@@ -167,10 +182,10 @@ facts:
     type: vendor_page
     quote: "One protocol serves any number of participants."
     retrieved: 2026-10-11
-  - url: https://docs.carp.dk/backends/where-data-goes/caws/
+  - url: https://docs.carp.dk/docs/data-storage/caws
     type: vendor_docs
     quote: "The researcher sets a maximum number of participants, and can turn sign-up off at any time"
-    retrieved: 2026-10-11
+    retrieved: 2026-10-30
   recheck_by: 2026-11-09
 - field: academic_vs_commercial
   status: stated
@@ -325,18 +340,18 @@ facts:
     Dexcom cloud data, which CARP describes as for future studies.
   confidence: Verified
   sources:
-  - url: https://docs.carp.dk/carp-mobile-sensing/sampling-packages/available-packages/
+  - url: https://docs.carp.dk/docs/mobile-sensing/measure-types
     type: vendor_docs
-    quote: "Rate of change in velocity in x, y, z - including gravity"
-    retrieved: 2026-10-11
-  - url: https://docs.carp.dk/carp-mobile-sensing/sampling-packages/available-packages/
+    quote: "Rate of change in velocity in x, y, z, including gravity"
+    retrieved: 2026-10-30
+  - url: https://docs.carp.dk/docs/mobile-sensing/measure-types
     type: vendor_docs
-    quote: "Inertial measurement (accelerometer, gyroscope, magnetometer) and heart rate (ECG, PPI, PPG, HR) data from the Polar devices"
-    retrieved: 2026-10-11
-  - url: https://docs.carp.dk/carp-mobile-sensing/sampling-packages/available-packages/
+    quote: "Inertial measurement (accelerometer, gyroscope, magnetometer) and heart rate (ECG, PPI, PPG, HR) data from Polar devices"
+    retrieved: 2026-10-30
+  - url: https://docs.carp.dk/docs/mobile-sensing/measure-types
     type: vendor_docs
-    quote: "Log of text messages (sms) in/out"
-    retrieved: 2026-10-11
+    quote: "Log of incoming and outgoing text messages (SMS)"
+    retrieved: 2026-10-30
   - url: https://carp.dk/new-carp-studies-app/
     type: vendor_page
     quote: "Heart rate and ECG from Polar and Movesense sensors."
@@ -358,7 +373,11 @@ facts:
     quote: "Through the CARP Gardener framework, future studies will be able to collect health and activity data from"
     retrieved: 2026-10-11
   recheck_by: 2026-11-09
-  note: The available-packages table marks ambient light, screen events, Wi-Fi, app lists, app usage, call logs and SMS as Android only, and the AWARE Apple Watch package as iOS/watchOS only.
+  note: >-
+    The measure-types table (re-read 2026-10-30, docs/mobile-sensing/measure-types) marks ambient
+    light, screen events, free memory, installed apps, app usage, call logs and SMS as Android only,
+    Bluetooth scans as foreground only on iOS, and the AWARE Apple Watch package as iOS/watchOS only.
+    Wi-Fi is now listed for both Android and iOS; the 2026-10-11 table had it as Android only.
 - field: derived_metrics
   status: stated
   value: >-
@@ -370,14 +389,14 @@ facts:
     clinical digital biomarkers is published.
   confidence: Verified
   sources:
-  - url: https://docs.carp.dk/carp-mobile-sensing/sampling-packages/available-packages/
+  - url: https://docs.carp.dk/docs/mobile-sensing/measure-types
     type: vendor_docs
-    quote: "Track location and calculates mobility features based on the mobility_features plugin"
-    retrieved: 2026-10-11
-  - url: https://docs.carp.dk/carp-mobile-sensing/sampling-packages/available-packages/
+    quote: "Tracks location and calculates mobility features based on the mobility_features plugin"
+    retrieved: 2026-10-30
+  - url: https://docs.carp.dk/docs/mobile-sensing/measure-types
     type: vendor_docs
-    quote: "Acceleration events over a specific sampling period and calculates higher-order features"
-    retrieved: 2026-10-11
+    quote: "Acceleration events over a specific sampling period, with calculated higher-order features"
+    retrieved: 2026-10-30
   - url: https://carp.dk/new-carp-studies-app/
     type: vendor_page
     quote: "Weekly cards show steps, heart rate, sleep, mobility and task progress."
@@ -405,18 +424,18 @@ facts:
     type: repository
     quote: "IntervalSamplingConfiguration(interval: const Duration(milliseconds: 200)),"
     retrieved: 2026-10-11
-  - url: https://docs.carp.dk/carp-mobile-sensing/domain/measures-and-data/
+  - url: https://docs.carp.dk/docs/mobile-sensing/domain-model
     type: vendor_docs
-    quote: "the default configuration of the light measure is 10 seconds sampling every 5 minutes"
-    retrieved: 2026-10-11
-  - url: https://docs.carp.dk/carp-mobile-sensing/sampling-packages/available-packages/
+    quote: "the default configuration of the light measure is 10 seconds of sampling every 5 minutes"
+    retrieved: 2026-10-30
+  - url: https://docs.carp.dk/docs/mobile-sensing/measure-types
     type: vendor_docs
-    quote: "A heartbeat measurement every 15 minutes (default) telling if the app is running"
-    retrieved: 2026-10-11
-  - url: https://docs.carp.dk/backends/where-data-goes/caws/
+    quote: "A heartbeat measurement every 15 minutes (default) telling whether the app is running"
+    retrieved: 2026-10-30
+  - url: https://docs.carp.dk/docs/data-storage/caws
     type: vendor_docs
     quote: "uploads it automatically, every 10 minutes by default"
-    retrieved: 2026-10-11
+    retrieved: 2026-10-30
   - url: https://carp.dk/coverage-analysis-on-android-14-and-ios-18/
     type: vendor_page
     quote: "But if there is no user interaction, no data is collected, such as during the 2nd night"
@@ -426,22 +445,40 @@ facts:
 - field: history_depth
   status: stated
   value: >-
-    Prospective collection from enrolment. Probes that read stored phone data (app usage, calls and
-    texts) look back one day by default, configurable. Apple Health and Health Connect measures read
-    back to the last successful sample, and only while the app is in the foreground with the phone
+    Prospective collection from enrolment. Probes that read stored phone data (app usage, call log,
+    calendar) look back one day on their first run by default, configurable, and later runs continue
+    from the last run. Apple Health and Health Connect measures also read back one day on the first
+    run by default (getHealthMeasure() sets 30 days), then continue from the last data read. Health
+    data is read only while the app is in the foreground, and on iOS only while the phone is
     unlocked.
   confidence: Verified
   sources:
-  - url: https://docs.carp.dk/api/carp_mobile_sensing/domain/historicsamplingconfiguration/
+  - url: https://docs.carp.dk/docs/mobile-sensing/building-sampling-packages/sampling-configurations
     type: vendor_docs
-    quote: "How far back in time to collect data. Default is one day."
-    retrieved: 2026-10-11
-  - url: https://docs.carp.dk/sampling-packages/health/configure/
+    quote: "Reading stored data back from now, such as app usage or call logs."
+    retrieved: 2026-10-30
+  - url: https://docs.carp.dk/docs/sampling-packages/apps/app-usage
     type: vendor_docs
-    quote: "Health data can only be collected when the app is in the foreground and the phone is unlocked."
-    retrieved: 2026-10-11
-  recheck_by: 2026-11-09
-  note: No limit is documented on how far back the first Health read goes.
+    quote: "Without a configuration on the measure, the package default applies, with a past of 1 day."
+    retrieved: 2026-10-30
+  - url: https://docs.carp.dk/docs/sampling-packages/communication/calls-and-messages
+    type: vendor_docs
+    quote: "past only matters for the first run. Later runs start at lastTime , so each run continues where the previous one ended."
+    retrieved: 2026-10-30
+  - url: https://docs.carp.dk/docs/sampling-packages/health/collecting-data
+    type: vendor_docs
+    quote: "getHealthMeasure() sets 30 days."
+    retrieved: 2026-10-30
+  - url: https://docs.carp.dk/docs/sampling-packages/health/collecting-data
+    type: vendor_docs
+    quote: "The package reads health data only while the app is in the foreground, and on iOS only while the phone is unlocked."
+    retrieved: 2026-10-30
+  recheck_by: 2026-11-29
+  note: >-
+    No upper limit is documented on how far back a first Health read may be configured to go. The
+    text message log ignores the time window and returns every message on each run. The 2026-10-11
+    docs said Health reads needed the phone unlocked on both platforms; the rebuilt docs
+    (2026-10-30) limit the unlocked condition to iOS.
 - field: export_routes
   status: stated
   value: >-
@@ -455,10 +492,6 @@ facts:
     type: vendor_page
     quote: "download the collected data in JSON format for offline analysis in R, Python, or your statistical tool of choice"
     retrieved: 2026-10-11
-  - url: https://docs.carp.dk/start/run-your-study/go-live/
-    type: vendor_docs
-    quote: "Download it in the Portal under Export , or with carp-cli"
-    retrieved: 2026-10-11
   - url: https://github.com/carp-dk/carp-cli
     fetch_url: https://raw.githubusercontent.com/carp-dk/carp-cli/main/README.md
     type: repository
@@ -468,10 +501,14 @@ facts:
     type: vendor_page
     quote: "you can write your own custom data manager and point CAMS to use any server endpoint you control"
     retrieved: 2026-10-11
-  - url: https://docs.carp.dk/carp-mobile-sensing/domain/data-endpoints-and-privacy/
+  - url: https://docs.carp.dk/docs/mobile-sensing/building-sampling-packages/privacy-and-formats
     type: vendor_docs
-    quote: "Transformer schemas (CARP, OMH, FHIR) and PrivacySchema"
-    retrieved: 2026-10-11
+    quote: "Open mHealth (OMH) transformers that packages add"
+    retrieved: 2026-10-30
+  - url: https://docs.carp.dk/docs/mobile-sensing/building-sampling-packages/privacy-and-formats
+    type: vendor_docs
+    quote: "Fast Healthcare Interoperability Resources (FHIR) transformers that packages add"
+    retrieved: 2026-10-30
   recheck_by: 2026-11-09
   note: An open bug (carp.sensing-flutter issue 623, read only) reports that one rejected measurement can make an upload batch retry forever; a fix is proposed in PR 624.
 - field: rate_limits
@@ -563,14 +600,14 @@ facts:
     type: repository
     quote: "This is an old endpoint which is deprecated. Data should be uploaded using \"data streams\" as outlined above."
     retrieved: 2026-10-11
-  - url: https://docs.carp.dk/carp-mobile-sensing/infrastructure/data-managers/
+  - url: https://docs.carp.dk/docs/mobile-sensing/data-managers
     type: vendor_docs
     quote: "The Firebase data manager has not yet been updated to API level 2.x."
-    retrieved: 2026-10-11
-  - url: https://docs.carp.dk/carp-mobile-sensing/domain/measures-and-data/
+    retrieved: 2026-10-30
+  - url: https://docs.carp.dk/docs/mobile-sensing/measure-types
     type: vendor_docs
-    quote: "This will, however, be changed to carp.dk in the future."
-    retrieved: 2026-10-11
+    quote: "It will be changed to carp.dk in the future."
+    retrieved: 2026-10-30
   - url: https://github.com/carp-dk/carp-health-flutter
     fetch_url: https://raw.githubusercontent.com/carp-dk/carp-health-flutter/main/README.md
     type: repository
@@ -643,8 +680,7 @@ facts:
     CARP Studies is free on the Apple App Store as an unlisted app, reachable only by link (id
     1569798025, seller Danmarks Tekniske Universitet, iPhone, iOS 15.0 or later, version 5.1.0
     released 2026-10-06, first released 2025-03-21) and on Google Play (dk.cachet.carp_study_app).
-    Version 5, rebuilt from the ground up, was announced for Android and iOS on 2026-09-28. In
-    mainland China iOS users install through TestFlight.
+    Version 5, rebuilt from the ground up, was announced for Android and iOS on 2026-09-28.
   confidence: Verified
   sources:
   - url: https://carp.dk/carp-studies-app-published-in-the-apple-app-store/
@@ -663,12 +699,8 @@ facts:
     type: app_store
     quote: "This app is used for health research studies in the Copenhagen Research Platform (CARP) at the Technical University of Denmark."
     retrieved: 2026-10-11
-  - url: https://carp.dk/join/
-    type: vendor_page
-    quote: "The iOS app is not published in the China App Store, so iOS users there install through TestFlight."
-    retrieved: 2026-10-11
   recheck_by: 2026-11-09
-  note: Version, seller and dates from the iTunes lookup API (id 1569798025, DK storefront) on 2026-10-11. The App Store lists English and Danish; CARP's v5 post says English, Danish and Spanish. Self-hosters and custom-app builders publish their own apps.
+  note: Version, seller and dates from the iTunes lookup API (id 1569798025, DK storefront) on 2026-10-11. The App Store lists English and Danish; CARP's v5 post says English, Danish and Spanish. Self-hosters and custom-app builders publish their own apps. Until October 2026 carp.dk/join said iOS users in mainland China install through TestFlight; that page was 404 on 2026-10-26 and 2026-10-30 and no current CARP page says this, so the claim was dropped from the value.
 # ---------------- Compliance ----------------
 - field: baa
   status: not_public

@@ -127,7 +127,7 @@ LifeData, Evidation; facts checked 2026-10-11).
    most; mindLAMP's documentation describes HIPAA Security Rule safeguards (Corroborated). The Hyve
    states ISO 27001 for itself, with a scope that does not name RADAR-base (Corroborated, added
    2026-10-11); LifeData's Data Privacy Framework certification is confirmed on the Commerce registry
-   (self-assessed, re-certification under review); CARP documents GDPR controller roles; Beiwe
+   (self-assessed; status Active on all three frameworks, 2026-10-30); CARP documents GDPR controller roles; Beiwe
    documents its encryption design. (Corrected 2026-10-10: the module previously called Avicenna's statement an
    independently audited certificate and said MetricWire had no compliance documentation.)
 7. **mindLAMP's licensing matters for self-hosters**: the server, apps, activities and worker carry

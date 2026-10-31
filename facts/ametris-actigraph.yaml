@@ -666,24 +666,24 @@ facts:
 - field: deprecations
   scope: ActiLife
   status: stated
-  value: The ActiLife page calls ActiLife 7 "legacy" software, yet it is still updated (v7.3.2.0 released
-    2026-05-08) and is the only version that handles LEAP data; ActiLife 6 still works with GT3X and GT9X devices.
+  value: The ActiLife page calls ActiLife 7 "legacy" software, yet it is still updated (v7.3.3.0 released
+    2026-08-03) and is the only version that handles LEAP data; ActiLife 6 still works with GT3X and GT9X devices.
     No end-of-support date is published.
   confidence: Verified
   sources:
   - url: https://academic.ametris.com/actilife
     type: vendor_page
     quote: ActiLife 7 is Ametris' legacy data processing software
-    retrieved: 2026-10-11
+    retrieved: 2026-10-30
   - url: https://ametris.com/downloads
     type: vendor_page
-    quote: "ActiLife® Current Release: v7.3.2.0 Release Date: May 8, 2026"
-    retrieved: 2026-10-11
+    quote: "ActiLife® Current Release: v7.3.3.0 Release Date: August 3, 2026"
+    retrieved: 2026-10-30
   - url: https://blog.theactigraph.com/blog/faq-actilife7-upgrade
     type: vendor_page
     quote: "Yes, ActiLife 6 can still be used with GT3X and GT9X devices."
-    retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+    retrieved: 2026-10-30
+  recheck_by: 2026-11-29
 - field: deprecations
   scope: ActiGraph wGT3X-BT and GT9X Link
   status: stated

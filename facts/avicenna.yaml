@@ -14,6 +14,10 @@ watch:
   role: pricing
 - url: https://avicennaresearch.com/legal
   role: terms
+- url: https://avicennaresearch.com/legal/privacy-policy/
+  role: terms
+- url: https://avicennaresearch.com/legal/terms-of-use/
+  role: terms
 - url: https://forum.avicennaresearch.com/t/security-and-compliance/1267
   role: trust
 - url: https://ico.org.uk/ESDWebPages/Entry/ZC009135
@@ -62,7 +66,7 @@ facts:
   value: Open self sign-up for a researcher account (name, organization, email, password; email must be verified before
     a study can be created). The privacy policy defines a Researcher as someone affiliated with an academic institution,
     and the terms require account holders to be at least 18. Whether non-academic customers are excluded is not stated,
-    and the homepage markets clinical-trial use.
+    and the homepage markets clinical as well as behavioral and real-world studies.
   confidence: Corroborated
   sources:
   - url: https://forum.avicennaresearch.com/t/step-1-create-a-researcher-account/1160
@@ -75,22 +79,24 @@ facts:
     quote: given that your email address is not verified yet, you are not allowed to create a study or modify the
       features of the dashboard
     retrieved: '2026-10-11'
-  - url: https://avicennaresearch.com/legal
+  - url: https://avicennaresearch.com/legal/privacy-policy/
     type: vendor_legal
     quote: is a researcher affiliated with an academic institution who uses Avicenna Research to design and conduct
       scientific studies
-    retrieved: '2026-10-11'
-  - url: https://avicennaresearch.com/legal
+    retrieved: '2026-10-30'
+  - url: https://avicennaresearch.com/legal/terms-of-use/
     type: vendor_legal
     quote: declares that he or she is at least eighteen (18) years of age
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-30'
   - url: https://avicennaresearch.com/
     type: vendor_page
-    quote: Patient-centric Clinical Trial and Health Research Software Platform
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+    quote: Design and run clinical, behavioral, and real-world studies
+    retrieved: '2026-10-30'
+  recheck_by: '2026-11-29'
   note: Corroborated rather than Verified because the published sign-up flow and the privacy-policy definition point
-    different ways on whether academic affiliation is required.
+    different ways on whether academic affiliation is required. The site was redesigned by 2026-10-26; the old
+    avicennaresearch.com/legal page is now an index, and the policy texts moved to /legal/privacy-policy/ and
+    /legal/terms-of-use/ (re-read 2026-10-30).
 - field: program_application
   status: stated
   value: Self-serve sign-up creates Trial studies. Moving a study from Trial to Licensed is done by emailing support
@@ -178,7 +184,7 @@ facts:
   recheck_by: '2026-11-10'
   note: The only published distinction is Trial (free, test only) versus Licensed. No academic versus commercial terms
     or price difference is published; /pricing returns 404. The privacy policy defines researchers as academically
-    affiliated while the homepage markets clinical-trial use.
+    affiliated while the homepage markets clinical studies.
 # ---------------- Pricing ----------------
 - field: device_price
   status: not_applicable
@@ -226,12 +232,12 @@ facts:
     type: vendor_docs
     quote: SMS notifications are not enabled by default
     retrieved: '2026-10-11'
-  - url: https://avicennaresearch.com/legal
+  - url: https://avicennaresearch.com/legal/terms-of-use/
     type: vendor_legal
     quote: You shall pay all applicable fees (including any overage fees), as described on the Specific Conditions
       in connection with such Services selected by you.
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+    retrieved: '2026-10-30'
+  recheck_by: '2026-11-29'
 - field: minimum_commitment
   status: not_public
   confidence: Verified
@@ -260,16 +266,16 @@ facts:
     quote: To upgrade your study from Trial to Licensed, you can contact us directly via email at support@avicennaresearch.com
       and send your study ID.
     retrieved: '2026-10-11'
-  - url: https://avicennaresearch.com/legal
+  - url: https://avicennaresearch.com/legal/terms-of-use/
     type: vendor_legal
     quote: for Services billed on per-study basis, the old pricing will apply until the end of the currently defined
       studies.
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-30'
   - url: https://avicennaresearch.com/pricing
     type: vendor_page
     retrieved: '2026-10-11'
     expect_absent: true
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-29'
 - field: hosting_price
   status: not_public
   confidence: Verified
@@ -319,25 +325,27 @@ facts:
     type: vendor_page
     quote: which collects hourly Screen Time–based usage summaries
     retrieved: '2026-10-11'
-  - url: https://avicennaresearch.com/features/sensor-based-data
+  - url: https://avicennaresearch.com/features/sensor-data/
     type: vendor_page
-    quote: You can access the raw or processed data in real-time
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
-  note: The full list of data-source IDs is on the Raw Data page. A separate iOS keyboard app, Avicenna Keyboard,
+    quote: Capture acceleration, rotation, gravity, and related motion data
+    retrieved: '2026-10-30'
+  recheck_by: '2026-11-29'
+  note: The full list of data-source IDs is on the Raw Data page. The old /features/sensor-based-data page now
+    redirects to /features/sensor-data/, which no longer says data can be accessed raw or processed in real time
+    (re-read 2026-10-30). A separate iOS keyboard app, Avicenna Keyboard,
     collects keystroke data (App Store, released 2025-12-16).
 - field: derived_metrics
   status: stated
-  value: Phone-derived step count and activity type; vendor-computed wearable metrics pulled from cloud accounts (Garmin,
+  value: Phone-derived step counts and other activity information; vendor-computed wearable metrics pulled from cloud accounts (Garmin,
     Fitbit, Oura readiness and sleep, WHOOP recovery, Polar sleep). An Analysis page for data quality, engagement and
     retention (added 2026-03). Kibana and Vega charts in the dashboard. Whether Avicenna still computes GPS mobility
     features is unclear (see note).
   confidence: Verified
   sources:
-  - url: https://avicennaresearch.com/features/sensor-based-data
+  - url: https://avicennaresearch.com/features/sensor-data/
     type: vendor_page
-    quote: from raw motion sensors like accelerometer, to processed data such as step count and activity type
-    retrieved: '2026-10-11'
+    quote: Collect step counts and activity-related information
+    retrieved: '2026-10-30'
   - url: https://forum.avicennaresearch.com/t/raw-data/1241
     type: vendor_docs
     quote: 124 Oura Daily Readiness 125 Oura Daily Sleep
@@ -350,7 +358,7 @@ facts:
     type: vendor_page
     quote: We introduced the Analysis page in the researcher dashboard
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-29'
   note: A vendor forum reference (forum.avicennaresearch.com/t/1460, dated 2025-12-16, read 2026-10-11) described GPS
     mobility features computed in a nightly batch (daily distance, radius of gyration, location entropy, time at home).
     By 2026-10-19 that topic returned 404 and it is absent from forum search (2026-10-21). The security page says
@@ -491,16 +499,16 @@ facts:
     a year. Export files are deleted after 7 days. Participants can delete all or part of their data at any time.
   confidence: Verified
   sources:
-  - url: https://avicennaresearch.com/legal
+  - url: https://avicennaresearch.com/legal/terms-of-use/
     type: vendor_legal
     quote: Avicenna Research will retain your data for a minimum period of two (2) years following contract termination,
       in accordance with our Data Management Policy.
-    retrieved: '2026-10-11'
-  - url: https://avicennaresearch.com/legal
+    retrieved: '2026-10-30'
+  - url: https://avicennaresearch.com/legal/privacy-policy/
     type: vendor_legal
     quote: As a Participant, you can delete all or part of the data you have provided for any study conducted using
       Avicenna Research, at any time
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-30'
   - url: https://forum.avicennaresearch.com/t/frequently-asked-questions/5
     type: vendor_docs
     quote: In the trial version, the collected study data is wiped monthly, and the study will be deleted after one
@@ -510,7 +518,7 @@ facts:
     type: vendor_docs
     quote: Each export is available for download for up to 7 days
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-29'
 - field: ai_training_terms
   status: not_public
   confidence: Verified
@@ -561,34 +569,36 @@ facts:
     software providers; the company GitHub organisation holds only an EMA software comparison list, no platform code.
   confidence: Verified
   sources:
-  - url: https://avicennaresearch.com/legal
+  - url: https://avicennaresearch.com/legal/terms-of-use/
     type: vendor_legal
     quote: All the software utilized for the use and development of the Services is the property of Avicenna Research
       or its software providers
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-30'
   - url: https://github.com/avicennaresearch/ema_software_map
     type: repository
     quote: This repository contains list of all EMA softwares and their capabilities.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-29'
 - field: hosting_options
   status: stated
   value: 'Default: managed cloud service run by Avicenna. White-label option: rebranded apps, with installation ranging
-    from in-house data storage to a full on-premises installation of the (closed-source) Avicenna services on the
-    customer''s infrastructure, data routed to the customer''s own servers. On-premise deployments are in use: a product
+    from in-house data storage (the database kept in the customer''s own infrastructure, the only arrangement that gives
+    researchers direct database access) to a full on-premises installation of the (closed-source) Avicenna services
+    on the customer''s infrastructure. On-premise deployments are in use: a product
     card plans per-organisation login pages for on-premise subdomains, and the 2026-09-22 Garmin SDK post routes data
     to "an institution''s own Avicenna infrastructure where applicable". Terms and prices are not published.'
   confidence: Verified
   sources:
   - url: https://avicennaresearch.com/features/white-label-solutions
     type: vendor_page
-    quote: Avicenna offers different installation alternatives, from eventual in-house storage to full on-premises
-      installation.
-    retrieved: '2026-10-11'
+    quote: Choose the installation model that fits your organization's data-hosting, security, and regulatory needs,
+      from in-house storage to a fully on-premises deployment.
+    retrieved: '2026-10-30'
   - url: https://avicennaresearch.com/features/white-label-solutions
     type: vendor_page
-    quote: route all data from participants straight to your own servers
-    retrieved: '2026-10-11'
+    quote: Keep the database in your own infrastructure, the only arrangement in which researchers get direct database
+      access
+    retrieved: '2026-10-30'
   - url: https://forum.avicennaresearch.com/t/1475
     type: vendor_page
     quote: flexible deployment options including on-premise installations
@@ -605,7 +615,7 @@ facts:
     type: vendor_page
     quote: including an institution’s own Avicenna infrastructure where applicable
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-29'
   note: This is vendor-installed, closed-source software on customer infrastructure, not self-hosting from open source.
     The security page's "on-premise servers running Rocky Linux 9.x" sits in a list of Avicenna's own internal systems
     (Proxmox, GitLab, Mattermost, Keycloak) and is read here as Avicenna's own infrastructure, so it is not cited as
@@ -613,7 +623,7 @@ facts:
 - field: app_availability
   status: stated
   value: 'Participant app "Avicenna Research" is free on the iOS App Store (id1137173052, Avicenna Research Inc.) and
-    Google Play (com.ethica.logger). Requires iOS 16.0+ or Android 9.0+. A web app supports surveys and cloud wearables
+    Google Play (com.ethica.logger). Requires iOS 16.0+ or Android 10.0+ (raised from Android 9.0+ by 2026-10-26). A web app supports surveys and cloud wearables
     but no phone sensors. White-label study apps are a working service: on 2026-10-11 the App Store listed 33 further
     iOS apps under Avicenna Research Inc. (32 study-branded apps plus Avicenna Keyboard), and a 2025 JMIR mHealth paper
     used a customised Android app (Sesikhona).'
@@ -629,8 +639,8 @@ facts:
     retrieved: '2026-10-11'
   - url: https://forum.avicennaresearch.com/t/participant-app-settings/1278
     type: vendor_docs
-    quote: A smartphone (iOS 16.0+ or Android 9.0+ / API level 28+)
-    retrieved: '2026-10-11'
+    quote: A smartphone (iOS 16.0+ or Android 10.0+ / API level 29+)
+    retrieved: '2026-10-30'
   - url: https://forum.avicennaresearch.com/t/data-sources/1266
     type: vendor_docs
     quote: Participants using only the web app cannot contribute data from phone-based sensors.
@@ -653,7 +663,7 @@ facts:
     quote: on average, participants collected 95.3 out of the expected 336 points (28.4%) weekly
     retrieved: '2026-10-11'
     fetch_url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12377519/fullTextXML
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-29'
   note: The app count comes from the iTunes lookup API for seller id 1137173051 (34 apps including the main app),
     and 13 of them were first released in 2026. The Sesikhona study (rural South Africa) collected GPS every 30 minutes
     and got only 28.4% of expected weekly points, with frequent app terminations; data went to an Avicenna-hosted
@@ -666,15 +676,15 @@ facts:
     says Avicenna signs BAAs with US covered entities.
   confidence: Unclear
   sources:
-  - url: https://avicennaresearch.com/legal
+  - url: https://avicennaresearch.com/legal/privacy-policy/
     type: vendor_legal
     quote: requires Business Associate Agreements for all covered transactions
-    retrieved: '2026-10-11'
-  - url: https://avicennaresearch.com/legal
+    retrieved: '2026-10-30'
+  - url: https://avicennaresearch.com/legal/privacy-policy/
     type: vendor_legal
     quote: HIPAA compliance documentation (where applicable)
-    retrieved: '2026-10-11'
-  recheck_by: '2027-01-09'
+    retrieved: '2026-10-30'
+  recheck_by: '2027-01-28'
   note: Ask the vendor directly whether it signs a BAA.
 - field: dpa
   status: stated
@@ -687,12 +697,12 @@ facts:
     type: vendor_docs
     quote: multiple European institutions have Data Controller and Data Processor agreements with Avicenna in place
     retrieved: '2026-10-11'
-  - url: https://avicennaresearch.com/legal
+  - url: https://avicennaresearch.com/legal/privacy-policy/
     type: vendor_legal
     quote: approved sub-processors, breach notification procedures, data return/deletion obligations, and support
       for exercising data subject rights
-    retrieved: '2026-10-11'
-  recheck_by: '2027-01-09'
+    retrieved: '2026-10-30'
+  recheck_by: '2027-01-28'
 - field: hipaa_statement
   status: stated
   value: Self-described HIPAA compliance, with HIPAA Security Rule safeguards "where applicable". A forum guide also
@@ -700,16 +710,16 @@ facts:
     found.
   confidence: Corroborated
   sources:
-  - url: https://avicennaresearch.com/legal
+  - url: https://avicennaresearch.com/legal/privacy-policy/
     type: vendor_legal
     quote: 'HIPAA Security Rule (where applicable): Administrative, physical, and technical safeguards meeting or exceeding
       addressable requirements.'
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-30'
   - url: https://forum.avicennaresearch.com/t/sensorkit-approval/1563
     type: vendor_docs
     quote: Avicenna Research maintains compliance with GDPR, PIPEDA, HIPAA, FDA 21 CFR Part 11, and ISO 27001.
     retrieved: '2026-10-11'
-  recheck_by: '2027-01-09'
+  recheck_by: '2027-01-28'
 - field: gdpr_statement
   status: stated
   value: Says it complies with GDPR as a data processor. Two independent register entries exist, neither of which
@@ -750,16 +760,16 @@ facts:
     type: vendor_docs
     quote: We are proud to have achieved ISO 27001:2022 certification through UKAS
     retrieved: '2026-10-11'
-  - url: https://avicennaresearch.com/legal
+  - url: https://avicennaresearch.com/legal/privacy-policy/
     type: vendor_legal
     quote: Certified November 2024 with zero nonconformities; Surveillance Audit November 2025 with zero nonconformities.
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-30'
   - url: https://forum.avicennaresearch.com/t/1443
     type: vendor_page
     quote: We passed the ISO 27001 Surveillance Audit with flying colors, no non-conformities or improvement suggestions
       were found
     retrieved: '2026-10-11'
-  recheck_by: '2027-01-09'
+  recheck_by: '2027-01-28'
   note: Capped at Corroborated as a self-claim. The security post links a UKAS CertCheck entry, which is CAPTCHA-gated
     and was not read. The ICO and DSPT entries (see gdpr_statement) are not evidence of ISO certification. Request the
     certificate from the vendor.
@@ -802,7 +812,7 @@ facts:
   status: conflict
   value: 'The security page says all data is on servers physically in Canada, with all staff in Canada, and the privacy
     policy says information may be stored on servers in Canada. The privacy policy''s children''s-data section says
-    UK/EEA data is processed and stored within the UK/EEA unless safeguards are in place, and the legal page claims
+    UK/EEA data is processed and stored within the UK/EEA unless safeguards are in place, and the same policy claims
     an "infrastructure-agnostic approach" to residency. The security page also lists AWS EC2 instances with no region.
     On-premises installation (see hosting_options) is the documented route to local residency.'
   confidence: Unclear
@@ -811,18 +821,18 @@ facts:
     type: vendor_docs
     quote: Avicenna stores all data on servers physically located in Canada.
     retrieved: '2026-10-11'
-  - url: https://avicennaresearch.com/legal
+  - url: https://avicennaresearch.com/legal/privacy-policy/
     type: vendor_legal
     quote: your information may be transferred, processed, and stored in our servers in Canada
-    retrieved: '2026-10-11'
-  - url: https://avicennaresearch.com/legal
+    retrieved: '2026-10-30'
+  - url: https://avicennaresearch.com/legal/privacy-policy/
     type: vendor_legal
     quote: 'UK/EEA Data : Processed and stored within the UK/EEA unless specific safeguards are in place'
-    retrieved: '2026-10-11'
-  - url: https://avicennaresearch.com/legal
+    retrieved: '2026-10-30'
+  - url: https://avicennaresearch.com/legal/privacy-policy/
     type: vendor_legal
     quote: Our infrastructure-agnostic approach enables flexibility in meeting data residency and regulatory requirements
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-30'
   - url: https://forum.avicennaresearch.com/t/security-and-compliance/1267
     type: vendor_docs
     quote: AWS-based EC2 instances
@@ -831,7 +841,7 @@ facts:
     type: vendor_page
     quote: 'Closed epic: OP-9223'
     retrieved: '2026-10-11'
-  recheck_by: '2027-01-09'
+  recheck_by: '2027-01-28'
   note: 'A "Server Region" Product Ideas card (t/1031, created 2025-05-21) is filed under To Do but reads "Closed epic:
     OP-9223"; whether hosting regions other than Canada are now offered cannot be told from it. Ask the vendor: where
     UK/EEA study data is stored, and which AWS region the EC2 instances use.'

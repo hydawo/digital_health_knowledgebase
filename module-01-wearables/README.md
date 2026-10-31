@@ -30,7 +30,7 @@ wearable ecosystem, under what conditions, and at what cost?*
 **Consumer ecosystems**
 - [`apple-watch-healthkit.md`](profiles/apple-watch-healthkit.md): Apple Watch, HealthKit, SensorKit (incl. PPG and ECG samples, iOS 17.4+), ResearchKit
 - [`fitbit-google.md`](profiles/fitbit-google.md): Fitbit, Google Health API, Health Research Policy, Health Connect, Fitabase, *All of Us*
-- [`garmin.md`](profiles/garmin.md): Health API, Health SDK (Standard and Companion), paused developer programme
+- [`garmin.md`](profiles/garmin.md): Health API, Health SDK (Standard and Companion), developer programme relaunched October 2026 (Starter, Enterprise, Personal API)
 - [`oura.md`](profiles/oura.md): Oura Ring Gen3, 4 and 5, API v2, API and MCP Agreement, Oura for Organizations research offering
 - [`whoop.md`](profiles/whoop.md): WHOOP 4.0, 5.0 / MG, API v2, member tiers, API Terms of Use, WHOOP Unite
 - [`samsung.md`](profiles/samsung.md): Galaxy Watch and Ring, Samsung Health Sensor SDK (formerly Privileged Health SDK), Research Stack
@@ -70,7 +70,7 @@ most for a study:
 | Earlier summary said | Now |
 |---|---|
 | Fitbit legacy API "turns down in September 2026"; Google Health API open to new integrations | Legacy support ended 30 Sep 2026 and the API is **turned off 2 Nov 2026** (moved from 30 Oct on 23 Oct); Google was **not onboarding new Google Health API projects** on 2026-10-10 and is **apparently open again** by 2026-10-19 (Corroborated), with restricted-scope review |
-| Garmin confirms applications within two business days | **New access requests paused since spring 2026** (Corroborated); Garmin's FAQ wording is stale |
+| Garmin confirms applications within two business days | **Programme relaunched October 2026 with Starter and Enterprise tiers** after a pause on new requests from spring 2026; the two-business-day line is gone. Starter has no history, push only and a user limit (Verified 2026-10-30) |
 | Empatica is the only raw EDA source | **Samsung Galaxy Watch8 and later expose raw EDA at 1 Hz** through the Health Sensor SDK; Verily also records EDA |
 | Samsung raw PPG rate undocumented | PPG 25 Hz continuous and 100 Hz on demand; ECG 500 Hz; accelerometer 25 Hz |
 | Apple: no raw PPG or accelerometer | SensorKit exposes PPG and ECG samples (iOS 17.4+) and accelerometer (iOS 14+) to Apple-approved studies; HealthKit still does not. Core Motion `CMSensorRecorder` gives 50 Hz accelerometer without an entitlement (12 h per call, 3-day retention) |
@@ -118,7 +118,7 @@ Robbins 2024 ICCs for stage summaries: **deep sleep, Oura 0.32, Fitbit 0.36, App
 Schyvens 2025 underestimated WASO by 12 to 48 minutes. Robbins was Oura-funded; independent PSG
 results for Oura are mixed (Miller 2022, Lee 2023, Searles 2026). See `validation-evidence.md`.
 
-### 3. Garmin is closed to new studies right now, and new Fitbit access is slow.
+### 3. Garmin has just reopened in tiers, and new Fitbit access is slow.
 
 - **Fitbit / Google:** the legacy Fitbit Web API is turned off on **2 November 2026** (Google moved it from 30 October on 23 October). Google said on
   2026-10-10 it was **not onboarding new Google Health API projects**; by 2026-10-19 that notice was
@@ -130,9 +130,12 @@ results for Oura are mixed (Miller 2022, Lee 2023, Searles 2026). See `validatio
   participant self-export, or the *All of Us* dataset. Thryve and Validic need the study's own Google Cloud
   project, verified app and CASA; Terra says it manages the Google Health credentials, with its
   review and CASA status not stated.
-- **Garmin:** new Connect Developer Program access requests have been **paused since spring 2026**
-  (Corroborated), and queued requests are also on hold. Labfront, Fitabase and Fitrockr already hold
-  access. Terra no longer does for new customers (customer's own Garmin credentials since
+- **Garmin:** the Connect Developer Program **reopened in October 2026** (21 October per two secondary
+  sources, Corroborated) after a pause on new requests from spring 2026. Starter Access is requested
+  through a form and covers the core APIs with push delivery only, no historical data and a limited
+  user count (1,000 per integrator reports); Enterprise Access adds history of a month or more,
+  ping/pull and unlimited users on tailored terms (Verified 2026-10-30). Labfront, Fitabase and
+  Fitrockr already hold access. Terra no longer does for new customers (customer's own Garmin credentials since
   mid-October 2026).
 
 ### 4. Vendor terms now constrain what a study can keep.
@@ -185,7 +188,8 @@ members; Withings' free plan up to 10 users (Withings+ costs apply from 12 Octob
 Movesense with no registration; Samsung in developer mode for testing; Labfront free for 5
 participants; Empatica's academic plan by store purchase; Axivity by buying a device.
 
-**You cannot start today on:** a new direct Garmin integration (applications paused). A new direct
+**You can apply today, but not start at once, on:** a new direct Garmin integration (Starter Access
+by request and approval since October 2026; history and ping/pull need Enterprise). A new direct
 Fitbit/Google project apparently can be started again (2026-10-21), but approval waits on Google's
 restricted-scope review and, above 100 users, verification and CASA.
 
@@ -213,7 +217,7 @@ offering, and BAA availability almost everywhere. See `../shared/unresolved-ques
   AX3 and GENEActiv recording durations (each vendor's own documents disagree); the
   Withings+ US annual price ($99.50 or $99.95); Withings' inactive-account closure (3, 5 or 10 years);
   whether HealthKit's per-recording ECG voltage counts as raw (Apple's own pages disagree); Garmin's
-  FAQ still quoting two-business-day approval while applications are paused; Sensor Bio's 100 Hz
+  Enterprise Access terms and its Starter user limit (1,000 per integrator reports, not on Garmin's pages); Sensor Bio's 100 Hz
   specification against a 15,000 samples per second press claim, and whether its raw export needs an
   enterprise-tier account; Circular's Ring 2 price ($349 or $299) and its blood pressure and glucose
   claims; the Verily Study Watch's status.
@@ -287,8 +291,8 @@ are listed under Known gaps.
 
 1. **Ask Google when it will resume onboarding Google Health API projects**, and whether an approved
    Health Research Application is exempt from the CASA assessment or the 100-user cap.
-2. **Ask Garmin when Connect Developer Program applications reopen** and whether academic use counts
-   as "commercial use" for the Enhanced BBI licence fee.
+2. **Ask Garmin how universities are treated under the relaunched Starter and Enterprise tiers**,
+   what Enterprise Access costs an academic study, and whether Enhanced BBI is available outside Enterprise.
 3. **Pilot Labfront's free tier with a Garmin device** (5 participants) to see what Enhanced BBI looks like in
    practice (Tester accelerometry is 25 Hz only; higher rates need Advanced).
 4. **Get the WHOOP and Oura retention and AI-training questions answered in writing** before any

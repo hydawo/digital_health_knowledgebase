@@ -5,9 +5,11 @@ profile: module-01-wearables/profiles/garmin.md
 watch:
 - url: https://developer.garmin.com/gc-developer-program/overview/
   role: developer_program
-- url: https://developer.garmin.com/gc-developer-program/program-faq/
+- url: https://developer.garmin.com/gc-developer-program/enterprise/program-faq/
   role: developer_program
-- url: https://developer.garmin.com/gc-developer-program/health-api/
+- url: https://developer.garmin.com/gc-developer-program/enterprise/health-api/
+  role: docs
+- url: https://developer.garmin.com/gc-developer-program/personal/personal-faq/
   role: docs
 - url: https://developer.garmin.com/health-sdk/overview/
   role: docs
@@ -72,28 +74,40 @@ facts:
     Garmin directly"; Garmin's own release presents the Asia 2026 grant as a Garmin Health launch with Fitrockr.
 - field: program_eligibility
   status: stated
-  value: Health SDKs are for Garmin Health enterprise partners; the Connect Developer Program is for business use only (an
-    integrator reports applicants must be a legal entity, universities included, and personal applications are rejected)
+  value: >-
+    Health SDKs are for Garmin Health enterprise partners. The Connect Developer Program's business tiers (Starter and
+    Enterprise, relaunched October 2026) are for organisations building integrations for multiple users, from individual
+    developers and startups to large companies; an integrator reports Garmin describes them as for organisations such as
+    companies, universities, hospitals and research institutions. The separate Personal API gives one person their own
+    data and is not for applications serving multiple users.
   confidence: Verified
   scope: Garmin Health SDKs and Connect Developer Program
   sources:
   - url: https://developer.garmin.com/health-sdk/overview/
     type: vendor_docs
-    retrieved: '2026-10-10'
-    quote: Available to Garmin Health enterprise partners, the Garmin Health SDKs allow for direct integration of Garmin wearables
-      in your Android
-  - url: https://developer.garmin.com/gc-developer-program/program-faq/
+    retrieved: '2026-10-30'
+    quote: "Available to Garmin Health enterprise partners, the Garmin Health SDKs allow for direct integration of Garmin wearables in your Android"
+  - url: https://developer.garmin.com/gc-developer-program/overview/
     type: vendor_docs
-    retrieved: '2026-10-10'
-    quote: There are no licensing or maintenance fees for access to the Garmin Connect Developer Program, but it is only for
-      business use.
+    retrieved: '2026-10-30'
+    quote: "The Garmin Connect Developer Program supports a broad range of organizations, from individual developers and startups to companies operating at significant scale."
+  - url: https://developer.garmin.com/gc-developer-program/personal/personal-faq/
+    type: vendor_docs
+    retrieved: '2026-10-30'
+    quote: "It is not intended for commercial applications serving multiple end users."
   - url: https://openwearables.io/docs/providers/garmin-api-integration
     type: secondary
-    retrieved: '2026-10-10'
-    quote: You must apply as a legal entity (company, university, hospital, research institution, etc.). Personal-use applications
-      are rejected.
-  recheck_by: '2026-11-09'
-  note: The legal-entity detail is an integrator's statement (Reported); Garmin's own pages say only "business use".
+    retrieved: '2026-10-30'
+    quote: "Garmin describes both business tiers as intended for organizations (company, university, hospital, research institution, etc.)."
+  - url: https://openwearables.io/docs/providers/garmin-api-integration
+    type: secondary
+    retrieved: '2026-10-30'
+    quote: "Requires legal entity and Garmin Developer Program approval."
+  recheck_by: '2026-11-29'
+  note: >-
+    The organisation list and the legal-entity requirement are an integrator's statements (Reported); Garmin's own public
+    pages name no entity type. The 2026-10-10 FAQ line that the programme "is only for business use" is gone from the
+    relaunched FAQ (program-faq moved to enterprise/program-faq).
 - field: program_eligibility
   status: stated
   value: Postgraduates, PhD candidates and senior scholars in 11 Asian markets; applications closed 31 March 2026
@@ -120,27 +134,48 @@ facts:
   recheck_by: '2026-11-25'
 - field: program_application
   status: stated
-  value: Application reviewed by Garmin (FAQ says status within two business days), then a Garmin call; the application form
-    is currently withdrawn and reviews are paused (see developer_program_status)
+  value: >-
+    Request access through Garmin's request form and create an app with Starter Access. After approval Garmin grants
+    Developer Portal access and an evaluation environment; Enterprise Access is requested later through the Developer
+    Portal. Garmin says a typical integration takes 1 to 4 weeks. Press reports that Starter apps carry an unverified label
+    until Garmin reviews them, and that applicants need a public website and a published privacy policy.
   confidence: Verified
   scope: Garmin Connect Developer Program
   sources:
-  - url: https://developer.garmin.com/gc-developer-program/program-faq/
+  - url: https://developer.garmin.com/gc-developer-program/overview/
     type: vendor_docs
-    retrieved: '2026-10-10'
-    quote: After you request the Garmin Connect Developer Program, we will confirm the status of your application within two
-      business days.
-  - url: https://developer.garmin.com/gc-developer-program/program-faq/
+    retrieved: '2026-10-30'
+    quote: "Apply for the Garmin Connect Developer Program and create an app with Starter Access."
+  - url: https://developer.garmin.com/gc-developer-program/overview/
     type: vendor_docs
-    retrieved: '2026-10-10'
-    quote: A member of the Garmin team will contact you to discuss how best to sell and provide the wearables to your users.
-  recheck_by: '2026-11-09'
-  note: The two-business-day wording is stale while the pause lasts.
+    retrieved: '2026-10-30'
+    quote: "As your business and integration needs evolve, you can request Enterprise Access through Garmin Developer Portal."
+  - url: https://developer.garmin.com/gc-developer-program/enterprise/program-faq/
+    type: vendor_docs
+    retrieved: '2026-10-30'
+    quote: "After you request access to the Garmin Connect Developer Program and your request has been approved, you will be granted access to the Garmin Developer Portal and can get started on your integration right away."
+  - url: https://developer.garmin.com/gc-developer-program/enterprise/program-faq/
+    type: vendor_docs
+    retrieved: '2026-10-30'
+    quote: "A typical integration takes between 1 and 4 weeks."
+  - url: https://developer.garmin.com/gc-developer-program/enterprise/health-api/
+    type: vendor_docs
+    retrieved: '2026-10-30'
+    quote: "After approval, you will have access to an evaluation environment to test the Garmin Connect Health API."
+  - url: https://the5krunner.com/2026/10/22/garmin-personal-api/
+    type: secondary
+    retrieved: '2026-10-30'
+    quote: "applicants need a public website and a published privacy policy"
+  recheck_by: '2026-11-29'
+  note: >-
+    Replaces the pause-era value (2026-10-10). The request form (www.garmin.com/en-US/forms/StarterGarminConnectDeveloperAccess/)
+    is built by script and was not opened or submitted. The unverified-label and website requirements come from press
+    (the5krunner, 2026-10-22) citing Garmin's portal documentation, so they are Reported.
 - field: program_status
   status: stated
   value: Garmin Health research offering active (Garmin published a study using the Health API and Companion SDK on 21 August
     2026; the Health SDK request route is published). No open grant call (Asia 2026 closed 31 March 2026; Fitrockr lists
-    none). The Connect Developer Program route is paused to new applicants (see developer_program_status)
+    none). The Connect Developer Program reopened to new applicants in October 2026 (see developer_program_status)
   confidence: Corroborated
   sources:
   - url: https://www.garmin.com/en-GB/blog/react-study-evaluates-impact-of-daily-movement-on-arterial-health/
@@ -160,91 +195,107 @@ facts:
     hence Corroborated.
 - field: developer_program_status
   status: stated
-  value: Paused to new applicants. Garmin stopped reviewing and approving new Connect Developer Program requests in spring
-    2026 while it redesigns the programme; requests already in the queue are also on hold; no reopening date. Existing approved
-    integrations are reported to keep working
-  confidence: Corroborated
+  value: >-
+    Open again. Garmin relaunched the Connect Developer Program with two business tiers: Starter Access (immediate access
+    to the Activity, Courses, Health, Training and Women's Health APIs; push delivery only; no historical data; limited
+    user capacity) and Enterprise Access (adds the Golf API, ping/pull delivery, one month or more of history, unlimited
+    users, technical support and tailored commercial terms). A separate Personal API gives an individual pull access to
+    their own data. Integrators and press date the reopening to 21 October 2026, ending a pause on new applications that
+    began in spring 2026.
+  confidence: Verified
   scope: Garmin Connect Developer Program
   sources:
   - url: https://developer.garmin.com/gc-developer-program/overview/
     type: vendor_docs
-    retrieved: '2026-10-10'
-    quote: Stay tuned for more updates on the program
-  - url: https://forums.garmin.com/developer/fit-sdk/f/discussion/435484/developer-onboarding-blocked/2054626
-    type: secondary
-    retrieved: '2026-10-10'
-    quote: During this transition, we have temporarily paused the review and approval of new API access requests.
-  - url: https://forums.garmin.com/developer/fit-sdk/f/discussion/435484/developer-onboarding-blocked/2054626
-    type: secondary
-    retrieved: '2026-10-10'
-    quote: At this time, we are unable to provide a specific timeline for when new application processing will resume.
-  - url: https://forums.garmin.com/developer/connect-iq/f/discussion/434798/cannot-access-developer-program-application-form-under-construction/2027757
-    type: secondary
-    retrieved: '2026-10-10'
-    quote: During this transition, new access requests are temporarily paused
-  - url: https://the5krunner.com/2026/09/14/garmin-developer-api-access-paused/
-    type: secondary
-    retrieved: '2026-10-10'
-    quote: It also said it could not process new requests already in the queue and could not say when processing would resume.
-  - url: https://tryterra.co/blog/garmin-connect-developer-program-pause
-    type: secondary
-    retrieved: '2026-10-10'
-    quote: Garmin paused new Connect Developer Program applications while it updates the program.
-  recheck_by: '2026-11-09'
-  note: Garmin's own pages carry only the "Stay tuned" line (overview and FAQ). The pause wording comes from Garmin support
-    replies reposted by users on Garmin's developer forums and from press (the5krunner, Terra), so this is Corroborated
-    rather than Verified. The FAQ still says "If you are interested, please request the Garmin Connect Developer Program and
-    we'll quickly review your application", which is stale boilerplate rather than a contrary statement, so status is stated,
-    not conflict. Connect IQ (on-device apps) is a separate programme and is not reported as paused.
-- field: user_cap
-  status: not_public
-  confidence: Verified
-  sources:
-  - url: https://developer.garmin.com/gc-developer-program/program-faq/
-    type: vendor_docs
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-30'
+    quote: "Apply for the Garmin Connect Developer Program and create an app with Starter Access."
   - url: https://developer.garmin.com/gc-developer-program/overview/
     type: vendor_docs
-    retrieved: '2026-10-10'
-  - url: https://developer.garmin.com/gc-developer-program/health-api/
+    retrieved: '2026-10-30'
+    quote: "Delivery Push only Historical Data Not included User Capacity Limited"
+  - url: https://developer.garmin.com/gc-developer-program/overview/
     type: vendor_docs
-    retrieved: '2026-10-10'
-  - url: https://developer.garmin.com/health-sdk/overview/
+    retrieved: '2026-10-30'
+    quote: "Delivery Push or Ping/Pull Historical Data 1 month + User Capacity Unlimited Technical Support Included"
+  - url: https://developer.garmin.com/gc-developer-program/overview/
     type: vendor_docs
-    retrieved: '2026-10-10'
-  - url: https://developer.garmin.com/health-sdk/questions-answers/
+    retrieved: '2026-10-30'
+    quote: "Secure access to your own Garmin Connect data for individuals who want to explore, analyze, and build personalized experiences using their own data."
+  - url: https://developer.garmin.com/gc-developer-program/enterprise/program-faq/
     type: vendor_docs
-    retrieved: '2026-10-10'
-  - url: https://developerportal.garmin.com/sites/default/files/Garmin%20Connect%20Developer%20Program%20Agreement.pdf
-    type: vendor_legal
-    retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
-  note: No participant or user cap is published. Evaluation access is throttled (see rate_limits) and production follows
-    a Garmin review.
-- field: academic_vs_commercial
+    retrieved: '2026-10-30'
+    quote: "Starter Access: Developers can gain immediate access and launch with Garmin, with access to core data and tools."
+  - url: https://openwearables.io/blog/garmin-connect-developer-program-reopened
+    type: secondary
+    retrieved: '2026-10-30'
+    quote: "Garmin reopened the Garmin Connect Developer Program on 21 October 2026."
+  - url: https://the5krunner.com/2026/10/22/garmin-personal-api/
+    type: secondary
+    retrieved: '2026-10-30'
+    quote: "Garmin has reopened its Connect Developer Program after seven months of being closed to new applicants"
+  recheck_by: '2026-11-29'
+  note: >-
+    Changed 2026-10-30 from "Paused to new applicants" (Corroborated). Garmin's own overview and FAQ now invite requests and
+    describe the tiers, so the open status is Verified from Garmin's pages; the 21 October date is from two secondary
+    sources (Open Wearables, the5krunner) and is Corroborated. Whether requests are approved promptly was not observed: no
+    request was made. The pause evidence (Garmin support replies on forums.garmin.com threads 435484 and 434798, the5krunner
+    2026-09-14, Terra) is historical. Connect IQ (on-device apps) is a separate programme.
+- field: user_cap
   status: stated
-  value: No separate academic tier. Access is business-only; fees attach to commercial use (a licence fee for Enhanced Beat-To-Beat
-    Interval on the Health API; a licence fee or minimum device order for the Health SDKs). Whether a non-commercial academic
-    study counts as commercial use is not stated
+  value: >-
+    Starter Access has limited user capacity; Garmin does not publish the number, and integrators and press report up to
+    1,000 connected users. Enterprise Access has unlimited user capacity. No participant cap is published for the Health
+    SDKs.
   confidence: Verified
   sources:
-  - url: https://developer.garmin.com/gc-developer-program/program-faq/
+  - url: https://developer.garmin.com/gc-developer-program/overview/
     type: vendor_docs
-    retrieved: '2026-10-10'
-    quote: There are no licensing or maintenance fees for access to the Garmin Connect Developer Program, but it is only for
-      business use.
-  - url: https://developer.garmin.com/gc-developer-program/health-api/
+    retrieved: '2026-10-30'
+    quote: "Delivery Push only Historical Data Not included User Capacity Limited"
+  - url: https://developer.garmin.com/gc-developer-program/overview/
     type: vendor_docs
-    retrieved: '2026-10-10'
-    quote: Commercial use requires a license fee payment.
+    retrieved: '2026-10-30'
+    quote: "Delivery Push or Ping/Pull Historical Data 1 month + User Capacity Unlimited Technical Support Included"
+  - url: https://openwearables.io/docs/providers/garmin-api-integration
+    type: secondary
+    retrieved: '2026-10-30'
+    quote: "Up to 1,000 connected users"
+  - url: https://openwearables.io/blog/garmin-connect-developer-program-reopened
+    type: secondary
+    retrieved: '2026-10-30'
+    quote: "Press reports put the limit at 1,000 connected users and say Starter is free."
+  recheck_by: '2026-11-29'
+  note: >-
+    Changed 2026-10-30 from not_public, after the programme relaunch published per-tier capacity. The 1,000 figure is
+    Reported (integrator and press), not on Garmin's public pages.
+- field: academic_vs_commercial
+  status: stated
+  value: >-
+    No separate academic tier. Connect Developer Program access is by business tier: Starter for organisations building
+    apps, and Enterprise with commercial terms tailored to each company; the Personal API is not for applications serving
+    multiple users. Health SDKs are free to evaluate and need a licence fee or minimum device order for commercial use.
+    Whether a non-commercial academic study counts as commercial use is not stated
+  confidence: Verified
+  sources:
+  - url: https://developer.garmin.com/gc-developer-program/overview/
+    type: vendor_docs
+    retrieved: '2026-10-30'
+    quote: "Available options and commercial terms are tailored based on business and technical requirements."
+  - url: https://developer.garmin.com/gc-developer-program/personal/personal-faq/
+    type: vendor_docs
+    retrieved: '2026-10-30'
+    quote: "It is not intended for commercial applications serving multiple end users."
   - url: https://developer.garmin.com/health-sdk/overview/
     type: vendor_docs
-    retrieved: '2026-10-10'
-    quote: 'Evaluation: Free Commercial Use: License Fee or Minimum Device Order Quantity'
-  recheck_by: '2026-11-09'
-  note: Both agreement versions (section 8.4) bar the licensee from press releases or public statements about Garmin or the
+    retrieved: '2026-10-30'
+    quote: "Evaluation: Free Commercial Use: License Fee or Minimum Device Order Quantity"
+  recheck_by: '2026-11-29'
+  note: >-
+    Both agreement versions (section 8.4) bar the licensee from press releases or public statements about Garmin or the
     agreement's subject matter without Garmin's written approval; how this bears on academic publication is not stated.
     See the academic_vs_commercial entry scoped to the China-entity agreement for its research exemption from attribution.
+    The 2026-10-10 pages said access was "only for business use" and that Enhanced Beat-To-Beat Interval needed a licence
+    fee for commercial use; neither line is on the relaunched pages (2026-10-30).
 - field: academic_vs_commercial
   status: stated
   value: Health API data used only in defense, research or remote patient monitoring is exempt from Garmin attribution rules,
@@ -320,9 +371,12 @@ facts:
   status: not_public
   confidence: Verified
   sources:
-  - url: https://developer.garmin.com/gc-developer-program/program-faq/
+  - url: https://developer.garmin.com/gc-developer-program/enterprise/program-faq/
     type: vendor_docs
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-30'
+  - url: https://developer.garmin.com/gc-developer-program/overview/
+    type: vendor_docs
+    retrieved: '2026-10-30'
   - url: https://developer.garmin.com/health-sdk/overview/
     type: vendor_docs
     retrieved: '2026-10-10'
@@ -332,45 +386,51 @@ facts:
   - url: https://www.garmin.com/en-US/health/solutions/research-and-clinical-trials/
     type: vendor_page
     retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-29'
   note: No academic price or discount is published. Grants with Fitrockr supply devices and platform access, but that is
     an award, not a price.
 - field: api_platform_fees
   status: stated
-  value: No licence fee or other payment is due under the developer agreement, and the FAQ says no licensing or maintenance
-    fee for the programme. Garmin reserves the right to add API fees on 30 days' notice and to charge for request volume above
-    limits. Enhanced Beat-To-Beat Interval needs a licence fee for commercial use
+  value: >-
+    The developer agreement says no licence fee is due, lets Garmin add API fees on 30 days' notice, and lets it charge for
+    request volume above limits. Garmin's relaunched pages publish no price; Enterprise terms are tailored per company.
+    Integrators and press report that Starter is free and that Enterprise has an entry fee credited against billing for
+    monthly active users, with billing starting 1 April 2027 (Reported)
   confidence: Verified
   scope: Connect Developer Program (Health API and related APIs)
   sources:
   - url: https://developerportal.garmin.com/sites/default/files/Garmin%20Connect%20Developer%20Program%20Agreement.pdf
     type: vendor_legal
-    retrieved: '2026-10-10'
-    quote: Licensee acknowledges and agrees that no license fees or other payments will be due under this Agreement in exchange
-      for the rights granted under this Agreement.
+    retrieved: '2026-10-30'
+    quote: "Licensee acknowledges and agrees that no license fees or other payments will be due under this Agreement in exchange for the rights granted under this Agreement."
   - url: https://developerportal.garmin.com/sites/default/files/Garmin%20Connect%20Developer%20Program%20Agreement.pdf
     type: vendor_legal
-    retrieved: '2026-10-10'
-    quote: If Garmin decides to charge for any API, such charges and terms of payment will be disclosed to Licensee and effective
-      upon thirty (30) days’ prior notice from Garmin.
+    retrieved: '2026-10-30'
+    quote: "If Garmin decides to charge for any API, such charges and terms of payment will be disclosed to Licensee and effective upon thirty (30) days’ prior notice from Garmin."
   - url: https://developerportal.garmin.com/sites/default/files/Garmin%20Connect%20Developer%20Program%20Agreement.pdf
     type: vendor_legal
-    retrieved: '2026-10-10'
-    quote: Garmin reserves the right to charge fees for request volume that exceeds any limits set forth in the Application
-      Requirements.
-  - url: https://developer.garmin.com/gc-developer-program/program-faq/
+    retrieved: '2026-10-30'
+    quote: "Garmin reserves the right to charge fees for request volume that exceeds any limits set forth in the Application Requirements."
+  - url: https://developer.garmin.com/gc-developer-program/overview/
     type: vendor_docs
-    retrieved: '2026-10-10'
-    quote: Access to some metrics may require a license fee payment or minimum device order quantity for commercial use.
-  - url: https://developer.garmin.com/gc-developer-program/health-api/
-    type: vendor_docs
-    retrieved: '2026-10-10'
-    quote: Commercial use requires a license fee payment.
-  recheck_by: '2026-11-09'
-  note: Section 10.1 is identical in the China-entity version of the agreement. The $5,000 one-time administrative fee the
-    profile carries as Reported appears on no Garmin page and is contradicted by section 10.1 and the FAQ; its cited source
-    (techdepot.blog) returned 403 on 2026-10-10, and aifitnessapi.com says only that "some third-party reports mention a setup
-    fee". Treat it as unsupported. Metric licence fees sit outside the agreement and their amounts are not published.
+    retrieved: '2026-10-30'
+    quote: "Available options and commercial terms are tailored based on business and technical requirements."
+  - url: https://openwearables.io/blog/garmin-connect-developer-program-reopened
+    type: secondary
+    retrieved: '2026-10-30'
+    quote: "According to press reports, there is an entry fee credited against a bill for monthly active users, and billing starts on 1 April 2027."
+  - url: https://openwearables.io/blog/garmin-connect-developer-program-reopened
+    type: secondary
+    retrieved: '2026-10-30'
+    quote: "Press reports put the limit at 1,000 connected users and say Starter is free."
+  recheck_by: '2026-11-29'
+  note: >-
+    Section 10.1 is identical in the China-entity version of the agreement. Which agreement version governs the relaunched
+    tiers is not stated. The 2026-10-10 FAQ said there was no licensing or maintenance fee and the Health API page said
+    Enhanced Beat-To-Beat Interval needed a licence fee for commercial use; both pages were removed in the October 2026
+    relaunch and neither statement is on the new pages. The Enterprise entry fee and the Starter-is-free claim are
+    secondary reports of fees that, if real, would sit outside section 10.1. The $5,000 one-time administrative fee the
+    profile once carried as Reported appears on no Garmin page; treat it as unsupported.
 - field: api_platform_fees
   status: stated
   value: Evaluation free; commercial use needs a licence fee or a minimum device order commitment, amounts not published. An
@@ -389,39 +449,42 @@ facts:
   recheck_by: '2026-11-25'
 - field: minimum_commitment
   status: stated
-  value: No published minimum; a device minimum order quantity is one of two payment routes for commercial Health SDK use
-    and for some Health API metrics; the quantity is not published
+  value: No published minimum; a device minimum order quantity is one of two payment routes for commercial Health SDK use;
+    the quantity is not published
   confidence: Verified
   sources:
   - url: https://developer.garmin.com/health-sdk/questions-answers/
     type: vendor_docs
-    retrieved: '2026-10-10'
-    quote: Evaluation is free, but commercial use requires either a license fee or device minimum order quantity commitment.
-  - url: https://developer.garmin.com/gc-developer-program/program-faq/
-    type: vendor_docs
-    retrieved: '2026-10-10'
-    quote: Access to some metrics may require a license fee payment or minimum device order quantity for commercial use.
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-30'
+    quote: "Evaluation is free, but commercial use requires either a license fee or device minimum order quantity commitment."
+  recheck_by: '2026-11-29'
+  note: The 2026-10-10 Connect Developer Program FAQ also named a minimum device order for some Health API metrics; the
+    relaunched FAQ (2026-10-30) does not.
 - field: quote_required
   status: stated
-  value: Yes for Health SDK licences, licensed metrics and bulk devices; Garmin Health designs commercial terms per customer.
-    Connect Developer Program access itself is free but by application (currently paused)
+  value: Yes for Health SDK licences and for Connect Developer Program Enterprise Access, whose commercial terms Garmin
+    tailors per company; projects that want to supply Garmin wearables contact Garmin through an inquiry form. Starter
+    Access is requested through a form and no price is published
   confidence: Verified
   sources:
   - url: https://developer.garmin.com/health-sdk/questions-answers/
     type: vendor_docs
-    retrieved: '2026-10-10'
-    quote: A member of the Garmin Health team will work with you to design a business model that fits your needs.
-  - url: https://developer.garmin.com/gc-developer-program/program-faq/
+    retrieved: '2026-10-30'
+    quote: "A member of the Garmin Health team will work with you to design a business model that fits your needs."
+  - url: https://developer.garmin.com/gc-developer-program/overview/
     type: vendor_docs
-    retrieved: '2026-10-10'
-    quote: A member of the Garmin team will contact you to discuss how best to sell and provide the wearables to your users.
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-30'
+    quote: "Available options and commercial terms are tailored based on business and technical requirements."
+  - url: https://developer.garmin.com/gc-developer-program/enterprise/program-faq/
+    type: vendor_docs
+    retrieved: '2026-10-30'
+    quote: "If you want to enhance your project by offering Garmin wearables, request the Garmin Connect Developer Program and contact us using the inquiry form with more information about your project."
+  recheck_by: '2026-11-29'
 - field: raw_streams
   status: stated
   value: 'Health SDKs (Bluetooth to the study''s own app): real-time streams and configurable on-device logging of accelerometer,
     gyroscope, Enhanced Beat-To-Beat Intervals, heart rate, Pulse Ox, respiration and actigraphy. Health API (cloud): summaries
-    plus licensed Enhanced Beat-To-Beat Interval, no raw accelerometer. Connect IQ apps read motion sensors on the watch'
+    plus Enhanced Beat-To-Beat Interval (Enterprise Access only), no raw accelerometer. Connect IQ apps read motion sensors on the watch'
   confidence: Verified
   sources:
   - url: https://developer.garmin.com/health-sdk/overview/
@@ -437,11 +500,14 @@ facts:
     type: vendor_docs
     retrieved: '2026-10-10'
     quote: subscribe to live streams of heart rate, stress scores, accelerometer, and more
-  - url: https://developer.garmin.com/gc-developer-program/health-api/
+  - url: https://developer.garmin.com/gc-developer-program/enterprise/health-api/
     type: vendor_docs
-    retrieved: '2026-10-10'
-    quote: Steps Intensity Minutes Sleep Calories Heart Rate Stress Pulse Ox Body Battery Body Composition Respiration Blood
-      Pressure Enhanced Beat-To-Beat Interval
+    retrieved: '2026-10-30'
+    quote: "Steps Intensity Minutes Sleep Calories Heart Rate Stress Pulse Ox Body Battery Body Composition Respiration Blood Pressure *Enhanced Beat-To-Beat Interval *"
+  - url: https://developer.garmin.com/gc-developer-program/enterprise/health-api/
+    type: vendor_docs
+    retrieved: '2026-10-30'
+    quote: "* Supported with Enterprise Access only"
   - url: https://developer.garmin.com/connect-iq/api-docs/Toybox/Sensor.html
     type: vendor_docs
     retrieved: '2026-10-10'
@@ -451,35 +517,44 @@ facts:
 - field: derived_metrics
   status: stated
   value: 'Health API: steps, intensity minutes, sleep, calories, heart rate, stress, Pulse Ox, Body Battery, body composition,
-    respiration, blood pressure, plus epoch summaries; Activity API: full activity data for over 30 activity types; Women''s
-    Health API: menstrual cycle and pregnancy data'
+    respiration, blood pressure, plus epoch summaries (Enhanced Beat-To-Beat Interval with Enterprise Access only); Activity
+    API: detailed fitness data from activities such as running, cycling, swimming, yoga and strength training; Women''s
+    Health API: menstrual cycle and pregnancy tracking data'
   confidence: Verified
   sources:
-  - url: https://developer.garmin.com/gc-developer-program/health-api/
+  - url: https://developer.garmin.com/gc-developer-program/enterprise/health-api/
     type: vendor_docs
-    retrieved: '2026-10-10'
-    quote: Steps Intensity Minutes Sleep Calories Heart Rate Stress Pulse Ox Body Battery Body Composition Respiration Blood
-      Pressure Enhanced Beat-To-Beat Interval
-  - url: https://developer.garmin.com/gc-developer-program/health-api/
+    retrieved: '2026-10-30'
+    quote: "Steps Intensity Minutes Sleep Calories Heart Rate Stress Pulse Ox Body Battery Body Composition Respiration Blood Pressure *Enhanced Beat-To-Beat Interval *"
+  - url: https://developer.garmin.com/gc-developer-program/enterprise/health-api/
     type: vendor_docs
-    retrieved: '2026-10-10'
-    quote: detailed stress, pulse-ox, and epoch summaries for all-day activities
-  - url: https://developer.garmin.com/gc-developer-program/overview/
+    retrieved: '2026-10-30'
+    quote: "* Supported with Enterprise Access only"
+  - url: https://developer.garmin.com/gc-developer-program/enterprise/health-api/
     type: vendor_docs
-    retrieved: '2026-10-10'
-    quote: Activity API - Full activity data for over 30 activity types.
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-30'
+    quote: "detailed stress, pulse-ox, and epoch summaries for all-day activities"
+  - url: https://developer.garmin.com/gc-developer-program/enterprise/activity-api/
+    type: vendor_docs
+    retrieved: '2026-10-30'
+    quote: "The Activity API provides access to the detailed fitness data captured during an activity on the user’s wearable device or cycling computer."
+  - url: https://developer.garmin.com/gc-developer-program/enterprise/womens-health-api/
+    type: vendor_docs
+    retrieved: '2026-10-30'
+    quote: "The Garmin Connect Women’s Health API provides information captured in Menstrual Cycle Tracking and Pregnancy Tracking, including schedules and pregnancy details."
+  recheck_by: '2026-11-29'
+  note: The 2026-10-10 overview said the Activity API covered "over 30 activity types"; the relaunched pages give no count.
 - field: sampling_rates
   status: stated
   value: Garmin publishes no Hz figures; its page says all-day summaries through to second-level heart rate during activities
   confidence: Verified
   scope: Health API (Garmin)
   sources:
-  - url: https://developer.garmin.com/gc-developer-program/health-api/
+  - url: https://developer.garmin.com/gc-developer-program/enterprise/health-api/
     type: vendor_docs
-    retrieved: '2026-10-10'
-    quote: Full spectrum of metrics from all-day steps to second-level HR during activities
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-30'
+    quote: "Full spectrum of metrics from all-day steps to second-level HR during activities"
+  recheck_by: '2026-11-29'
 - field: sampling_rates
   status: stated
   value: 15-minute epochs for steps, heart rate and intensity; stress every 3 minutes (per an integrator)
@@ -518,85 +593,102 @@ facts:
     quote: Get the maximum sample rate supported for given sensor data type.
   recheck_by: '2026-11-25'
 - field: history_depth
-  status: unclear
-  confidence: Unclear
-  sources:
-  - url: https://developer.garmin.com/gc-developer-program/health-api/
-    type: vendor_docs
-    retrieved: '2026-10-10'
-    quote: 'Developer Web Tools: Easy on-boarding, sample data, backfill user data, and auto-verification of your integration
-      before production'
-  - url: https://openwearables.io/docs/providers/garmin-api-integration
-    type: secondary
-    retrieved: '2026-10-10'
-    quote: Backfill typically returns ~last month of data
-  - url: https://openwearables.io/docs/providers/historical-data
-    type: secondary
-    retrieved: '2026-10-10'
-    quote: Limited to 30 days before the user
-  recheck_by: '2026-11-09'
-  note: Garmin documents a backfill tool but its limits are only in the portal-only API specification. One integrator (Open
-    Wearables, two pages) reports about 30 days before the user's consent date. SDK logging history depends on device memory
-    and sync.
-- field: export_routes
   status: stated
-  value: 'Cloud APIs with user consent over OAuth 2.0 (Health API JSON; Activity API FIT, GPX and TCX files; Women''s Health
-    API) by ping/pull or push; Health SDKs for Android and iOS (Standard SDK bypasses Garmin servers; Companion SDK works
-    alongside Garmin Connect); Connect IQ on-device apps with a free SDK. Research platforms such as Fitrockr, Labfront and
-    Fitabase resell access'
+  value: >-
+    Starter Access includes no historical data, so data starts when the user connects. Enterprise Access includes one
+    month or more of history through backfill, which is Enterprise only. An integrator reports backfill returns about the
+    30 days before the user's consent. Health SDK logging history depends on device memory and sync.
   confidence: Verified
   sources:
-  - url: https://developer.garmin.com/gc-developer-program/health-api/
+  - url: https://developer.garmin.com/gc-developer-program/overview/
     type: vendor_docs
-    retrieved: '2026-10-10'
-    quote: 'Ping/Pull or Push Architecture: Choose the integration option that best matches your needs'
-  - url: https://developer.garmin.com/gc-developer-program/health-api/
+    retrieved: '2026-10-30'
+    quote: "Delivery Push only Historical Data Not included User Capacity Limited"
+  - url: https://developer.garmin.com/gc-developer-program/overview/
     type: vendor_docs
-    retrieved: '2026-10-10'
-    quote: We provide data in JSON format
-  - url: https://developer.garmin.com/gc-developer-program/program-faq/
+    retrieved: '2026-10-30'
+    quote: "Delivery Push or Ping/Pull Historical Data 1 month + User Capacity Unlimited Technical Support Included"
+  - url: https://developer.garmin.com/gc-developer-program/enterprise/health-api/
     type: vendor_docs
-    retrieved: '2026-10-10'
-    quote: All APIs in the Developer Program use OAUTH 2.0.
-  - url: https://developer.garmin.com/gc-developer-program/activity-api/
+    retrieved: '2026-10-30'
+    quote: "Developer Web Tools: Easy on-boarding, sample data, *backfill user data, and auto-verification of your integration before production"
+  - url: https://developer.garmin.com/gc-developer-program/enterprise/health-api/
     type: vendor_docs
-    retrieved: '2026-10-10'
-    quote: Activity data files (.FIT, GPX, .TCX formats) available for complete activity details
+    retrieved: '2026-10-30'
+    quote: "* Supported with Enterprise Access only"
+  - url: https://openwearables.io/docs/providers/garmin-api-integration
+    type: secondary
+    retrieved: '2026-10-30'
+    quote: "Backfill typically returns ~last month of data"
+  - url: https://openwearables.io/docs/providers/historical-data
+    type: secondary
+    retrieved: '2026-10-30'
+    quote: "Limited to 30 days before the user"
+  recheck_by: '2026-11-29'
+  note: >-
+    Changed 2026-10-30 from unclear, after the relaunch published per-tier history. Garmin's "1 month +" sets no stated
+    upper limit; the exact backfill window is in the portal-only API specification.
+- field: export_routes
+  status: stated
+  value: 'Cloud APIs with user consent over OAuth 2.0 (Health API JSON; Activity API JSON summaries and FIT, GPX and TCX files;
+    Women''s Health API) by push, or by ping/pull with Enterprise Access; a Personal API (pull only) for one person''s own
+    data; Health SDKs for Android and iOS (Standard SDK bypasses Garmin servers; Companion SDK works alongside Garmin Connect);
+    Connect IQ on-device apps with a free SDK. Research platforms such as Fitrockr, Labfront and Fitabase resell access'
+  confidence: Verified
+  sources:
+  - url: https://developer.garmin.com/gc-developer-program/enterprise/health-api/
+    type: vendor_docs
+    retrieved: '2026-10-30'
+    quote: "Push or *Ping/Pull Architecture: Choose the integration option that best matches your needs"
+  - url: https://developer.garmin.com/gc-developer-program/enterprise/health-api/
+    type: vendor_docs
+    retrieved: '2026-10-30'
+    quote: "We provide data in JSON format"
+  - url: https://developer.garmin.com/gc-developer-program/enterprise/program-faq/
+    type: vendor_docs
+    retrieved: '2026-10-30'
+    quote: "All APIs in the Developer Program use OAUTH 2.0."
+  - url: https://developer.garmin.com/gc-developer-program/enterprise/activity-api/
+    type: vendor_docs
+    retrieved: '2026-10-30'
+    quote: "Activity data files (.FIT, GPX, .TCX formats) available for complete activity details"
+  - url: https://developer.garmin.com/gc-developer-program/personal/personal-faq/
+    type: vendor_docs
+    retrieved: '2026-10-30'
+    quote: "The Personal API provides access to an individual user's own data using a self-generated API key."
   - url: https://developer.garmin.com/health-sdk/overview/
     type: vendor_docs
-    retrieved: '2026-10-10'
-    quote: Create a single-app experience using Garmin devices that does not require use of any Garmin servers.
-  - url: https://developer.garmin.com/gc-developer-program/program-faq/
+    retrieved: '2026-10-30'
+    quote: "Create a single-app experience using Garmin devices that does not require use of any Garmin servers."
+  - url: https://developer.garmin.com/gc-developer-program/enterprise/program-faq/
     type: vendor_docs
-    retrieved: '2026-10-10'
-    quote: Learn more about Connect IQ and start using our free SDK.
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-30'
+    quote: "Learn more about Connect IQ and start using our free SDK."
+  recheck_by: '2026-11-29'
   note: Participants can export their own Garmin account data; the pages describing this are script-rendered and not quoted.
-    The unofficial Garth library, used by many tools to pull Garmin Connect data without the developer programme, is deprecated
-    after Garmin changed its auth flow ("Garmin changed their auth flow, breaking the mobile auth approach that Garth depends
-    on", garth.readthedocs.io, read 2026-10-10), so that informal route is unreliable.
+    The Personal API (launched October 2026) is the official route for a participant's own data and replaces the unofficial
+    Garth library, which is deprecated after Garmin changed its auth flow (garth.readthedocs.io, read 2026-10-10).
 - field: rate_limits
   status: not_public
   confidence: Verified
   sources:
   - url: https://developer.garmin.com/gc-developer-program/overview/
     type: vendor_docs
-    retrieved: '2026-10-10'
-    quote: Convenient and secure development against the production environment with throttled access
-  - url: https://developer.garmin.com/gc-developer-program/health-api/
+    retrieved: '2026-10-30'
+  - url: https://developer.garmin.com/gc-developer-program/enterprise/health-api/
     type: vendor_docs
-    retrieved: '2026-10-10'
-  - url: https://developer.garmin.com/gc-developer-program/program-faq/
+    retrieved: '2026-10-30'
+  - url: https://developer.garmin.com/gc-developer-program/enterprise/program-faq/
     type: vendor_docs
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-30'
   - url: https://developerportal.garmin.com/sites/default/files/Garmin%20Connect%20Developer%20Program%20Agreement.pdf
     type: vendor_legal
-    retrieved: '2026-10-10'
-    quote: Garmin reserves the right to charge fees for request volume that exceeds any limits set forth in the Application
-      Requirements.
-  recheck_by: '2026-11-09'
-  note: Evaluation access is throttled and the agreement refers to request-volume limits in the Application Requirements,
-    but no figures are public.
+    retrieved: '2026-10-30'
+    quote: "Garmin reserves the right to charge fees for request volume that exceeds any limits set forth in the Application Requirements."
+  recheck_by: '2026-11-29'
+  note: The agreement refers to request-volume limits in the Application Requirements, but no figures are public. The
+    2026-10-10 overview's line about throttled evaluation access is gone from the relaunched page. Starter's limited user
+    capacity is a user cap, not a request rate (see user_cap).
 - field: retention_terms
   status: stated
   value: Under the agreement's EU Standard Contractual Clauses annex, the licensee keeps personal data for as long as the user
@@ -665,10 +757,10 @@ facts:
   status: unclear
   confidence: Unclear
   sources:
-  - url: https://developer.garmin.com/gc-developer-program/overview/
+  - url: https://developer.garmin.com/gc-developer-program/enterprise/program-faq/
     type: vendor_docs
-    retrieved: '2026-10-10'
-    quote: Stay tuned for more updates on the program
+    retrieved: '2026-10-30'
+    quote: "Enterprise Access: For companies operating at scale, this new model aligns with growth, offering expanded data access, reliability, and enterprise-grade support."
   - url: https://the5krunner.com/2026/09/14/garmin-developer-api-access-paused/
     type: secondary
     retrieved: '2026-10-10'
@@ -677,11 +769,13 @@ facts:
     type: vendor_docs
     retrieved: '2026-10-10'
     quote: Yes, you need to update the SDKs in order to receive new data types.
-  recheck_by: '2026-11-09'
-  note: No API shutdown or deprecation is announced. Garmin has told applicants the programme is being redesigned, with no
-    date or details, so terms or APIs may change. Press links the timing to the July 2025 API Brand Guidelines and Strava's
-    short-lived 2025 lawsuit (BikeRadar quotes Strava on "new developer guidelines for all of its API partners"); that link
-    is press interpretation. Health SDKs must be updated to receive new data types.
+  recheck_by: '2026-11-29'
+  note: >-
+    No API shutdown is announced. In October 2026 Garmin relaunched the Connect Developer Program as Starter and Enterprise
+    tiers; Starter has push delivery only and no historical data, so ping/pull and backfill are now Enterprise features.
+    How existing integrations were moved onto the tiers is not stated on Garmin's pages. Press links the redesign's timing
+    to the July 2025 API Brand Guidelines and Strava's short-lived 2025 lawsuit; that link is press interpretation. Health
+    SDKs must be updated to receive new data types.
 - field: baa
   status: unclear
   confidence: Unclear

@@ -616,28 +616,33 @@ facts:
 - field: app_availability
   scope: LifeData+ (LifeData app)
   status: stated
-  value: LifeData, free, on iOS (App Store id6443996884, first released 2025-05-28, v1.0.17 of 2026-10-10, iOS 18.0 or
-    later) and Android (com.lifedata.lifedata, 100+ downloads, updated Oct 8, 2026). Seller LIFEDATA LLC.
+  value: LifeData, free, on iOS (App Store id6443996884, first released 2025-05-28, v1.0.18 of 2026-10-17, iOS 18.0 or
+    later) and Android (com.lifedata.lifedata, 100+ downloads, updated Oct 20, 2026). Seller LIFEDATA LLC.
   confidence: Verified
   sources:
   - url: https://apps.apple.com/us/app/lifedata/id6443996884
     type: app_store
     quote: Use it to download Studies created by experts using the LifeData web application
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-30'
   - url: https://apps.apple.com/us/app/lifedata/id6443996884
     type: app_store
     quote: Requires iOS 18.0 or later.
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-30'
+  - url: https://apps.apple.com/us/app/lifedata/id6443996884
+    type: app_store
+    quote: Version 1.0.18 Oct 17
+    retrieved: '2026-10-30'
   - url: https://play.google.com/store/apps/details?id=com.lifedata.lifedata&hl=en_US
     type: app_store
     quote: 100+ Downloads
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-30'
   - url: https://play.google.com/store/apps/details?id=com.lifedata.lifedata&hl=en_US
     type: app_store
-    quote: Updated on Oct 8, 2026
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
-  note: Release date and version are from the iTunes lookup API (itunes.apple.com/lookup?id=6443996884) on 2026-10-11.
+    quote: Updated on Oct 20, 2026
+    retrieved: '2026-10-30'
+  recheck_by: '2026-11-29'
+  note: Release date is from the iTunes lookup API (itunes.apple.com/lookup?id=6443996884) on 2026-10-11; version
+    1.0.18 (Oct 17) read on the App Store page 2026-10-30.
     The iOS 18 minimum is a BYOD constraint for participants on older iPhones. The Play data-safety section now says
     the app may share Device or other IDs with third parties (see retention_terms).
 # ---------------- Compliance ----------------
@@ -750,8 +755,7 @@ facts:
 - field: gdpr_statement
   scope: Data Privacy Framework certification
   status: stated
-  value: 'LifeData (Marion, IN) is listed on the Commerce Department''s Data Privacy Framework registry as "Active -
-    Re-certification under Review" under the EU-U.S. DPF, the Swiss-U.S. DPF and the UK Extension, covering HR and
+  value: 'LifeData (Marion, IN) is listed on the Commerce Department''s Data Privacy Framework registry as "Active" under the EU-U.S. DPF, the Swiss-U.S. DPF and the UK Extension, covering HR and
     non-HR data. EU-U.S. and Swiss-U.S. first certified 2018-05-31, UK Extension 2023-10-31, next certification due
     2027-04-28. Verification method: self-assessment. One recorded lapse, 2019-06-30 to 2019-07-08.'
   confidence: Verified
@@ -759,30 +763,33 @@ facts:
   - url: https://www.dataprivacyframework.gov/list
     fetch_url: https://dpfapi.azurewebsites.net/api/participants/6382
     type: certificate
-    quote: EU-US Certification Active - Re-certification under Review 2018-05-31T12:00:00+00:00
-      2027-04-28T12:00:00+00:00
-    retrieved: '2026-10-11'
+    quote: EU-US Certification Active 2018-05-31T12:00:00+00:00 2027-04-28T12:00:00+00:00
+    retrieved: '2026-10-30'
   - url: https://www.dataprivacyframework.gov/list
     fetch_url: https://dpfapi.azurewebsites.net/api/participants/6382
     type: certificate
-    quote: UK Extension Certification Active - Re-certification under Review 2023-10-31T12:00:00+00:00
-      2027-04-28T12:00:00+00:00
-    retrieved: '2026-10-11'
+    quote: UK Extension Certification Active 2023-10-31T12:00:00+00:00 2027-04-28T12:00:00+00:00
+    retrieved: '2026-10-30'
+  - url: https://www.dataprivacyframework.gov/list
+    fetch_url: https://dpfapi.azurewebsites.net/api/participants/6382
+    type: certificate
+    quote: SW-US Certification Active 2018-05-31T12:00:00+00:00 2027-04-28T12:00:00+00:00
+    retrieved: '2026-10-30'
   - url: https://www.dataprivacyframework.gov/list
     fetch_url: https://dpfapi.azurewebsites.net/api/participants/6382
     type: certificate
     quote: Lapse 2019-06-30T12:00:00+00:00 2019-07-08T12:00:00+00:00
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-30'
   - url: https://www.dataprivacyframework.gov/list
     fetch_url: https://dpfapi.azurewebsites.net/api/participants/6382
     type: certificate
     quote: Self-Assessment
-    retrieved: '2026-10-11'
-  recheck_by: '2027-01-09'
+    retrieved: '2026-10-30'
+  recheck_by: '2027-01-28'
   note: Coordinator read the registry in a browser on 2026-10-11 ("LifeData, Marion, IN", same status, all three
     frameworks, HR and non-HR); the JSON behind the list (participant 6382) gives the dates. The registered privacy
-    policy is the June 12, 2024 version. "Re-certification under Review" means the annual re-certification is being
-    processed; the listing remains Active. A DPF listing confirms the transfer mechanism, not GDPR compliance as a
+    policy is the June 12, 2024 version (still so on 2026-10-30). On 2026-10-11 all three showed "Active -
+    Re-certification under Review"; on 2026-10-30 the JSON gave plain "Active" for all three, dates unchanged. A DPF listing confirms the transfer mechanism, not GDPR compliance as a
     whole.
 - field: iso27001
   status: not_public

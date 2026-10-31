@@ -12,7 +12,7 @@ put the newest at the bottom of its section.
 | # | Check | Why | Record or file | Due |
 |---|---|---|---|---|
 | 1 | Fitrockr: /pricing/, /features/, /help-center/pricing-plans-payment/, 2026-09-19 terms and privacy policy | Most Fitrockr facts are Reported because the site blocks scripts | `facts/fitrockr.yaml` | 2026-11-04 |
-| 2 | WHOOP: research, unite, membership, bulk-buy, terms-of-sale, privacy pages | 15 facts fell due 2026-10-24 and cite pages that return 403 to scripts | `facts/whoop.yaml` | overdue from 2026-10-24 |
+| 2 | WHOOP: research, unite, membership, bulk-buy, terms-of-sale, privacy pages | 13 facts fell due 2026-10-24 (device price and FDA re-read by script 2026-10-30) and cite pages that return 403 to scripts | `facts/whoop.yaml` | overdue from 2026-10-24 |
 | 3 | Circular: liquidation entry in BODACC (Circular SAS, SIREN 850 542 804) | Read once through a robots-disallowed API; record now rests on societe.com | `facts/circular.yaml` | none |
 | 4 | Circular: is the Ring 2 $349 or $299 (promotion or stale copy)? | `device_price` is a conflict | `facts/circular.yaml` | none |
 | 5 | Zepp: look up ISO/IEC 27001 certificate IS 743462 in the certifier's directory; check the 2024 vs 2025 renewal year in the Form 20-F on sec.gov | Would raise `iso27001` from Unclear | `facts/zepp-amazfit.yaml` | none |
@@ -57,7 +57,7 @@ Generator for more sheets: `python3 tools/facts/confirm_sheet.py <company>`.
 | 3 | Point the Monday literature scan at `main`, and add `www.ebi.ac.uk`, `pmc.ncbi.nlm.nih.gov`, `www.ncbi.nlm.nih.gov` to its network allowlist | claude.ai Routines UI |
 | 4 | Compliance fields for a platform with no hosted service: `not_applicable` (Purple Robot now) or `not_public` (AWARE, Beiwe)? | `facts/purple-robot.yaml` |
 | 5 | LinkedIn draft still says 83 open questions; it is 79 now | your draft |
-| 6 | Delete the merged scan branches `claude/hopeful-fermat-crstik` and `claude/hopeful-fermat-7k2zdt` on GitHub (both merged into `main` on 2026-10-24; the session's permission check blocks deleting remote branches) | GitHub branches page |
+| 6 | Delete the merged scan branches `claude/hopeful-fermat-crstik`, `claude/hopeful-fermat-7k2zdt` and `claude/hopeful-fermat-bt544r` on GitHub (merged into `main` on 2026-10-24 and 2026-10-30; the session's permission check blocks deleting remote branches) | GitHub branches page |
 
 ## Done
 

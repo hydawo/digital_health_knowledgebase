@@ -269,13 +269,13 @@ facts:
     type: vendor_page
     quote: Try WHOOP free for 1 month. Trial includes Peak membership, 5.0 hardware, Onyx SuperKnit band, battery pack,
       and more.
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-30'
   - url: https://trackervs.com/pricing/whoop-pricing/
     type: secondary
     quote: WHOOP is the only major wearable where the hardware is free but the band stops working the second you stop
       paying.
-    retrieved: '2026-10-10'
-  recheck_by: '2026-10-24'
+    retrieved: '2026-10-30'
+  recheck_by: '2026-11-29'
   note: The same capture lists 14+ day battery life for 5.0 and MG.
 - field: subscription_price
   status: stated
@@ -871,7 +871,7 @@ facts:
     type: secondary
     quote: No, Irregular Heart Rhythm Notifications (IHRN) are not currently available in the United States due to
       regulatory restrictions.
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-30'
     note: Reply by a WHOOP staff account, 2025-05-09.
   - url: https://www.whoop.com/us/en/membership/
     fetch_url: https://web.archive.org/web/20261002041123/https://www.whoop.com/us/en/membership/
@@ -882,9 +882,9 @@ facts:
       currently available in every region".
   - url: https://api.fda.gov/device/510k.json?search=applicant:whoop
     type: regulator_db
-    retrieved: '2026-10-10'
-    note: One result, K243236 (ECG). No IHRN record.
-  recheck_by: '2026-10-24'
+    retrieved: '2026-10-30'
+    note: One result, K243236 (ECG). No IHRN record (same on 2026-10-30).
+  recheck_by: '2027-01-28'
 - field: data_residency
   status: stated
   value: Personal data is processed in the United States; a 2023 WHOOP FAQ says it is stored in AWS West. No

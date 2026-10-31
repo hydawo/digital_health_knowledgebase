@@ -289,7 +289,7 @@
 
 | Fact | Value |
 |---|---|
-| Device or hardware list price | No separate device price; each membership includes the hardware (WHOOP 5.0 on One and Peak, WHOOP MG on Life) [R, 2026-10-10] |
+| Device or hardware list price | No separate device price; each membership includes the hardware (WHOOP 5.0 on One and Peak, WHOOP MG on Life) [R, 2026-10-30] |
 | Consumer subscription or membership price | US, vendor page: One $199/yr, Peak $239/yr, Life $359/yr. Canada, vendor page capture of 2026-10-02: One CA$259/yr, Peak CA$349/yr, Life CA$529/yr [V, 2026-10-10] |
 | Research or academic pricing or discount | Not public [2026-10-10] |
 | Fees for API, SDK, platform or data access | **Developer API:** No charge for the Developer Platform or API; WHOOP may start charging with prior notice. Each user needs a WHOOP membership [V, 2026-10-10]<br>**Research partnerships:** Research routes have carried extra fees. The 2023 Unite FAQ priced API extraction separately, and a 2026 tutorial reports a paid web application for viewing and downloading group data. Current fees are not published [R, 2026-10-10] |
@@ -320,7 +320,7 @@
 | Published GDPR statement | The privacy policy has a GDPR notice for European residents, names WHOOP, Inc. as controller, Whoop Limited (Dublin) as EU representative and a UK representative. A 2023 WHOOP FAQ called WHOOP GDPR compliant [R, 2026-10-10] |
 | ISO/IEC 27001 status and evidence | Not public [2026-10-10] |
 | SOC 2 status and evidence | The only claim found is a 2022 WHOOP study-onboarding deck listing SOC 2 among its compliance claims; no current report, trust page or attestation found [R, 2026-10-10] |
-| FDA clearances, from the FDA database | One 510(k): K243236, WHOOP ECG (electrocardiogram) Feature (1.0), OTC ECG software, product code QDA, cleared 2025-04-04. Blood Pressure Insights is not cleared: FDA warning letter of 2025-07-14; the close-out letter of 2026-06-17 says FDA does not intend to enforce for BPI as modified [V, 2026-10-10]<br>**Irregular Heart Rhythm Notifications:** Listed on the Life membership but not available in the US; WHOOP staff cited regulatory restrictions (May 2025), and openFDA shows no 510(k) for it [R, 2026-10-10] |
+| FDA clearances, from the FDA database | One 510(k): K243236, WHOOP ECG (electrocardiogram) Feature (1.0), OTC ECG software, product code QDA, cleared 2025-04-04. Blood Pressure Insights is not cleared: FDA warning letter of 2025-07-14; the close-out letter of 2026-06-17 says FDA does not intend to enforce for BPI as modified [V, 2026-10-10]<br>**Irregular Heart Rhythm Notifications:** Listed on the Life membership but not available in the US; WHOOP staff cited regulatory restrictions (May 2025), and openFDA shows no 510(k) for it [R, 2026-10-30] |
 | Where data is stored, and residency options | Personal data is processed in the United States; a 2023 WHOOP FAQ says it is stored in AWS West. No residency options published [R, 2026-10-10] |
 
 <!-- facts:end -->

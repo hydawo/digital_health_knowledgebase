@@ -2,6 +2,17 @@
 
 ---
 
+## 2026-10-30 (later) - Weekly fact check of 2026-10-26 worked; scan 2026-10-26 merged
+
+- **Scan 2026-10-26** merged (`verify_scan_additions.py`, 0 flags). Barnard 2026 (Oura) and Paterson 2026 (WHOOP) moved to Tier C Verified from quoted disclosures; Paterson was funded by Actus Nutrition and the National Dairy Council, not WHOOP. Both CC BY, PDFs on the manual sweep (#18). The queued Withings study, Ghazi 2026 (BMJ Open), was screened from full text and profiled (75 profiles).
+- **Fact report 2026-10-26** (46 quotes missing, 6 reworded, 13 dead links, 15 overdue) worked by three fact keepers; reports in `facts/_reports/2026-10-30-worked-*.md`. Fitbit, RADAR-base and Fitabase deprecation items were done in the Fitbit pass above.
+- **Garmin reopened (Verified):** the Connect Developer Program is open again as Starter Access (push only, no history, limited users) and Enterprise Access (history, ping/pull, unlimited users, tailored terms), plus a Personal API. Dated to 21 October by two secondary sources (Corroborated). Enhanced BBI is now Enterprise only; the licence-fee wording is gone. Q127 closed (83 open). Garmin profile, Module 1 matrix, README, intermediaries, atlas and explorer updated.
+- **Withings:** both public Advanced Research API pages were removed between 2026-10-13 and 2026-10-26 and redirect to the portal home. program_status now Unclear; quotes rest on Wayback captures. Matrix, atlas, Q10 and Q43 note it.
+- **Avicenna:** site redesigned; /legal is now an index and the texts moved unchanged. Minimum Android now 10.0. Some marketing wording (real-time raw data, data to your own servers) is gone and the values were reworded.
+- **CARP:** docs site rebuilt; every fact re-cited. Two claims dropped because their content is gone (researcher accounts by invitation, China TestFlight route).
+- **Prices and status:** Ultrahuman's Max plan is now $29.97 for 3 months or $99.99 a year (was "from $9.99/mo"); Terra's streaming add-on can now be bought on its own; LifeData's Data Privacy Framework entry is plain "Active" (re-certification note gone); GENEAcore is GPL (>= 3), first on CRAN in April 2025 not 2026; ActiLife v7.3.3.0 (2026-08-03).
+- **Not resolved:** 13 WHOOP facts need a browser (manual sweep #2); six Avicenna not_public facts cite the /legal index.
+
 ## 2026-10-30 - Fitbit follow-up: turn-off moved to 2 November; RADAR-base Google Health converters released
 
 - **Date change (Verified, primary):** Google's About the Google Health API page, last updated 2026-10-23, now gives **2 November 2026** as the turn-off for the legacy Fitbit Web API and the Fitbit OAuth endpoints, after which requests return HTTP 410 Gone. It was 30 October (and 30 September before that). The site-wide banner on every developers.google.com/health page says the same. The older dev.fitbit.com Web API pages still say 30 October; Google's newer page governs. Fitabase's migration pages still say 30 October too.
