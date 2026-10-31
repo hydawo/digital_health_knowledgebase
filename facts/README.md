@@ -73,6 +73,10 @@ Sites whose own terms forbid automated collection (listed in `TERMS_BLOCKED_HOST
 `tools/facts/common.py`, currently activinsights.com and evidation.com) are never fetched by script, even where
 robots.txt allows it; their sources go straight to "check by hand".
 
+Zendesk help centres that block scripts (Empatica academic support, Withings support) are read
+through their public Help Center API: `fetch_url: https://<host>/api/v2/help_center/en-us/articles/<id>.json`.
+The article body arrives as HTML inside JSON; `json_strings` strips it.
+
 ## Automatic re-check extension
 
 Added 2026-10-22. Each Monday run also moves `recheck_by` forward, by the field's interval, for any

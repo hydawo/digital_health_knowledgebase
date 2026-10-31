@@ -18,35 +18,77 @@
   "last_status": "unreachable",
   "unreachable_weeks": 4
  },
+ "https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features via https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36980797675549.json": {
+  "fingerprint": "402a354da74dfc2030cf6952c40e1caff765800782cae82a7eed15f6d1c5a91a",
+  "last_checked": "2026-10-31",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
  "https://academic-support.empatica.com/hc/en-us/articles/36980824207261-How-the-Empatica-Health-Monitoring-Platform-works": {
   "last_checked": "2026-10-31",
   "last_status": "unreachable",
   "unreachable_weeks": 4
+ },
+ "https://academic-support.empatica.com/hc/en-us/articles/36980824207261-How-the-Empatica-Health-Monitoring-Platform-works via https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36980824207261.json": {
+  "fingerprint": "cb4e4759a5ad8ca30e70161e36ae32a69b7db81f784026eac578c02cfd5ed664",
+  "last_checked": "2026-10-31",
+  "last_status": "ok",
+  "unreachable_weeks": 0
  },
  "https://academic-support.empatica.com/hc/en-us/articles/36980846789277-Monitoring-Participant-Digital-Biomarkers": {
   "last_checked": "2026-10-31",
   "last_status": "unreachable",
   "unreachable_weeks": 4
  },
+ "https://academic-support.empatica.com/hc/en-us/articles/36980846789277-Monitoring-Participant-Digital-Biomarkers via https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36980846789277.json": {
+  "fingerprint": "515af8228d71e2c3ad4150354e7f0243dfc5efd750c66067a23cda405849602e",
+  "last_checked": "2026-10-31",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
  "https://academic-support.empatica.com/hc/en-us/articles/36981014631837-Generating-and-Revoking-Data-Access-Keys": {
   "last_checked": "2026-10-31",
   "last_status": "unreachable",
   "unreachable_weeks": 4
+ },
+ "https://academic-support.empatica.com/hc/en-us/articles/36981014631837-Generating-and-Revoking-Data-Access-Keys via https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36981014631837.json": {
+  "fingerprint": "009b77df0b855865c1787837207c3917f801c83178677053e0afb539004ec863",
+  "last_checked": "2026-10-31",
+  "last_status": "ok",
+  "unreachable_weeks": 0
  },
  "https://academic-support.empatica.com/hc/en-us/articles/36981046788765-Raw-Data-in-the-Empatica-Cloud": {
   "last_checked": "2026-10-31",
   "last_status": "unreachable",
   "unreachable_weeks": 4
  },
+ "https://academic-support.empatica.com/hc/en-us/articles/36981046788765-Raw-Data-in-the-Empatica-Cloud via https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36981046788765.json": {
+  "fingerprint": "71d195dc05d1616758e8983bddea6e86cc1127126457b061fb396dca4e19e631",
+  "last_checked": "2026-10-31",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
  "https://academic-support.empatica.com/hc/en-us/articles/36981086545181-Accessing-Data-on-the-S3-Bucket": {
   "last_checked": "2026-10-31",
   "last_status": "unreachable",
   "unreachable_weeks": 4
  },
+ "https://academic-support.empatica.com/hc/en-us/articles/36981086545181-Accessing-Data-on-the-S3-Bucket via https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36981086545181.json": {
+  "fingerprint": "c59fe6c4e27cfd8169c79142673750e355a152ebb8888fc0479411d09f28f8e6",
+  "last_checked": "2026-10-31",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
  "https://academic-support.empatica.com/hc/en-us/articles/38901007393053-What-is-a-Sensor-Mode": {
   "last_checked": "2026-10-31",
   "last_status": "unreachable",
   "unreachable_weeks": 4
+ },
+ "https://academic-support.empatica.com/hc/en-us/articles/38901007393053-What-is-a-Sensor-Mode via https://academic-support.empatica.com/api/v2/help_center/en-us/articles/38901007393053.json": {
+  "fingerprint": "2b805ed7c1054c7579c7dd4c21397bc914eb880ba0ce5d98c9b26f24508ab860",
+  "last_checked": "2026-10-31",
+  "last_status": "ok",
+  "unreachable_weeks": 0
  },
  "https://academic.ametris.com/": {
   "consecutive_changes": 0,
@@ -467,7 +509,7 @@
   "unreachable_weeks": 0
  },
  "https://api.fda.gov/device/510k.json?search=applicant:empatica&limit=50": {
-  "consecutive_changes": 3,
+  "consecutive_changes": 0,
   "fingerprint": "2550844beaa5b12452adf7decf9e28783f7da4bb76c97652089246c7eaabc83c",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -539,7 +581,7 @@
   "unreachable_weeks": 0
  },
  "https://api.fda.gov/device/510k.json?search=applicant:withings&limit=100": {
-  "consecutive_changes": 3,
+  "consecutive_changes": 0,
   "fingerprint": "60c52627c17b29e7169d60fa091b5676c50dfc57741ab8a053e1d031fa523f03",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -736,7 +778,7 @@
   "unreachable_weeks": 0
  },
  "https://api.fda.gov/device/registrationlisting.json?search=k_number:K201456 via https://api.fda.gov/device/registrationlisting.json?search=k_number:K201456&limit=100": {
-  "consecutive_changes": 1,
+  "consecutive_changes": 0,
   "fingerprint": "27b3c74b69eb0f014277e0a7ac5007042e61a5a14a7a4b4630177f946b21aa24",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -750,7 +792,7 @@
   "unreachable_weeks": 0
  },
  "https://api.fda.gov/device/registrationlisting.json?search=k_number:K223374 via https://api.fda.gov/device/registrationlisting.json?search=k_number:K223374&limit=100": {
-  "consecutive_changes": 1,
+  "consecutive_changes": 0,
   "fingerprint": "9957fc62e623eb4e3e688f09a4137a8589fd04eff7e26a0b9f0dd0a397baf7cc",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -764,7 +806,7 @@
   "unreachable_weeks": 0
  },
  "https://api.fda.gov/device/registrationlisting.json?search=k_number:K230812 via https://api.fda.gov/device/registrationlisting.json?search=k_number:K230812&limit=100": {
-  "consecutive_changes": 1,
+  "consecutive_changes": 0,
   "fingerprint": "0eed61c9e3d9eae309109de0e0987eca7f5d45b74a578bfd51eb5d32d90437b7",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -778,7 +820,7 @@
   "unreachable_weeks": 0
  },
  "https://api.fda.gov/device/registrationlisting.json?search=k_number:K240102 via https://api.fda.gov/device/registrationlisting.json?search=k_number:K240102&limit=100": {
-  "consecutive_changes": 1,
+  "consecutive_changes": 0,
   "fingerprint": "59e6ef64b0cfd9465ac4074198b774b5bb0886d6b88a25a93f347729c60c5981",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -1082,8 +1124,8 @@
   "unreachable_weeks": 0
  },
  "https://apps.apple.com/us/app/empatica-care-lab/id6443699123": {
-  "consecutive_changes": 3,
-  "fingerprint": "cf42f4deb5ff3890a781fbbc42a042f3e8c716c12e46594647264f3a24b3b7ee",
+  "consecutive_changes": 4,
+  "fingerprint": "f05dda322ec56d029b5267910d6c434cc769f5c8a82715a1e6e82173a538e335",
   "last_checked": "2026-10-31",
   "last_status": "ok",
   "noisy": true,
@@ -2819,6 +2861,7 @@
   "unreachable_weeks": 0
  },
  "https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data via https://web.archive.org/web/20260521180015/https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data/": {
+  "consecutive_changes": 0,
   "fingerprint": "cb03b80249462754fb2f595b433cc6c39f1c459d40f80dfd63811e6adf5abff2",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -2859,6 +2902,7 @@
   "unreachable_weeks": 0
  },
  "https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis via https://web.archive.org/web/20261013090128/https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis/": {
+  "consecutive_changes": 0,
   "fingerprint": "559ce08b91378a69f8d6580f01e9aae6dbda24ab2f81aced3ebe3572011602d4",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -6619,6 +6663,12 @@
   "last_status": "ok",
   "unreachable_weeks": 0
  },
+ "https://pmc.ncbi.nlm.nih.gov/articles/PMC11644628/ via https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11644628/fullTextXML": {
+  "fingerprint": "f954488c755e86a6c117e622b6b440d7dee16cf3a18d886ae6930a46f92bbca5",
+  "last_checked": "2026-10-31",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
  "https://pmc.ncbi.nlm.nih.gov/articles/PMC11699500/": {
   "consecutive_changes": 0,
   "fingerprint": "fabda2854e3e286111c5e835bdf2ddd360baae0f2254d4f43877634d16e304e6",
@@ -7384,15 +7434,33 @@
   "last_status": "unreachable",
   "unreachable_weeks": 4
  },
+ "https://support.withings.com/hc/articles/8986672043153 via https://support.withings.com/api/v2/help_center/en-us/articles/8986672043153.json": {
+  "fingerprint": "058f47ee97a2dd22875896423c35836e2109f88e6f66353c295d191441876385",
+  "last_checked": "2026-10-31",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
  "https://support.withings.com/hc/en-us/articles/11132728427921-Withings-Terms-and-Conditions": {
   "last_checked": "2026-10-31",
   "last_status": "unreachable",
   "unreachable_weeks": 4
  },
+ "https://support.withings.com/hc/en-us/articles/11132728427921-Withings-Terms-and-Conditions via https://support.withings.com/api/v2/help_center/en-us/articles/11132728427921.json": {
+  "fingerprint": "36f7c47692be90c917ff1a23ca5e11aff75844ac84b2801c750337638ff33a6b",
+  "last_checked": "2026-10-31",
+  "last_status": "ok",
+  "unreachable_weeks": 0
+ },
  "https://support.withings.com/hc/en-us/articles/360001391287-Privacy-How-can-I-export-my-data": {
   "last_checked": "2026-10-31",
   "last_status": "unreachable",
   "unreachable_weeks": 4
+ },
+ "https://support.withings.com/hc/en-us/articles/360001391287-Privacy-How-can-I-export-my-data via https://support.withings.com/api/v2/help_center/en-us/articles/360001391287.json": {
+  "fingerprint": "6b67b0a7eab871e47536b8a0b1b2bb448b03d698456cc57805d58c68579d68ff",
+  "last_checked": "2026-10-31",
+  "last_status": "ok",
+  "unreachable_weeks": 0
  },
  "https://support.workbench.verily.com/docs/guides/admin/licensing_tiers/": {
   "consecutive_changes": 0,
@@ -7900,7 +7968,7 @@
  "https://www.accessdata.fda.gov/cdrh_docs/pdf20/K201456.pdf": {
   "last_checked": "2026-10-31",
   "last_status": "unreachable",
-  "unreachable_weeks": 4
+  "unreachable_weeks": 5
  },
  "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPCD/classification.cfm?id=IKK via https://api.fda.gov/device/classification.json?search=product_code:IKK": {
   "consecutive_changes": 3,
@@ -7935,7 +8003,7 @@
   "unreachable_weeks": 0
  },
  "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRES/res.cfm?id=198114 via https://api.fda.gov/device/enforcement.json?search=recall_number.exact:\"Z-1280-2023\"": {
-  "consecutive_changes": 3,
+  "consecutive_changes": 0,
   "fingerprint": "253de9ee7449fa33434548115d7aaae93898f351e2e9966729ce6fe6c20e3fc2",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -7943,7 +8011,7 @@
   "unreachable_weeks": 0
  },
  "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRES/res.cfm?id=198114 via https://api.fda.gov/device/recall.json?search=cfres_id:198114": {
-  "consecutive_changes": 3,
+  "consecutive_changes": 0,
   "fingerprint": "53120520a328bee90b99c0dccd729700b8cdf92ccb0ebeaacec2540231b015bb",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -8183,7 +8251,7 @@
   "unreachable_weeks": 0
  },
  "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K110872 via https://api.fda.gov/device/510k.json?search=k_number:K110872": {
-  "consecutive_changes": 3,
+  "consecutive_changes": 0,
   "fingerprint": "58b247ffa5cb96c0294250ac714a90972182befb0d5e3ed571d7d4cb30657ee8",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -8191,7 +8259,7 @@
   "unreachable_weeks": 0
  },
  "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K133125 via https://api.fda.gov/device/510k.json?search=k_number:K133125": {
-  "consecutive_changes": 3,
+  "consecutive_changes": 0,
   "fingerprint": "68fec23140cb24cf7397487dcdd7630bf0bf1943b2eb53921fa8cc147e2794be",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -8199,7 +8267,7 @@
   "unreachable_weeks": 0
  },
  "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K140086 via https://api.fda.gov/device/510k.json?search=k_number:K140086": {
-  "consecutive_changes": 3,
+  "consecutive_changes": 0,
   "fingerprint": "2b0b9381297e7a482a566ee36eaad12425ed85318f19cf211f7ede2f10730df9",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -8207,7 +8275,7 @@
   "unreachable_weeks": 0
  },
  "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K160544 via https://api.fda.gov/device/510k.json?search=k_number:K160544": {
-  "consecutive_changes": 3,
+  "consecutive_changes": 0,
   "fingerprint": "ed9d2fb5c84670384793f2437d912824393ce9133d91a53f1ababf7f2e4a0c29",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -8215,7 +8283,7 @@
   "unreachable_weeks": 0
  },
  "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K161717 via https://api.fda.gov/device/510k.json?search=k_number:K161717": {
-  "consecutive_changes": 3,
+  "consecutive_changes": 0,
   "fingerprint": "b6f2caad72dc532fc9e9848261f6b6ecbf432168bd6d859878a9a284e4dbe803",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -8223,7 +8291,7 @@
   "unreachable_weeks": 0
  },
  "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K172935 via https://api.fda.gov/device/510k.json?search=k_number:K172935": {
-  "consecutive_changes": 3,
+  "consecutive_changes": 0,
   "fingerprint": "a42370a13ffd1443ef81c291839a788de473ba48845fafa61adc3119f2e58ea0",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -8239,7 +8307,7 @@
   "unreachable_weeks": 0
  },
  "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K181861 via https://api.fda.gov/device/510k.json?search=k_number:K181861": {
-  "consecutive_changes": 3,
+  "consecutive_changes": 0,
   "fingerprint": "e49dfdd0ce56b00c9c4b9bc6384bf9d0bd508d3ae7f8344d001e2a08e93a0e0a",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -8277,7 +8345,7 @@
   "unreachable_weeks": 0
  },
  "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K201456 via https://api.fda.gov/device/510k.json?search=k_number:K201456": {
-  "consecutive_changes": 3,
+  "consecutive_changes": 0,
   "fingerprint": "6aedc9fe0458dfff68a029e5dbb469ac694cb9e3cb71196637aab78149a4aeac",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -8293,7 +8361,7 @@
   "unreachable_weeks": 0
  },
  "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K211887 via https://api.fda.gov/device/510k.json?search=k_number:K211887": {
-  "consecutive_changes": 3,
+  "consecutive_changes": 0,
   "fingerprint": "54f56ed754aa784ea0a6d699a928612fc4d69b9645ec4335bee7eb987dddc852",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -8332,7 +8400,7 @@
   "unreachable_weeks": 0
  },
  "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K221282 via https://api.fda.gov/device/510k.json?search=k_number:K221282": {
-  "consecutive_changes": 3,
+  "consecutive_changes": 0,
   "fingerprint": "d030cf5dc578e59cb32db7afeec7f178f1f99f28003f2948106b94a16b7d891a",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -8361,7 +8429,7 @@
   "unreachable_weeks": 0
  },
  "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K223374 via https://api.fda.gov/device/510k.json?search=k_number:K223374": {
-  "consecutive_changes": 3,
+  "consecutive_changes": 0,
   "fingerprint": "955d47a9066853c38bbcba59a4d28a55a582deec1b4f251549982f1e244afc3b",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -8377,7 +8445,7 @@
   "unreachable_weeks": 0
  },
  "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K230457 via https://api.fda.gov/device/510k.json?search=k_number:K230457": {
-  "consecutive_changes": 3,
+  "consecutive_changes": 0,
   "fingerprint": "337f12a222cde70065988c273effd794ecf6d07fb17e36b64a48ba6412f9b1a7",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -8385,7 +8453,7 @@
   "unreachable_weeks": 0
  },
  "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K230812 via https://api.fda.gov/device/510k.json?search=k_number:K230812": {
-  "consecutive_changes": 3,
+  "consecutive_changes": 0,
   "fingerprint": "b68afd4e331a37e8d5abb61316a5c245b602e536aa95c75dc193e6ff6d9706c3",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -8409,7 +8477,7 @@
   "unreachable_weeks": 0
  },
  "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K231667 via https://api.fda.gov/device/510k.json?search=k_number:K231667": {
-  "consecutive_changes": 3,
+  "consecutive_changes": 0,
   "fingerprint": "179e93afe4967c3e58ebed7f4c2fed8986acb135ca719fb4821dc41f7d999952",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -8417,7 +8485,7 @@
   "unreachable_weeks": 0
  },
  "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K232915 via https://api.fda.gov/device/510k.json?search=k_number:K232915": {
-  "consecutive_changes": 3,
+  "consecutive_changes": 0,
   "fingerprint": "1b2ce2f9d95fe7eb7272f70f2bfcab4b3fe6bca71716ecf4a93ad7883b0ab720",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -8425,7 +8493,7 @@
   "unreachable_weeks": 0
  },
  "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K240102 via https://api.fda.gov/device/510k.json?search=k_number:K240102": {
-  "consecutive_changes": 3,
+  "consecutive_changes": 0,
   "fingerprint": "10073e7d404d9caa184149b5f586747e5557b476977aa862a447fdf34625834f",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -8433,7 +8501,7 @@
   "unreachable_weeks": 0
  },
  "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K240795 via https://api.fda.gov/device/510k.json?search=k_number:K240795": {
-  "consecutive_changes": 3,
+  "consecutive_changes": 0,
   "fingerprint": "4a87758d246f0f6dafc5f9482a9dfa2b3012026c5400ddd4f2c309e45899bb00",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -8465,7 +8533,7 @@
   "unreachable_weeks": 0
  },
  "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K242737 via https://api.fda.gov/device/510k.json?search=k_number:K242737": {
-  "consecutive_changes": 3,
+  "consecutive_changes": 0,
   "fingerprint": "257c9818ec2dd1932f9368a67e6cf32837eab637bcaea01a10536a160edfbbc3",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -8513,7 +8581,7 @@
   "unreachable_weeks": 0
  },
  "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K250515 via https://api.fda.gov/device/510k.json?search=k_number:K250515": {
-  "consecutive_changes": 3,
+  "consecutive_changes": 0,
   "fingerprint": "d159f0643cc1f230c2905548a37831a388049bd51fee875b93c00d6da3550c33",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -8521,7 +8589,7 @@
   "unreachable_weeks": 0
  },
  "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K252474 via https://api.fda.gov/device/510k.json?search=k_number:K252474": {
-  "consecutive_changes": 3,
+  "consecutive_changes": 0,
   "fingerprint": "30dca0476e82b01b035b354fae51ccb6f999e4b11ae47c20c9b71c29c96512df",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -8529,7 +8597,7 @@
   "unreachable_weeks": 0
  },
  "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K252981 via https://api.fda.gov/device/510k.json?search=k_number:K252981": {
-  "consecutive_changes": 3,
+  "consecutive_changes": 0,
   "fingerprint": "be06a6daee6d5dfb772a5291ef5422facb93ce4750ffed28cccbf96e64f1771c",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -8545,7 +8613,7 @@
   "unreachable_weeks": 0
  },
  "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K260374 via https://api.fda.gov/device/510k.json?search=k_number:K260374": {
-  "consecutive_changes": 3,
+  "consecutive_changes": 0,
   "fingerprint": "db226fc3a7856a9eeca04ba6711207b94653cf79e5fd1811a22cf039ee9f8a7c",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -8876,7 +8944,7 @@
   "unreachable_weeks": 0
  },
  "https://www.empatica.com/": {
-  "consecutive_changes": 3,
+  "consecutive_changes": 0,
   "fingerprint": "49d08ffe904a8746a7b4330893f72d7ec51274f522e1eebdd61924dfb8329cff",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -8884,35 +8952,35 @@
   "unreachable_weeks": 0
  },
  "https://www.empatica.com/blog/": {
-  "consecutive_changes": 2,
+  "consecutive_changes": 0,
   "fingerprint": "b149644a1a36310d7cc8d37703c8a5e719867e23edc3badfc84af808788dacaa",
   "last_checked": "2026-10-31",
   "last_status": "ok",
   "unreachable_weeks": 0
  },
  "https://www.empatica.com/blog/embracemini-is-now-available-for-academic-and-basic-research-plan/": {
-  "consecutive_changes": 1,
+  "consecutive_changes": 0,
   "fingerprint": "5683938a4a4761e51791fbbbf524bb30707c73ba8c00bfcc07994eb93683e25c",
   "last_checked": "2026-10-31",
   "last_status": "ok",
   "unreachable_weeks": 0
  },
  "https://www.empatica.com/blog/empatica-acquires-pkg-health-to-transform-parkinson-s-disease-monitoring/": {
-  "consecutive_changes": 1,
+  "consecutive_changes": 0,
   "fingerprint": "4b5f5a3b2a0987cd63ea7e2064e90e88dc9f88d3f984a1a5dcf3b49ffecbc62a",
   "last_checked": "2026-10-31",
   "last_status": "ok",
   "unreachable_weeks": 0
  },
  "https://www.empatica.com/blog/empatica-and-mcroberts-partnership-achieves-20-endpoints-and-opens-platform-to-external-algorithm-developers/": {
-  "consecutive_changes": 1,
+  "consecutive_changes": 0,
   "fingerprint": "613ff36839b5ee474b99b831addbbce81f84522839fd6ce626691efee97d1df4",
   "last_checked": "2026-10-31",
   "last_status": "ok",
   "unreachable_weeks": 0
  },
  "https://www.empatica.com/blog/empatica-receives-landmark-fda-pccp-authorization-for-pulse-oximetry/": {
-  "consecutive_changes": 1,
+  "consecutive_changes": 0,
   "fingerprint": "7fbe406a544b2ef90948ecda668c5dcce7bd674e2ad56a0fb4a58e05b025d468",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -8937,7 +9005,7 @@
   "unreachable_weeks": 0
  },
  "https://www.empatica.com/cloud-api": {
-  "consecutive_changes": 1,
+  "consecutive_changes": 0,
   "fingerprint": "8d1cb35065c0e64f1049fb5fd0cec405daba29be0ddef7e42fb8b25ccbe0ad3e",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -8970,7 +9038,7 @@
   "unreachable_weeks": 0
  },
  "https://www.empatica.com/legal/": {
-  "consecutive_changes": 1,
+  "consecutive_changes": 0,
   "fingerprint": "4bd9f4e607fc3f20dbf3695177da6a3b791169dd5d29c179abdb5d9520882fe5",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -8984,28 +9052,28 @@
   "unreachable_weeks": 0
  },
  "https://www.empatica.com/platform/clinical-trials/": {
-  "consecutive_changes": 1,
+  "consecutive_changes": 0,
   "fingerprint": "194459606bd9f0c1322c6a23e05297424a989fb57c2305b52d0ec3ce54ac287f",
   "last_checked": "2026-10-31",
   "last_status": "ok",
   "unreachable_weeks": 0
  },
  "https://www.empatica.com/platform/remote-patient-monitoring/": {
-  "consecutive_changes": 1,
+  "consecutive_changes": 0,
   "fingerprint": "d0b31711d26fdaf507d177acfeb6b7d3bef9aa82de641ff082af3028d5ff11db",
   "last_checked": "2026-10-31",
   "last_status": "ok",
   "unreachable_weeks": 0
  },
  "https://www.empatica.com/platform/research-studies/": {
-  "consecutive_changes": 1,
+  "consecutive_changes": 0,
   "fingerprint": "e664a8dfda6a66a4be13abae4c52306f221a64459566ca6a8f24501c8ff20c59",
   "last_checked": "2026-10-31",
   "last_status": "ok",
   "unreachable_weeks": 0
  },
  "https://www.empatica.com/privacy-participant": {
-  "consecutive_changes": 1,
+  "consecutive_changes": 0,
   "fingerprint": "c38c6097f49803a2f979abad21958f1266aca2bb26fcc4339faf66c92e589b55",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -9018,21 +9086,21 @@
   "unreachable_weeks": 0
  },
  "https://www.empatica.com/purchase-agreement/": {
-  "consecutive_changes": 1,
+  "consecutive_changes": 0,
   "fingerprint": "3f94a3104432c48cec43131004db2169e9ef0a82adea8a1ea49c2cc0a51b5113",
   "last_checked": "2026-10-31",
   "last_status": "ok",
   "unreachable_weeks": 0
  },
  "https://www.empatica.com/research/e4-sunset/": {
-  "consecutive_changes": 1,
+  "consecutive_changes": 0,
   "fingerprint": "232db140eaae2ec3f622e78693279fecb293d8d0ef4c1b8fd040df2cb017e116",
   "last_checked": "2026-10-31",
   "last_status": "ok",
   "unreachable_weeks": 0
  },
  "https://www.empatica.com/store/platform-professional/": {
-  "consecutive_changes": 1,
+  "consecutive_changes": 0,
   "fingerprint": "2683c3cee98eb9bab342185ed6959602ff49da0eb747f4bc80687e7176fb8aa2",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -10993,21 +11061,21 @@
   "unreachable_weeks": 0
  },
  "https://www.withings.com/en-us/pages/research-clinical-trials": {
-  "consecutive_changes": 1,
+  "consecutive_changes": 0,
   "fingerprint": "12e59dd448b2102b005852369344b6a1f3a70c0781048733f9b5384d8ba59c4a",
   "last_checked": "2026-10-31",
   "last_status": "ok",
   "unreachable_weeks": 0
  },
  "https://www.withings.com/en-us/pages/research-request": {
-  "consecutive_changes": 1,
+  "consecutive_changes": 0,
   "fingerprint": "f9b0b6d0311514da94b5aebecd0da6662eafeb1975e49c08d2a90f25adb0033a",
   "last_checked": "2026-10-31",
   "last_status": "ok",
   "unreachable_weeks": 0
  },
  "https://www.withings.com/fr/fr/legal/api-terms-of-use": {
-  "consecutive_changes": 3,
+  "consecutive_changes": 0,
   "fingerprint": "a432d0ba1dda66ea07e4950e6af58d0092c5403c15e6b02a63b0351917a16807",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -11015,22 +11083,22 @@
   "unreachable_weeks": 0
  },
  "https://www.withings.com/pages/withings-api-plans-form": {
-  "consecutive_changes": 1,
+  "consecutive_changes": 0,
   "fingerprint": "311fc37e24cc038fff0399c173bb4d67c0b9532704fe6c19bf02da9b3168b283",
   "last_checked": "2026-10-31",
   "last_status": "ok",
   "unreachable_weeks": 0
  },
  "https://www.withings.com/us/en/beam-o/shop": {
-  "consecutive_changes": 3,
-  "fingerprint": "ce00ae84b69447d78e0674f91184ed67e00259157e0fa69f19855b20d8374597",
+  "consecutive_changes": 4,
+  "fingerprint": "dc1438b12454a10821ddc066375cd38f560bbce2d602b4a5c272ba5eb24c0a3f",
   "last_checked": "2026-10-31",
   "last_status": "ok",
   "noisy": true,
   "unreachable_weeks": 0
  },
  "https://www.withings.com/us/en/data-security": {
-  "consecutive_changes": 1,
+  "consecutive_changes": 0,
   "fingerprint": "d9c93f1602d89d75dd21ae0f17535b7fb8f42f253c9bc51b676c7709e984fd34",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -11049,7 +11117,7 @@
   "unreachable_weeks": 0
  },
  "https://www.withings.com/us/en/legal/api-terms-of-use": {
-  "consecutive_changes": 3,
+  "consecutive_changes": 0,
   "fingerprint": "14db7ce070d29a7481e2a063fdfa57a301a7ae2eb7b43166452f3c0956f41162",
   "last_checked": "2026-10-31",
   "last_status": "ok",
@@ -11057,28 +11125,28 @@
   "unreachable_weeks": 0
  },
  "https://www.withings.com/us/en/legal/privacy-policy": {
-  "consecutive_changes": 1,
+  "consecutive_changes": 0,
   "fingerprint": "869783e140aa0e89f5f0807d576feca7007e28ba01f910d75f5e674d7a148801",
   "last_checked": "2026-10-31",
   "last_status": "ok",
   "unreachable_weeks": 0
  },
  "https://www.withings.com/us/en/scanwatch-2": {
-  "consecutive_changes": 1,
+  "consecutive_changes": 0,
   "fingerprint": "97b9909afcaa992256d6fe31948e713623bdfb087f039b948f7adadb5e52e3f9",
   "last_checked": "2026-10-31",
   "last_status": "ok",
   "unreachable_weeks": 0
  },
  "https://www.withings.com/us/en/scanwatch-light": {
-  "consecutive_changes": 1,
+  "consecutive_changes": 0,
   "fingerprint": "ba4713334157717d9472fbf56ea355f28bd03bb15ff281105b147586eb0b423a",
   "last_checked": "2026-10-31",
   "last_status": "ok",
   "unreachable_weeks": 0
  },
  "https://www.withings.com/us/en/scanwatch-nova": {
-  "consecutive_changes": 1,
+  "consecutive_changes": 0,
   "fingerprint": "396265e8c534d7dfb4798e83f54fdef154735b3da31d25be974539d0652e5982",
   "last_checked": "2026-10-31",
   "last_status": "ok",

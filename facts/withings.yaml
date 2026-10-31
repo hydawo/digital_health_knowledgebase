@@ -278,10 +278,12 @@ facts:
     quote: Withings+ access is $9.95/month (or $99.50/year), charged automatically until you cancel.
     retrieved: '2026-10-31'
   - url: https://support.withings.com/hc/articles/8986672043153
+    fetch_url: https://support.withings.com/api/v2/help_center/en-us/articles/8986672043153.json
     type: vendor_page
     quote: a monthly rate of €9.95 / $9.95 / £8.95 per month or a yearly rate of €99.95 / $99.95 / £89.95 per year
     retrieved: '2026-10-31'
   - url: https://support.withings.com/hc/en-us/articles/11132728427921-Withings-Terms-and-Conditions
+    fetch_url: https://support.withings.com/api/v2/help_center/en-us/articles/11132728427921.json
     type: vendor_legal
     quote: you will be automatically charged 9.95€ (or $9.95 or £8.95) per month
     retrieved: '2026-10-31'
@@ -567,6 +569,7 @@ facts:
     quote: (after rotation, the previous token becomes invalid after 8 hours)
     retrieved: '2026-10-31'
   - url: https://support.withings.com/hc/en-us/articles/360001391287-Privacy-How-can-I-export-my-data
+    fetch_url: https://support.withings.com/api/v2/help_center/en-us/articles/360001391287.json
     type: vendor_docs
     quote: You will get your data in the form of a CSV file, which you can open using any spreadsheet software.
     retrieved: '2026-10-31'

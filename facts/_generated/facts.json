@@ -24287,6 +24287,7 @@
   "sources": [
    {
     "url": "https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features",
+    "fetch_url": "https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36980797675549.json",
     "type": "vendor_docs",
     "retrieved": "2026-10-31",
     "quote": "The Platform features two different plans: Academic & Basic Research or enterprise The two plans differ and are attributed to studies based on their size and nature."
@@ -24341,6 +24342,7 @@
    },
    {
     "url": "https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features",
+    "fetch_url": "https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36980797675549.json",
     "type": "vendor_docs",
     "retrieved": "2026-10-31",
     "quote": "Speak with our Sales Team to understand if you qualify for our Enterprise Plan."
@@ -24360,12 +24362,14 @@
   "sources": [
    {
     "url": "https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features",
+    "fetch_url": "https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36980797675549.json",
     "type": "vendor_docs",
     "retrieved": "2026-10-31",
     "quote": "Academic & Basic Research Can be purchased directly through our Online Store , or through our Sales Team."
    },
    {
     "url": "https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features",
+    "fetch_url": "https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36980797675549.json",
     "type": "vendor_docs",
     "retrieved": "2026-10-31",
     "quote": "Once your purchase is complete, your platform subscription is automatically activated during the shipment of your device(s); no separate license activation step is required."
@@ -24403,6 +24407,7 @@
   "sources": [
    {
     "url": "https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features",
+    "fetch_url": "https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36980797675549.json",
     "type": "vendor_docs",
     "retrieved": "2026-10-31",
     "quote": "Speak with our Sales Team to understand if you qualify for our Enterprise Plan."
@@ -24527,6 +24532,7 @@
    },
    {
     "url": "https://academic-support.empatica.com/hc/en-us/articles/38901007393053-What-is-a-Sensor-Mode",
+    "fetch_url": "https://academic-support.empatica.com/api/v2/help_center/en-us/articles/38901007393053.json",
     "type": "vendor_docs",
     "retrieved": "2026-10-31",
     "quote": "The Sensor Mode cannot be changed once the account has been created."
@@ -24546,6 +24552,7 @@
   "sources": [
    {
     "url": "https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features",
+    "fetch_url": "https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36980797675549.json",
     "type": "vendor_docs",
     "retrieved": "2026-10-31",
     "quote": "Speak with our Sales Team to understand if you qualify for our Enterprise Plan. *MOQ: 100 devices"
@@ -24565,12 +24572,14 @@
   "sources": [
    {
     "url": "https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features",
+    "fetch_url": "https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36980797675549.json",
     "type": "vendor_docs",
     "retrieved": "2026-10-31",
     "quote": "Designed with smaller research studies in mind. For example, an academic study that does not require dedicated Account Manager support."
    },
    {
     "url": "https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features",
+    "fetch_url": "https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36980797675549.json",
     "type": "vendor_docs",
     "retrieved": "2026-10-31",
     "quote": "For example, a clinical trial that requires one-on-one support with IRB submissions, audit trails, and custom materials for global studies."
@@ -24627,6 +24636,7 @@
    },
    {
     "url": "https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features",
+    "fetch_url": "https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36980797675549.json",
     "type": "vendor_docs",
     "retrieved": "2026-10-31",
     "quote": "Each device is purchased as a package that includes the device and its platform subscription."
@@ -24665,6 +24675,7 @@
   "sources": [
    {
     "url": "https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features",
+    "fetch_url": "https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36980797675549.json",
     "type": "vendor_docs",
     "retrieved": "2026-10-31",
     "quote": "Subscription extension Per device, per additional year Starting from $388.80 or €359.64 Starting from $291.60 or €269.73"
@@ -24828,12 +24839,14 @@
    },
    {
     "url": "https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features",
+    "fetch_url": "https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36980797675549.json",
     "type": "vendor_docs",
     "retrieved": "2026-10-31",
     "quote": "Platform subscriptions are only sold together with a device purchased from Empatica, and can only be extended for those devices."
    },
    {
     "url": "https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features",
+    "fetch_url": "https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36980797675549.json",
     "type": "vendor_docs",
     "retrieved": "2026-10-31",
     "quote": "Speak with our Sales Team to understand if you qualify for our Enterprise Plan. *MOQ: 100 devices"
@@ -24889,18 +24902,21 @@
   "sources": [
    {
     "url": "https://academic-support.empatica.com/hc/en-us/articles/36981046788765-Raw-Data-in-the-Empatica-Cloud",
+    "fetch_url": "https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36981046788765.json",
     "type": "vendor_docs",
     "retrieved": "2026-10-31",
     "quote": "Raw data streams contained within Empatica's Avro files are the following: Accelerometer Blood Volume Pulse ElectroDermal Activity (EDA) Gyroscope Steps Systolic Peaks Tags"
    },
    {
     "url": "https://academic-support.empatica.com/hc/en-us/articles/36981046788765-Raw-Data-in-the-Empatica-Cloud",
+    "fetch_url": "https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36981046788765.json",
     "type": "vendor_docs",
     "retrieved": "2026-10-31",
     "quote": "High-frequency raw data is delivered in Avro format."
    },
    {
     "url": "https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features",
+    "fetch_url": "https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36980797675549.json",
     "type": "vendor_docs",
     "retrieved": "2026-10-31",
     "quote": "Systolic Peaks (IBI)"
@@ -24957,6 +24973,7 @@
   "sources": [
    {
     "url": "https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features",
+    "fetch_url": "https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36980797675549.json",
     "type": "vendor_docs",
     "retrieved": "2026-10-31",
     "quote": "Digital Biomarkers EmbracePlus EmbraceMini Accelerometer Magnitude Standard Deviation Acticounts Actigraphy Counts Activity Classification Activity Counts Activity Intensity Ambient Light Body Position Electrodermal Activity (EDA): Skin Conductance Level (SCL) METs Pulse Rate Pulse Rate Variability: RMSSD Respiratory Rate Skin Temperature Sleep Detection Step Counts Wearing Detection"
@@ -24969,6 +24986,7 @@
    },
    {
     "url": "https://academic-support.empatica.com/hc/en-us/articles/36980846789277-Monitoring-Participant-Digital-Biomarkers",
+    "fetch_url": "https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36980846789277.json",
     "type": "vendor_docs",
     "retrieved": "2026-10-31",
     "quote": "Wearing time Pulse Rate Skin Temperature SPO2 enterprise"
@@ -24988,24 +25006,28 @@
   "sources": [
    {
     "url": "https://academic-support.empatica.com/hc/en-us/articles/38901007393053-What-is-a-Sensor-Mode",
+    "fetch_url": "https://academic-support.empatica.com/api/v2/help_center/en-us/articles/38901007393053.json",
     "type": "vendor_docs",
     "retrieved": "2026-10-31",
     "quote": "Accelerometer 64 Hz, ±16 g 64 Hz, ±16 g 32 Hz, ±16 g 64 Hz, ±16 g 100 Hz, ±16 g Gyroscope OFF OFF OFF 64 Hz, ±2000 dps 100 Hz, ±2000 dps"
    },
    {
     "url": "https://academic-support.empatica.com/hc/en-us/articles/38901007393053-What-is-a-Sensor-Mode",
+    "fetch_url": "https://academic-support.empatica.com/api/v2/help_center/en-us/articles/38901007393053.json",
     "type": "vendor_docs",
     "retrieved": "2026-10-31",
     "quote": "Skin Temperature** 1 Hz 1 Hz 1 Hz 1 Hz 1 Hz PPG** 64 Hz (infrared, green and red, via 5 LEDs) 4 Hz (infrared, via 1 LED) OFF OFF OFF Electrodermal Activity (EDA)** 4 Hz 4 Hz OFF OFF OFF"
    },
    {
     "url": "https://academic-support.empatica.com/hc/en-us/articles/38901007393053-What-is-a-Sensor-Mode",
+    "fetch_url": "https://academic-support.empatica.com/api/v2/help_center/en-us/articles/38901007393053.json",
     "type": "vendor_docs",
     "retrieved": "2026-10-31",
     "quote": "with Actigraphy Optimized, the most recent data may be up to 24 hours old"
    },
    {
     "url": "https://academic-support.empatica.com/hc/en-us/articles/36980824207261-How-the-Empatica-Health-Monitoring-Platform-works",
+    "fetch_url": "https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36980824207261.json",
     "type": "vendor_docs",
     "retrieved": "2026-10-31",
     "quote": "The Care Lab App transmits the data to the Empatica Cloud in 30-minute batches"
@@ -25061,30 +25083,35 @@
   "sources": [
    {
     "url": "https://academic-support.empatica.com/hc/en-us/articles/36980824207261-How-the-Empatica-Health-Monitoring-Platform-works",
+    "fetch_url": "https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36980824207261.json",
     "type": "vendor_docs",
     "retrieved": "2026-10-31",
     "quote": "The Care Lab Portal also provides you with your Data Access Keys , which are your credentials for accessing and downloading raw sensor and digital biomarker data from the AWS S3 bucket for further analysis."
    },
    {
     "url": "https://academic-support.empatica.com/hc/en-us/articles/36981086545181-Accessing-Data-on-the-S3-Bucket",
+    "fetch_url": "https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36981086545181.json",
     "type": "vendor_docs",
     "retrieved": "2026-10-31",
     "quote": "There are multiple ways to access the data stored in the S3 Bucket: File Transfer Tools"
    },
    {
     "url": "https://academic-support.empatica.com/hc/en-us/articles/36981046788765-Raw-Data-in-the-Empatica-Cloud",
+    "fetch_url": "https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36981046788765.json",
     "type": "vendor_docs",
     "retrieved": "2026-10-31",
     "quote": "High-frequency raw data is delivered in Avro format."
    },
    {
     "url": "https://academic-support.empatica.com/hc/en-us/articles/36981046788765-Raw-Data-in-the-Empatica-Cloud",
+    "fetch_url": "https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36981046788765.json",
     "type": "vendor_docs",
     "retrieved": "2026-10-31",
     "quote": "Data and filename timestamps always use UTC+00:00"
    },
    {
     "url": "https://academic-support.empatica.com/hc/en-us/articles/36981014631837-Generating-and-Revoking-Data-Access-Keys",
+    "fetch_url": "https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36981014631837.json",
     "type": "vendor_docs",
     "retrieved": "2026-10-31",
     "quote": "You can have up to two (2) active sets of Data Access Keys at a time."
@@ -25127,11 +25154,13 @@
    },
    {
     "url": "https://academic-support.empatica.com/hc/en-us/articles/36981086545181-Accessing-Data-on-the-S3-Bucket",
+    "fetch_url": "https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36981086545181.json",
     "type": "vendor_docs",
     "retrieved": "2026-10-31"
    },
    {
     "url": "https://academic-support.empatica.com/hc/en-us/articles/36981014631837-Generating-and-Revoking-Data-Access-Keys",
+    "fetch_url": "https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36981014631837.json",
     "type": "vendor_docs",
     "retrieved": "2026-10-31"
    },
@@ -25246,6 +25275,7 @@
    },
    {
     "url": "https://academic-support.empatica.com/hc/en-us/articles/38901007393053-What-is-a-Sensor-Mode",
+    "fetch_url": "https://academic-support.empatica.com/api/v2/help_center/en-us/articles/38901007393053.json",
     "type": "vendor_docs",
     "retrieved": "2026-10-31",
     "quote": "Note: Studies created before September 16th, 2026 run the Pulse Rate Pro Sensor Mode by default."
@@ -25648,6 +25678,7 @@
    },
    {
     "url": "https://academic-support.empatica.com/hc/en-us/articles/36981086545181-Accessing-Data-on-the-S3-Bucket",
+    "fetch_url": "https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36981086545181.json",
     "type": "vendor_docs",
     "retrieved": "2026-10-10",
     "quote": "The data by the Empatica Health Monitoring Platform is securely stored and encrypted within AWS Cloud Services, particularly within an Amazon S3 bucket"
@@ -39302,12 +39333,14 @@
    },
    {
     "url": "https://support.withings.com/hc/articles/8986672043153",
+    "fetch_url": "https://support.withings.com/api/v2/help_center/en-us/articles/8986672043153.json",
     "type": "vendor_page",
     "quote": "a monthly rate of €9.95 / $9.95 / £8.95 per month or a yearly rate of €99.95 / $99.95 / £89.95 per year",
     "retrieved": "2026-10-31"
    },
    {
     "url": "https://support.withings.com/hc/en-us/articles/11132728427921-Withings-Terms-and-Conditions",
+    "fetch_url": "https://support.withings.com/api/v2/help_center/en-us/articles/11132728427921.json",
     "type": "vendor_legal",
     "quote": "you will be automatically charged 9.95€ (or $9.95 or £8.95) per month",
     "retrieved": "2026-10-31"
@@ -39707,6 +39740,7 @@
    },
    {
     "url": "https://support.withings.com/hc/en-us/articles/360001391287-Privacy-How-can-I-export-my-data",
+    "fetch_url": "https://support.withings.com/api/v2/help_center/en-us/articles/360001391287.json",
     "type": "vendor_docs",
     "quote": "You will get your data in the form of a CSV file, which you can open using any spreadsheet software.",
     "retrieved": "2026-10-31"

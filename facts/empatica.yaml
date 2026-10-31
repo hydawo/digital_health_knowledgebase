@@ -6,16 +6,20 @@ watch:
 - url: https://www.empatica.com/platform/research-studies/
   role: research_program
 - url: https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features
+  fetch_url: https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36980797675549.json
   role: research_program
 - url: https://www.empatica.com/store/platform-professional/
   role: pricing
 - url: https://www.empatica.com/llms.txt
   role: pricing
 - url: https://academic-support.empatica.com/hc/en-us/articles/38901007393053-What-is-a-Sensor-Mode
+  fetch_url: https://academic-support.empatica.com/api/v2/help_center/en-us/articles/38901007393053.json
   role: docs
 - url: https://academic-support.empatica.com/hc/en-us/articles/36981046788765-Raw-Data-in-the-Empatica-Cloud
+  fetch_url: https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36981046788765.json
   role: docs
 - url: https://academic-support.empatica.com/hc/en-us/articles/36981086545181-Accessing-Data-on-the-S3-Bucket
+  fetch_url: https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36981086545181.json
   role: docs
 - url: https://www.empatica.com/cloud-api
   role: developer_program
@@ -43,6 +47,7 @@ facts:
   confidence: Verified
   sources:
   - url: https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features
+    fetch_url: https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36980797675549.json
     type: vendor_docs
     retrieved: '2026-10-31'
     quote: 'The Platform features two different plans: Academic & Basic Research or enterprise The two plans differ
@@ -89,6 +94,7 @@ facts:
     quote: EHMP products are exclusively sold to researchers belonging to not-for-profit research institutions (like
       hospitals and universities) and for-profit research institutions (like pharmaceutical companies)
   - url: https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features
+    fetch_url: https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36980797675549.json
     type: vendor_docs
     retrieved: '2026-10-31'
     quote: Speak with our Sales Team to understand if you qualify for our Enterprise Plan.
@@ -102,10 +108,12 @@ facts:
   confidence: Verified
   sources:
   - url: https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features
+    fetch_url: https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36980797675549.json
     type: vendor_docs
     retrieved: '2026-10-31'
     quote: Academic & Basic Research Can be purchased directly through our Online Store , or through our Sales Team.
   - url: https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features
+    fetch_url: https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36980797675549.json
     type: vendor_docs
     retrieved: '2026-10-31'
     quote: Once your purchase is complete, your platform subscription is automatically activated during the shipment
@@ -133,6 +141,7 @@ facts:
   confidence: Verified
   sources:
   - url: https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features
+    fetch_url: https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36980797675549.json
     type: vendor_docs
     retrieved: '2026-10-31'
     quote: Speak with our Sales Team to understand if you qualify for our Enterprise Plan.
@@ -221,6 +230,7 @@ facts:
     retrieved: '2026-10-31'
     quote: Study setup 1 study 1 site 1 study manager Up to 1000 participants
   - url: https://academic-support.empatica.com/hc/en-us/articles/38901007393053-What-is-a-Sensor-Mode
+    fetch_url: https://academic-support.empatica.com/api/v2/help_center/en-us/articles/38901007393053.json
     type: vendor_docs
     retrieved: '2026-10-31'
     quote: The Sensor Mode cannot be changed once the account has been created.
@@ -232,6 +242,7 @@ facts:
   confidence: Verified
   sources:
   - url: https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features
+    fetch_url: https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36980797675549.json
     type: vendor_docs
     retrieved: '2026-10-31'
     quote: 'Speak with our Sales Team to understand if you qualify for our Enterprise Plan. *MOQ: 100 devices'
@@ -245,11 +256,13 @@ facts:
   confidence: Verified
   sources:
   - url: https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features
+    fetch_url: https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36980797675549.json
     type: vendor_docs
     retrieved: '2026-10-31'
     quote: Designed with smaller research studies in mind. For example, an academic study that does not require
       dedicated Account Manager support.
   - url: https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features
+    fetch_url: https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36980797675549.json
     type: vendor_docs
     retrieved: '2026-10-31'
     quote: For example, a clinical trial that requires one-on-one support with IRB submissions, audit trails, and
@@ -293,6 +306,7 @@ facts:
     retrieved: '2026-10-31'
     quote: EmbraceMini $641.52
   - url: https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features
+    fetch_url: https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36980797675549.json
     type: vendor_docs
     retrieved: '2026-10-31'
     quote: Each device is purchased as a package that includes the device and its platform subscription.
@@ -318,6 +332,7 @@ facts:
   confidence: Verified
   sources:
   - url: https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features
+    fetch_url: https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36980797675549.json
     type: vendor_docs
     retrieved: '2026-10-31'
     quote: Subscription extension Per device, per additional year Starting from $388.80 or €359.64 Starting from $291.60
@@ -425,11 +440,13 @@ facts:
     quote: The purchase of the Academic & Basic Research plan subscription includes access to the Care Lab App, Care
       Portal, and Empatica Cloud in a 3-year or 5-year bundle.
   - url: https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features
+    fetch_url: https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36980797675549.json
     type: vendor_docs
     retrieved: '2026-10-31'
     quote: Platform subscriptions are only sold together with a device purchased from Empatica, and can only be
       extended for those devices.
   - url: https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features
+    fetch_url: https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36980797675549.json
     type: vendor_docs
     retrieved: '2026-10-31'
     quote: 'Speak with our Sales Team to understand if you qualify for our Enterprise Plan. *MOQ: 100 devices'
@@ -467,15 +484,18 @@ facts:
   confidence: Verified
   sources:
   - url: https://academic-support.empatica.com/hc/en-us/articles/36981046788765-Raw-Data-in-the-Empatica-Cloud
+    fetch_url: https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36981046788765.json
     type: vendor_docs
     retrieved: '2026-10-31'
     quote: 'Raw data streams contained within Empatica''s Avro files are the following: Accelerometer Blood Volume Pulse
       ElectroDermal Activity (EDA) Gyroscope Steps Systolic Peaks Tags'
   - url: https://academic-support.empatica.com/hc/en-us/articles/36981046788765-Raw-Data-in-the-Empatica-Cloud
+    fetch_url: https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36981046788765.json
     type: vendor_docs
     retrieved: '2026-10-31'
     quote: High-frequency raw data is delivered in Avro format.
   - url: https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features
+    fetch_url: https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36980797675549.json
     type: vendor_docs
     retrieved: '2026-10-31'
     quote: Systolic Peaks (IBI)
@@ -525,6 +545,7 @@ facts:
   confidence: Verified
   sources:
   - url: https://academic-support.empatica.com/hc/en-us/articles/36980797675549-Available-Features
+    fetch_url: https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36980797675549.json
     type: vendor_docs
     retrieved: '2026-10-31'
     quote: 'Digital Biomarkers EmbracePlus EmbraceMini Accelerometer Magnitude Standard Deviation Acticounts Actigraphy
@@ -536,6 +557,7 @@ facts:
     retrieved: '2026-10-31'
     quote: Over 300 digital biomarkers, including dozens of sleep and activity measures 6 FDA-cleared measures
   - url: https://academic-support.empatica.com/hc/en-us/articles/36980846789277-Monitoring-Participant-Digital-Biomarkers
+    fetch_url: https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36980846789277.json
     type: vendor_docs
     retrieved: '2026-10-31'
     quote: Wearing time Pulse Rate Skin Temperature SPO2 enterprise
@@ -550,20 +572,24 @@ facts:
   confidence: Verified
   sources:
   - url: https://academic-support.empatica.com/hc/en-us/articles/38901007393053-What-is-a-Sensor-Mode
+    fetch_url: https://academic-support.empatica.com/api/v2/help_center/en-us/articles/38901007393053.json
     type: vendor_docs
     retrieved: '2026-10-31'
     quote: Accelerometer 64 Hz, ±16 g 64 Hz, ±16 g 32 Hz, ±16 g 64 Hz, ±16 g 100 Hz, ±16 g Gyroscope OFF OFF OFF 64
       Hz, ±2000 dps 100 Hz, ±2000 dps
   - url: https://academic-support.empatica.com/hc/en-us/articles/38901007393053-What-is-a-Sensor-Mode
+    fetch_url: https://academic-support.empatica.com/api/v2/help_center/en-us/articles/38901007393053.json
     type: vendor_docs
     retrieved: '2026-10-31'
     quote: Skin Temperature** 1 Hz 1 Hz 1 Hz 1 Hz 1 Hz PPG** 64 Hz (infrared, green and red, via 5 LEDs) 4 Hz (infrared,
       via 1 LED) OFF OFF OFF Electrodermal Activity (EDA)** 4 Hz 4 Hz OFF OFF OFF
   - url: https://academic-support.empatica.com/hc/en-us/articles/38901007393053-What-is-a-Sensor-Mode
+    fetch_url: https://academic-support.empatica.com/api/v2/help_center/en-us/articles/38901007393053.json
     type: vendor_docs
     retrieved: '2026-10-31'
     quote: with Actigraphy Optimized, the most recent data may be up to 24 hours old
   - url: https://academic-support.empatica.com/hc/en-us/articles/36980824207261-How-the-Empatica-Health-Monitoring-Platform-works
+    fetch_url: https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36980824207261.json
     type: vendor_docs
     retrieved: '2026-10-31'
     quote: The Care Lab App transmits the data to the Empatica Cloud in 30-minute batches
@@ -610,23 +636,28 @@ facts:
   confidence: Verified
   sources:
   - url: https://academic-support.empatica.com/hc/en-us/articles/36980824207261-How-the-Empatica-Health-Monitoring-Platform-works
+    fetch_url: https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36980824207261.json
     type: vendor_docs
     retrieved: '2026-10-31'
     quote: The Care Lab Portal also provides you with your Data Access Keys , which are your credentials for accessing
       and downloading raw sensor and digital biomarker data from the AWS S3 bucket for further analysis.
   - url: https://academic-support.empatica.com/hc/en-us/articles/36981086545181-Accessing-Data-on-the-S3-Bucket
+    fetch_url: https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36981086545181.json
     type: vendor_docs
     retrieved: '2026-10-31'
     quote: 'There are multiple ways to access the data stored in the S3 Bucket: File Transfer Tools'
   - url: https://academic-support.empatica.com/hc/en-us/articles/36981046788765-Raw-Data-in-the-Empatica-Cloud
+    fetch_url: https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36981046788765.json
     type: vendor_docs
     retrieved: '2026-10-31'
     quote: High-frequency raw data is delivered in Avro format.
   - url: https://academic-support.empatica.com/hc/en-us/articles/36981046788765-Raw-Data-in-the-Empatica-Cloud
+    fetch_url: https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36981046788765.json
     type: vendor_docs
     retrieved: '2026-10-31'
     quote: Data and filename timestamps always use UTC+00:00
   - url: https://academic-support.empatica.com/hc/en-us/articles/36981014631837-Generating-and-Revoking-Data-Access-Keys
+    fetch_url: https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36981014631837.json
     type: vendor_docs
     retrieved: '2026-10-31'
     quote: You can have up to two (2) active sets of Data Access Keys at a time.
@@ -657,9 +688,11 @@ facts:
     type: vendor_page
     retrieved: '2026-10-31'
   - url: https://academic-support.empatica.com/hc/en-us/articles/36981086545181-Accessing-Data-on-the-S3-Bucket
+    fetch_url: https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36981086545181.json
     type: vendor_docs
     retrieved: '2026-10-31'
   - url: https://academic-support.empatica.com/hc/en-us/articles/36981014631837-Generating-and-Revoking-Data-Access-Keys
+    fetch_url: https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36981014631837.json
     type: vendor_docs
     retrieved: '2026-10-31'
   - url: https://www.empatica.com/purchase-agreement/
@@ -745,6 +778,7 @@ facts:
     retrieved: '2026-10-31'
     quote: As we move forward, rest assured that your Embrace2 subscription will continue uninterrupted.
   - url: https://academic-support.empatica.com/hc/en-us/articles/38901007393053-What-is-a-Sensor-Mode
+    fetch_url: https://academic-support.empatica.com/api/v2/help_center/en-us/articles/38901007393053.json
     type: vendor_docs
     retrieved: '2026-10-31'
     quote: 'Note: Studies created before September 16th, 2026 run the Pulse Rate Pro Sensor Mode by default.'
@@ -1028,6 +1062,7 @@ facts:
     retrieved: '2026-10-10'
     quote: Empatica will process and store User Data on HIPAA-compliant cloud infrastructure located in US, Virginia
   - url: https://academic-support.empatica.com/hc/en-us/articles/36981086545181-Accessing-Data-on-the-S3-Bucket
+    fetch_url: https://academic-support.empatica.com/api/v2/help_center/en-us/articles/36981086545181.json
     type: vendor_docs
     retrieved: '2026-10-10'
     quote: The data by the Empatica Health Monitoring Platform is securely stored and encrypted within AWS Cloud Services,

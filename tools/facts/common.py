@@ -233,13 +233,17 @@ def _body_to_text(body, ctype, url):
     return html_to_text(raw)
 
 
+_HTML_IN_JSON = re.compile(r'</?(p|div|span|a|li|ul|ol|br|strong|em|b|i|h[1-6]|table|tr|td|th)\b[^>]*>', re.I)
+
+
 def json_strings(obj):
     """Flatten every string in a JSON document, for JSON-rendered docs (for example Apple's)."""
     out = []
 
     def walk(o):
         if isinstance(o, str):
-            out.append(o)
+            # Some APIs (Zendesk Help Center) return an article as HTML inside a JSON string
+            out.append(html_to_text(o) if _HTML_IN_JSON.search(o) else o)
         elif isinstance(o, dict):
             for v in o.values():
                 walk(v)

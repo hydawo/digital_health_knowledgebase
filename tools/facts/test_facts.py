@@ -59,6 +59,9 @@ class QuoteMatching(unittest.TestCase):
         self.assertIn('visible', html_to_text('<p>visible</p><script>hidden()</script>'))
         self.assertNotIn('hidden', html_to_text('<p>visible</p><script>hidden()</script>'))
         self.assertIn('deep', json_strings({'a': [{'b': 'deep'}]}))
+        body = json_strings({'article': {'body': '<p>Data is <strong>exported</strong> daily.</p>'}})
+        self.assertEqual(match_quote('Data is exported daily.', body)[0], 'exact')
+        self.assertIn('Array<Element>', json_strings({'t': 'Array<Element>'}))
 
     def test_normalize_dashes_and_space(self):
         self.assertEqual(normalize('A—B  C'), 'a-b c')
