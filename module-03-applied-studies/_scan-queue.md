@@ -29,7 +29,6 @@ screening in this project has a measured platform-misattribution rate of roughly
 
 | Found | DOI | PMCID | Title | Venue / year | Apparent technology | Signals | OA |
 |---|---|---|---|---|---|---|---|
-| 2026-10-26 | 10.1136/bmjopen-2026-121681 | PMC13691778 | Feasibility and acceptability of a remote blood pressure monitoring pharmacist-led telehealth programme in an emergency department transition care clinic: a pilot randomised controlled trial | BMJ Open 2026;16(10):e121681 | Withings (BPM Connect Pro) | feasibility, acceptability, retention (27 screened, 24 randomised, 16/24 completed 12-week visit) | Open (BMJ Open) |
 
 **2026-10-22:** the 16 rows then pending were screened from full text (7 profiled, 9 rejected; see
 `feasibility-matrix.md` Part F and the ledger). Five rejections are `unobtainable` only because the publisher
@@ -41,6 +40,8 @@ served a bot check to scripts. Re-screen these from a PDF fetched by hand in a b
 10.3390/s25216635 and 10.3389/fragi.2026.1768935 (same cohort as the Boyle 2026 profile).
 
 **2026-10-24:** the four rows then pending were screened from full text (1 profiled, Hallihan 2026; 3 rejected; report `_screening-reports/2026-10-24-queue.md`). PROPHESY (10.1016/j.aucc.2026.101711) is `unobtainable` only because of a bot check; re-screen from a PDF fetched by hand.
+
+**2026-10-30:** the one row then pending was screened from full text (1 profiled, Ghazi 2026; report `_screening-reports/2026-10-30-queue.md`). The Withings BPM Connect Pro attribution was confirmed from the Methods.
 
 Platform attribution is Reported — verify from full text before profiling.
 

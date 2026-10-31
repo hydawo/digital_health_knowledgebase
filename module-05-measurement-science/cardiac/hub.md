@@ -11,7 +11,7 @@ For a short reading of what this evidence says, see [`overview.md`](overview.md)
 | Module 5 catalogue | 68 |
 | Device and platform profiles | 12 |
 | Papers in Modules 1, 2 and 4 | 45 |
-| Module 3 deployment profiles | 6 |
+| Module 3 deployment profiles | 7 |
 
 ## Measurement science (this module)
 
@@ -123,6 +123,7 @@ For a short reading of what this evidence says, see [`overview.md`](overview.md)
 
 - [Apple Heart Study data-management lessons, N=419,297](../../module-03-applied-studies/profiles/apple-heart-data-management-lessons.md) (primary): AF notification study operations
 - [Fitbit Heart Study siteless AF trial, N=455,699](../../module-03-applied-studies/profiles/fitbit-heart-study-afib.md) (primary): AF detection trial; deployment lessons
+- [Ghazi 2026, Withings cuff pharmacist telehealth pilot](../../module-03-applied-studies/profiles/withings-bpm-ed-pharmacist-telehealth-pilot-rct.md) (primary): Hypertension; remote blood pressure monitoring after ED discharge
 - [Apple Heart & Movement Study retention, N=82,809](../../module-03-applied-studies/profiles/apple-heart-movement-study-retention.md) (secondary): Cardiovascular cohort; ECG and rhythm-triggered surveys; borderline
 - [Connecare post-op home monitoring (Withings BPM)](../../module-03-applied-studies/profiles/withings-postop-remote-monitoring.md) (secondary): Blood pressure and HR among monitored vitals
 - [Support trial: wrist and ECG chest sensor, palliative](../../module-03-applied-studies/profiles/movesense-palliative-support-trial.md) (secondary): Continuous ECG and HR among vitals; terminated

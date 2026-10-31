@@ -647,6 +647,12 @@
     "Adolescents and students"
    ],
    "os": "ios"
+  },
+  "withings-bpm-ed-pharmacist-telehealth-pilot-rct": {
+   "areas": [
+    "Cardiology"
+   ],
+   "os": "not-reported"
   }
  }
 }

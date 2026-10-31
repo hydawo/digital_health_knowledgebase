@@ -182,7 +182,8 @@
   "10.3390/plants15192994",
   "10.3389/frdem.2026.1861809",
   "10.1016/j.aucc.2026.101711",
-  "10.1200/cci-24-00201"
+  "10.1200/cci-24-00201",
+  "10.1136/bmjopen-2026-121681"
  ],
  "pmcids_seen": [
   "PMC10031448",
@@ -305,7 +306,8 @@
   "PMC12381640",
   "PMC13637571",
   "PMC13652396",
-  "PMC13642210"
+  "PMC13642210",
+  "PMC13691778"
  ],
  "last_run_date": "2026-10-26",
  "runs": [
@@ -963,6 +965,13 @@
    "slug": "apple-watch-pst-college-alcohol-use-pilot-rct",
    "profiled": true,
    "source": "module-03-queue-2026-10-24"
+  },
+  {
+   "doi": "10.1136/bmjopen-2026-121681",
+   "pmcid": "PMC13691778",
+   "slug": "withings-bpm-ed-pharmacist-telehealth-pilot-rct",
+   "profiled": true,
+   "source": "weekly-literature-scan-2026-10-26 / screened 2026-10-30"
   }
  ],
  "rejected": [
