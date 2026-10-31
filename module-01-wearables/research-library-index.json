@@ -854,7 +854,9 @@
       "device": "oura",
       "category": "Use-case",
       "tier": "C",
-      "tier_confidence": "Corroborated",
+      "tier_confidence": "Verified",
+      "pdf": null,
+      "pdf_status": "oa_not_obtained",
       "source": "weekly-literature-scan-2026-10-26"
     },
     {
@@ -866,7 +868,9 @@
       "device": "whoop",
       "category": "Use-case",
       "tier": "C",
-      "tier_confidence": "Corroborated",
+      "tier_confidence": "Verified",
+      "pdf": null,
+      "pdf_status": "oa_not_obtained",
       "source": "weekly-literature-scan-2026-10-26"
     }
   ]

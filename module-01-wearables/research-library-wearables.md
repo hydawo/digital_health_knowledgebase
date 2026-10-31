@@ -360,8 +360,8 @@ without per-paper sorting.
 Condo D. 2026. "The Sleep and Diet of Elite Female Australian Rules Football Athletes Differ With
 Age and Season Phase." *European Journal of Sport Science* 26(11):e70274, DOI 10.1002/ejsc.70274,
 PMID 42904819. Deakin University / Central Queensland University (Australia). **"The authors declare
-no conflicts of interest."** No Oura affiliation or funding named. **Tier C. Corroborated** (absence
-of a disclosed conflict is suggestive, not proof, of independence). N=22 elite AFLW athletes, 10
+no conflicts of interest."** No Oura affiliation or funding named; funding was CQUniversity seed funding. **Tier C. Verified**
+(COI and funding statements quoted from the full text, 2026-10-30). N=22 elite AFLW athletes, 10
 nights (5 pre-season, 5 in-season); sleep measured via Oura ring alongside self-reported food
 diaries; in-season protein and fat intake were lower than pre-season, sleep duration/timing did not
 differ by season phase, and each additional year of age was associated with 8 min less sleep.
@@ -597,9 +597,9 @@ McKay CR, Helms KLW, Calderon A, Vukovich MD, Ormsbee MJ. 2026. "Pre-sleep milk-
 not impair sleep or recovery in elite female athletes." *Journal of the International Society of
 Sports Nutrition* 23(1), DOI 10.1080/15502783.2026.2746899, PMID 42897977. Florida State University
 Institute of Sports Sciences & Medicine. **COI statement: "MJO serves as a non-paid member of the
-International Protein Board."** Does not name WHOOP Inc. as funder/employer/consultant. **Tier C.
-Corroborated** (absence of a disclosed WHOOP-specific conflict is suggestive, not proof, of
-independence). Randomized, double-blinded, placebo-controlled crossover trial; 25 NCAA Division I
+International Protein Board."** Does not name WHOOP Inc. as funder/employer/consultant. Funding: **"This study was co-funded by
+Actus Nutrition and the National Dairy Council."** (a nutrition, not a device, sponsor). **Tier C.
+Verified** (disclosure and funding statements quoted from the full text, 2026-10-30). Randomized, double-blinded, placebo-controlled crossover trial; 25 NCAA Division I
 female athletes recruited, 21 analyzed; three consecutive nights each of casein, ALA, or
 carbohydrate pre-sleep feeding vs. placebo. Objective sleep/recovery outcomes (TST, SOL, SE, RHR,
 HRV) obtained from the **WHOOP 4.0 device**; no significant treatment effects were observed on any
