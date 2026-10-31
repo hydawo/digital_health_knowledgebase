@@ -65,6 +65,12 @@ jobs:
           f=facts/_reports/latest-issue.md
           [ -f "$f" ] || { echo "Nothing to act on."; exit 0; }
           title=$(head -1 "$f"); tail -n +2 "$f" > body.md
+          # GitHub rejects issue bodies over 65,536 characters; keep the top and link the full report
+          if [ "$(wc -c < body.md)" -gt 60000 ]; then
+            head -c 60000 body.md | sed '$d' > short.md
+            printf '\n\n*Truncated. Full list: https://github.com/%s/blob/main/facts/_reports/%s.md*\n' "$GITHUB_REPOSITORY" "$(date -u +%F)" >> short.md
+            mv short.md body.md
+          fi
           gh label create facts-monitor --color 1f6f5c --description "Vendor fact re-checks" 2>/dev/null || true
           open=$(gh issue list --label facts-monitor --state open --json number --jq '.[0].number')
           if [ -n "$open" ]; then
