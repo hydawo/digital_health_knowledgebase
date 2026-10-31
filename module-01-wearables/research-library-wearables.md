@@ -356,6 +356,17 @@ infrastructure (Tier B). **This corroborates that Oura's "170+/130+ studies" mar
 mostly Tier A/B** — but a non-trivial fraction is, and the list itself should not be read as neutral
 without per-paper sorting.
 
+**Added 2026-10-26 (weekly scan).** Barnard J, Kelly M, Lastella M, Roberts S, Di Giovanni A, Guy J,
+Condo D. 2026. "The Sleep and Diet of Elite Female Australian Rules Football Athletes Differ With
+Age and Season Phase." *European Journal of Sport Science* 26(11):e70274, DOI 10.1002/ejsc.70274,
+PMID 42904819. Deakin University / Central Queensland University (Australia). **"The authors declare
+no conflicts of interest."** No Oura affiliation or funding named. **Tier C. Corroborated** (absence
+of a disclosed conflict is suggestive, not proof, of independence). N=22 elite AFLW athletes, 10
+nights (5 pre-season, 5 in-season); sleep measured via Oura ring alongside self-reported food
+diaries; in-season protein and fat intake were lower than pre-season, sleep duration/timing did not
+differ by season phase, and each additional year of age was associated with 8 min less sleep.
+https://pmc.ncbi.nlm.nih.gov/articles/PMC13685518/
+
 ## Oura — confirmed evidence gaps
 
 - **No independent peer-reviewed SpO2 validation study found for Oura** — only Oura's own blog
@@ -580,6 +591,19 @@ literature, not a journal article; included here only for completeness.
 - A living systematic review on wearable HRV across the menstrual cycle (Springer, DOI
   10.1007/s40279-025-02388-y) repeatedly surfaced in search and likely includes WHOOP data — not
   yet fetched for authorship/tier.
+
+**Added 2026-10-26 (weekly scan).** Paterson KGP, Griest TD, Angeles E, Fenner SP, Eberhardt HK,
+McKay CR, Helms KLW, Calderon A, Vukovich MD, Ormsbee MJ. 2026. "Pre-sleep milk-derived proteins do
+not impair sleep or recovery in elite female athletes." *Journal of the International Society of
+Sports Nutrition* 23(1), DOI 10.1080/15502783.2026.2746899, PMID 42897977. Florida State University
+Institute of Sports Sciences & Medicine. **COI statement: "MJO serves as a non-paid member of the
+International Protein Board."** Does not name WHOOP Inc. as funder/employer/consultant. **Tier C.
+Corroborated** (absence of a disclosed WHOOP-specific conflict is suggestive, not proof, of
+independence). Randomized, double-blinded, placebo-controlled crossover trial; 25 NCAA Division I
+female athletes recruited, 21 analyzed; three consecutive nights each of casein, ALA, or
+carbohydrate pre-sleep feeding vs. placebo. Objective sleep/recovery outcomes (TST, SOL, SE, RHR,
+HRV) obtained from the **WHOOP 4.0 device**; no significant treatment effects were observed on any
+outcome. https://pmc.ncbi.nlm.nih.gov/articles/PMC13686207/
 
 ## WHOOP — confirmed evidence gaps
 

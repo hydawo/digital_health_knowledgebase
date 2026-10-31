@@ -10,6 +10,61 @@
 - **Thryve:** its docs table now marks Fitbit "Deprecated" with no date and lists a Google Health source (ID 49).
 - **Files updated:** `facts/fitbit-google.yaml`, `radar-base.yaml`, `fitabase.yaml`, `thryve.yaml` and the generated tables; Module 1 `fitbit-google.md`, `data-intermediaries.md`, `_inventory-and-scope-decisions.md`, `README.md`, `comparison-matrix.md`, `sources.md`, the atlas; Module 2 `radar-base.md`, `comparison-matrix.md`, `sources.md`; `shared/unresolved-questions.md` (Q126 date); explorer summary.
 - **Follow-up:** after 2 November, confirm the API actually returns 410 and whether RADAR-base ships PR #92.
+## 2026-10-26 — Weekly literature-scan routine (all three modules)
+
+**Module:** 1 (Oura/WHOOP/Apple Watch), 2 (phenotyping platforms), 3 (triage only). Automated,
+unattended run per `shared/weekly-literature-scan.md`'s full prompt. Window: 2026-10-19 to
+2026-10-26 (edat for PubMed; submittedDate for arXiv) for all three modules — `last_run_date` was
+2026-10-19 for every ledger. Each module's search/screen/write work was delegated to a separate agent
+running in parallel (one per module), with this session performing the combined Part D logging,
+commit and push afterward.
+
+### Module 1 — Oura/WHOOP/Apple Watch
+
+Searched: Oura 1, WHOOP 1, Apple Watch 1. **2 of 3 passed the relevance bar** (2 Use-case, 0
+Validation, 0 Review): a 22-athlete AFLW Oura sleep/diet study (Barnard et al. 2026, *Eur J Sport
+Sci*) and a 21-analyzed NCAA Division I WHOOP 4.0 pre-sleep-feeding crossover trial (Paterson et al.
+2026, *J Int Soc Sports Nutr*) — both Tier C, Corroborated (no vendor COI or affiliation named).
+Appended within the existing device → sponsorship-tier structure, following the precedent from prior
+runs of not introducing a Category heading layer.
+
+**Excluded (1):** PMID 42923808, an Apple Watch SVT case report — rejected for having no `Abstract`
+element at all (case report) and for "Apple Watch" appearing only in the PubMed keyword list, not in
+title/abstract.
+
+### Module 2 — phenotyping platforms
+
+Searched (PubMed, edat): mindLAMP 1, all other platforms 0. Searched (arXiv, submittedDate):
+RADAR-base 2, AWARE 13, all others 0. **Zero papers passed the relevance bar this run.** The one
+genuine (non-assay) mindLAMP hit — a hybrid clinician-delivered CBT study for perinatal depression
+(DOI 10.1186/s12884-026-09370-0) — used mindLAMP only as a supplementary tool, not the study's primary
+instrument, and was excluded as incidental per the relevance bar. All 15 arXiv hits were the
+established "aware"-as-ordinary-adjective and RADAR/radar-signal-processing false-positive patterns,
+naming no real Module 2 platform. Both PubMed and arXiv stayed reachable throughout (arXiv needed
+rate-limit backoff retries, not a reachability failure); `pypdf`/`PyPDF2` remain absent from this
+environment, so OA verification would have fallen back to the magic-byte check alone had anything
+qualified — moot this run since nothing did.
+
+### Module 3 — triage only
+
+Searched: C1 (wearables, PubMed) 4, C2 (platforms, PubMed) 3, C3-wearables (arXiv) 0 in-window of 50
+fetched, C3-platforms (arXiv) 0 in-window of 30 fetched. **1 queued, 6 rejected** (1 architecture, 5
+no-cohort). Queued: a Withings BPM Connect Pro pharmacist-led remote-BP telehealth pilot RCT (DOI
+10.1136/bmjopen-2026-121681; 27 screened, 24 randomised, 16/24 completed the 12-week visit — feasibility, acceptability and retention all reported as outcomes). Rejected: an ABCD+Fitbit
+preprocessing-methods preprint (architecture — illustrative cohort, not a deployment-outcomes report);
+an SCI nighttime-repositioning study using a generic, non-brand-identifiable "actigraph" with only one
+signal present; an ABCD evening-phone-use/Fitbit-sleep study (JAMA Pediatrics, N=425) whose only
+candidate signal was an inclusion-criterion threshold rather than a reported outcome; and all 3 C2
+PubMed hits (an autonomous-driving paper, a Rwanda antimicrobial-resistance paper matching WHO's
+unrelated "AWaRe" framework, and a deep-clustering ML paper) — no Module 2 platform named in any.
+
+### Commit
+
+One combined commit across all three modules' edits and this logging entry; pushed to
+`origin/claude/hopeful-fermat-bt544r` (the branch this session's harness designated for this run, per
+its own branch instructions — see the 2026-10-19 entry above for the same branch-vs-main caveat
+relative to `shared/weekly-literature-scan.md`'s documented assumption that the routine pushes to
+`main`).
 
 ## 2026-10-24 (later) - Unattended pass: scan merges, Module 3 queue, fact issue #2, Module 5 checks
 

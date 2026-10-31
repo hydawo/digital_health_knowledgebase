@@ -29,6 +29,7 @@ screening in this project has a measured platform-misattribution rate of roughly
 
 | Found | DOI | PMCID | Title | Venue / year | Apparent technology | Signals | OA |
 |---|---|---|---|---|---|---|---|
+| 2026-10-26 | 10.1136/bmjopen-2026-121681 | PMC13691778 | Feasibility and acceptability of a remote blood pressure monitoring pharmacist-led telehealth programme in an emergency department transition care clinic: a pilot randomised controlled trial | BMJ Open 2026;16(10):e121681 | Withings (BPM Connect Pro) | feasibility, acceptability, retention (27 screened, 24 randomised, 16/24 completed 12-week visit) | Open (BMJ Open) |
 
 **2026-10-22:** the 16 rows then pending were screened from full text (7 profiled, 9 rejected; see
 `feasibility-matrix.md` Part F and the ledger). Five rejections are `unobtainable` only because the publisher
