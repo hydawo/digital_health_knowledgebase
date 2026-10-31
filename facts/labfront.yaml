@@ -61,7 +61,7 @@ facts:
     type: vendor_page
     quote: Test wearable devices firsthand before making a commitment
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
 - field: program_eligibility
   status: stated
   value: 'Collaborator Program: any academic institution. Grants are set per call: the 2026 Labfront x Garmin Health
@@ -93,7 +93,7 @@ facts:
     quote: Our Garmin-sponsored grants are specifically designed for researchers at an academic or healthcare
       institution and work conducted under the umbrella of that institution, rather than a private company.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
 - field: program_application
   status: stated
   value: 'Collaborator Program: an online form, then selection; selected institutions get a dedicated liaison.
@@ -119,7 +119,7 @@ facts:
     type: vendor_docs
     quote: it could take up to a month after the deadline to announce the winner
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
 - field: program_status
   status: stated
   value: 'Active. Open 2026 grant calls on 2026-10-11: Labfront x Garmin Health Research Grant built on the Garmin
@@ -148,7 +148,7 @@ facts:
     type: vendor_page
     quote: we award grants on a rolling basis
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: The grant page also lists "institutional grants" (Harvard, Cleveland Clinic, Johns Hopkins, Stanford, Mayo)
     as ongoing, with their award, eligibility and deadline fields blank.
 - field: developer_program_status
@@ -174,7 +174,7 @@ facts:
     type: vendor_page
     quote: Developer Access N/A N/A Starting from $4000
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
 - field: user_cap
   status: stated
   value: 'Tester (free): 5 participants, 2 device types per project. Basic: 20 participants included, 1 device type
@@ -200,7 +200,7 @@ facts:
     type: vendor_docs
     quote: Participants can currently use one Movesense sensor with Labfront
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
 - field: academic_vs_commercial
   status: stated
   value: One public price list for every customer; no separate academic or commercial tier is published. Academic
@@ -217,7 +217,7 @@ facts:
     quote: Our Garmin-sponsored grants are specifically designed for researchers at an academic or healthcare
       institution and work conducted under the umbrella of that institution, rather than a private company.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: That no separate commercial price list exists is read from the single public price list, not stated.
 # ---------------- Pricing ----------------
 - field: device_price
@@ -238,7 +238,7 @@ facts:
     type: vendor_docs
     quote: Labfront customers are eligible for a 20~25 % hardware discount through our partnership with Garmin.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
 - field: subscription_price
   status: stated
   value: 'Researcher plans (there is no consumer subscription; the participant app is free): Tester free (5
@@ -264,7 +264,7 @@ facts:
     type: vendor_docs
     quote: All prices are in USD and billed annually in advance.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
 - field: academic_pricing
   status: stated
   value: No academic discount on platform plans is published. Academic support comes as device discounts,
@@ -284,7 +284,7 @@ facts:
     type: vendor_page
     quote: 'Total value: $5500'
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
 - field: api_platform_fees
   status: stated
   value: 'Add-ons, Advanced plan only. Developer Access (S3 bucket of raw data, Beta): from $4,000. Analytics reports:
@@ -312,7 +312,7 @@ facts:
     type: vendor_page
     quote: Data Audit N/A N/A Starting from $500
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
 - field: minimum_commitment
   status: stated
   value: Annual subscription paid in advance; no monthly billing (short studies negotiable by email). Subscriptions
@@ -344,7 +344,7 @@ facts:
     quote: you will not be eligible for a prorated refund of any portion of the subscription fee paid for the
       then-current subscription period
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: Researchers A and B disagreed (A non-refundable, B refundable within 30 days). Both are in the Terms (effective
     2022-08-05). Section 5.3 says fees are non-refundable "Except as set forth in the Agreement", and section 9.3 is
     that exception, the 30-day cancellation refund.
@@ -367,7 +367,7 @@ facts:
     type: vendor_page
     quote: Contact us to access your discount and get a hardware quote.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
 # ---------------- Data access and terms ----------------
 - field: raw_streams
   status: stated
@@ -402,7 +402,7 @@ facts:
     type: vendor_page
     quote: Labfront is currently compatible with select Garmin, Movesense and Dexcom devices
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: 'Movesense models: the compatible-devices page shows only HR2 among its recommended devices, but the help
     centre lists Medical, HR2 and Flash as compatible; the help centre is the specific statement. Polar: a 2022
     founder interview (Fitt Insider, 2022-11-16) described the engine as working "with consumer wearables like Garmin
@@ -428,7 +428,7 @@ facts:
     type: vendor_page
     quote: 3-Axis Accelerometer (Streaming) 25Hz N/A 25Hz , 50Hz, 100Hz
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
 - field: derived_metrics
   status: stated
   value: 'Garmin Connect post-processed metrics (daily and activity summaries, sleep, stress, respiration, SpO2, heart
@@ -451,7 +451,7 @@ facts:
     quote: Measures time-domain (HR, pRR50, SDRR, RMSSD) and frequency-domain (TP, VLF, LF, HF, LF/HF ratio) markers
       of autonomic nervous system activity
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
 - field: sampling_rates
   status: stated
   value: 'Advanced: heart rate 1 s to 60 min; respiration, SpO2 and stress 10 s to 60 min; steps 1 or 15 min; BBI
@@ -474,7 +474,7 @@ facts:
     type: vendor_page
     quote: Maximum Data Recording Duration 15 min Movesense Not Available 12 hrs
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
 - field: history_depth
   status: stated
   value: Tester downloads are limited to the last 30 days (older data is kept and unlocked on upgrade); paid plans
@@ -496,7 +496,7 @@ facts:
     quote: We can collect data that's up to two years old. All that’s required from you is the Garmin Connect login
       info and we’ll take care of the rest.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: The blog post is dated 2022-04-27. Handing over participants' Garmin Connect credentials is something an IRB
     may object to. Whether the pricing table's "Retroactive Garmin Data Access" row is the same service is not
     stated.
@@ -524,7 +524,7 @@ facts:
     type: vendor_docs
     quote: Labfront also offers study participants the opportunity to download a copy of their collected data.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
 - field: rate_limits
   status: not_applicable
   sources:
@@ -560,7 +560,7 @@ facts:
     quote: Termination of all Services also includes deletion of your password and all related information, files and
       data associated with or inside your Account
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: Not recorded as a conflict. The 3-year figure is a retention practice for completed studies; the Terms
     (effective 2022-08-05) govern what happens when a customer closes its account. They can collide when a customer
     closes the account within 3 years of study completion, and no page reconciles that case; ask Labfront. The

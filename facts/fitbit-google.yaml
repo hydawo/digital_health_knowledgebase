@@ -784,7 +784,7 @@ facts:
     type: secondary
     retrieved: '2026-10-10'
     quote: Syncing delays during Google Health brown-outs as the transition is made to the new API
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-30'
   note: Fitabase asks for participants to be reconnected by October 31, one day after Google's turn-off date; Google's date
     governs.
 - field: deprecations

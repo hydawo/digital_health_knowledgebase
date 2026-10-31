@@ -186,7 +186,7 @@ facts:
     type: vendor_docs
     quote: "The researcher sets a maximum number of participants, and can turn sign-up off at any time"
     retrieved: 2026-10-30
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-30'
 - field: academic_vs_commercial
   status: stated
   value: >-
@@ -372,7 +372,7 @@ facts:
     type: vendor_page
     quote: "Through the CARP Gardener framework, future studies will be able to collect health and activity data from"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-30'
   note: >-
     The measure-types table (re-read 2026-10-30, docs/mobile-sensing/measure-types) marks ambient
     light, screen events, free memory, installed apps, app usage, call logs and SMS as Android only,
@@ -440,7 +440,7 @@ facts:
     type: vendor_page
     quote: "But if there is no user interaction, no data is collected, such as during the 2nd night"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-30'
   note: CARP's own 2025 coverage tests on Android 14 and iOS 18 found both OSes pause or kill the app without user interaction, unless a BLE wearable keeps it running; nominal rates are not achieved coverage.
 - field: history_depth
   status: stated
@@ -509,7 +509,7 @@ facts:
     type: vendor_docs
     quote: "Fast Healthcare Interoperability Resources (FHIR) transformers that packages add"
     retrieved: 2026-10-30
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-30'
   note: An open bug (carp.sensing-flutter issue 623, read only) reports that one rejected measurement can make an upload batch retry forever; a fix is proposed in PR 624.
 - field: rate_limits
   status: stated
@@ -617,7 +617,7 @@ facts:
     type: vendor_page
     quote: "HealthKit / Google Fit integration"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-30'
   note: The API 2.0 post date (2026-04-14) is from the carp.dk WordPress API; the GitHub v2.0.0 release was published 2026-04-27.
 - field: licence
   status: stated
@@ -699,7 +699,7 @@ facts:
     type: app_store
     quote: "This app is used for health research studies in the Copenhagen Research Platform (CARP) at the Technical University of Denmark."
     retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+  recheck_by: '2026-11-30'
   note: Version, seller and dates from the iTunes lookup API (id 1569798025, DK storefront) on 2026-10-11. The App Store lists English and Danish; CARP's v5 post says English, Danish and Spanish. Self-hosters and custom-app builders publish their own apps. Until October 2026 carp.dk/join said iOS users in mainland China install through TestFlight; that page was 404 on 2026-10-26 and 2026-10-30 and no current CARP page says this, so the claim was dropped from the value.
 # ---------------- Compliance ----------------
 - field: baa

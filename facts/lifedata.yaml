@@ -54,7 +54,7 @@ facts:
     type: vendor_page
     quote: With a wide range of additional paid services
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: Academic pricing and the graduate-student discount are recorded under academic_pricing and program_eligibility.
     The VA contracts under subscription_price are procurement, not a program.
 - field: program_eligibility
@@ -72,7 +72,7 @@ facts:
     type: vendor_page
     quote: Teams and labs up to 9 users
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
 - field: program_application
   status: stated
   value: No application or review step is published. Every plan is sold through a scheduled consultation with a
@@ -87,7 +87,7 @@ facts:
     type: vendor_legal
     quote: Your Subscription will automatically renew at the end of each billing cycle
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
 - field: program_status
   status: stated
   value: Active. Two platform generations run side by side, "LifeData Original" (researcher console
@@ -103,7 +103,7 @@ facts:
     type: vendor_page
     quote: LifeData+ was built from the ground up using everything we’ve learned over 14 years working with researchers.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: The release year of LifeData+ conflicts between the website (2026) and the store listings (2025); see
     deprecations.
 - field: developer_program_status
@@ -150,7 +150,7 @@ facts:
     quote: Pricing is straightforward and involves the number of researchers, the duration of your subscription, and
       the number of participants over the duration of your subscription.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
 - field: academic_vs_commercial
   status: stated
   value: Separate academic and commercial pricing (stated on the Individual plan), with all features included either
@@ -166,7 +166,7 @@ facts:
     type: vendor_page
     quote: All features included
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
 # ---------------- Pricing ----------------
 - field: device_price
   status: not_applicable
@@ -223,7 +223,7 @@ facts:
     type: secondary
     quote: NOT COMPETED UNDER SAP
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: 'Reported, scoped to these three VA San Diego awards only; not list prices. The figures sit in numeric JSON
     fields that quote_probe cannot read, so they are copied from the API responses on 2026-10-11, not quote-checked.
     (1) 36C26224C0205, "LIFEDATA SURVEY SUBSCRIPTION", sole source under FAR 6.302-1, period 2024-05-01 to
@@ -250,7 +250,7 @@ facts:
     type: vendor_page
     quote: Yes, LifeData offers a discount to qualifying graduate students that are interested in using the platform.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: The VA San Diego "ACADEMIC RESEARCH SERVICES" award (subscription_price, scoped entry) is one price actually
     paid by a federal research customer; it is not a published academic rate.
 - field: api_platform_fees
@@ -274,7 +274,7 @@ facts:
     type: vendor_page
     quote: Easy and unlimited data access
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: No API is documented, so there is no API fee to record.
 - field: minimum_commitment
   status: stated
@@ -290,7 +290,7 @@ facts:
     type: vendor_legal
     quote: Fees paid by you are non-refundable, except as provided in these Terms or when required by law.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: The half-year and annual wording is on the Individual plan card; terms for the other plans are not stated.
     That six months is the minimum is inferred from the absence of anything shorter, hence Corroborated.
 - field: quote_required
@@ -307,7 +307,7 @@ facts:
     type: vendor_page
     quote: At LifeData, subscription pricing is not feature or project-based.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
 - field: hosting_price
   status: not_public
   confidence: Verified
@@ -354,7 +354,7 @@ facts:
     quote: geolocation tracking data were collected through Google Maps (Google), while participants completed a series
       of ecological momentary assessment questions each day through the RealLife Exp application (LifeData, LLC)
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: The absence of passive sensing and wearables comes from searching the site (sensor, wearable, Fitbit, passive
     return only blog literature roundups); the gated help centre cannot rule out an undocumented option, so
     Corroborated. Published deployments that wanted continuous location or wearables ran a separate app alongside
@@ -386,7 +386,7 @@ facts:
     type: vendor_page
     quote: Visualize participant data in real time with customizable dashboards for individuals and groups.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
 - field: sampling_rates
   status: stated
   value: Event-based, not continuous. Prompts follow fixed, random, triggered or event-based schedules set by the
@@ -402,7 +402,7 @@ facts:
     type: vendor_page
     quote: Gather GPS coordinates with each user response.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
 - field: history_depth
   status: stated
   value: All study data stays downloadable for the life of the subscription. After cancellation or lapse it can be
@@ -424,7 +424,7 @@ facts:
     quote: LifeData may terminate your account and delete any content contained in it if there is no account activity
       (such as a log in event or payment) for over 12 months.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
 - field: export_routes
   status: stated
   value: File download from the web app as .csv in multiple layouts (including layouts for multilevel modelling, ready
@@ -445,7 +445,7 @@ facts:
     type: vendor_page
     quote: Export study data and media files in formats ready for analysis.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: The LifeData+ console builds exports as data requests per session type (Startup, Check-in, Notification,
     Closeout), seen in its public JavaScript by the gap hunter; that is a UI backend, not a documented API. One
     field study (JMIR Form Res 2026, PMC13392534) settled questions about exported fields with the vendor before
@@ -493,7 +493,7 @@ facts:
     type: app_store
     quote: This app may share these data types with third parties Device or other IDs
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: The privacy policy is dated December 12, 2024; the terms carry an effective date of December 12, 2014. The
     LifeData+ Google Play data-safety section (listing updated Oct 8, 2026) now declares that the app may share
     "Device or other IDs" with third parties, for app functionality and analytics; the profile recorded this app as
@@ -516,7 +516,7 @@ facts:
     quote: We may use public Study data and anonymized Study metadata (that is, data about the characteristics of a
       Study but not its non-public content), to create and provide new services, features or content.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: Neither the terms (effective December 12, 2014) nor the privacy policy (December 12, 2024) mentions AI or ML.
     Corroborated because applying a 2014 general-use clause to model training is interpretation.
 - field: deprecations
@@ -566,7 +566,7 @@ facts:
     quote: Unless permitted by applicable law, you may not deny others access to, or reverse engineer, the Services, or
       attempt to do so.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: No GitHub organization (api.github.com/orgs/lifedatacorp returns 404) and no repository for LifeData or
     RealLife Exp found. Corroborated because closed source is inferred from the terms plus that absence.
 - field: hosting_options
@@ -587,7 +587,7 @@ facts:
     type: vendor_legal
     quote: Usually, this involves disclosure of information to a web hosting service such as Microsoft.
     retrieved: '2026-10-21'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: Corroborated because "no self-hosting" is an absence across the product, features and legal pages rather than
     a stated exclusion.
 - field: app_availability
@@ -610,7 +610,7 @@ facts:
     type: app_store
     quote: 10K+ Downloads
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: Release date, version and minimum iOS are from the iTunes lookup API (itunes.apple.com/lookup?id=939951918) on
     2026-10-11. The literature sometimes misnames the app "Realtime EXP" (for example doi:10.1016/j.beth.2025.05.007).
 - field: app_availability

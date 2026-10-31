@@ -1,242 +1,157 @@
-Vendor facts: 538 to re-check (2026-10-26)
-Checked 1419 pages across 35 companies.
+Vendor facts: 439 to re-check (2026-10-31)
+Checked 1428 pages across 35 companies.
 
 | Result | Count |
 |---|---|
-| Quotes missing | 46 |
-| Quotes reworded | 6 |
-| Pages changed | 368 |
-| Dead links | 13 |
-| Check by hand | 90 |
-| Unreachable this week | 11 |
-| Re-check dates extended | 375 |
-| Overdue re-checks | 15 |
+| Quotes missing | 6 |
+| Quotes reworded | 5 |
+| Pages changed | 322 |
+| Dead links | 4 |
+| Check by hand | 89 |
+| Unreachable this week | 0 |
+| Re-check dates extended | 111 |
+| Overdue re-checks | 13 |
 | Validation errors | 0 |
 
 ## Quotes missing
 
 The cited text is no longer on the page. Re-check these facts first.
 
-- **avicenna: program_eligibility**, https://avicennaresearch.com/ (best match 43%). Quote: "Patient-centric Clinical Trial and Health Research Software Platform"
-- **avicenna: raw_streams**, https://avicennaresearch.com/features/sensor-based-data (best match 0%). Quote: "You can access the raw or processed data in real-time"
-- **avicenna: derived_metrics**, https://avicennaresearch.com/features/sensor-based-data (best match 0%). Quote: "from raw motion sensors like accelerometer, to processed data such as step count and activity type"
-- **avicenna: hosting_options**, https://avicennaresearch.com/features/white-label-solutions (best match 47%). Quote: "Avicenna offers different installation alternatives, from eventual in-house storage to full on-premises installation."
-- **avicenna: hosting_options**, https://avicennaresearch.com/features/white-label-solutions (best match 50%). Quote: "route all data from participants straight to your own servers"
-- **avicenna: program_eligibility**, https://avicennaresearch.com/legal (best match 0%). Quote: "is a researcher affiliated with an academic institution who uses Avicenna Research to design and conduct scientific studies"
-- **avicenna: program_eligibility**, https://avicennaresearch.com/legal (best match 0%). Quote: "declares that he or she is at least eighteen (18) years of age"
-- **avicenna: api_platform_fees**, https://avicennaresearch.com/legal (best match 0%). Quote: "You shall pay all applicable fees (including any overage fees), as described on the Specific Conditions in connection with such Services selected by you."
-- **avicenna: quote_required**, https://avicennaresearch.com/legal (best match 32%). Quote: "for Services billed on per-study basis, the old pricing will apply until the end of the currently defined studies."
-- **avicenna: retention_terms**, https://avicennaresearch.com/legal (best match 39%). Quote: "Avicenna Research will retain your data for a minimum period of two (2) years following contract termination, in accordance with our Data Management Policy."
-- **avicenna: retention_terms**, https://avicennaresearch.com/legal (best match 0%). Quote: "As a Participant, you can delete all or part of the data you have provided for any study conducted using Avicenna Research, at any time"
-- **avicenna: licence**, https://avicennaresearch.com/legal (best match 37%). Quote: "All the software utilized for the use and development of the Services is the property of Avicenna Research or its software providers"
-- **avicenna: dpa**, https://avicennaresearch.com/legal (best match 0%). Quote: "approved sub-processors, breach notification procedures, data return/deletion obligations, and support for exercising data subject rights"
-- **avicenna: hipaa_statement**, https://avicennaresearch.com/legal (best match 27%). Quote: "HIPAA Security Rule (where applicable): Administrative, physical, and technical safeguards meeting or exceeding addressable requirements."
-- **avicenna: iso27001**, https://avicennaresearch.com/legal (best match 30%). Quote: "Certified November 2024 with zero nonconformities; Surveillance Audit November 2025 with zero nonconformities."
-- **avicenna: data_residency**, https://avicennaresearch.com/legal (best match 26%). Quote: "your information may be transferred, processed, and stored in our servers in Canada"
-- **avicenna: data_residency**, https://avicennaresearch.com/legal (best match 0%). Quote: "UK/EEA Data : Processed and stored within the UK/EEA unless specific safeguards are in place"
-- **avicenna: data_residency**, https://avicennaresearch.com/legal (best match 0%). Quote: "Our infrastructure-agnostic approach enables flexibility in meeting data residency and regulatory requirements"
-- **activinsights-geneactiv: developer_program_status**, https://cran.r-project.org/web/packages/GENEAcore/index.html (best match 75%). Quote: "License: GPL-2 | GPL-3"
-- **garmin: developer_program_status [Garmin Connect Developer Program]**, https://developer.garmin.com/gc-developer-program/overview/ (best match 40%). Quote: "Stay tuned for more updates on the program"
-- **garmin: derived_metrics**, https://developer.garmin.com/gc-developer-program/overview/ (best match 41%). Quote: "Activity API - Full activity data for over 30 activity types."
-- **withings: program_eligibility**, https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data (best match 44%). Quote: "Access to raw data is a special feature available only for contracted partners."
-- **withings: program_application**, https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data (best match 41%). Quote: "If you are interested in using this feature, please contact us"
-- **withings: raw_streams [Advanced Research API (ScanWatch, contracted partners)]**, https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data (best match 40%). Quote: "Raw data activation will put the Withings device in a specific mode that will disable all features except raw data capture."
-- **withings: raw_streams [Advanced Research API (ScanWatch, contracted partners)]**, https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data (best match 39%). Quote: "For Withings ScanWatch, continuous collection of raw data would reduce battery life to 3-4 days."
-- **withings: sampling_rates [ScanWatch raw accelerometer and PPG]**, https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data (best match 0%). Quote: "Both sensors sampling rate are about 24.824 Hz"
-- **withings: research_program**, https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis (best match 0%). Quote: "The Advanced Research API provides research institutions, universities, and healthcare innovators with direct access to raw sensor data from Withings devices"
-- **withings: program_eligibility**, https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis (best match 44%). Quote: "Designed for research groups, universities, and advanced health studies."
-- **withings: program_application**, https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis (best match 39%). Quote: "Interested in using our Advanced Research API? Click here."
-- **withings: program_status**, https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis (best match 0%). Quote: "Currently, the Advanced Research API is compatible exclusively with the Withings ScanWatch."
-- **withings: sampling_rates [ScanWatch raw accelerometer and PPG]**, https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis (best match 43%). Quote: "samples at 25Hz by default (up to 100Hz)"
-- **radar-base: deprecations [Fitbit route (legacy Fitbit Web API to Google Health API)]**, https://developers.google.com/health (best match 79%). Quote: "On October 30, 2026 , the Fitbit Web API will be turned off and will no longer function or sync data to or from Fitbit users."
-- **fitbit-google: deprecations [APIs]**, https://developers.google.com/health/about (best match 82%). Quote: "October 30, 2026 (API turn-off): The Fitbit Web API will be turned off and will no longer function or sync data to or from Fitbit users."
-- **fitabase: deprecations**, https://developers.google.com/health/reference/rest/v4beta/users (best match 79%). Quote: "On October 30, 2026 , the Fitbit Web API will be turned off and will no longer function or sync data to or from Fitbit users."
-- **carp: developer_program_status**, https://docs.carp.dk/ (best match 37%). Quote: "Open source MIT license. Read the code, change it, run it yourself."
-- **terra: api_platform_fees**, https://docs.tryterra.co/streaming-api/pricing (best match 55%). Quote: "The Streaming API is available as an add-on to any Terra base plan for $99/month ."
-- **terra: api_platform_fees**, https://docs.tryterra.co/unified-api/pricing (best match 88%). Quote: "The first 400 events per active authentication are free. 0.5 credits per event beyond this."
-- **garmin: program_eligibility [Garmin Health SDKs and Connect Developer Program]**, https://openwearables.io/docs/providers/garmin-api-integration (best match 48%). Quote: "You must apply as a legal entity (company, university, hospital, research institution, etc.). Personal-use applications are rejected."
-- **fitrockr: raw_streams**, https://pmc.ncbi.nlm.nih.gov/articles/PMC12975902/ (best match 0%). Quote: "was exported from the Fitrockr hub/platform in the Comma-Separated Values (CSV) format."
-- **terra: api_platform_fees**, https://tryterra.co/pricing (best match 90%). Quote: "An active authentication is one connected data source for one end user, and costs 200 credits per month."
-- **lifedata: gdpr_statement [Data Privacy Framework certification]**, https://www.dataprivacyframework.gov/list (read via https://dpfapi.azurewebsites.net/api/participants/6382) (best match 72%). Quote: "EU-US Certification Active - Re-certification under Review 2018-05-31T12:00:00+00:00 2027-04-28T12:00:00+00:00"
-- **lifedata: gdpr_statement [Data Privacy Framework certification]**, https://www.dataprivacyframework.gov/list (read via https://dpfapi.azurewebsites.net/api/participants/6382) (best match 71%). Quote: "UK Extension Certification Active - Re-certification under Review 2023-10-31T12:00:00+00:00 2027-04-28T12:00:00+00:00"
-- **thryve: hipaa_statement**, https://www.thryve.health/certifications-compliance (best match 45%). Quote: "Full compliance with US healthcare data protection law."
-- **thryve: gdpr_statement**, https://www.thryve.health/certifications-compliance (best match 0%). Quote: "Built for European data protection law from the ground up."
-- **thryve: iso27001**, https://www.thryve.health/certifications-compliance (best match 0%). Quote: "Thryve's infrastructure, processes, and data handling are independently audited against the highest security requirements."
-- **ultrahuman: subscription_price**, https://www.ultrahuman.com/us/powerplugs/ (best match 87%). Quote: "Cardio Adaptability $ 2.9/month"
+- **metricwire: app_availability [Catalyst By MetricWire (current participant app)]**, https://apps.apple.com/us/app/catalyst-by-metricwire/id1585123028 (read via https://itunes.apple.com/lookup?id=1585123028) (best match 0%). Quote: "2026-10-07T21:19:54Z"
+- **carp: derived_metrics**, https://github.com/carp-dk/carp-dsp (best match 42%). Quote: "A Kotlin Multiplatform framework for CARP (Copenhagen Research Platform) data science and analytics processing"
+- **apple: research_program [Investigator Support Program]**, https://pmc.ncbi.nlm.nih.gov/articles/PMC13438180/ (best match 0%). Quote: "Apple has multiple partnerships with the research community, including an Investigator Support Program that provides free devices."
+- **fitbit-google: device_price [Fitbit Charge 6 (US)]**, https://store.google.com/us/product/fitbit_charge_6?hl=en-US (best match 60%). Quote: "Fitbit Charge 6 Tracker $159.95 or $13.33/month with 12-month financing"
+- **fitbit-google: device_price [Fitbit Versa 4 (US)]**, https://store.google.com/us/product/fitbit_versa_4?hl=en-US (best match 86%). Quote: "Fitbit Versa 4 Smartwatch $199.95 or $16.66/month with 12-month financing"
+- **ultrahuman: academic_pricing**, https://www.ultrahuman.com/us/heroes/ (best match 74%). Quote: "You may be asked to provide ID or proof of eligibility"
 
 ## Quotes reworded
 
 Close but not exact. Confirm the meaning is unchanged and refresh the quote.
 
-- ametris-actigraph: deprecations [ActiLife], https://ametris.com/downloads (91% similar)
-- activinsights-geneactiv: program_status, https://cran.r-project.org/web/packages/GENEAcore/index.html (90% similar)
-- terra: user_cap, https://docs.tryterra.co/streaming-api/pricing (90% similar)
-- avicenna: app_availability, https://forum.avicennaresearch.com/t/participant-app-settings/1278 (96% similar)
-- m-path: program_status, https://m-path.io/manual/knowledge-base/subscriptions-and-billing/ (98% similar)
-- lifedata: app_availability [LifeData+ (LifeData app)], https://play.google.com/store/apps/details?id=com.lifedata.lifedata&hl=en_US (93% similar)
+- metricwire: app_availability [Catalyst By MetricWire (current participant app)], https://play.google.com/store/apps/details?id=com.metricwire.digitalhealth&hl=en_US (93% similar)
+- fitbit-google: device_price [Pixel Watch 5 (US)], https://store.google.com/us/product/pixel_watch_5 (97% similar)
+- zepp-amazfit: subscription_price, https://us.amazfit.com/products/helio-strap (90% similar)
+- circular: device_price, https://www.circular.xyz/shop (97% similar)
+- circular: device_price, https://www.circular.xyz/shop (94% similar)
 
 ## Pages changed
 
 The page text changed since last week. Facts that cite it:
 
-- https://9to5google.com/2026/07/15/samsung-health-ai-training-data-consent/ (): samsung: ai_training_terms
-- https://academic.ametris.com/actigraph-wgt3x-bt (): ametris-actigraph: deprecations [ActiGraph wGT3X-BT and GT9X Link]; ametris-actigraph: device_price [Vendor list prices]; ametris-actigraph: history_depth [On-device storage]; ametris-actigraph: quote_required; ametris-actigraph: raw_streams [Devices and ActiLife]; ametris-actigraph: sampling_rates [ActiGraph wGT3X-BT]
+- https://accessgudid.nlm.nih.gov/devices/search?query=verily (read via https://api.fda.gov/device/udi.json?search=company_name:%22Verily%22&limit=20) (regulatory): verily: deprecations
+- https://ametris.com/ (): ametris-actigraph: academic_vs_commercial
+- https://ametris.com/actigraph-leap (docs): ametris-actigraph: derived_metrics; ametris-actigraph: history_depth [On-device storage]; ametris-actigraph: raw_streams [Devices and ActiLife]
+- https://ametris.com/algorithm-marketplace (): ametris-actigraph: derived_metrics
+- https://ametris.com/compliance (trust): ametris-actigraph: ai_training_terms; ametris-actigraph: baa; ametris-actigraph: data_residency; ametris-actigraph: dpa; ametris-actigraph: fda_clearances [ActiGraph wGT3X-BT and GT9X Link (vendor's mapping to K080545)]; ametris-actigraph: gdpr_statement; and 2 more
 - https://ametris.com/downloads (changelog): ametris-actigraph: deprecations [ActiLife]
-- https://api.fda.gov/device/510k.json?search=applicant:%22Apple,%20Inc.%22&limit=100 (regulatory): watched page, no facts cite it yet
-- https://api.fda.gov/device/510k.json?search=applicant:%22samsung+electronics%22&sort=decision_date:desc&limit=20 (regulatory): watched page, no facts cite it yet
-- https://api.fda.gov/device/510k.json?search=applicant:actigraph&limit=20 (regulatory): watched page, no facts cite it yet
-- https://api.fda.gov/device/510k.json?search=applicant:empatica&limit=50 (regulatory): watched page, no facts cite it yet
-- https://api.fda.gov/device/510k.json?search=applicant:whoop (regulatory): whoop: fda_clearances [Irregular Heart Rhythm Notifications]
-- https://api.fda.gov/device/510k.json?search=applicant:withings&limit=100 (regulatory): watched page, no facts cite it yet
-- https://api.fda.gov/device/registrationlisting.json?search=registration.owner_operator.firm_name:oura (regulatory): oura: fda_clearances
-- https://apis.io/providers/evidation-health/ (): evidation: developer_program_status
-- https://apps.apple.com/us/app/avicenna-research/id1137173052 (): avicenna: app_availability
-- https://apps.apple.com/us/app/carp-studies/id1569798025 (): carp: app_availability
-- https://apps.apple.com/us/app/catalyst-by-metricwire/id1585123028 (app_store): metricwire: app_availability [Catalyst By MetricWire (current participant app)]; metricwire: app_availability [Study-branded (white-label) apps]; metricwire: derived_metrics; metricwire: raw_streams; metricwire: sampling_rates
+- https://ametris.com/partnerships (developer_program): ametris-actigraph: research_program [Accelerant Partnership Program (CROs and technology partners)]
+- https://ametris.com/privacy-policy (terms): ametris-actigraph: ai_training_terms; ametris-actigraph: baa; ametris-actigraph: data_residency; ametris-actigraph: gdpr_statement; ametris-actigraph: hipaa_statement; ametris-actigraph: retention_terms
+- https://api.fda.gov/device/registrationlisting.json?search=k_number:K201456 (read via https://api.fda.gov/device/registrationlisting.json?search=k_number:K201456&limit=100) (): withings: fda_clearances [ScanWatch, ScanWatch 2 (ECG and SpO2)]
+- https://api.fda.gov/device/registrationlisting.json?search=k_number:K223374 (read via https://api.fda.gov/device/registrationlisting.json?search=k_number:K223374&limit=100) (): withings: fda_clearances [Blood pressure monitors under Transtek 510(k)s (BPM Connect, BPM Connect Pro, BPM Pro 2, BPM Vision)]
+- https://api.fda.gov/device/registrationlisting.json?search=k_number:K230812 (read via https://api.fda.gov/device/registrationlisting.json?search=k_number:K230812&limit=100) (): withings: fda_clearances [Body Scan, BodyScan 2]
+- https://api.fda.gov/device/registrationlisting.json?search=k_number:K240102 (read via https://api.fda.gov/device/registrationlisting.json?search=k_number:K240102&limit=100) (): withings: fda_clearances [Blood pressure monitors under Transtek 510(k)s (BPM Connect, BPM Connect Pro, BPM Pro 2, BPM Vision)]
+- https://api.fda.gov/device/registrationlisting.json?search=registration.owner_operator.firm_name:ultrahuman (regulatory): watched page, no facts cite it yet
+- https://apps.apple.com/dk/app/carp-studies/id1569798025 (app_store): carp: app_availability
+- https://apps.apple.com/gb/app/radar-active-rmt/id1483953055 (app_store): radar-base: app_availability [aRMT (active) Android and iOS]
+- https://apps.apple.com/us/app/activinsights-companion/id1579732913 (changelog): activinsights-geneactiv: program_status
+- https://apps.apple.com/us/app/aware-client-v2/id1455986181 (app_store): aware: app_availability [iOS]; aware: raw_streams [iOS, AWARE Client V2 (App Store, version 1.14.2) and AWAREFramework-iOS]; aware: subscription_price
+- https://apps.apple.com/us/app/aware-client-v3/id6781949744 (app_store): aware: app_availability [iOS]; aware: data_residency; aware: raw_streams [iOS, AWARE Client V3 (App Store, released 2026-06-28)]; aware: subscription_price
+- https://apps.apple.com/us/app/beiwe2/id1312962738 (app_store): beiwe: ai_training_terms; beiwe: app_availability [iOS App Store and Android APK]
 - https://apps.apple.com/us/app/catalyst-by-metricwire/id1585123028 (read via https://itunes.apple.com/lookup?id=1585123028) (): metricwire: app_availability [Catalyst By MetricWire (current participant app)]
-- https://apps.apple.com/us/app/empatica-care-lab/id6443699123 (app_store): watched page, no facts cite it yet
-- https://apps.apple.com/us/app/evidation-earn-health-rewards/id793039965 (app_store): evidation: app_availability [Evidation member app]; evidation: deprecations; evidation: subscription_price [Members (Evidation app)]
-- https://apps.apple.com/us/app/gamma-research-study/id6747886728 (): avicenna: app_availability
-- https://apps.apple.com/us/app/lifedata/id6443996884 (app_store): lifedata: app_availability [LifeData+ (LifeData app)]; lifedata: deprecations
-- https://apps.apple.com/us/app/m-path-sense/id6520394129 (): m-path: app_availability
-- https://apps.apple.com/us/app/m-path/id6733243074 (): m-path: app_availability
-- https://apps.apple.com/us/app/metricwire/id1117108543 (app_store): metricwire: app_availability [MetricWire (legacy generic participant app)]
-- https://apps.apple.com/us/app/metricwire/id1117108543 (read via https://itunes.apple.com/lookup?id=1117108543) (): metricwire: deprecations
-- https://apps.apple.com/us/app/mindlamp-2/id1495947054 (app_store): mindlamp: app_availability [iOS (App Store)]
-- https://apps.apple.com/us/app/movesense-ecg-recorder/id6443902831 (app_store): movesense: derived_metrics; movesense: export_routes; movesense: subscription_price
-- https://apps.apple.com/us/app/oura-research/id6748037636 (app_store): oura: program_status; oura: research_program
-- https://apps.apple.com/us/app/reallife-exp/id939951918 (app_store): lifedata: app_availability [LifeData Original (RealLife Exp)]
-- https://apps.apple.com/us/developer/avicenna-research-inc/id1137173051 (app_store): avicenna: app_availability
-- https://athletechnews.com/whoop-b2b-solution-unite-layoffs/ (): whoop: program_status
+- https://apps.apple.com/us/app/circular-ring-health-tracker/id1583942047 (app_store): watched page, no facts cite it yet
+- https://apps.apple.com/us/app/fitabase-engage/id6496601338 (app_store): fitabase: program_status; fitabase: raw_streams [Garmin]
+- https://apps.apple.com/us/app/fitrockr-sync/id6480404044 (app_store): fitrockr: deprecations
+- https://apps.apple.com/us/app/movesense-showcase/id1439876677 (): movesense: export_routes
+- https://apps.apple.com/us/app/ringconn/id6444470583 (app_store): ringconn: data_residency; ringconn: subscription_price
+- https://apps.apple.com/us/app/sensor-bio/id6745620963 (app_store): sensor-bio: subscription_price
+- https://apps.apple.com/us/app/stf-sleep-research/id1345157553 (): zepp-amazfit: research_program
+- https://apps.apple.com/us/app/zepp/id1127269366 (app_store): zepp-amazfit: subscription_price
 - https://avicennaresearch.com/ (): avicenna: academic_pricing; avicenna: academic_vs_commercial; avicenna: program_eligibility; avicenna: soc2
-- https://avicennaresearch.com/features/sensor-based-data (): avicenna: derived_metrics; avicenna: raw_streams
 - https://avicennaresearch.com/features/white-label-solutions (other): avicenna: hosting_options; avicenna: hosting_price
-- https://avicennaresearch.com/legal (terms): avicenna: academic_pricing; avicenna: academic_vs_commercial; avicenna: ai_training_terms; avicenna: api_platform_fees; avicenna: baa; avicenna: data_residency; and 10 more
-- https://axivity.com/ (): axivity: hipaa_statement; axivity: iso27001; axivity: program_status; axivity: research_program; axivity: soc2
-- https://axivity.com/case-studies/biobank (): axivity: research_program
-- https://axivity.com/contact (): axivity: academic_pricing; axivity: research_program
-- https://axivity.com/privacy (terms): axivity: ai_training_terms; axivity: baa; axivity: dpa; axivity: gdpr_statement [Website and order data]; axivity: hipaa_statement; axivity: iso27001; and 2 more
-- https://axivity.com/shipping (): axivity: academic_pricing; axivity: minimum_commitment; axivity: quote_required
-- https://axivity.com/support (): axivity: baa; axivity: research_program
-- https://axivity.com/terms (terms): axivity: ai_training_terms; axivity: baa; axivity: dpa; axivity: hipaa_statement; axivity: minimum_commitment
-- https://axivity.com/warrantyterms (): axivity: minimum_commitment
-- https://blog.ametris.com/blog/gt9x-link-faq-old (): ametris-actigraph: deprecations [ActiGraph wGT3X-BT and GT9X Link]
-- https://blog.theactigraph.com/blog/faq-actilife7-upgrade (): ametris-actigraph: api_platform_fees [ActiLife Data Vault storage]; ametris-actigraph: api_platform_fees [ActiLife licences]; ametris-actigraph: deprecations [ActiLife]; ametris-actigraph: raw_streams [Devices and ActiLife]
+- https://avicennaresearch.com/legal (terms): avicenna: academic_pricing; avicenna: academic_vs_commercial; avicenna: ai_training_terms; avicenna: hosting_price; avicenna: minimum_commitment; avicenna: soc2
+- https://awareframework.com/category/news/ (changelog): watched page, no facts cite it yet
+- https://axivity.com/downloads/ax3 (docs): axivity: derived_metrics
+- https://axivity.com/faq (): axivity: academic_pricing; axivity: deprecations; axivity: hipaa_statement; axivity: research_program
+- https://axivity.com/files/resources/AX3v2_Datasheet.pdf (docs): axivity: deprecations; axivity: fda_clearances; axivity: history_depth [AX3]; axivity: iso27001
+- https://axivity.com/files/resources/AX6_Datasheet.pdf (docs): axivity: history_depth [AX6]; axivity: iso27001
+- https://axivity.com/help/22 (): axivity: sampling_rates [AX3]
+- https://axivity.com/help/3 (): axivity: developer_program_status
+- https://axivity.com/product/ax3 (pricing): axivity: academic_pricing; axivity: device_price [AX3]; axivity: history_depth [AX3]; axivity: minimum_commitment; axivity: raw_streams; axivity: sampling_rates [AX3]
+- https://axivity.com/product/ax6 (pricing): axivity: academic_pricing; axivity: device_price [AX6]; axivity: history_depth [AX6]; axivity: raw_streams; axivity: sampling_rates [AX6]
+- https://axivity.com/products (pricing): axivity: academic_pricing; axivity: academic_vs_commercial; axivity: deprecations; axivity: device_price [AX3]; axivity: minimum_commitment; axivity: program_application; and 4 more
+- https://blog.ametris.com/blog/leap-faq (): ametris-actigraph: program_eligibility
+- https://blog.ametris.com/news (changelog): watched page, no facts cite it yet
+- https://blog.ametris.com/news/signant-health-acquires-ametris-to-create-an-end-to-end-ecoa-and-wearables-platform (): ametris-actigraph: ai_training_terms; ametris-actigraph: program_status
+- https://cardiorthm.com/products/cardiorthm (): movesense: device_price [CardioRTHM (consumer kit, MD sensor plus chest strap and app)]
 - https://carp.dk/ (): carp: program_status
-- https://carp.dk/carp-mobile-sensing-api-2-0-released/ (): carp: deprecations; carp: program_status
-- https://carp.dk/carp-studies-app-published-in-the-apple-app-store/ (): carp: app_availability
-- https://carp.dk/caws/ (): carp: derived_metrics; carp: iso27001
-- https://carp.dk/coverage-analysis-on-android-14-and-ios-18/ (): carp: sampling_rates
-- https://carp.dk/funding-from-the-novo-nordisk-foundation/ (): carp: research_program
-- https://carp.dk/hosting/ (pricing): carp: academic_pricing; carp: academic_vs_commercial; carp: ai_training_terms; carp: baa; carp: dpa; carp: gdpr_statement; and 8 more
-- https://carp.dk/new-carp-studies-app/ (changelog): carp: data_residency; carp: derived_metrics; carp: licence; carp: program_eligibility; carp: program_status; carp: raw_streams; and 2 more
-- https://carp.dk/three-ways-to-use-carp/ (research_program): carp: academic_vs_commercial; carp: api_platform_fees; carp: data_residency; carp: deprecations; carp: dpa; carp: export_routes; and 4 more
-- https://clinicaltrials.gov/study/NCT06207929 (read via https://clinicaltrials.gov/api/v2/studies/NCT06207929) (): evidation: research_program [Outside researchers seeking existing Evidation data]
+- https://cdn.shopify.com/s/files/1/0850/1769/0420/files/RingConn_Gen_3_Manual_Instruction_English.pdf?v=1779691635 (): ringconn: history_depth [RingConn Gen 3]
 - https://cran.r-project.org/web/packages/GENEAcore/index.html (): activinsights-geneactiv: developer_program_status; activinsights-geneactiv: program_status
 - https://developer.android.com/health-and-fitness/health-connect/migration/fit (): fitbit-google: deprecations [Accounts, Google Fit and devices]
 - https://developer.android.com/health-and-fitness/health-connect/read-data (): samsung: history_depth
-- https://developer.garmin.com/connect-iq/api-docs/Toybox/Sensor.html (): garmin: raw_streams; garmin: sampling_rates [Connect IQ Sensor API]
-- https://developer.garmin.com/gc-developer-program/overview/ (developer_program): garmin: deprecations; garmin: derived_metrics; garmin: developer_program_status [Garmin Connect Developer Program]; garmin: iso27001; garmin: rate_limits; garmin: user_cap
-- https://developer.whoop.com/api (docs): whoop: derived_metrics; whoop: history_depth
-- https://developer.withings.com/developer-guide/v3/data-api/all-available-health-data (): withings: derived_metrics; withings: raw_streams [ECG waveform (Heart v2, Health Data API)]; withings: raw_streams [Stethoscope signal (BeamO)]
-- https://developer.withings.com/developer-guide/v3/get-signal/decode-stetho-to-pcm (): withings: raw_streams [Stethoscope signal (BeamO)]
-- https://developer.withings.com/developer-guide/v3/integration-guide/public-health-data-api/data-api/raw-data (docs): withings: program_application; withings: program_eligibility; withings: raw_streams [Advanced Research API (ScanWatch, contracted partners)]; withings: sampling_rates [ScanWatch raw accelerometer and PPG]
-- https://developer.withings.com/developer-guide/v3/integration-guide/surveys/surveys-library (): withings: derived_metrics [Patient Insights questionnaires (BPM Pro 2)]
-- https://developer.withings.com/developer-guide/v3/integration-guide/surveys/surveys-overview (): withings: derived_metrics [Patient Insights questionnaires (BPM Pro 2)]
-- https://developer.withings.com/developer-guide/v3/maintain-your-integration/understand-our-timeline-for-notice (changelog): withings: deprecations
-- https://developer.withings.com/developer-guide/v3/withings-solutions/research-apis (research_program): withings: academic_pricing; withings: minimum_commitment; withings: program_application; withings: program_eligibility; withings: program_status; withings: research_program; and 1 more
-- https://developer.withings.com/developer-guide/v3/withings-solutions/security-and-compliance (trust): withings: gdpr_statement; withings: hipaa_statement; withings: soc2
-- https://developer.withings.com/llms.md (docs): withings: developer_program_status; withings: export_routes; withings: history_depth; withings: rate_limits
-- https://developer.withings.com/openapi.yaml (docs): withings: deprecations; withings: history_depth; withings: raw_streams [Advanced Research API (ScanWatch, contracted partners)]; withings: raw_streams [ECG waveform (Heart v2, Health Data API)]; withings: sampling_rates [ECG waveform (Heart v2)]
+- https://developer.apple.com/support/terms/apple-developer-program-license-agreement/ (terms): apple: academic_vs_commercial; apple: ai_training_terms; apple: baa; apple: dpa; apple: hipaa_statement; apple: retention_terms [HealthKit]
+- https://developer.garmin.com/gc-developer-program/overview/ (developer_program): garmin: academic_pricing; garmin: academic_vs_commercial; garmin: api_platform_fees [Connect Developer Program (Health API and related APIs)]; garmin: developer_program_status [Garmin Connect Developer Program]; garmin: history_depth; garmin: iso27001; and 5 more
+- https://developer.samsung.com/sdp/news/en/2025/10/30/dev-insight-oct-2025-move-to-samsung-health-data-sdk-as-samsung-health-sdk-for-android-deprecates-and-other-latest-news (): samsung: deprecations
 - https://developers.google.com/health (): radar-base: deprecations [Fitbit route (legacy Fitbit Web API to Google Health API)]
-- https://developers.google.com/health/about (developer_program): fitbit-google: academic_pricing; fitbit-google: academic_vs_commercial [Google Health API]; fitbit-google: deprecations [APIs]; fitbit-google: developer_program_status [Google Health API]; fitbit-google: export_routes [Cloud and self-export]; fitbit-google: program_status
-- https://developers.google.com/health/app-verification (developer_program): fitbit-google: academic_vs_commercial [Google Health API]; fitbit-google: api_platform_fees [Google Health API]; fitbit-google: iso27001; fitbit-google: program_application; fitbit-google: soc2; fitbit-google: user_cap [Google Health API]; and 2 more
-- https://developers.google.com/health/data-types (docs): fitbit-google: deprecations [APIs]; fitbit-google: derived_metrics [Google Health API]; fitbit-google: raw_streams [Google Health API]; fitbit-google: sampling_rates
-- https://developers.google.com/health/data-types/vitals (): fitbit-google: raw_streams [Google Health API]
-- https://developers.google.com/health/endpoints (): fitbit-google: history_depth [Google Health API]
-- https://developers.google.com/health/get-started (): fitbit-google: export_routes [Cloud and self-export]; fitbit-google: hipaa_statement
-- https://developers.google.com/health/migration (docs): fitbit-google: deprecations [APIs]
-- https://developers.google.com/health/newsletters (): fitbit-google: sampling_rates
-- https://developers.google.com/health/policies/health-api-developer-terms-and-conditions (terms): fitbit-google: ai_training_terms [Developers using the API]; fitbit-google: baa [Google Health API]; fitbit-google: dpa; fitbit-google: hipaa_statement; fitbit-google: retention_terms
-- https://developers.google.com/health/policies/health-api-developer-user-data-policy (terms): fitbit-google: academic_vs_commercial [Google Health API]; fitbit-google: ai_training_terms [Developers using the API]; fitbit-google: hipaa_statement; fitbit-google: retention_terms
-- https://developers.google.com/health/policies/health-api-research-pledge (research_program): watched page, no facts cite it yet
-- https://developers.google.com/health/policies/health-api-user-data-and-research-policy (research_program): fitbit-google: academic_pricing; fitbit-google: academic_vs_commercial [Google Health API]; fitbit-google: ai_training_terms [Developers using the API]; fitbit-google: program_application; fitbit-google: program_eligibility; fitbit-google: program_status; and 2 more
-- https://developers.google.com/health/rate-limits (docs): fitbit-google: rate_limits [Google Health API]; fitbit-google: user_cap [Google Health API]
-- https://developers.google.com/health/release-notes (changelog): fitbit-google: deprecations [APIs]; fitbit-google: derived_metrics [Google Health API]; fitbit-google: developer_program_status [Google Health API]; fitbit-google: export_routes [Cloud and self-export]; fitbit-google: raw_streams [Google Health API]
-- https://docs.carp.dk/ (): carp: developer_program_status; carp: hipaa_statement
-- https://femtechinsider.com/tidepool-and-oura-collaborate-to-build-diabetes-research-dataset/ (): oura: academic_pricing
-- https://forum.avicennaresearch.com/c/release-notes/6 (changelog): watched page, no facts cite it yet
-- https://forum.avicennaresearch.com/t/1009 (): avicenna: hosting_options
-- https://forum.avicennaresearch.com/t/1031 (other): avicenna: data_residency
-- https://forum.avicennaresearch.com/t/1225 (): avicenna: hosting_options
-- https://forum.avicennaresearch.com/t/1443 (): avicenna: deprecations; avicenna: iso27001
-- https://forum.avicennaresearch.com/t/1475 (): avicenna: hosting_options
-- https://forum.avicennaresearch.com/t/1508 (): avicenna: derived_metrics
-- https://forum.avicennaresearch.com/t/1512 (): avicenna: raw_streams
-- https://forum.avicennaresearch.com/t/1645 (): avicenna: hosting_options; avicenna: sampling_rates
-- https://forum.avicennaresearch.com/t/app-usage-legacy/1246 (): avicenna: deprecations
-- https://forum.avicennaresearch.com/t/avicenna-raw-database-software/800 (): avicenna: export_routes
-- https://forum.avicennaresearch.com/t/data-sources/1266 (docs): avicenna: app_availability; avicenna: sampling_rates
-- https://forum.avicennaresearch.com/t/fitbit/1259 (): avicenna: deprecations; avicenna: history_depth; avicenna: sampling_rates
-- https://forum.avicennaresearch.com/t/frequently-asked-questions/5 (pricing): avicenna: academic_pricing; avicenna: academic_vs_commercial; avicenna: minimum_commitment; avicenna: program_application; avicenna: quote_required; avicenna: rate_limits; and 3 more
-- https://forum.avicennaresearch.com/t/garmin-health-api/1260 (): avicenna: sampling_rates
-- https://forum.avicennaresearch.com/t/garmin-health-sdk/1261 (): avicenna: raw_streams
-- https://forum.avicennaresearch.com/t/garmin-sdk/1261 (): garmin: sampling_rates [Health SDK accelerometer logging]
-- https://forum.avicennaresearch.com/t/how-sms-notification-costs-are-calculated/1540 (pricing): avicenna: api_platform_fees
-- https://forum.avicennaresearch.com/t/how-to-export-study-data-using-the-api/1496 (developer_program): avicenna: developer_program_status; avicenna: export_routes; avicenna: rate_limits
-- https://forum.avicennaresearch.com/t/location/1255 (): avicenna: sampling_rates
-- https://forum.avicennaresearch.com/t/our-new-brand-and-identity/1120 (): avicenna: deprecations; avicenna: program_status
-- https://forum.avicennaresearch.com/t/participant-app-settings/1278 (): avicenna: app_availability
-- https://forum.avicennaresearch.com/t/raw-data/1241 (docs): avicenna: derived_metrics; avicenna: export_routes; avicenna: rate_limits; avicenna: raw_streams; avicenna: retention_terms
-- https://forum.avicennaresearch.com/t/sensorkit-approval/1563 (): avicenna: hipaa_statement; avicenna: program_application
-- https://forum.avicennaresearch.com/t/sensorkit/1290 (): avicenna: history_depth; avicenna: raw_streams; avicenna: sampling_rates
-- https://forum.avicennaresearch.com/t/step-1-create-a-researcher-account/1160 (): avicenna: program_eligibility
-- https://forum.avicennaresearch.com/t/weekly-release-notes-2023-10-16/706 (): avicenna: deprecations
-- https://forum.avicennaresearch.com/t/weekly-release-notes-2026-10-06/2188 (): avicenna: program_status
-- https://forums.garmin.com/developer/fit-sdk/f/discussion/435484/developer-onboarding-blocked/2054626 (changelog): garmin: developer_program_status [Garmin Connect Developer Program]
-- https://gadgetsandwearables.com/2026/09/28/fitbit-api-migration-deadline-october-30/ (): fitbit-google: deprecations [APIs]
-- https://github.com/BIDMCDigitalPsychiatry/LAMP-dashboard/releases/tag/2026.08.05.3 (): mindlamp: raw_streams
+- https://developers.google.com/health/about (developer_program): fitbit-google: academic_pricing; fitbit-google: academic_vs_commercial [Google Health API]; fitbit-google: deprecations [APIs]; fitbit-google: developer_program_status [Google Health API]; fitbit-google: developer_program_status [Legacy Fitbit Web API]; fitbit-google: export_routes [Cloud and self-export]; and 2 more
+- https://developers.google.com/health/reference/rest/v4beta/users (): fitabase: deprecations
+- https://docs.carp.dk/ (): carp: hipaa_statement
+- https://docs.thryve.health/further-resources/technology-overview (): thryve: export_routes; thryve: gdpr_statement
+- https://docs.thryve.health/further-resources/v5-api-reference (): thryve: rate_limits
+- https://docs.thryve.health/getting-started/get-your-api-keys (): thryve: developer_program_status
+- https://docs.thryve.health/thryve-data-sources/apple-health (): thryve: raw_streams
+- https://docs.thryve.health/thryve-data-sources/overview (): thryve: export_routes [Google Health]
+- https://docs.thryve.health/thryve-data-sources/overview (read via https://docs.thryve.health/thryve-data-sources/overview.md) (docs): thryve: deprecations [Fitbit Web API source]; thryve: deprecations [Google Fit sources]; thryve: history_depth
+- https://docs.thryve.health/thryve-data-sources/overview/data-source-types-and-retrieval-methods (): thryve: sampling_rates
+- https://docs.thryve.health/thryve-data-sources/samsung-health (): samsung: program_application; thryve: deprecations [Samsung Health SDK module]
+- https://docs.thryve.health/thryve-product-overview/access/data-model (): thryve: raw_streams; thryve: sampling_rates
+- https://docs.thryve.health/thryve-product-overview/access/data-types-biomarker (): thryve: derived_metrics
+- https://docs.tryterra.co/changelog/2026/august-update-2026 (): terra: derived_metrics
+- https://docs.tryterra.co/changelog/2026/readme (changelog): watched page, no facts cite it yet
+- https://docs.tryterra.co/introduction/account-setup-and-api-keys (): terra: developer_program_status
+- https://docs.tryterra.co/reference/health-and-fitness-api/supported-integrations (): terra: sampling_rates
+- https://docs.tryterra.co/streaming-api/data-types (): terra: raw_streams; terra: sampling_rates
+- https://docs.tryterra.co/streaming-api/pricing (): terra: api_platform_fees; terra: user_cap
+- https://docs.tryterra.co/unified-api/integration-setup/understanding-terra-environments (developer_program): terra: rate_limits; terra: user_cap
+- https://docs.tryterra.co/unified-api/managing-user-health-data/requesting-historical-data (): terra: history_depth
+- https://docs.tryterra.co/unified-api/mobile-only-sources (): terra: export_routes
+- https://docs.tryterra.co/unified-api/pricing (pricing): terra: academic_pricing; terra: api_platform_fees
+- https://gadgetsandwearables.com/2023/12/15/ringconn-wellness-balance-temperature/ (): ringconn: export_routes
+- https://gadgetsandwearables.com/2025/01/24/zepp-health-connect/ (): zepp-amazfit: export_routes
+- https://gadgetsandwearables.com/2026/02/14/circular-ring-liquidation/ (): circular: program_status
 - https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/issues/910 (trust): mindlamp: hipaa_statement
 - https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/issues/943 (repository): mindlamp: licence [LAMP-server, LAMP-core-ios, LAMP-core-android, LAMP-activities, LAMP-worker]
-- https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/issues/944 (): mindlamp: app_availability [iOS (App Store)]
 - https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/pull/930 (): mindlamp: program_status
 - https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/pull/939 (terms): mindlamp: retention_terms
-- https://github.com/BIDMCDigitalPsychiatry/LAMP-server (): mindlamp: licence [LAMP-server, LAMP-core-ios, LAMP-core-android, LAMP-activities, LAMP-worker]
-- https://github.com/BIDMCDigitalPsychiatry/LAMP-server/pull/264 (): mindlamp: hipaa_statement
-- https://github.com/BIDMCDigitalPsychiatry/LAMP-server/pull/284 (): mindlamp: deprecations [Authentication upgrade]
-- https://github.com/BIDMCDigitalPsychiatry/LAMP-server/releases (changelog): mindlamp: deprecations [Authentication upgrade]
+- https://github.com/Biostrap/sensr-mcp-server (repository): watched page, no facts cite it yet
 - https://github.com/OxWearables/biobankAccelerometerAnalysis/blob/master/LICENSE.md (): axivity: academic_vs_commercial
 - https://github.com/RADAR-base/RADAR-Docker (): radar-base: deprecations [Deployment and export]
 - https://github.com/RADAR-base/RADAR-Gateway (): radar-base: rate_limits
 - https://github.com/RADAR-base/RADAR-Kubernetes (repository): radar-base: developer_program_status; radar-base: hosting_options
-- https://github.com/RADAR-base/RADAR-PushEndpoint/issues/91 (): radar-base: deprecations [Fitbit route (legacy Fitbit Web API to Google Health API)]
-- https://github.com/RADAR-base/RADAR-PushEndpoint/pull/92 (changelog): radar-base: deprecations [Fitbit route (legacy Fitbit Web API to Google Health API)]
-- https://github.com/RADAR-base/RADAR-PushEndpoint/releases (): radar-base: deprecations [Fitbit route (legacy Fitbit Web API to Google Health API)]
-- https://github.com/RADAR-base/RADAR-REST-Connector (): radar-base: deprecations [Fitbit route (legacy Fitbit Web API to Google Health API)]; radar-base: rate_limits
-- https://github.com/RADAR-base/RADAR-REST-Connector/releases (changelog): watched page, no facts cite it yet
-- https://github.com/RADAR-base/RADAR-Rest-Source-Auth/pull/317 (): radar-base: deprecations [Device integrations]
-- https://github.com/RADAR-base/RADAR-Rest-Source-Auth/releases (): radar-base: deprecations [Fitbit route (legacy Fitbit Web API to Google Health API)]
-- https://github.com/RADAR-base/RADAR-Schemas/releases (): radar-base: program_status
 - https://github.com/RADAR-base/radar-commons-android/issues/488 (): radar-base: raw_streams
 - https://github.com/RADAR-base/radar-commons-android/tree/master/plugins/radar-android-audio (): radar-base: raw_streams
 - https://github.com/RADAR-base/radar-commons-android/tree/master/plugins/radar-android-ppg (): radar-base: raw_streams
 - https://github.com/RADAR-base/radar-output-restructure (): radar-base: deprecations [Deployment and export]; radar-base: export_routes
 - https://github.com/RADAR-base/radar-prmt-ios (): radar-base: app_availability [pRMT (passive) iOS]
 - https://github.com/RADAR-base/radarpipeline (): radar-base: derived_metrics
-- https://github.com/ResearchKit/ResearchKit (repository): watched page, no facts cite it yet
 - https://github.com/S-HealthStack (repository): samsung: program_status [Samsung Health Research Stack]
 - https://github.com/actigraph/CentrePoint3APIDocumentation (): ametris-actigraph: ai_training_terms; ametris-actigraph: developer_program_status; ametris-actigraph: program_application; ametris-actigraph: user_cap [CentrePoint]
 - https://github.com/actigraph/CentrePointIntegrationGuide (): ametris-actigraph: deprecations [CentrePoint API]; ametris-actigraph: developer_program_status
 - https://github.com/actigraph/GT3X-File-Format (): ametris-actigraph: export_routes
 - https://github.com/actigraph/pygt3x (): ametris-actigraph: export_routes
+- https://github.com/audaciouscode/Purple-Robot-Android (repository): watched page, no facts cite it yet
+- https://github.com/audaciouscode/Purple-Robot-Android/blob/master/LICENSE (): purple-robot: licence
+- https://github.com/audaciouscode/Purple-Robot-Android/blob/master/PRIVACY.md (terms): purple-robot: baa; purple-robot: data_residency; purple-robot: dpa; purple-robot: gdpr_statement; purple-robot: hipaa_statement; purple-robot: retention_terms
+- https://github.com/audaciouscode/Purple-Robot-Android/blob/master/app/build.gradle (): purple-robot: deprecations
+- https://github.com/audaciouscode/Purple-Robot-Android/blob/master/app/src/main/java/edu/northwestern/cbits/purple_robot_manager/EncryptionManager.java (): purple-robot: retention_terms
+- https://github.com/audaciouscode/Purple-Robot-Android/blob/master/app/src/main/res/values/arrays.xml (): purple-robot: retention_terms; purple-robot: sampling_rates
+- https://github.com/audaciouscode/Purple-Robot-Android/tree/master/app/src/main/java/edu/northwestern/cbits/purple_robot_manager/probes/builtin (): purple-robot: raw_streams
+- https://github.com/audaciouscode/Purple-Robot-Android/tree/master/app/src/main/java/edu/northwestern/cbits/purple_robot_manager/probes/features (): purple-robot: derived_metrics
 - https://github.com/avicennaresearch/ema_software_map (): avicenna: licence
-- https://github.com/awareframework (repository): watched page, no facts cite it yet
 - https://github.com/awareframework/aware-client (repository): aware: developer_program_status; aware: licence; aware: raw_streams [Android (AWARE, formerly AWARE-Light)]
 - https://github.com/awareframework/aware-client/issues/31 (): aware: raw_streams [Android (AWARE, formerly AWARE-Light)]
 - https://github.com/awareframework/aware-client/releases (changelog): aware: developer_program_status
 - https://github.com/awareframework/aware-micro-server (repository): aware: deprecations; aware: hosting_options; aware: user_cap
 - https://github.com/awareframework/aware-micro-server/blob/master/LICENSE (): aware: licence
-- https://github.com/awareframework/aware_narrator (): aware: derived_metrics
 - https://github.com/awareframework/com.awareframework.ios.sensor.calendar (): aware: licence
 - https://github.com/awareframework/com.awareframework.ios.sensor.keyboard (): aware: raw_streams [iOS, AWARE Client V3 (App Store, released 2026-06-28)]
 - https://github.com/awareframework/com.awareframework.ios.sensor.notification (): aware: raw_streams [iOS, AWARE Client V3 (App Store, released 2026-06-28)]
@@ -246,32 +161,20 @@ The page text changed since last week. Facts that cite it:
 - https://github.com/carp-dk/carp-webservices-spring (repository): watched page, no facts cite it yet
 - https://github.com/carp-dk/carp.sensing-flutter (repository): watched page, no facts cite it yet
 - https://github.com/carp-dk/carp.sensing-flutter/blob/main/carp_mobile_sensing/CHANGELOG.md (changelog): watched page, no facts cite it yet
-- https://github.com/carp-dk/carp_aware_package (): carp: raw_streams
-- https://github.com/cbitstech/Purple-Robot (repository): purple-robot: app_availability; purple-robot: gdpr_statement; purple-robot: hipaa_statement; purple-robot: research_program
+- https://github.com/cbitstech/Purple-Robot-Django (repository): purple-robot: export_routes; purple-robot: hipaa_statement; purple-robot: hosting_options
+- https://github.com/cbitstech/Purple-Robot-Django/blob/master/LICENSE (): purple-robot: api_platform_fees; purple-robot: licence
+- https://github.com/cbitstech/Purple-Robot/blob/master/LICENSE.GPLv3 (terms): purple-robot: academic_vs_commercial; purple-robot: api_platform_fees; purple-robot: licence
+- https://github.com/cbitstech/Purple-Robot/blob/master/Purple%20Robot/build.gradle (): purple-robot: app_availability
+- https://github.com/cbitstech/Purple-Robot/issues/282 (changelog): purple-robot: deprecations; purple-robot: program_status
+- https://github.com/cbitstech/Purple-Robot/wiki (docs): purple-robot: derived_metrics; purple-robot: gdpr_statement; purple-robot: hipaa_statement; purple-robot: hosting_options; purple-robot: raw_streams
+- https://github.com/cbitstech/Purple-Robot/wiki/Data-Upload-Reference (docs): purple-robot: data_residency; purple-robot: export_routes; purple-robot: history_depth; purple-robot: hosting_options; purple-robot: retention_terms
+- https://github.com/cbitstech/Purple-Robot/wiki/Embedded-HTTP-API (): purple-robot: export_routes
+- https://github.com/cbitstech/Purple-Robot/wiki/Probe-&-Feature-Reference (): purple-robot: sampling_rates
 - https://github.com/denzilferreira/aware-client (): aware: deprecations
 - https://github.com/evidation-health (): evidation: developer_program_status; evidation: licence [Licensed Research & Engagement Platform]
 - https://github.com/m2c2-project/m2c2kit-integration-guides/blob/main/docs/metricwire.md (): metricwire: deprecations
 - https://github.com/onnela-lab/beiwe-android (): beiwe: app_availability [Google Play (Beiwe2, org.beiwe.app)]
 - https://github.com/onnela-lab/beiwe-android/blob/main/app/build.gradle (changelog): watched page, no facts cite it yet
-- https://github.com/onnela-lab/beiwe-backend (repository): beiwe: app_availability [iOS App Store and Android APK]; beiwe: deprecations; beiwe: hosting_options; beiwe: iso27001; beiwe: soc2
-- https://github.com/onnela-lab/beiwe-backend/blob/main/gunicorn_conf.py (): beiwe: rate_limits
-- https://github.com/onnela-lab/beiwe-backend/issues/471 (): beiwe: deprecations
-- https://github.com/onnela-lab/beiwe-backend/issues?q=label%3AANNOUNCEMENT (changelog): watched page, no facts cite it yet
-- https://github.com/onnela-lab/beiwe-backend/wiki (changelog): beiwe: deprecations
-- https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-Beiwe-Data-Privacy-and-Security (trust): beiwe: ai_training_terms; beiwe: baa; beiwe: dpa; beiwe: gdpr_statement; beiwe: hipaa_statement; beiwe: iso27001; and 2 more
-- https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-Beiwe-Research-Administration-Manual (): beiwe: sampling_rates
-- https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-FAQs-for-Prospective-Beiwe-Users (developer_program): beiwe: api_platform_fees; beiwe: developer_program_status; beiwe: user_cap
-- https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-IRB-FAQs (): beiwe: ai_training_terms; beiwe: baa
-- https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-Supported-Data-Streams (docs): beiwe: raw_streams; beiwe: sampling_rates
-- https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-Using-Beiwe-for-Open-Source-Users (): beiwe: raw_streams; beiwe: sampling_rates
-- https://github.com/onnela-lab/beiwe-backend/wiki/Data-Download-API (docs): beiwe: api_platform_fees; beiwe: export_routes; beiwe: history_depth; beiwe: rate_limits
-- https://github.com/onnela-lab/beiwe-backend/wiki/Deployment-Instructions---Scalable-Deployment (): beiwe: data_residency; beiwe: hipaa_statement; beiwe: hosting_options
-- https://github.com/onnela-lab/beiwe-backend/wiki/Enabling-%22Last-Leg-Encryption%22-On-Older-deployments. (): beiwe: gdpr_statement
-- https://github.com/onnela-lab/beiwe-backend/wiki/Managing-ZSTD%E2%80%90Compressed-Data-From-The-Beiwe-Platform (): beiwe: export_routes
-- https://github.com/onnela-lab/beiwe-backend/wiki/Scalability (): beiwe: user_cap
-- https://github.com/onnela-lab/beiwe-backend/wiki/Tableau-API (docs): beiwe: deprecations; beiwe: derived_metrics; beiwe: export_routes; beiwe: rate_limits
-- https://github.com/onnela-lab/beiwe-backend/wiki/Upgrading-Elastic-Beanstalk-from-Python-3.8-to-3.12 (): beiwe: deprecations
-- https://github.com/onnela-lab/forest/issues/343 (): beiwe: derived_metrics
 - https://github.com/openmovementproject/libomapi (): axivity: developer_program_status
 - https://github.com/openmovementproject/openmovement (repository): axivity: academic_vs_commercial; axivity: api_platform_fees; axivity: deprecations; axivity: developer_program_status
 - https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-auxiliary.md (docs): axivity: raw_streams; axivity: sampling_rates [AX3 and AX6 auxiliary channels and clock]
@@ -280,126 +183,127 @@ The page text changed since last week. Facts that cite it:
 - https://github.com/openmovementproject/openmovement/blob/master/Downloads/AX3/AX3-Firmware.md (changelog): axivity: deprecations
 - https://github.com/openmovementproject/openmovement/issues/11 (): axivity: raw_streams
 - https://github.com/openmovementproject/openmovement/wiki/AX3-GUI (docs): axivity: baa; axivity: data_residency; axivity: derived_metrics; axivity: export_routes; axivity: rate_limits; axivity: retention_terms
-- https://github.com/polarofficial/polar-ble-sdk (): polar: user_cap
-- https://github.com/polarofficial/polar-ble-sdk/issues/886 (): polar: export_routes [BLE SDK, stored 24/7 data on Vantage V3, Vantage M3, Grit X2 Pro and Grit X2]; polar: sampling_rates [BLE SDK, 24/7 PPi on Polar 360 and Loop]
-- https://github.com/polarofficial/polar-ble-sdk/issues/887 (): polar: export_routes [BLE SDK, stored 24/7 data on Vantage V3, Vantage M3, Grit X2 Pro and Grit X2]; polar: raw_streams [BLE SDK, Vantage V3, Vantage M3, Grit X2 Pro and Grit X2]; polar: sampling_rates [BLE SDK]
-- https://github.com/polarofficial/polar-ble-sdk/releases (changelog): watched page, no facts cite it yet
-- https://github.com/polarofficial/polar-ble-sdk/releases/tag/7.0.0 (): polar: deprecations [BLE SDK]
-- https://github.com/polarofficial/polar-ble-sdk/releases/tag/8.0.0 (): polar: deprecations [BLE SDK]
-- https://github.com/polarofficial/polar-ble-sdk/releases/tag/8.4.0 (): polar: deprecations [BLE SDK]
+- https://github.com/perezjuanj/OpenCircuit/wiki (): ringconn: export_routes
 - https://github.com/tetujin/AWAREFramework-iOS (): aware: raw_streams [iOS, AWARE Client V2 (App Store, version 1.14.2) and AWAREFramework-iOS]
 - https://github.com/tetujin/AWAREFramework-iOS/blob/master/LICENSE (): aware: licence
 - https://github.com/tetujin/aware-client-ios-v2 (): aware: licence
 - https://github.com/uwmadison-chm/zeolite (): metricwire: developer_program_status; metricwire: export_routes
-- https://github.com/wadpac/GGIRread/releases/tag/1.0.11 (): activinsights-geneactiv: raw_streams [GENEActiv]
-- https://m-path.io/manual/knowledge-base/subscriptions-and-billing/ (pricing): m-path: academic_pricing; m-path: api_platform_fees; m-path: developer_program_status; m-path: hosting_price; m-path: program_application; m-path: program_status; and 6 more
-- https://m-path.io/privacy-policy/ (read via https://m-path.io/LegalPage/privacy.html) (terms): m-path: data_residency
-- https://openwearables.io/docs/providers/garmin-api-integration (): garmin: history_depth; garmin: program_eligibility [Garmin Health SDKs and Connect Developer Program]
+- https://github.com/zepp-health/rest-api/issues (changelog): watched page, no facts cite it yet
+- https://github.com/zepp-health/rest-api/issues/25 (): zepp-amazfit: api_platform_fees; zepp-amazfit: program_application; zepp-amazfit: quote_required
+- https://github.com/zepp-health/rest-api/issues/26 (): zepp-amazfit: deprecations; zepp-amazfit: program_status
+- https://github.com/zepp-health/rest-api/issues/28 (): zepp-amazfit: program_status
+- https://github.com/zepp-health/rest-api/wiki (repository): zepp-amazfit: academic_vs_commercial; zepp-amazfit: ai_training_terms; zepp-amazfit: api_platform_fees; zepp-amazfit: baa; zepp-amazfit: developer_program_status; zepp-amazfit: dpa; and 6 more
+- https://hitconsultant.net/2025/08/29/alphabets-verily-shuts-down-medical-device-division-shifts-focus-to-ai/ (): verily: deprecations; verily: program_status [Verily Study Watch]
+- https://medcitynews.com/2026/03/verily-samsung-wearable-smartwatch-healthcare-pharma-research/ (): verily: raw_streams [Viewpoint Evidence with Samsung Galaxy Watch]
+- https://openwearables.io/blog/fitbit-web-api-shutdown-2026-migration-guide (): fitbit-google: developer_program_status [Legacy Fitbit Web API]
+- https://openwearables.io/blog/ultrahuman-api-ring-data-cgm-recovery-metrics (): ultrahuman: developer_program_status [Partner OAuth API]
+- https://openwearables.io/docs/providers/garmin-api-integration (): garmin: history_depth; garmin: program_eligibility [Garmin Health SDKs and Connect Developer Program]; garmin: user_cap
 - https://openwearables.io/docs/providers/historical-data (): garmin: history_depth
-- https://ouraring.com/business/terms-and-conditions (terms): oura: academic_pricing; oura: api_platform_fees [Oura Enterprise Platform]; oura: baa; oura: dpa; oura: minimum_commitment [Organizational and research orders]; oura: program_application; and 1 more
-- https://ouraring.com/membership (pricing): oura: academic_pricing; oura: history_depth [Membership Hub export]; oura: minimum_commitment [Consumer membership]; oura: subscription_price
-- https://ouraring.com/privacy-policy (terms): oura: ai_training_terms [Oura consumer service]; oura: baa; oura: data_residency; oura: dpa; oura: gdpr_statement; oura: hipaa_statement; and 3 more
-- https://ouraring.com/security (trust): oura: hipaa_statement; oura: iso27001; oura: soc2
-- https://ouraring.com/terms-and-conditions (): oura: program_eligibility
-- https://play.google.com/store/apps/datasafety?id=com.metricwire.digitalhealth&hl=en_US (app_store): metricwire: retention_terms
-- https://play.google.com/store/apps/datasafety?id=dk.cachet.carp_study_app (): carp: retention_terms
-- https://play.google.com/store/apps/datasafety?id=org.phidatalab.radar_armt&hl=en_US (): radar-base: app_availability [aRMT (active) Android and iOS]
-- https://play.google.com/store/apps/datasafety?id=org.radarcns.detail&hl=en_US (app_store): radar-base: app_availability [pRMT (passive) Android]; radar-base: retention_terms
-- https://play.google.com/store/apps/details?id=com.achievemint.android&hl=en_US (app_store): evidation: app_availability [Evidation member app]
-- https://play.google.com/store/apps/details?id=com.activinsights.banduploader (): activinsights-geneactiv: deprecations; activinsights-geneactiv: retention_terms
-- https://play.google.com/store/apps/details?id=com.ethica.logger (app_store): avicenna: app_availability
-- https://play.google.com/store/apps/details?id=com.lifedata.lifedata&hl=en_US (app_store): lifedata: app_availability [LifeData+ (LifeData app)]; lifedata: deprecations; lifedata: retention_terms
-- https://play.google.com/store/apps/details?id=com.metricwire.android3&hl=en_US (): metricwire: app_availability [MetricWire (legacy generic participant app)]; metricwire: deprecations; metricwire: hosting_options; metricwire: program_application; metricwire: quote_required
-- https://play.google.com/store/apps/details?id=com.metricwire.digitalhealth&hl=en_US (app_store): metricwire: app_availability [Catalyst By MetricWire (current participant app)]
-- https://play.google.com/store/apps/details?id=io.m_Path.kuleuven&hl=en (): m-path: app_availability
-- https://play.google.com/store/apps/details?id=io.m_Path_Sense.kuleuven&hl=en (): m-path: app_availability
+- https://openwearables.io/docs/providers/ultrahuman-api-integration.md (): ultrahuman: derived_metrics; ultrahuman: developer_program_status [Partner OAuth API]
+- https://ouraring.com/assets/documents/public-security-whitepaper.pdf (trust): oura: baa; oura: data_residency; oura: dpa; oura: gdpr_statement; oura: iso27001; oura: raw_streams [Oura Enterprise Platform]; and 1 more
+- https://play.google.com/store/apps/datasafety?id=com.huami.watch.hmwatchmanager&hl=en_US (): zepp-amazfit: retention_terms
+- https://play.google.com/store/apps/details?id=com.lifedata.reallife_exp&hl=en_US (app_store): lifedata: app_availability [LifeData Original (RealLife Exp)]
+- https://play.google.com/store/apps/details?id=digital.lamp.mindlamp&hl=en_US (app_store): mindlamp: app_availability [Android (Google Play)]; mindlamp: program_eligibility; mindlamp: retention_terms
+- https://play.google.com/store/apps/details?id=xyz.circular.circular (app_store): watched page, no facts cite it yet
 - https://pmc.ncbi.nlm.nih.gov/articles/PMC13438180/ (): apple: research_program [Investigator Support Program]
-- https://radar-base.org/posts/news/ (): radar-base: program_status
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC4526997/ (): purple-robot: device_price; purple-robot: history_depth; purple-robot: research_program; purple-robot: retention_terms; purple-robot: sampling_rates
+- https://ringconn.com/blogs/guides/how-sync-health-and-sleep-tracker-data (): ringconn: derived_metrics; ringconn: export_routes
+- https://ringconn.com/blogs/guides/new-phone-data (): ringconn: history_depth [RingConn Gen 3]
+- https://ringconn.com/blogs/guides/wearable-data-sync (docs): ringconn: derived_metrics; ringconn: raw_streams [Consumer and public routes]
+- https://ringconn.com/blogs/news/feedback-and-business-collaboration-with-ringconn (research_program): ringconn: academic_vs_commercial; ringconn: baa; ringconn: minimum_commitment; ringconn: program_application; ringconn: program_status; ringconn: quote_required; and 1 more
+- https://ringconn.com/blogs/news/ringconn-official-update-itc-ruling-and-our-commitment-to-you (): ringconn: deprecations
+- https://ringconn.com/blogs/news/ringconn-will-migrate-from-google-fit-to-health-connect (changelog): ringconn: deprecations; ringconn: derived_metrics; ringconn: raw_streams [Consumer and public routes]
+- https://ringconn.com/blogs/news/smart-ring-health-data-security (trust): ringconn: data_residency; ringconn: export_routes; ringconn: hipaa_statement; ringconn: iso27001
+- https://ringconn.com/pages/app-features (): ringconn: sampling_rates
+- https://ringconn.com/pages/euro-compliance (): ringconn: iso27001
+- https://ringconn.com/pages/privacy-policy (): ringconn: baa; ringconn: gdpr_statement; ringconn: hipaa_statement
+- https://ringconn.com/pages/product-compare (pricing): ringconn: history_depth [RingConn Gen 2 and Gen 2 Air]; ringconn: sampling_rates; ringconn: subscription_price
+- https://ringconn.com/pages/ringconn-app-privacy-policy (terms): ringconn: ai_training_terms [App privacy policy (all users); the training restriction is specific to Blood Pressure Trends (Beta)]; ringconn: baa; ringconn: data_residency; ringconn: derived_metrics; ringconn: developer_program_status; ringconn: dpa; and 6 more
+- https://ringconn.com/pages/security-disclosure (): ringconn: iso27001; ringconn: soc2
+- https://ringconn.com/pages/student-discount-program (pricing): ringconn: academic_pricing; ringconn: academic_vs_commercial
+- https://ringconn.com/pages/your-privacy-at-ringconn-app (trust): ringconn: baa; ringconn: data_residency; ringconn: dpa; ringconn: gdpr_statement; ringconn: hipaa_statement; ringconn: iso27001; and 1 more
+- https://ringconn.com/products/ringconn-gen-2 (pricing): ringconn: academic_pricing; ringconn: device_price [RingConn Gen 2 (US store)]; ringconn: history_depth [RingConn Gen 2 and Gen 2 Air]; ringconn: minimum_commitment; ringconn: quote_required; ringconn: sampling_rates; and 1 more
+- https://ringconn.com/products/ringconn-gen-2-air (pricing): ringconn: device_price [RingConn Gen 2 Air (US store)]; ringconn: history_depth [RingConn Gen 2 and Gen 2 Air]
+- https://ringconn.com/products/ringconn-gen-3 (pricing): ringconn: device_price [RingConn Gen 3 (US store)]; ringconn: export_routes; ringconn: fda_clearances; ringconn: history_depth [RingConn Gen 3]; ringconn: subscription_price
+- https://ringconn.com/sitemap.xml (): ringconn: developer_program_status; ringconn: research_program
+- https://rulings.cbp.gov/docs/hq/2026/h354023 (read via https://rulings.cbp.gov/api/ruling/H354023) (): ultrahuman: deprecations
 - https://samsungmobilepress.com/articles/neuroscape-samsung-cognitive-study-partnership (): samsung: research_program [Institutional collaborations and the Samsung research platform (via Alcedis)]
-- https://samsungmobilepress.com/articles/samsung-announces-open-innovation-initiative-with-leading-universities-and-academic-hospitals-to-build-digital-health-ecosystem (): samsung: research_program [Institutional collaborations and the Samsung research platform (via Alcedis)]
+- https://sensorbio.com/ (research_program): sensor-bio: academic_pricing; sensor-bio: academic_vs_commercial; sensor-bio: baa; sensor-bio: device_price; sensor-bio: dpa; sensor-bio: iso27001; and 4 more
+- https://sensorbio.com/biostrap-evo/ (): sensor-bio: program_status
+- https://sensorbio.com/biostrap-is-now-sensor-bio/ (changelog): sensor-bio: program_status
+- https://sensorbio.com/biostrap-kairos/ (): sensor-bio: deprecations
+- https://sensorbio.com/comparison/sensor-bio-v2-vs-polar-360/ (other): sensor-bio: raw_streams [Sensor Bio V2, who can get raw export]
+- https://sensorbio.com/get-started/ (pricing): sensor-bio: device_price; sensor-bio: program_application; sensor-bio: program_eligibility
+- https://sensorbio.com/press/ (changelog): watched page, no facts cite it yet
+- https://sensorbio.com/press/hydrow-founder-bruce-smith-named-ceo-of-sensor-bio-to-scale-global-preventive-he/ (): sensor-bio: program_status
+- https://sensorbio.com/press/sensor-bio-joins-innovators-network-at-american-heart-association-center-for-hea/ (): sensor-bio: device_price; sensor-bio: sampling_rates [Sensor Bio V2]
+- https://sensorbio.com/privacy-policy/ (terms): sensor-bio: ai_training_terms; sensor-bio: baa; sensor-bio: data_residency; sensor-bio: dpa; sensor-bio: export_routes; sensor-bio: gdpr_statement; and 3 more
+- https://sensorbio.com/product/sensor-bio-v2/ (docs): sensor-bio: academic_pricing; sensor-bio: academic_vs_commercial; sensor-bio: ai_training_terms; sensor-bio: api_platform_fees; sensor-bio: baa; sensor-bio: data_residency; and 18 more
+- https://sensorbio.com/science/ (docs): sensor-bio: iso27001; sensor-bio: raw_streams [Biostrap EVO (legacy)]
+- https://sensorbio.com/terms-and-conditions/ (terms): sensor-bio: ai_training_terms; sensor-bio: baa; sensor-bio: dpa; sensor-bio: minimum_commitment
+- https://shop.circular.xyz/products/circular-ring-2 (pricing): circular: device_price
+- https://smlouvy.gov.cz/smlouva/soubor/42219929/ProCare_BV_FPC_UPOL__Scientific_accelerometers_II._priloha_Redigo.pdf (): ametris-actigraph: device_price [ActiGraph LEAP, one reseller quote, Czech Republic, July 2025]; ametris-actigraph: history_depth [On-device storage]
+- https://store.google.com/us/product/fitbit_charge_6?hl=en-US (): fitbit-google: device_price [Fitbit Charge 6 (US)]
+- https://store.google.com/us/product/fitbit_versa_4?hl=en-US (): fitbit-google: device_price [Fitbit Versa 4 (US)]
+- https://store.google.com/us/product/google_fitbit_air (): fitbit-google: device_price [Fitbit Air (US)]
+- https://store.google.com/us/product/google_health_premium (pricing): fitbit-google: academic_pricing; fitbit-google: subscription_price [Google Health Premium (formerly Fitbit Premium), US]
 - https://store.google.com/us/product/pixel_watch_4?hl=en-US (): fitbit-google: device_price [Pixel Watch 4 (US)]
 - https://store.google.com/us/product/pixel_watch_5 (): fitbit-google: device_price [Pixel Watch 5 (US)]
-- https://support.apple.com/guide/iphone/share-your-health-data-iph5ede58c3d/ios (): apple: export_routes [HealthKit and SensorKit]
-- https://support.google.com/googlehealth/answer/14237024?hl=en (): fitbit-google: deprecations [Accounts, Google Fit and devices]
-- https://support.google.com/googlehealth/answer/17037331?hl=en (docs): fitbit-google: export_routes [On-device (Apple Health and Health Connect)]
-- https://support.google.com/googleplay/android-developer/answer/11926878 (): beiwe: app_availability [Google Play (Beiwe2, org.beiwe.app)]
-- https://support.google.com/product-documentation/answer/14815921 (trust): fitbit-google: data_residency; fitbit-google: gdpr_statement; fitbit-google: retention_terms
-- https://support.google.com/product-documentation/answer/15187883?hl=en (): fitbit-google: deprecations [Accounts, Google Fit and devices]
-- https://support.ouraring.com/hc/en-us/articles/360025438734-Data-Export (): oura: sampling_rates
-- https://support.ouraring.com/hc/en-us/articles/360025441594 (): oura: export_routes; oura: history_depth [Oura API]
-- https://support.ouraring.com/hc/en-us/articles/360025587353 (changelog): oura: deprecations; oura: export_routes; oura: subscription_price
-- https://support.polar.com/en/wrist-ecg (): polar: raw_streams [AccessLink API (Polar Flow cloud)]
-- https://the5krunner.com/2026/09/14/garmin-developer-api-access-paused/ (): garmin: deprecations; garmin: developer_program_status [Garmin Connect Developer Program]
-- https://tomsguide.com/wellness/fitness-trackers/whoop-5-0-and-whoop-mg-just-announced-heres-everything-you-need-to-know (): whoop: subscription_price
 - https://trust.validic.com/incidents/8lzmtg20hp90 (): fitbit-google: developer_program_status [Google Health API]; fitbit-google: export_routes [Intermediaries (cloud route)]; fitbit-google: user_cap [Google Health API]
-- https://tryterra.co/pricing (pricing): terra: academic_pricing; terra: api_platform_fees; terra: baa; terra: data_residency; terra: export_routes; terra: minimum_commitment; and 2 more
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPCD/classification.cfm?id=IKK (read via https://api.fda.gov/device/classification.json?search=product_code:IKK) (): activinsights-geneactiv: fda_clearances [GENEActiv]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRES/res.cfm?id=198114 (read via https://api.fda.gov/device/enforcement.json?search=recall_number.exact:"Z-1280-2023") (): withings: fda_clearances [ScanWatch recall (2023)]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRES/res.cfm?id=198114 (read via https://api.fda.gov/device/recall.json?search=cfres_id:198114) (): withings: fda_clearances [ScanWatch recall (2023)]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRL/rl.cfm?start_search=1&ownerOperatorNumber=10056642 (read via https://api.fda.gov/device/registrationlisting.json?search=registration.name:%22activinsights%22) (regulatory): activinsights-geneactiv: fda_clearances [ActivInsights Band]; activinsights-geneactiv: fda_clearances [GENEActiv]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/denovo.cfm?ID=DEN230050 (read via https://api.fda.gov/device/510k.json?search=k_number:DEN230050) (): fitbit-google: fda_clearances
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/denovo.cfm?id=DEN180042 (read via https://api.fda.gov/device/510k.json?search=k_number:DEN180042) (): apple: fda_clearances [Irregular Rhythm Notification]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/denovo.cfm?id=DEN180044 (read via https://api.fda.gov/device/510k.json?search=k_number:DEN180044) (): apple: fda_clearances [ECG app]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/denovo.cfm?id=DEN230041 (read via https://api.fda.gov/device/510k.json?search=k_number:DEN230041) (): samsung: fda_clearances
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/denovo.cfm?id=DEN230081 (read via https://api.fda.gov/device/510k.json?search=k_number:DEN230081) (): apple: fda_clearances [Hearing Aid Feature (AirPods Pro)]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K040554 (read via https://api.fda.gov/device/510k.json?search=k_number:K040554) (): ametris-actigraph: fda_clearances [ActiGraph AM7164 (legacy)]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K080545 (read via https://api.fda.gov/device/510k.json?search=k_number:K080545) (): ametris-actigraph: fda_clearances [ActiGraph wGT3X-BT and GT9X Link (vendor's mapping to K080545)]; ametris-actigraph: fda_clearances [K080545 (ActiTrainer)]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K110872 (read via https://api.fda.gov/device/510k.json?search=k_number:K110872) (): withings: fda_clearances [Older Withings-applicant devices]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K133125 (read via https://api.fda.gov/device/510k.json?search=k_number:K133125) (): withings: fda_clearances [Older Withings-applicant devices]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K140086 (read via https://api.fda.gov/device/510k.json?search=k_number:K140086) (): empatica: fda_clearances [PKG System (acquired with PKG Health, October 2025; 510(k) holder GKC Manufacturing Pty, Ltd.)]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K160544 (read via https://api.fda.gov/device/510k.json?search=k_number:K160544) (): withings: fda_clearances [Older Withings-applicant devices]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K161717 (read via https://api.fda.gov/device/510k.json?search=k_number:K161717) (): empatica: fda_clearances [PKG System (acquired with PKG Health, October 2025; 510(k) holder GKC Manufacturing Pty, Ltd.)]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K172935 (read via https://api.fda.gov/device/510k.json?search=k_number:K172935) (): empatica: fda_clearances [Epilepsy (Embrace, EpiMonitor)]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K181077 (read via https://api.fda.gov/device/510k.json?search=k_number:K181077) (): ametris-actigraph: fda_clearances [CentrePoint Insight Watch]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K181861 (read via https://api.fda.gov/device/510k.json?search=k_number:K181861) (): empatica: fda_clearances [Epilepsy (Embrace, EpiMonitor)]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K200948 (read via https://api.fda.gov/device/510k.json?search=k_number:K200948) (): fitbit-google: fda_clearances
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K201168 (read via https://api.fda.gov/device/510k.json?search=k_number:K201168) (): samsung: fda_clearances
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K201456 (read via https://api.fda.gov/device/510k.json?search=k_number:K201456) (): withings: fda_clearances [ScanWatch, ScanWatch 2 (ECG and SpO2)]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K201525 (read via https://api.fda.gov/device/510k.json?search=k_number:K201525) (): apple: fda_clearances [ECG app 2.0]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K211887 (read via https://api.fda.gov/device/510k.json?search=k_number:K211887) (): empatica: fda_clearances [PKG System (acquired with PKG Health, October 2025; 510(k) holder GKC Manufacturing Pty, Ltd.)]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K212372 (read via https://api.fda.gov/device/510k.json?search=k_number:K212372) (): fitbit-google: fda_clearances
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K212516 (read via https://api.fda.gov/device/510k.json?search=k_number:K212516) (): apple: fda_clearances [Irregular Rhythm Notification (2021)]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K213971 (read via https://api.fda.gov/device/510k.json?search=k_number:K213971) (): apple: fda_clearances [AFib History]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K221282 (read via https://api.fda.gov/device/510k.json?search=k_number:K221282) (): empatica: fda_clearances [Empatica Health Monitoring Platform and EmbracePlus]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K221486 (read via https://api.fda.gov/device/510k.json?search=k_number:K221486) (): garmin: fda_clearances [Index BPM]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K221774 (read via https://api.fda.gov/device/510k.json?search=k_number:K221774) (): garmin: fda_clearances [Garmin ECG App]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K223374 (read via https://api.fda.gov/device/510k.json?search=k_number:K223374) (): withings: fda_clearances [Blood pressure monitors under Transtek 510(k)s (BPM Connect, BPM Connect Pro, BPM Pro 2, BPM Vision)]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K230292 (read via https://api.fda.gov/device/510k.json?search=k_number:K230292) (): samsung: fda_clearances
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K230457 (read via https://api.fda.gov/device/510k.json?search=k_number:K230457) (): empatica: fda_clearances [Empatica Health Monitoring Platform and EmbracePlus]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K230812 (read via https://api.fda.gov/device/510k.json?search=k_number:K230812) (): withings: fda_clearances [Body Scan, BodyScan 2]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K231173 (read via https://api.fda.gov/device/510k.json?search=k_number:K231173) (): apple: fda_clearances [Irregular Rhythm Notification (2023)]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K231532 (read via https://api.fda.gov/device/510k.json?search=k_number:K231532) (): ametris-actigraph: fda_clearances [ActiGraph LEAP]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K231667 (read via https://api.fda.gov/device/510k.json?search=k_number:K231667) (): withings: fda_clearances [Sleep Rx]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K232915 (read via https://api.fda.gov/device/510k.json?search=k_number:K232915) (): empatica: fda_clearances [Epilepsy (Embrace, EpiMonitor)]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K240102 (read via https://api.fda.gov/device/510k.json?search=k_number:K240102) (): withings: fda_clearances [Blood pressure monitors under Transtek 510(k)s (BPM Connect, BPM Connect Pro, BPM Pro 2, BPM Vision)]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K240795 (read via https://api.fda.gov/device/510k.json?search=k_number:K240795) (): withings: fda_clearances [Withings ECG App]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K240909 (read via https://api.fda.gov/device/510k.json?search=k_number:K240909) (): samsung: fda_clearances
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K240929 (read via https://api.fda.gov/device/510k.json?search=k_number:K240929) (): apple: fda_clearances [Sleep Apnea Notification]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K242058 (read via https://api.fda.gov/device/510k.json?search=k_number:K242058) (): apple: fda_clearances [Digital Prism Correction (not Apple Watch)]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K242737 (read via https://api.fda.gov/device/510k.json?search=k_number:K242737) (): empatica: fda_clearances [Empatica Health Monitoring Platform and EmbracePlus]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K242967 (read via https://api.fda.gov/device/510k.json?search=k_number:K242967) (): fitbit-google: fda_clearances
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K243236 (read via https://api.fda.gov/device/510k.json?search=k_number:K243236) (): whoop: fda_clearances
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K243778 (read via https://api.fda.gov/device/510k.json?search=k_number:K243778) (): fitbit-google: fda_clearances
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K250143 (read via https://api.fda.gov/device/510k.json?search=k_number:K250143) (): apple: fda_clearances [Digital Prism Correction (not Apple Watch)]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K250507 (read via https://api.fda.gov/device/510k.json?search=k_number:K250507) (): apple: fda_clearances [Hypertension Notification]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K250515 (read via https://api.fda.gov/device/510k.json?search=k_number:K250515) (): empatica: fda_clearances [Epilepsy (Embrace, EpiMonitor)]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K252474 (read via https://api.fda.gov/device/510k.json?search=k_number:K252474) (): withings: fda_clearances [BeamO, BeamO Pro]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K252981 (read via https://api.fda.gov/device/510k.json?search=k_number:K252981) (): empatica: fda_clearances [EmbraceMini]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K253582 (read via https://api.fda.gov/device/510k.json?search=k_number:K253582) (): apple: fda_clearances [Medical Imaging Calibration (not Apple Watch)]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K260374 (read via https://api.fda.gov/device/510k.json?search=k_number:K260374) (): empatica: fda_clearances [Parkinson's Disease Monitoring]
-- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K261011 (read via https://api.fda.gov/device/510k.json?search=k_number:K261011) (): samsung: fda_clearances
-- https://www.apple.com/legal/internet-services/icloud/ (): apple: baa; apple: hipaa_statement
-- https://www.apple.com/legal/privacy/en-ww/ (): apple: data_residency; apple: dpa; apple: gdpr_statement
-- https://www.apple.com/shop/buy-watch/apple-watch (pricing): apple: device_price [Apple Watch SE 3]; apple: device_price [Apple Watch Series 12]; apple: device_price [Apple Watch Ultra 4]; apple: quote_required
-- https://www.board-cybersecurity.com/annual-reports/tracker/20260218-garmin-cybersecurity-10k (): garmin: iso27001; garmin: soc2
-- https://www.contractsfinder.service.gov.uk/Notice/202ae1a7-9e51-4348-ab6d-2c5df211ce83 (): axivity: retention_terms
+- https://tryterra.co (): terra: derived_metrics; terra: export_routes; terra: gdpr_statement; terra: hipaa_statement; terra: soc2
+- https://tryterra.co/blog/august-2026-product-update (): terra: derived_metrics; terra: developer_program_status [Google Health and Fitbit through Terra]
+- https://tryterra.co/blog/garmin-connect-developer-program-pause (other): terra: developer_program_status [Garmin through Terra]
+- https://tryterra.co/blog/march-2026-product-update (): terra: rate_limits
+- https://tryterra.co/community/non-profit-pricing (): terra: academic_pricing; terra: academic_vs_commercial
+- https://tryterra.co/dpa (terms): terra: data_residency; terra: dpa; terra: iso27001; terra: retention_terms; terra: soc2
+- https://tryterra.co/end-user-privacy (terms): terra: ai_training_terms; terra: data_residency; terra: retention_terms
+- https://tryterra.co/enterprise (trust): terra: hipaa_statement; terra: iso27001
+- https://tryterra.co/gdpr (): terra: gdpr_statement; terra: iso27001
+- https://tryterra.co/integration-partner-terms (terms): terra: ai_training_terms
+- https://tryterra.co/integrations/fitbit (): terra: developer_program_status [Google Health and Fitbit through Terra]
+- https://tryterra.co/integrations/garmin (developer_program): terra: developer_program_status [Garmin through Terra]
+- https://tryterra.co/integrations/strava (): terra: developer_program_status [WHOOP, Strava, Dexcom, Huawei (bring your own credentials)]
+- https://tryterra.co/integrations/ultrahuman (): ultrahuman: export_routes
+- https://tryterra.co/integrations/whoop (): terra: developer_program_status [WHOOP, Strava, Dexcom, Huawei (bring your own credentials)]
+- https://tryterra.co/integrations/zepp (): zepp-amazfit: export_routes
+- https://tryterra.co/partners (): terra: iso27001
+- https://tryterra.co/privacy/subprocessors (trust): terra: ai_training_terms; terra: data_residency
+- https://tryterra.co/research (): terra: research_program
+- https://tryterra.co/startup-accelerator (research_program): terra: academic_pricing; terra: academic_vs_commercial; terra: program_application [Startup Accelerator]; terra: program_eligibility [Startup Accelerator]; terra: program_status [Startup Accelerator]; terra: research_program
+- https://tryterra.co/terms-of-service (terms): terra: academic_vs_commercial; terra: developer_program_status; terra: dpa; terra: minimum_commitment
+- https://us.amazfit.com/pages/student-discount (): zepp-amazfit: academic_pricing
+- https://us.amazfit.com/products/active-2-round (): zepp-amazfit: device_price
+- https://us.amazfit.com/products/balance-3 (): zepp-amazfit: device_price
+- https://us.amazfit.com/products/helio-strap (pricing): zepp-amazfit: device_price; zepp-amazfit: minimum_commitment; zepp-amazfit: subscription_price
+- https://verily.com/sitemap.xml (other): watched page, no facts cite it yet
+- https://web.fibion.com/articles/ambulatory-physical-activity-large-cohort-cost-scalability/ (): activinsights-geneactiv: device_price [GENEActiv]
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRL/rl.cfm?start_search=1&OwnerOperatorNumber=10091886 (read via https://api.fda.gov/device/registrationlisting.json?search=registration.owner_operator.firm_name:ultrahuman) (): ultrahuman: fda_clearances
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRL/rl.cfm?start_search=1&knumber=K182456 (read via https://api.fda.gov/device/registrationlisting.json?search=k_number:K182456) (regulatory): verily: fda_clearances; verily: program_status [Verily Study Watch]
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRL/rl.cfm?start_search=1&ownerOperatorNumber=10083608 (read via https://api.fda.gov/device/registrationlisting.json?search=registration.owner_operator.firm_name:huami&limit=10) (regulatory): zepp-amazfit: fda_clearances
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm (read via https://api.fda.gov/device/510k.json?search=applicant:%22circular%22) (): circular: fda_clearances
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K182456 (read via https://api.fda.gov/device/510k.json?search=k_number:K182456) (): verily: fda_clearances
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K192415 (read via https://api.fda.gov/device/510k.json?search=k_number:K192415) (): verily: fda_clearances
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K213357 (read via https://api.fda.gov/device/510k.json?search=k_number:K213357) (regulatory): verily: fda_clearances
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K260490 (read via https://api.fda.gov/device/510k.json?search=k_number:K260490) (regulatory): ringconn: fda_clearances
+- https://www.cardiorthm.com/ (): movesense: subscription_price
+- https://www.circular.xyz/shop (pricing): circular: device_price
 - https://www.dataprivacyframework.gov/list (read via https://dpfapi.azurewebsites.net/api/participants/6382) (trust): lifedata: gdpr_statement [Data Privacy Framework certification]
-- https://www.empatica.com/ (): empatica: fda_clearances [PKG System (acquired with PKG Health, October 2025; 510(k) holder GKC Manufacturing Pty, Ltd.)]
 - https://www.empatica.com/blog/ (changelog): watched page, no facts cite it yet
-- https://www.fitabase.com/ (): fitabase: research_program
-- https://www.fitabase.com/blog/post/webinar-fitbit-api-transition-for-researchers/ (): fitbit-google: deprecations [APIs]; fitbit-google: export_routes [Intermediaries (cloud route)]
+- https://www.empatica.com/blog/embracemini-is-now-available-for-academic-and-basic-research-plan/ (): empatica: academic_pricing; empatica: academic_vs_commercial; empatica: program_status; empatica: quote_required; empatica: raw_streams [EmbraceMini]
+- https://www.empatica.com/blog/empatica-acquires-pkg-health-to-transform-parkinson-s-disease-monitoring/ (): empatica: fda_clearances [PKG System (acquired with PKG Health, October 2025; 510(k) holder GKC Manufacturing Pty, Ltd.)]
+- https://www.empatica.com/blog/empatica-and-mcroberts-partnership-achieves-20-endpoints-and-opens-platform-to-external-algorithm-developers/ (): empatica: academic_vs_commercial
+- https://www.empatica.com/blog/empatica-receives-landmark-fda-pccp-authorization-for-pulse-oximetry/ (): empatica: fda_clearances [Empatica Health Monitoring Platform and EmbracePlus]
+- https://www.empatica.com/cloud-api (developer_program): empatica: api_platform_fees [Enterprise plan and Cloud API]; empatica: baa; empatica: developer_program_status [Enterprise, clinical trial sponsors and remote patient monitoring]; empatica: export_routes; empatica: rate_limits; empatica: soc2
+- https://www.empatica.com/legal/ (trust): empatica: baa; empatica: dpa; empatica: iso27001; empatica: soc2
+- https://www.empatica.com/platform/clinical-trials/ (): empatica: academic_vs_commercial; empatica: api_platform_fees [Enterprise plan and Cloud API]; empatica: derived_metrics; empatica: gdpr_statement; empatica: hipaa_statement; empatica: raw_streams [EmbraceMini]
+- https://www.empatica.com/platform/remote-patient-monitoring/ (): empatica: developer_program_status [Enterprise, clinical trial sponsors and remote patient monitoring]
+- https://www.empatica.com/platform/research-studies/ (research_program): empatica: academic_pricing; empatica: api_platform_fees [Academic & Basic Research plan]; empatica: baa; empatica: developer_program_status [Academic & Basic Research plan]; empatica: export_routes; empatica: gdpr_statement; and 8 more
+- https://www.empatica.com/privacy-participant (terms): empatica: baa; empatica: data_residency; empatica: gdpr_statement; empatica: hipaa_statement; empatica: program_eligibility; empatica: retention_terms
+- https://www.empatica.com/purchase-agreement/ (terms): empatica: academic_vs_commercial; empatica: ai_training_terms; empatica: baa; empatica: dpa; empatica: history_depth; empatica: program_eligibility; and 3 more
+- https://www.empatica.com/research/e4-sunset/ (): empatica: deprecations; empatica: program_status
+- https://www.empatica.com/store/platform-professional/ (pricing): empatica: academic_pricing; empatica: device_price [Academic & Basic Research plan]; empatica: history_depth; empatica: minimum_commitment; empatica: program_application [Academic & Basic Research plan]; empatica: program_status; and 2 more
+- https://www.fitrockr.com/help-center/data-dictionary/ (docs): watched page, no facts cite it yet
 - https://www.garmin.com/en-GB/blog/react-study-evaluates-impact-of-daily-movement-on-arterial-health/ (): garmin: program_status
-- https://www.garmin.com/en-PH/newsroom/press-release/news-2026-mar-fitrockr/ (research_program): fitrockr: program_application; fitrockr: program_eligibility; fitrockr: program_status; fitrockr: research_program; garmin: program_eligibility [Garmin Health x Fitrockr Asia Research Grant 2026]; garmin: research_program
 - https://www.garmin.com/en-US/health/solutions/research-and-clinical-trials/ (research_program): garmin: academic_pricing
 - https://www.garmin.com/en-US/legal/security/ (): garmin: iso27001; garmin: soc2
 - https://www.garmin.com/en-US/newsroom/?p=3942 (): garmin: research_program
@@ -409,60 +313,60 @@ The page text changed since last week. Facts that cite it:
 - https://www.garmin.com/en-US/newsroom/press-release/sports-fitness/run-further-with-forerunner-70-and-forerunner-170-from-garmin/ (): garmin: device_price [Forerunner 70 and 170]
 - https://www.garmin.com/en-US/newsroom/press-release/wearables-health/meet-cirqa-smart-band-the-screen-free-health-and-fitness-tracker-from-garmin/ (): garmin: device_price [CIRQA Smart Band]
 - https://www.garmin.com/en-US/privacy/connect/policy/ (): garmin: data_residency
-- https://www.labfront.com/grant (research_program): labfront: academic_pricing; labfront: program_application; labfront: program_eligibility; labfront: program_status; labfront: research_program
-- https://www.lifedatacorp.com/lifedata-privacy-policy/ (terms): lifedata: baa; lifedata: data_residency; lifedata: gdpr_statement; lifedata: hipaa_statement; lifedata: hosting_options; lifedata: hosting_price; and 3 more
-- https://www.movesense.com/product/movesense-flash-developer-kit/ (): movesense: developer_program_status; movesense: sampling_rates [Accelerometer, gyroscope, magnetometer (IMU)]
-- https://www.movesense.com/shop/ (pricing): movesense: device_price [Developer kits and accessories]; movesense: device_price [Movesense Flash sensor]; movesense: device_price [Movesense HR+ sensor]; movesense: device_price [Movesense HR2 sensor]; movesense: device_price [Movesense MD sensor]; movesense: quote_required
+- https://www.onixnet.com/case-study/metricwire-launches-ai-powered-scheduling-tool-to-boost-survey-and-customer-support-efficiency/ (): metricwire: ai_training_terms
 - https://www.paubox.com/blog/is-garmin-connect-hipaa-compliant-2025-update (): garmin: baa
-- https://www.polar.com/en/developers (): polar: export_routes
-- https://www.polar.com/en/legal/data-notice (terms): polar: ai_training_terms [Polar's own use of user data]; polar: baa; polar: data_residency; polar: export_routes; polar: gdpr_statement; polar: retention_terms [AccessLink and Polar Flow]
-- https://www.polar.com/en/legal/polar-api-agreement (terms): polar: academic_vs_commercial; polar: ai_training_terms [API and SDK licensees]; polar: api_platform_fees [AccessLink and Team Pro API]; polar: baa; polar: developer_program_status; polar: dpa; and 6 more
-- https://www.polar.com/en/legal/polar-service-providers (): polar: data_residency; polar: dpa; polar: iso27001; polar: soc2
-- https://www.polar.com/en/legal/privacy (): polar: gdpr_statement; polar: hipaa_statement
-- https://www.polar.com/en/legal/privacy-notice (terms): polar: ai_training_terms [Polar's own use of user data]; polar: baa; polar: data_residency; polar: dpa; polar: gdpr_statement; polar: hipaa_statement; and 2 more
-- https://www.polar.com/en/legal/terms-of-use (): polar: baa; polar: hipaa_statement
-- https://www.polar.com/en/media-room/polar-introduces-fitness-program (): polar: subscription_price
-- https://www.polar.com/en/science/collaborate-with-us (research_program): polar: academic_pricing; polar: program_application; polar: program_eligibility; polar: program_status; polar: research_program
-- https://www.polar.com/en/science/research-tools (): polar: academic_pricing; polar: research_program
-- https://www.polar.com/us-en/fitness-program (pricing): polar: subscription_price
-- https://www.polar.com/us-en/grit-x2-pro (): polar: device_price [Watches]
-- https://www.polar.com/us-en/ignite3 (): polar: device_price [Watches]
-- https://www.polar.com/us-en/loop (): polar: device_price [POLAR Loop]; polar: subscription_price
-- https://www.polar.com/us-en/pacer (): polar: device_price [Watches]
-- https://www.polar.com/us-en/products/accessories/polar-verity-sense (pricing): polar: device_price [Polar Verity Sense]
-- https://www.polar.com/us-en/sensors/h10-heart-rate-sensor (pricing): polar: device_price [Polar H10 chest strap]; polar: quote_required [Consumer devices]
-- https://www.polar.com/us-en/vantage/v3 (): polar: device_price [Watches]
-- https://www.sammobile.com/news/samsung-partners-stanford-university-medicine-improve-sleep-apnea-detection-galaxy-watches/ (): samsung: research_program [Institutional collaborations and the Samsung research platform (via Alcedis)]
-- https://www.samsung.com/us/apps/samsung-health/ (): samsung: subscription_price
-- https://www.samsung.com/us/privacy-policy/washington-privacy-notice/ (): samsung: hipaa_statement
-- https://www.samsung.com/us/rings/galaxy-ring/ (): samsung: device_price [Galaxy Ring]
-- https://www.samsung.com/us/shop/discount-program/education/ (): samsung: academic_pricing
-- https://www.samsung.com/us/watches/galaxy-watch-ultra2/ (): samsung: device_price [Galaxy Watch Ultra2]
-- https://www.samsung.com/us/watches/galaxy-watch9/ (pricing): samsung: device_price [Galaxy Watch9]; samsung: quote_required
-- https://www.samsungmobilepress.com/articles/samsungs-new-health-software-development-kit-suite-powers-advancements-in-healthcare-innovation (): samsung: program_status [Samsung Health Research Stack]
+- https://www.societe.com/societe/circular-850542804.html (other): circular: deprecations; circular: program_status
+- https://www.techradar.com/health-fitness/ultrahuman-smart-rings-have-just-been-banned-in-the-us-but-theres-better-news-for-ringconn-fans (): ultrahuman: deprecations
 - https://www.thehyve.nl/services/radar-base (research_program): radar-base: academic_pricing; radar-base: academic_vs_commercial; radar-base: api_platform_fees; radar-base: hosting_options; radar-base: hosting_price; radar-base: minimum_commitment [RADAR-base as a Service (The Hyve)]; and 3 more
-- https://www.thryve.health/blog/fitbit-shutdown-september-2026-migration-options (changelog): fitbit-google: api_platform_fees [Google Health API]; fitbit-google: export_routes [Intermediaries (cloud route)]; fitbit-google: export_routes [On-device (Apple Health and Health Connect)]; thryve: api_platform_fees [Google Health API route (own OAuth client)]; thryve: deprecations [Fitbit Web API source]; thryve: deprecations [Google Health integration status]; and 5 more
+- https://www.thryve.health/ (): thryve: iso27001
+- https://www.thryve.health/certifications-compliance (trust): thryve: baa; thryve: dpa; thryve: gdpr_statement; thryve: hipaa_statement; thryve: iso27001; thryve: soc2
+- https://www.thryve.health/free-trial (pricing): thryve: academic_vs_commercial; thryve: developer_program_status; thryve: minimum_commitment [Start Up plan]; thryve: program_eligibility [Thryve Research Partners]
+- https://www.thryve.health/multimodal-clinical-trial-platform (): thryve: data_residency; thryve: research_program [Thryve Research Partners]
+- https://www.thryve.health/news/thryve-huawei-terve-research-partnership (): thryve: research_program [Terve Research]
 - https://www.thryve.health/pricing (pricing): thryve: academic_pricing; thryve: academic_vs_commercial; thryve: api_platform_fees [Thryve plans]; thryve: baa; thryve: data_residency; thryve: derived_metrics; and 8 more
-- https://www.wareable.com/fitbit/google-health-update-fitbit-data-sync-with-apple-health (): fitbit-google: export_routes [On-device (Apple Health and Health Connect)]
-- https://www.withings.com/fr/fr/legal/api-terms-of-use (terms): withings: retention_terms [Inactive participant accounts]
-- https://www.withings.com/us/en/beam-o/shop (): withings: subscription_price [Withings+ (US)]
-- https://www.withings.com/us/en/legal/api-terms-of-use (terms): withings: minimum_commitment; withings: retention_terms [API partners and Withings' own retention]; withings: retention_terms [Inactive participant accounts]
+- https://www.thryve.health/research-organizations (): thryve: academic_pricing; thryve: academic_vs_commercial; thryve: program_eligibility [Thryve Research Partners]
+- https://www.thryve.health/research-partners (research_program): thryve: academic_pricing; thryve: academic_vs_commercial; thryve: program_application [Thryve Research Partners]; thryve: program_status [Thryve Research Partners]; thryve: research_program [Thryve Research Partners]
+- https://www.thryve.health/supported-wearable-devices/google-health (developer_program): thryve: deprecations [Google Health integration status]
+- https://www.thryve.health/supported-wearable-devices/zepp-amazfit (): zepp-amazfit: derived_metrics
+- https://www.thryve.health/trust-center (): thryve: soc2
+- https://www.thryve.health/updates (changelog): thryve: derived_metrics
+- https://www.thryve.health/updates/2025-year-in-review-thryve (): thryve: iso27001
+- https://www.thryve.health/updates/foundation-analytics-now-included (): thryve: api_platform_fees [Thryve plans]
+- https://www.thryve.health/updates/sdk-5-2-update (): thryve: deprecations [Samsung Health SDK module]
+- https://www.thryve.health/wearable-api (): thryve: export_routes
+- https://www.ultrahuman.com/blog/accessing-the-ultrahuman-partnership-api/ (developer_program): ultrahuman: derived_metrics; ultrahuman: developer_program_status [Partner OAuth API]; ultrahuman: program_application; ultrahuman: sampling_rates [Daily metrics and other sensors]; ultrahuman: user_cap
+- https://www.ultrahuman.com/gb/ring/buy/ (): ultrahuman: device_price [Ring AIR]
+- https://www.ultrahuman.com/global/ring-pro/buy/ (): ultrahuman: device_price [Ring PRO]
+- https://www.ultrahuman.com/global/ring/pro-vs-air/ (pricing): ultrahuman: device_price [Ring AIR]; ultrahuman: history_depth; ultrahuman: sampling_rates [Daily metrics and other sensors]
+- https://www.ultrahuman.com/global/security/ (): ultrahuman: soc2
+- https://www.ultrahuman.com/legal/notice-march-2026 (trust): ultrahuman: iso27001
+- https://www.ultrahuman.com/llms.txt (): ultrahuman: deprecations; ultrahuman: device_price [Ring AIR]; ultrahuman: subscription_price
+- https://www.ultrahuman.com/science/explainers/pulsomics/ (): ultrahuman: ai_training_terms; ultrahuman: research_program
+- https://www.ultrahuman.com/us/for-work/ (): ultrahuman: minimum_commitment; ultrahuman: quote_required
+- https://www.ultrahuman.com/us/heroes/ (pricing): ultrahuman: academic_pricing; ultrahuman: academic_vs_commercial
+- https://www.ultrahuman.com/us/powerplugs/ (pricing): ultrahuman: fda_clearances; ultrahuman: subscription_price
+- https://www.ultrahuman.com/us/pricing/ (): ultrahuman: export_routes
+- https://www.ultrahuman.com/us/privacyPolicy/ (terms): ultrahuman: ai_training_terms; ultrahuman: baa; ultrahuman: data_residency; ultrahuman: dpa; ultrahuman: gdpr_statement; ultrahuman: hipaa_statement; and 3 more
+- https://www.ultrahuman.com/us/pulsomics/ (research_program): ultrahuman: program_application; ultrahuman: program_eligibility; ultrahuman: program_status; ultrahuman: research_program
+- https://www.ultrahuman.com/us/ring-pro/buy/ (pricing): ultrahuman: device_price [Ring PRO]; ultrahuman: minimum_commitment; ultrahuman: quote_required; ultrahuman: subscription_price
+- https://www.ultrahuman.com/us/termsAndCondition/ (): ultrahuman: ai_training_terms; ultrahuman: baa; ultrahuman: dpa
+- https://www.ultrahuman.com/us/ultrasignal/ (developer_program): ultrahuman: minimum_commitment; ultrahuman: program_application; ultrahuman: program_eligibility; ultrahuman: program_status; ultrahuman: raw_streams; ultrahuman: research_program; and 2 more
+- https://www.wareable.com/ces/circular-ring-2-ces (): circular: fda_clearances
+- https://www.withings.com/en-us/pages/research-clinical-trials (research_program): withings: academic_pricing; withings: research_program
+- https://www.withings.com/en-us/pages/research-request (): withings: academic_pricing; withings: program_application
+- https://www.withings.com/pages/withings-api-plans-form (developer_program): withings: minimum_commitment; withings: user_cap [Start for Free plan]
+- https://www.withings.com/us/en/data-security (trust): withings: data_residency; withings: iso27001; withings: soc2
+- https://www.withings.com/us/en/legal/privacy-policy (terms): withings: research_program [Withings' own in-app research programs (consumer)]; withings: retention_terms [API partners and Withings' own retention]; withings: retention_terms [Inactive participant accounts]
+- https://www.withings.com/us/en/scanwatch-2 (): withings: device_price [ScanWatch 2 (US store)]
+- https://www.withings.com/us/en/scanwatch-light (): withings: device_price [ScanWatch Light (US store)]
+- https://www.withings.com/us/en/scanwatch-nova (): withings: device_price [ScanWatch Nova (US store)]
 
 ## Dead links
 
-- https://carp.dk/join/: HTTP Error 404: Not Found. Cited by: carp: app_availability
-- https://developer.garmin.com/gc-developer-program/activity-api/: HTTP Error 404: Not Found. Cited by: garmin: export_routes
-- https://developer.garmin.com/gc-developer-program/health-api/: HTTP Error 404: Not Found. Cited by: garmin: academic_vs_commercial; garmin: api_platform_fees [Connect Developer Program (Health API and related APIs)]; garmin: derived_metrics; garmin: export_routes; garmin: history_depth; garmin: rate_limits; and 3 more
-- https://developer.garmin.com/gc-developer-program/program-faq/: HTTP Error 404: Not Found. Cited by: garmin: academic_pricing; garmin: academic_vs_commercial; garmin: api_platform_fees [Connect Developer Program (Health API and related APIs)]; garmin: export_routes; garmin: minimum_commitment; garmin: program_application [Garmin Connect Developer Program]; and 4 more
-- https://docs.carp.dk/api/carp_mobile_sensing/domain/historicsamplingconfiguration/: HTTP Error 404: . Cited by: carp: history_depth
-- https://docs.carp.dk/backends/where-data-goes/caws/: HTTP Error 404: . Cited by: carp: developer_program_status; carp: program_eligibility; carp: sampling_rates; carp: user_cap
-- https://docs.carp.dk/carp-mobile-sensing/: HTTP Error 404: . Cited by: watched page, no facts cite it yet
-- https://docs.carp.dk/carp-mobile-sensing/domain/data-endpoints-and-privacy/: HTTP Error 404: . Cited by: carp: export_routes
-- https://docs.carp.dk/carp-mobile-sensing/domain/measures-and-data/: HTTP Error 404: . Cited by: carp: deprecations; carp: sampling_rates
-- https://docs.carp.dk/carp-mobile-sensing/infrastructure/data-managers/: HTTP Error 404: . Cited by: carp: deprecations
-- https://docs.carp.dk/carp-mobile-sensing/sampling-packages/available-packages/: HTTP Error 404: . Cited by: carp: derived_metrics; carp: raw_streams; carp: sampling_rates
-- https://docs.carp.dk/sampling-packages/health/configure/: HTTP Error 404: . Cited by: carp: history_depth
-- https://docs.carp.dk/start/run-your-study/go-live/: HTTP Error 404: . Cited by: carp: export_routes; carp: program_application
+- https://cloud.ouraring.com/v2/docs (read via https://cloud.ouraring.com/v2/static/json/openapi-1.42.json): HTTP Error 404: Not Found. Cited by: oura: academic_vs_commercial; oura: api_platform_fees [Oura API]; oura: deprecations; oura: derived_metrics [Oura API]; oura: developer_program_status; oura: export_routes; and 6 more
+- https://verily.com/privacy-policy (read via https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/privacy-policy.json): HTTP Error 404: Not Found. Cited by: verily: ai_training_terms; verily: baa; verily: data_residency; verily: dpa; verily: gdpr_statement; verily: retention_terms
+- https://verily.com/security-trust (read via https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/security-trust.json): HTTP Error 404: Not Found. Cited by: verily: hipaa_statement; verily: iso27001; verily: program_status [Verily Study Watch]; verily: soc2
+- https://verily.com/terms (read via https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/terms.json): HTTP Error 404: Not Found. Cited by: verily: ai_training_terms
 
 ## Check by hand
 
@@ -539,7 +443,6 @@ Blocked to automated fetching. Open these in a browser.
 - https://help.evidation.com/hc/en-us/articles/9980467648787-How-is-my-Evidation-profile-different-from-data-you-might-collect-from-me-as-part-of-research: terms_blocked: site terms forbid automated collection. Cited by: evidation: program_application [Members (Evidation app)]
 - https://help.evidation.com/hc/en-us/articles/9980550034835-How-can-I-find-out-more-about-the-data-you-ve-collected-from-me: terms_blocked: site terms forbid automated collection. Cited by: evidation: history_depth [Member self-export]
 - https://help.lifedatacorp.com/hc/en-us: unreachable (403): HTTP Error 403: Forbidden. Cited by: lifedata: developer_program_status
-- https://news.samsung.com/global/samsung-partners-with-alcedis-to-advance-clinical-research-using-wearable-based-endpoints: unreachable: TimeoutError('The read operation timed out'). Cited by: samsung: program_status [Samsung research platform (via Alcedis)]; samsung: research_program [Institutional collaborations and the Samsung research platform (via Alcedis)]
 - https://support.withings.com/hc/articles/8986672043153: unreachable (403): HTTP Error 403: Forbidden. Cited by: withings: subscription_price [Withings+ (US)]
 - https://support.withings.com/hc/en-us/articles/11132728427921-Withings-Terms-and-Conditions: unreachable (403): HTTP Error 403: Forbidden. Cited by: withings: subscription_price [Withings+ (US)]
 - https://support.withings.com/hc/en-us/articles/360001391287-Privacy-How-can-I-export-my-data: unreachable (403): HTTP Error 403: Forbidden. Cited by: withings: export_routes
@@ -549,68 +452,238 @@ Blocked to automated fetching. Open these in a browser.
 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPMA/pma.cfm?start_search=1&applicant=oura: unreachable (404): HTTP Error 404: Not Found. Cited by: oura: fda_clearances
 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPMN/pmn.cfm?start_search=1&Applicant=oura: unreachable (404): HTTP Error 404: Not Found. Cited by: oura: fda_clearances
 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K221774: unreachable (404): HTTP Error 404: Not Found. Cited by: watched page, no facts cite it yet
-- https://www.techrepublic.com/article/news-samsung-alcedis-galaxy-watch-clinical-trials/: unreachable (403): HTTP Error 403: Forbidden. Cited by: samsung: research_program [Institutional collaborations and the Samsung research platform (via Alcedis)]
+- https://www.massdevice.com/verily-launches-biosensor-equipped-study-watch-clinical-study-patient-monitoring/: unreachable (403): HTTP Error 403: Forbidden. Cited by: verily: raw_streams [Verily Study Watch (historical data)]
+- https://www.sec.gov/Archives/edgar/data/1720446/000110465926048127/zepp-20251231x20f.htm: unreachable (403): HTTP Error 403: Forbidden. Cited by: zepp-amazfit: data_residency; zepp-amazfit: hipaa_statement; zepp-amazfit: iso27001; zepp-amazfit: soc2
 - https://www.whoop.com/privacy/full-privacy-policy/: unreachable (403): HTTP Error 403: Forbidden. Cited by: watched page, no facts cite it yet
 - https://www.whoop.com/us/en/bulk-buy/: unreachable (403): HTTP Error 403: Forbidden. Cited by: whoop: academic_pricing
-- https://www.whoop.com/us/en/membership/ (read via https://web.archive.org/web/20261002041123/https://www.whoop.com/us/en/membership/): unreachable: timed out. Cited by: whoop: device_price; whoop: fda_clearances [Irregular Heart Rhythm Notifications]; whoop: subscription_price
 - https://www.whoop.com/us/en/membership/: unreachable (403): HTTP Error 403: Forbidden. Cited by: whoop: academic_pricing; whoop: subscription_price
 - https://www.whoop.com/us/en/research/: unreachable (403): HTTP Error 403: Forbidden. Cited by: whoop: academic_pricing; whoop: academic_vs_commercial; whoop: program_eligibility; whoop: research_program
 - https://www.whoop.com/us/en/terms-of-sale/: unreachable (403): HTTP Error 403: Forbidden. Cited by: whoop: minimum_commitment
 - https://www.whoop.com/us/en/thelocker/access-your-whoop-data-with-new-integrations-data-export-options/: unreachable (403): HTTP Error 403: Forbidden. Cited by: watched page, no facts cite it yet
 - https://www.whoop.com/us/en/unite/: unreachable (403): HTTP Error 403: Forbidden. Cited by: whoop: program_status
 
-## Unreachable this week
-
-Will move to "check by hand" if it fails again next week.
-
-- https://axivity.com/downloads/ax3: unreachable (500): HTTP Error 500: Internal Server Error
-- https://axivity.com/faq: unreachable (500): HTTP Error 500: Internal Server Error
-- https://axivity.com/help/22: unreachable (500): HTTP Error 500: Internal Server Error
-- https://axivity.com/help/3: unreachable (500): HTTP Error 500: Internal Server Error
-- https://axivity.com/product/ax3: unreachable (500): HTTP Error 500: Internal Server Error
-- https://axivity.com/product/ax6: unreachable (500): HTTP Error 500: Internal Server Error
-- https://axivity.com/products: unreachable (500): HTTP Error 500: Internal Server Error
-- https://www.massdevice.com/verily-launches-biosensor-equipped-study-watch-clinical-study-patient-monitoring/: unreachable (403): HTTP Error 403: Forbidden
-- https://www.mddionline.com/business/verily-permanently-ceases-medical-device-manufacturing: unreachable (403): HTTP Error 403: Forbidden
-- https://www.sec.gov/Archives/edgar/data/1720446/000110465926048127/zepp-20251231x20f.htm: unreachable (403): HTTP Error 403: Forbidden
-- https://www.whoop.com/us/en/digital-whoop-labs/ (read via https://web.archive.org/web/20260727062958/https://www.whoop.com/us/en/digital-whoop-labs/): unreachable: timed out
-
 ## Newly marked noisy
 
 Changed three weeks running with every quote intact. Now watched through its quotes only.
 
-- https://forum.avicennaresearch.com/t/1406
-- https://forum.avicennaresearch.com/t/security-and-compliance/1267
-- https://forums.garmin.com/developer/connect-iq/f/discussion/434798/cannot-access-developer-program-application-form-under-construction/2027757
-- https://pub.dev/packages/carp_mobile_sensing
-- https://radar-base.org/
-- https://www.movesense.com/product/movesense-medical-mdr/
-- https://www.movesense.com/product/movesense-sensor-hr2/
-- https://www.ultrahuman.com/us/partners/
+- https://9to5google.com/2026/07/15/samsung-health-ai-training-data-consent/
+- https://api.fda.gov/device/510k.json?search=applicant:%22Apple,%20Inc.%22&limit=100
+- https://api.fda.gov/device/510k.json?search=applicant:%22samsung+electronics%22&sort=decision_date:desc&limit=20
+- https://api.fda.gov/device/510k.json?search=applicant:actigraph&limit=20
+- https://api.fda.gov/device/510k.json?search=applicant:empatica&limit=50
+- https://api.fda.gov/device/510k.json?search=applicant:whoop
+- https://api.fda.gov/device/510k.json?search=applicant:withings&limit=100
+- https://api.fda.gov/device/registrationlisting.json?search=registration.owner_operator.firm_name:oura
+- https://apis.io/providers/evidation-health/
+- https://apps.apple.com/us/app/avicenna-research/id1137173052
+- https://apps.apple.com/us/app/carp-studies/id1569798025
+- https://apps.apple.com/us/app/catalyst-by-metricwire/id1585123028
+- https://apps.apple.com/us/app/empatica-care-lab/id6443699123
+- https://apps.apple.com/us/app/evidation-earn-health-rewards/id793039965
+- https://apps.apple.com/us/app/gamma-research-study/id6747886728
+- https://apps.apple.com/us/app/lifedata/id6443996884
+- https://apps.apple.com/us/app/m-path-sense/id6520394129
+- https://apps.apple.com/us/app/m-path/id6733243074
+- https://apps.apple.com/us/app/metricwire/id1117108543
+- https://apps.apple.com/us/app/metricwire/id1117108543 (read via https://itunes.apple.com/lookup?id=1117108543)
+- https://apps.apple.com/us/app/mindlamp-2/id1495947054
+- https://apps.apple.com/us/app/movesense-ecg-recorder/id6443902831
+- https://apps.apple.com/us/app/oura-research/id6748037636
+- https://apps.apple.com/us/app/reallife-exp/id939951918
+- https://athletechnews.com/whoop-b2b-solution-unite-layoffs/
+- https://blog.ametris.com/blog/gt9x-link-faq-old
+- https://blog.theactigraph.com/blog/faq-actilife7-upgrade
+- https://clinicaltrials.gov/study/NCT06207929 (read via https://clinicaltrials.gov/api/v2/studies/NCT06207929)
+- https://femtechinsider.com/tidepool-and-oura-collaborate-to-build-diabetes-research-dataset/
+- https://forum.avicennaresearch.com/c/release-notes/6
+- https://forum.avicennaresearch.com/t/1009
+- https://forum.avicennaresearch.com/t/1031
+- https://forum.avicennaresearch.com/t/1225
+- https://forum.avicennaresearch.com/t/1443
+- https://forum.avicennaresearch.com/t/1475
+- https://forum.avicennaresearch.com/t/1508
+- https://forum.avicennaresearch.com/t/1512
+- https://forum.avicennaresearch.com/t/1645
+- https://forum.avicennaresearch.com/t/app-usage-legacy/1246
+- https://forum.avicennaresearch.com/t/avicenna-raw-database-software/800
+- https://forum.avicennaresearch.com/t/data-sources/1266
+- https://forum.avicennaresearch.com/t/fitbit/1259
+- https://forum.avicennaresearch.com/t/frequently-asked-questions/5
+- https://forum.avicennaresearch.com/t/garmin-health-api/1260
+- https://forum.avicennaresearch.com/t/garmin-health-sdk/1261
+- https://forum.avicennaresearch.com/t/garmin-sdk/1261
+- https://forum.avicennaresearch.com/t/how-sms-notification-costs-are-calculated/1540
+- https://forum.avicennaresearch.com/t/how-to-export-study-data-using-the-api/1496
+- https://forum.avicennaresearch.com/t/location/1255
+- https://forum.avicennaresearch.com/t/our-new-brand-and-identity/1120
+- https://forum.avicennaresearch.com/t/participant-app-settings/1278
+- https://forum.avicennaresearch.com/t/raw-data/1241
+- https://forum.avicennaresearch.com/t/sensorkit-approval/1563
+- https://forum.avicennaresearch.com/t/sensorkit/1290
+- https://forum.avicennaresearch.com/t/step-1-create-a-researcher-account/1160
+- https://forum.avicennaresearch.com/t/weekly-release-notes-2023-10-16/706
+- https://forum.avicennaresearch.com/t/weekly-release-notes-2026-10-06/2188
+- https://forums.garmin.com/developer/fit-sdk/f/discussion/435484/developer-onboarding-blocked/2054626
+- https://gadgetsandwearables.com/2026/09/28/fitbit-api-migration-deadline-october-30/
+- https://github.com/BIDMCDigitalPsychiatry/LAMP-dashboard/releases/tag/2026.08.05.3
+- https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/issues/944
+- https://github.com/BIDMCDigitalPsychiatry/LAMP-server
+- https://github.com/BIDMCDigitalPsychiatry/LAMP-server/pull/264
+- https://github.com/BIDMCDigitalPsychiatry/LAMP-server/pull/284
+- https://github.com/BIDMCDigitalPsychiatry/LAMP-server/releases
+- https://github.com/RADAR-base/RADAR-PushEndpoint/issues/91
+- https://github.com/RADAR-base/RADAR-PushEndpoint/pull/92
+- https://github.com/RADAR-base/RADAR-PushEndpoint/releases
+- https://github.com/RADAR-base/RADAR-REST-Connector
+- https://github.com/RADAR-base/RADAR-REST-Connector/releases
+- https://github.com/RADAR-base/RADAR-Rest-Source-Auth/pull/317
+- https://github.com/RADAR-base/RADAR-Rest-Source-Auth/releases
+- https://github.com/RADAR-base/RADAR-Schemas/releases
+- https://github.com/ResearchKit/ResearchKit
+- https://github.com/awareframework
+- https://github.com/awareframework/aware_narrator
+- https://github.com/carp-dk/carp_aware_package
+- https://github.com/cbitstech/Purple-Robot
+- https://github.com/onnela-lab/beiwe-backend
+- https://github.com/onnela-lab/beiwe-backend/blob/main/gunicorn_conf.py
+- https://github.com/onnela-lab/beiwe-backend/issues/471
+- https://github.com/onnela-lab/beiwe-backend/issues?q=label%3AANNOUNCEMENT
+- https://github.com/onnela-lab/beiwe-backend/wiki
+- https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-Beiwe-Data-Privacy-and-Security
+- https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-Beiwe-Research-Administration-Manual
+- https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-FAQs-for-Prospective-Beiwe-Users
+- https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-IRB-FAQs
+- https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-Supported-Data-Streams
+- https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-Using-Beiwe-for-Open-Source-Users
+- https://github.com/onnela-lab/beiwe-backend/wiki/Data-Download-API
+- https://github.com/onnela-lab/beiwe-backend/wiki/Deployment-Instructions---Scalable-Deployment
+- https://github.com/onnela-lab/beiwe-backend/wiki/Enabling-%22Last-Leg-Encryption%22-On-Older-deployments.
+- https://github.com/onnela-lab/beiwe-backend/wiki/Managing-ZSTD%E2%80%90Compressed-Data-From-The-Beiwe-Platform
+- https://github.com/onnela-lab/beiwe-backend/wiki/Scalability
+- https://github.com/onnela-lab/beiwe-backend/wiki/Tableau-API
+- https://github.com/onnela-lab/beiwe-backend/wiki/Upgrading-Elastic-Beanstalk-from-Python-3.8-to-3.12
+- https://github.com/onnela-lab/forest/issues/343
+- https://github.com/polarofficial/polar-ble-sdk
+- https://github.com/polarofficial/polar-ble-sdk/issues/886
+- https://github.com/polarofficial/polar-ble-sdk/issues/887
+- https://github.com/polarofficial/polar-ble-sdk/releases
+- https://github.com/polarofficial/polar-ble-sdk/releases/tag/7.0.0
+- https://github.com/polarofficial/polar-ble-sdk/releases/tag/8.0.0
+- https://github.com/polarofficial/polar-ble-sdk/releases/tag/8.4.0
+- https://github.com/wadpac/GGIRread/releases/tag/1.0.11
+- https://play.google.com/store/apps/datasafety?id=com.metricwire.digitalhealth&hl=en_US
+- https://play.google.com/store/apps/datasafety?id=org.phidatalab.radar_armt&hl=en_US
+- https://play.google.com/store/apps/datasafety?id=org.radarcns.detail&hl=en_US
+- https://play.google.com/store/apps/details?id=com.achievemint.android&hl=en_US
+- https://play.google.com/store/apps/details?id=com.activinsights.banduploader
+- https://play.google.com/store/apps/details?id=com.ethica.logger
+- https://play.google.com/store/apps/details?id=com.lifedata.lifedata&hl=en_US
+- https://play.google.com/store/apps/details?id=com.metricwire.android3&hl=en_US
+- https://play.google.com/store/apps/details?id=com.metricwire.digitalhealth&hl=en_US
+- https://play.google.com/store/apps/details?id=io.m_Path.kuleuven&hl=en
+- https://play.google.com/store/apps/details?id=io.m_Path_Sense.kuleuven&hl=en
+- https://radar-base.org/posts/news/
+- https://samsungmobilepress.com/articles/samsung-announces-open-innovation-initiative-with-leading-universities-and-academic-hospitals-to-build-digital-health-ecosystem
+- https://support.apple.com/guide/iphone/share-your-health-data-iph5ede58c3d/ios
+- https://support.google.com/googlehealth/answer/14237024?hl=en
+- https://support.google.com/googlehealth/answer/17037331?hl=en
+- https://support.google.com/googleplay/android-developer/answer/11926878
+- https://support.google.com/product-documentation/answer/14815921
+- https://support.google.com/product-documentation/answer/15187883?hl=en
+- https://support.ouraring.com/hc/en-us/articles/360025438734-Data-Export
+- https://support.ouraring.com/hc/en-us/articles/360025441594
+- https://support.ouraring.com/hc/en-us/articles/360025587353
+- https://the5krunner.com/2026/09/14/garmin-developer-api-access-paused/
+- https://tomsguide.com/wellness/fitness-trackers/whoop-5-0-and-whoop-mg-just-announced-heres-everything-you-need-to-know
+- https://tryterra.co/pricing
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPCD/classification.cfm?id=IKK (read via https://api.fda.gov/device/classification.json?search=product_code:IKK)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRES/res.cfm?id=198114 (read via https://api.fda.gov/device/enforcement.json?search=recall_number.exact:"Z-1280-2023")
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRES/res.cfm?id=198114 (read via https://api.fda.gov/device/recall.json?search=cfres_id:198114)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRL/rl.cfm?start_search=1&ownerOperatorNumber=10056642 (read via https://api.fda.gov/device/registrationlisting.json?search=registration.name:%22activinsights%22)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/denovo.cfm?ID=DEN230050 (read via https://api.fda.gov/device/510k.json?search=k_number:DEN230050)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/denovo.cfm?id=DEN180042 (read via https://api.fda.gov/device/510k.json?search=k_number:DEN180042)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/denovo.cfm?id=DEN180044 (read via https://api.fda.gov/device/510k.json?search=k_number:DEN180044)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/denovo.cfm?id=DEN230041 (read via https://api.fda.gov/device/510k.json?search=k_number:DEN230041)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/denovo.cfm?id=DEN230081 (read via https://api.fda.gov/device/510k.json?search=k_number:DEN230081)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K040554 (read via https://api.fda.gov/device/510k.json?search=k_number:K040554)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K080545 (read via https://api.fda.gov/device/510k.json?search=k_number:K080545)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K110872 (read via https://api.fda.gov/device/510k.json?search=k_number:K110872)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K133125 (read via https://api.fda.gov/device/510k.json?search=k_number:K133125)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K140086 (read via https://api.fda.gov/device/510k.json?search=k_number:K140086)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K160544 (read via https://api.fda.gov/device/510k.json?search=k_number:K160544)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K161717 (read via https://api.fda.gov/device/510k.json?search=k_number:K161717)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K172935 (read via https://api.fda.gov/device/510k.json?search=k_number:K172935)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K181077 (read via https://api.fda.gov/device/510k.json?search=k_number:K181077)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K181861 (read via https://api.fda.gov/device/510k.json?search=k_number:K181861)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K200948 (read via https://api.fda.gov/device/510k.json?search=k_number:K200948)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K201168 (read via https://api.fda.gov/device/510k.json?search=k_number:K201168)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K201456 (read via https://api.fda.gov/device/510k.json?search=k_number:K201456)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K201525 (read via https://api.fda.gov/device/510k.json?search=k_number:K201525)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K211887 (read via https://api.fda.gov/device/510k.json?search=k_number:K211887)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K212372 (read via https://api.fda.gov/device/510k.json?search=k_number:K212372)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K212516 (read via https://api.fda.gov/device/510k.json?search=k_number:K212516)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K213971 (read via https://api.fda.gov/device/510k.json?search=k_number:K213971)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K221282 (read via https://api.fda.gov/device/510k.json?search=k_number:K221282)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K221486 (read via https://api.fda.gov/device/510k.json?search=k_number:K221486)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K221774 (read via https://api.fda.gov/device/510k.json?search=k_number:K221774)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K223374 (read via https://api.fda.gov/device/510k.json?search=k_number:K223374)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K230292 (read via https://api.fda.gov/device/510k.json?search=k_number:K230292)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K230457 (read via https://api.fda.gov/device/510k.json?search=k_number:K230457)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K230812 (read via https://api.fda.gov/device/510k.json?search=k_number:K230812)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K231173 (read via https://api.fda.gov/device/510k.json?search=k_number:K231173)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K231532 (read via https://api.fda.gov/device/510k.json?search=k_number:K231532)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K231667 (read via https://api.fda.gov/device/510k.json?search=k_number:K231667)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K232915 (read via https://api.fda.gov/device/510k.json?search=k_number:K232915)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K240102 (read via https://api.fda.gov/device/510k.json?search=k_number:K240102)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K240795 (read via https://api.fda.gov/device/510k.json?search=k_number:K240795)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K240909 (read via https://api.fda.gov/device/510k.json?search=k_number:K240909)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K240929 (read via https://api.fda.gov/device/510k.json?search=k_number:K240929)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K242058 (read via https://api.fda.gov/device/510k.json?search=k_number:K242058)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K242737 (read via https://api.fda.gov/device/510k.json?search=k_number:K242737)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K242967 (read via https://api.fda.gov/device/510k.json?search=k_number:K242967)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K243236 (read via https://api.fda.gov/device/510k.json?search=k_number:K243236)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K243778 (read via https://api.fda.gov/device/510k.json?search=k_number:K243778)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K250143 (read via https://api.fda.gov/device/510k.json?search=k_number:K250143)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K250507 (read via https://api.fda.gov/device/510k.json?search=k_number:K250507)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K250515 (read via https://api.fda.gov/device/510k.json?search=k_number:K250515)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K252474 (read via https://api.fda.gov/device/510k.json?search=k_number:K252474)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K252981 (read via https://api.fda.gov/device/510k.json?search=k_number:K252981)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K253582 (read via https://api.fda.gov/device/510k.json?search=k_number:K253582)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K260374 (read via https://api.fda.gov/device/510k.json?search=k_number:K260374)
+- https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K261011 (read via https://api.fda.gov/device/510k.json?search=k_number:K261011)
+- https://www.contractsfinder.service.gov.uk/Notice/202ae1a7-9e51-4348-ab6d-2c5df211ce83
+- https://www.empatica.com/
+- https://www.movesense.com/product/movesense-flash-developer-kit/
+- https://www.movesense.com/shop/
+- https://www.polar.com/us-en/ignite3
+- https://www.sammobile.com/news/samsung-partners-stanford-university-medicine-improve-sleep-apnea-detection-galaxy-watches/
+- https://www.samsung.com/us/apps/samsung-health/
+- https://www.samsung.com/us/privacy-policy/washington-privacy-notice/
+- https://www.samsung.com/us/rings/galaxy-ring/
+- https://www.samsung.com/us/shop/discount-program/education/
+- https://www.samsung.com/us/watches/galaxy-watch-ultra2/
+- https://www.samsung.com/us/watches/galaxy-watch9/
+- https://www.thryve.health/blog/fitbit-shutdown-september-2026-migration-options
+- https://www.wareable.com/fitbit/google-health-update-fitbit-data-sync-with-apple-health
+- https://www.withings.com/fr/fr/legal/api-terms-of-use
+- https://www.withings.com/us/en/beam-o/shop
+- https://www.withings.com/us/en/legal/api-terms-of-use
 
 ## Re-check dates extended
 
 Every quote still matched exactly, so recheck_by moved forward by the field's interval. No other part of the record changed.
 
-- ametris-actigraph: 25
-- apple: 51
-- axivity: 4
-- beiwe: 20
-- carp: 10
-- empatica: 12
-- evidation: 1
+- avicenna: 9
+- aware: 19
+- axivity: 10
+- carp: 6
 - fitabase: 1
-- fitbit-google: 30
-- garmin: 16
-- m-path: 23
-- metricwire: 16
-- movesense: 27
-- oura: 27
-- polar: 34
-- radar-base: 23
-- samsung: 21
-- whoop: 14
-- withings: 20
+- fitbit-google: 1
+- garmin: 1
+- labfront: 20
+- lifedata: 21
+- mindlamp: 21
+- samsung: 2
 
 ## Overdue re-checks
 
@@ -618,7 +691,6 @@ Every quote still matched exactly, so recheck_by moved forward by the field's in
 - whoop: program_eligibility (due 2026-10-24)
 - whoop: program_status (due 2026-10-24)
 - whoop: academic_vs_commercial (due 2026-10-24)
-- whoop: device_price (due 2026-10-24)
 - whoop: subscription_price (due 2026-10-24)
 - whoop: academic_pricing (due 2026-10-24)
 - whoop: minimum_commitment (due 2026-10-24)
@@ -627,7 +699,6 @@ Every quote still matched exactly, so recheck_by moved forward by the field's in
 - whoop: dpa (due 2026-10-24)
 - whoop: gdpr_statement (due 2026-10-24)
 - whoop: soc2 (due 2026-10-24)
-- whoop: fda_clearances [Irregular Heart Rhythm Notifications] (due 2026-10-24)
 - whoop: data_residency (due 2026-10-24)
 
 ## Coverage
@@ -635,4 +706,4 @@ Every quote still matched exactly, so recheck_by moved forward by the field's in
 1340 of 1340 facts researched across 35 companies.
 
 
-Full report: `facts/_reports/2026-10-26.md`. How to work this: `facts/README.md`, "Re-check loop".
+Full report: `facts/_reports/2026-10-31.md`. How to work this: `facts/README.md`, "Re-check loop".

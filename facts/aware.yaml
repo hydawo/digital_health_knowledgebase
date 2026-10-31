@@ -52,7 +52,7 @@ facts:
     type: vendor_page
     quote: "AWARE is available to everyone on GitHub under the Apache Software License 2.0"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-10
+  recheck_by: '2026-11-30'
   note: Orygen (Melbourne youth mental health) says its partnership with the university gives it unrestricted access
     to AWARE (https://www.orygen.org.au/Research/Research-Areas/Orygen-Digital/Personal-sensing). That is an informal
     partnership, not a published program.
@@ -104,7 +104,7 @@ facts:
     type: vendor_page
     quote: "You can join the AWARE community on Discord to get in touch with others using this framework"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-10
+  recheck_by: '2026-11-30'
   note: GitHub API on 2026-10-11 shows 4.2.1 released 2025-05-26 and 4.7.3.beta on 2026-08-07. The downloads page
     text still says beta "latest version = 4.7.2" while listing a 4.7.3 build. About 40 iOS sensor-module
     repositories in the awareframework org were pushed in June and July 2026. Open Collective funding is negligible
@@ -136,7 +136,7 @@ facts:
     type: vendor_page
     quote: "you may use it for commercial and research purposes without restrictions"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-10
+  recheck_by: '2026-11-30'
 - field: device_price
   status: not_applicable
   note: Software only. Participants use their own Android phones or iPhones.
@@ -158,7 +158,7 @@ facts:
     type: vendor_page
     quote: "We are now hosting the client on GitHub"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-10
+  recheck_by: '2026-11-30'
 - field: academic_pricing
   status: not_public
   confidence: Corroborated
@@ -182,7 +182,7 @@ facts:
     type: vendor_page
     quote: "AWARE is available to everyone on GitHub under the Apache Software License 2.0"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-10
+  recheck_by: '2026-11-30'
 - field: minimum_commitment
   status: not_public
   confidence: Corroborated
@@ -206,7 +206,7 @@ facts:
     type: vendor_page
     quote: "Contact Dr Simon D’Alfonso if you are interested in this option"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-10
+  recheck_by: '2026-11-30'
 - field: hosting_price
   status: not_public
   confidence: Corroborated
@@ -259,7 +259,7 @@ facts:
     type: vendor_docs
     quote: "An unresolved issue with AWARE concerns duplication of data records"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-10
+  recheck_by: '2026-11-30'
   note: 'Decision-relevant for ethics review: the Screentext page says the sensor "does not record password inputs",
     but AWARE''s own test list shows some apps expose passwords to it when the participant turns on show-password.
     Issue #31 on sensitive-data handling (passwords, usernames) has been open since 2024-02-28. Records can also be
@@ -305,7 +305,7 @@ facts:
     type: repository
     quote: "It records notifications received while the app is in the foreground"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-10
+  recheck_by: '2026-11-30'
   note: Not equivalent to the Android streams of the same name. The iOS keyboard sees only typing done on AWARE's
     own keyboard, and the notification module records the app's own pushes, not other apps' notifications. The App
     Store sensor list for V3 does not mention ESM/EMA. The sensor modules are new Swift repositories in the
@@ -327,7 +327,7 @@ facts:
     type: repository
     quote: "The following sensors can be used under extension(s)because these sensors need additional permission(s) into Info.plist and take a review by apple."
     retrieved: 2026-10-11
-  recheck_by: 2026-11-10
+  recheck_by: '2026-11-30'
   note: V2 is the app awareframework.com still links to, but it was last updated 2025-07-10 and its description
     still sends researchers to the retired AWARE Dashboard.
 - field: derived_metrics
@@ -358,7 +358,7 @@ facts:
     type: vendor_docs
     quote: "It also provides higher level context on the users’ calling availability and actions"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-10
+  recheck_by: '2026-11-30'
 - field: sampling_rates
   status: stated
   scope: Android
@@ -375,7 +375,7 @@ facts:
     type: vendor_docs
     quote: "how frequent to check the GPS location, in seconds. By default, every 180 seconds"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-10
+  recheck_by: '2026-11-30'
   note: The V3 iOS app lets sampling frequency, save interval and sample interval be set in Settings; per-sensor
     iOS rates were not itemized.
 - field: history_depth
@@ -388,7 +388,7 @@ facts:
     type: vendor_docs
     quote: "AWARE runs on Android devices, and those devices directly upload data to your MySQL server, without any intermediate servers or cloud services"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-10
+  recheck_by: '2026-11-30'
   note: An inference from the self-hosted architecture; no page states a history depth. Terms of the hosted service
     are not published.
 - field: export_routes
@@ -410,7 +410,7 @@ facts:
     type: vendor_legal
     quote: "it can be backed up and opened by connecting the device to your computer and using an SQLite client"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-10
+  recheck_by: '2026-11-30'
   note: Setting up a study in the hosted configurator requires entering the database's root credentials, which the
     page says it does not store permanently. Deduplicate records on (device_id, timestamp).
 - field: rate_limits
@@ -436,7 +436,7 @@ facts:
     type: vendor_legal
     quote: "Last modified 24.January 2019"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-10
+  recheck_by: '2026-11-30'
   note: Corroborated because the policy dates from 2019 and says it covers clients offered in the Play Store, which
     no longer exist. Whether the current client still deletes server data on withdrawal was not confirmed; the
     current use-aware page lists only opting out of the study.
@@ -480,7 +480,7 @@ facts:
     type: secondary
     quote: "The Google Fit APIs, including the Google Fit REST API, will be deprecated in 2026"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-10
+  recheck_by: '2026-11-30'
   note: api.awareframework.com returned NXDOMAIN on 2026-10-11. The changes post is dated 2025-01-13. Three pages
     still point at the old dashboard on 2026-10-11 (the 2019 privacy policy, the 2015 "Run a study with AWARE"
     tutorial and the AWARE Client V2 App Store description), and the use-aware page still says AWARE runs on
@@ -517,7 +517,7 @@ facts:
     type: repository
     quote: "AGPL-3.0 license"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-10
+  recheck_by: '2026-11-30'
   note: Licence detection from the GitHub API, 2026-10-11. Repositories with no detected licence include the iOS
     keyboard, notification, airpods, ambientnoise, photos and esm modules; older iOS modules report NOASSERTION. No
     public source repository for the V3 app was found.
@@ -545,7 +545,7 @@ facts:
     type: vendor_page
     quote: "If you don’t want the hassle of setting up the technical infrastructure for your study, we can set it up and host it for you on our AWARE hosting service based at the University of Melbourne"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-10
+  recheck_by: '2026-11-30'
   note: The free hosted dashboard the 2019 privacy policy describes no longer exists (see deprecations).
 - field: app_availability
   status: stated
@@ -570,7 +570,7 @@ facts:
     type: vendor_page
     quote: "newer versions might not be compatible with your study configuration file"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-10
+  recheck_by: '2026-11-30'
   note: The maintainers advise keeping all participants on one version. On Android 13 and later a sideloaded app
     needs "Allow restricted settings" before Accessibility can be enabled.
 - field: app_availability
@@ -601,7 +601,7 @@ facts:
     type: vendor_page
     quote: "AWARE for iPhone can be downloaded via the Apple App Store"
     retrieved: 2026-10-11
-  recheck_by: 2026-11-10
+  recheck_by: '2026-11-30'
   note: Release dates and minimum iOS versions from the iTunes lookup API (itunes.apple.com/lookup?id=6781949744 and
     id=1455986181). Calling V3 current is a judgement from its recency and its awareframework bundle ID; AWARE's
     site has not announced it. The V3 privacy label declares health, location, audio and identifiers as linked to

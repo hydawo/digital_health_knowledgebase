@@ -113,7 +113,7 @@ facts:
     retrieved: '2026-10-10'
     quote: The study will be led by professor Robson Capasso as principal investigator and professor Clete Kushida as
       co-principal investigator.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-30'
   note: Corroborated rather than Verified because several of the named studies rest on press coverage, and no
     program terms are published. The Alcedis release is cited from Samsung's newsroom (read in a browser and by the
     fetcher on 2026-10-10; it had timed out for the fetcher earlier the same day). The UCSF study targets 200 adults per decade
@@ -215,7 +215,7 @@ facts:
     retrieved: '2026-10-10'
     quote: Alcedis will lead study execution and participant engagement, while Samsung will provide its advanced wearable
       technology and research infrastructure to support evidence generation.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-30'
   note: Date and wording from Samsung's newsroom release of 24 June 2026.
 - field: developer_program_status
   status: stated

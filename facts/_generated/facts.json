@@ -778,7 +778,7 @@
   "status": "stated",
   "value": "Fitabase says Google turns off the Fitbit Web API on 2026-10-30 (Google itself moved the date to 2026-11-02 on 2026-10-23; see facts/fitbit-google.yaml). Every Fitabase participant still collecting after that must reauthorize for the Google Health API, once, either in the Google Health app or by Fitabase link (platform reauthorization opened 2026-10-15); the reconnect option and links keep working through 2026-11-30. Late reauthorization backfills the gap if the device kept syncing to Google. Reauthorization cannot be done programmatically. Exports move dataset by dataset; on 2026-10-14, 29 of 40 were available, 8 delayed (including Intraday Calories, Intraday METs and ECG, whose import is paused) and 3 classic sleep exports Fitbit API only. Active Fitbit projects were extended to 2027-01-01 at no charge. Classic sleep stops being a separate dataset, writing step goals is not yet available, exports gain UTC, time zone and source columns, and the Fitabase API is unchanged.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-02",
+  "recheck_by": "2026-11-30",
   "note": "Changed since the 2026-10-11 drafts - reauthorization was then \"Mid-to-late October 2026 (exact date TBD)\" and is now set for 2026-10-15; the migration pages were updated 2026-10-14; the project extension and the dataset-availability page are new. The 2026-10-19 blog lists Intraday Calories, Intraday METs, ECG and SpO2 as outstanding, while the dataset table (2026-10-14) shows Daily and Minute SpO2 as Available; the counts on the table header (29 / 8 / 3 of 40) do not include the 5 new Google-only datasets marked Coming Soon. Google's legacy API support ended 2026-09-30. Google expects step-goal writing \"next quarter\".",
   "sources": [
    {
@@ -2254,7 +2254,7 @@
   "status": "stated",
   "value": "Two programs. (1) Labfront Grants: subsidised or free platform access (typically one year of the Advanced plan with 20 participants), an analytics package and devices, run with partners including Garmin Health. (2) The Research Collaborator Program, free to academic institutions: collaborator-only grants, product discounts, analytics guidance, a device loaner program and a dedicated liaison.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://www.labfront.com/pricing",
@@ -2290,7 +2290,7 @@
   "status": "stated",
   "value": "Collaborator Program: any academic institution. Grants are set per call: the 2026 Labfront x Garmin Health grant is open worldwide (EMEA, APAC, Americas) but not to previous recipients of that grant; the 2026 Aging Science grant requires affiliation with an accredited academic, research or professional institution; Garmin-sponsored grants are for academic or healthcare institutions, not private companies.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://www.labfront.com/collaborator",
@@ -2332,7 +2332,7 @@
   "status": "stated",
   "value": "Collaborator Program: an online form, then selection; selected institutions get a dedicated liaison. Grants: a study summary or abstract (about 200 words), a personal statement (200 words max) and a CV, by the call's deadline. The grants FAQ says applications are reviewed roughly every 2 to 3 months and a winner can take up to a month after the deadline to be announced.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://www.labfront.com/collaborator",
@@ -2368,7 +2368,7 @@
   "status": "stated",
   "value": "Active. Open 2026 grant calls on 2026-10-11: Labfront x Garmin Health Research Grant built on the Garmin CIRQA Smart Band (value $5,500, deadline 2026-11-02), Sleep Science (deadline 2026-11-27) and Aging Science (deadline 2026-12-07). The pricing page still calls grants rolling and year-round. Collaborator Program taking applications.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "The grant page also lists \"institutional grants\" (Harvard, Cleveland Clinic, Johns Hopkins, Stanford, Mayo) as ongoing, with their award, eligibility and deadline fields blank.",
   "sources": [
    {
@@ -2411,7 +2411,7 @@
   "status": "stated",
   "value": "Developer Access is labelled Beta and is a paid add-on (from $4,000) on the Advanced plan only. There is no external API or SDK; access is to an S3 bucket, granted after the project owner emails support, within 5 working days.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://help.labfront.com/developer-access",
@@ -2447,7 +2447,7 @@
   "status": "stated",
   "value": "Tester (free): 5 participants, 2 device types per project. Basic: 20 participants included, 1 device type (Garmin or Dexcom). Advanced: 20 included, unlimited device types. Extra participants are billed per participant per year on Basic ($10) and Advanced ($25); every participant account counts, even on a shared device. One Movesense sensor per participant.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://www.labfront.com/pricing",
@@ -2483,7 +2483,7 @@
   "status": "stated",
   "value": "One public price list for every customer; no separate academic or commercial tier is published. Academic users get extra routes in, namely Garmin and Movesense device discounts, the Collaborator Program (academic institutions only) and Garmin-sponsored grants that exclude private companies.",
   "confidence": "Corroborated",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "That no separate commercial price list exists is read from the single public price list, not stated.",
   "sources": [
    {
@@ -2508,7 +2508,7 @@
   "status": "stated",
   "value": "Labfront sells no hardware and no plan includes devices. Customers get a Garmin discount the FAQ gives as typically around 20% (elsewhere 20 to 25%), and a Movesense discount, by quote.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://www.labfront.com/pricing",
@@ -2538,7 +2538,7 @@
   "status": "stated",
   "value": "Researcher plans (there is no consumer subscription; the participant app is free): Tester free (5 participants, downloads limited to the last 30 days). Basic $500/yr with 20 participants, then $10 per extra participant, one integration (Garmin Connect or Dexcom), no beat-to-beat, actigraphy or accelerometer data. Advanced $1,250/yr with 20 participants, then $25 per extra participant, all integrations and high-resolution data. USD, billed annually in advance.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://www.labfront.com/pricing",
@@ -2574,7 +2574,7 @@
   "status": "stated",
   "value": "No academic discount on platform plans is published. Academic support comes as device discounts, Collaborator Program discounts, and grants giving free platform access (for example one year of Advanced with 20 participants, devices and an analytics package, valued at $5,000 to $5,500).",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://www.labfront.com/pricing",
@@ -2604,7 +2604,7 @@
   "status": "stated",
   "value": "Add-ons, Advanced plan only. Developer Access (S3 bucket of raw data, Beta): from $4,000. Analytics reports: HRV linear $4,000, HRV non-linear $6,000, sleep actigraphy $3,000, sleep regularity and timing $5,000, each plus $50 per participant. Data Audit: from $500.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://help.labfront.com/developer-access",
@@ -2646,7 +2646,7 @@
   "status": "stated",
   "value": "Annual subscription paid in advance; no monthly billing (short studies negotiable by email). Subscriptions renew automatically unless cancelled at least 30 days before renewal. Fees are refundable only if the service is cancelled within 30 days of the start or renewal date; otherwise non-refundable, with no prorated refund on cancellation.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "Researchers A and B disagreed (A non-refundable, B refundable within 30 days). Both are in the Terms (effective 2022-08-05). Section 5.3 says fees are non-refundable \"Except as set forth in the Agreement\", and section 9.3 is that exception, the 30-day cancellation refund.",
   "sources": [
    {
@@ -2689,7 +2689,7 @@
   "status": "stated",
   "value": "No for the three plans, which are priced publicly with self-serve sign-up. Yes for add-ons (listed \"starting from\" with Contact Us), extra participant slots, device discounts, short-term studies and retroactive Garmin Connect extraction.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://help.labfront.com/pricing-plans-and-payment-1",
@@ -2720,7 +2720,7 @@
   "scope": "Advanced plan",
   "value": "Garmin device-direct data through the Labfront Companion app: beat-to-beat intervals, actigraphy and 3-axis accelerometer (25 to 100 Hz). Movesense Medical, HR2 or Flash (recordings started by the participant in a task, not continuous in the background): ECG waveform, 9-axis IMU, RR interval. Dexcom CGM after Dexcom approves the study (about 2 months, including a data use agreement). Current pages list Garmin, Movesense and Dexcom only.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "Movesense models: the compatible-devices page shows only HR2 among its recommended devices, but the help centre lists Medical, HR2 and Flash as compatible; the help centre is the specific statement. Polar: a 2022 founder interview (Fitt Insider, 2022-11-16) described the engine as working \"with consumer wearables like Garmin and Polar\"; no current Labfront page mentions Polar, so it is treated as a superseded mention, not a current integration.",
   "sources": [
    {
@@ -2770,7 +2770,7 @@
   "scope": "Basic plan",
   "value": "No raw sensor streams. Standard Garmin Connect data only, from one device integration (Garmin Connect or Dexcom); no beat-to-beat interval, actigraphy, accelerometer or Movesense data. The free Tester plan, by contrast, gets beat-to-beat intervals and 25 Hz accelerometry.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://help.labfront.com/download-your-data",
@@ -2800,7 +2800,7 @@
   "status": "stated",
   "value": "Garmin Connect post-processed metrics (daily and activity summaries, sleep, stress, respiration, SpO2, heart rate, steps); sleep requires the Garmin Connect source. Paid Labfront Analytics reports add HRV time and frequency domain, non-linear HRV (DFA, MSE), actigraphy sleep, and sleep regularity and timing indices.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://help.labfront.com/choosing-your-garmin-data",
@@ -2830,7 +2830,7 @@
   "status": "stated",
   "value": "Advanced: heart rate 1 s to 60 min; respiration, SpO2 and stress 10 s to 60 min; steps 1 or 15 min; BBI every beat; actigraphy 10 s to 1 min; accelerometer 25, 50 or 100 Hz; Movesense IMU 12.5 to 208 Hz, ECG 125, 250 or 500 Hz, recordings up to 12 h. Basic: heart rate 1 min; respiration, SpO2 and stress 3 min; steps 15 min; no BBI, actigraphy or accelerometer. Tester: accelerometer 25 Hz, Movesense IMU 12.5 Hz and ECG 125 Hz, recordings up to 15 min.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://www.labfront.com/pricing",
@@ -2860,7 +2860,7 @@
   "status": "stated",
   "value": "Tester downloads are limited to the last 30 days (older data is kept and unlocked on upgrade); paid plans have unlimited history for project data and list \"Retroactive Garmin Data Access\". A separately quoted service (announced 2022) extracts participants' existing Garmin Connect data up to two years back and requires their Garmin Connect login details.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "The blog post is dated 2022-04-27. Handing over participants' Garmin Connect credentials is something an IRB may object to. Whether the pricing table's \"Retroactive Garmin Data Access\" row is the same service is not stated.",
   "sources": [
    {
@@ -2891,7 +2891,7 @@
   "status": "stated",
   "value": "Dashboard download: one ZIP of CSV files per request, filtered by participant and date range. Developer Access add-on (Beta): an S3 bucket refreshed every 6 hours (Garmin Connect, Garmin device-direct, tasks and questionnaires). No public API or SDK. Participants can download a copy of their own data.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://help.labfront.com/how-data-is-organized",
@@ -2944,7 +2944,7 @@
   "status": "stated",
   "value": "Research data is typically kept for 3 years after study completion (the 2022 Security Statement says at least 3 years, longer on request where local law requires), with NIH DMS Policy compliance stated. Researchers can request full deletion at any time. The Terms say that terminating all services deletes the account's data.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "Not recorded as a conflict. The 3-year figure is a retention practice for completed studies; the Terms (effective 2022-08-05) govern what happens when a customer closes its account. They can collide when a customer closes the account within 3 years of study completion, and no page reconciles that case; ask Labfront. The pricing page's \"Unlimited\" data history is a dashboard access feature, not a storage term.",
   "sources": [
    {
@@ -5625,7 +5625,7 @@
   "status": "stated",
   "value": "No separate academic or research program; the platform itself is sold to researchers. Each study starts on a free Trial licence (full default features, no participant cap, for testing only) and must be upgraded to a paid full licence before field research with real participants.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://forum.avicennaresearch.com/t/frequently-asked-questions/5",
@@ -5692,7 +5692,7 @@
   "status": "stated",
   "value": "Self-serve sign-up creates Trial studies. Moving a study from Trial to Licensed is done by emailing support with the study ID; a demo can be booked. No review or approval criteria are published. Studies using Apple SensorKit also need a per-study Apple entitlement, applied for by the institution, for which Avicenna builds a separate app.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://forum.avicennaresearch.com/t/frequently-asked-questions/5",
@@ -5722,7 +5722,7 @@
   "status": "stated",
   "value": "Active. Self sign-up and the free Trial are open and weekly release notes continue (latest read 2026-10-06). Renamed from Ethica Data to Avicenna Research in 2023-2024; the Ethica name was to be dropped by July 2024.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://forum.avicennaresearch.com/t/weekly-release-notes-2026-10-06/2188",
@@ -5746,7 +5746,7 @@
   "status": "stated",
   "value": "No public self-serve developer program. A Data Export API exists and is documented in a how-to article (posted 2026-02-09); researchers request an API key from support, tied to their researcher account. There is no full API reference. A Product Ideas card \"Export Data with API\" (2025-09-29), to follow \"OpenAPI Compatible APIs\", is still filed under To Do.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "The roadmap card predates the how-to article. It most likely covers a fuller, OpenAPI-style API, but the card does not say so, and its To Do status has not been updated since the API article appeared.",
   "sources": [
    {
@@ -5771,7 +5771,7 @@
   "status": "stated",
   "value": "The free Trial licence has no participant-number limit, but trial data is wiped monthly and the study deleted after one year. No caps are published for licensed studies.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://forum.avicennaresearch.com/t/frequently-asked-questions/5",
@@ -6077,7 +6077,7 @@
   "status": "stated",
   "value": "Phone sensors are polled once per data-collection cycle, every 5 minutes by default, configurable from 1 to 60 minutes (iOS honours the interval, Android may not). Burst sources sample for a fixed window per cycle (accelerometer 60 seconds; GPS cycles stay active 60 seconds). Garmin Health SDK accelerometer 25 Hz, gyroscope 32 Hz, heart rate or SpO2 configurable from 1 second to 1 hour. SensorKit motion downsampled to 32 Hz. Cloud wearable data is fetched daily; Fitbit intraday activity is 1-minute, Garmin Health API 15-minute slices.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://forum.avicennaresearch.com/t/data-sources/1266",
@@ -6137,7 +6137,7 @@
   "status": "stated",
   "value": "Data is collected from study participation onward; Fitbit daily summaries dated before the study start are excluded. No backfill of pre-enrolment history is documented for any source. SensorKit data becomes exportable about 30 hours after collection.",
   "confidence": "Corroborated",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "Only the Fitbit exclusion is stated outright; the absence of backfill for other sources is inferred from the documentation, hence Corroborated.",
   "sources": [
    {
@@ -6162,7 +6162,7 @@
   "status": "stated",
   "value": "Researcher Dashboard export (ZIP of CSV; GPS also KML/GPX, Bluetooth Beacon also GEXF; the marketing page also names JSON), each file downloadable for 7 days. In-dashboard Kibana querying and charts. A Data Export API for sensor data: POST to /api/study/export/create/, poll GET /api/v1/filter/export/, header \"Authorization: ApiKey USERNAME:API_KEY\", key issued by support. Direct database access on request (an older forum answer says only for self-hosted deployments). Participants can ask support for a machine-readable copy of their own data.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "Documented: sensor-data export through the API, with the create, status and download steps. Inferred, not documented: the open-source NiDB importer (commits to 2026-08-27) also POSTs a JSON \"PARTICIPATION\" filter to /api/v1/filter/export/ to export survey participation records, so the same endpoint evidently accepts more than sensor exports, but the vendor does not describe this. Roadmap card t/1406 \"Export Data with API\" is still under To Do; see developer_program_status.",
   "sources": [
    {
@@ -6309,7 +6309,7 @@
   "status": "stated",
   "value": "Rebrand from Ethica Data to Avicenna Research, the Ethica name dropped by July 2024 (app IDs still carry \"ethica\"). App Usage (Legacy) closed to new studies. Some GraphQL endpoints replaced by REST (2023-10). WHOOP integration moved to WHOOP API v2 after v1 was deprecated (2025-11). Fitbit participants must move to Google Accounts; legacy Fitbit accounts can no longer sync.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://forum.avicennaresearch.com/t/our-new-brand-and-identity/1120",
@@ -6736,7 +6736,7 @@
   "status": "stated",
   "value": "No research access program. AWARE is open-source academic software that anyone can download and self-host. The only researcher offering is a paid service from the University of Melbourne team, covering dedicated study set-up or fixing support and hosting a study on their AWARE hosting service, arranged by contacting Dr Simon D'Alfonso.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "Orygen (Melbourne youth mental health) says its partnership with the university gives it unrestricted access to AWARE (https://www.orygen.org.au/Research/Research-Areas/Orygen-Digital/Personal-sensing). That is an informal partnership, not a published program.",
   "sources": [
    {
@@ -6794,7 +6794,7 @@
   "status": "stated",
   "value": "Open source with no developer program or sign-up. Actively maintained by a team in the University of Melbourne's School of Computing and Information Systems (Dr Simon D'Alfonso, Prof Vassilis Kostakos); AWARE was created by Denzil Ferreira in his PhD, co-supervised by Kostakos and Anind K. Dey. Android stable is 4.2.1 and beta 4.7.3 (GitHub release 2026-08-07). The iOS apps are published under Yuuki Nishiyama's developer account. Contributions go to D'Alfonso or Kostakos; community support is on Discord.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "GitHub API on 2026-10-11 shows 4.2.1 released 2025-05-26 and 4.7.3.beta on 2026-08-07. The downloads page text still says beta \"latest version = 4.7.2\" while listing a 4.7.3 build. About 40 iOS sensor-module repositories in the awareframework org were pushed in June and July 2026. Open Collective funding is negligible (USD 16.82 raised in total, checked 2026-10-11). Some maintenance signals are weak. Issue 56 (2025-06-08, scheduled ESMs not appearing on the stable client) has no reply.",
   "sources": [
    {
@@ -6871,7 +6871,7 @@
   "status": "stated",
   "value": "No difference. The Apache 2.0 licence permits commercial and research use without restriction.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://awareframework.com/open/",
@@ -6898,7 +6898,7 @@
   "status": "stated",
   "value": "Free. Both iOS apps (AWARE Client V3 and V2) are free on the App Store, and the Android APKs are free downloads from GitHub and awareframework.com.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://apps.apple.com/us/app/aware-client-v3/id6781949744",
@@ -6950,7 +6950,7 @@
   "status": "stated",
   "value": "None for the software. All core components are open source; there is no hosted API to pay for. Costs are the researcher's own server, or the unpriced paid support and hosting services.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://awareframework.com/open/",
@@ -6985,7 +6985,7 @@
   "status": "stated",
   "value": "Yes for the paid services. Dedicated support and the University of Melbourne hosting service are arranged by contacting Dr Simon D'Alfonso; no price is listed. The software itself is free.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://awareframework.com/support/",
@@ -7032,7 +7032,7 @@
   "scope": "Android (AWARE, formerly AWARE-Light)",
   "value": "Raw phone sensor and event streams written to the researcher's own database, including accelerometer, gyroscope, magnetometer, gravity, linear accelerometer, rotation, barometer, light, proximity, temperature, locations (GPS and network), battery, Bluetooth, WiFi, network, telephony, calls and messages, applications, installations, keyboard, touch, notifications, screen, screenshot, screentext and ESM/EMA answers. Applications, touch, notifications, keyboard and screentext need Android Accessibility access. Keyboard logs keystrokes on any keyboard, Screenshot captures full screen images, and Screentext captures on-screen text.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "Decision-relevant for ethics review: the Screentext page says the sensor \"does not record password inputs\", but AWARE's own test list shows some apps expose passwords to it when the participant turns on show-password. Issue #31 on sensitive-data handling (passwords, usernames) has been open since 2024-02-28. Records can also be duplicated (same device_id and timestamp), so deduplicate during cleaning. The Google Fit module is not in the standard build and must be requested.",
   "sources": [
    {
@@ -7088,7 +7088,7 @@
   "scope": "iOS, AWARE Client V3 (App Store, released 2026-06-28)",
   "value": "Motion (accelerometer, gyroscope, gravity, magnetometer, linear accelerometer, rotation, barometer, pedometer, activity recognition labels, significant motion, AirPods head motion), device and connectivity (battery, screen, device, processor, network, Bluetooth LE, timezone, app lifecycle), HealthKit records (heart rate, sleep, activity, workouts, ECG, activity summaries, audiograms), Apple Watch sensors, music and photo metadata, keyboard metadata from AWARE's own bundled keyboard, location, Wi-Fi, iBeacon, call events, OpenWeather, notifications and Shortcuts triggers. Ambient noise (decibels and sound labels) was added in a version update. Enrolment is by QR code.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "Not equivalent to the Android streams of the same name. The iOS keyboard sees only typing done on AWARE's own keyboard, and the notification module records the app's own pushes, not other apps' notifications. The App Store sensor list for V3 does not mention ESM/EMA. The sensor modules are new Swift repositories in the awareframework org (many created 2026-06-11); no public source repository for the V3 app itself was found.",
   "sources": [
    {
@@ -7144,7 +7144,7 @@
   "scope": "iOS, AWARE Client V2 (App Store, version 1.14.2) and AWAREFramework-iOS",
   "value": "Location, barometer, Wi-Fi and Bluetooth; accelerometer, gyroscope, gravity, linear accelerometer, magnetometer and activity recognition; ambient noise features; screen state and call events; network; timezone; OpenWeatherMap; BLE heart rate; HealthKit heart rate, sleep and workouts; calendar; Fitbit via web API; and ESM. Some sensors are extensions that need extra Info.plist permissions and App Store review.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "V2 is the app awareframework.com still links to, but it was last updated 2025-07-10 and its description still sends researchers to the retired AWARE Dashboard.",
   "sources": [
    {
@@ -7169,7 +7169,7 @@
   "status": "stated",
   "value": "The clients mostly store raw records; some sensors add higher-level context (for example call availability in Communication, OS activity labels on iOS). Behavioural features come from the separate RAPIDS pipeline (AGPL-3.0, maintained outside AWARE). The AWARE Narrator tool turns records into English statements for LLM use and can optionally send coordinates to the Google Maps API for reverse geocoding.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://awareframework.com/rapids/",
@@ -7212,7 +7212,7 @@
   "scope": "Android",
   "value": "Configurable per sensor. The accelerometer is set as a sampling delay in microseconds (200000 normal, 60000 UI, 20000 game, 0 fastest) and is hardware-dependent and non-deterministic. GPS location is checked every 180 seconds by default.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "The V3 iOS app lets sampling frequency, save interval and sample interval be set in Settings; per-sensor iOS rates were not itemized.",
   "sources": [
    {
@@ -7237,7 +7237,7 @@
   "status": "stated",
   "value": "No vendor-held copy or limit. Phones upload straight to the researcher's own server, so history is whatever the study keeps; data not yet uploaded sits in the phone's local database.",
   "confidence": "Corroborated",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "An inference from the self-hosted architecture; no page states a history depth. Terms of the hosted service are not published.",
   "sources": [
    {
@@ -7256,7 +7256,7 @@
   "status": "stated",
   "value": "Android phones upload to the researcher's MySQL database at a configured offload frequency. iOS and AWARE Legacy upload to a self-run AWARE Micro server. Local data can also be copied off the phone and opened with an SQLite client. No vendor API.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "Setting up a study in the hosted configurator requires entering the database's root credentials, which the page says it does not store permanently. Deduplicate records on (device_id, timestamp).",
   "sources": [
    {
@@ -7296,7 +7296,7 @@
   "status": "stated",
   "value": "By default the client stores data only on the phone; in a study it is uploaded to the study server. Participants can withdraw and remove their data from the server and phone from the app. Retention on the server is otherwise the researcher's decision.",
   "confidence": "Corroborated",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "Corroborated because the policy dates from 2019 and says it covers clients offered in the Play Store, which no longer exist. Whether the current client still deletes server data on withdrawal was not confirmed; the current use-aware page lists only opting out of the study.",
   "sources": [
    {
@@ -7354,7 +7354,7 @@
   "status": "stated",
   "value": "In January 2025 AWARE-Light became the main Android AWARE and the original client became AWARE Legacy (denzilferreira/aware-client, archived 2023-06-18). The old free hosted dashboard at api.awareframework.com is not compatible with AWARE Micro and the host no longer resolves. The Google Fit add-on depends on Google Fit APIs that Google is deprecating in 2026.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "api.awareframework.com returned NXDOMAIN on 2026-10-11. The changes post is dated 2025-01-13. Three pages still point at the old dashboard on 2026-10-11 (the 2019 privacy policy, the 2015 \"Run a study with AWARE\" tutorial and the AWARE Client V2 App Store description), and the use-aware page still says AWARE runs on Android only.",
   "sources": [
    {
@@ -7391,7 +7391,7 @@
   "status": "stated",
   "value": "Apache License 2.0 for the Android client, AWARE Micro server, configurator and AWAREFramework-iOS. The iOS V2 app repository has no LICENSE file, though its README states Apache 2.0. Many new iOS sensor-module repositories have no detected licence, and one (calendar) is MIT. RAPIDS, the separate feature pipeline, is AGPL-3.0.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "Licence detection from the GitHub API, 2026-10-11. Repositories with no detected licence include the iOS keyboard, notification, airpods, ambientnoise, photos and esm modules; older iOS modules report NOASSERTION. No public source repository for the V3 app was found.",
   "sources": [
    {
@@ -7440,7 +7440,7 @@
   "status": "stated",
   "value": "Self-hosted, or a paid managed option. Android needs a researcher-run MySQL 5.x server reachable from the internet (own, AWS, Azure or Docker). iOS and AWARE Legacy need a self-run AWARE Micro server (JVM, Docker on AWS, GCP or Azure). The University of Melbourne team will set up and host a study on its AWARE hosting service, by arrangement.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "The free hosted dashboard the 2019 privacy policy describes no longer exists (see deprecations).",
   "sources": [
    {
@@ -7478,7 +7478,7 @@
   "scope": "Android",
   "value": "Not on Google Play. Distributed as APKs from the AWARE site and GitHub and sideloaded; stable 4.2.1, beta 4.7.3. Since May 2025 some participants see a Play Protect \"unsafe app blocked\" warning when installing.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "The maintainers advise keeping all participants on one version. On Android 13 and later a sideloaded app needs \"Allow restricted settings\" before Accessibility can be enabled.",
   "sources": [
    {
@@ -7516,7 +7516,7 @@
   "scope": "iOS",
   "value": "Two free App Store apps, both published by Yuuki Nishiyama. AWARE Client V3 is the current one (released 2026-06-28, version 1.7.0 on 2026-07-23, iOS 16.6 or later). AWARE Client V2 is still listed (version 1.14.2, 2025-07-10, iOS 12 or later) and is the one awareframework.com links to.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "Release dates and minimum iOS versions from the iTunes lookup API (itunes.apple.com/lookup?id=6781949744 and id=1455986181). Calling V3 current is a judgement from its recency and its awareframework bundle ID; AWARE's site has not announced it. The V3 privacy label declares health, location, audio and identifiers as linked to the user, which Apple notes is unverified.",
   "sources": [
    {
@@ -9161,7 +9161,7 @@
   "status": "stated",
   "value": "No platform participant cap is published. One protocol serves any number of participants; with self sign-up by study code the researcher sets the maximum number of participants. Email invitations are one per person.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://carp.dk/new-carp-studies-app/",
@@ -9384,7 +9384,7 @@
   "status": "stated",
   "value": "Via CARP Mobile Sensing sampling packages (own app) or the CARP Studies app: accelerometer (with and without gravity), gyroscope, magnetometer, step events, ambient light (Android), location, activity recognition, Bluetooth and Wi-Fi scans, connectivity, microphone audio and noise, battery, screen events (Android), and on Android only call and SMS logs, installed apps and app usage; calendar; surveys and cognitive tests; Apple Health and Health Connect records. Wearables: Polar accelerometer, gyroscope, magnetometer, ECG, PPI, PPG and HR; Movesense HR, ECG and IMU; Movisens (Android); eSense; Apple Watch via the AWARE watchOS framework. The CARP Studies app collects a subset. CARP Gardener (server side) pulls Fitbit, Garmin, Withings and Dexcom cloud data, which CARP describes as for future studies.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
+  "recheck_by": "2026-11-30",
   "note": "The measure-types table (re-read 2026-10-30, docs/mobile-sensing/measure-types) marks ambient light, screen events, free memory, installed apps, app usage, call logs and SMS as Android only, Bluetooth scans as foreground only on iOS, and the AWARE Apple Watch package as iOS/watchOS only. Wi-Fi is now listed for both Android and iOS; the 2026-10-11 table had it as Android only.",
   "sources": [
    {
@@ -9487,7 +9487,7 @@
   "status": "stated",
   "value": "Configurable per measure in the study protocol. Defaults: accelerometer, gyroscope and magnetometer every 200 ms (5 Hz); ambient light 10 s every 5 min; app heartbeat every 15 min. Data uploads to CAWS every 10 minutes by default. Wearable sampling rates are set by the device SDKs and are not tabulated in the CARP docs.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
+  "recheck_by": "2026-11-30",
   "note": "CARP's own 2025 coverage tests on Android 14 and iOS 18 found both OSes pause or kill the app without user interaction, unless a BLE wearable keeps it running; nominal rates are not achieved coverage.",
   "sources": [
    {
@@ -9574,7 +9574,7 @@
   "status": "stated",
   "value": "Hosted or self-hosted CAWS: Portal Export (JSON), the carp-cli command-line tool and its Python module, the CAWS REST API, and the carp_webservices Dart client. A custom CAMS app can store locally (SQLite or zipped JSON), send to any endpoint through its own data manager, or use Firebase (not yet on API 2.x). Transformer schemas map data to Open mHealth and FHIR.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
+  "recheck_by": "2026-11-30",
   "note": "An open bug (carp.sensing-flutter issue 623, read only) reports that one rejected measurement can make an upload batch retry forever; a fix is proposed in PR 624.",
   "sources": [
    {
@@ -9716,7 +9716,7 @@
   "status": "stated",
   "value": "CAMS API level 2.0 released 2026-04-14 with a redesigned architecture and restructured packages. The CAWS legacy DataPoint upload endpoint and the old informed-consent endpoint are deprecated but still supported. The Firebase data manager has not been updated to API 2.x. The dk.cachet.carp data namespace is to change to carp.dk at an unannounced date. The CARP health plugin dropped Google Fit in version 11.0.0, but the 2026-07-14 \"Three Ways\" post still lists the health package as a Google Fit integration. CARP Studies app version 5 (2026-09-28) replaced the earlier app.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
+  "recheck_by": "2026-11-30",
   "note": "The API 2.0 post date (2026-04-14) is from the carp.dk WordPress API; the GitHub v2.0.0 release was published 2026-04-27.",
   "sources": [
    {
@@ -9842,7 +9842,7 @@
   "status": "stated",
   "value": "CARP Studies is free on the Apple App Store as an unlisted app, reachable only by link (id 1569798025, seller Danmarks Tekniske Universitet, iPhone, iOS 15.0 or later, version 5.1.0 released 2026-10-06, first released 2025-03-21) and on Google Play (dk.cachet.carp_study_app). Version 5, rebuilt from the ground up, was announced for Android and iOS on 2026-09-28.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
+  "recheck_by": "2026-11-30",
   "note": "Version, seller and dates from the iTunes lookup API (id 1569798025, DK storefront) on 2026-10-11. The App Store lists English and Danish; CARP's v5 post says English, Danish and Spanish. Self-hosters and custom-app builders publish their own apps. Until October 2026 carp.dk/join said iOS users in mainland China install through TestFlight; that page was 404 on 2026-10-26 and 2026-10-30 and no current CARP page says this, so the claim was dropped from the value.",
   "sources": [
    {
@@ -11263,7 +11263,7 @@
   "status": "stated",
   "value": "No separate research or academic program. LifeData is itself a paid research platform (EMA, experience sampling, eDiary, eCOA, ePRO) sold as Individual, Team, Enterprise, Clinical and Monitoring subscriptions, with optional paid services such as protocol building, user acceptance testing, audit trails and data analysis consultation.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "Academic pricing and the graduate-student discount are recorded under academic_pricing and program_eligibility. The VA contracts under subscription_price are procurement, not a program.",
   "sources": [
    {
@@ -11288,7 +11288,7 @@
   "status": "stated",
   "value": "No program as such. Sold to academic and commercial customers; Team covers teams and labs of up to 9 users, Enterprise 10+ users. A discount is offered to \"qualifying graduate students\"; the qualifying criteria are not published.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://www.lifedatacorp.com/products-2/",
@@ -11312,7 +11312,7 @@
   "status": "stated",
   "value": "No application or review step is published. Every plan is sold through a scheduled consultation with a LifeData representative; subscriptions are then billed per cycle and auto-renew under the Terms of Use.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://www.lifedatacorp.com/products-2/",
@@ -11336,7 +11336,7 @@
   "status": "stated",
   "value": "Active. Two platform generations run side by side, \"LifeData Original\" (researcher console server.lifedatacorp.com, participant app RealLife Exp) and the rebuilt LifeData+ (console app.lifedatacorp.com, participant app \"LifeData\"), each with its own login.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "The release year of LifeData+ conflicts between the website (2026) and the store listings (2025); see deprecations.",
   "sources": [
    {
@@ -11393,7 +11393,7 @@
   "status": "stated",
   "value": "Caps are by researcher seats, not by approval: Team covers teams and labs of up to 9 users; Enterprise is 10+ users with institutional master subscriptions and department sub-accounts. Participant numbers over the subscription are a pricing input; no participant ceiling per tier is published.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://www.lifedatacorp.com/products-2/",
@@ -11423,7 +11423,7 @@
   "status": "stated",
   "value": "Separate academic and commercial pricing (stated on the Individual plan), with all features included either way, plus a graduate-student discount. The size of the difference is not published. The Clinical and Monitoring plans add eCOA, multi-site support, clinician dashboards and site training.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://www.lifedatacorp.com/products-2/",
@@ -11492,7 +11492,7 @@
   "status": "stated",
   "value": "Three firm-fixed-price U.S. Department of Veterans Affairs awards to LIFEDATA LLC for VA San Diego, through Network Contract Office 22, are on USAspending - a \"LIFEDATA SURVEY SUBSCRIPTION\" contract, an \"ACADEMIC RESEARCH SERVICES\" contract and a \"LIFE DATA RESEARCH\" purchase order. Dollar amounts are in the note (Reported).",
   "confidence": "Reported",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "Reported, scoped to these three VA San Diego awards only; not list prices. The figures sit in numeric JSON fields that quote_probe cannot read, so they are copied from the API responses on 2026-10-11, not quote-checked. (1) 36C26224C0205, \"LIFEDATA SURVEY SUBSCRIPTION\", sole source under FAR 6.302-1, period 2024-05-01 to 2027-04-30, potential end 2029-04-30: total_obligation 18000.0, base_and_all_options 25360.0. Transactions (POST https://api.usaspending.gov/api/v2/transactions/ with this award id): base 3680.0 on 2024-05-01, option year 1 3680.0 on 2025-04-06, a funding-only increase of 3480.0 on 2025-06-23, option year 2 7160.0 on 2026-03-19, and a 0.0 modification on 2026-06-09. (2) 36C26224C0221, \"LIFEDATA ACADEMIC RESEARCH SERVICES\", sole source, 2024-05-30 to 2025-05-29: total_obligation 3480.0 in one action. (3) 36C26223P0320, \"LIFE DATA RESEARCH\", a purchase order under simplified acquisition (FAR 6.302-5(a)(2)(i)), listed period 2023-06-01 to 2024-12-05, potential end 2027-05-31: total_obligation 13920.0, made of four 3480.0 actions (2023-05-25, then options on 2024-05-24, 2025-06-01 and 2026-05-04). The number of researchers or participants each award covers is not stated, so reading these as annual subscription prices is inference.",
   "sources": [
    {
@@ -11533,7 +11533,7 @@
   "status": "stated",
   "value": "Academic pricing exists (amount not published) and qualifying graduate students get a discount (size not published).",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "The VA San Diego \"ACADEMIC RESEARCH SERVICES\" award (subscription_price, scoped entry) is one price actually paid by a federal research customer; it is not a published academic rate.",
   "sources": [
    {
@@ -11558,7 +11558,7 @@
   "status": "stated",
   "value": "Platform access is the subscription itself, which includes all study-builder features, the native apps, support, \"easy and unlimited data access\" and dashboards, with multiple projects at no extra cost. Add-on services (protocol building, user acceptance testing, dashboard development, audit trails, data analysis consultation) are paid extras with unpublished prices.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "No API is documented, so there is no API fee to record.",
   "sources": [
    {
@@ -11589,7 +11589,7 @@
   "status": "stated",
   "value": "Subscriptions are sold in half-year and annual terms, billed per cycle and auto-renewing; fees are non-refundable except as the terms or law provide. No shorter term is advertised.",
   "confidence": "Corroborated",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "The half-year and annual wording is on the Individual plan card; terms for the other plans are not stated. That six months is the minimum is inferred from the absence of anything shorter, hence Corroborated.",
   "sources": [
    {
@@ -11614,7 +11614,7 @@
   "status": "stated",
   "value": "Yes. No prices are published; every plan routes to a consultation with a LifeData representative.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://www.lifedatacorp.com/products-2/",
@@ -11665,7 +11665,7 @@
   "status": "stated",
   "value": "Active data only: timestamped EMA, ESM and eDiary responses across 13 question types (including media uploads), with GPS coordinates captured once per response when the participant allows location. No passive smartphone sensing and no wearable, HealthKit or Health Connect integration is documented. Route: the web study builder and data download.",
   "confidence": "Corroborated",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "The absence of passive sensing and wearables comes from searching the site (sensor, wearable, Fitbit, passive return only blog literature roundups); the gated help centre cannot rule out an undocumented option, so Corroborated. Published deployments that wanted continuous location or wearables ran a separate app alongside (Google Maps Timeline in the JAMA Netw Open 2025 study cited; Fitbit and Oura in others found by the gap hunter). The LifeData+ App Store privacy label lists \"Audio Data\" and \"Health Fitness\"; the console's question types include video responses but no audio or sensor type, so the label most likely covers video sound and survey answers. That reading is inference.",
   "sources": [
    {
@@ -11709,7 +11709,7 @@
   "status": "stated",
   "value": "Study-defined scores computed from responses (usable in display logic), response-rate and engagement monitoring, session metadata in the export, and real-time dashboards for individuals and groups. No sensor-derived or behavioural features.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://www.lifedatacorp.com/",
@@ -11745,7 +11745,7 @@
   "status": "stated",
   "value": "Event-based, not continuous. Prompts follow fixed, random, triggered or event-based schedules set by the researcher; GPS is captured once per response, not at a fixed rate; notification delivery and response timestamps are recorded to the millisecond.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://www.lifedatacorp.com/features/",
@@ -11769,7 +11769,7 @@
   "status": "stated",
   "value": "All study data stays downloadable for the life of the subscription. After cancellation or lapse it can be retrieved on request for 180 days, then it is permanently deleted. Accounts inactive for over 12 months may be terminated and their content deleted.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://www.lifedatacorp.com/products-2/",
@@ -11799,7 +11799,7 @@
   "status": "stated",
   "value": "File download from the web app as .csv in multiple layouts (including layouts for multilevel modelling, ready for R, Stata, SPSS and Python), plus media files; real-time dashboards. No API, SDK, webhook or streaming route is documented.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "The LifeData+ console builds exports as data requests per session type (Startup, Check-in, Notification, Closeout), seen in its public JavaScript by the gap hunter; that is a UI backend, not a documented API. One field study (JMIR Form Res 2026, PMC13392534) settled questions about exported fields with the vendor before enrolment, because the export documentation is behind the help-centre login.",
   "sources": [
    {
@@ -11852,7 +11852,7 @@
   "status": "stated",
   "value": "Data is permanently deleted 180 days after account cancellation or subscription end. Studies or participant data deleted by the researcher in the web app are kept for no more than 30 days. Accounts with no activity for over 12 months may be terminated and their content deleted. A participant deleting a study on the phone does not delete server data. Storage is on US servers.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "The privacy policy is dated December 12, 2024; the terms carry an effective date of December 12, 2014. The LifeData+ Google Play data-safety section (listing updated Oct 8, 2026) now declares that the app may share \"Device or other IDs\" with third parties, for app functionality and analytics; the profile recorded this app as sharing nothing. The RealLife Exp listing declares sharing \"App info and performance\".",
   "sources": [
    {
@@ -11895,7 +11895,7 @@
   "status": "stated",
   "value": "No term names AI, machine learning or model training. The general use clause excludes non-public study content (prompts and responses) from internal analysis to improve the services, while public study data and anonymized study metadata may be used to create new services, features or content. Whether this governs model training is not stated.",
   "confidence": "Corroborated",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "Neither the terms (effective December 12, 2014) nor the privacy policy (December 12, 2024) mentions AI or ML. Corroborated because applying a 2014 general-use clause to model training is interpretation.",
   "sources": [
    {
@@ -11957,7 +11957,7 @@
   "status": "stated",
   "value": "Proprietary, closed-source SaaS. The terms grant no ownership of the services and bar reverse engineering; no source repository or open licence exists.",
   "confidence": "Corroborated",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "No GitHub organization (api.github.com/orgs/lifedatacorp returns 404) and no repository for LifeData or RealLife Exp found. Corroborated because closed source is inferred from the terms plus that absence.",
   "sources": [
    {
@@ -11982,7 +11982,7 @@
   "status": "stated",
   "value": "Vendor-hosted SaaS only, on servers in the United States; no self-hosting or on-premises option is published. The privacy policy names Microsoft as an example web hosting service.",
   "confidence": "Corroborated",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "Corroborated because \"no self-hosting\" is an absence across the product, features and legal pages rather than a stated exclusion.",
   "sources": [
    {
@@ -12014,7 +12014,7 @@
   "status": "stated",
   "value": "RealLife Exp, free, on iOS (App Store id939951918, first released 2015-01-03, v2.8.14 of 2026-04-06, iOS 13.0 or later) and Android (com.lifedata.reallife_exp, 10K+ downloads). Seller LIFEDATA LLC. Studies in this generation are called LifePaks.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "Release date, version and minimum iOS are from the iTunes lookup API (itunes.apple.com/lookup?id=939951918) on 2026-10-11. The literature sometimes misnames the app \"Realtime EXP\" (for example doi:10.1016/j.beth.2025.05.007).",
   "sources": [
    {
@@ -14752,7 +14752,7 @@
   "status": "stated",
   "value": "mindLAMP Core (also called Core Services), run by the BIDMC Division of Digital Psychiatry: the supported deployment pathway for mindLAMP. It covers study design consultation, protocol optimisation, privacy-aware configuration, hosting (shared or dedicated BIDMC instance, or support for self-hosting), onboarding and training, data monitoring, Cortex analytics support, troubleshooting and optional custom development. It is a paid service under a business agreement, not a free access program; the team offers letters of support for grants. The code itself is public, and self-hosting outside the Core needs no program (but see licence).",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "The Get Started FAQ answers are rendered by JavaScript, so they are read from the page's source file in the LAMP-platform repository (src/pages/get-started.tsx), whose text matched the deployed Docusaurus chunk on 2026-10-11. The chunk's hashed file name changes on every rebuild and is not used. The older LAMP Consortium was retired from the docs in favour of the Core interest form (see program_status); the App Store listing still says the app is used by members of the mindLAMP consortium.",
   "sources": [
    {
@@ -14791,7 +14791,7 @@
   "status": "stated",
   "value": "Research groups and clinical programs; the Core page names clinical research studies, grant-funded projects, clinical care programs, international and multi-site deployments, and first-time users. Individuals cannot start a project; they use mindLAMP only by enrolling in a project or clinic that runs it (or a limited Self Help mode), and the store listings say people outside a partner study or clinic cannot access the app. No sector or country restriction is published.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://www.digitalpsych.org/mindlamp-core",
@@ -14828,7 +14828,7 @@
   "status": "stated",
   "value": "The Core interest form (a Notion form linked from docs.lamp.digital/get-started) is the only route in. A Core team member reviews it within a few business days and books a free consultation call; BIDMC then issues a tailored proposal with scope, deployment option and pricing. A business agreement is required after that first phase, before configuration, onboarding and staff training.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://www.digitalpsych.org/mindlamp-core",
@@ -14859,7 +14859,7 @@
   "status": "stated",
   "value": "Active as of 2026-10-11. The Core takes new projects through the interest form, the docs site carries a running updates blog (posts to July 2026), and the server, dashboard and both app repositories were pushed on 2026-10-08. The LAMP Consortium pages were removed from the docs (LAMP-platform PR 930, merged October 2025) and the community forum was archived; mindlamp.discourse.group no longer resolves (NXDOMAIN, 2026-10-11). The Core interest form is the only intake route.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "Adoption figures disagree and none is a decision fact: 50+ active sites (Core page); 65 sites, 42 projects, 17 countries (AWS for Industries blog, 2026-09-29, co-written by the BIDMC team); 36 projects in 16 countries, 9 active (docs project gallery, docs.lamp.digital/projects). The forum shutdown was seen by DNS lookup; LAMP-platform PR 891 (March 2025) says the forum was archived for lack of use.",
   "sources": [
    {
@@ -14884,7 +14884,7 @@
   "status": "stated",
   "value": "No registration-based developer program. The REST API (OpenAPI spec), SDKs and server code are public on GitHub (BIDMCDigitalPsychiatry); anyone with credentials on a LAMP server can use the API (api.lamp.digital for the BIDMC-hosted server). Access to the hosted service follows from a Core agreement and the credentials issued for a project.",
   "confidence": "Corroborated",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "Corroborated because \"no program\" is inferred from the absence of any developer sign-up page. Programmatic access will move to API keys with the authentication upgrade (see deprecations). The server repository carries no licence file (see licence).",
   "sources": [
    {
@@ -15025,7 +15025,7 @@
   "status": "stated",
   "value": "No fee for the code, API or SDKs. Using the BIDMC Core (hosting, configuration, support, custom development) is priced per project by quote, depending on participants, sites, duration and custom development; the first consultation is free.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://docs.lamp.digital/privacy",
@@ -15077,7 +15077,7 @@
   "status": "stated",
   "value": "Yes for Core-hosted or Core-supported projects, including hosting; pricing comes in a tailored proposal after the interest form and a free consultation. Self-hosting the public code involves no quote.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://www.digitalpsych.org/mindlamp-core",
@@ -15132,7 +15132,7 @@
   "status": "stated",
   "value": "Estimated monthly AWS cost borne by the self-hosting institution: about $35 for a small clinic (~15 participants, active data only), about $100 for a small study (~50 participants, active and passive), about $1,500 for a large study (200+ participants, active, passive and ML). Not a BIDMC fee.",
   "confidence": "Reported",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "Reported at most. The page is marked draft and is not published on docs.lamp.digital; it is readable only in the public source repository. These are infrastructure estimates, not a price.",
   "sources": [
    {
@@ -15159,7 +15159,7 @@
   "status": "stated",
   "value": "Raw, timestamped sensor events from 9 phone sensors (GPS as raw unhashed coordinates, accelerometer, device motion, device state, steps, nearby devices, telephony, analytics, activity recognition) and 10 HealthKit or Health Connect types (sleep, heart rate, HRV, respiratory rate, blood pressure, blood glucose, oxygen saturation, body temperature, workouts, nutrition); wearables are reached only through HealthKit or Health Connect. Apple SensorKit adds app usage, text message metadata and visit types on enrolled iOS research devices. Text-message features come only from iOS SensorKit; the Android app requests no call-log or SMS permission. Active data: surveys, cognitive games, voice recordings. The web version collects no passive data. Retrieved by REST API, SDKs, Cortex or the dashboard Data Portal.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "The Android manifest on master (read 2026-10-11) requests READ_PHONE_STATE but neither READ_CALL_LOG nor READ_SMS, so Android telephony is call-state events, not a call log; no quote because this is an absence. The AWS blog (2026-09-29) says call and text logs sync from the phone, which overstates this. Survey branching can be configured in the dashboard but does nothing when participants take a survey (known issue in the dashboard release notes, 2026.08.05.3, 2026-09-21); no schema field fits, so it is recorded here.",
   "sources": [
    {
@@ -15220,7 +15220,7 @@
   "status": "stated",
   "value": "Cortex, the open-source Python package (lamp-cortex, BSD-3-Clause, still maintained), turns raw events into primary features (significant locations, trips, screen-on bouts) and daily secondary features (home time, location entropy, trip distance, screen duration, step count, call counts, HealthKit sleep duration, data quality and more). Text, unlock, app-time and visit features need iOS SensorKit, which requires an Apple-approved research study. Researchers run Cortex themselves against a LAMP server, or the Core runs default or custom analysis.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "The profile calls Cortex legacy and LAMP-toolkit its successor; the current docs, Core page and AWS blog all present Cortex as the analytics layer, and the repository was pushed 2026-05-18. A new repository, LAMP-raphe (created 2026-09-29, no licence file), describes a phenotyping framework that can run Cortex as one feature engine; not otherwise checked.",
   "sources": [
    {
@@ -15251,7 +15251,7 @@
   "status": "stated",
   "value": "Accelerometer default 5 Hz (maximum 5 Hz); GPS default 1 Hz (maximum 5 Hz), but OS throttling means background GPS often arrives at roughly 0.1 Hz or less. Rates are set at the sensor-spec level through the API; the dashboard Sensors tab only turns sensors on or off. Other sensors are event-driven or interval-reported.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://docs.lamp.digital/sensors-data/configuration",
@@ -15293,7 +15293,7 @@
   "status": "stated",
   "value": "No look-back limit is documented. Queries take arbitrary from/to timestamps (Unix milliseconds) and return up to 1,000 events per request by default, so long ranges are paged by time window. How long a hosted project's data is kept, and how far back HealthKit or Health Connect history is read at first sync, are not documented.",
   "confidence": "Corroborated",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "Corroborated because \"all stored data is retrievable\" follows from the API design and the absence of a stated limit, not from a statement. Retention depends on the deployment (see retention_terms).",
   "sources": [
    {
@@ -15318,7 +15318,7 @@
   "status": "stated",
   "value": "REST API (api.lamp.digital on the hosted service; OpenAPI spec at docs.lamp.digital/api); Python SDK (LAMP-py, the primary and most maintained), JavaScript SDK, R via reticulate; JSONata queries run on the server; Cortex for features; and the dashboard Data Portal (ad-hoc queries and CSV export; older and not actively updated). Self-hosters also have direct database access.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "Scripts that sign in with a username and password will stop working when the authentication upgrade is released (see deprecations).",
   "sources": [
    {
@@ -15355,7 +15355,7 @@
   "status": "stated",
   "value": "No request-rate limit is published. The only documented limit is 1,000 entries per request for sensor-event queries; larger pulls use from/to time ranges.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "The unreleased server code merged on 2026-09-30 creates API keys with a cap of 1,000 requests per key per rate-limit window; the window is left to the auth library's default. Reported only, since that code is not in a release and its deployment on the BIDMC server has not been announced.",
   "sources": [
    {
@@ -15465,7 +15465,7 @@
   "status": "stated",
   "value": "Phase 1 (dashboard picks the server by button) went live 2026-07-29. The next phase moves from Basic auth to server-side sessions, makes 2FA or OAuth mandatory for all staff, and replaces username and password in LAMP-py with API keys; scripts that sign in with a password will stop working after the release. The server code was merged on 2026-09-30 (LAMP-server PR 284) but is not released: the newest LAMP-server release is 2023.7.27. No release date has been announced. Self-hosted servers are unaffected until upgraded, and the upgrade is offered through the Core services process.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "Merge date (2026-09-30) and release list read from the GitHub API on 2026-10-11. Mobile upgrade builds were in dev testing against a Basic-auth 2023.7.27 dev server (LAMP-platform issue 944). The blog's \"later this summer\" has passed without a release.",
   "sources": [
    {
@@ -15515,7 +15515,7 @@
   "status": "stated",
   "value": "Sensor identifiers superseded (old data stays in historical records): gyroscope and magnetometer into device_motion, screen_state into device_state, calls and sms into telephony, bluetooth and wifi into nearby_device; distance, flights, weight and height removed. Some Cortex features replaced (for example sms_number). The v1 app (LAMP-app) and v1 backend (LAMP-portal) are deprecated and archived. The Data Portal UI is no longer actively updated. No dates are given.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://docs.lamp.digital/sensors-data/data",
@@ -15546,7 +15546,7 @@
   "status": "stated",
   "value": "AGPL-3.0-only since a relicensing commit on 2026-08-05 (previously BSD 3-Clause; copies obtained earlier stay under BSD 3-Clause). Anyone running a modified dashboard over a network must offer its source.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "Date from the commit history (LAMP-dashboard commit 8e6ad0f0, 2026-08-05). The privacy page's \"no licensing restrictions\" also sits awkwardly with a copyleft licence here.",
   "sources": [
    {
@@ -15574,7 +15574,7 @@
   "status": "stated",
   "value": "BSD 3-Clause (each repository's licence file and GitHub's licence detection, 2026-10-11).",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "LAMP-swift, LAMP-kotlin, LAMP-app-gateway and LAMP-protocol from the GitHub API licence field only.",
   "sources": [
    {
@@ -15639,7 +15639,7 @@
   "status": "stated",
   "value": "Three models, arranged through a Core agreement: (1) the shared BIDMC-hosted instance; (2) a dedicated, isolated instance hosted and maintained by BIDMC; (3) self-hosting on the institution's own infrastructure (its own AWS account or elsewhere) using Docker containers, with Core documentation and support. BIDMC hosting runs on AWS (ECS Fargate, DocumentDB); the region is not stated. The newest released server is 2023.7.27, and the public self-hosting guides are unpublished drafts.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "The AWS blog is co-written by the BIDMC team but published by AWS, so typed secondary; it says each site stands up its own instance, while the docs present shared Core hosting as the default. Self-hosted teams stay on the 2023.7.27 server unless they upgrade through the Core (see deprecations). No third-party managed hosting found.",
   "sources": [
    {
@@ -15683,7 +15683,7 @@
   "status": "stated",
   "value": "\"mindLAMP 2\", free, iPhone, iPad and Apple Watch, developer listed as John Torous. The public build is 2023.5.2 (26 May 2023) plus an Apple-made watchOS 27 compatibility rebuild; newer iOS builds (2025.4.2) go to testers through TestFlight only. Usable only with credentials from an enrolled study or clinic.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "The iTunes lookup API (itunes.apple.com/lookup?id=1495947054) gives version 2023.5.2, released 2023-05-26, seller John Torous. Issue 944 distributes 2025.4.2 builds by TestFlight for dev testing of the authentication upgrade. The docs FAQ says iOS 14+.",
   "sources": [
    {
@@ -15721,7 +15721,7 @@
   "status": "stated",
   "value": "\"mindLAMP 2\" (digital.lamp.mindlamp), free, developer listed as John Torous, 1K+ downloads, updated 17 May 2026, with a WearOS companion app. Android 8+ per the docs FAQ. The listing says only people in a partner study or clinic can access it. A web version runs without passive sensing.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-10",
+  "recheck_by": "2026-11-30",
   "note": "Self-hosted teams use the same store apps pointed at their own server.",
   "sources": [
    {
@@ -22482,7 +22482,7 @@
   "status": "stated",
   "value": "No developer program or registration is needed. The device communication is documented and a C device API (libOMAPI) can be used to build custom configuration and download software; firmware, software and file-format readers are open source under a BSD 2-clause licence. A third-party R wrapper, axR (Circadia Lab, r-universe), exposes device discovery, configuration and download from R.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
+  "recheck_by": "2026-11-30",
   "note": "The API is a local USB device API, not a cloud web API. axR is third-party, published on r-universe (v0.1.3), not on CRAN.",
   "sources": [
    {
@@ -22546,7 +22546,7 @@
   "status": "stated",
   "value": "Axivity publishes no academic vs commercial distinction. Everyone pays the same list prices and gets the same BSD 2-clause software. One third-party analysis package the Open Movement docs point to, Oxford's biobankAccelerometerAnalysis, is under an Academic Use Licence that excludes commercial users, and it cannot read AX6 data.",
   "confidence": "Corroborated",
-  "recheck_by": "2026-11-09",
+  "recheck_by": "2026-11-30",
   "note": "The absence of an academic price tier is inferred from the store and FAQ showing none; no page states it outright. GGIR remains the open option for commercial users and AX6 data.",
   "sources": [
    {
@@ -22583,7 +22583,7 @@
   "scope": "AX3",
   "value": "AX3 puck GBP 139.00, or GBP 149.00 with wrist band (ex VAT). Cable not included (micro USB cable GBP 3.50).",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
+  "recheck_by": "2026-11-30",
   "note": "Price rose GBP 10 during 2025: the AX3 puck was GBP 129.00 ex VAT in an Internet Archive capture of 2025-01-04 (web.archive.org/web/20250104090451/https://axivity.com/product/ax3) and GBP 139.00 by 2026-01-25. Third-party guides still quote GBP 129. The shipping page says \"Prices include VAT where applicable\" while the product pages say ex VAT. Postage is extra and international buyers pay customs duties.",
   "sources": [
    {
@@ -22615,7 +22615,7 @@
   "scope": "AX6",
   "value": "AX6 puck GBP 199.00, or GBP 209.00 with wrist band (ex VAT). Cable not included.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
+  "recheck_by": "2026-11-30",
   "note": "Price rose GBP 10 during 2025: the AX6 puck was GBP 189.00 ex VAT in an Internet Archive capture of 2024-09-13 (web.archive.org/web/20240913171031/https://axivity.com/product/ax6) and GBP 199.00 by 2025-12-10 (web.archive.org/web/20251210225700/https://axivity.com/product/ax6).",
   "sources": [
    {
@@ -22759,7 +22759,7 @@
   "status": "stated",
   "value": "No for standard purchases. List prices are published and orders go through the web store. No quote route for volume or academic pricing is published.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://axivity.com/products",
@@ -22783,7 +22783,7 @@
   "status": "stated",
   "value": "Raw, unfiltered triaxial acceleration (AX3: Analog Devices ADXL345; AX6: Bosch BMI160) plus triaxial gyroscope on the AX6, each block timestamped. Both devices also always record low-rate auxiliary channels: light level, internal device temperature and battery voltage. All stored raw on device flash in the open .CWA format and read over USB by the researcher. No vendor cloud.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
+  "recheck_by": "2026-11-30",
   "note": "Temperature is internal device temperature (affected by skin, coupling and environment), mainly for accelerometer auto-calibration; light reads through the case and is a relative indicator, not calibrated lux. GitHub issue 11 records that OmGui, cwa-convert and the Axivity help pages had used different temperature conversion formulas; the maintainer settled the correct one in July 2023, and absolute readings from the old formula need converting. No PPG, ECG or heart rate.",
   "sources": [
    {
@@ -22850,7 +22850,7 @@
   "status": "stated",
   "value": "The device stores raw data only and computes nothing. OmGui (through omconvert) has built-in, open analysis run by the researcher locally, which derives signal vector magnitude epochs, MET cut-point time in activity intensity bands, wear-time validation and a simple sleep-period detector. Richer metrics come from third-party open-source tools the docs recommend, chiefly GGIR.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
+  "recheck_by": "2026-11-30",
   "note": "These are published, open algorithms run on the researcher's own computer, not proprietary vendor metrics. No step count is offered. biobankAccelerometerAnalysis is academic-use only and does not read AX6 files (see academic_vs_commercial).",
   "sources": [
    {
@@ -22906,7 +22906,7 @@
   "scope": "AX3",
   "value": "Accelerometer 12.5 to 3200 Hz configurable, range +/-2/4/8/16 g, 10-bit packed or 13-bit unpacked modes. OmGui default is 100 Hz, +/-8 g.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
+  "recheck_by": "2026-11-30",
   "note": "The sensor keeps its own timing, so the actual rate varies slightly from the nominal rate; resample if a fixed rate is needed.",
   "sources": [
    {
@@ -22932,7 +22932,7 @@
   "scope": "AX6",
   "value": "Accelerometer and gyroscope 12.5 to 1600 Hz configurable; gyroscope +/-125 to 2000 dps.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
+  "recheck_by": "2026-11-30",
   "sources": [
    {
     "url": "https://axivity.com/product/ax6",
@@ -23020,7 +23020,7 @@
   "scope": "AX6",
   "value": "About 7 days at 100 Hz with gyroscope; 31+ days at 50 Hz and up to 140 days at 12.5 Hz accelerometer only. No vendor-side history.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
+  "recheck_by": "2026-11-30",
   "note": "The Open Movement FAQ gives 7 to 9 days with gyroscope and marks low-rate accelerometer-only figures as uncertain.",
   "sources": [
    {
@@ -26693,7 +26693,7 @@
   "scope": "APIs",
   "value": "Legacy Fitbit Web API: support ended September 30, 2026; turned off November 2, 2026, together with the Fitbit OAuth endpoints, after which requests return HTTP 410 Gone. The date moved twice: from September 30 to October 30 (reportedly for CASA delays), then to November 2 (About page updated 2026-10-23). Tokens do not carry over, so every user re-consents through Google OAuth. Friends endpoints deprecated May 6, 2026 with no successor. Fitbit Ace devices are not supported by the Google Health API. v4beta features (from October 1, 2026) may change before v4. Fitabase warns of sync brown-outs during the transition.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
+  "recheck_by": "2026-11-30",
   "note": "Fitabase asks for participants to be reconnected by October 31, one day after Google's turn-off date; Google's date governs.",
   "sources": [
    {
@@ -27693,7 +27693,7 @@
   "status": "stated",
   "value": "Health SDKs (Bluetooth to the study's own app): real-time streams and configurable on-device logging of accelerometer, gyroscope, Enhanced Beat-To-Beat Intervals, heart rate, Pulse Ox, respiration and actigraphy. Health API (cloud): summaries plus Enhanced Beat-To-Beat Interval (Enterprise Access only), no raw accelerometer. Connect IQ apps read motion sensors on the watch",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
+  "recheck_by": "2026-11-30",
   "note": "Raw PPG and ECG traces are not listed for any route. Per-device availability of SDK streams varies by device family.",
   "sources": [
    {
@@ -33487,7 +33487,7 @@
   "scope": "Institutional collaborations and the Samsung research platform (via Alcedis)",
   "value": "Samsung also runs direct research collaborations with chosen institutions, with no published application route: the Open Innovation Initiative (announced October 2023 at SDC23) and named studies with Stanford (sleep apnoea), Tulane and Huma (HEARTBEAT), UCSF Neuroscape (cognition, announced July 2026) and MGH (GLP-1 and body composition, May 2026). In June 2026 Samsung announced a partnership with Alcedis, a CRO owned by Huma, offering \"Samsung's research platform\" (study setup, biosensor control, participant- and device-level biosensor data) with Alcedis running study execution. No sign-up, eligibility or pricing for it is published.",
   "confidence": "Corroborated",
-  "recheck_by": "2026-11-09",
+  "recheck_by": "2026-11-30",
   "note": "Corroborated rather than Verified because several of the named studies rest on press coverage, and no program terms are published. The Alcedis release is cited from Samsung's newsroom (read in a browser and by the fetcher on 2026-10-10; it had timed out for the fetcher earlier the same day). The UCSF study targets 200 adults per decade aged 40 to 89 over one year. Whether the Alcedis platform is Research Stack, the Sensor SDK or something new is not stated. Treat this as an invitation or sponsor route, not an open program.",
   "sources": [
    {
@@ -33663,7 +33663,7 @@
   "scope": "Samsung research platform (via Alcedis)",
   "value": "Announced 24 June 2026 as a new partnership; no later status found.",
   "confidence": "Verified",
-  "recheck_by": "2026-11-09",
+  "recheck_by": "2026-11-30",
   "note": "Date and wording from Samsung's newsroom release of 24 June 2026.",
   "sources": [
    {

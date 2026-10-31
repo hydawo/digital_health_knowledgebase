@@ -60,7 +60,7 @@ facts:
     quote: If you plan to conduct actual field research with real participants, upgrading to the full license is
       necessary.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
 - field: program_eligibility
   status: stated
   value: Open self sign-up for a researcher account (name, organization, email, password; email must be verified before
@@ -117,7 +117,7 @@ facts:
     type: vendor_docs
     quote: Build the study app and assign the Bundle ID
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
 - field: program_status
   status: stated
   value: Active. Self sign-up and the free Trial are open and weekly release notes continue (latest read 2026-10-06).
@@ -132,7 +132,7 @@ facts:
     type: vendor_page
     quote: The name Ethica will be dropped by July 2024.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
 - field: developer_program_status
   status: stated
   value: No public self-serve developer program. A Data Export API exists and is documented in a how-to article (posted
@@ -149,7 +149,7 @@ facts:
     type: vendor_page
     quote: As a researcher, I want to access and utilize API calls for exporting study data
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: The roadmap card predates the how-to article. It most likely covers a fuller, OpenAPI-style API, but the card
     does not say so, and its To Do status has not been updated since the API article appeared.
 - field: user_cap
@@ -163,7 +163,7 @@ facts:
     quote: The trial version is free of charge, allowing full access to the default features without any restrictions
       (e.g., number of participants).
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
 - field: academic_vs_commercial
   status: not_public
   confidence: Verified
@@ -406,7 +406,7 @@ facts:
     type: vendor_docs
     quote: Garmin Health records are provided in 15-minute time slices.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
 - field: history_depth
   status: stated
   value: Data is collected from study participation onward; Fitbit daily summaries dated before the study start are
@@ -423,7 +423,7 @@ facts:
     type: vendor_docs
     quote: any data collected now will be available for export approximately 30 hours later
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: Only the Fitbit exclusion is stated outright; the absence of backfill for other sources is inferred from the
     documentation, hence Corroborated.
 - field: export_routes
@@ -469,7 +469,7 @@ facts:
     quote: Currently, we do not provide direct database access for researchers unless the service is being self-hosted,
       for example, on an on-premise cluster.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: 'Documented: sensor-data export through the API, with the create, status and download steps. Inferred, not
     documented: the open-source NiDB importer (commits to 2026-08-27) also POSTs a JSON "PARTICIPATION" filter to
     /api/v1/filter/export/ to export survey participation records, so the same endpoint evidently accepts more than
@@ -562,7 +562,7 @@ facts:
     quote: Fitbit accounts are being replaced by Google Accounts, and participants still signed in with a legacy Fitbit
       account can no longer sync their device.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
 - field: licence
   status: stated
   value: Proprietary, closed source. The terms say all service software is the property of Avicenna Research or its

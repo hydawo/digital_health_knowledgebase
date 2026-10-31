@@ -512,7 +512,7 @@ facts:
     type: vendor_docs
     retrieved: '2026-10-10'
     quote: Get the maximum sample rate supported for given sensor data type.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-30'
   note: Raw PPG and ECG traces are not listed for any route. Per-device availability of SDK streams varies by device family.
 - field: derived_metrics
   status: stated

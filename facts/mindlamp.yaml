@@ -68,7 +68,7 @@ facts:
     type: vendor_page
     quote: Custom development is available as part of a Core Services agreement.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: The Get Started FAQ answers are rendered by JavaScript, so they are read from the page's source file in the
     LAMP-platform repository (src/pages/get-started.tsx), whose text matched the deployed Docusaurus chunk on
     2026-10-11. The chunk's hashed file name changes on every rebuild and is not used. The older LAMP Consortium was
@@ -101,7 +101,7 @@ facts:
     type: app_store
     quote: If you are not part of a partner study or clinic, you will not be able to access the app.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
 - field: program_application
   status: stated
   value: 'The Core interest form (a Notion form linked from docs.lamp.digital/get-started) is the only route in. A Core
@@ -126,7 +126,7 @@ facts:
     quote: The Core requires a business agreement (established after Phase 1) to support teams throughout their project
       timeline
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
 - field: program_status
   status: stated
   value: Active as of 2026-10-11. The Core takes new projects through the interest form, the docs site carries a
@@ -144,7 +144,7 @@ facts:
     type: repository
     quote: Removing consortium,  publications/users, and adding new interest form
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: 'Adoption figures disagree and none is a decision fact: 50+ active sites (Core page); 65 sites, 42 projects, 17
     countries (AWS for Industries blog, 2026-09-29, co-written by the BIDMC team); 36 projects in 16 countries, 9 active
     (docs project gallery, docs.lamp.digital/projects). The forum shutdown was seen by DNS lookup; LAMP-platform PR 891
@@ -169,7 +169,7 @@ facts:
     type: vendor_docs
     quote: If using the default hosted server, use api.lamp.digital .
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: Corroborated because "no program" is inferred from the absence of any developer sign-up page. Programmatic
     access will move to API keys with the authentication upgrade (see deprecations). The server repository carries no
     licence file (see licence).
@@ -254,7 +254,7 @@ facts:
       development needs. We provide detailed quotes after an initial consultation to understand your specific needs.
       The consultation itself is free.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
 - field: minimum_commitment
   status: not_public
   confidence: Verified
@@ -285,7 +285,7 @@ facts:
     type: vendor_page
     quote: We provide detailed quotes after an initial consultation to understand your specific needs.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
 - field: hosting_price
   scope: BIDMC Core hosting (shared or dedicated instance)
   status: not_public
@@ -321,7 +321,7 @@ facts:
     type: repository
     quote: '| Large study | 200+ | Active + passive + ML | ~$1,500 |'
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: Reported at most. The page is marked draft and is not published on docs.lamp.digital; it is readable only in
     the public source repository. These are infrastructure estimates, not a price.
 # ---------------- Data access and terms ----------------
@@ -375,7 +375,7 @@ facts:
     type: repository
     quote: Survey branching settings remain configurable but inert at runtime
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: The Android manifest on master (read 2026-10-11) requests READ_PHONE_STATE but neither READ_CALL_LOG nor
     READ_SMS, so Android telephony is call-state events, not a call log; no quote because this is an absence. The AWS
     blog (2026-09-29) says call and text logs sync from the phone, which overstates this. Survey branching can be
@@ -403,7 +403,7 @@ facts:
     type: vendor_page
     quote: The CORE can run default or custom analysis on your data.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: The profile calls Cortex legacy and LAMP-toolkit its successor; the current docs, Core page and AWS blog all
     present Cortex as the analytics layer, and the repository was pushed 2026-05-18. A new repository, LAMP-raphe
     (created 2026-09-29, no licence file), describes a phenotyping framework that can run Cortex as one feature engine;
@@ -435,7 +435,7 @@ facts:
     type: vendor_docs
     quote: actual data arrives at roughly 0.1 Hz or less.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
 - field: history_depth
   status: stated
   value: No look-back limit is documented. Queries take arbitrary from/to timestamps (Unix milliseconds) and return up
@@ -451,7 +451,7 @@ facts:
     type: vendor_docs
     quote: Results are limited to 1000 entries per request.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: Corroborated because "all stored data is retrievable" follows from the API design and the absence of a stated
     limit, not from a statement. Retention depends on the deployment (see retention_terms).
 - field: export_routes
@@ -478,7 +478,7 @@ facts:
     type: vendor_docs
     quote: The Data Portal UI is an older feature that has not been actively updated.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: Scripts that sign in with a username and password will stop working when the authentication upgrade is
     released (see deprecations).
 - field: rate_limits
@@ -496,7 +496,7 @@ facts:
     type: repository
     quote: 'rateLimitMax: 1000,'
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: The unreleased server code merged on 2026-09-30 creates API keys with a cap of 1,000 requests per key per
     rate-limit window; the window is left to the auth library's default. Reported only, since that code is not in a
     release and its deployment on the BIDMC server has not been announced.
@@ -601,7 +601,7 @@ facts:
     type: repository
     quote: 2023.7.27
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: Merge date (2026-09-30) and release list read from the GitHub API on 2026-10-11. Mobile upgrade builds were in
     dev testing against a Basic-auth 2023.7.27 dev server (LAMP-platform issue 944). The blog's "later this summer" has
     passed without a release.
@@ -628,7 +628,7 @@ facts:
     type: vendor_docs
     quote: 'The following features have been replaced: sms_number'
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
 - field: licence
   scope: LAMP-dashboard
   status: stated
@@ -647,7 +647,7 @@ facts:
     quote: Prior to this release, LAMP Dashboard was distributed under the BSD 3-Clause License. Copies obtained under
       that license remain governed by its terms.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: Date from the commit history (LAMP-dashboard commit 8e6ad0f0, 2026-08-05). The privacy page's "no licensing
     restrictions" also sits awkwardly with a copyleft licence here.
 - field: licence
@@ -671,7 +671,7 @@ facts:
     type: repository
     quote: BSD 3-Clause License
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: LAMP-swift, LAMP-kotlin, LAMP-app-gateway and LAMP-protocol from the GitHub API licence field only.
 - field: licence
   scope: LAMP-server, LAMP-core-ios, LAMP-core-android, LAMP-activities, LAMP-worker
@@ -730,7 +730,7 @@ facts:
     quote: 'Amazon DocumentDB : The primary data store for mindLAMP data, with AWS handling backups, replication, and
       failover.'
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: The AWS blog is co-written by the BIDMC team but published by AWS, so typed secondary; it says each site stands
     up its own instance, while the docs present shared Core hosting as the default. Self-hosted teams stay on the
     2023.7.27 server unless they upgrade through the Core (see deprecations). No third-party managed hosting found.
@@ -758,7 +758,7 @@ facts:
     type: repository
     quote: 2025.4.2 (509)
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: The iTunes lookup API (itunes.apple.com/lookup?id=1495947054) gives version 2023.5.2, released 2023-05-26,
     seller John Torous. Issue 944 distributes 2025.4.2 builds by TestFlight for dev testing of the authentication
     upgrade. The docs FAQ says iOS 14+.
@@ -787,7 +787,7 @@ facts:
     type: vendor_page
     quote: mindLAMP supports iOS (14+) and Android (8+), with companion apps for Apple Watch and WearOS devices.
     retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: Self-hosted teams use the same store apps pointed at their own server.
 # ---------------- Compliance ----------------
 - field: baa
