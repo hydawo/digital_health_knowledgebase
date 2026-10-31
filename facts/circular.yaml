@@ -164,36 +164,38 @@ facts:
   note: Reported because "no difference" is read from the absence of any distinction, not from a statement that terms are
     identical.
 - field: device_price
-  status: conflict
-  value: Circular Ring 2 lists at $349 (US, Obsidian Black) on the store product page, but the shop page's hero and HSA/FSA
-    copy both call it a $299 ring. Circular Ring 3 price not yet announced (pre-orders December 2026).
-  confidence: Unclear
+  status: stated
+  value: Circular Ring 2 lists at $349 (US, Obsidian Black) on the store product page, and the shop page now gives the same
+    $349. The Ring 3 page still advertises Ring 2 at up to 30% off until the Ring 3 Series launches, but no page shows a
+    discounted price. Circular Ring 3 price not yet announced (pre-orders December 2026).
+  confidence: Verified
   sources:
   - url: https://shop.circular.xyz/products/circular-ring-2
     type: vendor_page
     quote: Circular Ring 2 The only smart ring with an ECG and blood pressure $349.00
-    retrieved: '2026-10-22'
+    retrieved: '2026-10-31'
   - url: https://www.circular.xyz/shop
     type: vendor_page
-    quote: $299 one purchase · no mandatory subscription · HSA/FSA eligible
-    retrieved: '2026-10-22'
+    quote: $349 one purchase · no mandatory subscription · HSA/FSA eligible
+    retrieved: '2026-10-31'
   - url: https://www.circular.xyz/shop
     type: vendor_page
-    quote: which brings a $299 ring closer to $210 out of pocket depending on your bracket
-    retrieved: '2026-10-22'
+    quote: which brings a $349 ring closer to $245 out of pocket depending on your bracket
+    retrieved: '2026-10-31'
   - url: https://www.circular.xyz/circular-ring-3
     type: vendor_page
     quote: Circular Ring 2 is up to 30% off until the Ring 3 Series launches
-    retrieved: '2026-10-22'
+    retrieved: '2026-10-31'
   - url: https://www.circular.xyz/circular-ring-3
     type: vendor_page
     quote: December 2026 Pre-orders open, with pricing announced at the same time.
-    retrieved: '2026-10-22'
-  recheck_by: '2026-11-21'
-  note: 'Shopify product JSON (shop.circular.xyz/products/circular-ring-2.js, read 2026-10-22): ring alone $349 Obsidian Black,
-    $449 Silver, $549 Rose Gold and Gold; $5 more with a sizing kit; compare-at price equals price, so the store shows no
-    markdown on Ring 2. The Ring 3 page advertises Ring 2 at up to 30% off, which may explain the $299 copy, but no page ties
-    the two. Every site page''s footer also says "Circular Ring 2 $349".'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
+  note: 'Changed 2026-10-31 from conflict (Unclear) to stated (Verified). On 2026-10-22 the shop page''s hero and HSA/FSA copy
+    called Ring 2 a $299 ring ("$299 one purchase" and "a $299 ring closer to $210 out of pocket"), against $349 on the
+    product page; on 2026-10-31 both lines say $349, matching the product page and every footer ("Circular Ring 2 $349").
+    Shopify product JSON (shop.circular.xyz/products/circular-ring-2.js, read 2026-10-22, not re-read): ring alone $349
+    Obsidian Black, $449 Silver, $549 Rose Gold and Gold; $5 more with a sizing kit; compare-at price equals price.'
 - field: subscription_price
   status: stated
   value: No subscription required. Optional premium "Circles" are unlocked month by month with in-app coins, 12,000 to 16,000

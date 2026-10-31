@@ -346,17 +346,19 @@ facts:
   - url: https://www.ultrahuman.com/us/heroes/
     type: vendor_page
     quote: Scientists & Researchers
-    retrieved: '2026-10-21'
+    retrieved: '2026-10-31'
   - url: https://www.ultrahuman.com/us/heroes/
     type: vendor_page
     quote: In honour of your impact, enjoy exclusive pricing on the Ring Pro .
-    retrieved: '2026-10-21'
+    retrieved: '2026-10-31'
   - url: https://www.ultrahuman.com/us/heroes/
     type: vendor_page
-    quote: You may be asked to provide ID or proof of eligibility
-    retrieved: '2026-10-21'
-  recheck_by: '2026-11-20'
-  note: The privacy policy lists "research affiliation" as an accepted proof of status for Heroes pricing.
+    quote: By purchasing, you consent to provide ID or proof of eligibility if requested.
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
+  note: The privacy policy lists "research affiliation" as an accepted proof of status for Heroes pricing. On
+    2026-10-31 the verification line was reworded (previously "You may be asked to provide ID or proof of
+    eligibility"); meaning unchanged, and the page still shows no discount amount.
 - field: api_platform_fees
   status: stated
   value: 'No published fee for API access. The API Agreement says Sandbox and Production access are unpaid and as-is,

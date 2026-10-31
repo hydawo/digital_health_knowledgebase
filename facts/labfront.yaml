@@ -531,8 +531,8 @@ facts:
   - url: https://help.labfront.com/developer-access
     type: vendor_docs
     quote: Labfront does not currently provide an external SDK or API for data access.
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: No API exists. The nearest equivalent is the S3 bucket's 6-hour refresh (see export_routes); no download
     quotas are published.
 - field: retention_terms
@@ -576,30 +576,30 @@ facts:
   - url: https://help.labfront.com/privacy-policy
     type: vendor_legal
     quote: provide, operate and improve the Service, including by using data to train our machine learning models
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://help.labfront.com/privacy-policy
     type: vendor_legal
     quote: We also use data to train and improve our machine learning models.
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://help.labfront.com/privacy-policy
     type: vendor_legal
     quote: including your data collected through a wearable device (e.g. physiological data such as heart rate,
       activity, sleep quality, etc.)
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://help.labfront.com/privacy-policy
     type: vendor_legal
     quote: We may use this anonymous, aggregated or de-identified data and share it with third parties for our lawful
       business purposes
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://help.labfront.com/privacy-and-security-faqs
     type: vendor_docs
     quote: You own your data, and we do not access it.
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://www.labfront.com/trust-security
     type: vendor_page
     quote: Labfront intentionally does not have access to your project
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: 'Scope checked: the policy''s list of personal information it collects names Participants and their
     "Experiment Data", and both machine-learning sentences sit under "How We Use Your Personal Information" with no
     carve-out for Experiment Data. The two statements cannot both hold for study data. Get a written answer from
@@ -610,17 +610,17 @@ facts:
   sources:
   - url: https://www.labfront.com/pricing
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://help.labfront.com/developer-access
     type: vendor_docs
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://www.labfront.com/compatible-devices
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://help.labfront.com/choosing-your-garmin-data
     type: vendor_docs
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: No shutdowns or migrations announced. Developer Access is still Beta and the Data Visualizer is marked Coming
     Soon; an API is described as in progress with no date.
 # ---------------- Compliance ----------------

@@ -179,17 +179,17 @@ facts:
   sources:
   - url: https://docs.lamp.digital/get-started
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://research.bidmc.org/mindlamp/services
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://www.digitalpsych.org/mindlamp-core
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://docs.lamp.digital/capabilities/configure
     type: vendor_docs
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: No participant or user cap is published. Participant count is an input to Core pricing, so any limit would sit
     in the project proposal. Self-hosted deployments are limited only by infrastructure.
 - field: academic_vs_commercial
@@ -198,17 +198,17 @@ facts:
   sources:
   - url: https://docs.lamp.digital/get-started
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://research.bidmc.org/mindlamp/services
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://www.digitalpsych.org/mindlamp-core
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://docs.lamp.digital/privacy
     type: vendor_legal
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: No difference in terms or price between academic and commercial users is published. The licences differ by
     component, which matters more for commercial reuse than for study use (see licence). The privacy page says data
     is never used for marketing or commercial purposes.
@@ -226,14 +226,14 @@ facts:
   - url: https://docs.lamp.digital/get-started
     fetch_url: https://raw.githubusercontent.com/BIDMCDigitalPsychiatry/LAMP-platform/master/src/pages/get-started.tsx
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://research.bidmc.org/mindlamp/services
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://www.digitalpsych.org/mindlamp-core
     type: vendor_page
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: No academic rate or discount is published; all Core pricing comes in a per-project proposal.
 - field: api_platform_fees
   status: stated
@@ -261,14 +261,14 @@ facts:
   sources:
   - url: https://research.bidmc.org/mindlamp/services
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://docs.lamp.digital/get-started
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://www.digitalpsych.org/mindlamp-core
     type: vendor_page
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: A business agreement is required after the free consultation, but no minimum term, size or spend is published.
 - field: quote_required
   status: stated
@@ -294,14 +294,14 @@ facts:
   - url: https://docs.lamp.digital/get-started
     fetch_url: https://raw.githubusercontent.com/BIDMCDigitalPsychiatry/LAMP-platform/master/src/pages/get-started.tsx
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://research.bidmc.org/mindlamp/services
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://docs.lamp.digital/capabilities/configure
     type: vendor_docs
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: Managed hosting is part of the quoted Core agreement; no price list is published.
 - field: hosting_price
   scope: Self-hosted on AWS (infrastructure estimate from unpublished draft docs)
@@ -515,30 +515,30 @@ facts:
     type: vendor_legal
     quote: There is a soft-deletion period of 90 days during which the data is unavailable but may be restored by request.
       Once the 90 day period ends, the data is deleted permanently, after which it may no longer be recovered.
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://docs.lamp.digital/privacy
     type: vendor_legal
     quote: This data may be kept for an indefinite amount of time
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://play.google.com/store/apps/details?id=digital.lamp.mindlamp&hl=en_US
     type: app_store
     quote: "Data can't be deleted"
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/pull/939
     type: repository
     quote: Fix inaccurate data deletion claims
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/blob/docs/update-security-privacy-policy/docs/07-privacy.mdx
     fetch_url: https://raw.githubusercontent.com/BIDMCDigitalPsychiatry/LAMP-platform/docs/update-security-privacy-policy/docs/07-privacy.mdx
     type: repository
     quote: Permanent deletion requires a site administrator to manually remove the records through audited procedures.
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/blob/docs/update-security-privacy-policy/docs/07-privacy.mdx
     fetch_url: https://raw.githubusercontent.com/BIDMCDigitalPsychiatry/LAMP-platform/docs/update-security-privacy-policy/docs/07-privacy.mdx
     type: repository
     quote: does not currently support deletion through the API
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: The published terms are still the 90-day promise, but the maintainers' unmerged rewrite describes different
     behaviour, so a consent form should not rely on the 90-day wording. No retention period for a hosted project
     after it ends is published. When PR 939 merges, the draft branch may disappear; re-read the live page then. Ask
@@ -549,17 +549,17 @@ facts:
   sources:
   - url: https://docs.lamp.digital/privacy
     type: vendor_legal
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://docs.lamp.digital/get-started
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://research.bidmc.org/mindlamp/services
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://www.digitalpsych.org/mindlamp-core
     type: vendor_page
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: Nothing addresses AI or model training. The privacy page says data used for research is shared only in
     aggregate form and never for marketing or commercial purposes. The AWS blog (2026-09-29) says the division is
     building AI navigator agents on mindLAMP, which makes the question more relevant.
@@ -676,25 +676,25 @@ facts:
 - field: licence
   scope: LAMP-server, LAMP-core-ios, LAMP-core-android, LAMP-activities, LAMP-worker
   status: conflict
-  value: These public repositories carry no licence file (the GitHub API reports none, 2026-10-11), so by default no
+  value: These public repositories carry no licence file (the GitHub API reports none, 2026-10-11 and 2026-10-31), so by default no
     reuse rights are granted. The docs privacy page says the platform has no licensing restrictions for intellectual
-    property. An outside team asked which terms apply in LAMP-platform issue 943 (opened 2026-07-22); it had no reply
-    on 2026-10-11.
+    property. An outside team asked which terms apply in LAMP-platform issue 943 (opened 2026-07-22); it still had no
+    reply on 2026-10-31.
   confidence: Unclear
   sources:
   - url: https://docs.lamp.digital/privacy
     type: vendor_legal
     quote: The LAMP Platform is free and open source software currently developed by Beth Israel Deaconess Medical Center
       but does not have any licensing restrictions for intellectual property.
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://github.com/BIDMCDigitalPsychiatry/LAMP-platform/issues/943
     type: repository
     quote: We were not able to find a LICENSE file in the following repositories
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://github.com/BIDMCDigitalPsychiatry/LAMP-server
     type: repository
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: Matters for self-hosting and for modifying the server or apps; self-hosting rests on BIDMC's informal
     statement, not a licence grant. Issue 943 names LAMP-core-ios, LAMP-core-android, LAMP-server and
     LAMP-activities; LAMP-worker has no licence per the GitHub API. Ask the Core team for written terms.

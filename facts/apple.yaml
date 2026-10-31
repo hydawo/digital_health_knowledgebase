@@ -59,8 +59,9 @@ facts:
     quote: The Investigator Support Program most commonly focuses on Apple Watch devices. Apple Vision Pro and AirPods
       Pro can now be requested through this program where available.
   - url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13438180/
+    fetch_url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13438180/fullTextXML
     type: paper
-    retrieved: '2026-10-24'
+    retrieved: '2026-10-31'
     quote: Apple has multiple partnerships with the research community, including an Investigator Support Program
       that provides free devices.
   recheck_by: '2026-11-25'
@@ -619,19 +620,19 @@ facts:
   sources:
   - url: https://www.researchandcare.org/faq/
     type: vendor_page
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
     quote: No. You cannot access raw ECG data through HealthKit.
   - url: https://developer.apple.com/documentation/healthkit/hkelectrocardiogramquery
     type: vendor_docs
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
     fetch_url: https://developer.apple.com/tutorials/data/documentation/healthkit/hkelectrocardiogramquery.json
     quote: A query that returns the underlying voltage measurements for an electrocardiogram sample.
   - url: https://developer.apple.com/documentation/healthkit/hkelectrocardiogram
     type: vendor_docs
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
     fetch_url: https://developer.apple.com/tutorials/data/documentation/healthkit/hkelectrocardiogram.json
     quote: HealthKit provides read-only access to electrocardiogram (ECG) data saved by Apple Watch.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-30'
   scope: HealthKit ECG
   note: 'Judge decision, 2026-10-10: kept as a conflict. Both are Apple pages and neither defines "raw". Not in dispute:
     a third-party app can read the voltage waveform of each on-demand ECG app recording, with its sampling frequency;
@@ -947,7 +948,7 @@ facts:
   scope: HealthKit clinical records
 - field: rate_limits
   status: not_applicable
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-30'
   note: HealthKit and SensorKit are on-device frameworks with no Apple-hosted web API, so there are no API rate limits.
     The practical limits are elsewhere, in SensorKit's 7-day lookback and 24-hour hold, CMSensorRecorder's 12-hour
     recording and 3-day retention, and iOS background execution (see history_depth and research_program).

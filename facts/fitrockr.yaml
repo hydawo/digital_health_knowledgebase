@@ -1,14 +1,12 @@
 # Vendor fact record. Schema: facts/_schema.yaml. How to work it: facts/README.md.
-# Judged 2026-10-21. www.fitrockr.com blocks scripts intermittently (MalCare firewall, HTTP 403). On
-# 2026-10-21 researcher B read the live site, but by the time of judging it was blocked again, so no
-# fitrockr.com page could be re-read live by the judge. Two kinds of fitrockr.com source appear below:
-#  - sources with a fetch_url to web.archive.org: Wayback captures, every quote re-confirmed "exact"
-#    against the capture on 2026-10-21;
-#  - sources without a fetch_url: read on the live page by researcher B on 2026-10-21 and not re-checkable
-#    by the judge (no capture of the restructured page exists). Each carries a note saying so.
-# Every fact resting on either kind is Reported with recheck_by 2026-11-04. The weekly check will list the
-# live fitrockr.com pages under "check by hand" while the firewall is up. See
-# facts/_drafts/fitrockr/judgement.md.
+# Judged 2026-10-21, when www.fitrockr.com blocked scripts (MalCare firewall, HTTP 403) and most facts rested on
+# Wayback captures or on researcher B's live reading, all at Reported. Re-checked 2026-10-31 by the fact keeper: the
+# site answered the project fetcher, every quote from researcher B's reading was confirmed exact on the live page, and
+# every capture-backed quote still on the live site was moved to its current live URL (help-centre articles now sit
+# under /help-center/, not /research/help-center/). Quotes from superseded pages (the 2025-11-09 terms, the old
+# pricing table) were dropped where a live quote covers the point; the one still needed (Raw BBI each beat) keeps its
+# capture. Confidence was raised where every part of a value now rests on a live vendor quote; self-claims stay
+# Corroborated. If the firewall returns, the weekly check lists the pages under "check by hand".
 name: Fitrockr
 kind: intermediary
 profile: module-01-wearables/profiles/data-intermediaries.md
@@ -56,34 +54,30 @@ facts:
   sources:
   - url: https://www.garmin.com/en-PH/newsroom/press-release/news-2026-mar-fitrockr/
     type: secondary
-    quote: 'Professional Hardware: 5 Garmin vívoactive 5 smartwatches, featuring advanced health monitoring and long
-      battery life.'
-    retrieved: '2026-10-21'
-    note: Garmin Philippines press release dated 2026-03-05, read live. Garmin is the co-sponsor.
+    quote: "Professional Hardware: 5 Garmin vívoactive 5 smartwatches, featuring advanced health monitoring and long battery life."
+    retrieved: '2026-10-31'
+    note: "Garmin Philippines press release dated 2026-03-05, read live. Garmin is the co-sponsor."
   - url: https://www.garmin.com/en-PH/newsroom/press-release/news-2026-mar-fitrockr/
     type: secondary
-    quote: 'Full Platform Access: 6 months of unrestricted access to the Fitrockr Health Solutions Platform.'
-    retrieved: '2026-10-21'
+    quote: "Full Platform Access: 6 months of unrestricted access to the Fitrockr Health Solutions Platform."
+    retrieved: '2026-10-31'
   - url: https://www.fitrockr.com/research/research-grants/
-    fetch_url: https://web.archive.org/web/20260713062221/https://www.fitrockr.com/research/research-grants/
     type: vendor_page
-    quote: Fitrockr and Garmin support innovate research through grant programs that provide the tools to conduct
-      health data research studies based on wearable data.
-    retrieved: '2026-10-21'
-    note: Wayback capture of 2026-07-13.
+    quote: "Fitrockr and Garmin support innovate research through grant programs that provide the tools to conduct health data research studies based on wearable data."
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-07-13)."
   - url: https://www.fitrockr.com/research/research-grants/
-    fetch_url: https://web.archive.org/web/20260713062221/https://www.fitrockr.com/research/research-grants/
     type: vendor_page
-    quote: 6 months unrestricted access to the Fitrockr Health Solutions Platform for up to 50 participants
-    retrieved: '2026-10-21'
+    quote: "6 months unrestricted access to the Fitrockr Health Solutions Platform for up to 50 participants"
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-07-13)."
   - url: https://www.fitrockr.com/research/research-grants/
-    fetch_url: https://web.archive.org/web/20260713062221/https://www.fitrockr.com/research/research-grants/
     type: vendor_page
-    quote: 3 months unrestricted access to the Fitrockr Health Solution Platform for up to 50 users
-    retrieved: '2026-10-21'
-  recheck_by: '2026-11-20'
-  note: Garmin's release, read live, confirms the Asia 2026 package; the round history and the earlier 3-month terms
-    rest on the 2026-07-13 capture.
+    quote: "3 months unrestricted access to the Fitrockr Health Solution Platform for up to 50 users"
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-07-13)."
+  recheck_by: '2026-11-30'
+  note: "Garmin's release and Fitrockr's own grants page, both read live on 2026-10-31, confirm the Asia 2026 package and the round history; the earlier 3-month terms are from past rounds still described on the page."
 - field: program_eligibility
   status: stated
   value: Set per round, usually by region. Asia 2026 was open to academic researchers, post-docs and graduate students
@@ -93,16 +87,14 @@ facts:
   sources:
   - url: https://www.garmin.com/en-PH/newsroom/press-release/news-2026-mar-fitrockr/
     type: secondary
-    quote: 'Eligibility: Academic researchers, post-docs, and graduate students in Asia (including Taiwan, Japan, Korea,
-      and Southeast Asia) conducting health or sports science studies using Garmin wearables.'
-    retrieved: '2026-10-21'
+    quote: "Eligibility: Academic researchers, post-docs, and graduate students in Asia (including Taiwan, Japan, Korea, and Southeast Asia) conducting health or sports science studies using Garmin wearables."
+    retrieved: '2026-10-31'
   - url: https://www.fitrockr.com/research/research-grants/
-    fetch_url: https://web.archive.org/web/20260713062221/https://www.fitrockr.com/research/research-grants/
     type: vendor_page
-    quote: For our grant, we invite researchers from any country in North or South America.
-    retrieved: '2026-10-21'
-    note: Wayback capture of 2026-07-13 (Americas 2023 round).
-  recheck_by: '2026-11-20'
+    quote: "For our grant, we invite researchers from any country in North or South America."
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-07-13)."
+  recheck_by: '2026-11-30'
 - field: program_application
   status: stated
   value: Applicants apply through the round's official grant page before a fixed deadline; between rounds Fitrockr
@@ -111,76 +103,67 @@ facts:
   sources:
   - url: https://www.garmin.com/en-PH/newsroom/press-release/news-2026-mar-fitrockr/
     type: secondary
-    quote: 'How to Apply: Visit the Garmin Health x Fitrockr Research Grant Asia 2026 official page for details and
-      submission.'
-    retrieved: '2026-10-21'
+    quote: "How to Apply: Visit the Garmin Health x Fitrockr Research Grant Asia 2026 official page for details and submission."
+    retrieved: '2026-10-31'
   - url: https://www.fitrockr.com/research/research-grants/
-    fetch_url: https://web.archive.org/web/20260713062221/https://www.fitrockr.com/research/research-grants/
     type: vendor_page
-    quote: Apply here for a grant which will provide support for research projects with up to 50 participants.
-    retrieved: '2026-10-21'
+    quote: "Apply here for a grant which will provide support for research projects with up to 50 participants."
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-07-13)."
   - url: https://www.fitrockr.com/research/research-grants/
-    fetch_url: https://web.archive.org/web/20260713062221/https://www.fitrockr.com/research/research-grants/
     type: vendor_page
-    quote: Sign up for our newsletter to get informed about new grants.
-    retrieved: '2026-10-21'
-  recheck_by: '2026-11-20'
+    quote: "Sign up for our newsletter to get informed about new grants."
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-07-13)."
+  recheck_by: '2026-11-30'
 - field: program_status
   status: stated
   value: Between rounds. The Asia 2026 call closed on 31 March 2026 and its winners are listed; the next round is "to be
-    announced". No open call on the 2026-07-13 capture or in researcher B's live reading of 2026-10-21.
-  confidence: Reported
+    announced". No open call on the live page on 2026-10-31.
+  confidence: Verified
   sources:
   - url: https://www.fitrockr.com/research/research-grants/
-    fetch_url: https://web.archive.org/web/20260713062221/https://www.fitrockr.com/research/research-grants/
     type: vendor_page
-    quote: New grants will be announced soon.
-    retrieved: '2026-10-21'
-    note: Wayback capture of 2026-07-13. Researcher B read the same sentence on the live page on 2026-10-21.
+    quote: "New grants will be announced soon."
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-07-13)."
   - url: https://www.fitrockr.com/research/research-grants/
-    fetch_url: https://web.archive.org/web/20260713062221/https://www.fitrockr.com/research/research-grants/
     type: vendor_page
-    quote: Applications closed on March 31, 2026.
-    retrieved: '2026-10-21'
+    quote: "Applications closed on March 31, 2026."
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-07-13)."
   - url: https://www.garmin.com/en-PH/newsroom/press-release/news-2026-mar-fitrockr/
     type: secondary
-    quote: 'Deadline: March 31, 2026.'
-    retrieved: '2026-10-21'
-  recheck_by: '2026-11-04'
+    quote: "Deadline: March 31, 2026."
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
 - field: developer_program_status
   status: stated
-  value: 'No public developer program. Paying customers get the REST data API (all synced data) and a separate
-    live-data API (needs the Live add-on) on request to support; API access is a priced add-on (+20% on licence). API
-    documentation is not public.'
-  confidence: Reported
+  value: "No public developer program. Paying customers get the REST data API (all synced data) and a separate live-data API (needs the Live add-on) on request to support; API access is a priced add-on (+20% on licence). A separate Wearable API product (without the dashboard) is sold from EUR 150 a month for up to 20 users on a 12-month subscription. API documentation is not public."
+  confidence: Verified
   sources:
   - url: https://www.fitrockr.com/help-center/fitrockr-api/
-    fetch_url: https://web.archive.org/web/20250909230659/https://www.fitrockr.com/help-center/fitrockr-api/
     type: vendor_docs
-    quote: Request API access information at support@fitrockr.com
-    retrieved: '2026-10-21'
-    note: Wayback capture of 2025-09-09, the newest capture of this article; researcher B read the same sentence live
-      on 2026-10-21.
+    quote: "Request API access information at support@fitrockr.com"
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2025-09-09)."
   - url: https://www.fitrockr.com/help-center/fitrockr-api/
-    fetch_url: https://web.archive.org/web/20250909230659/https://www.fitrockr.com/help-center/fitrockr-api/
     type: vendor_docs
-    quote: Fitrockr LIVE-DATA-API can only be used if wearable data is live streamed (requires Live Add-on).
-    retrieved: '2026-10-21'
+    quote: "Fitrockr LIVE-DATA-API can only be used if wearable data is live streamed (requires Live Add-on)."
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2025-09-09)."
   - url: https://www.fitrockr.com/pricing/
     type: vendor_page
-    quote: API Access Automatically import data via API. +20% on license
-    retrieved: '2026-10-21'
-    note: Read by researcher B on 2026-10-21; site blocks scripts, not re-confirmed by the judge.
-  - url: https://www.fitrockr.com/research/pricing/
-    fetch_url: https://web.archive.org/web/20260713062111/https://www.fitrockr.com/research/pricing/
+    quote: "API Access Automatically import data via API. +20% on license"
+    retrieved: '2026-10-31'
+    note: "Re-read live 2026-10-31."
+  - url: https://www.fitrockr.com/pricing/
     type: vendor_page
-    quote: API Access +20% on license Automatically import data via API.
-    retrieved: '2026-10-21'
-    note: Wayback capture of 2026-07-13 (old pricing URL).
-  recheck_by: '2026-11-04'
-  note: Researcher B also reported a separate "Wearable API" product from EUR 150 per month for up to 20 users on the
-    live site on 2026-10-21 but recorded no quote for it, so it is unconfirmed. A University of Bern open-source plugin
-    (github.com/humdek-unibe-ch/sh-shp-fitrockr) shows the REST API at api.fitrockr.com/v1 with an API key.
+    quote: "WEARABLE API SMALL € 150 Month 0-20 users Incl. 20 users 12 months subscription"
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31. The separate Wearable API product researcher B reported on 2026-10-21. Also MEDIUM EUR 500 (21-500 users) and LARGE EUR 1000 (501-1500 users) a month."
+  recheck_by: '2026-11-30'
+  note: "Changed 2026-10-31: the Wearable API product, reported by researcher B on 2026-10-21 without a quote, is now quoted from the live pricing page (SMALL EUR 150 for 0-20 users, MEDIUM EUR 500 for 21-500, LARGE EUR 1000 for 501-1500, a month). A University of Bern open-source plugin (github.com/humdek-unibe-ch/sh-shp-fitrockr) shows the REST API at api.fitrockr.com/v1 with an API key."
 - field: user_cap
   status: conflict
   value: 'No participant cap on the published plans: the pricing page bills by connected device (5 device licences
@@ -191,59 +174,39 @@ facts:
   sources:
   - url: https://www.fitrockr.com/pricing/
     type: vendor_page
-    quote: 'Users: Unlimited Licenses Included: 5 Device Licenses'
-    retrieved: '2026-10-21'
-    note: Read by researcher B on 2026-10-21; site blocks scripts, not re-confirmed by the judge.
-  - url: https://www.fitrockr.com/research/pricing/
-    fetch_url: https://web.archive.org/web/20260713062111/https://www.fitrockr.com/research/pricing/
+    quote: "Users: Unlimited Licenses Included: 5 Device Licenses"
+    retrieved: '2026-10-31'
+    note: "Re-read live 2026-10-31."
+  - url: https://www.fitrockr.com/pricing/
     type: vendor_page
-    quote: 'Users: Unlimited Licenses Included: 5 Device Licenses'
-    retrieved: '2026-10-21'
-    note: Wayback capture of 2026-07-13.
-  - url: https://www.fitrockr.com/research/pricing/
-    fetch_url: https://web.archive.org/web/20260713062111/https://www.fitrockr.com/research/pricing/
-    type: vendor_page
-    quote: Up to 5 Device Connections 2 Weeks
-    retrieved: '2026-10-21'
+    quote: "Up to 5 Device Connections 2 Weeks"
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-07-13 at https://www.fitrockr.com/research/pricing/)."
   - url: https://www.fitrockr.com/new-research-pricing-unlimited-users-with-all-packages/
-    fetch_url: https://web.archive.org/web/20260515071904/https://www.fitrockr.com/new-research-pricing-unlimited-users-with-all-packages/
     type: vendor_page
-    quote: this is achieved by basing our license fee on connected devices instead of user accounts
-    retrieved: '2026-10-21'
+    quote: "this is achieved by basing our license fee on connected devices instead of user accounts"
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-05-15)."
   - url: https://www.fitrockr.com/help-center/pricing-plans-payment/
     type: vendor_docs
-    quote: Our pricing is based on user numbers and length of access.
-    retrieved: '2026-10-21'
-    note: Read by researcher B on 2026-10-21 on the live help centre; site blocks scripts, not re-confirmed by the
-      judge.
-  - url: https://www.fitrockr.com/research/help-center/pricing-plans-payment/
-    fetch_url: https://web.archive.org/web/20260422051109/https://www.fitrockr.com/research/help-center/pricing-plans-payment/
-    type: vendor_docs
-    quote: Our pricing is based on user numbers and length of access.
-    retrieved: '2026-10-21'
-    note: Wayback capture of 2026-04-22 (old help-centre URL).
-  recheck_by: '2026-11-04'
-  note: Both pages were live on 2026-10-21 per researcher B, so the vendor contradicts itself on the pricing basis. The
-    help article is probably stale, but older contracts may still be user-based; ask Fitrockr.
+    quote: "Our pricing is based on user numbers and length of access."
+    retrieved: '2026-10-31'
+    note: "on the live help centre. Re-read live 2026-10-31."
+  recheck_by: '2026-11-30'
+  note: "Both pages were re-read live on 2026-10-31 and still disagree, so the vendor contradicts itself on the pricing basis. The help article is probably stale, but older contracts may still be user-based; ask Fitrockr."
 - field: academic_vs_commercial
   status: stated
   value: No separate academic price list or terms. One "Research & Clinical Trials" price list covers universities,
     hospitals and companies; teams with limited research funds are asked to request a custom quote. The grants are the
     only academic-specific route.
-  confidence: Reported
+  confidence: Verified
   sources:
-  - url: https://www.fitrockr.com/research/help-center/pricing-plans-payment/
-    fetch_url: https://web.archive.org/web/20260422051109/https://www.fitrockr.com/research/help-center/pricing-plans-payment/
-    type: vendor_docs
-    quote: Please contact us in case of large user numbers, limited research funds or if you need a custom quote.
-    retrieved: '2026-10-21'
-    note: Wayback capture of 2026-04-22.
   - url: https://www.fitrockr.com/help-center/pricing-plans-payment/
     type: vendor_docs
-    quote: Please contact us in case of large user numbers, limited research funds or if you need a custom quote.
-    retrieved: '2026-10-21'
-    note: Read by researcher B on 2026-10-21; site blocks scripts, not re-confirmed by the judge.
-  recheck_by: '2026-11-04'
+    quote: "Please contact us in case of large user numbers, limited research funds or if you need a custom quote."
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-04-22 at https://www.fitrockr.com/research/help-center/pricing-plans-payment/)."
+  recheck_by: '2026-11-30'
 # ---------------- Pricing ----------------
 - field: device_price
   status: not_applicable
@@ -257,122 +220,116 @@ facts:
   status: stated
   value: No published academic price or discount. Teams with limited research funds are asked to contact Fitrockr for a
     custom quote.
-  confidence: Reported
+  confidence: Verified
   sources:
-  - url: https://www.fitrockr.com/research/help-center/pricing-plans-payment/
-    fetch_url: https://web.archive.org/web/20260422051109/https://www.fitrockr.com/research/help-center/pricing-plans-payment/
+  - url: https://www.fitrockr.com/help-center/pricing-plans-payment/
     type: vendor_docs
-    quote: Please contact us in case of large user numbers, limited research funds or if you need a custom quote.
-    retrieved: '2026-10-21'
-    note: Wayback capture of 2026-04-22; researcher B read the same sentence live on 2026-10-21.
-  recheck_by: '2026-11-04'
+    quote: "Please contact us in case of large user numbers, limited research funds or if you need a custom quote."
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-04-22 at https://www.fitrockr.com/research/help-center/pricing-plans-payment/)."
+  recheck_by: '2026-11-30'
 - field: api_platform_fees
   status: stated
-  value: 'Research & Clinical Trials plans per month, as researcher B read them on 2026-10-21: Basic from EUR 50 (USD
-    55), Pro from EUR 150 (USD 165), each with 5 device licences; extra device licences EUR 1 to 7.5 (Basic) or EUR 1 to
-    15 (Pro) per month. Add-ons: API access +20% on licence; accelerometer and gyroscope collection +25%; live
-    streaming +20%; surveys +20%; on-premise hosting EUR 5,000 + 20%; Data Vault EUR 250 per month after the project;
-    historic Garmin Connect import EUR 500 setup. Germany cloud hosting, support and admin accounts included.'
-  confidence: Reported
+  value: "Research & Clinical Trials plans per month, as read live on 2026-10-31: Basic from EUR 50 (USD 55), Pro from EUR 150 (USD 165), each with 5 device licences; extra device licences EUR 1 to 7.5 (Basic) or EUR 1 to 15 (Pro) per month. Add-ons: API access +20% on licence; accelerometer and gyroscope collection +25%; live streaming +20%; surveys and notifications +20%; all-day GPS +10%; self-reported data, food tracking and clinical assessment +20% each; on-premise hosting EUR 5,000 setup + 20%; Data Vault EUR 250 per month after the project; historic Garmin Connect import EUR 500 setup. Germany cloud hosting, support and admin accounts included. A separate Wearable API product costs EUR 150, 500 or 1000 a month for up to 20, 500 or 1500 users."
+  confidence: Verified
   sources:
   - url: https://www.fitrockr.com/pricing/
     type: vendor_page
-    quote: BASIC starting at € 50 Month
-    retrieved: '2026-10-21'
-    note: Read by researcher B on 2026-10-21; site blocks scripts, not re-confirmed by the judge. Same for every
-      /pricing/ quote in this fact.
+    quote: "BASIC starting at € 50 Month"
+    retrieved: '2026-10-31'
+    note: "Re-read live 2026-10-31."
   - url: https://www.fitrockr.com/pricing/
     type: vendor_page
-    quote: PRO starting at € 150 Month
-    retrieved: '2026-10-21'
+    quote: "PRO starting at € 150 Month"
+    retrieved: '2026-10-31'
+    note: "Re-read live 2026-10-31."
   - url: https://www.fitrockr.com/pricing/
     type: vendor_page
-    quote: 'Add. Device License: €1-€15/month'
-    retrieved: '2026-10-21'
+    quote: "Add. Device License: €1-€15/month"
+    retrieved: '2026-10-31'
+    note: "Re-read live 2026-10-31."
   - url: https://www.fitrockr.com/pricing/
     type: vendor_page
-    quote: Collection of Accelerometer (25Hz) & Gyroscope (32 Hz) data. +25% on license
-    retrieved: '2026-10-21'
+    quote: "Collection of Accelerometer (25Hz) & Gyroscope (32 Hz) data. +25% on license"
+    retrieved: '2026-10-31'
+    note: "Re-read live 2026-10-31."
   - url: https://www.fitrockr.com/pricing/
     type: vendor_page
-    quote: Data retention after the project. Keep accessing your data on Fitrockr. €250 / month
-    retrieved: '2026-10-21'
+    quote: "Data retention after the project. Keep accessing your data on Fitrockr. €250 / month"
+    retrieved: '2026-10-31'
+    note: "Re-read live 2026-10-31."
   - url: https://www.fitrockr.com/pricing/
     type: vendor_page
-    quote: All subscriptions include secure Germany cloud hosting, support, and admin accounts.
-    retrieved: '2026-10-21'
-  - url: https://www.fitrockr.com/research/pricing/
-    fetch_url: https://web.archive.org/web/20260713062111/https://www.fitrockr.com/research/pricing/
+    quote: "All subscriptions include secure Germany cloud hosting, support, and admin accounts."
+    retrieved: '2026-10-31'
+    note: "Re-read live 2026-10-31."
+  - url: https://www.fitrockr.com/pricing/
     type: vendor_page
-    quote: 'BASIC starting at € 50 Month Users: Unlimited Licenses Included: 5 Device Licenses Add. Device License: €1-€7.5/month'
-    retrieved: '2026-10-21'
-    note: Wayback capture of 2026-07-13 of the old pricing URL; the plan prices are unchanged.
-  - url: https://www.fitrockr.com/research/pricing/
-    fetch_url: https://web.archive.org/web/20260713062111/https://www.fitrockr.com/research/pricing/
+    quote: "BASIC starting at € 50 Month Users: Unlimited Licenses Included: 5 Device Licenses Add. Device License: €1-€7.5/month"
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-07-13 at https://www.fitrockr.com/research/pricing/)."
+  - url: https://www.fitrockr.com/pricing/
     type: vendor_page
-    quote: 'PRO starting at € 150 Month Users: Unlimited Licenses Included: 5 Device Licenses Add. Device License: €1-€15/month'
-    retrieved: '2026-10-21'
-  - url: https://www.fitrockr.com/research/pricing/
-    fetch_url: https://web.archive.org/web/20260713062111/https://www.fitrockr.com/research/pricing/
+    quote: "PRO starting at € 150 Month Users: Unlimited Licenses Included: 5 Device Licenses Add. Device License: €1-€15/month"
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-07-13 at https://www.fitrockr.com/research/pricing/)."
+  - url: https://www.fitrockr.com/pricing/
     type: vendor_page
-    quote: (Military) On-Premise Hosting €5.000 + 20% on license
-    retrieved: '2026-10-21'
-  recheck_by: '2026-11-04'
-  note: 'Changed since the 2026-07-13 capture of /research/pricing/, per researcher B: Data Vault rose from EUR 150 to
-    EUR 250 per month (capture: "Data Vault €150 per month"); accelerometer and gyroscope collection moved from "Volume
-    Based" (Pro only) to +25% on licence; live streaming from EUR 500 + 20% to +20% (B gave no quote for the new live
-    price); the plan table with per-stream sampling rates was removed. B also reported a separate Wearable API product
-    from EUR 150 per month for up to 20 users, without a quote. The surveys +20% and historic-import EUR 500 figures
-    are B''s reading; only the old surveys price is in the capture.'
+    quote: "(Military) On-Premise Hosting Host the Fitrockr platform and data on your own local servers, giving you full control over infrastructure and data location. €5.000 setup + 20% on license"
+    retrieved: '2026-10-31'
+  - url: https://www.fitrockr.com/pricing/
+    type: vendor_page
+    quote: "Live Streaming Live stream data in real-time. + 20% on license"
+    retrieved: '2026-10-31'
+  - url: https://www.fitrockr.com/pricing/
+    type: vendor_page
+    quote: "Engagement Create surveys and send notifications. +20% on license"
+    retrieved: '2026-10-31'
+  - url: https://www.fitrockr.com/pricing/
+    type: vendor_page
+    quote: "Historic Data Import Import of up to 2 years of historic data (Garmin Connect only). €500 setup"
+    retrieved: '2026-10-31'
+  - url: https://www.fitrockr.com/pricing/
+    type: vendor_page
+    quote: "WEARABLE API SMALL € 150 Month 0-20 users Incl. 20 users 12 months subscription"
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
+  note: "Re-read live 2026-10-31; every figure researcher B reported on 2026-10-21 is now quoted, including live streaming and surveys at +20%. Changed since the 2026-07-13 capture of /research/pricing/: Data Vault rose from EUR 150 to EUR 250 per month; accelerometer and gyroscope collection moved from \"Volume Based\" (Pro only) to +25% on licence; live streaming from EUR 500 + 20% to +20%; the plan table with per-stream sampling rates was removed."
 - field: minimum_commitment
   status: stated
-  value: 3-month minimum contract, with renewals in 3-month terms, on Basic and Pro. The terms say subscriptions do not
+  value: 3-month minimum contract, with renewals in 3-month terms, on Basic and Pro. The 2026-09-19 terms say subscriptions do not
     renew automatically unless agreed.
-  confidence: Reported
+  confidence: Verified
   sources:
-  - url: https://www.fitrockr.com/research/pricing/
-    fetch_url: https://web.archive.org/web/20260713062111/https://www.fitrockr.com/research/pricing/
+  - url: https://www.fitrockr.com/pricing/
     type: vendor_page
-    quote: 3 Months Minimum Contract & Renewals
-    retrieved: '2026-10-21'
-    note: Wayback capture of 2026-07-13; researcher B read the same line on the live /pricing/ page on 2026-10-21.
+    quote: "3 Months Minimum Contract & Renewals"
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-07-13 at https://www.fitrockr.com/research/pricing/)."
   - url: https://www.fitrockr.com/health-solutions/terms-of-use/
     type: vendor_legal
-    quote: subscriptions do not automatically renew.
-    retrieved: '2026-10-21'
-    note: 2026-09-19 terms, read by researcher B on 2026-10-21; site blocks scripts, not re-confirmed by the judge.
-  - url: https://www.fitrockr.com/health-solutions/terms-of-use/
-    fetch_url: https://web.archive.org/web/20260511153050/https://www.fitrockr.com/health-solutions/terms-of-use/
-    type: vendor_legal
-    quote: 10.1 Subscriptions do not automatically renew unless otherwise agreed.
-    retrieved: '2026-10-21'
-    note: Terms effective 2025-11-09, Wayback capture of 2026-05-11 (superseded version).
-  recheck_by: '2026-11-04'
+    quote: "subscriptions do not automatically renew."
+    retrieved: '2026-10-31'
+    note: "2026-09-19 terms. Re-read live 2026-10-31."
+  recheck_by: '2026-11-30'
 - field: quote_required
   status: stated
   value: Partly. "Starting at" plan and add-on prices are published, but contracts (fixed price per project or
     pay-as-you-go) are set in a Fitrockr quote, and some items (country-of-choice hosting, custom work) are priced on
     effort.
-  confidence: Reported
+  confidence: Verified
   sources:
   - url: https://www.fitrockr.com/pricing/
     type: vendor_page
-    quote: We provide fixed pricing contracts or pay-as-you-go subscriptions. Send us a quote request
-    retrieved: '2026-10-21'
-    note: Read by researcher B on 2026-10-21; site blocks scripts, not re-confirmed by the judge.
-  - url: https://www.fitrockr.com/research/pricing/
-    fetch_url: https://web.archive.org/web/20260713062111/https://www.fitrockr.com/research/pricing/
-    type: vendor_page
-    quote: Get in touch to receive your custom offer.
-    retrieved: '2026-10-21'
-    note: Wayback capture of 2026-07-13.
+    quote: "We provide fixed pricing contracts or pay-as-you-go subscriptions. Send us a quote request"
+    retrieved: '2026-10-31'
+    note: "Re-read live 2026-10-31."
   - url: https://www.fitrockr.com/health-solutions/terms-of-use/
-    fetch_url: https://web.archive.org/web/20260511153050/https://www.fitrockr.com/health-solutions/terms-of-use/
     type: vendor_legal
-    quote: 4.2 Fees are specified in the Provider quote.
-    retrieved: '2026-10-21'
-    note: Terms effective 2025-11-09 (superseded by the 2026-09-19 terms).
-  recheck_by: '2026-11-04'
+    quote: "1.5 “Order” means a quotation, order form, statement of work, subscription agreement or other commercial document agreed between Fitrockr and the Customer that identifies the applicable Service, subscription, fees, term or other commercial conditions."
+    retrieved: '2026-10-31'
+    note: "2026-09-19 terms, read live 2026-10-31."
+  recheck_by: '2026-11-30'
 # ---------------- Data access and terms ----------------
 - field: raw_streams
   status: stated
@@ -381,247 +338,220 @@ facts:
     and skin temperature, plus heart rate, stress, SpO2 and respiration at configurable epochs. Syncing through Garmin
     Connect "supports less data". GPS can be switched off per study. Garmin is the main source; other brands
     (Apple, Google, Withings, Oura, Polar and others) are supported.'
-  confidence: Reported
+  confidence: Corroborated
   sources:
   - url: https://www.fitrockr.com/research/pricing/
     fetch_url: https://web.archive.org/web/20260713062111/https://www.fitrockr.com/research/pricing/
     type: vendor_page
-    quote: Raw BBI – Each beat Enhanced BBI – Each beat
-    retrieved: '2026-10-21'
-    note: Wayback capture of 2026-07-13; this plan table was removed from the live page per researcher B.
+    quote: "Raw BBI – Each beat Enhanced BBI – Each beat"
+    retrieved: '2026-10-31'
+    note: "Wayback capture of 2026-07-13; this plan table is gone from the live /pricing/ page (confirmed 2026-10-31); the capture was re-read the same day."
   - url: https://www.fitrockr.com/help-center/data-dictionary/
-    fetch_url: https://web.archive.org/web/20260907021750/https://www.fitrockr.com/help-center/data-dictionary/
     type: vendor_docs
-    quote: Resolution is fixed at 25Hz (i.e. 25 measurements per second).
-    retrieved: '2026-10-21'
-    note: Wayback capture of 2026-09-07 of the restructured help centre.
+    quote: "Resolution is fixed at 25Hz (i.e. 25 measurements per second)."
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-09-07)."
   - url: https://www.fitrockr.com/pricing/
     type: vendor_page
-    quote: Collection of Accelerometer (25Hz) & Gyroscope (32 Hz) data. +25% on license
-    retrieved: '2026-10-21'
-    note: Read by researcher B on 2026-10-21; site blocks scripts, not re-confirmed by the judge.
-  - url: https://www.fitrockr.com/research/help-center/data-export/
-    fetch_url: https://web.archive.org/web/20260713060548/https://www.fitrockr.com/research/help-center/data-export/
+    quote: "Collection of Accelerometer (25Hz) & Gyroscope (32 Hz) data. +25% on license"
+    retrieved: '2026-10-31'
+    note: "Re-read live 2026-10-31."
+  - url: https://www.fitrockr.com/help-center/data-export/
     type: vendor_docs
-    quote: Availability and granularity of health data depends on the wearable model and whether the wearable has been
-      synchronised using the Fitrockr app or Garmin Connect. The latter supports less data.
-    retrieved: '2026-10-21'
-    note: Wayback capture of 2026-07-13; researcher B read the same sentence on the live /help-center/data-export/.
+    quote: "Availability and granularity of health data depends on the wearable model and whether the wearable has been synchronised using the Fitrockr app or Garmin Connect. The latter supports less data."
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-07-13 at https://www.fitrockr.com/research/help-center/data-export/)."
   - url: https://www.fitrockr.com/disable-gps-data/
-    fetch_url: https://web.archive.org/web/20260616113942/https://www.fitrockr.com/disable-gps-data/
     type: vendor_page
-    quote: When GPS is disabled for a study, location data is not exposed or visible anywhere in the platform
-    retrieved: '2026-10-21'
-    note: News post dated 2026-05-27, Wayback capture of 2026-06-16.
+    quote: "When GPS is disabled for a study, location data is not exposed or visible anywhere in the platform"
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-06-16)."
   - url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12975902/
     fetch_url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12975902/fullTextXML
     type: paper
-    quote: was exported from the Fitrockr hub/platform in the Comma-Separated Values (CSV) format.
-    retrieved: '2026-10-30'
-    note: Front Aging 2026. The sentence begins "For each participant, raw acceleration (25 Hz)"; the quote is
-      shortened because the page's "25 Hz" uses a special space. Independent use of the 25 Hz export.
-  recheck_by: '2026-11-04'
-  note: A June 2026 news post (capture 2026-06-16) claims Google Fitbit Air support through the Google Health app; the
-    data route is not stated.
+    quote: "was exported from the Fitrockr hub/platform in the Comma-Separated Values (CSV) format."
+    retrieved: '2026-10-31'
+    note: "Front Aging 2026. The sentence begins \"For each participant, raw acceleration (25 Hz)\"; the quote is shortened because the page's \"25 Hz\" uses a special space. Independent use of the 25 Hz export."
+  recheck_by: '2026-11-30'
+  note: "Raised from Reported 2026-10-31: every source except one was read live. \"Raw and enhanced beat-to-beat intervals (every beat)\" still rests on the 2026-07-13 capture of the old pricing table, which is gone from the live site; the live data dictionary describes BBI fields but not the every-beat rate. A June 2026 news post (capture 2026-06-16) claims Google Fitbit Air support through the Google Health app; the data route is not stated."
 - field: derived_metrics
   status: stated
   value: Device metrics passed through (Garmin stress, Body Battery, sleep, steps, intensity minutes, respiration,
     SpO2) plus metrics Fitrockr computes itself, including HRV indices (RMSSD, SDNN, LF/HF) from beat-to-beat data and
     MET, and report types (HRV, sleep, 6-minute walk test and others).
-  confidence: Reported
+  confidence: Verified
   sources:
-  - url: https://www.fitrockr.com/research/help-center/data-dictionary/
-    fetch_url: https://web.archive.org/web/20260713062642/https://www.fitrockr.com/research/help-center/data-dictionary/
+  - url: https://www.fitrockr.com/help-center/data-dictionary/
     type: vendor_docs
-    quote: 'The following health indicators are calculated by the Fitrockr platform: LF/HF Ratio'
-    retrieved: '2026-10-21'
-    note: Wayback capture of 2026-07-13.
-  - url: https://www.fitrockr.com/research/help-center/data-dictionary/
-    fetch_url: https://web.archive.org/web/20260713062642/https://www.fitrockr.com/research/help-center/data-dictionary/
+    quote: "Lf/Hf LF/HF ratio, calculated by the Fitrockr platform"
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (replaces a 2026-07-13 capture of the old /research/help-center/ dictionary, whose wording differed)."
+  - url: https://www.fitrockr.com/help-center/data-dictionary/
     type: vendor_docs
-    quote: 'Met Calculation Type: Determines which system has calculated the MET. Can be Garmin or Fitrockr.'
-    retrieved: '2026-10-21'
-  recheck_by: '2026-11-04'
+    quote: "Met Calculation Type Determines which system has calculated the MET. Can be Garmin or Fitrockr."
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
 - field: sampling_rates
   status: stated
   value: Accelerometer fixed at 25 Hz and gyroscope at 32 Hz on Garmin (not adjustable); beat-to-beat intervals every
     beat; other streams configurable (Fitrockr lists 1 s, 60 s, 90 s and so on). Via Garmin Connect sync, HRV is
     limited to RMSSD in 5-minute intervals during the sleep window.
-  confidence: Reported
+  confidence: Verified
   sources:
   - url: https://www.fitrockr.com/help-center/data-dictionary/
-    fetch_url: https://web.archive.org/web/20260907021750/https://www.fitrockr.com/help-center/data-dictionary/
     type: vendor_docs
-    quote: Resolution is fixed at 25Hz (i.e. 25 measurements per second).
-    retrieved: '2026-10-21'
-    note: Wayback capture of 2026-09-07; researcher B read the same sentences live on 2026-10-21.
+    quote: "Resolution is fixed at 25Hz (i.e. 25 measurements per second)."
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-09-07)."
   - url: https://www.fitrockr.com/help-center/data-dictionary/
-    fetch_url: https://web.archive.org/web/20260907021750/https://www.fitrockr.com/help-center/data-dictionary/
     type: vendor_docs
-    quote: Resolution is fixed at 32Hz (i.e. 32 measurements per second).
-    retrieved: '2026-10-21'
+    quote: "Resolution is fixed at 32Hz (i.e. 32 measurements per second)."
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-09-07)."
   - url: https://www.fitrockr.com/features/
     type: vendor_page
-    quote: Flexibly adjust data samplings rates (32Hz, 25Hz, 1s, 60s, 90s, etc.).
-    retrieved: '2026-10-21'
-    note: Read by researcher B on 2026-10-21; site blocks scripts, not re-confirmed by the judge.
-  - url: https://www.fitrockr.com/research/help-center/hrv-via-garmin-connect-sync/
-    fetch_url: https://web.archive.org/web/20260617195731/https://www.fitrockr.com/research/help-center/hrv-via-garmin-connect-sync/
+    quote: "Flexibly adjust data samplings rates (32Hz, 25Hz, 1s, 60s, 90s, etc.)."
+    retrieved: '2026-10-31'
+    note: "Re-read live 2026-10-31."
+  - url: https://www.fitrockr.com/help-center/hrv-via-garmin-connect-sync/
     type: vendor_docs
-    quote: HRV data will be limited to HRV RMSSD measurements (5-minute intervals) during the configured sleeping time
-      window of the user.
-    retrieved: '2026-10-21'
-    note: Wayback capture of 2026-06-17.
-  recheck_by: '2026-11-04'
+    quote: "HRV data will be limited to HRV RMSSD measurements (5-minute intervals) during the configured sleeping time window of the user."
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-06-17 at https://www.fitrockr.com/research/help-center/hrv-via-garmin-connect-sync/)."
+  recheck_by: '2026-11-30'
   note: 'The 2026-07-13 capture of /research/pricing/ had a per-stream table (Basic vs Pro: heart rate 1 min vs 1 s to
     60 min; stress 3 min vs 1 s to 60 min; respiration and SpO2 3 min vs 10 s to 60 min; steps 15 min vs 60 s;
-    actigraphy 1 s to 30 s and skin temperature 1 s to 60 min on Pro). Researcher B reports the table is gone from the
-    live /pricing/ page as of 2026-10-21.'
+    actigraphy 1 s to 30 s and skin temperature 1 s to 60 min on Pro). The table is gone from the live /pricing/ page
+    (confirmed 2026-10-31).'
 - field: history_depth
   status: stated
-  value: For Garmin Connect-linked users, up to 2 years of history can be imported (a paid add-on, EUR 500 setup per
-    researcher B's reading of the pricing page). For direct Fitrockr app sync, history is limited to what is still on
+  value: For Garmin Connect-linked users, up to 2 years of history can be imported (a paid add-on, EUR 500 setup). For direct Fitrockr app sync, history is limited to what is still on
     the watch; when storage is full, default data overwrites the oldest files.
-  confidence: Reported
+  confidence: Verified
   sources:
-  - url: https://www.fitrockr.com/research/help-center/smartphone-sync-single-sync-with-garmin-connect-app/
-    fetch_url: https://web.archive.org/web/20260429195431/https://www.fitrockr.com/research/help-center/smartphone-sync-single-sync-with-garmin-connect-app/
+  - url: https://www.fitrockr.com/help-center/smartphone-sync-single-sync-with-garmin-connect-app/
     type: vendor_docs
-    quote: With up to 2 years of historical health data can be potentially available depending on what the Garmin
-      device can provide.
-    retrieved: '2026-10-21'
-    note: Wayback capture of 2026-04-29; researcher B read the same sentence on the live /help-center/ page.
+    quote: "With up to 2 years of historical health data can be potentially available depending on what the Garmin device can provide."
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-04-29 at https://www.fitrockr.com/research/help-center/smartphone-sync-single-sync-with-garmin-connect-app/)."
   - url: https://www.fitrockr.com/pricing/
     type: vendor_page
-    quote: Import of up to 2 years of historic data (Garmin Connect only). €500 setup
-    retrieved: '2026-10-21'
-    note: Read by researcher B on 2026-10-21; site blocks scripts, not re-confirmed by the judge.
-  - url: https://www.fitrockr.com/research/help-center/what-happens-when-a-garmin-device-runs-full/
-    fetch_url: https://web.archive.org/web/20260713063324/https://www.fitrockr.com/research/help-center/what-happens-when-a-garmin-device-runs-full/
+    quote: "Import of up to 2 years of historic data (Garmin Connect only). €500 setup"
+    retrieved: '2026-10-31'
+    note: "Re-read live 2026-10-31."
+  - url: https://www.fitrockr.com/help-center/what-happens-when-a-garmin-device-runs-full/
     type: vendor_docs
-    quote: Default data will overwrite oldest data files if device runs out of space.
-    retrieved: '2026-10-21'
-    note: Wayback capture of 2026-07-13.
-  recheck_by: '2026-11-04'
+    quote: "Default data will overwrite oldest data files if device runs out of space."
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-07-13 at https://www.fitrockr.com/research/help-center/what-happens-when-a-garmin-device-runs-full/)."
+  recheck_by: '2026-11-30'
 - field: export_routes
   status: stated
   value: On-demand dashboard exports (41 export options) in Excel, CSV or JSON (CSV or JSON for large data); REST data
     API for all synced data and a live-data API for live streams (both add-ons); a full database dump in BSON on
     request for long-term storage.
-  confidence: Reported
+  confidence: Verified
   sources:
-  - url: https://www.fitrockr.com/research/help-center/data-export/
-    fetch_url: https://web.archive.org/web/20260713060548/https://www.fitrockr.com/research/help-center/data-export/
+  - url: https://www.fitrockr.com/help-center/data-export/
     type: vendor_docs
-    quote: Select CSV or JSON for large data amounts.
-    retrieved: '2026-10-21'
-    note: Wayback capture of 2026-07-13.
+    quote: "Select CSV or JSON for large data amounts."
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-07-13 at https://www.fitrockr.com/research/help-center/data-export/)."
   - url: https://www.fitrockr.com/help-center/fitrockr-api/
-    fetch_url: https://web.archive.org/web/20250909230659/https://www.fitrockr.com/help-center/fitrockr-api/
     type: vendor_docs
-    quote: Fitrockr REST-API can be used to import all synced data.
-    retrieved: '2026-10-21'
-    note: Wayback capture of 2025-09-09; researcher B read the same sentence live on 2026-10-21.
-  - url: https://www.fitrockr.com/research/help-center/long-term-data-storage/
-    fetch_url: https://web.archive.org/web/20260422051637/https://www.fitrockr.com/research/help-center/long-term-data-storage/
+    quote: "Fitrockr REST-API can be used to import all synced data."
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2025-09-09)."
+  - url: https://www.fitrockr.com/help-center/long-term-data-storage/
     type: vendor_docs
-    quote: Fitrockr can provide a full data base dump as BSON file format that can be stored by yourself.
-    retrieved: '2026-10-21'
-    note: Wayback capture of 2026-04-22.
+    quote: "Fitrockr can provide a full data base dump as BSON file format that can be stored by yourself."
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-04-22 at https://www.fitrockr.com/research/help-center/long-term-data-storage/)."
   - url: https://www.fitrockr.com/data-export-enhancements/
-    fetch_url: https://web.archive.org/web/20261007165317/https://www.fitrockr.com/data-export-enhancements/
     type: vendor_page
-    quote: The platform now supports 41 distinct export options.
-    retrieved: '2026-10-21'
-    note: Wayback capture of 2026-10-07.
-  recheck_by: '2026-11-04'
+    quote: "The platform now supports 41 distinct export options."
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-10-07)."
+  recheck_by: '2026-11-30'
 - field: rate_limits
   status: not_public
-  confidence: Reported
+  confidence: Verified
   sources:
   - url: https://www.fitrockr.com/help-center/fitrockr-api/
-    fetch_url: https://web.archive.org/web/20250909230659/https://www.fitrockr.com/help-center/fitrockr-api/
     type: vendor_docs
-    retrieved: '2026-10-21'
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2025-09-09)."
   - url: https://www.fitrockr.com/api-access/
-    fetch_url: https://web.archive.org/web/20260616115304/https://www.fitrockr.com/api-access/
     type: vendor_page
-    retrieved: '2026-10-21'
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-06-16)."
   - url: https://www.fitrockr.com/health-solutions/terms-of-use/
     type: vendor_legal
-    retrieved: '2026-10-21'
-    note: 2026-09-19 terms, read by researcher B.
-  recheck_by: '2026-11-04'
-  note: API documentation is given to customers on request and is not public. Researcher B reports the 2026-09-19
-    terms forbid automated access that exceeds "documented API or usage limits", so limits exist but are not published.
+    retrieved: '2026-10-31'
+    note: "2026-09-19 terms, read by researcher B. Re-read live 2026-10-31."
+  recheck_by: '2026-11-30'
+  note: "API documentation is given to customers on request and is not public. The 2026-09-19 terms (read live 2026-10-31) forbid automated access that \"materially exceeds documented API or usage limits\", so limits exist but are not published; the API help article only recommends fetching data hourly or daily, not at second or minute level."
 - field: retention_terms
   status: stated
   value: Each research project runs on its own server instance, deleted with all data at the end of the study. Under the
-    2026-09-19 terms (researcher B's reading), Fitrockr deletes or returns customer data after a post-termination
+    2026-09-19 terms, Fitrockr deletes or returns customer data after a post-termination
     retrieval period, unless law or a written agreement says otherwise. Read-only access after the project is the paid
     Data Vault add-on; a free BSON database dump is the self-storage route.
-  confidence: Reported
+  confidence: Verified
   sources:
-  - url: https://www.fitrockr.com/research/help-center/privacy-security/
-    fetch_url: https://web.archive.org/web/20260429195431/https://www.fitrockr.com/research/help-center/privacy-security/
+  - url: https://www.fitrockr.com/help-center/privacy-security/
     type: vendor_docs
-    quote: Each research project receives its own server instance which will be completely deleted including all data
-      at the end of the study.
-    retrieved: '2026-10-21'
-    note: Wayback capture of 2026-04-29; researcher B read the same sentence on the live /help-center/privacy-security/.
+    quote: "Each research project receives its own server instance which will be completely deleted including all data at the end of the study."
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-04-29 at https://www.fitrockr.com/research/help-center/privacy-security/)."
   - url: https://www.fitrockr.com/health-solutions/terms-of-use/
     type: vendor_legal
-    quote: Unless otherwise required by law or agreed in writing, Fitrockr will delete or return Customer Data following
-      the applicable post-termination retrieval period.
-    retrieved: '2026-10-21'
-    note: 2026-09-19 terms, read by researcher B on 2026-10-21; site blocks scripts, not re-confirmed by the judge.
+    quote: "Unless otherwise required by law or agreed in writing, Fitrockr will delete or return Customer Data following the applicable post-termination retrieval period."
+    retrieved: '2026-10-31'
+    note: "2026-09-19 terms. Re-read live 2026-10-31."
   - url: https://www.fitrockr.com/data-vault/
-    fetch_url: https://web.archive.org/web/20260414153944/https://www.fitrockr.com/data-vault/
     type: vendor_page
-    quote: Secure, hosted storage of your collected data with read-only access after your main project phase.
-    retrieved: '2026-10-21'
-    note: Wayback capture of 2026-04-14.
-  - url: https://www.fitrockr.com/research/help-center/long-term-data-storage/
-    fetch_url: https://web.archive.org/web/20260422051637/https://www.fitrockr.com/research/help-center/long-term-data-storage/
+    quote: "Secure, hosted storage of your collected data with read-only access after your main project phase."
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-04-14)."
+  - url: https://www.fitrockr.com/help-center/long-term-data-storage/
     type: vendor_docs
-    quote: Fitrockr can provide a full data base dump as BSON file format that can be stored by yourself.
-    retrieved: '2026-10-21'
-  recheck_by: '2026-11-04'
+    quote: "Fitrockr can provide a full data base dump as BSON file format that can be stored by yourself."
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-04-22 at https://www.fitrockr.com/research/help-center/long-term-data-storage/)."
+  recheck_by: '2026-11-30'
   note: 'The previous terms (effective 2025-11-09, capture 2026-05-11) said "Provider irreversibly deletes all data at
     the end of Service"; the 2026-09-19 version adds the retrieval period and the option to return data. The January
     2026 privacy policy (capture 2026-05-11) said a deleted participant account''s activity log is kept anonymously.
     Whether the BSON dump is free is not stated in the quoted sentence; the help article lists no fee.'
 - field: ai_training_terms
   status: stated
-  value: Under the 2026-09-19 terms and privacy policy (researcher B's reading), Fitrockr will not use identifiable
+  value: Under the 2026-09-19 terms and privacy policy, Fitrockr will not use identifiable
     customer or participant health data to train general-purpose AI models unrelated to the customer's project. It may
     create and use aggregated or irreversibly anonymised data, which is not excluded from training.
-  confidence: Reported
+  confidence: Verified
   sources:
   - url: https://www.fitrockr.com/health-solutions/terms-of-use/
     type: vendor_legal
-    quote: Fitrockr will not use identifiable Customer Data or identifiable participant health data to train
-      general-purpose AI models unrelated to the Customer’s Project.
-    retrieved: '2026-10-21'
-    note: Read by researcher B on 2026-10-21; site blocks scripts, not re-confirmed by the judge.
+    quote: "Fitrockr will not use identifiable Customer Data or identifiable participant health data to train general-purpose AI models unrelated to the Customer’s Project."
+    retrieved: '2026-10-31'
+    note: "Re-read live 2026-10-31."
   - url: https://www.fitrockr.com/health-solutions/terms-of-use/
     type: vendor_legal
-    quote: Fitrockr may create aggregated or irreversibly anonymized information derived from use of the Service
-    retrieved: '2026-10-21'
-    note: Read by researcher B on 2026-10-21.
+    quote: "Fitrockr may create aggregated or irreversibly anonymized information derived from use of the Service"
+    retrieved: '2026-10-31'
+    note: "Re-read live 2026-10-31."
   - url: https://www.fitrockr.com/health-solutions/privacy-policy/
     type: vendor_legal
-    quote: we do not use identifiable health data belonging to customers or research participants to train
-      general-purpose AI models for unrelated purposes.
-    retrieved: '2026-10-21'
-    note: 2026-09-19 privacy policy, read by researcher B on 2026-10-21.
-  - url: https://www.fitrockr.com/research/help-center/privacy-security/
-    fetch_url: https://web.archive.org/web/20260429195431/https://www.fitrockr.com/research/help-center/privacy-security/
+    quote: "we do not use identifiable health data belonging to customers or research participants to train general-purpose AI models for unrelated purposes."
+    retrieved: '2026-10-31'
+    note: "2026-09-19 privacy policy. Re-read live 2026-10-31."
+  - url: https://www.fitrockr.com/help-center/privacy-security/
     type: vendor_docs
-    quote: Data is only used for the project purpose.
-    retrieved: '2026-10-21'
-    note: Wayback capture of 2026-04-29; the older purpose-limitation statement.
-  recheck_by: '2026-11-04'
+    quote: "Data is only used for the project purpose."
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-04-29 at https://www.fitrockr.com/research/help-center/privacy-security/)."
+  recheck_by: '2026-11-30'
   note: The clause is narrow. Training on identifiable data for project-related or otherwise lawfully authorised
     purposes, and on aggregated or anonymised data generally, is not excluded. The previous terms (2025-11-09) and
     privacy policy (2026-01-28) had no AI or model-training language (researcher A, captures).
@@ -632,138 +562,115 @@ facts:
     Venu Sq, Venu, Lily, Instinct, Instinct Solar, Forerunner 245, 45, 55); Garmin Connect sync is unaffected. The old
     iOS participant app (id1553631734) no longer has an App Store page; the current app is Fitrockr Sync. The
     2026-09-19 terms say third-party integrations are not guaranteed to stay available.'
-  confidence: Reported
+  confidence: Verified
   sources:
-  - url: https://www.fitrockr.com/research/help-center/important-update-upcoming-transition-to-new-garmin-sync-technology/
-    fetch_url: https://web.archive.org/web/20260429195431/https://www.fitrockr.com/research/help-center/important-update-upcoming-transition-to-new-garmin-sync-technology/
+  - url: https://www.fitrockr.com/help-center/important-update-upcoming-transition-to-new-garmin-sync-technology/
     type: vendor_docs
-    quote: Fitrockr will update to a new and improved Garmin sync technology within the next weeks (by Sep 7, 2025).
-    retrieved: '2026-10-21'
-    note: Wayback capture of 2026-04-29; researcher B read the same article at its new /help-center/ URL.
-  - url: https://www.fitrockr.com/research/help-center/important-update-upcoming-transition-to-new-garmin-sync-technology/
-    fetch_url: https://web.archive.org/web/20260429195431/https://www.fitrockr.com/research/help-center/important-update-upcoming-transition-to-new-garmin-sync-technology/
+    quote: "Fitrockr will update to a new and improved Garmin sync technology within the next weeks (by Sep 7, 2025)."
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-04-29 at https://www.fitrockr.com/research/help-center/important-update-upcoming-transition-to-new-garmin-sync-technology/)."
+  - url: https://www.fitrockr.com/help-center/important-update-upcoming-transition-to-new-garmin-sync-technology/
     type: vendor_docs
-    quote: sleep data provision will no longer be supported by Garmin for the following device models
-    retrieved: '2026-10-21'
-  - url: https://www.fitrockr.com/research/help-center/important-update-upcoming-transition-to-new-garmin-sync-technology/
-    fetch_url: https://web.archive.org/web/20260429195431/https://www.fitrockr.com/research/help-center/important-update-upcoming-transition-to-new-garmin-sync-technology/
+    quote: "sleep data provision will no longer be supported by Garmin for the following device models"
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-04-29 at https://www.fitrockr.com/research/help-center/important-update-upcoming-transition-to-new-garmin-sync-technology/)."
+  - url: https://www.fitrockr.com/help-center/important-update-upcoming-transition-to-new-garmin-sync-technology/
     type: vendor_docs
-    quote: This limitation applies only to projects that use the ‘Fitrockr app’ for syncing
-    retrieved: '2026-10-21'
+    quote: "This limitation applies only to projects that use the ‘Fitrockr app’ for syncing"
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-04-29 at https://www.fitrockr.com/research/help-center/important-update-upcoming-transition-to-new-garmin-sync-technology/)."
   - url: https://apps.apple.com/us/app/fitrockr-hub-garmin-sync/id1553631734
     type: app_store
     expect_absent: true
-    retrieved: '2026-10-21'
-    note: Returns 404, confirmed 2026-10-21.
+    retrieved: '2026-10-31'
+    note: "Returns 404, confirmed 2026-10-21."
   - url: https://apps.apple.com/us/app/fitrockr-sync/id6480404044
     type: app_store
-    quote: Fitrockr Sync is the participant and patient app for the Fitrockr Health Solutions platform
-    retrieved: '2026-10-21'
+    quote: "Fitrockr Sync is the participant and patient app for the Fitrockr Health Solutions platform"
+    retrieved: '2026-10-31'
   - url: https://www.fitrockr.com/health-solutions/terms-of-use/
     type: vendor_legal
-    quote: Fitrockr will use reasonable efforts to maintain supported integrations but does not guarantee that a
-      third-party integration will remain available indefinitely.
-    retrieved: '2026-10-21'
-    note: Read by researcher B on 2026-10-21; site blocks scripts, not re-confirmed by the judge.
-  recheck_by: '2026-11-04'
+    quote: "Fitrockr will use reasonable efforts to maintain supported integrations but does not guarantee that a third-party integration will remain available indefinitely."
+    retrieved: '2026-10-31'
+    note: "Re-read live 2026-10-31."
+  recheck_by: '2026-11-30'
 # ---------------- Compliance ----------------
 - field: baa
   status: stated
   value: Offered where Fitrockr handles protected health information for a HIPAA covered entity; the 2026-09-19
-    privacy policy says Fitrockr may then act as a Business Associate under a BAA (researcher B's reading). The BAA text
+    privacy policy says Fitrockr may then act as a Business Associate under a BAA. The BAA text
     is not published.
-  confidence: Reported
+  confidence: Corroborated
   sources:
   - url: https://www.fitrockr.com/health-solutions/privacy-policy/
     type: vendor_legal
-    quote: Fitrockr may act as a Business Associate and the applicable Business Associate Agreement governs the
-      relevant processing.
-    retrieved: '2026-10-21'
-    note: Read by researcher B on 2026-10-21; site blocks scripts, not re-confirmed by the judge.
-  - url: https://www.fitrockr.com/health-solutions/privacy-policy/
-    fetch_url: https://web.archive.org/web/20260511152739/https://www.fitrockr.com/health-solutions/privacy-policy/
-    type: vendor_legal
-    retrieved: '2026-10-21'
-    note: The previous policy ("Last updated Jan 28, 2026", capture 2026-05-11) has no "Business Associate" text,
-      checked by the judge.
-  recheck_by: '2026-11-04'
-  note: Self-claim; capped at Corroborated even once re-read live. Researcher A recorded not_public from the older
-    pages; the offer is new in the 2026-09-19 policy.
+    quote: "Fitrockr may act as a Business Associate and the applicable Business Associate Agreement governs the relevant processing."
+    retrieved: '2026-10-31'
+    note: "Re-read live 2026-10-31."
+  recheck_by: '2027-01-29'
+  note: "Self-claim; capped at Corroborated. The offer is new in the 2026-09-19 policy: the previous policy (\"Last updated Jan 28, 2026\", Wayback capture of 2026-05-11) had no \"Business Associate\" text, checked by the judge on 2026-10-21. Researcher A had recorded not_public from the older pages."
 - field: dpa
   status: stated
   value: Yes, where required. Fitrockr acts as processor for customer data, and a separate Data Processing Agreement
     governs the processing. The DPA text is not published.
-  confidence: Reported
+  confidence: Corroborated
   sources:
   - url: https://www.fitrockr.com/health-solutions/terms-of-use/
     type: vendor_legal
-    quote: Where Fitrockr processes personal data on behalf of the Customer, the parties will enter into a Data
-      Processing Agreement where required.
-    retrieved: '2026-10-21'
-    note: 2026-09-19 terms, read by researcher B on 2026-10-21; site blocks scripts, not re-confirmed by the judge.
-  - url: https://www.fitrockr.com/health-solutions/terms-of-use/
-    fetch_url: https://web.archive.org/web/20260511153050/https://www.fitrockr.com/health-solutions/terms-of-use/
-    type: vendor_legal
-    quote: 5.2 A separate Data Processing Agreement (DPA) governs details of personal data processing.
-    retrieved: '2026-10-21'
-    note: Terms effective 2025-11-09, Wayback capture of 2026-05-11 (superseded version).
-  recheck_by: '2026-11-04'
+    quote: "Where Fitrockr processes personal data on behalf of the Customer, the parties will enter into a Data Processing Agreement where required."
+    retrieved: '2026-10-31'
+    note: "2026-09-19 terms. Re-read live 2026-10-31."
+  recheck_by: '2027-01-29'
 - field: hipaa_statement
   status: stated
   value: Fitrockr says it complies with HIPAA and markets itself as "HIPAA certified"; a 2023 news post says it
     "received the certification" but names no certifier (HHS issues no HIPAA certification). The 2026-09-19 privacy
     policy adds that processing health data does not by itself make every service subject to HIPAA.
-  confidence: Reported
+  confidence: Corroborated
   sources:
-  - url: https://www.fitrockr.com/research/help-center/privacy-security/
-    fetch_url: https://web.archive.org/web/20260429195431/https://www.fitrockr.com/research/help-center/privacy-security/
+  - url: https://www.fitrockr.com/help-center/privacy-security/
     type: vendor_docs
-    quote: We comply to HIPAA – the Health Insurance Portability and Accountability Act
-    retrieved: '2026-10-21'
-    note: Wayback capture of 2026-04-29.
+    quote: "We comply to HIPAA – the Health Insurance Portability and Accountability Act"
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-04-29 at https://www.fitrockr.com/research/help-center/privacy-security/)."
   - url: https://www.fitrockr.com/fitrockr-received-hipaa-certification/
-    fetch_url: https://web.archive.org/web/20260422051211/https://www.fitrockr.com/fitrockr-received-hipaa-certification/
     type: vendor_page
-    quote: we have worked on HIPAA compliance and have successfully received the certification
-    retrieved: '2026-10-21'
-    note: Post dated 2023-01-01, Wayback capture of 2026-04-22.
+    quote: "we have worked on HIPAA compliance and have successfully received the certification"
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-04-22)."
   - url: https://www.fitrockr.com/features/
     type: vendor_page
-    quote: We are HIPAA certified
-    retrieved: '2026-10-21'
-    note: Read by researcher B on 2026-10-21; site blocks scripts, not re-confirmed by the judge.
+    quote: "We are HIPAA certified"
+    retrieved: '2026-10-31'
+    note: "Re-read live 2026-10-31."
   - url: https://www.fitrockr.com/health-solutions/privacy-policy/
     type: vendor_legal
-    quote: the fact that Fitrockr processes health information does not by itself make every Fitrockr service subject
-      to HIPAA
-    retrieved: '2026-10-21'
-    note: 2026-09-19 privacy policy, read by researcher B on 2026-10-21.
-  recheck_by: '2026-11-04'
+    quote: "the fact that Fitrockr processes health information does not by itself make every Fitrockr service subject to HIPAA"
+    retrieved: '2026-10-31'
+    note: "2026-09-19 privacy policy. Re-read live 2026-10-31."
+  recheck_by: '2027-01-29'
 - field: gdpr_statement
   status: stated
   value: Fitrockr (Digital Rebels GmbH, Berlin) says it complies with GDPR, acts as data processor for customer data
     under German law, and (2026-09-19 privacy policy) uses Chapter V transfer mechanisms for data leaving the EEA.
-  confidence: Reported
+  confidence: Corroborated
   sources:
-  - url: https://www.fitrockr.com/research/help-center/privacy-security/
-    fetch_url: https://web.archive.org/web/20260429195431/https://www.fitrockr.com/research/help-center/privacy-security/
+  - url: https://www.fitrockr.com/help-center/privacy-security/
     type: vendor_docs
-    quote: We comply to GDPR – the General Data Protection Regulation
-    retrieved: '2026-10-21'
-    note: Wayback capture of 2026-04-29.
-  - url: https://www.fitrockr.com/health-solutions/terms-of-use/
-    fetch_url: https://web.archive.org/web/20260511153050/https://www.fitrockr.com/health-solutions/terms-of-use/
-    type: vendor_legal
-    quote: 5.1 Provider acts as Data Processor for Customer Data.
-    retrieved: '2026-10-21'
-    note: Terms effective 2025-11-09 (superseded).
+    quote: "We comply to GDPR – the General Data Protection Regulation"
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-04-29 at https://www.fitrockr.com/research/help-center/privacy-security/)."
   - url: https://www.fitrockr.com/health-solutions/privacy-policy/
     type: vendor_legal
-    quote: Where the GDPR applies and personal data is transferred outside the EEA, we use an appropriate transfer
-      mechanism under Chapter V GDPR.
-    retrieved: '2026-10-21'
-    note: 2026-09-19 privacy policy, read by researcher B on 2026-10-21; not re-confirmed by the judge.
-  recheck_by: '2026-11-04'
+    quote: "Where the GDPR applies and personal data is transferred outside the EEA, we use an appropriate transfer mechanism under Chapter V GDPR."
+    retrieved: '2026-10-31'
+    note: "2026-09-19 privacy policy. Re-read live 2026-10-31."
+  - url: https://www.fitrockr.com/health-solutions/terms-of-use/
+    type: vendor_legal
+    quote: "Where Fitrockr processes personal data on behalf of the Customer, the parties will enter into a Data Processing Agreement where required."
+    retrieved: '2026-10-31'
+    note: "2026-09-19 terms, read live 2026-10-31. Replaces the superseded 2025-11-09 terms line \"5.1 Provider acts as Data Processor for Customer Data.\""
+  recheck_by: '2027-01-29'
   note: Two company addresses are published. The January 2026 privacy policy gives Friedrichstr. 155, 10117 Berlin; the
     2025-11-09 terms give Friedrichstraße 114A, 10117 Berlin (both in captures of 2026-05-11).
 - field: iso27001
@@ -771,47 +678,45 @@ facts:
   value: Claimed for the cloud hosting centre only, not for Fitrockr itself; the hosting provider and certificate are
     not named, and no certificate naming Fitrockr or Digital Rebels GmbH was found. Fitrockr separately claims Google
     CASA certification, with no letter of validation published.
-  confidence: Reported
+  confidence: Corroborated
   sources:
-  - url: https://www.fitrockr.com/research/help-center/privacy-security/
-    fetch_url: https://web.archive.org/web/20260429195431/https://www.fitrockr.com/research/help-center/privacy-security/
+  - url: https://www.fitrockr.com/help-center/privacy-security/
     type: vendor_docs
-    quote: Our Cloud hosting center is ISO/IEC 27001 certified
-    retrieved: '2026-10-21'
-    note: Wayback capture of 2026-04-29.
+    quote: "Our Cloud hosting center is ISO/IEC 27001 certified"
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-04-29 at https://www.fitrockr.com/research/help-center/privacy-security/)."
   - url: https://www.fitrockr.com/features/
     type: vendor_page
-    quote: Our Cloud hosting center is ISO/IEC 27001 certified and follows international standards on how to manage
-      information security.
-    retrieved: '2026-10-21'
-    note: Read by researcher B on 2026-10-21; site blocks scripts, not re-confirmed by the judge.
+    quote: "Our Cloud hosting center is ISO/IEC 27001 certified and follows international standards on how to manage information security."
+    retrieved: '2026-10-31'
+    note: "Re-read live 2026-10-31."
   - url: https://www.fitrockr.com/features/
     type: vendor_page
-    quote: We are CASA certified
-    retrieved: '2026-10-21'
-    note: Read by researcher B on 2026-10-21.
-  recheck_by: '2026-11-04'
+    quote: "We are CASA certified"
+    retrieved: '2026-10-31'
+    note: "Re-read live 2026-10-31."
+  recheck_by: '2027-01-29'
 - field: soc2
   status: not_public
-  confidence: Reported
+  confidence: Corroborated
   sources:
-  - url: https://www.fitrockr.com/research/help-center/privacy-security/
-    fetch_url: https://web.archive.org/web/20260429195431/https://www.fitrockr.com/research/help-center/privacy-security/
+  - url: https://www.fitrockr.com/help-center/privacy-security/
     type: vendor_docs
-    retrieved: '2026-10-21'
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-04-29 at https://www.fitrockr.com/research/help-center/privacy-security/)."
   - url: https://www.fitrockr.com/health-solutions/terms-of-use/
-    fetch_url: https://web.archive.org/web/20260511153050/https://www.fitrockr.com/health-solutions/terms-of-use/
     type: vendor_legal
-    retrieved: '2026-10-21'
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-05-11)."
   - url: https://www.fitrockr.com/features/
     type: vendor_page
-    retrieved: '2026-10-21'
-    note: Read by researcher B on 2026-10-21.
+    retrieved: '2026-10-31'
+    note: "Re-read live 2026-10-31."
   - url: https://www.fitrockr.com/health-solutions/privacy-policy/
     type: vendor_legal
-    retrieved: '2026-10-21'
-    note: 2026-09-19 policy, read by researcher B on 2026-10-21.
-  recheck_by: '2026-11-04'
+    retrieved: '2026-10-31'
+    note: "2026-09-19 policy. Re-read live 2026-10-31."
+  recheck_by: '2027-01-29'
   note: No SOC 2 claim on any page checked; the security claims are ISO 27001 (hosting centre), CASA, GDPR and HIPAA.
 - field: fda_clearances
   status: not_public
@@ -821,23 +726,23 @@ facts:
     fetch_url: https://api.fda.gov/device/510k.json?search=applicant:%22digital+rebels%22
     type: regulator_db
     expect_absent: true
-    retrieved: '2026-10-21'
+    retrieved: '2026-10-31'
   - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm
     fetch_url: https://api.fda.gov/device/510k.json?search=device_name:fitrockr
     type: regulator_db
     expect_absent: true
-    retrieved: '2026-10-21'
+    retrieved: '2026-10-31'
   - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRL/rl.cfm
     fetch_url: https://api.fda.gov/device/registrationlisting.json?search=registration.name:%22digital+rebels%22
     type: regulator_db
     expect_absent: true
-    retrieved: '2026-10-21'
+    retrieved: '2026-10-31'
   - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRL/rl.cfm
     fetch_url: https://api.fda.gov/device/registrationlisting.json?search=proprietary_name:fitrockr
     type: regulator_db
     expect_absent: true
-    retrieved: '2026-10-21'
-  recheck_by: '2027-01-19'
+    retrieved: '2026-10-31'
+  recheck_by: '2027-01-29'
   note: openFDA returned NOT_FOUND for every query on 2026-10-21 (510(k) by applicant and device name, registration and
     listing by establishment and proprietary name). Fitrockr is a software data platform and makes no device claims.
 - field: data_residency
@@ -845,31 +750,31 @@ facts:
   value: Default hosting in an ISO-certified data centre in Germany (included); the security help page says Germany or
     Switzerland. Hosting in a country of the customer's choice (for example the US), on-premise self-hosting and
     military on-premise hosting in a closed network are add-ons.
-  confidence: Reported
+  confidence: Verified
   sources:
   - url: https://www.fitrockr.com/country-of-choice-cloud-hosting/
-    fetch_url: https://web.archive.org/web/20260617193313/https://www.fitrockr.com/country-of-choice-cloud-hosting/
     type: vendor_page
-    quote: By default, the Fitrockr platform is hosted at an ISO-certified hosting center in Germany
-    retrieved: '2026-10-21'
-    note: Wayback capture of 2026-06-17.
+    quote: "By default, the Fitrockr platform is hosted at an ISO-certified hosting center in Germany"
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-06-17)."
   - url: https://www.fitrockr.com/country-of-choice-cloud-hosting/
-    fetch_url: https://web.archive.org/web/20260617193313/https://www.fitrockr.com/country-of-choice-cloud-hosting/
     type: vendor_page
-    quote: We host for you at a cloud in your country
-    retrieved: '2026-10-21'
-  - url: https://www.fitrockr.com/research/help-center/privacy-security/
-    fetch_url: https://web.archive.org/web/20260429195431/https://www.fitrockr.com/research/help-center/privacy-security/
+    quote: "We host for you at a cloud in your country"
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-06-17)."
+  - url: https://www.fitrockr.com/help-center/privacy-security/
     type: vendor_docs
-    quote: ISO-certified cloud servers located in Germany or Switzerland.
-    retrieved: '2026-10-21'
-    note: Wayback capture of 2026-04-29; researcher B read the same sentence on the live /help-center/ page.
-  - url: https://www.fitrockr.com/research/pricing/
-    fetch_url: https://web.archive.org/web/20260713062111/https://www.fitrockr.com/research/pricing/
+    quote: "ISO-certified cloud servers located in Germany or Switzerland."
+    retrieved: '2026-10-31'
+    note: "Read live 2026-10-31 (until then a Wayback capture of 2026-04-29 at https://www.fitrockr.com/research/help-center/privacy-security/)."
+  - url: https://www.fitrockr.com/pricing/
     type: vendor_page
-    quote: (Military) On-Premise Hosting €5.000 + 20% on license
-    retrieved: '2026-10-21'
-  recheck_by: '2026-11-04'
-  note: The vendor's pages disagree mildly (Germany only versus Germany or Switzerland); which centre a given project
-    uses is not stated. Researcher B reports the 2026-09-19 privacy policy says data may be processed in the EEA, the US
-    or elsewhere depending on the hosting chosen.
+    quote: "(Military) On-Premise Hosting Host the Fitrockr platform and data on your own local servers, giving you full control over infrastructure and data location. €5.000 setup + 20% on license"
+    retrieved: '2026-10-31'
+  - url: https://www.fitrockr.com/health-solutions/privacy-policy/
+    type: vendor_legal
+    quote: "Depending on the selected hosting environment, customer configuration, service provider and project, personal data may be processed in:"
+    retrieved: '2026-10-31'
+    note: "2026-09-19 privacy policy, read live 2026-10-31. The list that follows is the European Economic Area, the United States, and other countries in which an authorized service provider operates."
+  recheck_by: '2027-01-29'
+  note: "The vendor's pages disagree mildly (Germany only versus Germany or Switzerland); which centre a given project uses is not stated. The 2026-09-19 privacy policy (read live 2026-10-31) says data may be processed in the EEA, the United States or other countries, depending on the hosting chosen."

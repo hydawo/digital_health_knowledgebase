@@ -96,23 +96,23 @@ facts:
     quote: Interested researchers send an application to the Movesense team via an online form. The application includes
       a short description of the project, project timeline, and a description of how the Movesense sensors would be
       used.
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://www.movesense.com/movesense-academic-program/
     type: vendor_page
     quote: Movesense team reviews the applications on a monthly basis and invites up to three projects per quarter to
       the program.
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://docs.google.com/forms/d/e/1FAIpQLSe4R4gB78sni_M-LH1VJOWL-1j_h4mEo55T7MY0gp1KcLXFXA/viewform
     type: vendor_page
     quote: Movesense team reviews the applications on weekly basis and invites up to three projects per quarter to the
       program.
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://www.movesense.com/movesense-academic-program/
     type: vendor_page
     quote: Movesense team has the right to select applications at its own consideration and is not obliged to explain
       why a project was selected or not selected to the program.
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: The form (linked from the program page as APPLY HERE, short link forms.gle/3TbrtfVbdAXFdM2S7) was accepting
     responses on 2026-10-11. It still says the program was initiated by the Movesense team at Suunto, which has been
     out of date since the October 2021 management buy-out. The conflict is minor (cadence only); the steps agree.
@@ -566,20 +566,20 @@ facts:
   - url: https://www.movesense.com/docs/esw/api_reference/
     type: vendor_docs
     quote: '"SampleRates": [ 13, 26, 52, 104, 208, 416, 833, 1666 ], "AccRanges": [ 2, 4, 8, 16 ]'
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://www.movesense.com/product/movesense-flash-developer-kit/
     type: vendor_page
     quote: 'Accelerometer, range :±2/±4/±8/±16 g full scale, sampling frequency: 12.5/26/52/104/208/416 Hz'
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://www.movesense.com/product/movesense-sensor-hr2/
     type: vendor_page
     quote: 'sampling frequency: 12.5/26/52/104/208/416/833 Hz'
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://www.movesense.com/docs/esw/api_reference/
     type: vendor_docs
     quote: Please note that using highest sample rates may be limited by the BLE bandwidth.
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: The 1666 Hz figure appears only in example API responses, not on any product spec sheet. Whether 1666 Hz is
     usable on every model, and whether it survives BLE streaming or only on-sensor logging, needs vendor confirmation.
     The KB's "1.6 kHz IMU" headline rests on the API example alone.
@@ -660,8 +660,8 @@ facts:
     type: vendor_page
     quote: If you integrate the sensors into your own application, you can decide where the data is stored. It does
       not go to Movesense servers.
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: There is no cloud or web API. Throughput is bounded by Bluetooth LE bandwidth instead (see sampling_rates).
 - field: retention_terms
   scope: Own app or Movesense developer tools
@@ -714,8 +714,8 @@ facts:
     type: vendor_page
     quote: If you integrate the sensors into your own application, you can decide where the data is stored. It does
       not go to Movesense servers.
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: Data never reaches Movesense on this route, so no use by Movesense arises.
 - field: ai_training_terms
   scope: Movesense ECG Recorder app (CardioRTHM)

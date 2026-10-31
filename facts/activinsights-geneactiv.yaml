@@ -196,11 +196,11 @@ facts:
   - url: https://web.fibion.com/articles/best-accelerometers-circadian-rhythm-research/
     type: secondary
     quote: 'Device Price: GENEActiv 0.5 GB: £425–£510'
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://web.fibion.com/articles/ambulatory-physical-activity-large-cohort-cost-scalability/
     type: secondary
     quote: Approximately £425–£510 per device , depending on memory configuration (0.5 GB vs 1.0 GB)
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://activinsights.com/wp-content/uploads/2026/02/IFU-GENEActiv-Rev.010.pdf
     type: vendor_docs
     quote: The device is reusable with a lifetime of 50 charging cycles or 2 years from the date of purchase.
@@ -213,7 +213,7 @@ facts:
     retrieved: '2026-10-11'
   - url: https://www.firstnationgroup.com/products/geneactiv-original-single-unit-pack-w-software-1-strap-1-unit
     type: secondary
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   recheck_by: '2026-11-10'
   note: Both price figures come from Fibion, which sells competing devices, and they describe the range differently
     (one page ties it to 0.5 GB, the other to 0.5 vs 1.0 GB); current GENEActiv 1.2 and 1.3 have 2.0 GB, so the
@@ -242,7 +242,7 @@ facts:
   - url: https://apps.apple.com/us/app/geneactiv-software/id1658154045
     type: app_store
     quote: GENEActiv Software Manage GENEActiv devices Only for Mac Free
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://activinsights.com/digital-health-technologies/activinsights-actigraphy-sleep-toolkit/
     type: vendor_page
     quote: Our web-based Sleep Toolkit is free, intuitive, and built for researchers and clinicians.
@@ -368,7 +368,7 @@ facts:
   - url: https://github.com/wadpac/GGIRread/releases/tag/1.0.11
     type: repository
     quote: Added GENEActiv light calibration needed for device model GENEActiv 1.2 and above.
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   recheck_by: '2026-11-10'
   note: Light data from GENEActiv 1.2 and later need the calibration added in GGIRread 1.0.11 (September 2026);
     older GGIRread versions read it uncalibrated.
@@ -562,7 +562,7 @@ facts:
   - url: https://cran.r-project.org/web/packages/GENEAread/index.html
     type: repository
     quote: Functions and analytics for GENEA-compatible accelerometer data into R objects.
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   recheck_by: '2026-11-10'
   note: Each adherence sync extracts and then erases the adherence data on the device (IFU). The Study Management Hub
     (demo by request) gives real-time device and participant status and adherence.
@@ -625,7 +625,7 @@ facts:
   - url: https://play.google.com/store/apps/details?id=com.activinsights.banduploader
     type: app_store
     quote: Data can’t be deleted
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   recheck_by: '2026-11-10'
   note: The Google Play data-safety label for the ActivInsights Companion app says data cannot be deleted, which sits
     awkwardly with the erasure rights in the privacy notices.
@@ -670,11 +670,11 @@ facts:
   - url: https://play.google.com/store/apps/details?id=com.activinsights.banduploader
     type: app_store
     quote: Rebrand with support for both GENEActiv and ActivInsights Band devices
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://apps.apple.com/us/app/geneactiv-software/id1658154045
     type: app_store
     quote: Adds full support for GENEActiv 1.3 devices
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://activinsights.com/resources/geneactiv-support-1-2/
     type: vendor_page
     quote: If you require information for GENEActiv devices with serial numbers beginning with 0xxxxx, please contact

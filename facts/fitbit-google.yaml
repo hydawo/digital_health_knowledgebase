@@ -228,17 +228,17 @@ facts:
   sources:
   - url: https://developers.google.com/health/about
     type: vendor_docs
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
   - url: https://developers.google.com/health/app-verification
     type: vendor_docs
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
   - url: https://developers.google.com/health/policies/health-api-user-data-and-research-policy
     type: vendor_legal
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
   - url: https://developers.google.com/health/policies/health-api-developer-user-data-policy
     type: vendor_legal
-    retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: No academic tier, price or access difference is published. Research apps carry extra obligations (review board, attestation,
     participant disclosures) under the Health Research Policy, which the Developer and User Data Policy makes mandatory for
     IRB-overseen research. Intraday data is available through the list endpoint for all developers, so the legacy intraday
@@ -257,36 +257,40 @@ facts:
 - field: device_price
   status: stated
   scope: Fitbit Charge 6 (US)
-  value: $159.95 (Google Store US)
+  value: List $159.95 (Google Store US); on sale at $129.95 on 2026-10-31
   confidence: Verified
   sources:
   - url: https://store.google.com/us/product/fitbit_charge_6?hl=en-US
     type: vendor_page
-    retrieved: '2026-10-10'
-    quote: Fitbit Charge 6 Tracker $159.95 or $13.33/month with 12-month financing
-  recheck_by: '2026-11-25'
+    retrieved: '2026-10-31'
+    quote: Fitbit Charge 6 Tracker $129.95 $159.95 or make 4 payments of $32.49
+  recheck_by: '2026-11-30'
+  note: On 2026-10-31 the store showed a sale price ($129.95) beside the struck-through list price ($159.95). The list
+    price is unchanged since 2026-10-10. Expect the quote to break when the sale ends.
 - field: device_price
   status: stated
   scope: Fitbit Versa 4 (US)
-  value: $199.95 (Google Store US)
+  value: List $199.95 (Google Store US); on sale at $159.95 on 2026-10-31
   confidence: Verified
   sources:
   - url: https://store.google.com/us/product/fitbit_versa_4?hl=en-US
     type: vendor_page
-    retrieved: '2026-10-10'
-    quote: Fitbit Versa 4 Smartwatch $199.95 or $16.66/month with 12-month financing
-  recheck_by: '2026-11-25'
+    retrieved: '2026-10-31'
+    quote: Fitbit Versa 4 Smartwatch $159.95 $199.95 or $13.33/month with 12-month financing
+  recheck_by: '2026-11-30'
+  note: On 2026-10-31 the store showed a sale price ($159.95) beside the struck-through list price ($199.95). The list
+    price is unchanged since 2026-10-10. Expect the quote to break when the sale ends.
 - field: device_price
   status: stated
   scope: Pixel Watch 5 (US)
-  value: List from $399.99 (Google Store US, 2026-10-21); it was on sale from $349.99 on 2026-10-10
+  value: List from $399.99 (Google Store US); on sale from $299.99 on 2026-10-31 and from $349.99 on 2026-10-10
   confidence: Verified
   sources:
   - url: https://store.google.com/us/product/pixel_watch_5
     type: vendor_page
-    retrieved: '2026-10-21'
-    quote: Google Pixel Watch 5 From $399.99
-  recheck_by: '2026-11-25'
+    retrieved: '2026-10-31'
+    quote: Google Pixel Watch 5 From $299.99 $399.99 Save $100
+  recheck_by: '2026-11-30'
 - field: device_price
   status: stated
   scope: Pixel Watch 4 (US)
@@ -325,20 +329,20 @@ facts:
   sources:
   - url: https://healthapp.google/enterprise-solutions/
     type: vendor_page
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
   - url: https://healthapp.google/published-studies
     type: vendor_page
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
   - url: https://developers.google.com/health/policies/health-api-user-data-and-research-policy
     type: vendor_legal
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
   - url: https://store.google.com/us/product/google_health_premium
     type: vendor_page
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
   - url: https://developers.google.com/health/about
     type: vendor_docs
-    retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: No academic or research discount found for devices, Premium or the API.
 - field: api_platform_fees
   status: stated
@@ -387,11 +391,11 @@ facts:
   sources:
   - url: https://healthapp.google/enterprise-solutions/
     type: vendor_page
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
   - url: https://healthapp.google/enterprise-contact
     type: vendor_page
-    retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: No minimum order or term published.
 - field: quote_required
   status: stated
@@ -712,23 +716,23 @@ facts:
   sources:
   - url: https://developers.google.com/health/policies/health-api-developer-terms-and-conditions
     type: vendor_legal
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
   - url: https://developers.google.com/health/policies/health-api-developer-user-data-policy
     type: vendor_legal
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
   - url: https://developers.google.com/health/policies/health-api-user-data-and-research-policy
     type: vendor_legal
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
   - url: https://developers.google.com/terms
     type: vendor_legal
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
   - url: https://developers.google.com/terms/api-services-user-data-policy
     type: vendor_legal
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
   - url: https://dev.fitbit.com/legal/platform-terms-of-service/
     type: vendor_legal
-    retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: No clause names AI or ML training. The Limited Use rules confine use of API data, including derived and anonymized
     data, to the app's user-facing purpose, which bears on model training but does not name it.
 - field: deprecations

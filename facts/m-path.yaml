@@ -207,7 +207,7 @@ facts:
 - field: device_price
   status: not_applicable
   value: Software platform; participants use their own phones. Smartwatches, if used, are bought separately.
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-30'
 - field: subscription_price
   status: stated
   value: 'Per year, excl. VAT. At 300 slots: Essential EUR 1,599, Standard EUR 2,099, Comfort EUR 3,099. At 1,000:
@@ -584,18 +584,18 @@ facts:
   sources:
   - url: https://m-path.io/pricing/
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://m-path.io/manual/knowledge-base/subscriptions-and-billing/
     type: vendor_docs
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://m-path.io/manual/knowledge-base/export-data/
     type: vendor_docs
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://m-path.io/terms-and-conditions/
     fetch_url: https://m-path.io/LegalPage/terms.html
     type: vendor_legal
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
 - field: retention_terms
   status: stated
   value: 'DPA clause 8.1: m-Path deletes controller data as soon as services end, unless the controller asks in writing
@@ -648,25 +648,25 @@ facts:
     type: vendor_legal
     quote: The User retains ownership of all content it provides but grants m-Path a worldwide, irrevocable, non-exclusive,
       royalty-free license to use the content for any purpose, including to provide and enhance the m-Path Services.
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://m-path.io/terms-and-conditions/
     fetch_url: https://m-path.io/LegalPage/terms.html
     type: vendor_legal
     quote: “User” shall mean the Client, Participant, Practitioner or Researcher using the m-Path Services.
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://m-path.io/terms-and-conditions/
     fetch_url: https://m-path.io/LegalPage/terms.html
     type: vendor_legal
     quote: m-Path also processes the personal data of Clients or Participants and Practitioners or Researcher for its
       own purposes, linked to the registration for uses, such as the use of the Services and the improvement of the
       Services.
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://m-path.io/data-processing/
     fetch_url: https://m-path.io/LegalPage/dpa.html
     type: vendor_legal
     quote: The Processor will only process the personal data on the Controller’s written instructions
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: Worth a written question to m-Path on how clause 11.7 and the DPA apply to participant data.
 - field: deprecations
   status: stated

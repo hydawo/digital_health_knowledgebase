@@ -165,17 +165,17 @@ facts:
   sources:
   - url: https://hsph.harvard.edu/research-resource/beiwe/use-beiwe/
     type: vendor_page
-    retrieved: 2026-10-10
+    retrieved: 2026-10-31
   - url: https://hsph.harvard.edu/research/onnela-lab/beiwe-service-center/
     type: vendor_page
-    retrieved: 2026-10-10
+    retrieved: 2026-10-31
   - url: https://github.com/onnela-lab/beiwe-backend/wiki/Scalability
     type: vendor_docs
-    retrieved: 2026-10-10
+    retrieved: 2026-10-31
   - url: https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-FAQs-for-Prospective-Beiwe-Users
     type: vendor_docs
-    retrieved: 2026-10-10
-  recheck_by: 2026-11-09
+    retrieved: 2026-10-31
+  recheck_by: 2026-11-30
   note: No participant or study cap is published for the BSC or for self-hosted deployments. BSC cost scales per
     Active Participant Month, and the About page prices a study of "a thousand or so subjects".
 - field: academic_vs_commercial
@@ -266,14 +266,14 @@ facts:
   sources:
   - url: https://hsph.harvard.edu/research-resource/beiwe/use-beiwe/
     type: vendor_page
-    retrieved: 2026-10-10
+    retrieved: 2026-10-31
   - url: https://hsph.harvard.edu/research/onnela-lab/beiwe-service-center/
     type: vendor_page
-    retrieved: 2026-10-10
+    retrieved: 2026-10-31
   - url: https://forms.gle/Dxx8o2vJrVopMyZv8
     type: vendor_page
-    retrieved: 2026-10-10
-  recheck_by: 2026-11-09
+    retrieved: 2026-10-31
+  recheck_by: 2026-11-30
   note: No minimum term or participant count is published. The fixed monthly fee applies for the whole study duration,
     so short or small studies cost more per participant; the smallest FY26 example is a 3-month study ($8,760).
 - field: quote_required
@@ -498,14 +498,14 @@ facts:
   sources:
   - url: https://github.com/onnela-lab/beiwe-backend/wiki/Data-Download-API
     type: vendor_docs
-    retrieved: 2026-10-10
+    retrieved: 2026-10-31
   - url: https://github.com/onnela-lab/beiwe-backend/wiki/Tableau-API
     type: vendor_docs
-    retrieved: 2026-10-10
+    retrieved: 2026-10-31
   - url: https://github.com/onnela-lab/beiwe-backend/blob/main/gunicorn_conf.py
     type: repository
-    retrieved: 2026-10-10
-  recheck_by: 2026-11-09
+    retrieved: 2026-10-31
+  recheck_by: 2026-11-30
   note: No API rate limit is documented and none was found configured in the repository; self-hosted capacity is
     set by the deployer's servers. The Tableau summary-statistics queries time out after 60 seconds (profile).
 - field: retention_terms
@@ -543,20 +543,20 @@ facts:
   sources:
   - url: https://hsph.harvard.edu/research-resource/beiwe/use-beiwe/
     type: vendor_page
-    retrieved: 2026-10-10
+    retrieved: 2026-10-31
   - url: https://hsph.harvard.edu/research/onnela-lab/beiwe-service-center/
     type: vendor_page
-    retrieved: 2026-10-10
+    retrieved: 2026-10-31
   - url: https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-Beiwe-Data-Privacy-and-Security
     type: vendor_docs
-    retrieved: 2026-10-10
+    retrieved: 2026-10-31
   - url: https://github.com/onnela-lab/beiwe-backend/wiki/%5BResearchers%5D-IRB-FAQs
     type: vendor_docs
-    retrieved: 2026-10-10
+    retrieved: 2026-10-31
   - url: https://apps.apple.com/us/app/beiwe2/id1312962738
     type: app_store
-    retrieved: 2026-10-10
-  recheck_by: 2026-11-09
+    retrieved: 2026-10-31
+  recheck_by: 2026-11-30
   note: Nothing published on AI or ML training use of BSC study data. The BSC is described as not a scientific collaboration,
     but no published term bars lab reuse.
 - field: deprecations
@@ -688,27 +688,29 @@ facts:
   - url: https://github.com/onnela-lab/beiwe-android
     type: repository
     quote: Distribution via Google Play Store
-    retrieved: 2026-10-10
+    retrieved: 2026-10-31
   - url: https://github.com/onnela-lab/beiwe-android/blob/main/app/build.gradle
     type: repository
     quote: targetSdkVersion 33
     fetch_url: https://raw.githubusercontent.com/onnela-lab/beiwe-android/main/app/build.gradle
-    retrieved: 2026-10-10
+    retrieved: 2026-10-31
   - url: https://support.google.com/googleplay/android-developer/answer/11926878
     type: secondary
     quote: New apps and app updates must target Android 16 (API level 36) or higher to be submitted to Google Play
-    retrieved: 2026-10-10
+    retrieved: 2026-10-31
   - url: https://play.google.com/store/apps/details?id=org.beiwe.app
     type: app_store
-    retrieved: 2026-10-10
+    retrieved: 2026-10-31
     expect_absent: true
-  recheck_by: 2026-11-09
+  recheck_by: 2026-11-30
   note: The README describes a Google Play build (Beiwe2, without call and text logs or background location). The
     Play listing returned HTTP 404 to automated requests on 2026-10-10, and also "Not Found" in a browser the same
     day; Play searches for "beiwe" and "Beiwe2 Onnela" return no Beiwe app (logged out, US store). The Play flavour
     in app/build.gradle adds no package suffix, so org.beiwe.app is the right ID. The app targets
     SDK 33 and its last changelog entry is 3.6.0 (2024), below Google Play's current target-API floor; that this
-    explains the missing listing is inference only.
+    explains the missing listing is inference only. Re-checked 2026-10-31. The listing still returns 404 to
+    automated requests, build.gradle still sets targetSdkVersion 33 and versionName 3.6.0, and the only commit since
+    June 2024 is a 2026-02-10 Gradle update.
 - field: baa
   status: not_public
   confidence: Verified

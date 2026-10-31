@@ -91,16 +91,16 @@ facts:
   sources:
   - url: https://metricwire.com/site-licence/
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://metricwire.com/contact-us/
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://play.google.com/store/apps/details?id=com.metricwire.android3&hl=en_US
     type: app_store
     quote: In order for researchers to create and design studies, an account must be created via our online researcher
       portal. To gain access to this portal please send us an e-mail at support@metricwire.com.
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: No application steps, review or timeline are published; the site licence page ends in a contact form. The legacy
     app's store listing says researcher portal access is requested by email.
 - field: program_status
@@ -111,11 +111,11 @@ facts:
     type: vendor_page
     quote: Site licence partners benefit from dedicated engineering resources to support novel protocol designs and
       leverage unique data sources.
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://metricwire.com/page-sitemap.xml
     type: vendor_page
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: The page is live with no closure notice, but the page sitemap gives its last modification as 2019-09-20 and the
     footer reads Copyright 2023. No dated programme news found.
 - field: developer_program_status
@@ -126,15 +126,15 @@ facts:
     fetch_url: https://api.swaggerhub.com/apis/MetricWire/ConsumerAPI/3.0.0
     type: vendor_docs
     quote: The API uses the OAuth2 Client Credentials flow to provide authorized access to the API.
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://github.com/uwmadison-chm/zeolite
     type: repository
     quote: API documentation is available on Swaggerhub
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://api.metricwire.com/
     type: vendor_docs
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: There is no standalone developer programme or sign-up. MetricWire publishes a "MetricWire Consumer API" spec on
     SwaggerHub (versions 1.0.0 to 4.0.0, default 3.0.0, all marked non-private in the registry) for authenticated
     customers, who exchange a client key and secret for a bearer token. Which licences include API credentials is not
@@ -146,17 +146,17 @@ facts:
   sources:
   - url: https://metricwire.com/site-licence/
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://metricwire.com/terms-of-use/
     type: vendor_legal
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://metricwire.com/
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://survey.psu.edu/trace/metricwire
     type: secondary
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: No participant or researcher limits published for any plan.
 - field: academic_vs_commercial
   status: stated
@@ -229,22 +229,22 @@ facts:
   sources:
   - url: https://metricwire.com/
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://metricwire.com/site-licence/
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://metricwire.com/terms-of-use/
     type: vendor_legal
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://metricwire.com/pricing/
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
     expect_absent: true
   - url: https://app.swaggerhub.com/apis-docs/MetricWire/ConsumerAPI/3.0.0
     fetch_url: https://api.swaggerhub.com/apis/MetricWire/ConsumerAPI/3.0.0
     type: vendor_docs
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: /pricing returns 404; the terms refer to fees posted on the website "(if any)" and none are posted. The API spec
     states no fee or tier.
 - field: minimum_commitment
@@ -253,14 +253,14 @@ facts:
   sources:
   - url: https://metricwire.com/site-licence/
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://metricwire.com/terms-of-use/
     type: vendor_legal
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://metricwire.com/contact-us/
     type: vendor_page
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: No minimum term, seat count or participant minimum published. The terms say fees paid are non-refundable and are
     governed by Ontario law.
 - field: quote_required
@@ -286,11 +286,11 @@ facts:
   sources:
   - url: https://metricwire.com/data-privacy-security-summary/
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://metricwire.com/site-licence/
     type: vendor_page
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: Hosting is bundled in the vendor-run service (see hosting_options); no separate hosting price is published.
 # ---------------- Data access and terms ----------------
 - field: raw_streams
@@ -382,17 +382,17 @@ facts:
   - url: https://app.swaggerhub.com/apis-docs/MetricWire/ConsumerAPI/3.0.0
     fetch_url: https://api.swaggerhub.com/apis/MetricWire/ConsumerAPI/3.0.0
     type: vendor_docs
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://metricwire.com/participant-privacy-policy/
     type: vendor_legal
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://apps.apple.com/us/app/catalyst-by-metricwire/id1585123028
     type: app_store
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://metricwire.com/portfolio/symptom-tracking/
     type: vendor_page
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: The API spec documents no phone sensor sampling rate; the only rate field is a per-record Polar training heart
     rate recording interval passed through from Polar. A study (PMC10826934) analysed MetricWire GPS at one-minute
     resolution, which is a study design, not a documented platform rate.
@@ -402,15 +402,15 @@ facts:
   sources:
   - url: https://metricwire.com/participant-privacy-policy/
     type: vendor_legal
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://metricwire.com/terms-of-use/
     type: vendor_legal
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://app.swaggerhub.com/apis-docs/MetricWire/ConsumerAPI/3.0.0
     fetch_url: https://api.swaggerhub.com/apis/MetricWire/ConsumerAPI/3.0.0
     type: vendor_docs
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: Data stay on MetricWire servers until the research team deletes them (see retention_terms). The API reports a
     wearable "historical sync" with an oldest date retrieved, but no back-fill limit for Fitbit, Polar or HealthKit is
     documented.
@@ -466,11 +466,11 @@ facts:
     fetch_url: https://api.swaggerhub.com/apis/MetricWire/ConsumerAPI/3.0.0
     type: vendor_docs
     quote: If no number is provided, default is 100000
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://metricwire.com/terms-of-use/
     type: vendor_legal
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: The API spec documents no request rate limit or 429 behaviour. The quote is the default page size for sensor
     queries, not a rate limit.
 - field: retention_terms
@@ -513,23 +513,23 @@ facts:
     quote: MetricWire has no commercial interest in the data and information you submit through the MetricWire Mobile
       Application and; we will never access, use or disclose your data to any third party except as required to support
       your participation in the study and the research team’s administration of the study.
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://metricwire.com/terms-of-use/
     type: vendor_legal
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://metricwire.com/privacy-policy/
     type: vendor_legal
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://www.onixnet.com/case-study/metricwire-launches-ai-powered-scheduling-tool-to-boost-survey-and-customer-support-efficiency/
     type: secondary
     quote: This included participant data, survey responses, scheduling parameters, and historical interactions.
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://www.onixnet.com/case-study/metricwire-launches-ai-powered-scheduling-tool-to-boost-survey-and-customer-support-efficiency/
     type: secondary
     quote: Our team leveraged Google Cloud’s Vertex AI and Gemini to develop a sophisticated “Scheduling Agent” tailored
       specifically to Metricwire’s needs.
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: No MetricWire terms or policy mention AI or model training. The participant policy limits use to supporting the
     study. An implementation partner's (Onix) case study, at most Reported, says a Gemini/PaLM2 scheduling agent built
     for MetricWire on Vertex AI draws on participant data and survey responses stored in BigQuery and is refined over
@@ -540,24 +540,24 @@ facts:
   sources:
   - url: https://metricwire.com/terms-of-use/
     type: vendor_legal
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://apps.apple.com/us/app/metricwire/id1117108543
     type: app_store
     fetch_url: https://itunes.apple.com/lookup?id=1117108543
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://play.google.com/store/apps/details?id=com.metricwire.android3&hl=en_US
     type: app_store
     quote: Updated on Jul 30, 2024
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://metricwire.atlassian.net/wiki/spaces/mwknowledgebase/overview
     type: vendor_docs
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
     expect_absent: true
   - url: https://github.com/m2c2-project/m2c2kit-integration-guides/blob/main/docs/metricwire.md
     type: repository
     quote: This repository was archived by the owner on Aug 12, 2026. It is now read-only.
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: No announced deprecation. In practice the generic MetricWire participant app looks superseded by Catalyst By
     MetricWire (legacy iOS app 4.9.9, last updated 2022-04-06; legacy Android app updated 2024-07-30), the public
     Atlassian knowledge base returns 404, the third-party m2c2kit integration guide was archived 2026-08-12, and API
@@ -599,24 +599,26 @@ facts:
 - field: app_availability
   status: stated
   scope: Catalyst By MetricWire (current participant app)
-  value: iOS (requires iOS 15.0 or later; version 6.9.0 released 2026-10-07, regular releases through 2026) and Android
-    (com.metricwire.digitalhealth, updated 2026-10-07). Free. Supports HealthKit on iOS and Health Connect on Android.
+  value: iOS (requires iOS 15.0 or later; version 6.10.0 released 2026-10-27, regular releases through 2026) and Android
+    (com.metricwire.digitalhealth, updated 2026-10-29). Free. Supports HealthKit on iOS and Health Connect on Android.
   confidence: Verified
   sources:
   - url: https://apps.apple.com/us/app/catalyst-by-metricwire/id1585123028
     type: app_store
     quote: Requires iOS 15.0 or later.
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://apps.apple.com/us/app/catalyst-by-metricwire/id1585123028
     type: app_store
     fetch_url: https://itunes.apple.com/lookup?id=1585123028
-    quote: '2026-10-07T21:19:54Z'
-    retrieved: '2026-10-11'
+    quote: '2026-10-27T21:46:03Z'
+    retrieved: '2026-10-31'
   - url: https://play.google.com/store/apps/details?id=com.metricwire.digitalhealth&hl=en_US
     type: app_store
-    quote: Updated on Oct 7, 2026
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-25'
+    quote: Updated on Oct 29, 2026
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
+  note: These release dates move with every update, so the two date quotes are expected to break often. The fact they
+    support (an actively updated app on both stores) is what matters.
 - field: app_availability
   status: stated
   scope: MetricWire (legacy generic participant app)

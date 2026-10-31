@@ -234,22 +234,24 @@ facts:
   - url: https://apps.apple.com/us/app/zepp/id1127269366
     type: app_store
     quote: Zepp Aura Premium Subscription is available for a monthly or yearly fee, but there's no obligation to sign up
-    retrieved: '2026-10-22'
+    retrieved: '2026-10-31'
   - url: https://apps.apple.com/us/app/zepp/id1127269366
     type: app_store
     quote: Monthly, 7-Day Free Trial $9.99
-    retrieved: '2026-10-22'
+    retrieved: '2026-10-31'
   - url: https://apps.apple.com/us/app/zepp/id1127269366
     type: app_store
     quote: Yearly, 14 Day Free Trial $29.99
-    retrieved: '2026-10-22'
+    retrieved: '2026-10-31'
   - url: https://us.amazfit.com/products/helio-strap
     type: vendor_page
-    quote: Helio Strap No required subscription
-    retrieved: '2026-10-22'
-  recheck_by: '2026-11-21'
+    quote: Amazfit Helio Strap supports training with continuous heart-rate tracking and live heart-rate broadcast, with no required subscription.
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: The aura.zepp.com store lists "1 year of Zepp Aura Premium" at $69.99 in its products.json, but the price is
     rendered by script and could not be quote-confirmed.
+    On 2026-10-31 the Helio Strap quote was refreshed (product card copy reworded, meaning unchanged) and the App Store
+    in-app list still showed $9.99 monthly and yearly plans of $29.99, $34.99, $39.99 and $49.99.
 - field: academic_pricing
   status: not_public
   confidence: Verified

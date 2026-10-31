@@ -116,15 +116,15 @@ facts:
   sources:
   - url: https://awareframework.com/use-aware/
     type: vendor_docs
-    retrieved: 2026-10-11
+    retrieved: 2026-10-31
   - url: https://awareframework.com/support/
     type: vendor_page
-    retrieved: 2026-10-11
+    retrieved: 2026-10-31
   - url: https://github.com/awareframework/aware-micro-server
     type: repository
     quote: "It is a reactive, non-blocking server able to handle thousands of requests per second on a single machine"
-    retrieved: 2026-10-11
-  recheck_by: 2026-11-10
+    retrieved: 2026-10-31
+  recheck_by: 2026-11-30
   note: No participant or study limit is published. Capacity is set by the researcher's own MySQL or AWARE Micro
     server; any limit on the University of Melbourne hosting service is not published.
 - field: academic_vs_commercial
@@ -165,11 +165,11 @@ facts:
   sources:
   - url: https://awareframework.com/support/
     type: vendor_page
-    retrieved: 2026-10-11
+    retrieved: 2026-10-31
   - url: https://opencollective.com/aware-framework
     type: secondary
-    retrieved: 2026-10-11
-  recheck_by: 2026-11-10
+    retrieved: 2026-10-31
+  recheck_by: 2026-11-30
   note: The software is free to all. Prices for the paid support and hosting services are not published, and no
     academic rate is mentioned.
 - field: api_platform_fees
@@ -189,8 +189,8 @@ facts:
   sources:
   - url: https://awareframework.com/support/
     type: vendor_page
-    retrieved: 2026-10-11
-  recheck_by: 2026-11-10
+    retrieved: 2026-10-31
+  recheck_by: 2026-11-30
   note: None for the free software. Terms of the paid support and hosting services are not published.
 - field: quote_required
   status: stated
@@ -213,11 +213,11 @@ facts:
   sources:
   - url: https://awareframework.com/support/
     type: vendor_page
-    retrieved: 2026-10-11
+    retrieved: 2026-10-31
   - url: https://awareframework.com/use-aware/
     type: vendor_docs
-    retrieved: 2026-10-11
-  recheck_by: 2026-11-10
+    retrieved: 2026-10-31
+  recheck_by: 2026-11-30
   note: A paid hosting service at the University of Melbourne exists (see hosting_options) but no price is
     published; contact Dr Simon D'Alfonso. Self-hosting costs are the researcher's own server.
 - field: raw_streams
@@ -446,14 +446,14 @@ facts:
   sources:
   - url: https://awareframework.com/privacy/
     type: vendor_legal
-    retrieved: 2026-10-11
+    retrieved: 2026-10-31
   - url: https://awareframework.com/use-aware/
     type: vendor_docs
-    retrieved: 2026-10-11
+    retrieved: 2026-10-31
   - url: https://awareframework.com/support/
     type: vendor_page
-    retrieved: 2026-10-11
-  recheck_by: 2026-11-10
+    retrieved: 2026-10-31
+  recheck_by: 2026-11-30
   note: The project never receives study data on a self-hosted deployment. Terms for the hosting service are not
     published.
 - field: deprecations

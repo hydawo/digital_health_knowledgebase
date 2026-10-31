@@ -262,11 +262,11 @@ facts:
   sources:
   - url: https://carp.dk/hosting/
     type: vendor_legal
-    retrieved: 2026-10-11
+    retrieved: 2026-10-31
   - url: https://carp.dk/three-ways-to-use-carp/
     type: vendor_page
-    retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+    retrieved: 2026-10-31
+  recheck_by: 2026-11-30
   note: No minimum term is stated. The hosting page says invoicing typically happens once per year, and the hosted service requires DTU Health Tech to be an active research partner, which is the effective commitment.
 - field: quote_required
   status: stated
@@ -385,31 +385,34 @@ facts:
     window, OS activity recognition, noise level and light summaries. The CARP Studies app shows
     participants weekly cards for steps, heart rate, sleep, mobility and task progress. Server side,
     CAWS lets researchers deploy Python analysis scripts to a data processing pipeline, and the
-    carp-dsp repository provides a data-science pipeline framework. No ready-made catalogue of
+    carp-dsp repository (CARP-DSP, MIT) provides a workflow framework for reproducible analysis
+    pipelines that checks a workflow against the study protocol's data before it runs. No ready-made catalogue of
     clinical digital biomarkers is published.
   confidence: Verified
   sources:
   - url: https://docs.carp.dk/docs/mobile-sensing/measure-types
     type: vendor_docs
     quote: "Tracks location and calculates mobility features based on the mobility_features plugin"
-    retrieved: 2026-10-30
+    retrieved: 2026-10-31
   - url: https://docs.carp.dk/docs/mobile-sensing/measure-types
     type: vendor_docs
     quote: "Acceleration events over a specific sampling period, with calculated higher-order features"
-    retrieved: 2026-10-30
+    retrieved: 2026-10-31
   - url: https://carp.dk/new-carp-studies-app/
     type: vendor_page
     quote: "Weekly cards show steps, heart rate, sleep, mobility and task progress."
-    retrieved: 2026-10-11
+    retrieved: 2026-10-31
   - url: https://carp.dk/caws/
     type: vendor_page
     quote: "A Python-based library allows researchers to program analysis scripts in Python and deploy these to the data processing pipeline."
-    retrieved: 2026-10-11
+    retrieved: 2026-10-31
   - url: https://github.com/carp-dk/carp-dsp
     type: repository
-    quote: "A Kotlin Multiplatform framework for CARP (Copenhagen Research Platform) data science and analytics processing"
-    retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+    quote: "CARP-DSP is a workflow framework for mobile and wearable sensing analytics, built on the CARP study platform."
+    retrieved: 2026-10-31
+  recheck_by: 2026-11-30
+  note: The carp-dsp README and description were rewritten by 2026-10-31 (the old "Kotlin Multiplatform framework"
+    line is gone); re-cited to the new README on 2026-10-31.
 - field: sampling_rates
   status: stated
   value: >-
@@ -540,29 +543,29 @@ facts:
   - url: https://carp.dk/privacy-policy-app/
     type: vendor_legal
     quote: "We will keep your data as long as it is relevant for the Purpose of the Study from which it was collected, and for at least five years."
-    retrieved: 2026-10-11
+    retrieved: 2026-10-31
   - url: https://carp.dk/privacy-policy-app/
     type: vendor_legal
     quote: "You can request that we erase any personal data we hold about you."
-    retrieved: 2026-10-11
+    retrieved: 2026-10-31
   - url: https://carp.dk/new-carp-studies-app/
     type: vendor_page
     quote: "On the phone, data is pseudonymised and only kept until it is uploaded."
-    retrieved: 2026-10-11
+    retrieved: 2026-10-31
   - url: https://play.google.com/store/apps/details?id=dk.cachet.carp_study_app
     type: app_store
     quote: "Data can’t be deleted"
-    retrieved: 2026-10-11
+    retrieved: 2026-10-31
   - url: https://play.google.com/store/apps/datasafety?id=dk.cachet.carp_study_app
     type: app_store
     quote: "The developer doesn’t provide a way for you to request that your data be deleted"
-    retrieved: 2026-10-11
+    retrieved: 2026-10-31
   - url: https://github.com/carp-dk/carp-webservices-spring/blob/develop/src/main/resources/config/application.yml
     fetch_url: https://raw.githubusercontent.com/carp-dk/carp-webservices-spring/develop/src/main/resources/config/application.yml
     type: repository
     quote: 'retention-days: "${EXPORTS_RETENTION_DAYS:7}"'
-    retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+    retrieved: 2026-10-31
+  recheck_by: 2026-11-30
   note: The conflict is between DTU's privacy policy and the store label DTU filed. The policy is the more specific legal document and is probably what governs, but the label is DTU's own declaration too, so this stays a conflict until DTU corrects one of them. Self-hosters set their own retention.
 - field: ai_training_terms
   status: not_public
@@ -570,14 +573,14 @@ facts:
   sources:
   - url: https://carp.dk/privacy-policy-app/
     type: vendor_legal
-    retrieved: 2026-10-11
+    retrieved: 2026-10-31
   - url: https://carp.dk/privacy-policy-service/
     type: vendor_legal
-    retrieved: 2026-10-11
+    retrieved: 2026-10-31
   - url: https://carp.dk/hosting/
     type: vendor_legal
-    retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+    retrieved: 2026-10-31
+  recheck_by: 2026-11-30
   note: No AI or machine-learning training terms. The app policy allows use of personal data to improve CARP applications and services and says DTU never donates or sells personal data.
 - field: deprecations
   status: stated

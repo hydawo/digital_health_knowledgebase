@@ -234,7 +234,7 @@
 | How to apply, and any approval or review step | n/a |
 | Whether the program is active, paused, renamed or closed | n/a |
 | Whether the general developer or API program is open to new applicants | Open source with no developer program or sign-up. Actively maintained by a team in the University of Melbourne's School of Computing and Information Systems (Dr Simon D'Alfonso, Prof Vassilis Kostakos); AWARE was created by Denzil Ferreira in his PhD, co-supervised by Kostakos and Anind K. Dey. Android stable is 4.2.1 and beta 4.7.3 (GitHub release 2026-08-07). The iOS apps are published under Yuuki Nishiyama's developer account. Contributions go to D'Alfonso or Kostakos; community support is on Discord. [V, 2026-10-11] |
-| Participant or user limits before approval or by tier | Not public [2026-10-11] |
+| Participant or user limits before approval or by tier | Not public [2026-10-31] |
 | How academic access differs from commercial or consumer access | No difference. The Apache 2.0 licence permits commercial and research use without restriction. [V, 2026-10-11] |
 
 **Pricing**
@@ -243,11 +243,11 @@
 |---|---|
 | Device or hardware list price | n/a |
 | Consumer subscription or membership price | Free. Both iOS apps (AWARE Client V3 and V2) are free on the App Store, and the Android APKs are free downloads from GitHub and awareframework.com. [V, 2026-10-11] |
-| Research or academic pricing or discount | Not public [2026-10-11] |
+| Research or academic pricing or discount | Not public [2026-10-31] |
 | Fees for API, SDK, platform or data access | None for the software. All core components are open source; there is no hosted API to pay for. Costs are the researcher's own server, or the unpriced paid support and hosting services. [V, 2026-10-11] |
-| Minimum order, term or commitment | Not public [2026-10-11] |
+| Minimum order, term or commitment | Not public [2026-10-31] |
 | Whether pricing requires contacting sales | Yes for the paid services. Dedicated support and the University of Melbourne hosting service are arranged by contacting Dr Simon D'Alfonso; no price is listed. The software itself is free. [V, 2026-10-11] |
-| Price of managed hosting | Not public [2026-10-11] |
+| Price of managed hosting | Not public [2026-10-31] |
 
 **Data access and terms**
 
@@ -260,7 +260,7 @@
 | Export, API, SDK or file routes | Android phones upload to the researcher's MySQL database at a configured offload frequency. iOS and AWARE Legacy upload to a self-run AWARE Micro server. Local data can also be copied off the phone and opened with an SQLite client. No vendor API. [V, 2026-10-11] |
 | API rate limits | n/a |
 | Terms on retaining, storing or deleting data | By default the client stores data only on the phone; in a study it is uploaded to the study server. Participants can withdraw and remove their data from the server and phone from the app. Retention on the server is otherwise the researcher's decision. [C, 2026-10-11] |
-| Terms on using data to train AI or ML models | Not public [2026-10-11] |
+| Terms on using data to train AI or ML models | Not public [2026-10-31] |
 | Announced shutdowns, deprecations or migrations, with dates | In January 2025 AWARE-Light became the main Android AWARE and the original client became AWARE Legacy (denzilferreira/aware-client, archived 2023-06-18). The old free hosted dashboard at api.awareframework.com is not compatible with AWARE Micro and the host no longer resolves. The Google Fit add-on depends on Google Fit APIs that Google is deprecating in 2026. [V, 2026-10-11] |
 | Software licence of the platform's components | Apache License 2.0 for the Android client, AWARE Micro server, configurator and AWAREFramework-iOS. The iOS V2 app repository has no LICENSE file, though its README states Apache 2.0. Many new iOS sensor-module repositories have no detected licence, and one (calendar) is MIT. RAPIDS, the separate feature pipeline, is AGPL-3.0. [V, 2026-10-11] |
 | Self-hosting and managed-hosting options | Self-hosted, or a paid managed option. Android needs a researcher-run MySQL 5.x server reachable from the internet (own, AWS, Azure or Docker). iOS and AWARE Legacy need a self-run AWARE Micro server (JVM, Docker on AWS, GCP or Azure). The University of Melbourne team will set up and host a study on its AWARE hosting service, by arrangement. [V, 2026-10-11] |

@@ -45,9 +45,27 @@ def record_paths():
     return sorted(p for p in glob.glob(os.path.join(FACTS, '*.yaml')) if not os.path.basename(p).startswith('_'))
 
 
+class _UniqueKeyLoader(yaml.SafeLoader):
+    """SafeLoader that refuses a mapping with the same key twice (plain YAML keeps only the last one,
+    which once silently dropped a fact's first `sources:` list)."""
+
+
+def _unique_mapping(loader, node, deep=False):
+    seen = set()
+    for key_node, _ in node.value:
+        key = loader.construct_object(key_node, deep=deep)
+        if key in seen:
+            raise yaml.constructor.ConstructorError(None, None, f'duplicate key {key!r}', key_node.start_mark)
+        seen.add(key)
+    return loader.construct_mapping(node, deep)
+
+
+_UniqueKeyLoader.add_constructor(yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG, _unique_mapping)
+
+
 def load_record(path):
     with open(path, encoding='utf8') as f:
-        return yaml.safe_load(f) or {}
+        return yaml.load(f, Loader=_UniqueKeyLoader) or {}
 
 
 def load_records():

@@ -219,14 +219,14 @@ offering, and BAA availability almost everywhere. See `../shared/unresolved-ques
   whether HealthKit's per-recording ECG voltage counts as raw (Apple's own pages disagree); Garmin's
   Enterprise Access terms and its Starter user limit (1,000 per integrator reports, not on Garmin's pages); Sensor Bio's 100 Hz
   specification against a 15,000 samples per second press claim, and whether its raw export needs an
-  enterprise-tier account; Circular's Ring 2 price ($349 or $299) and its blood pressure and glucose
+  enterprise-tier account; Circular's Ring 2 price ($349; the $299 shop-page figure is gone) and its blood pressure and glucose
   claims; the Verily Study Watch's status.
 - **Not assessed:** movisens, Shimmer, activPAL, Fibion (research-grade alternatives); Galaxy Ring as
   a research target (Samsung's docs confirm only a processed route through the Data SDK, no raw
   route); EEG wearables; CGM.
 - **Emerging entries** (Ultrahuman, Biostrap/Sensor Bio, Verily) rest partly on vendor statements, and
-  the Verily Study Watch's status is a conflict (Reported): press reports Verily wound down its device
-  program in August 2025, while Verily's trust page still lists Study Watch & Hub.
+  the Verily Study Watch is discontinued (Corroborated): press reports Verily wound down its device
+  program in August 2025, and by October 2026 Verily's trust page no longer lists Study Watch & Hub.
 
 ---
 

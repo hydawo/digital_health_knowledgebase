@@ -170,30 +170,33 @@ facts:
   sources:
   - url: https://avicennaresearch.com/
     type: vendor_page
-    retrieved: '2026-10-11'
-  - url: https://avicennaresearch.com/legal
+    retrieved: '2026-10-31'
+  - url: https://avicennaresearch.com/legal/privacy-policy/
     type: vendor_legal
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
+  - url: https://avicennaresearch.com/legal/terms-of-use/
+    type: vendor_legal
+    retrieved: '2026-10-31'
   - url: https://forum.avicennaresearch.com/t/frequently-asked-questions/5
     type: vendor_docs
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://avicennaresearch.com/pricing
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
     expect_absent: true
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: The only published distinction is Trial (free, test only) versus Licensed. No academic versus commercial terms
     or price difference is published; /pricing returns 404. The privacy policy defines researchers as academically
     affiliated while the homepage markets clinical studies.
 # ---------------- Pricing ----------------
 - field: device_price
   status: not_applicable
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: Software platform; it sells no hardware. Participants use their own phones and, optionally, wearables bought
     from their makers.
 - field: subscription_price
   status: not_applicable
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: No consumer subscription. The participant app is free; costs fall on the research team per study licence.
 - field: academic_pricing
   status: not_public
@@ -201,18 +204,18 @@ facts:
   sources:
   - url: https://avicennaresearch.com/
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://forum.avicennaresearch.com/t/frequently-asked-questions/5
     type: vendor_docs
-    retrieved: '2026-10-11'
-  - url: https://avicennaresearch.com/legal
+    retrieved: '2026-10-31'
+  - url: https://avicennaresearch.com/legal/terms-of-use/
     type: vendor_legal
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://avicennaresearch.com/pricing
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
     expect_absent: true
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: No academic price or discount published; avicennaresearch.com/pricing returns 404. A third-party directory
     starting-price figure could not be read and is not used.
 - field: api_platform_fees
@@ -244,15 +247,15 @@ facts:
   sources:
   - url: https://forum.avicennaresearch.com/t/frequently-asked-questions/5
     type: vendor_docs
-    retrieved: '2026-10-11'
-  - url: https://avicennaresearch.com/legal
+    retrieved: '2026-10-31'
+  - url: https://avicennaresearch.com/legal/terms-of-use/
     type: vendor_legal
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://avicennaresearch.com/pricing
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
     expect_absent: true
-  recheck_by: '2026-11-10'
+  recheck_by: '2026-11-30'
   note: No minimum term, study count or participant minimum published. The terms say per-study billing keeps old pricing
     until the end of studies already defined.
 - field: quote_required
@@ -282,17 +285,18 @@ facts:
   sources:
   - url: https://avicennaresearch.com/features/white-label-solutions
     type: vendor_page
-    retrieved: '2026-10-11'
-  - url: https://avicennaresearch.com/legal
+    retrieved: '2026-10-31'
+  - url: https://avicennaresearch.com/legal/terms-of-use/
     type: vendor_legal
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://avicennaresearch.com/pricing
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
     expect_absent: true
-  recheck_by: '2026-11-10'
-  note: Managed hosting is bundled into the study licence. On-premises and white-label pricing is not published; the
-    white-label page says only that the option is picked to fit "the project budget".
+  recheck_by: '2026-11-30'
+  note: Managed hosting is bundled into the study licence. On-premises and white-label pricing is not published. The
+    rebuilt white-label page (read 2026-10-31) lists in-house storage and full on-premises installation with no price
+    or budget wording; the earlier "the project budget" line is gone.
 # ---------------- Data access and terms ----------------
 - field: raw_streams
   status: stated
@@ -481,14 +485,14 @@ facts:
   sources:
   - url: https://forum.avicennaresearch.com/t/how-to-export-study-data-using-the-api/1496
     type: vendor_docs
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://forum.avicennaresearch.com/t/raw-data/1241
     type: vendor_docs
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://forum.avicennaresearch.com/t/frequently-asked-questions/5
     type: vendor_docs
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: No API request rate limit is published. Export size limits are published instead (about 5 GB uncompressed
     per export, 100 stored exports per study, each downloadable for 7 days, per the Raw Data page), and the API guide
     advises smaller date ranges or participant batches for large studies.
@@ -523,13 +527,16 @@ facts:
   status: not_public
   confidence: Verified
   sources:
-  - url: https://avicennaresearch.com/legal
+  - url: https://avicennaresearch.com/legal/privacy-policy/
     type: vendor_legal
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
+  - url: https://avicennaresearch.com/legal/terms-of-use/
+    type: vendor_legal
+    retrieved: '2026-10-31'
   - url: https://forum.avicennaresearch.com/t/security-and-compliance/1267
     type: vendor_docs
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: Neither the privacy policy nor the terms mention AI or machine-learning training. An experimental LLM survey
     chatbot is announced on the forum (t/1295) but not yet on the dashboard; its model provider and data flow are
     not stated.

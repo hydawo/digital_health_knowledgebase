@@ -2,6 +2,16 @@
 
 ---
 
+## 2026-10-31 - Monthly vendor fact re-check (facts due by 2026-11-10)
+
+- Local fact monitor run: 111 re-check dates extended automatically (`facts/_reports/2026-10-31.md`).
+- Four fact keepers re-read the remaining 214 due facts plus the report's quote and dead-link items. Reports: `facts/_reports/2026-10-31-worked-group-{a,b,c,d}.md`.
+- Material changes: Verily Study Watch now discontinued (Corroborated; trust page dropped it from SOC 2 scope); Verily SOC 2 and ISO 27001 scope rewritten; Circular Ring 2 price no longer a conflict ($349, Verified); Fitrockr site answered scripts, 23 facts raised mostly to Verified, Wearable API tiers and new add-ons recorded; Fitbit store sale prices recorded beside list prices; MetricWire Catalyst iOS 6.10.0.
+- Fixed: Oura OpenAPI moved to 1.43 (20 fetch_urls); Verily Next.js build id; Avicenna not_public facts re-cited off the /legal index; a RADAR-base fact had two `sources:` keys and silently lost one, so `load_record` now rejects duplicate YAML keys (test added).
+- RADAR-base PR #92 (Google Health ingest) still unmerged, newest PushEndpoint v0.4.0.
+- Left for a browser: Evidation 31, Activinsights 30, LifeData 1, Verily 1 (manual sweep #17); WHOOP 13 (#2).
+- Open: Avicenna soc2 still cites the /legal index; Zendesk Help Center API bodies are HTML inside JSON, so `common.py` would need to strip it before Empatica and Withings support pages can leave "Check by hand".
+
 ## 2026-10-30 (later) - Weekly fact check of 2026-10-26 worked; scan 2026-10-26 merged
 
 - **Scan 2026-10-26** merged (`verify_scan_additions.py`, 0 flags). Barnard 2026 (Oura) and Paterson 2026 (WHOOP) moved to Tier C Verified from quoted disclosures; Paterson was funded by Actus Nutrition and the National Dairy Council, not WHOOP. Both CC BY, PDFs on the manual sweep (#18). The queued Withings study, Ghazi 2026 (BMJ Open), was screened from full text and profiled (75 profiles).

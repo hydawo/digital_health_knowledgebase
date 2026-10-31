@@ -175,14 +175,14 @@ facts:
   sources:
   - url: https://www.polar.com/accesslink-api/
     type: vendor_docs
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://www.polar.com/en/legal/polar-api-agreement
     type: vendor_legal
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://github.com/polarofficial/polar-ble-sdk
     type: repository
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: No participant or user cap is published for AccessLink or the SDK. AccessLink rate limits grow with the number
     of registered users (see rate_limits) rather than capping them.
 - field: academic_vs_commercial
@@ -299,17 +299,17 @@ facts:
   sources:
   - url: https://www.polar.com/en/science/research-tools
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://www.polar.com/en/business/science
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://www.polar.com/en/science/collaborate-with-us
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://www.polar.com/en/business
     type: vendor_page
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: No academic or volume discount is published. A collaboration proposal may ask Polar for support in technology or
     money, decided case by case.
 - field: api_platform_fees
@@ -401,11 +401,11 @@ facts:
   sources:
   - url: https://www.polar.com/en/business/polar-360
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://www.polar.com/en/business
     type: vendor_page
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
 - field: quote_required
   status: stated
   scope: Consumer devices
@@ -736,22 +736,22 @@ facts:
     fetch_url: https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/documentation/products/PolarVantageV3andGritX2Pro.md
     type: vendor_docs
     quote: 24/7 PPi samples
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://github.com/polarofficial/polar-ble-sdk/blob/master/documentation/products/PolarVantageV3andGritX2Pro.md
     fetch_url: https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/documentation/products/PolarVantageV3andGritX2Pro.md
     type: vendor_docs
     quote: SPO2 test results
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://github.com/polarofficial/polar-ble-sdk/issues/887
     type: repository
     quote: Vantage V3 does not save offline/24/7 HR, PPi, or skin-temperature data.
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://github.com/polarofficial/polar-ble-sdk/issues/886
     type: repository
     quote: Therefore, get247PPiSamples() cannot be used to retrieve retrospective Vantage V3 PPi data for RMSSD or HF-HRV
       analysis.
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: Both are Polar sources and they genuinely disagree on whether stored 24/7 HR and PPi can be read back from the
     watch. The staff reply is the more specific and more recent, but until Polar updates its docs, plan a watch-line
     study on live streaming or AccessLink, and pilot any SDK read-back. Offline recording (the SDK's recording API) is
@@ -853,12 +853,12 @@ facts:
   sources:
   - url: https://www.polar.com/en/legal/polar-api-agreement
     type: vendor_legal
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://github.com/polarofficial/polar-ble-sdk/blob/master/Polar_SDK_License.txt
     fetch_url: https://raw.githubusercontent.com/polarofficial/polar-ble-sdk/master/Polar_SDK_License.txt
     type: vendor_legal
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: Neither the API agreement (updated 22 August 2025) nor the SDK licence mentions AI or machine-learning use of
     the data by licensees.
 - field: ai_training_terms

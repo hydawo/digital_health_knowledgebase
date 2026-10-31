@@ -125,17 +125,17 @@ facts:
   sources:
   - url: https://developer.samsung.com/health/sensor/process.html
     type: vendor_docs
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
   - url: https://developer.samsung.com/health/data/process.html
     type: vendor_docs
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
   - url: https://developer.samsung.com/health/partnerships
     type: vendor_page
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
   - url: https://developer.samsung.com/health/sensor/sdk-license-partner-service-agreement.html
     type: vendor_legal
-    retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: No eligibility criteria are published for the Sensor SDK or Data SDK partner request, for the institutional
     collaborations, or for the Alcedis research platform. The partner request form sits behind a Samsung account
     sign-in and was not opened. Research Stack itself needs no approval (app-sdk and backend-system are Apache-2.0;
@@ -185,22 +185,22 @@ facts:
   sources:
   - url: https://developer.samsung.com/health/research/overview.html
     type: vendor_docs
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
   - url: https://developer.samsung.com/health/research/release-notes/v20.html
     type: vendor_docs
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
   - url: https://github.com/S-HealthStack
     type: repository
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
   - url: https://www.samsungmobilepress.com/articles/samsungs-new-health-software-development-kit-suite-powers-advancements-in-healthcare-innovation
     type: vendor_page
-    retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: 'Judged unmaintained, not mature, but left unclear because Samsung states neither. Evidence: the docs are live
     and still promoted on the developer hub; the latest release is "v 2.0 Beta" (release notes; last backend commit
     "Release v2.0-beta", 2024-10-10); the September 2024 SDK Suite release called a "forthcoming 2.0 version" that
     would integrate the Sensor and Data SDKs, and only that beta has appeared, with no non-beta 2.0. GitHub API on
-    2026-10-10: backend-system, app-sdk and web-portal last pushed 2024-10-24, starter-app 2024-08-20, none archived,
+    2026-10-10 and again 2026-10-31: backend-system, app-sdk and web-portal last pushed 2024-10-24, starter-app 2024-08-20, none archived,
     no published releases. Nearly two years without a commit on a beta that depends on Android, Wear OS and Firebase
     APIs is not a finished product. No retirement has been announced. The SDK partner program itself is active (see
     developer_program_status).'
@@ -250,17 +250,17 @@ facts:
   sources:
   - url: https://developer.samsung.com/health/sensor/process.html
     type: vendor_docs
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
   - url: https://developer.samsung.com/health/data/process.html
     type: vendor_docs
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
   - url: https://developer.samsung.com/health/sensor/faq.html
     type: vendor_docs
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
   - url: https://developer.samsung.com/health/sensor/sdk-license-partner-service-agreement.html
     type: vendor_legal
-    retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: No numeric cap is published. Before approval the practical cap is developer mode, which Samsung says is for
     testing only and not for app users; the licence allows development installs on a "limited number of devices"
     the licensee owns or controls, with no number.
@@ -270,17 +270,17 @@ facts:
   sources:
   - url: https://developer.samsung.com/health/sensor/sdk-license-partner-service-agreement.html
     type: vendor_legal
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
   - url: https://developer.samsung.com/health/partnerships
     type: vendor_page
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
   - url: https://developer.samsung.com/health/sensor/process.html
     type: vendor_docs
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
   - url: https://developer.samsung.com/health/data/process.html
     type: vendor_docs
-    retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: One partner request and one agreement for every applicant; the agreement names research among the licensed
     purposes ("for use in connection with the development of applications and Services, research") but sets no
     separate academic terms.
@@ -343,14 +343,14 @@ facts:
   sources:
   - url: https://developer.samsung.com/health/partnerships
     type: vendor_page
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
   - url: https://developer.samsung.com/health/research/overview.html
     type: vendor_docs
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
   - url: https://www.samsung.com/us/shop/discount-program/education/
     type: vendor_page
-    retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: No research or institutional pricing is published. Samsung's US Education Offer Program gives individual
     verified students and educators consumer discounts (an extra 15% off Galaxy Watch9 on 2026-10-10); that is a
     personal retail promotion, not research pricing. Samsung Business lists volume discounts without published terms.
@@ -621,14 +621,14 @@ facts:
   sources:
   - url: https://developer.samsung.com/health/data/guide/features/data-access.html
     type: vendor_docs
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
   - url: https://developer.samsung.com/health/data/faq.html
     type: vendor_docs
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
   - url: https://developer.samsung.com/health/sensor/guide/data-specifications.html
     type: vendor_docs
-    retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: Samsung offers no cloud API for health data, so web-style rate limits do not arise; the Data SDK documents no
     query limits. The documented constraint is one on-demand Sensor SDK tracker at a time, in the foreground.
 - field: retention_terms

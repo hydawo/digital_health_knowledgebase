@@ -112,20 +112,22 @@ facts:
   sources:
   - url: https://www.lifedatacorp.com/features/
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://www.lifedatacorp.com/products-2/
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://www.lifedatacorp.com/lifedata-terms-of-use/
     type: vendor_legal
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://help.lifedatacorp.com/hc/en-us
     type: vendor_docs
     retrieved: '2026-10-11'
   recheck_by: '2026-11-10'
-  note: No developer program, public API or SDK on the website or its sitemap, and no GitHub organization.
+  note: No developer program, public API or SDK on the website or its sitemap. No GitHub organization publishes
+    an SDK; a GitHub account named LifeDataLLC (created 2025-06-23, one "Jira-Reports" repository, no profile or link
+    to lifedatacorp.com) was seen on 2026-10-31 and could not be tied to the company.
     api.lifedatacorp.com returns 404 at its root. The help centres (help.lifedatacorp.com, support.lifedatacorp.com)
-    sit behind a bot check and their Zendesk API asks for sign-in, so they were not read; this is why the record
+    sit behind a bot check and their Zendesk API asks for sign-in, so they were not read (still 403 on 2026-10-31); this is why the record
     is Corroborated, not Verified. The LifeData+ console builds exports through its own backend (gap hunter), which
     is not a documented researcher API. The terms bar access "using a method other than through the interfaces and
     instructions that we provide".
@@ -174,8 +176,8 @@ facts:
   sources:
   - url: https://www.lifedatacorp.com/products-2/
     type: vendor_page
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: Software only. Participants use their own iOS or Android phone; LifeData sells no hardware.
 - field: subscription_price
   status: not_public
@@ -183,14 +185,14 @@ facts:
   sources:
   - url: https://www.lifedatacorp.com/products-2/
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://www.lifedatacorp.com/features/
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://www.lifedatacorp.com/lifedata-terms-of-use/
     type: vendor_legal
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: No list price is published anywhere (no /pricing page). Pricing depends on number of researchers,
     subscription duration and participants, and is "not feature or project-based", so several projects run at no
     extra cost. The terms mention possible overage fees. Participant apps are free. Prices actually paid by one
@@ -314,14 +316,14 @@ facts:
   sources:
   - url: https://www.lifedatacorp.com/products-2/
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://www.lifedatacorp.com/lifedata-terms-of-use/
     type: vendor_legal
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://www.lifedatacorp.com/lifedata-privacy-policy/
     type: vendor_legal
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: Hosting is vendor-run and bundled into the subscription; no separate hosting price is published.
 # ---------------- Data access and terms ----------------
 - field: raw_streams
@@ -456,11 +458,11 @@ facts:
   sources:
   - url: https://www.lifedatacorp.com/features/
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://www.lifedatacorp.com/lifedata-terms-of-use/
     type: vendor_legal
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: No API is documented, so no rate limits are published. The terms only bar undefined "abusive or excessive
     usage" that degrades the service for others.
 - field: retention_terms
@@ -530,23 +532,23 @@ facts:
   - url: https://www.lifedatacorp.com/
     type: vendor_page
     quote: LifeData Original Go to LifeData LifeData+ Released in 2026 Go to LifeData +
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://apps.apple.com/us/app/lifedata/id6443996884
     type: app_store
     quote: The LifeData app is part of the new LifeData platform released in 2025 designed to interact with you
       throughout the day.
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://play.google.com/store/apps/details?id=com.lifedata.lifedata&hl=en_US
     type: app_store
     quote: The LifeData app is part of the new LifeData platform released in 2025 designed to interact with you
       throughout the day.
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://www.lifedatacorp.com/lifedata-terms-of-use/
     type: vendor_legal
     quote: If LifeData discontinues a Service, we will give you reasonable advance notice to provide you with an
       opportunity to export a copy of your Content from that Service.
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-10'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: The conflict is the release year of the successor, not a shutdown. The iTunes lookup API
     (itunes.apple.com/lookup?id=6443996884) gives releaseDate 2025-05-28. A 2025 limited release and a 2026 general
     launch would reconcile them, but that is inference. Study teams should confirm which generation, and so which

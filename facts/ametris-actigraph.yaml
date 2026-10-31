@@ -186,14 +186,14 @@ facts:
   sources:
   - url: https://academic.ametris.com/centrepoint
     type: vendor_page
-    retrieved: 2026-10-11
+    retrieved: '2026-10-31'
   - url: https://github.com/actigraph/CentrePoint3APIDocumentation
     type: vendor_docs
-    retrieved: 2026-10-11
+    retrieved: '2026-10-31'
   - url: https://store.ametris.com/
     type: vendor_page
-    retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: No participant, device or study limits are published for CentrePoint.
 - field: academic_vs_commercial
   status: stated
@@ -226,17 +226,17 @@ facts:
   sources:
   - url: https://store.ametris.com/
     type: vendor_page
-    retrieved: 2026-10-11
+    retrieved: '2026-10-31'
   - url: https://academic.ametris.com/actigraph-leap
     type: vendor_page
-    retrieved: 2026-10-11
+    retrieved: '2026-10-31'
   - url: https://academic.ametris.com/cpiw
     type: vendor_page
-    retrieved: 2026-10-11
+    retrieved: '2026-10-31'
   - url: https://academic.ametris.com/actigraph-wgt3x-bt
     type: vendor_page
-    retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: The academic store lists only accessories (for example LEAP wristband 25.00 USD, CPIW charging dock 45.00
     USD). A competitor (Fibion, 2024) repeats an unverified forum figure of about 600 USD for the LEAP; not used.
 - field: device_price
@@ -266,8 +266,8 @@ facts:
   sources:
   - url: https://store.ametris.com/
     type: vendor_page
-    retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: No consumer product or membership. CentrePoint is priced per quoted order (see api_platform_fees); ActiLife
     licences became perpetual on 2025-07-30, with optional paid coverage plans.
 - field: academic_pricing
@@ -276,11 +276,11 @@ facts:
   sources:
   - url: https://academic.ametris.com/
     type: vendor_page
-    retrieved: 2026-10-11
+    retrieved: '2026-10-31'
   - url: https://store.ametris.com/
     type: vendor_page
-    retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: The academic site offers a "Get Pricing List" form (not followed); the list is not public and no academic
     discount is stated. The one real academic order found (device_price, Czech reseller quote, July 2025) carried a
     discount of about 30%.
@@ -331,16 +331,16 @@ facts:
   - url: https://academic.ametris.com/actilife
     type: vendor_page
     quote: "All ActiLife software licenses are automatically covered by Ametris' maintenance and service program for one year from the date of purchase, which includes access to all features updates and bug fixes, and 20GB of free Data Vault storage."
-    retrieved: 2026-10-11
+    retrieved: '2026-10-31'
   - url: https://blog.theactigraph.com/blog/faq-actilife7-upgrade
     type: vendor_page
     quote: "20GB of Datavault Storage"
-    retrieved: 2026-10-11
+    retrieved: '2026-10-31'
   - url: https://ametris.com/hubfs/User%20Manuals/ActiLife%207%20Users%20Manual.pdf
     type: vendor_docs
     quote: "ActiLife 7 users receive 4GB of free space."
-    retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: One possible reading is 4GB as the base allowance and 20GB while maintenance or a coverage plan is active,
     but no page says so. Ask Ametris.
 - field: minimum_commitment
@@ -349,17 +349,17 @@ facts:
   sources:
   - url: https://academic.ametris.com/cpiw
     type: vendor_page
-    retrieved: 2026-10-11
+    retrieved: '2026-10-31'
   - url: https://academic.ametris.com/actilife
     type: vendor_page
-    retrieved: 2026-10-11
+    retrieved: '2026-10-31'
   - url: https://academic.ametris.com/centrepoint
     type: vendor_page
-    retrieved: 2026-10-11
+    retrieved: '2026-10-31'
   - url: https://store.ametris.com/
     type: vendor_page
-    retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
 - field: quote_required
   status: stated
   value: Yes. Devices, CentrePoint and ActiLife are priced per order by quote; international buyers go through
@@ -558,12 +558,12 @@ facts:
     type: vendor_docs
     fetch_url: https://raw.githubusercontent.com/actigraph/CentrePoint3APIDocumentation/main/sections/raw_data_request.md
     quote: "RAW data retrieval requests SHALL NOT be performed to retrieve ALL the historic RAW data for all subjects in a given study."
-    retrieved: 2026-10-11
+    retrieved: '2026-10-31'
   - url: https://academic.ametris.com/centrepoint
     type: vendor_page
     quote: "CentrePoint generates future-proof raw sensor data that can be reprocessed indefinitely as new methods emerge."
-    retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
 - field: export_routes
   status: stated
   value: 'CentrePoint: web portal; V3 REST API (OAuth 2.0) with daily Data Access Files in gzipped CSV or AVRO, raw
@@ -648,17 +648,17 @@ facts:
   sources:
   - url: https://ametris.com/privacy-policy
     type: vendor_legal
-    retrieved: 2026-10-11
+    retrieved: '2026-10-31'
   - url: https://ametris.com/compliance
     type: vendor_page
-    retrieved: 2026-10-11
+    retrieved: '2026-10-31'
   - url: https://github.com/actigraph/CentrePoint3APIDocumentation
     type: vendor_docs
-    retrieved: 2026-10-11
+    retrieved: '2026-10-31'
   - url: https://blog.ametris.com/news/signant-health-acquires-ametris-to-create-an-end-to-end-ecoa-and-wearables-platform
     type: vendor_page
-    retrieved: 2026-10-11
-  recheck_by: 2026-11-09
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: Nothing names AI or model training on customer data. The nearest term is the privacy policy's statement that
     customer instructions may include using personal data for providing or developing the platform. The Signant
     acquisition release names AI and machine learning across eCOA and sensor data as a direction. Customer contracts

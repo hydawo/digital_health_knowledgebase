@@ -7,7 +7,7 @@
 | Organization | MetricWire Inc., Waterloo, Canada (founded 2013) |
 | Category | Commercial EMA / passive-sensing platform for academic, clinical, and commercial research |
 | Current status | Active |
-| Platforms/devices | Participant app "Catalyst By MetricWire" on the App Store (v6.9.0, 2026-10-07) and Google Play (`com.metricwire.digitalhealth`, updated 2026-10-07); older "MetricWire" app listings last updated 2022 (iOS) and 2024 (Android); several study-branded apps under the same seller; web researcher dashboard. Checked 2026-10-10. |
+| Platforms/devices | Participant app "Catalyst By MetricWire" on the App Store (v6.10.0, 2026-10-27) and Google Play (`com.metricwire.digitalhealth`, updated 2026-10-29); older "MetricWire" app listings last updated 2022 (iOS) and 2024 (Android); several study-branded apps under the same seller; web researcher dashboard. Checked 2026-10-31. |
 | Open source | No |
 | Hosting/deployment | Vendor SaaS only; data stored in the United States on Google Cloud Platform (vendor-stated). No self-hosting. |
 | Pricing model | Commercial, custom quote; no public figures (`/pricing` returns 404). Demo by request ("Schedule Demo"); no trial is mentioned on the vendor site. An institution-level **Academic Site Licence** exists, described as "cost effective" but unpriced (Verified 2026-10-10). A third-party route also exists through Penn State's Survey Research Center, which sub-licenses an enterprise licence (Reported, 2026-10-11) |
@@ -19,7 +19,7 @@
 
 ## Products / Platform Architecture
 
-- **Catalyst By MetricWire** (iOS 15.0 or later, v6.9.0 released 2026-10-07; Android `com.metricwire.digitalhealth`, updated 2026-10-07), the current participant-facing diary/survey and passive-sensing app. Free download; integrates Apple HealthKit on iOS and Health Connect on Android (Verified 2026-10-11) [12, 15].
+- **Catalyst By MetricWire** (iOS 15.0 or later, v6.10.0 released 2026-10-27; Android `com.metricwire.digitalhealth`, updated 2026-10-29), the current participant-facing diary/survey and passive-sensing app. Free download; integrates Apple HealthKit on iOS and Health Connect on Android (Verified 2026-10-31) [12, 15].
 - **Legacy "MetricWire" app** is still listed (iOS v4.9.9, last updated 2022-04-06; Android `com.metricwire.android3`, updated 2024-07-30) but is not maintained in step with Catalyst. New studies should not assume it; confirm with the vendor which app a study uses (Verified 2026-10-11) [12].
 - **Study-branded apps.** MetricWire Inc. also publishes study-specific apps on the App Store (for example ARTEMIS, Rhythms In Daily Life, SOAR, MAP ARC, PLAD TRACE, TRACC MH, TREAT), which points to custom builds offered as a service. No vendor page describes white-label terms or price (Corroborated 2026-10-11) [12].
 - **Researcher dashboard**, real-time monitoring and analytics.
@@ -196,10 +196,10 @@
 |---|---|
 | Formal research or academic program (name, what it offers) | Metricwire Academic Site Licence, an institution-level licence that adds beta programs, academic advisory boards, product updates, a dedicated account manager and dedicated engineering support for novel protocols. [V, 2026-10-11] |
 | Who can join the research program | **MetricWire Academic Site Licence:** Aimed at researchers at institutions ("leading institutions"); no eligibility criteria are published. [R, 2026-10-11]<br>**Penn State SRC enterprise licence (third-party sub-licence):** Penn State-affiliated investigators and external partners can use the SRC's licence (independent licence or an SRC-run project); the no-cost tier is for pilot data and student thesis or dissertation projects. [R, 2026-10-11] |
-| How to apply, and any approval or review step | Not public [2026-10-11] |
+| How to apply, and any approval or review step | Not public [2026-10-31] |
 | Whether the program is active, paused, renamed or closed | Unclear |
 | Whether the general developer or API program is open to new applicants | Unclear |
-| Participant or user limits before approval or by tier | Not public [2026-10-11] |
+| Participant or user limits before approval or by tier | Not public [2026-10-31] |
 | How academic access differs from commercial or consumer access | Academic institutions get a separate Academic Site Licence pitched on feasible pricing plus partnership services; commercial terms and the actual price difference are not published. [R, 2026-10-11] |
 
 **Pricing**
@@ -209,10 +209,10 @@
 | Device or hardware list price | n/a |
 | Consumer subscription or membership price | n/a |
 | Research or academic pricing or discount | **MetricWire Academic Site Licence:** Offered as balancing tools and "feasible pricing", but no figures are published. [C, 2026-10-11]<br>**Penn State SRC enterprise licence (third-party sub-licence):** Since March 2024 Penn State's Survey Research Center holds an enterprise-level MetricWire licence and offers access at significantly reduced cost (independent licence, or projects run by the SRC with its programming and data management), and no-cost access for pilot data and student thesis or dissertation projects. No prices published. [R, 2026-10-11] |
-| Fees for API, SDK, platform or data access | Not public [2026-10-11] |
-| Minimum order, term or commitment | Not public [2026-10-11] |
+| Fees for API, SDK, platform or data access | Not public [2026-10-31] |
+| Minimum order, term or commitment | Not public [2026-10-31] |
 | Whether pricing requires contacting sales | Yes in practice. No prices are posted, researcher portal access is requested by email, and the site licence and demo pages route to contact forms. [R, 2026-10-11] |
-| Price of managed hosting | Not public [2026-10-11] |
+| Price of managed hosting | Not public [2026-10-31] |
 
 **Data access and terms**
 
@@ -220,16 +220,16 @@
 |---|---|
 | Raw signals available to researchers, and by which route | The Consumer API sensor endpoint lists 31 phone stream types: accelerometer, gyroscope, magnetometer, passive location, linear acceleration, pedometer, ambient, gravity, activity types, device information, activity, steps, noise, light, mobility, battery, Bluetooth, screen events, messages, calls, apps, app usage, app usage events, mobility places/stops/moves, and iOS-specific usage events, usage, calls, messages and light. Wearables: Fitbit (19 types including intraday heart rate, HRV, breathing rate, SpO2, plus ECG and temperature) and Polar (continuous heart rate, training heart rate, sleep and hypnogram, Nightly Recharge HRV and breathing rate). Apple HealthKit and Android Health Connect are also integrated. Routes: researcher portal and the Consumer API. [C, 2026-10-11] |
 | Derived or processed metrics available to researchers | Derived data come mainly from partner ecosystems (Fitbit activity, sleep, Active Zone Minutes, heart-rate zones and daily HRV; Polar daily activity, sleep and Nightly Recharge; HealthKit sleep, steps, exercise, distance). The API also lists phone stream types named mobility, mobility places, stops and moves, and activity types, but their derivation is not documented. No platform-native feature-extraction documentation found. [R, 2026-10-11] |
-| Documented sampling rates or temporal resolution | Not public [2026-10-11] |
-| How far back data can be retrieved | Not public [2026-10-11] |
+| Documented sampling rates or temporal resolution | Not public [2026-10-31] |
+| How far back data can be retrieved | Not public [2026-10-31] |
 | Export, API, SDK or file routes | Two routes: configurable exports from the researcher web portal, and the MetricWire Consumer API (REST, JSON, OAuth2 client credentials, host consumer-api.metricwire.com). The API returns workspaces, studies, surveys, intakes, survey, diary and analysis submissions (with a PII option), media, participants, device snapshot and study activity, cognitive-task submissions, phone sensor data, Fitbit and Polar data, and can create, update and delete API triggers and digital interventions. No SDK. Portal export file formats are not documented. [C, 2026-10-11] |
-| API rate limits | Not public [2026-10-11] |
+| API rate limits | Not public [2026-10-31] |
 | Terms on retaining, storing or deleting data | Data sync to US servers and are removed from the phone. When the study ends the research team deletes the data from MetricWire servers and MetricWire says it keeps no further copies, except that one archival copy may be kept where law requires. No fixed retention period is stated. [V, 2026-10-11] |
 | Terms on using data to train AI or ML models | Unclear |
-| Announced shutdowns, deprecations or migrations, with dates | Not public [2026-10-11] |
+| Announced shutdowns, deprecations or migrations, with dates | Not public [2026-10-31] |
 | Software licence of the platform's components | Proprietary. MetricWire owns the software; users get a personal, non-exclusive, revocable, non-transferable licence. No open-source components or product repositories published. [V, 2026-10-11] |
 | Self-hosting and managed-hosting options | Vendor-hosted SaaS only, on Google Cloud Platform in the United States. No self-hosted or on-premises option is published. [C, 2026-10-11] |
-| App store availability on iOS and Android | **Catalyst By MetricWire (current participant app):** iOS (requires iOS 15.0 or later; version 6.9.0 released 2026-10-07, regular releases through 2026) and Android (com.metricwire.digitalhealth, updated 2026-10-07). Free. Supports HealthKit on iOS and Health Connect on Android. [V, 2026-10-11]<br>**MetricWire (legacy generic participant app):** Still listed on iOS (version 4.9.9, requires iOS 12.0 or later, last updated 2022-04-06) and Android (com.metricwire.android3, updated 2024-07-30), but no longer maintained in step with Catalyst. [V, 2026-10-11]<br>**Study-branded (white-label) apps:** MetricWire Inc. also publishes study-branded apps, for example ARTEMIS, Rhythms In Daily Life, SOAR, MAP ARC, PLAD TRACE, TRACC MH and TREAT, which points to custom builds offered as a service. [C, 2026-10-11] |
+| App store availability on iOS and Android | **Catalyst By MetricWire (current participant app):** iOS (requires iOS 15.0 or later; version 6.10.0 released 2026-10-27, regular releases through 2026) and Android (com.metricwire.digitalhealth, updated 2026-10-29). Free. Supports HealthKit on iOS and Health Connect on Android. [V, 2026-10-31]<br>**MetricWire (legacy generic participant app):** Still listed on iOS (version 4.9.9, requires iOS 12.0 or later, last updated 2022-04-06) and Android (com.metricwire.android3, updated 2024-07-30), but no longer maintained in step with Catalyst. [V, 2026-10-11]<br>**Study-branded (white-label) apps:** MetricWire Inc. also publishes study-branded apps, for example ARTEMIS, Rhythms In Daily Life, SOAR, MAP ARC, PLAD TRACE, TRACC MH and TREAT, which points to custom builds offered as a service. [C, 2026-10-11] |
 
 **Compliance and regulatory**
 

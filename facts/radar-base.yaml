@@ -178,12 +178,12 @@ facts:
   note: Corroborated because "no difference" rests on the absence of separate terms, not on a statement.
 - field: device_price
   status: not_applicable
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-30'
   note: RADAR-base sells no hardware. Phones are participant-owned or study-provided; wearables (Fitbit, Garmin,
     Oura, Polar, Empatica and others) are bought from their makers at their own prices.
 - field: subscription_price
   status: not_applicable
-  recheck_by: '2026-11-09'
+  recheck_by: '2026-11-30'
   note: No consumer subscription. The only subscription is The Hyve's managed hosting, recorded under hosting_price.
 - field: academic_pricing
   status: not_public
@@ -191,14 +191,14 @@ facts:
   sources:
   - url: https://www.thehyve.nl/services/radar-base-as-a-service
     type: vendor_page
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
   - url: https://www.thehyve.nl/services/radar-base
     type: vendor_page
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
   - url: https://radar-base.org/about/
     type: vendor_page
-    retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: No academic discount or academic price list on The Hyve or radar-base.org. The software itself is free.
 - field: api_platform_fees
   status: stated
@@ -218,11 +218,11 @@ facts:
   sources:
   - url: https://www.thehyve.nl/services/radar-base-as-a-service
     type: vendor_page
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
   - url: https://www.thehyve.nl/services/radar-base
     type: vendor_page
-    retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: The service page mentions a "subscription model" and an "initial service period" but gives no term or minimum.
     Self-hosting has no commitment.
 - field: quote_required
@@ -247,14 +247,14 @@ facts:
   sources:
   - url: https://www.thehyve.nl/services/radar-base-as-a-service
     type: vendor_page
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
   - url: https://www.thehyve.nl/services/radar-base
     type: vendor_page
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
   - url: https://radar-base.org/
     type: vendor_page
-    retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: RADAR-base as a Service is a subscription with no published price. Self-hosting cost is the team's own cloud
     or on-premise bill; RADAR-Kubernetes states minimum sizing (see hosting_options).
 - field: raw_streams
@@ -403,14 +403,14 @@ facts:
   sources:
   - url: https://radar-base.org/community/
     type: vendor_page
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
   - url: https://github.com/RADAR-base/RADAR-Gateway
     type: repository
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
   - url: https://github.com/RADAR-base/RADAR-REST-Connector
     type: repository
-    retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: Self-hosted, so there is no central RADAR-base API and the operator sets any limits; none is documented.
     Upstream vendor limits (Fitbit, Garmin, Oura) apply to the REST connectors; the Fitbit connector polls each
     user route every 150 s by default (fitbit.user.poll.interval).
@@ -473,14 +473,14 @@ facts:
   sources:
   - url: https://radar-base.org/active-app-armt-privacy-policy/
     type: vendor_legal
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
   - url: https://www.thehyve.nl/services/radar-base-as-a-service
     type: vendor_page
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
   - url: https://www.thehyve.nl/privacy
     type: vendor_legal
-    retrieved: '2026-10-10'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: Study data belongs to the deployment owner, who decides. No AI-training term for The Hyve as host is published.
     The Hyve's demo-service policy says anonymised data may be preserved indefinitely.
 - field: deprecations
@@ -490,48 +490,48 @@ facts:
     off on 2026-11-02. Migration to the Google Health API is under way: authorization is released (RADAR-Rest-Source-Auth
     v4.4.16, 2026-07-03), schemas are merged and released (RADAR-Schemas, push/googlehealth), and RADAR-REST-Connector
     v0.7.6 (released 2026-10-30) ships the Google Health converters as a separate google-health-library. The push ingest,
-    RADAR-PushEndpoint PR #92 "Add Google Health API push integration", is still open (last updated 2026-10-20; newest
-    release v0.4.0, 2025-06-19), and the connector README still documents only the legacy Fitbit route. Whether a released
+    RADAR-PushEndpoint PR #92 "Add Google Health API push integration", is still open and unmerged on 2026-10-31
+    (last updated 2026-10-20; newest release v0.4.0, 2025-06-19), with eight follow-on Google Health PRs stacked
+    on its branch, all open, and the connector README still documents only the legacy Fitbit route. Whether a released
     install can ingest Google Health API data end to end is not documented.'
   confidence: Verified
   sources:
   - url: https://github.com/RADAR-base/RADAR-REST-Connector/releases/tag/v0.7.6
     type: repository
-    retrieved: '2026-10-30'
+    retrieved: '2026-10-31'
     quote: Extract reusable Google Health code into google-health-library
-  sources:
   - url: https://github.com/RADAR-base/RADAR-PushEndpoint/issues/91
     type: repository
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
     quote: All integrations must be migrated by September 2026 when the legacy APIs will be decommissioned and data
       will stop syncing.
   - url: https://github.com/RADAR-base/RADAR-PushEndpoint/pull/92
     type: repository
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
     quote: Add Google Health API push integration
   - url: https://github.com/RADAR-base/RADAR-PushEndpoint/releases
     type: repository
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
     quote: v0.4.0
   - url: https://github.com/RADAR-base/RADAR-Rest-Source-Auth/releases
     type: repository
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
     quote: Added new Google Health authorization
   - url: https://github.com/RADAR-base/RADAR-REST-Connector
     type: repository
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
     quote: Get required data @ api.fitbit.com/1/user/<id>/<data-type>/date/<daterange>
   - url: https://dev.fitbit.com/build/reference/web-api/intraday/
     type: vendor_docs
-    retrieved: '2026-10-10'
+    retrieved: '2026-10-31'
     quote: On October 30, 2026, the Fitbit Web API will be turned off and will no longer function or sync data to
       or from Fitbit users.
   - url: https://developers.google.com/health
     type: vendor_docs
     quote: On November 2, 2026 , the legacy Fitbit Web API and Fitbit OAuth endpoints will be turned off and will no
       longer function or sync data to or from Fitbit users.
-    retrieved: '2026-10-30'
-  recheck_by: '2026-11-15'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: 'What this means for studies (inference from the repository state): a study collecting Fitbit data through
     a RADAR-base install on the legacy Fitbit connector stops receiving new Fitbit data on 2026-11-02. Moving it
     to Google Health needs the v0.7.6 converters plus an ingest route; the push route (PR #92) is unreleased, so a
@@ -542,7 +542,10 @@ facts:
     for its own deployment. The Hyve''s managed service still advertises Fitbit training. GitHub API checked 2026-10-10:
     PushEndpoint #92 open, unmerged; REST-Connector PRs #199, #201, #202, #215 open; RADAR-Schemas PR #424 merged
     2026-06-25. Re-checked 2026-10-30: REST-Connector v0.7.6 released
-    that day, PR #92 still open. The RADAR-base issue quotes Google''s earlier September 2026 date; Google later set
+    that day, PR #92 still open. Re-checked 2026-10-31 (GitHub API): PR #92 open,
+    not merged, no new PushEndpoint release; follow-on PushEndpoint PRs #95, #99 to #102, #106, #107 and #109 (Google Health
+    catch-up, ECG and exercise ingestion), chained onto the PR #92 branch rather than dev, all open; REST-Connector PRs #199, #201, #202 and #215 merged 2026-10-19 to
+    2026-10-23 and shipped in v0.7.6. The RADAR-base issue quotes Google''s earlier September 2026 date; Google later set
     the turn-off for 2026-10-30, then 2026-11-02 (About page updated 2026-10-23).'
 - field: deprecations
   status: stated

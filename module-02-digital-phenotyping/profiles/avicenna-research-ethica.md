@@ -207,7 +207,7 @@
 | Whether the program is active, paused, renamed or closed | Active. Self sign-up and the free Trial are open and weekly release notes continue (latest read 2026-10-06). Renamed from Ethica Data to Avicenna Research in 2023-2024; the Ethica name was to be dropped by July 2024. [V, 2026-10-24] |
 | Whether the general developer or API program is open to new applicants | No public self-serve developer program. A Data Export API exists and is documented in a how-to article (posted 2026-02-09); researchers request an API key from support, tied to their researcher account. There is no full API reference. A Product Ideas card "Export Data with API" (2025-09-29), to follow "OpenAPI Compatible APIs", is still filed under To Do. [V, 2026-10-11] |
 | Participant or user limits before approval or by tier | The free Trial licence has no participant-number limit, but trial data is wiped monthly and the study deleted after one year. No caps are published for licensed studies. [V, 2026-10-11] |
-| How academic access differs from commercial or consumer access | Not public [2026-10-11] |
+| How academic access differs from commercial or consumer access | Not public [2026-10-31] |
 
 **Pricing**
 
@@ -215,11 +215,11 @@
 |---|---|
 | Device or hardware list price | n/a |
 | Consumer subscription or membership price | n/a |
-| Research or academic pricing or discount | Not public [2026-10-11] |
+| Research or academic pricing or discount | Not public [2026-10-31] |
 | Fees for API, SDK, platform or data access | Licence fees are not published (Trial is free; the paid licence is arranged by email). The terms refer to fees and overage fees set in separate Specific Conditions. No separate API fee is mentioned. SMS notifications are off by default and, if enabled through support, are billed at Twilio's per-message cost plus a 30% markup, including leased-number fees; in-app and email notifications carry no such charge. [V, 2026-10-30] |
-| Minimum order, term or commitment | Not public [2026-10-11] |
+| Minimum order, term or commitment | Not public [2026-10-31] |
 | Whether pricing requires contacting sales | Yes. No public price list (the /pricing page returns 404). A study is upgraded to a paid licence by emailing support with the study ID, or through a demo booking; the terms describe some services as billed per study. [V, 2026-10-30] |
-| Price of managed hosting | Not public [2026-10-11] |
+| Price of managed hosting | Not public [2026-10-31] |
 
 **Data access and terms**
 
@@ -230,9 +230,9 @@
 | Documented sampling rates or temporal resolution | Phone sensors are polled once per data-collection cycle, every 5 minutes by default, configurable from 1 to 60 minutes (iOS honours the interval, Android may not). Burst sources sample for a fixed window per cycle (accelerometer 60 seconds; GPS cycles stay active 60 seconds). Garmin Health SDK accelerometer 25 Hz, gyroscope 32 Hz, heart rate or SpO2 configurable from 1 second to 1 hour. SensorKit motion downsampled to 32 Hz. Cloud wearable data is fetched daily; Fitbit intraday activity is 1-minute, Garmin Health API 15-minute slices. [V, 2026-10-11] |
 | How far back data can be retrieved | Data is collected from study participation onward; Fitbit daily summaries dated before the study start are excluded. No backfill of pre-enrolment history is documented for any source. SensorKit data becomes exportable about 30 hours after collection. [C, 2026-10-11] |
 | Export, API, SDK or file routes | Researcher Dashboard export (ZIP of CSV; GPS also KML/GPX, Bluetooth Beacon also GEXF; the marketing page also names JSON), each file downloadable for 7 days. In-dashboard Kibana querying and charts. A Data Export API for sensor data: POST to /api/study/export/create/, poll GET /api/v1/filter/export/, header "Authorization: ApiKey USERNAME:API_KEY", key issued by support. Direct database access on request (an older forum answer says only for self-hosted deployments). Participants can ask support for a machine-readable copy of their own data. [V, 2026-10-11] |
-| API rate limits | Not public [2026-10-11] |
+| API rate limits | Not public [2026-10-31] |
 | Terms on retaining, storing or deleting data | After contract termination Avicenna keeps data for at least two years unless immediate deletion is requested, then deletes it unless law requires retention. Trial-licence study data is wiped monthly and the study deleted after a year. Export files are deleted after 7 days. Participants can delete all or part of their data at any time. [V, 2026-10-30] |
-| Terms on using data to train AI or ML models | Not public [2026-10-11] |
+| Terms on using data to train AI or ML models | Not public [2026-10-31] |
 | Announced shutdowns, deprecations or migrations, with dates | Rebrand from Ethica Data to Avicenna Research, the Ethica name dropped by July 2024 (app IDs still carry "ethica"). App Usage (Legacy) closed to new studies. Some GraphQL endpoints replaced by REST (2023-10). WHOOP integration moved to WHOOP API v2 after v1 was deprecated (2025-11). Fitbit participants must move to Google Accounts; legacy Fitbit accounts can no longer sync. [V, 2026-10-11] |
 | Software licence of the platform's components | Proprietary, closed source. The terms say all service software is the property of Avicenna Research or its software providers; the company GitHub organisation holds only an EMA software comparison list, no platform code. [V, 2026-10-30] |
 | Self-hosting and managed-hosting options | Default: managed cloud service run by Avicenna. White-label option: rebranded apps, with installation ranging from in-house data storage (the database kept in the customer's own infrastructure, the only arrangement that gives researchers direct database access) to a full on-premises installation of the (closed-source) Avicenna services on the customer's infrastructure. On-premise deployments are in use: a product card plans per-organisation login pages for on-premise subdomains, and the 2026-09-22 Garmin SDK post routes data to "an institution's own Avicenna infrastructure where applicable". Terms and prices are not published. [V, 2026-10-30] |

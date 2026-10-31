@@ -5,13 +5,13 @@ profile: module-01-wearables/profiles/emerging-platforms.md
 watch:
 - url: https://verily.com/security-trust
   role: trust
-  fetch_url: https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/security-trust.json
+  fetch_url: https://verily.com/_next/data/CZzunCZyuKLSZCczoF5ca/security-trust.json
 - url: https://verily.com/privacy-policy
   role: terms
-  fetch_url: https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/privacy-policy.json
+  fetch_url: https://verily.com/_next/data/CZzunCZyuKLSZCczoF5ca/privacy-policy.json
 - url: https://verily.com/terms
   role: terms
-  fetch_url: https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/terms.json
+  fetch_url: https://verily.com/_next/data/CZzunCZyuKLSZCczoF5ca/terms.json
 - url: https://support.workbench.verily.com/docs/guides/admin/licensing_tiers/
   role: research_program
 - url: https://verily.com/solutions/pre-platform/workbench/upgrade-contact
@@ -106,44 +106,45 @@ facts:
     retrieved: 2026-10-22
   recheck_by: 2026-11-21
 - field: program_status
-  status: conflict
-  value: Study Watch appears discontinued but Verily has not said so on its own public pages. Press quoting an August 2025 internal memo and a spokesperson reports that Verily fully wound down its devices program, including "Study Devices", stopped manufacturing medical devices and will no longer support them, and every Study Watch product page is gone. Yet the Security and Trust page still lists "Study Watch & Hub" in its SOC 2 and ISO 27001 scope, and a third party, Quipment Inc. (Kennesaw, GA), registered as a repack or relabel establishment, added an FDA device listing for Study Watch (K182456) on 2026-05-12.
-  confidence: Reported
+  status: stated
+  value: Discontinued, by press reports. Press quoting an August 2025 internal memo and a spokesperson reports that Verily fully wound down its devices program, including "Study Devices", stopped manufacturing medical devices and will no longer support them. Verily has not announced it on its own pages, but every Study Watch product page is gone, and by 2026-10-31 its Security and Trust page no longer lists "Study Watch & Hub" in its SOC 2 or ISO 27001 scope. The only contrary sign is a third party, Quipment Inc. (Kennesaw, GA), registered as a repack or relabel establishment, which added an FDA device listing for Study Watch (K182456) on 2026-05-12.
+  confidence: Corroborated
   scope: Verily Study Watch
   sources:
   - url: https://hitconsultant.net/2025/08/29/alphabets-verily-shuts-down-medical-device-division-shifts-focus-to-ai/
     type: secondary
     quote: "difficult decision to discontinue manufacturing medical devices” and will no longer support them moving forward"
-    retrieved: 2026-10-22
+    retrieved: 2026-10-31
   - url: https://www.mddionline.com/business/verily-permanently-ceases-medical-device-manufacturing
     type: secondary
     quote: "we cannot support the investment of the resources necessary for the long-term growth and scaling of our Devices programs, and have therefore made the difficult decision to fully wind down the program."
-    retrieved: 2026-10-22
+    retrieved: 2026-10-31
   - url: https://www.mddionline.com/business/verily-permanently-ceases-medical-device-manufacturing
     type: secondary
     quote: "to Study Devices launched with numerous study partners"
-    retrieved: 2026-10-22
+    retrieved: 2026-10-31
   - url: https://verily.com/security-trust
     type: vendor_page
-    fetch_url: https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/security-trust.json
-    quote: "Retinal Service, Study Watch & Hub, and"
-    retrieved: 2026-10-22
+    fetch_url: https://verily.com/_next/data/CZzunCZyuKLSZCczoF5ca/security-trust.json
+    quote: "Third-party audit that assesses security controls and practices for our enterprise and the following solutions:"
+    retrieved: 2026-10-31
+    note: The list that follows is Lifelong, Lightpath, Verily Me, Verily Pre, Viewpoint Site CTMS and Workbench; "Study Watch" no longer appears anywhere on the page.
   - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRL/rl.cfm?start_search=1&knumber=K182456
     type: regulator_db
     fetch_url: https://api.fda.gov/device/registrationlisting.json?search=k_number:K182456
     quote: "QUIPMENT INC."
-    retrieved: 2026-10-22
+    retrieved: 2026-10-31
   - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRL/rl.cfm?start_search=1&knumber=K182456
     type: regulator_db
     fetch_url: https://api.fda.gov/device/registrationlisting.json?search=k_number:K182456
     quote: "Repack or Relabel Medical Device"
-    retrieved: 2026-10-22
+    retrieved: 2026-10-31
   - url: https://verily.com/solutions/verily-study-watch
     type: vendor_page
     expect_absent: true
-    retrieved: 2026-10-22
-  recheck_by: 2026-11-21
-  note: The memo (dated 2025-08-25 by MD+DI) names "Study Devices" but not Study Watch; the HIT Consultant item names neither. The Quipment listing (establishment type Repack or Relabel Medical Device, initial-importer flag Y, product code DXH, created 2026-05-12) is the only registration listing openFDA returns for any Study Watch 510(k); none exists under Verily. It suggests units still move through third-party logistics, not that Verily supplies new studies. Ask Verily directly whether Study Watch can be supplied to new studies. The security-trust fetch_url carries a Next.js build ID (1y9FmmHH1nlmtBVxwLMlY) that changes on every Verily redeploy; update it when the quote goes missing.
+    retrieved: 2026-10-31
+  recheck_by: '2026-11-30'
+  note: The memo (dated 2025-08-25 by MD+DI) names "Study Devices" but not Study Watch; the HIT Consultant item names neither. The Quipment listing (establishment type Repack or Relabel Medical Device, initial-importer flag Y, product code DXH, created 2026-05-12) is the only registration listing openFDA returns for any Study Watch 510(k); none exists under Verily. It suggests units still move through third-party logistics, not that Verily supplies new studies. Changed 2026-10-31 from conflict (Reported) to stated (Corroborated). The Security and Trust page, which on 2026-10-22 still listed "Study Watch & Hub" in its audit scope (quote "Retinal Service, Study Watch & Hub, and"), was rewritten and no longer names it, which removed the vendor-side half of the conflict. Ask Verily directly whether Study Watch can be supplied to new studies. The security-trust fetch_url carries a Next.js build ID (1y9FmmHH1nlmtBVxwLMlY) that changes on every Verily redeploy; update it when the quote goes missing.
 - field: developer_program_status
   status: stated
   value: There is no public Study Watch API or SDK. The general researcher route, Workbench, is open to self-serve sign-up and documents a CLI (wb) and Terraform provider.
@@ -379,14 +380,14 @@ facts:
   sources:
   - url: https://verily.com/privacy-policy
     type: vendor_legal
-    fetch_url: https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/privacy-policy.json
+    fetch_url: https://verily.com/_next/data/CZzunCZyuKLSZCczoF5ca/privacy-policy.json
     quote: "We generally keep Personal Information for as long as necessary for performing the purposes for which we collected it unless applicable laws and regulations require us to keep it for longer."
-    retrieved: 2026-10-22
+    retrieved: '2026-10-31'
   - url: https://support.workbench.verily.com/docs/release_notes/
     type: vendor_docs
     quote: "Any data brought by these accounts is subject to deletion when the license expires."
-    retrieved: 2026-10-22
-  recheck_by: 2026-11-21
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: The privacy-policy fetch_url carries a Next.js build ID (1y9FmmHH1nlmtBVxwLMlY) that changes on every Verily redeploy; update it when the quote goes missing.
 - field: ai_training_terms
   status: unclear
@@ -395,19 +396,19 @@ facts:
   sources:
   - url: https://verily.com/privacy-policy
     type: vendor_legal
-    fetch_url: https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/privacy-policy.json
+    fetch_url: https://verily.com/_next/data/CZzunCZyuKLSZCczoF5ca/privacy-policy.json
     quote: "We may use or disclose such data at our discretion, such as for statistical and research analysis."
-    retrieved: 2026-10-22
+    retrieved: '2026-10-31'
   - url: https://verily.com/privacy-policy
     type: vendor_legal
-    fetch_url: https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/privacy-policy.json
+    fetch_url: https://verily.com/_next/data/CZzunCZyuKLSZCczoF5ca/privacy-policy.json
     quote: "including product development and improvement, account management, and legal, security, and safety purposes."
-    retrieved: 2026-10-22
+    retrieved: '2026-10-31'
   - url: https://verily.com/terms
     type: vendor_legal
-    fetch_url: https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/terms.json
-    retrieved: 2026-10-22
-  recheck_by: 2026-11-21
+    fetch_url: https://verily.com/_next/data/CZzunCZyuKLSZCczoF5ca/terms.json
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: Searched the privacy policy and terms for "artificial intelligence", "machine learning" and "train" on 2026-10-22; no model-training clause. Both fetch_urls carry a Next.js build ID (1y9FmmHH1nlmtBVxwLMlY) that changes on every Verily redeploy; update it when the quotes go missing.
 - field: deprecations
   status: stated
@@ -444,10 +445,10 @@ facts:
   sources:
   - url: https://verily.com/privacy-policy
     type: vendor_legal
-    fetch_url: https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/privacy-policy.json
+    fetch_url: https://verily.com/_next/data/CZzunCZyuKLSZCczoF5ca/privacy-policy.json
     quote: "For example, Verily may manage wellness programs and research studies as a “processor” (or “business associate” when subject to HIPAA) to our business customers, such as  research study sponsors."
-    retrieved: 2026-10-22
-  recheck_by: 2027-01-20
+    retrieved: '2026-10-31'
+  recheck_by: '2027-01-29'
   note: The privacy-policy fetch_url carries a Next.js build ID (1y9FmmHH1nlmtBVxwLMlY) that changes on every Verily redeploy; update it when the quote goes missing.
 - field: dpa
   status: unclear
@@ -456,13 +457,13 @@ facts:
   sources:
   - url: https://verily.com/privacy-policy
     type: vendor_legal
-    fetch_url: https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/privacy-policy.json
+    fetch_url: https://verily.com/_next/data/CZzunCZyuKLSZCczoF5ca/privacy-policy.json
     quote: "For example, Verily may manage wellness programs and research studies as a “processor” (or “business associate” when subject to HIPAA) to our business customers, such as  research study sponsors."
-    retrieved: 2026-10-22
+    retrieved: '2026-10-31'
   - url: https://verily.com/security-trust
     type: vendor_page
-    retrieved: 2026-10-22
-  recheck_by: 2027-01-20
+    retrieved: '2026-10-31'
+  recheck_by: '2027-01-29'
   note: Privacy policy and terms searched for "processing agreement" and "Data Processing" on 2026-10-22, no hits. The privacy-policy fetch_url carries a Next.js build ID (1y9FmmHH1nlmtBVxwLMlY) that changes on every Verily redeploy; update it when the quote goes missing.
 - field: hipaa_statement
   status: stated
@@ -471,10 +472,10 @@ facts:
   sources:
   - url: https://verily.com/security-trust
     type: vendor_page
-    fetch_url: https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/security-trust.json
+    fetch_url: https://verily.com/_next/data/CZzunCZyuKLSZCczoF5ca/security-trust.json
     quote: "Independent audits to protect electronic health information (ePHI) through implementation of administrative, physical, and technical safeguards built into"
-    retrieved: 2026-10-22
-  recheck_by: 2027-01-20
+    retrieved: '2026-10-31'
+  recheck_by: '2027-01-29'
   note: The security-trust fetch_url carries a Next.js build ID (1y9FmmHH1nlmtBVxwLMlY) that changes on every Verily redeploy; update it when the quote goes missing.
 - field: gdpr_statement
   status: stated
@@ -483,10 +484,10 @@ facts:
   sources:
   - url: https://verily.com/privacy-policy
     type: vendor_legal
-    fetch_url: https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/privacy-policy.json
+    fetch_url: https://verily.com/_next/data/CZzunCZyuKLSZCczoF5ca/privacy-policy.json
     quote: "Verily complies with the EU-U.S. Data Privacy Framework (EU-U.S. DPF), the UK Extension to the EU-U.S. DPF, and the Swiss-U.S. Data Privacy Framework (Swiss-U.S. DPF) as set forth by the U.S. Department of Commerce."
-    retrieved: 2026-10-22
-  recheck_by: 2027-01-20
+    retrieved: '2026-10-31'
+  recheck_by: '2027-01-29'
   note: The general GDPR position is a self-claim and stays Corroborated; DPF participation itself is confirmed on the registry in the scoped entry below. The privacy-policy fetch_url carries a Next.js build ID (1y9FmmHH1nlmtBVxwLMlY) that changes on every Verily redeploy; update it when the quote goes missing.
 - field: gdpr_statement
   scope: Data Privacy Framework certification
@@ -498,87 +499,82 @@ facts:
     fetch_url: https://dpfapi.azurewebsites.net/api/participants/10091
     type: certificate
     quote: "Verily Health Inc. Verily Health Inc."
-    retrieved: 2026-10-22
+    retrieved: '2026-10-31'
   - url: https://www.dataprivacyframework.gov/list
     fetch_url: https://dpfapi.azurewebsites.net/api/participants/10091
     type: certificate
     quote: "EU-US Certification Active 2026-04-20T12:00:00+00:00 2027-04-20T12:00:00+00:00"
-    retrieved: 2026-10-22
+    retrieved: '2026-10-31'
   - url: https://www.dataprivacyframework.gov/list
     fetch_url: https://dpfapi.azurewebsites.net/api/participants/10091
     type: certificate
     quote: "SW-US Certification Active 2026-04-20T12:00:00+00:00 2027-04-20T12:00:00+00:00"
-    retrieved: 2026-10-22
+    retrieved: '2026-10-31'
   - url: https://www.dataprivacyframework.gov/list
     fetch_url: https://dpfapi.azurewebsites.net/api/participants/10091
     type: certificate
     quote: "UK Extension Certification Active 2026-04-20T12:00:00+00:00 2027-04-20T12:00:00+00:00"
-    retrieved: 2026-10-22
+    retrieved: '2026-10-31'
   - url: https://www.dataprivacyframework.gov/list
     fetch_url: https://dpfapi.azurewebsites.net/api/participants/7768
     type: certificate
     quote: "Verily Life Sciences, LLC Verily Life Sciences, LLC"
-    retrieved: 2026-10-22
+    retrieved: '2026-10-31'
   - url: https://www.dataprivacyframework.gov/list
     fetch_url: https://dpfapi.azurewebsites.net/api/participants/7768
     type: certificate
     quote: "EU-US Certification Active 2018-02-02T12:00:00+00:00 2027-03-12T12:00:00+00:00"
-    retrieved: 2026-10-22
+    retrieved: '2026-10-31'
   - url: https://www.dataprivacyframework.gov/list
     fetch_url: https://dpfapi.azurewebsites.net/api/participants/7768
     type: certificate
     quote: "SW-US Certification Active 2018-02-02T12:00:00+00:00 2027-03-12T12:00:00+00:00"
-    retrieved: 2026-10-22
+    retrieved: '2026-10-31'
   - url: https://www.dataprivacyframework.gov/list
     fetch_url: https://dpfapi.azurewebsites.net/api/participants/7768
     type: certificate
     quote: "UK Extension Certification Active 2025-01-13T12:00:00+00:00 2027-03-12T12:00:00+00:00"
-    retrieved: 2026-10-22
+    retrieved: '2026-10-31'
   - url: https://www.dataprivacyframework.gov/list
     fetch_url: https://dpfapi.azurewebsites.net/api/participants/7768
     type: certificate
     quote: "Lapse 2024-02-12T12:00:00+00:00 2025-01-13T12:00:00+00:00"
-    retrieved: 2026-10-22
+    retrieved: '2026-10-31'
   - url: https://www.dataprivacyframework.gov/list
     fetch_url: https://dpfapi.azurewebsites.net/api/participants/7768
     type: certificate
     quote: "Lapse 2025-02-18T12:00:00+00:00 2025-03-17T12:00:00+00:00"
-    retrieved: 2026-10-22
-  recheck_by: 2027-01-20
+    retrieved: '2026-10-31'
+  recheck_by: '2027-01-29'
   note: Found on 2026-10-22 with the registry list page's own read-only search (the POST it makes to dpfapi.azurewebsites.net/api/participants) for "Verily", which returned exactly these two Active records. A DPF listing confirms the transfer mechanism, not GDPR compliance as a whole.
 - field: iso27001
   status: stated
-  value: Verily claims ISO/IEC 27001 certification covering Lightpath, Onduo, Research Sponsor (Project Baseline), Site CTMS, Retinal Service, Study Watch & Hub, and Workbench. Certificate not published (the page shows a Coalfire certification seal); reports may need an NDA.
+  value: Verily claims ISO/IEC 27001 certification, with no product scope now stated on its Security and Trust page (on 2026-10-22 the page listed Lightpath, Onduo, Research Sponsor (Project Baseline), Site CTMS, Retinal Service, Study Watch & Hub, and Workbench). Certificate not published (the page shows a Coalfire certification seal); reports may need an NDA.
   confidence: Corroborated
   sources:
   - url: https://verily.com/security-trust
     type: vendor_page
-    fetch_url: https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/security-trust.json
-    quote: "Certified compliant to this set of internationally-recognized standards for information security management in"
-    retrieved: 2026-10-22
-  - url: https://verily.com/security-trust
-    type: vendor_page
-    fetch_url: https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/security-trust.json
-    quote: "Retinal Service, Study Watch & Hub, and"
-    retrieved: 2026-10-22
-  recheck_by: 2027-01-20
-  note: The security-trust fetch_url carries a Next.js build ID (1y9FmmHH1nlmtBVxwLMlY) that changes on every Verily redeploy; update it when the quotes go missing.
+    fetch_url: https://verily.com/_next/data/CZzunCZyuKLSZCczoF5ca/security-trust.json
+    quote: "Certified compliant to this set of internationally-recognized standards for information security management."
+    retrieved: 2026-10-31
+  recheck_by: '2027-01-29'
+  note: Changed 2026-10-31. The product list after the ISO sentence (old quotes "Certified compliant to this set of internationally-recognized standards for information security management in" and "Retinal Service, Study Watch & Hub, and") is gone, so Study Watch is no longer claimed to be in scope. The security-trust fetch_url carries a Next.js build ID (CZzunCZyuKLSZCczoF5ca on 2026-10-31) that changes on every Verily redeploy; read the current one from the page's __NEXT_DATA__ "buildId" when the quotes go missing.
 - field: soc2
   status: stated
-  value: Verily claims a SOC 2 Type II audit for the same product list (including Study Watch & Hub and Workbench). Report available only on request, possibly under NDA.
+  value: Verily claims a SOC 2 Type II audit covering its enterprise and Lifelong, Lightpath, Verily Me, Verily Pre, Viewpoint Site CTMS and Workbench. Study Watch & Hub, listed until at least 2026-10-22, is no longer named. Report available only on request, possibly under NDA.
   confidence: Corroborated
   sources:
   - url: https://verily.com/security-trust
     type: vendor_page
-    fetch_url: https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/security-trust.json
-    quote: "Third-party audit that assesses security controls and practices for the following solutions"
-    retrieved: 2026-10-22
+    fetch_url: https://verily.com/_next/data/CZzunCZyuKLSZCczoF5ca/security-trust.json
+    quote: "Third-party audit that assesses security controls and practices for our enterprise and the following solutions:"
+    retrieved: 2026-10-31
   - url: https://verily.com/security-trust
     type: vendor_page
     quote: "For additional information, such as access to attestation reports or product architecture details/white papers, a NDA may be required."
-    retrieved: 2026-10-22
-  recheck_by: 2027-01-20
-  note: The first source's fetch_url carries a Next.js build ID (1y9FmmHH1nlmtBVxwLMlY) that changes on every Verily redeploy; update it when the quote goes missing. The NDA sentence is in the static HTML and needs no fetch_url.
+    retrieved: 2026-10-31
+  recheck_by: '2027-01-29'
+  note: Changed 2026-10-31 (old quote "Third-party audit that assesses security controls and practices for the following solutions"). The product names are link texts and are listed in the value rather than quoted. The first source's fetch_url carries a Next.js build ID (CZzunCZyuKLSZCczoF5ca on 2026-10-31) that changes on every Verily redeploy; read the current one from the page's __NEXT_DATA__ "buildId" when the quote goes missing. The NDA sentence is in the static HTML and needs no fetch_url.
 - field: fda_clearances
   status: stated
   value: "Three 510(k) clearances, product code DXH, all to Verily Life Sciences, LLC: K182456 Study Watch (single-lead ECG), decided 2019-01-17; K192415 Study Watch with Irregular Pulse Monitor, 2020-01-17; K213357 Study Watch with Irregular Pulse Monitor (Home), 2022-07-19. No GUDID record exists for Study Watch. The only registration listing openFDA returns for any of the three is K182456 by Quipment Inc., a repack or relabel establishment (created 2026-05-12); none is listed under Verily."
@@ -628,12 +624,12 @@ facts:
   sources:
   - url: https://verily.com/privacy-policy
     type: vendor_legal
-    fetch_url: https://verily.com/_next/data/1y9FmmHH1nlmtBVxwLMlY/privacy-policy.json
+    fetch_url: https://verily.com/_next/data/CZzunCZyuKLSZCczoF5ca/privacy-policy.json
     quote: "we may use or store the Personal Information collected through the Services on servers located outside the country where you live, including in the United States."
-    retrieved: 2026-10-22
+    retrieved: '2026-10-31'
   - url: https://support.workbench.verily.com/docs/guides/governance/region_policy/
     type: vendor_docs
     quote: "Region policies can be applied to both GCP- and AWS-backed data collections."
-    retrieved: 2026-10-22
-  recheck_by: 2027-01-20
+    retrieved: '2026-10-31'
+  recheck_by: '2027-01-29'
   note: The privacy-policy fetch_url carries a Next.js build ID (1y9FmmHH1nlmtBVxwLMlY) that changes on every Verily redeploy; update it when the quote goes missing.

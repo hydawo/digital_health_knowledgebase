@@ -1,6 +1,6 @@
 # Roadmap
 
-**Last updated: 2026-10-30.** What is done, what is running, and what comes next. Detail for each
+**Last updated: 2026-10-31.** What is done, what is running, and what comes next. Detail for each
 item lives in the file it links to; `shared/research-log.md` has the dated history.
 
 ## Waiting on Hassan
@@ -44,7 +44,7 @@ generated ones.
    **Pilot drafted 2026-10-22** for Verily, Zepp, Circular and Sensor Bio: saved as Gmail drafts and in
    `_private/vendor-sheets/` (not in git). Zepp and Sensor Bio have email addresses; Verily and Circular
    take contact forms, which Hassan submits. Generator: `tools/facts/confirm_sheet.py`.
-2. **Re-check schedule.** The 2026-10-26 weekly report was worked on 2026-10-30 (Garmin reopened, Withings research API pages removed, CARP and Avicenna sites rebuilt; `facts/_reports/2026-10-30-worked-*.md`). Weekly: the fact monitor (running, GitHub Actions, Mondays). Monthly:
+2. **Re-check schedule.** Monthly pass for facts due by 2026-11-10 done 2026-10-31 (111 extended automatically, 214 re-read by four agents, 63 left for a browser on manual sweep #17; `facts/_reports/2026-10-31-worked-group-*.md`). The 2026-10-26 weekly report was worked on 2026-10-30 (Garmin reopened, Withings research API pages removed, CARP and Avicenna sites rebuilt; `facts/_reports/2026-10-30-worked-*.md`). Weekly: the fact monitor (running, GitHub Actions, Mondays). Monthly:
    re-verify pricing, access and terms facts as their `recheck_by` dates fall due. Quarterly: an
    independent review like `shared/reviews/2026-10-10-independent-review.md`.
    Since 2026-10-22 the Monday monitor extends `recheck_by` itself for stated facts whose quotes all

@@ -45,23 +45,23 @@ facts:
   sources:
   - url: https://axivity.com/
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://axivity.com/support
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://axivity.com/faq
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://axivity.com/contact
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://axivity.com/case-studies/biobank
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-research.md
     type: vendor_docs
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: No named research or academic program. Axivity sells AX3 and AX6 loggers from a public web store, and
     research guidance lives in the open-source Open Movement docs, which are documentation rather than an
     enrolment route. The research guide names third parties offering paid help (McRoberts for data collection
@@ -73,8 +73,8 @@ facts:
   sources:
   - url: https://axivity.com/products
     type: vendor_page
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: No program exists to be eligible for (see research_program). Devices are bought from the public store with
     no stated eligibility restriction.
 - field: program_application
@@ -82,8 +82,8 @@ facts:
   sources:
   - url: https://axivity.com/products
     type: vendor_page
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: No program and no application or approval step. Devices are ordered through the web store cart; the
     software and file format are public on GitHub with no sign-up.
 - field: program_status
@@ -91,8 +91,8 @@ facts:
   sources:
   - url: https://axivity.com/
     type: vendor_page
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: No program to have a status. The products and the Open Movement repository were both live on 2026-10-11.
 - field: developer_program_status
   status: stated
@@ -131,11 +131,11 @@ facts:
   sources:
   - url: https://axivity.com/products
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-research.md
     type: vendor_docs
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: Offline loggers with no cloud account or API tier, so there is no participant or user cap. Study size is
     bounded only by the number of devices bought.
 - field: academic_vs_commercial
@@ -212,8 +212,8 @@ facts:
   sources:
   - url: https://axivity.com/products
     type: vendor_page
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: One-time hardware purchase. No membership, subscription or cloud service is offered.
 - field: academic_pricing
   status: not_public
@@ -221,23 +221,23 @@ facts:
   sources:
   - url: https://axivity.com/products
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://axivity.com/product/ax3
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://axivity.com/product/ax6
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://axivity.com/shipping
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://axivity.com/faq
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://axivity.com/contact
     type: vendor_page
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: No academic, research or volume discount on any page checked. Large institutional buys have gone through
     UK public contracts (a 2021 Newcastle University award for AX6 devices for IDEA-FAST and Mobilise-D, GBP
     200,000, no unit price), which suggests negotiated pricing exists but is not posted. Ask info@axivity.com.
@@ -263,20 +263,20 @@ facts:
   sources:
   - url: https://axivity.com/products
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://axivity.com/product/ax3
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://axivity.com/shipping
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://axivity.com/terms
     type: vendor_legal
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://axivity.com/warrantyterms
     type: vendor_legal
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: No minimum order or term is stated. Single units are priced with an add-to-cart button, which implies none,
     but no page says so. The hardware warranty is one year and excludes software.
 - field: quote_required
@@ -456,20 +456,20 @@ facts:
   - url: https://axivity.com/files/resources/AX3v2_Datasheet.pdf
     type: vendor_docs
     quote: sensor will record for up to 21 days of continuous data
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://axivity.com/files/resources/AX3v2_Datasheet.pdf
     type: vendor_docs
     quote: Maximum Logging Periods 30 days at 12.5 Hz or 14 days at 100 Hz
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://axivity.com/product/ax3
     type: vendor_page
     quote: Battery Life 30 days @ 12.5Hz; 14 days @ 100Hz
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://github.com/openmovementproject/openmovement/blob/master/Docs/ax3/ax3-faq.md
     type: vendor_docs
     quote: Approximate maximum recording duration from a single full battery charge.
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: The datasheet (v1.8, 18/04/2023) gives "up to 21 days" with no rate attached, against its own 30-day
     maximum at 12.5 Hz. The 14 days at 100 Hz figure agrees across sources. The FAQ table marks some low-rate
     figures as uncertain and gives 9 days at 100 Hz in unpacked mode. UK Biobank's activity monitor document
@@ -558,8 +558,8 @@ facts:
   sources:
   - url: https://github.com/openmovementproject/openmovement/wiki/AX3-GUI
     type: vendor_docs
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: No web or cloud API exists; data moves over a local USB connection.
 - field: retention_terms
   status: stated
@@ -587,11 +587,11 @@ facts:
   sources:
   - url: https://axivity.com/privacy
     type: vendor_legal
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://axivity.com/terms
     type: vendor_legal
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: Axivity never receives sensor data, and its privacy policy and terms contain no AI or ML training terms.
 - field: deprecations
   status: not_public
@@ -599,23 +599,23 @@ facts:
   sources:
   - url: https://axivity.com/products
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://axivity.com/faq
     type: vendor_page
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://github.com/openmovementproject/openmovement
     type: repository
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://axivity.com/files/resources/AX3v2_Datasheet.pdf
     type: vendor_docs
     quote: The AX3v2 is functionally identical to the AX3 and all the integrated sensor, LED and external marking
       positions and orientations are unchanged.
-    retrieved: '2026-10-11'
+    retrieved: '2026-10-31'
   - url: https://github.com/openmovementproject/openmovement/blob/master/Downloads/AX3/AX3-Firmware.md
     type: repository
     quote: Experimental alternative generic (and WinUSB) interface support.
-    retrieved: '2026-10-11'
-  recheck_by: '2026-11-09'
+    retrieved: '2026-10-31'
+  recheck_by: '2026-11-30'
   note: No announced shutdowns or end-of-life for AX3 or AX6. Quiet changes. The AX3v2 replaced the original AX3
     enclosure (datasheet 18/04/2023) and the AX3 v1 datasheet link now returns 404. AX3 firmware V50 is an
     experimental interface build; V48 is the newest standard release. The WAX3 and WAX9 wireless sensors still

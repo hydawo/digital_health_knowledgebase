@@ -6,7 +6,7 @@ import os
 import tempfile
 import unittest
 
-from common import html_to_text, json_strings, load_schema, match_quote, normalize
+from common import html_to_text, json_strings, load_record, load_schema, match_quote, normalize
 from validate import check
 import recheck
 
@@ -32,6 +32,17 @@ def with_fact(f):
     rec = record()
     rec['facts'] = [x for x in rec['facts'] if x['field'] != f['field']] + [f]
     return rec
+
+
+class DuplicateKeys(unittest.TestCase):
+    def test_duplicate_key_rejected(self):
+        with tempfile.NamedTemporaryFile('w', suffix='.yaml', delete=False) as f:
+            f.write('facts:\n- field: x\n  sources: [a]\n  sources: [b]\n')
+        try:
+            with self.assertRaises(Exception):
+                load_record(f.name)
+        finally:
+            os.unlink(f.name)
 
 
 class QuoteMatching(unittest.TestCase):
