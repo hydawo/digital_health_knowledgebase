@@ -2754,7 +2754,7 @@ mirrored back into that file.**
 - **Files:** 23 profiles, `feasibility-matrix.md` Table 11, `sources.md` S80 to S103, the ledger (104 records, 136 rejections), README counts, `_screening-reports/2026-10-31-citation-graph-*.md`, Q103, Q112 and Q118 updates, the NSSI profile (four figures from the JAMA Netw Open paper on the same cohort).
 - **Q103:** Yorke 2026 says iOS phones were incompatible with RADAR-base passive sensing in 2022 to 2024.
 - **Expansion candidates (Module 1/2), not acted on:** Datacubed Health (ALLFTD, 567-person FTLD consortium), Hexoskin. Weak: Fabla, MHSL Sleepband, EMCAT/Concerto.
-- **Not done:** extra lines suggested for `radar-mdd-recruitment-retention.md` (ICC needs 8 of 14 days), `aware-momo-mood-mood-disorders.md` (13 of 164 sent no passive data) and the Module 1 Garmin profile (Health Companion SDK gives beat-level IBI). Details in the batch B and D screening reports.
+- **Done 2026-11-01 (was left over):** extra lines for `radar-mdd-recruitment-retention.md` (ICC needs 8 of 14 days), `aware-momo-mood-mood-disorders.md` (13 of 164 sent no passive data) and the Module 1 Garmin profile (Health Companion SDK gives beat-level IBI). Details in the batch B and D screening reports.
 
 ## 2026-11-01 - Module 4 evidence overview
 
