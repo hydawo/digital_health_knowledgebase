@@ -183,7 +183,58 @@
   "10.3389/frdem.2026.1861809",
   "10.1016/j.aucc.2026.101711",
   "10.1200/cci-24-00201",
-  "10.1136/bmjopen-2026-121681"
+  "10.1136/bmjopen-2026-121681",
+  "10.21203/rs.3.rs-10880727/v1",
+  "10.1016/j.invent.2025.100804",
+  "10.2196/79296",
+  "10.2196/74103",
+  "10.3389/fpsyt.2025.1470554",
+  "10.1016/j.chb.2024.108360",
+  "10.2196/49857",
+  "10.2196/79360",
+  "10.1016/j.jad.2026.121783",
+  "10.2196/51507",
+  "10.1038/s44482-026-00029-3",
+  "10.1016/j.jad.2022.05.005",
+  "10.2196/44214",
+  "10.21203/rs.3.rs-9381221/v1",
+  "10.2196/59974",
+  "10.1016/j.inpsyc.2025.100123",
+  "10.2196/65222",
+  "10.2196/62725",
+  "10.1016/j.sleh.2023.01.014",
+  "10.21203/rs.3.rs-10394948/v1",
+  "10.3758/s13428-026-03164-0",
+  "10.1177/02692163261416264",
+  "10.1016/j.jcbs.2024.100839",
+  "10.2196/60461",
+  "10.2196/47179",
+  "10.1080/1612197x.2025.2563323",
+  "10.2196/69556",
+  "10.2196/77036",
+  "10.1001/jamanetworkopen.2024.40510",
+  "10.2196/44126",
+  "10.2196/45233",
+  "10.2196/59623",
+  "10.1016/j.sleep.2025.106830",
+  "10.1007/s41347-025-00530-1",
+  "10.1177/20552076261458952",
+  "10.1080/29973368.2026.2723021",
+  "10.7759/cureus.117257",
+  "10.2196/46491",
+  "10.37349/edht.2024.00007",
+  "10.2196/89485",
+  "10.64898/2026.09.18.26363439",
+  "10.2196/40765",
+  "10.1145/3711043",
+  "10.1186/s13102-025-01507-6",
+  "10.2196/82465",
+  "10.1145/3586579",
+  "10.1016/j.jss.2024.07.009",
+  "10.2196/53645",
+  "10.1111/inm.13499",
+  "10.1016/j.cdnut.2024.104479",
+  "10.3758/s13428-025-02777-1"
  ],
  "pmcids_seen": [
   "PMC10031448",
@@ -307,9 +358,25 @@
   "PMC13637571",
   "PMC13652396",
   "PMC13642210",
-  "PMC13691778"
+  "PMC13691778",
+  "PMC11816215",
+  "PMC12483342",
+  "PMC12421209",
+  "PMC12241026",
+  "PMC10993123",
+  "PMC12677381",
+  "PMC13395528",
+  "PMC10709787",
+  "PMC13437235",
+  "PMC10837755",
+  "PMC11624463",
+  "PMC13142898",
+  "PMC11822323",
+  "PMC11615540",
+  "PMC10293018",
+  "PMC11656116"
  ],
- "last_run_date": "2026-10-26",
+ "last_run_date": "2026-10-31",
  "runs": [
   {
    "date": "2026-10-05",
@@ -972,6 +1039,174 @@
    "slug": "withings-bpm-ed-pharmacist-telehealth-pilot-rct",
    "profiled": true,
    "source": "weekly-literature-scan-2026-10-26 / screened 2026-10-30"
+  },
+  {
+   "doi": "10.21203/rs.3.rs-10880727/v1",
+   "pmcid": null,
+   "slug": "mpath-zambia-youth-post-suicide-attempt-ema",
+   "profiled": true,
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.1016/j.invent.2025.100804",
+   "pmcid": "PMC11816215",
+   "slug": "mpath-dice-delusions-blended-ema-pilot",
+   "profiled": true,
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.2196/79296",
+   "pmcid": "PMC12483342",
+   "slug": "mpath-uk-mindfulness-mentalization-emi-pilot-rct",
+   "profiled": true,
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.2196/74103",
+   "pmcid": "PMC12421209",
+   "slug": "mpath-depression-social-support-jitai-mrt",
+   "profiled": true,
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.3389/fpsyt.2025.1470554",
+   "pmcid": "PMC12241026",
+   "slug": "mpath-psychiatric-outpatient-nonparticipation-dropout",
+   "profiled": true,
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.1016/j.chb.2024.108360",
+   "pmcid": null,
+   "slug": "mpath-gamified-esm-compliance-experiment",
+   "profiled": true,
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.2196/49857",
+   "pmcid": "PMC10993123",
+   "slug": "mpath-goal-pursuit-emi-feasibility",
+   "profiled": true,
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.2196/79360",
+   "pmcid": "PMC12677381",
+   "slug": "fitbit-mpath-japan-physical-activity-emi-pilot-rct",
+   "profiled": true,
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.1016/j.jad.2026.121783",
+   "pmcid": "PMC13395528",
+   "slug": "mpath-aphasia-depressive-affect-ema",
+   "profiled": true,
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.2196/51507",
+   "pmcid": "PMC10709787",
+   "slug": "radar-base-garmin-respiratory-remote-monitoring",
+   "profiled": true,
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.1038/s44482-026-00029-3",
+   "pmcid": "PMC13437235",
+   "slug": "apple-watch-dmhs-depression-anxiety-retention",
+   "profiled": true,
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.1016/j.jad.2022.05.005",
+   "pmcid": null,
+   "slug": "radar-mdd-usability-predictors-engagement",
+   "profiled": true,
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.2196/44214",
+   "pmcid": "PMC10837755",
+   "slug": "radar-base-fitbit-mdd-inapp-engagement-rct",
+   "profiled": true,
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.21203/rs.3.rs-9381221/v1",
+   "pmcid": null,
+   "slug": "radar-base-fitbit-autism-sleep-feasibility",
+   "profiled": true,
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.2196/59974",
+   "pmcid": "PMC11624463",
+   "slug": "mindlamp-older-adults-gps-cognition-feasibility",
+   "profiled": true,
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.1016/j.inpsyc.2025.100123",
+   "pmcid": "PMC13142898",
+   "slug": "mindlamp-older-adults-gps-cognition-feasibility",
+   "profiled": true,
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.2196/65222",
+   "pmcid": "PMC11822323",
+   "slug": "mindlamp-digital-clinic-blended-care-open-trial",
+   "profiled": true,
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.2196/62725",
+   "pmcid": "PMC11615540",
+   "slug": "mindlamp-unpaid-app-recommendation-engagement",
+   "profiled": true,
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.1016/j.sleh.2023.01.014",
+   "pmcid": "PMC10293018",
+   "slug": "aware-adolescent-neighborhood-sleep-gps-ema",
+   "profiled": true,
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.21203/rs.3.rs-10394948/v1",
+   "pmcid": null,
+   "slug": "mpath-tsc-young-adults-ema-feasibility",
+   "profiled": true,
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.3758/s13428-026-03164-0",
+   "pmcid": null,
+   "slug": "mpath-student-esm-incentive-type-rct",
+   "profiled": true,
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.1177/02692163261416264",
+   "pmcid": null,
+   "slug": "mpath-advanced-cancer-esm-feasibility",
+   "profiled": true,
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.1016/j.jcbs.2024.100839",
+   "pmcid": null,
+   "slug": "mpath-ncompass-depression-self-help-pilot-rct",
+   "profiled": true,
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.2196/60461",
+   "pmcid": "PMC11656116",
+   "slug": "mpath-psychiatric-outpatient-app-support",
+   "profiled": true,
+   "source": "citation-graph pass 2026-10-31"
   }
  ],
  "rejected": [
@@ -1773,6 +2008,195 @@
    "reason": "no-cohort",
    "note": "False positive: semi-supervised Bayesian deep-clustering ML paper; no Module 2 platform named anywhere in the abstract despite matching the C2 grouped query.",
    "source": "weekly-literature-scan-2026-10-26"
+  },
+  {
+   "doi": "10.2196/47179",
+   "pmcid": null,
+   "reason": "architecture",
+   "note": "instrument not profiled: EMCAT on Concerto; m-Path only in references",
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.1080/1612197x.2025.2563323",
+   "pmcid": null,
+   "reason": "no-cohort",
+   "note": "single-case design, N=3",
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.2196/69556",
+   "pmcid": null,
+   "reason": "no-cohort",
+   "note": "single-case design, N=8",
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.2196/77036",
+   "pmcid": null,
+   "reason": "architecture",
+   "note": "co-design only, no deployment cohort",
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.1001/jamanetworkopen.2024.40510",
+   "pmcid": null,
+   "reason": "duplicate-cohort",
+   "note": "same cohort as mpath-nssi-ema-benefits-challenges; its new figures were folded into that profile",
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.2196/44126",
+   "pmcid": null,
+   "reason": "no-cohort",
+   "note": "qualitative interviews only",
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.2196/45233",
+   "pmcid": null,
+   "reason": "duplicate-cohort",
+   "note": "RADAR-MDD statistics paper; one figure folded into radar-mdd-recruitment-retention",
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.2196/59623",
+   "pmcid": null,
+   "reason": "no-cohort",
+   "note": "instrument not profiled: Notion plus KakaoTalk, design simulation",
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.1016/j.sleep.2025.106830",
+   "pmcid": null,
+   "reason": "no-cohort",
+   "note": "instrument not profiled: MHSL Sleepband v3, N=5",
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.1007/s41347-025-00530-1",
+   "pmcid": null,
+   "reason": "no-cohort",
+   "note": "interviews with RADAR-MDD alumni, nothing deployed",
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.1177/20552076261458952",
+   "pmcid": null,
+   "reason": "architecture",
+   "note": "instrument not profiled: UTSW custom app",
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.1080/29973368.2026.2723021",
+   "pmcid": null,
+   "reason": "unobtainable",
+   "note": "Taylor and Francis bot check; not in PMC",
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.7759/cureus.117257",
+   "pmcid": null,
+   "reason": "architecture",
+   "note": "instrument not profiled: Feels.ai",
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.2196/46491",
+   "pmcid": null,
+   "reason": "no-cohort",
+   "note": "5 patient dyads",
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.37349/edht.2024.00007",
+   "pmcid": null,
+   "reason": "no-cohort",
+   "note": "SMART app modified from LAMP, thin deployment data",
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.2196/89485",
+   "pmcid": null,
+   "reason": "validation",
+   "note": "instrument not profiled: Hexoskin plus Huixin EMAI",
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.64898/2026.09.18.26363439",
+   "pmcid": null,
+   "reason": "validation",
+   "note": "instrument not profiled: Datacubed Health ALLFTD app",
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.2196/40765",
+   "pmcid": null,
+   "reason": "no-cohort",
+   "note": "instrument not profiled: unnamed WASH study app; AWARE cited only for iOS limits",
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.1145/3711043",
+   "pmcid": null,
+   "reason": "unobtainable",
+   "note": "ACM challenge page; no repository copy or preprint",
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.1186/s13102-025-01507-6",
+   "pmcid": null,
+   "reason": "no-cohort",
+   "note": "Polar H10 as an in-class intensity monitor; adherence is class attendance",
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.2196/82465",
+   "pmcid": null,
+   "reason": "validation",
+   "note": "same MoMo-Mood cohort as aware-momo-mood-mood-disorders",
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.1145/3586579",
+   "pmcid": null,
+   "reason": "unobtainable",
+   "note": "ACM, DTU Orbit and KU copies served challenge pages or 403",
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.1016/j.jss.2024.07.009",
+   "pmcid": null,
+   "reason": "unobtainable",
+   "note": "journal and Edinburgh repository served challenge pages",
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.2196/53645",
+   "pmcid": null,
+   "reason": "validation",
+   "note": "Garmin Fenix 6 against Polar H10 reference",
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.1111/inm.13499",
+   "pmcid": null,
+   "reason": "no-cohort",
+   "note": "Polar H10 in one VR session, N=7",
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.1016/j.cdnut.2024.104479",
+   "pmcid": null,
+   "reason": "no-cohort",
+   "note": "m-Path only in two 1-week UX rounds of 10",
+   "source": "citation-graph pass 2026-10-31"
+  },
+  {
+   "doi": "10.3758/s13428-025-02777-1",
+   "pmcid": null,
+   "reason": "validation",
+   "note": "instrument not profiled: Fabla voice-diary app",
+   "source": "citation-graph pass 2026-10-31"
   }
  ]
 }
