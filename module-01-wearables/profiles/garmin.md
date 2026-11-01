@@ -115,6 +115,7 @@
 - Connect IQ SDK (on-device apps, Monkey C language).
 - FIT SDK (open file format specification and parsing libraries).
 - Health SDKs, Standard and Companion (real-time streaming and customizable logging), enterprise partners only. **Verified** 2026-10-10.
+- **Research use of the Companion SDK.** A DARPA-funded study streamed beat-level IBI from Garmin Fenix 6 and 6s watches through the Health Companion SDK into its own phone app, May 2022 to June 2023 [41]. 15 of 31 participants were excluded for an expected data fraction under 70% [41]. **Verified** from the full text, 2026-10-31.
 - **Approval (Verified 2026-10-30).** Request access and create a Starter app; once the request is approved Garmin grants Developer Portal access and an evaluation environment. Enterprise Access is requested later through the portal. Garmin says a typical integration takes one to four weeks. Press reports Starter apps carry an unverified label until Garmin reviews them and that applicants need a public website and a published privacy policy (the5krunner, 22 October 2026, **Reported**). The pause on new requests that ran from spring 2026 ended with the October 2026 relaunch.
 - **Deprecations.** No API shutdown or deprecation is announced. The redesign has no published date or details, so terms or APIs may change (**Unclear**, 2026-10-10). Health SDKs must be updated to receive new data types (Garmin Health SDK Q&A).
 
@@ -331,3 +332,4 @@
 38. Garth documentation. https://garth.readthedocs.io/en/latest/ (accessed 2026-10-10). Deprecated after Garmin's auth change.
 39. Open Wearables, "Garmin Connect Developer Program reopened: what changes for your integration", 23 October 2026. https://openwearables.io/blog/garmin-connect-developer-program-reopened (accessed 2026-10-30). Secondary. Reopening date 21 October 2026; reported Starter limit and fees.
 40. the5krunner, "Garmin personal API gives athletes their own data back", 22 October 2026. https://the5krunner.com/2026/10/22/garmin-personal-api/ (accessed 2026-10-30). Secondary. Reopening after seven months closed; Personal API; reported Starter review and applicant requirements.
+41. Davis-Wilson H, et al. "Effects of Missing Data on Heart Rate Variability Measured From A Smartwatch: Exploratory Observational Study." *JMIR Form Res* 2025;9:e53645. DOI 10.2196/53645. PMC11894354 (accessed 2026-10-31). Peer-reviewed.

@@ -147,6 +147,13 @@ Missing data were **not** handled by withdrawing non-compliant participants — 
 choice to preserve a truthful picture of fluctuating adherence. The authors also deliberately use
 "availability" rather than "completeness", because their counts include partial and corrupted data.
 
+**Availability inside a PHQ-8 window (added 2026-11-01, Sun 2023 [2]).** A later analysis of 479 of the 623 participants counted data days within each 14-day PHQ-8 window.
+- GPS had a median 13 of 14 days (IQR 1 to 14).
+- Fitbit steps had a median 14 (IQR 0 to 14).
+- Phone interaction had a median 13 (IQR 0 to 14).
+- Fitbit sleep had a median 11 (IQR 3 to 13).
+- Most features needed at least 8 of the 14 days to reach an ICC of 0.9.
+
 ## Feasibility Findings
 
 The study's own conclusion: collecting RMT data from a clinical population **is feasible**, and
@@ -235,3 +242,4 @@ Two caveats on *interpretation* rather than on the numbers:
 
 1. Matcham F, et al. *BMC Psychiatry* 2022;22:136. DOI 10.1186/s12888-022-03753-1. Full text
    retrieved from Europe PMC (PMC8860359), 2026-08-31. Establishes every figure in this profile.
+2. Sun S, et al. *J Med Internet Res* 2023;25:e45233. DOI 10.2196/45233. Full text retrieved from Europe PMC (PMC10463088), 2026-10-31. Establishes the window availability figures and the 8-of-14-day threshold.

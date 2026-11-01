@@ -90,6 +90,11 @@ The authors state the split was implemented "to minimize the risk of study fatig
 
 **No app-crash counts are published**, despite `app crashes` being one of the collected AWARE streams — the same absence [McClaine 2024](aware-chemotherapy-engagement.md) exhibits.
 
+**Sleep-modality counts (added 2026-11-01, Mahir 2025 [2]).** A later agreement study used the 2-week active phase.
+- 13 of 164 main-study participants (7.9%) submitted no passive data.
+- After filtering, 148 smartphone users, 108 bed-sensor users and 102 actigraph users remained.
+- The length of the active phase was set by Actiwatch battery life without recharging.
+
 ## Feasibility Findings
 
 The authors' stated conclusion is that the design is feasible: the pilot "had no significant issues", which justified scaling to the main study "with minimal changes overall", and the main study demonstrates "the feasibility of harnessing data from a cohort of patients with different types of clinically diagnosed depressive syndromes."
@@ -147,3 +152,4 @@ That last point is a feasibility finding in the strict sense: **a year of multim
 ## Sources
 
 1. Aledavood T, Luong N, Baryshnikov I, Darst R, Heikkilä R, Holmén J, Ikäheimonen A, Martikkala A, Riihimäki K, Saleva O, Triana AM, Isometsä E. *JMIR Ment Health* 2025;12:e63622. DOI 10.2196/63622. Full text read from Europe PMC (PMC11890149), 2026-09-02. Byline verified against the publisher PDF (PMC JATS lists the handling editor and peer reviewers in separate contrib-groups after the authors). Establishes every figure in this profile.
+2. Mahir A, et al. *JMIR Mhealth Uhealth* 2025;13:e82465. DOI 10.2196/82465. Full text retrieved from Europe PMC (PMC12741658), 2026-10-31. Establishes the modality counts above.
