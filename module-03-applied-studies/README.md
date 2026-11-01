@@ -1,6 +1,6 @@
 # Module 3 — Applied Wearables and Digital Phenotyping Studies
 
-**Status:** **75 study profiles / 73 distinct deployments** (2026-10-30: Ghazi 2026 added from the scan queue; 2026-10-24: Hallihan 2026 added from the scan queue; 2026-10-22: 8 added from the scan queue and backlog; deployment count corrected 2026-10-10). Two pairs of profiles report one cohort each (RADAR-MDD and mSavorUs). The 2026-09-03 coverage pass screened the PDFs already stored in Modules 1 and 2 and added ten. Baseline of 19 (2026-08-31) plus a 21-study
+**Status:** **98 study profiles / 94 distinct deployments** (2026-10-31: 23 added by the second citation-graph pass, [`_citation-graph-scan-2026-10.md`](_citation-graph-scan-2026-10.md); 2026-10-30: Ghazi 2026 added from the scan queue; 2026-10-24: Hallihan 2026 added from the scan queue; 2026-10-22: 8 added from the scan queue and backlog; deployment count corrected 2026-10-10). Two pairs of profiles report one cohort each (RADAR-MDD and mSavorUs). The 2026-09-03 coverage pass screened the PDFs already stored in Modules 1 and 2 and added ten. Baseline of 19 (2026-08-31) plus a 21-study
 extension built in two parallel passes — a platform-coverage pass and an Onnela-tranche pass.
 
 ## What this module is
@@ -22,7 +22,7 @@ documentation and platform capability alone can't show?
 | File | What it's for |
 |---|---|
 | **[`feasibility-matrix.md`](feasibility-matrix.md)** | **The main resource.** Three tables — scale/duration/retention, completeness/wear time, and a one-line takeaway per study — plus cross-cutting patterns and an important warning about non-standardised definitions. |
-| [`profiles/`](profiles/) | One deep profile per study (**75**). |
+| [`profiles/`](profiles/) | One deep profile per study (**98**). |
 | [`_citation-graph-scan-2026-09.md`](_citation-graph-scan-2026-09.md) | OpenAlex citation-graph discovery — finds deployments that cite a platform's methods paper without naming it. Confirms the CARP null by a second, independent method. |
 | [`_recency-scan-2026-09.md`](_recency-scan-2026-09.md) | Date-sorted discovery pass. Shows the citation-sorted baseline missed **62 of 64** recent candidates, and corrects two of its own conclusions. |
 | [`_device-side-scan-2026-09.md`](_device-side-scan-2026-09.md) | Date-sorted discovery from the device side, 2026-09-03. 30 ranked new candidates, six of them Polar. |
@@ -33,7 +33,7 @@ documentation and platform capability alone can't show?
 | [`_onnela-module3-candidates.md`](_onnela-module3-candidates.md) | 27 triaged candidates from the Onnela Lab publication sweep, ranked, not yet profiled. |
 | [`sources.md`](sources.md) | Consolidated source list with retrieval status. |
 | [`_scan-queue.md`](_scan-queue.md) | **Candidates awaiting a profile.** Fed by the weekly scan routine; also carries the unbuilt backlog from the manual discovery passes. |
-| [`literature-index.json`](literature-index.json) | Dedup ledger for the weekly scan. 80 paper records across all 75 profiles (some profiles fold several papers), plus 79 recorded rejections (counted 2026-10-22). |
+| [`literature-index.json`](literature-index.json) | Dedup ledger for the weekly scan. 104 paper records across all 98 profiles (some profiles fold several papers), plus 136 recorded rejections (counted 2026-10-31). |
 | [`literature/`](literature/) | Open-access PDFs. Five baseline studies are XML-extract only — see `sources.md`. |
 
 ## The ten findings that matter most
@@ -79,6 +79,8 @@ Drawn across the whole baseline. Each links to the profile that establishes it.
 
 ## What's covered
 
+**Pass 2 (2026-10-31) added** m-Path 15 (one with Fitbit), RADAR-base 4 (one RADAR-MDD paper, three new cohorts), mindLAMP 3, AWARE 1 and one Apple Watch study. The counts below predate it.
+
 **Module 2 platforms — all nine covered:** Beiwe (15 as primary instrument, plus 2 as the survey vehicle beside a wearable or another platform), **AWARE (9 profiles / 8 deployments)**, mindLAMP/LAMP (4), RADAR-base (4),
 **Avicenna/Ethica (3)**, **MetricWire (4)**, **m-Path (3)**, **CARP (1)**, **LifeData (1, new)**. Plus movisensXS, Ilumivu mEMA,
 Purple Robot and now **LifeData** in mixed designs.
@@ -110,7 +112,7 @@ Recorded honestly, because the gaps shape what conclusions this module can suppo
 - **Geography.** Almost entirely North American and Western European. mindLAMP's India sites are the
   only substantial exception; no low-income-country deployments.
 - **Platform balance — partly addressed, but Beiwe still dominates.** All five previously uncovered
-  platforms now have entries. However **Beiwe is 16 of 75 profiles (21%) as primary instrument**, most sharing an
+  platforms now have entries. However **Beiwe is 16 of 98 profiles (16%) as primary instrument**, most sharing an
   author, so they are not fifteen independent observations — and **every Beiwe figure in the module
   predates the platform's `heartbeat` feature** (newest collection window closes 2023). The module's
   Beiwe evidence is simultaneously its largest and its most systematically dated. Each affected

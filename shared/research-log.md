@@ -2743,3 +2743,15 @@ mirrored back into that file.**
 - **Explorer filters:** three filter groups added to Modules 1, 2 and 3. Form factor and operating system come from the hand-kept `explorer/tags.json`. Data streams are derived at build time from each Module 1 sensor table and Module 2 stream table, and for Module 3 from the wording of each profile's Instrumentation section. Disease area is hand-assigned per Module 3 study from a fixed list of 16 areas. An automatic keyword pass was tried first and rejected because cross-references to other studies triggered wrong areas.
 - **Conflict recorded:** Evidation's home and about pages disagree on study and publication counts (140 or more versus 175 or more studies; 100 or more versus 70 or more publications).
 - **Unresolved:** Q125.
+
+## 2026-10-31 to 2026-11-01 - Module 3 citation-graph pass 2 (OpenAlex)
+
+- **Module:** 3.
+- **What:** second OpenAlex citation-graph pass, the matching pass on non-Beiwe platforms that the 2026-09 pass required before its Beiwe backlog is built. Anchors for AWARE, CARP, m-Path, mindLAMP and RADAR-base, Polar H10 for the first time, and Beiwe refreshed from 2026-08-01. Record in `module-03-applied-studies/_citation-graph-scan-2026-10.md`.
+- **Yield:** 1,467 citing works to 119 after an abstract filter to 51 after a title read. Four agents screened all 51 from full text.
+- **Result:** 23 new profiles from 24 papers (98 profiles, 94 distinct deployments). 27 rejected, 4 of them only because of bot checks (manual sweep #19).
+- **Platform attribution:** the cited platform was often wrong. None of the 4 Beiwe-tagged papers deployed Beiwe. RADAR-base was wrong or overstated for 4 of 10. One RADAR-base-tagged paper was an Apple Watch study of 4,539 people.
+- **Files:** 23 profiles, `feasibility-matrix.md` Table 11, `sources.md` S80 to S103, the ledger (104 records, 136 rejections), README counts, `_screening-reports/2026-10-31-citation-graph-*.md`, Q103, Q112 and Q118 updates, the NSSI profile (four figures from the JAMA Netw Open paper on the same cohort).
+- **Q103:** Yorke 2026 says iOS phones were incompatible with RADAR-base passive sensing in 2022 to 2024.
+- **Expansion candidates (Module 1/2), not acted on:** Datacubed Health (ALLFTD, 567-person FTLD consortium), Hexoskin. Weak: Fabla, MHSL Sleepband, EMCAT/Concerto.
+- **Not done:** extra lines suggested for `radar-mdd-recruitment-retention.md` (ICC needs 8 of 14 days), `aware-momo-mood-mood-disorders.md` (13 of 164 sent no passive data) and the Module 1 Garmin profile (Health Companion SDK gives beat-level IBI). Details in the batch B and D screening reports.

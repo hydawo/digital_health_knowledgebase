@@ -56,6 +56,12 @@ Note the second attrition step: **26 of 124 completers (21%) did not fill in the
 
 **Average EMA compliance: 74.87% (SD 18.78), decreasing linearly across the 28 days** — the same monotone decay [Clark et al.](metricwire-sgm-youth-ema-feasibility.md) quantify at −4.35 points/week over an identical 28-day window.
 
+**Same cohort, second paper (JAMA Netw Open 2024, 10.1001/jamanetworkopen.2024.40510; added 2026-10-31).** It reports different summary figures from the same deployment.
+- Daily engagement was 95.50%, a mean 26.74 of 28 days.
+- Median adherence was 78.6% (IQR 59.5 to 88.7). This covered 15,123 surveys from 125 patients.
+- Median survey completion time was 86 seconds, over 15,098 valid surveys.
+- The in-app event marker was available for 91.2% of participants.
+
 **Correlates of the experience of EMA** (in the 98 who completed the feedback survey):
 
 | Association | r | P |

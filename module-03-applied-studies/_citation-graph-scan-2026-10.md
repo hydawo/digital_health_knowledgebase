@@ -97,6 +97,6 @@ Full-text screening of all 51 is done (reports `_screening-reports/2026-10-31-ci
 - **23 new profiles from 24 papers** (Hackett 2024 and Calvert 2026 share one profile). Module 3 now has 98 profiles.
 - 27 rejected, 4 of them `unobtainable` behind bot checks (10.1145/3711043, 10.1145/3586579 DiaFocus, 10.1016/j.jss.2024.07.009, 10.1080/29973368.2026.2723021).
 - The cited platform was wrong for many candidates. None of the 4 Beiwe-tagged papers deployed Beiwe. RADAR-base was wrong or overstated for 4 of 10.
-- New lead for CARP: the DiaFocus 6-month pilot, Lind 2025, JMIR Diabetes 10:e63894, PMC12377514 (open access, not yet screened).
+- CARP is still at one profile. The DiaFocus pilot (Lind 2025) is already covered by Q112, whose full text never names CARP.
 
-**Not yet done (next session):** Table 11 rows in `feasibility-matrix.md`, `sources.md` entries, README counts, unresolved-questions notes (Q103, Q112, Q118), manual-sweep items, folding new figures into three existing profiles, the explorer rebuild. The rows and sources lines are drafted in each screening agent's report.
+Merged 2026-11-01: `feasibility-matrix.md` Table 11, `sources.md` S80 to S103, README counts, Q103, Q112 and Q118 updates, manual sweep #19.
