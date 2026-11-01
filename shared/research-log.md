@@ -2755,3 +2755,10 @@ mirrored back into that file.**
 - **Q103:** Yorke 2026 says iOS phones were incompatible with RADAR-base passive sensing in 2022 to 2024.
 - **Expansion candidates (Module 1/2), not acted on:** Datacubed Health (ALLFTD, 567-person FTLD consortium), Hexoskin. Weak: Fabla, MHSL Sleepband, EMCAT/Concerto.
 - **Not done:** extra lines suggested for `radar-mdd-recruitment-retention.md` (ICC needs 8 of 14 days), `aware-momo-mood-mood-disorders.md` (13 of 164 sent no passive data) and the Module 1 Garmin profile (Health Companion SDK gives beat-level IBI). Details in the batch B and D screening reports.
+
+## 2026-11-01 - Module 4 evidence overview
+
+- **Module:** 4.
+- **What:** `module-04-methods-and-reviews/overview.md`, one section per catalogue topic (adherence, missing data, validation, reporting, ethics, equity, privacy, phenotyping reviews), in the shape of the Module 5 overviews. Two agents read all 48 open-access PDFs in full. M4-039, M4-040 and M4-041 are paywalled and rest on their abstracts.
+- **Catalogue cells corrected against the full text:** M4-001 (only compliance, not retention, varies with design), M4-028 (the four concerns), M4-032 (ranking ties), M4-033 (the priorities list), M4-036 (hardware presence only, not reliability), and the ten L rows' PDF paths (`literature/onnela-lab/` does not exist).
+- **Noted, not changed:** M4-005's abstract prints proportions as "0.64%" and "0.28%". M4-013 and M4-029 cells are slightly narrower than the papers. M4-014, M4-016, M4-030 and M4-038 each contain internal inconsistencies.

@@ -2,7 +2,7 @@
 
 **Status:** created 2026-09-03. 51 catalogued papers, 48 with PDFs on disk and 3 paywalled (the World Sleep Society paper moved to Module 5 on 2026-10-22). Ten were
 moved from the Module 2 catalogue; 41 came from a baseline search the same day (queries and counts are
-in the catalogue). No profiles yet.
+in the catalogue). No profiles. An evidence overview by topic was written 2026-11-01.
 
 ## What this module is
 
@@ -33,8 +33,9 @@ being dropped or wrongly attributed to a platform.
 |---|---|
 | [`literature-library.md`](literature-library.md) | The catalogue, one row per paper. The ten moved rows keep their Module 2 identifiers; baseline rows are M4-001 onward. |
 | [`literature-library-index.json`](literature-library-index.json) | Dedup ledger for the weekly routine, seeded with every catalogued identifier, so a future Part E does not re-surface them. |
+| [`overview.md`](overview.md) | What the literature says, one section per topic, written from the full texts (2026-11-01). |
 | [`literature/`](literature/) | The PDFs. |
 
 Coverage is thinnest on equity and on privacy; both were searched several ways and the open-access
-literature there is genuinely small. No profiles, comparison matrix or sources file yet. The research standard in `CLAUDE.md` applies when
+literature there is genuinely small. No profiles, comparison matrix or sources file yet; the overview cites catalogue rows directly. The research standard in `CLAUDE.md` applies when
 that work starts.

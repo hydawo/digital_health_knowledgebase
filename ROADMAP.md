@@ -69,8 +69,8 @@ generated ones.
 
 ## Later
 
-- An OpenAlex citation-graph pass for Module 3 (the weekly scan's known blind spots).
-- Module 4 write-ups beyond the catalogue.
+- ~~An OpenAlex citation-graph pass for Module 3~~ Done 2026-11-01: 51 screened from full text, 23 profiles (98). `module-03-applied-studies/_citation-graph-scan-2026-10.md`.
+- ~~Module 4 write-ups beyond the catalogue~~ Done 2026-11-01: `module-04-methods-and-reviews/overview.md`, eight topics from 48 full texts; six catalogue cells corrected.
 - Future modules listed in `CLAUDE.md` (analytics tools, data aggregation platforms, and others),
   only when asked.
 
