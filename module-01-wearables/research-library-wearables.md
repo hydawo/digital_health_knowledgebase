@@ -313,6 +313,21 @@ of continuous multi-device collection itself, not device accuracy: missing-data 
 as 75.2% and fell to 14.1%/20.3% (wrist devices), 9.4%/25% (Oura rings), 0%/6.25% (sleep diaries)
 after structured weekly check-ins were introduced. https://pubmed.ncbi.nlm.nih.gov/42854191/
 
+**Added 2026-11-02 (weekly automated scan).** Barragán L, Crespo C, Ibáñez SJ, Timón R, Olcina G.
+2026. "The Influence of Sleep and Autonomic Recovery on Performance in World-Class Swimmers at Major
+Competitions: The Qualifying Trials, World Championships, and Olympic Games." *Sports (Basel)*
+14(10):426, PMID 42931563, PMC13709541, doi:10.3390/sports14100426. University of Extremadura
+(GAEDAF / GOERD research groups). CoiStatement: "The authors declare no conflict of interest." No
+Oura relationship. **Tier C. Corroborated** (absence of a disclosed conflict is suggestive, not
+proof, of independence). **Category: Use-case** (real-world observational monitoring of sleep/HRV/RHR
+against competitive performance, not a validation study against a reference standard). Prospective
+longitudinal observational study of 8 Olympic swimmers wearing an Oura Ring Gen3 across the qualifying
+trials, World Championships (Doha) and the 2024 Paris Olympic Games. Sleep efficiency fell below the
+85% reference threshold only during the Olympic competition phase, alongside a lower total sleep
+score and higher resting heart rate, but no sleep or autonomic marker showed a statistically
+significant association with intra-individual competitive performance (small-sample power
+limitation noted by the authors). https://pmc.ncbi.nlm.nih.gov/articles/PMC13709541/
+
 ## Oura — systematic reviews (as discovery mechanism, and classified in their own right)
 
 **Khan et al. 2025, *OTO Open*.** "The Oura Ring Versus Medical-Grade Sleep Studies: A Systematic
@@ -939,6 +954,23 @@ Clinic. Mayo Clinic has a partnership with AliveCor, which sells a direct-to-con
 electrocardiogram product." No Apple tie; the AliveCor partnership is with a competing product.
 **Tier C. Verified.** **Category: Use-case (clinical yield of irregular-rhythm alerts; left out of
 Module 5 Cardiac because it studies one device).** https://pubmed.ncbi.nlm.nih.gov/32979046/
+
+**Added 2026-11-02 (weekly automated scan).** Yun JH, Ko JM, Lee TH. 2026. "Criterion Validity of
+Smartwatches for Measuring Heart Rate and Energy Expenditure During Resistance Exercise."
+*Bioengineering (Basel)* 13(10):1099, PMID 42938956, PMC13701894, doi:10.3390/bioengineering13101099.
+Yonsei University / Konkuk University. CoiStatement: "The authors declare no conflicts of interest."
+No Apple relationship. **Tier C. Corroborated** (absence of a disclosed conflict is suggestive, not
+proof, of independence). **Category: Validation** (criterion validity of HR and energy expenditure
+vs. reference standards during resistance exercise, across four commercial smartwatches including
+Apple Watch). N=70 healthy men (20-39y); Apple Watch Series 8, Samsung Galaxy Watch 5, Fitbit Charge
+5 and Garmin Vivosmart 5 worn during bench press, T-bar row, squat and deadlift at individualized
+10RM loads; smartwatch HR evaluated against ECG, workout-session energy expenditure against indirect
+calorimetry. Apple Watch showed the lowest HR measurement error of the four devices (mean HR bias
+-0.36 bpm, MAE 1.81 bpm, ICC 0.969; overall dynamic HR bias -0.72 bpm, MAE 4.95 bpm, ICC 0.904), while
+HR agreement for all devices deteriorated markedly immediately after each set (Samsung and Fitbit
+underestimated ECG-derived HR by 25.60 and 19.59 bpm respectively); energy-expenditure estimates
+showed poor agreement with indirect calorimetry across all four devices (ICC 0.021-0.033).
+https://pmc.ncbi.nlm.nih.gov/articles/PMC13701894/
 
 ## Apple Watch — systematic reviews / meta-analyses
 

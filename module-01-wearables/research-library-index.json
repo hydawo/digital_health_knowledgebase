@@ -57,9 +57,11 @@
     "42832266",
     "32979046",
     "42904819",
-    "42897977"
+    "42897977",
+    "42931563",
+    "42938956"
   ],
-  "last_run_date": "2026-10-26",
+  "last_run_date": "2026-11-02",
   "runs": [
     {
       "date": "2026-08-31",
@@ -177,6 +179,25 @@
         "Review": 0
       },
       "note": "PMID 42904819 (Oura, Barnard et al., Eur J Sport Sci) and PMID 42897977 (WHOOP 4.0, Paterson et al., JISSN) both screened in as Use-case, Tier C/Corroborated -- neither CoiStatement nor any author affiliation names Oura Health or WHOOP Inc. WHOOP device name ('WHOOP 4.0') appears only in body text stripped of its structured-abstract NlmCategory labels in the raw XML, not in the AbstractText.text direct child captured by naive XML parsing; verified by regex over the full raw record rather than ElementTree's first-text-node-only default, which is worth noting for any future automation of this routine."
+    },
+    {
+      "date": "2026-11-02",
+      "source": "weekly-literature-scan routine (PubMed esearch/efetch, eutils.ncbi.nlm.nih.gov)",
+      "window": "2026-10-26 to 2026-11-02 (edat)",
+      "searched": {
+        "oura": 1,
+        "whoop": 0,
+        "apple_watch": 1
+      },
+      "screened_in": 2,
+      "screened_out": 0,
+      "screened_out_reasons": [],
+      "category_breakdown": {
+        "Use-case": 1,
+        "Validation": 1,
+        "Review": 0
+      },
+      "note": "PMID 42931563 (Oura Ring Gen3, Barragan et al., Sports (Basel), Olympic swimmers sleep/HRV vs performance) screened in as Use-case, Tier C/Corroborated. PMID 42938956 (Apple Watch Series 8 among four smartwatches, Yun et al., Bioengineering, criterion validity of HR/EE during resistance exercise) screened in as Validation, Tier C/Corroborated. Neither CoiStatement nor any author affiliation names Oura Health or Apple Inc. No WHOOP hits in window."
     }
   ],
   "dois_seen": [
@@ -234,7 +255,9 @@
     "10.2196/93019",
     "10.1093/jamia/ocaa137",
     "10.1002/ejsc.70274",
-    "10.1080/15502783.2026.2746899"
+    "10.1080/15502783.2026.2746899",
+    "10.3390/sports14100426",
+    "10.3390/bioengineering13101099"
   ],
   "records": [
     {
@@ -291,7 +314,7 @@
       "doi": "10.1016/j.ajog.2025.11.031",
       "pmid": "41297783",
       "pmcid": "PMC12915291",
-      "title": "Variability of menstrual cycles by age, polycystic ovary syndrome, and early-life cycle irregularity in the Apple Women’s Health Study",
+      "title": "Variability of menstrual cycles by age, polycystic ovary syndrome, and early-life cycle irregularity in the Apple Women\u2019s Health Study",
       "year": "2026",
       "pdf": "module-01-wearables/literature/apple-watch/2026-mortimer-ajog-variability-menstrual-cycles-age-polycystic-ovary.pdf",
       "pdf_status": "ok",
@@ -391,7 +414,7 @@
       "doi": "10.1038/s41746-023-00848-1",
       "pmid": "37248288",
       "pmcid": "PMC10226714",
-      "title": "Menstrual cycle length variation by demographic characteristics from the Apple Women’s Health Study",
+      "title": "Menstrual cycle length variation by demographic characteristics from the Apple Women\u2019s Health Study",
       "year": "2023",
       "pdf": "module-01-wearables/literature/apple-watch/2023-li-npjdigitalmedicine-menstrual-cycle-length-variation-demographic-characteristics.pdf",
       "pdf_status": "ok",
@@ -411,7 +434,7 @@
       "doi": "10.1038/s41746-022-00711-9",
       "pmid": "36323769",
       "pmcid": "PMC9628464",
-      "title": "Covid-19 vaccination and menstrual cycle length in the Apple Women’s Health Study",
+      "title": "Covid-19 vaccination and menstrual cycle length in the Apple Women\u2019s Health Study",
       "year": "2022",
       "pdf": "module-01-wearables/literature/apple-watch/2022-gibson-npjdigitalmedicine-covid-19-vaccination-menstrual-cycle-length-apple.pdf",
       "pdf_status": "ok",
@@ -421,7 +444,7 @@
       "doi": "10.1016/j.ajog.2022.10.029",
       "pmid": "36414993",
       "pmcid": "PMC9877138",
-      "title": "Abnormal uterine bleeding patterns determined through menstrual tracking among participants in the Apple Women’s Health Study",
+      "title": "Abnormal uterine bleeding patterns determined through menstrual tracking among participants in the Apple Women\u2019s Health Study",
       "year": "2023",
       "pdf": null,
       "pdf_status": "not-pdf",
@@ -431,7 +454,7 @@
       "doi": "10.1016/j.ajog.2022.05.013",
       "pmid": "35568191",
       "pmcid": "PMC9093060",
-      "title": "Attempts to conceive and the COVID-19 pandemic: data from the Apple Women’s Health Study",
+      "title": "Attempts to conceive and the COVID-19 pandemic: data from the Apple Women\u2019s Health Study",
       "year": "2022",
       "pdf": "module-01-wearables/literature/apple-watch/2022-fruh-ajog-attempts-conceive-covid-19-pandemic-data-apple.pdf",
       "pdf_status": "ok",
@@ -441,7 +464,7 @@
       "doi": "10.1016/j.ajog.2021.09.041",
       "pmid": "34610322",
       "pmcid": "PMC10518829",
-      "title": "Design and methods of the Apple Women’s Health Study: a digital longitudinal cohort study",
+      "title": "Design and methods of the Apple Women\u2019s Health Study: a digital longitudinal cohort study",
       "year": "2022",
       "pdf": "module-01-wearables/literature/apple-watch/2022-mahalingaiah-ajog-apple-womens-health-study-design.pdf",
       "pdf_status": "already-in-kb",
@@ -872,6 +895,34 @@
       "pdf": null,
       "pdf_status": "oa_not_obtained",
       "source": "weekly-literature-scan-2026-10-26"
+    },
+    {
+      "pmid": "42931563",
+      "doi": "10.3390/sports14100426",
+      "pmcid": "PMC13709541",
+      "title": "The Influence of Sleep and Autonomic Recovery on Performance in World-Class Swimmers at Major Competitions: The Qualifying Trials, World Championships, and Olympic Games",
+      "year": "2026",
+      "device": "oura",
+      "category": "Use-case",
+      "tier": "C",
+      "tier_confidence": "Corroborated",
+      "pdf": null,
+      "pdf_status": "not attempted",
+      "source": "weekly-literature-scan-2026-11-02"
+    },
+    {
+      "pmid": "42938956",
+      "doi": "10.3390/bioengineering13101099",
+      "pmcid": "PMC13701894",
+      "title": "Criterion Validity of Smartwatches for Measuring Heart Rate and Energy Expenditure During Resistance Exercise",
+      "year": "2026",
+      "device": "apple-watch",
+      "category": "Validation",
+      "tier": "C",
+      "tier_confidence": "Corroborated",
+      "pdf": null,
+      "pdf_status": "not attempted",
+      "source": "weekly-literature-scan-2026-11-02"
     }
   ]
 }

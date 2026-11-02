@@ -101,7 +101,7 @@
   "10.1007/s44211-026-00959-1",
   "10.1101/2024.10.03.24314808"
  ],
- "last_run_date": "2026-10-26",
+ "last_run_date": "2026-11-02",
  "runs": [
   {
    "date": "2026-08-31",
@@ -244,6 +244,38 @@
    "screened_out_detail": "PubMed mindLAMP hit (PMID 42897493, DOI 10.1186/s12884-026-09370-0, 'A novel digital hybrid care model for maternal mental health') genuinely names the mindLAMP app (used for 'digital phenotyping, psychoeducation, and CBT skills' alongside a Digital Health Navigator) -- not a LAMP-assay false positive this time. Excluded anyway as an incidental/supplementary mention: the study's primary instrument is clinician-delivered synchronous CBT, with mindLAMP as one supportive component of a hybrid care model rather than the paper being substantively about the platform or using it as the primary data-collection instrument, per this module's relevance bar. Conservative call per the prompt's 'when genuinely unsure, exclude' instruction; mindLAMP already has 2 papers in this library (Vaidyam 2022, Currey 2022) so the bar for a third was correspondingly higher. In-window arXiv hits (2 radar_base: ICASSP radar-speech and radar pose-estimation papers; 13 aware: ordinary-adjective '-aware' ML paper titles, e.g. Interaction-Aware, Prior-Aware, Gaze-Aware) were all the established false-positive patterns, none naming any Module 2 platform.",
    "oa_status_breakdown": {},
    "note": "Zero qualifying papers across all nine platforms this run. Network access to eutils.ncbi.nlm.nih.gov and export.arxiv.org was available throughout (arXiv required brief rate-limit retries with backoff, consistent with its documented request-rate policy, not a reachability failure); no PDF retrieval was needed since nothing qualified. python3 has neither pypdf nor PyPDF2 installed in this environment -- not exercised this run since nothing qualified for OA verification, but noting the fallback-to-magic-byte-only caveat for any future run that does."
+  },
+  {
+   "date": "2026-11-02",
+   "source": "weekly-literature-scan routine (PubMed esearch/efetch + arXiv API)",
+   "window": "2026-10-26 to 2026-11-02 (edat for PubMed; submittedDate for arXiv)",
+   "searched_pubmed": {
+    "beiwe": 0,
+    "radar_base": 0,
+    "mindlamp": 1,
+    "aware": 0,
+    "avicenna_ethica": 0,
+    "m_path": 0,
+    "carp": 0,
+    "metricwire": 0,
+    "lifedata": 0
+   },
+   "searched_arxiv": {
+    "beiwe": 0,
+    "radar_base": 0,
+    "mindlamp": 0,
+    "aware": 8,
+    "avicenna_ethica": 0,
+    "m_path": 0,
+    "carp": 0,
+    "metricwire": 0,
+    "lifedata": 0
+   },
+   "screened_in": 0,
+   "screened_out": 1,
+   "screened_out_detail": "PubMed mindLAMP hit (PMID 42956954, 'Portable micro-spectrometric LAMP platform for rapid semi-quantitative pathogen detection in food safety', Analytical Biochemistry) is the established LAMP-assay (loop-mediated isothermal amplification) false positive, not the mindLAMP digital-phenotyping app -- no relation to Torous/BIDMC mindLAMP whatsoever. In-window arXiv AWARE hits (8 of 30 total) were all the established ordinary-adjective '-Aware' ML paper-title pattern (SparseGDN, negotiation-aware LLM framework, cyber-situational-awareness framework, MoE pruning/scheduling, quantum mutation testing, spacecraft pose estimation, autonomous-driving scene generation, LLM inference framework) -- none name the AWARE Framework. No in-window hits at all (PubMed or arXiv) for Beiwe, RADAR-base, Avicenna Research/Ethica, m-Path, CARP Mobile Sensing, MetricWire, or LifeData.",
+   "oa_status_breakdown": {},
+   "note": "Zero qualifying papers across all nine platforms this run. eutils.ncbi.nlm.nih.gov and export.arxiv.org both reachable throughout; no PDF retrieval attempted since nothing qualified. python3 has neither pypdf nor PyPDF2 installed in this environment -- not exercised this run."
   }
  ],
  "records": [
@@ -501,7 +533,7 @@
    "doi": "10.1227/neu.0000000000003051",
    "pmid": "38912791",
    "pmcid": null,
-   "title": "Assessing mobility in patients with glioblastoma using digital phenotyping – Piloting the digital assessment in neuro-oncology",
+   "title": "Assessing mobility in patients with glioblastoma using digital phenotyping \u2013 Piloting the digital assessment in neuro-oncology",
    "year": "2025",
    "pdf": null,
    "pdf_status": "no-source",
@@ -641,7 +673,7 @@
    "doi": "10.1038/s41746-022-00745-z",
    "pmid": "36823348",
    "pmcid": "PMC9950089",
-   "title": "A “one-size-fits-most” walking recognition method for smartphones, smartwatches, and wearable accelerometers",
+   "title": "A \u201cone-size-fits-most\u201d walking recognition method for smartphones, smartwatches, and wearable accelerometers",
    "year": "2023",
    "pdf": "module-02-digital-phenotyping/literature/beiwe/2023-straczkiewicz-npjdigitalmedicine-one-size-fits-most-walking-recognition-method-smartphones-smartwatches.pdf",
    "pdf_status": "ok",
@@ -831,7 +863,7 @@
    "doi": "10.1002/mus.27110",
    "pmid": "33118628",
    "pmcid": "PMC7898508",
-   "title": "Smartphone data during the COVID‐19 pandemic can quantify behavioral changes in people with ALS",
+   "title": "Smartphone data during the COVID\u201019 pandemic can quantify behavioral changes in people with ALS",
    "year": "2021",
    "pdf": "module-02-digital-phenotyping/literature/beiwe/2021-beukenhorst-musclenerve-smartphone-data-during-covid19-pandemic-can.pdf",
    "pdf_status": "ok",
@@ -1071,7 +1103,7 @@
    "doi": null,
    "pmid": null,
    "pmcid": null,
-   "title": "Smartphone applications for monitoring mood disorders: A systematic review",
+   "title": "Smartphone\u00a0applications for monitoring mood disorders: A\u00a0systematic review",
    "year": null,
    "pdf": null,
    "pdf_status": "not-pdf",

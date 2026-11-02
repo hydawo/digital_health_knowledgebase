@@ -376,7 +376,7 @@
   "PMC10293018",
   "PMC11656116"
  ],
- "last_run_date": "2026-10-31",
+ "last_run_date": "2026-11-02",
  "runs": [
   {
    "date": "2026-10-05",
@@ -462,6 +462,20 @@
     "no-cohort": 5
    },
    "note": "C1 (wearables) yielded 1 genuine queued candidate: a Withings BPM Connect Pro pharmacist-led telehealth pilot RCT for post-ED hypertension follow-up (N=24 randomised, 16/24 completing the 12-week visit), with feasibility, acceptability and retention all reported as primary/secondary outcomes -- the strongest signal density seen in several runs. 3 C1 rejections: an ABCD-study Fitbit data-quality/preprocessing methods paper (medRxiv preprint; illustrative use of the cohort, not a deployment-outcomes report, rejected architecture); a spinal-cord-injury nighttime-repositioning actigraphy study where 'actigraph' is used as the generic term for a sternum-worn accelerometer, not identifiable as the ActiGraph brand, and only one deployment signal (feasibility) is reported (no-cohort); and an ABCD-study Fitbit sleep/evening-phone-use analysis (JAMA Pediatrics, N=425) where the only candidate signal is a 14-day data threshold used as an inclusion criterion rather than a reported deployment outcome (no-cohort), consistent with this ledger's established practice for inclusion-criterion-only signals. C2 (digital-phenotyping-platform PubMed query) returned 3 hits, all false positives with no Module 2 platform named anywhere in title/abstract -- an autonomous-driving lane-change paper, a Rwanda antimicrobial-resistance paper matching WHO's unrelated 'AWaRe framework' antibiotic classification (not the AWARE Framework), and a Bayesian deep-clustering ML paper -- consistent with this query's history of low precision; all 3 logged as no-cohort. C3 (arXiv, both term sets) returned 0 in-window (2026-10-19 to 2026-10-26) candidates for either the wearables or platforms term set -- the newest wearables hit predates the window (2026-10-16) and the handful of in-window platforms hits were all the established 'aware'-as-ordinary-adjective false-positive pattern, not individually logged per this ledger's established practice for arXiv phrase-matching artifacts with no DOI."
+  },
+  {
+   "date": "2026-11-02",
+   "window": "2026-10-31 to 2026-11-02 (edat for PubMed C1/C2; submittedDate for arXiv C3)",
+   "searched": {
+    "C1_wearables_pubmed": 0,
+    "C2_platforms_pubmed": 0,
+    "C3_arxiv_wearables": 0,
+    "C3_arxiv_platforms": 0
+   },
+   "screened_in_queued": 0,
+   "rejected": 0,
+   "rejected_breakdown": {},
+   "note": "Zero hits across all four searches this run (short 2-day window, last_run_date 2026-10-31). C1 (PubMed consumer/research wearables + deployment-signal block) and C2 (PubMed digital-phenotyping platforms + deployment-signal block) both returned zero PMIDs in-window -- not even false positives to screen. C3 arXiv (both wearables and platforms term sets, 50 most recent submissions each, sorted by submittedDate) had zero entries with a published date on or after 2026-10-31. An empty week is the expected normal case for this module given its deliberately high inclusion bar, not a failure; nothing was added to or changed in dois_seen, pmcids_seen, or rejected."
   }
  ],
  "records": [
@@ -1572,21 +1586,21 @@
    "doi": "10.1016/j.apmr.2026.09.003",
    "pmcid": null,
    "reason": "no-cohort",
-   "note": "ActiGraph secondary analysis of OAI cohort activity percentiles; matched on 'longitudinal' describing the parent cohort's design, but reports no retention/adherence/completeness/feasibility figures of its own — fewer than two deployment-reality signals.",
+   "note": "ActiGraph secondary analysis of OAI cohort activity percentiles; matched on 'longitudinal' describing the parent cohort's design, but reports no retention/adherence/completeness/feasibility figures of its own \u2014 fewer than two deployment-reality signals.",
    "source": "weekly-scan-2026-09-14"
   },
   {
    "doi": "10.1016/j.media.2026.104273",
    "pmcid": null,
    "reason": "no-cohort",
-   "note": "False-positive AWARE match — 'uncertainty-aware' framework for coronary hemodynamics (PUNCH), unrelated to the AWARE sensing platform.",
+   "note": "False-positive AWARE match \u2014 'uncertainty-aware' framework for coronary hemodynamics (PUNCH), unrelated to the AWARE sensing platform.",
    "source": "weekly-scan-2026-09-14"
   },
   {
    "doi": "10.1080/20523211.2026.2707845",
    "pmcid": "PMC13552329",
    "reason": "no-cohort",
-   "note": "False-positive AWARE match — WHO 'AWaRe' antibiotic-classification framework, unrelated to the AWARE sensing platform.",
+   "note": "False-positive AWARE match \u2014 WHO 'AWaRe' antibiotic-classification framework, unrelated to the AWARE sensing platform.",
    "source": "weekly-scan-2026-09-14"
   },
   {

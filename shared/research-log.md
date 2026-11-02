@@ -31,6 +31,57 @@
 - **Thryve:** its docs table now marks Fitbit "Deprecated" with no date and lists a Google Health source (ID 49).
 - **Files updated:** `facts/fitbit-google.yaml`, `radar-base.yaml`, `fitabase.yaml`, `thryve.yaml` and the generated tables; Module 1 `fitbit-google.md`, `data-intermediaries.md`, `_inventory-and-scope-decisions.md`, `README.md`, `comparison-matrix.md`, `sources.md`, the atlas; Module 2 `radar-base.md`, `comparison-matrix.md`, `sources.md`; `shared/unresolved-questions.md` (Q126 date); explorer summary.
 - **Follow-up:** after 2 November, confirm the API actually returns 410 and whether RADAR-base ships PR #92.
+## 2026-11-02 — Weekly literature-scan routine (all three modules)
+
+**Module:** 1 (Oura/WHOOP/Apple Watch), 2 (phenotyping platforms), 3 (triage only). Automated,
+unattended run per `shared/weekly-literature-scan.md`'s full prompt. Windows: Module 1 and 2
+2026-10-26 to 2026-11-02 (edat for PubMed; submittedDate for arXiv); Module 3 2026-10-31 to
+2026-11-02 — its `last_run_date` was already 2026-10-31 going in (set by the 2026-10-31/11-01
+citation-graph pass, not by a weekly firing), so this run's window is shorter than the other two.
+
+### Module 1 — Oura/WHOOP/Apple Watch
+
+Searched: Oura 1, WHOOP 0, Apple Watch 1. **Both passed the relevance bar** (1 Use-case, 1
+Validation, 0 Review): Barragán et al. 2026 (*Sports (Basel)* 14(10):426, PMID 42931563) — an
+Oura Ring Gen3 observational study of sleep/HRV/resting-HR in 8 Olympic swimmers across the
+qualifying trials, World Championships and the 2024 Paris Games — and Yun et al. 2026
+(*Bioengineering (Basel)* 13(10):1099, PMID 42938956) — a criterion-validity study of four
+smartwatches (Apple Watch Series 8 among them) for HR and energy expenditure during resistance
+exercise, against ECG and indirect calorimetry. Both Tier C, Corroborated (no CoiStatement names
+the vendor; affiliations are academic, not Oura/Apple). Appended to each device's existing Tier C
+section following the file's established style.
+
+### Module 2 — phenotyping platforms
+
+Searched (PubMed, edat): mindLAMP 1, all other platforms 0. Searched (arXiv, submittedDate): AWARE
+8 in-window, all others 0. **Zero papers passed the relevance bar.** The mindLAMP PubMed hit (PMID
+42956954) is the established LAMP-assay false positive — a portable micro-spectrometer paper about
+loop-mediated isothermal amplification pathogen detection, unrelated to the mindLAMP digital-phenotyping
+app. All 8 in-window AWARE arXiv hits were the established ordinary-adjective "-Aware" ML
+paper-title pattern (e.g. "Negotiation-Aware Hybrid LLM Framework", "Model-Aware Generation of
+Safety-Critical Scenes") — none name the AWARE Framework. No in-window hits at all, PubMed or
+arXiv, for Beiwe, RADAR-base, Avicenna Research/Ethica, m-Path, CARP Mobile Sensing, MetricWire, or
+LifeData. Both PubMed and arXiv stayed reachable throughout; `pypdf`/`PyPDF2` remain absent from
+this environment but were not needed since nothing qualified for OA verification.
+
+### Module 3 — triage only
+
+Searched: C1 (wearables, PubMed) 0, C2 (platforms, PubMed) 0, C3-wearables (arXiv) 0 in-window of 50
+fetched, C3-platforms (arXiv) 0 in-window of 50 fetched. **0 queued, 0 rejected** — all four grouped
+queries returned zero in-window hits in this short 2-day window, not even false positives to screen.
+No change to `_scan-queue.md`'s Pending table (already empty going in) or to the ledger's `rejected`
+array. An empty week is the expected normal case for this module given its deliberately high
+inclusion bar, not a failure.
+
+### Commit
+
+One combined commit across all three modules' edits and this logging entry; pushed to
+`origin/claude/hopeful-fermat-akuf5d` (the branch this session's harness designated for this run,
+per its own branch instructions — see the 2026-10-19 and 2026-10-26 entries above for the same
+branch-vs-main caveat relative to `shared/weekly-literature-scan.md`'s documented assumption that
+the routine pushes to `main`; per that file's "Merging and checking a scan run" section, this
+branch still needs a human-initiated session to merge it to `main` with `verify_scan_additions.py`).
+
 ## 2026-10-26 — Weekly literature-scan routine (all three modules)
 
 **Module:** 1 (Oura/WHOOP/Apple Watch), 2 (phenotyping platforms), 3 (triage only). Automated,
